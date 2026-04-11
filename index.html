@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>BOTIA - Inteligencia Ética Alimentaria</title>
-<meta name="description" content="BOTIA es el motor de inteligencia para la seguridad alimentaria. Innovación y transparencia.">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BOTIA — The Ethical Food Intelligence Engine</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
+  <meta name="google-site-verification" content="PEGA_AQUI_TU_CODIGO_DE_GOOGLE" />
+
+  <title>BOTIA — The Ethical Food Intelligence Engine</title>
+  <meta name="description" content="BOTIA: Ethical food intelligence engine. English default. Also supporting Arabic, German, Spanish, and Dutch.">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --gold:#C9A84C;
@@ -274,3 +276,597 @@ h1.hero-title span{color:var(--gold)}
   padding:2.5rem 4rem;
   display:grid;
   grid-template-columns:repeat(4,1fr);
+  gap:2rem;
+  text-align:center;
+}
+.stat-item{}
+.stat-num{
+  font-family:'Playfair Display',serif;
+  font-size:2.8rem;
+  font-weight:900;
+  color:var(--red-bright);
+  line-height:1;
+  margin-bottom:0.3rem;
+}
+.stat-label{
+  font-size:0.78rem;
+  color:var(--text-muted);
+  text-transform:uppercase;
+  letter-spacing:0.12em;
+}
+.stat-divider{
+  width:0.5px;
+  background:rgba(201,168,76,0.15);
+  position:absolute;
+}
+
+/* ── SECTIONS ── */
+section{padding:6rem 4rem;position:relative;overflow:hidden}
+.section-label{
+  font-family:'DM Mono',monospace;
+  font-size:0.7rem;
+  letter-spacing:0.3em;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:1rem;
+  display:flex;
+  align-items:center;
+  gap:0.8rem;
+}
+.section-label::before{content:'';display:block;width:24px;height:0.5px;background:var(--gold)}
+h2.section-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2rem,4vw,3.2rem);
+  font-weight:700;
+  line-height:1.1;
+  color:#fff;
+  margin-bottom:1.5rem;
+}
+h2.section-title em{color:var(--gold);font-style:normal}
+
+/* ── PROBLEM SECTION ── */
+#problem{background:var(--dark)}
+.problem-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:4rem;
+  align-items:start;
+  margin-top:3rem;
+}
+.crisis-number{
+  font-family:'Playfair Display',serif;
+  font-size:9rem;
+  font-weight:900;
+  color:var(--red-bright);
+  line-height:0.9;
+  position:relative;
+  display:inline-block;
+}
+.crisis-number::after{
+  content:'%';
+  font-size:4rem;
+  color:var(--red);
+  vertical-align:top;
+  margin-top:1rem;
+  display:inline-block;
+}
+.crisis-label{
+  font-size:1.1rem;
+  color:var(--text-muted);
+  margin-top:1rem;
+}
+.problem-items{display:flex;flex-direction:column;gap:1.5rem;margin-top:1rem}
+.problem-item{
+  border-left:2px solid var(--gold-dark);
+  padding-left:1.2rem;
+}
+.problem-item h4{
+  font-family:'Playfair Display',serif;
+  font-size:1.1rem;
+  color:#fff;
+  margin-bottom:0.4rem;
+}
+.problem-item p{font-size:0.9rem;color:var(--text-muted);line-height:1.7}
+
+.flow-row{
+  display:flex;
+  align-items:stretch;
+  gap:0;
+  margin-top:3rem;
+}
+.flow-box{
+  flex:1;
+  background:var(--dark3);
+  border:0.5px solid rgba(201,168,76,0.2);
+  padding:1.8rem 1.5rem;
+  position:relative;
+  text-align:center;
+}
+.flow-box:first-child{border-left-color:var(--gold);border-left-width:1.5px}
+.flow-icon{
+  font-size:1.8rem;
+  margin-bottom:1rem;
+  display:block;
+}
+.flow-title{
+  font-family:'DM Mono',monospace;
+  font-size:0.78rem;
+  color:var(--gold);
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  margin-bottom:0.5rem;
+}
+.flow-desc{font-size:0.82rem;color:var(--text-muted);line-height:1.6}
+.flow-arrow{
+  width:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold);
+  font-size:1.2rem;
+  background:var(--dark);
+  border-top:0.5px solid rgba(201,168,76,0.2);
+  border-bottom:0.5px solid rgba(201,168,76,0.2);
+  flex-shrink:0;
+}
+
+/* ── TECH SECTION ── */
+#technology{background:var(--dark2)}
+.tech-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:4rem;
+  margin-top:3rem;
+  align-items:start;
+}
+.layers-container{display:flex;flex-direction:column;gap:0}
+.layer{
+  background:var(--dark3);
+  border:0.5px solid rgba(201,168,76,0.15);
+  padding:1.5rem;
+  position:relative;
+  transition:all 0.2s;
+}
+.layer:hover{border-color:var(--gold);background:var(--dark4)}
+.layer-num{
+  font-family:'DM Mono',monospace;
+  font-size:0.65rem;
+  color:var(--gold);
+  letter-spacing:0.2em;
+  margin-bottom:0.5rem;
+}
+.layer-title{
+  font-family:'Playfair Display',serif;
+  font-size:1.1rem;
+  color:#fff;
+  margin-bottom:0.4rem;
+}
+.layer-desc{font-size:0.85rem;color:var(--text-muted)}
+.layer-connector{
+  height:24px;
+  width:0.5px;
+  background:var(--gold);
+  margin-left:1.5rem;
+  opacity:0.4;
+}
+
+.scorecard{
+  background:var(--dark3);
+  border:0.5px solid rgba(201,168,76,0.2);
+  padding:2rem;
+}
+.scorecard-title{
+  font-family:'DM Mono',monospace;
+  font-size:0.7rem;
+  letter-spacing:0.2em;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:1.5rem;
+  border-bottom:0.5px solid rgba(201,168,76,0.15);
+  padding-bottom:1rem;
+}
+.score-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.score-item{}
+.score-val{
+  font-family:'Playfair Display',serif;
+  font-size:2.5rem;
+  font-weight:900;
+  color:var(--red-bright);
+  line-height:1;
+  margin-bottom:0.3rem;
+}
+.score-key{
+  font-size:0.78rem;
+  color:var(--text-muted);
+  text-transform:uppercase;
+  letter-spacing:0.1em;
+  margin-bottom:0.25rem;
+}
+.score-note{font-size:0.75rem;color:var(--text-dim);line-height:1.5}
+
+.advantage-table{margin-top:2rem}
+.adv-header{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:1px;
+  background:rgba(201,168,76,0.15);
+  margin-bottom:1px;
+}
+.adv-cell{
+  background:var(--dark3);
+  padding:0.8rem 1rem;
+  font-size:0.8rem;
+}
+.adv-cell.head{
+  font-family:'DM Mono',monospace;
+  font-size:0.7rem;
+  letter-spacing:0.1em;
+  color:var(--text-muted);
+  text-transform:uppercase;
+}
+.adv-cell.botia{color:#fff;font-weight:500}
+.adv-cell.traditional{color:var(--text-dim)}
+.adv-cell.highlight{
+  background:var(--dark4);
+  border-left:1.5px solid var(--red);
+}
+.adv-row{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:1px;
+  background:rgba(201,168,76,0.08);
+  margin-bottom:1px;
+}
+
+/* ── PRICING SECTION ── */
+#pricing{background:var(--dark)}
+.pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr) 1.2fr;
+  gap:1rem;
+  margin-top:3rem;
+  align-items:stretch;
+}
+.price-card{
+  background:var(--dark3);
+  border:0.5px solid rgba(201,168,76,0.2);
+  padding:2rem 1.5rem;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  transition:all 0.2s;
+}
+.price-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+.price-tier{
+  font-family:'DM Mono',monospace;
+  font-size:0.7rem;
+  letter-spacing:0.2em;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:1rem;
+}
+.price-amount{
+  font-family:'Playfair Display',serif;
+  font-size:2.2rem;
+  font-weight:900;
+  color:#fff;
+  margin-bottom:0.2rem;
+}
+.price-period{font-size:0.8rem;color:var(--text-muted)}
+.price-divider{
+  height:0.5px;
+  background:rgba(201,168,76,0.15);
+  margin:1.2rem 0;
+}
+.price-features{
+  list-style:none;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+}
+.price-features li{
+  font-size:0.82rem;
+  color:var(--text-muted);
+  padding-left:1rem;
+  position:relative;
+}
+.price-features li::before{
+  content:'—';
+  position:absolute;
+  left:0;
+  color:var(--gold-dark);
+}
+.price-card.b2b{
+  background:var(--dark4);
+  border-color:rgba(201,168,76,0.5);
+}
+.price-card.b2b .price-tier{color:var(--gold-light)}
+.data-effect{
+  grid-column:1/-1;
+  background:var(--dark3);
+  border:0.5px solid var(--red);
+  padding:2rem;
+  margin-top:1rem;
+}
+.data-effect h4{
+  font-family:'Playfair Display',serif;
+  font-size:1.3rem;
+  color:#fff;
+  margin-bottom:0.8rem;
+}
+.data-effect p{font-size:0.9rem;color:var(--text-muted);max-width:700px}
+
+/* ── ROADMAP ── */
+#roadmap{background:var(--dark2)}
+.timeline{
+  position:relative;
+  margin-top:3rem;
+  padding-bottom:2rem;
+}
+.timeline::before{
+  content:'';
+  position:absolute;
+  left:50%;
+  top:0;bottom:0;
+  width:0.5px;
+  background:linear-gradient(to bottom, var(--gold), var(--gold-dark), transparent);
+  transform:translateX(-50%);
+}
+.tl-item{
+  display:grid;
+  grid-template-columns:1fr 60px 1fr;
+  gap:0;
+  margin-bottom:3rem;
+  align-items:start;
+}
+.tl-content{padding:1.5rem;background:var(--dark3);border:0.5px solid rgba(201,168,76,0.15)}
+.tl-content.right{margin-left:0;text-align:left}
+.tl-content.left{margin-right:0;text-align:right}
+.tl-dot{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding-top:1.5rem;
+}
+.tl-dot-inner{
+  width:12px;height:12px;
+  border-radius:50%;
+  background:var(--gold);
+  box-shadow:0 0 0 4px rgba(201,168,76,0.15);
+}
+.tl-year{
+  font-family:'DM Mono',monospace;
+  font-size:1.2rem;
+  color:var(--gold);
+  font-weight:500;
+  margin-bottom:0.5rem;
+  display:block;
+}
+.tl-title{
+  font-family:'Playfair Display',serif;
+  font-size:1rem;
+  color:#fff;
+  margin-bottom:0.4rem;
+}
+.tl-desc{font-size:0.82rem;color:var(--text-muted);line-height:1.6}
+
+/* ── TEAM ── */
+#team{background:var(--dark)}
+.team-card{
+  background:var(--dark3);
+  border:0.5px solid rgba(201,168,76,0.2);
+  padding:2.5rem;
+  max-width:600px;
+  display:flex;
+  gap:2rem;
+  align-items:start;
+  margin-top:3rem;
+}
+.avatar{
+  width:80px;height:80px;
+  border-radius:50%;
+  background:var(--dark4);
+  border:0.5px solid rgba(201,168,76,0.3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  font-family:'Playfair Display',serif;
+  font-size:1.8rem;
+  color:var(--gold);
+}
+.team-info h3{
+  font-family:'Playfair Display',serif;
+  font-size:1.3rem;
+  color:#fff;
+  margin-bottom:0.3rem;
+}
+.team-role{
+  font-family:'DM Mono',monospace;
+  font-size:0.7rem;
+  letter-spacing:0.15em;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:1rem;
+}
+.team-bullets{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
+.team-bullets li{
+  font-size:0.85rem;
+  color:var(--text-muted);
+  padding-left:1rem;
+  position:relative;
+}
+.team-bullets li::before{content:'⊕';position:absolute;left:0;color:var(--gold-dark);font-size:0.7rem}
+
+/* ── CTA ── */
+#contact{
+  background:var(--dark2);
+  text-align:center;
+  padding:8rem 4rem;
+  position:relative;
+  overflow:hidden;
+}
+#contact::before{
+  content:'';
+  position:absolute;
+  top:50%;left:50%;
+  width:600px;height:600px;
+  transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(201,168,76,0.06) 0%,transparent 70%);
+  pointer-events:none;
+}
+.cta-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2rem,5vw,4rem);
+  font-weight:900;
+  color:#fff;
+  margin-bottom:1rem;
+  position:relative;
+}
+.cta-sub{
+  font-size:1rem;
+  color:var(--text-muted);
+  margin-bottom:3rem;
+  max-width:500px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cta-email{
+  font-family:'DM Mono',monospace;
+  font-size:0.75rem;
+  letter-spacing:0.1em;
+  color:var(--gold);
+  margin-top:2.5rem;
+  display:block;
+}
+.cta-email a{color:inherit;text-decoration:none;border-bottom:0.5px solid var(--gold-dark)}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--dark);
+  border-top:0.5px solid rgba(201,168,76,0.1);
+  padding:2rem 4rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.footer-logo{
+  font-family:'Playfair Display',serif;
+  font-size:1.1rem;
+  color:var(--gold);
+  letter-spacing:0.12em;
+}
+.footer-copy{font-size:0.75rem;color:var(--text-dim)}
+.footer-link{
+  color:var(--gold);
+  text-decoration:none;
+  font-size:0.8rem;
+  transition:color 0.2s;
+}
+.footer-link:hover{color:var(--gold-light)}
+
+/* ── ANIMATIONS ── */
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem}
+  .nav-links{display:none}
+  #hero{grid-template-columns:1fr;padding:7rem 1.5rem 4rem;text-align:center}
+  .hero-right{order:-1;margin-bottom:2rem}
+  .hero-sub,.hero-tagline{margin-left:auto;margin-right:auto}
+  .hero-actions{justify-content:center}
+  .hero-eyebrow{justify-content:center}
+  .stats-bar{grid-template-columns:1fr 1fr;padding:2rem 1.5rem}
+  section{padding:4rem 1.5rem}
+  .problem-grid,.tech-grid{grid-template-columns:1fr}
+  .pricing-grid{grid-template-columns:1fr 1fr}
+  .timeline::before{left:24px}
+  .tl-item{grid-template-columns:24px auto}
+  .tl-content.left{display:none}
+  .tl-content.right{grid-column:2}
+  footer{flex-direction:column;gap:1rem;text-align:center;padding:1.5rem}
+  .flow-row{flex-direction:column}
+  .flow-arrow{transform:rotate(90deg);width:auto;height:32px;border:none;background:transparent}
+  .adv-row,.adv-header{grid-template-columns:1fr 1fr}
+  .adv-cell.head:first-child,.adv-cell.traditional{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#hero" class="nav-logo">BOTIA</a>
+  <ul class="nav-links">
+    <li><a href="#problem">The Problem</a></li>
+    <li><a href="#technology">Technology</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#team">Team</a></li>
+  </ul>
+  <a href="mailto:servicehub.botia@gmail.com" class="nav-cta">Request Access</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg-line"></div>
+  <div class="circuit-bg"></div>
+  <div class="hero-left reveal">
+    <div class="hero-eyebrow">Ethical Food Intelligence</div>
+    <h1 class="hero-title">The <span>Ethical Food</span> Intelligence Engine</h1>
+    <p class="hero-sub">Transforming opaque industrial data into structured consumer sovereignty. BOTIA decodes what the food industry deliberately obscures.</p>
+    <p class="hero-tagline">The Invisible Engine for Category-Defining Autonomy.</p>
+    <div class="hero-actions">
+      <a href="mailto:servicehub.botia@gmail.com?subject=App Test Request" class="btn-primary">Request App Test</a>
+      <a href="https://www.linkedin.com/in/paloma-garcia-muley/" target="_blank" rel="noopener" class="btn-ghost">Meet the Founder ↗</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="jar-container">
+      <div class="hero-ring"></div>
+      <div class="hero-ring2"></div>
+      <div class="jar-glow"></div>
+      <img src="botia_jar_512.png" alt="BOTIA jar — choice in every language" class="jar-img" onerror="this.style.display='none'">
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<div class="stats-bar reveal">
+  <div class="stat-item">
+    <div class="stat-num">57%</div>
+    <div class="stat-label">Supermarket products are doubtful or opaque</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">97.5%</div>
+    <div class="stat-label">Detection efficacy — Dataset V1.2</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">3s</div>
+    <div class="stat-label">Average full-pipeline latency</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">5</div>
+    <div class="stat-label">Native languages supported</div>
+  </div>
+</div>
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, {threshold: 0.1});
+
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
