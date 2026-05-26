@@ -1,0 +1,160 @@
+/* BOTIA Global Template CSS */
+/* Use in all ingredient translation pages */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header .subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.content {
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 20px;
+    color: #667eea;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 12px;
+    color: #555;
+    line-height: 1.8;
+}
+
+section ul, section ol {
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+section li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.label-box {
+    background: #f0f4ff;
+    padding: 15px;
+    border-left: 4px solid #667eea;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.label-box strong {
+    color: #667eea;
+}
+
+.can-section h3 {
+    color: #27ae60;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.cannot-section h3 {
+    color: #7f8c8d;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.sources-list {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.sources-list a {
+    color: #667eea;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.sources-list a:hover {
+    text-decoration: underline;
+}
+
+.botia-note {
+    background: #e8f4f8;
+    border: 1px solid #b3dfe0;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.botia-note p {
+    color: #2c5aa0;
+}
+
+footer {
+    background: #f5f7fa;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    border-top: 1px solid #eee;
+}
+
+.badge {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+}
