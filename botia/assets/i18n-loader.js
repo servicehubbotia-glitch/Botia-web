@@ -10,8 +10,8 @@ async function loadTranslations(ingredientCode, lang) {
             lang = 'en'; // Fallback to English
         }
 
-        // Load JSON translations
-        const response = await fetch(`./i18n/${lang}.json`);
+        // Load JSON translations from the fixed BOTIA global i18n folder
+        const response = await fetch(`/botia/i18n/${lang}.json`);
         if (!response.ok) {
             throw new Error(`Failed to load ${lang}.json`);
         }
@@ -28,13 +28,12 @@ async function loadTranslations(ingredientCode, lang) {
         Object.keys(data).forEach(key => {
             const element = document.getElementById(key);
             if (element) {
-                // Handle different element types
                 if (element.tagName === 'A') {
-                    element.href = data[key]; // For links, set href
+                    element.href = data[key];
                 } else if (element.tagName === 'IMG') {
-                    element.alt = data[key]; // For images, set alt text
+                    element.alt = data[key];
                 } else {
-                    element.textContent = data[key]; // For all others, set text content
+                    element.textContent = data[key];
                 }
             } else {
                 console.warn(`Element with id "${key}" not found in HTML`);
@@ -57,10 +56,9 @@ async function loadTranslations(ingredientCode, lang) {
 
 // Detect language from URL or localStorage
 function detectLanguage() {
-    // Priority: URL param > localStorage > browser language > English
     const urlParams = new URLSearchParams(window.location.search);
     const langFromUrl = urlParams.get('lang');
-    
+
     if (langFromUrl) {
         return langFromUrl;
     }
@@ -75,7 +73,7 @@ function detectLanguage() {
         return browserLang;
     }
 
-    return 'en'; // Default fallback
+    return 'en';
 }
 
 // Export for use in HTML
