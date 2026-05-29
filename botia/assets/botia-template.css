@@ -6,71 +6,76 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-    line-height: 1.6;
+    line-height: 1.55;
     color: #f7eee8;
     background:
-        radial-gradient(circle at top, rgba(124, 32, 35, 0.38), transparent 38%),
-        linear-gradient(135deg, #120b0b 0%, #241010 45%, #080606 100%);
+        radial-gradient(circle at top, rgba(112, 18, 27, 0.42), transparent 36%),
+        linear-gradient(135deg, #100707 0%, #241010 48%, #080505 100%);
     min-height: 100vh;
-    padding: 18px;
+    padding: 14px;
 }
 
 .container {
     max-width: 780px;
     margin: 0 auto;
     background: rgba(24, 13, 13, 0.96);
-    border: 1px solid rgba(190, 122, 72, 0.55);
+    border: 1px solid rgba(190, 122, 72, 0.42);
     border-radius: 22px;
-    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.48);
     overflow: hidden;
 }
 
 header {
     background:
-        linear-gradient(135deg, rgba(90, 18, 24, 0.96), rgba(44, 14, 16, 0.98));
+        linear-gradient(135deg, rgba(92, 12, 24, 0.98), rgba(40, 10, 12, 0.98));
     color: #fff3ea;
-    padding: 32px 22px;
+    padding: 30px 22px;
     text-align: center;
-    border-bottom: 1px solid rgba(214, 145, 87, 0.45);
+    border-bottom: 1px solid rgba(214, 145, 87, 0.38);
 }
 
 header h1 {
     font-size: 27px;
-    margin-bottom: 8px;
-    color: #ffd2b3;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    color: #ffe0c7;
     letter-spacing: 0.01em;
+    font-weight: 700;
 }
 
 header .subtitle {
     font-size: 14px;
-    opacity: 0.92;
+    line-height: 1.45;
     color: #d9a77d;
+    opacity: 0.95;
 }
 
 .content {
-    padding: 24px;
+    padding: 22px;
 }
 
 section {
-    margin-bottom: 22px;
-    padding: 18px;
+    margin-bottom: 18px;
+    padding: 17px;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.045);
+    background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(190, 122, 72, 0.20);
 }
 
 section h2 {
     font-size: 18px;
+    line-height: 1.35;
     color: #e6a06b;
     margin-bottom: 12px;
-    border-bottom: 1px solid rgba(230, 160, 107, 0.35);
+    border-bottom: 1px solid rgba(230, 160, 107, 0.32);
     padding-bottom: 8px;
+    font-weight: 700;
 }
 
 section p {
     margin-bottom: 10px;
     color: #f2e4dc;
-    line-height: 1.7;
+    line-height: 1.65;
 }
 
 section ul,
@@ -82,37 +87,42 @@ section ol {
 section li {
     margin-bottom: 8px;
     color: #f2e4dc;
+    line-height: 1.55;
+}
+
+strong {
+    color: #f2c29c;
 }
 
 .label-box {
-    background: rgba(255, 210, 179, 0.08);
+    background: rgba(255, 210, 179, 0.075);
     padding: 14px;
     border-left: 4px solid #b85842;
     margin-bottom: 14px;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .label-box strong {
     color: #f0b184;
 }
 
+.can-section,
+.cannot-section,
+.sources-list {
+    background: rgba(255, 255, 255, 0.035);
+    padding: 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(190, 122, 72, 0.18);
+}
+
 .can-section h3 {
     color: #d8b26a;
-    margin-top: 8px;
     margin-bottom: 10px;
 }
 
 .cannot-section h3 {
-    color: #c88b7d;
-    margin-top: 8px;
+    color: #d99a8d;
     margin-bottom: 10px;
-}
-
-.sources-list {
-    background: rgba(255, 255, 255, 0.055);
-    padding: 14px;
-    border-radius: 12px;
-    border: 1px solid rgba(190, 122, 72, 0.22);
 }
 
 .sources-list a {
@@ -126,32 +136,41 @@ section li {
 }
 
 .botia-note {
-    background: rgba(116, 25, 31, 0.45);
-    border: 1px solid rgba(230, 160, 107, 0.55);
+    background:
+        linear-gradient(135deg, rgba(104, 13, 28, 0.96), rgba(74, 12, 18, 0.96));
+    border: 1px solid rgba(230, 160, 107, 0.58);
     padding: 18px;
     border-radius: 18px;
-    margin-top: 22px;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+    margin-top: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.24);
 }
 
 .botia-note p {
     color: #fff0e8;
     font-size: 1rem;
+    line-height: 1.62;
 }
 
 .botia-note strong {
-    color: #ffd2b3;
+    color: #ffd8bd;
 }
 
-footer {
-    background: rgba(10, 6, 6, 0.88);
-    padding: 18px;
-    text-align: center;
-    font-size: 12px;
-    color: #b99a88;
-    border-top: 1px solid rgba(190, 122, 72, 0.25);
+/* Fix caja blanca / texto invisible */
+#cannot-note {
+    background: rgba(104, 13, 28, 0.55) !important;
+    color: #fff0e8 !important;
+    border: 1px solid rgba(230, 160, 107, 0.36) !important;
+    border-radius: 14px !important;
+    padding: 14px !important;
 }
 
+#cannot-note,
+#cannot-note * {
+    color: #fff0e8 !important;
+}
+
+/* Badges */
 .badge {
     display: inline-block;
     background: #7c2023;
@@ -163,9 +182,29 @@ footer {
     border: 1px solid rgba(230, 160, 107, 0.45);
 }
 
+/* Footer */
+footer {
+    background: rgba(10, 6, 6, 0.9);
+    padding: 18px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #b99a88;
+    border-top: 1px solid rgba(190, 122, 72, 0.24);
+}
+
+footer p {
+    margin-bottom: 6px;
+}
+
+/* Mobile */
 @media (max-width: 600px) {
     body {
-        padding: 12px;
+        padding: 10px;
+    }
+
+    .container {
+        border-radius: 18px;
     }
 
     header {
@@ -176,13 +215,18 @@ footer {
         font-size: 23px;
     }
 
+    header .subtitle {
+        font-size: 13px;
+    }
+
     .content {
-        padding: 16px;
+        padding: 15px;
     }
 
     section {
         padding: 15px;
-        margin-bottom: 16px;
+        margin-bottom: 15px;
+        border-radius: 16px;
     }
 
     section h2 {
@@ -192,5 +236,10 @@ footer {
     section p,
     section li {
         font-size: 0.96rem;
+    }
+
+    .botia-note {
+        padding: 16px;
+        border-radius: 16px;
     }
 }
