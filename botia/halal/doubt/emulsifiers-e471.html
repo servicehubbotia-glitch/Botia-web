@@ -1,87 +1,86 @@
 <!DOCTYPE html>
-<html lang="auto">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">BOTIA</title>
-  <link rel="stylesheet" href="/botia/assets/botia-template.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>BOTIA · E471</title>
+
+  <link rel="stylesheet" href="/botia/assets/botia-template.css" />
 </head>
 
 <body>
-  <div class="container">
+  <main class="botia-page">
 
-    <header>
-      <div class="botia-header-icon">
-        <img src="/botia/assets/icons/jar.png" alt="BOTIA icon" class="botia-icon">
+    <section class="botia-card">
+
+      <div class="botia-icon-wrap">
+        <img
+          src="/botia/assets/BOTIA.png"
+          alt="BOTIA doubt icon"
+          class="botia-icon"
+        />
       </div>
 
-      <h1 id="ingredient-name">[LOADING]</h1>
-      <div class="subtitle" id="subtitle">[LOADING]</div>
-    </header>
+      <h1 data-i18n="title">E471 · Emulsifiers</h1>
 
-    <main class="content">
+      <p class="botia-subtitle" data-i18n="subtitle">
+        BOTIA result: doubt due to missing halal traceability
+      </p>
 
       <section class="botia-note">
-        <p>
-          <strong id="botia-note-title">[LOADING]</strong>
+        <h2 data-i18n="botiaNoteTitle">BOTIA Note</h2>
+        <p data-i18n="botiaNote">
+          The label shows E471. The label does not confirm whether its origin is vegetable, animal, or synthetic. BOTIA flags it because halal traceability is missing. To confirm it, check halal certification or manufacturer documentation. The final decision is yours.
         </p>
-        <p id="botia-note-text">[LOADING]</p>
       </section>
 
-      <section>
-        <h2 id="section-why-show">[LOADING]</h2>
-        <p id="why-explanation">[LOADING]</p>
+      <section class="botia-section">
+        <h2 data-i18n="whyTitle">Why this icon appears</h2>
+        <p data-i18n="whyText">
+          E471 can have different origins. If the label does not state the origin or provide halal traceability, BOTIA classifies it as doubtful.
+        </p>
       </section>
 
-      <section>
-        <h2 id="section-what-label">[LOADING]</h2>
-
-        <div class="label-box">
-          <p>
-            <strong id="official-names">[LOADING]</strong>
-            <span id="names-value">[LOADING]</span>
-          </p>
-
-          <p>
-            <strong id="also-known-as">[LOADING]</strong>
-            <span id="aliases-value">[LOADING]</span>
-          </p>
-        </div>
+      <section class="botia-section">
+        <h2 data-i18n="labelTitle">What the label says</h2>
+        <p data-i18n="labelText">
+          The label only shows E471 or emulsifiers. It does not confirm whether it comes from a vegetable, animal, or synthetic source.
+        </p>
       </section>
 
-      <section>
-        <h2 id="section-what-check">[LOADING]</h2>
-        <ul>
-          <li id="check-1">[LOADING]</li>
-          <li id="check-2">[LOADING]</li>
-          <li id="check-3">[LOADING]</li>
+      <section class="botia-section">
+        <h2 data-i18n="checkTitle">What to check</h2>
+        <ul data-i18n-list="checkItems">
+          <li>Halal certification for the product.</li>
+          <li>Technical documentation from the manufacturer.</li>
+          <li>Declared origin of E471.</li>
+          <li>Confirmation that it does not come from a non-halal animal source.</li>
         </ul>
       </section>
 
-      <section>
-        <h2 id="section-limit">[LOADING]</h2>
-        <p id="limit-text">[LOADING]</p>
+      <section class="botia-section">
+        <h2 data-i18n="limitTitle">BOTIA limit</h2>
+        <p data-i18n="limitText">
+          BOTIA does not issue fatwas and does not replace halal certification. It only indicates that the label does not provide enough information to confirm halal origin.
+        </p>
       </section>
 
-      <section>
-        <h2 id="section-sources">[LOADING]</h2>
-        <ul>
-          <li id="source-1">[LOADING]</li>
-          <li id="source-2">[LOADING]</li>
-          <li id="source-3">[LOADING]</li>
+      <section class="botia-section">
+        <h2 data-i18n="sourcesTitle">Useful sources</h2>
+        <ul data-i18n-list="sourcesItems">
+          <li>Official halal certification for the product.</li>
+          <li>Manufacturer technical sheet.</li>
+          <li>Origin declaration for additive E471.</li>
         </ul>
       </section>
 
-    </main>
+    </section>
 
-    <footer>
-      <p id="footer-title">[LOADING]</p>
-      <p id="footer-updated">[LOADING]</p>
-    </footer>
-
-  </div>
+  </main>
 
   <script src="/botia/assets/i18n-loader.js"></script>
+
   <script>
     const product = "halal";
     const ingredientCode = "e471-emulsifiers";
