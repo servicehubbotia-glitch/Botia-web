@@ -12,7 +12,7 @@
 
     <header>
       <div class="botia-header-icon">
-        <img src="/botia_jar_512.png" alt="BOTIA icon" class="botia-icon">
+        <img src="/botia/assets/icons/jar.png" alt="BOTIA icon" class="botia-icon">
       </div>
 
       <h1 id="ingredient-name">[LOADING]</h1>
@@ -83,9 +83,11 @@
 
   <script src="/botia/assets/i18n-loader.js"></script>
   <script>
+    const product = "halal";
     const ingredientCode = "e471-emulsifiers";
     const lang = BOTIA.detectLanguage();
-    BOTIA.loadTranslations(ingredientCode, lang);
+
+    BOTIA.loadTranslations(product, ingredientCode, lang);
   </script>
 </body>
 </html>
