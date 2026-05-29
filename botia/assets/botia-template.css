@@ -243,3 +243,34 @@ footer p {
         border-radius: 16px;
     }
 }
+/* BOTIA header icon */
+.botia-header-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.botia-icon {
+    width: 82px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: contain;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+/* Compact guide layout */
+.content {
+    padding-top: 20px;
+}
+
+.botia-note {
+    margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    .botia-icon {
+        width: 72px;
+        border-radius: 14px;
+    }
+}
