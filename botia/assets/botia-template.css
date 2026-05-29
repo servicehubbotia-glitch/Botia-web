@@ -1,6 +1,3 @@
-/* BOTIA Global Template CSS */
-/* Use in all ingredient translation pages */
-
 * {
     margin: 0;
     padding: 0;
@@ -10,102 +7,116 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #f7eee8;
+    background:
+        radial-gradient(circle at top, rgba(124, 32, 35, 0.38), transparent 38%),
+        linear-gradient(135deg, #120b0b 0%, #241010 45%, #080606 100%);
     min-height: 100vh;
-    padding: 20px;
+    padding: 18px;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 780px;
     margin: 0 auto;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(24, 13, 13, 0.96);
+    border: 1px solid rgba(190, 122, 72, 0.55);
+    border-radius: 22px;
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.45);
     overflow: hidden;
 }
 
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 40px 20px;
+    background:
+        linear-gradient(135deg, rgba(90, 18, 24, 0.96), rgba(44, 14, 16, 0.98));
+    color: #fff3ea;
+    padding: 32px 22px;
     text-align: center;
+    border-bottom: 1px solid rgba(214, 145, 87, 0.45);
 }
 
 header h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 27px;
+    margin-bottom: 8px;
+    color: #ffd2b3;
+    letter-spacing: 0.01em;
 }
 
 header .subtitle {
     font-size: 14px;
-    opacity: 0.9;
+    opacity: 0.92;
+    color: #d9a77d;
 }
 
 .content {
-    padding: 40px;
+    padding: 24px;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 22px;
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(190, 122, 72, 0.20);
 }
 
 section h2 {
-    font-size: 20px;
-    color: #667eea;
-    margin-bottom: 15px;
-    border-bottom: 3px solid #667eea;
-    padding-bottom: 10px;
+    font-size: 18px;
+    color: #e6a06b;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(230, 160, 107, 0.35);
+    padding-bottom: 8px;
 }
 
 section p {
-    margin-bottom: 12px;
-    color: #555;
-    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #f2e4dc;
+    line-height: 1.7;
 }
 
-section ul, section ol {
+section ul,
+section ol {
     margin-left: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 section li {
     margin-bottom: 8px;
-    color: #555;
+    color: #f2e4dc;
 }
 
 .label-box {
-    background: #f0f4ff;
-    padding: 15px;
-    border-left: 4px solid #667eea;
-    margin-bottom: 15px;
-    border-radius: 4px;
+    background: rgba(255, 210, 179, 0.08);
+    padding: 14px;
+    border-left: 4px solid #b85842;
+    margin-bottom: 14px;
+    border-radius: 10px;
 }
 
 .label-box strong {
-    color: #667eea;
+    color: #f0b184;
 }
 
 .can-section h3 {
-    color: #27ae60;
-    margin-top: 15px;
+    color: #d8b26a;
+    margin-top: 8px;
     margin-bottom: 10px;
 }
 
 .cannot-section h3 {
-    color: #7f8c8d;
-    margin-top: 15px;
+    color: #c88b7d;
+    margin-top: 8px;
     margin-bottom: 10px;
 }
 
 .sources-list {
-    background: #f9f9f9;
-    padding: 15px;
-    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.055);
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(190, 122, 72, 0.22);
 }
 
 .sources-list a {
-    color: #667eea;
+    color: #f0b184;
     text-decoration: none;
     word-break: break-word;
 }
@@ -115,46 +126,71 @@ section li {
 }
 
 .botia-note {
-    background: #e8f4f8;
-    border: 1px solid #b3dfe0;
-    padding: 20px;
-    border-radius: 4px;
-    margin-top: 30px;
+    background: rgba(116, 25, 31, 0.45);
+    border: 1px solid rgba(230, 160, 107, 0.55);
+    padding: 18px;
+    border-radius: 18px;
+    margin-top: 22px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
 }
 
 .botia-note p {
-    color: #2c5aa0;
+    color: #fff0e8;
+    font-size: 1rem;
+}
+
+.botia-note strong {
+    color: #ffd2b3;
 }
 
 footer {
-    background: #f5f7fa;
-    padding: 20px;
+    background: rgba(10, 6, 6, 0.88);
+    padding: 18px;
     text-align: center;
     font-size: 12px;
-    color: #999;
-    border-top: 1px solid #eee;
+    color: #b99a88;
+    border-top: 1px solid rgba(190, 122, 72, 0.25);
 }
 
 .badge {
     display: inline-block;
-    background: #667eea;
-    color: white;
+    background: #7c2023;
+    color: #fff3ea;
     padding: 4px 8px;
-    border-radius: 4px;
+    border-radius: 999px;
     font-size: 12px;
     margin-right: 5px;
+    border: 1px solid rgba(230, 160, 107, 0.45);
 }
 
 @media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 26px 18px;
+    }
+
     header h1 {
-        font-size: 22px;
+        font-size: 23px;
     }
 
     .content {
-        padding: 20px;
+        padding: 16px;
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 16px;
     }
 
     section h2 {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    section p,
+    section li {
+        font-size: 0.96rem;
     }
 }
