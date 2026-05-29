@@ -1,32 +1,32 @@
 // BOTIA i18n Loader
-// Load translations from JSON based on user language preference
-// Usage: Add ?lang=es to URL or set localStorage['botia-lang']
+// Loads translations by product and language.
+// Example path: /botia/i18n/halal/es.json
 
-async function loadTranslations(ingredientCode, lang) {
+async function loadTranslations(product, ingredientCode, lang) {
     try {
-        // Validate language code
-        const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl'];
+        const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'zh'];
+
         if (!supportedLangs.includes(lang)) {
-            lang = 'en'; // Fallback to English
+            lang = 'en';
         }
 
-        // Load JSON translations from the fixed BOTIA global i18n folder
-        const response = await fetch(`/botia/i18n/${lang}.json`);
+        const response = await fetch(`/botia/i18n/${product}/${lang}.json`);
+
         if (!response.ok) {
-            throw new Error(`Failed to load ${lang}.json`);
+            throw new Error(`Failed to load /botia/i18n/${product}/${lang}.json`);
         }
 
         const translations = await response.json();
         const data = translations[ingredientCode];
 
         if (!data) {
-            console.warn(`No translations found for ${ingredientCode} in ${lang}`);
+            console.warn(`No translations found for ${ingredientCode} in ${product}/${lang}`);
             return false;
         }
 
-        // Fill each element with its translation
         Object.keys(data).forEach(key => {
             const element = document.getElementById(key);
+
             if (element) {
                 if (element.tagName === 'A') {
                     element.href = data[key];
@@ -40,21 +40,17 @@ async function loadTranslations(ingredientCode, lang) {
             }
         });
 
-        // Set HTML language attribute
         document.documentElement.lang = lang;
-
-        // Save language preference
         localStorage.setItem('botia-lang', lang);
 
         return true;
 
     } catch (error) {
-        console.error('Error loading translations:', error);
+        console.error('BOTIA translation loading error:', error);
         return false;
     }
 }
 
-// Detect language from URL or localStorage
 function detectLanguage() {
     const urlParams = new URLSearchParams(window.location.search);
     const langFromUrl = urlParams.get('lang');
@@ -64,19 +60,21 @@ function detectLanguage() {
     }
 
     const langFromStorage = localStorage.getItem('botia-lang');
+
     if (langFromStorage) {
         return langFromStorage;
     }
 
     const browserLang = navigator.language.split('-')[0];
-    if (['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl'].includes(browserLang)) {
+    const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'zh'];
+
+    if (supportedLangs.includes(browserLang)) {
         return browserLang;
     }
 
     return 'en';
 }
 
-// Export for use in HTML
 window.BOTIA = {
     loadTranslations: loadTranslations,
     detectLanguage: detectLanguage
