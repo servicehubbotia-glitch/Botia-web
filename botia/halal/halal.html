@@ -5,13 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BOTIA — Halal</title>
   <style>
-    :root {
-      --bg: #f7f9f4; --card: #ffffff; --accent: #2e7d32;
-      --accent-light: #e8f5e9; --accent-mid: #81c784;
-      --text-primary: #1a1a1a; --text-secondary: #555;
-      --text-muted: #888; --border: #e0e0e0;
-      --radius: 12px; --shadow: 0 2px 16px rgba(0,0,0,0.07);
-    }
+    :root { --bg: #f7f9f4; --card: #ffffff; --accent: #2e7d32; --accent-light: #e8f5e9; --text-primary: #1a1a1a; --text-secondary: #555; --text-muted: #888; --border: #e0e0e0; --radius: 12px; --shadow: 0 2px 16px rgba(0,0,0,0.07); }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text-primary); min-height: 100vh; padding: 0 0 40px 0; }
     .header { background: var(--accent); padding: 20px 20px 24px; text-align: center; }
@@ -45,7 +39,7 @@
   <div id="app"><div class="loading">Loading...</div></div>
   <script>
     const SUPPORTED_LANGS = ['en','es','nl','ar','de','fr','it','pt','pl'];
-    const BASE_URL = 'https://botia-safefood.com/botia/halal/i18n/';
+    const BASE_URL = './i18n/';
 
     function getParams() {
       const p = new URLSearchParams(window.location.search);
@@ -113,7 +107,7 @@
     async function init() {
       const { lang, ingredient } = getParams();
       setDir(lang);
-      const opts = { method: 'GET', mode: 'cors', cache: 'no-store', headers: { 'Accept': 'application/json' } };
+      const opts = { method: 'GET', cache: 'no-store', headers: { 'Accept': 'application/json' } };
       try {
         const res = await fetch(`${BASE_URL}${lang}.json`, opts);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
