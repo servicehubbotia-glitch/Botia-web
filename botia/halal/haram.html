@@ -39,7 +39,7 @@
   <div id="app"><div class="loading">Loading...</div></div>
   <script>
     const SUPPORTED_LANGS = ['en','es','nl','ar','de','fr','it','pt','pl'];
-    const BASE_URL = 'https://botia-safefood.com/botia/halal/i18n/';
+    const BASE_URL = './i18n/';
 
     function getParams() {
       const p = new URLSearchParams(window.location.search);
@@ -107,7 +107,7 @@
     async function init() {
       const { lang, ingredient } = getParams();
       setDir(lang);
-      const opts = { method: 'GET', mode: 'cors', cache: 'no-store', headers: { 'Accept': 'application/json' } };
+      const opts = { method: 'GET', cache: 'no-store', headers: { 'Accept': 'application/json' } };
       try {
         const res = await fetch(`${BASE_URL}${lang}.json`, opts);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
