@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BOTIA — Women's Health</title>
+  <title>BOTIA — Haram</title>
   <style>
-    :root { --bg: #fdf4ff; --card: #ffffff; --accent: #6a1b9a; --accent-light: #f3e5f5; --accent-mid: #ce93d8; --text-primary: #1a1a1a; --text-secondary: #555; --text-muted: #888; --border: #e0e0e0; --radius: 12px; --shadow: 0 2px 16px rgba(0,0,0,0.07); }
+    :root { --bg: #fdf5f5; --card: #ffffff; --accent: #c62828; --accent-light: #ffebee; --text-primary: #1a1a1a; --text-secondary: #555; --text-muted: #888; --border: #e0e0e0; --radius: 12px; --shadow: 0 2px 16px rgba(0,0,0,0.07); }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text-primary); min-height: 100vh; padding: 0 0 40px 0; }
     .header { background: var(--accent); padding: 20px 20px 24px; text-align: center; }
@@ -14,7 +14,6 @@
     .header-title { font-size: 22px; font-weight: bold; color: white; margin-bottom: 4px; }
     .header-subtitle { font-size: 12px; color: rgba(255,255,255,0.75); font-style: italic; }
     .status-badge { display: inline-block; background: white; color: var(--accent); font-size: 11px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-top: 12px; }
-    .always-banner { background: var(--accent-light); border-bottom: 1px solid var(--accent-mid); padding: 10px 16px; text-align: center; font-family: sans-serif; font-size: 12px; color: var(--accent); letter-spacing: 0.5px; }
     .content { padding: 20px 16px; max-width: 600px; margin: 0 auto; }
     .card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; margin-bottom: 16px; border-left: 4px solid var(--accent); }
     .card-title { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); font-family: sans-serif; font-weight: bold; margin-bottom: 14px; }
@@ -26,7 +25,7 @@
     .checklist li { font-size: 13px; color: var(--text-secondary); padding: 5px 0 5px 22px; position: relative; line-height: 1.5; border-bottom: 1px solid var(--border); }
     .checklist li:last-child { border-bottom: none; }
     .checklist li::before { content: attr(data-prefix); position: absolute; left: 0; }
-    .note-box { background: var(--accent-light); border-radius: 8px; padding: 12px 14px; font-size: 13px; color: #4a0072; line-height: 1.6; margin-top: 12px; font-style: italic; }
+    .note-box { background: var(--accent-light); border-radius: 8px; padding: 12px 14px; font-size: 13px; color: #7f1f1f; line-height: 1.6; margin-top: 12px; font-style: italic; }
     .sources-text { font-size: 12px; color: var(--text-muted); line-height: 1.6; }
     .footer { text-align: center; padding: 20px 16px 0; font-size: 11px; color: var(--text-muted); font-family: sans-serif; letter-spacing: 1px; }
     .loading { text-align: center; padding: 60px 20px; color: var(--text-muted); font-family: sans-serif; font-size: 14px; }
@@ -45,7 +44,7 @@
     function getParams() {
       const p = new URLSearchParams(window.location.search);
       const lang = SUPPORTED_LANGS.includes(p.get('lang')) ? p.get('lang') : 'en';
-      const ingredient = p.get('ingredient') || 'alert_endocrine';
+      const ingredient = p.get('ingredient') || 'alcohol';
       return { lang, ingredient };
     }
 
@@ -58,12 +57,11 @@
       document.getElementById('app').innerHTML = `
         <div class="header">
           <div class="header-logo">BOTIA · Safe Food Choice</div>
-          <div class="header-icon">♀️</div>
+          <div class="header-icon">🚫</div>
           <div class="header-title">${data['ingredient-name'] || ''}</div>
           <div class="header-subtitle">${data['subtitle'] || ''}</div>
-          <div class="status-badge">WOMEN'S HEALTH</div>
+          <div class="status-badge">HARAM</div>
         </div>
-        <div class="always-banner">This information is always active — for every woman, every scan.</div>
         <div class="content">
           <div class="card">
             <div class="card-title">${data['section-what-label'] || ''}</div>
@@ -98,7 +96,7 @@
             <div class="sources-text">${data['sources-items'] || ''}</div>
           </div>
         </div>
-        <div class="footer">BOTIA · Safe Food Choice · botia-safefood.com<br>Because 52% of humanity deserves to know what they're eating.</div>
+        <div class="footer">BOTIA · Safe Food Choice · botia-safefood.com</div>
       `;
     }
 
@@ -122,8 +120,7 @@
           const res = await fetch(`${BASE_URL}en.json`, opts);
           if (!res.ok) throw new Error(`HTTP ${res.status}`);
           const json = await res.json();
-          const firstKey = Object.keys(json).find(k => k !== '_meta');
-          const data = json[ingredient] || json[firstKey];
+          const data = json[ingredient] || json['alcohol'];
           if (!data) throw new Error('No fallback data');
           renderPage(data);
         } catch (e2) {
