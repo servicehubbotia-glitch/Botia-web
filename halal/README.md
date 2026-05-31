@@ -1,6 +1,3 @@
-La suscripción a Google One se cancelará … Actualiza tu método de pago para el 2 jun 2026 para renovar tu suscripción de almacenamiento
-1
-100 %
 # BOTIA — Module: halal/
 ### Halal / Haram / Mashbooh Classification
 
