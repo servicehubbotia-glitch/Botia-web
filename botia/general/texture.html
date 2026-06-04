@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">BOTIA — Texture</title>
+  <link rel="stylesheet" href="../assets/botia-template.css">
+</head>
+<body>
+  <div class="botia-container">
+    <header>
+      <h1 id="ingredient-name">Texture & Stability</h1>
+      <p id="subtitle" class="subtitle">[LOADING]</p>
+    </header>
+
+    <main>
+      <section id="section-what-detected">
+        <h2 id="what-detected-title">[LOADING]</h2>
+        <p id="what-detected-text">[LOADING]</p>
+      </section>
+
+      <section id="section-why-matters">
+        <h2 id="why-matters-title">Why It Matters</h2>
+        <p id="why-matters-text">[LOADING]</p>
+      </section>
+
+      <section id="section-cannot">
+        <h2 id="cannot-title">What BOTIA Cannot Conclude</h2>
+        <p id="cannot-text">[LOADING]</p>
+      </section>
+
+      <section id="section-sources">
+        <h2 id="sources-title">Source & Context</h2>
+        <p id="sources-text">[LOADING]</p>
+      </section>
+
+      <section class="botia-note">
+        <h3 id="botia-note-title">📖 BOTIA Note</h3>
+        <p id="botia-note-text">[LOADING]</p>
+      </section>
+    </main>
+
+    <footer>
+      <p id="footer-text">BOTIA WebView • Transparent Food Intelligence</p>
+    </footer>
+  </div>
+
+  <script src="../assets/i18n-loader.js"></script>
+  <script>
+    const ingredientCode = 'texture';
+    const lang = new URLSearchParams(window.location.search).get('lang') || navigator.language.split('-')[0];
+    BOTIA.loadTranslations('general', ingredientCode, lang);
+  </script>
+</body>
+</html>
