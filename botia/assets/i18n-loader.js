@@ -1,32 +1,35 @@
-// BOTIA i18n Loader
+// BOTIA i18n Loader - CORRECTED FOR NEW STRUCTURE
 // Loads translations by product and language.
-// Example path: /botia/i18n/halal/es.json
+// NEW: Looks in /botia/[product]/i18n/ instead of /botia/i18n/[product]/
 
 async function loadTranslations(product, ingredientCode, lang) {
     try {
         const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'zh'];
-
         if (!supportedLangs.includes(lang)) {
             lang = 'en';
         }
-
-        const response = await fetch(`/botia/i18n/${product}/${lang}.json`);
-
+        
+        // CORRECTED: New path structure
+        const jsonPath = `/botia/${product}/i18n/${lang}.json`;
+        
+        console.log(`Loading: ${jsonPath}`);
+        
+        const response = await fetch(jsonPath);
         if (!response.ok) {
-            throw new Error(`Failed to load /botia/i18n/${product}/${lang}.json`);
+            throw new Error(`Failed to load ${jsonPath} (HTTP ${response.status})`);
         }
-
+        
         const translations = await response.json();
         const data = translations[ingredientCode];
-
+        
         if (!data) {
             console.warn(`No translations found for ${ingredientCode} in ${product}/${lang}`);
             return false;
         }
-
+        
+        // Fill HTML elements by ID
         Object.keys(data).forEach(key => {
             const element = document.getElementById(key);
-
             if (element) {
                 if (element.tagName === 'A') {
                     element.href = data[key];
@@ -39,12 +42,11 @@ async function loadTranslations(product, ingredientCode, lang) {
                 console.warn(`Element with id "${key}" not found in HTML`);
             }
         });
-
+        
         document.documentElement.lang = lang;
         localStorage.setItem('botia-lang', lang);
-
         return true;
-
+        
     } catch (error) {
         console.error('BOTIA translation loading error:', error);
         return false;
@@ -54,24 +56,21 @@ async function loadTranslations(product, ingredientCode, lang) {
 function detectLanguage() {
     const urlParams = new URLSearchParams(window.location.search);
     const langFromUrl = urlParams.get('lang');
-
     if (langFromUrl) {
         return langFromUrl;
     }
-
+    
     const langFromStorage = localStorage.getItem('botia-lang');
-
     if (langFromStorage) {
         return langFromStorage;
     }
-
+    
     const browserLang = navigator.language.split('-')[0];
     const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'zh'];
-
     if (supportedLangs.includes(browserLang)) {
         return browserLang;
     }
-
+    
     return 'en';
 }
 
