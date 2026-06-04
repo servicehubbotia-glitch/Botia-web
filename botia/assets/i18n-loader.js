@@ -4,7 +4,7 @@
 
 async function loadTranslations(product, ingredientCode, lang) {
     try {
-        const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'zh'];
+        const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'ro'];
         if (!supportedLangs.includes(lang)) {
             lang = 'en';
         }
@@ -66,7 +66,7 @@ function detectLanguage() {
     }
     
     const browserLang = navigator.language.split('-')[0];
-    const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'zh'];
+    const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'ro'];
     if (supportedLangs.includes(browserLang)) {
         return browserLang;
     }
