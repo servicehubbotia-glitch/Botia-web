@@ -1,0 +1,50 @@
+{
+  "sugar": {
+    "title": "Açúcar oculto detetado",
+    "short_message": "Este produto contém ingredientes que agem como açúcar ou hidratos de carbono de absorção rápida, mesmo que rotulados de forma diferente.",
+    "what_detected": "A BOTIA encontrou: maltodextrina, xarope de glicose, xarope de milho, concentrado de sumo de fruta, amido hidrolisado ou dextrina. Tecnicamente, estes não são 'açúcar', mas decompõem-se como açúcares ou hidratos de carbono de absorção rápida no seu corpo.",
+    "why_it_matters": "Produtos rotulados como 'natural', 'fit' ou 'saudável' utilizam frequentemente estes ingredientes para adicionar doçura e textura, evitando ao mesmo tempo a palavra 'açúcar'. Se está atento à ingestão de açúcar, estes contam na mesma. Se dá este produto a crianças, vale a pena conhecer estas formas ocultas.",
+    "what_it_cannot_conclude": "A BOTIA não pode indicar-lhe a quantidade de açúcar/hidratos de carbono que contém, se o produto é adequado para a sua dieta ou se irá aumentar abruptamente o seu açúcar no sangue. A BOTIA apenas sinaliza a presença de ingredientes semelhantes ao açúcar.",
+    "source_note": "Deteção baseada na análise da lista de ingredientes. Se está preocupado com a ingestão de açúcar, verifique a tabela nutricional para saber os 'hidratos de carbono' e 'açúcares'."
+  },
+  "sweetener": {
+    "title": "Adoçante detetado",
+    "short_message": "Este produto contém ingredientes adoçantes que não são açúcar. Alguns podem causar efeitos digestivos se consumidos em grandes quantidades.",
+    "what_detected": "A BOTIA encontrou: maltitol, sorbitol, xilitol, eritritol, isomalt, lactitol (polióis), ou aspartame, sucralose, sacarina, acessulfame K (adoçantes artificiais), ou os códigos E E420, E421, E953, E965, E966, E967, E968, E950, E951, E954, E955.",
+    "why_it_matters": "Estes ingredientes proporcionam doçura sem serem açúcar. Algumas pessoas utilizam-nos para reduzir a ingestão de açúcar. No entanto, os polióis (sorbitol, xilitol) podem causar desconforto digestivo — flatulência, gases ou efeitos laxativos — se consumidos em excesso. Isto é especialmente relevante se consome diariamente vários produtos com estes ingredientes.",
+    "what_it_cannot_conclude": "A BOTIA não pode diagnosticar sensibilidade digestiva nem dizer-lhe se este produto é adequado para si. A BOTIA apenas sinaliza a presença destes adoçantes para que possa fazer uma escolha informada.",
+    "source_note": "Os efeitos dos polióis estão documentados na literatura de saúde pública e nutrição. A tolerância individual varia."
+  },
+  "texture": {
+    "title": "Ingredientes de textura e estabilidade",
+    "short_message": "Este produto contém aditivos para textura, espessura ou estabilidade. Frequentemente, é um sinal de maior processamento.",
+    "what_detected": "A BOTIA encontrou: amido modificado, amido, carragenina (E407), goma de guar, goma xantana, gomas, espessantes, estabilizadores ou agentes de volume. Estes são utilizados para dar consistência, espessar, estabilizar o teor de água ou melhorar a sensação na boca.",
+    "why_it_matters": "Estes ingredientes sinalizam que o produto é formulado em vez de simples. Um iogurte de fruta com goma xantana e amido modificado é mais processado do que um iogurte natural. Um molho 'fresco' com carragenina é estabilizado para prolongar a vida útil. Não é intrinsecamente mau, mas vale a pena notar se prefere alimentos menos processados.",
+    "what_it_cannot_conclude": "A BOTIA não pode dizer-lhe se estes aditivos são prejudiciais, se o produto não é saudável ou se é adequado para a sua dieta. Indica apenas que o produto é mais formulado do que as versões básicas.",
+    "source_note": "Os aditivos de textura são ingredientes alimentares regulamentados. A presença é factual; a interpretação é sua."
+  },
+  "animal": {
+    "title": "Ingredientes de origem animal",
+    "short_message": "Este produto contém um ingrediente de origem animal ou de possível origem animal. Isto pode ser importante para si.",
+    "what_detected": "A BOTIA encontrou: gelatina, gelatina de porco, gelatina de bovino, carmim (extrato de cochonilha), ácido carmínico, E120, mono e diglicéridos (E471) quando a origem não é especificada, ou outros aditivos de origem animal.",
+    "why_it_matters": "Algumas pessoas evitam ingredientes de origem animal por razões éticas, culturais, religiosas ou dietéticas. Estes ingredientes estão frequentemente ocultos — um concentrado de sumo de fruta pode conter gelatina; um molho vermelho pode usar carmim em vez de sumo de beterraba. A BOTIA sinaliza-os para que possa decidir se são importantes para si.",
+    "what_it_cannot_conclude": "A BOTIA não pode dizer-lhe se o produto é vegano, vegetariano, halal ou kosher. Essa é uma decisão sua. A BOTIA apenas sinaliza: este ingrediente provavelmente provém de um animal ou pode ter origem animal.",
+    "source_note": "Os ingredientes de origem animal são declarados nos rótulos; a BOTIA lê e destaca-os."
+  },
+  "flavor": {
+    "title": "Intensificador de sabor detetado",
+    "short_message": "Este produto contém ingredientes concebidos para intensificar o sabor. Este é um sinal significativo de ultraprocessamento.",
+    "what_detected": "A BOTIA encontrou: glutamato monossódico (GMS), glutamato, E621, extrato de levedura, intensificador de sabor, proteína hidrolisada ou levedura autolisada. Estes são utilizados para tornar a comida mais intensa e apelativa ao paladar.",
+    "why_it_matters": "Os intensificadores de sabor são uma marca característica dos alimentos ultraprocessados. São adicionados porque os ingredientes de base carecem de sabor natural, pelo que são quimicamente reforçados para serem mais palatáveis. Isto importa se está a tentar comer menos alimentos ultraprocessados. A investigação sobre o consumo frequente de alimentos altamente palatáveis — desenvolvidos para serem irresistíveis — mostra padrões associados ao consumo excessivo. A BOTIA sinaliza isto porque é um sinal real de reformulação, não apenas de sabor.",
+    "what_it_cannot_conclude": "A BOTIA não pode diagnosticar sensibilidade alimentar, dependência ou impactos na sua saúde pessoal. Apenas sinaliza que este produto é formulado para ter um sabor mais intenso do que os seus ingredientes básicos teriam naturalmente.",
+    "source_note": "Intensificadores de sabor documentados em estudos de ciência alimentar e saúde pública sobre ultraprocessamento e palatabilidade dos alimentos."
+  },
+  "enumbers": {
+    "title": "Aditivos com código E",
+    "short_message": "Este produto contém aditivos com código E. A BOTIA sinaliza-os quando são relevantes para compreender o produto.",
+    "what_detected": "A BOTIA encontrou códigos E relevantes: E120 (carmim), E407 (carragenina), E471 (mono e diglicéridos), E621 (glutamato), E950/E951/E954/E955 (adoçantes), E420/E421/E953/E965/E966/E967/E968 (polióis), ou outros códigos E sinalizados por relevância enquanto ingredientes.",
+    "why_it_matters": "Os códigos E constituem o sistema europeu/internacional para nomear aditivos alimentares. Aparecem nos rótulos na Europa e em muitas outras regiões. Muitas pessoas querem saber quando um produto contém aditivos para além dos ingredientes básicos. Alguns códigos E estão associados a preocupações específicas: o E120 é derivado de insetos, o E407 tem forte impacto na textura, o E621 é um intensificador de sabor. A BOTIA associa-os à categoria de alerta correspondente, quando aplicável. Se nenhuma categoria for aplicável, a BOTIA sinaliza o código para que possa fazer a sua própria pesquisa.",
+    "what_it_cannot_conclude": "A BOTIA não pode dizer-lhe que os códigos E são prejudiciais ou que este produto não é seguro. Os códigos E são regulamentados e aprovados. A BOTIA sinaliza-os apenas para que possa ver o que realmente está na sua comida.",
+    "source_note": "Os códigos E são atribuídos pela Comissão Europeia e reconhecidos internacionalmente. Consulte a EFSA (Autoridade Europeia para a Segurança dos Alimentos) se pretender informações detalhadas sobre qualquer código específico."
+  }
+}
