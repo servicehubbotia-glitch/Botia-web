@@ -9,34 +9,35 @@
 <body>
   <div class="botia-container">
     <header>
-      <h1 id="title">[LOADING TITLE]</h1>
-      <p id="short_message" class="subtitle">[LOADING SHORT MESSAGE]</p>
+      <img src="../assets/Sugar.png" alt="Sugar Icon" class="botia-icon" style="width: 60px; margin-bottom: 15px;">
+      <h1 id="title">[LOADING]</h1>
+      <p id="short_message" class="subtitle">[LOADING]</p>
     </header>
 
     <main>
       <section>
         <h2>What BOTIA Detected</h2>
-        <p id="what_detected">[LOADING DETECTION]</p>
+        <p id="what_detected">[LOADING]</p>
       </section>
 
       <section>
         <h2>Why It Matters</h2>
-        <p id="why_it_matters">[LOADING MATTERS]</p>
+        <p id="why_it_matters">[LOADING]</p>
       </section>
 
       <section>
         <h2>What BOTIA Cannot Conclude</h2>
-        <p id="what_it_cannot_conclude">[LOADING CANNOT]</p>
+        <p id="what_it_cannot_conclude">[LOADING]</p>
       </section>
 
       <section>
         <h2>Source & Context</h2>
-        <p id="source_note">[LOADING SOURCE]</p>
+        <p id="source_note">[LOADING]</p>
       </section>
 
       <section class="botia-note">
         <h3>📖 BOTIA Note</h3>
-        <p id="botia_note">[LOADING NOTE]</p>
+        <p id="botia_note">[LOADING]</p>
       </section>
     </main>
 
@@ -49,7 +50,6 @@
   <script>
     const ingredientCode = 'sugar';
     const lang = new URLSearchParams(window.location.search).get('lang') || navigator.language.split('-')[0];
-    console.log('Loading:', ingredientCode, 'in:', lang);
     BOTIA.loadTranslations('general', ingredientCode, lang);
   </script>
 </body>
