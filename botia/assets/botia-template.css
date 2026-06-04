@@ -15,7 +15,7 @@ body {
     padding: 14px;
 }
 
-.container {
+.botia-container {
     max-width: 780px;
     margin: 0 auto;
     background: rgba(24, 13, 13, 0.96);
@@ -32,6 +32,28 @@ header {
     padding: 30px 22px;
     text-align: center;
     border-bottom: 1px solid rgba(214, 145, 87, 0.38);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BOTIA Icon - OPTIMIZED */
+.botia-icon {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 header h1 {
@@ -50,7 +72,7 @@ header .subtitle {
     opacity: 0.95;
 }
 
-.content {
+main {
     padding: 22px;
 }
 
@@ -94,47 +116,6 @@ strong {
     color: #f2c29c;
 }
 
-.label-box {
-    background: rgba(255, 210, 179, 0.075);
-    padding: 14px;
-    border-left: 4px solid #b85842;
-    margin-bottom: 14px;
-    border-radius: 12px;
-}
-
-.label-box strong {
-    color: #f0b184;
-}
-
-.can-section,
-.cannot-section,
-.sources-list {
-    background: rgba(255, 255, 255, 0.035);
-    padding: 14px;
-    border-radius: 14px;
-    border: 1px solid rgba(190, 122, 72, 0.18);
-}
-
-.can-section h3 {
-    color: #d8b26a;
-    margin-bottom: 10px;
-}
-
-.cannot-section h3 {
-    color: #d99a8d;
-    margin-bottom: 10px;
-}
-
-.sources-list a {
-    color: #f0b184;
-    text-decoration: none;
-    word-break: break-word;
-}
-
-.sources-list a:hover {
-    text-decoration: underline;
-}
-
 .botia-note {
     background:
         linear-gradient(135deg, rgba(104, 13, 28, 0.96), rgba(74, 12, 18, 0.96));
@@ -146,43 +127,18 @@ strong {
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.24);
 }
 
+.botia-note h3 {
+    color: #ffd8bd;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
 .botia-note p {
     color: #fff0e8;
     font-size: 1rem;
     line-height: 1.62;
 }
 
-.botia-note strong {
-    color: #ffd8bd;
-}
-
-/* Fix caja blanca / texto invisible */
-#cannot-note {
-    background: rgba(104, 13, 28, 0.55) !important;
-    color: #fff0e8 !important;
-    border: 1px solid rgba(230, 160, 107, 0.36) !important;
-    border-radius: 14px !important;
-    padding: 14px !important;
-}
-
-#cannot-note,
-#cannot-note * {
-    color: #fff0e8 !important;
-}
-
-/* Badges */
-.badge {
-    display: inline-block;
-    background: #7c2023;
-    color: #fff3ea;
-    padding: 4px 8px;
-    border-radius: 999px;
-    font-size: 12px;
-    margin-right: 5px;
-    border: 1px solid rgba(230, 160, 107, 0.45);
-}
-
-/* Footer */
 footer {
     background: rgba(10, 6, 6, 0.9);
     padding: 18px;
@@ -197,13 +153,13 @@ footer p {
     margin-bottom: 6px;
 }
 
-/* Mobile */
+/* Mobile Responsive */
 @media (max-width: 600px) {
     body {
         padding: 10px;
     }
 
-    .container {
+    .botia-container {
         border-radius: 18px;
     }
 
@@ -219,7 +175,13 @@ footer p {
         font-size: 13px;
     }
 
-    .content {
+    .botia-icon {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+
+    main {
         padding: 15px;
     }
 
@@ -241,36 +203,5 @@ footer p {
     .botia-note {
         padding: 16px;
         border-radius: 16px;
-    }
-}
-/* BOTIA header icon */
-.botia-header-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 14px;
-}
-
-.botia-icon {
-    width: 140px;
-    height: auto;
-    border-radius: 16px;
-    object-fit: contain;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
-}
-
-/* Compact guide layout */
-.content {
-    padding-top: 20px;
-}
-
-.botia-note {
-    margin-top: 0;
-}
-
-@media (max-width: 600px) {
-    .botia-icon {
-        width: 140px;
-        border-radius: 14px;
     }
 }
