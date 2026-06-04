@@ -1,0 +1,50 @@
+{
+  "sugar": {
+    "title": "Verborgen suiker gedetecteerd",
+    "short_message": "Dit product bevat ingrediënten die werken als suiker of snelle koolhydraten, zelfs als ze anders zijn gelabeld.",
+    "what_detected": "BOTIA heeft gevonden: maltodextrine, glucosesiroop, maïssiroop, vruchtensapconcentraat, gehydrolyseerd zetmeel of dextrine. Dit zijn technisch gezien geen 'suikers', maar ze worden in het lichaam afgebroken als suikers of snelle koolhydraten.",
+    "why_it_matters": "Producten met labels als 'natuurlijk', 'fit' of 'gezond' gebruiken vaak deze ingrediënten om zoetheid en textuur toe te voegen, terwijl ze het woord 'suiker' vermijden. Als u op uw suikerinname let, tellen deze nog steeds mee. Als u dit product aan kinderen geeft, zijn deze verborgen vormen belangrijk om te weten.",
+    "what_it_cannot_conclude": "BOTIA kan u niet vertellen hoeveel suiker/koolhydraten het product bevat, of het product geschikt is voor uw dieet, of dat het uw bloedsuikerspiegel omhoog zal jagen. Het signaleert alleen de aanwezigheid van suikerachtige ingrediënten.",
+    "source_note": "Detectie gebaseerd op analyse van de ingrediëntenlijst. Als u zich zorgen maakt over uw suikerinname, controleer dan de voedingstabel voor 'koolhydraten' en 'suikers'."
+  },
+  "sweetener": {
+    "title": "Zoetstof gedetecteerd",
+    "short_message": "Dit product bevat zoetstoffen die geen suiker zijn. Sommige kunnen bij consumptie in grote hoeveelheden spijsverteringsklachten veroorzaken.",
+    "what_detected": "BOTIA heeft gevonden: maltitol, sorbitol, xylitol, erythritol, isomalt, lactitol (suikeralcoholen - polyolen), of aspartaam, sucralose, sacharine, acesulfame-K (kunstmatige zoetstoffen), of de E-nummers E420, E421, E953, E965, E966, E967, E968, E950, E951, E954, E955.",
+    "why_it_matters": "Deze ingrediënten zorgen voor zoetheid zonder suiker te zijn. Sommige mensen gebruiken ze om hun suikerinname te verminderen. Suikeralcoholen (sorbitol, xylitol) kunnen echter bij overmatige consumptie spijsverteringsongemakken veroorzaken — zoals een opgeblazen gevoel, gasvorming of een laxerend effect. Dit is vooral relevant als u dagelijks meerdere producten met deze ingrediënten eet.",
+    "what_it_cannot_conclude": "BOTIA kan geen spijsverteringsgevoeligheid diagnosticeren of u vertellen of dit product geschikt is voor u. Het signaleert alleen de aanwezigheid van deze zoetstoffen, zodat u een weloverwogen keuze kunt maken.",
+    "source_note": "Effecten van suikeralcoholen zijn gedocumenteerd in de literatuur over volksgezondheid en voeding. Individuele tolerantie varieert."
+  },
+  "texture": {
+    "title": "Ingrediënten voor textuur & stabiliteit",
+    "short_message": "Dit product bevat additieven voor textuur, dikte of stabiliteit. Vaak een teken van een hogere mate van verwerking.",
+    "what_detected": "BOTIA heeft gevonden: gemodificeerd zetmeel, zetmeel, carrageen (E407), guargom, xanthaangom, gommen, verdikkingsmiddelen, stabilisatoren of vulstoffen. Deze worden gebruikt om structuur te geven, te verdikken, het watergehalte te stabiliseren of het mondgevoel te verbeteren.",
+    "why_it_matters": "Deze ingrediënten signaleren dat het product geformuleerd is in plaats van eenvoudig. Een vruchtenyoghurt met xanthaangom en gemodificeerd zetmeel is meer bewerkt dan een gewone yoghurt. Een 'verse' saus met carrageen is gestabiliseerd om de houdbaarheid te verlengen. Niet inherent slecht, maar het opmerken waard als u de voorkeur geeft aan minder bewerkte voeding.",
+    "what_it_cannot_conclude": "BOTIA kan u niet vertellen of deze additieven schadelijk zijn, of het product ongezond is, of dat het geschikt is voor uw dieet. Alleen dat het product sterker geformuleerd is dan de basisversies.",
+    "source_note": "Textuuradditieven zijn gereguleerde voedingsingrediënten. De aanwezigheid is feitelijk; de interpretatie is aan u."
+  },
+  "animal": {
+    "title": "Ingrediënten van dierlijke oorsprong",
+    "short_message": "Dit product bevat een ingrediënt van dierlijke of mogelijk dierlijke oorsprong. Dit kan belangrijk voor u zijn.",
+    "what_detected": "BOTIA heeft gevonden: gelatine, varkensgelatine, rundergelatine, karmijn (cochenille-extract), karmijnzuur, E120, mono- en diglyceriden (E471) wanneer de oorsprong niet is gespecificeerd, of andere van dieren afkomstige additieven.",
+    "why_it_matters": "Sommige mensen vermijden van dieren afkomstige ingrediënten om ethische, culturele, religieuze of dieetredenen. Deze ingrediënten zijn vaak verborgen — een vruchtensapconcentraat kan gelatine bevatten; een rode saus kan karmijn gebruiken in plaats van bietensap. BOTIA markeert ze zodat u kunt beslissen of ze belangrijk voor u zijn.",
+    "what_it_cannot_conclude": "BOTIA kan u niet vertellen of het product veganistisch, vegetarisch, halal of koosjer is. Dat is uw eigen beslissing. BOTIA signaleert alleen: dit ingrediënt is waarschijnlijk afkomstig van een dier of zou dat kunnen zijn.",
+    "source_note": "Ingrediënten van dierlijke oorsprong staan gedeclareerd op etiketten; BOTIA leest ze en licht ze uit."
+  },
+  "flavor": {
+    "title": "Smaakversterker gedetecteerd",
+    "short_message": "Dit product bevat ingrediënten die zijn ontworpen om de smaak te intensiveren. Dit is een duidelijk teken van ultrabewerking.",
+    "what_detected": "BOTIA heeft gevonden: mononatriumglutamaat (MSG), glutamaat, E621, gistextract, smaakversterker, gehydrolyseerd eiwit of geautolyseerde gist. Deze worden gebruikt om voedsel intenser en aantrekkelijker te laten smaken.",
+    "why_it_matters": "Smaakversterkers zijn kenmerkend voor ultrabewerkt voedsel. Ze worden toegevoegd omdat de basisingrediënten natuurlijke smaak missen, waardoor ze chemisch worden versterkt om smakelijker te zijn. Dit is belangrijk als u probeert minder ultrabewerkt voedsel te eten. Onderzoek naar frequente consumptie van zeer smakelijke voedingsmiddelen — ontwikkeld om onweerstaanbaar te zijn — laat patronen zien die verband houden met overconsumptie. BOTIA signaleert dit omdat het een echt signaal is van een aangepaste receptuur, en niet alleen van smaak.",
+    "what_it_cannot_conclude": "BOTIA kan geen voedselgevoeligheid, verslaving of de persoonlijke impact op uw gezondheid diagnosticeren. Het signaleert alleen: dit product is geformuleerd om intenser te smaken dan de basisingrediënten van nature zouden doen.",
+    "source_note": "Smaakversterker zijn gedocumenteerd in de voedingswetenschap en in volksgezondheidsstudies naar ultrabewerking en de smakelijkheid van voedsel."
+  },
+  "enumbers": {
+    "title": "E-nummers en additieven",
+    "short_message": "Dit product bevat additieven met een E-nummer. BOTIA signaleert ze wanneer ze relevant zijn om het product te begrijpen.",
+    "what_detected": "BOTIA heeft relevante E-nummers gevonden: E120 (karmijn), E407 (carrageen), E471 (mono- en diglyceriden), E621 (glutamaat), E950/E951/E954/E955 (zoetstoffen), E420/E421/E953/E965/E966/E967/E968 (suikeralcoholen), of andere E-nummers gemarkeerd vanwege relevantie van ingrediënten.",
+    "why_it_matters": "E-nummers vormen het Europese/internationale systeem voor het benoemen van voedingsadditieven. Ze verschijnen op etiketten in Europa en vele andere regio's. Veel mensen willen weten wanneer een product additieven bevat buiten de basisingrediënten. Sommige E-nummers zijn gekoppeld aan specifieke zorgen: E120 is afkomstig van insecten, E407 is zwaar voor de textuur, E621 is een smaakversterker. BOTIA koppelt ze aan de relevante waarschuwingscategorie wanneer dit van toepassing is. Als er geen categorie van toepassing is, markeert BOTIA het zodat u zelf onderzoek kunt doen.",
+    "what_it_cannot_conclude": "BOTIA kan u niet vertellen dat E-nummers schadelijk zijn of dat dit product onveilig is. E-nummers zijn gereguleerd en goedgekeurd. BOTIA signaleert ze alleen zodat u kunt zien wat er werkelijk in uw voedsel zit.",
+    "source_note": "E-nummers worden toegekend door de Europese Commissie en zijn internationaal erkend. Raadpleeg de EFSA (European Food Safety Authority) als u gedetailleerde informatie wilt over een specifiek nummer."
+  }
+}
