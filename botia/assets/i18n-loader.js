@@ -1,32 +1,85 @@
 // BOTIA i18n Loader - CORRECTED FOR NEW STRUCTURE
 // Loads translations by product and language.
-// NEW: Looks in /botia/[product]/i18n/ instead of /botia/i18n/[product]/
+// Looks in /botia/[product]/i18n/
+// Adds dynamic BOTIA Note from URL trigger + support email.
+
+const BOTIA_SUPPORT_EMAIL = "soporte@botia-safefood.com";
+
+function escapeHTML(value) {
+    return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+function getDetectedLabel(lang) {
+    const labels = {
+        en: "BOTIA detected",
+        es: "BOTIA ha detectado",
+        ar: "اكتشف BOTIA",
+        fr: "BOTIA a détecté",
+        nl: "BOTIA heeft gedetecteerd",
+        de: "BOTIA hat erkannt",
+        pt: "BOTIA detectou",
+        pl: "BOTIA wykryła",
+        ro: "BOTIA a detectat",
+        zh: "BOTIA detected"
+    };
+    return labels[lang] || labels.en;
+}
+
+function renderBotiaNote(lang) {
+    const noteElement = document.getElementById("botia_note");
+    if (!noteElement) {
+        return;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const trigger = (params.get("trigger") || "").trim();
+
+    const detectedLabel = getDetectedLabel(lang);
+    const safeTrigger = escapeHTML(trigger);
+    const safeEmail = escapeHTML(BOTIA_SUPPORT_EMAIL);
+
+    const detectedLine = trigger
+        ? `${detectedLabel}: <strong>${safeTrigger}</strong>`
+        : `${detectedLabel}`;
+
+    noteElement.innerHTML = `
+        ${detectedLine}
+        <br>
+        Contact: <a href="mailto:${safeEmail}">${safeEmail}</a>
+    `;
+}
 
 async function loadTranslations(product, ingredientCode, lang) {
     try {
-        const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'ro'];
+        const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'ro', 'zh'];
         if (!supportedLangs.includes(lang)) {
             lang = 'en';
         }
-        
-        // CORRECTED: New path structure
+
+        // Corrected path structure
         const jsonPath = `/botia/${product}/i18n/${lang}.json`;
-        
+
         console.log(`Loading: ${jsonPath}`);
-        
+
         const response = await fetch(jsonPath);
         if (!response.ok) {
             throw new Error(`Failed to load ${jsonPath} (HTTP ${response.status})`);
         }
-        
+
         const translations = await response.json();
         const data = translations[ingredientCode];
-        
+
         if (!data) {
             console.warn(`No translations found for ${ingredientCode} in ${product}/${lang}`);
+            renderBotiaNote(lang);
             return false;
         }
-        
+
         // Fill HTML elements by ID
         Object.keys(data).forEach(key => {
             const element = document.getElementById(key);
@@ -42,13 +95,18 @@ async function loadTranslations(product, ingredientCode, lang) {
                 console.warn(`Element with id "${key}" not found in HTML`);
             }
         });
-        
+
+        // Dynamic notice must run after translations,
+        // because JSON may fill botia_note first.
+        renderBotiaNote(lang);
+
         document.documentElement.lang = lang;
         localStorage.setItem('botia-lang', lang);
         return true;
-        
+
     } catch (error) {
         console.error('BOTIA translation loading error:', error);
+        renderBotiaNote(lang || 'en');
         return false;
     }
 }
@@ -59,22 +117,24 @@ function detectLanguage() {
     if (langFromUrl) {
         return langFromUrl;
     }
-    
+
     const langFromStorage = localStorage.getItem('botia-lang');
     if (langFromStorage) {
         return langFromStorage;
     }
-    
+
     const browserLang = navigator.language.split('-')[0];
-    const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'ro'];
+    const supportedLangs = ['en', 'es', 'ar', 'fr', 'nl', 'de', 'pt', 'pl', 'ro', 'zh'];
     if (supportedLangs.includes(browserLang)) {
         return browserLang;
     }
-    
+
     return 'en';
 }
 
 window.BOTIA = {
     loadTranslations: loadTranslations,
-    detectLanguage: detectLanguage
+    detectLanguage: detectLanguage,
+    renderBotiaNote: renderBotiaNote
 };
+
