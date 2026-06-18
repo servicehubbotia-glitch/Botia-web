@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "file": "id.json",
+    "module": "general",
+    "path": "botia/general/i18n/id.json",
+    "lang": "id",
+    "last_updated": "2026-06-18"
+  },
+  "sugar": {
+    "title": "Gula Tersembunyi Terdeteksi",
+    "short_message": "Produk ini mengandung gula bebas atau karbohidrat cepat serap, meskipun kata 'gula' tidak muncul pada label.",
+    "what_detected": "Bahan yang diklasifikasikan sebagai gula bebas oleh WHO. Lihat Catatan BOTIA di bawah untuk rincian.",
+    "why_it_matters": "WHO dan EFSA mengaitkan asupan gula bebas dengan peningkatan berat badan, penyakit gigi, dan risiko metabolik. Tidak ada ambang batas aman yang diidentifikasi.",
+    "what_it_cannot_conclude": "BOTIA hanya menandakan keberadaan — bukan kuantitas, bukan dampak diet.",
+    "source_note": "WHO (2015) · EFSA (2022) · Pelajari lebih lanjut di botia-safefood.com"
+  },
+  "sweetener": {
+    "title": "Pemanis Terdeteksi",
+    "short_message": "Produk ini mengandung pemanis non-gula. Memberikan rasa manis tanpa kalori, tetapi efek jangka panjangnya masih dalam peninjauan.",
+    "what_detected": "Bahan yang diklasifikasikan sebagai pemanis non-gula (NSS). Lihat Catatan BOTIA di bawah untuk rincian.",
+    "why_it_matters": "WHO menyarankan untuk tidak menggunakan NSS untuk kontrol berat badan. Penggunaan jangka panjang dikaitkan dengan peningkatan risiko diabetes tipe 2, penyakit kardiovaskular, dan kematian.",
+    "what_it_cannot_conclude": "BOTIA hanya menandakan keberadaan — bukan kuantitas, bukan dampak kesehatan individu.",
+    "source_note": "WHO Guideline: Use of non-sugar sweeteners (2023) · Pelajari lebih lanjut di botia-safefood.com"
+  },
+  "texture": {
+    "title": "Pengubah Tekstur Terdeteksi",
+    "short_message": "Produk ini mengandung pengental, penstabil, atau pengemulsi yang digunakan untuk mengubah konsistensi dan strukturnya.",
+    "what_detected": "Bahan yang diklasifikasikan sebagai pengubah tekstur. Lihat Catatan BOTIA di bawah untuk rincian.",
+    "why_it_matters": "Aditif ini berfungsi secara industri yang tidak ada dalam makanan yang diproses minimal. Keberadaannya adalah penanda makanan ultra-proses (NOVA, FAO/WHO).",
+    "what_it_cannot_conclude": "BOTIA hanya menandakan keberadaan — bukan kuantitas, bukan dampak kesehatan individu.",
+    "source_note": "NOVA Classification System (FAO, 2019) · Pelajari lebih lanjut di botia-safefood.com"
+  },
+  "flavor": {
+    "title": "Penguat Rasa Terdeteksi",
+    "short_message": "Produk ini mengandung bahan yang dirancang untuk mengintensifkan rasa daripada menambahkan rasa alami.",
+    "what_detected": "Bahan yang diklasifikasikan sebagai penguat rasa atau perasa buatan. Lihat Catatan BOTIA di bawah untuk rincian.",
+    "why_it_matters": "Penguat rasa ditambahkan ketika bahan dasar tidak memiliki rasa alami. Keberadaannya adalah penanda makanan ultra-proses (NOVA, FAO/WHO).",
+    "what_it_cannot_conclude": "BOTIA hanya menandakan keberadaan — bukan kuantitas, bukan dampak kesehatan individu.",
+    "source_note": "NOVA Classification System (FAO, 2019) · Pelajari lebih lanjut di botia-safefood.com"
+  },
+  "enumbers": {
+    "title": "Aditif Kode-E Terdeteksi",
+    "short_message": "Produk ini mengandung aditif berkode-E — sistem UE untuk mengidentifikasi aditif makanan yang diizinkan.",
+    "what_detected": "Satu atau lebih aditif berkode-E teridentifikasi. Lihat Catatan BOTIA di bawah untuk rincian.",
+    "why_it_matters": "Kode-E menandakan bahan di luar komponen makanan dasar. Keberadaannya adalah penanda makanan ultra-proses (NOVA, FAO/WHO). Beberapa kode-E juga ditandai dalam kategori peringatan BOTIA lainnya.",
+    "what_it_cannot_conclude": "BOTIA hanya menandakan keberadaan. Kode-E diatur dan diizinkan di UE — bukan kuantitas, bukan dampak kesehatan individu.",
+    "source_note": "EU Regulation 1333/2008 · NOVA Classification System (FAO, 2019) · Pelajari lebih lanjut di botia-safefood.com"
+  }
+}
+
