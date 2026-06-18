@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "file": "es.json",
+    "module": "general",
+    "path": "botia/general/i18n/es.json",
+    "lang": "es",
+    "last_updated": "2026-06-18"
+  },
+  "sugar": {
+    "title": "Azúcar oculto detectado",
+    "short_message": "Este producto contiene azúcares libres o carbohidratos de rápida absorción, incluso si en la etiqueta no aparece la palabra 'azúcar'.",
+    "what_detected": "Ingredientes clasificados como azúcares libres por la OMS. Consulte la nota de BOTIA a continuación para obtener más detalles.",
+    "why_it_matters": "La OMS y la EFSA relacionan el consumo de azúcares libres con aumento de peso, enfermedades dentales y riesgo metabólico. No se ha identificado ningún umbral seguro.",
+    "what_it_cannot_conclude": "BOTIA solo indica la presencia, no la cantidad ni el impacto dietético.",
+    "source_note": "WHO (2015) · EFSA (2022) · Más información en botia-safefood.com"
+  },
+  "sweetener": {
+    "title": "Edulcorante detectado",
+    "short_message": "Este producto contiene edulcorantes no calóricos. Aportan dulzor sin calorías, pero sus efectos a largo plazo están en revisión.",
+    "what_detected": "Ingredientes clasificados como edulcorantes no calóricos (NSS). Consulte la nota de BOTIA a continuación para obtener más detalles.",
+    "why_it_matters": "La OMS desaconseja el uso de edulcorantes no calóricos para el control de peso. Su uso prolongado se ha asociado con un mayor riesgo de diabetes tipo 2, enfermedades cardiovasculares y mortalidad.",
+    "what_it_cannot_conclude": "BOTIA solo indica la presencia, no la cantidad ni el impacto individual en la salud.",
+    "source_note": "WHO Guideline: Use of non-sugar sweeteners (2023) · Más información en botia-safefood.com"
+  },
+  "texture": {
+    "title": "Modificador de textura detectado",
+    "short_message": "Este producto contiene espesantes, estabilizantes o emulsionantes utilizados para modificar su consistencia y estructura.",
+    "what_detected": "Ingredientes clasificados como modificadores de textura. Consulte la nota de BOTIA a continuación para obtener más detalles.",
+    "why_it_matters": "Estos aditivos cumplen una función industrial ausente en los alimentos mínimamente procesados. Su presencia es un marcador de alimento ultraprocesado (NOVA, FAO/WHO).",
+    "what_it_cannot_conclude": "BOTIA solo indica la presencia, no la cantidad ni el impacto individual en la salud.",
+    "source_note": "NOVA Classification System (FAO, 2019) · Más información en botia-safefood.com"
+  },
+  "flavor": {
+    "title": "Potenciador de sabor detectado",
+    "short_message": "Este producto contiene ingredientes diseñados para intensificar el sabor en lugar de aportar sabor natural.",
+    "what_detected": "Ingredientes clasificados como potenciadores del sabor o aromas artificiales. Consulte la nota de BOTIA a continuación para obtener más detalles.",
+    "why_it_matters": "Los potenciadores de sabor se añaden cuando los ingredientes base carecen de sabor natural. Su presencia es un marcador de alimento ultraprocesado (NOVA, FAO/WHO).",
+    "what_it_cannot_conclude": "BOTIA solo indica la presencia, no la cantidad ni el impacto individual en la salud.",
+    "source_note": "NOVA Classification System (FAO, 2019) · Más información en botia-safefood.com"
+  },
+  "enumbers": {
+    "title": "Aditivos con código E detectados",
+    "short_message": "Este producto contiene aditivos con código E: el sistema de la UE para identificar aditivos alimentarios autorizados.",
+    "what_detected": "Se ha identificado uno o varios aditivos con código E. Consulte la nota de BOTIA a continuación para obtener más detalles.",
+    "why_it_matters": "Los códigos E indican ingredientes más allá de los componentes básicos de los alimentos. Su presencia es un marcador de alimento ultraprocesado (NOVA, FAO/WHO). Algunos códigos E también se señalan en otras categorías de alerta de BOTIA.",
+    "what_it_cannot_conclude": "BOTIA solo indica la presencia. Los códigos E están regulados y autorizados en la UE; no la cantidad ni el impacto individual en la salud.",
+    "source_note": "EU Regulation 1333/2008 · NOVA Classification System (FAO, 2019) · Más información en botia-safefood.com"
+  }
+}
+
