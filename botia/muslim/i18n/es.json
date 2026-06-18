@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "file": "es.json",
+    "module": "muslim",
+    "path": "botia/muslim/i18n/es.json",
+    "lang": "es",
+    "last_updated": "2026-06-18"
+  },
+  "halal": {
+    "title": "Este ingrediente se considera permitido según la ley islámica.",
+    "what_detected": "Ingrediente clasificado como halal. Consulte la nota de BOTIA a continuación para obtener más detalles.",
+    "why_it_matters": "La comida halal no debe contener nada ilícito según la ley islámica, y no debe haber estado en contacto con sustancias no halal durante su preparación o procesamiento.",
+    "what_it_cannot_conclude": "BOTIA indica solo la clasificación del ingrediente, no la certificación halal, el método de sacrificio o las condiciones de la instalación.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Más información en botia-safefood.com"
+  },
+  "mashbooh": {
+    "title": "Este ingrediente es de origen incierto según la ley islámica.",
+    "what_detected": "Se detectó un ingrediente cuyo estado halal no puede confirmarse solo con la etiqueta. Consulte la nota de BOTIA a continuación para obtener más detalles.",
+    "why_it_matters": "Según la ley islámica, los aditivos alimentarios derivados de fuentes ilícitas también son ilícitos (Codex CAC/GL 24-1997). Sin embargo, las etiquetas de los alimentos en todo el mundo no exigen declarar el origen de muchos ingredientes: los saborizantes, emulsionantes, enzimas y gelatinas pueden provenir de fuentes animales, vegetales o alcohólicas sin que esto sea visible en la etiqueta.",
+    "what_it_cannot_conclude": "BOTIA no puede confirmar ni denegar el estado halal. Indica que el origen no está declarado; la decisión le corresponde a usted y a su autoridad religiosa.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Más información en botia-safefood.com"
+  },
+  "haram": {
+    "title": "Este producto contiene un ingrediente prohibido según la ley islámica.",
+    "what_detected": "Se detectó un ingrediente clasificado como haram. Consulte la nota de BOTIA a continuación para obtener más detalles.",
+    "why_it_matters": "Según la ley islámica, ciertas fuentes están explícitamente prohibidas, incluidos el cerdo y sus derivados, el alcohol, la sangre y los aditivos alimentarios derivados de estas fuentes (Codex CAC/GL 24-1997). Cuando BOTIA clasifica un ingrediente como haram, el origen es claro y está declarado en la etiqueta.",
+    "what_it_cannot_conclude": "BOTIA solo indica la presencia. No puede emitir un fallo religioso ni reemplazar a una autoridad halal certificada.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Más información en botia-safefood.com"
+  }
+}
+
