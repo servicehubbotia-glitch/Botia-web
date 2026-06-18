@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "file": "pt.json",
+    "module": "general",
+    "path": "botia/general/i18n/pt.json",
+    "lang": "pt",
+    "last_updated": "2026-06-18"
+  },
+  "sugar": {
+    "title": "Açúcar oculto detetado",
+    "short_message": "Este produto contém açúcares livres ou carboidratos de rápida absorção, mesmo que a palavra 'açúcar' não apareça no rótulo.",
+    "what_detected": "Ingredientes classificados como açúcares livres pela OMS. Consulte a nota BOTIA abaixo para obter detalhes.",
+    "why_it_matters": "A OMS e a EFSA associam o consumo de açúcares livres ao ganho de peso, doenças dentárias e risco metabólico. Nenhum limite seguro foi identificado.",
+    "what_it_cannot_conclude": "A BOTIA sinaliza apenas a presença — não a quantidade, nem o impacto dietético.",
+    "source_note": "WHO (2015) · EFSA (2022) · Saiba mais em botia-safefood.com"
+  },
+  "sweetener": {
+    "title": "Edulcorante detetado",
+    "short_message": "Este produto contém edulcorantes não açucarados. Adicionam doçura sem calorias, mas os seus efeitos a longo prazo estão em revisão.",
+    "what_detected": "Ingredientes classificados como edulcorantes não açucarados (NSS). Consulte a nota BOTIA abaixo para obter detalhes.",
+    "why_it_matters": "A OMS desaconselha a utilização de NSS para controlo de peso. O uso a longo prazo tem sido associado a um risco aumentado de diabetes tipo 2, doenças cardiovasculares e mortalidade.",
+    "what_it_cannot_conclude": "A BOTIA sinaliza apenas a presença — não a quantidade, nem o impacto individual na saúde.",
+    "source_note": "WHO Guideline: Use of non-sugar sweeteners (2023) · Saiba mais em botia-safefood.com"
+  },
+  "texture": {
+    "title": "Modificador de textura detetado",
+    "short_message": "Este produto contém espessantes, estabilizantes ou emulsionantes utilizados para modificar a sua consistência e estrutura.",
+    "what_detected": "Ingredientes classificados como modificadores de textura. Consulte a nota BOTIA abaixo para obter detalhes.",
+    "why_it_matters": "Estes aditivos têm uma função industrial ausente em alimentos minimamente processados. A sua presença é um marcador de alimento ultraprocessado (NOVA, FAO/WHO).",
+    "what_it_cannot_conclude": "A BOTIA sinaliza apenas a presença — não a quantidade, nem o impacto individual na saúde.",
+    "source_note": "NOVA Classification System (FAO, 2019) · Saiba mais em botia-safefood.com"
+  },
+  "flavor": {
+    "title": "Intensificador de sabor detetado",
+    "short_message": "Este produto contém ingredientes concebidos para intensificar o sabor em vez de adicionar sabor natural.",
+    "what_detected": "Ingredientes classificados como intensificadores de sabor ou aromas artificiais. Consulte a nota BOTIA abaixo para obter detalhes.",
+    "why_it_matters": "Os intensificadores de sabor são adicionados quando os ingredientes de base não têm sabor natural. A sua presença é um marcador de alimento ultraprocessado (NOVA, FAO/WHO).",
+    "what_it_cannot_conclude": "A BOTIA sinaliza apenas a presença — não a quantidade, nem o impacto individual na saúde.",
+    "source_note": "NOVA Classification System (FAO, 2019) · Saiba mais em botia-safefood.com"
+  },
+  "enumbers": {
+    "title": "Aditivos com código E detetados",
+    "short_message": "Este produto contém aditivos com código E — o sistema da UE para identificar aditivos alimentares autorizados.",
+    "what_detected": "Um ou mais aditivos com código E foram identificados. Consulte a nota BOTIA abaixo para obter detalhes.",
+    "why_it_matters": "Os códigos E sinalizam ingredientes para além dos componentes alimentares básicos. A sua presença é um marcador de alimento ultraprocessado (NOVA, FAO/WHO). Alguns códigos E também são sinalizados noutras categorias de alerta da BOTIA.",
+    "what_it_cannot_conclude": "A BOTIA sinaliza apenas a presença. Os códigos E são regulamentados e autorizados na UE — não a quantidade, nem o impacto individual na saúde.",
+    "source_note": "EU Regulation 1333/2008 · NOVA Classification System (FAO, 2019) · Saiba mais em botia-safefood.com"
+  }
+}
+
