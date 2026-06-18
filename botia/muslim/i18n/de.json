@@ -1,0 +1,31 @@
+{
+  "_meta": {
+    "file": "de.json",
+    "module": "muslim",
+    "path": "botia/muslim/i18n/de.json",
+    "lang": "de",
+    "last_updated": "2026-06-18"
+  },
+  "halal": {
+    "title": "Diese Zutat gilt nach islamischem Recht als erlaubt.",
+    "what_detected": "Zutat als halal eingestuft. Siehe untenstehenden BOTIA-Hinweis für Details.",
+    "why_it_matters": "Halal-Lebensmittel dürfen nichts enthalten, was nach islamischem Recht unerlaubt ist, und dürfen während der Zubereitung oder Verarbeitung nicht mit nicht-halalen Substanzen in Kontakt gekommen sein.",
+    "what_it_cannot_conclude": "BOTIA signalisiert nur die Einstufung der Zutat – nicht die Halal-Zertifizierung, Schlachtmethode oder Betriebsbedingungen.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Mehr erfahren unter botia-safefood.com"
+  },
+  "mashbooh": {
+    "title": "Diese Zutat hat nach islamischem Recht einen ungewissen Ursprung.",
+    "what_detected": "Es wurde eine Zutat erkannt, deren Halal-Status allein anhand der Kennzeichnung nicht bestätigt werden kann. Siehe untenstehenden BOTIA-Hinweis für Details.",
+    "why_it_matters": "Nach islamischem Recht sind Lebensmittelzusatzstoffe aus unerlaubten Quellen ebenfalls unerlaubt (Codex CAC/GL 24-1997). Allerdings schreiben Lebensmittelkennzeichnungen weltweit nicht vor, den Ursprung vieler Zutaten anzugeben – Aromen, Emulgatoren, Enzyme und Gelatine können aus tierischen, pflanzlichen oder alkoholischen Quellen stammen, ohne dass dies auf dem Etikett sichtbar ist.",
+    "what_it_cannot_conclude": "BOTIA kann den Halal-Status weder bestätigen noch verneinen. Es signalisiert, dass der Ursprung nicht deklariert ist – die Entscheidung liegt bei Ihnen und Ihrer religiösen Autorität.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Mehr erfahren unter botia-safefood.com"
+  },
+  "haram": {
+    "title": "Dieses Produkt enthält eine nach islamischem Recht verbotene Zutat.",
+    "what_detected": "Eine als Haram eingestufte Zutat wurde erkannt. Siehe untenstehenden BOTIA-Hinweis für Details.",
+    "why_it_matters": "Nach islamischem Recht sind bestimmte Quellen ausdrücklich verboten – darunter Schweinefleisch und seine Derivate, Alkohol, Blut und Lebensmittelzusatzstoffe, die aus diesen Quellen stammen (Codex CAC/GL 24-1997). Wenn BOTIA eine Zutat als Haram einstuft, ist der Ursprung klar und auf dem Etikett deklariert.",
+    "what_it_cannot_conclude": "BOTIA signalisiert nur das Vorhandensein. Es kann keine religiöse Rechtsentscheidung abgeben oder eine zertifizierte Halal-Behörde ersetzen.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Mehr erfahren unter botia-safefood.com"
+  }
+}
+
