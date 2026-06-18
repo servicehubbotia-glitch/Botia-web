@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "file": "zh.json",
+    "module": "general",
+    "path": "botia/general/i18n/zh.json",
+    "lang": "zh",
+    "last_updated": "2026-06-18"
+  },
+  "sugar": {
+    "title": "检测到隐藏糖分",
+    "short_message": "该产品含有游离糖或快速吸收的碳水化合物，即使标签上没有出现“糖”字。",
+    "what_detected": "被世界卫生组织归类为游离糖的成分。详情请参阅下方的 BOTIA 说明。",
+    "why_it_matters": "世界卫生组织和欧洲食品安全局将游离糖摄入与体重增加、牙齿疾病和代谢风险联系起来。尚未确定安全阈值。",
+    "what_it_cannot_conclude": "BOTIA 仅标识存在 — 不包含含量，也不包含饮食影响。",
+    "source_note": "WHO (2015) · EFSA (2022) · 更多信息请访问 botia-safefood.com"
+  },
+  "sweetener": {
+    "title": "检测到甜味剂",
+    "short_message": "该产品含有非糖甜味剂。它们提供甜味但不含热量，但其长期影响正在审查中。",
+    "what_detected": "被归类为非糖甜味剂（NSS）的成分。详情请参阅下方的 BOTIA 说明。",
+    "why_it_matters": "世界卫生组织建议不要使用非糖甜味剂来控制体重。长期使用与2型糖尿病、心血管疾病和死亡风险增加有关。",
+    "what_it_cannot_conclude": "BOTIA 仅标识存在 — 不包含含量，也不包含个人健康影响。",
+    "source_note": "WHO Guideline: Use of non-sugar sweeteners (2023) · 更多信息请访问 botia-safefood.com"
+  },
+  "texture": {
+    "title": "检测到质地改良剂",
+    "short_message": "该产品含有用于改变其稠度和结构的增稠剂、稳定剂或乳化剂。",
+    "what_detected": "被归类为质地改良剂的成分。详情请参阅下方的 BOTIA 说明。",
+    "why_it_matters": "这些添加剂具有工业功能，在最低限度加工的食品中不存在。它们的存在是超加工食品的标志（NOVA，FAO/WHO）。",
+    "what_it_cannot_conclude": "BOTIA 仅标识存在 — 不包含含量，也不包含个人健康影响。",
+    "source_note": "NOVA Classification System (FAO, 2019) · 更多信息请访问 botia-safefood.com"
+  },
+  "flavor": {
+    "title": "检测到增味剂",
+    "short_message": "该产品含有旨在增强味道而非添加天然风味的成分。",
+    "what_detected": "被归类为增味剂或人造香料的成分。详情请参阅下方的 BOTIA 说明。",
+    "why_it_matters": "当基础成分缺乏天然风味时，会添加增味剂。它们的存在是超加工食品的标志（NOVA，FAO/WHO）。",
+    "what_it_cannot_conclude": "BOTIA 仅标识存在 — 不包含含量，也不包含个人健康影响。",
+    "source_note": "NOVA Classification System (FAO, 2019) · 更多信息请访问 botia-safefood.com"
+  },
+  "enumbers": {
+    "title": "检测到E编码添加剂",
+    "short_message": "该产品含有E编码添加剂 — 欧盟用于识别授权食品添加剂的系统。",
+    "what_detected": "识别出一种或多种E编码添加剂。详情请参阅下方的 BOTIA 说明。",
+    "why_it_matters": "E编码表示超出基本食品成分的成分。它们的存在是超加工食品的标志（NOVA，FAO/WHO）。某些E编码也在其他BOTIA警报类别中被标记。",
+    "what_it_cannot_conclude": "BOTIA 仅标识存在。E编码在欧盟受到监管和授权 — 不包含含量，也不包含个人健康影响。",
+    "source_note": "EU Regulation 1333/2008 · NOVA Classification System (FAO, 2019) · 更多信息请访问 botia-safefood.com"
+  }
+}
+
