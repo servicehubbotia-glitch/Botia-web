@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "file": "tr.json",
+    "module": "general",
+    "path": "botia/general/i18n/tr.json",
+    "lang": "tr",
+    "last_updated": "2026-06-18"
+  },
+  "sugar": {
+    "title": "Gizli Şeker Tespit Edildi",
+    "short_message": "Bu ürün, etikette 'şeker' görünmese bile serbest şekerler veya hızlı emilen karbonhidratlar içermektedir.",
+    "what_detected": "DSÖ tarafından serbest şeker olarak sınıflandırılan içerikler. Ayrıntılar için aşağıdaki BOTIA Notuna bakın.",
+    "why_it_matters": "DSÖ ve EFSA, serbest şeker alımını kilo alımı, diş hastalıkları ve metabolik risk ile ilişkilendirmektedir. Güvenli bir eşik belirlenmemiştir.",
+    "what_it_cannot_conclude": "BOTIA yalnızca varlığı belirtir — miktarı değil, diyet etkisini değil.",
+    "source_note": "WHO (2015) · EFSA (2022) · Daha fazla bilgi için botia-safefood.com"
+  },
+  "sweetener": {
+    "title": "Tatlandırıcı Tespit Edildi",
+    "short_message": "Bu ürün şeker olmayan tatlandırıcılar içermektedir. Kalorisiz tatlılık sağlarlar, ancak uzun vadeli etkileri incelenmektedir.",
+    "what_detected": "Şeker olmayan tatlandırıcılar (NSS) olarak sınıflandırılan içerikler. Ayrıntılar için aşağıdaki BOTIA Notuna bakın.",
+    "why_it_matters": "DSÖ, kilo kontrolü için NSS kullanılmasını önermemektedir. Uzun süreli kullanım, tip 2 diyabet, kardiyovasküler hastalık ve ölüm riskinde artış ile ilişkilendirilmiştir.",
+    "what_it_cannot_conclude": "BOTIA yalnızca varlığı belirtir — miktarı değil, bireysel sağlık etkisini değil.",
+    "source_note": "WHO Guideline: Use of non-sugar sweeteners (2023) · Daha fazla bilgi için botia-safefood.com"
+  },
+  "texture": {
+    "title": "Doku Değiştirici Tespit Edildi",
+    "short_message": "Bu ürün, kıvamını ve yapısını değiştirmek için kullanılan koyulaştırıcılar, dengeleyiciler veya emülgatörler içermektedir.",
+    "what_detected": "Doku değiştirici olarak sınıflandırılan içerikler. Ayrıntılar için aşağıdaki BOTIA Notuna bakın.",
+    "why_it_matters": "Bu katkı maddeleri, minimum işlenmiş gıdalarda bulunmayan endüstriyel bir işlev görür. Varlıkları, ultra-işlenmiş gıda belirtecidir (NOVA, FAO/WHO).",
+    "what_it_cannot_conclude": "BOTIA yalnızca varlığı belirtir — miktarı değil, bireysel sağlık etkisini değil.",
+    "source_note": "NOVA Classification System (FAO, 2019) · Daha fazla bilgi için botia-safefood.com"
+  },
+  "flavor": {
+    "title": "Tat Yoğunlaştırıcı Tespit Edildi",
+    "short_message": "Bu ürün, doğal tat eklemek yerine tadı yoğunlaştırmak için tasarlanmış içerikler içermektedir.",
+    "what_detected": "Tat artırıcılar veya yapay tatlandırıcılar olarak sınıflandırılan içerikler. Ayrıntılar için aşağıdaki BOTIA Notuna bakın.",
+    "why_it_matters": "Tat artırıcılar, temel içerikler doğal tada sahip olmadığında eklenir. Varlıkları, ultra-işlenmiş gıda belirtecidir (NOVA, FAO/WHO).",
+    "what_it_cannot_conclude": "BOTIA yalnızca varlığı belirtir — miktarı değil, bireysel sağlık etkisini değil.",
+    "source_note": "NOVA Classification System (FAO, 2019) · Daha fazla bilgi için botia-safefood.com"
+  },
+  "enumbers": {
+    "title": "E-Kodu Katkı Maddeleri Tespit Edildi",
+    "short_message": "Bu ürün, E-kodlu katkı maddeleri içermektedir — izin verilen gıda katkı maddelerini tanımlayan AB sistemi.",
+    "what_detected": "Bir veya daha fazla E-kodlu katkı maddesi tespit edildi. Ayrıntılar için aşağıdaki BOTIA Notuna bakın.",
+    "why_it_matters": "E-kodları, temel gıda bileşenlerinin ötesindeki içerikleri belirtir. Varlıkları, ultra-işlenmiş gıda belirtecidir (NOVA, FAO/WHO). Bazı E-kodları diğer BOTIA uyarı kategorilerinde de işaretlenir.",
+    "what_it_cannot_conclude": "BOTIA yalnızca varlığı belirtir. E-kodları AB'de düzenlenmiş ve izin verilmiştir — miktarı değil, bireysel sağlık etkisini değil.",
+    "source_note": "EU Regulation 1333/2008 · NOVA Classification System (FAO, 2019) · Daha fazla bilgi için botia-safefood.com"
+  }
+}
+
