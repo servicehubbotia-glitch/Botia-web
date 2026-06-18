@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "file": "nl.json",
+    "module": "general",
+    "path": "botia/general/i18n/nl.json",
+    "lang": "nl",
+    "last_updated": "2026-06-18"
+  },
+  "sugar": {
+    "title": "Verborgen suiker gedetecteerd",
+    "short_message": "Dit product bevat vrije suikers of snel opneembare koolhydraten, zelfs als 'suiker' niet op het etiket staat.",
+    "what_detected": "Ingrediënten geclassificeerd als vrije suikers door de WHO. Zie de BOTIA-opmerking hieronder voor details.",
+    "why_it_matters": "WHO en EFSA koppelen de inname van vrije suikers aan gewichtstoename, tandziekten en metabool risico. Er is geen veilige drempel geïdentificeerd.",
+    "what_it_cannot_conclude": "BOTIA geeft alleen de aanwezigheid aan — niet de hoeveelheid, niet de dieetimpact.",
+    "source_note": "WHO (2015) · EFSA (2022) · Meer informatie op botia-safefood.com"
+  },
+  "sweetener": {
+    "title": "Zoetstof gedetecteerd",
+    "short_message": "Dit product bevat niet-suiker zoetstoffen. Ze geven zoetheid zonder calorieën, maar hun langetermijneffecten worden nog onderzocht.",
+    "what_detected": "Ingrediënten geclassificeerd als niet-suiker zoetstoffen (NSS). Zie de BOTIA-opmerking hieronder voor details.",
+    "why_it_matters": "De WHO adviseert tegen het gebruik van NSS voor gewichtsbeheersing. Langdurig gebruik wordt geassocieerd met een verhoogd risico op type 2-diabetes, hart- en vaatziekten en sterfte.",
+    "what_it_cannot_conclude": "BOTIA geeft alleen de aanwezigheid aan — niet de hoeveelheid, niet de individuele gezondheidsimpact.",
+    "source_note": "WHO Guideline: Use of non-sugar sweeteners (2023) · Meer informatie op botia-safefood.com"
+  },
+  "texture": {
+    "title": "Textuurmodificator gedetecteerd",
+    "short_message": "Dit product bevat verdikkingsmiddelen, stabilisatoren of emulgatoren die worden gebruikt om de consistentie en structuur te wijzigen.",
+    "what_detected": "Ingrediënten geclassificeerd als textuurmodificatoren. Zie de BOTIA-opmerking hieronder voor details.",
+    "why_it_matters": "Deze additieven vervullen een industriële functie die afwezig is in minimaal bewerkte voedingsmiddelen. Hun aanwezigheid is een kenmerk van ultra-bewerkt voedsel (NOVA, FAO/WHO).",
+    "what_it_cannot_conclude": "BOTIA geeft alleen de aanwezigheid aan — niet de hoeveelheid, niet de individuele gezondheidsimpact.",
+    "source_note": "NOVA Classification System (FAO, 2019) · Meer informatie op botia-safefood.com"
+  },
+  "flavor": {
+    "title": "Smaakversterker gedetecteerd",
+    "short_message": "Dit product bevat ingrediënten die zijn ontworpen om de smaak te versterken in plaats van natuurlijke smaak toe te voegen.",
+    "what_detected": "Ingrediënten geclassificeerd als smaakversterkers of kunstmatige aroma's. Zie de BOTIA-opmerking hieronder voor details.",
+    "why_it_matters": "Smaakversterkers worden toegevoegd wanneer basisingrediënten geen natuurlijke smaak hebben. Hun aanwezigheid is een kenmerk van ultra-bewerkt voedsel (NOVA, FAO/WHO).",
+    "what_it_cannot_conclude": "BOTIA geeft alleen de aanwezigheid aan — niet de hoeveelheid, niet de individuele gezondheidsimpact.",
+    "source_note": "NOVA Classification System (FAO, 2019) · Meer informatie op botia-safefood.com"
+  },
+  "enumbers": {
+    "title": "E-code-additieven gedetecteerd",
+    "short_message": "Dit product bevat E-code-additieven — het EU-systeem voor het identificeren van toegestane levensmiddelenadditieven.",
+    "what_detected": "Een of meer E-code-additieven geïdentificeerd. Zie de BOTIA-opmerking hieronder voor details.",
+    "why_it_matters": "E-codes signaleren ingrediënten die verder gaan dan basisvoedselcomponenten. Hun aanwezigheid is een kenmerk van ultra-bewerkt voedsel (NOVA, FAO/WHO). Sommige E-codes worden ook gemarkeerd in andere BOTIA-waarschuwingscategorieën.",
+    "what_it_cannot_conclude": "BOTIA geeft alleen de aanwezigheid aan. E-codes zijn gereguleerd en toegestaan in de EU — niet de hoeveelheid, niet de individuele gezondheidsimpact.",
+    "source_note": "EU Regulation 1333/2008 · NOVA Classification System (FAO, 2019) · Meer informatie op botia-safefood.com"
+  }
+}
+
