@@ -1,4 +1,4 @@
-// BOTIA i18n Loader - CURRENT STRUCTURE
+// BOTIA i18n Loader - FINAL
 // Loads translations from /botia/[product]/i18n/[lang].json
 
 const BOTIA_SUPPORTED_LANGS = [
@@ -37,9 +37,12 @@ function getUrlParam(name) {
   return new URLSearchParams(window.location.search).get(name);
 }
 
-function renderIngredientTrigger(lang) {
+function renderIngredientTrigger(lang, product) {
   const container = document.getElementById("ingredient_link_container");
-  if (!container) return;
+  if (!container) {
+    console.warn("ingredient_link_container not found in DOM");
+    return;
+  }
 
   const trigger = getUrlParam("trigger");
   if (!trigger) {
@@ -59,7 +62,25 @@ function renderIngredientTrigger(lang) {
 
   const p = document.createElement("p");
   p.className = "botia-trigger";
-  p.textContent = `${label}: ${items.join(", ")}`;
+
+  const strong = document.createElement("strong");
+  strong.textContent = `${label}: `;
+  p.appendChild(strong);
+
+  items.forEach((item, index) => {
+    const slug = item
+      .toLowerCase()
+      .replace(/\s+/g, "_")
+      .replace(/[^a-z0-9_]/g, "");
+    const a = document.createElement("a");
+    a.href = `https://www.botia-safefood.com/botia/${product}/${slug}.html?lang=${lang}`;
+    a.textContent = item;
+    a.target = "_blank";
+    p.appendChild(a);
+    if (index < items.length - 1) {
+      p.appendChild(document.createTextNode(", "));
+    }
+  });
 
   container.appendChild(p);
 }
@@ -82,7 +103,7 @@ async function loadTranslations(product, ingredientCode, lang) {
   try {
     lang = normalizeLanguage(lang);
     applyUiText(lang);
-    renderIngredientTrigger(lang);
+    renderIngredientTrigger(lang, product);
 
     const jsonPath = `/botia/${product}/i18n/${lang}.json`;
     console.log(`Loading: ${jsonPath}`);
@@ -100,10 +121,8 @@ async function loadTranslations(product, ingredientCode, lang) {
 
     Object.keys(data).forEach(key => {
       if (key === "short_message") return;
-
       const element = document.getElementById(key);
       if (!element) return;
-
       element.textContent = data[key];
     });
 
