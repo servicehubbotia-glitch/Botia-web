@@ -37,13 +37,13 @@ header {
     align-items: center;
 }
 
-/* BOTIA Icon - OPTIMIZED */
+/* BOTIA Icon - controlled here, not inline HTML */
 .botia-icon {
-    width: 140px;
-    height: 140px;
+    width: 72px;
+    height: 72px;
     object-fit: contain;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+    margin-bottom: 16px;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.28));
     animation: float 3s ease-in-out infinite;
 }
 
@@ -150,6 +150,17 @@ strong {
     color: #ffffff;
 }
 
+.botia-disclaimer {
+    font-size: 0.75rem;
+    color: #b99a88;
+    opacity: 0.8;
+    margin-top: 12px;
+    padding-top: 10px;
+    line-height: 1.5;
+    font-style: italic;
+    border-top: 1px solid rgba(190, 122, 72, 0.20);
+}
+
 footer {
     background: rgba(10, 6, 6, 0.9);
     padding: 18px;
@@ -187,9 +198,9 @@ footer p {
     }
 
     .botia-icon {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 15px;
+        width: 64px;
+        height: 64px;
+        margin-bottom: 14px;
     }
 
     main {
