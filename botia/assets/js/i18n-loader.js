@@ -11,98 +11,112 @@ const BOTIA_UI_TEXT = {
     matters: "Why it matters",
     cannot: "Label limits",
     sources: "Context",
-    note: "Note"
+    note: "Note",
+    disclaimer: "BOTIA informs based on the ingredients read from the label."
   },
   es: {
     detected: "Qué ha detectado BOTIA",
     matters: "Por qué importa",
     cannot: "Límites de la etiqueta",
     sources: "Contexto",
-    note: "Nota"
+    note: "Nota",
+    disclaimer: "BOTIA informa a partir de los ingredientes leídos en la etiqueta."
   },
   fr: {
     detected: "Ce que BOTIA a détecté",
     matters: "Pourquoi c'est important",
     cannot: "Limites de l’étiquette",
     sources: "Contexte",
-    note: "Remarque"
+    note: "Remarque",
+    disclaimer: "BOTIA informe à partir des ingrédients lus sur l’étiquette."
   },
   de: {
     detected: "Was BOTIA erkannt hat",
     matters: "Warum es wichtig ist",
     cannot: "Grenzen des Etiketts",
     sources: "Kontext",
-    note: "Hinweis"
+    note: "Hinweis",
+    disclaimer: "BOTIA informiert auf Grundlage der auf dem Etikett gelesenen Zutaten."
   },
   nl: {
     detected: "Wat BOTIA heeft gedetecteerd",
     matters: "Waarom het belangrijk is",
     cannot: "Grenzen van het etiket",
     sources: "Context",
-    note: "Opmerking"
+    note: "Opmerking",
+    disclaimer: "BOTIA informeert op basis van de ingrediënten die op het etiket zijn gelezen."
   },
   it: {
     detected: "Cosa ha rilevato BOTIA",
     matters: "Perché è importante",
     cannot: "Limiti dell’etichetta",
     sources: "Contesto",
-    note: "Nota"
+    note: "Nota",
+    disclaimer: "BOTIA informa sulla base degli ingredienti letti sull’etichetta."
   },
   pt: {
     detected: "O que a BOTIA detectou",
     matters: "Por que é importante",
     cannot: "Limites do rótulo",
     sources: "Contexto",
-    note: "Nota"
+    note: "Nota",
+    disclaimer: "A BOTIA informa com base nos ingredientes lidos no rótulo."
   },
   pl: {
     detected: "Co wykryła BOTIA",
     matters: "Dlaczego to ważne",
     cannot: "Ograniczenia etykiety",
     sources: "Kontekst",
-    note: "Uwaga"
+    note: "Uwaga",
+    disclaimer: "BOTIA informuje na podstawie składników odczytanych z etykiety."
   },
   ro: {
     detected: "Ce a detectat BOTIA",
     matters: "De ce este important",
     cannot: "Limitele etichetei",
     sources: "Context",
-    note: "Notă"
+    note: "Notă",
+    disclaimer: "BOTIA informează pe baza ingredientelor citite de pe etichetă."
   },
   ar: {
     detected: "ما الذي اكتشفه BOTIA",
     matters: "لماذا يهم",
     cannot: "حدود الملصق",
     sources: "السياق",
-    note: "ملاحظة"
+    note: "ملاحظة",
+    disclaimer: "تقدّم BOTIA معلومات بناءً على المكوّنات المقروءة على الملصق."
   },
   zh: {
     detected: "BOTIA检测到的内容",
     matters: "为什么重要",
     cannot: "标签的限制",
     sources: "背景",
-    note: "说明"
+    note: "说明",
+    disclaimer: "BOTIA基于标签上读取到的配料提供信息。"
   },
   ru: {
     detected: "Что обнаружила BOTIA",
     matters: "Почему это важно",
     cannot: "Ограничения этикетки",
     sources: "Контекст",
-    note: "Примечание"
+    note: "Примечание",
+    disclaimer: "BOTIA предоставляет информацию на основе ингредиентов, прочитанных на этикетке."
   },
   tr: {
     detected: "BOTIA'nın tespit ettikleri",
     matters: "Neden önemli",
     cannot: "Etiketin sınırları",
     sources: "Bağlam",
-    note: "Not"
+    note: "Not",
+    disclaimer: "BOTIA, etiketten okunan içeriklere dayanarak bilgi verir."
   },
   id: {
     detected: "Apa yang dideteksi BOTIA",
     matters: "Mengapa ini penting",
     cannot: "Batas label",
     sources: "Konteks",
-    note: "Catatan"
+    note: "Catatan",
+    disclaimer: "BOTIA memberikan informasi berdasarkan bahan yang terbaca pada label."
   }
 };
 
@@ -119,13 +133,6 @@ function setText(id, value) {
   }
 }
 
-function setHref(id, value) {
-  const element = document.getElementById(id);
-  if (element && value) {
-    element.href = value;
-  }
-}
-
 function applyUiText(lang) {
   const ui = BOTIA_UI_TEXT[lang] || BOTIA_UI_TEXT.en;
 
@@ -134,6 +141,7 @@ function applyUiText(lang) {
   setText("label_cannot", ui.cannot);
   setText("label_sources", ui.sources);
   setText("label_note", ui.note);
+  setText("botia_disclaimer", ui.disclaimer);
 
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
@@ -161,19 +169,12 @@ async function loadTranslations(product, ingredientCode, lang) {
     }
 
     Object.keys(data).forEach(key => {
-      // WebView decision: this field stays in JSON but is not shown on screen.
       if (key === "short_message") return;
 
       const element = document.getElementById(key);
       if (!element) return;
 
-      if (element.tagName === "A") {
-        element.href = data[key];
-      } else if (element.tagName === "IMG") {
-        element.alt = data[key];
-      } else {
-        element.textContent = data[key];
-      }
+      element.textContent = data[key];
     });
 
     localStorage.setItem("botia-lang", lang);
