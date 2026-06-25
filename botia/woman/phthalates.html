@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page_title">BOTIA</title>
+  <link rel="stylesheet" href="/botia/assets/botia-template.css">
+</head>
+<body>
+  <div class="botia-container">
+
+    <header class="botia-header">
+      <img id="module_icon" src="/botia/assets/phthalates.png" alt="BOTIA">
+      <h1 id="title">[LOADING]</h1>
+    </header>
+
+    <main>
+      <section class="botia-card">
+        <h2 id="label_detected">What BOTIA Detected</h2>
+        <p id="what_detected">[LOADING]</p>
+      </section>
+
+      <section class="botia-card">
+        <h2 id="label_matters">Why It Matters</h2>
+        <p id="why_it_matters">[LOADING]</p>
+      </section>
+
+      <section class="botia-card">
+        <h2 id="label_cannot">What BOTIA Cannot Conclude</h2>
+        <p id="what_it_cannot_conclude">[LOADING]</p>
+      </section>
+
+      <section class="botia-card">
+        <h2 id="label_sources">Source & Context</h2>
+        <p id="source_note">[LOADING]</p>
+      </section>
+
+      <section class="botia-note">
+        <h3 id="label_note">📖 BOTIA Note</h3>
+        <p id="botia_note_text">[LOADING]</p>
+        <p>Contact: <a id="botia_contact" href="mailto:soporte@botia-safefood.com">soporte@botia-safefood.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p id="label_footer">BOTIA WebView · Transparent Food Intelligence</p>
+    </footer>
+
+  </div>
+
+  <script src="/botia/assets/js/i18n-loader.js"></script>
+  <script>
+    const lang = BOTIA.detectLanguage();
+    BOTIA.loadTranslations('woman', 'phthalates', lang);
+  </script>
+</body>
+</html>
