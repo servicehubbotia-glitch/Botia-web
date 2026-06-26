@@ -8,33 +8,43 @@
 </head>
 <body>
   <div class="botia-container">
-
     <header class="botia-header">
-      <img id="module_icon" src="/botia/assets/alcohol.png" alt="BOTIA">
+      <img id="module_icon" class="botia-icon" src="/botia/assets/mujer.png" alt="BOTIA">
       <h1 id="title">[LOADING]</h1>
+      <div id="header_trigger_container"></div>
     </header>
-
     <main>
       <section class="botia-card">
         <h2 id="label_detected">What BOTIA Detected</h2>
         <p id="what_detected">[LOADING]</p>
       </section>
-
       <section class="botia-card">
         <h2 id="label_matters">Why It Matters</h2>
         <p id="why_it_matters">[LOADING]</p>
       </section>
-
       <section class="botia-card">
         <h2 id="label_cannot">What BOTIA Cannot Conclude</h2>
         <p id="what_it_cannot_conclude">[LOADING]</p>
       </section>
-
       <section class="botia-card">
         <h2 id="label_sources">Source & Context</h2>
         <p id="source_note">[LOADING]</p>
       </section>
-
       <section class="botia-note">
         <h3 id="label_note">📖 BOTIA Note</h3>
-        <p
+        <div id="ingredient_link_container"></div>
+        <p id="botia_disclaimer" class="botia-disclaimer"></p>
+        <p>Contact: <a id="botia_contact" href="mailto:soporte@botia-safefood.com">soporte@botia-safefood.com</a></p>
+      </section>
+    </main>
+    <footer>
+      <p id="label_footer">BOTIA WebView · Transparent Food Intelligence</p>
+    </footer>
+  </div>
+  <script src="/botia/assets/js/i18n-loader.js"></script>
+  <script>
+    const lang = BOTIA.detectLanguage();
+    BOTIA.loadTranslations('woman', 'alcohol_woman', lang);
+  </script>
+</body>
+</html>
