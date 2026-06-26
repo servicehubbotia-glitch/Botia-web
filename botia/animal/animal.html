@@ -13,6 +13,7 @@
     <header class="botia-header">
       <img id="module_icon" class="botia-icon" src="/botia/assets/animal.png" alt="BOTIA">
       <h1 id="title">[LOADING]</h1>
+      <div id="header_trigger_container"></div>
     </header>
 
     <main>
@@ -38,19 +39,15 @@
 
       <section class="botia-note">
         <h3 id="label_note">BOTIA Note</h3>
-       
         <div id="ingredient_link_container"></div>
-
+        <p id="botia_disclaimer" class="botia-disclaimer"></p>
         <p>
-          Contact:
           <a id="botia_contact" href="mailto:soporte@botia-safefood.com">
             soporte@botia-safefood.com
           </a>
         </p>
       </section>
     </main>
-
-    <div id="botia_disclaimer" class="botia-disclaimer"></div>
 
     <footer>
       <p id="label_footer">BOTIA WebView · Transparent Food Intelligence</p>
@@ -59,7 +56,6 @@
   </div>
 
   <script src="/botia/assets/js/i18n-loader.js"></script>
-
   <script>
     const lang = BOTIA.detectLanguage();
     BOTIA.loadTranslations('animal', 'animal', lang);
