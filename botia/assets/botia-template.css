@@ -72,6 +72,14 @@ header .subtitle {
     opacity: 0.95;
 }
 
+/* Header trigger - ingredientes en el header */
+.botia-header-trigger {
+    font-size: 1.05rem;
+    color: #d9a77d;
+    margin-top: 6px;
+    opacity: 0.9;
+}
+
 main {
     padding: 22px;
 }
@@ -114,6 +122,28 @@ section li {
 
 strong {
     color: #f2c29c;
+}
+
+/* Lista de ingredientes con enlaces "Más información sobre X" */
+.botia-trigger-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
+.botia-trigger-list li {
+    margin-bottom: 6px;
+}
+
+.botia-trigger-list a {
+    color: #ffd8bd;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.botia-trigger-list a:hover {
+    color: #ffffff;
 }
 
 .botia-note {
@@ -201,6 +231,10 @@ footer p {
         width: 64px;
         height: 64px;
         margin-bottom: 14px;
+    }
+
+    .botia-header-trigger {
+        font-size: 0.95rem;
     }
 
     main {
