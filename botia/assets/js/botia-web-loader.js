@@ -1,5 +1,5 @@
 // BOTIA Web Loader
-// Loads translations from /botia/[module]/i18n/[lang].json
+// Loads translations from /botia/library/[module]/i18n/[lang].json
 // For informational web pages (not WebView)
 
 const BOTIA_WEB_SUPPORTED_LANGS = [
@@ -70,7 +70,8 @@ async function loadWebPage(module, pageKey, basePath) {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
 
-    const jsonPath = `/botia/${module}/i18n/${lang}.json`;
+    // ✅ RUTA CORREGIDA
+    const jsonPath = `/botia/library/${module}/i18n/${lang}.json`;
     console.log(`Loading web page: ${jsonPath}`);
 
     const response = await fetch(jsonPath);
@@ -91,13 +92,10 @@ async function loadWebPage(module, pageKey, basePath) {
         const value = obj[key];
 
         if (Array.isArray(value)) {
-          // Arrays → listas
           renderWebList(fullId, value);
         } else if (typeof value === "object" && value !== null) {
-          // Objetos anidados → recursivo
           processObject(value, fullId);
         } else {
-          // String → textContent
           setWebText(fullId, value);
         }
       });
