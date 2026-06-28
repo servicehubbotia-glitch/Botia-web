@@ -1,93 +1,42 @@
-// BOTIA Web Loader — v3 (data-i18n + ruta relativa)
-// Carga JSON desde ./i18n/[lang].json (relativo al HTML)
+document.addEventListener('DOMContentLoaded', async () => {
+  
+  // 1. Buscamos el agua (el archivo JSON)
+  // Usamos "./i18n/en.json" porque desde el HTML, esa es la ruta correcta
+  const jsonPath = './i18n/en.json';
 
-const BOTIA_WEB_SUPPORTED_LANGS = [
-  "en", "es", "fr", "de", "nl", "it", "pt", "pl", "ro", "ar", "zh", "ru", "tr", "id"
-];
-
-function normalizeWebLang(lang) {
-  if (!lang) return "en";
-  lang = lang.toLowerCase().split("-")[0];
-  return BOTIA_WEB_SUPPORTED_LANGS.includes(lang) ? lang : "en";
-}
-
-function getWebUrlParam(name) {
-  return new URLSearchParams(window.location.search).get(name);
-}
-
-function detectWebLanguage() {
-  const langFromUrl = getWebUrlParam("lang");
-  if (langFromUrl) return normalizeWebLang(langFromUrl);
-
-  const langFromStorage = localStorage.getItem("botia-lang");
-  if (langFromStorage) return normalizeWebLang(langFromStorage);
-
-  const browserLang = navigator.language.split("-")[0];
-  return normalizeWebLang(browserLang);
-}
-
-function getNestedValue(obj, key) {
-  return key.split('.').reduce((o, k) => (o || {})[k], obj);
-}
-
-function renderBotiaContent(data) {
-  const elements = document.querySelectorAll('[data-i18n]');
-
-  elements.forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    const value = getNestedValue(data, key);
-
-    if (value !== undefined) {
-      if (Array.isArray(value)) {
-        el.innerHTML = value.map(item => `<span>${item}</span>`).join(' • ');
-      } else {
-        el.textContent = value;
-      }
-    } else {
-      console.warn(`[BOTIA] Clave no encontrada: ${key}`);
-    }
-  });
-}
-
-async function initBotia() {
   try {
-    const lang = detectWebLanguage();
-
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-
-    const jsonPath = `./i18n/${lang}.json`;
-    console.log(`[BOTIA] Cargando: ${jsonPath}`);
-
     const response = await fetch(jsonPath);
-    if (!response.ok) throw new Error(`HTTP ${response.status}: ${jsonPath}`);
+    
+    // Si no encuentra el agua, mostramos error
+    if (!response.ok) {
+      console.error('BOTIA: No encontré el archivo JSON en ' + jsonPath);
+      return;
+    }
 
     const data = await response.json();
 
-    // Busca la clave 'page' o 'status' o 'landing' según el JSON
-    // Si el JSON tiene una clave principal (ej: "page": {...}), la usa
-    // Si no, usa todo el JSON
-    const content = data.page || data.status || data.landing || data;
+    // 2. Función para leer las claves con puntos (ejemplo: "page.title")
+    const getNestedValue = (obj, key) => {
+      return key.split('.').reduce((o, k) => (o || {})[k], obj);
+    };
 
-    renderBotiaContent(content);
-
-    // Si existe 'title' en el contenido, actualiza el título de la pestaña
-    if (content.title) {
-      document.title = `BOTIA · ${content.title}`;
-    }
-
-    localStorage.setItem("botia-lang", lang);
-    return true;
+    // 3. Vertemos el agua en el vaso (inyectamos los textos)
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const value = getNestedValue(data, key);
+      
+      if (value) {
+        // Si es una lista (como los enlaces relacionados)
+        if (Array.isArray(value)) {
+          el.innerHTML = value.map(item => `<span>${item}</span>`).join(' &bull; ');
+        } else {
+          // Si es texto normal
+          el.textContent = value;
+        }
+      }
+    });
 
   } catch (error) {
-    console.error("[BOTIA ERROR]", error);
-    return false;
+    console.error('BOTIA: Error crítico cargando los textos', error);
   }
-}
-
-document.addEventListener('DOMContentLoaded', initBotia);
-
-window.BOTIA_WEB = {
-  init: initBotia,
-  detectLanguage: detectWebLanguage,
-};
+});
