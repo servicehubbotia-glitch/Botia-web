@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "file": "en.json",
+    "module": "muslim-web",
+    "lang": "en",
+    "last_updated": "2026-06-27"
+  },
+  "page": {
+    "title": "Muslim Food Transparency",
+    "intro": "BOTIA helps you understand what a food label is really saying. In its Muslim layer, BOTIA reads the declared ingredients and cross-references them with documented criteria to give you clear explanations.",
+    "strict_rule": "BOTIA operates under a strict transparency rule: it only reads what is written, does not certify food, does not analyse the production chain, and never invents information the label does not show."
+  },
+  "how_botia_reads": {
+    "title": "How BOTIA reads ingredients",
+    "intro": "BOTIA classifies what it finds on the label into three visual blocks:",
+    "halal_title": "HALAL",
+    "halal_text": "The ingredient list shows no prohibited components or signs of doubtful origin. Based solely on the printed information, no conflicting elements were found.",
+    "haram_title": "HARAM",
+    "haram_text": "The label declares clearly forbidden ingredients — pork derivatives, alcohol, or blood. BOTIA flags these immediately.",
+    "mashbooh_title": "MASHBOOH",
+    "mashbooh_text": "The label does not allow confirming the origin or process of a relevant ingredient. This happens frequently with E-numbers that may be animal or vegetable derived, or with permitted meats where the slaughter method is not detailed."
+  },
+  "mashbooh_importance": {
+    "title": "Why Mashbooh is the most important state",
+    "text": "Classifying an ingredient as Mashbooh is not an accusation or a prohibition — it is simply a signal of uncertainty. Food labels are legal documents before they are human explanations. When there is a lack of traceability in an ingredient's origin, that uncertainty becomes the main information. BOTIA makes this visible so you have the power to decide."
+  },
+  "why_doubts": {
+    "title": "Why these doubts arise",
+    "intro": "The ambiguity BOTIA detects comes from the differences between what general law requires on a label and what international Islamic standards require.",
+    "col_aspect": "Label aspect",
+    "col_general": "General labelling law",
+    "col_halal": "Halal standard",
+    "col_why": "Why BOTIA detects ambiguity",
+    "row1_aspect": "Additives (E-numbers) and Enzymes",
+    "row1_general": "Allows grouping by function without requiring animal or vegetable origin to be declared.",
+    "row1_halal": "Requires all additives, preservatives and enzymes to come strictly from lawful sources.",
+    "row1_why": "If BOTIA reads an additive that could be animal-derived but the label does not specify plant or synthetic origin, it is flagged as doubtful.",
+    "row2_aspect": "Permitted animal meats",
+    "row2_general": "Requires declaring the animal species.",
+    "row2_halal": "Requires not only that the animal is lawful, but that slaughter was performed by a Muslim invoking Allah.",
+    "row2_why": "Since labels almost never detail the slaughter method, BOTIA cannot assume the meat meets Halal requirements."
+  },
+  "cannot": {
+    "title": "What BOTIA can and cannot conclude",
+    "can_title": "What BOTIA CAN do",
+    "can_1": "Read declared ingredients from the label",
+    "can_2": "Detect clearly Haram ingredients",
+    "can_3": "Detect ingredients with ambiguous origin",
+    "cannot_title": "What BOTIA CANNOT do",
+    "cannot_1": "Certify Halal — it is not a guarantee seal",
+    "cannot_2": "See undeclared processes such as cross-contamination",
+    "cannot_3": "Replace a religious authority or certification body"
+  },
+  "sources": {
+    "title": "Official sources",
+    "intro": "BOTIA's Muslim layer is based on the following international documents:",
+    "source_1": "OIC/SMIIC 1:2019 — General Requirements for Halal Food",
+    "source_2": "Codex Alimentarius CAC/GL 24-1997 — Guidelines for use of the term Halal",
+    "source_3": "EU Regulation 1169/2011 — Food Information to Consumers"
+  },
+  "related": {
+    "title": "Related pages",
+    "links": ["Halal", "Haram", "Mashbooh", "Animal Origin", "E-numbers", "Flavourings", "Enzymes"]
+  },
+  "disclaimer": "Informative content. BOTIA analyses only the ingredients declared on the label and does not replace medical, legal, religious or professional advice."
+}
