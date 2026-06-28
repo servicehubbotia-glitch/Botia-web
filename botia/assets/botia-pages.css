@@ -1,0 +1,163 @@
+/* ============================================
+   BOTIA PAGES — Estilos para páginas informativas
+   ============================================ */
+
+/* --- Secciones generales --- */
+.page-section {
+  margin-bottom: 32px;
+  padding: 17px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(190, 122, 72, 0.20);
+}
+
+.page-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #e6a06b;
+  border-bottom: 1px solid rgba(230, 160, 107, 0.32);
+  padding-bottom: 8px;
+}
+
+.page-section h3 {
+  font-size: 1.15rem;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #e6a06b;
+}
+
+.page-section p,
+.page-section li {
+  color: #f2e4dc;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.page-section ul {
+  padding-left: 24px;
+}
+
+.page-section li {
+  margin-bottom: 6px;
+}
+
+/* --- Badges --- */
+.badge {
+  display: inline-block;
+  padding: 2px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-right: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-halal     { background: #1e7a4a; color: #fff; }
+.badge-haram     { background: #a0302a; color: #fff; }
+.badge-mashbooh  { background: #b8860b; color: #fff; }
+.badge-risk      { background: #8b3a3a; color: #fff; }
+.badge-plant     { background: #2a6b5a; color: #fff; }
+.badge-animal    { background: #7a4a2a; color: #fff; }
+.badge-synthetic { background: #4a4a6a; color: #fff; }
+.badge-alcohol   { background: #6a2a3a; color: #fff; }
+.badge-allergen  { background: #8a3a2a; color: #fff; }
+
+/* --- Tablas --- */
+.table-wrap {
+  overflow-x: auto;
+  margin: 16px 0 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(190, 122, 72, 0.2);
+  vertical-align: top;
+}
+
+th {
+  background: rgba(190, 122, 72, 0.15);
+  color: #e6a06b;
+  font-weight: 700;
+}
+
+td {
+  color: #f2e4dc;
+}
+
+/* --- Related Pages --- */
+.related-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.related-grid a {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(190, 122, 72, 0.3);
+  color: #ffd8bd;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.related-grid a:hover {
+  background: rgba(190, 122, 72, 0.2);
+  border-color: #e6a06b;
+  color: #ffffff;
+}
+
+/* --- Disclaimer --- */
+.page-disclaimer {
+  font-size: 0.75rem;
+  color: #b99a88;
+  opacity: 0.8;
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(190, 122, 72, 0.2);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  table {
+    font-size: 0.75rem;
+  }
+
+  th, td {
+    padding: 8px 10px;
+  }
+
+  .related-grid a {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
+
+  .page-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .page-section h3 {
+    font-size: 1rem;
+  }
+
+  .badge {
+    font-size: 0.65rem;
+    padding: 1px 10px;
+  }
+}
