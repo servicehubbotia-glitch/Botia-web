@@ -1,4 +1,3 @@
-// BOTIA Web Loader
 const BOTIA_WEB_SUPPORTED_LANGS = [
   "en", "es", "fr", "de", "nl", "it", "pt", "pl", "ro", "ar", "zh", "ru", "tr", "id"
 ];
@@ -44,8 +43,7 @@ async function loadWebPage(module, pageKey, basePath) {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
 
-    // ✅ RUTA CORREGIDA
-    const jsonPath = `/Botia-web/botia/library/${module}/i18n/${lang}.json`;
+    const jsonPath = `/library/${module}/i18n/${lang}.json`;
     console.log(`Loading web page: ${jsonPath}`);
 
     const response = await fetch(jsonPath);
