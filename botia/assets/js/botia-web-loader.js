@@ -1,3 +1,6 @@
+// BOTIA Web Loader — v2 (relative path)
+// Carga JSON desde ./i18n/[lang].json relativo al HTML que lo invoca
+
 const BOTIA_WEB_SUPPORTED_LANGS = [
   "en", "es", "fr", "de", "nl", "it", "pt", "pl", "ro", "ar", "zh", "ru", "tr", "id"
 ];
@@ -14,72 +17,97 @@ function getWebUrlParam(name) {
 
 function setWebText(id, value) {
   const el = document.getElementById(id);
-  if (el && value) el.textContent = value;
+  if (el && value !== undefined && value !== null) el.textContent = value;
 }
 
 function detectWebLanguage() {
   const langFromUrl = getWebUrlParam("lang");
   if (langFromUrl) return normalizeWebLang(langFromUrl);
+
+  const langFromStorage = localStorage.getItem("botia-lang");
+  if (langFromStorage) return normalizeWebLang(langFromStorage);
+
   const browserLang = navigator.language.split("-")[0];
   return normalizeWebLang(browserLang);
 }
 
-function renderRelatedGrid(id, links, basePath) {
-  const el = document.getElementById(id);
-  if (!el || !links) return;
-  el.innerHTML = "";
+function renderRelatedGrid(links) {
+  const container = document.getElementById("related_grid");
+  if (!container || !links) return;
+  container.innerHTML = "";
   links.forEach(link => {
     const a = document.createElement("a");
     const slug = link.toLowerCase().replace(/\s+/g, "_").replace(/[^a-z0-9_]/g, "");
-    a.href = `${basePath}/${slug}.html`;
+    // Enlaces absolutos desde la raíz del sitio
+    a.href = `/webviews/${slug}.html`;
     a.textContent = link;
-    el.appendChild(a);
+    container.appendChild(a);
   });
 }
 
-async function loadWebPage(module, pageKey, basePath) {
+async function loadWebPage(pageKey) {
   try {
     const lang = detectWebLanguage();
+
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
 
-    const jsonPath = `/library/${module}/i18n/${lang}.json`;
-    console.log(`Loading web page: ${jsonPath}`);
+    // ✅ RUTA RELATIVA — el JSON debe estar en ./i18n/[lang].json
+    const jsonPath = `./i18n/${lang}.json`;
+    console.log(`[BOTIA] Cargando: ${jsonPath}`);
 
     const response = await fetch(jsonPath);
-    if (!response.ok) throw new Error(`Failed to load ${jsonPath}`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}: ${jsonPath}`);
 
     const translations = await response.json();
     const data = translations[pageKey];
 
     if (!data) {
-      console.warn(`No data found for ${pageKey} in ${module}/${lang}`);
+      console.warn(`[BOTIA] No se encontró la clave "${pageKey}" en el JSON.`);
       return false;
     }
 
-    function processObject(obj, prefix) {
+    // Recorre recursivamente el objeto y asigna valores a los elementos del DOM
+    function processObject(obj, prefix = "") {
       Object.keys(obj).forEach(key => {
         const fullId = prefix ? `${prefix}_${key}` : key;
         const value = obj[key];
-        if (typeof value === "object" && value !== null) {
+
+        if (value !== null && typeof value === "object" && !Array.isArray(value)) {
           processObject(value, fullId);
         } else {
-          setWebText(fullId, value);
+          const element = document.getElementById(fullId);
+          if (element) {
+            if (Array.isArray(value)) {
+              // Si es array, lo convertimos a lista (ej. ingredientes)
+              element.innerHTML = value.map(item => `<li>${item}</li>`).join("");
+            } else {
+              element.textContent = value;
+            }
+          } else {
+            // No advertimos de elementos no encontrados para no saturar la consola
+          }
         }
       });
     }
 
-    processObject(data, null);
+    processObject(data);
 
+    // Renderiza enlaces relacionados si existen
     if (data.related && data.related.links) {
-      renderRelatedGrid("related_grid", data.related.links, basePath || "/botia");
+      renderRelatedGrid(data.related.links);
+    }
+
+    // Actualiza título de la pestaña
+    if (data.title) {
+      document.title = `BOTIA · ${data.title}`;
     }
 
     localStorage.setItem("botia-lang", lang);
     return true;
 
   } catch (error) {
-    console.error("BOTIA web loader error:", error);
+    console.error(`[BOTIA] Error cargando la página:`, error);
     return false;
   }
 }
