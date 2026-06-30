@@ -4,9 +4,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BOTIA — Food Transparency</title>
+  <meta name="description" content="BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence." />
+  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
   <link rel="stylesheet" href="/botia-landing.css" />
+  <style>
+    .lang-switcher {
+      position: fixed;
+      top: 12px;
+      right: 16px;
+      z-index: 100;
+    }
+    body[dir="rtl"] .lang-switcher {
+      right: auto;
+      left: 16px;
+    }
+    .lang-switcher select {
+      background: rgba(24, 13, 13, 0.96);
+      color: #f2e4dc;
+      border: 1px solid rgba(190, 122, 72, 0.42);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+  <!-- Language Switcher -->
+  <div class="lang-switcher">
+    <select id="lang-select" onchange="cambiarIdioma(this.value)">
+      <option value="en">English</option>
+      <option value="ar">العربية</option>
+      <option value="de">Deutsch</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option>
+      <option value="nl">Nederlands</option>
+      <option value="pl">Polski</option>
+      <option value="pt">Português</option>
+      <option value="ro">Română</option>
+      <option value="ru">Русский</option>
+      <option value="tr">Türkçe</option>
+      <option value="zh">中文</option>
+    </select>
+  </div>
+
   <div class="landing">
 
     <!-- HERO -->
@@ -37,27 +80,27 @@
         <div class="module-grid">
           <a href="/botia/general/sugar.html" class="module-card">
             <img src="/botia/assets/Sugar.png" alt="Sugar" />
-            <span>Sugar</span>
+            <span id="mod_sugar">Sugar</span>
           </a>
           <a href="/botia/general/sweetener.html" class="module-card">
             <img src="/botia/assets/sweeteners.png" alt="Sweeteners" />
-            <span>Sweeteners</span>
+            <span id="mod_sweeteners">Sweeteners</span>
           </a>
           <a href="/botia/general/flavor.html" class="module-card">
             <img src="/botia/assets/flavors.png" alt="Flavourings" />
-            <span>Flavourings</span>
+            <span id="mod_flavourings">Flavourings</span>
           </a>
           <a href="/botia/general/texture.html" class="module-card">
             <img src="/botia/assets/texture.png" alt="Texture" />
-            <span>Texture</span>
+            <span id="mod_texture">Texture</span>
           </a>
           <a href="/botia/general/enumbers.html" class="module-card">
             <img src="/botia/assets/enumbers.png" alt="E-numbers" />
-            <span>E-numbers</span>
+            <span id="mod_enumbers">E-numbers</span>
           </a>
           <a href="/botia/woman/woman.html" class="module-card">
             <img src="/botia/assets/mujer.png" alt="Woman" />
-            <span>Woman</span>
+            <span id="mod_woman">Woman</span>
           </a>
         </div>
       </div>
@@ -68,11 +111,11 @@
         <div class="module-grid">
           <a href="/botia/muslim/muslim.html" class="module-card">
             <img src="/botia/assets/muslim.png" alt="Muslim" />
-            <span>Muslim</span>
+            <span id="mod_muslim">Muslim</span>
           </a>
           <a href="/botia/animal/animal.html" class="module-card">
             <img src="/botia/assets/animal.png" alt="Animal" />
-            <span>Animal</span>
+            <span id="mod_animal">Animal</span>
           </a>
         </div>
       </div>
@@ -130,5 +173,110 @@
     </section>
 
   </div>
+
+  <!-- LOAD TRANSLATIONS -->
+  <script>
+    const RTL_LANGS = ['ar'];
+    const MODULE_KEYS = ['mod_sugar','mod_sweeteners','mod_flavourings','mod_texture','mod_enumbers','mod_woman','mod_muslim','mod_animal'];
+
+    function getIdioma() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('lang')) return params.get('lang');
+      if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
+      const navLang = navigator.language.split('-')[0];
+      const soportados = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+      return soportados.includes(navLang) ? navLang : 'en';
+    }
+
+    function cambiarIdioma(lang) {
+      localStorage.setItem('botia-lang', lang);
+      window.location.reload();
+    }
+
+    const LANG = getIdioma();
+    document.getElementById('lang-select').value = LANG;
+
+    if (RTL_LANGS.includes(LANG)) {
+      document.body.setAttribute('dir', 'rtl');
+      document.documentElement.lang = LANG;
+    }
+
+    fetch(`/i18n/${LANG}/landing.json`)
+      .then(res => {
+        if (!res.ok) throw new Error('Not found');
+        return res.json();
+      })
+      .then(data => {
+        const d = data.landing;
+
+        // Hero
+        document.getElementById('hero_title').textContent = d.hero.title;
+        document.getElementById('hero_subtitle').textContent = d.hero.subtitle;
+        document.getElementById('hero_description').textContent = d.hero.description;
+        document.getElementById('hero_cta_text').textContent = d.hero.cta.text;
+        document.getElementById('hero_cta_text').href = d.hero.cta.link;
+        document.getElementById('hero_cta_note').textContent = d.hero.cta.note;
+
+        // 72%
+        document.getElementById('stat_number').textContent = d.stat_72_percent.number;
+        document.getElementById('stat_headline').textContent = d.stat_72_percent.headline;
+        document.getElementById('stat_body').textContent = d.stat_72_percent.body;
+        document.getElementById('stat_conclusion').textContent = d.stat_72_percent.conclusion;
+
+        // Two kinds
+        document.getElementById('knowledge_title').textContent = d.two_kinds_of_knowledge.title;
+        document.getElementById('evidence_label').textContent = d.two_kinds_of_knowledge.evidence_based.label;
+        document.getElementById('evidence_desc').textContent = d.two_kinds_of_knowledge.evidence_based.description;
+        document.getElementById('choice_label').textContent = d.two_kinds_of_knowledge.choice_based.label;
+        document.getElementById('choice_desc').textContent = d.two_kinds_of_knowledge.choice_based.description;
+
+        // Module names
+        const evMods = d.two_kinds_of_knowledge.evidence_based.modules;
+        for (let i = 0; i < evMods.length && i < 6; i++) {
+          const el = document.getElementById(MODULE_KEYS[i]);
+          if (el) el.textContent = evMods[i].name;
+        }
+        const chMods = d.two_kinds_of_knowledge.choice_based.modules;
+        for (let i = 0; i < chMods.length && i < 2; i++) {
+          const el = document.getElementById(MODULE_KEYS[6 + i]);
+          if (el) el.textContent = chMods[i].name;
+        }
+
+        // Woman
+        document.getElementById('woman_title').textContent = d.woman_not_life_stage.title;
+        document.getElementById('woman_body').textContent = d.woman_not_life_stage.body;
+
+        // How it works
+        document.getElementById('how_title').textContent = d.how_it_works.title;
+        const stepsData = d.how_it_works.steps;
+        if (stepsData.length >= 3) {
+          document.getElementById('step1_title').textContent = stepsData[0].title;
+          document.getElementById('step1_desc').textContent = stepsData[0].description;
+          document.getElementById('step2_title').textContent = stepsData[1].title;
+          document.getElementById('step2_desc').textContent = stepsData[1].description;
+          document.getElementById('step3_title').textContent = stepsData[2].title;
+          document.getElementById('step3_desc').textContent = stepsData[2].description;
+        }
+
+        // Transparency
+        document.getElementById('transparency_title').textContent = d.transparency_first.title;
+        document.getElementById('transparency_body').textContent = d.transparency_first.body;
+        document.getElementById('transparency_highlight').textContent = d.transparency_first.highlight;
+
+        // Closing
+        document.getElementById('closing_claim').textContent = d.closing.claim;
+        document.getElementById('closing_tagline').textContent = d.closing.tagline;
+        document.getElementById('closing_cta_text').textContent = d.closing.cta.text;
+        document.getElementById('closing_cta_text').href = d.closing.cta.link;
+        document.getElementById('closing_cta_note').textContent = d.closing.cta.note;
+
+        // Privacy
+        document.getElementById('privacy_title').textContent = d.privacy.title;
+        document.getElementById('privacy_body').textContent = d.privacy.body;
+      })
+      .catch(err => {
+        console.log('Translation not available, showing English fallback.');
+      });
+  </script>
 </body>
 </html>
