@@ -27,6 +27,16 @@
       font-size: 0.85rem;
       cursor: pointer;
     }
+    @media (max-width: 400px) {
+      .lang-switcher {
+        top: 8px;
+        right: 8px;
+      }
+      .lang-switcher select {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -276,6 +286,7 @@
       })
       .catch(err => {
         console.log('Translation not available, showing English fallback.');
+        document.documentElement.lang = 'en';
       });
   </script>
 </body>
