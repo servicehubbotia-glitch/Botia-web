@@ -1,0 +1,53 @@
+{
+  "title": "Transparansi Pangan Muslim",
+  "subtitle": "Baca labelnya. Pahami apa yang sebenarnya dikatakannya.",
+  "description": "BOTIA membaca bahan-bahan yang dinyatakan dan mencocokkannya dengan kriteria yang terdokumentasi. BOTIA tidak mensertifikasi makanan — BOTIA membuat label menjadi transparan.",
+  "states_title": "Bagaimana BOTIA mengklasifikasikan bahan",
+  "halal": {
+    "name": "Halal",
+    "desc": "Tidak ada bahan terlarang atau asal-usul yang meragukan yang terdeteksi pada label."
+  },
+  "haram": {
+    "name": "Haram",
+    "desc": "Label menyatakan bahan yang jelas-jelas terlarang: turunan babi, alkohol, atau darah."
+  },
+  "mashbooh": {
+    "name": "Mashbooh",
+    "desc": "Label tidak mengonfirmasi asal-usul atau proses. Ketidakpastian adalah informasinya."
+  },
+  "mashbooh_why": {
+    "title": "Mengapa \"Mashbooh\" adalah status yang paling penting",
+    "body": "Mengklasifikasikan bahan sebagai Mashbooh bukanlah tuduhan — ini adalah sinyal ketidakpastian. Label makanan adalah dokumen hukum sebelum menjadi penjelasan manusia. Ketika label menghilangkan asal-usul bahan tambahan atau metode penyembelihan, BOTIA membuat celah itu terlihat sehingga Anda dapat memutuskan."
+  },
+  "doubts": {
+    "title": "Mengapa keraguan ini muncul?",
+    "th_label": "Aspek Label",
+    "th_general": "Peraturan Umum",
+    "th_halal": "Standar Halal",
+    "th_botia": "Mengapa BOTIA mendeteksi ambiguitas",
+    "row1": {
+      "aspect": "Bahan Tambahan (Nomor-E) & Enzim",
+      "general": "Dapat dikelompokkan berdasarkan fungsi tanpa menyebutkan asal nabati atau hewani.",
+      "halal": "Mengharuskan semua bahan tambahan berasal dari sumber yang halal secara ketat.",
+      "botia": "Jika bahan tambahan bisa berasal dari hewani tetapi label tidak menyebutkannya, BOTIA menandainya sebagai meragukan."
+    },
+    "row2": {
+      "aspect": "Daging dari hewan yang diperbolehkan",
+      "general": "Mengharuskan menyebutkan spesies hewan.",
+      "halal": "Mengharuskan penyembelihan yang sah oleh seorang Muslim dengan menyebut nama Allah dan memotong urat tertentu.",
+      "botia": "Label hampir tidak pernah merinci metode penyembelihan, sehingga BOTIA tidak dapat mengasumsikan kepatuhan."
+    }
+  },
+  "cancannot": {
+    "title": "Apa yang BOTIA dapat dan tidak dapat simpulkan"
+  },
+  "can_title": "BOTIA DAPAT",
+  "can1": "Membaca bahan-bahan yang dinyatakan dari label.",
+  "can2": "Mendeteksi bahan yang jelas Haram berdasarkan kriteria yang terdokumentasi.",
+  "can3": "Mendeteksi bahan dengan asal-usul ambigu dan membuat keheningan terlihat.",
+  "cannot_title": "BOTIA TIDAK DAPAT",
+  "cannot1": "Mensertifikasi Halal — ini bukan jaminan atau stempel persetujuan.",
+  "cannot2": "Mendeteksi proses yang tidak dinyatakan seperti kontaminasi silang di pabrik.",
+  "cannot3": "Menggantikan otoritas agama atau lembaga sertifikasi.",
+  "closing": "Transparansi bukanlah sertifikasi. Ini adalah hak untuk mengetahui apa yang dikatakan label — dan apa yang tidak dikatakannya."
+}

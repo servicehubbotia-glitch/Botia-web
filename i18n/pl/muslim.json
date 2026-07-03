@@ -1,0 +1,53 @@
+{
+  "title": "Przejrzystość Żywności Muzułmańskiej",
+  "subtitle": "Przeczytaj etykietę. Zrozum, co naprawdę mówi.",
+  "description": "BOTIA odczytuje zadeklarowane składniki i krzyżuje je z udokumentowanymi kryteriami. Nie certyfikuje żywności — czyni etykietę przejrzystą.",
+  "states_title": "Jak BOTIA klasyfikuje składniki",
+  "halal": {
+    "name": "Halal",
+    "desc": "Na etykiecie nie wykryto żadnych zakazanych składników ani składników wątpliwego pochodzenia."
+  },
+  "haram": {
+    "name": "Haram",
+    "desc": "Etykieta deklaruje wyraźnie zakazane składniki: pochodne wieprzowiny, alkohol lub krew."
+  },
+  "mashbooh": {
+    "name": "Mashbooh",
+    "desc": "Etykieta nie potwierdza pochodzenia ani procesu. Niepewność jest informacją."
+  },
+  "mashbooh_why": {
+    "title": "Dlaczego „Mashbooh” jest najważniejszym stanem",
+    "body": "Klasyfikowanie składnika jako Mashbooh nie jest oskarżeniem — jest sygnałem niepewności. Etykiety żywności są dokumentami prawnymi, zanim staną się wyjaśnieniami dla ludzi. Gdy etykieta pomija pochodzenie dodatku lub metodę uboju, BOTIA uwidacznia tę lukę, abyś mógł podjąć decyzję."
+  },
+  "doubts": {
+    "title": "Dlaczego pojawiają się te wątpliwości?",
+    "th_label": "Aspekt etykiety",
+    "th_general": "Ogólne rozporządzenie",
+    "th_halal": "Standard halal",
+    "th_botia": "Dlaczego BOTIA wykrywa niejednoznaczność",
+    "row1": {
+      "aspect": "Dodatki (numery E) i enzymy",
+      "general": "Mogą być grupowane według funkcji bez określania pochodzenia roślinnego lub zwierzęcego.",
+      "halal": "Wymaga, aby wszystkie dodatki pochodziły ściśle z dozwolonych źródeł.",
+      "botia": "Jeśli dodatek może pochodzić od zwierząt, ale etykieta milczy, BOTIA oznacza go jako wątpliwy."
+    },
+    "row2": {
+      "aspect": "Mięso z dozwolonych zwierząt",
+      "general": "Wymaga deklarowania gatunku zwierzęcia.",
+      "halal": "Wymaga dozwolonego uboju dokonanego przez muzułmanina wzywającego Allaha i przecinającego określone żyły.",
+      "botia": "Etykiety prawie nigdy nie podają szczegółów metody uboju, więc BOTIA nie może założyć zgodności."
+    }
+  },
+  "cancannot": {
+    "title": "Co BOTIA może, a czego nie może stwierdzić"
+  },
+  "can_title": "BOTIA MOŻE",
+  "can1": "Odczytuje zadeklarowane składniki z etykiety.",
+  "can2": "Wykrywa wyraźnie zakazane składniki (Haram) na podstawie udokumentowanych kryteriów.",
+  "can3": "Wykrywa składniki o niejednoznacznym pochodzeniu i uwidacznia milczenie etykiety.",
+  "cannot_title": "BOTIA NIE MOŻE",
+  "cannot1": "Certyfikować Halal — nie jest gwarancją ani pieczęcią zatwierdzenia.",
+  "cannot2": "Wykrywać niezadeklarowanych procesów, takich jak zanieczyszczenie krzyżowe w fabrykach.",
+  "cannot3": "Zastąpić autorytetu religijnego lub jednostki certyfikującej.",
+  "closing": "Przejrzystość to nie certyfikacja. To prawo do wiedzy, co mówi etykieta — a czego nie mówi."
+}

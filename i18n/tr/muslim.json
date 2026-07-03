@@ -1,0 +1,53 @@
+{
+  "title": "Müslüman Gıda Şeffaflığı",
+  "subtitle": "Etiketi okuyun. Gerçekte ne söylediğini anlayın.",
+  "description": "BOTIA, beyan edilen içerikleri okur ve bunları belgelenmiş kriterlerle karşılaştırır. Gıdayı onaylamaz — etiketi şeffaf hale getirir.",
+  "states_title": "BOTIA içerikleri nasıl sınıflandırır",
+  "halal": {
+    "name": "Helal",
+    "desc": "Etikette yasaklı içerik veya şüpheli kaynak tespit edilmedi."
+  },
+  "haram": {
+    "name": "Haram",
+    "desc": "Etiket, açıkça yasaklanmış içerikleri beyan eder: domuz türevleri, alkol veya kan."
+  },
+  "mashbooh": {
+    "name": "Mashbooh",
+    "desc": "Etiket, kaynağı veya süreci doğrulamıyor. Belirsizlik bilginin kendisidir."
+  },
+  "mashbooh_why": {
+    "title": "Neden \"Mashbooh\" en önemli durumdur",
+    "body": "Bir içeriği Mashbooh olarak sınıflandırmak bir suçlama değildir — bu bir belirsizlik işaretidir. Gıda etiketleri, insan açıklamaları olmadan önce yasal belgelerdir. Etiket, bir katkı maddesinin kaynağını veya kesim yöntemini atladığında, BOTIA bu boşluğu görünür kılar, böylece siz karar verebilirsiniz."
+  },
+  "doubts": {
+    "title": "Bu şüpheler neden ortaya çıkar?",
+    "th_label": "Etiket Yönü",
+    "th_general": "Genel Düzenleme",
+    "th_halal": "Helal Standardı",
+    "th_botia": "BOTIA'nın belirsizliği tespit etme nedeni",
+    "row1": {
+      "aspect": "Katkı maddeleri (E-numaraları) ve Enzimler",
+      "general": "Bitkisel veya hayvansal kaynak belirtilmeden işlevlerine göre gruplandırılabilir.",
+      "halal": "Tüm katkı maddelerinin kesinlikle helal kaynaklardan gelmesini gerektirir.",
+      "botia": "Bir katkı maddesi hayvansal kaynaklı olabilir ancak etiket sessizse, BOTIA bunu şüpheli olarak işaretler."
+    },
+    "row2": {
+      "aspect": "İzin verilen hayvanlardan elde edilen et",
+      "general": "Hayvan türünün beyan edilmesini gerektirir.",
+      "halal": "Allah adına kesim yapan bir Müslüman tarafından belirli damarların kesilmesiyle yapılan meşru kesimi gerektirir.",
+      "botia": "Etiketler neredeyse hiçbir zaman kesim yöntemini detaylandırmaz, bu nedenle BOTIA uygunluğu varsayamaz."
+    }
+  },
+  "cancannot": {
+    "title": "BOTIA'nın çıkarabileceği ve çıkaramayacağı sonuçlar"
+  },
+  "can_title": "BOTIA ŞUNLARI YAPABİLİR",
+  "can1": "Etiketten beyan edilen içerikleri okuyabilir.",
+  "can2": "Belgelenmiş kriterlere göre açıkça Haram içerikleri tespit edebilir.",
+  "can3": "Belirsiz kaynaklı içerikleri tespit edebilir ve sessizliği görünür kılabilir.",
+  "cannot_title": "BOTIA ŞUNLARI YAPAMAZ",
+  "cannot1": "Helal onayı veremez — bir garanti veya onay mührü değildir.",
+  "cannot2": "Fabrikalardaki çapraz bulaşma gibi beyan edilmemiş süreçleri tespit edemez.",
+  "cannot3": "Bir dini otorite veya belgelendirme kuruluşunun yerini alamaz.",
+  "closing": "Şeffaflık, onay değildir. Etiketin ne söylediğini — ve ne söylemediğini — bilme hakkıdır."
+}
