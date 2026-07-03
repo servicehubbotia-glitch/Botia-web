@@ -1,218 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BOTIA — Muslim Food Transparency</title>
-  <meta name="description" content="BOTIA helps you understand what a food label really says." />
-  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
-  <link rel="stylesheet" href="/botia-landing.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#1a1a2e">
+  <meta name="description" content="BOTIA Muslim Layer — Transparency for Muslim consumers">
+  <title data-i18n="title">Muslim Food Transparency</title>
+
+  <link rel="icon" type="image/png" href="botia/assets/BOTIA.png">
+  <link rel="stylesheet" href="botia/assets/botia-template.css">
+  <link rel="stylesheet" href="botia/assets/botia-pages.css">
+
   <style>
-    .lang-switcher { position: fixed; top: 12px; right: 16px; z-index: 100; }
-    body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
-    .lang-switcher select { background: rgba(24,13,13,0.96); color: #f2e4dc; border: 1px solid rgba(190,122,72,0.42); border-radius: 8px; padding: 6px 10px; font-size: 0.85rem; cursor: pointer; }
-    @media (max-width:400px) { .lang-switcher { top:8px; right:8px; } .lang-switcher select { font-size:0.75rem; padding:4px 8px; } }
-    .status-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin: 24px 0; }
-    @media (max-width:500px) { .status-grid { grid-template-columns: 1fr; } }
-    .status-card { background: rgba(24,13,13,0.9); border: 1px solid rgba(190,122,72,0.3); border-radius: 12px; padding: 20px; text-align: center; text-decoration: none; color: #f2e4dc; transition: border-color 0.2s; }
-    .status-card:hover { border-color: rgba(190,122,72,0.7); }
-    .status-card img { width: 48px; height: 48px; margin-bottom: 12px; }
-    .status-card .status-name { font-weight: 700; font-size: 1.1rem; margin-bottom: 6px; }
-    .status-card .status-desc { font-size: 0.85rem; color: #c0a08c; line-height: 1.4; }
-    .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
-    .comparison-table th, .comparison-table td { border: 1px solid rgba(190,122,72,0.2); padding: 10px 12px; text-align: left; vertical-align: top; }
-    .comparison-table th { background: rgba(24,13,13,0.9); color: #f2e4dc; font-weight: 600; }
-    .comparison-table td { color: #c0a08c; }
-    .can-cannot { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
-    @media (max-width:500px) { .can-cannot { grid-template-columns: 1fr; } }
-    .can-box, .cannot-box { background: rgba(24,13,13,0.9); border-radius: 12px; padding: 20px; }
-    .can-box { border: 1px solid rgba(100,180,100,0.4); }
-    .cannot-box { border: 1px solid rgba(180,100,100,0.4); }
-    .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; }
-    .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
-    .can-box li, .cannot-box li { margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c; padding-left: 20px; position: relative; }
-    .can-box li::before { content: "✅"; position: absolute; left: 0; }
-    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+    /* ── Loader ── */
+    #botia-loader{position:fixed;inset:0;background:#1a1a2e;display:flex;
+      align-items:center;justify-content:center;z-index:9999;transition:opacity .3s}
+    #botia-loader.hidden{opacity:0;pointer-events:none}
+    #botia-loader .spinner{width:48px;height:48px;border:4px solid rgba(255,255,255,.2);
+      border-top-color:#00d4aa;border-radius:50%;animation:spin .8s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+
+    /* ── Layout ── */
+    .botia-page{max-width:600px;margin:0 auto;padding:20px 16px 60px;
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a2e}
+    .botia-header{display:flex;align-items:center;gap:12px;margin-bottom:24px}
+    .botia-header img{width:36px;height:36px}
+    .botia-header .back-link{margin-left:auto;text-decoration:none;color:#666;font-size:14px}
+
+    .botia-hero{margin-bottom:32px}
+    .botia-hero h1{font-size:28px;margin:12px 0 8px;font-weight:700}
+    .botia-hero p.subtitle{font-size:18px;color:#00a884;margin:0 0 12px;font-weight:600}
+    .botia-hero p.description{font-size:15px;color:#555;margin:0; line-height:1.5;}
+
+    .botia-section{margin:32px 0;padding:20px;background:#f8f9fa;border-radius:16px}
+    .botia-section h2{font-size:20px;margin:0 0 16px;font-weight:700}
+    .botia-section p{font-size:14px;color:#555;line-height:1.6;margin:0 0 10px}
+    .botia-section p:last-child{margin:0;}
+
+    .states-grid{display:grid;gap:12px;margin-bottom:32px}
+    .state-card{background:#fff;border:1px solid #e0e0e0;border-radius:12px;padding:16px}
+    .state-card.halal{border-left:4px solid #28a745}
+    .state-card.haram{border-left:4px solid #dc3545}
+    .state-card.mashbooh{border-left:4px solid #ffc107}
+    .state-card h3{margin:0 0 6px;font-size:16px;font-weight:700;color:#1a1a2e}
+    .state-card p{margin:0;font-size:13px;color:#666;line-height:1.5}
+
+    .doubts-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:13px}
+    .doubts-table th, .doubts-table td{padding:10px;border:1px solid #e0e0e0;text-align:left;vertical-align:top}
+    .doubts-table th{background:#e9ecef;font-weight:600;color:#333}
+    .doubts-table td{color:#555}
+    .doubts-table tr:nth-child(even){background:#fcfcfc}
+
+    .cancannot-container{display:flex;flex-direction:column;gap:24px;margin-top:16px}
+    .can-block{background:#e6f7f0;padding:16px;border-radius:12px;border-left:4px solid #00a884}
+    .cannot-block{background:#fdecee;padding:16px;border-radius:12px;border-left:4px solid #d6374a}
+    .can-block h3, .cannot-block h3{margin:0 0 10px;font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+    .can-block ul, .cannot-block ul{margin:0;padding-left:20px;color:#444}
+    .can-block li, .cannot-block li{margin-bottom:6px;font-size:14px;line-height:1.4}
+
+    .closing-text{font-size:15px;font-weight:600;text-align:center;color:#1a1a2e;margin:32px 0;padding:0 16px}
+
+    .botia-footer{margin-top:40px;padding-top:20px;border-top:1px solid #e0e0e0;
+      text-align:center;font-size:12px;color:#999}
+    .botia-footer a{color:#00a884;text-decoration:none}
+
+    [dir="rtl"] .botia-header .back-link{margin-left:0;margin-right:auto}
+    [dir="rtl"] .doubts-table th, [dir="rtl"] .doubts-table td{text-align:right}
   </style>
 </head>
 <body>
-  <div class="lang-switcher">
-    <select id="lang-select" onchange="cambiarIdioma(this.value)">
-      <option value="en">English</option>
-      <option value="ar">العربية</option>
-      <option value="de">Deutsch</option>
-      <option value="es">Español</option>
-      <option value="fr">Français</option>
-      <option value="id">Bahasa Indonesia</option>
-      <option value="it">Italiano</option>
-      <option value="nl">Nederlands</option>
-      <option value="pl">Polski</option>
-      <option value="pt">Português</option>
-      <option value="ro">Română</option>
-      <option value="ru">Русский</option>
-      <option value="tr">Türkçe</option>
-      <option value="zh">中文</option>
-    </select>
-  </div>
 
-  <div class="landing">
-    <section class="hero">
-      <img class="hero-logo" src="/botia/assets/muslim.png" alt="Muslim" />
-      <h1 id="muslim_title"></h1>
-      <p class="subtitle" id="muslim_subtitle"></p>
-      <p class="description" id="muslim_desc"></p>
+  <!-- ── Loader ── -->
+  <div id="botia-loader"><div class="spinner"></div></div>
+
+  <!-- ── Page ── -->
+  <div class="botia-page">
+
+    <header class="botia-header">
+      <img src="botia/assets/BOTIA.png" alt="BOTIA">
+      <a href="index.html" class="back-link">← BOTIA</a>
+    </header>
+
+    <!-- Hero -->
+    <section class="botia-hero">
+      <h1 data-i18n="title">Muslim Food Transparency</h1>
+      <p class="subtitle" data-i18n="subtitle">Read the label. Understand what it really says.</p>
+      <p class="description" data-i18n="description">BOTIA reads declared ingredients and crosses them with documented criteria. It does not certify food — it makes the label transparent.</p>
     </section>
 
-    <section class="section">
-      <h2 class="section-title" id="states_title"></h2>
-      <div class="status-grid">
-        <a href="/halal.html" class="status-card">
-          <img src="/botia/assets/Halal.png" alt="Halal" />
-          <div class="status-name" id="halal_name"></div>
-          <div class="status-desc" id="halal_desc"></div>
-        </a>
-        <a href="/haram.html" class="status-card">
-          <img src="/botia/assets/Haram.png" alt="Haram" />
-          <div class="status-name" id="haram_name"></div>
-          <div class="status-desc" id="haram_desc"></div>
-        </a>
-        <a href="/mashbooh.html" class="status-card">
-          <img src="/botia/assets/BOTIA.png" alt="Mashbooh" />
-          <div class="status-name" id="mashbooh_name"></div>
-          <div class="status-desc" id="mashbooh_desc"></div>
-        </a>
+    <!-- States -->
+    <h2 style="font-size:20px; font-weight:700; margin-bottom:16px;" data-i18n="states_title">How BOTIA classifies ingredients</h2>
+    <div class="states-grid">
+      <div class="state-card halal">
+        <h3 data-i18n="halal.name">Halal</h3>
+        <p data-i18n="halal.desc">No prohibited ingredients or doubtful origin detected on the label.</p>
+      </div>
+      <div class="state-card haram">
+        <h3 data-i18n="haram.name">Haram</h3>
+        <p data-i18n="haram.desc">The label declares clearly prohibited ingredients: pork derivatives, alcohol, or blood.</p>
+      </div>
+      <div class="state-card mashbooh">
+        <h3 data-i18n="mashbooh.name">Mashbooh</h3>
+        <p data-i18n="mashbooh.desc">The label does not confirm the origin or process. Uncertainty is the information.</p>
+      </div>
+    </div>
+
+    <!-- Mashbooh Why -->
+    <section class="botia-section">
+      <h2 data-i18n="mashbooh_why.title">Why "Mashbooh" is the most important state</h2>
+      <p data-i18n="mashbooh_why.body">Classifying an ingredient as Mashbooh is not an accusation — it is a signal of uncertainty. Food labels are legal documents before they are human explanations. When the label omits the origin of an additive or the method of slaughter, BOTIA makes that gap visible so you can decide.</p>
+    </section>
+
+    <!-- Doubts Table -->
+    <section class="botia-section">
+      <h2 data-i18n="doubts.title">Why do these doubts arise?</h2>
+      <div style="overflow-x:auto;">
+        <table class="doubts-table">
+          <thead>
+            <tr>
+              <th data-i18n="doubts.th_label">Label Aspect</th>
+              <th data-i18n="doubts.th_general">General Regulation</th>
+              <th data-i18n="doubts.th_halal">Halal Standard</th>
+              <th data-i18n="doubts.th_botia">Why BOTIA detects ambiguity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="doubts.row1.aspect">Additives (E-numbers) & Enzymes</td>
+              <td data-i18n="doubts.row1.general">Can be grouped by function without specifying vegetable or animal origin.</td>
+              <td data-i18n="doubts.row1.halal">Requires all additives to come strictly from lawful sources.</td>
+              <td data-i18n="doubts.row1.botia">If an additive could be animal-derived but the label is silent, BOTIA marks it as doubtful.</td>
+            </tr>
+            <tr>
+              <td data-i18n="doubts.row2.aspect">Meat from permitted animals</td>
+              <td data-i18n="doubts.row2.general">Requires declaring the animal species.</td>
+              <td data-i18n="doubts.row2.halal">Requires lawful slaughter by a Muslim invoking Allah and cutting specific veins.</td>
+              <td data-i18n="doubts.row2.botia">Labels almost never detail the slaughter method, so BOTIA cannot assume compliance.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <section class="callout">
-      <h3 class="callout-title" id="mashbooh_why_title"></h3>
-      <p class="callout-body" id="mashbooh_why_body"></p>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title" id="doubts_title"></h2>
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th id="th_label"></th>
-            <th id="th_general"></th>
-            <th id="th_halal"></th>
-            <th id="th_botia"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td id="td1_aspect"></td>
-            <td id="td1_general"></td>
-            <td id="td1_halal"></td>
-            <td id="td1_botia"></td>
-          </tr>
-          <tr>
-            <td id="td2_aspect"></td>
-            <td id="td2_general"></td>
-            <td id="td2_halal"></td>
-            <td id="td2_botia"></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title" id="cancannot_title"></h2>
-      <div class="can-cannot">
-        <div class="can-box">
-          <h4 id="can_title"></h4>
+    <!-- Can / Cannot -->
+    <section class="botia-section" style="background:transparent; padding:0;">
+      <h2 style="font-size:20px; font-weight:700; margin-bottom:16px;" data-i18n="cancannot.title">What BOTIA can and cannot conclude</h2>
+      
+      <div class="cancannot-container">
+        <div class="can-block">
+          <h3 data-i18n="can_title">BOTIA CAN</h3>
           <ul>
-            <li id="can1"></li>
-            <li id="can2"></li>
-            <li id="can3"></li>
+            <li data-i18n="can1">Read declared ingredients from the label.</li>
+            <li data-i18n="can2">Detect clearly Haram ingredients based on documented criteria.</li>
+            <li data-i18n="can3">Detect ingredients with ambiguous origin and make the silence visible.</li>
           </ul>
         </div>
-        <div class="cannot-box">
-          <h4 id="cannot_title"></h4>
+
+        <div class="cannot-block">
+          <h3 data-i18n="cannot_title">BOTIA CANNOT</h3>
           <ul>
-            <li id="cannot1"></li>
-            <li id="cannot2"></li>
-            <li id="cannot3"></li>
+            <li data-i18n="cannot1">Certify Halal — it is not a guarantee or seal of approval.</li>
+            <li data-i18n="cannot2">Detect undeclared processes like cross-contamination in factories.</li>
+            <li data-i18n="cannot3">Replace a religious authority or certification body.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="closing">
-      <p class="closing-claim" id="closing_claim"></p>
-      <a href="/" class="cta-button">← Back to BOTIA</a>
-    </section>
+    <p class="closing-text" data-i18n="closing">Transparency is not certification. It is the right to know what the label says — and what it does not.</p>
+
+    <footer class="botia-footer">
+      <p><a href="index.html">← Back to BOTIA</a></p>
+    </footer>
+
   </div>
 
+  <!-- ── Scripts ── -->
+  <script src="botia/assets/js/botia-web-loader.js"></script>
+  <script src="botia/assets/js/i18n-loader.js"></script>
   <script>
-    const RTL_LANGS = ['ar'];
-    const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+  (function(){
+    'use strict';
+    var I18N_PATH = 'botia/muslim/i18n/';
+    var SUPPORTED = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
 
-    function getIdioma() {
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('lang')) return params.get('lang');
-      if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
-      const nav = navigator.language.split('-')[0];
-      return SOPORTADOS.includes(nav) ? nav : 'en';
+    // ── Detect language ──
+    var lang = 'en';
+    var navLang = (navigator.language || navigator.userLanguage || 'en').split('-')[0];
+    if (SUPPORTED.indexOf(navLang) !== -1) lang = navLang;
+
+    try {
+      var p = new URLSearchParams(window.location.search);
+      var lp = p.get('lang');
+      if (lp && SUPPORTED.indexOf(lp) !== -1) lang = lp;
+    } catch(e){}
+
+    document.documentElement.lang = lang;
+    if (lang === 'ar') document.documentElement.dir = 'rtl';
+
+    // ── Apply translations (Supports dot notation) ──
+    function apply(t){
+      var els = document.querySelectorAll('[data-i18n]');
+      for (var i = 0; i < els.length; i++){
+        var k = els[i].getAttribute('data-i18n');
+        
+        // Resolve dot notation (e.g., "halal.name")
+        var value = k.split('.').reduce(function(acc, curr) {
+            return acc ? acc[curr] : undefined;
+        }, t);
+
+        if (value !== undefined && value !== null) {
+          els[i].innerHTML = value;
+        }
+      }
+      
+      if (t.title) document.title = t.title;
+      var ld = document.getElementById('botia-loader');
+      if (ld) ld.classList.add('hidden');
     }
 
-    function cambiarIdioma(lang) {
-      localStorage.setItem('botia-lang', lang);
-      window.location.reload();
+    function fail(){
+      var ld = document.getElementById('botia-loader');
+      if (ld) ld.classList.add('hidden');
     }
 
-    const LANG = getIdioma();
-    document.getElementById('lang-select').value = LANG;
-
-    if (RTL_LANGS.includes(LANG)) {
-      document.body.setAttribute('dir', 'rtl');
-      document.documentElement.lang = LANG;
-    }
-
-    fetch(`/botia/muslim/i18n/${LANG}.json`)
-      .then(res => res.ok ? res.json() : Promise.reject())
-      .then(data => {
-        const d = data;
-        document.getElementById('muslim_title').textContent = d.title;
-        document.getElementById('muslim_subtitle').textContent = d.subtitle;
-        document.getElementById('muslim_desc').textContent = d.description;
-        document.getElementById('states_title').textContent = d.states_title;
-        document.getElementById('halal_name').textContent = d.halal.name;
-        document.getElementById('halal_desc').textContent = d.halal.desc;
-        document.getElementById('haram_name').textContent = d.haram.name;
-        document.getElementById('haram_desc').textContent = d.haram.desc;
-        document.getElementById('mashbooh_name').textContent = d.mashbooh.name;
-        document.getElementById('mashbooh_desc').textContent = d.mashbooh.desc;
-        document.getElementById('mashbooh_why_title').textContent = d.mashbooh_why.title;
-        document.getElementById('mashbooh_why_body').textContent = d.mashbooh_why.body;
-        document.getElementById('doubts_title').textContent = d.doubts.title;
-        document.getElementById('th_label').textContent = d.doubts.th_label;
-        document.getElementById('th_general').textContent = d.doubts.th_general;
-        document.getElementById('th_halal').textContent = d.doubts.th_halal;
-        document.getElementById('th_botia').textContent = d.doubts.th_botia;
-        document.getElementById('td1_aspect').textContent = d.doubts.row1.aspect;
-        document.getElementById('td1_general').textContent = d.doubts.row1.general;
-        document.getElementById('td1_halal').textContent = d.doubts.row1.halal;
-        document.getElementById('td1_botia').textContent = d.doubts.row1.botia;
-        document.getElementById('td2_aspect').textContent = d.doubts.row2.aspect;
-        document.getElementById('td2_general').textContent = d.doubts.row2.general;
-        document.getElementById('td2_halal').textContent = d.doubts.row2.halal;
-        document.getElementById('td2_botia').textContent = d.doubts.row2.botia;
-        document.getElementById('cancannot_title').textContent = d.cancannot.title;
-        document.getElementById('can_title').textContent = d.can_title;
-        document.getElementById('can1').textContent = d.can1;
-        document.getElementById('can2').textContent = d.can2;
-        document.getElementById('can3').textContent = d.can3;
-        document.getElementById('cannot_title').textContent = d.cannot_title;
-        document.getElementById('cannot1').textContent = d.cannot1;
-        document.getElementById('cannot2').textContent = d.cannot2;
-        document.getElementById('cannot3').textContent = d.cannot3;
-        document.getElementById('closing_claim').textContent = d.closing;
-      })
-      .catch(() => {
-        document.documentElement.lang = 'en';
+    fetch(I18N_PATH + lang + '.json')
+      .then(function(r){ return r.json(); })
+      .then(apply)
+      .catch(function(){
+        if (lang !== 'en'){
+          fetch(I18N_PATH + 'en.json')
+            .then(function(r){ return r.json(); })
+            .then(apply)
+            .catch(fail);
+        } else { fail(); }
       });
+  })();
   </script>
 </body>
 </html>
