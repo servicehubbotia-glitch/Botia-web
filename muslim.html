@@ -62,3 +62,157 @@
       <p class="subtitle" id="muslim_subtitle"></p>
       <p class="description" id="muslim_desc"></p>
     </section>
+
+    <section class="section">
+      <h2 class="section-title" id="states_title"></h2>
+      <div class="status-grid">
+        <a href="/halal.html" class="status-card">
+          <img src="/botia/assets/Halal.png" alt="Halal" />
+          <div class="status-name" id="halal_name"></div>
+          <div class="status-desc" id="halal_desc"></div>
+        </a>
+        <a href="/haram.html" class="status-card">
+          <img src="/botia/assets/Haram.png" alt="Haram" />
+          <div class="status-name" id="haram_name"></div>
+          <div class="status-desc" id="haram_desc"></div>
+        </a>
+        <a href="/mashbooh.html" class="status-card">
+          <img src="/botia/assets/BOTIA.png" alt="Mashbooh" />
+          <div class="status-name" id="mashbooh_name"></div>
+          <div class="status-desc" id="mashbooh_desc"></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h3 class="callout-title" id="mashbooh_why_title"></h3>
+      <p class="callout-body" id="mashbooh_why_body"></p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="doubts_title"></h2>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th id="th_label"></th>
+            <th id="th_general"></th>
+            <th id="th_halal"></th>
+            <th id="th_botia"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="td1_aspect"></td>
+            <td id="td1_general"></td>
+            <td id="td1_halal"></td>
+            <td id="td1_botia"></td>
+          </tr>
+          <tr>
+            <td id="td2_aspect"></td>
+            <td id="td2_general"></td>
+            <td id="td2_halal"></td>
+            <td id="td2_botia"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="cancannot_title"></h2>
+      <div class="can-cannot">
+        <div class="can-box">
+          <h4 id="can_title"></h4>
+          <ul>
+            <li id="can1"></li>
+            <li id="can2"></li>
+            <li id="can3"></li>
+          </ul>
+        </div>
+        <div class="cannot-box">
+          <h4 id="cannot_title"></h4>
+          <ul>
+            <li id="cannot1"></li>
+            <li id="cannot2"></li>
+            <li id="cannot3"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="closing-claim" id="closing_claim"></p>
+      <a href="/" class="cta-button">← Back to BOTIA</a>
+    </section>
+  </div>
+
+  <script>
+    const RTL_LANGS = ['ar'];
+    const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+
+    function getIdioma() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('lang')) return params.get('lang');
+      if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
+      const nav = navigator.language.split('-')[0];
+      return SOPORTADOS.includes(nav) ? nav : 'en';
+    }
+
+    function cambiarIdioma(lang) {
+      localStorage.setItem('botia-lang', lang);
+      window.location.reload();
+    }
+
+    const LANG = getIdioma();
+    document.getElementById('lang-select').value = LANG;
+
+    if (RTL_LANGS.includes(LANG)) {
+      document.body.setAttribute('dir', 'rtl');
+      document.documentElement.lang = LANG;
+    }
+
+    fetch(`/botia/muslim/i18n/${LANG}.json`)
+      .then(res => res.ok ? res.json() : Promise.reject())
+      .then(data => {
+        const d = data;
+        document.getElementById('muslim_title').textContent = d.title;
+        document.getElementById('muslim_subtitle').textContent = d.subtitle;
+        document.getElementById('muslim_desc').textContent = d.description;
+        document.getElementById('states_title').textContent = d.states_title;
+        document.getElementById('halal_name').textContent = d.halal.name;
+        document.getElementById('halal_desc').textContent = d.halal.desc;
+        document.getElementById('haram_name').textContent = d.haram.name;
+        document.getElementById('haram_desc').textContent = d.haram.desc;
+        document.getElementById('mashbooh_name').textContent = d.mashbooh.name;
+        document.getElementById('mashbooh_desc').textContent = d.mashbooh.desc;
+        document.getElementById('mashbooh_why_title').textContent = d.mashbooh_why.title;
+        document.getElementById('mashbooh_why_body').textContent = d.mashbooh_why.body;
+        document.getElementById('doubts_title').textContent = d.doubts.title;
+        document.getElementById('th_label').textContent = d.doubts.th_label;
+        document.getElementById('th_general').textContent = d.doubts.th_general;
+        document.getElementById('th_halal').textContent = d.doubts.th_halal;
+        document.getElementById('th_botia').textContent = d.doubts.th_botia;
+        document.getElementById('td1_aspect').textContent = d.doubts.row1.aspect;
+        document.getElementById('td1_general').textContent = d.doubts.row1.general;
+        document.getElementById('td1_halal').textContent = d.doubts.row1.halal;
+        document.getElementById('td1_botia').textContent = d.doubts.row1.botia;
+        document.getElementById('td2_aspect').textContent = d.doubts.row2.aspect;
+        document.getElementById('td2_general').textContent = d.doubts.row2.general;
+        document.getElementById('td2_halal').textContent = d.doubts.row2.halal;
+        document.getElementById('td2_botia').textContent = d.doubts.row2.botia;
+        document.getElementById('cancannot_title').textContent = d.cancannot.title;
+        document.getElementById('can_title').textContent = d.can_title;
+        document.getElementById('can1').textContent = d.can1;
+        document.getElementById('can2').textContent = d.can2;
+        document.getElementById('can3').textContent = d.can3;
+        document.getElementById('cannot_title').textContent = d.cannot_title;
+        document.getElementById('cannot1').textContent = d.cannot1;
+        document.getElementById('cannot2').textContent = d.cannot2;
+        document.getElementById('cannot3').textContent = d.cannot3;
+        document.getElementById('closing_claim').textContent = d.closing;
+      })
+      .catch(() => {
+        document.documentElement.lang = 'en';
+      });
+  </script>
+</body>
+</html>
