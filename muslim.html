@@ -1,4 +1,4 @@
-  <!-- TRANSLATIONS -->
+  <!-- LOAD TRANSLATIONS -->
   <script>
     const RTL_LANGS = ['ar'];
     const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
@@ -7,82 +7,83 @@
       const params = new URLSearchParams(window.location.search);
       if (params.get('lang')) return params.get('lang');
       if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
-      const nav = navigator.language.split('-')[0];
-      return SOPORTADOS.includes(nav) ? nav : 'en';
+      const navLang = navigator.language.split('-')[0];
+      return SOPORTADOS.includes(navLang) ? navLang : 'en';
     }
-    
+
     function cambiarIdioma(lang) {
       localStorage.setItem('botia-lang', lang);
       window.location.reload();
     }
 
     const LANG = getIdioma();
-    const langSelect = document.getElementById('lang-select');
-    if (langSelect) langSelect.value = LANG;
-    
+    document.getElementById('lang-select').value = LANG;
+
     if (RTL_LANGS.includes(LANG)) {
       document.body.setAttribute('dir', 'rtl');
       document.documentElement.lang = LANG;
     }
 
-    // Helper para leer propiedades anidadas en el JSON (ej: "halal.name")
-    function getNested(obj, path) {
-      return path.split('.').reduce((acc, part) => (acc && acc[part] !== undefined) ? acc[part] : undefined, obj);
-    }
-
-    // Mapa entre las claves del JSON y los IDs del HTML
-    const ID_MAP = {
-      "title": "muslim_title",
-      "subtitle": "muslim_subtitle",
-      "description": "muslim_desc",
-      "states_title": "states_title",
-      "halal.name": "halal_name",
-      "halal.desc": "halal_desc",
-      "haram.name": "haram_name",
-      "haram.desc": "haram_desc",
-      "mashbooh.name": "mashbooh_name",
-      "mashbooh.desc": "mashbooh_desc",
-      "mashbooh_why.title": "mashbooh_why_title",
-      "mashbooh_why.body": "mashbooh_why_body",
-      "doubts.title": "doubts_title",
-      "doubts.th_label": "th_label",
-      "doubts.th_general": "th_general",
-      "doubts.th_halal": "th_halal",
-      "doubts.th_botia": "th_botia",
-      "doubts.row1.aspect": "td1_aspect",
-      "doubts.row1.general": "td1_general",
-      "doubts.row1.halal": "td1_halal",
-      "doubts.row1.botia": "td1_botia",
-      "doubts.row2.aspect": "td2_aspect",
-      "doubts.row2.general": "td2_general",
-      "doubts.row2.halal": "td2_halal",
-      "doubts.row2.botia": "td2_botia",
-      "cancannot.title": "cancannot_title",
-      "can_title": "can_title",
-      "can1": "can1",
-      "can2": "can2",
-      "can3": "can3",
-      "cannot_title": "cannot_title",
-      "cannot1": "cannot1",
-      "cannot2": "cannot2",
-      "cannot3": "cannot3",
-      "closing": "closing_claim"
-    };
-
-    // ¡AQUÍ ESTÁ LA SOLUCIÓN! Ruta correcta hacia tu carpeta i18n existente
-    fetch('i18n/' + LANG + '/muslim.json')
-      .then(res => res.ok ? res.json() : Promise.reject())
-      .then(data => {
-        Object.keys(ID_MAP).forEach(jsonPath => {
-          const el = document.getElementById(ID_MAP[jsonPath]);
-          const text = getNested(data, jsonPath);
-          if (el && text !== undefined) {
-            el.textContent = text;
-          }
-        });
+    // Usamos la barra / al principio, igual que en tu landing
+    fetch(`/i18n/${LANG}/muslim.json`)
+      .then(res => {
+        if (!res.ok) throw new Error('Not found');
+        return res.json();
       })
-      .catch(() => { 
-        // Si falla, simplemente se queda en inglés
-        document.documentElement.lang = 'en'; 
+      .then(d => {
+        // Hero
+        document.getElementById('muslim_title').textContent = d.title;
+        document.getElementById('muslim_subtitle').textContent = d.subtitle;
+        document.getElementById('muslim_desc').textContent = d.description;
+
+        // States
+        document.getElementById('states_title').textContent = d.states_title;
+        document.getElementById('halal_name').textContent = d.halal.name;
+        document.getElementById('halal_desc').textContent = d.halal.desc;
+        document.getElementById('haram_name').textContent = d.haram.name;
+        document.getElementById('haram_desc').textContent = d.haram.desc;
+        document.getElementById('mashbooh_name').textContent = d.mashbooh.name;
+        document.getElementById('mashbooh_desc').textContent = d.mashbooh.desc;
+
+        // Mashbooh Why
+        document.getElementById('mashbooh_why_title').textContent = d.mashbooh_why.title;
+        document.getElementById('mashbooh_why_body').textContent = d.mashbooh_why.body;
+
+        // Doubts Table
+        document.getElementById('doubts_title').textContent = d.doubts.title;
+        document.getElementById('th_label').textContent = d.doubts.th_label;
+        document.getElementById('th_general').textContent = d.doubts.th_general;
+        document.getElementById('th_halal').textContent = d.doubts.th_halal;
+        document.getElementById('th_botia').textContent = d.doubts.th_botia;
+        
+        // Row 1
+        document.getElementById('td1_aspect').textContent = d.doubts.row1.aspect;
+        document.getElementById('td1_general').textContent = d.doubts.row1.general;
+        document.getElementById('td1_halal').textContent = d.doubts.row1.halal;
+        document.getElementById('td1_botia').textContent = d.doubts.row1.botia;
+        
+        // Row 2
+        document.getElementById('td2_aspect').textContent = d.doubts.row2.aspect;
+        document.getElementById('td2_general').textContent = d.doubts.row2.general;
+        document.getElementById('td2_halal').textContent = d.doubts.row2.halal;
+        document.getElementById('td2_botia').textContent = d.doubts.row2.botia;
+
+        // Can / Cannot
+        document.getElementById('cancannot_title').textContent = d.cancannot.title;
+        document.getElementById('can_title').textContent = d.can_title;
+        document.getElementById('can1').textContent = d.can1;
+        document.getElementById('can2').textContent = d.can2;
+        document.getElementById('can3').textContent = d.can3;
+        document.getElementById('cannot_title').textContent = d.cannot_title;
+        document.getElementById('cannot1').textContent = d.cannot1;
+        document.getElementById('cannot2').textContent = d.cannot2;
+        document.getElementById('cannot3').textContent = d.cannot3;
+
+        // Closing
+        document.getElementById('closing_claim').textContent = d.closing;
+      })
+      .catch(err => {
+        console.log('Translation not available, showing English fallback.');
+        document.documentElement.lang = 'en';
       });
   </script>
