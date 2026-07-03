@@ -1,25 +1,114 @@
 {
-  "woman_title": "女性不是一个生命阶段",
-  "woman_subtitle": "为女性生物学提供科学证据层。",
-  "woman_desc": "女性板块在存在相关证据时突出显示与女性健康相关的证据——若无则不予呈现。这并不意味着怀孕，也不将女性健康简化为生殖功能。",
-  "why_title": "女性板块存在的原因",
-  "why_body": "2020年至2026年间，国际科学和监管机构日益关注食品成分（无论是天然还是合成）如何差异化影响女性生理。内分泌干扰物、生物累积性污染物及某些添加剂已被证实与多囊卵巢综合征、子宫内膜异位症、性早熟和乳腺癌等疾病相关。BOTIA 女性板块以非危言耸听的方式组织这些证据，同时不回避不确定性。",
-  "areas_title": "关键证据领域",
-  "areas_intro": "BOTIA 女性板块将标签成分与官方科学证据关联至以下领域：",
-  "area1": "内分泌干扰物：双酚A、邻苯二甲酸酯、对羟基苯甲酸酯——与多囊卵巢综合征、子宫内膜异位症及激素紊乱相关。",
-  "area2": "重金属：汞、铅、镉、砷——具有生物累积性，被归类为致肥因子。",
-  "area3": "酒精与乳腺癌：国际癌症研究机构一类致癌物，未确定安全阈值。",
-  "area4": "反式脂肪：工业反式脂肪酸增加心血管风险，尤其在绝经后。",
-  "area5": "人工甜味剂：关于性早熟及激素轴紊乱的新兴证据。",
-  "fichas_title": "按成分或风险探索",
-  "cancannot_title": "BOTIA 能及不能得出的结论",
-  "can_title": "BOTIA 能够",
-  "can1": "读取标签上声明的成分。",
-  "can2": "在存在相关证据时，将成分与女性健康官方证据关联。",
-  "can3": "当标签未说明来源或加工方式时，显示不确定性。",
-  "cannot_title": "BOTIA 不能",
-  "cannot1": "诊断或预测任何医疗状况。",
-  "cannot2": "检测包装或加工过程中未声明的污染物。",
-  "cannot3": "替代医疗、专业或饮食建议。",
-  "closing_claim": "女性健康并非小众议题。这是占人口一半的群体对透明证据的诉求。"
+  "_meta": {
+    "file": "zh.json",
+    "module": "woman",
+    "path": "botia/woman/i18n/zh.json",
+    "lang": "zh",
+    "last_updated": "2026-06-18"
+  },
+  "bpa": {
+    "title": "塑料包装可能会将双酚A释放到这种食物中。",
+    "what_detected": "检测到与双酚A相关的包装。双酚A不会出现在成分列表中 — 但会从罐内涂层和塑料容器迁移到食物中。",
+    "why_it_matters": "双酚A在体内模拟雌激素并积聚在脂肪组织中。由于激素敏感性，女性尤其脆弱。与生殖效应和甲状腺干扰有关（EFSA，2023）。",
+    "what_it_cannot_conclude": "BOTIA无法测量双酚A水平，也无法确认该制造商是否使用不含双酚A的涂层。它仅指示已记录暴露风险。",
+    "source_note": "EFSA BPA re-evaluation (2023) · WHO Endocrine Disruptors Report · 更多信息请访问 botia-safefood.com"
+  },
+  "parabens_e214": {
+    "title": "该产品含有对羟基苯甲酸酯 — 具有雌激素活性的防腐剂。",
+    "what_detected": "标签上检测到对羟基苯甲酸酯（E214–E219）。这些防腐剂可以与体内的激素受体相互作用。",
+    "why_it_matters": "在乳房组织中检测到对羟基苯甲酸酯。累积暴露 — 同时来自食物和化妆品 — 是研究人员最担心的。EFSA已限制婴幼儿食品中的丙基和丁基对羟基苯甲酸酯。",
+    "what_it_cannot_conclude": "BOTIA无法量化您的每日总对羟基苯甲酸酯暴露量，也无法评估与化妆品来源的相互作用。它仅指示标签上的存在。",
+    "source_note": "EFSA parabens opinion · WHO Endocrine Disruptors Report · 更多信息请访问 botia-safefood.com"
+  },
+  "e171": {
+    "title": "E171 — 检测到二氧化钛。自2022年起在欧盟被禁止作为食品添加剂。",
+    "what_detected": "标签上识别出E171（二氧化钛）。其纳米颗粒可以穿过生物屏障。",
+    "why_it_matters": "EFSA（2021）得出结论，E171不再被认为是安全的，理由是基因毒性 — 潜在的DNA损伤。育龄妇女和孕期妇女是优先关注群体。",
+    "what_it_cannot_conclude": "BOTIA无法确定颗粒大小，也无法确认这是欧盟生产还是进口库存。它仅指示标签上的存在。",
+    "source_note": "EFSA E171 safety opinion (2021) · EU Regulation 2022/63 · 更多信息请访问 botia-safefood.com"
+  },
+  "risk_endocrine": {
+    "title": "该产品含有具有潜在激素活性的添加剂。",
+    "what_detected": "检测到一种或多种标记为内分泌干扰活性的添加剂。详情请参阅下方的 BOTIA 说明。",
+    "why_it_matters": "内分泌干扰物通过随时间的累积性低水平暴露 — 而不是一次性剧烈效应 — 干扰激素系统。女性尤其脆弱：这些化合物积聚在脂肪组织中，并在多年日常暴露中累积（WHO/UNEP，2012）。",
+    "what_it_cannot_conclude": "BOTIA无法量化您的总干扰物负荷或预测个体结果。担忧是累积性和长期性的 — 仅此产品本身不是问题。",
+    "source_note": "WHO/UNEP State of the Science of Endocrine Disrupting Chemicals · EFSA endocrine disruptor framework · 更多信息请访问 botia-safefood.com"
+  },
+  "risk_fat_accumulation": {
+    "title": "该产品含有在身体组织中累积的脂溶性添加剂。",
+    "what_detected": "检测到脂溶性添加剂。这些化合物溶解在脂肪中 — 而非水中 — 并在多年的暴露中累积在脂肪组织中。",
+    "why_it_matters": "女性的体脂百分比高于男性，这意味着这些化合物的储存容量更大。在快速减脂、哺乳或更年期期间，储存的毒素可以以浓缩形式释放到血液中 — 导致疲劳、脑雾和激素紊乱。",
+    "what_it_cannot_conclude": "BOTIA无法测量您的个人累积水平或预测释放时间。它仅指示脂溶性添加剂的存在。",
+    "source_note": "WHO persistent organic pollutants review · EFSA lipophilic contaminants · 更多信息请访问 botia-safefood.com"
+  },
+  "risk_packaging": {
+    "title": "该产品的包装可能会将化学化合物释放到食物中。",
+    "what_detected": "检测到与化学迁移风险相关的包装类型。这些化合物 — 双酚A、邻苯二甲酸酯、PFAS — 不会出现在成分列表中，但在储存、运输或加热过程中会转移到食物中。",
+    "why_it_matters": "许多包装迁移物是内分泌干扰物。女性的激素系统对外部激素干扰更敏感。效果是累积性的 — 多年的日常暴露会累积（EFSA，WHO）。",
+    "what_it_cannot_conclude": "BOTIA无法测量实际迁移物水平，也无法确认存在哪些具体化合物。它仅指示已记录的包装迁移风险。",
+    "source_note": "EU Regulation 10/2011 · EFSA food contact materials · WHO BPA assessment · 更多信息请访问 botia-safefood.com"
+  },
+  "alcohol_woman": {
+    "title": "该产品含有酒精 — 与乳腺癌风险相关，无安全剂量。",
+    "what_detected": "标签上检测到酒精（乙醇）或酒精衍生成分。详情请参阅下方的 BOTIA 说明。",
+    "why_it_matters": "世界卫生组织将酒精列为1类致癌物。即使1克也会增加女性患乳腺癌的风险。没有安全阈值 — 风险随每剂增加。",
+    "what_it_cannot_conclude": "BOTIA无法量化酒精含量或评估您的个人风险。它仅指示存在。",
+    "source_note": "WHO IARC Group 1 carcinogen classification · World Cancer Research Fund · 更多信息请访问 botia-safefood.com"
+  },
+  "trans_fats": {
+    "title": "该产品含有反式脂肪 — 女性的心血管风险高于男性。",
+    "what_detected": "标签上检测到工业反式脂肪酸（iTFA）。详情请参阅下方的 BOTIA 说明。",
+    "why_it_matters": "反式脂肪损害微血管系统 — 最小的血管。研究表明，女性比男性更容易受到这种损害，相关冠心病风险更高（WHO，2023）。",
+    "what_it_cannot_conclude": "BOTIA无法量化反式脂肪含量或评估您的个人心血管风险。它仅指示存在。",
+    "source_note": "WHO global trans fat elimination · EFSA dietary fats opinion · 更多信息请访问 botia-safefood.com"
+  },
+  "bha_e320": {
+    "title": "该产品含有BHA（E320） — 国际监测下的一种可能激素干扰物。",
+    "what_detected": "标签上检测到BHA（丁基羟基茴香醚 / E320）。",
+    "why_it_matters": "BHA具有弱雌激素和抗雄激素活性。它被归类为可能的人类致癌物（IARC 2B组），并处于持续的国际肿瘤学监测之下。",
+    "what_it_cannot_conclude": "BOTIA无法评估您的个人暴露水平或预测个体健康结果。它仅指示标签上的存在。",
+    "source_note": "IARC Monographs · EFSA BHA assessment · WHO endocrine disruptors · 更多信息请访问 botia-safefood.com"
+  },
+  "bht_e321": {
+    "title": "该产品含有BHT（E321） — 正在调查其激素模拟潜力。",
+    "what_detected": "标签上检测到BHT（丁基羟基甲苯 / E321）。",
+    "why_it_matters": "BHT正在被调查其激素模拟潜力 — 它可能干扰内分泌系统。由于这些担忧，它已在多个国家的化妆品中受到限制。",
+    "what_it_cannot_conclude": "BOTIA无法评估您的个人暴露水平或预测个体健康结果。它仅指示标签上的存在。",
+    "source_note": "EFSA BHT assessment · IARC Monographs · WHO endocrine disruptors · 更多信息请访问 botia-safefood.com"
+  },
+  "cadmium": {
+    "title": "该产品可能含有镉 — 一种在体内积累长达45年的重金属。",
+    "what_detected": "识别出镉暴露风险。铁含量低的女性吸收的镉显著多于男性。",
+    "why_it_matters": "镉在肾脏、骨骼和生殖器官中积累。女性因铁含量较低而更有效地吸收它 — 一种生物学脆弱性。没有安全阈值（EFSA，2021）。",
+    "what_it_cannot_conclude": "BOTIA无法测量该特定产品中的镉含量。它仅根据产品类别指示已记录的暴露风险。",
+    "source_note": "EFSA cadmium dietary exposure (2021) · WHO heavy metals · 更多信息请访问 botia-safefood.com"
+  },
+  "methylmercury": {
+    "title": "该产品可能含有甲基汞 — 一种在体内积累数十年的神经毒素。",
+    "what_detected": "根据产品类别识别出甲基汞暴露风险。主要存在于鱼类和海鲜中。",
+    "why_it_matters": "甲基汞穿过胎盘和血脑屏障。胎儿神经认知发育是最高风险。世界卫生组织和EFSA建议孕妇和育龄妇女限制高汞鱼类的消费。",
+    "what_it_cannot_conclude": "BOTIA无法测量该特定产品中的汞含量。它仅根据产品类别指示已记录的暴露风险。",
+    "source_note": "EFSA methylmercury opinion · WHO mercury and health · 更多信息请访问 botia-safefood.com"
+  },
+  "lead": {
+    "title": "该产品可能含有铅 — 没有安全的暴露水平。",
+    "what_detected": "根据产品类别识别出铅暴露风险。",
+    "why_it_matters": "铅造成不可逆的神经损伤。世界卫生组织和EFSA确认没有安全阈值 — 任何暴露都带有风险。儿童和育龄妇女是最脆弱的人群。",
+    "what_it_cannot_conclude": "BOTIA无法测量该特定产品中的铅含量。它仅根据产品类别指示已记录的暴露风险。",
+    "source_note": "EFSA lead dietary exposure · WHO lead poisoning fact sheet · 更多信息请访问 botia-safefood.com"
+  },
+  "dioxins_pcbs": {
+    "title": "该产品可能含有二噁英或多氯联苯 — 在脂肪组织中积累的持久性化合物。",
+    "what_detected": "根据产品类别识别出二噁英和多氯联苯暴露风险。主要存在于富含脂肪的鱼类、肉类和乳制品中。",
+    "why_it_matters": "二噁英和多氯联苯在体内脂肪中积累数十年，并在怀孕和哺乳期间释放 — 直接传递给胎儿和婴儿。与生育障碍和免疫系统效应有关（EFSA，2018）。",
+    "what_it_cannot_conclude": "BOTIA无法测量该特定产品中的二噁英含量。它仅根据产品类别指示已记录的暴露风险。",
+    "source_note": "EFSA dioxins and PCBs opinion (2018) · WHO dioxins fact sheet · 更多信息请访问 botia-safefood.com"
+  },
+  "phthalates": {
+    "title": "该产品可能含有邻苯二甲酸酯 — 与子宫内膜异位症和激素紊乱有关。",
+    "what_detected": "识别出邻苯二甲酸酯暴露风险。邻苯二甲酸酯从塑料包装迁移到食物中 — 尤其是储存在塑料中或加热的高脂肪食物。",
+    "why_it_matters": "邻苯二甲酸酯是异种雌激素 — 在体内模拟雌激素。研究将慢性暴露与子宫内膜异位症、生育能力下降和月经周期紊乱联系起来。患有子宫内膜异位症的女性邻苯二甲酸酯水平显著更高（EFSA，2019）。",
+    "what_it_cannot_conclude": "BOTIA无法测量该特定产品中的邻苯二甲酸酯含量。它仅根据包装类型和产品类别指示已记录的暴露风险。",
+    "source_note": "EFSA phthalates risk assessment (2019) · WHO endocrine disruptors · 更多信息请访问 botia-safefood.com"
+  }
 }

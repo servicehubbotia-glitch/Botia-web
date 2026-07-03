@@ -1,25 +1,114 @@
 {
-  "woman_title": "La mujer no es una etapa de la vida",
-  "woman_subtitle": "Una capa de evidencia científica para la biología de la mujer.",
-  "woman_desc": "Mujer destaca la evidencia relevante para la salud de la mujer cuando esa evidencia existe — y la omite cuando no. No significa embarazo. No reduce la salud de la mujer a la reproducción.",
-  "why_title": "Por qué existe Mujer",
-  "why_body": "Entre 2020 y 2026, los organismos científicos y reguladores internacionales han intensificado su enfoque en cómo los ingredientes alimentarios — tanto naturales como sintéticos — afectan diferencialmente la fisiología de la mujer. Los disruptores endocrinos, los contaminantes bioacumulativos y ciertos aditivos se han relacionado con afecciones como el SOP, la endometriosis, la pubertad precoz y el cáncer de mama. BOTIA Mujer organiza esta evidencia sin alarmismo y sin ocultar la incertidumbre.",
-  "areas_title": "Áreas clave de evidencia",
-  "areas_intro": "BOTIA Mujer conecta los ingredientes de la etiqueta con la evidencia científica oficial en estas áreas:",
-  "area1": "Disruptores endocrinos: BPA, ftalatos, parabenos — relacionados con SOP, endometriosis y alteración hormonal.",
-  "area2": "Metales pesados: mercurio, plomo, cadmio, arsénico — bioacumulativos y clasificados como obesógenos.",
-  "area3": "Alcohol y cáncer de mama: carcinógeno del Grupo 1 de la IARC. No se ha identificado un umbral seguro.",
-  "area4": "Grasas trans: las AGT industriales aumentan el riesgo cardiovascular, especialmente después de la menopausia.",
-  "area5": "Edulcorantes artificiales: evidencia emergente sobre pubertad precoz y alteración del eje hormonal.",
-  "fichas_title": "Explora por ingrediente o riesgo",
-  "cancannot_title": "Lo que BOTIA puede y no puede concluir",
-  "can_title": "BOTIA PUEDE",
-  "can1": "Leer los ingredientes declarados en la etiqueta.",
-  "can2": "Conectar los ingredientes con la evidencia oficial sobre la salud de la mujer cuando esa evidencia existe.",
-  "can3": "Mostrar incertidumbre cuando la etiqueta no informa sobre el origen o el procesamiento.",
-  "cannot_title": "BOTIA NO PUEDE",
-  "cannot1": "Diagnosticar ni predecir ninguna condición médica.",
-  "cannot2": "Detectar contaminantes no declarados provenientes del envase o del procesamiento.",
-  "cannot3": "Reemplazar el consejo médico, profesional o dietético.",
-  "closing_claim": "La salud de la mujer no es un nicho. Es la mitad de la población que exige evidencia transparente."
+  "_meta": {
+    "file": "es.json",
+    "module": "woman",
+    "path": "botia/woman/i18n/es.json",
+    "lang": "es",
+    "last_updated": "2026-06-18"
+  },
+  "bpa": {
+    "title": "Los envases de plástico pueden liberar BPA en este alimento.",
+    "what_detected": "Se detectó envase asociado a BPA. El BPA no aparece en las listas de ingredientes, pero migra a los alimentos desde los revestimientos de latas y envases de plástico.",
+    "why_it_matters": "El BPA imita al estrógeno en el cuerpo y se acumula en el tejido adiposo. Las mujeres son especialmente vulnerables debido a la sensibilidad hormonal. Relacionado con efectos reproductivos e interferencia tiroidea (EFSA, 2023).",
+    "what_it_cannot_conclude": "BOTIA no puede medir los niveles de BPA ni confirmar si este fabricante utiliza revestimientos sin BPA. Solo indica el riesgo de exposición documentado.",
+    "source_note": "EFSA BPA re-evaluation (2023) · WHO Endocrine Disruptors Report · Más información en botia-safefood.com"
+  },
+  "parabens_e214": {
+    "title": "Este producto contiene parabenos — conservantes con actividad estrogénica.",
+    "what_detected": "Se detectaron parabenos (E214–E219) en la etiqueta. Estos conservantes pueden interactuar con los receptores hormonales del cuerpo.",
+    "why_it_matters": "Se han detectado parabenos en el tejido mamario. La exposición acumulativa — procedente de alimentos y cosméticos simultáneamente — es lo que más preocupa a los investigadores. La EFSA ha restringido los parabenos de propilo y butilo en alimentos infantiles.",
+    "what_it_cannot_conclude": "BOTIA no puede cuantificar la exposición diaria total a parabenos ni evaluar la interacción con fuentes cosméticas. Solo indica la presencia en la etiqueta.",
+    "source_note": "EFSA parabens opinion · WHO Endocrine Disruptors Report · Más información en botia-safefood.com"
+  },
+  "e171": {
+    "title": "E171 — Dióxido de titanio detectado. Prohibido como aditivo alimentario en la UE desde 2022.",
+    "what_detected": "Se identificó E171 (dióxido de titanio) en la etiqueta. Sus nanopartículas pueden atravesar barreras biológicas.",
+    "why_it_matters": "La EFSA (2021) concluyó que E171 ya no puede considerarse seguro, citando genotoxicidad — posible daño al ADN. Las mujeres en edad reproductiva y durante el embarazo son un grupo prioritario de preocupación.",
+    "what_it_cannot_conclude": "BOTIA no puede determinar el tamaño de las partículas ni confirmar si se trata de producción europea o de existencias importadas. Solo indica la presencia en la etiqueta.",
+    "source_note": "EFSA E171 safety opinion (2021) · EU Regulation 2022/63 · Más información en botia-safefood.com"
+  },
+  "risk_endocrine": {
+    "title": "Este producto contiene aditivos con posible actividad hormonal.",
+    "what_detected": "Se detectaron uno o varios aditivos marcados por actividad disruptora endocrina. Consulte la nota de BOTIA a continuación para obtener más detalles.",
+    "why_it_matters": "Los disruptores endocrinos interfieren en el sistema hormonal mediante una exposición acumulativa y de bajo nivel a lo largo del tiempo — no con un único efecto dramático. Las mujeres son especialmente vulnerables: estos compuestos se acumulan en el tejido adiposo y se multiplican tras años de exposición diaria (WHO/UNEP, 2012).",
+    "what_it_cannot_conclude": "BOTIA no puede cuantificar la carga total de disruptores ni predecir los resultados individuales. La preocupación es acumulativa y a largo plazo — este producto por sí solo no es el problema.",
+    "source_note": "WHO/UNEP State of the Science of Endocrine Disrupting Chemicals · EFSA endocrine disruptor framework · Más información en botia-safefood.com"
+  },
+  "risk_fat_accumulation": {
+    "title": "Este producto contiene aditivos liposolubles que se acumulan en el tejido corporal.",
+    "what_detected": "Se detectaron aditivos liposolubles. Estos compuestos se disuelven en grasa — no en agua — y se acumulan en el tejido adiposo durante años de exposición.",
+    "why_it_matters": "Las mujeres tienen un mayor porcentaje de grasa corporal que los hombres, lo que significa una mayor capacidad de almacenamiento para estos compuestos. Durante la pérdida rápida de grasa, la lactancia o la menopausia, las toxinas almacenadas pueden liberarse en el torrente sanguíneo en forma concentrada — causando fatiga, niebla cerebral y alteración hormonal.",
+    "what_it_cannot_conclude": "BOTIA no puede medir su nivel de acumulación personal ni predecir el momento de la liberación. Solo indica la presencia de aditivos liposolubles.",
+    "source_note": "WHO persistent organic pollutants review · EFSA lipophilic contaminants · Más información en botia-safefood.com"
+  },
+  "risk_packaging": {
+    "title": "El envase de este producto puede liberar compuestos químicos en el alimento.",
+    "what_detected": "Se detectó un tipo de envase asociado a riesgo de migración química. Estos compuestos — BPA, ftalatos, PFAS — no aparecen en las listas de ingredientes, pero se transfieren a los alimentos durante el almacenamiento, transporte o calentamiento.",
+    "why_it_matters": "Muchos migrantes de envases son disruptores endocrinos. Los sistemas hormonales de las mujeres son más sensibles a la interferencia hormonal externa. Los efectos son acumulativos — años de exposición diaria se suman (EFSA, WHO).",
+    "what_it_cannot_conclude": "BOTIA no puede medir los niveles reales de migrantes ni confirmar qué compuestos específicos están presentes. Solo indica el riesgo documentado de migración del envase.",
+    "source_note": "EU Regulation 10/2011 · EFSA food contact materials · WHO BPA assessment · Más información en botia-safefood.com"
+  },
+  "alcohol_woman": {
+    "title": "Este producto contiene alcohol — vinculado al riesgo de cáncer de mama sin dosis segura.",
+    "what_detected": "Se detectó alcohol (etanol) o ingrediente derivado del alcohol en la etiqueta. Consulte la nota de BOTIA a continuación para obtener más detalles.",
+    "why_it_matters": "La OMS clasifica el alcohol como carcinógeno del Grupo 1. Incluso 1 gramo aumenta el riesgo de cáncer de mama en mujeres. No existe un umbral seguro — el riesgo aumenta con cada dosis.",
+    "what_it_cannot_conclude": "BOTIA no puede cuantificar el contenido de alcohol ni evaluar su riesgo personal. Solo indica la presencia.",
+    "source_note": "WHO IARC Group 1 carcinogen classification · World Cancer Research Fund · Más información en botia-safefood.com"
+  },
+  "trans_fats": {
+    "title": "Este producto contiene grasas trans — mayor riesgo cardiovascular en mujeres que en hombres.",
+    "what_detected": "Se detectaron ácidos grasos trans industriales (iTFA) en la etiqueta. Consulte la nota de BOTIA a continuación para obtener más detalles.",
+    "why_it_matters": "Las grasas trans dañan la microvasculatura — los vasos sanguíneos más pequeños. Las investigaciones muestran que las mujeres son más vulnerables a este daño que los hombres, con un mayor riesgo asociado de enfermedad coronaria (OMS, 2023).",
+    "what_it_cannot_conclude": "BOTIA no puede cuantificar el contenido de grasas trans ni evaluar su riesgo cardiovascular personal. Solo indica la presencia.",
+    "source_note": "WHO global trans fat elimination · EFSA dietary fats opinion · Más información en botia-safefood.com"
+  },
+  "bha_e320": {
+    "title": "Este producto contiene BHA (E320) — un posible disruptor hormonal bajo vigilancia internacional.",
+    "what_detected": "Se detectó BHA (butilhidroxianisol / E320) en la etiqueta.",
+    "why_it_matters": "El BHA tiene una actividad estrogénica y antiandrogénica débil. Está clasificado como posible carcinógeno humano (IARC Grupo 2B) y está bajo vigilancia oncológica internacional continua.",
+    "what_it_cannot_conclude": "BOTIA no puede evaluar su nivel de exposición personal ni predecir los resultados de salud individuales. Solo indica la presencia en la etiqueta.",
+    "source_note": "IARC Monographs · EFSA BHA assessment · WHO endocrine disruptors · Más información en botia-safefood.com"
+  },
+  "bht_e321": {
+    "title": "Este producto contiene BHT (E321) — bajo investigación por posible imitación hormonal.",
+    "what_detected": "Se detectó BHT (butilhidroxitolueno / E321) en la etiqueta.",
+    "why_it_matters": "El BHT está siendo investigado por posible imitación hormonal — podría interferir con el sistema endocrino. Ya está restringido en cosméticos en varios países debido a estas preocupaciones.",
+    "what_it_cannot_conclude": "BOTIA no puede evaluar su nivel de exposición personal ni predecir los resultados de salud individuales. Solo indica la presencia en la etiqueta.",
+    "source_note": "EFSA BHT assessment · IARC Monographs · WHO endocrine disruptors · Más información en botia-safefood.com"
+  },
+  "cadmium": {
+    "title": "Este producto puede contener cadmio — un metal pesado que se acumula en el cuerpo hasta 45 años.",
+    "what_detected": "Se identificó riesgo de exposición al cadmio. Las mujeres con niveles bajos de hierro absorben significativamente más cadmio que los hombres.",
+    "why_it_matters": "El cadmio se acumula en los riñones, huesos y órganos reproductivos. Las mujeres lo absorben con mayor eficiencia debido a los niveles más bajos de hierro — una vulnerabilidad biológica. No existe un umbral seguro (EFSA, 2021).",
+    "what_it_cannot_conclude": "BOTIA no puede medir los niveles de cadmio en este producto específico. Solo indica el riesgo de exposición documentado según la categoría del producto.",
+    "source_note": "EFSA cadmium dietary exposure (2021) · WHO heavy metals · Más información en botia-safefood.com"
+  },
+  "methylmercury": {
+    "title": "Este producto puede contener metilmercurio — un neurotóxico que se acumula en el cuerpo durante décadas.",
+    "what_detected": "Se identificó riesgo de exposición a metilmercurio según la categoría del producto. Se encuentra principalmente en pescados y mariscos.",
+    "why_it_matters": "El metilmercurio atraviesa las barreras placentaria y hematoencefálica. El desarrollo neurocognitivo fetal es el mayor riesgo. La OMS y la EFSA recomiendan que las mujeres embarazadas y en edad fértil limiten el consumo de pescado con alto contenido de mercurio.",
+    "what_it_cannot_conclude": "BOTIA no puede medir los niveles de mercurio en este producto específico. Solo indica el riesgo de exposición documentado según la categoría del producto.",
+    "source_note": "EFSA methylmercury opinion · WHO mercury and health · Más información en botia-safefood.com"
+  },
+  "lead": {
+    "title": "Este producto puede contener plomo — no existe un nivel seguro de exposición.",
+    "what_detected": "Se identificó riesgo de exposición al plomo según la categoría del producto.",
+    "why_it_matters": "El plomo causa daño neurológico irreversible. La OMS y la EFSA confirman que no existe un umbral seguro — cualquier exposición conlleva riesgo. Los niños y las mujeres en edad fértil son las poblaciones más vulnerables.",
+    "what_it_cannot_conclude": "BOTIA no puede medir los niveles de plomo en este producto específico. Solo indica el riesgo de exposición documentado según la categoría del producto.",
+    "source_note": "EFSA lead dietary exposure · WHO lead poisoning fact sheet · Más información en botia-safefood.com"
+  },
+  "dioxins_pcbs": {
+    "title": "Este producto puede contener dioxinas o PCB — compuestos persistentes que se acumulan en el tejido adiposo.",
+    "what_detected": "Se identificó riesgo de exposición a dioxinas y PCB según la categoría del producto. Se encuentran principalmente en pescados grasos, carnes y lácteos.",
+    "why_it_matters": "Las dioxinas y los PCB se acumulan en la grasa corporal durante décadas y se liberan durante el embarazo y la lactancia — pasando directamente al feto y al lactante. Relacionados con alteraciones de la fertilidad y efectos en el sistema inmunitario (EFSA, 2018).",
+    "what_it_cannot_conclude": "BOTIA no puede medir los niveles de dioxinas en este producto específico. Solo indica el riesgo de exposición documentado según la categoría del producto.",
+    "source_note": "EFSA dioxins and PCBs opinion (2018) · WHO dioxins fact sheet · Más información en botia-safefood.com"
+  },
+  "phthalates": {
+    "title": "Este producto puede contener ftalatos — relacionados con la endometriosis y la alteración hormonal.",
+    "what_detected": "Se identificó riesgo de exposición a ftalatos. Los ftalatos migran de los envases de plástico a los alimentos — especialmente alimentos grasos almacenados o calentados en plástico.",
+    "why_it_matters": "Los ftalatos son xenoestrógenos — imitan al estrógeno en el cuerpo. Las investigaciones relacionan la exposición crónica con la endometriosis, la reducción de la fertilidad y la alteración del ciclo menstrual. Las mujeres con endometriosis presentan niveles de ftalatos significativamente más altos (EFSA, 2019).",
+    "what_it_cannot_conclude": "BOTIA no puede medir los niveles de ftalatos en este producto específico. Solo indica el riesgo de exposición documentado según el tipo de envase y la categoría del producto.",
+    "source_note": "EFSA phthalates risk assessment (2019) · WHO endocrine disruptors · Más información en botia-safefood.com"
+  }
 }

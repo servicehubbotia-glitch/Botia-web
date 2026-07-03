@@ -1,25 +1,130 @@
-{
-  "woman_title": "Woman is not a life stage",
-  "woman_subtitle": "A scientific evidence layer for women's biology.",
-  "woman_desc": "Woman highlights evidence relevant to women's health when that evidence exists — and leaves it out when it does not. It does not mean pregnancy. It does not reduce women's health to reproduction.",
-  "why_title": "Why Woman exists",
-  "why_body": "Between 2020 and 2026, international scientific and regulatory bodies have intensified their focus on how food ingredients — both natural and synthetic — differentially affect women's physiology. Endocrine disruptors, bioaccumulative contaminants, and certain additives have been linked to conditions such as PCOS, endometriosis, early puberty, and breast cancer. BOTIA Woman organises this evidence without alarmism and without hiding uncertainty.",
-  "areas_title": "Key areas of evidence",
-  "areas_intro": "BOTIA Woman connects label ingredients with official scientific evidence in these areas:",
-  "area1": "Endocrine disruptors: BPA, phthalates, parabens — linked to PCOS, endometriosis, and hormonal disruption.",
-  "area2": "Heavy metals: mercury, lead, cadmium, arsenic — bioaccumulative and classified as obesogens.",
-  "area3": "Alcohol and breast cancer: IARC Group 1 carcinogen. No safe threshold identified.",
-  "area4": "Trans fats: industrial TFAs increase cardiovascular risk, especially post-menopause.",
-  "area5": "Artificial sweeteners: emerging evidence on early puberty and hormonal axis disruption.",
-  "fichas_title": "Explore by ingredient or risk",
-  "cancannot_title": "What BOTIA can and cannot conclude",
-  "can_title": "BOTIA CAN",
-  "can1": "Read declared ingredients from the label.",
-  "can2": "Connect ingredients to official evidence on women's health when that evidence exists.",
-  "can3": "Show uncertainty when the label is silent about origin or processing.",
-  "cannot_title": "BOTIA CANNOT",
-  "cannot1": "Diagnose or predict any medical condition.",
-  "cannot2": "Detect undeclared contaminants from packaging or processing.",
-  "cannot3": "Replace medical, professional, or dietary advice.",
-  "closing_claim": "Women's health is not a niche. It is half of the population demanding transparent evidence."
+{ "_meta": { 
+"file": "en.json", 
+"module": "woman", 
+"path": "botia/woman/i18n/en.json", 
+"lang": "en",
+ "last_updated": "2026-06-18" },
+
+"bpa": {
+  "title": "Plastic packaging may release BPA into this food.",
+  "what_detected": "BPA-associated packaging detected. BPA does not appear on ingredient lists — but migrates into food from can linings and plastic containers.",
+  "why_it_matters": "BPA mimics oestrogen in the body and accumulates in fatty tissue. Women are particularly vulnerable due to hormonal sensitivity. Linked to reproductive effects and thyroid interference (EFSA, 2023).",
+  "what_it_cannot_conclude": "BOTIA cannot measure BPA levels or confirm whether this manufacturer uses BPA-free linings. It signals documented exposure risk only.",
+  "source_note": "EFSA BPA re-evaluation (2023) · WHO Endocrine Disruptors Report · Learn more at botia-safefood.com"
 }
+
+"parabens_e214": {
+  "title": "This product contains parabens — preservatives with oestrogenic activity.",
+  "what_detected": "Parabens (E214–E219) detected on label. These preservatives can interact with hormone receptors in the body.",
+  "why_it_matters": "Parabens have been detected in breast tissue. Cumulative exposure — from food and cosmetics simultaneously — is what researchers are most concerned about. EFSA has restricted propyl and butyl parabens in infant foods.",
+  "what_it_cannot_conclude": "BOTIA cannot quantify your total daily paraben exposure or assess interaction with cosmetic sources. It signals presence on the label only.",
+  "source_note": "EFSA parabens opinion · WHO Endocrine Disruptors Report · Learn more at botia-safefood.com"
+}
+
+"e171": {
+  "title": "E171 — Titanium Dioxide detected. Banned in the EU as a food additive since 2022.",
+  "what_detected": "E171 (Titanium Dioxide) identified on label. Its nanoparticles can cross biological barriers.",
+  "why_it_matters": "EFSA (2021) concluded E171 can no longer be considered safe, citing genotoxicity — potential DNA damage. Women of reproductive age and during pregnancy are a priority concern group.",
+  "what_it_cannot_conclude": "BOTIA cannot determine particle size or confirm whether this is EU-produced or imported stock. It signals presence on the label only.",
+  "source_note": "EFSA E171 safety opinion (2021) · EU Regulation 2022/63 · Learn more at botia-safefood.com"
+}
+
+"risk_endocrine": {
+  "title": "This product contains additives with potential hormonal activity.",
+  "what_detected": "One or more additives flagged for endocrine-disrupting activity detected. See BOTIA Note below for details.",
+  "why_it_matters": "Endocrine disruptors interfere with the hormonal system through cumulative, low-level exposure over time — not a single dramatic effect. Women are particularly vulnerable: these compounds accumulate in fatty tissue and compound over years of daily exposure (WHO/UNEP, 2012).",
+  "what_it_cannot_conclude": "BOTIA cannot quantify your total disruptor load or predict individual outcomes. The concern is cumulative and long-term — this product alone is not the issue.",
+  "source_note": "WHO/UNEP State of the Science of Endocrine Disrupting Chemicals · EFSA endocrine disruptor framework · Learn more at botia-safefood.com"
+}
+
+"risk_fat_accumulation": {
+  "title": "This product contains fat-soluble additives that accumulate in body tissue.",
+  "what_detected": "Fat-soluble additives detected. These compounds dissolve in fat — not water — and accumulate in fatty tissue over years of exposure.",
+  "why_it_matters": "Women have a higher body fat percentage than men, meaning more storage capacity for these compounds. During rapid fat loss, breastfeeding, or menopause, stored toxins can release into the bloodstream in concentrated form — causing fatigue, brain fog, and hormonal disruption.",
+  "what_it_cannot_conclude": "BOTIA cannot measure your personal accumulation level or predict release timing. It signals the presence of fat-soluble additives only.",
+  "source_note": "WHO persistent organic pollutants review · EFSA lipophilic contaminants · Learn more at botia-safefood.com"
+}
+
+"risk_packaging": {
+  "title": "This product's packaging may release chemical compounds into the food.",
+  "what_detected": "Packaging type associated with chemical migration risk detected. These compounds — BPA, phthalates, PFAS — do not appear on ingredient lists but transfer into food during storage, transport, or heating.",
+  "why_it_matters": "Many packaging migrants are endocrine disruptors. Women's hormonal systems are more sensitive to external hormonal interference. Effects are cumulative — years of daily exposure adds up (EFSA, WHO).",
+  "what_it_cannot_conclude": "BOTIA cannot measure actual migrant levels or confirm which specific compounds are present. It signals documented packaging migration risk only.",
+  "source_note": "EU Regulation 10/2011 · EFSA food contact materials · WHO BPA assessment · Learn more at botia-safefood.com"
+}
+
+"alcohol_woman": {
+  "title": "This product contains alcohol — linked to breast cancer risk with no safe dose.",
+  "what_detected": "Alcohol (ethanol) or alcohol-derived ingredient detected on label. See BOTIA Note below for details.",
+  "why_it_matters": "WHO classifies alcohol as a Group 1 carcinogen. Even 1 gram increases breast cancer risk in women. There is no safe threshold — risk increases with every dose.",
+  "what_it_cannot_conclude": "BOTIA cannot quantify alcohol content or assess your personal risk. It signals presence only.",
+  "source_note": "WHO IARC Group 1 carcinogen classification · World Cancer Research Fund · Learn more at botia-safefood.com"
+}
+
+"trans_fats": {
+  "title": "This product contains trans fats — higher cardiovascular risk in women than in men.",
+  "what_detected": "Industrial trans fatty acids (iTFAs) detected on label. See BOTIA Note below for details.",
+  "why_it_matters": "Trans fats damage the microvasculature — the smallest blood vessels. Research shows women are more vulnerable to this damage than men, with higher associated risk of coronary heart disease (WHO, 2023).",
+  "what_it_cannot_conclude": "BOTIA cannot quantify trans fat content or assess your personal cardiovascular risk. It signals presence only.",
+  "source_note": "WHO global trans fat elimination · EFSA dietary fats opinion · Learn more at botia-safefood.com"
+}
+
+"bha_e320": {
+  "title": "This product contains BHA (E320) — a possible hormonal disruptor under international surveillance.",
+  "what_detected": "BHA (Butylated Hydroxyanisole / E320) detected on label.",
+  "why_it_matters": "BHA has weak oestrogenic and anti-androgenic activity. It is classified as a possible human carcinogen (IARC Group 2B) and is under ongoing oncological surveillance internationally.",
+  "what_it_cannot_conclude": "BOTIA cannot assess your personal exposure level or predict individual health outcomes. It signals presence on the label only.",
+  "source_note": "IARC Monographs · EFSA BHA assessment · WHO endocrine disruptors · Learn more at botia-safefood.com"
+}
+
+"bht_e321": {
+  "title": "This product contains BHT (E321) — under investigation for hormonal mimicry.",
+  "what_detected": "BHT (Butylated Hydroxytoluene / E321) detected on label.",
+  "why_it_matters": "BHT is being investigated for hormonal mimicry — it may interfere with the endocrine system. Already restricted in cosmetics in several countries due to these concerns.",
+  "what_it_cannot_conclude": "BOTIA cannot assess your personal exposure level or predict individual health outcomes. It signals presence on the label only.",
+  "source_note": "EFSA BHT assessment · IARC Monographs · WHO endocrine disruptors · Learn more at botia-safefood.com"
+}
+
+"cadmium": {
+  "title": "This product may contain cadmium — a heavy metal that accumulates in the body for up to 45 years.",
+  "what_detected": "Cadmium exposure risk identified. Women with low iron levels absorb significantly more cadmium than men.",
+  "why_it_matters": "Cadmium accumulates in kidneys, bones, and reproductive organs. Women absorb it more efficiently due to lower iron levels — a biological vulnerability. There is no safe threshold (EFSA, 2021).",
+  "what_it_cannot_conclude": "BOTIA cannot measure cadmium levels in this specific product. It signals documented exposure risk based on product category.",
+  "source_note": "EFSA cadmium dietary exposure (2021) · WHO heavy metals · Learn more at botia-safefood.com"
+}
+
+"methylmercury": {
+  "title": "This product may contain methylmercury — a neurotoxin that accumulates in the body for decades.",
+  "what_detected": "Methylmercury exposure risk identified based on product category. Found primarily in fish and seafood.",
+  "why_it_matters": "Methylmercury crosses the placental and blood-brain barriers. Foetal neurocognitive development is the highest risk. WHO and EFSA recommend pregnant women and women of childbearing age limit consumption of high-mercury fish.",
+  "what_it_cannot_conclude": "BOTIA cannot measure mercury levels in this specific product. It signals documented exposure risk based on product category.",
+  "source_note": "EFSA methylmercury opinion · WHO mercury and health · Learn more at botia-safefood.com"
+}
+
+"lead": {
+  "title": "This product may contain lead — there is no safe level of exposure.",
+  "what_detected": "Lead exposure risk identified based on product category.",
+  "why_it_matters": "Lead causes irreversible neurological damage. WHO and EFSA confirm there is no safe threshold — any exposure carries risk. Children and women of reproductive age are the most vulnerable populations.",
+  "what_it_cannot_conclude": "BOTIA cannot measure lead levels in this specific product. It signals documented exposure risk based on product category.",
+  "source_note": "EFSA lead dietary exposure · WHO lead poisoning fact sheet · Learn more at botia-safefood.com"
+}
+
+"dioxins_pcbs": {
+  "title": "This product may contain dioxins or PCBs — persistent compounds that accumulate in fatty tissue.",
+  "what_detected": "Dioxin and PCB exposure risk identified based on product category. Found primarily in fatty fish, meat, and dairy.",
+  "why_it_matters": "Dioxins and PCBs accumulate in body fat for decades and are released during pregnancy and breastfeeding — passing directly to the foetus and infant. Linked to fertility disruption and immune system effects (EFSA, 2018).",
+  "what_it_cannot_conclude": "BOTIA cannot measure dioxin levels in this specific product. It signals documented exposure risk based on product category.",
+  "source_note": "EFSA dioxins and PCBs opinion (2018) · WHO dioxins fact sheet · Learn more at botia-safefood.com"
+}
+
+"phthalates": {
+  "title": "This product may contain phthalates — linked to endometriosis and hormonal disruption.",
+  "what_detected": "Phthalate exposure risk identified. Phthalates migrate from plastic packaging into food — especially fatty foods stored or heated in plastic.",
+  "why_it_matters": "Phthalates are xenoestrogens — they mimic oestrogen in the body. Research links chronic exposure to endometriosis, reduced fertility, and disruption of the menstrual cycle. Women with endometriosis show significantly higher phthalate levels (EFSA, 2019).",
+  "what_it_cannot_conclude": "BOTIA cannot measure phthalate levels in this specific product. It signals documented exposure risk based on packaging type and product category.",
+  "source_note": "EFSA phthalates risk assessment (2019) · WHO endocrine disruptors · Learn more at botia-safefood.com"
+}
+
+
+
+

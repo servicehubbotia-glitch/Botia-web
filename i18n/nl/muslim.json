@@ -1,53 +1,30 @@
 {
-  "title": "Transparantie van Moslimvoedsel",
-  "subtitle": "Lees het etiket. Begrijp wat het echt zegt.",
-  "description": "BOTIA leest de vermelde ingrediënten en kruist ze met gedocumenteerde criteria. Het certificeert geen voedsel — het maakt het etiket transparant.",
-  "states_title": "Hoe BOTIA ingrediënten classificeert",
-  "halal": {
-    "name": "Halal",
-    "desc": "Geen verboden ingrediënten of twijfelachtige herkomst gedetecteerd op het etiket."
+  "_meta": {
+    "file": "nl.json",
+    "module": "muslim",
+    "path": "botia/muslim/i18n/nl.json",
+    "lang": "nl",
+    "last_updated": "2026-06-18"
   },
-  "haram": {
-    "name": "Haram",
-    "desc": "Het etiket vermeldt duidelijk verboden ingrediënten: varkensderivaten, alcohol of bloed."
+  "halal": {
+    "title": "Dit ingrediënt wordt beschouwd als toegestaan volgens de islamitische wet.",
+    "what_detected": "Ingrediënt geclassificeerd als halal. Zie de BOTIA-opmerking hieronder voor details.",
+    "why_it_matters": "Halal-voedsel mag niets bevatten dat onwettig is volgens de islamitische wet, en mag tijdens bereiding of verwerking niet in contact zijn geweest met niet-halal-stoffen.",
+    "what_it_cannot_conclude": "BOTIA geeft alleen de classificatie van het ingrediënt aan — niet halal-certificering, slachtmethode of facilitaire omstandigheden.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Meer informatie op botia-safefood.com"
   },
   "mashbooh": {
-    "name": "Mashbooh",
-    "desc": "Het etiket bevestigt de herkomst of het proces niet. Onzekerheid is de informatie."
+    "title": "Dit ingrediënt heeft een onzekere oorsprong volgens de islamitische wet.",
+    "what_detected": "Ingrediënt gedetecteerd waarvan de halal-status niet alleen op basis van het etiket kan worden bevestigd. Zie de BOTIA-opmerking hieronder voor details.",
+    "why_it_matters": "Volgens de islamitische wet zijn levensmiddelenadditieven afkomstig van onwettige bronnen ook onwettig (Codex CAC/GL 24-1997). Voedseletiketten wereldwijd vereisen echter niet dat de oorsprong van veel ingrediënten wordt vermeld — aroma's, emulgatoren, enzymen en gelatine kunnen afkomstig zijn van dierlijke, plantaardige of alcoholische bronnen zonder dat dit op het etiket zichtbaar is.",
+    "what_it_cannot_conclude": "BOTIA kan de halal-status niet bevestigen of ontkennen. Het signaleert dat de oorsprong niet is vermeld — de beslissing ligt bij u en uw religieuze autoriteit.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Meer informatie op botia-safefood.com"
   },
-  "mashbooh_why": {
-    "title": "Waarom \"Mashbooh\" de belangrijkste status is",
-    "body": "Het classificeren van een ingrediënt als Mashbooh is geen beschuldiging — het is een signaal van onzekerheid. Voedseletiketten zijn juridische documenten voordat ze menselijke uitleg zijn. Wanneer het etiket de herkomst van een additief of de slachtmethode weglaat, maakt BOTIA die leemte zichtbaar zodat u kunt beslissen."
-  },
-  "doubts": {
-    "title": "Waarom ontstaan deze twijfels?",
-    "th_label": "Etiketaspect",
-    "th_general": "Algemene Regelgeving",
-    "th_halal": "Halal Standaard",
-    "th_botia": "Waarom BOTIA dubbelzinnigheid detecteert",
-    "row1": {
-      "aspect": "Additieven (E-nummers) & Enzymen",
-      "general": "Kunnen worden gegroepeerd op functie zonder plantaardige of dierlijke herkomst te specificeren.",
-      "halal": "Vereist dat alle additieven strikt van toegestane bronnen komen.",
-      "botia": "Als een additief van dierlijke oorsprong zou kunnen zijn maar het etiket zwijgt, markeert BOTIA het als twijfelachtig."
-    },
-    "row2": {
-      "aspect": "Vlees van toegestane dieren",
-      "general": "Vereist het vermelden van de diersoort.",
-      "halal": "Vereist wettige slachting door een moslim die Allah aanroept en specifieke aderen doorsnijdt.",
-      "botia": "Etiketten geven bijna nooit details over de slachtmethode, dus BOTIA kan niet uitgaan van naleving."
-    }
-  },
-  "cancannot": {
-    "title": "Wat BOTIA wel en niet kan concluderen"
-  },
-  "can_title": "BOTIA KAN",
-  "can1": "Vermelde ingrediënten van het etiket lezen.",
-  "can2": "Duidelijk Haram-ingrediënten detecteren op basis van gedocumenteerde criteria.",
-  "can3": "Ingrediënten met dubbelzinnige herkomst detecteren en de stilte zichtbaar maken.",
-  "cannot_title": "BOTIA KAN NIET",
-  "cannot1": "Halal certificeren — het is geen garantie of goedkeuringsstempel.",
-  "cannot2": "Niet-vermelde processen zoals kruisbesmetting in fabrieken detecteren.",
-  "cannot3": "Een religieuze autoriteit of certificeringsinstantie vervangen.",
-  "closing": "Transparantie is geen certificering. Het is het recht om te weten wat het etiket zegt — en wat het niet zegt."
+  "haram": {
+    "title": "Dit product bevat een ingrediënt dat verboden is volgens de islamitische wet.",
+    "what_detected": "Ingrediënt geclassificeerd als Haram gedetecteerd. Zie de BOTIA-opmerking hieronder voor details.",
+    "why_it_matters": "Volgens de islamitische wet zijn bepaalde bronnen expliciet verboden — waaronder varkensvlees en zijn derivaten, alcohol, bloed en levensmiddelenadditieven afkomstig van deze bronnen (Codex CAC/GL 24-1997). Wanneer BOTIA een ingrediënt classificeert als Haram, is de oorsprong duidelijk en op het etiket vermeld.",
+    "what_it_cannot_conclude": "BOTIA signaleert alleen de aanwezigheid. Het kan geen religieuze uitspraak doen of een gecertificeerde halal-autoriteit vervangen.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Meer informatie op botia-safefood.com"
+  }
 }
