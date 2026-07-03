@@ -279,7 +279,7 @@
       document.documentElement.lang = LANG;
     }
 
-    fetch(`/i18n/${LANG}/muslim.json`)
+    fetch(`/botia/muslim/i18n/${LANG}.json`)
       .then(res => res.ok ? res.json() : Promise.reject())
       .then(data => {
         const d = data;
