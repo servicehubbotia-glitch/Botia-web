@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BOTIA — Muslim Food Transparency</title>
   <meta name="description" content="BOTIA helps you understand what a food label really says. The Muslim layer reads declared ingredients and crosses them with documented criteria." />
-  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
-  <link rel="stylesheet" href="/botia-landing.css" />
+  <link rel="icon" type="image/png" href="botia_jar_512.png" />
+  <link rel="stylesheet" href="botia-landing.css" />
   <style>
     .lang-switcher {
       position: fixed;
@@ -159,7 +159,7 @@
   <div class="landing">
     <!-- HERO -->
     <section class="hero">
-      <img class="hero-logo" src="/botia/assets/muslim.png" alt="Muslim" />
+      <img class="hero-logo" src="botia/assets/muslim.png" alt="Muslim" />
       <h1 id="muslim_title">Muslim Food Transparency</h1>
       <p class="subtitle" id="muslim_subtitle">Read the label. Understand what it really says.</p>
       <p class="description" id="muslim_desc">BOTIA reads declared ingredients and crosses them with documented criteria. It does not certify food — it makes the label transparent.</p>
@@ -169,18 +169,18 @@
     <section class="section">
       <h2 class="section-title" id="states_title">How BOTIA classifies ingredients</h2>
       <div class="status-grid">
-        <a href="/halal.html" class="status-card">
-          <img src="/botia/assets/Halal.png" alt="Halal" />
+        <a href="halal.html" class="status-card">
+          <img src="botia/assets/Halal.png" alt="Halal" />
           <div class="status-name" id="halal_name">Halal</div>
           <div class="status-desc" id="halal_desc">No prohibited ingredients or doubtful origin detected on the label.</div>
         </a>
-        <a href="/haram.html" class="status-card">
-          <img src="/botia/assets/Haram.png" alt="Haram" />
+        <a href="haram.html" class="status-card">
+          <img src="botia/assets/Haram.png" alt="Haram" />
           <div class="status-name" id="haram_name">Haram</div>
           <div class="status-desc" id="haram_desc">The label declares clearly prohibited ingredients: pork derivatives, alcohol, or blood.</div>
         </a>
-        <a href="/mashbooh.html" class="status-card">
-          <img src="/botia/assets/BOTIA.png" alt="Mashbooh" />
+        <a href="mashbooh.html" class="status-card">
+          <img src="botia/assets/BOTIA.png" alt="Mashbooh" />
           <div class="status-name" id="mashbooh_name">Mashbooh</div>
           <div class="status-desc" id="mashbooh_desc">The label does not confirm the origin or process. Uncertainty is the information.</div>
         </a>
@@ -248,7 +248,7 @@
     <!-- CLOSING -->
     <section class="closing">
       <p class="closing-claim" id="closing_claim">Transparency is not certification. It is the right to know what the label says — and what it does not.</p>
-      <a href="/" class="cta-button">← Back to BOTIA</a>
+      <a href="index.html" class="cta-button">← Back to BOTIA</a>
     </section>
 
   </div>
@@ -271,18 +271,20 @@
     }
 
     const LANG = getIdioma();
-    document.getElementById('lang-select').value = LANG;
+    const langSelect = document.getElementById('lang-select');
+    if (langSelect) langSelect.value = LANG;
+    
     if (RTL_LANGS.includes(LANG)) {
       document.body.setAttribute('dir', 'rtl');
       document.documentElement.lang = LANG;
     }
 
-    // Helper para leer objetos anidados con strings (ej: "halal.name")
+    // Helper para leer propiedades anidadas en el JSON
     function getNested(obj, path) {
       return path.split('.').reduce((acc, part) => (acc && acc[part] !== undefined) ? acc[part] : undefined, obj);
     }
 
-    // Mapa entre las claves del JSON y los IDs del HTML
+    // Mapa entre las claves anidadas del JSON y los IDs del HTML
     const ID_MAP = {
       "title": "muslim_title",
       "subtitle": "muslim_subtitle",
@@ -321,7 +323,7 @@
       "closing": "closing_claim"
     };
 
-    // Cargamos desde la nueva ruta unificada
+    // Nota: Ruta relativa sin '/' al principio
     fetch('botia/muslim/i18n/' + LANG + '.json')
       .then(res => res.ok ? res.json() : Promise.reject())
       .then(data => {
@@ -334,7 +336,6 @@
         });
       })
       .catch(() => { 
-        // Si falla la carga, simplemente se mantiene el inglés hardcodeado en el HTML
         document.documentElement.lang = 'en'; 
       });
   </script>
