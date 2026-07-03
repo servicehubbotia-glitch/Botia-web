@@ -131,21 +131,21 @@
     <section class="section">
       <h2 class="section-title" id="fichas_title">Explore by ingredient or risk</h2>
       <div class="fichas-grid">
-        <a href="/botia/woman/bpa.html" class="ficha-card">Bisphenol A (BPA)</a>
-        <a href="/botia/woman/phthalates.html" class="ficha-card">Phthalates</a>
-        <a href="/botia/woman/parabens_e214.html" class="ficha-card">Parabens (E214)</a>
-        <a href="/botia/woman/bha_e320.html" class="ficha-card">BHA (E320)</a>
-        <a href="/botia/woman/bht_e321.html" class="ficha-card">BHT (E321)</a>
-        <a href="/botia/woman/e171.html" class="ficha-card">Titanium Dioxide (E171)</a>
-        <a href="/botia/woman/methylmercury.html" class="ficha-card">Methylmercury</a>
-        <a href="/botia/woman/lead.html" class="ficha-card">Lead</a>
-        <a href="/botia/woman/cadmium.html" class="ficha-card">Cadmium</a>
-        <a href="/botia/woman/dioxins_pcbs.html" class="ficha-card">Dioxins & PCBs</a>
-        <a href="/botia/woman/trans_fats.html" class="ficha-card">Trans Fats</a>
-        <a href="/botia/woman/alcohol_woman.html" class="ficha-card">Alcohol</a>
-        <a href="/botia/woman/risk_endocrine.html" class="ficha-card">Endocrine Risk</a>
-        <a href="/botia/woman/risk_packaging.html" class="ficha-card">Packaging Risk</a>
-        <a href="/botia/woman/risk_fat_accumulation.html" class="ficha-card">Fat Accumulation</a>
+        <a href="/bpa.html" class="ficha-card">Bisphenol A (BPA)</a>
+        <a href="/phthalates.html" class="ficha-card">Phthalates</a>
+        <a href="/parabens_e214.html" class="ficha-card">Parabens (E214)</a>
+        <a href="/bha_e320.html" class="ficha-card">BHA (E320)</a>
+        <a href="/bht_e321.html" class="ficha-card">BHT (E321)</a>
+        <a href="/e171.html" class="ficha-card">Titanium Dioxide (E171)</a>
+        <a href="/methylmercury.html" class="ficha-card">Methylmercury</a>
+        <a href="/lead.html" class="ficha-card">Lead</a>
+        <a href="/cadmium.html" class="ficha-card">Cadmium</a>
+        <a href="/dioxins_pcbs.html" class="ficha-card">Dioxins & PCBs</a>
+        <a href="/trans_fats.html" class="ficha-card">Trans Fats</a>
+        <a href="/alcohol_woman.html" class="ficha-card">Alcohol</a>
+        <a href="/risk_endocrine.html" class="ficha-card">Endocrine Risk</a>
+        <a href="/risk_packaging.html" class="ficha-card">Packaging Risk</a>
+        <a href="/risk_fat_accumulation.html" class="ficha-card">Fat Accumulation</a>
       </div>
     </section>
 
@@ -181,37 +181,63 @@
 
   <!-- TRANSLATIONS -->
   <script>
-    const RTL_LANGS = ['ar'];
-    const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+    document.addEventListener('DOMContentLoaded', function() {
+      const RTL_LANGS = ['ar'];
+      const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
 
-    function getIdioma() {
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('lang')) return params.get('lang');
-      if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
-      const nav = navigator.language.split('-')[0];
-      return SOPORTADOS.includes(nav) ? nav : 'en';
-    }
-    function cambiarIdioma(lang) {
-      localStorage.setItem('botia-lang', lang);
-      window.location.reload();
-    }
+      function getIdioma() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('lang')) return params.get('lang');
+        if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
+        const navLang = navigator.language.split('-')[0];
+        return SOPORTADOS.includes(navLang) ? navLang : 'en';
+      }
 
-    const LANG = getIdioma();
-    document.getElementById('lang-select').value = LANG;
-    if (RTL_LANGS.includes(LANG)) {
-      document.body.setAttribute('dir', 'rtl');
-      document.documentElement.lang = LANG;
-    }
+      window.cambiarIdioma = function(lang) {
+        localStorage.setItem('botia-lang', lang);
+        window.location.reload();
+      };
 
-    fetch(`/i18n/${LANG}/woman.json`)
-      .then(res => res.ok ? res.json() : Promise.reject())
-      .then(data => {
-        Object.keys(data).forEach(id => {
-          const el = document.getElementById(id);
-          if (el) el.innerHTML = data[id];
+      const LANG = getIdioma();
+      document.getElementById('lang-select').value = LANG;
+
+      if (RTL_LANGS.includes(LANG)) {
+        document.body.setAttribute('dir', 'rtl');
+        document.documentElement.lang = LANG;
+      }
+
+      fetch('/i18n/' + LANG + '/woman.json')
+        .then(res => res.ok ? res.json() : Promise.reject())
+        .then(d => {
+          document.getElementById('woman_title').textContent = d.woman_title;
+          document.getElementById('woman_subtitle').textContent = d.woman_subtitle;
+          document.getElementById('woman_desc').textContent = d.woman_desc;
+          document.getElementById('why_title').textContent = d.why_title;
+          document.getElementById('why_body').textContent = d.why_body;
+          document.getElementById('areas_title').textContent = d.areas_title;
+          document.getElementById('areas_intro').textContent = d.areas_intro;
+          document.getElementById('area1').textContent = d.area1;
+          document.getElementById('area2').textContent = d.area2;
+          document.getElementById('area3').textContent = d.area3;
+          document.getElementById('area4').textContent = d.area4;
+          document.getElementById('area5').textContent = d.area5;
+          document.getElementById('fichas_title').textContent = d.fichas_title;
+          document.getElementById('cancannot_title').textContent = d.cancannot_title;
+          document.getElementById('can_title').textContent = d.can_title;
+          document.getElementById('can1').textContent = d.can1;
+          document.getElementById('can2').textContent = d.can2;
+          document.getElementById('can3').textContent = d.can3;
+          document.getElementById('cannot_title').textContent = d.cannot_title;
+          document.getElementById('cannot1').textContent = d.cannot1;
+          document.getElementById('cannot2').textContent = d.cannot2;
+          document.getElementById('cannot3').textContent = d.cannot3;
+          document.getElementById('closing_claim').textContent = d.closing_claim;
+        })
+        .catch(() => {
+          console.log('Translation fallback to English.');
+          document.documentElement.lang = 'en';
         });
-      })
-      .catch(() => { document.documentElement.lang = 'en'; });
+    });
   </script>
 </body>
 </html>
