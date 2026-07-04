@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOTIA — Animal Origin</title>
+  <meta name="description" content="BOTIA reads the label and flags animal-derived ingredients — so you can decide.">
+  <link rel="icon" type="image/png" href="/botia_jar_512.png">
+  <link rel="stylesheet" href="/botia-landing.css">
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css">
+  <style>
+    .lang-switcher {
+      position: fixed; top: 12px; right: 16px; z-index: 100;
+    }
+    body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
+    .lang-switcher select {
+      background: rgba(24, 13, 13, 0.96); color: #f2e4dc;
+      border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
+      padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
+    }
+    .hero { padding: 20px 0 8px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 8px; }
+    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.6; margin-bottom: 12px; }
+    .how-box {
+      background: rgba(24, 13, 13, 0.9); border-radius: 10px; padding: 16px;
+      margin-bottom: 10px;
+    }
+    .how-box.confirmed { border-left: 4px solid rgba(200, 100, 100, 0.6); }
+    .how-box.ambiguous { border-left: 4px solid rgba(200, 160, 60, 0.6); }
+    .how-box h4 { margin-bottom: 4px; color: #f2e4dc; font-size: 0.95rem; }
+    .how-box p { font-size: 0.9rem; color: #c0a08c; line-height: 1.6; }
+    .how-box a { color: #e6a06b; text-decoration: none; }
+    .how-box a:hover { text-decoration: underline; }
+    .can-cannot {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0;
+    }
+    @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
+    .can-box, .cannot-box {
+      background: rgba(24, 13, 13, 0.9); border-radius: 10px; padding: 16px;
+    }
+    .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
+    .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
+    .can-box h4, .cannot-box h4 { margin-bottom: 6px; font-size: 0.95rem; }
+    .can-box li, .cannot-box li {
+      margin-bottom: 3px; font-size: 0.85rem; color: #c0a08c;
+      padding-left: 20px; position: relative; list-style: none;
+    }
+    .can-box li::before { content: "✅"; position: absolute; left: 0; }
+    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+    .source-links { color: #c0a08c; font-size: 0.85rem; }
+    .source-links a { color: #e6a06b; text-decoration: none; }
+    .source-links a:hover { text-decoration: underline; }
+    .hero { padding: 30px 0 16px; }
+    .section { margin-bottom: 16px; }
+    .landing { padding: 0 20px 40px; }
+    .hero + .section { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <div class="lang-switcher">
+    <select id="lang-select" onchange="cambiarIdioma(this.value)">
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+      <option value="tr">Türkçe</option><option value="zh">中文</option>
+    </select>
+  </div>
+
+  <div class="landing">
+    <section class="hero">
+      <img class="hero-logo" src="/botia/assets/animal.png" alt="Animal">
+      <h1 id="title">Animal Origin</h1>
+      <p class="subtitle" id="subtitle">What the label says. And what it doesn't.</p>
+      <p class="description" id="intro">Some ingredients come from animals. Some might. And some hide behind technical names that give nothing away. BOTIA reads the label and flags what it finds — so you can decide.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="why_title">Why this matters</h2>
+      <p class="section-intro" id="why_body">Whether you avoid animal products for ethical, religious, dietary or personal reasons — the label is not always on your side. An ingredient can be animal-derived and still appear as a code, a chemical name, or simply 'natural flavouring'. BOTIA makes that visible.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="how_title">How BOTIA reads animal origin</h2>
+      <div class="how-box confirmed">
+        <h4 id="confirmed_label">🐾 Confirmed animal origin</h4>
+        <p>
+          Some ingredients are always from animals:
+          <a href="/ingredients/gelatine.html">gelatine</a>,
+          <a href="/ingredients/carmine.html">carmine (E120)</a>,
+          <a href="/ingredients/shellac.html">shellac (E904)</a>,
+          beeswax, lactose, casein, whey, honey.
+          When BOTIA finds these, there is no ambiguity.
+        </p>
+      </div>
+      <div class="how-box ambiguous">
+        <h4 id="ambiguous_label">❓ May be animal-derived</h4>
+        <p>
+          Other ingredients may come from animals or plants depending on the manufacturer:
+          <a href="/ingredients/e471.html">E471</a>,
+          <a href="/ingredients/e472.html">E472</a>,
+          <a href="/ingredients/lecithins.html">lecithins (E322)</a>,
+          <a href="/ingredients/glycerol.html">glycerol (E422)</a>,
+          <a href="/ingredients/enzymes.html">enzymes</a>,
+          <a href="/ingredients/flavourings.html">natural flavourings</a>.
+          The label does not say which. Only the manufacturer knows.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="vegan_title">What about 'vegan' labels?</h2>
+      <p class="section-intro" id="vegan_body">There is no legal definition of 'vegan' in EU, UK or US law. It is a voluntary claim — not a regulated guarantee. BOTIA reads the ingredient list, not the marketing.</p>
+    </section>
+
+    <section class="section">
+      <div class="can-cannot">
+        <div class="can-box">
+          <h4 id="can_title">BOTIA CAN</h4>
+          <ul>
+            <li id="can_1">Detect ingredients confirmed as animal-derived.</li>
+            <li id="can_2">Flag ingredients that may be animal-derived when the label does not specify.</li>
+            <li id="can_3">Make visible what the label leaves unclear.</li>
+          </ul>
+        </div>
+        <div class="cannot-box">
+          <h4 id="cannot_title">BOTIA CANNOT</h4>
+          <ul>
+            <li id="cannot_1">Certify that a product is vegan or vegetarian.</li>
+            <li id="cannot_2">Confirm the exact origin of ambiguous ingredients — only the manufacturer can.</li>
+            <li id="cannot_3">Detect animal-derived processing aids not listed on the label.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="closing-claim" id="closing">BOTIA reads what is declared. For full certainty, contact the manufacturer or look for a certified vegan logo.</p>
+      <p class="source-links">
+        Sources:
+        <a href="https://eur-lex.europa.eu/eli/reg/2011/1169/oj" target="_blank">EU Regulation 1169/2011</a> ·
+        <a href="https://www.fao.org/fao-who-codexalimentarius/en/" target="_blank">Codex Alimentarius</a>
+      </p>
+      <a href="/" class="cta-button">← Back to BOTIA</a>
+    </section>
+  </div>
+
+  <script>
+    const RTL_LANGS = ['ar'];
+    const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+
+    function getIdioma() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('lang')) return params.get('lang');
+      if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
+      const nav = navigator.language.split('-')[0];
+      return SOPORTADOS.includes(nav) ? nav : 'en';
+    }
+    function cambiarIdioma(lang) {
+      localStorage.setItem('botia-lang', lang);
+      window.location.reload();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const LANG = getIdioma();
+      document.getElementById('lang-select').value = LANG;
+      if (RTL_LANGS.includes(LANG)) {
+        document.body.setAttribute('dir', 'rtl');
+        document.documentElement.lang = LANG;
+      }
+
+      fetch('/i18n/' + LANG + '/animal.json')
+        .then(res => res.ok ? res.json() : Promise.reject())
+        .then(d => {
+          // Estos IDs tienen enlaces HTML fijos, no se sobrescriben
+          const fijos = [];
+          Object.keys(d).forEach(id => {
+            if (id === '_meta' || fijos.includes(id)) return;
+            const el = document.getElementById(id);
+            if (el) { if (id === 'how_confirmed' || id === 'how_ambiguous') { el.innerHTML = d[id]; } else { el.textContent = d[id]; } }
+          });
+        })
+        .catch(() => { document.documentElement.lang = 'en'; });
+    });
+  </script>
+</body>
+</html>
