@@ -6,18 +6,25 @@
   <title>BOTIA — Muslim Food Transparency</title>
   <meta name="description" content="BOTIA helps you understand what a food label really says. The Muslim layer reads declared ingredients and crosses them with documented criteria." />
   <link rel="icon" type="image/png" href="/botia_jar_512.png" />
-  <link rel="stylesheet" href="/botia-landing.css" />
   <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <style>
-    .lang-switcher {
-      position: fixed; top: 12px; right: 16px; z-index: 100;
-    }
+    body { background: #0d0d0d; color: #f2e4dc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
+    .lang-switcher { position: fixed; top: 12px; right: 16px; z-index: 100; }
     body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
     .lang-switcher select {
       background: rgba(24, 13, 13, 0.96); color: #f2e4dc;
       border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
       padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
     }
+    .hero { padding: 20px 0 8px; text-align: center; }
+    .hero img { width: 72px; height: 72px; margin-bottom: 16px; }
+    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; }
+    .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
+    .description { font-size: 0.9rem; color: #8a8a8a; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
+    .landing p, .landing li, .landing td, .landing th { line-height: 1.4; }
     .status-grid {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0;
     }
@@ -31,6 +38,12 @@
     .status-card img { width: 48px; height: 48px; margin-bottom: 12px; }
     .status-card .status-name { font-weight: 700; font-size: 1.1rem; margin-bottom: 6px; }
     .status-card .status-desc { font-size: 0.85rem; color: #c0a08c; line-height: 1.4; }
+    .callout {
+      background: rgba(24, 13, 13, 0.9); border-left: 4px solid rgba(200, 160, 60, 0.7);
+      border-radius: 8px; padding: 16px 20px; margin: 16px 0;
+    }
+    .callout-title { font-size: 1rem; color: #f2e4dc; margin-bottom: 6px; }
+    .callout-body { font-size: 0.9rem; color: #c0a08c; line-height: 1.4; }
     .comparison-table {
       width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem;
     }
@@ -59,6 +72,14 @@
     }
     .can-box li::before { content: "✅"; position: absolute; left: 0; }
     .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+    .closing { text-align: center; padding: 20px 0; }
+    .closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 16px; }
+    .cta-button {
+      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+      padding: 10px 24px; border-radius: 8px; text-decoration: none;
+      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+    }
+    .cta-button:hover { background: rgba(190,122,72,0.35); }
     .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
     .source-links a { color: #e6a06b; text-decoration: none; }
     .source-links a:hover { text-decoration: underline; }
@@ -164,7 +185,7 @@
       <p class="source-links">
         Sources:
         <a href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B24-1997%252FCXG_024e.pdf" target="_blank">Codex CAC/GL 24-1997</a> ·
-        <a href="https://www.smiic.org/en" target="_blank">OIC/SMIIC 1:2019</a>
+        <a href="https://www.smiic.org/en/project/1" target="_blank">OIC/SMIIC 1:2019 — General Guidelines on Halal Food</a>
       </p>
       <a href="/" class="cta-button">← Back to BOTIA</a>
     </section>
