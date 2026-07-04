@@ -3,62 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page_title">BOTIA</title>
-  <link rel="stylesheet" href="/botia/assets/botia-template.css">
+  <title>BOTIA — Animal Origin</title>
+  <meta name="description" content="BOTIA reads the ingredient list and flags ingredients confirmed or potentially derived from animals.">
+  <link rel="icon" type="image/png" href="/botia_jar_512.png">
+  <link rel="stylesheet" href="/botia-landing.css">
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css">
+  <style>
+    .lang-switcher {
+      position: fixed; top: 12px; right: 16px; z-index: 100;
+    }
+    body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
+    .lang-switcher select {
+      background: rgba(24, 13, 13, 0.96); color: #f2e4dc;
+      border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
+      padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
+    }
+    .certainty-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;
+    }
+    @media (max-width: 500px) { .certainty-grid { grid-template-columns: 1fr; } }
+    .certainty-card {
+      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px;
+    }
+    .direct-card { border: 1px solid rgba(200, 100, 100, 0.5); }
+    .ambiguous-card { border: 1px solid rgba(200, 160, 60, 0.5); }
+    .certainty-card h4 { margin-bottom: 8px; }
+    .certainty-card p { font-size: 0.9rem; color: #c0a08c; }
+    .ingredient-list {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px;
+      margin: 16px 0;
+    }
+    .ingredient-tag {
+      background: rgba(24, 13, 13, 0.9); border-radius: 8px; padding: 10px 14px;
+      font-size: 0.85rem; color: #c0a08c;
+    }
+    .ingredient-tag .e-code { font-weight: 700; color: #f2e4dc; }
+    .warning-box {
+      background: rgba(24, 13, 13, 0.9); border-left: 4px solid rgba(200, 160, 60, 0.7);
+      border-radius: 8px; padding: 16px 20px; margin: 16px 0;
+    }
+    .warning-box h4 { margin-bottom: 6px; color: #f2e4dc; }
+    .warning-box p { font-size: 0.9rem; color: #c0a08c; }
+    .cannot-list { list-style: none; padding: 0; }
+    .cannot-list li { padding: 6px 0 6px 24px; position: relative; color: #c0a08c; font-size: 0.9rem; }
+    .cannot-list li::before { content: "❌"; position: absolute; left: 0; }
+  </style>
 </head>
-
 <body>
-  <div class="botia-container">
-
-    <header class="botia-header">
-      <img id="module_icon" class="botia-icon" src="/botia/assets/animal.png" alt="BOTIA">
-      <h1 id="title">[LOADING]</h1>
-      <div id="header_trigger_container"></div>
-    </header>
-
-    <main>
-      <section class="botia-card">
-        <h2 id="label_detected">What BOTIA Detected</h2>
-        <p id="what_detected">[LOADING]</p>
-      </section>
-
-      <section class="botia-card">
-        <h2 id="label_matters">Why It Matters</h2>
-        <p id="why_it_matters">[LOADING]</p>
-      </section>
-
-      <section class="botia-card">
-        <h2 id="label_cannot">What BOTIA Cannot Conclude</h2>
-        <p id="what_it_cannot_conclude">[LOADING]</p>
-      </section>
-
-      <section class="botia-card">
-        <h2 id="label_sources">Source & Context</h2>
-        <p id="source_note">[LOADING]</p>
-      </section>
-
-      <section class="botia-note">
-        <h3 id="label_note">BOTIA Note</h3>
-        <div id="ingredient_link_container"></div>
-        <p id="botia_disclaimer" class="botia-disclaimer"></p>
-        <p>
-          <a id="botia_contact" href="mailto:soporte@botia-safefood.com">
-            soporte@botia-safefood.com
-          </a>
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <p id="label_footer">BOTIA WebView · Transparent Food Intelligence</p>
-    </footer>
-
+  <div class="lang-switcher">
+    <select id="lang-select" onchange="cambiarIdioma(this.value)">
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+      <option value="tr">Türkçe</option><option value="zh">中文</option>
+    </select>
   </div>
 
-  <script src="/botia/assets/js/i18n-loader.js"></script>
+  <div class="landing">
+    <section class="hero">
+      <img class="hero-logo" src="/botia/assets/animal.png" alt="Animal">
+      <h1 id="title">Animal-Origin Ingredient Detected</h1>
+      <p class="subtitle" id="subtitle">This product contains an ingredient of animal origin, or possible animal origin.</p>
+      <p class="description" id="intro">BOTIA reads the ingredient list and flags ingredients that are confirmed or potentially derived from animals. It does not certify vegan or vegetarian status — it makes the label transparent.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="certainty_title">Levels of certainty</h2>
+      <div class="certainty-grid">
+        <div class="certainty-card direct-card">
+          <h4 id="direct_label">Confirmed animal origin</h4>
+          <p id="direct_desc">Ingredient is always derived from animals. No ambiguity.</p>
+        </div>
+        <div class="certainty-card ambiguous-card">
+          <h4 id="ambiguous_label">Possible animal origin</h4>
+          <p id="ambiguous_desc">Ingredient may come from animal or plant sources. The label does not specify. Only the manufacturer can confirm.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="triggers_title">What BOTIA detects</h2>
+
+      <h3 id="direct_label" style="color:#c0a08c;margin-top:20px;">Confirmed animal origin</h3>
+      <div class="ingredient-list" id="direct_list"></div>
+
+      <h3 id="ambiguous_label" style="color:#c0a08c;margin-top:20px;">Possible animal origin</h3>
+      <div class="ingredient-list" id="ambiguous_list"></div>
+    </section>
+
+    <div class="warning-box">
+      <h4 id="vegan_warning_title">About 'vegan' labels</h4>
+      <p id="vegan_warning_body">There is no legal definition of 'vegan' in EU, UK or US law. It is a dietary suitability claim, not a safety guarantee. A product labelled vegan may still contain animal-origin additives if the manufacturer has not verified the full supply chain.</p>
+    </div>
+
+    <div class="warning-box">
+      <h4 id="cross_warning_title">About 'may contain traces of milk/egg'</h4>
+      <p id="cross_warning_body">This warning is for allergy protection — it does not indicate an intentionally added ingredient. Most vegan consumers do not consider cross-contamination warnings as invalidating vegan status.</p>
+    </div>
+
+    <section class="section">
+      <h2 class="section-title" id="cannot_title">What BOTIA cannot conclude</h2>
+      <ul class="cannot-list">
+        <li id="cannot_1">Whether this product is certified vegan or vegetarian</li>
+        <li id="cannot_2">The exact origin of ambiguous ingredients — only the manufacturer can confirm</li>
+        <li id="cannot_3">Whether processing aids of animal origin were used but not declared</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Source & Context</h2>
+      <p id="source_note"><a href="https://eur-lex.europa.eu/eli/reg/2011/1169/oj" target="_blank">EU Regulation 1169/2011</a> · Codex Alimentarius · EFSA · <a href="https://botia-safefood.com" target="_blank">Learn more at botia-safefood.com</a></p>
+    </section>
+
+    <section class="closing">
+      <a href="/" class="cta-button">← Back to BOTIA</a>
+    </section>
+  </div>
+
   <script>
-    const lang = BOTIA.detectLanguage();
-    BOTIA.loadTranslations('animal', 'animal', lang);
+    const RTL_LANGS = ['ar'];
+    const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+
+    function getIdioma() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('lang')) return params.get('lang');
+      if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
+      const nav = navigator.language.split('-')[0];
+      return SOPORTADOS.includes(nav) ? nav : 'en';
+    }
+    function cambiarIdioma(lang) {
+      localStorage.setItem('botia-lang', lang);
+      window.location.reload();
+    }
+
+    const LANG = getIdioma();
+    document.getElementById('lang-select').value = LANG;
+    if (RTL_LANGS.includes(LANG)) {
+      document.body.setAttribute('dir', 'rtl');
+      document.documentElement.lang = LANG;
+    }
+
+    fetch('/i18n/' + LANG + '/animal.json')
+      .then(res => res.ok ? res.json() : Promise.reject())
+      .then(d => {
+        // Header
+        document.getElementById('title').textContent = d.title;
+        document.getElementById('subtitle').textContent = d.subtitle;
+        document.getElementById('intro').textContent = d.intro;
+        document.getElementById('certainty_title').textContent = d.certainty_title;
+        document.getElementById('direct_label').textContent = d.direct_label;
+        document.getElementById('direct_desc').textContent = d.direct_desc;
+        document.getElementById('ambiguous_label').textContent = d.ambiguous_label;
+        document.getElementById('ambiguous_desc').textContent = d.ambiguous_desc;
+        document.getElementById('triggers_title').textContent = d.triggers_title;
+        
+        // Direct ingredients
+        const directList = document.getElementById('direct_list');
+        directList.innerHTML = '';
+        d.triggers.direct.forEach(item => {
+          const div = document.createElement('div');
+          div.className = 'ingredient-tag';
+          div.innerHTML = '<span class="e-code">' + (item.e || '') + '</span> ' + item.name + ' — ' + item.source;
+          directList.appendChild(div);
+        });
+
+        // Ambiguous ingredients
+        const ambList = document.getElementById('ambiguous_list');
+        ambList.innerHTML = '';
+        d.triggers.ambiguous.forEach(item => {
+          const div = document.createElement('div');
+          div.className = 'ingredient-tag';
+          div.innerHTML = '<span class="e-code">' + (item.e || '') + '</span> ' + item.name + ' — ' + item.source;
+          ambList.appendChild(div);
+        });
+
+        // Warnings
+        document.getElementById('vegan_warning_title').textContent = d.vegan_label_warning.title;
+        document.getElementById('vegan_warning_body').textContent = d.vegan_label_warning.body;
+        document.getElementById('cross_warning_title').textContent = d.cross_contamination_warning.title;
+        document.getElementById('cross_warning_body').textContent = d.cross_contamination_warning.body;
+
+        // Cannot
+        document.getElementById('cannot_title').textContent = d.cannot_title;
+        document.getElementById('cannot_1').textContent = d.cannot_1;
+        document.getElementById('cannot_2').textContent = d.cannot_2;
+        document.getElementById('cannot_3').textContent = d.cannot_3;
+
+        // Source
+        document.getElementById('source_note').textContent = d.source_note;
+      })
+      .catch(() => {
+        document.documentElement.lang = 'en';
+      });
   </script>
 </body>
 </html>
