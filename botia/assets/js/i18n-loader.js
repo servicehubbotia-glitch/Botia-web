@@ -1,5 +1,5 @@
 // BOTIA i18n Loader - FINAL
-// Loads translations from /botia/[product]/i18n/[lang].json
+// Loads translations from /i18n/[lang]/[ingredientCode].json
 
 const BOTIA_SUPPORTED_LANGS = [
   "en", "es", "fr", "de", "nl", "it", "pt", "pl", "ro", "ar", "zh", "ru", "tr", "id"
@@ -8,10 +8,10 @@ const BOTIA_SUPPORTED_LANGS = [
 const BOTIA_UI_TEXT = {
   en: { detected: "What BOTIA detected", matters: "Why it matters", cannot: "Label limits", sources: "Context", note: "Note", ingredient: "Ingredient", ingredients: "Ingredients", disclaimer: "BOTIA informs based on the ingredients read from the label.", more_info: "More about" },
   es: { detected: "Qué ha detectado BOTIA", matters: "Por qué importa", cannot: "Límites de la etiqueta", sources: "Contexto", note: "Nota", ingredient: "Ingrediente", ingredients: "Ingredientes", disclaimer: "BOTIA informa a partir de los ingredientes leídos en la etiqueta.", more_info: "Más información sobre" },
-  fr: { detected: "Ce que BOTIA a détecté", matters: "Pourquoi c'est important", cannot: "Limites de l’étiquette", sources: "Contexte", note: "Remarque", ingredient: "Ingrédient", ingredients: "Ingrédients", disclaimer: "BOTIA informe à partir des ingrédients lus sur l’étiquette.", more_info: "En savoir plus sur" },
+  fr: { detected: "Ce que BOTIA a détecté", matters: "Pourquoi c'est important", cannot: "Limites de l'étiquette", sources: "Contexte", note: "Remarque", ingredient: "Ingrédient", ingredients: "Ingrédients", disclaimer: "BOTIA informe à partir des ingrédients lus sur l'étiquette.", more_info: "En savoir plus sur" },
   de: { detected: "Was BOTIA erkannt hat", matters: "Warum es wichtig ist", cannot: "Grenzen des Etiketts", sources: "Kontext", note: "Hinweis", ingredient: "Zutat", ingredients: "Zutaten", disclaimer: "BOTIA informiert auf Grundlage der auf dem Etikett gelesenen Zutaten.", more_info: "Mehr über" },
   nl: { detected: "Wat BOTIA heeft gedetecteerd", matters: "Waarom het belangrijk is", cannot: "Grenzen van het etiket", sources: "Context", note: "Opmerking", ingredient: "Ingrediënt", ingredients: "Ingrediënten", disclaimer: "BOTIA informeert op basis van de ingrediënten die op het etiket zijn gelezen.", more_info: "Meer over" },
-  it: { detected: "Cosa ha rilevato BOTIA", matters: "Perché è importante", cannot: "Limiti dell’etichetta", sources: "Contesto", note: "Nota", ingredient: "Ingrediente", ingredients: "Ingredienti", disclaimer: "BOTIA informa sulla base degli ingredienti letti sull’etichetta.", more_info: "Maggiori informazioni su" },
+  it: { detected: "Cosa ha rilevato BOTIA", matters: "Perché è importante", cannot: "Limiti dell'etichetta", sources: "Contesto", note: "Nota", ingredient: "Ingrediente", ingredients: "Ingredienti", disclaimer: "BOTIA informa sulla base degli ingredienti letti sull'etichetta.", more_info: "Maggiori informazioni su" },
   pt: { detected: "O que a BOTIA detectou", matters: "Por que é importante", cannot: "Limites do rótulo", sources: "Contexto", note: "Nota", ingredient: "Ingrediente", ingredients: "Ingredientes", disclaimer: "A BOTIA informa com base nos ingredientes lidos no rótulo.", more_info: "Mais informações sobre" },
   pl: { detected: "Co wykryła BOTIA", matters: "Dlaczego to ważne", cannot: "Ograniczenia etykiety", sources: "Kontekst", note: "Uwaga", ingredient: "Składnik", ingredients: "Składniki", disclaimer: "BOTIA informuje na podstawie składników odczytanych z etykiety.", more_info: "Więcej o" },
   ro: { detected: "Ce a detectat BOTIA", matters: "De ce este important", cannot: "Limitele etichetei", sources: "Context", note: "Notă", ingredient: "Ingredient", ingredients: "Ingrediente", disclaimer: "BOTIA informează pe baza ingredientelor citite de pe etichetă.", more_info: "Mai multe despre" },
@@ -81,7 +81,7 @@ function renderIngredientTrigger(lang, product) {
       .replace(/\s+/g, "_")
       .replace(/[^a-z0-9_]/g, "");
     const a = document.createElement("a");
-    a.href = `https://www.botia-safefood.com/botia/${product}/${slug}.html?lang=${lang}`;
+    a.href = `/ingredients/${slug}.html?lang=${lang}`;
     a.textContent = `${ui.more_info} ${item}`;
     a.target = "_blank";
     const li = document.createElement("li");
@@ -113,17 +113,16 @@ async function loadTranslations(product, ingredientCode, lang) {
     renderHeaderTrigger(lang);
     renderIngredientTrigger(lang, product);
 
-    const jsonPath = `/botia/${product}/i18n/${lang}.json`;
+    const jsonPath = `/i18n/${lang}/${ingredientCode}.json`;
     console.log(`Loading: ${jsonPath}`);
 
     const response = await fetch(jsonPath);
     if (!response.ok) throw new Error(`Failed to load ${jsonPath} (HTTP ${response.status})`);
 
-    const translations = await response.json();
-    const data = translations[ingredientCode];
+    const data = await response.json();
 
     if (!data) {
-      console.warn(`No translations found for ${ingredientCode} in ${product}/${lang}`);
+      console.warn(`No translations found for ${ingredientCode} in ${lang}`);
       return false;
     }
 
