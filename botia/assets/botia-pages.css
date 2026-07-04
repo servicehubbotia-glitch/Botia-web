@@ -133,6 +133,49 @@ td {
   line-height: 1.6;
 }
 
+/* --- Clases genéricas para páginas --- */
+.section { margin-bottom: 32px; }
+.section-title { font-size: 1.4rem; color: #e6a06b; margin-bottom: 12px; }
+.section-intro { color: #f2e4dc; line-height: 1.7; }
+
+.how-box {
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  padding: 17px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(190,122,72,0.20);
+}
+.how-box h4 { color: #ffd8bd; margin-bottom: 8px; }
+.how-box p { color: #f2e4dc; line-height: 1.7; }
+
+.can-cannot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+.can-box, .cannot-box {
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid rgba(190,122,72,0.20);
+}
+.can-box h4, .cannot-box h4 { margin-bottom: 10px; color: #ffd8bd; }
+.can-box li, .cannot-box li { color: #f2e4dc; margin-bottom: 6px; }
+
+.closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 12px; }
+.cta-button {
+  display: inline-block;
+  background: rgba(190,122,72,0.20);
+  color: #ffd8bd;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid rgba(190,122,72,0.40);
+  margin-top: 16px;
+}
+.cta-button:hover { background: rgba(190,122,72,0.35); }
+
 /* --- Responsive --- */
 @media (max-width: 600px) {
   table {
@@ -160,4 +203,6 @@ td {
     font-size: 0.65rem;
     padding: 1px 10px;
   }
+
+  .can-cannot { grid-template-columns: 1fr; }
 }
