@@ -174,7 +174,7 @@
         .then(res => res.ok ? res.json() : Promise.reject())
         .then(d => {
           // Estos IDs tienen enlaces HTML fijos, no se sobrescriben
-          const fijos = ['how_confirmed', 'how_ambiguous'];
+          const fijos = [];
           Object.keys(d).forEach(id => {
             if (id === '_meta' || fijos.includes(id)) return;
             const el = document.getElementById(id);
