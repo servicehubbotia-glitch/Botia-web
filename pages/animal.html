@@ -178,7 +178,7 @@
           Object.keys(d).forEach(id => {
             if (id === '_meta' || fijos.includes(id)) return;
             const el = document.getElementById(id);
-            if (el) el.textContent = d[id];
+            if (el) { if (id === 'how_confirmed' || id === 'how_ambiguous') { el.innerHTML = d[id]; } else { el.textContent = d[id]; } }
           });
         })
         .catch(() => { document.documentElement.lang = 'en'; });
