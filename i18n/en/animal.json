@@ -1,4 +1,10 @@
 {
+  "_meta": {
+    "file": "en.json",
+    "module": "animal",
+    "lang": "en",
+    "last_updated": "2026-07-03"
+  },
   "title": "Animal-Origin Ingredient Detected",
   "subtitle": "This product contains an ingredient of animal origin, or possible animal origin.",
   "intro": "BOTIA reads the ingredient list and flags ingredients that are confirmed or potentially derived from animals. It does not certify vegan or vegetarian status — it makes the label transparent.",
@@ -10,127 +16,39 @@
   "triggers_title": "What BOTIA detects",
   "triggers": {
     "direct": [
-      {
-        "name": "Gelatine / Gelatin",
-        "e": "E441",
-        "source": "Animal bones, skin, connective tissue"
-      },
-      {
-        "name": "Carmine / Cochineal",
-        "e": "E120",
-        "source": "Cochineal insects"
-      },
-      {
-        "name": "Shellac",
-        "e": "E904",
-        "source": "Lac insect secretion"
-      },
-      {
-        "name": "Beeswax",
-        "e": "E901",
-        "source": "Produced by bees"
-      },
-      {
-        "name": "Bone phosphate",
-        "e": "E542",
-        "source": "Animal bones"
-      },
-      {
-        "name": "Lanolin",
-        "e": null,
-        "source": "Sheep wool grease"
-      },
-      {
-        "name": "Lactose",
-        "e": null,
-        "source": "Cow's milk"
-      },
-      {
-        "name": "Casein / Caseinate",
-        "e": null,
-        "source": "Cow's milk protein"
-      },
-      {
-        "name": "Whey / Whey powder",
-        "e": null,
-        "source": "Cow's milk fraction"
-      },
-      {
-        "name": "Honey",
-        "e": null,
-        "source": "Produced by bees"
-      }
+      { "name": "Gelatine / Gelatin", "e": "E441", "source": "Animal bones, skin, connective tissue" },
+      { "name": "Carmine / Cochineal", "e": "E120", "source": "Cochineal insects (Dactylopius coccus)" },
+      { "name": "Shellac", "e": "E904", "source": "Lac insect secretion" },
+      { "name": "Beeswax", "e": "E901", "source": "Produced by bees" },
+      { "name": "Bone phosphate", "e": "E542", "source": "Animal bones" },
+      { "name": "Lanolin", "e": null, "source": "Sheep wool grease" },
+      { "name": "Lactose", "e": null, "source": "Cow's milk" },
+      { "name": "Casein / Caseinate", "e": null, "source": "Cow's milk protein" },
+      { "name": "Whey / Whey powder", "e": null, "source": "Cow's milk fraction" },
+      { "name": "Honey", "e": null, "source": "Produced by bees" }
     ],
     "ambiguous": [
-      {
-        "name": "Mono- and diglycerides of fatty acids",
-        "e": "E471",
-        "source": "May be animal or vegetable fat"
-      },
-      {
-        "name": "Esters of fatty acids",
-        "e": "E472",
-        "source": "May be animal or vegetable fat"
-      },
-      {
-        "name": "Lecithins",
-        "e": "E322",
-        "source": "Usually soy, but may be egg"
-      },
-      {
-        "name": "Glycerol / Glycerine",
-        "e": "E422",
-        "source": "May be animal fat or vegetable"
-      },
-      {
-        "name": "Rennet / Chymosin",
-        "e": null,
-        "source": "May be animal or microbial"
-      },
-      {
-        "name": "Enzymes",
-        "e": null,
-        "source": "May be animal, microbial or fungal"
-      },
-      {
-        "name": "Natural flavourings",
-        "e": null,
-        "source": "May be animal, plant or synthetic"
-      },
-      {
-        "name": "Cysteine",
-        "e": "E920",
-        "source": "May be from animal hair/feathers or synthetic"
-      },
-      {
-        "name": "Riboflavin",
-        "e": "E101",
-        "source": "Usually synthetic but may be from milk"
-      },
-      {
-        "name": "Sodium inosinate",
-        "e": "E631",
-        "source": "Usually meat/fish but may be microbial"
-      },
-      {
-        "name": "Sodium guanylate",
-        "e": "E627",
-        "source": "Usually sardines/yeast"
-      },
-      {
-        "name": "Fatty acid esters E470-E495",
-        "e": "E470-E495",
-        "source": "May be animal or vegetable fat"
-      }
+      { "name": "Mono- and diglycerides of fatty acids", "e": "E471", "source": "May be animal or vegetable fat" },
+      { "name": "Esters of fatty acids", "e": "E472", "source": "May be animal or vegetable fat" },
+      { "name": "Lecithins", "e": "E322", "source": "Usually soy, but may be egg" },
+      { "name": "Glycerol / Glycerine", "e": "E422", "source": "May be animal fat or vegetable" },
+      { "name": "Rennet / Chymosin", "e": null, "source": "May be animal or microbial" },
+      { "name": "Enzymes", "e": null, "source": "May be animal, microbial or fungal" },
+      { "name": "Natural flavourings", "e": null, "source": "May be animal, plant or synthetic" },
+      { "name": "Cysteine", "e": "E920", "source": "May be from animal hair/feathers or synthetic" },
+      { "name": "Riboflavin", "e": "E101", "source": "Usually synthetic but may be from milk" },
+      { "name": "Sodium inosinate", "e": "E631", "source": "Usually meat/fish but may be microbial" },
+      { "name": "Sodium guanylate", "e": "E627", "source": "Usually sardines/yeast" },
+      { "name": "Fatty acid esters E470-E495", "e": "E470-E495", "source": "May be animal or vegetable fat" }
     ]
   },
   "vegan_label_warning": {
     "title": "About 'vegan' labels",
-    "body": "There is no legal definition of 'vegan' in EU, UK or US law. It is a dietary suitability claim, not a safety guarantee."
+    "body": "There is no legal definition of 'vegan' in EU, UK or US law. It is a dietary suitability claim, not a safety guarantee. A product labelled vegan may still contain animal-origin additives if the manufacturer has not verified the full supply chain."
   },
   "cross_contamination_warning": {
     "title": "About 'may contain traces of milk/egg'",
-    "body": "This warning is for allergy protection — it does not indicate an intentionally added ingredient."
+    "body": "This warning is for allergy protection — it does not indicate an intentionally added ingredient. Most vegan consumers do not consider cross-contamination warnings as invalidating vegan status."
   },
   "cannot_title": "What BOTIA cannot conclude",
   "cannot_1": "Whether this product is certified vegan or vegetarian",
@@ -138,3 +56,4 @@
   "cannot_3": "Whether processing aids of animal origin were used but not declared",
   "source_note": "EU Regulation 1169/2011 · Codex Alimentarius · EFSA · Learn more at botia-safefood.com"
 }
+

@@ -1,0 +1,146 @@
+{
+  "_meta": {
+    "file": "en.json",
+    "module": "animal",
+    "lang": "en",
+    "last_updated": "2026-07-03"
+  },
+  "title": "Hayvansal Kaynaklı İçerik Tespit Edildi",
+  "subtitle": "Bu ürün, hayvansal kaynaklı veya olası hayvansal kaynaklı bir içerik barındırmaktadır.",
+  "intro": "BOTIA, içerik listesini okur ve hayvansal kaynaklı olduğu doğrulanmış veya olabilecek içerikleri işaretler. Vegan veya vejetaryen durumunu onaylamaz; etiketi şeffaf hale getirir.",
+  "certainty_title": "Kesinlik Düzeyleri",
+  "direct_label": "Doğrulanmış Hayvansal Kaynak",
+  "direct_desc": "İçerik her zaman hayvansal kaynaklıdır. Herhangi bir belirsizlik yoktur.",
+  "ambiguous_label": "Olası Hayvansal Kaynak",
+  "ambiguous_desc": "İçerik hayvansal veya bitkisel kaynaklardan gelebilir. Etiket belirtmez. Yalnızca üretici onaylayabilir.",
+  "triggers_title": "BOTIA'nın Tespit Ettikleri",
+  "triggers": {
+    "direct": [
+      {
+        "name": "Jelatin / Jelatin",
+        "e": "E441",
+        "source": "Hayvan kemikleri, deri, bağ dokusu"
+      },
+      {
+        "name": "Karmin / Koşineal",
+        "e": "E120",
+        "source": "Koşineal böcekleri (Dactylopius coccus)"
+      },
+      {
+        "name": "Şellak",
+        "e": "E904",
+        "source": "Lak böceği salgısı"
+      },
+      {
+        "name": "Balmumu",
+        "e": "E901",
+        "source": "Arılar tarafından üretilir"
+      },
+      {
+        "name": "Kemik fosfatı",
+        "e": "E542",
+        "source": "Hayvan kemikleri"
+      },
+      {
+        "name": "Lanolin",
+        "e": null,
+        "source": "Koyun yünü yağı"
+      },
+      {
+        "name": "Laktoz",
+        "e": null,
+        "source": "İnek sütü"
+      },
+      {
+        "name": "Kazein / Kazeinat",
+        "e": null,
+        "source": "İnek sütü proteini"
+      },
+      {
+        "name": "Peynir altı suyu / Peynir altı suyu tozu",
+        "e": null,
+        "source": "İnek sütü fraksiyonu"
+      },
+      {
+        "name": "Bal",
+        "e": null,
+        "source": "Arılar tarafından üretilir"
+      }
+    ],
+    "ambiguous": [
+      {
+        "name": "Yağ asitlerinin mono- ve digliseritleri",
+        "e": "E471",
+        "source": "Hayvansal veya bitkisel yağ olabilir"
+      },
+      {
+        "name": "Yağ asitlerinin esterleri",
+        "e": "E472",
+        "source": "Hayvansal veya bitkisel yağ olabilir"
+      },
+      {
+        "name": "Lesitinler",
+        "e": "E322",
+        "source": "Genellikle soya, ancak yumurta da olabilir"
+      },
+      {
+        "name": "Gliserol / Gliserin",
+        "e": "E422",
+        "source": "Hayvansal yağ veya bitkisel olabilir"
+      },
+      {
+        "name": "Rennet / Kimozin",
+        "e": null,
+        "source": "Hayvansal veya mikrobiyal olabilir"
+      },
+      {
+        "name": "Enzimler",
+        "e": null,
+        "source": "Hayvansal, mikrobiyal veya fungal olabilir"
+      },
+      {
+        "name": "Doğal tatlandırıcılar",
+        "e": null,
+        "source": "Hayvansal, bitkisel veya sentetik olabilir"
+      },
+      {
+        "name": "Sistein",
+        "e": "E920",
+        "source": "Hayvan kılı/tüyü veya sentetik olabilir"
+      },
+      {
+        "name": "Riboflavin",
+        "e": "E101",
+        "source": "Genellikle sentetik, ancak sütten de olabilir"
+      },
+      {
+        "name": "Sodyum inosinat",
+        "e": "E631",
+        "source": "Genellikle et/balık, ancak mikrobiyal olabilir"
+      },
+      {
+        "name": "Sodyum guanilat",
+        "e": "E627",
+        "source": "Genellikle sardalya/maya"
+      },
+      {
+        "name": "Yağ asidi esterleri E470-E495",
+        "e": "E470-E495",
+        "source": "Hayvansal veya bitkisel yağ olabilir"
+      }
+    ]
+  },
+  "vegan_label_warning": {
+    "title": "'Vegan' Etiketleri Hakkında",
+    "body": "AB, İngiltere veya ABD yasalarında 'vegan'ın yasal bir tanımı yoktur. Bu bir diyet uygunluk beyanıdır, güvenlik garantisi değildir. Vegan olarak etiketlenmiş bir ürün, üretici tüm tedarik zincirini doğrulamamışsa yine de hayvansal kaynaklı katkı maddeleri içerebilir."
+  },
+  "cross_contamination_warning": {
+    "title": "'Süt/yumurta izleri içerebilir' Hakkında",
+    "body": "Bu uyarı alerji koruması içindir — kasıtlı olarak eklenmiş bir içerik belirtmez. Çoğu vegan tüketici, çapraz bulaşma uyarılarını vegan statüsünü geçersiz kılan bir durum olarak görmez."
+  },
+  "cannot_title": "BOTIA'nın Sonuçlandıramadıkları",
+  "cannot_1": "Bu ürünün sertifikalı vegan veya vejetaryen olup olmadığı",
+  "cannot_2": "Belirsiz içeriklerin kesin kaynağı — yalnızca üretici onaylayabilir",
+  "cannot_3": "Hayvansal kaynaklı işleme yardımcılarının kullanılıp kullanılmadığı ancak beyan edilmediği",
+  "source_note": "AB Yönetmeliği 1169/2011 · Codex Alimentarius · EFSA · Daha fazla bilgi: botia-safefood.com"
+}

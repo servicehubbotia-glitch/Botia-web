@@ -1,0 +1,146 @@
+{
+  "_meta": {
+    "file": "en.json",
+    "module": "animal",
+    "lang": "en",
+    "last_updated": "2026-07-03"
+  },
+  "title": "Wykryto składnik pochodzenia zwierzęcego",
+  "subtitle": "Ten produkt zawiera składnik pochodzenia zwierzęcego lub możliwego pochodzenia zwierzęcego.",
+  "intro": "BOTIA odczytuje listę składników i oznacza te, które są potwierdzone lub potencjalnie pochodzenia zwierzęcego. Nie certyfikuje statusu wegańskiego ani wegetariańskiego — czyni etykietę przejrzystą.",
+  "certainty_title": "Poziomy pewności",
+  "direct_label": "Potwierdzone pochodzenie zwierzęce",
+  "direct_desc": "Składnik zawsze pochodzi od zwierząt. Brak niejednoznaczności.",
+  "ambiguous_label": "Możliwe pochodzenie zwierzęce",
+  "ambiguous_desc": "Składnik może pochodzić ze źródeł zwierzęcych lub roślinnych. Etykieta nie precyzuje. Tylko producent może potwierdzić.",
+  "triggers_title": "Co wykrywa BOTIA",
+  "triggers": {
+    "direct": [
+      {
+        "name": "Żelatyna",
+        "e": "E441",
+        "source": "Kości zwierzęce, skóra, tkanka łączna"
+      },
+      {
+        "name": "Karmin / Koszenila",
+        "e": "E120",
+        "source": "Owady koszenili (Dactylopius coccus)"
+      },
+      {
+        "name": "Szelak",
+        "e": "E904",
+        "source": "Wydzielina owadów lakowych"
+      },
+      {
+        "name": "Wosk pszczeli",
+        "e": "E901",
+        "source": "Produkowany przez pszczoły"
+      },
+      {
+        "name": "Fosforan wapnia z kości",
+        "e": "E542",
+        "source": "Kości zwierzęce"
+      },
+      {
+        "name": "Lanolina",
+        "e": null,
+        "source": "Tłuszcz z wełny owczej"
+      },
+      {
+        "name": "Laktoza",
+        "e": null,
+        "source": "Mleko krowie"
+      },
+      {
+        "name": "Kazeina / Kazeinian",
+        "e": null,
+        "source": "Białko mleka krowiego"
+      },
+      {
+        "name": "Serwatka / Serwatka w proszku",
+        "e": null,
+        "source": "Frakcja mleka krowiego"
+      },
+      {
+        "name": "Miód",
+        "e": null,
+        "source": "Produkowany przez pszczoły"
+      }
+    ],
+    "ambiguous": [
+      {
+        "name": "Mono- i diglicerydy kwasów tłuszczowych",
+        "e": "E471",
+        "source": "Może pochodzić z tłuszczu zwierzęcego lub roślinnego"
+      },
+      {
+        "name": "Estry kwasów tłuszczowych",
+        "e": "E472",
+        "source": "Może pochodzić z tłuszczu zwierzęcego lub roślinnego"
+      },
+      {
+        "name": "Lekcytyny",
+        "e": "E322",
+        "source": "Zwykle sojowe, ale mogą być z jaj"
+      },
+      {
+        "name": "Glicerol / Gliceryna",
+        "e": "E422",
+        "source": "Może pochodzić z tłuszczu zwierzęcego lub roślinnego"
+      },
+      {
+        "name": "Podpuszczka / Chymozyna",
+        "e": null,
+        "source": "Może być pochodzenia zwierzęcego lub mikrobiologicznego"
+      },
+      {
+        "name": "Enzymy",
+        "e": null,
+        "source": "Mogą być pochodzenia zwierzęcego, mikrobiologicznego lub grzybowego"
+      },
+      {
+        "name": "Naturalne aromaty",
+        "e": null,
+        "source": "Mogą być pochodzenia zwierzęcego, roślinnego lub syntetycznego"
+      },
+      {
+        "name": "Cysteina",
+        "e": "E920",
+        "source": "Może pochodzić z włosów/piór zwierzęcych lub być syntetyczna"
+      },
+      {
+        "name": "Ryboflawina",
+        "e": "E101",
+        "source": "Zwykle syntetyczna, ale może pochodzić z mleka"
+      },
+      {
+        "name": "Inozynian sodu",
+        "e": "E631",
+        "source": "Zwykle z mięsa/ryb, ale może być mikrobiologiczny"
+      },
+      {
+        "name": "Guanylan sodu",
+        "e": "E627",
+        "source": "Zwykle z sardynek/drożdży"
+      },
+      {
+        "name": "Estry kwasów tłuszczowych E470-E495",
+        "e": "E470-E495",
+        "source": "Może pochodzić z tłuszczu zwierzęcego lub roślinnego"
+      }
+    ]
+  },
+  "vegan_label_warning": {
+    "title": "O etykietach 'wegański'",
+    "body": "Nie ma prawnej definicji 'wegański' w prawie UE, Wielkiej Brytanii ani USA. Jest to deklaracja przydatności dietetycznej, a nie gwarancja bezpieczeństwa. Produkt oznaczony jako wegański może nadal zawierać dodatki pochodzenia zwierzęcego, jeśli producent nie zweryfikował całego łańcucha dostaw."
+  },
+  "cross_contamination_warning": {
+    "title": "O 'może zawierać śladowe ilości mleka/jaj'",
+    "body": "To ostrzeżenie służy ochronie przed alergiami — nie wskazuje na celowo dodany składnik. Większość wegan nie uważa ostrzeżeń o zanieczyszczeniu krzyżowym za unieważniające status wegański."
+  },
+  "cannot_title": "Czego BOTIA nie może stwierdzić",
+  "cannot_1": "Czy ten produkt jest certyfikowany jako wegański lub wegetariański",
+  "cannot_2": "Dokładnego pochodzenia niejednoznacznych składników — tylko producent może potwierdzić",
+  "cannot_3": "Czy użyto substancji pomocniczych w przetwórstwie pochodzenia zwierzęcego, które nie zostały zadeklarowane",
+  "source_note": "Rozporządzenie UE 1169/2011 · Codex Alimentarius · EFSA · Dowiedz się więcej na botia-safefood.com"
+}

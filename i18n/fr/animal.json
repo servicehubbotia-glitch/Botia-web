@@ -1,0 +1,146 @@
+{
+  "_meta": {
+    "file": "en.json",
+    "module": "animal",
+    "lang": "fr",
+    "last_updated": "2026-07-03"
+  },
+  "title": "Ingrédient d'origine animale détecté",
+  "subtitle": "Ce produit contient un ingrédient d'origine animale, ou d'origine animale possible.",
+  "intro": "BOTIA lit la liste des ingrédients et signale ceux qui sont confirmés ou potentiellement dérivés d'animaux. Il ne certifie pas le statut végétalien ou végétarien — il rend l'étiquette transparente.",
+  "certainty_title": "Niveaux de certitude",
+  "direct_label": "Origine animale confirmée",
+  "direct_desc": "L'ingrédient est toujours dérivé d'animaux. Aucune ambiguïté.",
+  "ambiguous_label": "Origine animale possible",
+  "ambiguous_desc": "L'ingrédient peut provenir de sources animales ou végétales. L'étiquette ne précise pas. Seul le fabricant peut confirmer.",
+  "triggers_title": "Ce que BOTIA détecte",
+  "triggers": {
+    "direct": [
+      {
+        "name": "Gélatine",
+        "e": "E441",
+        "source": "Os, peau, tissu conjonctif d'animaux"
+      },
+      {
+        "name": "Carmin / Cochenille",
+        "e": "E120",
+        "source": "Insectes cochenilles (Dactylopius coccus)"
+      },
+      {
+        "name": "Gomme laque",
+        "e": "E904",
+        "source": "Sécrétion de l'insecte laque"
+      },
+      {
+        "name": "Cire d'abeille",
+        "e": "E901",
+        "source": "Produite par les abeilles"
+      },
+      {
+        "name": "Phosphate osseux",
+        "e": "E542",
+        "source": "Os d'animaux"
+      },
+      {
+        "name": "Lanoline",
+        "e": null,
+        "source": "Graisse de laine de mouton"
+      },
+      {
+        "name": "Lactose",
+        "e": null,
+        "source": "Lait de vache"
+      },
+      {
+        "name": "Caséine / Caséinate",
+        "e": null,
+        "source": "Protéine du lait de vache"
+      },
+      {
+        "name": "Petit-lait / Poudre de petit-lait",
+        "e": null,
+        "source": "Fraction du lait de vache"
+      },
+      {
+        "name": "Miel",
+        "e": null,
+        "source": "Produit par les abeilles"
+      }
+    ],
+    "ambiguous": [
+      {
+        "name": "Mono- et diglycérides d'acides gras",
+        "e": "E471",
+        "source": "Peut être de graisse animale ou végétale"
+      },
+      {
+        "name": "Esters d'acides gras",
+        "e": "E472",
+        "source": "Peut être de graisse animale ou végétale"
+      },
+      {
+        "name": "Lécithines",
+        "e": "E322",
+        "source": "Généralement de soja, mais peut être d'œuf"
+      },
+      {
+        "name": "Glycérol / Glycérine",
+        "e": "E422",
+        "source": "Peut être de graisse animale ou végétale"
+      },
+      {
+        "name": "Présure / Chymosine",
+        "e": null,
+        "source": "Peut être animale ou microbienne"
+      },
+      {
+        "name": "Enzymes",
+        "e": null,
+        "source": "Peut être animale, microbienne ou fongique"
+      },
+      {
+        "name": "Arômes naturels",
+        "e": null,
+        "source": "Peut être animale, végétale ou synthétique"
+      },
+      {
+        "name": "Cystéine",
+        "e": "E920",
+        "source": "Peut provenir de poils/plumes d'animaux ou être synthétique"
+      },
+      {
+        "name": "Riboflavine",
+        "e": "E101",
+        "source": "Généralement synthétique mais peut provenir du lait"
+      },
+      {
+        "name": "Inosinate de sodium",
+        "e": "E631",
+        "source": "Généralement de viande/poisson mais peut être microbien"
+      },
+      {
+        "name": "Guanylate de sodium",
+        "e": "E627",
+        "source": "Généralement de sardines/levure"
+      },
+      {
+        "name": "Esters d'acides gras E470-E495",
+        "e": "E470-E495",
+        "source": "Peut être de graisse animale ou végétale"
+      }
+    ]
+  },
+  "vegan_label_warning": {
+    "title": "À propos des étiquettes 'végétalien'",
+    "body": "Il n'existe pas de définition légale de 'végétalien' dans le droit de l'UE, du Royaume-Uni ou des États-Unis. Il s'agit d'une allégation d'adéquation alimentaire, non d'une garantie de sécurité. Un produit étiqueté végétalien peut encore contenir des additifs d'origine animale si le fabricant n'a pas vérifié l'ensemble de la chaîne d'approvisionnement."
+  },
+  "cross_contamination_warning": {
+    "title": "À propos des mentions 'peut contenir des traces de lait/œuf'",
+    "body": "Cet avertissement est destiné à la protection contre les allergies — il n'indique pas un ingrédient intentionnellement ajouté. La plupart des consommateurs végétaliens ne considèrent pas les avertissements de contamination croisée comme invalidant le statut végétalien."
+  },
+  "cannot_title": "Ce que BOTIA ne peut pas conclure",
+  "cannot_1": "Si ce produit est certifié végétalien ou végétarien",
+  "cannot_2": "L'origine exacte des ingrédients ambigus — seul le fabricant peut confirmer",
+  "cannot_3": "Si des auxiliaires technologiques d'origine animale ont été utilisés mais non déclarés",
+  "source_note": "Règlement UE 1169/2011 · Codex Alimentarius · EFSA · En savoir plus sur botia-safefood.com"
+}

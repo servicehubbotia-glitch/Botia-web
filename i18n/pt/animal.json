@@ -1,0 +1,146 @@
+{
+  "_meta": {
+    "file": "en.json",
+    "module": "animal",
+    "lang": "en",
+    "last_updated": "2026-07-03"
+  },
+  "title": "Ingrediente de Origem Animal Detectado",
+  "subtitle": "Este produto contém um ingrediente de origem animal, ou possível origem animal.",
+  "intro": "O BOTIA lê a lista de ingredientes e sinaliza aqueles que são confirmados ou potencialmente derivados de animais. Ele não certifica o status vegano ou vegetariano — ele torna o rótulo transparente.",
+  "certainty_title": "Níveis de certeza",
+  "direct_label": "Origem animal confirmada",
+  "direct_desc": "O ingrediente é sempre derivado de animais. Sem ambiguidade.",
+  "ambiguous_label": "Possível origem animal",
+  "ambiguous_desc": "O ingrediente pode vir de fontes animais ou vegetais. O rótulo não especifica. Apenas o fabricante pode confirmar.",
+  "triggers_title": "O que o BOTIA detecta",
+  "triggers": {
+    "direct": [
+      {
+        "name": "Gelatina",
+        "e": "E441",
+        "source": "Ossos, pele, tecido conjuntivo de animais"
+      },
+      {
+        "name": "Carmim / Cochonilha",
+        "e": "E120",
+        "source": "Insetos cochonilha (Dactylopius coccus)"
+      },
+      {
+        "name": "Goma-laca",
+        "e": "E904",
+        "source": "Secreção do inseto da laca"
+      },
+      {
+        "name": "Cera de abelha",
+        "e": "E901",
+        "source": "Produzida por abelhas"
+      },
+      {
+        "name": "Fosfato de osso",
+        "e": "E542",
+        "source": "Ossos de animais"
+      },
+      {
+        "name": "Lanolina",
+        "e": null,
+        "source": "Gordura da lã de ovelha"
+      },
+      {
+        "name": "Lactose",
+        "e": null,
+        "source": "Leite de vaca"
+      },
+      {
+        "name": "Caseína / Caseinato",
+        "e": null,
+        "source": "Proteína do leite de vaca"
+      },
+      {
+        "name": "Soro de leite / Soro de leite em pó",
+        "e": null,
+        "source": "Fração do leite de vaca"
+      },
+      {
+        "name": "Mel",
+        "e": null,
+        "source": "Produzido por abelhas"
+      }
+    ],
+    "ambiguous": [
+      {
+        "name": "Mono- e diglicerídeos de ácidos graxos",
+        "e": "E471",
+        "source": "Pode ser gordura animal ou vegetal"
+      },
+      {
+        "name": "Ésteres de ácidos graxos",
+        "e": "E472",
+        "source": "Pode ser gordura animal ou vegetal"
+      },
+      {
+        "name": "Lecitinas",
+        "e": "E322",
+        "source": "Geralmente de soja, mas pode ser de ovo"
+      },
+      {
+        "name": "Glicerol / Glicerina",
+        "e": "E422",
+        "source": "Pode ser gordura animal ou vegetal"
+      },
+      {
+        "name": "Renina / Quimosina",
+        "e": null,
+        "source": "Pode ser animal ou microbiana"
+      },
+      {
+        "name": "Enzimas",
+        "e": null,
+        "source": "Pode ser animal, microbiana ou fúngica"
+      },
+      {
+        "name": "Aromas naturais",
+        "e": null,
+        "source": "Pode ser animal, vegetal ou sintético"
+      },
+      {
+        "name": "Cisteína",
+        "e": "E920",
+        "source": "Pode ser de pelos/penas de animais ou sintética"
+      },
+      {
+        "name": "Riboflavina",
+        "e": "E101",
+        "source": "Geralmente sintética, mas pode ser de leite"
+      },
+      {
+        "name": "Inosinato de sódio",
+        "e": "E631",
+        "source": "Geralmente de carne/peixe, mas pode ser microbiano"
+      },
+      {
+        "name": "Guamilato de sódio",
+        "e": "E627",
+        "source": "Geralmente de sardinhas/levedura"
+      },
+      {
+        "name": "Ésteres de ácidos graxos E470-E495",
+        "e": "E470-E495",
+        "source": "Pode ser gordura animal ou vegetal"
+      }
+    ]
+  },
+  "vegan_label_warning": {
+    "title": "Sobre rótulos 'veganos'",
+    "body": "Não há definição legal de 'vegano' na legislação da UE, Reino Unido ou EUA. É uma declaração de adequação dietética, não uma garantia de segurança. Um produto rotulado como vegano pode ainda conter aditivos de origem animal se o fabricante não tiver verificado toda a cadeia de fornecimento."
+  },
+  "cross_contamination_warning": {
+    "title": "Sobre 'pode conter vestígios de leite/ovo'",
+    "body": "Este aviso é para proteção contra alergias — não indica um ingrediente adicionado intencionalmente. A maioria dos consumidores veganos não considera os avisos de contaminação cruzada como invalidantes do status vegano."
+  },
+  "cannot_title": "O que o BOTIA não pode concluir",
+  "cannot_1": "Se este produto é certificado como vegano ou vegetariano",
+  "cannot_2": "A origem exata de ingredientes ambíguos — apenas o fabricante pode confirmar",
+  "cannot_3": "Se auxiliares de processamento de origem animal foram usados, mas não declarados",
+  "source_note": "Regulamento UE 1169/2011 · Codex Alimentarius · EFSA · Saiba mais em botia-safefood.com"
+}

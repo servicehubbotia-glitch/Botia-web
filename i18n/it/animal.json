@@ -1,0 +1,146 @@
+{
+  "_meta": {
+    "file": "en.json",
+    "module": "animal",
+    "lang": "it",
+    "last_updated": "2026-07-03"
+  },
+  "title": "Ingrediente di Origine Animale Rilevato",
+  "subtitle": "Questo prodotto contiene un ingrediente di origine animale, o di possibile origine animale.",
+  "intro": "BOTIA legge la lista degli ingredienti e segnala quelli che sono confermati o potenzialmente derivati da animali. Non certifica lo stato vegano o vegetariano — rende trasparente l'etichetta.",
+  "certainty_title": "Livelli di certezza",
+  "direct_label": "Origine animale confermata",
+  "direct_desc": "L'ingrediente è sempre derivato da animali. Nessuna ambiguità.",
+  "ambiguous_label": "Possibile origine animale",
+  "ambiguous_desc": "L'ingrediente può provenire da fonti animali o vegetali. L'etichetta non specifica. Solo il produttore può confermare.",
+  "triggers_title": "Cosa rileva BOTIA",
+  "triggers": {
+    "direct": [
+      {
+        "name": "Gelatina",
+        "e": "E441",
+        "source": "Ossa animali, pelle, tessuto connettivo"
+      },
+      {
+        "name": "Carminio / Cocciniglia",
+        "e": "E120",
+        "source": "Insetti cocciniglia (Dactylopius coccus)"
+      },
+      {
+        "name": "Gommalacca",
+        "e": "E904",
+        "source": "Secrezione dell'insetto della lacca"
+      },
+      {
+        "name": "Cera d'api",
+        "e": "E901",
+        "source": "Prodotta dalle api"
+      },
+      {
+        "name": "Fosfato di ossa",
+        "e": "E542",
+        "source": "Ossa animali"
+      },
+      {
+        "name": "Lanolina",
+        "e": null,
+        "source": "Grasso della lana di pecora"
+      },
+      {
+        "name": "Lattosio",
+        "e": null,
+        "source": "Latte vaccino"
+      },
+      {
+        "name": "Caseina / Caseinato",
+        "e": null,
+        "source": "Proteina del latte vaccino"
+      },
+      {
+        "name": "Siero di latte / Polvere di siero di latte",
+        "e": null,
+        "source": "Frazione del latte vaccino"
+      },
+      {
+        "name": "Miele",
+        "e": null,
+        "source": "Prodotto dalle api"
+      }
+    ],
+    "ambiguous": [
+      {
+        "name": "Mono- e digliceridi degli acidi grassi",
+        "e": "E471",
+        "source": "Può essere grasso animale o vegetale"
+      },
+      {
+        "name": "Esteri degli acidi grassi",
+        "e": "E472",
+        "source": "Può essere grasso animale o vegetale"
+      },
+      {
+        "name": "Lecitine",
+        "e": "E322",
+        "source": "Di solito soia, ma può essere uovo"
+      },
+      {
+        "name": "Glicerolo / Glicerina",
+        "e": "E422",
+        "source": "Può essere grasso animale o vegetale"
+      },
+      {
+        "name": "Caglio / Chimosina",
+        "e": null,
+        "source": "Può essere animale o microbico"
+      },
+      {
+        "name": "Enzimi",
+        "e": null,
+        "source": "Può essere animale, microbico o fungino"
+      },
+      {
+        "name": "Aromi naturali",
+        "e": null,
+        "source": "Può essere animale, vegetale o sintetico"
+      },
+      {
+        "name": "Cisteina",
+        "e": "E920",
+        "source": "Può essere da peli/piume animali o sintetica"
+      },
+      {
+        "name": "Riboflavina",
+        "e": "E101",
+        "source": "Di solito sintetica ma può essere dal latte"
+      },
+      {
+        "name": "Inosinato di sodio",
+        "e": "E631",
+        "source": "Di solito carne/pesce ma può essere microbico"
+      },
+      {
+        "name": "Guamilato di sodio",
+        "e": "E627",
+        "source": "Di solito sardine/lievito"
+      },
+      {
+        "name": "Esteri di acidi grassi E470-E495",
+        "e": "E470-E495",
+        "source": "Può essere grasso animale o vegetale"
+      }
+    ]
+  },
+  "vegan_label_warning": {
+    "title": "Informazioni sulle etichette 'vegano'",
+    "body": "Non esiste una definizione legale di 'vegano' nella legislazione UE, UK o USA. È un'indicazione di idoneità dietetica, non una garanzia di sicurezza. Un prodotto etichettato come vegano può ancora contenere additivi di origine animale se il produttore non ha verificato l'intera catena di approvvigionamento."
+  },
+  "cross_contamination_warning": {
+    "title": "Informazioni su 'può contenere tracce di latte/uovo'",
+    "body": "Questa avvertenza è per la protezione dalle allergie — non indica un ingrediente aggiunto intenzionalmente. La maggior parte dei consumatori vegani non considera le avvertenze di contaminazione incrociata come invalidanti dello stato vegano."
+  },
+  "cannot_title": "Cosa BOTIA non può concludere",
+  "cannot_1": "Se questo prodotto è certificato vegano o vegetariano",
+  "cannot_2": "L'origine esatta degli ingredienti ambigui — solo il produttore può confermare",
+  "cannot_3": "Se sono stati utilizzati coadiuvanti tecnologici di origine animale ma non dichiarati",
+  "source_note": "Regolamento UE 1169/2011 · Codex Alimentarius · EFSA · Scopri di più su botia-safefood.com"
+}
