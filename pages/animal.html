@@ -18,6 +18,7 @@
       border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
       padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
     }
+    .hero { padding: 40px 0 24px; }
     .section-intro {
       font-size: 1rem; color: #c0a08c; line-height: 1.7; margin-bottom: 20px;
     }
@@ -28,7 +29,9 @@
     .how-box.confirmed { border-left: 4px solid rgba(200, 100, 100, 0.6); }
     .how-box.ambiguous { border-left: 4px solid rgba(200, 160, 60, 0.6); }
     .how-box h4 { margin-bottom: 8px; color: #f2e4dc; }
-    .how-box p { font-size: 0.9rem; color: #c0a08c; }
+    .how-box p { font-size: 0.9rem; color: #c0a08c; line-height: 1.7; }
+    .how-box a { color: #e6a06b; text-decoration: none; }
+    .how-box a:hover { text-decoration: underline; }
     .can-cannot {
       display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
     }
@@ -45,6 +48,9 @@
     }
     .can-box li::before { content: "✅"; position: absolute; left: 0; }
     .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+    .source-links { color: #c0a08c; font-size: 0.9rem; }
+    .source-links a { color: #e6a06b; text-decoration: none; }
+    .source-links a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -74,12 +80,28 @@
     <section class="section">
       <h2 class="section-title" id="how_title">How BOTIA reads animal origin</h2>
       <div class="how-box confirmed">
-        <h4>🐾 Confirmed</h4>
-        <p id="how_confirmed">Some ingredients are always from animals — gelatine, carmine, beeswax, lactose, honey. When BOTIA finds these, there is no ambiguity.</p>
+        <h4>🐾 Confirmed animal origin</h4>
+        <p id="how_confirmed">
+          Some ingredients are always from animals:
+          <a href="/ingredients/gelatine.html">gelatine</a>,
+          <a href="/ingredients/carmine.html">carmine (E120)</a>,
+          <a href="/ingredients/shellac.html">shellac (E904)</a>,
+          beeswax, lactose, casein, whey, honey.
+          When BOTIA finds these, there is no ambiguity.
+        </p>
       </div>
       <div class="how-box ambiguous">
         <h4>❓ May be animal-derived</h4>
-        <p id="how_ambiguous">Other ingredients may come from animals or plants depending on the manufacturer's supply chain — mono- and diglycerides, glycerol, lecithin, enzymes, natural flavourings. The label does not say which. Only the manufacturer knows.</p>
+        <p id="how_ambiguous">
+          Other ingredients may come from animals or plants depending on the manufacturer:
+          <a href="/ingredients/e471.html">E471</a>,
+          <a href="/ingredients/e472.html">E472</a>,
+          <a href="/ingredients/lecithins.html">lecithins (E322)</a>,
+          <a href="/ingredients/glycerol.html">glycerol (E422)</a>,
+          <a href="/ingredients/enzymes.html">enzymes</a>,
+          <a href="/ingredients/flavourings.html">natural flavourings</a>.
+          The label does not say which. Only the manufacturer knows.
+        </p>
       </div>
     </section>
 
@@ -111,7 +133,11 @@
 
     <section class="closing">
       <p class="closing-claim" id="closing">BOTIA reads what is declared. For full certainty, contact the manufacturer or look for a certified vegan logo.</p>
-      <p style="color:#c0a08c; font-size:0.9rem;" id="source_note">EU Regulation 1169/2011 · Codex Alimentarius · Learn more at botia-safefood.com</p>
+      <p class="source-links">
+        Sources:
+        <a href="https://eur-lex.europa.eu/eli/reg/2011/1169/oj" target="_blank">EU Regulation 1169/2011</a> ·
+        <a href="https://www.fao.org/fao-who-codexalimentarius/en/" target="_blank">Codex Alimentarius</a>
+      </p>
       <a href="/" class="cta-button">← Back to BOTIA</a>
     </section>
   </div>
@@ -145,6 +171,7 @@
         .then(d => {
           Object.keys(d).forEach(id => {
             if (id === '_meta') return;
+            if (id === 'source_note') return;
             const el = document.getElementById(id);
             if (el) el.textContent = d[id];
           });
