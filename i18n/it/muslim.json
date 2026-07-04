@@ -1,53 +1,31 @@
 {
-  "title": "Trasparenza Alimentare Musulmana",
-  "subtitle": "Leggi l'etichetta. Comprendi cosa dice veramente.",
-  "description": "BOTIA legge gli ingredienti dichiarati e li incrocia con criteri documentati. Non certifica il cibo — rende trasparente l'etichetta.",
-  "states_title": "Come BOTIA classifica gli ingredienti",
-  "halal": {
-    "name": "Halal",
-    "desc": "Nessun ingrediente proibito o di origine dubbia rilevato sull'etichetta."
+  "_meta": {
+    "file": "it.json",
+    "module": "muslim",
+    "path": "botia/muslim/i18n/it.json",
+    "lang": "it",
+    "last_updated": "2026-06-18"
   },
-  "haram": {
-    "name": "Haram",
-    "desc": "L'etichetta dichiara ingredienti chiaramente proibiti: derivati del maiale, alcol o sangue."
+  "halal": {
+    "title": "Questo ingrediente è considerato consentito secondo la legge islamica.",
+    "what_detected": "Ingrediente classificato come halal. Vedi la nota BOTIA di seguito per i dettagli.",
+    "why_it_matters": "Il cibo halal non deve contenere nulla di illecito secondo la legge islamica e non deve essere entrato in contatto con sostanze non halal durante la preparazione o la lavorazione.",
+    "what_it_cannot_conclude": "BOTIA segnala solo la classificazione dell'ingrediente — non la certificazione halal, il metodo di macellazione o le condizioni dell'impianto.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Scopri di più su botia-safefood.com"
   },
   "mashbooh": {
-    "name": "Mashbooh",
-    "desc": "L'etichetta non conferma l'origine o il processo. L'incertezza è l'informazione."
+    "title": "Questo ingrediente è di origine incerta secondo la legge islamica.",
+    "what_detected": "Ingrediente rilevato il cui stato halal non può essere confermato dalla sola etichetta. Vedi la nota BOTIA di seguito per i dettagli.",
+    "why_it_matters": "Secondo la legge islamica, gli additivi alimentari derivati da fonti illecite sono anch'essi illeciti (Codex CAC/GL 24-1997). Tuttavia, le etichette alimentari in tutto il mondo non richiedono di dichiarare l'origine di molti ingredienti — aromi, emulsionanti, enzimi e gelatine possono provenire da fonti animali, vegetali o alcoliche senza che ciò sia visibile sull'etichetta.",
+    "what_it_cannot_conclude": "BOTIA non può confermare né negare lo stato halal. Segnala che l'origine non è dichiarata — la decisione spetta a te e alla tua autorità religiosa.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Scopri di più su botia-safefood.com"
   },
-  "mashbooh_why": {
-    "title": "Perché \"Mashbooh\" è lo stato più importante",
-    "body": "Classificare un ingrediente come Mashbooh non è un'accusa — è un segnale di incertezza. Le etichette alimentari sono documenti legali prima di essere spiegazioni umane. Quando l'etichetta omette l'origine di un additivo o il metodo di macellazione, BOTIA rende visibile questa lacuna così che tu possa decidere."
-  },
-  "doubts": {
-    "title": "Perché sorgono questi dubbi?",
-    "th_label": "Aspetto dell'Etichetta",
-    "th_general": "Regolamento Generale",
-    "th_halal": "Standard Halal",
-    "th_botia": "Perché BOTIA rileva ambiguità",
-    "row1": {
-      "aspect": "Additivi (numeri E) & Enzimi",
-      "general": "Possono essere raggruppati per funzione senza specificare l'origine vegetale o animale.",
-      "halal": "Richiede che tutti gli additivi provengano rigorosamente da fonti lecite.",
-      "botia": "Se un additivo potrebbe essere di origine animale ma l'etichetta tace, BOTIA lo segnala come dubbio."
-    },
-    "row2": {
-      "aspect": "Carne di animali consentiti",
-      "general": "Richiede la dichiarazione della specie animale.",
-      "halal": "Richiede una macellazione lecita da parte di un musulmano che invoca Allah e taglia vene specifiche.",
-      "botia": "Le etichette quasi mai dettagliano il metodo di macellazione, quindi BOTIA non può presumere la conformità."
-    }
-  },
-  "cancannot": {
-    "title": "Cosa BOTIA può e non può concludere"
-  },
-  "can_title": "BOTIA PUÒ",
-  "can1": "Leggere gli ingredienti dichiarati dall'etichetta.",
-  "can2": "Rilevare ingredienti chiaramente Haram basandosi su criteri documentati.",
-  "can3": "Rilevare ingredienti con origine ambigua e rendere visibile il silenzio.",
-  "cannot_title": "BOTIA NON PUÒ",
-  "cannot1": "Certificare Halal — non è una garanzia o un sigillo di approvazione.",
-  "cannot2": "Rilevare processi non dichiarati come la contaminazione incrociata nelle fabbriche.",
-  "cannot3": "Sostituire un'autorità religiosa o un ente di certificazione.",
-  "closing": "La trasparenza non è certificazione. È il diritto di sapere cosa dice l'etichetta — e cosa non dice."
+  "haram": {
+    "title": "Questo prodotto contiene un ingrediente proibito secondo la legge islamica.",
+    "what_detected": "Ingrediente classificato come Haram rilevato. Vedi la nota BOTIA di seguito per i dettagli.",
+    "why_it_matters": "Secondo la legge islamica, alcune fonti sono esplicitamente proibite — tra cui maiale e suoi derivati, alcol, sangue e additivi alimentari derivati da queste fonti (Codex CAC/GL 24-1997). Quando BOTIA classifica un ingrediente come Haram, l'origine è chiara e dichiarata sull'etichetta.",
+    "what_it_cannot_conclude": "BOTIA segnala solo la presenza. Non può emettere una sentenza religiosa né sostituire un'autorità halal certificata.",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · Scopri di più su botia-safefood.com"
+  }
 }
+

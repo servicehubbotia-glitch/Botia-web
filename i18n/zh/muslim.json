@@ -1,53 +1,30 @@
 {
-  "title": "穆斯林食品透明度",
-  "subtitle": "阅读标签。理解其真实含义。",
-  "description": "BOTIA 读取声明的成分，并与记录的标准进行交叉比对。它不认证食品——它使标签透明化。",
-  "states_title": "BOTIA 如何分类成分",
-  "halal": {
-    "name": "Halal",
-    "desc": "标签上未检测到禁止成分或可疑来源。"
+  "_meta": {
+    "file": "zh.json",
+    "module": "muslim",
+    "path": "botia/muslim/i18n/zh.json",
+    "lang": "zh",
+    "last_updated": "2026-06-18"
   },
-  "haram": {
-    "name": "Haram",
-    "desc": "标签明确声明了禁止成分：猪肉衍生物、酒精或血液。"
+  "halal": {
+    "title": "根据伊斯兰教法，该成分被视为允许的。",
+    "what_detected": "该成分被归类为清真。详情请参阅下方的 BOTIA 说明。",
+    "why_it_matters": "清真食品不得含有任何伊斯兰教法禁止的物质，并且在制备或加工过程中不得接触非清真物质。",
+    "what_it_cannot_conclude": "BOTIA 仅标识成分分类 — 不包含清真认证、屠宰方式或生产环境条件。",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · 更多信息请访问 botia-safefood.com"
   },
   "mashbooh": {
-    "name": "Mashbooh",
-    "desc": "标签未确认来源或过程。不确定性本身就是信息。"
+    "title": "根据伊斯兰教法，该成分来源不明确。",
+    "what_detected": "检测到一种成分，其清真状态无法仅从标签确认。详情请参阅下方的 BOTIA 说明。",
+    "why_it_matters": "根据伊斯兰教法，来自非法来源的食品添加剂也是非法的（Codex CAC/GL 24-1997）。然而，世界各地的食品标签并不要求声明许多成分的来源 — 调味剂、乳化剂、酶和明胶可能来自动物、植物或酒精来源，而标签上并不显示。",
+    "what_it_cannot_conclude": "BOTIA 无法确认或否认清真状态。它表示来源未声明 — 决定权在于您和您的宗教权威。",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · 更多信息请访问 botia-safefood.com"
   },
-  "mashbooh_why": {
-    "title": "为什么“Mashbooh”是最重要的状态",
-    "body": "将成分归类为 Mashbooh 并非指控——而是不确定性的信号。食品标签首先是法律文件，然后才是人类解释。当标签省略了添加剂的来源或屠宰方法时，BOTIA 会显示这一缺口，以便您做出决定。"
-  },
-  "doubts": {
-    "title": "为什么会产生这些疑问？",
-    "th_label": "标签方面",
-    "th_general": "一般法规",
-    "th_halal": "Halal 标准",
-    "th_botia": "BOTIA 为何检测到歧义",
-    "row1": {
-      "aspect": "添加剂（E编号）和酶",
-      "general": "可按功能分组，无需指明植物或动物来源。",
-      "halal": "要求所有添加剂严格来自合法来源。",
-      "botia": "如果添加剂可能源自动物但标签未说明，BOTIA 将其标记为可疑。"
-    },
-    "row2": {
-      "aspect": "允许动物的肉类",
-      "general": "要求声明动物种类。",
-      "halal": "要求由穆斯林以真主之名合法屠宰，并切割特定静脉。",
-      "botia": "标签几乎从不详述屠宰方法，因此 BOTIA 无法假设合规。"
-    }
-  },
-  "cancannot": {
-    "title": "BOTIA 能得出和不能得出的结论"
-  },
-  "can_title": "BOTIA 可以",
-  "can1": "从标签读取声明的成分。",
-  "can2": "根据记录的标准检测明确的 Haram 成分。",
-  "can3": "检测来源不明的成分，并使沉默可见。",
-  "cannot_title": "BOTIA 不能",
-  "cannot1": "认证 Halal——它不是保证或批准印章。",
-  "cannot2": "检测未声明的过程，如工厂中的交叉污染。",
-  "cannot3": "取代宗教权威或认证机构。",
-  "closing": "透明度不是认证。它是了解标签内容——以及未说明内容——的权利。"
+  "haram": {
+    "title": "该产品含有伊斯兰教法禁止的成分。",
+    "what_detected": "检测到被归类为 Haram（非法）的成分。详情请参阅下方的 BOTIA 说明。",
+    "why_it_matters": "根据伊斯兰教法，某些来源被明确禁止 — 包括猪肉及其衍生物、酒精、血液以及来自这些来源的食品添加剂（Codex CAC/GL 24-1997）。当 BOTIA 将一种成分归类为 Haram 时，其来源是明确的，并在标签上有声明。",
+    "what_it_cannot_conclude": "BOTIA 仅标识存在该成分。它不能发布宗教裁决，也不能替代经过认证的清真权威机构。",
+    "source_note": "Codex Alimentarius CAC/GL 24-1997 · OIC/SMIIC 1:2019 · 更多信息请访问 botia-safefood.com"
+  }
 }
