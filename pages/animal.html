@@ -18,32 +18,32 @@
       border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
       padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
     }
-    .hero { padding: 32px 0 16px; }
-    .section { margin-bottom: 28px; }
-    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
-    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.6; margin-bottom: 16px; }
+    .hero { padding: 24px 0 12px; }
+    .section { margin-bottom: 24px; }
+    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 8px; }
+    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.6; margin-bottom: 12px; }
     .how-box {
-      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 18px;
-      margin-bottom: 12px;
+      background: rgba(24, 13, 13, 0.9); border-radius: 10px; padding: 16px;
+      margin-bottom: 10px;
     }
     .how-box.confirmed { border-left: 4px solid rgba(200, 100, 100, 0.6); }
     .how-box.ambiguous { border-left: 4px solid rgba(200, 160, 60, 0.6); }
-    .how-box h4 { margin-bottom: 6px; color: #f2e4dc; font-size: 0.95rem; }
+    .how-box h4 { margin-bottom: 4px; color: #f2e4dc; font-size: 0.95rem; }
     .how-box p { font-size: 0.9rem; color: #c0a08c; line-height: 1.6; }
     .how-box a { color: #e6a06b; text-decoration: none; }
     .how-box a:hover { text-decoration: underline; }
     .can-cannot {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0;
     }
     @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
     .can-box, .cannot-box {
-      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 18px;
+      background: rgba(24, 13, 13, 0.9); border-radius: 10px; padding: 16px;
     }
     .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
     .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
-    .can-box h4, .cannot-box h4 { margin-bottom: 8px; font-size: 0.95rem; }
+    .can-box h4, .cannot-box h4 { margin-bottom: 6px; font-size: 0.95rem; }
     .can-box li, .cannot-box li {
-      margin-bottom: 4px; font-size: 0.85rem; color: #c0a08c;
+      margin-bottom: 3px; font-size: 0.85rem; color: #c0a08c;
       padding-left: 20px; position: relative; list-style: none;
     }
     .can-box li::before { content: "✅"; position: absolute; left: 0; }
@@ -81,7 +81,7 @@
       <h2 class="section-title" id="how_title">How BOTIA reads animal origin</h2>
       <div class="how-box confirmed">
         <h4>🐾 Confirmed animal origin</h4>
-        <p id="how_confirmed">
+        <p>
           Some ingredients are always from animals:
           <a href="/ingredients/gelatine.html">gelatine</a>,
           <a href="/ingredients/carmine.html">carmine (E120)</a>,
@@ -92,7 +92,7 @@
       </div>
       <div class="how-box ambiguous">
         <h4>❓ May be animal-derived</h4>
-        <p id="how_ambiguous">
+        <p>
           Other ingredients may come from animals or plants depending on the manufacturer:
           <a href="/ingredients/e471.html">E471</a>,
           <a href="/ingredients/e472.html">E472</a>,
@@ -169,8 +169,10 @@
       fetch('/i18n/' + LANG + '/animal.json')
         .then(res => res.ok ? res.json() : Promise.reject())
         .then(d => {
+          // Estos IDs tienen enlaces HTML fijos, no se sobrescriben
+          const fijos = ['how_confirmed', 'how_ambiguous'];
           Object.keys(d).forEach(id => {
-            if (id === '_meta') return;
+            if (id === '_meta' || fijos.includes(id)) return;
             const el = document.getElementById(id);
             if (el) el.textContent = d[id];
           });
