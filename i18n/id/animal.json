@@ -5,142 +5,24 @@
     "lang": "en",
     "last_updated": "2026-07-03"
   },
-  "title": "Bahan Berasal dari Hewan Terdeteksi",
-  "subtitle": "Produk ini mengandung bahan yang berasal dari hewan, atau kemungkinan berasal dari hewan.",
-  "intro": "BOTIA membaca daftar bahan dan menandai bahan yang dipastikan atau berpotensi berasal dari hewan. Ini tidak mensertifikasi status vegan atau vegetarian — ini membuat label menjadi transparan.",
-  "certainty_title": "Tingkat kepastian",
-  "direct_label": "Asal hewan terkonfirmasi",
-  "direct_desc": "Bahan selalu berasal dari hewan. Tidak ada ambiguitas.",
-  "ambiguous_label": "Kemungkinan asal hewan",
-  "ambiguous_desc": "Bahan mungkin berasal dari sumber hewan atau tumbuhan. Label tidak menyebutkan secara spesifik. Hanya produsen yang dapat memastikan.",
-  "triggers_title": "Apa yang dideteksi BOTIA",
-  "triggers": {
-    "direct": [
-      {
-        "name": "Gelatin / Gelatin",
-        "e": "E441",
-        "source": "Tulang, kulit, jaringan ikat hewan"
-      },
-      {
-        "name": "Karmin / Cochineal",
-        "e": "E120",
-        "source": "Serangga cochineal (Dactylopius coccus)"
-      },
-      {
-        "name": "Shellac",
-        "e": "E904",
-        "source": "Sekresi serangga lak"
-      },
-      {
-        "name": "Lilin lebah",
-        "e": "E901",
-        "source": "Dihasilkan oleh lebah"
-      },
-      {
-        "name": "Fosfat tulang",
-        "e": "E542",
-        "source": "Tulang hewan"
-      },
-      {
-        "name": "Lanolin",
-        "e": null,
-        "source": "Lemak bulu domba"
-      },
-      {
-        "name": "Laktosa",
-        "e": null,
-        "source": "Susu sapi"
-      },
-      {
-        "name": "Kasein / Kaseinat",
-        "e": null,
-        "source": "Protein susu sapi"
-      },
-      {
-        "name": "Whey / Bubuk whey",
-        "e": null,
-        "source": "Fraksi susu sapi"
-      },
-      {
-        "name": "Madu",
-        "e": null,
-        "source": "Dihasilkan oleh lebah"
-      }
-    ],
-    "ambiguous": [
-      {
-        "name": "Mono- dan digliserida asam lemak",
-        "e": "E471",
-        "source": "Mungkin lemak hewan atau nabati"
-      },
-      {
-        "name": "Ester asam lemak",
-        "e": "E472",
-        "source": "Mungkin lemak hewan atau nabati"
-      },
-      {
-        "name": "Lesitin",
-        "e": "E322",
-        "source": "Biasanya kedelai, tetapi mungkin telur"
-      },
-      {
-        "name": "Gliserol / Gliserin",
-        "e": "E422",
-        "source": "Mungkin lemak hewan atau nabati"
-      },
-      {
-        "name": "Renin / Kimosin",
-        "e": null,
-        "source": "Mungkin hewan atau mikroba"
-      },
-      {
-        "name": "Enzim",
-        "e": null,
-        "source": "Mungkin hewan, mikroba, atau jamur"
-      },
-      {
-        "name": "Perasa alami",
-        "e": null,
-        "source": "Mungkin hewan, tumbuhan, atau sintetis"
-      },
-      {
-        "name": "Sistein",
-        "e": "E920",
-        "source": "Mungkin dari rambut/bulu hewan atau sintetis"
-      },
-      {
-        "name": "Riboflavin",
-        "e": "E101",
-        "source": "Biasanya sintetis tetapi mungkin dari susu"
-      },
-      {
-        "name": "Natrium inosinat",
-        "e": "E631",
-        "source": "Biasanya daging/ikan tetapi mungkin mikroba"
-      },
-      {
-        "name": "Natrium guanilat",
-        "e": "E627",
-        "source": "Biasanya sarden/ragi"
-      },
-      {
-        "name": "Ester asam lemak E470-E495",
-        "e": "E470-E495",
-        "source": "Mungkin lemak hewan atau nabati"
-      }
-    ]
-  },
-  "vegan_label_warning": {
-    "title": "Tentang label 'vegan'",
-    "body": "Tidak ada definisi hukum 'vegan' dalam hukum Uni Eropa, Inggris, atau AS. Ini adalah klaim kesesuaian diet, bukan jaminan keamanan. Produk berlabel vegan mungkin masih mengandung bahan tambahan asal hewan jika produsen belum memverifikasi seluruh rantai pasokan."
-  },
-  "cross_contamination_warning": {
-    "title": "Tentang 'mungkin mengandung jejak susu/telur'",
-    "body": "Peringatan ini untuk perlindungan alergi — ini tidak menunjukkan bahan yang sengaja ditambahkan. Sebagian besar konsumen vegan tidak menganggap peringatan kontaminasi silang sebagai pembatalan status vegan."
-  },
-  "cannot_title": "Apa yang tidak dapat disimpulkan BOTIA",
-  "cannot_1": "Apakah produk ini bersertifikat vegan atau vegetarian",
-  "cannot_2": "Asal pasti bahan yang ambigu — hanya produsen yang dapat memastikan",
-  "cannot_3": "Apakah bahan bantu pemrosesan asal hewan digunakan tetapi tidak dinyatakan",
-  "source_note": "Peraturan UE 1169/2011 · Codex Alimentarius · EFSA · Pelajari lebih lanjut di botia-safefood.com"
+  "title": "Asal Hewani",
+  "subtitle": "Apa yang tertera pada label. Dan apa yang tidak.",
+  "intro": "Beberapa bahan berasal dari hewan. Beberapa mungkin berasal. Dan beberapa bersembunyi di balik nama teknis yang tidak memberikan petunjuk apa pun. BOTIA membaca label dan menandai apa yang ditemukan — sehingga Anda dapat memutuskan.",
+  "why_title": "Mengapa ini penting",
+  "why_body": "Baik Anda menghindari produk hewani karena alasan etis, agama, pola makan, atau pribadi — label tidak selalu berpihak pada Anda. Suatu bahan bisa berasal dari hewan tetapi tetap muncul sebagai kode, nama kimia, atau sekadar 'perasa alami'. BOTIA membuatnya terlihat.",
+  "how_title": "Bagaimana BOTIA membaca asal hewani",
+  "how_confirmed": "Beberapa bahan selalu berasal dari hewan — gelatin, karmin, lilin lebah, laktosa, madu. Ketika BOTIA menemukan ini, tidak ada ambiguitas.",
+  "how_ambiguous": "Bahan lain mungkin berasal dari hewan atau tumbuhan tergantung pada rantai pasokan produsen — mono- dan digliserida, gliserol, lesitin, enzim, perasa alami. Label tidak menyebutkan yang mana. Hanya produsen yang tahu.",
+  "vegan_title": "Bagaimana dengan label 'vegan'?",
+  "vegan_body": "Tidak ada definisi hukum untuk 'vegan' dalam hukum UE, Inggris, atau AS. Itu adalah klaim sukarela — bukan jaminan yang diatur. BOTIA membaca daftar bahan, bukan pemasaran.",
+  "can_title": "BOTIA DAPAT",
+  "can_1": "Mendeteksi bahan yang dikonfirmasi berasal dari hewan.",
+  "can_2": "Menandai bahan yang mungkin berasal dari hewan ketika label tidak menyebutkannya.",
+  "can_3": "Membuat terlihat apa yang tidak jelas pada label.",
+  "cannot_title": "BOTIA TIDAK DAPAT",
+  "cannot_1": "Mensertifikasi bahwa suatu produk adalah vegan atau vegetarian.",
+  "cannot_2": "Memastikan asal pasti bahan yang ambigu — hanya produsen yang bisa.",
+  "cannot_3": "Mendeteksi bahan pembantu pemrosesan yang berasal dari hewan yang tidak tercantum pada label.",
+  "closing": "BOTIA membaca apa yang dinyatakan. Untuk kepastian penuh, hubungi produsen atau cari logo vegan bersertifikat.",
+  "source_note": "Peraturan UE 1169/2011 · Codex Alimentarius · Pelajari lebih lanjut di botia-safefood.com"
 }

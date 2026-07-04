@@ -5,142 +5,24 @@
     "lang": "en",
     "last_updated": "2026-07-03"
   },
-  "title": "Ingrediente de Origem Animal Detectado",
-  "subtitle": "Este produto contém um ingrediente de origem animal, ou possível origem animal.",
-  "intro": "O BOTIA lê a lista de ingredientes e sinaliza aqueles que são confirmados ou potencialmente derivados de animais. Ele não certifica o status vegano ou vegetariano — ele torna o rótulo transparente.",
-  "certainty_title": "Níveis de certeza",
-  "direct_label": "Origem animal confirmada",
-  "direct_desc": "O ingrediente é sempre derivado de animais. Sem ambiguidade.",
-  "ambiguous_label": "Possível origem animal",
-  "ambiguous_desc": "O ingrediente pode vir de fontes animais ou vegetais. O rótulo não especifica. Apenas o fabricante pode confirmar.",
-  "triggers_title": "O que o BOTIA detecta",
-  "triggers": {
-    "direct": [
-      {
-        "name": "Gelatina",
-        "e": "E441",
-        "source": "Ossos, pele, tecido conjuntivo de animais"
-      },
-      {
-        "name": "Carmim / Cochonilha",
-        "e": "E120",
-        "source": "Insetos cochonilha (Dactylopius coccus)"
-      },
-      {
-        "name": "Goma-laca",
-        "e": "E904",
-        "source": "Secreção do inseto da laca"
-      },
-      {
-        "name": "Cera de abelha",
-        "e": "E901",
-        "source": "Produzida por abelhas"
-      },
-      {
-        "name": "Fosfato de osso",
-        "e": "E542",
-        "source": "Ossos de animais"
-      },
-      {
-        "name": "Lanolina",
-        "e": null,
-        "source": "Gordura da lã de ovelha"
-      },
-      {
-        "name": "Lactose",
-        "e": null,
-        "source": "Leite de vaca"
-      },
-      {
-        "name": "Caseína / Caseinato",
-        "e": null,
-        "source": "Proteína do leite de vaca"
-      },
-      {
-        "name": "Soro de leite / Soro de leite em pó",
-        "e": null,
-        "source": "Fração do leite de vaca"
-      },
-      {
-        "name": "Mel",
-        "e": null,
-        "source": "Produzido por abelhas"
-      }
-    ],
-    "ambiguous": [
-      {
-        "name": "Mono- e diglicerídeos de ácidos graxos",
-        "e": "E471",
-        "source": "Pode ser gordura animal ou vegetal"
-      },
-      {
-        "name": "Ésteres de ácidos graxos",
-        "e": "E472",
-        "source": "Pode ser gordura animal ou vegetal"
-      },
-      {
-        "name": "Lecitinas",
-        "e": "E322",
-        "source": "Geralmente de soja, mas pode ser de ovo"
-      },
-      {
-        "name": "Glicerol / Glicerina",
-        "e": "E422",
-        "source": "Pode ser gordura animal ou vegetal"
-      },
-      {
-        "name": "Renina / Quimosina",
-        "e": null,
-        "source": "Pode ser animal ou microbiana"
-      },
-      {
-        "name": "Enzimas",
-        "e": null,
-        "source": "Pode ser animal, microbiana ou fúngica"
-      },
-      {
-        "name": "Aromas naturais",
-        "e": null,
-        "source": "Pode ser animal, vegetal ou sintético"
-      },
-      {
-        "name": "Cisteína",
-        "e": "E920",
-        "source": "Pode ser de pelos/penas de animais ou sintética"
-      },
-      {
-        "name": "Riboflavina",
-        "e": "E101",
-        "source": "Geralmente sintética, mas pode ser de leite"
-      },
-      {
-        "name": "Inosinato de sódio",
-        "e": "E631",
-        "source": "Geralmente de carne/peixe, mas pode ser microbiano"
-      },
-      {
-        "name": "Guamilato de sódio",
-        "e": "E627",
-        "source": "Geralmente de sardinhas/levedura"
-      },
-      {
-        "name": "Ésteres de ácidos graxos E470-E495",
-        "e": "E470-E495",
-        "source": "Pode ser gordura animal ou vegetal"
-      }
-    ]
-  },
-  "vegan_label_warning": {
-    "title": "Sobre rótulos 'veganos'",
-    "body": "Não há definição legal de 'vegano' na legislação da UE, Reino Unido ou EUA. É uma declaração de adequação dietética, não uma garantia de segurança. Um produto rotulado como vegano pode ainda conter aditivos de origem animal se o fabricante não tiver verificado toda a cadeia de fornecimento."
-  },
-  "cross_contamination_warning": {
-    "title": "Sobre 'pode conter vestígios de leite/ovo'",
-    "body": "Este aviso é para proteção contra alergias — não indica um ingrediente adicionado intencionalmente. A maioria dos consumidores veganos não considera os avisos de contaminação cruzada como invalidantes do status vegano."
-  },
-  "cannot_title": "O que o BOTIA não pode concluir",
-  "cannot_1": "Se este produto é certificado como vegano ou vegetariano",
-  "cannot_2": "A origem exata de ingredientes ambíguos — apenas o fabricante pode confirmar",
-  "cannot_3": "Se auxiliares de processamento de origem animal foram usados, mas não declarados",
-  "source_note": "Regulamento UE 1169/2011 · Codex Alimentarius · EFSA · Saiba mais em botia-safefood.com"
+  "title": "Origem Animal",
+  "subtitle": "O que o rótulo diz. E o que não diz.",
+  "intro": "Alguns ingredientes vêm de animais. Outros podem vir. E alguns se escondem por trás de nomes técnicos que não revelam nada. O BOTIA lê o rótulo e sinaliza o que encontra — para que você possa decidir.",
+  "why_title": "Por que isso importa",
+  "why_body": "Se você evita produtos de origem animal por razões éticas, religiosas, dietéticas ou pessoais — o rótulo nem sempre está do seu lado. Um ingrediente pode ser de origem animal e ainda assim aparecer como um código, um nome químico ou simplesmente 'aroma natural'. O BOTIA torna isso visível.",
+  "how_title": "Como o BOTIA lê a origem animal",
+  "how_confirmed": "Alguns ingredientes são sempre de origem animal — gelatina, carmim, cera de abelha, lactose, mel. Quando o BOTIA encontra estes, não há ambiguidade.",
+  "how_ambiguous": "Outros ingredientes podem vir de animais ou plantas, dependendo da cadeia de fornecimento do fabricante — mono e diglicerídeos, glicerol, lecitina, enzimas, aromas naturais. O rótulo não diz qual. Apenas o fabricante sabe.",
+  "vegan_title": "E quanto aos rótulos 'vegano'?",
+  "vegan_body": "Não há definição legal de 'vegano' na legislação da UE, Reino Unido ou EUA. É uma alegação voluntária — não uma garantia regulamentada. O BOTIA lê a lista de ingredientes, não o marketing.",
+  "can_title": "O BOTIA PODE",
+  "can_1": "Detectar ingredientes confirmados como de origem animal.",
+  "can_2": "Sinalizar ingredientes que podem ser de origem animal quando o rótulo não especifica.",
+  "can_3": "Tornar visível o que o rótulo deixa pouco claro.",
+  "cannot_title": "O BOTIA NÃO PODE",
+  "cannot_1": "Certificar que um produto é vegano ou vegetariano.",
+  "cannot_2": "Confirmar a origem exata de ingredientes ambíguos — apenas o fabricante pode.",
+  "cannot_3": "Detectar auxiliares de processamento de origem animal não listados no rótulo.",
+  "closing": "O BOTIA lê o que é declarado. Para total certeza, entre em contato com o fabricante ou procure um logotipo vegano certificado.",
+  "source_note": "Regulamento UE 1169/2011 · Codex Alimentarius · Saiba mais em botia-safefood.com"
 }

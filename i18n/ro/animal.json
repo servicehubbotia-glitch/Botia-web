@@ -5,142 +5,24 @@
     "lang": "en",
     "last_updated": "2026-07-03"
   },
-  "title": "Ingredient de origine animală detectat",
-  "subtitle": "Acest produs conține un ingredient de origine animală sau posibil de origine animală.",
-  "intro": "BOTIA citește lista de ingrediente și semnalează ingredientele care sunt confirmate sau potențial derivate din animale. Nu certifică statutul vegan sau vegetarian — face eticheta transparentă.",
-  "certainty_title": "Niveluri de certitudine",
-  "direct_label": "Origine animală confirmată",
-  "direct_desc": "Ingredientul este întotdeauna derivat din animale. Fără ambiguitate.",
-  "ambiguous_label": "Origine animală posibilă",
-  "ambiguous_desc": "Ingredientul poate proveni din surse animale sau vegetale. Eticheta nu specifică. Doar producătorul poate confirma.",
-  "triggers_title": "Ce detectează BOTIA",
-  "triggers": {
-    "direct": [
-      {
-        "name": "Gelatină",
-        "e": "E441",
-        "source": "Oase, piele, țesut conjunctiv animal"
-      },
-      {
-        "name": "Carmin / Coșenilă",
-        "e": "E120",
-        "source": "Insecte coșenilă (Dactylopius coccus)"
-      },
-      {
-        "name": "Șelac",
-        "e": "E904",
-        "source": "Secreția insectei lac"
-      },
-      {
-        "name": "Ceară de albine",
-        "e": "E901",
-        "source": "Produsă de albine"
-      },
-      {
-        "name": "Fosfat de os",
-        "e": "E542",
-        "source": "Oase animale"
-      },
-      {
-        "name": "Lanolină",
-        "e": null,
-        "source": "Grăsime din lâna oilor"
-      },
-      {
-        "name": "Lactoză",
-        "e": null,
-        "source": "Lapte de vacă"
-      },
-      {
-        "name": "Cazeină / Cazeinat",
-        "e": null,
-        "source": "Proteină din laptele de vacă"
-      },
-      {
-        "name": "Zer / Pudră de zer",
-        "e": null,
-        "source": "Fracțiune din laptele de vacă"
-      },
-      {
-        "name": "Miere",
-        "e": null,
-        "source": "Produsă de albine"
-      }
-    ],
-    "ambiguous": [
-      {
-        "name": "Mono- și digliceride ale acizilor grași",
-        "e": "E471",
-        "source": "Poate fi grăsime animală sau vegetală"
-      },
-      {
-        "name": "Esteri ai acizilor grași",
-        "e": "E472",
-        "source": "Poate fi grăsime animală sau vegetală"
-      },
-      {
-        "name": "Lecitine",
-        "e": "E322",
-        "source": "De obicei din soia, dar poate fi din ou"
-      },
-      {
-        "name": "Glicerol / Glicerină",
-        "e": "E422",
-        "source": "Poate fi grăsime animală sau vegetală"
-      },
-      {
-        "name": "Cheag / Chimozină",
-        "e": null,
-        "source": "Poate fi animal sau microbian"
-      },
-      {
-        "name": "Enzime",
-        "e": null,
-        "source": "Poate fi animal, microbian sau fungic"
-      },
-      {
-        "name": "Arome naturale",
-        "e": null,
-        "source": "Poate fi animal, vegetal sau sintetic"
-      },
-      {
-        "name": "Cisteină",
-        "e": "E920",
-        "source": "Poate fi din păr/pene animale sau sintetic"
-      },
-      {
-        "name": "Riboflavină",
-        "e": "E101",
-        "source": "De obicei sintetic, dar poate fi din lapte"
-      },
-      {
-        "name": "Inozinat de sodiu",
-        "e": "E631",
-        "source": "De obicei carne/pește, dar poate fi microbian"
-      },
-      {
-        "name": "Guamilat de sodiu",
-        "e": "E627",
-        "source": "De obicei sardine/drojdie"
-      },
-      {
-        "name": "Esteri ai acizilor grași E470-E495",
-        "e": "E470-E495",
-        "source": "Poate fi grăsime animală sau vegetală"
-      }
-    ]
-  },
-  "vegan_label_warning": {
-    "title": "Despre etichetele 'vegan'",
-    "body": "Nu există o definiție legală a termenului 'vegan' în legislația UE, Regatului Unit sau SUA. Este o afirmație privind adecvarea dietetică, nu o garanție de siguranță. Un produs etichetat vegan poate conține în continuare aditivi de origine animală dacă producătorul nu a verificat întregul lanț de aprovizionare."
-  },
-  "cross_contamination_warning": {
-    "title": "Despre 'poate conține urme de lapte/ou'",
-    "body": "Acest avertisment este pentru protecția împotriva alergiilor — nu indică un ingredient adăugat intenționat. Majoritatea consumatorilor vegani nu consideră avertismentele de contaminare încrucișată ca invalidând statutul vegan."
-  },
-  "cannot_title": "Ce nu poate concluziona BOTIA",
-  "cannot_1": "Dacă acest produs este certificat vegan sau vegetarian",
-  "cannot_2": "Originea exactă a ingredientelor ambigue — doar producătorul poate confirma",
-  "cannot_3": "Dacă au fost utilizate auxiliare tehnologice de origine animală, dar nedeclarate",
-  "source_note": "Regulamentul UE 1169/2011 · Codex Alimentarius · EFSA · Aflați mai multe la botia-safefood.com"
+  "title": "Origine Animală",
+  "subtitle": "Ce spune eticheta. Și ce nu spune.",
+  "intro": "Unele ingrediente provin de la animale. Altele, poate. Iar altele se ascund în spatele unor denumiri tehnice care nu dezvăluie nimic. BOTIA citește eticheta și semnalează ce găsește – pentru ca tu să poți decide.",
+  "why_title": "De ce contează",
+  "why_body": "Indiferent dacă eviți produsele de origine animală din motive etice, religioase, alimentare sau personale – eticheta nu este întotdeauna de partea ta. Un ingredient poate fi de origine animală și să apară totuși ca un cod, un nume chimic sau pur și simplu „aromă naturală”. BOTIA face vizibil acest lucru.",
+  "how_title": "Cum citește BOTIA originea animală",
+  "how_confirmed": "Unele ingrediente sunt întotdeauna de origine animală – gelatina, carminul, ceara de albine, lactoza, mierea. Când BOTIA le găsește, nu există ambiguitate.",
+  "how_ambiguous": "Alte ingrediente pot proveni de la animale sau plante, în funcție de lanțul de aprovizionare al producătorului – mono- și digliceride, glicerol, lecitină, enzime, arome naturale. Eticheta nu specifică acest lucru. Doar producătorul știe.",
+  "vegan_title": "Ce zici de etichetele „vegan”?",
+  "vegan_body": "Nu există o definiție legală a termenului „vegan” în legislația UE, UK sau SUA. Este o afirmație voluntară – nu o garanție reglementată. BOTIA citește lista de ingrediente, nu marketingul.",
+  "can_title": "BOTIA POATE",
+  "can_1": "Detecta ingrediente confirmate ca fiind de origine animală.",
+  "can_2": "Semnala ingrediente care pot fi de origine animală atunci când eticheta nu specifică.",
+  "can_3": "Face vizibil ceea ce eticheta lasă neclar.",
+  "cannot_title": "BOTIA NU POATE",
+  "cannot_1": "Certifica faptul că un produs este vegan sau vegetarian.",
+  "cannot_2": "Confirma originea exactă a ingredientelor ambigue – doar producătorul poate.",
+  "cannot_3": "Detecta adjuvanți tehnologici de origine animală care nu sunt listați pe etichetă.",
+  "closing": "BOTIA citește ceea ce este declarat. Pentru certitudine deplină, contactează producătorul sau caută un logo vegan certificat.",
+  "source_note": "Regulamentul UE 1169/2011 · Codex Alimentarius · Află mai multe la botia-safefood.com"
 }

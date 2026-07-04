@@ -2,145 +2,27 @@
   "_meta": {
     "file": "en.json",
     "module": "animal",
-    "lang": "en",
+    "lang": "nl",
     "last_updated": "2026-07-03"
   },
-  "title": "Ingrediënt van dierlijke oorsprong gedetecteerd",
-  "subtitle": "Dit product bevat een ingrediënt van dierlijke oorsprong, of mogelijke dierlijke oorsprong.",
-  "intro": "BOTIA leest de ingrediëntenlijst en markeert ingrediënten waarvan bevestigd is of die mogelijk van dieren afkomstig zijn. Het certificeert geen veganistische of vegetarische status — het maakt het etiket transparant.",
-  "certainty_title": "Niveaus van zekerheid",
-  "direct_label": "Bevestigde dierlijke oorsprong",
-  "direct_desc": "Ingrediënt is altijd afkomstig van dieren. Geen dubbelzinnigheid.",
-  "ambiguous_label": "Mogelijke dierlijke oorsprong",
-  "ambiguous_desc": "Ingrediënt kan afkomstig zijn van dierlijke of plantaardige bronnen. Het etiket specificeert dit niet. Alleen de fabrikant kan dit bevestigen.",
-  "triggers_title": "Wat BOTIA detecteert",
-  "triggers": {
-    "direct": [
-      {
-        "name": "Gelatine / Gelatine",
-        "e": "E441",
-        "source": "Dierlijke botten, huid, bindweefsel"
-      },
-      {
-        "name": "Karmijn / Cochenille",
-        "e": "E120",
-        "source": "Cochenilleluizen (Dactylopius coccus)"
-      },
-      {
-        "name": "Schellak",
-        "e": "E904",
-        "source": "Afscheiding van lakluizen"
-      },
-      {
-        "name": "Bijenwas",
-        "e": "E901",
-        "source": "Geproduceerd door bijen"
-      },
-      {
-        "name": "Bottenfosfaat",
-        "e": "E542",
-        "source": "Dierlijke botten"
-      },
-      {
-        "name": "Lanoline",
-        "e": null,
-        "source": "Vet van schapenwol"
-      },
-      {
-        "name": "Lactose",
-        "e": null,
-        "source": "Koemelk"
-      },
-      {
-        "name": "Caseïne / Caseïnaat",
-        "e": null,
-        "source": "Koemelkeiwit"
-      },
-      {
-        "name": "Wei / Weipoeder",
-        "e": null,
-        "source": "Fractie van koemelk"
-      },
-      {
-        "name": "Honing",
-        "e": null,
-        "source": "Geproduceerd door bijen"
-      }
-    ],
-    "ambiguous": [
-      {
-        "name": "Mono- en diglyceriden van vetzuren",
-        "e": "E471",
-        "source": "Kan dierlijk of plantaardig vet zijn"
-      },
-      {
-        "name": "Esters van vetzuren",
-        "e": "E472",
-        "source": "Kan dierlijk of plantaardig vet zijn"
-      },
-      {
-        "name": "Lecithinen",
-        "e": "E322",
-        "source": "Meestal soja, maar kan ei zijn"
-      },
-      {
-        "name": "Glycerol / Glycerine",
-        "e": "E422",
-        "source": "Kan dierlijk vet of plantaardig zijn"
-      },
-      {
-        "name": "Stremsel / Chymosine",
-        "e": null,
-        "source": "Kan dierlijk of microbiëel zijn"
-      },
-      {
-        "name": "Enzymen",
-        "e": null,
-        "source": "Kan dierlijk, microbiëel of schimmel zijn"
-      },
-      {
-        "name": "Natuurlijke aroma's",
-        "e": null,
-        "source": "Kan dierlijk, plantaardig of synthetisch zijn"
-      },
-      {
-        "name": "Cysteïne",
-        "e": "E920",
-        "source": "Kan van dierlijk haar/veren of synthetisch zijn"
-      },
-      {
-        "name": "Riboflavine",
-        "e": "E101",
-        "source": "Meestal synthetisch maar kan van melk zijn"
-      },
-      {
-        "name": "Natriuminosinaat",
-        "e": "E631",
-        "source": "Meestal vlees/vis maar kan microbiëel zijn"
-      },
-      {
-        "name": "Natriumguanylaat",
-        "e": "E627",
-        "source": "Meestal sardines/gist"
-      },
-      {
-        "name": "Vetzuuresters E470-E495",
-        "e": "E470-E495",
-        "source": "Kan dierlijk of plantaardig vet zijn"
-      }
-    ]
-  },
-  "vegan_label_warning": {
-    "title": "Over 'veganistische' etiketten",
-    "body": "Er is geen wettelijke definitie van 'veganistisch' in de EU, het VK of de VS. Het is een claim over dieetgeschiktheid, geen veiligheidsgarantie. Een product dat als veganistisch is geëtiketteerd, kan nog steeds additieven van dierlijke oorsprong bevatten als de fabrikant de volledige toeleveringsketen niet heeft geverifieerd."
-  },
-  "cross_contamination_warning": {
-    "title": "Over 'kan sporen van melk/ei bevatten'",
-    "body": "Deze waarschuwing is voor allergiebescherming — het geeft geen opzettelijk toegevoegd ingrediënt aan. De meeste veganistische consumenten beschouwen waarschuwingen voor kruisbesmetting niet als ongeldig voor de veganistische status."
-  },
-  "cannot_title": "Wat BOTIA niet kan concluderen",
-  "cannot_1": "Of dit product gecertificeerd veganistisch of vegetarisch is",
-  "cannot_2": "De exacte oorsprong van dubbelzinnige ingrediënten — alleen de fabrikant kan dit bevestigen",
-  "cannot_3": "Of verwerkingshulpmiddelen van dierlijke oorsprong zijn gebruikt maar niet zijn vermeld",
-  "source_note": "EU-verordening 1169/2011 · Codex Alimentarius · EFSA · Meer informatie op botia-safefood.com"
+  "title": "Dierlijke oorsprong",
+  "subtitle": "Wat het etiket zegt. En wat het niet zegt.",
+  "intro": "Sommige ingrediënten zijn afkomstig van dieren. Sommige misschien. En sommige gaan schuil achter technische namen die niets prijsgeven. BOTIA leest het etiket en markeert wat het vindt — zodat jij kunt beslissen.",
+  "why_title": "Waarom dit belangrijk is",
+  "why_body": "Of je dierlijke producten nu vermijdt om ethische, religieuze, dieet- of persoonlijke redenen — het etiket staat niet altijd aan jouw kant. Een ingrediënt kan van dierlijke oorsprong zijn en toch verschijnen als een code, een chemische naam of simpelweg 'natuurlijk aroma'. BOTIA maakt dat zichtbaar.",
+  "how_title": "Hoe BOTIA dierlijke oorsprong leest",
+  "how_confirmed": "Sommige ingrediënten zijn altijd afkomstig van dieren — gelatine, karmijn, bijenwas, lactose, honing. Wanneer BOTIA deze vindt, is er geen twijfel mogelijk.",
+  "how_ambiguous": "Andere ingrediënten kunnen afkomstig zijn van dieren of planten, afhankelijk van de toeleveringsketen van de fabrikant — mono- en diglyceriden, glycerol, lecithine, enzymen, natuurlijke aroma's. Het etiket zegt niet welke. Alleen de fabrikant weet het.",
+  "vegan_title": "Hoe zit het met 'vegan' etiketten?",
+  "vegan_body": "Er is geen wettelijke definitie van 'vegan' in de EU-, VK- of VS-wetgeving. Het is een vrijwillige claim — geen gereguleerde garantie. BOTIA leest de ingrediëntenlijst, niet de marketing.",
+  "can_title": "BOTIA KAN",
+  "can_1": "Ingrediënten detecteren die als dierlijk zijn bevestigd.",
+  "can_2": "Ingrediënten markeren die mogelijk dierlijk zijn wanneer het etiket dit niet specificeert.",
+  "can_3": "Zichtbaar maken wat het etiket onduidelijk laat.",
+  "cannot_title": "BOTIA KAN NIET",
+  "cannot_1": "Certificeren dat een product veganistisch of vegetarisch is.",
+  "cannot_2": "De exacte oorsprong van dubbelzinnige ingrediënten bevestigen — alleen de fabrikant kan dat.",
+  "cannot_3": "Dierlijke verwerkingshulpmiddelen detecteren die niet op het etiket staan vermeld.",
+  "closing": "BOTIA leest wat wordt vermeld. Voor volledige zekerheid, neem contact op met de fabrikant of zoek naar een gecertificeerd vegan-logo.",
+  "source_note": "EU-verordening 1169/2011 · Codex Alimentarius · Meer informatie op botia-safefood.com"
 }

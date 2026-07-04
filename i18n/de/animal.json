@@ -5,142 +5,24 @@
     "lang": "en",
     "last_updated": "2026-07-03"
   },
-  "title": "Tierischen Ursprungs erkannt",
-  "subtitle": "Dieses Produkt enthält eine Zutat tierischen Ursprungs oder möglicherweise tierischen Ursprungs.",
-  "intro": "BOTIA liest die Zutatenliste und kennzeichnet Inhaltsstoffe, die nachweislich oder möglicherweise von Tieren stammen. Es zertifiziert keinen veganen oder vegetarischen Status – es macht die Kennzeichnung transparent.",
-  "certainty_title": "Sicherheitsgrade",
-  "direct_label": "Bestätigter tierischer Ursprung",
-  "direct_desc": "Die Zutat stammt immer von Tieren. Keine Unklarheit.",
-  "ambiguous_label": "Möglicher tierischer Ursprung",
-  "ambiguous_desc": "Die Zutat kann aus tierischen oder pflanzlichen Quellen stammen. Die Kennzeichnung gibt keine Auskunft. Nur der Hersteller kann bestätigen.",
-  "triggers_title": "Was BOTIA erkennt",
-  "triggers": {
-    "direct": [
-      {
-        "name": "Gelatine / Gelatin",
-        "e": "E441",
-        "source": "Tierknochen, Haut, Bindegewebe"
-      },
-      {
-        "name": "Karmin / Cochenille",
-        "e": "E120",
-        "source": "Cochenilleschildläuse (Dactylopius coccus)"
-      },
-      {
-        "name": "Schellack",
-        "e": "E904",
-        "source": "Sekret der Lackschildlaus"
-      },
-      {
-        "name": "Bienenwachs",
-        "e": "E901",
-        "source": "Von Bienen produziert"
-      },
-      {
-        "name": "Knochenphosphat",
-        "e": "E542",
-        "source": "Tierknochen"
-      },
-      {
-        "name": "Lanolin",
-        "e": null,
-        "source": "Schafwollfett"
-      },
-      {
-        "name": "Laktose",
-        "e": null,
-        "source": "Kuhmilch"
-      },
-      {
-        "name": "Kasein / Kaseinat",
-        "e": null,
-        "source": "Kuhmilchprotein"
-      },
-      {
-        "name": "Molke / Molkenpulver",
-        "e": null,
-        "source": "Kuhmilchfraktion"
-      },
-      {
-        "name": "Honig",
-        "e": null,
-        "source": "Von Bienen produziert"
-      }
-    ],
-    "ambiguous": [
-      {
-        "name": "Mono- und Diglyceride von Fettsäuren",
-        "e": "E471",
-        "source": "Kann tierisches oder pflanzliches Fett sein"
-      },
-      {
-        "name": "Fettsäureester",
-        "e": "E472",
-        "source": "Kann tierisches oder pflanzliches Fett sein"
-      },
-      {
-        "name": "Lecithine",
-        "e": "E322",
-        "source": "Normalerweise Soja, kann aber auch Ei sein"
-      },
-      {
-        "name": "Glycerin / Glycerin",
-        "e": "E422",
-        "source": "Kann tierisches Fett oder pflanzlich sein"
-      },
-      {
-        "name": "Lab / Chymosin",
-        "e": null,
-        "source": "Kann tierisch oder mikrobiell sein"
-      },
-      {
-        "name": "Enzyme",
-        "e": null,
-        "source": "Kann tierisch, mikrobiell oder pilzlich sein"
-      },
-      {
-        "name": "Natürliche Aromen",
-        "e": null,
-        "source": "Kann tierisch, pflanzlich oder synthetisch sein"
-      },
-      {
-        "name": "Cystein",
-        "e": "E920",
-        "source": "Kann aus Tierhaaren/-federn oder synthetisch sein"
-      },
-      {
-        "name": "Riboflavin",
-        "e": "E101",
-        "source": "Normalerweise synthetisch, kann aber aus Milch sein"
-      },
-      {
-        "name": "Natriumionosinat",
-        "e": "E631",
-        "source": "Normalerweise Fleisch/Fisch, kann aber mikrobiell sein"
-      },
-      {
-        "name": "Natriumguanylat",
-        "e": "E627",
-        "source": "Normalerweise Sardinen/Hefe"
-      },
-      {
-        "name": "Fettsäureester E470-E495",
-        "e": "E470-E495",
-        "source": "Kann tierisches oder pflanzliches Fett sein"
-      }
-    ]
-  },
-  "vegan_label_warning": {
-    "title": "Über 'vegane' Kennzeichnungen",
-    "body": "Es gibt keine gesetzliche Definition von 'vegan' im EU-, UK- oder US-Recht. Es handelt sich um eine Angabe zur Ernährungseignung, nicht um eine Sicherheitsgarantie. Ein als vegan gekennzeichnetes Produkt kann dennoch Zusatzstoffe tierischen Ursprungs enthalten, wenn der Hersteller die gesamte Lieferkette nicht überprüft hat."
-  },
-  "cross_contamination_warning": {
-    "title": "Über 'kann Spuren von Milch/Ei enthalten'",
-    "body": "Dieser Warnhinweis dient dem Allergieschutz – er weist nicht auf eine absichtlich zugesetzte Zutat hin. Die meisten veganen Verbraucher betrachten Kreuzkontaminationshinweise nicht als Ungültigmachung des veganen Status."
-  },
-  "cannot_title": "Was BOTIA nicht feststellen kann",
-  "cannot_1": "Ob dieses Produkt als vegan oder vegetarisch zertifiziert ist",
-  "cannot_2": "Die genaue Herkunft mehrdeutiger Zutaten – nur der Hersteller kann dies bestätigen",
-  "cannot_3": "Ob Verarbeitungshilfsstoffe tierischen Ursprungs verwendet, aber nicht deklariert wurden",
-  "source_note": "EU-Verordnung 1169/2011 · Codex Alimentarius · EFSA · Weitere Informationen unter botia-safefood.com"
+  "title": "Tierischen Ursprungs",
+  "subtitle": "Was auf dem Etikett steht. Und was nicht.",
+  "intro": "Einige Zutaten stammen von Tieren. Manche könnten. Und manche verstecken sich hinter technischen Namen, die nichts preisgeben. BOTIA liest das Etikett und kennzeichnet, was es findet – damit Sie entscheiden können.",
+  "why_title": "Warum das wichtig ist",
+  "why_body": "Ob Sie tierische Produkte aus ethischen, religiösen, ernährungsbedingten oder persönlichen Gründen meiden – das Etikett ist nicht immer auf Ihrer Seite. Eine Zutat kann tierischen Ursprungs sein und dennoch als Code, chemischer Name oder einfach als 'natürliches Aroma' erscheinen. BOTIA macht das sichtbar.",
+  "how_title": "Wie BOTIA tierischen Ursprung erkennt",
+  "how_confirmed": "Einige Zutaten stammen immer von Tieren – Gelatine, Karmin, Bienenwachs, Laktose, Honig. Wenn BOTIA diese findet, gibt es keine Unklarheit.",
+  "how_ambiguous": "Andere Zutaten können je nach Lieferkette des Herstellers von Tieren oder Pflanzen stammen – Mono- und Diglyceride, Glycerin, Lecithin, Enzyme, natürliche Aromen. Das Etikett sagt nicht, welche. Nur der Hersteller weiß es.",
+  "vegan_title": "Was ist mit 'vegan'-Kennzeichnungen?",
+  "vegan_body": "Es gibt keine gesetzliche Definition von 'vegan' im EU-, UK- oder US-Recht. Es ist eine freiwillige Angabe – keine regulierte Garantie. BOTIA liest die Zutatenliste, nicht das Marketing.",
+  "can_title": "BOTIA KANN",
+  "can_1": "Zutaten erkennen, die als tierischen Ursprungs bestätigt sind.",
+  "can_2": "Zutaten kennzeichnen, die tierischen Ursprungs sein können, wenn das Etikett dies nicht angibt.",
+  "can_3": "Sichtbar machen, was das Etikett unklar lässt.",
+  "cannot_title": "BOTIA KANN NICHT",
+  "cannot_1": "Zertifizieren, dass ein Produkt vegan oder vegetarisch ist.",
+  "cannot_2": "Den genauen Ursprung mehrdeutiger Zutaten bestätigen – nur der Hersteller kann das.",
+  "cannot_3": "Tierische Verarbeitungshilfsstoffe erkennen, die nicht auf dem Etikett aufgeführt sind.",
+  "closing": "BOTIA liest, was deklariert ist. Für vollständige Sicherheit kontaktieren Sie den Hersteller oder suchen Sie nach einem zertifizierten veganen Logo.",
+  "source_note": "EU-Verordnung 1169/2011 · Codex Alimentarius · Erfahren Sie mehr unter botia-safefood.com"
 }
