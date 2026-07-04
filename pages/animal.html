@@ -18,37 +18,37 @@
       border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
       padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
     }
-    .hero { padding: 40px 0 24px; }
-    .section-intro {
-      font-size: 1rem; color: #c0a08c; line-height: 1.7; margin-bottom: 20px;
-    }
+    .hero { padding: 32px 0 16px; }
+    .section { margin-bottom: 28px; }
+    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
+    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.6; margin-bottom: 16px; }
     .how-box {
-      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px;
-      margin-bottom: 16px;
+      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 18px;
+      margin-bottom: 12px;
     }
     .how-box.confirmed { border-left: 4px solid rgba(200, 100, 100, 0.6); }
     .how-box.ambiguous { border-left: 4px solid rgba(200, 160, 60, 0.6); }
-    .how-box h4 { margin-bottom: 8px; color: #f2e4dc; }
-    .how-box p { font-size: 0.9rem; color: #c0a08c; line-height: 1.7; }
+    .how-box h4 { margin-bottom: 6px; color: #f2e4dc; font-size: 0.95rem; }
+    .how-box p { font-size: 0.9rem; color: #c0a08c; line-height: 1.6; }
     .how-box a { color: #e6a06b; text-decoration: none; }
     .how-box a:hover { text-decoration: underline; }
     .can-cannot {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0;
     }
     @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
     .can-box, .cannot-box {
-      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px;
+      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 18px;
     }
     .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
     .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
-    .can-box h4, .cannot-box h4 { margin-bottom: 10px; }
+    .can-box h4, .cannot-box h4 { margin-bottom: 8px; font-size: 0.95rem; }
     .can-box li, .cannot-box li {
-      margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c;
+      margin-bottom: 4px; font-size: 0.85rem; color: #c0a08c;
       padding-left: 20px; position: relative; list-style: none;
     }
     .can-box li::before { content: "✅"; position: absolute; left: 0; }
     .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
-    .source-links { color: #c0a08c; font-size: 0.9rem; }
+    .source-links { color: #c0a08c; font-size: 0.85rem; }
     .source-links a { color: #e6a06b; text-decoration: none; }
     .source-links a:hover { text-decoration: underline; }
   </style>
@@ -105,10 +105,10 @@
       </div>
     </section>
 
-    <div class="section">
+    <section class="section">
       <h2 class="section-title" id="vegan_title">What about 'vegan' labels?</h2>
       <p class="section-intro" id="vegan_body">There is no legal definition of 'vegan' in EU, UK or US law. It is a voluntary claim — not a regulated guarantee. BOTIA reads the ingredient list, not the marketing.</p>
-    </div>
+    </section>
 
     <section class="section">
       <div class="can-cannot">
@@ -171,7 +171,6 @@
         .then(d => {
           Object.keys(d).forEach(id => {
             if (id === '_meta') return;
-            if (id === 'source_note') return;
             const el = document.getElementById(id);
             if (el) el.textContent = d[id];
           });
