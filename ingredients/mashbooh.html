@@ -5,46 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="page_title">BOTIA</title>
   <link rel="stylesheet" href="/botia/assets/botia-template.css">
+  <style>
+    .botia-icon { width: 64px !important; height: 64px !important; }
+    .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 8px; }
+    .source-links a { color: #e6a06b; text-decoration: none; }
+    .source-links a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
   <div class="botia-container">
 
     <header class="botia-header">
       <img id="module_icon" class="botia-icon" src="/botia/assets/BOTIA.png" alt="BOTIA">
-      <h1 id="title">[LOADING]</h1>
+      <h1 id="title">This ingredient is of uncertain origin under Islamic Law.</h1>
       <div id="header_trigger_container"></div>
     </header>
 
     <main>
       <section class="botia-card">
         <h2 id="label_detected">What BOTIA Detected</h2>
-        <p id="what_detected">[LOADING]</p>
+        <p id="what_detected">Ingredient detected whose halal status cannot be confirmed from the label alone. See BOTIA Note below for details.</p>
       </section>
 
       <section class="botia-card">
         <h2 id="label_matters">Why It Matters</h2>
-        <p id="why_it_matters">[LOADING]</p>
+        <p id="why_it_matters">Under Islamic Law, food additives derived from unlawful sources are also unlawful (Codex CAC/GL 24-1997). However, food labels worldwide do not require declaring the origin of many ingredients — flavourings, emulsifiers, enzymes, and gelatins may come from animal, plant, or alcohol-based sources without this being visible on the label.</p>
       </section>
 
       <section class="botia-card">
         <h2 id="label_cannot">What BOTIA Cannot Conclude</h2>
-        <p id="what_it_cannot_conclude">[LOADING]</p>
+        <p id="what_it_cannot_conclude">BOTIA cannot confirm or deny halal status. It signals that the origin is undeclared — the decision belongs to you and your religious authority.</p>
       </section>
 
       <section class="botia-card">
         <h2 id="label_sources">Source & Context</h2>
-        <p id="source_note" style="display:none;"></p>
-      <p class="source-links" style="color:#c0a08c; font-size:0.85rem; margin-top:8px;">
-        <a href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B24-1997%252FCXG_024e.pdf" target="_blank">Codex CAC/GL 24-1997</a> ·
-        <a href="https://smiic.org/en/project/24" target="_blank">OIC/SMIIC 1:2019</a>
-      </p>
-      <p style="display:none;">[LOADING]</p>
+        <p class="source-links">
+          <a href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B24-1997%252FCXG_024e.pdf" target="_blank">Codex CAC/GL 24-1997</a> ·
+          <a href="https://smiic.org/en/project/24" target="_blank">OIC/SMIIC 1:2019</a>
+        </p>
       </section>
 
       <section class="botia-note">
         <h3 id="label_note">📖 BOTIA Note</h3>
         <div id="ingredient_link_container"></div>
-        <p id="botia_disclaimer" class="botia-disclaimer"></p>
+        <p id="botia_disclaimer" class="botia-disclaimer">BOTIA informs based on the ingredients read from the label.</p>
         <p>Contact: <a id="botia_contact" href="mailto:soporte@botia-safefood.com">soporte@botia-safefood.com</a></p>
       </section>
     </main>
