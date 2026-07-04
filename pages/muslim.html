@@ -7,179 +7,96 @@
   <meta name="description" content="BOTIA helps you understand what a food label really says. The Muslim layer reads declared ingredients and crosses them with documented criteria." />
   <link rel="icon" type="image/png" href="/botia_jar_512.png" />
   <link rel="stylesheet" href="/botia-landing.css" />
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <style>
     .lang-switcher {
-      position: fixed;
-      top: 12px;
-      right: 16px;
-      z-index: 100;
+      position: fixed; top: 12px; right: 16px; z-index: 100;
     }
-    body[dir="rtl"] .lang-switcher {
-      right: auto;
-      left: 16px;
-    }
+    body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
     .lang-switcher select {
-      background: rgba(24, 13, 13, 0.96);
-      color: #f2e4dc;
-      border: 1px solid rgba(190, 122, 72, 0.42);
-      border-radius: 8px;
-      padding: 6px 10px;
-      font-size: 0.85rem;
-      cursor: pointer;
-    }
-    @media (max-width: 400px) {
-      .lang-switcher { top: 8px; right: 8px; }
-      .lang-switcher select { font-size: 0.75rem; padding: 4px 8px; }
+      background: rgba(24, 13, 13, 0.96); color: #f2e4dc;
+      border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
+      padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
     }
     .status-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin: 24px 0;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0;
     }
-    @media (max-width: 500px) {
-      .status-grid { grid-template-columns: 1fr; }
-    }
+    @media (max-width: 500px) { .status-grid { grid-template-columns: 1fr; } }
     .status-card {
-      background: rgba(24, 13, 13, 0.9);
-      border: 1px solid rgba(190, 122, 72, 0.3);
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      text-decoration: none;
-      color: #f2e4dc;
-      transition: border-color 0.2s;
+      background: rgba(24, 13, 13, 0.9); border: 1px solid rgba(190, 122, 72, 0.3);
+      border-radius: 12px; padding: 20px; text-align: center; text-decoration: none;
+      color: #f2e4dc; transition: border-color 0.2s;
     }
-    .status-card:hover {
-      border-color: rgba(190, 122, 72, 0.7);
-    }
-    .status-card img {
-      width: 48px;
-      height: 48px;
-      margin-bottom: 12px;
-    }
-    .status-card .status-name {
-      font-weight: 700;
-      font-size: 1.1rem;
-      margin-bottom: 6px;
-    }
-    .status-card .status-desc {
-      font-size: 0.85rem;
-      color: #c0a08c;
-      line-height: 1.4;
-    }
+    .status-card:hover { border-color: rgba(190, 122, 72, 0.7); }
+    .status-card img { width: 48px; height: 48px; margin-bottom: 12px; }
+    .status-card .status-name { font-weight: 700; font-size: 1.1rem; margin-bottom: 6px; }
+    .status-card .status-desc { font-size: 0.85rem; color: #c0a08c; line-height: 1.4; }
     .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-      font-size: 0.9rem;
+      width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem;
     }
-    .comparison-table th,
-    .comparison-table td {
-      border: 1px solid rgba(190, 122, 72, 0.2);
-      padding: 10px 12px;
-      text-align: left;
-      vertical-align: top;
+    .comparison-table th, .comparison-table td {
+      border: 1px solid rgba(190, 122, 72, 0.2); padding: 10px 12px;
+      text-align: left; vertical-align: top;
     }
     .comparison-table th {
-      background: rgba(24, 13, 13, 0.9);
-      color: #f2e4dc;
-      font-weight: 600;
+      background: rgba(24, 13, 13, 0.9); color: #f2e4dc; font-weight: 600;
     }
-    .comparison-table td {
-      color: #c0a08c;
-    }
+    .comparison-table td { color: #c0a08c; }
     .can-cannot {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin: 20px 0;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
     }
-    @media (max-width: 500px) {
-      .can-cannot { grid-template-columns: 1fr; }
-    }
+    @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
     .can-box, .cannot-box {
-      background: rgba(24, 13, 13, 0.9);
-      border-radius: 12px;
-      padding: 20px;
+      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px;
     }
-    .can-box {
-      border: 1px solid rgba(100, 180, 100, 0.4);
-    }
-    .cannot-box {
-      border: 1px solid rgba(180, 100, 100, 0.4);
-    }
-    .can-box h4, .cannot-box h4 {
-      margin-bottom: 10px;
-      font-size: 1rem;
-    }
-    .can-box ul, .cannot-box ul {
-      list-style: none;
-      padding: 0;
-    }
+    .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
+    .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
+    .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; }
+    .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
     .can-box li, .cannot-box li {
-      margin-bottom: 6px;
-      font-size: 0.9rem;
-      color: #c0a08c;
-      padding-left: 20px;
-      position: relative;
+      margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c;
+      padding-left: 20px; position: relative;
     }
-    .can-box li::before {
-      content: "✅";
-      position: absolute;
-      left: 0;
-    }
-    .cannot-box li::before {
-      content: "❌";
-      position: absolute;
-      left: 0;
-    }
+    .can-box li::before { content: "✅"; position: absolute; left: 0; }
+    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+    .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
+    .source-links a { color: #e6a06b; text-decoration: none; }
+    .source-links a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <div class="lang-switcher">
     <select id="lang-select" onchange="cambiarIdioma(this.value)">
-      <option value="en">English</option>
-      <option value="ar">العربية</option>
-      <option value="de">Deutsch</option>
-      <option value="es">Español</option>
-      <option value="fr">Français</option>
-      <option value="id">Bahasa Indonesia</option>
-      <option value="it">Italiano</option>
-      <option value="nl">Nederlands</option>
-      <option value="pl">Polski</option>
-      <option value="pt">Português</option>
-      <option value="ro">Română</option>
-      <option value="ru">Русский</option>
-      <option value="tr">Türkçe</option>
-      <option value="zh">中文</option>
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+      <option value="tr">Türkçe</option><option value="zh">中文</option>
     </select>
   </div>
 
   <div class="landing">
-    <!-- HERO -->
     <section class="hero">
       <img class="hero-logo" src="/botia/assets/muslim.png" alt="Muslim" />
-      <h1 id="muslim_title">Muslim Food Transparency</h1>
-      <p class="subtitle" id="muslim_subtitle">Read the label. Understand what it really says.</p>
-      <p class="description" id="muslim_desc">BOTIA reads declared ingredients and crosses them with documented criteria. It does not certify food — it makes the label transparent.</p>
+      <h1 id="title">Muslim Food Transparency</h1>
+      <p class="subtitle" id="subtitle">Read the label. Understand what it really says.</p>
+      <p class="description" id="description">BOTIA reads declared ingredients and crosses them with documented criteria. It does not certify food — it makes the label transparent.</p>
     </section>
 
-    <!-- THREE STATES -->
     <section class="section">
       <h2 class="section-title" id="states_title">How BOTIA classifies ingredients</h2>
       <div class="status-grid">
-        <a href="/halal.html" class="status-card">
+        <a href="/ingredients/halal.html" class="status-card">
           <img src="/botia/assets/Halal.png" alt="Halal" />
           <div class="status-name" id="halal_name">Halal</div>
           <div class="status-desc" id="halal_desc">No prohibited ingredients or doubtful origin detected on the label.</div>
         </a>
-        <a href="/haram.html" class="status-card">
+        <a href="/ingredients/haram.html" class="status-card">
           <img src="/botia/assets/Haram.png" alt="Haram" />
           <div class="status-name" id="haram_name">Haram</div>
           <div class="status-desc" id="haram_desc">The label declares clearly prohibited ingredients: pork derivatives, alcohol, or blood.</div>
         </a>
-        <a href="/mashbooh.html" class="status-card">
+        <a href="/ingredients/mashbooh.html" class="status-card">
           <img src="/botia/assets/BOTIA.png" alt="Mashbooh" />
           <div class="status-name" id="mashbooh_name">Mashbooh</div>
           <div class="status-desc" id="mashbooh_desc">The label does not confirm the origin or process. Uncertainty is the information.</div>
@@ -187,13 +104,11 @@
       </div>
     </section>
 
-    <!-- WHY MASHBOOH MATTERS -->
     <section class="callout">
       <h3 class="callout-title" id="mashbooh_why_title">Why "Mashbooh" is the most important state</h3>
       <p class="callout-body" id="mashbooh_why_body">Classifying an ingredient as Mashbooh is not an accusation — it is a signal of uncertainty. Food labels are legal documents before they are human explanations. When the label omits the origin of an additive or the method of slaughter, BOTIA makes that gap visible so you can decide.</p>
     </section>
 
-    <!-- WHY DOUBTS ARISE -->
     <section class="section">
       <h2 class="section-title" id="doubts_title">Why do these doubts arise?</h2>
       <table class="comparison-table">
@@ -222,7 +137,6 @@
       </table>
     </section>
 
-    <!-- CAN / CANNOT -->
     <section class="section">
       <h2 class="section-title" id="cancannot_title">What BOTIA can and cannot conclude</h2>
       <div class="can-cannot">
@@ -245,15 +159,17 @@
       </div>
     </section>
 
-    <!-- CLOSING -->
     <section class="closing">
       <p class="closing-claim" id="closing_claim">Transparency is not certification. It is the right to know what the label says — and what it does not.</p>
+      <p class="source-links">
+        Sources:
+        <a href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B24-1997%252FCXG_024e.pdf" target="_blank">Codex CAC/GL 24-1997</a> ·
+        <a href="https://www.smiic.org/en" target="_blank">OIC/SMIIC 1:2019</a>
+      </p>
       <a href="/" class="cta-button">← Back to BOTIA</a>
     </section>
-
   </div>
 
-  <!-- LOAD TRANSLATIONS -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const RTL_LANGS = ['ar'];
@@ -283,9 +199,9 @@
       fetch('/i18n/' + LANG + '/muslim.json')
         .then(res => res.ok ? res.json() : Promise.reject())
         .then(d => {
-          document.getElementById('muslim_title').textContent = d.title;
-          document.getElementById('muslim_subtitle').textContent = d.subtitle;
-          document.getElementById('muslim_desc').textContent = d.description;
+          document.getElementById('title').textContent = d.title;
+          document.getElementById('subtitle').textContent = d.subtitle;
+          document.getElementById('description').textContent = d.description;
           document.getElementById('states_title').textContent = d.states_title;
           document.getElementById('halal_name').textContent = d.halal.name;
           document.getElementById('halal_desc').textContent = d.halal.desc;
@@ -320,7 +236,6 @@
           document.getElementById('closing_claim').textContent = d.closing;
         })
         .catch(() => {
-          console.log('Translation fallback to English.');
           document.documentElement.lang = 'en';
         });
     });
