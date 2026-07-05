@@ -36,8 +36,10 @@
     }
     .card {
       background: rgba(24, 13, 13, 0.9); border: 1px solid rgba(190, 122, 72, 0.25);
-      border-radius: 12px; padding: 18px;
+      border-radius: 12px; padding: 18px; text-decoration: none; color: inherit;
+      transition: border-color 0.2s;
     }
+    .card:hover { border-color: rgba(190, 122, 72, 0.6); }
     .card h4 { font-size: 0.95rem; color: #f2e4dc; margin-bottom: 6px; }
     .card p { font-size: 0.85rem; color: #c0a08c; line-height: 1.5; }
     .related-grid {
@@ -133,18 +135,18 @@
       <h2 class="section-title" id="cards_title">Always-present risk context</h2>
       <p class="section-intro" id="cards_body">These three signals appear regardless of the ingredient list — because the risks they describe are structural, not ingredient-specific:</p>
       <div class="cards-grid">
-        <div class="card">
+        <a href="/ingredients/risk_endocrine.html" class="card">
           <h4 id="card_endocrine_title">Endocrine disruptors</h4>
           <p id="card_endocrine_body">Cumulative exposure to substances that interfere with the hormonal system. Women are particularly vulnerable due to higher body fat percentage and hormonal complexity.</p>
-        </div>
-        <div class="card">
+        </a>
+        <a href="/ingredients/risk_packaging.html" class="card">
           <h4 id="card_packaging_title">Packaging migrants</h4>
           <p id="card_packaging_body">Chemical compounds that transfer from packaging into food — BPA, phthalates, PFAS. They do not appear on the ingredient list but enter the body through food.</p>
-        </div>
-        <div class="card">
+        </a>
+        <a href="/ingredients/risk_fat_accumulation.html" class="card">
           <h4 id="card_fat_title">Fat-soluble accumulation</h4>
           <p id="card_fat_body">Lipophilic compounds accumulate in fatty tissue over years. They release during rapid fat loss, pregnancy, breastfeeding or menopause — in concentrated form.</p>
-        </div>
+        </a>
       </div>
     </section>
 
