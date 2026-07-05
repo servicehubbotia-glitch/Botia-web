@@ -108,7 +108,6 @@
       ro: { what_is_title: "Ce este", why_botia_title: "De ce BOTIA îl semnalează", can_title: "BOTIA POATE", cannot_title: "BOTIA NU POATE", sources_title: "Surse" },
       pl: { what_is_title: "Co to jest", why_botia_title: "Dlaczego BOTIA to sygnalizuje", can_title: "BOTIA MOŻE", cannot_title: "BOTIA NIE MOŻE", sources_title: "Źródła" }
     };
-
     document.addEventListener('DOMContentLoaded', function() {
       const RTL_LANGS = ['ar'];
       const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
@@ -130,7 +129,7 @@
       document.getElementById('cannot_title').textContent = labels.cannot_title;
       document.getElementById('sources_title').textContent = labels.sources_title;
 
-      fetch('/i18n/' + LANG + '/risk_packaging.json')
+      fetch('/i18n/' + LANG + '/packaging-migrants.json')
         .then(res => res.ok ? res.json() : Promise.reject())
         .then(d => {
           ['name','e_code','aliases','what_is','why_botia','can_1','can_2','cannot_1','cannot_2'].forEach(id => {
