@@ -108,11 +108,9 @@
       ro: { what_is_title: "Ce este", why_botia_title: "De ce BOTIA îl semnalează", can_title: "BOTIA POATE", cannot_title: "BOTIA NU POATE", sources_title: "Surse" },
       pl: { what_is_title: "Co to jest", why_botia_title: "Dlaczego BOTIA to sygnalizuje", can_title: "BOTIA MOŻE", cannot_title: "BOTIA NIE MOŻE", sources_title: "Źródła" }
     };
-
     document.addEventListener('DOMContentLoaded', function() {
       const RTL_LANGS = ['ar'];
       const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
-
       function getIdioma() {
         const params = new URLSearchParams(window.location.search);
         if (params.get('lang')) return params.get('lang');
@@ -120,18 +118,10 @@
         const nav = navigator.language.split('-')[0];
         return SOPORTADOS.includes(nav) ? nav : 'en';
       }
-      window.cambiarIdioma = function(lang) {
-        localStorage.setItem('botia-lang', lang);
-        window.location.reload();
-      };
-
+      window.cambiarIdioma = function(lang) { localStorage.setItem('botia-lang', lang); window.location.reload(); };
       const LANG = getIdioma();
       document.getElementById('lang-select').value = LANG;
-      if (RTL_LANGS.includes(LANG)) {
-        document.body.setAttribute('dir', 'rtl');
-        document.documentElement.lang = LANG;
-      }
-
+      if (RTL_LANGS.includes(LANG)) { document.body.setAttribute('dir', 'rtl'); document.documentElement.lang = LANG; }
       const labels = UI_LABELS[LANG] || UI_LABELS.en;
       document.getElementById('what_is_title').textContent = labels.what_is_title;
       document.getElementById('why_botia_title').textContent = labels.why_botia_title;
@@ -139,23 +129,14 @@
       document.getElementById('cannot_title').textContent = labels.cannot_title;
       document.getElementById('sources_title').textContent = labels.sources_title;
 
-      fetch('/i18n/' + LANG + '/risk_endocrine.json')
+      fetch('/i18n/' + LANG + '/endocrine-disruptors.json')
         .then(res => res.ok ? res.json() : Promise.reject())
         .then(d => {
           ['name','e_code','aliases','what_is','why_botia','can_1','can_2','cannot_1','cannot_2'].forEach(id => {
-            const el = document.getElementById(id);
-            if (el && d[id]) el.textContent = d[id];
+            const el = document.getElementById(id); if (el && d[id]) el.textContent = d[id];
           });
           if (d.module_icon) document.getElementById('module_icon').src = '/botia/assets/' + d.module_icon;
-          if (d.sources) {
-            const container = document.getElementById('sources_container');
-            d.sources.forEach(s => {
-              const li = document.createElement('li');
-              const a = document.createElement('a');
-              a.href = s.url; a.target = '_blank'; a.textContent = s.label;
-              li.appendChild(a); container.appendChild(li);
-            });
-          }
+          if (d.sources) { const container = document.getElementById('sources_container'); d.sources.forEach(s => { const li = document.createElement('li'); const a = document.createElement('a'); a.href = s.url; a.target = '_blank'; a.textContent = s.label; li.appendChild(a); container.appendChild(li); }); }
         })
         .catch(() => { document.documentElement.lang = 'en'; });
     });
