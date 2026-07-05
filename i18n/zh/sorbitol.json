@@ -1,0 +1,26 @@
+{
+  "name": "山梨糖醇",
+  "e_code": "E420",
+  "aliases": "E420, E420i, E420ii, 山梨糖醇, 山梨糖醇糖浆, D-葡萄糖醇, D-葡萄糖醇糖浆, 山梨糖醇, 山梨糖醇糖浆",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "甜味剂",
+    "E编号"
+  ],
+  "what_is": "一种低热量的多元醇糖醇，用作甜味剂和填充剂。",
+  "why_botia": "它标记此成分是因为高剂量摄入可能引起通便作用，并且在超加工产品中作为工业糖替代品使用。",
+  "can_1": "识别E420，并在含量超过10%时标记欧盟强制性警告‘过量食用可能产生通便作用’。",
+  "can_2": "触发甜味剂图层，并通知其低血糖生成特性。",
+  "cannot_1": "如果山梨糖醇添加量低于10%的警告阈值，则无法验证其确切百分比。",
+  "cannot_2": "无法确定山梨糖醇是由玉米淀粉还是小麦淀粉制造。",
+  "sources": [
+    {
+      "label": "欧盟委员会条例 (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+    },
+    {
+      "label": "欧盟条例 (EU) No 1169/2011",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32011R1169"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Carrageenan",
+  "e_code": "E407",
+  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
+  "module_icon": "texture.png",
+  "layers": [
+    "texture",
+    "enumbers"
+  ],
+  "what_is": "A hydrocolloid extracted from red seaweeds.",
+  "why_botia": "It flags it because it is an industrial gelling agent, often associated with gastrointestinal sensitivity, and undergoes heavy metal safety re-evaluations.",
+  "can_1": "Detect the presence of E407 or E407a and classify it under the texture layer.",
+  "can_2": "Provide warning details about low molecular weight fractions or processing aids.",
+  "cannot_1": "Verify the exact level of low molecular weight carrageenan contaminants below 50 kDa.",
+  "cannot_2": "Detect trace levels of extraction solvent residues used in its isolation.",
+  "sources": [
+    {
+      "label": "Commission Regulation (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+    }
+  ]
+}

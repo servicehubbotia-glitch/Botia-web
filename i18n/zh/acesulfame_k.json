@@ -1,0 +1,26 @@
+{
+  "name": "安赛蜜钾",
+  "e_code": "E950",
+  "aliases": "E950, 安赛蜜钾, 乙酰磺胺酸钾, 安赛蜜K, 乙酰磺胺酸K",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "enumbers"
+  ],
+  "what_is": "一种无热量的合成高强度甜味剂，甜度约为蔗糖的200倍。",
+  "why_botia": "它被标记是因为它是一种人工甜味剂，是超加工食品（NOVA第4组）的特征。",
+  "can_1": "识别扫描的配料标签上的E950或安赛蜜K。",
+  "can_2": "同时触发甜味剂和E编号信息层。",
+  "cannot_1": "评估安赛蜜K是否与阿斯巴甜混合以掩盖其金属后味。",
+  "cannot_2": "确定低于标准20毫克/千克纯度限值的有机杂质的存在。",
+  "sources": [
+    {
+      "label": "欧盟委员会法规 (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+    },
+    {
+      "label": "EFSA关于安赛蜜K重新评估的科学意见（2025年）",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9213"
+    }
+  ]
+}

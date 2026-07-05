@@ -1,0 +1,26 @@
+{
+  "name": "Sorbitol",
+  "e_code": "E420",
+  "aliases": "E420, E420i, E420ii, sorbitol, sirop de sorbitol, D-glucitol, sirop de D-glucitol, sorbitol, jarabe de sorbitol",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "enumbers"
+  ],
+  "what_is": "Un polyol édulcorant hypocalorique utilisé comme agent sucrant et de charge.",
+  "why_botia": "Il le signale car il peut induire des effets laxatifs à fortes doses et sert de substitut industriel du sucre dans les produits ultra-transformés.",
+  "can_1": "Identifier E420 et signaler l'avertissement obligatoire de l'UE 'une consommation excessive peut produire des effets laxatifs' si présent au-dessus de 10 %.",
+  "can_2": "Déclencher la couche édulcorant et notifier ses propriétés à faible indice glycémique.",
+  "cannot_1": "Vérifier le pourcentage exact de sorbitol ajouté s'il est inférieur au seuil d'avertissement de 10 %.",
+  "cannot_2": "Déterminer si le sorbitol a été fabriqué à partir d'amidon de maïs ou d'amidon de blé.",
+  "sources": [
+    {
+      "label": "Règlement (UE) n° 231/2012 de la Commission",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+    },
+    {
+      "label": "Règlement (UE) n° 1169/2011",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32011R1169"
+    }
+  ]
+}

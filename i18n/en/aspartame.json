@@ -1,0 +1,26 @@
+{
+  "name": "Aspartame",
+  "e_code": "E951",
+  "aliases": "E951, aspartame, aspartyl phenylalanine methyl ester, aspartamo",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "enumbers"
+  ],
+  "what_is": "An intense synthetic sweetener approximately 200 times sweeter than sugar.",
+  "why_botia": "It flags it because it requires a mandatory warning for phenylketonurics (contains phenylalanine) and represents a marker of ultra-processed foods (NOVA Group 4).",
+  "can_1": "Identify E951 or Aspartame and flag the mandatory warning 'contains a source of phenylalanine'.",
+  "can_2": "Classify the product as ultra-processed under the NOVA system.",
+  "cannot_1": "Measure the exact milligrams of aspartame added to the formulation.",
+  "cannot_2": "Verify if the aspartame has begun to degrade into diketopiperazine under high-temperature storage.",
+  "sources": [
+    {
+      "label": "Commission Regulation (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+    },
+    {
+      "label": "Regulation (EU) No 1169/2011",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32011R1169"
+    }
+  ]
+}

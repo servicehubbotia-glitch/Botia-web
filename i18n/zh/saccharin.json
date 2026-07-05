@@ -1,0 +1,26 @@
+{
+  "name": "糖精",
+  "e_code": "E954",
+  "aliases": "E954, 糖精, 糖精钠, 糖精钙, 糖精钾, 糖精, 糖精钠, 糖精钙, 糖精钾",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "enumbers"
+  ],
+  "what_is": "一种合成高强度甜味剂，甜度约为蔗糖的300至500倍。",
+  "why_botia": "它被标记是因为它是一种人工甜味剂，是超加工食品配方的特征。",
+  "can_1": "在扫描的配料列表中识别E954或其任何盐类。",
+  "can_2": "触发甜味剂和E编号信息层。",
+  "cannot_1": "验证糖精是否含有超过10毫克/千克的邻甲苯磺酰胺微量杂质。",
+  "cannot_2": "除非特别说明，否则验证制造商使用的是糖精钙还是糖精钠。",
+  "sources": [
+    {
+      "label": "欧盟委员会法规 (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+    },
+    {
+      "label": "EFSA关于甜味剂危害识别的科学协议 (2023)",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/1150e"
+    }
+  ]
+}
