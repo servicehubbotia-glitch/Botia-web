@@ -1,8 +1,20 @@
 {
-  "title": "Wykryto ukryty cukier",
-  "short_message": "Ten produkt zawiera składniki, które działają jak cukier lub szybkie węglowodany, nawet jeśli są inaczej oznaczone.",
-  "what_detected": "BOTIA znalazła: maltodekstrynę, syrop glukozowy, syrop kukurydziany, koncentrat soku owocowego, hydrolizowaną skrobię lub dekstrynę. Technicznie nie są to 'cukry', ale w organizmie rozkładają się jak cukry lub szybkie węglowodany.",
-  "why_it_matters": "Produkty oznaczone jako 'naturalne', 'fit' lub 'zdrowe' często używają tych składników, aby dodać słodyczy i tekstury, unikając słowa 'cukier'. Jeśli kontrolujesz spożycie cukru, one nadal się liczą. Jeśli podajesz ten produkt dzieciom, warto wiedzieć o tych ukrytych formach.",
-  "what_it_cannot_conclude": "BOTIA nie może powiedzieć, ile cukru/węglowodanów znajduje się w środku, czy produkt jest odpowiedni dla Twojej diety, ani czy spowoduje skok poziomu cukru we krwi. Sygnalizuje jedynie obecność składników podobnych do cukru.",
-  "source_note": "Wykrywanie na podstawie analizy listy składników. Jeśli martwisz się spożyciem cukru, sprawdź tabelę wartości odżywczych pod kątem 'węglowodanów' i 'cukrów'."
+  "title": "Ukryty cukier",
+  "subtitle": "Wolne cukry kryją się pod wieloma nazwami.",
+  "description": "Składnik nie musi nazywać się „cukier”, aby działać jak cukier w twoim organizmie. BOTIA czyta etykietę i sygnalizuje, co znajdzie.",
+  "why_title": "Dlaczego to ważne",
+  "why_body": "Produkty oznaczone jako „naturalne”, „fit” lub „zdrowe” często zawierają składniki, które zachowują się jak cukier, unikając jednocześnie tego słowa. Wolne cukry przyczyniają się do nadmiernego spożycia energii bez dostarczania konkretnych składników odżywczych. WHO zaleca utrzymanie spożycia wolnych cukrów poniżej 10% całkowitej dziennej energii – najlepiej poniżej 5%.",
+  "what_title": "Czego szuka BOTIA",
+  "what_body": "BOTIA wykrywa składniki klasyfikowane jako wolne cukry lub węglowodany równoważne cukrowi: maltodekstrynę, syrop glukozowy, syrop kukurydziany, koncentrat soku owocowego, hydrolizowaną skrobię, dekstrynę i inne. Technicznie nie są to „cukry”, ale twój organizm przetwarza je w ten sam sposób.",
+  "ingredients_title": "Powiązane składniki",
+  "can_title": "BOTIA MOŻE",
+  "can_1": "Wykrywać składniki klasyfikowane jako wolne cukry według kryteriów WHO.",
+  "can_2": "Sygnalizować węglowodany równoważne cukrowi ukryte pod technicznymi nazwami.",
+  "can_3": "Informować, gdy produkt reklamowany jako zdrowy zawiera te składniki.",
+  "cannot_title": "BOTIA NIE MOŻE",
+  "cannot_1": "Określić całkowitej zawartości cukru lub węglowodanów – sprawdź tabelę wartości odżywczych.",
+  "cannot_2": "Stwierdzić, czy ten produkt jest odpowiedni dla twojej diety lub czy podniesie poziom cukru we krwi.",
+  "cannot_3": "Zastąpić porady medycznej lub żywieniowej.",
+  "closing": "Aby ocenić całkowite spożycie, sprawdź tabelę wartości odżywczych w pozycji „Węglowodany – w tym cukry”.",
+  "source_note": "Wytyczne WHO: Spożycie cukrów u dorosłych i dzieci (2015) · Opinia naukowa EFSA dotycząca cukrów w diecie (2022)"
 }

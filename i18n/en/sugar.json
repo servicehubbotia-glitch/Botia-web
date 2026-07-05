@@ -1,8 +1,20 @@
 {
-  "title": "Hidden Sugar Detected",
-  "short_message": "This product contains ingredients that act like sugar or rapid carbohydrates, even if labeled differently.",
-  "what_detected": "BOTIA found: maltodextrin, glucose syrup, corn syrup, fruit juice concentrate, hydrolyzed starch, or dextrin. These are technically not 'sugar' but break down as sugars or fast carbs in your body.",
-  "why_it_matters": "Products labeled 'natural,' 'fit,' or 'healthy' often use these ingredients to add sweetness and texture while avoiding the word 'sugar.' If you're watching sugar intake, these still count. If you give this product to children, these hidden forms are worth knowing about.",
-  "what_it_cannot_conclude": "BOTIA cannot tell you how much sugar/carbs are inside, whether the product is suitable for your diet, or if it will spike your blood sugar. It only signals the presence of sugar-like ingredients.",
-  "source_note": "Detection based on ingredient list analysis. If concerned about sugar intake, check the nutrition table for 'carbohydrates' and 'sugars.'"
+  "title": "Hidden Sugar",
+  "subtitle": "Free sugars hide behind many names.",
+  "description": "An ingredient does not need to be called 'sugar' to act like sugar in your body. BOTIA reads the label and flags what it finds.",
+  "why_title": "Why this matters",
+  "why_body": "Products labelled 'natural', 'fit' or 'healthy' often use ingredients that behave like sugar while avoiding the word. Free sugars contribute to excess energy intake without providing specific nutrients. WHO recommends keeping free sugar intake below 10% of total daily energy — ideally below 5%.",
+  "what_title": "What BOTIA looks for",
+  "what_body": "BOTIA detects ingredients classified as free sugars or sugar-equivalent carbohydrates: maltodextrin, glucose syrup, corn syrup, fruit juice concentrate, hydrolyzed starch, dextrin, and others. They are technically not 'sugar' but your body processes them the same way.",
+  "ingredients_title": "Related ingredients",
+  "can_title": "BOTIA CAN",
+  "can_1": "Detect ingredients classified as free sugars by WHO criteria.",
+  "can_2": "Flag sugar-equivalent carbohydrates hidden behind technical names.",
+  "can_3": "Signal when a product marketed as healthy contains these ingredients.",
+  "cannot_title": "BOTIA CANNOT",
+  "cannot_1": "Tell you the total sugar or carbohydrate content — check the nutrition label.",
+  "cannot_2": "Determine whether this product suits your diet or will spike your blood sugar.",
+  "cannot_3": "Replace medical or nutritional advice.",
+  "closing": "To assess total intake, check the nutrition label under 'Carbohydrates — of which sugars'.",
+  "source_note": "WHO Guideline: Sugars intake for adults and children (2015) · EFSA Scientific Opinion on dietary sugars (2022)"
 }
