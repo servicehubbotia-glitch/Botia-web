@@ -1,0 +1,25 @@
+{
+  "name": "Maltodextrin",
+  "e_code": null,
+  "aliases": "maltodextrin, maltodextrina, maltodextrine, hydrogenated starch hydrolysate",
+  "module_icon": "Sugar.png",
+  "layers": [
+    "sugar"
+  ],
+  "what_is": "An ultra-processed carbohydrate powder made from the partial breakdown of starches.",
+  "why_botia": "It flags it because it is a rapid-acting sugar substitute and a clear marker of ultra-processing (NOVA Group 4) that affects blood glucose.",
+  "can_1": "Detect maltodextrin and classify the food as ultra-processed (NOVA 4).",
+  "can_2": "Trigger a Sugar layer warning for glycemic management.",
+  "cannot_1": "Determine the botanical starch source (e.g., corn, wheat, or tapioca) unless explicitly declared.",
+  "cannot_2": "Ascertain the glycemic index or the molecular chain length of the specific maltodextrin used.",
+  "sources": [
+    {
+      "label": "FAO/WHO NOVA Classification System (2019)",
+      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+    },
+    {
+      "label": "Regulation (EU) No 1169/2011",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32011R1169"
+    }
+  ]
+}
