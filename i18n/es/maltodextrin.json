@@ -1,0 +1,25 @@
+{
+  "name": "Maltodextrina",
+  "e_code": null,
+  "aliases": "maltodextrina, maltodextrina, maltodextrina, hidrolizado de almidón hidrogenado",
+  "module_icon": "Sugar.png",
+  "layers": [
+    "sugar"
+  ],
+  "what_is": "Un polvo de carbohidrato ultraprocesado elaborado a partir de la descomposición parcial de almidones.",
+  "why_botia": "Lo señala porque es un sustituto del azúcar de acción rápida y un marcador claro de ultraprocesamiento (NOVA Grupo 4) que afecta la glucosa en sangre.",
+  "can_1": "Detectar maltodextrina y clasificar el alimento como ultraprocesado (NOVA 4).",
+  "can_2": "Activar una advertencia de la capa de Azúcar para el control glucémico.",
+  "cannot_1": "Determinar la fuente botánica del almidón (p. ej., maíz, trigo o tapioca) a menos que se declare explícitamente.",
+  "cannot_2": "Determinar el índice glucémico o la longitud de la cadena molecular de la maltodextrina específica utilizada.",
+  "sources": [
+    {
+      "label": "Sistema de Clasificación NOVA de la FAO/OMS (2019)",
+      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+    },
+    {
+      "label": "Reglamento (UE) N.º 1169/2011",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32011R1169"
+    }
+  ]
+}
