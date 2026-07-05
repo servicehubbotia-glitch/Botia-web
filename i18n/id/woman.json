@@ -1,114 +1,31 @@
 {
-  "_meta": {
-    "file": "id.json",
-    "module": "woman",
-    "path": "botia/woman/i18n/id.json",
-    "lang": "id",
-    "last_updated": "2026-06-18"
-  },
-  "bpa": {
-    "title": "Kemasan plastik dapat melepaskan BPA ke dalam makanan ini.",
-    "what_detected": "Kemasan yang terkait dengan BPA terdeteksi. BPA tidak muncul dalam daftar bahan — tetapi bermigrasi ke makanan dari lapisan kaleng dan wadah plastik.",
-    "why_it_matters": "BPA meniru estrogen dalam tubuh dan terakumulasi dalam jaringan lemak. Wanita sangat rentan karena sensitivitas hormonal. Terkait dengan efek reproduksi dan gangguan tiroid (EFSA, 2023).",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur kadar BPA atau mengonfirmasi apakah produsen ini menggunakan lapisan bebas BPA. Ini hanya menandakan risiko paparan yang terdokumentasi.",
-    "source_note": "EFSA BPA re-evaluation (2023) · WHO Endocrine Disruptors Report · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "parabens_e214": {
-    "title": "Produk ini mengandung paraben — pengawet dengan aktivitas estrogenik.",
-    "what_detected": "Paraben (E214–E219) terdeteksi pada label. Pengawet ini dapat berinteraksi dengan reseptor hormon dalam tubuh.",
-    "why_it_matters": "Paraben telah terdeteksi dalam jaringan payudara. Paparan kumulatif — dari makanan dan kosmetik secara bersamaan — adalah yang paling dikhawatirkan oleh para peneliti. EFSA telah membatasi propil dan butil paraben dalam makanan bayi.",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur total paparan paraben harian Anda atau menilai interaksi dengan sumber kosmetik. Ini hanya menandakan keberadaan pada label.",
-    "source_note": "EFSA parabens opinion · WHO Endocrine Disruptors Report · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "e171": {
-    "title": "E171 — Titanium Dioksida terdeteksi. Dilarang sebagai aditif makanan di UE sejak 2022.",
-    "what_detected": "E171 (Titanium Dioksida) teridentifikasi pada label. Nanopartikelnya dapat menembus hambatan biologis.",
-    "why_it_matters": "EFSA (2021) menyimpulkan E171 tidak lagi dapat dianggap aman, dengan alasan genotoksisitas — potensi kerusakan DNA. Wanita usia subur dan selama kehamilan adalah kelompok prioritas yang menjadi perhatian.",
-    "what_it_cannot_conclude": "BOTIA tidak dapat menentukan ukuran partikel atau mengonfirmasi apakah ini produksi UE atau stok impor. Ini hanya menandakan keberadaan pada label.",
-    "source_note": "EFSA E171 safety opinion (2021) · EU Regulation 2022/63 · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "risk_endocrine": {
-    "title": "Produk ini mengandung aditif dengan aktivitas hormonal potensial.",
-    "what_detected": "Satu atau lebih aditif yang ditandai memiliki aktivitas pengganggu endokrin terdeteksi. Lihat Catatan BOTIA di bawah untuk rincian.",
-    "why_it_matters": "Pengganggu endokrin mengganggu sistem hormonal melalui paparan kumulatif tingkat rendah seiring waktu — bukan efek dramatis tunggal. Wanita sangat rentan: senyawa ini terakumulasi dalam jaringan lemak dan bertambah selama bertahun-tahun paparan harian (WHO/UNEP, 2012).",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur total beban pengganggu Anda atau memprediksi hasil individu. Kekhawatirannya bersifat kumulatif dan jangka panjang — produk ini saja bukan masalahnya.",
-    "source_note": "WHO/UNEP State of the Science of Endocrine Disrupting Chemicals · EFSA endocrine disruptor framework · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "risk_fat_accumulation": {
-    "title": "Produk ini mengandung aditif larut lemak yang terakumulasi dalam jaringan tubuh.",
-    "what_detected": "Aditif larut lemak terdeteksi. Senyawa ini larut dalam lemak — bukan air — dan terakumulasi dalam jaringan lemak selama bertahun-tahun paparan.",
-    "why_it_matters": "Wanita memiliki persentase lemak tubuh yang lebih tinggi daripada pria, yang berarti kapasitas penyimpanan lebih besar untuk senyawa ini. Selama penurunan lemak cepat, menyusui, atau menopause, racun yang tersimpan dapat dilepaskan ke aliran darah dalam bentuk terkonsentrasi — menyebabkan kelelahan, kabut otak, dan gangguan hormonal.",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur tingkat akumulasi pribadi Anda atau memprediksi waktu pelepasan. Ini hanya menandakan keberadaan aditif larut lemak.",
-    "source_note": "WHO persistent organic pollutants review · EFSA lipophilic contaminants · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "risk_packaging": {
-    "title": "Kemasan produk ini dapat melepaskan senyawa kimia ke dalam makanan.",
-    "what_detected": "Jenis kemasan yang terkait dengan risiko migrasi kimia terdeteksi. Senyawa ini — BPA, ftalat, PFAS — tidak muncul dalam daftar bahan tetapi berpindah ke makanan selama penyimpanan, transportasi, atau pemanasan.",
-    "why_it_matters": "Banyak migran kemasan adalah pengganggu endokrin. Sistem hormonal wanita lebih sensitif terhadap gangguan hormonal eksternal. Efeknya kumulatif — bertahun-tahun paparan harian bertambah (EFSA, WHO).",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur tingkat migran aktual atau mengonfirmasi senyawa spesifik mana yang ada. Ini hanya menandakan risiko migrasi kemasan yang terdokumentasi.",
-    "source_note": "EU Regulation 10/2011 · EFSA food contact materials · WHO BPA assessment · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "alcohol_woman": {
-    "title": "Produk ini mengandung alkohol — terkait dengan risiko kanker payudara tanpa dosis aman.",
-    "what_detected": "Alkohol (etanol) atau bahan turunan alkohol terdeteksi pada label. Lihat Catatan BOTIA di bawah untuk rincian.",
-    "why_it_matters": "WHO mengklasifikasikan alkohol sebagai karsinogen Grup 1. Bahkan 1 gram meningkatkan risiko kanker payudara pada wanita. Tidak ada ambang batas aman — risiko meningkat dengan setiap dosis.",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur kadar alkohol atau menilai risiko pribadi Anda. Ini hanya menandakan keberadaan.",
-    "source_note": "WHO IARC Group 1 carcinogen classification · World Cancer Research Fund · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "trans_fats": {
-    "title": "Produk ini mengandung lemak trans — risiko kardiovaskular lebih tinggi pada wanita daripada pria.",
-    "what_detected": "Asam lemak trans industri (iTFA) terdeteksi pada label. Lihat Catatan BOTIA di bawah untuk rincian.",
-    "why_it_matters": "Lemak trans merusak mikrovaskulatur — pembuluh darah terkecil. Penelitian menunjukkan wanita lebih rentan terhadap kerusakan ini daripada pria, dengan risiko penyakit jantung koroner yang lebih tinggi (WHO, 2023).",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur kadar lemak trans atau menilai risiko kardiovaskular pribadi Anda. Ini hanya menandakan keberadaan.",
-    "source_note": "WHO global trans fat elimination · EFSA dietary fats opinion · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "bha_e320": {
-    "title": "Produk ini mengandung BHA (E320) — kemungkinan pengganggu hormonal di bawah pengawasan internasional.",
-    "what_detected": "BHA (Butylated Hydroxyanisole / E320) terdeteksi pada label.",
-    "why_it_matters": "BHA memiliki aktivitas estrogenik dan anti-androgenik lemah. Ini diklasifikasikan sebagai karsinogen manusia yang mungkin (IARC Grup 2B) dan berada di bawah pengawasan onkologis internasional yang berkelanjutan.",
-    "what_it_cannot_conclude": "BOTIA tidak dapat menilai tingkat paparan pribadi Anda atau memprediksi hasil kesehatan individu. Ini hanya menandakan keberadaan pada label.",
-    "source_note": "IARC Monographs · EFSA BHA assessment · WHO endocrine disruptors · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "bht_e321": {
-    "title": "Produk ini mengandung BHT (E321) — dalam penyelidikan untuk peniruan hormonal.",
-    "what_detected": "BHT (Butylated Hydroxytoluene / E321) terdeteksi pada label.",
-    "why_it_matters": "BHT sedang diselidiki untuk peniruan hormonal — dapat mengganggu sistem endokrin. Sudah dibatasi dalam kosmetik di beberapa negara karena kekhawatiran ini.",
-    "what_it_cannot_conclude": "BOTIA tidak dapat menilai tingkat paparan pribadi Anda atau memprediksi hasil kesehatan individu. Ini hanya menandakan keberadaan pada label.",
-    "source_note": "EFSA BHT assessment · IARC Monographs · WHO endocrine disruptors · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "cadmium": {
-    "title": "Produk ini mungkin mengandung kadmium — logam berat yang terakumulasi dalam tubuh hingga 45 tahun.",
-    "what_detected": "Risiko paparan kadmium teridentifikasi. Wanita dengan kadar zat besi rendah menyerap kadmium secara signifikan lebih banyak daripada pria.",
-    "why_it_matters": "Kadmium terakumulasi di ginjal, tulang, dan organ reproduksi. Wanita menyerapnya lebih efisien karena kadar zat besi yang lebih rendah — kerentanan biologis. Tidak ada ambang batas aman (EFSA, 2021).",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur kadar kadmium dalam produk spesifik ini. Ini hanya menandakan risiko paparan yang terdokumentasi berdasarkan kategori produk.",
-    "source_note": "EFSA cadmium dietary exposure (2021) · WHO heavy metals · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "methylmercury": {
-    "title": "Produk ini mungkin mengandung metilmerkuri — neurotoksin yang terakumulasi dalam tubuh selama puluhan tahun.",
-    "what_detected": "Risiko paparan metilmerkuri teridentifikasi berdasarkan kategori produk. Terutama ditemukan pada ikan dan makanan laut.",
-    "why_it_matters": "Metilmerkuri menembus sawar plasenta dan darah-otak. Perkembangan neurokognitif janin adalah risiko tertinggi. WHO dan EFSA merekomendasikan wanita hamil dan wanita usia subur untuk membatasi konsumsi ikan dengan merkuri tinggi.",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur kadar merkuri dalam produk spesifik ini. Ini hanya menandakan risiko paparan yang terdokumentasi berdasarkan kategori produk.",
-    "source_note": "EFSA methylmercury opinion · WHO mercury and health · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "lead": {
-    "title": "Produk ini mungkin mengandung timbal — tidak ada tingkat paparan yang aman.",
-    "what_detected": "Risiko paparan timbal teridentifikasi berdasarkan kategori produk.",
-    "why_it_matters": "Timbal menyebabkan kerusakan neurologis yang ireversibel. WHO dan EFSA mengonfirmasi tidak ada ambang batas aman — paparan apa pun membawa risiko. Anak-anak dan wanita usia subur adalah populasi paling rentan.",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur kadar timbal dalam produk spesifik ini. Ini hanya menandakan risiko paparan yang terdokumentasi berdasarkan kategori produk.",
-    "source_note": "EFSA lead dietary exposure · WHO lead poisoning fact sheet · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "dioxins_pcbs": {
-    "title": "Produk ini mungkin mengandung dioksin atau PCB — senyawa persisten yang terakumulasi dalam jaringan lemak.",
-    "what_detected": "Risiko paparan dioksin dan PCB teridentifikasi berdasarkan kategori produk. Terutama ditemukan pada ikan berlemak, daging, dan produk susu.",
-    "why_it_matters": "Dioksin dan PCB terakumulasi dalam lemak tubuh selama puluhan tahun dan dilepaskan selama kehamilan dan menyusui — berpindah langsung ke janin dan bayi. Terkait dengan gangguan kesuburan dan efek pada sistem kekebalan tubuh (EFSA, 2018).",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur kadar dioksin dalam produk spesifik ini. Ini hanya menandakan risiko paparan yang terdokumentasi berdasarkan kategori produk.",
-    "source_note": "EFSA dioxins and PCBs opinion (2018) · WHO dioxins fact sheet · Pelajari lebih lanjut di botia-safefood.com"
-  },
-  "phthalates": {
-    "title": "Produk ini mungkin mengandung ftalat — terkait dengan endometriosis dan gangguan hormonal.",
-    "what_detected": "Risiko paparan ftalat teridentifikasi. Ftalat bermigrasi dari kemasan plastik ke makanan — terutama makanan berlemak yang disimpan atau dipanaskan dalam plastik.",
-    "why_it_matters": "Ftalat adalah xenoestrogen — meniru estrogen dalam tubuh. Penelitian menghubungkan paparan kronis dengan endometriosis, penurunan kesuburan, dan gangguan siklus menstruasi. Wanita dengan endometriosis menunjukkan kadar ftalat yang secara signifikan lebih tinggi (EFSA, 2019).",
-    "what_it_cannot_conclude": "BOTIA tidak dapat mengukur kadar ftalat dalam produk spesifik ini. Ini hanya menandakan risiko paparan yang terdokumentasi berdasarkan jenis kemasan dan kategori produk.",
-    "source_note": "EFSA phthalates risk assessment (2019) · WHO endocrine disruptors · Pelajari lebih lanjut di botia-safefood.com"
-  }
+  "title": "Perempuan",
+  "subtitle": "Sains memiliki jenis kelamin. Label makanan tidak menyebutkannya.",
+  "description": "Tubuh perempuan merespons secara berbeda terhadap bahan makanan tertentu. Buktinya ada. Namun jarang tercantum di label. BOTIA mengungkapnya.",
+  "why_title": "Mengapa Perempuan ada di BOTIA",
+  "why_body": "Selama beberapa dekade, penelitian nutrisi dan toksikologi berfokus pada populasi umum — yang dalam praktiknya berarti pria dewasa. Kerentanan biologis spesifik perempuan kurang mendapat perhatian. Modul Perempuan BOTIA dibangun berdasarkan bukti yang memang ada: studi peer-review, opini EFSA, laporan WHO, dan klasifikasi IARC yang mendokumentasikan risiko berbeda bagi perempuan.",
+  "not_pregnancy_title": "Perempuan bukanlah tahap kehidupan",
+  "not_pregnancy_body": "Modul ini bukan tentang kehamilan. Bukan tentang peran sebagai ibu. Ini adalah lapisan bukti ilmiah yang menyoroti risiko terdokumentasi yang relevan dengan biologi perempuan — sensitivitas hormonal, persentase lemak tubuh yang lebih tinggi, kerentanan endokrin, dan paparan sistem reproduksi. Ini berlaku untuk semua perempuan, di segala usia.",
+  "two_types_title": "Dua jenis sinyal",
+  "two_types_body": "Modul Perempuan BOTIA bekerja dalam dua cara. Ketika bahan tertentu dengan risiko terdokumentasi bagi perempuan terdeteksi pada label, BOTIA langsung menandainya. Ketika tidak ada bahan spesifik yang ditemukan, BOTIA tetap menampilkan informasi risiko kontekstual — tentang kemasan, tentang paparan endokrin kumulatif, tentang senyawa yang larut dalam lemak — karena risiko ini tetap ada terlepas dari apa yang dinyatakan label.",
+  "ingredients_title": "Bahan yang ditandai BOTIA untuk perempuan",
+  "ingredients_body": "Bahan-bahan ini memiliki bukti terdokumentasi tentang risiko berbeda bagi biologi perempuan:",
+  "cards_title": "Konteks risiko yang selalu ada",
+  "cards_body": "Ketiga sinyal ini muncul terlepas dari daftar bahan — karena risiko yang dijelaskan bersifat struktural, bukan spesifik bahan:",
+  "card_endocrine_title": "Pengganggu endokrin",
+  "card_endocrine_body": "Paparan kumulatif terhadap zat yang mengganggu sistem hormonal. Perempuan sangat rentan karena persentase lemak tubuh yang lebih tinggi dan kompleksitas hormonal.",
+  "card_packaging_title": "Migran kemasan",
+  "card_packaging_body": "Senyawa kimia yang berpindah dari kemasan ke makanan — BPA, ftalat, PFAS. Mereka tidak muncul di daftar bahan tetapi masuk ke tubuh melalui makanan.",
+  "card_fat_title": "Akumulasi larut lemak",
+  "card_fat_body": "Senyawa lipofilik terakumulasi di jaringan lemak selama bertahun-tahun. Mereka dilepaskan selama penurunan lemak cepat, kehamilan, menyusui, atau menopause — dalam bentuk terkonsentrasi.",
+  "can_title": "BOTIA DAPAT",
+  "can_1": "Mendeteksi bahan dengan risiko berbeda terdokumentasi bagi perempuan.",
+  "can_2": "Menampilkan risiko kontekstual yang tidak muncul pada label.",
+  "can_3": "Menghubungkan bahan label dengan bukti EFSA, WHO, dan IARC yang spesifik bagi perempuan.",
+  "cannot_title": "BOTIA TIDAK DAPAT",
+  "cannot_1": "Mendiagnosis, menilai risiko pribadi, atau menggantikan saran medis.",
+  "cannot_2": "Mendeteksi kontaminan atau migran kemasan yang tidak dinyatakan pada label.",
+  "cannot_3": "Memberi tahu Anda apa yang harus dimakan atau dihindari — keputusan itu selalu milik Anda.",
+  "closing": "Sains itu ada. BOTIA membuatnya terlihat.",
+  "source_note": "WHO/UNEP State of the Science of Endocrine Disrupting Chemicals · EFSA BPA re-evaluation (2023) · IARC Group 1 classifications · EFSA phthalates risk assessment (2019)"
 }

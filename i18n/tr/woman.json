@@ -1,114 +1,31 @@
 {
-  "_meta": {
-    "file": "tr.json",
-    "module": "woman",
-    "path": "botia/woman/i18n/tr.json",
-    "lang": "tr",
-    "last_updated": "2026-06-18"
-  },
-  "bpa": {
-    "title": "Plastik ambalaj bu gıdaya BPA salabilir.",
-    "what_detected": "BPA ile ilişkili ambalaj tespit edildi. BPA içerik listelerinde görünmez — ancak konserve kaplamalarından ve plastik kaplardan gıdaya geçer.",
-    "why_it_matters": "BPA vücutta östrojeni taklit eder ve yağ dokusunda birikir. Kadınlar hormonal hassasiyet nedeniyle özellikle savunmasızdır. Üreme etkileri ve tiroid müdahalesi ile bağlantılıdır (EFSA, 2023).",
-    "what_it_cannot_conclude": "BOTIA BPA seviyelerini ölçemez veya bu üreticinin BPA içermeyen kaplamalar kullanıp kullanmadığını doğrulayamaz. Yalnızca belgelenmiş maruz kalma riskini belirtir.",
-    "source_note": "EFSA BPA re-evaluation (2023) · WHO Endocrine Disruptors Report · Daha fazla bilgi için botia-safefood.com"
-  },
-  "parabens_e214": {
-    "title": "Bu ürün paraben içerir — östrojenik aktiviteye sahip koruyucular.",
-    "what_detected": "Etikette parabenler (E214–E219) tespit edildi. Bu koruyucular vücuttaki hormon reseptörleriyle etkileşime girebilir.",
-    "why_it_matters": "Parabenler meme dokusunda tespit edilmiştir. Araştırmacıları en çok endişelendiren şey — gıda ve kozmetikten eşzamanlı olarak — kümülatif maruziyettir. EFSA, bebek gıdalarında propil ve butil parabenleri kısıtlamıştır.",
-    "what_it_cannot_conclude": "BOTIA toplam günlük paraben maruziyetinizi ölçemez veya kozmetik kaynaklarla etkileşimi değerlendiremez. Yalnızca etiketteki varlığı belirtir.",
-    "source_note": "EFSA parabens opinion · WHO Endocrine Disruptors Report · Daha fazla bilgi için botia-safefood.com"
-  },
-  "e171": {
-    "title": "E171 — Titanyum Dioksit tespit edildi. 2022'den beri AB'de gıda katkı maddesi olarak yasaklanmıştır.",
-    "what_detected": "Etikette E171 (Titanyum Dioksit) tespit edildi. Nanopartikülleri biyolojik bariyerleri geçebilir.",
-    "why_it_matters": "EFSA (2021), genotoksisite — potansiyel DNA hasarı — gerekçesiyle E171'in artık güvenli kabul edilemeyeceği sonucuna varmıştır. Doğurganlık çağındaki kadınlar ve hamilelik sırasındaki kadınlar öncelikli endişe grubudur.",
-    "what_it_cannot_conclude": "BOTIA parçacık boyutunu belirleyemez veya bunun AB üretimi mi yoksa ithal stok mu olduğunu doğrulayamaz. Yalnızca etiketteki varlığı belirtir.",
-    "source_note": "EFSA E171 safety opinion (2021) · EU Regulation 2022/63 · Daha fazla bilgi için botia-safefood.com"
-  },
-  "risk_endocrine": {
-    "title": "Bu ürün potansiyel hormonal aktiviteye sahip katkı maddeleri içerir.",
-    "what_detected": "Endokrin bozucu aktivite için işaretlenmiş bir veya daha fazla katkı maddesi tespit edildi. Ayrıntılar için aşağıdaki BOTIA Notuna bakın.",
-    "why_it_matters": "Endokrin bozucular, zaman içinde kümülatif, düşük seviyeli maruziyet yoluyla hormonal sisteme müdahale eder — tek bir dramatik etkiyle değil. Kadınlar özellikle savunmasızdır: bu bileşikler yağ dokusunda birikir ve yıllarca süren günlük maruziyetle katlanır (WHO/UNEP, 2012).",
-    "what_it_cannot_conclude": "BOTIA toplam bozucu yükünüzü ölçemez veya bireysel sonuçları tahmin edemez. Endişe kümülatif ve uzun vadelidir — bu ürün tek başına sorun değildir.",
-    "source_note": "WHO/UNEP State of the Science of Endocrine Disrupting Chemicals · EFSA endocrine disruptor framework · Daha fazla bilgi için botia-safefood.com"
-  },
-  "risk_fat_accumulation": {
-    "title": "Bu ürün vücut dokusunda biriken yağda çözünen katkı maddeleri içerir.",
-    "what_detected": "Yağda çözünen katkı maddeleri tespit edildi. Bu bileşikler suda değil, yağda çözünür ve yıllarca maruziyet boyunca yağ dokusunda birikir.",
-    "why_it_matters": "Kadınların vücut yağ yüzdesi erkeklerden daha yüksektir, bu da bu bileşikler için daha fazla depolama kapasitesi anlamına gelir. Hızlı yağ kaybı, emzirme veya menopoz sırasında depolanan toksinler konsantre formda kan dolaşımına salınabilir — yorgunluk, beyin sisi ve hormonal bozulmaya neden olur.",
-    "what_it_cannot_conclude": "BOTIA kişisel birikim seviyenizi ölçemez veya salınım zamanlamasını tahmin edemez. Yalnızca yağda çözünen katkı maddelerinin varlığını belirtir.",
-    "source_note": "WHO persistent organic pollutants review · EFSA lipophilic contaminants · Daha fazla bilgi için botia-safefood.com"
-  },
-  "risk_packaging": {
-    "title": "Bu ürünün ambalajı gıdaya kimyasal bileşikler salabilir.",
-    "what_detected": "Kimyasal geçiş riski ile ilişkili ambalaj türü tespit edildi. Bu bileşikler — BPA, ftalatlar, PFAS — içerik listelerinde görünmez, ancak depolama, nakliye veya ısıtma sırasında gıdaya geçer.",
-    "why_it_matters": "Ambalaj geçişlerinin çoğu endokrin bozucudur. Kadınların hormonal sistemleri dış hormonal müdahaleye karşı daha hassastır. Etkiler kümülatiftir — yıllarca süren günlük maruziyet birikir (EFSA, WHO).",
-    "what_it_cannot_conclude": "BOTIA gerçek geçiş seviyelerini ölçemez veya hangi spesifik bileşiklerin mevcut olduğunu doğrulayamaz. Yalnızca belgelenmiş ambalaj geçiş riskini belirtir.",
-    "source_note": "EU Regulation 10/2011 · EFSA food contact materials · WHO BPA assessment · Daha fazla bilgi için botia-safefood.com"
-  },
-  "alcohol_woman": {
-    "title": "Bu ürün alkol içerir — güvenli doz olmadan meme kanseri riski ile bağlantılıdır.",
-    "what_detected": "Etikette alkol (etanol) veya alkol türevi içerik tespit edildi. Ayrıntılar için aşağıdaki BOTIA Notuna bakın.",
-    "why_it_matters": "WHO alkolü Grup 1 kanserojen olarak sınıflandırır. 1 gram bile kadınlarda meme kanseri riskini artırır. Güvenli bir eşik yoktur — risk her dozla artar.",
-    "what_it_cannot_conclude": "BOTIA alkol içeriğini ölçemez veya kişisel riskinizi değerlendiremez. Yalnızca varlığı belirtir.",
-    "source_note": "WHO IARC Group 1 carcinogen classification · World Cancer Research Fund · Daha fazla bilgi için botia-safefood.com"
-  },
-  "trans_fats": {
-    "title": "Bu ürün trans yağlar içerir — kadınlarda erkeklere göre daha yüksek kardiyovasküler risk.",
-    "what_detected": "Etikette endüstriyel trans yağ asitleri (iTFA) tespit edildi. Ayrıntılar için aşağıdaki BOTIA Notuna bakın.",
-    "why_it_matters": "Trans yağlar mikro-damar sistemine — en küçük kan damarlarına — zarar verir. Araştırmalar kadınların bu hasara erkeklerden daha savunmasız olduğunu, daha yüksek koroner kalp hastalığı riski ile birlikte olduğunu göstermektedir (WHO, 2023).",
-    "what_it_cannot_conclude": "BOTIA trans yağ içeriğini ölçemez veya kişisel kardiyovasküler riskinizi değerlendiremez. Yalnızca varlığı belirtir.",
-    "source_note": "WHO global trans fat elimination · EFSA dietary fats opinion · Daha fazla bilgi için botia-safefood.com"
-  },
-  "bha_e320": {
-    "title": "Bu ürün BHA (E320) içerir — uluslararası gözetim altında olası bir hormonal bozucu.",
-    "what_detected": "Etikette BHA (Bütillenmiş Hidroksianisol / E320) tespit edildi.",
-    "why_it_matters": "BHA zayıf östrojenik ve anti-androjenik aktiviteye sahiptir. Olası insan kanserojeni (IARC Grup 2B) olarak sınıflandırılır ve uluslararası onkolojik gözetim altındadır.",
-    "what_it_cannot_conclude": "BOTIA kişisel maruziyet seviyenizi değerlendiremez veya bireysel sağlık sonuçlarını tahmin edemez. Yalnızca etiketteki varlığı belirtir.",
-    "source_note": "IARC Monographs · EFSA BHA assessment · WHO endocrine disruptors · Daha fazla bilgi için botia-safefood.com"
-  },
-  "bht_e321": {
-    "title": "Bu ürün BHT (E321) içerir — hormonal taklit açısından araştırılmaktadır.",
-    "what_detected": "Etikette BHT (Bütillenmiş Hidroksitoluen / E321) tespit edildi.",
-    "why_it_matters": "BHT hormonal taklit açısından araştırılmaktadır — endokrin sistemine müdahale edebilir. Bu endişeler nedeniyle birkaç ülkede kozmetikte zaten kısıtlanmıştır.",
-    "what_it_cannot_conclude": "BOTIA kişisel maruziyet seviyenizi değerlendiremez veya bireysel sağlık sonuçlarını tahmin edemez. Yalnızca etiketteki varlığı belirtir.",
-    "source_note": "EFSA BHT assessment · IARC Monographs · WHO endocrine disruptors · Daha fazla bilgi için botia-safefood.com"
-  },
-  "cadmium": {
-    "title": "Bu ürün kadmiyum içerebilir — vücutta 45 yıla kadar biriken ağır metal.",
-    "what_detected": "Kadmiyum maruziyet riski tespit edildi. Düşük demir seviyesine sahip kadınlar erkeklerden önemli ölçüde daha fazla kadmiyum emer.",
-    "why_it_matters": "Kadmiyum böbreklerde, kemiklerde ve üreme organlarında birikir. Kadınlar düşük demir seviyeleri nedeniyle onu daha verimli emer — biyolojik bir savunmasızlık. Güvenli bir eşik yoktur (EFSA, 2021).",
-    "what_it_cannot_conclude": "BOTIA bu spesifik üründeki kadmiyum seviyelerini ölçemez. Yalnızca ürün kategorisine dayalı belgelenmiş maruziyet riskini belirtir.",
-    "source_note": "EFSA cadmium dietary exposure (2021) · WHO heavy metals · Daha fazla bilgi için botia-safefood.com"
-  },
-  "methylmercury": {
-    "title": "Bu ürün metilcıva içerebilir — vücutta on yıllar boyunca biriken bir nörotoksin.",
-    "what_detected": "Ürün kategorisine dayalı metilcıva maruziyet riski tespit edildi. Esas olarak balık ve deniz ürünlerinde bulunur.",
-    "why_it_matters": "Metilcıva plasenta ve kan-beyin bariyerlerini geçer. Fetal nörobilişsel gelişim en yüksek risktir. WHO ve EFSA, hamile kadınlara ve doğurganlık çağındaki kadınlara yüksek cıvalı balık tüketimini sınırlamalarını önermektedir.",
-    "what_it_cannot_conclude": "BOTIA bu spesifik üründeki cıva seviyelerini ölçemez. Yalnızca ürün kategorisine dayalı belgelenmiş maruziyet riskini belirtir.",
-    "source_note": "EFSA methylmercury opinion · WHO mercury and health · Daha fazla bilgi için botia-safefood.com"
-  },
-  "lead": {
-    "title": "Bu ürün kurşun içerebilir — güvenli maruziyet seviyesi yoktur.",
-    "what_detected": "Ürün kategorisine dayalı kurşun maruziyet riski tespit edildi.",
-    "why_it_matters": "Kurşun geri dönüşü olmayan nörolojik hasara neden olur. WHO ve EFSA, güvenli bir eşik olmadığını — her maruziyetin risk taşıdığını doğrulamaktadır. Çocuklar ve doğurganlık çağındaki kadınlar en savunmasız nüfuslardır.",
-    "what_it_cannot_conclude": "BOTIA bu spesifik üründeki kurşun seviyelerini ölçemez. Yalnızca ürün kategorisine dayalı belgelenmiş maruziyet riskini belirtir.",
-    "source_note": "EFSA lead dietary exposure · WHO lead poisoning fact sheet · Daha fazla bilgi için botia-safefood.com"
-  },
-  "dioxins_pcbs": {
-    "title": "Bu ürün dioksin veya PCB içerebilir — yağ dokusunda biriken kalıcı bileşikler.",
-    "what_detected": "Ürün kategorisine dayalı dioksin ve PCB maruziyet riski tespit edildi. Esas olarak yağlı balık, et ve süt ürünlerinde bulunur.",
-    "why_it_matters": "Dioksinler ve PCB'ler on yıllar boyunca vücut yağında birikir ve hamilelik ve emzirme döneminde salınır — doğrudan fetüse ve bebeğe geçer. Doğurganlık bozuklukları ve bağışıklık sistemi etkileri ile bağlantılıdır (EFSA, 2018).",
-    "what_it_cannot_conclude": "BOTIA bu spesifik üründeki dioksin seviyelerini ölçemez. Yalnızca ürün kategorisine dayalı belgelenmiş maruziyet riskini belirtir.",
-    "source_note": "EFSA dioxins and PCBs opinion (2018) · WHO dioxins fact sheet · Daha fazla bilgi için botia-safefood.com"
-  },
-  "phthalates": {
-    "title": "Bu ürün ftalat içerebilir — endometriozis ve hormonal bozulma ile bağlantılıdır.",
-    "what_detected": "Ftalat maruziyet riski tespit edildi. Ftalatlar plastik ambalajdan gıdaya geçer — özellikle plastikte depolanan veya ısıtılan yağlı gıdalar.",
-    "why_it_matters": "Ftalatlar ksenoöstrojenlerdir — vücutta östrojeni taklit ederler. Araştırmalar kronik maruziyeti endometriozis, azalmış doğurganlık ve adet döngüsünün bozulmasıyla ilişkilendirmektedir. Endometriozisi olan kadınlar önemli ölçüde daha yüksek ftalat seviyeleri gösterir (EFSA, 2019).",
-    "what_it_cannot_conclude": "BOTIA bu spesifik üründeki ftalat seviyelerini ölçemez. Yalnızca ambalaj türüne ve ürün kategorisine dayalı belgelenmiş maruziyet riskini belirtir.",
-    "source_note": "EFSA phthalates risk assessment (2019) · WHO endocrine disruptors · Daha fazla bilgi için botia-safefood.com"
-  }
+  "title": "Kadın",
+  "subtitle": "Bilimin bir cinsiyeti var. Gıda etiketleri bundan bahsetmez.",
+  "description": "Kadın bedenleri bazı gıda bileşenlerine farklı tepki verir. Kanıtlar mevcut. Ancak bu kanıtlar nadiren etikete yansır. BOTIA bunu gün yüzüne çıkarır.",
+  "why_title": "BOTIA'da Kadın neden var",
+  "why_body": "On yıllar boyunca beslenme ve toksikoloji araştırmaları genel nüfusa odaklandı; bu da pratikte yetişkin erkekler anlamına geliyordu. Kadınların belirli biyolojik hassasiyetleri daha az ilgi gördü. BOTIA'nın Kadın modülü, mevcut olan kanıtlara dayanmaktadır: kadınlar için farklı riskleri belgeleyen hakemli çalışmalar, EFSA görüşleri, WHO raporları ve IARC sınıflandırmaları.",
+  "not_pregnancy_title": "Kadın bir yaşam evresi değildir",
+  "not_pregnancy_body": "Bu modül hamilelikle ilgili değildir. Annelikle ilgili değildir. Kadın biyolojisiyle ilgili belgelenmiş riskleri vurgulayan bilimsel bir kanıt katmanıdır: hormonal hassasiyet, daha yüksek vücut yağ yüzdesi, endokrin kırılganlığı ve üreme sistemi maruziyeti. Her yaştaki tüm kadınlar için geçerlidir.",
+  "two_types_title": "İki tür sinyal",
+  "two_types_body": "BOTIA'nın Kadın modülü iki şekilde çalışır. Etikette kadınlar için belgelenmiş risk taşıyan belirli bir bileşen tespit edildiğinde, BOTIA bunu doğrudan işaretler. Belirli bir bileşen bulunamadığında bile, BOTIA yine de bağlamsal risk bilgilerini sunar: ambalaj hakkında, kümülatif endokrin maruziyeti hakkında, yağda çözünen bileşikler hakkında; çünkü bu riskler etiketin beyan ettiğinden bağımsız olarak mevcuttur.",
+  "ingredients_title": "BOTIA'nın kadınlar için işaretlediği bileşenler",
+  "ingredients_body": "Bu bileşenler, kadın biyolojisi için farklı risk taşıdığına dair belgelenmiş kanıtlara sahiptir:",
+  "cards_title": "Her zaman mevcut risk bağlamı",
+  "cards_body": "Bu üç sinyal, bileşen listesinden bağımsız olarak görünür; çünkü tanımladıkları riskler yapısaldır, bileşene özgü değildir:",
+  "card_endocrine_title": "Endokrin bozucular",
+  "card_endocrine_body": "Hormonal sisteme müdahale eden maddelere kümülatif maruziyet. Kadınlar, daha yüksek vücut yağ yüzdesi ve hormonal karmaşıklık nedeniyle özellikle hassastır.",
+  "card_packaging_title": "Ambalaj göçmenleri",
+  "card_packaging_body": "Ambalajdan gıdaya geçen kimyasal bileşikler: BPA, ftalatlar, PFAS. Bileşen listesinde yer almazlar ancak gıda yoluyla vücuda girerler.",
+  "card_fat_title": "Yağda çözünen birikim",
+  "card_fat_body": "Lipofilik bileşikler yıllar boyunca yağ dokusunda birikir. Hızlı yağ kaybı, hamilelik, emzirme veya menopoz sırasında konsantre formda salınırlar.",
+  "can_title": "BOTIA YAPABİLİR",
+  "can_1": "Kadınlar için belgelenmiş farklı risk taşıyan bileşenleri tespit edebilir.",
+  "can_2": "Etikette yer almayan bağlamsal riskleri gün yüzüne çıkarabilir.",
+  "can_3": "Etiket bileşenlerini kadınlara özgü EFSA, WHO ve IARC kanıtlarıyla ilişkilendirebilir.",
+  "cannot_title": "BOTIA YAPAMAZ",
+  "cannot_1": "Teşhis koyamaz, kişisel risk değerlendirmesi yapamaz veya tıbbi tavsiyenin yerini alamaz.",
+  "cannot_2": "Etikette beyan edilmeyen kirleticileri veya ambalaj göçmenlerini tespit edemez.",
+  "cannot_3": "Size ne yemeniz veya nelerden kaçınmanız gerektiğini söyleyemez; bu karar her zaman size aittir.",
+  "closing": "Bilim mevcut. BOTIA onu görünür kılar.",
+  "source_note": "WHO/UNEP Endokrin Bozucu Kimyasalların Bilimsel Durumu · EFSA BPA yeniden değerlendirmesi (2023) · IARC Grup 1 sınıflandırmaları · EFSA ftalat risk değerlendirmesi (2019)"
 }
