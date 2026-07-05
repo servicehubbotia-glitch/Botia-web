@@ -4,290 +4,161 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BOTIA — Food Transparency</title>
-  <meta name="description" content="BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence." />
+  <meta name="description" content="BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence. Not fear. Not judgement. Just food information you can actually use." />
   <link rel="icon" type="image/png" href="/botia_jar_512.png" />
   <link rel="stylesheet" href="/botia-landing.css" />
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <style>
-    .lang-switcher {
-      position: fixed;
-      top: 12px;
-      right: 16px;
-      z-index: 100;
-    }
-    body[dir="rtl"] .lang-switcher {
-      right: auto;
-      left: 16px;
-    }
+    .lang-switcher { position: fixed; top: 12px; right: 16px; z-index: 100; }
+    body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
     .lang-switcher select {
-      background: rgba(24, 13, 13, 0.96);
-      color: #f2e4dc;
-      border: 1px solid rgba(190, 122, 72, 0.42);
-      border-radius: 8px;
-      padding: 6px 10px;
-      font-size: 0.85rem;
-      cursor: pointer;
+      background: rgba(24, 13, 13, 0.96); color: #f2e4dc;
+      border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
+      padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
     }
-    @media (max-width: 400px) {
-      .lang-switcher {
-        top: 8px;
-        right: 8px;
-      }
-      .lang-switcher select {
-        font-size: 0.75rem;
-        padding: 4px 8px;
-      }
+    .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
+    .hero { padding: 20px 0 10px; text-align: center; }
+    .hero img { width: 80px; height: 80px; margin-bottom: 16px; }
+    .hero h1 { font-size: 1.8rem; color: #f2e4dc; margin-bottom: 6px; }
+    .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
+    .description { font-size: 0.9rem; color: #8a8a8a; }
+    .section { margin-bottom: 28px; }
+    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
+    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; }
+    .modules-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px; margin: 16px 0;
     }
+    .module-card {
+      background: rgba(24, 13, 13, 0.9); border: 1px solid rgba(190, 122, 72, 0.25);
+      border-radius: 12px; padding: 20px; text-align: center; text-decoration: none;
+      color: #f2e4dc; transition: border-color 0.2s;
+    }
+    .module-card:hover { border-color: rgba(190, 122, 72, 0.6); }
+    .module-card img { width: 48px; height: 48px; margin-bottom: 10px; }
+    .module-card .card-title { font-weight: 700; font-size: 1rem; margin-bottom: 4px; color: #f2e4dc; }
+    .module-card .card-desc { font-size: 0.8rem; color: #8a8a8a; line-height: 1.4; }
+    .stats-box {
+      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 24px;
+      text-align: center; margin: 20px 0; border: 1px solid rgba(190, 122, 72, 0.2);
+    }
+    .stats-number { font-size: 3rem; font-weight: 800; color: #e6a06b; }
+    .stats-text { font-size: 0.9rem; color: #c0a08c; margin-top: 4px; }
+    .highlight-box {
+      background: rgba(24, 13, 13, 0.9); border-left: 4px solid rgba(190, 122, 72, 0.6);
+      border-radius: 8px; padding: 16px 20px; margin: 16px 0;
+    }
+    .highlight-box p { font-size: 0.9rem; color: #c0a08c; line-height: 1.5; }
+    .closing { text-align: center; padding: 20px 0; }
+    .cta-button {
+      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+      padding: 10px 24px; border-radius: 8px; text-decoration: none;
+      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+    }
+    .cta-button:hover { background: rgba(190,122,72,0.35); }
+    .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
+    .source-links a { color: #e6a06b; text-decoration: none; }
+    .source-links a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <!-- Language Switcher -->
   <div class="lang-switcher">
     <select id="lang-select" onchange="cambiarIdioma(this.value)">
-      <option value="en">English</option>
-      <option value="ar">العربية</option>
-      <option value="de">Deutsch</option>
-      <option value="es">Español</option>
-      <option value="fr">Français</option>
-      <option value="id">Bahasa Indonesia</option>
-      <option value="it">Italiano</option>
-      <option value="nl">Nederlands</option>
-      <option value="pl">Polski</option>
-      <option value="pt">Português</option>
-      <option value="ro">Română</option>
-      <option value="ru">Русский</option>
-      <option value="tr">Türkçe</option>
-      <option value="zh">中文</option>
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+      <option value="tr">Türkçe</option><option value="zh">中文</option>
     </select>
   </div>
 
   <div class="landing">
-
-    <!-- HERO -->
     <section class="hero">
       <img class="hero-logo" src="/botia_jar_512.png" alt="BOTIA" />
-      <h1 id="hero_title">You've read the label a hundred times.</h1>
-      <p class="subtitle" id="hero_subtitle">You still don't know what's in it.</p>
-      <p class="description" id="hero_description">Scientific evidence. Human language.</p>
-      <a href="#" class="cta-button" id="hero_cta_text">Download BOTIA</a>
-      <span class="cta-note" id="hero_cta_note">Available on Google Play soon</span>
+      <h1 id="title">You've read the label a hundred times.</h1>
+      <p class="subtitle" id="subtitle">You still don't know what's in it.</p>
+      <p class="description" id="description">Scientific evidence. Human language. BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific, regulatory, and transparency sources.</p>
     </section>
 
-    <!-- 72% IMPACT -->
-    <section class="stat-impact">
-      <div class="number" id="stat_number">72%</div>
-      <div class="headline" id="stat_headline">uncertain</div>
-      <p class="body" id="stat_body">In our first analysis of real supermarket products, 72% of results were uncertain — not because the ingredients were forbidden, but because the label simply didn't say enough to know.</p>
-      <p class="conclusion" id="stat_conclusion">This isn't a Halal problem, or a sugar problem, or a women's health problem. It's a transparency problem. And it affects everyone.</p>
-    </section>
+    <div class="stats-box">
+      <div class="stats-number" id="stats_number">72%</div>
+      <div class="stats-text" id="stats_text">uncertain — in our first analysis of real supermarket products, 72% of results were uncertain, not because the ingredients were forbidden, but because the label simply didn't say enough to know.</div>
+    </div>
 
-    <!-- TWO KINDS OF KNOWLEDGE -->
     <section class="section">
-      <h2 class="section-title" id="knowledge_title">Two kinds of knowledge</h2>
-
-      <div class="module-group">
-        <div class="module-group-label" id="evidence_label">Evidence-based modules</div>
-        <p class="module-group-desc" id="evidence_desc">Based on scientific and regulatory evidence from WHO, EFSA, FDA, Codex Alimentarius and other official sources.</p>
-        <div class="module-grid">
-          <a href="/pages/sugar.html" class="module-card">
-            <img src="/botia/assets/Sugar.png" alt="Sugar" />
-            <span id="mod_sugar">Sugar</span>
-          </a>
-          <a href="/pages/sweetener.html" class="module-card">
-            <img src="/botia/assets/sweeteners.png" alt="Sweeteners" />
-            <span id="mod_sweeteners">Sweeteners</span>
-          </a>
-          <a href="/pages/flavor.html" class="module-card">
-            <img src="/botia/assets/flavors.png" alt="Flavourings" />
-            <span id="mod_flavourings">Flavourings</span>
-          </a>
-          <a href="/pages/texture.html" class="module-card">
-            <img src="/botia/assets/texture.png" alt="Texture" />
-            <span id="mod_texture">Texture</span>
-          </a>
-          <a href="/pages/enumbers.html" class="module-card">
-            <img src="/botia/assets/enumbers.png" alt="E-numbers" />
-            <span id="mod_enumbers">E-numbers</span>
-          </a>
-          <a href="/pages/woman.html" class="module-card">
-            <img src="/botia/assets/mujer.png" alt="Woman" />
-            <span id="mod_woman">Woman</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="module-group">
-        <div class="module-group-label" id="choice_label">Choice-based modules</div>
-        <p class="module-group-desc" id="choice_desc">Support personal, ethical, religious, or dietary decisions. They do not tell people what to eat. They explain what the label makes visible — and what it does not.</p>
-        <div class="module-grid">
-          <a href="/pages/muslim.html" class="module-card">
-            <img src="/botia/assets/muslim.png" alt="Muslim" />
-            <span id="mod_muslim">Muslim</span>
-          </a>
-          <a href="/pages/animal.html" class="module-card">
-            <img src="/botia/assets/animal.png" alt="Animal" />
-            <span id="mod_animal">Animal</span>
-          </a>
-        </div>
+      <h2 class="section-title" id="modules_title">Explore BOTIA</h2>
+      <div class="modules-grid">
+        <a href="/pages/evidence.html" class="module-card">
+          <img src="/botia/assets/evidence.png" alt="Evidence" />
+          <div class="card-title" id="evidence_name">Evidence Layers</div>
+          <div class="card-desc" id="evidence_desc">Scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius</div>
+        </a>
+        <a href="/pages/woman.html" class="module-card">
+          <img src="/botia/assets/mujer.png" alt="Woman" />
+          <div class="card-title" id="woman_name">Woman</div>
+          <div class="card-desc" id="woman_desc">Scientific evidence specific to women's biology, when it exists</div>
+        </a>
+        <a href="/pages/animal.html" class="module-card">
+          <img src="/botia/assets/animal.png" alt="Animal" />
+          <div class="card-title" id="animal_name">Animal Origin</div>
+          <div class="card-desc" id="animal_desc">What the label says about animal-derived ingredients — and what it doesn't</div>
+        </a>
+        <a href="/pages/muslim.html" class="module-card">
+          <img src="/botia/assets/muslim.png" alt="Muslim" />
+          <div class="card-title" id="muslim_name">Muslim Choice</div>
+          <div class="card-desc" id="muslim_desc">Documented criteria for halal, haram, and mashbooh ingredients</div>
+        </a>
       </div>
     </section>
 
-    <!-- WOMAN CALLOUT -->
-    <section class="callout">
-      <h3 class="callout-title" id="woman_title">Woman is not a life stage</h3>
-      <p class="callout-body" id="woman_body">Woman is a scientific evidence layer. It does not mean pregnancy. It does not reduce women's health to reproduction. It highlights evidence relevant to women's biology when that evidence exists, and leaves it out when it does not.</p>
-    </section>
+    <div class="highlight-box">
+      <p id="highlight_text">BOTIA does not replace WHO, EFSA, the European Commission, FDA, or scientific literature. It translates complex food evidence into information that can be used while reading a label.</p>
+    </div>
 
-    <!-- HOW IT WORKS -->
-    <section class="section">
-      <h2 class="section-title" id="how_title">From evidence to everyday decisions</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <div class="step-title" id="step1_title">Scan</div>
-          <div class="step-desc" id="step1_desc">BOTIA reads the ingredient list from the label.</div>
-        </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <div class="step-title" id="step2_title">Detect</div>
-          <div class="step-desc" id="step2_desc">BOTIA identifies relevant signals organised into clear layers.</div>
-        </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <div class="step-title" id="step3_title">Understand</div>
-          <div class="step-desc" id="step3_desc">Each icon opens a simple explanation based on official evidence.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRANSPARENCY -->
-    <section class="section">
-      <h2 class="section-title" id="transparency_title">Transparency first</h2>
-      <div class="transparency-box">
-        <p id="transparency_body">BOTIA only informs based on the ingredients read from the label. It does not analyse the whole product. It does not certify food. It does not replace medical, religious, legal, or professional advice. It does not see what the label does not declare.</p>
-        <div class="highlight-quote" id="transparency_highlight">When BOTIA shows uncertainty, that uncertainty is part of the information.</div>
-      </div>
-    </section>
-
-    <!-- CLOSING -->
     <section class="closing">
-      <p class="closing-claim" id="closing_claim">Most apps tell you what to buy. BOTIA tells you what you're actually buying.</p>
-      <p class="closing-tagline" id="closing_tagline">You finally see what you're eating.</p>
-      <a href="#" class="cta-button" id="closing_cta_text">Download BOTIA</a>
-      <span class="cta-note" id="closing_cta_note">Google Play — Coming soon</span>
+      <p class="source-links">
+        <a href="https://www.who.int/publications/i/item/9789241549028" target="_blank">WHO Sugars (2015)</a> ·
+        <a href="https://www.who.int/publications/i/item/9789240073616" target="_blank">WHO Sweeteners (2023)</a> ·
+        <a href="https://www.efsa.europa.eu/en/topics/topic/food-additives" target="_blank">EFSA Additives</a>
+      </p>
     </section>
-
-    <!-- PRIVACY -->
-    <section class="privacy">
-      <div class="privacy-title" id="privacy_title">Privacy by design</div>
-      <p class="privacy-body" id="privacy_body">BOTIA analyses food labels, not people. It does not build personal food profiles or store your scans. Your Google account manages authentication. BOTIA only keeps the information strictly necessary to operate the service.</p>
-    </section>
-
   </div>
 
-  <!-- LOAD TRANSLATIONS -->
   <script>
-    const RTL_LANGS = ['ar'];
-    const MODULE_KEYS = ['mod_sugar','mod_sweeteners','mod_flavourings','mod_texture','mod_enumbers','mod_woman','mod_muslim','mod_animal'];
+    document.addEventListener('DOMContentLoaded', function() {
+      const RTL_LANGS = ['ar'];
+      const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
 
-    function getIdioma() {
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('lang')) return params.get('lang');
-      if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
-      const navLang = navigator.language.split('-')[0];
-      const soportados = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
-      return soportados.includes(navLang) ? navLang : 'en';
-    }
+      function getIdioma() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('lang')) return params.get('lang');
+        if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
+        const navLang = navigator.language.split('-')[0];
+        return SOPORTADOS.includes(navLang) ? navLang : 'en';
+      }
+      window.cambiarIdioma = function(lang) {
+        localStorage.setItem('botia-lang', lang);
+        window.location.reload();
+      };
 
-    function cambiarIdioma(lang) {
-      localStorage.setItem('botia-lang', lang);
-      window.location.reload();
-    }
+      const LANG = getIdioma();
+      document.getElementById('lang-select').value = LANG;
+      if (RTL_LANGS.includes(LANG)) {
+        document.body.setAttribute('dir', 'rtl');
+        document.documentElement.lang = LANG;
+      }
 
-    const LANG = getIdioma();
-    document.getElementById('lang-select').value = LANG;
-
-    if (RTL_LANGS.includes(LANG)) {
-      document.body.setAttribute('dir', 'rtl');
-      document.documentElement.lang = LANG;
-    }
-
-    fetch(`/i18n/${LANG}/landing.json`)
-      .then(res => {
-        if (!res.ok) throw new Error('Not found');
-        return res.json();
-      })
-      .then(data => {
-        const d = data.landing;
-
-        // Hero
-        document.getElementById('hero_title').textContent = d.hero.title;
-        document.getElementById('hero_subtitle').textContent = d.hero.subtitle;
-        document.getElementById('hero_description').textContent = d.hero.description;
-        document.getElementById('hero_cta_text').textContent = d.hero.cta.text;
-        document.getElementById('hero_cta_text').href = d.hero.cta.link;
-        document.getElementById('hero_cta_note').textContent = d.hero.cta.note;
-
-        // 72%
-        document.getElementById('stat_number').textContent = d.stat_72_percent.number;
-        document.getElementById('stat_headline').textContent = d.stat_72_percent.headline;
-        document.getElementById('stat_body').textContent = d.stat_72_percent.body;
-        document.getElementById('stat_conclusion').textContent = d.stat_72_percent.conclusion;
-
-        // Two kinds
-        document.getElementById('knowledge_title').textContent = d.two_kinds_of_knowledge.title;
-        document.getElementById('evidence_label').textContent = d.two_kinds_of_knowledge.evidence_based.label;
-        document.getElementById('evidence_desc').textContent = d.two_kinds_of_knowledge.evidence_based.description;
-        document.getElementById('choice_label').textContent = d.two_kinds_of_knowledge.choice_based.label;
-        document.getElementById('choice_desc').textContent = d.two_kinds_of_knowledge.choice_based.description;
-
-        // Module names
-        const evMods = d.two_kinds_of_knowledge.evidence_based.modules;
-        for (let i = 0; i < evMods.length && i < 6; i++) {
-          const el = document.getElementById(MODULE_KEYS[i]);
-          if (el) el.textContent = evMods[i].name;
-        }
-        const chMods = d.two_kinds_of_knowledge.choice_based.modules;
-        for (let i = 0; i < chMods.length && i < 2; i++) {
-          const el = document.getElementById(MODULE_KEYS[6 + i]);
-          if (el) el.textContent = chMods[i].name;
-        }
-
-        // Woman
-        document.getElementById('woman_title').textContent = d.woman_not_life_stage.title;
-        document.getElementById('woman_body').textContent = d.woman_not_life_stage.body;
-
-        // How it works
-        document.getElementById('how_title').textContent = d.how_it_works.title;
-        const stepsData = d.how_it_works.steps;
-        if (stepsData.length >= 3) {
-          document.getElementById('step1_title').textContent = stepsData[0].title;
-          document.getElementById('step1_desc').textContent = stepsData[0].description;
-          document.getElementById('step2_title').textContent = stepsData[1].title;
-          document.getElementById('step2_desc').textContent = stepsData[1].description;
-          document.getElementById('step3_title').textContent = stepsData[2].title;
-          document.getElementById('step3_desc').textContent = stepsData[2].description;
-        }
-
-        // Transparency
-        document.getElementById('transparency_title').textContent = d.transparency_first.title;
-        document.getElementById('transparency_body').textContent = d.transparency_first.body;
-        document.getElementById('transparency_highlight').textContent = d.transparency_first.highlight;
-
-        // Closing
-        document.getElementById('closing_claim').textContent = d.closing.claim;
-        document.getElementById('closing_tagline').textContent = d.closing.tagline;
-        document.getElementById('closing_cta_text').textContent = d.closing.cta.text;
-        document.getElementById('closing_cta_text').href = d.closing.cta.link;
-        document.getElementById('closing_cta_note').textContent = d.closing.cta.note;
-
-        // Privacy
-        document.getElementById('privacy_title').textContent = d.privacy.title;
-        document.getElementById('privacy_body').textContent = d.privacy.body;
-      })
-      .catch(err => {
-        console.log('Translation not available, showing English fallback.');
-        document.documentElement.lang = 'en';
-      });
+      fetch('/i18n/' + LANG + '/landing.json')
+        .then(res => res.ok ? res.json() : Promise.reject())
+        .then(d => {
+          Object.keys(d).forEach(id => {
+            if (id === '_meta') return;
+            const el = document.getElementById(id);
+            if (el) el.textContent = d[id];
+          });
+        })
+        .catch(() => { document.documentElement.lang = 'en'; });
+    });
   </script>
 </body>
 </html>
