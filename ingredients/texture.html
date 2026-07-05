@@ -1,50 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page_title">BOTIA</title>
-  <link rel="stylesheet" href="/botia/assets/botia-template.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOTIA — Texture Modifiers</title>
+  <meta name="description" content="Thickeners, stabilisers and emulsifiers change how food feels. BOTIA flags them as markers of ultra-processed food." />
+  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
+  <link rel="stylesheet" href="/botia-landing.css" />
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
+  <style>
+    .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
+    .lang-switcher { position: fixed; top: 12px; right: 16px; z-index: 100; }
+    body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
+    .lang-switcher select {
+      background: rgba(24, 13, 13, 0.96); color: #f2e4dc;
+      border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
+      padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
+    }
+    .hero { padding: 20px 0 10px; text-align: center; }
+    .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
+    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
+    .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
+    .description { font-size: 0.9rem; color: #8a8a8a; }
+    .section { margin-bottom: 28px; }
+    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
+    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; }
+    .related-grid {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px;
+    }
+    .related-grid a {
+      background: rgba(255, 255, 255, 0.06); padding: 8px 18px;
+      border-radius: 30px; border: 1px solid rgba(190, 122, 72, 0.3);
+      color: #ffd8bd; font-weight: 600; font-size: 0.9rem; text-decoration: none;
+      transition: 0.2s ease;
+    }
+    .related-grid a:hover { background: rgba(190, 122, 72, 0.2); border-color: #e6a06b; color: #fff; }
+    .can-cannot {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
+    }
+    @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
+    .can-box, .cannot-box {
+      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px;
+    }
+    .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
+    .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
+    .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
+    .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
+    .can-box li, .cannot-box li {
+      margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c;
+      padding-left: 20px; position: relative;
+    }
+    .can-box li::before { content: "✅"; position: absolute; left: 0; }
+    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+    .closing { text-align: center; padding: 20px 0; }
+    .closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 16px; }
+    .cta-button {
+      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+      padding: 10px 24px; border-radius: 8px; text-decoration: none;
+      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+    }
+    .cta-button:hover { background: rgba(190,122,72,0.35); }
+    .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
+    .source-links a { color: #e6a06b; text-decoration: none; }
+    .source-links a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
-  <div class="botia-container">
-    <header class="botia-header">
-      <img id="module_icon" class="botia-icon" src="/botia/assets/texture.png" alt="BOTIA">
-      <h1 id="title">[LOADING]</h1>
-      <div id="header_trigger_container"></div>
-    </header>
-    <main>
-      <section class="botia-card">
-        <h2 id="label_detected">What BOTIA Detected</h2>
-        <p id="what_detected">[LOADING]</p>
-      </section>
-      <section class="botia-card">
-        <h2 id="label_matters">Why It Matters</h2>
-        <p id="why_it_matters">[LOADING]</p>
-      </section>
-      <section class="botia-card">
-        <h2 id="label_cannot">What BOTIA Cannot Conclude</h2>
-        <p id="what_it_cannot_conclude">[LOADING]</p>
-      </section>
-      <section class="botia-card">
-        <h2 id="label_sources">Source & Context</h2>
-        <p id="source_note">[LOADING]</p>
-      </section>
-      <section class="botia-note">
-        <h3 id="label_note">📖 BOTIA Note</h3>
-        <div id="ingredient_link_container"></div>
-        <p id="botia_disclaimer" class="botia-disclaimer"></p>
-        <p>Contact: <a id="botia_contact" href="mailto:soporte@botia-safefood.com">soporte@botia-safefood.com</a></p>
-      </section>
-    </main>
-    <footer>
-      <p id="label_footer">BOTIA WebView · Transparent Food Intelligence</p>
-    </footer>
+  <div class="lang-switcher">
+    <select id="lang-select" onchange="cambiarIdioma(this.value)">
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+      <option value="tr">Türkçe</option><option value="zh">中文</option>
+    </select>
   </div>
-  <script src="/botia/assets/js/i18n-loader.js"></script>
+
+  <div class="landing">
+    <section class="hero">
+      <img class="hero-logo" src="/botia/assets/texture.png" alt="Texture">
+      <h1 id="title">Texture Modifiers</h1>
+      <p class="subtitle" id="subtitle">Industrial ingredients that change how food feels.</p>
+      <p class="description" id="description">Thickeners, stabilisers and emulsifiers are added to modify the consistency and structure of food. They serve an industrial function. BOTIA flags them as markers of ultra-processed food.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="why_title">Why this matters</h2>
+      <p class="section-intro" id="why_body">Minimally processed foods do not contain texture modifiers. Their presence signals that a product has been significantly reformulated from its basic ingredients. According to the NOVA classification system (FAO/WHO, 2019), texture modifiers are one of the defining markers of ultra-processed food.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="what_title">What BOTIA looks for</h2>
+      <p class="section-intro" id="what_body">BOTIA detects ingredients classified as thickeners, stabilisers or emulsifiers: xanthan gum (E415), carrageenan (E407), guar gum (E412), locust bean gum (E410), gellan gum (E418), mono- and diglycerides (E471), lecithins (E322), and others. Some — like carrageenan — are under active scientific review for their effects on gut health.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="ingredients_title">Related ingredients</h2>
+      <div class="related-grid">
+        <a href="/ingredients/xanthan_gum.html">Xanthan gum (E415)</a>
+        <a href="/ingredients/carrageenan.html">Carrageenan (E407)</a>
+        <a href="/ingredients/guar_gum.html">Guar gum (E412)</a>
+        <a href="/ingredients/e471.html">E471</a>
+        <a href="/ingredients/lecithins.html">Lecithins (E322)</a>
+        <a href="/ingredients/konjac.html">Konjac (E425)</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="can-cannot">
+        <div class="can-box">
+          <h4 id="can_title">BOTIA CAN</h4>
+          <ul>
+            <li id="can_1">Detect texture modifiers declared on the label.</li>
+            <li id="can_2">Flag ingredients under active scientific review for gut health effects.</li>
+            <li id="can_3">Signal ultra-processed food markers based on NOVA classification.</li>
+          </ul>
+        </div>
+        <div class="cannot-box">
+          <h4 id="cannot_title">BOTIA CANNOT</h4>
+          <ul>
+            <li id="cannot_1">Tell you whether this product is harmful to your gut personally.</li>
+            <li id="cannot_2">Quantify your exposure to texture modifiers across your diet.</li>
+            <li id="cannot_3">Replace medical or nutritional advice.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="closing-claim" id="closing">For more detail on specific texture modifiers, explore the ingredient pages linked above.</p>
+      <p class="source-links">
+        Sources:
+        <a href="https://www.fao.org/publications/card/en/c/CA5644EN/" target="_blank">NOVA Classification (FAO, 2019)</a> ·
+        <a href="https://www.efsa.europa.eu/en/topics/topic/food-additives" target="_blank">EFSA Food Additives</a> ·
+        <a href="https://eur-lex.europa.eu/eli/reg/2008/1333/oj" target="_blank">EU 1333/2008</a>
+      </p>
+      <a href="/pages/evidence.html" class="cta-button">← Back to Evidence Layers</a>
+    </section>
+  </div>
+
   <script>
-    const lang = BOTIA.detectLanguage();
-    BOTIA.loadTranslations('general', 'texture', lang);
+    document.addEventListener('DOMContentLoaded', function() {
+      const RTL_LANGS = ['ar'];
+      const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+
+      function getIdioma() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('lang')) return params.get('lang');
+        if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
+        const navLang = navigator.language.split('-')[0];
+        return SOPORTADOS.includes(navLang) ? navLang : 'en';
+      }
+      window.cambiarIdioma = function(lang) {
+        localStorage.setItem('botia-lang', lang);
+        window.location.reload();
+      };
+
+      const LANG = getIdioma();
+      document.getElementById('lang-select').value = LANG;
+      if (RTL_LANGS.includes(LANG)) {
+        document.body.setAttribute('dir', 'rtl');
+        document.documentElement.lang = LANG;
+      }
+
+      fetch('/i18n/' + LANG + '/texture.json')
+        .then(res => res.ok ? res.json() : Promise.reject())
+        .then(d => {
+          Object.keys(d).forEach(id => {
+            if (id === '_meta') return;
+            const el = document.getElementById(id);
+            if (el) el.textContent = d[id];
+          });
+        })
+        .catch(() => { document.documentElement.lang = 'en'; });
+    });
   </script>
 </body>
 </html>
