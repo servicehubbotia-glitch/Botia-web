@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOTIA — Evidence Layers</title>
+  <meta name="description" content="BOTIA evidence-based modules are grounded in scientific and regulatory data from WHO, EFSA, FDA, and Codex Alimentarius." />
+  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
+  <link rel="stylesheet" href="/botia-landing.css" />
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
+  <style>
+    .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
+    .lang-switcher { position: fixed; top: 12px; right: 16px; z-index: 100; }
+    body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
+    .lang-switcher select {
+      background: rgba(24, 13, 13, 0.96); color: #f2e4dc;
+      border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
+      padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
+    }
+    .hero { padding: 20px 0 10px; text-align: center; }
+    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
+    .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
+    .description { font-size: 0.9rem; color: #8a8a8a; }
+    .section { margin-bottom: 28px; }
+    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
+    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; }
+    .evidence-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px; margin: 20px 0;
+    }
+    .evidence-card {
+      background: rgba(24, 13, 13, 0.9); border: 1px solid rgba(190, 122, 72, 0.25);
+      border-radius: 12px; padding: 20px; text-align: center; text-decoration: none;
+      color: #f2e4dc; transition: border-color 0.2s;
+    }
+    .evidence-card:hover { border-color: rgba(190, 122, 72, 0.6); }
+    .evidence-card img { width: 48px; height: 48px; margin-bottom: 10px; }
+    .evidence-card .card-title { font-weight: 700; font-size: 1rem; margin-bottom: 4px; color: #f2e4dc; }
+    .evidence-card .card-desc { font-size: 0.8rem; color: #8a8a8a; line-height: 1.4; }
+    .can-cannot {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
+    }
+    @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
+    .can-box, .cannot-box {
+      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px;
+    }
+    .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
+    .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
+    .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
+    .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
+    .can-box li, .cannot-box li {
+      margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c;
+      padding-left: 20px; position: relative;
+    }
+    .can-box li::before { content: "✅"; position: absolute; left: 0; }
+    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+    .closing { text-align: center; padding: 20px 0; }
+    .cta-button {
+      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+      padding: 10px 24px; border-radius: 8px; text-decoration: none;
+      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+    }
+    .cta-button:hover { background: rgba(190,122,72,0.35); }
+    .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
+    .source-links a { color: #e6a06b; text-decoration: none; }
+    .source-links a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="lang-switcher">
+    <select id="lang-select" onchange="cambiarIdioma(this.value)">
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+      <option value="tr">Türkçe</option><option value="zh">中文</option>
+    </select>
+  </div>
+
+  <div class="landing">
+    <section class="hero">
+      <h1 id="title">Evidence Layers</h1>
+      <p class="subtitle" id="subtitle">What the label reveals. Grounded in science.</p>
+      <p class="description" id="description">These modules are based on scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius. They explain what the evidence says, what BOTIA can detect, and what cannot be concluded from a label alone.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="why_title">Why evidence matters</h2>
+      <p class="section-intro" id="why_body">Food labels are legal documents before they are human explanations. An ingredient can be authorised, declared correctly, and still carry documented health implications that never appear on the packaging. BOTIA connects what the label says to what the science says.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="what_title">What 'evidence' means in BOTIA</h2>
+      <p class="section-intro" id="what_body">BOTIA does not use opinions or trends. Every signal in these modules is grounded in published guidelines or scientific opinions from WHO, EFSA, FDA, IARC, or Codex Alimentarius. When the evidence is under review or contested, BOTIA says so. Uncertainty is part of the information.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="modules_title">Explore by evidence layer</h2>
+      <div class="evidence-grid">
+        <a href="/pages/sugar.html" class="evidence-card">
+          <img src="/botia/assets/Sugar.png" alt="Sugar" />
+          <div class="card-title" id="sugar_name">Sugar</div>
+          <div class="card-desc" id="sugar_desc">Free sugars and fast-absorbing carbohydrates hidden behind technical names.</div>
+        </a>
+        <a href="/pages/sweetener.html" class="evidence-card">
+          <img src="/botia/assets/sweeteners.png" alt="Sweeteners" />
+          <div class="card-title" id="sweetener_name">Sweeteners</div>
+          <div class="card-desc" id="sweetener_desc">Non-sugar sweeteners — WHO advises against them for weight control.</div>
+        </a>
+        <a href="/pages/texture.html" class="evidence-card">
+          <img src="/botia/assets/texture.png" alt="Texture" />
+          <div class="card-title" id="texture_name">Texture</div>
+          <div class="card-desc" id="texture_desc">Thickeners, stabilisers and emulsifiers — markers of ultra-processed food.</div>
+        </a>
+        <a href="/pages/flavor.html" class="evidence-card">
+          <img src="/botia/assets/flavors.png" alt="Flavourings" />
+          <div class="card-title" id="flavor_name">Flavourings</div>
+          <div class="card-desc" id="flavor_desc">Natural and artificial flavour enhancers added when base ingredients lack taste.</div>
+        </a>
+        <a href="/pages/enumbers.html" class="evidence-card">
+          <img src="/botia/assets/enumbers.png" alt="E-numbers" />
+          <div class="card-title" id="enumbers_name">E-numbers</div>
+          <div class="card-desc" id="enumbers_desc">EU authorised food additives — authorised does not always mean without debate.</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="difference_title">Evidence vs personal choice</h2>
+      <p class="section-intro" id="difference_body">Evidence modules signal documented scientific concern. They do not tell you what to eat. Other BOTIA modules — Muslim Choice and Animal Origin — support personal, ethical or religious decisions. The two families are separate. Both are transparent.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="how_title">How BOTIA uses evidence</h2>
+      <p class="section-intro" id="how_1">Each module connects a label ingredient to official scientific and regulatory sources.</p>
+      <p class="section-intro" id="how_2">BOTIA signals presence, explains what the evidence says, and clearly states what cannot be concluded from a label alone.</p>
+      <p class="section-intro" id="how_3">When the evidence is inconclusive or under active review, BOTIA says so. Honest uncertainty is better than false confidence.</p>
+    </section>
+
+    <section class="section">
+      <div class="can-cannot">
+        <div class="can-box">
+          <h4 id="can_title">BOTIA CAN</h4>
+          <ul>
+            <li id="can_1">Detect ingredients flagged in official scientific guidelines.</li>
+            <li id="can_2">Explain what WHO, EFSA or FDA say about each ingredient.</li>
+            <li id="can_3">Signal when evidence is under review or contested.</li>
+          </ul>
+        </div>
+        <div class="cannot-box">
+          <h4 id="cannot_title">BOTIA CANNOT</h4>
+          <ul>
+            <li id="cannot_1">Tell you whether this product is safe for you personally.</li>
+            <li id="cannot_2">Quantify your exposure or calculate cumulative risk.</li>
+            <li id="cannot_3">Replace medical, nutritional or professional advice.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="source-links">
+        <a href="https://www.who.int/publications/i/item/9789241549028" target="_blank">WHO Sugars Guideline (2015)</a> ·
+        <a href="https://www.who.int/publications/i/item/9789240073616" target="_blank">WHO Non-Sugar Sweeteners (2023)</a> ·
+        <a href="https://www.efsa.europa.eu/en/topics/topic/food-additives" target="_blank">EFSA Food Additives</a>
+      </p>
+      <a href="/" class="cta-button">← Back to BOTIA</a>
+    </section>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const RTL_LANGS = ['ar'];
+      const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+
+      function getIdioma() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('lang')) return params.get('lang');
+        if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
+        const navLang = navigator.language.split('-')[0];
+        return SOPORTADOS.includes(navLang) ? navLang : 'en';
+      }
+      window.cambiarIdioma = function(lang) {
+        localStorage.setItem('botia-lang', lang);
+        window.location.reload();
+      };
+
+      const LANG = getIdioma();
+      document.getElementById('lang-select').value = LANG;
+      if (RTL_LANGS.includes(LANG)) {
+        document.body.setAttribute('dir', 'rtl');
+        document.documentElement.lang = LANG;
+      }
+
+      fetch('/i18n/' + LANG + '/evidence.json')
+        .then(res => res.ok ? res.json() : Promise.reject())
+        .then(d => {
+          Object.keys(d).forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = d[id];
+          });
+        })
+        .catch(() => { document.documentElement.lang = 'en'; });
+    });
+  </script>
+</body>
+</html>
