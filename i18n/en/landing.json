@@ -1,86 +1,17 @@
 {
-  "landing": {
-    "hero": {
-      "logo": "botia_jar_512.png",
-      "title": "You've read the label a hundred times.",
-      "subtitle": "You still don't know what's in it.",
-      "description": "Scientific evidence. Human language.",
-      "cta": {
-        "text": "Download BOTIA",
-        "link": "#",
-        "note": "Available on Google Play soon"
-      }
-    },
-    "stat_72_percent": {
-      "number": "72%",
-      "headline": "uncertain",
-      "body": "In our first analysis of real supermarket products, 72% of results were uncertain — not because the ingredients were forbidden, but because the label simply didn't say enough to know.",
-      "conclusion": "This isn't a Halal problem, or a sugar problem, or a women's health problem. It's a transparency problem. And it affects everyone."
-    },
-    "two_kinds_of_knowledge": {
-      "title": "Two kinds of knowledge",
-      "evidence_based": {
-        "label": "Evidence-based modules",
-        "description": "Based on scientific and regulatory evidence from WHO, EFSA, FDA, Codex Alimentarius and other official sources.",
-        "modules": [
-          { "id": "sugar", "name": "Sugar", "icon": "sugar" },
-          { "id": "sweeteners", "name": "Sweeteners", "icon": "sweeteners" },
-          { "id": "flavourings", "name": "Flavourings", "icon": "flavourings" },
-          { "id": "texture", "name": "Texture", "icon": "texture" },
-          { "id": "enumbers", "name": "E-numbers", "icon": "enumbers" },
-          { "id": "woman", "name": "Woman", "icon": "woman" }
-        ]
-      },
-      "choice_based": {
-        "label": "Choice-based modules",
-        "description": "Support personal, ethical, religious, or dietary decisions. They do not tell people what to eat. They explain what the label makes visible — and what it does not.",
-        "modules": [
-          { "id": "muslim", "name": "Muslim", "icon": "muslim" },
-          { "id": "animal", "name": "Animal", "icon": "animal" }
-        ]
-      }
-    },
-    "woman_not_life_stage": {
-      "title": "Woman is not a life stage",
-      "body": "Woman is a scientific evidence layer. It does not mean pregnancy. It does not reduce women's health to reproduction. It highlights evidence relevant to women's biology when that evidence exists, and leaves it out when it does not."
-    },
-    "how_it_works": {
-      "title": "From evidence to everyday decisions",
-      "steps": [
-        {
-          "step": 1,
-          "title": "Scan",
-          "description": "BOTIA reads the ingredient list from the label."
-        },
-        {
-          "step": 2,
-          "title": "Detect",
-          "description": "BOTIA identifies relevant signals organised into clear layers."
-        },
-        {
-          "step": 3,
-          "title": "Understand",
-          "description": "Each icon opens a simple explanation based on official evidence."
-        }
-      ]
-    },
-    "transparency_first": {
-      "title": "Transparency first",
-      "body": "BOTIA only informs based on the ingredients read from the label. It does not analyse the whole product. It does not certify food. It does not replace medical, religious, legal, or professional advice. It does not see what the label does not declare.",
-      "highlight": "When BOTIA shows uncertainty, that uncertainty is part of the information."
-    },
-    "closing": {
-      "claim": "Most apps tell you what to buy. BOTIA tells you what you're actually buying.",
-      "tagline": "You finally see what you're eating.",
-      "cta": {
-        "text": "Download BOTIA",
-        "link": "#",
-        "note": "Google Play — Coming soon"
-      }
-    },
-    "privacy": {
-      "title": "Privacy by design",
-      "body": "BOTIA analyses food labels, not people. It does not build personal food profiles or store your scans. Your Google account manages authentication. BOTIA only keeps the information strictly necessary to operate the service."
-    }
-  }
+  "title": "You've read the label a hundred times.",
+  "subtitle": "You still don't know what's in it.",
+  "description": "Scientific evidence. Human language. BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific, regulatory, and transparency sources.",
+  "stats_number": "72%",
+  "stats_text": "uncertain — in our first analysis of real supermarket products, 72% of results were uncertain, not because the ingredients were forbidden, but because the label simply didn't say enough to know.",
+  "modules_title": "Explore BOTIA",
+  "evidence_name": "Evidence Layers",
+  "evidence_desc": "Scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius",
+  "woman_name": "Woman",
+  "woman_desc": "Scientific evidence specific to women's biology, when it exists",
+  "animal_name": "Animal Origin",
+  "animal_desc": "What the label says about animal-derived ingredients — and what it doesn't",
+  "muslim_name": "Muslim Choice",
+  "muslim_desc": "Documented criteria for halal, haram, and mashbooh ingredients",
+  "highlight_text": "BOTIA does not replace WHO, EFSA, the European Commission, FDA, or scientific literature. It translates complex food evidence into information that can be used while reading a label."
 }

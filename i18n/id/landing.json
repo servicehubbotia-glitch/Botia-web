@@ -1,118 +1,17 @@
 {
-  "landing": {
-    "hero": {
-      "logo": "botia_jar_512.png",
-      "title": "Anda sudah membaca label seratus kali.",
-      "subtitle": "Anda tetap tidak tahu apa isinya.",
-      "description": "Bukti ilmiah. Bahasa manusia.",
-      "cta": {
-        "text": "Unduh BOTIA",
-        "link": "#",
-        "note": "Segera tersedia di Google Play"
-      }
-    },
-    "stat_72_percent": {
-      "number": "72%",
-      "headline": "tidak pasti",
-      "body": "Dalam analisis pertama kami terhadap produk supermarket nyata, 72% hasilnya tidak pasti — bukan karena bahannya dilarang, tetapi karena labelnya tidak memberikan informasi yang cukup untuk diketahui.",
-      "conclusion": "Ini bukan masalah Halal, atau masalah gula, atau masalah kesehatan perempuan. Ini adalah masalah transparansi. Dan ini berdampak pada semua orang."
-    },
-    "two_kinds_of_knowledge": {
-      "title": "Dua jenis pengetahuan",
-      "evidence_based": {
-        "label": "Modul berbasis bukti",
-        "description": "Berdasarkan bukti ilmiah dan regulasi dari WHO, EFSA, FDA, Codex Alimentarius, dan sumber resmi lainnya.",
-        "modules": [
-          {
-            "id": "sugar",
-            "name": "Gula",
-            "icon": "sugar"
-          },
-          {
-            "id": "sweeteners",
-            "name": "Pemanis",
-            "icon": "sweeteners"
-          },
-          {
-            "id": "flavourings",
-            "name": "Perisa",
-            "icon": "flavourings"
-          },
-          {
-            "id": "texture",
-            "name": "Tekstur",
-            "icon": "texture"
-          },
-          {
-            "id": "enumbers",
-            "name": "Nomor-E",
-            "icon": "enumbers"
-          },
-          {
-            "id": "woman",
-            "name": "Perempuan",
-            "icon": "woman"
-          }
-        ]
-      },
-      "choice_based": {
-        "label": "Modul berbasis pilihan",
-        "description": "Mendukung keputusan pribadi, etis, agama, atau diet. Modul ini tidak memberi tahu orang apa yang harus dimakan. Modul ini menjelaskan apa yang terlihat pada label — dan apa yang tidak.",
-        "modules": [
-          {
-            "id": "muslim",
-            "name": "Muslim",
-            "icon": "muslim"
-          },
-          {
-            "id": "animal",
-            "name": "Hewan",
-            "icon": "animal"
-          }
-        ]
-      }
-    },
-    "woman_not_life_stage": {
-      "title": "Perempuan bukanlah tahap kehidupan",
-      "body": "Perempuan adalah lapisan bukti ilmiah. Ini tidak berarti kehamilan. Ini tidak mereduksi kesehatan perempuan menjadi reproduksi. Ini menyoroti bukti yang relevan dengan biologi perempuan ketika bukti itu ada, dan meninggalkannya ketika tidak ada."
-    },
-    "how_it_works": {
-      "title": "Dari bukti hingga keputusan sehari-hari",
-      "steps": [
-        {
-          "step": 1,
-          "title": "Pindai",
-          "description": "BOTIA membaca daftar bahan dari label."
-        },
-        {
-          "step": 2,
-          "title": "Deteksi",
-          "description": "BOTIA mengidentifikasi sinyal relevan yang diatur dalam lapisan yang jelas."
-        },
-        {
-          "step": 3,
-          "title": "Pahami",
-          "description": "Setiap ikon membuka penjelasan sederhana berdasarkan bukti resmi."
-        }
-      ]
-    },
-    "transparency_first": {
-      "title": "Transparansi adalah prioritas",
-      "body": "BOTIA hanya memberikan informasi berdasarkan bahan yang terbaca dari label. BOTIA tidak menganalisis seluruh produk. BOTIA tidak mensertifikasi makanan. BOTIA tidak menggantikan nasihat medis, agama, hukum, atau profesional. BOTIA tidak melihat apa yang tidak dinyatakan label.",
-      "highlight": "Ketika BOTIA menunjukkan ketidakpastian, ketidakpastian itu adalah bagian dari informasi."
-    },
-    "closing": {
-      "claim": "Kebanyakan aplikasi memberi tahu Anda apa yang harus dibeli. BOTIA memberi tahu Anda apa yang sebenarnya Anda beli.",
-      "tagline": "Anda akhirnya melihat apa yang Anda makan.",
-      "cta": {
-        "text": "Unduh BOTIA",
-        "link": "#",
-        "note": "Google Play — Segera hadir"
-      }
-    },
-    "privacy": {
-      "title": "Privasi sejak desain",
-      "body": "BOTIA menganalisis label makanan, bukan orang. BOTIA tidak membuat profil makanan pribadi atau menyimpan pindaian Anda. Akun Google Anda mengelola autentikasi. BOTIA hanya menyimpan informasi yang benar-benar diperlukan untuk mengoperasikan layanan."
-    }
-  }
+  "title": "Anda sudah membaca label seratus kali.",
+  "subtitle": "Anda masih tidak tahu apa yang ada di dalamnya.",
+  "description": "Bukti ilmiah. Bahasa manusia. BOTIA membaca bahan-bahan, mendeteksi sinyal yang relevan, dan menghubungkannya dengan penjelasan yang jelas berdasarkan sumber ilmiah, regulasi, dan transparansi.",
+  "stats_number": "72%",
+  "stats_text": "tidak pasti — dalam analisis pertama kami terhadap produk supermarket nyata, 72% hasil tidak pasti, bukan karena bahan-bahannya dilarang, tetapi karena labelnya tidak memberikan informasi yang cukup untuk diketahui.",
+  "modules_title": "Jelajahi BOTIA",
+  "evidence_name": "Lapisan Bukti",
+  "evidence_desc": "Bukti ilmiah dan regulasi dari WHO, EFSA, FDA, dan Codex Alimentarius",
+  "woman_name": "Wanita",
+  "woman_desc": "Bukti ilmiah khusus untuk biologi wanita, jika ada",
+  "animal_name": "Asal Hewan",
+  "animal_desc": "Apa yang dikatakan label tentang bahan-bahan yang berasal dari hewan — dan apa yang tidak dikatakannya",
+  "muslim_name": "Pilihan Muslim",
+  "muslim_desc": "Kriteria terdokumentasi untuk bahan halal, haram, dan mashbooh",
+  "highlight_text": "BOTIA tidak menggantikan WHO, EFSA, Komisi Eropa, FDA, atau literatur ilmiah. BOTIA menerjemahkan bukti pangan yang kompleks menjadi informasi yang dapat digunakan saat membaca label."
 }
