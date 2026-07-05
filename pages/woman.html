@@ -3,183 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BOTIA — Woman · Scientific Evidence Layer</title>
-  <meta name="description" content="BOTIA Woman is a scientific evidence layer. It highlights evidence relevant to women's biology when that evidence exists, and leaves it out when it does not." />
+  <title>BOTIA — Woman</title>
+  <meta name="description" content="Science has a gender. Food labels don't mention it. BOTIA surfaces the evidence." />
   <link rel="icon" type="image/png" href="/botia_jar_512.png" />
   <link rel="stylesheet" href="/botia-landing.css" />
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <style>
-    .lang-switcher {
-      position: fixed;
-      top: 12px;
-      right: 16px;
-      z-index: 100;
-    }
+    .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
+    .lang-switcher { position: fixed; top: 12px; right: 16px; z-index: 100; }
     body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
     .lang-switcher select {
-      background: rgba(24, 13, 13, 0.96);
-      color: #f2e4dc;
-      border: 1px solid rgba(190, 122, 72, 0.42);
-      border-radius: 8px;
-      padding: 6px 10px;
-      font-size: 0.85rem;
-      cursor: pointer;
+      background: rgba(24, 13, 13, 0.96); color: #f2e4dc;
+      border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
+      padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
     }
-    @media (max-width: 400px) {
-      .lang-switcher { top: 8px; right: 8px; }
-      .lang-switcher select { font-size: 0.75rem; padding: 4px 8px; }
+    .hero { padding: 20px 0 10px; text-align: center; }
+    .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
+    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
+    .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
+    .description { font-size: 0.9rem; color: #8a8a8a; }
+    .section { margin-bottom: 28px; }
+    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
+    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; }
+    .highlight-box {
+      background: rgba(24, 13, 13, 0.9); border-left: 4px solid rgba(190, 122, 72, 0.6);
+      border-radius: 8px; padding: 16px 20px; margin: 16px 0;
     }
-    .fichas-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 12px;
-      margin: 24px 0;
+    .highlight-box p { font-size: 0.9rem; color: #c0a08c; line-height: 1.5; }
+    .cards-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px; margin: 16px 0;
     }
-    .ficha-card {
-      background: rgba(24, 13, 13, 0.9);
-      border: 1px solid rgba(190, 122, 72, 0.3);
-      border-radius: 10px;
-      padding: 14px;
-      text-align: center;
-      text-decoration: none;
-      color: #f2e4dc;
-      font-size: 0.9rem;
-      transition: border-color 0.2s;
+    .card {
+      background: rgba(24, 13, 13, 0.9); border: 1px solid rgba(190, 122, 72, 0.25);
+      border-radius: 12px; padding: 18px;
     }
-    .ficha-card:hover { border-color: rgba(190, 122, 72, 0.7); }
-    .section-intro {
-      font-size: 1rem;
-      color: #c0a08c;
-      line-height: 1.7;
-      margin-bottom: 20px;
+    .card h4 { font-size: 0.95rem; color: #f2e4dc; margin-bottom: 6px; }
+    .card p { font-size: 0.85rem; color: #c0a08c; line-height: 1.5; }
+    .related-grid {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px;
     }
+    .related-grid a {
+      background: rgba(255, 255, 255, 0.06); padding: 8px 18px;
+      border-radius: 30px; border: 1px solid rgba(190, 122, 72, 0.3);
+      color: #ffd8bd; font-weight: 600; font-size: 0.9rem; text-decoration: none;
+      transition: 0.2s ease;
+    }
+    .related-grid a:hover { background: rgba(190, 122, 72, 0.2); border-color: #e6a06b; color: #fff; }
     .can-cannot {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin: 20px 0;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
     }
     @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
     .can-box, .cannot-box {
-      background: rgba(24, 13, 13, 0.9);
-      border-radius: 12px;
-      padding: 20px;
+      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px;
     }
     .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
     .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
-    .can-box h4, .cannot-box h4 { margin-bottom: 10px; }
+    .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
+    .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
     .can-box li, .cannot-box li {
-      margin-bottom: 6px;
-      font-size: 0.9rem;
-      color: #c0a08c;
-      padding-left: 20px;
-      position: relative;
-      list-style: none;
+      margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c;
+      padding-left: 20px; position: relative;
     }
     .can-box li::before { content: "✅"; position: absolute; left: 0; }
     .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+    .closing { text-align: center; padding: 20px 0; }
+    .closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 16px; }
+    .cta-button {
+      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+      padding: 10px 24px; border-radius: 8px; text-decoration: none;
+      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+    }
+    .cta-button:hover { background: rgba(190,122,72,0.35); }
+    .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
+    .source-links a { color: #e6a06b; text-decoration: none; }
+    .source-links a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <div class="lang-switcher">
     <select id="lang-select" onchange="cambiarIdioma(this.value)">
-      <option value="en">English</option>
-      <option value="ar">العربية</option>
-      <option value="de">Deutsch</option>
-      <option value="es">Español</option>
-      <option value="fr">Français</option>
-      <option value="id">Bahasa Indonesia</option>
-      <option value="it">Italiano</option>
-      <option value="nl">Nederlands</option>
-      <option value="pl">Polski</option>
-      <option value="pt">Português</option>
-      <option value="ro">Română</option>
-      <option value="ru">Русский</option>
-      <option value="tr">Türkçe</option>
-      <option value="zh">中文</option>
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+      <option value="tr">Türkçe</option><option value="zh">中文</option>
     </select>
   </div>
 
   <div class="landing">
-    <!-- HERO -->
     <section class="hero">
-      <img class="hero-logo" src="/botia/assets/mujer.png" alt="Woman" />
-      <h1 id="woman_title">Woman is not a life stage</h1>
-      <p class="subtitle" id="woman_subtitle">A scientific evidence layer for women's biology.</p>
-      <p class="description" id="woman_desc">Woman highlights evidence relevant to women's health when that evidence exists — and leaves it out when it does not. It does not mean pregnancy. It does not reduce women's health to reproduction.</p>
+      <img class="hero-logo" src="/botia/assets/mujer.png" alt="Woman">
+      <h1 id="title">Woman</h1>
+      <p class="subtitle" id="subtitle">Science has a gender. Food labels don't mention it.</p>
+      <p class="description" id="description">Women's bodies respond differently to certain food ingredients. The evidence exists. It rarely makes it onto the label. BOTIA surfaces it.</p>
     </section>
 
-    <!-- WHY IT MATTERS -->
     <section class="section">
-      <h2 class="section-title" id="why_title">Why Woman exists</h2>
-      <p class="section-intro" id="why_body">Between 2020 and 2026, international scientific and regulatory bodies have intensified their focus on how food ingredients — both natural and synthetic — differentially affect women's physiology. Endocrine disruptors, bioaccumulative contaminants, and certain additives have been linked to conditions such as PCOS, endometriosis, early puberty, and breast cancer. BOTIA Woman organises this evidence without alarmism and without hiding uncertainty.</p>
+      <h2 class="section-title" id="why_title">Why Woman exists in BOTIA</h2>
+      <p class="section-intro" id="why_body">For decades, nutritional and toxicological research focused on the general population — which in practice meant adult men. Women's specific biological vulnerabilities received less attention. BOTIA's Woman module is built on the evidence that does exist: peer-reviewed studies, EFSA opinions, WHO reports, and IARC classifications that document differential risk for women.</p>
     </section>
 
-    <!-- KEY AREAS -->
+    <div class="highlight-box">
+      <h2 class="section-title" id="not_pregnancy_title">Woman is not a life stage</h2>
+      <p id="not_pregnancy_body">This module is not about pregnancy. It is not about motherhood. It is a scientific evidence layer that highlights documented risks relevant to women's biology — hormonal sensitivity, higher body fat percentage, endocrine vulnerability, and reproductive system exposure. It applies to all women, at any age.</p>
+    </div>
+
     <section class="section">
-      <h2 class="section-title" id="areas_title">Key areas of evidence</h2>
-      <p class="section-intro" id="areas_intro">BOTIA Woman connects label ingredients with official scientific evidence in these areas:</p>
-      <ul style="color:#c0a08c; margin-left:20px; line-height:2;">
-        <li id="area1">Endocrine disruptors: BPA, phthalates, parabens — linked to PCOS, endometriosis, and hormonal disruption.</li>
-        <li id="area2">Heavy metals: mercury, lead, cadmium, arsenic — bioaccumulative and classified as obesogens.</li>
-        <li id="area3">Alcohol and breast cancer: IARC Group 1 carcinogen. No safe threshold identified.</li>
-        <li id="area4">Trans fats: industrial TFAs increase cardiovascular risk, especially post-menopause.</li>
-        <li id="area5">Artificial sweeteners: emerging evidence on early puberty and hormonal axis disruption.</li>
-      </ul>
+      <h2 class="section-title" id="two_types_title">Two types of signals</h2>
+      <p class="section-intro" id="two_types_body">BOTIA's Woman module works in two ways. When a specific ingredient with documented risk for women is detected on the label, BOTIA flags it directly. When no specific ingredient is found, BOTIA still surfaces contextual risk information — about packaging, about cumulative endocrine exposure, about fat-soluble compounds — because these risks exist regardless of what the label declares.</p>
     </section>
 
-    <!-- FICHAS GRID -->
     <section class="section">
-      <h2 class="section-title" id="fichas_title">Explore by ingredient or risk</h2>
-      <div class="fichas-grid">
-        <a href="/bpa.html" class="ficha-card">Bisphenol A (BPA)</a>
-        <a href="/phthalates.html" class="ficha-card">Phthalates</a>
-        <a href="/parabens_e214.html" class="ficha-card">Parabens (E214)</a>
-        <a href="/bha_e320.html" class="ficha-card">BHA (E320)</a>
-        <a href="/bht_e321.html" class="ficha-card">BHT (E321)</a>
-        <a href="/e171.html" class="ficha-card">Titanium Dioxide (E171)</a>
-        <a href="/methylmercury.html" class="ficha-card">Methylmercury</a>
-        <a href="/lead.html" class="ficha-card">Lead</a>
-        <a href="/cadmium.html" class="ficha-card">Cadmium</a>
-        <a href="/dioxins_pcbs.html" class="ficha-card">Dioxins & PCBs</a>
-        <a href="/trans_fats.html" class="ficha-card">Trans Fats</a>
-        <a href="/alcohol_woman.html" class="ficha-card">Alcohol</a>
-        <a href="/risk_endocrine.html" class="ficha-card">Endocrine Risk</a>
-        <a href="/risk_packaging.html" class="ficha-card">Packaging Risk</a>
-        <a href="/risk_fat_accumulation.html" class="ficha-card">Fat Accumulation</a>
+      <h2 class="section-title" id="ingredients_title">Ingredients BOTIA flags for women</h2>
+      <p class="section-intro" id="ingredients_body">These ingredients have documented evidence of differential risk for women's biology:</p>
+      <div class="related-grid">
+        <a href="/ingredients/bpa.html">BPA</a>
+        <a href="/ingredients/phthalates.html">Phthalates</a>
+        <a href="/ingredients/parabens.html">Parabens</a>
+        <a href="/ingredients/bha.html">BHA</a>
+        <a href="/ingredients/bht.html">BHT</a>
+        <a href="/ingredients/e171.html">E171</a>
+        <a href="/ingredients/alcohol.html">Alcohol</a>
+        <a href="/ingredients/trans_fats.html">Trans fats</a>
       </div>
     </section>
 
-    <!-- CAN / CANNOT -->
     <section class="section">
-      <h2 class="section-title" id="cancannot_title">What BOTIA can and cannot conclude</h2>
+      <h2 class="section-title" id="cards_title">Always-present risk context</h2>
+      <p class="section-intro" id="cards_body">These three signals appear regardless of the ingredient list — because the risks they describe are structural, not ingredient-specific:</p>
+      <div class="cards-grid">
+        <div class="card">
+          <h4 id="card_endocrine_title">Endocrine disruptors</h4>
+          <p id="card_endocrine_body">Cumulative exposure to substances that interfere with the hormonal system. Women are particularly vulnerable due to higher body fat percentage and hormonal complexity.</p>
+        </div>
+        <div class="card">
+          <h4 id="card_packaging_title">Packaging migrants</h4>
+          <p id="card_packaging_body">Chemical compounds that transfer from packaging into food — BPA, phthalates, PFAS. They do not appear on the ingredient list but enter the body through food.</p>
+        </div>
+        <div class="card">
+          <h4 id="card_fat_title">Fat-soluble accumulation</h4>
+          <p id="card_fat_body">Lipophilic compounds accumulate in fatty tissue over years. They release during rapid fat loss, pregnancy, breastfeeding or menopause — in concentrated form.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="can-cannot">
         <div class="can-box">
           <h4 id="can_title">BOTIA CAN</h4>
           <ul>
-            <li id="can1">Read declared ingredients from the label.</li>
-            <li id="can2">Connect ingredients to official evidence on women's health when that evidence exists.</li>
-            <li id="can3">Show uncertainty when the label is silent about origin or processing.</li>
+            <li id="can_1">Detect ingredients with documented differential risk for women.</li>
+            <li id="can_2">Surface contextual risks that do not appear on the label.</li>
+            <li id="can_3">Connect label ingredients to EFSA, WHO and IARC evidence specific to women.</li>
           </ul>
         </div>
         <div class="cannot-box">
           <h4 id="cannot_title">BOTIA CANNOT</h4>
           <ul>
-            <li id="cannot1">Diagnose or predict any medical condition.</li>
-            <li id="cannot2">Detect undeclared contaminants from packaging or processing.</li>
-            <li id="cannot3">Replace medical, professional, or dietary advice.</li>
+            <li id="cannot_1">Diagnose, assess personal risk, or replace medical advice.</li>
+            <li id="cannot_2">Detect contaminants or packaging migrants not declared on the label.</li>
+            <li id="cannot_3">Tell you what to eat or avoid — that decision is always yours.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- CLOSING -->
     <section class="closing">
-      <p class="closing-claim" id="closing_claim">Women's health is not a niche. It is half of the population demanding transparent evidence.</p>
+      <p class="closing-claim" id="closing">The science exists. BOTIA makes it visible.</p>
+      <p class="source-links">
+        Sources:
+        <a href="https://www.who.int/publications/i/item/9789241505031" target="_blank">WHO/UNEP Endocrine Disruptors</a> ·
+        <a href="https://www.efsa.europa.eu/en/efsajournal/pub/6857" target="_blank">EFSA BPA (2023)</a> ·
+        <a href="https://monographs.iarc.who.int/" target="_blank">IARC Classifications</a> ·
+        <a href="https://www.efsa.europa.eu/en/efsajournal/pub/5838" target="_blank">EFSA Phthalates (2019)</a>
+      </p>
       <a href="/" class="cta-button">← Back to BOTIA</a>
     </section>
   </div>
 
-  <!-- TRANSLATIONS -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const RTL_LANGS = ['ar'];
@@ -192,7 +194,6 @@
         const navLang = navigator.language.split('-')[0];
         return SOPORTADOS.includes(navLang) ? navLang : 'en';
       }
-
       window.cambiarIdioma = function(lang) {
         localStorage.setItem('botia-lang', lang);
         window.location.reload();
@@ -200,7 +201,6 @@
 
       const LANG = getIdioma();
       document.getElementById('lang-select').value = LANG;
-
       if (RTL_LANGS.includes(LANG)) {
         document.body.setAttribute('dir', 'rtl');
         document.documentElement.lang = LANG;
@@ -209,34 +209,13 @@
       fetch('/i18n/' + LANG + '/woman.json')
         .then(res => res.ok ? res.json() : Promise.reject())
         .then(d => {
-          document.getElementById('woman_title').textContent = d.woman_title;
-          document.getElementById('woman_subtitle').textContent = d.woman_subtitle;
-          document.getElementById('woman_desc').textContent = d.woman_desc;
-          document.getElementById('why_title').textContent = d.why_title;
-          document.getElementById('why_body').textContent = d.why_body;
-          document.getElementById('areas_title').textContent = d.areas_title;
-          document.getElementById('areas_intro').textContent = d.areas_intro;
-          document.getElementById('area1').textContent = d.area1;
-          document.getElementById('area2').textContent = d.area2;
-          document.getElementById('area3').textContent = d.area3;
-          document.getElementById('area4').textContent = d.area4;
-          document.getElementById('area5').textContent = d.area5;
-          document.getElementById('fichas_title').textContent = d.fichas_title;
-          document.getElementById('cancannot_title').textContent = d.cancannot_title;
-          document.getElementById('can_title').textContent = d.can_title;
-          document.getElementById('can1').textContent = d.can1;
-          document.getElementById('can2').textContent = d.can2;
-          document.getElementById('can3').textContent = d.can3;
-          document.getElementById('cannot_title').textContent = d.cannot_title;
-          document.getElementById('cannot1').textContent = d.cannot1;
-          document.getElementById('cannot2').textContent = d.cannot2;
-          document.getElementById('cannot3').textContent = d.cannot3;
-          document.getElementById('closing_claim').textContent = d.closing_claim;
+          Object.keys(d).forEach(id => {
+            if (id === '_meta') return;
+            const el = document.getElementById(id);
+            if (el) el.textContent = d[id];
+          });
         })
-        .catch(() => {
-          console.log('Translation fallback to English.');
-          document.documentElement.lang = 'en';
-        });
+        .catch(() => { document.documentElement.lang = 'en'; });
     });
   </script>
 </body>
