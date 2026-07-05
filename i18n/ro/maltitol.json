@@ -1,0 +1,22 @@
+{
+  "name": "Maltitol",
+  "e_code": "E965",
+  "aliases": "E965, E965i, E965ii, maltitol, sirop de maltitol, jarabe de maltitol, maltitoli",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "enumbers"
+  ],
+  "what_is": "Un alcool poliol cu conținut scăzut de calorii, obținut prin hidrogenarea D-maltozei.",
+  "why_botia": "Înlocuitor industrial de zahăr utilizat în produse ultraprocesate, poate provoca probleme digestive.",
+  "can_1": "Detectează E965 și îl mapează la straturile de îndulcitor și număr E.",
+  "can_2": "Oferă context privind proprietățile glicemice și potențialul disconfort digestiv.",
+  "cannot_1": "Măsoară procentul exact de maltitol adăugat.",
+  "cannot_2": "Confirmă dacă reziduurile de catalizator de nichel depășesc limita de 2 mg/kg.",
+  "sources": [
+    {
+      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+    }
+  ]
+}

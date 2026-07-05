@@ -1,0 +1,24 @@
+{
+  "name": "Glycérol",
+  "e_code": "E422",
+  "aliases": "E422, glycérol, glycérine, glycérine, glicerina, glicerol",
+  "module_icon": "texture.png",
+  "layers": [
+    "animal",
+    "muslim",
+    "texture",
+    "enumbers"
+  ],
+  "what_is": "Un liquide polyol clair et visqueux utilisé comme humectant et édulcorant.",
+  "why_botia": "Peut être produit à partir de graisses végétales ou animales — incertitudes de suivi religieux et végan.",
+  "can_1": "Détecter E422 ou Glycérol/Glycérine sur les étiquettes scannées.",
+  "can_2": "Activer les couches texture, animal et choix musulman.",
+  "cannot_1": "Vérifier s'il provient de sources de graisses animales ou végétales.",
+  "cannot_2": "Détecter les contaminants 3-MCPD au-dessus de la limite de 0,1 mg/kg.",
+  "sources": [
+    {
+      "label": "Règlement (UE) n° 231/2012 de la Commission",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+    }
+  ]
+}

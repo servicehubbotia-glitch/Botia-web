@@ -1,0 +1,24 @@
+{
+  "name": "Glycerol",
+  "e_code": "E422",
+  "aliases": "E422, glycerol, glycerine, glycerin, glicerina, glicerol",
+  "module_icon": "texture.png",
+  "layers": [
+    "animal",
+    "muslim",
+    "texture",
+    "enumbers"
+  ],
+  "what_is": "A clear, viscous polyol liquid used as a humectant and sweetener.",
+  "why_botia": "Can be produced from either vegetable or animal fats — religious and vegan tracking uncertainties.",
+  "can_1": "Detect E422 or Glycerol/Glycerine on scanned labels.",
+  "can_2": "Activate texture, animal, and Muslim choice layers.",
+  "cannot_1": "Verify if obtained from animal or vegetable fat sources.",
+  "cannot_2": "Detect 3-MCPD contaminants above the 0.1 mg/kg limit.",
+  "sources": [
+    {
+      "label": "Commission Regulation (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+    }
+  ]
+}
