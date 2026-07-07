@@ -224,9 +224,9 @@
 
       const LANG = getIdioma();
       document.getElementById('lang-select').value = LANG;
+      document.documentElement.lang = LANG;
       if (RTL_LANGS.includes(LANG)) {
         document.body.setAttribute('dir', 'rtl');
-        document.documentElement.lang = LANG;
       }
 
       // Aplicar labels traducidos
