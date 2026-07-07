@@ -151,7 +151,7 @@
       fetch('/i18n/' + LANG + '/landing.json')
         .then(res => res.ok ? res.json() : Promise.reject())
         .then(d => {
-          const data = d.landing;
+          const data = d;
           Object.keys(data).forEach(id => {
             if (id === '_meta') return;
             const el = document.getElementById(id);
