@@ -201,14 +201,28 @@
     document.addEventListener('DOMContentLoaded', () => {
       const LANG = getIdioma();
       document.getElementById('lang-select').value = LANG;
+      document.documentElement.lang = LANG;
       if (RTL_LANGS.includes(LANG)) {
         document.body.setAttribute('dir', 'rtl');
-        document.documentElement.lang = LANG;
       }
 
       fetch('/i18n/' + LANG + '/animal.json')
         .then(res => res.ok ? res.json() : Promise.reject())
         .then(d => {
+          // Actualizar <head> dinámicamente
+          document.documentElement.lang = LANG;
+          if (d.title) document.title = d.title;
+          const metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc && d.description) metaDesc.setAttribute('content', d.description);
+          const ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle && d.title) ogTitle.setAttribute('content', d.title);
+          const ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc && d.description) ogDesc.setAttribute('content', d.description);
+          const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+          if (twitterTitle && d.title) twitterTitle.setAttribute('content', d.title);
+          const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+          if (twitterDesc && d.description) twitterDesc.setAttribute('content', d.description);
+          
           // Estos IDs tienen enlaces HTML fijos, no se sobrescriben
           const fijos = [];
           Object.keys(d).forEach(id => {

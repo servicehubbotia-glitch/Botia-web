@@ -625,6 +625,7 @@
     }
     window.cambiarIdioma = function(lang) { localStorage.setItem('botia-lang', lang); window.location.reload(); };
     document.getElementById('lang-select').value = getIdioma();
+      document.documentElement.lang = getIdioma();
   </script>
 </body>
 </html>
