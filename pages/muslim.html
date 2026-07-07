@@ -9,62 +9,61 @@
   <link rel="stylesheet" href="/botia-landing.css" />
   <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <style>
-    
     .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
     .lang-switcher { position: fixed; top: 12px; right: 16px; z-index: 100; }
     body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
     .lang-switcher select {
-      background: rgba(24, 13, 13, 0.96); color: #f2e4dc;
-      border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
+      background: rgba(24,13,13,0.96); color: #f2e4dc;
+      border: 1px solid rgba(190,122,72,0.42); border-radius: 8px;
       padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
     }
-    .hero { padding: 10px 0 0 !important; text-align: center; }
+    .hero { padding: 20px 0 10px; text-align: center; }
     .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
-    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; }
+    .hero h1 { font-size: 1.6rem; color: #f2e4dc; margin-bottom: 6px; }
     .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
     .description { font-size: 0.9rem; color: #8a8a8a; }
-    .section { margin-bottom: 24px; }
+    .section { margin-bottom: 28px; }
     .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
-    .landing p, .landing li, .landing td, .landing th { line-height: 1.4; }
+    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; }
     .status-grid {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0;
     }
     @media (max-width: 500px) { .status-grid { grid-template-columns: 1fr; } }
     .status-card {
-      background: rgba(24, 13, 13, 0.9); border: 1px solid rgba(190, 122, 72, 0.3);
+      background: rgba(24,13,13,0.9); border: 1px solid rgba(190,122,72,0.3);
       border-radius: 12px; padding: 20px; text-align: center; text-decoration: none;
       color: #f2e4dc; transition: border-color 0.2s;
     }
-    .status-card:hover { border-color: rgba(190, 122, 72, 0.7); }
+    .status-card:hover { border-color: rgba(190,122,72,0.7); }
     .status-card img { width: 48px; height: 48px; margin-bottom: 12px; }
     .status-card .status-name { font-weight: 700; font-size: 1.1rem; margin-bottom: 6px; }
     .status-card .status-desc { font-size: 0.85rem; color: #c0a08c; line-height: 1.4; }
-    .callout {
-      background: rgba(24, 13, 13, 0.9); border-left: 4px solid rgba(200, 160, 60, 0.7);
-      border-radius: 8px; padding: 16px 20px; margin: 16px 0;
-    }
-    .callout-title { font-size: 1rem; color: #f2e4dc; margin-bottom: 6px; }
-    .callout-body { font-size: 0.9rem; color: #c0a08c; line-height: 1.4; }
     .comparison-table {
       width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem;
     }
     .comparison-table th, .comparison-table td {
-      border: 1px solid rgba(190, 122, 72, 0.2); padding: 10px 12px;
+      border: 1px solid rgba(190,122,72,0.2); padding: 10px 12px;
       text-align: left; vertical-align: top;
     }
-    .comparison-table th {
-      background: rgba(24, 13, 13, 0.9); color: #f2e4dc; font-weight: 600;
-    }
+    .comparison-table th { background: rgba(24,13,13,0.9); color: #f2e4dc; font-weight: 600; }
     .comparison-table td { color: #c0a08c; }
-    .can-cannot {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
+    .related-grid {
+      display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 16px;
     }
+    .related-grid a {
+      background: rgba(255,255,255,0.06); padding: 8px 18px;
+      border-radius: 30px; border: 1px solid rgba(190,122,72,0.3);
+      color: #ffd8bd; font-weight: 600; font-size: 0.9rem; text-decoration: none;
+      transition: 0.2s ease;
+    }
+    .related-grid a:hover { background: rgba(190,122,72,0.2); border-color: #e6a06b; color: #fff; }
+    .can-cannot { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
     @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
     .can-box, .cannot-box {
-      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px;
+      background: rgba(24,13,13,0.9); border-radius: 12px; padding: 20px;
     }
-    .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
-    .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
+    .can-box { border: 1px solid rgba(100,180,100,0.4); }
+    .cannot-box { border: 1px solid rgba(180,100,100,0.4); }
     .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; }
     .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
     .can-box li, .cannot-box li {
@@ -126,8 +125,30 @@
       </div>
     </section>
 
+    <div style="margin-bottom: 28px;">
+      <h3 class="section-title" id="haram_ingredients_title">Ingredients classified as Haram</h3>
+      <div class="related-grid">
+        <a href="/ingredients/alcohol.html">Alcohol</a>
+        <a href="/ingredients/gelatine.html">Gelatine</a>
+        <a href="/ingredients/vinegar.html">Vinegar</a>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 28px;">
+      <h3 class="section-title" id="mashbooh_ingredients_title">Ingredients that may be Mashbooh</h3>
+      <div class="related-grid">
+        <a href="/ingredients/e471.html">E471</a>
+        <a href="/ingredients/e472.html">E472</a>
+        <a href="/ingredients/lecithins.html">Lecithins</a>
+        <a href="/ingredients/natural_flavourings.html">Natural Flavourings</a>
+        <a href="/ingredients/enzymes.html">Enzymes</a>
+        <a href="/ingredients/gelatine.html">Gelatine</a>
+        <a href="/ingredients/glycerol.html">Glycerol</a>
+      </div>
+    </div>
+
     <section class="callout">
-      <h3 class="callout-title" id="mashbooh_why_title">Why "Mashbooh" is the most important state</h3>
+      <h3 class="callout-title" id="mashbooh_why_title">Why Mashbooh is the most important state</h3>
       <p class="callout-body" id="mashbooh_why_body">Classifying an ingredient as Mashbooh is not an accusation — it is a signal of uncertainty. Food labels are legal documents before they are human explanations. When the label omits the origin of an additive or the method of slaughter, BOTIA makes that gap visible so you can decide.</p>
     </section>
 
@@ -186,7 +207,7 @@
       <p class="source-links">
         Sources:
         <a href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B24-1997%252FCXG_024e.pdf" target="_blank">Codex CAC/GL 24-1997</a> ·
-        <a href="https://smiic.org/en/project/24" target="_blank">OIC/SMIIC 1:2019 — General Guidelines on Halal Food</a>
+        <a href="https://www.smiic.org/en/project/24" target="_blank">OIC/SMIIC 1:2019</a>
       </p>
       <a href="/" class="cta-button">← Back to BOTIA</a>
     </section>
@@ -196,27 +217,17 @@
     document.addEventListener('DOMContentLoaded', function() {
       const RTL_LANGS = ['ar'];
       const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
-
       function getIdioma() {
         const params = new URLSearchParams(window.location.search);
         if (params.get('lang')) return params.get('lang');
         if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
-        const navLang = navigator.language.split('-')[0];
-        return SOPORTADOS.includes(navLang) ? navLang : 'en';
+        const nav = navigator.language.split('-')[0];
+        return SOPORTADOS.includes(nav) ? nav : 'en';
       }
-
-      window.cambiarIdioma = function(lang) {
-        localStorage.setItem('botia-lang', lang);
-        window.location.reload();
-      };
-
+      window.cambiarIdioma = function(lang) { localStorage.setItem('botia-lang', lang); window.location.reload(); };
       const LANG = getIdioma();
       document.getElementById('lang-select').value = LANG;
-
-      if (RTL_LANGS.includes(LANG)) {
-        document.body.setAttribute('dir', 'rtl');
-        document.documentElement.lang = LANG;
-      }
+      if (RTL_LANGS.includes(LANG)) { document.body.setAttribute('dir', 'rtl'); document.documentElement.lang = LANG; }
 
       fetch('/i18n/' + LANG + '/muslim.json')
         .then(res => res.ok ? res.json() : Promise.reject())
@@ -231,6 +242,8 @@
           document.getElementById('haram_desc').textContent = d.haram.desc;
           document.getElementById('mashbooh_name').textContent = d.mashbooh.name;
           document.getElementById('mashbooh_desc').textContent = d.mashbooh.desc;
+          document.getElementById('haram_ingredients_title').textContent = d.haram_ingredients_title || "Ingredients classified as Haram";
+          document.getElementById('mashbooh_ingredients_title').textContent = d.mashbooh_ingredients_title || "Ingredients that may be Mashbooh";
           document.getElementById('mashbooh_why_title').textContent = d.mashbooh_why.title;
           document.getElementById('mashbooh_why_body').textContent = d.mashbooh_why.body;
           document.getElementById('doubts_title').textContent = d.doubts.title;
@@ -257,9 +270,7 @@
           document.getElementById('cannot3').textContent = d.cannot3;
           document.getElementById('closing_claim').textContent = d.closing;
         })
-        .catch(() => {
-          document.documentElement.lang = 'en';
-        });
+        .catch(() => { document.documentElement.lang = 'en'; });
     });
   </script>
 </body>
