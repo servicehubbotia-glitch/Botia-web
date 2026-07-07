@@ -118,7 +118,8 @@
 </head>
 <body>
   <div class="lang-switcher">
-    <select id="lang-select" onchange="cambiarIdioma(this.value)">
+    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
       <option value="en">English</option><option value="ar">العربية</option>
       <option value="de">Deutsch</option><option value="es">Español</option>
       <option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
@@ -130,7 +131,7 @@
   </div>
 
   <nav class="botia-nav">
-  <a href="/index.html" class="nav-logo">
+  <a href="/index.html" class="nav-logo" aria-label="BOTIA Home">
     <img src="/botia_jar_512.png" alt="BOTIA — Saccharin ingredient icon" style="width:32px;height:32px;" />
   </a>
   <div class="nav-links">

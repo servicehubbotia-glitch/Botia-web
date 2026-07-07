@@ -115,7 +115,8 @@
 </head>
 <body>
   <div class="lang-switcher">
-    <select id="lang-select" onchange="cambiarIdioma(this.value)">
+    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
       <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
       <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
       <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
@@ -126,7 +127,7 @@
 
   <div class="landing">
     <section class="hero">
-      <img class="hero-logo" fetchpriority="high" src="/botia_jar_512.png" alt="BOTIA" />
+      <img class="hero-logo" fetchpriority="high" src="/botia_jar_512.png" alt="BOTIA Food Transparency" />
       <h1 id="title">You've read the label a hundred times.</h1>
       <p class="subtitle" id="subtitle">You still don't know what's in it.</p>
       <p class="description" id="description">Scientific evidence. Human language. BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific, regulatory, and transparency sources.</p>
