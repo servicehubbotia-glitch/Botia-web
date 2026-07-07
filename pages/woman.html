@@ -101,6 +101,8 @@
 
 </head>
 <body>
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+  
   <div class="lang-switcher">
     <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
     <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
@@ -125,7 +127,7 @@
   </div>
 </nav>
 
-  <div class="landing">
+  <main class="landing" id="main-content">
     <section class="hero">
       <img class="hero-logo" fetchpriority="high" src="/botia/assets/mujer.png" srcset="/botia/assets/mujer.webp" type="image/webp" onerror="this.src='/botia/assets/mujer.png'" style="content-visibility:auto;" alt="BOTIA Woman module — scientific evidence specific to women's biology">
       <h1 id="title">Woman</h1>
@@ -214,7 +216,7 @@
       </p>
       <a href="/" class="cta-button">← Back to BOTIA</a>
     </section>
-  </div>
+  </main>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {

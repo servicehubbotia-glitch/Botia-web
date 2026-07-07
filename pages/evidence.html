@@ -103,6 +103,8 @@
   <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/pages/evidence.html">
 </head>
 <body>
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+  
   <div class="lang-switcher">
     <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
     <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
@@ -127,7 +129,7 @@
   </div>
 </nav>
 
-  <div class="landing">
+  <main class="landing" id="main-content">
     <section class="hero">
       <img class="hero-logo" fetchpriority="high" src="/botia/assets/evidence.png" srcset="/botia/assets/evidence.webp" type="image/webp" onerror="this.src='/botia/assets/evidence.png'" style="content-visibility:auto;" alt="BOTIA Evidence Layers — scientific and regulatory evidence modules" style="width:72px;height:72px;margin-bottom:12px;">
       <h1 id="title">Evidence Layers</h1>
@@ -220,7 +222,7 @@
       </p>
       <a href="/" class="cta-button">← Back to BOTIA</a>
     </section>
-  </div>
+  </main>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {

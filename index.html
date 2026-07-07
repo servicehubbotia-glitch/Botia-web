@@ -114,6 +114,8 @@
 
 </head>
 <body>
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+  
   <div class="lang-switcher">
     <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
     <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
@@ -125,7 +127,7 @@
     </select>
   </div>
 
-  <div class="landing">
+  <main class="landing" id="main-content">
     <section class="hero">
       <img class="hero-logo" fetchpriority="high" src="/botia_jar_512.png" alt="BOTIA Food Transparency" />
       <h1 id="title">You've read the label a hundred times.</h1>
@@ -176,7 +178,7 @@
       </p>
     </section>
     <p style="text-align:center;font-size:0.8rem;margin-top:20px;"><a href="/privacy.html" style="color:#8a8a8a;">Privacy Policy</a></p>
-  </div>
+  </main>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {

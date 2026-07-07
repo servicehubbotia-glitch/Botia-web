@@ -89,6 +89,8 @@
 
 </head>
 <body>
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+  
   <div class="lang-switcher">
     <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
     <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
@@ -109,7 +111,7 @@
   </div>
 </nav>
 
-  <div class="landing">
+  <main class="landing" id="main-content">
     <section class="hero">
       <img id="module_icon" fetchpriority="high" src="/botia/assets/mujer.png" srcset="/botia/assets/mujer.webp" type="image/webp" onerror="this.src='/botia/assets/mujer.png'" style="content-visibility:auto;" alt="BOTIA — Packaging migrants ingredient icon" />
       <h1 id="name">Packaging migrants</h1>
@@ -154,7 +156,7 @@
     <section class="closing">
       <a href="/" class="cta-button" id="back-button">← Back</a>
     </section>
-  </div>
+  </main>
 
   <script>
     const UI_LABELS = {

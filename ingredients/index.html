@@ -339,6 +339,8 @@
 
 </head>
 <body>
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+  
   <div class="lang-switcher">
     <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
     <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
@@ -360,7 +362,7 @@
     </div>
   </nav>
 
-  <div class="landing">
+  <main class="landing" id="main-content">
     <section class="hero">
       <h1>Ingredient Index</h1>
       <p class="subtitle">Complete list of food ingredients analysed by BOTIA</p>
@@ -605,7 +607,7 @@
     <section class="closing">
       <a href="/index.html" class="cta-button">← Back to BOTIA</a>
     </section>
-  </div>
+  </main>
 
   <script>
     function filterIngredients() {
