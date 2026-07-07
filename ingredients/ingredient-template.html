@@ -120,7 +120,7 @@
     </section>
 
     <section class="closing">
-      <a href="javascript:history.back()" class="cta-button">← Back</a>
+      <a href="/" class="cta-button" id="back-button">← Back</a>
     </section>
   </div>
 
@@ -144,6 +144,16 @@
     };
 
     document.addEventListener('DOMContentLoaded', function() {
+  // Back button with fallback
+  const backBtn = document.getElementById('back-button');
+  if (backBtn) {
+    backBtn.addEventListener('click', function(e) {
+      if (document.referrer && document.referrer.includes(window.location.hostname)) {
+        e.preventDefault();
+        window.history.back();
+      }
+    });
+  }
       const RTL_LANGS = ['ar'];
       const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
 
