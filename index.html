@@ -194,6 +194,28 @@
         .then(res => res.ok ? res.json() : Promise.reject())
         .then(d => {
           const data = d;
+          
+          // Actualizar <html lang>
+          document.documentElement.lang = LANG;
+          
+          // Actualizar <title>
+          if (data.title) document.title = data.title;
+          
+          // Actualizar meta description
+          const metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc && data.description) metaDesc.setAttribute('content', data.description);
+          
+          // Actualizar OG tags
+          const ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle && data.title) ogTitle.setAttribute('content', data.title);
+          const ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc && data.description) ogDesc.setAttribute('content', data.description);
+          const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+          if (twitterTitle && data.title) twitterTitle.setAttribute('content', data.title);
+          const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+          if (twitterDesc && data.description) twitterDesc.setAttribute('content', data.description);
+          
+          // Actualizar contenido del body
           Object.keys(data).forEach(id => {
             if (id === '_meta') return;
             const el = document.getElementById(id);
