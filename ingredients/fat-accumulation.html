@@ -123,6 +123,13 @@
 }
 body { padding-top: 46px; }
 
+  
+body.menu-open .hero img,
+body.menu-open #module_icon {
+  z-index: 0 !important;
+  position: relative !important;
+}
+
   </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/fat-accumulation.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/fat-accumulation.html?lang=es">
@@ -263,6 +270,7 @@ body { padding-top: 46px; }
 function toggleSidebar() {
   document.getElementById('sidebar').classList.toggle('open');
   document.getElementById('sidebarOverlay').classList.toggle('open');
+  document.body.classList.toggle('menu-open');
 }
 function toggleSubmenu(el) {
   const arrow = el.querySelector('.arrow');
@@ -346,6 +354,7 @@ function filterSidebar() {
 function toggleSidebar() {
   document.getElementById('sidebar').classList.toggle('open');
   document.getElementById('sidebarOverlay').classList.toggle('open');
+  document.body.classList.toggle('menu-open');
 }
 function toggleSubmenu(el) {
   const arrow = el.querySelector('.arrow');
