@@ -82,7 +82,42 @@
     .source-links a:hover { text-decoration: underline; }
   
 
-  
+  /* Hamburger Menu */
+
+.hamburger-btn:hover { color: #fff; border-color: #e6a06b; }
+.sidebar-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6); ; display: none;
+}
+.sidebar-overlay.open { display: block; }
+.sidebar {
+  position: fixed; top: 0; left: 0; width: 300px; max-width: 85vw; height: 100%;
+  background: rgba(8,4,4,0.97); ; overflow-y: auto;
+  padding: 16px; transform: translateX(-100%); transition: transform 0.3s ease;
+  border-right: 1px solid rgba(190,122,72,0.2);
+}
+.sidebar.open { transform: translateX(0); }
+.sidebar-close {
+  position: absolute; top: 10px; right: 14px; color: #e6a06b;
+  font-size: 1.4rem; cursor: pointer; background: none; border: none;
+}
+.sidebar-close:hover { color: #fff; }
+.sidebar-title { color: #e6a06b; font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
+.sidebar-search {
+  width: 100%; padding: 8px 10px; border-radius: 6px;
+  background: rgba(255,255,255,0.06); color: #f2e4dc;
+  border: 1px solid rgba(190,122,72,0.3); font-size: 0.8rem; margin-bottom: 14px;
+}
+.sidebar-search::placeholder { color: #8a8a8a; }
+.sidebar-tree { list-style: none; padding: 0; margin: 0; }
+.sidebar-tree li { margin: 1px 0; }
+.sidebar-tree a { color: #c0a08c; text-decoration: none; font-size: 0.82rem; display: block; padding: 3px 8px; border-radius: 4px; }
+.sidebar-tree a:hover { background: rgba(190,122,72,0.15); color: #f2e4dc; }
+.sidebar-tree .tree-parent { color: #e6a06b; font-weight: 600; font-size: 0.88rem; margin-top: 8px; cursor: pointer; }
+.sidebar-tree .tree-child { padding-left: 16px; display: none; }
+.sidebar-tree .tree-child.show { display: block; }
+.sidebar-tree .tree-home { font-weight: 700; color: #f2e4dc; }
+.sidebar-tree .tree-parent .arrow { font-size: 0.7rem; margin-right: 4px; }
 
   
 
@@ -91,42 +126,44 @@
 
 
   
-  
-
+  .botia-header-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+  background: rgba(8,4,4,0.95); padding: 8px 16px;
+  border-bottom: 1px solid rgba(190,122,72,0.15); backdrop-filter: blur(10px);
+}
+.botia-nav-left { display: flex; align-items: center; gap: 12px; }
 .botia-header-bar .lang-switcher { position: static; }
 .botia-header-bar .lang-switcher select {
   background: rgba(24,13,13,0.96); color: #f2e4dc;
   border: 1px solid rgba(190,122,72,0.42); border-radius: 6px;
   padding: 4px 8px; font-size: 0.75rem; cursor: pointer;
 }
-
-
-
-  
-
-
-  
-
+.hamburger-btn {
+  background: none; color: #e6a06b; border: 1px solid rgba(190,122,72,0.3);
+  border-radius: 4px; width: 30px; height: 30px; font-size: 1rem;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+body { padding-top: 46px; }
 
   
-  .botia-hamburger-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 1000; }
-.botia-hamburger-overlay.active { display: block; }
-.botia-sidebar { position: fixed; top: 0; left: -320px; width: 300px; height: 100vh; background: rgba(8,4,4,0.98); border-right: 1px solid rgba(190,122,72,0.3); z-index: 1001; overflow-y: auto; transition: left 0.3s ease; padding: 20px 0; }
-.botia-sidebar.active { left: 0; }
-.sidebar-close { position: absolute; top: 12px; right: 16px; background: none; border: none; color: #e6a06b; font-size: 1.4rem; cursor: pointer; }
-.sidebar-menu { list-style: none; padding: 40px 0 20px; margin: 0; }
-.sidebar-menu li { border-bottom: 1px solid rgba(190,122,72,0.1); }
-.sidebar-link { display: block; padding: 14px 20px; color: #f2e4dc; text-decoration: none; font-size: 0.95rem; transition: background 0.2s; }
-.sidebar-link:hover { background: rgba(190,122,72,0.1); color: #e6a06b; }
-.sidebar-group-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; color: #f2e4dc; font-size: 0.95rem; cursor: pointer; transition: background 0.2s; }
-.sidebar-group-header:hover { background: rgba(190,122,72,0.1); color: #e6a06b; }
-.sidebar-arrow { font-size: 0.7rem; transition: transform 0.2s; color: #e6a06b; }
-.sidebar-arrow.open { transform: rotate(90deg); }
-.sidebar-submenu { display: none; list-style: none; padding: 0; background: rgba(255,255,255,0.03); }
-.sidebar-submenu.open { display: block; }
-.sidebar-submenu li { border-bottom: 1px solid rgba(190,122,72,0.05); }
-.sidebar-submenu a { display: block; padding: 10px 20px 10px 36px; color: #c0a08c; text-decoration: none; font-size: 0.85rem; transition: background 0.2s; }
-.sidebar-submenu a:hover { background: rgba(190,122,72,0.08); color: #e6a06b; }
+body.menu-open .hero img,
+body.menu-open #module_icon {
+  z-index: 0 !important;
+  position: relative !important;
+}
+
+  
+body.menu-open .hero,
+body.menu-open .hero *,
+body.menu-open #module_icon,
+body.menu-open .hero-logo,
+body.menu-open .hero img {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  z-index: 0 !important;
+}
+
   </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/flavor.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/flavor.html?lang=es">
@@ -159,47 +196,11 @@
 
 </head>
 <body>
-<!-- HAMBURGER MENU COMPONENT -->
-<div class="botia-hamburger-overlay" id="menuOverlay" onclick="closeMenu()"></div>
-<nav class="botia-sidebar" id="sidebar">
-  <button class="sidebar-close" onclick="closeMenu()">✕</button>
-  <ul class="sidebar-menu">
-    <li><a href="/" class="sidebar-link">🏠 Home</a></li>
-    <li class="sidebar-group">
-      <div class="sidebar-group-header" onclick="toggleSubmenu('evidence')"><span>📋 Evidence</span><span class="sidebar-arrow" id="arrow-evidence">►</span></div>
-      <ul class="sidebar-submenu" id="sub-evidence">
-        <li><a href="/pages/evidence.html">Evidence (general)</a></li>
-        <li><a href="/pages/sugar.html">Sugar</a></li>
-        <li><a href="/pages/sweetener.html">Sweeteners</a></li>
-        <li><a href="/pages/texture.html">Texture</a></li>
-        <li><a href="/pages/flavor.html">Flavourings</a></li>
-        <li><a href="/pages/enumbers.html">E-numbers</a></li>
-      </ul>
-    </li>
-    <li><a href="/pages/animal.html" class="sidebar-link">🐾 Animal Origin</a></li>
-    <li class="sidebar-group">
-      <div class="sidebar-group-header" onclick="toggleSubmenu('muslim')"><span>🕌 Muslim Choice</span><span class="sidebar-arrow" id="arrow-muslim">►</span></div>
-      <ul class="sidebar-submenu" id="sub-muslim">
-        <li><a href="/pages/muslim.html">Muslim (general)</a></li>
-        <li><a href="/ingredients/halal.html">Halal</a></li>
-        <li><a href="/ingredients/haram.html">Haram</a></li>
-        <li><a href="/ingredients/mashbooh.html">Mashbooh</a></li>
-      </ul>
-    </li>
-    <li class="sidebar-group">
-      <div class="sidebar-group-header" onclick="toggleSubmenu('woman')"><span>👩‍🔬 Woman</span><span class="sidebar-arrow" id="arrow-woman">►</span></div>
-      <ul class="sidebar-submenu" id="sub-woman">
-        <li><a href="/pages/woman.html">Woman (general)</a></li>
-        <li><a href="/ingredients/endocrine-disruptors.html">Endocrine Disruptors</a></li>
-        <li><a href="/ingredients/packaging-migrants.html">Packaging Migrants</a></li>
-        <li><a href="/ingredients/fat-accumulation.html">Fat-Soluble Accumulation</a></li>
-      </ul>
-    </li>
-    <li><a href="/ingredients/index.html" class="sidebar-link">🧪 Ingredient Index</a></li>
-    <li><a href="/privacy.html" class="sidebar-link">📄 Privacy Policy</a></li>
-  </ul>
-</nav>
-
+<div class="botia-header-bar">
+  <div class="botia-nav-left">
+    <button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+    <a href="/index.html"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+  </div>
   <div class="lang-switcher">
     <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
     <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
@@ -208,7 +209,34 @@
   </div>
 </div>
 
+<!-- Hamburger Menu -->
 
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<nav class="sidebar" id="sidebar">
+  <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+  <div class="sidebar-title">BOTIA</div>
+  <input type="text" class="sidebar-search" placeholder="🔍 Filter..." onkeyup="filterSidebar()" />
+  <ul class="sidebar-tree" id="sidebarTree">
+        <li><a href="/index.html" class="tree-home">🏠 Home</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> 📊 Evidence</li>
+    <li class="tree-child"><a href="/ingredients/sugar.html">├─ Sugar</a></li>
+    <li class="tree-child"><a href="/ingredients/sweetener.html">├─ Sweeteners</a></li>
+    <li class="tree-child"><a href="/ingredients/texture.html">├─ Texture</a></li>
+    <li class="tree-child"><a href="/ingredients/flavor.html">├─ Flavourings</a></li>
+    <li class="tree-child"><a href="/ingredients/enumbers.html">└─ E-numbers</a></li>
+    <li class="tree-parent"><a href="/pages/animal.html" style="color:#e6a06b;font-weight:600;">🐾 Animal Origin</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> <a href="/pages/muslim.html" style="color:#e6a06b;font-weight:600;">🕌 Muslim</a></li>
+    <li class="tree-child"><a href="/ingredients/halal.html">├─ Halal</a></li>
+    <li class="tree-child"><a href="/ingredients/haram.html">├─ Haram</a></li>
+    <li class="tree-child"><a href="/ingredients/mashbooh.html">└─ Mashbooh</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> <a href="/pages/woman.html" style="color:#e6a06b;font-weight:600;">👩 Woman</a></li>
+    <li class="tree-child"><a href="/ingredients/endocrine-disruptors.html">├─ Endocrine Disruptors</a></li>
+    <li class="tree-child"><a href="/ingredients/packaging-migrants.html">├─ Packaging Migrants</a></li>
+    <li class="tree-child"><a href="/ingredients/fat-accumulation.html">└─ Fat Accumulation</a></li>
+    <li class="tree-parent"><a href="/ingredients/index.html" style="color:#e6a06b;font-weight:600;">🧪 Ingredient Index</a></li>
+    <li class="tree-home" style="margin-top:12px;"><a href="/privacy.html">📄 Privacy Policy</a></li>
+  </ul>
+</nav>
 
 
 </div>
@@ -284,9 +312,25 @@
 
   <script>
 
-
-
-
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarOverlay').classList.toggle('open');
+  document.body.classList.toggle('menu-open');
+}
+function toggleSubmenu(el) {
+  const arrow = el.querySelector('.arrow');
+  const children = el.parentElement.querySelectorAll('.tree-child');
+  const isOpen = children[0] && children[0].classList.contains('show');
+  children.forEach(c => c.classList.toggle('show', !isOpen));
+  if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
+}
+function filterSidebar() {
+  const q = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
+  const items = document.querySelectorAll('.sidebar-tree li');
+  items.forEach(item => {
+    item.style.display = (!q || item.textContent.toLowerCase().includes(q)) ? '' : 'none';
+  });
+}
 
 
 
@@ -350,20 +394,31 @@
   </script>
 <script>
 
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarOverlay').classList.toggle('open');
+  document.body.classList.toggle('menu-open');
+}
+function toggleSubmenu(el) {
+  const arrow = el.querySelector('.arrow');
+  const children = el.parentElement.querySelectorAll('.tree-child');
+  const isOpen = children[0] && children[0].classList.contains('show');
+  children.forEach(c => c.classList.toggle('show', !isOpen));
+  if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
+}
+function filterSidebar() {
+  const q = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
+  const items = document.querySelectorAll('.sidebar-tree li');
+  items.forEach(item => {
+    item.style.display = (!q || item.textContent.toLowerCase().includes(q)) ? '' : 'none';
+  });
+}
 
 
 
 
 
 
-
-
-
-</script>
-<script>
-function toggleMenu() { document.getElementById('sidebar').classList.toggle('active'); document.getElementById('menuOverlay').classList.toggle('active'); document.body.classList.toggle('menu-open'); }
-function closeMenu() { document.getElementById('sidebar').classList.remove('active'); document.getElementById('menuOverlay').classList.remove('active'); document.body.classList.remove('menu-open'); }
-function toggleSubmenu(id) { const sub = document.getElementById('sub-' + id); const arrow = document.getElementById('arrow-' + id); sub.classList.toggle('open'); arrow.classList.toggle('open'); }
 </script>
 </body>
 </html>
