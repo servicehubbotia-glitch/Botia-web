@@ -130,26 +130,16 @@
 .sidebar-tree .tree-home { font-weight: 700; color: #f2e4dc; }
 .sidebar-tree .tree-parent .arrow { font-size: 0.7rem; margin-right: 4px; }
 
-  .botia-header-bar { z-index: 999;
-  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 6px 10px; background: rgba(8,4,4,0.95);
-  border-bottom: 1px solid rgba(190,122,72,0.15); backdrop-filter: blur(10px);
-  height: 42px;
-}
-.header-logo { display: flex; align-items: center; margin-left: 40px; }
-.header-lang select {
-  background: rgba(24,13,13,0.96); color: #f2e4dc;
-  border: 1px solid rgba(190,122,72,0.42); border-radius: 6px;
-  padding: 4px 8px; font-size: 0.75rem; cursor: pointer;
-}
+  
+
+
 .hamburger-btn { ;
   position: fixed; top: 6px; left: 8px; ;
   background: none; color: #e6a06b; border: 1px solid rgba(190,122,72,0.3);
   border-radius: 4px; width: 30px; height: 30px; font-size: 1rem;
   cursor: pointer; display: flex; align-items: center; justify-content: center;
 }
-body { padding-top: 42px; }
+
 
   </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/dioxins_pcbs.html?lang=en">
@@ -183,13 +173,37 @@ body { padding-top: 42px; }
 
 </head>
 <body>
-<!-- Header -->
-<div class="botia-header-bar">
-  <button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
-  <a href="/index.html" class="header-logo"><img src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
-  <div class="header-lang"><select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
-    <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option>
-  </select></div>
+<!-- Hamburger Menu -->
+<button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<nav class="sidebar" id="sidebar">
+  <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+  <div class="sidebar-title">BOTIA</div>
+  <input type="text" class="sidebar-search" placeholder="🔍 Filter..." onkeyup="filterSidebar()" />
+  <ul class="sidebar-tree" id="sidebarTree">
+    <li><a href="/index.html" class="tree-home">🏠 Home</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> 📋 Pages</li>
+    <li class="tree-child"><a href="/pages/evidence.html">Evidence</a></li>
+    <li class="tree-child"><a href="/ingredients/sugar.html">├─ Sugar</a></li>
+    <li class="tree-child"><a href="/ingredients/sweetener.html">├─ Sweeteners</a></li>
+    <li class="tree-child"><a href="/ingredients/texture.html">├─ Texture</a></li>
+    <li class="tree-child"><a href="/ingredients/flavor.html">├─ Flavourings</a></li>
+    <li class="tree-child"><a href="/ingredients/enumbers.html">└─ E-numbers</a></li>
+    <li class="tree-child"><a href="/pages/animal.html">Animal Origin</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> 🕌 Muslim Choice</li>
+    <li class="tree-child"><a href="/ingredients/halal.html">├─ Halal</a></li>
+    <li class="tree-child"><a href="/ingredients/haram.html">├─ Haram</a></li>
+    <li class="tree-child"><a href="/ingredients/mashbooh.html">└─ Mashbooh</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> 👩 Woman</li>
+    <li class="tree-child"><a href="/ingredients/endocrine-disruptors.html">├─ Endocrine Disruptors</a></li>
+    <li class="tree-child"><a href="/ingredients/packaging-migrants.html">├─ Packaging Migrants</a></li>
+    <li class="tree-child"><a href="/ingredients/fat-accumulation.html">└─ Fat Accumulation</a></li>
+    <li class="tree-parent"><a href="/ingredients/index.html" style="color:#e6a06b;font-weight:600;">🧪 Ingredient Index</a></li>
+    <li class="tree-home" style="margin-top:12px;"><a href="/privacy.html">📄 Privacy Policy</a></li>
+  </ul>
+</nav>
+
+
 </div>
 
 
@@ -256,6 +270,23 @@ function toggleSidebar() {
   document.getElementById('sidebar').classList.toggle('open');
   document.getElementById('sidebarOverlay').classList.toggle('open');
 }
+function toggleSubmenu(el) {
+  const arrow = el.querySelector('.arrow');
+  const children = el.parentElement.querySelectorAll('.tree-child');
+  const isOpen = children[0] && children[0].classList.contains('show');
+  children.forEach(c => c.classList.toggle('show', !isOpen));
+  if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
+}
+function filterSidebar() {
+  const q = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
+  const items = document.querySelectorAll('.sidebar-tree li');
+  items.forEach(item => {
+    item.style.display = (!q || item.textContent.toLowerCase().includes(q)) ? '' : 'none';
+  });
+}
+
+
+
 
     // Traducciones para los labels fijos
     const UI_LABELS = {
@@ -385,21 +416,22 @@ function toggleSidebar() {
 function toggleSubmenu(el) {
   const arrow = el.querySelector('.arrow');
   const children = el.parentElement.querySelectorAll('.tree-child');
-  const isOpen = children[0].classList.contains('show');
+  const isOpen = children[0] && children[0].classList.contains('show');
   children.forEach(c => c.classList.toggle('show', !isOpen));
   if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
 }
 function filterSidebar() {
-  const query = document.getElementById('sidebarTree')?.querySelector('input')?.value?.toLowerCase() || '';
-  const queryFromInput = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
-  const q = query || queryFromInput;
+  const q = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
   const items = document.querySelectorAll('.sidebar-tree li');
   items.forEach(item => {
-    const text = item.textContent.toLowerCase();
-    if (!q || text.includes(q)) { item.style.display = ''; }
-    else { item.style.display = 'none'; }
+    item.style.display = (!q || item.textContent.toLowerCase().includes(q)) ? '' : 'none';
   });
 }
+
+
+
+
+
 
 </script>
 </body>
