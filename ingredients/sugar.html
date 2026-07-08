@@ -166,6 +166,16 @@ body.menu-open .hero img {
 
   
     .hero + .section { margin-top: 0 !important; }
+  
+    .category-card {
+      display: flex; flex-direction: column; gap: 4px;
+      background: rgba(24,13,13,0.9); border: 1px solid rgba(190,122,72,0.25);
+      border-radius: 12px; padding: 16px; text-decoration: none;
+      color: #f2e4dc; transition: border-color 0.2s;
+    }
+    .category-card:hover { border-color: rgba(190,122,72,0.6); }
+    .category-card strong { font-size: 0.95rem; color: #e6a06b; }
+    .category-card span { font-size: 0.8rem; color: #8a8a8a; }
   </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/sugar.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/sugar.html?lang=es">
@@ -272,10 +282,24 @@ body.menu-open .hero img {
     </section>
 
     <section class="section">
-      <h2 class="section-title" id="ingredients_title">Related ingredients</h2>
+      <h2 class="section-title" id="categories_title">WHO Free Sugar Categories</h2>
       <div class="related-grid">
-        <a href="/ingredients/maltodextrin.html">Maltodextrin</a>
-        <a href="/ingredients/glucose_syrup.html">Glucose syrup</a>
+        <a href="/ingredients/free_sugars.html" class="category-card">
+          <strong id="cat1_name">Simple added sugars</strong>
+          <span id="cat1_desc">Glucose, fructose, sucrose, dextrose</span>
+        </a>
+        <a href="/ingredients/glucose_syrup.html" class="category-card">
+          <strong id="cat2_name">Syrups</strong>
+          <span id="cat2_desc">Glucose syrup, corn syrup, HFCS</span>
+        </a>
+        <a href="/ingredients/maltodextrin.html" class="category-card">
+          <strong id="cat3_name">Modified starches</strong>
+          <span id="cat3_desc">Maltodextrin, dextrin, hydrolyzed starch</span>
+        </a>
+        <a href="/ingredients/fruit_juice_concentrate.html" class="category-card">
+          <strong id="cat4_name">Fruit juice concentrates</strong>
+          <span id="cat4_desc">Concentrated fruit juice as sweetener</span>
+        </a>
       </div>
     </section>
 
