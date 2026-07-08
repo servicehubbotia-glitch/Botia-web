@@ -1,0 +1,25 @@
+{
+  "name": "Free sugars",
+  "e_code": null,
+  "aliases": "glucose, fructose, sucrose, dextrose, table sugar, added sugar, free sugar, simple sugar",
+  "module_icon": "Sugar.png",
+  "layers": [
+    "sugar"
+  ],
+  "what_is": "Simple sugars added to foods during processing or preparation, plus sugars naturally present in honey, syrups and fruit juice concentrates. These are the sugars WHO recommends limiting to less than 10% of total energy intake.",
+  "why_botia": "They are classified as free sugars by WHO. They contribute to excess energy intake without providing specific nutrients. WHO recommends limiting intake to below 10% of daily energy — ideally below 5%.",
+  "can_1": "Detect simple sugars classified as free sugars by WHO criteria.",
+  "can_2": "Flag their presence in products marketed as natural or healthy.",
+  "cannot_1": "Distinguish between naturally occurring and added sugars in the final product.",
+  "cannot_2": "Quantify the exact amount of free sugars present.",
+  "sources": [
+    {
+      "label": "WHO Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    },
+    {
+      "label": "EFSA Scientific Opinion on dietary sugars (2022)",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/7074"
+    }
+  ]
+}
