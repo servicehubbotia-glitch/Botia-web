@@ -33,11 +33,7 @@
     .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
     
     body[dir="rtl"] 
-    .lang-switcher select {
-      background: rgba(24, 13, 13, 0.96); color: #f2e4dc;
-      border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
-      padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
-    }
+    
     .hero { padding: 20px 0 10px; text-align: center; }
     .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
     .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
@@ -172,8 +168,18 @@
 
 </head>
 <body>
-<!-- Hamburger Menu -->
+<!-- Header -->
 <button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+<a href="/index.html" style="position:fixed;top:10px;left:52px;z-index:1000;"><img src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+<div class="lang-switcher">
+  <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+  <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+    <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option>
+  </select>
+</div>
+
+<!-- Hamburger Menu -->
+
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
 <nav class="sidebar" id="sidebar">
   <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
