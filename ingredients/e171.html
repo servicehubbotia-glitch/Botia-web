@@ -84,13 +84,7 @@
   
 
   /* Hamburger Menu */
-.hamburger-btn { ;
-  position: fixed; top: 8px; left: 12px; ;
-  background: rgba(8,4,4,0.92); color: #e6a06b; border: 1px solid rgba(190,122,72,0.3);
-  border-radius: 6px; width: 36px; height: 36px; font-size: 1.2rem;
-  cursor: pointer; display: flex; align-items: center; justify-content: center;
-  backdrop-filter: blur(10px);
-}
+
 .hamburger-btn:hover { color: #fff; border-color: #e6a06b; }
 .sidebar-overlay {
   position: fixed; top: 0; left: 0; width: 100%; height: 100%;
@@ -129,13 +123,29 @@
   
 
 
-.hamburger-btn { ;
-  position: fixed; top: 6px; left: 8px; ;
+
+
+
+  
+  .botia-header-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+  background: rgba(8,4,4,0.95); padding: 8px 16px;
+  border-bottom: 1px solid rgba(190,122,72,0.15); backdrop-filter: blur(10px);
+}
+.botia-nav-left { display: flex; align-items: center; gap: 12px; }
+.botia-header-bar .lang-switcher { position: static; }
+.botia-header-bar .lang-switcher select {
+  background: rgba(24,13,13,0.96); color: #f2e4dc;
+  border: 1px solid rgba(190,122,72,0.42); border-radius: 6px;
+  padding: 4px 8px; font-size: 0.75rem; cursor: pointer;
+}
+.hamburger-btn {
   background: none; color: #e6a06b; border: 1px solid rgba(190,122,72,0.3);
   border-radius: 4px; width: 30px; height: 30px; font-size: 1rem;
   cursor: pointer; display: flex; align-items: center; justify-content: center;
 }
-
+body { padding-top: 46px; }
 
   </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/e171.html?lang=en">
@@ -169,14 +179,17 @@
 
 </head>
 <body>
-<!-- Header -->
-<button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
-<a href="/index.html" style="position:fixed;top:10px;left:52px;z-index:1000;"><img src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
-<div class="lang-switcher">
-  <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
-  <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
-    <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option>
-  </select>
+<div class="botia-header-bar">
+  <div class="botia-nav-left">
+    <button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+    <a href="/index.html"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+  </div>
+  <div class="lang-switcher">
+    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option>
+    </select>
+  </div>
 </div>
 
 <!-- Hamburger Menu -->
