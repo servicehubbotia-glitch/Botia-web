@@ -196,46 +196,6 @@ body.menu-open .hero img {
 
 </head>
 <body>
-<!-- BOTIA SIDEBAR MENU -->
-<div class="botia-hamburger-overlay" id="menuOverlay" onclick="closeMenu()"></div>
-<nav class="botia-sidebar" id="sidebar">
-  <button class="sidebar-close" onclick="closeMenu()">✕</button>
-  <ul class="sidebar-menu">
-    <li><a href="/" class="sidebar-link">🏠 Home</a></li>
-    <li class="sidebar-group">
-      <div class="sidebar-group-header" onclick="toggleSubmenu('evidence')"><span>📋 Evidence</span><span class="sidebar-arrow" id="arrow-evidence">►</span></div>
-      <ul class="sidebar-submenu" id="sub-evidence">
-        <li><a href="/pages/evidence.html">Evidence (general)</a></li>
-        <li><a href="/pages/sugar.html">Sugar</a></li>
-        <li><a href="/pages/sweetener.html">Sweeteners</a></li>
-        <li><a href="/pages/texture.html">Texture</a></li>
-        <li><a href="/pages/flavor.html">Flavourings</a></li>
-        <li><a href="/pages/enumbers.html">E-numbers</a></li>
-      </ul>
-    </li>
-    <li><a href="/pages/animal.html" class="sidebar-link">🐾 Animal Origin</a></li>
-    <li class="sidebar-group">
-      <div class="sidebar-group-header" onclick="toggleSubmenu('muslim')"><span>🕌 Muslim Choice</span><span class="sidebar-arrow" id="arrow-muslim">►</span></div>
-      <ul class="sidebar-submenu" id="sub-muslim">
-        <li><a href="/pages/muslim.html">Muslim (general)</a></li>
-        <li><a href="/ingredients/halal.html">Halal</a></li>
-        <li><a href="/ingredients/haram.html">Haram</a></li>
-        <li><a href="/ingredients/mashbooh.html">Mashbooh</a></li>
-      </ul>
-    </li>
-    <li class="sidebar-group">
-      <div class="sidebar-group-header" onclick="toggleSubmenu('woman')"><span>👩‍🔬 Woman</span><span class="sidebar-arrow" id="arrow-woman">►</span></div>
-      <ul class="sidebar-submenu" id="sub-woman">
-        <li><a href="/pages/woman.html">Woman (general)</a></li>
-        <li><a href="/ingredients/endocrine-disruptors.html">Endocrine Disruptors</a></li>
-        <li><a href="/ingredients/packaging-migrants.html">Packaging Migrants</a></li>
-        <li><a href="/ingredients/fat-accumulation.html">Fat-Soluble Accumulation</a></li>
-      </ul>
-    </li>
-    <li><a href="/ingredients/index.html" class="sidebar-link">🧪 Ingredient Index</a></li>
-    <li><a href="/privacy.html" class="sidebar-link">📄 Privacy Policy</a></li>
-  </ul>
-</nav>
 <div class="botia-header-bar">
   <div class="botia-nav-left">
     <button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
@@ -466,9 +426,6 @@ function filterSidebar() {
 
 
 
-</script>
-<script>
-function toggleMenu(){document.getElementById('sidebar').classList.toggle('active');document.getElementById('menuOverlay').classList.toggle('active');document.body.classList.toggle('menu-open')}function closeMenu(){document.getElementById('sidebar').classList.remove('active');document.getElementById('menuOverlay').classList.remove('active');document.body.classList.remove('menu-open')}function toggleSubmenu(id){document.getElementById('sub-'+id).classList.toggle('open');document.getElementById('arrow-'+id).classList.toggle('open')}
 </script>
 </body>
 </html>
