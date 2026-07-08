@@ -151,11 +151,11 @@
       <h2 class="section-title" id="how_title">How BOTIA reads animal origin</h2>
       <div class="how-box confirmed">
         <h4 id="confirmed_label">🐾 Confirmed animal origin</h4>
-        <p id="how_confirmed"></p>
+        <p id="how_confirmed">Some ingredients are always from animals: <a href='/ingredients/gelatine.html'>gelatine</a>, <a href='/ingredients/carmine.html'>carmine (E120)</a>, <a href='/ingredients/shellac.html'>shellac (E904)</a>, beeswax, lactose, casein, whey, honey. When BOTIA finds these, there is no ambiguity.</p>
       </div>
       <div class="how-box ambiguous">
         <h4 id="ambiguous_label">❓ May be animal-derived</h4>
-        <p id="how_ambiguous"></p>
+        <p id="how_ambiguous">Other ingredients may come from animals or plants depending on the manufacturer: <a href='/ingredients/e471.html'>E471</a>, <a href='/ingredients/e472.html'>E472</a>, <a href='/ingredients/lecithins.html'>lecithins (E322)</a>, <a href='/ingredients/glycerol.html'>glycerol (E422)</a>, <a href='/ingredients/enzymes.html'>enzymes</a>, <a href='/ingredients/natural_flavourings.html'>natural flavourings</a>. The label does not say which. Only the manufacturer knows.</p>
       </div>
     </section>
 
@@ -238,7 +238,7 @@
           if (twitterDesc && d.description) twitterDesc.setAttribute('content', d.description);
           
           // Estos IDs tienen enlaces HTML fijos, no se sobrescriben
-          const fijos = [];
+          const fijos = ['how_confirmed', 'how_ambiguous'];
           Object.keys(d).forEach(id => {
             if (id === '_meta' || fijos.includes(id)) return;
             const el = document.getElementById(id);
