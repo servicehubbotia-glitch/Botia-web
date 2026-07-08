@@ -85,6 +85,8 @@
       padding: 10px 24px; border-radius: 8px; text-decoration: none;
       border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
     }
+  
+
   /* Hamburger Menu */
 .hamburger-btn {
   position: fixed; top: 8px; left: 12px; z-index: 1001;
@@ -94,13 +96,11 @@
   backdrop-filter: blur(10px);
 }
 .hamburger-btn:hover { color: #fff; border-color: #e6a06b; }
-
 .sidebar-overlay {
   position: fixed; top: 0; left: 0; width: 100%; height: 100%;
   background: rgba(0,0,0,0.6); z-index: 1001; display: none;
 }
 .sidebar-overlay.open { display: block; }
-
 .sidebar {
   position: fixed; top: 0; left: 0; width: 300px; max-width: 85vw; height: 100%;
   background: rgba(8,4,4,0.97); z-index: 1002; overflow-y: auto;
@@ -108,22 +108,27 @@
   border-right: 1px solid rgba(190,122,72,0.2);
 }
 .sidebar.open { transform: translateX(0); }
-
 .sidebar-close {
-  position: absolute; top: 10px; right: 14px;
-  color: #e6a06b; font-size: 1.4rem; cursor: pointer; background: none; border: none;
+  position: absolute; top: 10px; right: 14px; color: #e6a06b;
+  font-size: 1.4rem; cursor: pointer; background: none; border: none;
 }
 .sidebar-close:hover { color: #fff; }
-
-.sidebar-title { color: #e6a06b; font-size: 1rem; font-weight: 700; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(190,122,72,0.2); }
-
+.sidebar-title { color: #e6a06b; font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
+.sidebar-search {
+  width: 100%; padding: 8px 10px; border-radius: 6px;
+  background: rgba(255,255,255,0.06); color: #f2e4dc;
+  border: 1px solid rgba(190,122,72,0.3); font-size: 0.8rem; margin-bottom: 14px;
+}
+.sidebar-search::placeholder { color: #8a8a8a; }
 .sidebar-tree { list-style: none; padding: 0; margin: 0; }
-.sidebar-tree li { margin: 2px 0; }
-.sidebar-tree a { color: #c0a08c; text-decoration: none; font-size: 0.85rem; display: block; padding: 4px 8px; border-radius: 4px; }
+.sidebar-tree li { margin: 1px 0; }
+.sidebar-tree a { color: #c0a08c; text-decoration: none; font-size: 0.82rem; display: block; padding: 3px 8px; border-radius: 4px; }
 .sidebar-tree a:hover { background: rgba(190,122,72,0.15); color: #f2e4dc; }
-.sidebar-tree .tree-parent { color: #e6a06b; font-weight: 600; font-size: 0.9rem; margin-top: 8px; }
-.sidebar-tree .tree-child { padding-left: 20px; }
+.sidebar-tree .tree-parent { color: #e6a06b; font-weight: 600; font-size: 0.88rem; margin-top: 8px; cursor: pointer; }
+.sidebar-tree .tree-child { padding-left: 16px; display: none; }
+.sidebar-tree .tree-child.show { display: block; }
 .sidebar-tree .tree-home { font-weight: 700; color: #f2e4dc; }
+.sidebar-tree .tree-parent .arrow { font-size: 0.7rem; margin-right: 4px; }
 
   </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/glucose_syrup.html?lang=en">
@@ -157,6 +162,36 @@
 
 </head>
 <body>
+<!-- Hamburger Menu -->
+<button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<nav class="sidebar" id="sidebar">
+  <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+  <div class="sidebar-title">BOTIA</div>
+  <input type="text" class="sidebar-search" placeholder="🔍 Filter..." onkeyup="filterSidebar()" />
+  <ul class="sidebar-tree" id="sidebarTree">
+    <li><a href="/index.html" class="tree-home">🏠 Home</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> 📋 Pages</li>
+    <li class="tree-child"><a href="/pages/evidence.html">Evidence</a></li>
+    <li class="tree-child"><a href="/ingredients/sugar.html">├─ Sugar</a></li>
+    <li class="tree-child"><a href="/ingredients/sweetener.html">├─ Sweeteners</a></li>
+    <li class="tree-child"><a href="/ingredients/texture.html">├─ Texture</a></li>
+    <li class="tree-child"><a href="/ingredients/flavor.html">├─ Flavourings</a></li>
+    <li class="tree-child"><a href="/ingredients/enumbers.html">└─ E-numbers</a></li>
+    <li class="tree-child"><a href="/pages/animal.html">Animal Origin</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> 🕌 Muslim Choice</li>
+    <li class="tree-child"><a href="/ingredients/halal.html">├─ Halal</a></li>
+    <li class="tree-child"><a href="/ingredients/haram.html">├─ Haram</a></li>
+    <li class="tree-child"><a href="/ingredients/mashbooh.html">└─ Mashbooh</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> 👩 Woman</li>
+    <li class="tree-child"><a href="/ingredients/endocrine-disruptors.html">├─ Endocrine Disruptors</a></li>
+    <li class="tree-child"><a href="/ingredients/packaging-migrants.html">├─ Packaging Migrants</a></li>
+    <li class="tree-child"><a href="/ingredients/fat-accumulation.html">└─ Fat Accumulation</a></li>
+    <li class="tree-parent"><a href="/ingredients/index.html" style="color:#e6a06b;font-weight:600;">🧪 Ingredient Index</a></li>
+    <li class="tree-home" style="margin-top:12px;"><a href="/privacy.html">📄 Privacy Policy</a></li>
+  </ul>
+</nav>
+
 <!-- Hamburger Menu -->
 <button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
@@ -396,5 +431,31 @@ function toggleSidebar() {
         .catch(() => { document.documentElement.lang = 'en'; });
     });
   </script>
+<script>
+
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarOverlay').classList.toggle('open');
+}
+function toggleSubmenu(el) {
+  const arrow = el.querySelector('.arrow');
+  const children = el.parentElement.querySelectorAll('.tree-child');
+  const isOpen = children[0].classList.contains('show');
+  children.forEach(c => c.classList.toggle('show', !isOpen));
+  if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
+}
+function filterSidebar() {
+  const query = document.getElementById('sidebarTree')?.querySelector('input')?.value?.toLowerCase() || '';
+  const queryFromInput = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
+  const q = query || queryFromInput;
+  const items = document.querySelectorAll('.sidebar-tree li');
+  items.forEach(item => {
+    const text = item.textContent.toLowerCase();
+    if (!q || text.includes(q)) { item.style.display = ''; }
+    else { item.style.display = 'none'; }
+  });
+}
+
+</script>
 </body>
 </html>
