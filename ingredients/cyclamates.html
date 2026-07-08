@@ -31,8 +31,8 @@
   <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <style>
     .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
-    .lang-switcher { position: fixed; top: 12px; right: 16px; z-index: 100; }
-    body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
+    
+    body[dir="rtl"] 
     .lang-switcher select {
       background: rgba(24,13,13,0.96); color: #f2e4dc;
       border: 1px solid rgba(190,122,72,0.42); border-radius: 8px;
@@ -130,6 +130,27 @@
 .sidebar-tree .tree-home { font-weight: 700; color: #f2e4dc; }
 .sidebar-tree .tree-parent .arrow { font-size: 0.7rem; margin-right: 4px; }
 
+  .botia-header-bar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 6px 10px; background: rgba(8,4,4,0.95);
+  border-bottom: 1px solid rgba(190,122,72,0.15); backdrop-filter: blur(10px);
+  height: 42px;
+}
+.header-logo { display: flex; align-items: center; margin-left: 40px; }
+.header-lang select {
+  background: rgba(24,13,13,0.96); color: #f2e4dc;
+  border: 1px solid rgba(190,122,72,0.42); border-radius: 6px;
+  padding: 4px 8px; font-size: 0.75rem; cursor: pointer;
+}
+.hamburger-btn {
+  position: fixed; top: 6px; left: 8px; z-index: 1000;
+  background: none; color: #e6a06b; border: 1px solid rgba(190,122,72,0.3);
+  border-radius: 4px; width: 30px; height: 30px; font-size: 1rem;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+body { padding-top: 42px; }
+
   </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/cyclamates.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/cyclamates.html?lang=es">
@@ -162,116 +183,24 @@
 
 </head>
 <body>
-<!-- Hamburger Menu -->
-<button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
-<nav class="sidebar" id="sidebar">
-  <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
-  <div class="sidebar-title">BOTIA</div>
-  <input type="text" class="sidebar-search" placeholder="🔍 Filter..." onkeyup="filterSidebar()" />
-  <ul class="sidebar-tree" id="sidebarTree">
-    <li><a href="/index.html" class="tree-home">🏠 Home</a></li>
-    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> 📋 Pages</li>
-    <li class="tree-child"><a href="/pages/evidence.html">Evidence</a></li>
-    <li class="tree-child"><a href="/ingredients/sugar.html">├─ Sugar</a></li>
-    <li class="tree-child"><a href="/ingredients/sweetener.html">├─ Sweeteners</a></li>
-    <li class="tree-child"><a href="/ingredients/texture.html">├─ Texture</a></li>
-    <li class="tree-child"><a href="/ingredients/flavor.html">├─ Flavourings</a></li>
-    <li class="tree-child"><a href="/ingredients/enumbers.html">└─ E-numbers</a></li>
-    <li class="tree-child"><a href="/pages/animal.html">Animal Origin</a></li>
-    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> 🕌 Muslim Choice</li>
-    <li class="tree-child"><a href="/ingredients/halal.html">├─ Halal</a></li>
-    <li class="tree-child"><a href="/ingredients/haram.html">├─ Haram</a></li>
-    <li class="tree-child"><a href="/ingredients/mashbooh.html">└─ Mashbooh</a></li>
-    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> 👩 Woman</li>
-    <li class="tree-child"><a href="/ingredients/endocrine-disruptors.html">├─ Endocrine Disruptors</a></li>
-    <li class="tree-child"><a href="/ingredients/packaging-migrants.html">├─ Packaging Migrants</a></li>
-    <li class="tree-child"><a href="/ingredients/fat-accumulation.html">└─ Fat Accumulation</a></li>
-    <li class="tree-parent"><a href="/ingredients/index.html" style="color:#e6a06b;font-weight:600;">🧪 Ingredient Index</a></li>
-    <li class="tree-home" style="margin-top:12px;"><a href="/privacy.html">📄 Privacy Policy</a></li>
-  </ul>
-</nav>
+<!-- Header -->
+<div class="botia-header-bar">
+  <button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+  <a href="/index.html" class="header-logo"><img src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+  <div class="header-lang"><select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+    <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option>
+  </select></div>
+</div>
 
-<!-- Hamburger Menu -->
-<button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
-<nav class="sidebar" id="sidebar">
-  <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
-  <div class="sidebar-title">BOTIA</div>
-  <ul class="sidebar-tree">
-    <li><a href="/index.html" class="tree-home">🏠 Home</a></li>
-    <li class="tree-parent">📋 Pages</li>
-    <li class="tree-child"><a href="/pages/evidence.html">Evidence</a></li>
-    <li class="tree-child"><a href="/pages/animal.html">Animal</a></li>
-    <li class="tree-child"><a href="/pages/muslim.html">Muslim</a></li>
-    <li class="tree-child"><a href="/pages/woman.html">Woman</a></li>
-    <li class="tree-parent">🧪 Ingredients</li>
-    <li class="tree-child"><a href="/ingredients/acesulfame_k.html">Acesulfame potassium</a></li>
-    <li class="tree-child"><a href="/ingredients/alcohol.html">Alcohol</a></li>
-    <li class="tree-child"><a href="/ingredients/aspartame.html">Aspartame</a></li>
-    <li class="tree-child"><a href="/ingredients/bha.html">Butylated hydroxyanisole</a></li>
-    <li class="tree-child"><a href="/ingredients/bht.html">Butylated hydroxytoluene</a></li>
-    <li class="tree-child"><a href="/ingredients/bpa.html">Bisphenol A</a></li>
-    <li class="tree-child"><a href="/ingredients/cadmium.html">Cadmium</a></li>
-    <li class="tree-child"><a href="/ingredients/carmine.html">Carmine</a></li>
-    <li class="tree-child"><a href="/ingredients/carrageenan.html">Carrageenan</a></li>
-    <li class="tree-child"><a href="/ingredients/cyclamates.html">Cyclamates</a></li>
-    <li class="tree-child"><a href="/ingredients/dioxins_pcbs.html">Dioxins and PCBs</a></li>
-    <li class="tree-child"><a href="/ingredients/e171.html">Titanium dioxide</a></li>
-    <li class="tree-child"><a href="/ingredients/e471.html">Mono- and diglycerides of fatty acids</a></li>
-    <li class="tree-child"><a href="/ingredients/e472.html">Esters of mono- and diglycerides of fatty acids</a></li>
-    <li class="tree-child"><a href="/ingredients/enzymes.html">Food enzymes</a></li>
-    <li class="tree-child"><a href="/ingredients/erythritol.html">Erythritol</a></li>
-    <li class="tree-child"><a href="/ingredients/gelatine.html">Gelatine</a></li>
-    <li class="tree-child"><a href="/ingredients/glucose_syrup.html">Glucose syrup</a></li>
-    <li class="tree-child"><a href="/ingredients/glycerol.html">Glycerol</a></li>
-    <li class="tree-child"><a href="/ingredients/guar_gum.html">Guar gum</a></li>
-    <li class="tree-child"><a href="/ingredients/konjac.html">Konjac</a></li>
-    <li class="tree-child"><a href="/ingredients/lead.html">Lead</a></li>
-    <li class="tree-child"><a href="/ingredients/lecithins.html">Lecithins</a></li>
-    <li class="tree-child"><a href="/ingredients/maltitol.html">Maltitols</a></li>
-    <li class="tree-child"><a href="/ingredients/maltodextrin.html">Maltodextrin</a></li>
-    <li class="tree-child"><a href="/ingredients/methylmercury.html">Methylmercury</a></li>
-    <li class="tree-child"><a href="/ingredients/natural_flavourings.html">Natural Flavourings</a></li>
-    <li class="tree-child"><a href="/ingredients/parabens.html">Parabens</a></li>
-    <li class="tree-child"><a href="/ingredients/phthalates.html">Phthalates</a></li>
-    <li class="tree-child"><a href="/ingredients/saccharin.html">Saccharin</a></li>
-    <li class="tree-child"><a href="/ingredients/shellac.html">Shellac</a></li>
-    <li class="tree-child"><a href="/ingredients/sorbitol.html">Sorbitol</a></li>
-    <li class="tree-child"><a href="/ingredients/steviol_glycosides.html">Steviol glycosides from Stevia</a></li>
-    <li class="tree-child"><a href="/ingredients/sucralose.html">Sucralose</a></li>
-    <li class="tree-child"><a href="/ingredients/trans_fats.html">Trans fatty acids</a></li>
-    <li class="tree-child"><a href="/ingredients/vinegar.html">Vinegar</a></li>
-    <li class="tree-child"><a href="/ingredients/xanthan_gum.html">Xanthan gum</a></li>
-    <li class="tree-child"><a href="/ingredients/xylitol.html">Xylitol</a></li>
-  </ul>
-</nav>
+
+
+
 
   <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
   
-  <div class="lang-switcher">
-    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
-    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
-      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
-      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
-      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
-      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
-      <option value="tr">Türkçe</option><option value="zh">中文</option>
-    </select>
-  </div>
+  
 
-  <nav class="botia-nav">
-  <a href="/index.html" class="nav-logo" aria-label="BOTIA Home">
-    <img src="/botia_jar_512.png" alt="BOTIA — Cyclamates ingredient icon" style="width:32px;height:32px;" />
-  </a>
-  <div class="nav-links">
-    <a href="/pages/animal.html">Animal</a>
-    <a href="/pages/muslim.html">Muslim</a>
-    <a href="/pages/woman.html">Woman</a>
-    <a href="/pages/evidence.html">Evidence</a>
-      <a href="/ingredients/index.html">Index</a>
-  </div>
-</nav>
+  
 
   <main class="landing" id="main-content">
     <section class="hero">
