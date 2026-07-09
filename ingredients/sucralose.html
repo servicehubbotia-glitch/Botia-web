@@ -29,145 +29,7 @@
   <link rel="stylesheet" href="/botia-landing.css" />
   <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
   <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
-  <style>
-    .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
-    
-    body[dir="rtl"] 
-    
-    .hero { padding: 12px 0 0; text-align: center; }
-    .hero img { width: 144px; height: 144px; margin-bottom: 12px; }
-    .hero h1 { font-size: 1.6rem; color: #f2e4dc; margin-bottom: 4px; }
-    .e-code { font-size: 0.9rem; color: #e6a06b; margin-bottom: 4px; }
-    .aliases { font-size: 0.8rem; color: #8a8a8a; margin-bottom: 8px; }
-    .section { margin-bottom: 14px; }
-    .section-title { font-size: 1.2rem; color: #e6a06b; margin-bottom: 8px; }
-    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.6; }
-    .layer-badge {
-      display: inline-block; padding: 3px 12px; border-radius: 20px;
-      font-size: 0.75rem; font-weight: 700; margin: 3px;
-      text-transform: uppercase; letter-spacing: 0.5px;
-    }
-    .layer-muslim { background: #1e4a6a; color: #fff; }
-    .layer-animal { background: #4a2a0a; color: #fff; }
-    .layer-woman { background: #6a1a3a; color: #fff; }
-    .layer-sugar { background: #6a3a0a; color: #fff; }
-    .layer-sweetener { background: #4a3a6a; color: #fff; }
-    .layer-texture { background: #2a4a2a; color: #fff; }
-    .layer-flavour { background: #4a4a0a; color: #fff; }
-    .layer-enumbers { background: #3a3a3a; color: #fff; }
-    .can-cannot {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
-    }
-    @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
-    .can-box, .cannot-box {
-      background: rgba(24,13,13,0.9); border-radius: 12px; padding: 16px;
-    }
-    .can-box { border: 1px solid rgba(100,180,100,0.4); }
-    .cannot-box { border: 1px solid rgba(180,100,100,0.4); }
-    .can-box h4, .cannot-box h4 { color: #f2e4dc; margin-bottom: 8px; font-size: 0.95rem; }
-    .can-box li, .cannot-box li {
-      font-size: 0.85rem; color: #c0a08c; padding-left: 20px;
-      position: relative; margin-bottom: 4px; list-style: none;
-    }
-    .can-box li::before { content: "✅"; position: absolute; left: 0; }
-    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
-    .sources-list { list-style: none; padding: 0; }
-    .sources-list li { margin-bottom: 8px; }
-    .sources-list a { color: #e6a06b; font-size: 0.9rem; text-decoration: none; }
-    .sources-list a:hover { text-decoration: underline; }
-    .closing { text-align: center; padding: 20px 0; }
-    .cta-button {
-      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
-      padding: 10px 24px; border-radius: 8px; text-decoration: none;
-      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
-    }
   
-
-  /* Hamburger Menu */
-
-.hamburger-btn:hover { color: #fff; border-color: #e6a06b; }
-.sidebar-overlay {
-  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6); ; display: none;
-}
-.sidebar-overlay.open { display: block; }
-.sidebar {
-  position: fixed; top: 0; left: 0; width: 300px; max-width: 85vw; height: 100%;
-  background: rgba(8,4,4,0.97); ; overflow-y: auto;
-  padding: 16px; transform: translateX(-100%); transition: transform 0.3s ease;
-  border-right: 1px solid rgba(190,122,72,0.2);
-}
-.sidebar.open { transform: translateX(0); }
-.sidebar-close {
-  position: absolute; top: 10px; right: 14px; color: #e6a06b;
-  font-size: 1.4rem; cursor: pointer; background: none; border: none;
-}
-.sidebar-close:hover { color: #fff; }
-.sidebar-title { color: #e6a06b; font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
-.sidebar-search {
-  width: 100%; padding: 8px 10px; border-radius: 6px;
-  background: rgba(255,255,255,0.06); color: #f2e4dc;
-  border: 1px solid rgba(190,122,72,0.3); font-size: 0.8rem; margin-bottom: 14px;
-}
-.sidebar-search::placeholder { color: #8a8a8a; }
-.sidebar-tree { list-style: none; padding: 0; margin: 0; }
-.sidebar-tree li { margin: 1px 0; }
-.sidebar-tree a { color: #c0a08c; text-decoration: none; font-size: 0.82rem; display: block; padding: 3px 8px; border-radius: 4px; }
-.sidebar-tree a:hover { background: rgba(190,122,72,0.15); color: #f2e4dc; }
-.sidebar-tree .tree-parent { color: #e6a06b; font-weight: 600; font-size: 0.88rem; margin-top: 8px; cursor: pointer; }
-.sidebar-tree .tree-child { padding-left: 16px; display: none; }
-.sidebar-tree .tree-child.show { display: block; }
-.sidebar-tree .tree-home { font-weight: 700; color: #f2e4dc; }
-.sidebar-tree .tree-parent .arrow { font-size: 0.7rem; margin-right: 4px; }
-
-  
-
-
-
-
-
-  
-  .botia-header-bar {
-  display: flex; align-items: center; justify-content: space-between;
-  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
-  background: rgba(8,4,4,0.95); padding: 4px 12px;
-  border-bottom: 1px solid rgba(190,122,72,0.15); backdrop-filter: blur(10px);
-}
-.botia-nav-left { display: flex; align-items: center; gap: 12px; }
-.botia-header-bar .lang-switcher { position: static; }
-.botia-header-bar .lang-switcher select {
-  background: rgba(24,13,13,0.96); color: #f2e4dc;
-  border: 1px solid rgba(190,122,72,0.42); border-radius: 6px;
-  padding: 4px 8px; font-size: 0.75rem; cursor: pointer;
-}
-.hamburger-btn {
-  background: none; color: #e6a06b; border: 1px solid rgba(190,122,72,0.3);
-  border-radius: 4px; width: 30px; height: 30px; font-size: 1rem;
-  cursor: pointer; display: flex; align-items: center; justify-content: center;
-}
-body { padding-top: 36px; }
-
-  
-body.menu-open .hero img,
-body.menu-open #module_icon {
-  z-index: 0 !important;
-  position: relative !important;
-}
-
-  
-body.menu-open .hero,
-body.menu-open .hero *,
-body.menu-open #module_icon,
-body.menu-open .hero-logo,
-body.menu-open .hero img {
-  visibility: hidden !important;
-  opacity: 0 !important;
-  z-index: 0 !important;
-}
-
-  
-    .hero + .section { margin-top: 0 !important; }
-  </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/sucralose.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/sucralose.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/ingredients/sucralose.html?lang=ar">
@@ -197,6 +59,7 @@ body.menu-open .hero img {
 }
 </script>
 
+  <link rel="stylesheet" href="/menu.css">
 </head>
 <body>
 <div class="botia-header-bar">
@@ -456,5 +319,6 @@ function filterSidebar() {
 
 
 </script>
+  <script src="/menu.js"></script>
 </body>
 </html>
