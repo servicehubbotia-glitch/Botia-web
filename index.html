@@ -59,22 +59,11 @@
   }
   </script>
   <style>
-    .botia-header-bar {
+    .lang-switcher {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 10px;
+      right: 16px;
       z-index: 999;
-      background: rgba(8,4,4,0.95);
-      border-bottom: 1px solid rgba(190,122,72,0.2);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 8px 16px;
-      gap: 12px;
-    }
-    .nav-logo {
-      width: 36px;
-      height: 36px;
-      object-fit: contain;
     }
     .lang-switcher select {
       background: rgba(24,13,13,0.96);
@@ -85,30 +74,26 @@
       font-size: 0.85rem;
       cursor: pointer;
     }
-    body { padding-top: 52px; }
   </style>
 </head>
 <body>
-  <div class="botia-header-bar">
-    <a href="/"><img src="/botia_jar_512.png" class="nav-logo" alt="BOTIA"></a>
-    <div class="lang-switcher">
-      <select id="lang-select" onchange="cambiarIdioma(this.value)">
-        <option value="en">English</option>
-        <option value="ar">العربية</option>
-        <option value="de">Deutsch</option>
-        <option value="es">Español</option>
-        <option value="fr">Français</option>
-        <option value="id">Bahasa Indonesia</option>
-        <option value="it">Italiano</option>
-        <option value="nl">Nederlands</option>
-        <option value="pl">Polski</option>
-        <option value="pt">Português</option>
-        <option value="ro">Română</option>
-        <option value="ru">Русский</option>
-        <option value="tr">Türkçe</option>
-        <option value="zh">中文</option>
-      </select>
-    </div>
+  <div class="lang-switcher">
+    <select id="lang-select" onchange="cambiarIdioma(this.value)">
+      <option value="en">English</option>
+      <option value="ar">العربية</option>
+      <option value="de">Deutsch</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option>
+      <option value="nl">Nederlands</option>
+      <option value="pl">Polski</option>
+      <option value="pt">Português</option>
+      <option value="ro">Română</option>
+      <option value="ru">Русский</option>
+      <option value="tr">Türkçe</option>
+      <option value="zh">中文</option>
+    </select>
   </div>
 
   <main class="landing" id="main-content">
@@ -122,110 +107,27 @@
 
     <div class="stats-box">
       <div class="stats-number" id="stats_number">72%</div>
-      <div class="stats-text" id="stats_text">uncertain — in our first analysis of real supermarket products, 72% of results were uncertain, not because the ingredients were forbidden, but because science is still ongoing, and labels are not transparent.</div>
+      <div class="stats-text" id="stats_text">uncertain — in our first analysis of real supermarket products, 72% of results were uncertain, not because the ingredients were forbidden, but because the label simply didn't say enough to know.</div>
     </div>
 
     <section class="section">
       <h2 class="section-title" id="modules_title">Explore BOTIA</h2>
       <div class="modules-grid">
         <a href="/pages/evidence.html" class="module-card">
-          <img src="/botia/assets/evidence.png" alt="Evidence Layers" />
+          <img src="/botia/assets/evidence.png" srcset="/botia/assets/evidence.webp" onerror="this.src='/botia/assets/evidence.png'" style="content-visibility:auto;" alt="Evidence Layers" />
           <div class="card-title" id="evidence_name">Evidence Layers</div>
           <div class="card-desc" id="evidence_desc">Scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius</div>
         </a>
         <a href="/pages/woman.html" class="module-card">
-          <img src="/botia/assets/mujer.png" alt="Woman" />
+          <img src="/botia/assets/mujer.png" srcset="/botia/assets/mujer.webp" onerror="this.src='/botia/assets/mujer.png'" style="content-visibility:auto;" alt="Woman" />
           <div class="card-title" id="woman_name">Woman</div>
           <div class="card-desc" id="woman_desc">Scientific evidence specific to women's biology, when it exists</div>
         </a>
         <a href="/pages/animal.html" class="module-card">
-          <img src="/botia/assets/animal.png" alt="Animal" />
+          <img src="/botia/assets/animal.png" srcset="/botia/assets/animal.webp" onerror="this.src='/botia/assets/animal.png'" style="content-visibility:auto;" alt="Animal" />
           <div class="card-title" id="animal_name">Animal Origin</div>
           <div class="card-desc" id="animal_desc">What the label says about animal-derived ingredients — and what it doesn't</div>
         </a>
         <a href="/pages/muslim.html" class="module-card">
-          <img src="/botia/assets/muslim.png" alt="Muslim" />
-          <div class="card-title" id="muslim_name">Muslim Choice</div>
-          <div class="card-desc" id="muslim_desc">Documented criteria for halal, haram, and mashbooh ingredients</div>
-        </a>
-      </div>
-    </section>
-
-    <div class="highlight-box">
-      <p id="highlight_text">BOTIA does not replace WHO, EFSA, the European Commission, FDA, or scientific literature. It translates complex food evidence into information that can be used while shopping — in real time, across borders, and with transparency.</p>
-    </div>
-
-    <section class="closing">
-      <p class="source-links">
-        <a href="https://www.who.int/health-topics/food-safety" target="_blank" rel="noopener">WHO Food Safety</a> ·
-        <a href="https://www.efsa.europa.eu/" target="_blank" rel="noopener">EFSA</a> ·
-        <a href="https://www.fda.gov/food" target="_blank" rel="noopener">FDA Food</a> ·
-        <a href="https://www.fao.org/fao-who-codexalimentarius/en/" target="_blank" rel="noopener">Codex Alimentarius</a>
-      </p>
-    </section>
-    <p style="text-align:center;font-size:0.8rem;margin-top:20px;">
-      <a href="/privacy.html" style="color:#8a8a8a;">Privacy Policy</a>
-    </p>
-  </main>
-
-  <script>
-    const LANGS = ['en','es','ar','de','fr','nl','it','pt','pl','ro','ru','tr','zh','id'];
-
-    function cambiarIdioma(lang) {
-      localStorage.setItem('botia-lang', lang);
-      location.reload();
-    }
-
-    function detectLang() {
-      const url = new URLSearchParams(window.location.search).get('lang');
-      if (url && LANGS.includes(url)) return url;
-      const stored = localStorage.getItem('botia-lang');
-      if (stored && LANGS.includes(stored)) return stored;
-      const browser = navigator.language.split('-')[0];
-      return LANGS.includes(browser) ? browser : 'en';
-    }
-
-    const LANG = detectLang();
-    document.getElementById('lang-select').value = LANG;
-    if (LANG === 'ar') {
-      document.documentElement.setAttribute('dir', 'rtl');
-      document.documentElement.setAttribute('lang', 'ar');
-    } else {
-      document.documentElement.setAttribute('lang', LANG);
-    }
-
-    fetch('/i18n/' + LANG + '/landing.json')
-      .then(r => r.json())
-      .then(d => {
-        const set = (id, val) => {
-          const el = document.getElementById(id);
-          if (el && val) el.textContent = val;
-        };
-        if (d.hero) {
-          set('title', d.hero.title);
-          set('subtitle', d.hero.subtitle);
-          set('description', d.hero.description);
-          set('cta', d.hero.cta && d.hero.cta.text);
-        }
-        if (d.stat_72_percent) {
-          set('stats_number', d.stat_72_percent.number);
-          set('stats_text', d.stat_72_percent.body);
-        }
-        if (d.two_kinds_of_knowledge) {
-          set('modules_title', d.two_kinds_of_knowledge.title);
-          if (d.two_kinds_of_knowledge.evidence_based) {
-            set('evidence_name', d.two_kinds_of_knowledge.evidence_based.label);
-            set('evidence_desc', d.two_kinds_of_knowledge.evidence_based.description);
-          }
-        }
-        set('woman_name', d.woman_note && d.woman_note.title);
-        set('animal_name', 'Animal Origin');
-        set('muslim_name', 'Muslim Choice');
-        set('highlight_text', d.transparency && d.transparency.items && d.transparency.items.join(' '));
-      })
-      .catch(() => {
-        document.documentElement.setAttribute('lang', 'en');
-      });
-  </script>
-</body>
-</html>
+          <img src="/botia/assets/muslim.png" srcset="/botia/assets/muslim.webp" onerror="this.src='/botia/assets/muslim.png'" style="content-visibility:auto;" alt="Muslim" />
+          <div
