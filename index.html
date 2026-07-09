@@ -85,6 +85,7 @@
       font-size: 0.85rem;
       cursor: pointer;
     }
+    body { padding-top: 52px; }
   </style>
 </head>
 <body>
@@ -162,8 +163,69 @@
         <a href="https://www.fao.org/fao-who-codexalimentarius/en/" target="_blank" rel="noopener">Codex Alimentarius</a>
       </p>
     </section>
-    <p style="text-align:center;font-size:0.8rem;margin-top:20px;"><a href="/privacy.html" style="color:#8a8a8a;">Privacy Policy</a></p>
+    <p style="text-align:center;font-size:0.8rem;margin-top:20px;">
+      <a href="/privacy.html" style="color:#8a8a8a;">Privacy Policy</a>
+    </p>
   </main>
 
+  <script>
+    const LANGS = ['en','es','ar','de','fr','nl','it','pt','pl','ro','ru','tr','zh','id'];
+
+    function cambiarIdioma(lang) {
+      localStorage.setItem('botia-lang', lang);
+      location.reload();
+    }
+
+    function detectLang() {
+      const url = new URLSearchParams(window.location.search).get('lang');
+      if (url && LANGS.includes(url)) return url;
+      const stored = localStorage.getItem('botia-lang');
+      if (stored && LANGS.includes(stored)) return stored;
+      const browser = navigator.language.split('-')[0];
+      return LANGS.includes(browser) ? browser : 'en';
+    }
+
+    const LANG = detectLang();
+    document.getElementById('lang-select').value = LANG;
+    if (LANG === 'ar') {
+      document.documentElement.setAttribute('dir', 'rtl');
+      document.documentElement.setAttribute('lang', 'ar');
+    } else {
+      document.documentElement.setAttribute('lang', LANG);
+    }
+
+    fetch('/i18n/' + LANG + '/landing.json')
+      .then(r => r.json())
+      .then(d => {
+        const set = (id, val) => {
+          const el = document.getElementById(id);
+          if (el && val) el.textContent = val;
+        };
+        if (d.hero) {
+          set('title', d.hero.title);
+          set('subtitle', d.hero.subtitle);
+          set('description', d.hero.description);
+          set('cta', d.hero.cta && d.hero.cta.text);
+        }
+        if (d.stat_72_percent) {
+          set('stats_number', d.stat_72_percent.number);
+          set('stats_text', d.stat_72_percent.body);
+        }
+        if (d.two_kinds_of_knowledge) {
+          set('modules_title', d.two_kinds_of_knowledge.title);
+          if (d.two_kinds_of_knowledge.evidence_based) {
+            set('evidence_name', d.two_kinds_of_knowledge.evidence_based.label);
+            set('evidence_desc', d.two_kinds_of_knowledge.evidence_based.description);
+          }
+        }
+        set('woman_name', d.woman_note && d.woman_note.title);
+        set('animal_name', 'Animal Origin');
+        set('muslim_name', 'Muslim Choice');
+        set('highlight_text', d.transparency && d.transparency.items && d.transparency.items.join(' '));
+      })
+      .catch(() => {
+        document.documentElement.setAttribute('lang', 'en');
+      });
+  </script>
 </body>
 </html>
