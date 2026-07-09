@@ -1,227 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BOTIA — Food Transparency</title>
-  <meta property="og:title" content="BOTIA — Food Transparency">
-  <meta property="og:description" content="BOTIA reads food ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence.">
-  <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
-  <meta property="og:url" content="https://www.botia-safefood.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="BOTIA Food Transparency">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BOTIA — Food Transparency">
-  <meta name="twitter:description" content="BOTIA reads food ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence.">
-  <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
-  <link rel="canonical" href="https://www.botia-safefood.com/" />
-  <meta name="description" content="BOTIA reads food ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence. Not fear. Not judgement." />
-  <link rel="dns-prefetch" href="https://www.who.int">
-  <link rel="dns-prefetch" href="https://www.efsa.europa.eu">
-  <link rel="dns-prefetch" href="https://eur-lex.europa.eu">
-  <link rel="dns-prefetch" href="https://www.fao.org">
-  <link rel="preconnect" href="https://www.who.int">
-  <link rel="preconnect" href="https://www.efsa.europa.eu">
-  <link rel="preconnect" href="https://eur-lex.europa.eu">
-  <link rel="preconnect" href="https://www.fao.org">
-  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
-  <link rel="preload" href="/botia-landing.css" as="style">
-  <link rel="stylesheet" href="/botia-landing.css" />
-  <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
-  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>BOTIA — Food Transparency</title>
+ <meta property="og:title" content="BOTIA — Food Transparency">
+ <meta property="og:description" content="BOTIA reads food ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence.">
+ <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+ <meta property="og:url" content="https://www.botia-safefood.com/">
+ <meta property="og:type" content="website">
+ <meta property="og:site_name" content="BOTIA Food Transparency">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="BOTIA — Food Transparency">
+ <meta name="twitter:description" content="BOTIA reads food ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence.">
+ <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+ <link rel="canonical" href="https://www.botia-safefood.com/" />
+ <meta name="description" content="BOTIA reads food ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence. Not fear. Not judgement." />
+   <link rel="dns-prefetch" href="https://www.who.int">
+ <link rel="dns-prefetch" href="https://www.efsa.europa.eu">
+ <link rel="dns-prefetch" href="https://eur-lex.europa.eu">
+ <link rel="dns-prefetch" href="https://www.fao.org">
+ <link rel="preconnect" href="https://www.who.int">
+ <link rel="preconnect" href="https://www.efsa.europa.eu">
+ <link rel="preconnect" href="https://eur-lex.europa.eu">
+ <link rel="preconnect" href="https://www.fao.org">
+ <link rel="icon" type="image/png" href="/botia_jar_512.png" />
+ <link rel="preload" href="/botia-landing.css" as="style">
+ <link rel="stylesheet" href="/botia-landing.css" />
+ <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
+ <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/index.html?lang=en">
-  <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/index.html?lang=es">
-  <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/index.html?lang=ar">
-  <link rel="alternate" hreflang="de" href="https://www.botia-safefood.com/index.html?lang=de">
-  <link rel="alternate" hreflang="fr" href="https://www.botia-safefood.com/index.html?lang=fr">
-  <link rel="alternate" hreflang="nl" href="https://www.botia-safefood.com/index.html?lang=nl">
-  <link rel="alternate" hreflang="it" href="https://www.botia-safefood.com/index.html?lang=it">
-  <link rel="alternate" hreflang="pt" href="https://www.botia-safefood.com/index.html?lang=pt">
-  <link rel="alternate" hreflang="pl" href="https://www.botia-safefood.com/index.html?lang=pl">
-  <link rel="alternate" hreflang="ro" href="https://www.botia-safefood.com/index.html?lang=ro">
-  <link rel="alternate" hreflang="ru" href="https://www.botia-safefood.com/index.html?lang=ru">
-  <link rel="alternate" hreflang="tr" href="https://www.botia-safefood.com/index.html?lang=tr">
-  <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/index.html?lang=zh">
-  <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/index.html?lang=id">
-  <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/index.html">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "BOTIA",
-    "url": "https://www.botia-safefood.com",
-    "description": "BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.botia-safefood.com/ingredients/index.html?search={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-  <style>
-    .lang-switcher {
-      position: fixed;
-      top: 10px;
-      right: 16px;
-      z-index: 999;
-    }
-    .lang-switcher select {
-      background: rgba(24,13,13,0.96);
-      color: #f2e4dc;
-      border: 1px solid rgba(190,122,72,0.42);
-      border-radius: 8px;
-      padding: 6px 10px;
-      font-size: 0.85rem;
-      cursor: pointer;
-    }
-    .modules-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-top: 20px;
-    }
-    @media (max-width: 600px) {
-      .modules-grid { grid-template-columns: 1fr; }
-    }
-    .stats-box {
-      text-align: center;
-      padding: 30px 20px;
-      margin: 20px 0;
-    }
-    .stats-number {
-      font-size: 4rem;
-      font-weight: 900;
-      color: #e6a06b;
-      line-height: 1;
-    }
-    .stats-text {
-      color: #f2e4dc;
-      margin-top: 10px;
-      line-height: 1.6;
-    }
-  </style>
-</head>
-<body>
-  <div class="lang-switcher">
-    <select id="lang-select" onchange="cambiarIdioma(this.value)">
-      <option value="en">English</option>
-      <option value="ar">العربية</option>
-      <option value="de">Deutsch</option>
-      <option value="es">Español</option>
-      <option value="fr">Français</option>
-      <option value="id">Bahasa Indonesia</option>
-      <option value="it">Italiano</option>
-      <option value="nl">Nederlands</option>
-      <option value="pl">Polski</option>
-      <option value="pt">Português</option>
-      <option value="ro">Română</option>
-      <option value="ru">Русский</option>
-      <option value="tr">Türkçe</option>
-      <option value="zh">中文</option>
-    </select>
-  </div>
+ <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/index.html?lang=es">
+ <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/index.html?lang=ar">
+ <link rel="alternate" hreflang="de" href="https://www.botia-safefood.com/index.html?lang=de">
+ <link rel="alternate" hreflang="fr" href="https://www.botia-safefood.com/index.html?lang=fr">
+ <link rel="alternate" hreflang="nl" href="https://www.botia-safefood.com/index.html?lang=nl">
+ <link rel="alternate" hreflang="it" href="https://www.botia-safefood.com/index.html?lang=it">
+ <link rel="alternate" hreflang="pt" href="https://www.botia-safefood.com/index.html?lang=pt">
+ <link rel="alternate" hreflang="pl" href="https://www.botia-safefood.com/index.html?lang=pl">
+ <link rel="alternate" hreflang="ro" href="https://www.botia-safefood.com/index.html?lang=ro">
+ <link rel="alternate" hreflang="ru" href="https://www.botia-safefood.com/index.html?lang=ru">
+ <link rel="alternate" hreflang="tr" href="https://www.botia-safefood.com/index.html?lang=tr">
+ <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/index.html?lang=zh">
+ <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/index.html?lang=id">
+ <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/index.html">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "BOTIA",
+ "url": "https://www.botia-safefood.com",
+ "description": "BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence.",
+ "potentialAction": {
+   "@type": "SearchAction",
+   "target": "https://www.botia-safefood.com/ingredients/index.html?search={search_term_string}",
+   "query-input": "required name=search_term_string"
+ }
+}
+</script>
+<style>
+.botia-header-bar {
+ position: fixed;
+ top: 0; left: 0; right: 0;
+ z-index: 999;
+ background: rgba(8,4,4,0.95);
+ border-bottom: 1px solid rgba(190,122,72,0.2);
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 8px 16px;
+ gap: 12px;
+}
+.hamburger-btn {
+ background: none;
+ border: 1px solid rgba(190,122,72,0.4);
+ border-radius: 6px;
+ color: #e6a06b;
+ font-size: 1.2rem;
+ padding: 6px 10px;
+ cursor: pointer;
+ z-index: 1000;
+}
 
-  <main class="landing" id="main-content">
-    <section class="hero">
-      <img class="hero-logo" fetchpriority="high" src="/botia_jar_512.png" alt="BOTIA Food Transparency" />
-      <h1 id="title">You've read the label a hundred times.</h1>
-      <p class="subtitle" id="subtitle">You still don't know what's in it.</p>
-      <p class="description" id="description">Scientific evidence. Human language. BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence. Not fear. Not judgement.</p>
-      <a href="/ingredients/index.html" class="cta-button" id="cta">Open BOTIA</a>
-    </section>
 
-    <div class="stats-box">
-      <div class="stats-number" id="stats_number">72%</div>
-      <div class="stats-text" id="stats_text">uncertain — in our first analysis of real supermarket products, 72% of results were uncertain, not because the ingredients were forbidden, but because the label simply didn't say enough to know.</div>
-    </div>
 
-    <section class="section">
-      <h2 class="section-title" id="modules_title">Explore BOTIA</h2>
-      <div class="modules-grid">
-        <a href="/pages/evidence.html" class="module-card">
-          <img src="/botia/assets/evidence.png" srcset="/botia/assets/evidence.webp" onerror="this.src='/botia/assets/evidence.png'" style="content-visibility:auto;" alt="Evidence Layers" />
-          <div class="card-title" id="evidence_name">Evidence Layers</div>
-          <div class="card-desc" id="evidence_desc">Scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius</div>
-        </a>
-        <a href="/pages/woman.html" class="module-card">
-          <img src="/botia/assets/mujer.png" srcset="/botia/assets/mujer.webp" onerror="this.src='/botia/assets/mujer.png'" style="content-visibility:auto;" alt="Woman" />
-          <div class="card-title" id="woman_name">Woman</div>
-          <div class="card-desc" id="woman_desc">Scientific evidence specific to women's biology, when it exists</div>
-        </a>
-        <a href="/pages/animal.html" class="module-card">
-          <img src="/botia/assets/animal.png" srcset="/botia/assets/animal.webp" onerror="this.src='/botia/assets/animal.png'" style="content-visibility:auto;" alt="Animal" />
-          <div class="card-title" id="animal_name">Animal Origin</div>
-          <div class="card-desc" id="animal_desc">What the label says about animal-derived ingredients — and what it doesn't</div>
-        </a>
-        <a href="/pages/muslim.html" class="module-card">
-          <img src="/botia/assets/muslim.png" srcset="/botia/assets/muslim.webp" onerror="this.src='/botia/assets/muslim.png'" style="content-visibility:auto;" alt="Muslim" />
-          <div class="card-title" id="muslim_name">Muslim Choice</div>
-          <div class="card-desc" id="muslim_desc">Documented criteria for halal, haram, and mashbooh ingredients</div>
-        </a>
-      </div>
-    </section>
-
-    <div class="highlight-box">
-      <p id="highlight_text">BOTIA does not replace WHO, EFSA, the European Commission, FDA, or scientific literature. It translates complex food evidence into information that can be used while shopping — in real time, across borders, and with transparency.</p>
-    </div>
-
-    <section class="closing">
-      <p class="source-links">
-        <a href="https://www.who.int/health-topics/food-safety" target="_blank" rel="noopener">WHO Food Safety</a> ·
-        <a href="https://www.efsa.europa.eu/" target="_blank" rel="noopener">EFSA</a> ·
-        <a href="https://www.fda.gov/food" target="_blank" rel="noopener">FDA Food</a> ·
-        <a href="https://www.fao.org/fao-who-codexalimentarius/en/" target="_blank" rel="noopener">Codex Alimentarius</a>
-      </p>
-    </section>
-    <p style="text-align:center;font-size:0.8rem;margin-top:20px;">
-      <a href="/privacy.html" style="color:#8a8a8a;">Privacy Policy</a>
-    </p>
-  </main>
-
-  <script>
-    const LANGS = ['en','es','ar','de','fr','nl','it','pt','pl','ro','ru','tr','zh','id'];
-
-    function cambiarIdioma(lang) {
-      localStorage.setItem('botia-lang', lang);
-      location.reload();
-    }
-
-    function detectLang() {
-      const p = new URLSearchParams(window.location.search).get('lang');
-      if (p && LANGS.includes(p)) return p;
-      const s = localStorage.getItem('botia-lang');
-      if (s && LANGS.includes(s)) return s;
-      const b = navigator.language.split('-')[0];
-      return LANGS.includes(b) ? b : 'en';
-    }
-
-    const LANG = detectLang();
-    document.getElementById('lang-select').value = LANG;
-    if (LANG === 'ar') document.documentElement.setAttribute('dir', 'rtl');
-    document.documentElement.setAttribute('lang', LANG);
-
-    fetch('/i18n/' + LANG + '/landing.json')
-      .then(r => r.json())
-      .then(d => {
-        const s = (id, v) => { const e = document.getElementById(id); if (e && v) e.textContent = v; };
-        s('title', d.title);
-        s('subtitle', d.subtitle);
-        s('description', d.description);
-        s('cta', d.cta);
-        s('stats_number', d.stats_number);
-        s('stats_text', d.stats_text);
-        s('modules_title', d.modules_title);
-        s('evidence_name', d.evidence_name);
-        s('evidence_desc', d.evidence_desc);
-        s('woman_name', d.woman_name);
-        s('woman_desc', d.woman_desc);
-        s('animal_name', d.animal_name);
-        s('animal_desc', d.animal_desc);
-        s('muslim_name', d.muslim_name);
-        s('muslim_desc', d.muslim_desc);
-        s('highlight_text', d.highlight_text);
-      })
-      .catch(() => {});
-  </script>
-</body>
-</html>
