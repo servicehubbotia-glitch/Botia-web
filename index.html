@@ -130,4 +130,73 @@
         </a>
         <a href="/pages/muslim.html" class="module-card">
           <img src="/botia/assets/muslim.png" srcset="/botia/assets/muslim.webp" onerror="this.src='/botia/assets/muslim.png'" style="content-visibility:auto;" alt="Muslim" />
-          <div
+          <div class="card-title" id="muslim_name">Muslim Choice</div>
+          <div class="card-desc" id="muslim_desc">Documented criteria for halal, haram, and mashbooh ingredients</div>
+        </a>
+      </div>
+    </section>
+
+    <div class="highlight-box">
+      <p id="highlight_text">BOTIA does not replace WHO, EFSA, the European Commission, FDA, or scientific literature. It translates complex food evidence into information that can be used while shopping — in real time, across borders, and with transparency.</p>
+    </div>
+
+    <section class="closing">
+      <p class="source-links">
+        <a href="https://www.who.int/health-topics/food-safety" target="_blank" rel="noopener">WHO Food Safety</a> ·
+        <a href="https://www.efsa.europa.eu/" target="_blank" rel="noopener">EFSA</a> ·
+        <a href="https://www.fda.gov/food" target="_blank" rel="noopener">FDA Food</a> ·
+        <a href="https://www.fao.org/fao-who-codexalimentarius/en/" target="_blank" rel="noopener">Codex Alimentarius</a>
+      </p>
+    </section>
+    <p style="text-align:center;font-size:0.8rem;margin-top:20px;">
+      <a href="/privacy.html" style="color:#8a8a8a;">Privacy Policy</a>
+    </p>
+  </main>
+
+  <script>
+    const LANGS = ['en','es','ar','de','fr','nl','it','pt','pl','ro','ru','tr','zh','id'];
+
+    function cambiarIdioma(lang) {
+      localStorage.setItem('botia-lang', lang);
+      location.reload();
+    }
+
+    function detectLang() {
+      const p = new URLSearchParams(window.location.search).get('lang');
+      if (p && LANGS.includes(p)) return p;
+      const s = localStorage.getItem('botia-lang');
+      if (s && LANGS.includes(s)) return s;
+      const b = navigator.language.split('-')[0];
+      return LANGS.includes(b) ? b : 'en';
+    }
+
+    const LANG = detectLang();
+    document.getElementById('lang-select').value = LANG;
+    if (LANG === 'ar') document.documentElement.setAttribute('dir', 'rtl');
+    document.documentElement.setAttribute('lang', LANG);
+
+    fetch('/i18n/' + LANG + '/landing.json')
+      .then(r => r.json())
+      .then(d => {
+        const s = (id, v) => { const e = document.getElementById(id); if (e && v) e.textContent = v; };
+        s('title', d.title);
+        s('subtitle', d.subtitle);
+        s('description', d.description);
+        s('cta', d.cta);
+        s('stats_number', d.stats_number);
+        s('stats_text', d.stats_text);
+        s('modules_title', d.modules_title);
+        s('evidence_name', d.evidence_name);
+        s('evidence_desc', d.evidence_desc);
+        s('woman_name', d.woman_name);
+        s('woman_desc', d.woman_desc);
+        s('animal_name', d.animal_name);
+        s('animal_desc', d.animal_desc);
+        s('muslim_name', d.muslim_name);
+        s('muslim_desc', d.muslim_desc);
+        s('highlight_text', d.highlight_text);
+      })
+      .catch(() => {});
+  </script>
+</body>
+</html>
