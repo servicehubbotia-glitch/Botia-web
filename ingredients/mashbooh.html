@@ -135,62 +135,8 @@
   </div>
 
   <script src="/botia/assets/js/i18n-loader.js"></script>
-  <script>
+  
 
-function toggleSidebar() {
-  document.getElementById('sidebar').classList.toggle('open');
-  document.getElementById('sidebarOverlay').classList.toggle('open');
-  document.body.classList.toggle('menu-open');
-}
-function toggleSubmenu(el) {
-  const arrow = el.querySelector('.arrow');
-  const children = el.parentElement.querySelectorAll('.tree-child');
-  const isOpen = children[0] && children[0].classList.contains('show');
-  children.forEach(c => c.classList.toggle('show', !isOpen));
-  if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
-}
-function filterSidebar() {
-  const q = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
-  const items = document.querySelectorAll('.sidebar-tree li');
-  items.forEach(item => {
-    item.style.display = (!q || item.textContent.toLowerCase().includes(q)) ? '' : 'none';
-  });
-}
-
-
-
-
-    const lang = BOTIA.detectLanguage();
-    BOTIA.loadTranslations('muslim', 'mashbooh', lang);
-  </script>
-<script>
-
-function toggleSidebar() {
-  document.getElementById('sidebar').classList.toggle('open');
-  document.getElementById('sidebarOverlay').classList.toggle('open');
-  document.body.classList.toggle('menu-open');
-}
-function toggleSubmenu(el) {
-  const arrow = el.querySelector('.arrow');
-  const children = el.parentElement.querySelectorAll('.tree-child');
-  const isOpen = children[0] && children[0].classList.contains('show');
-  children.forEach(c => c.classList.toggle('show', !isOpen));
-  if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
-}
-function filterSidebar() {
-  const q = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
-  const items = document.querySelectorAll('.sidebar-tree li');
-  items.forEach(item => {
-    item.style.display = (!q || item.textContent.toLowerCase().includes(q)) ? '' : 'none';
-  });
-}
-
-
-
-
-
-
-</script>
   <script src="/menu.js"></script>
 </body>
 </html>
