@@ -29,63 +29,7 @@
   <link rel="stylesheet" href="/botia-landing.css" />
   <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
   <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
-  <style>
-    .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
-    .lang-switcher { position: fixed; top: 12px; right: 16px; z-index: 100; }
-    body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
-    .lang-switcher select {
-      background: rgba(24,13,13,0.96); color: #f2e4dc;
-      border: 1px solid rgba(190,122,72,0.42); border-radius: 8px;
-      padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
-    }
-    .hero { padding: 20px 0 10px; text-align: center; }
-    .hero img { width: 144px; height: 144px; margin-bottom: 12px; }
-    .hero h1 { font-size: 1.6rem; color: #f2e4dc; margin-bottom: 4px; }
-    .e-code { font-size: 0.9rem; color: #e6a06b; margin-bottom: 4px; }
-    .aliases { font-size: 0.8rem; color: #8a8a8a; margin-bottom: 8px; }
-    .section { margin-bottom: 24px; }
-    .section-title { font-size: 1.2rem; color: #e6a06b; margin-bottom: 8px; }
-    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.6; }
-    .layer-badge {
-      display: inline-block; padding: 3px 12px; border-radius: 20px;
-      font-size: 0.75rem; font-weight: 700; margin: 3px;
-      text-transform: uppercase; letter-spacing: 0.5px;
-    }
-    .layer-muslim { background: #1e4a6a; color: #fff; }
-    .layer-animal { background: #4a2a0a; color: #fff; }
-    .layer-woman { background: #6a1a3a; color: #fff; }
-    .layer-sugar { background: #6a3a0a; color: #fff; }
-    .layer-sweetener { background: #4a3a6a; color: #fff; }
-    .layer-texture { background: #2a4a2a; color: #fff; }
-    .layer-flavour { background: #4a4a0a; color: #fff; }
-    .layer-enumbers { background: #3a3a3a; color: #fff; }
-    .can-cannot {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
-    }
-    @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
-    .can-box, .cannot-box {
-      background: rgba(24,13,13,0.9); border-radius: 12px; padding: 16px;
-    }
-    .can-box { border: 1px solid rgba(100,180,100,0.4); }
-    .cannot-box { border: 1px solid rgba(180,100,100,0.4); }
-    .can-box h4, .cannot-box h4 { color: #f2e4dc; margin-bottom: 8px; font-size: 0.95rem; }
-    .can-box li, .cannot-box li {
-      font-size: 0.85rem; color: #c0a08c; padding-left: 20px;
-      position: relative; margin-bottom: 4px; list-style: none;
-    }
-    .can-box li::before { content: "✅"; position: absolute; left: 0; }
-    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
-    .sources-list { list-style: none; padding: 0; }
-    .sources-list li { margin-bottom: 8px; }
-    .sources-list a { color: #e6a06b; font-size: 0.9rem; text-decoration: none; }
-    .sources-list a:hover { text-decoration: underline; }
-    .closing { text-align: center; padding: 20px 0; }
-    .cta-button {
-      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
-      padding: 10px 24px; border-radius: 8px; text-decoration: none;
-      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
-    }
-  </style>
+  
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/phthalates.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/phthalates.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/ingredients/phthalates.html?lang=ar">
@@ -115,41 +59,92 @@
 }
 </script>
 
+<style>
+.botia-header-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 999;
+  background: rgba(8,4,4,0.95);
+  border-bottom: 1px solid rgba(190,122,72,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  gap: 12px;
+}
+.hamburger-btn {
+  background: none;
+  border: 1px solid rgba(190,122,72,0.4);
+  border-radius: 6px;
+  color: #e6a06b;
+  font-size: 1.2rem;
+  padding: 6px 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.nav-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.lang-switcher select {
+  background: rgba(24,13,13,0.96);
+  color: #f2e4dc;
+  border: 1px solid rgba(190,122,72,0.42);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+</style>
 </head>
 <body>
-  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
-  
+<div class="botia-header-bar">
+  <button class="hamburger-btn" id="drawerBtn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  <a href="/"><img src="/botia_jar_512.png" class="nav-logo" alt="BOTIA"></a>
   <div class="lang-switcher">
-    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
-    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
-      <option value="en">English</option><option value="ar">العربية</option>
-      <option value="de">Deutsch</option><option value="es">Español</option>
-      <option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
-      <option value="it">Italiano</option><option value="nl">Nederlands</option>
-      <option value="pl">Polski</option><option value="pt">Português</option>
-      <option value="ro">Română</option><option value="ru">Русский</option>
-      <option value="tr">Türkçe</option><option value="zh">中文</option>
+    <select id="lang-select" onchange="cambiarIdioma(this.value)">
+      <option value="en">English</option>
+      <option value="ar">العربية</option>
+      <option value="de">Deutsch</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option>
+      <option value="nl">Nederlands</option>
+      <option value="pl">Polski</option>
+      <option value="pt">Português</option>
+      <option value="ro">Română</option>
+      <option value="ru">Русский</option>
+      <option value="tr">Türkçe</option>
+      <option value="zh">中文</option>
     </select>
   </div>
+</div>
+</div>
 
-  <nav class="botia-nav">
-  <a href="/index.html" class="nav-logo" aria-label="BOTIA Home">
-    <img src="/botia_jar_512.png" alt="BOTIA — Phthalates ingredient icon" style="width:32px;height:32px;" />
-  </a>
-  <div class="nav-links">
-    <a href="/pages/animal.html">Animal</a>
-    <a href="/pages/muslim.html">Muslim</a>
-    <a href="/pages/woman.html">Woman</a>
-    <a href="/pages/evidence.html">Evidence</a>
-      <a href="/ingredients/index.html">Index</a>
-  </div>
-</nav>
+<!-- Hamburger Menu -->
+
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+
+</div>
+
+
+
+
+
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+  
+  
+
+  
 
   <main class="landing" id="main-content">
 
     <!-- HEADER -->
     <section class="hero">
-      <img id="module_icon" fetchpriority="high" src="/botia/assets/botia_jar_512.png" srcset="/botia/assets/botia_jar_512.png" type="image/webp" onerror="this.src='/botia/assets/botia_jar_512.png'" style="content-visibility:auto;" alt="BOTIA — Phthalates ingredient icon" />
+      <img id="module_icon" fetchpriority="high" src="/botia/assets/mujer.png" srcset="/botia/assets/mujer.png" type="image/webp" onerror="this.src='/botia/assets/mujer.png'" style="content-visibility:auto;" alt="BOTIA — Phthalates ingredient icon" />
       <h1 id="name">Phthalates</h1>
       <p class="e-code" id="e_code"></p>
       <p class="aliases" id="aliases">phthalates, DEHP, DBP, BBP, DINP, DIDP, phthalic acid esters, ftalatos</p>
@@ -200,100 +195,7 @@
 
   </main>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-  // Back button with fallback
-  const backBtn = document.getElementById('back-button');
-  if (backBtn) {
-    backBtn.addEventListener('click', function(e) {
-      if (document.referrer && document.referrer.includes(window.location.hostname)) {
-        e.preventDefault();
-        window.history.back();
-      }
-    });
-  }
-      const RTL_LANGS = ['ar'];
-      const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+  
 
-      function getIdioma() {
-        const params = new URLSearchParams(window.location.search);
-        if (params.get('lang')) return params.get('lang');
-        if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
-        const nav = navigator.language.split('-')[0];
-        return SOPORTADOS.includes(nav) ? nav : 'en';
-      }
-      window.cambiarIdioma = function(lang) {
-        localStorage.setItem('botia-lang', lang);
-        window.location.reload();
-      };
-
-      const LANG = getIdioma();
-      document.getElementById('lang-select').value = LANG;
-      document.documentElement.lang = LANG;
-      if (RTL_LANGS.includes(LANG)) {
-        document.body.setAttribute('dir', 'rtl');
-      }
-
-      // Detectar ingrediente desde URL
-      const path = window.location.pathname;
-      const slug = path.split('/').pop().replace('.html', '');
-
-      fetch('/i18n/' + LANG + '/' + slug + '.json')
-        .then(res => res.ok ? res.json() : Promise.reject())
-        .then(d => {
-          // Actualizar <head> dinámicamente
-          if (d.title) document.title = d.title;
-          const metaDesc = document.querySelector('meta[name="description"]');
-          if (metaDesc && d.description) metaDesc.setAttribute('content', d.description);
-          const ogTitle = document.querySelector('meta[property="og:title"]');
-          if (ogTitle && d.title) ogTitle.setAttribute('content', d.title);
-          const ogDesc = document.querySelector('meta[property="og:description"]');
-          if (ogDesc && d.description) ogDesc.setAttribute('content', d.description);
-          const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-          if (twitterTitle && d.title) twitterTitle.setAttribute('content', d.title);
-          const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-          if (twitterDesc && d.description) twitterDesc.setAttribute('content', d.description);
-          
-          // Textos simples
-          ['name','e_code','aliases','what_is','why_botia',
-           'can_title','can_1','can_2','cannot_title','cannot_1','cannot_2',
-           'what_is_title','why_botia_title','sources_title'].forEach(id => {
-            const el = document.getElementById(id);
-            if (el && d[id]) el.textContent = d[id];
-          });
-
-          // Icono del módulo
-          if (d.module_icon) {
-            document.getElementById('module_icon').src = '/botia/assets/' + d.module_icon;
-          }
-
-          // Badges de capas
-          if (d.layers && Array.isArray(d.layers)) {
-            const container = document.getElementById('layers_container');
-            d.layers.forEach(layer => {
-              const badge = document.createElement('span');
-              badge.className = 'layer-badge layer-' + layer;
-              badge.textContent = layer;
-              container.appendChild(badge);
-            });
-          }
-
-          // Fuentes con links
-          if (d.sources && Array.isArray(d.sources)) {
-            const container = document.getElementById('sources_container');
-            d.sources.forEach(source => {
-              const li = document.createElement('li');
-              const a = document.createElement('a');
-              a.href = source.url;
-              a.target = '_blank';
-              a.textContent = source.label;
-              li.appendChild(a);
-              container.appendChild(li);
-            });
-          }
-        })
-        .catch(() => { document.documentElement.lang = 'en'; });
-    });
-  </script>
 </body>
 </html>

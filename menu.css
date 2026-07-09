@@ -1,0 +1,126 @@
+/* BOTIA Drawer Menu */
+.botia-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+.botia-overlay.active { display: block; }
+
+.botia-drawer {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 82vw;
+  max-width: 360px;
+  height: 100vh;
+  background: linear-gradient(135deg, #100707 0%, #241010 48%, #080505 100%);
+  border-right: 1px solid rgba(190,122,72,0.3);
+  z-index: 1001;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+.botia-drawer.active { left: 0; }
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(190,122,72,0.2);
+}
+
+.drawer-brand {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #e6a06b;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.drawer-close {
+  background: none;
+  border: none;
+  color: #e6a06b;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+}
+
+.drawer-nav {
+  padding: 8px 0 40px;
+}
+
+.drawer-section-label {
+  padding: 16px 20px 6px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(230,160,107,0.5);
+}
+
+.drawer-link {
+  display: block;
+  padding: 11px 20px;
+  color: #f2e4dc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  transition: background 0.15s, color 0.15s;
+}
+.drawer-link:hover {
+  background: rgba(190,122,72,0.08);
+  color: #e6a06b;
+}
+
+.drawer-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 20px;
+  color: #f2e4dc;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  cursor: pointer;
+  transition: background 0.15s;
+  user-select: none;
+}
+.drawer-group-header:hover { background: rgba(190,122,72,0.08); color: #e6a06b; }
+
+.drawer-arrow {
+  font-size: 0.65rem;
+  color: rgba(230,160,107,0.6);
+  transition: transform 0.2s;
+}
+.drawer-arrow.open { transform: rotate(90deg); }
+
+.drawer-submenu {
+  display: none;
+  background: rgba(0,0,0,0.2);
+}
+.drawer-submenu.open { display: block; }
+
+.drawer-submenu a {
+  display: block;
+  padding: 9px 20px 9px 34px;
+  color: #c0a08c;
+  text-decoration: none;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  transition: background 0.15s, color 0.15s;
+}
+.drawer-submenu a:hover {
+  background: rgba(190,122,72,0.06);
+  color: #e6a06b;
+}
+
+.drawer-divider {
+  height: 1px;
+  background: rgba(190,122,72,0.15);
+  margin: 8px 0;
+}
