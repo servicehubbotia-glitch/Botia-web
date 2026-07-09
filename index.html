@@ -130,25 +130,36 @@
 
   <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
   
+  <div class="lang-switcher">
+    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+      <option value="tr">Türkçe</option><option value="zh">中文</option>
+    </select>
+  </div>
 
   <main class="landing" id="main-content">
     <section class="hero">
       <img class="hero-logo" fetchpriority="high" src="/botia_jar_512.png" alt="BOTIA Food Transparency" />
       <h1 id="title">You've read the label a hundred times.</h1>
       <p class="subtitle" id="subtitle">You still don't know what's in it.</p>
-      <p class="description" id="description">Scientific evidence. Human language. BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific, regulatory, and transparency sources.</p>
+      <p class="description" id="description">Scientific evidence. Human language. BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific evidence. Not fear. Not judgement.</p>
+      <a href="/ingredients/index.html" class="cta-button" id="cta">Open BOTIA</a>
     </section>
 
     <div class="stats-box">
       <div class="stats-number" id="stats_number">72%</div>
-      <div class="stats-text" id="stats_text">uncertain — in our first analysis of real supermarket products, 72% of results were uncertain, not because the ingredients were forbidden, but because the label simply didn't say enough to know.</div>
+      <div class="stats-text" id="stats_text">uncertain — in our first analysis of real supermarket products, 72% of results were uncertain, not because the ingredients were forbidden, but because science is still ongoing, and labels are not transparent.</div>
     </div>
 
     <section class="section">
       <h2 class="section-title" id="modules_title">Explore BOTIA</h2>
       <div class="modules-grid">
         <a href="/pages/evidence.html" class="module-card">
-          <img src="/botia/assets/evidence.png" srcset="/botia/assets/evidence.webp" type="image/webp" onerror="this.src='/botia/assets/evidence.png'" style="content-visibility:auto;" alt="Evidence" />
+          <img src="/botia/assets/evidence.png" srcset="/botia/assets/evidence.webp" type="image/webp" onerror="this.src='/botia/assets/evidence.png'" style="content-visibility:auto;" alt="Evidence Layers" />
           <div class="card-title" id="evidence_name">Evidence Layers</div>
           <div class="card-desc" id="evidence_desc">Scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius</div>
         </a>
@@ -171,7 +182,7 @@
     </section>
 
     <div class="highlight-box">
-      <p id="highlight_text">BOTIA does not replace WHO, EFSA, the European Commission, FDA, or scientific literature. It translates complex food evidence into information that can be used while reading a label.</p>
+      <p id="highlight_text">BOTIA does not replace WHO, EFSA, the European Commission, FDA, or scientific literature. It translates complex food evidence into information that can be used while shopping — in real time, across borders, and with transparency.</p>
     </div>
 
     <section class="closing">
@@ -188,4 +199,4 @@
   
 
 </body>
-</html> 
+</html>
