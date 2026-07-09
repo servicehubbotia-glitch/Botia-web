@@ -156,6 +156,65 @@ body.menu-open .hero img {
   z-index: 0 !important;
 }
 
+  
+    .ingredient-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 20px 0;
+    }
+    .ingredient-card {
+      display: block;
+      background: rgba(255,255,255,0.03);
+      border-radius: 12px;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background 0.2s;
+      position: relative;
+    }
+    .ingredient-card:hover {
+      background: rgba(255,255,255,0.06);
+    }
+    .ingredient-card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      pointer-events: none;
+    }
+    .ingredient-card-name {
+      color: #f2e4dc;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .ingredient-card-ecode {
+      color: #e6a06b;
+      font-size: 0.8rem;
+    }
+    .ingredient-card-layers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .layer-badge {
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      z-index: 2;
+    }
+    .layer-animal    { background: #4a2a0a; color: #ffd8bd; }
+    .layer-muslim    { background: #1e4a6a; color: #fff; }
+    .layer-woman     { background: #6a1a3a; color: #fff; }
+    .layer-sugar     { background: #6a3a0a; color: #fff; }
+    .layer-sweetener { background: #4a3a6a; color: #fff; }
+    .layer-texture   { background: #2a4a2a; color: #fff; }
+    .layer-flavour   { background: #4a4a0a; color: #fff; }
+    .layer-enumbers  { background: #3a3a3a; color: #fff; }
+    
   </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/index.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/index.html?lang=es">
@@ -490,13 +549,408 @@ body.menu-open .hero img {
     <input type="text" class="search-box" id="search" placeholder="Search by name or E-number..." onkeyup="filterIngredients()" />
 
     <div class="count" id="count"></div>
-    <div id="ingredient-list">
-      
-    <div class="ingredient-item" data-name="acesulfame potassium" data-code="e950">
-      <a href="/ingredients/acesulfame_k.html" class="ingredient-link">
-        <span class="ingredient-name"><span class="e-code-badge">E950</span> Acesulfame potassium</span>
-      </a>
-      <div class="ingredient-badges"><a href="/ingredients/sweetener.html" class="layer-badge layer-sweetener">Sweeteners</a> <a href="/ingredients/enumbers.html" class="layer-badge layer-enumbers">E-numbers</a></div>
+    <div id="ingredient-list" class="ingredient-list">
+
+    <a href="/ingredients/acesulfame_k.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Acesulfame potassium</span>
+        <span class="ingredient-card-ecode">E950</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/sweetener.html" class="layer-badge layer-sweetener" onclick="event.stopPropagation();">sweetener</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/alcohol.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Alcohol</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/muslim.html" class="layer-badge layer-muslim" onclick="event.stopPropagation();">muslim</a><a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/aspartame.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Aspartame</span>
+        <span class="ingredient-card-ecode">E951</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/sweetener.html" class="layer-badge layer-sweetener" onclick="event.stopPropagation();">sweetener</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/bpa.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Bisphenol A</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/bha.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Butylated hydroxyanisole</span>
+        <span class="ingredient-card-ecode">E320</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/bht.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Butylated hydroxytoluene</span>
+        <span class="ingredient-card-ecode">E321</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/cadmium.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Cadmium</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/carmine.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Carmine</span>
+        <span class="ingredient-card-ecode">E120</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/animal.html" class="layer-badge layer-animal" onclick="event.stopPropagation();">animal</a><a href="/pages/muslim.html" class="layer-badge layer-muslim" onclick="event.stopPropagation();">muslim</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/carrageenan.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Carrageenan</span>
+        <span class="ingredient-card-ecode">E407</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/texture.html" class="layer-badge layer-texture" onclick="event.stopPropagation();">texture</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/cyclamates.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Cyclamates</span>
+        <span class="ingredient-card-ecode">E952</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/sweetener.html" class="layer-badge layer-sweetener" onclick="event.stopPropagation();">sweetener</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/dioxins_pcbs.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Dioxins and PCBs</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/erythritol.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Erythritol</span>
+        <span class="ingredient-card-ecode">E968</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/sweetener.html" class="layer-badge layer-sweetener" onclick="event.stopPropagation();">sweetener</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/e472.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Esters of mono- and diglycerides of fatty acids</span>
+        <span class="ingredient-card-ecode">E472</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/animal.html" class="layer-badge layer-animal" onclick="event.stopPropagation();">animal</a><a href="/pages/muslim.html" class="layer-badge layer-muslim" onclick="event.stopPropagation();">muslim</a><a href="/pages/texture.html" class="layer-badge layer-texture" onclick="event.stopPropagation();">texture</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/enzymes.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Food enzymes</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/animal.html" class="layer-badge layer-animal" onclick="event.stopPropagation();">animal</a><a href="/pages/muslim.html" class="layer-badge layer-muslim" onclick="event.stopPropagation();">muslim</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/gelatine.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Gelatine</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/animal.html" class="layer-badge layer-animal" onclick="event.stopPropagation();">animal</a><a href="/pages/muslim.html" class="layer-badge layer-muslim" onclick="event.stopPropagation();">muslim</a><a href="/pages/texture.html" class="layer-badge layer-texture" onclick="event.stopPropagation();">texture</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/glucose_syrup.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Glucose syrup</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/ingredients/sugar.html" class="layer-badge layer-sugar" onclick="event.stopPropagation();">sugar</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/glycerol.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Glycerol</span>
+        <span class="ingredient-card-ecode">E422</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/animal.html" class="layer-badge layer-animal" onclick="event.stopPropagation();">animal</a><a href="/pages/muslim.html" class="layer-badge layer-muslim" onclick="event.stopPropagation();">muslim</a><a href="/pages/texture.html" class="layer-badge layer-texture" onclick="event.stopPropagation();">texture</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/guar_gum.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Guar gum</span>
+        <span class="ingredient-card-ecode">E412</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/texture.html" class="layer-badge layer-texture" onclick="event.stopPropagation();">texture</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/konjac.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Konjac</span>
+        <span class="ingredient-card-ecode">E425</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/texture.html" class="layer-badge layer-texture" onclick="event.stopPropagation();">texture</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/lead.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Lead</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/lecithins.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Lecithins</span>
+        <span class="ingredient-card-ecode">E322</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/animal.html" class="layer-badge layer-animal" onclick="event.stopPropagation();">animal</a><a href="/pages/muslim.html" class="layer-badge layer-muslim" onclick="event.stopPropagation();">muslim</a><a href="/pages/texture.html" class="layer-badge layer-texture" onclick="event.stopPropagation();">texture</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/maltitol.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Maltitols</span>
+        <span class="ingredient-card-ecode">E965</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/sweetener.html" class="layer-badge layer-sweetener" onclick="event.stopPropagation();">sweetener</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/maltodextrin.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Maltodextrin</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/ingredients/sugar.html" class="layer-badge layer-sugar" onclick="event.stopPropagation();">sugar</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/methylmercury.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Methylmercury</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/e471.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Mono- and diglycerides of fatty acids</span>
+        <span class="ingredient-card-ecode">E471</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/animal.html" class="layer-badge layer-animal" onclick="event.stopPropagation();">animal</a><a href="/pages/muslim.html" class="layer-badge layer-muslim" onclick="event.stopPropagation();">muslim</a><a href="/pages/texture.html" class="layer-badge layer-texture" onclick="event.stopPropagation();">texture</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/natural_flavourings.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Natural Flavourings</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/flavor.html" class="layer-badge layer-flavour" onclick="event.stopPropagation();">flavour</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/parabens.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Parabens</span>
+        <span class="ingredient-card-ecode">E214</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/phthalates.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Phthalates</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/saccharin.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Saccharin</span>
+        <span class="ingredient-card-ecode">E954</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/sweetener.html" class="layer-badge layer-sweetener" onclick="event.stopPropagation();">sweetener</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/shellac.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Shellac</span>
+        <span class="ingredient-card-ecode">E904</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/animal.html" class="layer-badge layer-animal" onclick="event.stopPropagation();">animal</a><a href="/pages/muslim.html" class="layer-badge layer-muslim" onclick="event.stopPropagation();">muslim</a><a href="/pages/texture.html" class="layer-badge layer-texture" onclick="event.stopPropagation();">texture</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/sorbitol.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Sorbitol</span>
+        <span class="ingredient-card-ecode">E420</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/sweetener.html" class="layer-badge layer-sweetener" onclick="event.stopPropagation();">sweetener</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/steviol_glycosides.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Steviol glycosides from Stevia</span>
+        <span class="ingredient-card-ecode">E960a</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/sweetener.html" class="layer-badge layer-sweetener" onclick="event.stopPropagation();">sweetener</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/sucralose.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Sucralose</span>
+        <span class="ingredient-card-ecode">E955</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a><a href="/pages/sweetener.html" class="layer-badge layer-sweetener" onclick="event.stopPropagation();">sweetener</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/e171.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Titanium dioxide</span>
+        <span class="ingredient-card-ecode">E171</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/trans_fats.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Trans fatty acids</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/woman.html" class="layer-badge layer-woman" onclick="event.stopPropagation();">woman</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/vinegar.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Vinegar</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/muslim.html" class="layer-badge layer-muslim" onclick="event.stopPropagation();">muslim</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/xanthan_gum.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Xanthan gum</span>
+        <span class="ingredient-card-ecode">E415</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/texture.html" class="layer-badge layer-texture" onclick="event.stopPropagation();">texture</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/xylitol.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Xylitol</span>
+        <span class="ingredient-card-ecode">E967</span>
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/pages/sweetener.html" class="layer-badge layer-sweetener" onclick="event.stopPropagation();">sweetener</a><a href="/pages/enumbers.html" class="layer-badge layer-enumbers" onclick="event.stopPropagation();">enumbers</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/free_sugars.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Free Sugars</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/ingredients/sugar.html" class="layer-badge layer-sugar" onclick="event.stopPropagation();">sugar</a>
+      </div>
+    </a>
+
+    <a href="/ingredients/fruit_juice_concentrate.html" class="ingredient-card">
+      <div class="ingredient-card-top">
+        <span class="ingredient-card-name">Fruit Juice Concentrate</span>
+        
+      </div>
+      <div class="ingredient-card-layers">
+        <a href="/ingredients/sugar.html" class="layer-badge layer-sugar" onclick="event.stopPropagation();">sugar</a>
+      </div>
+    </a>
+</div>
     </div>
     <div class="ingredient-item" data-name="alcohol" data-code="">
       <a href="/ingredients/alcohol.html" class="ingredient-link">
