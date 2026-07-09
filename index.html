@@ -74,6 +74,31 @@
       font-size: 0.85rem;
       cursor: pointer;
     }
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+      .modules-grid { grid-template-columns: 1fr; }
+    }
+    .stats-box {
+      text-align: center;
+      padding: 30px 20px;
+      margin: 20px 0;
+    }
+    .stats-number {
+      font-size: 4rem;
+      font-weight: 900;
+      color: #e6a06b;
+      line-height: 1;
+    }
+    .stats-text {
+      color: #f2e4dc;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
