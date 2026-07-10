@@ -29,7 +29,154 @@
   <link rel="stylesheet" href="/botia-landing.css" />
   <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
   <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
+  <style>
+    .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
+    
+    body[dir="rtl"] 
+    
+    .hero { padding: 12px 0 0; text-align: center; }
+    .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
+    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
+    .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
+    .description { font-size: 0.9rem; color: #8a8a8a; }
+    .section { margin-bottom: 14px; }
+    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
+    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; }
+    .related-grid {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px;
+    }
+    .related-grid a {
+      background: rgba(255, 255, 255, 0.06); padding: 8px 18px;
+      border-radius: 30px; border: 1px solid rgba(190, 122, 72, 0.3);
+      color: #ffd8bd; font-weight: 600; font-size: 0.9rem; text-decoration: none;
+      transition: 0.2s ease;
+    }
+    .related-grid a:hover { background: rgba(190, 122, 72, 0.2); border-color: #e6a06b; color: #fff; }
+    .can-cannot {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
+    }
+    @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
+    .can-box, .cannot-box {
+      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px;
+    }
+    .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
+    .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
+    .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
+    .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
+    .can-box li, .cannot-box li {
+      margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c;
+      padding-left: 20px; position: relative;
+    }
+    .can-box li::before { content: "✅"; position: absolute; left: 0; }
+    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+    .closing { text-align: center; padding: 20px 0; }
+    .closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 16px; }
+    .cta-button {
+      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+      padding: 10px 24px; border-radius: 8px; text-decoration: none;
+      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+    }
+    .cta-button:hover { background: rgba(190,122,72,0.35); }
+    .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
+    .source-links a { color: #e6a06b; text-decoration: none; }
+    .source-links a:hover { text-decoration: underline; }
   
+
+  /* Hamburger Menu */
+
+.hamburger-btn:hover { color: #fff; border-color: #e6a06b; }
+.sidebar-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6); ; display: none;
+}
+.sidebar-overlay.open { display: block; }
+.sidebar {
+  position: fixed; top: 0; left: 0; width: 300px; max-width: 85vw; height: 100%;
+  background: rgba(8,4,4,0.97); ; overflow-y: auto;
+  padding: 16px; transform: translateX(-100%); transition: transform 0.3s ease;
+  border-right: 1px solid rgba(190,122,72,0.2);
+}
+.sidebar.open { transform: translateX(0); }
+.sidebar-close {
+  position: absolute; top: 10px; right: 14px; color: #e6a06b;
+  font-size: 1.4rem; cursor: pointer; background: none; border: none;
+}
+.sidebar-close:hover { color: #fff; }
+.sidebar-title { color: #e6a06b; font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
+.sidebar-search {
+  width: 100%; padding: 8px 10px; border-radius: 6px;
+  background: rgba(255,255,255,0.06); color: #f2e4dc;
+  border: 1px solid rgba(190,122,72,0.3); font-size: 0.8rem; margin-bottom: 14px;
+}
+.sidebar-search::placeholder { color: #8a8a8a; }
+.sidebar-tree { list-style: none; padding: 0; margin: 0; }
+.sidebar-tree li { margin: 1px 0; }
+.sidebar-tree a { color: #c0a08c; text-decoration: none; font-size: 0.82rem; display: block; padding: 3px 8px; border-radius: 4px; }
+.sidebar-tree a:hover { background: rgba(190,122,72,0.15); color: #f2e4dc; }
+.sidebar-tree .tree-parent { color: #e6a06b; font-weight: 600; font-size: 0.88rem; margin-top: 8px; cursor: pointer; }
+.sidebar-tree .tree-child { padding-left: 16px; display: none; }
+.sidebar-tree .tree-child.show { display: block; }
+.sidebar-tree .tree-home { font-weight: 700; color: #f2e4dc; }
+.sidebar-tree .tree-parent .arrow { font-size: 0.7rem; margin-right: 4px; }
+
+  
+
+
+
+
+
+  
+  .botia-header-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+  background: rgba(8,4,4,0.95); padding: 4px 12px;
+  border-bottom: 1px solid rgba(190,122,72,0.15); backdrop-filter: blur(10px);
+}
+.botia-nav-left { display: flex; align-items: center; gap: 12px; }
+.botia-header-bar .lang-switcher { position: static; }
+.botia-header-bar .lang-switcher select {
+  background: rgba(24,13,13,0.96); color: #f2e4dc;
+  border: 1px solid rgba(190,122,72,0.42); border-radius: 6px;
+  padding: 4px 8px; font-size: 0.75rem; cursor: pointer;
+}
+.hamburger-btn {
+  background: none; color: #e6a06b; border: 1px solid rgba(190,122,72,0.3);
+  border-radius: 4px; width: 30px; height: 30px; font-size: 1rem;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+body { padding-top: 36px; }
+
+  
+body.menu-open .hero img,
+body.menu-open #module_icon {
+  z-index: 0 !important;
+  position: relative !important;
+}
+
+  
+body.menu-open .hero,
+body.menu-open .hero *,
+body.menu-open #module_icon,
+body.menu-open .hero-logo,
+body.menu-open .hero img {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  z-index: 0 !important;
+}
+
+  
+    .hero + .section { margin-top: 0 !important; }
+  
+    .category-card {
+      display: flex; flex-direction: column; gap: 4px;
+      background: rgba(24,13,13,0.9); border: 1px solid rgba(190,122,72,0.25);
+      border-radius: 12px; padding: 16px; text-decoration: none;
+      color: #f2e4dc; transition: border-color 0.2s;
+    }
+    .category-card:hover { border-color: rgba(190,122,72,0.6); }
+    .category-card strong { font-size: 0.95rem; color: #e6a06b; }
+    .category-card span { font-size: 0.8rem; color: #8a8a8a; }
+  </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/sugar.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/sugar.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/ingredients/sugar.html?lang=ar">
@@ -59,74 +206,49 @@
 }
 </script>
 
-<style>
-.botia-header-bar {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 999;
-  background: rgba(8,4,4,0.95);
-  border-bottom: 1px solid rgba(190,122,72,0.2);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 16px;
-  gap: 12px;
-}
-.hamburger-btn {
-  background: none;
-  border: 1px solid rgba(190,122,72,0.4);
-  border-radius: 6px;
-  color: #e6a06b;
-  font-size: 1.2rem;
-  padding: 6px 10px;
-  cursor: pointer;
-  z-index: 1000;
-}
-.nav-logo {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-}
-.lang-switcher select {
-  background: rgba(24,13,13,0.96);
-  color: #f2e4dc;
-  border: 1px solid rgba(190,122,72,0.42);
-  border-radius: 8px;
-  padding: 6px 10px;
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-</style>
-<link rel="stylesheet" href="/menu.css">
 </head>
 <body>
 <div class="botia-header-bar">
-  <button class="hamburger-btn" id="drawerBtn" onclick="toggleMenu()" aria-label="Menu">☰</button>
-  <a href="/"><img src="/botia_jar_512.png" class="nav-logo" alt="BOTIA"></a>
+  <div class="botia-nav-left">
+    <button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+    <a href="/index.html"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+  </div>
   <div class="lang-switcher">
-    <select id="lang-select" onchange="cambiarIdioma(this.value)">
-      <option value="en">English</option>
-      <option value="ar">العربية</option>
-      <option value="de">Deutsch</option>
-      <option value="es">Español</option>
-      <option value="fr">Français</option>
-      <option value="id">Bahasa Indonesia</option>
-      <option value="it">Italiano</option>
-      <option value="nl">Nederlands</option>
-      <option value="pl">Polski</option>
-      <option value="pt">Português</option>
-      <option value="ro">Română</option>
-      <option value="ru">Русский</option>
-      <option value="tr">Türkçe</option>
-      <option value="zh">中文</option>
+    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option>
     </select>
   </div>
-</div>
 </div>
 
 <!-- Hamburger Menu -->
 
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<nav class="sidebar" id="sidebar">
+  <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+  <div class="sidebar-title">BOTIA</div>
+  <input type="text" class="sidebar-search" placeholder="🔍 Filter..." onkeyup="filterSidebar()" />
+  <ul class="sidebar-tree" id="sidebarTree">
+        <li><a href="/index.html" class="tree-home">🏠 Home</a></li>
+    
+    <li class="tree-child"><a href="/ingredients/sugar.html">├─ Sugar</a></li>
+    <li class="tree-child"><a href="/ingredients/sweetener.html">├─ Sweeteners</a></li>
+    <li class="tree-child"><a href="/ingredients/texture.html">├─ Texture</a></li>
+    <li class="tree-child"><a href="/ingredients/flavor.html">├─ Flavourings</a></li>
+    <li class="tree-child"><a href="/ingredients/enumbers.html">└─ E-numbers</a></li>
+    <li class="tree-parent"><a href="/pages/animal.html" style="color:#e6a06b;font-weight:600;">🐾 Animal Origin</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> <a href="/pages/muslim.html" style="color:#e6a06b;font-weight:600;">🕌 Muslim</a></li>
+    <li class="tree-child"><a href="/ingredients/halal.html">├─ Halal</a></li>
+    <li class="tree-child"><a href="/ingredients/haram.html">├─ Haram</a></li>
+    <li class="tree-child"><a href="/ingredients/mashbooh.html">└─ Mashbooh</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> <a href="/pages/woman.html" style="color:#e6a06b;font-weight:600;">👩 Woman</a></li>
+    <li class="tree-child"><a href="/ingredients/endocrine-disruptors.html">├─ Endocrine Disruptors</a></li>
+    <li class="tree-child"><a href="/ingredients/packaging-migrants.html">├─ Packaging Migrants</a></li>
+    <li class="tree-child"><a href="/ingredients/fat-accumulation.html">└─ Fat Accumulation</a></li>
+    <li class="tree-parent"><a href="/ingredients/index.html" style="color:#e6a06b;font-weight:600;">🧪 Ingredient Index</a></li>
+    <li class="tree-home" style="margin-top:12px;"><a href="/privacy.html">📄 Privacy Policy</a></li>
+  </ul>
+</nav>
 
 
 </div>
@@ -213,8 +335,115 @@
     </section>
   </main>
 
-  
+  <script>
 
-  <script src="/menu.js"></script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarOverlay').classList.toggle('open');
+  document.body.classList.toggle('menu-open');
+}
+function toggleSubmenu(el) {
+  const arrow = el.querySelector('.arrow');
+  const children = el.parentElement.querySelectorAll('.tree-child');
+  const isOpen = children[0] && children[0].classList.contains('show');
+  children.forEach(c => c.classList.toggle('show', !isOpen));
+  if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
+}
+function filterSidebar() {
+  const q = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
+  const items = document.querySelectorAll('.sidebar-tree li');
+  items.forEach(item => {
+    item.style.display = (!q || item.textContent.toLowerCase().includes(q)) ? '' : 'none';
+  });
+}
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const RTL_LANGS = ['ar'];
+      const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+
+      function getIdioma() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('lang')) return params.get('lang');
+        if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
+        const navLang = navigator.language.split('-')[0];
+        return SOPORTADOS.includes(navLang) ? navLang : 'en';
+      }
+      window.cambiarIdioma = function(lang) {
+        localStorage.setItem('botia-lang', lang);
+        window.location.reload();
+      };
+
+      const LANG = getIdioma();
+      document.getElementById('lang-select').value = LANG;
+      document.documentElement.lang = LANG;
+      if (RTL_LANGS.includes(LANG)) {
+        document.body.setAttribute('dir', 'rtl');
+      }
+
+      fetch('/i18n/' + LANG + '/sugar.json')
+        .then(res => res.ok ? res.json() : Promise.reject())
+        .then(d => {
+          
+          // Actualizar <html lang>
+          document.documentElement.lang = LANG;
+          
+          // Actualizar <title>
+          if (d.title) document.title = d.title;
+          
+          // Actualizar meta description
+          const metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc && d.description) metaDesc.setAttribute('content', d.description);
+          
+          // Actualizar OG tags
+          const ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle && d.title) ogTitle.setAttribute('content', d.title);
+          const ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc && d.description) ogDesc.setAttribute('content', d.description);
+          const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+          if (twitterTitle && d.title) twitterTitle.setAttribute('content', d.title);
+          const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+          if (twitterDesc && d.description) twitterDesc.setAttribute('content', d.description);
+          
+          // Actualizar contenido del body
+          Object.keys(d).forEach(id => {
+            if (id === '_meta') return;
+            const el = document.getElementById(id);
+            if (el) el.textContent = d[id];
+          });
+        })
+        .catch(() => { document.documentElement.lang = 'en'; });
+    });
+  </script>
+<script>
+
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarOverlay').classList.toggle('open');
+  document.body.classList.toggle('menu-open');
+}
+function toggleSubmenu(el) {
+  const arrow = el.querySelector('.arrow');
+  const children = el.parentElement.querySelectorAll('.tree-child');
+  const isOpen = children[0] && children[0].classList.contains('show');
+  children.forEach(c => c.classList.toggle('show', !isOpen));
+  if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
+}
+function filterSidebar() {
+  const q = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
+  const items = document.querySelectorAll('.sidebar-tree li');
+  items.forEach(item => {
+    item.style.display = (!q || item.textContent.toLowerCase().includes(q)) ? '' : 'none';
+  });
+}
+
+
+
+
+
+
+</script>
 </body>
 </html>
