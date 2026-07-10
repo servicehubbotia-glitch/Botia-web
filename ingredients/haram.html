@@ -6,12 +6,7 @@
   <title id="page_title">BOTIA</title>
   <link rel="preload" href="/botia/assets/botia-template.css" as="style">
   <link rel="stylesheet" href="/botia/assets/botia-template.css">
-  <style>
-    .botia-icon { width: 64px !important; height: 64px !important; }
-    .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 8px; }
-    .source-links a { color: #e6a06b; text-decoration: none; }
-    .source-links a:hover { text-decoration: underline; }
-  </style>
+  
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/haram.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/haram.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/ingredients/haram.html?lang=ar">
@@ -41,12 +36,86 @@
 }
 </script>
 
+<style>
+.botia-header-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 999;
+  background: rgba(8,4,4,0.95);
+  border-bottom: 1px solid rgba(190,122,72,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  gap: 12px;
+}
+.hamburger-btn {
+  background: none;
+  border: 1px solid rgba(190,122,72,0.4);
+  border-radius: 6px;
+  color: #e6a06b;
+  font-size: 1.2rem;
+  padding: 6px 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.nav-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.lang-switcher select {
+  background: rgba(24,13,13,0.96);
+  color: #f2e4dc;
+  border: 1px solid rgba(190,122,72,0.42);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+</style>
+<link rel="stylesheet" href="/menu.css">
 </head>
 <body>
+<div class="botia-header-bar">
+  <button class="hamburger-btn" id="drawerBtn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  <a href="/"><img src="/botia_jar_512.png" class="nav-logo" alt="BOTIA"></a>
+  <div class="lang-switcher">
+    <select id="lang-select" onchange="cambiarIdioma(this.value)">
+      <option value="en">English</option>
+      <option value="ar">العربية</option>
+      <option value="de">Deutsch</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option>
+      <option value="nl">Nederlands</option>
+      <option value="pl">Polski</option>
+      <option value="pt">Português</option>
+      <option value="ro">Română</option>
+      <option value="ru">Русский</option>
+      <option value="tr">Türkçe</option>
+      <option value="zh">中文</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Hamburger Menu -->
+
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+
+</div>
+
+
+
+
+
   <div class="botia-container">
 
     <header class="botia-header">
-      <img id="module_icon" fetchpriority="high" class="botia-icon" src="/botia/assets/Haram.png" srcset="/botia/assets/Haram.webp" type="image/webp" onerror="this.src='/botia/assets/Haram.png'" style="content-visibility:auto;" alt="BOTIA — haram ingredient icon">
+      <img id="module_icon" fetchpriority="high" class="botia-icon" src="/botia/assets/Haram.png" srcset="/botia/assets/botia_jar_512.png" type="image/webp" onerror="this.src='/botia/assets/botia_jar_512.png'" style="content-visibility:auto;" alt="BOTIA — haram ingredient icon">
       <h1 id="title">This product contains an ingredient forbidden under Islamic Law.</h1>
       <div id="header_trigger_container"></div>
     </header>
@@ -90,9 +159,8 @@
   </div>
 
   <script src="/botia/assets/js/i18n-loader.js"></script>
-  <script>
-    const lang = BOTIA.detectLanguage();
-    BOTIA.loadTranslations('muslim', 'haram', lang);
-  </script>
+  
+
+  <script src="/menu.js"></script>
 </body>
 </html>

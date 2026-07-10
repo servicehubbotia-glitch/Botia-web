@@ -29,54 +29,7 @@
   <link rel="stylesheet" href="/botia-landing.css">
   <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
   <link rel="stylesheet" href="/botia/assets/botia-pages.css">
-  <style>
-    .lang-switcher {
-      position: fixed; top: 12px; right: 16px; z-index: 100;
-    }
-    body[dir="rtl"] .lang-switcher { right: auto; left: 16px; }
-    .lang-switcher select {
-      background: rgba(24, 13, 13, 0.96); color: #f2e4dc;
-      border: 1px solid rgba(190, 122, 72, 0.42); border-radius: 8px;
-      padding: 6px 10px; font-size: 0.85rem; cursor: pointer;
-    }
-    .hero { padding: 20px 0 8px; }
-    .section { margin-bottom: 24px; }
-    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 8px; }
-    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.6; margin-bottom: 12px; }
-    .how-box {
-      background: rgba(24, 13, 13, 0.9); border-radius: 10px; padding: 16px;
-      margin-bottom: 10px;
-    }
-    .how-box.confirmed { border-left: 4px solid rgba(200, 100, 100, 0.6); }
-    .how-box.ambiguous { border-left: 4px solid rgba(200, 160, 60, 0.6); }
-    .how-box h4 { margin-bottom: 4px; color: #f2e4dc; font-size: 0.95rem; }
-    .how-box p { font-size: 0.9rem; color: #c0a08c; line-height: 1.6; }
-    .how-box a { color: #e6a06b; text-decoration: none; }
-    .how-box a:hover { text-decoration: underline; }
-    .can-cannot {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0;
-    }
-    @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
-    .can-box, .cannot-box {
-      background: rgba(24, 13, 13, 0.9); border-radius: 10px; padding: 16px;
-    }
-    .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
-    .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
-    .can-box h4, .cannot-box h4 { margin-bottom: 6px; font-size: 0.95rem; }
-    .can-box li, .cannot-box li {
-      margin-bottom: 3px; font-size: 0.85rem; color: #c0a08c;
-      padding-left: 20px; position: relative; list-style: none;
-    }
-    .can-box li::before { content: "✅"; position: absolute; left: 0; }
-    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
-    .source-links { color: #c0a08c; font-size: 0.85rem; }
-    .source-links a { color: #e6a06b; text-decoration: none; }
-    .source-links a:hover { text-decoration: underline; }
-    .hero { padding: 30px 0 16px; }
-    .section { margin-bottom: 16px; }
-    .landing { padding: 0 20px 40px; }
-    .hero + .section { margin-top: 0; }
-  </style>
+  
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/pages/animal.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/pages/animal.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/pages/animal.html?lang=ar">
@@ -106,33 +59,84 @@
 }
 </script>
 
+<style>
+.botia-header-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 999;
+  background: rgba(8,4,4,0.95);
+  border-bottom: 1px solid rgba(190,122,72,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  gap: 12px;
+}
+.hamburger-btn {
+  background: none;
+  border: 1px solid rgba(190,122,72,0.4);
+  border-radius: 6px;
+  color: #e6a06b;
+  font-size: 1.2rem;
+  padding: 6px 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.nav-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.lang-switcher select {
+  background: rgba(24,13,13,0.96);
+  color: #f2e4dc;
+  border: 1px solid rgba(190,122,72,0.42);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+</style>
+<link rel="stylesheet" href="/menu.css">
 </head>
 <body>
-  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
-  
+<div class="botia-header-bar">
+  <button class="hamburger-btn" id="drawerBtn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  <a href="/"><img src="/botia_jar_512.png" class="nav-logo" alt="BOTIA"></a>
   <div class="lang-switcher">
-    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
-    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
-      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
-      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
-      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
-      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
-      <option value="tr">Türkçe</option><option value="zh">中文</option>
+    <select id="lang-select" onchange="cambiarIdioma(this.value)">
+      <option value="en">English</option>
+      <option value="ar">العربية</option>
+      <option value="de">Deutsch</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option>
+      <option value="nl">Nederlands</option>
+      <option value="pl">Polski</option>
+      <option value="pt">Português</option>
+      <option value="ro">Română</option>
+      <option value="ru">Русский</option>
+      <option value="tr">Türkçe</option>
+      <option value="zh">中文</option>
     </select>
   </div>
+</div>
+</div>
 
-  <nav class="botia-nav">
-  <a href="/index.html" class="nav-logo" aria-label="BOTIA Home">
-    <img src="/botia_jar_512.png" alt="BOTIA Home" style="width:32px;height:32px;" />
-  </a>
-  <div class="nav-links">
-    <a href="/pages/animal.html">Animal</a>
-    <a href="/pages/muslim.html">Muslim</a>
-    <a href="/pages/woman.html">Woman</a>
-    <a href="/pages/evidence.html">Evidence</a>
-      <a href="/ingredients/index.html">Index</a>
-  </div>
-</nav>
+<!-- Hamburger Menu -->
+
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+
+
+
+
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+  
+  
+
+  
 
   <main class="landing" id="main-content">
     <section class="hero">
@@ -151,11 +155,11 @@
       <h2 class="section-title" id="how_title">How BOTIA reads animal origin</h2>
       <div class="how-box confirmed">
         <h4 id="confirmed_label">🐾 Confirmed animal origin</h4>
-        <p id="how_confirmed"></p>
+        <p id="how_confirmed">Some ingredients are always from animals: <a href='/ingredients/gelatine.html'>gelatine</a>, <a href='/ingredients/carmine.html'>carmine (E120)</a>, <a href='/ingredients/shellac.html'>shellac (E904)</a>, beeswax, lactose, casein, whey, honey. When BOTIA finds these, there is no ambiguity.</p>
       </div>
       <div class="how-box ambiguous">
         <h4 id="ambiguous_label">❓ May be animal-derived</h4>
-        <p id="how_ambiguous"></p>
+        <p id="how_ambiguous">Other ingredients may come from animals or plants depending on the manufacturer: <a href='/ingredients/e471.html'>E471</a>, <a href='/ingredients/e472.html'>E472</a>, <a href='/ingredients/lecithins.html'>lecithins (E322)</a>, <a href='/ingredients/glycerol.html'>glycerol (E422)</a>, <a href='/ingredients/enzymes.html'>enzymes</a>, <a href='/ingredients/natural_flavourings.html'>natural flavourings</a>. The label does not say which. Only the manufacturer knows.</p>
       </div>
     </section>
 
@@ -196,57 +200,8 @@
     </section>
   </main>
 
-  <script>
-    const RTL_LANGS = ['ar'];
-    const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+  
 
-    function getIdioma() {
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('lang')) return params.get('lang');
-      if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
-      const nav = navigator.language.split('-')[0];
-      return SOPORTADOS.includes(nav) ? nav : 'en';
-    }
-    function cambiarIdioma(lang) {
-      localStorage.setItem('botia-lang', lang);
-      window.location.reload();
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const LANG = getIdioma();
-      document.getElementById('lang-select').value = LANG;
-      document.documentElement.lang = LANG;
-      if (RTL_LANGS.includes(LANG)) {
-        document.body.setAttribute('dir', 'rtl');
-      }
-
-      fetch('/i18n/' + LANG + '/animal.json')
-        .then(res => res.ok ? res.json() : Promise.reject())
-        .then(d => {
-          // Actualizar <head> dinámicamente
-          document.documentElement.lang = LANG;
-          if (d.title) document.title = d.title;
-          const metaDesc = document.querySelector('meta[name="description"]');
-          if (metaDesc && d.description) metaDesc.setAttribute('content', d.description);
-          const ogTitle = document.querySelector('meta[property="og:title"]');
-          if (ogTitle && d.title) ogTitle.setAttribute('content', d.title);
-          const ogDesc = document.querySelector('meta[property="og:description"]');
-          if (ogDesc && d.description) ogDesc.setAttribute('content', d.description);
-          const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-          if (twitterTitle && d.title) twitterTitle.setAttribute('content', d.title);
-          const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-          if (twitterDesc && d.description) twitterDesc.setAttribute('content', d.description);
-          
-          // Estos IDs tienen enlaces HTML fijos, no se sobrescriben
-          const fijos = [];
-          Object.keys(d).forEach(id => {
-            if (id === '_meta' || fijos.includes(id)) return;
-            const el = document.getElementById(id);
-            if (el) { if (id === 'how_confirmed' || id === 'how_ambiguous') { el.innerHTML = d[id]; } else { el.textContent = d[id]; } }
-          });
-        })
-        .catch(() => { document.documentElement.lang = 'en'; });
-    });
-  </script>
+  <script src="/menu.js"></script>
 </body>
 </html>
