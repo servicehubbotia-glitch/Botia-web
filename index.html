@@ -81,6 +81,96 @@
  cursor: pointer;
  z-index: 1000;
 }
+<link rel="stylesheet" href="/menu.css">
+</head>
+<body>
+<!-- Hamburger Menu -->
+<button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<nav class="sidebar" id="sidebar">
+  <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+  <div class="sidebar-title">BOTIA</div>
+  <input type="text" class="sidebar-search" placeholder="🔍 Filter..." onkeyup="filterSidebar()" />
+  <ul class="sidebar-tree" id="sidebarTree">
+        <li><a href="/index.html" class="tree-home">🏠 Home</a></li>
+    
+    <li class="tree-child"><a href="/ingredients/sugar.html">├─ Sugar</a></li>
+    <li class="tree-child"><a href="/ingredients/sweetener.html">├─ Sweeteners</a></li>
+    <li class="tree-child"><a href="/ingredients/texture.html">├─ Texture</a></li>
+    <li class="tree-child"><a href="/ingredients/flavor.html">├─ Flavourings</a></li>
+    <li class="tree-child"><a href="/ingredients/enumbers.html">└─ E-numbers</a></li>
+    <li class="tree-parent"><a href="/pages/animal.html" style="color:#e6a06b;font-weight:600;">🐾 Animal Origin</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> <a href="/pages/muslim.html" style="color:#e6a06b;font-weight:600;">🕌 Muslim</a></li>
+    <li class="tree-child"><a href="/ingredients/halal.html">├─ Halal</a></li>
+    <li class="tree-child"><a href="/ingredients/haram.html">├─ Haram</a></li>
+    <li class="tree-child"><a href="/ingredients/mashbooh.html">└─ Mashbooh</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> <a href="/pages/woman.html" style="color:#e6a06b;font-weight:600;">👩 Woman</a></li>
+    <li class="tree-child"><a href="/ingredients/endocrine-disruptors.html">├─ Endocrine Disruptors</a></li>
+    <li class="tree-child"><a href="/ingredients/packaging-migrants.html">├─ Packaging Migrants</a></li>
+    <li class="tree-child"><a href="/ingredients/fat-accumulation.html">└─ Fat Accumulation</a></li>
+    <li class="tree-parent"><a href="/ingredients/index.html" style="color:#e6a06b;font-weight:600;">🧪 Ingredient Index</a></li>
+    <li class="tree-home" style="margin-top:12px;"><a href="/privacy.html">📄 Privacy Policy</a></li>
+  </ul>
+</nav>
 
 
 
+  <main class="landing" id="main-content">
+    <section class="hero">
+      <img class="hero-logo" fetchpriority="high" src="/botia_jar_512.png" alt="BOTIA Food Transparency" />
+      <h1 id="title">You've read the label a hundred times.</h1>
+      <p class="subtitle" id="subtitle">You still don't know what's in it.</p>
+      <p class="description" id="description">Scientific evidence. Human language. BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific, regulatory, and transparency sources.</p>
+    </section>
+
+    <div class="stats-box">
+      <div class="stats-number" id="stats_number">72%</div>
+      <div class="stats-text" id="stats_text">uncertain — in our first analysis of real supermarket products, 72% of results were uncertain, not because the ingredients were forbidden, but because the label simply didn't say enough to know.</div>
+    </div>
+
+    <section class="section">
+      <h2 class="section-title" id="modules_title">Explore BOTIA</h2>
+      <div class="modules-grid">
+        <a href="/pages/evidence.html" class="module-card">
+          <img src="/botia/assets/evidence.png" srcset="/botia/assets/evidence.webp" type="image/webp" onerror="this.src='/botia/assets/evidence.png'" style="content-visibility:auto;" alt="Evidence" />
+          <div class="card-title" id="evidence_name">Evidence Layers</div>
+          <div class="card-desc" id="evidence_desc">Scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius</div>
+        </a>
+        <a href="/pages/woman.html" class="module-card">
+          <img src="/botia/assets/mujer.png" srcset="/botia/assets/mujer.webp" type="image/webp" onerror="this.src='/botia/assets/mujer.png'" style="content-visibility:auto;" alt="Woman" />
+          <div class="card-title" id="woman_name">Woman</div>
+          <div class="card-desc" id="woman_desc">Scientific evidence specific to women's biology, when it exists</div>
+        </a>
+        <a href="/pages/animal.html" class="module-card">
+          <img src="/botia/assets/animal.png" srcset="/botia/assets/animal.webp" type="image/webp" onerror="this.src='/botia/assets/animal.png'" style="content-visibility:auto;" alt="Animal" />
+          <div class="card-title" id="animal_name">Animal Origin</div>
+          <div class="card-desc" id="animal_desc">What the label says about animal-derived ingredients — and what it doesn't</div>
+        </a>
+        <a href="/pages/muslim.html" class="module-card">
+          <img src="/botia/assets/muslim.png" srcset="/botia/assets/muslim.webp" type="image/webp" onerror="this.src='/botia/assets/muslim.png'" style="content-visibility:auto;" alt="Muslim" />
+          <div class="card-title" id="muslim_name">Muslim Choice</div>
+          <div class="card-desc" id="muslim_desc">Documented criteria for halal, haram, and mashbooh ingredients</div>
+        </a>
+      </div>
+    </section>
+
+    <div class="highlight-box">
+      <p id="highlight_text">BOTIA does not replace WHO, EFSA, the European Commission, FDA, or scientific literature. It translates complex food evidence into information that can be used while reading a label.</p>
+    </div>
+
+    <section class="closing">
+      <p class="source-links">
+        <a href="https://www.who.int/health-topics/food-safety" target="_blank" rel="noopener">WHO Food Safety</a> ·
+        <a href="https://www.efsa.europa.eu/" target="_blank" rel="noopener">EFSA</a> ·
+        <a href="https://www.fda.gov/food" target="_blank" rel="noopener">FDA Food</a> ·
+        <a href="https://www.fao.org/fao-who-codexalimentarius/en/" target="_blank" rel="noopener">Codex Alimentarius</a>
+      </p>
+    </section>
+    <p style="text-align:center;font-size:0.8rem;margin-top:20px;"><a href="/privacy.html" style="color:#8a8a8a;">Privacy Policy</a></p>
+  </main>
+
+  
+
+  <script src="/menu.js"></script>
+</body>
+</html> 
