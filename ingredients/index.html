@@ -29,7 +29,155 @@
   <link rel="stylesheet" href="/botia-landing.css" />
   <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
   <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
-  
+  <style>
+    .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
+    .hero { padding: 20px 0 10px; text-align: center; }
+    .hero h1 { font-size: 1.6rem; color: #f2e4dc; margin-bottom: 6px; }
+    .subtitle { font-size: 1rem; color: #c0a08c; margin-bottom: 16px; }
+    .search-box {
+      width: 100%; padding: 12px 16px; border-radius: 8px;
+      background: rgba(24,13,13,0.9); color: #f2e4dc;
+      border: 1px solid rgba(190,122,72,0.4); font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .search-box::placeholder { color: #8a8a8a; }
+    .count { font-size: 0.85rem; color: #8a8a8a; margin-bottom: 16px; }
+    .no-results { text-align: center; color: #8a8a8a; padding: 40px; display: none; }
+    .closing { text-align: center; padding: 20px 0; }
+    .cta-button {
+      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+      padding: 10px 24px; border-radius: 8px; text-decoration: none;
+      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+    }
+
+    /* Hamburger Menu */
+    .hamburger-btn:hover { color: #fff; border-color: #e6a06b; }
+    .sidebar-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6); z-index: 1001; display: none;
+    }
+    .sidebar-overlay.open { display: block; }
+    .sidebar {
+      position: fixed; top: 0; left: 0; width: 300px; max-width: 85vw; height: 100%;
+      background: rgba(8,4,4,0.97); z-index: 1002; overflow-y: auto;
+      padding: 16px; transform: translateX(-100%); transition: transform 0.3s ease;
+      border-right: 1px solid rgba(190,122,72,0.2);
+    }
+    .sidebar.open { transform: translateX(0); }
+    .sidebar-close {
+      position: absolute; top: 10px; right: 14px; color: #e6a06b;
+      font-size: 1.4rem; cursor: pointer; background: none; border: none;
+    }
+    .sidebar-close:hover { color: #fff; }
+    .sidebar-title { color: #e6a06b; font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
+    .sidebar-search {
+      width: 100%; padding: 8px 10px; border-radius: 6px;
+      background: rgba(255,255,255,0.06); color: #f2e4dc;
+      border: 1px solid rgba(190,122,72,0.3); font-size: 0.8rem; margin-bottom: 14px;
+    }
+    .sidebar-search::placeholder { color: #8a8a8a; }
+    .sidebar-tree { list-style: none; padding: 0; margin: 0; }
+    .sidebar-tree li { margin: 1px 0; }
+    .sidebar-tree a { color: #c0a08c; text-decoration: none; font-size: 0.82rem; display: block; padding: 3px 8px; border-radius: 4px; }
+    .sidebar-tree a:hover { background: rgba(190,122,72,0.15); color: #f2e4dc; }
+    .sidebar-tree .tree-parent { color: #e6a06b; font-weight: 600; font-size: 0.88rem; margin-top: 8px; cursor: pointer; }
+    .sidebar-tree .tree-child { padding-left: 16px; display: none; }
+    .sidebar-tree .tree-child.show { display: block; }
+    .sidebar-tree .tree-home { font-weight: 700; color: #f2e4dc; }
+    .sidebar-tree .tree-parent .arrow { font-size: 0.7rem; margin-right: 4px; }
+
+    .botia-header-bar {
+      display: flex; align-items: center; justify-content: space-between;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+      background: rgba(8,4,4,0.95); padding: 8px 16px;
+      border-bottom: 1px solid rgba(190,122,72,0.15); backdrop-filter: blur(10px);
+    }
+    .botia-nav-left { display: flex; align-items: center; gap: 12px; }
+    .botia-header-bar .lang-switcher { position: static; }
+    .botia-header-bar .lang-switcher select {
+      background: rgba(24,13,13,0.96); color: #f2e4dc;
+      border: 1px solid rgba(190,122,72,0.42); border-radius: 6px;
+      padding: 4px 8px; font-size: 0.75rem; cursor: pointer;
+    }
+    .hamburger-btn {
+      background: none; color: #e6a06b; border: 1px solid rgba(190,122,72,0.3);
+      border-radius: 4px; width: 30px; height: 30px; font-size: 1rem;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+    }
+    body { padding-top: 46px; }
+    body.menu-open .hero img,
+    body.menu-open #module_icon {
+      z-index: 0 !important;
+      position: relative !important;
+    }
+    body.menu-open .hero,
+    body.menu-open .hero *,
+    body.menu-open #module_icon,
+    body.menu-open .hero-logo,
+    body.menu-open .hero img {
+      visibility: hidden !important;
+      opacity: 0 !important;
+      z-index: 0 !important;
+    }
+
+    .ingredient-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 20px 0;
+    }
+    .ingredient-card {
+      display: block;
+      background: rgba(255,255,255,0.03);
+      border-radius: 12px;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background 0.2s;
+      position: relative;
+    }
+    .ingredient-card:hover {
+      background: rgba(255,255,255,0.06);
+    }
+    .ingredient-card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      pointer-events: none;
+    }
+    .ingredient-card-name {
+      color: #f2e4dc;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .ingredient-card-ecode {
+      color: #e6a06b;
+      font-size: 0.8rem;
+    }
+    .ingredient-card-layers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .layer-badge {
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      z-index: 2;
+    }
+    .layer-animal    { background: #4a2a0a; color: #ffd8bd; }
+    .layer-muslim    { background: #1e4a6a; color: #fff; }
+    .layer-woman     { background: #6a1a3a; color: #fff; }
+    .layer-sugar     { background: #6a3a0a; color: #fff; }
+    .layer-sweetener { background: #4a3a6a; color: #fff; }
+    .layer-texture   { background: #2a4a2a; color: #fff; }
+    .layer-flavour   { background: #4a4a0a; color: #fff; }
+    .layer-enumbers  { background: #3a3a3a; color: #fff; }
+  </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/index.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/index.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/ingredients/index.html?lang=ar">
@@ -297,73 +445,47 @@
   ]
 }
 </script>
-<style>
-.botia-header-bar {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 999;
-  background: rgba(8,4,4,0.95);
-  border-bottom: 1px solid rgba(190,122,72,0.2);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 16px;
-  gap: 12px;
-}
-.hamburger-btn {
-  background: none;
-  border: 1px solid rgba(190,122,72,0.4);
-  border-radius: 6px;
-  color: #e6a06b;
-  font-size: 1.2rem;
-  padding: 6px 10px;
-  cursor: pointer;
-  z-index: 1000;
-}
-.nav-logo {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-}
-.lang-switcher select {
-  background: rgba(24,13,13,0.96);
-  color: #f2e4dc;
-  border: 1px solid rgba(190,122,72,0.42);
-  border-radius: 8px;
-  padding: 6px 10px;
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-</style>
-<link rel="stylesheet" href="/menu.css">
 </head>
 <body>
 <div class="botia-header-bar">
-  <button class="hamburger-btn" id="drawerBtn" onclick="toggleMenu()" aria-label="Menu">☰</button>
-  <a href="/"><img src="/botia_jar_512.png" class="nav-logo" alt="BOTIA"></a>
+  <div class="botia-nav-left">
+    <button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+    <a href="/index.html"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+  </div>
   <div class="lang-switcher">
-    <select id="lang-select" onchange="cambiarIdioma(this.value)">
-      <option value="en">English</option>
-      <option value="ar">العربية</option>
-      <option value="de">Deutsch</option>
-      <option value="es">Español</option>
-      <option value="fr">Français</option>
-      <option value="id">Bahasa Indonesia</option>
-      <option value="it">Italiano</option>
-      <option value="nl">Nederlands</option>
-      <option value="pl">Polski</option>
-      <option value="pt">Português</option>
-      <option value="ro">Română</option>
-      <option value="ru">Русский</option>
-      <option value="tr">Türkçe</option>
-      <option value="zh">中文</option>
+    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option>
     </select>
   </div>
-</div>
 </div>
 
 <!-- Hamburger Menu -->
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<nav class="sidebar" id="sidebar">
+  <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+  <div class="sidebar-title">BOTIA</div>
+  <input type="text" class="sidebar-search" placeholder="🔍 Filter..." onkeyup="filterSidebar()" />
+  <ul class="sidebar-tree" id="sidebarTree">
+    <li><a href="/index.html" class="tree-home">🏠 Home</a></li>
+    <li class="tree-child"><a href="/ingredients/sugar.html">├─ Sugar</a></li>
+    <li class="tree-child"><a href="/ingredients/sweetener.html">├─ Sweeteners</a></li>
+    <li class="tree-child"><a href="/ingredients/texture.html">├─ Texture</a></li>
+    <li class="tree-child"><a href="/ingredients/flavor.html">├─ Flavourings</a></li>
+    <li class="tree-child"><a href="/ingredients/enumbers.html">└─ E-numbers</a></li>
+    <li class="tree-parent"><a href="/pages/animal.html" style="color:#e6a06b;font-weight:600;">🐾 Animal Origin</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> <a href="/pages/muslim.html" style="color:#e6a06b;font-weight:600;">🕌 Muslim</a></li>
+    <li class="tree-child"><a href="/ingredients/halal.html">├─ Halal</a></li>
+    <li class="tree-child"><a href="/ingredients/haram.html">├─ Haram</a></li>
+    <li class="tree-child"><a href="/ingredients/mashbooh.html">└─ Mashbooh</a></li>
+    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> <a href="/pages/woman.html" style="color:#e6a06b;font-weight:600;">👩 Woman</a></li>
+    <li class="tree-child"><a href="/ingredients/endocrine-disruptors.html">├─ Endocrine Disruptors</a></li>
+    <li class="tree-child"><a href="/ingredients/packaging-migrants.html">├─ Packaging Migrants</a></li>
+    <li class="tree-child"><a href="/ingredients/fat-accumulation.html">└─ Fat Accumulation</a></li>
+    <li class="tree-parent"><a href="/ingredients/index.html" style="color:#e6a06b;font-weight:600;">🧪 Ingredient Index</a></li>
+    <li class="tree-home" style="margin-top:12px;"><a href="/privacy.html">📄 Privacy Policy</a></li>
+  </ul>
+</nav>
 
 <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
 
@@ -391,7 +513,158 @@
   </section>
 </main>
 
+<script>
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarOverlay').classList.toggle('open');
+  document.body.classList.toggle('menu-open');
+}
+function toggleSubmenu(el) {
+  const arrow = el.querySelector('.arrow');
+  const children = el.parentElement.querySelectorAll('.tree-child');
+  const isOpen = children[0] && children[0].classList.contains('show');
+  children.forEach(c => c.classList.toggle('show', !isOpen));
+  if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
+}
+function filterSidebar() {
+  const q = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
+  const items = document.querySelectorAll('.sidebar-tree li');
+  items.forEach(item => {
+    item.style.display = (!q || item.textContent.toLowerCase().includes(q)) ? '' : 'none';
+  });
+}
+function filterIngredients() {
+  const query = document.getElementById('search').value.toLowerCase();
+  const cards = document.querySelectorAll('.ingredient-card');
+  let visible = 0;
+  cards.forEach(card => {
+    const name = card.querySelector('.ingredient-card-name')?.textContent?.toLowerCase() || '';
+    const ecode = card.querySelector('.ingredient-card-ecode')?.textContent?.toLowerCase() || '';
+    if (name.includes(query) || ecode.includes(query)) {
+      card.style.display = 'block';
+      visible++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+  document.getElementById('count').textContent = visible + ' of ' + cards.length;
+  document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+}
 
-  <script src="/menu.js"></script>
+const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
+function getIdioma() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('lang')) return params.get('lang');
+  if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
+  const nav = navigator.language.split('-')[0];
+  return SOPORTADOS.includes(nav) ? nav : 'en';
+}
+window.cambiarIdioma = function(lang) { localStorage.setItem('botia-lang', lang); window.location.reload(); };
+document.getElementById('lang-select').value = getIdioma();
+document.documentElement.lang = getIdioma();
+
+// Renderizado de ingredientes con cards
+const ingredientData = [
+  {slug: "acesulfame_k", name: "Acesulfame potassium", e_code: "E950", layers: ["sweetener", "enumbers"]},
+  {slug: "alcohol", name: "Alcohol", e_code: "", layers: ["muslim", "woman"]},
+  {slug: "aspartame", name: "Aspartame", e_code: "E951", layers: ["sweetener", "enumbers"]},
+  {slug: "bpa", name: "Bisphenol A", e_code: "", layers: ["woman"]},
+  {slug: "bha", name: "Butylated hydroxyanisole", e_code: "E320", layers: ["woman", "enumbers"]},
+  {slug: "bht", name: "Butylated hydroxytoluene", e_code: "E321", layers: ["woman", "enumbers"]},
+  {slug: "cadmium", name: "Cadmium", e_code: "", layers: ["woman"]},
+  {slug: "carmine", name: "Carmine", e_code: "E120", layers: ["animal", "muslim", "enumbers"]},
+  {slug: "carrageenan", name: "Carrageenan", e_code: "E407", layers: ["texture", "enumbers"]},
+  {slug: "cyclamates", name: "Cyclamates", e_code: "E952", layers: ["sweetener", "enumbers"]},
+  {slug: "dioxins_pcbs", name: "Dioxins and PCBs", e_code: "", layers: ["woman"]},
+  {slug: "erythritol", name: "Erythritol", e_code: "E968", layers: ["sweetener", "enumbers"]},
+  {slug: "e472", name: "Esters of mono- and diglycerides of fatty acids", e_code: "E472", layers: ["animal", "muslim", "texture", "enumbers"]},
+  {slug: "enzymes", name: "Food enzymes", e_code: "", layers: ["animal", "muslim"]},
+  {slug: "gelatine", name: "Gelatine", e_code: "", layers: ["animal", "muslim", "texture"]},
+  {slug: "glucose_syrup", name: "Glucose syrup", e_code: "", layers: ["sugar"]},
+  {slug: "glycerol", name: "Glycerol", e_code: "E422", layers: ["animal", "muslim", "texture", "enumbers"]},
+  {slug: "guar_gum", name: "Guar gum", e_code: "E412", layers: ["texture", "enumbers"]},
+  {slug: "konjac", name: "Konjac", e_code: "E425", layers: ["texture", "enumbers"]},
+  {slug: "lead", name: "Lead", e_code: "", layers: ["woman"]},
+  {slug: "lecithins", name: "Lecithins", e_code: "E322", layers: ["animal", "muslim", "texture", "enumbers"]},
+  {slug: "maltitol", name: "Maltitols", e_code: "E965", layers: ["sweetener", "enumbers"]},
+  {slug: "maltodextrin", name: "Maltodextrin", e_code: "", layers: ["sugar"]},
+  {slug: "methylmercury", name: "Methylmercury", e_code: "", layers: ["woman"]},
+  {slug: "e471", name: "Mono- and diglycerides of fatty acids", e_code: "E471", layers: ["animal", "muslim", "texture", "enumbers"]},
+  {slug: "natural_flavourings", name: "Natural Flavourings", e_code: "", layers: ["flavour"]},
+  {slug: "parabens", name: "Parabens", e_code: "E214", layers: ["woman", "enumbers"]},
+  {slug: "phthalates", name: "Phthalates", e_code: "", layers: ["woman"]},
+  {slug: "saccharin", name: "Saccharin", e_code: "E954", layers: ["sweetener", "enumbers"]},
+  {slug: "shellac", name: "Shellac", e_code: "E904", layers: ["animal", "muslim", "texture", "enumbers"]},
+  {slug: "sorbitol", name: "Sorbitol", e_code: "E420", layers: ["sweetener", "enumbers"]},
+  {slug: "steviol_glycosides", name: "Steviol glycosides from Stevia", e_code: "E960a", layers: ["sweetener", "enumbers"]},
+  {slug: "sucralose", name: "Sucralose", e_code: "E955", layers: ["woman", "sweetener", "enumbers"]},
+  {slug: "e171", name: "Titanium dioxide", e_code: "E171", layers: ["woman", "enumbers"]},
+  {slug: "trans_fats", name: "Trans fatty acids", e_code: "", layers: ["woman"]},
+  {slug: "vinegar", name: "Vinegar", e_code: "", layers: ["muslim"]},
+  {slug: "xanthan_gum", name: "Xanthan gum", e_code: "E415", layers: ["texture", "enumbers"]},
+  {slug: "xylitol", name: "Xylitol", e_code: "E967", layers: ["sweetener", "enumbers"]},
+  {slug: "free_sugars", name: "Free Sugars", e_code: "", layers: ["sugar"]},
+  {slug: "fruit_juice_concentrate", name: "Fruit Juice Concentrate", e_code: "", layers: ["sugar"]}
+];
+
+const layerPages = {
+  'animal': '/pages/animal.html',
+  'muslim': '/pages/muslim.html',
+  'woman': '/pages/woman.html',
+  'sugar': '/ingredients/sugar.html',
+  'sweetener': '/ingredients/sweetener.html',
+  'texture': '/ingredients/texture.html',
+  'flavour': '/ingredients/flavor.html',
+  'enumbers': '/ingredients/enumbers.html'
+};
+
+function renderIngredients() {
+  const list = document.getElementById('ingredient-list');
+  list.innerHTML = '';
+  ingredientData.forEach(item => {
+    const card = document.createElement('a');
+    card.href = `/ingredients/${item.slug}.html`;
+    card.className = 'ingredient-card';
+
+    const top = document.createElement('div');
+    top.className = 'ingredient-card-top';
+
+    const name = document.createElement('span');
+    name.className = 'ingredient-card-name';
+    name.textContent = item.name;
+    top.appendChild(name);
+
+    if (item.e_code) {
+      const ecode = document.createElement('span');
+      ecode.className = 'ingredient-card-ecode';
+      ecode.textContent = item.e_code;
+      top.appendChild(ecode);
+    }
+
+    card.appendChild(top);
+
+    if (item.layers && item.layers.length) {
+      const layers = document.createElement('div');
+      layers.className = 'ingredient-card-layers';
+
+      item.layers.forEach(layer => {
+        const badge = document.createElement('a');
+        badge.href = layerPages[layer] || '#';
+        badge.className = `layer-badge layer-${layer}`;
+        badge.textContent = layer;
+        badge.onclick = e => e.stopPropagation();
+        layers.appendChild(badge);
+      });
+
+      card.appendChild(layers);
+    }
+
+    list.appendChild(card);
+  });
+  document.getElementById('count').textContent = ingredientData.length + ' of ' + ingredientData.length;
+}
+
+document.addEventListener('DOMContentLoaded', renderIngredients);
+</script>
 </body>
 </html>
