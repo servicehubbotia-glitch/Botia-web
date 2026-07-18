@@ -140,7 +140,7 @@
   };
 
   const applyObject = (obj, prefix = "") => Object.entries(obj || {}).forEach(([key, value]) => {
-    if (["_meta", "sources", "layers", "module_icon"].includes(key)) return;
+    if (["_meta", "sources", "layers", "module_icon", "ingredients", "count_template"].includes(key)) return;
     const path = prefix ? `${prefix}.${key}` : key;
     if (value && typeof value === "object" && !Array.isArray(value)) {
       applyObject(value, path);
@@ -203,6 +203,101 @@
         return li;
       }));
     }
+  };
+
+  const interpolate = (template, values) => String(template || "").replace(/\{(\w+)\}/g, (match, key) =>
+    Object.prototype.hasOwnProperty.call(values, key) ? String(values[key]) : match
+  );
+
+  const renderIngredientIndex = (data, lang) => {
+    const list = document.getElementById("ingredient-list");
+    if (!list || !Array.isArray(data.ingredients)) return;
+
+    const search = document.getElementById("search");
+    const count = document.getElementById("count");
+    const noResults = document.getElementById("no-results");
+    const total = data.ingredients.length;
+    const countTemplate = data.count_template || "{visible} of {total}";
+
+    if (noResults && data.no_results) noResults.textContent = data.no_results;
+
+    if (search) {
+      if (data.search_placeholder) search.placeholder = data.search_placeholder;
+      search.setAttribute("aria-label", data.search_aria_label || data.search_placeholder || "Search ingredients");
+    }
+
+    const cards = data.ingredients.map(item => {
+      const card = document.createElement("article");
+      card.className = "ingredient-card";
+      card.dataset.search = [item.name, item.e_code, item.aliases]
+        .filter(Boolean)
+        .join(" ")
+        .toLocaleLowerCase(lang);
+
+      const main = document.createElement("a");
+      main.className = "ingredient-card-main";
+      const ingredientHref = new URL(`/ingredients/${item.slug}.html`, location.origin);
+      ingredientHref.searchParams.set("lang", lang);
+      main.href = ingredientHref.toString();
+      main.setAttribute("aria-label", [item.name, item.e_code].filter(Boolean).join(" — "));
+
+      const top = document.createElement("div");
+      top.className = "ingredient-card-top";
+
+      const name = document.createElement("span");
+      name.className = "ingredient-card-name";
+      name.textContent = item.name;
+      top.appendChild(name);
+
+      if (item.e_code) {
+        const ecode = document.createElement("span");
+        ecode.className = "ingredient-card-ecode";
+        ecode.textContent = item.e_code;
+        top.appendChild(ecode);
+      }
+
+      main.appendChild(top);
+      card.appendChild(main);
+
+      if (Array.isArray(item.layers) && item.layers.length) {
+        const layers = document.createElement("div");
+        layers.className = "ingredient-card-layers";
+
+        item.layers.forEach(layer => {
+          const route = LAYER_ROUTES[layer];
+          const badge = document.createElement(route ? "a" : "span");
+          badge.className = `layer-badge layer-${layer}`;
+          badge.textContent = layer;
+          if (route) {
+            const layerHref = new URL(route, location.origin);
+            layerHref.searchParams.set("lang", lang);
+            badge.href = layerHref.toString();
+            badge.setAttribute("aria-label", `${layer}: BOTIA`);
+          }
+          layers.appendChild(badge);
+        });
+        card.appendChild(layers);
+      }
+
+      return card;
+    });
+
+    list.replaceChildren(...cards);
+
+    const update = () => {
+      const query = String(search?.value || "").trim().toLocaleLowerCase(lang);
+      let visible = 0;
+      cards.forEach(card => {
+        const matches = !query || card.dataset.search.includes(query);
+        card.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      if (count) count.textContent = interpolate(countTemplate, { visible, total });
+      if (noResults) noResults.hidden = visible !== 0;
+    };
+
+    if (search) search.oninput = update;
+    update();
   };
 
   const applyWebViewLabels = lang => {
@@ -349,6 +444,7 @@
     applyMeta(data);
     applyObject(data);
     applyCollections(data, loaded);
+    renderIngredientIndex(data, loaded);
     preserveLanguageInInternalLinks(loaded);
     return true;
   };

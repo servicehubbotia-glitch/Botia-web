@@ -6,6 +6,21 @@
   <title>BOTIA — Privacy Policy</title>
   <meta name="description" content="BOTIA privacy policy — how we handle your data when you scan food labels." />
   <link rel="canonical" href="https://www.botia-safefood.com/privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/privacy.html?lang=en">
+  <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/privacy.html?lang=es">
+  <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/privacy.html?lang=ar">
+  <link rel="alternate" hreflang="de" href="https://www.botia-safefood.com/privacy.html?lang=de">
+  <link rel="alternate" hreflang="fr" href="https://www.botia-safefood.com/privacy.html?lang=fr">
+  <link rel="alternate" hreflang="nl" href="https://www.botia-safefood.com/privacy.html?lang=nl">
+  <link rel="alternate" hreflang="it" href="https://www.botia-safefood.com/privacy.html?lang=it">
+  <link rel="alternate" hreflang="pt" href="https://www.botia-safefood.com/privacy.html?lang=pt">
+  <link rel="alternate" hreflang="pl" href="https://www.botia-safefood.com/privacy.html?lang=pl">
+  <link rel="alternate" hreflang="ro" href="https://www.botia-safefood.com/privacy.html?lang=ro">
+  <link rel="alternate" hreflang="ru" href="https://www.botia-safefood.com/privacy.html?lang=ru">
+  <link rel="alternate" hreflang="tr" href="https://www.botia-safefood.com/privacy.html?lang=tr">
+  <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/privacy.html?lang=zh">
+  <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/privacy.html?lang=id">
+  <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/privacy.html">
     <link rel="dns-prefetch" href="https://www.who.int">
   <link rel="dns-prefetch" href="https://www.efsa.europa.eu">
   <link rel="dns-prefetch" href="https://eur-lex.europa.eu">
@@ -30,53 +45,71 @@
 
 
   </style>
+  <link rel="stylesheet" href="/botia/assets/menu.css">
+  <script src="/botia/assets/js/menu.js"></script>
 </head>
-<body>
-
-
+<body data-botia-module="privacy" class="has-botia-header">
+  <button id="menuBtn" aria-label="Menu">☰</button>
+  <div class="botia-header-bar">
+    <div class="botia-nav-left">
+      <a href="/index.html"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+    </div>
+    <div class="lang-switcher">
+      <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+      <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+        <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+        <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+        <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+        <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+        <option value="tr">Türkçe</option><option value="zh">中文</option>
+      </select>
+    </div>
+  </div>
 
   <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
   
   <main class="landing" id="main-content">
-    <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: July 7, 2026</p>
+    <h1 id="privacy_title">Privacy Policy</h1>
+    <p class="last-updated" id="privacy_last_updated">Last updated: July 7, 2026</p>
 
-    <h2>1. What BOTIA Does</h2>
-    <p>BOTIA is a food transparency tool. It reads ingredient lists from food labels and provides information based on scientific and regulatory evidence. BOTIA does not track, profile, or monetise personal data.</p>
+    <h2 id="privacy_section_1_title">1. What BOTIA Does</h2>
+    <p id="privacy_section_1_text">BOTIA is a food transparency tool. It reads ingredient lists from food labels and provides information based on scientific and regulatory evidence. BOTIA does not track, profile, or monetise personal data.</p>
 
-    <h2>2. What Data BOTIA Processes</h2>
-    <p>BOTIA processes the following data when you use the app:</p>
+    <h2 id="privacy_section_2_title">2. What Data BOTIA Processes</h2>
+    <p id="privacy_data_intro">BOTIA processes the following data when you use the app:</p>
     <ul>
-      <li><strong>Ingredient lists</strong> — scanned or manually entered food labels. These are processed locally on your device and are not stored on our servers.</li>
-      <li><strong>Language preference</strong> — stored in your browser's local storage to display BOTIA in your preferred language. Not transmitted to any server.</li>
-      <li><strong>Google account authentication</strong> — if you sign in, Google manages your credentials. BOTIA does not access your password or personal Google data beyond basic authentication.</li>
+      <li><strong id="privacy_data_ingredient_label">Ingredient lists</strong><span id="privacy_data_ingredient_text"> — scanned or manually entered food labels. These are processed locally on your device and are not stored on our servers.</span></li>
+      <li><strong id="privacy_data_language_label">Language preference</strong><span id="privacy_data_language_text"> — stored in your browser's local storage to display BOTIA in your preferred language. Not transmitted to any server.</span></li>
+      <li><strong id="privacy_data_google_label">Google account authentication</strong><span id="privacy_data_google_text"> — if you sign in, Google manages your credentials. BOTIA does not access your password or personal Google data beyond basic authentication.</span></li>
     </ul>
 
-    <h2>3. Special Category Data</h2>
-    <p>BOTIA's Muslim Choice and Woman modules process information that may reveal religious beliefs or health-related concerns. This processing occurs <strong>entirely on your device</strong>. BOTIA does not store, transmit, or infer your religious affiliation, gender, or health status. No special category data leaves your phone.</p>
+    <h2 id="privacy_section_3_title">3. Special Category Data</h2>
+    <p><span id="privacy_section_3_text_1">BOTIA's Muslim Choice and Woman modules process information that may reveal religious beliefs or health-related concerns. This processing occurs </span><strong id="privacy_section_3_emphasis">entirely on your device</strong><span id="privacy_section_3_text_2">. BOTIA does not store, transmit, or infer your religious affiliation, gender, or health status. No special category data leaves your phone.</span></p>
 
-    <h2>4. No Personal Profiles</h2>
-    <p>BOTIA does not build personal food profiles. It does not store your scan history. It does not track what you eat. Each scan is independent and leaves no trace on our servers.</p>
+    <h2 id="privacy_section_4_title">4. No Personal Profiles</h2>
+    <p id="privacy_section_4_text">BOTIA does not build personal food profiles. It does not store your scan history. It does not track what you eat. Each scan is independent and leaves no trace on our servers.</p>
 
-    <h2>5. Cookies and Local Storage</h2>
-    <p>BOTIA's website uses local storage (not cookies) to remember your language preference. No tracking cookies, advertising cookies, or third-party analytics are used.</p>
+    <h2 id="privacy_section_5_title">5. Cookies and Local Storage</h2>
+    <p id="privacy_section_5_text">BOTIA's website uses local storage (not cookies) to remember your language preference. No tracking cookies, advertising cookies, or third-party analytics are used.</p>
 
-    <h2>6. Third-Party Services</h2>
-    <p>BOTIA uses Google authentication for account management. Google's privacy policy applies to that interaction. BOTIA does not share any data with advertisers, data brokers, or analytics platforms.</p>
+    <h2 id="privacy_section_6_title">6. Third-Party Services</h2>
+    <p id="privacy_section_6_text">BOTIA uses Google authentication for account management. Google's privacy policy applies to that interaction. BOTIA does not share any data with advertisers, data brokers, or analytics platforms.</p>
 
-    <h2>7. Legal Basis (GDPR)</h2>
-    <p>BOTIA operates under the following GDPR legal bases:</p>
+    <h2 id="privacy_section_7_title">7. Legal Basis (GDPR)</h2>
+    <p id="privacy_section_7_intro">BOTIA operates under the following GDPR legal bases:</p>
     <ul>
-      <li><strong>Consent</strong> — for language preference storage</li>
-      <li><strong>Legitimate interest</strong> — for providing the food transparency service you requested</li>
+      <li><strong id="privacy_legal_consent_label">Consent</strong><span id="privacy_legal_consent_text"> — for language preference storage</span></li>
+      <li><strong id="privacy_legal_interest_label">Legitimate interest</strong><span id="privacy_legal_interest_text"> — for providing the food transparency service you requested</span></li>
     </ul>
-    <p>Processing of special category data (religious/health) is not performed on our servers. It occurs only on your device, for your personal use.</p>
+    <p id="privacy_section_7_text">Processing of special category data (religious/health) is not performed on our servers. It occurs only on your device, for your personal use.</p>
 
-    <h2>8. Your Rights</h2>
-    <p>Under GDPR, you have the right to access, rectify, erase, restrict, and port your data. Since BOTIA stores no personal data on its servers, these rights are exercised directly on your device. For any questions, contact us at <a href="mailto:privacy@botia-safefood.com">privacy@botia-safefood.com</a>.</p>
+    <h2 id="privacy_section_8_title">8. Your Rights</h2>
+    <p><span id="privacy_section_8_text">Under GDPR, you have the right to access, rectify, erase, restrict, and port your data. Since BOTIA stores no personal data on its servers, these rights are exercised directly on your device. For any questions, contact us at </span><a href="mailto:privacy@botia-safefood.com">privacy@botia-safefood.com</a>.</p>
 
-    <h2>9. Contact</h2>
-    <p>Data Controller: BOTIA<br>Email: <a href="mailto:privacy@botia-safefood.com">privacy@botia-safefood.com</a></p>
+    <h2 id="privacy_section_9_title">9. Contact</h2>
+    <p><span id="privacy_controller_label">Data Controller:</span> BOTIA<br><span id="privacy_email_label">Email:</span> <a href="mailto:privacy@botia-safefood.com">privacy@botia-safefood.com</a></p>
   </main>
+
+  <script src="/botia/assets/js/i18n-loader.js" defer></script>
 </body>
 </html>

@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BOTIA — Ingredient Index | Food Transparency Library</title>
   <meta property="og:title" content="BOTIA — Ingredient Index | Food Transparency Library">
-  <meta property="og:description" content="Complete index of 38 food ingredients analysed by BOTIA — search by name or E-number">
+  <meta property="og:description" content="Complete index of 40 food ingredients analysed by BOTIA — search by name or E-number">
   <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
   <meta property="og:url" content="https://www.botia-safefood.com/ingredients/index.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="BOTIA — Ingredient Index | Food Transparency Library">
-  <meta name="twitter:description" content="Complete index of 38 food ingredients analysed by BOTIA — search by name or E-number">
+  <meta name="twitter:description" content="Complete index of 40 food ingredients analysed by BOTIA — search by name or E-number">
   <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
   <link rel="canonical" href="https://www.botia-safefood.com/ingredients/index.html" />
   <meta name="description" content="Complete index of food ingredients analysed by BOTIA" />
@@ -42,7 +42,8 @@
     }
     .search-box::placeholder { color: #8a8a8a; }
     .count { font-size: 0.85rem; color: #8a8a8a; margin-bottom: 16px; }
-    .no-results { text-align: center; color: #8a8a8a; padding: 40px; display: none; }
+    .no-results { text-align: center; color: #8a8a8a; padding: 40px; }
+    .no-results[hidden] { display: none; }
     .closing { text-align: center; padding: 20px 0; }
     .cta-button {
       display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
@@ -61,13 +62,20 @@
       display: block;
       background: rgba(255,255,255,0.03);
       border-radius: 12px;
-      padding: 14px 16px;
-      text-decoration: none;
       transition: background 0.2s;
       position: relative;
+      overflow: hidden;
+    }
+    .ingredient-card-main {
+      display: block;
+      padding: 14px 16px 8px;
+      text-decoration: none;
     }
     .ingredient-card:hover {
       background: rgba(255,255,255,0.06);
+    }
+    .ingredient-card[hidden] {
+      display: none;
     }
     .ingredient-card-top {
       display: flex;
@@ -89,6 +97,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
+      padding: 0 16px 14px;
     }
     .layer-badge {
       padding: 2px 10px;
@@ -99,6 +108,8 @@
       text-decoration: none;
       position: relative;
       z-index: 2;
+      display: inline-flex;
+      align-items: center;
     }
     .layer-animal    { background: #4a2a0a; color: #ffd8bd; }
     .layer-muslim    { background: #1e4a6a; color: #fff; }
@@ -376,8 +387,11 @@
   ]
 }
 </script>
+  <link rel="stylesheet" href="/botia/assets/menu.css">
+  <script src="/botia/assets/js/menu.js"></script>
 </head>
-<body class="has-botia-header botia-index-page">
+<body class="has-botia-header botia-index-page" data-botia-module="ingredient_index">
+  <button id="menuBtn" aria-label="Menu">☰</button>
 <div class="botia-header-bar">
   <div class="botia-nav-left">
     <a href="/index.html"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
@@ -393,164 +407,28 @@
 
 <main class="landing" id="main-content">
   <section class="hero">
-    <h1>Ingredient Index</h1>
-    <p class="subtitle">Search ingredients analysed by BOTIA</p>
+    <h1 id="title">Ingredient Index</h1>
+    <p class="subtitle" id="subtitle">Search ingredients analysed by BOTIA</p>
   </section>
 
-  <input type="text" class="search-box" id="search" placeholder="Search by name or E-number..." onkeyup="filterIngredients()" />
+  <input type="text" class="search-box" id="search" placeholder="Search by name or E-number..." aria-label="Search ingredients" />
 
   <div class="count" id="count"></div>
   <div id="ingredient-list" class="ingredient-list"></div>
-  <div class="no-results" id="no-results">No ingredients found.</div>
+  <div class="no-results" id="no-results" hidden>No ingredients found.</div>
 
   <section style="text-align:center; padding: 30px 20px; margin-top: 40px; border-top: 1px solid rgba(190,122,72,0.2);">
-    <p style="color:#c0a08c; font-size:0.85rem; line-height:1.6; max-width:600px; margin:0 auto 16px;">
-      BOTIA's ingredient library covers the additives most relevant to our evidence layers. For the complete international database of food additives and contaminants, consult the WHO/JECFA database — the same source we use.
+    <p id="library_note" style="color:#c0a08c; font-size:0.85rem; line-height:1.6; max-width:600px; margin:0 auto 16px;">
+      BOTIA's ingredient library covers the additives and substances most relevant to its evidence layers. For the complete international database of food additives and contaminants, consult the WHO/JECFA database — one of the sources BOTIA uses.
     </p>
-    <a href="https://apps.who.int/food-additives-contaminants-jecfa-database/" target="_blank" style="color:#e6a06b; text-decoration:none; font-weight:600; font-size:0.9rem;">🔗 WHO Food Additives &amp; Contaminants Database (JECFA)</a>
+    <a href="https://apps.who.int/food-additives-contaminants-jecfa-database/" target="_blank" style="color:#e6a06b; text-decoration:none; font-weight:600; font-size:0.9rem;"><span aria-hidden="true">🔗 </span><span id="jecfa_label">WHO Food Additives &amp; Contaminants Database (JECFA)</span></a>
   </section>
 
   <section class="closing">
-    <a href="/index.html" class="cta-button">← Back to BOTIA</a>
+    <a href="/index.html" class="cta-button" id="back-to-botia">← Back to BOTIA</a>
   </section>
 </main>
 
-<script>
-
-
-
-function filterIngredients() {
-  const query = document.getElementById('search').value.toLowerCase();
-  const cards = document.querySelectorAll('.ingredient-card');
-  let visible = 0;
-  cards.forEach(card => {
-    const name = card.querySelector('.ingredient-card-name')?.textContent?.toLowerCase() || '';
-    const ecode = card.querySelector('.ingredient-card-ecode')?.textContent?.toLowerCase() || '';
-    if (name.includes(query) || ecode.includes(query)) {
-      card.style.display = 'block';
-      visible++;
-    } else {
-      card.style.display = 'none';
-    }
-  });
-  document.getElementById('count').textContent = visible + ' of ' + cards.length;
-  document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
-}
-
-const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
-function getIdioma() {
-  const params = new URLSearchParams(window.location.search);
-  if (params.get('lang')) return params.get('lang');
-  if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
-  const nav = navigator.language.split('-')[0];
-  return SOPORTADOS.includes(nav) ? nav : 'en';
-}
-window.cambiarIdioma = function(lang) { localStorage.setItem('botia-lang', lang); window.location.reload(); };
-document.getElementById('lang-select').value = getIdioma();
-document.documentElement.lang = getIdioma();
-
-// Renderizado de ingredientes con cards
-const ingredientData = [
-  {slug: "acesulfame_k", name: "Acesulfame potassium", e_code: "E950", layers: ["sweetener", "enumbers"]},
-  {slug: "alcohol", name: "Alcohol", e_code: "", layers: ["muslim", "woman"]},
-  {slug: "aspartame", name: "Aspartame", e_code: "E951", layers: ["sweetener", "enumbers"]},
-  {slug: "bpa", name: "Bisphenol A", e_code: "", layers: ["woman"]},
-  {slug: "bha", name: "Butylated hydroxyanisole", e_code: "E320", layers: ["woman", "enumbers"]},
-  {slug: "bht", name: "Butylated hydroxytoluene", e_code: "E321", layers: ["woman", "enumbers"]},
-  {slug: "cadmium", name: "Cadmium", e_code: "", layers: ["woman"]},
-  {slug: "carmine", name: "Carmine", e_code: "E120", layers: ["animal", "muslim", "enumbers"]},
-  {slug: "carrageenan", name: "Carrageenan", e_code: "E407", layers: ["texture", "enumbers"]},
-  {slug: "cyclamates", name: "Cyclamates", e_code: "E952", layers: ["sweetener", "enumbers"]},
-  {slug: "dioxins_pcbs", name: "Dioxins and PCBs", e_code: "", layers: ["woman"]},
-  {slug: "erythritol", name: "Erythritol", e_code: "E968", layers: ["sweetener", "enumbers"]},
-  {slug: "e472", name: "Esters of mono- and diglycerides of fatty acids", e_code: "E472", layers: ["animal", "muslim", "texture", "enumbers"]},
-  {slug: "enzymes", name: "Food enzymes", e_code: "", layers: ["animal", "muslim"]},
-  {slug: "gelatine", name: "Gelatine", e_code: "", layers: ["animal", "muslim", "texture"]},
-  {slug: "glucose_syrup", name: "Glucose syrup", e_code: "", layers: ["sugar"]},
-  {slug: "glycerol", name: "Glycerol", e_code: "E422", layers: ["animal", "muslim", "texture", "enumbers"]},
-  {slug: "guar_gum", name: "Guar gum", e_code: "E412", layers: ["texture", "enumbers"]},
-  {slug: "konjac", name: "Konjac", e_code: "E425", layers: ["texture", "enumbers"]},
-  {slug: "lead", name: "Lead", e_code: "", layers: ["woman"]},
-  {slug: "lecithins", name: "Lecithins", e_code: "E322", layers: ["animal", "muslim", "texture", "enumbers"]},
-  {slug: "maltitol", name: "Maltitols", e_code: "E965", layers: ["sweetener", "enumbers"]},
-  {slug: "maltodextrin", name: "Maltodextrin", e_code: "", layers: ["sugar"]},
-  {slug: "methylmercury", name: "Methylmercury", e_code: "", layers: ["woman"]},
-  {slug: "e471", name: "Mono- and diglycerides of fatty acids", e_code: "E471", layers: ["animal", "muslim", "texture", "enumbers"]},
-  {slug: "natural_flavourings", name: "Natural Flavourings", e_code: "", layers: ["flavour"]},
-  {slug: "parabens", name: "Parabens", e_code: "E214", layers: ["woman", "enumbers"]},
-  {slug: "phthalates", name: "Phthalates", e_code: "", layers: ["woman"]},
-  {slug: "saccharin", name: "Saccharin", e_code: "E954", layers: ["sweetener", "enumbers"]},
-  {slug: "shellac", name: "Shellac", e_code: "E904", layers: ["animal", "muslim", "texture", "enumbers"]},
-  {slug: "sorbitol", name: "Sorbitol", e_code: "E420", layers: ["sweetener", "enumbers"]},
-  {slug: "steviol_glycosides", name: "Steviol glycosides from Stevia", e_code: "E960a", layers: ["sweetener", "enumbers"]},
-  {slug: "sucralose", name: "Sucralose", e_code: "E955", layers: ["woman", "sweetener", "enumbers"]},
-  {slug: "e171", name: "Titanium dioxide", e_code: "E171", layers: ["woman", "enumbers"]},
-  {slug: "trans_fats", name: "Trans fatty acids", e_code: "", layers: ["woman"]},
-  {slug: "vinegar", name: "Vinegar", e_code: "", layers: ["muslim"]},
-  {slug: "xanthan_gum", name: "Xanthan gum", e_code: "E415", layers: ["texture", "enumbers"]},
-  {slug: "xylitol", name: "Xylitol", e_code: "E967", layers: ["sweetener", "enumbers"]},
-  {slug: "free_sugars", name: "Free Sugars", e_code: "", layers: ["sugar"]},
-  {slug: "fruit_juice_concentrate", name: "Fruit Juice Concentrate", e_code: "", layers: ["sugar"]}
-];
-
-const layerPages = {
-  'animal': '/pages/animal.html',
-  'muslim': '/pages/muslim.html',
-  'woman': '/pages/woman.html',
-  'sugar': '/ingredients/sugar.html',
-  'sweetener': '/ingredients/sweetener.html',
-  'texture': '/ingredients/texture.html',
-  'flavour': '/ingredients/flavor.html',
-  'enumbers': '/ingredients/enumbers.html'
-};
-
-function renderIngredients() {
-  const list = document.getElementById('ingredient-list');
-  list.innerHTML = '';
-  ingredientData.forEach(item => {
-    const card = document.createElement('a');
-    card.href = `/ingredients/${item.slug}.html`;
-    card.className = 'ingredient-card';
-
-    const top = document.createElement('div');
-    top.className = 'ingredient-card-top';
-
-    const name = document.createElement('span');
-    name.className = 'ingredient-card-name';
-    name.textContent = item.name;
-    top.appendChild(name);
-
-    if (item.e_code) {
-      const ecode = document.createElement('span');
-      ecode.className = 'ingredient-card-ecode';
-      ecode.textContent = item.e_code;
-      top.appendChild(ecode);
-    }
-
-    card.appendChild(top);
-
-    if (item.layers && item.layers.length) {
-      const layers = document.createElement('div');
-      layers.className = 'ingredient-card-layers';
-
-      item.layers.forEach(layer => {
-        const badge = document.createElement('a');
-        badge.href = layerPages[layer] || '#';
-        badge.className = `layer-badge layer-${layer}`;
-        badge.textContent = layer;
-        badge.onclick = e => e.stopPropagation();
-        layers.appendChild(badge);
-      });
-
-      card.appendChild(layers);
-    }
-
-    list.appendChild(card);
-  });
-  document.getElementById('count').textContent = ingredientData.length + ' of ' + ingredientData.length;
-}
-
-document.addEventListener('DOMContentLoaded', renderIngredients);
-</script>
+<script src="/botia/assets/js/i18n-loader.js" defer></script>
 </body>
 </html>
