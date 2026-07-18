@@ -206,3 +206,32 @@ td {
 
   .can-cannot { grid-template-columns: 1fr; }
 }
+
+/* Clickable evidence-layer badges and RTL corrections. */
+a.layer-badge {
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+}
+a.layer-badge:hover,
+a.layer-badge:focus-visible {
+  filter: brightness(1.14);
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 2px rgba(230, 160, 107, 0.25);
+  outline: none;
+}
+body[dir="rtl"] .section,
+body[dir="rtl"] .can-box,
+body[dir="rtl"] .cannot-box {
+  text-align: right;
+}
+body[dir="rtl"] .can-box li,
+body[dir="rtl"] .cannot-box li {
+  padding-right: 20px;
+  padding-left: 0;
+}
+body[dir="rtl"] .can-box li::before,
+body[dir="rtl"] .cannot-box li::before {
+  right: 0;
+  left: auto;
+}
