@@ -374,3 +374,43 @@ body {
   .steps::before { display: none; }
   .module-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+
+/* BOTIA compact header (hamburger menu intentionally removed) */
+.botia-header-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+  background: rgba(8,4,4,0.95); padding: 4px 12px;
+  border-bottom: 1px solid rgba(190,122,72,0.15); backdrop-filter: blur(10px);
+}
+.botia-nav-left { display: flex; align-items: center; gap: 12px; }
+.botia-header-bar .lang-switcher { position: static; }
+.botia-header-bar .lang-switcher select {
+  background: rgba(24,13,13,0.96); color: #f2e4dc;
+  border: 1px solid rgba(190,122,72,0.42); border-radius: 6px;
+  padding: 4px 8px; font-size: 0.75rem; cursor: pointer;
+}
+body.has-botia-header { padding-top: 36px; }
+body.botia-index-page.has-botia-header { padding-top: 46px; }
+body.botia-index-page .botia-header-bar { padding: 8px 16px; }
+
+/* Accessible skip link without creating horizontal overflow in RTL layouts. */
+.skip-link {
+  position: fixed !important;
+  inset-inline-start: 12px !important;
+  left: auto !important;
+  top: 8px !important;
+  width: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+  clip: auto !important;
+  transform: translateY(-180%);
+  z-index: 10000;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #180d0d;
+  color: #ffd8bd;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BOTIA — Texture Modifiers | Evidence Layers</title>Texture Modifiers</title>
+  <title>BOTIA — Texture Modifiers | Evidence Layers</title>
   <meta property="og:title" content="BOTIA — texture">
   <meta property="og:description" content="">
   <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
@@ -31,8 +31,6 @@
   <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <style>
     .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
-    
-    body[dir="rtl"] 
     
     .hero { padding: 12px 0 0; text-align: center; }
     .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
@@ -80,89 +78,7 @@
     .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
     .source-links a { color: #e6a06b; text-decoration: none; }
     .source-links a:hover { text-decoration: underline; }
-  
 
-  /* Hamburger Menu */
-
-.hamburger-btn:hover { color: #fff; border-color: #e6a06b; }
-.sidebar-overlay {
-  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6); ; display: none;
-}
-.sidebar-overlay.open { display: block; }
-.sidebar {
-  position: fixed; top: 0; left: 0; width: 300px; max-width: 85vw; height: 100%;
-  background: rgba(8,4,4,0.97); ; overflow-y: auto;
-  padding: 16px; transform: translateX(-100%); transition: transform 0.3s ease;
-  border-right: 1px solid rgba(190,122,72,0.2);
-}
-.sidebar.open { transform: translateX(0); }
-.sidebar-close {
-  position: absolute; top: 10px; right: 14px; color: #e6a06b;
-  font-size: 1.4rem; cursor: pointer; background: none; border: none;
-}
-.sidebar-close:hover { color: #fff; }
-.sidebar-title { color: #e6a06b; font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
-.sidebar-search {
-  width: 100%; padding: 8px 10px; border-radius: 6px;
-  background: rgba(255,255,255,0.06); color: #f2e4dc;
-  border: 1px solid rgba(190,122,72,0.3); font-size: 0.8rem; margin-bottom: 14px;
-}
-.sidebar-search::placeholder { color: #8a8a8a; }
-.sidebar-tree { list-style: none; padding: 0; margin: 0; }
-.sidebar-tree li { margin: 1px 0; }
-.sidebar-tree a { color: #c0a08c; text-decoration: none; font-size: 0.82rem; display: block; padding: 3px 8px; border-radius: 4px; }
-.sidebar-tree a:hover { background: rgba(190,122,72,0.15); color: #f2e4dc; }
-.sidebar-tree .tree-parent { color: #e6a06b; font-weight: 600; font-size: 0.88rem; margin-top: 8px; cursor: pointer; }
-.sidebar-tree .tree-child { padding-left: 16px; display: none; }
-.sidebar-tree .tree-child.show { display: block; }
-.sidebar-tree .tree-home { font-weight: 700; color: #f2e4dc; }
-.sidebar-tree .tree-parent .arrow { font-size: 0.7rem; margin-right: 4px; }
-
-  
-
-
-
-
-
-  
-  .botia-header-bar {
-  display: flex; align-items: center; justify-content: space-between;
-  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
-  background: rgba(8,4,4,0.95); padding: 4px 12px;
-  border-bottom: 1px solid rgba(190,122,72,0.15); backdrop-filter: blur(10px);
-}
-.botia-nav-left { display: flex; align-items: center; gap: 12px; }
-.botia-header-bar .lang-switcher { position: static; }
-.botia-header-bar .lang-switcher select {
-  background: rgba(24,13,13,0.96); color: #f2e4dc;
-  border: 1px solid rgba(190,122,72,0.42); border-radius: 6px;
-  padding: 4px 8px; font-size: 0.75rem; cursor: pointer;
-}
-.hamburger-btn {
-  background: none; color: #e6a06b; border: 1px solid rgba(190,122,72,0.3);
-  border-radius: 4px; width: 30px; height: 30px; font-size: 1rem;
-  cursor: pointer; display: flex; align-items: center; justify-content: center;
-}
-body { padding-top: 36px; }
-
-  
-body.menu-open .hero img,
-body.menu-open #module_icon {
-  z-index: 0 !important;
-  position: relative !important;
-}
-
-  
-body.menu-open .hero,
-body.menu-open .hero *,
-body.menu-open #module_icon,
-body.menu-open .hero-logo,
-body.menu-open .hero img {
-  visibility: hidden !important;
-  opacity: 0 !important;
-  z-index: 0 !important;
-}
 
   
     .hero + .section { margin-top: 0 !important; }
@@ -197,10 +113,9 @@ body.menu-open .hero img {
 </script>
 
 </head>
-<body>
+<body data-botia-module="texture" class="has-botia-header">
 <div class="botia-header-bar">
   <div class="botia-nav-left">
-    <button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">☰</button>
     <a href="/index.html"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
   </div>
   <div class="lang-switcher">
@@ -210,40 +125,6 @@ body.menu-open .hero img {
     </select>
   </div>
 </div>
-
-<!-- Hamburger Menu -->
-
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
-<nav class="sidebar" id="sidebar">
-  <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
-  <div class="sidebar-title">BOTIA</div>
-  <input type="text" class="sidebar-search" placeholder="🔍 Filter..." onkeyup="filterSidebar()" />
-  <ul class="sidebar-tree" id="sidebarTree">
-        <li><a href="/index.html" class="tree-home">🏠 Home</a></li>
-    
-    <li class="tree-child"><a href="/ingredients/sugar.html">├─ Sugar</a></li>
-    <li class="tree-child"><a href="/ingredients/sweetener.html">├─ Sweeteners</a></li>
-    <li class="tree-child"><a href="/ingredients/texture.html">├─ Texture</a></li>
-    <li class="tree-child"><a href="/ingredients/flavor.html">├─ Flavourings</a></li>
-    <li class="tree-child"><a href="/ingredients/enumbers.html">└─ E-numbers</a></li>
-    <li class="tree-parent"><a href="/pages/animal.html" style="color:#e6a06b;font-weight:600;">🐾 Animal Origin</a></li>
-    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> <a href="/pages/muslim.html" style="color:#e6a06b;font-weight:600;">🕌 Muslim</a></li>
-    <li class="tree-child"><a href="/ingredients/halal.html">├─ Halal</a></li>
-    <li class="tree-child"><a href="/ingredients/haram.html">├─ Haram</a></li>
-    <li class="tree-child"><a href="/ingredients/mashbooh.html">└─ Mashbooh</a></li>
-    <li class="tree-parent" onclick="toggleSubmenu(this)"><span class="arrow">▶</span> <a href="/pages/woman.html" style="color:#e6a06b;font-weight:600;">👩 Woman</a></li>
-    <li class="tree-child"><a href="/ingredients/endocrine-disruptors.html">├─ Endocrine Disruptors</a></li>
-    <li class="tree-child"><a href="/ingredients/packaging-migrants.html">├─ Packaging Migrants</a></li>
-    <li class="tree-child"><a href="/ingredients/fat-accumulation.html">└─ Fat Accumulation</a></li>
-    <li class="tree-parent"><a href="/ingredients/index.html" style="color:#e6a06b;font-weight:600;">🧪 Ingredient Index</a></li>
-    <li class="tree-home" style="margin-top:12px;"><a href="/privacy.html">📄 Privacy Policy</a></li>
-  </ul>
-</nav>
-
-
-</div>
-
-
 
 
 
@@ -274,12 +155,12 @@ body.menu-open .hero img {
     <section class="section">
       <h2 class="section-title" id="ingredients_title">Related ingredients</h2>
       <div class="related-grid">
-        <a href="/ingredients/xanthan_gum.html">Xanthan gum (E415)</a>
-        <a href="/ingredients/carrageenan.html">Carrageenan (E407)</a>
-        <a href="/ingredients/guar_gum.html">Guar gum (E412)</a>
-        <a href="/ingredients/e471.html">E471</a>
-        <a href="/ingredients/lecithins.html">Lecithins (E322)</a>
-        <a href="/ingredients/konjac.html">Konjac (E425)</a>
+        <a href="/ingredients/xanthan_gum.html" id="ingredient_xanthan_gum">Xanthan gum (E415)</a>
+        <a href="/ingredients/carrageenan.html" id="ingredient_carrageenan">Carrageenan (E407)</a>
+        <a href="/ingredients/guar_gum.html" id="ingredient_guar_gum">Guar gum (E412)</a>
+        <a href="/ingredients/e471.html" id="ingredient_e471">E471</a>
+        <a href="/ingredients/lecithins.html" id="ingredient_lecithins">Lecithins (E322)</a>
+        <a href="/ingredients/konjac.html" id="ingredient_konjac">Konjac (E425)</a>
       </div>
     </section>
 
@@ -307,124 +188,16 @@ body.menu-open .hero img {
     <section class="closing">
       <p class="closing-claim" id="closing">For more detail on specific texture modifiers, explore the ingredient pages linked above.</p>
       <p class="source-links">
-        Sources:
+        <span id="sources-label">Sources:</span>
         <a href="https://www.fao.org/publications/card/en/c/CA5644EN/" target="_blank">NOVA Classification (FAO, 2019)</a> ·
         <a href="https://www.efsa.europa.eu/en/topics/topic/food-additives" target="_blank">EFSA Food Additives</a> ·
         <a href="https://eur-lex.europa.eu/eli/reg/2008/1333/oj" target="_blank">EU 1333/2008</a>
       </p>
-      <a href="/pages/evidence.html" class="cta-button">← Back to Evidence Layers</a>
+      <a href="/pages/evidence.html" class="cta-button" id="back-to-evidence">← Back to Evidence Layers</a>
     </section>
   </main>
 
-  <script>
-
-function toggleSidebar() {
-  document.getElementById('sidebar').classList.toggle('open');
-  document.getElementById('sidebarOverlay').classList.toggle('open');
-  document.body.classList.toggle('menu-open');
-}
-function toggleSubmenu(el) {
-  const arrow = el.querySelector('.arrow');
-  const children = el.parentElement.querySelectorAll('.tree-child');
-  const isOpen = children[0] && children[0].classList.contains('show');
-  children.forEach(c => c.classList.toggle('show', !isOpen));
-  if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
-}
-function filterSidebar() {
-  const q = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
-  const items = document.querySelectorAll('.sidebar-tree li');
-  items.forEach(item => {
-    item.style.display = (!q || item.textContent.toLowerCase().includes(q)) ? '' : 'none';
-  });
-}
-
-
-
-
-    document.addEventListener('DOMContentLoaded', function() {
-      const RTL_LANGS = ['ar'];
-      const SOPORTADOS = ['ar','de','en','es','fr','id','it','nl','pl','pt','ro','ru','tr','zh'];
-
-      function getIdioma() {
-        const params = new URLSearchParams(window.location.search);
-        if (params.get('lang')) return params.get('lang');
-        if (localStorage.getItem('botia-lang')) return localStorage.getItem('botia-lang');
-        const navLang = navigator.language.split('-')[0];
-        return SOPORTADOS.includes(navLang) ? navLang : 'en';
-      }
-      window.cambiarIdioma = function(lang) {
-        localStorage.setItem('botia-lang', lang);
-        window.location.reload();
-      };
-
-      const LANG = getIdioma();
-      document.getElementById('lang-select').value = LANG;
-      document.documentElement.lang = LANG;
-      if (RTL_LANGS.includes(LANG)) {
-        document.body.setAttribute('dir', 'rtl');
-      }
-
-      fetch('/i18n/' + LANG + '/texture.json')
-        .then(res => res.ok ? res.json() : Promise.reject())
-        .then(d => {
-          
-          // Actualizar <html lang>
-          document.documentElement.lang = LANG;
-          
-          // Actualizar <title>
-          if (d.title) document.title = d.title;
-          
-          // Actualizar meta description
-          const metaDesc = document.querySelector('meta[name="description"]');
-          if (metaDesc && d.description) metaDesc.setAttribute('content', d.description);
-          
-          // Actualizar OG tags
-          const ogTitle = document.querySelector('meta[property="og:title"]');
-          if (ogTitle && d.title) ogTitle.setAttribute('content', d.title);
-          const ogDesc = document.querySelector('meta[property="og:description"]');
-          if (ogDesc && d.description) ogDesc.setAttribute('content', d.description);
-          const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-          if (twitterTitle && d.title) twitterTitle.setAttribute('content', d.title);
-          const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-          if (twitterDesc && d.description) twitterDesc.setAttribute('content', d.description);
-          
-          // Actualizar contenido del body
-          Object.keys(d).forEach(id => {
-            if (id === '_meta') return;
-            const el = document.getElementById(id);
-            if (el) el.textContent = d[id];
-          });
-        })
-        .catch(() => { document.documentElement.lang = 'en'; });
-    });
-  </script>
-<script>
-
-function toggleSidebar() {
-  document.getElementById('sidebar').classList.toggle('open');
-  document.getElementById('sidebarOverlay').classList.toggle('open');
-  document.body.classList.toggle('menu-open');
-}
-function toggleSubmenu(el) {
-  const arrow = el.querySelector('.arrow');
-  const children = el.parentElement.querySelectorAll('.tree-child');
-  const isOpen = children[0] && children[0].classList.contains('show');
-  children.forEach(c => c.classList.toggle('show', !isOpen));
-  if (arrow) arrow.textContent = isOpen ? '▶' : '▼';
-}
-function filterSidebar() {
-  const q = document.querySelector('.sidebar-search')?.value?.toLowerCase() || '';
-  const items = document.querySelectorAll('.sidebar-tree li');
-  items.forEach(item => {
-    item.style.display = (!q || item.textContent.toLowerCase().includes(q)) ? '' : 'none';
-  });
-}
-
-
-
-
-
-
-</script>
+  
+  <script src="/botia/assets/js/i18n-loader.js" defer></script>
 </body>
 </html> 
