@@ -2,6 +2,10 @@
 (() => {
   "use strict";
 
+  const RUNTIME_KEY = "__botiaI18nRuntime";
+  if (window[RUNTIME_KEY]?.bootstrapped) return;
+  const runtime = window[RUNTIME_KEY] = { bootstrapped: true, initPromise: null };
+
   const LANGS = ["en", "es", "ar", "de", "fr", "nl", "it", "pt", "pl", "ro", "ru", "tr", "zh", "id"];
   const RTL = new Set(["ar"]);
 
@@ -449,19 +453,25 @@
     return true;
   };
 
-  const init = async () => {
-    const ok = await loadModule(moduleName(), language());
-    const back = document.getElementById("back-button");
-    if (back && !back.dataset.botiaBackBound) {
-      back.dataset.botiaBackBound = "true";
-      back.addEventListener("click", event => {
-        if (document.referrer && document.referrer.includes(location.hostname)) {
-          event.preventDefault();
-          history.back();
-        }
-      });
-    }
-    return ok;
+  const init = () => {
+    if (runtime.initPromise) return runtime.initPromise;
+
+    runtime.initPromise = (async () => {
+      const ok = await loadModule(moduleName(), language());
+      const back = document.getElementById("back-button");
+      if (back && !back.dataset.botiaBackBound) {
+        back.dataset.botiaBackBound = "true";
+        back.addEventListener("click", event => {
+          if (document.referrer && document.referrer.includes(location.hostname)) {
+            event.preventDefault();
+            history.back();
+          }
+        });
+      }
+      return ok;
+    })();
+
+    return runtime.initPromise;
   };
 
   // Backwards-compatible API for the three app WebViews and any external caller.
