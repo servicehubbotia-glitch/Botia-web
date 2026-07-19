@@ -339,36 +339,37 @@
         transition: transform 0.3s ease;
     `;
     toggleBtn.innerHTML = `
-        <div style="position:relative;width:80px;height:80px;">
+        <div style="position:relative;width:100px;height:100px;">
             <div id="botiaNotification" style="
                 position:absolute;
-                top:-6px;
-                right:-6px;
-                min-width:18px;
-                height:18px;
+                top:-10px;
+                right:-10px;
+                min-width:28px;
+                height:28px;
                 background:#ff4444;
                 border-radius:50%;
-                border:2px solid #100707;
+                border:3px solid #100707;
                 display:none;
                 align-items:center;
                 justify-content:center;
-                font-size:10px;
-                font-weight:700;
+                font-size:14px;
+                font-weight:800;
                 color:white;
-                padding:0 4px;
+                padding:0 6px;
                 z-index:10;
                 font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
                 animation:pulse-notification 1.5s ease-in-out infinite;
+                box-shadow:0 4px 12px rgba(255,68,68,0.4);
             ">1</div>
             <img src="/botia/assets/robot.png" 
                  alt="BOTIA Robot" 
                  id="robotImage"
                  style="
-                     width:80px;
-                     height:80px;
+                     width:100px;
+                     height:100px;
                      object-fit:contain;
                      display:block;
-                     filter:drop-shadow(0 4px 20px rgba(230,160,107,0.4));
+                     filter:drop-shadow(0 8px 30px rgba(230,160,107,0.5));
                      transition:transform 0.3s ease;
                  " />
         </div>
