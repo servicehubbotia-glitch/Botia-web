@@ -295,6 +295,7 @@
         quizOrder = shuffleArray(QUIZ_QUESTIONS.map((_, i) => i));
         conversationCount = 0;
     }
+
     // ============================================================
     //  CREAR ELEMENTOS DEL CHAT
     // ============================================================
@@ -320,11 +321,58 @@
         </div>
     `;
 
+    // ============================================================
+    //  BOTÓN FLOTANTE CON ROBOT (IMAGEN + ANIMACIONES)
+    // ============================================================
     const toggleBtn = document.createElement('button');
     toggleBtn.id = 'chatToggle';
     toggleBtn.setAttribute('aria-label', 'Abrir chat');
-    toggleBtn.style.cssText = 'width:62px;height:62px;border-radius:50%;background:#e6a06b;border:none;box-shadow:0 8px 24px rgba(230,160,107,0.35);cursor:pointer;display:flex;align-items:center;justify-content:center;color:#100707;padding:0;transition:transform 0.2s;';
-    toggleBtn.innerHTML = `<svg viewBox="0 0 24 24" width="32" height="32" style="fill:currentColor;"><path d="M12 2C6.48 2 2 6.04 2 11c0 2.93 1.52 5.57 3.87 7.16L4.5 21.5l4.04-1.88C9.64 20.16 10.8 20.5 12 20.5c5.52 0 10-4.04 10-9S17.52 2 12 2zm0 16c-1.1 0-2.16-.22-3.13-.6l-2.5 1.17 1.17-2.42C6.2 15.2 5.5 13.2 5.5 11c0-3.86 3.14-7 6.5-7s6.5 3.14 6.5 7-2.64 7-6.5 7z"/></svg>`;
+    toggleBtn.style.cssText = `
+        position: relative;
+        width: auto;
+        height: auto;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        animation: float 3s ease-in-out infinite;
+        transition: transform 0.3s ease;
+    `;
+    toggleBtn.innerHTML = `
+        <div style="position:relative;width:80px;height:80px;">
+            <div id="botiaNotification" style="
+                position:absolute;
+                top:-6px;
+                right:-6px;
+                min-width:18px;
+                height:18px;
+                background:#ff4444;
+                border-radius:50%;
+                border:2px solid #100707;
+                display:none;
+                align-items:center;
+                justify-content:center;
+                font-size:10px;
+                font-weight:700;
+                color:white;
+                padding:0 4px;
+                z-index:10;
+                font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+                animation:pulse-notification 1.5s ease-in-out infinite;
+            ">1</div>
+            <img src="/botia/assets/robot.png" 
+                 alt="BOTIA Robot" 
+                 id="robotImage"
+                 style="
+                     width:80px;
+                     height:80px;
+                     object-fit:contain;
+                     display:block;
+                     filter:drop-shadow(0 4px 20px rgba(230,160,107,0.4));
+                     transition:transform 0.3s ease;
+                 " />
+        </div>
+    `;
 
     container.appendChild(chatWindow);
     container.appendChild(toggleBtn);
@@ -437,6 +485,9 @@
             appendMessage('bot', reply);
             conversationCount++;
             
+            // Hacer que el robot "hable" cuando responde
+            if (window.botiaTalk) window.botiaTalk();
+            
             sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ 
                 count: conversationCount,
                 quizIndex: quizIndex,
@@ -498,7 +549,10 @@
         } else {
             chatWindow.style.display = 'flex';
             isOpen = true;
-            // Mostrar primera pregunta si no hay mensajes
+            
+            // Limpiar notificación al abrir el chat
+            if (window.clearBotiaNotification) window.clearBotiaNotification();
+            
             if (messagesEl.children.length === 0) {
                 appendMessage('bot', t('welcome'));
                 setTimeout(showQuizQuestion, 500);
@@ -533,6 +587,56 @@
     });
 
     // ============================================================
+    //  INTERACCIONES DEL ROBOT (después de que el DOM cargue)
+    // ============================================================
+    setTimeout(() => {
+        const robotImage = document.getElementById('robotImage');
+        const notification = document.getElementById('botiaNotification');
+
+        if (robotImage) {
+            // Efecto hover: el robot se inclina
+            toggleBtn.addEventListener('mouseenter', () => {
+                robotImage.style.transform = 'scale(1.08) rotate(-3deg)';
+            });
+
+            toggleBtn.addEventListener('mouseleave', () => {
+                robotImage.style.transform = 'scale(1) rotate(0deg)';
+            });
+
+            // Rebote al hacer clic
+            toggleBtn.addEventListener('click', () => {
+                robotImage.style.transform = 'scale(0.85)';
+                setTimeout(() => {
+                    robotImage.style.transform = 'scale(1)';
+                }, 200);
+            });
+        }
+
+        // Funciones globales para el robot
+        window.botiaTalk = function() {
+            if (robotImage) {
+                robotImage.style.transform = 'scale(1.15) rotate(5deg)';
+                setTimeout(() => {
+                    robotImage.style.transform = 'scale(1) rotate(0deg)';
+                }, 300);
+            }
+        };
+
+        window.showBotiaNotification = function(count) {
+            if (notification) {
+                notification.style.display = 'flex';
+                notification.textContent = count > 9 ? '9+' : count;
+            }
+        };
+
+        window.clearBotiaNotification = function() {
+            if (notification) {
+                notification.style.display = 'none';
+            }
+        };
+    }, 100);
+
+    // ============================================================
     //  DETECTAR CAMBIOS DE IDIOMA
     // ============================================================
     const originalSetItem = localStorage.setItem;
@@ -559,11 +663,20 @@
             0% { opacity: 0; transform: translateY(8px); }
             100% { opacity: 1; transform: translateY(0); }
         }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        @keyframes pulse-notification {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
         @media (max-width: 540px) {
             #chat-window { width: 92vw !important; height: 420px !important; right: 0 !important; }
             #chat-container { right: 16px !important; bottom: 16px !important; }
-            #chatToggle { width: 56px !important; height: 56px !important; }
-            #chatToggle svg { width: 28px !important; height: 28px !important; }
+            #chatToggle div { width: 60px !important; height: 60px !important; }
+            #chatToggle img { width: 60px !important; height: 60px !important; }
+            #botiaNotification { min-width: 14px !important; height: 14px !important; font-size: 8px !important; top: -4px !important; right: -4px !important; }
         }
     `;
     document.head.appendChild(style);
@@ -577,4 +690,3 @@
     console.log(`🔗 Worker: ${WORKER_URL}`);
 
 })();
-
