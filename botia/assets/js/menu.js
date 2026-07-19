@@ -2,6 +2,10 @@
 (() => {
   "use strict";
 
+  const RUNTIME_KEY = "__botiaSharedMenuRuntime";
+  if (window[RUNTIME_KEY]?.bootstrapped) return;
+  const runtime = window[RUNTIME_KEY] = { bootstrapped: true };
+
   const SUPPORTED_LANGUAGES = new Set([
     "en", "es", "ar", "de", "fr", "nl", "it", "pt",
     "pl", "ro", "ru", "tr", "zh", "id"
@@ -160,8 +164,19 @@
   };
 
   const initialise = async () => {
-    const menuButton = document.getElementById("menuBtn");
-    if (!menuButton) return;
+    const existingButton = document.getElementById("menuBtn");
+    if (!existingButton) return;
+
+    // Replace the authored button with a clean clone so handlers left by any
+    // previous menu implementation cannot coexist with the shared menu.
+    const menuButton = existingButton.cloneNode(true);
+    menuButton.removeAttribute("onclick");
+    existingButton.replaceWith(menuButton);
+
+    // These nodes are generated exclusively by this script. Removing a stale
+    // copy before rebuilding guarantees one drawer and one overlay per page.
+    document.querySelectorAll("#botiaDrawer, #botiaMenuOverlay").forEach(node => node.remove());
+    document.body.classList.remove("botia-menu-open");
 
     menuButton.type = "button";
     menuButton.setAttribute("aria-controls", "botiaDrawer");
@@ -176,6 +191,7 @@
       ]);
 
       const { overlay, drawer, closeButton } = buildDrawer(menu, labels, language);
+      runtime.initialised = true;
       let previousFocus = null;
 
       const openDrawer = () => {
