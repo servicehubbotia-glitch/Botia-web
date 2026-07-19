@@ -650,7 +650,7 @@
         }
     };
 
-    // ============================================================
+       // ============================================================
     //  ESTILOS GLOBALES
     // ============================================================
     const style = document.createElement('style');
@@ -665,22 +665,121 @@
         }
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-8px); }
+            50% { transform: translateY(-12px); }
         }
         @keyframes pulse-notification {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.2); }
         }
+        
+        /* ============================================================
+           ROBOT - TAMAÑO GIGANTE (web)
+           ============================================================ */
+        #chatToggle {
+            position: relative;
+            width: auto !important;
+            height: auto !important;
+            background: transparent !important;
+            border: none !important;
+            cursor: pointer !important;
+            padding: 0 !important;
+            animation: float 3s ease-in-out infinite !important;
+            transition: transform 0.3s ease !important;
+            z-index: 1000 !important;
+        }
+        
+        #chatToggle div {
+            width: 100px !important;
+            height: 100px !important;
+            position: relative !important;
+        }
+        
+        #chatToggle img {
+            width: 100px !important;
+            height: 100px !important;
+            object-fit: contain !important;
+            display: block !important;
+            filter: drop-shadow(0 8px 30px rgba(230, 160, 107, 0.5)) !important;
+            transition: transform 0.3s ease !important;
+        }
+        
+        #chatToggle img:hover {
+            transform: scale(1.1) rotate(-3deg) !important;
+            filter: drop-shadow(0 12px 40px rgba(230, 160, 107, 0.7)) !important;
+        }
+        
+        /* Notificación más grande */
+        #botiaNotification {
+            position: absolute !important;
+            top: -10px !important;
+            right: -10px !important;
+            min-width: 28px !important;
+            height: 28px !important;
+            background: #ff4444 !important;
+            border-radius: 50% !important;
+            border: 3px solid #100707 !important;
+            display: none !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-size: 14px !important;
+            font-weight: 800 !important;
+            color: white !important;
+            padding: 0 6px !important;
+            z-index: 10 !important;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+            animation: pulse-notification 1.5s ease-in-out infinite !important;
+            box-shadow: 0 4px 12px rgba(255, 68, 68, 0.4) !important;
+        }
+        
+        /* ============================================================
+           MÓVIL - AÚN MÁS GRANDE
+           ============================================================ */
+        @media (max-width: 768px) {
+            #chatToggle div {
+                width: 130px !important;
+                height: 130px !important;
+            }
+            #chatToggle img {
+                width: 130px !important;
+                height: 130px !important;
+            }
+            #botiaNotification {
+                min-width: 34px !important;
+                height: 34px !important;
+                font-size: 16px !important;
+                top: -12px !important;
+                right: -12px !important;
+            }
+        }
+        
         @media (max-width: 540px) {
-            #chat-window { width: 92vw !important; height: 420px !important; right: 0 !important; }
-            #chat-container { right: 16px !important; bottom: 16px !important; }
-            #chatToggle div { width: 60px !important; height: 60px !important; }
-            #chatToggle img { width: 60px !important; height: 60px !important; }
-            #botiaNotification { min-width: 14px !important; height: 14px !important; font-size: 8px !important; top: -4px !important; right: -4px !important; }
+            #chatToggle div {
+                width: 120px !important;
+                height: 120px !important;
+            }
+            #chatToggle img {
+                width: 120px !important;
+                height: 120px !important;
+            }
+            #botiaNotification {
+                min-width: 30px !important;
+                height: 30px !important;
+                font-size: 14px !important;
+                top: -10px !important;
+                right: -10px !important;
+            }
+            #chat-window {
+                width: 92vw !important;
+                height: 420px !important;
+                right: 0 !important;
+            }
+            #chat-container {
+                right: 12px !important;
+                bottom: 12px !important;
+            }
         }
     `;
     document.head.appendChild(style);
-
     // ============================================================
     //  INICIO
     // ============================================================
