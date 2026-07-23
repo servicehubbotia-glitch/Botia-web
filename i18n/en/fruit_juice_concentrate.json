@@ -1,0 +1,33 @@
+{
+  "title": "Fruit Juice Concentrate",
+  "name": "Fruit juice concentrate",
+  "e_code": null,
+  "aliases": "fruit juice concentrate, concentrated fruit juice, fruit concentrate, apple juice concentrate, grape juice concentrate, pear juice concentrate",
+  "module_icon": "Sugar.png",
+  "layers": [
+    "sugar"
+  ],
+  "what_is": "Fruit juice from which water has been removed, concentrating the natural sugars. Used as a sweetener in processed foods while allowing manufacturers to label products as containing 'fruit' or 'no added sugar'.",
+  "why_botia": "WHO classifies fruit juice concentrates as free sugars. They are chemically similar to added sugar but benefit from a health halo. A product labelled 'no added sugar' can still contain concentrated fruit juice as its primary sweetener.",
+  "can_1": "Detect fruit juice concentrates on ingredient labels.",
+  "can_2": "Flag products using fruit concentrates as primary sweeteners despite 'no added sugar' claims.",
+  "can_3": "Categorise them as WHO free sugar (fruit concentrate group).",
+  "cannot_1": "Distinguish between different types of fruit concentrate used.",
+  "cannot_2": "Quantify the exact sugar content from the concentrate alone.",
+  "cannot_3": "Tell you the total sugar content — check the nutrition label.",
+  "sources": [
+    {
+      "label": "WHO Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    },
+    {
+      "label": "EFSA Scientific Opinion on dietary sugars (2022)",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/7074"
+    }
+  ],
+  "what_is_title": "What it is",
+  "why_botia_title": "Why BOTIA flags it",
+  "can_title": "BOTIA CAN",
+  "cannot_title": "BOTIA CANNOT",
+  "sources_title": "Sources"
+}

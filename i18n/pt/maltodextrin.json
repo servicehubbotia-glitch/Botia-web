@@ -1,0 +1,27 @@
+{
+  "name": "Maltodextrina",
+  "e_code": null,
+  "aliases": "maltodextrina, maltodextrina, maltodextrina, hidrolisado de amido hidrogenado",
+  "module_icon": "Sugar.png",
+  "layers": [
+    "sugar"
+  ],
+  "what_is": "Um pó de carboidrato ultraprocessado feito a partir da quebra parcial de amidos.",
+  "why_botia": "Ele sinaliza porque é um substituto do açúcar de ação rápida e um marcador claro de ultraprocessamento (NOVA Grupo 4) que afeta a glicemia.",
+  "can_1": "Detectar maltodextrina e classificar o alimento como ultraprocessado (NOVA 4).",
+  "can_2": "Acionar um aviso na camada de Açúcar para controle glicêmico.",
+  "cannot_1": "Determinar a fonte botânica do amido (ex.: milho, trigo ou tapioca) a menos que seja declarada explicitamente.",
+  "cannot_2": "Avaliar o índice glicêmico ou o comprimento da cadeia molecular da maltodextrina específica utilizada.",
+  "sources": [
+    {
+      "label": "Sistema de Classificação NOVA da FAO/OMS (2019)",
+      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+    },
+    {
+      "label": "Regulamento (UE) N.º 1169/2011",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32011R1169"
+    }
+  ],
+  "title": "Maltodextrina",
+  "description": "Um pó de carboidrato ultraprocessado feito a partir da quebra parcial de amidos."
+}
