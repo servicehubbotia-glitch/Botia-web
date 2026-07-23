@@ -1,0 +1,232 @@
+/* BOTIA shared drawer */
+:root {
+  --botia-menu-text: #f2e4dc;
+  --botia-menu-accent: #e6a06b;
+  --botia-menu-subtext: #c0a08c;
+  --botia-menu-border: rgba(190, 122, 72, 0.3);
+  --botia-menu-divider: rgba(190, 122, 72, 0.15);
+}
+
+#menuBtn,
+.botia-drawer,
+.botia-drawer button,
+.botia-drawer a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#menuBtn {
+  position: fixed;
+  top: 12px;
+  left: 16px;
+  z-index: 1202;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(190, 122, 72, 0.4);
+  border-radius: 10px;
+  background: rgba(8, 4, 4, 0.88);
+  color: #e6a06b;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease, opacity 180ms ease;
+}
+
+#menuBtn:hover,
+#menuBtn:focus-visible {
+  background: rgba(36, 16, 16, 0.96);
+  border-color: rgba(230, 160, 107, 0.72);
+  outline: none;
+}
+
+body[dir="rtl"] #menuBtn {
+  right: 16px;
+  left: auto;
+}
+
+.botia-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1198;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+.botia-menu-overlay[hidden] {
+  display: none;
+}
+
+.botia-drawer {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 1201;
+  width: 82vw;
+  max-width: 360px;
+  min-height: 100dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  box-sizing: border-box;
+  padding: 18px 16px 28px;
+  background: linear-gradient(135deg, #100707 0%, #241010 48%, #080505 100%);
+  border-right: 1px solid rgba(190, 122, 72, 0.3);
+  border-radius: 0 18px 18px 0;
+  color: var(--botia-menu-text);
+  transform: translateX(-102%);
+  transition: transform 220ms ease;
+  box-shadow: 18px 0 50px rgba(0, 0, 0, 0.34);
+}
+
+body[dir="rtl"] .botia-drawer {
+  right: 0;
+  left: auto;
+  border-right: 0;
+  border-left: 1px solid rgba(190, 122, 72, 0.3);
+  border-radius: 18px 0 0 18px;
+  transform: translateX(102%);
+}
+
+body.botia-menu-open {
+  overflow: hidden;
+}
+
+body.botia-menu-open .botia-menu-overlay {
+  opacity: 1;
+}
+
+body.botia-menu-open .botia-drawer,
+body[dir="rtl"].botia-menu-open .botia-drawer {
+  transform: translateX(0);
+}
+
+body.botia-menu-open #menuBtn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.botia-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 2px 2px 16px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--botia-menu-divider);
+}
+
+.botia-drawer-brand {
+  color: var(--botia-menu-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.botia-menu-close {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(190, 122, 72, 0.4);
+  border-radius: 10px;
+  background: rgba(8, 4, 4, 0.56);
+  color: var(--botia-menu-accent);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.botia-menu-close:hover,
+.botia-menu-close:focus-visible,
+.botia-menu-section-title:hover,
+.botia-menu-section-title:focus-visible,
+.botia-menu-link:hover,
+.botia-menu-link:focus-visible {
+  outline: none;
+  border-color: rgba(230, 160, 107, 0.68);
+  background: rgba(190, 122, 72, 0.1);
+}
+
+.botia-drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.botia-menu-group {
+  padding: 4px 0;
+  border-bottom: 1px solid var(--botia-menu-divider);
+}
+
+.botia-menu-section-title,
+.botia-menu-main-link {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  padding: 13px 12px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--botia-menu-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  line-height: 1.35;
+  text-align: start;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botia-menu-section-title[aria-expanded="true"] {
+  background: rgba(190, 122, 72, 0.08);
+}
+
+.botia-submenu {
+  padding: 2px 0 8px 10px;
+}
+
+body[dir="rtl"] .botia-submenu {
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+.botia-submenu[hidden] {
+  display: none;
+}
+
+.botia-submenu-link {
+  display: block;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  color: var(--botia-menu-subtext);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.botia-menu-link[aria-current="page"] {
+  color: var(--botia-menu-text);
+  background: rgba(190, 122, 72, 0.12);
+  border-color: rgba(190, 122, 72, 0.26);
+}
+
+/* Keep the existing BOTIA home control visible beside the fixed menu button. */
+body.has-botia-header .botia-header-bar {
+  padding-inline-start: 70px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #menuBtn,
+  .botia-menu-overlay,
+  .botia-drawer {
+    transition: none;
+  }
+}

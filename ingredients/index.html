@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOTIA — Ingredient Index | Food Transparency Library</title>
+  <meta property="og:title" content="BOTIA — Ingredient Index | Food Transparency Library">
+  <meta property="og:description" content="Complete index of 40 food ingredients analysed by BOTIA — search by name or E-number">
+  <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <meta property="og:url" content="https://www.botia-safefood.com/ingredients/index.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BOTIA — Ingredient Index | Food Transparency Library">
+  <meta name="twitter:description" content="Complete index of 40 food ingredients analysed by BOTIA — search by name or E-number">
+  <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <link rel="canonical" href="https://www.botia-safefood.com/ingredients/index.html" />
+  <meta name="description" content="Complete index of food ingredients analysed by BOTIA" />
+  <link rel="dns-prefetch" href="https://www.who.int">
+  <link rel="dns-prefetch" href="https://www.efsa.europa.eu">
+  <link rel="dns-prefetch" href="https://eur-lex.europa.eu">
+  <link rel="dns-prefetch" href="https://www.fao.org">
+  <link rel="preconnect" href="https://www.who.int">
+  <link rel="preconnect" href="https://www.efsa.europa.eu">
+  <link rel="preconnect" href="https://eur-lex.europa.eu">
+  <link rel="preconnect" href="https://www.fao.org">
+
+  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
+  <link rel="preload" href="/botia-landing.css" as="style">
+  <link rel="stylesheet" href="/botia-landing.css" />
+  <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
+  <style>
+    .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
+    .hero { padding: 20px 0 10px; text-align: center; }
+    .hero h1 { font-size: 1.6rem; color: #f2e4dc; margin-bottom: 6px; }
+    .subtitle { font-size: 1rem; color: #c0a08c; margin-bottom: 16px; }
+    .search-box {
+      width: 100%; padding: 12px 16px; border-radius: 8px;
+      background: rgba(24,13,13,0.9); color: #f2e4dc;
+      border: 1px solid rgba(190,122,72,0.4); font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .search-box::placeholder { color: #8a8a8a; }
+    .count { font-size: 0.85rem; color: #8a8a8a; margin-bottom: 16px; }
+    .no-results { text-align: center; color: #8a8a8a; padding: 40px; }
+    .no-results[hidden] { display: none; }
+    .closing { text-align: center; padding: 20px 0; }
+    .cta-button {
+      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+      padding: 10px 24px; border-radius: 8px; text-decoration: none;
+      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+    }
+
+
+    .ingredient-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 20px 0;
+    }
+    .ingredient-card {
+      display: block;
+      background: rgba(255,255,255,0.03);
+      border-radius: 12px;
+      transition: background 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .ingredient-card-main {
+      display: block;
+      padding: 14px 16px 8px;
+      text-decoration: none;
+    }
+    .ingredient-card:hover {
+      background: rgba(255,255,255,0.06);
+    }
+    .ingredient-card[hidden] {
+      display: none;
+    }
+    .ingredient-card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      pointer-events: none;
+    }
+    .ingredient-card-name {
+      color: #f2e4dc;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .ingredient-card-ecode {
+      color: #e6a06b;
+      font-size: 0.8rem;
+    }
+    .ingredient-card-layers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 0 16px 14px;
+    }
+    .layer-badge {
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+    }
+    .layer-animal    { background: #4a2a0a; color: #ffd8bd; }
+    .layer-muslim    { background: #1e4a6a; color: #fff; }
+    .layer-woman     { background: #6a1a3a; color: #fff; }
+    .layer-sugar     { background: #6a3a0a; color: #fff; }
+    .layer-sweetener { background: #4a3a6a; color: #fff; }
+    .layer-texture   { background: #2a4a2a; color: #fff; }
+    .layer-flavour   { background: #4a4a0a; color: #fff; }
+    .layer-enumbers  { background: #3a3a3a; color: #fff; }
+  </style>
+  <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/index.html?lang=en">
+  <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/index.html?lang=es">
+  <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/ingredients/index.html?lang=ar">
+  <link rel="alternate" hreflang="de" href="https://www.botia-safefood.com/ingredients/index.html?lang=de">
+  <link rel="alternate" hreflang="fr" href="https://www.botia-safefood.com/ingredients/index.html?lang=fr">
+  <link rel="alternate" hreflang="nl" href="https://www.botia-safefood.com/ingredients/index.html?lang=nl">
+  <link rel="alternate" hreflang="it" href="https://www.botia-safefood.com/ingredients/index.html?lang=it">
+  <link rel="alternate" hreflang="pt" href="https://www.botia-safefood.com/ingredients/index.html?lang=pt">
+  <link rel="alternate" hreflang="pl" href="https://www.botia-safefood.com/ingredients/index.html?lang=pl">
+  <link rel="alternate" hreflang="ro" href="https://www.botia-safefood.com/ingredients/index.html?lang=ro">
+  <link rel="alternate" hreflang="ru" href="https://www.botia-safefood.com/ingredients/index.html?lang=ru">
+  <link rel="alternate" hreflang="tr" href="https://www.botia-safefood.com/ingredients/index.html?lang=tr">
+  <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/ingredients/index.html?lang=zh">
+  <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/ingredients/index.html?lang=id">
+  <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/ingredients/index.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "BOTIA Ingredient Index",
+  "description": "Complete index of food ingredients analysed by BOTIA",
+  "url": "https://www.botia-safefood.com/ingredients/index.html",
+  "numberOfItems": 40,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Acesulfame potassium",
+      "url": "https://www.botia-safefood.com/ingredients/acesulfame_k.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Alcohol",
+      "url": "https://www.botia-safefood.com/ingredients/alcohol.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Aspartame",
+      "url": "https://www.botia-safefood.com/ingredients/aspartame.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Bisphenol A",
+      "url": "https://www.botia-safefood.com/ingredients/bpa.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Butylated hydroxyanisole",
+      "url": "https://www.botia-safefood.com/ingredients/bha.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Butylated hydroxytoluene",
+      "url": "https://www.botia-safefood.com/ingredients/bht.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Cadmium",
+      "url": "https://www.botia-safefood.com/ingredients/cadmium.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Carmine",
+      "url": "https://www.botia-safefood.com/ingredients/carmine.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Carrageenan",
+      "url": "https://www.botia-safefood.com/ingredients/carrageenan.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Cyclamates",
+      "url": "https://www.botia-safefood.com/ingredients/cyclamates.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Dioxins and PCBs",
+      "url": "https://www.botia-safefood.com/ingredients/dioxins_pcbs.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Erythritol",
+      "url": "https://www.botia-safefood.com/ingredients/erythritol.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Esters of mono- and diglycerides of fatty acids",
+      "url": "https://www.botia-safefood.com/ingredients/e472.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "Food enzymes",
+      "url": "https://www.botia-safefood.com/ingredients/enzymes.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "Free Sugars",
+      "url": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "Fruit Juice Concentrate",
+      "url": "https://www.botia-safefood.com/ingredients/fruit_juice_concentrate.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "name": "Gelatine",
+      "url": "https://www.botia-safefood.com/ingredients/gelatine.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "name": "Glucose syrup",
+      "url": "https://www.botia-safefood.com/ingredients/glucose_syrup.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "name": "Glycerol",
+      "url": "https://www.botia-safefood.com/ingredients/glycerol.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "name": "Guar gum",
+      "url": "https://www.botia-safefood.com/ingredients/guar_gum.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "name": "Konjac",
+      "url": "https://www.botia-safefood.com/ingredients/konjac.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "name": "Lead",
+      "url": "https://www.botia-safefood.com/ingredients/lead.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "name": "Lecithins",
+      "url": "https://www.botia-safefood.com/ingredients/lecithins.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "name": "Maltitols",
+      "url": "https://www.botia-safefood.com/ingredients/maltitol.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "name": "Maltodextrin",
+      "url": "https://www.botia-safefood.com/ingredients/maltodextrin.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "name": "Methylmercury",
+      "url": "https://www.botia-safefood.com/ingredients/methylmercury.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "name": "Mono- and diglycerides of fatty acids",
+      "url": "https://www.botia-safefood.com/ingredients/e471.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "name": "Natural Flavourings",
+      "url": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "name": "Parabens",
+      "url": "https://www.botia-safefood.com/ingredients/parabens.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "name": "Phthalates",
+      "url": "https://www.botia-safefood.com/ingredients/phthalates.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "name": "Saccharin",
+      "url": "https://www.botia-safefood.com/ingredients/saccharin.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "name": "Shellac",
+      "url": "https://www.botia-safefood.com/ingredients/shellac.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "name": "Sorbitol",
+      "url": "https://www.botia-safefood.com/ingredients/sorbitol.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "name": "Steviol glycosides from Stevia",
+      "url": "https://www.botia-safefood.com/ingredients/steviol_glycosides.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "name": "Sucralose",
+      "url": "https://www.botia-safefood.com/ingredients/sucralose.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "name": "Titanium dioxide",
+      "url": "https://www.botia-safefood.com/ingredients/e171.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "name": "Trans fatty acids",
+      "url": "https://www.botia-safefood.com/ingredients/trans_fats.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "name": "Vinegar",
+      "url": "https://www.botia-safefood.com/ingredients/vinegar.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "name": "Xanthan gum",
+      "url": "https://www.botia-safefood.com/ingredients/xanthan_gum.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "name": "Xylitol",
+      "url": "https://www.botia-safefood.com/ingredients/xylitol.html"
+    }
+  ]
+}
+</script>
+  <link rel="stylesheet" href="/botia/assets/menu.css">
+  <script src="/botia/assets/js/menu.js"></script>
+</head>
+<body class="has-botia-header botia-index-page" data-botia-module="ingredient_index">
+  <button id="menuBtn" aria-label="Menu">☰</button>
+<div class="botia-header-bar">
+  <div class="botia-nav-left">
+    <a href="/index.html"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+  </div>
+  <div class="lang-switcher">
+    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option>
+    </select>
+  </div>
+</div>
+<a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+
+<main class="landing" id="main-content">
+  <section class="hero">
+    <h1 id="title">Ingredient Index</h1>
+    <p class="subtitle" id="subtitle">Search ingredients analysed by BOTIA</p>
+  </section>
+
+  <input type="text" class="search-box" id="search" placeholder="Search by name or E-number..." aria-label="Search ingredients" />
+
+  <div class="count" id="count"></div>
+  <div id="ingredient-list" class="ingredient-list"></div>
+  <div class="no-results" id="no-results" hidden>No ingredients found.</div>
+
+  <section style="text-align:center; padding: 30px 20px; margin-top: 40px; border-top: 1px solid rgba(190,122,72,0.2);">
+    <p id="library_note" style="color:#c0a08c; font-size:0.85rem; line-height:1.6; max-width:600px; margin:0 auto 16px;">
+      BOTIA's ingredient library covers the additives and substances most relevant to its evidence layers. For the complete international database of food additives and contaminants, consult the WHO/JECFA database — one of the sources BOTIA uses.
+    </p>
+    <a href="https://apps.who.int/food-additives-contaminants-jecfa-database/" target="_blank" style="color:#e6a06b; text-decoration:none; font-weight:600; font-size:0.9rem;"><span aria-hidden="true">🔗 </span><span id="jecfa_label">WHO Food Additives &amp; Contaminants Database (JECFA)</span></a>
+  </section>
+
+  <section class="closing">
+    <a href="/index.html" class="cta-button" id="back-to-botia">← Back to BOTIA</a>
+  </section>
+</main>
+
+<script src="/botia/assets/js/i18n-loader.js" defer></script>
+<script src="/botia/assets/js/botia-chat.js"></script>
+</body>
+</html>

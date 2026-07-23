@@ -1,0 +1,414 @@
+{
+  "page_title": "BOTIA — 配料索引",
+  "title": "配料索引",
+  "subtitle": "搜索 BOTIA 已分析的配料",
+  "search_placeholder": "按名称或 E 编号搜索...",
+  "search_aria_label": "按名称或 E 编号搜索配料",
+  "count_template": "{visible} / {total}",
+  "no_results": "未找到配料。",
+  "library_note": "BOTIA 的配料库收录了与其证据层最相关的添加剂和物质。如需查询完整的国际食品添加剂与污染物数据库，请访问世界卫生组织/JECFA 数据库；这是 BOTIA 使用的资料来源之一。",
+  "jecfa_label": "世界卫生组织食品添加剂与污染物数据库（JECFA）",
+  "description": "搜索 BOTIA 已分析的配料",
+  "ingredients": [
+    {
+      "slug": "acesulfame_k",
+      "name": "安赛蜜钾",
+      "e_code": "E950",
+      "aliases": "E950, 安赛蜜钾, 乙酰磺胺酸钾, 安赛蜜K, 乙酰磺胺酸K",
+      "layers": [
+        "sweetener",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "alcohol",
+      "name": "酒精",
+      "e_code": null,
+      "aliases": "酒精, 乙醇, 食用酒精, 农业来源的乙醇, 酒精乙基, 农业来源的酒精",
+      "layers": [
+        "muslim",
+        "woman"
+      ]
+    },
+    {
+      "slug": "aspartame",
+      "name": "阿斯巴甜",
+      "e_code": "E951",
+      "aliases": "E951, 阿斯巴甜, 天冬氨酰苯丙氨酸甲酯, 阿斯巴甜",
+      "layers": [
+        "sweetener",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "bpa",
+      "name": "双酚A",
+      "e_code": null,
+      "aliases": "双酚A, BPA, 4,4'-异亚丙基二苯酚, 双酚A",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "bha",
+      "name": "丁基羟基茴香醚",
+      "e_code": "E320",
+      "aliases": "E320, BHA, 丁基羟基茴香醚, 丁基羟基茴香醚, 叔丁基-4-羟基茴香醚, 丁基羟基茴香醚",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "bht",
+      "name": "丁基羟基甲苯",
+      "e_code": "E321",
+      "aliases": "E321, BHT, 丁基羟基甲苯, 丁基化羟基甲苯, 2,6-二叔丁基对甲酚",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "cadmium",
+      "name": "镉",
+      "e_code": null,
+      "aliases": "镉, Cd, 镉元素",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "carmine",
+      "name": "胭脂红",
+      "e_code": "E120",
+      "aliases": "E120、胭脂红、胭脂虫红、胭脂红酸、胭脂虫提取物、胭脂红酸、carmín、ácido carmínico、cochinilla、rouge de cochenille",
+      "layers": [
+        "animal",
+        "muslim",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "carrageenan",
+      "name": "卡拉胶",
+      "e_code": "E407",
+      "aliases": "E407, E407a, 卡拉胶, 加工麒麟菜, 爱尔兰苔凝胶, 麒麟菜胶, 红藻胶, 卡拉胶钠, 角叉菜胶",
+      "layers": [
+        "texture",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "cyclamates",
+      "name": "甜蜜素",
+      "e_code": "E952",
+      "aliases": "E952, 甜蜜素, 环己基氨基磺酸, 环己基氨基磺酸钠, 环己基氨基磺酸钙, 甜蜜素, 环己基氨基磺酸",
+      "layers": [
+        "sweetener",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "dioxins_pcbs",
+      "name": "二噁英和多氯联苯",
+      "e_code": null,
+      "aliases": "二噁英, 多氯联苯, PCBs, 呋喃, dioxinas, bifenilos policlorados",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "erythritol",
+      "name": "赤藓糖醇",
+      "e_code": "E968",
+      "aliases": "E968, 赤藓糖醇, 内消旋赤藓糖醇, 赤藓醇",
+      "layers": [
+        "sweetener",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "e472",
+      "name": "脂肪酸单甘油酯和双甘油酯的酯类",
+      "e_code": "E472",
+      "aliases": "E472, E472a, E472b, E472c, E472d, E472e, E472f, 脂肪酸单甘油酯和双甘油酯的酯类, 二乙酰酒石酸单甘油酯和双甘油酯, DATEM, 脂肪酸单甘油酯和双甘油酯的酯类",
+      "layers": [
+        "animal",
+        "muslim",
+        "texture",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "enzymes",
+      "name": "食品酶",
+      "e_code": null,
+      "aliases": "酶, 食品酶, 凝乳酶, 胃蛋白酶, 淀粉酶, 乳糖酶, 脂肪酶, 蛋白酶, 酶类",
+      "layers": [
+        "animal",
+        "muslim"
+      ]
+    },
+    {
+      "slug": "gelatine",
+      "name": "明胶",
+      "e_code": null,
+      "aliases": "明胶, gelatin, gelatina, gélatine, 动物明胶, 猪明胶, 牛明胶, 鱼明胶, E441",
+      "layers": [
+        "animal",
+        "muslim",
+        "texture"
+      ]
+    },
+    {
+      "slug": "glucose_syrup",
+      "name": "葡萄糖浆",
+      "e_code": null,
+      "aliases": "glucose syrup, corn syrup, liquid glucose, glucose-fructose syrup, high fructose corn syrup, HFCS, fructose syrup, jarabe de glucosa, sirop de glucose",
+      "layers": [
+        "sugar"
+      ]
+    },
+    {
+      "slug": "glycerol",
+      "name": "甘油",
+      "e_code": "E422",
+      "aliases": "E422, 甘油, 丙三醇, 甘油, 甘油醇",
+      "layers": [
+        "animal",
+        "muslim",
+        "texture",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "guar_gum",
+      "name": "瓜尔胶",
+      "e_code": "E412",
+      "aliases": "E412, 瓜尔胶, 瓜尔豆胶, 瓜尔粉, 瓜尔胶粉",
+      "layers": [
+        "texture",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "konjac",
+      "name": "魔芋",
+      "e_code": "E425",
+      "aliases": "E425, E425i, E425ii, 魔芋胶, 魔芋葡甘露聚糖, 魔芋粉, 蒟蒻",
+      "layers": [
+        "texture",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "lead",
+      "name": "铅",
+      "e_code": null,
+      "aliases": "铅, Pb, plomo",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "lecithins",
+      "name": "卵磷脂",
+      "e_code": "E322",
+      "aliases": "E322, 卵磷脂, 磷脂, 磷脂酰胆碱, 磷脂质, 卵磷脂（西班牙语）, 卵磷脂（葡萄牙语）, 卵磷脂（法语）, 大豆卵磷脂, 蛋黄卵磷脂",
+      "layers": [
+        "animal",
+        "muslim",
+        "texture",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "maltitol",
+      "name": "麦芽糖醇",
+      "e_code": "E965",
+      "aliases": "E965, E965i, E965ii, 麦芽糖醇, 麦芽糖醇糖浆, jarabe de maltitol, 麦芽糖醇类",
+      "layers": [
+        "sweetener",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "maltodextrin",
+      "name": "麦芽糊精",
+      "e_code": null,
+      "aliases": "麦芽糊精, maltodextrina, maltodextrine, 氢化淀粉水解物",
+      "layers": [
+        "sugar"
+      ]
+    },
+    {
+      "slug": "methylmercury",
+      "name": "甲基汞",
+      "e_code": null,
+      "aliases": "甲基汞, 有机汞, metilmercurio",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "e471",
+      "name": "脂肪酸单甘油酯和双甘油酯",
+      "e_code": "E471",
+      "aliases": "E471，脂肪酸单甘油酯和双甘油酯，单硬脂酸甘油酯，单棕榈酸甘油酯，单油酸甘油酯，单硬脂酸甘油酯，单棕榈酸甘油酯，单油酸甘油酯，GMS，脂肪酸单甘油酯和双甘油酯",
+      "layers": [
+        "animal",
+        "muslim",
+        "texture",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "natural_flavourings",
+      "name": "天然食用香料",
+      "e_code": null,
+      "aliases": "天然食用香料, 天然风味, 天然调味物质, 天然香料",
+      "layers": [
+        "flavour"
+      ]
+    },
+    {
+      "slug": "parabens",
+      "name": "对羟基苯甲酸酯类",
+      "e_code": "E214",
+      "aliases": "E214, E218, E216, 对羟基苯甲酸酯类, 对羟基苯甲酸乙酯, 对羟基苯甲酸甲酯, 对羟基苯甲酸丙酯, 对羟基苯甲酸甲酯钠, 对羟基苯甲酸酯, 对羟基苯甲酸甲酯, 对羟基苯甲酸乙酯",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "phthalates",
+      "name": "邻苯二甲酸酯",
+      "e_code": null,
+      "aliases": "邻苯二甲酸酯, DEHP, DBP, BBP, DINP, DIDP, 邻苯二甲酸酯类, ftalatos",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "saccharin",
+      "name": "糖精",
+      "e_code": "E954",
+      "aliases": "E954, 糖精, 糖精钠, 糖精钙, 糖精钾, 糖精, 糖精钠, 糖精钙, 糖精钾",
+      "layers": [
+        "sweetener",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "shellac",
+      "name": "虫胶",
+      "e_code": "E904",
+      "aliases": "E904, 虫胶, 漂白虫胶, 虫胶树脂, 漂白虫胶树脂",
+      "layers": [
+        "animal",
+        "muslim",
+        "texture",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "sorbitol",
+      "name": "山梨糖醇",
+      "e_code": "E420",
+      "aliases": "E420, E420i, E420ii, 山梨糖醇, 山梨糖醇糖浆, D-葡萄糖醇, D-葡萄糖醇糖浆, 山梨糖醇, 山梨糖醇糖浆",
+      "layers": [
+        "sweetener",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "steviol_glycosides",
+      "name": "甜菊糖苷（来自甜叶菊）",
+      "e_code": "E960a",
+      "aliases": "E960a、E960c、E960d、甜菊糖苷、甜菊苷、莱鲍迪苷A、甜菊糖苷类",
+      "layers": [
+        "sweetener",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "sucralose",
+      "name": "三氯蔗糖",
+      "e_code": "E955",
+      "aliases": "E955, 三氯蔗糖, 4,1',6'-三氯半乳蔗糖, sucralosa",
+      "layers": [
+        "woman",
+        "sweetener",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "e171",
+      "name": "二氧化钛",
+      "e_code": "E171",
+      "aliases": "E171, 二氧化钛, 钛白粉, 钛白, CI颜料白6, 锐钛矿, 金红石",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "trans_fats",
+      "name": "反式脂肪酸",
+      "e_code": null,
+      "aliases": "反式脂肪, 反式脂肪酸, 部分氢化油, 部分氢化植物油, iTFAs, 反式脂肪",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "vinegar",
+      "name": "醋",
+      "e_code": null,
+      "aliases": "醋, 发酵醋, 葡萄酒醋, 苹果醋, 酒精醋, vinagre, vinaigre",
+      "layers": [
+        "muslim"
+      ]
+    },
+    {
+      "slug": "xanthan_gum",
+      "name": "黄原胶",
+      "e_code": "E415",
+      "aliases": "E415, 黄原胶, 黄原胶, goma xantana, goma xanthana, gomme xanthane",
+      "layers": [
+        "texture",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "xylitol",
+      "name": "木糖醇",
+      "e_code": "E967",
+      "aliases": "E967, 木糖醇, D-木糖醇, 木糖醇",
+      "layers": [
+        "sweetener",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "free_sugars",
+      "name": "游离糖",
+      "e_code": null,
+      "aliases": "葡萄糖、果糖、蔗糖、右旋糖、食糖、添加糖、游离糖、简单糖",
+      "layers": [
+        "sugar"
+      ]
+    },
+    {
+      "slug": "fruit_juice_concentrate",
+      "name": "浓缩果汁",
+      "e_code": null,
+      "aliases": "浓缩果汁, 浓缩水果汁, 水果浓缩物, 苹果浓缩汁, 葡萄浓缩汁, 梨浓缩汁",
+      "layers": [
+        "sugar"
+      ]
+    }
+  ]
+}

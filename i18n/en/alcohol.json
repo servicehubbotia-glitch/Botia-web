@@ -1,0 +1,28 @@
+{
+  "name": "Alcohol",
+  "e_code": null,
+  "aliases": "alcohol, ethanol, ethyl alcohol, ethanol of agricultural origin, alcohol etílico, alcohol de origen agrícola",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "muslim",
+    "woman"
+  ],
+  "what_is": "A chemical compound produced by fermentation, also known as ethanol, used as an ingredient or solvent carrier.",
+  "why_botia": "It flags it because it is strictly prohibited (haram) in Islamic dietary laws and is classified by the WHO as a Group 1 carcinogen that increases breast cancer risk in women even in small quantities.",
+  "can_1": "Detect any alcohol or ethanol terms in the ingredients or product descriptions.",
+  "can_2": "Provide cancer risk alerts for women and halal safety warnings.",
+  "cannot_1": "Measure the exact volumetric or weight percentage of alcohol if it is present as a carrier residue below labeling thresholds.",
+  "cannot_2": "Ascertain whether the alcohol was produced naturally via spontaneous fermentation or deliberately added.",
+  "sources": [
+    {
+      "label": "IARC Monographs on the Evaluation of Carcinogenic Risks to Humans",
+      "url": "https://publications.iarc.fr/"
+    },
+    {
+      "label": "OIC/SMIIC 1:2019 General Requirements on Halal Food",
+      "url": "https://www.smiic.org/en/project/76"
+    }
+  ],
+  "title": "Alcohol",
+  "description": "A chemical compound produced by fermentation, also known as ethanol, used as an ingredient or solvent carrier."
+}
