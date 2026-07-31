@@ -137,19 +137,19 @@
 
         chatWindow = document.createElement('div');
         chatWindow.id = 'chat-window';
-        chatWindow.style.cssText = 'display:none;width:380px;height:520px;background:rgba(16,7,7,0.94);backdrop-filter:blur(12px);border:1px solid rgba(190,122,72,0.3);border-radius:28px;overflow:hidden;box-shadow:0 24px 48px -12px rgba(0,0,0,0.8);flex-direction:column;margin-bottom:16px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;';
+        chatWindow.style.cssText = 'display:none;width:380px;height:520px;background:rgba(16,7,7,0.94);backdrop-filter:blur(12px);border:1px solid rgba(190,122,72,0.3);border-radius:28px;overflow:hidden;display:flex;flex-direction:column;color:#f2e4dc;font-family:inherit;box-shadow:0 20px 60px rgba(0,0,0,0.5);';
         chatWindow.innerHTML = `
             <div style="background:linear-gradient(135deg,#100707 0%,#241010 48%,#080505 100%);padding:1rem 1.5rem;border-bottom:1px solid rgba(190,122,72,0.2);display:flex;justify-content:space-between;align-items:center;">
                 <h3 style="font-weight:500;font-size:1.1rem;color:#f2e4dc;margin:0;">🤖 <span style="color:#e6a06b;">BOTIA</span> · <span id="chatTitle">${t('title')}</span></h3>
                 <div style="display:flex;align-items:center;gap:8px;">
-                    <span id="quizProgress" style="font-size:0.65rem;background:rgba(230,160,107,0.15);color:#c0a08c;padding:0.2rem 0.6rem;border-radius:20px;border:1px solid rgba(190,122,72,0.2);letter-spacing:0.5px;">${getQuizProgress()}</span>
+                    <span id="quizProgress" style="font-size:0.65rem;background:rgba(230,160,107,0.15);color:#c0a08c;padding:0.2rem 0.6rem;border-radius:20px;border:1px solid rgba(190,122,72,0.2);letter-spacing:0.5px;">1 / 3</span>
                     <button id="chatClose" style="background:transparent;border:none;color:#c0a08c;font-size:1.4rem;cursor:pointer;padding:0 4px;">✕</button>
                 </div>
             </div>
             <div id="chatMessages" style="flex:1;padding:1rem 1.2rem;overflow-y:auto;display:flex;flex-direction:column;gap:0.6rem;background:rgba(0,0,0,0.2);color:#f2e4dc;"></div>
             <div style="padding:0.7rem 1rem 1rem;background:rgba(0,0,0,0.25);border-top:1px solid rgba(190,122,72,0.15);display:flex;gap:0.5rem;">
-                <input id="chatInput" type="text" placeholder="${t('placeholder')}" style="flex:1;padding:0.7rem 1rem;border-radius:60px;border:1px solid rgba(190,122,72,0.42);background:rgba(255,255,255,0.04);color:#f2e4dc;font-size:0.95rem;outline:none;font-family:inherit;" />
-                <button id="chatSend" style="background:#e6a06b;border:none;border-radius:60px;padding:0 1.2rem;font-weight:600;color:#100707;cursor:pointer;font-size:0.9rem;font-family:inherit;">${t('send')}</button>
+                <input id="chatInput" type="text" placeholder="${t('placeholder')}" style="flex:1;padding:0.7rem 1rem;border-radius:60px;border:1px solid rgba(190,122,72,0.42);background:rgba(255,255,255,0.06);color:#f2e4dc;outline:none;font-family:inherit;" />
+                <button id="chatSend" style="background:#e6a06b;border:none;border-radius:60px;padding:0 1.2rem;font-weight:600;color:#100707;cursor:pointer;font-size:0.9rem;font-family:inherit;">${t('sendButton')}</button>
             </div>
         `;
 
@@ -238,7 +238,7 @@
             const div = document.createElement('div');
             div.id = 'typing-indicator';
             div.style.cssText = 'align-self:flex-start;background:rgba(255,255,255,0.06);color:#f2e4dc;padding:0.7rem 1rem;border-radius:20px;border-bottom-left-radius:6px;';
-            div.innerHTML = `<span style="display:inline-flex;gap:4px;align-items:center;"><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s infinite both;"></span><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s infinite both;animation-delay:0.2s;"></span><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s infinite both;animation-delay:0.4s;"></span></span>`;
+            div.innerHTML = `<span style="display:inline-flex;gap:4px;align-items:center;"><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s infinite both;"></span><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s infinite both 0.2s;"></span><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s infinite both 0.4s;"></span></span>`;
             messagesEl.appendChild(div);
             messagesEl.scrollTop = messagesEl.scrollHeight;
             return div;
@@ -284,8 +284,8 @@
                 <div style="margin-bottom:8px;" data-quiz-id="${q.id || 'unknown'}">
                     <div>${questionText}</div>
                     <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;">
-                        <a href="${link}" target="_blank" rel="noopener" style="background:#e6a06b;border:none;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#100707;text-decoration:none;font-size:0.8rem;display:inline-block;">🔍 ${t('discoverBtn') || 'Discover on BOTIA'}</a>
-                        <button onclick="document.dispatchEvent(new CustomEvent('nextQuiz'))" style="background:transparent;border:1px solid #e6a06b;border-radius:60px;padding:0.4rem 1.2rem;font-weight:500;color:#e6a06b;cursor:pointer;font-size:0.8rem;font-family:inherit;">➡️ ${t('nextButton') || 'Next question'}</button>
+                        <a href="${link}" target="_blank" rel="noopener" style="background:#e6a06b;border:none;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#100707;text-decoration:none;display:inline-block;">${t('answerButton') || 'Ver respuesta'}</a>
+                        <button onclick="document.dispatchEvent(new CustomEvent('nextQuiz'))" style="background:transparent;border:1px solid #e6a06b;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#e6a06b;cursor:pointer;font-family:inherit;">${t('nextButton') || 'Next'}</button>
                     </div>
                     <div style="font-size:0.65rem;color:#8a8a8a;margin-top:4px;text-align:right;">${getQuizProgress()}</div>
                 </div>
@@ -293,6 +293,17 @@
             
             appendMessage('bot', html, true);
             updateQuizProgress();
+            setTimeout(() => {
+                const lastMsg = messagesEl.lastElementChild;
+                if (lastMsg) {
+                    const btn = lastMsg.querySelector('button');
+                    if (btn) {
+                        btn.onclick = function() {
+                            document.dispatchEvent(new CustomEvent('nextQuiz'));
+                        };
+                    }
+                }
+            }, 50);
         }
 
         // ============================================================
