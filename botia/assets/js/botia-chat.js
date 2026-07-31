@@ -48,7 +48,6 @@
             return true;
         } catch (error) {
             console.warn(`⚠️ No se pudo cargar ${lang}, usando inglés como fallback`);
-            // Fallback a inglés
             try {
                 const fallbackResponse = await fetch('/i18n/en/chat.json');
                 const fallbackData = await fallbackResponse.json();
@@ -122,7 +121,7 @@
     }
 
     // ============================================================
-    //  CREAR ELEMENTOS DEL CHAT (se crean después de cargar traducciones)
+    //  CREAR ELEMENTOS DEL CHAT
     // ============================================================
     let container, chatWindow, toggleBtn, messagesEl, inputEl, sendBtn, closeBtn, quizProgress;
     let isOpen = false;
@@ -212,7 +211,7 @@
         quizProgress = document.getElementById('quizProgress');
 
         // ============================================================
-        //  FUNCIONES DEL CHAT (después de crear elementos)
+        //  FUNCIONES DEL CHAT
         // ============================================================
         function appendMessage(role, text, isHTML = false) {
             const div = document.createElement('div');
@@ -253,7 +252,7 @@
         }
 
         // ============================================================
-        //  MOSTRAR PREGUNTA DEL QUIZ
+        //  MOSTRAR PREGUNTA DEL QUIZ (VERSIÓN CORREGIDA)
         // ============================================================
         function showQuizQuestion() {
             // Forzar recarga de quizIndex desde sessionStorage
@@ -262,9 +261,9 @@
                 if (stored) {
                     const data = JSON.parse(stored);
                     if (data.quizIndex !== undefined && data.quizIndex !== null) {
-                        if (data.quizIndex > quizIndex) {
-                            quizIndex = data.quizIndex;
-                        }
+                        // Siempre usar el índice guardado
+                        quizIndex = data.quizIndex;
+                        console.log(`🔄 quizIndex restaurado desde sessionStorage: ${quizIndex}`);
                     }
                     if (data.quizOrder) {
                         quizOrder = data.quizOrder;
@@ -396,20 +395,26 @@
                 
                 if (window.clearBotiaNotification) window.clearBotiaNotification();
                 
+                // Recargar el índice desde sessionStorage al abrir
+                try {
+                    const stored = sessionStorage.getItem(STORAGE_KEY);
+                    if (stored) {
+                        const data = JSON.parse(stored);
+                        if (data.quizIndex !== undefined && data.quizIndex !== null) {
+                            quizIndex = data.quizIndex;
+                            console.log(`🔄 quizIndex restaurado al abrir: ${quizIndex}`);
+                            updateQuizProgress();
+                        }
+                    }
+                } catch (e) {
+                    console.warn('⚠️ Error restaurando quizIndex:', e);
+                }
+                
                 if (messagesEl.children.length === 0) {
                     appendMessage('bot', t('welcome') || '👋 Hi! I\'m the BOTIA assistant.');
                     setTimeout(showQuizQuestion, 500);
                 } else {
-                    try {
-                        const stored = sessionStorage.getItem(STORAGE_KEY);
-                        if (stored) {
-                            const data = JSON.parse(stored);
-                            if (data.quizIndex !== undefined && data.quizIndex !== null) {
-                                quizIndex = data.quizIndex;
-                                updateQuizProgress();
-                            }
-                        }
-                    } catch (e) {}
+                    updateQuizProgress();
                 }
                 if (conversationCount < MAX_QUESTIONS) inputEl.focus();
             }
@@ -425,17 +430,39 @@
             if (e.key === 'Enter') handleSend();
         });
 
+        // ============================================================
+        //  EVENTO NEXTQUIZ (VERSIÓN CORREGIDA)
+        // ============================================================
         document.addEventListener('nextQuiz', () => {
-            if (isQuizComplete()) {
+            console.log('🔄 Avanzando a la siguiente pregunta...');
+            console.log(`   quizIndex ANTES: ${quizIndex}`);
+            console.log(`   Total preguntas: ${quizQuestions.length}`);
+            
+            // Verificar si hay más preguntas
+            const nextIndex = quizIndex + 1;
+            if (nextIndex >= quizQuestions.length) {
                 appendMessage('bot', t('noMoreQuestions') || 'No more questions!');
+                updateQuizProgress();
                 return;
             }
-            quizIndex++;
-            sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ 
-                count: conversationCount,
-                quizIndex: quizIndex,
-                quizOrder: quizOrder
-            }));
+            
+            // Avanzar
+            quizIndex = nextIndex;
+            console.log(`   quizIndex DESPUÉS: ${quizIndex}`);
+            
+            // Guardar en sessionStorage
+            try {
+                sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ 
+                    count: conversationCount,
+                    quizIndex: quizIndex,
+                    quizOrder: quizOrder
+                }));
+                console.log('   ✅ Guardado en sessionStorage');
+            } catch (e) {
+                console.warn('   ⚠️ Error guardando en sessionStorage:', e);
+            }
+            
+            // Mostrar la siguiente pregunta
             showQuizQuestion();
         });
 
@@ -495,7 +522,6 @@
                 document.getElementById('chatTitle').textContent = t('title');
                 inputEl.placeholder = t('placeholder');
                 sendBtn.textContent = t('sendButton');
-                // Recargar traducciones
                 loadChatTranslations(currentLang).then(() => {
                     // Actualizar mensajes existentes? Solo si es necesario
                 });
@@ -518,7 +544,6 @@
         currentLang = getCurrentLanguage();
         await loadChatTranslations(currentLang);
         
-        // Si no hay preguntas, inicializar orden aleatorio
         if (quizQuestions.length > 0 && quizOrder.length === 0) {
             quizOrder = shuffleArray(quizQuestions.map((_, i) => i));
         }
