@@ -252,27 +252,12 @@
         }
 
         // ============================================================
-        //  MOSTRAR PREGUNTA DEL QUIZ (VERSIÓN CORREGIDA)
+        //  MOSTRAR PREGUNTA DEL QUIZ (VERSIÓN CORREGIDA - SIN SOBRESCRITURA)
         // ============================================================
         function showQuizQuestion() {
-            // Forzar recarga de quizIndex desde sessionStorage
-            try {
-                const stored = sessionStorage.getItem(STORAGE_KEY);
-                if (stored) {
-                    const data = JSON.parse(stored);
-                    if (data.quizIndex !== undefined && data.quizIndex !== null) {
-                        // Siempre usar el índice guardado
-                        quizIndex = data.quizIndex;
-                        console.log(`🔄 quizIndex restaurado desde sessionStorage: ${quizIndex}`);
-                    }
-                    if (data.quizOrder) {
-                        quizOrder = data.quizOrder;
-                    }
-                }
-            } catch (e) {
-                console.warn('Error leyendo sessionStorage en showQuizQuestion:', e);
-            }
-
+            console.log(`📊 showQuizQuestion - quizIndex actual: ${quizIndex}`);
+            console.log(`📊 Total preguntas: ${quizQuestions.length}`);
+            
             const q = getCurrentQuestion();
             if (!q) {
                 appendMessage('bot', t('quizDone') || '🎉 You\'ve seen all questions!');
@@ -395,21 +380,6 @@
                 
                 if (window.clearBotiaNotification) window.clearBotiaNotification();
                 
-                // Recargar el índice desde sessionStorage al abrir
-                try {
-                    const stored = sessionStorage.getItem(STORAGE_KEY);
-                    if (stored) {
-                        const data = JSON.parse(stored);
-                        if (data.quizIndex !== undefined && data.quizIndex !== null) {
-                            quizIndex = data.quizIndex;
-                            console.log(`🔄 quizIndex restaurado al abrir: ${quizIndex}`);
-                            updateQuizProgress();
-                        }
-                    }
-                } catch (e) {
-                    console.warn('⚠️ Error restaurando quizIndex:', e);
-                }
-                
                 if (messagesEl.children.length === 0) {
                     appendMessage('bot', t('welcome') || '👋 Hi! I\'m the BOTIA assistant.');
                     setTimeout(showQuizQuestion, 500);
@@ -431,7 +401,7 @@
         });
 
         // ============================================================
-        //  EVENTO NEXTQUIZ (VERSIÓN CORREGIDA)
+        //  EVENTO NEXTQUIZ (VERSIÓN DEFINITIVA)
         // ============================================================
         document.addEventListener('nextQuiz', () => {
             console.log('🔄 Avanzando a la siguiente pregunta...');
@@ -439,15 +409,14 @@
             console.log(`   Total preguntas: ${quizQuestions.length}`);
             
             // Verificar si hay más preguntas
-            const nextIndex = quizIndex + 1;
-            if (nextIndex >= quizQuestions.length) {
+            if (quizIndex + 1 >= quizQuestions.length) {
                 appendMessage('bot', t('noMoreQuestions') || 'No more questions!');
                 updateQuizProgress();
                 return;
             }
             
             // Avanzar
-            quizIndex = nextIndex;
+            quizIndex = quizIndex + 1;
             console.log(`   quizIndex DESPUÉS: ${quizIndex}`);
             
             // Guardar en sessionStorage
