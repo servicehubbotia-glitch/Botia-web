@@ -285,7 +285,7 @@
                     <div>${questionText}</div>
                     <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;">
                         <a href="${link}" target="_blank" rel="noopener" style="background:#e6a06b;border:none;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#100707;text-decoration:none;font-size:0.8rem;display:inline-block;">🔍 ${t('discoverBtn') || 'Discover on BOTIA'}</a>
-                        <button onclick="window.dispatchEvent(new CustomEvent('nextQuiz'))" style="background:transparent;border:1px solid #e6a06b;border-radius:60px;padding:0.4rem 1.2rem;font-weight:500;color:#e6a06b;cursor:pointer;font-size:0.8rem;font-family:inherit;">➡️ ${t('nextButton') || 'Next question'}</button>
+                        <button onclick="document.dispatchEvent(new CustomEvent('nextQuiz'))" style="background:transparent;border:1px solid #e6a06b;border-radius:60px;padding:0.4rem 1.2rem;font-weight:500;color:#e6a06b;cursor:pointer;font-size:0.8rem;font-family:inherit;">➡️ ${t('nextButton') || 'Next question'}</button>
                     </div>
                     <div style="font-size:0.65rem;color:#8a8a8a;margin-top:4px;text-align:right;">${getQuizProgress()}</div>
                 </div>
