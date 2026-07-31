@@ -82,6 +82,10 @@
     function getCurrentQuestion() {
         if (!quizQuestions || quizQuestions.length === 0) return null;
         if (quizIndex >= quizQuestions.length) return null;
+        // 🔥 FIX: Si quizOrder está vacío, lo inicializa
+        if (quizOrder.length === 0) {
+            quizOrder = shuffleArray(quizQuestions.map((_, i) => i));
+        }
         return quizQuestions[quizOrder[quizIndex]];
     }
 
@@ -252,12 +256,20 @@
         }
 
         // ============================================================
-        //  MOSTRAR PREGUNTA DEL QUIZ (VERSIÓN CORREGIDA - SIN SOBRESCRITURA)
+        //  MOSTRAR PREGUNTA DEL QUIZ (VERSIÓN LIMPIA - SIN SOBRESCRITURA)
         // ============================================================
         function showQuizQuestion() {
-            console.log(`📊 showQuizQuestion - quizIndex actual: ${quizIndex}`);
+            console.log(`📊 showQuizQuestion - quizIndex: ${quizIndex}`);
+            console.log(`📊 quizOrder:`, quizOrder);
             console.log(`📊 Total preguntas: ${quizQuestions.length}`);
             
+            // Si no hay preguntas, cargar fallback
+            if (!quizQuestions || quizQuestions.length === 0) {
+                appendMessage('bot', '❌ No se cargaron las preguntas. Recarga la página.');
+                return;
+            }
+            
+            // Obtener pregunta
             const q = getCurrentQuestion();
             if (!q) {
                 appendMessage('bot', t('quizDone') || '🎉 You\'ve seen all questions!');
@@ -407,6 +419,7 @@
             console.log('🔄 Avanzando a la siguiente pregunta...');
             console.log(`   quizIndex ANTES: ${quizIndex}`);
             console.log(`   Total preguntas: ${quizQuestions.length}`);
+            console.log(`   quizOrder:`, quizOrder);
             
             // Verificar si hay más preguntas
             if (quizIndex + 1 >= quizQuestions.length) {
