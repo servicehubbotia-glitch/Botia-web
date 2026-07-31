@@ -1,43 +1,36 @@
 // ============================================================
-//  BOTIA CHAT v2.0 - Modo Quiz + Chat Libre
-//  El bot lanza preguntas y el usuario puede preguntar
+//  BOTIA CHAT v2.1 - Modo Quiz + Chat Libre
 // ============================================================
 
 (function() {
     'use strict';
 
-    // ============================================================
-    //  CONFIGURACIÓN
-    // ============================================================
     const WORKER_URL = 'https://botia-web.servicehub-botia.workers.dev';
-    const MAX_QUESTIONS = 3;
+    const MAX_FREE_QUESTIONS = 3;
     const STORAGE_KEY = 'botia_chat_session';
 
-    // ============================================================
-    //  ESTADO DEL CHAT
-    // ============================================================
     let currentLang = 'en';
-    let conversationCount = 0;
+    let freeQuestionsUsed = 0;
     let quizIndex = 0;
     let quizOrder = [];
-    let chatTranslations = null;
+    let chatTranslations = {};
     let quizQuestions = [];
 
-    // ============================================================
-    //  FUNCIONES DE IDIOMA
-    // ============================================================
+    // ============ IDIOMA ============
     function getCurrentLanguage() {
         const savedLang = localStorage.getItem('botia-lang');
         if (savedLang) return savedLang;
-        const browserLang = navigator.language || navigator.languages?.[0] || 'en';
+        const browserLang = navigator.language || (navigator.languages && navigator.languages[0]) || 'en';
         const langCode = browserLang.split('-')[0].toLowerCase();
-        const supported = ['en', 'es', 'fr', 'de', 'it', 'pt', 'nl', 'ru', 'ja', 'zh', 'ar', 'hi', 'ko', 'tr', 'ro', 'pl', 'id'];
+        const supported = ['en','es','fr','de','it','pt','nl','ru','ja','zh','ar','hi','ko','tr','ro','pl','id'];
         return supported.includes(langCode) ? langCode : 'en';
     }
 
-    // ============================================================
-    //  CARGAR TRADUCCIONES DESDE JSON
-    // ============================================================
+    function t(key) {
+        return chatTranslations[key] || key;
+    }
+
+    // ============ TRADUCCIONES ============
     async function loadChatTranslations(lang) {
         try {
             const response = await fetch(`/i18n/${lang}/chat.json`);
@@ -45,7 +38,6 @@
             const data = await response.json();
             chatTranslations = data.ui || {};
             quizQuestions = data.questions || [];
-            return true;
         } catch (error) {
             console.warn(`⚠️ No se pudo cargar ${lang}, usando inglés como fallback`);
             try {
@@ -53,80 +45,77 @@
                 const fallbackData = await fallbackResponse.json();
                 chatTranslations = fallbackData.ui || {};
                 quizQuestions = fallbackData.questions || [];
-                return true;
             } catch (e) {
                 console.error('❌ Error cargando traducciones:', e);
                 chatTranslations = {};
                 quizQuestions = [];
-                return false;
             }
         }
     }
 
-    function t(key) {
-        if (!chatTranslations) return key;
-        return chatTranslations[key] || key;
+    // ============ QUIZ ============
+    function shuffleArray(arr) {
+        const result = arr.slice();
+        for (let i = result.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [result[i], result[j]] = [result[j], result[i]];
+        }
+        return result;
     }
 
-    // ============================================================
-    //  FUNCIONES DEL QUIZ
-    // ============================================================
-    function shuffleArray(arr) {
-        for (let i = arr.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [arr[i], arr[j]] = [arr[j], arr[i]];
-        }
-        return arr;
+    function generateQuizOrder() {
+        if (quizQuestions.length === 0) return [];
+        return shuffleArray(quizQuestions.map((_, i) => i));
     }
 
     function getCurrentQuestion() {
-        if (!quizQuestions || quizQuestions.length === 0) return null;
+        if (!quizQuestions.length) return null;
         if (quizIndex >= quizQuestions.length) return null;
-        // 🔥 FIX: Si quizOrder está vacío, lo inicializa
-        if (quizOrder.length === 0) {
-            quizOrder = shuffleArray(quizQuestions.map((_, i) => i));
+        if (!quizOrder.length) {
+            quizOrder = generateQuizOrder();
         }
         return quizQuestions[quizOrder[quizIndex]];
     }
 
-    function getQuestionText(q) {
-        return q?.text || 'Question not available';
-    }
-
-    function getQuestionLink(q) {
-        return q?.link || '#';
-    }
-
     function getQuizProgress() {
-        if (!quizQuestions || quizQuestions.length === 0) return '0 / 0';
+        if (!quizQuestions.length) return '0 / 0';
         return `${Math.min(quizIndex + 1, quizQuestions.length)} / ${quizQuestions.length}`;
     }
 
     function isQuizComplete() {
-        if (!quizQuestions || quizQuestions.length === 0) return true;
-        return quizIndex >= quizQuestions.length;
+        return !quizQuestions.length || quizIndex >= quizQuestions.length;
     }
 
-    // ============================================================
-    //  INICIALIZAR SESIÓN
-    // ============================================================
-    try {
-        const stored = sessionStorage.getItem(STORAGE_KEY);
-        if (stored) {
-            const data = JSON.parse(stored);
-            conversationCount = data.count || 0;
-            quizIndex = data.quizIndex || 0;
-            quizOrder = data.quizOrder || [];
+    // ============ PERSISTENCIA ============
+    function loadSession() {
+        try {
+            const stored = sessionStorage.getItem(STORAGE_KEY);
+            if (stored) {
+                const data = JSON.parse(stored);
+                freeQuestionsUsed = data.freeQuestionsUsed || 0;
+                quizIndex = data.quizIndex || 0;
+                quizOrder = Array.isArray(data.quizOrder) ? data.quizOrder : [];
+            }
+        } catch (e) {
+            freeQuestionsUsed = 0;
+            quizIndex = 0;
+            quizOrder = [];
         }
-    } catch (e) {
-        conversationCount = 0;
-        quizIndex = 0;
-        quizOrder = [];
     }
 
-    // ============================================================
-    //  CREAR ELEMENTOS DEL CHAT
-    // ============================================================
+    function saveSession() {
+        try {
+            sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
+                freeQuestionsUsed: freeQuestionsUsed,
+                quizIndex: quizIndex,
+                quizOrder: quizOrder
+            }));
+        } catch (e) {
+            console.warn('⚠️ Error guardando en sessionStorage:', e);
+        }
+    }
+
+    // ============ DOM ============
     let container, chatWindow, toggleBtn, messagesEl, inputEl, sendBtn, closeBtn, quizProgress;
     let isOpen = false;
 
@@ -137,18 +126,19 @@
 
         chatWindow = document.createElement('div');
         chatWindow.id = 'chat-window';
-        chatWindow.style.cssText = 'display:none;width:380px;height:520px;background:rgba(16,7,7,0.94);backdrop-filter:blur(12px);border:1px solid rgba(190,122,72,0.3);border-radius:28px;overflow:hidden;display:flex;flex-direction:column;color:#f2e4dc;font-family:inherit;box-shadow:0 20px 60px rgba(0,0,0,0.5);';
+        chatWindow.style.cssText = 'display:none;width:380px;height:520px;background:rgba(16,7,7,0.94);backdrop-filter:blur(12px);border:1px solid rgba(190,122,72,0.3);border-radius:28px;overflow:hidden;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,0.4);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;';
+
         chatWindow.innerHTML = `
-            <div style="background:linear-gradient(135deg,#100707 0%,#241010 48%,#080505 100%);padding:1rem 1.5rem;border-bottom:1px solid rgba(190,122,72,0.2);display:flex;justify-content:space-between;align-items:center;">
+            <div style="background:linear-gradient(135deg,#100707 0%,#241010 48%,#080505 100%);padding:1rem 1.5rem;border-bottom:1px solid rgba(190,122,72,0.2);display:flex;justify-content:space-between;align-items:center;flex-shrink:0;">
                 <h3 style="font-weight:500;font-size:1.1rem;color:#f2e4dc;margin:0;">🤖 <span style="color:#e6a06b;">BOTIA</span> · <span id="chatTitle">${t('title')}</span></h3>
                 <div style="display:flex;align-items:center;gap:8px;">
-                    <span id="quizProgress" style="font-size:0.65rem;background:rgba(230,160,107,0.15);color:#c0a08c;padding:0.2rem 0.6rem;border-radius:20px;border:1px solid rgba(190,122,72,0.2);letter-spacing:0.5px;">1 / 3</span>
+                    <span id="quizProgress" style="font-size:0.65rem;background:rgba(230,160,107,0.15);color:#c0a08c;padding:0.2rem 0.6rem;border-radius:20px;border:1px solid rgba(190,122,72,0.2);letter-spacing:0.5px;">${getQuizProgress()}</span>
                     <button id="chatClose" style="background:transparent;border:none;color:#c0a08c;font-size:1.4rem;cursor:pointer;padding:0 4px;">✕</button>
                 </div>
             </div>
             <div id="chatMessages" style="flex:1;padding:1rem 1.2rem;overflow-y:auto;display:flex;flex-direction:column;gap:0.6rem;background:rgba(0,0,0,0.2);color:#f2e4dc;"></div>
             <div style="padding:0.7rem 1rem 1rem;background:rgba(0,0,0,0.25);border-top:1px solid rgba(190,122,72,0.15);display:flex;gap:0.5rem;">
-                <input id="chatInput" type="text" placeholder="${t('placeholder')}" style="flex:1;padding:0.7rem 1rem;border-radius:60px;border:1px solid rgba(190,122,72,0.42);background:rgba(255,255,255,0.06);color:#f2e4dc;outline:none;font-family:inherit;" />
+                <input id="chatInput" type="text" placeholder="${t('placeholder')}" style="flex:1;padding:0.7rem 1rem;border-radius:60px;border:1px solid rgba(190,122,72,0.42);background:rgba(255,255,255,0.07);color:#f2e4dc;font-family:inherit;font-size:0.95rem;outline:none;">
                 <button id="chatSend" style="background:#e6a06b;border:none;border-radius:60px;padding:0 1.2rem;font-weight:600;color:#100707;cursor:pointer;font-size:0.9rem;font-family:inherit;">${t('sendButton')}</button>
             </div>
         `;
@@ -156,51 +146,11 @@
         toggleBtn = document.createElement('button');
         toggleBtn.id = 'chatToggle';
         toggleBtn.setAttribute('aria-label', 'Abrir chat');
-        toggleBtn.style.cssText = `
-            position: relative;
-            width: auto;
-            height: auto;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-            animation: float 3s ease-in-out infinite;
-            transition: transform 0.3s ease;
-        `;
+        toggleBtn.style.cssText = 'position:relative;width:auto;height:auto;background:transparent;border:none;cursor:pointer;padding:0;animation:float 3s ease-in-out infinite;transition:transform 0.3s ease;';
         toggleBtn.innerHTML = `
             <div style="position:relative;width:100px;height:100px;">
-                <div id="botiaNotification" style="
-                    position:absolute;
-                    top:-10px;
-                    right:-10px;
-                    min-width:28px;
-                    height:28px;
-                    background:#ff4444;
-                    border-radius:50%;
-                    border:3px solid #100707;
-                    display:none;
-                    align-items:center;
-                    justify-content:center;
-                    font-size:14px;
-                    font-weight:800;
-                    color:white;
-                    padding:0 6px;
-                    z-index:10;
-                    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-                    animation:pulse-notification 1.5s ease-in-out infinite;
-                    box-shadow:0 4px 12px rgba(255,68,68,0.4);
-                ">1</div>
-                <img src="/botia/assets/robot.png" 
-                     alt="BOTIA Robot" 
-                     id="robotImage"
-                     style="
-                         width:100px;
-                         height:100px;
-                         object-fit:contain;
-                         display:block;
-                         filter:drop-shadow(0 8px 30px rgba(230,160,107,0.5));
-                         transition:transform 0.3s ease;
-                     " />
+                <div id="botiaNotification" style="position:absolute;top:-10px;right:-10px;min-width:28px;height:28px;background:#ff4444;border-radius:50%;border:3px solid #100707;display:none;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:white;padding:0 6px;z-index:10;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;animation:pulse-notification 1.5s ease-in-out infinite;box-shadow:0 4px 12px rgba(255,68,68,0.4);">1</div>
+                <img src="/botia/assets/robot.png" alt="BOTIA Robot" id="robotImage" style="width:100px;height:100px;object-fit:contain;display:block;filter:drop-shadow(0 8px 30px rgba(230,160,107,0.5));transition:transform 0.3s ease;">
             </div>
         `;
 
@@ -213,338 +163,258 @@
         sendBtn = document.getElementById('chatSend');
         closeBtn = document.getElementById('chatClose');
         quizProgress = document.getElementById('quizProgress');
+    }
 
-        // ============================================================
-        //  FUNCIONES DEL CHAT
-        // ============================================================
-        function appendMessage(role, text, isHTML = false) {
-            const div = document.createElement('div');
-            div.style.cssText = `max-width:88%;padding:0.7rem 1rem;border-radius:20px;font-size:0.93rem;line-height:1.45;word-break:break-word;animation:fadeUp 0.2s ease;${role === 'user' ? 'align-self:flex-end;background:#e6a06b;color:#100707;border-bottom-right-radius:6px;' : 'align-self:flex-start;background:rgba(255,255,255,0.06);color:#f2e4dc;border-bottom-left-radius:6px;'}`;
-            if (isHTML) {
-                div.innerHTML = text;
-            } else {
-                const linkified = text.replace(
-                    /(https?:\/\/[^\s]+)/g,
-                    '<a href="$1" target="_blank" rel="noopener" style="color:#e6a06b;text-decoration:underline;text-underline-offset:2px;">$1</a>'
-                );
-                div.innerHTML = linkified;
-            }
-            messagesEl.appendChild(div);
-            messagesEl.scrollTop = messagesEl.scrollHeight;
-            return div;
+    function appendMessage(role, text, isHTML = false) {
+        const div = document.createElement('div');
+        const userStyle = 'align-self:flex-end;background:#e6a06b;color:#100707;border-bottom-right-radius:6px;';
+        const botStyle = 'align-self:flex-start;background:rgba(255,255,255,0.06);color:#f2e4dc;border:1px solid rgba(255,255,255,0.08);border-bottom-left-radius:6px;';
+        div.style.cssText = `max-width:88%;padding:0.7rem 1rem;border-radius:20px;font-size:0.93rem;line-height:1.45;word-break:break-word;animation:fadeUp 0.2s ease;${role === 'user' ? userStyle : botStyle}`;
+        if (isHTML) {
+            div.innerHTML = text;
+        } else {
+            div.innerHTML = text.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" rel="noopener" style="color:#e6a06b;text-decoration:underline;text-underline-offset:2px;">$1</a>');
         }
+        messagesEl.appendChild(div);
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+        return div;
+    }
 
-        function appendTyping() {
-            const div = document.createElement('div');
-            div.id = 'typing-indicator';
-            div.style.cssText = 'align-self:flex-start;background:rgba(255,255,255,0.06);color:#f2e4dc;padding:0.7rem 1rem;border-radius:20px;border-bottom-left-radius:6px;';
-            div.innerHTML = `<span style="display:inline-flex;gap:4px;align-items:center;"><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s infinite both;"></span><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s infinite both 0.2s;"></span><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s infinite both 0.4s;"></span></span>`;
-            messagesEl.appendChild(div);
-            messagesEl.scrollTop = messagesEl.scrollHeight;
-            return div;
-        }
+    function appendTyping() {
+        const div = document.createElement('div');
+        div.id = 'typing-indicator';
+        div.style.cssText = 'align-self:flex-start;background:rgba(255,255,255,0.06);color:#f2e4dc;padding:0.7rem 1rem;border-radius:20px;border-bottom-left-radius:6px;';
+        div.innerHTML = `<span style="display:inline-flex;gap:4px;align-items:center;"><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s infinite both;"></span><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s 0.2s infinite both;"></span><span style="display:inline-block;width:8px;height:8px;background:#c0a08c;border-radius:50%;animation:typing 1.4s 0.4s infinite both;"></span></span>`;
+        messagesEl.appendChild(div);
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+        return div;
+    }
 
-        function removeTyping() {
-            const typing = document.getElementById('typing-indicator');
-            if (typing) typing.remove();
-        }
+    function removeTyping() {
+        const typing = document.getElementById('typing-indicator');
+        if (typing) typing.remove();
+    }
 
-        function updateQuizProgress() {
-            if (quizProgress) {
-                quizProgress.textContent = getQuizProgress();
-            }
-        }
+    function updateQuizProgress() {
+        if (quizProgress) quizProgress.textContent = getQuizProgress();
+    }
 
-        // ============================================================
-        //  MOSTRAR PREGUNTA DEL QUIZ (VERSIÓN LIMPIA - SIN SOBRESCRITURA)
-        // ============================================================
-        function showQuizQuestion() {
-            console.log(`📊 showQuizQuestion - quizIndex: ${quizIndex}`);
-            console.log(`📊 quizOrder:`, quizOrder);
-            console.log(`📊 Total preguntas: ${quizQuestions.length}`);
-            
-            // Si no hay preguntas, cargar fallback
-            if (!quizQuestions || quizQuestions.length === 0) {
-                appendMessage('bot', '❌ No se cargaron las preguntas. Recarga la página.');
-                return;
-            }
-            
-            // Obtener pregunta
-            const q = getCurrentQuestion();
-            if (!q) {
-                appendMessage('bot', t('quizDone') || '🎉 You\'ve seen all questions!');
-                updateQuizProgress();
-                return;
-            }
-
-            const questionText = getQuestionText(q);
-            const link = getQuestionLink(q);
-            
-            const html = `
-                <div style="margin-bottom:8px;" data-quiz-id="${q.id || 'unknown'}">
-                    <div>${questionText}</div>
-                    <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;">
-                        <a href="${link}" target="_blank" rel="noopener" style="background:#e6a06b;border:none;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#100707;text-decoration:none;display:inline-block;">${t('answerButton') || 'Ver respuesta'}</a>
-                        <button onclick="document.dispatchEvent(new CustomEvent('nextQuiz'))" style="background:transparent;border:1px solid #e6a06b;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#e6a06b;cursor:pointer;font-family:inherit;">${t('nextButton') || 'Next'}</button>
-                    </div>
-                    <div style="font-size:0.65rem;color:#8a8a8a;margin-top:4px;text-align:right;">${getQuizProgress()}</div>
-                </div>
-            `;
-            
-            appendMessage('bot', html, true);
+    function advanceQuiz() {
+        if (isQuizComplete()) {
+            appendMessage('bot', t('noMoreQuestions') || 'No more questions! Ask me anything.');
             updateQuizProgress();
-            setTimeout(() => {
-                const lastMsg = messagesEl.lastElementChild;
-                if (lastMsg) {
-                    const btn = lastMsg.querySelector('button');
-                    if (btn) {
-                        btn.onclick = function() {
-                            document.dispatchEvent(new CustomEvent('nextQuiz'));
-                        };
-                    }
-                }
-            }, 50);
+            return;
+        }
+        quizIndex++;
+        saveSession();
+        showQuizQuestion();
+    }
+
+    function showQuizQuestion() {
+        console.log(`📊 showQuizQuestion - quizIndex: ${quizIndex}, total: ${quizQuestions.length}, order:`, quizOrder);
+
+        if (!quizQuestions.length) {
+            appendMessage('bot', '❌ No se cargaron las preguntas. Recarga la página.');
+            return;
         }
 
-        // ============================================================
-        //  ENVIAR MENSAJE A LA IA
-        // ============================================================
-        async function sendToAI(message) {
-            if (conversationCount >= MAX_QUESTIONS) {
+        const q = getCurrentQuestion();
+        if (!q) {
+            appendMessage('bot', t('quizDone') || '🎉 You\'ve seen all questions!');
+            updateQuizProgress();
+            return;
+        }
+
+        const questionText = q.text || 'Question not available';
+        const link = q.link || '#';
+
+        const wrapper = document.createElement('div');
+        wrapper.style.marginBottom = '8px';
+        wrapper.dataset.quizId = q.id || 'unknown';
+
+        wrapper.innerHTML = `
+            <div>${questionText}</div>
+            <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;">
+                <a href="${link}" target="_blank" rel="noopener" style="background:#e6a06b;border:none;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#100707;text-decoration:none;display:inline-block;font-size:0.85rem;">${t('discoverButton') || 'Discover'}</a>
+                <button class="next-quiz-btn" style="background:transparent;border:1px solid #e6a06b;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#e6a06b;cursor:pointer;font-size:0.85rem;">${t('nextButton') || 'Next'}</button>
+            </div>
+            <div style="font-size:0.65rem;color:#8a8a8a;margin-top:4px;text-align:right;">${getQuizProgress()}</div>
+        `;
+
+        const nextBtn = wrapper.querySelector('.next-quiz-btn');
+        nextBtn.addEventListener('click', advanceQuiz);
+
+        // ✅ FIX: crear el contenedor del mensaje directamente
+        const msgDiv = document.createElement('div');
+        msgDiv.style.cssText = 'align-self:flex-start;background:rgba(255,255,255,0.06);color:#f2e4dc;border:1px solid rgba(255,255,255,0.08);border-bottom-left-radius:6px;max-width:88%;padding:0.7rem 1rem;border-radius:20px;font-size:0.93rem;line-height:1.45;word-break:break-word;animation:fadeUp 0.2s ease;';
+        msgDiv.appendChild(wrapper);
+        messagesEl.appendChild(msgDiv);
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+
+        updateQuizProgress();
+    }
+
+    async function sendToAI(message) {
+        if (freeQuestionsUsed >= MAX_FREE_QUESTIONS) {
+            appendMessage('bot', t('limitMessage') || 'You\'ve used your 3 free questions.');
+            return;
+        }
+
+        appendMessage('user', message);
+        inputEl.value = '';
+        inputEl.disabled = true;
+        sendBtn.disabled = true;
+
+        const typing = appendTyping();
+
+        try {
+            const response = await fetch(WORKER_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    messages: [{ role: 'user', content: message }],
+                    language: currentLang
+                })
+            });
+
+            removeTyping();
+
+            if (!response.ok) throw new Error('Worker error');
+            const data = await response.json();
+            const reply = data.choices?.[0]?.message?.content || 'No pude obtener una respuesta.';
+            appendMessage('bot', reply);
+            freeQuestionsUsed++;
+            if (window.botiaTalk) window.botiaTalk();
+            saveSession();
+
+            if (freeQuestionsUsed >= MAX_FREE_QUESTIONS) {
                 appendMessage('bot', t('limitMessage') || 'You\'ve used your 3 free questions.');
-                return;
             }
+        } catch (err) {
+            removeTyping();
+            console.error('Error:', err);
+            appendMessage('bot', t('connectionError') || 'Connection error. Please check your network.');
+        }
 
-            appendMessage('user', message);
+        inputEl.disabled = false;
+        sendBtn.disabled = false;
+        if (freeQuestionsUsed < MAX_FREE_QUESTIONS) inputEl.focus();
+    }
+
+    function handleSend() {
+        const message = inputEl.value.trim();
+        if (!message) return;
+
+        const nextWords = ['siguiente', 'next', 'nächste', 'suivant', 'prossimo', 'próximo', 'weiter', 'next question', 'siguiente pregunta'];
+        if (nextWords.includes(message.toLowerCase())) {
+            advanceQuiz();
             inputEl.value = '';
-            inputEl.disabled = true;
-            sendBtn.disabled = true;
-
-            const typing = appendTyping();
-
-            try {
-                const response = await fetch(WORKER_URL, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ 
-                        messages: [{ role: 'user', content: message }], 
-                        language: currentLang 
-                    })
-                });
-
-                removeTyping();
-
-                if (!response.ok) throw new Error('Worker error');
-                const data = await response.json();
-                const reply = data.choices?.[0]?.message?.content || 'No pude obtener una respuesta.';
-                appendMessage('bot', reply);
-                conversationCount++;
-                
-                if (window.botiaTalk) window.botiaTalk();
-                
-                sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ 
-                    count: conversationCount,
-                    quizIndex: quizIndex,
-                    quizOrder: quizOrder
-                }));
-                
-                if (conversationCount >= MAX_QUESTIONS) {
-                    appendMessage('bot', t('limitMessage') || 'You\'ve used your 3 free questions.');
-                }
-            } catch (err) {
-                removeTyping();
-                console.error('Error:', err);
-                appendMessage('bot', t('connectionError') || 'Connection error. Please check your network.');
-            }
-
-            inputEl.disabled = false;
-            sendBtn.disabled = false;
-            if (conversationCount < MAX_QUESTIONS) inputEl.focus();
+            return;
         }
 
-        // ============================================================
-        //  MANEJAR ENVÍO DE MENSAJE
-        // ============================================================
-        function handleSend() {
-            const message = inputEl.value.trim();
-            if (!message) return;
+        sendToAI(message);
+    }
 
-            const nextWords = ['siguiente', 'next', 'nächste', 'suivant', 'prossimo', 'próximo', 'weiter', 'next question', 'siguiente pregunta'];
-            if (nextWords.includes(message.toLowerCase())) {
-                if (isQuizComplete()) {
-                    appendMessage('bot', t('noMoreQuestions') || 'No more questions!');
-                    inputEl.value = '';
-                    return;
-                }
-                quizIndex++;
-                sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ 
-                    count: conversationCount,
-                    quizIndex: quizIndex,
-                    quizOrder: quizOrder
-                }));
-                showQuizQuestion();
-                inputEl.value = '';
-                return;
-            }
+    function openChat() {
+        chatWindow.style.display = 'flex';
+        isOpen = true;
+        if (window.clearBotiaNotification) window.clearBotiaNotification();
 
-            sendToAI(message);
+        if (messagesEl.children.length === 0) {
+            appendMessage('bot', t('welcome') || '👋 Hi! I\'m the BOTIA assistant.');
+            setTimeout(showQuizQuestion, 500);
+        } else {
+            updateQuizProgress();
         }
 
-        // ============================================================
-        //  EVENTOS
-        // ============================================================
+        if (freeQuestionsUsed < MAX_FREE_QUESTIONS) inputEl.focus();
+    }
+
+    function closeChat() {
+        chatWindow.style.display = 'none';
+        isOpen = false;
+    }
+
+    function attachEvents() {
         toggleBtn.addEventListener('click', () => {
-            if (isOpen) {
-                chatWindow.style.display = 'none';
-                isOpen = false;
-            } else {
-                chatWindow.style.display = 'flex';
-                isOpen = true;
-                
-                if (window.clearBotiaNotification) window.clearBotiaNotification();
-                
-                if (messagesEl.children.length === 0) {
-                    appendMessage('bot', t('welcome') || '👋 Hi! I\'m the BOTIA assistant.');
-                    setTimeout(showQuizQuestion, 500);
-                } else {
-                    updateQuizProgress();
-                }
-                if (conversationCount < MAX_QUESTIONS) inputEl.focus();
-            }
+            if (isOpen) closeChat();
+            else openChat();
         });
 
-        closeBtn.addEventListener('click', () => {
-            chatWindow.style.display = 'none';
-            isOpen = false;
-        });
+        closeBtn.addEventListener('click', closeChat);
 
         sendBtn.addEventListener('click', handleSend);
         inputEl.addEventListener('keydown', (e) => {
             if (e.key === 'Enter') handleSend();
         });
 
-        // ============================================================
-        //  EVENTO NEXTQUIZ (VERSIÓN DEFINITIVA)
-        // ============================================================
-        document.addEventListener('nextQuiz', () => {
-            console.log('🔄 Avanzando a la siguiente pregunta...');
-            console.log(`   quizIndex ANTES: ${quizIndex}`);
-            console.log(`   Total preguntas: ${quizQuestions.length}`);
-            console.log(`   quizOrder:`, quizOrder);
-            
-            // Verificar si hay más preguntas
-            if (quizIndex + 1 >= quizQuestions.length) {
-                appendMessage('bot', t('noMoreQuestions') || 'No more questions!');
-                updateQuizProgress();
-                return;
-            }
-            
-            // Avanzar
-            quizIndex = quizIndex + 1;
-            console.log(`   quizIndex DESPUÉS: ${quizIndex}`);
-            
-            // Guardar en sessionStorage
-            try {
-                sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ 
-                    count: conversationCount,
-                    quizIndex: quizIndex,
-                    quizOrder: quizOrder
-                }));
-                console.log('   ✅ Guardado en sessionStorage');
-            } catch (e) {
-                console.warn('   ⚠️ Error guardando en sessionStorage:', e);
-            }
-            
-            // Mostrar la siguiente pregunta
-            showQuizQuestion();
-        });
+        const robotImage = document.getElementById('robotImage');
+        const notification = document.getElementById('botiaNotification');
 
-        // ============================================================
-        //  INTERACCIONES DEL ROBOT
-        // ============================================================
-        setTimeout(() => {
-            const robotImage = document.getElementById('robotImage');
-            const notification = document.getElementById('botiaNotification');
+        if (robotImage) {
+            toggleBtn.addEventListener('mouseenter', () => {
+                robotImage.style.transform = 'scale(1.08) rotate(-3deg)';
+            });
+            toggleBtn.addEventListener('mouseleave', () => {
+                robotImage.style.transform = 'scale(1) rotate(0deg)';
+            });
+        }
 
+        window.botiaTalk = function() {
             if (robotImage) {
-                toggleBtn.addEventListener('mouseenter', () => {
-                    robotImage.style.transform = 'scale(1.08) rotate(-3deg)';
-                });
-                toggleBtn.addEventListener('mouseleave', () => {
-                    robotImage.style.transform = 'scale(1) rotate(0deg)';
-                });
-                toggleBtn.addEventListener('click', () => {
-                    robotImage.style.transform = 'scale(0.85)';
-                    setTimeout(() => {
-                        robotImage.style.transform = 'scale(1)';
-                    }, 200);
-                });
-            }
-
-            window.botiaTalk = function() {
-                if (robotImage) {
-                    robotImage.style.transform = 'scale(1.15) rotate(5deg)';
-                    setTimeout(() => {
-                        robotImage.style.transform = 'scale(1) rotate(0deg)';
-                    }, 300);
-                }
-            };
-
-            window.showBotiaNotification = function(count) {
-                if (notification) {
-                    notification.style.display = 'flex';
-                    notification.textContent = count > 9 ? '9+' : count;
-                }
-            };
-
-            window.clearBotiaNotification = function() {
-                if (notification) {
-                    notification.style.display = 'none';
-                }
-            };
-        }, 100);
-
-        // ============================================================
-        //  DETECTAR CAMBIOS DE IDIOMA
-        // ============================================================
-        const originalSetItem = localStorage.setItem;
-        localStorage.setItem = function(key, value) {
-            originalSetItem.apply(this, arguments);
-            if (key === 'botia-lang' && value !== currentLang) {
-                currentLang = value;
-                document.getElementById('chatTitle').textContent = t('title');
-                inputEl.placeholder = t('placeholder');
-                sendBtn.textContent = t('sendButton');
-                loadChatTranslations(currentLang).then(() => {
-                    // Actualizar mensajes existentes? Solo si es necesario
-                });
+                robotImage.style.transform = 'scale(1.15) rotate(5deg)';
+                setTimeout(() => robotImage.style.transform = 'scale(1) rotate(0deg)', 300);
             }
         };
 
-        // ============================================================
-        //  INICIO
-        // ============================================================
-        console.log('🤖 BOTIA Chat v2.0 cargado');
+        window.showBotiaNotification = function(count) {
+            if (notification) {
+                notification.style.display = 'flex';
+                notification.textContent = count > 9 ? '9+' : count;
+            }
+        };
+
+        window.clearBotiaNotification = function() {
+            if (notification) notification.style.display = 'none';
+        };
+    }
+
+    function onLanguageChange() {
+        document.getElementById('chatTitle').textContent = t('title');
+        inputEl.placeholder = t('placeholder');
+        sendBtn.textContent = t('sendButton');
+    }
+
+    async function initChat() {
+        currentLang = getCurrentLanguage();
+        await loadChatTranslations(currentLang);
+
+        loadSession();
+
+        if (quizQuestions.length > 0 && quizOrder.length === 0) {
+            quizOrder = generateQuizOrder();
+            saveSession();
+        }
+
+        createChatElements();
+        attachEvents();
+        onLanguageChange();
+
+        console.log('🤖 BOTIA Chat v2.1 cargado');
         console.log(`🌍 Idioma: ${currentLang}`);
         console.log(`📊 Progreso: ${getQuizProgress()}`);
         console.log(`🔗 Worker: ${WORKER_URL}`);
     }
 
-    // ============================================================
-    //  INICIALIZACIÓN PRINCIPAL
-    // ============================================================
-    async function initChat() {
-        currentLang = getCurrentLanguage();
-        await loadChatTranslations(currentLang);
-        
-        if (quizQuestions.length > 0 && quizOrder.length === 0) {
-            quizOrder = shuffleArray(quizQuestions.map((_, i) => i));
+    window.addEventListener('storage', (e) => {
+        if (e.key === 'botia-lang' && e.newValue && e.newValue !== currentLang) {
+            currentLang = e.newValue;
+            loadChatTranslations(currentLang).then(() => {
+                onLanguageChange();
+            });
         }
-        
-        createChatElements();
-    }
+    });
 
-    // Estilos globales
     const style = document.createElement('style');
     style.textContent = `
         @keyframes typing {
@@ -628,7 +498,5 @@
     `;
     document.head.appendChild(style);
 
-    // Iniciar
     initChat();
-
 })();
