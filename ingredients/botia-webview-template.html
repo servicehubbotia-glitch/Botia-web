@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page_title">BOTIA</title>
+
+  <!-- CSS del sistema WebView — NO cambiar -->
+  <link rel="preload" href="/botia/assets/botia-template.css" as="style">
+  <link rel="stylesheet" href="/botia/assets/botia-template.css">
+  <link rel="stylesheet" href="/botia/assets/menu.css">
+  <script src="/botia/assets/js/menu.js"></script>
+
+  <!-- hreflang — cambiar SLUG por el nombre del archivo sin .html -->
+  <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=en">
+  <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=es">
+  <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=ar">
+  <link rel="alternate" hreflang="de" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=de">
+  <link rel="alternate" hreflang="fr" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=fr">
+  <link rel="alternate" hreflang="nl" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=nl">
+  <link rel="alternate" hreflang="it" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=it">
+  <link rel="alternate" hreflang="pt" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=pt">
+  <link rel="alternate" hreflang="pl" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=pl">
+  <link rel="alternate" hreflang="ro" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=ro">
+  <link rel="alternate" hreflang="ru" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=ru">
+  <link rel="alternate" hreflang="tr" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=tr">
+  <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=zh">
+  <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/ingredients/SLUG.html?lang=id">
+  <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/ingredients/SLUG.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "BOTIA — SLUG",
+    "url": "https://www.botia-safefood.com/ingredients/SLUG.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BOTIA Food Transparency"
+    }
+  }
+  </script>
+</head>
+
+<body class="has-botia-header">
+
+  <!-- Botón menú hamburguesa -->
+  <button id="menuBtn" aria-label="Menu">☰</button>
+
+  <!-- Barra de navegación superior — selector de idioma -->
+  <div class="botia-header-bar">
+    <div class="botia-nav-left">
+      <a href="/index.html"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+    </div>
+    <div class="lang-switcher">
+      <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+      <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="it">Italiano</option>
+        <option value="nl">Nederlands</option>
+        <option value="pl">Polski</option>
+        <option value="pt">Português</option>
+        <option value="ro">Română</option>
+        <option value="ru">Русский</option>
+        <option value="tr">Türkçe</option>
+        <option value="zh">中文</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Contenedor principal WebView -->
+  <div class="botia-container">
+
+    <!-- Header con icono, título y trigger del ingrediente detectado -->
+    <header class="botia-header">
+      <img id="module_icon" fetchpriority="high" class="botia-icon"
+           src="/botia/assets/botia_jar_512.png"
+           onerror="this.src='/botia/assets/botia_jar_512.png'"
+           alt="BOTIA icon">
+      <h1 id="title">TÍTULO DE LA PÁGINA</h1>
+      <!-- Aquí aparece el ingrediente detectado por la app -->
+      <div id="header_trigger_container"></div>
+    </header>
+
+    <main>
+
+      <!-- SECCIÓN 1: Qué ha detectado BOTIA -->
+      <section class="botia-card">
+        <h2 id="label_detected">What BOTIA Detected</h2>
+        <p id="what_detected">TEXTO ESPECÍFICO DE ESTA PÁGINA</p>
+      </section>
+
+      <!-- SECCIÓN 2: Por qué importa -->
+      <section class="botia-card">
+        <h2 id="label_matters">Why It Matters</h2>
+        <p id="why_it_matters">TEXTO ESPECÍFICO DE ESTA PÁGINA</p>
+      </section>
+
+      <!-- SECCIÓN 3: Qué no puede concluir BOTIA -->
+      <section class="botia-card">
+        <h2 id="label_cannot">What BOTIA Cannot Conclude</h2>
+        <p id="what_it_cannot_conclude">TEXTO ESPECÍFICO DE ESTA PÁGINA</p>
+      </section>
+
+      <!-- SECCIÓN 4: Fuentes -->
+      <section class="botia-card">
+        <h2 id="label_sources">Source &amp; Context</h2>
+        <p class="source-links">
+          <!-- AÑADIR LINKS DE FUENTES ESPECÍFICOS -->
+        </p>
+      </section>
+
+      <!-- SECCIÓN NOTA: Link al ingrediente detectado -->
+      <section class="botia-note">
+        <h3 id="label_note">📖 BOTIA Note</h3>
+        <div id="ingredient_link_container"></div>
+        <p id="botia_disclaimer" class="botia-disclaimer">BOTIA informs based on the ingredients read from the label.</p>
+        <p>Contact: <a id="botia_contact" href="mailto:soporte@botia-safefood.com">soporte@botia-safefood.com</a></p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p id="label_footer">BOTIA WebView · Transparent Food Intelligence</p>
+    </footer>
+
+  </div>
+
+  <!-- JS del sistema — NO cambiar orden -->
+  <script src="/botia/assets/js/i18n-loader.js" defer></script>
+  <script src="/botia/assets/js/botia-chat.js"></script>
+
+</body>
+</html>
