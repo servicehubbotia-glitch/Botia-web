@@ -25,39 +25,56 @@
   <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
   <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <style>
-    .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
-    .hero { padding: 12px 0 0; text-align: center; }
-    .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
-    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
-    .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
-    .description { font-size: 0.9rem; color: #8a8a8a; }
-    .section { margin-bottom: 14px; }
-    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
-    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; }
-    .can-cannot { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
-    @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
-    .can-box, .cannot-box { background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px; }
-    .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
-    .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
-    .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
-    .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
-    .can-box li, .cannot-box li { margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c; padding-left: 20px; position: relative; }
-    .can-box li::before { content: "✅"; position: absolute; left: 0; }
-    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
-    .closing { text-align: center; padding: 20px 0; }
-    .closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 16px; }
-    .cta-button {
-      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
-      padding: 10px 24px; border-radius: 8px; text-decoration: none;
-      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
-    }
-    .cta-button:hover { background: rgba(190,122,72,0.35); }
-    .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
-    .source-links a { color: #e6a06b; text-decoration: none; }
-    .source-links a:hover { text-decoration: underline; }
-    .hero + .section { margin-top: 0 !important; }
-    #header_trigger_container { margin-top: 12px; font-size: 1rem; color: #ffd8bd; }
-  </style>
+  .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
+  .hero { padding: 12px 0 0; text-align: center; }
+  .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
+  .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
+  .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
+  .description { font-size: 0.9rem; color: #8a8a8a; }
+  .section { margin-bottom: 14px; }
+  .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
+  .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; }
+  .related-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .related-grid a {
+    background: rgba(255, 255, 255, 0.06); padding: 8px 18px;
+    border-radius: 30px; border: 1px solid rgba(190, 122, 72, 0.3);
+    color: #ffd8bd; font-weight: 600; font-size: 0.9rem; text-decoration: none;
+    transition: 0.2s ease;
+  }
+  .related-grid a:hover { background: rgba(190, 122, 72, 0.2); border-color: #e6a06b; color: #fff; }
+  .can-cannot { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+  @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
+  .can-box, .cannot-box { background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px; }
+  .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
+  .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
+  .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
+  .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
+  .can-box li, .cannot-box li { margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c; padding-left: 20px; position: relative; }
+  .can-box li::before { content: "✅"; position: absolute; left: 0; }
+  .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+  .closing { text-align: center; padding: 20px 0; }
+  .closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 16px; }
+  .cta-button {
+    display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+    padding: 10px 24px; border-radius: 8px; text-decoration: none;
+    border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+  }
+  .cta-button:hover { background: rgba(190,122,72,0.35); }
+  .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
+  .source-links a { color: #e6a06b; text-decoration: none; }
+  .source-links a:hover { text-decoration: underline; }
+  .hero + .section { margin-top: 0 !important; }
+  .category-card {
+    display: flex; flex-direction: column; gap: 4px;
+    background: rgba(24,13,13,0.9); border: 1px solid rgba(190,122,72,0.25);
+    border-radius: 12px; padding: 16px; text-decoration: none;
+    color: #f2e4dc; transition: border-color 0.2s;
+  }
+  .category-card:hover { border-color: rgba(190,122,72,0.6); }
+  .category-card strong { font-size: 0.95rem; color: #e6a06b; }
+  .category-card span { font-size: 0.8rem; color: #8a8a8a; }
+  #header_trigger_container { margin-top: 12px; font-size: 1rem; color: #ffd8bd; }
+</style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/mashbooh.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/mashbooh.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/ingredients/mashbooh.html?lang=ar">
