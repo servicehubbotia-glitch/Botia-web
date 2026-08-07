@@ -31,9 +31,6 @@
   <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <style>
     .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
-    
-    
-    
     .hero { padding: 12px 0 0; text-align: center; }
     .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
     .hero h1 { font-size: 1.6rem; color: #f2e4dc; margin-bottom: 6px; }
@@ -100,9 +97,18 @@
     .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
     .source-links a { color: #e6a06b; text-decoration: none; }
     .source-links a:hover { text-decoration: underline; }
-
-
-  
+    .callout {
+      background: rgba(24,13,13,0.9); border-left: 3px solid #e6a06b;
+      border-radius: 8px; padding: 20px; margin: 24px 0;
+    }
+    .callout-title { font-size: 1.1rem; color: #e6a06b; margin-bottom: 8px; }
+    .callout-body { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; margin-bottom: 12px; }
+    .callout-link {
+      display: inline-block; color: #ffd8bd; font-weight: 600; font-size: 0.9rem;
+      text-decoration: none; border-bottom: 1px solid rgba(190,122,72,0.5);
+      padding-bottom: 2px; transition: 0.2s ease;
+    }
+    .callout-link:hover { color: #e6a06b; border-bottom-color: #e6a06b; }
     .hero + .section { margin-top: 0 !important; }
   </style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/pages/muslim.html?lang=en">
@@ -136,11 +142,8 @@
     </select>
   </div>
 </div>
-  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
-  
-  
 
-  
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
 
   <main class="landing" id="main-content">
     <section class="hero">
@@ -193,8 +196,9 @@
     </div>
 
     <section class="callout">
-      <h3 class="callout-title" id="mashbooh_why_title">Why Mashbooh is the most important state</h3>
-      <p class="callout-body" id="mashbooh_why_body">Classifying an ingredient as Mashbooh is not an accusation — it is a signal of uncertainty. Food labels are legal documents before they are human explanations. When the label omits the origin of an additive or the method of slaughter, BOTIA makes that gap visible so you can decide.</p>
+      <h3 class="callout-title" id="mashbooh_callout_title">Mashbooh is the most common result</h3>
+      <p class="callout-body" id="mashbooh_callout_body">In our first analysis of real supermarket products, 72% could not be confirmed — not because the ingredients were forbidden, but because the label never declared where they came from.</p>
+      <a href="/pages/undeclared_origin.html" class="callout-link" id="mashbooh_callout_link">Read why undeclared origin matters →</a>
     </section>
 
     <section class="section">
@@ -210,7 +214,7 @@
         </thead>
         <tbody>
           <tr>
-            <td id="td1_aspect">Additives (E-numbers) & Enzymes</td>
+            <td id="td1_aspect">Additives (E-numbers) &amp; Enzymes</td>
             <td id="td1_general">Can be grouped by function without specifying vegetable or animal origin.</td>
             <td id="td1_halal">Requires all additives to come strictly from lawful sources.</td>
             <td id="td1_botia">If an additive could be animal-derived but the label is silent, BOTIA marks it as doubtful.</td>
@@ -251,15 +255,14 @@
       <p class="closing-claim" id="closing_claim">Transparency is not certification. It is the right to know what the label says — and what it does not.</p>
       <p class="source-links">
         <span id="sources-label">Sources:</span>
-        <a href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B24-1997%252FCXG_024e.pdf" target="_blank">Codex CAC/GL 24-1997</a> ·
-        <a href="https://www.smiic.org/en/project/24" target="_blank">OIC/SMIIC 1:2019</a>
+        <a href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B24-1997%252FCXG_024e.pdf" target="_blank" rel="noopener">Codex CAC/GL 24-1997</a> ·
+        <a href="https://www.smiic.org/en/project/24" target="_blank" rel="noopener">OIC/SMIIC 1:2019</a>
       </p>
       <a href="/" class="cta-button" id="back-to-botia">← Back to BOTIA</a>
     </section>
   </main>
 
-  
   <script src="/botia/assets/js/i18n-loader.js" defer></script>
-<script src="/botia/assets/js/botia-chat.js"></script>
+  <script src="/botia/assets/js/botia-chat.js"></script>
 </body>
 </html>
