@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOTIA — Ultra-Processed | What NOVA means on a label</title>
+  <meta property="og:title" content="BOTIA — Ultra-Processed">
+  <meta property="og:description" content="Ultra-processed is not an opinion. It is a classification with criteria. BOTIA detects the markers NOVA describes — and is honest about what it cannot conclude.">
+  <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <meta property="og:url" content="https://www.botia-safefood.com/pages/ultra_processed.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BOTIA — Ultra-Processed">
+  <meta name="twitter:description" content="Ultra-processed is not an opinion. It is a classification with criteria. BOTIA detects the markers NOVA describes — and is honest about what it cannot conclude.">
+  <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <link rel="canonical" href="https://www.botia-safefood.com/pages/ultra_processed.html" />
+  <meta name="description" content="Ultra-processed is not an opinion. It is a classification with criteria. BOTIA detects the markers NOVA describes — and is honest about what it cannot conclude." />
+  <link rel="dns-prefetch" href="https://www.who.int">
+  <link rel="dns-prefetch" href="https://www.fao.org">
+  <link rel="preconnect" href="https://www.who.int">
+  <link rel="preconnect" href="https://www.fao.org">
+  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
+  <link rel="preload" href="/botia-landing.css" as="style">
+  <link rel="stylesheet" href="/botia-landing.css" />
+  <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
+  <style>
+  .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
+  .hero { padding: 12px 0 0; text-align: center; }
+  .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
+  .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
+  .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
+  .description { font-size: 0.9rem; color: #8a8a8a; }
+  .section { margin-bottom: 24px; }
+  .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
+  .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.6; }
+  .nova-grid { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+  .nova-card {
+    background: rgba(24,13,13,0.9); border: 1px solid rgba(190,122,72,0.25);
+    border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 4px;
+  }
+  .nova-card.highlight { border-color: rgba(190,122,72,0.7); }
+  .nova-card strong { font-size: 0.95rem; color: #e6a06b; }
+  .nova-card span { font-size: 0.85rem; color: #8a8a8a; line-height: 1.5; }
+  .highlight-box {
+    background: rgba(24, 13, 13, 0.9); border-left: 4px solid rgba(190, 122, 72, 0.6);
+    border-radius: 8px; padding: 20px; margin: 24px 0;
+  }
+  .highlight-box p { font-size: 0.95rem; color: #ffd8bd; line-height: 1.6; }
+  .related-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .related-grid a {
+    background: rgba(255, 255, 255, 0.06); padding: 8px 18px;
+    border-radius: 30px; border: 1px solid rgba(190, 122, 72, 0.3);
+    color: #ffd8bd; font-weight: 600; font-size: 0.9rem; text-decoration: none;
+    transition: 0.2s ease;
+  }
+  .related-grid a:hover { background: rgba(190, 122, 72, 0.2); border-color: #e6a06b; color: #fff; }
+  .can-cannot { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+  @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
+  .can-box, .cannot-box { background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px; }
+  .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
+  .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
+  .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
+  .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
+  .can-box li, .cannot-box li { margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c; padding-left: 20px; position: relative; }
+  .can-box li::before { content: "✅"; position: absolute; left: 0; }
+  .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+  .closing { text-align: center; padding: 20px 0; }
+  .closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 16px; }
+  .cta-button {
+    display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+    padding: 10px 24px; border-radius: 8px; text-decoration: none;
+    border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+  }
+  .cta-button:hover { background: rgba(190,122,72,0.35); }
+  .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
+  .source-links a { color: #e6a06b; text-decoration: none; }
+  .source-links a:hover { text-decoration: underline; }
+  .hero + .section { margin-top: 0 !important; }
+</style>
+  <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=en">
+  <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=es">
+  <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=ar">
+  <link rel="alternate" hreflang="de" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=de">
+  <link rel="alternate" hreflang="fr" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=fr">
+  <link rel="alternate" hreflang="nl" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=nl">
+  <link rel="alternate" hreflang="it" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=it">
+  <link rel="alternate" hreflang="pt" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=pt">
+  <link rel="alternate" hreflang="pl" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=pl">
+  <link rel="alternate" hreflang="ro" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=ro">
+  <link rel="alternate" hreflang="ru" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=ru">
+  <link rel="alternate" hreflang="tr" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=tr">
+  <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=zh">
+  <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/pages/ultra_processed.html?lang=id">
+  <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/pages/ultra_processed.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "BOTIA — Ultra-Processed",
+    "description": "Ultra-processed is not an opinion. It is a classification with criteria. BOTIA detects the markers NOVA describes — and is honest about what it cannot conclude.",
+    "url": "https://www.botia-safefood.com/pages/ultra_processed.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BOTIA Food Transparency"
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/botia/assets/menu.css">
+  <script src="/botia/assets/js/menu.js"></script>
+</head>
+<body data-botia-module="ultra_processed" class="has-botia-header">
+  <button id="menuBtn" aria-label="Menu">☰</button>
+<div class="botia-header-bar">
+  <div class="botia-nav-left">
+    <a href="/index.html"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+  </div>
+  <div class="lang-switcher">
+    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+      <option value="tr">Türkçe</option><option value="zh">中文</option>
+    </select>
+  </div>
+</div>
+
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+
+  <main class="landing" id="main-content">
+    <section class="hero">
+      <img class="hero-logo" fetchpriority="high" src="/botia/assets/botia_jar_512.png" alt="BOTIA — Ultra-processed food and the NOVA classification">
+      <h1 id="title">Ultra-Processed</h1>
+      <p class="subtitle" id="subtitle">A word used everywhere. Defined almost nowhere.</p>
+      <p class="description" id="description">BOTIA uses this term across the whole site. This page explains what it actually means — and what BOTIA can and cannot say about it.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="what_title">What ultra-processed actually means</h2>
+      <p class="section-intro" id="what_body">Ultra-processed is not a judgement or a marketing word. It comes from NOVA, a classification developed at the University of São Paulo and adopted by FAO and WHO in their 2019 report. NOVA does not classify food by nutrients — by calories, fat or sugar. It classifies by how much industrial processing a food has undergone, and by whether it contains substances never used in home cooking.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="groups_title">The four NOVA groups</h2>
+      <div class="nova-grid">
+        <div class="nova-card">
+          <strong id="group1_name">Group 1 — Unprocessed or minimally processed</strong>
+          <span id="group1_desc">Fruit, vegetables, eggs, milk, meat, grains. Cleaned, cut, frozen or pasteurised, but nothing added.</span>
+        </div>
+        <div class="nova-card">
+          <strong id="group2_name">Group 2 — Processed culinary ingredients</strong>
+          <span id="group2_desc">Oil, butter, sugar, salt. Extracted from Group 1 foods and used to cook, not eaten alone.</span>
+        </div>
+        <div class="nova-card">
+          <strong id="group3_name">Group 3 — Processed foods</strong>
+          <span id="group3_desc">Bread, cheese, tinned vegetables, cured meat. Group 1 plus Group 2, with few ingredients and recognisable origins.</span>
+        </div>
+        <div class="nova-card highlight">
+          <strong id="group4_name">Group 4 — Ultra-processed</strong>
+          <span id="group4_desc">Industrial formulations containing substances you would never find in a kitchen: flavourings, emulsifiers, thickeners, colourings, sweeteners and protein isolates.</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="highlight-box">
+      <p id="highlight_text">The difference between Group 3 and Group 4 is not how healthy something is. It is whether the ingredient list contains substances that exist only because industry needs them — to bind, to preserve, to colour, or to make something taste like what it no longer is.</p>
+    </div>
+
+    <section class="section">
+      <h2 class="section-title" id="markers_title">The markers BOTIA already reads</h2>
+      <p class="section-intro" id="markers_body">The three evidence layers BOTIA uses are, in fact, the three groups of substances NOVA names as characteristic of ultra-processing. This is not a coincidence — it is the same criterion approached from the label.</p>
+      <div class="related-grid">
+        <a href="/pages/the_code_system.html" id="marker_additives">Additives and E-numbers</a>
+        <a href="/pages/what_holds_it.html" id="marker_texture">Texture modifiers</a>
+        <a href="/pages/tasting_like_itself.html" id="marker_flavour">Flavourings</a>
+        <a href="/pages/not_sugar.html" id="marker_sweeteners">Non-sugar sweeteners</a>
+        <a href="/pages/hidden_sugars.html" id="marker_sugars">Hidden sugars</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="why_title">Why this matters</h2>
+      <p class="section-intro" id="why_body">The relevance of NOVA is that it looks at the whole, not the parts. A product can be low in sugar, low in fat, high in protein — and still be a Group 4 formulation. Nutritional labelling was not designed to show that. The ingredient list was never meant to be read as a whole either. BOTIA reads it as a whole.</p>
+    </section>
+
+    <section class="section">
+      <div class="can-cannot">
+        <div class="can-box">
+          <h4 id="can_title">BOTIA CAN</h4>
+          <ul>
+            <li id="can_1">Detect individual ingredients that NOVA describes as markers of ultra-processing.</li>
+            <li id="can_2">Show how many of those markers appear on a single label.</li>
+            <li id="can_3">Explain what each one is doing there and where it comes from.</li>
+          </ul>
+        </div>
+        <div class="cannot-box">
+          <h4 id="cannot_title">BOTIA CANNOT</h4>
+          <ul>
+            <li id="cannot_1">Assign a NOVA group to a product — BOTIA reads ingredients, not whole formulations.</li>
+            <li id="cannot_2">Know the industrial processes used, which the label never declares.</li>
+            <li id="cannot_3">Tell you whether a product is good or bad for you. That is not a classification question.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="closing-claim" id="closing">BOTIA does not classify products. It reads what the label declares and tells you what it means. The conclusion is yours.</p>
+      <p class="source-links">
+        <span id="sources-label">Sources:</span>
+        <a href="https://www.fao.org/publications/card/en/c/CA5644EN/" target="_blank" rel="noopener">NOVA Classification (FAO, 2019)</a> ·
+        <a href="https://www.who.int/health-topics/food-safety" target="_blank" rel="noopener">WHO Food Safety</a>
+      </p>
+      <a href="/pages/evidence.html" class="cta-button" id="back-link">← Back to Evidence Layers</a>
+    </section>
+
+  </main>
+
+  <script src="/botia/assets/js/i18n-loader.js" defer></script>
+  <script src="/botia/assets/js/botia-chat.js"></script>
+</body>
+</html>
