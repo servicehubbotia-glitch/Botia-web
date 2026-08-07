@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page_title">BOTIA</title>
-  <link rel="stylesheet" href="/botia-landing.css">
-  <link rel="stylesheet" href="/botia/assets/botia-pages.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOTIA — Halal | Evidence Layers</title>
+  <meta property="og:title" content="BOTIA — Halal">
+  <meta property="og:description" content="No prohibited or undeclared ingredients were found on this label.">
+  <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <meta property="og:url" content="https://www.botia-safefood.com/ingredients/halal.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BOTIA — Halal">
+  <meta name="twitter:description" content="No prohibited or undeclared ingredients were found on this label.">
+  <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <link rel="canonical" href="https://www.botia-safefood.com/ingredients/halal.html" />
+  <meta name="description" content="No prohibited or undeclared ingredients were found on this label." />
+  <link rel="dns-prefetch" href="https://www.fao.org">
+  <link rel="dns-prefetch" href="https://smiic.org">
+  <link rel="preconnect" href="https://www.fao.org">
+  <link rel="preconnect" href="https://smiic.org">
+  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
+  <link rel="preload" href="/botia-landing.css" as="style">
+  <link rel="stylesheet" href="/botia-landing.css" />
+  <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <style>
-    .botia-icon { width: 64px !important; height: 64px !important; }
-    .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 8px; }
-    .source-links a { color: #e6a06b; text-decoration: none; }
-    .source-links a:hover { text-decoration: underline; }
-
-
-  
-    @media (max-width: 500px) { .hero img { width: 72px; height: 72px; } .hero h1 { font-size: 1.3rem; } .section-title { font-size: 1.1rem; } }
-  
-    .hero + .section { margin-top: 0 !important; }
-  </style>
+  .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
+  .hero { padding: 12px 0 0; text-align: center; }
+  .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
+  .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
+  .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
+  .description { font-size: 0.9rem; color: #8a8a8a; }
+  .section { margin-bottom: 14px; }
+  .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
+  .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; }
+  .can-cannot { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+  @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
+  .can-box, .cannot-box { background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px; }
+  .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
+  .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
+  .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
+  .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
+  .can-box li, .cannot-box li { margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c; padding-left: 20px; position: relative; }
+  .can-box li::before { content: "✅"; position: absolute; left: 0; }
+  .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+  .closing { text-align: center; padding: 20px 0; }
+  .closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 16px; }
+  .cta-button {
+    display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+    padding: 10px 24px; border-radius: 8px; text-decoration: none;
+    border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+  }
+  .cta-button:hover { background: rgba(190,122,72,0.35); }
+  .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
+  .source-links a { color: #e6a06b; text-decoration: none; }
+  .source-links a:hover { text-decoration: underline; }
+  .hero + .section { margin-top: 0 !important; }
+</style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/ingredients/halal.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/ingredients/halal.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/ingredients/halal.html?lang=ar">
@@ -33,24 +72,23 @@
   <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/ingredients/halal.html?lang=zh">
   <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/ingredients/halal.html?lang=id">
   <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/ingredients/halal.html">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "BOTIA — halal",
-  "description": "",
-  "url": "https://www.botia-safefood.com/ingredients/halal.html",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "BOTIA Food Transparency"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "BOTIA — Halal",
+    "description": "No prohibited or undeclared ingredients were found on this label.",
+    "url": "https://www.botia-safefood.com/ingredients/halal.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BOTIA Food Transparency"
+    }
   }
-}
-</script>
-
+  </script>
   <link rel="stylesheet" href="/botia/assets/menu.css">
   <script src="/botia/assets/js/menu.js"></script>
 </head>
-<body class="has-botia-header" data-botia-module="halal">
+<body data-botia-module="halal" class="has-botia-header">
   <button id="menuBtn" aria-label="Menu">☰</button>
 <div class="botia-header-bar">
   <div class="botia-nav-left">
@@ -59,60 +97,69 @@
   <div class="lang-switcher">
     <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
     <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
-      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option>
+      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+      <option value="tr">Türkçe</option><option value="zh">中文</option>
     </select>
   </div>
 </div>
 
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
 
+  <main class="landing" id="main-content">
+    <section class="hero">
+      <img class="hero-logo" fetchpriority="high" src="/botia/assets/Halal.png" srcset="/botia/assets/botia_jar_512.png" type="image/webp" onerror="this.src='/botia/assets/botia_jar_512.png'; this.onerror=null;" style="content-visibility:auto;" alt="BOTIA Halal — ingredient permitted under Islamic Law">
+      <h1 id="title">Halal</h1>
+      <p class="subtitle" id="subtitle">No prohibited or undeclared ingredients were found on this label.</p>
+      <p class="description" id="description">Halal is not something BOTIA finds. It is what remains when nothing forbidden or unexplained appears.</p>
+    </section>
 
-  <div class="botia-container">
+    <section class="section">
+      <h2 class="section-title" id="why_title">Why this matters</h2>
+      <p class="section-intro" id="why_body">Under Islamic Law, food must not contain anything unlawful, and must not have been in contact with non-halal substances during preparation. BOTIA reads what the label declares. When no forbidden ingredient appears and no origin is left undeclared, there is nothing on that label to flag.</p>
+    </section>
 
-    <header class="botia-header">
-      <img id="module_icon" fetchpriority="high" class="botia-icon" src="/botia/assets/Halal.png" srcset="/botia/assets/botia_jar_512.png" type="image/webp" onerror="this.src='/botia/assets/botia_jar_512.png'; this.onerror=null;">
-      <h1 id="title">This ingredient is considered permitted under Islamic Law.</h1>
-      <div id="header_trigger_container"></div>
-    </header>
+    <section class="section">
+      <h2 class="section-title" id="what_title">What BOTIA detected</h2>
+      <p class="section-intro" id="what_body">Nothing. No haram ingredient was declared, and no ingredient was found whose origin the label failed to explain. That absence is the result — not a certification.</p>
+    </section>
 
-    <main>
-      <section class="botia-card">
-        <h2 id="label_detected">What BOTIA Detected</h2>
-        <p id="what_detected">Ingredient classified as halal. See BOTIA Note below for details.</p>
-      </section>
+    <section class="section">
+      <div class="can-cannot">
+        <div class="can-box">
+          <h4 id="can_title">BOTIA CAN</h4>
+          <ul>
+            <li id="can_1">Read every ingredient declared on the label.</li>
+            <li id="can_2">Confirm that no clearly haram ingredient appears among them.</li>
+            <li id="can_3">Confirm that no declared ingredient was left with an undisclosed origin.</li>
+          </ul>
+        </div>
+        <div class="cannot-box">
+          <h4 id="cannot_title">BOTIA CANNOT</h4>
+          <ul>
+            <li id="cannot_1">Certify Halal — it is not a certification body.</li>
+            <li id="cannot_2">Know the slaughter method or the conditions of the facility.</li>
+            <li id="cannot_3">See anything the label does not declare.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <section class="botia-card">
-        <h2 id="label_matters">Why It Matters</h2>
-        <p id="why_it_matters">Halal food must not contain anything unlawful under Islamic Law, and must not have been in contact with non-halal substances during preparation or processing.</p>
-      </section>
+    <section class="closing">
+      <p class="closing-claim" id="closing">Nothing was flagged. That is what the label says — and BOTIA reads nothing more than the label.</p>
+      <p class="source-links">
+        <span id="sources-label">Sources:</span>
+        <a href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B24-1997%252FCXG_024e.pdf" target="_blank" rel="noopener">Codex CAC/GL 24-1997</a> ·
+        <a href="https://smiic.org/en/project/24" target="_blank" rel="noopener">OIC/SMIIC 1:2019</a>
+      </p>
+      <a href="/pages/muslim.html" class="cta-button" id="back-link">← Back to Muslim Choice</a>
+    </section>
 
-      <section class="botia-card">
-        <h2 id="label_cannot">What BOTIA Cannot Conclude</h2>
-        <p id="what_it_cannot_conclude">BOTIA signals ingredient classification only — not halal certification, slaughter method, or facility conditions.</p>
-      </section>
-
-      <section class="botia-card">
-        <h2 id="label_sources">Source & Context</h2>
-        <p class="source-links">
-          <a href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B24-1997%252FCXG_024e.pdf" target="_blank">Codex Alimentarius CXG 24-1997</a> ·
-          <a href="https://smiic.org/en/project/24" target="_blank">OIC/SMIIC 1:2019</a>
-        </p>
-      </section>
-
-      <section class="botia-note">
-        <h3 id="label_note">📖 BOTIA Note</h3>
-        <div id="ingredient_link_container"></div>
-        <p id="botia_disclaimer" class="botia-disclaimer">BOTIA informs based on the ingredients read from the label.</p>
-        <p>Contact: <a id="botia_contact" href="mailto:soporte@botia-safefood.com">soporte@botia-safefood.com</a></p>
-      </section>
-    </main>
-
-    <footer>
-      <p id="label_footer">BOTIA WebView · Transparent Food Intelligence</p>
-    </footer>
-
-  </div>
+  </main>
 
   <script src="/botia/assets/js/i18n-loader.js" defer></script>
-<script src="/botia/assets/js/botia-chat.js"></script>
+  <script src="/botia/assets/js/botia-chat.js"></script>
 </body>
 </html>
