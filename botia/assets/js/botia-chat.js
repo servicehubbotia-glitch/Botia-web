@@ -12,15 +12,17 @@
     let chatTranslations = {};
     let quizQuestions = [];
 
-    let container, chatWindow, toggleBtn, messagesEl, inputEl, sendBtn, closeBtn, quizProgressEl;
+    let container, chatWindow, toggleBtn, messagesEl, inputEl, sendBtn, closeBtn;
     let isOpen = false;
 
     // ============ IDIOMA ============
     function getCurrentLanguage() {
+        const params = new URLSearchParams(window.location.search).get('lang');
+        const supported = ['en','es','fr','de','it','pt','nl','ru','zh','ar','tr','ro','pl','id'];
+        if (params && supported.includes(params)) return params;
         const saved = localStorage.getItem('botia-lang');
-        if (saved) return saved;
+        if (saved && supported.includes(saved)) return saved;
         const lang = (navigator.language || 'en').split('-')[0].toLowerCase();
-        const supported = ['en','es','fr','de','it','pt','nl','ru','ja','zh','ar','hi','ko','tr','ro','pl','id'];
         return supported.includes(lang) ? lang : 'en';
     }
 
@@ -59,19 +61,14 @@
         return a;
     }
 
-    function getQuizProgress() {
-        if (!quizQuestions.length) return '0 / 0';
-        return (Math.min(quizIndex + 1, quizQuestions.length)) + ' / ' + quizQuestions.length;
-    }
-
-    function isQuizComplete() {
-        return !quizQuestions.length || quizIndex >= quizQuestions.length;
-    }
-
     function getCurrentQuestion() {
         if (!quizQuestions.length) return null;
-        if (quizIndex >= quizQuestions.length) return null;
         if (!quizOrder.length) quizOrder = shuffle(quizQuestions.map(function(_, i) { return i; }));
+        // Bucle infinito: al llegar al final, vuelve a barajar y empieza de nuevo
+        if (quizIndex >= quizOrder.length) {
+            quizOrder = shuffle(quizQuestions.map(function(_, i) { return i; }));
+            quizIndex = 0;
+        }
         return quizQuestions[quizOrder[quizIndex]];
     }
 
@@ -111,7 +108,7 @@
             div.textContent = text;
         } else {
             div.style.cssText = base + 'align-self:flex-start;background:rgba(255,255,255,0.06);color:#f2e4dc;border:1px solid rgba(255,255,255,0.08);border-bottom-left-radius:6px;';
-            div.innerHTML = text;
+            div.textContent = text;
         }
         messagesEl.appendChild(div);
         messagesEl.scrollTop = messagesEl.scrollHeight;
@@ -129,38 +126,37 @@
     }
 
     function removeTyping() {
-        const t = document.getElementById('botia-typing');
-        if (t) t.remove();
-    }
-
-    function updateProgress() {
-        if (quizProgressEl) quizProgressEl.textContent = getQuizProgress();
+        const el = document.getElementById('botia-typing');
+        if (el) el.remove();
     }
 
     // ============ QUIZ UI ============
     function showQuizQuestion() {
-        if (!quizQuestions.length) {
-            appendMessage('bot', '❌ No questions loaded. Reload the page.');
-            return;
-        }
+        if (!quizQuestions.length) return;
 
         const q = getCurrentQuestion();
-        if (!q) {
-            appendMessage('bot', t('quizDone') || '🎉 You\'ve seen all questions!');
-            updateProgress();
-            return;
-        }
+        if (!q) return;
 
         const wrapper = document.createElement('div');
         wrapper.setAttribute('data-quiz-msg', 'true');
-        wrapper.style.cssText = 'align-self:flex-start;background:rgba(255,255,255,0.06);color:#f2e4dc;border:1px solid rgba(255,255,255,0.08);border-bottom-left-radius:6px;max-width:88%;padding:0.7rem 1rem;border-radius:20px;font-size:0.93rem;line-height:1.45;word-break:break-word;';
+        wrapper.style.cssText = 'align-self:flex-start;background:rgba(255,255,255,0.06);color:#f2e4dc;border:1px solid rgba(255,255,255,0.08);border-bottom-left-radius:6px;max-width:88%;padding:0.8rem 1rem;border-radius:20px;font-size:0.93rem;line-height:1.5;word-break:break-word;';
 
+        // Pregunta — el gancho
         const textDiv = document.createElement('div');
-        textDiv.textContent = q.text || 'Question not available';
+        textDiv.textContent = q.text || '';
+        textDiv.style.cssText = 'font-weight:600;color:#ffd8bd;margin-bottom:8px;';
         wrapper.appendChild(textDiv);
 
+        // Respuesta corta — el dato
+        if (q.answer) {
+            const answerDiv = document.createElement('div');
+            answerDiv.textContent = q.answer;
+            answerDiv.style.cssText = 'color:#c0a08c;font-size:0.88rem;line-height:1.5;';
+            wrapper.appendChild(answerDiv);
+        }
+
         const btns = document.createElement('div');
-        btns.style.cssText = 'display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;';
+        btns.style.cssText = 'display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;';
 
         const discoverBtn = document.createElement('a');
         discoverBtn.href = q.link || '#';
@@ -180,26 +176,14 @@
 
         wrapper.appendChild(btns);
 
-        const prog = document.createElement('div');
-        prog.style.cssText = 'font-size:0.65rem;color:#8a8a8a;margin-top:6px;text-align:right;';
-        prog.textContent = getQuizProgress();
-        wrapper.appendChild(prog);
-
         messagesEl.appendChild(wrapper);
         messagesEl.scrollTop = messagesEl.scrollHeight;
-        updateProgress();
     }
 
     function advanceQuiz() {
-        // Borrar SOLO el mensaje del quiz actual (el último con data-quiz-msg)
+        // Borrar el mensaje del quiz actual
         const quizMsgs = messagesEl.querySelectorAll('[data-quiz-msg]');
         quizMsgs.forEach(function(el) { el.remove(); });
-
-        if (isQuizComplete()) {
-            appendMessage('bot', t('quizDone') || '🎉 You\'ve seen all questions!');
-            updateProgress();
-            return;
-        }
 
         quizIndex++;
         saveSession();
@@ -209,7 +193,7 @@
     // ============ IA ============
     async function sendToAI(message) {
         if (freeQuestionsUsed >= MAX_FREE_QUESTIONS) {
-            appendMessage('bot', t('limitMessage') || 'You\'ve used your 3 free questions.');
+            appendMessage('bot', t('limitMessage') || "You've used your 3 free questions.");
             return;
         }
 
@@ -238,7 +222,7 @@
             saveSession();
 
             if (freeQuestionsUsed >= MAX_FREE_QUESTIONS) {
-                appendMessage('bot', t('limitMessage') || 'You\'ve used your 3 free questions.');
+                appendMessage('bot', t('limitMessage') || "You've used your 3 free questions.");
             }
         } catch (err) {
             removeTyping();
@@ -253,7 +237,7 @@
     function handleSend() {
         const msg = inputEl.value.trim();
         if (!msg) return;
-        const nextWords = ['siguiente', 'next', 'nächste', 'suivant', 'prossimo', 'próximo', 'weiter', 'next question', 'siguiente pregunta'];
+        const nextWords = ['siguiente', 'next', 'nächste', 'suivant', 'prossimo', 'próximo', 'weiter', 'next question', 'siguiente pregunta', 'volgende', 'следующий', 'sonraki', 'următorul', 'następne', 'selanjutnya', 'التالي', '下一个'];
         if (nextWords.includes(msg.toLowerCase())) {
             advanceQuiz();
             inputEl.value = '';
@@ -281,21 +265,11 @@
         title.innerHTML = '🤖 <span style="color:#e6a06b;">BOTIA</span> · <span id="botia-chat-title">' + t('title') + '</span>';
         header.appendChild(title);
 
-        const headerRight = document.createElement('div');
-        headerRight.style.cssText = 'display:flex;align-items:center;gap:8px;';
-
-        quizProgressEl = document.createElement('span');
-        quizProgressEl.id = 'botia-quiz-progress';
-        quizProgressEl.style.cssText = 'font-size:0.65rem;background:rgba(230,160,107,0.15);color:#c0a08c;padding:0.2rem 0.6rem;border-radius:20px;border:1px solid rgba(190,122,72,0.2);letter-spacing:0.5px;';
-        quizProgressEl.textContent = getQuizProgress();
-        headerRight.appendChild(quizProgressEl);
-
         closeBtn = document.createElement('button');
         closeBtn.style.cssText = 'background:transparent;border:none;color:#c0a08c;font-size:1.4rem;cursor:pointer;padding:0 4px;line-height:1;';
         closeBtn.textContent = '✕';
-        headerRight.appendChild(closeBtn);
+        header.appendChild(closeBtn);
 
-        header.appendChild(headerRight);
         chatWindow.appendChild(header);
 
         // Messages
@@ -340,11 +314,10 @@
         if (window.clearBotiaNotification) window.clearBotiaNotification();
 
         if (messagesEl.children.length === 0) {
-            appendMessage('bot', t('welcome') || '👋 Hi! I\'m the BOTIA assistant.');
+            appendMessage('bot', t('welcome') || "👋 Hi! I'm the BOTIA assistant.");
             setTimeout(showQuizQuestion, 600);
         }
 
-        updateProgress();
         if (freeQuestionsUsed < MAX_FREE_QUESTIONS) inputEl.focus();
     }
 
@@ -413,7 +386,7 @@
             '#botia-messages::-webkit-scrollbar { width:4px; }',
             '#botia-messages::-webkit-scrollbar-thumb { background:rgba(190,122,72,0.3);border-radius:12px; }',
             '@media (max-width:540px) {',
-            '  #botia-chat-window { width:92vw !important; height:420px !important; }',
+            '  #botia-chat-window { width:92vw !important; height:460px !important; }',
             '  #botia-chat-container { right:12px !important; bottom:12px !important; }',
             '  #botia-toggle-btn img { width:120px !important; height:120px !important; }',
             '}'
