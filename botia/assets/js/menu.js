@@ -110,7 +110,7 @@
     navigation.className = "botia-drawer-nav";
     navigation.setAttribute("aria-label", "BOTIA");
 
-    menu.sections.forEach((section, index) => {
+    menu.sections.forEach(section => {
       if (section.url) {
         navigation.appendChild(createLink(
           section,
@@ -124,19 +124,12 @@
       const group = document.createElement("section");
       group.className = "botia-menu-group";
 
-      const sectionButton = document.createElement("button");
-      sectionButton.type = "button";
-      sectionButton.className = "botia-menu-section-title";
-      sectionButton.textContent = translated(labels, section.label_key);
-      sectionButton.setAttribute("aria-expanded", "false");
-
-      const submenuId = `botiaSubmenu${index}`;
-      sectionButton.setAttribute("aria-controls", submenuId);
+      const sectionTitle = document.createElement("div");
+      sectionTitle.className = "botia-menu-section-title";
+      sectionTitle.textContent = translated(labels, section.label_key);
 
       const submenu = document.createElement("div");
-      submenu.id = submenuId;
       submenu.className = "botia-submenu";
-      submenu.hidden = true;
 
       section.items.forEach(item => {
         submenu.appendChild(createLink(
@@ -147,13 +140,7 @@
         ));
       });
 
-      sectionButton.addEventListener("click", () => {
-        const expanded = sectionButton.getAttribute("aria-expanded") === "true";
-        sectionButton.setAttribute("aria-expanded", String(!expanded));
-        submenu.hidden = expanded;
-      });
-
-      group.append(sectionButton, submenu);
+      group.append(sectionTitle, submenu);
       navigation.appendChild(group);
     });
 
