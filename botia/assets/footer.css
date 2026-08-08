@@ -1,0 +1,62 @@
+/* BOTIA shared footer */
+.botia-footer {
+  max-width: 680px;
+  margin: 40px auto 0;
+  padding: 28px 16px 24px;
+  border-top: 1px solid rgba(190, 122, 72, 0.2);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.footer-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #e6a06b;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  color: #8a8a8a;
+  line-height: 1.6;
+  margin: 0 0 2px;
+}
+
+.footer-text a {
+  color: #c0a08c;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  color: #e6a06b;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(190, 122, 72, 0.12);
+  padding-top: 18px;
+}
+
+.footer-bottom p {
+  font-size: 0.78rem;
+  color: #6f6f6f;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer-copy {
+  color: #8a8a8a !important;
+  margin-bottom: 0 !important;
+}
+
+body[dir="rtl"] .botia-footer {
+  text-align: right;
+}
