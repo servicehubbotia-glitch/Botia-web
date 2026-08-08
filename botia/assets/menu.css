@@ -144,8 +144,6 @@ body.botia-menu-open #menuBtn {
 
 .botia-menu-close:hover,
 .botia-menu-close:focus-visible,
-.botia-menu-section-title:hover,
-.botia-menu-section-title:focus-visible,
 .botia-menu-link:hover,
 .botia-menu-link:focus-visible {
   outline: none;
@@ -174,18 +172,14 @@ body.botia-menu-open #menuBtn {
   border-radius: 10px;
   background: transparent;
   color: var(--botia-menu-accent);
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: normal;
   line-height: 1.35;
   text-align: start;
-  text-transform: uppercase;
+  text-transform: none;
   text-decoration: none;
   cursor: pointer;
-}
-
-.botia-menu-section-title[aria-expanded="true"] {
-  background: rgba(190, 122, 72, 0.08);
 }
 
 .botia-submenu {
@@ -195,10 +189,6 @@ body.botia-menu-open #menuBtn {
 body[dir="rtl"] .botia-submenu {
   padding-right: 10px;
   padding-left: 0;
-}
-
-.botia-submenu[hidden] {
-  display: none;
 }
 
 .botia-submenu-link {
