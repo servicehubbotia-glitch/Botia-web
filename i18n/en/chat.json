@@ -3,98 +3,315 @@
     "title": "BOTIA Assistant",
     "placeholder": "Ask or type 'next'…",
     "sendButton": "Send",
-    "welcome": "👋 Hi! I'm the BOTIA assistant. I'll ask you some food facts. You can also ask me anything about ingredients, labels, or additives.",
+    "welcome": "👋 Hi! I'm the BOTIA assistant. I'll show you things labels don't tell you. You can also ask me anything about ingredients, labels or additives.",
     "nextButton": "Next question",
     "discoverButton": "Discover on BOTIA",
     "limitMessage": "You've used your 3 free questions. For unlimited queries, download the BOTIA app.",
     "limitButton": "Go to BOTIA",
     "offTopic": "I can only help with questions about food ingredients and labels.",
     "error": "Sorry, there was a problem.",
-    "connectionError": "Connection error. Please check your network.",
-    "quizDone": "🎉 You've seen all 16 questions! You can now ask me anything about food ingredients and additives.",
-    "noMoreQuestions": "No more questions! Ask me anything."
+    "connectionError": "Connection error. Please check your network."
   },
   "questions": [
     {
       "id": 1,
-      "text": "That appetizing red color in your gummy candies or strawberry yogurt? It's made by crushing thousands of insects. It's called Carmine or Cochineal. Dare to look for E-120 on your label?",
-      "link": "https://www.botia-safefood.com/ingredients/carmine.html"
+      "text": "That appetizing red in your gummy sweets or strawberry yogurt? It's made by crushing thousands of insects.",
+      "answer": "It's called carmine, or cochineal — E120. It comes from a scale insect farmed on cactus. It's authorised, it's been used for centuries, and it's on more labels than you think.",
+      "link": "/ingredients/carmine.html"
     },
     {
       "id": 2,
-      "text": "Do you know why bagged grated cheese never sticks together? Because they add cellulose powder — literally refined wood fiber. Are you eating cheese or sawdust?",
-      "link": "https://www.botia-safefood.com/ingredients/e472.html"
+      "text": "Why do supermarket apples shine like they've been polished?",
+      "answer": "Shellac (E904) — a resin secreted by an Asian beetle. It seals the fruit and makes it glossy. Fresh fruit doesn't carry an ingredient list, so nobody tells you.",
+      "link": "/ingredients/shellac.html"
     },
     {
       "id": 3,
-      "text": "Why do supermarket apples shine so much? They're coated with shellac (E-904), a wax secreted by Asian beetles. Fancy a bite?",
-      "link": "https://www.botia-safefood.com/ingredients/shellac.html"
+      "text": "Do you know why bagged grated cheese never clumps together?",
+      "answer": "Cellulose powder — refined wood fibre — is added as an anti-caking agent. It's edible and authorised. It's also not cheese.",
+      "link": "/ingredients/e472.html"
     },
     {
       "id": 4,
-      "text": "What has more sugar: a can of soda or four tablespoons of condensed milk? They're almost tied! But condensed milk hides the sugar under a 'healthy dairy' label.",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "What has more sugar: a can of soda or four tablespoons of condensed milk?",
+      "answer": "They're almost tied. But one is sold as a treat and the other under a 'dairy' label. The word on the front changes how you read the same amount of sugar.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 5,
-      "text": "Do you think jarred fried tomato is just tomato and oil? In most brands, the second most abundant ingredient is sugar. Are you dressing your pasta or pouring syrup?",
-      "link": "https://www.botia-safefood.com/ingredients/glucose_syrup.html"
+      "text": "You think jarred tomato sauce is just tomato and oil?",
+      "answer": "In most brands sugar sits near the top of the ingredient list — added to cut the acidity. Ingredients are listed by weight, so its position tells you how much is in there.",
+      "link": "/ingredients/glucose_syrup.html"
     },
     {
       "id": 6,
-      "text": "You see a '0% fat' yogurt. Sounds good, right? What do they replace that fat with so it still tastes good? With tons of sugar or modified starch.",
-      "link": "https://www.botia-safefood.com/ingredients/maltodextrin.html"
+      "text": "A '0% fat' yogurt sounds good. But what replaces the fat so it still feels creamy?",
+      "answer": "Usually modified starch or maltodextrin. Fat carries texture and flavour — take it out and something has to do that job instead.",
+      "link": "/ingredients/maltodextrin.html"
     },
     {
       "id": 7,
-      "text": "Is your bread truly whole grain or is it white bread 'painted'? Many brands use white flour and add bran to make it look brown. Do you know how to spot it on the label?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Is your brown bread actually wholemeal, or white bread wearing a costume?",
+      "answer": "Colour proves nothing. Bran or malt can darken white flour. The only way to know is the ingredient list — wholemeal flour has to be first.",
+      "link": "/pages/hidden_sugars.html"
     },
     {
       "id": 8,
-      "text": "Did you know that white chocolate contains absolutely no real cocoa? It's just cocoa butter, milk, and sugar. Should it still be called chocolate?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Did you know white chocolate contains no cocoa solids at all?",
+      "answer": "It's cocoa butter, milk and sugar. The fat from the bean, not the bean. Legally it's chocolate. Botanically it's barely related.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 9,
-      "text": "Why does '100% natural' juice from a carton taste the same all year round? Because they store it for up to a year without oxygen and then add 'flavor packs' to make it smell like orange again.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Why does carton juice taste identical in January and in August?",
+      "answer": "It's stored for months in oxygen-free tanks, which strips the aroma. Flavour packs are added back before bottling. Same fruit, reassembled.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 10,
-      "text": "You see 'with natural flavors' on some lemon cookies. The law allows that flavor to come from a fungus or tree bark, not from a real lemon. Does it taste like fruit or lab?",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "'With natural flavouring' on a lemon biscuit. Does it come from a lemon?",
+      "answer": "Not necessarily. 'Natural' describes the source being natural, not which one. It can come from a fungus, bark or fermentation, and the label never says.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 11,
-      "text": "Do you buy brown sugar because it's more natural? 90% of supermarket brown sugar is white refined sugar with molasses injected to color it brown. Are you paying more for coloring?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Do you buy brown sugar because it feels more natural?",
+      "answer": "Most supermarket brown sugar is refined white sugar with molasses added back for colour. Your body treats it the same. You're paying for the tint.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 12,
-      "text": "How can a cured meat say 'no artificial preservatives' and last a month? They use celery extract, rich in natural nitrates that turn into the same nitrites the industry wants to hide.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "How can cured meat claim 'no artificial preservatives' and still last a month?",
+      "answer": "Celery extract. It's naturally rich in nitrates, which turn into the same nitrites the label is avoiding naming. Natural source, identical chemistry.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 13,
-      "text": "Almost all canned goods have a plastic lining that releases BPA — an endocrine disruptor that mimics your estrogens. Do you know which brands already use BPA-free cans?",
-      "link": "https://www.botia-safefood.com/ingredients/bpa.html"
+      "text": "Almost every tin in your cupboard has a plastic lining inside.",
+      "answer": "Many have used BPA, which mimics oestrogen in the body. Some brands have moved away from it. The tin doesn't tell you which.",
+      "link": "/ingredients/bpa.html"
     },
     {
       "id": 14,
-      "text": "Do you microwave your Tupperware because it says 'microwave safe'? That only means the plastic won't melt, but it still releases phthalates directly into your food.",
-      "link": "https://www.botia-safefood.com/ingredients/phthalates.html"
+      "text": "'Microwave safe' on a plastic container. Safe for what, exactly?",
+      "answer": "It means the plastic won't melt or warp. It says nothing about what migrates into your food when it heats up.",
+      "link": "/ingredients/phthalates.html"
     },
     {
       "id": 15,
-      "text": "Plastic chemicals love fat. If you store cheese or meat wrapped in plastic wrap, the migration of toxins is much greater than if you store vegetables.",
-      "link": "https://www.botia-safefood.com/ingredients/packaging-migrants.html"
+      "text": "Cling film on cheese and cling film on lettuce are not the same thing.",
+      "answer": "Plasticisers dissolve into fat. Wrap something fatty and migration goes up sharply. Wrap something watery and it barely moves.",
+      "link": "/ingredients/packaging-migrants.html"
     },
     {
       "id": 16,
-      "text": "Do you leave your plastic water bottle in the sun in the car? Heat degrades PET and releases antimony and microplastics into the water you later drink.",
-      "link": "https://www.botia-safefood.com/ingredients/endocrine-disruptors.html"
+      "text": "That water bottle you left in the car in August.",
+      "answer": "Heat degrades PET. It releases antimony and microplastics into the water. If it tastes faintly of plastic, that's not your imagination.",
+      "link": "/ingredients/endocrine-disruptors.html"
+    },
+    {
+      "id": 17,
+      "text": "Gelatine has no flavour, no colour and no smell. So where does it come from?",
+      "answer": "Collagen, extracted from animal skin and bone. It's in sweets, yogurts, capsules and mousses. The word gives nothing away.",
+      "link": "/ingredients/gelatine.html"
+    },
+    {
+      "id": 18,
+      "text": "Why doesn't the oil separate in your mayonnaise, ever?",
+      "answer": "Emulsifiers like E471 hold water and fat together against their nature. Left alone they'd separate in minutes.",
+      "link": "/ingredients/e471.html"
+    },
+    {
+      "id": 19,
+      "text": "Xanthan gum is in your sauce, your gluten-free bread and your ice cream.",
+      "answer": "It's produced by fermenting sugar with a bacterium. A tiny amount thickens a whole batch. It's one of the most widely used texture ingredients there is.",
+      "link": "/ingredients/xanthan_gum.html"
+    },
+    {
+      "id": 20,
+      "text": "Some plant milks contain an ingredient extracted from red seaweed.",
+      "answer": "Carrageenan. It stops the drink separating on the shelf. It's authorised, and it's also under active scientific review for its effects on the gut.",
+      "link": "/ingredients/carrageenan.html"
+    },
+    {
+      "id": 21,
+      "text": "Sucralose is around 600 times sweeter than sugar.",
+      "answer": "That's why you only need milligrams. It's made by modifying sugar itself, replacing three parts of the molecule so the body doesn't process it.",
+      "link": "/ingredients/sucralose.html"
+    },
+    {
+      "id": 22,
+      "text": "Why do sugar-free sweets sometimes come with a warning about digestion?",
+      "answer": "Sugar alcohols like maltitol and sorbitol aren't fully absorbed. What isn't absorbed keeps going, and in quantity that has consequences.",
+      "link": "/ingredients/maltitol.html"
+    },
+    {
+      "id": 23,
+      "text": "Stevia on the front of the pack. Steviol glycosides in the ingredients.",
+      "answer": "The sweetener is an extracted compound from the leaf, purified in a lab — not the plant itself. The picture of a green leaf is doing a lot of work.",
+      "link": "/ingredients/steviol_glycosides.html"
+    },
+    {
+      "id": 24,
+      "text": "In 2022 the EU banned a whitening agent that the US still allows.",
+      "answer": "Titanium dioxide, E171. EFSA concluded it could no longer be considered safe. Same substance, same evidence, two different answers.",
+      "link": "/ingredients/e171.html"
+    },
+    {
+      "id": 25,
+      "text": "The same additive can be E471 here, INS 471 internationally and something else entirely in the US.",
+      "answer": "Three naming systems for one substance. Manufacturers know exactly what each code means. That's the gap BOTIA exists to close.",
+      "link": "/pages/the_code_system.html"
+    },
+    {
+      "id": 26,
+      "text": "Lecithin is what stops chocolate turning grainy.",
+      "answer": "It's an emulsifier, and it's usually from soy or sunflower. But the label doesn't always say which — and it can also be from egg.",
+      "link": "/ingredients/lecithins.html"
+    },
+    {
+      "id": 27,
+      "text": "'Trans fat free' doesn't always mean zero.",
+      "answer": "In many places a product can round down to zero below a certain threshold per portion. Eat three portions and the maths changes.",
+      "link": "/ingredients/trans_fats.html"
+    },
+    {
+      "id": 28,
+      "text": "Ingredients are listed by weight, from most to least.",
+      "answer": "So the first three tell you what the product actually is. If sugar is second, the rest of the front label is decoration.",
+      "link": "/pages/evidence.html"
+    },
+    {
+      "id": 29,
+      "text": "Real food doesn't need flavourings.",
+      "answer": "When a label lists added flavour, it means processing stripped the original taste and it had to be put back. That's one of NOVA's markers for ultra-processed food.",
+      "link": "/pages/tasting_like_itself.html"
+    },
+    {
+      "id": 30,
+      "text": "A product can be low in sugar, low in fat, high in protein — and still be ultra-processed.",
+      "answer": "NOVA doesn't classify by nutrients. It classifies by whether the ingredient list contains substances you'd never find in a kitchen.",
+      "link": "/pages/ultra_processed.html"
+    },
+    {
+      "id": 31,
+      "text": "Fruit juice concentrate is used to sweeten products that say 'no added sugar'.",
+      "answer": "WHO counts it as a free sugar. Concentrating fruit removes the water and the fibre — what's left behaves like syrup.",
+      "link": "/ingredients/fruit_juice_concentrate.html"
+    },
+    {
+      "id": 32,
+      "text": "Glycerol appears in sweets, drinks and baked goods — and it can be animal or plant.",
+      "answer": "The label rarely says which. Same name, same code, two completely different origins.",
+      "link": "/ingredients/glycerol.html"
+    },
+    {
+      "id": 33,
+      "text": "Food enzymes are used in bread, cheese and juice — and often don't appear on the label at all.",
+      "answer": "In many cases they're treated as processing aids, not ingredients. Which means they legally don't have to be declared.",
+      "link": "/ingredients/enzymes.html"
+    },
+    {
+      "id": 34,
+      "text": "Large predatory fish concentrate mercury from everything they eat.",
+      "answer": "Methylmercury accumulates up the food chain. That's why advice on swordfish and tuna differs from advice on sardines.",
+      "link": "/ingredients/methylmercury.html"
+    },
+    {
+      "id": 35,
+      "text": "Some compounds don't leave the body — they settle in fat and wait.",
+      "answer": "Lipophilic substances accumulate over years and release during rapid weight loss, pregnancy or menopause, in concentrated form.",
+      "link": "/ingredients/fat-accumulation.html"
+    },
+    {
+      "id": 36,
+      "text": "BHA and BHT keep fats from going rancid in crisps, cereals and chewing gum.",
+      "answer": "Both are under scientific review for possible hormonal activity. Both are still authorised. Both are on labels right now.",
+      "link": "/ingredients/bha.html"
+    },
+    {
+      "id": 37,
+      "text": "Parabens are known as cosmetics ingredients — but they also appear in food.",
+      "answer": "They're used as preservatives, and they're studied for endocrine activity. The cosmetics debate and the food one are the same substance.",
+      "link": "/ingredients/parabens.html"
+    },
+    {
+      "id": 38,
+      "text": "Cadmium gets into food through the soil, not the factory.",
+      "answer": "Plants absorb it from contaminated ground. It's in cocoa, shellfish and some cereals — and no ingredient list will ever mention it.",
+      "link": "/ingredients/cadmium.html"
+    },
+    {
+      "id": 39,
+      "text": "Aspartame is one of the most studied food additives in history.",
+      "answer": "Thousands of papers, decades of review, and the debate is still open. That's not a scandal — that's what an unsettled question looks like.",
+      "link": "/ingredients/aspartame.html"
+    },
+    {
+      "id": 40,
+      "text": "Erythritol passes through the body almost untouched.",
+      "answer": "That's why it has almost no calories. Around 90% is absorbed and excreted unchanged, which is also why it's gentler on digestion than other sugar alcohols.",
+      "link": "/ingredients/erythritol.html"
+    },
+    {
+      "id": 41,
+      "text": "WHO advised in 2023 against using non-sugar sweeteners for weight control.",
+      "answer": "Not because they're unsafe, but because long-term use showed no benefit for weight — and possible associations with other risks.",
+      "link": "/pages/not_sugar.html"
+    },
+    {
+      "id": 42,
+      "text": "Guar gum comes from a bean grown mostly in India.",
+      "answer": "It thickens at cold temperatures, which is why it's in ice cream and cold sauces. A crop failure there changes prices worldwide.",
+      "link": "/ingredients/guar_gum.html"
+    },
+    {
+      "id": 43,
+      "text": "Konjac is a root used to make noodles with almost no calories.",
+      "answer": "It's nearly all fibre and water. It's also been restricted in some jelly products because of how it behaves when swallowed whole.",
+      "link": "/ingredients/konjac.html"
+    },
+    {
+      "id": 44,
+      "text": "Vinegar seems like the simplest ingredient on a label.",
+      "answer": "It's produced by fermenting alcohol. Which is why what looks obvious isn't always obvious to everyone reading the label.",
+      "link": "/ingredients/vinegar.html"
+    },
+    {
+      "id": 45,
+      "text": "Lead in food doesn't come from an ingredient. It comes from everything around it.",
+      "answer": "Soil, water, old pipes, some ceramics. It's a contaminant, not an additive — which is exactly why the label can't warn you.",
+      "link": "/ingredients/lead.html"
+    },
+    {
+      "id": 46,
+      "text": "Some ingredients can be animal, plant or alcohol-based, and the label looks identical either way.",
+      "answer": "E471, lecithins, enzymes, gelatine, glycerol, natural flavourings. In BOTIA's first analysis, 72% of products couldn't be confirmed either way.",
+      "link": "/pages/undeclared_origin.html"
+    },
+    {
+      "id": 47,
+      "text": "Saccharin was discovered in 1879 by a chemist who forgot to wash his hands.",
+      "answer": "He noticed his bread tasted sweet. It's been through bans, warnings and reinstatements since — and it's still on shelves today.",
+      "link": "/ingredients/saccharin.html"
+    },
+    {
+      "id": 48,
+      "text": "Cyclamates are banned in the United States and authorised in the European Union.",
+      "answer": "Same substance, same science, opposite conclusions. Regulation is not a single global truth.",
+      "link": "/ingredients/cyclamates.html"
+    },
+    {
+      "id": 49,
+      "text": "Dioxins aren't added to anything. They're a by-product of combustion.",
+      "answer": "They settle on grass, animals eat it, and they concentrate in fat and dairy. Nothing on a label can tell you they're there.",
+      "link": "/ingredients/dioxins_pcbs.html"
+    },
+    {
+      "id": 50,
+      "text": "Nutritional labelling was never designed to show how processed something is.",
+      "answer": "It counts nutrients. It cannot see reformulation. The ingredient list can — but it was never meant to be read as a whole.",
+      "link": "/pages/ultra_processed.html"
     }
   ]
 }
-
