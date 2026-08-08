@@ -1,99 +1,317 @@
 {
   "ui": {
-    "title": "博蒂亚助手",
-    "placeholder": "Pregunta o escribe 'next'…",
-    "sendButton": "Enviar",
-    "welcome": "👋 你好！我是BOTIA助手。我会问你一些关于食物的小知识。你也可以问我任何关于食材、标签或添加剂的问题。",
+    "title": "BOTIA Assistant",
+    "placeholder": "询问或输入“next”…",
+    "sendButton": "发送",
+    "welcome": "👋 你好！我是BOTIA助手。我会告诉你标签上看不到的信息。你也可以问我任何关于成分、标签或添加剂的问题。",
     "nextButton": "下一个问题",
     "discoverButton": "在BOTIA上发现",
-    "limitMessage": "你已用完3个免费问题。如需无限查询，请下载BOTIA应用。",
-    "limitButton": "Ir a BOTIA",
+    "limitMessage": "您已使用3个免费问题。如需无限查询，请下载BOTIA应用。",
+    "limitButton": "前往BOTIA",
     "offTopic": "我只能帮助解答关于食品配料和标签的问题。",
     "error": "抱歉，出现了问题。",
-    "connectionError": "连接错误。请检查你的网络。",
-    "quizDone": "🎉 你已经看完了全部16个问题！现在你可以问我任何关于食品配料和添加剂的问题。",
-    "noMoreQuestions": "别再问了！问我什么都可以。"
+    "connectionError": "连接错误，请检查您的网络。"
   },
   "questions": [
     {
       "id": 1,
-      "text": "你软糖或草莓酸奶里那诱人的红色？那是用成千上万只昆虫碾碎制成的。它叫胭脂红或胭脂虫红。敢不敢看看你标签上的E-120？",
-      "link": "https://www.botia-safefood.com/ingredients/carmine.html"
+      "text": "你吃的软糖或草莓酸奶里那诱人的红色？那是用成千上万只昆虫压碎制成的。",
+      "answer": "它叫胭脂红，或胭脂虫红——E120。它来自一种在仙人掌上养殖的介壳虫。它是被允许使用的，已经使用了几个世纪，而且它出现在标签上的次数比你想象的要多。",
+      "link": "/ingredients/carmine.html"
     },
     {
       "id": 2,
-      "text": "你知道为什么袋装碎奶酪从来不粘在一起吗？因为里面添加了纤维素粉——说白了就是精制木纤维。你吃的是奶酪还是木屑？",
-      "link": "https://www.botia-safefood.com/ingredients/e472.html"
+      "text": "为什么超市里的苹果亮得像被打磨过一样？",
+      "answer": "虫胶（E904）——一种由亚洲甲虫分泌的树脂。它给水果封上一层保护膜，使其看起来有光泽。新鲜水果没有配料表，所以没人会告诉你。",
+      "link": "/ingredients/shellac.html"
     },
     {
       "id": 3,
-      "text": "为什么超市里的苹果这么亮？它们表面涂了一层虫胶（E-904），一种由亚洲甲虫分泌的蜡。想咬一口吗？",
-      "link": "https://www.botia-safefood.com/ingredients/shellac.html"
+      "text": "你知道为什么袋装碎奶酪从来不会结块吗？",
+      "answer": "纤维素粉末——精制木纤维——作为抗结剂添加。它可食用且获批准。但它也不是奶酪。",
+      "link": "/ingredients/e472.html"
     },
     {
       "id": 4,
-      "text": "一罐汽水和四汤匙炼乳，哪个含糖更多？几乎不相上下！但炼乳把糖藏在了“健康乳制品”的标签之下。",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "一罐汽水和四汤匙炼乳，哪个含糖量更高？",
+      "answer": "它们几乎持平。但一个作为零食出售，另一个则打着“乳制品”标签。包装正面的措辞改变了你对相同糖分含量的理解。",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 5,
-      "text": "你觉得罐装炸番茄只是番茄和油吗？在大多数品牌中，第二多的成分是糖。你是在给意面调味，还是在倒糖浆？",
-      "link": "https://www.botia-safefood.com/ingredients/glucose_syrup.html"
+      "text": "你以为瓶装番茄酱只是番茄和油吗？",
+      "answer": "在大多数品牌中，糖排在配料表前列——用于中和酸味。配料按重量排列，因此其位置能告诉你含量多少。",
+      "link": "/ingredients/glucose_syrup.html"
     },
     {
       "id": 6,
-      "text": "你看到一款“0%脂肪”的酸奶。听起来不错，对吧？他们用什么替代脂肪让它依然好吃呢？用大量的糖或改性淀粉。",
-      "link": "https://www.botia-safefood.com/ingredients/maltodextrin.html"
+      "text": "“0%脂肪”的酸奶听起来不错。但用什么替代脂肪，让它依然有奶油般的口感呢？",
+      "answer": "通常使用改性淀粉或麦芽糊精。脂肪承载着质地和风味——去掉它，就必须有其他成分来承担这一作用。",
+      "link": "/ingredients/maltodextrin.html"
     },
     {
       "id": 7,
-      "text": "你的面包真的是全谷物吗，还是被“染色”的白面包？许多品牌使用白面粉并添加麸皮，让它看起来是棕色的。你知道如何在标签上识别吗？",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "你的全麦面包真的是全麦的，还是白面包穿了件戏服？",
+      "answer": "颜色说明不了什么。麸皮或麦芽可以让白面粉变深。唯一的方法就是看配料表——全麦面粉必须排在第一位。",
+      "link": "/pages/hidden_sugars.html"
     },
     {
       "id": 8,
-      "text": "你知道吗？白巧克力其实完全不含真正的可可粉，它只是可可脂、牛奶和糖的混合物。那它还能叫巧克力吗？",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "你知道吗？白巧克力完全不含可可固形物。",
+      "answer": "可可脂、牛奶和糖。来自豆子的脂肪，而不是豆子本身。法律上它是巧克力。植物学上它几乎毫无关联。",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 9,
-      "text": "为什么一盒“100%天然”的果汁全年味道都一样？因为他们在无氧条件下储存长达一年，然后添加“风味包”让它重新闻起来像橙子。",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "为什么纸盒装的果汁在一月和八月喝起来味道完全一样？",
+      "answer": "储存数月于无氧罐中，香气被剥离。装瓶前重新加入风味包。同一颗果实，重新拼装。",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 10,
-      "text": "你在一些柠檬饼干上看到“含天然香料”。法律允许这种香料来自真菌或树皮，而非真正的柠檬。尝起来像水果还是实验室？",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "含天然食用香料。它来自柠檬吗？",
+      "answer": "不一定。“天然”描述的是来源是天然的，而不是具体哪一种。它可能来自真菌、树皮或发酵，而标签上从来不会说明。",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 11,
-      "text": "你买红糖是因为它更天然吗？超市里90%的红糖是白精制糖注入糖蜜染成棕色的。你是在为染色多付钱吗？",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "你买红糖是因为觉得它更天然吗？",
+      "answer": "大多数超市里的红糖是精制白糖加回糖浆调色而成的。你的身体对它的处理方式是一样的。你只是在为那层颜色买单。",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 12,
-      "text": "腌制肉怎么能说“不含人工防腐剂”却能保存一个月？它们用的是芹菜提取物，富含天然硝酸盐，会转化成行业想掩盖的同样的亚硝酸盐。",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "腌肉如何能宣称“无人工防腐剂”却还能保存一个月？",
+      "answer": "芹菜提取物。它天然富含硝酸盐，会转化为标签上避而不提的同样的亚硝酸盐。天然来源，化学性质相同。",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 13,
-      "text": "几乎所有罐头食品都有一层塑料内衬，会释放BPA——一种模拟你体内雌激素的内分泌干扰物。你知道哪些品牌已经在使用不含BPA的罐头吗？",
-      "link": "https://www.botia-safefood.com/ingredients/bpa.html"
+      "text": "你橱柜里几乎每个罐头内部都有一层塑料内衬。",
+      "answer": "许多人使用过BPA，它会在体内模拟雌激素。一些品牌已不再使用它。罐头上不会标明用的是哪种。",
+      "link": "/ingredients/bpa.html"
     },
     {
       "id": 14,
-      "text": "¿Metes tu Tupperware al microondas porque dice 'apto para microondas'? Eso solo significa que el plástico no se derretirá, pero igual libera ftalatos directamente en tu comida.",
-      "link": "https://www.botia-safefood.com/ingredients/phthalates.html"
+      "text": "塑料容器上写着“可微波加热”。到底对什么安全？",
+      "answer": "这意味着塑料不会熔化或变形。它并没有说明加热时会有哪些物质迁移到你的食物中。",
+      "link": "/ingredients/phthalates.html"
     },
     {
       "id": 15,
-      "text": "塑料化学品喜欢脂肪。如果你用保鲜膜包裹奶酪或肉类存放，毒素的迁移量远大于存放蔬菜时。",
-      "link": "https://www.botia-safefood.com/ingredients/packaging-migrants.html"
+      "text": "奶酪上的保鲜膜和生菜上的保鲜膜不是一回事。",
+      "answer": "增塑剂会溶解于脂肪中。包裹含脂肪的食物时，迁移量会急剧上升；包裹含水分的食物时，迁移量几乎不变。",
+      "link": "/ingredients/packaging-migrants.html"
     },
     {
       "id": 16,
-      "text": "你把塑料水瓶留在车里晒太阳吗？高温会降解PET，并释放出锑和微塑料，进入你之后喝的水中。",
-      "link": "https://www.botia-safefood.com/ingredients/endocrine-disruptors.html"
+      "text": "你八月份留在车里的那个水瓶。",
+      "answer": "高温会使PET降解，向水中释放锑和微塑料。如果水尝起来有淡淡的塑料味，那不是你的错觉。",
+      "link": "/ingredients/endocrine-disruptors.html"
+    },
+    {
+      "id": 17,
+      "text": "明胶没有味道、没有颜色、也没有气味。那么它从何而来呢？",
+      "answer": "胶原蛋白，提取自动物皮肤和骨骼。它存在于糖果、酸奶、胶囊和慕斯中。这个词本身看不出任何端倪。",
+      "link": "/ingredients/gelatine.html"
+    },
+    {
+      "id": 18,
+      "text": "为什么你的蛋黄酱里的油永远不会分离？",
+      "answer": "像E471这样的乳化剂能将水和脂肪强行结合在一起，若不加干预，它们几分钟内就会分层。",
+      "link": "/ingredients/e471.html"
+    },
+    {
+      "id": 19,
+      "text": "黄原胶存在于你的酱料、无麸质面包和冰淇淋中。",
+      "answer": "它是通过用细菌发酵糖制成的。极少量就能使整批变稠。它是使用最广泛的质构配料之一。",
+      "link": "/ingredients/xanthan_gum.html"
+    },
+    {
+      "id": 20,
+      "text": "一些植物奶含有从红海藻中提取的成分。",
+      "answer": "卡拉胶。它能防止饮料在货架上分层。它是获准使用的，但其对肠道的影响也正在接受积极的科学审查。",
+      "link": "/ingredients/carrageenan.html"
+    },
+    {
+      "id": 21,
+      "text": "三氯蔗糖的甜度约为蔗糖的600倍。",
+      "answer": "这就是为什么你只需要毫克。它是由改造糖本身制成的，替换了分子中的三个部分，使身体无法代谢它。",
+      "link": "/ingredients/sucralose.html"
+    },
+    {
+      "id": 22,
+      "text": "为什么无糖糖果有时会附带关于消化的警告？",
+      "answer": "像麦芽糖醇和山梨糖醇这样的糖醇不会被完全吸收。未被吸收的部分会继续往下走，而且量大时会产生后果。",
+      "link": "/ingredients/maltitol.html"
+    },
+    {
+      "id": 23,
+      "text": "包装正面标注甜菊糖。成分表中含甜菊糖苷。",
+      "answer": "甜味剂是从叶片中提取的化合物，在实验室中纯化——并非植物本身。那片绿叶的图片承载了大量暗示。",
+      "link": "/ingredients/steviol_glycosides.html"
+    },
+    {
+      "id": 24,
+      "text": "2022年，欧盟禁止了一种美国仍允许使用的美白剂。",
+      "answer": "二氧化钛，E171。欧洲食品安全局得出结论，它不再被认为是安全的。同一种物质，同样的证据，两个不同的答案。",
+      "link": "/ingredients/e171.html"
+    },
+    {
+      "id": 25,
+      "text": "同一种添加剂在这里可以是E471，国际上叫INS 471，而在美国则完全是另一种叫法。",
+      "answer": "三种命名体系对应同一种物质。制造商清楚每个代码的确切含义。这正是BOTIA致力于弥合的鸿沟。",
+      "link": "/pages/the_code_system.html"
+    },
+    {
+      "id": 26,
+      "text": "卵磷脂能防止巧克力变得粗糙。",
+      "answer": "这是一种乳化剂，通常来自大豆或葵花籽。但标签上并不总是标明来源——它也可能来自鸡蛋。",
+      "link": "/ingredients/lecithins.html"
+    },
+    {
+      "id": 27,
+      "text": "无反式脂肪并不总是意味着零。",
+      "answer": "在许多地方，如果每份低于某个阈值，产品的含量可以四舍五入为零。吃三份，计算方式就变了。",
+      "link": "/ingredients/trans_fats.html"
+    },
+    {
+      "id": 28,
+      "text": "成分按重量从多到少列出。",
+      "answer": "所以前三个告诉你产品到底是什么。如果糖排在第二位，那正面标签的其余部分就只是装饰。",
+      "link": "/pages/evidence.html"
+    },
+    {
+      "id": 29,
+      "text": "真正的食物不需要调味剂。",
+      "answer": "当标签上列出添加的风味时，这意味着加工过程剥夺了原本的味道，必须重新添加回去。这是NOVA体系判断超加工食品的标志之一。",
+      "link": "/pages/tasting_like_itself.html"
+    },
+    {
+      "id": 30,
+      "text": "一种产品可能低糖、低脂、高蛋白——但仍然属于超加工食品。",
+      "answer": "NOVA不按营养成分分类。它按配料表中是否含有你在厨房里永远找不到的物质来分类。",
+      "link": "/pages/ultra_processed.html"
+    },
+    {
+      "id": 31,
+      "text": "浓缩果汁用于为标有“无添加糖”的产品增甜。",
+      "answer": "世卫组织将其视为游离糖。浓缩水果会去除水分和纤维——剩下的物质作用类似于糖浆。",
+      "link": "/ingredients/fruit_juice_concentrate.html"
+    },
+    {
+      "id": 32,
+      "text": "甘油出现在糖果、饮料和烘焙食品中——它可能来自动物或植物。",
+      "answer": "标签上很少说明是哪种。相同的名称，相同的代码，两种完全不同的产地。",
+      "link": "/ingredients/glycerol.html"
+    },
+    {
+      "id": 33,
+      "text": "食品酶用于面包、奶酪和果汁中——而且往往根本不会出现在标签上。",
+      "answer": "在许多情况下，它们被视为加工助剂而非配料，这意味着法律上无需标注。",
+      "link": "/ingredients/enzymes.html"
+    },
+    {
+      "id": 34,
+      "text": "大型掠食性鱼类会从它们所吃的一切食物中富集汞。",
+      "answer": "甲基汞沿食物链累积。这就是为什么关于剑鱼和金枪鱼的建议与关于沙丁鱼的建议不同。",
+      "link": "/ingredients/methylmercury.html"
+    },
+    {
+      "id": 35,
+      "text": "有些化合物不会离开身体——它们沉积在脂肪中等待。",
+      "answer": "亲脂性物质会经年累月地积累，并在快速减重、怀孕或更年期期间以浓缩形式释放。",
+      "link": "/ingredients/fat-accumulation.html"
+    },
+    {
+      "id": 36,
+      "text": "BHA和BHT可防止薯片、谷物和口香糖中的脂肪变质。",
+      "answer": "两者均因可能具有激素活性而正在接受科学审查。两者均仍获授权使用。两者目前均出现在标签上。",
+      "link": "/ingredients/bha.html"
+    },
+    {
+      "id": 37,
+      "text": "对羟基苯甲酸酯被称为化妆品成分——但它们也出现在食品中。",
+      "answer": "它们被用作防腐剂，并且因其内分泌活性而被研究。化妆品争议和食品争议涉及的是同一种物质。",
+      "link": "/ingredients/parabens.html"
+    },
+    {
+      "id": 38,
+      "text": "镉是通过土壤进入食物的，而不是通过工厂。",
+      "answer": "植物从受污染的土壤中吸收它。它存在于可可、贝类和某些谷物中——任何配料表都不会提到它。",
+      "link": "/ingredients/cadmium.html"
+    },
+    {
+      "id": 39,
+      "text": "阿斯巴甜是历史上研究最充分的食品添加剂之一。",
+      "answer": "数千篇论文，数十年的审查，争论仍未尘埃落定。这不是丑闻——这正是悬而未决的问题应有的样子。",
+      "link": "/ingredients/aspartame.html"
+    },
+    {
+      "id": 40,
+      "text": "赤藓糖醇几乎原封不动地通过人体。",
+      "answer": "这就是它几乎不含卡路里的原因。大约90%会被吸收并以原形排出，这也是它比其他糖醇对消化更温和的原因。",
+      "link": "/ingredients/erythritol.html"
+    },
+    {
+      "id": 41,
+      "text": "世卫组织在2023年建议不要使用非糖甜味剂来控制体重。",
+      "answer": "不是因为它们不安全，而是因为长期使用显示对体重没有益处——并且可能与其他风险相关。",
+      "link": "/pages/not_sugar.html"
+    },
+    {
+      "id": 42,
+      "text": "瓜尔胶来自一种主要在印度种植的豆类。",
+      "answer": "它在低温下会变稠，这就是为什么冰淇淋和冷酱里会用到它。那里的作物歉收会改变全球价格。",
+      "link": "/ingredients/guar_gum.html"
+    },
+    {
+      "id": 43,
+      "text": "魔芋是一种用于制作面条的根茎类食材，几乎不含热量。",
+      "answer": "几乎全是纤维和水。由于整颗吞下时的行为特性，它也被限制用于某些果冻产品中。",
+      "link": "/ingredients/konjac.html"
+    },
+    {
+      "id": 44,
+      "text": "醋似乎是标签上最简单的配料。",
+      "answer": "它是通过发酵酒精制成的。这就是为什么看似明显的事情，并不是每个看标签的人都能一眼看明白。",
+      "link": "/ingredients/vinegar.html"
+    },
+    {
+      "id": 45,
+      "text": "食物中的铅并非来自某种原料，而是来自其周围的一切。",
+      "answer": "土壤、水、旧管道、一些陶瓷。这是一种污染物，不是添加剂——这正是标签无法提醒你的原因。",
+      "link": "/ingredients/lead.html"
+    },
+    {
+      "id": 46,
+      "text": "有些成分可能来自动物、植物或酒精，而标签看起来完全一样。",
+      "answer": "E471、卵磷脂、酶、明胶、甘油、天然香料。在BOTIA的首次分析中，72%的产品无法确认其性质。",
+      "link": "/pages/undeclared_origin.html"
+    },
+    {
+      "id": 47,
+      "text": "糖精于1879年由一位忘记洗手的化学家发现。",
+      "answer": "他注意到自己的面包尝起来是甜的。自那以后，它经历了禁令、警告和恢复上架——而至今它仍摆在货架上。",
+      "link": "/ingredients/saccharin.html"
+    },
+    {
+      "id": 48,
+      "text": "甜蜜素在美国被禁止，在欧盟则被允许使用。",
+      "answer": "同一物质，同一科学，相反的结论。监管并非全球唯一的真理。",
+      "link": "/ingredients/cyclamates.html"
+    },
+    {
+      "id": 49,
+      "text": "二噁英不是添加到任何东西里的，它是燃烧的副产物。",
+      "answer": "它们落在草上，动物吃下后，它们富集在脂肪和乳制品中。标签上没有任何信息能告诉你它们的存在。",
+      "link": "/ingredients/dioxins_pcbs.html"
+    },
+    {
+      "id": 50,
+      "text": "营养标签从来就不是为了显示食品的加工程度而设计的。",
+      "answer": "它计算营养素。它看不到配方重组。配料表可以——但它从来就不是用来整体阅读的。",
+      "link": "/pages/ultra_processed.html"
     }
   ]
 }

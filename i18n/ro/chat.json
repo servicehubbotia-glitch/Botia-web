@@ -1,99 +1,317 @@
 {
   "ui": {
-    "title": "Asistent BOTIA",
-    "placeholder": "Întreabă sau scrie „next”…",
+    "title": "BOTIA Assistant",
+    "placeholder": "Întreabă sau tastează „next”…",
     "sendButton": "Trimite",
-    "welcome": "👋 Salut! Sunt asistentul BOTIA. Îți voi pune câteva întrebări despre alimente. De asemenea, mă poți întreba orice despre ingrediente, etichete sau aditivi.",
+    "welcome": "👋 Salut! Sunt asistentul BOTIA. Îți arăt lucruri pe care etichetele nu ți le spun. De asemenea, mă poți întreba orice despre ingrediente, etichete sau aditivi.",
     "nextButton": "Următoarea întrebare",
     "discoverButton": "Descoperă pe BOTIA",
     "limitMessage": "Ai folosit cele 3 întrebări gratuite. Pentru întrebări nelimitate, descarcă aplicația BOTIA.",
     "limitButton": "Du-te la BOTIA",
-    "offTopic": "Pot ajuta doar cu întrebări despre ingrediente alimentare și etichete.",
+    "offTopic": "Pot să ajut doar cu întrebări despre ingrediente alimentare și etichete.",
     "error": "Ne pare rău, a apărut o problemă.",
-    "connectionError": "Eroare de conexiune. Verifică rețeaua ta.",
-    "quizDone": "🎉 Ai văzut toate cele 16 întrebări! Acum îmi poți pune orice întrebare despre ingrediente alimentare și aditivi.",
-    "noMoreQuestions": "Nu mai sunt întrebări! Întreabă-mă orice."
+    "connectionError": "Eroare de conexiune. Verifică rețeaua ta."
   },
   "questions": [
     {
       "id": 1,
-      "text": "Acea culoare roșie apetisantă din bomboanele tale gumate sau iaurtul cu căpșuni? Este făcută prin zdrobirea a mii de insecte. Se numește Carmin sau Coșenilă. Îndrăznești să cauți E-120 pe eticheta ta?",
-      "link": "https://www.botia-safefood.com/ingredients/carmine.html"
+      "text": "Acel roșu apetisant din bomboanele tale gumate sau din iaurtul cu căpșuni? Este obținut prin zdrobirea a mii de insecte.",
+      "answer": "Se numește carmin, sau coșenilă — E120. Provine dintr-o insectă solzătoare crescută pe cactus. Este autorizat, a fost folosit de secole, și apare pe mai multe etichete decât crezi.",
+      "link": "/ingredients/carmine.html"
     },
     {
       "id": 2,
-      "text": "Știi de ce brânza rasă din pungi nu se lipește niciodată? Pentru că adaugă pudră de celuloză — literalmente fibră de lemn rafinată. Mănânci brânză sau rumeguș?",
-      "link": "https://www.botia-safefood.com/ingredients/e472.html"
+      "text": "De ce strălucesc merele din supermarket ca și cum ar fi fost lustruite?",
+      "answer": "Șelacul (E904) — o rășină secretată de o gândacă asiatică. Sigilează fructul și îl face lucios. Fructele proaspete nu au listă de ingrediente, așa că nimeni nu-ți spune.",
+      "link": "/ingredients/shellac.html"
     },
     {
       "id": 3,
-      "text": "De ce strălucesc atât de mult merele din supermarket? Sunt acoperite cu șelac (E-904), o ceară secretată de gândaci asiatici. Poftă de o mușcătură?",
-      "link": "https://www.botia-safefood.com/ingredients/shellac.html"
+      "text": "Știi de ce cașcavalul ras din pungă nu se lipește niciodată?",
+      "answer": "Pudra de celuloză — fibră de lemn rafinată — este adăugată ca agent anti-aglomerare. Este comestibilă și autorizată. Nu este nici brânză.",
+      "link": "/ingredients/e472.html"
     },
     {
       "id": 4,
-      "text": "Ce are mai mult zahăr: o cutie de suc sau patru linguri de lapte condensat? Sunt aproape la egalitate! Dar laptele condensat ascunde zahărul sub eticheta de „produs lactat sănătos”.",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Ce are mai mult zahăr: o cutie de suc carbogazos sau patru linguri de lapte condensat?",
+      "answer": "Sunt aproape la egalitate. Dar unul este vândut ca un răsfăț, iar celălalt sub o etichetă de „produs lactat”. Cuvântul de pe față schimbă modul în care citești aceeași cantitate de zahăr.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 5,
-      "text": "Crezi că bulionul prăjit din borcan este doar roșii și ulei? La majoritatea mărcilor, al doilea ingredient ca abundență este zahărul. Îți condimentezi pastele sau torni sirop?",
-      "link": "https://www.botia-safefood.com/ingredients/glucose_syrup.html"
+      "text": "Crezi că sosul de roșii din borcan este doar roșii și ulei?",
+      "answer": "La majoritatea brandurilor, zahărul se află aproape de începutul listei de ingrediente — adăugat pentru a reduce aciditatea. Ingredientele sunt listate în funcție de greutate, așa că poziția sa îți spune cât de mult se află în produs.",
+      "link": "/ingredients/glucose_syrup.html"
     },
     {
       "id": 6,
-      "text": "Vezi un iaurt cu '0% grăsime'. Sună bine, nu? Cu ce înlocuiesc grăsimea ca să aibă totuși gust bun? Cu o tonă de zahăr sau amidon modificat.",
-      "link": "https://www.botia-safefood.com/ingredients/maltodextrin.html"
+      "text": "Un iaurt cu „0% grăsime” sună bine. Dar ce înlocuiește grăsimea, astfel încât să rămână totuși cremos?",
+      "answer": "De obicei, amidon modificat sau maltodextrină. Grăsimea conferă textură și aromă — scoateți-o și altceva trebuie să preia acest rol.",
+      "link": "/ingredients/maltodextrin.html"
     },
     {
       "id": 7,
-      "text": "Pâinea ta este cu adevărat integrală sau este pâine albă „vopsită”? Multe mărci folosesc făină albă și adaugă tărâțe ca să arate maronie. Știi cum să o recunoști pe etichetă?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Pâinea ta brună este chiar integrală, sau pâine albă deghizată în costum?",
+      "answer": "Culoarea nu dovedește nimic. Tărâțele sau malțul pot întuneca făina albă. Singura modalitate de a ști este lista de ingrediente — făina integrală trebuie să fie prima.",
+      "link": "/pages/hidden_sugars.html"
     },
     {
       "id": 8,
-      "text": "Știai că ciocolata albă nu conține absolut deloc cacao reală? Este doar unt de cacao, lapte și zahăr. Ar mai trebui să fie numită ciocolată?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Știai că ciocolata albă nu conține deloc cacao solidă?",
+      "answer": "Este untu este unt de cacao, lapte și zahăr. Grăsimea din bob, nu bobul. Legal, este ciocolată. Botanic, abia dacă e înrudit.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 9,
-      "text": "De ce sucul „100% natural” din carton are același gust tot anul? Pentru că îl depozitează până la un an fără oxigen, apoi adaugă „pachete de aromă” ca să miroasă din nou a portocală.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "De ce sucul din carton are același gust în ianuarie și în august?",
+      "answer": "Este este stocat luni de zile în tancuri fără oxigen, ceea ce îi îndepărtează aroma. Pachetele de aromă sunt adăugate înapoi înainte de îmbuteliere. Același fruct, reasamblat.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 10,
-      "text": "Vezi „cu arome naturale” pe unele fursecuri cu lămâie. Legea permite ca acea aromă să provină dintr-o ciupercă sau din scoarță de copac, nu dintr-o lămâie reală. Are gust de fruct sau de laborator?",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Cu aromă naturală pe un biscuit cu lămâie. Provine din lămâie?",
+      "answer": "Nu neapărat. „Natural\" descrie sursa ca fiind naturală, nu care anume. Poate proveni dintr-o ciupercă, din scoarță sau din fermentație, iar eticheta nu specifică niciodată.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 11,
-      "text": "Cumperi zahăr brun pentru că este mai natural? 90% din zahărul brun din supermarketuri este zahăr alb rafinat cu melasă injectată pentru a-l colora în brun. Plătești mai mult pentru colorant?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Cumperi zahăr brun pentru că ți se pare mai natural?",
+      "answer": "Majoritatea zahărului brun din supermarket este zahăr alb rafinat cu melasă adăugată înapoi pentru culoare. Corpul tău îl tratează la fel. Plătești pentru nuanță.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 12,
-      "text": "Cum poate o carne afumată să spună „fără conservanți artificiali” și să reziste o lună? Folosesc extract de țelină, bogat în nitrați naturali care se transformă în aceiași nitriți pe care industria vrea să-i ascundă.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Cum poate mezelurile uscate să pretindă că „nu conțin conservanți artificiali” și să reziste totuși o lună?",
+      "answer": "Extract de țelină. Este bogat în mod natural în nitrați, care se transformă în aceiași nitriți pe care eticheta evită să îi numească. Sursă naturală, chimie identică.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 13,
-      "text": "Aproape toate conservele au un strat interior de plastic care eliberează BPA — un disruptor endocrin care imită estrogenii tăi. Știi care mărci folosesc deja conserve fără BPA?",
-      "link": "https://www.botia-safefood.com/ingredients/bpa.html"
+      "text": "Aproape fiecare conservă din cămară ta are un strat de plastic în interior.",
+      "answer": "Mulți au folosit BPA, care imită estrogenul din organism. Unele mărci au renunțat la el. Conservele nu îți spun care.",
+      "link": "/ingredients/bpa.html"
     },
     {
       "id": 14,
-      "text": "Îți pui caserolele Tupperware la microunde pentru că scrie „sigure pentru microunde”? Asta înseamnă doar că plasticul nu se va topi, dar tot eliberează ftalați direct în mâncarea ta.",
-      "link": "https://www.botia-safefood.com/ingredients/phthalates.html"
+      "text": "„Apt pentru cuptorul cu microunde” pe un recipient de plastic. Sigur pentru ce, mai exact?",
+      "answer": "Înseamnă că plasticul nu se va topi sau deforma. Nu spune nimic despre ce migrează în mâncarea ta atunci când se încălzește.",
+      "link": "/ingredients/phthalates.html"
     },
     {
       "id": 15,
-      "text": "Substanțele chimice din plastic iubesc grăsimea. Dacă depozitezi brânză sau carne învelite în folie de plastic, migrarea toxinelor este mult mai mare decât dacă depozitezi legume.",
-      "link": "https://www.botia-safefood.com/ingredients/packaging-migrants.html"
+      "text": "Folie alimentară pe brânză și folie alimentară pe salată nu sunt același lucru.",
+      "answer": "Plastifianții se dizolvă în grăsime. Învelești ceva gras și migrația crește brusc. Învelești ceva apos și abia se mișcă.",
+      "link": "/ingredients/packaging-migrants.html"
     },
     {
       "id": 16,
-      "text": "Lași sticla de apă din plastic în soare, în mașină? Căldura degradează PET-ul și eliberează antimoniu și microplastice în apa pe care o bei mai târziu.",
-      "link": "https://www.botia-safefood.com/ingredients/endocrine-disruptors.html"
+      "text": "Sticla de apă pe care ai lăsat-o în mașină în august.",
+      "answer": "Căldura degradează PET-ul. Eliberează antimoniu și microplastice în apă. Dacă are un gust vag de plastic, nu este imaginația ta.",
+      "link": "/ingredients/endocrine-disruptors.html"
+    },
+    {
+      "id": 17,
+      "text": "Gelatina nu are gust, nu are culoare și nu are miros. Deci de unde provine?",
+      "answer": "Colagenul, extras din piele și oase de animale. Se găsește în dulciuri, iaurturi, capsule și mousse-uri. Cuvântul nu dezvăluie nimic.",
+      "link": "/ingredients/gelatine.html"
+    },
+    {
+      "id": 18,
+      "text": "De ce nu se separă uleiul în maioneza ta, vreodată?",
+      "answer": "Emulsifianții precum E471 țin apa și grăsimea împreună împotriva naturii lor. Lăsate singure, s-ar separa în câteva minute.",
+      "link": "/ingredients/e471.html"
+    },
+    {
+      "id": 19,
+      "text": "Guma xantan este în sosul tău, în pâinea ta fără gluten și în înghețata ta.",
+      "answer": "Este produs prin fermentarea zahărului cu o bacterie. O cantitate minusculă îngroașă un întreg lot. Este unul dintre cele mai utilizate ingrediente de textură care există.",
+      "link": "/ingredients/xanthan_gum.html"
+    },
+    {
+      "id": 20,
+      "text": "Unele lapturi vegetale conțin un ingredient extras din alge roșii marine.",
+      "answer": "Caragenanul. Împiedică separarea băuturii pe raft. Este autorizat și se află, de asemenea, sub revizuire științifică activă pentru efectele sale asupra intestinului.",
+      "link": "/ingredients/carrageenan.html"
+    },
+    {
+      "id": 21,
+      "text": "Sucraloza este de aproximativ 600 de ori mai dulce decât zahărul.",
+      "answer": "De aceea ai nevoie doar de miligrame. Este fabricat prin modificarea zahărului însuși, înlocuind trei părți ale moleculei, astfel încât organismul să nu îl proceseze.",
+      "link": "/ingredients/sucralose.html"
+    },
+    {
+      "id": 22,
+      "text": "De ce bomboanele fără zahăr vin uneori cu un avertisment despre digestie?",
+      "answer": "Alcoolii de zahăr, precum maltitolul și sorbitolul, nu sunt absorbiți complet. Ceea ce nu este absorbit continuă mai departe, iar în cantitate, asta are consecințe.",
+      "link": "/ingredients/maltitol.html"
+    },
+    {
+      "id": 23,
+      "text": "Stevia pe partea din față a ambalajului. Glicozide de steviol în ingrediente.",
+      "answer": "Îndulcitorul este un compus extras din frunză, purificat în laborator — nu planta în sine. Imaginea cu frunza verde face multă muncă.",
+      "link": "/ingredients/steviol_glycosides.html"
+    },
+    {
+      "id": 24,
+      "text": "În 2022, UE a interzis un agent de albire pe care SUA încă îl permit.",
+      "answer": "Dioxid de titan, E171. EFSA a concluzionat că nu mai poate fi considerat sigur. Aceeași substanță, aceleași dovezi, două răspunsuri diferite.",
+      "link": "/ingredients/e171.html"
+    },
+    {
+      "id": 25,
+      "text": "Același aditiv poate fi E471 aici, INS 471 la nivel internațional și cu totul altceva în SUA.",
+      "answer": "Trei sisteme de denumire pentru aceeași substanță. Producătorii știu exact ce înseamnă fiecare cod. Acesta este decalajul pe care BOTIA există pentru a-l elimina.",
+      "link": "/pages/the_code_system.html"
+    },
+    {
+      "id": 26,
+      "text": "Lecitina este ceea ce împiedică ciocolata să devină granulată.",
+      "answer": "Este un emulgator și, de obicei, provine din soia sau floarea-soarelui. Dar eticheta nu spune întotdeauna din care — și poate proveni și din ou.",
+      "link": "/ingredients/lecithins.html"
+    },
+    {
+      "id": 27,
+      "text": "„Fără grăsimi trans” nu înseamnă întotdeauna zero.",
+      "answer": "În multe locuri, un produs poate fi rotunjit în jos la zero sub un anumit prag per porție. Mănâncă trei porții și matematica se schimbă.",
+      "link": "/ingredients/trans_fats.html"
+    },
+    {
+      "id": 28,
+      "text": "Ingredientele sunt listate în funcție de greutate, de la cea mai mare la cea mai mică.",
+      "answer": "Deci primele trei îți spun ce este de fapt produsul. Dacă zahărul este pe locul doi, restul etichetei din față este doar decor.",
+      "link": "/pages/evidence.html"
+    },
+    {
+      "id": 29,
+      "text": "Mâncarea adevărată nu are nevoie de arome.",
+      "answer": "Când o etichetă menționează aromă adăugată, înseamnă că procesarea a eliminat gustul original și acesta a trebuit repus. Acesta este unul dintre indicatorii NOVA pentru alimentele ultra-procesate.",
+      "link": "/pages/tasting_like_itself.html"
+    },
+    {
+      "id": 30,
+      "text": "Un produs poate fi sărac în zahăr, sărac în grăsimi, bogat în proteine — și totuși să fie ultra-procesat.",
+      "answer": "NOVA nu clasifică după nutrienți. Clasifică după dacă lista de ingrediente conține substanțe pe care nu le-ai găsi niciodată într-o bucătărie.",
+      "link": "/pages/ultra_processed.html"
+    },
+    {
+      "id": 31,
+      "text": "Concentratul de suc de fructe este folosit pentru a îndulci produsele care menționează „fără zahăr adăugat”.",
+      "answer": "OMS o consideră zahăr liber. Concentrarea fructelor elimină apa și fibrele — ceea ce rămâne se comportă ca siropul.",
+      "link": "/ingredients/fruit_juice_concentrate.html"
+    },
+    {
+      "id": 32,
+      "text": "Glicerolul apare în dulciuri, băuturi și produse de patiserie — și poate fi de origine animală sau vegetală.",
+      "answer": "Eticheta rareori spune care. Același nume, același cod, două origini complet diferite.",
+      "link": "/ingredients/glycerol.html"
+    },
+    {
+      "id": 33,
+      "text": "Enzimele alimentare sunt folosite în pâine, brânză și suc — și adesea nu apar deloc pe etichetă.",
+      "answer": "În multe cazuri, ele sunt tratate ca adjuvanți tehnologici, nu ca ingrediente. Ceea ce înseamnă că, din punct de vedere legal, nu trebuie să fie declarate.",
+      "link": "/ingredients/enzymes.html"
+    },
+    {
+      "id": 34,
+      "text": "Peștii răpitori de mari dimensiuni concentrează mercurul din tot ceea ce mănâncă.",
+      "answer": "Metilmercurul se acumulează de-a lungul lanțului trofic. De aceea, recomandările pentru pește-spadă și ton diferă de cele pentru sardine.",
+      "link": "/ingredients/methylmercury.html"
+    },
+    {
+      "id": 35,
+      "text": "Unii compuși nu părăsesc organismul — se depun în grăsime și așteaptă.",
+      "answer": "Substanțele lipofile se acumulează de-a lungul anilor și se eliberează în timpul pierderii rapide în greutate, sarcinii sau menopauzei, sub formă concentrată.",
+      "link": "/ingredients/fat-accumulation.html"
+    },
+    {
+      "id": 36,
+      "text": "BHA și BHT previn râncezirea grăsimilor din chipsuri, cereale și gumă de mestecat.",
+      "answer": "Ambele sunt în curs de revizuire științifică pentru posibilă activitate hormonală. Ambele sunt încă autorizate. Ambele sunt prezente pe etichete chiar acum.",
+      "link": "/ingredients/bha.html"
+    },
+    {
+      "id": 37,
+      "text": "Parabenii sunt cunoscuți ca ingrediente cosmetice — dar apar și în alimente.",
+      "answer": "Sunt folosiți ca și conservanți și sunt studiați pentru activitatea endocrină. Dezbaterea despre cosmetice și cea despre alimente privesc aceeași substanță.",
+      "link": "/ingredients/parabens.html"
+    },
+    {
+      "id": 38,
+      "text": "Cadmiul ajunge în alimente prin sol, nu prin fabrică.",
+      "answer": "Plantele îl absorb din solul contaminat. Se găsește în cacao, crustacee și unele cereale — și nicio listă de ingrediente nu îl va menționa vreodată.",
+      "link": "/ingredients/cadmium.html"
+    },
+    {
+      "id": 39,
+      "text": "Aspartamul este unul dintre cei mai studiați aditivi alimentari din istorie.",
+      "answer": "Mii de lucrări, decenii de recenzii, iar dezbaterea rămâne deschisă. Asta nu e un scandal — așa arată o întrebare nerezolvată.",
+      "link": "/ingredients/aspartame.html"
+    },
+    {
+      "id": 40,
+      "text": "Eritritolul trece prin organism aproape neschimbat.",
+      "answer": "De aceea are aproape zero calorii. Aproximativ 90% este absorbit și excretat nemodificat, ceea ce explică și de ce este mai blând cu digestia decât alți alcooli din zahăr.",
+      "link": "/ingredients/erythritol.html"
+    },
+    {
+      "id": 41,
+      "text": "OMS a sfătuit în 2023 să nu se utilizeze îndulcitorii non-zuccherini pentru controlul greutății.",
+      "answer": "Nu pentru că sunt nesigure, ci pentru că utilizarea pe termen lung nu a arătat beneficii pentru greutate — și posibile asocieri cu alte riscuri.",
+      "link": "/pages/not_sugar.html"
+    },
+    {
+      "id": 42,
+      "text": "Guma guar provine dintr-o fasole cultivată în principal în India.",
+      "answer": "Se îngroașă la temperaturi scăzute, de aceea se găsește în înghețată și în sosurile reci. Un eșec al recoltei acolo schimbă prețurile la nivel mondial.",
+      "link": "/ingredients/guar_gum.html"
+    },
+    {
+      "id": 43,
+      "text": "Konjac este o rădăcină folosită pentru a face tăiței cu aproape zero calorii.",
+      "answer": "E aproape în întregime fibre și apă. A fost, de asemenea, restricționat în unele produse cu gelatină din cauza modului în care se comportă atunci când este înghițit întreg.",
+      "link": "/ingredients/konjac.html"
+    },
+    {
+      "id": 44,
+      "text": "Oțetul pare cel mai simplu ingredient de pe o etichetă.",
+      "answer": "Se produce prin fermentarea alcoolului. De aceea, ceea ce pare evident nu este întotdeauna evident pentru toți cei care citesc eticheta.",
+      "link": "/ingredients/vinegar.html"
+    },
+    {
+      "id": 45,
+      "text": "Plumbul din alimente nu provine dintr-un ingredient. Provine din tot ceea ce îl înconjoară.",
+      "answer": "Sol, apă, țevi vechi, niște ceramică. Este un contaminant, nu un aditiv — exact de aceea eticheta nu te poate avertiza.",
+      "link": "/ingredients/lead.html"
+    },
+    {
+      "id": 46,
+      "text": "Unele ingrediente pot fi de origine animală, vegetală sau pe bază de alcool, iar eticheta arată identic în ambele cazuri.",
+      "answer": "E471, lecitine, enzime, gelatină, glicerol, arome naturale. În prima analiză BOTIA, 72% dintre produse nu au putut fi confirmate într-un sens sau altul.",
+      "link": "/pages/undeclared_origin.html"
+    },
+    {
+      "id": 47,
+      "text": "Saccharina a fost descoperită în 1879 de un chimist care a uitat să se spele pe mâini.",
+      "answer": "A observat că pâinea lui avea un gust dulce. De atunci, a trecut prin interdicții, avertismente și repuneri în vigoare — și încă se află pe rafturi și astăzi.",
+      "link": "/ingredients/saccharin.html"
+    },
+    {
+      "id": 48,
+      "text": "Ciclamatul este interzis în Statele Unite și autorizat în Uniunea Europeană.",
+      "answer": "Aceeași substanță, aceeași știință, concluzii opuse. Reglementarea nu este un singur adevăr global.",
+      "link": "/ingredients/cyclamates.html"
+    },
+    {
+      "id": 49,
+      "text": "Dioxinele nu sunt adăugate în nimic. Sunt un produs secundar al combustiei.",
+      "answer": "Se așază pe iarbă, animalele o mănâncă, iar ele se concentrează în grăsimi și lactate. Nimic de pe o etichetă nu îți poate spune că sunt acolo.",
+      "link": "/ingredients/dioxins_pcbs.html"
+    },
+    {
+      "id": 50,
+      "text": "Etichetarea nutrițională nu a fost niciodată concepută să arate cât de procesat este un aliment.",
+      "answer": "Numără nutrienții. Nu poate vedea reformularea. Lista de ingrediente poate — dar nu a fost niciodată menită să fie citită ca un întreg.",
+      "link": "/pages/ultra_processed.html"
     }
   ]
 }

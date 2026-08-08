@@ -1,99 +1,317 @@
 {
   "ui": {
-    "title": "BOTIA-Assistent",
-    "placeholder": "Pregunta o escribe 'next'…",
+    "title": "BOTIA Assistant",
+    "placeholder": "Fragen oder tippe ‚next'…",
     "sendButton": "Senden",
-    "welcome": "👋 Hallo! Ich bin der BOTIA-Assistent. Ich werde dich nach ein paar Fakten über Lebensmittel fragen. Du kannst mich auch alles über Zutaten, Etiketten oder Zusatzstoffe fragen.",
+    "welcome": "👋 Hallo! Ich bin der BOTIA-Assistent. Ich zeige dir Dinge, die dir Etiketten nicht verraten. Du kannst mich auch alles über Zutaten, Etiketten oder Zusatzstoffe fragen.",
     "nextButton": "Nächste Frage",
-    "discoverButton": "Entdecke auf BOTIA",
+    "discoverButton": "Entdecken Sie auf BOTIA",
     "limitMessage": "Du hast deine 3 kostenlosen Fragen aufgebraucht. Für unbegrenzte Anfragen lade die BOTIA-App herunter.",
     "limitButton": "Geh zu BOTIA",
-    "offTopic": "Ich kann nur bei Fragen zu Lebensmittelzutaten und Etiketten helfen.",
+    "offTopic": "Ich kann nur bei Fragen zu Lebensmittelzutaten und Kennzeichnungen helfen.",
     "error": "Entschuldigung, es gab ein Problem.",
-    "connectionError": "Verbindungsfehler. Bitte überprüfen Sie Ihr Netzwerk.",
-    "quizDone": "🎉 Du hast alle 16 Fragen gesehen! Du kannst mich jetzt alles über Lebensmittelzutaten und Zusatzstoffe fragen.",
-    "noMoreQuestions": "Keine Fragen mehr! Frag mich irgendetwas."
+    "connectionError": "Verbindungsfehler. Bitte überprüfen Sie Ihre Netzwerkverbindung."
   },
   "questions": [
     {
       "id": 1,
-      "text": "Dieses appetitliche Rot in deinen Gummibärchen oder Erdbeerjoghurt? Es entsteht durch das Zermahlen von Tausenden von Insekten. Es heißt Karmin oder Cochenille. Traust du dich, auf deinem Etikett nach E-120 zu suchen?",
-      "link": "https://www.botia-safefood.com/ingredients/carmine.html"
+      "text": "Dieses appetitliche Rot in deinen Gummibärchen oder deinem Erdbeerjoghurt? Es wird hergestellt, indem Tausende von Insekten zerkleinert werden.",
+      "answer": "Es heißt Karmin oder Karminsäure – E120. Es stammt von einer Schildlaus, die auf Kakteen gezüchtet wird. Es ist zugelassen, wird seit Jahrhunderten verwendet und steht auf mehr Etiketten, als man denkt.",
+      "link": "/ingredients/carmine.html"
     },
     {
       "id": 2,
-      "text": "Weißt du, warum geriebener Käse aus der Tüte nie zusammenklebt? Weil sie Zellulosepulver hinzufügen – im Grunde raffiniertes Holzfasern. Isst du Käse oder Sägemehl?",
-      "link": "https://www.botia-safefood.com/ingredients/e472.html"
+      "text": "Warum glänzen Supermarktäpfel, als wären sie poliert worden?",
+      "answer": "Schellack (E904) – ein Harz, das von einem asiatischen Käfer abgesondert wird. Es versiegelt die Frucht und macht sie glänzend. Frisches Obst trägt keine Zutatenliste, also sagt es dir niemand.",
+      "link": "/ingredients/shellac.html"
     },
     {
       "id": 3,
-      "text": "Warum glänzen Supermarktäpfel so stark? Sie sind mit Schellack (E-904) überzogen, einem Wachs, das von asiatischen Käfern abgesondert wird. Lust auf einen Bissen?",
-      "link": "https://www.botia-safefood.com/ingredients/shellac.html"
+      "text": "Weißt du, warum geriebener Käse aus der Tüte nie zusammenklumpt?",
+      "answer": "Cellulosepulver – veredelte Holzfaser – wird als Trennmittel zugesetzt. Es ist essbar und zugelassen. Es ist auch kein Käse.",
+      "link": "/ingredients/e472.html"
     },
     {
       "id": 4,
-      "text": "¿Qué tiene más azúcar: una lata de refresco o cuatro cucharadas de leche condensada? ¡Casi empatan! Pero la leche condensada esconde el azúcar bajo la etiqueta de \"lácteo saludable\".",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Was hat mehr Zucker: eine Dose Limonade oder vier Esslöffel Kondensmilch?",
+      "answer": "Sie sind fast gleichauf. Aber das eine wird als Leckerbissen verkauft und das andere unter einem „Milchprodukt“-Label. Das Wort auf der Vorderseite verändert, wie du dieselbe Menge Zucker wahrnimmst.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 5,
-      "text": "Glaubst du, eingelegte gebratene Tomaten aus dem Glas sind nur Tomaten und Öl? Bei den meisten Marken ist die zweithäufigste Zutat Zucker. Dressierst du deine Pasta oder gießt du Sirup darüber?",
-      "link": "https://www.botia-safefood.com/ingredients/glucose_syrup.html"
+      "text": "Du denkst, Tomatensauce aus dem Glas ist nur Tomate und Öl?",
+      "answer": "Bei den meisten Marken steht Zucker ganz oben auf der Zutatenliste – hinzugefügt, um die Säure zu reduzieren. Die Zutaten sind nach Gewicht aufgelistet, daher verrät seine Position, wie viel davon enthalten ist.",
+      "link": "/ingredients/glucose_syrup.html"
     },
     {
       "id": 6,
-      "text": "Du siehst einen Joghurt mit „0 % Fett“. Klingt gut, oder? Womit ersetzen sie das Fett, damit es trotzdem gut schmeckt? Mit jeder Menge Zucker oder modifizierter Stärke.",
-      "link": "https://www.botia-safefood.com/ingredients/maltodextrin.html"
+      "text": "Ein Joghurt mit „0 % Fett“ klingt gut. Aber was ersetzt das Fett, damit er sich trotzdem cremig anfühlt?",
+      "answer": "Üblicherweise modifizierte Stärke oder Maltodextrin. Fett trägt Textur und Geschmack – nimmt man es heraus, muss etwas anderes diese Aufgabe übernehmen.",
+      "link": "/ingredients/maltodextrin.html"
     },
     {
       "id": 7,
-      "text": "Ist dein Brot wirklich Vollkorn oder ist es „gefärbtes“ Weißbrot? Viele Marken verwenden Weißmehl und fügen Kleie hinzu, um es braun aussehen zu lassen. Weißt du, wie man es auf dem Etikett erkennt?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Ist Ihr braunes Brot wirklich Vollkornbrot oder nur Weißbrot im Kostüm?",
+      "answer": "Farbe beweist nichts. Kleie oder Malz können weißes Mehl dunkler machen. Der einzige Weg, es zu wissen, ist die Zutatenliste – Vollkornmehl muss an erster Stelle stehen.",
+      "link": "/pages/hidden_sugars.html"
     },
     {
       "id": 8,
-      "text": "Wusstest du, dass weiße Schokolade überhaupt kein echtes Kakao enthält? Es ist nur Kakaobutter, Milch und Zucker. Sollte sie trotzdem Schokolade genannt werden?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Wusstest du, dass weiße Schokolade überhaupt keine Kakaobestandteile enthält?",
+      "answer": "Es ist Kakaobutter, Milch und Zucker. Das Fett aus der Bohne, nicht die Bohne. Rechtlich gesehen ist es Schokolade. Botanisch gesehen ist es kaum verwandt.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 9,
-      "text": "Warum schmeckt '100% natürlicher' Saft aus dem Karton das ganze Jahr über gleich? Weil sie ihn bis zu einem Jahr ohne Sauerstoff lagern und dann 'Aromapäckchen' hinzufügen, damit er wieder nach Orange riecht.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Warum schmeckt Kartonsaft im Januar und im August identisch?",
+      "answer": "Es wird monatelang in sauerstofffreien Tanks gelagert, was das Aroma entzieht. Vor dem Abfüllen werden Aromapackungen wieder hinzugefügt. Dieselbe Frucht, wieder zusammengesetzt.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 10,
-      "text": "Du siehst „mit natürlichen Aromen“ auf manchen Zitronenkeksen. Das Gesetz erlaubt, dass dieses Aroma von einem Pilz oder einer Baumrinde stammt, nicht von einer echten Zitrone. Schmeckt es nach Frucht oder nach Labor?",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Mit natürlichem Aroma“ auf einem Zitronenkeks. Stammt es von einer Zitrone?",
+      "answer": "Nicht unbedingt. „Natürlich“ beschreibt, dass die Quelle natürlich ist, nicht welche. Es kann von einem Pilz, einer Rinde oder einer Fermentation stammen, und das Etikett sagt es nie.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 11,
-      "text": "Kaufst du braunen Zucker, weil er natürlicher ist? 90 % des braunen Zuckers im Supermarkt ist weißer raffinierter Zucker, dem Melasse zugesetzt wurde, um ihn braun zu färben. Zahlst du mehr für die Färbung?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Kaufst du braunen Zucker, weil er sich natürlicher anfühlt?",
+      "answer": "Der meiste braune Zucker im Supermarkt ist raffinierter weißer Zucker, dem für die Farbe Melasse wieder zugesetzt wurde. Dein Körper behandelt ihn genauso. Du zahlst nur für die Färbung.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 12,
-      "text": "Wie kann ein gepökeltes Fleisch „ohne künstliche Konservierungsstoffe“ sagen und einen Monat halten? Sie verwenden Sellerieextrakt, reich an natürlichen Nitraten, die sich in dieselben Nitrite verwandeln, die die Industrie verbergen will.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Wie kann Wurstwaren „ohne künstliche Konservierungsstoffe“ behaupten und trotzdem einen Monat haltbar sein?",
+      "answer": "Sellerieextrakt. Er ist von Natur aus reich an Nitraten, die sich in genau dieselben Nitrite verwandeln, die das Etikett nicht benennen will. Natürliche Quelle, identische Chemie.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 13,
-      "text": "Fast alle Konserven haben eine Kunststoffbeschichtung, die BPA freisetzt – ein endokriner Disruptor, der deine Östrogene nachahmt. Weißt du, welche Marken bereits BPA-freie Dosen verwenden?",
-      "link": "https://www.botia-safefood.com/ingredients/bpa.html"
+      "text": "Fast jede Dose in deinem Schrank hat eine Kunststoffbeschichtung im Inneren.",
+      "answer": "Viele haben BPA verwendet, das Östrogen im Körper nachahmt. Einige Marken haben sich davon abgewandt. Die Dose verrät dir nicht, welche.",
+      "link": "/ingredients/bpa.html"
     },
     {
       "id": 14,
-      "text": "Mikrowellst du dein Tupperware, weil „mikrowellengeeignet“ draufsteht? Das bedeutet nur, dass der Kunststoff nicht schmilzt, aber er gibt trotzdem Phthalate direkt an dein Essen ab.",
-      "link": "https://www.botia-safefood.com/ingredients/phthalates.html"
+      "text": "„Mikrowellengeeignet“ auf einem Plastikbehälter. Geeignet wofür genau?",
+      "answer": "Das bedeutet, dass der Kunststoff nicht schmilzt oder sich verformt. Es sagt nichts darüber aus, was in dein Essen übergeht, wenn es erhitzt wird.",
+      "link": "/ingredients/phthalates.html"
     },
     {
       "id": 15,
-      "text": "Plastikchemikalien lieben Fett. Wenn du Käse oder Fleisch in Frischhaltefolie aufbewahrst, ist die Migration von Giftstoffen viel größer, als wenn du Gemüse lagerst.",
-      "link": "https://www.botia-safefood.com/ingredients/packaging-migrants.html"
+      "text": "Frischhaltefolie auf Käse und Frischhaltefolie auf Salat sind nicht dasselbe.",
+      "answer": "Weichmacher lösen sich in Fett auf. Wickelt man etwas Fettiges ein, steigt die Migration stark an. Wickelt man etwas Wässriges ein, bewegt sie sich kaum.",
+      "link": "/ingredients/packaging-migrants.html"
     },
     {
       "id": 16,
-      "text": "Lässt du deine Plastikwasserflasche in der Sonne im Auto liegen? Hitze zersetzt PET und setzt Antimon und Mikroplastik in das Wasser frei, das du später trinkst.",
-      "link": "https://www.botia-safefood.com/ingredients/endocrine-disruptors.html"
+      "text": "Die Wasserflasche, die du im August im Auto gelassen hast.",
+      "answer": "Hitze zersetzt PET. Sie gibt Antimon und Mikroplastik an das Wasser ab. Wenn es schwach nach Plastik schmeckt, ist das keine Einbildung.",
+      "link": "/ingredients/endocrine-disruptors.html"
+    },
+    {
+      "id": 17,
+      "text": "Gelatine hat keinen Geschmack, keine Farbe und keinen Geruch. Woher kommt sie also?",
+      "answer": "Kollagen, gewonnen aus Tierhaut und Knochen. Es steckt in Süßigkeiten, Joghurts, Kapseln und Mousses. Das Wort verrät nichts.",
+      "link": "/ingredients/gelatine.html"
+    },
+    {
+      "id": 18,
+      "text": "Warum trennt sich das Öl in deiner Mayonnaise eigentlich nie?",
+      "answer": "Emulgatoren wie E471 halten Wasser und Fett gegen ihre Natur zusammen. Überlassen würde man sie sich selbst, würden sie sich in Minuten trennen.",
+      "link": "/ingredients/e471.html"
+    },
+    {
+      "id": 19,
+      "text": "Xanthangummi ist in deiner Soße, in deinem glutenfreien Brot und in deinem Eiscreme.",
+      "answer": "Es wird hergestellt, indem Zucker mit einem Bakterium fermentiert wird. Eine winzige Menge verdickt eine ganze Charge. Es ist eine der am häufigsten verwendeten Texturzutaten überhaupt.",
+      "link": "/ingredients/xanthan_gum.html"
+    },
+    {
+      "id": 20,
+      "text": "Einige Pflanzendrinks enthalten einen Inhaltsstoff, der aus Rotalgen gewonnen wird.",
+      "answer": "Carrageen. Es verhindert, dass sich das Getränk im Regal trennt. Es ist zugelassen und wird derzeit auch wissenschaftlich aktiv auf seine Wirkung auf den Darm untersucht.",
+      "link": "/ingredients/carrageenan.html"
+    },
+    {
+      "id": 21,
+      "text": "Sucralose ist etwa 600-mal süßer als Zucker.",
+      "answer": "Deshalb brauchst du nur Milligramm. Es wird hergestellt, indem man den Zucker selbst modifiziert und drei Teile des Moleküls ersetzt, sodass der Körper es nicht verarbeitet.",
+      "link": "/ingredients/sucralose.html"
+    },
+    {
+      "id": 22,
+      "text": "Warum haben zuckerfreie Süßigkeiten manchmal einen Warnhinweis zur Verdauung?",
+      "answer": "Zuckeralkohole wie Maltit und Sorbit werden nicht vollständig aufgenommen. Was nicht aufgenommen wird, wandert weiter, und in größeren Mengen hat das Folgen.",
+      "link": "/ingredients/maltitol.html"
+    },
+    {
+      "id": 23,
+      "text": "Stevia auf der Vorderseite der Verpackung. Steviolglycoside in den Zutaten.",
+      "answer": "Der Süßstoff ist eine aus dem Blatt gewonnene Verbindung, die im Labor gereinigt wird – nicht die Pflanze selbst. Das Bild eines grünen Blattes leistet eine Menge Überzeugungsarbeit.",
+      "link": "/ingredients/steviol_glycosides.html"
+    },
+    {
+      "id": 24,
+      "text": "2022 verbot die EU ein Aufhellungsmittel, das die USA weiterhin erlauben.",
+      "answer": "Titandioxid, E171. Die EFSA kam zu dem Schluss, dass es nicht mehr als sicher angesehen werden kann. Gleicher Stoff, gleiche Beweise, zwei verschiedene Antworten.",
+      "link": "/ingredients/e171.html"
+    },
+    {
+      "id": 25,
+      "text": "Derselbe Zusatzstoff kann hier E471, international INS 471 und in den USA etwas völlig anderes sein.",
+      "answer": "Drei Benennungssysteme für einen Stoff. Hersteller wissen genau, was jeder Code bedeutet. Diese Lücke zu schließen, ist die Aufgabe von BOTIA.",
+      "link": "/pages/the_code_system.html"
+    },
+    {
+      "id": 26,
+      "text": "Lecithin ist das, was verhindert, dass Schokolade körnig wird.",
+      "answer": "Es ein Emulgator und stammt meist aus Soja oder Sonnenblume. Aber das Etikett sagt nicht immer, woraus genau – und es kann auch aus Ei stammen.",
+      "link": "/ingredients/lecithins.html"
+    },
+    {
+      "id": 27,
+      "text": "„Transfettfrei“ bedeutet nicht immer null.",
+      "answer": "An vielen Orten kann ein Produkt unterhalb eines bestimmten Schwellenwerts pro Portion auf null abgerundet werden. Iss drei Portionen und die Rechnung ändert sich.",
+      "link": "/ingredients/trans_fats.html"
+    },
+    {
+      "id": 28,
+      "text": "Die Zutaten sind nach Gewicht aufgelistet, von der größten zur kleinsten Menge.",
+      "answer": "Die ersten drei sagen dir also, was das Produkt tatsächlich ist. Wenn Zucker an zweiter Stelle steht, ist der Rest des Frontetiketts nur Deko.",
+      "link": "/pages/evidence.html"
+    },
+    {
+      "id": 29,
+      "text": "Echtes Essen braucht keine Aromen.",
+      "answer": "Wenn auf einem Etikett „Aroma“ aufgeführt ist, bedeutet das, dass die Verarbeitung den ursprünglichen Geschmack entzogen hat und er wieder hinzugefügt werden musste. Das ist eines von NOVAs Kennzeichen für stark verarbeitete Lebensmittel.",
+      "link": "/pages/tasting_like_itself.html"
+    },
+    {
+      "id": 30,
+      "text": "Ein Produkt kann wenig Zucker, wenig Fett und viel Protein enthalten – und trotzdem stark verarbeitet sein.",
+      "answer": "NOVA klassifiziert nicht nach Nährstoffen. Es klassifiziert danach, ob die Zutatenliste Substanzen enthält, die man in einer Küche niemals finden würde.",
+      "link": "/pages/ultra_processed.html"
+    },
+    {
+      "id": 31,
+      "text": "Fruchtsaftkonzentrat wird verwendet, um Produkte zu süßen, die „ohne Zuckerzusatz“ angeben.",
+      "answer": "Die WHO zählt es als freien Zucker. Das Konzentrieren von Obst entfernt das Wasser und die Ballaststoffe – was übrig bleibt, verhält sich wie Sirup.",
+      "link": "/ingredients/fruit_juice_concentrate.html"
+    },
+    {
+      "id": 32,
+      "text": "Glycerin kommt in Süßigkeiten, Getränken und Backwaren vor – und sie kann tierisch oder pflanzlich sein.",
+      "answer": "Das Etikett sagt selten, welches. Gleicher Name, gleicher Code, zwei völlig unterschiedliche Herkünfte.",
+      "link": "/ingredients/glycerol.html"
+    },
+    {
+      "id": 33,
+      "text": "Lebensmittelenzyme werden in Brot, Käse und Saft verwendet – und tauchen oft gar nicht auf dem Etikett auf.",
+      "answer": "In vielen Fällen werden sie als Verarbeitungshilfsstoffe behandelt, nicht als Zutaten. Das bedeutet, dass sie rechtlich nicht deklariert werden müssen.",
+      "link": "/ingredients/enzymes.html"
+    },
+    {
+      "id": 34,
+      "text": "Große Raubfische reichern Quecksilber aus allem an, was sie fressen, an.",
+      "answer": "Methylquecksilber reichert sich in der Nahrungskette an. Deshalb unterscheiden sich die Empfehlungen für Schwertfisch und Thunfisch von denen für Sardinen.",
+      "link": "/ingredients/methylmercury.html"
+    },
+    {
+      "id": 35,
+      "text": "Einige Verbindungen verlassen den Körper nicht — sie setzen sich im Fett ab und warten.",
+      "answer": "Lipophile Substanzen akkumulieren über Jahre und werden während schnellem Gewichtsverlust, Schwangerschaft oder Menopause in konzentrierter Form freigesetzt.",
+      "link": "/ingredients/fat-accumulation.html"
+    },
+    {
+      "id": 36,
+      "text": "BHA und BHT verhindern, dass Fette in Chips, Cerealien und Kaugummi ranzig werden.",
+      "answer": "Beide werden derzeit wissenschaftlich auf mögliche hormonelle Wirkung überprüft. Beide sind weiterhin zugelassen. Beide stehen derzeit auf den Etiketten.",
+      "link": "/ingredients/bha.html"
+    },
+    {
+      "id": 37,
+      "text": "Parabene sind als Kosmetik-Inhaltsstoffe bekannt – aber sie kommen auch in Lebensmitteln vor.",
+      "answer": "Sie werden als Konservierungsmittel verwendet und auf endokrine Aktivität untersucht. Die Kosmetikdebatte und die Lebensmitteldebatte betreffen dieselbe Substanz.",
+      "link": "/ingredients/parabens.html"
+    },
+    {
+      "id": 38,
+      "text": "Cadmium gelangt über den Boden in die Nahrung, nicht über die Fabrik.",
+      "answer": "Pflanzen nehmen es aus kontaminiertem Boden auf. Es steckt in Kakao, Schalentieren und einigen Getreidesorten – und auf keiner Zutatenliste wird es jemals erwähnt.",
+      "link": "/ingredients/cadmium.html"
+    },
+    {
+      "id": 39,
+      "text": "Aspartam ist einer der am besten untersuchten Lebensmittelzusatzstoffe der Geschichte.",
+      "answer": "Tausende von Papieren, Jahrzehnte der Begutachtung, und die Debatte ist immer noch offen. Das ist kein Skandal – so sieht eine ungeklärte Frage aus.",
+      "link": "/ingredients/aspartame.html"
+    },
+    {
+      "id": 40,
+      "text": "Erythritol passiert den Körper nahezu unverändert.",
+      "answer": "Deshalb hat es fast keine Kalorien. Etwa 90 % werden unverändert aufgenommen und wieder ausgeschieden, weshalb es auch verträglicher für die Verdauung ist als andere Zuckeralkohole.",
+      "link": "/ingredients/erythritol.html"
+    },
+    {
+      "id": 41,
+      "text": "Die WHO riet 2023 davon ab, Nichtzucker-Süßstoffe zur Gewichtskontrolle zu verwenden.",
+      "answer": "Nicht weil sie unsicher sind, sondern weil die langfristige Anwendung keinen Nutzen für das Gewicht zeigte – und mögliche Zusammenhänge mit anderen Risiken bestehen.",
+      "link": "/pages/not_sugar.html"
+    },
+    {
+      "id": 42,
+      "text": "Guarkernmehl stammt von einer Bohne, die hauptsächlich in Indien angebaut wird.",
+      "answer": "Bei kalten Temperaturen wird es dick, weshalb es in Eiscreme und kalten Soßen steckt. Eine Ernteausfälle dort verändert die Preise weltweit.",
+      "link": "/ingredients/guar_gum.html"
+    },
+    {
+      "id": 43,
+      "text": "Konjak ist eine Wurzel, die zur Herstellung von Nudeln mit fast keinen Kalorien verwendet wird.",
+      "answer": "Es fast nur Ballaststoffe und Wasser. Es wurde auch in einigen Geleeprodukten eingeschränkt, wegen seines Verhaltens, wenn es im Ganzen geschluckt wird.",
+      "link": "/ingredients/konjac.html"
+    },
+    {
+      "id": 44,
+      "text": "Essig scheint die einfachste Zutat auf einem Etikett zu sein.",
+      "answer": "Es wird durch Fermentierung von Alkohol hergestellt. Deshalb ist das, was offensichtlich aussieht, nicht immer für jeden offensichtlich, der das Etikett liest.",
+      "link": "/ingredients/vinegar.html"
+    },
+    {
+      "id": 45,
+      "text": "Blei in Lebensmitteln kommt nicht von einer Zutat. Es kommt von allem, was sie umgibt.",
+      "answer": "Boden, Wasser, alte Rohre, etwas Keramik. Es ist ein Schadstoff, kein Zusatzstoff – genau deshalb kann das Etikett dich nicht warnen.",
+      "link": "/ingredients/lead.html"
+    },
+    {
+      "id": 46,
+      "text": "Einige Inhaltsstoffe können tierischer, pflanzlicher oder alkoholischer Herkunft sein, und das Etikett sieht in beiden Fällen identisch aus.",
+      "answer": "E471, Lecithine, Enzyme, Gelatine, Glycerin, natürliche Aromen. In BOTIAs erster Analyse konnten 72 % der Produkte weder bestätigt noch widerlegt werden.",
+      "link": "/pages/undeclared_origin.html"
+    },
+    {
+      "id": 47,
+      "text": "Saccharin wurde 1879 von einem Chemiker entdeckt, der vergaß, sich die Hände zu waschen.",
+      "answer": "Er bemerkte, dass sein Brot süß schmeckte. Seitdem hat es Verbote, Warnungen und Wiedereinführungen durchgemacht – und es steht bis heute noch in den Regalen.",
+      "link": "/ingredients/saccharin.html"
+    },
+    {
+      "id": 48,
+      "text": "Cyclamate sind in den Vereinigten Staaten verboten und in der Europäischen Union zugelassen.",
+      "answer": "Dieselbe Substanz, dieselbe Wissenschaft, entgegengesetzte Schlussfolgerungen. Regulierung ist keine einzige globale Wahrheit.",
+      "link": "/ingredients/cyclamates.html"
+    },
+    {
+      "id": 49,
+      "text": "Dioxine werden nichts hinzugefügt. Sie sind ein Nebenprodukt der Verbrennung.",
+      "answer": "Sie setzen sich im Gras ab, Tiere fressen es, und sie reichern sich in Fett und Milchprodukten an. Nichts auf einem Etikett kann dir verraten, dass sie da sind.",
+      "link": "/ingredients/dioxins_pcbs.html"
+    },
+    {
+      "id": 50,
+      "text": "Die Nährwertkennzeichnung war nie dafür gedacht, zu zeigen, wie stark verarbeitet etwas ist.",
+      "answer": "Es zählt Nährstoffe. Es kann keine Neuformulierung erkennen. Die Zutatenliste kann das — aber sie war nie dafür gedacht, als Ganzes gelesen zu werden.",
+      "link": "/pages/ultra_processed.html"
     }
   ]
 }

@@ -1,99 +1,317 @@
 {
   "ui": {
-    "title": "BOTIA-assistent",
-    "placeholder": "Pregunta o escribe 'next'…",
-    "sendButton": "Stuur",
-    "welcome": "👋 Hoi! Ik ben de BOTIA-assistent. Ik ga je een paar voedselfeiten vragen. Je kunt me ook van alles vragen over ingrediënten, etiketten of additieven.",
+    "title": "BOTIA Assistant",
+    "placeholder": "Vraag of typ 'next'…",
+    "sendButton": "Verstuur",
+    "welcome": "👋 Hoi! Ik ben de BOTIA-assistent. Ik laat je dingen zien die etiketten je niet vertellen. Je kunt me ook van alles vragen over ingrediënten, etiketten of additieven.",
     "nextButton": "Volgende vraag",
     "discoverButton": "Ontdek op BOTIA",
     "limitMessage": "Je hebt je 3 gratis vragen gebruikt. Voor onbeperkte vragen, download de BOTIA-app.",
     "limitButton": "Ga naar BOTIA",
-    "offTopic": "Ik kan alleen helpen met vragen over voedingsingrediënten en etiketten.",
+    "offTopic": "Ik kan alleen helpen met vragen over voedselingrediënten en etiketten.",
     "error": "Sorry, er was een probleem.",
-    "connectionError": "Verbindingsfout. Controleer je netwerk.",
-    "quizDone": "🎉 Je hebt alle 16 vragen gezien! Je kunt me nu van alles vragen over voedselingrediënten en additieven.",
-    "noMoreQuestions": "Geen vragen meer! Vraag me maar wat."
+    "connectionError": "Verbindingsfout. Controleer uw netwerk."
   },
   "questions": [
     {
       "id": 1,
-      "text": "Dat smakelijke rode kleurtje in je gummibeertjes of aardbeienyoghurt? Het wordt gemaakt door duizenden insecten fijn te malen. Het heet karmijn of cochenille. Durf je op je etiket naar E-120 te zoeken?",
-      "link": "https://www.botia-safefood.com/ingredients/carmine.html"
+      "text": "Dat smakelijke rood in je gummisnoepjes of aardbeienyoghurt? Het wordt gemaakt door duizenden insecten fijn te malen.",
+      "answer": "Het heet karmijn, of cochenille — E120. Het komt van een schildluis die op cactus wordt gekweekt. Het is goedgekeurd, het wordt al eeuwenlang gebruikt, en het staat op meer etiketten dan je denkt.",
+      "link": "/ingredients/carmine.html"
     },
     {
       "id": 2,
-      "text": "Weet je waarom geraspte kaas in zakjes nooit aan elkaar plakt? Omdat ze er cellulosepoeder aan toevoegen — letterlijk verfijnde houtvezel. Eet je kaas of zaagsel?",
-      "link": "https://www.botia-safefood.com/ingredients/e472.html"
+      "text": "Waarom glanzen supermarktappels alsof ze gepolijst zijn?",
+      "answer": "Schellak (E904) — een hars die wordt afgescheiden door een Aziatische kever. Het verzegelt het fruit en maakt het glanzend. Vers fruit heeft geen ingrediëntenlijst, dus niemand vertelt het je.",
+      "link": "/ingredients/shellac.html"
     },
     {
       "id": 3,
-      "text": "Waarom glanzen supermarktappels zo erg? Ze zijn bedekt met schellak (E-904), een was die wordt afgescheiden door Aziatische kevers. Zin in een hapje?",
-      "link": "https://www.botia-safefood.com/ingredients/shellac.html"
+      "text": "Weet jij waarom geraspte kaas uit een zak nooit aan elkaar klontert?",
+      "answer": "Cellulosepoeder — geraffineerde houtvezel — wordt toegevoegd als antiklontermiddel. Het is eetbaar en goedgekeurd. Het is ook geen kaas.",
+      "link": "/ingredients/e472.html"
     },
     {
       "id": 4,
-      "text": "Wat heeft meer suiker: een blikje frisdrank of vier eetlepels gecondenseerde melk? Ze liggen bijna gelijk! Maar gecondenseerde melk verbergt de suiker onder een 'gezond zuivel'-etiket.",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Wat heeft meer suiker: een blikje frisdrank of vier eetlepels gecondenseerde melk?",
+      "answer": "Ze zijn bijna gelijk. Maar de ene wordt verkocht als traktatie en de andere onder een 'zuivel'-label. Het woord op de voorkant verandert hoe je dezelfde hoeveelheid suiker leest.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 5,
-      "text": "Denk je dat gebakken tomaat uit een pot alleen maar tomaat en olie is? Bij de meeste merken is suiker het tweede meest voorkomende ingrediënt. Kleed je je pasta aan of giet je siroop?",
-      "link": "https://www.botia-safefood.com/ingredients/glucose_syrup.html"
+      "text": "Denk je dat tomatensaus uit een pot alleen maar tomaat en olie is?",
+      "answer": "Bij de meeste merken staat suiker bovenaan de ingrediëntenlijst — toegevoegd om de zuurgraad te verminderen. Ingrediënten worden op gewicht vermeld, dus de positie ervan vertelt je hoeveel erin zit.",
+      "link": "/ingredients/glucose_syrup.html"
     },
     {
       "id": 6,
-      "text": "Je ziet een yoghurt met '0% vet'. Klinkt goed, toch? Waarmee vervangen ze dat vet zodat het toch lekker smaakt? Met heel veel suiker of gemodificeerd zetmeel.",
-      "link": "https://www.botia-safefood.com/ingredients/maltodextrin.html"
+      "text": "Een '0% vet' yoghurt klinkt goed. Maar wat vervangt het vet zodat het toch romig aanvoelt?",
+      "answer": "Meestal gemodificeerd zetmeel of maltodextrine. Vet draagt textuur en smaak — haal het eruit en iets anders moet die rol overnemen.",
+      "link": "/ingredients/maltodextrin.html"
     },
     {
       "id": 7,
-      "text": "Is jouw brood echt volkoren of is het witbrood dat 'geverfd' is? Veel merken gebruiken witte bloem en voegen zemelen toe om het bruin te laten lijken. Weet jij hoe je het op het etiket kunt herkennen?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Is je bruine brood echt volkoren, of is het witbrood in een vermomming?",
+      "answer": "Kleur bewijst niets. Zemelen of mout kunnen witte bloem donkerder maken. De enige manier om het te weten is de ingrediëntenlijst — volkorenmeel moet als eerste vermeld staan.",
+      "link": "/pages/hidden_sugars.html"
     },
     {
       "id": 8,
-      "text": "Wist je dat witte chocolade absoluut geen echte cacao bevat? Het is alleen cacaoboter, melk en suiker. Zou het nog steeds chocolade genoemd moeten worden?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Wist je dat witte chocolade helemaal geen cacaobestanddelen bevat?",
+      "answer": "Het is cacaoboter, melk en suiker. Het vet van de boon, niet de boon. Juridisch gezien is het chocolade. Botanisch gezien is het nauwelijks verwant.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 9,
-      "text": "Waarom smaakt '100% natuurlijk' sap uit een pak het hele jaar door hetzelfde? Omdat ze het tot een jaar bewaren zonder zuurstof en er daarna 'smaakpakketten' aan toevoegen om het weer naar sinaasappel te laten ruiken.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Waarom smaakt sap uit een pak in januari hetzelfde als in augustus?",
+      "answer": "Het wordt maandenlang bewaard in zuurstofloze tanks, waardoor het aroma verloren gaat. Vóór het bottelen worden smaakpakketten weer toegevoegd. Dezelfde vrucht, weer in elkaar gezet.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 10,
-      "text": "Je ziet 'met natuurlijke smaakstoffen' op sommige citroenkoekjes. De wet staat toe dat die smaak afkomstig is van een schimmel of boomschors, niet van een echte citroen. Smaakt het naar fruit of naar een lab?",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Met natuurlijke aroma. Komt het van een citroen?",
+      "answer": "Niet noodzakelijk. 'Natuurlijk' beschrijft dat de bron natuurlijk is, niet welke. Het kan afkomstig zijn van een schimmel, schors of fermentatie, en het etiket zegt nooit welke.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 11,
-      "text": "Koop je bruine suiker omdat het natuurlijker is? 90% van de bruine suiker in de supermarkt is witte geraffineerde suiker met melasse die erin is geïnjecteerd om het bruin te kleuren. Betaal je meer voor kleurstof?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Koop je bruine suiker omdat het natuurlijker aanvoelt?",
+      "answer": "De meeste bruine suiker uit de supermarkt is geraffineerde witte suiker met melasse die er weer aan is toegevoegd voor de kleur. Je lichaam behandelt het op dezelfde manier. Je betaalt voor de kleurtint.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 12,
-      "text": "Hoe kan een gezouten vleeswarenproduct 'zonder kunstmatige conserveermiddelen' zeggen en toch een maand houdbaar zijn? Ze gebruiken selderij-extract, rijk aan natuurlijke nitraten die veranderen in dezelfde nitrieten die de industrie wil verbergen.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Hoe kan vleeswaren beweren 'zonder kunstmatige conserveermiddelen' te zijn en toch een maand houdbaar blijven?",
+      "answer": "Selderij-extract. Het is van nature rijk aan nitraten, die veranderen in dezelfde nitrieten die het etiket vermijdt te benoemen. Natuurlijke bron, identieke chemie.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 13,
-      "text": "Bijna alle conserven hebben een plastic binnenlaag die BPA afgeeft — een hormoonverstoorder die je oestrogenen nabootst. Weet jij welke merken al BPA-vrije blikken gebruiken?",
-      "link": "https://www.botia-safefood.com/ingredients/bpa.html"
+      "text": "Bijna elk blik in je keukenkastje heeft aan de binnenkant een plastic laagje.",
+      "answer": "Velen hebben BPA gebruikt, dat oestrogeen in het lichaam nabootst. Sommige merken zijn ervan afgestapt. Het blik vertelt je niet welke.",
+      "link": "/ingredients/bpa.html"
     },
     {
       "id": 14,
-      "text": "Magnetron je je Tupperware omdat er 'magnetronbestendig' op staat? Dat betekent alleen dat het plastic niet smelt, maar het geeft nog steeds ftalaten rechtstreeks af aan je eten.",
-      "link": "https://www.botia-safefood.com/ingredients/phthalates.html"
+      "text": "'Magnetronbestendig' op een plastic bakje. Veilig voor wat, precies?",
+      "answer": "Het betekent dat het plastic niet smelt of vervormt. Het zegt niets over wat er in je eten terechtkomt wanneer het opwarmt.",
+      "link": "/ingredients/phthalates.html"
     },
     {
       "id": 15,
-      "text": "Plasticchemicals zijn dol op vet. Als je kaas of vlees in plasticfolie bewaart, is de migratie van gifstoffen veel groter dan wanneer je groenten bewaart.",
-      "link": "https://www.botia-safefood.com/ingredients/packaging-migrants.html"
+      "text": "Clingfilm op kaas en clingfilm op sla zijn niet hetzelfde.",
+      "answer": "Weekmakers lossen op in vet. Wikkel iets vettigs en de migratie neemt sterk toe. Wikkel iets waterigs en het beweegt nauwelijks.",
+      "link": "/ingredients/packaging-migrants.html"
     },
     {
       "id": 16,
-      "text": "Laat je je plastic waterfles in de zon in de auto liggen? Hitte breekt PET af en geeft antimoon en microplastics vrij in het water dat je later drinkt.",
-      "link": "https://www.botia-safefood.com/ingredients/endocrine-disruptors.html"
+      "text": "Die waterfles die je in augustus in de auto hebt laten liggen.",
+      "answer": "Warmte degradeert PET. Het geeft antimoon en microplastics af aan het water. Als het vaag naar plastic smaakt, is dat niet je verbeelding.",
+      "link": "/ingredients/endocrine-disruptors.html"
+    },
+    {
+      "id": 17,
+      "text": "Gelatine heeft geen smaak, geen kleur en geen geur. Waar komt het dan vandaan?",
+      "answer": "Collageen, gewonnen uit dierenhuid en -bot. Het zit in snoep, yoghurt, capsules en mousses. Het woord zegt niets prijs.",
+      "link": "/ingredients/gelatine.html"
+    },
+    {
+      "id": 18,
+      "text": "Waarom scheidt de olie in jouw mayonaise nooit?",
+      "answer": "Emulgatoren zoals E471 houden water en vet tegen hun natuur in bij elkaar. Zonder hen zouden ze binnen enkele minuten scheiden.",
+      "link": "/ingredients/e471.html"
+    },
+    {
+      "id": 19,
+      "text": "Xanthaangom zit in je saus, je glutenvrije brood en je ijs.",
+      "answer": "Het wordt geproduceerd door suiker te fermenteren met een bacterie. Een kleine hoeveelheid verdikt een hele partij. Het is een van de meest gebruikte textuuringrediënten die er bestaan.",
+      "link": "/ingredients/xanthan_gum.html"
+    },
+    {
+      "id": 20,
+      "text": "Sommige plantaardige melksoorten bevatten een ingrediënt dat gewonnen wordt uit rood zeewier.",
+      "answer": "Carrageen. Het voorkomt dat de drank zich op de plank scheidt. Het is goedgekeurd en staat ook onder actieve wetenschappelijke beoordeling vanwege de effecten op de darmen.",
+      "link": "/ingredients/carrageenan.html"
+    },
+    {
+      "id": 21,
+      "text": "Sucralose is ongeveer 600 keer zoeter dan suiker.",
+      "answer": "Daarom heb je maar milligrammen nodig. Het wordt gemaakt door suiker zelf te modificeren, waarbij drie delen van het molecuul worden vervangen zodat het lichaam het niet verwerkt.",
+      "link": "/ingredients/sucralose.html"
+    },
+    {
+      "id": 22,
+      "text": "Waarom wordt bij suikervrije snoepjes soms een waarschuwing over de spijsvertering gegeven?",
+      "answer": "Suikeralcoholen zoals maltitol en sorbitol worden niet volledig opgenomen. Wat niet wordt opgenomen, gaat verder, en in grote hoeveelheden heeft dat gevolgen.",
+      "link": "/ingredients/maltitol.html"
+    },
+    {
+      "id": 23,
+      "text": "Stevia op de voorkant van de verpakking. Steviolglycosiden in de ingrediënten.",
+      "answer": "De zoetstof is een geëxtraheerde verbinding uit het blad, gezuiverd in een laboratorium — niet de plant zelf. De afbeelding van een groen blad doet veel werk.",
+      "link": "/ingredients/steviol_glycosides.html"
+    },
+    {
+      "id": 24,
+      "text": "In 2022 verbood de EU een bleekmiddel dat de VS nog steeds toestaat.",
+      "answer": "Titaniumdioxide, E171. De EFSA concludeerde dat het niet langer als veilig kon worden beschouwd. Dezelfde stof, hetzelfde bewijs, twee verschillende antwoorden.",
+      "link": "/ingredients/e171.html"
+    },
+    {
+      "id": 25,
+      "text": "Hetzelfde additief kan hier E471 zijn, internationaal INS 471 en in de VS weer iets heel anders.",
+      "answer": "Drie naamgevingssystemen voor één stof. Fabrikanten weten precies wat elke code betekent. Dat is de kloof die BOTIA wil overbruggen.",
+      "link": "/pages/the_code_system.html"
+    },
+    {
+      "id": 26,
+      "text": "Lecithine is wat voorkomt dat chocolade korrelig wordt.",
+      "answer": "Het is een emulgator en het komt meestal uit soja of zonnebloem. Maar op het etiket staat niet altijd welke — en het kan ook uit ei komen.",
+      "link": "/ingredients/lecithins.html"
+    },
+    {
+      "id": 27,
+      "text": "'Transvetvrij' betekent niet altijd nul.",
+      "answer": "Op veel plaatsen kan een product onder een bepaalde drempelwaarde per portie naar nul worden afgerond. Eet drie porties en de rekensom verandert.",
+      "link": "/ingredients/trans_fats.html"
+    },
+    {
+      "id": 28,
+      "text": "Ingrediënten worden vermeld op gewicht, van meest naar minst.",
+      "answer": "Dus de eerste drie vertellen je wat het product daadwerkelijk is. Als suiker op de tweede plaats staat, is de rest van het voorste etiket versiering.",
+      "link": "/pages/evidence.html"
+    },
+    {
+      "id": 29,
+      "text": "Echt eten heeft geen smaakstoffen nodig.",
+      "answer": "Wanneer een etiket toegevoegde smaak vermeldt, betekent dit dat de verwerking de oorspronkelijke smaak heeft verwijderd en dat deze terug moest worden toegevoegd. Dat is een van NOVA's kenmerken voor ultrabewerkte voeding.",
+      "link": "/pages/tasting_like_itself.html"
+    },
+    {
+      "id": 30,
+      "text": "Een product kan weinig suiker bevatten, weinig vet bevatten, veel eiwit bevatten — en toch ultra-bewerkt zijn.",
+      "answer": "NOVA classificeert niet op voedingsstoffen. Het classificeert op basis van de vraag of de ingrediëntenlijst stoffen bevat die je nooit in een keuken zou vinden.",
+      "link": "/pages/ultra_processed.html"
+    },
+    {
+      "id": 31,
+      "text": "Fruitconcentraat wordt gebruikt om producten te zoeten die 'zonder toegevoegde suiker' vermelden.",
+      "answer": "De WHO rekent het tot vrije suikers. Het concentreren van fruit verwijdert het water en de vezels — wat overblijft gedraagt zich als siroop.",
+      "link": "/ingredients/fruit_juice_concentrate.html"
+    },
+    {
+      "id": 32,
+      "text": "Glycerol komt voor in snoep, drankjes en gebak — en het kan dierlijk of plantaardig zijn.",
+      "answer": "Het etiket zegt zelden welke. Zelfde naam, zelfde code, twee totaal verschillende herkomsten.",
+      "link": "/ingredients/glycerol.html"
+    },
+    {
+      "id": 33,
+      "text": "Voedselenzymen worden gebruikt in brood, kaas en sap — en verschijnen vaak helemaal niet op het etiket.",
+      "answer": "In veel gevallen worden ze behandeld als verwerkingshulpmiddelen, niet als ingrediënten. Dat betekent dat ze wettelijk niet hoeven te worden vermeld.",
+      "link": "/ingredients/enzymes.html"
+    },
+    {
+      "id": 34,
+      "text": "Grote roofvissen concentreren kwik uit alles wat ze eten.",
+      "answer": "Methylkwik hoopt zich op in de voedselketen. Daarom verschilt het advies over zwaardvis en tonijn van het advies over sardines.",
+      "link": "/ingredients/methylmercury.html"
+    },
+    {
+      "id": 35,
+      "text": "Sommige stoffen verlaten het lichaam niet — ze nestelen zich in vet en wachten.",
+      "answer": "Lipofiele stoffen hopen zich in de loop der jaren op en komen tijdens snel gewichtsverlies, zwangerschap of menopauze in geconcentreerde vorm vrij.",
+      "link": "/ingredients/fat-accumulation.html"
+    },
+    {
+      "id": 36,
+      "text": "BHA en BHT voorkomen dat vetten ranzig worden in chips, ontbijtgranen en kauwgom.",
+      "answer": "Beide worden wetenschappelijk beoordeeld op mogelijke hormonale activiteit. Beide zijn nog steeds toegelaten. Beide staan nu op de etiketten.",
+      "link": "/ingredients/bha.html"
+    },
+    {
+      "id": 37,
+      "text": "Parabenen staan bekend als cosmetica-ingrediënten — maar ze komen ook voor in voedsel.",
+      "answer": "Ze worden gebruikt als conserveermiddelen en worden onderzocht op endocriene activiteit. Het cosmetica-debat en het voedingsdebat gaan over dezelfde stof.",
+      "link": "/ingredients/parabens.html"
+    },
+    {
+      "id": 38,
+      "text": "Cadmium komt in voedsel terecht via de bodem, niet via de fabriek.",
+      "answer": "Planten nemen het op uit verontreinigde grond. Het zit in cacao, schaaldieren en sommige granen — en geen enkele ingrediëntenlijst zal het ooit vermelden.",
+      "link": "/ingredients/cadmium.html"
+    },
+    {
+      "id": 39,
+      "text": "Aspartaam is een van de meest onderzochte levensmiddelenadditieven in de geschiedenis.",
+      "answer": "Duizenden papers, tientallen jaren van peer review, en het debat is nog steeds open. Dat is geen schandaal — dat is hoe een onopgeloste vraag eruitziet.",
+      "link": "/ingredients/aspartame.html"
+    },
+    {
+      "id": 40,
+      "text": "Erythritol gaat bijna onverteerd door het lichaam.",
+      "answer": "Daarom bevat het bijna geen calorieën. Ongeveer 90% wordt geabsorbeerd en onveranderd uitgescheiden, wat ook de reden is dat het zachter is voor de spijsvertering dan andere suikeralcoholen.",
+      "link": "/ingredients/erythritol.html"
+    },
+    {
+      "id": 41,
+      "text": "WHO adviseerde in 2023 tegen het gebruik van niet-suikerzoetstoffen voor gewichtsbeheersing.",
+      "answer": "Niet omdat ze onveilig zijn, maar omdat langdurig gebruik geen voordeel voor gewichtsverlies liet zien — en mogelijke verbanden met andere risico's.",
+      "link": "/pages/not_sugar.html"
+    },
+    {
+      "id": 42,
+      "text": "Guargom komt van een boon die voornamelijk in India wordt verbouwd.",
+      "answer": "Het wordt dikker bij koude temperaturen, daarom zit het in ijs en koude sauzen. Een misoogst daar verandert wereldwijd de prijzen.",
+      "link": "/ingredients/guar_gum.html"
+    },
+    {
+      "id": 43,
+      "text": "Konjac is een wortel die wordt gebruikt om noedels te maken met bijna geen calorieën.",
+      "answer": "Het is bijna allemaal vezel en water. Het is ook beperkt in sommige gelei-producten vanwege hoe het zich gedraagt wanneer het in zijn geheel wordt doorgeslikt.",
+      "link": "/ingredients/konjac.html"
+    },
+    {
+      "id": 44,
+      "text": "Azijn lijkt het eenvoudigste ingrediënt op een etiket.",
+      "answer": "Het wordt geproduceerd door alcohol te fermenteren. Daarom is wat voor de hand lijkt te liggen niet altijd voor de hand liggend voor iedereen die het etiket leest.",
+      "link": "/ingredients/vinegar.html"
+    },
+    {
+      "id": 45,
+      "text": "Lood in voedsel komt niet van een ingrediënt. Het komt van alles eromheen.",
+      "answer": "Grond, water, oude leidingen, wat keramiek. Het is een verontreiniging, geen toevoeging — en dat is precies waarom het etiket je niet kan waarschuwen.",
+      "link": "/ingredients/lead.html"
+    },
+    {
+      "id": 46,
+      "text": "Sommige ingrediënten kunnen van dierlijke, plantaardige of alcoholische oorsprong zijn, en het etiket ziet er in beide gevallen identiek uit.",
+      "answer": "E471, lecithines, enzymen, gelatine, glycerol, natuurlijke aroma's. In de eerste analyse van BOTIA kon 72% van de producten niet in beide richtingen worden bevestigd.",
+      "link": "/pages/undeclared_origin.html"
+    },
+    {
+      "id": 47,
+      "text": "Sacharine werd in 1879 ontdekt door een chemicus die vergat zijn handen te wassen.",
+      "answer": "Hij merkte dat zijn brood zoet smaakte. Het heeft sindsdien verboden, waarschuwingen en terugplaatsingen doorstaan — en het ligt vandaag de dag nog steeds in de schappen.",
+      "link": "/ingredients/saccharin.html"
+    },
+    {
+      "id": 48,
+      "text": "Cyclamaten zijn verboden in de Verenigde Staten en toegestaan in de Europese Unie.",
+      "answer": "Zelfde stof, zelfde wetenschap, tegenovergestelde conclusies. Regelgeving is geen universele waarheid.",
+      "link": "/ingredients/cyclamates.html"
+    },
+    {
+      "id": 49,
+      "text": "Dioxines worden aan niets toegevoegd. Ze zijn een bijproduct van verbranding.",
+      "answer": "Ze nestelen zich op gras, dieren eten het, en ze concentreren zich in vet en zuivel. Niets op een etiket kan je vertellen dat ze er zijn.",
+      "link": "/ingredients/dioxins_pcbs.html"
+    },
+    {
+      "id": 50,
+      "text": "Voedingsetikettering is nooit ontworpen om te laten zien hoe bewerkt iets is.",
+      "answer": "Het telt voedingsstoffen. Het kan herformulering niet zien. De ingrediëntenlijst kan dat wel — maar die was nooit bedoeld om als geheel te worden gelezen.",
+      "link": "/pages/ultra_processed.html"
     }
   ]
 }

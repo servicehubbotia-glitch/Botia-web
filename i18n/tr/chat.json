@@ -1,99 +1,317 @@
 {
   "ui": {
-    "title": "Botia Asistanı",
-    "placeholder": "Pregunta o escribe 'next'…",
+    "title": "BOTIA Assistant",
+    "placeholder": "Sor ya da 'next' yaz…",
     "sendButton": "Gönder",
-    "welcome": "👋 Merhaba! Ben BOTIA asistanıyım. Sana bazı yiyecek bilgileri soracağım. Ayrıca bana içerikler, etiketler veya katkı maddeleri hakkında her şeyi sorabilirsin.",
+    "welcome": "👋 Merhaba! Ben BOTIA asistanıyım. Size etiketlerin söylemediği şeyleri gösteririm. İçerikler, etiketler veya katkı maddeleri hakkında bana istediğiniz soruyu da sorabilirsiniz.",
     "nextButton": "Sıradaki soru",
     "discoverButton": "BOTIA'da keşfet",
     "limitMessage": "3 ücretsiz sorunuzu kullandınız. Sınırsız sorgu için BOTIA uygulamasını indirin.",
     "limitButton": "BOTIA'ya git",
-    "offTopic": "Sadece yiyecek içerikleri ve etiketleri hakkındaki sorularda yardımcı olabilirim.",
+    "offTopic": "Sadece yemek malzemeleri ve etiketleri hakkındaki sorularda yardımcı olabilirim.",
     "error": "Üzgünüm, bir sorun oluştu.",
-    "connectionError": "Bağlantı hatası. Lütfen ağınızı kontrol edin.",
-    "quizDone": "🎉 16 sorunun tamamını gördün! Artık bana gıda içerikleri ve katkı maddeleri hakkında her şeyi sorabilirsin.",
-    "noMoreQuestions": "Artık soru yok! Bana her şeyi sor."
+    "connectionError": "Bağlantı hatası. Lütfen ağınızı kontrol edin."
   },
   "questions": [
     {
       "id": 1,
-      "text": "Şekerli şekerlerindeki veya çilekli yoğurdundaki o iştah açıcı kırmızı renk mi? Binlerce böceğin ezilmesiyle elde ediliyor. Buna Karmin veya Koşineal deniyor. Etiketinde E-120'yi aramaya cesaretin var mı?",
-      "link": "https://www.botia-safefood.com/ingredients/carmine.html"
+      "text": "Şekerli şekerlerindeki veya çilekli yoğurdundaki o iştah açıcı kırmızı mı? Binlerce böceği ezerek yapılıyor.",
+      "answer": "Adı karmin ya da koşineal — E120. Kaktüs üzerinde yetiştirilen bir koşnil böceğinden elde edilir. Onaylıdır, yüzyıllardır kullanılmaktadır ve düşündüğünüzden daha fazla etikette yer alır.",
+      "link": "/ingredients/carmine.html"
     },
     {
       "id": 2,
-      "text": "Biliyor musun, poşetlenmiş rendelenmiş peynir neden hiç birbirine yapışmaz? Çünkü içine selüloz tozu ekliyorlar — yani kelimenin tam anlamıyla rafine edilmiş odun lifi. Sen peynir mi yiyorsun, yoksa talaş mı?",
-      "link": "https://www.botia-safefood.com/ingredients/e472.html"
+      "text": "Süpermarket elmaları neden cilalanmış gibi parlıyor?",
+      "answer": "Şellak (E904) — Asya'da yaşayan bir böceğin salgıladığı bir reçinedir. Meyveyi kaplar ve parlak görünmesini sağlar. Taze meyve üzerinde içindekiler listesi bulunmadığından, bunu size kimse söylemez.",
+      "link": "/ingredients/shellac.html"
     },
     {
       "id": 3,
-      "text": "Süpermarket elmaları neden bu kadar parlıyor? Kabuk böceği (E-904) ile kaplanıyorlar; bu, Asya böceklerinin salgıladığı bir balmumu. Bir ısırık almak ister misin?",
-      "link": "https://www.botia-safefood.com/ingredients/shellac.html"
+      "text": "Poşetlenmiş rendelenmiş peynirin neden hiç topaklanmadığını biliyor musun?",
+      "answer": "Selüloz tozu — rafine edilmiş odun lifi — topaklanmayı önleyici olarak eklenir. Yenilebilir ve onaylıdır. Ayrıca peynir değildir.",
+      "link": "/ingredients/e472.html"
     },
     {
       "id": 4,
-      "text": "Bir kutu soda mı yoksa dört yemek kaşığı yoğunlaştırılmış süt mü daha fazla şeker içerir? Neredeyse başa başlar! Ama yoğunlaştırılmış süt, şekeri 'sağlıklı süt ürünü' etiketinin altına gizler.",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Bir kutu gazoz mu yoksa dört yemek kaşığı yoğunlaştırılmış süt mü daha fazla şeker içerir?",
+      "answer": "Neredeyse eşitler. Ama biri ödül olarak satılıyor, diğeri 'süt ürünü' etiketiyle. Öndeki kelime, aynı miktardaki şekeri nasıl okuduğunuzu değiştiriyor.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 5,
-      "text": "Sence kavanozda kızarmış domatesin sadece domates ve yağ olduğunu mu düşünüyorsun? Çoğu markada, en bol ikinci içerik şekerdir. Makarnanı mı sosluyorsun yoksa şurup mu döküyorsun?",
-      "link": "https://www.botia-safefood.com/ingredients/glucose_syrup.html"
+      "text": "Domates sosunun sadece domates ve yağ olduğunu mu sanıyorsun?",
+      "answer": "Çoğu markada şeker, asiditeyi kesmek için eklendiğinden içerik listesinin en üstüne yakın bir yerde bulunur. İçerikler ağırlığa göre listelendiği için, şekerin konumu ne kadar olduğunu söyler.",
+      "link": "/ingredients/glucose_syrup.html"
     },
     {
       "id": 6,
-      "text": "%0 yağlı bir yoğurt görüyorsun. Kulağa hoş geliyor, değil mi? Peki o yağın yerine ne koyuyorlar da hâlâ güzel tadıyor? Bolca şeker ya da modifiye nişasta ile.",
-      "link": "https://www.botia-safefood.com/ingredients/maltodextrin.html"
+      "text": "%0 yağlı yoğurt kulağa hoş geliyor. Ama hâlâ kremamsı hissettiren yağın yerini ne alıyor?",
+      "answer": "Genellikle modifiye nişasta veya maltodekstrin. Yağ, doku ve lezzet taşır — onu çıkarırsanız, bu işi başka bir şeyin yapması gerekir.",
+      "link": "/ingredients/maltodextrin.html"
     },
     {
       "id": 7,
-      "text": "Ekmeğiniz gerçekten tam tahıllı mı, yoksa 'boyanmış' beyaz ekmek mi? Birçok marka beyaz un kullanıp kepek ekleyerek ekmeği kahverengi göstermeye çalışıyor. Etikette bunu nasıl fark edeceğinizi biliyor musunuz?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Kahverengi ekmeğiniz gerçekten tam buğday mı, yoksa kostüm giymiş beyaz ekmek mi?",
+      "answer": "Renk hiçbir şeyi kanıtlamaz. Kepek veya malt, beyaz unu koyulaştırabilir. Bilmenin tek yolu içerik listesidir — tam buğday unu ilk sırada olmalıdır.",
+      "link": "/pages/hidden_sugars.html"
     },
     {
       "id": 8,
-      "text": "Beyaz çikolatanın hiç gerçek kakao içermediğini biliyor muydun? Sadece kakao yağı, süt ve şeker. Hâlâ çikolata olarak adlandırılmalı mı?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Beyaz çikolatanın hiç kakao katı içermediğini biliyor muydun?",
+      "answer": "Kakao yağı, süt ve şekerdir. Çekirdeğin yağı, çekirdeğin kendisi değil. Yasal olarak çikolatadır. Botanik olarak neredeyse alakasızdır.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 9,
-      "text": "Neden kutudaki '%100 doğal' meyve suyu yıl boyunca aynı tadı verir? Çünkü onu oksijensiz bir şekilde bir yıla kadar saklarlar ve sonra tekrar portakal gibi kokması için 'aroma paketleri' eklerler.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Ocak ayında ve Ağustos ayında karton meyve suyunun tadı neden aynıdır?",
+      "answer": "Aylarca oksijensiz tanklarda saklanır, bu da aromayı yok eder. Şişelemeden önce aroma paketleri geri eklenir. Aynı meyve, yeniden birleştirilmiş.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 10,
-      "text": "Bazı limonlu kurabiyelerde 'doğal aromalar' yazdığını görürsün. Yasa, bu aromanın gerçek bir limondan değil, bir mantardan veya ağaç kabuğundan gelmesine izin verir. Tadı meyve gibi mi yoksa laboratuvar gibi mi?",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Doğal aroma içerir' yazan limonlu bisküvi. Bu aroma limondan mı geliyor?",
+      "answer": "Şart değil. 'Doğal' kaynağın doğal olduğunu belirtir, hangisi olduğunu değil. Bir mantardan, ağaç kabuğundan veya fermantasyondan gelebilir ve etiket asla söylemez.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 11,
-      "text": "Esmer kahverengi şekeri daha doğal olduğu için mi alıyorsunuz? Süpermarketlerdeki esmer şekerin %90'ı, içine melas enjekte edilerek kahverengiye boyanmış beyaz rafine şekerdir. Renklendirme için daha mı fazla ödüyorsunuz?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Esmer şekeri daha doğal hissettirdiği için mi satın alıyorsunuz?",
+      "answer": "Çoğu markette satılan esmer şeker, renk vermesi için içine melas eklenmiş rafine beyaz şekerdir. Vücudunuz onu aynı şekilde işler. Sadece rengi için fazla para ödüyorsunuz.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 12,
-      "text": "Kürlenmiş bir et, 'yapay koruyucu yok' deyip bir ay nasıl dayanır? Endüstrinin saklamak istediği nitritlere dönüşen doğal nitratlar açısından zengin kereviz özü kullanıyorlar.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Kürlenmiş et, 'yapay koruyucu içermez' iddiasında bulunup yine de bir ay nasıl dayanabiliyor?",
+      "answer": "Kereviz özü. Doğal olarak nitratlar açısından zengindir ve bunlar, etiketin adını vermekten kaçındığı aynı nitritlere dönüşür. Doğal kaynak, aynı kimya.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 13,
-      "text": "Neredeyse tüm konserve ürünlerinde, östrojenlerinizi taklit eden bir endokrin bozucu olan BPA salan plastik bir kaplama bulunur. Hangi markaların zaten BPA içermeyen kutular kullandığını biliyor musunuz?",
-      "link": "https://www.botia-safefood.com/ingredients/bpa.html"
+      "text": "Mutfağındaki hemen hemen her konservenin içinde plastik bir kaplama vardır.",
+      "answer": "Birçok kişi vücutta östrojeni taklit eden BPA'yı kullanmıştır. Bazı markalar bundan uzaklaşmıştır. Kutu size hangisinin kullanıldığını söylemez.",
+      "link": "/ingredients/bpa.html"
     },
     {
       "id": 14,
-      "text": "Tupperware'ını mikrodalgaya koyuyor musun çünkü üzerinde 'mikrodalgaya uygundur' yazıyor? Bu sadece plastiğin erimeyeceği anlamına gelir, ama yine de yiyeceğine doğrudan ftalat salar.",
-      "link": "https://www.botia-safefood.com/ingredients/phthalates.html"
+      "text": "Plastik bir kapta 'mikrodalgaya uygun'. Tam olarak neye uygun?",
+      "answer": "Plastiğin erimeyeceği veya şekil değiştirmeyeceği anlamına gelir. Isındığında yemeğinize ne geçtiği hakkında hiçbir şey söylemez.",
+      "link": "/ingredients/phthalates.html"
     },
     {
       "id": 15,
-      "text": "Plastik kimyasalları yağı sever. Peynir veya eti streç filme sarılı şekilde saklarsanız, toksin geçişi sebzeleri sakladığınızdan çok daha fazla olur.",
-      "link": "https://www.botia-safefood.com/ingredients/packaging-migrants.html"
+      "text": "Peynirin üzerindeki streç film ile marulun üzerindeki streç film aynı şey değildir.",
+      "answer": "Plastikleştiriciler yağda çözünür. Yağlı bir şeyi sararsanız geçiş oranı keskin şekilde artar. Sulu bir şeyi sararsanız neredeyse hiç hareket etmez.",
+      "link": "/ingredients/packaging-migrants.html"
     },
     {
       "id": 16,
-      "text": "Arabayı güneşte bırakıp plastik su şişenizi içeride mi tutuyorsunuz? Isı, PET'i bozar ve daha sonra içtiğiniz suya antimon ve mikroplastik salar.",
-      "link": "https://www.botia-safefood.com/ingredients/endocrine-disruptors.html"
+      "text": "Ağustos'ta arabada bıraktığın o su şişesi.",
+      "answer": "Isı, PET'i bozar. Suya antimon ve mikroplastik salar. Tadında hafif bir plastik hissi varsa, bu hayal gücünüz değildir.",
+      "link": "/ingredients/endocrine-disruptors.html"
+    },
+    {
+      "id": 17,
+      "text": "Jelatinin tadı yoktur, rengi yoktur ve kokusu yoktur. Peki nereden gelir?",
+      "answer": "Hayvan derisi ve kemiğinden elde edilen kolajen. Şekerlemelerde, yoğurtlarda, kapsüllerde ve muslarda var. Bu kelime hiçbir şey ele vermiyor.",
+      "link": "/ingredients/gelatine.html"
+    },
+    {
+      "id": 18,
+      "text": "Mayonezinizdeki yağ neden asla ayrışmaz?",
+      "answer": "E471 gibi emülgatörler, su ve yağı doğalarına aykırı bir şekilde bir arada tutar. Kendi hâllerine bırakılsalar dakikalar içinde ayrışırlar.",
+      "link": "/ingredients/e471.html"
+    },
+    {
+      "id": 19,
+      "text": "Sosunuzda, glutensiz ekmeğinizde ve dondurmanızda ksantan zamkı var.",
+      "answer": "Şekerin bir bakteri ile fermente edilmesiyle üretilir. Çok küçük bir miktar, tüm bir partiyi koyulaştırır. Mevcut en yaygın kullanılan doku bileşenlerinden biridir.",
+      "link": "/ingredients/xanthan_gum.html"
+    },
+    {
+      "id": 20,
+      "text": "Bazı bitki sütleri, kırmızı deniz yosunundan elde edilen bir bileşen içerir.",
+      "answer": "Karragenan. İçeceğin rafta ayrışmasını önler. Onaylıdır ve bağırsak üzerindeki etkileri açısından aktif bilimsel inceleme altındadır.",
+      "link": "/ingredients/carrageenan.html"
+    },
+    {
+      "id": 21,
+      "text": "Sukraloz, şekerden yaklaşık 600 kat daha tatlıdır.",
+      "answer": "Bu yüzden sadece miligramlara ihtiyacınız var. Şekerin kendisi değiştirilerek, molekülün üç parçası değiştirilip vücudun onu işlememesi sağlanarak üretilir.",
+      "link": "/ingredients/sucralose.html"
+    },
+    {
+      "id": 22,
+      "text": "Şekersiz tatlılar neden bazen sindirimle ilgili bir uyarıyla birlikte gelir?",
+      "answer": "Maltitol ve sorbitol gibi şeker alkolleri tam olarak emilmez. Emilmeyen kısım yoluna devam eder ve miktar fazlaysa bunun sonuçları olur.",
+      "link": "/ingredients/maltitol.html"
+    },
+    {
+      "id": 23,
+      "text": "Ambalajın önünde stevia. İçeriklerde steviol glikozitler.",
+      "answer": "Tatlandırıcı, yapraktan elde edilen ve laboratuvarda saflaştırılan bir bileşiktir — bitkinin kendisi değil. Yeşil yaprak görseli epey iş yapıyor.",
+      "link": "/ingredients/steviol_glycosides.html"
+    },
+    {
+      "id": 24,
+      "text": "2022'de AB, ABD'nin hâlâ izin verdiği bir beyazlatıcı maddeyi yasakladı.",
+      "answer": "Titanyum dioksit, E171. EFSA, artık güvenli kabul edilemeyeceği sonucuna vardı. Aynı madde, aynı kanıt, iki farklı cevap.",
+      "link": "/ingredients/e171.html"
+    },
+    {
+      "id": 25,
+      "text": "Aynı katkı maddesi burada E471, uluslararası alanda INS 471 ve ABD'de tamamen başka bir şey olabilir.",
+      "answer": "Bir madde için üç adlandırma sistemi. Üreticiler her kodun ne anlama geldiğini tam olarak bilir. BOTIA'nın kapatmak için var olduğu boşluk işte bu.",
+      "link": "/pages/the_code_system.html"
+    },
+    {
+      "id": 26,
+      "text": "Lesitin, çikolatanın pütürlü olmasını engelleyen şeydir.",
+      "answer": "Bir emülgatördür ve genellikle soya veya ayçiçeğinden elde edilir. Ancak etiket her zaman hangisinden olduğunu söylemez — ve yumurtadan da olabilir.",
+      "link": "/ingredients/lecithins.html"
+    },
+    {
+      "id": 27,
+      "text": "'Trans yağı içermez' her zaman sıfır anlamına gelmez.",
+      "answer": "Birçok yerde, bir ürün porsiyon başına belirli bir eşiğin altında sıfıra yuvarlanabilir. Üç porsiyon yerseniz matematik değişir.",
+      "link": "/ingredients/trans_fats.html"
+    },
+    {
+      "id": 28,
+      "text": "İçindekiler, en çoktan en aza doğru ağırlıkça listelenir.",
+      "answer": "Yani ilk üçü size ürünün gerçekte ne olduğunu söyler. Şeker ikinci sıradaysa, ön etiketin geri kalanı süslemedir.",
+      "link": "/pages/evidence.html"
+    },
+    {
+      "id": 29,
+      "text": "Gerçek gıdanın aroma vericilere ihtiyacı yoktur.",
+      "answer": "Bir etiket \"aroma eklenmiş\" yazıyorsa, bu işlemin orijinal tadı yok ettiği ve tadın geri eklenmek zorunda kalındığı anlamına gelir. Bu, NOVA'nın ultra işlenmiş gıda belirteçlerinden biridir.",
+      "link": "/pages/tasting_like_itself.html"
+    },
+    {
+      "id": 30,
+      "text": "Bir ürün şekeri düşük, yağı düşük, proteini yüksek olabilir — ve yine de ultra işlenmiş olabilir.",
+      "answer": "NOVA besin değerlerine göre sınıflandırma yapmaz. İçerik listesinde mutfağınızda asla bulamayacağınız maddeler olup olmadığına göre sınıflandırır.",
+      "link": "/pages/ultra_processed.html"
+    },
+    {
+      "id": 31,
+      "text": "Meyve suyu konsantresi, 'ilave şeker içermez' yazan ürünleri tatlandırmak için kullanılır.",
+      "answer": "DSÖ bunu serbest şeker olarak sayar. Meyveyi konsantre etmek suyu ve lifi uzaklaştırır — geriye kalan şurup gibi davranır.",
+      "link": "/ingredients/fruit_juice_concentrate.html"
+    },
+    {
+      "id": 32,
+      "text": "Gliserol, tatlılarda, içeceklerde ve unlu mamullerde bulunur — ve hayvansal veya bitkisel olabilir.",
+      "answer": "Etiket nadiren hangisini söyler. Aynı isim, aynı kod, iki tamamen farklı köken.",
+      "link": "/ingredients/glycerol.html"
+    },
+    {
+      "id": 33,
+      "text": "Gıda enzimleri ekmek, peynir ve meyve suyunda kullanılır ve genellikle etikette hiç görünmez.",
+      "answer": "Çoğu durumda bunlar işleme yardımcıları olarak kabul edilir, içerik maddeleri olarak değil. Bu da yasal olarak beyan edilmek zorunda olmadıkları anlamına gelir.",
+      "link": "/ingredients/enzymes.html"
+    },
+    {
+      "id": 34,
+      "text": "Büyük yırtıcı balıklar, yedikleri her şeyden cıva biriktirir.",
+      "answer": "Metilcıva besin zincirinde birikir. Bu yüzden kılıç balığı ve ton balığı için verilen tavsiyeler, sardalya için verilenlerden farklıdır.",
+      "link": "/ingredients/methylmercury.html"
+    },
+    {
+      "id": 35,
+      "text": "Bazı bileşikler vücuttan atılmaz — yağda birikir ve bekler.",
+      "answer": "Lipofilik maddeler yıllar içinde birikir ve hızlı kilo kaybı, hamilelik veya menopoz sırasında konsantre formda salınır.",
+      "link": "/ingredients/fat-accumulation.html"
+    },
+    {
+      "id": 36,
+      "text": "BHA ve BHT, cipslerde, tahıllarda ve sakızlarda yağların bayatlamasını önler.",
+      "answer": "İkisi de olası hormonal aktivite açısından bilimsel inceleme altında. İkisi de hâlâ onaylı. İkisi de şu anda etiketlerde yer alıyor.",
+      "link": "/ingredients/bha.html"
+    },
+    {
+      "id": 37,
+      "text": "Parabenler kozmetik içerikleri olarak bilinir — ancak gıdalarda da bulunurlar.",
+      "answer": "Koruyucu olarak kullanılıyorlar ve endokrin aktiviteleri açısından inceleniyorlar. Kozmetik tartışması ile gıda tartışması aynı maddeyle ilgili.",
+      "link": "/ingredients/parabens.html"
+    },
+    {
+      "id": 38,
+      "text": "Kadmiyum gıdaya fabrikadan değil, topraktan geçer.",
+      "answer": "Bitkiler onu kirlenmiş topraktan emer. Kakao, kabuklu deniz ürünleri ve bazı tahıllarda bulunur — ve hiçbir içerik listesi ondan asla bahsetmez.",
+      "link": "/ingredients/cadmium.html"
+    },
+    {
+      "id": 39,
+      "text": "Aspartam, tarihteki en çok araştırılan gıda katkı maddelerinden biridir.",
+      "answer": "Binlerce makale, onlarca yıllık inceleme ve tartışma hâlâ açık. Bu bir skandal değil — çözülmemiş bir soru böyle görünür.",
+      "link": "/ingredients/aspartame.html"
+    },
+    {
+      "id": 40,
+      "text": "Eritritol vücuttan neredeyse hiç değişmeden geçer.",
+      "answer": "Bu yüzden neredeyse hiç kalorisi yoktur. Yaklaşık %90'ı emilir ve değişmeden atılır, bu da diğer şeker alkollerinden sindirime daha nazik olmasının nedenidir.",
+      "link": "/ingredients/erythritol.html"
+    },
+    {
+      "id": 41,
+      "text": "DSÖ, 2023 yılında kilo kontrolü için şekersiz tatlandırıcıların kullanılmamasını tavsiye etti.",
+      "answer": "Güvenli olmadıkları için değil, uzun süreli kullanımın kilo üzerinde fayda göstermemesi ve diğer risklerle olası ilişkileri nedeniyle.",
+      "link": "/pages/not_sugar.html"
+    },
+    {
+      "id": 42,
+      "text": "Guar sakızı, çoğunlukla Hindistan'da yetiştirilen bir fasulyeden elde edilir.",
+      "answer": "Soğuk sıcaklıklarda koyulaşır, bu yüzden dondurma ve soğuk soslarda bulunur. Oradaki bir mahsul kıtlığı dünya genelinde fiyatları değiştirir.",
+      "link": "/ingredients/guar_gum.html"
+    },
+    {
+      "id": 43,
+      "text": "Konjac, neredeyse hiç kalorisi olmayan erişte yapımında kullanılan bir köktür.",
+      "answer": "Neredeyse tamamen lif ve sudan oluşur. Ayrıca bütün olarak yutulduğunda nasıl davrandığı nedeniyle bazı jöle ürünlerinde kısıtlanmıştır.",
+      "link": "/ingredients/konjac.html"
+    },
+    {
+      "id": 44,
+      "text": "Sirke, bir etiketteki en basit içerik gibi görünür.",
+      "answer": "Alkolün fermente edilmesiyle üretilir. Bu yüzden bariz görünen şey, etiketi okuyan herkes için her zaman bariz olmayabilir.",
+      "link": "/ingredients/vinegar.html"
+    },
+    {
+      "id": 45,
+      "text": "Gıdadaki kurşun bir içerikten gelmez. Çevresindeki her şeyden gelir.",
+      "answer": "Toprak, su, eski borular, bazı seramikler. Bu bir katkı maddesi değil, bir kirletici — bu yüzden etiket sizi tam olarak uyaramıyor.",
+      "link": "/ingredients/lead.html"
+    },
+    {
+      "id": 46,
+      "text": "Bazı içerikler hayvansal, bitkisel veya alkol bazlı olabilir ve etiket her iki durumda da aynı görünür.",
+      "answer": "E471, lesitinler, enzimler, jelatin, gliserol, doğal aromalar. BOTIA'nın ilk analizinde, ürünlerin %72'si her iki yönde de doğrulanamadı.",
+      "link": "/pages/undeclared_origin.html"
+    },
+    {
+      "id": 47,
+      "text": "Sakarin, 1879'da ellerini yıkamayı unutan bir kimyager tarafından keşfedildi.",
+      "answer": "Ekmeğinin tatlı olduğunu fark etti. O zamandan beri yasaklar, uyarılar ve geri dönüşler yaşadı — ve bugün hâlâ raflarda.",
+      "link": "/ingredients/saccharin.html"
+    },
+    {
+      "id": 48,
+      "text": "Siklamatlar Amerika Birleşik Devletleri'nde yasaklanmıştır ve Avrupa Birliği'nde izin verilmiştir.",
+      "answer": "Aynı madde, aynı bilim, zıt sonuçlar. Düzenleme tek bir küresel gerçek değildir.",
+      "link": "/ingredients/cyclamates.html"
+    },
+    {
+      "id": 49,
+      "text": "Dioksinler hiçbir şeye eklenmez. Onlar yanmanın bir yan ürünüdür.",
+      "answer": "Çimlere yerleşirler, hayvanlar onları yer ve yağ ile süt ürünlerinde yoğunlaşırlar. Bir etiketteki hiçbir şey size orada olduklarını söyleyemez.",
+      "link": "/ingredients/dioxins_pcbs.html"
+    },
+    {
+      "id": 50,
+      "text": "Beslenme etiketleri, bir gıdanın ne kadar işlenmiş olduğunu göstermek için hiçbir zaman tasarlanmamıştır.",
+      "answer": "Besinleri sayar. Reformülasyonu göremez. İçerik listesi görebilir — ama asla bir bütün olarak okunmak için tasarlanmamıştır.",
+      "link": "/pages/ultra_processed.html"
     }
   ]
 }

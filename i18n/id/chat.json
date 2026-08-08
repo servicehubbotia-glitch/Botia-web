@@ -1,99 +1,317 @@
 {
   "ui": {
-    "title": "Asisten BOTIA",
-    "placeholder": "Pregunta o escribe 'next'…",
+    "title": "BOTIA Assistant",
+    "placeholder": "Tanyakan atau ketik 'next'…",
     "sendButton": "Kirim",
-    "welcome": "👋 Halo! Saya asisten BOTIA. Saya akan menanyakan beberapa fakta makanan kepada Anda. Anda juga bisa bertanya apa saja tentang bahan, label, atau aditif.",
+    "welcome": "👋 Halo! Saya asisten BOTIA. Saya akan menunjukkan hal-hal yang tidak diceritakan oleh label. Anda juga bisa bertanya apa saja tentang bahan, label, atau aditif.",
     "nextButton": "Pertanyaan berikutnya",
     "discoverButton": "Temukan di BOTIA",
     "limitMessage": "Anda telah menggunakan 3 pertanyaan gratis Anda. Untuk pertanyaan tanpa batas, unduh aplikasi BOTIA.",
     "limitButton": "Pergi ke BOTIA",
-    "offTopic": "Saya hanya bisa membantu dengan pertanyaan tentang bahan makanan dan label.",
+    "offTopic": "Saya hanya dapat membantu pertanyaan tentang bahan makanan dan label.",
     "error": "Maaf, ada masalah.",
-    "connectionError": "Kesalahan koneksi. Periksa jaringan Anda.",
-    "quizDone": "🎉 Anda telah melihat semua 16 pertanyaan! Sekarang Anda bisa bertanya apa saja tentang bahan makanan dan aditif.",
-    "noMoreQuestions": "Tidak ada pertanyaan lagi! Tanyakan apa saja padaku."
+    "connectionError": "Kesalahan koneksi. Periksa jaringan Anda."
   },
   "questions": [
     {
       "id": 1,
-      "text": "Warna merah menggugah selera pada permen kenyal atau yogurt stroberimu itu? Itu dibuat dari menghancurkan ribuan serangga. Namanya Carmine atau Cochineal. Berani cari E-120 di labelmu?",
-      "link": "https://www.botia-safefood.com/ingredients/carmine.html"
+      "text": "Merah menggugah selera dalam permen kenyal atau yogurt stroberimu itu? Itu dibuat dengan menghancurkan ribuan serangga.",
+      "answer": "Namanya carmine, atau cochineal — E120. Berasal dari serangga sisik yang dibudidayakan di kaktus. Bahan ini diizinkan, sudah digunakan selama berabad-abad, dan tertera di lebih banyak label daripada yang kamu kira.",
+      "link": "/ingredients/carmine.html"
     },
     {
       "id": 2,
-      "text": "Tahukah kamu kenapa keju parut dalam kemasan tidak pernah lengket? Karena mereka menambahkan bubuk selulosa — sebenarnya serat kayu olahan. Kamu makan keju atau serbuk gergaji?",
-      "link": "https://www.botia-safefood.com/ingredients/e472.html"
+      "text": "Mengapa apel di supermarket mengilap seperti baru dipoles?",
+      "answer": "Shellak (E904) — resin yang dikeluarkan oleh kumbang Asia. Zat ini melapisi buah dan membuatnya mengilap. Buah segar tidak mencantumkan daftar bahan, jadi tidak ada yang memberi tahu Anda.",
+      "link": "/ingredients/shellac.html"
     },
     {
       "id": 3,
-      "text": "Mengapa apel di supermarket begitu mengilap? Mereka dilapisi dengan shellac (E-904), lilin yang disekresikan oleh kumbang Asia. Tertarik untuk menggigitnya?",
-      "link": "https://www.botia-safefood.com/ingredients/shellac.html"
+      "text": "Tahukah kamu kenapa keju parut dalam kemasan tidak pernah menggumpal?",
+      "answer": "Serbuk selulosa — serat kayu olahan — ditambahkan sebagai agen anti-penggumpalan. Bahan ini dapat dimakan dan diizinkan. Bahan ini juga bukan keju.",
+      "link": "/ingredients/e472.html"
     },
     {
       "id": 4,
-      "text": "Apa yang lebih banyak gulanya: sekaleng soda atau empat sendok makan susu kental manis? Hampir seimbang! Tapi susu kental manis menyembunyikan gula di balik label 'produk susu sehat'.",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Apa yang lebih banyak gulanya: sekaleng soda atau empat sendok makan susu kental manis?",
+      "answer": "Mereka hampir sama. Tetapi satu dijual sebagai camilan dan yang lainnya dengan label 'susu'. Kata di bagian depan mengubah cara kamu membaca jumlah gula yang sama.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 5,
-      "text": "Apakah kamu mengira tomat goreng dalam toples hanya berisi tomat dan minyak? Di sebagian besar merek, bahan terbanyak kedua adalah gula. Apakah kamu sedang membumbui pasta atau menuangkan sirup?",
-      "link": "https://www.botia-safefood.com/ingredients/glucose_syrup.html"
+      "text": "Kamu pikir saus tomat dalam botol itu cuma tomat dan minyak?",
+      "answer": "Pada sebagian besar merek, gula berada di dekat bagian atas daftar bahan — ditambahkan untuk mengurangi keasaman. Bahan-bahan dicantumkan berdasarkan berat, jadi posisinya menunjukkan seberapa banyak kandungan di dalamnya.",
+      "link": "/ingredients/glucose_syrup.html"
     },
     {
       "id": 6,
-      "text": "Kamu melihat yogurt '0% lemak'. Kedengarannya bagus, kan? Apa yang mereka ganti dengan lemak itu supaya rasanya tetap enak? Dengan banyak gula atau pati termodifikasi.",
-      "link": "https://www.botia-safefood.com/ingredients/maltodextrin.html"
+      "text": "Yogurt '0% lemak' terdengar bagus. Tapi apa yang menggantikan lemak sehingga tetap terasa creamy?",
+      "answer": "Biasanya pati termodifikasi atau maltodekstrin. Lemak membawa tekstur dan rasa — jika dihilangkan, sesuatu harus menggantikan peran tersebut.",
+      "link": "/ingredients/maltodextrin.html"
     },
     {
       "id": 7,
-      "text": "¿Tu pan es realmente de grano entero o es pan blanco 'pintado'? Muchas marcas usan harina blanca y añaden salvado para que parezca moreno. ¿Sabes cómo detectarlo en la etiqueta?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Apakah roti cokelat Anda benar-benar gandum utuh, atau roti putih yang memakai kostum?",
+      "answer": "Warna tidak membuktikan apa-apa. Dedak atau malt dapat menggelapkan tepung putih. Satu-satunya cara untuk mengetahui adalah daftar bahan — tepung gandum utuh harus menjadi yang pertama.",
+      "link": "/pages/hidden_sugars.html"
     },
     {
       "id": 8,
-      "text": "Tahukah kamu bahwa cokelat putih sama sekali tidak mengandung kakao asli? Itu hanya mentega kakao, susu, dan gula. Apakah masih pantas disebut cokelat?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Tahukah kamu cokelat putih sama sekali tidak mengandung padatan kakao?",
+      "answer": "Ini adalah mentega kakao, susu, dan gula. Lemak dari bijinya, bukan bijinya. Secara hukum ini cokelat. Secara botani hampir tidak ada hubungannya.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 9,
-      "text": "Mengapa jus '100% alami' dari karton rasanya sama sepanjang tahun? Karena mereka menyimpannya hingga satu tahun tanpa oksigen dan kemudian menambahkan 'paket rasa' untuk membuatnya berbau seperti jeruk lagi.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Mengapa jus karton rasanya identik di bulan Januari dan di bulan Agustus?",
+      "answer": "Disimpan selama berbulan-bulan dalam tangki tanpa oksigen, yang menghilangkan aromanya. Paket rasa ditambahkan kembali sebelum dibotolkan. Buah yang sama, dirakit ulang.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 10,
-      "text": "Kamu melihat 'dengan rasa alami' pada beberapa kue lemon. Hukum mengizinkan rasa itu berasal dari jamur atau kulit pohon, bukan dari lemon asli. Apakah rasanya seperti buah atau laboratorium?",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Dengan perisa semula jadi pada biskut lemon. Adakah ia berasal daripada lemon?",
+      "answer": "Belum tentu. 'Alami' menggambarkan sumbernya yang alami, bukan yang mana. Bisa berasal dari jamur, kulit kayu, atau fermentasi, dan labelnya tidak pernah menyebutkan.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 11,
-      "text": "Apakah kamu membeli gula merah karena lebih alami? 90% gula merah di supermarket adalah gula putih olahan yang disuntik molase untuk memberi warna cokelat. Apakah kamu membayar lebih hanya untuk pewarna?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Apakah Anda membeli gula merah karena terasa lebih alami?",
+      "answer": "Sebagian besar gula merah supermarket adalah gula putih olahan yang ditambahkan molase kembali untuk memberi warna. Tubuh Anda memperlakukannya sama. Anda membayar untuk warnanya.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 12,
-      "text": "Bagaimana daging yang diawetkan bisa bilang 'tanpa pengawet buatan' dan bertahan sebulan? Mereka menggunakan ekstrak seledri, kaya akan nitrat alami yang berubah menjadi nitrit yang sama yang ingin disembunyikan oleh industri.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Bagaimana daging olahan bisa mengklaim 'tanpa pengawet buatan' dan tetap bertahan selama sebulan?",
+      "answer": "Ekstrak seledri. Secara alami kaya akan nitrat, yang berubah menjadi nitrit yang sama yang dihindari untuk disebutkan pada label. Sumber alami, kimia yang identik.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 13,
-      "text": "Hampir semua makanan kaleng memiliki lapisan plastik yang melepaskan BPA — pengganggu endokrin yang meniru estrogen Anda. Apakah Anda tahu merek mana saja yang sudah menggunakan kaleng bebas BPA?",
-      "link": "https://www.botia-safefood.com/ingredients/bpa.html"
+      "text": "Hampir setiap kaleng di lemari dapurmu memiliki lapisan plastik di bagian dalamnya.",
+      "answer": "Banyak yang telah menggunakan BPA, yang meniru estrogen dalam tubuh. Beberapa merek telah beralih darinya. Kalengnya tidak memberi tahu Anda yang mana.",
+      "link": "/ingredients/bpa.html"
     },
     {
       "id": 14,
-      "text": "Apakah kamu memanaskan Tupperware-mu di microwave karena tertulis 'aman untuk microwave'? Itu hanya berarti plastiknya tidak akan meleleh, tetapi tetap melepaskan ftalat langsung ke dalam makananmu.",
-      "link": "https://www.botia-safefood.com/ingredients/phthalates.html"
+      "text": "Aman untuk microwave pada wadah plastik. Aman untuk apa, tepatnya?",
+      "answer": "Itu berarti plastik tidak akan meleleh atau berubah bentuk. Itu tidak mengatakan apa pun tentang apa yang bermigrasi ke dalam makanan Anda saat memanas.",
+      "link": "/ingredients/phthalates.html"
     },
     {
       "id": 15,
-      "text": "Bahan kimia plastik menyukai lemak. Jika Anda menyimpan keju atau daging yang dibungkus plastik wrap, migrasi racunnya jauh lebih besar dibandingkan jika Anda menyimpan sayuran.",
-      "link": "https://www.botia-safefood.com/ingredients/packaging-migrants.html"
+      "text": "Plastik wrap pada keju dan plastik wrap pada selada bukanlah hal yang sama.",
+      "answer": "Pemplastis larut ke dalam lemak. Bungkus sesuatu yang berlemak dan migrasinya meningkat tajam. Bungkus sesuatu yang berair dan hampir tidak bergerak.",
+      "link": "/ingredients/packaging-migrants.html"
     },
     {
       "id": 16,
-      "text": "Apakah kamu meninggalkan botol air plastikmu di dalam mobil yang terkena sinar matahari? Panas menguraikan PET dan melepaskan antimon serta mikroplastik ke dalam air yang nanti kamu minum.",
-      "link": "https://www.botia-safefood.com/ingredients/endocrine-disruptors.html"
+      "text": "Botol air yang kamu tinggalkan di mobil pada bulan Agustus itu.",
+      "answer": "Panas menurunkan kualitas PET. Ia melepaskan antimon dan mikroplastik ke dalam air. Jika rasanya sedikit seperti plastik, itu bukan imajinasimu.",
+      "link": "/ingredients/endocrine-disruptors.html"
+    },
+    {
+      "id": 17,
+      "text": "Gelatin tidak memiliki rasa, tidak berwarna, dan tidak berbau. Jadi dari mana asalnya?",
+      "answer": "Kolagen, diekstrak dari kulit dan tulang hewan. Terdapat dalam permen, yogurt, kapsul, dan mousse. Kata itu tidak mengungkapkan apa pun.",
+      "link": "/ingredients/gelatine.html"
+    },
+    {
+      "id": 18,
+      "text": "Mengapa minyak tidak pernah terpisah dalam mayones Anda?",
+      "answer": "Pengemulsi seperti E471 menyatukan air dan lemak yang secara alami akan terpisah dalam hitungan menit jika dibiarkan begitu saja.",
+      "link": "/ingredients/e471.html"
+    },
+    {
+      "id": 19,
+      "text": "Gum xanthan ada di saus Anda, roti bebas gluten Anda, dan es krim Anda.",
+      "answer": "Itu diproduksi dengan memfermentasi gula dengan bakteri. Jumlah yang sangat sedikit dapat mengentalkan seluruh adonan. Itu adalah salah satu bahan tekstur yang paling banyak digunakan di dunia.",
+      "link": "/ingredients/xanthan_gum.html"
+    },
+    {
+      "id": 20,
+      "text": "Beberapa susu nabati mengandung bahan yang diekstrak dari rumput laut merah.",
+      "answer": "Karagenan. Zat ini mencegah minuman terpisah di rak. Zat ini diizinkan, dan juga sedang dalam tinjauan ilmiah aktif mengenai efeknya pada usus.",
+      "link": "/ingredients/carrageenan.html"
+    },
+    {
+      "id": 21,
+      "text": "Sukralosa sekitar 600 kali lebih manis daripada gula.",
+      "answer": "Itulah sebabnya Anda hanya perlu miligram. Zat ini dibuat dengan memodifikasi gula itu sendiri, mengganti tiga bagian molekulnya sehingga tubuh tidak memprosesnya.",
+      "link": "/ingredients/sucralose.html"
+    },
+    {
+      "id": 22,
+      "text": "Mengapa permen bebas gula terkadang disertai peringatan tentang pencernaan?",
+      "answer": "Alkohol gula seperti maltitol dan sorbitol tidak sepenuhnya diserap. Apa yang tidak diserap akan terus berlanjut, dan dalam jumlah banyak hal itu memiliki konsekuensi.",
+      "link": "/ingredients/maltitol.html"
+    },
+    {
+      "id": 23,
+      "text": "Stevia di bagian depan kemasan. Glikosida steviol dalam bahan-bahan.",
+      "answer": "Pemanis tersebut adalah senyawa yang diekstraksi dari daun, dimurnikan di laboratorium — bukan tanamannya itu sendiri. Gambar daun hijau itu memainkan peran yang sangat besar.",
+      "link": "/ingredients/steviol_glycosides.html"
+    },
+    {
+      "id": 24,
+      "text": "Pada tahun 2022, UE melarang agen pemutih yang masih diizinkan oleh AS.",
+      "answer": "Titanium dioksida, E171. EFSA menyimpulkan bahwa zat tersebut tidak lagi dapat dianggap aman. Zat yang sama, bukti yang sama, dua jawaban yang berbeda.",
+      "link": "/ingredients/e171.html"
+    },
+    {
+      "id": 25,
+      "text": "Aditif yang sama bisa berupa E471 di sini, INS 471 secara internasional, dan sebutan yang sama sekali berbeda di AS.",
+      "answer": "Tiga sistem penamaan untuk satu zat. Produsen tahu persis apa arti setiap kode. Itulah celah yang BOTIA ada untuk menutupnya.",
+      "link": "/pages/the_code_system.html"
+    },
+    {
+      "id": 26,
+      "text": "Lesitin adalah yang mencegah cokelat menjadi berbutir.",
+      "answer": "Ini adalah pengemulsi, dan biasanya berasal dari kedelai atau bunga matahari. Tetapi label tidak selalu mencantumkan sumbernya — dan bisa juga berasal dari telur.",
+      "link": "/ingredients/lecithins.html"
+    },
+    {
+      "id": 27,
+      "text": "Bebas lemak trans tidak selalu berarti nol.",
+      "answer": "Di banyak tempat, suatu produk dapat dibulatkan ke bawah menjadi nol di bawah ambang batas tertentu per porsi. Makan tiga porsi dan perhitungannya berubah.",
+      "link": "/ingredients/trans_fats.html"
+    },
+    {
+      "id": 28,
+      "text": "Bahan-bahan dicantumkan berdasarkan berat, dari yang terbanyak hingga yang paling sedikit.",
+      "answer": "Jadi tiga yang pertama memberi tahu Anda apa produk itu sebenarnya. Jika gula berada di urutan kedua, sisa label depan hanyalah hiasan.",
+      "link": "/pages/evidence.html"
+    },
+    {
+      "id": 29,
+      "text": "Makanan asli tidak membutuhkan perasa.",
+      "answer": "Saat label mencantumkan rasa tambahan, itu berarti proses pengolahan telah menghilangkan rasa asli dan rasa tersebut harus dikembalikan lagi. Itulah salah satu penanda NOVA untuk makanan ultra-olahan.",
+      "link": "/pages/tasting_like_itself.html"
+    },
+    {
+      "id": 30,
+      "text": "Produk bisa rendah gula, rendah lemak, tinggi protein — dan tetap saja ultra-processed.",
+      "answer": "NOVA tidak mengklasifikasikan berdasarkan nutrisi. NOVA mengklasifikasikan berdasarkan apakah daftar bahan mengandung zat-zat yang tidak akan pernah Anda temukan di dapur.",
+      "link": "/pages/ultra_processed.html"
+    },
+    {
+      "id": 31,
+      "text": "Konsentrat jus buah digunakan untuk mempermanis produk yang bertuliskan 'tanpa gula tambahan'.",
+      "answer": "WHO menganggapnya sebagai gula bebas. Mengonsentrasikan buah menghilangkan air dan seratnya — yang tersisa berperilaku seperti sirup.",
+      "link": "/ingredients/fruit_juice_concentrate.html"
+    },
+    {
+      "id": 32,
+      "text": "Gliserol muncul dalam permen, minuman, dan makanan panggang — dan bisa berasal dari hewan atau tumbuhan.",
+      "answer": "Label jarang menyebutkan yang mana. Nama sama, kode sama, dua asal-usul yang sepenuhnya berbeda.",
+      "link": "/ingredients/glycerol.html"
+    },
+    {
+      "id": 33,
+      "text": "Enzim makanan digunakan dalam roti, keju, dan jus — dan sering kali tidak tercantum sama sekali pada label.",
+      "answer": "Dalam banyak kasus, mereka diperlakukan sebagai bahan pembantu proses, bukan sebagai bahan baku. Artinya, secara hukum mereka tidak wajib dicantumkan.",
+      "link": "/ingredients/enzymes.html"
+    },
+    {
+      "id": 34,
+      "text": "Ikan predator besar mengkonsentrasikan merkuri dari semua yang mereka makan.",
+      "answer": "Metilmerkuri terakumulasi di sepanjang rantai makanan. Itulah sebabnya saran mengenai ikan todak dan tuna berbeda dengan saran mengenai ikan sarden.",
+      "link": "/ingredients/methylmercury.html"
+    },
+    {
+      "id": 35,
+      "text": "Beberapa senyawa tidak meninggalkan tubuh — senyawa tersebut menetap di lemak dan menunggu.",
+      "answer": "Zat lipofilik terakumulasi selama bertahun-tahun dan dilepaskan dalam bentuk terkonsentrasi selama penurunan berat badan yang cepat, kehamilan, atau menopause.",
+      "link": "/ingredients/fat-accumulation.html"
+    },
+    {
+      "id": 36,
+      "text": "BHA dan BHT mencegah lemak menjadi tengik pada keripik kentang, sereal, dan permen karet.",
+      "answer": "Keduanya sedang dalam tinjauan ilmiah untuk kemungkinan aktivitas hormonal. Keduanya masih diizinkan. Keduanya masih tertera pada label saat ini.",
+      "link": "/ingredients/bha.html"
+    },
+    {
+      "id": 37,
+      "text": "Paraben dikenal sebagai bahan kosmetik — tetapi juga terdapat dalam makanan.",
+      "answer": "Mereka digunakan sebagai pengawet, dan diteliti untuk aktivitas endokrin. Debat kosmetik dan debat makanan adalah zat yang sama.",
+      "link": "/ingredients/parabens.html"
+    },
+    {
+      "id": 38,
+      "text": "Kadmium masuk ke dalam makanan melalui tanah, bukan dari pabrik.",
+      "answer": "Tanaman menyerapnya dari tanah yang terkontaminasi. Zat ini terdapat dalam kakao, kerang, dan beberapa sereal — dan tidak ada daftar bahan yang akan pernah menyebutkannya.",
+      "link": "/ingredients/cadmium.html"
+    },
+    {
+      "id": 39,
+      "text": "Aspartam adalah salah satu bahan tambahan makanan yang paling banyak diteliti dalam sejarah.",
+      "answer": "Ribuan makalah, puluhan tahun peninjauan, dan perdebatan masih terbuka. Itu bukan skandal — itulah wujud pertanyaan yang belum terjawab.",
+      "link": "/ingredients/aspartame.html"
+    },
+    {
+      "id": 40,
+      "text": "Eritritol melewati tubuh hampir tanpa tersentuh.",
+      "answer": "Itulah sebabnya hampir tidak mengandung kalori. Sekitar 90% diserap dan dikeluarkan tanpa berubah, yang juga menjadi alasan mengapa lebih lembut bagi pencernaan dibandingkan gula alkohol lainnya.",
+      "link": "/ingredients/erythritol.html"
+    },
+    {
+      "id": 41,
+      "text": "WHO pada tahun 2023 menyarankan untuk tidak menggunakan pemanis non-gula untuk mengontrol berat badan.",
+      "answer": "Bukan karena tidak aman, tetapi karena penggunaan jangka panjang tidak menunjukkan manfaat untuk berat badan — dan kemungkinan terkait dengan risiko lainnya.",
+      "link": "/pages/not_sugar.html"
+    },
+    {
+      "id": 42,
+      "text": "Gom guar berasal dari kacang yang sebagian besar ditanam di India.",
+      "answer": "Mengental pada suhu dingin, itulah sebabnya ia ada di dalam es krim dan saus dingin. Gagal panen di sana mengubah harga di seluruh dunia.",
+      "link": "/ingredients/guar_gum.html"
+    },
+    {
+      "id": 43,
+      "text": "Konjak adalah umbi yang digunakan untuk membuat mi dengan hampir tidak mengandung kalori.",
+      "answer": "Hampir semuanya serat dan air. Bahan ini juga telah dibatasi dalam beberapa produk jeli karena perilakunya saat ditelan utuh.",
+      "link": "/ingredients/konjac.html"
+    },
+    {
+      "id": 44,
+      "text": "Cuka tampak seperti bahan paling sederhana pada label.",
+      "answer": "Itu diproduksi dengan memfermentasi alkohol. Itulah sebabnya apa yang terlihat jelas tidak selalu jelas bagi semua orang yang membaca labelnya.",
+      "link": "/ingredients/vinegar.html"
+    },
+    {
+      "id": 45,
+      "text": "Timbal dalam makanan tidak berasal dari bahan makanan itu sendiri. Ia berasal dari segala sesuatu di sekitarnya.",
+      "answer": "Tanah, air, pipa tua, beberapa keramik. Itu kontaminan, bukan aditif — justru itulah mengapa label tidak bisa memperingatkanmu.",
+      "link": "/ingredients/lead.html"
+    },
+    {
+      "id": 46,
+      "text": "Beberapa bahan bisa berasal dari hewan, tumbuhan, atau alkohol, dan labelnya terlihat identik baik dari sumber yang satu maupun yang lain.",
+      "answer": "E471, lesitin, enzim, gelatin, gliserol, perisa alami. Dalam analisis pertama BOTIA, 72% produk tidak dapat dipastikan salah satu arahnya.",
+      "link": "/pages/undeclared_origin.html"
+    },
+    {
+      "id": 47,
+      "text": "Sakarin ditemukan pada tahun 1879 oleh seorang kimiawan yang lupa mencuci tangannya.",
+      "answer": "Dia menyadari rotinya terasa manis. Roti itu telah melalui larangan, peringatan, dan pemulihan sejak saat itu — dan masih ada di rak-rak toko hingga hari ini.",
+      "link": "/ingredients/saccharin.html"
+    },
+    {
+      "id": 48,
+      "text": "Siklamat dilarang di Amerika Serikat dan diizinkan di Uni Eropa.",
+      "answer": "Zat yang sama, ilmu yang sama, kesimpulan yang berlawanan. Regulasi bukanlah kebenaran global tunggal.",
+      "link": "/ingredients/cyclamates.html"
+    },
+    {
+      "id": 49,
+      "text": "Dioksin tidak ditambahkan ke apa pun. Dioksin adalah produk sampingan dari pembakaran.",
+      "answer": "Mereka menempel di rumput, hewan memakannya, dan mereka terkonsentrasi di lemak serta produk susu. Tidak ada apa pun di label yang bisa memberi tahu Anda bahwa mereka ada di sana.",
+      "link": "/ingredients/dioxins_pcbs.html"
+    },
+    {
+      "id": 50,
+      "text": "Pelabelan nutrisi tidak pernah dirancang untuk menunjukkan seberapa olah suatu produk.",
+      "answer": "Ia menghitung nutrisi. Ia tidak dapat melihat reformulasi. Daftar bahan dapat — tetapi ia tidak pernah dimaksudkan untuk dibaca secara keseluruhan.",
+      "link": "/pages/ultra_processed.html"
     }
   ]
 }

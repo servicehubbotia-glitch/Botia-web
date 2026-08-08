@@ -1,99 +1,317 @@
 {
   "ui": {
-    "title": "Asystent BOTIA",
-    "placeholder": "Pytaj lub wpisz „next”…",
+    "title": "BOTIA Assistant",
+    "placeholder": "Zapytaj lub wpisz „next”…",
     "sendButton": "Wyślij",
-    "welcome": "👋 Cześć! Jestem asystentem BOTIA. Zadam ci kilka faktów o jedzeniu. Możesz też pytać mnie o wszystko, co dotyczy składników, etykiet lub dodatków.",
+    "welcome": "👋 Cześć! Jestem asystentem BOTIA. Pokażę ci rzeczy, których etykiety ci nie mówią. Możesz też zapytać mnie o wszystko, co dotyczy składników, etykiet lub dodatków.",
     "nextButton": "Następne pytanie",
     "discoverButton": "Odkryj na BOTIA",
     "limitMessage": "Wykorzystałeś swoje 3 darmowe pytania. Aby uzyskać nieograniczone zapytania, pobierz aplikację BOTIA.",
     "limitButton": "Idź do BOTIA",
     "offTopic": "Mogę pomóc tylko w pytaniach dotyczących składników żywności i etykiet.",
     "error": "Przepraszam, wystąpił problem.",
-    "connectionError": "Błąd połączenia. Sprawdź swoją sieć.",
-    "quizDone": "🎉 Widziałeś już wszystkie 16 pytań! Teraz możesz zapytać mnie o wszystko dotyczące składników żywności i dodatków.",
-    "noMoreQuestions": "Koniec pytań! Pytaj mnie o cokolwiek."
+    "connectionError": "Błąd połączenia. Sprawdź swoją sieć."
   },
   "questions": [
     {
       "id": 1,
-      "text": "Ten apetyczny czerwony kolor w twoich żelkach lub jogurcie truskawkowym? Powstaje przez zmiażdżenie tysięcy owadów. Nazywa się karmin lub koszenila. Odważysz się poszukać E-120 na swojej etykiecie?",
-      "link": "https://www.botia-safefood.com/ingredients/carmine.html"
+      "text": "Ten apetyczny czerwony kolor w twoich żelkach lub jogurcie truskawkowym? Powstaje przez zmiażdżenie tysięcy owadów.",
+      "answer": "Nazywa się karmin lub koszenila — E120. Pochodzi z owada czerwca kaktusowego hodowanego na kaktusach. Jest dozwolony, używany od wieków i znajduje się na większej liczbie etykiet, niż myślisz.",
+      "link": "/ingredients/carmine.html"
     },
     {
       "id": 2,
-      "text": "Czy wiesz, dlaczego tarty ser w woreczkach nigdy się nie skleja? Ponieważ dodają do niego celulozę w proszku — dosłownie rafinowane włókno drzewne. Jesz ser czy trociny?",
-      "link": "https://www.botia-safefood.com/ingredients/e472.html"
+      "text": "Dlaczego jabłka w supermarketach błyszczą, jakby były wypolerowane?",
+      "answer": "Szelak (E904) — żywica wydzielana przez azjatyckiego chrząszcza. Uszczelnia owoc i nadaje mu połysk. Świeże owoce nie mają listy składników, więc nikt ci o tym nie mówi.",
+      "link": "/ingredients/shellac.html"
     },
     {
       "id": 3,
-      "text": "Dlaczego jabłka w supermarketach tak bardzo się błyszczą? Są pokryte szelakiem (E-904), woskiem wydzielanym przez azjatyckie chrząszcze. Masz ochotę na kęs?",
-      "link": "https://www.botia-safefood.com/ingredients/shellac.html"
+      "text": "Czy wiesz, dlaczego tarty ser w woreczkach nigdy się nie zbryla?",
+      "answer": "Celuloza w proszku — rafinowane włókno drzewne — jest dodawana jako środek przeciwzbrylający. Jest jadalna i dozwolona. To również nie jest ser.",
+      "link": "/ingredients/e472.html"
     },
     {
       "id": 4,
-      "text": "Co ma więcej cukru: puszka napoju gazowanego czy cztery łyżki mleka skondensowanego? To niemal remis! Ale mleko skondensowane ukrywa cukier pod etykietą „zdrowego nabiału”.",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Co ma więcej cukru: puszka napoju gazowanego czy cztery łyżki mleka skondensowanego?",
+      "answer": "Są prawie remis. Ale jeden jest sprzedawany jako przysmak, a drugi pod etykietą „nabiał”. Słowo z przodu zmienia sposób, w jaki czytasz tę samą ilość cukru.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 5,
-      "text": "Czy myślisz, że pomidory smażone w słoiku to tylko pomidory i olej? W większości marek drugim najobficiej występującym składnikiem jest cukier. Doprawiasz swój makaron czy wylewasz syrop?",
-      "link": "https://www.botia-safefood.com/ingredients/glucose_syrup.html"
+      "text": "Myślisz, że sos pomidorowy ze słoika to tylko pomidory i olej?",
+      "answer": "W większości marek cukier znajduje się blisko góry listy składników — dodawany, aby zmniejszyć kwasowość. Składniki są wymienione według wagi, więc jego pozycja mówi, ile go tam jest.",
+      "link": "/ingredients/glucose_syrup.html"
     },
     {
       "id": 6,
-      "text": "Widzisz jogurt „0% tłuszczu”. Brzmi dobrze, prawda? Czym zastępują ten tłuszcz, żeby nadal dobrze smakował? Mnóstwem cukru lub modyfikowanej skrobi.",
-      "link": "https://www.botia-safefood.com/ingredients/maltodextrin.html"
+      "text": "Jogurt „0% tłuszczu” brzmi dobrze. Ale co zastępuje tłuszcz, żeby nadal wydawał się kremowy?",
+      "answer": "Zwykle jest to skrobia modyfikowana lub maltodekstryna. Tłuszcz nadaje teksturę i smak — jeśli go usuniesz, coś innego musi przejąć tę rolę.",
+      "link": "/ingredients/maltodextrin.html"
     },
     {
       "id": 7,
-      "text": "Czy Twój chleb jest naprawdę pełnoziarnisty, czy to biały chleb „pomalowany”? Wiele marek używa białej mąki i dodaje otręby, żeby wyglądał na brązowy. Czy wiesz, jak to rozpoznać na etykiecie?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Czy twój brązowy chleb to naprawdę pełnoziarnisty, czy biały chleb w przebraniu?",
+      "answer": "Kolor niczego nie dowodzi. Otręby lub słód mogą przyciemnić białą mąkę. Jedynym sposobem, aby się przekonać, jest lista składników — mąka pełnoziarnista musi być na pierwszym miejscu.",
+      "link": "/pages/hidden_sugars.html"
     },
     {
       "id": 8,
-      "text": "Czy wiesz, że biała czekolada nie zawiera w ogóle prawdziwego kakao? To tylko masło kakaowe, mleko i cukier. Czy nadal powinna być nazywana czekoladą?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Czy wiesz, że biała czekolada w ogóle nie zawiera miazgi kakaowej?",
+      "answer": "To masło kakaowe, mleko i cukier. Tłuszcz z ziarna, nie ziarno. Prawnie to czekolada. Botanicznie ledwo spokrewnione.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 9,
-      "text": "Dlaczego „100% naturalny” sok z kartonu smakuje tak samo przez cały rok? Ponieważ przechowują go do roku bez tlenu, a potem dodają „pakiety aromatów”, żeby znów pachniał pomarańczą.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Dlaczego sok z kartonu smakuje identycznie w styczniu i w sierpniu?",
+      "answer": "Przechowywane jest przez miesiące w zbiornikach bez tlenu, co pozbawia je aromatu. Pakiety smakowe są dodawane z powrotem przed butelkowaniem. Ten sam owoc, złożony na nowo.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 10,
-      "text": "Widzisz „z naturalnymi aromatami” na niektórych ciasteczkach cytrynowych. Prawo pozwala, aby ten aromat pochodził z grzyba lub kory drzewa, a nie z prawdziwej cytryny. Czy smakuje jak owoc, czy jak laboratorium?",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Z naturalnym aromatem na herbatniku cytrynowym. Czy pochodzi z cytryny?",
+      "answer": "Niekoniecznie. „Naturalny” opisuje pochodzenie źródła jako naturalne, a nie to, które dokładnie. Może pochodzić z grzyba, kory lub fermentacji, a etykieta nigdy tego nie podaje.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 11,
-      "text": "Czy kupujesz brązowy cukier, bo jest bardziej naturalny? 90% brązowego cukru w supermarketach to biały cukier rafinowany z wstrzykniętą melasą, która nadaje mu brązowy kolor. Czy płacisz więcej za barwnik?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Czy kupujesz brązowy cukier, bo wydaje ci się bardziej naturalny?",
+      "answer": "Większość brązowego cukru w supermarketach to rafinowany biały cukier z dodatkiem melasy dla koloru. Twój organizm traktuje go tak samo. Płacisz za barwnik.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 12,
-      "text": "Jak wędlina może mówić „bez sztucznych konserwantów” i wytrzymać miesiąc? Używają ekstraktu z selera, bogatego w naturalne azotany, które przekształcają się w te same azotyny, które przemysł chce ukryć.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Jak wędliny mogą twierdzić, że nie zawierają sztucznych konserwantów, a mimo to wytrzymują miesiąc?",
+      "answer": "Ekstrakt z selera. Jest naturalnie bogaty w azotany, które przekształcają się w te same azotyny, których nazwy etykieta unika. Naturalne źródło, identyczna chemia.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 13,
-      "text": "Prawie wszystkie produkty w puszkach mają plastikową wyściółkę, która uwalnia BPA — substancję zaburzającą gospodarkę hormonalną, naśladującą twoje estrogeny. Czy wiesz, które marki już używają puszek bez BPA?",
-      "link": "https://www.botia-safefood.com/ingredients/bpa.html"
+      "text": "Prawie każda puszka w twojej szafce ma w środku plastikową wyściółkę.",
+      "answer": "Wielu używało BPA, który naśladuje estrogen w organizmie. Niektóre marki z niego zrezygnowały. Puszka nie informuje, które.",
+      "link": "/ingredients/bpa.html"
     },
     {
       "id": 14,
-      "text": "Czy podgrzewasz swój pojemnik Tupperware w mikrofalówce, bo pisze na nim „nadaje się do mikrofalówki”? To oznacza tylko, że plastik się nie stopi, ale nadal uwalnia ftalany bezpośrednio do twojego jedzenia.",
-      "link": "https://www.botia-safefood.com/ingredients/phthalates.html"
+      "text": "„Nadaje się do mikrofalówki” na plastikowym pojemniku. Bezpieczne dla czego, dokładnie?",
+      "answer": "To znaczy, że plastik się nie stopi ani nie odkształci. Nie mówi nic o tym, co przedostaje się do twojego jedzenia, gdy się nagrzewa.",
+      "link": "/ingredients/phthalates.html"
     },
     {
       "id": 15,
-      "text": "Substancje chemiczne z plastiku uwielbiają tłuszcz. Jeśli przechowujesz ser lub mięso owinięte w folię plastikową, migracja toksyn jest znacznie większa niż w przypadku przechowywania warzyw.",
-      "link": "https://www.botia-safefood.com/ingredients/packaging-migrants.html"
+      "text": "Folia spożywcza na serze i folia spożywcza na sałacie to nie to samo.",
+      "answer": "Plastyfikatory rozpuszczają się w tłuszczu. Owiniesz coś tłustego i migracja gwałtownie wzrasta. Owiniesz coś wodnistego i ledwo się przesuwa.",
+      "link": "/ingredients/packaging-migrants.html"
     },
     {
       "id": 16,
-      "text": "Czy zostawiasz swoją plastikową butelkę wody na słońcu w samochodzie? Ciepło rozkłada PET i uwalnia antymon oraz mikroplastik do wody, którą później pijesz.",
-      "link": "https://www.botia-safefood.com/ingredients/endocrine-disruptors.html"
+      "text": "Ta butelka wody, którą zostawiłeś w samochodzie w sierpniu.",
+      "answer": "Ciepło degraduje PET. Uwalnia do wody antymon i mikroplastik. Jeśli woda smakuje lekko plastikiem, to nie jest twoje wyobrażenie.",
+      "link": "/ingredients/endocrine-disruptors.html"
+    },
+    {
+      "id": 17,
+      "text": "Żelatyna nie ma smaku, koloru ani zapachu. Skąd więc pochodzi?",
+      "answer": "Kolagen, pozyskiwany ze skóry i kości zwierząt. Jest w słodyczach, jogurtach, kapsułkach i musach. To słowo niczego nie zdradza.",
+      "link": "/ingredients/gelatine.html"
+    },
+    {
+      "id": 18,
+      "text": "Dlaczego olej w twoim majonezie nigdy się nie rozdziela?",
+      "answer": "Emulgatory takie jak E471 łączą wodę i tłuszcz wbrew ich naturze. Pozostawione same sobie rozdzieliłyby się w ciągu kilku minut.",
+      "link": "/ingredients/e471.html"
+    },
+    {
+      "id": 19,
+      "text": "Guma ksantanowa jest w twoim sosie, twoim bezglutenowym pieczywie i twoich lodach.",
+      "answer": "Produkuje się go poprzez fermentację cukru z użyciem bakterii. Niewielka ilość zagęszcza całą partię. To jeden z najczęściej stosowanych składników tekstury na świecie.",
+      "link": "/ingredients/xanthan_gum.html"
+    },
+    {
+      "id": 20,
+      "text": "Niektóre napoje roślinne zawierają składnik pozyskiwany z czerwonych wodorostów.",
+      "answer": "Karagen. Zapobiega rozwarstwianiu się napoju na półce. Jest dozwolony, a także podlega aktywnemu przeglądowi naukowemu pod kątem jego wpływu na jelita.",
+      "link": "/ingredients/carrageenan.html"
+    },
+    {
+      "id": 21,
+      "text": "Sukraloza jest około 600 razy słodsza niż cukier.",
+      "answer": "Dlatego potrzebujesz tylko miligramów. Powstaje poprzez modyfikację samego cukru, zastąpienie trzech części cząsteczki, tak aby organizm jej nie przetwarzał.",
+      "link": "/ingredients/sucralose.html"
+    },
+    {
+      "id": 22,
+      "text": "Dlaczego słodycze bez cukru czasami mają ostrzeżenie dotyczące trawienia?",
+      "answer": "Alkohole cukrowe, takie jak maltitol i sorbitol, nie są w pełni wchłaniane. To, co nie zostanie wchłonięte, wędruje dalej, a w większych ilościach ma to konsekwencje.",
+      "link": "/ingredients/maltitol.html"
+    },
+    {
+      "id": 23,
+      "text": "Stewia z przodu opakowania. Glikozydy stewiolowe w składzie.",
+      "answer": "Słodzik to wyizolowany związek z liścia, oczyszczony w laboratorium — nie sama roślina. Obrazek zielonego liścia robi tu bardzo dużo pracy.",
+      "link": "/ingredients/steviol_glycosides.html"
+    },
+    {
+      "id": 24,
+      "text": "W 2022 roku UE zakazała środka wybielającego, który USA wciąż dopuszczają.",
+      "answer": "Dwutlenek tytanu, E171. EFSA stwierdziła, że nie można go już dłużej uznawać za bezpieczny. Ta sama substancja, te same dowody, dwie różne odpowiedzi.",
+      "link": "/ingredients/e171.html"
+    },
+    {
+      "id": 25,
+      "text": "Ten sam dodatek może być oznaczony jako E471 w Europie, INS 471 na arenie międzynarodowej i zupełnie inaczej w USA.",
+      "answer": "Trzy systemy nazewnictwa dla jednej substancji. Producenci dokładnie wiedzą, co oznacza każdy kod. To właśnie tę lukę BOTIA ma za zadanie wypełnić.",
+      "link": "/pages/the_code_system.html"
+    },
+    {
+      "id": 26,
+      "text": "Lecytyna to substancja, która zapobiega ziarnistości czekolady.",
+      "answer": "To emulgator, zwykle z soi lub słonecznika. Ale etykieta nie zawsze podaje, z czego dokładnie — może też pochodzić z jajka.",
+      "link": "/ingredients/lecithins.html"
+    },
+    {
+      "id": 27,
+      "text": "„Wolne od tłuszczów trans” nie zawsze oznacza zero.",
+      "answer": "W wielu miejscach produkt może zaokrąglać się w dół do zera poniżej pewnego progu na porcję. Zjedz trzy porcje i matematyka się zmienia.",
+      "link": "/ingredients/trans_fats.html"
+    },
+    {
+      "id": 28,
+      "text": "Składniki są wymienione według wagi, od największej do najmniejszej ilości.",
+      "answer": "Więc pierwsze trzy informują cię, czym produkt faktycznie jest. Jeśli cukier jest na drugim miejscu, reszta przedniej etykiety to dekoracja.",
+      "link": "/pages/evidence.html"
+    },
+    {
+      "id": 29,
+      "text": "Prawdziwe jedzenie nie potrzebuje wzmacniaczy smaku.",
+      "answer": "Gdy na etykiecie widnieje „aromat”, oznacza to, że przetwarzanie pozbawiło produkt pierwotnego smaku i trzeba go było przywrócić. To jeden z wyznaczników żywności wysoko przetworzonej według klasyfikacji NOVA.",
+      "link": "/pages/tasting_like_itself.html"
+    },
+    {
+      "id": 30,
+      "text": "Produkt może mieć mało cukru, mało tłuszczu i dużo białka — a mimo to być wysoko przetworzony.",
+      "answer": "NOVA nie klasyfikuje według składników odżywczych. Klasyfikuje według tego, czy lista składników zawiera substancje, których nigdy nie znalazłbyś w kuchni.",
+      "link": "/pages/ultra_processed.html"
+    },
+    {
+      "id": 31,
+      "text": "Koncentrat soku owocowego jest używany do słodzenia produktów oznaczonych jako „bez dodatku cukru”.",
+      "answer": "WHO zalicza go do cukrów wolnych. Zagęszczanie owoców usuwa wodę i błonnik — to, co zostaje, zachowuje się jak syrop.",
+      "link": "/ingredients/fruit_juice_concentrate.html"
+    },
+    {
+      "id": 32,
+      "text": "Gliceryna występuje w słodyczach, napojach i wypiekach — i może być pochodzenia zwierzęcego lub roślinnego.",
+      "answer": "Etykieta rzadko mówi, która. Ta sama nazwa, ten sam kod, dwa zupełnie różne pochodzenia.",
+      "link": "/ingredients/glycerol.html"
+    },
+    {
+      "id": 33,
+      "text": "Enzymy spożywcze są wykorzystywane w pieczywie, serze i sokach — a często w ogóle nie pojawiają się na etykiecie.",
+      "answer": "W wielu przypadkach są traktowane jako środki pomocnicze w przetwarzaniu, a nie składniki. Co oznacza, że prawnie nie muszą być deklarowane.",
+      "link": "/ingredients/enzymes.html"
+    },
+    {
+      "id": 34,
+      "text": "Duże drapieżne ryby kumulują rtęć ze wszystkiego, co jedzą.",
+      "answer": "Metylortęć kumuluje się w łańcuchu pokarmowym. Dlatego zalecenia dotyczące miecznika i tuńczyka różnią się od zaleceń dotyczących sardynek.",
+      "link": "/ingredients/methylmercury.html"
+    },
+    {
+      "id": 35,
+      "text": "Niektóre związki nie opuszczają organizmu — osadzają się w tłuszczu i czekają.",
+      "answer": "Substancje lipofilne kumulują się przez lata i uwalniają podczas szybkiej utraty wagi, ciąży lub menopauzy, w skoncentrowanej formie.",
+      "link": "/ingredients/fat-accumulation.html"
+    },
+    {
+      "id": 36,
+      "text": "BHA i BHT zapobiegają jełczeniu tłuszczów w chipsach, płatkach śniadaniowych i gumie do żucia.",
+      "answer": "Oba są obecnie poddawane przeglądowi naukowemu pod kątem możliwej aktywności hormonalnej. Oba są nadal dopuszczone do obrotu. Oba znajdują się obecnie na etykietach.",
+      "link": "/ingredients/bha.html"
+    },
+    {
+      "id": 37,
+      "text": "Parabeny są znane jako składniki kosmetyków — ale występują również w żywności.",
+      "answer": "Stosowane są jako konserwanty i badane pod kątem aktywności endokrynnej. Debata o kosmetykach i debata o żywności dotyczą tej samej substancji.",
+      "link": "/ingredients/parabens.html"
+    },
+    {
+      "id": 38,
+      "text": "Kadm dostaje się do żywności przez glebę, a nie przez fabrykę.",
+      "answer": "Rośliny wchłaniają go ze skażonej gleby. Jest w kakao, skorupiakach i niektórych zbożach — a żadna lista składników nigdy o nim nie wspomni.",
+      "link": "/ingredients/cadmium.html"
+    },
+    {
+      "id": 39,
+      "text": "Aspartam to jeden z najlepiej zbadanych dodatków do żywności w historii.",
+      "answer": "Tysiące artykułów, dekady analiz, a debata wciąż pozostaje otwarta. To nie skandal — tak właśnie wygląda nierozstrzygnięta kwestia.",
+      "link": "/ingredients/aspartame.html"
+    },
+    {
+      "id": 40,
+      "text": "Erytrol przechodzi przez organizm prawie nietknięty.",
+      "answer": "Dlatego ma prawie zero kalorii. Około 90% jest wchłaniane i wydalane w niezmienionej formie, co również sprawia, że jest łagodniejsze dla układu trawiennego niż inne alkohole cukrowe.",
+      "link": "/ingredients/erythritol.html"
+    },
+    {
+      "id": 41,
+      "text": "WHO w 2023 roku odradziło stosowania niesłodzików cukrowych w celu kontroli wagi.",
+      "answer": "Nie dlatego, że są niebezpieczne, ale dlatego, że długotrwałe stosowanie nie wykazało korzyści dla wagi — oraz możliwych powiązań z innymi zagrożeniami.",
+      "link": "/pages/not_sugar.html"
+    },
+    {
+      "id": 42,
+      "text": "Guma guar pochodzi z fasoli uprawianej głównie w Indiach.",
+      "answer": "Gęstnieje w niskich temperaturach, dlatego znajduje się w lodach i zimnych sosach. Nieurodzaj tam zmienia ceny na całym świecie.",
+      "link": "/ingredients/guar_gum.html"
+    },
+    {
+      "id": 43,
+      "text": "Konjac to korzeń używany do produkcji makaronu o niemal zerowej kaloryczności.",
+      "answer": "To prawie wyłącznie błonnik i woda. Został również ograniczony w niektórych produktach żelowych ze względu na to, jak zachowuje się po połknięciu w całości.",
+      "link": "/ingredients/konjac.html"
+    },
+    {
+      "id": 44,
+      "text": "Ocet wydaje się najprostszym składnikiem na etykiecie.",
+      "answer": "Produkuje się go poprzez fermentację alkoholu. Dlatego to, co wydaje się oczywiste, nie zawsze jest oczywiste dla każdego, kto czyta etykietę.",
+      "link": "/ingredients/vinegar.html"
+    },
+    {
+      "id": 45,
+      "text": "Ołów w żywności nie pochodzi ze składnika. Pochodzi ze wszystkiego, co go otacza.",
+      "answer": "Gleba, woda, stare rury, trochę ceramiki. To zanieczyszczenie, a nie dodatek — dlatego właśnie etykieta nie może cię przed tym ostrzec.",
+      "link": "/ingredients/lead.html"
+    },
+    {
+      "id": 46,
+      "text": "Niektóre składniki mogą być pochodzenia zwierzęcego, roślinnego lub na bazie alkoholu, a etykieta wygląda identycznie w każdym przypadku.",
+      "answer": "E471, lecytyny, enzymy, żelatyna, glicerol, naturalne aromaty. W pierwszej analizie BOTIA 72% produktów nie mogło zostać potwierdzonych w żadną stronę.",
+      "link": "/pages/undeclared_origin.html"
+    },
+    {
+      "id": 47,
+      "text": "Sacharynę odkryto w 1879 roku przez chemika, który zapomniał umyć ręce.",
+      "answer": "Zauważył, że jego chleb smakował słodko. Od tego czasu przechodził przez zakazy, ostrzeżenia i przywrócenia — i nadal jest na półkach do dziś.",
+      "link": "/ingredients/saccharin.html"
+    },
+    {
+      "id": 48,
+      "text": "Cyklaminiany są zakazane w Stanach Zjednoczonych, a dozwolone w Unii Europejskiej.",
+      "answer": "Ta sama substancja, ta sama nauka, przeciwne wnioski. Regulacja nie jest jedyną globalną prawdą.",
+      "link": "/ingredients/cyclamates.html"
+    },
+    {
+      "id": 49,
+      "text": "Dioksyny nie są dodawane do niczego. Są produktem ubocznym spalania.",
+      "answer": "Osadzają się na trawie, zwierzęta je zjadają, a one koncentrują się w tłuszczu i nabiale. Nic na etykiecie nie powie ci, że tam są.",
+      "link": "/ingredients/dioxins_pcbs.html"
+    },
+    {
+      "id": 50,
+      "text": "Oznakowanie żywieniowe nigdy nie miało na celu pokazywania, jak bardzo coś jest przetworzone.",
+      "answer": "Liczy składniki odżywcze. Nie widzi reformulacji. Lista składników może — ale nigdy nie była przeznaczona do czytania jako całość.",
+      "link": "/pages/ultra_processed.html"
     }
   ]
 }

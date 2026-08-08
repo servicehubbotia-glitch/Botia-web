@@ -1,99 +1,317 @@
 {
   "ui": {
-    "title": "BOTIA Assistente",
+    "title": "BOTIA Assistant",
     "placeholder": "Pergunte ou digite 'next'…",
     "sendButton": "Enviar",
-    "welcome": "👋 Olá! Eu sou o assistente BOTIA. Vou te perguntar alguns fatos sobre alimentos. Você também pode me perguntar qualquer coisa sobre ingredientes, rótulos ou aditivos.",
+    "welcome": "👋 Olá! Eu sou o assistente BOTIA. Vou te mostrar coisas que os rótulos não contam. Você também pode me perguntar qualquer coisa sobre ingredientes, rótulos ou aditivos.",
     "nextButton": "Próxima pergunta",
     "discoverButton": "Descubra na BOTIA",
     "limitMessage": "Você usou suas 3 perguntas gratuitas. Para consultas ilimitadas, baixe o aplicativo BOTIA.",
     "limitButton": "Vá para BOTIA",
     "offTopic": "Só posso ajudar com perguntas sobre ingredientes alimentares e rótulos.",
     "error": "Desculpe, houve um problema.",
-    "connectionError": "Erro de conexão. Verifique sua rede.",
-    "quizDone": "🎉 Você viu todas as 16 perguntas! Agora você pode me perguntar qualquer coisa sobre ingredientes alimentares e aditivos.",
-    "noMoreQuestions": "Sem mais perguntas! Pergunte-me qualquer coisa."
+    "connectionError": "Erro de conexão. Verifique sua rede."
   },
   "questions": [
     {
       "id": 1,
-      "text": "Aquele vermelho apetitoso nas suas balas de goma ou no iogurte de morango? É feito esmagando milhares de insetos. Chama-se Carmim ou Cochonilha. Atreva-se a procurar E-120 no seu rótulo?",
-      "link": "https://www.botia-safefood.com/ingredients/carmine.html"
+      "text": "Aquele vermelho apetitoso nos seus doces de goma ou no iogurte de morango? É feito esmagando milhares de insetos.",
+      "answer": "Chama-se carmim, ou cochonilha — E120. Vem de um inseto escama cultivado em cactos. É autorizado, é usado há séculos, e está em mais rótulos do que você imagina.",
+      "link": "/ingredients/carmine.html"
     },
     {
       "id": 2,
-      "text": "Você sabe por que o queijo ralado em saco nunca gruda? Porque eles adicionam pó de celulose — literalmente fibra de madeira refinada. Você está comendo queijo ou serragem?",
-      "link": "https://www.botia-safefood.com/ingredients/e472.html"
+      "text": "Por que as maçãs do supermercado brilham como se tivessem sido polidas?",
+      "answer": "Goma-laca (E904) — uma resina secretada por um besouro asiático. Ela sela a fruta e a deixa brilhante. Frutas frescas não trazem lista de ingredientes, então ninguém te avisa.",
+      "link": "/ingredients/shellac.html"
     },
     {
       "id": 3,
-      "text": "Por que as maçãs do supermercado brilham tanto? Elas são revestidas com goma-laca (E-904), uma cera secretada por besouros asiáticos. Que tal uma mordida?",
-      "link": "https://www.botia-safefood.com/ingredients/shellac.html"
+      "text": "Você sabe por que o queijo ralado em saco nunca se empelota?",
+      "answer": "Pó de celulose — fibra de madeira refinada — é adicionado como agente antiaglomerante. É comestível e autorizado. Também não é queijo.",
+      "link": "/ingredients/e472.html"
     },
     {
       "id": 4,
-      "text": "O que tem mais açúcar: uma lata de refrigerante ou quatro colheres de sopa de leite condensado? Eles estão quase empatados! Mas o leite condensado esconde o açúcar sob um rótulo de \"laticínio saudável\".",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "O que tem mais açúcar: uma lata de refrigerante ou quatro colheres de sopa de leite condensado?",
+      "answer": "Estão quase empatados. Mas um é vendido como guloseima e o outro sob um rótulo de \"laticínio\". A palavra na frente muda como você lê a mesma quantidade de açúcar.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 5,
-      "text": "Você acha que tomate frito em pote é só tomate e óleo? Na maioria das marcas, o segundo ingrediente mais abundante é açúcar. Você está temperando sua massa ou derramando xarope?",
-      "link": "https://www.botia-safefood.com/ingredients/glucose_syrup.html"
+      "text": "Você acha que molho de tomate em pote é só tomate e óleo?",
+      "answer": "Na maioria das marcas, o açúcar fica perto do topo da lista de ingredientes — adicionado para cortar a acidez. Os ingredientes são listados por peso, então a posição dele indica o quanto está presente ali.",
+      "link": "/ingredients/glucose_syrup.html"
     },
     {
       "id": 6,
-      "text": "Você vê um iogurte '0% de gordura'. Parece bom, certo? O que eles substituem essa gordura para que ainda tenha um bom gosto? Com toneladas de açúcar ou amido modificado.",
-      "link": "https://www.botia-safefood.com/ingredients/maltodextrin.html"
+      "text": "Um iogurte '0% gordura' parece bom. Mas o que substitui a gordura para que ele ainda tenha textura cremosa?",
+      "answer": "Geralmente amido modificado ou maltodextrina. A gordura carrega textura e sabor — retire-a e algo tem que fazer esse trabalho no lugar.",
+      "link": "/ingredients/maltodextrin.html"
     },
     {
       "id": 7,
-      "text": "O seu pão é realmente integral ou é pão branco \"pintado\"? Muitas marcas usam farinha branca e adicionam farelo para deixá-lo com aparência marrom. Você sabe como identificar isso no rótulo?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "O seu pão integral é realmente integral, ou é pão branco fantasiado?",
+      "answer": "Cor não prova nada. Farelo ou malte podem escurecer farinha branca. A única forma de saber é a lista de ingredientes — a farinha integral tem de ser o primeiro item.",
+      "link": "/pages/hidden_sugars.html"
     },
     {
       "id": 8,
-      "text": "Você sabia que o chocolate branco não contém absolutamente nenhum cacau de verdade? É apenas manteiga de cacau, leite e açúcar. Ele ainda deveria ser chamado de chocolate?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Você sabia que o chocolate branco não contém nenhum sólido de cacau?",
+      "answer": "É manteiga de cacau, leite e açúcar. A gordura do grão, não o grão. Legalmente é chocolate. Botanicamente, mal tem relação.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 9,
-      "text": "Por que o suco '100% natural' de caixinha tem o mesmo gosto o ano inteiro? Porque eles o armazenam por até um ano sem oxigênio e depois adicionam 'pacotes de sabor' para fazê-lo cheirar a laranja de novo.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Por que o suco de caixinha tem o mesmo gosto em janeiro e em agosto?",
+      "answer": "É armazenado por meses em tanques sem oxigênio, o que remove o aroma. Pacotes de sabor são adicionados de volta antes do engarrafamento. A mesma fruta, remontada.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 10,
-      "text": "Você vê 'com sabores naturais' em alguns biscoitos de limão. A lei permite que esse sabor venha de um fungo ou casca de árvore, não de um limão de verdade. Tem gosto de fruta ou de laboratório?",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Com sabor natural em um biscoito de limão. Isso vem de um limão?",
+      "answer": "Não necessariamente. \"Natural\" descreve a origem ser natural, não qual delas. Pode vir de um fungo, casca ou fermentação, e o rótulo nunca diz.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 11,
-      "text": "Você compra açúcar mascavo porque é mais natural? 90% do açúcar mascavo de supermercado é açúcar branco refinado com melaço injetado para colori-lo de marrom. Você está pagando mais por corante?",
-      "link": "https://www.botia-safefood.com/ingredients/free_sugars.html"
+      "text": "Você compra açúcar mascavo porque ele parece mais natural?",
+      "answer": "A maior parte do açúcar mascavo de supermercado é açúcar branco refinado com melaço adicionado de volta para dar cor. Seu corpo trata isso da mesma forma. Você está pagando pela cor.",
+      "link": "/ingredients/free_sugars.html"
     },
     {
       "id": 12,
-      "text": "Como pode um embutido dizer 'sem conservantes artificiais' e durar um mês? Eles usam extrato de aipo, rico em nitratos naturais que se transformam nos mesmos nitritos que a indústria quer esconder.",
-      "link": "https://www.botia-safefood.com/ingredients/natural_flavourings.html"
+      "text": "Como pode a carne curada afirmar que não tem 'conservantes artificiais' e ainda durar um mês?",
+      "answer": "Extrato de aipo. É naturalmente rico em nitratos, que se transformam nos mesmos nitritos que o rótulo evita nomear. Fonte natural, química idêntica.",
+      "link": "/ingredients/natural_flavourings.html"
     },
     {
       "id": 13,
-      "text": "Quase todos os alimentos enlatados têm um revestimento de plástico que libera BPA — um disruptor endócrino que imita seus estrogênios. Você sabe quais marcas já usam latas livres de BPA?",
-      "link": "https://www.botia-safefood.com/ingredients/bpa.html"
+      "text": "Quase todas as latas no seu armário têm um revestimento de plástico por dentro.",
+      "answer": "Muitos usaram BPA, que imita o estrogênio no corpo. Algumas marcas deixaram de usá-lo. A lata não diz qual.",
+      "link": "/ingredients/bpa.html"
     },
     {
       "id": 14,
-      "text": "Você coloca seu Tupperware no micro-ondas porque diz \"próprio para micro-ondas\"? Isso só significa que o plástico não vai derreter, mas ele ainda libera ftalatos diretamente na sua comida.",
-      "link": "https://www.botia-safefood.com/ingredients/phthalates.html"
+      "text": "'Microwave safe' em um recipiente de plástico. Seguro para quê, exatamente?",
+      "answer": "Significa que o plástico não derrete nem deforma. Não diz nada sobre o que migra para a sua comida quando ele esquenta.",
+      "link": "/ingredients/phthalates.html"
     },
     {
       "id": 15,
-      "text": "Produtos químicos plásticos adoram gordura. Se você armazenar queijo ou carne envoltos em filme plástico, a migração de toxinas é muito maior do que se você armazenar vegetais.",
-      "link": "https://www.botia-safefood.com/ingredients/packaging-migrants.html"
+      "text": "Filme plástico em queijo e filme plástico em alface não são a mesma coisa.",
+      "answer": "Plastificantes dissolvem-se em gordura. Embrulhe algo gorduroso e a migração aumenta drasticamente. Embrulhe algo aquoso e ela mal se move.",
+      "link": "/ingredients/packaging-migrants.html"
     },
     {
       "id": 16,
-      "text": "Você deixa sua garrafa plástica de água no sol dentro do carro? O calor degrada o PET e libera antimônio e microplásticos na água que você bebe depois.",
-      "link": "https://www.botia-safefood.com/ingredients/endocrine-disruptors.html"
+      "text": "Aquela garrafa de água que você deixou no carro em agosto.",
+      "answer": "O calor degrada o PET. Ele libera antimônio e microplásticos na água. Se tiver um leve gosto de plástico, isso não é imaginação sua.",
+      "link": "/ingredients/endocrine-disruptors.html"
+    },
+    {
+      "id": 17,
+      "text": "A gelatina não tem sabor, não tem cor e não tem cheiro. Então, de onde ela vem?",
+      "answer": "Colágeno, extraído da pele e dos ossos de animais. Está em doces, iogurtes, cápsulas e mousses. A palavra não revela nada.",
+      "link": "/ingredients/gelatine.html"
+    },
+    {
+      "id": 18,
+      "text": "Por que o óleo nunca se separa na sua maionese?",
+      "answer": "Emulsificantes como o E471 mantêm água e gordura unidas contra sua natureza. Se deixados sozinhos, eles se separariam em minutos.",
+      "link": "/ingredients/e471.html"
+    },
+    {
+      "id": 19,
+      "text": "A goma xantana está no seu molho, no seu pão sem glúten e no seu sorvete.",
+      "answer": "É produzido pela fermentação de açúcar com uma bactéria. Uma quantidade mínima engrossa um lote inteiro. É um dos ingredientes de textura mais amplamente utilizados que existem.",
+      "link": "/ingredients/xanthan_gum.html"
+    },
+    {
+      "id": 20,
+      "text": "Alguns leites vegetais contêm um ingrediente extraído de algas vermelhas.",
+      "answer": "Carragenina. Impede que a bebida se separe na prateleira. É autorizada e também está sob revisão científica ativa quanto aos seus efeitos no intestino.",
+      "link": "/ingredients/carrageenan.html"
+    },
+    {
+      "id": 21,
+      "text": "A sucralose é cerca de 600 vezes mais doce que o açúcar.",
+      "answer": "É por isso que você só precisa de miligramas. É feito modificando o próprio açúcar, substituindo três partes da molécula para que o corpo não o processe.",
+      "link": "/ingredients/sucralose.html"
+    },
+    {
+      "id": 22,
+      "text": "Por que os doces sem açúcar às vezes vêm com um aviso sobre a digestão?",
+      "answer": "Álcoois de açúcar como maltitol e sorbitol não são totalmente absorvidos. O que não é absorvido segue em frente e, em quantidade, isso tem consequências.",
+      "link": "/ingredients/maltitol.html"
+    },
+    {
+      "id": 23,
+      "text": "Stevia na frente da embalagem. Glicosídeos de esteviol nos ingredientes.",
+      "answer": "O adoçante é um composto extraído da folha, purificado em laboratório — não a planta em si. A imagem de uma folha verde está fazendo muito trabalho.",
+      "link": "/ingredients/steviol_glycosides.html"
+    },
+    {
+      "id": 24,
+      "text": "Em 2022, a UE proibiu um agente clareador que os EUA ainda permitem.",
+      "answer": "Dióxido de titânio, E171. A EFSA concluiu que ele não poderia mais ser considerado seguro. A mesma substância, as mesmas evidências, duas respostas diferentes.",
+      "link": "/ingredients/e171.html"
+    },
+    {
+      "id": 25,
+      "text": "O mesmo aditivo pode ser E471 aqui, INS 471 internacionalmente e algo completamente diferente nos EUA.",
+      "answer": "Três sistemas de nomenclatura para uma mesma substância. Os fabricantes sabem exatamente o que cada código significa. É essa lacuna que a BOTIA existe para preencher.",
+      "link": "/pages/the_code_system.html"
+    },
+    {
+      "id": 26,
+      "text": "A lecitina é o que impede o chocolate de ficar granulado.",
+      "answer": "É um emulsificante, e geralmente vem de soja ou girassol. Mas o rótulo nem sempre diz qual — e também pode ser de ovo.",
+      "link": "/ingredients/lecithins.html"
+    },
+    {
+      "id": 27,
+      "text": "'Livre de gordura trans' nem sempre significa zero.",
+      "answer": "Em muitos lugares, um produto pode ser arredondado para zero abaixo de um certo limite por porção. Coma três porções e a matemática muda.",
+      "link": "/ingredients/trans_fats.html"
+    },
+    {
+      "id": 28,
+      "text": "Os ingredientes são listados por peso, do maior para o menor.",
+      "answer": "Então os três primeiros te dizem o que o produto realmente é. Se o açúcar estiver em segundo lugar, o resto do rótulo frontal é decoração.",
+      "link": "/pages/evidence.html"
+    },
+    {
+      "id": 29,
+      "text": "Comida de verdade não precisa de aromatizantes.",
+      "answer": "Quando um rótulo indica \"sabor adicionado\", significa que o processamento removeu o sabor original e ele teve que ser reposto. Esse é um dos marcadores da NOVA para alimentos ultraprocessados.",
+      "link": "/pages/tasting_like_itself.html"
+    },
+    {
+      "id": 30,
+      "text": "Um produto pode ter baixo teor de açúcar, baixo teor de gordura, alto teor de proteína — e ainda assim ser ultraprocessado.",
+      "answer": "A NOVA não classifica por nutrientes. Ela classifica pela presença, na lista de ingredientes, de substâncias que você nunca encontraria em uma cozinha.",
+      "link": "/pages/ultra_processed.html"
+    },
+    {
+      "id": 31,
+      "text": "Concentrado de suco de fruta é usado para adoçar produtos que dizem \"sem adição de açúcar\".",
+      "answer": "A OMS considera isso um açúcar livre. Concentrar a fruta remove a água e as fibras — o que resta se comporta como xarope.",
+      "link": "/ingredients/fruit_juice_concentrate.html"
+    },
+    {
+      "id": 32,
+      "text": "O glicerol aparece em doces, bebidas e produtos de panificação — e pode ser de origem animal ou vegetal.",
+      "answer": "O rótulo raramente diz qual. Mesmo nome, mesmo código, duas origens completamente diferentes.",
+      "link": "/ingredients/glycerol.html"
+    },
+    {
+      "id": 33,
+      "text": "Enzimas alimentares são usadas em pão, queijo e suco — e muitas vezes nem aparecem no rótulo.",
+      "answer": "Em muitos casos, eles são tratados como auxiliares de processamento, não como ingredientes. O que significa que, legalmente, não precisam ser declarados.",
+      "link": "/ingredients/enzymes.html"
+    },
+    {
+      "id": 34,
+      "text": "Grandes peixes predadores concentram mercúrio de tudo o que comem.",
+      "answer": "O metilmercúrio acumula-se ao longo da cadeia alimentar. É por isso que as recomendações sobre o peixe-espada e o atum diferem das recomendações sobre as sardinhas.",
+      "link": "/ingredients/methylmercury.html"
+    },
+    {
+      "id": 35,
+      "text": "Alguns compostos não saem do corpo — eles se acumulam na gordura e esperam.",
+      "answer": "Substâncias lipofílicas acumulam-se ao longo dos anos e são liberadas durante perda de peso rápida, gravidez ou menopausa, de forma concentrada.",
+      "link": "/ingredients/fat-accumulation.html"
+    },
+    {
+      "id": 36,
+      "text": "BHA e BHT evitam que as gorduras fiquem rançosas em batatas fritas, cereais e chicletes.",
+      "answer": "Ambos estão sob revisão científica por possível atividade hormonal. Ambos ainda estão autorizados. Ambos estão nos rótulos agora.",
+      "link": "/ingredients/bha.html"
+    },
+    {
+      "id": 37,
+      "text": "Os parabenos são conhecidos como ingredientes cosméticos — mas também aparecem em alimentos.",
+      "answer": "Eles são usados como conservantes e são estudados por atividade endócrina. O debate sobre cosméticos e o sobre alimentos é a mesma substância.",
+      "link": "/ingredients/parabens.html"
+    },
+    {
+      "id": 38,
+      "text": "O cádmio entra nos alimentos através do solo, não da fábrica.",
+      "answer": "As plantas absorvem-no do solo contaminado. Está no cacau, nos mariscos e em alguns cereais — e nenhuma lista de ingredientes jamais o mencionará.",
+      "link": "/ingredients/cadmium.html"
+    },
+    {
+      "id": 39,
+      "text": "O aspartame é um dos aditivos alimentares mais estudados da história.",
+      "answer": "Milhares de artigos, décadas de revisão, e o debate ainda está em aberto. Isso não é um escândalo — é assim que se parece uma questão não resolvida.",
+      "link": "/ingredients/aspartame.html"
+    },
+    {
+      "id": 40,
+      "text": "O eritritol passa pelo corpo quase intacto.",
+      "answer": "Por isso tem quase zero calorias. Cerca de 90% é absorvido e excretado inalterado, o que também explica por que é mais suave para a digestão do que outros álcoois de açúcar.",
+      "link": "/ingredients/erythritol.html"
+    },
+    {
+      "id": 41,
+      "text": "A OMS aconselhou em 2023 contra o uso de adoçantes não açucarados para controle de peso.",
+      "answer": "Não porque sejam inseguros, mas porque o uso a longo prazo não mostrou benefício para o peso — e possíveis associações com outros riscos.",
+      "link": "/pages/not_sugar.html"
+    },
+    {
+      "id": 42,
+      "text": "Goma guar vem de um feijão cultivado principalmente na Índia.",
+      "answer": "Engrossa em temperaturas frias, por isso está em sorvetes e molhos frios. Uma quebra de safra lá muda os preços no mundo todo.",
+      "link": "/ingredients/guar_gum.html"
+    },
+    {
+      "id": 43,
+      "text": "Konjac é uma raiz usada para fazer macarrão com quase nenhuma caloria.",
+      "answer": "É quase tudo fibra e água. Também foi restringido em alguns produtos de gelatina por causa de como se comporta quando engolido inteiro.",
+      "link": "/ingredients/konjac.html"
+    },
+    {
+      "id": 44,
+      "text": "O vinagre parece o ingrediente mais simples em um rótulo.",
+      "answer": "É produzido pela fermentação do álcool. É por isso que o que parece óbvio nem sempre é óbvio para todos que leem o rótulo.",
+      "link": "/ingredients/vinegar.html"
+    },
+    {
+      "id": 45,
+      "text": "O chumbo nos alimentos não vem de um ingrediente. Ele vem de tudo ao redor dele.",
+      "answer": "Solo, água, canos velhos, algumas cerâmicas. É um contaminante, não um aditivo — e é exatamente por isso que o rótulo não pode avisar você.",
+      "link": "/ingredients/lead.html"
+    },
+    {
+      "id": 46,
+      "text": "Alguns ingredientes podem ser de origem animal, vegetal ou alcoólica, e o rótulo parece idêntico em ambos os casos.",
+      "answer": "E471, lecitinas, enzimas, gelatina, glicerol, aromas naturais. Na primeira análise da BOTIA, 72% dos produtos não puderam ser confirmados em nenhum dos sentidos.",
+      "link": "/pages/undeclared_origin.html"
+    },
+    {
+      "id": 47,
+      "text": "A sacarina foi descoberta em 1879 por um químico que esqueceu de lavar as mãos.",
+      "answer": "Ele percebeu que seu pão tinha gosto doce. Desde então, passou por proibições, advertências e reintegrações — e ainda está nas prateleiras hoje.",
+      "link": "/ingredients/saccharin.html"
+    },
+    {
+      "id": 48,
+      "text": "Os ciclamatos são proibidos nos Estados Unidos e autorizados na União Europeia.",
+      "answer": "Mesma substância, mesma ciência, conclusões opostas. A regulação não é uma verdade global única.",
+      "link": "/ingredients/cyclamates.html"
+    },
+    {
+      "id": 49,
+      "text": "As dioxinas não são adicionadas a nada. Elas são um subproduto da combustão.",
+      "answer": "Eles se acumulam na grama, os animais a comem, e eles se concentram na gordura e nos laticínios. Nada em um rótulo pode dizer que eles estão lá.",
+      "link": "/ingredients/dioxins_pcbs.html"
+    },
+    {
+      "id": 50,
+      "text": "A rotulagem nutricional nunca foi concebida para mostrar o quão processado algo é.",
+      "answer": "Ela conta nutrientes. Ela não vê reformulação. A lista de ingredientes pode — mas nunca foi feita para ser lida como um todo.",
+      "link": "/pages/ultra_processed.html"
     }
   ]
 }
