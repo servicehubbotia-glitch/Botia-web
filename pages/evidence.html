@@ -15,7 +15,7 @@
   <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
   <link rel="canonical" href="https://www.botia-safefood.com/pages/evidence.html" />
   <meta name="description" content="BOTIA evidence-based modules are grounded in scientific and regulatory data from WHO, EFSA, FDA, and Codex Alimentarius." />
-    <link rel="dns-prefetch" href="https://www.who.int">
+  <link rel="dns-prefetch" href="https://www.who.int">
   <link rel="dns-prefetch" href="https://www.efsa.europa.eu">
   <link rel="dns-prefetch" href="https://eur-lex.europa.eu">
   <link rel="dns-prefetch" href="https://www.fao.org">
@@ -23,7 +23,6 @@
   <link rel="preconnect" href="https://www.efsa.europa.eu">
   <link rel="preconnect" href="https://eur-lex.europa.eu">
   <link rel="preconnect" href="https://www.fao.org">
-
   <link rel="icon" type="image/png" href="/botia_jar_512.png" />
   <link rel="preload" href="/botia-landing.css" as="style">
   <link rel="stylesheet" href="/botia-landing.css" />
@@ -31,9 +30,6 @@
   <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
   <style>
     .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
-    
-    
-    
     .hero { padding: 12px 0 0; text-align: center; }
     .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
     .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
@@ -81,11 +77,22 @@
     .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
     .source-links a { color: #e6a06b; text-decoration: none; }
     .source-links a:hover { text-decoration: underline; }
-
-
-  
     .hero + .section { margin-top: 0 !important; }
   </style>
+  <!-- JSON-LD añadido -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "BOTIA — Evidence Layers",
+    "description": "BOTIA evidence-based modules are grounded in scientific and regulatory data from WHO, EFSA, FDA, and Codex Alimentarius.",
+    "url": "https://www.botia-safefood.com/pages/evidence.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BOTIA Food Transparency"
+    }
+  }
+  </script>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/pages/evidence.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/pages/evidence.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/pages/evidence.html?lang=ar">
@@ -118,16 +125,11 @@
   </div>
 </div>
 
-
   <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
-  
-  
-
-  
 
   <main class="landing" id="main-content">
     <section class="hero">
-      <img class="hero-logo" fetchpriority="high" src="/botia/assets/evidence.png" srcset="/botia/assets/evidence.webp" type="image/webp" onerror="this.src='/botia/assets/evidence.png'" style="content-visibility:auto;" alt="BOTIA Evidence Layers — scientific and regulatory evidence modules" style="width:72px;height:72px;margin-bottom:12px;">
+      <img class="hero-logo" fetchpriority="high" src="/botia/assets/evidence.png" onerror="this.src='/botia/assets/evidence.png'" style="content-visibility:auto; width:72px; height:72px; margin-bottom:12px;" alt="BOTIA Evidence Layers — scientific and regulatory evidence modules">
       <h1 id="title">Evidence Layers</h1>
       <p class="subtitle" id="subtitle">What the label reveals. Grounded in science.</p>
       <p class="description" id="description">These modules are based on scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius. They explain what the evidence says, what BOTIA can detect, and what cannot be concluded from a label alone.</p>
@@ -146,30 +148,36 @@
     <section class="section">
       <h2 class="section-title" id="modules_title">Explore by evidence layer</h2>
       <div class="evidence-grid">
-        <a href="/ingredients/sugar.html" class="evidence-card">
-          <img src="/botia/assets/Sugar.png" srcset="/botia/assets/Sugar.webp" type="image/webp" onerror="this.src='/botia/assets/Sugar.png'" style="content-visibility:auto;" alt="BOTIA Hidden Sugar — detects free sugars on food labels" />
+        <a href="/pages/hidden_sugars.html" class="evidence-card">
+          <img src="/botia/assets/Sugar.png" onerror="this.src='/botia/assets/Sugar.png'" style="content-visibility:auto;" alt="BOTIA Hidden Sugar — detects free sugars on food labels" />
           <div class="card-title" id="sugar_name">Sugar</div>
           <div class="card-desc" id="sugar_desc">Free sugars and fast-absorbing carbohydrates hidden behind technical names.</div>
         </a>
-        <a href="/ingredients/sweetener.html" class="evidence-card">
-          <img src="/botia/assets/sweeteners.png" srcset="/botia/assets/sweeteners.webp" type="image/webp" onerror="this.src='/botia/assets/sweeteners.png'" style="content-visibility:auto;" alt="BOTIA Sweeteners — non-sugar sweeteners detection" />
+        <a href="/pages/not_sugar.html" class="evidence-card">
+          <img src="/botia/assets/sweeteners.png" onerror="this.src='/botia/assets/sweeteners.png'" style="content-visibility:auto;" alt="BOTIA Sweeteners — non-sugar sweeteners detection" />
           <div class="card-title" id="sweetener_name">Sweeteners</div>
           <div class="card-desc" id="sweetener_desc">Non-sugar sweeteners — WHO advises against them for weight control.</div>
         </a>
-        <a href="/ingredients/texture.html" class="evidence-card">
-          <img src="/botia/assets/texture.png" srcset="/botia/assets/texture.webp" type="image/webp" onerror="this.src='/botia/assets/texture.png'" style="content-visibility:auto;" alt="BOTIA Texture Modifiers — thickeners, stabilisers, emulsifiers" />
+        <a href="/pages/what_holds_it.html" class="evidence-card">
+          <img src="/botia/assets/texture.png" onerror="this.src='/botia/assets/texture.png'" style="content-visibility:auto;" alt="BOTIA Texture Modifiers — thickeners, stabilisers, emulsifiers" />
           <div class="card-title" id="texture_name">Texture</div>
           <div class="card-desc" id="texture_desc">Thickeners, stabilisers and emulsifiers — markers of ultra-processed food.</div>
         </a>
-        <a href="/ingredients/flavor.html" class="evidence-card">
-          <img src="/botia/assets/flavors.png" srcset="/botia/assets/flavors.webp" type="image/webp" onerror="this.src='/botia/assets/flavors.png'" style="content-visibility:auto;" alt="BOTIA Flavourings — flavour enhancers and ultra-processed markers" />
+        <a href="/pages/tasting_like_itself.html" class="evidence-card">
+          <img src="/botia/assets/flavors.png" onerror="this.src='/botia/assets/flavors.png'" style="content-visibility:auto;" alt="BOTIA Flavourings — flavour enhancers and ultra-processed markers" />
           <div class="card-title" id="flavor_name">Flavourings</div>
           <div class="card-desc" id="flavor_desc">Natural and artificial flavour enhancers added when base ingredients lack taste.</div>
         </a>
-        <a href="/ingredients/enumbers.html" class="evidence-card">
-          <img src="/botia/assets/enumbers.png" srcset="/botia/assets/enumbers.webp" type="image/webp" onerror="this.src='/botia/assets/enumbers.png'" style="content-visibility:auto;" alt="BOTIA E-numbers — EU authorised food additives explained" />
+        <a href="/pages/the_code_system.html" class="evidence-card">
+          <img src="/botia/assets/enumbers.png" onerror="this.src='/botia/assets/enumbers.png'" style="content-visibility:auto;" alt="BOTIA E-numbers — EU authorised food additives explained" />
           <div class="card-title" id="enumbers_name">E-numbers</div>
           <div class="card-desc" id="enumbers_desc">EU authorised food additives — authorised does not always mean without debate.</div>
+        </a>
+        <!-- Sexta tarjeta añadida -->
+        <a href="/pages/ultra_processed.html" class="evidence-card">
+          <img src="/botia/assets/botia_jar_512.png" alt="BOTIA Ultra-Processed — NOVA classification explained" />
+          <div class="card-title" id="ultra_name">Ultra-Processed</div>
+          <div class="card-desc" id="ultra_desc">What NOVA means and why the whole formulation matters, not just the parts.</div>
         </a>
       </div>
     </section>
@@ -220,8 +228,7 @@
     </section>
   </main>
 
-  
   <script src="/botia/assets/js/i18n-loader.js" defer></script>
-<script src="/botia/assets/js/botia-chat.js"></script>
+  <script src="/botia/assets/js/botia-chat.js"></script>
 </body>
 </html>
