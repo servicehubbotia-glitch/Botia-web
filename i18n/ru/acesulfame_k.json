@@ -1,44 +1,28 @@
 {
-  "name": "Ацесульфам К",
+  "name": "Ацесульфам калия",
   "e_code": "E950",
-  "aliases": "E950, acesulfame K, acesulfame potassium, Ace-K, acesulfame K sweetener, potassium salt of acesulfame",
+  "aliases": "E950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Высокоинтенсивный непитательный подсластитель, используемый для придания сладости продуктам питания и напиткам, часто в сочетании с другими подсластителями.",
-  "why_botia": "BOTIA помечает его, потому что E950 — это подсластитель высокой интенсивности, разрешённые области применения и максимальные уровни которого различаются между регуляторными системами, и он может использоваться в синергетических смесях с другими подсластителями.",
-  "can_1": "Определите E950 или ацесульфам К, если они указаны на этикетке.",
-  "can_2": "Активируйте слои информации о E-номерах и подсластителях.",
-  "cannot_1": "Определите количество, указанное только в списке ингредиентов, или входит ли он в состав смеси подсластителей.",
-  "cannot_2": "Определять общее диетическое воздействие или выносить медицинское или nutritional заключение для отдельного пользователя.",
+  "what_is": "Бескалорийный синтетический интенсивный подсластитель, примерно в 200 раз слаще сахарозы.",
+  "why_botia": "Он помечает его, потому что это искусственный подсластитель, характерный для ультра-обработанных продуктов (группа NOVA 4).",
+  "can_1": "Определите E950 или ацесульфам К на отсканированных этикетках ингредиентов.",
+  "can_2": "Активируйте оба информационных слоя: подсластитель и E-номера.",
+  "cannot_1": "Оцените, был ли ацесульфам К смешан с аспартамом для маскировки его металлического привкуса.",
+  "cannot_2": "Определите наличие органических примесей ниже стандартного предела чистоты 20 мг/кг.",
   "sources": [
     {
-      "label": "EFSA — Sweeteners",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "Commission Regulation (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
     },
     {
-      "label": "FDA — Aspartame and Other Sweeteners in Food",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
-    },
-    {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Regulation (EC) No 1333/2008 on food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333"
-    },
-    {
-      "label": "EU specifications for authorised food additives — Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A02012R0231-20241027"
-    },
-    {
-      "label": "JECFA — additive specification, INS 950",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=950"
+      "label": "EFSA Scientific Opinion on the Re-evaluation of Acesulfame K (2025)",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9213"
     }
   ],
-  "title": "Ацесульфам К",
-  "description": "Высокоинтенсивный непитательный подсластитель, используемый для придания сладости продуктам питания и напиткам, часто в сочетании с другими подсластителями."
+  "title": "Ацесульфам калия",
+  "description": "Бескалорийный синтетический интенсивный подсластитель, примерно в 200 раз слаще сахарозы."
 }

@@ -1,44 +1,28 @@
 {
-  "name": "Acesulfam K",
+  "name": "Acesulfam de potasiu",
   "e_code": "E950",
-  "aliases": "E950, acesulfame K, acesulfame potassium, Ace-K, acesulfame K sweetener, potassium salt of acesulfame",
+  "aliases": "E950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Îndulcitor non-nutritiv de intensitate ridicată, utilizat pentru a conferi dulceață alimentelor și băuturilor, adesea în combinație cu alți îndulcitori.",
-  "why_botia": "BOTIA o semnalizează deoarece E950 este un îndulcitor de mare intensitate ale cărui utilizări permise și niveluri maxime variază între sistemele de reglementare și poate fi utilizat în amestecuri sinergice cu alți îndulcitori.",
-  "can_1": "Identificați E950 sau acesulfam K atunci când este declarat pe etichetă.",
-  "can_2": "Activează straturile de informații despre numerele E și îndulcitori.",
-  "cannot_1": "Determinați cantitatea utilizată doar din lista de ingrediente sau dacă face parte dintr-un amestec de îndulcitori.",
-  "cannot_2": "Determinați expunerea alimentară totală sau faceți o judecată medicală sau nutrițională pentru un utilizator individual.",
+  "what_is": "Îndulcitor sintetic intens, fără calorii, de aproximativ 200 de ori mai dulce decât zaharoza.",
+  "why_botia": "Îl semnalează pentru că este un îndulcitor artificial caracteristic alimentelor ultra-procesate (Grupa NOVA 4).",
+  "can_1": "Identificați E950 sau Acesulfam K pe etichetele de ingrediente scanate.",
+  "can_2": "Declanșează atât stratul de informații despre îndulcitori, cât și cel despre numerelor E.",
+  "cannot_1": "Evaluează dacă acesulfamul K a fost amestecat cu aspartam pentru a masca gustul său metalic.",
+  "cannot_2": "Determinați prezența impurităților organice sub limita standard de puritate de 20 mg/kg.",
   "sources": [
     {
-      "label": "EFSA — Sweeteners",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "Commission Regulation (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
     },
     {
-      "label": "FDA — Aspartame and Other Sweeteners in Food",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
-    },
-    {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Regulation (EC) No 1333/2008 on food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333"
-    },
-    {
-      "label": "EU specifications for authorised food additives — Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A02012R0231-20241027"
-    },
-    {
-      "label": "JECFA — additive specification, INS 950",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=950"
+      "label": "EFSA Scientific Opinion on the Re-evaluation of Acesulfame K (2025)",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9213"
     }
   ],
-  "title": "Acesulfam K",
-  "description": "Îndulcitor non-nutritiv de intensitate ridicată, utilizat pentru a conferi dulceață alimentelor și băuturilor, adesea în combinație cu alți îndulcitori."
+  "title": "Acesulfam de potasiu",
+  "description": "Un îndulcitor sintetic intens, fără calorii, de aproximativ 200 de ori mai dulce decât zaharoza."
 }
