@@ -1,0 +1,40 @@
+{
+  "name": "Flavourings",
+  "e_code": null,
+  "aliases": "flavourings, flavorings, flavouring, flavoring, natural flavourings, natural flavorings, artificial flavour, artificial flavor, aroma, aromas",
+  "module_icon": "flavors.png",
+  "layers": [
+    "flavor",
+    "muslim"
+  ],
+  "what_is": "A broad labelling category for substances or preparations added to impart or modify flavour; the exact substances covered by the term depend on the product and the applicable labelling rules.",
+  "why_botia": "BOTIA flags the generic term because it may not disclose every individual flavouring substance or its source. For Muslim-choice analysis, the word flavourings alone is not enough to establish origin or religious status.",
+  "can_1": "Identify generic flavourings or flavorings wording and trigger the flavour information layer.",
+  "can_2": "Flag source uncertainty for the Muslim layer when the label does not provide enough information about origin, carrier or relevant certification.",
+  "cannot_1": "Identify every individual flavouring compound, carrier or processing aid hidden behind a permitted collective label term.",
+  "cannot_2": "Classify a generic flavouring as halal or haram without source, composition, certification or other reliable evidence.",
+  "sources": [
+    {
+      "label": "EFSA — Food ingredients and flavourings",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+    },
+    {
+      "label": "FDA — Types of Food Ingredients",
+      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+    },
+    {
+      "label": "JECFA — Specifications for flavourings",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
+    },
+    {
+      "label": "Regulation (EC) No 1334/2008 on flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1334"
+    },
+    {
+      "label": "Codex Alimentarius — Standards database",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+    }
+  ],
+  "title": "Flavourings",
+  "description": "A broad labelling category for substances or preparations added to impart or modify flavour; the exact substances covered by the term depend on the product and the applicable labelling rules."
+}

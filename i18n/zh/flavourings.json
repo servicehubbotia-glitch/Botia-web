@@ -1,0 +1,40 @@
+{
+  "name": "调味料",
+  "e_code": null,
+  "aliases": "flavourings, flavorings, flavouring, flavoring, natural flavourings, natural flavorings, artificial flavour, artificial flavor, aroma, aromas",
+  "module_icon": "flavors.png",
+  "layers": [
+    "flavor",
+    "muslim"
+  ],
+  "what_is": "用于添加或改变风味的物质或制剂的广泛标签类别；该术语涵盖的具体物质取决于产品及适用的标签规则。",
+  "why_botia": "BOTIA标记该通用术语，因为它可能未披露每种单独的调味物质或其来源。对于穆斯林选择分析而言，仅“调味料”一词不足以确定其来源或宗教状态。",
+  "can_1": "识别通用香精或调味料措辞，并触发风味信息层。",
+  "can_2": "当标签未提供足够的来源、承运人或相关认证信息时，为穆斯林层标记来源不确定性。",
+  "cannot_1": "识别每种隐藏在允许的集体标签术语背后的单一调味化合物、载体或加工助剂。",
+  "cannot_2": "在没有来源、成分、认证或其他可靠证据的情况下，将一种普通调味料归类为清真或非清真。",
+  "sources": [
+    {
+      "label": "EFSA — Food ingredients and flavourings",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+    },
+    {
+      "label": "FDA — Types of Food Ingredients",
+      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+    },
+    {
+      "label": "JECFA — Specifications for flavourings",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
+    },
+    {
+      "label": "Regulation (EC) No 1334/2008 on flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1334"
+    },
+    {
+      "label": "Codex Alimentarius — Standards database",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+    }
+  ],
+  "title": "调味料",
+  "description": "用于添加或修饰风味的物质或制剂的广泛标签类别；该术语涵盖的具体物质取决于产品及适用的标签规则。"
+}
