@@ -1,28 +1,44 @@
 {
-  "name": "Acesulfam potasowy",
+  "name": "Acesulfam K",
   "e_code": "E950",
-  "aliases": "E950, acesulfam K, acesulfam potasowy, acesulfamo K, acesulfamo potásico",
+  "aliases": "E950, acesulfame K, acesulfame potassium, Ace-K, acesulfame K sweetener, potassium salt of acesulfame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "sweetener",
-    "enumbers"
+    "enumbers",
+    "sweetener"
   ],
-  "what_is": "Bezkaloryczny syntetyczny intensywny słodzik, około 200 razy słodszy od sacharozy.",
-  "why_botia": "Jest oznaczany, ponieważ jest sztucznym słodzikiem charakterystycznym dla żywności wysoko przetworzonej (NOVA Grupa 4).",
-  "can_1": "Identyfikować E950 lub acesulfam K na skanowanych etykietach składników.",
-  "can_2": "Aktywować zarówno warstwę informacyjną słodzików, jak i numerów E.",
-  "cannot_1": "Ocenić, czy acesulfam K został zmieszany z aspartamem w celu zamaskowania metalicznego posmaku.",
-  "cannot_2": "Określić obecność zanieczyszczeń organicznych poniżej standardowego limitu czystości 20 mg/kg.",
+  "what_is": "Wysokointensywny niesłodzący środek słodzący stosowany w celu zapewnienia słodyczy w żywności i napojach, często w połączeniu z innymi słodzikami.",
+  "why_botia": "BOTIA oznacza to, ponieważ E950 to intensywny słodzik, którego dozwolone zastosowania i maksymalne poziomy różnią się między systemami regulacyjnymi i może być stosowany w mieszankach synergicznych z innymi słodzikami.",
+  "can_1": "Zidentyfikuj E950 lub acesulfam K, gdy jest zadeklarowany na etykiecie.",
+  "can_2": "Wyświetl warstwy informacji o numerach E i substancjach słodzących.",
+  "cannot_1": "Określ ilość użytego składnika wyłącznie na podstawie listy składników lub czy stanowi on część mieszanki substancji słodzących.",
+  "cannot_2": "Określanie całkowitej ekspozycji dietetycznej lub wydawanie oceny medycznej bądź żywieniowej dla indywidualnego użytkownika.",
   "sources": [
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "label": "EFSA — Sweeteners",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
     },
     {
-      "label": "Opinia naukowa EFSA dotycząca ponownej oceny acesulfamu K (2025)",
-      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9213"
+      "label": "FDA — Aspartame and Other Sweeteners in Food",
+      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+    },
+    {
+      "label": "Codex Alimentarius — GSFA Online",
+      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333"
+    },
+    {
+      "label": "EU specifications for authorised food additives — Regulation (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A02012R0231-20241027"
+    },
+    {
+      "label": "JECFA — additive specification, INS 950",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=950"
     }
   ],
-  "title": "Acesulfam potasowy",
-  "description": "Bezkaloryczny syntetyczny intensywny słodzik, około 200 razy słodszy od sacharozy."
+  "title": "Acesulfam K",
+  "description": "Wysokointensywny niesłodzący substytut cukru stosowany do nadawania słodyczy żywności i napojom, często w połączeniu z innymi słodzikami."
 }

@@ -1,28 +1,44 @@
 {
-  "name": "Kalium asesulfam",
+  "name": "Acesulfam K",
   "e_code": "E950",
-  "aliases": "E950, asesulfam K, kalium asesulfam, asesulfamo K, asesulfamo potásico",
+  "aliases": "E950, acesulfame K, acesulfame potassium, Ace-K, acesulfame K sweetener, potassium salt of acesulfame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "sweetener",
-    "enumbers"
+    "enumbers",
+    "sweetener"
   ],
-  "what_is": "Pemanis sintetis intensif tanpa kalori yang sekitar 200 kali lebih manis dari sukrosa.",
-  "why_botia": "Ini menandainya karena merupakan pemanis buatan yang khas dari makanan ultra-olahan (NOVA Grup 4).",
-  "can_1": "Identifikasi E950 atau Asesulfam K pada label bahan yang dipindai.",
-  "can_2": "Aktifkan lapisan informasi pemanis dan nomor E secara bersamaan.",
-  "cannot_1": "Menilai apakah asesulfam K telah dicampur dengan aspartam untuk menutupi rasa logamnya.",
-  "cannot_2": "Menentukan keberadaan pengotor organik di bawah batas kemurnian standar 20 mg/kg.",
+  "what_is": "Pemanis non-nutritif berintensitas tinggi yang digunakan untuk memberikan rasa manis pada makanan dan minuman, sering kali dikombinasikan dengan pemanis lainnya.",
+  "why_botia": "BOTIA menandainya karena E950 adalah pemanis intensitas tinggi yang penggunaan yang diizinkan dan kadar maksimumnya bervariasi antar sistem regulasi dan dapat digunakan dalam campuran sinergis dengan pemanis lain.",
+  "can_1": "Identifikasi E950 atau asesulfam K ketika dinyatakan pada label.",
+  "can_2": "Aktifkan lapisan informasi nomor E dan pemanis.",
+  "cannot_1": "Tentukan jumlah yang digunakan hanya dari daftar bahan atau apakah bahan tersebut merupakan bagian dari campuran pemanis.",
+  "cannot_2": "Menentukan total paparan diet atau membuat penilaian medis atau nutrisi untuk pengguna individu.",
   "sources": [
     {
-      "label": "Peraturan Komisi (UE) No 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "label": "EFSA — Sweeteners",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
     },
     {
-      "label": "Pendapat Ilmiah EFSA tentang Evaluasi Ulang Asesulfam K (2025)",
-      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9213"
+      "label": "FDA — Aspartame and Other Sweeteners in Food",
+      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+    },
+    {
+      "label": "Codex Alimentarius — GSFA Online",
+      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333"
+    },
+    {
+      "label": "EU specifications for authorised food additives — Regulation (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A02012R0231-20241027"
+    },
+    {
+      "label": "JECFA — additive specification, INS 950",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=950"
     }
   ],
-  "title": "Kalium asesulfam",
-  "description": "Pemanis sintetis intensif tanpa kalori yang sekitar 200 kali lebih manis dari sukrosa."
+  "title": "Acesulfam K",
+  "description": "Pemanis non-nutritif intensitas tinggi yang digunakan untuk memberikan rasa manis pada makanan dan minuman, sering kali dikombinasikan dengan pemanis lainnya."
 }

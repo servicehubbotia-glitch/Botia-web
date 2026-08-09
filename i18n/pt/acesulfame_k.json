@@ -1,28 +1,44 @@
 {
-  "name": "Acessulfame de potássio",
+  "name": "Acessulfame K",
   "e_code": "E950",
-  "aliases": "E950, acessulfame K, acessulfame de potássio, acessulfamo K, acessulfamo potássico",
+  "aliases": "E950, acesulfame K, acesulfame potassium, Ace-K, acesulfame K sweetener, potassium salt of acesulfame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "sweetener",
-    "enumbers"
+    "enumbers",
+    "sweetener"
   ],
-  "what_is": "Um adoçante sintético intenso sem calorias, cerca de 200 vezes mais doce que a sacarose.",
-  "why_botia": "Ele sinaliza porque é um adoçante artificial característico de alimentos ultraprocessados (NOVA Grupo 4).",
-  "can_1": "Identificar E950 ou Acessulfame K em rótulos de ingredientes escaneados.",
-  "can_2": "Ativar as camadas de informação de adoçante e número E simultaneamente.",
-  "cannot_1": "Avaliar se o acessulfame K foi misturado com aspartame para mascarar seu sabor metálico residual.",
-  "cannot_2": "Determinar a presença de impurezas orgânicas abaixo do limite padrão de pureza de 20 mg/kg.",
+  "what_is": "Um adoçante não nutritivo de alta intensidade usado para fornecer doçura em alimentos e bebidas, frequentemente em combinação com outros adoçantes.",
+  "why_botia": "A BOTIA sinaliza porque o E950 é um adoçante de alta intensidade cujos usos permitidos e níveis máximos variam entre os sistemas regulatórios e pode ser utilizado em misturas sinérgicas com outros adoçantes.",
+  "can_1": "Identifique E950 ou acessulfame K quando declarado no rótulo.",
+  "can_2": "Ative as camadas de informações sobre números E e adoçantes.",
+  "cannot_1": "Determine a quantidade usada apenas pela lista de ingredientes ou se ela faz parte de uma mistura de adoçantes.",
+  "cannot_2": "Determinar a exposição dietética total ou fazer um julgamento médico ou nutricional para um usuário individual.",
   "sources": [
     {
-      "label": "Regulamento (UE) n.º 231/2012 da Comissão",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "label": "EFSA — Sweeteners",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
     },
     {
-      "label": "Parecer Científico da EFSA sobre a Reavaliação do Acessulfame K (2025)",
-      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9213"
+      "label": "FDA — Aspartame and Other Sweeteners in Food",
+      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+    },
+    {
+      "label": "Codex Alimentarius — GSFA Online",
+      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333"
+    },
+    {
+      "label": "EU specifications for authorised food additives — Regulation (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A02012R0231-20241027"
+    },
+    {
+      "label": "JECFA — additive specification, INS 950",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=950"
     }
   ],
-  "title": "Acessulfame de potássio",
-  "description": "Um adoçante sintético intenso sem calorias, cerca de 200 vezes mais doce que a sacarose."
+  "title": "Acessulfame K",
+  "description": "Um adoçante não nutritivo de alta intensidade usado para fornecer doçura em alimentos e bebidas, frequentemente em combinação com outros adoçantes."
 }

@@ -1,28 +1,44 @@
 {
-  "name": "Acesulfame potassium",
+  "name": "Acesulfame K",
   "e_code": "E950",
-  "aliases": "E950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico",
+  "aliases": "E950, acesulfame K, acesulfame potassium, Ace-K, acesulfame K sweetener, potassium salt of acesulfame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "sweetener",
-    "enumbers"
+    "enumbers",
+    "sweetener"
   ],
-  "what_is": "A calorie-free synthetic intense sweetener about 200 times sweeter than sucrose.",
-  "why_botia": "It flags it because it is an artificial sweetener characteristic of ultra-processed foods (NOVA Group 4).",
-  "can_1": "Identify E950 or Acesulfame K on scanned ingredient labels.",
-  "can_2": "Trigger both the sweetener and E-number information layers.",
-  "cannot_1": "Assess whether the acesulfame K has been blended with aspartame to mask its metallic aftertaste.",
-  "cannot_2": "Determine the presence of organic impurities below the standard 20 mg/kg purity limit.",
+  "what_is": "A high-intensity non-nutritive sweetener used to provide sweetness in foods and beverages, often in combination with other sweeteners.",
+  "why_botia": "BOTIA flags it because E950 is a high-intensity sweetener whose permitted uses and maximum levels vary between regulatory systems and can be used in synergistic blends with other sweeteners.",
+  "can_1": "Identify E950 or acesulfame K when declared on the label.",
+  "can_2": "Trigger the E-number and sweetener information layers.",
+  "cannot_1": "Determine the quantity used from the ingredient list alone or whether it forms part of a sweetener blend.",
+  "cannot_2": "Determine total dietary exposure or make a medical or nutritional judgement for an individual user.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "label": "EFSA — Sweeteners",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
     },
     {
-      "label": "EFSA Scientific Opinion on the Re-evaluation of Acesulfame K (2025)",
-      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9213"
+      "label": "FDA — Aspartame and Other Sweeteners in Food",
+      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+    },
+    {
+      "label": "Codex Alimentarius — GSFA Online",
+      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333"
+    },
+    {
+      "label": "EU specifications for authorised food additives — Regulation (EU) No 231/2012",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A02012R0231-20241027"
+    },
+    {
+      "label": "JECFA — additive specification, INS 950",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=950"
     }
   ],
-  "title": "Acesulfame potassium",
-  "description": "A calorie-free synthetic intense sweetener about 200 times sweeter than sucrose."
+  "title": "Acesulfame K",
+  "description": "A high-intensity non-nutritive sweetener used to provide sweetness in foods and beverages, often in combination with other sweeteners."
 }
