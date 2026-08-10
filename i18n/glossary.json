@@ -1,0 +1,182 @@
+{
+  "_meta": {
+    "name": "BOTIA Terminology Glossary",
+    "version": "1.0",
+    "updated": "2026-08-10",
+    "purpose": "Controlled terminology for all BOTIA translations. Any script that translates content MUST check this file first. If a term appears here, copy the value — do not send it to a translation API.",
+    "languages": ["en", "es", "ar", "de", "fr", "nl", "it", "pt", "pl", "ro", "ru", "tr", "zh", "id"]
+  },
+
+  "immutable": {
+    "_rule": "NEVER translate, adapt, transliterate or modify. Copy exactly as-is in all 14 languages.",
+
+    "json_keys": [
+      "slug", "link", "url", "id", "e_code", "module_icon", "layers", "layer", "sources[].url"
+    ],
+
+    "layer_identifiers": [
+      "animal", "muslim", "woman", "sugar", "sweetener", "texture", "flavour", "enumbers"
+    ],
+
+    "_layer_note": "flavour is spelled WITH U. The WebView file is ingredients/flavor.html without U — that is the filename, not the layer identifier. Do not unify them.",
+
+    "brands": [
+      "BOTIA", "ServiceHub", "KvK", "BTW", "DeepSeek", "Cloudflare", "GitHub", "Google"
+    ],
+
+    "institutions": [
+      "WHO", "EFSA", "FDA", "IARC", "Codex Alimentarius", "JECFA", "OIC/SMIIC", "FAO", "UNEP", "NOVA"
+    ],
+
+    "_institutions_note": "Institution acronyms stay in their original form. Their full names MAY be translated in body text, but the acronym never changes.",
+
+    "e_codes_pattern": "Any value matching E followed by digits (E100-E1520), or ranges like E150a-E150d, or INS numbers. Never translate, never transliterate."
+  },
+
+  "interface_labels": {
+    "_rule": "Translate, but use exactly these values. Must sound natural and fit the interface.",
+
+    "can_title": {
+      "en": "BOTIA CAN",
+      "es": "BOTIA PUEDE",
+      "fr": "BOTIA PEUT",
+      "it": "BOTIA PUÒ",
+      "pt": "BOTIA PODE",
+      "de": "BOTIA KANN",
+      "nl": "BOTIA KAN",
+      "pl": "BOTIA MOŻE",
+      "ro": "BOTIA POATE",
+      "ru": "BOTIA МОЖЕТ",
+      "tr": "BOTIA YAPABİLİR",
+      "id": "BOTIA BISA",
+      "ar": "يمكن لـ BOTIA",
+      "zh": "BOTIA 可以"
+    },
+
+    "cannot_title": {
+      "en": "BOTIA CANNOT",
+      "es": "BOTIA NO PUEDE",
+      "fr": "BOTIA NE PEUT PAS",
+      "it": "BOTIA NON PUÒ",
+      "pt": "BOTIA NÃO PODE",
+      "de": "BOTIA KANN NICHT",
+      "nl": "BOTIA KAN NIET",
+      "pl": "BOTIA NIE MOŻE",
+      "ro": "BOTIA NU POATE",
+      "ru": "BOTIA НЕ МОЖЕТ",
+      "tr": "BOTIA YAPAMAZ",
+      "id": "BOTIA TIDAK BISA",
+      "ar": "لا يمكن لـ BOTIA",
+      "zh": "BOTIA 不能"
+    },
+
+    "sources-label": {
+      "en": "Sources:",
+      "es": "Fuentes:",
+      "fr": "Sources :",
+      "it": "Fonti:",
+      "pt": "Fontes:",
+      "de": "Quellen:",
+      "nl": "Bronnen:",
+      "pl": "Źródła:",
+      "ro": "Surse:",
+      "ru": "Источники:",
+      "tr": "Kaynaklar:",
+      "id": "Sumber:",
+      "ar": "المصادر:",
+      "zh": "来源："
+    }
+  },
+
+  "technical_terms": {
+    "_rule": "Established technical terminology. Use the official equivalent in each language, never a literal translation.",
+
+    "halal": {
+      "_note": "Transliteration of Arabic حلال. Keep as-is in all Latin/Cyrillic scripts. Use the original Arabic script in ar.",
+      "en": "Halal", "es": "Halal", "fr": "Halal", "it": "Halal", "pt": "Halal",
+      "de": "Halal", "nl": "Halal", "pl": "Halal", "ro": "Halal", "ru": "Халяль",
+      "tr": "Helal", "id": "Halal", "ar": "حلال", "zh": "清真"
+    },
+
+    "haram": {
+      "_note": "Transliteration of Arabic حرام.",
+      "en": "Haram", "es": "Haram", "fr": "Haram", "it": "Haram", "pt": "Haram",
+      "de": "Haram", "nl": "Haram", "pl": "Haram", "ro": "Haram", "ru": "Харам",
+      "tr": "Haram", "id": "Haram", "ar": "حرام", "zh": "哈拉姆"
+    },
+
+    "mashbooh": {
+      "_note": "Transliteration of Arabic مشبوه. Means doubtful, not forbidden.",
+      "en": "Mashbooh", "es": "Mashbooh", "fr": "Mashbooh", "it": "Mashbooh", "pt": "Mashbooh",
+      "de": "Mashbooh", "nl": "Mashbooh", "pl": "Mashbooh", "ro": "Mashbooh", "ru": "Машбух",
+      "tr": "Meşbuh", "id": "Mashbooh", "ar": "مشبوه", "zh": "可疑"
+    },
+
+    "ultra-processed": {
+      "_note": "NOVA Group 4 terminology. Use the official nutritional term, not a literal translation.",
+      "en": "Ultra-processed", "es": "Ultraprocesado", "fr": "Ultra-transformé", "it": "Ultra-processato",
+      "pt": "Ultraprocessado", "de": "Hochverarbeitet", "nl": "Ultrabewerkt", "pl": "Wysoko przetworzony",
+      "ro": "Ultraprocesat", "ru": "Ультрапереработанный", "tr": "Ultra işlenmiş", "id": "Ultra-proses",
+      "ar": "فائق المعالجة", "zh": "超加工"
+    },
+
+    "free sugars": {
+      "_note": "WHO terminology. Not 'added sugars' — free sugars is a broader, defined category.",
+      "en": "Free sugars", "es": "Azúcares libres", "fr": "Sucres libres", "it": "Zuccheri liberi",
+      "pt": "Açúcares livres", "de": "Freie Zucker", "nl": "Vrije suikers", "pl": "Cukry wolne",
+      "ro": "Zaharuri libere", "ru": "Свободные сахара", "tr": "Serbest şekerler", "id": "Gula bebas",
+      "ar": "السكريات الحرة", "zh": "游离糖"
+    },
+
+    "endocrine disruptor": {
+      "en": "Endocrine disruptor", "es": "Disruptor endocrino", "fr": "Perturbateur endocrinien",
+      "it": "Interferente endocrino", "pt": "Disruptor endócrino", "de": "Endokriner Disruptor",
+      "nl": "Hormoonverstorende stof", "pl": "Substancja zaburzająca gospodarkę hormonalną",
+      "ro": "Perturbator endocrin", "ru": "Эндокринный разрушитель", "tr": "Endokrin bozucu",
+      "id": "Pengganggu endokrin", "ar": "مُخلّ بالغدد الصماء", "zh": "内分泌干扰物"
+    }
+  },
+
+  "false_friends": {
+    "_rule": "Words that translation engines get wrong. ALWAYS check context before translating.",
+
+    "soy": {
+      "_problem": "In an ingredient name, 'soy' is the legume, NOT the Spanish verb 'ser'. Engines have produced 'Yo soy isoflavonas', 'Io sono isoflavoni', 'Ik ben Isoflavones', 'Ben Isoflavones', 'Я изофлавоны'.",
+      "_correct": "Always translate as the legume: soja, soia, soya, kedelai, 大豆, الصويا"
+    },
+
+    "can": {
+      "_problem": "In 'BOTIA CAN', 'can' is the modal verb, NOT the container. Engines have produced '博蒂亚罐头' (BOTIA tin can) and 'بوتيا كان' (BOTIA was).",
+      "_correct": "Use the interface_labels.can_title value above."
+    },
+
+    "gum": {
+      "_problem": "In hydrocolloid names, 'gum' is the plant exudate, NOT chewing gum. And the different gums must not be swapped: tara gum has been rendered as tragacanth and as locust bean gum.",
+      "_correct": "Each gum keeps its own botanical identity. Tara ≠ tragacanth ≠ locust bean ≠ guar ≠ karaya ≠ arabic."
+    },
+
+    "flavour": {
+      "_problem": "British and American spelling coexist in the repo. The layer identifier is 'flavour' with U. The WebView filename is 'flavor.html' without U.",
+      "_correct": "Layer identifier: flavour. Filename: flavor.html. Do not unify."
+    },
+
+    "natural": {
+      "_problem": "'Natural flavouring' is a legal category, not a description. Translating it as 'sabor de la naturaleza' or similar loses the regulatory meaning.",
+      "_correct": "Use the official regulatory term in each language."
+    }
+  },
+
+  "translation_rules": {
+    "_rule": "Rules any translation script MUST follow.",
+
+    "prompt_language": "The translation prompt MUST be written in English. A prompt written in Spanish has caused DeepSeek to return Spanish instead of the target language.",
+
+    "on_failure": "If a translation fails after retries, ABORT and report. NEVER return the original text — that has silently propagated Spanish into Italian files.",
+
+    "source_language": "Always translate FROM i18n/en/. Never read the target language file as a source.",
+
+    "verification": "After translating, compare the result against i18n/es/. If any string over 40 characters is identical, it is contamination — do not write the file. Exclude URLs and aliases from this check.",
+
+    "short_strings": "Strings under 5 words are the highest risk. Give the engine context: instead of 'CAN', send 'section heading meaning what BOTIA is able to do'."
+  }
+}
