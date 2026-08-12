@@ -1,14 +1,14 @@
 {
   "name": "Steviol glycosides from Stevia",
   "e_code": "E960a",
-  "aliases": "E960a, E960c, E960d, steviol glycosides, stevioside, rebaudioside A, glucósidos de esteviol",
+  "aliases": "E960a, E960c, E960d, steviol glycosides, stevioside, rebaudioside A, glucósidos de esteviol, stevia, stevia extract, steviol glycoside, E960 sweetener",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "High-intensity sweet compounds extracted from the leaves of Stevia rebaudiana.",
-  "why_botia": "Plant-derived sweetener used in ultra-processed formulations to replace sugar.",
+  "what_is": "A purified mixture of high-intensity sweet compounds, including stevioside and rebaudiosides, extracted from Stevia rebaudiana leaves.",
+  "why_botia": "BOTIA flags E960 because 'stevia' sounds like the leaf, but the label usually means purified steviol glycosides. WHO's 2023 recommendation on non-sugar sweeteners explicitly includes stevia and its derivatives.",
   "can_1": "Detect E960a, E960c, E960d and Stevia-derived synonyms on food labels.",
   "can_2": "Identify the specific steviol glycoside subclass when declared.",
   "cannot_1": "Verify whether unapproved extraction solvents were used during manufacturing.",
@@ -17,6 +17,14 @@
     {
       "label": "Commission Regulation (EU) No 231/2012",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Regulation (EU) 2021/1156 — steviol glycosides specifications",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1156"
+    },
+    {
+      "label": "WHO — Non-sugar sweeteners guideline, 2023",
+      "url": "https://www.who.int/news/item/15-05-2023-who-advises-not-to-use-non-sugar-sweeteners-for-weight-control-in-newly-released-guideline"
     }
   ],
   "title": "Steviol glycosides from Stevia",
