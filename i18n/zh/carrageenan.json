@@ -1,22 +1,30 @@
 {
   "name": "卡拉胶",
   "e_code": "E407",
-  "aliases": "E407, E407a, 卡拉胶, 加工麒麟菜, 爱尔兰苔凝胶, 麒麟菜胶, 红藻胶, 卡拉胶钠, 角叉菜胶",
+  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "一种从红藻中提取的水胶体。",
-  "why_botia": "它标记此成分是因为它是一种工业胶凝剂，常与胃肠道敏感性相关，并需进行重金属安全重新评估。",
+  "what_is": "从红藻中提取的一类硫酸化多糖，用于食品的胶凝、增稠或稳定；E407a为经加工的Eucheuma海藻。",
+  "why_botia": "BOTIA对E407和E407a提出警示，因为标签未披露其分子量分布情况。EFSA在寻求关于低分子量物质及未明确的肠道炎症影响的更佳数据期间，暂定了其组群ADI。世卫组织则指出，E407a的规范尚未最终确定，并建议各国当局要求提供具体的分子量范围，同时JECFA继续依据修订后的规范对其进行评估。",
   "can_1": "检测E407或E407a的存在，并将其归类到质地层。",
   "can_2": "提供关于低分子量组分或加工助剂的警告详情。",
   "cannot_1": "无法验证低于50 kDa的低分子量卡拉胶污染物的确切水平。",
   "cannot_2": "无法检测其提取过程中使用的痕量萃取溶剂残留。",
   "sources": [
     {
-      "label": "欧盟委员会法规(EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "label": "欧盟委员会条例（EU）第231/2012号",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA——卡拉胶再评估（E 407、E 407a），2018年",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "JECFA——卡拉胶（INS 407）",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
     }
   ],
   "title": "卡拉胶",

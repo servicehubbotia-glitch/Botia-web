@@ -1,14 +1,14 @@
 {
   "name": "Karragenan",
   "e_code": "E407",
-  "aliases": "E407, E407a, karragenan, işlenmiş eucheuma deniz yosunu, İrlanda yosunu jelozu, eukeman, furcellaran, karragenano, karragenan",
+  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Kırmızı deniz yosunlarından elde edilen bir hidrokolloid.",
-  "why_botia": "Endüstriyel bir jelleştirici madde olduğu, sıklıkla gastrointestinal hassasiyetle ilişkilendirildiği ve ağır metal güvenliği yeniden değerlendirmelerine tabi tutulduğu için işaretler.",
+  "what_is": "Kırmızı deniz yosunlarından elde edilen ve gıdaları jelatinize etmek, koyulaştırmak veya stabilize etmek için kullanılan bir sülfatlanmış polisakkarit ailesi; E407a işlenmiş Eucheuma deniz yosunudur.",
+  "why_botia": "BOTIA, E407 ve E407a'yı işaretlemektedir çünkü etiket, bunların moleküler ağırlık profilini açıklamamaktadır. EFSA, düşük moleküler ağırlıklı madde ve çözümlenmemiş bağırsak inflamatuar etkileri hakkında daha iyi veriler ararken grup ADI'sini geçici olarak bırakmıştır.",
   "can_1": "E407 veya E407a'nın varlığını tespit eder ve bunu doku katmanı altında sınıflandırır.",
   "can_2": "Düşük moleküler ağırlıklı fraksiyonlar veya işleme yardımcıları hakkında uyarı detayları sağlar.",
   "cannot_1": "50 kDa'nın altındaki düşük moleküler ağırlıklı karragenan kirleticilerinin tam seviyesini doğrulayamaz.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Komisyon Tüzüğü (AB) No 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Karragenanın yeniden değerlendirilmesi (E 407, E 407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "JECFA — Karragenan (INS 407)",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
     }
   ],
   "title": "Karragenan",

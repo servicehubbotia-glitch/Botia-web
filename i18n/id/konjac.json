@@ -1,14 +1,14 @@
 {
   "name": "Konjak",
   "e_code": "E425",
-  "aliases": "E425, E425i, E425ii, permen karet konjak, glukomanan konjak, tepung konjak, goma konjak",
+  "aliases": "E425, E425i, E425ii, konjac gum, konjac glucomannan, konjac flour, goma konjac",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Hidrokoloid dari akar tanaman Amorphophallus konjac.",
-  "why_botia": "Agen pembentuk gel industri yang dilarang dalam bentuk tertentu karena risiko tersedak.",
+  "what_is": "Serat glukomanan dengan berat molekul tinggi yang larut dalam air, diperoleh dari umbi Amorphophallus konjac; serat ini mengentalkan air dan dapat membentuk gel yang padat.",
+  "why_botia": "BOTIA menandai E425 karena dapat membentuk gel padat yang menimbulkan risiko tersedak. Aturan UE melarang konjac dalam permen jelly, termasuk cangkir jelly mini yang dimaksudkan untuk ditelan dalam satu kali gigitan.",
   "can_1": "Mendeteksi E425, permen karet konjak, atau glukomanan konjak pada label.",
   "can_2": "Memicu lapisan tekstur dan memberikan peringatan keselamatan tersedak.",
   "cannot_1": "Memverifikasi viskositas atau berat molekul yang tepat.",
@@ -16,11 +16,19 @@
   "sources": [
     {
       "label": "Peraturan Komisi (UE) No 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Daftar Makanan Baru UE - Peraturan (UE) 2017/2470",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R2470"
+      "label": "Daftar Makanan Baru UE - Regulasi (UE) 2017/2470",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-14/eng"
+    },
+    {
+      "label": "Peraturan (EC) 1333/2008 tentang bahan tambahan pangan, Lampiran II",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EFSA — Evaluasi gum konjac (E 425), 2017",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4864"
     }
   ],
   "title": "Konjak",

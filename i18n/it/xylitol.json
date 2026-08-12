@@ -1,14 +1,14 @@
 {
   "name": "Xilitolo",
   "e_code": "E967",
-  "aliases": "E967, xilitolo, D-xilitolo, xilitolo",
+  "aliases": "E967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un alcol poliolo a basso contenuto calorico ottenuto per idrogenazione catalitica dello xilosio.",
-  "why_botia": "Dolcificante industriale sfuso utilizzato negli alimenti ultra-processati senza zucchero.",
+  "what_is": "Un poliolo a cinque atomi di carbonio, o alcol zuccherino, costituito principalmente da D-xylitol e utilizzato come dolcificante di massa e umettante negli alimenti a ridotto contenuto di zuccheri.",
+  "why_botia": "BOTIA segnala l'E967 perché è un poliolo di massa, non solo un dolcificante intenso. Le norme UE richiedono un'indicazione di effetto lassativo oltre il 10% di polioli aggiunti. La raccomandazione dell'OMS del 2023 sui dolcificanti non zuccherini esclude esplicitamente i polioli.",
   "can_1": "Identifica E967 o Xilitolo sulle etichette scansionate.",
   "can_2": "Fornire informazioni sulla sicurezza riguardanti il consumo di polioli e i loro effetti lassativi.",
   "cannot_1": "Verificare se lo xilitolo grezzo contiene alcoli polivalenti non elencati superiori all'1%.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "JECFA — Monografia delle specifiche dello Xilitolo",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
+    },
+    {
+      "label": "Regolamento (UE) 2021/1175 — etichettatura dei polioli",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
     }
   ],
   "title": "Xilitolo",

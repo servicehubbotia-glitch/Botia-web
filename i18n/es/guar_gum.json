@@ -1,14 +1,14 @@
 {
   "name": "Goma guar",
   "e_code": "E412",
-  "aliases": "E412, goma guar, goma de cyamopsis, harina de guar, goma guar",
+  "aliases": "E412, guar gum, gum cyamopsis, guar flour, goma guar",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Un polisacárido de galactomanano del endospermo molido de las semillas de guar.",
-  "why_botia": "Modificador de textura utilizado en alimentos ultraprocesados, con advertencias para niños pequeños.",
+  "what_is": "Goma rica en galactomanano molida del endospermo de las semillas de guar. Se dispersa en agua y se utiliza para espesar, estabilizar o emulsionar alimentos.",
+  "why_botia": "BOTIA señala el E412 porque la etiqueta muestra la goma, no la cantidad ni la categoría de alimento. La EFSA no encontró preocupación en los usos generales notificados, pero los datos insuficientes para alimentos infantiles específicos llevaron a la UE a comenzar a retirar esas autorizaciones a partir del 18 de agosto de 2026.",
   "can_1": "Detectar E412 o Goma Guar en etiquetas escaneadas.",
   "can_2": "Mostrar información sobre el posible riesgo de molestias digestivas en niños menores de 8 años.",
   "cannot_1": "Confirmar si la goma guar fue parcialmente hidrolizada.",
@@ -16,11 +16,19 @@
   "sources": [
     {
       "label": "Lista de Nuevos Alimentos de la UE - Reglamento (UE) 2017/2470",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R2470"
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-14/eng"
     },
     {
-      "label": "Reglamento (UE) No 231/2012 de la Comisión",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "label": "Reglamento (UE) n.º 231/2012 de la Comisión",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Reevaluación de la goma guar (E 412), 2024",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2024.8748"
+    },
+    {
+      "label": "Reglamento (UE) 2026/196",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R0196"
     }
   ],
   "title": "Goma guar",

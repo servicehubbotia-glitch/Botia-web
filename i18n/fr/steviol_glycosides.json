@@ -1,14 +1,14 @@
 {
   "name": "Glycosides de stéviol de la Stevia",
   "e_code": "E960a",
-  "aliases": "E960a, E960c, E960d, glycosides de stéviol, stévioside, rébaudioside A, glucósidos de esteviol",
+  "aliases": "E960a, E960c, E960d, steviol glycosides, stevioside, rebaudioside A, glucósidos de esteviol, stevia, stevia extract, steviol glycoside, E960 sweetener",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Composés édulcorants de haute intensité extraits des feuilles de Stevia rebaudiana.",
-  "why_botia": "Édulcorant d'origine végétale utilisé dans les formulations ultra-transformées pour remplacer le sucre.",
+  "what_is": "Un mélange purifié de composés sucrants à haute intensité, incluant le stévioside et les rébaudiosides, extrait des feuilles de Stevia rebaudiana.",
+  "why_botia": "BOTIA signale le E960 parce que « stevia » évoque la feuille, mais l’étiquette désigne généralement des glycosides de stéviol purifiés. La recommandation 2023 de l’OMS sur les édulcorants non sucrés inclut explicitement la stévia et ses dérivés.",
   "can_1": "Détecter E960a, E960c, E960d et les synonymes dérivés de la Stevia sur les étiquettes alimentaires.",
   "can_2": "Identifier la sous-classe spécifique de glycosides de stéviol lorsqu'elle est déclarée.",
   "cannot_1": "Vérifier si des solvants d'extraction non approuvés ont été utilisés lors de la fabrication.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Règlement (UE) 2021/1156 — spécifications des glycosides de stéviol",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1156"
+    },
+    {
+      "label": "OMS — Ligne directrice sur les édulcorants non sucrés, 2023",
+      "url": "https://www.who.int/news/item/15-05-2023-who-advises-not-to-use-non-sugar-sweeteners-for-weight-control-in-newly-released-guideline"
     }
   ],
   "title": "Glycosides de stéviol de la Stevia",

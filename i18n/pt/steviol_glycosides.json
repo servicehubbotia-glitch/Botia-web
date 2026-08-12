@@ -1,14 +1,14 @@
 {
   "name": "Glicosídeos de esteviol da estévia",
   "e_code": "E960a",
-  "aliases": "E960a, E960c, E960d, glicosídeos de esteviol, esteviosídeo, rebaudiosídeo A, glucósidos de esteviol",
+  "aliases": "E960a, E960c, E960d, steviol glycosides, stevioside, rebaudioside A, glucósidos de esteviol, stevia, stevia extract, steviol glycoside, E960 sweetener",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Compostos adoçantes de alta intensidade extraídos das folhas de Stevia rebaudiana.",
-  "why_botia": "Adoçante de origem vegetal usado em formulações ultraprocessadas para substituir o açúcar.",
+  "what_is": "Uma mistura purificada de compostos adoçantes de alta intensidade, incluindo esteviosídeo e rebaudiosídeos, extraída das folhas de Stevia rebaudiana.",
+  "why_botia": "BOTIA sinaliza o E960 porque \"stevia\" soa como a folha, mas o rótulo geralmente significa glicosídeos de esteviol purificados. A recomendação de 2023 da OMS sobre adoçantes não açucarados inclui explicitamente a stevia e seus derivados.",
   "can_1": "Detectar E960a, E960c, E960d e sinônimos derivados da estévia em rótulos de alimentos.",
   "can_2": "Identificar a subclasse específica de glicosídeos de esteviol quando declarada.",
   "cannot_1": "Verificar se solventes de extração não aprovados foram usados durante a fabricação.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Regulamento (UE) n.º 231/2012 da Comissão",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Regulamento (UE) 2021/1156 — especificações dos glicosídeos de esteviol",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1156"
+    },
+    {
+      "label": "OMS — Diretriz sobre adoçantes não açucarados, 2023",
+      "url": "https://www.who.int/news/item/15-05-2023-who-advises-not-to-use-non-sugar-sweeteners-for-weight-control-in-newly-released-guideline"
     }
   ],
   "title": "Glicosídeos de esteviol da estévia",

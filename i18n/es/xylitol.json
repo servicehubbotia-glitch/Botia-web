@@ -1,22 +1,30 @@
 {
   "name": "Xilitol",
   "e_code": "E967",
-  "aliases": "E967, xilitol, D-xilitol, xilitol",
+  "aliases": "E967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un alcohol de poliol bajo en calorías obtenido por hidrogenación catalítica de la xilosa.",
-  "why_botia": "Edulcorante industrial a granel utilizado en alimentos ultraprocesados sin azúcar.",
+  "what_is": "Un poliol de cinco carbonos, o alcohol de azúcar, compuesto principalmente de D-xylitol y utilizado como edulcorante de volumen y humectante en alimentos con contenido reducido de azúcar.",
+  "why_botia": "BOTIA señala el E967 porque es un poliol de relleno, no solo un edulcorante intenso. Las normas de la UE exigen una advertencia sobre el efecto laxante por encima del 10% de polioles añadidos. La recomendación de 2023 de la OMS sobre edulcorantes sin azúcar excluye explícitamente los polioles.",
   "can_1": "Identificar E967 o Xilitol en etiquetas escaneadas.",
   "can_2": "Proporcionar información de seguridad sobre el consumo de polioles y efectos laxantes.",
   "cannot_1": "Verificar si el xilitol crudo contiene alcoholes polihídricos no listados por encima del 1%.",
   "cannot_2": "Identificar la fuente exacta de materia prima vegetal.",
   "sources": [
     {
-      "label": "Reglamento (UE) No 231/2012 de la Comisión",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "label": "Reglamento (UE) n.º 231/2012 de la Comisión",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "JECFA — Monografía de especificaciones de Xilitol",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
+    },
+    {
+      "label": "Reglamento (UE) 2021/1175 — etiquetado de polioles",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
     }
   ],
   "title": "Xilitol",

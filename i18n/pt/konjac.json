@@ -1,14 +1,14 @@
 {
   "name": "Konjac",
   "e_code": "E425",
-  "aliases": "E425, E425i, E425ii, goma konjac, glucomanano de konjac, farinha de konjac, goma konjac",
+  "aliases": "E425, E425i, E425ii, konjac gum, konjac glucomannan, konjac flour, goma konjac",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Um hidrocoloide da raiz da planta Amorphophallus konjac.",
-  "why_botia": "Agente gelificante industrial proibido em certas formas devido ao risco de asfixia.",
+  "what_is": "Fibra de glucomanano solúvel em água, de alto peso molecular, obtida do tubérculo de Amorphophallus konjac; ela espessa a água e pode formar géis firmes.",
+  "why_botia": "A BOTIA sinaliza o E425 porque pode formar géis firmes que apresentam risco de asfixia. As regras da UE proíbem o konjac em produtos de confeitaria em gelatina, incluindo mini-copos de gelatina destinados a serem engolidos de uma só vez.",
   "can_1": "Detectar E425, goma konjac ou glucomanano de konjac nos rótulos.",
   "can_2": "Ativar a camada de textura e fornecer um aviso de segurança contra asfixia.",
   "cannot_1": "Verificar a viscosidade ou o peso molecular exatos.",
@@ -16,11 +16,19 @@
   "sources": [
     {
       "label": "Regulamento (UE) n.º 231/2012 da Comissão",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Lista de Novos Alimentos da UE - Regulamento (UE) 2017/2470",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R2470"
+      "label": "Lista da UE de Novos Alimentos - Regulamento (UE) 2017/2470",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-14/eng"
+    },
+    {
+      "label": "Regulamento (CE) n.º 1333/2008 relativo aos aditivos alimentares, Anexo II",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EFSA — Avaliação da goma konjac (E 425), 2017",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4864"
     }
   ],
   "title": "Konjac",

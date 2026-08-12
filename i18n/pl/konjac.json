@@ -1,14 +1,14 @@
 {
   "name": "Konjac",
   "e_code": "E425",
-  "aliases": "E425, E425i, E425ii, guma konjac, glukomannan konjac, mąka konjac, goma konjac",
+  "aliases": "E425, E425i, E425ii, konjac gum, konjac glucomannan, konjac flour, goma konjac",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Hydrokoloid z korzenia rośliny Amorphophallus konjac.",
-  "why_botia": "Przemysłowy środek żelujący zakazany w niektórych formach ze względu na ryzyko zadławienia.",
+  "what_is": "Rozpuszczalny w wodzie, wysokocząsteczkowy błonnik glukomannanowy otrzymywany z bulwy Amorphophallus konjac; zagęszcza wodę i może tworzyć zwarte żele.",
+  "why_botia": "BOTIA sygnalizuje E425, ponieważ może tworzyć twarde żele, które stwarzają ryzyko zadławienia. Przepisy UE zakazują stosowania konjaku w wyrobach cukierniczych typu galaretki, w tym w mini-kubeczkach żelowych przeznaczonych do połknięcia w jednym kęsie.",
   "can_1": "Wykryj E425, gumę konjac lub glukomannan konjac na etykietach.",
   "can_2": "Aktywuj warstwę tekstury i wyświetl ostrzeżenie o bezpieczeństwie przed zadławieniem.",
   "cannot_1": "Zweryfikuj dokładną lepkość lub masę cząsteczkową.",
@@ -16,11 +16,19 @@
   "sources": [
     {
       "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Unijna lista nowej żywności - Rozporządzenie (UE) 2017/2470",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R2470"
+      "label": "Unijna lista nowej żywności – rozporządzenie (UE) 2017/2470",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-14/eng"
+    },
+    {
+      "label": "Rozporządzenie (WE) 1333/2008 w sprawie dodatków do żywności, załącznik II",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EFSA — Ocena gumy konjac (E 425), 2017",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4864"
     }
   ],
   "title": "Konjac",

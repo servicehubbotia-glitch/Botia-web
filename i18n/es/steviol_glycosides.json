@@ -1,22 +1,30 @@
 {
   "name": "Glucósidos de esteviol de Stevia",
   "e_code": "E960a",
-  "aliases": "E960a, E960c, E960d, glucósidos de esteviol, esteviósido, rebaudiósido A, glucósidos de esteviol",
+  "aliases": "E960a, E960c, E960d, steviol glycosides, stevioside, rebaudioside A, glucósidos de esteviol, stevia, stevia extract, steviol glycoside, E960 sweetener",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Compuestos edulcorantes de alta intensidad extraídos de las hojas de Stevia rebaudiana.",
-  "why_botia": "Edulcorante de origen vegetal utilizado en formulaciones ultraprocesadas para reemplazar el azúcar.",
+  "what_is": "Una mezcla purificada de compuestos edulcorantes de alta intensidad, incluidos esteviósido y rebaudiósidos, extraída de las hojas de Stevia rebaudiana.",
+  "why_botia": "BOTIA señala el E960 porque \"stevia\" suena como la hoja, pero la etiqueta normalmente se refiere a glucósidos de esteviol purificados. La recomendación de la OMS de 2023 sobre edulcorantes sin azúcar incluye explícitamente la stevia y sus derivados.",
   "can_1": "Detectar E960a, E960c, E960d y sinónimos derivados de Stevia en las etiquetas de alimentos.",
   "can_2": "Identificar la subclase específica de glucósido de esteviol cuando se declare.",
   "cannot_1": "Verificar si se utilizaron disolventes de extracción no aprobados durante la fabricación.",
   "cannot_2": "Determinar la proporción exacta de esteviósido a rebaudiósido A.",
   "sources": [
     {
-      "label": "Reglamento (UE) Nº 231/2012 de la Comisión",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "label": "Reglamento (UE) n.º 231/2012 de la Comisión",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Reglamento (UE) 2021/1156 — especificaciones de los glucósidos de esteviol",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1156"
+    },
+    {
+      "label": "OMS — Directriz sobre edulcorantes no azucarados, 2023",
+      "url": "https://www.who.int/news/item/15-05-2023-who-advises-not-to-use-non-sugar-sweeteners-for-weight-control-in-newly-released-guideline"
     }
   ],
   "title": "Glucósidos de esteviol de Stevia",

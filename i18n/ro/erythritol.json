@@ -1,14 +1,14 @@
 {
   "name": "Eritritol",
   "e_code": "E968",
-  "aliases": "E968, eritritol, meso-eritritol, eritritol",
+  "aliases": "E968, erythritol, meso-erythritol, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un poliol alcool zaharat nehigroscopic obținut prin fermentarea carbohidraților cu drojdii osmofile.",
-  "why_botia": "Înlocuitor artificial de zahăr caracteristic alimentelor ultraprocesate cu conținut scăzut de calorii.",
+  "what_is": "Un poliol cu patru atomi de carbon, sau alcool zaharat, produs prin fermentarea unei surse de carbohidrați cu drojdii osmofile de calitate alimentară, apoi purificat și uscat.",
+  "why_botia": "BOTIA semnalează E968 deoarece este un poliol de masă, nu doar un îndulcitor intens. Reevaluarea EFSA din 2023 a stabilit o ADI pe baza datelor privind diareea la om. Reglementările UE impun un avertisment privind efectul laxativ peste 10% polioli adăugați; recomandarea OMS din 2023 exclude poliolii.",
   "can_1": "Detectează E968 sau Eritritol și declanșează stratul de îndulcitor.",
   "can_2": "Notifică utilizatorul despre proprietățile sale cu indice glicemic scăzut și conținut caloric redus.",
   "cannot_1": "Verifică ce tulpină de drojdie a fost utilizată pentru fermentare.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Reevaluarea Eritritolului (E 968), 2023",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
+    },
+    {
+      "label": "Regulamentul (UE) 2021/1175 — etichetarea poliolilor",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
     }
   ],
   "title": "Eritritol",

@@ -1,14 +1,14 @@
 {
   "name": "Carraghénane",
   "e_code": "E407",
-  "aliases": "E407, E407a, carraghénane, algue eucheuma transformée, gélose de mousse d'Irlande, eucheuman, furcellerane, carragenano, carraghenane",
+  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Un hydrocolloïde extrait d'algues rouges.",
-  "why_botia": "Il le signale car c'est un agent gélifiant industriel, souvent associé à une sensibilité gastro-intestinale, et fait l'objet de réévaluations de sécurité concernant les métaux lourds.",
+  "what_is": "Une famille de polysaccharides sulfatés extraits d'algues rouges et utilisés pour gélifier, épaissir ou stabiliser les aliments ; E407a est une algue Eucheuma transformée.",
+  "why_botia": "BOTIA signale les E407 et E407a car l’étiquette ne révèle pas leur profil de poids moléculaire. L’EFSA a laissé sa DJA de groupe temporaire en attendant de meilleures données sur les matériaux de faible poids moléculaire et les effets inflammatoires intestinaux non résolus.",
   "can_1": "Détecter la présence de E407 ou E407a et le classer sous la couche texture.",
   "can_2": "Fournir des détails d'avertissement sur les fractions de faible poids moléculaire ou les auxiliaires de transformation.",
   "cannot_1": "Vérifier le niveau exact de contaminants de carraghénane de faible poids moléculaire en dessous de 50 kDa.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Réévaluation du carraghénane (E 407, E 407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "JECFA — Gomme de carraghénane (INS 407)",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
     }
   ],
   "title": "Carraghénane",

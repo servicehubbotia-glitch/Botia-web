@@ -1,26 +1,34 @@
 {
   "name": "Gomme de guar",
   "e_code": "E412",
-  "aliases": "E412, gomme de guar, gomme de cyamopsis, farine de guar, goma guar",
+  "aliases": "E412, guar gum, gum cyamopsis, guar flour, goma guar",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Un polysaccharide de galactomannane provenant de l'endosperme moulu des graines de guar.",
-  "why_botia": "Modificateur de texture utilisé dans les aliments ultra-transformés, avec des avertissements pour les jeunes enfants.",
+  "what_is": "Gomme riche en galactomannane, moulue à partir de l'endosperme des graines de guar. Elle se disperse dans l'eau et est utilisée pour épaissir, stabiliser ou émulsionner les aliments.",
+  "why_botia": "BOTIA signale le E412 car l’étiquette indique la gomme, mais ni la quantité ni la catégorie alimentaire. L’EFSA n’a relevé aucune préoccupation pour les usages généraux déclarés, mais des données insuffisantes pour les aliments pour nourrissons spécifiés ont conduit l’UE à commencer à retirer ces autorisations à partir du 18 août 2026.",
   "can_1": "Détecter E412 ou la gomme de guar sur les étiquettes scannées.",
   "can_2": "Signaler un risque potentiel d'inconfort digestif pour les enfants de moins de 8 ans.",
   "cannot_1": "Confirmer si la gomme de guar a été partiellement hydrolysée.",
   "cannot_2": "Déterminer si la matière première contient des contaminants de pentachlorophénol ou de dioxine.",
   "sources": [
     {
-      "label": "Liste des nouveaux aliments de l'UE - Règlement (UE) 2017/2470",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R2470"
+      "label": "Liste européenne des nouveaux aliments - Règlement (UE) 2017/2470",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-14/eng"
     },
     {
       "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Réévaluation de la gomme de guar (E 412), 2024",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2024.8748"
+    },
+    {
+      "label": "Règlement (UE) 2026/196",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R0196"
     }
   ],
   "title": "Gomme de guar",

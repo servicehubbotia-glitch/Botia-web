@@ -1,14 +1,14 @@
 {
   "name": "Xylit",
   "e_code": "E967",
-  "aliases": "E967, Xylit, D-Xylit, Xilitol",
+  "aliases": "E967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Ein kalorienarmer Polyol-Zuckeralkohol, der durch katalytische Hydrierung von Xylose gewonnen wird.",
-  "why_botia": "Industrieller Massensüßstoff, der in zuckerfreien hochverarbeiteten Lebensmitteln verwendet wird.",
+  "what_is": "Ein fünf-kohlenstoffhaltiges Polyol, oder Zuckeralkohol, das hauptsächlich aus D-Xylitol besteht und als Füllstoff-Süßungsmittel sowie Feuchthaltemittel in zuckerreduzierten Lebensmitteln verwendet wird.",
+  "why_botia": "BOTIA kennzeichnet E967, da es sich um einen Füllstoff-Polyol handelt, nicht nur um einen intensiven Süßstoff. Die EU-Vorschriften verlangen einen Warnhinweis auf abführende Wirkung bei mehr als 10 % zugesetzten Polyolen. Die Empfehlung der WHO von 2023 zu nicht-zuckerhaltigen Süßstoffen schließt Polyole ausdrücklich aus.",
   "can_1": "Identifizieren Sie E967 oder Xylit auf gescannten Etiketten.",
   "can_2": "Bereitstellung von Sicherheitsinformationen zum Verzehr von Polyolen und abführenden Wirkungen.",
   "cannot_1": "Überprüfen, ob rohes Xylit nicht aufgeführte mehrwertige Alkohole über 1 % enthält.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "JECFA — Xylitol-Spezifikationen-Monographie",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
+    },
+    {
+      "label": "Verordnung (EU) 2021/1175 — Kennzeichnung von Polyolen",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
     }
   ],
   "title": "Xylit",

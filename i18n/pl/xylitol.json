@@ -1,14 +1,14 @@
 {
   "name": "Ksylitol",
   "e_code": "E967",
-  "aliases": "E967, ksylitol, D-ksylitol, ksylitol",
+  "aliases": "E967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Niskokaloryczny alkohol poliolowy otrzymywany w wyniku katalitycznego uwodornienia ksylozy.",
-  "why_botia": "Przemysłowy słodzik masowy stosowany w bezcukrowej żywności wysoko przetworzonej.",
+  "what_is": "Pięciowęglowy poliol, czyli alkohol cukrowy, składający się głównie z D-xylitolu, stosowany jako substytut cukru o działaniu objętościowym oraz środek utrzymujący wilgoć w produktach spożywczych o obniżonej zawartości cukru.",
+  "why_botia": "BOTIA sygnalizuje E967, ponieważ jest to poliol objętościowy, a nie tylko intensywny słodzik. Przepisy UE wymagają ostrzeżenia o działaniu przeczyszczającym powyżej 10% dodanych polioli. Zalecenie WHO z 2023 r. dotyczące słodzików niesacharydowych wprost wyklucza poliole.",
   "can_1": "Identyfikuj E967 lub ksylitol na zeskanowanych etykietach.",
   "can_2": "Dostarczaj informacji o bezpieczeństwie dotyczących spożycia polioli i efektów przeczyszczających.",
   "cannot_1": "Zweryfikuj, czy surowy ksylitol zawiera niewymienione alkohole wielowodorotlenowe powyżej 1%.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "JECFA — specyfikacje monograficzne ksylitolu",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
+    },
+    {
+      "label": "Rozporządzenie (UE) 2021/1175 — etykietowanie polioli",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
     }
   ],
   "title": "Ksylitol",

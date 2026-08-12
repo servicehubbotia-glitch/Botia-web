@@ -1,14 +1,14 @@
 {
   "name": "Karagenan",
   "e_code": "E407",
-  "aliases": "E407, E407a, karagenan, rumput laut eucheuma olahan, gelose lumut Irlandia, eucheuman, furcellaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Hidrokoloid yang diekstrak dari rumput laut merah.",
-  "why_botia": "Ini menandainya karena merupakan bahan pembentuk gel industri, sering dikaitkan dengan sensitivitas gastrointestinal, dan menjalani evaluasi ulang keamanan logam berat.",
+  "what_is": "Keluarga polisakarida bersulfat yang diekstrak dari rumput laut merah dan digunakan untuk mengentalkan, memekatkan, atau menstabilkan makanan; E407a adalah rumput laut Eucheuma yang diproses.",
+  "why_botia": "BOTIA menandai E407 dan E407a karena label tidak mengungkapkan profil berat molekulnya. EFSA membiarkan ADI kelompoknya bersifat sementara sambil mencari data yang lebih baik mengenai material berat molekul rendah dan efek inflamasi usus yang belum terselesaikan.",
   "can_1": "Mendeteksi keberadaan E407 atau E407a dan mengklasifikasikannya di bawah lapisan tekstur.",
   "can_2": "Memberikan detail peringatan tentang fraksi berat molekul rendah atau bahan pembantu pemrosesan.",
   "cannot_1": "Memverifikasi tingkat pasti kontaminan karagenan berat molekul rendah di bawah 50 kDa.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Peraturan Komisi (UE) No 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Evaluasi ulang karagenan (E 407, E 407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "JECFA — Karagenan (INS 407)",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
     }
   ],
   "title": "Karagenan",

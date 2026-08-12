@@ -1,14 +1,14 @@
 {
   "name": "Erythrit",
   "e_code": "E968",
-  "aliases": "E968, Erythrit, meso-Erythrit, Eritrit",
+  "aliases": "E968, erythritol, meso-erythritol, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Ein nichthygroskopischer Polyol-Zuckeralkohol, der durch Fermentation von Kohlenhydraten mit osmophilen Hefen gewonnen wird.",
-  "why_botia": "Künstlicher Zuckerersatz, charakteristisch für kalorienarme hochverarbeitete Lebensmittel.",
+  "what_is": "Ein vierkohlenstoffhaltiges Polyol, auch Zuckeralkohol genannt, wird durch Fermentation einer Kohlenhydratquelle mit lebensmitteltauglichen osmophilen Hefen hergestellt und anschließend gereinigt und getrocknet.",
+  "why_botia": "BOTIA kennzeichnet E968, da es sich um einen Füllstoff-Polyol handelt, nicht nur um einen intensiven Süßstoff. Die Neubewertung der EFSA aus dem Jahr 2023 legte einen ADI-Wert auf der Grundlage von Daten zu Durchfall beim Menschen fest. EU-Vorschriften verlangen einen Warnhinweis auf abführende Wirkung bei einem Gehalt von mehr als 10 % zugesetzter Polyole; die Empfehlung der WHO aus dem Jahr 2023 schließt Polyole aus.",
   "can_1": "E968 oder Erythrit erkennen und die Süßstoff-Ebene auslösen.",
   "can_2": "Den Benutzer über seine niedrig-glykämischen, kalorienarmen Eigenschaften informieren.",
   "cannot_1": "Überprüfen, welcher Hefestamm für die Fermentation verwendet wurde.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Neubewertung von Erythrit (E 968), 2023",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
+    },
+    {
+      "label": "Verordnung (EU) 2021/1175 — Kennzeichnung von Polyolen",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
     }
   ],
   "title": "Erythrit",

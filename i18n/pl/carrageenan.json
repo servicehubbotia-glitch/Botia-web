@@ -1,14 +1,14 @@
 {
   "name": "Karagen",
   "e_code": "E407",
-  "aliases": "E407, E407a, karagen, przetworzone wodorosty eucheuma, żel z mchu irlandzkiego, eucheuman, furcellaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Hydrokoloid ekstrahowany z czerwonych wodorostów.",
-  "why_botia": "Oznacza go, ponieważ jest przemysłowym środkiem żelującym, często kojarzonym z wrażliwością przewodu pokarmowego i podlega ponownym ocenom bezpieczeństwa pod kątem metali ciężkich.",
+  "what_is": "Rodzina siarczanowanych polisacharydów pozyskiwanych z czerwonych wodorostów, stosowana do żelowania, zagęszczania lub stabilizowania żywności; E407a to przetworzone wodorosty Eucheuma.",
+  "why_botia": "BOTIA sygnalizuje E407 i E407a, ponieważ etykieta nie ujawnia ich profilu masy cząsteczkowej. EFSA pozostawiła tymczasową grupową wartość ADI, oczekując na lepsze dane dotyczące materiału o niskiej masie cząsteczkowej oraz nierozstrzygniętych skutków zapalnych w obrębie jelit.",
   "can_1": "Wykryć obecność E407 lub E407a i sklasyfikować go w warstwie tekstury.",
   "can_2": "Dostarczyć szczegółowe ostrzeżenia dotyczące frakcji o niskiej masie cząsteczkowej lub substancji pomocniczych w procesie.",
   "cannot_1": "Zweryfikować dokładny poziom zanieczyszczeń karagenem o niskiej masie cząsteczkowej poniżej 50 kDa.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Ponowna ocena karagenu (E 407, E 407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "JECFA — Karagen (INS 407)",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
     }
   ],
   "title": "Karagen",

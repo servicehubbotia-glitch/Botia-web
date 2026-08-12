@@ -1,14 +1,14 @@
 {
   "name": "Carrageen",
   "e_code": "E407",
-  "aliases": "E407, E407a, Carrageen, verarbeitete Eucheuma-Alge, irisches Moos-Gelose, Eucheuman, Furcellaran, Carragenano, Carraghenane",
+  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Ein Hydrokolloid, das aus Rotalgen gewonnen wird.",
-  "why_botia": "Es wird markiert, weil es ein industrielles Geliermittel ist, das oft mit Magen-Darm-Empfindlichkeit in Verbindung gebracht wird und wiederholten Sicherheitsbewertungen hinsichtlich Schwermetallen unterzogen wird.",
+  "what_is": "Eine Familie sulfatierter Polysaccharide, die aus roten Meeresalgen gewonnen wird und zum Gelieren, Eindicken oder Stabilisieren von Lebensmitteln verwendet wird; E407a ist verarbeitetes Eucheuma.",
+  "why_botia": "BOTIA kennzeichnet E407 und E407a, da das Etikett ihr Molekulargewichtsprofil nicht offenlegt. Die EFSA beließ ihre Gruppen-ADI vorläufig, während sie bessere Daten zu niedermolekularem Material und ungeklärten entzündlichen Wirkungen im Darm suchte.",
   "can_1": "Erkennen des Vorhandenseins von E407 oder E407a und Klassifizierung unter der Texturschicht.",
   "can_2": "Bereitstellung von Warnhinweisen zu niedermolekularen Fraktionen oder Verarbeitungshilfsstoffen.",
   "cannot_1": "Überprüfen des genauen Gehalts an niedermolekularen Carrageen-Verunreinigungen unter 50 kDa.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Neubewertung von Carrageen (E 407, E 407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "JECFA — Carrageen (INS 407)",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
     }
   ],
   "title": "Carrageen",

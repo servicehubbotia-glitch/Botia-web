@@ -1,26 +1,34 @@
 {
   "name": "魔芋",
   "e_code": "E425",
-  "aliases": "E425, E425i, E425ii, 魔芋胶, 魔芋葡甘露聚糖, 魔芋粉, 蒟蒻",
+  "aliases": "E425, E425i, E425ii, konjac gum, konjac glucomannan, konjac flour, goma konjac",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "一种来自魔芋（Amorphophallus konjac）根茎的水胶体。",
-  "why_botia": "工业胶凝剂，因窒息风险，某些形式被禁止。",
+  "what_is": "一种水溶性高分子量葡甘露聚糖纤维，取自魔芋（Amorphophallus konjac）的块茎；它能增稠水，并可形成坚固的凝胶。",
+  "why_botia": "BOTIA指出E425可能形成坚硬的凝胶，存在窒息风险。欧盟法规禁止在果冻类糖果中使用魔芋，包括一口吞食的迷你果冻杯。",
   "can_1": "检测标签上的E425、魔芋胶或魔芋葡甘露聚糖。",
   "can_2": "触发纹理层并提供窒息安全警告。",
   "cannot_1": "验证精确的粘度或分子量。",
   "cannot_2": "验证是否用乙醇清洗以进行纯化。",
   "sources": [
     {
-      "label": "欧盟委员会条例 (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "label": "欧盟委员会条例（EU）第231/2012号",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "欧盟新型食品清单 - 条例 (EU) 2017/2470",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R2470"
+      "label": "欧盟新型食品清单 - 法规（EU）2017/2470",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-14/eng"
+    },
+    {
+      "label": "关于食品添加剂的法规（EC）第1333/2008号，附件II",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EFSA — 关于魔芋胶（E 425）的评估，2017年",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4864"
     }
   ],
   "title": "魔芋",

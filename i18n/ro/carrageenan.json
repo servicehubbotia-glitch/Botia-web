@@ -1,14 +1,14 @@
 {
   "name": "Caragenan",
   "e_code": "E407",
-  "aliases": "E407, E407a, caragenan, alge marine eucheuma procesate, geloză din mușchi irlandez, eucheuman, furcelaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Un hidrocoloid extras din alge marine roșii.",
-  "why_botia": "Îl semnalează deoarece este un agent de gelifiere industrial, adesea asociat cu sensibilitate gastrointestinală și supus reevaluărilor de siguranță privind metalele grele.",
+  "what_is": "O familie de polizaharide sulfatate extrase din alge roșii și utilizate pentru gelifierea, îngroșarea sau stabilizarea alimentelor; E407a este alga Eucheuma procesată.",
+  "why_botia": "BOTIA semnalează E407 și E407a deoarece eticheta nu dezvăluie profilul lor de greutate moleculară. EFSA a lăsat ADI-ul lor de grup temporar, în timp ce caută date mai bune privind materialul cu greutate moleculară scăzută și efectele inflamatorii intestinale nerezolvate.",
   "can_1": "Detectează prezența E407 sau E407a și îl clasifică sub stratul de textură.",
   "can_2": "Oferă detalii de avertizare despre fracțiunile cu greutate moleculară mică sau auxiliarii de procesare.",
   "cannot_1": "Verifică nivelul exact al contaminanților de caragenan cu greutate moleculară mică sub 50 kDa.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Reevaluarea caragenanului (E 407, E 407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "JECFA — Carrageenan (INS 407)",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
     }
   ],
   "title": "Caragenan",

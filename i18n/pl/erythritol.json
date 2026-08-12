@@ -1,14 +1,14 @@
 {
   "name": "Erytrytol",
   "e_code": "E968",
-  "aliases": "E968, erytrytol, mezo-erytrytol, eritritol",
+  "aliases": "E968, erythritol, meso-erythritol, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Nielepki alkohol poliolowy otrzymywany w wyniku fermentacji węglowodanów z użyciem drożdży osmofilnych.",
-  "why_botia": "Sztuczny zamiennik cukru charakterystyczny dla niskokalorycznej żywności wysoko przetworzonej.",
+  "what_is": "Czterowęglowy poliol, czyli alkohol cukrowy, otrzymywany w wyniku fermentacji źródła węglowodanów z użyciem drożdży osmofilnych klasy spożywczej, a następnie oczyszczany i suszony.",
+  "why_botia": "BOTIA sygnalizuje E968, ponieważ jest to poliol objętościowy, a nie tylko intensywny słodzik. Ponowna ocena EFSA z 2023 r. ustaliła ADI na podstawie danych dotyczących biegunki u ludzi. Przepisy UE wymagają ostrzeżenia o działaniu przeczyszczającym powyżej 10% dodanych polioli; zalecenie WHO z 2023 r. wyklucza poliole.",
   "can_1": "Wykryj E968 lub Erytrytol i uruchom warstwę słodzika.",
   "can_2": "Poinformuj użytkownika o jego niskim indeksie glikemicznym i niskokalorycznych właściwościach.",
   "cannot_1": "Zweryfikuj, który szczep drożdży został użyty do fermentacji.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Ponowna ocena erytrytolu (E 968), 2023",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
+    },
+    {
+      "label": "Rozporządzenie (UE) 2021/1175 — etykietowanie polioli",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
     }
   ],
   "title": "Erytrytol",

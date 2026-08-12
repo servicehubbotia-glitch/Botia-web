@@ -1,14 +1,14 @@
 {
   "name": "Glicosidi steviolici da Stevia",
   "e_code": "E960a",
-  "aliases": "E960a, E960c, E960d, glicosidi steviolici, stevioside, rebaudioside A, glucosidi di steviolo",
+  "aliases": "E960a, E960c, E960d, steviol glycosides, stevioside, rebaudioside A, glucósidos de esteviol, stevia, stevia extract, steviol glycoside, E960 sweetener",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Composti dolcificanti ad alta intensità estratti dalle foglie di Stevia rebaudiana.",
-  "why_botia": "Dolcificante di origine vegetale utilizzato nelle formulazioni ultra-processate per sostituire lo zucchero.",
+  "what_is": "Una miscela purificata di composti dolcificanti ad alta intensità, tra cui stevioside e rebaudiosidi, estratta dalle foglie di Stevia rebaudiana.",
+  "why_botia": "BOTIA segnala l'E960 perché \"stevia\" richiama la foglia, ma l'etichetta di solito indica glicosidi steviolici purificati. La raccomandazione dell'OMS del 2023 sui dolcificanti non zuccherini include esplicitamente la stevia e i suoi derivati.",
   "can_1": "Rileva E960a, E960c, E960d e sinonimi derivati dalla Stevia sulle etichette alimentari.",
   "can_2": "Identificare la specifica sottoclasse di glicosidi steviolici quando dichiarata.",
   "cannot_1": "Verificare se durante la produzione sono stati utilizzati solventi di estrazione non approvati.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Regolamento (UE) 2021/1156 — specifiche dei glicosidi steviolici",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1156"
+    },
+    {
+      "label": "OMS — Linea guida sui dolcificanti non zuccherini, 2023",
+      "url": "https://www.who.int/news/item/15-05-2023-who-advises-not-to-use-non-sugar-sweeteners-for-weight-control-in-newly-released-guideline"
     }
   ],
   "title": "Glicosidi steviolici da Stevia",

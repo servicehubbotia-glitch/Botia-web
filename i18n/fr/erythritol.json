@@ -1,14 +1,14 @@
 {
   "name": "Érythritol",
   "e_code": "E968",
-  "aliases": "E968, érythritol, méso-érythritol, éritritol",
+  "aliases": "E968, erythritol, meso-erythritol, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un polyol alcool de sucre non hygroscopique obtenu par fermentation de glucides avec des levures osmophiles.",
-  "why_botia": "Substitut de sucre artificiel caractéristique des aliments ultra-transformés pauvres en calories.",
+  "what_is": "Un polyol à quatre carbones, ou alcool de sucre, produit par fermentation d'une source de glucides avec des levures osmophiles de qualité alimentaire, puis purifié et séché.",
+  "why_botia": "BOTIA signale l'E968 car il s'agit d'un polyol de charge, et non simplement d'un édulcorant intense. La réévaluation de l'EFSA en 2023 a établi une DJA à partir de données sur la diarrhée chez l'humain. La réglementation de l'UE exige un avertissement concernant l'effet laxatif au-delà de 10 % de polyols ajoutés ; la recommandation de l'OMS de 2023 exclut les polyols.",
   "can_1": "Détecter E968 ou l'érythritol et déclencher la couche édulcorant.",
   "can_2": "Informer l'utilisateur de ses propriétés à faible indice glycémique et faibles calories.",
   "cannot_1": "Vérifier quelle souche de levure a été utilisée pour la fermentation.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Réévaluation de l’érythritol (E 968), 2023",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
+    },
+    {
+      "label": "Règlement (UE) 2021/1175 — étiquetage des polyols",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
     }
   ],
   "title": "Érythritol",

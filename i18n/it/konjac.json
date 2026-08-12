@@ -1,14 +1,14 @@
 {
   "name": "Konjac",
   "e_code": "E425",
-  "aliases": "E425, E425i, E425ii, gomma di konjac, glucomannano di konjac, farina di konjac, gomma konjac",
+  "aliases": "E425, E425i, E425ii, konjac gum, konjac glucomannan, konjac flour, goma konjac",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Un idrocolloide derivato dalla radice della pianta Amorphophallus konjac.",
-  "why_botia": "Agente gelificante industriale vietato in alcune forme a causa del rischio di soffocamento.",
+  "what_is": "Una fibra di glucomannano idrosolubile ad alto peso molecolare ottenuta dal tubero di Amorphophallus konjac; addensa l'acqua e può formare gel consistenti.",
+  "why_botia": "BOTIA segnala l'E425 perché può formare gel compatti che presentano un rischio di soffocamento. Le norme dell'UE vietano il konjac nei prodotti di confetteria a base di gelatina, incluse le mini-tazze di gelatina destinate a essere ingerite in un solo boccone.",
   "can_1": "Rileva E425, gomma di konjac o glucomannano di konjac sulle etichette.",
   "can_2": "Attivare il layer di texture e fornire avviso di sicurezza per rischio di soffocamento.",
   "cannot_1": "Verificare la viscosità esatta o il peso molecolare.",
@@ -16,11 +16,19 @@
   "sources": [
     {
       "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Elenco dei Novel Food dell'UE - Regolamento (UE) 2017/2470",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R2470"
+      "label": "Elenco UE dei Novel Food - Regolamento (UE) 2017/2470",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-14/eng"
+    },
+    {
+      "label": "Regolamento (CE) 1333/2008 sugli additivi alimentari, Allegato II",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EFSA — Valutazione della gomma di konjac (E 425), 2017",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4864"
     }
   ],
   "title": "Konjac",

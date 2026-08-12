@@ -1,14 +1,14 @@
 {
   "name": "Carragenina",
   "e_code": "E407",
-  "aliases": "E407, E407a, carragenina, alga eucheuma trasformata, gelosio di muschio irlandese, eucheumano, furcellaran, carragenano, carragenane",
+  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Un idrocolloide estratto dalle alghe rosse.",
-  "why_botia": "Lo segnala perché è un agente gelificante industriale, spesso associato a sensibilità gastrointestinale, e viene sottoposto a rivalutazioni di sicurezza sui metalli pesanti.",
+  "what_is": "Una famiglia di polisaccaridi solfati estratti dalle alghe rosse e utilizzati per gelificare, addensare o stabilizzare gli alimenti; l'E407a è alga Eucheuma trasformata.",
+  "why_botia": "BOTIA segnala E407 ed E407a perché l'etichetta non rivela il loro profilo di peso molecolare. L'EFSA ha lasciato temporaneo il suo ADI di gruppo in attesa di dati migliori sul materiale a basso peso molecolare e sugli effetti infiammatori intestinali non ancora risolti.",
   "can_1": "Rileva la presenza di E407 o E407a e classificala sotto il livello di consistenza.",
   "can_2": "Fornire dettagli di avvertenza sulle frazioni a basso peso molecolare o sugli ausiliari di lavorazione.",
   "cannot_1": "Verificare il livello esatto dei contaminanti di carragenina a basso peso molecolare al di sotto di 50 kDa.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "EFSA — Rivalutazione della carragenina (E 407, E 407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "JECFA — Carragenina (INS 407)",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
     }
   ],
   "title": "Carragenina",

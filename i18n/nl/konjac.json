@@ -1,14 +1,14 @@
 {
   "name": "Konjac",
   "e_code": "E425",
-  "aliases": "E425, E425i, E425ii, konjacgom, konjacglucomannaan, konjacmeel, gomakonjac",
+  "aliases": "E425, E425i, E425ii, konjac gum, konjac glucomannan, konjac flour, goma konjac",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Een hydrocoloïde uit de wortel van de Amorphophallus konjac-plant.",
-  "why_botia": "Industrieel geleermiddel dat in bepaalde vormen verboden is vanwege verstikkingsgevaar.",
+  "what_is": "Een in water oplosbare, hoogmoleculaire glucomannaanvezel verkregen uit de knol van Amorphophallus konjac; het verdikt water en kan stevige gels vormen.",
+  "why_botia": "BOTIA wijst op E425 omdat dit stevige gels kan vormen die een verstikkingsgevaar opleveren. EU-regels verbieden konjac in geleisnoepgoed, inclusief mini-cupjes met gelei die bedoeld zijn om in één hap door te slikken.",
   "can_1": "Detecteer E425, konjacgom of konjacglucomannaan op etiketten.",
   "can_2": "Activeer de textuurlaag en geef een veiligheidswaarschuwing voor verstikking.",
   "cannot_1": "Controleer de exacte viscositeit of moleculair gewicht.",
@@ -16,11 +16,19 @@
   "sources": [
     {
       "label": "Verordening (EU) nr. 231/2012 van de Commissie",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
       "label": "EU-lijst van nieuwe voedingsmiddelen - Verordening (EU) 2017/2470",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R2470"
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-14/eng"
+    },
+    {
+      "label": "Verordening (EG) nr. 1333/2008 betreffende levensmiddelenadditieven, bijlage II",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EFSA — Evaluatie van konjacgom (E 425), 2017",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4864"
     }
   ],
   "title": "Konjac",

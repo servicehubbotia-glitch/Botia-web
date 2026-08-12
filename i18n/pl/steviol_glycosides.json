@@ -1,14 +1,14 @@
 {
   "name": "Glikozydy stewiolowe ze stewii",
   "e_code": "E960a",
-  "aliases": "E960a, E960c, E960d, glikozydy stewiolowe, stewiozyd, rebaudiozyd A, glukozydy stewiolowe",
+  "aliases": "E960a, E960c, E960d, steviol glycosides, stevioside, rebaudioside A, glucósidos de esteviol, stevia, stevia extract, steviol glycoside, E960 sweetener",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Wysokointensywne słodkie związki ekstrahowane z liści Stevia rebaudiana.",
-  "why_botia": "Roślinny słodzik stosowany w ultraprzetworzonych formulacjach jako zamiennik cukru.",
+  "what_is": "Oczyszczona mieszanina intensywnie słodkich związków, w tym stewiozydu i rebaudiozydów, ekstrahowana z liści Stevia rebaudiana.",
+  "why_botia": "BOTIA sygnalizuje E960, ponieważ „stevia” brzmi jak liść, ale etykieta zwykle oznacza oczyszczone glikozydy stewiolowe. Zalecenie WHO z 2023 r. dotyczące niesłodkich substancji słodzących wprost obejmuje stewię i jej pochodne.",
   "can_1": "Wykrywa E960a, E960c, E960d oraz synonimy pochodzące ze stewii na etykietach żywności.",
   "can_2": "Identyfikuje konkretną podklasę glikozydów stewiolowych, gdy jest zadeklarowana.",
   "cannot_1": "Nie weryfikuje, czy podczas produkcji użyto niezatwierdzonych rozpuszczalników ekstrakcyjnych.",
@@ -16,7 +16,15 @@
   "sources": [
     {
       "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Rozporządzenie (UE) 2021/1156 — specyfikacje glikozydów stewiolowych",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1156"
+    },
+    {
+      "label": "WHO — Wytyczne dotyczące substancji słodzących niebędących cukrami, 2023",
+      "url": "https://www.who.int/news/item/15-05-2023-who-advises-not-to-use-non-sugar-sweeteners-for-weight-control-in-newly-released-guideline"
     }
   ],
   "title": "Glikozydy stewiolowe ze stewii",

@@ -1,14 +1,14 @@
 {
   "name": "Konjak",
   "e_code": "E425",
-  "aliases": "E425, E425i, E425ii, Konjakgummi, Konjak-Glucomannan, Konjakmehl, Goma Konjak",
+  "aliases": "E425, E425i, E425ii, konjac gum, konjac glucomannan, konjac flour, goma konjac",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Ein Hydrokolloid aus der Wurzel der Pflanze Amorphophallus konjac.",
-  "why_botia": "Industrielles Geliermittel, das in bestimmten Formen aufgrund von Erstickungsgefahr verboten ist.",
+  "what_is": "Ein wasserlöslicher, hochmolekularer Glucomannan-Ballaststoff, der aus der Knolle von Amorphophallus konjac gewonnen wird; er verdickt Wasser und kann feste Gele bilden.",
+  "why_botia": "BOTIA weist auf E425 hin, da es feste Gele bilden kann, die ein Erstickungsrisiko darstellen. EU-Vorschriften verbieten Konjak in Gelee-Süßwaren, einschließlich Gelee-Minibechern, die dazu bestimmt sind, in einem Bissen geschluckt zu werden.",
   "can_1": "E425, Konjakgummi oder Konjak-Glucomannan auf Etiketten erkennen.",
   "can_2": "Texturschicht auslösen und eine Sicherheitswarnung vor Erstickungsgefahr geben.",
   "cannot_1": "Die genaue Viskosität oder das Molekulargewicht überprüfen.",
@@ -16,11 +16,19 @@
   "sources": [
     {
       "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32012R0231"
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "EU-Liste neuartiger Lebensmittel - Verordnung (EU) 2017/2470",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017R2470"
+      "label": "EU-Liste neuartiger Lebensmittel – Verordnung (EU) 2017/2470",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-14/eng"
+    },
+    {
+      "label": "Verordnung (EG) Nr. 1333/2008 über Lebensmittelzusatzstoffe, Anhang II",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EFSA — Bewertung von Konjak-Gummi (E 425), 2017",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4864"
     }
   ],
   "title": "Konjak",
