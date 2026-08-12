@@ -1,16 +1,16 @@
 {
   "name": "Parabens",
-  "e_code": "E214",
-  "aliases": "E214, E218, E216, parabens, ethylparaben, methylparaben, propylparaben, sodium methylparaben, parabenos, metilparabeno, etilparabeno",
+  "e_code": "E214, E215, E218, E219",
+  "aliases": "E214, ethyl p-hydroxybenzoate, ethylparaben, E215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, methyl p-hydroxybenzoate, methylparaben, E219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
   "module_icon": "mujer.png",
   "layers": [
     "woman",
     "enumbers"
   ],
   "what_is": "A group of synthetic compounds widely used as chemical preservatives in food and cosmetics.",
-  "why_botia": "It flags them because they are proven endocrine disruptors that mimic estrogen, directly impacting female fertility and reproductive health.",
-  "can_1": "Detect E214, E218, or other declared parabens on the label.",
-  "can_2": "Warn about the estrogenic activity and historical regulatory exclusions (like E216).",
+  "why_botia": "Parabens do not all have the same evidence. EFSA set one intake limit for methylparaben, ethylparaben and their sodium salts. It could not set one for propylparaben. The EU later removed E216 and E217 from food use.",
+  "can_1": "Spot E214, E215, E218 or E219 on the label.",
+  "can_2": "E214, E215, E218 and E219 share an EFSA intake limit. E216 and E217 were removed from EU food use. Finding an authorised paraben does not prove a fertility effect.",
   "cannot_1": "Assess the cumulative exposure or 'cocktail effect' of multiple parabens present in the diet.",
   "cannot_2": "Determine the precise concentration of the preservative in the food matrix.",
   "sources": [
