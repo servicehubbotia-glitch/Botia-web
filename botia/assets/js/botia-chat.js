@@ -64,7 +64,6 @@
     function getCurrentQuestion() {
         if (!quizQuestions.length) return null;
         if (!quizOrder.length) quizOrder = shuffle(quizQuestions.map(function(_, i) { return i; }));
-        // Bucle infinito: al llegar al final, vuelve a barajar y empieza de nuevo
         if (quizIndex >= quizOrder.length) {
             quizOrder = shuffle(quizQuestions.map(function(_, i) { return i; }));
             quizIndex = 0;
@@ -108,7 +107,21 @@
             div.textContent = text;
         } else {
             div.style.cssText = base + 'align-self:flex-start;background:rgba(255,255,255,0.06);color:#f2e4dc;border:1px solid rgba(255,255,255,0.08);border-bottom-left-radius:6px;';
-            div.textContent = text;
+            // Convertir enlaces en elementos <a> clickeables
+            const partes = text.split(/(https?:\/\/[^\s]+)/g);
+            partes.forEach(function(p) {
+                if (/^https?:\/\//.test(p)) {
+                    const a = document.createElement('a');
+                    a.href = p;
+                    a.target = '_blank';
+                    a.rel = 'noopener';
+                    a.textContent = p;
+                    a.style.cssText = 'color:#e6a06b;text-decoration:underline;word-break:break-all;';
+                    div.appendChild(a);
+                } else {
+                    div.appendChild(document.createTextNode(p));
+                }
+            });
         }
         messagesEl.appendChild(div);
         messagesEl.scrollTop = messagesEl.scrollHeight;
@@ -141,13 +154,11 @@
         wrapper.setAttribute('data-quiz-msg', 'true');
         wrapper.style.cssText = 'align-self:flex-start;background:rgba(255,255,255,0.06);color:#f2e4dc;border:1px solid rgba(255,255,255,0.08);border-bottom-left-radius:6px;max-width:88%;padding:0.8rem 1rem;border-radius:20px;font-size:0.93rem;line-height:1.5;word-break:break-word;';
 
-        // Pregunta — el gancho
         const textDiv = document.createElement('div');
         textDiv.textContent = q.text || '';
         textDiv.style.cssText = 'font-weight:600;color:#ffd8bd;margin-bottom:8px;';
         wrapper.appendChild(textDiv);
 
-        // Respuesta corta — el dato
         if (q.answer) {
             const answerDiv = document.createElement('div');
             answerDiv.textContent = q.answer;
@@ -181,7 +192,6 @@
     }
 
     function advanceQuiz() {
-        // Borrar el mensaje del quiz actual
         const quizMsgs = messagesEl.querySelectorAll('[data-quiz-msg]');
         quizMsgs.forEach(function(el) { el.remove(); });
 
@@ -256,7 +266,6 @@
         chatWindow.id = 'botia-chat-window';
         chatWindow.style.cssText = 'display:none;width:380px;height:520px;background:rgba(16,7,7,0.97);border:1px solid rgba(190,122,72,0.3);border-radius:28px;overflow:hidden;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,0.5);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;margin-bottom:16px;';
 
-        // Header
         const header = document.createElement('div');
         header.style.cssText = 'background:linear-gradient(135deg,#100707 0%,#241010 48%,#080505 100%);padding:1rem 1.5rem;border-bottom:1px solid rgba(190,122,72,0.2);display:flex;justify-content:space-between;align-items:center;flex-shrink:0;';
 
@@ -272,13 +281,11 @@
 
         chatWindow.appendChild(header);
 
-        // Messages
         messagesEl = document.createElement('div');
         messagesEl.id = 'botia-messages';
         messagesEl.style.cssText = 'flex:1;padding:1rem 1.2rem;overflow-y:auto;display:flex;flex-direction:column;gap:0.6rem;background:rgba(0,0,0,0.2);';
         chatWindow.appendChild(messagesEl);
 
-        // Footer
         const footer = document.createElement('div');
         footer.style.cssText = 'padding:0.7rem 1rem 1rem;background:rgba(0,0,0,0.25);border-top:1px solid rgba(190,122,72,0.15);display:flex;gap:0.5rem;flex-shrink:0;';
 
@@ -295,7 +302,6 @@
 
         chatWindow.appendChild(footer);
 
-        // Toggle button (robot image)
         toggleBtn = document.createElement('button');
         toggleBtn.id = 'botia-toggle-btn';
         toggleBtn.setAttribute('aria-label', 'Open BOTIA chat');
