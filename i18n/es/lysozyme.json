@@ -1,0 +1,28 @@
+{
+  "name": "Lisozima",
+  "title": "Lisozima",
+  "description": "Enzima o proteína utilizada como aditivo alimentario. La especificación de la UE para el E1105 define la lisozima como un polipéptido obtenido de la clara de huevo de gallina, que suele suministrarse en forma de clorhidrato.",
+  "what_is": "Enzima o proteína utilizada como aditivo alimentario. La especificación de la UE para el E1105 define la lisozima como un polipéptido obtenido de la clara de huevo de gallina, que suele suministrarse en forma de clorhidrato.",
+  "why_botia": "BOTIA se clasifica como E1105 porque el nombre del aditivo declarado también incluye información sobre el origen relevante para la categoría de origen animal. La normativa de la UE aborda específicamente la lisozima procedente de la clara de huevo de gallina y su etiquetado en usos alimentarios como, por ejemplo, determinadas cervezas.",
+  "can_1": "Detectar E1105, lisozima, clorhidrato de lisozima y muramidasa cuando se declaren.",
+  "can_2": "Explica el contexto relativo al origen animal y a los números E, y describe el origen de la clara de huevo tal y como se define en la especificación de la UE sobre aditivos.",
+  "cannot_1": "Determina la concentración o la actividad enzimática restante a partir de la lista de ingredientes.",
+  "cannot_2": "Se debe suponer que un alimento sin etiquetar contiene lisozima o deducir que procede de otra fuente cuando la etiqueta no facilite dicha información.",
+  "sources": [
+    {
+      "label": "Reglamento (UE) n.º 231/2012 de la Comisión — E1105: especificaciones de la lisozima",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Reglamento (UE) n.º 471/2012 de la Comisión: contexto de uso y etiquetado de la lisozima E1105",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    }
+  ],
+  "e_code": "E1105",
+  "module_icon": "animal.png",
+  "layers": [
+    "animal",
+    "enumbers"
+  ],
+  "aliases": "E1105, INS 1105, lysozyme, lysozyme hydrochloride, muramidase"
+}

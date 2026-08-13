@@ -1,23 +1,27 @@
 {
-  "name": "ميثيل الزئبق",
+  "name": "Methylmercury",
   "e_code": null,
-  "aliases": "ميثيل الزئبق، زئبق عضوي، ميتيل ميركوريو",
+  "aliases": "methylmercury, methyl mercury, organic mercury, total mercury, inorganic mercury, mercury, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "شكل عضوي شديد السمية من الزئبق يتراكم بيولوجيًا في السلاسل الغذائية المائية.",
-  "why_botia": "ميثيل الزئبق شديد السمية للجهاز العصبي النامي. أثناء الحمل، يتمثل القلق في تعرض الجنين: فالأطفال الذين لم يولدوا بعد هم الفئة الأكثر عرضة للخطر. وجدت EFSA أن النساء في سن الإنجاب لم يكنّ أكثر تعرضًا من البالغين عمومًا. ولا يقدم ذلك أساسًا للقول بأن النساء يتخلصن منه بشكل أبطأ.",
-  "can_1": "كشف مكونات الأسماك المعروفة بأنها مصادر رئيسية للتعرض لميثيل الزئبق.",
-  "can_2": "تقديم نصائح السلامة للنساء الحوامل والنساء في سن الإنجاب.",
-  "cannot_1": "قياس التركيز الفعلي في المنتج الممسوح ضوئيًا.",
-  "cannot_2": "تحديد ما إذا كانت السمكة صيدًا بريًا أم مستزرعة.",
+  "what_is": "Mercury occurs in different chemical forms. Methylmercury is an organic form that bioaccumulates in aquatic food chains; inorganic mercury compounds are a different class. 'Total mercury' is an analytical measurement covering mercury across forms and is not a synonym for methylmercury.",
+  "why_botia": "BOTIA shows methylmercury context when a detected fish ingredient belongs to a relevant exposure category. WHO notes that people are mainly exposed to methylmercury through fish and shellfish and distinguishes organic, inorganic and elemental mercury forms. Adding 'total mercury' and 'inorganic mercury' to the explanation prevents analytical results from being misread as though every mercury measurement were methylmercury.",
+  "can_1": "Detect fish ingredients that trigger BOTIA's mercury-context layer and explain the distinction between methylmercury, inorganic mercury and total mercury terminology.",
+  "can_2": "Provide pregnancy and child-development context from official sources without pretending the ingredient list reports a mercury concentration.",
+  "cannot_1": "Quantify total mercury, methylmercury or inorganic mercury in the scanned food.",
+  "cannot_2": "Convert a total-mercury laboratory result into an exact methylmercury concentration without analytical speciation or a validated conversion basis.",
   "sources": [
     {
-      "label": "EFSA المعادن كملوثات في الغذاء",
+      "label": "WHO — Mercury and health",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
+    },
+    {
+      "label": "EFSA — Metals as contaminants in food",
       "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
     }
   ],
-  "title": "ميثيل الزئبق",
-  "description": "شكل عضوي شديد السمية من الزئبق يتراكم بيولوجيًا في السلاسل الغذائية المائية."
+  "title": "Methylmercury",
+  "description": "Methylmercury in fish exposure context, with clear distinction from total and inorganic mercury."
 }

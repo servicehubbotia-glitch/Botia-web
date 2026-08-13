@@ -1,0 +1,28 @@
+{
+  "name": "Exhausteurs de goût à base de nucléotides",
+  "title": "Exhausteurs de goût à base de nucléotides",
+  "description": "Un groupe d'exhausteurs de goût à base de nucléotides, comprenant notamment le guanylate disodique (E627), l'inosinate disodique (E631) et les 5'-ribonucléotides disodiques (E635).",
+  "what_is": "Un groupe d'exhausteurs de goût à base de nucléotides, comprenant notamment le guanylate disodique (E627), l'inosinate disodique (E631) et les 5'-ribonucléotides disodiques (E635).",
+  "why_botia": "BOTIA Ces codes sont regroupés car il s'agit d'exhausteurs de goût apparentés ; les étiquettes peuvent utiliser soit les numéros E, soit les noms chimiques. La mention identifie l'additif ; elle ne précise ni son origine ni sa quantité.",
+  "can_1": "Détecter les additifs E627, E631 et E635, ainsi que leurs noms courants : guanylate, inosinate et ribonucléotide.",
+  "can_2": "Activez les couches d'informations relatives aux arômes et aux numéros E pour obtenir une déclaration explicite.",
+  "cannot_1": "Déterminer l'origine de fabrication, la concentration ou l'apport alimentaire total à partir du nom seul.",
+  "cannot_2": "Cela laisse supposer la présence de glutamate monosodique ou d'un autre exhausteur de goût qui n'est pas mentionné séparément.",
+  "sources": [
+    {
+      "label": "Règlement (CE) n° 1333/2008 — Liste de l'Union et conditions d'utilisation des additifs alimentaires",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Règlement (UE) n° 231/2012 de la Commission — spécifications relatives aux additifs alimentaires autorisés",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "e_code": "E627, E631, E635",
+  "module_icon": "flavors.png",
+  "layers": [
+    "flavour",
+    "enumbers"
+  ],
+  "aliases": "E627, E631, E635, disodium guanylate, sodium guanylate, disodium inosinate, sodium inosinate, disodium 5'-ribonucleotides, disodium ribonucleotides, disodium 5-ribonucleotides, guanylate, inosinate, ribonucleotides"
+}

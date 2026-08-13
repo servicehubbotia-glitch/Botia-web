@@ -1,23 +1,27 @@
 {
-  "name": "Metilmercurio",
+  "name": "Methylmercury",
   "e_code": null,
-  "aliases": "metilmercurio, mercurio organico, metilmercurio",
+  "aliases": "methylmercury, methyl mercury, organic mercury, total mercury, inorganic mercury, mercury, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Una forma altamente tossica di mercurio organico che si bioaccumula nelle catene alimentari acquatiche.",
-  "why_botia": "Il metilmercurio è particolarmente tossico per il sistema nervoso in via di sviluppo. In gravidanza, la preoccupazione riguarda l'esposizione fetale: i bambini non ancora nati sono il gruppo più vulnerabile. L'EFSA ha rilevato che le donne in età fertile non erano più esposte degli adulti in generale. Non vi è alcuna base per affermare che le donne lo eliminino più lentamente.",
-  "can_1": "Rileva ingredienti di pesce noti per essere fonti principali di esposizione al metilmercurio.",
-  "can_2": "Fornire consigli di sicurezza per donne in gravidanza e in età fertile.",
-  "cannot_1": "Quantificare la concentrazione effettiva nel prodotto scansionato.",
-  "cannot_2": "Determina se il pesce è stato pescato in natura o allevato.",
+  "what_is": "Mercury occurs in different chemical forms. Methylmercury is an organic form that bioaccumulates in aquatic food chains; inorganic mercury compounds are a different class. 'Total mercury' is an analytical measurement covering mercury across forms and is not a synonym for methylmercury.",
+  "why_botia": "BOTIA shows methylmercury context when a detected fish ingredient belongs to a relevant exposure category. WHO notes that people are mainly exposed to methylmercury through fish and shellfish and distinguishes organic, inorganic and elemental mercury forms. Adding 'total mercury' and 'inorganic mercury' to the explanation prevents analytical results from being misread as though every mercury measurement were methylmercury.",
+  "can_1": "Detect fish ingredients that trigger BOTIA's mercury-context layer and explain the distinction between methylmercury, inorganic mercury and total mercury terminology.",
+  "can_2": "Provide pregnancy and child-development context from official sources without pretending the ingredient list reports a mercury concentration.",
+  "cannot_1": "Quantify total mercury, methylmercury or inorganic mercury in the scanned food.",
+  "cannot_2": "Convert a total-mercury laboratory result into an exact methylmercury concentration without analytical speciation or a validated conversion basis.",
   "sources": [
     {
-      "label": "Metalli EFSA come contaminanti negli alimenti",
+      "label": "WHO — Mercury and health",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
+    },
+    {
+      "label": "EFSA — Metals as contaminants in food",
       "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
     }
   ],
-  "title": "Metilmercurio",
-  "description": "Una forma altamente tossica di mercurio organico che si bioaccumula nelle catene alimentari acquatiche."
+  "title": "Methylmercury",
+  "description": "Methylmercury in fish exposure context, with clear distinction from total and inorganic mercury."
 }

@@ -1,0 +1,28 @@
+{
+  "name": "Fosforany",
+  "title": "Fosforany",
+  "description": "Szeroka rodzina dodatków na bazie kwasu fosforowego i fosforanów, stosowanych m.in. do regulacji kwasowości, sekwestracji, stabilizacji, spulchniania, regulacji wilgotności oraz poprawy tekstury.",
+  "what_is": "Szeroka rodzina dodatków na bazie kwasu fosforowego i fosforanów, stosowanych m.in. do regulacji kwasowości, sekwestracji, stabilizacji, spulchniania, regulacji wilgotności oraz poprawy tekstury.",
+  "why_botia": "BOTIA grupuje te deklaracje, ponieważ powiązane dodatki fosforanowe obejmują substancje wymienione na stronach E338–E343 oraz E450–E452 i mogą występować pod kilkoma konkretnymi nazwami. W ramach regulacyjnych ocen bezpieczeństwa uwzględnia się narażenie wynikające z całej diety; sama obecność jednego zadeklarowanego fosforanu nie oznacza jeszcze nadmiernego narażenia.",
+  "can_1": "Wykrywanie wymienionych numerów E oraz typowych oznaczeń fosforanów, difosforanów, trifosforanów i polifosforanów.",
+  "can_2": "Przedstaw kontekst dotyczący tekstury/numerów E oraz odróżnij wykaz składników od oceny narażenia.",
+  "cannot_1": "Oblicz całkowite spożycie fosforu lub fosforanów na podstawie listy składników.",
+  "cannot_2": "Załóżmy, że każdy produkt spożywczy zawierający dopuszczony fosforan wiąże się z takim samym narażeniem lub ryzykiem.",
+  "sources": [
+    {
+      "label": "Rozporządzenie (WE) nr 1333/2008 — unijny wykaz dodatków do żywności i warunki ich stosowania",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "e_code": "E338–E343, E450–E452",
+  "module_icon": "texture.png",
+  "layers": [
+    "texture",
+    "enumbers"
+  ],
+  "aliases": "E338, E339, E340, E341, E342, E343, E450, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, diphosphates, pyrophosphates, triphosphates, polyphosphates"
+}

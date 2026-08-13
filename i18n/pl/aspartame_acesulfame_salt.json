@@ -1,0 +1,32 @@
+{
+  "name": "Sól aspartamu i acesulfamu",
+  "title": "Sól aspartamu i acesulfamu",
+  "description": "Słodzik o wysokiej intensywności, będący mieszanką aspartamu i acesulfamu, dopuszczony do stosowania w UE pod numerem E962.",
+  "what_is": "Słodzik o wysokiej intensywności, będący mieszanką aspartamu i acesulfamu, dopuszczony do stosowania w UE pod numerem E962.",
+  "why_botia": "BOTIA oznacza kod E962, ponieważ różni się to od wykazania aspartamu i acesulfamu K jako dwóch odrębnych składników. Gdy sól jest zadeklarowana, strona BOTIA może zidentyfikować konkretny środek słodzący i przedstawić odpowiedni kontekst etykietowania, w tym – w stosownych przypadkach – źródło fenyloalaniny pochodzącej z aspartamu.",
+  "can_1": "Wykryj kod E962 oraz popularne nazwy soli aspartamu i acesulfamu.",
+  "can_2": "Należy odróżnić oznaczenie E962 od oddzielnych oznaczeń aspartamu (E951) i acesulfamu K (E950).",
+  "cannot_1": "Na podstawie listy składników określ ilość każdego ze składników słodzących.",
+  "cannot_2": "Oszacować reakcję danej osoby lub jej spożycie fenyloalaniny bez dostępu do danych ilościowych dotyczących produktu.",
+  "sources": [
+    {
+      "label": "Rozporządzenie (WE) nr 1333/2008 — E962 w wykazie unijnym",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — specyfikacje dotyczące E962",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Rozporządzenie (UE) nr 1169/2011 — przepisy dotyczące etykietowania odnoszące się do aspartamu",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2026-01-01/eng"
+    }
+  ],
+  "e_code": "E962",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "enumbers"
+  ],
+  "aliases": "E962, INS 962, salt of aspartame-acesulfame, aspartame-acesulfame salt, aspartame acesulfame salt, acesulfame-aspartame salt"
+}

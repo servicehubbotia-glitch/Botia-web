@@ -1,23 +1,27 @@
 {
-  "name": "Methylkwik",
+  "name": "Methylmercury",
   "e_code": null,
-  "aliases": "methylkwik, organisch kwik, metilmercurio",
+  "aliases": "methylmercury, methyl mercury, organic mercury, total mercury, inorganic mercury, mercury, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Een zeer giftige organische vorm van kwik die bioaccumuleert in aquatische voedselketens.",
-  "why_botia": "Methylkwik is bijzonder giftig voor het zich ontwikkelende zenuwstelsel. Tijdens de zwangerschap is de zorg blootstelling van de foetus: ongeboren kinderen zijn de meest kwetsbare groep. EFSA stelde vast dat vrouwen in de vruchtbare leeftijd niet meer werden blootgesteld dan volwassenen in het algemeen. Het biedt geen basis om te stellen dat vrouwen het langzamer uitscheiden.",
-  "can_1": "Detecteer visingrediënten die bekend staan als belangrijke bronnen van methylkwikblootstelling.",
-  "can_2": "Geef veiligheidsadvies voor zwangere vrouwen en vrouwen in de vruchtbare leeftijd.",
-  "cannot_1": "Kwantificeer de werkelijke concentratie in het gescande product.",
-  "cannot_2": "Bepaal of de vis wild gevangen of gekweekt is.",
+  "what_is": "Mercury occurs in different chemical forms. Methylmercury is an organic form that bioaccumulates in aquatic food chains; inorganic mercury compounds are a different class. 'Total mercury' is an analytical measurement covering mercury across forms and is not a synonym for methylmercury.",
+  "why_botia": "BOTIA shows methylmercury context when a detected fish ingredient belongs to a relevant exposure category. WHO notes that people are mainly exposed to methylmercury through fish and shellfish and distinguishes organic, inorganic and elemental mercury forms. Adding 'total mercury' and 'inorganic mercury' to the explanation prevents analytical results from being misread as though every mercury measurement were methylmercury.",
+  "can_1": "Detect fish ingredients that trigger BOTIA's mercury-context layer and explain the distinction between methylmercury, inorganic mercury and total mercury terminology.",
+  "can_2": "Provide pregnancy and child-development context from official sources without pretending the ingredient list reports a mercury concentration.",
+  "cannot_1": "Quantify total mercury, methylmercury or inorganic mercury in the scanned food.",
+  "cannot_2": "Convert a total-mercury laboratory result into an exact methylmercury concentration without analytical speciation or a validated conversion basis.",
   "sources": [
     {
-      "label": "EFSA Metalen als Verontreinigingen in Voedsel",
+      "label": "WHO — Mercury and health",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
+    },
+    {
+      "label": "EFSA — Metals as contaminants in food",
       "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
     }
   ],
-  "title": "Methylkwik",
-  "description": "Een zeer giftige organische vorm van kwik die bioaccumuleert in aquatische voedselketens."
+  "title": "Methylmercury",
+  "description": "Methylmercury in fish exposure context, with clear distinction from total and inorganic mercury."
 }

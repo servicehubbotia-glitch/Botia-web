@@ -1,0 +1,28 @@
+{
+  "name": "Alitame",
+  "title": "Iniziamo",
+  "description": "Un dolcificante ad alta intensità non zuccherino identificato dall’JECFAe e dal Codex come “INSe 956”.",
+  "what_is": "Un dolcificante ad alta intensità non zuccherino identificato dall’JECFAe e dal Codex come “INSe 956”.",
+  "why_botia": "BOTIA segnala una dichiarazione esplicita relativa all'alitame, poiché esso potrebbe comparire con il proprio nome o con il numerINSe nei mercati in cui ne è consentito l'uso. Una valutazione internazionale o una disposizione del Codex non implica che l'additivo sia autorizzato in ogni giurisdizione.",
+  "can_1": "Rileva alitame e INS 956 quando dichiarati esplicitamente.",
+  "can_2": "Mostrare il contesto relativo al dolcificante e alla numerazione internazionale, mantenendo separata l'autorizzazione specifica per ciascun mercato.",
+  "cannot_1": "Calcolare la concentrazione o l'assunzione totale consultando l'elenco degli ingredienti.",
+  "cannot_2": "Si supponga che il riconoscimento da parte del Codex/JECFAe equivalga all’autorizzazione legale in ogni paese.",
+  "sources": [
+    {
+      "label": "JECFA — Alitame (INS 956)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1160"
+    },
+    {
+      "label": "Codex GSFA Online — Alitame (INS 956)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=108&print=true"
+    }
+  ],
+  "e_code": "INS 956",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "enumbers"
+  ],
+  "aliases": "INS 956, alitame, Aclame"
+}

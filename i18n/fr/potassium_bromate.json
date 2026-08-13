@@ -1,0 +1,28 @@
+{
+  "name": "Bromate de potassium",
+  "title": "Bromate de potassium",
+  "description": "Agent oxydant destiné au traitement de la farine et au renforcement de la pâte, désigné au niveau international sous le nom d’INSe 924a.",
+  "what_is": "Agent oxydant destiné au traitement de la farine et au renforcement de la pâte, désigné au niveau international sous la référence «INSe 924a».",
+  "why_botia": "BOTIA signale une déclaration explicite concernant le bromate de potassium, car son traitement réglementaire varie d'une juridiction à l'autre. Le site FDA fournit toujours des informations sur certaines utilisations alimentaires aux États-Unis, tandis que le site JECFA a conclu que son utilisation comme agent de traitement de la farine n'était pas acceptable. Ces positions réglementaires ne précisent pas, sur le site BOTIA, la quantité de résidus présente dans un aliment donné.",
+  "can_1": "Détecter le bromate de potassium et l'INSe 924a lorsqu'ils sont explicitement déclarés.",
+  "can_2": "Montrer que différentes autorités et juridictions peuvent adopter des positions réglementaires divergentes sans présenter un « label hit » comme mesure d'exposition.",
+  "cannot_1": "Mesurer la teneur résiduelle en bromate après la cuisson ou la transformation.",
+  "cannot_2": "Partons du principe que la farine ou le pain contient du bromate de potassium alors que cela n'est pas indiqué.",
+  "sources": [
+    {
+      "label": "FDA — Bromate de potassium, additifs alimentaires",
+      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+    },
+    {
+      "label": "JECFA — Bromate de potassium (n° INS924a)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+    }
+  ],
+  "e_code": "INS 924a",
+  "module_icon": "texture.png",
+  "layers": [
+    "texture",
+    "enumbers"
+  ],
+  "aliases": "INS 924a, potassium bromate, bromate of potash"
+}

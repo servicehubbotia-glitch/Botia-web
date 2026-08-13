@@ -1,0 +1,31 @@
+{
+  "name": "cafeína",
+  "title": "Cafeína",
+  "description": "La cafeína se indica explícitamente como ingrediente, con el etiquetado oficial y la información relativa al embarazo.",
+  "what_is": "Un estimulante de origen natural que también puede añadirse como ingrediente a alimentos, bebidas y complementos alimenticios. Cuando se añade cafeína o se indica explícitamente su presencia, puede aparecer por su nombre en la lista de ingredientes.",
+  "why_botia": "BOTIA Se ha señalado explícitamente la cafeína porque las directrices oficiales y las normas de etiquetado le otorgan un contexto específico. La normativa de la UE exige información adicional sobre la cafeína en determinadas bebidas con alto contenido en cafeína y en alimentos a los que se ha añadido cafeína, y la OMS recomienda reducir el consumo elevado de cafeína durante el embarazo. La mera presencia de la palabra no revela la dosis.",
+  "can_1": "Detecta la cafeína y los nombres de ingredientes comunes que figuran de forma explícita, como la cafeína anhidra, cuando aparezcan en la lista de ingredientes.",
+  "can_2": "Mostrar el contexto del embarazo y del etiquetado de la cafeína sin considerar la mera presencia de cafeína como prueba de una exposición nociva.",
+  "cannot_1": "Calcular la cantidad total de cafeína del producto cuando no se indique dicha cantidad.",
+  "cannot_2": "Se debe deducir la presencia de cafeína procedente del café, el té, el guaraná u otro ingrediente vegetal cuando no se indique expresamente la cafeína.",
+  "sources": [
+    {
+      "label": "Reglamento (UE) n.º 1169/2011 — disposiciones específicas sobre el etiquetado de la cafeína",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2026-01-01/eng"
+    },
+    {
+      "label": "OMS: restricción del consumo de cafeína durante el embarazo",
+      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
+    },
+    {
+      "label": "FDA — Aclarando las cosas: ¿cuánta cafeína es demasiada?",
+      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
+    }
+  ],
+  "e_code": null,
+  "module_icon": "mujer.png",
+  "layers": [
+    "woman"
+  ],
+  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine"
+}

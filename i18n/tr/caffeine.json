@@ -1,0 +1,31 @@
+{
+  "name": "Kafein",
+  "title": "Kafein",
+  "description": "Kafein, içerik maddesi olarak açıkça belirtilmiş olup, resmi etiketleme ve hamilelikle ilgili bilgiler de yer almaktadır.",
+  "what_is": "Gıdalara, içeceklere ve takviye ürünlerine bileşen olarak da eklenebilen, doğada bulunan bir uyarıcıdır. Kafein doğrudan eklenmişse veya açıkça belirtilmişse, içerik listesinde adıyla yer alabilir.",
+  "why_botia": "BOTIA \"Kafein\" kelimesi, resmi kılavuzlar ve etiketleme kuralları bu kelimeye özel bir bağlam kazandırdığı için açıkça belirtilmiştir. AB kuralları, belirli yüksek kafeinli içecekler ve kafein ilaveli gıdalar için ek kafein bilgisi verilmesini zorunlu kılmaktadır; ayrıca DSÖ, hamilelik sırasında yüksek kafein alımının azaltılmasını tavsiye etmektedir. Yalnızca bu kelimenin varlığı, dozu ortaya koymaz.",
+  "can_1": "İçerik listesinde kafein ve susuz kafein gibi yaygın olarak kullanılan açık içerik adlarını tespit eder.",
+  "can_2": "Kafeinin varlığını tek başına zararlı bir maruziyetin kanıtı olarak değerlendirmeksizin, hamilelik ve kafein etiketleme konusunu ele alın.",
+  "cannot_1": "Miktarı belirtilmediğinde, üründeki toplam kafein miktarını hesaplayın.",
+  "cannot_2": "Kafein içeriği belirtilmediğinde, kahve, çay, guarana veya başka bir bitkisel bileşenden kafein içeriğini tahmin edin.",
+  "sources": [
+    {
+      "label": "(AB) 1169/2011 sayılı Tüzük — kafeinle ilgili özel etiketleme hükümleri",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2026-01-01/eng"
+    },
+    {
+      "label": "DSÖ — Hamilelikte kafein alımının sınırlandırılması",
+      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
+    },
+    {
+      "label": "FDA — Sırları Açıklıyoruz: Ne Kadar Kafein Fazla Sayılır?",
+      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
+    }
+  ],
+  "e_code": null,
+  "module_icon": "mujer.png",
+  "layers": [
+    "woman"
+  ],
+  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine"
+}

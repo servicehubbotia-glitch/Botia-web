@@ -1,27 +1,27 @@
 {
-  "name": "Phtalates",
+  "name": "Phthalates",
   "e_code": null,
-  "aliases": "phtalates, DEHP, DBP, BBP, DINP, DIDP, esters d'acide phtalique, ftalatos",
+  "aliases": "phthalates, ortho-phthalates, DEHP, DBP, BBP, DINP, DIDP, DCHP, DIOP, dicyclohexyl phthalate, diisooctyl phthalate, phthalic acid esters, plasticizers, ftalatos",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Un groupe de plastifiants chimiques synthétiques utilisés pour rendre flexibles les plastiques en contact avec les aliments.",
-  "why_botia": "L'examen de l'EFSA de 2019 a couvert cinq phtalates : DBP, BBP, DEHP, DINP et DIDP. Les quatre premiers partagent une limite d'apport temporaire ; le DIDP a la sienne. L'examen n'a pas montré que les phtalates en tant que classe provoquent l'endométriose ou le SOPK.",
-  "can_1": "Détecter les indicateurs d'avertissement ou les types de matériaux qui peuvent libérer des phtalates lorsqu'ils sont chauffés.",
-  "can_2": "Expliquez ce que l’EFSA a constaté pour le DBP, le BBP, le DEHP, le DINP et le DIDP, y compris la limite distincte du DIDP. Une étiquette alimentaire seule ne peut pas indiquer si un phtalate a migré dans l’aliment, ni en quelle quantité.",
-  "cannot_1": "Détecter directement les concentrations de phtalates dans les aliments via une OCR visuelle de l'emballage.",
-  "cannot_2": "Vérifier si les niveaux de migration des joints ou films plastiques dépassent les limites de migration spécifiques européennes (LMS).",
+  "what_is": "A group of ortho-phthalate chemicals used mainly as plasticizers in certain food-contact materials. FDA states that phthalates are not authorised for direct addition to food.",
+  "why_botia": "EFSA's 2019 food-contact review assessed DBP, BBP, DEHP, DINP and DIDP. In May 2026, FDA evaluated eight currently authorised food-contact plasticizers and proposed grouping DEHP, DCHP, DIOP and DINP for a future cumulative risk assessment. DCHP and DIOP therefore belong in BOTIA's explanatory coverage, but this remains packaging/contact-material context rather than a normal ingredient-list trigger.",
+  "can_1": "Recognise explicit phthalate names, including DCHP and DIOP, when they are printed in packaging or material information visible to BOTIA.",
+  "can_2": "Explain the current EFSA and FDA food-contact context without claiming that an ingredient list reveals migration into the food.",
+  "cannot_1": "Detect or quantify phthalates that have migrated into food from packaging using label OCR.",
+  "cannot_2": "Conclude that food contains a particular phthalate when the chemical is not explicitly declared in readable packaging/material information.",
   "sources": [
     {
-      "label": "Avis scientifique de l'EFSA sur les phtalates dans les matériaux en contact avec les aliments (2019)",
+      "label": "EFSA — Update of the risk assessment of phthalates for use in food contact materials (2019)",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5838"
     },
     {
-      "label": "État des connaissances de l'OMS sur les perturbateurs endocriniens (2012)",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "FDA — Phthalates in Food Packaging and Food Contact Applications (updated 2026)",
+      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
     }
   ],
-  "title": "Phtalates",
-  "description": "Un groupe de plastifiants chimiques synthétiques utilisés pour rendre flexibles les plastiques en contact avec les aliments."
+  "title": "Phthalates",
+  "description": "Ortho-phthalate plasticizers in food-contact materials, expanded to include DCHP and DIOP."
 }

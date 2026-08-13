@@ -1,0 +1,29 @@
+{
+  "name": "L-cisteína",
+  "title": "L-cisteína",
+  "description": "Un aminoácido que se utiliza como agente de tratamiento de la harina y para otros fines tecnológicos. La L-cisteína comercial puede producirse mediante diferentes procesos de fabricación y a partir de diversas fuentes.",
+  "what_is": "Un aminoácido que se utiliza como agente de tratamiento de la harina y para otros fines tecnológicos. La L-cisteína comercial puede producirse mediante diferentes procesos de fabricación y a partir de diversas fuentes.",
+  "why_botia": "BOTIA se señala con el código E920 porque el nombre explícito del aditivo puede ser relevante tanto desde el punto de vista tecnológico como para las elecciones alimentarias en las que se tiene en cuenta el origen de los ingredientes. La lista de ingredientes puede indicar la presencia de L-cisteína, pero normalmente no permite determinar si se ha obtenido mediante fermentación, síntesis o a partir de una materia prima de origen animal.",
+  "can_1": "Detectar E920, L-cisteína y denominaciones declaradas estrechamente relacionadas.",
+  "can_2": "Mostrar el contexto de la textura y los números E, y explicar que el origen puede ser relevante sin calificar una declaración genérica de E920 como de origen animal.",
+  "cannot_1": "Determina la vía de fabricación o la fuente biológica a partir únicamente del nombre genérico.",
+  "cannot_2": "Certificar la idoneidad para vegetarianos, veganos, halal u otros regímenes alimentarios en función de la procedencia, sin información sobre la procedencia.",
+  "sources": [
+    {
+      "label": "Reglamento (CE) n.º 1333/2008 — Lista de la Unión y condiciones de uso de los aditivos alimentarios",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Reglamento (UE) n.º 231/2012 de la Comisión — especificaciones de los aditivos alimentarios autorizados",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "e_code": "E920",
+  "module_icon": "texture.png",
+  "layers": [
+    "texture",
+    "enumbers",
+    "animal"
+  ],
+  "aliases": "E920, INS 920, L-cysteine, L cysteine, cysteine, L-cysteine hydrochloride"
+}

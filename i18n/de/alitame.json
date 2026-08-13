@@ -1,0 +1,28 @@
+{
+  "name": "Alitame",
+  "title": "Wir beginnen",
+  "description": "Ein hochintensiver, zuckerfreier Süßstoff, der von der „JECFA“ und dem Codex als „INS 956“ bezeichnet wird.",
+  "what_is": "Ein hochintensiver, zuckerfreier Süßstoff, der von der „JECFA“ und dem Codex als „INS 956“ bezeichnet wird.",
+  "why_botia": "BOTIA Weist auf eine explizite Alitame-Deklaration hin, da dieser Stoff unter seinem Namen oder seiner „INS“-Nummer in Märkten auftreten kann, in denen seine Verwendung zulässig ist. Eine internationale Bewertung oder eine Codex-Bestimmung bedeutet nicht, dass der Zusatzstoff in jeder Rechtsordnung zugelassen ist.",
+  "can_1": "Erkennt „alitame“ und „INS“ 956, sofern diese explizit deklariert sind.",
+  "can_2": "Zeigen Sie den Kontext der Zusatzbezeichnung und der internationalen Nummerierung an, während Sie die marktspezifische Zulassung separat behandeln.",
+  "cannot_1": "Ermitteln Sie die Konzentration oder die Gesamtzufuhr anhand der Zutatenliste.",
+  "cannot_2": "Gehen Sie davon aus, dass die Anerkennung durch den Codex bzw. die „JECFA“ in jedem Land einer rechtlichen Zulassung gleichkommt.",
+  "sources": [
+    {
+      "label": "JECFA — Alitame (INS 956)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1160"
+    },
+    {
+      "label": "Codex GSFA Online — Alitame (INS 956)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=108&print=true"
+    }
+  ],
+  "e_code": "INS 956",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "enumbers"
+  ],
+  "aliases": "INS 956, alitame, Aclame"
+}

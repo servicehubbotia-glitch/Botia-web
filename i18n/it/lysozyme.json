@@ -1,0 +1,28 @@
+{
+  "name": "Lisozima",
+  "title": "Lisozima",
+  "description": "Un enzima/proteina utilizzato come additivo alimentare. La specifica dell'UE relativa all'E1105 definisce il lisozima come un polipeptide ottenuto dall'albume d'uovo di gallina, solitamente fornito sotto forma di cloridrato.",
+  "what_is": "Un enzima/proteina utilizzato come additivo alimentare. La specifica dell'UE relativa all'E1105 definisce il lisozima come un polipeptide ottenuto dall'albume d'uovo di gallina, solitamente fornito sotto forma di cloridrato.",
+  "why_botia": "BOTIA segnala il codice E1105 poiché il nome dell’additivo dichiarato contiene anche informazioni sulla provenienza relative alla componente di origine animale. Le norme dell’UE trattano specificatamente il lisozima derivato dall’albume d’uovo di gallina e la sua etichettatura in applicazioni alimentari quali alcune birre.",
+  "can_1": "Rilevare l’E1105, il lisozima, il lisozima cloridrato e la muramidasi, qualora siano dichiarati.",
+  "can_2": "Illustrare il contesto relativo all’origine animale e ai numeri E e spiegare l’origine dell’albume definita nelle specifiche dell’UE relative agli additivi.",
+  "cannot_1": "Determinare la concentrazione o l'attività enzimatica residua sulla base dell'elenco degli ingredienti.",
+  "cannot_2": "Si deve presumere che un alimento non etichettato contenga lisozima oppure dedurre una fonte diversa qualora l'etichetta non fornisca tali informazioni.",
+  "sources": [
+    {
+      "label": "Regolamento (UE) n. 231/2012 della Commissione — E1105: specifiche relative al lisozima",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Regolamento (UE) n. 471/2012 della Commissione — contesto di impiego ed etichettatura del lisozima E1105",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    }
+  ],
+  "e_code": "E1105",
+  "module_icon": "animal.png",
+  "layers": [
+    "animal",
+    "enumbers"
+  ],
+  "aliases": "E1105, INS 1105, lysozyme, lysozyme hydrochloride, muramidase"
+}

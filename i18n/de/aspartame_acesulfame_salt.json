@@ -1,0 +1,32 @@
+{
+  "name": "Aspartam-Acesulfam-Salz",
+  "title": "Aspartam-Acesulfam-Salz",
+  "description": "Ein hochintensiver Süßstoff aus Aspartam und Acesulfam, der in der EU unter der Kennzeichnung E962 zugelassen ist.",
+  "what_is": "Ein hochintensiver Süßstoff aus Aspartam und Acesulfam, der in der EU unter der Bezeichnung E962 zugelassen ist.",
+  "why_botia": "BOTIA wird mit dem Code E962 gekennzeichnet, da sich dies von der Auflistung von Aspartam und Acesulfam K als zwei separate Zutaten unterscheidet. Wenn das Salz angegeben wird, kann BOTIA den jeweiligen Süßstoff identifizieren und den entsprechenden Kennzeichnungskontext anzeigen, einschließlich der aus Aspartam stammenden Phenylalaninquelle, sofern zutreffend.",
+  "can_1": "E962 und gängige Bezeichnungen wie „Aspartam-Acesulfam-Salz“ erkennen.",
+  "can_2": "Unterscheiden Sie eine E962-Angabe von separaten Angaben zu Aspartam (E951) und Acesulfam K (E950).",
+  "cannot_1": "Ermitteln Sie anhand der Zutatenliste die Menge der einzelnen Süßungsmittel.",
+  "cannot_2": "Die Reaktion einer Person oder deren Phenylalaninaufnahme ohne quantitative Produktangaben vorhersagen.",
+  "sources": [
+    {
+      "label": "Verordnung (EG) Nr. 1333/2008 – E962 in der Unionsliste",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Verordnung (EU) Nr. 231/2012 der Kommission – Spezifikationen für E962",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Verordnung (EU) Nr. 1169/2011 – Kennzeichnungsvorschriften in Bezug auf Aspartam",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2026-01-01/eng"
+    }
+  ],
+  "e_code": "E962",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "enumbers"
+  ],
+  "aliases": "E962, INS 962, salt of aspartame-acesulfame, aspartame-acesulfame salt, aspartame acesulfame salt, acesulfame-aspartame salt"
+}

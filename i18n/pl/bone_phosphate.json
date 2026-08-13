@@ -1,0 +1,29 @@
+{
+  "name": "Jadalny fosforan kości",
+  "title": "Jadalny fosforan kości",
+  "description": "Mineralny dodatek do żywności wytwarzany z kości zwierzęcych, określony w „JECFA” jako jadalny fosforan kostny, numer INS 542.",
+  "what_is": "Mineralny dodatek do żywności wytwarzany z kości zwierzęcych, określony w „JECFA” jako jadalny fosforan kostny, numer INS 542.",
+  "why_botia": "BOTIA Wskazuje na składnik o nazwie „INS” 542, ponieważ jego nazwa wskazuje na składnik pochodzenia zwierzęcego, a ponadto może on pełnić funkcje technologiczne, takie jak emulgowanie, nawilżanie czy sekwestracja. Ogólne określenie nie pozwala na identyfikację gatunku zwierzęcia.",
+  "can_1": "Wykrywać fosforan kości typu „INS” 542, fosforan kości jadalny oraz fosforan kości, o ile zostały one wyraźnie zadeklarowane.",
+  "can_2": "Wskaż pochodzenie zwierzęce, konsystencję oraz kontekst numeracji dla zgłoszonego składnika.",
+  "cannot_1": "Należy określić zwierzę, z którego pochodzi surowiec, jeśli na etykiecie podano jedynie „fosforan kostny”.",
+  "cannot_2": "Na podstawie ogólnej nazwy składnika ustalić szczegóły przetwarzania, zgodność z wymogami religijnymi lub status certyfikacji.",
+  "sources": [
+    {
+      "label": "JECFA — Jadalny fosforan kości (nr INS 542)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/185"
+    },
+    {
+      "label": "FAO/JECFA — baza danych i kompendium specyfikacji dodatków do żywności",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/en/"
+    }
+  ],
+  "e_code": "INS 542",
+  "module_icon": "animal.png",
+  "layers": [
+    "animal",
+    "texture",
+    "enumbers"
+  ],
+  "aliases": "INS 542, edible bone phosphate, bone phosphate, bone meal phosphate, tribasic calcium phosphate from bone"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Essbares Knochenphosphat",
+  "title": "Essbares Knochenphosphat",
+  "description": "Ein mineralischer Lebensmittelzusatzstoff, der aus tierischem Knochenmaterial hergestellt wird und in der „JECFA“ als „essbares Knochenphosphat“ (INS. 542) aufgeführt ist.",
+  "what_is": "Ein mineralischer Lebensmittelzusatzstoff, der aus tierischem Knochenmaterial hergestellt wird und in der „JECFA“ als „essbares Knochenphosphat“ (INS. 542) aufgeführt ist.",
+  "why_botia": "BOTIA INSt mit der Nummer 542 gekennzeichnet, da sein Name auf einen tierischen Inhaltsstoff hinweist und er zudem technologische Funktionen wie Emulgierung, Feuchthaltemittel oder Sequestriermittel erfüllen kann. Eine allgemeine Angabe gibt keinen Aufschluss über die Tierart.",
+  "can_1": "INS-542, essbares Knochenphosphat und Knochenphosphat nachweisen, sofern diese ausdrücklich angegeben sind.",
+  "can_2": "Löst den Kontext für tierische Herkunft, Textur und Nummerierung der angegebenen Zutat aus.",
+  "cannot_1": "Ermitteln Sie das Herkunftstier, wenn auf dem Etikett lediglich „Knochenphosphat“ angegeben ist.",
+  "cannot_2": "Ermitteln Sie anhand der allgemeinen Bezeichnung der Zutat Details zur Verarbeitung, die religiöse Eignung oder den Zertifizierungsstatus.",
+  "sources": [
+    {
+      "label": "JECFA — Essbares Knochenphosphat (INS 542)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/185"
+    },
+    {
+      "label": "FAO/JECFA – Datenbank und Kompendium zu Spezifikationen für Lebensmittelzusatzstoffe",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/en/"
+    }
+  ],
+  "e_code": "INS 542",
+  "module_icon": "animal.png",
+  "layers": [
+    "animal",
+    "texture",
+    "enumbers"
+  ],
+  "aliases": "INS 542, edible bone phosphate, bone phosphate, bone meal phosphate, tribasic calcium phosphate from bone"
+}

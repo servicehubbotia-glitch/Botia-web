@@ -1,0 +1,29 @@
+{
+  "name": "L-cystéine",
+  "title": "L-cystéine",
+  "description": "Acide aminé utilisé comme agent de traitement de la farine et à d'autres fins technologiques. La L-cystéine disponible dans le commerce peut être produite selon différents procédés de fabrication et à partir de différentes sources.",
+  "what_is": "Acide aminé utilisé comme agent de traitement de la farine et à d'autres fins technologiques. La L-cystéine disponible dans le commerce peut être produite selon différents procédés de fabrication et à partir de différentes sources.",
+  "why_botia": "BOTIA Le code E920 est mentionné car le nom explicite de l'additif peut revêtir une importance tant sur le plan technologique que pour les choix alimentaires tenant compte de l'origine des ingrédients. La liste des ingrédients peut indiquer la présence de L-cystéine, mais elle ne permet généralement pas de déterminer si celle-ci a été produite par fermentation, par synthèse ou à partir d'une matière première d'origine animale.",
+  "can_1": "Détecter « E920 », « L-cystéine » et les dénominations déclarées étroitement apparentées.",
+  "can_2": "Présentez le contexte relatif à la texture et aux numéros E, et expliquez que l'origine peut avoir son importance, sans pour autant qualifier une mention générique « E920 » de « d'origine animale ».",
+  "cannot_1": "Déterminer le procédé de fabrication ou la source biologique à partir du seul nom générique.",
+  "cannot_2": "Certifier la conformité aux régimes végétariens, végétaliens, halal ou autres, sans fournir d'informations sur la provenance des ingrédients.",
+  "sources": [
+    {
+      "label": "Règlement (CE) n° 1333/2008 — Liste de l'Union et conditions d'utilisation des additifs alimentaires",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Règlement (UE) n° 231/2012 de la Commission — spécifications relatives aux additifs alimentaires autorisés",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "e_code": "E920",
+  "module_icon": "texture.png",
+  "layers": [
+    "texture",
+    "enumbers",
+    "animal"
+  ],
+  "aliases": "E920, INS 920, L-cysteine, L cysteine, cysteine, L-cysteine hydrochloride"
+}

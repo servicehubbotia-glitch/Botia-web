@@ -1,0 +1,29 @@
+{
+  "name": "Néohespéridine DC",
+  "title": "Néohespéridine DC",
+  "description": "Édulcorant à haute intensité et additif modificateur de saveur dérivé d'un flavonoïde d'agrumes par un procédé chimique, répertorié dans l'UE sous le numéro E959.",
+  "what_is": "Édulcorant à haute intensité et additif modificateur de saveur dérivé d'un flavonoïde d'agrumes par un procédé chimique, répertorié dans l'UE sous le numéro E959.",
+  "why_botia": "BOTIA code E959, car cet additif peut être désigné par son code, son nom chimique complet ou l'abréviation NHDC, et peut être utilisé comme édulcorant ou pour modifier le goût.",
+  "can_1": "Détecter l'E959, la néohespéridine DC, la néohespéridine dihydrochalcone et le NHDC lorsqu'ils sont déclarés.",
+  "can_2": "Afficher les informations relatives à l'édulcorant, à l'arôme et au numéro E associés au terme détecté.",
+  "cannot_1": "Calculez la concentration ou l'apport total à partir de la liste des ingrédients.",
+  "cannot_2": "Considérer l'autorisation comme la preuve d'une absence de risque, ou la présence de l'E959 comme la preuve d'une exposition nocive.",
+  "sources": [
+    {
+      "label": "Règlement (CE) n° 1333/2008 — Liste de l'Union et conditions d'utilisation des additifs alimentaires",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Règlement (UE) n° 231/2012 de la Commission — spécifications relatives aux additifs alimentaires autorisés",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "e_code": "E959",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "flavour",
+    "enumbers"
+  ],
+  "aliases": "E959, INS 959, neohesperidin DC, neohesperidin dihydrochalcone, NHDC"
+}

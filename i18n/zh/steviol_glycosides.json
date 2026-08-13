@@ -1,32 +1,32 @@
 {
-  "name": "甜菊糖苷（来自甜叶菊）",
-  "e_code": "E960a",
-  "aliases": "E960a, E960c, E960d, steviol glycosides, stevioside, rebaudioside A, glucósidos de esteviol, stevia, stevia extract, steviol glycoside, E960 sweetener",
+  "name": "Steviol Glycosides",
+  "e_code": "E960a / E960b / E960c / E960d",
+  "aliases": "E960, E960a, E960b, E960b(i), E960c, E960d, steviol glycosides, steviol glycosides from Stevia, steviol glycosides from fermentation, stevioside, rebaudioside A, rebaudioside M, rebaudioside M from fermentation, Reb A, Reb M, fermented rebaudioside M, stevia, stevia extract, steviol glycoside, Yarrowia lipolytica",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "从甜叶菊（Stevia rebaudiana）叶片中提取的高强度甜味化合物纯化混合物，包括甜菊糖苷和莱鲍迪苷。",
-  "why_botia": "BOTIA将E960标记为警示，因为“stevia”听起来像叶子，但标签上通常指的是纯化的甜菊醇糖苷。世卫组织2023年关于非糖甜味剂的建议明确将甜菊及其衍生物纳入其中。",
-  "can_1": "检测食品标签上的E960a、E960c、E960d及甜叶菊相关同义词。",
-  "can_2": "在标注时识别具体的甜菊糖苷亚类。",
-  "cannot_1": "验证生产过程中是否使用了未经批准的提取溶剂。",
-  "cannot_2": "确定甜菊苷与莱鲍迪苷A的精确比例。",
+  "what_is": "A family of high-intensity sweet steviol glycosides. EU subclasses distinguish products obtained from Stevia leaves and other production routes, including E960b steviol glycosides from fermentation; E960b(i) covers rebaudioside M from fermentation produced using Yarrowia lipolytica.",
+  "why_botia": "BOTIA flags E960 declarations because 'stevia' can sound like a simple leaf ingredient while the label may refer to purified steviol glycosides made by different authorised production routes. The 2025 EU amendment added E960b and E960b(i), so BOTIA must not treat all E960 declarations as leaf-extracted E960a.",
+  "can_1": "Detect E960a, E960b, E960b(i), E960c, E960d and common steviol-glycoside/rebaudioside names on food labels.",
+  "can_2": "Identify the declared steviol-glycoside subclass and distinguish fermentation-derived rebaudioside M when the label provides that information.",
+  "cannot_1": "Determine an undeclared manufacturing microorganism, process or exact glycoside ratio.",
+  "cannot_2": "Assume that every product marketed as 'stevia' contains the same E960 subclass or production route.",
   "sources": [
     {
-      "label": "欧盟委员会条例（EU）第231/2012号",
+      "label": "Commission Regulation (EU) No 231/2012 — steviol glycoside specifications",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "(EU) 2021/1156号法规——甜菊醇糖苷规格",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1156"
+      "label": "Commission Regulation (EU) 2025/652 — E960b and E960b(i), rebaudioside M from fermentation",
+      "url": "https://eur-lex.europa.eu/eli/reg/2025/652/oj/eng"
     },
     {
-      "label": "世卫组织——非糖甜味剂指南，2023年",
+      "label": "WHO — guideline context for non-sugar sweeteners, including stevia and derivatives",
       "url": "https://www.who.int/news/item/15-05-2023-who-advises-not-to-use-non-sugar-sweeteners-for-weight-control-in-newly-released-guideline"
     }
   ],
-  "title": "甜菊糖苷（来自甜叶菊）",
-  "description": "从甜叶菊叶片中提取的高强度甜味化合物。"
+  "title": "Steviol Glycosides",
+  "description": "Steviol glycoside family expanded to E960b/E960b(i), including fermentation-derived rebaudioside M."
 }

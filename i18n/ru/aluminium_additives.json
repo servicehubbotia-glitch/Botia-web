@@ -1,0 +1,32 @@
+{
+  "name": "Добавки, содержащие алюминий",
+  "title": "Добавки, содержащие алюминий",
+  "description": "Группа пищевых добавок, используемых в различных юрисдикциях, содержащих алюминий, в том числе сульфаты алюминия, фосфат алюминия и натрия и некоторые алюмосиликаты.",
+  "what_is": "Группа пищевых добавок, используемых в различных юрисдикциях, содержащих алюминий, в том числе сульфаты алюминия, фосфат натрия и алюминия и некоторые алюмосиликаты.",
+  "why_botia": "BOTIA группы явно указали алюминийсодержащие добавки, поскольку на этикетках могут использоваться различные названия или системы нумерации, а также потому, что при проведении международных оценок безопасности учитывается совокупное поступление алюминия из всех источников. Наличие одной разрешенной добавки само по себе не является доказательством превышения допустимого уровня потребления.",
+  "can_1": "Обнаружить перечисленные названия добавок из алюминия и их заявленные идентификаторы E- или INS.",
+  "can_2": "Покажите контекст «E-номера»/«текстуры» и объясните, что данная группа охватывает добавки с различными функциями и разрешениями на продажу.",
+  "cannot_1": "Рассчитайте общее количество алюминия или его долю, содержащуюся в продукте, на основе списка ингредиентов.",
+  "cannot_2": "Считайте все составы, содержащие алюминий, взаимозаменяемыми или исходите из того, что все перечисленные на сайте INS присадки разрешены к применению в ЕС.",
+  "sources": [
+    {
+      "label": "Регламент Комиссии (ЕС) № 231/2012 — спецификации, включая E520–E523",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "JECFA — Алюминийсодержащие пищевые добавки",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
+    },
+    {
+      "label": "JECFA — Фосфат натрия и алюминия, кислый (INS 541i)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    }
+  ],
+  "e_code": "E520–E523, E541; selected INS 554–559",
+  "module_icon": "enumbers.png",
+  "layers": [
+    "enumbers",
+    "texture"
+  ],
+  "aliases": "E520, E521, E522, E523, E541, INS 541, INS 541(i), INS 541(ii), INS 554, INS 555, INS 556, INS 559, aluminium sulphate, aluminum sulfate, aluminium sodium sulphate, sodium aluminum sulfate, aluminium potassium sulphate, potassium aluminum sulfate, aluminium ammonium sulphate, ammonium aluminum sulfate, sodium aluminium phosphate, sodium aluminum phosphate, SALP, sodium aluminosilicate, potassium aluminosilicate, calcium aluminium silicate, aluminum silicate"
+}

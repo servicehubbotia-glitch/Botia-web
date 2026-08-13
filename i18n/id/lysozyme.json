@@ -1,0 +1,28 @@
+{
+  "name": "Lisozim",
+  "title": "Lisozim",
+  "description": "Enzim/protein yang digunakan sebagai bahan tambahan pangan. Spesifikasi Uni Eropa untuk E1105 mendefinisikan lisozim sebagai polipeptida yang diperoleh dari putih telur ayam, yang biasanya disediakan dalam bentuk hidroklorida.",
+  "what_is": "Enzim/protein yang digunakan sebagai bahan tambahan pangan. Spesifikasi Uni Eropa untuk E1105 mendefinisikan lisozim sebagai polipeptida yang diperoleh dari putih telur ayam, yang biasanya disediakan dalam bentuk hidroklorida.",
+  "why_botia": "BOTIA menandai E1105 karena nama aditif yang dinyatakan juga memuat informasi asal yang relevan dengan lapisan yang berasal dari hewan. Peraturan Uni Eropa secara khusus mengatur lisozim dari putih telur ayam dan pelabelannya dalam penggunaan pada makanan, seperti bir tertentu.",
+  "can_1": "Deteksi E1105, lisozim, lisozim hidroklorida, dan muramidase jika dinyatakan.",
+  "can_2": "Jelaskan konteks asal hewan dan nomor E, serta jelaskan asal putih telur sebagaimana didefinisikan dalam spesifikasi bahan tambahan pangan Uni Eropa.",
+  "cannot_1": "Tentukan konsentrasi atau aktivitas enzim yang tersisa berdasarkan daftar bahan.",
+  "cannot_2": "Anggaplah bahwa suatu makanan yang tidak berlabel mengandung lisozim, atau simpulkan bahwa ada sumber lain jika label tidak mencantumkan informasi tersebut.",
+  "sources": [
+    {
+      "label": "Peraturan Komisi (UE) No. 231/2012 — E1105 Spesifikasi lisozim",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Peraturan Komisi (UE) No. 471/2012 — konteks penggunaan dan pelabelan lisozim E1105",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    }
+  ],
+  "e_code": "E1105",
+  "module_icon": "animal.png",
+  "layers": [
+    "animal",
+    "enumbers"
+  ],
+  "aliases": "E1105, INS 1105, lysozyme, lysozyme hydrochloride, muramidase"
+}

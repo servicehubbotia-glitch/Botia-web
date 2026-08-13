@@ -1,0 +1,28 @@
+{
+  "name": "Lisozima",
+  "title": "Lisozima",
+  "description": "Uma enzima/proteína utilizada como aditivo alimentar. A especificação da UE para o E1105 define a lisozima como um polipéptido obtido a partir da clara de ovo de galinha, normalmente fornecido na forma de cloridrato.",
+  "what_is": "Uma enzima/proteína utilizada como aditivo alimentar. A especificação da UE para o E1105 define a lisozima como um polipéptido obtido a partir da clara de ovo de galinha, normalmente fornecido na forma de cloridrato.",
+  "why_botia": "BOTIA assinala o código E1105 porque o nome do aditivo declarado também inclui informações sobre a origem relevantes para a camada de origem animal. A regulamentação da UE abordou especificamente a lisozima proveniente da clara de ovo de galinha e a sua rotulagem em utilizações alimentares, tais como certas cervejas.",
+  "can_1": "Detetar o E1105, a lisozima, o cloridrato de lisozima e a muramidase, quando declarados.",
+  "can_2": "Apresente o contexto relativo à origem animal e aos números E e explique a origem da clara de ovo, tal como definida na especificação da UE relativa aos aditivos.",
+  "cannot_1": "Determine a concentração ou a atividade enzimática remanescente a partir da lista de ingredientes.",
+  "cannot_2": "Presuma que um alimento sem rótulo contém lisozima ou deduza que a origem é outra, caso o rótulo não forneça essa informação.",
+  "sources": [
+    {
+      "label": "Regulamento (UE) n.º 231/2012 da Comissão — E1105 Especificação da lisozima",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Regulamento (UE) n.º 471/2012 da Comissão — contexto de utilização e rotulagem da lisozima E1105",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    }
+  ],
+  "e_code": "E1105",
+  "module_icon": "animal.png",
+  "layers": [
+    "animal",
+    "enumbers"
+  ],
+  "aliases": "E1105, INS 1105, lysozyme, lysozyme hydrochloride, muramidase"
+}

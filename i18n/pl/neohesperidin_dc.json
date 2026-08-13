@@ -1,0 +1,29 @@
+{
+  "name": "Neohesperydyna DC",
+  "title": "Neohesperydyna DC",
+  "description": "Wysokointensywny substancja słodząca i dodatek modyfikujący smak, otrzymywany w procesie chemicznym z flawonoidów cytrusowych, oznaczony w UE jako E959.",
+  "what_is": "Wysokointensywny substancja słodząca i dodatek modyfikujący smak, otrzymywany w wyniku przetwarzania chemicznego z flawonoidów cytrusowych, oznaczony w UE jako E959.",
+  "why_botia": "BOTIA oznacza kod E959, ponieważ ten sam dodatek można zadeklarować za pomocą kodu, pełnej nazwy chemicznej lub skrótu NHDC, a ponadto może być stosowany do słodzenia lub modyfikacji smaku.",
+  "can_1": "Wykrywać E959, neohesperydynę DC, dihydrochalcon neohesperydyny oraz NHDC, o ile zostały zadeklarowane.",
+  "can_2": "Pokaż informacje dotyczące substancji słodzącej, aromatu i numeru E dla wykrytego terminu.",
+  "cannot_1": "Oblicz stężenie lub całkowitą dawkę na podstawie listy składników.",
+  "cannot_2": "Traktować zezwolenie jako dowód zerowego ryzyka lub obecność substancji E959 jako dowód szkodliwego narażenia.",
+  "sources": [
+    {
+      "label": "Rozporządzenie (WE) nr 1333/2008 — unijny wykaz dodatków do żywności oraz warunki ich stosowania",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "e_code": "E959",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "flavour",
+    "enumbers"
+  ],
+  "aliases": "E959, INS 959, neohesperidin DC, neohesperidin dihydrochalcone, NHDC"
+}

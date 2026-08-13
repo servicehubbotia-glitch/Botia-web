@@ -1,0 +1,29 @@
+{
+  "name": "L-cisteină",
+  "title": "L-cisteină",
+  "description": "Un aminoacid utilizat ca agent de tratare a făinii și în alte scopuri tehnologice. L-cisteina comercială poate fi produsă prin diverse procese de fabricație și din diverse surse.",
+  "what_is": "Un aminoacid utilizat ca agent de tratare a făinii și în alte scopuri tehnologice. L-cisteina comercială poate fi produsă prin diverse procese de fabricație și din diverse surse.",
+  "why_botia": "BOTIA se utilizează codul E920, deoarece denumirea explicită a aditivului poate fi importantă atât din punct de vedere tehnologic, cât și pentru alegerile alimentare bazate pe proveniența ingredientelor. Lista ingredientelor poate menționa L-cisteina, dar, de obicei, nu poate preciza dacă aceasta a fost obținută prin fermentare, sinteză sau dintr-o materie primă de origine animală.",
+  "can_1": "Detectează E920, L-cisteină și denumirile declarate strâns legate de acestea.",
+  "can_2": "Prezentați contextul referitor la textură/numărul E și explicați că sursa poate fi importantă, fără a califica o mențiune generică de tipul „E920” drept de origine animală.",
+  "cannot_1": "Stabiliți procesul de fabricație sau sursa biologică doar pe baza denumirii generice.",
+  "cannot_2": "Certifică conformitatea cu standardele vegetariene, vegane, halal sau alte standarde dependente de sursa produsului, fără a furniza informații privind sursa.",
+  "sources": [
+    {
+      "label": "Regulamentul (CE) nr. 1333/2008 — Lista Uniunii și condițiile de utilizare a aditivilor alimentari",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei — specificații privind aditivii alimentari autorizați",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "e_code": "E920",
+  "module_icon": "texture.png",
+  "layers": [
+    "texture",
+    "enumbers",
+    "animal"
+  ],
+  "aliases": "E920, INS 920, L-cysteine, L cysteine, cysteine, L-cysteine hydrochloride"
+}

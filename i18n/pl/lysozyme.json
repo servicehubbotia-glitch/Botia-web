@@ -1,0 +1,28 @@
+{
+  "name": "lizozym",
+  "title": "Lizozym",
+  "description": "Enzym/białko stosowane jako dodatek do żywności. Specyfikacja UE dotycząca E1105 definiuje lizozym jako polipeptyd pozyskiwany z białka jaja kurzego, dostarczany zazwyczaj w postaci chlorowodorku.",
+  "what_is": "Enzym/białko stosowane jako dodatek do żywności. Specyfikacja UE dotycząca E1105 definiuje lizozym jako polipeptyd pozyskiwany z białka jaja kurzego, dostarczany zazwyczaj w postaci chlorowodorku.",
+  "why_botia": "BOTIA oznacza kodem E1105, ponieważ zadeklarowana nazwa tego dodatku zawiera również informacje o pochodzeniu dotyczące składnika pochodzenia zwierzęcego. Przepisy UE wyraźnie odnoszą się do lizozymu pochodzącego z białka jaj kurzych oraz do jego oznaczania w produktach spożywczych, takich jak niektóre piwa.",
+  "can_1": "Należy wykrywać E1105, lizozym, chlorowodorek lizozymu oraz muramidazę, o ile zostały zgłoszone.",
+  "can_2": "Przedstaw kontekst dotyczący pochodzenia zwierzęcego i numerów E oraz wyjaśnij pochodzenie białka jaja określone w specyfikacji dodatków żywnościowych UE.",
+  "cannot_1": "Na podstawie listy składników należy określić stężenie lub pozostałą aktywność enzymatyczną.",
+  "cannot_2": "Należy założyć, że nieoznakowany produkt spożywczy zawiera lizozym, lub wywnioskować, że pochodzi on z innego źródła, jeśli na etykiecie nie ma takich informacji.",
+  "sources": [
+    {
+      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — E1105 Specyfikacja lizozymu",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Rozporządzenie Komisji (UE) nr 471/2012 — warunki stosowania i oznakowania lizozymu E1105",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    }
+  ],
+  "e_code": "E1105",
+  "module_icon": "animal.png",
+  "layers": [
+    "animal",
+    "enumbers"
+  ],
+  "aliases": "E1105, INS 1105, lysozyme, lysozyme hydrochloride, muramidase"
+}

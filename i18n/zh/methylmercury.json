@@ -1,23 +1,27 @@
 {
-  "name": "甲基汞",
+  "name": "Methylmercury",
   "e_code": null,
-  "aliases": "甲基汞, 有机汞, metilmercurio",
+  "aliases": "methylmercury, methyl mercury, organic mercury, total mercury, inorganic mercury, mercury, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "一种高毒性的有机汞形式，在水生食物链中具有生物累积性。",
-  "why_botia": "甲基汞对发育中的神经系统尤其具有毒性。在妊娠期间，关注点在于胎儿暴露：未出生的儿童是最易受影响的群体。欧洲食品安全局发现，育龄女性的暴露水平并不高于一般成年人。这没有依据表明女性清除甲基汞的速度更慢。",
-  "can_1": "检测已知为甲基汞暴露主要来源的鱼类成分。",
-  "can_2": "为孕妇和育龄女性提供安全建议。",
-  "cannot_1": "量化扫描产品中的实际浓度。",
-  "cannot_2": "判断鱼类是野生捕捞还是养殖。",
+  "what_is": "Mercury occurs in different chemical forms. Methylmercury is an organic form that bioaccumulates in aquatic food chains; inorganic mercury compounds are a different class. 'Total mercury' is an analytical measurement covering mercury across forms and is not a synonym for methylmercury.",
+  "why_botia": "BOTIA shows methylmercury context when a detected fish ingredient belongs to a relevant exposure category. WHO notes that people are mainly exposed to methylmercury through fish and shellfish and distinguishes organic, inorganic and elemental mercury forms. Adding 'total mercury' and 'inorganic mercury' to the explanation prevents analytical results from being misread as though every mercury measurement were methylmercury.",
+  "can_1": "Detect fish ingredients that trigger BOTIA's mercury-context layer and explain the distinction between methylmercury, inorganic mercury and total mercury terminology.",
+  "can_2": "Provide pregnancy and child-development context from official sources without pretending the ingredient list reports a mercury concentration.",
+  "cannot_1": "Quantify total mercury, methylmercury or inorganic mercury in the scanned food.",
+  "cannot_2": "Convert a total-mercury laboratory result into an exact methylmercury concentration without analytical speciation or a validated conversion basis.",
   "sources": [
     {
-      "label": "EFSA 食品中金属污染物",
+      "label": "WHO — Mercury and health",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
+    },
+    {
+      "label": "EFSA — Metals as contaminants in food",
       "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
     }
   ],
-  "title": "甲基汞",
-  "description": "一种高毒性的有机汞形式，在水生食物链中具有生物累积性。"
+  "title": "Methylmercury",
+  "description": "Methylmercury in fish exposure context, with clear distinction from total and inorganic mercury."
 }

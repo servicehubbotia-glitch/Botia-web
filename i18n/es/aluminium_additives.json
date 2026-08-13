@@ -1,0 +1,32 @@
+{
+  "name": "Aditivos que contienen aluminio",
+  "title": "Aditivos que contienen aluminio",
+  "description": "Un grupo de aditivos alimentarios de aplicación transjurisdiccional que contienen aluminio, entre los que se incluyen los sulfatos de aluminio, el fosfato de sodio y aluminio y determinados aluminosilicatos.",
+  "what_is": "Un grupo de aditivos alimentarios de aplicación transjurisdiccional que contienen aluminio, entre los que se incluyen los sulfatos de aluminio, el fosfato de sodio y aluminio y determinados aluminosilicatos.",
+  "why_botia": "BOTIA Los grupos han declarado explícitamente los aditivos que contienen aluminio, ya que en las etiquetas pueden utilizarse diferentes nombres o sistemas de numeración y porque las evaluaciones internacionales de seguridad tienen en cuenta la exposición total al aluminio procedente de todas las fuentes. La presencia de un aditivo autorizado no constituye, por sí sola, una prueba de que se haya superado la ingesta tolerable.",
+  "can_1": "Detecta los nombres de los aditivos de aluminio que figuran en la lista y sus identificadores E o INS declarados.",
+  "can_2": "Muestra el contexto de los números E y las texturas, y explica que esta familia abarca aditivos con diferentes funciones y autorizaciones de comercialización.",
+  "cannot_1": "Calcula la exposición total al aluminio o la cantidad que aporta un producto a partir de la lista de ingredientes.",
+  "cannot_2": "Considera que todos los compuestos que contengan aluminio son intercambiables o da por hecho que todos los aditivos que figuran en INS están autorizados en la UE.",
+  "sources": [
+    {
+      "label": "Reglamento (UE) n.º 231/2012 de la Comisión — especificaciones que incluyen los códigos E520–E523",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "JECFA — Aditivos alimentarios que contienen aluminio",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
+    },
+    {
+      "label": "JECFA — Fosfato de sodio y aluminio, ácido (n.º INS541i)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    }
+  ],
+  "e_code": "E520–E523, E541; selected INS 554–559",
+  "module_icon": "enumbers.png",
+  "layers": [
+    "enumbers",
+    "texture"
+  ],
+  "aliases": "E520, E521, E522, E523, E541, INS 541, INS 541(i), INS 541(ii), INS 554, INS 555, INS 556, INS 559, aluminium sulphate, aluminum sulfate, aluminium sodium sulphate, sodium aluminum sulfate, aluminium potassium sulphate, potassium aluminum sulfate, aluminium ammonium sulphate, ammonium aluminum sulfate, sodium aluminium phosphate, sodium aluminum phosphate, SALP, sodium aluminosilicate, potassium aluminosilicate, calcium aluminium silicate, aluminum silicate"
+}

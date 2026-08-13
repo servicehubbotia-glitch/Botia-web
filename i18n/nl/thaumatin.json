@@ -1,0 +1,29 @@
+{
+  "name": "Thaumatine",
+  "title": "Thaumatine",
+  "description": "Een mengsel van zeer zoete eiwitten, verkregen uit de zaadhuidjes van Thaumatococcus daniellii, dat in levensmiddelen wordt gebruikt als zoetstof en voor smaakgerelateerde technologische doeleinden.",
+  "what_is": "Een mengsel van zeer zoete eiwitten, verkregen uit de zaadhuidjes van Thaumatococcus daniellii, dat in levensmiddelen wordt gebruikt als zoetstof en voor smaakgerelateerde technologische doeleinden.",
+  "why_botia": "BOTIA wordt aangeduid met code E957, omdat het zowel als „thaumatine” als onder deze code kan voorkomen en, afhankelijk van het gebruik, als zoetstof of smaakversterker kan fungeren. Het feit dat het op een goedgekeurde lijst staat, is regelgevende informatie en betekent niet dat een product op zich risicovol is.",
+  "can_1": "Detecteer E957, INS 957 en thaumatine wanneer deze expliciet zijn aangegeven.",
+  "can_2": "Geef de lagen ‘zoetstof’, ‘smaakstof’ en ‘E-nummer’ weer voor het aangegeven additief.",
+  "cannot_1": "Bepaal aan de hand van de ingrediëntenlijst de gebruikte hoeveelheid of de bijdrage aan de zoetheid.",
+  "cannot_2": "Concludeer een gezondheidseffect op basis van de aanwezigheid van thaumatine alleen.",
+  "sources": [
+    {
+      "label": "Verordening (EG) nr. 1333/2008 — EU-lijst en gebruiksvoorwaarden voor levensmiddelenadditieven",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Verordening (EU) nr. 231/2012 van de Commissie — specificaties voor toegestane levensmiddelenadditieven",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "e_code": "E957",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "flavour",
+    "enumbers"
+  ],
+  "aliases": "E957, INS 957, thaumatin, thaumatin I, thaumatin II"
+}

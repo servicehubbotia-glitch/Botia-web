@@ -1,0 +1,31 @@
+{
+  "name": "Kofeina",
+  "title": "Kofeina",
+  "description": "Kofeina wyraźnie wymieniona jako składnik, wraz z oficjalnymi informacjami na etykiecie oraz informacjami dotyczącymi stosowania w okresie ciąży.",
+  "what_is": "Naturalny środek pobudzający, który może być również dodawany jako składnik do żywności, napojów i suplementów. Gdy sama kofeina jest dodawana lub wyraźnie wymieniona, może figurować pod swoją nazwą na liście składników.",
+  "why_botia": "BOTIA Wskazano wyraźnie na kofeinę, ponieważ oficjalne wytyczne i przepisy dotyczące etykietowania nadają temu terminowi konkretny kontekst. Przepisy UE wymagają podania dodatkowych informacji o zawartości kofeiny w przypadku niektórych napojów o wysokiej zawartości kofeiny oraz produktów spożywczych z dodatkiem kofeiny, a WHO zaleca ograniczenie spożycia dużych ilości kofeiny w czasie ciąży. Samo pojawienie się tego słowa nie wskazuje na dawkę.",
+  "can_1": "Wykrywaj kofeinę oraz popularne nazwy składników, takie jak kofeina bezwodna, gdy pojawiają się one na liście składników.",
+  "can_2": "Należy przedstawić kontekst dotyczący ciąży i oznakowania produktów zawierających kofeinę, nie traktując samego występowania kofeiny jako dowodu szkodliwego narażenia.",
+  "cannot_1": "Oblicz całkowitą zawartość kofeiny w produkcie, jeśli nie podano jej ilości.",
+  "cannot_2": "Należy wywnioskować obecność kofeiny pochodzącej z kawy, herbaty, guarany lub innego składnika pochodzenia roślinnego, jeśli sama kofeina nie została wymieniona w składzie.",
+  "sources": [
+    {
+      "label": "Rozporządzenie (UE) nr 1169/2011 — szczegółowe przepisy dotyczące oznakowania kofeiny",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2026-01-01/eng"
+    },
+    {
+      "label": "WHO — ograniczenie spożycia kofeiny w czasie ciąży",
+      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
+    },
+    {
+      "label": "FDA — Wyjawiamy tajemnicę: ile kofeiny to za dużo?",
+      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
+    }
+  ],
+  "e_code": null,
+  "module_icon": "mujer.png",
+  "layers": [
+    "woman"
+  ],
+  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine"
+}

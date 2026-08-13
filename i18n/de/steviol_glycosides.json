@@ -1,32 +1,32 @@
 {
-  "name": "Steviolglycoside aus Stevia",
-  "e_code": "E960a",
-  "aliases": "E960a, E960c, E960d, steviol glycosides, stevioside, rebaudioside A, glucósidos de esteviol, stevia, stevia extract, steviol glycoside, E960 sweetener",
+  "name": "Steviol Glycosides",
+  "e_code": "E960a / E960b / E960c / E960d",
+  "aliases": "E960, E960a, E960b, E960b(i), E960c, E960d, steviol glycosides, steviol glycosides from Stevia, steviol glycosides from fermentation, stevioside, rebaudioside A, rebaudioside M, rebaudioside M from fermentation, Reb A, Reb M, fermented rebaudioside M, stevia, stevia extract, steviol glycoside, Yarrowia lipolytica",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Eine gereinigte Mischung hochintensiver Süßstoffe, einschließlich Steviosid und Rebaudiosiden, die aus den Blättern von Stevia rebaudiana extrahiert wird.",
-  "why_botia": "BOTIA kennzeichnet E960, weil „Stevia“ wie das Blatt klingt, aber das Etikett bedeutet in der Regel gereinigte Steviolglycoside. Die Empfehlung der WHO von 2023 zu nicht-zuckerhaltigen Süßungsmitteln schließt Stevia und seine Derivate ausdrücklich ein.",
-  "can_1": "Erkennt E960a, E960c, E960d und Stevia-abgeleitete Synonyme auf Lebensmitteletiketten.",
-  "can_2": "Identifiziert die spezifische Unterklasse der Steviolglycoside, wenn diese deklariert ist.",
-  "cannot_1": "Kann nicht überprüfen, ob nicht zugelassene Extraktionslösungsmittel bei der Herstellung verwendet wurden.",
-  "cannot_2": "Kann das genaue Verhältnis von Steviosid zu Rebaudiosid A nicht bestimmen.",
+  "what_is": "A family of high-intensity sweet steviol glycosides. EU subclasses distinguish products obtained from Stevia leaves and other production routes, including E960b steviol glycosides from fermentation; E960b(i) covers rebaudioside M from fermentation produced using Yarrowia lipolytica.",
+  "why_botia": "BOTIA flags E960 declarations because 'stevia' can sound like a simple leaf ingredient while the label may refer to purified steviol glycosides made by different authorised production routes. The 2025 EU amendment added E960b and E960b(i), so BOTIA must not treat all E960 declarations as leaf-extracted E960a.",
+  "can_1": "Detect E960a, E960b, E960b(i), E960c, E960d and common steviol-glycoside/rebaudioside names on food labels.",
+  "can_2": "Identify the declared steviol-glycoside subclass and distinguish fermentation-derived rebaudioside M when the label provides that information.",
+  "cannot_1": "Determine an undeclared manufacturing microorganism, process or exact glycoside ratio.",
+  "cannot_2": "Assume that every product marketed as 'stevia' contains the same E960 subclass or production route.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
+      "label": "Commission Regulation (EU) No 231/2012 — steviol glycoside specifications",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Verordnung (EU) 2021/1156 — Spezifikationen für Steviolglycoside",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1156"
+      "label": "Commission Regulation (EU) 2025/652 — E960b and E960b(i), rebaudioside M from fermentation",
+      "url": "https://eur-lex.europa.eu/eli/reg/2025/652/oj/eng"
     },
     {
-      "label": "WHO — Leitlinie zu nicht zuckerhaltigen Süßungsmitteln, 2023",
+      "label": "WHO — guideline context for non-sugar sweeteners, including stevia and derivatives",
       "url": "https://www.who.int/news/item/15-05-2023-who-advises-not-to-use-non-sugar-sweeteners-for-weight-control-in-newly-released-guideline"
     }
   ],
-  "title": "Steviolglycoside aus Stevia",
-  "description": "Hochintensive Süßstoffe, die aus den Blättern von Stevia rebaudiana gewonnen werden."
+  "title": "Steviol Glycosides",
+  "description": "Steviol glycoside family expanded to E960b/E960b(i), including fermentation-derived rebaudioside M."
 }

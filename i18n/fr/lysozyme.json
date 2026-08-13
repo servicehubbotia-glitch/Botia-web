@@ -1,0 +1,28 @@
+{
+  "name": "lysozyme",
+  "title": "Lysozyme",
+  "description": "Enzyme/protéine utilisée comme additif alimentaire. La spécification européenne relative à l'E1105 définit le lysozyme comme un polypeptide obtenu à partir du blanc d'œuf de poule, généralement fourni sous forme de chlorhydrate.",
+  "what_is": "Enzyme/protéine utilisée comme additif alimentaire. La spécification européenne relative à l'E1105 définit le lysozyme comme un polypeptide obtenu à partir du blanc d'œuf de poule, généralement fourni sous forme de chlorhydrate.",
+  "why_botia": "BOTIA Il est classé sous le code E1105 car le nom de l'additif tel qu'il est déclaré comporte également des informations sur l'origine, notamment en ce qui concerne la couche d'origine animale. La réglementation européenne traite spécifiquement du lysozyme issu du blanc d'œuf de poule et de son étiquetage dans certaines utilisations alimentaires, telles que certaines bières.",
+  "can_1": "Détecter l'E1105, le lysozyme, le chlorhydrate de lysozyme et la muramidase lorsqu'ils sont déclarés.",
+  "can_2": "Présentez le contexte relatif à l'origine animale et aux numéros E, et expliquez la définition de l'origine du blanc d'œuf telle qu'elle figure dans la spécification de l'UE relative aux additifs.",
+  "cannot_1": "Déterminez la concentration ou l'activité enzymatique résiduelle à partir de la liste des ingrédients.",
+  "cannot_2": "Partir du principe qu'un produit alimentaire non étiqueté contient du lysozyme ou en déduire une autre origine lorsque l'étiquette ne fournit aucune information à ce sujet.",
+  "sources": [
+    {
+      "label": "Règlement (UE) n° 231/2012 de la Commission — E1105 : spécifications relatives au lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Règlement (UE) n° 471/2012 de la Commission — conditions d'utilisation et d'étiquetage du lysozyme E1105",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    }
+  ],
+  "e_code": "E1105",
+  "module_icon": "animal.png",
+  "layers": [
+    "animal",
+    "enumbers"
+  ],
+  "aliases": "E1105, INS 1105, lysozyme, lysozyme hydrochloride, muramidase"
+}

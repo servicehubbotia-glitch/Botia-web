@@ -1,0 +1,32 @@
+{
+  "name": "Aditivi care conțin aluminiu",
+  "title": "Aditivi care conțin aluminiu",
+  "description": "Un grup de aditivi alimentari care se regăsesc în mai multe jurisdicții și care conțin aluminiu, inclusiv sulfați de aluminiu, fosfat de sodiu și aluminiu și anumiți aluminosilicați.",
+  "what_is": "Un grup de aditivi alimentari care se regăsesc în mai multe jurisdicții și care conțin aluminiu, inclusiv sulfați de aluminiu, fosfat de sodiu și aluminiu și anumiți aluminosilicați.",
+  "why_botia": "BOTIA grupurile au declarat în mod explicit aditivii care conțin aluminiu, deoarece etichetele pot utiliza denumiri sau sisteme de numerotare diferite și deoarece evaluările internaționale de siguranță iau în considerare expunerea totală la aluminiu din toate sursele. Prezența unui singur aditiv autorizat nu constituie, în sine, o dovadă că s-a depășit doza admisibilă.",
+  "can_1": "Identificați denumirile aditivilor din aluminiu enumerați în listă și codurile E sau INS declarate ale acestora.",
+  "can_2": "Prezentați contextul referitor la numerele E și textură și explicați că această familie cuprinde aditivi cu funcții și autorizații de comercializare diferite.",
+  "cannot_1": "Calculați expunerea totală la aluminiu sau cantitatea provenită de la un produs din lista de ingrediente.",
+  "cannot_2": "Considerați că orice compus care conține aluminiu este interschimbabil sau presupuneți că toți aditivii enumerați la INS sunt autorizați în UE.",
+  "sources": [
+    {
+      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei — specificații care includ E520–E523",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "JECFA — Aditivi alimentari care conțin aluminiu",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
+    },
+    {
+      "label": "JECFA — Fosfat de sodiu și aluminiu, acid (INS 541i)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    }
+  ],
+  "e_code": "E520–E523, E541; selected INS 554–559",
+  "module_icon": "enumbers.png",
+  "layers": [
+    "enumbers",
+    "texture"
+  ],
+  "aliases": "E520, E521, E522, E523, E541, INS 541, INS 541(i), INS 541(ii), INS 554, INS 555, INS 556, INS 559, aluminium sulphate, aluminum sulfate, aluminium sodium sulphate, sodium aluminum sulfate, aluminium potassium sulphate, potassium aluminum sulfate, aluminium ammonium sulphate, ammonium aluminum sulfate, sodium aluminium phosphate, sodium aluminum phosphate, SALP, sodium aluminosilicate, potassium aluminosilicate, calcium aluminium silicate, aluminum silicate"
+}

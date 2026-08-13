@@ -1,0 +1,29 @@
+{
+  "name": "Thaumatin",
+  "title": "Thaumatin",
+  "description": "Eine Mischung aus besonders süßen Proteinen, die aus den Samenhüllen von Thaumatococcus daniellii gewonnen und in Lebensmitteln zum Süßen sowie für geschmackliche und technologische Zwecke verwendet werden.",
+  "what_is": "Eine Mischung aus besonders süßen Proteinen, die aus den Samenhüllen von Thaumatococcus daniellii gewonnen werden und in Lebensmitteln zum Süßen sowie für geschmackliche und technologische Zwecke verwendet werden.",
+  "why_botia": "BOTIA Es wird mit dem Code E957 gekennzeichnet, da es entweder als „Thaumatin“ oder unter diesem Code aufgeführt sein kann und je nach Verwendung als Süßungsmittel oder Geschmacksverstärker fungieren kann. Seine Aufnahme in eine zugelassene Liste ist eine regulatorische Angabe und kein Hinweis darauf, dass ein Produkt an sich risikobehaftet ist.",
+  "can_1": "Erkennt E957, „INS“ 957 und Thaumatin, sofern diese ausdrücklich angegeben sind.",
+  "can_2": "Zeigen Sie die Ebenen „Süßungsmittel“, „Aroma“ und „E-Nummer“ für den angegebenen Zusatzstoff an.",
+  "cannot_1": "Ermitteln Sie anhand der Zutatenliste die verwendete Menge bzw. den Süßungsbeitrag.",
+  "cannot_2": "Leiten Sie allein aus dem Vorhandensein von Thaumatin eine gesundheitliche Wirkung ab.",
+  "sources": [
+    {
+      "label": "Verordnung (EG) Nr. 1333/2008 – Unionsliste und Verwendungsbedingungen für Lebensmittelzusatzstoffe",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Verordnung (EU) Nr. 231/2012 der Kommission – Spezifikationen für zugelassene Lebensmittelzusatzstoffe",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "e_code": "E957",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "flavour",
+    "enumbers"
+  ],
+  "aliases": "E957, INS 957, thaumatin, thaumatin I, thaumatin II"
+}

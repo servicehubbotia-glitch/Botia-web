@@ -1,0 +1,28 @@
+{
+  "name": "Nukleotydowe substancje wzmacniające smak",
+  "title": "Nukleotydowe substancje wzmacniające smak",
+  "description": "Grupa wzmacniaczy smaku na bazie nukleotydów, w tym guanylan disodowy (E627), inozynan disodowy (E631) oraz 5'-rybonukleotydy disodowe (E635).",
+  "what_is": "Grupa wzmacniaczy smaku na bazie nukleotydów, w tym guanylan disodowy (E627), inozynan disodowy (E631) oraz 5'-rybonukleotydy disodowe (E635).",
+  "why_botia": "BOTIA grupuje te kody, ponieważ są to powiązane ze sobą substancje wzmacniające smak, a na etykietach mogą być stosowane zarówno numery E, jak i nazwy chemiczne. Deklaracja identyfikuje dodatek; nie ujawnia jednak źródła jego pochodzenia ani ilości.",
+  "can_1": "Wykryj E627, E631, E635 oraz ich potoczne nazwy: guanylan, inozynan i rybonukleotyd.",
+  "can_2": "Wywołaj warstwy zawierające informacje o smaku i numerach E w celu uzyskania wyraźnego oświadczenia.",
+  "cannot_1": "Na podstawie samej nazwy określ źródło pochodzenia, stężenie lub całkowite spożycie w diecie.",
+  "cannot_2": "Można wnioskować o obecności glutaminianu sodu (MSG) lub innego wzmacniacza smaku, który nie został osobno wymieniony w składzie.",
+  "sources": [
+    {
+      "label": "Rozporządzenie (WE) nr 1333/2008 — unijny wykaz dodatków do żywności i warunki ich stosowania",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "e_code": "E627, E631, E635",
+  "module_icon": "flavors.png",
+  "layers": [
+    "flavour",
+    "enumbers"
+  ],
+  "aliases": "E627, E631, E635, disodium guanylate, sodium guanylate, disodium inosinate, sodium inosinate, disodium 5'-ribonucleotides, disodium ribonucleotides, disodium 5-ribonucleotides, guanylate, inosinate, ribonucleotides"
+}

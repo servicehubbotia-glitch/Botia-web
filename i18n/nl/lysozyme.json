@@ -1,0 +1,28 @@
+{
+  "name": "Lysozym",
+  "title": "Lysozym",
+  "description": "Een enzym/eiwit dat als levensmiddelenadditief wordt gebruikt. In de EU-specificatie voor E1105 wordt lysozym gedefinieerd als een polypeptide dat wordt verkregen uit kippeneiwit en dat doorgaans in de vorm van het hydrochloride wordt geleverd.",
+  "what_is": "Een enzym/eiwit dat als levensmiddelenadditief wordt gebruikt. In de EU-specificatie voor E1105 wordt lysozym gedefinieerd als een polypeptide dat wordt verkregen uit kippeneiwit en dat doorgaans in de vorm van het hydrochloride wordt geleverd.",
+  "why_botia": "BOTIA geeft foutcode E1105 weer, omdat de opgegeven naam van het additief ook informatie bevat over de herkomst die relevant is voor de laag van dierlijke oorsprong. In de EU-regelgeving wordt specifiek ingegaan op lysozym uit kippeneiwit en de etikettering daarvan bij gebruik in levensmiddelen, zoals bepaalde bieren.",
+  "can_1": "Detecteer E1105, lysozym, lysozymhydrochloride en muramidase indien aangegeven.",
+  "can_2": "Geef de context weer met betrekking tot de herkomst uit dierlijke bronnen en de E-nummers, en leg uit wat wordt verstaan onder de herkomst van eiwit zoals gedefinieerd in de EU-specificatie voor additieven.",
+  "cannot_1": "Bepaal de concentratie of de resterende enzymatische activiteit aan de hand van de ingrediëntenlijst.",
+  "cannot_2": "Ga ervan uit dat een niet-geëtiketteerd levensmiddel lysozym bevat, of veronderstel een andere bron wanneer het etiket hierover geen informatie geeft.",
+  "sources": [
+    {
+      "label": "Verordening (EU) nr. 231/2012 van de Commissie — E1105 Specificatie voor lysozym",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "Verordening (EU) nr. 471/2012 van de Commissie — toepassings- en etiketteringscontext voor lysozym E1105",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    }
+  ],
+  "e_code": "E1105",
+  "module_icon": "animal.png",
+  "layers": [
+    "animal",
+    "enumbers"
+  ],
+  "aliases": "E1105, INS 1105, lysozyme, lysozyme hydrochloride, muramidase"
+}

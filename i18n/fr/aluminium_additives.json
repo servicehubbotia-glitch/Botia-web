@@ -1,0 +1,32 @@
+{
+  "name": "Additifs contenant de l'aluminium",
+  "title": "Additifs contenant de l'aluminium",
+  "description": "Un groupe interjuridictionnel d'additifs alimentaires contenant de l'aluminium, notamment les sulfates d'aluminium, le phosphate d'aluminium et de sodium et certains aluminosilicates.",
+  "what_is": "Un groupe transnational d'additifs alimentaires contenant de l'aluminium, notamment les sulfates d'aluminium, le phosphate d'aluminium et de sodium et certains aluminosilicates.",
+  "why_botia": "BOTIA ont explicitement mentionné les additifs contenant de l'aluminium, car les étiquettes peuvent utiliser des noms ou des systèmes de numérotation différents et parce que les évaluations internationales de sécurité prennent en compte l'exposition totale à l'aluminium, toutes sources confondues. La présence d'un seul additif autorisé ne constitue pas, en soi, la preuve qu'un apport tolérable a été dépassé.",
+  "can_1": "Détecter les noms des additifs à base d'aluminium figurant dans la liste ainsi que leurs codes E ou INS déclarés.",
+  "can_2": "Affichez le contexte relatif aux numéros E et aux textures, puis expliquez que cette famille regroupe des additifs ayant des fonctions et des autorisations de mise sur le marché différentes.",
+  "cannot_1": "Calculez l'exposition totale à l'aluminium ou la quantité apportée par un produit à partir de la liste des ingrédients.",
+  "cannot_2": "Considérer tous les composés contenant de l'aluminium comme interchangeables ou partir du principe que tous les additifs répertoriés INS sont autorisés dans l'UE.",
+  "sources": [
+    {
+      "label": "Règlement (UE) n° 231/2012 de la Commission — cahier des charges comprenant les numéros E520 à E523",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "JECFA — Additifs alimentaires contenant de l'aluminium",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
+    },
+    {
+      "label": "JECFA — Phosphate de sodium et d’aluminium, acide (n° INS541i)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    }
+  ],
+  "e_code": "E520–E523, E541; selected INS 554–559",
+  "module_icon": "enumbers.png",
+  "layers": [
+    "enumbers",
+    "texture"
+  ],
+  "aliases": "E520, E521, E522, E523, E541, INS 541, INS 541(i), INS 541(ii), INS 554, INS 555, INS 556, INS 559, aluminium sulphate, aluminum sulfate, aluminium sodium sulphate, sodium aluminum sulfate, aluminium potassium sulphate, potassium aluminum sulfate, aluminium ammonium sulphate, ammonium aluminum sulfate, sodium aluminium phosphate, sodium aluminum phosphate, SALP, sodium aluminosilicate, potassium aluminosilicate, calcium aluminium silicate, aluminum silicate"
+}
