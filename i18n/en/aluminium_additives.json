@@ -1,0 +1,32 @@
+{
+  "name": "Aluminium-Containing Additives",
+  "e_code": "E520–E523, E541; selected INS 554–559",
+  "aliases": "E520, E521, E522, E523, E541, INS 541, INS 541(i), INS 541(ii), INS 554, INS 555, INS 556, INS 559, aluminium sulphate, aluminum sulfate, aluminium sodium sulphate, sodium aluminum sulfate, aluminium potassium sulphate, potassium aluminum sulfate, aluminium ammonium sulphate, ammonium aluminum sulfate, sodium aluminium phosphate, sodium aluminum phosphate, SALP, sodium aluminosilicate, potassium aluminosilicate, calcium aluminium silicate, aluminum silicate",
+  "module_icon": "enumbers.png",
+  "layers": [
+    "enumbers",
+    "texture"
+  ],
+  "what_is": "A cross-jurisdiction group of food additives containing aluminium, including aluminium sulphates, sodium aluminium phosphate and certain aluminosilicates.",
+  "why_botia": "BOTIA groups explicitly declared aluminium-containing additives because labels can use different names or numbering systems and because international safety evaluations consider total aluminium exposure across sources. The presence of one authorised additive is not, by itself, evidence that a tolerable intake has been exceeded.",
+  "can_1": "Detect the listed aluminium/aluminum additive names and their declared E- or INS identifiers.",
+  "can_2": "Show the E-number/texture context and explain that the family spans additives with different functions and market authorisations.",
+  "cannot_1": "Calculate total aluminium exposure or the amount contributed by a product from the ingredient list.",
+  "cannot_2": "Treat every compound containing aluminium as interchangeable or assume that all listed INS additives are authorised in the EU.",
+  "sources": [
+    {
+      "label": "Commission Regulation (EU) No 231/2012 — specifications including E520–E523",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "JECFA — Aluminium-containing food additives",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
+    },
+    {
+      "label": "JECFA — Sodium aluminium phosphate, acidic (INS 541i)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    }
+  ],
+  "title": "Aluminium-Containing Additives",
+  "description": "A cross-jurisdiction group of food additives containing aluminium, including aluminium sulphates, sodium aluminium phosphate and certain aluminosilicates."
+}

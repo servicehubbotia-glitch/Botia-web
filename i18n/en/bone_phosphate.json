@@ -1,0 +1,29 @@
+{
+  "name": "Edible Bone Phosphate",
+  "e_code": "INS 542",
+  "aliases": "INS 542, edible bone phosphate, bone phosphate, bone meal phosphate, tribasic calcium phosphate from bone",
+  "module_icon": "animal.png",
+  "layers": [
+    "animal",
+    "texture",
+    "enumbers"
+  ],
+  "what_is": "A mineral food additive prepared from animal bone material and identified by JECFA as edible bone phosphate, INS 542.",
+  "why_botia": "BOTIA flags INS 542 because its name indicates an animal-derived ingredient and it can also perform technological functions such as emulsifying, humectant or sequestrant roles. A generic declaration does not identify the animal species.",
+  "can_1": "Detect INS 542, edible bone phosphate and bone phosphate when explicitly declared.",
+  "can_2": "Trigger animal-origin, texture and numbering context for the declared ingredient.",
+  "cannot_1": "Identify the source animal when the label says only bone phosphate.",
+  "cannot_2": "Determine processing details, religious suitability or certification status from the generic ingredient name.",
+  "sources": [
+    {
+      "label": "JECFA — Edible Bone Phosphate (INS 542)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/185"
+    },
+    {
+      "label": "FAO/JECFA — food additive specifications database and compendium",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/en/"
+    }
+  ],
+  "title": "Edible Bone Phosphate",
+  "description": "A mineral food additive prepared from animal bone material and identified by JECFA as edible bone phosphate, INS 542."
+}

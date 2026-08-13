@@ -1,0 +1,29 @@
+{
+  "name": "L-Cysteine",
+  "e_code": "E920",
+  "aliases": "E920, INS 920, L-cysteine, L cysteine, cysteine, L-cysteine hydrochloride",
+  "module_icon": "texture.png",
+  "layers": [
+    "texture",
+    "enumbers",
+    "animal"
+  ],
+  "what_is": "An amino acid used as a flour-treatment agent and for other technological purposes. Commercial L-cysteine can be produced by different manufacturing routes and sources.",
+  "why_botia": "BOTIA flags E920 because the explicit additive name can matter both technologically and for source-sensitive dietary choices. The ingredient list can identify L-cysteine, but it normally cannot establish whether it was produced by fermentation, synthesis or from an animal-derived raw material.",
+  "can_1": "Detect E920, L-cysteine and closely related declared names.",
+  "can_2": "Show the texture/E-number context and explain that source may matter without labelling a generic E920 declaration as animal-derived.",
+  "cannot_1": "Determine the manufacturing route or biological source from the generic name alone.",
+  "cannot_2": "Certify vegetarian, vegan, halal or other source-dependent suitability without source information.",
+  "sources": [
+    {
+      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "L-Cysteine",
+  "description": "An amino acid used as a flour-treatment agent and for other technological purposes. Commercial L-cysteine can be produced by different manufacturing routes and sources."
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Alitame",
+  "e_code": "INS 956",
+  "aliases": "INS 956, alitame, Aclame",
+  "module_icon": "sweeteners.png",
+  "layers": [
+    "sweetener",
+    "enumbers"
+  ],
+  "what_is": "A high-intensity non-sugar sweetener identified by JECFA and Codex as INS 956.",
+  "why_botia": "BOTIA flags an explicit alitame declaration because it may appear by name or INS number in markets where its use is permitted. International evaluation or a Codex provision does not mean the additive is authorised in every jurisdiction.",
+  "can_1": "Detect alitame and INS 956 when explicitly declared.",
+  "can_2": "Show the sweetener and international-numbering context while keeping market-specific authorisation separate.",
+  "cannot_1": "Determine concentration or total intake from the ingredient list.",
+  "cannot_2": "Assume that Codex/JECFA recognition equals legal authorisation in every country.",
+  "sources": [
+    {
+      "label": "JECFA — Alitame (INS 956)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1160"
+    },
+    {
+      "label": "Codex GSFA Online — Alitame (INS 956)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=108&print=true"
+    }
+  ],
+  "title": "Alitame",
+  "description": "A high-intensity non-sugar sweetener identified by JECFA and Codex as INS 956."
+}

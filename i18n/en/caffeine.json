@@ -1,0 +1,31 @@
+{
+  "name": "Caffeine",
+  "e_code": null,
+  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine",
+  "module_icon": "mujer.png",
+  "layers": [
+    "woman"
+  ],
+  "what_is": "A naturally occurring stimulant that can also be added as an ingredient to foods, drinks and supplements. When caffeine itself is added or explicitly declared, it can appear by name in the ingredient list.",
+  "why_botia": "BOTIA flags explicitly declared caffeine because official guidance and labelling rules give it specific context. EU rules require additional caffeine information for certain high-caffeine drinks and foods with added caffeine, and WHO advises reducing high caffeine intake during pregnancy. The presence of the word alone does not reveal the dose.",
+  "can_1": "Detect caffeine and common explicit ingredient names such as caffeine anhydrous when they appear in the ingredient list.",
+  "can_2": "Show the pregnancy and caffeine-labelling context without treating the mere presence of caffeine as proof of a harmful exposure.",
+  "cannot_1": "Calculate total caffeine in the product when the amount is not declared.",
+  "cannot_2": "Infer caffeine from coffee, tea, guarana or another botanical ingredient when caffeine itself is not declared.",
+  "sources": [
+    {
+      "label": "Regulation (EU) No 1169/2011 — specific labelling provisions for caffeine",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2026-01-01/eng"
+    },
+    {
+      "label": "WHO — restricting caffeine intake during pregnancy",
+      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
+    },
+    {
+      "label": "FDA — Spilling the Beans: How Much Caffeine is Too Much?",
+      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
+    }
+  ],
+  "title": "Caffeine",
+  "description": "Caffeine explicitly declared as an ingredient, with official labelling and pregnancy-context information."
+}

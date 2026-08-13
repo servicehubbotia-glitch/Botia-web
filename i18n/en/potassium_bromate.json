@@ -1,0 +1,28 @@
+{
+  "name": "Potassium Bromate",
+  "e_code": "INS 924a",
+  "aliases": "INS 924a, potassium bromate, bromate of potash",
+  "module_icon": "texture.png",
+  "layers": [
+    "texture",
+    "enumbers"
+  ],
+  "what_is": "An oxidising flour-treatment and dough-strengthening agent identified internationally as INS 924a.",
+  "why_botia": "BOTIA flags an explicit potassium bromate declaration because its regulatory treatment differs across jurisdictions. FDA information still describes specified U.S. food uses, while JECFA concluded that its use as a flour-treatment agent is not acceptable. Those regulatory positions do not tell BOTIA how much residue is present in a particular food.",
+  "can_1": "Detect potassium bromate and INS 924a when they are explicitly declared.",
+  "can_2": "Show that different authorities and jurisdictions can reach different regulatory positions without presenting a label hit as an exposure measurement.",
+  "cannot_1": "Measure residual bromate after baking or processing.",
+  "cannot_2": "Assume that flour or bread contains potassium bromate when it is not declared.",
+  "sources": [
+    {
+      "label": "FDA — Potassium Bromate, Substances Added to Food",
+      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+    },
+    {
+      "label": "JECFA — Potassium Bromate (INS 924a)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+    }
+  ],
+  "title": "Potassium Bromate",
+  "description": "An oxidising flour-treatment and dough-strengthening agent identified internationally as INS 924a."
+}
