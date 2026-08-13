@@ -1,0 +1,28 @@
+{
+  "name": "Carne de cerdo y derivados porcinos",
+  "e_code": null,
+  "aliases": "pork, porcine, pig, swine, lard, pork fat, porcine fat, pork gelatine, pork gelatin, porcine gelatine, porcine gelatin, pork collagen, porcine collagen, pork broth, pork stock, pork extract, pork protein, porcine protein, pork rind, pork skin",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "muslim",
+    "animal"
+  ],
+  "what_is": "Carne de cerdo e ingredientes derivados explícitamente del cerdo, incluyendo manteca de cerdo, gelatina o colágeno porcino, grasas, proteínas, caldos y extractos.",
+  "why_botia": "BOTIA señala los términos explícitos relacionados con la carne de cerdo y los productos porcinos, ya que el Código CXG 24-1997 incluye a los cerdos y jabalíes, así como sus productos y derivados, entre las fuentes cuyo uso se considera ilegal a efectos de la declaración «halal». BOTIA detecta los términos de los ingredientes declarados; no certifica el estatus «halal».",
+  "can_1": "Identifica los términos explícitos como «carne de cerdo», «porcino», «cerdo», «manteca de cerdo» y otros términos relacionados con los derivados porcinos cuando aparezcan indicados en la etiqueta.",
+  "can_2": "Activa las capas de información sobre productos de origen musulmán y de origen animal, y explica el origen porcino declarado.",
+  "cannot_1": "Determina el origen de un ingrediente genérico, como la gelatina, el colágeno o la grasa animal, a menos que en la etiqueta se indique que es de origen porcino.",
+  "cannot_2": "Certificar o garantizar que un producto es halal, o verificar los controles relativos al sacrificio, el procesamiento, la contaminación cruzada o la certificación.",
+  "sources": [
+    {
+      "label": "Codex Alimentarius — Directrices generales para el uso del término «halal» (CXG 24-1997)",
+      "url": "https://www.fao.org/4/y2770e/y2770e08.htm"
+    },
+    {
+      "label": "Reglamento (CE) n.º 853/2004 — normas específicas de higiene aplicables a los alimentos de origen animal",
+      "url": "https://eur-lex.europa.eu/eli/reg/2004/853/oj/eng"
+    }
+  ],
+  "title": "Carne de cerdo y derivados porcinos",
+  "description": "Carne de cerdo e ingredientes derivados explícitamente del cerdo, incluyendo manteca de cerdo, gelatina porcina, colágeno, grasas, proteínas, caldos y extractos."
+}

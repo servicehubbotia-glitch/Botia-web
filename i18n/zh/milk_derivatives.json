@@ -1,0 +1,31 @@
+{
+  "name": "乳制品",
+  "e_code": null,
+  "aliases": "milk derivatives, milk, lactose, milk sugar, casein, caseine, caseinate, sodium caseinate, calcium caseinate, whey, whey powder, whey protein, whey protein concentrate, whey protein isolate, milk protein, milk protein concentrate, milk solids, nonfat milk solids, skimmed milk powder, milk powder",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "animal"
+  ],
+  "what_is": "源自牛奶的成分，包括乳糖（牛奶中的糖）、酪蛋白和酪蛋白盐（牛奶中的蛋白质），以及乳清或乳清蛋白。",
+  "why_botia": "BOTIA 对这些术语进行标注，因为它们表明该成分为声明的乳制品来源成分。欧盟食品信息法规将牛奶及其制品（包括乳糖）列为需标注过敏原的物质，但有特定例外情况。",
+  "can_1": "识别常见的乳制品相关标示术语，例如乳糖、酪蛋白、酪蛋白盐、乳清和乳清蛋白。",
+  "can_2": "当明确标明含有乳制品成分时，触发“动物来源信息”图层。",
+  "cannot_1": "仅根据配料表确定其中所含乳糖或乳蛋白的含量。",
+  "cannot_2": "在缺乏针对具体产品的分析信息的情况下，确定加工过程是否已去除致敏性乳蛋白，或定量测定残留乳糖。",
+  "sources": [
+    {
+      "label": "第1169/2011号欧盟法规——附件二：牛奶及其制品（包括乳糖）",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2026-01-01/eng"
+    },
+    {
+      "label": "(EU) 2015/2203 号指令——食用酪蛋白和酪蛋白盐的定义及成分",
+      "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
+    },
+    {
+      "label": "Codex Alimentarius — 《乳清粉标准》（CXS 289-1995）",
+      "url": "https://www.fao.org/faoterm/viewentry/en/?entryId=79692"
+    }
+  ],
+  "title": "乳制品",
+  "description": "源自牛奶的成分，包括乳糖、酪蛋白和酪蛋白盐，以及乳清或乳清蛋白。"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "猪肉及猪源性产品",
+  "e_code": null,
+  "aliases": "pork, porcine, pig, swine, lard, pork fat, porcine fat, pork gelatine, pork gelatin, porcine gelatine, porcine gelatin, pork collagen, porcine collagen, pork broth, pork stock, pork extract, pork protein, porcine protein, pork rind, pork skin",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "muslim",
+    "animal"
+  ],
+  "what_is": "猪肉以及明确源自猪的成分，包括猪油、猪明胶或胶原蛋白、脂肪、蛋白质、高汤和提取物。",
+  "why_botia": "BOTIA 该工具会标记明确提及猪肉及猪类相关术语的内容，因为《食品法典》CXG 24-1997将猪和野猪（包括其产品及衍生物）列为不得用于清真认证的原料来源。BOTIA仅用于检测声明中的配料术语，并不对清真状态进行认证。",
+  "can_1": "当标签上标注了“猪肉”、“猪”、“猪油”及相关猪源性术语时，请予以明确标示。",
+  "can_2": "触发“穆斯林”和“动物来源”信息图层，并说明所声明的猪肉来源。",
+  "cannot_1": "除非标签上注明是猪源的，否则应确定明胶、胶原蛋白或动物脂肪等通用成分的来源。",
+  "cannot_2": "对产品进行清真认证或保证其符合清真标准，或对屠宰、加工、交叉污染或认证管控措施进行核查。",
+  "sources": [
+    {
+      "label": "Codex Alimentarius — 《“清真”（Halal）一词使用的一般准则》（CXG 24-1997）",
+      "url": "https://www.fao.org/4/y2770e/y2770e08.htm"
+    },
+    {
+      "label": "第853/2004号（EC）条例——动物源性食品的具体卫生规则",
+      "url": "https://eur-lex.europa.eu/eli/reg/2004/853/oj/eng"
+    }
+  ],
+  "title": "猪肉及猪源性产品",
+  "description": "猪肉以及明确源自猪的成分，包括猪油、猪明胶、胶原蛋白、脂肪、蛋白质、高汤和提取物。"
+}

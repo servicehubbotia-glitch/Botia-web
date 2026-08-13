@@ -1,0 +1,31 @@
+{
+  "name": "Milchprodukte",
+  "e_code": null,
+  "aliases": "milk derivatives, milk, lactose, milk sugar, casein, caseine, caseinate, sodium caseinate, calcium caseinate, whey, whey powder, whey protein, whey protein concentrate, whey protein isolate, milk protein, milk protein concentrate, milk solids, nonfat milk solids, skimmed milk powder, milk powder",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "animal"
+  ],
+  "what_is": "Aus Milch gewonnene Inhaltsstoffe, darunter Laktose (Milchzucker), Kasein und Kaseinate (Milchproteine) sowie Molke oder Molkenproteine.",
+  "why_botia": "BOTIA Diese Begriffe werden hervorgehoben, da sie auf einen deklarierten Inhaltsstoff auf Milchbasis hinweisen. Gemäß den EU-Vorschriften zur Lebensmittelinformation gehören Milch und Milchprodukte, einschließlich Laktose, zu den Stoffen, deren Allergenkennzeichnung vorgeschrieben ist, vorbehaltlich bestimmter Ausnahmen.",
+  "can_1": "Identifizieren Sie häufig angegebene Begriffe im Zusammenhang mit Milch wie Laktose, Kasein, Kaseinate, Molke und Molkenproteine.",
+  "can_2": "Die Ebene mit den Angaben zur tierischen Herkunft soll aktiviert werden, wenn ein aus Milch gewonnener Inhaltsstoff ausdrücklich angegeben ist.",
+  "cannot_1": "Ermitteln Sie den Gehalt an Laktose oder Milcheiweiß allein anhand der Zutatenliste.",
+  "cannot_2": "Feststellen, ob durch die Verarbeitung allergene Milchproteine entfernt wurden, oder den Restlaktosegehalt ohne produktspezifische Analyseinformationen bestimmen.",
+  "sources": [
+    {
+      "label": "Verordnung (EU) Nr. 1169/2011 – Anhang II: Milch und Milcherzeugnisse (einschließlich Laktose)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2026-01-01/eng"
+    },
+    {
+      "label": "Richtlinie (EU) 2015/2203 – Begriffsbestimmungen und Zusammensetzung von essbaren Kaseinen und Kaseinaten",
+      "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
+    },
+    {
+      "label": "Codex Alimentarius — Norm für Molkepulver (CXS 289-1995)",
+      "url": "https://www.fao.org/faoterm/viewentry/en/?entryId=79692"
+    }
+  ],
+  "title": "Milchprodukte",
+  "description": "Aus Milch gewonnene Inhaltsstoffe, darunter Laktose, Kasein und Kaseinate sowie Molke oder Molkenproteine."
+}

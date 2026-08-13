@@ -1,0 +1,32 @@
+{
+  "name": "Blut und Blutprodukte",
+  "e_code": null,
+  "aliases": "blood, animal blood, blood powder, dried blood, blood plasma, plasma protein, blood plasma protein, haemoglobin, hemoglobin, haemoglobin powder, hemoglobin powder, blood protein, porcine blood, bovine blood",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "muslim",
+    "animal"
+  ],
+  "what_is": "Lebensmittelzutaten, die aus tierischem Blut oder aus Blutfraktionen, einschließlich Plasma und Blutproteinen wie Hämoglobin, hergestellt werden.",
+  "why_botia": "BOTIA Markiert Begriffe, die sich ausdrücklich auf Blut beziehen, da der Codex CXG 24-1997 Blut als eine Quelle aufführt, deren Verwendung im Zusammenhang mit einer Halal-Kennzeichnung als unzulässig gilt. BOTIA erkennt deklarierte Zutatenbezeichnungen; es bescheinigt jedoch keinen Halal-Status.",
+  "can_1": "Identifizieren Sie explizite Begriffe wie „Blut“, „Blutplasma“, „Hämoglobin“ und verwandte Begriffe aus dem Bereich der Blutprodukte, wenn diese auf dem Etikett angegeben sind.",
+  "can_2": "Legen Sie die Informationsebenen „Muslimisch“ und „tierischen Ursprungs“ für einen deklarierten Inhaltsstoff aus Blut an.",
+  "cannot_1": "Bestimmen Sie die Tierart, wenn ein allgemeiner Begriff wie „Blut“, „Plasma“ oder „Hämoglobin“ ohne Angabe der Quelle verwendet wird.",
+  "cannot_2": "Die Halal-Konformität eines Produkts zertifizieren oder garantieren oder die Kontrollen in Bezug auf Schlachtung, Gewinnung, Verarbeitung, Kreuzkontamination oder Zertifizierung überprüfen.",
+  "sources": [
+    {
+      "label": "Codex Alimentarius — Allgemeine Leitlinien zur Verwendung des Begriffs „Halal“ (CXG 24-1997)",
+      "url": "https://www.fao.org/4/y2770e/y2770e08.htm"
+    },
+    {
+      "label": "Verordnung (EG) Nr. 1333/2008 über Lebensmittelzusatzstoffe – Blutplasma gemäß Artikel 3, Ausnahmen",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Verordnung (EU) Nr. 142/2011 der Kommission – Begriffsbestimmungen für Blutprodukte und Blutfraktionen",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/142/oj/eng"
+    }
+  ],
+  "title": "Blut und Blutprodukte",
+  "description": "Tierisches Blut und aus Blut gewonnene Fraktionen, darunter Plasma und Blutproteine wie Hämoglobin."
+}
