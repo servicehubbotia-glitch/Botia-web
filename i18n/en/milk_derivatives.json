@@ -1,0 +1,31 @@
+{
+  "name": "Milk Derivatives",
+  "e_code": null,
+  "aliases": "milk derivatives, milk, lactose, milk sugar, casein, caseine, caseinate, sodium caseinate, calcium caseinate, whey, whey powder, whey protein, whey protein concentrate, whey protein isolate, milk protein, milk protein concentrate, milk solids, nonfat milk solids, skimmed milk powder, milk powder",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "animal"
+  ],
+  "what_is": "Ingredients derived from milk, including lactose (milk sugar), casein and caseinates (milk proteins), and whey or whey proteins.",
+  "why_botia": "BOTIA flags these terms because they indicate a declared milk-derived ingredient. EU food-information rules list milk and products thereof, including lactose, among substances requiring allergen declaration, subject to specified exceptions.",
+  "can_1": "Identify common declared milk-derived terms such as lactose, casein, caseinates, whey and whey proteins.",
+  "can_2": "Trigger the animal-origin information layer when a milk-derived ingredient is explicitly declared.",
+  "cannot_1": "Determine the quantity of lactose or milk protein present from the ingredient list alone.",
+  "cannot_2": "Determine whether processing has removed allergenic milk proteins or quantify residual lactose without product-specific analytical information.",
+  "sources": [
+    {
+      "label": "Regulation (EU) No 1169/2011 — Annex II: milk and products thereof (including lactose)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2026-01-01/eng"
+    },
+    {
+      "label": "Directive (EU) 2015/2203 — definitions and composition of edible caseins and caseinates",
+      "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
+    },
+    {
+      "label": "Codex Alimentarius — Standard for Whey Powders (CXS 289-1995)",
+      "url": "https://www.fao.org/faoterm/viewentry/en/?entryId=79692"
+    }
+  ],
+  "title": "Milk Derivatives",
+  "description": "Ingredients derived from milk, including lactose, casein and caseinates, and whey or whey proteins."
+}

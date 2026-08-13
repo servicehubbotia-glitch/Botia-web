@@ -1,14 +1,14 @@
 {
   "name": "Maltodextrin",
   "e_code": null,
-  "aliases": "maltodextrin, maltodextrina, maltodextrine, hydrogenated starch hydrolysate",
+  "aliases": "maltodextrin, maltodextrina, maltodextrine",
   "module_icon": "Sugar.png",
   "layers": [
     "sugar"
   ],
   "what_is": "An ultra-processed carbohydrate powder made from the partial breakdown of starches.",
   "why_botia": "BOTIA flags it because it is a rapidly digestible carbohydrate that behaves like sugar once digested, while not being classified as a free sugar under WHO criteria. It frequently appears in products that avoid the word sugar on the label.",
-  "can_1": "Detect maltodextrin and classify the food as ultra-processed (NOVA 4).",
+  "can_1": "Detect maltodextrin and flag it as a marker of ultra-processing.",
   "can_2": "Flag its presence as a rapidly digestible carbohydrate, distinct from WHO free sugars.",
   "cannot_1": "Determine the botanical starch source (e.g., corn, wheat, or tapioca) unless explicitly declared.",
   "cannot_2": "Ascertain the glycemic index or the molecular chain length of the specific maltodextrin used.",

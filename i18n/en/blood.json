@@ -1,0 +1,32 @@
+{
+  "name": "Blood & Blood Derivatives",
+  "e_code": null,
+  "aliases": "blood, animal blood, blood powder, dried blood, blood plasma, plasma protein, blood plasma protein, haemoglobin, hemoglobin, haemoglobin powder, hemoglobin powder, blood protein, porcine blood, bovine blood",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "muslim",
+    "animal"
+  ],
+  "what_is": "Food ingredients made from animal blood or separated blood fractions, including plasma and blood proteins such as haemoglobin.",
+  "why_botia": "BOTIA flags explicit blood-derived terms because Codex CXG 24-1997 lists blood among sources considered unlawful for use of a halal claim. BOTIA detects declared ingredient terms; it does not certify halal status.",
+  "can_1": "Identify explicit blood, blood plasma, haemoglobin and related blood-derived terms when they are declared on the label.",
+  "can_2": "Trigger the Muslim and animal-origin information layers for a declared blood-derived ingredient.",
+  "cannot_1": "Determine the animal species when a generic term such as blood, plasma or haemoglobin is used without a stated source.",
+  "cannot_2": "Certify or guarantee that a product is halal, or verify slaughter, collection, processing, cross-contact or certification controls.",
+  "sources": [
+    {
+      "label": "Codex Alimentarius — General Guidelines for Use of the Term Halal (CXG 24-1997)",
+      "url": "https://www.fao.org/4/y2770e/y2770e08.htm"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 on food additives — blood plasma listed in Article 3 exclusions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Commission Regulation (EU) No 142/2011 — definitions of blood products and blood fractions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/142/oj/eng"
+    }
+  ],
+  "title": "Blood & Blood Derivatives",
+  "description": "Animal blood and separated blood fractions, including plasma and blood proteins such as haemoglobin."
+}
