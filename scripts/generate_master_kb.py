@@ -3,8 +3,8 @@
 Script para regenerar master_kb.json a partir de todas las fichas de ingrediente.
 Ejecutar en Google Colab.
 """
-
-!pip install -q PyGithub
+# ADVERTENCIA: el archivo que genera este script NO debe editarse a mano.
+# Cualquier correccion se hace aqui, en el generador, y luego se regenera.
 
 import os
 import json
@@ -15,7 +15,11 @@ from pathlib import Path
 # ============================================================
 # CONFIGURACIÓN
 # ============================================================
-GITHUB_TOKEN = "AQUI_TU_TOKEN"  # ← REEMPLAZA CON TU TOKEN REAL
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+if not GITHUB_TOKEN:
+    print("❌ La variable de entorno GITHUB_TOKEN no está definida.")
+    sys.exit(1)
+
 REPO_URL = f"https://{GITHUB_TOKEN}@github.com/servicehubbotia-glitch/Botia-web.git"
 REPO_DIR = "/content/Botia-web"
 GIT_USER_EMAIL = "servicehub.botia@gmail.com"
@@ -62,7 +66,7 @@ def get_ingredient_slugs(repo_path):
     slugs = []
     for f in os.listdir(ing_dir):
         if f.endswith(".html") and f not in EXCLUDED_FILES:
-            slug = f[:-5]  # quitar .html
+            slug = f[:-5]
             slugs.append(slug)
     return sorted(slugs)
 
@@ -131,7 +135,6 @@ def main():
                 print(f"  ⚠️ {lang}: JSON no encontrado, omitido")
                 continue
 
-            # Construir la entrada para este idioma
             title = get_title(data)
             content = build_content(data)
             aliases = get_aliases(data)
@@ -165,7 +168,6 @@ def main():
     print("\n📦 Añadiendo master_kb.json al índice...")
     run_git_cmd("git add master_kb.json")
 
-    # Verificar si hay cambios
     status = run_git_cmd("git status --porcelain")
     if not status:
         print("✅ No hay cambios en master_kb.json. Nada que commitear.")

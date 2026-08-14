@@ -3,8 +3,8 @@
 Script para generar triggers-master.json desde i18n/en/*.json.
 Ejecutar en Google Colab.
 """
-
-!pip install -q PyGithub
+# ADVERTENCIA: el archivo que genera este script NO debe editarse a mano.
+# Cualquier correccion se hace aqui, en el generador, y luego se regenera.
 
 import os
 import json
@@ -15,7 +15,11 @@ from pathlib import Path
 # ============================================================
 # CONFIGURACIÓN
 # ============================================================
-GITHUB_TOKEN = "AQUI_TU_TOKEN"  # ← REEMPLAZA CON TU TOKEN REAL
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+if not GITHUB_TOKEN:
+    print("❌ La variable de entorno GITHUB_TOKEN no está definida.")
+    sys.exit(1)
+
 REPO_URL = f"https://{GITHUB_TOKEN}@github.com/servicehubbotia-glitch/Botia-web.git"
 REPO_DIR = "/content/Botia-web"
 GIT_USER_EMAIL = "servicehub.botia@gmail.com"
