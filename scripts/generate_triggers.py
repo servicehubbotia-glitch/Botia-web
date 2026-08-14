@@ -11,6 +11,7 @@ import json
 import subprocess
 import sys
 from pathlib import Path
+import re
 
 # ============================================================
 # CONFIGURACIÓN
@@ -54,7 +55,9 @@ def write_json(filepath, data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 def parse_aliases(aliases_str):
-    """Convierte una cadena de alias separada por comas en una lista sin duplicados, conservando orden."""
+    """Convierte una cadena de alias separada por comas en una lista sin duplicados, conservando orden.
+    No corta en comas internas de nombres quimicos (por ejemplo, "2,6-di-tert-butyl-p-cresol").
+    """
     if aliases_str is None:
         return []
     if isinstance(aliases_str, list):
@@ -66,7 +69,8 @@ def parse_aliases(aliases_str):
                 seen.add(item)
                 result.append(item)
         return result
-    parts = [p.strip() for p in aliases_str.split(',') if p.strip()]
+    # Solo cortar en comas seguidas de espacio o de un carácter no dígito
+    parts = [p.strip() for p in re.split(r",(?=\s)|,(?=[^\d\s])", aliases_str) if p.strip()]
     seen = set()
     result = []
     for p in parts:
@@ -74,7 +78,6 @@ def parse_aliases(aliases_str):
             seen.add(p)
             result.append(p)
     return result
-
 # ============================================================
 # FLUJO PRINCIPAL
 # ============================================================
