@@ -1,28 +1,28 @@
 {
-  "name": "Sucrose Esters & Sucroglycerides",
-  "title": "Sucrose Esters & Sucroglycerides",
-  "description": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "what_is": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "why_botia": "BOTIA groups E473–E474 because the original audit range E473–E475 crosses into a different family: E475 is polyglycerol esters of fatty acids and is covered separately. Keeping the range precise prevents one ingredient family from swallowing another.",
-  "can_1": "Detect E473, E474, sucrose esters of fatty acids and sucroglycerides.",
-  "can_2": "Show the texture and E-number context while keeping E475 in the polyglycerol-esters card.",
-  "cannot_1": "Determine concentration or the fatty-acid composition from the ingredient name.",
-  "cannot_2": "Classify E475 as a sucrose ester.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "Sakaroz Esterleri ve Sakarogliseritler",
   "e_code": "E473–E474",
+  "aliases": "E473, E474, sakaroz esterleri, yağ asitlerinin sakaroz esterleri, sakaroz yağ asidi esterleri, sakarogliseritler",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E473, E474, sucrose esters, sucrose esters of fatty acids, sucrose fatty acid esters, sucroglycerides"
+  "what_is": "Mevcut EU listesinde iki emülgatör/doku verici girdisi: yağ asitlerinin sakaroz esterleri (E473) ve sakarogliseritler (E474).",
+  "why_botia": "BOTIA, E473–E474'i gruplar çünkü orijinal denetim aralığı E473–E475 farklı bir aileye geçer: E475, yağ asitlerinin poligliserol esterleridir ve ayrıca ele alınır. Aralığı hassas tutmak, bir içerik ailesinin diğerini yutmasını önler.",
+  "can_1": "E473, E474, yağ asitlerinin sakaroz esterleri ve sakarogliseritleri tespit eder.",
+  "can_2": "E475'i poligliserol esterler kartında tutarken doku ve E-numarası bağlamını gösterir.",
+  "cannot_1": "İçerik adından konsantrasyonu veya yağ asidi bileşimini belirleyemez.",
+  "cannot_2": "E475'i sakaroz esteri olarak sınıflandıramaz.",
+  "sources": [
+    {
+      "label": "Regülasyon (EC) No 1333/2008 — Gıda katkı maddeleri için Birlik listesi ve kullanım koşulları",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Komisyon Regülasyonu (EU) No 231/2012 — izin verilen gıda katkı maddeleri için spesifikasyonlar",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Sakaroz Esterleri ve Sakarogliseritler",
+  "description": "Mevcut EU listesinde iki emülgatör/doku verici girdisi: yağ asitlerinin sakaroz esterleri (E473) ve sakarogliseritler (E474)."
 }

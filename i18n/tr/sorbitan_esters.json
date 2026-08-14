@@ -1,28 +1,28 @@
 {
   "name": "Sorbitan Esters",
-  "title": "Sorbitan Esters",
-  "description": "A family of sorbitan fatty-acid ester emulsifiers identified in the EU as E491–E495.",
-  "what_is": "A family of sorbitan fatty-acid ester emulsifiers identified in the EU as E491–E495.",
-  "why_botia": "BOTIA groups these declarations because each E-number corresponds to a different sorbitan ester and labels may use either the E-number or common chemical name.",
-  "can_1": "Detect E491–E495 and the corresponding sorbitan ester names.",
-  "can_2": "Show the texture and E-number layers for the declared family member.",
-  "cannot_1": "Determine concentration or the origin of the fatty-acid feedstock from the ingredient list.",
-  "cannot_2": "Assume all sorbitan esters are chemically identical or used at the same level.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E491–E495",
+  "aliases": "E491, E492, E493, E494, E495, sorbitan monostearat, sorbitan tristearat, sorbitan monolaurat, sorbitan monooleat, sorbitan monopalmitat, sorbitan esterleri",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E491, E492, E493, E494, E495, sorbitan monostearate, sorbitan tristearate, sorbitan monolaurate, sorbitan monooleate, sorbitan monopalmitate, sorbitan esters"
+  "what_is": "EU'de E491–E495 olarak tanımlanan bir sorbitan yağ asidi esteri emülgatör ailesi.",
+  "why_botia": "BOTIA, bu beyanları gruplandırmaktadır; zira her bir E numarası farklı bir sorbitan esterine karşılık gelmekte olup, etiketlerde hem E numarası hem de yaygın kimyasal adı kullanılabilmektedir.",
+  "can_1": "E491–E495'yi ve buna karşılık gelen sorbitan ester adlarını tespit edin.",
+  "can_2": "Belirtilen aile üyesine ait doku ve E-numarası katmanlarını göster.",
+  "cannot_1": "Malzeme listesinden yağ asidi hammaddesinin konsantrasyonunu veya kaynağını belirleyin.",
+  "cannot_2": "Tüm sorbitan esterlerinin kimyasal olarak aynı olduğunu veya aynı miktarda kullanıldığını varsayalım.",
+  "sources": [
+    {
+      "label": "(EC) Sayılı Yönetmelik No. 1333/2008 — Gıda katkı maddeleri için Birlik listesi ve kullanım koşulları",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "(EU) sayılı Komisyon Yönetmeliği No. 231/2012 — onaylanmış gıda katkı maddelerine ilişkin şartnameler",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Sorbitan Esters",
+  "description": "EU'de E491–E495 olarak tanımlanan bir sorbitan yağ asidi esteri emülgatör ailesi."
 }

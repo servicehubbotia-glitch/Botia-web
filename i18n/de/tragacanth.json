@@ -1,28 +1,28 @@
 {
   "name": "Tragant",
-  "title": "Tragant",
-  "description": "A plant gum obtained from Astragalus species and used as a thickener, stabiliser and emulsifying texturiser, identified in the EU as E413.",
-  "what_is": "A plant gum obtained from Astragalus species and used as a thickener, stabiliser and emulsifying texturiser, identified in the EU as E413.",
-  "why_botia": "BOTIA flags E413 because the same ingredient can appear as tragacanth, gum tragacanth or an E-number.",
-  "can_1": "Detect E413 and common tragacanth-gum names.",
-  "can_2": "Show the texture and E-number context for the declared gum.",
-  "cannot_1": "Determine the amount or botanical source species from the ingredient list.",
-  "cannot_2": "Infer a health effect from the presence of the gum alone.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E413",
+  "aliases": "E413, INS 413, Tragant, Gummi-Tragant, Tragantgummi",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E413, INS 413, tragacanth, gum tragacanth, tragacanth gum"
+  "what_is": "Ein Pflanzengummi, der aus Astragalus-Arten gewonnen wird und als Verdickungsmittel, Stabilisator und emulgierender Texturgeber verwendet wird, identifiziert im EU als E413.",
+  "why_botia": "BOTIA kennzeichnet E413, weil dieselbe Zutat als Tragant, Gummi-Tragant oder E-Nummer erscheinen kann.",
+  "can_1": "E413 und gebräuchliche Namen für Tragantgummi erkennen.",
+  "can_2": "Den Textur- und E-Nummer-Kontext für das deklarierte Gummi anzeigen.",
+  "cannot_1": "Die Menge oder die botanische Herkunftsart aus der Zutatenliste bestimmen.",
+  "cannot_2": "Eine gesundheitliche Wirkung aus dem Vorhandensein des Gummis allein ableiten.",
+  "sources": [
+    {
+      "label": "Verordnung (EC) Nr. 1333/2008 — Unionsliste und Verwendungsbedingungen für Lebensmittelzusatzstoffe",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Verordnung (EU) Nr. 231/2012 — Spezifikationen für zugelassene Lebensmittelzusatzstoffe",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Tragant",
+  "description": "Ein Pflanzengummi, der aus Astragalus-Arten gewonnen wird und als Verdickungsmittel, Stabilisator und emulgierender Texturgeber verwendet wird, identifiziert im EU als E413."
 }

@@ -1,28 +1,28 @@
 {
-  "name": "Polysorbates",
-  "title": "Polysorbates",
-  "description": "A family of emulsifiers and stabilisers based on polyoxyethylene sorbitan fatty-acid esters, identified in the EU as E432–E436.",
-  "what_is": "A family of emulsifiers and stabilisers based on polyoxyethylene sorbitan fatty-acid esters, identified in the EU as E432–E436.",
-  "why_botia": "BOTIA groups polysorbates because product labels often use the individual polysorbate number or E-number rather than the full chemical name.",
-  "can_1": "Detect E432–E436, polysorbate numbers and the principal chemical names.",
-  "can_2": "Show the texture and E-number context for the declared emulsifier.",
-  "cannot_1": "Determine concentration or fatty-acid composition from the ingredient list.",
-  "cannot_2": "Treat all polysorbates as one identical substance or infer an individual health effect from their presence.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "聚山梨酯",
   "e_code": "E432–E436",
+  "aliases": "E432, E433, E434, E435, E436, 聚山梨酯20, 聚山梨酯80, 聚山梨酯40, 聚山梨酯60, 聚山梨酯65, 聚氧乙烯山梨醇酐单月桂酸酯, 聚氧乙烯山梨醇酐单油酸酯, 聚氧乙烯山梨醇酐单棕榈酸酯, 聚氧乙烯山梨醇酐单硬脂酸酯, 聚氧乙烯山梨醇酐三硬脂酸酯",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E432, E433, E434, E435, E436, polysorbate 20, polysorbate 80, polysorbate 40, polysorbate 60, polysorbate 65, polyoxyethylene sorbitan monolaurate, polyoxyethylene sorbitan monooleate, polyoxyethylene sorbitan monopalmitate, polyoxyethylene sorbitan monostearate, polyoxyethylene sorbitan tristearate"
+  "what_is": "一类基于聚氧乙烯山梨醇酐脂肪酸酯的乳化剂和稳定剂，在EU中被标识为E432–E436。",
+  "why_botia": "BOTIA将聚山梨酯归为一组，因为产品标签上通常使用具体的聚山梨酯编号或E编号，而不是完整的化学名称。",
+  "can_1": "检测E432–E436、聚山梨酯编号及主要化学名称。",
+  "can_2": "显示所声明乳化剂的质构和E编号相关信息。",
+  "cannot_1": "无法根据成分列表确定浓度或脂肪酸组成。",
+  "cannot_2": "不能将所有聚山梨酯视为同一种物质，也不能因其存在而推断出特定的健康影响。",
+  "sources": [
+    {
+      "label": "法规 (EC) 第1333/2008号 — 食品添加剂的欧盟清单及使用条件",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "委员会法规 (EU) 第231/2012号 — 授权食品添加剂规格",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "聚山梨酯",
+  "description": "一类基于聚氧乙烯山梨醇酐脂肪酸酯的乳化剂和稳定剂，在EU中被标识为E432–E436。"
 }

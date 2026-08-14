@@ -1,28 +1,28 @@
 {
   "name": "Stearoyl Lactylates",
-  "title": "Stearoyl Lactylates",
-  "description": "A pair of emulsifying dough- and texture-related additives: sodium stearoyl-2-lactylate (E481) and calcium stearoyl-2-lactylate (E482).",
-  "what_is": "A pair of emulsifying dough- and texture-related additives: sodium stearoyl-2-lactylate (E481) and calcium stearoyl-2-lactylate (E482).",
-  "why_botia": "BOTIA groups E481 and E482 because labels often use the abbreviations SSL or CSL or omit the '-2-' in the common name.",
-  "can_1": "Detect E481/E482, SSL/CSL and the common sodium or calcium stearoyl lactylate names.",
-  "can_2": "Show the texture and E-number information layers for the declared additive.",
-  "cannot_1": "Determine the fatty-acid source or concentration from the ingredient name alone.",
-  "cannot_2": "Infer animal origin merely from the word 'stearoyl' without source information.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E481, E482",
+  "aliases": "E481, E482, laktylan stearoilowy, laktylan stearoilowy sodu, 2-laktylan stearoilowy sodu, SSL, laktylan stearoilowy wapnia, 2-laktylan stearoilowy wapnia, CSL",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E481, E482, stearoyl lactylates, sodium stearoyl lactylate, sodium stearoyl-2-lactylate, SSL, calcium stearoyl lactylate, calcium stearoyl-2-lactylate, CSL"
+  "what_is": "Para emulgujących dodatków wpływających na ciasto i konsystencję: 2-laktylan stearoilowy sodu (E481) oraz 2-laktylan stearoilowy wapnia (E482).",
+  "why_botia": "BOTIA łączy w grupę pozycje E481 i E482, ponieważ na etykietach często stosuje się skróty SSL lub CSL albo pomija się część „-2-” w nazwie zwyczajowej.",
+  "can_1": "Wykryj nazwy E481/E482, SSL/CSL oraz powszechnie stosowane nazwy stearoilolaktylanu sodu lub wapnia.",
+  "can_2": "Wyświetl warstwy zawierające informacje o teksturze i numerach E dla zadeklarowanego dodatku.",
+  "cannot_1": "Określić źródło lub stężenie kwasów tłuszczowych na podstawie samej nazwy składnika.",
+  "cannot_2": "Wnioskować o pochodzeniu zwierzęcym wyłącznie na podstawie słowa „stearoil”, bez informacji o źródle.",
+  "sources": [
+    {
+      "label": "Rozporządzenie (EC) nr 1333/2008 — Unijny wykaz dodatków do żywności oraz warunki ich stosowania",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Rozporządzenie Komisji (EU) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Stearoyl Lactylates",
+  "description": "Para emulgujących dodatków wpływających na ciasto i konsystencję: 2-laktylan stearoilowy sodu (E481) oraz 2-laktylan stearoilowy wapnia (E482)."
 }

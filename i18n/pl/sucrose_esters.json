@@ -1,28 +1,28 @@
 {
-  "name": "Sucrose Esters & Sucroglycerides",
-  "title": "Sucrose Esters & Sucroglycerides",
-  "description": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "what_is": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "why_botia": "BOTIA groups E473–E474 because the original audit range E473–E475 crosses into a different family: E475 is polyglycerol esters of fatty acids and is covered separately. Keeping the range precise prevents one ingredient family from swallowing another.",
-  "can_1": "Detect E473, E474, sucrose esters of fatty acids and sucroglycerides.",
-  "can_2": "Show the texture and E-number context while keeping E475 in the polyglycerol-esters card.",
-  "cannot_1": "Determine concentration or the fatty-acid composition from the ingredient name.",
-  "cannot_2": "Classify E475 as a sucrose ester.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "Estry sacharozy i sachroglicerydy",
   "e_code": "E473–E474",
+  "aliases": "E473, E474, estry sacharozy, estry sacharozy z kwasami tłuszczowymi, estry sacharozy i kwasów tłuszczowych, sachroglicerydy",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E473, E474, sucrose esters, sucrose esters of fatty acids, sucrose fatty acid esters, sucroglycerides"
+  "what_is": "Para pozycji emulgator/środek teksturotwórczy w aktualnej liście EU: estry sacharozy z kwasami tłuszczowymi (E473) i sachroglicerydy (E474).",
+  "why_botia": "BOTIA grupuje E473–E474, ponieważ oryginalny zakres audytu E473–E475 przechodzi do innej rodziny: E475 to estry poliglicerolu z kwasami tłuszczowymi i są objęte osobną pozycją. Utrzymanie precyzyjnego zakresu zapobiega wchłonięciu jednej rodziny składników przez drugą.",
+  "can_1": "Wykrywa E473, E474, estry sacharozy z kwasami tłuszczowymi i sachroglicerydy.",
+  "can_2": "Pokazuje kontekst tekstury i numeru E, pozostawiając E475 w karcie estrów poliglicerolu.",
+  "cannot_1": "Nie określa stężenia ani składu kwasów tłuszczowych na podstawie nazwy składnika.",
+  "cannot_2": "Nie klasyfikuje E475 jako estru sacharozy.",
+  "sources": [
+    {
+      "label": "Rozporządzenie (EC) nr 1333/2008 — unijny wykaz i warunki stosowania dodatków do żywności",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Rozporządzenie Komisji (EU) nr 231/2012 — specyfikacje autoryzowanych dodatków do żywności",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Estry sacharozy i sachroglicerydy",
+  "description": "Para pozycji emulgator/środek teksturotwórczy w aktualnej liście EU: estry sacharozy z kwasami tłuszczowymi (E473) i sachroglicerydy (E474)."
 }

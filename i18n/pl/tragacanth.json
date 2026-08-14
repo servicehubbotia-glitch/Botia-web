@@ -1,28 +1,28 @@
 {
-  "name": "Tragakanta",
-  "title": "Tragakanta",
-  "description": "A plant gum obtained from Astragalus species and used as a thickener, stabiliser and emulsifying texturiser, identified in the EU as E413.",
-  "what_is": "A plant gum obtained from Astragalus species and used as a thickener, stabiliser and emulsifying texturiser, identified in the EU as E413.",
-  "why_botia": "BOTIA flags E413 because the same ingredient can appear as tragacanth, gum tragacanth or an E-number.",
-  "can_1": "Detect E413 and common tragacanth-gum names.",
-  "can_2": "Show the texture and E-number context for the declared gum.",
-  "cannot_1": "Determine the amount or botanical source species from the ingredient list.",
-  "cannot_2": "Infer a health effect from the presence of the gum alone.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "Tragakant",
   "e_code": "E413",
+  "aliases": "E413, INS 413, tragakant, guma tragakantowa, guma tragakant",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E413, INS 413, tragacanth, gum tragacanth, tragacanth gum"
+  "what_is": "Guma roślinna otrzymywana z gatunków Astragalus, stosowana jako zagęstnik, stabilizator i emulgujący środek teksturotwórczy, zidentyfikowana w EU jako E413.",
+  "why_botia": "BOTIA oznacza E413, ponieważ ten sam składnik może występować jako tragakant, guma tragakantowa lub numer E.",
+  "can_1": "Wykrywa E413 i powszechne nazwy gumy tragakantowej.",
+  "can_2": "Pokazuje kontekst tekstury i numeru E dla zadeklarowanej gumy.",
+  "cannot_1": "Nie określa ilości ani gatunku botanicznego źródła na podstawie listy składników.",
+  "cannot_2": "Nie wnioskuje o wpływie na zdrowie na podstawie samej obecności gumy.",
+  "sources": [
+    {
+      "label": "Rozporządzenie (EC) nr 1333/2008 — unijny wykaz i warunki stosowania dodatków do żywności",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Rozporządzenie Komisji (EU) nr 231/2012 — specyfikacje dotyczące dozwolonych dodatków do żywności",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Tragakant",
+  "description": "Guma roślinna otrzymywana z gatunków Astragalus, stosowana jako zagęstnik, stabilizator i emulgujący środek teksturotwórczy, zidentyfikowana w EU jako E413."
 }

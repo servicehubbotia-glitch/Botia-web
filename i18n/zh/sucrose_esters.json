@@ -1,28 +1,28 @@
 {
-  "name": "Sucrose Esters & Sucroglycerides",
-  "title": "Sucrose Esters & Sucroglycerides",
-  "description": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "what_is": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "why_botia": "BOTIA groups E473–E474 because the original audit range E473–E475 crosses into a different family: E475 is polyglycerol esters of fatty acids and is covered separately. Keeping the range precise prevents one ingredient family from swallowing another.",
-  "can_1": "Detect E473, E474, sucrose esters of fatty acids and sucroglycerides.",
-  "can_2": "Show the texture and E-number context while keeping E475 in the polyglycerol-esters card.",
-  "cannot_1": "Determine concentration or the fatty-acid composition from the ingredient name.",
-  "cannot_2": "Classify E475 as a sucrose ester.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "蔗糖酯和蔗糖甘油酯",
   "e_code": "E473–E474",
+  "aliases": "E473，E474，蔗糖酯，脂肪酸蔗糖酯，蔗糖脂肪酸酯，蔗糖甘油酯",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E473, E474, sucrose esters, sucrose esters of fatty acids, sucrose fatty acid esters, sucroglycerides"
+  "what_is": "当前EU列表中的一对乳化剂/质构剂条目：脂肪酸蔗糖酯（E473）和蔗糖甘油酯（E474）。",
+  "why_botia": "BOTIA组将E473–E474分组，因为原始审计范围E473–E475跨越到不同的家族：E475是脂肪酸聚甘油酯，单独涵盖。保持范围精确可防止一个成分家族吞并另一个。",
+  "can_1": "检测E473、E474、脂肪酸蔗糖酯和蔗糖甘油酯。",
+  "can_2": "显示质构和E编号背景，同时将E475保留在聚甘油酯卡片中。",
+  "cannot_1": "从成分名称确定浓度或脂肪酸组成。",
+  "cannot_2": "将E475分类为蔗糖酯。",
+  "sources": [
+    {
+      "label": "法规（EC）第1333/2008号——食品添加剂的联盟清单和使用条件",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "委员会法规（EU）第231/2012号——授权食品添加剂的规格",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "蔗糖酯和蔗糖甘油酯",
+  "description": "当前EU列表中的一对乳化剂/质构剂条目：脂肪酸蔗糖酯（E473）和蔗糖甘油酯（E474）。"
 }

@@ -1,28 +1,28 @@
 {
   "name": "Pektyny",
-  "title": "Pektyny",
-  "description": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "what_is": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "why_botia": "BOTIA groups pectin declarations because labels can use the generic name, subtype or E-number. The ingredient name does not reveal degree of esterification, amidation or concentration unless separately stated.",
-  "can_1": "Detect E440, pectin, pectins and the common amidated/non-amidated subtype names.",
-  "can_2": "Show the texture and E-number information layers.",
-  "cannot_1": "Determine the exact pectin subtype or formulation when only 'pectin' is declared.",
-  "cannot_2": "Calculate the amount present from ingredient order alone.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E440",
+  "aliases": "E440, E440(i), E440(ii), INS 440, pektyna, pektyn, pektyna nieamidowana, pektyna amidowana, pektyn amidowane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E440, E440(i), E440(ii), INS 440, pectin, pectins, non-amidated pectin, amidated pectin, amidated pectins"
+  "what_is": "Rodzina roślinnych polisacharydowych środków żelujących i stabilizujących, w tym pektyn nieamidowanych i amidowanych, zgrupowanych pod oznaczeniem E440.",
+  "why_botia": "BOTIA grupuje deklaracje dotyczące pektyn, ponieważ na etykietach można podawać nazwę ogólną, podtyp lub numer E. Nazwa składnika nie wskazuje stopnia estryfikacji, amidowania ani stężenia, o ile nie zostało to oddzielnie zaznaczone.",
+  "can_1": "Wykryj E440, pektynę, pektynę oraz popularne nazwy podtypów amidowanych i nieamidowanych.",
+  "can_2": "Wyświetl warstwy zawierające informacje o teksturze i numerach E.",
+  "cannot_1": "W przypadku, gdy w składzie podano jedynie „pektynę”, należy określić dokładny podtyp lub skład tej pektyn.",
+  "cannot_2": "Oblicz ilość danego składnika na podstawie samego zamówienia składników.",
+  "sources": [
+    {
+      "label": "Rozporządzenie (EC) nr 1333/2008 — Unijny wykaz dodatków do żywności oraz warunki ich stosowania",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Rozporządzenie Komisji (EU) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Pektyny",
+  "description": "Rodzina roślinnych polisacharydowych środków żelujących i stabilizujących, w tym pektyn nieamidowanych i amidowanych, zgrupowanych pod oznaczeniem E440."
 }

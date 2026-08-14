@@ -1,28 +1,28 @@
 {
   "name": "Propylene Glycol Esters of Fatty Acids",
-  "title": "Propylene Glycol Esters of Fatty Acids",
-  "description": "An emulsifying and texturising additive consisting of esters of propane-1,2-diol (propylene glycol) with fatty acids, identified in the EU as E477.",
-  "what_is": "An emulsifying and texturising additive consisting of esters of propane-1,2-diol (propylene glycol) with fatty acids, identified in the EU as E477.",
-  "why_botia": "BOTIA flags E477 because the same additive may be declared using 'propylene glycol' or the systematic 'propane-1,2-diol' wording.",
-  "can_1": "Detect E477 and the principal propylene-glycol/propanediol ester names.",
-  "can_2": "Show the texture and E-number information layers.",
-  "cannot_1": "Determine fatty-acid composition, concentration or manufacturing feedstock from the ingredient list.",
-  "cannot_2": "Confuse E477 with free propylene glycol or with propylene glycol alginate (E405).",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E477",
+  "aliases": "E477, INS 477, эфиры пропиленгликоля жирных кислот, эфиры пропана-1,2-диола жирных кислот, эфиры пропиленгликоля жирных кислот",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E477, INS 477, propylene glycol esters of fatty acids, propane-1,2-diol esters of fatty acids, propylene glycol fatty acid esters"
+  "what_is": "Эмульгирующая и текстурирующая добавка, состоящая из эфиров пропан-1,2-диола (пропиленгликоля) с жирными кислотами, обозначенная в EU как E477.",
+  "why_botia": "BOTIA помечается как E477, поскольку одно и то же добавку можно указать как «пропиленгликоль» или с использованием систематического наименования «пропан-1,2-диол».",
+  "can_1": "Определить E477 и основные названия эфиров пропиленгликоля и пропандиола.",
+  "can_2": "Отобразить слои с информацией о текстуре и номерах E.",
+  "cannot_1": "Определите состав жирных кислот, их концентрацию или исходное сырье по списку ингредиентов.",
+  "cannot_2": "Не следует путать E477 с чистым пропиленгликолем или с альгинатом пропиленгликоля (E405).",
+  "sources": [
+    {
+      "label": "Положение (EC) № 1333/2008 — Единый перечень пищевых добавок и условия их использования",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Регламент Комиссии (EU) № 231/2012 — технические условия на разрешенные пищевые добавки",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Propylene Glycol Esters of Fatty Acids",
+  "description": "Эмульгирующая и текстурирующая добавка, состоящая из эфиров пропан-1,2-диола (пропиленгликоля) с жирными кислотами, обозначенная в EU как E477."
 }

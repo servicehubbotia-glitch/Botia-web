@@ -1,28 +1,28 @@
 {
-  "name": "Polyglycerol Esters & PGPR",
-  "title": "Polyglycerol Esters & PGPR",
-  "description": "A texture/emulsifier grouping covering polyglycerol esters of fatty acids (E475) and polyglycerol polyricinoleate, PGPR (E476).",
-  "what_is": "A texture/emulsifier grouping covering polyglycerol esters of fatty acids (E475) and polyglycerol polyricinoleate, PGPR (E476).",
-  "why_botia": "BOTIA groups these declarations because E475 and E476 share polyglycerol-based naming but are distinct additives. PGPR should not be confused with sucrose esters or with generic mono- and diglycerides.",
-  "can_1": "Detect E475, E476, polyglycerol esters and PGPR declarations.",
-  "can_2": "Show the texture and E-number context while preserving the distinction between E475 and E476.",
-  "cannot_1": "Determine concentration or exact ester composition from the ingredient list.",
-  "cannot_2": "Treat E475 and E476 as chemically identical.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "聚甘油酯 & PGPR",
   "e_code": "E475, E476",
+  "aliases": "E475, E476, 脂肪酸聚甘油酯, 聚甘油脂肪酸酯, 聚甘油聚蓖麻醇酸酯, 聚甘油聚蓖麻醇酸酯 PGPR, PGPR",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E475, E476, polyglycerol esters of fatty acids, polyglycerol fatty acid esters, polyglycerol polyricinoleate, polyglycerol polyricinoleate PGPR, PGPR"
+  "what_is": "一种覆盖脂肪酸聚甘油酯（E475）和聚甘油聚蓖麻醇酸酯的质地/乳化剂类别，PGPR（E476）。",
+  "why_botia": "BOTIA将这些声明分组，因为E475和E476共享基于聚甘油的命名，但它们是不同的添加剂。PGPR不应与蔗糖酯或一般的单甘油酯和双甘油酯混淆。",
+  "can_1": "检测E475、E476、聚甘油酯和PGPR声明。",
+  "can_2": "显示质地和E编号背景，同时保持E475和E476之间的区别。",
+  "cannot_1": "无法从成分列表中确定浓度或精确的酯组成。",
+  "cannot_2": "不要将E475和E476视为化学相同。",
+  "sources": [
+    {
+      "label": "法规（EC）No 1333/2008 — 食品添加剂的联盟清单和使用条件",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "委员会法规（EU）No 231/2012 — 授权食品添加剂的规格",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "聚甘油酯 & PGPR",
+  "description": "一种覆盖脂肪酸聚甘油酯（E475）和聚甘油聚蓖麻醇酸酯的质地/乳化剂类别，PGPR（E476）。"
 }

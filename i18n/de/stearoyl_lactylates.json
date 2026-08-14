@@ -1,28 +1,28 @@
 {
   "name": "Stearoyl Lactylates",
-  "title": "Stearoyl Lactylates",
-  "description": "A pair of emulsifying dough- and texture-related additives: sodium stearoyl-2-lactylate (E481) and calcium stearoyl-2-lactylate (E482).",
-  "what_is": "A pair of emulsifying dough- and texture-related additives: sodium stearoyl-2-lactylate (E481) and calcium stearoyl-2-lactylate (E482).",
-  "why_botia": "BOTIA groups E481 and E482 because labels often use the abbreviations SSL or CSL or omit the '-2-' in the common name.",
-  "can_1": "Detect E481/E482, SSL/CSL and the common sodium or calcium stearoyl lactylate names.",
-  "can_2": "Show the texture and E-number information layers for the declared additive.",
-  "cannot_1": "Determine the fatty-acid source or concentration from the ingredient name alone.",
-  "cannot_2": "Infer animal origin merely from the word 'stearoyl' without source information.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E481, E482",
+  "aliases": "E481, E482, Stearoyllactylate, Natriumstearoyllactylat, Natriumstearoyl-2-lactylat, SSL, Calciumstearoyllactylat, Calciumstearoyl-2-lactylat, CSL",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E481, E482, stearoyl lactylates, sodium stearoyl lactylate, sodium stearoyl-2-lactylate, SSL, calcium stearoyl lactylate, calcium stearoyl-2-lactylate, CSL"
+  "what_is": "Ein Paar emulgierender Zusatzstoffe, die die Teigbeschaffenheit und Textur beeinflussen: Natriumstearoyl-2-lactylat (E481) und Calciumsstearoyl-2-lactylat (E482).",
+  "why_botia": "BOTIA fasst E481 und E482 zusammen, da auf Etiketten häufig die Abkürzungen SSL oder CSL verwendet werden oder das „-2-“ im allgemeinen Namen weglassen.",
+  "can_1": "Erkennen Sie die Bezeichnungen E481/E482, SSL/CSL sowie die gängigen Bezeichnungen für Natrium- oder Kalziumstearoyllactylat.",
+  "can_2": "Zeigen Sie die Ebenen mit den Informationen zur Textur und zu den E-Nummern für den deklarierten Zusatzstoff an.",
+  "cannot_1": "Bestimmen Sie die Fettsäurequelle oder -konzentration allein anhand der Bezeichnung der Zutat.",
+  "cannot_2": "Schlussfolgern Sie den tierischen Ursprung lediglich aus dem Begriff „Stearoyl“, ohne dass Angaben zur Herkunft vorliegen.",
+  "sources": [
+    {
+      "label": "Verordnung (EC) Nr. 1333/2008 – Unionsliste und Verwendungsbedingungen für Lebensmittelzusatzstoffe",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Verordnung (EU) Nr. 231/2012 der Kommission – Spezifikationen für zugelassene Lebensmittelzusatzstoffe",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Stearoyl Lactylates",
+  "description": "Ein Paar emulgierender Zusatzstoffe, die die Teigbeschaffenheit und Textur beeinflussen: Natriumstearoyl-2-lactylat (E481) und Calciumsstearoyl-2-lactylat (E482)."
 }

@@ -1,28 +1,28 @@
 {
-  "name": "Propylene Glycol Esters of Fatty Acids",
-  "title": "Propylene Glycol Esters of Fatty Acids",
-  "description": "An emulsifying and texturising additive consisting of esters of propane-1,2-diol (propylene glycol) with fatty acids, identified in the EU as E477.",
-  "what_is": "An emulsifying and texturising additive consisting of esters of propane-1,2-diol (propylene glycol) with fatty acids, identified in the EU as E477.",
-  "why_botia": "BOTIA flags E477 because the same additive may be declared using 'propylene glycol' or the systematic 'propane-1,2-diol' wording.",
-  "can_1": "Detect E477 and the principal propylene-glycol/propanediol ester names.",
-  "can_2": "Show the texture and E-number information layers.",
-  "cannot_1": "Determine fatty-acid composition, concentration or manufacturing feedstock from the ingredient list.",
-  "cannot_2": "Confuse E477 with free propylene glycol or with propylene glycol alginate (E405).",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "脂肪酸丙二醇酯",
   "e_code": "E477",
+  "aliases": "E477、INS 477、脂肪酸丙二醇酯、脂肪酸丙烷-1,2-二醇酯、丙二醇脂肪酸酯",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E477, INS 477, propylene glycol esters of fatty acids, propane-1,2-diol esters of fatty acids, propylene glycol fatty acid esters"
+  "what_is": "一种乳化剂和质构改良添加剂，由丙烷-1,2-二醇（丙二醇）与脂肪酸形成的酯组成，在EU中被标识为E477。",
+  "why_botia": "BOTIA标记E477，因为同一种添加剂可能被声明为“丙二醇”或系统名称“丙烷-1,2-二醇”。",
+  "can_1": "检测E477以及主要的丙二醇/丙二醇酯名称。",
+  "can_2": "显示质构和E-number信息层。",
+  "cannot_1": "无法从配料表中确定脂肪酸组成、浓度或生产原料。",
+  "cannot_2": "不要将E477与游离丙二醇或丙二醇藻酸酯（E405）混淆。",
+  "sources": [
+    {
+      "label": "法规（EC）No 1333/2008——食品添加剂联盟清单和使用条件",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "委员会法规（EU）No 231/2012——授权食品添加剂的规格",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "脂肪酸丙二醇酯",
+  "description": "一种乳化剂和质构改良添加剂，由丙烷-1,2-二醇（丙二醇）与脂肪酸形成的酯组成，在EU中被标识为E477。"
 }

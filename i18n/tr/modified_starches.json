@@ -1,28 +1,28 @@
 {
   "name": "Modified Starches",
-  "title": "Modified Starches",
-  "description": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "what_is": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "why_botia": "BOTIA groups these terms because labels may say modified starch or identify a specific modified-starch additive. The family name does not disclose the exact modification unless the label gives the specific name or code.",
-  "can_1": "Detect 'modified starch/modified food starch' and the listed specific modified-starch names and E-numbers.",
-  "can_2": "Show the texture and E-number layers while preserving the difference between a generic declaration and a specific additive.",
-  "cannot_1": "Identify the exact chemical modification when the label uses only 'modified starch'.",
-  "cannot_2": "Infer the botanical starch source or concentration unless it is separately declared.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E1404, E1410, E1412–E1414, E1420, E1422, E1440, E1442, E1450–E1452",
+  "aliases": "modifiye nişasta, modifiye gıda nişastası, kimyasal olarak modifiye nişasta, E1404, oksitlenmiş nişasta, E1410, mononişasta fosfat, E1412, distark fosfat, E1413, fosfatlanmış distark fosfat, E1414, asetillenmiş distark fosfat, E1420, asetillenmiş nişasta, E1422, asetillenmiş distark adipat, E1440, hidroksipropil nişasta, E1442, hidroksipropil distark fosfat, E1450, nişasta sodyum oktenil süksinat, E1451, asetillenmiş oksitlenmiş nişasta, asetillenmiş oksitlenmiş nişasta, E1452, nişasta alüminyum oktenil süksinat, nişasta alüminyum oktenil süksinat",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "modified starch, modified food starch, chemically modified starch, E1404, oxidised starch, oxidized starch, E1410, monostarch phosphate, E1412, distarch phosphate, E1413, phosphated distarch phosphate, E1414, acetylated distarch phosphate, E1420, acetylated starch, E1422, acetylated distarch adipate, E1440, hydroxypropyl starch, E1442, hydroxypropyl distarch phosphate, E1450, starch sodium octenyl succinate, E1451, acetylated oxidised starch, acetylated oxidized starch, E1452, starch aluminium octenyl succinate, starch aluminum octenyl succinate"
+  "what_is": "Koyulaştırma, stabilite, emülsifikasyon veya işleme direnci gibi fonksiyonel özelliklerini değiştirmek üzere kimyasal olarak modifiye edilmiş bir nişasta grubu. EU'de, izin verilen modifiye nişasta E-numaraları, tek bir genel “E1400s” kodu yerine ayrı ayrı girişler olarak belirtilmiştir.",
+  "why_botia": "BOTIA, bu terimleri bir grup altında toplar; zira etiketlerde “modifiye nişasta” ibaresi yer alabilir veya belirli bir modifiye nişasta katkı maddesi belirtilebilir. Etikette belirli bir isim veya kod bulunmadıkça, bu grup adı, yapılan modifikasyonun tam niteliğini ortaya koymaz.",
+  "can_1": "“Modifiye nişasta/modifiye gıda nişastası” ile listede belirtilen belirli modifiye nişasta isimlerini ve E numaralarını tespit edin.",
+  "can_2": "Genel bir beyan ile belirli bir katkı maddesi arasındaki farkı koruyarak, doku ve E-numarası katmanlarını gösterin.",
+  "cannot_1": "Etikette sadece “modifiye nişasta” ifadesi kullanıldığında, tam olarak hangi kimyasal modifikasyonun yapıldığını belirleyin.",
+  "cannot_2": "Ayrı olarak belirtilmediği sürece, bitkisel nişasta kaynağını veya konsantrasyonunu tahmin edin.",
+  "sources": [
+    {
+      "label": "(EC) Sayılı Yönetmelik No. 1333/2008 — Gıda katkı maddeleri için Birlik listesi ve kullanım koşulları",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "(EU) sayılı Komisyon Yönetmeliği No. 231/2012 — onaylanmış gıda katkı maddelerine ilişkin şartnameler",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Modified Starches",
+  "description": "Koyulaştırma, stabilite, emülsifikasyon veya işleme direnci gibi fonksiyonel özelliklerini değiştirmek üzere kimyasal olarak modifiye edilmiş bir nişasta grubu. EU'de, izin verilen modifiye nişasta E-numaraları, tek bir genel “E1400s” kodu yerine ayrı ayrı girişler olarak belirtilmiştir."
 }

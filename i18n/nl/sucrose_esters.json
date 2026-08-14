@@ -1,28 +1,28 @@
 {
-  "name": "Sucrose Esters & Sucroglycerides",
-  "title": "Sucrose Esters & Sucroglycerides",
-  "description": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "what_is": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "why_botia": "BOTIA groups E473–E474 because the original audit range E473–E475 crosses into a different family: E475 is polyglycerol esters of fatty acids and is covered separately. Keeping the range precise prevents one ingredient family from swallowing another.",
-  "can_1": "Detect E473, E474, sucrose esters of fatty acids and sucroglycerides.",
-  "can_2": "Show the texture and E-number context while keeping E475 in the polyglycerol-esters card.",
-  "cannot_1": "Determine concentration or the fatty-acid composition from the ingredient name.",
-  "cannot_2": "Classify E475 as a sucrose ester.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "Sucrose-esters & sucroglyceriden",
   "e_code": "E473–E474",
+  "aliases": "E473, E474, sucrose-esters, sucrose-esters van vetzuren, sucrose-vetzuuresters, sucroglyceriden",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E473, E474, sucrose esters, sucrose esters of fatty acids, sucrose fatty acid esters, sucroglycerides"
+  "what_is": "Een paar emulgator-/textuurgever-items in de huidige EU-lijst: sucrose-esters van vetzuren (E473) en sucroglyceriden (E474).",
+  "why_botia": "BOTIA groepeert E473–E474 omdat het oorspronkelijke audittraject E473–E475 een andere familie kruist: E475 is polyglycerol-esters van vetzuren en wordt apart behandeld. Het nauwkeurig houden van het traject voorkomt dat de ene ingrediëntenfamilie de andere opslokt.",
+  "can_1": "Detecteer E473, E474, sucrose-esters van vetzuren en sucroglyceriden.",
+  "can_2": "Toon de textuur- en E-nummercontext terwijl E475 in de kaart van polyglycerol-esters blijft.",
+  "cannot_1": "Bepaal de concentratie of de vetzuursamenstelling op basis van de ingrediëntnaam.",
+  "cannot_2": "Classificeer E475 als een sucrose-ester.",
+  "sources": [
+    {
+      "label": "Verordening (EC) nr. 1333/2008 — EU-lijst en gebruiksvoorwaarden voor levensmiddelenadditieven",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Verordening (EU) nr. 231/2012 — specificaties voor toegelaten levensmiddelenadditieven",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Sucrose-esters & sucroglyceriden",
+  "description": "Een paar emulgator-/textuurgever-items in de huidige EU-lijst: sucrose-esters van vetzuren (E473) en sucroglyceriden (E474)."
 }

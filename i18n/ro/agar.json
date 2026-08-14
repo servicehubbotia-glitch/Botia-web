@@ -1,28 +1,28 @@
 {
   "name": "Agar",
-  "title": "Agar",
-  "description": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "what_is": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "why_botia": "BOTIA flags E406 because labels may use agar, agar-agar or the E-number. The declaration identifies the texturising ingredient but not its amount or grade.",
-  "can_1": "Detect E406, agar and agar-agar when declared.",
-  "can_2": "Trigger texture and E-number information for the ingredient.",
-  "cannot_1": "Determine concentration, gel strength or raw-material species from the ingredient list.",
-  "cannot_2": "Treat the presence of an authorised texturiser as a risk signal by itself.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E406",
+  "aliases": "E406, INS 406, agar, agar-agar, agar agar",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E406, INS 406, agar, agar-agar, agar agar"
+  "what_is": "Un polizaharid derivat din alge marine, utilizat ca aditiv alimentar cu proprietăți de gelificare, îngroșare și stabilizare, identificat în EU ca E406.",
+  "why_botia": "BOTIA semnalează E406, deoarece pe etichete pot apărea termenii „agar”, „agar-agar” sau numărul E. Declarația identifică ingredientul care conferă textură, dar nu precizează cantitatea sau calitatea acestuia.",
+  "can_1": "Detectează E406, agar și agar-agar atunci când sunt declarate.",
+  "can_2": "Textura declanșatoare și informații privind numerele E pentru ingredientul respectiv.",
+  "cannot_1": "Determinați concentrația, gradul de gelificare sau tipul materiilor prime pe baza listei de ingrediente.",
+  "cannot_2": "Considerați prezența unui agent de texturare autorizat ca un semnal de risc în sine.",
+  "sources": [
+    {
+      "label": "Regulamentul (EC) nr. 1333/2008 — Lista comunitară și condițiile de utilizare a aditivilor alimentari",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Regulamentul Comisiei (EU) nr. 231/2012 — specificații privind aditivii alimentari autorizați",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Agar",
+  "description": "Un polizaharid derivat din alge marine, utilizat ca aditiv alimentar cu proprietăți de gelificare, îngroșare și stabilizare, identificat în EU ca E406."
 }

@@ -1,28 +1,28 @@
 {
   "name": "Modified Starches",
-  "title": "Modified Starches",
-  "description": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "what_is": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "why_botia": "BOTIA groups these terms because labels may say modified starch or identify a specific modified-starch additive. The family name does not disclose the exact modification unless the label gives the specific name or code.",
-  "can_1": "Detect 'modified starch/modified food starch' and the listed specific modified-starch names and E-numbers.",
-  "can_2": "Show the texture and E-number layers while preserving the difference between a generic declaration and a specific additive.",
-  "cannot_1": "Identify the exact chemical modification when the label uses only 'modified starch'.",
-  "cannot_2": "Infer the botanical starch source or concentration unless it is separately declared.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E1404, E1410, E1412–E1414, E1420, E1422, E1440, E1442, E1450–E1452",
+  "aliases": "amidon modifié, amidon alimentaire modifié, amidon modifié chimiquement, E1404, amidon oxydé, E1410, phosphate de monoamidon, E1412, phosphate de diamidon, E1413, phosphate de distarch phosphaté, E1414, phosphate de distarch acétylé, E1420, amidon acétylé, E1422, adipate de distarch acétylé, E1440, amidon hydroxypropylique, E1442, phosphate de distarch hydroxypropylique, E1450, octénylsuccinate de sodium d'amidon, E1451, amidon oxydé acétylé, amidon oxydé acétylé, E1452, octénylsuccinate d'amidon et d'aluminium, octénylsuccinate d'amidon et d'aluminium",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "modified starch, modified food starch, chemically modified starch, E1404, oxidised starch, oxidized starch, E1410, monostarch phosphate, E1412, distarch phosphate, E1413, phosphated distarch phosphate, E1414, acetylated distarch phosphate, E1420, acetylated starch, E1422, acetylated distarch adipate, E1440, hydroxypropyl starch, E1442, hydroxypropyl distarch phosphate, E1450, starch sodium octenyl succinate, E1451, acetylated oxidised starch, acetylated oxidized starch, E1452, starch aluminium octenyl succinate, starch aluminum octenyl succinate"
+  "what_is": "Famille d'amidons modifiés chimiquement afin d'en modifier les propriétés fonctionnelles, telles que le pouvoir épaississant, la stabilité, le pouvoir émulsifiant ou la résistance à la transformation. Dans la norme EU, les numéros E correspondant aux amidons modifiés autorisés sont des mentions spécifiques et non un code générique unique « E1400s ».",
+  "why_botia": "Le code BOTIA regroupe ces termes, car les étiquettes peuvent mentionner « amidon modifié » ou désigner un additif spécifique à base d'amidon modifié. Le nom de la famille ne précise pas la nature exacte de la modification, sauf si l'étiquette indique le nom ou le code spécifique.",
+  "can_1": "Détecter les mentions « amidon modifié / amidon alimentaire modifié » ainsi que les noms spécifiques d'amidons modifiés et les numéros E indiqués.",
+  "can_2": "Afficher les calques « texture » et « numéros E » tout en conservant la distinction entre une déclaration générique et un additif spécifique.",
+  "cannot_1": "Déterminez la modification chimique exacte lorsque l'étiquette mentionne uniquement « amidon modifié ».",
+  "cannot_2": "Déduire la source botanique de l'amidon ou sa concentration, sauf si celle-ci est indiquée séparément.",
+  "sources": [
+    {
+      "label": "Règlement (EC) n° 1333/2008 — Liste communautaire et conditions d'utilisation des additifs alimentaires",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Règlement (EU) n° 231/2012 de la Commission — cahiers des charges relatifs aux additifs alimentaires autorisés",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Modified Starches",
+  "description": "Famille d'amidons modifiés chimiquement afin d'en modifier les propriétés fonctionnelles, telles que le pouvoir épaississant, la stabilité, le pouvoir émulsifiant ou la résistance à la transformation. Dans la norme EU, les numéros E correspondant aux amidons modifiés autorisés sont des mentions spécifiques et non un code générique unique « E1400s »."
 }

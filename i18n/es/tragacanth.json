@@ -1,28 +1,28 @@
 {
   "name": "Tragacanto",
-  "title": "Tragacanto",
-  "description": "A plant gum obtained from Astragalus species and used as a thickener, stabiliser and emulsifying texturiser, identified in the EU as E413.",
-  "what_is": "A plant gum obtained from Astragalus species and used as a thickener, stabiliser and emulsifying texturiser, identified in the EU as E413.",
-  "why_botia": "BOTIA flags E413 because the same ingredient can appear as tragacanth, gum tragacanth or an E-number.",
-  "can_1": "Detect E413 and common tragacanth-gum names.",
-  "can_2": "Show the texture and E-number context for the declared gum.",
-  "cannot_1": "Determine the amount or botanical source species from the ingredient list.",
-  "cannot_2": "Infer a health effect from the presence of the gum alone.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E413",
+  "aliases": "E413, INS 413, tragacanto, goma tragacanto, goma de tragacanto",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E413, INS 413, tragacanth, gum tragacanth, tragacanth gum"
+  "what_is": "Una goma vegetal obtenida de especies de Astragalus y utilizada como espesante, estabilizante y texturizante emulsionante, identificada en el EU como E413.",
+  "why_botia": "BOTIA marca E413 porque el mismo ingrediente puede aparecer como tragacanto, goma tragacanto o un número E.",
+  "can_1": "Detectar E413 y nombres comunes de la goma tragacanto.",
+  "can_2": "Mostrar el contexto de textura y número E para la goma declarada.",
+  "cannot_1": "Determinar la cantidad o la especie botánica de origen a partir de la lista de ingredientes.",
+  "cannot_2": "Inferir un efecto sobre la salud a partir de la presencia de la goma por sí sola.",
+  "sources": [
+    {
+      "label": "Reglamento (EC) n.º 1333/2008 — Lista de la Unión y condiciones de uso de los aditivos alimentarios",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Reglamento (EU) n.º 231/2012 de la Comisión — especificaciones para aditivos alimentarios autorizados",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Tragacanto",
+  "description": "Una goma vegetal obtenida de especies de Astragalus y utilizada como espesante, estabilizante y texturizante emulsionante, identificada en el EU como E413."
 }

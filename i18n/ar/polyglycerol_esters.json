@@ -1,28 +1,28 @@
 {
-  "name": "Polyglycerol Esters & PGPR",
-  "title": "Polyglycerol Esters & PGPR",
-  "description": "A texture/emulsifier grouping covering polyglycerol esters of fatty acids (E475) and polyglycerol polyricinoleate, PGPR (E476).",
-  "what_is": "A texture/emulsifier grouping covering polyglycerol esters of fatty acids (E475) and polyglycerol polyricinoleate, PGPR (E476).",
-  "why_botia": "BOTIA groups these declarations because E475 and E476 share polyglycerol-based naming but are distinct additives. PGPR should not be confused with sucrose esters or with generic mono- and diglycerides.",
-  "can_1": "Detect E475, E476, polyglycerol esters and PGPR declarations.",
-  "can_2": "Show the texture and E-number context while preserving the distinction between E475 and E476.",
-  "cannot_1": "Determine concentration or exact ester composition from the ingredient list.",
-  "cannot_2": "Treat E475 and E476 as chemically identical.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "إسترات بولي جليسيرول & PGPR",
   "e_code": "E475, E476",
+  "aliases": "E475، E476، إسترات بولي جليسيرول للأحماض الدهنية، إسترات بولي جليسيرول للأحماض الدهنية، بولي جليسيرول بولي ريسينوليات، بولي جليسيرول بولي ريسينوليات PGPR، PGPR",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E475, E476, polyglycerol esters of fatty acids, polyglycerol fatty acid esters, polyglycerol polyricinoleate, polyglycerol polyricinoleate PGPR, PGPR"
+  "what_is": "مجموعة قوام/مستحلب تغطي إسترات بولي جليسيرول للأحماض الدهنية (E475) وبولي جليسيرول بولي ريسينوليات، PGPR (E476).",
+  "why_botia": "BOTIA يجمع هذه التصريحات لأن E475 وE476 يتشاركان في التسمية القائمة على بولي جليسيرول لكنهما إضافات متميزة. PGPR لا ينبغي الخلط بينها وبين إسترات السكروز أو مع الأحاديات والثنائيات العامة.",
+  "can_1": "كشف E475، E476، إسترات بولي جليسيرول وتصريحات PGPR.",
+  "can_2": "إظهار سياق القوام ورقم E مع الحفاظ على التمييز بين E475 وE476.",
+  "cannot_1": "تحديد التركيز أو التركيب الدقيق للإسترات من قائمة المكونات.",
+  "cannot_2": "معاملة E475 وE476 على أنهما متطابقان كيميائيًا.",
+  "sources": [
+    {
+      "label": "اللائحة (EC) رقم 1333/2008 — قائمة الاتحاد وشروط استخدام المضافات الغذائية",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "لائحة المفوضية (EU) رقم 231/2012 — مواصفات المضافات الغذائية المصرح بها",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "إسترات بولي جليسيرول & PGPR",
+  "description": "مجموعة قوام/مستحلب تغطي إسترات بولي جليسيرول للأحماض الدهنية (E475) وبولي جليسيرول بولي ريسينوليات، PGPR (E476)."
 }

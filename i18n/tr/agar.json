@@ -1,28 +1,28 @@
 {
   "name": "Agar",
-  "title": "Agar",
-  "description": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "what_is": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "why_botia": "BOTIA flags E406 because labels may use agar, agar-agar or the E-number. The declaration identifies the texturising ingredient but not its amount or grade.",
-  "can_1": "Detect E406, agar and agar-agar when declared.",
-  "can_2": "Trigger texture and E-number information for the ingredient.",
-  "cannot_1": "Determine concentration, gel strength or raw-material species from the ingredient list.",
-  "cannot_2": "Treat the presence of an authorised texturiser as a risk signal by itself.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E406",
+  "aliases": "E406, INS 406, agar, agar-agar, agar agar",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E406, INS 406, agar, agar-agar, agar agar"
+  "what_is": "Gıda katkı maddesi olarak jelleştirici, kıvam arttırıcı ve stabilizatör olarak kullanılan, deniz yosunundan elde edilen bir polisakkarit; EU'de E406 olarak tanımlanmıştır.",
+  "why_botia": "BOTIA, etiketlerde agar, agar-agar veya E numarası kullanılabileceği için E406’yi işaretlemektedir. Beyan, kıvam verici bileşeni belirtmekte ancak miktarını veya kalitesini belirtmemektedir.",
+  "can_1": "E406, agar ve agar-agar maddeleri beyan edildiğinde tespit edilmelidir.",
+  "can_2": "Bu bileşenin tetikleyici doku ve E-numarası bilgileri.",
+  "cannot_1": "İçerik listesinden konsantrasyonu, jel mukavemetini veya hammadde türlerini belirleyin.",
+  "cannot_2": "Onaylı bir kıvamlandırıcı maddesinin varlığını başlı başına bir risk işareti olarak değerlendirin.",
+  "sources": [
+    {
+      "label": "(EC) Sayılı Yönetmelik No. 1333/2008 — Gıda katkı maddeleri için Birlik listesi ve kullanım koşulları",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "(EU) sayılı Komisyon Yönetmeliği No. 231/2012 — onaylanmış gıda katkı maddelerine ilişkin şartnameler",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Agar",
+  "description": "Gıda katkı maddesi olarak jelleştirici, kıvam arttırıcı ve stabilizatör olarak kullanılan, deniz yosunundan elde edilen bir polisakkarit; EU'de E406 olarak tanımlanmıştır."
 }

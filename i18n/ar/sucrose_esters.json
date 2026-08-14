@@ -1,28 +1,28 @@
 {
-  "name": "Sucrose Esters & Sucroglycerides",
-  "title": "Sucrose Esters & Sucroglycerides",
-  "description": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "what_is": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "why_botia": "BOTIA groups E473–E474 because the original audit range E473–E475 crosses into a different family: E475 is polyglycerol esters of fatty acids and is covered separately. Keeping the range precise prevents one ingredient family from swallowing another.",
-  "can_1": "Detect E473, E474, sucrose esters of fatty acids and sucroglycerides.",
-  "can_2": "Show the texture and E-number context while keeping E475 in the polyglycerol-esters card.",
-  "cannot_1": "Determine concentration or the fatty-acid composition from the ingredient name.",
-  "cannot_2": "Classify E475 as a sucrose ester.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "استرات السكروز والسكروغليسيريدات",
   "e_code": "E473–E474",
+  "aliases": "E473, E474, استرات السكروز, استرات السكروز للأحماض الدهنية, استرات الأحماض الدهنية للسكروز, سكروغليسيريدات",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E473, E474, sucrose esters, sucrose esters of fatty acids, sucrose fatty acid esters, sucroglycerides"
+  "what_is": "زوج من المدخلات لمواد الاستحلاب/محسنات القوام في قائمة EU الحالية: استرات السكروز للأحماض الدهنية (E473) والسكروغليسيريدات (E474).",
+  "why_botia": "BOTIA يجمع E473–E474 لأن نطاق التدقيق الأصلي E473–E475 يتقاطع مع عائلة مختلفة: E475 هو استرات بولي جليسيرول للأحماض الدهنية ويتم تغطيته بشكل منفصل. الحفاظ على دقة النطاق يمنع عائلة مكونات من ابتلاع أخرى.",
+  "can_1": "كشف E473، E474، استرات السكروز للأحماض الدهنية والسكروغليسيريدات.",
+  "can_2": "إظهار سياق القوام ورقم E مع إبقاء E475 في بطاقة استرات البولي جليسيرول.",
+  "cannot_1": "تحديد التركيز أو تكوين الأحماض الدهنية من اسم المكون.",
+  "cannot_2": "تصنيف E475 كاستر سكروز.",
+  "sources": [
+    {
+      "label": "اللائحة (EC) رقم 1333/2008 — قائمة الاتحاد وشروط استخدام المضافات الغذائية",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "لائحة المفوضية (EU) رقم 231/2012 — المواصفات للمضافات الغذائية المصرح بها",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "استرات السكروز والسكروغليسيريدات",
+  "description": "زوج من المدخلات لمواد الاستحلاب/محسنات القوام في قائمة EU الحالية: استرات السكروز للأحماض الدهنية (E473) والسكروغليسيريدات (E474)."
 }

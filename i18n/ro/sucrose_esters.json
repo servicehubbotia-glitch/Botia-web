@@ -1,28 +1,28 @@
 {
-  "name": "Sucrose Esters & Sucroglycerides",
-  "title": "Sucrose Esters & Sucroglycerides",
-  "description": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "what_is": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "why_botia": "BOTIA groups E473–E474 because the original audit range E473–E475 crosses into a different family: E475 is polyglycerol esters of fatty acids and is covered separately. Keeping the range precise prevents one ingredient family from swallowing another.",
-  "can_1": "Detect E473, E474, sucrose esters of fatty acids and sucroglycerides.",
-  "can_2": "Show the texture and E-number context while keeping E475 in the polyglycerol-esters card.",
-  "cannot_1": "Determine concentration or the fatty-acid composition from the ingredient name.",
-  "cannot_2": "Classify E475 as a sucrose ester.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "Esteri de zaharoză și sucrogliceride",
   "e_code": "E473–E474",
+  "aliases": "E473, E474, esteri de zaharoză, esteri de zaharoză ai acizilor grași, esteri de zaharoză ai acizilor grași, sucrogliceride",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E473, E474, sucrose esters, sucrose esters of fatty acids, sucrose fatty acid esters, sucroglycerides"
+  "what_is": "O pereche de intrări de emulgator/texturizant în lista actuală EU: esteri de zaharoză ai acizilor grași (E473) și sucrogliceride (E474).",
+  "why_botia": "BOTIA grupează E473–E474 deoarece intervalul original de audit E473–E475 traversează o familie diferită: E475 este esteri de poliglicerol ai acizilor grași și este tratat separat. Păstrarea intervalului precis previne ca o familie de ingrediente să o înghită pe alta.",
+  "can_1": "Detectează E473, E474, esteri de zaharoză ai acizilor grași și sucrogliceride.",
+  "can_2": "Arată contextul texturii și numărul E, păstrând în același timp E475 în fișa esterilor de poliglicerol.",
+  "cannot_1": "Determină concentrația sau compoziția de acizi grași din numele ingredientului.",
+  "cannot_2": "Clasifică E475 ca ester de zaharoză.",
+  "sources": [
+    {
+      "label": "Regulamentul (EC) nr. 1333/2008 — lista Uniunii și condițiile de utilizare pentru aditivii alimentari",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Regulamentul Comisiei (EU) nr. 231/2012 — specificații pentru aditivii alimentari autorizați",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Esteri de zaharoză și sucrogliceride",
+  "description": "O pereche de intrări de emulgator/texturizant în lista actuală EU: esteri de zaharoză ai acizilor grași (E473) și sucrogliceride (E474)."
 }

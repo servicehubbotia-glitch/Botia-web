@@ -1,28 +1,28 @@
 {
   "name": "Alginates",
-  "title": "Alginates",
-  "description": "A family of alginic-acid and alginate additives used for gelling, thickening, stabilising and related texture functions. The EU family spans E400–E405, including propylene glycol alginate at E405.",
-  "what_is": "A family of alginic-acid and alginate additives used for gelling, thickening, stabilising and related texture functions. The EU family spans E400–E405, including propylene glycol alginate at E405.",
-  "why_botia": "BOTIA groups these terms because labels may use the individual alginate name or E-number. Their technological functions and legal maximum levels depend on the specific additive and food category.",
-  "can_1": "Detect E400–E405 and the corresponding alginic-acid/alginate names.",
-  "can_2": "Show the texture and E-number context for the declared family member.",
-  "cannot_1": "Determine the concentration or exact technological function in the product from the name alone.",
-  "cannot_2": "Assume that all alginates are used at the same level or for the same function.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E400–E405",
+  "aliases": "E400, E401, E402, E403, E404, E405, acide alginique, alginate de sodium, alginate de potassium, alginate d'ammonium, alginate de calcium, alginate de propane-1,2-diol, alginate de propylène glycol, alginate d'hydroxypropyle",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E400, E401, E402, E403, E404, E405, alginic acid, sodium alginate, potassium alginate, ammonium alginate, calcium alginate, propane-1,2-diol alginate, propylene glycol alginate, hydroxypropyl alginate"
+  "what_is": "Une gamme d'additifs à base d'acide alginique et d'alginate utilisés pour la gélification, l'épaississement, la stabilisation et d'autres fonctions liées à la texture. La gamme EU comprend le E400–E405, ainsi que l'alginate de propylène glycol, référencé sous le code E405.",
+  "why_botia": "Le code BOTIA regroupe ces termes, car les étiquettes peuvent mentionner soit le nom spécifique de l'alginate, soit son numéro E. Leurs fonctions technologiques et leurs teneurs maximales autorisées dépendent de l'additif concerné et de la catégorie d'aliments.",
+  "can_1": "Identifier le code E400–E405 et les noms correspondants de l'acide alginique et de l'alginate.",
+  "can_2": "Afficher les informations relatives à la texture et aux numéros E pour le produit déclaré de cette gamme.",
+  "cannot_1": "Déterminer la concentration ou la fonction technique exacte du produit à partir de son nom uniquement.",
+  "cannot_2": "Partons du principe que tous les alginates sont utilisés à la même dose ou pour la même fonction.",
+  "sources": [
+    {
+      "label": "Règlement (EC) n° 1333/2008 — Liste communautaire et conditions d'utilisation des additifs alimentaires",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Règlement (EU) n° 231/2012 de la Commission — cahiers des charges relatifs aux additifs alimentaires autorisés",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Alginates",
+  "description": "Une gamme d'additifs à base d'acide alginique et d'alginate utilisés pour la gélification, l'épaississement, la stabilisation et d'autres fonctions liées à la texture. La gamme EU comprend le E400–E405, ainsi que l'alginate de propylène glycol, référencé sous le code E405."
 }

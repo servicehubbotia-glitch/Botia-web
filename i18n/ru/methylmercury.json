@@ -1,27 +1,27 @@
 {
   "name": "Метилртуть",
   "e_code": null,
-  "aliases": "methylmercury, methyl mercury, organic mercury, total mercury, inorganic mercury, mercury, metilmercurio",
+  "aliases": "метилртуть, метилртуть, органическая ртуть, общая ртуть, неорганическая ртуть, ртуть, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Mercury occurs in different chemical forms. Methylmercury is an organic form that bioaccumulates in aquatic food chains; inorganic mercury compounds are a different class. 'Total mercury' is an analytical measurement covering mercury across forms and is not a synonym for methylmercury.",
-  "why_botia": "BOTIA shows methylmercury context when a detected fish ingredient belongs to a relevant exposure category. WHO notes that people are mainly exposed to methylmercury through fish and shellfish and distinguishes organic, inorganic and elemental mercury forms. Adding 'total mercury' and 'inorganic mercury' to the explanation prevents analytical results from being misread as though every mercury measurement were methylmercury.",
-  "can_1": "Detect fish ingredients that trigger BOTIA's mercury-context layer and explain the distinction between methylmercury, inorganic mercury and total mercury terminology.",
-  "can_2": "Provide pregnancy and child-development context from official sources without pretending the ingredient list reports a mercury concentration.",
-  "cannot_1": "Quantify total mercury, methylmercury or inorganic mercury in the scanned food.",
-  "cannot_2": "Convert a total-mercury laboratory result into an exact methylmercury concentration without analytical speciation or a validated conversion basis.",
+  "what_is": "Ртуть встречается в различных химических формах. Метилртуть — это органическая форма, которая накапливается в водных пищевых цепях; неорганические соединения ртути относятся к другому классу. «Общая ртуть» — это аналитический показатель, охватывающий ртуть во всех формах, и не является синонимом метилртути.",
+  "why_botia": "BOTIA указывает на контекст метилртути, когда обнаруженный ингредиент рыбного происхождения относится к соответствующей категории воздействия. WHO отмечает, что люди подвергаются воздействию метилртути в основном через рыбу и моллюсков, а также проводит различие между органической, неорганической и элементарной формами ртути. Добавление в пояснение терминов «общая ртуть» и «неорганическая ртуть» позволяет избежать неверного толкования результатов анализа, при котором каждое измерение содержания ртути может быть ошибочно интерпретировано как содержание метилртути.",
+  "can_1": "Выявите рыбные ингредиенты, которые активируют слой «ртуть» в BOTIA, и объясните различие между терминами «метилртуть», «неорганическая ртуть» и «общая ртуть».",
+  "can_2": "Приведите информацию о беременности и развитии ребенка из официальных источников, не создавая при этом впечатления, что в списке ингредиентов указана концентрация ртути.",
+  "cannot_1": "Определите содержание общей ртути, метилртути или неорганической ртути в отсканированных пищевых продуктах.",
+  "cannot_2": "Преобразовать лабораторный результат, отражающий общее содержание ртути, в точную концентрацию метилртути без аналитической спецификации или валидированной базы для преобразования.",
   "sources": [
     {
-      "label": "WHO — Mercury and health",
+      "label": "WHO — Ртуть и здоровье",
       "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
     },
     {
-      "label": "EFSA — Metals as contaminants in food",
+      "label": "EFSA — Металлы как загрязнители в пищевых продуктах",
       "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
     }
   ],
-  "title": "Methylmercury",
-  "description": "Methylmercury in fish exposure context, with clear distinction from total and inorganic mercury."
+  "title": "Метилртуть",
+  "description": "Метилртуть в контексте воздействия рыбы, с четким разграничением от общей и неорганической ртути."
 }

@@ -1,28 +1,28 @@
 {
-  "name": "Sucrose Esters & Sucroglycerides",
-  "title": "Sucrose Esters & Sucroglycerides",
-  "description": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "what_is": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "why_botia": "BOTIA groups E473–E474 because the original audit range E473–E475 crosses into a different family: E475 is polyglycerol esters of fatty acids and is covered separately. Keeping the range precise prevents one ingredient family from swallowing another.",
-  "can_1": "Detect E473, E474, sucrose esters of fatty acids and sucroglycerides.",
-  "can_2": "Show the texture and E-number context while keeping E475 in the polyglycerol-esters card.",
-  "cannot_1": "Determine concentration or the fatty-acid composition from the ingredient name.",
-  "cannot_2": "Classify E475 as a sucrose ester.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "Sukrosa Ester & Sukrogliserida",
   "e_code": "E473–E474",
+  "aliases": "E473, E474, sukrosa ester, sukrosa ester asam lemak, sukrosa ester asam lemak, sukrogliserida",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E473, E474, sucrose esters, sucrose esters of fatty acids, sucrose fatty acid esters, sucroglycerides"
+  "what_is": "Sepasang entri pengemulsi/teksturisator dalam daftar EU saat ini: sukrosa ester asam lemak (E473) dan sukrogliserida (E474).",
+  "why_botia": "BOTIA mengelompokkan E473–E474 karena rentang audit asli E473–E475 melintasi ke famili yang berbeda: E475 adalah poligliserol ester asam lemak dan dicakup secara terpisah. Menjaga rentang tetap presisi mencegah satu famili bahan menelan famili lainnya.",
+  "can_1": "Mendeteksi E473, E474, sukrosa ester asam lemak, dan sukrogliserida.",
+  "can_2": "Menampilkan konteks tekstur dan nomor E sambil menjaga E475 tetap di kartu poligliserol ester.",
+  "cannot_1": "Menentukan konsentrasi atau komposisi asam lemak dari nama bahan.",
+  "cannot_2": "Mengklasifikasikan E475 sebagai sukrosa ester.",
+  "sources": [
+    {
+      "label": "Peraturan (EC) No 1333/2008 — Daftar Uni dan ketentuan penggunaan untuk aditif makanan",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Peraturan Komisi (EU) No 231/2012 — spesifikasi untuk aditif makanan yang diizinkan",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Sukrosa Ester & Sukrogliserida",
+  "description": "Sepasang entri pengemulsi/teksturisator dalam daftar EU saat ini: sukrosa ester asam lemak (E473) dan sukrogliserida (E474)."
 }

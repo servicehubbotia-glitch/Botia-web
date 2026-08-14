@@ -1,28 +1,28 @@
 {
   "name": "Modified Starches",
-  "title": "Modified Starches",
-  "description": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "what_is": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "why_botia": "BOTIA groups these terms because labels may say modified starch or identify a specific modified-starch additive. The family name does not disclose the exact modification unless the label gives the specific name or code.",
-  "can_1": "Detect 'modified starch/modified food starch' and the listed specific modified-starch names and E-numbers.",
-  "can_2": "Show the texture and E-number layers while preserving the difference between a generic declaration and a specific additive.",
-  "cannot_1": "Identify the exact chemical modification when the label uses only 'modified starch'.",
-  "cannot_2": "Infer the botanical starch source or concentration unless it is separately declared.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E1404, E1410, E1412–E1414, E1420, E1422, E1440, E1442, E1450–E1452",
+  "aliases": "almidón modificado, almidón alimentario modificado, almidón modificado químicamente, E1404, almidón oxidado, almidón oxidado, E1410, fosfato de monoalmidón, E1412, fosfato de dialmidón, E1413, fosfato de distarch fosfatado, E1414, fosfato de distarch acetilado, E1420, almidón acetilado, E1422, adipato de distarch acetilado, E1440, almidón hidroxipropílico, E1442, fosfato de distarch hidroxipropílico, E1450, octenilsuccinato sódico de almidón, E1451, almidón oxidado acetilado, almidón oxidado acetilado, E1452, octenilsuccinato de almidón y aluminio, octenilsuccinato de almidón y aluminio",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "modified starch, modified food starch, chemically modified starch, E1404, oxidised starch, oxidized starch, E1410, monostarch phosphate, E1412, distarch phosphate, E1413, phosphated distarch phosphate, E1414, acetylated distarch phosphate, E1420, acetylated starch, E1422, acetylated distarch adipate, E1440, hydroxypropyl starch, E1442, hydroxypropyl distarch phosphate, E1450, starch sodium octenyl succinate, E1451, acetylated oxidised starch, acetylated oxidized starch, E1452, starch aluminium octenyl succinate, starch aluminum octenyl succinate"
+  "what_is": "Familia de almidones modificados químicamente para alterar propiedades funcionales como el espesamiento, la estabilidad, la emulsificación o la resistencia al procesamiento. En el EU, los números E de almidones modificados autorizados son entradas específicas, en lugar de un único código genérico «E1400s».",
+  "why_botia": "BOTIA agrupa estos términos porque las etiquetas pueden indicar «almidón modificado» o identificar un aditivo específico a base de almidón modificado. El nombre de la familia no revela la modificación exacta, a menos que la etiqueta indique el nombre o el código específico.",
+  "can_1": "Detectar «almidón modificado/almidón alimentario modificado», así como los nombres específicos de almidones modificados y los números E que figuran en la lista.",
+  "can_2": "Mostrar las capas de textura y números E, conservando al mismo tiempo la diferencia entre una declaración genérica y un aditivo específico.",
+  "cannot_1": "Identifica la modificación química exacta cuando en la etiqueta solo figure «almidón modificado».",
+  "cannot_2": "Deducir la fuente botánica del almidón o su concentración, a menos que se indique por separado.",
+  "sources": [
+    {
+      "label": "Reglamento (EC) n.º 1333/2008 — Lista de la Unión y condiciones de uso de los aditivos alimentarios",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Reglamento (EU) de la Comisión n.º 231/2012 — especificaciones de los aditivos alimentarios autorizados",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Modified Starches",
+  "description": "Familia de almidones modificados químicamente para alterar propiedades funcionales como el espesamiento, la estabilidad, la emulsificación o la resistencia al procesamiento. En el EU, los números E de almidones modificados autorizados son entradas específicas, en lugar de un único código genérico «E1400s»."
 }

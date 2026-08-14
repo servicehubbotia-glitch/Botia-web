@@ -1,28 +1,28 @@
 {
   "name": "Propylene Glycol Esters of Fatty Acids",
-  "title": "Propylene Glycol Esters of Fatty Acids",
-  "description": "An emulsifying and texturising additive consisting of esters of propane-1,2-diol (propylene glycol) with fatty acids, identified in the EU as E477.",
-  "what_is": "An emulsifying and texturising additive consisting of esters of propane-1,2-diol (propylene glycol) with fatty acids, identified in the EU as E477.",
-  "why_botia": "BOTIA flags E477 because the same additive may be declared using 'propylene glycol' or the systematic 'propane-1,2-diol' wording.",
-  "can_1": "Detect E477 and the principal propylene-glycol/propanediol ester names.",
-  "can_2": "Show the texture and E-number information layers.",
-  "cannot_1": "Determine fatty-acid composition, concentration or manufacturing feedstock from the ingredient list.",
-  "cannot_2": "Confuse E477 with free propylene glycol or with propylene glycol alginate (E405).",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E477",
+  "aliases": "E477, INS 477, ésteres de propilenoglicol de ácidos gordos, ésteres de propano-1,2-diol de ácidos gordos, ésteres de propilenoglicol de ácidos gordos",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E477, INS 477, propylene glycol esters of fatty acids, propane-1,2-diol esters of fatty acids, propylene glycol fatty acid esters"
+  "what_is": "Um aditivo emulsionante e texturizante constituído por ésteres de propano-1,2-diol (propilenoglicol) com ácidos gordos, identificado no EU como E477.",
+  "why_botia": "O código BOTIA assinala o código E477, uma vez que o mesmo aditivo pode ser declarado utilizando a denominação «propilenoglicol» ou a denominação sistemática «propano-1,2-diol».",
+  "can_1": "Detetar o E477 e os principais nomes de ésteres de propilenoglicol/propanodiol.",
+  "can_2": "Mostrar as camadas de informação sobre a textura e os números E.",
+  "cannot_1": "Determine a composição em ácidos gordos, a concentração ou a matéria-prima de fabrico a partir da lista de ingredientes.",
+  "cannot_2": "Não confundir o E477 com propilenoglicol puro nem com alginato de propilenoglicol (E405).",
+  "sources": [
+    {
+      "label": "Regulamento (EC) n.º 1333/2008 — Lista da União e condições de utilização dos aditivos alimentares",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Regulamento da Comissão (EU) n.º 231/2012 — especificações relativas aos aditivos alimentares autorizados",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Propylene Glycol Esters of Fatty Acids",
+  "description": "Um aditivo emulsionante e texturizante constituído por ésteres de propano-1,2-diol (propilenoglicol) com ácidos gordos, identificado no EU como E477."
 }

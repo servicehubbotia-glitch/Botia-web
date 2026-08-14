@@ -1,28 +1,28 @@
 {
   "name": "Pectinen",
-  "title": "Pectines",
-  "description": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "what_is": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "why_botia": "BOTIA groups pectin declarations because labels can use the generic name, subtype or E-number. The ingredient name does not reveal degree of esterification, amidation or concentration unless separately stated.",
-  "can_1": "Detect E440, pectin, pectins and the common amidated/non-amidated subtype names.",
-  "can_2": "Show the texture and E-number information layers.",
-  "cannot_1": "Determine the exact pectin subtype or formulation when only 'pectin' is declared.",
-  "cannot_2": "Calculate the amount present from ingredient order alone.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E440",
+  "aliases": "E440, E440(i), E440(ii), INS 440, pectine, pectines, niet-geamideerde pectine, geamideerde pectine, geamideerde pectines",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E440, E440(i), E440(ii), INS 440, pectin, pectins, non-amidated pectin, amidated pectin, amidated pectins"
+  "what_is": "Een familie van uit planten afkomstige polysaccharide-gelvormers en stabilisatoren, waaronder niet-geamideerde en geamideerde pectines, gegroepeerd onder E440.",
+  "why_botia": "BOTIA groepeert vermeldingen van pectine, omdat op etiketten de generieke naam, het subtype of het E-nummer kan worden gebruikt. De naam van het ingrediënt geeft geen informatie over de mate van verestering, amidering of concentratie, tenzij dit afzonderlijk wordt vermeld.",
+  "can_1": "Detecteer E440, pectine, pectines en de gangbare benamingen van de geamideerde en niet-geamideerde subtypes.",
+  "can_2": "Geef de lagen met informatie over de textuur en de E-nummers weer.",
+  "cannot_1": "Bepaal het exacte subtype of de exacte samenstelling van de pectine wanneer alleen 'pectine' wordt vermeld.",
+  "cannot_2": "Bereken de aanwezige hoeveelheid uitsluitend op basis van de bestelling van de ingrediënten.",
+  "sources": [
+    {
+      "label": "Verordening (EC) nr. 1333/2008 — EU-lijst en gebruiksvoorwaarden voor levensmiddelenadditieven",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Verordening (EU) nr. 231/2012 van de Commissie — specificaties voor toegestane levensmiddelenadditieven",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Pectinen",
+  "description": "Een familie van uit planten afkomstige polysaccharide-gelvormers en stabilisatoren, waaronder niet-geamideerde en geamideerde pectines, gegroepeerd onder E440."
 }

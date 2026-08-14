@@ -1,28 +1,28 @@
 {
   "name": "Propylene Glycol Esters of Fatty Acids",
-  "title": "Propylene Glycol Esters of Fatty Acids",
-  "description": "An emulsifying and texturising additive consisting of esters of propane-1,2-diol (propylene glycol) with fatty acids, identified in the EU as E477.",
-  "what_is": "An emulsifying and texturising additive consisting of esters of propane-1,2-diol (propylene glycol) with fatty acids, identified in the EU as E477.",
-  "why_botia": "BOTIA flags E477 because the same additive may be declared using 'propylene glycol' or the systematic 'propane-1,2-diol' wording.",
-  "can_1": "Detect E477 and the principal propylene-glycol/propanediol ester names.",
-  "can_2": "Show the texture and E-number information layers.",
-  "cannot_1": "Determine fatty-acid composition, concentration or manufacturing feedstock from the ingredient list.",
-  "cannot_2": "Confuse E477 with free propylene glycol or with propylene glycol alginate (E405).",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E477",
+  "aliases": "E477, INS 477, yağ asitlerinin propilen glikol esterleri, yağ asitlerinin propan-1,2-diol esterleri, propilen glikol yağ asidi esterleri",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E477, INS 477, propylene glycol esters of fatty acids, propane-1,2-diol esters of fatty acids, propylene glycol fatty acid esters"
+  "what_is": "EU'de E477 olarak tanımlanan, propan-1,2-diol (propilen glikol) ile yağ asitlerinin esterlerinden oluşan bir emülgatör ve kıvam verici katkı maddesi.",
+  "why_botia": "BOTIA, E477’yi işaretler; çünkü aynı katkı maddesi, “propilen glikol” veya sistematik adı olan “propan-1,2-diol” ifadesiyle beyan edilebilir.",
+  "can_1": "E477’yi ve başlıca propilen glikol/propandiol esterlerini tespit edin.",
+  "can_2": "Doku ve E-numarası bilgi katmanlarını gösterin.",
+  "cannot_1": "İçerik listesinden yağ asidi bileşimini, konsantrasyonunu veya üretim hammaddesini belirleyin.",
+  "cannot_2": "E477 ürününü, serbest propilen glikol ile veya propilen glikol aljinat (E405) ile karıştırmayınız.",
+  "sources": [
+    {
+      "label": "(EC) Sayılı Yönetmelik No. 1333/2008 — Gıda katkı maddeleri için Birlik listesi ve kullanım koşulları",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "(EU) sayılı Komisyon Yönetmeliği No. 231/2012 — onaylanmış gıda katkı maddelerine ilişkin şartnameler",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Propylene Glycol Esters of Fatty Acids",
+  "description": "EU'de E477 olarak tanımlanan, propan-1,2-diol (propilen glikol) ile yağ asitlerinin esterlerinden oluşan bir emülgatör ve kıvam verici katkı maddesi."
 }

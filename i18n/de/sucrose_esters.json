@@ -1,28 +1,28 @@
 {
-  "name": "Sucrose Esters & Sucroglycerides",
-  "title": "Sucrose Esters & Sucroglycerides",
-  "description": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "what_is": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "why_botia": "BOTIA groups E473–E474 because the original audit range E473–E475 crosses into a different family: E475 is polyglycerol esters of fatty acids and is covered separately. Keeping the range precise prevents one ingredient family from swallowing another.",
-  "can_1": "Detect E473, E474, sucrose esters of fatty acids and sucroglycerides.",
-  "can_2": "Show the texture and E-number context while keeping E475 in the polyglycerol-esters card.",
-  "cannot_1": "Determine concentration or the fatty-acid composition from the ingredient name.",
-  "cannot_2": "Classify E475 as a sucrose ester.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "Zuckerester & Sucroglyceride",
   "e_code": "E473–E474",
+  "aliases": "E473, E474, Zuckerester, Zuckerester von Fettsäuren, Saccharose-Fettsäureester, Sucroglyceride",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E473, E474, sucrose esters, sucrose esters of fatty acids, sucrose fatty acid esters, sucroglycerides"
+  "what_is": "Ein Paar von Emulgator/Texturgeber-Einträgen in der aktuellen EU-Liste: Zuckerester von Fettsäuren (E473) und Sucroglyceride (E474).",
+  "why_botia": "BOTIA gruppiert E473–E474, weil der ursprüngliche Prüfbereich E473–E475 in eine andere Familie übergeht: E475 sind Polyglycerinester von Fettsäuren und werden separat abgedeckt. Die präzise Bereichsangabe verhindert, dass eine Zutatenfamilie eine andere verschluckt.",
+  "can_1": "Erkennt E473, E474, Zuckerester von Fettsäuren und Sucroglyceride.",
+  "can_2": "Zeigt den Textur- und E-Nummer-Kontext, während E475 in der Karte für Polyglycerinester bleibt.",
+  "cannot_1": "Bestimmt weder die Konzentration noch die Fettsäurezusammensetzung aus dem Zutatennamen.",
+  "cannot_2": "Klassifiziert E475 nicht als Zuckerester.",
+  "sources": [
+    {
+      "label": "Verordnung (EC) Nr. 1333/2008 — Unionsliste und Verwendungsbedingungen für Lebensmittelzusatzstoffe",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Verordnung (EU) Nr. 231/2012 — Spezifikationen für zugelassene Lebensmittelzusatzstoffe",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Zuckerester & Sucroglyceride",
+  "description": "Ein Paar von Emulgator/Texturgeber-Einträgen in der aktuellen EU-Liste: Zuckerester von Fettsäuren (E473) und Sucroglyceride (E474)."
 }

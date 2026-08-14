@@ -1,28 +1,28 @@
 {
   "name": "果胶",
-  "title": "果胶",
-  "description": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "what_is": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "why_botia": "BOTIA groups pectin declarations because labels can use the generic name, subtype or E-number. The ingredient name does not reveal degree of esterification, amidation or concentration unless separately stated.",
-  "can_1": "Detect E440, pectin, pectins and the common amidated/non-amidated subtype names.",
-  "can_2": "Show the texture and E-number information layers.",
-  "cannot_1": "Determine the exact pectin subtype or formulation when only 'pectin' is declared.",
-  "cannot_2": "Calculate the amount present from ingredient order alone.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E440",
+  "aliases": "E440, E440(i), E440(ii), INS 440, 果胶, 果胶类, 非酰胺化果胶, 酰胺化果胶, 酰胺化果胶类",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E440, E440(i), E440(ii), INS 440, pectin, pectins, non-amidated pectin, amidated pectin, amidated pectins"
+  "what_is": "一类植物源性多糖胶凝剂和稳定剂，包括非酰胺化和酰胺化果胶，归入E440。",
+  "why_botia": "BOTIA 将果胶声明归为一组，因为标签可以使用通用名称、亚型或E编号。成分名称不会揭示酯化度、酰胺化或浓度，除非单独说明。",
+  "can_1": "检测E440、pectin、pectins以及常见的酰胺化/非酰胺化亚型名称。",
+  "can_2": "显示质地和E编号信息层。",
+  "cannot_1": "当仅声明'pectin'时，无法确定确切的果胶亚型或配方。",
+  "cannot_2": "仅凭成分顺序无法计算存在的量。",
+  "sources": [
+    {
+      "label": "法规 (EC) 第 1333/2008 号 — 食品添加剂联盟清单及使用条件",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "委员会法规 (EU) 第 231/2012 号 — 授权食品添加剂的规格",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "果胶",
+  "description": "一类植物源性多糖胶凝剂和稳定剂，包括非酰胺化和酰胺化果胶，归入E440。"
 }

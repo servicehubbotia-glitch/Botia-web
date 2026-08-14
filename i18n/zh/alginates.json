@@ -1,28 +1,28 @@
 {
-  "name": "海藻酸盐",
-  "title": "海藻酸盐",
-  "description": "A family of alginic-acid and alginate additives used for gelling, thickening, stabilising and related texture functions. The EU family spans E400–E405, including propylene glycol alginate at E405.",
-  "what_is": "A family of alginic-acid and alginate additives used for gelling, thickening, stabilising and related texture functions. The EU family spans E400–E405, including propylene glycol alginate at E405.",
-  "why_botia": "BOTIA groups these terms because labels may use the individual alginate name or E-number. Their technological functions and legal maximum levels depend on the specific additive and food category.",
-  "can_1": "Detect E400–E405 and the corresponding alginic-acid/alginate names.",
-  "can_2": "Show the texture and E-number context for the declared family member.",
-  "cannot_1": "Determine the concentration or exact technological function in the product from the name alone.",
-  "cannot_2": "Assume that all alginates are used at the same level or for the same function.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "藻酸盐",
   "e_code": "E400–E405",
+  "aliases": "E400, E401, E402, E403, E404, E405, 藻酸, 海藻酸钠, 海藻酸钾, 海藻酸铵, 海藻酸钙, 1,2-丙二醇藻酸酯, 藻酸丙二醇酯, 羟丙基藻酸酯",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E400, E401, E402, E403, E404, E405, alginic acid, sodium alginate, potassium alginate, ammonium alginate, calcium alginate, propane-1,2-diol alginate, propylene glycol alginate, hydroxypropyl alginate"
+  "what_is": "一族用于胶凝、增稠、稳定及相关质构功能的藻酸和藻酸盐添加剂。EU 族涵盖 E400–E405，包括 E405 处的藻酸丙二醇酯。",
+  "why_botia": "BOTIA 将这些术语归为一组，因为标签可能使用单个藻酸盐名称或 E 编号。其技术功能和法定最大使用量取决于具体添加剂和食品类别。",
+  "can_1": "检测 E400–E405 及相应的藻酸/藻酸盐名称。",
+  "can_2": "显示所声明家族成员的质构和 E 编号背景。",
+  "cannot_1": "仅凭名称无法确定产品中的浓度或确切技术功能。",
+  "cannot_2": "不能假设所有藻酸盐都以相同水平或用于相同功能。",
+  "sources": [
+    {
+      "label": "法规 (EC) 第 1333/2008 号 — 食品添加剂的欧盟清单及使用条件",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "委员会法规 (EU) 第 231/2012 号 — 授权食品添加剂的规格",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "藻酸盐",
+  "description": "一族用于胶凝、增稠、稳定及相关质构功能的藻酸和藻酸盐添加剂。EU 族涵盖 E400–E405，包括 E405 处的藻酸丙二醇酯。"
 }

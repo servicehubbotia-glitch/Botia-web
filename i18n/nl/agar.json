@@ -1,28 +1,28 @@
 {
   "name": "Agar",
-  "title": "Agar",
-  "description": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "what_is": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "why_botia": "BOTIA flags E406 because labels may use agar, agar-agar or the E-number. The declaration identifies the texturising ingredient but not its amount or grade.",
-  "can_1": "Detect E406, agar and agar-agar when declared.",
-  "can_2": "Trigger texture and E-number information for the ingredient.",
-  "cannot_1": "Determine concentration, gel strength or raw-material species from the ingredient list.",
-  "cannot_2": "Treat the presence of an authorised texturiser as a risk signal by itself.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E406",
+  "aliases": "E406, INS 406, agar, agar-agar, agar-agar",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E406, INS 406, agar, agar-agar, agar agar"
+  "what_is": "Een uit zeewier afkomstig polysaccharide dat wordt gebruikt als geleer-, verdikkings- en stabiliserend levensmiddelenadditief, in de EU aangeduid als E406.",
+  "why_botia": "BOTIA markeert E406 omdat op etiketten de termen agar, agar-agar of het E-nummer mogen worden gebruikt. De vermelding geeft wel aan welk ingrediënt voor de textuur wordt gebruikt, maar niet de hoeveelheid of de kwaliteit ervan.",
+  "can_1": "Detecteer E406, agar en agar-agar wanneer deze worden aangegeven.",
+  "can_2": "Informatie over de textuur en het E-nummer van het ingrediënt.",
+  "cannot_1": "Bepaal aan de hand van de ingrediëntenlijst de concentratie, de gelsterkte of de soort grondstof.",
+  "cannot_2": "Beschouw de aanwezigheid van een goedgekeurd textuurmiddel op zich al als een risico-indicatie.",
+  "sources": [
+    {
+      "label": "Verordening (EC) nr. 1333/2008 — EU-lijst en gebruiksvoorwaarden voor levensmiddelenadditieven",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Verordening (EU) nr. 231/2012 van de Commissie — specificaties voor toegestane levensmiddelenadditieven",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Agar",
+  "description": "Een uit zeewier afkomstig polysaccharide dat wordt gebruikt als geleer-, verdikkings- en stabiliserend levensmiddelenadditief, in de EU aangeduid als E406."
 }

@@ -1,28 +1,28 @@
 {
   "name": "Polyglycerol Esters & PGPR",
-  "title": "Polyglycerol Esters & PGPR",
-  "description": "A texture/emulsifier grouping covering polyglycerol esters of fatty acids (E475) and polyglycerol polyricinoleate, PGPR (E476).",
-  "what_is": "A texture/emulsifier grouping covering polyglycerol esters of fatty acids (E475) and polyglycerol polyricinoleate, PGPR (E476).",
-  "why_botia": "BOTIA groups these declarations because E475 and E476 share polyglycerol-based naming but are distinct additives. PGPR should not be confused with sucrose esters or with generic mono- and diglycerides.",
-  "can_1": "Detect E475, E476, polyglycerol esters and PGPR declarations.",
-  "can_2": "Show the texture and E-number context while preserving the distinction between E475 and E476.",
-  "cannot_1": "Determine concentration or exact ester composition from the ingredient list.",
-  "cannot_2": "Treat E475 and E476 as chemically identical.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E475, E476",
+  "aliases": "E475, E476, yağ asitlerinin poligliserol esterleri, poligliserol yağ asidi esterleri, poligliserol polirisinolat, poligliserol polirisinolat PGPR, PGPR",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E475, E476, polyglycerol esters of fatty acids, polyglycerol fatty acid esters, polyglycerol polyricinoleate, polyglycerol polyricinoleate PGPR, PGPR"
+  "what_is": "Yağ asitlerinin poligliserol esterlerini (E475) ve poligliserol polirisinolatını (PGPR, E476) içeren bir doku/emülgatör grubu.",
+  "why_botia": "BOTIA, E475 ve E476’nin her ikisi de poligliserol bazlı isimlendirme sistemine sahip olmasına rağmen farklı katkı maddeleri oldukları için bu beyanları bir grup altında toplar. PGPR, sükroz esterleri veya genel mono- ve digliseridlerle karıştırılmamalıdır.",
+  "can_1": "E475, E476, poligliserol esterleri ve PGPR beyanlarını tespit edin.",
+  "can_2": "E475 ile E476 arasındaki farkı koruyarak, doku ve E-numarası bilgilerini gösterin.",
+  "cannot_1": "İçindekiler listesinden konsantrasyonu veya kesin ester bileşimini belirleyin.",
+  "cannot_2": "E475 ve E476’yi kimyasal açıdan aynı olarak kabul edin.",
+  "sources": [
+    {
+      "label": "(EC) Sayılı Yönetmelik No. 1333/2008 — Gıda katkı maddeleri için Birlik listesi ve kullanım koşulları",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "(EU) sayılı Komisyon Yönetmeliği No. 231/2012 — onaylanmış gıda katkı maddelerine ilişkin şartnameler",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Polyglycerol Esters & PGPR",
+  "description": "Yağ asitlerinin poligliserol esterlerini (E475) ve poligliserol polirisinolatını (PGPR, E476) içeren bir doku/emülgatör grubu."
 }

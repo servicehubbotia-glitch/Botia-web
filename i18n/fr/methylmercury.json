@@ -1,27 +1,27 @@
 {
   "name": "Méthylmercure",
   "e_code": null,
-  "aliases": "methylmercury, methyl mercury, organic mercury, total mercury, inorganic mercury, mercury, metilmercurio",
+  "aliases": "méthylmercure, méthylmercure, mercure organique, mercure total, mercure inorganique, mercure, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Mercury occurs in different chemical forms. Methylmercury is an organic form that bioaccumulates in aquatic food chains; inorganic mercury compounds are a different class. 'Total mercury' is an analytical measurement covering mercury across forms and is not a synonym for methylmercury.",
-  "why_botia": "BOTIA shows methylmercury context when a detected fish ingredient belongs to a relevant exposure category. WHO notes that people are mainly exposed to methylmercury through fish and shellfish and distinguishes organic, inorganic and elemental mercury forms. Adding 'total mercury' and 'inorganic mercury' to the explanation prevents analytical results from being misread as though every mercury measurement were methylmercury.",
-  "can_1": "Detect fish ingredients that trigger BOTIA's mercury-context layer and explain the distinction between methylmercury, inorganic mercury and total mercury terminology.",
-  "can_2": "Provide pregnancy and child-development context from official sources without pretending the ingredient list reports a mercury concentration.",
-  "cannot_1": "Quantify total mercury, methylmercury or inorganic mercury in the scanned food.",
-  "cannot_2": "Convert a total-mercury laboratory result into an exact methylmercury concentration without analytical speciation or a validated conversion basis.",
+  "what_is": "Le mercure se présente sous différentes formes chimiques. Le méthylmercure est une forme organique qui s'accumule dans les chaînes alimentaires aquatiques ; les composés inorganiques du mercure constituent une catégorie distincte. Le « mercure total » est une mesure analytique qui englobe toutes les formes de mercure et n'est pas synonyme de méthylmercure.",
+  "why_botia": "Le code BOTIA indique la présence de méthylmercure lorsqu'un ingrédient à base de poisson détecté appartient à une catégorie d'exposition pertinente. Le code WHO précise que l'exposition au méthylmercure provient principalement de la consommation de poissons et de crustacés, et distingue les formes organiques, inorganiques et élémentaires du mercure. L'ajout des termes « mercure total » et « mercure inorganique » à l'explication évite que les résultats d'analyse ne soient mal interprétés, comme si chaque mesure de mercure correspondait à du méthylmercure.",
+  "can_1": "Identifier les ingrédients d'origine halieutique qui déclenchent la couche contextuelle « mercure » de BOTIA et expliquer la distinction entre les termes « méthylmercure », « mercure inorganique » et « mercure total ».",
+  "can_2": "Fournir des informations sur la grossesse et le développement de l'enfant issues de sources officielles, sans laisser entendre que la liste des ingrédients indique une concentration en mercure.",
+  "cannot_1": "Quantifier la teneur totale en mercure, en méthylmercure ou en mercure inorganique dans les aliments analysés.",
+  "cannot_2": "Convertir un résultat de laboratoire indiquant la teneur totale en mercure en une concentration exacte en méthylmercure, sans spéciation analytique ni base de conversion validée.",
   "sources": [
     {
-      "label": "WHO — Mercury and health",
+      "label": "WHO — Le mercure et la santé",
       "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
     },
     {
-      "label": "EFSA — Metals as contaminants in food",
+      "label": "EFSA — Les métaux en tant que contaminants alimentaires",
       "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
     }
   ],
-  "title": "Methylmercury",
-  "description": "Methylmercury in fish exposure context, with clear distinction from total and inorganic mercury."
+  "title": "Méthylmercure",
+  "description": "Le méthylmercure dans le contexte de l'exposition par la consommation de poisson, en le distinguant clairement du mercure total et du mercure inorganique."
 }

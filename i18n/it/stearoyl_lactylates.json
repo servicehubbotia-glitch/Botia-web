@@ -1,28 +1,28 @@
 {
   "name": "Stearoyl Lactylates",
-  "title": "Stearoyl Lactylates",
-  "description": "A pair of emulsifying dough- and texture-related additives: sodium stearoyl-2-lactylate (E481) and calcium stearoyl-2-lactylate (E482).",
-  "what_is": "A pair of emulsifying dough- and texture-related additives: sodium stearoyl-2-lactylate (E481) and calcium stearoyl-2-lactylate (E482).",
-  "why_botia": "BOTIA groups E481 and E482 because labels often use the abbreviations SSL or CSL or omit the '-2-' in the common name.",
-  "can_1": "Detect E481/E482, SSL/CSL and the common sodium or calcium stearoyl lactylate names.",
-  "can_2": "Show the texture and E-number information layers for the declared additive.",
-  "cannot_1": "Determine the fatty-acid source or concentration from the ingredient name alone.",
-  "cannot_2": "Infer animal origin merely from the word 'stearoyl' without source information.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E481, E482",
+  "aliases": "E481, E482, stearoil lattilati, stearoil lattilato di sodio, stearoil-2-lattilato di sodio, SSL, stearoil lattilato di calcio, stearoil-2-lattilato di calcio, CSL",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E481, E482, stearoyl lactylates, sodium stearoyl lactylate, sodium stearoyl-2-lactylate, SSL, calcium stearoyl lactylate, calcium stearoyl-2-lactylate, CSL"
+  "what_is": "Una coppia di additivi emulsionanti che agiscono sull’impasto e sulla consistenza: stearoil-2-lattilato di sodio (E481) e stearoil-2-lattilato di calcio (E482).",
+  "why_botia": "BOTIA raggruppa E481 e E482 perché nelle etichette si utilizzano spesso le abbreviazioni SSL o CSL oppure si omette il '-2-» nel nome comune.",
+  "can_1": "Individuare i codici E481/E482, SSL/CSL e le denominazioni comuni “stearoil lattilato di sodio” o “stearoil lattilato di calcio”.",
+  "can_2": "Visualizza i livelli relativi alle informazioni sulla consistenza e sui numeri E relativi all'additivo dichiarato.",
+  "cannot_1": "Determinare la fonte o la concentrazione di acidi grassi basandosi esclusivamente sul nome dell'ingrediente.",
+  "cannot_2": "Dedurre l’origine animale semplicemente dalla parola “stearoil”, in assenza di informazioni sulla provenienza.",
+  "sources": [
+    {
+      "label": "Regolamento (EC) n. 1333/2008 — Elenco comunitario e condizioni d’uso degli additivi alimentari",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Regolamento della Commissione (EU) n. 231/2012 — specifiche relative agli additivi alimentari autorizzati",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Stearoyl Lactylates",
+  "description": "Una coppia di additivi emulsionanti che agiscono sull’impasto e sulla consistenza: stearoil-2-lattilato di sodio (E481) e stearoil-2-lattilato di calcio (E482)."
 }

@@ -1,28 +1,28 @@
 {
   "name": "Ágar",
-  "title": "Ágar",
-  "description": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "what_is": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "why_botia": "BOTIA flags E406 because labels may use agar, agar-agar or the E-number. The declaration identifies the texturising ingredient but not its amount or grade.",
-  "can_1": "Detect E406, agar and agar-agar when declared.",
-  "can_2": "Trigger texture and E-number information for the ingredient.",
-  "cannot_1": "Determine concentration, gel strength or raw-material species from the ingredient list.",
-  "cannot_2": "Treat the presence of an authorised texturiser as a risk signal by itself.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E406",
+  "aliases": "E406, INS 406, ágar, ágar-ágar, ágar-ágar",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E406, INS 406, agar, agar-agar, agar agar"
+  "what_is": "Um polissacarídeo derivado de algas marinhas utilizado como aditivo alimentar gelificante, espessante e estabilizante, identificado no EU como E406.",
+  "why_botia": "O código BOTIA assinala o código E406, uma vez que os rótulos podem utilizar os termos «agar», «agar-agar» ou o número E. A declaração identifica o ingrediente texturizante, mas não a sua quantidade nem a sua qualidade.",
+  "can_1": "Detetar E406, ágar e ágar-ágar quando declarados.",
+  "can_2": "Informações sobre a textura do gatilho e o número E do ingrediente.",
+  "cannot_1": "Determine a concentração, a consistência do gel ou os tipos de matérias-primas a partir da lista de ingredientes.",
+  "cannot_2": "Considere a presença de um agente texturizante autorizado como um sinal de risco por si só.",
+  "sources": [
+    {
+      "label": "Regulamento (EC) n.º 1333/2008 — Lista da União e condições de utilização dos aditivos alimentares",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Regulamento da Comissão (EU) n.º 231/2012 — especificações relativas aos aditivos alimentares autorizados",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Ágar",
+  "description": "Um polissacarídeo derivado de algas marinhas utilizado como aditivo alimentar gelificante, espessante e estabilizante, identificado no EU como E406."
 }

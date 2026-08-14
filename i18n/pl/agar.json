@@ -1,28 +1,28 @@
 {
   "name": "Agar",
-  "title": "Agar",
-  "description": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "what_is": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "why_botia": "BOTIA flags E406 because labels may use agar, agar-agar or the E-number. The declaration identifies the texturising ingredient but not its amount or grade.",
-  "can_1": "Detect E406, agar and agar-agar when declared.",
-  "can_2": "Trigger texture and E-number information for the ingredient.",
-  "cannot_1": "Determine concentration, gel strength or raw-material species from the ingredient list.",
-  "cannot_2": "Treat the presence of an authorised texturiser as a risk signal by itself.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E406",
+  "aliases": "E406, INS 406, agar, agar-agar, agar agar",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E406, INS 406, agar, agar-agar, agar agar"
+  "what_is": "Polisacharyd pochodzący z wodorostów, stosowany jako dodatek do żywności o działaniu żelującym, zagęszczającym i stabilizującym, zidentyfikowany w EU jako E406.",
+  "why_botia": "BOTIA powoduje zgłoszenie E406, ponieważ na etykietach mogą być używane nazwy „agar”, „agar-agar” lub numer E. Deklaracja określa składnik nadający konsystencję, ale nie podaje jego ilości ani klasy.",
+  "can_1": "Wykrywanie E406, agaru i agar-agaru w przypadku ich zgłoszenia.",
+  "can_2": "Informacje o teksturze spustu oraz numerach E dla danego składnika.",
+  "cannot_1": "Na podstawie listy składników określ stężenie, stopień żelowania lub rodzaj surowca.",
+  "cannot_2": "Obecność zatwierdzonego środka nadającego teksturę należy traktować jako sygnał ostrzegawczy sam w sobie.",
+  "sources": [
+    {
+      "label": "Rozporządzenie (EC) nr 1333/2008 — Unijny wykaz dodatków do żywności oraz warunki ich stosowania",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Rozporządzenie Komisji (EU) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Agar",
+  "description": "Polisacharyd pochodzący z wodorostów, stosowany jako dodatek do żywności o działaniu żelującym, zagęszczającym i stabilizującym, zidentyfikowany w EU jako E406."
 }

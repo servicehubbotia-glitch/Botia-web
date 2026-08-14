@@ -1,28 +1,28 @@
 {
   "name": "Modified Starches",
-  "title": "Modified Starches",
-  "description": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "what_is": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "why_botia": "BOTIA groups these terms because labels may say modified starch or identify a specific modified-starch additive. The family name does not disclose the exact modification unless the label gives the specific name or code.",
-  "can_1": "Detect 'modified starch/modified food starch' and the listed specific modified-starch names and E-numbers.",
-  "can_2": "Show the texture and E-number layers while preserving the difference between a generic declaration and a specific additive.",
-  "cannot_1": "Identify the exact chemical modification when the label uses only 'modified starch'.",
-  "cannot_2": "Infer the botanical starch source or concentration unless it is separately declared.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E1404, E1410, E1412–E1414, E1420, E1422, E1440, E1442, E1450–E1452",
+  "aliases": "модифицированный крахмал, модифицированный пищевой крахмал, химически модифицированный крахмал, E1404, окисленный крахмал, E1410, монокрахмальный фосфат, E1412, дикрахмальный фосфат, E1413, фосфатированный дикрахмальный фосфат, E1414, ацетилированный дикрахмальный фосфат, E1420, ацетилированный крахмал, E1422, ацетилированный дикрахмальный адипат, E1440, гидроксипропилкрахмал, E1442, гидроксипропилдикрахмалфосфат, E1450, октенилсукцинат натрия крахмала, E1451, ацетилированный окисленный крахмал, ацетилированный окисленный крахмал, E1452, ацетил-оксидированный крахмал, ацетил-оксидированный крахмал",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "modified starch, modified food starch, chemically modified starch, E1404, oxidised starch, oxidized starch, E1410, monostarch phosphate, E1412, distarch phosphate, E1413, phosphated distarch phosphate, E1414, acetylated distarch phosphate, E1420, acetylated starch, E1422, acetylated distarch adipate, E1440, hydroxypropyl starch, E1442, hydroxypropyl distarch phosphate, E1450, starch sodium octenyl succinate, E1451, acetylated oxidised starch, acetylated oxidized starch, E1452, starch aluminium octenyl succinate, starch aluminum octenyl succinate"
+  "what_is": "Группа крахмалов, подвергшихся химической модификации с целью изменения таких функциональных свойств, как загущающая способность, стабильность, эмульгирующие свойства или устойчивость к технологической обработке. В списке EU разрешенные модифицированные крахмалы обозначены отдельными позициями, а не единым общим кодом «E1400s».",
+  "why_botia": "BOTIA объединяет эти термины в одну группу, поскольку на этикетках может быть указано «модифицированный крахмал» или конкретная добавка на основе модифицированного крахмала. Название группы не раскрывает точного характера модификации, если на этикетке не указано конкретное название или код.",
+  "can_1": "Выявлять «модифицированный крахмал/модифицированный пищевой крахмал», а также перечисленные конкретные названия модифицированных крахмалов и номера E.",
+  "can_2": "Отобразить слои «Текстура» и «Номера E», сохранив при этом различие между общей декларацией и конкретной добавкой.",
+  "cannot_1": "Определите точный вид химической модификации, если на этикетке указано лишь «модифицированный крахмал».",
+  "cannot_2": "Определить источник или концентрацию растительного крахмала, если эти сведения не указаны отдельно.",
+  "sources": [
+    {
+      "label": "Положение (EC) № 1333/2008 — Единый перечень пищевых добавок и условия их использования",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Регламент Комиссии (EU) № 231/2012 — технические условия на разрешенные пищевые добавки",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Modified Starches",
+  "description": "Группа крахмалов, подвергшихся химической модификации с целью изменения таких функциональных свойств, как загущающая способность, стабильность, эмульгирующие свойства или устойчивость к технологической обработке. В списке EU разрешенные модифицированные крахмалы обозначены отдельными позициями, а не единым общим кодом «E1400s»."
 }

@@ -1,28 +1,28 @@
 {
   "name": "Polysorbates",
-  "title": "Polysorbates",
-  "description": "A family of emulsifiers and stabilisers based on polyoxyethylene sorbitan fatty-acid esters, identified in the EU as E432–E436.",
-  "what_is": "A family of emulsifiers and stabilisers based on polyoxyethylene sorbitan fatty-acid esters, identified in the EU as E432–E436.",
-  "why_botia": "BOTIA groups polysorbates because product labels often use the individual polysorbate number or E-number rather than the full chemical name.",
-  "can_1": "Detect E432–E436, polysorbate numbers and the principal chemical names.",
-  "can_2": "Show the texture and E-number context for the declared emulsifier.",
-  "cannot_1": "Determine concentration or fatty-acid composition from the ingredient list.",
-  "cannot_2": "Treat all polysorbates as one identical substance or infer an individual health effect from their presence.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E432–E436",
+  "aliases": "E432, E433, E434, E435, E436, polysorbate 20, polysorbate 80, polysorbate 40, polysorbate 60, polysorbate 65, monolaurate de polyoxyéthylène sorbitane, mono-oléate de polyoxyéthylène sorbitane, monopalmitate de polyoxyéthylène sorbitane, monostéarate de polyoxyéthylène sorbitane, tristéarate de polyoxyéthylène sorbitane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E432, E433, E434, E435, E436, polysorbate 20, polysorbate 80, polysorbate 40, polysorbate 60, polysorbate 65, polyoxyethylene sorbitan monolaurate, polyoxyethylene sorbitan monooleate, polyoxyethylene sorbitan monopalmitate, polyoxyethylene sorbitan monostearate, polyoxyethylene sorbitan tristearate"
+  "what_is": "Une famille d'émulsifiants et de stabilisants à base d'esters d'acides gras de polyoxyéthylène sorbitane, identifiée dans le EU sous la référence E432–E436.",
+  "why_botia": "La norme BOTIA regroupe les polysorbates, car les étiquettes des produits mentionnent souvent le numéro spécifique du polysorbate ou son numéro E plutôt que son nom chimique complet.",
+  "can_1": "Identifier le code E432–E436, les numéros de polysorbate et les principales dénominations chimiques.",
+  "can_2": "Indiquez la texture et le numéro E correspondant à l'émulsifiant déclaré.",
+  "cannot_1": "Déterminez la concentration ou la composition en acides gras à partir de la liste des ingrédients.",
+  "cannot_2": "Considérer tous les polysorbates comme une seule et même substance ou en déduire un effet spécifique sur la santé lié à leur présence.",
+  "sources": [
+    {
+      "label": "Règlement (EC) n° 1333/2008 — Liste communautaire et conditions d'utilisation des additifs alimentaires",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Règlement (EU) n° 231/2012 de la Commission — cahiers des charges relatifs aux additifs alimentaires autorisés",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Polysorbates",
+  "description": "Une famille d'émulsifiants et de stabilisants à base d'esters d'acides gras de polyoxyéthylène sorbitane, identifiée dans le EU sous la référence E432–E436."
 }

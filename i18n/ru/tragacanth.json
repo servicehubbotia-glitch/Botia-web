@@ -1,28 +1,28 @@
 {
   "name": "Трагакант",
-  "title": "Трагакант",
-  "description": "A plant gum obtained from Astragalus species and used as a thickener, stabiliser and emulsifying texturiser, identified in the EU as E413.",
-  "what_is": "A plant gum obtained from Astragalus species and used as a thickener, stabiliser and emulsifying texturiser, identified in the EU as E413.",
-  "why_botia": "BOTIA flags E413 because the same ingredient can appear as tragacanth, gum tragacanth or an E-number.",
-  "can_1": "Detect E413 and common tragacanth-gum names.",
-  "can_2": "Show the texture and E-number context for the declared gum.",
-  "cannot_1": "Determine the amount or botanical source species from the ingredient list.",
-  "cannot_2": "Infer a health effect from the presence of the gum alone.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E413",
+  "aliases": "E413, INS 413, трагакант, камедь трагаканта, трагакантовая камедь",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E413, INS 413, tragacanth, gum tragacanth, tragacanth gum"
+  "what_is": "Растительная камедь, получаемая из видов Astragalus и используемая в качестве загустителя, стабилизатора и эмульгирующего текстуратора, идентифицированная в EU как E413.",
+  "why_botia": "BOTIA помечает E413, потому что один и тот же ингредиент может встречаться как трагакант, камедь трагаканта или E-номер.",
+  "can_1": "Обнаруживать E413 и распространенные названия камеди трагаканта.",
+  "can_2": "Показывать контекст текстуры и E-номера для указанной камеди.",
+  "cannot_1": "Определять количество или ботанический вид источника из списка ингредиентов.",
+  "cannot_2": "Делать вывод о влиянии на здоровье только на основе наличия камеди.",
+  "sources": [
+    {
+      "label": "Регламент (EC) № 1333/2008 — Союзный перечень и условия использования пищевых добавок",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Регламент Комиссии (EU) № 231/2012 — спецификации на разрешенные пищевые добавки",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Трагакант",
+  "description": "Растительная камедь, получаемая из видов Astragalus и используемая в качестве загустителя, стабилизатора и эмульгирующего текстуратора, идентифицированная в EU как E413."
 }

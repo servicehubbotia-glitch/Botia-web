@@ -1,28 +1,28 @@
 {
-  "name": "Sucrose Esters & Sucroglycerides",
-  "title": "Sucrose Esters & Sucroglycerides",
-  "description": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "what_is": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "why_botia": "BOTIA groups E473–E474 because the original audit range E473–E475 crosses into a different family: E475 is polyglycerol esters of fatty acids and is covered separately. Keeping the range precise prevents one ingredient family from swallowing another.",
-  "can_1": "Detect E473, E474, sucrose esters of fatty acids and sucroglycerides.",
-  "can_2": "Show the texture and E-number context while keeping E475 in the polyglycerol-esters card.",
-  "cannot_1": "Determine concentration or the fatty-acid composition from the ingredient name.",
-  "cannot_2": "Classify E475 as a sucrose ester.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "Esteri di saccarosio e sucrogliceridi",
   "e_code": "E473–E474",
+  "aliases": "E473, E474, esteri di saccarosio, esteri di saccarosio degli acidi grassi, esteri di acidi grassi del saccarosio, sucrogliceridi",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E473, E474, sucrose esters, sucrose esters of fatty acids, sucrose fatty acid esters, sucroglycerides"
+  "what_is": "Una coppia di voci di emulsionanti/addensanti nell'attuale elenco EU: esteri di saccarosio degli acidi grassi (E473) e sucrogliceridi (E474).",
+  "why_botia": "BOTIA raggruppa E473–E474 perché l'intervallo di audit originale E473–E475 attraversa una famiglia diversa: E475 è poliglicerolo esteri degli acidi grassi ed è trattato separatamente. Mantenere l'intervallo preciso impedisce che una famiglia di ingredienti ne assorba un'altra.",
+  "can_1": "Rileva E473, E474, esteri di saccarosio degli acidi grassi e sucrogliceridi.",
+  "can_2": "Mostra il contesto di consistenza e numero E mantenendo E475 nella scheda dei poliglicerolo esteri.",
+  "cannot_1": "Determinare la concentrazione o la composizione degli acidi grassi dal nome dell'ingrediente.",
+  "cannot_2": "Classificare E475 come estere di saccarosio.",
+  "sources": [
+    {
+      "label": "Regolamento (EC) n. 1333/2008 — Elenco dell'Unione e condizioni d'uso degli additivi alimentari",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Regolamento (EU) n. 231/2012 — specifiche per gli additivi alimentari autorizzati",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Esteri di saccarosio e sucrogliceridi",
+  "description": "Una coppia di voci di emulsionanti/addensanti nell'attuale elenco EU: esteri di saccarosio degli acidi grassi (E473) e sucrogliceridi (E474)."
 }

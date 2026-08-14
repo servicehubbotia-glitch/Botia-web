@@ -1,28 +1,28 @@
 {
   "name": "Пектины",
-  "title": "Пектины",
-  "description": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "what_is": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "why_botia": "BOTIA groups pectin declarations because labels can use the generic name, subtype or E-number. The ingredient name does not reveal degree of esterification, amidation or concentration unless separately stated.",
-  "can_1": "Detect E440, pectin, pectins and the common amidated/non-amidated subtype names.",
-  "can_2": "Show the texture and E-number information layers.",
-  "cannot_1": "Determine the exact pectin subtype or formulation when only 'pectin' is declared.",
-  "cannot_2": "Calculate the amount present from ingredient order alone.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E440",
+  "aliases": "E440, E440(i), E440(ii), INS 440, пектин, пектины, неамидированный пектин, амидированный пектин, амидированные пектины",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E440, E440(i), E440(ii), INS 440, pectin, pectins, non-amidated pectin, amidated pectin, amidated pectins"
+  "what_is": "Семейство гелеобразующих и стабилизирующих веществ растительного происхождения, в том числе неамидированных и амидированных пектинов, объединенных под кодом E440.",
+  "why_botia": "BOTIA группирует указания на пектин, поскольку на этикетках может использоваться общее название, подтип или E-номер. Название ингредиента не указывает на степень этерификации, амидирования или концентрацию, если это не указано отдельно.",
+  "can_1": "Обнаружить E440, пектин, пектины и распространенные названия подтипов (амидированных и неамидированных).",
+  "can_2": "Отобразить слои с информацией о текстуре и номерах E.",
+  "cannot_1": "Определить точный подтип или состав пектина, если в составе указано только «пектин».",
+  "cannot_2": "Рассчитайте количество, имеющееся в наличии, исходя исключительно из заказа ингредиентов.",
+  "sources": [
+    {
+      "label": "Положение (EC) № 1333/2008 — Единый перечень пищевых добавок и условия их использования",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Регламент Комиссии (EU) № 231/2012 — технические условия на разрешенные пищевые добавки",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Пектины",
+  "description": "Семейство гелеобразующих и стабилизирующих веществ растительного происхождения, в том числе неамидированных и амидированных пектинов, объединенных под кодом E440."
 }

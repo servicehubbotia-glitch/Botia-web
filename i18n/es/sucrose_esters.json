@@ -1,28 +1,28 @@
 {
-  "name": "Sucrose Esters & Sucroglycerides",
-  "title": "Sucrose Esters & Sucroglycerides",
-  "description": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "what_is": "A pair of emulsifier/texturiser entries in the current EU list: sucrose esters of fatty acids (E473) and sucroglycerides (E474).",
-  "why_botia": "BOTIA groups E473–E474 because the original audit range E473–E475 crosses into a different family: E475 is polyglycerol esters of fatty acids and is covered separately. Keeping the range precise prevents one ingredient family from swallowing another.",
-  "can_1": "Detect E473, E474, sucrose esters of fatty acids and sucroglycerides.",
-  "can_2": "Show the texture and E-number context while keeping E475 in the polyglycerol-esters card.",
-  "cannot_1": "Determine concentration or the fatty-acid composition from the ingredient name.",
-  "cannot_2": "Classify E475 as a sucrose ester.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
+  "name": "Ésteres de sacarosa y sucroglicéridos",
   "e_code": "E473–E474",
+  "aliases": "E473, E474, ésteres de sacarosa, ésteres de sacarosa de ácidos grasos, ésteres de sacarosa de ácidos grasos, sucroglicéridos",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E473, E474, sucrose esters, sucrose esters of fatty acids, sucrose fatty acid esters, sucroglycerides"
+  "what_is": "Un par de entradas de emulsionante/texturizante en la lista EU actual: ésteres de sacarosa de ácidos grasos (E473) y sucroglicéridos (E474).",
+  "why_botia": "BOTIA agrupa E473–E474 porque el rango de auditoría original E473–E475 cruza hacia una familia diferente: E475 son ésteres de poliglicerol de ácidos grasos y se cubren por separado. Mantener el rango preciso evita que una familia de ingredientes absorba a otra.",
+  "can_1": "Detectar E473, E474, ésteres de sacarosa de ácidos grasos y sucroglicéridos.",
+  "can_2": "Mostrar el contexto de textura y número E mientras se mantiene E475 en la tarjeta de ésteres de poliglicerol.",
+  "cannot_1": "Determinar la concentración o la composición de ácidos grasos a partir del nombre del ingrediente.",
+  "cannot_2": "Clasificar E475 como un éster de sacarosa.",
+  "sources": [
+    {
+      "label": "Reglamento (EC) n.º 1333/2008 — Lista de la Unión y condiciones de uso de los aditivos alimentarios",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Reglamento (EU) de la Comisión n.º 231/2012 — especificaciones de los aditivos alimentarios autorizados",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Ésteres de sacarosa y sucroglicéridos",
+  "description": "Un par de entradas de emulsionante/texturizante en la lista EU actual: ésteres de sacarosa de ácidos grasos (E473) y sucroglicéridos (E474)."
 }

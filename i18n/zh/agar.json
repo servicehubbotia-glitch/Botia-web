@@ -1,28 +1,28 @@
 {
   "name": "琼脂",
-  "title": "琼脂",
-  "description": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "what_is": "A seaweed-derived polysaccharide used as a gelling, thickening and stabilising food additive, identified in the EU as E406.",
-  "why_botia": "BOTIA flags E406 because labels may use agar, agar-agar or the E-number. The declaration identifies the texturising ingredient but not its amount or grade.",
-  "can_1": "Detect E406, agar and agar-agar when declared.",
-  "can_2": "Trigger texture and E-number information for the ingredient.",
-  "cannot_1": "Determine concentration, gel strength or raw-material species from the ingredient list.",
-  "cannot_2": "Treat the presence of an authorised texturiser as a risk signal by itself.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E406",
+  "aliases": "E406, INS 406, 琼脂, 琼脂粉, 琼脂胶",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E406, INS 406, agar, agar-agar, agar agar"
+  "what_is": "一种来源于海藻的多糖，用作胶凝、增稠和稳定的食品添加剂，在EU中被标识为E406。",
+  "why_botia": "BOTIA标记E406，因为标签可能使用琼脂、琼脂粉或E编号。声明标识了增质成分，但不包含其含量或等级。",
+  "can_1": "检测E406、琼脂和琼脂粉（当声明时）。",
+  "can_2": "触发成分的质地和E编号信息。",
+  "cannot_1": "从成分列表中确定浓度、凝胶强度或原料物种。",
+  "cannot_2": "将授权增质剂的存在本身视为风险信号。",
+  "sources": [
+    {
+      "label": "法规（EC）第1333/2008号——食品添加剂的联盟清单和使用条件",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "委员会法规（EU）第231/2012号——授权食品添加剂的规格",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "琼脂",
+  "description": "一种来源于海藻的多糖，用作胶凝、增稠和稳定的食品添加剂，在EU中被标识为E406。"
 }

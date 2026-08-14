@@ -1,28 +1,28 @@
 {
   "name": "Modified Starches",
-  "title": "Modified Starches",
-  "description": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "what_is": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "why_botia": "BOTIA groups these terms because labels may say modified starch or identify a specific modified-starch additive. The family name does not disclose the exact modification unless the label gives the specific name or code.",
-  "can_1": "Detect 'modified starch/modified food starch' and the listed specific modified-starch names and E-numbers.",
-  "can_2": "Show the texture and E-number layers while preserving the difference between a generic declaration and a specific additive.",
-  "cannot_1": "Identify the exact chemical modification when the label uses only 'modified starch'.",
-  "cannot_2": "Infer the botanical starch source or concentration unless it is separately declared.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E1404, E1410, E1412–E1414, E1420, E1422, E1440, E1442, E1450–E1452",
+  "aliases": "改性淀粉、食品级改性淀粉、化学改性淀粉、E1404、氧化淀粉、E1410、单磷酸淀粉、E1412、双磷酸淀粉、 E1413、磷酸化双淀粉磷酸酯、E1414、乙酰化双淀粉磷酸酯、 E1420、乙酰化淀粉、E1422、乙酰化二淀粉己二酸酯、E1440、 羟丙基淀粉，E1442，羟丙基二淀粉磷酸酯，E1450，淀粉辛烯基琥珀酸钠，E1451，乙酰化氧化淀粉，乙酰化氧化淀粉， E1452，淀粉铝辛烯基琥珀酸酯，淀粉铝辛烯基琥珀酸酯",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "modified starch, modified food starch, chemically modified starch, E1404, oxidised starch, oxidized starch, E1410, monostarch phosphate, E1412, distarch phosphate, E1413, phosphated distarch phosphate, E1414, acetylated distarch phosphate, E1420, acetylated starch, E1422, acetylated distarch adipate, E1440, hydroxypropyl starch, E1442, hydroxypropyl distarch phosphate, E1450, starch sodium octenyl succinate, E1451, acetylated oxidised starch, acetylated oxidized starch, E1452, starch aluminium octenyl succinate, starch aluminum octenyl succinate"
+  "what_is": "一类经过化学改性以改变其功能特性（如增稠性、稳定性、乳化性或耐加工性）的淀粉。在EU中，获准使用的改性淀粉E编号是具体的条目，而非单一的通用代码“E1400s”。",
+  "why_botia": "BOTIA 将这些术语归为一类，因为标签上可能标注为“改性淀粉”，或标明某种具体的改性淀粉添加剂。除非标签上提供了具体名称或代码，否则该类别名称不会披露确切的改性方式。",
+  "can_1": "检测“改性淀粉/改性食品淀粉”以及所列出的具体改性淀粉名称和E编号。",
+  "can_2": "在显示“质地”和“E编号”图层的同时，保留通用声明与特定添加剂之间的区别。",
+  "cannot_1": "当标签上仅标注“改性淀粉”时，请确定其具体的化学改性方式。",
+  "cannot_2": "除非另有说明，否则应推断出植物性淀粉的来源或浓度。",
+  "sources": [
+    {
+      "label": "第EC号条例（1333/2008）——食品添加剂统一清单及使用条件",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "欧盟委员会第231/2012号条例（EU）——经批准的食品添加剂规格",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Modified Starches",
+  "description": "一类经过化学改性以改变其功能特性（如增稠性、稳定性、乳化性或耐加工性）的淀粉。在EU中，获准使用的改性淀粉E编号是具体的条目，而非单一的通用代码“E1400s”。"
 }

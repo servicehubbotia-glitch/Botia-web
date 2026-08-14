@@ -1,32 +1,32 @@
 {
   "name": "Celuloses e celuloses modificadas",
-  "title": "Celuloses e celuloses modificadas",
-  "description": "A family of cellulose and modified-cellulose texturisers. The current EU list includes E460–E466 and E468–E469; JECFA also recognises ethyl hydroxyethyl cellulose as INS 467.",
-  "what_is": "A family of cellulose and modified-cellulose texturisers. The current EU list includes E460–E466 and E468–E469; JECFA also recognises ethyl hydroxyethyl cellulose as INS 467.",
-  "why_botia": "BOTIA groups these declarations because the global family is broader than a simple uninterrupted EU E-number range. A label may say cellulose gum, CMC, HPMC or a specific code; BOTIA should preserve the distinction rather than inventing a nonexistent current EU E467 authorisation.",
-  "can_1": "Detect the current EU cellulose codes and common names, plus INS 467 where that international identifier is actually declared.",
-  "can_2": "Show the texture and numbering context while distinguishing EU E-numbers from an INS identifier used outside the EU list.",
-  "cannot_1": "Determine viscosity grade, substitution pattern or concentration from the ingredient list.",
-  "cannot_2": "Assume that every INS member of the global family is authorised as an E-number in the EU.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — current EU cellulose entries",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — cellulose additive specifications",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Ethyl Hydroxyethyl Cellulose (INS 467)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3203"
-    }
-  ],
   "e_code": "E460–E466, E468–E469; INS 467",
+  "aliases": "E460, E460(i), E460(ii), E461, E462, E463, E464, E465, E466, INS 467, E468, E469, celulose, celulose microcristalina, gel de celulose, celulose em pó, metilcelulose, metilcelulose, etilcelulose, etilcelulose, hidroxipropilcelulose, hidroxipropilmetilcelulose, HPMC, etilmetilcelulose, carboximetilcelulose de sódio, carboximetilcelulose, CMC, goma de celulose, etil-hidroxietilcelulose, carboximetilcelulose de sódio reticulada, carboximetilcelulose hidrolisada enzimaticamente",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E460, E460(i), E460(ii), E461, E462, E463, E464, E465, E466, INS 467, E468, E469, cellulose, microcrystalline cellulose, cellulose gel, powdered cellulose, methyl cellulose, methylcellulose, ethyl cellulose, ethylcellulose, hydroxypropyl cellulose, hydroxypropyl methyl cellulose, HPMC, ethyl methyl cellulose, sodium carboxymethyl cellulose, carboxymethyl cellulose, CMC, cellulose gum, ethyl hydroxyethyl cellulose, cross-linked sodium carboxymethyl cellulose, enzymatically hydrolysed carboxymethyl cellulose"
+  "what_is": "Uma família de agentes texturizantes à base de celulose e celulose modificada. A lista atual de EU inclui o E460–E466 e o E468–E469; o JECFA também reconhece a etil-hidroxietilcelulose como INS 467.",
+  "why_botia": "O código BOTIA agrupa estas declarações porque a família global é mais abrangente do que um simples intervalo ininterrupto de números E do tipo EU. Um rótulo pode indicar «goma de celulose», CMC, HPMC ou um código específico; o BOTIA deve preservar essa distinção, em vez de inventar uma autorização EU e E467 que não existe atualmente.",
+  "can_1": "Detetar os códigos de celulose atuais EU e os nomes comuns, bem como o INS 467, sempre que esse identificador internacional estiver efetivamente declarado.",
+  "can_2": "Mostrar a textura e o contexto de numeração, distinguindo os números E EU de um identificador INS utilizado fora da lista EU.",
+  "cannot_1": "Determine o grau de viscosidade, o padrão de substituição ou a concentração a partir da lista de ingredientes.",
+  "cannot_2": "Partamos do princípio de que todos os membros da família global INS estão autorizados como números E no EU.",
+  "sources": [
+    {
+      "label": "Regulamento (EC) n.º 1333/2008 — entradas atuais relativas à celulose EU",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Regulamento da Comissão (EU) n.º 231/2012 — especificações relativas aos aditivos de celulose",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "JECFA — Hidroxietilcelulose etílica (INS 467)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3203"
+    }
+  ],
+  "title": "Celuloses e celuloses modificadas",
+  "description": "Uma família de agentes texturizantes à base de celulose e celulose modificada. A lista atual de EU inclui o E460–E466 e o E468–E469; o JECFA também reconhece a etil-hidroxietilcelulose como INS 467."
 }

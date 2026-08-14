@@ -1,28 +1,28 @@
 {
   "name": "Modified Starches",
-  "title": "Modified Starches",
-  "description": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "what_is": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "why_botia": "BOTIA groups these terms because labels may say modified starch or identify a specific modified-starch additive. The family name does not disclose the exact modification unless the label gives the specific name or code.",
-  "can_1": "Detect 'modified starch/modified food starch' and the listed specific modified-starch names and E-numbers.",
-  "can_2": "Show the texture and E-number layers while preserving the difference between a generic declaration and a specific additive.",
-  "cannot_1": "Identify the exact chemical modification when the label uses only 'modified starch'.",
-  "cannot_2": "Infer the botanical starch source or concentration unless it is separately declared.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E1404, E1410, E1412–E1414, E1420, E1422, E1440, E1442, E1450–E1452",
+  "aliases": "skrobia modyfikowana, skrobia spożywcza modyfikowana, skrobia modyfikowana chemicznie, E1404, skrobia utleniona, E1410, fosforan monoskrobiowy, E1412, fosforan diskrobiowy, E1413, fosforan dwuskrobiowy, E1414, acetylowany fosforan dwuskrobiowy, E1420, skrobia acetylowana, E1422, adypinian skrobi dwuskładnikowej acetylowanej, E1440, skrobia hydroksypropylowa, E1442, fosforan hydroksypropylowy skrobi dwuskładnikowej, E1450, oktenylosukcynian sodowy skrobi, E1451, acetylowana skrobia utleniona, acetylowana skrobia utleniona, E1452, oktenylosukcynian skrobiowo-glinowy, oktenylosukcynian skrobiowo-glinowy",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "modified starch, modified food starch, chemically modified starch, E1404, oxidised starch, oxidized starch, E1410, monostarch phosphate, E1412, distarch phosphate, E1413, phosphated distarch phosphate, E1414, acetylated distarch phosphate, E1420, acetylated starch, E1422, acetylated distarch adipate, E1440, hydroxypropyl starch, E1442, hydroxypropyl distarch phosphate, E1450, starch sodium octenyl succinate, E1451, acetylated oxidised starch, acetylated oxidized starch, E1452, starch aluminium octenyl succinate, starch aluminum octenyl succinate"
+  "what_is": "Grupa skrobi poddanych modyfikacji chemicznej w celu zmiany właściwości funkcjonalnych, takich jak zdolność zagęszczania, stabilność, zdolność emulgowania lub odporność na przetwarzanie. W przypadku EU dopuszczone numery E modyfikowanych skrobi to konkretne pozycje, a nie jeden ogólny kod „E1400s”.",
+  "why_botia": "BOTIA grupuje te terminy, ponieważ na etykietach mogą figurować nazwy takie jak „skrobia modyfikowana” lub konkretne nazwy dodatków zawierających skrobię modyfikowaną. Nazwa tej grupy nie wskazuje dokładnego rodzaju modyfikacji, chyba że na etykiecie podano konkretną nazwę lub kod.",
+  "can_1": "Wykrywać „skrobię modyfikowaną/modyfikowaną skrobię spożywczą” oraz wymienione konkretne nazwy skrobi modyfikowanej i numery E.",
+  "can_2": "Wyświetl warstwy „Tekstura” i „Numery E”, zachowując jednocześnie różnicę między ogólną deklaracją a konkretnym dodatkiem.",
+  "cannot_1": "Należy określić dokładny rodzaj modyfikacji chemicznej, gdy na etykiecie podano jedynie „skrobia modyfikowana”.",
+  "cannot_2": "Należy określić botaniczne źródło skrobi lub jej stężenie, o ile nie zostało to podane oddzielnie.",
+  "sources": [
+    {
+      "label": "Rozporządzenie (EC) nr 1333/2008 — Unijny wykaz dodatków do żywności oraz warunki ich stosowania",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Rozporządzenie Komisji (EU) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Modified Starches",
+  "description": "Grupa skrobi poddanych modyfikacji chemicznej w celu zmiany właściwości funkcjonalnych, takich jak zdolność zagęszczania, stabilność, zdolność emulgowania lub odporność na przetwarzanie. W przypadku EU dopuszczone numery E modyfikowanych skrobi to konkretne pozycje, a nie jeden ogólny kod „E1400s”."
 }

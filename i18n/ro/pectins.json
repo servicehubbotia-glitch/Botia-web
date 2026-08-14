@@ -1,28 +1,28 @@
 {
   "name": "Pectine",
-  "title": "Pectine",
-  "description": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "what_is": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "why_botia": "BOTIA groups pectin declarations because labels can use the generic name, subtype or E-number. The ingredient name does not reveal degree of esterification, amidation or concentration unless separately stated.",
-  "can_1": "Detect E440, pectin, pectins and the common amidated/non-amidated subtype names.",
-  "can_2": "Show the texture and E-number information layers.",
-  "cannot_1": "Determine the exact pectin subtype or formulation when only 'pectin' is declared.",
-  "cannot_2": "Calculate the amount present from ingredient order alone.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E440",
+  "aliases": "E440, E440(i), E440(ii), INS 440, pectină, pectine, pectină neamidată, pectină amidadă, pectine amidate",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E440, E440(i), E440(ii), INS 440, pectin, pectins, non-amidated pectin, amidated pectin, amidated pectins"
+  "what_is": "O familie de agenți de gelificare și stabilizare pe bază de polizaharide de origine vegetală, inclusiv pectine neamidate și amidate, grupate sub codul E440.",
+  "why_botia": "BOTIA grupează mențiunile referitoare la pectină, deoarece pe etichete se poate utiliza denumirea generică, subtipul sau numărul E. Denumirea ingredientului nu indică gradul de esterificare, amidare sau concentrația, cu excepția cazului în care acest lucru este menționat separat.",
+  "can_1": "Detectează E440, pectina, pectinele și denumirile obișnuite ale subtipurilor amidate/neamidate.",
+  "can_2": "Afișează straturile cu informații despre textură și numerele E.",
+  "cannot_1": "Se determină subtipul exact de pectină sau compoziția acesteia atunci când este menționat doar termenul „pectină”.",
+  "cannot_2": "Calculați cantitatea existentă doar pe baza comenzii de ingrediente.",
+  "sources": [
+    {
+      "label": "Regulamentul (EC) nr. 1333/2008 — Lista comunitară și condițiile de utilizare a aditivilor alimentari",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Regulamentul Comisiei (EU) nr. 231/2012 — specificații privind aditivii alimentari autorizați",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Pectine",
+  "description": "O familie de agenți de gelificare și stabilizare pe bază de polizaharide de origine vegetală, inclusiv pectine neamidate și amidate, grupate sub codul E440."
 }

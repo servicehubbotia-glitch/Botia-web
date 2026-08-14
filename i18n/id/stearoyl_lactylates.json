@@ -1,28 +1,28 @@
 {
   "name": "Stearoyl Lactylates",
-  "title": "Stearoyl Lactylates",
-  "description": "A pair of emulsifying dough- and texture-related additives: sodium stearoyl-2-lactylate (E481) and calcium stearoyl-2-lactylate (E482).",
-  "what_is": "A pair of emulsifying dough- and texture-related additives: sodium stearoyl-2-lactylate (E481) and calcium stearoyl-2-lactylate (E482).",
-  "why_botia": "BOTIA groups E481 and E482 because labels often use the abbreviations SSL or CSL or omit the '-2-' in the common name.",
-  "can_1": "Detect E481/E482, SSL/CSL and the common sodium or calcium stearoyl lactylate names.",
-  "can_2": "Show the texture and E-number information layers for the declared additive.",
-  "cannot_1": "Determine the fatty-acid source or concentration from the ingredient name alone.",
-  "cannot_2": "Infer animal origin merely from the word 'stearoyl' without source information.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E481, E482",
+  "aliases": "E481, E482, stearoyl laktilat, natrium stearoyl laktilat, natrium stearoil-2-laktilat, SSL, kalsium stearoil laktilat, kalsium stearoil-2-laktilat, CSL",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E481, E482, stearoyl lactylates, sodium stearoyl lactylate, sodium stearoyl-2-lactylate, SSL, calcium stearoyl lactylate, calcium stearoyl-2-lactylate, CSL"
+  "what_is": "Sepasang bahan tambahan yang berfungsi sebagai pengemulsi serta memengaruhi adonan dan tekstur: natrium stearoil-2-laktilat (E481) dan kalsium stearoil-2-laktilat (E482).",
+  "why_botia": "BOTIA menggabungkan E481 dan E482 karena pada label sering kali digunakan singkatan seperti SSL atau CSL, atau bagian '-2-' dalam nama umumnya.",
+  "can_1": "Deteksi E481/E482, SSL/CSL, serta nama-nama umum seperti natrium atau kalsium stearoil laktilat.",
+  "can_2": "Tampilkan lapisan informasi tekstur dan nomor E untuk bahan tambahan yang tercantum.",
+  "cannot_1": "Tentukan sumber atau konsentrasi asam lemak hanya berdasarkan nama bahan tersebut.",
+  "cannot_2": "Menyimpulkan asal hewan hanya berdasarkan kata 'stearoyl' tanpa informasi sumber.",
+  "sources": [
+    {
+      "label": "Peraturan (EC) Nomor 1333/2008 — Daftar gabungan dan ketentuan penggunaan bahan tambahan pangan",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Peraturan Komisi (EU) Nomor 231/2012 — spesifikasi bahan tambahan pangan yang diizinkan",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Stearoyl Lactylates",
+  "description": "Sepasang bahan tambahan yang berfungsi sebagai pengemulsi serta memengaruhi adonan dan tekstur: natrium stearoil-2-laktilat (E481) dan kalsium stearoil-2-laktilat (E482)."
 }

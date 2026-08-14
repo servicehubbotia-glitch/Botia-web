@@ -1,28 +1,28 @@
 {
   "name": "Pektin",
-  "title": "Pektin",
-  "description": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "what_is": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "why_botia": "BOTIA groups pectin declarations because labels can use the generic name, subtype or E-number. The ingredient name does not reveal degree of esterification, amidation or concentration unless separately stated.",
-  "can_1": "Detect E440, pectin, pectins and the common amidated/non-amidated subtype names.",
-  "can_2": "Show the texture and E-number information layers.",
-  "cannot_1": "Determine the exact pectin subtype or formulation when only 'pectin' is declared.",
-  "cannot_2": "Calculate the amount present from ingredient order alone.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E440",
+  "aliases": "E440, E440(i), E440(ii), INS 440, pektin, pektin-pektin, pektin non-amida, pektin amida, pektin-pektin amida",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E440, E440(i), E440(ii), INS 440, pectin, pectins, non-amidated pectin, amidated pectin, amidated pectins"
+  "what_is": "Keluarga bahan pembentuk gel dan penstabil polisakarida yang berasal dari tumbuhan, termasuk pektin non-amidasi dan pektin amidasi, yang dikelompokkan di bawah kode E440.",
+  "why_botia": "BOTIA mengelompokkan pencantuman pektin karena label dapat menggunakan nama generik, subtipe, atau nomor E. Nama bahan tersebut tidak menunjukkan tingkat esterifikasi, amidasasi, atau konsentrasinya, kecuali jika disebutkan secara terpisah.",
+  "can_1": "Mendeteksi E440, pektin, berbagai jenis pektin, serta nama-nama subtipe umum yang teramidasi dan tidak teramidasi.",
+  "can_2": "Tampilkan lapisan informasi tekstur dan nomor E.",
+  "cannot_1": "Tentukan subtipe atau formulasi pektin yang tepat apabila yang tercantum hanyalah 'pektin'.",
+  "cannot_2": "Hitung jumlah yang tersedia hanya berdasarkan pesanan bahan baku.",
+  "sources": [
+    {
+      "label": "Peraturan (EC) Nomor 1333/2008 — Daftar gabungan dan ketentuan penggunaan bahan tambahan pangan",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Peraturan Komisi (EU) Nomor 231/2012 — spesifikasi bahan tambahan pangan yang diizinkan",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Pektin",
+  "description": "Keluarga bahan pembentuk gel dan penstabil polisakarida yang berasal dari tumbuhan, termasuk pektin non-amidasi dan pektin amidasi, yang dikelompokkan di bawah kode E440."
 }

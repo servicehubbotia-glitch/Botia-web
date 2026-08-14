@@ -1,28 +1,28 @@
 {
   "name": "Polyglycerol Esters & PGPR",
-  "title": "Polyglycerol Esters & PGPR",
-  "description": "A texture/emulsifier grouping covering polyglycerol esters of fatty acids (E475) and polyglycerol polyricinoleate, PGPR (E476).",
-  "what_is": "A texture/emulsifier grouping covering polyglycerol esters of fatty acids (E475) and polyglycerol polyricinoleate, PGPR (E476).",
-  "why_botia": "BOTIA groups these declarations because E475 and E476 share polyglycerol-based naming but are distinct additives. PGPR should not be confused with sucrose esters or with generic mono- and diglycerides.",
-  "can_1": "Detect E475, E476, polyglycerol esters and PGPR declarations.",
-  "can_2": "Show the texture and E-number context while preserving the distinction between E475 and E476.",
-  "cannot_1": "Determine concentration or exact ester composition from the ingredient list.",
-  "cannot_2": "Treat E475 and E476 as chemically identical.",
-  "sources": [
-    {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    }
-  ],
   "e_code": "E475, E476",
+  "aliases": "E475, E476, esteri poliglicerolici di acidi grassi, esteri di acidi grassi poliglicerolici, poliricinoleato di poliglicerolo, poliricinoleato di poliglicerolo PGPR, PGPR",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E475, E476, polyglycerol esters of fatty acids, polyglycerol fatty acid esters, polyglycerol polyricinoleate, polyglycerol polyricinoleate PGPR, PGPR"
+  "what_is": "Un gruppo di sostanze texturizzanti/emulsionanti che comprende gli esteri poliglicerolici degli acidi grassi (E475) e il poliricinoleato di poliglicerolo, PGPR (E476).",
+  "why_botia": "BOTIA raggruppa queste dichiarazioni poiché E475 e E476 condividono una denominazione basata sul poliglicerolo, ma sono additivi distinti. PGPR non deve essere confuso con gli esteri del saccarosio né con i mono- e digliceridi generici.",
+  "can_1": "Individuare le dichiarazioni relative a E475, E476, esteri di poliglicerolo e PGPR.",
+  "can_2": "Mostra il contesto relativo alla consistenza e ai numeri E, mantenendo la distinzione tra E475 e E476.",
+  "cannot_1": "Determinare la concentrazione o la composizione esatta degli esteri dall'elenco degli ingredienti.",
+  "cannot_2": "Considerare E475 e E476 chimicamente identici.",
+  "sources": [
+    {
+      "label": "Regolamento (EC) n. 1333/2008 — Elenco comunitario e condizioni d’uso degli additivi alimentari",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Regolamento della Commissione (EU) n. 231/2012 — specifiche relative agli additivi alimentari autorizzati",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    }
+  ],
+  "title": "Polyglycerol Esters & PGPR",
+  "description": "Un gruppo di sostanze texturizzanti/emulsionanti che comprende gli esteri poliglicerolici degli acidi grassi (E475) e il poliricinoleato di poliglicerolo, PGPR (E476)."
 }
