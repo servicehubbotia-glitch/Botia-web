@@ -56,6 +56,39 @@ def run_git_cmd(cmd, cwd=None):
         sys.exit(1)
     return result.stdout.strip()
 
+def cargar_ui_labels():
+    """Carga i18n/ui_labels.json y devuelve los rótulos por idioma."""
+    ui_path = Path(REPO_DIR) / "i18n" / "ui_labels.json"
+    if not ui_path.exists():
+        print("⚠️ No se encontró i18n/ui_labels.json. Se usarán rótulos en inglés por defecto.")
+        return None
+    with open(ui_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    # Eliminar _meta
+    data.pop("_meta", None)
+    return data
+
+def get_labels(lang, ui_labels):
+    """Devuelve los rótulos para un idioma, con fallback al inglés si falta alguno."""
+    if ui_labels is None:
+        # Fallback a inglés si no hay archivo
+        return {
+            "what_is": "What it is",
+            "why_botia": "Why BOTIA flags it",
+            "can": "BOTIA CAN",
+            "cannot_do": "BOTIA CANNOT"
+        }
+    # Intentar obtener el idioma, si no existe usar inglés
+    labels = ui_labels.get(lang)
+    if labels is None:
+        labels = ui_labels.get("en", {})
+    # Asegurar que todas las claves existen
+    default = {"what_is": "What it is", "why_botia": "Why BOTIA flags it", "can": "BOTIA CAN", "cannot_do": "BOTIA CANNOT"}
+    for key in default:
+        if key not in labels or not labels[key]:
+            labels[key] = default[key]
+    return labels
+
 def get_ingredient_slugs(repo_path):
     """Recorre ingredients/ y devuelve lista de slugs (nombres de archivo sin extensión)."""
     ing_dir = os.path.join(repo_path, "ingredients")
@@ -82,15 +115,43 @@ def read_ingredient_json(repo_path, slug, lang):
             print(f"⚠️ Error al parsear {file_path}")
             return None
 
-def build_content(data):
-    """Construye el campo content concatenando los campos en orden."""
-    fields = ["what_is", "why_botia", "can_1", "can_2", "cannot_1", "cannot_2"]
+def build_content(data, lang, ui_labels):
+    """
+    Construye el campo content con rótulos y formato de lista.
+    Omite líneas si el campo de contenido está vacío.
+    """
+    labels = get_labels(lang, ui_labels)
     parts = []
-    for field in fields:
-        value = data.get(field)
-        if value and isinstance(value, str):
-            parts.append(value.strip())
-    return " ".join(parts)
+
+    # what_is
+    if data.get("what_is"):
+        parts.append(f"{labels['what_is']}: {data['what_is']}")
+
+    # why_botia
+    if data.get("why_botia"):
+        parts.append(f"{labels['why_botia']}: {data['why_botia']}")
+
+    # can (lista)
+    can_items = []
+    for i in range(1, 4):  # can_1, can_2, can_3 (algunas fichas tienen 3)
+        val = data.get(f"can_{i}")
+        if val:
+            can_items.append(f"- {val}")
+    if can_items:
+        parts.append(f"{labels['can']}:")
+        parts.extend(can_items)
+
+    # cannot_do (lista)
+    cannot_items = []
+    for i in range(1, 4):  # cannot_1, cannot_2, cannot_3
+        val = data.get(f"cannot_{i}")
+        if val:
+            cannot_items.append(f"- {val}")
+    if cannot_items:
+        parts.append(f"{labels['cannot_do']}:")
+        parts.extend(cannot_items)
+
+    return "\n".join(parts)
 
 def get_title(data):
     """Obtiene el título: usa 'name' si existe, si no 'title'."""
@@ -117,7 +178,14 @@ def main():
     run_git_cmd(f'git config user.email "{GIT_USER_EMAIL}"')
     run_git_cmd(f'git config user.name "{GIT_USER_NAME}"')
 
-    # 2. Obtener slugs de ingredientes
+    # 2. Cargar rótulos de UI
+    ui_labels = cargar_ui_labels()
+    if ui_labels:
+        print("✅ Rótulos de UI cargados correctamente.")
+    else:
+        print("⚠️ No se encontró i18n/ui_labels.json. Se usarán rótulos en inglés por defecto.")
+
+    # 3. Obtener slugs de ingredientes
     slugs = get_ingredient_slugs(REPO_DIR)
     print(f"\n📄 Encontrados {len(slugs)} ingredientes (excluyendo los listados).")
 
@@ -135,20 +203,32 @@ def main():
                 print(f"  ⚠️ {lang}: JSON no encontrado, omitido")
                 continue
 
+            # Construir la entrada para este idioma
             title = get_title(data)
-            content = build_content(data)
+            content = build_content(data, lang, ui_labels)
             aliases = get_aliases(data)
 
             if not title and not content:
                 print(f"  ⚠️ {lang}: sin título ni contenido, omitido")
                 continue
 
-            entry[lang] = {
+            # Construir el objeto con campos estructurados
+            lang_entry = {
                 "title": title,
+                "what_is": data.get("what_is", ""),
+                "why_botia": data.get("why_botia", ""),
+                "can_1": data.get("can_1", ""),
+                "can_2": data.get("can_2", ""),
+                "can_3": data.get("can_3", ""),
+                "cannot_1": data.get("cannot_1", ""),
+                "cannot_2": data.get("cannot_2", ""),
+                "cannot_3": data.get("cannot_3", ""),
                 "content": content,
                 "link": f"https://www.botia-safefood.com/ingredients/{slug}.html",
                 "aliases": aliases
             }
+
+            entry[lang] = lang_entry
             idiomas_presentes += 1
 
         if entry:
@@ -156,7 +236,7 @@ def main():
             total_idiomas_procesados += idiomas_presentes
             print(f"  ✅ {idiomas_presentes}/{len(LANGUAGES)} idiomas incluidos")
 
-    # 3. Guardar master_kb.json
+    # 4. Guardar master_kb.json
     output_path = os.path.join(REPO_DIR, "master_kb.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(master_kb, f, ensure_ascii=False, indent=2)
@@ -164,7 +244,7 @@ def main():
     print(f"\n✅ master_kb.json generado con {len(master_kb)} ingredientes.")
     print(f"📊 Total de entradas (idioma × ingrediente): {total_idiomas_procesados}")
 
-    # 4. Commit y push (opcional, para tenerlo en el repo)
+    # 5. Commit y push (opcional, para tenerlo en el repo)
     print("\n📦 Añadiendo master_kb.json al índice...")
     run_git_cmd("git add master_kb.json")
 
