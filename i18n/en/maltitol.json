@@ -8,12 +8,16 @@
     "enumbers"
   ],
   "what_is": "A low-calorie polyol sugar alcohol obtained by hydrogenation of D-maltose.",
-  "why_botia": "Industrial sugar replacer used in ultra-processed products, can cause digestive issues.",
+  "why_botia": "BOTIA flags E965 because it is a polyol used as a bulk sweetener. WHO/JECFA sets no numerical ADI but notes that excessive consumption of polyols may produce laxative effects. EU rules require a warning above 10% added polyols.",
   "can_1": "Detect E965 and map it to sweetener and E-number layers.",
   "can_2": "Provide context on glycemic properties and potential digestive discomfort.",
   "cannot_1": "Measure the exact percentage of maltitol added.",
   "cannot_2": "Confirm if nickel catalyst residues exceed the 2 mg/kg limit.",
   "sources": [
+    {
+      "label": "WHO/JECFA — Maltitol (INS 965(i))",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/721"
+    },
     {
       "label": "Commission Regulation (EU) No 231/2012",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
