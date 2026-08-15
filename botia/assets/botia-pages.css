@@ -235,3 +235,18 @@ body[dir="rtl"] .cannot-box li::before {
   right: 0;
   left: auto;
 }
+
+/* ============================================
+   BOTIA — ICONOS TEMÁTICOS 144 × 144
+   Todos con la misma importancia visual
+   ============================================ */
+
+.hero img,
+.hero-logo,
+#module_icon,
+.module-card img,
+.evidence-card img {
+    width: 144px !important;
+    height: 144px !important;
+    object-fit: contain !important;
+}
