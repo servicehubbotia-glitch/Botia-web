@@ -304,7 +304,10 @@
 
         toggleBtn = document.createElement('button');
         toggleBtn.id = 'botia-toggle-btn';
-        toggleBtn.setAttribute('aria-label', 'Open BOTIA chat');
+        toggleBtn.setAttribute(
+            'aria-label',
+            t('openChatLabel') || 'Open BOTIA chat'
+        );
         toggleBtn.style.cssText = 'background:transparent;border:none;cursor:pointer;padding:0;';
         toggleBtn.innerHTML = '<div style="position:relative;width:100px;height:100px;"><div id="botia-notification" style="position:absolute;top:-10px;right:-10px;min-width:28px;height:28px;background:#ff4444;border-radius:50%;border:3px solid #100707;display:none;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:white;padding:0 6px;z-index:10;">1</div><img src="/botia/assets/robot.png" alt="BOTIA" id="botia-robot-img" style="width:100px;height:100px;object-fit:contain;display:block;filter:drop-shadow(0 8px 30px rgba(230,160,107,0.5));transition:transform 0.3s ease;"></div>';
 
@@ -375,6 +378,12 @@
                     if (titleEl) titleEl.textContent = t('title');
                     inputEl.placeholder = t('placeholder');
                     sendBtn.textContent = t('sendButton');
+                    if (toggleBtn) {
+                        toggleBtn.setAttribute(
+                            'aria-label',
+                            t('openChatLabel') || 'Open BOTIA chat'
+                        );
+                    }
                 });
             }
         });
