@@ -21,6 +21,162 @@
     enumbers: "/ingredients/enumbers.html"
   };
 
+  const LAYER_LABELS = {
+    en: {
+      muslim: "Muslim",
+      animal: "Animal",
+      sugar: "Sugar",
+      sweetener: "Sweetener",
+      texture: "Texture",
+      flavour: "Flavour",
+      enumbers: "E-numbers",
+      woman: "Woman"
+    },
+
+    es: {
+      muslim: "Musulmán",
+      animal: "Animal",
+      sugar: "Azúcar",
+      sweetener: "Edulcorante",
+      texture: "Textura",
+      flavour: "Aromas",
+      enumbers: "Números E",
+      woman: "Mujer"
+    },
+
+    ar: {
+      muslim: "مسلم",
+      animal: "حيواني",
+      sugar: "سكر",
+      sweetener: "مُحلّي",
+      texture: "قوام",
+      flavour: "نكهات",
+      enumbers: "أرقام E",
+      woman: "المرأة"
+    },
+
+    de: {
+      muslim: "Muslim",
+      animal: "Tierisch",
+      sugar: "Zucker",
+      sweetener: "Süßstoff",
+      texture: "Textur",
+      flavour: "Aromen",
+      enumbers: "E-Nummern",
+      woman: "Frau"
+    },
+
+    fr: {
+      muslim: "Musulman",
+      animal: "Animal",
+      sugar: "Sucre",
+      sweetener: "Édulcorant",
+      texture: "Texture",
+      flavour: "Arômes",
+      enumbers: "Numéros E",
+      woman: "Femme"
+    },
+
+    nl: {
+      muslim: "Moslim",
+      animal: "Dierlijk",
+      sugar: "Suiker",
+      sweetener: "Zoetstof",
+      texture: "Textuur",
+      flavour: "Aroma's",
+      enumbers: "E-nummers",
+      woman: "Vrouw"
+    },
+
+    it: {
+      muslim: "Musulmano",
+      animal: "Animale",
+      sugar: "Zucchero",
+      sweetener: "Dolcificante",
+      texture: "Consistenza",
+      flavour: "Aromi",
+      enumbers: "Numeri E",
+      woman: "Donna"
+    },
+
+    pt: {
+      muslim: "Muçulmano",
+      animal: "Animal",
+      sugar: "Açúcar",
+      sweetener: "Edulcorante",
+      texture: "Textura",
+      flavour: "Aromas",
+      enumbers: "Números E",
+      woman: "Mulher"
+    },
+
+    pl: {
+      muslim: "Muzułmański",
+      animal: "Zwierzęce",
+      sugar: "Cukier",
+      sweetener: "Słodzik",
+      texture: "Tekstura",
+      flavour: "Aromaty",
+      enumbers: "Numery E",
+      woman: "Kobieta"
+    },
+
+    ro: {
+      muslim: "Musulman",
+      animal: "Animal",
+      sugar: "Zahăr",
+      sweetener: "Îndulcitor",
+      texture: "Textură",
+      flavour: "Arome",
+      enumbers: "Numere E",
+      woman: "Femeie"
+    },
+
+    ru: {
+      muslim: "Мусульманский",
+      animal: "Животное",
+      sugar: "Сахар",
+      sweetener: "Подсластитель",
+      texture: "Текстура",
+      flavour: "Ароматизаторы",
+      enumbers: "E-номера",
+      woman: "Женщина"
+    },
+
+    tr: {
+      muslim: "Müslüman",
+      animal: "Hayvansal",
+      sugar: "Şeker",
+      sweetener: "Tatlandırıcı",
+      texture: "Doku",
+      flavour: "Aroma",
+      enumbers: "E numaraları",
+      woman: "Kadın"
+    },
+
+    zh: {
+      muslim: "穆斯林",
+      animal: "动物源",
+      sugar: "糖",
+      sweetener: "甜味剂",
+      texture: "质地",
+      flavour: "香料",
+      enumbers: "E编号",
+      woman: "女性"
+    },
+
+    id: {
+      muslim: "Muslim",
+      animal: "Hewani",
+      sugar: "Gula",
+      sweetener: "Pemanis",
+      texture: "Tekstur",
+      flavour: "Perisa",
+      enumbers: "Nomor E",
+      woman: "Perempuan"
+    }
+  };
+
   // Shared labels used by the Halal / Haram / Mashbooh WebViews.
   const UI_TEXT = {
     en: { detected: "What BOTIA detected", matters: "Why it matters", cannot: "Label limits", sources: "Context", note: "Note", disclaimer: "BOTIA informs based on the ingredients read from the label.", more_info: "More about", what_is: "What it is", why_botia: "Why BOTIA flags it", can: "BOTIA CAN", cannot_do: "BOTIA CANNOT", sources_title: "Sources", back: "← Back", select_language: "Select language" },
@@ -183,7 +339,10 @@
         const route = LAYER_ROUTES[layer];
         const badge = document.createElement(route ? "a" : "span");
         badge.className = `layer-badge layer-${layer}`;
-        badge.textContent = layer;
+        badge.textContent =
+          LAYER_LABELS[lang]?.[layer] ||
+          LAYER_LABELS.en[layer] ||
+          layer;
         if (route) {
           const href = new URL(route, location.origin);
           href.searchParams.set("lang", lang);
@@ -275,7 +434,10 @@
           const route = LAYER_ROUTES[layer];
           const badge = document.createElement(route ? "a" : "span");
           badge.className = `layer-badge layer-${layer}`;
-          badge.textContent = layer;
+          badge.textContent =
+            LAYER_LABELS[lang]?.[layer] ||
+            LAYER_LABELS.en[layer] ||
+            layer;
           if (route) {
             const layerHref = new URL(route, location.origin);
             layerHref.searchParams.set("lang", lang);
