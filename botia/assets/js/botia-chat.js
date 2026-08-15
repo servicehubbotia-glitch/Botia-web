@@ -271,7 +271,8 @@
 
         const title = document.createElement('h3');
         title.style.cssText = 'font-weight:500;font-size:1.1rem;color:#f2e4dc;margin:0;';
-        title.innerHTML = '🤖 <span style="color:#e6a06b;">BOTIA</span> · <span id="botia-chat-title">' + t('title') + '</span>';
+        // Cambio aquí: eliminar el emoji y el espacio
+        title.innerHTML = '<span style="color:#e6a06b;">BOTIA</span> · <span id="botia-chat-title">' + t('title') + '</span>';
         header.appendChild(title);
 
         closeBtn = document.createElement('button');
