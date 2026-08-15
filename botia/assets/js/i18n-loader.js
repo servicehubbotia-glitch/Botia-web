@@ -230,7 +230,11 @@
       search.setAttribute("aria-label", data.search_aria_label || data.search_placeholder || "Search ingredients");
     }
 
-    const cards = data.ingredients.map(item => {
+    // Ordenar los ingredientes según el idioma actual
+    const sorted = [...data.ingredients].sort((a, b) =>
+      String(a.name || "").localeCompare(String(b.name || ""), lang)
+    );
+    const cards = sorted.map(item => {
       const card = document.createElement("article");
       card.className = "ingredient-card";
       card.dataset.search = [item.name, item.e_code, item.aliases]
