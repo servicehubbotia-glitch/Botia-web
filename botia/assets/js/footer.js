@@ -18,8 +18,6 @@
     country: "Nederland",
     kvk: "42023784",
     email: "soporte@botia-safefood.com",
-    phone: "+31 6 83 00 29 35",
-    phoneRaw: "+31683002935",
     year: "2026"
   };
 
@@ -86,7 +84,6 @@
     colContact.innerHTML = `
       <h4 class="footer-title">${t(labels, "footer_contact_title", "Contact")}</h4>
       <p class="footer-text"><a href="mailto:${COMPANY.email}">${COMPANY.email}</a></p>
-      <p class="footer-text"><a href="tel:${COMPANY.phoneRaw}">${COMPANY.phone}</a></p>
     `;
 
     // ---- Column 3: Legal ----
