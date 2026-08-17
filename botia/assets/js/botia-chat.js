@@ -171,12 +171,20 @@
         btns.style.cssText = 'display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;';
 
         const discoverBtn = document.createElement('a');
-        discoverBtn.href = '/try.html?lang=' + encodeURIComponent(currentLang);
+        discoverBtn.href = q.link || '#';
         discoverBtn.target = '_blank';
         discoverBtn.rel = 'noopener';
         discoverBtn.textContent = t('discoverButton') || 'Discover on BOTIA';
         discoverBtn.style.cssText = 'background:#e6a06b;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#100707;text-decoration:none;display:inline-block;font-size:0.85rem;';
         btns.appendChild(discoverBtn);
+
+        const tryBtn = document.createElement('a');
+        tryBtn.href = '/try.html?lang=' + encodeURIComponent(currentLang);
+        tryBtn.target = '_blank';
+        tryBtn.rel = 'noopener';
+        tryBtn.textContent = t('tryButton') || 'Try BOTIA';
+        tryBtn.style.cssText = 'background:#e6a06b;border:1px solid #e6a06b;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#100707;text-decoration:none;display:inline-block;font-size:0.85rem;';
+        btns.appendChild(tryBtn);
 
         const nextBtn = document.createElement('button');
         nextBtn.textContent = t('nextButton') || 'Next question';
