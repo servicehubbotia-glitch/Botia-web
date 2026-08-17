@@ -4,6 +4,7 @@
     const WORKER_URL = 'https://botia-web.servicehub-botia.workers.dev';
     const MAX_FREE_QUESTIONS = 3;
     const STORAGE_KEY = 'botia_chat_session';
+    const AUTO_OPEN_KEY = 'botia_chat_auto_opened';
 
     let currentLang = 'en';
     let freeQuestionsUsed = 0;
@@ -271,7 +272,6 @@
 
         const title = document.createElement('h3');
         title.style.cssText = 'font-weight:500;font-size:1.1rem;color:#f2e4dc;margin:0;';
-        // Cambio aquí: eliminar el emoji y el espacio
         title.innerHTML = '<span style="color:#e6a06b;">BOTIA</span> · <span id="botia-chat-title">' + t('title') + '</span>';
         header.appendChild(title);
 
@@ -310,7 +310,7 @@
             t('openChatLabel') || 'Open BOTIA chat'
         );
         toggleBtn.style.cssText = 'background:transparent;border:none;cursor:pointer;padding:0;';
-        toggleBtn.innerHTML = '<div style="position:relative;width:100px;height:100px;"><div id="botia-notification" style="position:absolute;top:-10px;right:-10px;min-width:28px;height:28px;background:#ff4444;border-radius:50%;border:3px solid #100707;display:none;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:white;padding:0 6px;z-index:10;">1</div><img src="/botia/assets/robot.png" alt="BOTIA" id="botia-robot-img" style="width:100px;height:100px;object-fit:contain;display:block;filter:drop-shadow(0 8px 30px rgba(230,160,107,0.5));transition:transform 0.3s ease;"></div>';
+        toggleBtn.innerHTML = '<div class="botia-robot-wrap" style="position:relative;width:132px;height:132px;"><div id="botia-notification" style="position:absolute;top:-10px;right:-10px;min-width:28px;height:28px;background:#ff4444;border-radius:50%;border:3px solid #100707;display:none;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:white;padding:0 6px;z-index:10;">1</div><img src="/botia/assets/robot.png" alt="BOTIA" id="botia-robot-img" style="width:132px;height:132px;object-fit:contain;display:block;filter:drop-shadow(0 8px 30px rgba(230,160,107,0.5));transition:transform 0.3s ease;"></div>';
 
         container.appendChild(chatWindow);
         container.appendChild(toggleBtn);
@@ -324,8 +324,7 @@
         if (window.clearBotiaNotification) window.clearBotiaNotification();
 
         if (messagesEl.children.length === 0) {
-            appendMessage('bot', t('welcome') || "👋 Hi! I'm the BOTIA assistant.");
-            setTimeout(showQuizQuestion, 600);
+            showQuizQuestion();
         }
 
         if (freeQuestionsUsed < MAX_FREE_QUESTIONS) inputEl.focus();
@@ -334,6 +333,17 @@
     function closeChat() {
         chatWindow.style.display = 'none';
         isOpen = false;
+    }
+
+    // ============ AUTO OPEN ONCE PER SESSION ============
+    function autoOpenOncePerSession() {
+        try {
+            if (sessionStorage.getItem(AUTO_OPEN_KEY) === '1') return;
+            sessionStorage.setItem(AUTO_OPEN_KEY, '1');
+            setTimeout(function() {
+                if (!isOpen) openChat();
+            }, 650);
+        } catch(e) {}
     }
 
     // ============ EVENTOS ============
@@ -404,6 +414,7 @@
             '@media (max-width:540px) {',
             '  #botia-chat-window { width:92vw !important; height:460px !important; }',
             '  #botia-chat-container { right:12px !important; bottom:12px !important; }',
+            '  #botia-toggle-btn .botia-robot-wrap { width:120px !important; height:120px !important; }',
             '  #botia-toggle-btn img { width:120px !important; height:120px !important; }',
             '}'
         ].join('');
@@ -424,6 +435,7 @@
         addStyles();
         createElements();
         attachEvents();
+        autoOpenOncePerSession();
     }
 
     if (document.readyState === 'loading') {
