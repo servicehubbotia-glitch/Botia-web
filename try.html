@@ -80,39 +80,61 @@
 
   /* --- Results --- */
   #results { margin-top: 28px; }
+
+  .layer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .layer-tile {
+    background: rgba(24,13,13,0.9);
+    border: 1px solid rgba(190,122,72,0.28);
+    border-radius: 16px;
+    padding: 20px 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s ease;
+  }
+  .layer-tile:hover {
+    border-color: rgba(190,122,72,0.7);
+    background: rgba(190,122,72,0.10);
+  }
+  .layer-tile img {
+    width: 64px; height: 64px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto; margin-right: auto;
+  }
+  .layer-tile-name {
+    font-size: 0.95rem;
+    color: #ffd8bd;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .layer-tile-items {
+    font-size: 0.8rem;
+    color: #8a8a8a;
+    line-height: 1.5;
+  }
+  .layer-tile.decision-halal { border-color: rgba(123,191,123,0.45); }
+  .layer-tile.decision-haram { border-color: rgba(217,112,112,0.5); }
+  .layer-tile.decision-doubt { border-color: rgba(230,160,107,0.55); }
+  .layer-tile.decision-halal .layer-tile-name { color: #7bbf7b; }
+  .layer-tile.decision-haram .layer-tile-name { color: #d97070; }
+  .layer-tile.decision-doubt .layer-tile-name { color: #e6a06b; }
+
   .result-block { margin-bottom: 22px; }
   .result-title { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: #e6a06b; margin-bottom: 10px; }
-  .layer-row { display: flex; flex-wrap: wrap; gap: 8px; }
-  .layer-pill {
-    background: rgba(190,122,72,0.16); border: 1px solid rgba(190,122,72,0.4);
-    border-radius: 30px; padding: 6px 16px; font-size: 0.85rem;
-    color: #ffd8bd; text-decoration: none; font-weight: 600;
-  }
-  .layer-pill:hover { background: rgba(190,122,72,0.3); }
-
-  .trigger-card {
-    background: rgba(24,13,13,0.9); border: 1px solid rgba(190,122,72,0.22);
-    border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;
-    display: block; text-decoration: none;
-  }
-  .trigger-card:hover { border-color: rgba(190,122,72,0.55); }
-  .trigger-name { font-size: 0.98rem; color: #ffd8bd; font-weight: 600; }
-  .trigger-ecode { font-size: 0.85rem; color: #e6a06b; margin-left: 8px; }
-  .trigger-layers { font-size: 0.78rem; color: #8a8a8a; margin-top: 5px; }
-
-  .muslim-box {
-    border-radius: 12px; padding: 16px 18px;
-    background: rgba(24,13,13,0.9); border-left: 4px solid rgba(190,122,72,0.6);
-  }
-  .muslim-decision { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
-  .muslim-halal  { color: #7bbf7b; }
-  .muslim-doubt  { color: #e6a06b; }
-  .muslim-haram  { color: #d97070; }
-  .muslim-detail { font-size: 0.88rem; color: #c0a08c; line-height: 1.55; }
-
   .read-list {
     background: rgba(255,255,255,0.04); border-radius: 12px;
     padding: 14px 16px; font-size: 0.9rem; color: #c0a08c; line-height: 1.7;
+  }
+  .product-name {
+    font-size: 1.15rem; color: #ffd8bd; font-weight: 600;
+    text-align: center; margin-bottom: 20px;
   }
 
   .status { font-size: 0.9rem; color: #c0a08c; padding: 14px 0; }
@@ -343,91 +365,160 @@
       results.innerHTML = "";
     }
 
+    var LAYER_LABELS = {
+      en: { animal: "Animal origin", woman: "Woman", sugar: "Sugar", sweetener: "Sweeteners", texture: "Texture", flavour: "Flavourings", enumbers: "E-numbers" },
+      es: { animal: "Origen animal", woman: "Mujer", sugar: "Azúcar", sweetener: "Edulcorantes", texture: "Textura", flavour: "Aromas", enumbers: "Números E" },
+      fr: { animal: "Origine animale", woman: "Femme", sugar: "Sucre", sweetener: "Édulcorants", texture: "Texture", flavour: "Arômes", enumbers: "Numéros E" },
+      de: { animal: "Tierischer Ursprung", woman: "Frau", sugar: "Zucker", sweetener: "Süßungsmittel", texture: "Textur", flavour: "Aromen", enumbers: "E-Nummern" },
+      nl: { animal: "Dierlijke oorsprong", woman: "Vrouw", sugar: "Suiker", sweetener: "Zoetstoffen", texture: "Textuur", flavour: "Aroma\'s", enumbers: "E-nummers" },
+      it: { animal: "Origine animale", woman: "Donna", sugar: "Zucchero", sweetener: "Edulcoranti", texture: "Consistenza", flavour: "Aromi", enumbers: "Numeri E" },
+      pt: { animal: "Origem animal", woman: "Mulher", sugar: "Açúcar", sweetener: "Edulcorantes", texture: "Textura", flavour: "Aromatizantes", enumbers: "Números E" },
+      pl: { animal: "Pochodzenie zwierzęce", woman: "Kobieta", sugar: "Cukier", sweetener: "Substancje słodzące", texture: "Tekstura", flavour: "Aromaty", enumbers: "Numery E" },
+      ro: { animal: "Origine animală", woman: "Femeie", sugar: "Zahăr", sweetener: "Îndulcitori", texture: "Textură", flavour: "Arome", enumbers: "Numere E" },
+      ru: { animal: "Животное происхождение", woman: "Женщина", sugar: "Сахар", sweetener: "Подсластители", texture: "Текстура", flavour: "Ароматизаторы", enumbers: "E-номера" },
+      tr: { animal: "Hayvansal köken", woman: "Kadın", sugar: "Şeker", sweetener: "Tatlandırıcılar", texture: "Doku", flavour: "Aromalar", enumbers: "E-numaraları" },
+      id: { animal: "Asal hewani", woman: "Perempuan", sugar: "Gula", sweetener: "Pemanis", texture: "Tekstur", flavour: "Perisa", enumbers: "Nomor E" },
+      ar: { animal: "أصل حيواني", woman: "المرأة", sugar: "السكر", sweetener: "المُحلّيات", texture: "القوام", flavour: "النكهات", enumbers: "أرقام E" },
+      zh: { animal: "动物来源", woman: "女性", sugar: "糖", sweetener: "甜味剂", texture: "质地", flavour: "香料", enumbers: "E编号" }
+    };
+
+    var LAYER_ICONS = {
+      animal: "animal.png",
+      muslim: "muslim.png",
+      woman: "mujer.png",
+      sugar: "Sugar.png",
+      sweetener: "sweeteners.png",
+      texture: "texture.png",
+      flavour: "flavors.png",
+      enumbers: "enumbers.png"
+    };
+
+    var LAYER_ROUTES = {
+      animal: "/pages/animal.html",
+      woman: "/pages/woman.html",
+      sugar: "/ingredients/sugar.html",
+      sweetener: "/ingredients/sweetener.html",
+      texture: "/ingredients/texture.html",
+      flavour: "/ingredients/flavor.html",
+      enumbers: "/ingredients/enumbers.html"
+    };
+
+    var DECISION_ROUTES = {
+      halal: "/ingredients/halal.html",
+      haram: "/ingredients/haram.html",
+      doubt: "/ingredients/mashbooh.html"
+    };
+
+    var DECISION_ICONS = {
+      halal: "Halal.png",
+      haram: "Haram.png",
+      doubt: "muslim.png"
+    };
+
+    function tile(opts) {
+      var a = document.createElement("a");
+      a.className = "layer-tile" + (opts.extraClass ? " " + opts.extraClass : "");
+      a.href = opts.href;
+      a.target = "_blank";
+      a.rel = "noopener";
+
+      var img = document.createElement("img");
+      img.src = "/botia/assets/" + opts.icon;
+      img.alt = "";
+      img.onerror = function () { this.src = "/botia_jar_512.png"; };
+      a.appendChild(img);
+
+      var n = document.createElement("div");
+      n.className = "layer-tile-name";
+      n.textContent = opts.name;
+      a.appendChild(n);
+
+      if (opts.items) {
+        var it = document.createElement("div");
+        it.className = "layer-tile-items";
+        it.textContent = opts.items;
+        a.appendChild(it);
+      }
+      return a;
+    }
+
     function render(data, lang) {
       results.innerHTML = "";
+      var q = "?lang=" + encodeURIComponent(lang);
 
+      // --- Product name ---
       if (data.product_name && data.product_name !== "Unknown") {
-        var pb = block("res_product", "Product");
         var pn = document.createElement("div");
-        pn.className = "read-list";
+        pn.className = "product-name";
         pn.textContent = data.product_name;
-        pb.appendChild(pn);
-        results.appendChild(pb);
+        results.appendChild(pn);
       }
 
-      if (Array.isArray(data.layers) && data.layers.length) {
-        var lb = block("res_layers", "Layers activated");
-        var row = document.createElement("div");
-        row.className = "layer-row";
-        data.layers.forEach(function (layer) {
-          var pill = document.createElement("span");
-          pill.className = "layer-pill layer-" + layer;
-          pill.textContent = layer;
-          row.appendChild(pill);
-        });
-        lb.appendChild(row);
-        results.appendChild(lb);
+      // --- Grid of layer tiles ---
+      var grid = document.createElement("div");
+      grid.className = "layer-grid";
+
+      // 1. Muslim decision — always first
+      if (data.decision) {
+        var dec = data.decision;
+        var decRoute = DECISION_ROUTES[dec] || DECISION_ROUTES.doubt;
+        var decHref = decRoute + q;
+        if (data.muslim_trigger) {
+          decHref += "&trigger=" + encodeURIComponent(data.muslim_trigger);
+        }
+        grid.appendChild(tile({
+          href: decHref,
+          icon: DECISION_ICONS[dec] || "muslim.png",
+          name: t("dec_" + dec, dec.toUpperCase()),
+          items: data.muslim_trigger || "",
+          extraClass: "decision-" + dec
+        }));
       }
 
-      var tb = block("res_triggers", "What BOTIA detected");
-      if (Array.isArray(data.triggers) && data.triggers.length) {
-        data.triggers.forEach(function (tr) {
-          var a = document.createElement("a");
-          a.className = "trigger-card";
-          a.href = (tr.url || "#") + "?lang=" + encodeURIComponent(lang);
-          a.target = "_blank";
-          a.rel = "noopener";
-
-          var n = document.createElement("span");
-          n.className = "trigger-name";
-          n.textContent = tr.name || tr.slug;
-          a.appendChild(n);
-
-          if (tr.e_code) {
-            var e = document.createElement("span");
-            e.className = "trigger-ecode";
-            e.textContent = tr.e_code;
-            a.appendChild(e);
-          }
-          if (Array.isArray(tr.layers) && tr.layers.length) {
-            var l = document.createElement("div");
-            l.className = "trigger-layers";
-            l.textContent = tr.layers.join(" \u00b7 ");
-            a.appendChild(l);
-          }
-          tb.appendChild(a);
+      // 2. Evidence layers, each with its own ingredients
+      var byLayer = {};
+      (data.triggers || []).forEach(function (tr) {
+        (tr.layers || []).forEach(function (layer) {
+          if (layer === "muslim") return;
+          if (!byLayer[layer]) byLayer[layer] = [];
+          byLayer[layer].push(tr);
         });
-      } else {
+      });
+
+      Object.keys(byLayer).forEach(function (layer) {
+        var route = LAYER_ROUTES[layer];
+        if (!route) return;
+        var items = byLayer[layer];
+        var slugs = items.map(function (i) { return i.slug; }).join(",");
+        var names = items.map(function (i) { return i.name || i.slug; }).join(" · ");
+        var labels = LAYER_LABELS[lang] || LAYER_LABELS.en;
+
+        grid.appendChild(tile({
+          href: route + q + "&trigger=" + encodeURIComponent(slugs),
+          icon: LAYER_ICONS[layer] || "botia_jar_512.png",
+          name: labels[layer] || layer,
+          items: names
+        }));
+      });
+
+      results.appendChild(grid);
+
+      // --- Nothing found ---
+      if (!data.decision && (!data.triggers || !data.triggers.length)) {
         var none = document.createElement("p");
         none.className = "status";
         none.textContent = t("res_none", "BOTIA found nothing it flags in this list.");
-        tb.appendChild(none);
-      }
-      results.appendChild(tb);
-
-      if (data.decision) {
-        var mb = block("res_muslim", "Muslim choice");
-        var box = document.createElement("div");
-        box.className = "muslim-box";
-        var dec = document.createElement("div");
-        dec.className = "muslim-decision muslim-" + data.decision;
-        dec.textContent = t("dec_" + data.decision, data.decision.toUpperCase());
-        box.appendChild(dec);
-        var detail = [];
-        if (data.muslim_trigger) detail.push(data.muslim_trigger);
-        if (data.muslim_note) detail.push(data.muslim_note);
-        if (detail.length) {
-          var dd = document.createElement("div");
-          dd.className = "muslim-detail";
-          dd.textContent = detail.join(" \u2014 ");
-          box.appendChild(dd);
-        }
-        mb.appendChild(box);
-        results.appendChild(mb);
+        results.appendChild(none);
       }
 
+      // --- Ingredients read ---
       if (data.ingredients_read) {
-        var rb = block("res_read", "Ingredients read");
+        var rb = document.createElement("div");
+        rb.className = "result-block";
+        var h = document.createElement("div");
+        h.className = "result-title";
+        h.textContent = t("res_read", "Ingredients read");
+        rb.appendChild(h);
         var rl = document.createElement("div");
         rl.className = "read-list";
         rl.textContent = data.ingredients_read;
