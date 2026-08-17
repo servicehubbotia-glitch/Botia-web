@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOTIA — Try it | Paste an ingredient list</title>
+  <meta property="og:title" content="BOTIA — Try it">
+  <meta property="og:description" content="Paste the ingredient list from any food label and see what BOTIA reads in it. No app needed.">
+  <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <meta property="og:url" content="https://www.botia-safefood.com/pages/try.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BOTIA — Try it">
+  <meta name="twitter:description" content="Paste the ingredient list from any food label and see what BOTIA reads in it. No app needed.">
+  <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <link rel="canonical" href="https://www.botia-safefood.com/pages/try.html" />
+  <meta name="description" content="Paste the ingredient list from any food label and see what BOTIA reads in it. No app needed." />
+  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
+  <link rel="preload" href="/botia-landing.css" as="style">
+  <link rel="stylesheet" href="/botia-landing.css" />
+  <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
+  <style>
+  .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
+  .hero { padding: 12px 0 0; text-align: center; }
+  .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
+  .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
+  .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
+  .description { font-size: 0.9rem; color: #8a8a8a; }
+
+  /* --- App banner --- */
+  .app-banner {
+    background: rgba(24,13,13,0.9);
+    border: 1px solid rgba(190,122,72,0.35);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 20px 0 28px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .app-banner-text { flex: 1; min-width: 200px; }
+  .app-banner-title { font-size: 1rem; color: #ffd8bd; font-weight: 600; margin-bottom: 4px; }
+  .app-banner-sub { font-size: 0.85rem; color: #8a8a8a; line-height: 1.5; }
+  .app-badge {
+    display: inline-block; background: rgba(190,122,72,0.16);
+    border: 1px solid rgba(190,122,72,0.35); border-radius: 8px;
+    padding: 10px 20px; color: #c0a08c; font-size: 0.9rem; font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* --- Input --- */
+  .try-box { margin-bottom: 20px; }
+  .try-label { display: block; font-size: 0.95rem; color: #e6a06b; margin-bottom: 8px; font-weight: 600; }
+  #ingredients-input {
+    width: 100%; min-height: 140px; padding: 14px 16px;
+    border-radius: 12px; border: 1px solid rgba(190,122,72,0.42);
+    background: rgba(255,255,255,0.05); color: #f2e4dc;
+    font-family: inherit; font-size: 0.95rem; line-height: 1.6;
+    outline: none; resize: vertical; box-sizing: border-box;
+  }
+  #ingredients-input:focus { border-color: #e6a06b; }
+  .try-actions { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; align-items: center; }
+  .btn-analyse {
+    background: #e6a06b; border: none; border-radius: 60px;
+    padding: 0.7rem 1.8rem; font-weight: 700; color: #100707;
+    cursor: pointer; font-size: 0.95rem; font-family: inherit;
+  }
+  .btn-analyse:disabled { opacity: 0.5; cursor: default; }
+  .btn-clear {
+    background: transparent; border: 1px solid rgba(190,122,72,0.4);
+    border-radius: 60px; padding: 0.7rem 1.4rem; color: #c0a08c;
+    cursor: pointer; font-size: 0.9rem; font-family: inherit;
+  }
+  .char-count { font-size: 0.8rem; color: #6f6f6f; margin-left: auto; }
+
+  /* --- Results --- */
+  #results { margin-top: 28px; }
+  .result-block { margin-bottom: 22px; }
+  .result-title { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: #e6a06b; margin-bottom: 10px; }
+  .layer-row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .layer-pill {
+    background: rgba(190,122,72,0.16); border: 1px solid rgba(190,122,72,0.4);
+    border-radius: 30px; padding: 6px 16px; font-size: 0.85rem;
+    color: #ffd8bd; text-decoration: none; font-weight: 600;
+  }
+  .layer-pill:hover { background: rgba(190,122,72,0.3); }
+
+  .trigger-card {
+    background: rgba(24,13,13,0.9); border: 1px solid rgba(190,122,72,0.22);
+    border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;
+    display: block; text-decoration: none;
+  }
+  .trigger-card:hover { border-color: rgba(190,122,72,0.55); }
+  .trigger-name { font-size: 0.98rem; color: #ffd8bd; font-weight: 600; }
+  .trigger-ecode { font-size: 0.85rem; color: #e6a06b; margin-left: 8px; }
+  .trigger-layers { font-size: 0.78rem; color: #8a8a8a; margin-top: 5px; }
+
+  .muslim-box {
+    border-radius: 12px; padding: 16px 18px;
+    background: rgba(24,13,13,0.9); border-left: 4px solid rgba(190,122,72,0.6);
+  }
+  .muslim-decision { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+  .muslim-halal  { color: #7bbf7b; }
+  .muslim-doubt  { color: #e6a06b; }
+  .muslim-haram  { color: #d97070; }
+  .muslim-detail { font-size: 0.88rem; color: #c0a08c; line-height: 1.55; }
+
+  .read-list {
+    background: rgba(255,255,255,0.04); border-radius: 12px;
+    padding: 14px 16px; font-size: 0.9rem; color: #c0a08c; line-height: 1.7;
+  }
+
+  .status { font-size: 0.9rem; color: #c0a08c; padding: 14px 0; }
+  .status-error { color: #d97070; }
+
+  .disclaimer {
+    font-size: 0.75rem; color: #6f6f6f; line-height: 1.6;
+    border-top: 1px solid rgba(190,122,72,0.15);
+    margin-top: 30px; padding-top: 16px;
+  }
+
+  .closing { text-align: center; padding: 20px 0; }
+  .cta-button {
+    display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+    padding: 10px 24px; border-radius: 8px; text-decoration: none;
+    border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+  }
+  .cta-button:hover { background: rgba(190,122,72,0.35); }
+  .hero + .section { margin-top: 0 !important; }
+</style>
+  <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/pages/try.html?lang=en">
+  <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/pages/try.html?lang=es">
+  <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/pages/try.html?lang=ar">
+  <link rel="alternate" hreflang="de" href="https://www.botia-safefood.com/pages/try.html?lang=de">
+  <link rel="alternate" hreflang="fr" href="https://www.botia-safefood.com/pages/try.html?lang=fr">
+  <link rel="alternate" hreflang="nl" href="https://www.botia-safefood.com/pages/try.html?lang=nl">
+  <link rel="alternate" hreflang="it" href="https://www.botia-safefood.com/pages/try.html?lang=it">
+  <link rel="alternate" hreflang="pt" href="https://www.botia-safefood.com/pages/try.html?lang=pt">
+  <link rel="alternate" hreflang="pl" href="https://www.botia-safefood.com/pages/try.html?lang=pl">
+  <link rel="alternate" hreflang="ro" href="https://www.botia-safefood.com/pages/try.html?lang=ro">
+  <link rel="alternate" hreflang="ru" href="https://www.botia-safefood.com/pages/try.html?lang=ru">
+  <link rel="alternate" hreflang="tr" href="https://www.botia-safefood.com/pages/try.html?lang=tr">
+  <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/pages/try.html?lang=zh">
+  <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/pages/try.html?lang=id">
+  <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/pages/try.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "BOTIA — Try it",
+    "description": "Paste the ingredient list from any food label and see what BOTIA reads in it.",
+    "url": "https://www.botia-safefood.com/pages/try.html",
+    "isPartOf": { "@type": "WebSite", "name": "BOTIA Food Transparency" }
+  }
+  </script>
+  <link rel="stylesheet" href="/botia/assets/menu.css">
+  <script src="/botia/assets/js/menu.js"></script>
+  <link rel="stylesheet" href="/botia/assets/footer.css">
+</head>
+<body data-botia-module="try" class="has-botia-header">
+  <button id="menuBtn" aria-label="Menu">☰</button>
+  <div class="botia-header-bar">
+    <div class="botia-nav-left">
+      <a href="/"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+    </div>
+    <div class="lang-switcher">
+      <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+      <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+        <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+        <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+        <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+        <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+        <option value="tr">Türkçe</option><option value="zh">中文</option>
+      </select>
+    </div>
+  </div>
+
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+
+  <main class="landing" id="main-content">
+
+    <section class="hero">
+      <img class="hero-logo" fetchpriority="high" src="/botia_jar_512.png" alt="BOTIA — try it">
+      <h1 id="title">Try BOTIA</h1>
+      <p class="subtitle" id="subtitle">Paste an ingredient list. See what it doesn't say.</p>
+      <p class="description" id="description">The same engine the app uses. No download, no account.</p>
+    </section>
+
+    <!-- App banner -->
+    <div class="app-banner">
+      <div class="app-banner-text">
+        <div class="app-banner-title" id="app_title">BOTIA App</div>
+        <div class="app-banner-sub" id="app_sub">Scan the label instead of typing it. Coming soon to Google Play.</div>
+      </div>
+      <span class="app-badge" id="app_badge">Coming soon</span>
+    </div>
+
+    <!-- Input -->
+    <div class="try-box">
+      <label class="try-label" for="ingredients-input" id="input_label">Ingredient list</label>
+      <textarea id="ingredients-input" placeholder="wheat flour, sugar, palm oil, emulsifier E471, natural flavouring, gelatine…"></textarea>
+      <div class="try-actions">
+        <button class="btn-analyse" id="btn-analyse">Analyse</button>
+        <button class="btn-clear" id="btn-clear">Clear</button>
+        <span class="char-count" id="char-count"></span>
+      </div>
+    </div>
+
+    <div id="results"></div>
+
+    <p class="disclaimer" id="disclaimer">BOTIA reads what the label declares. It does not diagnose, certify or advise. It is not medical, nutritional or religious guidance.</p>
+
+    <section class="closing">
+      <a href="/ingredients/index.html" class="cta-button" id="back-link">Browse all ingredients</a>
+    </section>
+
+  </main>
+
+  <script>
+  (function () {
+    "use strict";
+
+    var ENDPOINT = "https://botia-engine-888782651551.europe-west1.run.app";
+    var MAX_CHARS = 3000;
+
+    var input   = document.getElementById("ingredients-input");
+    var btn     = document.getElementById("btn-analyse");
+    var clearBtn= document.getElementById("btn-clear");
+    var results = document.getElementById("results");
+    var counter = document.getElementById("char-count");
+
+    // ---- language ----
+    var LANGS = ["en","es","ar","de","fr","nl","it","pt","pl","ro","ru","tr","zh","id"];
+    function currentLang() {
+      var q = new URLSearchParams(location.search).get("lang");
+      if (q && LANGS.indexOf(q.toLowerCase().split("-")[0]) > -1) return q.toLowerCase().split("-")[0];
+      try {
+        var s = localStorage.getItem("botia-lang");
+        if (s && LANGS.indexOf(s) > -1) return s;
+      } catch (e) {}
+      var n = (navigator.language || "en").toLowerCase().split("-")[0];
+      return LANGS.indexOf(n) > -1 ? n : "en";
+    }
+
+    // ---- UI strings (fallback English; JSON overrides via i18n-loader) ----
+    var T = {
+      analysing: "Reading the label…",
+      empty: "Paste an ingredient list first.",
+      tooShort: "That looks too short to be an ingredient list.",
+      error: "Something went wrong. Try again in a moment.",
+      noTriggers: "BOTIA found nothing it flags in this list.",
+      layersTitle: "Layers activated",
+      triggersTitle: "What BOTIA detected",
+      muslimTitle: "Muslim choice",
+      readTitle: "Ingredients read",
+      analyse: "Analyse",
+      clear: "Clear"
+    };
+
+    function txt(id, fallback) {
+      var el = document.getElementById(id);
+      return (el && el.textContent.trim()) || fallback;
+    }
+
+    function updateCount() {
+      var n = input.value.length;
+      counter.textContent = n + " / " + MAX_CHARS;
+      if (n > MAX_CHARS) counter.style.color = "#d97070";
+      else counter.style.color = "#6f6f6f";
+    }
+
+    function status(msg, isError) {
+      results.innerHTML = "";
+      var p = document.createElement("p");
+      p.className = "status" + (isError ? " status-error" : "");
+      p.textContent = msg;
+      results.appendChild(p);
+    }
+
+    function block(titleText) {
+      var d = document.createElement("div");
+      d.className = "result-block";
+      var t = document.createElement("div");
+      t.className = "result-title";
+      t.textContent = titleText;
+      d.appendChild(t);
+      return d;
+    }
+
+    function render(data, lang) {
+      results.innerHTML = "";
+
+      // --- Layers ---
+      if (Array.isArray(data.layers) && data.layers.length) {
+        var lb = block(T.layersTitle);
+        var row = document.createElement("div");
+        row.className = "layer-row";
+        data.layers.forEach(function (layer) {
+          var pill = document.createElement("span");
+          pill.className = "layer-pill layer-" + layer;
+          pill.textContent = layer;
+          row.appendChild(pill);
+        });
+        lb.appendChild(row);
+        results.appendChild(lb);
+      }
+
+      // --- Triggers ---
+      var tb = block(T.triggersTitle);
+      if (Array.isArray(data.triggers) && data.triggers.length) {
+        data.triggers.forEach(function (t) {
+          var a = document.createElement("a");
+          a.className = "trigger-card";
+          a.href = (t.url || "#") + "?lang=" + encodeURIComponent(lang);
+          a.target = "_blank";
+          a.rel = "noopener";
+
+          var n = document.createElement("span");
+          n.className = "trigger-name";
+          n.textContent = t.name || t.slug;
+          a.appendChild(n);
+
+          if (t.e_code) {
+            var e = document.createElement("span");
+            e.className = "trigger-ecode";
+            e.textContent = t.e_code;
+            a.appendChild(e);
+          }
+
+          if (Array.isArray(t.layers) && t.layers.length) {
+            var l = document.createElement("div");
+            l.className = "trigger-layers";
+            l.textContent = t.layers.join(" · ");
+            a.appendChild(l);
+          }
+          tb.appendChild(a);
+        });
+      } else {
+        var none = document.createElement("p");
+        none.className = "status";
+        none.textContent = T.noTriggers;
+        tb.appendChild(none);
+      }
+      results.appendChild(tb);
+
+      // --- Muslim ---
+      if (data.decision) {
+        var mb = block(T.muslimTitle);
+        var box = document.createElement("div");
+        box.className = "muslim-box";
+
+        var dec = document.createElement("div");
+        dec.className = "muslim-decision muslim-" + data.decision;
+        dec.textContent = data.decision.toUpperCase();
+        box.appendChild(dec);
+
+        var detail = [];
+        if (data.muslim_trigger) detail.push(data.muslim_trigger);
+        if (data.muslim_note) detail.push(data.muslim_note);
+        if (detail.length) {
+          var dd = document.createElement("div");
+          dd.className = "muslim-detail";
+          dd.textContent = detail.join(" — ");
+          box.appendChild(dd);
+        }
+        mb.appendChild(box);
+        results.appendChild(mb);
+      }
+
+      // --- Ingredients read ---
+      if (data.ingredients_read) {
+        var rb = block(T.readTitle);
+        var rl = document.createElement("div");
+        rl.className = "read-list";
+        rl.textContent = data.ingredients_read;
+        rb.appendChild(rl);
+        results.appendChild(rb);
+      }
+
+      results.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+
+    function analyse() {
+      var text = input.value.trim();
+      if (!text) { status(T.empty, true); return; }
+      if (text.length < 10) { status(T.tooShort, true); return; }
+      if (text.length > MAX_CHARS) { text = text.slice(0, MAX_CHARS); }
+
+      var lang = currentLang();
+      btn.disabled = true;
+      status(T.analysing, false);
+
+      var form = new FormData();
+      form.append("ingredients", text);
+      form.append("lang", lang);
+      form.append("ClientID", "WEB_TRY");
+
+      fetch(ENDPOINT, { method: "POST", body: form })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+        .then(function (res) {
+          btn.disabled = false;
+          if (!res.ok || res.body.error) { status(T.error, true); return; }
+          render(res.body, lang);
+        })
+        .catch(function () {
+          btn.disabled = false;
+          status(T.error, true);
+        });
+    }
+
+    input.addEventListener("input", updateCount);
+    btn.addEventListener("click", analyse);
+    clearBtn.addEventListener("click", function () {
+      input.value = "";
+      results.innerHTML = "";
+      updateCount();
+      input.focus();
+    });
+
+    updateCount();
+  })();
+  </script>
+
+  <script src="/botia/assets/js/i18n-loader.js" defer></script>
+  <script src="/botia/assets/js/footer.js"></script>
+  <script src="/botia/assets/js/botia-chat.js"></script>
+</body>
+</html>
