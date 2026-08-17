@@ -50,14 +50,20 @@
   /* --- Input --- */
   .try-box { margin-bottom: 20px; }
   .try-label { display: block; font-size: 0.95rem; color: #e6a06b; margin-bottom: 8px; font-weight: 600; }
-  #ingredients-input {
-    width: 100%; min-height: 140px; padding: 14px 16px;
-    border-radius: 12px; border: 1px solid rgba(190,122,72,0.42);
-    background: rgba(255,255,255,0.05); color: #f2e4dc;
-    font-family: inherit; font-size: 0.95rem; line-height: 1.6;
-    outline: none; resize: vertical; box-sizing: border-box;
+  #dropzone {
+    border: 2px dashed rgba(190,122,72,0.42); border-radius: 14px;
+    background: rgba(255,255,255,0.04); padding: 34px 20px;
+    text-align: center; cursor: pointer; transition: 0.2s ease;
+    outline: none; min-height: 150px;
+    display: flex; align-items: center; justify-content: center;
   }
-  #ingredients-input:focus { border-color: #e6a06b; }
+  #dropzone:hover, #dropzone:focus { border-color: #e6a06b; background: rgba(190,122,72,0.08); }
+  #dropzone.dragover { border-color: #e6a06b; background: rgba(190,122,72,0.16); }
+  #dropzone.has-image { padding: 10px; border-style: solid; }
+  .dz-icon { font-size: 1.8rem; margin-bottom: 10px; opacity: 0.75; }
+  .dz-main { font-size: 0.95rem; color: #ffd8bd; margin-bottom: 6px; }
+  .dz-sub  { font-size: 0.82rem; color: #6f6f6f; }
+  #dz-preview { max-width: 100%; max-height: 320px; border-radius: 10px; display: block; }
   .try-actions { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; align-items: center; }
   .btn-analyse {
     background: #e6a06b; border: none; border-radius: 60px;
@@ -196,12 +202,23 @@
 
     <!-- Input -->
     <div class="try-box">
-      <label class="try-label" for="ingredients-input" id="input_label">Ingredient list</label>
-      <textarea id="ingredients-input" placeholder="wheat flour, sugar, palm oil, emulsifier E471, natural flavouring, gelatine…"></textarea>
+      <label class="try-label" id="input_label">Photo of the ingredient list</label>
+
+      <div id="dropzone" tabindex="0" role="button" aria-labelledby="input_label">
+        <div id="dz-empty">
+          <div class="dz-icon">📷</div>
+          <div class="dz-main" id="dz_main">Drop a photo here, paste it, or tap to choose one</div>
+          <div class="dz-sub" id="dz_sub">A clear photo of the ingredient list. JPG or PNG.</div>
+        </div>
+        <img id="dz-preview" alt="" hidden>
+      </div>
+
+      <input type="file" id="file-input" accept="image/*" hidden>
+
       <div class="try-actions">
-        <button class="btn-analyse" id="btn-analyse">Analyse</button>
+        <button class="btn-analyse" id="btn-analyse" disabled>Analyse</button>
         <button class="btn-clear" id="btn-clear">Clear</button>
-        <span class="char-count" id="char-count"></span>
+        <span class="char-count" id="file-name"></span>
       </div>
     </div>
 
@@ -213,6 +230,27 @@
       <a href="/ingredients/index.html" class="cta-button" id="back-link">Browse all ingredients</a>
     </section>
 
+
+    <div style="display:none" aria-hidden="true">
+      <span id="res_product">Product</span>
+      <span id="res_layers">Layers activated</span>
+      <span id="res_triggers">What BOTIA detected</span>
+      <span id="res_muslim">Muslim choice</span>
+      <span id="res_read">Ingredients read</span>
+      <span id="res_none">BOTIA found nothing it flags in this list.</span>
+      <span id="dec_halal">HALAL</span>
+      <span id="dec_doubt">MASHBOOH</span>
+      <span id="dec_haram">HARAM</span>
+      <span id="msg_reading">Reading the label…</span>
+      <span id="msg_no_image">Choose a photo first.</span>
+      <span id="msg_not_image">That file is not an image.</span>
+      <span id="msg_too_big">That image is too large. Try one under 6 MB.</span>
+      <span id="msg_unreadable">No ingredients found. Try a clearer photo.</span>
+      <span id="msg_error">Something went wrong. Try again in a moment.</span>
+      <span id="btn_analyse_label">Analyse</span>
+      <span id="btn_clear_label">Clear</span>
+    </div>
+
   </main>
 
   <script>
@@ -220,15 +258,19 @@
     "use strict";
 
     var ENDPOINT = "https://botia-engine-888782651551.europe-west1.run.app";
-    var MAX_CHARS = 3000;
+    var MAX_BYTES = 6 * 1024 * 1024;
 
-    var input   = document.getElementById("ingredients-input");
-    var btn     = document.getElementById("btn-analyse");
-    var clearBtn= document.getElementById("btn-clear");
-    var results = document.getElementById("results");
-    var counter = document.getElementById("char-count");
+    var dropzone = document.getElementById("dropzone");
+    var dzEmpty  = document.getElementById("dz-empty");
+    var preview  = document.getElementById("dz-preview");
+    var fileIn   = document.getElementById("file-input");
+    var btn      = document.getElementById("btn-analyse");
+    var clearBtn = document.getElementById("btn-clear");
+    var results  = document.getElementById("results");
+    var fileName = document.getElementById("file-name");
 
-    // ---- language ----
+    var selectedFile = null;
+
     var LANGS = ["en","es","ar","de","fr","nl","it","pt","pl","ro","ru","tr","zh","id"];
     function currentLang() {
       var q = new URLSearchParams(location.search).get("lang");
@@ -241,57 +283,80 @@
       return LANGS.indexOf(n) > -1 ? n : "en";
     }
 
-    // ---- UI strings (fallback English; JSON overrides via i18n-loader) ----
-    var T = {
-      analysing: "Reading the label…",
-      empty: "Paste an ingredient list first.",
-      tooShort: "That looks too short to be an ingredient list.",
-      error: "Something went wrong. Try again in a moment.",
-      noTriggers: "BOTIA found nothing it flags in this list.",
-      layersTitle: "Layers activated",
-      triggersTitle: "What BOTIA detected",
-      muslimTitle: "Muslim choice",
-      readTitle: "Ingredients read",
-      analyse: "Analyse",
-      clear: "Clear"
-    };
-
-    function txt(id, fallback) {
+    function t(id, fallback) {
       var el = document.getElementById(id);
-      return (el && el.textContent.trim()) || fallback;
+      var v = el && el.textContent ? el.textContent.trim() : "";
+      return v || fallback;
     }
 
-    function updateCount() {
-      var n = input.value.length;
-      counter.textContent = n + " / " + MAX_CHARS;
-      if (n > MAX_CHARS) counter.style.color = "#d97070";
-      else counter.style.color = "#6f6f6f";
-    }
-
-    function status(msg, isError) {
+    function status(id, fallback, isError) {
       results.innerHTML = "";
       var p = document.createElement("p");
       p.className = "status" + (isError ? " status-error" : "");
-      p.textContent = msg;
+      p.textContent = t(id, fallback);
       results.appendChild(p);
     }
 
-    function block(titleText) {
+    function block(id, fallback) {
       var d = document.createElement("div");
       d.className = "result-block";
-      var t = document.createElement("div");
-      t.className = "result-title";
-      t.textContent = titleText;
-      d.appendChild(t);
+      var h = document.createElement("div");
+      h.className = "result-title";
+      h.textContent = t(id, fallback);
+      d.appendChild(h);
       return d;
+    }
+
+    function setFile(file) {
+      if (!file) return;
+      if (file.type.indexOf("image/") !== 0) {
+        status("msg_not_image", "That file is not an image.", true);
+        return;
+      }
+      if (file.size > MAX_BYTES) {
+        status("msg_too_big", "That image is too large. Try one under 6 MB.", true);
+        return;
+      }
+      selectedFile = file;
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        preview.src = e.target.result;
+        preview.hidden = false;
+        dzEmpty.hidden = true;
+        dropzone.classList.add("has-image");
+      };
+      reader.readAsDataURL(file);
+      fileName.textContent = file.name || "";
+      btn.disabled = false;
+      results.innerHTML = "";
+    }
+
+    function reset() {
+      selectedFile = null;
+      preview.src = "";
+      preview.hidden = true;
+      dzEmpty.hidden = false;
+      dropzone.classList.remove("has-image", "dragover");
+      fileIn.value = "";
+      fileName.textContent = "";
+      btn.disabled = true;
+      results.innerHTML = "";
     }
 
     function render(data, lang) {
       results.innerHTML = "";
 
-      // --- Layers ---
+      if (data.product_name && data.product_name !== "Unknown") {
+        var pb = block("res_product", "Product");
+        var pn = document.createElement("div");
+        pn.className = "read-list";
+        pn.textContent = data.product_name;
+        pb.appendChild(pn);
+        results.appendChild(pb);
+      }
+
       if (Array.isArray(data.layers) && data.layers.length) {
-        var lb = block(T.layersTitle);
+        var lb = block("res_layers", "Layers activated");
         var row = document.createElement("div");
         row.className = "layer-row";
         data.layers.forEach(function (layer) {
@@ -304,32 +369,30 @@
         results.appendChild(lb);
       }
 
-      // --- Triggers ---
-      var tb = block(T.triggersTitle);
+      var tb = block("res_triggers", "What BOTIA detected");
       if (Array.isArray(data.triggers) && data.triggers.length) {
-        data.triggers.forEach(function (t) {
+        data.triggers.forEach(function (tr) {
           var a = document.createElement("a");
           a.className = "trigger-card";
-          a.href = (t.url || "#") + "?lang=" + encodeURIComponent(lang);
+          a.href = (tr.url || "#") + "?lang=" + encodeURIComponent(lang);
           a.target = "_blank";
           a.rel = "noopener";
 
           var n = document.createElement("span");
           n.className = "trigger-name";
-          n.textContent = t.name || t.slug;
+          n.textContent = tr.name || tr.slug;
           a.appendChild(n);
 
-          if (t.e_code) {
+          if (tr.e_code) {
             var e = document.createElement("span");
             e.className = "trigger-ecode";
-            e.textContent = t.e_code;
+            e.textContent = tr.e_code;
             a.appendChild(e);
           }
-
-          if (Array.isArray(t.layers) && t.layers.length) {
+          if (Array.isArray(tr.layers) && tr.layers.length) {
             var l = document.createElement("div");
             l.className = "trigger-layers";
-            l.textContent = t.layers.join(" · ");
+            l.textContent = tr.layers.join(" \u00b7 ");
             a.appendChild(l);
           }
           tb.appendChild(a);
@@ -337,38 +400,34 @@
       } else {
         var none = document.createElement("p");
         none.className = "status";
-        none.textContent = T.noTriggers;
+        none.textContent = t("res_none", "BOTIA found nothing it flags in this list.");
         tb.appendChild(none);
       }
       results.appendChild(tb);
 
-      // --- Muslim ---
       if (data.decision) {
-        var mb = block(T.muslimTitle);
+        var mb = block("res_muslim", "Muslim choice");
         var box = document.createElement("div");
         box.className = "muslim-box";
-
         var dec = document.createElement("div");
         dec.className = "muslim-decision muslim-" + data.decision;
-        dec.textContent = data.decision.toUpperCase();
+        dec.textContent = t("dec_" + data.decision, data.decision.toUpperCase());
         box.appendChild(dec);
-
         var detail = [];
         if (data.muslim_trigger) detail.push(data.muslim_trigger);
         if (data.muslim_note) detail.push(data.muslim_note);
         if (detail.length) {
           var dd = document.createElement("div");
           dd.className = "muslim-detail";
-          dd.textContent = detail.join(" — ");
+          dd.textContent = detail.join(" \u2014 ");
           box.appendChild(dd);
         }
         mb.appendChild(box);
         results.appendChild(mb);
       }
 
-      // --- Ingredients read ---
       if (data.ingredients_read) {
-        var rb = block(T.readTitle);
+        var rb = block("res_read", "Ingredients read");
         var rl = document.createElement("div");
         rl.className = "read-list";
         rl.textContent = data.ingredients_read;
@@ -380,17 +439,13 @@
     }
 
     function analyse() {
-      var text = input.value.trim();
-      if (!text) { status(T.empty, true); return; }
-      if (text.length < 10) { status(T.tooShort, true); return; }
-      if (text.length > MAX_CHARS) { text = text.slice(0, MAX_CHARS); }
-
+      if (!selectedFile) { status("msg_no_image", "Choose a photo first.", true); return; }
       var lang = currentLang();
       btn.disabled = true;
-      status(T.analysing, false);
+      status("msg_reading", "Reading the label\u2026", false);
 
       var form = new FormData();
-      form.append("ingredients", text);
+      form.append("file", selectedFile);
       form.append("lang", lang);
       form.append("ClientID", "WEB_TRY");
 
@@ -398,25 +453,58 @@
         .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
         .then(function (res) {
           btn.disabled = false;
-          if (!res.ok || res.body.error) { status(T.error, true); return; }
+          if (!res.ok || res.body.error) {
+            if (res.body && res.body.error === "IMAGE_READ_ERROR") {
+              status("msg_unreadable", "No ingredients found. Try a clearer photo.", true);
+            } else {
+              status("msg_error", "Something went wrong. Try again in a moment.", true);
+            }
+            return;
+          }
           render(res.body, lang);
         })
         .catch(function () {
           btn.disabled = false;
-          status(T.error, true);
+          status("msg_error", "Something went wrong. Try again in a moment.", true);
         });
     }
 
-    input.addEventListener("input", updateCount);
-    btn.addEventListener("click", analyse);
-    clearBtn.addEventListener("click", function () {
-      input.value = "";
-      results.innerHTML = "";
-      updateCount();
-      input.focus();
+    dropzone.addEventListener("click", function () { fileIn.click(); });
+    dropzone.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fileIn.click(); }
+    });
+    fileIn.addEventListener("change", function () { setFile(fileIn.files[0]); });
+
+    ["dragenter", "dragover"].forEach(function (ev) {
+      dropzone.addEventListener(ev, function (e) {
+        e.preventDefault(); e.stopPropagation();
+        dropzone.classList.add("dragover");
+      });
+    });
+    ["dragleave", "drop"].forEach(function (ev) {
+      dropzone.addEventListener(ev, function (e) {
+        e.preventDefault(); e.stopPropagation();
+        dropzone.classList.remove("dragover");
+      });
+    });
+    dropzone.addEventListener("drop", function (e) {
+      if (e.dataTransfer && e.dataTransfer.files.length) setFile(e.dataTransfer.files[0]);
     });
 
-    updateCount();
+    document.addEventListener("paste", function (e) {
+      if (!e.clipboardData || !e.clipboardData.items) return;
+      for (var i = 0; i < e.clipboardData.items.length; i++) {
+        var item = e.clipboardData.items[i];
+        if (item.type.indexOf("image") === 0) {
+          setFile(item.getAsFile());
+          e.preventDefault();
+          return;
+        }
+      }
+    });
+
+    btn.addEventListener("click", analyse);
+    clearBtn.addEventListener("click", reset);
   })();
   </script>
 
