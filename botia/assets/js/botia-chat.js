@@ -171,7 +171,7 @@
         btns.style.cssText = 'display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;';
 
         const discoverBtn = document.createElement('a');
-        discoverBtn.href = q.link || '#';
+        discoverBtn.href = '/try.html?lang=' + encodeURIComponent(currentLang);
         discoverBtn.target = '_blank';
         discoverBtn.rel = 'noopener';
         discoverBtn.textContent = t('discoverButton') || 'Discover on BOTIA';
