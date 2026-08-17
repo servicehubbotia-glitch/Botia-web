@@ -517,16 +517,40 @@
     return String(trigger || "").split(",").map(item => item.trim()).filter(Boolean);
   };
 
-  const renderHeaderTrigger = () => {
+  const displayTriggerName = item => String(item || "")
+    .replace(/_/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/^./, char => char.toUpperCase());
+
+  const renderHeaderTrigger = lang => {
     const container = document.getElementById("header_trigger_container");
     if (!container) return;
     container.replaceChildren();
+
     const items = triggerItems();
     if (!items.length) return;
-    const p = document.createElement("p");
-    p.className = "botia-header-trigger";
-    p.textContent = items.join(" · ");
-    container.appendChild(p);
+
+    const ui = UI_TEXT[lang] || UI_TEXT.en;
+    const wrapper = document.createElement("div");
+    wrapper.className = "botia-header-trigger";
+
+    items.forEach(item => {
+      const slug = ingredientSlug(item);
+      if (!slug) return;
+
+      const label = displayTriggerName(item);
+      const link = document.createElement("a");
+      link.className = "botia-trigger-link";
+      link.href = `/ingredients/${slug}.html?lang=${encodeURIComponent(lang)}`;
+      link.textContent = label;
+      link.setAttribute("aria-label", `${ui.more_info} ${label}`);
+      wrapper.appendChild(link);
+    });
+
+    if (wrapper.children.length) {
+      container.appendChild(wrapper);
+    }
   };
 
   const ingredientSlug = item => item
@@ -579,7 +603,7 @@
 
     applyWebViewLabels(requested);
     applyGlobalLabels(requested);
-    renderHeaderTrigger();
+    renderHeaderTrigger(requested);
     renderIngredientLinks(requested);
 
     let data;
@@ -608,6 +632,7 @@
       document.body.dir = RTL.has(loaded) ? "rtl" : "ltr";
       applyWebViewLabels(loaded);
       applyGlobalLabels(loaded);
+      renderHeaderTrigger(loaded);
       renderIngredientLinks(loaded);
     }
 

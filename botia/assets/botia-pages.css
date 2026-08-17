@@ -250,3 +250,47 @@ body[dir="rtl"] .cannot-box li::before {
     height: 144px !important;
     object-fit: contain !important;
 }
+
+/* BOTIA clickable ingredient trigger from Try/App */
+#header_trigger_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.botia-header-trigger {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.botia-trigger-link {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(230, 160, 107, 0.48);
+  background: rgba(190, 122, 72, 0.16);
+  color: #ffd8bd;
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.botia-trigger-link:hover,
+.botia-trigger-link:focus-visible {
+  background: rgba(190, 122, 72, 0.30);
+  border-color: #e6a06b;
+  color: #ffffff;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+body[dir="rtl"] .botia-header-trigger {
+  direction: rtl;
+}
