@@ -532,6 +532,12 @@
     if (!items.length) return;
 
     const ui = UI_TEXT[lang] || UI_TEXT.en;
+
+    const caption = document.createElement("div");
+    caption.className = "botia-trigger-caption";
+    caption.textContent = ui.detected;
+    container.appendChild(caption);
+
     const wrapper = document.createElement("div");
     wrapper.className = "botia-header-trigger";
 
@@ -539,13 +545,32 @@
       const slug = ingredientSlug(item);
       if (!slug) return;
 
-      const label = displayTriggerName(item);
+      const fallbackLabel = displayTriggerName(item);
       const link = document.createElement("a");
       link.className = "botia-trigger-link";
       link.href = `/ingredients/${slug}.html?lang=${encodeURIComponent(lang)}`;
-      link.textContent = label;
-      link.setAttribute("aria-label", `${ui.more_info} ${label}`);
+      link.textContent = fallbackLabel;
+      link.setAttribute("aria-label", `${ui.more_info} ${fallbackLabel}`);
       wrapper.appendChild(link);
+
+      fetch(`/i18n/${encodeURIComponent(lang)}/${slug}.json`)
+        .then(response => {
+          if (!response.ok) throw new Error(`Ingredient i18n ${response.status}`);
+          return response.json();
+        })
+        .then(data => {
+          const localName = String(data.name || data.title || fallbackLabel).trim();
+          const eCode = String(data.e_code || "").trim();
+          const visibleLabel = eCode && !localName.includes(eCode)
+            ? `${localName} · ${eCode}`
+            : localName;
+
+          link.textContent = visibleLabel;
+          link.setAttribute("aria-label", `${ui.more_info} ${visibleLabel}`);
+        })
+        .catch(() => {
+          // Safe fallback: keep the readable slug label if translation is unavailable.
+        });
     });
 
     if (wrapper.children.length) {
