@@ -85,7 +85,50 @@
 
 
   
-.stats-note { font-size: 0.72rem; color: #6f6f6f; margin-top: 14px; line-height: 1.5; }</style>
+.stats-note { font-size: 0.72rem; color: #6f6f6f; margin-top: 14px; line-height: 1.5; }
+/* BOTIA landing Try entry */
+.try-entry {
+  text-align: center;
+  background: rgba(24, 13, 13, 0.9);
+  border: 1px solid rgba(190, 122, 72, 0.28);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 8px 0 24px;
+}
+
+.try-entry h3 {
+  color: #e6a06b;
+  font-size: 1.15rem;
+  margin: 0 0 7px;
+}
+
+.try-entry p {
+  color: #c0a08c;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.try-entry-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 9px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(230, 160, 107, 0.55);
+  background: rgba(190, 122, 72, 0.18);
+  color: #ffd8bd;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.try-entry-button:hover,
+.try-entry-button:focus-visible {
+  background: rgba(190, 122, 72, 0.32);
+  border-color: #e6a06b;
+  color: #ffffff;
+  outline: none;
+}
+</style>
 <link href="https://www.botia-safefood.com/?lang=en" hreflang="en" rel="alternate"/>
 <link href="https://www.botia-safefood.com/?lang=es" hreflang="es" rel="alternate"/>
 <link href="https://www.botia-safefood.com/?lang=ar" hreflang="ar" rel="alternate"/>
@@ -139,6 +182,11 @@
 <p class="subtitle" id="subtitle">You still don't know what's in it.</p>
 <p class="description" id="description">Scientific evidence. Human language. BOTIA reads ingredients, detects relevant signals, and connects them with clear explanations based on scientific, regulatory, and transparency sources.</p>
 </section>
+<section class="try-entry" aria-labelledby="try_title">
+  <h3 id="try_title">Try BOTIA</h3>
+  <p id="try_desc">Photograph the label. Discover what it doesn't say.</p>
+  <a class="try-entry-button" href="/try.html" id="try_cta">Try BOTIA</a>
+</section>
 <div class="stats-box">
 <div class="stats-number" id="stats_number">72%</div>
 <div class="stats-text" id="stats_text">uncertain — in our first analysis of real supermarket products, 72% of results were uncertain, not because the ingredients were forbidden, but because the label simply didn't say enough to know.</div><p class="stats-note" id="stats_note">Based on BOTIA's own scans of supermarket products between March and April 2026, mostly in the Netherlands and Belgium, using the Muslim layer only. Repeated scans of the same product were counted once.</p>
@@ -185,6 +233,6 @@
 <!-- ========================================================== -->
 <script src="/botia/assets/js/botia-chat.js"></script>
 <script defer="" src="/botia/assets/js/i18n-loader.js"></script>
-<script src="/botia/assets/js/footer.js"></script>
+<script src="/botia/assets/js/footer.js?v=20260817-1502"></script>
 </body>
 </html>

@@ -95,16 +95,20 @@
       <p class="footer-text"><a href="${preserveLanguage("/legal.html", language)}">${t(labels, "footer_notice", "Legal Notice")}</a></p>
     `;
 
-    // ---- Column 4: App ----
-    const colApp = document.createElement("div");
-    colApp.className = "footer-col";
-    colApp.innerHTML = `
-      <h4 class="footer-title">${t(labels, "footer_app_title", "BOTIA App")}</h4>
-      <p class="footer-text">${t(labels, "footer_app_soon", "Coming soon to Google Play.")}</p>
-      <p class="footer-text">${t(labels, "footer_app_desc", "Scan a label. Read what it does not say.")}</p>
+    // ---- Column 4: Try BOTIA ----
+    const colTry = document.createElement("div");
+    colTry.className = "footer-col";
+    colTry.innerHTML = `
+      <h4 class="footer-title">${t(labels, "footer_try_title", "Try BOTIA")}</h4>
+      <p class="footer-text"><a href="${preserveLanguage("/try.html", language)}">${t(labels, "footer_try_cta", "Try BOTIA")}</a></p>
+      <p class="footer-text">${t(labels, "footer_try_desc", "Photograph the label. Discover what it doesn't say.")}</p>
     `;
 
-    grid.append(colCompany, colContact, colLegal, colApp);
+    const footerColumns = [colCompany, colContact, colLegal];
+    if (!window.location.pathname.endsWith("/try.html")) {
+      footerColumns.push(colTry);
+    }
+    grid.append(...footerColumns);
 
     // ---- Bottom ----
     const bottom = document.createElement("div");
