@@ -529,16 +529,32 @@
       results.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
 
-    function analyse() {
+    async function analyse() {
       if (!selectedFile) { status("msg_no_image", "Choose a photo first.", true); return; }
-      var lang = currentLang();
+
       btn.disabled = true;
+
+      if (!window.BOTIA_WEB_AUTH) {
+        btn.disabled = false;
+        status("msg_error", "Something went wrong. Try again in a moment.", true);
+        return;
+      }
+
+      var access = await window.BOTIA_WEB_AUTH.ensureAccess();
+
+      if (!access || access.allowed !== true || !access.uid) {
+        btn.disabled = false;
+        return;
+      }
+
+      var lang = currentLang();
       status("msg_reading", "Reading the label\u2026", false);
 
       var form = new FormData();
       form.append("file", selectedFile);
       form.append("lang", lang);
-      form.append("ClientID", "WEB_TRY");
+      form.append("ClientID", access.uid);
+      form.append("uid", access.uid);
 
       fetch(ENDPOINT, { method: "POST", body: form })
         .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
@@ -599,6 +615,7 @@
   })();
   </script>
 
+  <script src="/botia/assets/js/try-auth.js"></script>
   <script src="/botia/assets/js/i18n-loader.js" defer></script>
   <script src="/botia/assets/js/footer.js"></script>
   <script src="/botia/assets/js/botia-chat.js"></script>
