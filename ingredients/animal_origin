@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BOTIA — Animal Origin | Evidence Layers</title>
+<meta content="BOTIA — Animal Origin" property="og:title"/>
+<meta content="BOTIA flags ingredients that are always animal-derived, and ingredients whose origin the label leaves undeclared." property="og:description"/>
+<meta content="https://www.botia-safefood.com/botia_jar_512.png" property="og:image"/>
+<meta content="https://www.botia-safefood.com/ingredients/animal.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="BOTIA — Animal Origin" name="twitter:title"/>
+<meta content="BOTIA flags ingredients that are always animal-derived, and ingredients whose origin the label leaves undeclared." name="twitter:description"/>
+<meta content="https://www.botia-safefood.com/botia_jar_512.png" name="twitter:image"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html" rel="canonical"/>
+<meta content="BOTIA flags ingredients that are always animal-derived, and ingredients whose origin the label leaves undeclared." name="description">
+<link href="https://www.who.int" rel="dns-prefetch"/>
+<link href="https://www.efsa.europa.eu" rel="dns-prefetch"/>
+<link href="https://www.who.int" rel="preconnect"/>
+<link href="https://www.efsa.europa.eu" rel="preconnect"/>
+<link href="/botia_jar_512.png" rel="icon" type="image/png">
+<link as="style" href="/botia-landing.css" rel="preload"/>
+<link href="/botia-landing.css" rel="stylesheet">
+<link as="style" href="/botia/assets/botia-pages.css" rel="preload"/>
+<link href="/botia/assets/botia-pages.css" rel="stylesheet">
+<style>
+  .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
+  .hero { padding: 12px 0 0; text-align: center; }
+  .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
+  .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
+  .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
+  .description { font-size: 0.9rem; color: #8a8a8a; }
+  .section { margin-bottom: 14px; }
+  .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
+  .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; }
+  .can-cannot { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+  @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
+  .can-box, .cannot-box { background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px; }
+  .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
+  .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
+  .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
+  .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
+  .can-box li, .cannot-box li { margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c; padding-left: 20px; position: relative; }
+  .can-box li::before { content: "\2705"; position: absolute; left: 0; }
+  .cannot-box li::before { content: "\274C"; position: absolute; left: 0; }
+  .closing { text-align: center; padding: 20px 0; }
+  .closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 16px; }
+  .cta-button {
+    display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+    padding: 10px 24px; border-radius: 8px; text-decoration: none;
+    border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+  }
+  .cta-button:hover { background: rgba(190,122,72,0.35); }
+  .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
+  .source-links a { color: #e6a06b; text-decoration: none; }
+  .source-links a:hover { text-decoration: underline; }
+  .hero + .section { margin-top: 0 !important; }
+  #header_trigger_container { margin-top: 12px; font-size: 1rem; color: #ffd8bd; }
+</style>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=en" hreflang="en" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=es" hreflang="es" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=ar" hreflang="ar" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=de" hreflang="de" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=fr" hreflang="fr" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=nl" hreflang="nl" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=it" hreflang="it" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=pt" hreflang="pt" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=pl" hreflang="pl" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=ro" hreflang="ro" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=ru" hreflang="ru" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=tr" hreflang="tr" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=zh" hreflang="zh" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html?lang=id" hreflang="id" rel="alternate"/>
+<link href="https://www.botia-safefood.com/ingredients/animal.html" hreflang="x-default" rel="alternate"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "BOTIA — Animal Origin",
+    "description": "BOTIA flags ingredients that are always animal-derived, and ingredients whose origin the label leaves undeclared.",
+    "url": "https://www.botia-safefood.com/ingredients/animal.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BOTIA Food Transparency"
+    }
+  }
+  </script>
+<link href="/botia/assets/menu.css" rel="stylesheet"/>
+<script src="/botia/assets/js/menu.js"></script>
+</head>
+<body class="has-botia-header" data-botia-module="animal_layer">
+<button aria-label="Menu" id="menuBtn">&#9776;</button>
+<div class="botia-header-bar">
+<div class="botia-nav-left">
+<a href="/"><img alt="BOTIA" class="nav-logo" src="/botia_jar_512.png" style="width:28px;height:28px;"/></a>
+</div>
+<div class="lang-switcher">
+<label class="sr-only" for="lang-select" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+<select aria-label="Select language" id="lang-select" onchange="cambiarIdioma(this.value)">
+<option value="en">English</option><option value="ar">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</option><option value="de">Deutsch</option>
+<option value="es">Espa&#241;ol</option><option value="fr">Fran&#231;ais</option><option value="id">Bahasa Indonesia</option>
+<option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+<option value="pt">Portugu&#234;s</option><option value="ro">Rom&#226;n&#259;</option><option value="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</option>
+<option value="tr">T&#252;rk&#231;e</option><option value="zh">&#20013;&#25991;</option>
+</select>
+</div>
+</div>
+<a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+<main class="landing" id="main-content">
+<section class="hero">
+<img alt="BOTIA Animal Origin" class="hero-logo" fetchpriority="high" onerror="this.src='/botia/assets/botia_jar_512.png'; this.onerror=null;" src="/botia/assets/animal.png" style="content-visibility:auto;"/>
+<h1 id="title">Animal Origin</h1>
+<p class="subtitle" id="subtitle">Some ingredients are always animal. Others never say.</p>
+<p class="description" id="description">BOTIA flags ingredients that are always animal-derived, and ingredients whose origin the label leaves undeclared.</p>
+<div id="header_trigger_container"></div>
+</section>
+<section class="section">
+<h2 class="section-title" id="why_title">Why this matters</h2>
+<p class="section-intro" id="why_body">Gelatine, carmine, shellac and beeswax are always animal-derived. But many others &#8212; emulsifiers, enzymes, glycerol, flavourings &#8212; can be animal, plant or synthetic, and the label reads exactly the same either way.</p>
+</section>
+<section class="section">
+<h2 class="section-title" id="what_title">What BOTIA looks for</h2>
+<p class="section-intro" id="what_body">BOTIA separates two cases. Ingredients that are animal-derived by definition, and ingredients whose origin is simply not declared. The second group is not a verdict: it is the information the label did not give you.</p>
+</section>
+<section class="section">
+<div class="can-cannot">
+<div class="can-box">
+<h4 id="can_title">BOTIA CAN</h4>
+<ul>
+<li id="can_1">Identify ingredients that are always animal-derived.</li>
+<li id="can_2">Flag ingredients whose origin the label leaves undeclared.</li>
+<li id="can_3">Explain why that distinction matters for the choice you are making.</li>
+</ul>
+</div>
+<div class="cannot-box">
+<h4 id="cannot_title">BOTIA CANNOT</h4>
+<ul>
+<li id="cannot_1">Determine the species an ingredient came from.</li>
+<li id="cannot_2">Confirm origin when the label does not declare it.</li>
+<li id="cannot_3">Certify a product as vegetarian or vegan.</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="closing">
+<p class="closing-claim" id="closing">Undeclared is not forbidden. It is unknown &#8212; and that is worth knowing.</p>
+<p class="source-links">
+<span id="sources-label">Sources:</span>
+<a href="https://eur-lex.europa.eu/eli/reg/2011/1169/2026-01-01/eng" rel="noopener" target="_blank">Regulation (EU) 1169/2011</a> &#183;
+        <a href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&amp;url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%252B1-1985%252FCXS_001e.pdf" rel="noopener" target="_blank">Codex CXS 1-1985</a>
+</p>
+<a class="cta-button" href="/pages/animal.html" id="back-link">Learn more about animal origin</a>
+</section>
+
+</main>
+<script defer="" src="/botia/assets/js/i18n-loader.js"></script>
+</body>
+</html>
