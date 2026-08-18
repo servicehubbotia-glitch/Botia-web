@@ -11,7 +11,7 @@
 
   const LAYER_ROUTES = {
     muslim: "/pages/muslim.html",
-    woman: "/pages/woman.html",
+    woman: "/ingredients/woman_safefood.html",
     animal: "/pages/animal.html",
     sugar: "/ingredients/sugar.html",
     sweetener: "/ingredients/sweetener.html",
