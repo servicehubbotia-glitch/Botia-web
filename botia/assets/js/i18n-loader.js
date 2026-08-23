@@ -593,22 +593,31 @@
     const items = triggerItems();
     if (!items.length) return;
 
-    const ui = UI_TEXT[lang] || UI_TEXT.en;
-    const ul = document.createElement("ul");
-    ul.className = "botia-trigger-list";
     items.forEach(item => {
       const slug = ingredientSlug(item);
       if (!slug) return;
+
+      const fallbackLabel = displayTriggerName(item);
+
       const a = document.createElement("a");
       a.href = `/ingredients/${slug}.html?lang=${encodeURIComponent(lang)}`;
-      a.textContent = `${ui.more_info} ${item}`;
-      a.target = "_blank";
-      a.rel = "noopener";
-      const li = document.createElement("li");
-      li.appendChild(a);
-      ul.appendChild(li);
+      a.textContent = fallbackLabel;
+      container.appendChild(a);
+
+      fetch(`/i18n/${encodeURIComponent(lang)}/${slug}.json`)
+        .then(response => {
+          if (!response.ok) throw new Error("no i18n");
+          return response.json();
+        })
+        .then(data => {
+          const localName = String(data.name || data.title || fallbackLabel).trim();
+          const eCode = String(data.e_code || "").trim();
+          a.textContent = eCode && !localName.includes(eCode)
+            ? `${localName} · ${eCode}`
+            : localName;
+        })
+        .catch(() => {});
     });
-    if (ul.children.length) container.appendChild(ul);
   };
 
   const fetchJson = async (module, lang) => {
