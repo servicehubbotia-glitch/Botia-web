@@ -145,7 +145,7 @@ i18n/en/{slug}.json
 
 sitemap.xml
 
-the HTML files that actually exist
+indexable HTML files that actually exist — excludes the 10 noindex WebViews
 
 master_kb.json
 
