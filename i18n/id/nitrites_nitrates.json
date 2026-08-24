@@ -1,21 +1,33 @@
 {
   "name": "Nitrit & Nitrat",
   "title": "Nitrit & Nitrat",
-  "description": "Sekelompok bahan tambahan pengawet dan pengawet yang terdiri dari kalium nitrit (E249), natrium nitrit (E250), natrium nitrat (E251), dan kalium nitrat (E252).",
-  "what_is": "Sekelompok bahan tambahan pengawet dan pengawet yang terdiri dari kalium nitrit (E249), natrium nitrit (E250), natrium nitrat (E251), dan kalium nitrat (E252).",
-  "why_botia": "BOTIA kelompok E249–E252 karena label dapat mencantumkan baik nomor E maupun nama kimia. Penggunaan yang diizinkan dan batas maksimumnya bervariasi sesuai produk; mendeteksi adanya nitrit atau nitrat yang tercantum dalam label tidak sama dengan memperkirakan paparan atau risiko kesehatan.",
-  "can_1": "Mendeteksi E249–E252 serta nama-nama nitrit/nitrat natrium atau kalium yang sesuai.",
-  "can_2": "Tunjukkan bahwa bahan-bahan ini merupakan bahan pengawet yang diatur, dengan ketentuan penggunaan yang berbeda-beda sesuai dengan kategori makanan.",
-  "cannot_1": "Tentukan jumlah yang ditambahkan, jumlah sisa, atau paparan total melalui makanan berdasarkan daftar bahan.",
-  "cannot_2": "Menyimpulkan hasil kesehatan individu berdasarkan adanya nitrit atau nitrat yang terdeteksi.",
+  "description": "Nitrit dan nitrat mengawetkan daging curing: nitrit menghambat Clostridium botulinum tetapi juga dapat berpartisipasi dalam pembentukan senyawa N-nitroso.",
+  "what_is": "Nitrit dan nitrat adalah pengawet untuk proses curing yang terutama digunakan pada daging olahan dan daging curing. E249 dan E250 adalah kalium nitrit dan natrium nitrit; E251 dan E252 adalah natrium nitrat dan kalium nitrat.",
+  "why_botia": "Nitrit mengawetkan daging curing dan menghambat Clostridium botulinum, bakteri penyebab botulisme. Dalam kondisi tertentu nitrit dapat bereaksi dengan senyawa lain dalam makanan dan membentuk senyawa N-nitroso; pada 2015 IARC mengklasifikasikan daging olahan — bukan nitrit itu sendiri — sebagai karsinogenik bagi manusia (Grup 1). JECFA menetapkan ADI terpisah: 0–0,07 mg/kg berat badan per hari untuk nitrit dan 0–3,7 mg/kg untuk nitrat.",
+  "can_1": "Mendeteksi E249, E250, E251, E252, INS 249–252 serta nama natrium atau kalium nitrit dan nitrat yang sesuai.",
+  "can_2": "Menjelaskan mengapa nitrit digunakan pada daging curing, perannya melawan botulisme, kemampuannya berpartisipasi dalam pembentukan senyawa N-nitroso, klasifikasi IARC untuk daging olahan dan ADI JECFA yang terpisah.",
+  "cannot_1": "Menentukan dari daftar bahan berapa banyak nitrit atau nitrat yang ditambahkan, berapa banyak yang tersisa setelah curing atau berapa banyak senyawa N-nitroso yang terbentuk.",
+  "cannot_2": "Menganggap klasifikasi IARC Grup 1 untuk daging olahan sebagai klasifikasi nitrit itu sendiri atau menghitung risiko kanker individu dari satu label.",
   "sources": [
     {
-      "label": "Peraturan (EC) No. 1333/2008 — Daftar Uni Eropa dan ketentuan penggunaan bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Nitrite, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
     },
     {
-      "label": "Peraturan Komisi (UE) No. 231/2012 — spesifikasi untuk bahan tambahan pangan yang diizinkan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Nitrate, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
+    },
+    {
+      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
+      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "USDA FSIS — Nitrites and prevention of botulism",
+      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
     }
   ],
   "e_code": "E249–E252",
@@ -23,5 +35,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
 }

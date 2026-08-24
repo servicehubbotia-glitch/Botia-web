@@ -1,21 +1,33 @@
 {
   "name": "Nitrite & Nitrate",
   "title": "Nitrite & Nitrate",
-  "description": "Eine Gruppe von Pökel- und Konservierungsstoffen, bestehend aus Kaliumnitrit (E 249), Natriumnitrit (E 250), Natriumnitrat (E 251) und Kaliumnitrat (E 252).",
-  "what_is": "Eine Gruppe von Pökel- und Konservierungsstoffen, bestehend aus Kaliumnitrit (E 249), Natriumnitrit (E 250), Natriumnitrat (E 251) und Kaliumnitrat (E 252).",
-  "why_botia": "BOTIA Gruppen E249–E252, da auf Etiketten entweder die E-Nummer oder die chemische Bezeichnung angegeben sein kann. Die zugelassenen Verwendungszwecke und Höchstmengen sind produktspezifisch; der Nachweis eines deklarierten Nitrits oder Nitrats ist nicht gleichbedeutend mit der Abschätzung der Exposition oder des Gesundheitsrisikos.",
-  "can_1": "E249–E252 sowie die entsprechenden Bezeichnungen für Natrium- bzw. Kaliumnitrit/-nitrat erkennen.",
-  "can_2": "Weisen Sie nach, dass es sich hierbei um regulierte Konservierungsstoffe handelt, deren Verwendungsbedingungen je nach Lebensmittelkategorie variieren.",
-  "cannot_1": "Ermitteln Sie anhand der Zutatenliste die zugesetzte Menge, die Restmenge oder die gesamte Aufnahme über die Nahrung.",
-  "cannot_2": "Aus dem Nachweis von Nitrit oder Nitrat auf einen individuellen Gesundheitszustand schließen.",
+  "description": "Nitrite und Nitrate konservieren Pökelfleisch: Nitrit hemmt Clostridium botulinum, kann aber auch an der Bildung von N-Nitroso-Verbindungen beteiligt sein.",
+  "what_is": "Nitrite und Nitrate sind Pökel- und Konservierungsstoffe, die besonders in verarbeitetem und gepökeltem Fleisch eingesetzt werden. E249 und E250 sind Kaliumnitrit und Natriumnitrit; E251 und E252 sind Natriumnitrat und Kaliumnitrat.",
+  "why_botia": "Nitrit konserviert gepökeltes Fleisch und hemmt Clostridium botulinum, das Bakterium, das Botulismus verursacht. Unter bestimmten Bedingungen kann Nitrit mit anderen Verbindungen im Lebensmittel reagieren und N-Nitroso-Verbindungen bilden; IARC stufte 2015 verarbeitetes Fleisch — nicht Nitrit selbst — als krebserregend für Menschen (Gruppe 1) ein. JECFA legte getrennte ADI-Werte fest: 0–0,07 mg/kg Körpergewicht pro Tag für Nitrit und 0–3,7 mg/kg für Nitrat.",
+  "can_1": "E249, E250, E251, E252, INS 249–252 sowie die entsprechenden Natrium- oder Kalium-Nitrit- und Nitratnamen erkennen.",
+  "can_2": "Erklären, warum Nitrit in Pökelfleisch eingesetzt wird, seine Rolle gegen Botulismus, seine mögliche Beteiligung an der Bildung von N-Nitroso-Verbindungen, die IARC-Einstufung von verarbeitetem Fleisch und die getrennten JECFA-ADI-Werte.",
+  "cannot_1": "Aus der Zutatenliste bestimmen, wie viel Nitrit oder Nitrat zugesetzt wurde, wie viel nach dem Pökeln verbleibt oder wie viele N-Nitroso-Verbindungen entstanden sind.",
+  "cannot_2": "Die IARC-Gruppe-1-Einstufung von verarbeitetem Fleisch als Einstufung von Nitrit selbst behandeln oder aus einem Etikett das individuelle Krebsrisiko berechnen.",
   "sources": [
     {
-      "label": "Verordnung (EG) Nr. 1333/2008 – Unionsliste und Verwendungsbedingungen für Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Nitrite, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
     },
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission – Spezifikationen für zugelassene Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Nitrate, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
+    },
+    {
+      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
+      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "USDA FSIS — Nitrites and prevention of botulism",
+      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
     }
   ],
   "e_code": "E249–E252",
@@ -23,5 +35,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
 }

@@ -1,21 +1,33 @@
 {
   "name": "Nitriți și nitrați",
   "title": "Nitriți și nitrați",
-  "description": "Un grup de aditivi de maturare și conservare care cuprinde nitritul de potasiu (E249), nitritul de sodiu (E250), nitratul de sodiu (E251) și nitratul de potasiu (E252).",
-  "what_is": "Un grup de aditivi de maturare și conservare care cuprinde nitritul de potasiu (E249), nitritul de sodiu (E250), nitratul de sodiu (E251) și nitratul de potasiu (E252).",
-  "why_botia": "BOTIA grupurile E249–E252, deoarece pe etichete pot fi utilizate fie numărul E, fie denumirea chimică. Utilizările autorizate și concentrațiile maxime ale acestora sunt specifice fiecărui produs; detectarea unui nitrit sau nitrat declarat nu echivalează cu estimarea expunerii sau a riscului pentru sănătate.",
-  "can_1": "Identificați compușii „E249–E252” și denumirile corespunzătoare ale acestora sub formă de nitriți/nitrați de sodiu sau de potasiu.",
-  "can_2": "Demonstrați că aceștia sunt conservanți reglementați, ale căror condiții de utilizare variază în funcție de categoria de produse alimentare.",
-  "cannot_1": "Determinați cantitatea adăugată, cantitatea reziduală sau expunerea alimentară totală pe baza listei de ingrediente.",
-  "cannot_2": "A deduce o stare de sănătate a unei persoane pe baza prezenței unui nitrit sau nitrat declarat.",
+  "description": "Nitriții și nitrații conservă carnea tratată: nitritul inhibă Clostridium botulinum, dar poate participa și la formarea compușilor N-nitrozo.",
+  "what_is": "Nitriții și nitrații sunt conservanți de maturare utilizați în special în carnea procesată și tratată. E249 și E250 sunt nitrit de potasiu și nitrit de sodiu; E251 și E252 sunt nitrat de sodiu și nitrat de potasiu.",
+  "why_botia": "Nitritul conservă carnea tratată și inhibă Clostridium botulinum, bacteria care provoacă botulismul. În anumite condiții poate reacționa cu alți compuși din alimente și poate forma compuși N-nitrozo; în 2015, IARC a clasificat carnea procesată — nu nitritul în sine — drept cancerigenă pentru oameni (Grupa 1). JECFA a stabilit ADI separate: 0–0,07 mg/kg greutate corporală pe zi pentru nitrit și 0–3,7 mg/kg pentru nitrat.",
+  "can_1": "Detecta E249, E250, E251, E252, INS 249–252 și denumirile corespunzătoare de nitrit sau nitrat de sodiu și potasiu.",
+  "can_2": "Explica de ce se utilizează nitritul în carnea tratată, rolul său împotriva botulismului, posibilitatea formării compușilor N-nitrozo, clasificarea IARC a cărnii procesate și ADI separate ale JECFA.",
+  "cannot_1": "Determina din lista ingredientelor cât nitrit sau nitrat a fost adăugat, cât rămâne după tratare sau cât compus N-nitrozo s-a format.",
+  "cannot_2": "Trata clasificarea IARC Grupa 1 a cărnii procesate ca pe o clasificare a nitritului însuși sau calcula riscul individual de cancer dintr-o singură etichetă.",
   "sources": [
     {
-      "label": "Regulamentul (CE) nr. 1333/2008 — Lista Uniunii și condițiile de utilizare a aditivilor alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Nitrite, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
     },
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei — specificații privind aditivii alimentari autorizați",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Nitrate, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
+    },
+    {
+      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
+      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "USDA FSIS — Nitrites and prevention of botulism",
+      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
     }
   ],
   "e_code": "E249–E252",
@@ -23,5 +35,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
 }

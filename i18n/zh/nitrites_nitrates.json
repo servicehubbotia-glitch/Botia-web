@@ -1,21 +1,33 @@
 {
   "name": "亚硝酸盐与硝酸盐",
   "title": "亚硝酸盐与硝酸盐",
-  "description": "一组由亚硝酸钾（E249）、亚硝酸钠（E250）、硝酸钠（E251）和硝酸钾（E252）组成的腌制和防腐添加剂。",
-  "what_is": "一组由亚硝酸钾（E249）、亚硝酸钠（E250）、硝酸钠（E251）和硝酸钾（E252）组成的腌制和防腐添加剂。",
-  "why_botia": "BOTIA E249–E252 组，因为标签上既可能使用 E 编号，也可能使用化学名称。其批准用途和最大使用量因产品而异；检测到声明中的亚硝酸盐或硝酸盐，并不等同于评估暴露水平或健康风险。",
-  "can_1": "检测E249–E252及其相应的亚硝酸盐/硝酸盐（钠或钾）名称。",
-  "can_2": "证明这些是受监管的防腐剂，其使用条件因食品类别而异。",
-  "cannot_1": "根据配料表确定添加量、残留量或膳食总暴露量。",
-  "cannot_2": "根据检测到的亚硝酸盐或硝酸盐的存在，推断个体的健康状况。",
+  "description": "亚硝酸盐和硝酸盐用于保存腌制肉：亚硝酸盐抑制 Clostridium botulinum，但也可能参与形成 N-亚硝基化合物。",
+  "what_is": "亚硝酸盐和硝酸盐是腌制防腐剂，尤其用于加工肉和腌制肉。E249 和 E250 分别是亚硝酸钾和亚硝酸钠；E251 和 E252 分别是硝酸钠和硝酸钾。",
+  "why_botia": "亚硝酸盐可以保存腌制肉，并抑制导致肉毒杆菌中毒的 Clostridium botulinum。在某些条件下，亚硝酸盐会与食品中的其他化合物反应形成 N-亚硝基化合物；IARC 在2015年将加工肉 — 而不是亚硝酸盐本身 — 列为对人类致癌（1类）。JECFA 分别设定了 ADI：亚硝酸盐为每天每公斤体重0–0.07毫克，硝酸盐为0–3.7毫克。",
+  "can_1": "识别 E249、E250、E251、E252、INS 249–252，以及相应的亚硝酸钠、亚硝酸钾、硝酸钠和硝酸钾名称。",
+  "can_2": "解释亚硝酸盐为什么用于腌制肉、其防止肉毒杆菌中毒的作用、形成 N-亚硝基化合物的可能性、IARC 对加工肉的分类以及 JECFA 分别设定的 ADI。",
+  "cannot_1": "仅根据配料表确定实际添加了多少亚硝酸盐或硝酸盐、腌制后还剩多少，或形成了多少 N-亚硝基化合物。",
+  "cannot_2": "把 IARC 对加工肉的1类致癌分类当作对亚硝酸盐本身的分类，或从一张标签计算个人癌症风险。",
   "sources": [
     {
-      "label": "第1333/2008号（EC）法规——食品添加剂的欧盟清单及使用条件",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Nitrite, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
     },
     {
-      "label": "欧盟委员会第231/2012号条例——经批准的食品添加剂规格",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Nitrate, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
+    },
+    {
+      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
+      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "USDA FSIS — Nitrites and prevention of botulism",
+      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
     }
   ],
   "e_code": "E249–E252",
@@ -23,5 +35,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
 }

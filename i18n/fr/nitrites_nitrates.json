@@ -1,21 +1,33 @@
 {
   "name": "Nitrites & Nitrates",
   "title": "Nitrites & Nitrates",
-  "description": "Groupe d'additifs de salaison et de conservation comprenant le nitrite de potassium (E 249), le nitrite de sodium (E 250), le nitrate de sodium (E 251) et le nitrate de potassium (E 252).",
-  "what_is": "Groupe d'additifs de salaison et de conservation comprenant le nitrite de potassium (E 249), le nitrite de sodium (E 250), le nitrate de sodium (E 251) et le nitrate de potassium (E 252).",
-  "why_botia": "BOTIA groupes E249–E252 car les étiquettes peuvent mentionner soit le numéro E, soit le nom chimique. Leurs utilisations autorisées et leurs teneurs maximales varient selon les produits ; la détection d'un nitrite ou d'un nitrate déclaré ne revient pas à évaluer l'exposition ou le risque pour la santé.",
-  "can_1": "Identifier l'E249–E252e et les noms correspondants de nitrites et nitrates de sodium ou de potassium.",
-  "can_2": "Montrez qu'il s'agit d'agents conservateurs réglementés dont les conditions d'utilisation varient selon la catégorie d'aliments.",
-  "cannot_1": "Déterminez la quantité ajoutée, la quantité résiduelle ou l'exposition alimentaire totale à partir de la liste des ingrédients.",
-  "cannot_2": "Déduire un résultat sanitaire individuel à partir de la présence d'un nitrite ou d'un nitrate déclaré.",
+  "description": "Les nitrites et nitrates conservent les viandes salées : le nitrite inhibe Clostridium botulinum mais peut aussi participer à la formation de composés N-nitroso.",
+  "what_is": "Les nitrites et nitrates sont des conservateurs de salaison utilisés surtout dans les viandes transformées et salées. E249 et E250 correspondent au nitrite de potassium et au nitrite de sodium ; E251 et E252 au nitrate de sodium et au nitrate de potassium.",
+  "why_botia": "Le nitrite conserve les viandes salées et inhibe Clostridium botulinum, la bactérie responsable du botulisme. Dans certaines conditions, il peut réagir avec d'autres composés des aliments pour former des composés N-nitroso ; en 2015, le CIRC a classé la viande transformée — et non le nitrite lui-même — comme cancérogène pour l'homme (Groupe 1). Le JECFA a fixé des DJA distinctes : 0–0,07 mg/kg de poids corporel par jour pour le nitrite et 0–3,7 mg/kg pour le nitrate.",
+  "can_1": "Détecter E249, E250, E251, E252, INS 249–252 et les noms correspondants de nitrite ou nitrate de sodium et de potassium.",
+  "can_2": "Expliquer pourquoi le nitrite est utilisé dans les viandes salées, son rôle contre le botulisme, sa participation possible à la formation de composés N-nitroso, la classification du CIRC pour la viande transformée et les DJA distinctes du JECFA.",
+  "cannot_1": "Déterminer à partir de la seule liste des ingrédients la quantité de nitrite ou de nitrate ajoutée, la quantité restante après salaison ou la quantité de composés N-nitroso formée.",
+  "cannot_2": "Traiter la classification Groupe 1 du CIRC pour la viande transformée comme une classification du nitrite lui-même ou calculer le risque individuel de cancer à partir d'une seule étiquette.",
   "sources": [
     {
-      "label": "Règlement (CE) n° 1333/2008 — Liste de l'Union et conditions d'utilisation des additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Nitrite, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
     },
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission — spécifications relatives aux additifs alimentaires autorisés",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Nitrate, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
+    },
+    {
+      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
+      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "USDA FSIS — Nitrites and prevention of botulism",
+      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
     }
   ],
   "e_code": "E249–E252",
@@ -23,5 +35,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
 }

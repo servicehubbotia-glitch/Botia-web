@@ -1,21 +1,33 @@
 {
   "name": "Nitriti e nitrati",
   "title": "Nitriti e nitrati",
-  "description": "Un gruppo di additivi per la stagionatura e la conservazione comprendente nitrito di potassio (E249), nitrito di sodio (E250), nitrato di sodio (E251) e nitrato di potassio (E252).",
-  "what_is": "Un gruppo di additivi per la stagionatura e la conservazione comprendente nitrito di potassio (E249), nitrito di sodio (E250), nitrato di sodio (E251) e nitrato di potassio (E252).",
-  "why_botia": "BOTIA gruppi E249–E252 poiché le etichette possono riportare sia il numero E che il nome chimico. I loro usi autorizzati e i livelli massimi sono specifici per ciascun prodotto; rilevare la presenza di un nitrito o di un nitrato dichiarato non equivale a stimare l’esposizione o il rischio per la salute.",
-  "can_1": "Individuare l'E249–E252e e le corrispondenti denominazioni del nitrito/nitrato di sodio o di potassio.",
-  "can_2": "Dimostrare che si tratta di conservanti regolamentati, le cui condizioni d’uso variano a seconda della categoria alimentare.",
-  "cannot_1": "Determinare la quantità aggiunta, la quantità residua o l'esposizione alimentare totale sulla base dell'elenco degli ingredienti.",
-  "cannot_2": "Dedurre un esito sanitario individuale dalla presenza di un nitrito o di un nitrato dichiarato.",
+  "description": "Nitriti e nitrati conservano le carni stagionate: il nitrito inibisce Clostridium botulinum ma può anche partecipare alla formazione di composti N-nitroso.",
+  "what_is": "Nitriti e nitrati sono conservanti per la salagione utilizzati soprattutto nelle carni lavorate e stagionate. E249 ed E250 sono nitrito di potassio e nitrito di sodio; E251 ed E252 sono nitrato di sodio e nitrato di potassio.",
+  "why_botia": "Il nitrito conserva la carne stagionata e inibisce Clostridium botulinum, il batterio che causa il botulismo. In determinate condizioni può reagire con altri composti presenti negli alimenti formando composti N-nitroso; nel 2015 lo IARC ha classificato la carne lavorata — non il nitrito in sé — come cancerogena per l'uomo (Gruppo 1). Il JECFA ha fissato DGA separate: 0–0,07 mg/kg di peso corporeo al giorno per il nitrito e 0–3,7 mg/kg per il nitrato.",
+  "can_1": "Rilevare E249, E250, E251, E252, INS 249–252 e i corrispondenti nomi di nitrito o nitrato di sodio e potassio.",
+  "can_2": "Spiegare perché il nitrito viene utilizzato nelle carni stagionate, il suo ruolo contro il botulismo, la possibile formazione di composti N-nitroso, la classificazione IARC della carne lavorata e le DGA separate del JECFA.",
+  "cannot_1": "Determinare dalla lista degli ingredienti quanto nitrito o nitrato è stato aggiunto, quanto ne rimane dopo la stagionatura o quanti composti N-nitroso si sono formati.",
+  "cannot_2": "Trattare la classificazione IARC Gruppo 1 della carne lavorata come una classificazione del nitrito stesso o calcolare il rischio individuale di cancro da una singola etichetta.",
   "sources": [
     {
-      "label": "Regolamento (CE) n. 1333/2008 — Elenco dell’Unione e condizioni d’uso degli additivi alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Nitrite, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
     },
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione — specifiche relative agli additivi alimentari autorizzati",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Nitrate, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
+    },
+    {
+      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
+      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
+    },
+    {
+      "label": "USDA FSIS — Nitrites and prevention of botulism",
+      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
     }
   ],
   "e_code": "E249–E252",
@@ -23,5 +35,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
 }
