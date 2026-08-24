@@ -1,25 +1,37 @@
 {
   "name": "Aluminiumhaltige Zusatzstoffe",
   "title": "Aluminiumhaltige Zusatzstoffe",
-  "description": "Eine länderübergreifende Gruppe von Lebensmittelzusatzstoffen, die Aluminium enthalten, darunter Aluminiumsulfate, Natriumaluminiumphosphat und bestimmte Aluminosilikate.",
-  "what_is": "Eine länderübergreifende Gruppe von Lebensmittelzusatzstoffen, die Aluminium enthalten, darunter Aluminiumsulfate, Natriumaluminiumphosphat und bestimmte Aluminosilikate.",
-  "why_botia": "BOTIA Die Gruppen haben aluminiumhaltige Zusatzstoffe ausdrücklich aufgeführt, da auf Etiketten unterschiedliche Bezeichnungen oder Nummerierungssysteme verwendet werden können und internationale Sicherheitsbewertungen die gesamte Aluminiumexposition aus allen Quellen berücksichtigen. Das Vorhandensein eines zugelassenen Zusatzstoffs ist für sich genommen kein Hinweis darauf, dass eine tolerierbare Aufnahmemenge überschritten wurde.",
-  "can_1": "Erkennen Sie die aufgeführten Bezeichnungen von Aluminiumzusatzstoffen und deren angegebene E- oder „INS“-Kennungen.",
-  "can_2": "Zeigen Sie den E-Nummern-/Textur-Kontext auf und erläutern Sie, dass die Produktfamilie Zusatzstoffe mit unterschiedlichen Funktionen und Marktzulassungen umfasst.",
-  "cannot_1": "Berechnen Sie die gesamte Aluminiumaufnahme oder den Anteil, den ein Produkt aus der Zutatenliste dazu beiträgt.",
-  "cannot_2": "Behandeln Sie alle aluminiumhaltigen Verbindungen als austauschbar oder gehen Sie davon aus, dass alle unter INS aufgeführten Additive in der EU zugelassen sind.",
+  "description": "Aluminium kann in Backtriebmitteln, Farblacken und Antiklumpmitteln vorkommen. Nur sehr wenig wird aufgenommen, doch das Aufgenommene verlässt den Körper langsam; deshalb zählt die wöchentliche Gesamtexposition.",
+  "what_is": "Aluminium kann über verschiedene Zusatzstoffe mit sehr unterschiedlichen Aufgaben in Lebensmittel gelangen: einige werden in Backtriebmitteln eingesetzt, andere tragen Lebensmittelfarben als Aluminiumlacke, wieder andere verhindern das Verklumpen von Pulvern.",
+  "why_botia": "Aluminium steckt häufiger in Lebensmittelzusatzstoffen, als viele erwarten — in Backtriebmitteln, in Aluminiumlacken für Farbstoffe und in Trenn- oder Antiklumpmitteln. Nur sehr wenig wird aufgenommen, aber das aufgenommene Aluminium verlässt den Körper langsam; deshalb zählt die Summe aus allem, was man isst, nicht ein einzelner Inhaltsstoff. JECFA legte aus diesem Grund einen Wochenwert fest, und kein einzelnes Etikett kann zeigen, wo man insgesamt steht.",
+  "can_1": "Die aufgeführten aluminiumhaltigen Zusatzstoffe und ihre E- oder INS-Kennzeichnungen erkennen, wenn sie auf dem Etikett angegeben sind.",
+  "can_2": "Erklären, wo aluminiumhaltige Zusatzstoffe vorkommen können und warum die Gesamtaufnahme aus verschiedenen Lebensmitteln über eine Woche wichtiger ist als ein einzelner Inhaltsstoff.",
+  "cannot_1": "Die gesamte wöchentliche Aluminiumaufnahme aus dem Etikett eines einzelnen Produkts berechnen.",
+  "cannot_2": "Aus der Zutatenliste allein bestimmen, wie viel Aluminium ein Produkt beiträgt, wie viel aufgenommen wird oder wie viel im Körper verbleibt.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission – Spezifikationen einschließlich E520–E523",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Aluminiumhaltige Lebensmittelzusatzstoffe",
+      "label": "JECFA — Aluminium-containing food additives, PTWI for total aluminium",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
     },
     {
-      "label": "JECFA — Natriumaluminiumphosphat, sauer (INS 541i)",
+      "label": "JECFA — Aluminium, total dietary exposure",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/298"
+    },
+    {
+      "label": "JECFA — Sodium aluminium phosphate, acidic (INS 541(i))",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    },
+    {
+      "label": "JECFA — Sodium aluminium silicate (INS 554), anti-caking agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2371"
+    },
+    {
+      "label": "FAO/JECFA — Aluminium Lakes of Colouring Matters",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/detail/en/c/454/"
+    },
+    {
+      "label": "EFSA — Re-evaluation of aluminium sulphates (E520–523) and sodium aluminium phosphate (E541), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5372"
     }
   ],
   "e_code": "E520–E523, E541; selected INS 554–559",

@@ -1,25 +1,37 @@
 {
   "name": "Aditivi care conțin aluminiu",
   "title": "Aditivi care conțin aluminiu",
-  "description": "Un grup de aditivi alimentari care se regăsesc în mai multe jurisdicții și care conțin aluminiu, inclusiv sulfați de aluminiu, fosfat de sodiu și aluminiu și anumiți aluminosilicați.",
-  "what_is": "Un grup de aditivi alimentari care se regăsesc în mai multe jurisdicții și care conțin aluminiu, inclusiv sulfați de aluminiu, fosfat de sodiu și aluminiu și anumiți aluminosilicați.",
-  "why_botia": "BOTIA grupurile au declarat în mod explicit aditivii care conțin aluminiu, deoarece etichetele pot utiliza denumiri sau sisteme de numerotare diferite și deoarece evaluările internaționale de siguranță iau în considerare expunerea totală la aluminiu din toate sursele. Prezența unui singur aditiv autorizat nu constituie, în sine, o dovadă că s-a depășit doza admisibilă.",
-  "can_1": "Identificați denumirile aditivilor din aluminiu enumerați în listă și codurile E sau INS declarate ale acestora.",
-  "can_2": "Prezentați contextul referitor la numerele E și textură și explicați că această familie cuprinde aditivi cu funcții și autorizații de comercializare diferite.",
-  "cannot_1": "Calculați expunerea totală la aluminiu sau cantitatea provenită de la un produs din lista de ingrediente.",
-  "cannot_2": "Considerați că orice compus care conține aluminiu este interschimbabil sau presupuneți că toți aditivii enumerați la INS sunt autorizați în UE.",
+  "description": "Aluminiul poate apărea în agenți de afânare, lacuri pentru coloranți și antiaglomeranți. Se absoarbe foarte puțin, dar ceea ce se absoarbe părăsește organismul lent, astfel că expunerea săptămânală totală contează.",
+  "what_is": "Aluminiul poate ajunge în alimente prin mai mulți aditivi cu roluri foarte diferite: unii sunt folosiți în agenți de afânare, alții susțin coloranții sub formă de lacuri de aluminiu, iar alții împiedică aglomerarea pulberilor.",
+  "why_botia": "Aluminiul apare în aditivii alimentari mai des decât se așteaptă oamenii — în agenți de afânare, în lacurile folosite pentru coloranți și în agenți antiaglomeranți. Se absoarbe foarte puțin, dar ceea ce se absoarbe părăsește organismul lent, așa că important este totalul din tot ceea ce mănânci, nu un singur ingredient. JECFA a stabilit din acest motiv o limită săptămânală, iar o singură etichetă nu poate spune unde te situezi.",
+  "can_1": "Detecta aditivii cu aluminiu enumerați și identificatorii lor E sau INS atunci când sunt declarați pe etichetă.",
+  "can_2": "Explica unde pot apărea aditivii cu aluminiu și de ce aportul total din alimente diferite de-a lungul săptămânii contează mai mult decât un ingredient izolat.",
+  "cannot_1": "Calcula expunerea totală săptămânală la aluminiu din eticheta unui singur produs.",
+  "cannot_2": "Determina doar din lista ingredientelor cât aluminiu aduce un produs, cât absorbi sau cât rămâne în organism.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei — specificații care includ E520–E523",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Aditivi alimentari care conțin aluminiu",
+      "label": "JECFA — Aluminium-containing food additives, PTWI for total aluminium",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
     },
     {
-      "label": "JECFA — Fosfat de sodiu și aluminiu, acid (INS 541i)",
+      "label": "JECFA — Aluminium, total dietary exposure",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/298"
+    },
+    {
+      "label": "JECFA — Sodium aluminium phosphate, acidic (INS 541(i))",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    },
+    {
+      "label": "JECFA — Sodium aluminium silicate (INS 554), anti-caking agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2371"
+    },
+    {
+      "label": "FAO/JECFA — Aluminium Lakes of Colouring Matters",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/detail/en/c/454/"
+    },
+    {
+      "label": "EFSA — Re-evaluation of aluminium sulphates (E520–523) and sodium aluminium phosphate (E541), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5372"
     }
   ],
   "e_code": "E520–E523, E541; selected INS 554–559",

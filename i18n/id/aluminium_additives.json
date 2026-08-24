@@ -1,25 +1,37 @@
 {
   "name": "Bahan Tambahan yang Mengandung Aluminium",
   "title": "Bahan Tambahan yang Mengandung Aluminium",
-  "description": "Kelompok bahan tambahan pangan lintas yurisdiksi yang mengandung aluminium, termasuk aluminium sulfat, natrium aluminium fosfat, dan beberapa jenis aluminosilikat.",
-  "what_is": "Kelompok bahan tambahan pangan lintas yurisdiksi yang mengandung aluminium, termasuk aluminium sulfat, natrium aluminium fosfat, dan beberapa jenis aluminosilikat.",
-  "why_botia": "BOTIA Kelompok-kelompok tersebut secara eksplisit menyebutkan bahan tambahan yang mengandung aluminium karena label dapat menggunakan nama atau sistem penomoran yang berbeda-beda, dan karena evaluasi keamanan internasional mempertimbangkan paparan aluminium secara keseluruhan dari berbagai sumber. Kehadiran satu bahan tambahan yang telah disetujui saja tidak dapat dijadikan bukti bahwa batas asupan yang dapat ditoleransi telah terlampaui.",
-  "can_1": "Mendeteksi nama-nama bahan tambahan aluminium yang tercantum beserta kode E atau INS yang dinyatakan untuk masing-masing bahan tersebut.",
-  "can_2": "Tampilkan konteks nomor E/tekstur dan jelaskan bahwa kelompok ini mencakup bahan tambahan dengan fungsi dan izin edar yang berbeda-beda.",
-  "cannot_1": "Hitung total paparan aluminium atau jumlah yang berasal dari suatu produk berdasarkan daftar bahan.",
-  "cannot_2": "Perlakukan setiap senyawa yang mengandung aluminium sebagai bahan yang dapat saling menggantikan, atau anggaplah bahwa semua aditif yang tercantum di INS telah disetujui di Uni Eropa.",
+  "description": "Aluminium dapat muncul dalam bahan pengembang, lake pewarna dan bahan anti-penggumpalan. Sangat sedikit yang diserap, tetapi yang diserap keluar dari tubuh secara lambat, sehingga total paparan mingguan penting.",
+  "what_is": "Aluminium dapat masuk ke makanan melalui beberapa bahan tambahan dengan fungsi yang sangat berbeda: sebagian digunakan dalam bahan pengembang, sebagian membawa pewarna makanan sebagai aluminium lake, dan sebagian lainnya mencegah bubuk menggumpal.",
+  "why_botia": "Aluminium muncul dalam bahan tambahan pangan lebih sering daripada yang diperkirakan orang — dalam bahan pengembang, dalam lake yang digunakan untuk pewarna, dan dalam bahan anti-penggumpalan. Sangat sedikit yang diserap, tetapi bagian yang diserap keluar dari tubuh secara lambat, sehingga yang penting adalah total dari semua yang Anda makan, bukan satu bahan saja. Karena alasan itu JECFA menetapkan batas mingguan, dan satu label saja tidak dapat memberi tahu posisi total Anda.",
+  "can_1": "Mendeteksi bahan tambahan yang mengandung aluminium yang tercantum serta identitas E atau INS-nya ketika dinyatakan pada label.",
+  "can_2": "Menjelaskan di mana bahan tambahan yang mengandung aluminium dapat muncul dan mengapa total asupan dari berbagai makanan selama seminggu lebih penting daripada satu bahan terpisah.",
+  "cannot_1": "Menghitung total paparan aluminium mingguan Anda dari label satu produk.",
+  "cannot_2": "Menentukan hanya dari daftar bahan berapa banyak aluminium yang disumbangkan produk, berapa banyak yang Anda serap atau berapa banyak yang tetap berada dalam tubuh.",
   "sources": [
     {
-      "label": "Peraturan Komisi (UE) No. 231/2012 — spesifikasi yang mencakup E520–E523",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Bahan tambahan pangan yang mengandung aluminium",
+      "label": "JECFA — Aluminium-containing food additives, PTWI for total aluminium",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
     },
     {
-      "label": "JECFA — Natrium aluminium fosfat, asam (INS 541i)",
+      "label": "JECFA — Aluminium, total dietary exposure",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/298"
+    },
+    {
+      "label": "JECFA — Sodium aluminium phosphate, acidic (INS 541(i))",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    },
+    {
+      "label": "JECFA — Sodium aluminium silicate (INS 554), anti-caking agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2371"
+    },
+    {
+      "label": "FAO/JECFA — Aluminium Lakes of Colouring Matters",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/detail/en/c/454/"
+    },
+    {
+      "label": "EFSA — Re-evaluation of aluminium sulphates (E520–523) and sodium aluminium phosphate (E541), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5372"
     }
   ],
   "e_code": "E520–E523, E541; selected INS 554–559",

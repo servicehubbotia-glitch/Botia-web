@@ -1,25 +1,37 @@
 {
   "name": "Dodatki zawierające aluminium",
   "title": "Dodatki zawierające aluminium",
-  "description": "Grupa dodatków do żywności występujących w różnych jurysdykcjach, zawierających glin, w tym siarczany glinu, fosforan glinowo-sodowy oraz niektóre glinokrzemiany.",
-  "what_is": "Grupa dodatków do żywności występujących w różnych jurysdykcjach, zawierających glin, w tym siarczany glinu, fosforan glinowo-sodowy oraz niektóre glinokrzemiany.",
-  "why_botia": "BOTIA grupy wyraźnie wskazały dodatki zawierające glin, ponieważ na etykietach mogą być stosowane różne nazwy lub systemy numeracji, a także dlatego, że w międzynarodowych ocenach bezpieczeństwa uwzględnia się całkowite narażenie na glin ze wszystkich źródeł. Obecność jednego dopuszczonego dodatku nie stanowi sama w sobie dowodu na przekroczenie dopuszczalnego spożycia.",
-  "can_1": "Wykryj wymienione nazwy dodatków do aluminium oraz ich zadeklarowane oznaczenia E- lub INS.",
-  "can_2": "Wyświetl kontekst dotyczący numerów E i tekstury oraz wyjaśnij, że ta rodzina obejmuje dodatki o różnych funkcjach i zezwoleniach rynkowych.",
-  "cannot_1": "Oblicz całkowitą ekspozycję na aluminium lub ilość tego pierwiastka zawartą w danym produkcie na podstawie listy składników.",
-  "cannot_2": "Należy traktować każdy związek zawierający glin jako zamiennik lub założyć, że wszystkie wymienione na stronie INS dodatki są dopuszczone do stosowania w UE.",
+  "description": "Aluminium może występować w proszkach do pieczenia, lakach barwnikowych i substancjach przeciwzbrylających. Wchłania się go bardzo mało, lecz wchłonięta część opuszcza organizm powoli, więc liczy się całkowita ekspozycja tygodniowa.",
+  "what_is": "Aluminium może trafiać do żywności poprzez różne dodatki pełniące bardzo różne funkcje: niektóre są używane w proszkach do pieczenia, inne stanowią nośnik barwników jako laki aluminiowe, a jeszcze inne zapobiegają zbrylaniu się proszków.",
+  "why_botia": "Aluminium występuje w dodatkach do żywności częściej, niż wiele osób się spodziewa — w proszkach do pieczenia, lakach stosowanych do barwników i substancjach przeciwzbrylających. Wchłania się go bardzo mało, ale to, co zostanie wchłonięte, opuszcza organizm powoli, dlatego liczy się suma ze wszystkiego, co jesz, a nie jeden składnik. Z tego powodu JECFA ustaliła limit tygodniowy, a pojedyncza etykieta nie może powiedzieć, gdzie jesteś względem całkowitej ekspozycji.",
+  "can_1": "Wykrywać wymienione dodatki zawierające aluminium i ich oznaczenia E lub INS, gdy są zadeklarowane na etykiecie.",
+  "can_2": "Wyjaśniać, gdzie mogą występować dodatki zawierające aluminium i dlaczego całkowite spożycie z różnych produktów w ciągu tygodnia jest ważniejsze niż jeden składnik.",
+  "cannot_1": "Obliczyć całkowitej tygodniowej ekspozycji na aluminium na podstawie etykiety jednego produktu.",
+  "cannot_2": "Na podstawie samej listy składników określić, ile aluminium dostarcza produkt, ile zostaje wchłonięte lub ile pozostaje w organizmie.",
   "sources": [
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — specyfikacje obejmujące E520–E523",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Dodatki do żywności zawierające aluminium",
+      "label": "JECFA — Aluminium-containing food additives, PTWI for total aluminium",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
     },
     {
-      "label": "JECFA — Kwasowy fosforan sodowo-glinowy (nr INS 541i)",
+      "label": "JECFA — Aluminium, total dietary exposure",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/298"
+    },
+    {
+      "label": "JECFA — Sodium aluminium phosphate, acidic (INS 541(i))",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    },
+    {
+      "label": "JECFA — Sodium aluminium silicate (INS 554), anti-caking agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2371"
+    },
+    {
+      "label": "FAO/JECFA — Aluminium Lakes of Colouring Matters",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/detail/en/c/454/"
+    },
+    {
+      "label": "EFSA — Re-evaluation of aluminium sulphates (E520–523) and sodium aluminium phosphate (E541), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5372"
     }
   ],
   "e_code": "E520–E523, E541; selected INS 554–559",

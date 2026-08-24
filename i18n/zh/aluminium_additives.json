@@ -1,25 +1,37 @@
 {
   "name": "含铝添加剂",
   "title": "含铝添加剂",
-  "description": "一组跨管辖区的含铝食品添加剂，包括硫酸铝、磷酸铝钠和某些铝硅酸盐。",
-  "what_is": "一组跨管辖区的含铝食品添加剂，包括硫酸铝、磷酸铝钠和某些铝硅酸盐。",
-  "why_botia": "BOTIA 各组明确列出了含铝添加剂，因为标签上可能使用不同的名称或编号体系，而且国际安全评估会综合考虑来自各种来源的铝总暴露量。仅检测到一种获准使用的添加剂，本身并不构成超过可容忍摄入量的证据。",
-  "can_1": "检测所列的铝/铝添加剂名称及其标明的E号或INS标识符。",
-  "can_2": "展示E编号/质地上下文，并说明该产品系列涵盖了具有不同功能和市场授权的添加剂。",
-  "cannot_1": "根据成分表，计算铝的总摄入量或某产品所占的摄入量。",
-  "cannot_2": "将所有含铝的化合物视为可互换，或假定所列出的所有INS添加剂均在欧盟获准使用。",
+  "description": "铝可能出现在膨松剂、色淀和抗结剂中。人体吸收很少，但被吸收的部分离开身体很慢，因此每周总暴露量很重要。",
+  "what_is": "铝可以通过功能完全不同的多种食品添加剂进入食品：有些用于膨松剂，有些以铝色淀的形式作为食用色素的载体，还有一些用于防止粉末结块。",
+  "why_botia": "铝出现在食品添加剂中的频率比很多人想象的高——它可以出现在膨松剂、色素使用的铝色淀以及抗结剂中。人体吸收的量很少，但被吸收的部分离开身体很慢，因此真正重要的是你从所有食物中摄入的总量，而不是某一个成分。JECFA 正因如此设定了每周限量，而任何一张单独的标签都无法告诉你自己的总量处于什么位置。",
+  "can_1": "识别标签上明确标示的这些含铝添加剂及其 E 或 INS 编号。",
+  "can_2": "解释含铝添加剂可能出现在哪里，以及为什么一周内来自不同食物的总摄入量比某一个单独成分更重要。",
+  "cannot_1": "根据一个产品的标签计算你每周的总铝暴露量。",
+  "cannot_2": "仅根据配料表确定一个产品贡献多少铝、你吸收多少或有多少留在体内。",
   "sources": [
     {
-      "label": "欧盟委员会第231/2012号条例——包括E520–E523在内的规格说明",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — 含铝食品添加剂",
+      "label": "JECFA — Aluminium-containing food additives, PTWI for total aluminium",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
     },
     {
-      "label": "JECFA — 酸性磷酸铝钠（INS541i）",
+      "label": "JECFA — Aluminium, total dietary exposure",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/298"
+    },
+    {
+      "label": "JECFA — Sodium aluminium phosphate, acidic (INS 541(i))",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    },
+    {
+      "label": "JECFA — Sodium aluminium silicate (INS 554), anti-caking agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2371"
+    },
+    {
+      "label": "FAO/JECFA — Aluminium Lakes of Colouring Matters",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/detail/en/c/454/"
+    },
+    {
+      "label": "EFSA — Re-evaluation of aluminium sulphates (E520–523) and sodium aluminium phosphate (E541), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5372"
     }
   ],
   "e_code": "E520–E523, E541; selected INS 554–559",

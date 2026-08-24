@@ -1,25 +1,37 @@
 {
   "name": "Alüminyum İçeren Katkı Maddeleri",
   "title": "Alüminyum İçeren Katkı Maddeleri",
-  "description": "Alüminyum sülfatlar, sodyum alüminyum fosfat ve bazı alüminosilikatlar dahil olmak üzere, alüminyum içeren gıda katkı maddelerinden oluşan, farklı düzenleme alanlarını kapsayan bir grup.",
-  "what_is": "Alüminyum sülfatlar, sodyum alüminyum fosfat ve bazı alüminosilikatlar dahil olmak üzere, alüminyum içeren gıda katkı maddelerinden oluşan, farklı düzenleme alanlarını kapsayan bir grup.",
-  "why_botia": "BOTIA Gruplar, alüminyum içeren katkı maddelerini açıkça belirtmiştir; zira etiketlerde farklı isimler veya numaralandırma sistemleri kullanılabilmekte ve uluslararası güvenlik değerlendirmelerinde tüm kaynaklardan gelen toplam alüminyum maruziyeti dikkate alınmaktadır. Onaylanmış bir katkı maddesinin varlığı, tek başına, tolere edilebilir alım miktarının aşıldığına dair bir kanıt teşkil etmez.",
-  "can_1": "Listelenen alüminyum katkı maddesi adlarını ve bunların beyan edilen E- veya INS kodlarını tespit edin.",
-  "can_2": "E-numarası/miktar bağlamını gösterin ve bu ürün ailesinin farklı işlevlere ve pazar izinlerine sahip katkı maddelerini kapsadığını açıklayın.",
-  "cannot_1": "Toplam alüminyum maruziyetini veya bir ürünün içerik listesindeki bileşenlerin buna katkısını hesaplayın.",
-  "cannot_2": "Alüminyum içeren her bileşiği birbirinin yerine kullanılabilir olarak değerlendirin ya da INS adresinde listelenen tüm katkı maddelerinin AB’de onaylı olduğunu varsayınız.",
+  "description": "Alüminyum kabartma tozlarında, renk lakelerinde ve topaklanma önleyicilerde bulunabilir. Çok azı emilir, ancak emilen kısmın vücuttan çıkması yavaştır; bu yüzden toplam haftalık maruziyet önemlidir.",
+  "what_is": "Alüminyum, çok farklı görevleri olan çeşitli katkı maddeleri yoluyla gıdaya girebilir: bazıları kabartma tozlarında kullanılır, bazıları renk maddelerini alüminyum lake olarak taşır, bazıları ise tozların topaklanmasını önler.",
+  "why_botia": "Alüminyum gıda katkı maddelerinde insanların beklediğinden daha sık karşımıza çıkar — kabartma tozlarında, renklendiriciler için kullanılan lakelerde ve topaklanmayı önleyici maddelerde. Çok azı emilir, ancak emilen kısmın vücuttan çıkması yavaştır; bu nedenle önemli olan tek bir bileşen değil, yediğiniz her şeyden gelen toplamdır. JECFA bu nedenle haftalık bir sınır belirledi ve tek bir etiket toplamda nerede olduğunuzu söyleyemez.",
+  "can_1": "Listelenen alüminyum içeren katkı maddelerini ve E veya INS tanımlayıcılarını etikette açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Alüminyum içeren katkı maddelerinin nerelerde bulunabileceğini ve hafta boyunca farklı gıdalardan gelen toplam alımın neden tek bir bileşenden daha önemli olduğunu açıklamak.",
+  "cannot_1": "Tek bir ürün etiketinden toplam haftalık alüminyum maruziyetinizi hesaplamak.",
+  "cannot_2": "Yalnızca içerik listesinden bir ürünün ne kadar alüminyum sağladığını, ne kadarını emdiğinizi veya vücudunuzda ne kadar kaldığını belirlemek.",
   "sources": [
     {
-      "label": "(AB) 231/2012 sayılı Komisyon Tüzüğü — E520–E523’ü içeren teknik şartnameler",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Alüminyum içeren gıda katkı maddeleri",
+      "label": "JECFA — Aluminium-containing food additives, PTWI for total aluminium",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
     },
     {
-      "label": "JECFA — Asidik sodyum alüminyum fosfat (INS 541i)",
+      "label": "JECFA — Aluminium, total dietary exposure",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/298"
+    },
+    {
+      "label": "JECFA — Sodium aluminium phosphate, acidic (INS 541(i))",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    },
+    {
+      "label": "JECFA — Sodium aluminium silicate (INS 554), anti-caking agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2371"
+    },
+    {
+      "label": "FAO/JECFA — Aluminium Lakes of Colouring Matters",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/detail/en/c/454/"
+    },
+    {
+      "label": "EFSA — Re-evaluation of aluminium sulphates (E520–523) and sodium aluminium phosphate (E541), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5372"
     }
   ],
   "e_code": "E520–E523, E541; selected INS 554–559",

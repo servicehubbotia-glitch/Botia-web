@@ -1,25 +1,37 @@
 {
   "name": "Aditivos que contienen aluminio",
   "title": "Aditivos que contienen aluminio",
-  "description": "Un grupo de aditivos alimentarios de aplicación transjurisdiccional que contienen aluminio, entre los que se incluyen los sulfatos de aluminio, el fosfato de sodio y aluminio y determinados aluminosilicatos.",
-  "what_is": "Un grupo de aditivos alimentarios de aplicación transjurisdiccional que contienen aluminio, entre los que se incluyen los sulfatos de aluminio, el fosfato de sodio y aluminio y determinados aluminosilicatos.",
-  "why_botia": "BOTIA Los grupos han declarado explícitamente los aditivos que contienen aluminio, ya que en las etiquetas pueden utilizarse diferentes nombres o sistemas de numeración y porque las evaluaciones internacionales de seguridad tienen en cuenta la exposición total al aluminio procedente de todas las fuentes. La presencia de un aditivo autorizado no constituye, por sí sola, una prueba de que se haya superado la ingesta tolerable.",
-  "can_1": "Detecta los nombres de los aditivos de aluminio que figuran en la lista y sus identificadores E o INS declarados.",
-  "can_2": "Muestra el contexto de los números E y las texturas, y explica que esta familia abarca aditivos con diferentes funciones y autorizaciones de comercialización.",
-  "cannot_1": "Calcula la exposición total al aluminio o la cantidad que aporta un producto a partir de la lista de ingredientes.",
-  "cannot_2": "Considera que todos los compuestos que contengan aluminio son intercambiables o da por hecho que todos los aditivos que figuran en INS están autorizados en la UE.",
+  "description": "El aluminio puede aparecer en levaduras químicas, lacas de colorantes y antiaglomerantes. Se absorbe muy poco, pero lo absorbido abandona el cuerpo lentamente, por lo que importa la exposición semanal total.",
+  "what_is": "El aluminio puede llegar a los alimentos a través de varios aditivos con funciones muy distintas: algunos se usan en levaduras químicas, otros sirven de soporte para colorantes en forma de lacas de aluminio y otros evitan que los polvos se apelmacen.",
+  "why_botia": "El aluminio aparece en los aditivos alimentarios más de lo que la gente espera — en levaduras químicas, en las lacas utilizadas para los colorantes y en agentes antiaglomerantes. Se absorbe muy poco, pero lo que se absorbe abandona el cuerpo lentamente, así que lo que importa es el total de todo lo que comes, no un solo ingrediente. JECFA estableció por eso un límite semanal, y ninguna etiqueta por sí sola puede decirte en qué punto estás.",
+  "can_1": "Detectar los aditivos de aluminio/aluminum incluidos y sus identificadores E o INS cuando estén declarados en la etiqueta.",
+  "can_2": "Explicar dónde pueden aparecer los aditivos con aluminio y por qué importa más la suma de distintos alimentos durante la semana que un ingrediente aislado.",
+  "cannot_1": "Calcular tu exposición total semanal al aluminio a partir de la etiqueta de un solo producto.",
+  "cannot_2": "Determinar cuánto aluminio aporta un producto, cuánto absorbes o cuánto permanece en tu cuerpo únicamente a partir de la lista de ingredientes.",
   "sources": [
     {
-      "label": "Reglamento (UE) n.º 231/2012 de la Comisión — especificaciones que incluyen los códigos E520–E523",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Aditivos alimentarios que contienen aluminio",
+      "label": "JECFA — Aluminium-containing food additives, PTWI for total aluminium",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
     },
     {
-      "label": "JECFA — Fosfato de sodio y aluminio, ácido (n.º INS541i)",
+      "label": "JECFA — Aluminium, total dietary exposure",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/298"
+    },
+    {
+      "label": "JECFA — Sodium aluminium phosphate, acidic (INS 541(i))",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    },
+    {
+      "label": "JECFA — Sodium aluminium silicate (INS 554), anti-caking agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2371"
+    },
+    {
+      "label": "FAO/JECFA — Aluminium Lakes of Colouring Matters",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/detail/en/c/454/"
+    },
+    {
+      "label": "EFSA — Re-evaluation of aluminium sulphates (E520–523) and sodium aluminium phosphate (E541), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5372"
     }
   ],
   "e_code": "E520–E523, E541; selected INS 554–559",

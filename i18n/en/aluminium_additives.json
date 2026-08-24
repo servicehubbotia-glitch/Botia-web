@@ -7,26 +7,38 @@
     "enumbers",
     "texture"
   ],
-  "what_is": "A cross-jurisdiction group of food additives containing aluminium, including aluminium sulphates, sodium aluminium phosphate and certain aluminosilicates.",
-  "why_botia": "BOTIA groups explicitly declared aluminium-containing additives because labels can use different names or numbering systems and because international safety evaluations consider total aluminium exposure across sources. The presence of one authorised additive is not, by itself, evidence that a tolerable intake has been exceeded.",
-  "can_1": "Detect the listed aluminium/aluminum additive names and their declared E- or INS identifiers.",
-  "can_2": "Show the E-number/texture context and explain that the family spans additives with different functions and market authorisations.",
-  "cannot_1": "Calculate total aluminium exposure or the amount contributed by a product from the ingredient list.",
-  "cannot_2": "Treat every compound containing aluminium as interchangeable or assume that all listed INS additives are authorised in the EU.",
+  "what_is": "Aluminium can enter food through several additives with very different jobs: some are used in baking powders, some carry food colours as aluminium lakes, and others keep powders from clumping.",
+  "why_botia": "Aluminium turns up in food additives more often than people expect — in baking powders, in the lakes used for colours, and in anti-caking agents. Very little is absorbed, but what is absorbed leaves the body slowly, so what matters is the total from everything you eat, not one ingredient. JECFA set a weekly limit for that reason, and no single label can tell you where you stand.",
+  "can_1": "Detect the listed aluminium/aluminum additives and their E- or INS identifiers when they are declared on the label.",
+  "can_2": "Explain where aluminium-containing additives can appear and why total intake across different foods over the week matters more than one isolated ingredient.",
+  "cannot_1": "Calculate your total weekly aluminium exposure from a single product label.",
+  "cannot_2": "Determine how much aluminium a product contributes, how much you absorb or how much remains in your body from the ingredient list alone.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications including E520–E523",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Aluminium-containing food additives",
+      "label": "JECFA — Aluminium-containing food additives, PTWI for total aluminium",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
     },
     {
-      "label": "JECFA — Sodium aluminium phosphate, acidic (INS 541i)",
+      "label": "JECFA — Aluminium, total dietary exposure",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/298"
+    },
+    {
+      "label": "JECFA — Sodium aluminium phosphate, acidic (INS 541(i))",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4655"
+    },
+    {
+      "label": "JECFA — Sodium aluminium silicate (INS 554), anti-caking agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2371"
+    },
+    {
+      "label": "FAO/JECFA — Aluminium Lakes of Colouring Matters",
+      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/detail/en/c/454/"
+    },
+    {
+      "label": "EFSA — Re-evaluation of aluminium sulphates (E520–523) and sodium aluminium phosphate (E541), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5372"
     }
   ],
   "title": "Aluminium-Containing Additives",
-  "description": "A cross-jurisdiction group of food additives containing aluminium, including aluminium sulphates, sodium aluminium phosphate and certain aluminosilicates."
+  "description": "Aluminium can appear in baking powders, colour lakes and anti-caking agents. Very little is absorbed, but what is absorbed leaves the body slowly, so total weekly exposure matters."
 }
