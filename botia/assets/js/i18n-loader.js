@@ -10,15 +10,14 @@
   const RTL = new Set(["ar"]);
 
   const LAYER_ROUTES = {
+    animal: "/pages/animal.html",
+    woman: "/pages/woman.html",
     muslim: "/pages/muslim.html",
-    woman: "/ingredients/woman_safefood.html",
-    animal: "/ingredients/animal_origin.html",
-    sugar: "/ingredients/sugar.html",
-    sweetener: "/ingredients/sweetener.html",
-    texture: "/ingredients/texture.html",
-    flavour: "/ingredients/flavor.html",
-    flavor: "/ingredients/flavor.html",
-    enumbers: "/ingredients/enumbers.html"
+    sugar: "/pages/hidden_sugars.html",
+    sweetener: "/pages/not_sugar.html",
+    texture: "/pages/what_holds_it.html",
+    flavour: "/pages/tasting_like_itself.html",
+    enumbers: "/pages/the_code_system.html"
   };
 
   const LAYER_LABELS = {
