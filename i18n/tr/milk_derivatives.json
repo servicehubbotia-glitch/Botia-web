@@ -6,26 +6,30 @@
   "layers": [
     "animal"
   ],
-  "what_is": "Sütten elde edilen bileşenler; bunlara laktoz (süt şekeri), kazein ve kazeinatlar (süt proteinleri) ile peynir altı suyu veya peynir altı suyu proteinleri dahildir.",
-  "why_botia": "BOTIA Bu terimler, süt kaynaklı bir bileşenin beyan edildiğini gösterdiği için işaretlenir. AB gıda bilgilendirme kuralları, belirli istisnalar dışında, laktoz da dahil olmak üzere süt ve süt ürünlerini alerjen beyanı gerektiren maddeler arasında saymaktadır.",
-  "can_1": "Laktoz, kazein, kazeinatlar, peynir altı suyu ve peynir altı suyu proteinleri gibi süt kaynaklı yaygın terimleri tanımlayın.",
-  "can_2": "Süt kaynaklı bir bileşen açıkça belirtildiğinde, hayvansal köken bilgisi katmanını etkinleştirin.",
-  "cannot_1": "Sadece içerik listesine bakarak üründe bulunan laktoz veya süt proteini miktarını belirleyin.",
-  "cannot_2": "Ürüne özgü analitik bilgiler olmadan, işleme sürecinin alerjenik süt proteinlerini ortadan kaldırıp kaldırmadığını belirlemek veya kalan laktozu ölçmek.",
+  "what_is": "Süt türevlerinin hepsi aynı değildir: laktoz süt şekeridir, kazein, kazeinatlar ve peynir altı suyu proteinleri ise süt proteinleridir.",
+  "why_botia": "“Süt türevleri” çok farklı maddeleri kapsayabilir: laktoz süt şekeridir, kazein ve peynir altı suyu proteinleri ise proteindir. Bu fark önemlidir. Kazein laktoz intoleransına neden olan madde değildir; buna karşılık süt proteini alerjisi olan kişilerin ürün “laktozsuz” yazsa bile kazein ve peynir altı suyu gibi süt proteinlerinden kaçınması gerekir. Kısacası: laktozsuz, sütsüz demek değildir.",
+  "can_1": "Laktoz, kazein, kazeinatlar, peynir altı suyu ve peynir altı suyu proteinleri gibi beyan edilen süt türevlerini tespit etmek.",
+  "can_2": "Beyan edilen terimin süt şekeri mi yoksa süt proteini mi olduğunu açıklayarak laktoz intoleransı ile süt proteini alerjisini ayırt etmeye yardımcı olmak.",
+  "cannot_1": "Yalnızca içerik listesinden üründe kalan laktoz veya süt proteini miktarını belirlemek.",
+  "cannot_2": "“Laktozsuz” ifadesini süt proteini bulunmadığının kanıtı saymak; kazein veya peynir altı suyu hâlâ bulunabilir.",
   "sources": [
     {
-      "label": "(AB) 1169/2011 sayılı Tüzük — Ek II: Süt ve süt ürünleri (laktoz dahil)",
+      "label": "Regulation (EU) No 1169/2011 — milk and products thereof, including lactose, in Annex II",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     },
     {
-      "label": "(AB) 2015/2203 sayılı Direktif — gıda amaçlı kazein ve kazeinatların tanımları ve bileşimleri",
+      "label": "Directive (EU) 2015/2203 — edible caseins and caseinates",
       "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
     },
     {
-      "label": "Codex Alimentarius — Peynir Altı Suyu Tozları Standardı (CXS 289-1995)",
+      "label": "Cambridge University Hospitals NHS — milk allergy versus lactose intolerance",
+      "url": "https://www.cuh.nhs.uk/patient-information/milk-allergy/"
+    },
+    {
+      "label": "Codex Alimentarius — Standard for Whey Powders (CXS 289-1995)",
       "url": "https://www.fao.org/faoterm/viewentry/en/?entryId=79692"
     }
   ],
   "title": "Süt Ürünleri",
-  "description": "Sütten elde edilen bileşenler; bunlara laktoz, kazein ve kazeinatlar ile peynir altı suyu veya peynir altı suyu proteinleri dahildir."
+  "description": "Laktoz süt şekeridir; kazein ve peynir altı suyu ise süt proteinleridir. Laktoz intoleransı ile süt proteini alerjisi farklıdır: laktozsuz, sütsüz anlamına gelmez."
 }

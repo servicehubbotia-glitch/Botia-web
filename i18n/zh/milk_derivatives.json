@@ -6,26 +6,30 @@
   "layers": [
     "animal"
   ],
-  "what_is": "源自牛奶的成分，包括乳糖（牛奶中的糖）、酪蛋白和酪蛋白盐（牛奶中的蛋白质），以及乳清或乳清蛋白。",
-  "why_botia": "BOTIA 对这些术语进行标注，因为它们表明该成分为声明的乳制品来源成分。欧盟食品信息法规将牛奶及其制品（包括乳糖）列为需标注过敏原的物质，但有特定例外情况。",
-  "can_1": "识别常见的乳制品相关标示术语，例如乳糖、酪蛋白、酪蛋白盐、乳清和乳清蛋白。",
-  "can_2": "当明确标明含有乳制品成分时，触发“动物来源信息”图层。",
-  "cannot_1": "仅根据配料表确定其中所含乳糖或乳蛋白的含量。",
-  "cannot_2": "在缺乏针对具体产品的分析信息的情况下，确定加工过程是否已去除致敏性乳蛋白，或定量测定残留乳糖。",
+  "what_is": "乳制品衍生成分并不相同：乳糖是牛奶中的糖，而酪蛋白、酪蛋白酸盐和乳清蛋白都是牛奶蛋白。",
+  "why_botia": "“乳制品衍生物”可以指完全不同的物质：乳糖是牛奶中的糖，而酪蛋白和乳清蛋白是蛋白质。这个区别很重要。酪蛋白并不是导致乳糖不耐受的物质；相反，对牛奶蛋白过敏的人即使看到产品标注“无乳糖”，仍需要避免酪蛋白和乳清等牛奶蛋白。换句话说：无乳糖并不等于无牛奶。",
+  "can_1": "识别标签声明的乳糖、酪蛋白、酪蛋白酸盐、乳清和乳清蛋白等乳源成分。",
+  "can_2": "说明所声明的成分是牛奶中的糖还是牛奶蛋白，帮助区分乳糖不耐受和牛奶蛋白过敏。",
+  "cannot_1": "仅凭配料表确定产品中实际剩余多少乳糖或牛奶蛋白。",
+  "cannot_2": "把“无乳糖”视为完全不含牛奶蛋白的证明；产品仍可能含有酪蛋白或乳清。",
   "sources": [
     {
-      "label": "第1169/2011号欧盟法规——附件二：牛奶及其制品（包括乳糖）",
+      "label": "Regulation (EU) No 1169/2011 — milk and products thereof, including lactose, in Annex II",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     },
     {
-      "label": "(EU) 2015/2203 号指令——食用酪蛋白和酪蛋白盐的定义及成分",
+      "label": "Directive (EU) 2015/2203 — edible caseins and caseinates",
       "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
     },
     {
-      "label": "Codex Alimentarius — 《乳清粉标准》（CXS 289-1995）",
+      "label": "Cambridge University Hospitals NHS — milk allergy versus lactose intolerance",
+      "url": "https://www.cuh.nhs.uk/patient-information/milk-allergy/"
+    },
+    {
+      "label": "Codex Alimentarius — Standard for Whey Powders (CXS 289-1995)",
       "url": "https://www.fao.org/faoterm/viewentry/en/?entryId=79692"
     }
   ],
   "title": "乳制品",
-  "description": "源自牛奶的成分，包括乳糖、酪蛋白和酪蛋白盐，以及乳清或乳清蛋白。"
+  "description": "乳糖是牛奶中的糖，而酪蛋白和乳清是牛奶蛋白。乳糖不耐受与牛奶蛋白过敏不是一回事：无乳糖并不等于无牛奶。"
 }

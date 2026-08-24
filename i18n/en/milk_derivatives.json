@@ -6,20 +6,24 @@
   "layers": [
     "animal"
   ],
-  "what_is": "Ingredients derived from milk, including lactose (milk sugar), casein and caseinates (milk proteins), and whey or whey proteins.",
-  "why_botia": "BOTIA flags these terms because they indicate a declared milk-derived ingredient. EU food-information rules list milk and products thereof, including lactose, among substances requiring allergen declaration, subject to specified exceptions.",
-  "can_1": "Identify common declared milk-derived terms such as lactose, casein, caseinates, whey and whey proteins.",
-  "can_2": "Trigger the animal-origin information layer when a milk-derived ingredient is explicitly declared.",
-  "cannot_1": "Determine the quantity of lactose or milk protein present from the ingredient list alone.",
-  "cannot_2": "Determine whether processing has removed allergenic milk proteins or quantify residual lactose without product-specific analytical information.",
+  "what_is": "Milk-derived ingredients are not all the same: lactose is the sugar in milk, while casein, caseinates and whey proteins are milk proteins.",
+  "why_botia": "“Milk derivatives” can cover very different things: lactose is milk sugar, while casein and whey proteins are proteins. The distinction matters. Casein is not the substance that causes lactose intolerance; by contrast, people with milk-protein allergy need to avoid milk proteins such as casein and whey even when a product says “lactose-free”. In other words: lactose-free does not mean milk-free.",
+  "can_1": "Detect declared milk-derived terms such as lactose, casein, caseinates, whey and whey proteins.",
+  "can_2": "Explain whether the declared term is milk sugar or a milk protein, helping distinguish lactose intolerance from milk-protein allergy.",
+  "cannot_1": "Determine from the ingredient list alone how much lactose or milk protein remains in the product.",
+  "cannot_2": "Treat the claim “lactose-free” as proof that a product contains no milk proteins; casein or whey may still be present.",
   "sources": [
     {
-      "label": "Regulation (EU) No 1169/2011 — Annex II: milk and products thereof (including lactose)",
+      "label": "Regulation (EU) No 1169/2011 — milk and products thereof, including lactose, in Annex II",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     },
     {
-      "label": "Directive (EU) 2015/2203 — definitions and composition of edible caseins and caseinates",
+      "label": "Directive (EU) 2015/2203 — edible caseins and caseinates",
       "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
+    },
+    {
+      "label": "Cambridge University Hospitals NHS — milk allergy versus lactose intolerance",
+      "url": "https://www.cuh.nhs.uk/patient-information/milk-allergy/"
     },
     {
       "label": "Codex Alimentarius — Standard for Whey Powders (CXS 289-1995)",
@@ -27,5 +31,5 @@
     }
   ],
   "title": "Milk Derivatives",
-  "description": "Ingredients derived from milk, including lactose, casein and caseinates, and whey or whey proteins."
+  "description": "Lactose is milk sugar, while casein and whey are milk proteins. Lactose intolerance and milk-protein allergy are different, and lactose-free does not mean milk-free."
 }

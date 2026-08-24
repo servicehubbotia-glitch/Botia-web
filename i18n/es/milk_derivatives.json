@@ -6,26 +6,30 @@
   "layers": [
     "animal"
   ],
-  "what_is": "Ingredientes derivados de la leche, entre ellos la lactosa (azúcar de la leche), la caseína y los caseinatos (proteínas de la leche), así como el suero de leche o las proteínas del suero de leche.",
-  "why_botia": "BOTIA señala estos términos porque indican la presencia de un ingrediente declarado derivado de la leche. La normativa de la UE sobre información alimentaria incluye la leche y sus derivados, incluida la lactosa, entre las sustancias que deben declararse como alérgenos, salvo en las excepciones especificadas.",
-  "can_1": "Identifica los términos más habituales que aparecen en las etiquetas de los productos lácteos, como «lactosa», «caseína», «caseinatos», «suero» y «proteínas del suero».",
-  "can_2": "Activar la capa de información sobre el origen animal cuando se declare explícitamente un ingrediente derivado de la leche.",
-  "cannot_1": "Determina la cantidad de lactosa o proteína láctea presente basándote únicamente en la lista de ingredientes.",
-  "cannot_2": "Determinar si el procesamiento ha eliminado las proteínas alergénicas de la leche o cuantificar la lactosa residual sin disponer de información analítica específica del producto.",
+  "what_is": "Los derivados lácteos no son todos lo mismo: la lactosa es el azúcar de la leche, mientras que la caseína, los caseinatos y las proteínas del suero son proteínas lácteas.",
+  "why_botia": "“Derivados lácteos” puede cubrir cosas distintas: la lactosa es el azúcar de la leche, mientras que la caseína y las proteínas del suero son proteínas. La diferencia importa: la caseína no es la sustancia que causa la intolerancia a la lactosa; en cambio, quien tiene alergia a las proteínas de la leche debe evitar caseína y suero aunque el producto diga “sin lactosa”. En otras palabras: sin lactosa no significa sin leche.",
+  "can_1": "Detectar términos lácteos declarados como lactosa, caseína, caseinatos, suero y proteínas del suero.",
+  "can_2": "Explicar si el término declarado es azúcar de la leche o una proteína láctea, ayudando a distinguir intolerancia a la lactosa de alergia a las proteínas de la leche.",
+  "cannot_1": "Determinar solo con la lista de ingredientes cuánta lactosa o proteína láctea queda en el producto.",
+  "cannot_2": "Interpretar la declaración “sin lactosa” como prueba de que no hay proteínas de leche; todavía puede haber caseína o suero.",
   "sources": [
     {
-      "label": "Reglamento (UE) n.º 1169/2011 — Anexo II: leche y productos lácteos (incluida la lactosa)",
+      "label": "Reglamento (UE) 1169/2011 — leche y productos derivados, incluida la lactosa, en el Anexo II",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     },
     {
-      "label": "Directiva (UE) 2015/2203 — definiciones y composición de las caseínas y los caseinatos comestibles",
+      "label": "Directiva (UE) 2015/2203 — caseínas y caseinatos alimentarios",
       "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
     },
     {
-      "label": "Codex Alimentarius — Norma sobre el suero de leche en polvo (CXS 289-1995)",
+      "label": "Cambridge University Hospitals NHS — alergia a la leche frente a intolerancia a la lactosa",
+      "url": "https://www.cuh.nhs.uk/patient-information/milk-allergy/"
+    },
+    {
+      "label": "Codex Alimentarius — Norma para sueros en polvo (CXS 289-1995)",
       "url": "https://www.fao.org/faoterm/viewentry/en/?entryId=79692"
     }
   ],
   "title": "Derivados de la leche",
-  "description": "Ingredientes derivados de la leche, como la lactosa, la caseína y los caseinatos, así como el suero de leche o las proteínas del suero de leche."
+  "description": "La lactosa es el azúcar de la leche, mientras que la caseína y el suero son proteínas lácteas. Intolerancia a la lactosa y alergia a la proteína de la leche no son lo mismo: sin lactosa no significa sin leche."
 }

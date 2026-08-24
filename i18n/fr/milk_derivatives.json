@@ -6,26 +6,30 @@
   "layers": [
     "animal"
   ],
-  "what_is": "Ingrédients dérivés du lait, notamment le lactose (sucre du lait), la caséine et les caséinates (protéines du lait), ainsi que le lactosérum ou les protéines de lactosérum.",
-  "why_botia": "BOTIA signale ces termes car ils indiquent la présence d'un ingrédient déclaré dérivé du lait. La réglementation européenne en matière d'information alimentaire classe le lait et ses dérivés, y compris le lactose, parmi les substances devant faire l'objet d'une déclaration en tant qu'allergènes, sous réserve d'exceptions spécifiques.",
-  "can_1": "Identifiez les termes couramment utilisés dans les déclarations nutritionnelles et liés au lait, tels que « lactose », « caséine », « caséinates », « lactosérum » et « protéines de lactosérum ».",
-  "can_2": "Activer la couche d'informations sur l'origine animale lorsqu'un ingrédient dérivé du lait est explicitement déclaré.",
-  "cannot_1": "Déterminez la quantité de lactose ou de protéines de lait présente à partir de la seule liste des ingrédients.",
-  "cannot_2": "Déterminer si la transformation a permis d'éliminer les protéines de lait allergènes ou quantifier le lactose résiduel en l'absence d'informations analytiques spécifiques au produit.",
+  "what_is": "Les dérivés du lait ne sont pas tous identiques : le lactose est le sucre du lait, tandis que la caséine, les caséinates et les protéines du lactosérum sont des protéines du lait.",
+  "why_botia": "« Dérivés du lait » peut recouvrir des substances très différentes : le lactose est le sucre du lait, tandis que la caséine et les protéines du lactosérum sont des protéines. La différence est importante. La caséine n’est pas la substance responsable de l’intolérance au lactose ; en revanche, une personne allergique aux protéines du lait doit éviter la caséine et le lactosérum même si le produit porte la mention « sans lactose ». Autrement dit : sans lactose ne signifie pas sans lait.",
+  "can_1": "Identifier les termes laitiers déclarés comme lactose, caséine, caséinates, lactosérum et protéines de lactosérum.",
+  "can_2": "Expliquer si le terme déclaré est un sucre du lait ou une protéine du lait afin d’aider à distinguer l’intolérance au lactose de l’allergie aux protéines du lait.",
+  "cannot_1": "Déterminer à partir de la seule liste d’ingrédients la quantité de lactose ou de protéines du lait encore présente.",
+  "cannot_2": "Considérer la mention « sans lactose » comme la preuve qu’il n’y a aucune protéine du lait ; de la caséine ou du lactosérum peuvent subsister.",
   "sources": [
     {
-      "label": "Règlement (UE) n° 1169/2011 — Annexe II : lait et produits dérivés (y compris le lactose)",
+      "label": "Regulation (EU) No 1169/2011 — milk and products thereof, including lactose, in Annex II",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     },
     {
-      "label": "Directive (UE) 2015/2203 — Définitions et composition des caséines et caséinates comestibles",
+      "label": "Directive (EU) 2015/2203 — edible caseins and caseinates",
       "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
     },
     {
-      "label": "Codex Alimentarius — Norme relative aux poudres de lactosérum (CXS 289-1995)",
+      "label": "Cambridge University Hospitals NHS — milk allergy versus lactose intolerance",
+      "url": "https://www.cuh.nhs.uk/patient-information/milk-allergy/"
+    },
+    {
+      "label": "Codex Alimentarius — Standard for Whey Powders (CXS 289-1995)",
       "url": "https://www.fao.org/faoterm/viewentry/en/?entryId=79692"
     }
   ],
   "title": "Dérivés du lait",
-  "description": "Ingrédients dérivés du lait, notamment le lactose, la caséine et les caséinates, ainsi que le lactosérum ou les protéines de lactosérum."
+  "description": "Le lactose est le sucre du lait, tandis que la caséine et le lactosérum sont des protéines du lait. Intolérance au lactose et allergie aux protéines du lait sont différentes : sans lactose ne signifie pas sans lait."
 }

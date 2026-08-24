@@ -6,26 +6,30 @@
   "layers": [
     "animal"
   ],
-  "what_is": "Ingredientes derivados do leite, incluindo lactose (açúcar do leite), caseína e caseinatos (proteínas do leite), e soro de leite ou proteínas do soro de leite.",
-  "why_botia": "BOTIA assinala estes termos porque indicam um ingrediente declarado derivado do leite. As regras da UE em matéria de informação alimentar incluem o leite e os seus derivados, incluindo a lactose, entre as substâncias que exigem a declaração de alergénios, salvo exceções específicas.",
-  "can_1": "Identifique termos comuns relacionados com o leite que constam na composição, tais como lactose, caseína, caseinatos, soro de leite e proteínas do soro de leite.",
-  "can_2": "Ativar a camada de informação sobre a origem animal quando for explicitamente declarado um ingrediente derivado do leite.",
-  "cannot_1": "Determine a quantidade de lactose ou de proteína do leite presente apenas a partir da lista de ingredientes.",
-  "cannot_2": "Determinar se o processamento removeu as proteínas alergénicas do leite ou quantificar a lactose residual sem dispor de informações analíticas específicas do produto.",
+  "what_is": "Os derivados do leite não são todos iguais: a lactose é o açúcar do leite, enquanto caseína, caseinatos e proteínas do soro são proteínas do leite.",
+  "why_botia": "“Derivados do leite” pode abranger substâncias muito diferentes: a lactose é o açúcar do leite, enquanto a caseína e as proteínas do soro são proteínas. A diferença importa. A caseína não é a substância que causa intolerância à lactose; em contrapartida, quem tem alergia às proteínas do leite deve evitar caseína e soro mesmo que o produto diga “sem lactose”. Por outras palavras: sem lactose não significa sem leite.",
+  "can_1": "Detetar termos derivados do leite declarados como lactose, caseína, caseinatos, soro e proteínas do soro.",
+  "can_2": "Explicar se o termo declarado é açúcar do leite ou proteína do leite, ajudando a distinguir intolerância à lactose de alergia às proteínas do leite.",
+  "cannot_1": "Determinar apenas pela lista de ingredientes quanto lactose ou proteína do leite permanece no produto.",
+  "cannot_2": "Interpretar a alegação “sem lactose” como prova de ausência de proteínas do leite; caseína ou soro podem continuar presentes.",
   "sources": [
     {
-      "label": "Regulamento (UE) n.º 1169/2011 — Anexo II: leite e produtos lácteos (incluindo lactose)",
+      "label": "Regulation (EU) No 1169/2011 — milk and products thereof, including lactose, in Annex II",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     },
     {
-      "label": "Diretiva (UE) 2015/2203 — definições e composição das caseínas e caseinatos comestíveis",
+      "label": "Directive (EU) 2015/2203 — edible caseins and caseinates",
       "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
     },
     {
-      "label": "Codex Alimentarius — Norma relativa aos soro de leite em pó (CXS 289-1995)",
+      "label": "Cambridge University Hospitals NHS — milk allergy versus lactose intolerance",
+      "url": "https://www.cuh.nhs.uk/patient-information/milk-allergy/"
+    },
+    {
+      "label": "Codex Alimentarius — Standard for Whey Powders (CXS 289-1995)",
       "url": "https://www.fao.org/faoterm/viewentry/en/?entryId=79692"
     }
   ],
   "title": "Derivados do leite",
-  "description": "Ingredientes derivados do leite, incluindo lactose, caseína e caseinatos, bem como soro de leite ou proteínas do soro de leite."
+  "description": "A lactose é o açúcar do leite, enquanto caseína e soro são proteínas do leite. Intolerância à lactose e alergia às proteínas do leite são diferentes: sem lactose não significa sem leite."
 }

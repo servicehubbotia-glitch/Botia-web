@@ -6,26 +6,30 @@
   "layers": [
     "animal"
   ],
-  "what_is": "Ingredienti derivati dal latte, tra cui il lattosio (zucchero del latte), la caseina e i caseinati (proteine del latte), nonché il siero di latte o le proteine del siero di latte.",
-  "why_botia": "BOTIA segnala questi termini poiché indicano un ingrediente dichiarato derivato dal latte. Le norme dell'UE in materia di informazione alimentare includono il latte e i suoi derivati, compreso il lattosio, tra le sostanze soggette all'obbligo di dichiarazione degli allergeni, fatte salve specifiche eccezioni.",
-  "can_1": "Individuare i termini comunemente utilizzati relativi ai derivati del latte, quali lattosio, caseina, caseinati, siero di latte e proteine del siero di latte.",
-  "can_2": "Attivare il livello informativo relativo all’origine animale quando viene esplicitamente dichiarato un ingrediente derivato dal latte.",
-  "cannot_1": "Determinare la quantità di lattosio o di proteine del latte presenti basandosi esclusivamente sull'elenco degli ingredienti.",
-  "cannot_2": "Determinare se la lavorazione ha eliminato le proteine allergeniche del latte oppure quantificare il lattosio residuo in assenza di informazioni analitiche specifiche relative al prodotto.",
+  "what_is": "I derivati del latte non sono tutti uguali: il lattosio è lo zucchero del latte, mentre caseina, caseinati e proteine del siero sono proteine del latte.",
+  "why_botia": "“Derivati del latte” può indicare sostanze molto diverse: il lattosio è lo zucchero del latte, mentre caseina e proteine del siero sono proteine. La differenza conta. La caseina non è la sostanza che causa l’intolleranza al lattosio; chi è allergico alle proteine del latte deve invece evitare caseina e siero anche se il prodotto è dichiarato “senza lattosio”. In altre parole: senza lattosio non significa senza latte.",
+  "can_1": "Identificare termini lattiero-caseari dichiarati come lattosio, caseina, caseinati, siero e proteine del siero.",
+  "can_2": "Spiegare se il termine dichiarato è zucchero del latte o una proteina del latte, aiutando a distinguere intolleranza al lattosio da allergia alle proteine del latte.",
+  "cannot_1": "Determinare dalla sola lista ingredienti quanto lattosio o proteina del latte rimane nel prodotto.",
+  "cannot_2": "Considerare la dicitura “senza lattosio” come prova dell’assenza di proteine del latte; caseina o siero possono essere ancora presenti.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 1169/2011 — Allegato II: latte e prodotti derivati (compreso il lattosio)",
+      "label": "Regulation (EU) No 1169/2011 — milk and products thereof, including lactose, in Annex II",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     },
     {
-      "label": "Direttiva (UE) 2015/2203 — definizioni e composizione delle caseine e dei caseinati commestibili",
+      "label": "Directive (EU) 2015/2203 — edible caseins and caseinates",
       "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
     },
     {
-      "label": "Codex Alimentarius — Norma relativa alle polveri di siero di latte (CXS 289-1995)",
+      "label": "Cambridge University Hospitals NHS — milk allergy versus lactose intolerance",
+      "url": "https://www.cuh.nhs.uk/patient-information/milk-allergy/"
+    },
+    {
+      "label": "Codex Alimentarius — Standard for Whey Powders (CXS 289-1995)",
       "url": "https://www.fao.org/faoterm/viewentry/en/?entryId=79692"
     }
   ],
   "title": "Derivati del latte",
-  "description": "Ingredienti derivati dal latte, tra cui lattosio, caseina e caseinati, nonché siero di latte o proteine del siero di latte."
+  "description": "Il lattosio è lo zucchero del latte, mentre caseina e siero sono proteine del latte. Intolleranza al lattosio e allergia alle proteine del latte sono diverse: senza lattosio non significa senza latte."
 }

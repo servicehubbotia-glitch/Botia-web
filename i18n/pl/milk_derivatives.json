@@ -6,26 +6,30 @@
   "layers": [
     "animal"
   ],
-  "what_is": "Składniki pochodzenia mlecznego, w tym laktoza (cukier mleczny), kazeina i kazeiniany (białka mleka) oraz serwatka lub białka serwatkowe.",
-  "why_botia": "BOTIA wskazuje na te terminy, ponieważ wskazują one na zadeklarowany składnik pochodzenia mlecznego. Przepisy UE dotyczące informacji o żywności wymieniają mleko i produkty mleczne, w tym laktozę, wśród substancji wymagających deklaracji alergenów, z zastrzeżeniem określonych wyjątków.",
-  "can_1": "Wymień najczęściej spotykane składniki pochodzenia mlecznego, takie jak laktoza, kazeina, kazeiniany, serwatka i białka serwatkowe.",
-  "can_2": "Należy aktywować warstwę informacji o pochodzeniu zwierzęcym, gdy składnik pochodzenia mlecznego jest wyraźnie wskazany.",
-  "cannot_1": "Na podstawie samego wykazu składników należy określić zawartość laktozy lub białka mleka.",
-  "cannot_2": "Określić, czy w wyniku przetwarzania usunięto alergenne białka mleka, lub określić ilościowo pozostałości laktozy bez dostępu do informacji analitycznych dotyczących konkretnego produktu.",
+  "what_is": "Pochodne mleka nie są tym samym: laktoza jest cukrem mlecznym, a kazeina, kazeiniany i białka serwatkowe są białkami mleka.",
+  "why_botia": "„Pochodne mleka” mogą oznaczać bardzo różne substancje: laktoza jest cukrem mlecznym, natomiast kazeina i białka serwatkowe są białkami. To rozróżnienie ma znaczenie. Kazeina nie jest substancją powodującą nietolerancję laktozy; osoba z alergią na białka mleka musi natomiast unikać kazeiny i serwatki nawet wtedy, gdy produkt jest oznaczony „bez laktozy”. Innymi słowy: bez laktozy nie znaczy bez mleka.",
+  "can_1": "Rozpoznawać zadeklarowane składniki mleczne, takie jak laktoza, kazeina, kazeiniany, serwatka i białka serwatkowe.",
+  "can_2": "Wyjaśniać, czy dany składnik jest cukrem mlecznym czy białkiem mleka, pomagając odróżnić nietolerancję laktozy od alergii na białka mleka.",
+  "cannot_1": "Określić tylko z listy składników ilości laktozy lub białka mleka pozostającej w produkcie.",
+  "cannot_2": "Traktować deklarację „bez laktozy” jako dowód braku białek mleka; kazeina lub serwatka mogą nadal występować.",
   "sources": [
     {
-      "label": "Rozporządzenie (UE) nr 1169/2011 — załącznik II: mleko i produkty mleczne (w tym laktoza)",
+      "label": "Regulation (EU) No 1169/2011 — milk and products thereof, including lactose, in Annex II",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     },
     {
-      "label": "Dyrektywa (UE) 2015/2203 – definicje i skład kazein i kazeinianów przeznaczonych do spożycia",
+      "label": "Directive (EU) 2015/2203 — edible caseins and caseinates",
       "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
     },
     {
-      "label": "Codex Alimentarius — Norma dotycząca proszków serwatki (CXS 289-1995)",
+      "label": "Cambridge University Hospitals NHS — milk allergy versus lactose intolerance",
+      "url": "https://www.cuh.nhs.uk/patient-information/milk-allergy/"
+    },
+    {
+      "label": "Codex Alimentarius — Standard for Whey Powders (CXS 289-1995)",
       "url": "https://www.fao.org/faoterm/viewentry/en/?entryId=79692"
     }
   ],
   "title": "Produkty mleczne",
-  "description": "Składniki pochodzenia mlecznego, w tym laktoza, kazeina i kazeiniany, a także serwatka lub białka serwatkowe."
+  "description": "Laktoza jest cukrem mlecznym, natomiast kazeina i serwatka są białkami mleka. Nietolerancja laktozy i alergia na białka mleka to różne rzeczy: bez laktozy nie znaczy bez mleka."
 }

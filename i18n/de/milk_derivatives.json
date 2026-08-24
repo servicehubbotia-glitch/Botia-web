@@ -6,26 +6,30 @@
   "layers": [
     "animal"
   ],
-  "what_is": "Aus Milch gewonnene Inhaltsstoffe, darunter Laktose (Milchzucker), Kasein und Kaseinate (Milchproteine) sowie Molke oder Molkenproteine.",
-  "why_botia": "BOTIA Diese Begriffe werden hervorgehoben, da sie auf einen deklarierten Inhaltsstoff auf Milchbasis hinweisen. Gemäß den EU-Vorschriften zur Lebensmittelinformation gehören Milch und Milchprodukte, einschließlich Laktose, zu den Stoffen, deren Allergenkennzeichnung vorgeschrieben ist, vorbehaltlich bestimmter Ausnahmen.",
-  "can_1": "Identifizieren Sie häufig angegebene Begriffe im Zusammenhang mit Milch wie Laktose, Kasein, Kaseinate, Molke und Molkenproteine.",
-  "can_2": "Die Ebene mit den Angaben zur tierischen Herkunft soll aktiviert werden, wenn ein aus Milch gewonnener Inhaltsstoff ausdrücklich angegeben ist.",
-  "cannot_1": "Ermitteln Sie den Gehalt an Laktose oder Milcheiweiß allein anhand der Zutatenliste.",
-  "cannot_2": "Feststellen, ob durch die Verarbeitung allergene Milchproteine entfernt wurden, oder den Restlaktosegehalt ohne produktspezifische Analyseinformationen bestimmen.",
+  "what_is": "Milchbestandteile sind nicht dasselbe: Laktose ist Milchzucker, während Kasein, Kaseinate und Molkenproteine Milchproteine sind.",
+  "why_botia": "„Milchderivate“ können sehr unterschiedliche Stoffe bezeichnen: Laktose ist Milchzucker, Kasein und Molkenproteine sind dagegen Proteine. Der Unterschied ist wichtig. Kasein ist nicht der Stoff, der eine Laktoseintoleranz verursacht; bei einer Milcheiweißallergie müssen dagegen Milchproteine wie Kasein und Molke gemieden werden, auch wenn ein Produkt als „laktosefrei“ bezeichnet wird. Kurz: laktosefrei bedeutet nicht milchfrei.",
+  "can_1": "Deklarierte Milchbestandteile wie Laktose, Kasein, Kaseinate, Molke und Molkenproteine erkennen.",
+  "can_2": "Erklären, ob der deklarierte Stoff Milchzucker oder Milchprotein ist, und so Laktoseintoleranz von Milcheiweißallergie unterscheiden helfen.",
+  "cannot_1": "Aus der Zutatenliste allein bestimmen, wie viel Laktose oder Milchprotein im Produkt verbleibt.",
+  "cannot_2": "Die Angabe „laktosefrei“ als Beweis dafür behandeln, dass das Produkt keine Milchproteine enthält; Kasein oder Molke können weiterhin enthalten sein.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 1169/2011 – Anhang II: Milch und Milcherzeugnisse (einschließlich Laktose)",
+      "label": "Regulation (EU) No 1169/2011 — milk and products thereof, including lactose, in Annex II",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     },
     {
-      "label": "Richtlinie (EU) 2015/2203 – Begriffsbestimmungen und Zusammensetzung von essbaren Kaseinen und Kaseinaten",
+      "label": "Directive (EU) 2015/2203 — edible caseins and caseinates",
       "url": "https://eur-lex.europa.eu/eli/dir/2015/2203/oj/eng"
     },
     {
-      "label": "Codex Alimentarius — Norm für Molkepulver (CXS 289-1995)",
+      "label": "Cambridge University Hospitals NHS — milk allergy versus lactose intolerance",
+      "url": "https://www.cuh.nhs.uk/patient-information/milk-allergy/"
+    },
+    {
+      "label": "Codex Alimentarius — Standard for Whey Powders (CXS 289-1995)",
       "url": "https://www.fao.org/faoterm/viewentry/en/?entryId=79692"
     }
   ],
   "title": "Milchprodukte",
-  "description": "Aus Milch gewonnene Inhaltsstoffe, darunter Laktose, Kasein und Kaseinate sowie Molke oder Molkenproteine."
+  "description": "Laktose ist Milchzucker, während Kasein und Molke Milchproteine sind. Laktoseintoleranz und Milcheiweißallergie sind verschieden: laktosefrei bedeutet nicht milchfrei."
 }
