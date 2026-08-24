@@ -1,21 +1,33 @@
 {
   "name": "Arômes de fumée",
   "title": "Arômes de fumée",
-  "description": "Préparations aromatiques obtenues à partir de fumée ou de condensats de fumée et ajoutées aux denrées alimentaires afin de leur conférer ou de renforcer un arôme de fumé. Elles se distinguent de la simple mention indiquant qu’un produit est « fumé de manière traditionnelle ».",
-  "what_is": "Préparations aromatiques obtenues à partir de fumée ou de condensats de fumée et ajoutées aux denrées alimentaires afin de leur conférer ou de renforcer un arôme de fumé. Elles ne doivent pas être confondues avec la simple mention indiquant qu’un produit est « fumé de manière traditionnelle ».",
-  "why_botia": "BOTIA signale les déclarations explicites relatives aux arômes de fumée, car les autorisations de l’UE pour les produits primaires aux arômes de fumée n’ont pas été renouvelées et les périodes de transition dépendent de la catégorie d’aliments. Les évaluations de l’EFSA réalisées en 2023 n’ont pas pu exclure les risques de génotoxicité pour les produits faisant l’objet d’un renouvellement qui ont été évalués. Ce contexte réglementaire et scientifique ne signifie pas pour autant que tout produit décrit comme « fumé » contienne un arôme de fumée ajouté.",
-  "can_1": "Détecter les mentions « arôme de fumée explicite », « arôme de fumée », « fumée liquide » et les termes déclarés étroitement liés.",
-  "can_2": "Expliquez la transition réglementaire au sein de l'UE et faites la distinction entre les arômes de fumée ajoutés et le fumage traditionnel lorsque l'étiquette fournit cette information.",
-  "cannot_1": "En déduire qu'un produit contient un arôme de fumée ajouté simplement parce que son nom comporte les termes « fumé » ou « au goût de fumé ».",
-  "cannot_2": "Déterminez quel produit ou quelle dose ayant principalement contribué à l'arôme de fumée a été utilisé(e), sauf si l'étiquette l'indique.",
+  "description": "Mélanges aromatisants complexes issus de fumée de bois condensée, dont la composition, l’évaluation de sécurité et le statut juridique varient selon le produit.",
+  "what_is": "Les arômes de fumée sont des mélanges complexes produits à partir de fumée de bois condensée et de fractions de ce condensat, puis ajoutés aux aliments pour apporter ou renforcer une saveur fumée. Ils se distinguent de la saveur obtenue en fumant directement l’aliment.",
+  "why_botia": "Les arômes de fumée sont des mélanges complexes issus de fumée de bois condensée et de ses fractions ; la purification peut réduire certains constituants potentiellement dangereux, mais la composition varie selon le produit. Le JECFA n’a accordé qu’une acceptation provisoire aux arômes de fumée respectant des spécifications appropriées pour les aliments traditionnellement fumés, car les données de sécurité étaient limitées, et les spécifications actuelles du JECFA limitent le benzo[a]pyrène à 2 µg/kg ; les évaluations de renouvellement de l’EFSA en 2023 n’ont permis d’exclure des préoccupations de génotoxicité pour aucun des huit produits évalués. L’UE a supprimé les dix anciens produits primaires de sa liste autorisée ; la période transitoire a pris fin pour la plupart des catégories le 1er juillet 2026 et se poursuit jusqu’au 1er juillet 2029 pour certaines catégories de fromages, viandes, poissons transformés et œufs de poisson.",
+  "can_1": "Détecter les mentions explicites d’arôme de fumée, fumée liquide, condensat de fumée et termes déclarés étroitement liés.",
+  "can_2": "Expliquer ce que sont les arômes de fumée, l’évaluation du JECFA et la transition actuelle de l’UE, et distinguer un arôme de fumée ajouté du fumage traditionnel lorsque l’étiquette fournit cette information.",
+  "cannot_1": "Déduire qu’un aliment contient un arôme de fumée ajouté simplement parce qu’il est décrit comme fumé.",
+  "cannot_2": "Identifier le produit primaire exact, sa composition, sa dose ou son profil de génotoxicité à partir d’une mention générique d’arôme de fumée.",
   "sources": [
     {
-      "label": "Règlement d'exécution (UE) 2024/2067 de la Commission — produits de base destinés à l'aromatisation au fumé et périodes transitoires",
-      "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2067/oj/eng"
+      "label": "JECFA — Arômes de fumée, dossier d’évaluation",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3952"
     },
     {
-      "label": "EFSA — Arômes de fumée",
+      "label": "JECFA — Monographie toxicologique sur les arômes de fumée (FAS 22)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v22je07.htm"
+    },
+    {
+      "label": "JECFA/FAO — Spécifications des arômes de fumée",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-386.pdf"
+    },
+    {
+      "label": "EFSA — Arômes de fumée, évaluations de renouvellement 2023",
       "url": "https://www.efsa.europa.eu/en/topics/topic/smoke-flavourings"
+    },
+    {
+      "label": "Union européenne — Règlement d’exécution (UE) 2024/2067",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2067/oj/eng"
     }
   ],
   "e_code": null,

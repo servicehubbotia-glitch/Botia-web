@@ -1,21 +1,33 @@
 {
   "name": "Aromaty dymne",
   "title": "Aromaty dymne",
-  "description": "Preparaty aromatyzujące wytwarzane z dymu lub kondensatów dymu, dodawane do żywności w celu nadania jej dymnego smaku lub jego wzmocnienia. Należy je odróżnić od zwykłego określenia, że dany produkt jest tradycyjnie wędzony.",
-  "what_is": "Preparaty aromatyzujące wytwarzane z dymu lub kondensatów dymu, dodawane do żywności w celu nadania jej dymnego smaku lub jego wzmocnienia. Należy je odróżnić od zwykłego określenia, że dany produkt jest tradycyjnie wędzony.",
-  "why_botia": "BOTIA zwraca uwagę na wyraźne oświadczenia dotyczące aromatów dymnych, ponieważ unijne zezwolenia na stosowanie aromatów dymnych w produktach podstawowych nie zostały przedłużone, a okresy przejściowe zależą od kategorii żywności. W ocenach przeprowadzonych przez organizację „EFSA” w 2023 r. nie można było wykluczyć obaw dotyczących genotoksyczności w odniesieniu do ocenianych produktów, których zezwolenia miały zostać przedłużone. Ten kontekst regulacyjny/naukowy nie oznacza, że jakikolwiek produkt opisany jako wędzony zawiera dodany aromat dymu wędzonego.",
-  "can_1": "Wykrywanie wyraźnych określeń dotyczących aromatu dymnego, aromatu dymnego, płynnego dymu oraz ściśle powiązanych terminów dotyczących składników wymienionych w składzie.",
-  "can_2": "Wyjaśnij proces zmian regulacyjnych w UE oraz wskaż różnicę między dodatkiem aromatów dymnych a tradycyjnym wędzeniem, gdy informacja ta znajduje się na etykiecie.",
-  "cannot_1": "Wnioskować, że produkt zawiera dodatek o smaku wędzonym tylko dlatego, że w jego nazwie występuje słowo „wędzony” lub „o smaku wędzonym”.",
-  "cannot_2": "Należy ustalić, jaki główny produkt nadający smak dymu lub jaka dawka tego produktu została zastosowana, o ile nie jest to wskazane na etykiecie.",
+  "description": "Złożone mieszaniny aromatyzujące ze skondensowanego dymu drzewnego o składzie, ocenie bezpieczeństwa i statusie prawnym zależnym od produktu.",
+  "what_is": "Aromaty dymu są złożonymi mieszaninami wytwarzanymi ze skondensowanego dymu drzewnego i jego frakcji, dodawanymi do żywności w celu nadania lub wzmocnienia smaku dymnego. Różnią się od smaku powstającego podczas bezpośredniego wędzenia żywności.",
+  "why_botia": "Aromaty dymu są złożonymi mieszaninami ze skondensowanego dymu drzewnego i jego frakcji; oczyszczanie może zmniejszyć zawartość niektórych potencjalnie niebezpiecznych składników, lecz skład różni się między produktami. JECFA przyznała jedynie tymczasową akceptację aromatom dymu spełniającym odpowiednie specyfikacje do stosowania w żywności tradycyjnie wędzonej, ponieważ dane dotyczące bezpieczeństwa były ograniczone, a obecne specyfikacje JECFA ograniczają benzo[a]piren do 2 µg/kg; w ocenach odnowienia EFSA z 2023 r. nie można było wykluczyć obaw dotyczących genotoksyczności dla żadnego z ośmiu ocenianych produktów. UE usunęła dziesięć dawnych produktów pierwotnych z listy zatwierdzonych; dla większości kategorii okres przejściowy zakończył się 1 lipca 2026 r., a dla określonych kategorii sera, mięsa, przetworzonych ryb i ikry trwa do 1 lipca 2029 r.",
+  "can_1": "Wykrywać wyraźnie zadeklarowane aromaty dymu, dym w płynie, kondensat dymu i ściśle powiązane określenia.",
+  "can_2": "Wyjaśniać, czym są aromaty dymu, ocenę JECFA i obecną sytuację przejściową w UE oraz odróżniać dodany aromat dymu od tradycyjnego wędzenia, gdy etykieta na to pozwala.",
+  "cannot_1": "Wnioskować o obecności dodanego aromatu dymu wyłącznie na podstawie określenia produktu jako wędzony lub dymny.",
+  "cannot_2": "Ustalić dokładnego produktu pierwotnego, jego składu, dawki ani profilu genotoksyczności na podstawie ogólnej deklaracji aromatu dymu.",
   "sources": [
     {
-      "label": "Rozporządzenie wykonawcze Komisji (UE) 2024/2067 — produkty podstawowe o smaku wędzonym oraz okresy przejściowe",
-      "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2067/oj/eng"
+      "label": "JECFA — Aromaty dymu, zapis oceny",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3952"
     },
     {
-      "label": "EFSA — Aromaty dymne",
+      "label": "JECFA — Monografia toksykologiczna dotycząca aromatów dymu (FAS 22)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v22je07.htm"
+    },
+    {
+      "label": "JECFA/FAO — Specyfikacje aromatów dymu",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-386.pdf"
+    },
+    {
+      "label": "EFSA — Aromaty dymu, oceny odnowienia z 2023 r.",
       "url": "https://www.efsa.europa.eu/en/topics/topic/smoke-flavourings"
+    },
+    {
+      "label": "Unia Europejska — Rozporządzenie wykonawcze (UE) 2024/2067",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2067/oj/eng"
     }
   ],
   "e_code": null,

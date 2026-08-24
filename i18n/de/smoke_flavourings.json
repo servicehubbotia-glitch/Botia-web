@@ -1,21 +1,33 @@
 {
   "name": "Raucharomen",
   "title": "Raucharomen",
-  "description": "Aromazubereitungen, die aus Rauch oder Rauchkondensaten hergestellt und Lebensmitteln zugesetzt werden, um ihnen einen Rauchgeschmack zu verleihen oder diesen zu verstärken. Sie unterscheiden sich davon, ein Lebensmittel lediglich als „traditionell geräuchert“ zu bezeichnen.",
-  "what_is": "Aromazubereitungen, die aus Rauch oder Rauchkondensaten hergestellt und Lebensmitteln zugesetzt werden, um ihnen einen Rauchgeschmack zu verleihen oder diesen zu verstärken. Sie unterscheiden sich davon, ein Lebensmittel lediglich als „traditionell geräuchert“ zu bezeichnen.",
-  "why_botia": "BOTIA weist ausdrücklich auf Angaben zum Raucharoma hin, da die EU-Zulassungen für Primärprodukte mit Raucharoma nicht verlängert wurden und die Übergangsfristen von der Lebensmittelkategorie abhängen. Die Bewertungen von „EFSA“ aus dem Jahr 2023 konnten Bedenken hinsichtlich der Genotoxizität der bewerteten Produkte, deren Zulassung verlängert werden sollte, nicht ausschließen. Dieser regulatorische/wissenschaftliche Kontext bedeutet nicht, dass jedes als „geräuchert“ bezeichnete Produkt ein zugesetztes Raucharoma enthält.",
-  "can_1": "Erkennen Sie explizite Angaben zu Raucharoma, Raucharoma, Flüssigrauch und eng damit verbundene Bezeichnungen für deklarierte Zutaten.",
-  "can_2": "Erläutern Sie den regulatorischen Wandel in der EU und unterscheiden Sie zwischen zugesetzten Raucharomen und traditioneller Räucherung, wenn diese Angaben auf dem Etikett zu finden sind.",
-  "cannot_1": "Daraus schließen, dass ein Produkt Raucharoma enthält, nur weil in seinem Namen „geräuchert“ oder „rauchig“ vorkommt.",
-  "cannot_2": "Ermitteln Sie, welches Produkt zur Raucharoma-Herstellung oder welche Dosierung verwendet wurde, sofern dies nicht auf dem Etikett angegeben ist.",
+  "description": "Komplexe Aromamischungen aus kondensiertem Holzrauch mit produktspezifischer Zusammensetzung, Sicherheitsbewertung und Rechtslage.",
+  "what_is": "Raucharomen sind komplexe Mischungen aus kondensiertem Holzrauch und daraus gewonnenen Fraktionen, die Lebensmitteln zugesetzt werden, um einen Rauchgeschmack zu erzeugen oder zu verstärken. Sie unterscheiden sich vom Geschmack, der durch das Räuchern des Lebensmittels selbst entsteht.",
+  "why_botia": "Raucharomen sind komplexe Mischungen aus kondensiertem Holzrauch und dessen Fraktionen; durch Reinigung können einige potenziell schädliche Bestandteile reduziert werden, doch die Zusammensetzung unterscheidet sich je nach Produkt. JECFA erteilte Raucharomen, die geeignete Spezifikationen erfüllen und für traditionell geräucherte Lebensmittel verwendet werden, wegen begrenzter Sicherheitsdaten nur eine vorläufige Akzeptanz; die aktuellen JECFA-Spezifikationen begrenzen Benzo[a]pyren auf 2 µg/kg. Bei den EFSA-Neubewertungen von 2023 konnten für keines der acht geprüften Produkte Bedenken hinsichtlich der Genotoxizität ausgeschlossen werden. Die EU strich die zehn früheren Primärprodukte aus ihrer Zulassungsliste; für die meisten Lebensmittelkategorien endete die Übergangsfrist am 1. Juli 2026, für bestimmte Käse-, Fleisch-, verarbeitete Fisch- und Fischrogenkategorien läuft sie bis zum 1. Juli 2029.",
+  "can_1": "Ausdrücklich deklarierte Raucharomen, Flüssigrauch, Rauchkondensat und eng verwandte Begriffe erkennen.",
+  "can_2": "Erklären, was Raucharomen sind, die JECFA-Bewertung und die aktuelle EU-Übergangsregelung erläutern und zugesetzte Raucharomen von traditionellem Räuchern unterscheiden, wenn das Etikett diese Information liefert.",
+  "cannot_1": "Allein aus der Bezeichnung geräuchert oder rauchig ableiten, dass ein Lebensmittel zugesetztes Raucharoma enthält.",
+  "cannot_2": "Aus einer allgemeinen Deklaration von Raucharoma das genaue Primärprodukt, seine Zusammensetzung, Dosierung oder sein Genotoxizitätsprofil bestimmen.",
   "sources": [
     {
-      "label": "Durchführungsverordnung (EU) 2024/2067 der Kommission – Primärprodukte mit Raucharoma und Übergangsfristen",
-      "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2067/oj/eng"
+      "label": "JECFA — Raucharomen, Bewertungsdatensatz",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3952"
     },
     {
-      "label": "EFSA — Raucharomen",
+      "label": "JECFA — Toxikologische Monographie zu Raucharomen (FAS 22)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v22je07.htm"
+    },
+    {
+      "label": "JECFA/FAO — Spezifikationen für Raucharomen",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-386.pdf"
+    },
+    {
+      "label": "EFSA — Raucharomen, Neubewertungen 2023",
       "url": "https://www.efsa.europa.eu/en/topics/topic/smoke-flavourings"
+    },
+    {
+      "label": "Europäische Union — Durchführungsverordnung (EU) 2024/2067",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2067/oj/eng"
     }
   ],
   "e_code": null,

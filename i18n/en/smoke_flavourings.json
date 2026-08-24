@@ -6,22 +6,34 @@
   "layers": [
     "flavour"
   ],
-  "what_is": "Flavouring preparations produced from smoke or smoke condensates and added to foods to provide or reinforce a smoky flavour. They are distinct from merely describing a food as traditionally smoked.",
-  "why_botia": "BOTIA flags explicit smoke-flavouring declarations because EU authorisations for smoke-flavouring primary products were not renewed and transitional periods depend on food category. EFSA's 2023 assessments could not rule out genotoxicity concerns for the renewal products assessed. That regulatory/scientific context is not a claim that any product described as smoked contains an added smoke flavouring.",
-  "can_1": "Detect explicit smoke flavouring, smoke flavoring, liquid smoke and closely related declared ingredient terms.",
-  "can_2": "Explain the EU regulatory transition and distinguish added smoke flavourings from traditional smoking when the label gives that information.",
-  "cannot_1": "Infer that a product contains added smoke flavouring merely because its name says smoked or smoky.",
-  "cannot_2": "Determine which primary smoke-flavouring product or dose was used unless the label identifies it.",
+  "what_is": "Smoke flavourings are complex mixtures produced from condensed wood smoke and fractions of that condensate, then added to foods to provide or reinforce a smoky flavour. They are different from flavour produced by smoking the food itself.",
+  "why_botia": "Smoke flavourings are complex mixtures made from condensed wood smoke and fractions of that condensate; purification can reduce some potentially hazardous constituents, but composition varies by product. JECFA gave only provisional acceptance to smoke flavourings meeting suitable specifications for foods traditionally treated by smoking because safety data were limited, and current JECFA specifications limit benzo[a]pyrene to 2 µg/kg; EFSA's 2023 renewal assessments could not rule out genotoxicity concerns for any of the eight products assessed. The EU deleted the ten former primary products from its authorised list; the transition ended for most food categories on 1 July 2026 and continues until 1 July 2029 for specified cheese, meat, processed fish and fish-roe categories.",
+  "can_1": "Detect explicit smoke flavouring, smoke flavoring, liquid smoke, smoke condensate and closely related declared ingredient terms.",
+  "can_2": "Explain what smoke flavourings are, the JECFA evaluation and the current EU transition, and distinguish an added smoke flavouring from traditional smoking when the label provides that information.",
+  "cannot_1": "Infer that a food contains an added smoke flavouring merely because its name or packaging describes it as smoked or smoky.",
+  "cannot_2": "Identify the exact primary smoke product, its composition, dose or genotoxicity profile from a generic smoke-flavouring declaration alone.",
   "sources": [
     {
-      "label": "Commission Implementing Regulation (EU) 2024/2067 — smoke flavouring primary products and transitional periods",
-      "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2067/oj/eng"
+      "label": "JECFA — Smoke Flavourings, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3952"
     },
     {
-      "label": "EFSA — Smoke flavourings",
+      "label": "JECFA — Smoke Flavourings toxicological monograph (FAS 22)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v22je07.htm"
+    },
+    {
+      "label": "JECFA/FAO — Smoke Flavourings specifications",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-386.pdf"
+    },
+    {
+      "label": "EFSA — Smoke flavourings, 2023 renewal assessments",
       "url": "https://www.efsa.europa.eu/en/topics/topic/smoke-flavourings"
+    },
+    {
+      "label": "European Union — Implementing Regulation (EU) 2024/2067",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2067/oj/eng"
     }
   ],
   "title": "Smoke Flavourings",
-  "description": "Flavouring preparations produced from smoke or smoke condensates and added to foods to provide or reinforce a smoky flavour. They are distinct from merely describing a food as traditionally smoked."
+  "description": "Complex flavouring mixtures produced from condensed wood smoke, with product-specific composition, safety assessment and legal status."
 }
