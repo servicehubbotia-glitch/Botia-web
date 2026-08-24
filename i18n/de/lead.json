@@ -6,22 +6,30 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Ein giftiges Schwermetall, das als Umweltkontaminant neurologische und reproduktive Schäden verursacht.",
-  "why_botia": "Blei kann die Plazenta durchqueren, und das sich entwickelnde Nervensystem ist besonders empfindlich. Studien haben eine spätere pubertäre Entwicklung bei Mädchen beobachtet, aber das ist ein Zusammenhang – keine nachgewiesene Wirkung von Blei.",
-  "can_1": "Kennzeichnung von Lebensmittelarten, die historisch anfällig für Bleikontamination sind.",
-  "can_2": "Erklären Sie die Anfälligkeit in der pränatalen Phase und in der Kindheit. Die individuelle Belastung wird mit einem Blutbleitest gemessen; ein Lebensmitteletikett kann Ihnen nicht den Blutbleispiegel einer Person mitteilen.",
-  "cannot_1": "Erkennung der genauen Bleikonzentration allein aus gescanntem Etikettentext.",
-  "cannot_2": "Feststellung, ob Blei aus Verpackungsmaterialien migriert ist.",
+  "what_is": "Blei ist ein giftiger Schwermetall-Schadstoff, der über belasteten Boden und Wasser sowie über Materialien zum Zubereiten, Lagern oder Servieren von Lebensmitteln in Nahrung gelangen kann.",
+  "why_botia": "Blei passiert die Plazenta und beeinträchtigt das sich entwickelnde Nervensystem: Bei Kindern ist es selbst bei niedriger Exposition mit geringerer kognitiver Leistungsfähigkeit verbunden. In den Knochen gespeichertes Blei wird während Schwangerschaft und Stillzeit mobilisiert, sodass eine Jahre zurückliegende Exposition das Kind erreichen kann. JECFA zog den früheren Wochenwert zurück, weil kein sicherer Wert festgelegt werden konnte — eine wirkungsfreie Menge ist nicht bekannt. Blei gelangt über Boden, Wasser aus alten Leitungen und manchmal über Gewürze oder schlecht glasierte Keramik in Lebensmittel.",
+  "can_1": "Die wichtigsten lebensmittelbezogenen Bleiquellen erklären, darunter belasteter Boden, alte Leitungen, Gewürze und schlecht glasierte Keramik.",
+  "can_2": "Erklären, warum die Woman-Ebene relevant ist: Blei passiert die Plazenta, und in Knochen gespeichertes Blei kann während Schwangerschaft und Stillzeit wieder ins Blut gelangen.",
+  "cannot_1": "Aus der Zutatenliste messen, wie viel Blei tatsächlich in einem Lebensmittel enthalten ist.",
+  "cannot_2": "Den Blutbleiwert oder die Bleispeicher in den Knochen einer Person kennen oder aus einem Etikett bestimmen, wie viel Blei einen Fötus oder Säugling erreicht hat.",
   "sources": [
     {
-      "label": "EFSA — Metalle als Kontaminanten in Lebensmitteln",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "JECFA — Lead: previous PTWI withdrawn; no new health-protective PTWI could be established",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3511"
     },
     {
-      "label": "WHO — Stand der Wissenschaft zu endokrin wirksamen Chemikalien (2012)",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "WHO — Lead poisoning and health",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/lead-poisoning-and-health"
+    },
+    {
+      "label": "WHO — Food safety: lead in soil, spices and food-contact materials",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/food-safety"
+    },
+    {
+      "label": "CDC — Lead and Breastfeeding: release of stored lead during pregnancy and lactation",
+      "url": "https://www.cdc.gov/breastfeeding-special-circumstances/hcp/exposures/lead.html"
     }
   ],
   "title": "Blei",
-  "description": "Ein giftiges Schwermetall, das als Umweltkontaminant neurologische und reproduktive Schäden verursacht."
+  "description": "Blei passiert die Plazenta, beeinträchtigt das sich entwickelnde Nervensystem und kann während Schwangerschaft und Stillzeit aus den Knochen freigesetzt werden."
 }
