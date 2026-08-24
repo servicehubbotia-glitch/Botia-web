@@ -7,22 +7,22 @@
     "muslim",
     "animal"
   ],
-  "what_is": "Carne de cerdo e ingredientes derivados explícitamente del cerdo, incluyendo manteca de cerdo, gelatina o colágeno porcino, grasas, proteínas, caldos y extractos.",
-  "why_botia": "BOTIA señala los términos explícitos relacionados con la carne de cerdo y los productos porcinos, ya que Codex CXG 24-1997 incluye a los cerdos y jabalíes, así como sus productos y derivados, entre las fuentes cuyo uso se considera ilegal a efectos de la declaración «halal». BOTIA detecta los términos de los ingredientes declarados; no certifica el estatus «halal».",
-  "can_1": "Identifica los términos explícitos como «carne de cerdo», «porcino», «cerdo», «manteca de cerdo» y otros términos relacionados con los derivados porcinos cuando aparezcan indicados en la etiqueta.",
-  "can_2": "Activa las capas de información «elección musulmana» y «origen animal», y explica el origen porcino declarado.",
-  "cannot_1": "Determina el origen de un ingrediente genérico, como la gelatina, el colágeno o la grasa animal, a menos que en la etiqueta se indique que es de origen porcino.",
-  "cannot_2": "Certificar o garantizar que un producto es halal, o verificar los controles relativos al sacrificio, el procesamiento, la contaminación cruzada o la certificación.",
+  "what_is": "Cerdo e ingredientes explícitamente derivados del cerdo, como manteca de cerdo, gelatina o colágeno porcinos, grasas, proteínas, caldos, extractos, piel y corteza.",
+  "why_botia": "Cuando la etiqueta declara cerdo o un derivado porcino, el origen está resuelto: no hay duda que aclarar. Lo que puede pasar desapercibido son nombres que no todo el mundo identifica inmediatamente con cerdo — manteca de cerdo (lard), tocino, panceta, gelatina porcina, colágeno porcino o proteína porcina. En cambio, ingredientes genéricos como gelatina, colágeno, grasa animal o E471 pueden ser de origen animal sin permitir saber si proceden del cerdo. El Codex incluye expresamente los cerdos y jabalíes, junto con sus productos y derivados, entre las fuentes excluidas de los alimentos que llevan una declaración halal.",
+  "can_1": "Detectar cerdo, porcino, manteca de cerdo, tocino, panceta y otros términos que declaran de forma explícita un origen porcino.",
+  "can_2": "Distinguir una declaración porcina confirmada de ingredientes genéricos de origen animal cuya especie sigue sin conocerse.",
+  "cannot_1": "Inferir cerdo a partir de un ingrediente genérico como gelatina, colágeno, grasa animal o E471 si la especie o el origen porcino no aparecen declarados.",
+  "cannot_2": "Emitir una conclusión religiosa para una persona; BOTIA puede mostrar el origen porcino declarado y lo que recoge la norma Codex citada.",
   "sources": [
     {
-      "label": "Codex Alimentarius — Directrices generales para el uso del término «halal» (CXG 24-1997)",
+      "label": "Codex Alimentarius — Directrices generales para el uso del término halal (CXG 24-1997): cerdos, jabalíes y sus derivados",
       "url": "https://www.fao.org/4/y2770e/y2770e08.htm"
     },
     {
-      "label": "Reglamento (CE) n.º 853/2004 — normas específicas de higiene aplicables a los alimentos de origen animal",
-      "url": "https://eur-lex.europa.eu/eli/reg/2004/853/oj/eng"
+      "label": "Reglamento (CE) 853/2004 — normas específicas de higiene de los alimentos de origen animal",
+      "url": "https://eur-lex.europa.eu/eli/reg/2004/853/2026-05-07/eng"
     }
   ],
   "title": "Carne de cerdo y derivados porcinos",
-  "description": "Carne de cerdo e ingredientes derivados explícitamente del cerdo, incluyendo manteca de cerdo, gelatina porcina, colágeno, grasas, proteínas, caldos y extractos."
+  "description": "El cerdo y sus derivados explícitos pueden aparecer bajo nombres como manteca de cerdo, gelatina porcina, colágeno porcino o proteína porcina. Los ingredientes animales genéricos no permiten por sí solos inferir cerdo."
 }

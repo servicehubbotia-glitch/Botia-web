@@ -7,22 +7,22 @@
     "muslim",
     "animal"
   ],
-  "what_is": "Pork and ingredients explicitly derived from pigs, including lard, porcine gelatine or collagen, fats, proteins, stocks and extracts.",
-  "why_botia": "BOTIA flags explicit pork and porcine terms because Codex CXG 24-1997 lists pigs and boars, including their products and derivatives, among sources considered unlawful for use of a halal claim. BOTIA detects declared ingredient terms; it does not certify halal status.",
-  "can_1": "Identify explicit pork, porcine, pig, lard and related porcine-derived terms when they are declared on the label.",
-  "can_2": "Trigger the Muslim and animal-origin information layers and explain the declared porcine origin.",
-  "cannot_1": "Determine the source of a generic ingredient such as gelatine, collagen or animal fat unless the label states that it is porcine.",
-  "cannot_2": "Certify or guarantee that a product is halal, or verify slaughter, processing, cross-contact or certification controls.",
+  "what_is": "Pork and ingredients explicitly derived from pigs, including lard, porcine gelatine or collagen, fats, proteins, stocks, extracts, rind and skin.",
+  "why_botia": "When a label declares pork or an explicitly porcine derivative, the source is already known: there is no uncertainty to resolve. What can be missed are names that not everyone immediately recognises as pig-derived — lard, porcine gelatine, porcine collagen or porcine protein. By contrast, generic ingredients such as gelatine, collagen, animal fat or E471 may be animal-derived without showing that they came from pigs. Codex explicitly lists pigs and boars, together with their products and derivatives, among the sources excluded from foods carrying a halal claim.",
+  "can_1": "Detect explicit pork, porcine, pig, swine, lard and other clearly pig-derived terms when they are declared.",
+  "can_2": "Distinguish a confirmed porcine declaration from generic animal-origin terms whose species remains unknown.",
+  "cannot_1": "Infer pork from a generic ingredient such as gelatine, collagen, animal fat or E471 unless the species or porcine origin is declared.",
+  "cannot_2": "Make a religious determination for an individual; BOTIA can show the declared porcine origin and what the cited Codex standard says.",
   "sources": [
     {
-      "label": "Codex Alimentarius — General Guidelines for Use of the Term Halal (CXG 24-1997)",
+      "label": "Codex Alimentarius — General Guidelines for Use of the Term Halal (CXG 24-1997): pigs, boars and their derivatives",
       "url": "https://www.fao.org/4/y2770e/y2770e08.htm"
     },
     {
       "label": "Regulation (EC) No 853/2004 — specific hygiene rules for food of animal origin",
-      "url": "https://eur-lex.europa.eu/eli/reg/2004/853/oj/eng"
+      "url": "https://eur-lex.europa.eu/eli/reg/2004/853/2026-05-07/eng"
     }
   ],
   "title": "Pork & Porcine Derivatives",
-  "description": "Pork and ingredients explicitly derived from pigs, including lard, porcine gelatine, collagen, fats, proteins, stocks and extracts."
+  "description": "Pork and explicitly porcine-derived ingredients can appear under terms such as lard, porcine gelatine, collagen or protein. Generic animal-origin ingredients do not by themselves establish a pig source."
 }
