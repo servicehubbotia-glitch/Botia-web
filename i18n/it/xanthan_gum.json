@@ -1,28 +1,36 @@
 {
   "name": "Gomma xantana",
   "e_code": "E415",
-  "aliases": "E415, gomma xantana, xantano, gomma xantana, gomma xanthana, gomma xantano",
+  "aliases": "E415, INS 415, gomma xantana, xantano, gomma xantana, gomma xanthana, gomma xantano",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Un polisaccaride ad alto peso molecolare prodotto fermentando glucosio o saccarosio con il batterio Xanthomonas campestris.",
-  "why_botia": "Lo segnala perché è uno stabilizzante e addensante industriale utilizzato esclusivamente in formulazioni ultra-processate per modificarne la consistenza.",
-  "can_1": "Identifica E415 o Gomma Xantana sull'etichetta.",
-  "can_2": "Attiva i livelli informativi su consistenza e additivi alimentari.",
-  "cannot_1": "Identificare il substrato carboidratico utilizzato per la fermentazione batterica.",
-  "cannot_2": "Verificare se rimane alcuna traccia del ceppo produttivo vitale di Xanthomonas campestris nella polvere additiva finale.",
+  "what_is": "La gomma xantana (INS 415 / E415) è un polisaccaride ad alto peso molecolare prodotto mediante fermentazione di una fonte di carboidrati con Xanthomonas campestris. Il Codex la classifica come addensante, stabilizzante, emulsionante e agente schiumogeno.",
+  "why_botia": "La gomma xantana è un polisaccaride prodotto mediante fermentazione. Una quantità molto piccola può addensare molto liquido, motivo per cui si trova in salse, gelati, prodotti da forno senza glutine e bevande vegetali. Viene in gran parte non digerita nel tratto gastrointestinale superiore e può essere degradata dai batteri intestinali; quantità elevate possono aumentare i gas, mentre il JECFA le ha assegnato una DGA “non specificata”.",
+  "can_1": "Rilevare E415, INS 415, gomma xantana e xanthan quando sono dichiarati esplicitamente in etichetta.",
+  "can_2": "Spiegare la sua origine da fermentazione, le funzioni sulla consistenza, il comportamento gastrointestinale e la DGA JECFA “non specificata”.",
+  "cannot_1": "Determinare la quantità di gomma xantana presente dalla sola dichiarazione degli ingredienti.",
+  "cannot_2": "Identificare l’esatto carboidrato utilizzato nella fermentazione o prevedere la risposta gastrointestinale individuale dall’etichetta.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xanthan gum (INS 415), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/802"
     },
     {
-      "label": "Sistema di classificazione NOVA FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Xanthan gum toxicological monograph (FAS 21)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v21je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Xanthan gum (INS 415)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=48"
+    },
+    {
+      "label": "Human study — Xanthan gum, colonic fermentation and flatulence",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8329363/"
     }
   ],
   "title": "Gomma xantana",
-  "description": "Un polisaccaride ad alto peso molecolare prodotto fermentando glucosio o saccarosio con il batterio Xanthomonas campestris."
+  "description": "La gomma xantana (INS 415 / E415) è un polisaccaride prodotto per fermentazione usato in quantità molto piccole per addensare e stabilizzare gli alimenti; il JECFA le ha assegnato una DGA “non specificata”."
 }

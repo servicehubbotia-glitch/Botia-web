@@ -1,28 +1,36 @@
 {
   "name": "黄原胶",
   "e_code": "E415",
-  "aliases": "E415, 黄原胶, 黄原胶, goma xantana, goma xanthana, gomme xanthane",
+  "aliases": "E415, INS 415, 黄原胶, 黄原胶, goma xantana, goma xanthana, gomme xanthane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "一种高分子量多糖，通过用野油菜黄单胞菌发酵葡萄糖或蔗糖生产。",
-  "why_botia": "它标记该成分，因为它是一种工业稳定剂和增稠剂，专门用于超加工配方中以改变质地。",
-  "can_1": "识别标签上的E415或黄原胶。",
-  "can_2": "触发质地和E编号信息层。",
-  "cannot_1": "识别用于细菌发酵的碳水化合物底物。",
-  "cannot_2": "验证最终添加剂粉末中是否残留有活性的野油菜黄单胞菌生产菌株。",
+  "what_is": "黄原胶（INS 415 / E415）是一种高分子量多糖，由野油菜黄单胞菌 Xanthomonas campestris 发酵碳水化合物来源制成。Codex 将其列为增稠剂、稳定剂、乳化剂和起泡剂。",
+  "why_botia": "黄原胶是一种通过发酵制成的多糖。极少的量就能使大量液体变稠，因此它既可出现在酱料和冰淇淋中，也可出现在无麸质烘焙食品和植物饮料中。它在上消化道大部分不会被消化，并可被肠道细菌分解；较高摄入量可能增加胀气，而 JECFA 为其规定的 ADI 为“无需规定”。",
+  "can_1": "识别标签上明确标示的 E415、INS 415、黄原胶和 xanthan。",
+  "can_2": "解释其发酵来源、质构功能、胃肠道行为以及 JECFA 的 ADI“无需规定”。",
+  "cannot_1": "仅根据配料声明确定产品中黄原胶的实际含量。",
+  "cannot_2": "确定发酵所用的具体碳水化合物，或根据标签预测个人胃肠道反应。",
   "sources": [
     {
-      "label": "欧盟委员会法规 (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xanthan gum (INS 415), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/802"
     },
     {
-      "label": "粮农组织 NOVA 分类系统 (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Xanthan gum toxicological monograph (FAS 21)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v21je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Xanthan gum (INS 415)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=48"
+    },
+    {
+      "label": "Human study — Xanthan gum, colonic fermentation and flatulence",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8329363/"
     }
   ],
   "title": "黄原胶",
-  "description": "一种高分子量多糖，通过用野油菜黄单胞菌发酵葡萄糖或蔗糖生产。"
+  "description": "黄原胶（INS 415 / E415）是一种通过发酵制成的多糖，只需很少的量即可增稠和稳定食品；JECFA 为其规定的 ADI 为“无需规定”。"
 }

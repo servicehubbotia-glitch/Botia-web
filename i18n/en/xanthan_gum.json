@@ -1,28 +1,36 @@
 {
   "name": "Xanthan gum",
   "e_code": "E415",
-  "aliases": "E415, xanthan gum, xanthan, goma xantana, goma xanthana, gomme xanthane",
+  "aliases": "E415, INS 415, xanthan gum, xanthan, goma xantana, goma xanthana, gomme xanthane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "A high molecular weight polysaccharide produced by fermenting glucose or sucrose with Xanthomonas campestris bacteria.",
-  "why_botia": "It flags it because it is an industrial stabilizer and thickener exclusively used in ultra-processed formulations to modify texture.",
-  "can_1": "Identify E415 or Xanthan Gum on the label.",
-  "can_2": "Trigger the texture and E-number information layers.",
-  "cannot_1": "Identify the carbohydrate substrate used for the bacterial fermentation.",
-  "cannot_2": "Verify if any trace of the viable Xanthomonas campestris production strain remains in the final additive powder.",
+  "what_is": "Xanthan gum (INS 415 / E415) is a high-molecular-weight polysaccharide produced by fermenting a carbohydrate source with Xanthomonas campestris. Codex lists it as a thickener, stabiliser, emulsifier and foaming agent.",
+  "why_botia": "Xanthan gum is a polysaccharide made by fermentation. A very small amount can thicken a lot of liquid, which is why it appears in sauces, ice cream, gluten-free baking and plant drinks alike. It is largely not digested in the upper gut and can be broken down by intestinal bacteria; higher intakes can increase gas, while JECFA assigned an ADI “not specified”.",
+  "can_1": "Detect E415, INS 415, xanthan gum and xanthan when explicitly declared on the label.",
+  "can_2": "Explain its fermentation origin, texture functions, gastrointestinal behaviour and JECFA's ADI “not specified”.",
+  "cannot_1": "Determine how much xanthan gum is present from the ingredient declaration alone.",
+  "cannot_2": "Identify the exact carbohydrate used for fermentation or predict an individual's gastrointestinal response from the label.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xanthan gum (INS 415), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/802"
     },
     {
-      "label": "NOVA Classification System (FAO, 2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Xanthan gum toxicological monograph (FAS 21)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v21je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Xanthan gum (INS 415)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=48"
+    },
+    {
+      "label": "Human study — Xanthan gum, colonic fermentation and flatulence",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8329363/"
     }
   ],
   "title": "Xanthan gum",
-  "description": "A high molecular weight polysaccharide produced by fermenting glucose or sucrose with Xanthomonas campestris bacteria."
+  "description": "Xanthan gum (INS 415 / E415) is a fermentation-made polysaccharide used in very small amounts to thicken and stabilise foods; JECFA assigned an ADI “not specified”."
 }

@@ -1,28 +1,36 @@
 {
   "name": "Ksantan sakızı",
   "e_code": "E415",
-  "aliases": "E415, ksantan sakızı, ksantan, goma xantana, goma xanthana, gomme xanthane",
+  "aliases": "E415, INS 415, ksantan sakızı, ksantan, goma xantana, goma xanthana, gomme xanthane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Xanthomonas campestris bakterisi ile glikoz veya sakkarozun fermente edilmesiyle üretilen yüksek moleküler ağırlıklı bir polisakkarit.",
-  "why_botia": "Dokuyu değiştirmek için yalnızca ultra işlenmiş formülasyonlarda kullanılan endüstriyel bir stabilizatör ve koyulaştırıcı olduğu için işaretler.",
-  "can_1": "Etikette E415 veya Ksantan Sakızı'nı tanımlayın.",
-  "can_2": "Doku ve E-numarası bilgi katmanlarını tetikleyin.",
-  "cannot_1": "Bakteriyel fermantasyon için kullanılan karbonhidrat substratını tanımlayın.",
-  "cannot_2": "Nihai katkı maddesi tozunda canlı Xanthomonas campestris üretim suşunun herhangi bir izinin kalıp kalmadığını doğrulayın.",
+  "what_is": "Ksantan gam (INS 415 / E415), bir karbonhidrat kaynağının Xanthomonas campestris ile fermantasyonu sonucu üretilen yüksek molekül ağırlıklı bir polisakkarittir. Codex onu kıvam artırıcı, stabilizatör, emülgatör ve köpük oluşturucu olarak sınıflandırır.",
+  "why_botia": "Ksantan gam fermantasyonla üretilen bir polisakkarittir. Çok küçük bir miktar çok fazla sıvıyı koyulaştırabilir; bu nedenle soslarda, dondurmada, glutensiz fırın ürünlerinde ve bitkisel içeceklerde bulunur. Üst sindirim sisteminde büyük ölçüde sindirilmez ve bağırsak bakterileri tarafından parçalanabilir; yüksek alımlar gazı artırabilir ve JECFA buna “belirtilmemiş” ADI atamıştır.",
+  "can_1": "E415, INS 415, ksantan gam ve xanthan'ı etikette açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Fermantasyon kökenini, kıvam işlevlerini, gastrointestinal davranışını ve JECFA'nın “belirtilmemiş” ADI değerini açıklamak.",
+  "cannot_1": "Yalnızca içerik beyanından üründe ne kadar ksantan gam bulunduğunu belirlemek.",
+  "cannot_2": "Fermantasyonda kullanılan kesin karbonhidratı belirlemek veya etiketten bireysel gastrointestinal yanıtı öngörmek.",
   "sources": [
     {
-      "label": "Komisyon Tüzüğü (AB) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xanthan gum (INS 415), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/802"
     },
     {
-      "label": "FAO NOVA Sınıflandırma Sistemi (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Xanthan gum toxicological monograph (FAS 21)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v21je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Xanthan gum (INS 415)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=48"
+    },
+    {
+      "label": "Human study — Xanthan gum, colonic fermentation and flatulence",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8329363/"
     }
   ],
   "title": "Ksantan sakızı",
-  "description": "Xanthomonas campestris bakterisi ile glikoz veya sakkarozun fermente edilmesiyle üretilen yüksek moleküler ağırlıklı bir polisakkarit."
+  "description": "Ksantan gam (INS 415 / E415), gıdaları koyulaştırmak ve stabilize etmek için çok küçük miktarlarda kullanılan fermantasyon ürünü bir polisakkarittir; JECFA buna “belirtilmemiş” ADI atamıştır."
 }

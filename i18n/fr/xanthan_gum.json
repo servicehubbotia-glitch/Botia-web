@@ -1,28 +1,36 @@
 {
   "name": "Gomme xanthane",
   "e_code": "E415",
-  "aliases": "E415, gomme xanthane, xanthane, goma xantana, goma xanthana, gomme xanthane",
+  "aliases": "E415, INS 415, gomme xanthane, xanthane, goma xantana, goma xanthana, gomme xanthane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Polysaccharide de haut poids moléculaire produit par fermentation du glucose ou du saccharose avec la bactérie Xanthomonas campestris.",
-  "why_botia": "Il le signale car c'est un stabilisant et épaississant industriel exclusivement utilisé dans les formulations ultra-transformées pour modifier la texture.",
-  "can_1": "Identifier le E415 ou la gomme xanthane sur l'étiquette.",
-  "can_2": "Déclencher les couches d'information sur la texture et les numéros E.",
-  "cannot_1": "Identifier le substrat glucidique utilisé pour la fermentation bactérienne.",
-  "cannot_2": "Vérifier si une trace de la souche de production viable Xanthomonas campestris reste dans la poudre additive finale.",
+  "what_is": "La gomme xanthane (INS 415 / E415) est un polysaccharide de haut poids moléculaire produit par fermentation d’une source de glucides avec Xanthomonas campestris. Le Codex la classe comme épaississant, stabilisant, émulsifiant et agent moussant.",
+  "why_botia": "La gomme xanthane est un polysaccharide produit par fermentation. Une très petite quantité peut épaissir beaucoup de liquide, ce qui explique sa présence aussi bien dans les sauces et les glaces que dans les produits sans gluten et les boissons végétales. Elle est en grande partie non digérée dans la partie supérieure du tube digestif et peut être dégradée par les bactéries intestinales ; des apports élevés peuvent augmenter les gaz, tandis que le JECFA lui a attribué une DJA « non spécifiée ».",
+  "can_1": "Détecter E415, INS 415, gomme xanthane et xanthan lorsqu’ils sont explicitement déclarés sur l’étiquette.",
+  "can_2": "Expliquer son origine par fermentation, ses fonctions de texture, son comportement gastro-intestinal et la DJA « non spécifiée » du JECFA.",
+  "cannot_1": "Déterminer la quantité de gomme xanthane présente à partir de la seule déclaration des ingrédients.",
+  "cannot_2": "Identifier le glucide exact utilisé pour la fermentation ou prédire la réponse gastro-intestinale individuelle à partir de l’étiquette.",
   "sources": [
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xanthan gum (INS 415), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/802"
     },
     {
-      "label": "Système de classification NOVA de la FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Xanthan gum toxicological monograph (FAS 21)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v21je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Xanthan gum (INS 415)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=48"
+    },
+    {
+      "label": "Human study — Xanthan gum, colonic fermentation and flatulence",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8329363/"
     }
   ],
   "title": "Gomme xanthane",
-  "description": "Polysaccharide de haut poids moléculaire produit par fermentation du glucose ou du saccharose avec la bactérie Xanthomonas campestris."
+  "description": "La gomme xanthane (INS 415 / E415) est un polysaccharide produit par fermentation utilisé en très petites quantités pour épaissir et stabiliser les aliments ; le JECFA lui a attribué une DJA « non spécifiée »."
 }

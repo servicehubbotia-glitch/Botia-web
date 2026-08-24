@@ -1,28 +1,36 @@
 {
   "name": "Xanthan",
   "e_code": "E415",
-  "aliases": "E415, Xanthan, Xanthangummi, Goma Xantana, Goma Xanthana, Gomme Xanthane",
+  "aliases": "E415, INS 415, Xanthan, Xanthangummi, Goma Xantana, Goma Xanthana, Gomme Xanthane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Ein hochmolekulares Polysaccharid, das durch Fermentation von Glucose oder Saccharose mit Bakterien der Art Xanthomonas campestris hergestellt wird.",
-  "why_botia": "Es wird markiert, weil es ein industrieller Stabilisator und Verdickungsmittel ist, das ausschließlich in ultra-verarbeiteten Formulierungen zur Modifikation der Textur verwendet wird.",
-  "can_1": "Identifizieren Sie E415 oder Xanthangummi auf dem Etikett.",
-  "can_2": "Aktivieren Sie die Textur- und E-Nummer-Informationsschichten.",
-  "cannot_1": "Identifizieren Sie das Kohlenhydratsubstrat, das für die bakterielle Fermentation verwendet wurde.",
-  "cannot_2": "Überprüfen Sie, ob Spuren des lebensfähigen Produktionsstamms Xanthomonas campestris im endgültigen Additivpulver verbleiben.",
+  "what_is": "Xanthan (INS 415 / E415) ist ein hochmolekulares Polysaccharid, das durch Fermentation einer Kohlenhydratquelle mit Xanthomonas campestris hergestellt wird. Codex führt es als Verdickungsmittel, Stabilisator, Emulgator und Schaummittel.",
+  "why_botia": "Xanthan ist ein durch Fermentation hergestelltes Polysaccharid. Bereits eine sehr kleine Menge kann viel Flüssigkeit verdicken, weshalb es gleichermaßen in Saucen, Speiseeis, glutenfreien Backwaren und pflanzlichen Getränken vorkommt. Im oberen Verdauungstrakt wird es weitgehend nicht verdaut und kann durch Darmbakterien abgebaut werden; höhere Mengen können Blähungen verstärken, während JECFA einen ADI „nicht spezifiziert“ festlegte.",
+  "can_1": "E415, INS 415, Xanthan und Xanthan Gum erkennen, wenn sie ausdrücklich auf dem Etikett angegeben sind.",
+  "can_2": "Seine Herstellung durch Fermentation, seine Texturfunktionen, sein Verhalten im Magen-Darm-Trakt und den JECFA-ADI „nicht spezifiziert“ erklären.",
+  "cannot_1": "Allein aus der Zutatenangabe bestimmen, wie viel Xanthan enthalten ist.",
+  "cannot_2": "Die genaue bei der Fermentation verwendete Kohlenhydratquelle bestimmen oder die individuelle Magen-Darm-Reaktion anhand des Etiketts vorhersagen.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xanthan gum (INS 415), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/802"
     },
     {
-      "label": "FAO NOVA-Klassifikationssystem (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Xanthan gum toxicological monograph (FAS 21)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v21je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Xanthan gum (INS 415)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=48"
+    },
+    {
+      "label": "Human study — Xanthan gum, colonic fermentation and flatulence",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8329363/"
     }
   ],
   "title": "Xanthan",
-  "description": "Ein hochmolekulares Polysaccharid, das durch Fermentation von Glucose oder Saccharose mit Bakterien der Art Xanthomonas campestris hergestellt wird."
+  "description": "Xanthan (INS 415 / E415) ist ein durch Fermentation hergestelltes Polysaccharid, das in sehr kleinen Mengen zum Verdicken und Stabilisieren von Lebensmitteln eingesetzt wird; JECFA legte einen ADI „nicht spezifiziert“ fest."
 }

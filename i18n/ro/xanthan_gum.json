@@ -1,28 +1,36 @@
 {
   "name": "Gumă xantan",
   "e_code": "E415",
-  "aliases": "E415, gumă xantan, xantan, gomă xantana, gomă xanthana, gomme xanthane",
+  "aliases": "E415, INS 415, gumă xantan, xantan, gomă xantana, gomă xanthana, gomme xanthane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Un polizaharid cu greutate moleculară mare produs prin fermentarea glucozei sau zaharozei cu bacteria Xanthomonas campestris.",
-  "why_botia": "O semnalează deoarece este un stabilizator și agent de îngroșare industrial utilizat exclusiv în formulările ultraprocesate pentru a modifica textura.",
-  "can_1": "Identificați E415 sau Guma Xantan pe etichetă.",
-  "can_2": "Activați straturile de informații despre textură și numere E.",
-  "cannot_1": "Identificați substratul de carbohidrați utilizat pentru fermentația bacteriană.",
-  "cannot_2": "Verificați dacă rămâne vreo urmă de tulpină viabilă de Xanthomonas campestris în pulberea finală de aditiv.",
+  "what_is": "Guma xantan (INS 415 / E415) este un polizaharid cu masă moleculară mare produs prin fermentarea unei surse de carbohidrați cu Xanthomonas campestris. Codex o clasifică drept agent de îngroșare, stabilizator, emulgator și agent de spumare.",
+  "why_botia": "Guma xantan este un polizaharid produs prin fermentație. O cantitate foarte mică poate îngroșa mult lichid, motiv pentru care apare în sosuri, înghețată, produse de panificație fără gluten și băuturi vegetale. În mare parte nu este digerată în partea superioară a tractului digestiv și poate fi descompusă de bacteriile intestinale; aporturile mari pot crește gazele, iar JECFA i-a atribuit o ADI „nespecificată”.",
+  "can_1": "Detecta E415, INS 415, gumă xantan și xanthan atunci când sunt declarate explicit pe etichetă.",
+  "can_2": "Explica originea prin fermentație, funcțiile de textură, comportamentul gastrointestinal și ADI JECFA „nespecificată”.",
+  "cannot_1": "Determina cantitatea de gumă xantan prezentă doar din declarația ingredientelor.",
+  "cannot_2": "Identifica exact carbohidratul utilizat pentru fermentație sau prezice răspunsul gastrointestinal individual din etichetă.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xanthan gum (INS 415), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/802"
     },
     {
-      "label": "Sistemul de clasificare NOVA FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Xanthan gum toxicological monograph (FAS 21)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v21je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Xanthan gum (INS 415)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=48"
+    },
+    {
+      "label": "Human study — Xanthan gum, colonic fermentation and flatulence",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8329363/"
     }
   ],
   "title": "Gumă xantan",
-  "description": "Un polizaharid cu greutate moleculară mare produs prin fermentarea glucozei sau zaharozei cu bacteria Xanthomonas campestris."
+  "description": "Guma xantan (INS 415 / E415) este un polizaharid produs prin fermentație, utilizat în cantități foarte mici pentru îngroșarea și stabilizarea alimentelor; JECFA i-a atribuit o ADI „nespecificată”."
 }
