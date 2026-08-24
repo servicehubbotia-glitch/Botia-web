@@ -1,24 +1,36 @@
 {
   "name": "Bromate de potassium",
   "title": "Bromate de potassium",
-  "description": "Agent oxydant destiné au traitement de la farine et au renforcement de la pâte, désigné au niveau international sous le nom d’INSe 924a.",
-  "what_is": "Agent oxydant destiné au traitement de la farine et au renforcement de la pâte, désigné au niveau international sous la référence «INSe 924a».",
-  "why_botia": "BOTIA signale une déclaration explicite concernant le bromate de potassium, car son traitement réglementaire varie d'une juridiction à l'autre. Le site FDA fournit toujours des informations sur certaines utilisations alimentaires aux États-Unis, tandis que le site JECFA a conclu que son utilisation comme agent de traitement de la farine n'était pas acceptable. Ces positions réglementaires ne précisent pas, sur le site BOTIA, la quantité de résidus présente dans un aliment donné.",
-  "can_1": "Détecter le bromate de potassium et l'INSe 924a lorsqu'ils sont explicitement déclarés.",
-  "can_2": "Montrer que différentes autorités et juridictions peuvent adopter des positions réglementaires divergentes sans présenter un « label hit » comme mesure d'exposition.",
-  "cannot_1": "Mesurer la teneur résiduelle en bromate après la cuisson ou la transformation.",
-  "cannot_2": "Partons du principe que la farine ou le pain contient du bromate de potassium alors que cela n'est pas indiqué.",
+  "description": "Un puissant améliorant oxydant de la farine anciennement identifié comme INS 924a ; du bromate résiduel peut subsister après cuisson et les règles d’utilisation varient selon les juridictions.",
+  "what_is": "Le bromate de potassium est un puissant agent oxydant utilisé pour traiter la farine et renforcer la pâte. Le Codex l’identifiait auparavant comme INS 924a, mais a retiré le bromate de potassium du Système international de numérotation en 2012.",
+  "why_botia": "Le bromate de potassium est un puissant améliorant oxydant de la farine censé être transformé en bromure pendant la cuisson, mais le JECFA a constaté que des résidus mesurables de bromate peuvent subsister dans le pain. Chez l’animal, le bromate atteint le tissu rénal et provoque des dommages oxydatifs à l’ADN ; le JECFA a conclu que le bromate de potassium est un cancérogène génotoxique et que son utilisation comme agent de traitement de la farine n’est pas acceptable, tandis que l’IARC le classe comme peut-être cancérogène pour l’homme (Groupe 2B). Les États-Unis autorisent encore certaines utilisations dans la farine et le pain ; la déclaration sur l’étiquette identifie donc l’ingrédient mais pas la quantité de bromate résiduel après cuisson.",
+  "can_1": "Détecter le bromate de potassium et l’ancien identifiant INS 924a lorsqu’ils sont explicitement déclarés.",
+  "can_2": "Expliquer sa fonction de renforcement de la pâte, la possibilité de résidus de bromate après cuisson, les évaluations du JECFA et de l’IARC et le statut juridique selon la juridiction.",
+  "cannot_1": "Mesurer la quantité de bromate restant dans un pain particulier ou un autre aliment fini après transformation.",
+  "cannot_2": "Déduire que la farine ou le pain contient du bromate de potassium lorsqu’il n’est pas déclaré sur l’étiquette.",
   "sources": [
     {
-      "label": "FDA — Bromate de potassium, additifs alimentaires",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — Bromate de potassium, dossier d’évaluation",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — Bromate de potassium (n° INS924a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — Monographie toxicologique sur le bromate de potassium (FAS 30)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — Retrait du bromate de potassium de l’INS en 2012",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — Bromate de potassium, Monographies Volume 73",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "États-Unis eCFR — 21 CFR § 136.110 Pains et petits pains",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
-  "e_code": "INS 924a",
+  "e_code": null,
   "module_icon": "texture.png",
   "layers": [
     "texture",

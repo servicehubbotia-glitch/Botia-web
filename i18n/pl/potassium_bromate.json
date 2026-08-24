@@ -1,24 +1,36 @@
 {
   "name": "Bromek potasu",
   "title": "Bromek potasu",
-  "description": "Środek utleniający stosowany do obróbki mąki oraz wzmacniający ciasto, znany na arenie międzynarodowej pod nazwą „INS 924a”.",
-  "what_is": "Środek utleniający stosowany do obróbki mąki oraz wzmacniający ciasto, znany na arenie międzynarodowej pod nazwą „INS 924a”.",
-  "why_botia": "BOTIA zwraca uwagę na wyraźne oznaczenie bromianu potasu, ponieważ przepisy dotyczące tej substancji różnią się w poszczególnych jurysdykcjach. Informacje zawarte na stronie FDA nadal opisują określone zastosowania tej substancji w żywności w Stanach Zjednoczonych, natomiast na stronie JECFA stwierdzono, że jej stosowanie jako środka do obróbki mąki jest niedopuszczalne. Te stanowiska regulacyjne nie podają na stronie BOTIA, jaka ilość pozostałości występuje w konkretnym produkcie spożywczym.",
-  "can_1": "Wykrywać bromek potasu oraz związek o numerze katalogowym „INS” 924a, o ile zostały one wyraźnie zadeklarowane.",
-  "can_2": "Wykazać, że różne organy i jurysdykcje mogą przyjmować odmienne stanowiska regulacyjne, nie traktując trafienia etykiety jako miary ekspozycji.",
-  "cannot_1": "Należy zmierzyć pozostałości bromianu po upieczeniu lub przetworzeniu.",
-  "cannot_2": "Zakładać, że mąka lub chleb zawierają Bromek potasu, gdy nie zostało to zadeklarowane.",
+  "description": "Silny utleniający polepszacz mąki wcześniej oznaczany jako INS 924a; po pieczeniu może pozostać bromian, a zasady stosowania różnią się zależnie od jurysdykcji.",
+  "what_is": "Bromian potasu jest silnym utleniającym środkiem do obróbki mąki i wzmacniania ciasta. Codex wcześniej oznaczał go jako INS 924a, lecz w 2012 r. wycofał bromian potasu z Międzynarodowego Systemu Numeracji.",
+  "why_botia": "Bromian potasu jest silnym utleniającym polepszaczem mąki, który podczas pieczenia powinien zostać przekształcony w bromek, jednak JECFA wykazała, że w chlebie mogą pozostać mierzalne ilości bromianu. U zwierząt doświadczalnych bromian dociera do tkanki nerkowej i powoduje oksydacyjne uszkodzenia DNA; JECFA uznała bromian potasu za genotoksyczny czynnik rakotwórczy i stwierdziła, że jego stosowanie jako środka do obróbki mąki jest niedopuszczalne, a IARC klasyfikuje go jako możliwie rakotwórczy dla ludzi (Grupa 2B). Stany Zjednoczone nadal zezwalają na określone zastosowania w mące i pieczywie, dlatego deklaracja na etykiecie identyfikuje składnik, ale nie określa ilości bromianu pozostałego po pieczeniu.",
+  "can_1": "Wykrywać bromian potasu i dawny identyfikator INS 924a, gdy są wyraźnie zadeklarowane.",
+  "can_2": "Wyjaśniać jego funkcję wzmacniającą ciasto, możliwość pozostania bromianu po pieczeniu, oceny JECFA i IARC oraz status prawny właściwy dla danej jurysdykcji.",
+  "cannot_1": "Mierzyć ilości bromianu pozostającego po przetwarzaniu w konkretnym chlebie lub innym gotowym produkcie.",
+  "cannot_2": "Zakładać, że mąka lub chleb zawiera bromian potasu, jeśli nie jest on zadeklarowany na etykiecie.",
   "sources": [
     {
-      "label": "FDA — Bromian potasu, substancje dodawane do żywności",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — Bromian potasu, zapis oceny",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — Bromek potasu (INS 924a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — Monografia toksykologiczna bromianu potasu (FAS 30)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — Wycofanie bromianu potasu z INS w 2012 r.",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — Bromian potasu, Monografie Tom 73",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "Stany Zjednoczone eCFR — 21 CFR § 136.110 Pieczywo i bułki",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
-  "e_code": "INS 924a",
+  "e_code": null,
   "module_icon": "texture.png",
   "layers": [
     "texture",

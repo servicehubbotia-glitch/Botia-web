@@ -1,24 +1,36 @@
 {
   "name": "Bromato di potassio",
   "title": "Bromato di potassio",
-  "description": "Un agente ossidante per il trattamento della farina e per il rafforzamento dell'impasto, identificato a livello internazionale come “INSo 924a”.",
-  "what_is": "Un agente ossidante per il trattamento della farina e per il rafforzamento dell'impasto, identificato a livello internazionale come “INSe 924a”.",
-  "why_botia": "BOTIA segnala una dichiarazione esplicita relativa al bromato di potassio poiché il suo trattamento normativo varia a seconda delle giurisdizioni. Le informazioni disponibili all’indirizzo FDA descrivono ancora specifici impieghi alimentari negli Stati Uniti, mentre all’indirizzo JECFA si conclude che il suo utilizzo come agente di trattamento della farina non è accettabile. Tali posizioni normative non indicano all’indirizzo BOTIA quale sia la quantità di residui presente in un determinato alimento.",
-  "can_1": "Rileva il bromato di potassio e l’INSo 924a quando sono espressamente dichiarati.",
-  "can_2": "Dimostrare che autorità e giurisdizioni diverse possono giungere a posizioni normative diverse senza presentare un “label hit” come misura dell’esposizione.",
-  "cannot_1": "Misurare il bromato residuo dopo la cottura o la lavorazione.",
-  "cannot_2": "Presumere che la farina o il pane contengano Bromato di potassio quando non è dichiarato.",
+  "description": "Un potente miglioratore ossidante della farina precedentemente identificato come INS 924a; dopo la cottura può rimanere bromato residuo e le regole d’uso variano secondo la giurisdizione.",
+  "what_is": "Il bromato di potassio è un potente agente ossidante per il trattamento della farina e il rafforzamento dell’impasto. Il Codex lo identificava in precedenza come INS 924a, ma nel 2012 ha ritirato il bromato di potassio dal Sistema internazionale di numerazione.",
+  "why_botia": "Il bromato di potassio è un potente miglioratore ossidante della farina che dovrebbe trasformarsi in bromuro durante la cottura, ma il JECFA ha rilevato che nel pane possono rimanere residui misurabili di bromato. Negli animali da esperimento il bromato raggiunge il tessuto renale e provoca danni ossidativi al DNA; il JECFA ha concluso che il bromato di potassio è un cancerogeno genotossico e che il suo uso come agente di trattamento della farina non è accettabile, mentre lo IARC lo classifica come possibilmente cancerogeno per l’uomo (Gruppo 2B). Gli Stati Uniti consentono ancora determinati usi nella farina e nel pane, quindi la dichiarazione in etichetta identifica l’ingrediente ma non la quantità di bromato residuo dopo la cottura.",
+  "can_1": "Rilevare il bromato di potassio e il precedente identificatore INS 924a quando sono dichiarati esplicitamente.",
+  "can_2": "Spiegare la funzione di rafforzamento dell’impasto, la possibile presenza di bromato residuo dopo la cottura, le valutazioni JECFA e IARC e lo status giuridico specifico della giurisdizione.",
+  "cannot_1": "Misurare quanto bromato rimane in un determinato pane o altro alimento finito dopo la lavorazione.",
+  "cannot_2": "Supporre che farina o pane contengano bromato di potassio quando non è dichiarato sull’etichetta.",
   "sources": [
     {
-      "label": "FDA — Bromato di potassio, sostanze aggiunte agli alimenti",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — Bromato di potassio, registro di valutazione",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — Bromato di potassio (INS 924a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — Monografia tossicologica sul bromato di potassio (FAS 30)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — Ritiro del bromato di potassio dall’INS nel 2012",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — Bromato di potassio, Monografie Volume 73",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "Stati Uniti eCFR — 21 CFR § 136.110 Pane, panini e buns",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
-  "e_code": "INS 924a",
+  "e_code": null,
   "module_icon": "texture.png",
   "layers": [
     "texture",

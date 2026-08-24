@@ -1,28 +1,40 @@
 {
   "name": "Potassium Bromate",
-  "e_code": "INS 924a",
+  "e_code": null,
   "aliases": "INS 924a, potassium bromate, bromate of potash",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "An oxidising flour-treatment and dough-strengthening agent identified internationally as INS 924a.",
-  "why_botia": "BOTIA flags an explicit potassium bromate declaration because its regulatory treatment differs across jurisdictions. FDA information still describes specified U.S. food uses, while JECFA concluded that its use as a flour-treatment agent is not acceptable. Those regulatory positions do not tell BOTIA how much residue is present in a particular food.",
-  "can_1": "Detect potassium bromate and INS 924a when they are explicitly declared.",
-  "can_2": "Show that different authorities and jurisdictions can reach different regulatory positions without presenting a label hit as an exposure measurement.",
-  "cannot_1": "Measure residual bromate after baking or processing.",
-  "cannot_2": "Assume that flour or bread contains potassium bromate when it is not declared.",
+  "what_is": "Potassium bromate is a strong oxidising flour-treatment and dough-strengthening agent. Codex formerly identified it as INS 924a but withdrew potassium bromate from the International Numbering System in 2012.",
+  "why_botia": "Potassium bromate is a strong oxidising flour improver intended to be converted to bromide during baking, but JECFA found that measurable bromate can remain in bread. In experimental animals, bromate reaches kidney tissue and causes oxidative DNA damage; JECFA concluded that potassium bromate is a genotoxic carcinogen and that its use as a flour-treatment agent is not acceptable, while IARC classifies it as possibly carcinogenic to humans (Group 2B). The United States still permits specified flour and bread uses, so a label declaration identifies the ingredient but not the amount of residual bromate after baking.",
+  "can_1": "Detect potassium bromate and the former INS 924a identifier when they are explicitly declared.",
+  "can_2": "Explain its dough-strengthening function, the possibility of residual bromate after baking, the JECFA and IARC assessments and jurisdiction-specific legal status.",
+  "cannot_1": "Measure how much bromate remains in a particular bread or other finished food after processing.",
+  "cannot_2": "Infer that flour or bread contains potassium bromate when it is not declared on the label.",
   "sources": [
     {
-      "label": "FDA — Potassium Bromate, Substances Added to Food",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — Potassium Bromate, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — Potassium Bromate (INS 924a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — Potassium Bromate toxicological monograph (FAS 30)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — 2012 withdrawal of potassium bromate from the INS",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — Potassium Bromate, Monographs Volume 73",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "United States eCFR — 21 CFR § 136.110 Bread, rolls, and buns",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
   "title": "Potassium Bromate",
-  "description": "An oxidising flour-treatment and dough-strengthening agent identified internationally as INS 924a."
+  "description": "A strong oxidising flour improver formerly identified as INS 924a; residual bromate can remain after baking and food-use rules differ by jurisdiction."
 }

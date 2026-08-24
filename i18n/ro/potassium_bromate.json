@@ -1,24 +1,36 @@
 {
   "name": "Bromat de potasiu",
   "title": "Bromat de potasiu",
-  "description": "Un agent oxidant pentru tratarea făinii și întărirea aluatului, identificat la nivel internațional sub denumirea de „INSul 924a”.",
-  "what_is": "Un agent oxidant pentru tratarea făinii și întărirea aluatului, cunoscut la nivel internațional sub denumirea de „INS 924a”.",
-  "why_botia": "BOTIA subliniază necesitatea unei mențiuni explicite privind bromatul de potasiu, deoarece tratamentul său din punct de vedere normativ diferă de la o jurisdicție la alta. Informațiile de la FDA descriu în continuare anumite utilizări alimentare în SUA, în timp ce JECFA a concluzionat că utilizarea sa ca agent de tratare a făinii nu este acceptabilă. Aceste poziții normative nu precizează pe BOTIA ce cantitate de reziduuri este prezentă într-un anumit produs alimentar.",
-  "can_1": "Detectează bromatul de potasiu și INS 924a atunci când acestea sunt declarate în mod explicit.",
-  "can_2": "Demonstrați că diferite autorități și jurisdicții pot adopta poziții de reglementare diferite fără a prezenta un „label hit” ca măsură a expunerii.",
-  "cannot_1": "Se măsoară bromatul rezidual după coacere sau prelucrare.",
-  "cannot_2": "Să presupunem că făina sau pâinea conține bromat de potasiu, chiar dacă acest lucru nu este menționat.",
+  "description": "Un ameliorator oxidant puternic al făinii identificat anterior ca INS 924a; după coacere poate rămâne bromat rezidual, iar regulile de utilizare diferă în funcție de jurisdicție.",
+  "what_is": "Bromatul de potasiu este un agent oxidant puternic pentru tratarea făinii și întărirea aluatului. Codex îl identifica anterior drept INS 924a, dar a retras bromatul de potasiu din Sistemul internațional de numerotare în 2012.",
+  "why_botia": "Bromatul de potasiu este un ameliorator oxidant puternic al făinii care ar trebui să se transforme în bromură în timpul coacerii, dar JECFA a constatat că în pâine pot rămâne reziduuri măsurabile de bromat. La animalele de laborator, bromatul ajunge la țesutul renal și produce leziuni oxidative ale ADN-ului; JECFA a concluzionat că bromatul de potasiu este un carcinogen genotoxic și că utilizarea sa ca agent de tratare a făinii nu este acceptabilă, iar IARC îl clasifică drept posibil cancerigen pentru oameni (Grupa 2B). Statele Unite permit în continuare anumite utilizări în făină și pâine, astfel încât declarația de pe etichetă identifică ingredientul, dar nu cantitatea de bromat rezidual după coacere.",
+  "can_1": "Detecta bromatul de potasiu și fostul identificator INS 924a atunci când sunt declarate explicit.",
+  "can_2": "Explica funcția sa de întărire a aluatului, posibilitatea existenței bromatului rezidual după coacere, evaluările JECFA și IARC și statutul juridic specific jurisdicției.",
+  "cannot_1": "Măsura cantitatea de bromat rămasă într-o anumită pâine sau într-un alt aliment finit după procesare.",
+  "cannot_2": "Deduce că făina sau pâinea conține bromat de potasiu atunci când acesta nu este declarat pe etichetă.",
   "sources": [
     {
-      "label": "FDA — Bromat de potasiu, substanțe adăugate în alimente",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — Bromat de potasiu, înregistrarea evaluării",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — Bromat de potasiu (INS 924a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — Monografie toxicologică privind bromatul de potasiu (FAS 30)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — Retragerea bromatului de potasiu din INS în 2012",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — Bromat de potasiu, Monografii Volumul 73",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "Statele Unite eCFR — 21 CFR § 136.110 Pâine și chifle",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
-  "e_code": "INS 924a",
+  "e_code": null,
   "module_icon": "texture.png",
   "layers": [
     "texture",

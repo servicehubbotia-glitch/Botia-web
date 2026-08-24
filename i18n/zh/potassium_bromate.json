@@ -1,24 +1,36 @@
 {
   "name": "溴酸钾",
   "title": "溴酸钾",
-  "description": "一种氧化型面粉处理剂和面团强化剂，国际上被称为INS 924a。",
-  "what_is": "一种氧化型面粉处理剂和面团强化剂，国际上被称为INS 924a。",
-  "why_botia": "BOTIA 因其监管处理方式在不同司法管辖区存在差异，故对溴酸钾的明确声明予以标注。FDA 上的信息仍描述了其在美国食品中的特定用途，而 JECFA 则得出结论，认为将其用作面粉处理剂是不被接受的。这些监管立场并未说明 BOTIA 中特定食品中含有多少残留物。",
-  "can_1": "当明确标示时，检测溴酸钾和INS 924a。",
-  "can_2": "证明不同的监管机构和司法管辖区可以在不将“标签匹配”作为风险敞口计量指标的情况下，得出不同的监管立场。",
-  "cannot_1": "在烘焙或加工后测定溴酸盐残留量。",
-  "cannot_2": "假设面粉或面包中含有溴酸钾，但未在标签上注明。",
+  "description": "一种强氧化性面粉改良剂，过去编号为 INS 924a；烘焙后可能残留溴酸盐，各司法管辖区的使用规定不同。",
+  "what_is": "溴酸钾是一种强氧化性面粉处理剂和面团增强剂。Codex 曾将其编号为 INS 924a，但在 2012 年将溴酸钾从国际编号系统中撤除。",
+  "why_botia": "溴酸钾是一种强氧化性面粉改良剂，烘焙过程中原本应转化为溴化物，但 JECFA 发现面包中仍可能残留可测量的溴酸盐。在实验动物中，溴酸盐可到达肾组织并造成氧化性 DNA 损伤；JECFA 因此认定溴酸钾属于遗传毒性致癌物，并认为其作为面粉处理剂的用途不可接受，而 IARC 将其列为可能对人类致癌（2B 组）。美国目前仍允许某些面粉和面包用途，因此标签声明能够确认该成分，但不能说明烘焙后残留了多少溴酸盐。",
+  "can_1": "在标签明确标示时识别溴酸钾以及以前的 INS 924a 编号。",
+  "can_2": "解释其增强面团的作用、烘焙后可能残留溴酸盐、JECFA 和 IARC 的评估以及不同司法管辖区的法律地位。",
+  "cannot_1": "测量特定面包或其他加工成品中残留的溴酸盐数量。",
+  "cannot_2": "在标签未声明的情况下推断面粉或面包含有溴酸钾。",
   "sources": [
     {
-      "label": "FDA — 溴酸钾，食品添加剂",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — 溴酸钾评估记录",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — 溴酸钾（INS 924a）",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — 溴酸钾毒理学专论（FAS 30）",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — 2012 年将溴酸钾从 INS 中撤除",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — 溴酸钾，专论第 73 卷",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "美国 eCFR — 21 CFR § 136.110 面包和面包卷",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
-  "e_code": "INS 924a",
+  "e_code": null,
   "module_icon": "texture.png",
   "layers": [
     "texture",

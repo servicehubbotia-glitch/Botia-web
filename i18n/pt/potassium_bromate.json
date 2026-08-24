@@ -1,24 +1,36 @@
 {
   "name": "Bromato de potássio",
   "title": "Bromato de potássio",
-  "description": "Um agente oxidante para o tratamento da farinha e para o reforço da massa, identificado internacionalmente como «INSo 924a».",
-  "what_is": "Um agente oxidante para o tratamento da farinha e para o reforço da massa, identificado internacionalmente como «INSo 924a».",
-  "why_botia": "BOTIA destaca uma declaração explícita relativa ao bromato de potássio, uma vez que o seu tratamento regulamentar difere consoante as jurisdições. A informação disponível em FDA continua a descrever utilizações alimentares específicas nos EUA, enquanto JECFA concluiu que a sua utilização como agente de tratamento da farinha não é aceitável. Essas posições regulamentares não indicam em BOTIA qual a quantidade de resíduos presente num determinado alimento.",
-  "can_1": "Detetar o bromato de potássio e o «INSo 924a» quando forem explicitamente declarados.",
-  "can_2": "Demonstrar que diferentes autoridades e jurisdições podem adotar posições regulamentares distintas sem apresentar um «label hit» como medida de exposição.",
-  "cannot_1": "Medir o bromato residual após a cozedura ou o processamento.",
-  "cannot_2": "Partir do princípio de que a farinha ou o pão contêm bromato de potássio, mesmo que tal não esteja indicado.",
+  "description": "Um potente melhorador oxidante da farinha anteriormente identificado como INS 924a; pode permanecer bromato residual após a cozedura e as regras de utilização variam conforme a jurisdição.",
+  "what_is": "O bromato de potássio é um potente agente oxidante para tratamento da farinha e fortalecimento da massa. O Codex identificava-o anteriormente como INS 924a, mas retirou o bromato de potássio do Sistema Internacional de Numeração em 2012.",
+  "why_botia": "O bromato de potássio é um potente melhorador oxidante da farinha que deveria ser convertido em brometo durante a cozedura, mas o JECFA constatou que resíduos mensuráveis de bromato podem permanecer no pão. Em animais de experimentação, o bromato alcança o tecido renal e provoca danos oxidativos no DNA; o JECFA concluiu que o bromato de potássio é um carcinógeno genotóxico e que a sua utilização como agente de tratamento da farinha não é aceitável, enquanto a IARC o classifica como possivelmente carcinogênico para humanos (Grupo 2B). Os Estados Unidos ainda permitem determinados usos em farinha e pão, por isso a declaração no rótulo identifica o ingrediente, mas não a quantidade de bromato residual após a cozedura.",
+  "can_1": "Detetar bromato de potássio e o antigo identificador INS 924a quando forem explicitamente declarados.",
+  "can_2": "Explicar a sua função de fortalecimento da massa, a possibilidade de bromato residual após a cozedura, as avaliações do JECFA e da IARC e o estatuto legal específico de cada jurisdição.",
+  "cannot_1": "Medir a quantidade de bromato que permanece num pão específico ou noutro alimento final após o processamento.",
+  "cannot_2": "Inferir que farinha ou pão contém bromato de potássio quando não está declarado no rótulo.",
   "sources": [
     {
-      "label": "FDA — Bromato de potássio, substâncias adicionadas aos alimentos",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — Bromato de potássio, registo de avaliação",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — Bromato de potássio (INS 924a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — Monografia toxicológica sobre bromato de potássio (FAS 30)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — Retirada do bromato de potássio do INS em 2012",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — Bromato de potássio, Monografias Volume 73",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "Estados Unidos eCFR — 21 CFR § 136.110 Pães e pãezinhos",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
-  "e_code": "INS 924a",
+  "e_code": null,
   "module_icon": "texture.png",
   "layers": [
     "texture",

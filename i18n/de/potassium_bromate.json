@@ -1,24 +1,36 @@
 {
   "name": "Kaliumbromat",
   "title": "Kaliumbromat",
-  "description": "Ein oxidierendes Mehlbehandlungs- und Teigverstärkungsmittel, das international als „INS 924a“ bezeichnet wird.",
-  "what_is": "Ein oxidierendes Mehlbehandlungs- und Teigverstärkungsmittel, das international als „INS 924a“ bezeichnet wird.",
-  "why_botia": "BOTIA weist auf eine ausdrückliche Deklaration von Kaliumbromat hin, da dessen regulatorische Behandlung je nach Rechtsraum unterschiedlich ist. Die Informationen unter FDA beschreiben weiterhin bestimmte Verwendungszwecke in Lebensmitteln in den USA, während unter JECFA der Schluss gezogen wurde, dass dessen Verwendung als Mehlbehandlungsmittel nicht zulässig ist. Diese regulatorischen Positionen geben unter BOTIA keinen Aufschluss darüber, wie viel Rückstände in einem bestimmten Lebensmittel vorhanden sind.",
-  "can_1": "Kaliumbromat und „INS 924a“ nachweisen, sofern diese ausdrücklich angegeben sind.",
-  "can_2": "Zeigen Sie, dass verschiedene Behörden und Rechtsordnungen zu unterschiedlichen regulatorischen Standpunkten gelangen können, ohne einen „Label-Hit“ als Maß für das Risiko heranzuziehen.",
-  "cannot_1": "Bestimmen Sie den Bromat-Restgehalt nach dem Backen oder der Verarbeitung.",
-  "cannot_2": "Gehen Sie davon aus, dass Mehl oder Brot Kaliumbromat enthält, auch wenn dies nicht angegeben ist.",
+  "description": "Ein stark oxidierender Mehlverbesserer, der früher als INS 924a geführt wurde; nach dem Backen können Bromatrückstände verbleiben und die Verwendungsregeln unterscheiden sich je nach Rechtsraum.",
+  "what_is": "Kaliumbromat ist ein stark oxidierendes Mehlbehandlungs- und Teigverstärkungsmittel. Codex führte es früher als INS 924a, zog Kaliumbromat jedoch 2012 aus dem Internationalen Nummerierungssystem zurück.",
+  "why_botia": "Kaliumbromat ist ein stark oxidierender Mehlverbesserer, der beim Backen zu Bromid umgewandelt werden soll; JECFA stellte jedoch fest, dass messbare Bromatrückstände im Brot verbleiben können. In Versuchstieren erreicht Bromat das Nierengewebe und verursacht oxidative DNA-Schäden; JECFA kam zu dem Schluss, dass Kaliumbromat ein genotoxisches Karzinogen ist und seine Verwendung als Mehlbehandlungsmittel nicht akzeptabel ist, während IARC es als möglicherweise krebserzeugend für den Menschen einstuft (Gruppe 2B). In den Vereinigten Staaten sind bestimmte Verwendungen in Mehl und Brot weiterhin zulässig, sodass die Deklaration zwar den Stoff identifiziert, nicht aber die nach dem Backen verbleibende Bromatmenge.",
+  "can_1": "Kaliumbromat und die frühere Kennung INS 924a erkennen, wenn sie ausdrücklich deklariert sind.",
+  "can_2": "Seine Funktion zur Teigverstärkung, mögliche Bromatrückstände nach dem Backen, die Bewertungen von JECFA und IARC sowie den rechtsraumspezifischen Status erklären.",
+  "cannot_1": "Messen, wie viel Bromat nach der Verarbeitung in einem bestimmten Brot oder anderen fertigen Lebensmittel verbleibt.",
+  "cannot_2": "Annehmen, dass Mehl oder Brot Kaliumbromat enthält, wenn es auf dem Etikett nicht angegeben ist.",
   "sources": [
     {
-      "label": "FDA — Kaliumbromat, Lebensmittelzusatzstoffe",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — Kaliumbromat, Bewertungsdatensatz",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — Kaliumbromat (INS 924a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — Toxikologische Monographie zu Kaliumbromat (FAS 30)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — Rücknahme von Kaliumbromat aus dem INS im Jahr 2012",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — Kaliumbromat, Monographien Band 73",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "USA eCFR — 21 CFR § 136.110 Brot, Brötchen und Buns",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
-  "e_code": "INS 924a",
+  "e_code": null,
   "module_icon": "texture.png",
   "layers": [
     "texture",

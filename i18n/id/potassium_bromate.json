@@ -1,24 +1,36 @@
 {
   "name": "Bromat Kalium",
   "title": "Bromat Kalium",
-  "description": "Bahan pengoksidasi untuk pengolahan tepung dan penguat adonan yang dikenal secara internasional sebagai INS 924a.",
-  "what_is": "Bahan pengoksidasi untuk pengolahan tepung dan penguat adonan yang dikenal secara internasional sebagai INS 924a.",
-  "why_botia": "BOTIA menyoroti pernyataan eksplisit mengenai kalium bromat karena perlakuan regulasinya berbeda-beda di berbagai yurisdiksi. Informasi di FDA masih menjelaskan penggunaan kalium bromat dalam makanan tertentu di AS, sementara JECFA menyimpulkan bahwa penggunaannya sebagai bahan pengolah tepung tidak dapat diterima. Posisi regulasi tersebut tidak menyebutkan di BOTIA berapa banyak residu yang terkandung dalam suatu makanan tertentu.",
-  "can_1": "Mendeteksi kalium bromat dan INS 924a apabila keduanya dinyatakan secara eksplisit.",
-  "can_2": "Tunjukkan bahwa otoritas dan yurisdiksi yang berbeda dapat mengambil posisi regulasi yang berbeda tanpa menggunakan “label hit” sebagai ukuran paparan.",
-  "cannot_1": "Ukur sisa bromat setelah dipanggang atau diproses.",
-  "cannot_2": "Anggaplah bahwa tepung atau roti mengandung kalium bromat meskipun hal tersebut tidak dicantumkan.",
+  "description": "Bahan perbaikan tepung pengoksidasi kuat yang sebelumnya diidentifikasi sebagai INS 924a; bromat dapat tersisa setelah pemanggangan dan aturan penggunaan berbeda menurut yurisdiksi.",
+  "what_is": "Kalium bromat adalah bahan pengoksidasi kuat untuk perlakuan tepung dan penguatan adonan. Codex sebelumnya mengidentifikasinya sebagai INS 924a, tetapi menghapus kalium bromat dari Sistem Penomoran Internasional pada 2012.",
+  "why_botia": "Kalium bromat adalah bahan perbaikan tepung pengoksidasi kuat yang seharusnya berubah menjadi bromida selama pemanggangan, tetapi JECFA menemukan bahwa residu bromat yang dapat diukur dapat tetap berada dalam roti. Pada hewan percobaan, bromat mencapai jaringan ginjal dan menyebabkan kerusakan DNA oksidatif; JECFA menyimpulkan bahwa kalium bromat adalah karsinogen genotoksik dan penggunaannya sebagai bahan perlakuan tepung tidak dapat diterima, sedangkan IARC mengklasifikasikannya sebagai mungkin karsinogenik bagi manusia (Grup 2B). Amerika Serikat masih mengizinkan penggunaan tertentu dalam tepung dan roti, sehingga pernyataan pada label mengidentifikasi bahannya tetapi tidak menunjukkan jumlah bromat yang tersisa setelah pemanggangan.",
+  "can_1": "Mendeteksi kalium bromat dan pengenal lama INS 924a ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan fungsi penguatan adonan, kemungkinan bromat tersisa setelah pemanggangan, penilaian JECFA dan IARC, serta status hukum menurut yurisdiksi.",
+  "cannot_1": "Mengukur berapa banyak bromat yang tersisa dalam roti tertentu atau pangan jadi lain setelah pengolahan.",
+  "cannot_2": "Menganggap tepung atau roti mengandung kalium bromat ketika tidak dinyatakan pada label.",
   "sources": [
     {
-      "label": "FDA — Kalium Bromat, Bahan Tambahan Pangan",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — Kalium bromat, catatan evaluasi",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — Kalium Bromat (INS 924a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — Monograf toksikologi kalium bromat (FAS 30)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — Penghapusan kalium bromat dari INS pada 2012",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — Kalium bromat, Monograf Volume 73",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "Amerika Serikat eCFR — 21 CFR § 136.110 Roti dan roti gulung",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
-  "e_code": "INS 924a",
+  "e_code": null,
   "module_icon": "texture.png",
   "layers": [
     "texture",

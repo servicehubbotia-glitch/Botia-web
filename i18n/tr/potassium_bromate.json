@@ -1,24 +1,36 @@
 {
   "name": "Potasyum Bromat",
   "title": "Potasyum Bromat",
-  "description": "Uluslararası alanda “INS 924a” olarak tanımlanan, un işleme ve hamur güçlendirici bir oksitleyici madde.",
-  "what_is": "Uluslararası alanda “INS 924a” olarak tanımlanan, un işleme ve hamur güçlendirici bir oksitleyici madde.",
-  "why_botia": "BOTIA Yasal düzenlemelere tabi muamele, yargı bölgelerine göre farklılık gösterdiğinden, potasyum bromatın açıkça belirtilmesini gerektirir. FDA adresindeki bilgiler hâlâ ABD’deki belirli gıda kullanımlarını açıklamaktadır; oysa JECFA adresinde, un işleme maddesi olarak kullanımının kabul edilemez olduğu sonucuna varılmıştır. Bu düzenleyici tutumlar, BOTIA adresinde belirli bir gıdada ne kadar kalıntı bulunduğunu belirtmemektedir.",
-  "can_1": "Potasyum bromat ve INS 924a maddeleri açıkça belirtildiğinde bunların tespit edilmesi.",
-  "can_2": "Bir etiket eşleşmesini maruz kalma ölçüsü olarak sunmadan, farklı yetkili kurumların ve yargı alanlarının farklı düzenleyici tutumlara varabileceğini gösterin.",
-  "cannot_1": "Pişirme veya işleme işleminden sonra kalan bromat miktarını ölçün.",
-  "cannot_2": "Un veya ekmeğin, üzerinde belirtilmemiş olsa bile potasyum bromat içerdiğini varsayalım.",
+  "description": "Daha önce INS 924a olarak tanımlanan güçlü bir oksitleyici un iyileştiricisi; pişirme sonrasında bromat kalabilir ve kullanım kuralları yargı bölgesine göre değişir.",
+  "what_is": "Potasyum bromat, unu işlemek ve hamuru güçlendirmek için kullanılan güçlü bir oksitleyici maddedir. Codex bunu daha önce INS 924a olarak tanımlıyordu, ancak potasyum bromatı 2012 yılında Uluslararası Numaralandırma Sisteminden çıkardı.",
+  "why_botia": "Potasyum bromat, pişirme sırasında bromüre dönüşmesi beklenen güçlü bir oksitleyici un iyileştiricisidir; ancak JECFA ekmekte ölçülebilir bromat kalıntılarının kalabileceğini belirlemiştir. Deney hayvanlarında bromat böbrek dokusuna ulaşır ve oksidatif DNA hasarına neden olur; JECFA potasyum bromatın genotoksik bir kanserojen olduğu ve un işleme maddesi olarak kullanımının kabul edilemez olduğu sonucuna varmış, IARC ise onu insanlar için muhtemelen kanserojen olabilecek bir madde olarak sınıflandırmıştır (Grup 2B). Amerika Birleşik Devletleri un ve ekmekte belirli kullanımlara hâlâ izin vermektedir; bu nedenle etiketteki beyan bileşeni tanımlar ancak pişirme sonrasında kalan bromat miktarını göstermez.",
+  "can_1": "Potasyum bromatı ve eski INS 924a tanımlayıcısını açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Hamuru güçlendirme işlevini, pişirme sonrasında bromat kalabilme ihtimalini, JECFA ve IARC değerlendirmelerini ve yargı bölgesine özgü yasal statüyü açıklamak.",
+  "cannot_1": "Belirli bir ekmekte veya başka bir işlenmiş son üründe ne kadar bromat kaldığını ölçmek.",
+  "cannot_2": "Etikette beyan edilmediğinde un veya ekmeğin potasyum bromat içerdiğini varsaymak.",
   "sources": [
     {
-      "label": "FDA — Potasyum Bromat, Gıdalara Eklenen Maddeler",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — Potasyum bromat, değerlendirme kaydı",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — Potasyum bromat (INS 924a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — Potasyum bromat toksikolojik monografı (FAS 30)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — Potasyum bromatın 2012'de INS'den çıkarılması",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — Potasyum bromat, Monograflar Cilt 73",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "ABD eCFR — 21 CFR § 136.110 Ekmek ve küçük ekmekler",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
-  "e_code": "INS 924a",
+  "e_code": null,
   "module_icon": "texture.png",
   "layers": [
     "texture",

@@ -1,24 +1,36 @@
 {
   "name": "Kaliumbromaat",
   "title": "Kaliumbromaat",
-  "description": "Een oxiderend middel voor de behandeling van meel en ter versterking van deeg, dat internationaal bekend staat als „INS 924a”.",
-  "what_is": "Een oxiderend middel voor de behandeling van meel en ter versterking van deeg, internationaal aangeduid als INS 924a.",
-  "why_botia": "BOTIA wijst op een expliciete vermelding van kaliumbromaat, omdat de regelgeving hierover per rechtsgebied verschilt. Op FDA wordt nog steeds melding gemaakt van specifieke toepassingen in levensmiddelen in de VS, terwijl op JECFA wordt geconcludeerd dat het gebruik ervan als middel voor de behandeling van meel niet aanvaardbaar is. Uit deze regelgevende standpunten blijkt niet BOTIA hoeveel residu er in een bepaald levensmiddel aanwezig is.",
-  "can_1": "Detecteer kaliumbromaat en INS 924a wanneer deze expliciet zijn aangegeven.",
-  "can_2": "Toon aan dat verschillende autoriteiten en rechtsgebieden tot uiteenlopende regelgevingsstandpunten kunnen komen zonder een ‘label hit’ als blootstellingsmaatstaf te hanteren.",
-  "cannot_1": "Meet het restgehalte aan bromaat na het bakken of verwerken.",
-  "cannot_2": "Ga ervan uit dat meel of brood kaliumbromaat bevat, ook al wordt dit niet vermeld.",
+  "description": "Een sterk oxiderende meelverbeteraar die vroeger als INS 924a werd aangeduid; na het bakken kan bromaat achterblijven en de gebruiksregels verschillen per rechtsgebied.",
+  "what_is": "Kaliumbromaat is een sterk oxiderend meelbehandelings- en deegversterkingsmiddel. Codex identificeerde het vroeger als INS 924a, maar trok kaliumbromaat in 2012 uit het Internationale Nummeringssysteem terug.",
+  "why_botia": "Kaliumbromaat is een sterk oxiderende meelverbeteraar die tijdens het bakken in bromide hoort te worden omgezet, maar JECFA stelde vast dat meetbare bromaatresten in brood kunnen achterblijven. In proefdieren bereikt bromaat het nierweefsel en veroorzaakt het oxidatieve DNA-schade; JECFA concludeerde dat kaliumbromaat een genotoxisch carcinogeen is en dat gebruik als meelbehandelingsmiddel niet aanvaardbaar is, terwijl IARC het classificeert als mogelijk kankerverwekkend voor mensen (Groep 2B). De Verenigde Staten staan bepaalde toepassingen in meel en brood nog toe, zodat een vermelding op het etiket het ingrediënt identificeert maar niet de hoeveelheid bromaat die na het bakken achterblijft.",
+  "can_1": "Kaliumbromaat en de voormalige aanduiding INS 924a detecteren wanneer deze expliciet worden vermeld.",
+  "can_2": "De deegversterkende functie, mogelijke bromaatresten na het bakken, de beoordelingen van JECFA en IARC en de wettelijke status per rechtsgebied uitleggen.",
+  "cannot_1": "Meten hoeveel bromaat na verwerking in een bepaald brood of ander eindproduct achterblijft.",
+  "cannot_2": "Aannemen dat meel of brood kaliumbromaat bevat wanneer dit niet op het etiket staat.",
   "sources": [
     {
-      "label": "FDA — Kaliumbromaat, stoffen die aan levensmiddelen worden toegevoegd",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — Kaliumbromaat, evaluatieregister",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — Kaliumbromaat (INS 924a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — Toxicologische monografie over kaliumbromaat (FAS 30)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — Intrekking van kaliumbromaat uit het INS in 2012",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — Kaliumbromaat, Monografieën Deel 73",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "Verenigde Staten eCFR — 21 CFR § 136.110 Brood, broodjes en buns",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
-  "e_code": "INS 924a",
+  "e_code": null,
   "module_icon": "texture.png",
   "layers": [
     "texture",

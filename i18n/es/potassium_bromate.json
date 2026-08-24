@@ -1,24 +1,36 @@
 {
   "name": "Bromato de potasio",
   "title": "Bromato de potasio",
-  "description": "Un agente oxidante para el tratamiento de la harina y el refuerzo de la masa, identificado a nivel internacional como «INSo 924a».",
-  "what_is": "Un agente oxidante para el tratamiento de la harina y el refuerzo de la masa, identificado a nivel internacional como «INSo 924a».",
-  "why_botia": "BOTIA señala una declaración explícita sobre el bromato de potasio, ya que su tratamiento normativo varía según las jurisdicciones. La información de FDA sigue describiendo usos alimentarios específicos en EE. UU., mientras que JECFA concluyó que su uso como agente de tratamiento de la harina no es aceptable. Esas posiciones normativas no indican en BOTIA qué cantidad de residuos está presente en un alimento concreto.",
-  "can_1": "Detectar el bromato de potasio y el «INSo 924a» cuando se declaren explícitamente.",
-  "can_2": "Demostrar que distintas autoridades y jurisdicciones pueden adoptar posturas normativas diferentes sin presentar un «hit de etiqueta» como medida de exposición.",
-  "cannot_1": "Mide el bromato residual tras el horneado o el procesamiento.",
-  "cannot_2": "Supongamos que la harina o el pan contienen bromato de potasio aunque no se indique en la etiqueta.",
+  "description": "Un potente mejorante oxidante de la harina anteriormente identificado como INS 924a; puede quedar bromato residual después del horneado y las normas de uso varían según la jurisdicción.",
+  "what_is": "El bromato de potasio es un potente agente oxidante para el tratamiento de la harina y el refuerzo de la masa. Codex lo identificó anteriormente como INS 924a, pero retiró el bromato de potasio del Sistema Internacional de Numeración en 2012.",
+  "why_botia": "El bromato de potasio es un potente mejorante oxidante de la harina que durante el horneado debería transformarse en bromuro, pero JECFA comprobó que pueden quedar residuos medibles de bromato en el pan. En animales de experimentación, el bromato alcanza el tejido renal y causa daño oxidativo en el ADN; JECFA concluyó que el bromato de potasio es un carcinógeno genotóxico y que su uso como agente de tratamiento de la harina no es aceptable, mientras que IARC lo clasifica como posiblemente carcinógeno para los seres humanos (Grupo 2B). Estados Unidos sigue permitiendo usos específicos en harina y pan, por lo que la declaración de la etiqueta identifica el ingrediente, pero no la cantidad de bromato residual después del horneado.",
+  "can_1": "Detectar bromato de potasio y el antiguo identificador INS 924a cuando se declaren explícitamente.",
+  "can_2": "Explicar su función de refuerzo de la masa, la posibilidad de que quede bromato residual después del horneado, las evaluaciones de JECFA e IARC y la situación legal específica de cada jurisdicción.",
+  "cannot_1": "Medir cuánto bromato queda en un pan concreto u otro alimento terminado después del procesamiento.",
+  "cannot_2": "Deducir que una harina o un pan contiene bromato de potasio cuando no aparece declarado en la etiqueta.",
   "sources": [
     {
-      "label": "FDA — Bromato de potasio, sustancias añadidas a los alimentos",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=POTASSIUMBROMATE&set=FoodSubstances"
+      "label": "JECFA — Bromato de potasio, registro de evaluación",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
     },
     {
-      "label": "JECFA — Bromato de potasio (INS 924a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4265"
+      "label": "JECFA — Monografía toxicológica sobre bromato de potasio (FAS 30)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v30je17.htm"
+    },
+    {
+      "label": "Codex — Retirada del bromato de potasio del INS en 2012",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-711-44%252FREP12_FAe.pdf"
+    },
+    {
+      "label": "IARC — Bromato de potasio, Monografías Volumen 73",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Chemicals-That-Cause-Tumours-Of-The-Kidney-Or-Urinary-Bladder-In-Rodents-And-Some-Other-Substances-1999"
+    },
+    {
+      "label": "Estados Unidos eCFR — 21 CFR § 136.110 Panes, panecillos y bollos",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-136/subpart-B/section-136.110"
     }
   ],
-  "e_code": "INS 924a",
+  "e_code": null,
   "module_icon": "texture.png",
   "layers": [
     "texture",
