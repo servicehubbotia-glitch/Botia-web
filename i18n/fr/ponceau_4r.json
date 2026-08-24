@@ -1,21 +1,29 @@
 {
   "name": "Ponceau 4R",
   "title": "Ponceau 4R",
-  "description": "Un colorant alimentaire synthétique désigné dans l'UE sous le numéro E124.",
-  "what_is": "Un colorant alimentaire synthétique désigné dans l'UE sous le numéro E124.",
-  "why_botia": "BOTIA Le colorant E124 est signalé car le règlement (CE) n° 1333/2008 le classe parmi les colorants pour lesquels certains aliments doivent comporter la mention supplémentaire indiquant que ce colorant peut avoir un effet négatif sur l'activité et l'attention des enfants, sous réserve des exceptions prévues par le règlement. Il s'agit d'une obligation d'étiquetage et non d'une prédiction d'un effet chez un enfant en particulier.",
-  "can_1": "Détecter l'E124 et les principales dénominations déclarées pour le Ponceau 4R.",
-  "can_2": "Présenter le contexte de l'étiquetage complémentaire de l'UE sans transformer la consigne d'avertissement en une conclusion médicale individuelle.",
-  "cannot_1": "Déterminez la quantité de colorant présente à partir de la liste des ingrédients.",
-  "cannot_2": "Prédire si un enfant en particulier subira une conséquence ou partir du principe que la même formulation d'avertissement s'applique dans toutes les juridictions.",
+  "description": "Dans l'UE, les aliments contenant du ponceau 4R doivent porter un avertissement sur l'activité et l'attention des enfants ; il n'est pas autorisé dans les aliments aux États-Unis.",
+  "what_is": "Le ponceau 4R (E124 / INS 124), également appelé rouge cochenille A, est un colorant alimentaire rouge synthétique.",
+  "why_botia": "Le ponceau 4R est un colorant rouge synthétique que l'intestin transforme en d'autres substances, également prises en compte dans son évaluation de sécurité. Dans l'UE, les aliments qui en contiennent doivent porter un avertissement indiquant qu'il peut avoir des effets négatifs sur l'activité et l'attention chez les enfants — un avertissement issu d'études réalisées avec des mélanges de plusieurs colorants et du benzoate de sodium, et non avec le ponceau 4R seul. Le ponceau 4R n'est pas autorisé pour un usage alimentaire aux États-Unis. Le JECFA a fixé une dose journalière admissible de 0–4 mg/kg de poids corporel et a conclu que l'exposition alimentaire ne présente pas de problème de santé.",
+  "can_1": "Détecter E124, INS 124, ponceau 4R, rouge cochenille A et ses autres noms déclarés dans la liste des ingrédients.",
+  "can_2": "Expliquer l'avertissement de l'UE sur l'activité et l'attention, son origine dans l'étude de Southampton, le fait que des mélanges et non le ponceau 4R seul ont été testés, ainsi que son statut différent aux États-Unis.",
+  "cannot_1": "Déterminer la quantité de ponceau 4R présente dans un produit à partir de la liste des ingrédients.",
+  "cannot_2": "Prédire si un enfant particulier présentera un effet ou considérer l'étude de Southampton sur des mélanges comme preuve d'un effet causé par le ponceau 4R seul.",
   "sources": [
     {
-      "label": "Règlement (CE) n° 1333/2008 — Liste de l'Union et conditions d'utilisation des additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Ponceau 4R / CI Food Red 7, INS 124",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1792"
     },
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission — spécifications relatives aux additifs alimentaires autorisés",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1333"
+    },
+    {
+      "label": "FDA — Ponceau 4R not listed for use in food in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E124",

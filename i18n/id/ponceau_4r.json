@@ -1,21 +1,29 @@
 {
   "name": "Ponceau 4R",
   "title": "Ponceau 4R",
-  "description": "Pewarna makanan sintetis yang diklasifikasikan di Uni Eropa sebagai E124.",
-  "what_is": "Pewarna makanan sintetis yang diklasifikasikan di Uni Eropa sebagai E124.",
-  "why_botia": "BOTIA Menandai E124 karena Peraturan Uni Eropa No. 1333/2008 memasukkannya ke dalam daftar pewarna yang mewajibkan produk makanan tertentu mencantumkan pernyataan tambahan bahwa pewarna tersebut mungkin berdampak negatif terhadap aktivitas dan konsentrasi anak-anak, dengan memperhatikan pengecualian yang diatur dalam peraturan tersebut. Ini merupakan persyaratan pelabelan, bukan prediksi mengenai dampak pada anak tertentu.",
-  "can_1": "Mendeteksi E124 dan nama-nama yang dinyatakan sebagai nama utama untuk Ponceau 4R.",
-  "can_2": "Tampilkan konteks pelabelan tambahan Uni Eropa tanpa mengubah aturan peringatan tersebut menjadi kesimpulan medis individual.",
-  "cannot_1": "Tentukan jumlah pewarna yang terkandung berdasarkan daftar bahan.",
-  "cannot_2": "Memprediksi apakah seorang anak tertentu akan mengalami dampak tersebut atau menganggap bahwa kalimat peringatan yang sama berlaku di setiap yurisdiksi.",
+  "description": "Di UE, makanan dengan Ponceau 4R harus mencantumkan peringatan tentang aktivitas dan perhatian anak; Ponceau 4R tidak diizinkan untuk digunakan dalam makanan di Amerika Serikat.",
+  "what_is": "Ponceau 4R (E124 / INS 124), juga disebut Cochineal Red A, adalah pewarna makanan merah sintetis.",
+  "why_botia": "Ponceau 4R adalah pewarna merah sintetis yang diuraikan di usus menjadi zat-zat lain yang juga dipertimbangkan dalam penilaian keamanannya. Di UE, makanan yang mengandungnya harus mencantumkan peringatan bahwa zat ini dapat berdampak buruk pada aktivitas dan perhatian anak — peringatan yang berasal dari penelitian terhadap campuran beberapa pewarna bersama natrium benzoat, bukan Ponceau 4R secara terpisah. Ponceau 4R tidak diizinkan untuk digunakan dalam makanan di Amerika Serikat. JECFA menetapkan asupan harian yang dapat diterima sebesar 0–4 mg/kg berat badan dan menyimpulkan bahwa paparan dari makanan tidak menimbulkan masalah kesehatan.",
+  "can_1": "Mendeteksi E124, INS 124, Ponceau 4R, Cochineal Red A dan nama lain yang dinyatakan dalam daftar bahan.",
+  "can_2": "Menjelaskan peringatan UE tentang aktivitas dan perhatian, asalnya dari studi Southampton, fakta bahwa yang diuji adalah campuran bukan Ponceau 4R secara terpisah, dan statusnya yang berbeda di Amerika Serikat.",
+  "cannot_1": "Menentukan berapa banyak Ponceau 4R dalam suatu produk dari daftar bahan.",
+  "cannot_2": "Memprediksi apakah anak tertentu akan menunjukkan efek atau memperlakukan studi campuran Southampton sebagai bukti efek yang disebabkan Ponceau 4R sendiri.",
   "sources": [
     {
-      "label": "Peraturan (EC) No. 1333/2008 — Daftar Uni Eropa dan ketentuan penggunaan bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Ponceau 4R / CI Food Red 7, INS 124",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1792"
     },
     {
-      "label": "Peraturan Komisi (UE) No. 231/2012 — spesifikasi untuk bahan tambahan pangan yang diizinkan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1333"
+    },
+    {
+      "label": "FDA — Ponceau 4R not listed for use in food in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E124",

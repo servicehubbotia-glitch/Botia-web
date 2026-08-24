@@ -1,21 +1,29 @@
 {
   "name": "Ponceau 4R",
   "title": "Ponceau 4R",
-  "description": "Un colorant alimentar sintetic, identificat în UE sub denumirea de E124.",
-  "what_is": "Un colorant alimentar sintetic, identificat în UE sub denumirea de E124.",
-  "why_botia": "BOTIA indică codul E124, deoarece Regulamentul UE nr. 1333/2008 îl include printre coloranții pentru care anumite produse alimentare trebuie să poarte mențiunea suplimentară conform căreia colorantul poate avea un efect negativ asupra activității și atenției la copii, sub rezerva excepțiilor prevăzute de regulament. Aceasta este o cerință de etichetare, nu o previziune a unui efect asupra unui copil anume.",
-  "can_1": "Detectează E124 și denumirile principale declarate pentru Ponceau 4R.",
-  "can_2": "Prezentați contextul etichetării suplimentare din UE fără a transforma regula privind avertismentele într-o concluzie medicală individuală.",
-  "cannot_1": "Determinați cantitatea de colorant prezentă pe baza listei de ingrediente.",
-  "cannot_2": "Prevedeți dacă un anumit copil va fi afectat de un anumit efect sau presupuneți că aceeași formulare a avertismentului se aplică în toate jurisdicțiile.",
+  "description": "În UE, alimentele cu Ponceau 4R trebuie să poarte un avertisment privind activitatea și atenția copiilor; în Statele Unite nu este autorizat pentru utilizare în alimente.",
+  "what_is": "Ponceau 4R (E124 / INS 124), numit și Cochineal Red A, este un colorant alimentar roșu sintetic.",
+  "why_botia": "Ponceau 4R este un colorant roșu sintetic pe care intestinul îl descompune în alte substanțe, luate și ele în considerare la evaluarea siguranței. În UE, alimentele care îl conțin trebuie să poarte un avertisment că poate afecta negativ activitatea și atenția copiilor — avertisment provenit din studii realizate cu amestecuri de mai mulți coloranți și benzoat de sodiu, nu cu Ponceau 4R singur. Ponceau 4R nu este autorizat pentru utilizare în alimente în Statele Unite. JECFA a stabilit un aport zilnic acceptabil de 0–4 mg/kg greutate corporală și a concluzionat că expunerea alimentară nu reprezintă o problemă pentru sănătate.",
+  "can_1": "Detecta E124, INS 124, Ponceau 4R, Cochineal Red A și celelalte denumiri declarate în lista ingredientelor.",
+  "can_2": "Explica avertismentul UE privind activitatea și atenția, originea sa în studiul Southampton, faptul că au fost testate amestecuri și nu Ponceau 4R singur și statutul său diferit în Statele Unite.",
+  "cannot_1": "Determina din lista ingredientelor cantitatea de Ponceau 4R prezentă într-un produs.",
+  "cannot_2": "Prezice dacă un anumit copil va prezenta un efect sau trata studiul Southampton cu amestecuri drept dovadă a unui efect produs de Ponceau 4R singur.",
   "sources": [
     {
-      "label": "Regulamentul (CE) nr. 1333/2008 — Lista Uniunii și condițiile de utilizare a aditivilor alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Ponceau 4R / CI Food Red 7, INS 124",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1792"
     },
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei — specificații privind aditivii alimentari autorizați",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1333"
+    },
+    {
+      "label": "FDA — Ponceau 4R not listed for use in food in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E124",
