@@ -1,40 +1,32 @@
 {
   "name": "Eritrozina",
   "e_code": "E127",
-  "aliases": "E127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
+  "aliases": "E127, INS 127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers",
     "woman"
   ],
-  "what_is": "Un colorant xantenic roșu sintetic utilizat în anumite alimente și cunoscut în Statele Unite sub denumirea de FD&C Red No. 3.",
-  "why_botia": "BOTIA o semnalizează deoarece statutul său de reglementare diferă în funcție de piață: utilizările specificate rămân permise în UE și în sistemul Codex, în timp ce FDA din SUA a revocat autorizația sa alimentară în 2025, cu un termen de conformare la 15 ianuarie 2027.",
-  "can_1": "Identificați E127, eritrozina, FD&C Red No. 3 sau sinonimele comune de pe etichetă.",
-  "can_2": "Semnalați că legalitatea și statutul de eliminare treptată trebuie interpretate folosind țara și data vânzării, declanșând în același timp straturile E-number și Woman.",
-  "cannot_1": "Stabiliți când a fost fabricat un produs sau dacă un anumit articol din stoc se încadrează înainte sau după un termen limită de tranziție reglementar.",
-  "cannot_2": "Determinați concentrația sau preziceți un efect individual asupra sănătății doar din etichetă.",
+  "what_is": "Eritrozina (E127 / INS 127), cunoscută în Statele Unite ca FD&C Red No. 3, este un colorant alimentar roșu sintetic care conține iod.",
+  "why_botia": "Eritrozina este un colorant roșu care conține iod, iar dozele mari și menținute pot modifica funcționarea tiroidei. La șobolanii masculi a produs tumori tiroidiene printr-un mecanism hormonal specific șobolanului, motiv pentru care FDA a dispus în 2025 revocarea autorizării sale alimentare în temeiul clauzei Delaney; termenul pentru alimente este ianuarie 2027. Este o decizie regională, nu o interdicție mondială. JECFA a confirmat în 2018 DZA de 0–0,1 mg/kg greutate corporală.",
+  "can_1": "Detecta E127, INS 127, eritrozină, FD&C Red No. 3 și celelalte denumiri declarate în lista ingredientelor.",
+  "can_2": "Explica rezultatele privind tiroida, mecanismul hormonal specific șobolanilor, revocarea FDA și DZA JECFA.",
+  "cannot_1": "Determina câtă eritrozină este prezentă într-un anumit produs atunci când cantitatea nu este declarată.",
+  "cannot_2": "Transforma tumorile tiroidiene observate la șobolani la doze mari sau decizia de reglementare din SUA în riscul tiroidian sau de cancer al unui anumit produs ori al unei persoane.",
   "sources": [
     {
-      "label": "EFSA — Coloranți alimentari",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours"
+      "label": "JECFA — Erythrosine, INS 127",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/632"
     },
     {
-      "label": "FDA — FD&C Roșu nr. 3",
+      "label": "FDA — FD&C Red No. 3",
       "url": "https://www.fda.gov/industry/color-additives/fdc-red-no-3"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Regulamentul (EC) nr. 1333/2008 privind aditivii alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "JECFA — Specificația aditivului, INS 127",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=127"
+      "label": "FDA — Revocation of Red No. 3 in food and ingested drugs",
+      "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-revoke-authorization-use-red-no-3-food-and-ingested-drugs"
     }
   ],
   "title": "Eritrozina",
-  "description": "Un colorant xantenic roșu sintetic utilizat în anumite alimente și cunoscut în Statele Unite sub denumirea de FD&C Red No. 3."
+  "description": "Eritrozina conține iod și poate afecta tiroida la doze mari prelungite. FDA i-a revocat autorizarea alimentară în 2025 după apariția tumorilor tiroidiene la șobolani masculi."
 }

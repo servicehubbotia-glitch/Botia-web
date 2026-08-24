@@ -1,40 +1,32 @@
 {
   "name": "Erythrosin",
   "e_code": "E127",
-  "aliases": "E127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
+  "aliases": "E127, INS 127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers",
     "woman"
   ],
-  "what_is": "Ein synthetischer roter Xanthenfarbstoff, der in bestimmten Lebensmitteln verwendet wird und in den Vereinigten Staaten als FD&C Red No. 3 bekannt ist.",
-  "why_botia": "BOTIA kennzeichnet dies, weil sich sein regulatorischer Status je nach Markt unterscheidet: Bestimmte Verwendungen bleiben in der EU und im Codex-System zulässig, während die US-amerikanische FDA 2025 seine Lebensmittelzulassung mit einer Frist zur Einhaltung bis zum 15. Januar 2027 widerrufen hat.",
-  "can_1": "Identifizieren Sie E127, Erythrosin, FD&C Red No. 3 oder gebräuchliche Synonyme auf dem Etikett.",
-  "can_2": "Kennzeichnen Sie, dass Legalität und Auslaufstatus anhand des Verkaufslandes und -datums zu interpretieren sind, während die E-Nummer- und Frau-Ebenen ausgelöst werden.",
-  "cannot_1": "Bestimmen Sie, wann ein Produkt hergestellt wurde oder ob ein bestimmter Lagerartikel vor oder nach einer regulatorischen Übergangsfrist liegt.",
-  "cannot_2": "Bestimmen Sie die Konzentration oder sagen Sie eine individuelle gesundheitliche Wirkung allein anhand des Etiketts voraus.",
+  "what_is": "Erythrosin (E127 / INS 127), in den USA auch als FD&C Red No. 3 bekannt, ist ein synthetischer roter Lebensmittelfarbstoff, der Jod enthält.",
+  "why_botia": "Erythrosin ist ein roter Farbstoff, der Jod enthält, und dauerhaft hohe Dosen können die Schilddrüsenfunktion verändern. Bei männlichen Ratten verursachte es Schilddrüsentumoren über einen rattenspezifischen hormonellen Mechanismus; deshalb ordnete die FDA 2025 nach der Delaney Clause den Widerruf der Lebensmittelzulassung an. Die Frist für Lebensmittel endet im Januar 2027. Dies ist eine regionale Entscheidung und kein weltweites Verbot. JECFA bestätigte 2018 die ADI von 0–0,1 mg/kg Körpergewicht.",
+  "can_1": "E127, INS 127, Erythrosin, FD&C Red No. 3 und weitere deklarierte Namen in der Zutatenliste erkennen.",
+  "can_2": "Die Schilddrüsenbefunde, den rattenspezifischen hormonellen Mechanismus, den FDA-Widerruf und die JECFA-ADI erklären.",
+  "cannot_1": "Bestimmen, wie viel Erythrosin in einem bestimmten Produkt enthalten ist, wenn die Menge nicht angegeben wird.",
+  "cannot_2": "Schilddrüsentumoren aus Hochdosis-Rattenstudien oder die US-Regulierungsentscheidung in das Schilddrüsen- oder Krebsrisiko eines bestimmten Produkts oder einer Person umrechnen.",
   "sources": [
     {
-      "label": "EFSA — Lebensmittelfarbstoffe",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours"
+      "label": "JECFA — Erythrosine, INS 127",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/632"
     },
     {
-      "label": "FDA — FD&C Rot Nr. 3",
+      "label": "FDA — FD&C Red No. 3",
       "url": "https://www.fda.gov/industry/color-additives/fdc-red-no-3"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Verordnung (EC) Nr. 1333/2008 über Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "JECFA — Zusatzstoffspezifikation, INS 127",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=127"
+      "label": "FDA — Revocation of Red No. 3 in food and ingested drugs",
+      "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-revoke-authorization-use-red-no-3-food-and-ingested-drugs"
     }
   ],
   "title": "Erythrosin",
-  "description": "Ein synthetischer roter Xanthenfarbstoff, der in bestimmten Lebensmitteln verwendet wird und in den Vereinigten Staaten als FD&C Red No. 3 bekannt ist."
+  "description": "Erythrosin enthält Jod und kann bei dauerhaft hohen Dosen die Schilddrüsenfunktion beeinflussen. Die FDA widerrief 2025 die Lebensmittelzulassung nach Schilddrüsentumoren bei männlichen Ratten."
 }

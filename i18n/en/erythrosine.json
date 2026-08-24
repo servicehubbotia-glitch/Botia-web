@@ -1,40 +1,32 @@
 {
   "name": "Erythrosine",
   "e_code": "E127",
-  "aliases": "E127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
+  "aliases": "E127, INS 127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers",
     "woman"
   ],
-  "what_is": "A synthetic red xanthene colour used in certain foods and known in the United States as FD&C Red No. 3.",
-  "why_botia": "BOTIA flags it because its regulatory status differs by market: specified uses remain permitted in the EU and Codex system, while the U.S. FDA revoked its food authorisation in 2025 with a compliance deadline of 15 January 2027.",
-  "can_1": "Identify E127, erythrosine, FD&C Red No. 3 or common label synonyms.",
-  "can_2": "Flag that legality and phase-out status must be interpreted using the country and date of sale, while triggering the E-number and Woman layers.",
-  "cannot_1": "Determine when a product was manufactured or whether a particular stock item falls before or after a regulatory transition deadline.",
-  "cannot_2": "Determine the concentration or predict an individual health effect from the label alone.",
+  "what_is": "Erythrosine (E127 / INS 127), also known in the United States as FD&C Red No. 3, is a synthetic red food colour that contains iodine.",
+  "why_botia": "Erythrosine is a red colour that contains iodine, and sustained high doses can alter thyroid function. In male rats it produced thyroid tumours through a rat-specific hormonal mechanism, and that is why the FDA ordered its food authorisation revoked in 2025 under the Delaney Clause; the food deadline is January 2027. This is a regional decision, not a worldwide ban. JECFA confirmed its ADI of 0–0.1 mg/kg body weight in 2018.",
+  "can_1": "Detect E127, INS 127, erythrosine, FD&C Red No. 3 and its other declared names in the ingredient list.",
+  "can_2": "Explain the thyroid findings, the rat-specific hormonal mechanism, the FDA revocation and JECFA's ADI.",
+  "cannot_1": "Determine how much erythrosine is present in a particular product when the amount is not declared.",
+  "cannot_2": "Turn thyroid tumours in high-dose rat studies or the US regulatory decision into the thyroid or cancer risk of a particular product or person.",
   "sources": [
     {
-      "label": "EFSA — Food colours",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours"
+      "label": "JECFA — Erythrosine, INS 127",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/632"
     },
     {
       "label": "FDA — FD&C Red No. 3",
       "url": "https://www.fda.gov/industry/color-additives/fdc-red-no-3"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Regulation (EC) No 1333/2008 on food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "JECFA — additive specification, INS 127",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=127"
+      "label": "FDA — Revocation of Red No. 3 in food and ingested drugs",
+      "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-revoke-authorization-use-red-no-3-food-and-ingested-drugs"
     }
   ],
   "title": "Erythrosine",
-  "description": "A synthetic red xanthene colour used in certain foods and known in the United States as FD&C Red No. 3."
+  "description": "Erythrosine contains iodine and can affect thyroid function at sustained high doses. The FDA revoked its food authorisation in 2025 after thyroid tumours occurred in male rats."
 }

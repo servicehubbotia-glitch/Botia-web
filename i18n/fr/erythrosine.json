@@ -1,40 +1,32 @@
 {
   "name": "Érythrosine",
   "e_code": "E127",
-  "aliases": "E127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
+  "aliases": "E127, INS 127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers",
     "woman"
   ],
-  "what_is": "Un colorant xanthène rouge synthétique utilisé dans certains aliments et connu aux États-Unis sous le nom de FD&C Red No. 3.",
-  "why_botia": "BOTIA le signale car son statut réglementaire diffère selon le marché : les usages spécifiés restent autorisés dans l’UE et le système Codex, tandis que la FDA américaine a révoqué son autorisation alimentaire en 2025, avec une échéance de mise en conformité fixée au 15 janvier 2027.",
-  "can_1": "Identifiez l'E127, l'érythrosine, le FD&C Red No. 3 ou les synonymes courants sur l'étiquette.",
-  "can_2": "Signalez que la légalité et le statut de suppression progressive doivent être interprétés en fonction du pays et de la date de vente, tout en activant les couches E-number et Woman.",
-  "cannot_1": "Déterminez quand un produit a été fabriqué ou si un article de stock particulier se situe avant ou après une date limite de transition réglementaire.",
-  "cannot_2": "Déterminer la concentration ou prédire un effet de santé individuel à partir de la seule étiquette.",
+  "what_is": "L'érythrosine (E127 / INS 127), connue aux États-Unis sous le nom FD&C Red No. 3, est un colorant alimentaire rouge synthétique contenant de l'iode.",
+  "why_botia": "L'érythrosine est un colorant rouge contenant de l'iode, et des doses élevées maintenues peuvent modifier le fonctionnement de la thyroïde. Chez les rats mâles, elle a provoqué des tumeurs thyroïdiennes par un mécanisme hormonal propre au rat, raison pour laquelle la FDA a ordonné en 2025 le retrait de son autorisation alimentaire au titre de la clause Delaney ; l'échéance pour les aliments est janvier 2027. Il s'agit d'une décision régionale, et non d'une interdiction mondiale. Le JECFA a confirmé en 2018 sa DJA de 0–0,1 mg/kg de poids corporel.",
+  "can_1": "Détecter E127, INS 127, érythrosine, FD&C Red No. 3 et ses autres noms déclarés dans la liste des ingrédients.",
+  "can_2": "Expliquer les résultats concernant la thyroïde, le mécanisme hormonal propre au rat, le retrait de la FDA et la DJA du JECFA.",
+  "cannot_1": "Déterminer la quantité d'érythrosine présente dans un produit donné lorsque la quantité n'est pas déclarée.",
+  "cannot_2": "Transformer les tumeurs thyroïdiennes observées chez le rat à fortes doses ou la décision américaine en risque thyroïdien ou cancéreux pour un produit ou une personne donnée.",
   "sources": [
     {
-      "label": "EFSA — Colorants alimentaires",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours"
+      "label": "JECFA — Erythrosine, INS 127",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/632"
     },
     {
-      "label": "FDA — FD&C Rouge n° 3",
+      "label": "FDA — FD&C Red No. 3",
       "url": "https://www.fda.gov/industry/color-additives/fdc-red-no-3"
     },
     {
-      "label": "Codex Alimentarius — GSFA en ligne",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Règlement (EC) n° 1333/2008 sur les additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "JECFA — Spécification de l’additif, INS 127",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=127"
+      "label": "FDA — Revocation of Red No. 3 in food and ingested drugs",
+      "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-revoke-authorization-use-red-no-3-food-and-ingested-drugs"
     }
   ],
   "title": "Érythrosine",
-  "description": "Un colorant xanthène rouge synthétique utilisé dans certains aliments et connu aux États-Unis sous le nom de FD&C Red No. 3."
+  "description": "L'érythrosine contient de l'iode et peut affecter la thyroïde à doses élevées prolongées. La FDA a retiré son autorisation alimentaire en 2025 après des tumeurs thyroïdiennes chez des rats mâles."
 }

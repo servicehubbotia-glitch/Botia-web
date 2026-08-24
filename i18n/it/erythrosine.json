@@ -1,40 +1,32 @@
 {
   "name": "Eritrosina",
   "e_code": "E127",
-  "aliases": "E127, eritrosina, FD&C Red n. 3, Rosso 3, Colorante Rosso n. 3, CI 45430, CI Food Red 14, Rosso Alimentare 14",
+  "aliases": "E127, INS 127, eritrosina, FD&C Red n. 3, Rosso 3, Colorante Rosso n. 3, CI 45430, CI Food Red 14, Rosso Alimentare 14",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers",
     "woman"
   ],
-  "what_is": "Un colorante sintetico rosso xantene utilizzato in alcuni alimenti e noto negli Stati Uniti come FD&C Red No. 3.",
-  "why_botia": "BOTIA lo segnala perché il suo status normativo varia a seconda del mercato: gli usi specificati restano consentiti nell'UE e nel sistema Codex, mentre la FDA statunitense ha revocato la sua autorizzazione alimentare nel 2025 con una scadenza di conformità fissata al 15 gennaio 2027.",
-  "can_1": "Identificare E127, eritrosina, FD&C Red No. 3 o sinonimi comuni in etichetta.",
-  "can_2": "Segnalare che la legalità e lo stato di eliminazione graduale devono essere interpretati utilizzando il paese e la data di vendita, attivando al contempo i livelli E-number e Woman.",
-  "cannot_1": "Determina quando un prodotto è stato fabbricato o se un particolare articolo di magazzino rientra prima o dopo una scadenza normativa di transizione.",
-  "cannot_2": "Determinare la concentrazione o prevedere un effetto sanitario individuale basandosi solo sull'etichetta.",
+  "what_is": "L'eritrosina (E127 / INS 127), nota negli Stati Uniti come FD&C Red No. 3, è un colorante alimentare rosso sintetico contenente iodio.",
+  "why_botia": "L'eritrosina è un colorante rosso contenente iodio e dosi elevate e prolungate possono alterare la funzione tiroidea. Nei ratti maschi ha prodotto tumori della tiroide attraverso un meccanismo ormonale specifico del ratto, motivo per cui nel 2025 la FDA ha ordinato la revoca dell'autorizzazione alimentare ai sensi della Delaney Clause; la scadenza per gli alimenti è gennaio 2027. È una decisione regionale, non un divieto mondiale. Il JECFA ha confermato nel 2018 la DGA di 0–0,1 mg/kg di peso corporeo.",
+  "can_1": "Rilevare E127, INS 127, eritrosina, FD&C Red No. 3 e gli altri nomi dichiarati nella lista degli ingredienti.",
+  "can_2": "Spiegare i risultati sulla tiroide, il meccanismo ormonale specifico del ratto, la revoca FDA e la DGA JECFA.",
+  "cannot_1": "Determinare quanta eritrosina è presente in un prodotto specifico quando la quantità non è dichiarata.",
+  "cannot_2": "Trasformare i tumori tiroidei osservati nei ratti ad alte dosi o la decisione normativa statunitense nel rischio tiroideo o di cancro di un prodotto o di una persona.",
   "sources": [
     {
-      "label": "EFSA — Coloranti alimentari",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours"
+      "label": "JECFA — Erythrosine, INS 127",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/632"
     },
     {
-      "label": "FDA — Rosso FD&C n. 3",
+      "label": "FDA — FD&C Red No. 3",
       "url": "https://www.fda.gov/industry/color-additives/fdc-red-no-3"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Regolamento (CE) n. 1333/2008 sugli additivi alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "JECFA — specifica dell'additivo, INS 127",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=127"
+      "label": "FDA — Revocation of Red No. 3 in food and ingested drugs",
+      "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-revoke-authorization-use-red-no-3-food-and-ingested-drugs"
     }
   ],
   "title": "Eritrosina",
-  "description": "Un colorante sintetico rosso xantene utilizzato in alcuni alimenti e noto negli Stati Uniti come FD&C Red No. 3."
+  "description": "L'eritrosina contiene iodio e a dosi elevate prolungate può influire sulla tiroide. La FDA ha revocato l'autorizzazione alimentare nel 2025 dopo tumori tiroidei nei ratti maschi."
 }

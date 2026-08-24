@@ -1,40 +1,32 @@
 {
   "name": "Eritrosina",
   "e_code": "E127",
-  "aliases": "E127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
+  "aliases": "E127, INS 127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers",
     "woman"
   ],
-  "what_is": "Um corante xanteno sintético de cor vermelha usado em certos alimentos e conhecido nos Estados Unidos como FD&C Red No. 3.",
-  "why_botia": "A BOTIA sinaliza isso porque seu status regulatório difere por mercado: usos especificados permanecem permitidos na UE e no sistema Codex, enquanto a FDA dos EUA revogou sua autorização alimentar em 2025, com prazo de conformidade até 15 de janeiro de 2027.",
-  "can_1": "Identifique E127, eritrosina, FD&C Vermelho nº 3 ou sinônimos comuns de rótulo.",
-  "can_2": "Sinalizar que a legalidade e o status de descontinuação devem ser interpretados usando o país e a data de venda, enquanto acionam as camadas E-number e Woman.",
-  "cannot_1": "Determine quando um produto foi fabricado ou se um item específico de estoque se enquadra antes ou depois de um prazo de transição regulatória.",
-  "cannot_2": "Determine a concentração ou preveja um efeito individual à saúde apenas pelo rótulo.",
+  "what_is": "A eritrosina (E127 / INS 127), conhecida nos Estados Unidos como FD&C Red No. 3, é um corante alimentar vermelho sintético que contém iodo.",
+  "why_botia": "A eritrosina é um corante vermelho que contém iodo, e doses elevadas mantidas podem alterar o funcionamento da tiroide. Em ratos machos produziu tumores da tiroide através de um mecanismo hormonal específico do rato, razão pela qual a FDA ordenou em 2025 a revogação da sua autorização alimentar ao abrigo da Delaney Clause; o prazo para alimentos termina em janeiro de 2027. É uma decisão regional, não uma proibição mundial. O JECFA confirmou em 2018 a DDA de 0–0,1 mg/kg de peso corporal.",
+  "can_1": "Detetar E127, INS 127, eritrosina, FD&C Red No. 3 e os seus outros nomes declarados na lista de ingredientes.",
+  "can_2": "Explicar os resultados sobre a tiroide, o mecanismo hormonal específico do rato, a revogação da FDA e a DDA do JECFA.",
+  "cannot_1": "Determinar quanta eritrosina existe num produto específico quando a quantidade não é declarada.",
+  "cannot_2": "Transformar tumores da tiroide observados em ratos a doses elevadas ou a decisão regulatória dos EUA no risco tiroideu ou de cancro de um produto ou pessoa específica.",
   "sources": [
     {
-      "label": "EFSA — Corantes alimentares",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours"
+      "label": "JECFA — Erythrosine, INS 127",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/632"
     },
     {
-      "label": "FDA — FD&C Vermelho n.º 3",
+      "label": "FDA — FD&C Red No. 3",
       "url": "https://www.fda.gov/industry/color-additives/fdc-red-no-3"
     },
     {
-      "label": "Codex Alimentarius — GSFA em linha",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Regulamento (EC) n.º 1333/2008 relativo aos aditivos alimentares",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "JECFA — Especificação do aditivo, INS 127",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=127"
+      "label": "FDA — Revocation of Red No. 3 in food and ingested drugs",
+      "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-revoke-authorization-use-red-no-3-food-and-ingested-drugs"
     }
   ],
   "title": "Eritrosina",
-  "description": "Um corante sintético vermelho de xanteno usado em certos alimentos e conhecido nos Estados Unidos como FD&C Red No. 3."
+  "description": "A eritrosina contém iodo e pode afetar a tiroide em doses elevadas prolongadas. A FDA revogou a autorização alimentar em 2025 após tumores da tiroide em ratos machos."
 }

@@ -1,40 +1,32 @@
 {
   "name": "Eritrosina",
   "e_code": "E127",
-  "aliases": "E127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
+  "aliases": "E127, INS 127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers",
     "woman"
   ],
-  "what_is": "Un colorante sintético rojo de xanteno utilizado en ciertos alimentos y conocido en Estados Unidos como FD&C Red No. 3.",
-  "why_botia": "BOTIA lo señala porque su estatus regulatorio difiere según el mercado: los usos especificados siguen permitidos en la UE y en el sistema del Codex, mientras que la FDA de EE. UU. revocó su autorización alimentaria en 2025 con una fecha límite de cumplimiento el 15 de enero de 2027.",
-  "can_1": "Identifica E127, eritrosina, FD&C Rojo N.º 3 o sinónimos comunes de etiqueta.",
-  "can_2": "Indicar que la legalidad y el estado de eliminación gradual deben interpretarse utilizando el país y la fecha de venta, activando al mismo tiempo las capas de número E y de Mujer.",
-  "cannot_1": "Determina cuándo se fabricó un producto o si un artículo de inventario específico cae antes o después de una fecha límite de transición regulatoria.",
-  "cannot_2": "Determine la concentración o prediga un efecto de salud individual solo a partir de la etiqueta.",
+  "what_is": "La eritrosina (E127 / INS 127), conocida en Estados Unidos como FD&C Red No. 3, es un colorante alimentario rojo sintético que contiene yodo.",
+  "why_botia": "La eritrosina es un colorante rojo que contiene yodo, y a dosis altas y mantenidas puede alterar el funcionamiento de la tiroides. En ratas macho produjo tumores de tiroides mediante un mecanismo hormonal específico de la rata, y por eso la FDA ordenó retirar su autorización alimentaria en 2025 bajo la cláusula Delaney; el plazo para alimentos termina en enero de 2027. Es una decisión regional, no una prohibición mundial. JECFA confirmó en 2018 su ingesta diaria admisible de 0–0,1 mg/kg de peso corporal.",
+  "can_1": "Detectar E127, INS 127, eritrosina, FD&C Red No. 3 y sus otros nombres declarados en la lista de ingredientes.",
+  "can_2": "Explicar los hallazgos sobre la tiroides, el mecanismo hormonal específico de la rata, la retirada de la FDA y la ingesta diaria admisible de JECFA.",
+  "cannot_1": "Determinar cuánta eritrosina contiene un producto concreto cuando la cantidad no está declarada.",
+  "cannot_2": "Convertir los tumores tiroideos observados en ratas a dosis altas o la decisión regulatoria de Estados Unidos en el riesgo tiroideo o de cáncer de un producto o una persona concreta.",
   "sources": [
     {
-      "label": "EFSA — Colorantes alimentarios",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours"
+      "label": "JECFA — Erythrosine, INS 127",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/632"
     },
     {
-      "label": "FDA — FD&C Rojo n.º 3",
+      "label": "FDA — FD&C Red No. 3",
       "url": "https://www.fda.gov/industry/color-additives/fdc-red-no-3"
     },
     {
-      "label": "Codex Alimentarius — GSFA en línea",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Reglamento (EC) n.º 1333/2008 sobre aditivos alimentarios",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "JECFA — Especificación del aditivo, INS 127",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=127"
+      "label": "FDA — Revocation of Red No. 3 in food and ingested drugs",
+      "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-revoke-authorization-use-red-no-3-food-and-ingested-drugs"
     }
   ],
   "title": "Eritrosina",
-  "description": "Un colorante sintético rojo de xanteno utilizado en ciertos alimentos y conocido en Estados Unidos como FD&C Red No. 3."
+  "description": "La eritrosina contiene yodo y a dosis altas mantenidas puede afectar a la tiroides. La FDA retiró su autorización alimentaria en 2025 tras observarse tumores tiroideos en ratas macho."
 }

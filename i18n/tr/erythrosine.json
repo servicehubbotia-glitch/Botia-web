@@ -1,40 +1,32 @@
 {
   "name": "Eritrosin",
   "e_code": "E127",
-  "aliases": "E127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
+  "aliases": "E127, INS 127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers",
     "woman"
   ],
-  "what_is": "Belirli gıdalarda kullanılan ve Amerika Birleşik Devletleri'nde FD&C Kırmızı No. 3 olarak bilinen sentetik kırmızı ksanten rengi.",
-  "why_botia": "BOTIA bunu işaretler çünkü düzenleyici statüsü pazara göre farklılık gösterir: belirtilen kullanımlar AB ve Codex sisteminde izinli kalırken, ABD FDA 2025 yılında gıda iznini 15 Ocak 2027 uyum son tarihiyle iptal etmiştir.",
-  "can_1": "E127, eritrosin, FD&C Kırmızı No. 3 veya yaygın etiket eşanlamlılarını tanımlayın.",
-  "can_2": "Yasallık ve aşamalı kaldırma durumunun, satış ülkesi ve tarihi kullanılarak yorumlanması gerektiğini, E-numarası ve Kadın katmanlarını tetikleyerek işaretleyin.",
-  "cannot_1": "Bir ürünün ne zaman üretildiğini veya belirli bir stok kaleminin düzenleyici bir geçiş son tarihinden önce mi sonra mı olduğunu belirleyin.",
-  "cannot_2": "Etiketten tek başına konsantrasyonu belirleyin veya bireysel bir sağlık etkisini tahmin edin.",
+  "what_is": "Eritrosin (E127 / INS 127), Amerika Birleşik Devletleri'nde FD&C Red No. 3 olarak bilinen, iyot içeren sentetik kırmızı bir gıda renklendiricisidir.",
+  "why_botia": "Eritrosin iyot içeren kırmızı bir renklendiricidir ve uzun süreli yüksek dozlar tiroid işlevini değiştirebilir. Erkek sıçanlarda sıçana özgü hormonal bir mekanizma yoluyla tiroid tümörlerine neden oldu; bu nedenle FDA 2025'te Delaney Clause kapsamında gıda izninin iptalini emretti. Gıdalar için son tarih Ocak 2027'dir. Bu bölgesel bir karardır, dünya çapında bir yasak değildir. JECFA 2018'de 0–0,1 mg/kg vücut ağırlığı ADI'sini doğruladı.",
+  "can_1": "İçerik listesinde E127, INS 127, eritrosin, FD&C Red No. 3 ve diğer belirtilen adları tespit etmek.",
+  "can_2": "Tiroid bulgularını, sıçana özgü hormonal mekanizmayı, FDA kararını ve JECFA ADI'sini açıklamak.",
+  "cannot_1": "Miktar belirtilmediğinde belirli bir üründe ne kadar eritrosin bulunduğunu belirlemek.",
+  "cannot_2": "Yüksek dozlu sıçan çalışmalarındaki tiroid tümörlerini veya ABD'deki düzenleyici kararı belirli bir ürün ya da kişinin tiroid veya kanser riskine dönüştürmek.",
   "sources": [
     {
-      "label": "EFSA — Gıda renklendiricileri",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-colours"
+      "label": "JECFA — Erythrosine, INS 127",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/632"
     },
     {
-      "label": "FDA — FD&C Kırmızı No. 3",
+      "label": "FDA — FD&C Red No. 3",
       "url": "https://www.fda.gov/industry/color-additives/fdc-red-no-3"
     },
     {
-      "label": "Codex Alimentarius — Çevrimiçi GSFA",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Gıda katkı maddelerine ilişkin (EC) 1333/2008 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "JECFA — Katkı maddesi spesifikasyonu, INS 127",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=127"
+      "label": "FDA — Revocation of Red No. 3 in food and ingested drugs",
+      "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-revoke-authorization-use-red-no-3-food-and-ingested-drugs"
     }
   ],
   "title": "Eritrosin",
-  "description": "Belirli gıdalarda kullanılan ve Amerika Birleşik Devletleri'nde FD&C Kırmızı No. 3 olarak bilinen sentetik kırmızı bir ksanten boyası."
+  "description": "Eritrosin iyot içerir ve uzun süreli yüksek dozlarda tiroidi etkileyebilir. FDA, erkek sıçanlarda tiroid tümörleri görülmesinin ardından 2025'te gıda iznini iptal etti."
 }
