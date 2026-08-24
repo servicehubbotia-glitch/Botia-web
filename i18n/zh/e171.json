@@ -2,27 +2,38 @@
   "name": "二氧化钛",
   "e_code": "E171",
   "aliases": "E171, 二氧化钛, 钛白粉, 钛白, CI颜料白6, 锐钛矿, 金红石",
-  "module_icon": "mujer.png",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "一种无机白色矿物颜料，历史上用于增白和提亮食品。",
-  "why_botia": "BOTIA将E171标记为风险物质，因为EFSA无法排除其遗传毒性，且不再认为其作为食品添加剂是安全的。欧盟已于2022年撤销其授权。",
-  "can_1": "识别扫描到的成分列表中的E171，并发出高风险禁令警告。",
-  "can_2": "说明E171为何失去授权：遗传毒性无法排除。卵巢纳米颗粒蓄积并非禁令的既定依据。",
-  "cannot_1": "无法识别在欧盟以外购买的产品是否仍使用E171，除非包装上标明。",
-  "cannot_2": "无法检测添加剂中纳米级（小于100纳米）二氧化钛的确切比例。",
+  "what_is": "二氧化钛（INS 171 / E171）是一种不溶性的白色颜料，用作食品着色剂，使食品更白或更明亮。Codex GSFA 目前仍包含 INS 171 的食品使用规定，而其法律地位因司法管辖区而异。",
+  "why_botia": "食品级二氧化钛是一种由不同粒径颗粒组成的不溶性白色颜料；其肠道吸收率很低，但粒径是安全评估的重要因素。JECFA 在 2023 年重新评估 INS 171，未发现可识别的膳食危害，并维持 ADI“未规定”；EFSA 则在 2021 年认为无法排除遗传毒性，也无法确定安全的每日摄入量。欧盟于 2022 年取消其食品授权，而 Codex 和美国仍允许某些食品用途，因此 E171 在不同地区并不具有相同的科学或法律地位。",
+  "can_1": "在标签明确标示时识别 E171、INS 171 和二氧化钛。",
+  "can_2": "解释 JECFA 与 EFSA 的不同结论以及各司法管辖区的法律地位，而不把欧盟的决定表述为全球禁令。",
+  "cannot_1": "当标签未明确标示时确定产品是否含有二氧化钛。",
+  "cannot_2": "仅根据成分名称确定二氧化钛的含量或粒径分布。",
   "sources": [
     {
-      "label": "欧洲食品安全局关于二氧化钛（E 171）作为食品添加剂安全性的科学意见（2021年）",
+      "label": "JECFA — Titanium dioxide (INS 171), evaluation 2023",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2723"
+    },
+    {
+      "label": "Codex GSFA — Titanium dioxide (INS 171)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=184"
+    },
+    {
+      "label": "EFSA — Safety assessment of titanium dioxide (E171) as a food additive (2021)",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6585"
     },
     {
-      "label": "欧盟委员会法规（EU）2022/63修订了（EC）第1333/2008号法规的附件II和III",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0063"
+      "label": "European Union — Regulation (EU) 2022/63",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32022R0063"
+    },
+    {
+      "label": "FDA — Titanium Dioxide as a Color Additive in Foods",
+      "url": "https://www.fda.gov/industry/color-additives/titanium-dioxide-color-additive-foods"
     }
   ],
   "title": "二氧化钛",
-  "description": "一种无机白色矿物颜料，历史上用于增白和提亮食品。"
+  "description": "一种不溶性的白色食品着色剂，其安全评估和食品使用规则因司法管辖区而异。"
 }

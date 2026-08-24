@@ -2,27 +2,38 @@
   "name": "Dióxido de titânio",
   "e_code": "E171",
   "aliases": "E171, dióxido de titânio, dióxido de titanio, branco de titânio, CI Pigment White 6, anatase, rutilo",
-  "module_icon": "mujer.png",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Um pigmento mineral branco inorgânico historicamente usado para clarear e realçar alimentos.",
-  "why_botia": "A BOTIA sinaliza o E171 porque a EFSA não conseguiu excluir a genotoxicidade e deixou de considerá-lo seguro como aditivo alimentar. A UE retirou a sua autorização em 2022.",
-  "can_1": "Identificar E171 em listas de ingredientes escaneadas e emitir um alerta de proibição de alto risco.",
-  "can_2": "Explique por que o E171 perdeu a autorização: a genotoxicidade não pôde ser excluída. A acumulação de nanopartículas nos ovários não foi a base estabelecida para a proibição.",
-  "cannot_1": "Identificar se um produto comprado fora da UE ainda utiliza E171, a menos que indicado na embalagem.",
-  "cannot_2": "Detectar a proporção exata de dióxido de titânio em tamanho nanométrico (menos de 100 nm) presente no aditivo.",
+  "what_is": "O dióxido de titânio (INS 171 / E171) é um pigmento branco insolúvel utilizado como corante para branquear ou tornar os alimentos mais claros. A GSFA do Codex continua a conter disposições de uso alimentar para o INS 171, enquanto o estatuto legal varia conforme a jurisdição.",
+  "why_botia": "O dióxido de titânio de grau alimentar é um pigmento branco insolúvel formado por partículas de diferentes tamanhos; a absorção intestinal é muito baixa, mas o tamanho das partículas é relevante na avaliação de segurança. O JECFA reavaliou o INS 171 em 2023 e não identificou um perigo alimentar, mantendo a IDA como «não especificada», enquanto a EFSA concluiu em 2021 que a genotoxicidade não podia ser excluída e que não era possível estabelecer uma ingestão diária segura. A UE retirou a autorização alimentar em 2022, enquanto o Codex e os Estados Unidos ainda permitem usos alimentares, portanto o E171 não tem o mesmo estatuto científico ou legal em todos os mercados.",
+  "can_1": "Identificar E171, INS 171 e dióxido de titânio quando forem explicitamente declarados no rótulo.",
+  "can_2": "Explicar as diferentes conclusões do JECFA e da EFSA e o estatuto legal específico de cada jurisdição sem apresentar a decisão da UE como uma proibição mundial.",
+  "cannot_1": "Determinar se um produto contém dióxido de titânio quando o rótulo não o declara explicitamente.",
+  "cannot_2": "Determinar a quantidade ou a distribuição do tamanho das partículas de dióxido de titânio apenas pelo nome do ingrediente.",
   "sources": [
     {
-      "label": "Parecer Científico da EFSA sobre a segurança do dióxido de titânio (E 171) como aditivo alimentar (2021)",
+      "label": "JECFA — Titanium dioxide (INS 171), evaluation 2023",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2723"
+    },
+    {
+      "label": "Codex GSFA — Titanium dioxide (INS 171)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=184"
+    },
+    {
+      "label": "EFSA — Safety assessment of titanium dioxide (E171) as a food additive (2021)",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6585"
     },
     {
-      "label": "Regulamento da Comissão (UE) 2022/63 que altera os Anexos II e III do Regulamento (CE) n.º 1333/2008",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0063"
+      "label": "European Union — Regulation (EU) 2022/63",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32022R0063"
+    },
+    {
+      "label": "FDA — Titanium Dioxide as a Color Additive in Foods",
+      "url": "https://www.fda.gov/industry/color-additives/titanium-dioxide-color-additive-foods"
     }
   ],
   "title": "Dióxido de titânio",
-  "description": "Um pigmento mineral branco inorgânico historicamente usado para clarear e realçar alimentos."
+  "description": "Um corante alimentar branco insolúvel com diferentes avaliações de segurança e regras de uso conforme a jurisdição."
 }

@@ -2,27 +2,38 @@
   "name": "Dioxid de titan",
   "e_code": "E171",
   "aliases": "E171, dioxid de titan, dióxido de titanio, alb de titan, CI Pigment White 6, anatas, rutil",
-  "module_icon": "mujer.png",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Un pigment mineral alb anorganic utilizat istoric pentru a albi și a lumina alimentele.",
-  "why_botia": "BOTIA semnalează E171 deoarece EFSA nu a putut exclude genotoxicitatea și nu l-a mai considerat sigur ca aditiv alimentar. UE i-a retras autorizația în 2022.",
-  "can_1": "Identificați E171 pe listele de ingrediente scanate și emiteți un avertisment de interdicție cu risc ridicat.",
-  "can_2": "Spuneți de ce E171 a pierdut autorizația: genotoxicitatea nu a putut fi exclusă. Acumularea de nanoparticule în ovare nu a fost baza stabilită pentru interdicție.",
-  "cannot_1": "Identificați dacă un produs achiziționat în afara UE utilizează încă E171, cu excepția cazului în care este indicat pe ambalaj.",
-  "cannot_2": "Detectați proporția exactă de dioxid de titan de dimensiuni nanometrice (mai puțin de 100 nm) prezentă în aditiv.",
+  "what_is": "Dioxidul de titan (INS 171 / E171) este un pigment alb insolubil utilizat ca colorant pentru albirea sau intensificarea aspectului alimentelor. GSFA Codex conține în continuare dispoziții de utilizare alimentară pentru INS 171, în timp ce statutul juridic diferă în funcție de jurisdicție.",
+  "why_botia": "Dioxidul de titan de uz alimentar este un pigment alb insolubil format din particule de dimensiuni diferite; absorbția intestinală este foarte scăzută, dar dimensiunea particulelor contează în evaluarea siguranței. JECFA a reevaluat INS 171 în 2023 și nu a identificat un pericol alimentar, menținând ADI ca „nespecificată”, în timp ce EFSA a concluzionat în 2021 că genotoxicitatea nu putea fi exclusă și că nu putea fi stabilit un aport zilnic sigur. UE a retras autorizarea alimentară în 2022, în timp ce Codex și Statele Unite permit în continuare utilizări alimentare, astfel încât E171 nu are același statut științific sau juridic peste tot.",
+  "can_1": "Identifica E171, INS 171 și dioxidul de titan atunci când sunt declarate explicit pe etichetă.",
+  "can_2": "Explica concluziile diferite ale JECFA și EFSA și statutul juridic specific fiecărei jurisdicții fără a prezenta decizia UE drept o interdicție mondială.",
+  "cannot_1": "Determina dacă un produs conține dioxid de titan atunci când eticheta nu îl declară explicit.",
+  "cannot_2": "Determina cantitatea sau distribuția dimensiunii particulelor de dioxid de titan numai din denumirea ingredientului.",
   "sources": [
     {
-      "label": "Avizul științific EFSA privind siguranța dioxidului de titan (E 171) ca aditiv alimentar (2021)",
+      "label": "JECFA — Titanium dioxide (INS 171), evaluation 2023",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2723"
+    },
+    {
+      "label": "Codex GSFA — Titanium dioxide (INS 171)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=184"
+    },
+    {
+      "label": "EFSA — Safety assessment of titanium dioxide (E171) as a food additive (2021)",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6585"
     },
     {
-      "label": "Regulamentul (UE) 2022/63 al Comisiei de modificare a anexelor II și III la Regulamentul (CE) nr. 1333/2008",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0063"
+      "label": "European Union — Regulation (EU) 2022/63",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32022R0063"
+    },
+    {
+      "label": "FDA — Titanium Dioxide as a Color Additive in Foods",
+      "url": "https://www.fda.gov/industry/color-additives/titanium-dioxide-color-additive-foods"
     }
   ],
   "title": "Dioxid de titan",
-  "description": "Un pigment mineral alb anorganic utilizat istoric pentru a albi și a lumina alimentele."
+  "description": "Un colorant alimentar alb insolubil cu evaluări de siguranță și reguli de utilizare diferite în funcție de jurisdicție."
 }

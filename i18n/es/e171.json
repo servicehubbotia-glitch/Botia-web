@@ -2,27 +2,38 @@
   "name": "Dióxido de titanio",
   "e_code": "E171",
   "aliases": "E171, dióxido de titanio, titanium dioxide, blanco de titanio, CI Pigment White 6, anatasa, rutilo",
-  "module_icon": "mujer.png",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Un pigmento mineral blanco inorgánico utilizado históricamente para blanquear y dar brillo a los alimentos.",
-  "why_botia": "BOTIA señala el E171 porque la EFSA no pudo descartar la genotoxicidad y ya no lo consideró seguro como aditivo alimentario. La UE retiró su autorización en 2022.",
-  "can_1": "Identificar E171 en listas de ingredientes escaneadas y emitir una advertencia de prohibición de alto riesgo.",
-  "can_2": "Explique por qué la E171 perdió la autorización: no se pudo descartar la genotoxicidad. La acumulación de nanopartículas en los ovarios no fue la base establecida para la prohibición.",
-  "cannot_1": "Identificar si un producto comprado fuera de la UE aún utiliza E171 a menos que se indique en el envase.",
-  "cannot_2": "Detectar la proporción exacta de dióxido de titanio de tamaño nanométrico (menos de 100 nm) presente en el aditivo.",
+  "what_is": "El dióxido de titanio (INS 171 / E171) es un pigmento blanco insoluble utilizado como colorante para blanquear o dar mayor luminosidad a los alimentos. La GSFA de Codex sigue incluyendo disposiciones de uso alimentario para INS 171, mientras que su situación legal varía según la jurisdicción.",
+  "why_botia": "El dióxido de titanio de uso alimentario es un pigmento blanco insoluble formado por partículas de distintos tamaños; la absorción intestinal es muy baja, pero el tamaño de las partículas importa en su evaluación de seguridad. JECFA reevaluó INS 171 en 2023 y no identificó un peligro dietario, manteniendo una IDA «no especificada», mientras que EFSA concluyó en 2021 que no podía descartarse la genotoxicidad y que no podía establecerse una ingesta diaria segura. La UE retiró su autorización alimentaria en 2022, mientras que Codex y Estados Unidos siguen permitiendo usos alimentarios, por lo que E171 no tiene la misma situación científica ni legal en todos los mercados.",
+  "can_1": "Identificar E171, INS 171 y dióxido de titanio cuando se declaren explícitamente en la etiqueta.",
+  "can_2": "Explicar las distintas conclusiones de JECFA y EFSA y la situación legal específica de cada jurisdicción sin presentar la decisión de la UE como una prohibición mundial.",
+  "cannot_1": "Determinar si un producto contiene dióxido de titanio cuando la etiqueta no lo declara explícitamente.",
+  "cannot_2": "Determinar la cantidad o la distribución del tamaño de las partículas de dióxido de titanio a partir únicamente del nombre del ingrediente.",
   "sources": [
     {
-      "label": "Dictamen científico de la EFSA sobre la seguridad del dióxido de titanio (E 171) como aditivo alimentario (2021)",
+      "label": "JECFA — Titanium dioxide (INS 171), evaluation 2023",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2723"
+    },
+    {
+      "label": "Codex GSFA — Titanium dioxide (INS 171)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=184"
+    },
+    {
+      "label": "EFSA — Safety assessment of titanium dioxide (E171) as a food additive (2021)",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6585"
     },
     {
-      "label": "Reglamento (UE) 2022/63 de la Comisión por el que se modifican los anexos II y III del Reglamento (CE) n.º 1333/2008",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0063"
+      "label": "European Union — Regulation (EU) 2022/63",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32022R0063"
+    },
+    {
+      "label": "FDA — Titanium Dioxide as a Color Additive in Foods",
+      "url": "https://www.fda.gov/industry/color-additives/titanium-dioxide-color-additive-foods"
     }
   ],
   "title": "Dióxido de titanio",
-  "description": "Un pigmento mineral blanco inorgánico utilizado históricamente para blanquear y dar brillo a los alimentos."
+  "description": "Un colorante alimentario blanco insoluble con distintas evaluaciones de seguridad y normas de uso según la jurisdicción."
 }

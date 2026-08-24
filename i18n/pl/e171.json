@@ -2,27 +2,38 @@
   "name": "Dwutlenek tytanu",
   "e_code": "E171",
   "aliases": "E171, dwutlenek tytanu, dióxido de titanio, biel tytanowa, CI Pigment White 6, anataz, rutyl",
-  "module_icon": "mujer.png",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Nieorganiczny biały pigment mineralny historycznie używany do wybielania i rozjaśniania żywności.",
-  "why_botia": "BOTIA oznacza E171, ponieważ EFSA nie mogła wykluczyć genotoksyczności i nie uznała go już za bezpieczny jako dodatek do żywności. UE cofnęła jego zezwolenie w 2022 roku.",
-  "can_1": "Identyfikować E171 na zeskanowanych listach składników i wydawać ostrzeżenie o wysokim ryzyku zakazu.",
-  "can_2": "Wyjaśnij, dlaczego E171 utraciło autoryzację: nie można było wykluczyć genotoksyczności. Nagromadzenie nanocząstek w jajnikach nie było ustaloną podstawą zakazu.",
-  "cannot_1": "Identyfikować, czy produkt zakupiony poza UE nadal zawiera E171, chyba że jest to wskazane na opakowaniu.",
-  "cannot_2": "Wykryć dokładną proporcję nanocząsteczkowego (mniejszego niż 100 nm) dwutlenku tytanu obecnego w dodatku.",
+  "what_is": "Dwutlenek tytanu (INS 171 / E171) jest nierozpuszczalnym białym pigmentem stosowanym jako barwnik do wybielania lub rozjaśniania żywności. GSFA Codex nadal zawiera przepisy dotyczące stosowania INS 171 w żywności, natomiast status prawny różni się w zależności od jurysdykcji.",
+  "why_botia": "Dwutlenek tytanu do zastosowań spożywczych jest nierozpuszczalnym białym pigmentem złożonym z cząstek o różnej wielkości; wchłanianie z przewodu pokarmowego jest bardzo małe, ale wielkość cząstek ma znaczenie w ocenie bezpieczeństwa. JECFA ponownie oceniła INS 171 w 2023 r. i nie zidentyfikowała zagrożenia związanego z dietą, utrzymując ADI jako „nieokreślone”, podczas gdy EFSA w 2021 r. stwierdziła, że nie można wykluczyć genotoksyczności ani ustalić bezpiecznego dziennego pobrania. UE wycofała zezwolenie na stosowanie w żywności w 2022 r., podczas gdy Codex i Stany Zjednoczone nadal dopuszczają zastosowania spożywcze, więc E171 nie ma wszędzie takiego samego statusu naukowego ani prawnego.",
+  "can_1": "Rozpoznawać E171, INS 171 i dwutlenek tytanu, gdy są wyraźnie zadeklarowane na etykiecie.",
+  "can_2": "Wyjaśniać różne wnioski JECFA i EFSA oraz status prawny właściwy dla danej jurysdykcji bez przedstawiania decyzji UE jako światowego zakazu.",
+  "cannot_1": "Ustalić, czy produkt zawiera dwutlenek tytanu, gdy etykieta nie deklaruje go wyraźnie.",
+  "cannot_2": "Określić ilości lub rozkładu wielkości cząstek dwutlenku tytanu na podstawie samej nazwy składnika.",
   "sources": [
     {
-      "label": "Opinia naukowa EFSA dotycząca bezpieczeństwa dwutlenku tytanu (E 171) jako dodatku do żywności (2021)",
+      "label": "JECFA — Titanium dioxide (INS 171), evaluation 2023",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2723"
+    },
+    {
+      "label": "Codex GSFA — Titanium dioxide (INS 171)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=184"
+    },
+    {
+      "label": "EFSA — Safety assessment of titanium dioxide (E171) as a food additive (2021)",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6585"
     },
     {
-      "label": "Rozporządzenie Komisji (UE) 2022/63 zmieniające załączniki II i III do rozporządzenia (WE) nr 1333/2008",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0063"
+      "label": "European Union — Regulation (EU) 2022/63",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32022R0063"
+    },
+    {
+      "label": "FDA — Titanium Dioxide as a Color Additive in Foods",
+      "url": "https://www.fda.gov/industry/color-additives/titanium-dioxide-color-additive-foods"
     }
   ],
   "title": "Dwutlenek tytanu",
-  "description": "Nieorganiczny biały pigment mineralny historycznie używany do wybielania i rozjaśniania żywności."
+  "description": "Nierozpuszczalny biały barwnik spożywczy o różnych ocenach bezpieczeństwa i zasadach stosowania w zależności od jurysdykcji."
 }

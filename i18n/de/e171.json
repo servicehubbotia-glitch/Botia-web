@@ -2,27 +2,38 @@
   "name": "Titandioxid",
   "e_code": "E171",
   "aliases": "E171, Titandioxid, dióxido de titanio, Titanweiß, CI Pigment White 6, Anatas, Rutil",
-  "module_icon": "mujer.png",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Ein anorganisches weißes Mineralpigment, das historisch verwendet wurde, um Lebensmittel zu bleichen und aufzuhellen.",
-  "why_botia": "BOTIA kennzeichnet E171, weil die EFSA Genotoxizität nicht ausschließen konnte und es als Lebensmittelzusatzstoff nicht mehr als sicher betrachtete. Die EU entzog 2022 seine Zulassung.",
-  "can_1": "E171 in gescannten Zutatenlisten identifizieren und eine Hochrisiko-Verbotswarnung ausgeben.",
-  "can_2": "Nennen Sie, warum E171 die Zulassung verlor: Genotoxizität konnte nicht ausgeschlossen werden. Die Ansammlung von Nanopartikeln in den Eierstöcken war nicht die festgestellte Grundlage für das Verbot.",
-  "cannot_1": "Feststellen, ob ein außerhalb der EU gekauftes Produkt noch E171 verwendet, es sei denn, es ist auf der Verpackung angegeben.",
-  "cannot_2": "Den genauen Anteil an nanopartikulärem (kleiner als 100 nm) Titandioxid im Zusatzstoff nachweisen.",
+  "what_is": "Titandioxid (INS 171 / E171) ist ein unlösliches weißes Pigment, das als Farbstoff zum Aufhellen von Lebensmitteln verwendet wird. Die Codex-GSFA enthält weiterhin Bestimmungen für die Verwendung von INS 171 in Lebensmitteln, während der rechtliche Status je nach Rechtsraum unterschiedlich ist.",
+  "why_botia": "Titandioxid in Lebensmittelqualität ist ein unlösliches weißes Pigment aus Partikeln unterschiedlicher Größe; die Aufnahme aus dem Darm ist sehr gering, doch die Partikelgröße spielt bei der Sicherheitsbewertung eine Rolle. JECFA bewertete INS 171 im Jahr 2023 erneut und stellte keine erkennbare ernährungsbedingte Gefahr fest, wobei der ADI als „nicht spezifiziert“ beibehalten wurde, während EFSA 2021 zu dem Schluss kam, dass Genotoxizität nicht ausgeschlossen und keine sichere tägliche Aufnahme festgelegt werden könne. Die EU entzog 2022 die Zulassung für Lebensmittel, während Codex und die Vereinigten Staaten weiterhin Lebensmittelverwendungen zulassen, sodass E171 nicht überall denselben wissenschaftlichen oder rechtlichen Status hat.",
+  "can_1": "E171, INS 171 und Titandioxid erkennen, wenn sie ausdrücklich auf dem Etikett angegeben sind.",
+  "can_2": "Die unterschiedlichen Schlussfolgerungen von JECFA und EFSA sowie den rechtsraumspezifischen Status erklären, ohne die EU-Entscheidung als weltweites Verbot darzustellen.",
+  "cannot_1": "Feststellen, ob ein Produkt Titandioxid enthält, wenn es auf dem Etikett nicht ausdrücklich angegeben ist.",
+  "cannot_2": "Die Menge oder Partikelgrößenverteilung von Titandioxid allein aus dem Namen des Inhaltsstoffs bestimmen.",
   "sources": [
     {
-      "label": "EFSA-Wissenschaftliches Gutachten zur Sicherheit von Titandioxid (E 171) als Lebensmittelzusatzstoff (2021)",
+      "label": "JECFA — Titanium dioxide (INS 171), evaluation 2023",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2723"
+    },
+    {
+      "label": "Codex GSFA — Titanium dioxide (INS 171)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=184"
+    },
+    {
+      "label": "EFSA — Safety assessment of titanium dioxide (E171) as a food additive (2021)",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6585"
     },
     {
-      "label": "Verordnung (EU) 2022/63 der Kommission zur Änderung der Anhänge II und III der Verordnung (EG) Nr. 1333/2008",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0063"
+      "label": "European Union — Regulation (EU) 2022/63",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32022R0063"
+    },
+    {
+      "label": "FDA — Titanium Dioxide as a Color Additive in Foods",
+      "url": "https://www.fda.gov/industry/color-additives/titanium-dioxide-color-additive-foods"
     }
   ],
   "title": "Titandioxid",
-  "description": "Ein anorganisches weißes Mineralpigment, das historisch verwendet wurde, um Lebensmittel zu bleichen und aufzuhellen."
+  "description": "Ein unlöslicher weißer Lebensmittelfarbstoff mit unterschiedlichen Sicherheitsbewertungen und Verwendungsregeln je nach Rechtsraum."
 }

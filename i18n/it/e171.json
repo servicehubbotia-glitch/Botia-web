@@ -2,27 +2,38 @@
   "name": "Biossido di titanio",
   "e_code": "E171",
   "aliases": "E171, biossido di titanio, diossido di titanio, bianco di titanio, CI Pigment White 6, anatasio, rutilo",
-  "module_icon": "mujer.png",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Un pigmento minerale bianco inorganico storicamente utilizzato per sbiancare e schiarire gli alimenti.",
-  "why_botia": "BOTIA segnala l'E171 perché l'EFSA non ha potuto escludere la genotossicità e non lo ha più considerato sicuro come additivo alimentare. L'UE ne ha revocato l'autorizzazione nel 2022.",
-  "can_1": "Identifica l'E171 nelle liste degli ingredienti scansionate ed emetti un avviso di divieto ad alto rischio.",
-  "can_2": "Spiega perché l'E171 ha perso l'autorizzazione: la genotossicità non poteva essere esclusa. L'accumulo di nanoparticelle nelle ovaie non era la base consolidata per il divieto.",
-  "cannot_1": "Identifica se un prodotto acquistato fuori dall'UE utilizza ancora E171, salvo diversa indicazione sulla confezione.",
-  "cannot_2": "Rilevare la proporzione esatta di biossido di titanio di dimensioni nanometriche (inferiori a 100 nm) presente nell'additivo.",
+  "what_is": "Il biossido di titanio (INS 171 / E171) è un pigmento bianco insolubile utilizzato come colorante per sbiancare o rendere più chiari gli alimenti. La GSFA del Codex contiene ancora disposizioni per l’uso alimentare dell’INS 171, mentre lo status giuridico varia a seconda della giurisdizione.",
+  "why_botia": "Il biossido di titanio di grado alimentare è un pigmento bianco insolubile formato da particelle di dimensioni diverse; l’assorbimento intestinale è molto basso, ma la dimensione delle particelle è rilevante nella valutazione della sicurezza. Il JECFA ha rivalutato l’INS 171 nel 2023 e non ha individuato un pericolo alimentare, mantenendo la DGA «non specificata», mentre l’EFSA nel 2021 ha concluso che la genotossicità non poteva essere esclusa e che non era possibile stabilire un’assunzione giornaliera sicura. L’UE ha ritirato l’autorizzazione alimentare nel 2022, mentre il Codex e gli Stati Uniti consentono ancora usi alimentari, quindi E171 non ha ovunque lo stesso status scientifico o giuridico.",
+  "can_1": "Identificare E171, INS 171 e biossido di titanio quando sono dichiarati esplicitamente sull’etichetta.",
+  "can_2": "Spiegare le diverse conclusioni di JECFA ed EFSA e lo status giuridico specifico della giurisdizione senza presentare la decisione dell’UE come un divieto mondiale.",
+  "cannot_1": "Determinare se un prodotto contiene biossido di titanio quando l’etichetta non lo dichiara esplicitamente.",
+  "cannot_2": "Determinare la quantità o la distribuzione delle dimensioni delle particelle di biossido di titanio dal solo nome dell’ingrediente.",
   "sources": [
     {
-      "label": "Parere scientifico dell'EFSA sulla sicurezza del biossido di titanio (E 171) come additivo alimentare (2021)",
+      "label": "JECFA — Titanium dioxide (INS 171), evaluation 2023",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2723"
+    },
+    {
+      "label": "Codex GSFA — Titanium dioxide (INS 171)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=184"
+    },
+    {
+      "label": "EFSA — Safety assessment of titanium dioxide (E171) as a food additive (2021)",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6585"
     },
     {
-      "label": "Regolamento (UE) 2022/63 della Commissione recante modifica degli allegati II e III del regolamento (CE) n. 1333/2008",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0063"
+      "label": "European Union — Regulation (EU) 2022/63",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32022R0063"
+    },
+    {
+      "label": "FDA — Titanium Dioxide as a Color Additive in Foods",
+      "url": "https://www.fda.gov/industry/color-additives/titanium-dioxide-color-additive-foods"
     }
   ],
   "title": "Biossido di titanio",
-  "description": "Un pigmento minerale bianco inorganico storicamente utilizzato per sbiancare e ravvivare gli alimenti."
+  "description": "Un colorante alimentare bianco insolubile con valutazioni di sicurezza e regole d’uso diverse a seconda della giurisdizione."
 }

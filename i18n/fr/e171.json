@@ -2,27 +2,38 @@
   "name": "Dioxyde de titane",
   "e_code": "E171",
   "aliases": "E171, dioxyde de titane, dióxido de titanio, blanc de titane, CI Pigment White 6, anatase, rutile",
-  "module_icon": "mujer.png",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Un pigment minéral blanc inorganique historiquement utilisé pour blanchir et éclaircir les aliments.",
-  "why_botia": "BOTIA signale le E171 car l’EFSA n’a pas pu exclure une génotoxicité et ne le considérait plus comme sûr en tant qu’additif alimentaire. L’UE a retiré son autorisation en 2022.",
-  "can_1": "Identifier le E171 dans les listes d'ingrédients scannées et émettre un avertissement de risque élevé d'interdiction.",
-  "can_2": "Expliquez pourquoi l’E171 a perdu son autorisation : la génotoxicité n’a pas pu être exclue. L’accumulation de nanoparticules dans les ovaires n’était pas la base établie de l’interdiction.",
-  "cannot_1": "Identifier si un produit acheté en dehors de l'UE utilise encore du E171, sauf indication sur l'emballage.",
-  "cannot_2": "Détecter la proportion exacte de dioxyde de titane de taille nanoparticulaire (moins de 100 nm) présente dans l'additif.",
+  "what_is": "Le dioxyde de titane (INS 171 / E171) est un pigment blanc insoluble utilisé comme colorant pour blanchir ou éclaircir les aliments. La GSFA du Codex contient toujours des dispositions d’utilisation alimentaire pour l’INS 171, tandis que son statut juridique varie selon les juridictions.",
+  "why_botia": "Le dioxyde de titane de qualité alimentaire est un pigment blanc insoluble composé de particules de différentes tailles ; son absorption intestinale est très faible, mais la taille des particules intervient dans son évaluation de sécurité. Le JECFA a réévalué l’INS 171 en 2023 et n’a identifié aucun danger alimentaire, maintenant une DJA « non spécifiée », tandis que l’EFSA a conclu en 2021 qu’un risque de génotoxicité ne pouvait être exclu et qu’aucun apport quotidien sûr ne pouvait être établi. L’UE a retiré son autorisation alimentaire en 2022, tandis que le Codex et les États-Unis autorisent encore des usages alimentaires, de sorte que l’E171 n’a pas le même statut scientifique ou juridique partout.",
+  "can_1": "Identifier E171, INS 171 et le dioxyde de titane lorsqu’ils sont explicitement déclarés sur l’étiquette.",
+  "can_2": "Expliquer les conclusions différentes du JECFA et de l’EFSA ainsi que le statut juridique propre à chaque juridiction sans présenter la décision de l’UE comme une interdiction mondiale.",
+  "cannot_1": "Déterminer si un produit contient du dioxyde de titane lorsque l’étiquette ne le déclare pas explicitement.",
+  "cannot_2": "Déterminer la quantité ou la distribution de taille des particules de dioxyde de titane à partir du seul nom de l’ingrédient.",
   "sources": [
     {
-      "label": "Avis scientifique de l'EFSA sur la sécurité du dioxyde de titane (E 171) en tant qu'additif alimentaire (2021)",
+      "label": "JECFA — Titanium dioxide (INS 171), evaluation 2023",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2723"
+    },
+    {
+      "label": "Codex GSFA — Titanium dioxide (INS 171)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=184"
+    },
+    {
+      "label": "EFSA — Safety assessment of titanium dioxide (E171) as a food additive (2021)",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6585"
     },
     {
-      "label": "Règlement (UE) 2022/63 de la Commission modifiant les annexes II et III du règlement (CE) n° 1333/2008",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0063"
+      "label": "European Union — Regulation (EU) 2022/63",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32022R0063"
+    },
+    {
+      "label": "FDA — Titanium Dioxide as a Color Additive in Foods",
+      "url": "https://www.fda.gov/industry/color-additives/titanium-dioxide-color-additive-foods"
     }
   ],
   "title": "Dioxyde de titane",
-  "description": "Un pigment minéral blanc inorganique historiquement utilisé pour blanchir et éclaircir les aliments."
+  "description": "Un colorant alimentaire blanc insoluble dont les évaluations de sécurité et les règles d’utilisation diffèrent selon les juridictions."
 }

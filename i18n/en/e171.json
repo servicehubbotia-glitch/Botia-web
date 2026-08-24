@@ -2,27 +2,38 @@
   "name": "Titanium dioxide",
   "e_code": "E171",
   "aliases": "E171, titanium dioxide, dióxido de titanio, titanium white, CI Pigment White 6, anatase, rutile",
-  "module_icon": "mujer.png",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "An inorganic white mineral pigment historically used to whiten and brighten foods.",
-  "why_botia": "BOTIA flags E171 because EFSA could not rule out genotoxicity and no longer considered it safe as a food additive. The EU removed its authorisation in 2022.",
-  "can_1": "Identify E171 on scanned ingredient lists and issue a high-risk ban warning.",
-  "can_2": "Say why E171 lost authorisation: genotoxicity could not be ruled out. Ovarian nanoparticle accumulation was not the established basis for the ban.",
-  "cannot_1": "Identify whether a product purchased outside the EU still utilizes E171 unless indicated on the packaging.",
-  "cannot_2": "Detect the exact proportion of nanoparticle-sized (less than 100 nm) titanium dioxide present in the additive.",
+  "what_is": "Titanium dioxide (INS 171 / E171) is an insoluble white pigment used as a colour additive to whiten or brighten foods. Codex GSFA still contains food-use provisions for INS 171, while legal status varies by jurisdiction.",
+  "why_botia": "Food-grade titanium dioxide is an insoluble white pigment made of particles of different sizes; absorption from the gut is very low, but particle size matters in its safety assessment. JECFA reassessed INS 171 in 2023 and found no identifiable dietary hazard, keeping its ADI \"not specified\", while EFSA concluded in 2021 that genotoxicity could not be ruled out and no safe daily intake could be established. The EU removed its food authorisation in 2022, while Codex and the United States still allow food uses, so E171 does not have the same scientific or legal status everywhere.",
+  "can_1": "Identify E171, INS 171 and titanium dioxide when explicitly declared on the label.",
+  "can_2": "Explain the different JECFA and EFSA conclusions and the jurisdiction-specific legal status without presenting the EU decision as a worldwide ban.",
+  "cannot_1": "Determine whether a product contains titanium dioxide when the label does not explicitly declare it.",
+  "cannot_2": "Determine the amount or particle-size distribution of titanium dioxide from the ingredient name alone.",
   "sources": [
     {
-      "label": "EFSA Scientific Opinion on the safety of titanium dioxide (E 171) as a food additive (2021)",
+      "label": "JECFA — Titanium dioxide (INS 171), evaluation 2023",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2723"
+    },
+    {
+      "label": "Codex GSFA — Titanium dioxide (INS 171)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=184"
+    },
+    {
+      "label": "EFSA — Safety assessment of titanium dioxide (E171) as a food additive (2021)",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/6585"
     },
     {
-      "label": "Commission Regulation (EU) 2022/63 amending Annexes II and III to Regulation (EC) No 1333/2008",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0063"
+      "label": "European Union — Regulation (EU) 2022/63",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32022R0063"
+    },
+    {
+      "label": "FDA — Titanium Dioxide as a Color Additive in Foods",
+      "url": "https://www.fda.gov/industry/color-additives/titanium-dioxide-color-additive-foods"
     }
   ],
   "title": "Titanium dioxide",
-  "description": "An inorganic white mineral pigment historically used to whiten and brighten foods."
+  "description": "An insoluble white food colour with different safety assessments and food-use rules across jurisdictions."
 }
