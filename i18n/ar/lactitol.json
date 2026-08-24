@@ -1,45 +1,41 @@
 {
   "name": "لاكتيتول",
   "e_code": "E966",
-  "aliases": "E966, lactitol, lactitol monohydrate, lactit, lactobiosit, lactositol, lactitol monohidrato",
+  "aliases": "E966, INS 966, lactitol, lactitol monohydrate, lactit, lactobiosit, lactositol, lactitol monohidrato",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "بوليول يُنتج من اللاكتوز ويُستخدم بشكل رئيسي كمُحلٍّ سائب ومكوِّن لتحسين القوام.",
-  "why_botia": "تُشير BOTIA إلى ذلك لأن E966 هو مُحلٍّ بديل للسكر يمكنه أيضًا أن يُسهم في إضافة الحجم والملمس، مع استخدامات مسموح بها تُحدد حسب كل دولة.",
-  "can_1": "حدد E966 أو اللاكتيتول عندما يُذكر على الملصق.",
-  "can_2": "فعّل طبقات معلومات أرقام الإي، والمحليات، والمواد القوامية.",
-  "cannot_1": "حدد الكمية الموجودة ما لم يقدمها المصنع.",
-  "cannot_2": "التنبؤ بتحمل الفرد أو استنتاج التأثير الغذائي العام للمنتج من وجود اللاكتيتول وحده.",
+  "what_is": "اللاكتيتول (INS 966 / E966) بوليول يُنتج بهدرجة اللاكتوز. وهو مُحلٍّ حجمي ومكوّن لتحسين القوام: فعلى خلاف المُحليات شديدة القوة، يضيف كتلة فعلية إلى جانب الحلاوة؛ ووفق قواعد الوسم الغذائي في الاتحاد الأوروبي تُحسب البوليولات مثل اللاكتيتول بقيمة 2.4 كيلو كالوري/غرام.",
+  "why_botia": "يحل اللاكتيتول محل حلاوة السكر وحجمه معاً. لا يُمتص منه إلا القليل جداً: يصل معظمُه إلى القولون، حيث يجذب الماء ويتخمر — وهو تأثير أسموزي قوي بما يكفي لاستخدام اللاكتيتول أيضاً كدواء مُلين لعلاج الإمساك. خصصت JECFA له قيمة ADI «غير محددة»، بينما لا يفرض الاتحاد الأوروبي تحذيراً مُليناً إلا عندما يحتوي الغذاء على أكثر من 10% من البوليولات المضافة.",
+  "can_1": "اكتشاف E966 وINS 966 واللاكتيتول ولاكتيتول أحادي الهيدرات وlactit وlactobiosit وlactositol عندما تكون مذكورة صراحة.",
+  "can_2": "شرح وظيفته كمحلٍّ حجمي وامتصاصه المحدود وتأثيراته الأسموزية والقولونية واستخدامه الدوائي كملين وقيمة ADI لدى JECFA وحد الـ10% الأوروبي.",
+  "cannot_1": "تحديد كمية اللاكتيتول أو نسبة البوليولات المضافة من قائمة المكونات وحدها.",
+  "cannot_2": "تحديد ما إذا كان التحذير الملين مطلوباً قانونياً اعتماداً على اسم المكون وحده أو التنبؤ بالاستجابة الهضمية الفردية.",
   "sources": [
     {
-      "label": "EFSA — المُحلّيات",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Lactitol (INS 966), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3084"
     },
     {
-      "label": "FDA — الأسبارتام والمحليات الأخرى في الأغذية",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Lactitol toxicological monograph (FAS 18)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v18je10.htm"
     },
     {
-      "label": "Codex Alimentarius — قاعدة GSFA على الإنترنت",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "اللائحة (EC) رقم 1333/2008 بشأن المواد المضافة الغذائية",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "مواصفات EU للمواد المضافة الغذائية المصرح بها — اللائحة (EU) رقم 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — مواصفة المادة المضافة, INS 966",
+      "label": "Codex / FAO — Lactitol (INS 966)",
       "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=966"
+    },
+    {
+      "label": "FDA — Pizensy (lactitol), prescribing information",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/211281s001lbl.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "لاكتيتول",
-  "description": "بوليول يُنتج من اللاكتوز ويُستخدم بشكل رئيسي كمُحلٍّ سائب ومكوِّن لتحسين القوام."
+  "description": "اللاكتيتول (INS 966 / E966) بوليول حجمي يُمتص بشكل محدود ويُستخدم أيضاً كملين أسموزي؛ ويطبق التحذير الأوروبي فوق 10% من البوليولات المضافة."
 }

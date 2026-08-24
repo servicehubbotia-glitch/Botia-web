@@ -1,45 +1,41 @@
 {
   "name": "Lactitol",
   "e_code": "E966",
-  "aliases": "E966, lactitol, lactitol monohydrate, lactit, lactobiosit, lactositol, lactitol monohidrato",
+  "aliases": "E966, INS 966, lactitol, lactitol monohydrate, lactit, lactobiosit, lactositol, lactitol monohidrato",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Un poliol producido a partir de la lactosa y utilizado principalmente como edulcorante de volumen e ingrediente texturizante.",
-  "why_botia": "BOTIA lo señala porque el E966 es un edulcorante sustituto del azúcar que también puede aportar volumen y textura, con usos permitidos establecidos según la jurisdicción.",
-  "can_1": "Identifica E966 o lactitol cuando se declare en la etiqueta.",
-  "can_2": "Activa las capas de información de números E, edulcorantes y textura.",
-  "cannot_1": "Determina la cantidad presente a menos que el fabricante la proporcione.",
-  "cannot_2": "Predecir la tolerancia individual o inferir el efecto nutricional general del producto basándose únicamente en la presencia de lactitol.",
+  "what_is": "El lactitol (INS 966 / E966) es un poliol producido mediante la hidrogenación de la lactosa. Es un edulcorante de carga y un ingrediente texturizante: a diferencia de los edulcorantes intensos, aporta masa física además de dulzor; según las normas de etiquetado nutricional de la UE, los polioles como el lactitol cuentan como 2,4 kcal/g.",
+  "why_botia": "El lactitol sustituye tanto el dulzor como el volumen del azúcar. Se absorbe muy poco: la mayor parte llega al colon, donde atrae agua y es fermentada — un efecto osmótico suficientemente fuerte como para que el lactitol también se utilice como medicamento laxante para el estreñimiento. JECFA le asignó una IDA “no especificada”, mientras que en la UE el aviso laxante solo es obligatorio cuando el alimento contiene más del 10% de polioles añadidos.",
+  "can_1": "Detectar E966, INS 966, lactitol, lactitol monohidrato, lactit, lactobiosit y lactositol cuando estén declarados explícitamente.",
+  "can_2": "Explicar su función como edulcorante de carga, su absorción mínima, sus efectos osmóticos y colónicos, su uso medicinal como laxante, la IDA de JECFA y el umbral europeo del 10%.",
+  "cannot_1": "Determinar cuánto lactitol o qué porcentaje de polioles añadidos contiene el producto únicamente a partir de la lista de ingredientes.",
+  "cannot_2": "Decidir solo por el nombre del ingrediente si el aviso laxante es legalmente obligatorio ni predecir la respuesta digestiva individual.",
   "sources": [
     {
-      "label": "EFSA — Edulcorantes",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Lactitol (INS 966), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3084"
     },
     {
-      "label": "FDA — Aspartamo y otros edulcorantes en los alimentos",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Lactitol toxicological monograph (FAS 18)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v18je10.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA en línea",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Reglamento (EC) n.º 1333/2008 sobre aditivos alimentarios",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Especificaciones de la EU para aditivos alimentarios autorizados — Reglamento (EU) n.º 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Especificación del aditivo, INS 966",
+      "label": "Codex / FAO — Lactitol (INS 966)",
       "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=966"
+    },
+    {
+      "label": "FDA — Pizensy (lactitol), prescribing information",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/211281s001lbl.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Lactitol",
-  "description": "Un poliol producido a partir de la lactosa y utilizado principalmente como edulcorante de volumen e ingrediente texturizante."
+  "description": "El lactitol (INS 966 / E966) es un poliol de carga que se absorbe mínimamente y también se utiliza como laxante osmótico; el aviso europeo se aplica por encima del 10% de polioles añadidos."
 }

@@ -1,45 +1,41 @@
 {
   "name": "Laktitol",
   "e_code": "E966",
-  "aliases": "E966, lactitol, lactitol monohydrate, lactit, lactobiosit, lactositol, lactitol monohidrato",
+  "aliases": "E966, INS 966, lactitol, lactitol monohydrate, lactit, lactobiosit, lactositol, lactitol monohidrato",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Laktozdan üretilen ve başlıca hacim artırıcı tatlandırıcı ve doku verici bileşen olarak kullanılan bir poliol.",
-  "why_botia": "BOTIA bunu işaretler çünkü E966, şeker yerine kullanılan ve aynı zamanda hacim ve dokuya katkıda bulunabilen bir tatlandırıcıdır; izin verilen kullanımları yargı yetkisine göre belirlenir.",
-  "can_1": "E966 veya laktitol etikette beyan edildiğinde tespit edin.",
-  "can_2": "E-numarası, tatlandırıcı ve doku bilgisi katmanlarını tetikle.",
-  "cannot_1": "Üretici sağlamadığı sürece mevcut miktarı belirleyin.",
-  "cannot_2": "Bireysel toleransı tahmin edin veya ürünün genel besinsel etkisini yalnızca laktitolün varlığından çıkarın.",
+  "what_is": "Laktitol (INS 966 / E966), laktozun hidrojenlenmesiyle üretilen bir polioldür. Hacim sağlayan bir tatlandırıcı ve doku bileşenidir: yoğun tatlandırıcılardan farklı olarak tatlılığın yanında fiziksel kütle de sağlar; AB beslenme etiketleme kurallarına göre laktitol gibi polioller 2,4 kcal/g olarak hesaplanır.",
+  "why_botia": "Laktitol şekerin hem tatlılığını hem de hacmini yerine koyar. Çok az emilir: büyük kısmı kolona ulaşır, burada su çeker ve fermente edilir — bu ozmotik etki laktitolün kabızlık için laksatif ilaç olarak da kullanılmasına yetecek kadar belirgindir. JECFA “belirtilmemiş” ADI vermiştir; AB ise laksatif uyarıyı yalnızca gıdada %10'dan fazla eklenmiş poliol olduğunda zorunlu tutar.",
+  "can_1": "E966, INS 966, laktitol, laktitol monohidrat, lactit, lactobiosit ve lactositolü açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Hacim sağlayan tatlandırıcı işlevini, minimal emilimi, ozmotik ve kolonik etkileri, laksatif olarak tıbbi kullanımını, JECFA ADI değerini ve AB'nin %10 eşiğini açıklamak.",
+  "cannot_1": "Yalnızca içerik listesinden ne kadar laktitol veya yüzde kaç eklenmiş poliol bulunduğunu belirlemek.",
+  "cannot_2": "Sadece bileşen adına bakarak laksatif uyarının yasal olarak gerekli olup olmadığına karar vermek veya bireysel sindirim tepkisini öngörmek.",
   "sources": [
     {
-      "label": "EFSA — Tatlandırıcılar",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Lactitol (INS 966), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3084"
     },
     {
-      "label": "FDA — Gıdalardaki aspartam ve diğer tatlandırıcılar",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Lactitol toxicological monograph (FAS 18)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v18je10.htm"
     },
     {
-      "label": "Codex Alimentarius — Çevrimiçi GSFA",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Gıda katkı maddelerine ilişkin (EC) 1333/2008 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "İzin verilen gıda katkı maddelerine ilişkin EU spesifikasyonları — (EU) 231/2012 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Katkı maddesi spesifikasyonu, INS 966",
+      "label": "Codex / FAO — Lactitol (INS 966)",
       "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=966"
+    },
+    {
+      "label": "FDA — Pizensy (lactitol), prescribing information",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/211281s001lbl.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Laktitol",
-  "description": "Laktozdan üretilen ve başlıca hacim artırıcı tatlandırıcı ve doku verici bileşen olarak kullanılan bir poliol."
+  "description": "Laktitol (INS 966 / E966), minimal emilen ve ozmotik laksatif olarak da kullanılan hacim sağlayan bir polioldür; AB uyarısı %10'dan fazla eklenmiş poliolde uygulanır."
 }

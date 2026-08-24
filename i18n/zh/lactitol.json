@@ -1,45 +1,41 @@
 {
   "name": "乳糖醇",
   "e_code": "E966",
-  "aliases": "E966, lactitol, lactitol monohydrate, lactit, lactobiosit, lactositol, lactitol monohidrato",
+  "aliases": "E966, INS 966, lactitol, lactitol monohydrate, lactit, lactobiosit, lactositol, lactitol monohidrato",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "由乳糖制成的多元醇，主要用作填充型甜味剂和质构改良成分。",
-  "why_botia": "BOTIA标记它是因为E966是一种代糖甜味剂，也能增加体积和质地，其允许用途由各司法管辖区规定。",
-  "can_1": "识别标签上标注的E966或乳糖醇。",
-  "can_2": "触发E编号、甜味剂和质构信息图层。",
-  "cannot_1": "确定含量，除非制造商提供该信息。",
-  "cannot_2": "仅凭乳糖醇的存在，无法预测个体耐受性，也无法推断产品的整体营养效果。",
+  "what_is": "乳糖醇（INS 966 / E966）是一种由乳糖氢化制成的多元醇。它是一种填充型甜味剂和质构成分：与高强度甜味剂不同，它除了提供甜味，还提供实际质量；根据欧盟营养标签规则，乳糖醇等多元醇按2.4千卡/克计算。",
+  "why_botia": "乳糖醇同时替代糖的甜味和体积。它只有极少部分被吸收：大部分到达结肠，在那里吸引水分并被发酵——这种渗透作用足够明显，因此乳糖醇也被用作治疗便秘的泻药。JECFA 将其 ADI 规定为“无需限定”，而欧盟只有在食品含有超过10%的添加多元醇时才要求通便作用警示。",
+  "can_1": "识别明确标示的 E966、INS 966、乳糖醇、乳糖醇一水合物、lactit、lactobiosit 和 lactositol。",
+  "can_2": "解释其填充型甜味剂作用、极低吸收、渗透和结肠作用、作为泻药的医疗用途、JECFA ADI 以及欧盟10%的警示阈值。",
+  "cannot_1": "仅根据配料表确定乳糖醇的实际含量或添加多元醇的百分比。",
+  "cannot_2": "仅根据成分名称判断是否依法必须标注通便警示，或预测个人的消化反应。",
   "sources": [
     {
-      "label": "EFSA — 甜味剂",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Lactitol (INS 966), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3084"
     },
     {
-      "label": "FDA — 食品中的阿斯巴甜和其他甜味剂",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Lactitol toxicological monograph (FAS 18)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v18je10.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA 在线数据库",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "（EC）第1333/2008号食品添加剂法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "EU 获准食品添加剂规格——（EU）第231/2012号法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — 添加剂规格, INS 966",
+      "label": "Codex / FAO — Lactitol (INS 966)",
       "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=966"
+    },
+    {
+      "label": "FDA — Pizensy (lactitol), prescribing information",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/211281s001lbl.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "乳糖醇",
-  "description": "由乳糖制成的多元醇，主要用作填充型甜味剂和质构改良成分。"
+  "description": "乳糖醇（INS 966 / E966）是一种极少吸收并也用作渗透性泻药的填充型多元醇；欧盟警示适用于添加多元醇超过10%的食品。"
 }

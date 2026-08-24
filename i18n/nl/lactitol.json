@@ -1,45 +1,41 @@
 {
   "name": "Lactitol",
   "e_code": "E966",
-  "aliases": "E966, lactitol, lactitol monohydrate, lactit, lactobiosit, lactositol, lactitol monohidrato",
+  "aliases": "E966, INS 966, lactitol, lactitol monohydrate, lactit, lactobiosit, lactositol, lactitol monohidrato",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Een polyol geproduceerd uit lactose en voornamelijk gebruikt als bulkzoetstof en textuurverhogend ingrediënt.",
-  "why_botia": "BOTIA markeert het omdat E966 een suikervervangende zoetstof is die ook bulk en textuur kan bijdragen, met toegestane toepassingen die per rechtsgebied zijn vastgesteld.",
-  "can_1": "Identificeer E966 of lactitol wanneer dit op het etiket wordt vermeld.",
-  "can_2": "Activeer de informatielagen voor E-nummers, zoetstoffen en textuur.",
-  "cannot_1": "Bepaal de aanwezige hoeveelheid, tenzij de fabrikant deze vermeldt.",
-  "cannot_2": "Voorspel de individuele tolerantie of leid het algehele nutritionele effect van het product af op basis van alleen lactitol.",
+  "what_is": "Lactitol (INS 966 / E966) is een polyol die wordt gemaakt door lactose te hydrogeneren. Het is een bulkzoetstof en textuuringrediënt: anders dan intensieve zoetstoffen levert het naast zoetheid ook fysieke massa; volgens de EU-regels voor voedingswaardelabeling tellen polyolen zoals lactitol als 2,4 kcal/g.",
+  "why_botia": "Lactitol vervangt zowel de zoetheid als het volume van suiker. Het wordt maar heel weinig opgenomen: het grootste deel bereikt de dikke darm, waar het water aantrekt en wordt gefermenteerd — een osmotisch effect dat sterk genoeg is om lactitol ook als laxerend geneesmiddel tegen constipatie te gebruiken. JECFA kende een ADI “niet gespecificeerd” toe, terwijl de EU een laxerende waarschuwing alleen vereist wanneer een voedingsmiddel meer dan 10% toegevoegde polyolen bevat.",
+  "can_1": "E966, INS 966, lactitol, lactitolmonohydraat, lactit, lactobiosit en lactositol detecteren wanneer deze expliciet worden vermeld.",
+  "can_2": "De functie als bulkzoetstof, minimale absorptie, osmotische en coloneffecten, medicinaal gebruik als laxeermiddel, de JECFA-ADI en de EU-drempel van 10% uitleggen.",
+  "cannot_1": "Uit alleen de ingrediëntenlijst bepalen hoeveel lactitol of welk percentage toegevoegde polyolen aanwezig is.",
+  "cannot_2": "Alleen op basis van de ingrediëntnaam bepalen of een laxerende waarschuwing wettelijk vereist is of een individuele spijsverteringsreactie voorspellen.",
   "sources": [
     {
-      "label": "EFSA — Zoetstoffen",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Lactitol (INS 966), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3084"
     },
     {
-      "label": "FDA — Aspartaam en andere zoetstoffen in voedingsmiddelen",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Lactitol toxicological monograph (FAS 18)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v18je10.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
-    },
-    {
-      "label": "Verordening (EC) nr. 1333/2008 inzake levensmiddelenadditieven",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "EU-specificaties voor toegelaten levensmiddelenadditieven — Verordening (EU) nr. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Additievenspecificatie, INS 966",
+      "label": "Codex / FAO — Lactitol (INS 966)",
       "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=966"
+    },
+    {
+      "label": "FDA — Pizensy (lactitol), prescribing information",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/211281s001lbl.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Lactitol",
-  "description": "Een polyol geproduceerd uit lactose en voornamelijk gebruikt als bulkzoetstof en textuurverbeterend ingrediënt."
+  "description": "Lactitol (INS 966 / E966) is een bulkpolyol dat minimaal wordt opgenomen en ook als osmotisch laxeermiddel wordt gebruikt; de EU-waarschuwing geldt boven 10% toegevoegde polyolen."
 }
