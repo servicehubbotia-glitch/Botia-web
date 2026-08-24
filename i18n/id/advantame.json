@@ -1,44 +1,40 @@
 {
   "name": "Advantame",
   "e_code": "E969",
-  "aliases": "E969, advantame, Advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
+  "aliases": "E969, INS 969, advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Pemanis non-nutritif intensitas tinggi yang digunakan dalam jumlah kecil untuk memberikan rasa manis pada makanan dan minuman.",
-  "why_botia": "BOTIA menandainya karena E969 adalah pemanis intensitas tinggi yang penggunaan dan tingkat maksimumnya ditetapkan oleh sistem regulasi masing-masing.",
-  "can_1": "Identifikasi E969 atau advantame jika dinyatakan pada label.",
-  "can_2": "Aktifkan lapisan informasi nomor E dan pemanis.",
-  "cannot_1": "Tentukan jumlah yang digunakan hanya dari daftar bahan.",
-  "cannot_2": "Menentukan total paparan diet atau membuat penilaian medis atau nutrisi untuk pengguna individu.",
+  "what_is": "Advantame (INS 969 / E969) adalah pemanis intensitas tinggi yang disintesis menggunakan aspartam sebagai bahan awal. Codex mencantumkannya sebagai pemanis dan penguat rasa, dan tingkat kemanisannya sekitar 20.000 kali gula.",
+  "why_botia": "Advantame sekitar 20.000 kali lebih manis daripada gula, sehingga jumlah yang terdapat dalam pangan diukur dalam miligram — dan daftar bahan tidak menunjukkan berapa banyak yang digunakan. Zat ini berasal dari aspartam, tetapi JECFA menyimpulkan bahwa fenilalanin yang terbentuk dari penggunaan normal tidak signifikan bahkan bagi orang dengan fenilketonuria; aturan pelabelan Uni Eropa tidak menerapkan peringatan khusus fenilalanin yang diwajibkan untuk aspartam kepada advantame. JECFA menetapkan ADI 0–5 mg/kg berat badan.",
+  "can_1": "Mendeteksi E969, INS 969 dan advantame ketika dinyatakan secara eksplisit pada label.",
+  "can_2": "Menjelaskan tingkat kemanisannya yang sangat tinggi, penilaian JECFA mengenai fenilalanin, perbedaan pelabelan PKU dan asupan harian yang dapat diterima menurut JECFA.",
+  "cannot_1": "Menentukan berapa miligram advantame yang terdapat dalam produk hanya dari pernyataan bahan.",
+  "cannot_2": "Menentukan paparan harian total atau apakah suatu penggunaan memenuhi batas maksimum khusus suatu pasar tanpa mengetahui jumlah dan yurisdiksinya.",
   "sources": [
     {
-      "label": "EFSA — Pemanis",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Advantame, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6181"
     },
     {
-      "label": "FDA — Aspartam dan pemanis lain dalam pangan",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "WHO/JECFA — Advantame toxicological monograph, FAS 68",
+      "url": "https://iris.who.int/bitstream/handle/10665/99070/9789241660686_eng.pdf?sequence=1"
     },
     {
-      "label": "Codex Alimentarius — GSFA daring",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Advantame (INS 969)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=416"
     },
     {
-      "label": "Peraturan (EC) No. 1333/2008 tentang bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 497/2014, Advantame E969",
+      "url": "https://eur-lex.europa.eu/eli/reg/2014/497/oj/eng"
     },
     {
-      "label": "Spesifikasi EU untuk bahan tambahan pangan yang diizinkan — Peraturan (EU) No. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Spesifikasi bahan tambahan, INS 969",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=969"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III labelling requirements",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R1169-20250401"
     }
   ],
   "title": "Advantame",
-  "description": "Pemanis non-nutritif intensitas tinggi yang digunakan dalam jumlah kecil untuk memberikan rasa manis pada makanan dan minuman."
+  "description": "Advantame (INS 969 / E969) adalah pemanis intensitas tinggi sekitar 20.000 kali lebih manis daripada gula; JECFA menetapkan ADI 0–5 mg/kg berat badan."
 }

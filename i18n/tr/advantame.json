@@ -1,44 +1,40 @@
 {
   "name": "Advantame",
   "e_code": "E969",
-  "aliases": "E969, advantame, Advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
+  "aliases": "E969, INS 969, advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Yüksek yoğunluklu, besleyici olmayan ve gıda ile içeceklerde küçük miktarlarda tatlılık sağlamak için kullanılan bir tatlandırıcı.",
-  "why_botia": "BOTIA bunu işaretler çünkü E969, izin verilen kullanımları ve maksimum seviyeleri bireysel düzenleyici sistemler tarafından belirlenen yüksek yoğunluklu bir tatlandırıcıdır.",
-  "can_1": "Etikette beyan edildiğinde E969 veya advantam'ı tanımlayın.",
-  "can_2": "E-numarası ve tatlandırıcı bilgi katmanlarını tetikle.",
-  "cannot_1": "İçerik listesinden tek başına kullanılan miktarı belirleyin.",
-  "cannot_2": "Bir bireysel kullanıcı için toplam diyet maruziyetini belirlemek veya tıbbi ya da beslenmeye ilişkin bir yargıda bulunmak.",
+  "what_is": "Advantam (INS 969 / E969), başlangıç maddesi olarak aspartam kullanılarak sentezlenen yüksek yoğunluklu bir tatlandırıcıdır. Codex onu tatlandırıcı ve lezzet artırıcı olarak sınıflandırır; şekerden yaklaşık 20.000 kat daha tatlıdır.",
+  "why_botia": "Advantam şekerden yaklaşık 20.000 kat daha tatlıdır, bu nedenle gıdada bulunan miktar miligramlarla ölçülür — ancak içerik listesi ne kadar kullanıldığını göstermez. Aspartamdan türetilir, ancak JECFA normal kullanım sonucu oluşan fenilalaninin fenilketonürili kişiler için bile önemsiz olduğu sonucuna varmıştır; AB etiketleme kuralları aspartam için gerekli olan özel fenilalanin uyarısını advantama uygulamaz. JECFA 0–5 mg/kg vücut ağırlığı ADI belirlemiştir.",
+  "can_1": "E969, INS 969 ve advantamı etikette açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Son derece yüksek tatlandırma gücünü, JECFA'nın fenilalanin değerlendirmesini, PKU etiketleme farkını ve JECFA kabul edilebilir günlük alımını açıklamak.",
+  "cannot_1": "Yalnızca içerik beyanından kaç miligram advantam bulunduğunu belirlemek.",
+  "cannot_2": "Miktar ve yargı bölgesi bilinmeden toplam günlük maruziyeti veya belirli bir kullanımın pazara özgü maksimum düzeye uyup uymadığını belirlemek.",
   "sources": [
     {
-      "label": "EFSA — Tatlandırıcılar",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Advantame, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6181"
     },
     {
-      "label": "FDA — Gıdalardaki aspartam ve diğer tatlandırıcılar",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "WHO/JECFA — Advantame toxicological monograph, FAS 68",
+      "url": "https://iris.who.int/bitstream/handle/10665/99070/9789241660686_eng.pdf?sequence=1"
     },
     {
-      "label": "Codex Alimentarius — Çevrimiçi GSFA",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Advantame (INS 969)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=416"
     },
     {
-      "label": "Gıda katkı maddelerine ilişkin (EC) 1333/2008 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 497/2014, Advantame E969",
+      "url": "https://eur-lex.europa.eu/eli/reg/2014/497/oj/eng"
     },
     {
-      "label": "İzin verilen gıda katkı maddelerine ilişkin EU spesifikasyonları — (EU) 231/2012 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Katkı maddesi spesifikasyonu, INS 969",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=969"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III labelling requirements",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R1169-20250401"
     }
   ],
   "title": "Advantame",
-  "description": "Yüksek yoğunluklu, besleyici olmayan; gıda ve içeceklerde az miktarda kullanılarak tatlılık sağlayan tatlandırıcı."
+  "description": "Advantam (INS 969 / E969), şekerden yaklaşık 20.000 kat daha tatlı yüksek yoğunluklu bir tatlandırıcıdır; JECFA 0–5 mg/kg vücut ağırlığı ADI belirlemiştir."
 }

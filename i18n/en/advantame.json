@@ -1,44 +1,40 @@
 {
   "name": "Advantame",
   "e_code": "E969",
-  "aliases": "E969, advantame, Advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
+  "aliases": "E969, INS 969, advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "A high-intensity non-nutritive sweetener used in small quantities to provide sweetness in foods and beverages.",
-  "why_botia": "BOTIA flags it because E969 is a high-intensity sweetener whose permitted uses and maximum levels are established by individual regulatory systems.",
-  "can_1": "Identify E969 or advantame when declared on the label.",
-  "can_2": "Trigger the E-number and sweetener information layers.",
-  "cannot_1": "Determine the quantity used from the ingredient list alone.",
-  "cannot_2": "Determine total dietary exposure or make a medical or nutritional judgement for an individual user.",
+  "what_is": "Advantame (INS 969 / E969) is a high-intensity sweetener synthesised using aspartame as a starting material. Codex lists it as a sweetener and flavour enhancer, and it is around 20,000 times sweeter than sugar.",
+  "why_botia": "Advantame is around 20,000 times sweeter than sugar, so what ends up in food is measured in milligrams — and the ingredient list cannot show how much was used. It is derived from aspartame, but JECFA found that the phenylalanine formed from normal use is insignificant even for people with phenylketonuria; EU labelling rules do not apply the specific phenylalanine warning required for aspartame to advantame. JECFA set an ADI of 0–5 mg/kg body weight.",
+  "can_1": "Detect E969, INS 969 and advantame when explicitly declared on the label.",
+  "can_2": "Explain its extreme sweetness, the JECFA phenylalanine assessment, the PKU labelling distinction and the JECFA acceptable daily intake.",
+  "cannot_1": "Determine how many milligrams of advantame are present from the ingredient declaration alone.",
+  "cannot_2": "Determine total daily exposure or whether a particular use complies with a market-specific maximum level without knowing the amount and jurisdiction.",
   "sources": [
     {
-      "label": "EFSA — Sweeteners",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Advantame, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6181"
     },
     {
-      "label": "FDA — Aspartame and Other Sweeteners in Food",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "WHO/JECFA — Advantame toxicological monograph, FAS 68",
+      "url": "https://iris.who.int/bitstream/handle/10665/99070/9789241660686_eng.pdf?sequence=1"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Advantame (INS 969)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=416"
     },
     {
-      "label": "Regulation (EC) No 1333/2008 on food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 497/2014, Advantame E969",
+      "url": "https://eur-lex.europa.eu/eli/reg/2014/497/oj/eng"
     },
     {
-      "label": "EU specifications for authorised food additives — Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — additive specification, INS 969",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=969"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III labelling requirements",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R1169-20250401"
     }
   ],
   "title": "Advantame",
-  "description": "A high-intensity non-nutritive sweetener used in small quantities to provide sweetness in foods and beverages."
+  "description": "Advantame (INS 969 / E969) is a high-intensity sweetener around 20,000 times sweeter than sugar; JECFA set an ADI of 0–5 mg/kg body weight."
 }

@@ -1,44 +1,40 @@
 {
   "name": "Advantame",
   "e_code": "E969",
-  "aliases": "E969, advantame, Advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
+  "aliases": "E969, INS 969, advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Wysokointensywny niesłodzący środek słodzący stosowany w małych ilościach w celu zapewnienia słodyczy w żywności i napojach.",
-  "why_botia": "BOTIA oznacza to, ponieważ E969 to intensywny słodzik, którego dozwolone zastosowania i maksymalne poziomy są określone przez poszczególne systemy regulacyjne.",
-  "can_1": "Zidentyfikuj E969 lub advantam, gdy jest zadeklarowany na etykiecie.",
-  "can_2": "Wyświetl warstwy informacji o numerach E i substancjach słodzących.",
-  "cannot_1": "Określ ilość użytego składnika na podstawie samej listy składników.",
-  "cannot_2": "Określenie całkowitego narażenia dietetycznego lub wydanie oceny medycznej bądź żywieniowej dla indywidualnego użytkownika.",
+  "what_is": "Adwantam (INS 969 / E969) jest intensywnym środkiem słodzącym syntetyzowanym z wykorzystaniem aspartamu jako materiału wyjściowego. Codex klasyfikuje go jako środek słodzący i wzmacniacz smaku; jest około 20 000 razy słodszy od cukru.",
+  "why_botia": "Adwantam jest około 20 000 razy słodszy od cukru, dlatego ilość obecna w żywności jest mierzona w miligramach — a lista składników nie pokazuje, ile go użyto. Jest pochodną aspartamu, ale JECFA uznała, że ilość fenyloalaniny powstająca przy normalnym stosowaniu jest nieistotna nawet dla osób z fenyloketonurią; przepisy UE dotyczące etykietowania nie stosują do adwantamu szczególnego ostrzeżenia o fenyloalaninie wymaganego dla aspartamu. JECFA ustaliła ADI na poziomie 0–5 mg/kg masy ciała.",
+  "can_1": "Wykrywać E969, INS 969 i adwantam, gdy są wyraźnie zadeklarowane na etykiecie.",
+  "can_2": "Wyjaśniać jego ogromną siłę słodzącą, ocenę JECFA dotyczącą fenyloalaniny, różnicę w oznakowaniu dotyczącym fenyloketonurii oraz dopuszczalne dzienne spożycie JECFA.",
+  "cannot_1": "Określić liczby miligramów adwantamu na podstawie samej deklaracji składników.",
+  "cannot_2": "Określić całkowitego dziennego narażenia ani zgodności konkretnego zastosowania z limitem właściwym dla danego rynku bez znajomości ilości i jurysdykcji.",
   "sources": [
     {
-      "label": "EFSA — Substancje słodzące",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Advantame, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6181"
     },
     {
-      "label": "FDA — Aspartam i inne substancje słodzące w żywności",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "WHO/JECFA — Advantame toxicological monograph, FAS 68",
+      "url": "https://iris.who.int/bitstream/handle/10665/99070/9789241660686_eng.pdf?sequence=1"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Advantame (INS 969)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=416"
     },
     {
-      "label": "Rozporządzenie (EC) nr 1333/2008 w sprawie dodatków do żywności",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 497/2014, Advantame E969",
+      "url": "https://eur-lex.europa.eu/eli/reg/2014/497/oj/eng"
     },
     {
-      "label": "Specyfikacje EU dotyczące dopuszczonych dodatków do żywności — Rozporządzenie (EU) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Specyfikacja dodatku, INS 969",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=969"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III labelling requirements",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R1169-20250401"
     }
   ],
   "title": "Advantame",
-  "description": "Wysokointensywny niesłodzący środek słodzący stosowany w małych ilościach w celu zapewnienia słodkiego smaku w żywności i napojach."
+  "description": "Adwantam (INS 969 / E969) jest intensywnym środkiem słodzącym około 20 000 razy słodszym od cukru; JECFA ustaliła ADI 0–5 mg/kg masy ciała."
 }

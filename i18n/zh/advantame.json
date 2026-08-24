@@ -1,44 +1,40 @@
 {
   "name": "阿德万甜",
   "e_code": "E969",
-  "aliases": "E969, advantame, Advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
+  "aliases": "E969, INS 969, advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "高强度非营养性甜味剂，少量使用即可为食品和饮料提供甜味。",
-  "why_botia": "BOTIA标记它是因为E969是一种高强度甜味剂，其允许用途和最大使用量由各监管体系分别规定。",
-  "can_1": "识别标签上标注的E969或阿司帕坦-甲酯。",
-  "can_2": "触发E编号和甜味剂信息图层。",
-  "cannot_1": "仅根据配料表确定用量。",
-  "cannot_2": "确定个体用户的总膳食暴露量或做出医学或营养判断。",
+  "what_is": "阿德万甜（INS 969 / E969）是一种以阿斯巴甜为起始原料合成的高强度甜味剂。Codex 将其列为甜味剂和增味剂，其甜度约为糖的20,000倍。",
+  "why_botia": "阿德万甜的甜度约为糖的20,000倍，因此食品中的使用量以毫克计——而配料表无法显示实际用了多少。它源自阿斯巴甜，但 JECFA 认为正常使用时形成的苯丙氨酸即使对苯丙酮尿症患者也微不足道；欧盟标签规则并未把阿斯巴甜所要求的特定苯丙氨酸警示应用于阿德万甜。JECFA 将 ADI 设为每公斤体重0–5毫克。",
+  "can_1": "识别标签上明确标示的 E969、INS 969 和阿德万甜。",
+  "can_2": "解释其极高的甜味强度、JECFA 对苯丙氨酸的评估、苯丙酮尿症标签要求的区别以及 JECFA 的每日允许摄入量。",
+  "cannot_1": "仅根据配料声明确定产品中含有多少毫克阿德万甜。",
+  "cannot_2": "在不知道具体用量和司法管辖区的情况下确定每日总暴露量或某一用途是否符合特定市场的最高限量。",
   "sources": [
     {
-      "label": "EFSA — 甜味剂",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Advantame, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6181"
     },
     {
-      "label": "FDA — 食品中的阿斯巴甜和其他甜味剂",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "WHO/JECFA — Advantame toxicological monograph, FAS 68",
+      "url": "https://iris.who.int/bitstream/handle/10665/99070/9789241660686_eng.pdf?sequence=1"
     },
     {
-      "label": "Codex Alimentarius — GSFA 在线数据库",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Advantame (INS 969)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=416"
     },
     {
-      "label": "（EC）第1333/2008号食品添加剂法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 497/2014, Advantame E969",
+      "url": "https://eur-lex.europa.eu/eli/reg/2014/497/oj/eng"
     },
     {
-      "label": "EU 获准食品添加剂规格——（EU）第231/2012号法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — 添加剂规格, INS 969",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=969"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III labelling requirements",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R1169-20250401"
     }
   ],
   "title": "阿德万甜",
-  "description": "高强度非营养性甜味剂，少量使用即可为食品和饮料提供甜味。"
+  "description": "阿德万甜（INS 969 / E969）是一种甜度约为糖20,000倍的高强度甜味剂；JECFA 设定的 ADI 为每公斤体重0–5毫克。"
 }

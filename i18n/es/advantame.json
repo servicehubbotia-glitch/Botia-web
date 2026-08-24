@@ -1,44 +1,40 @@
 {
   "name": "Advantame",
   "e_code": "E969",
-  "aliases": "E969, advantame, Advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
+  "aliases": "E969, INS 969, advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Edulcorante no nutritivo de alta intensidad utilizado en pequeñas cantidades para proporcionar dulzor en alimentos y bebidas.",
-  "why_botia": "BOTIA lo marca porque E969 es un edulcorante de alta intensidad cuyos usos permitidos y niveles máximos están establecidos por sistemas regulatorios individuales.",
-  "can_1": "Identifica E969 o advantame cuando se declare en la etiqueta.",
-  "can_2": "Activa las capas de información de números E y edulcorantes.",
-  "cannot_1": "Determina la cantidad utilizada solo a partir de la lista de ingredientes.",
-  "cannot_2": "Determinar la exposición dietética total o emitir un juicio médico o nutricional para un usuario individual.",
+  "what_is": "El advantame (INS 969 / E969) es un edulcorante de alta intensidad sintetizado utilizando aspartamo como material de partida. Codex lo clasifica como edulcorante y potenciador del sabor, y es unas 20.000 veces más dulce que el azúcar.",
+  "why_botia": "El advantame es unas 20.000 veces más dulce que el azúcar, por lo que lo que termina en el alimento se mide en miligramos — y la lista de ingredientes no permite saber cuánto se utilizó. Deriva del aspartamo, pero JECFA concluyó que la fenilalanina formada con el uso normal es insignificante incluso para las personas con fenilcetonuria; las normas de etiquetado de la UE no aplican al advantame el aviso específico sobre fenilalanina exigido para el aspartamo. JECFA estableció una IDA de 0–5 mg/kg de peso corporal.",
+  "can_1": "Detectar E969, INS 969 y advantame cuando estén declarados explícitamente en la etiqueta.",
+  "can_2": "Explicar su enorme poder edulcorante, la evaluación de JECFA sobre la fenilalanina, la diferencia de etiquetado para la fenilcetonuria y la ingesta diaria admisible de JECFA.",
+  "cannot_1": "Determinar cuántos miligramos de advantame contiene el producto únicamente a partir de la declaración de ingredientes.",
+  "cannot_2": "Determinar la exposición diaria total ni si un uso concreto cumple un nivel máximo específico de un mercado sin conocer la cantidad y la jurisdicción.",
   "sources": [
     {
-      "label": "EFSA — Edulcorantes",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Advantame, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6181"
     },
     {
-      "label": "FDA — Aspartamo y otros edulcorantes en los alimentos",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "WHO/JECFA — Advantame toxicological monograph, FAS 68",
+      "url": "https://iris.who.int/bitstream/handle/10665/99070/9789241660686_eng.pdf?sequence=1"
     },
     {
-      "label": "Codex Alimentarius — GSFA en línea",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Advantame (INS 969)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=416"
     },
     {
-      "label": "Reglamento (EC) n.º 1333/2008 sobre aditivos alimentarios",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 497/2014, Advantame E969",
+      "url": "https://eur-lex.europa.eu/eli/reg/2014/497/oj/eng"
     },
     {
-      "label": "Especificaciones de la EU para aditivos alimentarios autorizados — Reglamento (EU) n.º 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Especificación del aditivo, INS 969",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=969"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III labelling requirements",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R1169-20250401"
     }
   ],
   "title": "Advantame",
-  "description": "Edulcorante no nutritivo de alta intensidad utilizado en pequeñas cantidades para aportar dulzor en alimentos y bebidas."
+  "description": "El advantame (INS 969 / E969) es un edulcorante de alta intensidad unas 20.000 veces más dulce que el azúcar; JECFA estableció una IDA de 0–5 mg/kg de peso corporal."
 }
