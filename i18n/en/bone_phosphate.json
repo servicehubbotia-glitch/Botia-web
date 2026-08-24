@@ -8,22 +8,26 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "A mineral food additive prepared from animal bone material and identified by JECFA as edible bone phosphate, INS 542.",
-  "why_botia": "BOTIA flags INS 542 because its name indicates an animal-derived ingredient and it can also perform technological functions such as emulsifying, humectant or sequestrant roles. A generic declaration does not identify the animal species.",
-  "can_1": "Detect INS 542, edible bone phosphate and bone phosphate when explicitly declared.",
-  "can_2": "Trigger animal-origin, texture and numbering context for the declared ingredient.",
-  "cannot_1": "Identify the source animal when the label says only bone phosphate.",
-  "cannot_2": "Determine processing details, religious suitability or certification status from the generic ingredient name.",
+  "what_is": "A mineral mixture of calcium phosphates obtained by grinding animal bones previously treated with hot water and steam under pressure. JECFA identifies it as INS 542.",
+  "why_botia": "Edible bone phosphate is obtained from animal bones and provides calcium and phosphorus. If the label says only “bone phosphate”, it does not identify which animal species it came from. Its phosphorus also counts in the same total as other phosphates: JECFA applies a group MTDI of 70 mg of phosphorus per kg body weight per day for phosphorus from all sources, rather than a separate limit for each additive. In 2026 JECFA retained the group approach for phosphates based on nephrocalcinosis and nephropathy observed in rats at high exposures.",
+  "can_1": "Detect INS 542, edible bone phosphate, bone phosphate and related declared names.",
+  "can_2": "Explain its animal-bone origin and that its phosphorus contributes to JECFA's group phosphorus intake limit.",
+  "cannot_1": "Identify the animal species when the label says only “bone phosphate”.",
+  "cannot_2": "Determine from the ingredient list how much phosphorus INS 542 contributes or calculate the person's total daily phosphorus intake.",
   "sources": [
     {
-      "label": "JECFA — Edible Bone Phosphate (INS 542)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/185"
+      "label": "JECFA — Bone Phosphate, INS 542, Chemical 1044 — group MTDI 70 mg/kg bw as phosphorus from all sources",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1044"
     },
     {
-      "label": "FAO/JECFA — food additive specifications database and compendium",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/en/"
+      "label": "FAO/JECFA — Bone Phosphate specification: animal bones, calcium and phosphorus composition",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-057.pdf"
+    },
+    {
+      "label": "JECFA 102 (2026) — phosphate group MTDI and renal endpoints",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4023"
     }
   ],
   "title": "Edible Bone Phosphate",
-  "description": "A mineral food additive prepared from animal bone material and identified by JECFA as edible bone phosphate, INS 542."
+  "description": "Edible bone phosphate INS 542 is a mixture of calcium phosphates obtained from animal bones. Its phosphorus is included in JECFA's group intake limit for phosphorus from all sources."
 }

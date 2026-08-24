@@ -1,21 +1,25 @@
 {
   "name": "Phosphate d'os comestible",
   "title": "Phosphate d'os comestible",
-  "description": "Additif alimentaire minéral préparé à partir de matières osseuses d'origine animale et répertorié par l'JECFAe sous la dénomination « phosphate d'os comestible », INS 542.",
-  "what_is": "Additif alimentaire minéral préparé à partir de matières osseuses d'origine animale et répertorié par l'JECFAe sous la dénomination « phosphate d'os comestible », INS 542.",
-  "why_botia": "BOTIA Le produit «INS» 542 est signalé car son nom fait référence à un ingrédient d'origine animale et qu'il peut également remplir des fonctions technologiques telles que celles d'émulsifiant, d'humectant ou de séquestrant. Une dénomination générique ne permet pas d'identifier l'espèce animale concernée.",
-  "can_1": "Détecter l'INSe 542, le phosphate d'os comestible et le phosphate d'os lorsqu'ils sont explicitement déclarés.",
-  "can_2": "Indiquer l'origine animale, la texture et le contexte de numérotation de l'ingrédient déclaré.",
-  "cannot_1": "Identifier l'animal d'origine lorsque l'étiquette mentionne uniquement « phosphate d'os ».",
-  "cannot_2": "Déterminer les modalités de transformation, la conformité aux exigences religieuses ou le statut de certification à partir du nom générique de l'ingrédient.",
+  "description": "Le phosphate d’os comestible INS 542 est un mélange de phosphates de calcium obtenu à partir d’os animaux. Son phosphore entre dans la limite collective du JECFA pour le phosphore provenant de toutes les sources.",
+  "what_is": "Un mélange minéral de phosphates de calcium obtenu en broyant des os animaux préalablement traités à l’eau chaude et à la vapeur sous pression. Le JECFA l’identifie comme INS 542.",
+  "why_botia": "Le phosphate d’os comestible est obtenu à partir d’os animaux et apporte du calcium et du phosphore. Si l’étiquette indique seulement « phosphate d’os », elle ne précise pas l’espèce animale. Son phosphore entre dans la même somme que les autres phosphates : le JECFA applique une DMTI collective de 70 mg de phosphore par kg de poids corporel et par jour pour le phosphore provenant de toutes les sources, et non une limite séparée pour chaque additif. En 2026, le JECFA a maintenu cette approche collective pour les phosphates sur la base de néphrocalcinose et de néphropathie observées chez le rat à fortes expositions.",
+  "can_1": "Identifier INS 542, phosphate d’os comestible, phosphate d’os et les dénominations apparentées déclarées.",
+  "can_2": "Expliquer son origine dans les os animaux et que son phosphore contribue à la limite collective d’apport en phosphore du JECFA.",
+  "cannot_1": "Identifier l’espèce animale lorsque l’étiquette indique seulement « phosphate d’os ».",
+  "cannot_2": "Déterminer à partir de la liste d’ingrédients la quantité de phosphore apportée par INS 542 ou calculer l’apport quotidien total en phosphore.",
   "sources": [
     {
-      "label": "JECFA — Phosphate d'os comestible (n° INS 542)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/185"
+      "label": "JECFA — Bone Phosphate, INS 542, Chemical 1044 — group MTDI 70 mg/kg bw as phosphorus from all sources",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1044"
     },
     {
-      "label": "FAO/JECFA — base de données et recueil des spécifications relatives aux additifs alimentaires",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/en/"
+      "label": "FAO/JECFA — Bone Phosphate specification: animal bones, calcium and phosphorus composition",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-057.pdf"
+    },
+    {
+      "label": "JECFA 102 (2026) — phosphate group MTDI and renal endpoints",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4023"
     }
   ],
   "e_code": "INS 542",

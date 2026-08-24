@@ -1,21 +1,25 @@
 {
   "name": "Essbares Knochenphosphat",
   "title": "Essbares Knochenphosphat",
-  "description": "Ein mineralischer Lebensmittelzusatzstoff, der aus tierischem Knochenmaterial hergestellt wird und in der „JECFA“ als „essbares Knochenphosphat“ (INS. 542) aufgeführt ist.",
-  "what_is": "Ein mineralischer Lebensmittelzusatzstoff, der aus tierischem Knochenmaterial hergestellt wird und in der „JECFA“ als „essbares Knochenphosphat“ (INS. 542) aufgeführt ist.",
-  "why_botia": "BOTIA kennzeichnet INS 542, da sein Name auf einen tierischen Inhaltsstoff hinweist und er zudem technologische Funktionen wie Emulgierung, Feuchthaltemittel oder Sequestriermittel erfüllen kann. Eine allgemeine Angabe gibt keinen Aufschluss über die Tierart.",
-  "can_1": "INS-542, essbares Knochenphosphat und Knochenphosphat nachweisen, sofern diese ausdrücklich angegeben sind.",
-  "can_2": "Löst den Kontext für tierische Herkunft, Textur und Nummerierung der angegebenen Zutat aus.",
-  "cannot_1": "Ermitteln Sie das Herkunftstier, wenn auf dem Etikett lediglich „Knochenphosphat“ angegeben ist.",
-  "cannot_2": "Ermitteln Sie anhand der allgemeinen Bezeichnung der Zutat Details zur Verarbeitung, die religiöse Eignung oder den Zertifizierungsstatus.",
+  "description": "Essbares Knochenphosphat INS 542 ist eine Mischung aus Calciumphosphaten aus Tierknochen. Sein Phosphor zählt zum JECFA-Gruppengrenzwert für Phosphor aus allen Quellen.",
+  "what_is": "Eine mineralische Mischung aus Calciumphosphaten, die durch Mahlen von Tierknochen gewonnen wird, die zuvor mit heißem Wasser und Dampf unter Druck behandelt wurden. JECFA führt sie als INS 542.",
+  "why_botia": "Essbares Knochenphosphat wird aus Tierknochen gewonnen und liefert Calcium und Phosphor. Steht auf dem Etikett nur „Knochenphosphat“, wird die Tierart nicht genannt. Sein Phosphor zählt außerdem zur gleichen Gesamtsumme wie andere Phosphate: JECFA verwendet einen Gruppen-MTDI von 70 mg Phosphor pro kg Körpergewicht und Tag für Phosphor aus allen Quellen und keinen separaten Grenzwert für jeden Zusatzstoff. 2026 behielt JECFA den Gruppenansatz für Phosphate auf Grundlage von Nephrokalzinose und Nephropathie bei, die bei Ratten unter hohen Expositionen beobachtet wurden.",
+  "can_1": "INS 542, essbares Knochenphosphat, Knochenphosphat und verwandte deklarierte Namen erkennen.",
+  "can_2": "Die Herkunft aus Tierknochen erklären und darauf hinweisen, dass sein Phosphor zum JECFA-Gruppengrenzwert beiträgt.",
+  "cannot_1": "Die Tierart bestimmen, wenn auf dem Etikett nur „Knochenphosphat“ steht.",
+  "cannot_2": "Aus der Zutatenliste bestimmen, wie viel Phosphor INS 542 beiträgt, oder die gesamte tägliche Phosphoraufnahme berechnen.",
   "sources": [
     {
-      "label": "JECFA — Essbares Knochenphosphat (INS 542)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/185"
+      "label": "JECFA — Bone Phosphate, INS 542, Chemical 1044 — group MTDI 70 mg/kg bw as phosphorus from all sources",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1044"
     },
     {
-      "label": "FAO/JECFA – Datenbank und Kompendium zu Spezifikationen für Lebensmittelzusatzstoffe",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/en/"
+      "label": "FAO/JECFA — Bone Phosphate specification: animal bones, calcium and phosphorus composition",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-057.pdf"
+    },
+    {
+      "label": "JECFA 102 (2026) — phosphate group MTDI and renal endpoints",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4023"
     }
   ],
   "e_code": "INS 542",

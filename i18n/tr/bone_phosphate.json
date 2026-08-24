@@ -1,21 +1,25 @@
 {
   "name": "Yenilebilir Kemik Fosfatı",
   "title": "Yenilebilir Kemik Fosfatı",
-  "description": "Hayvan kemiği malzemesinden hazırlanan ve JECFA adresinde “yenilebilir kemik fosfat” (INS542) olarak tanımlanan bir mineral gıda katkı maddesi.",
-  "what_is": "Hayvan kemiği malzemesinden hazırlanan ve JECFA adresinde “yenilebilir kemik fosfat” (INS 542) olarak tanımlanan bir mineral gıda katkı maddesi.",
-  "why_botia": "BOTIA INS'ın 542 numaralı maddesi, adından da anlaşılacağı üzere hayvansal kaynaklı bir bileşen olduğunu ve aynı zamanda emülgatör, nemlendirici veya sekestran gibi teknolojik işlevler de görebileceğini belirtir. Genel bir beyan, hayvan türünü tanımlamaz.",
-  "can_1": "INS542, gıda amaçlı kemik fosfatı ve açıkça belirtildiği durumlarda kemik fosfatını tespit edin.",
-  "can_2": "Beyan edilen bileşen için hayvansal köken, doku ve numaralandırma bağlamını belirleyin.",
-  "cannot_1": "Etikette sadece “kemik fosfat” yazıyorsa, kaynağını oluşturan hayvanı belirleyin.",
-  "cannot_2": "Genel içerik adından işleme ayrıntılarını, dini uygunluğu veya sertifikasyon durumunu belirleyin.",
+  "description": "Yenilebilir kemik fosfatı INS 542, hayvan kemiklerinden elde edilen kalsiyum fosfat karışımıdır. İçerdiği fosfor, JECFA'nın tüm kaynaklardan gelen fosfor için grup limitine dahildir.",
+  "what_is": "Sıcak su ve basınçlı buharla işlem görmüş hayvan kemiklerinin öğütülmesiyle elde edilen mineral bir kalsiyum fosfat karışımıdır. JECFA bunu INS 542 olarak tanımlar.",
+  "why_botia": "Yenilebilir kemik fosfatı hayvan kemiklerinden elde edilir ve kalsiyum ile fosfor sağlar. Etikette yalnızca “kemik fosfatı” yazıyorsa hangi hayvan türünden geldiği belirtilmez. İçerdiği fosfor diğer fosfatlarla aynı toplam içinde sayılır: JECFA, her katkı maddesi için ayrı bir limit yerine tüm kaynaklardan gelen fosfor için günde kg vücut ağırlığı başına 70 mg fosforluk grup MTDI uygular. JECFA 2026'da fosfatlar için grup yaklaşımını, yüksek maruziyetlerde sıçanlarda görülen nefrokalsinoz ve nefropatiye dayanarak sürdürdü.",
+  "can_1": "INS 542, yenilebilir kemik fosfatı, kemik fosfatı ve ilişkili beyan adlarını tespit etmek.",
+  "can_2": "Hayvan kemiği kökenini ve içerdiği fosforun JECFA grup limitine katkıda bulunduğunu açıklamak.",
+  "cannot_1": "Etikette yalnızca “kemik fosfatı” yazıyorsa hayvan türünü belirlemek.",
+  "cannot_2": "İçerik listesinden INS 542'nin ne kadar fosfor sağladığını veya kişinin toplam günlük fosfor alımını hesaplamak.",
   "sources": [
     {
-      "label": "JECFA — Gıda Amaçlı Kemik Fosfatı (INS 542)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/185"
+      "label": "JECFA — Bone Phosphate, INS 542, Chemical 1044 — group MTDI 70 mg/kg bw as phosphorus from all sources",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1044"
     },
     {
-      "label": "FAO/JECFA — gıda katkı maddeleri spesifikasyonları veritabanı ve özet kitabı",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/en/"
+      "label": "FAO/JECFA — Bone Phosphate specification: animal bones, calcium and phosphorus composition",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-057.pdf"
+    },
+    {
+      "label": "JECFA 102 (2026) — phosphate group MTDI and renal endpoints",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4023"
     }
   ],
   "e_code": "INS 542",
