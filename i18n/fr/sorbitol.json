@@ -1,28 +1,41 @@
 {
   "name": "Sorbitol",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, sorbitol, sirop de sorbitol, D-glucitol, sirop de D-glucitol, sorbitol, jarabe de sorbitol",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, sirop de sorbitol, sirop de D-glucitol, jarabe de sorbitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Un polyol édulcorant hypocalorique utilisé comme agent sucrant et de charge.",
-  "why_botia": "Il le signale car il peut induire des effets laxatifs à fortes doses et sert de substitut industriel du sucre dans les produits ultra-transformés.",
-  "can_1": "Identifier E420 et signaler l'avertissement obligatoire de l'UE 'une consommation excessive peut produire des effets laxatifs' si présent au-dessus de 10 %.",
-  "can_2": "Déclencher la couche édulcorant et notifier ses propriétés à faible indice glycémique.",
-  "cannot_1": "Vérifier le pourcentage exact de sorbitol ajouté s'il est inférieur au seuil d'avertissement de 10 %.",
-  "cannot_2": "Déterminer si le sorbitol a été fabriqué à partir d'amidon de maïs ou d'amidon de blé.",
+  "what_is": "Le sorbitol (INS 420(i)) et le sirop de sorbitol (INS 420(ii)) sont des polyols utilisés comme édulcorants de charge, humectants et agents de texture. Le sorbitol est également présent naturellement dans de nombreux fruits, notamment les pruneaux, les poires, les pommes et les pêches.",
+  "why_botia": "Le sorbitol remplace à la fois la douceur et le volume du sucre. Il est également naturellement présent dans des fruits comme les pruneaux, les poires, les pommes et les pêches — et sa forte concentration dans les pruneaux est l'une des raisons de leur effet laxatif. Il est peu absorbé : le reste attire l'eau dans l'intestin et est fermenté, de sorte que des quantités plus importantes ramollissent les selles. Le JECFA lui a attribué une DJA « non spécifiée ».",
+  "can_1": "Détecter E420, E420(i), E420(ii), INS 420(i), INS 420(ii), sorbitol, sirop de sorbitol et D-glucitol lorsqu'ils sont explicitement déclarés.",
+  "can_2": "Expliquer que le sorbitol apporte douceur et volume, qu'il existe naturellement dans des fruits courants et qu'il peut avoir un effet laxatif parce que son absorption est incomplète.",
+  "cannot_1": "Déterminer la quantité de sorbitol présente à partir de la seule liste des ingrédients.",
+  "cannot_2": "Quantifier la part de sorbitol naturellement apportée par les ingrédients fruitiers par rapport au sorbitol ajouté séparément, ou prédire la réponse digestive individuelle.",
   "sources": [
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "Règlement (UE) n° 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "Sorbitol",
-  "description": "Un polyol édulcorant hypocalorique utilisé comme agent sucrant et de charge."
+  "description": "Le sorbitol est un polyol de charge naturellement présent dans les pruneaux, les poires, les pommes et les pêches ; son absorption incomplète aide à expliquer son effet laxatif."
 }

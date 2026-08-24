@@ -1,28 +1,41 @@
 {
   "name": "Sorbitol",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, sorbitol, sorbitolstroop, D-glucitol, D-glucitolsiroop, sorbitol, sorbitolstroop",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, sorbitolstroop, D-glucitolsiroop",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Een caloriearme polyol-suikeralcohol die wordt gebruikt als zoetstof en vulmiddel.",
-  "why_botia": "Het wordt gemarkeerd omdat het bij hoge doses laxerende effecten kan veroorzaken en dient als industriële suikervervanger in ultrabewerkte producten.",
-  "can_1": "Identificeer E420 en markeer de verplichte EU-waarschuwing 'overmatige consumptie kan een laxerend effect hebben' indien aanwezig boven 10%.",
-  "can_2": "Activeer de zoetstoflaag en meld de lage glycemische eigenschappen.",
-  "cannot_1": "Controleer het exacte percentage toegevoegd sorbitol als het onder de waarschuwingsdrempel van 10% ligt.",
-  "cannot_2": "Bepaal of het sorbitol is vervaardigd uit maïszetmeel of tarwezetmeel.",
+  "what_is": "Sorbitol (INS 420(i)) en sorbitolstroop (INS 420(ii)) zijn polyolen die worden gebruikt als bulkzoetstoffen, bevochtigingsmiddelen en textuuringrediënten. Sorbitol komt ook van nature voor in veel fruit, waaronder gedroogde pruimen, peren, appels en perziken.",
+  "why_botia": "Sorbitol vervangt zowel de zoetheid als het volume van suiker. Het komt ook van nature voor in fruit zoals gedroogde pruimen, peren, appels en perziken — en de hoge concentratie in gedroogde pruimen is een van de redenen waarom ze een laxerende werking kunnen hebben. Slechts een deel wordt opgenomen: de rest trekt water de darm in en wordt gefermenteerd, waardoor grotere hoeveelheden de ontlasting losser maken. JECFA kende een ADI “niet gespecificeerd” toe.",
+  "can_1": "E420, E420(i), E420(ii), INS 420(i), INS 420(ii), sorbitol, sorbitolstroop en D-glucitol detecteren wanneer deze expliciet worden vermeld.",
+  "can_2": "Uitleggen dat sorbitol zoetheid en volume levert, van nature voorkomt in algemeen gegeten fruit en door onvolledige opname een laxerende werking kan hebben.",
+  "cannot_1": "Uit alleen de ingrediëntenlijst bepalen hoeveel sorbitol aanwezig is.",
+  "cannot_2": "Kwantificeren hoeveel sorbitol van nature uit fruitingrediënten komt tegenover afzonderlijk toegevoegd sorbitol, of een individuele spijsverteringsreactie voorspellen.",
   "sources": [
     {
-      "label": "Verordening (EU) nr. 231/2012 van de Commissie",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "Verordening (EU) nr. 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "Sorbitol",
-  "description": "Een caloriearme polyol-suikeralcohol die wordt gebruikt als zoetstof en vulmiddel."
+  "description": "Sorbitol is een bulkpolyol dat van nature voorkomt in gedroogde pruimen, peren, appels en perziken; onvolledige opname helpt de laxerende werking te verklaren."
 }

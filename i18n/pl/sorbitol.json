@@ -1,28 +1,41 @@
 {
   "name": "Sorbitol",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, sorbitol, syrop sorbitolowy, D-glucitol, syrop D-glucitolowy, sorbitol, jarabe de sorbitol",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, syrop sorbitolowy, syrop D-glucitolowy, jarabe de sorbitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Niskokaloryczny alkohol poliolowy stosowany jako słodzik i substancja wypełniająca.",
-  "why_botia": "Oznacza go, ponieważ w dużych dawkach może wywoływać działanie przeczyszczające i służy jako przemysłowy zamiennik cukru w produktach wysoko przetworzonych.",
-  "can_1": "Zidentyfikuj E420 i oznacz obowiązkowe ostrzeżenie UE „nadmierne spożycie może wywołać efekt przeczyszczający”, jeśli występuje powyżej 10%.",
-  "can_2": "Wywołaj warstwę słodzika i poinformuj o jego niskim indeksie glikemicznym.",
-  "cannot_1": "Zweryfikuj dokładny procent dodanego sorbitolu, jeśli jest poniżej progu ostrzegawczego 10%.",
-  "cannot_2": "Określ, czy sorbitol został wyprodukowany ze skrobi kukurydzianej czy pszennej.",
+  "what_is": "Sorbitol (INS 420(i)) i syrop sorbitolowy (INS 420(ii)) są poliolami stosowanymi jako substancje słodzące nadające objętość, substancje utrzymujące wilgoć i składniki teksturotwórcze. Sorbitol występuje również naturalnie w wielu owocach, w tym w suszonych śliwkach, gruszkach, jabłkach i brzoskwiniach.",
+  "why_botia": "Sorbitol zastępuje zarówno słodycz, jak i objętość cukru. Występuje również naturalnie w owocach takich jak suszone śliwki, gruszki, jabłka i brzoskwinie — a jego wysokie stężenie w suszonych śliwkach jest jednym z powodów ich działania przeczyszczającego. Wchłania się tylko częściowo: reszta przyciąga wodę do jelita i ulega fermentacji, dlatego większe ilości rozluźniają stolec. JECFA przyznała ADI „nieokreślone”.",
+  "can_1": "Wykrywać E420, E420(i), E420(ii), INS 420(i), INS 420(ii), sorbitol, syrop sorbitolowy i D-glucitol, gdy są wyraźnie zadeklarowane.",
+  "can_2": "Wyjaśniać, że sorbitol zapewnia słodycz i objętość, występuje naturalnie w popularnych owocach i może działać przeczyszczająco z powodu niepełnego wchłaniania.",
+  "cannot_1": "Określić ilości sorbitolu na podstawie samej listy składników.",
+  "cannot_2": "Określić ilościowo, ile sorbitolu pochodzi naturalnie ze składników owocowych, a ile dodano oddzielnie, ani przewidzieć indywidualnej reakcji trawiennej.",
   "sources": [
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "Rozporządzenie (UE) nr 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "Sorbitol",
-  "description": "Niskokaloryczny alkohol poliolowy stosowany jako słodzik i substancja wypełniająca."
+  "description": "Sorbitol jest poliolem nadającym objętość, naturalnie obecnym w suszonych śliwkach, gruszkach, jabłkach i brzoskwiniach; niepełne wchłanianie pomaga wyjaśnić jego działanie przeczyszczające."
 }

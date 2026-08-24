@@ -1,28 +1,41 @@
 {
   "name": "Sorbitol",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, sorbitol, sorbitol şurubu, D-glusitol, D-glusitol şurubu, sorbitol, sorbitol şurubu",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, sorbitol şurubu, D-glusitol, D-glusitol şurubu",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Düşük kalorili bir poliol şeker alkolü olup tatlandırıcı ve hacim arttırıcı olarak kullanılır.",
-  "why_botia": "Yüksek dozlarda müshil etkisi yapabileceği ve ultra işlenmiş ürünlerde endüstriyel şeker ikamesi olarak kullanıldığı için işaretler.",
-  "can_1": "E420'yi tanımlar ve %10'un üzerinde bulunması durumunda zorunlu AB uyarısı olan 'aşırı tüketim müshil etkisi yapabilir' ifadesini işaretler.",
-  "can_2": "Tatlandırıcı katmanını tetikler ve düşük glisemik özelliklerini bildirir.",
-  "cannot_1": "%10 uyarı eşiğinin altında kalıyorsa eklenen sorbitolün tam yüzdesini doğrulayamaz.",
-  "cannot_2": "Sorbitolün mısır nişastasından mı yoksa buğday nişastasından mı üretildiğini belirleyemez.",
+  "what_is": "Sorbitol (INS 420(i)) ve sorbitol şurubu (INS 420(ii)), hacim sağlayan tatlandırıcı, nem tutucu ve doku bileşeni olarak kullanılan poliollerdir. Sorbitol ayrıca kuru erik, armut, elma ve şeftali dahil birçok meyvede doğal olarak bulunur.",
+  "why_botia": "Sorbitol şekerin hem tatlılığını hem de hacmini yerine koyar. Kuru erik, armut, elma ve şeftali gibi meyvelerde de doğal olarak bulunur — kuru erikteki yüksek konsantrasyonu, laksatif etkisinin nedenlerinden biridir. Yalnızca bir kısmı emilir: geri kalanı bağırsağa su çeker ve fermente edilir, bu nedenle daha yüksek miktarlar dışkıyı yumuşatır. JECFA “belirtilmemiş” ADI vermiştir.",
+  "can_1": "E420, E420(i), E420(ii), INS 420(i), INS 420(ii), sorbitol, sorbitol şurubu ve D-glucitolü açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Sorbitolün tatlılık ve hacim sağladığını, yaygın meyvelerde doğal olarak bulunduğunu ve eksik emilim nedeniyle laksatif etki gösterebildiğini açıklamak.",
+  "cannot_1": "Yalnızca içerik listesinden ne kadar sorbitol bulunduğunu belirlemek.",
+  "cannot_2": "Meyve bileşenlerinden doğal olarak gelen sorbitol ile ayrıca eklenen sorbitol miktarını belirlemek veya bireysel sindirim tepkisini öngörmek.",
   "sources": [
     {
-      "label": "Komisyon Tüzüğü (AB) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "Tüzük (AB) No 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "Sorbitol",
-  "description": "Düşük kalorili bir poliol şeker alkolü olup tatlandırıcı ve hacim arttırıcı olarak kullanılır."
+  "description": "Sorbitol, kuru erik, armut, elma ve şeftalide doğal olarak bulunan hacim sağlayan bir polioldür; eksik emilim laksatif etkisini açıklamaya yardımcı olur."
 }

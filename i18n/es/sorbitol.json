@@ -1,28 +1,41 @@
 {
   "name": "Sorbitol",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, sorbitol, jarabe de sorbitol, D-glucitol, jarabe de D-glucitol, sorbitol, jarabe de sorbitol",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, jarabe de sorbitol, jarabe de D-glucitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Un alcohol de azúcar poliol bajo en calorías utilizado como edulcorante y agente de carga.",
-  "why_botia": "Lo señala porque puede inducir efectos laxantes en dosis altas y sirve como sustituto industrial del azúcar en productos ultraprocesados.",
-  "can_1": "Identificar E420 y señalar la advertencia obligatoria de la UE 'el consumo excesivo puede producir efectos laxantes' si está presente por encima del 10%.",
-  "can_2": "Activar la capa de edulcorantes y notificar sus propiedades de bajo índice glucémico.",
-  "cannot_1": "Verificar el porcentaje exacto de sorbitol añadido si está por debajo del umbral de advertencia del 10%.",
-  "cannot_2": "Determinar si el sorbitol fue fabricado a partir de almidón de maíz o almidón de trigo.",
+  "what_is": "El sorbitol (INS 420(i)) y el jarabe de sorbitol (INS 420(ii)) son polioles utilizados como edulcorantes de carga, humectantes e ingredientes texturizantes. El sorbitol también se encuentra de forma natural en muchas frutas, entre ellas ciruelas pasas, peras, manzanas y melocotones.",
+  "why_botia": "El sorbitol sustituye tanto el dulzor como el volumen del azúcar. También está presente de forma natural en frutas como ciruelas pasas, peras, manzanas y melocotones — y su elevada concentración en las ciruelas pasas es una de las razones por las que pueden tener efecto laxante. Se absorbe poco: el resto atrae agua al intestino y es fermentado, por lo que cantidades mayores aflojan las heces. JECFA le asignó una IDA “no especificada”.",
+  "can_1": "Detectar E420, E420(i), E420(ii), INS 420(i), INS 420(ii), sorbitol, jarabe de sorbitol y D-glucitol cuando estén declarados explícitamente.",
+  "can_2": "Explicar que el sorbitol aporta dulzor y volumen, aparece de forma natural en frutas comunes y puede tener efecto laxante porque su absorción es incompleta.",
+  "cannot_1": "Determinar cuánto sorbitol contiene el producto únicamente a partir de la lista de ingredientes.",
+  "cannot_2": "Cuantificar cuánto sorbitol procede naturalmente de ingredientes de fruta frente al sorbitol añadido por separado, ni predecir la respuesta digestiva individual.",
   "sources": [
     {
-      "label": "Reglamento (UE) nº 231/2012 de la Comisión",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "Reglamento (UE) nº 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "Sorbitol",
-  "description": "Un alcohol de azúcar poliol bajo en calorías utilizado como edulcorante y agente de carga."
+  "description": "El sorbitol es un poliol de carga presente de forma natural en ciruelas pasas, peras, manzanas y melocotones; su absorción incompleta ayuda a explicar su efecto laxante."
 }

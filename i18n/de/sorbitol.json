@@ -1,28 +1,41 @@
 {
   "name": "Sorbit",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, Sorbit, Sorbit-Sirup, D-Glucitol, D-Glucitol-Sirup, Sorbitol, Sorbitol-Sirup",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, Sorbit, Sorbit-Sirup, D-Glucitol-Sirup, Sorbitol-Sirup",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Ein kalorienarmer Polyol-Zuckeralkohol, der als Süßungsmittel und Füllstoff verwendet wird.",
-  "why_botia": "Es wird markiert, da es in hohen Dosen abführend wirken kann und als industrieller Zuckerersatz in stark verarbeiteten Produkten dient.",
-  "can_1": "E420 identifizieren und die obligatorische EU-Warnung 'Kann bei übermäßigem Verzehr abführend wirken' kennzeichnen, wenn der Gehalt über 10 % liegt.",
-  "can_2": "Die Süßungsmittel-Ebene auslösen und auf die niedrig-glykämischen Eigenschaften hinweisen.",
-  "cannot_1": "Den genauen prozentualen Anteil von zugesetztem Sorbit bestätigen, wenn dieser unter dem Warnschwellenwert von 10 % liegt.",
-  "cannot_2": "Feststellen, ob der Sorbit aus Maisstärke oder Weizenstärke hergestellt wurde.",
+  "what_is": "Sorbit (INS 420(i)) und Sorbitsirup (INS 420(ii)) sind Polyole, die als Füllsüßstoffe, Feuchthaltemittel und Texturgeber eingesetzt werden. Sorbit kommt außerdem natürlicherweise in vielen Früchten vor, darunter Trockenpflaumen, Birnen, Äpfel und Pfirsiche.",
+  "why_botia": "Sorbit ersetzt sowohl die Süße als auch das Volumen von Zucker. Es kommt außerdem natürlicherweise in Früchten wie Trockenpflaumen, Birnen, Äpfeln und Pfirsichen vor — und seine hohe Konzentration in Trockenpflaumen ist ein Grund für deren laxierende Wirkung. Es wird nur teilweise aufgenommen: Der Rest zieht Wasser in den Darm und wird fermentiert, sodass größere Mengen den Stuhl lockern können. JECFA vergab einen ADI „nicht spezifiziert“.",
+  "can_1": "E420, E420(i), E420(ii), INS 420(i), INS 420(ii), Sorbit, Sorbitsirup und D-Glucitol erkennen, wenn sie ausdrücklich deklariert sind.",
+  "can_2": "Erklären, dass Sorbit Süße und Volumen liefert, natürlicherweise in verbreiteten Früchten vorkommt und wegen seiner unvollständigen Aufnahme laxierend wirken kann.",
+  "cannot_1": "Allein aus der Zutatenliste bestimmen, wie viel Sorbit enthalten ist.",
+  "cannot_2": "Quantifizieren, wie viel Sorbit natürlicherweise aus Fruchtzutaten stammt und wie viel separat zugesetzt wurde, oder eine individuelle Verdauungsreaktion vorhersagen.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "Verordnung (EU) Nr. 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "Sorbit",
-  "description": "Ein kalorienarmer Polyol-Zuckeralkohol, der als Süßungsmittel und Füllstoff verwendet wird."
+  "description": "Sorbit ist ein Füllpolyol, das natürlicherweise in Trockenpflaumen, Birnen, Äpfeln und Pfirsichen vorkommt; seine unvollständige Aufnahme hilft, die laxierende Wirkung zu erklären."
 }

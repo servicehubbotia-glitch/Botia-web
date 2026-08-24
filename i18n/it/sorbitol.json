@@ -1,28 +1,41 @@
 {
   "name": "Sorbitolo",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, sorbitolo, sciroppo di sorbitolo, D-glucitolo, sciroppo di D-glucitolo, sorbitolo, sciroppo di sorbitolo",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, sorbitolo, sciroppo di sorbitolo, D-glucitolo, sciroppo di D-glucitolo",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Un alcol poliolo a basso contenuto calorico utilizzato come dolcificante e agente di carica.",
-  "why_botia": "Lo segnala perché può indurre effetti lassativi a dosi elevate e funge da sostituto dello zucchero industriale nei prodotti ultra-processati.",
-  "can_1": "Identificare l'E420 e segnalare l'avvertenza obbligatoria dell'UE \"un consumo eccessivo può avere effetti lassativi\" se presente oltre il 10%.",
-  "can_2": "Attiva lo strato di dolcificante e segnala le sue proprietà a basso indice glicemico.",
-  "cannot_1": "Verificare la percentuale esatta di sorbitolo aggiunto se è inferiore alla soglia di avvertenza del 10%.",
-  "cannot_2": "Determinare se il sorbitolo è stato prodotto da amido di mais o amido di frumento.",
+  "what_is": "Il sorbitolo (INS 420(i)) e lo sciroppo di sorbitolo (INS 420(ii)) sono polioli utilizzati come edulcoranti di massa, umettanti e ingredienti testurizzanti. Il sorbitolo è presente naturalmente anche in molti frutti, tra cui prugne secche, pere, mele e pesche.",
+  "why_botia": "Il sorbitolo sostituisce sia la dolcezza sia il volume dello zucchero. È presente naturalmente anche in frutti come prugne secche, pere, mele e pesche — e la sua elevata concentrazione nelle prugne secche è una delle ragioni del loro effetto lassativo. Viene assorbito solo in parte: il resto richiama acqua nell'intestino e viene fermentato, quindi quantità maggiori rendono le feci più molli. Il JECFA ha assegnato una DGA “non specificata”.",
+  "can_1": "Rilevare E420, E420(i), E420(ii), INS 420(i), INS 420(ii), sorbitolo, sciroppo di sorbitolo e D-glucitol quando dichiarati esplicitamente.",
+  "can_2": "Spiegare che il sorbitolo fornisce dolcezza e volume, è presente naturalmente in frutti comuni e può avere un effetto lassativo perché viene assorbito solo in parte.",
+  "cannot_1": "Determinare la quantità di sorbitolo presente dalla sola lista degli ingredienti.",
+  "cannot_2": "Quantificare quanto sorbitolo proviene naturalmente dagli ingredienti di frutta rispetto a quello aggiunto separatamente o prevedere la risposta digestiva individuale.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "Regolamento (UE) n. 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "Sorbitolo",
-  "description": "Un alcol poliolo a basso contenuto calorico utilizzato come dolcificante e agente di carica."
+  "description": "Il sorbitolo è un poliolo di massa presente naturalmente in prugne secche, pere, mele e pesche; il suo assorbimento incompleto aiuta a spiegare l'effetto lassativo."
 }

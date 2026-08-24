@@ -1,28 +1,41 @@
 {
   "name": "Sorbitol",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, sorbitol, sirop de sorbitol, D-glucitol, sirop de D-glucitol, sorbitol, sirop de sorbitol",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, sirop de sorbitol, sirop de D-glucitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Un poliol alcool zaharat cu conținut scăzut de calorii, utilizat ca îndulcitor și agent de umplere.",
-  "why_botia": "Îl semnalează deoarece poate induce efecte laxative la doze mari și servește ca înlocuitor industrial al zahărului în produse ultra-procesate.",
-  "can_1": "Identificați E420 și semnalați avertismentul obligatoriu al UE 'consumul excesiv poate produce efecte laxative' dacă este prezent peste 10%.",
-  "can_2": "Activați stratul de îndulcitor și notificați proprietățile sale glicemice scăzute.",
-  "cannot_1": "Verificați procentul exact de sorbitol adăugat dacă este sub pragul de avertizare de 10%.",
-  "cannot_2": "Determinați dacă sorbitolul a fost fabricat din amidon de porumb sau amidon de grâu.",
+  "what_is": "Sorbitolul (INS 420(i)) și siropul de sorbitol (INS 420(ii)) sunt polioli utilizați ca îndulcitori de volum, umectanți și ingrediente de textură. Sorbitolul se găsește în mod natural și în multe fructe, inclusiv prune uscate, pere, mere și piersici.",
+  "why_botia": "Sorbitolul înlocuiește atât dulceața, cât și volumul zahărului. Se găsește natural și în fructe precum prunele uscate, perele, merele și piersicile — iar concentrația sa ridicată în prunele uscate este unul dintre motivele efectului lor laxativ. Este absorbit doar parțial: restul atrage apă în intestin și este fermentat, astfel încât cantități mai mari înmoaie scaunul. JECFA i-a atribuit o ADI „nespecificată”.",
+  "can_1": "Detecta E420, E420(i), E420(ii), INS 420(i), INS 420(ii), sorbitol, sirop de sorbitol și D-glucitol atunci când sunt declarate explicit.",
+  "can_2": "Explica faptul că sorbitolul oferă dulceață și volum, apare natural în fructe obișnuite și poate avea efect laxativ deoarece absorbția sa este incompletă.",
+  "cannot_1": "Determina cantitatea de sorbitol prezentă doar din lista ingredientelor.",
+  "cannot_2": "Cuantifica cât sorbitol provine natural din ingredientele de fructe față de sorbitolul adăugat separat sau prezice răspunsul digestiv individual.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "Regulamentul (UE) nr. 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "Sorbitol",
-  "description": "Un poliol alcool zaharat cu conținut scăzut de calorii, utilizat ca îndulcitor și agent de umplere."
+  "description": "Sorbitolul este un poliol de volum prezent natural în prune uscate, pere, mere și piersici; absorbția incompletă ajută la explicarea efectului laxativ."
 }

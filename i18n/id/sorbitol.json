@@ -1,28 +1,41 @@
 {
   "name": "Sorbitol",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, sorbitol, sirup sorbitol, D-glusitol, sirup D-glusitol, sorbitol, jarabe de sorbitol",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, sirup sorbitol, D-glusitol, sirup D-glusitol, jarabe de sorbitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Poliol alkohol gula rendah kalori yang digunakan sebagai pemanis dan bahan pengisi.",
-  "why_botia": "Ini menandainya karena dapat menyebabkan efek laksatif pada dosis tinggi dan berfungsi sebagai pengganti gula industri dalam produk ultra-olahan.",
-  "can_1": "Identifikasi E420 dan tandai peringatan wajib UE 'konsumsi berlebihan dapat menyebabkan efek laksatif' jika terdapat di atas 10%.",
-  "can_2": "Aktifkan lapisan pemanis dan beri tahu tentang sifat glikemik rendahnya.",
-  "cannot_1": "Verifikasi persentase pasti sorbitol yang ditambahkan jika di bawah ambang peringatan 10%.",
-  "cannot_2": "Tentukan apakah sorbitol diproduksi dari pati jagung atau pati gandum.",
+  "what_is": "Sorbitol (INS 420(i)) dan sirup sorbitol (INS 420(ii)) adalah poliol yang digunakan sebagai pemanis pengisi, humektan dan bahan pembentuk tekstur. Sorbitol juga terdapat secara alami dalam banyak buah, termasuk prune, pir, apel dan persik.",
+  "why_botia": "Sorbitol menggantikan rasa manis sekaligus volume gula. Zat ini juga terdapat secara alami dalam buah seperti prune, pir, apel dan persik — dan konsentrasinya yang tinggi dalam prune adalah salah satu alasan buah tersebut dapat memiliki efek laksatif. Hanya sebagian yang diserap: sisanya menarik air ke usus dan difermentasi, sehingga jumlah yang lebih besar dapat melunakkan feses. JECFA menetapkan ADI “tidak ditentukan”.",
+  "can_1": "Mendeteksi E420, E420(i), E420(ii), INS 420(i), INS 420(ii), sorbitol, sirup sorbitol dan D-glucitol ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan bahwa sorbitol memberikan rasa manis dan volume, terdapat secara alami dalam buah yang umum dikonsumsi dan dapat memiliki efek laksatif karena penyerapannya tidak lengkap.",
+  "cannot_1": "Menentukan jumlah sorbitol yang ada hanya dari daftar bahan.",
+  "cannot_2": "Mengukur berapa banyak sorbitol yang berasal secara alami dari bahan buah dibandingkan dengan sorbitol yang ditambahkan secara terpisah, atau memprediksi respons pencernaan individu.",
   "sources": [
     {
-      "label": "Peraturan Komisi (UE) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "Peraturan (UE) No 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "Sorbitol",
-  "description": "Poliol alkohol gula rendah kalori yang digunakan sebagai pemanis dan bahan pengisi."
+  "description": "Sorbitol adalah poliol pengisi yang terdapat secara alami dalam prune, pir, apel dan persik; penyerapan yang tidak lengkap membantu menjelaskan efek laksatifnya."
 }

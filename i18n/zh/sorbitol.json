@@ -1,28 +1,41 @@
 {
   "name": "山梨糖醇",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, 山梨糖醇, 山梨糖醇糖浆, D-葡萄糖醇, D-葡萄糖醇糖浆, 山梨糖醇, 山梨糖醇糖浆",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, 山梨糖醇, 山梨糖醇糖浆, D-葡萄糖醇, D-葡萄糖醇糖浆",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "一种低热量的多元醇糖醇，用作甜味剂和填充剂。",
-  "why_botia": "它标记此成分是因为高剂量摄入可能引起通便作用，并且在超加工产品中作为工业糖替代品使用。",
-  "can_1": "识别E420，并在含量超过10%时标记欧盟强制性警告‘过量食用可能产生通便作用’。",
-  "can_2": "触发甜味剂图层，并通知其低血糖生成特性。",
-  "cannot_1": "如果山梨糖醇添加量低于10%的警告阈值，则无法验证其确切百分比。",
-  "cannot_2": "无法确定山梨糖醇是由玉米淀粉还是小麦淀粉制造。",
+  "what_is": "山梨糖醇（INS 420(i)）和山梨糖醇糖浆（INS 420(ii)）是用作填充型甜味剂、保湿剂和质构成分的多元醇。山梨糖醇也天然存在于许多水果中，包括西梅干、梨、苹果和桃。",
+  "why_botia": "山梨糖醇同时替代糖的甜味和体积。它也天然存在于西梅干、梨、苹果和桃等水果中——西梅干中较高的山梨糖醇含量是其具有通便作用的原因之一。它只有一部分被吸收：其余部分会把水带入肠道并被发酵，因此较大的摄入量会使大便变稀。JECFA 将其 ADI 规定为“无需限定”。",
+  "can_1": "识别明确标示的 E420、E420(i)、E420(ii)、INS 420(i)、INS 420(ii)、山梨糖醇、山梨糖醇糖浆和 D-glucitol。",
+  "can_2": "解释山梨糖醇既提供甜味和体积，也天然存在于常见水果中，并因吸收不完全而可能产生通便作用。",
+  "cannot_1": "仅根据配料表确定山梨糖醇的实际含量。",
+  "cannot_2": "量化水果成分天然带来的山梨糖醇与单独添加的山梨糖醇各有多少，或预测个人的消化反应。",
   "sources": [
     {
-      "label": "欧盟委员会条例 (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "欧盟条例 (EU) No 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "山梨糖醇",
-  "description": "一种低热量的多元醇糖醇，用作甜味剂和填充剂。"
+  "description": "山梨糖醇是一种天然存在于西梅干、梨、苹果和桃中的填充型多元醇；吸收不完全有助于解释其通便作用。"
 }

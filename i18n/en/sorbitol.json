@@ -1,28 +1,41 @@
 {
   "name": "Sorbitol",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, jarabe de sorbitol",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, jarabe de sorbitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "A low-calorie polyol sugar alcohol used as a sweetener and bulking agent.",
-  "why_botia": "It flags it because it can induce laxative effects at high doses and serves as an industrial sugar replacer in ultra-processed products.",
-  "can_1": "Identify E420 and flag the mandatory EU warning 'excessive consumption may produce laxative effects' if present above 10%.",
-  "can_2": "Trigger the sweetener layer and notify of its low-glycemic properties.",
-  "cannot_1": "Verify the exact percentage of sorbitol added if it is below the 10% warning threshold.",
-  "cannot_2": "Determine if the sorbitol was manufactured from corn starch or wheat starch.",
+  "what_is": "Sorbitol (INS 420(i)) and sorbitol syrup (INS 420(ii)) are polyols used as bulk sweeteners, humectants and texturising ingredients. Sorbitol also occurs naturally in many fruits, including prunes, pears, apples and peaches.",
+  "why_botia": "Sorbitol replaces both the sweetness and the bulk of sugar. It also occurs naturally in fruits like prunes, pears, apples and peaches — and its high concentration in prunes is one reason they can have a laxative effect. Little of it is absorbed: the rest draws water into the gut and is fermented, so larger amounts loosen stools. JECFA assigned an ADI “not specified”.",
+  "can_1": "Detect E420, E420(i), E420(ii), INS 420(i), INS 420(ii), sorbitol, sorbitol syrup and D-glucitol when explicitly declared.",
+  "can_2": "Explain that sorbitol provides sweetness and bulk, occurs naturally in common fruits, and can have a laxative effect because absorption is incomplete.",
+  "cannot_1": "Determine how much sorbitol is present from the ingredient list alone.",
+  "cannot_2": "Quantify how much sorbitol comes naturally from fruit ingredients versus separately added sorbitol, or predict an individual's digestive response.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "Regulation (EU) No 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "Sorbitol",
-  "description": "A low-calorie polyol sugar alcohol used as a sweetener and bulking agent."
+  "description": "Sorbitol is a bulk polyol found naturally in fruits such as prunes, pears, apples and peaches; incomplete absorption helps explain its laxative effect."
 }

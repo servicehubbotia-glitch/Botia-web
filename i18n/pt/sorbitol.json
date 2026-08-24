@@ -1,28 +1,41 @@
 {
   "name": "Sorbitol",
   "e_code": "E420",
-  "aliases": "E420, E420i, E420ii, sorbitol, xarope de sorbitol, D-glucitol, xarope de D-glucitol, sorbitol, jarabe de sorbitol",
+  "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, xarope de sorbitol, xarope de D-glucitol, jarabe de sorbitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Um álcool de açúcar poliol de baixa caloria usado como adoçante e agente de volume.",
-  "why_botia": "Ele sinaliza porque pode induzir efeitos laxativos em altas doses e serve como substituto industrial do açúcar em produtos ultraprocessados.",
-  "can_1": "Identificar E420 e sinalizar o aviso obrigatório da UE 'o consumo excessivo pode produzir efeitos laxativos' se presente acima de 10%.",
-  "can_2": "Ativar a camada de adoçante e notificar sobre suas propriedades de baixo índice glicêmico.",
-  "cannot_1": "Verificar a porcentagem exata de sorbitol adicionado se estiver abaixo do limite de aviso de 10%.",
-  "cannot_2": "Determinar se o sorbitol foi fabricado a partir de amido de milho ou amido de trigo.",
+  "what_is": "O sorbitol (INS 420(i)) e o xarope de sorbitol (INS 420(ii)) são polióis utilizados como edulcorantes de volume, humectantes e ingredientes de textura. O sorbitol também ocorre naturalmente em muitos frutos, incluindo ameixas secas, peras, maçãs e pêssegos.",
+  "why_botia": "O sorbitol substitui tanto a doçura como o volume do açúcar. Também ocorre naturalmente em frutos como ameixas secas, peras, maçãs e pêssegos — e a sua elevada concentração nas ameixas secas é uma das razões do seu efeito laxante. É pouco absorvido: o restante atrai água para o intestino e é fermentado, pelo que quantidades maiores tornam as fezes mais soltas. O JECFA atribuiu uma IDA “não especificada”.",
+  "can_1": "Detetar E420, E420(i), E420(ii), INS 420(i), INS 420(ii), sorbitol, xarope de sorbitol e D-glucitol quando declarados explicitamente.",
+  "can_2": "Explicar que o sorbitol fornece doçura e volume, ocorre naturalmente em frutos comuns e pode ter efeito laxante porque a sua absorção é incompleta.",
+  "cannot_1": "Determinar a quantidade de sorbitol presente apenas pela lista de ingredientes.",
+  "cannot_2": "Quantificar quanto sorbitol provém naturalmente de ingredientes de fruta em comparação com sorbitol adicionado separadamente ou prever a resposta digestiva individual.",
   "sources": [
     {
-      "label": "Regulamento (UE) n.º 231/2012 da Comissão",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — D-Sorbitol (INS 420(i)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/829"
     },
     {
-      "label": "Regulamento (UE) n.º 1169/2011",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sorbitol syrup (INS 420(ii)), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3856"
+    },
+    {
+      "label": "Codex GSFA — Sorbitol (INS 420(i))",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=183"
+    },
+    {
+      "label": "Carbohydrate Maldigestion and Intolerance — natural sorbitol in fruits and intestinal effects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9099680/"
+    },
+    {
+      "label": "Chemical composition and potential health effects of prunes — sorbitol and laxative action",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11401245/"
     }
   ],
   "title": "Sorbitol",
-  "description": "Um álcool de açúcar poliol de baixa caloria usado como adoçante e agente de volume."
+  "description": "O sorbitol é um poliol de volume presente naturalmente em ameixas secas, peras, maçãs e pêssegos; a absorção incompleta ajuda a explicar o seu efeito laxante."
 }
