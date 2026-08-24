@@ -1,21 +1,25 @@
 {
   "name": "Kolagen",
   "title": "Kolagen",
-  "description": "Składnik białkowy pochodzenia zwierzęcego pozyskiwany z tkanek łącznych, takich jak skóry, skóry surowe, ścięgna oraz – w przypadku określonych gatunków – kości. Kolagen spożywczy może być wymieniony w składzie w sposób ogólny lub z podaniem źródła zwierzęcego.",
-  "what_is": "Składnik białkowy pochodzenia zwierzęcego, pozyskiwany z tkanek łącznych, takich jak skóry, skóry surowe, ścięgna oraz – w przypadku określonych gatunków – kości. Kolagen spożywczy może być wymieniony w składzie w sposób ogólny lub z podaniem źródła zwierzęcego.",
-  "why_botia": "BOTIA Wskazuje się na kolagen, ponieważ jest on pochodzenia zwierzęcego, a podanie źródła pochodzenia może mieć znaczenie przy dokonywaniu wyborów żywieniowych. Przepisy UE dotyczące higieny zawierają wykaz dopuszczonych surowców pochodzenia zwierzęcego wykorzystywanych do produkcji kolagenu spożywczego. Ogólne określenie, takie jak „kolagen”, nie pozwala zidentyfikować gatunku, z którego pochodzi, ani nie określa, czy produkt jest halal.",
-  "can_1": "Wykrywanie terminów związanych z kolagenem, peptydami kolagenowymi, kolagenem hydrolizowanym oraz wyraźnych określeń dotyczących pochodzenia bydlęcego, wieprzowego, rybnego lub drobiowego.",
-  "can_2": "Należy uwzględnić kontekst pochodzenia zwierzęcego oraz wyborów muzułmańskich, odwołując się do źródła tylko wtedy, gdy zostało ono faktycznie podane.",
-  "cannot_1": "Określ gatunek zwierzęcia, jeśli na etykiecie widnieje wyłącznie napis „kolagen”.",
-  "cannot_2": "Na podstawie ogólnej nazwy składnika należy potwierdzić status halal, metodę uboju, sposób przetwarzania lub ryzyko zanieczyszczenia krzyżowego.",
+  "description": "Kolagen jest białkiem zwierzęcej tkanki łącznej, z którego przez częściową hydrolizę otrzymuje się żelatynę. Podczas trawienia powstają aminokwasy i małe peptydy.",
+  "what_is": "Główne białko strukturalne zwierzęcej tkanki łącznej obecne w skórze, kościach, chrząstce i ścięgnach. Żelatynę otrzymuje się przez częściową hydrolizę kolagenu.",
+  "why_botia": "Kolagen jest białkiem zwierzęcej tkanki łącznej — skóry, kości i chrząstki. Jest surowcem do produkcji żelatyny: żelatyna powstaje przez częściową hydrolizę kolagenu. Po spożyciu kolagen nie dociera w całości do skóry ani stawów; podczas trawienia rozpada się na aminokwasy i małe peptydy, z których część trafia do krwi. Etykieta nie zawsze podaje też gatunek zwierzęcia.",
+  "can_1": "Rozpoznawać kolagen, peptydy kolagenowe, kolagen hydrolizowany oraz zadeklarowane źródła wołowe, wieprzowe, rybie lub drobiowe.",
+  "can_2": "Wyjaśniać związek między kolagenem i żelatyną oraz pokazywać identyfikowalne pochodzenie zwierzęce, gdy gatunek jest podany.",
+  "cannot_1": "Określić gatunku zwierzęcia, jeśli etykieta podaje tylko „kolagen”.",
+  "cannot_2": "Określić na podstawie nazwy składnika, czy produkt kolagenowy wywoła konkretny efekt w skórze, stawach lub innych tkankach.",
   "sources": [
     {
-      "label": "Rozporządzenie (WE) nr 853/2004 — sekcja XV, kolagen przeznaczony do spożycia",
+      "label": "EU Regulation 853/2004 — Section XV: collagen intended for food",
       "url": "https://eur-lex.europa.eu/eli/reg/2004/853/2026-01-27/eng"
     },
     {
-      "label": "Kodeks CXS 1-1985 — Ogólna norma dotycząca etykietowania żywności paczkowanej",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%252B1-1985%252FCXS_001e.pdf"
+      "label": "JECFA — Gelatin specification: partial hydrolysis of collagen",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-171.pdf"
+    },
+    {
+      "label": "Human absorption of collagen-derived amino acids and peptides — PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39149544/"
     }
   ],
   "e_code": null,
