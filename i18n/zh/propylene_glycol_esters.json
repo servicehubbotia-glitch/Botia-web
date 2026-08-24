@@ -7,22 +7,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "一种乳化剂和质构改良添加剂，由丙烷-1,2-二醇（丙二醇）与脂肪酸形成的酯组成，在EU中被标识为E477。",
-  "why_botia": "BOTIA标记E477，因为同一种添加剂可能被声明为“丙二醇”或系统名称“丙烷-1,2-二醇”。",
-  "can_1": "检测E477以及主要的丙二醇/丙二醇酯名称。",
-  "can_2": "显示质构和E-number信息层。",
-  "cannot_1": "无法从配料表中确定脂肪酸组成、浓度或生产原料。",
-  "cannot_2": "不要将E477与游离丙二醇或丙二醇藻酸酯（E405）混淆。",
+  "what_is": "由丙二醇与脂肪酸结合制成的乳化剂，在消化过程中可水解为丙二醇和脂肪酸。",
+  "why_botia": "这些乳化剂会分解成脂肪酸和丙二醇——同一种化合物也用于食品应用的防冻系统和舞台烟雾机。因此 JECFA 不是按整个添加剂的重量设定限量，而是按释放出的丙二醇计算：这才是被监测的部分。它们还用于工业烘焙制品、冰淇淋等食品。",
+  "can_1": "识别标签中的 E477 及主要丙二醇脂肪酸酯名称。",
+  "can_2": "说明 JECFA 按释放出的丙二醇表达摄入限量，并显示 Texture 和 E-numbers 信息层。",
+  "cannot_1": "仅根据配料表确定产品中的 E477 含量或会释放多少丙二醇。",
+  "cannot_2": "仅根据声明名称确定脂肪酸的精确组成或生产原料。",
   "sources": [
     {
-      "label": "法规（EC）No 1333/2008——食品添加剂联盟清单和使用条件",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — 丙二醇脂肪酸酯，化学记录 683",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/683"
     },
     {
-      "label": "委员会法规（EU）No 231/2012——授权食品添加剂的规格",
+      "label": "EFSA — 丙烷-1,2-二醇脂肪酸酯（E477）重新评估，2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5497"
+    },
+    {
+      "label": "CDC/ATSDR — 丙二醇：包括防冻剂和人工烟雾在内的用途",
+      "url": "https://wwwn.cdc.gov/TSP/PHS/PHS.aspx?phsid=1120&toxid=240"
+    },
+    {
+      "label": "欧盟法规 231/2012 — E477 规格",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],
   "title": "脂肪酸丙二醇酯",
-  "description": "一种乳化剂和质构改良添加剂，由丙烷-1,2-二醇（丙二醇）与脂肪酸形成的酯组成，在EU中被标识为E477。"
+  "description": "E477 乳化剂会分解成脂肪酸和丙二醇。JECFA 将其 ADI 设为 0–25 mg/kg 体重，并以丙二醇计。"
 }

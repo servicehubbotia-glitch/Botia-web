@@ -7,22 +7,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "An emulsifying and texturising additive consisting of esters of propane-1,2-diol (propylene glycol) with fatty acids, identified in the EU as E477.",
-  "why_botia": "BOTIA flags E477 because the same additive may be declared using 'propylene glycol' or the systematic 'propane-1,2-diol' wording.",
-  "can_1": "Detect E477 and the principal propylene-glycol/propanediol ester names.",
-  "can_2": "Show the texture and E-number information layers.",
-  "cannot_1": "Determine fatty-acid composition, concentration or manufacturing feedstock from the ingredient list.",
-  "cannot_2": "Confuse E477 with free propylene glycol or with propylene glycol alginate (E405).",
+  "what_is": "Emulsifiers made by combining propylene glycol with fatty acids. During digestion they can be hydrolysed into propylene glycol and fatty acids.",
+  "why_botia": "These emulsifiers break down into fatty acids and propylene glycol — the same compound used in food-system antifreeze and theatrical fog machines. That is why JECFA sets the intake limit in terms of the propylene glycol released, not the whole additive: that is what is being tracked. They are used, among other products, in industrial bakery products and ice cream.",
+  "can_1": "Detect E477 and the principal propylene-glycol ester names used on labels.",
+  "can_2": "Explain that JECFA expresses the intake limit as released propylene glycol and show the Texture and E-number layers.",
+  "cannot_1": "Determine how much E477 or how much propylene glycol a product will release from the ingredient list alone.",
+  "cannot_2": "Determine the exact fatty-acid composition or manufacturing feedstock from the declared name.",
   "sources": [
     {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Propylene glycol esters of fatty acids, chemical record 683",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/683"
     },
     {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
+      "label": "EFSA — Re-evaluation of propane-1,2-diol esters of fatty acids (E477), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5497"
+    },
+    {
+      "label": "CDC/ATSDR — Propylene glycol: uses including antifreeze formulations and artificial smoke or fog",
+      "url": "https://wwwn.cdc.gov/TSP/PHS/PHS.aspx?phsid=1120&toxid=240"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E477",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],
   "title": "Propylene Glycol Esters of Fatty Acids",
-  "description": "An emulsifying and texturising additive consisting of esters of propane-1,2-diol (propylene glycol) with fatty acids, identified in the EU as E477."
+  "description": "E477 emulsifiers break down into fatty acids and propylene glycol. JECFA sets an ADI of 0–25 mg/kg body weight expressed as propylene glycol."
 }

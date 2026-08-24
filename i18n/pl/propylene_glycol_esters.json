@@ -7,22 +7,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Dodatek emulgujący i nadający konsystencję, składający się z estrów 1,2-propanodiolu (glikolu propylenowego) z kwasami tłuszczowymi, oznaczony w EU jako E477.",
-  "why_botia": "BOTIA powoduje zgłoszenie E477, ponieważ ten sam dodatek może być zgłoszony przy użyciu nazwy „glikol propylenowy” lub systematycznej nazwy „propan-1,2-diol”.",
-  "can_1": "Zidentyfikuj E477 oraz główne nazwy estrów glikolu propylenowego i propanodiolu.",
-  "can_2": "Wyświetl warstwy zawierające informacje o teksturze i numerach E.",
-  "cannot_1": "Na podstawie listy składników należy określić skład kwasów tłuszczowych, ich stężenie lub surowce użyte do produkcji.",
-  "cannot_2": "Nie należy mylić produktu E477 z czystym glikolem propylenowym ani z alginianem glikolu propylenowego (E405).",
+  "what_is": "Emulgatory powstające przez połączenie glikolu propylenowego z kwasami tłuszczowymi. Podczas trawienia mogą ulegać hydrolizie do glikolu propylenowego i kwasów tłuszczowych.",
+  "why_botia": "Te emulgatory rozkładają się na kwasy tłuszczowe i glikol propylenowy — ten sam związek stosowany w systemach przeciwzamarzaniowych do zastosowań spożywczych oraz w maszynach do sztucznego dymu. Dlatego JECFA ustala limit na podstawie uwolnionego glikolu propylenowego, a nie całej masy dodatku: to ten składnik jest monitorowany. Są stosowane między innymi w przemysłowych wyrobach cukierniczych i lodach.",
+  "can_1": "Rozpoznawać E477 i główne nazwy estrów glikolu propylenowego na etykietach.",
+  "can_2": "Wyjaśniać, że JECFA wyraża limit spożycia jako uwolniony glikol propylenowy, oraz pokazywać warstwy Texture i E-numbers.",
+  "cannot_1": "Określić z listy składników ilości E477 ani ilości glikolu propylenowego, która zostanie uwolniona.",
+  "cannot_2": "Określić dokładnego składu kwasów tłuszczowych ani surowca produkcyjnego z deklarowanej nazwy.",
   "sources": [
     {
-      "label": "Rozporządzenie (EC) nr 1333/2008 — Unijny wykaz dodatków do żywności oraz warunki ich stosowania",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Estry glikolu propylenowego kwasów tłuszczowych, rekord chemiczny 683",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/683"
     },
     {
-      "label": "Rozporządzenie Komisji (EU) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
+      "label": "EFSA — Ponowna ocena estrów propano-1,2-diolu i kwasów tłuszczowych (E477), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5497"
+    },
+    {
+      "label": "CDC/ATSDR — Glikol propylenowy: zastosowania obejmujące środki przeciwzamarzaniowe i sztuczny dym lub mgłę",
+      "url": "https://wwwn.cdc.gov/TSP/PHS/PHS.aspx?phsid=1120&toxid=240"
+    },
+    {
+      "label": "Rozporządzenie UE 231/2012 — specyfikacje E477",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],
   "title": "Estry glikolu propylenowego kwasów tłuszczowych",
-  "description": "Dodatek emulgujący i nadający konsystencję, składający się z estrów 1,2-propanodiolu (glikolu propylenowego) z kwasami tłuszczowymi, oznaczony w EU jako E477."
+  "description": "Emulgatory E477 rozkładają się na kwasy tłuszczowe i glikol propylenowy. JECFA ustala ADI 0–25 mg/kg masy ciała wyrażone jako glikol propylenowy."
 }
