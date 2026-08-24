@@ -1,32 +1,36 @@
 {
   "name": "Carragenano",
   "e_code": "E407",
-  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Una familia de polisacáridos sulfatados extraídos de algas rojas y utilizados para gelificar, espesar o estabilizar alimentos; el E407a es alga Eucheuma procesada.",
-  "why_botia": "BOTIA señala el E407 y el E407a porque la etiqueta no revela su perfil de peso molecular. La EFSA dejó su IDA grupal temporal mientras busca mejores datos sobre el material de bajo peso molecular y los efectos inflamatorios intestinales no resueltos.",
-  "can_1": "Detectar la presencia de E407 o E407a y clasificarlo bajo la capa de textura.",
-  "can_2": "Proporcionar acceso a la evidencia científica relacionada con el ingrediente detectado.",
-  "cannot_1": "Verificar el nivel exacto de contaminantes de carragenano de bajo peso molecular por debajo de 50 kDa.",
-  "cannot_2": "Detectar niveles traza de residuos de disolventes de extracción utilizados en su aislamiento.",
+  "what_is": "La carragenina (INS 407 / E407) procede de algas rojas y se utiliza para espesar, gelificar y estabilizar alimentos. El alga Eucheuma procesada (INS 407a / E407a) es una forma estrechamente relacionada utilizada para las mismas funciones de textura.",
+  "why_botia": "La carragenina procede de algas rojas y se utiliza para espesar y gelificar — aparece en bebidas vegetales, nata y carne procesada. Una forma rota en fragmentos más pequeños del mismo material, llamada poligeenano, causa inflamación intestinal en animales y no está permitida en alimentos. La carragenina alimentaria puede contener pequeñas cantidades de fragmentos más cortos y sigue sin estar claro si se forman más durante la digestión; JECFA mantuvo una IDA “no especificada”, mientras que EFSA mantuvo un límite numérico temporal porque esa incertidumbre no estaba completamente resuelta.",
+  "can_1": "Detectar E407, E407a, INS 407, INS 407a, carragenina y alga Eucheuma procesada cuando estén declarados explícitamente.",
+  "can_2": "Explicar la diferencia entre la carragenina alimentaria y su forma degradada, y por qué los fragmentos más pequeños siguen siendo una cuestión abierta.",
+  "cannot_1": "Determinar a partir de la lista de ingredientes cuánta materia degradada en fragmentos más pequeños contiene una preparación concreta de carragenina.",
+  "cannot_2": "Determinar si se produjo degradación adicional durante el procesado o la digestión ni predecir la respuesta intestinal individual.",
   "sources": [
     {
-      "label": "Reglamento (UE) n.º 231/2012 de la Comisión",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Carrageenan (INS 407)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/377"
     },
     {
-      "label": "EFSA — Reevaluación del carragenano (E 407, E 407a), 2018",
-      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+      "label": "JECFA — Processed Eucheuma seaweed / semi-refined carrageenan (INS 407a)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2457"
     },
     {
-      "label": "JECFA — Carragenina (INS 407)",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
+      "label": "EFSA — Re-evaluation of carrageenan (E407) and processed Eucheuma seaweed (E407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
     }
   ],
   "title": "Carragenano",
-  "description": "Un hidrocoloide extraído de algas rojas."
+  "description": "La carragenina es un espesante de algas rojas usado en bebidas vegetales, nata y carne procesada; la duda abierta está en los fragmentos más pequeños."
 }

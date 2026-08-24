@@ -1,32 +1,36 @@
 {
   "name": "Carraghénane",
   "e_code": "E407",
-  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Une famille de polysaccharides sulfatés extraits d'algues rouges et utilisés pour gélifier, épaissir ou stabiliser les aliments ; E407a est une algue Eucheuma transformée.",
-  "why_botia": "BOTIA signale les E407 et E407a car l’étiquette ne révèle pas leur profil de poids moléculaire. L’EFSA a laissé sa DJA de groupe temporaire en attendant de meilleures données sur les matériaux de faible poids moléculaire et les effets inflammatoires intestinaux non résolus.",
-  "can_1": "Détecter la présence de E407 ou E407a et le classer sous la couche texture.",
-  "can_2": "Fournir des détails d'avertissement sur les fractions de faible poids moléculaire ou les auxiliaires de transformation.",
-  "cannot_1": "Vérifier le niveau exact de contaminants de carraghénane de faible poids moléculaire en dessous de 50 kDa.",
-  "cannot_2": "Détecter les traces de résidus de solvants d'extraction utilisés dans son isolement.",
+  "what_is": "La carraghénane (INS 407 / E407) provient d'algues rouges et sert à épaissir, gélifier et stabiliser les aliments. L'algue Eucheuma transformée (INS 407a / E407a) est une forme étroitement apparentée utilisée pour les mêmes fonctions de texture.",
+  "why_botia": "La carraghénane provient d'algues rouges et sert à épaissir et gélifier — on la trouve dans les boissons végétales, la crème et les viandes transformées. Une forme du même matériau décomposée en fragments plus petits, appelée poligeenan, provoque une inflammation intestinale chez l'animal et n'est pas autorisée dans les aliments. La carraghénane alimentaire peut contenir de petites quantités de fragments plus courts et on ne sait toujours pas si davantage se forment pendant la digestion ; le JECFA a maintenu une DJA « non spécifiée », tandis que l'EFSA a conservé une limite numérique temporaire parce que cette incertitude n'était pas entièrement résolue.",
+  "can_1": "Détecter E407, E407a, INS 407, INS 407a, carraghénane et algue Eucheuma transformée lorsqu'ils sont explicitement déclarés.",
+  "can_2": "Expliquer la différence entre la carraghénane alimentaire et sa forme dégradée, et pourquoi les petits fragments restent une question ouverte.",
+  "cannot_1": "Déterminer à partir de la liste des ingrédients la quantité de matériau dégradé en petits fragments présente dans une préparation donnée.",
+  "cannot_2": "Déterminer si une dégradation supplémentaire s'est produite pendant la transformation ou la digestion, ni prédire la réponse intestinale individuelle.",
   "sources": [
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Carrageenan (INS 407)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/377"
     },
     {
-      "label": "EFSA — Réévaluation du carraghénane (E 407, E 407a), 2018",
-      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+      "label": "JECFA — Processed Eucheuma seaweed / semi-refined carrageenan (INS 407a)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2457"
     },
     {
-      "label": "JECFA — Gomme de carraghénane (INS 407)",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
+      "label": "EFSA — Re-evaluation of carrageenan (E407) and processed Eucheuma seaweed (E407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
     }
   ],
   "title": "Carraghénane",
-  "description": "Un hydrocolloïde extrait d'algues rouges."
+  "description": "La carraghénane est un épaississant d'algues rouges utilisé dans les boissons végétales, la crème et les viandes transformées ; la question ouverte concerne les petits fragments."
 }

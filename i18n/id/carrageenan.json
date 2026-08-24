@@ -1,32 +1,36 @@
 {
   "name": "Karagenan",
   "e_code": "E407",
-  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Keluarga polisakarida bersulfat yang diekstrak dari rumput laut merah dan digunakan untuk mengentalkan, memekatkan, atau menstabilkan makanan; E407a adalah rumput laut Eucheuma yang diproses.",
-  "why_botia": "BOTIA menandai E407 dan E407a karena label tidak mengungkapkan profil berat molekulnya. EFSA membiarkan ADI kelompoknya bersifat sementara sambil mencari data yang lebih baik mengenai material berat molekul rendah dan efek inflamasi usus yang belum terselesaikan.",
-  "can_1": "Mendeteksi keberadaan E407 atau E407a dan mengklasifikasikannya di bawah lapisan tekstur.",
-  "can_2": "Memberikan detail peringatan tentang fraksi berat molekul rendah atau bahan pembantu pemrosesan.",
-  "cannot_1": "Memverifikasi tingkat pasti kontaminan karagenan berat molekul rendah di bawah 50 kDa.",
-  "cannot_2": "Mendeteksi jejak residu pelarut ekstraksi yang digunakan dalam isolasinya.",
+  "what_is": "Karagenan (INS 407 / E407) berasal dari rumput laut merah dan digunakan untuk mengentalkan, membentuk gel dan menstabilkan makanan. Rumput laut Eucheuma olahan (INS 407a / E407a) adalah bentuk yang sangat terkait dan digunakan untuk fungsi tekstur yang sama.",
+  "why_botia": "Karagenan berasal dari rumput laut merah dan digunakan untuk mengentalkan dan membentuk gel — bahan ini dapat ditemukan dalam minuman nabati, krim dan daging olahan. Bentuk dari bahan yang sama yang telah dipecah menjadi bagian lebih kecil, disebut poligeenan, menyebabkan peradangan usus pada hewan dan tidak diizinkan dalam makanan. Karagenan tingkat pangan dapat mengandung sejumlah kecil bagian yang lebih pendek dan masih belum pasti apakah lebih banyak terbentuk selama pencernaan; JECFA mempertahankan ADI “tidak ditentukan”, sementara EFSA mempertahankan batas angka sementara karena ketidakpastian itu belum sepenuhnya terselesaikan.",
+  "can_1": "Mendeteksi E407, E407a, INS 407, INS 407a, karagenan dan rumput laut Eucheuma olahan ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan perbedaan antara karagenan tingkat pangan dan bentuknya yang telah terurai serta mengapa bagian yang lebih kecil masih menjadi pertanyaan terbuka.",
+  "cannot_1": "Menentukan dari daftar bahan berapa banyak material terurai menjadi bagian kecil yang terdapat dalam suatu preparat karagenan.",
+  "cannot_2": "Menentukan apakah terjadi penguraian tambahan selama pengolahan atau pencernaan atau memprediksi respons usus individu.",
   "sources": [
     {
-      "label": "Peraturan Komisi (UE) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Carrageenan (INS 407)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/377"
     },
     {
-      "label": "EFSA — Evaluasi ulang karagenan (E 407, E 407a), 2018",
-      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+      "label": "JECFA — Processed Eucheuma seaweed / semi-refined carrageenan (INS 407a)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2457"
     },
     {
-      "label": "JECFA — Karagenan (INS 407)",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
+      "label": "EFSA — Re-evaluation of carrageenan (E407) and processed Eucheuma seaweed (E407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
     }
   ],
   "title": "Karagenan",
-  "description": "Hidrokoloid yang diekstrak dari rumput laut merah."
+  "description": "Karagenan adalah pengental dari rumput laut merah yang digunakan dalam minuman nabati, krim dan daging olahan; pertanyaan terbuka berkaitan dengan bagian yang lebih kecil."
 }

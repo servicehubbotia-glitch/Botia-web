@@ -1,32 +1,36 @@
 {
   "name": "Каррагинан",
   "e_code": "E407",
-  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Семейство сульфатированных полисахаридов, извлекаемых из красных водорослей и используемых для желирования, загущения или стабилизации пищевых продуктов; E407a — обработанная водоросль Eucheuma.",
-  "why_botia": "BOTIA отмечает E407 и E407a, поскольку на этикетке не раскрывается их молекулярно-массовый профиль. EFSA оставила свою групповую ADI временной, ожидая более точных данных о низкомолекулярном материале и нерешённых эффектах воспаления кишечника.",
-  "can_1": "Обнаружить наличие E407 или E407a и классифицировать его под слоем текстуры.",
-  "can_2": "Предоставить предупреждающие сведения о фракциях с низкой молекулярной массой или технологических добавках.",
-  "cannot_1": "Проверить точный уровень загрязнителей каррагинана с низкой молекулярной массой ниже 50 кДа.",
-  "cannot_2": "Обнаружить следовые уровни остатков экстракционных растворителей, используемых при его выделении.",
+  "what_is": "Каррагинан (INS 407 / E407) получают из красных водорослей и используют для загущения, желирования и стабилизации пищи. Обработанные водоросли Eucheuma (INS 407a / E407a) — близкая форма с теми же функциями текстуры.",
+  "why_botia": "Каррагинан получают из красных водорослей и используют для загущения и образования геля — он встречается в растительных напитках, сливках и переработанном мясе. Разрушенная на более мелкие фрагменты форма того же материала, называемая полигинаном, вызывает воспаление кишечника у животных и не разрешена в пищевых продуктах. Пищевой каррагинан может содержать небольшие количества более коротких фрагментов, и остаётся неясным, образуются ли дополнительные фрагменты при пищеварении; JECFA сохранила ADI «не определено», а EFSA — временный числовой предел, поскольку эта неопределённость не была полностью устранена.",
+  "can_1": "Определять E407, E407a, INS 407, INS 407a, каррагинан и обработанные водоросли Eucheuma, когда они явно указаны.",
+  "can_2": "Объяснять разницу между пищевым каррагинаном и его разрушенной формой и почему более мелкие фрагменты остаются открытым вопросом.",
+  "cannot_1": "По списку ингредиентов определить, сколько более мелкого разрушенного материала содержится в конкретном препарате каррагинана.",
+  "cannot_2": "Определить, происходил ли дополнительный распад при обработке или пищеварении, или предсказать индивидуальную реакцию кишечника.",
   "sources": [
     {
-      "label": "Регламент Комиссии (ЕС) № 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Carrageenan (INS 407)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/377"
     },
     {
-      "label": "EFSA — Переоценка каррагинана (E 407, E 407a), 2018",
-      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+      "label": "JECFA — Processed Eucheuma seaweed / semi-refined carrageenan (INS 407a)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2457"
     },
     {
-      "label": "JECFA — Каррагинан (INS 407)",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
+      "label": "EFSA — Re-evaluation of carrageenan (E407) and processed Eucheuma seaweed (E407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
     }
   ],
   "title": "Каррагинан",
-  "description": "Гидроколлоид, извлекаемый из красных водорослей."
+  "description": "Каррагинан — загуститель из красных водорослей в растительных напитках, сливках и переработанном мясе; открытый вопрос касается более мелких фрагментов."
 }

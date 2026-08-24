@@ -1,32 +1,36 @@
 {
   "name": "Caragenan",
   "e_code": "E407",
-  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "O familie de polizaharide sulfatate extrase din alge roșii și utilizate pentru gelifierea, îngroșarea sau stabilizarea alimentelor; E407a este alga Eucheuma procesată.",
-  "why_botia": "BOTIA semnalează E407 și E407a deoarece eticheta nu dezvăluie profilul lor de greutate moleculară. EFSA a lăsat ADI-ul lor de grup temporar, în timp ce caută date mai bune privind materialul cu greutate moleculară scăzută și efectele inflamatorii intestinale nerezolvate.",
-  "can_1": "Detectează prezența E407 sau E407a și îl clasifică sub stratul de textură.",
-  "can_2": "Oferă detalii de avertizare despre fracțiunile cu greutate moleculară mică sau auxiliarii de procesare.",
-  "cannot_1": "Verifică nivelul exact al contaminanților de caragenan cu greutate moleculară mică sub 50 kDa.",
-  "cannot_2": "Detectează urme de reziduuri de solvenți de extracție utilizați în izolarea sa.",
+  "what_is": "Caragenanul (INS 407 / E407) provine din alge roșii și este folosit pentru îngroșarea, gelificarea și stabilizarea alimentelor. Alga Eucheuma procesată (INS 407a / E407a) este o formă strâns înrudită folosită pentru aceleași funcții de textură.",
+  "why_botia": "Caragenanul provine din alge roșii și este folosit pentru îngroșare și gelificare — îl găsești în băuturi vegetale, smântână și carne procesată. O formă a aceluiași material descompusă în fragmente mai mici, numită poligeenan, provoacă inflamație intestinală la animale și nu este permisă în alimente. Caragenanul alimentar poate conține cantități mici de fragmente mai scurte și rămâne incert dacă se formează mai multe în timpul digestiei; JECFA a păstrat o ADI „nespecificată”, iar EFSA o limită numerică temporară deoarece această incertitudine nu a fost complet rezolvată.",
+  "can_1": "Detecta E407, E407a, INS 407, INS 407a, caragenan și algă Eucheuma procesată atunci când sunt declarate explicit.",
+  "can_2": "Explica diferența dintre caragenanul alimentar și forma sa degradată și de ce fragmentele mai mici rămân o întrebare deschisă.",
+  "cannot_1": "Determina din lista ingredientelor cât material degradat în fragmente mai mici se află într-un anumit preparat.",
+  "cannot_2": "Determina dacă a avut loc degradare suplimentară în timpul procesării sau digestiei ori prezice răspunsul intestinal individual.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Carrageenan (INS 407)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/377"
     },
     {
-      "label": "EFSA — Reevaluarea caragenanului (E 407, E 407a), 2018",
-      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+      "label": "JECFA — Processed Eucheuma seaweed / semi-refined carrageenan (INS 407a)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2457"
     },
     {
-      "label": "JECFA — Caragenan (INS 407)",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
+      "label": "EFSA — Re-evaluation of carrageenan (E407) and processed Eucheuma seaweed (E407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
     }
   ],
   "title": "Caragenan",
-  "description": "Un hidrocoloid extras din alge marine roșii."
+  "description": "Caragenanul este un agent de îngroșare din alge roșii folosit în băuturi vegetale, smântână și carne procesată; întrebarea deschisă privește fragmentele mai mici."
 }

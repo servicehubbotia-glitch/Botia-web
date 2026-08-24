@@ -1,32 +1,36 @@
 {
   "name": "الكاراجينان",
   "e_code": "E407",
-  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "عائلة من عديدات السكاريد الكبريتية المستخلصة من الأعشاب البحرية الحمراء، وتُستخدم لتجلية الأغذية أو تكثيفها أو تثبيتها؛ E407a هو أعشاب Eucheuma بحرية معالجة.",
-  "why_botia": "تشير مبادرة BOTIA إلى E407 وE407a لأن الملصق لا يكشف عن ملف وزنهما الجزيئي. أبقَت الهيئة الأوروبية لسلامة الأغذية (EFSA) على مجموعتها من الجرعة اليومية المقبولة (ADI) كقيمة مؤقتة بينما تسعى للحصول على بيانات أفضل حول المواد ذات الوزن الجزيئي المنخفض والآثار الالتهابية المعوية غير المحسومة.",
-  "can_1": "الكشف عن وجود E407 أو E407a وتصنيفه تحت طبقة الملمس.",
-  "can_2": "تقديم تفاصيل تحذيرية حول الأجزاء الجزيئية المنخفضة الوزن أو المواد المساعدة في المعالجة.",
-  "cannot_1": "التحقق من المستوى الدقيق لملوثات الكاراجينان منخفضة الوزن الجزيئي أقل من 50 كيلو دالتون.",
-  "cannot_2": "الكشف عن المستويات الضئيلة من بقايا المذيبات المستخدمة في استخلاصه.",
+  "what_is": "الكاراجينان (INS 407 / E407) يُستخرج من الطحالب الحمراء ويُستخدم لتكثيف الأغذية وتكوين الهلام وتثبيتها. أما طحالب Eucheuma المعالجة (INS 407a / E407a) فهي شكل قريب يُستخدم لوظائف القوام نفسها.",
+  "why_botia": "يأتي الكاراجينان من الطحالب الحمراء ويُستخدم للتكثيف وتكوين الهلام — ويمكن العثور عليه في المشروبات النباتية والقشدة واللحوم المصنعة. وهناك شكل من المادة نفسها تم تفكيكه إلى أجزاء أصغر يسمى poligeenan يسبب التهاب الأمعاء في الحيوانات ولا يُسمح باستخدامه في الغذاء. يمكن أن يحتوي الكاراجينان الغذائي على كميات صغيرة من أجزاء أقصر، ولا يزال من غير المؤكد ما إذا كانت تتكون أجزاء إضافية أثناء الهضم؛ أبقت JECFA على ADI «غير محددة»، بينما أبقت EFSA على حد رقمي مؤقت لأن هذه المسألة لم تُحسم بالكامل.",
+  "can_1": "اكتشاف E407 وE407a وINS 407 وINS 407a والكاراجينان وطحالب Eucheuma المعالجة عندما تكون مذكورة صراحة.",
+  "can_2": "شرح الفرق بين الكاراجينان الغذائي وشكله المتفكك ولماذا تبقى الأجزاء الأصغر مسألة مفتوحة.",
+  "cannot_1": "تحديد كمية المادة المتفككة إلى أجزاء أصغر الموجودة في مستحضر معين من الكاراجينان من قائمة المكونات.",
+  "cannot_2": "تحديد ما إذا حدث تفكك إضافي أثناء التصنيع أو الهضم أو التنبؤ بالاستجابة المعوية الفردية.",
   "sources": [
     {
-      "label": "اللائحة (EU) رقم 231/2012 الصادرة عن المفوضية",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Carrageenan (INS 407)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/377"
     },
     {
-      "label": "إعادة تقييم الكاراجينان (E 407، E 407a) من قبل الهيئة الأوروبية لسلامة الأغذية (EFSA)، 2018",
-      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+      "label": "JECFA — Processed Eucheuma seaweed / semi-refined carrageenan (INS 407a)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2457"
     },
     {
-      "label": "JECFA — الكاراجينان (INS 407)",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
+      "label": "EFSA — Re-evaluation of carrageenan (E407) and processed Eucheuma seaweed (E407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
     }
   ],
   "title": "الكاراجينان",
-  "description": "مادة هيدروكولويدية مستخلصة من الطحالب الحمراء."
+  "description": "الكاراجينان مثخن من الطحالب الحمراء يوجد في المشروبات النباتية والقشدة واللحوم المصنعة؛ والسؤال غير المحسوم يتعلق بالأجزاء الأصغر المتفككة."
 }

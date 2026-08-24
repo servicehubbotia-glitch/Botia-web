@@ -1,32 +1,36 @@
 {
   "name": "Carrageen",
   "e_code": "E407",
-  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Een familie van gesulfateerde polysachariden die wordt gewonnen uit rode zeealgen en wordt gebruikt om voedingsmiddelen te laten gelen, te verdikken of te stabiliseren; E407a is bewerkt Eucheuma-zeealg.",
-  "why_botia": "BOTIA licht E407 en E407a uit omdat het etiket hun molecuulgewichtsprofiel niet onthult. EFSA hield de groeps-ADI tijdelijk gehandhaafd terwijl zij op zoek ging naar betere gegevens over laagmoleculair materiaal en onopgeloste ontstekingseffecten in de darmen.",
-  "can_1": "Detecteer de aanwezigheid van E407 of E407a en classificeer het onder de textuurlaag.",
-  "can_2": "Geef waarschuwingsdetails over fracties met laag moleculair gewicht of verwerkingshulpmiddelen.",
-  "cannot_1": "Verifieer het exacte niveau van carrageenverontreinigingen met laag moleculair gewicht onder 50 kDa.",
-  "cannot_2": "Detecteer sporen van extractieoplosmiddelresten die worden gebruikt bij de isolatie ervan.",
+  "what_is": "Carrageen (INS 407 / E407) komt uit rode zeewieren en wordt gebruikt om voedingsmiddelen te verdikken, geleren en stabiliseren. Verwerkt Eucheuma-zeewier (INS 407a / E407a) is een nauw verwante vorm met dezelfde textuurfuncties.",
+  "why_botia": "Carrageen komt uit rode zeewieren en wordt gebruikt om te verdikken en geleren — je vindt het in plantaardige dranken, room en verwerkt vlees. Een in kleinere stukken afgebroken vorm van hetzelfde materiaal, poligeenan, veroorzaakt darmontsteking bij dieren en is niet toegestaan in voedsel. Carrageen van voedselkwaliteit kan kleine hoeveelheden kortere stukken bevatten en het blijft onzeker of er tijdens de spijsvertering meer ontstaan; JECFA hield een ADI “niet gespecificeerd”, terwijl EFSA een tijdelijke numerieke grens behield omdat die onzekerheid niet volledig was opgelost.",
+  "can_1": "E407, E407a, INS 407, INS 407a, carrageen en verwerkt Eucheuma-zeewier detecteren wanneer deze expliciet worden vermeld.",
+  "can_2": "Het verschil uitleggen tussen carrageen van voedselkwaliteit en de afgebroken vorm, en waarom kleinere stukken nog steeds een open vraag zijn.",
+  "cannot_1": "Uit de ingrediëntenlijst bepalen hoeveel kleiner afgebroken materiaal in een bepaalde carrageenbereiding zit.",
+  "cannot_2": "Bepalen of tijdens verwerking of vertering verdere afbraak heeft plaatsgevonden of een individuele darmreactie voorspellen.",
   "sources": [
     {
-      "label": "Verordening (EU) nr. 231/2012 van de Commissie",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Carrageenan (INS 407)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/377"
     },
     {
-      "label": "EFSA — Herbeoordeling van carrageen (E 407, E 407a), 2018",
-      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+      "label": "JECFA — Processed Eucheuma seaweed / semi-refined carrageenan (INS 407a)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2457"
     },
     {
-      "label": "JECFA — Carrageen (INS 407)",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
+      "label": "EFSA — Re-evaluation of carrageenan (E407) and processed Eucheuma seaweed (E407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
     }
   ],
   "title": "Carrageen",
-  "description": "Een hydrocolloïde gewonnen uit rode zeewieren."
+  "description": "Carrageen is een verdikkingsmiddel uit rode zeewieren in plantaardige dranken, room en verwerkt vlees; de open vraag gaat over kleinere afbraakstukken."
 }

@@ -1,32 +1,36 @@
 {
   "name": "卡拉胶",
   "e_code": "E407",
-  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "从红藻中提取的一类硫酸化多糖，用于食品的胶凝、增稠或稳定；E407a为经加工的Eucheuma海藻。",
-  "why_botia": "BOTIA 标记 E407 和 E407a，因为标签不会显示其分子量分布。EFSA 在等待有关低分子量物质和尚未解决的肠道炎症影响的更充分数据期间，将其组别 ADI 保持为临时值。",
-  "can_1": "检测E407或E407a的存在，并将其归类到质地层。",
-  "can_2": "提供关于低分子量组分或加工助剂的警告详情。",
-  "cannot_1": "无法验证低于50 kDa的低分子量卡拉胶污染物的确切水平。",
-  "cannot_2": "无法检测其提取过程中使用的痕量萃取溶剂残留。",
+  "what_is": "卡拉胶（INS 407 / E407）来自红藻，用于增稠、凝胶和稳定食品。加工麒麟菜（INS 407a / E407a）是与其密切相关、用于相同质构功能的形式。",
+  "why_botia": "卡拉胶来自红藻，用于增稠和形成凝胶——植物饮料、奶油和加工肉制品中都可能出现。相同材料被分解成较小片段后的形式称为 poligeenan，它会在动物中引起肠道炎症，并不允许用于食品。食品级卡拉胶可以含有少量较短片段，而消化过程中是否还会形成更多片段仍不确定；JECFA 保留“无需限定”的 ADI，而 EFSA 因这一不确定性尚未完全解决而保留了临时数值限量。",
+  "can_1": "识别明确标示的 E407、E407a、INS 407、INS 407a、卡拉胶和加工麒麟菜。",
+  "can_2": "解释食品级卡拉胶与其分解形式的区别，以及为什么较小片段仍是一个未解决的问题。",
+  "cannot_1": "仅根据配料表确定某一具体卡拉胶制品中含有多少较小的分解材料。",
+  "cannot_2": "确定加工或消化过程中是否发生了额外分解，或预测个人的肠道反应。",
   "sources": [
     {
-      "label": "欧盟委员会条例（EU）第231/2012号",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Carrageenan (INS 407)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/377"
     },
     {
-      "label": "EFSA——卡拉胶再评估（E 407、E 407a），2018年",
-      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+      "label": "JECFA — Processed Eucheuma seaweed / semi-refined carrageenan (INS 407a)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2457"
     },
     {
-      "label": "JECFA——卡拉胶（INS 407）",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
+      "label": "EFSA — Re-evaluation of carrageenan (E407) and processed Eucheuma seaweed (E407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
     }
   ],
   "title": "卡拉胶",
-  "description": "一种从红藻中提取的水胶体。"
+  "description": "卡拉胶是一种来自红藻的增稠剂，常用于植物饮料、奶油和加工肉制品；未解决的问题在于较小的分解片段。"
 }

@@ -1,32 +1,36 @@
 {
   "name": "Carragenina",
   "e_code": "E407",
-  "aliases": "E407, E407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
+  "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "what_is": "Una famiglia di polisaccaridi solfati estratti dalle alghe rosse e utilizzati per gelificare, addensare o stabilizzare gli alimenti; l'E407a è alga Eucheuma trasformata.",
-  "why_botia": "BOTIA segnala E407 ed E407a perché l'etichetta non rivela il loro profilo di peso molecolare. L'EFSA ha lasciato temporaneo il suo ADI di gruppo in attesa di dati migliori sul materiale a basso peso molecolare e sugli effetti infiammatori intestinali non ancora risolti.",
-  "can_1": "Rileva la presenza di E407 o E407a e classificala sotto il livello di consistenza.",
-  "can_2": "Fornire dettagli di avvertenza sulle frazioni a basso peso molecolare o sugli ausiliari di lavorazione.",
-  "cannot_1": "Verificare il livello esatto dei contaminanti di carragenina a basso peso molecolare al di sotto di 50 kDa.",
-  "cannot_2": "Rilevare tracce di residui di solventi di estrazione utilizzati nel suo isolamento.",
+  "what_is": "La carragenina (INS 407 / E407) deriva da alghe rosse ed è usata per addensare, gelificare e stabilizzare gli alimenti. L'alga Eucheuma lavorata (INS 407a / E407a) è una forma strettamente correlata usata per le stesse funzioni di consistenza.",
+  "why_botia": "La carragenina deriva da alghe rosse ed è usata per addensare e gelificare — si trova nelle bevande vegetali, nella panna e nella carne lavorata. Una forma dello stesso materiale spezzata in frammenti più piccoli, chiamata poligeenan, provoca infiammazione intestinale negli animali e non è consentita negli alimenti. La carragenina alimentare può contenere piccole quantità di frammenti più corti e non è ancora chiaro se se ne formino altri durante la digestione; il JECFA ha mantenuto una DGA “non specificata”, mentre l'EFSA ha mantenuto un limite numerico temporaneo perché questa incertezza non era completamente risolta.",
+  "can_1": "Rilevare E407, E407a, INS 407, INS 407a, carragenina e alga Eucheuma lavorata quando dichiarati esplicitamente.",
+  "can_2": "Spiegare la differenza tra carragenina alimentare e la sua forma degradata e perché i frammenti più piccoli restano una questione aperta.",
+  "cannot_1": "Determinare dalla lista degli ingredienti quanto materiale degradato in frammenti più piccoli è presente in una specifica preparazione.",
+  "cannot_2": "Determinare se si è verificata ulteriore degradazione durante la lavorazione o la digestione o prevedere la risposta intestinale individuale.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Carrageenan (INS 407)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/377"
     },
     {
-      "label": "EFSA — Rivalutazione della carragenina (E 407, E 407a), 2018",
-      "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5238"
+      "label": "JECFA — Processed Eucheuma seaweed / semi-refined carrageenan (INS 407a)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2457"
     },
     {
-      "label": "JECFA — Carragenina (INS 407)",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=407"
+      "label": "EFSA — Re-evaluation of carrageenan (E407) and processed Eucheuma seaweed (E407a), 2018",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5238"
+    },
+    {
+      "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
     }
   ],
   "title": "Carragenina",
-  "description": "Un idrocolloide estratto dalle alghe rosse."
+  "description": "La carragenina è un addensante da alghe rosse usato in bevande vegetali, panna e carne lavorata; la questione aperta riguarda i frammenti più piccoli."
 }
