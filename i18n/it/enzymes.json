@@ -7,22 +7,30 @@
     "animal",
     "muslim"
   ],
-  "what_is": "Proteine che agiscono come catalizzatori per accelerare le reazioni chimiche nella lavorazione degli alimenti.",
-  "why_botia": "Le segnala perché enzimi come il caglio o la lipasi possono essere estratti da stomaci di animali, colture microbiche o organismi geneticamente modificati, creando notevoli preoccupazioni per quanto riguarda halal e vegetariani.",
-  "can_1": "Identificare le dichiarazioni generiche o specifiche degli enzimi su un'etichetta.",
-  "can_2": "Evidenzia la possibile origine animale e attiva i livelli di scelta religiosa.",
-  "cannot_1": "Determinare se l'enzima proveniva da una fermentazione microbica, da una pianta o da un tessuto animale.",
-  "cannot_2": "Verificare se l'enzima rimane attivo o è stato completamente denaturato/inattivato nel prodotto alimentare finale.",
+  "what_is": "Proteine usate per accelerare specifiche reazioni durante la produzione degli alimenti. Molti sono coadiuvanti tecnologici e possono essere rimossi, inattivati o rimanere solo come residui.",
+  "why_botia": "Gli enzimi svolgono il loro lavoro durante la produzione e spesso vengono distrutti, inattivati o restano soltanto come residui — per questo molti non compaiono nemmeno nell’elenco degli ingredienti. Il caglio del formaggio è l’esempio più noto: può provenire dallo stomaco di un vitello, da microrganismi o essere prodotto tramite fermentazione con microrganismi geneticamente modificati, e l’etichetta raramente lo chiarisce. Quando gli enzimi sono dichiarati, il nome spesso non ne rivela l’origine.",
+  "can_1": "Rilevare caglio, enzimi e nomi specifici di enzimi quando sono effettivamente dichiarati nell’elenco degli ingredienti.",
+  "can_2": "Spiegare che gli enzimi dichiarati possono avere origine animale, microbica, vegetale o da fermentazione e mostrare i livelli Animal e Muslim quando la tracciabilità è rilevante.",
+  "cannot_1": "Rilevare un enzima usato come coadiuvante tecnologico quando non compare in nessun punto dell’etichetta.",
+  "cannot_2": "Determinare l’origine esatta di un enzima dichiarato quando il produttore indica soltanto il nome.",
   "sources": [
     {
-      "label": "Regolamento (CE) n. 1332/2008 sugli enzimi alimentari",
+      "label": "EU Regulation 1332/2008 — food enzymes",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1332/2012-12-03/eng"
     },
     {
-      "label": "Regolamento (UE) n. 1169/2011",
+      "label": "EU Regulation 1169/2011 — ingredients and processing aids",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "JECFA — Rennet",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-373.pdf"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives, processing aids and enzymes",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Enzimi alimentari",
-  "description": "Proteine che agiscono come catalizzatori per accelerare le reazioni chimiche nella lavorazione degli alimenti."
+  "description": "Gli enzimi alimentari agiscono durante la produzione e, quando usati come coadiuvanti tecnologici, possono non comparire nell’elenco degli ingredienti. Il caglio può avere origine animale, microbica o da fermentazione."
 }

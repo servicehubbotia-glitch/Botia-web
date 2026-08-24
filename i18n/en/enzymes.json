@@ -7,22 +7,30 @@
     "animal",
     "muslim"
   ],
-  "what_is": "Proteins that act as catalysts to accelerate chemical reactions in food processing.",
-  "why_botia": "It flags them because enzymes like rennet or lipase can be extracted from animal stomachs, microbial cultures, or genetically modified organisms, creating major halal and vegetarian concerns.",
-  "can_1": "Identify generic or specific enzyme declarations on a label.",
-  "can_2": "Highlight potential animal origin and activate religious choice layers.",
-  "cannot_1": "Determine whether the enzyme was sourced from a microbial fermentation, a plant, or an animal tissue.",
-  "cannot_2": "Verify if the enzyme remains active or has been completely denatured/inactivated in the final food product.",
+  "what_is": "Proteins used to speed up specific reactions during food manufacturing. Many are used as processing aids and may be removed, inactivated or remain only as residues in the finished food.",
+  "why_botia": "Food enzymes do their work during manufacturing and are often destroyed, inactivated or remain only as residues — which is why many do not appear on the ingredient list. Rennet in cheese is the best-known example: it can come from the stomach of a calf, from microorganisms, or be produced by fermentation with genetically modified microorganisms, and the label rarely makes that clear. When enzymes are declared, the name often does not reveal their source.",
+  "can_1": "Detect rennet, enzymes and specific enzyme names when they are actually declared on the ingredient list.",
+  "can_2": "Explain that declared enzymes may have animal, microbial, plant or fermentation-derived sources and activate the Animal and Muslim traceability layers when the source matters.",
+  "cannot_1": "Detect an enzyme used as a processing aid when it does not appear anywhere on the product label.",
+  "cannot_2": "Determine the exact source of a declared enzyme when the manufacturer gives only the enzyme name and no source information.",
   "sources": [
     {
-      "label": "Regulation (EC) No 1332/2008 on food enzymes",
+      "label": "EU Regulation 1332/2008 — food enzymes",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1332/2012-12-03/eng"
     },
     {
-      "label": "Regulation (EU) No 1169/2011",
+      "label": "EU Regulation 1169/2011 — ingredients and processing aids",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "JECFA — Rennet",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-373.pdf"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives, processing aids and enzymes",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Food enzymes",
-  "description": "Proteins that act as catalysts to accelerate chemical reactions in food processing."
+  "description": "Food enzymes often act during manufacturing and may be absent from the ingredient list when used as processing aids. Rennet can have animal, microbial or fermentation-derived sources that the label may not reveal."
 }

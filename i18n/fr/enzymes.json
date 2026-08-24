@@ -7,22 +7,30 @@
     "animal",
     "muslim"
   ],
-  "what_is": "Protéines qui agissent comme catalyseurs pour accélérer les réactions chimiques dans la transformation des aliments.",
-  "why_botia": "Il les signale car des enzymes comme la présure ou la lipase peuvent être extraites d'estomacs d'animaux, de cultures microbiennes ou d'organismes génétiquement modifiés, créant des préoccupations majeures en matière de halal et de végétarisme.",
-  "can_1": "Identifier les déclarations d'enzymes génériques ou spécifiques sur une étiquette.",
-  "can_2": "Mettre en évidence l'origine animale potentielle et activer les couches de choix religieux.",
-  "cannot_1": "Déterminer si l'enzyme provient d'une fermentation microbienne, d'une plante ou d'un tissu animal.",
-  "cannot_2": "Vérifier si l'enzyme reste active ou a été complètement dénaturée/inactivée dans le produit alimentaire final.",
+  "what_is": "Des protéines utilisées pour accélérer des réactions précises pendant la fabrication des aliments. Beaucoup servent d’auxiliaires technologiques et peuvent être éliminées, inactivées ou ne subsister qu’à l’état de traces.",
+  "why_botia": "Les enzymes font leur travail pendant la fabrication et sont souvent détruites, inactivées ou ne restent qu’à l’état de traces — c’est pourquoi beaucoup n’apparaissent même pas dans la liste d’ingrédients. La présure du fromage est l’exemple le plus connu : elle peut provenir de l’estomac d’un veau, de microorganismes ou être produite par fermentation avec des microorganismes génétiquement modifiés, et l’étiquette le précise rarement. Lorsqu’une enzyme est déclarée, son nom ne révèle souvent pas son origine.",
+  "can_1": "Identifier la présure, les enzymes et leurs noms spécifiques lorsqu’ils sont effectivement déclarés dans la liste d’ingrédients.",
+  "can_2": "Expliquer qu’une enzyme déclarée peut avoir une origine animale, microbienne, végétale ou issue de fermentation et afficher les couches Animal et Muslim lorsque la traçabilité de l’origine est pertinente.",
+  "cannot_1": "Détecter une enzyme utilisée comme auxiliaire technologique lorsqu’elle n’apparaît nulle part sur l’étiquette.",
+  "cannot_2": "Déterminer l’origine exacte d’une enzyme déclarée lorsque le fabricant ne donne que son nom.",
   "sources": [
     {
-      "label": "Règlement (CE) n° 1332/2008 sur les enzymes alimentaires",
+      "label": "EU Regulation 1332/2008 — food enzymes",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1332/2012-12-03/eng"
     },
     {
-      "label": "Règlement (UE) n° 1169/2011",
+      "label": "EU Regulation 1169/2011 — ingredients and processing aids",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "JECFA — Rennet",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-373.pdf"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives, processing aids and enzymes",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Enzymes alimentaires",
-  "description": "Protéines qui agissent comme catalyseurs pour accélérer les réactions chimiques dans la transformation des aliments."
+  "description": "Les enzymes alimentaires agissent pendant la fabrication et peuvent ne pas figurer dans la liste d’ingrédients lorsqu’elles sont utilisées comme auxiliaires technologiques. La présure peut avoir plusieurs origines."
 }

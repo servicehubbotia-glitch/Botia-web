@@ -7,22 +7,30 @@
     "animal",
     "muslim"
   ],
-  "what_is": "Protein yang berfungsi sebagai katalis untuk mempercepat reaksi kimia dalam pengolahan makanan.",
-  "why_botia": "Ini menandainya karena enzim seperti rennet atau lipase dapat diekstraksi dari lambung hewan, kultur mikroba, atau organisme yang dimodifikasi secara genetik, menimbulkan kekhawatiran besar terkait halal dan vegetarian.",
-  "can_1": "Mengidentifikasi deklarasi enzim generik atau spesifik pada label.",
-  "can_2": "Menyoroti potensi asal hewani dan mengaktifkan lapisan pilihan agama.",
-  "cannot_1": "Menentukan apakah enzim berasal dari fermentasi mikroba, tanaman, atau jaringan hewan.",
-  "cannot_2": "Memverifikasi apakah enzim tetap aktif atau telah sepenuhnya terdenaturasi/tidak aktif dalam produk makanan akhir.",
+  "what_is": "Protein yang digunakan untuk mempercepat reaksi tertentu selama pembuatan pangan. Banyak digunakan sebagai bahan bantu proses dan dapat dihilangkan, dinonaktifkan atau hanya tersisa sebagai residu.",
+  "why_botia": "Enzim bekerja selama proses produksi dan sering kali dihancurkan, dinonaktifkan atau hanya tersisa sebagai residu — karena itu banyak yang bahkan tidak muncul dalam daftar bahan. Rennet pada keju adalah contoh yang paling dikenal: dapat berasal dari lambung anak sapi, dari mikroorganisme, atau diproduksi melalui fermentasi dengan mikroorganisme hasil rekayasa genetika, dan label jarang menjelaskannya. Ketika enzim dicantumkan, namanya sering tidak menunjukkan sumbernya.",
+  "can_1": "Mendeteksi rennet, enzim dan nama enzim tertentu ketika benar-benar dicantumkan dalam daftar bahan.",
+  "can_2": "Menjelaskan bahwa enzim yang dinyatakan dapat berasal dari hewan, mikroba, tumbuhan atau fermentasi dan menampilkan lapisan Animal dan Muslim ketika ketertelusuran sumber penting.",
+  "cannot_1": "Mendeteksi enzim yang digunakan sebagai bahan bantu proses ketika tidak tercantum di mana pun pada label.",
+  "cannot_2": "Menentukan sumber pasti enzim yang dinyatakan ketika produsen hanya memberikan nama enzim tanpa informasi asal.",
   "sources": [
     {
-      "label": "Peraturan (EC) No 1332/2008 tentang enzim makanan",
+      "label": "EU Regulation 1332/2008 — food enzymes",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1332/2012-12-03/eng"
     },
     {
-      "label": "Peraturan (EU) No 1169/2011",
+      "label": "EU Regulation 1169/2011 — ingredients and processing aids",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "JECFA — Rennet",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-373.pdf"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives, processing aids and enzymes",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Enzim makanan",
-  "description": "Protein yang berfungsi sebagai katalis untuk mempercepat reaksi kimia dalam pengolahan makanan."
+  "description": "Enzim pangan bekerja selama proses produksi dan dapat tidak tercantum dalam daftar bahan ketika digunakan sebagai bahan bantu proses. Rennet dapat berasal dari hewan, mikroba atau fermentasi."
 }

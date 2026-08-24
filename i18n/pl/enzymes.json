@@ -7,22 +7,30 @@
     "animal",
     "muslim"
   ],
-  "what_is": "Białka działające jako katalizatory przyspieszające reakcje chemiczne w przetwórstwie żywności.",
-  "why_botia": "Oznacza je, ponieważ enzymy takie jak podpuszczka czy lipaza mogą być pozyskiwane z żołądków zwierząt, kultur mikrobiologicznych lub organizmów modyfikowanych genetycznie, co stwarza poważne problemy halal i wegetariańskie.",
-  "can_1": "Identyfikować ogólne lub szczegółowe deklaracje enzymów na etykiecie.",
-  "can_2": "Wskazywać potencjalne pochodzenie zwierzęce i aktywować warstwy wyboru religijnego.",
-  "cannot_1": "Określić, czy enzym pochodzi z fermentacji mikrobiologicznej, rośliny czy tkanki zwierzęcej.",
-  "cannot_2": "Zweryfikować, czy enzym pozostaje aktywny, czy został całkowicie zdenaturowany/unieczynniony w końcowym produkcie spożywczym.",
+  "what_is": "Białka używane do przyspieszania określonych reakcji podczas produkcji żywności. Wiele z nich jest środkami pomocniczymi i może zostać usuniętych, inaktywowanych lub pozostać jedynie jako ślady.",
+  "why_botia": "Enzymy wykonują swoją funkcję podczas produkcji i często są niszczone, inaktywowane lub pozostają tylko jako ślady — dlatego wielu z nich w ogóle nie ma na liście składników. Podpuszczka w serze jest najbardziej znanym przykładem: może pochodzić z żołądka cielęcia, z mikroorganizmów lub być produkowana przez fermentację z użyciem genetycznie zmodyfikowanych mikroorganizmów, a etykieta rzadko to wyjaśnia. Nawet jeśli enzym jest wymieniony, jego nazwa często nie ujawnia źródła.",
+  "can_1": "Rozpoznawać podpuszczkę, enzymy i konkretne nazwy enzymów, gdy są rzeczywiście podane na liście składników.",
+  "can_2": "Wyjaśniać, że zadeklarowane enzymy mogą mieć pochodzenie zwierzęce, mikrobiologiczne, roślinne lub fermentacyjne i pokazywać warstwy Animal i Muslim, gdy pochodzenie jest istotne.",
+  "cannot_1": "Wykryć enzym użyty jako środek pomocniczy, jeśli nie występuje nigdzie na etykiecie.",
+  "cannot_2": "Określić dokładnego źródła zadeklarowanego enzymu, jeśli producent podaje tylko jego nazwę.",
   "sources": [
     {
-      "label": "Rozporządzenie (WE) nr 1332/2008 w sprawie enzymów spożywczych",
+      "label": "EU Regulation 1332/2008 — food enzymes",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1332/2012-12-03/eng"
     },
     {
-      "label": "Rozporządzenie (UE) nr 1169/2011",
+      "label": "EU Regulation 1169/2011 — ingredients and processing aids",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "JECFA — Rennet",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-373.pdf"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives, processing aids and enzymes",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Enzymy spożywcze",
-  "description": "Białka działające jako katalizatory przyspieszające reakcje chemiczne w przetwórstwie żywności."
+  "description": "Enzymy spożywcze działają podczas produkcji i jako substancje pomocnicze mogą nie pojawiać się na liście składników. Podpuszczka może mieć pochodzenie zwierzęce, mikrobiologiczne lub pochodzić z fermentacji."
 }

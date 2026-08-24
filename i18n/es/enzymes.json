@@ -7,22 +7,30 @@
     "animal",
     "muslim"
   ],
-  "what_is": "Proteínas que actúan como catalizadores para acelerar reacciones químicas en el procesamiento de alimentos.",
-  "why_botia": "Las marca porque enzimas como el cuajo o la lipasa pueden extraerse de estómagos de animales, cultivos microbianos u organismos genéticamente modificados, lo que genera importantes preocupaciones halal y vegetarianas.",
-  "can_1": "Identificar declaraciones de enzimas genéricas o específicas en una etiqueta.",
-  "can_2": "Resaltar el posible origen animal y activar las capas de elección religiosa.",
-  "cannot_1": "Determinar si la enzima se obtuvo de una fermentación microbiana, una planta o un tejido animal.",
-  "cannot_2": "Verificar si la enzima permanece activa o ha sido completamente desnaturalizada/inactivada en el producto alimenticio final.",
+  "what_is": "Proteínas utilizadas para acelerar reacciones concretas durante la fabricación de alimentos. Muchas se usan como coadyuvantes tecnológicos y pueden eliminarse, inactivarse o quedar solo como restos en el alimento final.",
+  "why_botia": "Las enzimas hacen su trabajo durante la fabricación y a menudo se destruyen, se inactivan o quedan solo como restos — por eso muchas veces ni aparecen en la lista de ingredientes. El cuajo del queso es el caso más conocido: puede venir del estómago de un ternero, de microorganismos o producirse por fermentación con microorganismos modificados genéticamente, y la etiqueta rara vez lo aclara. Cuando sí se declaran, el nombre a menudo no revela de dónde vienen.",
+  "can_1": "Detectar cuajo, enzimas y nombres concretos de enzimas cuando realmente aparecen declarados en la lista de ingredientes.",
+  "can_2": "Explicar que las enzimas declaradas pueden tener origen animal, microbiano, vegetal o proceder de fermentación y activar las capas Animal y Muslim de trazabilidad cuando el origen importa.",
+  "cannot_1": "Detectar una enzima utilizada como coadyuvante tecnológico cuando no aparece en ningún lugar de la etiqueta.",
+  "cannot_2": "Determinar el origen exacto de una enzima declarada cuando el fabricante solo indica el nombre de la enzima y no aporta información sobre su procedencia.",
   "sources": [
     {
-      "label": "Reglamento (CE) n.º 1332/2008 sobre enzimas alimentarias",
+      "label": "Reglamento UE 1332/2008 — enzimas alimentarias",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1332/2012-12-03/eng"
     },
     {
-      "label": "Reglamento (UE) n.º 1169/2011",
+      "label": "Reglamento UE 1169/2011 — ingredientes y coadyuvantes tecnológicos",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "JECFA — Cuajo",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-373.pdf"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — aditivos, coadyuvantes y enzimas",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Enzimas alimentarias",
-  "description": "Proteínas que actúan como catalizadores para acelerar reacciones químicas en el procesamiento de alimentos."
+  "description": "Las enzimas alimentarias actúan durante la fabricación y pueden no aparecer en la lista de ingredientes cuando se usan como coadyuvantes tecnológicos. El cuajo puede tener origen animal, microbiano o de fermentación."
 }

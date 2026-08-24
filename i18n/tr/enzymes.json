@@ -7,22 +7,30 @@
     "animal",
     "muslim"
   ],
-  "what_is": "Gıda işlemede kimyasal reaksiyonları hızlandırmak için katalizör görevi gören proteinler.",
-  "why_botia": "Bunları işaretler çünkü peynir mayası veya lipaz gibi enzimler hayvan midelerinden, mikrobiyal kültürlerden veya genetiği değiştirilmiş organizmalardan elde edilebilir ve bu da büyük helal ve vejetaryen endişeleri yaratır.",
-  "can_1": "Bir etiketteki genel veya spesifik enzim beyanlarını tanımlayın.",
-  "can_2": "Potansiyel hayvansal kaynağı vurgulayın ve dini seçim katmanlarını etkinleştirin.",
-  "cannot_1": "Enzimin mikrobiyal fermantasyondan, bir bitkiden veya bir hayvan dokusundan elde edilip edilmediğini belirleyin.",
-  "cannot_2": "Enzimin nihai gıda ürününde aktif kalıp kalmadığını veya tamamen denatüre/inaktive edilip edilmediğini doğrulayın.",
+  "what_is": "Gıda üretimi sırasında belirli reaksiyonları hızlandırmak için kullanılan proteinlerdir. Birçoğu işlem yardımcısıdır ve son üründe uzaklaştırılmış, etkisizleştirilmiş veya yalnızca kalıntı halinde bulunabilir.",
+  "why_botia": "Enzimler işlerini üretim sırasında yapar ve çoğu zaman parçalanır, etkisizleşir veya yalnızca kalıntı halinde kalır — bu yüzden çoğu içerik listesinde hiç görünmez. Peynir mayası en bilinen örnektir: bir buzağının midesinden, mikroorganizmalardan gelebilir veya genetiği değiştirilmiş mikroorganizmalarla fermantasyon yoluyla üretilebilir; etiket bunu nadiren açıklar. Enzimler beyan edilse bile adı çoğu zaman kaynağını göstermez.",
+  "can_1": "Peynir mayasını, enzimleri ve belirli enzim adlarını gerçekten içerik listesinde beyan edildiklerinde tespit etmek.",
+  "can_2": "Beyan edilen enzimlerin hayvansal, mikrobiyal, bitkisel veya fermantasyon kaynaklı olabileceğini açıklamak ve kaynak önemli olduğunda Animal ve Muslim katmanlarını göstermek.",
+  "cannot_1": "Etikette hiçbir yerde bulunmayan, işlem yardımcısı olarak kullanılmış bir enzimi tespit etmek.",
+  "cannot_2": "Üretici yalnızca enzim adını verdiğinde enzimin kesin kaynağını belirlemek.",
   "sources": [
     {
-      "label": "Gıda enzimleri hakkında (EC) 1332/2008 sayılı Yönetmelik",
+      "label": "EU Regulation 1332/2008 — food enzymes",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1332/2012-12-03/eng"
     },
     {
-      "label": "(AB) 1169/2011 sayılı Yönetmelik",
+      "label": "EU Regulation 1169/2011 — ingredients and processing aids",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "JECFA — Rennet",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-373.pdf"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives, processing aids and enzymes",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Gıda enzimleri",
-  "description": "Gıda işlemede kimyasal reaksiyonları hızlandırmak için katalizör görevi gören proteinler."
+  "description": "Gıda enzimleri üretim sırasında çalışır ve işlem yardımcısı olarak kullanıldıklarında içerik listesinde görünmeyebilir. Peynir mayası hayvansal, mikrobiyal veya fermantasyon kaynaklı olabilir."
 }

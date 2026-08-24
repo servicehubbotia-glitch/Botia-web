@@ -7,22 +7,30 @@
     "animal",
     "muslim"
   ],
-  "what_is": "作为催化剂加速食品加工中化学反应的蛋白质。",
-  "why_botia": "标记它们是因为凝乳酶或脂肪酶等酶可能从动物胃、微生物培养物或转基因生物中提取，引发主要的清真和素食问题。",
-  "can_1": "识别标签上的一般或特定酶声明。",
-  "can_2": "突出潜在的动物来源并激活宗教选择层。",
-  "cannot_1": "确定酶是来自微生物发酵、植物还是动物组织。",
-  "cannot_2": "验证酶在最终食品中是否保持活性或已完全变性/失活。",
+  "what_is": "用于在食品生产过程中加速特定反应的蛋白质。许多食品酶作为加工助剂使用，最终可能被去除、失活或只以残留形式存在。",
+  "why_botia": "食品酶在生产过程中完成作用，之后往往被破坏、失活或只留下残留，因此很多根本不会出现在配料表中。奶酪凝乳酶是最典型的例子：它可以来自小牛胃、微生物，也可以通过使用转基因微生物发酵生产，而标签很少说明这一点。即使酶被列出，其名称通常也不能说明来源。",
+  "can_1": "当凝乳酶、酶或具体酶名称真正出现在配料表中时识别它们。",
+  "can_2": "说明已声明的酶可能来自动物、微生物、植物或发酵来源，并在来源追溯重要时显示 Animal 和 Muslim 信息层。",
+  "cannot_1": "检测作为加工助剂使用、但标签上完全没有声明的酶。",
+  "cannot_2": "当生产商只给出酶名称而没有来源信息时确定其确切来源。",
   "sources": [
     {
-      "label": "关于食品酶的（EC）第1332/2008号法规",
+      "label": "EU Regulation 1332/2008 — food enzymes",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1332/2012-12-03/eng"
     },
     {
-      "label": "（EU）第1169/2011号法规",
+      "label": "EU Regulation 1169/2011 — ingredients and processing aids",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "JECFA — Rennet",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-373.pdf"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives, processing aids and enzymes",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "食品酶",
-  "description": "作为催化剂加速食品加工中化学反应的蛋白质。"
+  "description": "食品酶在生产过程中发挥作用，如果作为加工助剂使用，可能不会出现在配料表中。凝乳酶可以来自动物、微生物或发酵来源。"
 }
