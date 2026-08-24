@@ -1,21 +1,33 @@
 {
   "name": "Karmoizyna",
   "title": "Karmoizyna",
-  "description": "Syntetyczny barwnik spożywczy oznaczony w UE jako E122.",
-  "what_is": "Syntetyczny barwnik spożywczy oznaczony w UE jako E122.",
-  "why_botia": "BOTIA oznacza E122, ponieważ rozporządzenie UE nr 1333/2008 zalicza go do barwników, w przypadku których określone produkty spożywcze muszą zawierać dodatkową informację, że barwnik ten może mieć niekorzystny wpływ na aktywność i koncentrację u dzieci, z zastrzeżeniem wyjątków przewidzianych w rozporządzeniu. Jest to wymóg dotyczący etykietowania, a nie przewidywanie skutków u konkretnego dziecka.",
-  "can_1": "Wykryj E122 oraz główne nazwy karmoizyny.",
-  "can_2": "Przedstawić kontekst dotyczący dodatkowego oznakowania w UE, nie przekształcając przy tym zasady dotyczącej ostrzeżeń w indywidualną opinię medyczną.",
-  "cannot_1": "Na podstawie listy składników określ ilość danego barwnika.",
-  "cannot_2": "Należy przewidzieć, czy dane dziecko odczuje dany skutek, czy też założyć, że ta sama treść ostrzeżenia ma zastosowanie we wszystkich jurysdykcjach.",
+  "description": "Żywność z karmoizyną musi w UE zawierać ostrzeżenie dotyczące aktywności i uwagi dzieci; w USA karmoizyna nie jest dopuszczona do stosowania w żywności.",
+  "what_is": "Karmoizyna (E122 / INS 122), zwana także azorubiną, jest syntetycznym czerwonym barwnikiem spożywczym.",
+  "why_botia": "Karmoizyna jest syntetycznym czerwonym barwnikiem, który w jelitach jest rozkładany do innych substancji uwzględnianych również w ocenie jego bezpieczeństwa. W UE żywność zawierająca karmoizynę musi mieć ostrzeżenie, że może ona mieć szkodliwy wpływ na aktywność i skupienie uwagi u dzieci — ostrzeżenie to wynika z badań mieszanin kilku barwników z benzoesanem sodu, a nie samej karmoizyny. Karmoizyna nie jest dopuszczona do stosowania w żywności w Stanach Zjednoczonych. JECFA ustaliła akceptowalne dzienne pobranie na poziomie 0–4 mg/kg masy ciała na dobę.",
+  "can_1": "Wykrywać E122, INS 122, karmoizynę i azorubinę, gdy są zadeklarowane na liście składników.",
+  "can_2": "Wyjaśniać ostrzeżenie UE dotyczące aktywności i uwagi, jego pochodzenie ze studium Southampton, fakt badania mieszanin zamiast samej karmoizyny oraz odmienny status w Stanach Zjednoczonych.",
+  "cannot_1": "Określić na podstawie listy składników ilości karmoizyny w produkcie.",
+  "cannot_2": "Przewidzieć, czy u konkretnego dziecka wystąpi efekt, ani traktować badania mieszanin Southampton jako dowodu na efekt samej karmoizyny.",
   "sources": [
     {
-      "label": "Rozporządzenie (WE) nr 1333/2008 — unijny wykaz dodatków do żywności oraz warunki ich stosowania",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Azorubine/Carmoisine, INS 122",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1704"
     },
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Azorubine toxicological monograph",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v18je03.htm"
+    },
+    {
+      "label": "EFSA — Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1333"
+    },
+    {
+      "label": "FDA — Carmoisine/Azorubine not listed for use in food in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E122",

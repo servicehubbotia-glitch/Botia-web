@@ -1,21 +1,33 @@
 {
   "name": "Karmoizin",
   "title": "Karmoizin",
-  "description": "AB’de E122 olarak tanımlanan sentetik bir gıda boyası.",
-  "what_is": "AB’de E122 olarak tanımlanan sentetik bir gıda boyası.",
-  "why_botia": "BOTIA, E122 kodunu işaretler; çünkü 1333/2008 sayılı AB Yönetmeliği, bu maddeyi, yönetmelikte belirtilen istisnalar saklı kalmak kaydıyla, belirli gıdalarda “bu renklendirici maddenin çocukların hareketlilik ve dikkat düzeyleri üzerinde olumsuz bir etki yaratabileceği” şeklinde ek bir uyarı bulunması gereken renklendirici maddeler arasında sınıflandırmaktadır. Bu, bir etiketleme zorunluluğudur; belirli bir çocukta ortaya çıkacak bir etkiye dair bir öngörü değildir.",
-  "can_1": "E122’yi ve karmoizin için beyan edilen başlıca isimleri tespit edin.",
-  "can_2": "Uyarı kuralını bireysel bir tıbbi sonuca dönüştürmeden, AB’nin ek etiketleme bağlamını gösterin.",
-  "cannot_1": "İçindekiler listesinden ürünün içerdiği renk miktarını belirleyin.",
-  "cannot_2": "Belirli bir çocuğun bir etkiyle karşı karşıya kalıp kalmayacağını tahmin edin ya da aynı uyarı metninin her yargı alanında geçerli olduğunu varsaymayın.",
+  "description": "AB'de karmoisin içeren gıdalar çocukların aktivitesi ve dikkati hakkında uyarı taşır; ABD'de gıdalarda kullanımına izin verilmez.",
+  "what_is": "Karmoisin (E122 / INS 122), azorubin olarak da bilinen sentetik kırmızı bir gıda renklendiricisidir.",
+  "why_botia": "Karmoisin, bağırsakta başka maddelere parçalanan sentetik kırmızı bir renklendiricidir ve bu maddeler de güvenlik değerlendirmesinde dikkate alınır. AB'de karmoisin içeren gıdalar, çocukların aktivitesi ve dikkati üzerinde olumsuz etki yaratabileceğine dair bir uyarı taşımalıdır — bu uyarı, karmoisinin tek başına değil, birkaç renklendiricinin sodyum benzoatla birlikte kullanıldığı karışımlar üzerinde yapılan çalışmalardan gelir. Karmoisinin Amerika Birleşik Devletleri'nde gıdalarda kullanımına izin verilmemektedir. JECFA günlük kabul edilebilir alımı 0–4 mg/kg vücut ağırlığı olarak belirlemiştir.",
+  "can_1": "İçerik listesinde belirtildiğinde E122, INS 122, karmoisin ve azorubini tespit etmek.",
+  "can_2": "AB'nin aktivite ve dikkat uyarısını, Southampton çalışmasındaki kökenini, karmoisinin tek başına değil karışımların test edildiğini ve ABD'deki farklı statüsünü açıklamak.",
+  "cannot_1": "İçerik listesinden bir üründe ne kadar karmoisin bulunduğunu belirlemek.",
+  "cannot_2": "Belirli bir çocukta etki olup olmayacağını öngörmek veya Southampton karışım çalışmasını yalnızca karmoisinin neden olduğu bir etkinin kanıtı olarak değerlendirmek.",
   "sources": [
     {
-      "label": "(EC) 1333/2008 sayılı Tüzük — Gıda katkı maddeleri için Birlik listesi ve kullanım koşulları",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Azorubine/Carmoisine, INS 122",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1704"
     },
     {
-      "label": "(AB) 231/2012 sayılı Komisyon Tüzüğü — onaylanmış gıda katkı maddelerine ilişkin şartlar",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Azorubine toxicological monograph",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v18je03.htm"
+    },
+    {
+      "label": "EFSA — Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1333"
+    },
+    {
+      "label": "FDA — Carmoisine/Azorubine not listed for use in food in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E122",

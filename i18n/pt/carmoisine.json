@@ -1,21 +1,33 @@
 {
   "name": "Carmoisina",
   "title": "Carmoisina",
-  "description": "Um corante alimentar sintético identificado na UE como E122.",
-  "what_is": "Um corante alimentar sintético identificado na UE como E122.",
-  "why_botia": "BOTIA assinala o E122 porque o Regulamento (CE) n.º 1333/2008 o inclui entre os corantes para os quais determinados alimentos devem ostentar a menção adicional de que o corante pode ter um efeito adverso na atividade e na atenção das crianças, sem prejuízo das exceções previstas no regulamento. Trata-se de um requisito de rotulagem, não de uma previsão de um efeito numa criança em particular.",
-  "can_1": "Detetar o E122 e os principais nomes declarados para a carmoisina.",
-  "can_2": "Apresentar o contexto da rotulagem adicional da UE sem transformar a regra de advertência numa conclusão médica individual.",
-  "cannot_1": "Determine a quantidade de corante presente a partir da lista de ingredientes.",
-  "cannot_2": "Prever se uma criança em particular irá sofrer um efeito ou partir do princípio de que o mesmo texto de aviso se aplica em todas as jurisdições.",
+  "description": "Na UE, alimentos com carmoisina devem apresentar um aviso sobre atividade e atenção nas crianças; a carmoisina não está autorizada para uso alimentar nos Estados Unidos.",
+  "what_is": "A carmoisina (E122 / INS 122), também chamada azorrubina, é um corante alimentar vermelho sintético.",
+  "why_botia": "A carmoisina é um corante vermelho sintético que o intestino transforma noutras substâncias, também consideradas na avaliação da sua segurança. Na UE, os alimentos que a contêm devem apresentar um aviso de que pode afetar negativamente a atividade e a atenção das crianças — um aviso que vem de estudos realizados com misturas de vários corantes e benzoato de sódio, não com carmoisina isoladamente. A carmoisina não está autorizada para uso alimentar nos Estados Unidos. O JECFA estabeleceu uma ingestão diária aceitável de 0–4 mg/kg de peso corporal por dia.",
+  "can_1": "Detetar E122, INS 122, carmoisina e azorrubina quando são declaradas na lista de ingredientes.",
+  "can_2": "Explicar o aviso da UE sobre atividade e atenção, a origem no estudo de Southampton, o facto de terem sido testadas misturas e não carmoisina isoladamente e o seu diferente estatuto nos Estados Unidos.",
+  "cannot_1": "Determinar a quantidade de carmoisina presente num produto a partir da lista de ingredientes.",
+  "cannot_2": "Prever se uma criança concreta mostrará um efeito ou tratar o estudo de Southampton sobre misturas como prova de um efeito causado pela carmoisina isoladamente.",
   "sources": [
     {
-      "label": "Regulamento (CE) n.º 1333/2008 — Lista da União e condições de utilização dos aditivos alimentares",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Azorubine/Carmoisine, INS 122",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1704"
     },
     {
-      "label": "Regulamento (UE) n.º 231/2012 da Comissão — especificações relativas aos aditivos alimentares autorizados",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Azorubine toxicological monograph",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v18je03.htm"
+    },
+    {
+      "label": "EFSA — Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1333"
+    },
+    {
+      "label": "FDA — Carmoisine/Azorubine not listed for use in food in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E122",

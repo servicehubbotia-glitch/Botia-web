@@ -1,21 +1,33 @@
 {
   "name": "Karmoisin",
   "title": "Karmoisin",
-  "description": "Pewarna makanan sintetis yang diklasifikasikan di Uni Eropa sebagai E122.",
-  "what_is": "Pewarna makanan sintetis yang diklasifikasikan di Uni Eropa sebagai E122.",
-  "why_botia": "BOTIA menandai E122 karena Peraturan Uni Eropa No. 1333/2008 memasukkannya ke dalam daftar pewarna yang mewajibkan produk makanan tertentu mencantumkan pernyataan tambahan bahwa pewarna tersebut mungkin berdampak negatif terhadap aktivitas dan konsentrasi anak-anak, dengan pengecualian sebagaimana diatur dalam peraturan tersebut. Ini merupakan persyaratan pelabelan, bukan prediksi mengenai dampak pada anak tertentu.",
-  "can_1": "Mendeteksi E122 dan nama-nama yang ditetapkan sebagai nama utama untuk Carmoisine.",
-  "can_2": "Tampilkan konteks pelabelan tambahan Uni Eropa tanpa mengubah aturan peringatan tersebut menjadi kesimpulan medis individual.",
-  "cannot_1": "Tentukan jumlah pewarna yang terkandung berdasarkan daftar bahan.",
-  "cannot_2": "Memprediksi apakah seorang anak tertentu akan mengalami dampak tersebut atau berasumsi bahwa peringatan dengan kata-kata yang sama berlaku di setiap yurisdiksi.",
+  "description": "Di UE, makanan dengan Carmoisine harus mencantumkan peringatan tentang aktivitas dan perhatian anak; Carmoisine tidak diizinkan untuk digunakan dalam makanan di Amerika Serikat.",
+  "what_is": "Carmoisine (E122 / INS 122), juga disebut azorubine, adalah pewarna makanan merah sintetis.",
+  "why_botia": "Carmoisine adalah pewarna merah sintetis yang diuraikan di usus menjadi zat-zat lain yang juga dipertimbangkan dalam penilaian keamanannya. Di UE, makanan yang mengandungnya harus mencantumkan peringatan bahwa zat ini dapat berdampak buruk pada aktivitas dan perhatian anak — peringatan yang berasal dari penelitian terhadap campuran beberapa pewarna bersama natrium benzoat, bukan Carmoisine secara terpisah. Carmoisine tidak diizinkan untuk digunakan dalam makanan di Amerika Serikat. JECFA menetapkan asupan harian yang dapat diterima sebesar 0–4 mg/kg berat badan per hari.",
+  "can_1": "Mendeteksi E122, INS 122, Carmoisine dan Azorubine ketika dinyatakan dalam daftar bahan.",
+  "can_2": "Menjelaskan peringatan UE tentang aktivitas dan perhatian, asalnya dari studi Southampton, fakta bahwa yang diuji adalah campuran bukan Carmoisine secara terpisah, dan statusnya yang berbeda di Amerika Serikat.",
+  "cannot_1": "Menentukan berapa banyak Carmoisine dalam suatu produk dari daftar bahan.",
+  "cannot_2": "Memprediksi apakah anak tertentu akan menunjukkan efek atau memperlakukan studi campuran Southampton sebagai bukti efek yang disebabkan Carmoisine sendiri.",
   "sources": [
     {
-      "label": "Peraturan (EC) No. 1333/2008 — Daftar Uni Eropa dan ketentuan penggunaan bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Azorubine/Carmoisine, INS 122",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1704"
     },
     {
-      "label": "Peraturan Komisi (UE) No. 231/2012 — spesifikasi bahan tambahan pangan yang diizinkan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Azorubine toxicological monograph",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v18je03.htm"
+    },
+    {
+      "label": "EFSA — Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1333"
+    },
+    {
+      "label": "FDA — Carmoisine/Azorubine not listed for use in food in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E122",

@@ -1,21 +1,33 @@
 {
   "name": "胭脂红",
   "title": "胭脂红",
-  "description": "一种在欧盟被标识为E122的合成食用色素。",
-  "what_is": "一种在欧盟被标识为E122的合成食用色素。",
-  "why_botia": "BOTIA 标记 E122，因为根据欧盟法规1333/2008，该色素被列为特定食品必须标注额外声明的色素之一，声明内容为“该色素可能对儿童的活动能力和注意力产生不利影响”，但该法规规定的例外情况除外。这是一项标签要求，并非对特定儿童可能产生的影响的预测。",
-  "can_1": "检测E122及卡莫西红的主要已命名化合物。",
-  "can_2": "展示欧盟补充标签的相关背景，同时避免将警告规则转化为个别医学结论。",
-  "cannot_1": "根据配料表确定其中所含的色素量。",
-  "cannot_2": "预测某名儿童是否会受到某种影响，或者假设相同的警示措辞在所有司法管辖区均适用。",
+  "description": "在欧盟，含 Carmoisine 的食品必须标注儿童活动和注意力警示；Carmoisine 未获准用于美国食品。",
+  "what_is": "胭脂红 E122（E122 / INS 122），又称 Azorubine，是一种合成红色食用色素。",
+  "why_botia": "Carmoisine 是一种合成红色色素，会在肠道中被分解成其他物质，而这些物质也会被纳入安全评估。在欧盟，含有它的食品必须标注警示，说明它可能对儿童的活动和注意力产生不良影响——这项警示源于多种色素与苯甲酸钠混合使用的研究，而不是单独研究 Carmoisine。Carmoisine 未获准用于美国食品。JECFA 将每日允许摄入量设为每公斤体重0–4毫克。",
+  "can_1": "识别配料表中明确出现的 E122、INS 122、Carmoisine 和 Azorubine。",
+  "can_2": "解释欧盟关于活动和注意力的警示、南安普敦研究的来源、研究测试的是混合物而非单独 Carmoisine，以及它在美国的不同监管状态。",
+  "cannot_1": "根据配料表确定产品中 Carmoisine 的具体含量。",
+  "cannot_2": "预测某个具体儿童是否会出现影响，也不能把南安普敦的混合物研究视为 Carmoisine 单独造成影响的证据。",
   "sources": [
     {
-      "label": "第1333/2008号（EC）法规——食品添加剂的欧盟清单及使用条件",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Azorubine/Carmoisine, INS 122",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1704"
     },
     {
-      "label": "欧盟委员会第231/2012号条例——经批准的食品添加剂规格",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Azorubine toxicological monograph",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v18je03.htm"
+    },
+    {
+      "label": "EFSA — Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1333"
+    },
+    {
+      "label": "FDA — Carmoisine/Azorubine not listed for use in food in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E122",

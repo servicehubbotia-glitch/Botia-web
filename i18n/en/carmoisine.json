@@ -6,22 +6,34 @@
   "layers": [
     "enumbers"
   ],
-  "what_is": "A synthetic food colour identified in the EU as E122.",
-  "why_botia": "BOTIA flags E122 because EU Regulation 1333/2008 places it among the colours for which specified foods must carry the additional statement that the colour may have an adverse effect on activity and attention in children, subject to the regulation's exceptions. This is a labelling requirement, not a prediction of an effect in a particular child.",
-  "can_1": "Detect E122 and the principal declared names for Carmoisine.",
-  "can_2": "Show the EU additional-labelling context without converting the warning rule into an individual medical conclusion.",
-  "cannot_1": "Determine the amount of colour present from the ingredient list.",
-  "cannot_2": "Predict whether a particular child will experience an effect or assume that the same warning wording applies in every jurisdiction.",
+  "what_is": "Carmoisine (E122 / INS 122), also called azorubine, is a synthetic red food colour.",
+  "why_botia": "Carmoisine is a synthetic red colour that the gut breaks down into other substances, which are also considered in its safety assessment. In the EU, foods containing it must carry a warning that it may have an adverse effect on activity and attention in children — a warning that comes from studies using mixtures of several colours with sodium benzoate, not Carmoisine on its own. Carmoisine is not authorised for use in food in the United States. JECFA set an ADI of 0–4 mg/kg body weight per day.",
+  "can_1": "Detect E122, INS 122, Carmoisine and Azorubine when they are declared in the ingredient list.",
+  "can_2": "Explain the EU activity-and-attention warning, its Southampton-study origin, the fact that mixtures rather than Carmoisine alone were tested, and its different status in the United States.",
+  "cannot_1": "Determine how much Carmoisine is present in a product from the ingredient list.",
+  "cannot_2": "Predict whether a particular child will show an effect or treat the Southampton mixture study as proof of an effect caused by Carmoisine alone.",
   "sources": [
     {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Azorubine/Carmoisine, INS 122",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1704"
     },
     {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Azorubine toxicological monograph",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v18je03.htm"
+    },
+    {
+      "label": "EFSA — Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1333"
+    },
+    {
+      "label": "FDA — Carmoisine/Azorubine not listed for use in food in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "title": "Carmoisine",
-  "description": "A synthetic food colour identified in the EU as E122."
+  "description": "EU foods containing Carmoisine must carry a warning about activity and attention in children; Carmoisine is not authorised for use in food in the United States."
 }
