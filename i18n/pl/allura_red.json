@@ -1,21 +1,29 @@
 {
   "name": "Allura Red AC",
   "title": "Allura Red AC",
-  "description": "Syntetyczny barwnik spożywczy oznaczony w UE jako E129.",
-  "what_is": "Syntetyczny barwnik spożywczy oznaczony w UE jako E129.",
-  "why_botia": "BOTIA oznaczono kodem E129, ponieważ rozporządzenie UE nr 1333/2008 zalicza go do barwników, w przypadku których na określonych produktach spożywczych musi znajdować się dodatkowa informacja, że barwnik ten może mieć niekorzystny wpływ na aktywność i koncentrację u dzieci, z zastrzeżeniem wyjątków przewidzianych w rozporządzeniu. Jest to wymóg dotyczący etykietowania, a nie przewidywanie skutków u konkretnego dziecka.",
-  "can_1": "Wykryć E129 oraz główne nazwy zadeklarowane dla barwnika Allura Red AC.",
-  "can_2": "Przedstawić kontekst dotyczący dodatkowego oznakowania w UE, nie przekształcając przy tym zasady dotyczącej ostrzeżeń w indywidualną opinię medyczną.",
-  "cannot_1": "Na podstawie listy składników określ ilość danego barwnika.",
-  "cannot_2": "Należy przewidzieć, czy dane dziecko doświadczy danego skutku, czy też założyć, że ta sama treść ostrzeżenia ma zastosowanie we wszystkich jurysdykcjach.",
+  "description": "Żywność z Allura Red musi w UE zawierać ostrzeżenie dotyczące aktywności i uwagi dzieci; dowody pochodziły z mieszanin barwników, nie z Allura Red osobno.",
+  "what_is": "Allura Red AC (E129 / INS 129) jest syntetycznym czerwonym barwnikiem używanym do nadawania żywności i napojom czerwonego lub czerwonawego koloru.",
+  "why_botia": "Allura Red jest syntetycznym czerwonym barwnikiem. W UE żywność zawierająca ten barwnik musi mieć ostrzeżenie, że może on mieć szkodliwy wpływ na aktywność i skupienie uwagi u dzieci. Ostrzeżenie wywodzi się z badania Southampton z 2007 roku, w którym testowano mieszaniny kilku barwników razem z benzoesanem sodu — nie Allura Red osobno. JECFA ustaliła akceptowalne dzienne pobranie na poziomie 0–7 mg/kg masy ciała i uznała, że szacowane narażenie z diety pozostaje poniżej tego poziomu.",
+  "can_1": "Wykrywać E129, INS 129, Allura Red AC, Red 40 i inne zadeklarowane nazwy na liście składników.",
+  "can_2": "Wyjaśniać ostrzeżenie UE dotyczące aktywności i uwagi, jego pochodzenie oraz dlaczego badanie Southampton nie dowodzi, że Allura Red samodzielnie wywołał raportowany efekt.",
+  "cannot_1": "Określić na podstawie listy składników ilości Allura Red w produkcie.",
+  "cannot_2": "Przewidzieć, czy u konkretnego dziecka wystąpi efekt, ani traktować badania mieszanin dodatków jako dowodu na efekt Allura Red stosowanego samodzielnie.",
   "sources": [
     {
-      "label": "Rozporządzenie (WE) nr 1333/2008 — unijny wykaz dodatków do żywności i warunki ich stosowania",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Allura Red AC, INS 129",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1413"
     },
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Evaluation of the Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EFSA — Safety advice on the six Southampton food colours",
+      "url": "https://www.efsa.europa.eu/en/press/news/091112"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V additional warning for six food colours",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32008R1333"
     }
   ],
   "e_code": "E129",

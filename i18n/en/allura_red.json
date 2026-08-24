@@ -6,22 +6,30 @@
   "layers": [
     "enumbers"
   ],
-  "what_is": "A synthetic food colour identified in the EU as E129.",
-  "why_botia": "BOTIA flags E129 because EU Regulation 1333/2008 places it among the colours for which specified foods must carry the additional statement that the colour may have an adverse effect on activity and attention in children, subject to the regulation's exceptions. This is a labelling requirement, not a prediction of an effect in a particular child.",
-  "can_1": "Detect E129 and the principal declared names for Allura Red AC.",
-  "can_2": "Show the EU additional-labelling context without converting the warning rule into an individual medical conclusion.",
-  "cannot_1": "Determine the amount of colour present from the ingredient list.",
-  "cannot_2": "Predict whether a particular child will experience an effect or assume that the same warning wording applies in every jurisdiction.",
+  "what_is": "Allura Red AC (E129 / INS 129) is a synthetic red colour used to give foods and drinks a red or reddish appearance.",
+  "why_botia": "Allura Red is a synthetic red colour. In the EU, foods containing it must carry a warning that it may affect activity and attention in children. That warning comes from the 2007 Southampton study, which tested mixtures of several colours together with sodium benzoate — not Allura Red on its own. JECFA set an ADI of 0–7 mg/kg body weight and concluded that estimated dietary exposure was below that level.",
+  "can_1": "Detect E129, INS 129, Allura Red AC, Red 40 and its other declared names in the ingredient list.",
+  "can_2": "Explain the EU activity-and-attention warning, where it came from and why the Southampton study cannot show that Allura Red alone caused the reported effect.",
+  "cannot_1": "Determine how much Allura Red is present in a product from the ingredient list.",
+  "cannot_2": "Predict whether a particular child will show an effect or treat a study of additive mixtures as proof of an effect from Allura Red alone.",
   "sources": [
     {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Allura Red AC, INS 129",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1413"
     },
     {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Evaluation of the Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EFSA — Safety advice on the six Southampton food colours",
+      "url": "https://www.efsa.europa.eu/en/press/news/091112"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V additional warning for six food colours",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32008R1333"
     }
   ],
   "title": "Allura Red AC",
-  "description": "A synthetic food colour identified in the EU as E129."
+  "description": "EU foods containing Allura Red must carry a warning about activity and attention in children; the evidence came from studies of colour mixtures, not Allura Red alone."
 }

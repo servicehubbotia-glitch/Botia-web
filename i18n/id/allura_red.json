@@ -1,21 +1,29 @@
 {
   "name": "Allura Red AC",
   "title": "Allura Red AC",
-  "description": "Pewarna pangan sintetis yang diidentifikasi di EU sebagai E129.",
-  "what_is": "Pewarna pangan sintetis yang diidentifikasi di EU sebagai E129.",
-  "why_botia": "BOTIA menandai E129 karena Peraturan EU 1333/2008 memasukkannya ke dalam kelompok pewarna yang, pada pangan tertentu, wajib disertai pernyataan tambahan bahwa pewarna tersebut dapat berdampak buruk pada aktivitas dan perhatian anak, dengan tunduk pada pengecualian dalam peraturan itu. Ini merupakan persyaratan pelabelan, bukan prediksi dampak pada anak tertentu.",
-  "can_1": "Mendeteksi E129 dan nama-nama utama yang dicantumkan untuk Allura Red AC.",
-  "can_2": "Menampilkan konteks pelabelan tambahan EU tanpa mengubah aturan peringatan menjadi kesimpulan medis individual.",
-  "cannot_1": "Menentukan jumlah pewarna yang ada dari daftar bahan.",
-  "cannot_2": "Memprediksi apakah anak tertentu akan mengalami dampak atau menganggap bahwa redaksi peringatan yang sama berlaku di setiap yurisdiksi.",
+  "description": "Di UE, makanan dengan Allura Red harus mencantumkan peringatan tentang aktivitas dan perhatian anak; bukti berasal dari campuran pewarna, bukan Allura Red secara terpisah.",
+  "what_is": "Allura Red AC (E129 / INS 129) adalah pewarna merah sintetis yang digunakan untuk memberi makanan dan minuman warna merah atau kemerahan.",
+  "why_botia": "Allura Red adalah pewarna merah sintetis. Di UE, makanan yang mengandungnya harus mencantumkan peringatan bahwa zat ini dapat berdampak buruk pada aktivitas dan perhatian anak. Peringatan tersebut berasal dari studi Southampton tahun 2007 yang menguji campuran beberapa pewarna bersama natrium benzoat — bukan Allura Red secara terpisah. JECFA menetapkan asupan harian yang dapat diterima sebesar 0–7 mg/kg berat badan dan menyimpulkan bahwa perkiraan paparan dari makanan berada di bawah tingkat tersebut.",
+  "can_1": "Mendeteksi E129, INS 129, Allura Red AC, Red 40 dan nama lain yang dinyatakan dalam daftar bahan.",
+  "can_2": "Menjelaskan peringatan UE tentang aktivitas dan perhatian, asal peringatan tersebut dan mengapa studi Southampton tidak membuktikan bahwa Allura Red sendiri menyebabkan efek yang dilaporkan.",
+  "cannot_1": "Menentukan berapa banyak Allura Red yang terdapat dalam suatu produk dari daftar bahan.",
+  "cannot_2": "Memprediksi apakah anak tertentu akan mengalami efek atau memperlakukan studi campuran bahan tambahan sebagai bukti efek Allura Red secara terpisah.",
   "sources": [
     {
-      "label": "Peraturan (EC) No. 1333/2008 — Daftar Uni dan ketentuan penggunaan bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Allura Red AC, INS 129",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1413"
     },
     {
-      "label": "Peraturan Komisi (EU) No. 231/2012 — Spesifikasi bahan tambahan pangan yang diizinkan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Evaluation of the Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EFSA — Safety advice on the six Southampton food colours",
+      "url": "https://www.efsa.europa.eu/en/press/news/091112"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V additional warning for six food colours",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32008R1333"
     }
   ],
   "e_code": "E129",

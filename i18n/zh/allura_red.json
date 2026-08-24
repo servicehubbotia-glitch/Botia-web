@@ -1,21 +1,29 @@
 {
   "name": "Allura Red AC",
   "title": "Allura Red AC",
-  "description": "一种在欧盟被标识为E129的合成食用色素。",
-  "what_is": "一种在欧盟被标识为E129的合成食用色素。",
-  "why_botia": "BOTIA 标记 E129，因为 EU 第1333/2008号法规将其列为一类色素：当指定食品使用这类色素时，必须附加声明，说明该色素可能对儿童的活动和注意力产生不良影响，但须遵守法规规定的例外情形。这是一项标签要求，并不是对某个特定儿童会受到影响的预测。",
-  "can_1": "检测 E129 和 Allura Red AC 的主要标示名称。",
-  "can_2": "说明 EU 附加标签要求的背景，而不把警示规则转化为针对个人的医学结论。",
-  "cannot_1": "根据配料表确定所含色素的量。",
-  "cannot_2": "预测某个特定儿童是否会受到影响，或假定所有司法管辖区都采用相同的警示措辞。",
+  "description": "在欧盟，含诱惑红的食品必须标注儿童活动和注意力警示；相关证据来自色素混合物，而不是单独的诱惑红。",
+  "what_is": "诱惑红 AC（E129 / INS 129）是一种合成红色食用色素，用于使食品和饮料呈红色或偏红色。",
+  "why_botia": "诱惑红是一种合成红色色素。在欧盟，含有它的食品必须标注警示，说明它可能对儿童的活动和注意力产生不良影响。这项警示源于2007年的南安普敦研究，该研究测试的是多种色素与苯甲酸钠组成的混合物——并没有单独测试诱惑红。JECFA 将每日允许摄入量设为每公斤体重0–7毫克，并认为估算的膳食暴露低于这一水平。",
+  "can_1": "识别配料表中的 E129、INS 129、Allura Red AC、Red 40 及其他明确标示的名称。",
+  "can_2": "解释欧盟关于活动和注意力的警示、其来源，以及为什么南安普敦研究不能证明诱惑红单独导致了报告中的影响。",
+  "cannot_1": "根据配料表确定产品中诱惑红的具体含量。",
+  "cannot_2": "预测某个具体儿童是否会出现影响，也不能把添加剂混合物研究当作诱惑红单独产生影响的证据。",
   "sources": [
     {
-      "label": "（EC）第1333/2008号法规——欧盟食品添加剂清单和使用条件",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Allura Red AC, INS 129",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1413"
     },
     {
-      "label": "欧盟委员会（EU）第231/2012号法规——获准食品添加剂规格",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Evaluation of the Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EFSA — Safety advice on the six Southampton food colours",
+      "url": "https://www.efsa.europa.eu/en/press/news/091112"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V additional warning for six food colours",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32008R1333"
     }
   ],
   "e_code": "E129",

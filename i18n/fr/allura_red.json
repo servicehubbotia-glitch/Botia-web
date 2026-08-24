@@ -1,21 +1,29 @@
 {
   "name": "Allura Red AC",
   "title": "Allura Red AC",
-  "description": "Un colorant alimentaire synthétique désigné dans l'UE sous le numéro E129.",
-  "what_is": "Un colorant alimentaire synthétique désigné dans l'UE sous le numéro E129.",
-  "why_botia": "BOTIA Il est classé sous le code E129, car le règlement (CE) n° 1333/2008 le range parmi les colorants pour lesquels certains aliments doivent comporter la mention supplémentaire indiquant que ce colorant peut avoir un effet négatif sur l'activité et l'attention des enfants, sous réserve des exceptions prévues par le règlement. Il s'agit d'une obligation d'étiquetage et non d'une prédiction d'un effet chez un enfant en particulier.",
-  "can_1": "Détecter l'E129 et les principales dénominations déclarées pour l'Allura Red AC.",
-  "can_2": "Présenter le contexte de l'étiquetage complémentaire de l'UE sans transformer la règle d'avertissement en une conclusion médicale individuelle.",
-  "cannot_1": "Déterminez la quantité de colorant présente à partir de la liste des ingrédients.",
-  "cannot_2": "Prédire si un enfant en particulier subira une conséquence ou partir du principe que la même formulation d'avertissement s'applique dans toutes les juridictions.",
+  "description": "Dans l'UE, les aliments contenant du rouge Allura doivent porter un avertissement sur l'activité et l'attention des enfants ; les données venaient de mélanges de colorants, pas du rouge Allura seul.",
+  "what_is": "Le rouge Allura AC (E129 / INS 129) est un colorant rouge synthétique utilisé pour donner aux aliments et boissons une couleur rouge ou rougeâtre.",
+  "why_botia": "Le rouge Allura est un colorant rouge synthétique. Dans l'UE, les aliments qui en contiennent doivent porter un avertissement indiquant qu'il peut avoir des effets sur l'activité et l'attention chez les enfants. Cet avertissement vient de l'étude de Southampton de 2007, qui a testé des mélanges de plusieurs colorants avec du benzoate de sodium — et non le rouge Allura seul. Le JECFA a fixé une dose journalière admissible de 0–7 mg/kg de poids corporel et a conclu que l'exposition alimentaire estimée restait en dessous de ce niveau.",
+  "can_1": "Détecter E129, INS 129, rouge Allura AC, Red 40 et ses autres noms déclarés dans la liste des ingrédients.",
+  "can_2": "Expliquer l'avertissement de l'UE sur l'activité et l'attention, son origine et pourquoi l'étude de Southampton ne montre pas que le rouge Allura seul a causé l'effet observé.",
+  "cannot_1": "Déterminer la quantité de rouge Allura présente dans un produit à partir de la liste des ingrédients.",
+  "cannot_2": "Prédire si un enfant particulier présentera un effet ou considérer une étude de mélanges d'additifs comme preuve d'un effet du rouge Allura seul.",
   "sources": [
     {
-      "label": "Règlement (CE) n° 1333/2008 — Liste de l'Union et conditions d'utilisation des additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Allura Red AC, INS 129",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1413"
     },
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission — spécifications relatives aux additifs alimentaires autorisés",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Evaluation of the Southampton study on food additives and child behaviour",
+      "url": "https://www.efsa.europa.eu/en/news/efsa-evaluates-southampton-study-food-additives-and-child-behaviour"
+    },
+    {
+      "label": "EFSA — Safety advice on the six Southampton food colours",
+      "url": "https://www.efsa.europa.eu/en/press/news/091112"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — Annex V additional warning for six food colours",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32008R1333"
     }
   ],
   "e_code": "E129",
