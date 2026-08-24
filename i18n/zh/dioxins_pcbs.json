@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "高毒性的持久性有机污染物，会在脂肪组织中生物累积。",
-  "why_botia": "二噁英和类二噁英多氯联苯具有持久性，并会在高脂肪食物和人体内蓄积，男女皆然。妊娠和哺乳之所以重要，是因为母亲体内的负荷可能使胎儿或婴儿暴露于这些物质——而非因为生物蓄积作用仅与女性相关。",
-  "can_1": "识别作为主要膳食来源的高风险含脂肪成分。",
-  "can_2": "提供关于母体负担和跨代传递的安全性细节。",
-  "cannot_1": "未经实验室分析无法确定毒性当量。",
-  "cannot_2": "无法确认产品是否超过欧洲可耐受每周摄入量。",
+  "what_is": "二噁英和类二噁英多氯联苯是持久性环境污染物，并不是食品配料。它们会在动物脂肪中积累，因此人体暴露主要来自鱼、肉、乳制品和蛋类等食品。",
+  "why_botia": "二噁英和类二噁英多氯联苯属于进入食品的毒性最强的持久性污染物之一；毒性最强的二噁英 TCDD 被 IARC 列为对人类致癌的第1类物质，而长期暴露与免疫系统、甲状腺激素和发育方面的影响有关。它们溶于脂肪，在人体中的含量减少一半可能需要7至11年，因此高脂鱼类、肉类、乳制品和蛋类是重要来源，真正重要的是随时间积累的体内负荷。它们可以穿过胎盘，而母乳也是人体排出这些物质的途径之一——这同时会把母体储存负荷的一部分转移给婴儿。因此 JECFA 将可耐受摄入量表示为每月总量，而不是一顿饭的限量。",
+  "can_1": "解释哪些食品是常见的膳食来源，以及为什么长期积累的体内负荷比某一顿饭更重要。",
+  "can_2": "解释 Woman 层为什么重要：二噁英和类二噁英多氯联苯可以穿过胎盘，也可以通过母乳转移给婴儿。",
+  "cannot_1": "根据配料表检测二噁英或多氯联苯污染，也不能判断某一种食品中实际含有多少。",
+  "cannot_2": "计算个人的毒性当量体内负荷，也不能根据一张标签判断有多少到达胎儿或母乳喂养的婴儿。",
   "sources": [
+    {
+      "label": "JECFA — PCDDs, PCDFs and coplanar PCBs",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2753"
+    },
     {
       "label": "WHO — Dioxins and their effects on human health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/dioxins-and-their-effects-on-human-health"
     },
     {
-      "label": "EFSA — 食品中二噁英和类二噁英 PCB 的风险评估，2026",
+      "label": "IARC — Chemical Agents and Related Occupations, Volume 100F",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Chemical-Agents-And-Related-Occupations-2012"
+    },
+    {
+      "label": "EFSA — Update of the risk assessment of dioxins and dioxin-like PCBs, 2026",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/10103"
+    },
+    {
+      "label": "WHO — Persistent Organic Pollutants: transfer through breast milk",
+      "url": "https://iris.who.int/bitstream/handle/10665/44525/9789241501101_eng.pdf"
     }
   ],
   "title": "二噁英和多氯联苯",
-  "description": "高毒性的持久性有机污染物，会在脂肪组织中生物累积。"
+  "description": "二噁英和类二噁英多氯联苯可在体脂中持续多年，通过食物不断积累，并可从母体转移给胎儿和婴儿。"
 }

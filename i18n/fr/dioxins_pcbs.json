@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Polluants organiques persistants hautement toxiques qui s'accumulent dans les tissus adipeux.",
-  "why_botia": "Les dioxines et les PCB de type dioxine persistent et s'accumulent dans les aliments gras et dans l'organisme, chez les deux sexes. La grossesse et l'allaitement sont importants car la charge corporelle de la mère peut exposer le fœtus ou le nourrisson — et non parce que la bioaccumulation serait spécifiquement féminine.",
-  "can_1": "Identifier les ingrédients riches en matières grasses à haut risque qui sont les principales sources alimentaires.",
-  "can_2": "Fournir des détails sur la sécurité concernant les charges corporelles maternelles et le transfert transgénérationnel.",
-  "cannot_1": "Déterminer l'équivalent toxique sans analyse en laboratoire.",
-  "cannot_2": "Confirmer si le produit dépasse la dose hebdomadaire tolérable européenne.",
+  "what_is": "Les dioxines et les PCB de type dioxine sont des contaminants environnementaux persistants, et non des ingrédients alimentaires. Ils s'accumulent dans les graisses animales et atteignent donc principalement l'être humain par des aliments comme le poisson, la viande, les produits laitiers et les œufs.",
+  "why_botia": "Les dioxines et les PCB de type dioxine comptent parmi les contaminants persistants les plus toxiques présents dans l'alimentation ; la TCDD, la dioxine la plus toxique, est classée par le CIRC comme cancérogène pour l'homme (Groupe 1), et l'exposition prolongée est liée à des effets sur le système immunitaire, les hormones thyroïdiennes et le développement. Ils se dissolvent dans les graisses et il peut falloir 7 à 11 ans pour que leur quantité dans l'organisme diminue de moitié ; les poissons gras, la viande, les produits laitiers et les œufs sont donc des sources importantes et c'est la charge corporelle accumulée qui compte. Ils traversent le placenta et le lait maternel constitue l'une des voies par lesquelles l'organisme les élimine — ce qui transfère aussi une partie de la charge stockée par la mère au nourrisson. Le JECFA exprime donc l'apport tolérable comme un total mensuel et non comme une limite pour un repas.",
+  "can_1": "Expliquer quels aliments sont des sources alimentaires courantes et pourquoi la charge corporelle accumulée au fil du temps compte davantage qu'un seul repas.",
+  "can_2": "Expliquer pourquoi la couche Woman est pertinente : les dioxines et PCB de type dioxine traversent le placenta et peuvent être transmis au nourrisson par le lait maternel.",
+  "cannot_1": "Détecter une contamination par des dioxines ou PCB à partir d'une liste d'ingrédients ni déterminer la quantité présente dans un aliment donné.",
+  "cannot_2": "Calculer la charge corporelle en équivalents toxiques d'une personne ni déterminer à partir d'une étiquette la quantité ayant atteint un fœtus ou un nourrisson allaité.",
   "sources": [
+    {
+      "label": "JECFA — PCDDs, PCDFs and coplanar PCBs",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2753"
+    },
     {
       "label": "WHO — Dioxins and their effects on human health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/dioxins-and-their-effects-on-human-health"
     },
     {
-      "label": "EFSA — Évaluation des risques liés aux dioxines et aux PCB de type dioxine dans les aliments, 2026",
+      "label": "IARC — Chemical Agents and Related Occupations, Volume 100F",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Chemical-Agents-And-Related-Occupations-2012"
+    },
+    {
+      "label": "EFSA — Update of the risk assessment of dioxins and dioxin-like PCBs, 2026",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/10103"
+    },
+    {
+      "label": "WHO — Persistent Organic Pollutants: transfer through breast milk",
+      "url": "https://iris.who.int/bitstream/handle/10665/44525/9789241501101_eng.pdf"
     }
   ],
   "title": "Dioxines et PCB",
-  "description": "Polluants organiques persistants hautement toxiques qui s'accumulent dans les tissus adipeux."
+  "description": "Les dioxines et PCB de type dioxine persistent pendant des années dans les graisses corporelles, s'accumulent par l'alimentation et peuvent passer de la mère au fœtus et au nourrisson."
 }

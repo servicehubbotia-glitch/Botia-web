@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Yağ dokularında biyolojik olarak biriken yüksek derecede toksik kalıcı organik kirleticiler.",
-  "why_botia": "Dioksinler ve dioksin benzeri PCB'ler, yağlı gıdalarda ve vücutta her iki cinsiyette de kalıcıdır ve birikir. Hamilelik ve emzirme önemlidir çünkü annenin vücut yükü fetüsü veya bebeği maruz bırakabilir — biyobirikimin yalnızca kadına özgü olmasından değil.",
-  "can_1": "Birincil diyet kaynakları olan yüksek riskli yağ içeren bileşenleri tanımlayın.",
-  "can_2": "Annenin vücut yükü ve nesiller arası aktarım hakkında güvenlik detayları sağlayın.",
-  "cannot_1": "Laboratuvar analizi olmadan Toksik Eşdeğerliği belirleyin.",
-  "cannot_2": "Ürünün Avrupa Toleranslı Haftalık Alımını aşıp aşmadığını onaylayın.",
+  "what_is": "Dioksinler ve dioksin benzeri PCB'ler kalıcı çevresel kirleticilerdir; gıda bileşeni değildir. Hayvansal yağda birikirler ve bu nedenle insanlara başlıca balık, et, süt ürünleri ve yumurta gibi gıdalar yoluyla ulaşırlar.",
+  "why_botia": "Dioksinler ve dioksin benzeri PCB'ler gıdaya ulaşan en toksik kalıcı kirleticiler arasındadır; en toksik dioksin olan TCDD, IARC tarafından insanlarda kanserojen (Grup 1) olarak sınıflandırılmıştır ve uzun süreli maruziyet bağışıklık sistemi, tiroid hormonları ve gelişim üzerindeki etkilerle ilişkilidir. Yağda çözünürler ve vücuttaki miktarlarının yarıya inmesi 7–11 yıl sürebilir; bu nedenle yağlı balık, et, süt ürünleri ve yumurta önemli kaynaklardır ve asıl önemli olan zamanla biriken vücut yüküdür. Plasentayı geçerler ve anne sütü vücudun bunları dışarı attığı yollardan biridir — bu da annenin depolanmış yükünün bir kısmını bebeğe aktarır. JECFA bu nedenle tolere edilebilir alımı tek bir öğün için değil, aylık toplam olarak ifade eder.",
+  "can_1": "Hangi gıdaların yaygın besinsel kaynaklar olduğunu ve zaman içinde biriken vücut yükünün neden tek bir öğünden daha önemli olduğunu açıklamak.",
+  "can_2": "Woman katmanının neden önemli olduğunu açıklamak: dioksinler ve dioksin benzeri PCB'ler plasentayı geçer ve anne sütü yoluyla bebeğe aktarılabilir.",
+  "cannot_1": "İçerik listesinden dioksin veya PCB kirlenmesini tespit etmek ya da belirli bir gıdada ne kadar bulunduğunu belirlemek.",
+  "cannot_2": "Bir kişinin toksik eşdeğer vücut yükünü hesaplamak veya tek bir etiketten fetüse ya da emzirilen bebeğe ne kadar ulaştığını belirlemek.",
   "sources": [
+    {
+      "label": "JECFA — PCDDs, PCDFs and coplanar PCBs",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2753"
+    },
     {
       "label": "WHO — Dioxins and their effects on human health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/dioxins-and-their-effects-on-human-health"
     },
     {
-      "label": "EFSA — Gıdalardaki dioksinlerin ve dioksin benzeri PCB’lerin risk değerlendirmesi, 2026",
+      "label": "IARC — Chemical Agents and Related Occupations, Volume 100F",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Chemical-Agents-And-Related-Occupations-2012"
+    },
+    {
+      "label": "EFSA — Update of the risk assessment of dioxins and dioxin-like PCBs, 2026",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/10103"
+    },
+    {
+      "label": "WHO — Persistent Organic Pollutants: transfer through breast milk",
+      "url": "https://iris.who.int/bitstream/handle/10665/44525/9789241501101_eng.pdf"
     }
   ],
   "title": "Dioksinler ve PCB'ler",
-  "description": "Yağ dokularında biyolojik olarak biriken yüksek derecede toksik kalıcı organik kirleticiler."
+  "description": "Dioksinler ve dioksin benzeri PCB'ler yıllarca vücut yağında kalır, gıda yoluyla birikir ve anneden fetüse ve bebeğe geçebilir."
 }

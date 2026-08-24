@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Contaminantes orgánicos persistentes altamente tóxicos que se bioacumulan en los tejidos grasos.",
-  "why_botia": "Las dioxinas y los PCB similares a las dioxinas persisten y se acumulan en los alimentos grasos y en el cuerpo, en ambos sexos. El embarazo y la lactancia son relevantes porque la carga corporal de la madre puede exponer al feto o al lactante, no porque la bioacumulación sea exclusivamente femenina.",
-  "can_1": "Identificar ingredientes grasos de alto riesgo que son fuentes dietéticas principales.",
-  "can_2": "Proporcionar detalles de seguridad sobre las cargas corporales maternas y la transferencia transgeneracional.",
-  "cannot_1": "Determinar la Equivalencia Tóxica sin análisis de laboratorio.",
-  "cannot_2": "Confirmar si el producto supera la Ingesta Semanal Tolerable europea.",
+  "what_is": "Las dioxinas y los PCB similares a las dioxinas son contaminantes ambientales persistentes, no ingredientes alimentarios. Se acumulan en la grasa animal y por eso llegan a las personas principalmente a través de alimentos como pescado, carne, lácteos y huevos.",
+  "why_botia": "Las dioxinas y los PCB similares a las dioxinas están entre los contaminantes persistentes más tóxicos que llegan a la comida; la TCDD, la dioxina más tóxica, está clasificada por IARC como carcinógeno para los humanos (Grupo 1), y la exposición prolongada se relaciona con efectos sobre el sistema inmunitario, las hormonas tiroideas y el desarrollo. Se disuelven en la grasa y pueden tardar entre 7 y 11 años en reducir a la mitad su cantidad en el cuerpo, así que el pescado graso, la carne, los lácteos y los huevos son fuentes importantes y lo que cuenta es la carga corporal acumulada. Atraviesan la placenta, y la leche materna es una de las vías por las que el cuerpo las elimina — lo que también transfiere parte de la carga almacenada de la madre al bebé. Por eso JECFA expresa su ingesta tolerable como un total mensual, no como un límite para una comida.",
+  "can_1": "Explicar qué alimentos son fuentes dietéticas habituales y por qué importa más la carga corporal acumulada con el tiempo que una sola comida.",
+  "can_2": "Explicar por qué importa la capa Woman: las dioxinas y los PCB similares atraviesan la placenta y pueden transferirse al bebé a través de la leche materna.",
+  "cannot_1": "Detectar contaminación por dioxinas o PCB a partir de una lista de ingredientes ni determinar cuánto contiene un alimento concreto.",
+  "cannot_2": "Calcular la carga corporal en equivalentes tóxicos de una persona ni determinar por una etiqueta cuánto llegó a un feto o a un bebé amamantado.",
   "sources": [
+    {
+      "label": "JECFA — PCDDs, PCDFs and coplanar PCBs",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2753"
+    },
     {
       "label": "WHO — Dioxins and their effects on human health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/dioxins-and-their-effects-on-human-health"
     },
     {
-      "label": "EFSA — Evaluación del riesgo de las dioxinas y los PCB similares a las dioxinas en los alimentos, 2026",
+      "label": "IARC — Chemical Agents and Related Occupations, Volume 100F",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Chemical-Agents-And-Related-Occupations-2012"
+    },
+    {
+      "label": "EFSA — Update of the risk assessment of dioxins and dioxin-like PCBs, 2026",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/10103"
+    },
+    {
+      "label": "WHO — Persistent Organic Pollutants: transfer through breast milk",
+      "url": "https://iris.who.int/bitstream/handle/10665/44525/9789241501101_eng.pdf"
     }
   ],
   "title": "Dioxinas y PCB",
-  "description": "Contaminantes orgánicos persistentes altamente tóxicos que se bioacumulan en los tejidos grasos."
+  "description": "Las dioxinas y los PCB similares permanecen durante años en la grasa corporal, se acumulan a través de los alimentos y pueden pasar de la madre al feto y al bebé."
 }

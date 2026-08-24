@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Inquinanti organici persistenti altamente tossici che si bioaccumulano nei tessuti adiposi.",
-  "why_botia": "Le diossine e i PCB di tipo diossinico persistono e si accumulano negli alimenti grassi e nell'organismo, in entrambi i sessi. La gravidanza e l'allattamento sono rilevanti perché il carico corporeo materno può esporre il feto o il neonato, non perché il bioaccumulo sia esclusivamente femminile.",
-  "can_1": "Identificare gli ingredienti ad alto rischio contenenti grassi che sono fonti alimentari primarie.",
-  "can_2": "Fornire dettagli di sicurezza sui carichi corporei materni e sul trasferimento transgenerazionale.",
-  "cannot_1": "Determina l'Equivalenza Tossica senza analisi di laboratorio.",
-  "cannot_2": "Confermare se il prodotto supera l'assunzione settimanale tollerabile europea.",
+  "what_is": "Le diossine e i PCB diossina-simili sono contaminanti ambientali persistenti, non ingredienti alimentari. Si accumulano nel grasso animale e quindi raggiungono le persone soprattutto attraverso alimenti come pesce, carne, latticini e uova.",
+  "why_botia": "Le diossine e i PCB diossina-simili sono tra i contaminanti persistenti più tossici che raggiungono gli alimenti; la TCDD, la diossina più tossica, è classificata dallo IARC come cancerogena per l'uomo (Gruppo 1), e l'esposizione prolungata è collegata a effetti sul sistema immunitario, sugli ormoni tiroidei e sullo sviluppo. Si sciolgono nei grassi e possono servire 7–11 anni perché la quantità presente nell'organismo si riduca della metà; pesce grasso, carne, latticini e uova sono quindi fonti importanti e ciò che conta è il carico corporeo accumulato nel tempo. Attraversano la placenta e il latte materno è una delle vie attraverso cui l'organismo li elimina — trasferendo allo stesso tempo al neonato una parte del carico immagazzinato dalla madre. Il JECFA esprime quindi l'assunzione tollerabile come totale mensile, non come limite per un singolo pasto.",
+  "can_1": "Spiegare quali alimenti sono fonti alimentari comuni e perché il carico corporeo accumulato nel tempo conta più di un singolo pasto.",
+  "can_2": "Spiegare perché il livello Woman è rilevante: diossine e PCB diossina-simili attraversano la placenta e possono essere trasferiti al neonato attraverso il latte materno.",
+  "cannot_1": "Rilevare la contaminazione da diossine o PCB da una lista degli ingredienti o determinare la quantità presente in un alimento specifico.",
+  "cannot_2": "Calcolare il carico corporeo in equivalenti tossici di una persona o determinare da un'etichetta quanto abbia raggiunto un feto o un neonato allattato.",
   "sources": [
+    {
+      "label": "JECFA — PCDDs, PCDFs and coplanar PCBs",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2753"
+    },
     {
       "label": "WHO — Dioxins and their effects on human health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/dioxins-and-their-effects-on-human-health"
     },
     {
-      "label": "EFSA — Valutazione del rischio di diossine e PCB diossina-simili negli alimenti, 2026",
+      "label": "IARC — Chemical Agents and Related Occupations, Volume 100F",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Chemical-Agents-And-Related-Occupations-2012"
+    },
+    {
+      "label": "EFSA — Update of the risk assessment of dioxins and dioxin-like PCBs, 2026",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/10103"
+    },
+    {
+      "label": "WHO — Persistent Organic Pollutants: transfer through breast milk",
+      "url": "https://iris.who.int/bitstream/handle/10665/44525/9789241501101_eng.pdf"
     }
   ],
   "title": "Diossine e PCB",
-  "description": "Inquinanti organici persistenti altamente tossici che si bioaccumulano nei tessuti adiposi."
+  "description": "Le diossine e i PCB diossina-simili persistono per anni nel grasso corporeo, si accumulano attraverso il cibo e possono passare dalla madre al feto e al neonato."
 }

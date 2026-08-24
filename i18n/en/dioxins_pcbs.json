@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Highly toxic persistent organic pollutants that bioaccumulate in fatty tissues.",
-  "why_botia": "Dioxins and dioxin-like PCBs persist and build up in fatty foods and the body, in both sexes. Pregnancy and breastfeeding matter because a mother's body burden can expose the fetus or infant — not because bioaccumulation is uniquely female.",
-  "can_1": "Identify high-risk fat-containing ingredients that are primary dietary sources.",
-  "can_2": "Provide safety details on maternal body burdens and transgenerational transfer.",
-  "cannot_1": "Determine the Toxic Equivalency without laboratory analysis.",
-  "cannot_2": "Confirm if the product exceeds the European Tolerable Weekly Intake.",
+  "what_is": "Dioxins and dioxin-like PCBs are persistent environmental contaminants, not food ingredients. They build up in animal fat and therefore reach people mainly through foods such as fish, meat, dairy products and eggs.",
+  "why_botia": "Dioxins and dioxin-like PCBs are among the most toxic persistent contaminants that reach food; TCDD, the most toxic dioxin, is classified by IARC as carcinogenic to humans (Group 1), and long-term exposure is linked to effects on the immune system, thyroid hormones and development. They dissolve in fat and can take 7–11 years for the amount in the body to fall by half, so fatty fish, meat, dairy products and eggs are important sources and what matters is the body burden built up over time. They cross the placenta, and breast milk is one of the routes by which the body excretes them — which also transfers part of the mother's stored burden to the infant. JECFA therefore expresses its tolerable intake as a monthly total, not as a limit for one meal.",
+  "can_1": "Explain which foods are common dietary sources and why the accumulated body burden over time matters more than one meal.",
+  "can_2": "Explain why the Woman layer matters: dioxins and dioxin-like PCBs cross the placenta and can be transferred to an infant through breast milk.",
+  "cannot_1": "Detect dioxin or PCB contamination from an ingredient list or determine how much is present in a particular food.",
+  "cannot_2": "Calculate a person's toxic-equivalent body burden or determine from one label how much reached a fetus or breastfed infant.",
   "sources": [
+    {
+      "label": "JECFA — PCDDs, PCDFs and coplanar PCBs",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2753"
+    },
     {
       "label": "WHO — Dioxins and their effects on human health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/dioxins-and-their-effects-on-human-health"
     },
     {
-      "label": "EFSA — Risk assessment of dioxins and dioxin-like PCBs in food, 2026",
+      "label": "IARC — Chemical Agents and Related Occupations, Volume 100F",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Chemical-Agents-And-Related-Occupations-2012"
+    },
+    {
+      "label": "EFSA — Update of the risk assessment of dioxins and dioxin-like PCBs, 2026",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/10103"
+    },
+    {
+      "label": "WHO — Persistent Organic Pollutants: transfer through breast milk",
+      "url": "https://iris.who.int/bitstream/handle/10665/44525/9789241501101_eng.pdf"
     }
   ],
   "title": "Dioxins and PCBs",
-  "description": "Highly toxic persistent organic pollutants that bioaccumulate in fatty tissues."
+  "description": "Dioxins and dioxin-like PCBs persist in body fat for years, build up through food and can pass from mother to fetus and infant."
 }
