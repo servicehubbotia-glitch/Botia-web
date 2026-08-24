@@ -7,34 +7,42 @@
     "flavour",
     "muslim"
   ],
-  "what_is": "فئة توسيم واسعة للمواد أو المستحضرات المضافة لإضفاء أو تعديل النكهة؛ تعتمد المواد المحددة المشمولة بالمصطلح على المنتج وقواعد التوسيم المعمول بها.",
-  "why_botia": "تُشير BOTIA إلى أن المصطلح العام قد لا يكشف عن كل مادة منكّهة فردية أو مصدرها. بالنسبة لتحليل اختيار المسلمين، فإن كلمة \"منكّهات\" وحدها لا تكفي لتحديد الأصل أو الوضع الديني.",
-  "can_1": "حدد عبارات النكهات العامة أو المنكهات وقم بتفعيل طبقة معلومات النكهة.",
-  "can_2": "علّم عدم اليقين في المصدر لطبقة المسلمين عندما لا يوفر الملصق معلومات كافية عن المنشأ أو الناقل أو الشهادة ذات الصلة.",
-  "cannot_1": "حدد كل مركب نكهة فردي، أو ناقل، أو عامل معالجة مخفيًا خلف مصطلح جماعي مسموح به.",
-  "cannot_2": "صنّف نكهة عامة على أنها حلال أو حرام دون مصدر أو تركيبة أو شهادة أو أي دليل موثوق.",
+  "what_is": "فئة جماعية في الملصقات لمواد ومستحضرات تُستخدم لإعطاء الطعم أو الرائحة أو تعديلهما. يمكن للمنتج أن يذكر ببساطة «نكهة» دون سرد كل مادة منفردة.",
+  "why_botia": "«النكهة» كلمة واحدة يمكن أن تغطي مواد من قائمة أوروبية تضم أكثر من 2500 مادة، من دون الحاجة إلى ذكر كل مادة على حدة. وقد يكون خلفها مادة واحدة أو مواد كثيرة، بالإضافة إلى مذيبات وحوامل لنقلها، يمكن أن تشمل الكحول أو البروبيلين غليكول، ولا يلزم دائمًا ظهورها منفصلة على الملصق. تُقيّم كل مادة منكّهة على حدة، لكن الملصق قد لا يوضح أي المواد موجودة ولا مصدرها.",
+  "can_1": "التعرف على المصطلحات العامة مثل النكهة أو aromas أو flavouring عندما تظهر على الملصق.",
+  "can_2": "شرح أن المصطلح الجماعي قد يخفي المواد الدقيقة ومصدرها والحوامل مثل الإيثانول أو البروبيلين غليكول، وإظهار طبقتي Flavour وMuslim للتتبع.",
+  "cannot_1": "تحديد مواد النكهة أو الحوامل الفردية عندما يذكر المصنع مصطلحًا جماعيًا فقط.",
+  "cannot_2": "تحديد مصدر أو تركيب خليط نكهة غير معلن من المصطلح الجماعي وحده.",
   "sources": [
     {
-      "label": "EFSA — المكونات الغذائية والنكهات",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+      "label": "European Commission — EU Lists of Flavourings and Food Flavourings Database",
+      "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/flavourings/eu-lists-flavourings_en"
     },
     {
-      "label": "FDA — أنواع المكونات الغذائية",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "EFSA — EU flavourings list: more than 2,500 flavouring substances",
+      "url": "https://www.efsa.europa.eu/en/press/news/121001b"
     },
     {
-      "label": "JECFA — مواصفات النكهات",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
-    },
-    {
-      "label": "اللائحة (EC) رقم 1334/2008 بشأن النكهات",
+      "label": "Regulation (EC) No 1334/2008 — flavourings and flavouring ingredients",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1334/2026-02-16/eng"
     },
     {
-      "label": "Codex Alimentarius — قاعدة بيانات المعايير",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+      "label": "Regulation (EU) No 1169/2011 — designation of flavourings and ingredient-list exemptions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 — carriers authorised for food flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "JECFA — Ethanol, carrier solvent and flavouring agent, chemical record 2404",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2404"
+    },
+    {
+      "label": "Codex CXG 66-2008 — Guidelines for the Use of Flavourings",
+      "url": "https://www.fao.org/input/download/standards/11020/cxg_066e.pdf"
     }
   ],
   "title": "نكهات",
-  "description": "فئة توسيم واسعة للمواد أو المستحضرات المضافة لإضفاء النكهة أو تعديلها؛ تعتمد المواد المحددة المشمولة بهذا المصطلح على المنتج وقواعد التوسيم المعمول بها."
+  "description": "يمكن لعبارة جماعية مثل «نكهة» أن تغطي مواد عديدة، إضافة إلى حوامل أو مذيبات. تضم القائمة الأوروبية أكثر من 2500 مادة منكّهة، بينما قد لا تكشف البطاقة التركيب أو المصدر الدقيق."
 }

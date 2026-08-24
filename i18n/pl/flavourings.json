@@ -7,34 +7,42 @@
     "flavour",
     "muslim"
   ],
-  "what_is": "Szeroka kategoria etykietowania dla substancji lub preparatów dodawanych w celu nadania lub zmodyfikowania smaku; dokładne substancje objęte tym terminem zależą od produktu i obowiązujących przepisów dotyczących etykietowania.",
-  "why_botia": "BOTIA flaguje termin ogólny, ponieważ może on nie ujawniać każdej pojedynczej substancji aromatyzującej ani jej źródła. Dla analizy wyboru muzułmańskiego samo słowo „aromaty” nie wystarcza do ustalenia pochodzenia ani statusu religijnego.",
-  "can_1": "Zidentyfikuj ogólne sformułowania dotyczące aromatów lub substancji aromatycznych i uruchom warstwę informacji o aromacie.",
-  "can_2": "Oznacz niepewność źródła dla warstwy muzułmańskiej, gdy etykieta nie dostarcza wystarczających informacji o pochodzeniu, przewoźniku lub odpowiedniej certyfikacji.",
-  "cannot_1": "Zidentyfikuj każdy pojedynczy związek aromatyzujący, nośnik lub substancję pomocniczą w przetwórstwie ukrytą za dozwolonym zbiorczym określeniem etykietowym.",
-  "cannot_2": "Sklasyfikuj ogólny aromat jako halal lub haram bez źródła, składu, certyfikatu ani innych wiarygodnych dowodów.",
+  "what_is": "Zbiorcza kategoria oznakowania substancji i preparatów nadających lub zmieniających smak albo zapach. Produkt może podawać tylko „aromat”, bez wymieniania każdej substancji osobno.",
+  "why_botia": "„Aromat” to jedno słowo, które może obejmować substancje z europejskiej listy liczącej ponad 2500 pozycji, bez obowiązku wymieniania ich jednej po drugiej. Za tym słowem może kryć się jedna lub wiele substancji, a także rozpuszczalniki i nośniki — w tym alkohol lub glikol propylenowy — które również nie muszą być wykazane osobno. Każda substancja aromatyzująca jest oceniana oddzielnie, ale etykieta może nie ujawniać które są obecne ani ich pochodzenia.",
+  "can_1": "Rozpoznawać ogólne terminy takie jak aromat, flavouring lub naturalny aromat.",
+  "can_2": "Wyjaśniać, że zbiorcze oznaczenie może ukrywać konkretne substancje, ich pochodzenie i nośniki takie jak etanol lub glikol propylenowy oraz pokazywać warstwy Flavour i Muslim.",
+  "cannot_1": "Rozpoznać poszczególnych substancji aromatyzujących lub nośników, jeśli producent podaje wyłącznie termin zbiorczy.",
+  "cannot_2": "Określić pochodzenia lub składu nieujawnionej mieszaniny aromatycznej na podstawie samego terminu zbiorczego.",
   "sources": [
     {
-      "label": "EFSA — Składniki żywności i aromaty",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+      "label": "European Commission — EU Lists of Flavourings and Food Flavourings Database",
+      "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/flavourings/eu-lists-flavourings_en"
     },
     {
-      "label": "FDA — Rodzaje składników żywności",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "EFSA — EU flavourings list: more than 2,500 flavouring substances",
+      "url": "https://www.efsa.europa.eu/en/press/news/121001b"
     },
     {
-      "label": "JECFA — Specyfikacje aromatów",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
-    },
-    {
-      "label": "Rozporządzenie (EC) nr 1334/2008 w sprawie aromatów",
+      "label": "Regulation (EC) No 1334/2008 — flavourings and flavouring ingredients",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1334/2026-02-16/eng"
     },
     {
-      "label": "Codex Alimentarius — Baza norm",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+      "label": "Regulation (EU) No 1169/2011 — designation of flavourings and ingredient-list exemptions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 — carriers authorised for food flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "JECFA — Ethanol, carrier solvent and flavouring agent, chemical record 2404",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2404"
+    },
+    {
+      "label": "Codex CXG 66-2008 — Guidelines for the Use of Flavourings",
+      "url": "https://www.fao.org/input/download/standards/11020/cxg_066e.pdf"
     }
   ],
   "title": "Aromaty",
-  "description": "Szeroka kategoria etykietowania dla substancji lub preparatów dodawanych w celu nadania lub modyfikacji smaku; dokładny zakres substancji objętych tym terminem zależy od produktu i obowiązujących przepisów dotyczących etykietowania."
+  "description": "Zbiorcze określenie „aromat” może obejmować wiele substancji oraz nośniki lub rozpuszczalniki. Europejska lista zawiera ponad 2500 substancji aromatyzujących."
 }

@@ -7,34 +7,42 @@
     "flavour",
     "muslim"
   ],
-  "what_is": "Categoria ampla de rotulagem para substâncias ou preparações adicionadas para conferir ou modificar sabor; as substâncias exatas abrangidas pelo termo dependem do produto e das regras de rotulagem aplicáveis.",
-  "why_botia": "BOTIA sinaliza o termo genérico porque pode não revelar cada substância aromatizante individual ou sua origem. Para a análise de escolha muçulmana, a palavra aromatizantes por si só não é suficiente para estabelecer origem ou status religioso.",
-  "can_1": "Identifique a redação genérica de aromas ou flavorizantes e acione a camada de informações sobre aromas.",
-  "can_2": "Sinalizar incerteza de origem para a camada muçulmana quando o rótulo não fornecer informações suficientes sobre origem, transportador ou certificação relevante.",
-  "cannot_1": "Identifique cada composto aromatizante individual, carreador ou auxiliar tecnológico oculto atrás de um termo coletivo permitido no rótulo.",
-  "cannot_2": "Classifique um aromatizante genérico como halal ou haram sem fonte, composição, certificação ou outras evidências confiáveis.",
+  "what_is": "Uma categoria coletiva de rotulagem para substâncias e preparações utilizadas para dar ou modificar sabor ou odor. Um produto pode declarar simplesmente “aroma” sem listar cada substância separadamente.",
+  "why_botia": "“Aroma” é uma palavra que pode abranger substâncias de uma lista europeia com mais de 2.500, sem terem de ser declaradas uma a uma. Por trás podem existir uma ou muitas substâncias, além de solventes e suportes — que podem incluir álcool ou propilenoglicol — e que também não têm necessariamente de aparecer separadamente. Cada substância aromatizante é avaliada individualmente, mas o rótulo pode não dizer quais estão presentes nem qual é a sua origem.",
+  "can_1": "Detetar termos genéricos como aroma, flavouring ou aroma natural.",
+  "can_2": "Explicar que uma declaração coletiva pode ocultar as substâncias concretas, a sua origem e suportes como etanol ou propilenoglicol, e mostrar as camadas Flavour e Muslim.",
+  "cannot_1": "Identificar substâncias aromatizantes ou suportes individuais quando o fabricante declara apenas um termo coletivo.",
+  "cannot_2": "Determinar a origem ou composição de uma mistura aromatizante não declarada a partir do termo coletivo.",
   "sources": [
     {
-      "label": "EFSA — Ingredientes alimentares e aromatizantes",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+      "label": "European Commission — EU Lists of Flavourings and Food Flavourings Database",
+      "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/flavourings/eu-lists-flavourings_en"
     },
     {
-      "label": "FDA — Tipos de ingredientes alimentares",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "EFSA — EU flavourings list: more than 2,500 flavouring substances",
+      "url": "https://www.efsa.europa.eu/en/press/news/121001b"
     },
     {
-      "label": "JECFA — Especificações de aromatizantes",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
-    },
-    {
-      "label": "Regulamento (EC) n.º 1334/2008 relativo aos aromatizantes",
+      "label": "Regulation (EC) No 1334/2008 — flavourings and flavouring ingredients",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1334/2026-02-16/eng"
     },
     {
-      "label": "Codex Alimentarius — Base de dados de normas",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+      "label": "Regulation (EU) No 1169/2011 — designation of flavourings and ingredient-list exemptions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 — carriers authorised for food flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "JECFA — Ethanol, carrier solvent and flavouring agent, chemical record 2404",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2404"
+    },
+    {
+      "label": "Codex CXG 66-2008 — Guidelines for the Use of Flavourings",
+      "url": "https://www.fao.org/input/download/standards/11020/cxg_066e.pdf"
     }
   ],
   "title": "Aromatizantes",
-  "description": "Categoria ampla de rotulagem para substâncias ou preparações adicionadas para conferir ou modificar sabor; as substâncias exatas abrangidas pelo termo dependem do produto e das regras de rotulagem aplicáveis."
+  "description": "Um termo coletivo como “aroma” pode abranger muitas substâncias, além de suportes ou solventes. A lista europeia contém mais de 2.500 substâncias aromatizantes."
 }

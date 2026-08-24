@@ -7,34 +7,42 @@
     "flavour",
     "muslim"
   ],
-  "what_is": "Categoria di etichettatura ampia per sostanze o preparati aggiunti per conferire o modificare il sapore; le sostanze esatte coperte dal termine dipendono dal prodotto e dalle norme di etichettatura applicabili.",
-  "why_botia": "BOTIA segnala il termine generico perché potrebbe non rivelare ogni singola sostanza aromatizzante o la sua fonte. Per l'analisi di scelta musulmana, la sola parola aromi non è sufficiente per stabilire l'origine o lo status religioso.",
-  "can_1": "Identificare la dicitura generica di aromi o aromatizzanti e attivare il livello informativo sugli aromi.",
-  "can_2": "Segnala incertezza sulla fonte per il livello musulmano quando l'etichetta non fornisce informazioni sufficienti su origine, vettore o certificazione pertinente.",
-  "cannot_1": "Identifica ogni singolo composto aromatizzante, veicolo o coadiuvante tecnologico nascosto dietro un termine di etichettatura collettiva consentito.",
-  "cannot_2": "Classificare un aroma generico come halal o haram senza fonte, composizione, certificazione o altre prove affidabili.",
+  "what_is": "Una categoria collettiva di etichettatura per sostanze e preparazioni usate per conferire o modificare gusto o odore. Un prodotto può indicare semplicemente “aroma” senza elencare ogni sostanza separatamente.",
+  "why_botia": "“Aroma” è una parola che può coprire sostanze di un elenco europeo di oltre 2.500 sostanze aromatizzanti, senza che debbano essere dichiarate una per una. Dietro possono esserci una o molte sostanze, oltre a solventi e supporti — che possono includere alcol o glicole propilenico — che non devono necessariamente comparire separatamente. Ogni sostanza aromatizzante viene valutata singolarmente, ma l’etichetta può non dire quali siano presenti né da dove provengano.",
+  "can_1": "Identificare termini generici come aroma, flavouring o aroma naturale.",
+  "can_2": "Spiegare che una dichiarazione collettiva può nascondere le sostanze esatte, la loro origine e supporti come etanolo o glicole propilenico, e mostrare i livelli Flavour e Muslim.",
+  "cannot_1": "Identificare le singole sostanze aromatizzanti o i supporti quando il produttore dichiara soltanto un termine collettivo.",
+  "cannot_2": "Determinare origine o composizione di una miscela aromatica non dichiarata dal solo termine collettivo.",
   "sources": [
     {
-      "label": "EFSA — Ingredienti alimentari e aromi",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+      "label": "European Commission — EU Lists of Flavourings and Food Flavourings Database",
+      "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/flavourings/eu-lists-flavourings_en"
     },
     {
-      "label": "FDA — Tipi di ingredienti alimentari",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "EFSA — EU flavourings list: more than 2,500 flavouring substances",
+      "url": "https://www.efsa.europa.eu/en/press/news/121001b"
     },
     {
-      "label": "JECFA — Specifiche per gli aromi",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
-    },
-    {
-      "label": "Regolamento (CE) n. 1334/2008 sugli aromi",
+      "label": "Regulation (EC) No 1334/2008 — flavourings and flavouring ingredients",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1334/2026-02-16/eng"
     },
     {
-      "label": "Codex Alimentarius — Banca dati degli standard",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+      "label": "Regulation (EU) No 1169/2011 — designation of flavourings and ingredient-list exemptions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 — carriers authorised for food flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "JECFA — Ethanol, carrier solvent and flavouring agent, chemical record 2404",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2404"
+    },
+    {
+      "label": "Codex CXG 66-2008 — Guidelines for the Use of Flavourings",
+      "url": "https://www.fao.org/input/download/standards/11020/cxg_066e.pdf"
     }
   ],
   "title": "Aromi",
-  "description": "Categoria di etichettatura ampia per sostanze o preparati aggiunti per conferire o modificare il sapore; le sostanze esatte coperte dal termine dipendono dal prodotto e dalle norme di etichettatura applicabili."
+  "description": "Un termine collettivo come “aroma” può coprire molte sostanze singole, oltre a supporti o solventi. L’elenco europeo comprende più di 2.500 sostanze aromatizzanti."
 }

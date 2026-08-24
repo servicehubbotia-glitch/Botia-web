@@ -7,34 +7,42 @@
     "flavour",
     "muslim"
   ],
-  "what_is": "Gıdalara veya hazır ürünlere tat vermek veya tadını değiştirmek amacıyla eklenen maddeler veya karışımlar için kullanılan geniş bir etiketleme kategorisi; bu terimin kapsadığı kesin maddeler ürüne ve geçerli etiketleme kurallarına bağlıdır.",
-  "why_botia": "BOTIA, genel terimi işaretler çünkü her bir aroma maddesini veya kaynağını tek tek açıklamayabilir. Müslüman tercih analizi için, tek başına aroma ifadesi kökeni veya dini durumu belirlemek için yeterli değildir.",
-  "can_1": "Genel aroma veya tatlandırıcı ifadelerini tespit et ve aroma bilgi katmanını tetikle.",
-  "can_2": "Müslüman katmanı için, etiket menşei, taşıyıcı veya ilgili sertifikasyon hakkında yeterli bilgi sağlamadığında kaynak belirsizliğini işaretle.",
-  "cannot_1": "İzin verilen toplu etiket terimi arkasında gizlenen her bir bireysel aroma bileşenini, taşıyıcıyı veya işleme yardımcısını tanımlayın.",
-  "cannot_2": "Kaynak, içerik, sertifika veya diğer güvenilir kanıtlar olmadan genel bir aroma vericiyi helal veya haram olarak sınıflandırmak.",
+  "what_is": "Tat veya koku vermek ya da değiştirmek için kullanılan maddeler ve preparatlar için toplu bir etiketleme kategorisidir. Ürün her bir aroma maddesini tek tek yazmak yerine yalnızca “aroma” diyebilir.",
+  "why_botia": "“Aroma”, Avrupa’daki 2.500’den fazla maddelik bir listeden farklı maddeleri tek tek beyan edilmeden kapsayabilen tek bir kelimedir. Arkasında bir veya birçok madde, ayrıca bunları taşıyan çözücüler ve taşıyıcılar — alkol veya propilen glikol dahil — bulunabilir ve bunların da ayrı ayrı yazılması gerekmeyebilir. Her aroma maddesi ayrı değerlendirilir, ancak etiket hangilerinin bulunduğunu veya kaynağını söylemeyebilir.",
+  "can_1": "Aroma, flavouring veya doğal aroma gibi genel terimleri tespit etmek.",
+  "can_2": "Toplu bir aroma beyanının kesin maddeleri, kaynaklarını ve etanol veya propilen glikol gibi taşıyıcıları gizleyebileceğini açıklamak ve Flavour ile Muslim katmanlarını göstermek.",
+  "cannot_1": "Üretici yalnızca toplu bir ifade kullandığında tek tek aroma maddelerini veya taşıyıcıları belirlemek.",
+  "cannot_2": "Açıklanmamış bir aroma karışımının kaynağını veya bileşimini toplu etiket teriminden belirlemek.",
   "sources": [
     {
-      "label": "EFSA — Gıda bileşenleri ve aromalar",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+      "label": "European Commission — EU Lists of Flavourings and Food Flavourings Database",
+      "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/flavourings/eu-lists-flavourings_en"
     },
     {
-      "label": "FDA — Gıda bileşeni türleri",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "EFSA — EU flavourings list: more than 2,500 flavouring substances",
+      "url": "https://www.efsa.europa.eu/en/press/news/121001b"
     },
     {
-      "label": "JECFA — Aroma spesifikasyonları",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
-    },
-    {
-      "label": "Aromalara ilişkin (EC) 1334/2008 sayılı Tüzük",
+      "label": "Regulation (EC) No 1334/2008 — flavourings and flavouring ingredients",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1334/2026-02-16/eng"
     },
     {
-      "label": "Codex Alimentarius — Standartlar veritabanı",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+      "label": "Regulation (EU) No 1169/2011 — designation of flavourings and ingredient-list exemptions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 — carriers authorised for food flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "JECFA — Ethanol, carrier solvent and flavouring agent, chemical record 2404",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2404"
+    },
+    {
+      "label": "Codex CXG 66-2008 — Guidelines for the Use of Flavourings",
+      "url": "https://www.fao.org/input/download/standards/11020/cxg_066e.pdf"
     }
   ],
   "title": "Aromalar",
-  "description": "Gıda maddelerine veya müstahzarlara tat vermek veya tadını değiştirmek amacıyla eklenen maddeler için geniş bir etiketleme kategorisi; terimin kapsadığı kesin maddeler ürüne ve geçerli etiketleme kurallarına bağlıdır."
+  "description": "“Aroma” gibi toplu bir ifade birçok maddeyi ve ayrıca taşıyıcı veya çözücüleri kapsayabilir. Avrupa listesinde 2.500’den fazla aroma maddesi bulunmaktadır."
 }

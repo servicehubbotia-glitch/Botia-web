@@ -7,34 +7,42 @@
     "flavour",
     "muslim"
   ],
-  "what_is": "Kategori pelabelan yang luas untuk zat atau sediaan yang ditambahkan untuk memberikan atau memodifikasi rasa; zat-zat spesifik yang tercakup dalam istilah ini bergantung pada produk dan aturan pelabelan yang berlaku.",
-  "why_botia": "BOTIA menandai istilah generik karena mungkin tidak mengungkapkan setiap zat penyedap individu atau sumbernya. Untuk analisis pilihan Muslim, kata penyedap saja tidak cukup untuk menetapkan asal-usul atau status keagamaannya.",
-  "can_1": "Identifikasi kata-kata penyedap rasa generik atau penyedap rasa dan picu lapisan informasi rasa.",
-  "can_2": "Tandai ketidakpastian sumber untuk lapisan Muslim ketika label tidak memberikan informasi yang cukup tentang asal, pembawa, atau sertifikasi yang relevan.",
-  "cannot_1": "Identifikasi setiap senyawa perisa individu, pembawa, atau bahan bantu proses yang tersembunyi di balik istilah label kolektif yang diizinkan.",
-  "cannot_2": "Klasifikasikan penyedap rasa generik sebagai halal atau haram tanpa sumber, komposisi, sertifikasi, atau bukti terpercaya lainnya.",
+  "what_is": "Kategori pelabelan kolektif untuk zat dan preparat yang digunakan untuk memberi atau mengubah rasa atau aroma. Produk dapat hanya menyatakan “perisa” tanpa mencantumkan setiap zat satu per satu.",
+  "why_botia": "“Perisa” adalah satu kata yang dapat mencakup zat dari daftar Eropa yang berisi lebih dari 2.500 zat tanpa harus dinyatakan satu per satu. Di baliknya dapat terdapat satu atau banyak zat, ditambah pelarut dan pembawa — yang dapat mencakup alkohol atau propilen glikol — dan bahan tersebut juga tidak selalu harus dicantumkan secara terpisah. Setiap zat perisa dinilai secara individual, tetapi label mungkin tidak menjelaskan zat mana yang ada atau dari mana asalnya.",
+  "can_1": "Mendeteksi istilah umum seperti perisa, flavouring, aroma atau perisa alami.",
+  "can_2": "Menjelaskan bahwa deklarasi kolektif dapat menyembunyikan zat yang tepat, asalnya dan pembawa seperti etanol atau propilen glikol, serta menampilkan lapisan Flavour dan Muslim.",
+  "cannot_1": "Mengidentifikasi setiap zat perisa atau pembawa ketika produsen hanya menyatakan istilah kolektif.",
+  "cannot_2": "Menentukan asal atau komposisi campuran perisa yang tidak diungkapkan hanya dari istilah kolektif pada label.",
   "sources": [
     {
-      "label": "EFSA — Bahan pangan dan perisa",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+      "label": "European Commission — EU Lists of Flavourings and Food Flavourings Database",
+      "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/flavourings/eu-lists-flavourings_en"
     },
     {
-      "label": "FDA — Jenis bahan pangan",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "EFSA — EU flavourings list: more than 2,500 flavouring substances",
+      "url": "https://www.efsa.europa.eu/en/press/news/121001b"
     },
     {
-      "label": "JECFA — Spesifikasi perisa",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
-    },
-    {
-      "label": "Peraturan (EC) No. 1334/2008 tentang perisa",
+      "label": "Regulation (EC) No 1334/2008 — flavourings and flavouring ingredients",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1334/2026-02-16/eng"
     },
     {
-      "label": "Codex Alimentarius — Basis data standar",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+      "label": "Regulation (EU) No 1169/2011 — designation of flavourings and ingredient-list exemptions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 — carriers authorised for food flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "JECFA — Ethanol, carrier solvent and flavouring agent, chemical record 2404",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2404"
+    },
+    {
+      "label": "Codex CXG 66-2008 — Guidelines for the Use of Flavourings",
+      "url": "https://www.fao.org/input/download/standards/11020/cxg_066e.pdf"
     }
   ],
   "title": "Perisa",
-  "description": "Kategori pelabelan yang luas untuk zat atau sediaan yang ditambahkan untuk memberikan atau mengubah rasa; zat-zat spesifik yang tercakup dalam istilah ini bergantung pada produk dan aturan pelabelan yang berlaku."
+  "description": "Istilah kolektif seperti “perisa” dapat mencakup banyak zat, serta pembawa atau pelarut. Daftar Eropa berisi lebih dari 2.500 zat perisa."
 }

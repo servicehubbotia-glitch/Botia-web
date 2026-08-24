@@ -7,34 +7,42 @@
     "flavour",
     "muslim"
   ],
-  "what_is": "Catégorie d'étiquetage large pour les substances ou préparations ajoutées afin de conférer ou de modifier la saveur ; les substances exactes couvertes par ce terme dépendent du produit et des règles d'étiquetage applicables.",
-  "why_botia": "BOTIA signale le terme générique parce qu'il peut ne pas révéler chaque substance aromatisante individuelle ou sa source. Pour une analyse de choix musulman, le mot arômes seul ne suffit pas à établir l'origine ou le statut religieux.",
-  "can_1": "Identifiez la mention générique d'arômes ou de saveurs et déclenchez la couche d'informations sur les arômes.",
-  "can_2": "Marquer l'incertitude de la source pour la couche musulmane lorsque l'étiquette ne fournit pas suffisamment d'informations sur l'origine, le transporteur ou la certification pertinente.",
-  "cannot_1": "Identifiez chaque composé aromatique individuel, support ou auxiliaire technologique masqué derrière un terme collectif autorisé.",
-  "cannot_2": "Classer un arôme générique comme halal ou haram sans source, composition, certification ou autre preuve fiable.",
+  "what_is": "Une catégorie collective d’étiquetage pour des substances et préparations destinées à donner ou modifier le goût ou l’odeur. Un produit peut simplement indiquer « arôme » sans énumérer chaque substance.",
+  "why_botia": "« Arôme » est un seul mot qui peut couvrir des substances provenant d’une liste européenne de plus de 2 500, sans qu’elles aient à être déclarées une par une. Il peut y avoir derrière ce mot une ou plusieurs substances, ainsi que des solvants et supports — pouvant inclure de l’alcool ou du propylène glycol — qui ne doivent pas nécessairement apparaître séparément. Chaque substance aromatisante est évaluée individuellement, mais l’étiquette peut ne pas révéler lesquelles sont présentes ni leur origine.",
+  "can_1": "Identifier les termes génériques tels que arôme, flavouring ou arôme naturel.",
+  "can_2": "Expliquer qu’une déclaration collective peut masquer les substances précises, leur origine et des supports tels que l’éthanol ou le propylène glycol, et afficher les couches Flavour et Muslim.",
+  "cannot_1": "Identifier les substances aromatisantes ou supports individuels lorsque le fabricant n’utilise qu’un terme collectif.",
+  "cannot_2": "Déterminer l’origine ou la composition d’un mélange aromatique non déclaré à partir du terme collectif seul.",
   "sources": [
     {
-      "label": "EFSA — Ingrédients alimentaires et arômes",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+      "label": "European Commission — EU Lists of Flavourings and Food Flavourings Database",
+      "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/flavourings/eu-lists-flavourings_en"
     },
     {
-      "label": "FDA — Types d’ingrédients alimentaires",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "EFSA — EU flavourings list: more than 2,500 flavouring substances",
+      "url": "https://www.efsa.europa.eu/en/press/news/121001b"
     },
     {
-      "label": "JECFA — Spécifications des arômes",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
-    },
-    {
-      "label": "Règlement (EC) n° 1334/2008 sur les arômes",
+      "label": "Regulation (EC) No 1334/2008 — flavourings and flavouring ingredients",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1334/2026-02-16/eng"
     },
     {
-      "label": "Codex Alimentarius — Base de données des normes",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+      "label": "Regulation (EU) No 1169/2011 — designation of flavourings and ingredient-list exemptions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 — carriers authorised for food flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "JECFA — Ethanol, carrier solvent and flavouring agent, chemical record 2404",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2404"
+    },
+    {
+      "label": "Codex CXG 66-2008 — Guidelines for the Use of Flavourings",
+      "url": "https://www.fao.org/input/download/standards/11020/cxg_066e.pdf"
     }
   ],
   "title": "Arômes",
-  "description": "Catégorie d'étiquetage large pour les substances ou préparations ajoutées afin de conférer ou de modifier la saveur ; les substances exactes couvertes par ce terme dépendent du produit et des règles d'étiquetage applicables."
+  "description": "Un terme collectif comme « arôme » peut couvrir de nombreuses substances ainsi que des supports ou solvants. La liste européenne comprend plus de 2 500 substances aromatisantes."
 }

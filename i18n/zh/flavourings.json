@@ -7,34 +7,42 @@
     "flavour",
     "muslim"
   ],
-  "what_is": "用于添加或改变风味的物质或制剂的广泛标签类别；该术语涵盖的具体物质取决于产品及适用的标签规则。",
-  "why_botia": "BOTIA标记该通用术语，因为它可能未披露每种单独的调味物质或其来源。对于穆斯林选择分析而言，仅“调味料”一词不足以确定其来源或宗教状态。",
-  "can_1": "识别通用香精或调味料措辞，并触发风味信息层。",
-  "can_2": "当标签未提供足够的来源、承运人或相关认证信息时，为穆斯林层标记来源不确定性。",
-  "cannot_1": "识别每种隐藏在允许的集体标签术语背后的单一调味化合物、载体或加工助剂。",
-  "cannot_2": "在没有来源、成分、认证或其他可靠证据的情况下，将一种普通调味料归类为清真或非清真。",
+  "what_is": "用于赋予或改变味道或气味的物质和制剂的集合标签类别。成品可以只写“香料”，而不逐一列出每种香料物质。",
+  "why_botia": "“香料”一个词可以涵盖欧洲清单中超过2500种物质，而无需逐一声明。其背后可能是一种或多种物质，也可能包括用于携带这些物质的溶剂和载体——其中可包括酒精或丙二醇——这些也不一定需要单独出现在标签上。每种香料物质会单独进行评估，但标签可能不会告诉你具体有哪些物质，也不会说明它们的来源。",
+  "can_1": "识别香料、flavouring、天然香料等集合性标签名称。",
+  "can_2": "说明集合性香料声明可能隐藏具体物质、来源以及乙醇或丙二醇等载体，并显示Flavour 和 Muslim 信息层。",
+  "cannot_1": "当生产商只使用“香料”等集合名称时识别其中每一种香料物质或载体。",
+  "cannot_2": "仅凭集合标签名称确定未公开香料混合物的来源或组成。",
   "sources": [
     {
-      "label": "EFSA — 食品配料和调味剂",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+      "label": "European Commission — EU Lists of Flavourings and Food Flavourings Database",
+      "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/flavourings/eu-lists-flavourings_en"
     },
     {
-      "label": "FDA — 食品配料类型",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "EFSA — EU flavourings list: more than 2,500 flavouring substances",
+      "url": "https://www.efsa.europa.eu/en/press/news/121001b"
     },
     {
-      "label": "JECFA — 调味剂规格",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
-    },
-    {
-      "label": "（EC）第1334/2008号调味剂法规",
+      "label": "Regulation (EC) No 1334/2008 — flavourings and flavouring ingredients",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1334/2026-02-16/eng"
     },
     {
-      "label": "Codex Alimentarius — 标准数据库",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+      "label": "Regulation (EU) No 1169/2011 — designation of flavourings and ingredient-list exemptions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 — carriers authorised for food flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "JECFA — Ethanol, carrier solvent and flavouring agent, chemical record 2404",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2404"
+    },
+    {
+      "label": "Codex CXG 66-2008 — Guidelines for the Use of Flavourings",
+      "url": "https://www.fao.org/input/download/standards/11020/cxg_066e.pdf"
     }
   ],
   "title": "调味剂",
-  "description": "用于添加或修饰风味的物质或制剂的广泛标签类别；该术语涵盖的具体物质取决于产品及适用的标签规则。"
+  "description": "“香料”这样的集合名称可以涵盖许多单独物质，也可能包括载体或溶剂。欧洲清单包含超过2500种香料物质。"
 }

@@ -7,34 +7,42 @@
     "flavour",
     "muslim"
   ],
-  "what_is": "A broad labelling category for substances or preparations added to impart or modify flavour; the exact substances covered by the term depend on the product and the applicable labelling rules.",
-  "why_botia": "BOTIA flags the generic term because it may not disclose every individual flavouring substance or its source. For Muslim-choice analysis, the word flavourings alone is not enough to establish origin or religious status.",
-  "can_1": "Identify generic flavourings or flavorings wording and trigger the flavour information layer.",
-  "can_2": "Flag source uncertainty for the Muslim layer when the label does not provide enough information about origin, carrier or relevant certification.",
-  "cannot_1": "Identify every individual flavouring compound, carrier or processing aid hidden behind a permitted collective label term.",
-  "cannot_2": "Classify a generic flavouring as halal or haram without source, composition, certification or other reliable evidence.",
+  "what_is": "A collective labelling category for substances and preparations used to give or modify taste or smell. A finished product may simply declare “flavouring” instead of listing each flavouring substance separately.",
+  "why_botia": "“Flavouring” is one word that can cover substances from a European list of more than 2,500, without them having to be declared one by one. Behind it there may be one or many substances, plus solvents and carriers used to transport them — which can include alcohol or propylene glycol — and these do not necessarily have to appear separately either. Individual flavouring substances are evaluated on their own, but the label may not tell you which ones are present or where they come from.",
+  "can_1": "Detect generic terms such as flavouring, flavoring, aroma or natural flavouring when they are declared on the label.",
+  "can_2": "Explain that a collective flavouring declaration may conceal the exact substances, their source and carriers such as ethanol or propylene glycol, and activate the Flavour and Muslim traceability layers.",
+  "cannot_1": "Identify the individual flavouring substances or carriers when the manufacturer declares only a collective term such as “flavouring” or “aroma”.",
+  "cannot_2": "Determine the source or composition of an undeclared flavouring mixture from the collective label term alone.",
   "sources": [
     {
-      "label": "EFSA — Food ingredients and flavourings",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+      "label": "European Commission — EU Lists of Flavourings and Food Flavourings Database",
+      "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/flavourings/eu-lists-flavourings_en"
     },
     {
-      "label": "FDA — Types of Food Ingredients",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "EFSA — EU flavourings list: more than 2,500 flavouring substances",
+      "url": "https://www.efsa.europa.eu/en/press/news/121001b"
     },
     {
-      "label": "JECFA — Specifications for flavourings",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
-    },
-    {
-      "label": "Regulation (EC) No 1334/2008 on flavourings",
+      "label": "Regulation (EC) No 1334/2008 — flavourings and flavouring ingredients",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1334/2026-02-16/eng"
     },
     {
-      "label": "Codex Alimentarius — Standards database",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+      "label": "Regulation (EU) No 1169/2011 — designation of flavourings and ingredient-list exemptions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 — carriers authorised for food flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "JECFA — Ethanol, carrier solvent and flavouring agent, chemical record 2404",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2404"
+    },
+    {
+      "label": "Codex CXG 66-2008 — Guidelines for the Use of Flavourings",
+      "url": "https://www.fao.org/input/download/standards/11020/cxg_066e.pdf"
     }
   ],
   "title": "Flavourings",
-  "description": "A broad labelling category for substances or preparations added to impart or modify flavour; the exact substances covered by the term depend on the product and the applicable labelling rules."
+  "description": "A collective flavouring label can cover many individual substances, plus carriers or solvents. The European list contains more than 2,500 flavouring substances, while the label may not reveal the exact composition or source."
 }

@@ -7,34 +7,42 @@
     "flavour",
     "muslim"
   ],
-  "what_is": "Categoría amplia de etiquetado para sustancias o preparados añadidos para conferir o modificar el sabor; las sustancias exactas cubiertas por el término dependen del producto y de las normas de etiquetado aplicables.",
-  "why_botia": "BOTIA señala el término genérico porque puede no revelar cada sustancia aromatizante individual o su fuente. Para el análisis de elección musulmana, la palabra aromatizantes por sí sola no es suficiente para establecer el origen o el estatus religioso.",
-  "can_1": "Identifica la redacción de aromas o saborizantes genéricos y activa la capa de información de sabor.",
-  "can_2": "Marca la incertidumbre del origen para la capa musulmana cuando la etiqueta no proporciona suficiente información sobre el origen, el transportista o la certificación relevante.",
-  "cannot_1": "Identifica cada compuesto aromatizante, portador o coadyuvante de procesamiento individual oculto detrás de un término de etiqueta colectiva permitido.",
-  "cannot_2": "Clasifica un aromatizante genérico como halal o haram sin fuente, composición, certificación u otra evidencia confiable.",
+  "what_is": "Una categoría colectiva de etiquetado para sustancias y preparaciones utilizadas para dar o modificar sabor u olor. Un producto puede declarar simplemente “aroma” sin enumerar cada sustancia aromatizante por separado.",
+  "why_botia": "“Aroma” es una palabra que puede cubrir sustancias de una lista europea de más de 2.500, sin que tengan que declararse una por una. Detrás puede haber una o muchas sustancias, además de disolventes y soportes que las transportan —que pueden incluir alcohol o propilenglicol— y que tampoco tienen por qué aparecer por separado. Cada sustancia aromatizante se evalúa por su cuenta, pero la etiqueta puede no decir cuál llevas ni cuál es su origen.",
+  "can_1": "Detectar términos genéricos como aroma, aromas, flavouring, flavoring o aroma natural cuando aparecen declarados en la etiqueta.",
+  "can_2": "Explicar que una declaración colectiva de aroma puede ocultar las sustancias concretas, su origen y soportes como etanol o propilenglicol, y activar las capas Flavour y Muslim de trazabilidad.",
+  "cannot_1": "Identificar las sustancias aromatizantes o los soportes individuales cuando el fabricante declara únicamente un término colectivo como “aroma”.",
+  "cannot_2": "Determinar el origen o la composición de una mezcla aromatizante no declarada a partir del término colectivo de la etiqueta.",
   "sources": [
     {
-      "label": "EFSA — Ingredientes alimentarios y aromas",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+      "label": "Comisión Europea — Lista de aromas de la UE y base de datos de sustancias aromatizantes",
+      "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/flavourings/eu-lists-flavourings_en"
     },
     {
-      "label": "FDA — Tipos de ingredientes alimentarios",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "EFSA — Lista de aromas de la UE: más de 2.500 sustancias aromatizantes",
+      "url": "https://www.efsa.europa.eu/en/press/news/121001b"
     },
     {
-      "label": "JECFA — Especificaciones de aromas",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
-    },
-    {
-      "label": "Reglamento (EC) n.º 1334/2008 sobre aromas",
+      "label": "Reglamento (CE) 1334/2008 — aromas e ingredientes con propiedades aromatizantes",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1334/2026-02-16/eng"
     },
     {
-      "label": "Codex Alimentarius — Base de datos de normas",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+      "label": "Reglamento (UE) 1169/2011 — designación de aromas y excepciones de la lista de ingredientes",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Reglamento (CE) 1333/2008 — soportes autorizados para aromas alimentarios",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "JECFA — Etanol, disolvente soporte y agente aromatizante, registro químico 2404",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2404"
+    },
+    {
+      "label": "Codex CXG 66-2008 — Directrices para el uso de aromas",
+      "url": "https://www.fao.org/input/download/standards/11020/cxg_066e.pdf"
     }
   ],
   "title": "Aromas",
-  "description": "Categoría de etiquetado amplia para sustancias o preparados añadidos para conferir o modificar el sabor; las sustancias exactas cubiertas por el término dependen del producto y de las normas de etiquetado aplicables."
+  "description": "Una declaración colectiva como “aroma” puede cubrir muchas sustancias individuales, además de soportes o disolventes. La lista europea contiene más de 2.500 sustancias aromatizantes y la etiqueta puede no revelar la composición ni el origen exactos."
 }

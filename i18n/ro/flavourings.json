@@ -7,34 +7,42 @@
     "flavour",
     "muslim"
   ],
-  "what_is": "O categorie largă de etichetare pentru substanțe sau preparate adăugate pentru a conferi sau modifica aroma; substanțele exacte acoperite de termen depind de produs și de regulile de etichetare aplicabile.",
-  "why_botia": "BOTIA semnalează termenul generic pentru că acesta poate să nu dezvăluie fiecare substanță aromatizantă individuală sau sursa acesteia. Pentru analiza de tip muslim-choice, cuvântul „arome” singur nu este suficient pentru a stabili originea sau statutul religios.",
-  "can_1": "Identifică formularea generică de arome sau aromatizanți și declanșează stratul de informații despre arome.",
-  "can_2": "Marcați incertitudinea sursei pentru stratul musulman atunci când eticheta nu oferă suficiente informații despre origine, transportator sau certificare relevantă.",
-  "cannot_1": "Identifica fiecare compus aromatic individual, purtător sau adjuvant tehnologic ascuns în spatele unui termen colectiv permis de etichetare.",
-  "cannot_2": "Clasifică un aromatizant generic drept halal sau haram fără sursă, compoziție, certificare sau alte dovezi fiabile.",
+  "what_is": "O categorie colectivă de etichetare pentru substanțe și preparate folosite pentru a da sau modifica gustul ori mirosul. Un produs poate declara simplu „aromă” fără a enumera fiecare substanță separat.",
+  "why_botia": "„Aromă” este un singur cuvânt care poate acoperi substanțe dintr-o listă europeană de peste 2.500, fără ca acestea să trebuiască declarate una câte una. În spatele lui poate exista una sau mai multe substanțe, plus solvenți și suporturi — care pot include alcool sau propilenglicol — și care nici ele nu trebuie neapărat să apară separat. Fiecare substanță aromatizantă este evaluată individual, dar eticheta poate să nu spună care sunt prezente sau de unde provin.",
+  "can_1": "Identifica termeni generici precum aromă, flavouring sau aromă naturală.",
+  "can_2": "Explica faptul că o declarație colectivă poate ascunde substanțele exacte, originea lor și suporturi precum etanolul sau propilenglicolul și afișa straturile Flavour și Muslim.",
+  "cannot_1": "Identifica substanțele aromatizante sau suporturile individuale atunci când producătorul declară doar un termen colectiv.",
+  "cannot_2": "Determina originea sau compoziția unui amestec aromatizant nedeclarat doar din termenul colectiv.",
   "sources": [
     {
-      "label": "EFSA — Ingrediente alimentare și arome",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-ingredients"
+      "label": "European Commission — EU Lists of Flavourings and Food Flavourings Database",
+      "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/flavourings/eu-lists-flavourings_en"
     },
     {
-      "label": "FDA — Tipuri de ingrediente alimentare",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "EFSA — EU flavourings list: more than 2,500 flavouring substances",
+      "url": "https://www.efsa.europa.eu/en/press/news/121001b"
     },
     {
-      "label": "JECFA — Specificații pentru arome",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-flav/results/en/"
-    },
-    {
-      "label": "Regulamentul (EC) nr. 1334/2008 privind aromele",
+      "label": "Regulation (EC) No 1334/2008 — flavourings and flavouring ingredients",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1334/2026-02-16/eng"
     },
     {
-      "label": "Codex Alimentarius — Baza de date cu standarde",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/codex-texts/list-standards/en/?ds=247"
+      "label": "Regulation (EU) No 1169/2011 — designation of flavourings and ingredient-list exemptions",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 — carriers authorised for food flavourings",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "JECFA — Ethanol, carrier solvent and flavouring agent, chemical record 2404",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2404"
+    },
+    {
+      "label": "Codex CXG 66-2008 — Guidelines for the Use of Flavourings",
+      "url": "https://www.fao.org/input/download/standards/11020/cxg_066e.pdf"
     }
   ],
   "title": "Arome",
-  "description": "Categorie largă de etichetare pentru substanțe sau preparate adăugate pentru a conferi sau modifica aroma; substanțele exacte acoperite de termen depind de produs și de regulile de etichetare aplicabile."
+  "description": "Un termen colectiv precum „aromă” poate acoperi multe substanțe, precum și suporturi sau solvenți. Lista europeană conține peste 2.500 de substanțe aromatizante."
 }
