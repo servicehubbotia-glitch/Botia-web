@@ -1,21 +1,45 @@
 {
   "name": "Lisozima",
   "title": "Lisozima",
-  "description": "Uma enzima/proteína utilizada como aditivo alimentar. A especificação da UE para o E1105 define a lisozima como um polipéptido obtido a partir da clara de ovo de galinha, normalmente fornecido na forma de cloridrato.",
-  "what_is": "Uma enzima/proteína utilizada como aditivo alimentar. A especificação da UE para o E1105 define a lisozima como um polipéptido obtido a partir da clara de ovo de galinha, normalmente fornecido na forma de cloridrato.",
-  "why_botia": "BOTIA assinala o código E1105 porque o nome do aditivo declarado também inclui informações sobre a origem relevantes para a camada de origem animal. A regulamentação da UE abordou especificamente a lisozima proveniente da clara de ovo de galinha e a sua rotulagem em utilizações alimentares, tais como certas cervejas.",
-  "can_1": "Detetar o E1105, a lisozima, o cloridrato de lisozima e a muramidase, quando declarados.",
-  "can_2": "Apresente o contexto relativo à origem animal e aos números E e explique a origem da clara de ovo, tal como definida na especificação da UE relativa aos aditivos.",
-  "cannot_1": "Determine a concentração ou a atividade enzimática remanescente a partir da lista de ingredientes.",
-  "cannot_2": "Presuma que um alimento sem rótulo contém lisozima ou deduza que a origem é outra, caso o rótulo não forneça essa informação.",
+  "description": "A lisozima E1105 é um conservante antibacteriano obtido da clara de ovo de galinha e utilizado em queijos curados e alguns vinhos e cervejas.",
+  "what_is": "Uma enzima antibacteriana obtida da clara de ovo de galinha. Rompe ligações na parede celular de certas bactérias e é utilizada como conservante.",
+  "why_botia": "A lisozima é uma enzima da clara do ovo que destrói a parede de certas bactérias e por isso é utilizada como conservante. É usada em queijos curados para ajudar a evitar o inchaço tardio e também em alguns vinhos e cervejas. Segundo a especificação da UE, E1105 provém da clara de ovo de galinha, sendo portanto um alergénio do ovo e não adequado a dietas veganas — mesmo quando o produto não parece conter ovo.",
+  "can_1": "Detetar E1105, lisozima, cloridrato de lisozima e muramidase quando declarados.",
+  "can_2": "Explicar que E1105, tal como definido na UE, provém da clara de ovo de galinha e por isso transporta informação de alergénio e origem animal.",
+  "cannot_1": "Determinar pela lista de ingredientes a quantidade de lisozima ou a atividade enzimática restante.",
+  "cannot_2": "Detetar lisozima quando ela não aparece em nenhuma informação disponível para BOTIA.",
   "sources": [
     {
-      "label": "Regulamento (UE) n.º 231/2012 da Comissão — E1105 Especificação da lisozima",
+      "label": "EU Regulation 231/2012 — E1105 Lysozyme specification: obtained from hen egg white",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Regulamento (UE) n.º 471/2012 da Comissão — contexto de utilização e rotulagem da lisozima E1105",
+      "label": "EU Regulation 1333/2008 — authorised use of E1105 in ripened cheese and beer",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EU Regulation 471/2012 — lysozyme in beer and mandatory egg-origin labelling",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    },
+    {
+      "label": "EU Regulation 2019/934 — authorised oenological use of lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg/2019/934/oj/eng"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — mandatory declaration of egg and egg products",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "EU Regulation 579/2012 — wine allergen terms including egg lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/579/oj/eng"
+    },
+    {
+      "label": "JECFA — Lysozyme hydrochloride, INS 1105 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3398"
+    },
+    {
+      "label": "EFSA — allergenic foods evaluation: lysozyme in cheese and wine",
+      "url": "https://www.efsa.europa.eu/sites/default/files/consultation/140523.pdf"
     }
   ],
   "e_code": "E1105",

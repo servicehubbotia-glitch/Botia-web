@@ -1,21 +1,45 @@
 {
   "name": "Lysozym",
   "title": "Lysozym",
-  "description": "Een enzym/eiwit dat als levensmiddelenadditief wordt gebruikt. In de EU-specificatie voor E1105 wordt lysozym gedefinieerd als een polypeptide dat wordt verkregen uit kippeneiwit en dat doorgaans in de vorm van het hydrochloride wordt geleverd.",
-  "what_is": "Een enzym/eiwit dat als levensmiddelenadditief wordt gebruikt. In de EU-specificatie voor E1105 wordt lysozym gedefinieerd als een polypeptide dat wordt verkregen uit kippeneiwit en dat doorgaans in de vorm van het hydrochloride wordt geleverd.",
-  "why_botia": "BOTIA markeert E1105, omdat de opgegeven naam van het additief ook informatie bevat over de herkomst die relevant is voor de laag van dierlijke oorsprong. In de EU-regelgeving wordt specifiek ingegaan op lysozym uit kippeneiwit en de etikettering daarvan bij gebruik in levensmiddelen, zoals bepaalde bieren.",
-  "can_1": "Detecteer E1105, lysozym, lysozymhydrochloride en muramidase indien aangegeven.",
-  "can_2": "Geef de context weer met betrekking tot de herkomst uit dierlijke bronnen en de E-nummers, en leg uit wat wordt verstaan onder de herkomst van eiwit zoals gedefinieerd in de EU-specificatie voor additieven.",
-  "cannot_1": "Bepaal de concentratie of de resterende enzymatische activiteit aan de hand van de ingrediëntenlijst.",
-  "cannot_2": "Ga ervan uit dat een niet-geëtiketteerd levensmiddel lysozym bevat, of veronderstel een andere bron wanneer het etiket hierover geen informatie geeft.",
+  "description": "Lysozym E1105 is een antibacterieel conserveermiddel uit kippeneiwit en wordt gebruikt in onder meer gerijpte kaas en sommige wijnen en bieren.",
+  "what_is": "Een antibacterieel enzym uit kippeneiwit. Het breekt bindingen in de celwand van bepaalde bacteriën en wordt als conserveermiddel gebruikt.",
+  "why_botia": "Lysozym is een enzym uit eiwit dat de celwand van bepaalde bacteriën afbreekt en daarom als conserveermiddel wordt gebruikt. Het wordt in gerijpte kazen gebruikt om late zwelling te helpen voorkomen en ook in sommige wijnen en bieren. Volgens de EU-specificatie komt E1105 uit kippeneiwit, dus het is een ei-allergeen en niet geschikt voor veganistische voeding — ook wanneer het product er niet uitziet alsof het ei bevat.",
+  "can_1": "E1105, lysozym, lysozymhydrochloride en muramidase herkennen wanneer ze zijn vermeld.",
+  "can_2": "Uitleggen dat E1105 volgens de EU-definitie uit kippeneiwit komt en daarom informatie over ei-allergenen en dierlijke oorsprong draagt.",
+  "cannot_1": "Uit de ingrediëntenlijst bepalen hoeveel lysozym aanwezig is of hoeveel enzymactiviteit overblijft.",
+  "cannot_2": "Lysozym detecteren als het nergens in de voor BOTIA beschikbare informatie staat.",
   "sources": [
     {
-      "label": "Verordening (EU) nr. 231/2012 van de Commissie — E1105 Specificatie voor lysozym",
+      "label": "EU Regulation 231/2012 — E1105 Lysozyme specification: obtained from hen egg white",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Verordening (EU) nr. 471/2012 van de Commissie — toepassings- en etiketteringscontext voor lysozym E1105",
+      "label": "EU Regulation 1333/2008 — authorised use of E1105 in ripened cheese and beer",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EU Regulation 471/2012 — lysozyme in beer and mandatory egg-origin labelling",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    },
+    {
+      "label": "EU Regulation 2019/934 — authorised oenological use of lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg/2019/934/oj/eng"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — mandatory declaration of egg and egg products",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "EU Regulation 579/2012 — wine allergen terms including egg lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/579/oj/eng"
+    },
+    {
+      "label": "JECFA — Lysozyme hydrochloride, INS 1105 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3398"
+    },
+    {
+      "label": "EFSA — allergenic foods evaluation: lysozyme in cheese and wine",
+      "url": "https://www.efsa.europa.eu/sites/default/files/consultation/140523.pdf"
     }
   ],
   "e_code": "E1105",

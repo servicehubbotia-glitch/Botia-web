@@ -1,21 +1,45 @@
 {
   "name": "Lizozimă",
   "title": "Lizozimă",
-  "description": "O enzimă/proteină utilizată ca aditiv alimentar. Specificația UE pentru E1105 definește lizozimul ca fiind o polipeptidă obținută din albușul de ou de găină, furnizată de obicei sub formă de clorhidrat.",
-  "what_is": "O enzimă/proteină utilizată ca aditiv alimentar. Specificația UE pentru E1105 definește lizozimul ca fiind o polipeptidă obținută din albușul de ou de găină, furnizată de obicei sub formă de clorhidrat.",
-  "why_botia": "BOTIA semnalează codul E1105, deoarece denumirea aditivului declarată conține, de asemenea, informații privind sursa relevante pentru stratul de origine animală. Normele UE se referă în mod specific la lizozimul din albușul de ou de găină și la etichetarea acestuia în aplicații alimentare, cum ar fi anumite sortimente de bere.",
-  "can_1": "Se detectează E1105, lizozimul, clorhidratul de lizozim și muramidaza, atunci când sunt declarate.",
-  "can_2": "Prezentați contextul referitor la originea animală și la numerele E și explicați originea albușului de ou, așa cum este definită în specificațiile UE privind aditivii.",
-  "cannot_1": "Determinați concentrația sau activitatea enzimatică rămasă pe baza listei de ingrediente.",
-  "cannot_2": "Se presupune că un produs alimentar fără etichetă conține lizozim sau se deduce o altă sursă atunci când eticheta nu oferă astfel de informații.",
+  "description": "Lizozimul E1105 este un conservant antibacterian obținut din albuș de ou de găină și utilizat în brânzeturi maturate și în unele vinuri și beri.",
+  "what_is": "O enzimă antibacteriană obținută din albuș de ou de găină. Rupe legături din peretele celular al anumitor bacterii și este utilizată ca conservant.",
+  "why_botia": "Lizozimul este o enzimă din albușul de ou care distruge peretele celular al anumitor bacterii și de aceea este utilizat ca conservant. Este folosit în brânzeturi maturate pentru a ajuta la prevenirea umflării târzii și de asemenea în unele vinuri și beri. Conform specificației UE, E1105 provine din albuș de ou de găină, deci este alergen din ou și nu este potrivit pentru diete vegane — chiar dacă produsul nu pare să conțină ou.",
+  "can_1": "Identifica E1105, lizozim, clorhidrat de lizozim și muramidază atunci când sunt declarate.",
+  "can_2": "Explica faptul că E1105, conform definiției UE, provine din albuș de ou de găină și astfel indică alergenul ou și originea animală.",
+  "cannot_1": "Determina din lista ingredientelor cantitatea de lizozim sau activitatea enzimatică rămasă.",
+  "cannot_2": "Detecta lizozimul atunci când nu apare în nicio informație disponibilă pentru BOTIA.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei — E1105 Specificații privind lizozimul",
+      "label": "EU Regulation 231/2012 — E1105 Lysozyme specification: obtained from hen egg white",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Regulamentul (UE) nr. 471/2012 al Comisiei — contextul de utilizare și etichetare pentru lizozimul E1105",
+      "label": "EU Regulation 1333/2008 — authorised use of E1105 in ripened cheese and beer",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EU Regulation 471/2012 — lysozyme in beer and mandatory egg-origin labelling",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    },
+    {
+      "label": "EU Regulation 2019/934 — authorised oenological use of lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg/2019/934/oj/eng"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — mandatory declaration of egg and egg products",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "EU Regulation 579/2012 — wine allergen terms including egg lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/579/oj/eng"
+    },
+    {
+      "label": "JECFA — Lysozyme hydrochloride, INS 1105 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3398"
+    },
+    {
+      "label": "EFSA — allergenic foods evaluation: lysozyme in cheese and wine",
+      "url": "https://www.efsa.europa.eu/sites/default/files/consultation/140523.pdf"
     }
   ],
   "e_code": "E1105",

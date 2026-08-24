@@ -1,21 +1,45 @@
 {
   "name": "Lizozim",
   "title": "Lizozim",
-  "description": "Gıda katkı maddesi olarak kullanılan bir enzim/protein. E1105 için AB spesifikasyonu, lizozimi tavuk yumurtası akından elde edilen ve genellikle hidroklorür formunda tedarik edilen bir polipeptit olarak tanımlamaktadır.",
-  "what_is": "Gıda katkı maddesi olarak kullanılan bir enzim/protein. E1105 için AB spesifikasyonu, lizozimi tavuk yumurtası akından elde edilen ve genellikle hidroklorür formunda tedarik edilen bir polipeptit olarak tanımlamaktadır.",
-  "why_botia": "BOTIA, E1105 kodunu işaretler; zira bu katkı maddesinin beyan edilen adı, hayvansal kökenli katmanla ilgili kaynak bilgilerini de içermektedir. AB düzenlemeleri, tavuk yumurtası akından elde edilen lizozim ve bunun belirli bira türleri gibi gıda uygulamalarında etiketlenmesine özel olarak değinmiştir.",
-  "can_1": "Beyan edildiğinde E1105, lizozim, lizozim hidroklorür ve muramidazı tespit edin.",
-  "can_2": "Hayvansal köken ve E numarası bağlamını ortaya koyun ve AB katkı maddesi şartnamesinde tanımlanan yumurta akı kökenini açıklayın.",
-  "cannot_1": "İçerik listesinden konsantrasyonu veya kalan enzimatik aktiviteyi belirleyin.",
-  "cannot_2": "Etiketsiz bir gıdanın lizozim içerdiğini varsayınız ya da etikette bu konuda herhangi bir bilgi bulunmuyorsa, başka bir kaynak olduğunu düşününüz.",
+  "description": "Lizozim E1105, tavuk yumurtası akından elde edilen antibakteriyel bir koruyucudur ve olgunlaştırılmış peynirlerde, bazı şarap ve biralarda kullanılır.",
+  "what_is": "Tavuk yumurtası akından elde edilen antibakteriyel bir enzimdir. Bazı bakterilerin hücre duvarındaki bağları parçalar ve koruyucu olarak kullanılır.",
+  "why_botia": "Lizozim, bazı bakterilerin hücre duvarını parçalayan yumurta akı enzimidir ve bu nedenle koruyucu olarak kullanılır. Olgunlaştırılmış peynirlerde geç şişmeyi önlemeye yardımcı olmak için ve bazı şaraplarla biralarda kullanılır. AB spesifikasyonuna göre E1105 tavuk yumurtası akından gelir; dolayısıyla yumurta alerjenidir ve vegan diyetlere uygun değildir — ürün başka açıdan yumurta içeriyor gibi görünmese bile.",
+  "can_1": "E1105, lizozim, lizozim hidroklorür ve muramidazı beyan edildiğinde tespit etmek.",
+  "can_2": "E1105’in AB tanımına göre tavuk yumurtası akından geldiğini ve bu nedenle yumurta alerjeni ile hayvansal köken bilgisi taşıdığını açıklamak.",
+  "cannot_1": "İçerik listesinden lizozim miktarını veya kalan enzim aktivitesini belirlemek.",
+  "cannot_2": "BOTIA’ya sunulan bilgilerde hiçbir yerde belirtilmeyen lizozimi tespit etmek.",
   "sources": [
     {
-      "label": "(AB) 231/2012 sayılı Komisyon Tüzüğü — E1105 Lizozim spesifikasyonu",
+      "label": "EU Regulation 231/2012 — E1105 Lysozyme specification: obtained from hen egg white",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "(AB) 471/2012 sayılı Komisyon Tüzüğü — lizozim E1105’ün kullanımı ve etiketleme koşulları",
+      "label": "EU Regulation 1333/2008 — authorised use of E1105 in ripened cheese and beer",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EU Regulation 471/2012 — lysozyme in beer and mandatory egg-origin labelling",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    },
+    {
+      "label": "EU Regulation 2019/934 — authorised oenological use of lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg/2019/934/oj/eng"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — mandatory declaration of egg and egg products",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "EU Regulation 579/2012 — wine allergen terms including egg lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/579/oj/eng"
+    },
+    {
+      "label": "JECFA — Lysozyme hydrochloride, INS 1105 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3398"
+    },
+    {
+      "label": "EFSA — allergenic foods evaluation: lysozyme in cheese and wine",
+      "url": "https://www.efsa.europa.eu/sites/default/files/consultation/140523.pdf"
     }
   ],
   "e_code": "E1105",

@@ -1,21 +1,45 @@
 {
   "name": "Lisozim",
   "title": "Lisozim",
-  "description": "Enzim/protein yang digunakan sebagai bahan tambahan pangan. Spesifikasi Uni Eropa untuk E1105 mendefinisikan lisozim sebagai polipeptida yang diperoleh dari putih telur ayam, yang biasanya disediakan dalam bentuk hidroklorida.",
-  "what_is": "Enzim/protein yang digunakan sebagai bahan tambahan pangan. Spesifikasi Uni Eropa untuk E1105 mendefinisikan lisozim sebagai polipeptida yang diperoleh dari putih telur ayam, yang biasanya disediakan dalam bentuk hidroklorida.",
-  "why_botia": "BOTIA menandai E1105 karena nama aditif yang dinyatakan juga memuat informasi asal yang relevan dengan lapisan yang berasal dari hewan. Peraturan Uni Eropa secara khusus mengatur lisozim dari putih telur ayam dan pelabelannya dalam penggunaan pada makanan, seperti bir tertentu.",
-  "can_1": "Deteksi E1105, lisozim, lisozim hidroklorida, dan muramidase jika dinyatakan.",
-  "can_2": "Jelaskan konteks asal hewan dan nomor E, serta jelaskan asal putih telur sebagaimana didefinisikan dalam spesifikasi bahan tambahan pangan Uni Eropa.",
-  "cannot_1": "Tentukan konsentrasi atau aktivitas enzim yang tersisa berdasarkan daftar bahan.",
-  "cannot_2": "Anggaplah bahwa suatu makanan yang tidak berlabel mengandung lisozim, atau simpulkan bahwa ada sumber lain jika label tidak mencantumkan informasi tersebut.",
+  "description": "Lisozim E1105 adalah pengawet antibakteri yang diperoleh dari putih telur ayam dan digunakan pada keju matang serta beberapa anggur dan bir.",
+  "what_is": "Enzim antibakteri yang diperoleh dari putih telur ayam. Enzim ini memutus ikatan pada dinding sel bakteri tertentu dan digunakan sebagai pengawet.",
+  "why_botia": "Lisozim adalah enzim dari putih telur yang merusak dinding sel bakteri tertentu sehingga digunakan sebagai pengawet. Bahan ini digunakan pada keju matang untuk membantu mencegah penggembungan akhir, serta pada beberapa anggur dan bir. Menurut spesifikasi UE, E1105 berasal dari putih telur ayam, sehingga merupakan alergen telur dan tidak sesuai untuk pola makan vegan — bahkan ketika produknya tidak tampak mengandung telur.",
+  "can_1": "Mendeteksi E1105, lisozim, lisozim hidroklorida dan muramidase ketika dinyatakan.",
+  "can_2": "Menjelaskan bahwa E1105 menurut definisi UE berasal dari putih telur ayam sehingga membawa informasi alergen telur dan asal hewani.",
+  "cannot_1": "Menentukan jumlah lisozim atau aktivitas enzim yang tersisa hanya dari daftar bahan.",
+  "cannot_2": "Mendeteksi lisozim jika tidak dinyatakan dalam informasi apa pun yang tersedia bagi BOTIA.",
   "sources": [
     {
-      "label": "Peraturan Komisi (UE) No. 231/2012 — E1105 Spesifikasi lisozim",
+      "label": "EU Regulation 231/2012 — E1105 Lysozyme specification: obtained from hen egg white",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Peraturan Komisi (UE) No. 471/2012 — konteks penggunaan dan pelabelan lisozim E1105",
+      "label": "EU Regulation 1333/2008 — authorised use of E1105 in ripened cheese and beer",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EU Regulation 471/2012 — lysozyme in beer and mandatory egg-origin labelling",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    },
+    {
+      "label": "EU Regulation 2019/934 — authorised oenological use of lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg/2019/934/oj/eng"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — mandatory declaration of egg and egg products",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "EU Regulation 579/2012 — wine allergen terms including egg lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/579/oj/eng"
+    },
+    {
+      "label": "JECFA — Lysozyme hydrochloride, INS 1105 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3398"
+    },
+    {
+      "label": "EFSA — allergenic foods evaluation: lysozyme in cheese and wine",
+      "url": "https://www.efsa.europa.eu/sites/default/files/consultation/140523.pdf"
     }
   ],
   "e_code": "E1105",

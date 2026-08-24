@@ -7,22 +7,46 @@
     "animal",
     "enumbers"
   ],
-  "what_is": "An enzyme/protein used as a food additive. The EU specification for E1105 defines lysozyme as a polypeptide obtained from hen egg white, usually supplied as the hydrochloride.",
-  "why_botia": "BOTIA flags E1105 because its declared additive name also carries source information relevant to the animal-origin layer. EU rules specifically addressed lysozyme from hen egg white and its labelling in food uses such as certain beers.",
-  "can_1": "Detect E1105, lysozyme, lysozyme hydrochloride and muramidase when declared.",
-  "can_2": "Show the animal-origin and E-number context and explain the egg-white origin defined in the EU additive specification.",
-  "cannot_1": "Determine the concentration or remaining enzymatic activity from the ingredient list.",
-  "cannot_2": "Assume that an unlabeled food contains lysozyme or infer a different source when the label gives no such information.",
+  "what_is": "An antibacterial enzyme obtained from hen egg white. It breaks bonds in the cell walls of certain bacteria and is used as a preservative.",
+  "why_botia": "Lysozyme is an enzyme from egg white that destroys the cell wall of certain bacteria, which is why it is used as a preservative. It is used in ripened cheeses to help prevent late blowing, and also in some wines and beers. Under the EU specification, its source is hen egg white, so it is an egg allergen and is not suitable for vegan diets — even when the product does not otherwise look as though it contains egg.",
+  "can_1": "Detect E1105, lysozyme, lysozyme hydrochloride and muramidase when they are declared.",
+  "can_2": "Explain that E1105 as defined in the EU comes from hen egg white and therefore carries egg-allergen and animal-origin information.",
+  "cannot_1": "Determine how much lysozyme is present or how much enzymatic activity remains from the ingredient list alone.",
+  "cannot_2": "Detect lysozyme when it is not disclosed anywhere in the information available to BOTIA.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012 — E1105 Lysozyme specification",
+      "label": "EU Regulation 231/2012 — E1105 Lysozyme specification: obtained from hen egg white",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Commission Regulation (EU) No 471/2012 — use and labelling context for lysozyme E1105",
+      "label": "EU Regulation 1333/2008 — authorised use of E1105 in ripened cheese and beer",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EU Regulation 471/2012 — lysozyme in beer and mandatory egg-origin labelling",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    },
+    {
+      "label": "EU Regulation 2019/934 — authorised oenological use of lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg/2019/934/oj/eng"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — mandatory declaration of egg and egg products",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "EU Regulation 579/2012 — wine allergen terms including egg lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/579/oj/eng"
+    },
+    {
+      "label": "JECFA — Lysozyme hydrochloride, INS 1105 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3398"
+    },
+    {
+      "label": "EFSA — allergenic foods evaluation: lysozyme in cheese and wine",
+      "url": "https://www.efsa.europa.eu/sites/default/files/consultation/140523.pdf"
     }
   ],
   "title": "Lysozyme",
-  "description": "An enzyme/protein used as a food additive. The EU specification for E1105 defines lysozyme as a polypeptide obtained from hen egg white, usually supplied as the hydrochloride."
+  "description": "Lysozyme E1105 is an antibacterial preservative obtained from hen egg white and used in foods including ripened cheese and some wines and beers."
 }

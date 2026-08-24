@@ -1,21 +1,45 @@
 {
   "name": "Lizozym",
   "title": "Lizozym",
-  "description": "Enzym/białko stosowane jako dodatek do żywności. Specyfikacja UE dotycząca E1105 definiuje lizozym jako polipeptyd pozyskiwany z białka jaja kurzego, dostarczany zazwyczaj w postaci chlorowodorku.",
-  "what_is": "Enzym/białko stosowane jako dodatek do żywności. Specyfikacja UE dotycząca E1105 definiuje lizozym jako polipeptyd pozyskiwany z białka jaja kurzego, dostarczany zazwyczaj w postaci chlorowodorku.",
-  "why_botia": "BOTIA oznacza kodem E1105, ponieważ zadeklarowana nazwa tego dodatku zawiera również informacje o pochodzeniu dotyczące składnika pochodzenia zwierzęcego. Przepisy UE wyraźnie odnoszą się do lizozymu pochodzącego z białka jaj kurzych oraz do jego oznaczania w produktach spożywczych, takich jak niektóre piwa.",
-  "can_1": "Należy wykrywać E1105, lizozym, chlorowodorek lizozymu oraz muramidazę, o ile zostały zgłoszone.",
-  "can_2": "Przedstaw kontekst dotyczący pochodzenia zwierzęcego i numerów E oraz wyjaśnij pochodzenie białka jaja określone w specyfikacji dodatków żywnościowych UE.",
-  "cannot_1": "Na podstawie listy składników należy określić stężenie lub pozostałą aktywność enzymatyczną.",
-  "cannot_2": "Zakładać, że nieoznakowany produkt spożywczy zawiera lizozym, lub wnioskować o innym pochodzeniu, gdy etykieta nie podaje takiej informacji.",
+  "description": "Lizozym E1105 jest antybakteryjnym konserwantem otrzymywanym z białka jaja kurzego i stosowanym m.in. w serach dojrzewających oraz niektórych winach i piwach.",
+  "what_is": "Enzym antybakteryjny otrzymywany z białka jaja kurzego. Rozkłada wiązania w ścianach komórkowych niektórych bakterii i jest stosowany jako konserwant.",
+  "why_botia": "Lizozym jest enzymem z białka jaja, który niszczy ścianę komórkową niektórych bakterii, dlatego stosuje się go jako konserwant. Używa się go w serach dojrzewających, aby pomagać zapobiegać późnemu pęcznieniu, a także w niektórych winach i piwach. Zgodnie ze specyfikacją UE E1105 pochodzi z białka jaja kurzego, jest więc alergenem jaja i nie nadaje się do diet wegańskich — nawet jeśli produkt nie wygląda na zawierający jajo.",
+  "can_1": "Rozpoznawać E1105, lizozym, chlorowodorek lizozymu i muramidazę, gdy są deklarowane.",
+  "can_2": "Wyjaśniać, że E1105 według definicji UE pochodzi z białka jaja kurzego i dlatego niesie informację o alergenie i pochodzeniu zwierzęcym.",
+  "cannot_1": "Określić z listy składników ilości lizozymu ani pozostałej aktywności enzymatycznej.",
+  "cannot_2": "Wykryć lizozymu, jeśli nie jest wymieniony w żadnych danych dostępnych dla BOTIA.",
   "sources": [
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — E1105 Specyfikacja lizozymu",
+      "label": "EU Regulation 231/2012 — E1105 Lysozyme specification: obtained from hen egg white",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Rozporządzenie Komisji (UE) nr 471/2012 — warunki stosowania i oznakowania lizozymu E1105",
+      "label": "EU Regulation 1333/2008 — authorised use of E1105 in ripened cheese and beer",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "EU Regulation 471/2012 — lysozyme in beer and mandatory egg-origin labelling",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    },
+    {
+      "label": "EU Regulation 2019/934 — authorised oenological use of lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg/2019/934/oj/eng"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — mandatory declaration of egg and egg products",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "EU Regulation 579/2012 — wine allergen terms including egg lysozyme",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/579/oj/eng"
+    },
+    {
+      "label": "JECFA — Lysozyme hydrochloride, INS 1105 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3398"
+    },
+    {
+      "label": "EFSA — allergenic foods evaluation: lysozyme in cheese and wine",
+      "url": "https://www.efsa.europa.eu/sites/default/files/consultation/140523.pdf"
     }
   ],
   "e_code": "E1105",

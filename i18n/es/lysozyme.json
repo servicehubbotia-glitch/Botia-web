@@ -1,21 +1,45 @@
 {
   "name": "Lisozima",
   "title": "Lisozima",
-  "description": "Enzima o proteína utilizada como aditivo alimentario. La especificación de la UE para el E1105 define la lisozima como un polipéptido obtenido de la clara de huevo de gallina, que suele suministrarse en forma de clorhidrato.",
-  "what_is": "Enzima o proteína utilizada como aditivo alimentario. La especificación de la UE para el E1105 define la lisozima como un polipéptido obtenido de la clara de huevo de gallina, que suele suministrarse en forma de clorhidrato.",
-  "why_botia": "BOTIA se clasifica como E1105 porque el nombre del aditivo declarado también incluye información sobre el origen relevante para la categoría de origen animal. La normativa de la UE aborda específicamente la lisozima procedente de la clara de huevo de gallina y su etiquetado en usos alimentarios como, por ejemplo, determinadas cervezas.",
-  "can_1": "Detectar E1105, lisozima, clorhidrato de lisozima y muramidasa cuando se declaren.",
-  "can_2": "Explica el contexto relativo al origen animal y a los números E, y describe el origen de la clara de huevo tal y como se define en la especificación de la UE sobre aditivos.",
-  "cannot_1": "Determina la concentración o la actividad enzimática restante a partir de la lista de ingredientes.",
-  "cannot_2": "Suponer que un alimento sin etiquetar contiene lisozima o inferir un origen diferente cuando la etiqueta no proporciona esa información.",
+  "description": "La lisozima E1105 es un conservante antibacteriano obtenido de clara de huevo de gallina y utilizado en alimentos como quesos curados y algunos vinos y cervezas.",
+  "what_is": "Una enzima antibacteriana obtenida de la clara de huevo de gallina. Rompe enlaces de la pared celular de determinadas bacterias y se utiliza como conservante.",
+  "why_botia": "La lisozima es una enzima de la clara del huevo que destruye la pared de ciertas bacterias, y por eso se usa como conservante. Se usa en quesos curados para ayudar a evitar que se hinchen, y también en algunos vinos y cervezas. Tal como la define la UE, su origen es clara de huevo de gallina, así que es alérgeno y no es apta para dietas veganas — aunque el producto no parezca llevar huevo por ningún lado.",
+  "can_1": "Detectar E1105, lisozima, clorhidrato de lisozima y muramidasa cuando aparecen declarados.",
+  "can_2": "Explicar que E1105, tal como está definido en la UE, procede de clara de huevo de gallina y por tanto aporta información de alérgeno y origen animal.",
+  "cannot_1": "Determinar cuánto E1105 contiene el producto ni cuánta actividad enzimática conserva a partir de la lista de ingredientes.",
+  "cannot_2": "Detectar lisozima cuando no aparece declarada en ninguna de las informaciones disponibles para BOTIA.",
   "sources": [
     {
-      "label": "Reglamento (UE) n.º 231/2012 de la Comisión — E1105: especificaciones de la lisozima",
+      "label": "Reglamento UE 231/2012 — especificación E1105: obtenido de clara de huevo de gallina",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "Reglamento (UE) n.º 471/2012 de la Comisión: contexto de uso y etiquetado de la lisozima E1105",
+      "label": "Reglamento UE 1333/2008 — uso autorizado de E1105 en queso curado y cerveza",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+    },
+    {
+      "label": "Reglamento UE 471/2012 — lisozima en cerveza y declaración del origen huevo",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/471/oj/eng"
+    },
+    {
+      "label": "Reglamento UE 2019/934 — uso enológico autorizado de lisozima",
+      "url": "https://eur-lex.europa.eu/eli/reg/2019/934/oj/eng"
+    },
+    {
+      "label": "Reglamento UE 1169/2011 — declaración obligatoria de huevo y productos de huevo",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Reglamento UE 579/2012 — términos de alérgenos del vino, incluida lisozima de huevo",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2012/579/oj/eng"
+    },
+    {
+      "label": "JECFA — Clorhidrato de lisozima, INS 1105 — IDA no especificada",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3398"
+    },
+    {
+      "label": "EFSA — evaluación de alérgenos: lisozima en queso y vino",
+      "url": "https://www.efsa.europa.eu/sites/default/files/consultation/140523.pdf"
     }
   ],
   "e_code": "E1105",
