@@ -1,25 +1,33 @@
 {
   "name": "Caffeina",
   "title": "Caffeina",
-  "description": "La caffeina è espressamente indicata come ingrediente, con etichettatura ufficiale e informazioni relative alla gravidanza.",
-  "what_is": "Uno stimolante presente in natura che può anche essere aggiunto come ingrediente ad alimenti, bevande e integratori. Quando la caffeina viene aggiunta o indicata esplicitamente, può figurare con il proprio nome nell'elenco degli ingredienti.",
-  "why_botia": "BOTIA segnala la caffeina dichiarata esplicitamente perché le linee guida ufficiali e le norme di etichettatura le attribuiscono un contesto specifico. Le norme dell’UE richiedono informazioni aggiuntive sulla caffeina per determinate bevande ad alto contenuto di caffeina e alimenti con caffeina aggiunta, mentre WHO raccomanda di ridurre un elevato consumo di caffeina durante la gravidanza. La semplice presenza del termine non rivela la dose.",
-  "can_1": "Rileva la caffeina e i nomi comuni degli ingredienti, come la caffeina anidra, quando compaiono nell'elenco degli ingredienti.",
-  "can_2": "Illustrare il contesto relativo alla gravidanza e all’etichettatura della caffeina senza considerare la semplice presenza di caffeina come prova di un’esposizione nociva.",
-  "cannot_1": "Calcolare la quantità totale di caffeina contenuta nel prodotto quando tale quantità non è indicata.",
-  "cannot_2": "Individuare la presenza di caffeina proveniente da caffè, tè, guaranà o altri ingredienti vegetali quando la caffeina non è espressamente indicata.",
+  "description": "La caffeina non elimina la stanchezza: blocca il segnale che la fa percepire. Può disturbare il sonno, aumentare temporaneamente la pressione e ha un livello di assunzione EFSA più basso durante la gravidanza.",
+  "what_is": "La caffeina è uno stimolante presente naturalmente nel caffè, nel tè, nel cacao e in alcune altre piante e può anche essere aggiunta direttamente ad alimenti, bevande e integratori.",
+  "why_botia": "La caffeina non dà energia: blocca il segnale che il corpo usa per avvertire della stanchezza. La stanchezza rimane, ma viene percepita meno — e la caffeina può disturbare il sonno anche se assunta sei ore prima di andare a letto. Può aumentare la pressione sanguigna per alcune ore, soprattutto in chi non la consuma regolarmente. L'EFSA considera fino a 400 mg al giorno senza problemi di sicurezza per gli adulti sani e fissa 200 mg al giorno durante la gravidanza; la lista degli ingredienti indica che c'è caffeina, non necessariamente quanta.",
+  "can_1": "Rilevare la caffeina e nomi espliciti comuni come caffeina anidra quando compaiono nella lista degli ingredienti.",
+  "can_2": "Spiegare come la caffeina modifica la sensazione di stanchezza, i suoi effetti sul sonno e sulla pressione sanguigna e il diverso livello di assunzione EFSA durante la gravidanza.",
+  "cannot_1": "Calcolare la caffeina totale dalla lista degli ingredienti quando la quantità non è dichiarata.",
+  "cannot_2": "Dedurre la dose esatta di caffeina da caffè, tè, guaranà, cacao o un altro ingrediente che la contiene.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 1169/2011 — disposizioni specifiche in materia di etichettatura relative alla caffeina",
+      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
+    },
+    {
+      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
+    },
+    {
+      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+    },
+    {
+      "label": "Review — Acute effects of caffeine on blood pressure",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — Limitare l'assunzione di caffeina durante la gravidanza",
-      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
-    },
-    {
-      "label": "FDA — La verità a nudo: quanta caffeina è troppa?",
-      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
     }
   ],
   "e_code": null,

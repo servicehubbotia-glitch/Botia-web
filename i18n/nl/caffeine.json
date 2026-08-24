@@ -1,25 +1,33 @@
 {
   "name": "Cafeïne",
   "title": "Cafeïne",
-  "description": "Cafeïne wordt uitdrukkelijk als ingrediënt vermeld, met officiële etikettering en informatie in het kader van zwangerschap.",
-  "what_is": "Een van nature voorkomende stimulerende stof die ook als ingrediënt aan voedingsmiddelen, dranken en voedingssupplementen kan worden toegevoegd. Wanneer cafeïne zelf wordt toegevoegd of expliciet wordt vermeld, mag het met de naam in de ingrediëntenlijst worden opgenomen.",
-  "why_botia": "BOTIA In de vlaggen wordt cafeïne expliciet vermeld omdat officiële richtlijnen en etiketteringsvoorschriften hiervoor een specifieke context bieden. Volgens EU-voorschriften moet er aanvullende informatie over cafeïne worden verstrekt voor bepaalde dranken met een hoog cafeïnegehalte en voedingsmiddelen waaraan cafeïne is toegevoegd, en de WHO adviseert om een hoge cafeïne-inname tijdens de zwangerschap te beperken. Het feit dat het woord wordt vermeld, zegt op zich nog niets over de dosis.",
-  "can_1": "Detecteer cafeïne en veelvoorkomende expliciete ingrediëntnamen, zoals watervrije cafeïne, wanneer deze in de ingrediëntenlijst voorkomen.",
-  "can_2": "Geef de context weer van de vermelding van zwangerschap en cafeïne, zonder de loutere aanwezigheid van cafeïne te beschouwen als bewijs van een schadelijke blootstelling.",
-  "cannot_1": "Bereken de totale hoeveelheid cafeïne in het product wanneer deze niet is vermeld.",
-  "cannot_2": "Stel de hoeveelheid cafeïne af uit koffie, thee, guarana of een ander plantaardig ingrediënt wanneer cafeïne zelf niet wordt vermeld.",
+  "description": "Cafeïne verwijdert vermoeidheid niet maar blokkeert het signaal waardoor je die voelt. Het kan slaap verstoren, de bloeddruk tijdelijk verhogen en heeft tijdens de zwangerschap een lager EFSA-innameniveau.",
+  "what_is": "Cafeïne is een stimulerende stof die van nature voorkomt in koffie, thee, cacao en enkele andere planten en die ook rechtstreeks aan voedsel, dranken en supplementen kan worden toegevoegd.",
+  "why_botia": "Cafeïne geeft geen energie: het blokkeert het signaal waarmee je lichaam aangeeft dat het moe is. De vermoeidheid is er nog steeds, maar je voelt haar minder — en cafeïne kan de slaap verstoren, zelfs wanneer het zes uur voor bedtijd wordt ingenomen. Het kan de bloeddruk enkele uren verhogen, vooral bij mensen die het niet regelmatig gebruiken. EFSA beschouwt tot 400 mg per dag als zonder veiligheidszorgen voor gezonde volwassenen en hanteert 200 mg per dag tijdens de zwangerschap; de ingrediëntenlijst vertelt je dat cafeïne aanwezig is, maar niet noodzakelijk hoeveel.",
+  "can_1": "Cafeïne en gebruikelijke expliciete namen zoals watervrije cafeïne detecteren wanneer ze in de ingrediëntenlijst staan.",
+  "can_2": "Uitleggen hoe cafeïne het gevoel van vermoeidheid verandert, slaap en bloeddruk beïnvloedt en waarom EFSA tijdens de zwangerschap een ander innameniveau gebruikt.",
+  "cannot_1": "De totale hoeveelheid cafeïne uit de ingrediëntenlijst berekenen wanneer de hoeveelheid daar niet wordt vermeld.",
+  "cannot_2": "De exacte cafeïnedosis afleiden uit koffie, thee, guarana, cacao of een ander cafeïnehoudend ingrediënt.",
   "sources": [
     {
-      "label": "Verordening (EU) nr. 1169/2011 — specifieke etiketteringsvoorschriften voor cafeïne",
+      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
+    },
+    {
+      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
+    },
+    {
+      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+    },
+    {
+      "label": "Review — Acute effects of caffeine on blood pressure",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — het beperken van de cafeïne-inname tijdens de zwangerschap",
-      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
-    },
-    {
-      "label": "FDA — De waarheid op tafel: hoeveel cafeïne is te veel?",
-      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
     }
   ],
   "e_code": null,

@@ -1,25 +1,33 @@
 {
   "name": "Cofeina",
   "title": "Cofeina",
-  "description": "Cofeina este menționată în mod explicit ca ingredient, cu etichetare oficială și informații specifice sarcinii.",
-  "what_is": "Un stimulent natural care poate fi adăugat și ca ingredient în alimente, băuturi și suplimente alimentare. Atunci când cafeina este adăugată sau menționată în mod explicit, aceasta poate apărea cu denumirea sa în lista de ingrediente.",
-  "why_botia": "BOTIA semnalează cafeina declarată explicit deoarece orientările oficiale și normele de etichetare îi conferă un context specific. Normele UE impun informații suplimentare despre cafeină pentru anumite băuturi cu conținut ridicat de cafeină și alimente cu cafeină adăugată, iar WHO recomandă reducerea consumului ridicat de cafeină în timpul sarcinii. Simpla prezență a cuvântului nu indică doza.",
-  "can_1": "Identifică cofeina și denumirile comune ale ingredientelor, cum ar fi „cofeina anhidră”, atunci când acestea apar în lista de ingrediente.",
-  "can_2": "Prezentați contextul referitor la sarcină și la etichetarea produselor care conțin cofeină, fără a considera simpla prezență a cofeinei drept dovadă a unei expuneri nocive.",
-  "cannot_1": "Calculați cantitatea totală de cofeină din produs atunci când aceasta nu este declarată.",
-  "cannot_2": "Se presupune prezența cofeinei din cafea, ceai, guarana sau un alt ingredient de origine vegetală atunci când cofeina nu este menționată în mod expres.",
+  "description": "Cofeina nu elimină oboseala, ci blochează semnalul prin care o simți. Poate perturba somnul, crește temporar tensiunea și are un nivel de aport EFSA mai mic în timpul sarcinii.",
+  "what_is": "Cofeina este un stimulant prezent în mod natural în cafea, ceai, cacao și alte câteva plante și poate fi adăugată direct în alimente, băuturi și suplimente.",
+  "why_botia": "Cofeina nu oferă energie: blochează semnalul prin care corpul transmite că este obosit. Oboseala rămâne, dar este simțită mai puțin — iar cofeina poate perturba somnul chiar dacă este consumată cu șase ore înainte de culcare. Poate crește tensiunea arterială pentru câteva ore, mai ales la persoanele care nu o consumă regulat. EFSA consideră că până la 400 mg pe zi nu ridică probleme de siguranță pentru adulții sănătoși și stabilește 200 mg pe zi în timpul sarcinii; lista ingredientelor arată că există cofeină, nu neapărat și cantitatea.",
+  "can_1": "Detecta cofeina și denumiri explicite uzuale precum cofeină anhidră atunci când apar în lista ingredientelor.",
+  "can_2": "Explica modul în care cofeina schimbă senzația de oboseală, efectele asupra somnului și tensiunii arteriale și nivelul diferit de aport EFSA în timpul sarcinii.",
+  "cannot_1": "Calcula cantitatea totală de cofeină din lista ingredientelor atunci când cantitatea nu este declarată acolo.",
+  "cannot_2": "Deduce doza exactă de cofeină din cafea, ceai, guarana, cacao sau alt ingredient care o conține.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 1169/2011 — dispoziții specifice privind etichetarea cofeinei",
+      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
+    },
+    {
+      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
+    },
+    {
+      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+    },
+    {
+      "label": "Review — Acute effects of caffeine on blood pressure",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — limitarea consumului de cofeină în timpul sarcinii",
-      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
-    },
-    {
-      "label": "FDA — Dezvăluiri: Câtă cofeină înseamnă „prea mult”?",
-      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
     }
   ],
   "e_code": null,

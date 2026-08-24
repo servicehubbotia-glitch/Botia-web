@@ -1,25 +1,33 @@
 {
   "name": "Caféine",
   "title": "Caféine",
-  "description": "La caféine est explicitement mentionnée parmi les ingrédients, avec un étiquetage officiel et des informations spécifiques à la grossesse.",
-  "what_is": "Un stimulant présent à l'état naturel qui peut également être ajouté comme ingrédient dans les aliments, les boissons et les compléments alimentaires. Lorsque la caféine est ajoutée ou mentionnée explicitement, elle peut figurer sous son nom dans la liste des ingrédients.",
-  "why_botia": "BOTIA signale la caféine explicitement déclarée parce que les recommandations officielles et les règles d’étiquetage lui donnent un contexte spécifique. La réglementation de l’UE exige des informations supplémentaires sur la caféine pour certaines boissons à forte teneur en caféine et certains aliments contenant de la caféine ajoutée, tandis que WHO recommande de réduire les apports élevés en caféine pendant la grossesse. La seule présence du mot ne révèle pas la dose.",
-  "can_1": "Détecter la caféine et les noms courants d'ingrédients explicites, tels que la caféine anhydre, lorsqu'ils apparaissent dans la liste des ingrédients.",
-  "can_2": "Présenter le contexte de la grossesse et de l'étiquetage relatif à la caféine sans considérer la simple présence de caféine comme une preuve d'une exposition nocive.",
-  "cannot_1": "Calculer la teneur totale en caféine du produit lorsque celle-ci n'est pas indiquée.",
-  "cannot_2": "Déduire la présence de caféine provenant du café, du thé, du guarana ou d'un autre ingrédient d'origine végétale lorsque la caféine n'est pas mentionnée explicitement.",
+  "description": "La caféine ne supprime pas la fatigue : elle bloque le signal qui la fait ressentir. Elle peut perturber le sommeil, augmenter temporairement la pression artérielle et son niveau d'apport EFSA est plus bas pendant la grossesse.",
+  "what_is": "La caféine est un stimulant présent naturellement dans le café, le thé, le cacao et certaines autres plantes, et elle peut aussi être ajoutée directement aux aliments, boissons et compléments.",
+  "why_botia": "La caféine ne donne pas d'énergie : elle bloque le signal utilisé par le corps pour indiquer qu'il est fatigué. La fatigue reste présente, mais on la ressent moins — et la caféine peut perturber le sommeil même lorsqu'elle est consommée six heures avant le coucher. Elle peut augmenter la pression artérielle pendant quelques heures, surtout chez les personnes qui n'en consomment pas régulièrement. L'EFSA considère qu'une consommation allant jusqu'à 400 mg par jour ne soulève pas de problème de sécurité chez l'adulte sain et fixe 200 mg par jour pendant la grossesse ; la liste des ingrédients indique la présence de caféine, pas nécessairement sa quantité.",
+  "can_1": "Détecter la caféine et les appellations explicites courantes comme caféine anhydre lorsqu'elles apparaissent dans la liste des ingrédients.",
+  "can_2": "Expliquer comment la caféine modifie la sensation de fatigue, ses effets sur le sommeil et la pression artérielle et le niveau d'apport différent fixé par l'EFSA pendant la grossesse.",
+  "cannot_1": "Calculer la quantité totale de caféine à partir de la liste des ingrédients lorsqu'elle n'y est pas indiquée.",
+  "cannot_2": "Déduire la dose exacte de caféine à partir de café, thé, guarana, cacao ou d'un autre ingrédient qui en contient.",
   "sources": [
     {
-      "label": "Règlement (UE) n° 1169/2011 — dispositions spécifiques en matière d'étiquetage concernant la caféine",
+      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
+    },
+    {
+      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
+    },
+    {
+      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+    },
+    {
+      "label": "Review — Acute effects of caffeine on blood pressure",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — Limiter la consommation de caféine pendant la grossesse",
-      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
-    },
-    {
-      "label": "FDA — Tout vous dire : quelle quantité de caféine est excessive ?",
-      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
     }
   ],
   "e_code": null,

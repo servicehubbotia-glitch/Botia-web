@@ -1,25 +1,33 @@
 {
   "name": "咖啡因",
   "title": "咖啡因",
-  "description": "明确将咖啡因列为成分，并附有官方标签及针对孕妇的说明信息。",
-  "what_is": "一种天然存在的兴奋剂，也可作为成分添加到食品、饮料和膳食补充剂中。当咖啡因本身被添加或明确标注时，其名称可出现在配料表中。",
-  "why_botia": "BOTIA 会标记明确标示的咖啡因，因为官方指南和标签规则为其规定了特定背景。欧盟规则要求某些高咖啡因饮料和添加咖啡因的食品提供额外的咖啡因信息，而 WHO 建议孕期减少高咖啡因摄入。仅凭“咖啡因”一词的出现无法得知剂量。",
-  "can_1": "当成分表中出现咖啡因以及“无水咖啡因”等常见明确成分名称时，应予以识别。",
-  "can_2": "应说明与怀孕及咖啡因标签相关的背景，但不应将咖啡因的单纯存在视为有害暴露的证据。",
-  "cannot_1": "当产品未标明咖啡因含量时，计算该产品中的咖啡因总量。",
-  "cannot_2": "当咖啡因本身未被标明时，可推断咖啡、茶、瓜拉纳或其他植物成分中含有咖啡因。",
+  "description": "咖啡因不会消除疲劳，而是阻断让你感到疲劳的信号。它可能影响睡眠、暂时升高血压，而且 EFSA 在怀孕期间采用更低的摄入水平。",
+  "what_is": "咖啡因是一种刺激物，天然存在于咖啡、茶、可可和其他一些植物中，也可以直接添加到食品、饮料和补充剂中。",
+  "why_botia": "咖啡因并不会给身体增加能量：它会阻断身体用来提示疲劳的信号。疲劳仍然存在，只是感觉没有那么明显——即使在睡前六小时摄入，咖啡因也可能影响睡眠。它还可能在数小时内升高血压，尤其是在不经常摄入咖啡因的人群中。EFSA 认为健康成年人每天摄入不超过 400 毫克不会引起安全担忧，而怀孕期间为每天 200 毫克；配料表会告诉你含有咖啡因，但不一定告诉你具体有多少。",
+  "can_1": "识别配料表中明确出现的咖啡因以及无水咖啡因等常见名称。",
+  "can_2": "解释咖啡因如何改变疲劳感、对睡眠和血压的影响，以及 EFSA 在怀孕期间采用的不同摄入水平。",
+  "cannot_1": "在配料表没有标明数量时计算产品中的总咖啡因。",
+  "cannot_2": "根据咖啡、茶、瓜拉纳、可可或其他含咖啡因配料推断准确的咖啡因剂量。",
   "sources": [
     {
-      "label": "(欧盟)第1169/2011号法规——关于咖啡因的特定标签规定",
+      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
+    },
+    {
+      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
+    },
+    {
+      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+    },
+    {
+      "label": "Review — Acute effects of caffeine on blood pressure",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "世界卫生组织——孕期限制咖啡因摄入量",
-      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
-    },
-    {
-      "label": "FDA — 揭秘：多少咖啡因算过量？",
-      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
     }
   ],
   "e_code": null,

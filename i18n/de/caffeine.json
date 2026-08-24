@@ -1,25 +1,33 @@
 {
   "name": "Koffein",
   "title": "Koffein",
-  "description": "Koffein wird ausdrücklich als Inhaltsstoff angegeben, mit offizieller Kennzeichnung und Informationen zum Konsum während der Schwangerschaft.",
-  "what_is": "Ein natürlich vorkommendes Stimulans, das auch als Zutat in Lebensmitteln, Getränken und Nahrungsergänzungsmitteln zugesetzt werden kann. Wenn Koffein selbst zugesetzt oder ausdrücklich angegeben wird, kann es namentlich in der Zutatenliste aufgeführt werden.",
-  "why_botia": "BOTIA In den Hinweisen wurde Koffein ausdrücklich genannt, da offizielle Leitlinien und Kennzeichnungsvorschriften hierfür einen spezifischen Kontext vorgeben. Die EU-Vorschriften verlangen zusätzliche Angaben zum Koffeingehalt für bestimmte koffeinhaltige Getränke und Lebensmittel mit Koffeinzusatz, und die WHO rät dazu, eine hohe Koffeinaufnahme während der Schwangerschaft zu reduzieren. Das bloße Vorhandensein des Begriffs gibt jedoch keinen Aufschluss über die Dosis.",
-  "can_1": "Erkennen Sie Koffein und gängige, ausdrücklich genannte Inhaltsstoffe wie wasserfreies Koffein, wenn diese in der Zutatenliste aufgeführt sind.",
-  "can_2": "Stellen Sie den Zusammenhang zwischen Schwangerschaft und Koffein-Kennzeichnung dar, ohne das bloße Vorhandensein von Koffein als Beweis für eine gesundheitsschädliche Exposition zu werten.",
-  "cannot_1": "Berechnen Sie den Gesamtkoffeingehalt des Produkts, wenn die Menge nicht angegeben ist.",
-  "cannot_2": "Wenn Koffein nicht ausdrücklich angegeben ist, ist davon auszugehen, dass es aus Kaffee, Tee, Guarana oder einem anderen pflanzlichen Inhaltsstoff stammt.",
+  "description": "Koffein beseitigt Müdigkeit nicht, sondern blockiert das Signal, durch das sie wahrgenommen wird. Es kann Schlaf stören, den Blutdruck vorübergehend erhöhen und hat während der Schwangerschaft einen niedrigeren EFSA-Aufnahmewert.",
+  "what_is": "Koffein ist ein Stimulans, das natürlicherweise in Kaffee, Tee, Kakao und einigen anderen Pflanzen vorkommt und Lebensmitteln, Getränken und Nahrungsergänzungsmitteln auch direkt zugesetzt werden kann.",
+  "why_botia": "Koffein gibt keine Energie: Es blockiert das Signal, mit dem der Körper Müdigkeit meldet. Die Müdigkeit ist weiterhin da, wird aber weniger wahrgenommen — und Koffein kann den Schlaf selbst dann stören, wenn es sechs Stunden vor dem Zubettgehen aufgenommen wird. Es kann den Blutdruck für einige Stunden erhöhen, besonders bei Menschen, die es nicht regelmäßig konsumieren. EFSA sieht bei gesunden Erwachsenen bis zu 400 mg pro Tag keine Sicherheitsbedenken und setzt während der Schwangerschaft 200 mg pro Tag an; die Zutatenliste zeigt, dass Koffein enthalten ist, aber nicht unbedingt wie viel.",
+  "can_1": "Koffein und übliche ausdrückliche Bezeichnungen wie wasserfreies Koffein erkennen, wenn sie in der Zutatenliste stehen.",
+  "can_2": "Erklären, wie Koffein das Müdigkeitsgefühl verändert, Schlaf und Blutdruck beeinflusst und warum EFSA während der Schwangerschaft einen anderen Aufnahmewert verwendet.",
+  "cannot_1": "Die gesamte Koffeinmenge aus der Zutatenliste berechnen, wenn dort keine Menge angegeben ist.",
+  "cannot_2": "Die genaue Koffeindosis aus Kaffee, Tee, Guarana, Kakao oder einem anderen koffeinhaltigen Bestandteil ableiten.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 1169/2011 – Besondere Kennzeichnungsvorschriften für Koffein",
+      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
+    },
+    {
+      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
+    },
+    {
+      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+    },
+    {
+      "label": "Review — Acute effects of caffeine on blood pressure",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO – Einschränkung des Koffeinkonsums während der Schwangerschaft",
-      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
-    },
-    {
-      "label": "FDA — Die Wahrheit ans Licht: Wie viel Koffein ist zu viel?",
-      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
     }
   ],
   "e_code": null,

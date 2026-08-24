@@ -6,26 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "A naturally occurring stimulant that can also be added as an ingredient to foods, drinks and supplements. When caffeine itself is added or explicitly declared, it can appear by name in the ingredient list.",
-  "why_botia": "BOTIA flags explicitly declared caffeine because official guidance and labelling rules give it specific context. EU rules require additional caffeine information for certain high-caffeine drinks and foods with added caffeine, and WHO advises reducing high caffeine intake during pregnancy. The presence of the word alone does not reveal the dose.",
+  "what_is": "Caffeine is a stimulant found naturally in coffee, tea, cocoa and some other plants, and it can also be added directly to foods, drinks and supplements.",
+  "why_botia": "Caffeine does not give you energy: it blocks the signal your body uses to tell you it is tired. The tiredness is still there, but you feel it less — and caffeine can disturb sleep even when taken six hours before bedtime. It can raise blood pressure for a few hours, particularly in people who do not consume it regularly. EFSA considers up to 400 mg per day not to raise safety concerns for healthy adults, and sets 200 mg per day during pregnancy; the ingredient list tells you caffeine is there, not necessarily how much.",
   "can_1": "Detect caffeine and common explicit ingredient names such as caffeine anhydrous when they appear in the ingredient list.",
-  "can_2": "Show the pregnancy and caffeine-labelling context without treating the mere presence of caffeine as proof of a harmful exposure.",
-  "cannot_1": "Calculate total caffeine in the product when the amount is not declared.",
-  "cannot_2": "Infer caffeine from coffee, tea, guarana or another botanical ingredient when caffeine itself is not declared.",
+  "can_2": "Explain how caffeine changes the feeling of tiredness, its effects on sleep and blood pressure, and the different EFSA intake level during pregnancy.",
+  "cannot_1": "Calculate total caffeine from the ingredient list when the amount is not declared there.",
+  "cannot_2": "Infer the exact caffeine dose from coffee, tea, guarana, cocoa or another caffeine-containing ingredient.",
   "sources": [
     {
-      "label": "Regulation (EU) No 1169/2011 — specific labelling provisions for caffeine",
+      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
+    },
+    {
+      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
+    },
+    {
+      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+    },
+    {
+      "label": "Review — Acute effects of caffeine on blood pressure",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — restricting caffeine intake during pregnancy",
-      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
-    },
-    {
-      "label": "FDA — Spilling the Beans: How Much Caffeine is Too Much?",
-      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
     }
   ],
   "title": "Caffeine",
-  "description": "Caffeine explicitly declared as an ingredient, with official labelling and pregnancy-context information."
+  "description": "Caffeine does not remove tiredness: it blocks the signal that makes you feel it. It can disturb sleep, temporarily raise blood pressure and has a lower EFSA intake level during pregnancy."
 }

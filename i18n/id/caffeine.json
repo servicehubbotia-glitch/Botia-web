@@ -1,25 +1,33 @@
 {
   "name": "Kafein",
   "title": "Kafein",
-  "description": "Kafein secara eksplisit disebutkan sebagai bahan, disertai dengan label resmi dan informasi terkait kehamilan.",
-  "what_is": "Sebuah stimulan alami yang juga dapat ditambahkan sebagai bahan ke dalam makanan, minuman, dan suplemen. Apabila kafein ditambahkan atau disebutkan secara eksplisit, nama kafein tersebut dapat tercantum dalam daftar bahan.",
-  "why_botia": "BOTIA Kata \"kafein\" secara eksplisit disebutkan karena pedoman resmi dan aturan pelabelan memberikan konteks khusus terkait hal tersebut. Peraturan Uni Eropa mewajibkan penyampaian informasi tambahan mengenai kafein untuk minuman tertentu yang mengandung kafein tinggi serta makanan yang ditambahkan kafein, dan WHO menyarankan untuk mengurangi asupan kafein tinggi selama kehamilan. Kehadiran kata tersebut saja tidak menunjukkan takarannya.",
-  "can_1": "Mendeteksi kafein dan nama-nama bahan umum yang tercantum secara eksplisit, seperti kafein anhidrat, ketika muncul dalam daftar bahan.",
-  "can_2": "Menjelaskan konteks kehamilan dan pelabelan kafein tanpa menganggap keberadaan kafein semata-mata sebagai bukti paparan yang berbahaya.",
-  "cannot_1": "Hitung total kandungan kafein dalam produk tersebut jika jumlahnya tidak dicantumkan.",
-  "cannot_2": "Tentukan kandungan kafein dari kopi, teh, guarana, atau bahan nabati lainnya apabila kafein itu sendiri tidak dicantumkan.",
+  "description": "Kafein tidak menghilangkan rasa lelah tetapi menghalangi sinyal yang membuatnya terasa. Kafein dapat mengganggu tidur, sementara meningkatkan tekanan darah, dan memiliki tingkat asupan EFSA yang lebih rendah selama kehamilan.",
+  "what_is": "Kafein adalah stimulan yang terdapat secara alami dalam kopi, teh, kakao dan beberapa tanaman lain, dan juga dapat ditambahkan langsung ke makanan, minuman dan suplemen.",
+  "why_botia": "Kafein tidak memberi energi: zat ini menghalangi sinyal yang digunakan tubuh untuk memberi tahu bahwa tubuh sedang lelah. Rasa lelah tetap ada, tetapi terasa lebih sedikit — dan kafein dapat mengganggu tidur bahkan bila dikonsumsi enam jam sebelum tidur. Kafein juga dapat meningkatkan tekanan darah selama beberapa jam, terutama pada orang yang tidak mengonsumsinya secara teratur. EFSA menilai asupan hingga 400 mg per hari tidak menimbulkan masalah keamanan pada orang dewasa sehat dan menetapkan 200 mg per hari selama kehamilan; daftar bahan memberi tahu bahwa kafein ada, tetapi belum tentu berapa banyak.",
+  "can_1": "Mendeteksi kafein dan nama eksplisit yang umum seperti kafein anhidrat ketika tercantum dalam daftar bahan.",
+  "can_2": "Menjelaskan bagaimana kafein mengubah rasa lelah, pengaruhnya terhadap tidur dan tekanan darah serta tingkat asupan EFSA yang berbeda selama kehamilan.",
+  "cannot_1": "Menghitung total kafein dari daftar bahan ketika jumlahnya tidak dinyatakan di sana.",
+  "cannot_2": "Menentukan dosis kafein yang tepat dari kopi, teh, guarana, kakao atau bahan lain yang mengandung kafein.",
   "sources": [
     {
-      "label": "Peraturan (UE) No. 1169/2011 — ketentuan khusus mengenai pelabelan kafein",
+      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
+    },
+    {
+      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
+    },
+    {
+      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+    },
+    {
+      "label": "Review — Acute effects of caffeine on blood pressure",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — membatasi asupan kafein selama kehamilan",
-      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
-    },
-    {
-      "label": "FDA — Mengungkap Rahasia: Berapa Banyak Kafein yang Terlalu Banyak?",
-      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
     }
   ],
   "e_code": null,

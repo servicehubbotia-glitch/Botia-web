@@ -1,25 +1,33 @@
 {
   "name": "Cafeína",
   "title": "Cafeína",
-  "description": "La cafeína se indica explícitamente como ingrediente, con el etiquetado oficial y la información relativa al embarazo.",
-  "what_is": "Un estimulante de origen natural que también puede añadirse como ingrediente a alimentos, bebidas y complementos alimenticios. Cuando se añade cafeína o se indica explícitamente su presencia, puede aparecer por su nombre en la lista de ingredientes.",
-  "why_botia": "BOTIA señala la cafeína declarada explícitamente porque las directrices oficiales y las normas de etiquetado le dan un contexto específico. La normativa de la UE exige información adicional sobre la cafeína en determinadas bebidas con alto contenido en cafeína y alimentos con cafeína añadida, y WHO recomienda reducir el consumo elevado de cafeína durante el embarazo. La mera presencia de la palabra no revela la dosis.",
-  "can_1": "Detecta la cafeína y los nombres de ingredientes comunes que figuran de forma explícita, como la cafeína anhidra, cuando aparezcan en la lista de ingredientes.",
-  "can_2": "Mostrar el contexto del embarazo y del etiquetado de la cafeína sin considerar la mera presencia de cafeína como prueba de una exposición nociva.",
-  "cannot_1": "Calcular la cantidad total de cafeína del producto cuando no se indique dicha cantidad.",
-  "cannot_2": "Se debe deducir la presencia de cafeína procedente del café, el té, el guaraná u otro ingrediente vegetal cuando no se indique expresamente la cafeína.",
+  "description": "La cafeína no elimina el cansancio: bloquea la señal que hace que lo notes. Puede alterar el sueño, subir temporalmente la tensión y tiene un nivel de ingesta EFSA menor durante el embarazo.",
+  "what_is": "La cafeína es un estimulante presente de forma natural en el café, el té, el cacao y algunas otras plantas, y también puede añadirse directamente a alimentos, bebidas y suplementos.",
+  "why_botia": "La cafeína no da energía: bloquea la señal que el cuerpo usa para avisar de que está cansado. El cansancio sigue ahí, pero se nota menos — y la cafeína puede alterar el sueño incluso si se toma seis horas antes de acostarse. Puede subir la tensión durante unas horas, sobre todo en quienes no la consumen habitualmente. La EFSA considera que hasta 400 mg al día no plantean problemas de seguridad para adultos sanos y establece 200 mg al día durante el embarazo; la lista de ingredientes dice que lleva cafeína, no necesariamente cuánta.",
+  "can_1": "Detectar cafeína y nombres explícitos habituales como cafeína anhidra cuando aparecen en la lista de ingredientes.",
+  "can_2": "Explicar cómo la cafeína cambia la sensación de cansancio, sus efectos sobre el sueño y la tensión y el nivel de ingesta diferente de la EFSA durante el embarazo.",
+  "cannot_1": "Calcular la cafeína total a partir de la lista de ingredientes cuando la cantidad no está declarada allí.",
+  "cannot_2": "Inferir la dosis exacta de cafeína a partir de café, té, guaraná, cacao u otro ingrediente que pueda contenerla.",
   "sources": [
     {
-      "label": "Reglamento (UE) n.º 1169/2011 — disposiciones específicas sobre el etiquetado de la cafeína",
+      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
+    },
+    {
+      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
+    },
+    {
+      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+    },
+    {
+      "label": "Review — Acute effects of caffeine on blood pressure",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO: restricción del consumo de cafeína durante el embarazo",
-      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
-    },
-    {
-      "label": "FDA — Aclarando las cosas: ¿cuánta cafeína es demasiada?",
-      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
     }
   ],
   "e_code": null,

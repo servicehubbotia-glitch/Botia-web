@@ -1,25 +1,33 @@
 {
   "name": "Kafein",
   "title": "Kafein",
-  "description": "Kafein, içerik maddesi olarak açıkça belirtilmiş olup, resmi etiketleme ve hamilelikle ilgili bilgiler de yer almaktadır.",
-  "what_is": "Gıdalara, içeceklere ve takviye ürünlerine bileşen olarak da eklenebilen, doğada bulunan bir uyarıcıdır. Kafein doğrudan eklenmişse veya açıkça belirtilmişse, içerik listesinde adıyla yer alabilir.",
-  "why_botia": "BOTIA, açıkça beyan edilen kafeini işaretler; çünkü resmî kılavuzlar ve etiketleme kuralları ona özel bir bağlam verir. AB kuralları, belirli yüksek kafeinli içecekler ve kafein eklenmiş gıdalar için ek kafein bilgisi verilmesini zorunlu kılar; WHO ise gebelik sırasında yüksek kafein alımının azaltılmasını önerir. Kelimenin tek başına bulunması dozu göstermez.",
-  "can_1": "İçerik listesinde kafein ve susuz kafein gibi yaygın olarak kullanılan açık içerik adlarını tespit eder.",
-  "can_2": "Kafeinin varlığını tek başına zararlı bir maruziyetin kanıtı olarak değerlendirmeksizin, hamilelik ve kafein etiketleme konusunu ele alın.",
-  "cannot_1": "Miktarı belirtilmediğinde, üründeki toplam kafein miktarını hesaplayın.",
-  "cannot_2": "Kafein içeriği belirtilmediğinde, kahve, çay, guarana veya başka bir bitkisel bileşenden kafein içeriğini tahmin edin.",
+  "description": "Kafein yorgunluğu ortadan kaldırmaz; onu hissettiren sinyali engeller. Uykuyu bozabilir, kan basıncını geçici olarak yükseltebilir ve gebelikte daha düşük bir EFSA alım seviyesine sahiptir.",
+  "what_is": "Kafein kahve, çay, kakao ve bazı diğer bitkilerde doğal olarak bulunan bir uyarıcıdır ve ayrıca gıdalara, içeceklere ve takviyelere doğrudan eklenebilir.",
+  "why_botia": "Kafein enerji vermez: vücudun yorgun olduğunu bildirmek için kullandığı sinyali engeller. Yorgunluk hâlâ vardır ancak daha az hissedilir — ve kafein yatmadan altı saat önce alınsa bile uykuyu bozabilir. Özellikle düzenli tüketmeyen kişilerde kan basıncını birkaç saat yükseltebilir. EFSA sağlıklı yetişkinlerde günde 400 mg'a kadar alımın güvenlik endişesi yaratmadığını kabul eder ve gebelikte günde 200 mg sınırı kullanır; içerik listesi kafeinin bulunduğunu söyler, ancak miktarını her zaman söylemez.",
+  "can_1": "İçerik listesinde yer aldığında kafeini ve susuz kafein gibi yaygın açık adlarını tespit etmek.",
+  "can_2": "Kafeinin yorgunluk hissini nasıl değiştirdiğini, uyku ve kan basıncı üzerindeki etkilerini ve gebelik sırasında EFSA'nın farklı alım seviyesini açıklamak.",
+  "cannot_1": "Miktar içerik listesinde belirtilmemişse toplam kafein miktarını hesaplamak.",
+  "cannot_2": "Kahve, çay, guarana, kakao veya kafein içeren başka bir bileşenden kesin kafein dozunu çıkarmak.",
   "sources": [
     {
-      "label": "(AB) 1169/2011 sayılı Tüzük — kafeinle ilgili özel etiketleme hükümleri",
+      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
+    },
+    {
+      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
+    },
+    {
+      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
+    },
+    {
+      "label": "Review — Acute effects of caffeine on blood pressure",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
+    },
+    {
+      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — Hamilelikte kafein alımının sınırlandırılması",
-      "url": "https://www.who.int/tools/elena/interventions/caffeine-pregnancy"
-    },
-    {
-      "label": "FDA — Sırları Açıklıyoruz: Ne Kadar Kafein Fazla Sayılır?",
-      "url": "https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much"
     }
   ],
   "e_code": null,
