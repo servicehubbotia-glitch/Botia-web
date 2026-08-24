@@ -7,26 +7,46 @@
     "flavour",
     "enumbers"
   ],
-  "what_is": "一组增味食品添加剂，包括谷氨酸（E620）及其钠盐、钾盐、钙盐、铵盐和镁盐（E621–E625）。",
-  "why_botia": "BOTIA 将其标注出来，因为E620–E625 已被认定为增味剂，既可能以E编号形式出现，也可能以特定成分名称出现，其中包括谷氨酸钠（E621 /MSG）。",
-  "can_1": "识别E620–E625及其常见的标示名称，包括谷氨酸钠（MSG/E621）。",
-  "can_2": "当声明了其中一种添加剂时，触发风味和E编号信息层。",
-  "cannot_1": "仅根据配料表确定所含的量。",
-  "cannot_2": "根据一种已标明的谷氨酸添加剂的存在情况，推算总膳食谷氨酸摄入量或预测个体的反应。",
+  "what_is": "一组鲜味增强剂，包括谷氨酸（E620）及其钠、钾、钙、铵和镁盐（E621–E625）。味精，即谷氨酸钠 MSG，是 E621。",
+  "why_botia": "谷氨酸产生鲜味，也天然存在于成熟番茄、帕尔马干酪和酱油中；MSG 释放的谷氨酸在化学上与其相同。所谓“中餐馆综合征”源自1968年发表的一封信，并非来自对照试验；在正常进食条件下，对照研究未能稳定重现该症状组合。JECFA 对 E620–E625 保持组别 ADI“未规定”，而 EFSA 设定了每日 30 mg/kg 体重的组别 ADI。EFSA 的依据是发育神经毒性研究中 3,200 mg MSG/kg/天的 NOAEL；更高剂量出现了神经行为改变，随后应用了100倍安全系数。",
+  "can_1": "识别 E620–E625 及其常见名称，包括 MSG 和 E621。",
+  "can_2": "说明 JECFA“未规定”的组别 ADI 与 EFSA 30 mg/kg 的区别，以及用于推导该数值的 NOAEL 和安全系数。",
+  "cannot_1": "仅根据配料表确定产品中添加谷氨酸盐的具体量。",
+  "cannot_2": "计算一个人的膳食总谷氨酸暴露量或预测个人是否会出现症状。",
   "sources": [
     {
-      "label": "关于食品添加剂的第1333/2008号（EC）法规——E620–E625",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — L-glutamic acid (INS 620), chemical record 668 — group ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/668"
     },
     {
-      "label": "EFSA — EFSA 评估了食品中添加的谷氨酸的安全性",
+      "label": "JECFA — Monosodium glutamate (INS 621), chemical record 992 — group ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/992"
+    },
+    {
+      "label": "EFSA 2017 — Re-evaluation of glutamic acid and glutamates E620–E625",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4910"
+    },
+    {
+      "label": "EFSA — Safety review of glutamates added to food",
       "url": "https://www.efsa.europa.eu/en/press/news/170712"
     },
     {
-      "label": "欧盟委员会第231/2012号条例——经批准的食品添加剂规格",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "FDA — Questions and Answers on Monosodium Glutamate (MSG)",
+      "url": "https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg"
+    },
+    {
+      "label": "New England Journal of Medicine — Chinese-Restaurant Syndrome, letter published in 1968",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJM196804042781419"
+    },
+    {
+      "label": "Geha et al. 2000 — multicentre double-blind placebo-controlled MSG study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10736382/"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — authorised uses for E620–E625",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "title": "谷氨酸盐",
-  "description": "一组增味食品添加剂，包括谷氨酸（E620）及其盐类（E621–E625）。"
+  "description": "E620–E625 谷氨酸盐是鲜味增强剂。MSG 释放的谷氨酸与食品中天然存在的谷氨酸在化学上相同。JECFA 的组别 ADI 为“未规定”，EFSA 设定为 30 mg/kg 体重。"
 }

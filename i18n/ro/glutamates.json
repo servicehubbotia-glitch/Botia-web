@@ -7,26 +7,46 @@
     "flavour",
     "enumbers"
   ],
-  "what_is": "Un grup de aditivi alimentari care intensifică gustul, alcătuit din acidul glutamic (E620) și sărurile sale de sodiu, potasiu, calciu, amoniu și magneziu (E621–E625).",
-  "why_botia": "BOTIA le semnalează deoarece E620–E625 sunt declarați ca potențatori de aromă care pot apărea fie sub un număr E, fie sub denumirea specifică a unui ingredient, inclusiv glutamatul monosodic (E621 /MSG).",
-  "can_1": "Identificați E620–E625, precum și denumirile lor uzuale, inclusiv glutamatul monosodic (MSG/E621).",
-  "can_2": "Afişează straturile cu informaţii privind aroma şi numerele E atunci când este declarat unul dintre aceşti aditivi.",
-  "cannot_1": "Stabiliți cantitatea prezentă doar pe baza listei de ingrediente.",
-  "cannot_2": "Să se estimeze expunerea totală la glutamatul din alimentație sau să se prevadă reacția unei persoane pe baza prezenței unui singur aditiv pe bază de glutamat declarat.",
+  "what_is": "O familie de potențiatori ai gustului umami formată din acid glutamic (E620) și sărurile sale de sodiu, potasiu, calciu, amoniu și magneziu (E621–E625). Glutamatul monosodic, MSG, este E621.",
+  "why_botia": "Glutamatul produce gustul umami și apare natural în roșii coapte, parmezan și sos de soia; glutamatul eliberat de MSG este chimic același. Așa-numitul „sindrom al restaurantului chinezesc” a pornit de la o scrisoare publicată în 1968, nu de la un studiu controlat, iar studiile controlate nu l-au reprodus în mod constant în condiții normale de consum. JECFA menține pentru E620–E625 o DZA de grup „nespecificată”, în timp ce EFSA a stabilit 30 mg/kg greutate corporală pe zi. Valoarea a fost derivată dintr-un NOAEL de 3.200 mg MSG/kg/zi într-un studiu de neurotoxicitate a dezvoltării, în care doze mai mari au produs modificări neurocomportamentale, aplicând un factor de siguranță de 100.",
+  "can_1": "Identifica E620–E625 și denumirile uzuale, inclusiv MSG și E621.",
+  "can_2": "Explica diferența dintre DZA JECFA „nespecificată” și limita EFSA de 30 mg/kg, inclusiv NOAEL și factorul de siguranță.",
+  "cannot_1": "Determina cantitatea de glutamat adăugat din lista ingredientelor.",
+  "cannot_2": "Calcula expunerea alimentară totală sau prezice răspunsul individual.",
   "sources": [
     {
-      "label": "Regulamentul (CE) nr. 1333/2008 privind aditivii alimentari — E620–E625",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — L-glutamic acid (INS 620), chemical record 668 — group ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/668"
     },
     {
-      "label": "EFSA — „EFSA” analizează siguranța glutamaților adăugați în alimente",
+      "label": "JECFA — Monosodium glutamate (INS 621), chemical record 992 — group ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/992"
+    },
+    {
+      "label": "EFSA 2017 — Re-evaluation of glutamic acid and glutamates E620–E625",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4910"
+    },
+    {
+      "label": "EFSA — Safety review of glutamates added to food",
       "url": "https://www.efsa.europa.eu/en/press/news/170712"
     },
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei — specificații privind aditivii alimentari autorizați",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "FDA — Questions and Answers on Monosodium Glutamate (MSG)",
+      "url": "https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg"
+    },
+    {
+      "label": "New England Journal of Medicine — Chinese-Restaurant Syndrome, letter published in 1968",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJM196804042781419"
+    },
+    {
+      "label": "Geha et al. 2000 — multicentre double-blind placebo-controlled MSG study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10736382/"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — authorised uses for E620–E625",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "title": "Glutamați",
-  "description": "Un grup de aditivi alimentari care intensifică aroma, alcătuit din acidul glutamic (E620) și sărurile acestuia (E621–E625)."
+  "description": "Glutamații E620–E625 sunt potențiatori ai gustului umami. MSG eliberează același glutamat prezent natural în alimente. JECFA are o DZA de grup „nespecificată”; EFSA a stabilit 30 mg/kg."
 }
