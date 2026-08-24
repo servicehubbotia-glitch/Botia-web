@@ -1,29 +1,37 @@
 {
   "name": "Karmin",
   "e_code": "E120",
-  "aliases": "E120, karmin, koşineal, karminler, koşineal özütü, karminik asit, carmín, ácido carmínico, cochinilla, rouge de cochenille",
+  "aliases": "E120, INS 120, karmin, koşineal, karminler, koşineal özütü, karminik asit, carmín, ácido carmínico, cochinilla, rouge de cochenille",
   "module_icon": "botia_jar_512.png",
   "layers": [
     "animal",
     "muslim",
     "enumbers"
   ],
-  "what_is": "Dişi koşineal böceklerinin kurutulmuş gövdelerinden elde edilen kırmızı bir gıda boyası.",
-  "why_botia": "Böceklerden elde edildiği için hayvansal kökenli olduğu ve birçok İslam hukukuna göre helal olmadığı (haram) için bunu işaretler.",
-  "can_1": "İçerik listesinde E120 veya eş anlamlılarının varlığını tespit eder.",
-  "can_2": "Vegan, vejetaryen ve dini beslenme tercihleri için tüketicileri böcek kökenli olduğu konusunda uyarır.",
-  "cannot_1": "Gıda ürününde kullanılan karmin konsantrasyonunu belirleyemez.",
-  "cannot_2": "Üretim sırasında kullanılan ekstraksiyon çözücülerinin veya taşıyıcı maddelerin belirli saflık sınırlarına uygun olup olmadığını doğrulayamaz.",
+  "what_is": "Karmin (E120 / INS 120), koşnil böceklerinden üretilen kırmızı bir gıda renklendiricisidir. Hayvansal kökenli bir renktir; sentetik kırmızı boya değildir.",
+  "why_botia": "Karmin koşnil böceğinden üretilir ve duyarlı kişilerde alerjik reaksiyonlara yol açabilen hayvansal proteinler içerir. Bu köken nedeniyle BOTIA, vegan veya halal gıda seçen kişiler için bunu gösterir: BOTIA'nın izlediği gıda katkı standardı OIC/SMIIC 24:2020, E120 karmini böcek kökenli olduğu için non-halal olarak sınıflandırır. JECFA günlük 0–5 mg/kg vücut ağırlığı kabul edilebilir alım belirlemiş ve alerji konusunu ayrıca kaydetmiştir.",
+  "can_1": "İçerik listesinde E120, INS 120, karmin, koşnil, karminik asit ve diğer belirtilen adları tespit etmek.",
+  "can_2": "Böcek kökenini, JECFA'nın alerji kanıtlarını ve OIC/SMIIC 24:2020'de E120 için verilen non-halal sınıflandırmasını açıklamak.",
+  "cannot_1": "İçerik listesinden bir üründe ne kadar karmin veya alerjen böcek proteini bulunduğunu belirlemek.",
+  "cannot_2": "Bir kişinin bir gıdayı halal veya izin verilen olarak görüp görmemesi gerektiğine karar vermek; BOTIA yalnızca izlediği teknik standardın sınıflandırmasını bildirir.",
   "sources": [
     {
-      "label": "Komisyon Tüzüğü (AB) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cochineal Carmine, INS 120",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1508"
     },
     {
-      "label": "Helal Teriminin Kullanımına İlişkin Codex Genel Kılavuzu (CAC/GL 24-1997)",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%252B24-1997%252FCXG_024e.pdf"
+      "label": "JECFA — Cochineal extract, carmine and carminic acid: allergenicity review",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v46je03.htm"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — General Requirements for Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
+    },
+    {
+      "label": "SMIIC — WHS 2020 proceedings: E120 carmine and insect-origin food additives",
+      "url": "https://smiic.org/file/2020_WHS_Book.pdf"
     }
   ],
   "title": "Karmin",
-  "description": "Dişi koşineal böceklerinin kurutulmuş gövdelerinden elde edilen kırmızı bir gıda boyası."
+  "description": "Karmin koşnil böceklerinden yapılır, alerjen böcek proteinleri içerebilir ve OIC/SMIIC 24:2020 tarafından non-halal olarak sınıflandırılır."
 }

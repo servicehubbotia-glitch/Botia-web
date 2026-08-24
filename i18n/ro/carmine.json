@@ -1,29 +1,37 @@
 {
   "name": "Carmin",
   "e_code": "E120",
-  "aliases": "E120, carmin, coșenilă, carmini, extract de coșenilă, acid carminic, carmín, acid carminic, coșenilă, roșu de coșenilă",
+  "aliases": "E120, INS 120, carmin, coșenilă, carmini, extract de coșenilă, acid carminic, carmín, acid carminic, coșenilă, roșu de coșenilă",
   "module_icon": "botia_jar_512.png",
   "layers": [
     "animal",
     "muslim",
     "enumbers"
   ],
-  "what_is": "Un colorant alimentar roșu extras din corpurile uscate ale insectelor femele de coșenilă.",
-  "why_botia": "Îl semnalează deoarece este derivat din insecte, ceea ce îl face de origine animală și non-halal (haram) conform mai multor jurisprudențe islamice.",
-  "can_1": "Detecta prezența E120 sau a sinonimelor sale în lista de ingrediente.",
-  "can_2": "Avertiza consumatorii cu privire la originea sa insectă pentru preferințele dietetice vegane, vegetariene și religioase.",
-  "cannot_1": "Determina concentrația de carmin utilizată în produsul alimentar.",
-  "cannot_2": "Verifica dacă solvenții de extracție sau substanțele purtătoare utilizate în timpul fabricării respectă limite specifice de puritate.",
+  "what_is": "Carminul (E120 / INS 120) este un colorant alimentar roșu produs din insecte coșenilă. Este un colorant de origine animală, nu un colorant roșu sintetic.",
+  "why_botia": "Carminul este produs din insecta coșenilă și conține proteine animale care pot provoca reacții alergice la persoanele sensibilizate. Din cauza acestei origini, BOTIA îl semnalează pentru cei care aleg alimentație vegană sau halal: OIC/SMIIC 24:2020, standardul pentru aditivi alimentari urmat de BOTIA, clasifică E120 carmin drept non-halal deoarece provine din insecte. JECFA a stabilit un aport zilnic acceptabil de 0–5 mg/kg greutate corporală și consemnează separat problema alergiilor.",
+  "can_1": "Detecta E120, INS 120, carmin, coșenilă, acid carminic și celelalte denumiri declarate în lista ingredientelor.",
+  "can_2": "Explica originea din insecte, dovezile JECFA privind alergiile și clasificarea non-halal a E120 în OIC/SMIIC 24:2020.",
+  "cannot_1": "Determina din lista ingredientelor cât carmin sau proteină alergena provenită din insectă există într-un produs.",
+  "cannot_2": "Decide dacă o persoană ar trebui să considere un aliment halal sau permis; BOTIA raportează doar clasificarea standardului tehnic pe care îl urmează.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cochineal Carmine, INS 120",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1508"
     },
     {
-      "label": "Orientările generale ale Codex pentru utilizarea termenului Halal (CAC/GL 24-1997)",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%252B24-1997%252FCXG_024e.pdf"
+      "label": "JECFA — Cochineal extract, carmine and carminic acid: allergenicity review",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v46je03.htm"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — General Requirements for Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
+    },
+    {
+      "label": "SMIIC — WHS 2020 proceedings: E120 carmine and insect-origin food additives",
+      "url": "https://smiic.org/file/2020_WHS_Book.pdf"
     }
   ],
   "title": "Carmin",
-  "description": "Un colorant alimentar roșu extras din corpurile uscate ale insectelor femele de coșenilă."
+  "description": "Carminul provine din insecte coșenilă, poate păstra proteine alergene de insectă și este clasificat non-halal de OIC/SMIIC 24:2020."
 }

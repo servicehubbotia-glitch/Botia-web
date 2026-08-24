@@ -1,29 +1,37 @@
 {
   "name": "Carmine",
   "e_code": "E120",
-  "aliases": "E120, carmine, cochineal, carmines, cochineal extract, carminic acid, carmín, ácido carmínico, cochinilla, rouge de cochenille",
+  "aliases": "E120, INS 120, carmine, cochineal, carmines, cochineal extract, carminic acid, carmín, ácido carmínico, cochinilla, rouge de cochenille",
   "module_icon": "botia_jar_512.png",
   "layers": [
     "animal",
     "muslim",
     "enumbers"
   ],
-  "what_is": "A red food dye extracted from the dried bodies of female cochineal insects.",
-  "why_botia": "It flags it because it is derived from insects, making it of animal origin and non-halal (haram) according to several Islamic jurisprudences.",
-  "can_1": "Detect the presence of E120 or its synonyms in the ingredient list.",
-  "can_2": "Alert consumers of its insect origin for vegan, vegetarian, and religious dietary preferences.",
-  "cannot_1": "Determine the concentration of carmine used in the food product.",
-  "cannot_2": "Verify if the extraction solvents or carrier substances used during manufacturing comply with specific purity limits.",
+  "what_is": "Carmine (E120 / INS 120) is a red food colour made from cochineal insects. It is an animal-derived colour, not a synthetic red dye.",
+  "why_botia": "Carmine is made from the cochineal insect and contains animal proteins that can trigger allergic reactions in sensitised people. Because of its origin, BOTIA flags it for people choosing vegan or halal food: OIC/SMIIC 24:2020, the food-additive standard BOTIA follows, classifies carmine E120 as non-halal because it is insect-derived. JECFA set an acceptable daily intake of 0–5 mg/kg body weight and separately records the allergy concern.",
+  "can_1": "Detect E120, INS 120, carmine, cochineal, carminic acid and its other declared names in the ingredient list.",
+  "can_2": "Explain its insect origin, JECFA's allergy evidence and the non-halal classification for E120 in OIC/SMIIC 24:2020.",
+  "cannot_1": "Determine how much carmine or allergenic insect protein is present in a product from the ingredient list.",
+  "cannot_2": "Decide whether a person should regard a food as halal or permitted; BOTIA reports the classification in the technical standard it follows.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cochineal Carmine, INS 120",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1508"
     },
     {
-      "label": "Codex General Guidelines for Use of the Term Halal (CAC/GL 24-1997)",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%252B24-1997%252FCXG_024e.pdf"
+      "label": "JECFA — Cochineal extract, carmine and carminic acid: allergenicity review",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v46je03.htm"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — General Requirements for Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
+    },
+    {
+      "label": "SMIIC — WHS 2020 proceedings: E120 carmine and insect-origin food additives",
+      "url": "https://smiic.org/file/2020_WHS_Book.pdf"
     }
   ],
   "title": "Carmine",
-  "description": "A red food dye extracted from the dried bodies of female cochineal insects."
+  "description": "Carmine is made from cochineal insects, can retain allergenic insect proteins and is classified as non-halal by OIC/SMIIC 24:2020."
 }

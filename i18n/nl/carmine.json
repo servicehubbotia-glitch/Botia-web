@@ -1,29 +1,37 @@
 {
   "name": "Karmijn",
   "e_code": "E120",
-  "aliases": "E120, karmijn, cochenille, karmijnen, cochenille-extract, karmijnzuur, carmín, ácido carmínico, cochinilla, rouge de cochenille",
+  "aliases": "E120, INS 120, karmijn, cochenille, karmijnen, cochenille-extract, karmijnzuur, carmín, ácido carmínico, cochinilla, rouge de cochenille",
   "module_icon": "botia_jar_512.png",
   "layers": [
     "animal",
     "muslim",
     "enumbers"
   ],
-  "what_is": "Een rode voedingskleurstof gewonnen uit de gedroogde lichamen van vrouwelijke cochenilleluizen.",
-  "why_botia": "Het wordt gemarkeerd omdat het afkomstig is van insecten, waardoor het van dierlijke oorsprong is en niet-halal (haram) volgens verschillende islamitische rechtsgeleerdheden.",
-  "can_1": "Detecteer de aanwezigheid van E120 of synoniemen in de ingrediëntenlijst.",
-  "can_2": "Waarschuw consumenten voor de insecten oorsprong voor veganistische, vegetarische en religieuze dieetvoorkeuren.",
-  "cannot_1": "Bepaal de concentratie van karmijn in het voedingsproduct.",
-  "cannot_2": "Controleer of de extractieoplosmiddelen of dragersubstanties die tijdens de productie worden gebruikt, voldoen aan specifieke zuiverheidslimieten.",
+  "what_is": "Karmijn (E120 / INS 120) is een rode voedselkleurstof die wordt gemaakt van cochenille-insecten. Het is een kleurstof van dierlijke oorsprong en geen synthetische rode kleurstof.",
+  "why_botia": "Karmijn wordt gemaakt van het cochenille-insect en bevat dierlijke eiwitten die bij gevoelige mensen allergische reacties kunnen veroorzaken. Vanwege die oorsprong toont BOTIA het voor mensen die veganistisch of halal kiezen: OIC/SMIIC 24:2020, de voedseladditievennorm die BOTIA volgt, classificeert karmijn E120 als niet-halal omdat het van insecten afkomstig is. JECFA stelde een aanvaardbare dagelijkse inname vast van 0–5 mg/kg lichaamsgewicht en vermeldt de allergieproblematiek afzonderlijk.",
+  "can_1": "E120, INS 120, karmijn, cochenille, karmijnzuur en andere vermelde namen in de ingrediëntenlijst detecteren.",
+  "can_2": "De insectenoorsprong, het JECFA-bewijs over allergie en de niet-halalclassificatie van E120 in OIC/SMIIC 24:2020 uitleggen.",
+  "cannot_1": "Uit de ingrediëntenlijst bepalen hoeveel karmijn of allergeen insecteneiwit in een product aanwezig is.",
+  "cannot_2": "Bepalen of iemand een voedingsmiddel als halal of toegestaan moet beschouwen; BOTIA rapporteert alleen de classificatie van de technische norm die het volgt.",
   "sources": [
     {
-      "label": "Verordening (EU) Nr. 231/2012 van de Commissie",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cochineal Carmine, INS 120",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1508"
     },
     {
-      "label": "Codex Algemene Richtlijnen voor het Gebruik van de Term Halal (CAC/GL 24-1997)",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%252B24-1997%252FCXG_024e.pdf"
+      "label": "JECFA — Cochineal extract, carmine and carminic acid: allergenicity review",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v46je03.htm"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — General Requirements for Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
+    },
+    {
+      "label": "SMIIC — WHS 2020 proceedings: E120 carmine and insect-origin food additives",
+      "url": "https://smiic.org/file/2020_WHS_Book.pdf"
     }
   ],
   "title": "Karmijn",
-  "description": "Een rode voedingskleurstof gewonnen uit de gedroogde lichamen van vrouwelijke cochenilleluizen."
+  "description": "Karmijn wordt gemaakt van cochenille-insecten, kan allergene insecteneiwitten bevatten en wordt door OIC/SMIIC 24:2020 als niet-halal geclassificeerd."
 }

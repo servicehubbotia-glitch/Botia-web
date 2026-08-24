@@ -1,29 +1,37 @@
 {
   "name": "Carmine",
   "e_code": "E120",
-  "aliases": "E120, carminio, cocciniglia, carmini, estratto di cocciniglia, acido carminico, carminio, acido carminico, cocciniglia, rosso di cocciniglia",
+  "aliases": "E120, INS 120, carminio, cocciniglia, carmini, estratto di cocciniglia, acido carminico, carminio, acido carminico, cocciniglia, rosso di cocciniglia",
   "module_icon": "botia_jar_512.png",
   "layers": [
     "animal",
     "muslim",
     "enumbers"
   ],
-  "what_is": "Un colorante alimentare rosso estratto dai corpi essiccati delle femmine di cocciniglia.",
-  "why_botia": "Lo segnala perché deriva da insetti, rendendolo di origine animale e non halal (haram) secondo diverse giurisprudenze islamiche.",
-  "can_1": "Rileva la presenza di E120 o dei suoi sinonimi nell'elenco degli ingredienti.",
-  "can_2": "Avvisare i consumatori della sua origine da insetti per preferenze dietetiche vegane, vegetariane e religiose.",
-  "cannot_1": "Determinare la concentrazione di carminio utilizzato nel prodotto alimentare.",
-  "cannot_2": "Verificare se i solventi di estrazione o le sostanze vettore utilizzati durante la produzione rispettano limiti specifici di purezza.",
+  "what_is": "Il carminio (E120 / INS 120) è un colorante alimentare rosso prodotto da insetti cocciniglia. È un colorante di origine animale, non un colorante rosso sintetico.",
+  "why_botia": "Il carminio è prodotto dalla cocciniglia e contiene proteine animali che possono provocare reazioni allergiche nelle persone sensibilizzate. Per questa origine, BOTIA lo segnala a chi sceglie un'alimentazione vegana o halal: OIC/SMIIC 24:2020, lo standard sugli additivi alimentari seguito da BOTIA, classifica il carminio E120 come non halal perché deriva da insetti. Il JECFA ha fissato una dose giornaliera accettabile di 0–5 mg/kg di peso corporeo e registra separatamente il problema delle allergie.",
+  "can_1": "Rilevare E120, INS 120, carminio, cocciniglia, acido carminico e gli altri nomi dichiarati nella lista degli ingredienti.",
+  "can_2": "Spiegare l'origine da insetti, le evidenze JECFA sulle allergie e la classificazione non halal di E120 in OIC/SMIIC 24:2020.",
+  "cannot_1": "Determinare dalla lista degli ingredienti quanto carminio o proteina allergenica di insetto sia presente in un prodotto.",
+  "cannot_2": "Decidere se una persona debba considerare un alimento halal o permesso; BOTIA riporta soltanto la classificazione dello standard tecnico che segue.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cochineal Carmine, INS 120",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1508"
     },
     {
-      "label": "Linee guida generali del Codex per l'uso del termine Halal (CAC/GL 24-1997)",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%252B24-1997%252FCXG_024e.pdf"
+      "label": "JECFA — Cochineal extract, carmine and carminic acid: allergenicity review",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v46je03.htm"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — General Requirements for Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
+    },
+    {
+      "label": "SMIIC — WHS 2020 proceedings: E120 carmine and insect-origin food additives",
+      "url": "https://smiic.org/file/2020_WHS_Book.pdf"
     }
   ],
   "title": "Carmine",
-  "description": "Un colorante alimentare rosso estratto dai corpi essiccati delle femmine di cocciniglia."
+  "description": "Il carminio deriva da insetti cocciniglia, può conservare proteine allergeniche di insetto ed è classificato non halal da OIC/SMIIC 24:2020."
 }

@@ -1,29 +1,37 @@
 {
   "name": "Karmin",
   "e_code": "E120",
-  "aliases": "E120, Karmin, Cochenille, Karmine, Cochenilleextrakt, Karminsäure, Carmín, Ácido carmínico, Cochinilla, Rouge de cochenille",
+  "aliases": "E120, INS 120, Karmin, Cochenille, Karmine, Cochenilleextrakt, Karminsäure, Carmín, Ácido carmínico, Cochinilla, Rouge de cochenille",
   "module_icon": "botia_jar_512.png",
   "layers": [
     "animal",
     "muslim",
     "enumbers"
   ],
-  "what_is": "Ein roter Lebensmittelfarbstoff, der aus den getrockneten Körpern weiblicher Cochenille-Schildläuse gewonnen wird.",
-  "why_botia": "Es wird markiert, weil es von Insekten stammt, tierischen Ursprungs ist und nach mehreren islamischen Rechtsschulen als nicht halal (haram) gilt.",
-  "can_1": "Erkennen des Vorhandenseins von E120 oder seiner Synonyme in der Zutatenliste.",
-  "can_2": "Verbraucher auf den Insektenursprung hinweisen, für vegane, vegetarische und religiöse Ernährungspräferenzen.",
-  "cannot_1": "Die Konzentration von Karmin im Lebensmittelprodukt bestimmen.",
-  "cannot_2": "Überprüfen, ob die bei der Herstellung verwendeten Extraktionslösungsmittel oder Trägerstoffe bestimmte Reinheitsgrenzen einhalten.",
+  "what_is": "Karmin (E120 / INS 120) ist ein roter Lebensmittelfarbstoff aus Cochenille-Insekten. Es handelt sich um einen Farbstoff tierischen Ursprungs und nicht um einen synthetischen roten Farbstoff.",
+  "why_botia": "Karmin wird aus Cochenille-Insekten hergestellt und enthält tierische Proteine, die bei sensibilisierten Menschen allergische Reaktionen auslösen können. Wegen dieses Ursprungs zeigt BOTIA es für Menschen an, die vegan oder halal wählen: OIC/SMIIC 24:2020, der von BOTIA verwendete Standard für Lebensmittelzusatzstoffe, stuft Karmin E120 wegen seiner Herkunft aus Insekten als nicht halal ein. JECFA legte eine akzeptable tägliche Aufnahme von 0–5 mg/kg Körpergewicht fest und dokumentiert die Allergieproblematik separat.",
+  "can_1": "E120, INS 120, Karmin, Cochenille, Karminsäure und weitere deklarierte Namen in der Zutatenliste erkennen.",
+  "can_2": "Den Insektenursprung, die JECFA-Evidenz zu Allergien und die Einstufung von E120 als nicht halal in OIC/SMIIC 24:2020 erklären.",
+  "cannot_1": "Aus der Zutatenliste bestimmen, wie viel Karmin oder allergenes Insektenprotein in einem Produkt enthalten ist.",
+  "cannot_2": "Entscheiden, ob eine Person ein Lebensmittel als halal oder erlaubt ansehen sollte; BOTIA gibt lediglich die Einstufung des verwendeten technischen Standards wieder.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cochineal Carmine, INS 120",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1508"
     },
     {
-      "label": "Allgemeine Richtlinien des Codex für die Verwendung des Begriffs „Halal“ (CAC/GL 24-1997)",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%252B24-1997%252FCXG_024e.pdf"
+      "label": "JECFA — Cochineal extract, carmine and carminic acid: allergenicity review",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v46je03.htm"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — General Requirements for Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
+    },
+    {
+      "label": "SMIIC — WHS 2020 proceedings: E120 carmine and insect-origin food additives",
+      "url": "https://smiic.org/file/2020_WHS_Book.pdf"
     }
   ],
   "title": "Karmin",
-  "description": "Ein roter Lebensmittelfarbstoff, der aus den getrockneten Körpern weiblicher Cochenille-Schildläuse gewonnen wird."
+  "description": "Karmin wird aus Cochenille-Insekten hergestellt, kann allergene Insektenproteine enthalten und wird in OIC/SMIIC 24:2020 als nicht halal eingestuft."
 }

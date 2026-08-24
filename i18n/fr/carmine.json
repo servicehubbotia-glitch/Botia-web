@@ -1,29 +1,37 @@
 {
   "name": "Carmin",
   "e_code": "E120",
-  "aliases": "E120, carmin, cochenille, carmins, extrait de cochenille, acide carminique, carmín, ácido carmínico, cochinilla, rouge de cochenille",
+  "aliases": "E120, INS 120, carmin, cochenille, carmins, extrait de cochenille, acide carminique, carmín, ácido carmínico, cochinilla, rouge de cochenille",
   "module_icon": "botia_jar_512.png",
   "layers": [
     "animal",
     "muslim",
     "enumbers"
   ],
-  "what_is": "Un colorant alimentaire rouge extrait des corps séchés des insectes femelles de la cochenille.",
-  "why_botia": "Il le signale car il est dérivé d'insectes, ce qui le rend d'origine animale et non halal (haram) selon plusieurs jurisprudences islamiques.",
-  "can_1": "Détecter la présence de E120 ou de ses synonymes dans la liste des ingrédients.",
-  "can_2": "Alerter les consommateurs de son origine insecte pour les préférences alimentaires végétaliennes, végétariennes et religieuses.",
-  "cannot_1": "Déterminer la concentration de carmin utilisée dans le produit alimentaire.",
-  "cannot_2": "Vérifier si les solvants d'extraction ou les substances de support utilisés lors de la fabrication respectent des limites de pureté spécifiques.",
+  "what_is": "Le carmin (E120 / INS 120) est un colorant alimentaire rouge fabriqué à partir d'insectes cochenilles. Il est d'origine animale et non un colorant rouge synthétique.",
+  "why_botia": "Le carmin est fabriqué à partir de la cochenille et contient des protéines animales susceptibles de provoquer des réactions allergiques chez les personnes sensibilisées. En raison de cette origine, BOTIA le signale pour les personnes choisissant une alimentation végane ou halal : OIC/SMIIC 24:2020, la norme sur les additifs alimentaires suivie par BOTIA, classe le carmin E120 comme non halal parce qu'il provient d'insectes. Le JECFA a fixé une dose journalière admissible de 0–5 mg/kg de poids corporel et consigne séparément le problème d'allergie.",
+  "can_1": "Détecter E120, INS 120, carmin, cochenille, acide carminique et ses autres noms déclarés dans la liste des ingrédients.",
+  "can_2": "Expliquer son origine insecte, les données du JECFA sur les allergies et la classification de E120 comme non halal dans OIC/SMIIC 24:2020.",
+  "cannot_1": "Déterminer à partir de la liste des ingrédients la quantité de carmin ou de protéines allergènes d'insecte présente dans un produit.",
+  "cannot_2": "Décider si une personne doit considérer un aliment comme halal ou permis ; BOTIA rapporte uniquement la classification de la norme technique qu'elle suit.",
   "sources": [
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cochineal Carmine, INS 120",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1508"
     },
     {
-      "label": "Directives générales du Codex pour l'utilisation du terme Halal (CAC/GL 24-1997)",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%252B24-1997%252FCXG_024e.pdf"
+      "label": "JECFA — Cochineal extract, carmine and carminic acid: allergenicity review",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v46je03.htm"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — General Requirements for Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
+    },
+    {
+      "label": "SMIIC — WHS 2020 proceedings: E120 carmine and insect-origin food additives",
+      "url": "https://smiic.org/file/2020_WHS_Book.pdf"
     }
   ],
   "title": "Carmin",
-  "description": "Un colorant alimentaire rouge extrait des corps séchés des insectes femelles de la cochenille."
+  "description": "Le carmin provient de cochenilles, peut conserver des protéines allergènes d'insecte et est classé non halal par OIC/SMIIC 24:2020."
 }

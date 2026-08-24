@@ -1,29 +1,37 @@
 {
   "name": "胭脂虫红",
   "e_code": "E120",
-  "aliases": "E120、胭脂红、胭脂虫红、胭脂红酸、胭脂虫提取物、胭脂红酸、carmín、ácido carmínico、cochinilla、rouge de cochenille",
+  "aliases": "E120、胭脂红、胭脂虫红、胭脂红酸、胭脂虫提取物、胭脂红酸、carmín、ácido carmínico、cochinilla、rouge de cochenille, INS 120",
   "module_icon": "botia_jar_512.png",
   "layers": [
     "animal",
     "muslim",
     "enumbers"
   ],
-  "what_is": "一种从雌性胭脂虫干燥虫体中提取的红色食用色素。",
-  "why_botia": "它标记该成分，因为它来源于昆虫，属于动物源性，根据多种伊斯兰教法学观点，属于非清真（哈拉姆）。",
-  "can_1": "检测配料表中是否存在E120或其同义词。",
-  "can_2": "提醒消费者其昆虫来源，适用于纯素食、素食和宗教饮食偏好。",
-  "cannot_1": "确定食品中胭脂红的浓度。",
-  "cannot_2": "验证生产过程中使用的提取溶剂或载体物质是否符合特定的纯度限制。",
+  "what_is": "胭脂虫红（E120 / INS 120）是一种由胭脂虫制成的红色食用色素。它属于动物来源色素，并不是合成红色色素。",
+  "why_botia": "胭脂虫红由胭脂虫制成，并含有可能在敏感人群中引起过敏反应的动物蛋白。由于这种来源，BOTIA 会为选择纯素或 halal 食品的人标示它：BOTIA 所采用的食品添加剂标准 OIC/SMIIC 24:2020 将 E120 胭脂虫红因其昆虫来源归类为 non-halal。JECFA 将每日允许摄入量设为每公斤体重0–5毫克，并单独记录了过敏问题。",
+  "can_1": "识别配料表中的 E120、INS 120、carmine、cochineal、carminic acid 及其他明确名称。",
+  "can_2": "解释其昆虫来源、JECFA 关于过敏的证据，以及 OIC/SMIIC 24:2020 对 E120 的 non-halal 分类。",
+  "cannot_1": "根据配料表判断产品中含有多少胭脂虫红或致敏性昆虫蛋白。",
+  "cannot_2": "决定某个人是否应将食品视为 halal 或允许食用；BOTIA 只报告其采用的技术标准中的分类。",
   "sources": [
     {
-      "label": "欧盟委员会条例 (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cochineal Carmine, INS 120",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1508"
     },
     {
-      "label": "使用清真术语的食品法典通用指南 (CAC/GL 24-1997)",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%252B24-1997%252FCXG_024e.pdf"
+      "label": "JECFA — Cochineal extract, carmine and carminic acid: allergenicity review",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v46je03.htm"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — General Requirements for Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
+    },
+    {
+      "label": "SMIIC — WHS 2020 proceedings: E120 carmine and insect-origin food additives",
+      "url": "https://smiic.org/file/2020_WHS_Book.pdf"
     }
   ],
   "title": "胭脂虫红",
-  "description": "一种从雌性胭脂虫干燥虫体中提取的红色食用色素。"
+  "description": "胭脂虫红由胭脂虫制成，可能保留致敏性昆虫蛋白，并被 OIC/SMIIC 24:2020 归类为 non-halal。"
 }

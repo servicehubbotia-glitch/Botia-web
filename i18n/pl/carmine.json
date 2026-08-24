@@ -1,29 +1,37 @@
 {
   "name": "Karmin",
   "e_code": "E120",
-  "aliases": "E120, karmina, koszenila, karminy, ekstrakt z koszenili, kwas karminowy, carmín, ácido carmínico, cochinilla, rouge de cochenille",
+  "aliases": "E120, INS 120, karmina, koszenila, karminy, ekstrakt z koszenili, kwas karminowy, carmín, ácido carmínico, cochinilla, rouge de cochenille",
   "module_icon": "botia_jar_512.png",
   "layers": [
     "animal",
     "muslim",
     "enumbers"
   ],
-  "what_is": "Czerwony barwnik spożywczy pozyskiwany z wysuszonych ciał samic owadów koszenili.",
-  "why_botia": "Oznacza go, ponieważ pochodzi od owadów, co czyni go pochodzenia zwierzęcego i niehalal (haram) według kilku islamskich jurysprudencji.",
-  "can_1": "Wykryć obecność E120 lub jego synonimów na liście składników.",
-  "can_2": "Ostrzec konsumentów o jego owadzim pochodzeniu dla preferencji dietetycznych wegańskich, wegetariańskich i religijnych.",
-  "cannot_1": "Określić stężenie karminy użytej w produkcie spożywczym.",
-  "cannot_2": "Zweryfikować, czy rozpuszczalniki ekstrakcyjne lub substancje nośnikowe użyte podczas produkcji spełniają określone limity czystości.",
+  "what_is": "Karmin (E120 / INS 120) jest czerwonym barwnikiem spożywczym wytwarzanym z owadów koszenili. Jest barwnikiem pochodzenia zwierzęcego, a nie syntetycznym czerwonym barwnikiem.",
+  "why_botia": "Karmin powstaje z owada koszenili i zawiera białka zwierzęce, które mogą wywoływać reakcje alergiczne u osób uczulonych. Ze względu na to pochodzenie BOTIA wskazuje go osobom wybierającym żywność wegańską lub halal: OIC/SMIIC 24:2020, norma dotycząca dodatków do żywności stosowana przez BOTIA, klasyfikuje karmin E120 jako nie-halal ze względu na pochodzenie z owadów. JECFA ustaliła akceptowalne dzienne pobranie na poziomie 0–5 mg/kg masy ciała i osobno odnotowuje problem alergii.",
+  "can_1": "Wykrywać E120, INS 120, karmin, koszenilę, kwas karminowy i inne zadeklarowane nazwy na liście składników.",
+  "can_2": "Wyjaśniać pochodzenie z owadów, dane JECFA dotyczące alergii oraz klasyfikację E120 jako nie-halal w OIC/SMIIC 24:2020.",
+  "cannot_1": "Określić na podstawie listy składników ilości karminu lub alergennego białka owadziego w produkcie.",
+  "cannot_2": "Decydować, czy dana osoba powinna uznać żywność za halal lub dozwoloną; BOTIA jedynie podaje klasyfikację normy technicznej, którą stosuje.",
   "sources": [
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cochineal Carmine, INS 120",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1508"
     },
     {
-      "label": "Ogólne wytyczne Codex dotyczące stosowania terminu Halal (CAC/GL 24-1997)",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%252B24-1997%252FCXG_024e.pdf"
+      "label": "JECFA — Cochineal extract, carmine and carminic acid: allergenicity review",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v46je03.htm"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — General Requirements for Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
+    },
+    {
+      "label": "SMIIC — WHS 2020 proceedings: E120 carmine and insect-origin food additives",
+      "url": "https://smiic.org/file/2020_WHS_Book.pdf"
     }
   ],
   "title": "Karmin",
-  "description": "Czerwony barwnik spożywczy pozyskiwany z wysuszonych ciał samic owadów koszenili."
+  "description": "Karmin pochodzi z owadów koszenili, może zawierać alergenne białka owadzie i jest klasyfikowany jako nie-halal przez OIC/SMIIC 24:2020."
 }

@@ -1,29 +1,37 @@
 {
   "name": "Karmin",
   "e_code": "E120",
-  "aliases": "E120, karmin, cochineal, karmin, ekstrak cochineal, asam karminat, carmín, ácido carmínico, cochinilla, rouge de cochenille",
+  "aliases": "E120, INS 120, karmin, cochineal, karmin, ekstrak cochineal, asam karminat, carmín, ácido carmínico, cochinilla, rouge de cochenille",
   "module_icon": "botia_jar_512.png",
   "layers": [
     "animal",
     "muslim",
     "enumbers"
   ],
-  "what_is": "Pewarna makanan merah yang diekstrak dari tubuh kering serangga cochineal betina.",
-  "why_botia": "Ini menandainya karena berasal dari serangga, sehingga berasal dari hewan dan tidak halal (haram) menurut beberapa yurisprudensi Islam.",
-  "can_1": "Mendeteksi keberadaan E120 atau sinonimnya dalam daftar bahan.",
-  "can_2": "Memperingatkan konsumen tentang asal serangganya untuk preferensi diet vegan, vegetarian, dan agama.",
-  "cannot_1": "Menentukan konsentrasi karmin yang digunakan dalam produk makanan.",
-  "cannot_2": "Memverifikasi apakah pelarut ekstraksi atau zat pembawa yang digunakan selama pembuatan memenuhi batas kemurnian tertentu.",
+  "what_is": "Carmine (E120 / INS 120) adalah pewarna makanan merah yang dibuat dari serangga cochineal. Pewarna ini berasal dari hewan, bukan pewarna merah sintetis.",
+  "why_botia": "Carmine dibuat dari serangga cochineal dan mengandung protein hewani yang dapat memicu reaksi alergi pada orang yang sudah tersensitisasi. Karena asalnya, BOTIA menandainya bagi orang yang memilih makanan vegan atau halal: OIC/SMIIC 24:2020, standar bahan tambahan pangan yang diikuti BOTIA, mengklasifikasikan carmine E120 sebagai non-halal karena berasal dari serangga. JECFA menetapkan asupan harian yang dapat diterima sebesar 0–5 mg/kg berat badan dan mencatat masalah alergi secara terpisah.",
+  "can_1": "Mendeteksi E120, INS 120, carmine, cochineal, carminic acid dan nama lain yang dinyatakan dalam daftar bahan.",
+  "can_2": "Menjelaskan asal serangga, bukti JECFA mengenai alergi dan klasifikasi E120 sebagai non-halal dalam OIC/SMIIC 24:2020.",
+  "cannot_1": "Menentukan dari daftar bahan berapa banyak carmine atau protein serangga alergenik yang terdapat dalam suatu produk.",
+  "cannot_2": "Menentukan apakah seseorang harus menganggap suatu makanan halal atau diizinkan; BOTIA hanya melaporkan klasifikasi dalam standar teknis yang diikutinya.",
   "sources": [
     {
-      "label": "Peraturan Komisi (UE) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cochineal Carmine, INS 120",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1508"
     },
     {
-      "label": "Pedoman Umum Codex untuk Penggunaan Istilah Halal (CAC/GL 24-1997)",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%252B24-1997%252FCXG_024e.pdf"
+      "label": "JECFA — Cochineal extract, carmine and carminic acid: allergenicity review",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v46je03.htm"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — General Requirements for Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
+    },
+    {
+      "label": "SMIIC — WHS 2020 proceedings: E120 carmine and insect-origin food additives",
+      "url": "https://smiic.org/file/2020_WHS_Book.pdf"
     }
   ],
   "title": "Karmin",
-  "description": "Pewarna makanan merah yang diekstrak dari tubuh kering serangga cochineal betina."
+  "description": "Carmine dibuat dari serangga cochineal, dapat mempertahankan protein serangga alergenik dan diklasifikasikan sebagai non-halal oleh OIC/SMIIC 24:2020."
 }
