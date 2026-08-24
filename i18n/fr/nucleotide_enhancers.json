@@ -1,20 +1,36 @@
 {
   "name": "Exhausteurs de goût à base de nucléotides",
   "title": "Exhausteurs de goût à base de nucléotides",
-  "description": "Un groupe d'exhausteurs de goût à base de nucléotides, comprenant notamment le guanylate disodique (E627), l'inosinate disodique (E631) et les 5'-ribonucléotides disodiques (E635).",
-  "what_is": "Un groupe d'exhausteurs de goût à base de nucléotides, comprenant notamment le guanylate disodique (E627), l'inosinate disodique (E631) et les 5'-ribonucléotides disodiques (E635).",
-  "why_botia": "BOTIA regroupe ces codes car il s'agit d'exhausteurs de goût apparentés ; les étiquettes peuvent utiliser soit les numéros E, soit les noms chimiques. La mention identifie l'additif ; elle ne précise ni son origine ni sa quantité.",
-  "can_1": "Détecter les additifs E627, E631 et E635, ainsi que leurs noms courants : guanylate, inosinate et ribonucléotide.",
-  "can_2": "Activez les couches d'informations relatives aux arômes et aux numéros E pour obtenir une déclaration explicite.",
-  "cannot_1": "Déterminer l'origine de fabrication, la concentration ou l'apport alimentaire total à partir du nom seul.",
-  "cannot_2": "Cela laisse supposer la présence de glutamate monosodique ou d'un autre exhausteur de goût qui n'est pas mentionné séparément.",
+  "description": "E627, E631 et E635 sont des exhausteurs de goût nucléotidiques dont l’effet umami devient particulièrement fort avec le glutamate. Le JECFA n’a pas fixé de DJA numérique.",
+  "what_is": "Des exhausteurs nucléotidiques : E627 est le guanylate disodique, E631 l’inosinate disodique et E635 un mélange d’inosinate et de guanylate.",
+  "why_botia": "E627 et E631 sont des nucléotides qui renforcent l’umami, avec un effet particulièrement fort lorsqu’ils sont associés au glutamate. Dans des études sensorielles humaines, le mélange glutamate-inosinate a produit dans certaines proportions une réponse umami environ huit fois plus forte que le glutamate seul. C’est pourquoi ils sont souvent utilisés avec E621; E635 est lui-même un mélange d’inosinate et de guanylate. La production industrielle peut utiliser la fermentation ou des matières riches en nucléotides, mais l’étiquette ne révèle pas le procédé. Le JECFA n’a pas fixé de limite numérique.",
+  "can_1": "Identifier E627, E631, E635 et leurs noms usuels.",
+  "can_2": "Expliquer leur forte synergie avec le glutamate et signaler que, lorsque E621 apparaît, il est utile de rechercher également E627, E631 ou E635.",
+  "cannot_1": "Déterminer le procédé de fabrication ou la matière première à partir du nom.",
+  "cannot_2": "Déduire la présence de MSG ou d’un autre exhausteur non déclaré séparément.",
   "sources": [
     {
-      "label": "Règlement (CE) n° 1333/2008 — Liste de l'Union et conditions d'utilisation des additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Disodium 5'-guanylate (INS 627), chemical record 822 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/822"
     },
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission — spécifications relatives aux additifs alimentaires autorisés",
+      "label": "JECFA — Disodium 5'-inosinate (INS 631), chemical record 2512 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2512"
+    },
+    {
+      "label": "JECFA — Disodium 5'-ribonucleotides (INS 635), chemical record 4140 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4140"
+    },
+    {
+      "label": "JECFA — Disodium guanylate and disodium inosinate, WHO Food Additives Series 32",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v32je06.htm"
+    },
+    {
+      "label": "Kurihara 2015 — Umami: glutamate and 5'-nucleotide synergy in humans",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2015/189402"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E627, E631 and E635",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],

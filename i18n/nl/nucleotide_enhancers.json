@@ -1,20 +1,36 @@
 {
   "name": "Nucleotide-smaakversterkers",
   "title": "Nucleotide-smaakversterkers",
-  "description": "Een groep smaakversterkers op basis van nucleotiden, waaronder dinatriumguanylaat (E627), dinatriuminosinaat (E631) en dinatrium-5'-ribonucleotiden (E635).",
-  "what_is": "Een groep smaakversterkers op basis van nucleotiden, waaronder dinatriumguanylaat (E627), dinatriuminosinaat (E631) en dinatrium-5'-ribonucleotiden (E635).",
-  "why_botia": "BOTIA groepeert deze codes omdat het verwante smaakversterkers betreft en op etiketten zowel E-nummers als chemische benamingen kunnen worden gebruikt. De vermelding geeft aan om welk additief het gaat; de herkomst of de hoeveelheid ervan wordt niet vermeld.",
-  "can_1": "Detecteer E627, E631, E635 en de gangbare benamingen daarvan: guanylaat, inosinaat en ribonucleotide.",
-  "can_2": "Activeer de lagen met informatie over smaakstoffen en E-nummers voor een expliciete vermelding.",
-  "cannot_1": "Bepaal aan de hand van de naam alleen de herkomst, de concentratie of de totale inname via de voeding.",
-  "cannot_2": "Concludeer dat er MSG of een andere smaakversterker aanwezig is die niet afzonderlijk is vermeld.",
+  "description": "E627, E631 en E635 zijn nucleotide-smaakversterkers waarvan het umami-effect samen met glutamaat bijzonder sterk wordt. JECFA stelde geen numerieke ADI vast.",
+  "what_is": "Nucleotide-smaakversterkers: E627 is dinatriumguanylaat, E631 dinatriuminosinaat en E635 een mengsel van inosinaat en guanylaat.",
+  "why_botia": "E627 en E631 zijn nucleotiden die umami versterken. Samen met glutamaat wordt het effect bijzonder sterk: in menselijke smaakstudies gaf glutamaat plus inosinaat in bepaalde mengsels een ongeveer acht keer sterkere umami-respons dan glutamaat alleen. Daarom worden ze vaak samen met E621 gebruikt; E635 is zelf een mengsel van inosinaat en guanylaat. Industriële productie kan fermentatie of nucleotide-rijke grondstoffen gebruiken, maar het etiket vermeldt de productieroute niet. JECFA stelde geen numerieke innamelimiet vast.",
+  "can_1": "E627, E631, E635 en de gebruikelijke namen herkennen.",
+  "can_2": "Hun sterke umami-synergie met glutamaat uitleggen en bij E621 wijzen op E627, E631 of E635 als vaak gebruikte combinaties.",
+  "cannot_1": "De productieroute of grondstof uit alleen de naam bepalen.",
+  "cannot_2": "MSG of een andere smaakversterker aannemen als die niet apart is vermeld.",
   "sources": [
     {
-      "label": "Verordening (EG) nr. 1333/2008 — EU-lijst en gebruiksvoorwaarden voor levensmiddelenadditieven",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Disodium 5'-guanylate (INS 627), chemical record 822 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/822"
     },
     {
-      "label": "Verordening (EU) nr. 231/2012 van de Commissie — specificaties voor toegestane levensmiddelenadditieven",
+      "label": "JECFA — Disodium 5'-inosinate (INS 631), chemical record 2512 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2512"
+    },
+    {
+      "label": "JECFA — Disodium 5'-ribonucleotides (INS 635), chemical record 4140 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4140"
+    },
+    {
+      "label": "JECFA — Disodium guanylate and disodium inosinate, WHO Food Additives Series 32",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v32je06.htm"
+    },
+    {
+      "label": "Kurihara 2015 — Umami: glutamate and 5'-nucleotide synergy in humans",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2015/189402"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E627, E631 and E635",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],

@@ -1,20 +1,36 @@
 {
   "name": "Nukleotid-Geschmacksverstärker",
   "title": "Nukleotid-Geschmacksverstärker",
-  "description": "Eine Gruppe von Nukleotid-basierten Geschmacksverstärkern, darunter Dinatriumguanylat (E 627), Dinatriuminosinat (E 631) und Dinatrium-5'-ribonukleotide (E 635).",
-  "what_is": "Eine Gruppe von Nukleotid-basierten Geschmacksverstärkern, darunter Dinatriumguanylat (E 627), Dinatriuminosinat (E 631) und Dinatrium-5'-ribonukleotide (E 635).",
-  "why_botia": "BOTIA Diese Codes werden zusammengefasst, da es sich um verwandte Geschmacksverstärker handelt und auf den Etiketten entweder E-Nummern oder chemische Bezeichnungen verwendet werden können. Die Angabe identifiziert den Zusatzstoff; sie gibt jedoch weder dessen Herkunft noch dessen Menge preis.",
-  "can_1": "Erkennen Sie E627, E631, E635 und deren gebräuchliche Bezeichnungen „Guanylat“, „Inosinat“ und „Ribonukleotid“.",
-  "can_2": "Lösen Sie die Ebenen mit den Angaben zu Aromastoffen und E-Nummern aus, um eine explizite Deklaration zu erhalten.",
-  "cannot_1": "Bestimmen Sie die Herkunft, die Konzentration oder die gesamte Nahrungsaufnahme allein anhand der Bezeichnung.",
-  "cannot_2": "Es ist davon auszugehen, dass MSG oder ein anderer Geschmacksverstärker enthalten ist, der nicht gesondert angegeben ist.",
+  "description": "E627, E631 und E635 sind nukleotidbasierte Geschmacksverstärker, deren Umami-Wirkung zusammen mit Glutamat besonders stark wird. JECFA legte keine numerische ADI fest.",
+  "what_is": "Nukleotid-Geschmacksverstärker: E627 ist Dinatriumguanylat, E631 Dinatriuminosinat und E635 eine Mischung aus Inosinat und Guanylat.",
+  "why_botia": "E627 und E631 sind Nukleotide, die Umami verstärken. Zusammen mit Glutamat ist der Effekt besonders stark: In sensorischen Studien am Menschen erzeugte Glutamat plus Inosinat in bestimmten Mischungen eine etwa achtfach stärkere Umami-Reaktion als Glutamat allein. Deshalb werden diese Verstärker häufig zusammen mit E621 eingesetzt; E635 ist selbst eine Mischung aus Inosinat und Guanylat. Industrielle Verfahren können Fermentation oder nukleotidreiche Rohstoffe verwenden, doch das Etikett nennt den Herstellungsweg nicht. JECFA legte keinen numerischen Aufnahmewert fest.",
+  "can_1": "E627, E631, E635 sowie gebräuchliche Guanylat-, Inosinat- und Ribonukleotid-Bezeichnungen erkennen.",
+  "can_2": "Die starke Umami-Synergie mit Glutamat erklären und darauf hinweisen, bei E621 auch nach E627, E631 oder E635 zu schauen.",
+  "cannot_1": "Herstellungsverfahren oder Ausgangsmaterial aus dem Namen bestimmen.",
+  "cannot_2": "MSG oder einen anderen Verstärker annehmen, wenn er nicht separat deklariert ist.",
   "sources": [
     {
-      "label": "Verordnung (EG) Nr. 1333/2008 – Unionsliste und Verwendungsbedingungen für Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Disodium 5'-guanylate (INS 627), chemical record 822 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/822"
     },
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission – Spezifikationen für zugelassene Lebensmittelzusatzstoffe",
+      "label": "JECFA — Disodium 5'-inosinate (INS 631), chemical record 2512 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2512"
+    },
+    {
+      "label": "JECFA — Disodium 5'-ribonucleotides (INS 635), chemical record 4140 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4140"
+    },
+    {
+      "label": "JECFA — Disodium guanylate and disodium inosinate, WHO Food Additives Series 32",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v32je06.htm"
+    },
+    {
+      "label": "Kurihara 2015 — Umami: glutamate and 5'-nucleotide synergy in humans",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2015/189402"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E627, E631 and E635",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],

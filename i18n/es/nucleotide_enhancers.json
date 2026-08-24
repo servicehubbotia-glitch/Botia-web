@@ -1,20 +1,36 @@
 {
   "name": "Potenciadores del sabor a nucleótidos",
   "title": "Potenciadores del sabor a nucleótidos",
-  "description": "Un grupo de potenciadores del sabor a base de nucleótidos que incluye el guanilato disódico (E627), el inosinato disódico (E631) y los 5'-ribonucleótidos disódicos (E635).",
-  "what_is": "Un grupo de potenciadores del sabor a base de nucleótidos que incluye el guanilato disódico (E627), el inosinato disódico (E631) y los 5'-ribonucleótidos disódicos (E635).",
-  "why_botia": "BOTIA agrupa estos códigos porque se trata de potenciadores del sabor relacionados, y en las etiquetas pueden utilizarse tanto los números E como los nombres químicos. La declaración identifica el aditivo, pero no revela su origen ni su cantidad.",
-  "can_1": "Detectar los aditivos E627, E631 y E635, así como sus denominaciones comunes: guanilato, inosinato y ribonucleótido.",
-  "can_2": "Activa las capas de información sobre aromas y números E para obtener una declaración explícita.",
-  "cannot_1": "Determina el origen de fabricación, la concentración o la ingesta dietética total basándote únicamente en el nombre.",
-  "cannot_2": "Se deduce la presencia de glutamato monosódico u otro potenciador del sabor que no se haya indicado por separado.",
+  "description": "E627, E631 y E635 son potenciadores de sabor basados en nucleótidos cuyo efecto umami se vuelve especialmente fuerte junto con glutamato. JECFA no les fijó una IDA numérica.",
+  "what_is": "Potenciadores de sabor basados en nucleótidos: E627 es guanilato disódico, E631 es inosinato disódico y E635 es una mezcla de inosinato y guanilato.",
+  "why_botia": "El E627 y el E631 son nucleótidos que potencian el umami, y su efecto se vuelve especialmente fuerte cuando se combinan con glutamato: en estudios sensoriales en humanos, glutamato más inosinato ha producido una respuesta umami alrededor de ocho veces mayor que el glutamato solo en determinadas mezclas. Por eso estos potenciadores se usan a menudo junto a E621; E635 es precisamente una mezcla de inosinato y guanilato. Los procesos industriales pueden usar fermentación o materias primas ricas en nucleótidos, pero la etiqueta no revela el proceso de fabricación. JECFA no vio necesidad de fijarles un límite numérico.",
+  "can_1": "Detectar E627, E631, E635 y los nombres habituales de guanilato, inosinato y ribonucleótidos.",
+  "can_2": "Explicar su fuerte sinergia umami con el glutamato y mostrar que, cuando aparece E621, merece la pena mirar si también figuran E627, E631 o E635, porque se utilizan con frecuencia juntos.",
+  "cannot_1": "Determinar el proceso de fabricación ni la materia prima utilizada a partir del nombre del aditivo.",
+  "cannot_2": "Inferir que hay MSG u otro potenciador si no aparece declarado por separado en la etiqueta.",
   "sources": [
     {
-      "label": "Reglamento (CE) n.º 1333/2008 — Lista de la Unión y condiciones de uso de los aditivos alimentarios",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Guanilato disódico (INS 627), registro 822 — IDA no especificada",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/822"
     },
     {
-      "label": "Reglamento (UE) n.º 231/2012 de la Comisión — especificaciones de los aditivos alimentarios autorizados",
+      "label": "JECFA — Inosinato disódico (INS 631), registro 2512 — IDA no especificada",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2512"
+    },
+    {
+      "label": "JECFA — 5'-ribonucleótidos disódicos (INS 635), registro 4140 — IDA no especificada",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4140"
+    },
+    {
+      "label": "JECFA — Guanilato e inosinato disódicos, WHO Food Additives Series 32",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v32je06.htm"
+    },
+    {
+      "label": "Kurihara 2015 — Umami: sinergia entre glutamato y 5'-nucleótidos en humanos",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2015/189402"
+    },
+    {
+      "label": "Reglamento UE 231/2012 — especificaciones de E627, E631 y E635",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],

@@ -1,20 +1,36 @@
 {
   "name": "Peningkat Rasa Berbasis Nukleotida",
   "title": "Peningkat Rasa Berbasis Nukleotida",
-  "description": "Sekelompok bahan penambah rasa berbasis nukleotida, termasuk disodium guanilat (E627), disodium inosinat (E631), dan disodium 5'-ribonukleotida (E635).",
-  "what_is": "Sekelompok bahan penambah rasa berbasis nukleotida, termasuk disodium guanilat (E627), disodium inosinat (E631), dan disodium 5'-ribonukleotida (E635).",
-  "why_botia": "BOTIA Kode-kode ini dikelompokkan karena merupakan bahan penambah rasa yang saling terkait, dan label dapat mencantumkan baik nomor E maupun nama kimia. Penjelasan tersebut mengidentifikasi bahan tambahan tersebut; namun, tidak mengungkapkan sumber pembuatannya maupun jumlahnya.",
-  "can_1": "Mendeteksi E627, E631, E635, serta nama-nama umum mereka, yaitu guanylat, inosinat, dan ribonukleotida.",
-  "can_2": "Aktifkan lapisan informasi rasa dan nomor E untuk pernyataan yang jelas.",
-  "cannot_1": "Tentukan sumber produksi, konsentrasi, atau asupan total melalui makanan hanya berdasarkan namanya saja.",
-  "cannot_2": "Dapat disimpulkan bahwa terdapat MSG atau bahan penambah rasa lain yang tidak disebutkan secara terpisah.",
+  "description": "E627, E631 dan E635 adalah penguat rasa berbasis nukleotida yang efek umaminya menjadi sangat kuat bersama glutamat. JECFA tidak menetapkan ADI numerik.",
+  "what_is": "Penguat rasa nukleotida: E627 adalah dinatrium guanilat, E631 dinatrium inosinat dan E635 campuran inosinat dan guanilat.",
+  "why_botia": "E627 dan E631 adalah nukleotida yang memperkuat umami, dan efeknya menjadi sangat kuat bila digabungkan dengan glutamat. Dalam studi sensorik manusia, campuran glutamat dan inosinat tertentu menghasilkan respons umami sekitar delapan kali lebih kuat daripada glutamat saja. Karena itu bahan ini sering digunakan bersama E621; E635 sendiri adalah campuran inosinat dan guanilat. Produksi industri dapat menggunakan fermentasi atau bahan baku kaya nukleotida, tetapi label tidak menjelaskan jalur produksinya. JECFA tidak menetapkan batas numerik.",
+  "can_1": "Mendeteksi E627, E631, E635 dan nama umum guanilat, inosinat dan ribonukleotida.",
+  "can_2": "Menjelaskan sinergi umami yang kuat dengan glutamat dan, bila E621 muncul, menunjukkan bahwa E627, E631 atau E635 layak dicari pada label.",
+  "cannot_1": "Menentukan jalur produksi atau bahan baku hanya dari nama aditif.",
+  "cannot_2": "Menganggap MSG atau penguat lain ada jika tidak dinyatakan secara terpisah.",
   "sources": [
     {
-      "label": "Peraturan (EC) No. 1333/2008 — Daftar Uni Eropa dan ketentuan penggunaan bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Disodium 5'-guanylate (INS 627), chemical record 822 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/822"
     },
     {
-      "label": "Peraturan Komisi (UE) No. 231/2012 — spesifikasi untuk bahan tambahan pangan yang diizinkan",
+      "label": "JECFA — Disodium 5'-inosinate (INS 631), chemical record 2512 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2512"
+    },
+    {
+      "label": "JECFA — Disodium 5'-ribonucleotides (INS 635), chemical record 4140 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4140"
+    },
+    {
+      "label": "JECFA — Disodium guanylate and disodium inosinate, WHO Food Additives Series 32",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v32je06.htm"
+    },
+    {
+      "label": "Kurihara 2015 — Umami: glutamate and 5'-nucleotide synergy in humans",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2015/189402"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E627, E631 and E635",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],

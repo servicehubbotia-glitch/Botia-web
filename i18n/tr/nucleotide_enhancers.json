@@ -1,20 +1,36 @@
 {
   "name": "Nükleotid Tat Güçlendiriciler",
   "title": "Nükleotid Tat Güçlendiriciler",
-  "description": "Disodyum guanilat (E627), disodyum inosinat (E631) ve disodyum 5'-ribonükleotidler (E635) dahil olmak üzere nükleotid bazlı bir grup lezzet arttırıcı.",
-  "what_is": "Disodyum guanilat (E627), disodyum inosinat (E631) ve disodyum 5'-ribonükleotidler (E635) dahil olmak üzere bir grup nükleotid bazlı lezzet arttırıcı.",
-  "why_botia": "BOTIA bu kodları gruplandırır; birbiriyle ilişkili lezzet arttırıcılar oldukları için gruplandırılmıştır ve etiketlerde hem E numaraları hem de kimyasal isimler kullanılabilir. Bu beyan, katkı maddesini tanımlar; ancak üretim kaynağını veya miktarını açıklamaz.",
-  "can_1": "E627, E631, E635 ve bunların yaygın olarak kullanılan guanilat, inosinat ve ribonükleotid adlarını tespit edin.",
-  "can_2": "Açık bir beyan için tat ve E-numarası bilgi katmanlarını etkinleştirin.",
-  "cannot_1": "Sadece ismine bakarak üretim kaynağını, konsantrasyonunu veya toplam besin alımını belirleyin.",
-  "cannot_2": "MSG veya ayrı olarak belirtilmemiş başka bir lezzet arttırıcının varlığını varsayınız.",
+  "description": "E627, E631 ve E635 nükleotid bazlı lezzet artırıcılardır ve glutamatla birlikte umami etkileri özellikle güçlenir. JECFA sayısal ADI belirlememiştir.",
+  "what_is": "Nükleotid lezzet artırıcılarıdır: E627 disodyum guanilat, E631 disodyum inozinat ve E635 inozinat ile guanilat karışımıdır.",
+  "why_botia": "E627 ve E631 umamiyi güçlendiren nükleotidlerdir. Glutamatla birleştiğinde etki çok daha güçlü olur: insan duyusal çalışmalarında glutamat ile inozinatın bazı karışımları, yalnız glutamata göre yaklaşık sekiz kat daha güçlü umami yanıtı oluşturmuştur. Bu nedenle E621 ile sıkça birlikte kullanılırlar; E635 zaten inozinat ve guanilat karışımıdır. Endüstriyel üretim fermantasyon veya nükleotid açısından zengin hammaddeler kullanabilir, ancak etiket üretim yolunu açıklamaz. JECFA sayısal sınır koymamıştır.",
+  "can_1": "E627, E631, E635 ve yaygın adlarını tespit etmek.",
+  "can_2": "Glutamatla güçlü umami sinerjisini açıklamak ve E621 varsa E627, E631 veya E635 için de etiketi kontrol etmeyi göstermek.",
+  "cannot_1": "Üretim yöntemini veya hammaddenin kaynağını yalnızca addan belirlemek.",
+  "cannot_2": "Ayrıca beyan edilmemiş MSG veya başka bir artırıcıyı varsaymak.",
   "sources": [
     {
-      "label": "(EC) 1333/2008 sayılı Tüzük — Gıda katkı maddeleri için Birlik listesi ve kullanım koşulları",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Disodium 5'-guanylate (INS 627), chemical record 822 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/822"
     },
     {
-      "label": "(AB) 231/2012 sayılı Komisyon Tüzüğü — onaylanmış gıda katkı maddelerine ilişkin şartlar",
+      "label": "JECFA — Disodium 5'-inosinate (INS 631), chemical record 2512 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2512"
+    },
+    {
+      "label": "JECFA — Disodium 5'-ribonucleotides (INS 635), chemical record 4140 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4140"
+    },
+    {
+      "label": "JECFA — Disodium guanylate and disodium inosinate, WHO Food Additives Series 32",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v32je06.htm"
+    },
+    {
+      "label": "Kurihara 2015 — Umami: glutamate and 5'-nucleotide synergy in humans",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2015/189402"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E627, E631 and E635",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],

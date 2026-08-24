@@ -7,22 +7,38 @@
     "flavour",
     "enumbers"
   ],
-  "what_is": "A group of nucleotide-based flavour enhancers including disodium guanylate (E627), disodium inosinate (E631) and disodium 5'-ribonucleotides (E635).",
-  "why_botia": "BOTIA groups these codes because they are related flavour enhancers and labels may use either E-numbers or chemical names. The declaration identifies the additive; it does not reveal its manufacturing source or amount.",
-  "can_1": "Detect E627, E631, E635 and their common guanylate, inosinate and ribonucleotide names.",
-  "can_2": "Trigger the flavour and E-number information layers for an explicit declaration.",
-  "cannot_1": "Determine the manufacturing source, concentration or total dietary intake from the name alone.",
-  "cannot_2": "Infer the presence of MSG or another flavour enhancer that is not separately declared.",
+  "what_is": "Nucleotide flavour enhancers: E627 is disodium guanylate, E631 is disodium inosinate and E635 is a mixture of inosinate and guanylate.",
+  "why_botia": "E627 and E631 are nucleotides that enhance umami, and their effect becomes especially strong when they are combined with glutamate: in human sensory studies, glutamate plus inosinate has produced an umami response around eight times stronger than glutamate alone in some mixtures. That is why these enhancers are often used alongside E621; E635 is itself a mixture of inosinate and guanylate. Industrial production can use fermentation or nucleotide-rich raw materials, but the label does not reveal the manufacturing route. JECFA assigned no numerical intake limit.",
+  "can_1": "Detect E627, E631, E635 and the common guanylate, inosinate and ribonucleotide names.",
+  "can_2": "Explain their strong umami synergy with glutamate and show that, when E621 appears, E627, E631 or E635 are worth looking for as commonly paired enhancers.",
+  "cannot_1": "Determine the manufacturing route or raw material used from the additive name alone.",
+  "cannot_2": "Infer that MSG or another enhancer is present unless it is separately declared on the label.",
   "sources": [
     {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Disodium 5'-guanylate (INS 627), chemical record 822 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/822"
     },
     {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
+      "label": "JECFA — Disodium 5'-inosinate (INS 631), chemical record 2512 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2512"
+    },
+    {
+      "label": "JECFA — Disodium 5'-ribonucleotides (INS 635), chemical record 4140 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4140"
+    },
+    {
+      "label": "JECFA — Disodium guanylate and disodium inosinate, WHO Food Additives Series 32",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v32je06.htm"
+    },
+    {
+      "label": "Kurihara 2015 — Umami: glutamate and 5'-nucleotide synergy in humans",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2015/189402"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E627, E631 and E635",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],
   "title": "Nucleotide Flavour Enhancers",
-  "description": "A group of nucleotide-based flavour enhancers including disodium guanylate (E627), disodium inosinate (E631) and disodium 5'-ribonucleotides (E635)."
+  "description": "E627, E631 and E635 are nucleotide flavour enhancers whose umami effect becomes especially strong with glutamate. JECFA assigned no numerical ADI."
 }

@@ -1,20 +1,36 @@
 {
   "name": "Nukleotydowe substancje wzmacniające smak",
   "title": "Nukleotydowe substancje wzmacniające smak",
-  "description": "Grupa wzmacniaczy smaku na bazie nukleotydów, w tym guanylan disodowy (E627), inozynan disodowy (E631) oraz 5'-rybonukleotydy disodowe (E635).",
-  "what_is": "Grupa wzmacniaczy smaku na bazie nukleotydów, w tym guanylan disodowy (E627), inozynan disodowy (E631) oraz 5'-rybonukleotydy disodowe (E635).",
-  "why_botia": "BOTIA grupuje te kody, ponieważ są to powiązane ze sobą substancje wzmacniające smak, a na etykietach mogą być stosowane zarówno numery E, jak i nazwy chemiczne. Deklaracja identyfikuje dodatek; nie ujawnia jednak źródła jego pochodzenia ani ilości.",
-  "can_1": "Wykryj E627, E631, E635 oraz ich potoczne nazwy: guanylan, inozynan i rybonukleotyd.",
-  "can_2": "Wywołaj warstwy zawierające informacje o smaku i numerach E w celu uzyskania wyraźnego oświadczenia.",
-  "cannot_1": "Na podstawie samej nazwy określ źródło pochodzenia, stężenie lub całkowite spożycie w diecie.",
-  "cannot_2": "Można wnioskować o obecności glutaminianu sodu (MSG) lub innego wzmacniacza smaku, który nie został osobno wymieniony w składzie.",
+  "description": "E627, E631 i E635 to nukleotydowe wzmacniacze smaku, których działanie umami jest szczególnie silne z glutaminianem. JECFA nie ustalił liczbowego ADI.",
+  "what_is": "Wzmacniacze nukleotydowe: E627 to guanylan disodowy, E631 inozynian disodowy, a E635 mieszanina inozynianu i guanylanu.",
+  "why_botia": "E627 i E631 to nukleotydy wzmacniające umami. W połączeniu z glutaminianem efekt staje się szczególnie silny: w badaniach sensorycznych u ludzi glutaminian z inozynianem dawał w niektórych proporcjach około osiem razy silniejszą odpowiedź umami niż sam glutaminian. Dlatego często stosuje się je razem z E621; E635 jest mieszaniną inozynianu i guanylanu. Produkcja może wykorzystywać fermentację lub surowce bogate w nukleotydy, ale etykieta nie podaje procesu. JECFA nie ustalił liczbowego limitu.",
+  "can_1": "Rozpoznawać E627, E631, E635 i ich typowe nazwy.",
+  "can_2": "Wyjaśniać silną synergię z glutaminianem i przy E621 zwracać uwagę na E627, E631 lub E635.",
+  "cannot_1": "Określić procesu produkcji lub surowca na podstawie nazwy.",
+  "cannot_2": "Zakładać obecności MSG lub innego wzmacniacza bez osobnej deklaracji.",
   "sources": [
     {
-      "label": "Rozporządzenie (WE) nr 1333/2008 — unijny wykaz dodatków do żywności i warunki ich stosowania",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Disodium 5'-guanylate (INS 627), chemical record 822 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/822"
     },
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
+      "label": "JECFA — Disodium 5'-inosinate (INS 631), chemical record 2512 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2512"
+    },
+    {
+      "label": "JECFA — Disodium 5'-ribonucleotides (INS 635), chemical record 4140 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4140"
+    },
+    {
+      "label": "JECFA — Disodium guanylate and disodium inosinate, WHO Food Additives Series 32",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v32je06.htm"
+    },
+    {
+      "label": "Kurihara 2015 — Umami: glutamate and 5'-nucleotide synergy in humans",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2015/189402"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E627, E631 and E635",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],

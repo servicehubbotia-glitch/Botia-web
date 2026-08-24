@@ -1,20 +1,36 @@
 {
   "name": "Esaltatori di sapore a base di nucleotidi",
   "title": "Esaltatori di sapore a base di nucleotidi",
-  "description": "Un gruppo di esaltatori di sapidità a base di nucleotidi, tra cui il guanilato disodico (E627), l'inosinato disodico (E631) e i 5'-ribonucleotidi disodici (E635).",
-  "what_is": "Un gruppo di esaltatori di sapidità a base di nucleotidi, tra cui il guanilato disodico (E627), l'inosinato disodico (E631) e i 5'-ribonucleotidi disodici (E635).",
-  "why_botia": "BOTIA raggruppa questi codici poiché si tratta di esaltatori di sapidità correlati e le etichette possono riportare sia i numeri E che i nomi chimici. La dichiarazione identifica l’additivo, ma non ne rivela la provenienza né la quantità.",
-  "can_1": "Rileva gli additivi E627, E631, E635 e le loro denominazioni comuni: guanilato, inosinato e ribonucleotide.",
-  "can_2": "Attiva i livelli relativi alle informazioni sul gusto e sui numeri E per una dichiarazione esplicita.",
-  "cannot_1": "Determinare la fonte di produzione, la concentrazione o l'apporto alimentare complessivo basandosi esclusivamente sul nome.",
-  "cannot_2": "Si deduce la presenza di glutammato monosodico o di un altro esaltatore di sapidità non indicato separatamente.",
+  "description": "E627, E631 ed E635 sono esaltatori di sapidità a base di nucleotidi il cui effetto umami diventa particolarmente forte con il glutammato. Il JECFA non ha fissato una DGA numerica.",
+  "what_is": "Esaltatori nucleotidici: E627 è guanilato disodico, E631 inosinate disodico ed E635 una miscela di inosinate e guanilato.",
+  "why_botia": "E627 ed E631 sono nucleotidi che intensificano l’umami e il loro effetto diventa particolarmente forte con il glutammato. Negli studi sensoriali umani, glutammato più inosinate ha prodotto in alcune miscele una risposta umami circa otto volte maggiore del glutammato da solo. Per questo vengono spesso usati insieme a E621; E635 è una miscela di inosinate e guanilato. La produzione industriale può utilizzare fermentazione o materie prime ricche di nucleotidi, ma l’etichetta non rivela il processo. Il JECFA non ha fissato un limite numerico.",
+  "can_1": "Identificare E627, E631, E635 e i loro nomi comuni.",
+  "can_2": "Spiegare la forte sinergia con il glutammato e indicare che con E621 vale la pena cercare anche E627, E631 o E635.",
+  "cannot_1": "Determinare processo produttivo o materia prima dal solo nome.",
+  "cannot_2": "Dedurre la presenza di MSG o altri esaltatori non dichiarati.",
   "sources": [
     {
-      "label": "Regolamento (CE) n. 1333/2008 — Elenco dell'Unione e condizioni d'uso degli additivi alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Disodium 5'-guanylate (INS 627), chemical record 822 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/822"
     },
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione — specifiche relative agli additivi alimentari autorizzati",
+      "label": "JECFA — Disodium 5'-inosinate (INS 631), chemical record 2512 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2512"
+    },
+    {
+      "label": "JECFA — Disodium 5'-ribonucleotides (INS 635), chemical record 4140 — ADI not specified",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/4140"
+    },
+    {
+      "label": "JECFA — Disodium guanylate and disodium inosinate, WHO Food Additives Series 32",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v32je06.htm"
+    },
+    {
+      "label": "Kurihara 2015 — Umami: glutamate and 5'-nucleotide synergy in humans",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2015/189402"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E627, E631 and E635",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],
