@@ -1,32 +1,37 @@
 {
   "name": "Ksilitol",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Beş karbonlu bir poliol veya şeker alkolü olup, ağırlıklı olarak D-xylitol içerir ve şeker oranı azaltılmış gıdalarda hacim verici tatlandırıcı ve nemlendirici olarak kullanılır.",
-  "why_botia": "BOTIA, E967’yi yalnızca yoğun bir tatlandırıcı değil, hacim artırıcı bir poliol olduğu için işaretlemektedir. AB kuralları, %10’un üzerinde eklenmiş poliol bulunması durumunda müshil etkisi uyarısı gerektirmektedir. WHO’nün 2023 yılına ait şeker içermeyen tatlandırıcılar hakkındaki tavsiyesi, poliolleri açıkça kapsam dışı bırakmaktadır.",
-  "can_1": "Taranan etiketlerde E967 veya Ksilitol'ü tanımlar.",
-  "can_2": "Poliol tüketimi ve müshil etkileri hakkında güvenlik bilgisi sağlar.",
-  "cannot_1": "Ham ksilitolün %1'in üzerinde listelenmemiş polihidrik alkol içerip içermediğini doğrulayamaz.",
-  "cannot_2": "Tam bitki hammaddesi kaynağını tanımlayamaz.",
+  "what_is": "Ksilitol (INS 967 / E967), hacim sağlayan tatlandırıcı ve nem tutucu olarak kullanılan beş karbonlu bir polioldür. Yoğun tatlandırıcılardan farklı olarak şekerin yalnızca tatlılığını değil fiziksel hacmini de yerine koyar; bu nedenle sakızlarda, şekerlemelerde ve diğer şekersiz ürünlerde yaygındır.",
+  "why_botia": "Ksilitol şekerin hem tatlılığını hem de hacmini yerine koyar. %100 ksilitolle tatlandırılmış sakızın, çocuklarda diş çürüğü için bir risk faktörü olan diş plağını azalttığı gösterilmiştir — ksilitolün sakızla bu kadar yakından ilişkilendirilmesinin nedenlerinden biri budur. Bir kısmı emilmez, bağırsağa su çeker ve fermente edilir, bu nedenle daha yüksek miktarlar dışkıyı yumuşatabilir; ksilitol ayrıca köpekler için son derece toksiktir ve küçük miktarlar bile ciddi hipoglisemiye neden olabilir.",
+  "can_1": "E967, INS 967, ksilitol, D-xylitol ve xilitolü açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Hacim sağlayan tatlandırıcı işlevini, ksilitollü sakız ile daha az diş plağı arasındaki ilişkiyi, bağırsak etkilerini ve köpekler için ciddi toksisitesini açıklamak.",
+  "cannot_1": "Yalnızca içerik listesinden ne kadar ksilitol bulunduğunu belirlemek.",
+  "cannot_2": "Bireysel sindirim tepkisini öngörmek veya yutulan miktar ve köpeğin ağırlığı bilinmeden köpekteki maruziyetin şiddetini belirlemek.",
   "sources": [
     {
-      "label": "Komisyon Tüzüğü (AB) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — Ksilitol spesifikasyonları monografisi",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "(EU) 2021/1175 Tüzüğü — poliol etiketlemesi",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "Ksilitol",
-  "description": "Ksiloza katalitik hidrojenasyon ile elde edilen düşük kalorili bir poliol şeker alkolüdür."
+  "description": "Ksilitol (INS 967 / E967), sakızlarda yaygın olan hacim sağlayan bir polioldür; diş plağını azaltabilir ve köpekler için son derece toksiktir."
 }

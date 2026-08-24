@@ -1,32 +1,37 @@
 {
   "name": "Xilitol",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Un poliol de cinco carbonos, o alcohol de azúcar, compuesto principalmente de D-xylitol y utilizado como edulcorante de volumen y humectante en alimentos con contenido reducido de azúcar.",
-  "why_botia": "BOTIA señala el E967 porque es un poliol de relleno, no solo un edulcorante intenso. Las normas de la UE exigen una advertencia sobre el efecto laxante por encima del 10% de polioles añadidos. La recomendación de 2023 de WHO sobre edulcorantes sin azúcar excluye explícitamente los polioles.",
-  "can_1": "Identificar E967 o Xilitol en etiquetas escaneadas.",
-  "can_2": "Proporcionar información de seguridad sobre el consumo de polioles y efectos laxantes.",
-  "cannot_1": "Verificar si el xilitol crudo contiene alcoholes polihídricos no listados por encima del 1%.",
-  "cannot_2": "Identificar la fuente exacta de materia prima vegetal.",
+  "what_is": "El xilitol (INS 967 / E967) es un poliol de cinco carbonos utilizado como edulcorante de carga y humectante. A diferencia de un edulcorante intenso, sustituye tanto el volumen físico como el dulzor, por eso es habitual en chicles, caramelos y otros productos sin azúcar.",
+  "why_botia": "El xilitol sustituye tanto el dulzor como el volumen del azúcar. Se ha demostrado que el chicle endulzado con 100% de xilitol reduce la placa dental, un factor de riesgo para el desarrollo de caries en niños — una de las razones por las que el xilitol está tan asociado al chicle. Una parte no se absorbe, atrae agua al intestino y es fermentada, por lo que cantidades mayores pueden aflojar las heces; además, el xilitol es muy tóxico para los perros y cantidades pequeñas pueden causar hipoglucemia grave.",
+  "can_1": "Detectar E967, INS 967, xilitol, D-xylitol y xilitol cuando estén declarados explícitamente.",
+  "can_2": "Explicar su función como edulcorante de carga, su asociación con una menor placa dental en chicles con xilitol, sus efectos intestinales y su grave toxicidad para los perros.",
+  "cannot_1": "Determinar cuánto xilitol contiene el producto únicamente a partir de la lista de ingredientes.",
+  "cannot_2": "Predecir la respuesta digestiva individual ni determinar la gravedad de la exposición de un perro sin conocer la cantidad ingerida y el peso del animal.",
   "sources": [
     {
-      "label": "Reglamento (UE) n.º 231/2012 de la Comisión",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — Monografía de especificaciones de Xilitol",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "Reglamento (UE) 2021/1175 — etiquetado de polioles",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "Xilitol",
-  "description": "Un alcohol de poliol bajo en calorías obtenido por hidrogenación catalítica de la xilosa."
+  "description": "El xilitol (INS 967 / E967) es un poliol de carga habitual en chicles; puede reducir la placa dental y es muy tóxico para los perros."
 }

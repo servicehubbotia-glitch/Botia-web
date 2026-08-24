@@ -1,32 +1,37 @@
 {
   "name": "木糖醇",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "一种五碳多元醇（即糖醇），主要成分为D-木糖醇，用作低糖食品中的填充型甜味剂和保湿剂。",
-  "why_botia": "BOTIA将E967标记为大宗多元醇，而不仅仅是强力甜味剂。欧盟法规要求，当添加的多元醇超过10%时，必须标注通便作用的警示。世卫组织2023年关于非糖甜味剂的建议明确将多元醇排除在外。",
-  "can_1": "识别扫描标签上的E967或木糖醇。",
-  "can_2": "提供关于多元醇消费和通便作用的安全信息。",
-  "cannot_1": "验证原料木糖醇是否含有超过1%的未列明多元醇。",
-  "cannot_2": "识别确切的植物原料来源。",
+  "what_is": "木糖醇（INS 967 / E967）是一种五碳多元醇，用作填充型甜味剂和保湿剂。与高强度甜味剂不同，它不仅替代甜味，也替代糖的实际体积，因此常见于口香糖、糖果和其他无糖产品。",
+  "why_botia": "木糖醇同时替代糖的甜味和体积。研究表明，用100%木糖醇作为甜味剂的口香糖可以减少牙菌斑，而牙菌斑是儿童龋齿的风险因素之一——这也是木糖醇与口香糖关系如此密切的原因之一。部分木糖醇不会被吸收，会把水带入肠道并被发酵，因此较大的摄入量可能使大便变稀；木糖醇对狗也具有很强的毒性，即使少量也可能导致严重低血糖。",
+  "can_1": "识别明确标示的 E967、INS 967、木糖醇、D-xylitol 和 xilitol。",
+  "can_2": "解释其填充型甜味剂作用、木糖醇口香糖与减少牙菌斑之间的关系、肠道作用以及对狗的严重毒性。",
+  "cannot_1": "仅根据配料表确定木糖醇的实际含量。",
+  "cannot_2": "预测个人的消化反应，或在不知道摄入量和狗的体重时判断狗暴露后的严重程度。",
   "sources": [
     {
-      "label": "欧盟委员会条例（EU）第231/2012号",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — 木糖醇规格专著",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "(EU) 2021/1175号法规——多元醇标签",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "木糖醇",
-  "description": "一种低热量的多元醇糖醇，通过木糖的催化氢化获得。"
+  "description": "木糖醇（INS 967 / E967）是一种常用于口香糖的填充型多元醇；它可以减少牙菌斑，并且对狗具有很强的毒性。"
 }

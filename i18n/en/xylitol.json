@@ -1,32 +1,37 @@
 {
   "name": "Xylitol",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "A five-carbon polyol, or sugar alcohol, consisting mainly of D-xylitol and used as a bulk sweetener and humectant in sugar-reduced foods.",
-  "why_botia": "BOTIA flags E967 because it is a bulk polyol, not just an intense sweetener. EU rules require a laxative-effect warning above 10% added polyols. WHO's 2023 recommendation on non-sugar sweeteners explicitly excludes polyols.",
-  "can_1": "Identify E967 or Xylitol on scanned labels.",
-  "can_2": "Provide safety information regarding polyol consumption and laxative effects.",
-  "cannot_1": "Verify if raw xylitol contains unlisted polyhydric alcohols above 1%.",
-  "cannot_2": "Identify the exact plant raw material source.",
+  "what_is": "Xylitol (INS 967 / E967) is a five-carbon polyol used as a bulk sweetener and humectant. Unlike an intense sweetener, it replaces physical bulk as well as sweetness, which is why it is common in chewing gum, sweets and other sugar-free products.",
+  "why_botia": "Xylitol replaces both the sweetness and the bulk of sugar. Chewing gum sweetened with 100% xylitol has been shown to reduce dental plaque, a risk factor for tooth decay in children — one reason xylitol is so closely associated with chewing gum. Part of it is not absorbed, draws water into the gut and is fermented, so larger amounts can loosen stools; xylitol is also highly toxic to dogs, and even small amounts can cause severe hypoglycaemia.",
+  "can_1": "Detect E967, INS 967, xylitol, D-xylitol and xilitol when explicitly declared.",
+  "can_2": "Explain its bulk-sweetener function, its association with reduced dental plaque in xylitol chewing gum, its intestinal effects and its serious toxicity to dogs.",
+  "cannot_1": "Determine how much xylitol is present from the ingredient list alone.",
+  "cannot_2": "Predict an individual's digestive response or determine the severity of a dog's exposure without knowing the amount consumed and the dog's weight.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — Xylitol specifications monograph",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "Regulation (EU) 2021/1175 — polyol labelling",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "Xylitol",
-  "description": "A low-calorie polyol sugar alcohol obtained by catalytic hydrogenation of xylose."
+  "description": "Xylitol (INS 967 / E967) is a bulk polyol used in chewing gum; it can reduce dental plaque and is highly toxic to dogs."
 }

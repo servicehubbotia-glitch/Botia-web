@@ -1,32 +1,37 @@
 {
   "name": "Xilitol",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Um poliol de cinco carbonos, ou álcool de açúcar, constituído principalmente de D-xilitol e utilizado como adoçante de volume e umectante em alimentos com teor reduzido de açúcar.",
-  "why_botia": "A BOTIA sinaliza o E967 porque é um poliol de volume, não apenas um adoçante intenso. As regras da UE exigem um aviso de efeito laxativo acima de 10% de polióis adicionados. A recomendação de 2023 da WHO sobre adoçantes sem açúcar exclui explicitamente os polióis.",
-  "can_1": "Identificar E967 ou Xilitol em rótulos escaneados.",
-  "can_2": "Fornecer informações de segurança sobre o consumo de polióis e efeitos laxativos.",
-  "cannot_1": "Verificar se o xilitol bruto contém álcoois poli-hídricos não listados acima de 1%.",
-  "cannot_2": "Identificar a fonte exata da matéria-prima vegetal.",
+  "what_is": "O xilitol (INS 967 / E967) é um poliol de cinco carbonos utilizado como edulcorante de volume e humectante. Ao contrário de um edulcorante intenso, substitui também o volume físico do açúcar, razão pela qual é comum em pastilhas elásticas, doces e outros produtos sem açúcar.",
+  "why_botia": "O xilitol substitui tanto a doçura como o volume do açúcar. Foi demonstrado que a pastilha elástica adoçada com 100% de xilitol reduz a placa dentária, um fator de risco para cáries em crianças — uma das razões pelas quais o xilitol está tão associado às pastilhas elásticas. Uma parte não é absorvida, atrai água para o intestino e é fermentada, pelo que quantidades maiores podem amolecer as fezes; o xilitol também é altamente tóxico para cães e mesmo pequenas quantidades podem causar hipoglicemia grave.",
+  "can_1": "Detetar E967, INS 967, xilitol, D-xylitol e xilitol quando declarados explicitamente.",
+  "can_2": "Explicar a função de edulcorante de volume, a associação entre pastilhas com xilitol e menor placa dentária, os efeitos intestinais e a grave toxicidade para cães.",
+  "cannot_1": "Determinar a quantidade de xilitol presente apenas pela lista de ingredientes.",
+  "cannot_2": "Prever a resposta digestiva individual ou determinar a gravidade da exposição de um cão sem conhecer a quantidade ingerida e o peso do animal.",
   "sources": [
     {
-      "label": "Regulamento (UE) n.º 231/2012 da Comissão",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — Monografia de especificações do Xilitol",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "Regulamento (UE) 2021/1175 — rotulagem de polióis",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "Xilitol",
-  "description": "Um álcool de açúcar poliol de baixa caloria obtido por hidrogenação catalítica da xilose."
+  "description": "O xilitol (INS 967 / E967) é um poliol de volume comum em pastilhas elásticas; pode reduzir a placa dentária e é altamente tóxico para cães."
 }

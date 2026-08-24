@@ -1,32 +1,37 @@
 {
   "name": "Xylitol",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Un polyol à cinq atomes de carbone, ou alcool de sucre, composé principalement de D-xylitol et utilisé comme édulcorant de charge et humectant dans les aliments à teneur réduite en sucre.",
-  "why_botia": "BOTIA signale le E967 car il s'agit d'un polyol de charge, et non simplement d'un édulcorant intense. La réglementation européenne exige un avertissement concernant l'effet laxatif au-delà de 10 % de polyols ajoutés. La recommandation 2023 de WHO sur les édulcorants sans sucre exclut explicitement les polyols.",
-  "can_1": "Identifier E967 ou Xylitol sur les étiquettes scannées.",
-  "can_2": "Fournir des informations de sécurité concernant la consommation de polyols et les effets laxatifs.",
-  "cannot_1": "Vérifier si le xylitol brut contient des alcools polyhydriques non listés au-dessus de 1 %.",
-  "cannot_2": "Identifier la source exacte de matière première végétale.",
+  "what_is": "Le xylitol (INS 967 / E967) est un polyol à cinq carbones utilisé comme édulcorant de charge et humectant. Contrairement à un édulcorant intense, il remplace aussi le volume physique du sucre, ce qui explique sa présence fréquente dans les chewing-gums, confiseries et autres produits sans sucre.",
+  "why_botia": "Le xylitol remplace à la fois la douceur et le volume du sucre. Il a été démontré qu'un chewing-gum édulcoré avec 100% de xylitol réduit la plaque dentaire, un facteur de risque de carie chez l'enfant — l'une des raisons pour lesquelles le xylitol est si étroitement associé au chewing-gum. Une partie n'est pas absorbée, attire l'eau dans l'intestin et est fermentée, de sorte que des quantités plus importantes peuvent ramollir les selles ; le xylitol est également très toxique pour les chiens et de petites quantités peuvent provoquer une hypoglycémie sévère.",
+  "can_1": "Détecter E967, INS 967, xylitol, D-xylitol et xilitol lorsqu'ils sont explicitement déclarés.",
+  "can_2": "Expliquer sa fonction d'édulcorant de charge, son association avec une réduction de la plaque dentaire dans les chewing-gums au xylitol, ses effets intestinaux et sa forte toxicité pour les chiens.",
+  "cannot_1": "Déterminer la quantité de xylitol présente à partir de la seule liste des ingrédients.",
+  "cannot_2": "Prédire la réponse digestive individuelle ou déterminer la gravité de l'exposition d'un chien sans connaître la quantité ingérée et le poids de l'animal.",
   "sources": [
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — Monographie de spécifications du xylitol",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "Règlement (UE) 2021/1175 — étiquetage des polyols",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "Xylitol",
-  "description": "Un polyol édulcorant hypocalorique obtenu par hydrogénation catalytique du xylose."
+  "description": "Le xylitol (INS 967 / E967) est un polyol de charge fréquent dans les chewing-gums ; il peut réduire la plaque dentaire et est très toxique pour les chiens."
 }

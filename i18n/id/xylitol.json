@@ -1,32 +1,37 @@
 {
   "name": "Xylitol",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Poliol berkarbon lima, atau gula alkohol, yang terutama terdiri dari D-xylitol dan digunakan sebagai pemanis curah serta humektan dalam makanan dengan kandungan gula berkurang.",
-  "why_botia": "BOTIA menandai E967 karena merupakan poliol curah, bukan sekadar pemanis intensif. Aturan UE mewajibkan peringatan efek laksatif di atas 10% poliol yang ditambahkan. Rekomendasi WHO tahun 2023 tentang pemanis non-gula secara tegas mengecualikan poliol.",
-  "can_1": "Mengidentifikasi E967 atau Xylitol pada label yang dipindai.",
-  "can_2": "Memberikan informasi keamanan mengenai konsumsi poliol dan efek laksatif.",
-  "cannot_1": "Memverifikasi apakah xylitol mentah mengandung alkohol polihidrat yang tidak tercantum di atas 1%.",
-  "cannot_2": "Mengidentifikasi sumber bahan baku tanaman yang tepat.",
+  "what_is": "Xylitol (INS 967 / E967) adalah poliol lima karbon yang digunakan sebagai pemanis pengisi dan humektan. Berbeda dari pemanis intensitas tinggi, xylitol menggantikan volume fisik sekaligus rasa manis gula, sehingga umum ditemukan dalam permen karet, permen dan produk bebas gula lainnya.",
+  "why_botia": "Xylitol menggantikan rasa manis sekaligus volume gula. Permen karet yang dimaniskan dengan 100% xylitol telah terbukti mengurangi plak gigi, salah satu faktor risiko kerusakan gigi pada anak — salah satu alasan xylitol begitu erat dikaitkan dengan permen karet. Sebagian tidak diserap, menarik air ke usus dan difermentasi, sehingga jumlah yang lebih besar dapat melunakkan feses; xylitol juga sangat beracun bagi anjing dan bahkan jumlah kecil dapat menyebabkan hipoglikemia berat.",
+  "can_1": "Mendeteksi E967, INS 967, xylitol, D-xylitol dan xilitol ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan fungsi sebagai pemanis pengisi, hubungan permen karet xylitol dengan berkurangnya plak gigi, efek usus dan toksisitas serius bagi anjing.",
+  "cannot_1": "Menentukan jumlah xylitol yang ada hanya dari daftar bahan.",
+  "cannot_2": "Memprediksi respons pencernaan individu atau menentukan tingkat keparahan paparan pada anjing tanpa mengetahui jumlah yang tertelan dan berat badan anjing.",
   "sources": [
     {
-      "label": "Peraturan Komisi (UE) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — Monograf spesifikasi Xylitol",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "Peraturan (UE) 2021/1175 — pelabelan poliol",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "Xylitol",
-  "description": "Pemanis poliol rendah kalori yang diperoleh dari hidrogenasi katalitik xilosa."
+  "description": "Xylitol (INS 967 / E967) adalah poliol pengisi yang umum dalam permen karet; dapat mengurangi plak gigi dan sangat beracun bagi anjing."
 }

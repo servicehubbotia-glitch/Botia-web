@@ -1,32 +1,37 @@
 {
   "name": "Xylitol",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Een vijfwaardig polyol, of suikeralcohol, dat voornamelijk uit D-xylitol bestaat en wordt gebruikt als bulkzoetstof en bevochtigingsmiddel in producten met verlaagd suikergehalte.",
-  "why_botia": "BOTIA markeert E967 omdat het een bulkpolyol is, niet slechts een intensieve zoetstof. EU-regels vereisen een waarschuwing voor een laxerend effect boven 10% toegevoegde polyolen. De aanbeveling van de WHO uit 2023 over niet-suikerzoetstoffen sluit polyolen expliciet uit.",
-  "can_1": "Identificeer E967 of Xylitol op gescande etiketten.",
-  "can_2": "Verstrek veiligheidsinformatie over polyolconsumptie en laxerende effecten.",
-  "cannot_1": "Controleer of ruw xylitol niet-gelabelde polyhydrische alcoholen boven 1% bevat.",
-  "cannot_2": "Identificeer de exacte plantaardige grondstoffenbron.",
+  "what_is": "Xylitol (INS 967 / E967) is een vijf-koolstofpolyol die wordt gebruikt als bulkzoetstof en bevochtigingsmiddel. Anders dan een intensieve zoetstof vervangt het naast zoetheid ook fysiek volume, waardoor het vaak voorkomt in kauwgom, snoep en andere suikervrije producten.",
+  "why_botia": "Xylitol vervangt zowel de zoetheid als het volume van suiker. Van kauwgom die met 100% xylitol is gezoet, is aangetoond dat deze tandplak vermindert, een risicofactor voor tandbederf bij kinderen — een reden waarom xylitol zo sterk met kauwgom wordt geassocieerd. Een deel wordt niet opgenomen, trekt water de darm in en wordt gefermenteerd, waardoor grotere hoeveelheden de ontlasting dunner kunnen maken; xylitol is bovendien zeer giftig voor honden en zelfs kleine hoeveelheden kunnen ernstige hypoglykemie veroorzaken.",
+  "can_1": "E967, INS 967, xylitol, D-xylitol en xilitol detecteren wanneer deze expliciet worden vermeld.",
+  "can_2": "De functie als bulkzoetstof, het verband tussen xylitolkauwgom en minder tandplak, de darmwerking en de ernstige toxiciteit voor honden uitleggen.",
+  "cannot_1": "Uit alleen de ingrediëntenlijst bepalen hoeveel xylitol aanwezig is.",
+  "cannot_2": "Een individuele spijsverteringsreactie voorspellen of de ernst van blootstelling bij een hond bepalen zonder de ingenomen hoeveelheid en het gewicht van de hond te kennen.",
   "sources": [
     {
-      "label": "Verordening (EU) nr. 231/2012 van de Commissie",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — Monografie over specificaties van xylitol",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "Verordening (EU) 2021/1175 — etikettering van polyolen",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "Xylitol",
-  "description": "Een laagcalorische polyol-suikeralcohol verkregen door katalytische hydrogenering van xylose."
+  "description": "Xylitol (INS 967 / E967) is een bulkpolyol dat veel in kauwgom voorkomt; het kan tandplak verminderen en is zeer giftig voor honden."
 }

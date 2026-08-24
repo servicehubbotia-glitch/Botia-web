@@ -1,32 +1,37 @@
 {
   "name": "Xilitol",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Un poliol cu cinci atomi de carbon, sau alcool zaharat, format în principal din D-xylitol și utilizat ca îndulcitor de volum și umectant în alimentele cu conținut redus de zahăr.",
-  "why_botia": "BOTIA semnalează E967 deoarece este un poliol de masă, nu doar un îndulcitor intens. Reglementările UE impun un avertisment privind efectul laxativ peste 10% polioli adăugați. Recomandarea WHO din 2023 privind îndulcitorii non-zuccherini exclude în mod explicit poliolii.",
-  "can_1": "Identificați E967 sau Xilitol pe etichetele scanate.",
-  "can_2": "Furnizați informații de siguranță privind consumul de polioli și efectele laxative.",
-  "cannot_1": "Verificați dacă xilitolul brut conține alcooli polihidroxilici neenumerați peste 1%.",
-  "cannot_2": "Identificați sursa exactă de materie primă vegetală.",
+  "what_is": "Xilitolul (INS 967 / E967) este un poliol cu cinci atomi de carbon utilizat ca îndulcitor de volum și umectant. Spre deosebire de un îndulcitor intens, înlocuiește și volumul fizic al zahărului, motiv pentru care este frecvent în guma de mestecat, dulciuri și alte produse fără zahăr.",
+  "why_botia": "Xilitolul înlocuiește atât dulceața, cât și volumul zahărului. S-a demonstrat că guma de mestecat îndulcită cu 100% xilitol reduce placa dentară, un factor de risc pentru cariile dentare la copii — unul dintre motivele pentru care xilitolul este atât de strâns asociat cu guma de mestecat. O parte nu este absorbită, atrage apă în intestin și este fermentată, astfel încât cantități mai mari pot înmuia scaunul; xilitolul este, de asemenea, foarte toxic pentru câini, iar chiar și cantități mici pot provoca hipoglicemie severă.",
+  "can_1": "Detecta E967, INS 967, xilitol, D-xylitol și xilitol atunci când sunt declarate explicit.",
+  "can_2": "Explica funcția de îndulcitor de volum, asocierea gumei cu xilitol cu reducerea plăcii dentare, efectele intestinale și toxicitatea gravă pentru câini.",
+  "cannot_1": "Determina cantitatea de xilitol prezentă doar din lista ingredientelor.",
+  "cannot_2": "Prezice răspunsul digestiv individual sau determina gravitatea expunerii unui câine fără a cunoaște cantitatea ingerată și greutatea animalului.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — Monografia specificațiilor pentru xilitol",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "Regulamentul (UE) 2021/1175 — etichetarea poliolilor",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "Xilitol",
-  "description": "Un alcool poliol cu conținut scăzut de calorii, obținut prin hidrogenarea catalitică a xilozei."
+  "description": "Xilitolul (INS 967 / E967) este un poliol de volum frecvent în guma de mestecat; poate reduce placa dentară și este foarte toxic pentru câini."
 }

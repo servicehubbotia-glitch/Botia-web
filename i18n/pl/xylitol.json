@@ -1,32 +1,37 @@
 {
   "name": "Ksylitol",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Pięciowęglowy poliol, czyli alkohol cukrowy, składający się głównie z D-xylitolu, stosowany jako substytut cukru o działaniu objętościowym oraz środek utrzymujący wilgoć w produktach spożywczych o obniżonej zawartości cukru.",
-  "why_botia": "BOTIA sygnalizuje E967, ponieważ jest to poliol objętościowy, a nie tylko intensywny słodzik. Przepisy UE wymagają ostrzeżenia o działaniu przeczyszczającym powyżej 10% dodanych polioli. Zalecenie WHO z 2023 r. dotyczące słodzików niesacharydowych wprost wyklucza poliole.",
-  "can_1": "Identyfikuj E967 lub ksylitol na zeskanowanych etykietach.",
-  "can_2": "Dostarczaj informacji o bezpieczeństwie dotyczących spożycia polioli i efektów przeczyszczających.",
-  "cannot_1": "Zweryfikuj, czy surowy ksylitol zawiera niewymienione alkohole wielowodorotlenowe powyżej 1%.",
-  "cannot_2": "Zidentyfikuj dokładne źródło surowca roślinnego.",
+  "what_is": "Ksylitol (INS 967 / E967) jest pięciowęglowym poliolem stosowanym jako substancja słodząca nadająca objętość i substancja utrzymująca wilgoć. W przeciwieństwie do intensywnych substancji słodzących zastępuje również fizyczną objętość cukru, dlatego często występuje w gumach do żucia, słodyczach i innych produktach bez cukru.",
+  "why_botia": "Ksylitol zastępuje zarówno słodycz, jak i objętość cukru. Wykazano, że guma do żucia słodzona w 100% ksylitolem zmniejsza płytkę nazębną, będącą czynnikiem ryzyka próchnicy u dzieci — to jeden z powodów silnego związku ksylitolu z gumą do żucia. Część nie jest wchłaniana, przyciąga wodę do jelita i ulega fermentacji, dlatego większe ilości mogą rozluźniać stolec; ksylitol jest również silnie toksyczny dla psów i nawet niewielkie ilości mogą powodować ciężką hipoglikemię.",
+  "can_1": "Wykrywać E967, INS 967, ksylitol, D-xylitol i xilitol, gdy są wyraźnie zadeklarowane.",
+  "can_2": "Wyjaśniać jego funkcję jako substancji słodzącej nadającej objętość, związek gumy z ksylitolem z mniejszą płytką nazębną, działanie jelitowe i poważną toksyczność dla psów.",
+  "cannot_1": "Określić ilości ksylitolu na podstawie samej listy składników.",
+  "cannot_2": "Przewidzieć indywidualnej reakcji trawiennej ani określić ciężkości narażenia psa bez znajomości spożytej ilości i masy zwierzęcia.",
   "sources": [
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — specyfikacje monograficzne ksylitolu",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "Rozporządzenie (UE) 2021/1175 — etykietowanie polioli",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "Ksylitol",
-  "description": "Niskokaloryczny alkohol poliolowy otrzymywany w wyniku katalitycznego uwodornienia ksylozy."
+  "description": "Ksylitol (INS 967 / E967) jest poliolem nadającym objętość, często używanym w gumach do żucia; może zmniejszać płytkę nazębną i jest silnie toksyczny dla psów."
 }

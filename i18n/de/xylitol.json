@@ -1,32 +1,37 @@
 {
   "name": "Xylit",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Ein fünf-kohlenstoffhaltiges Polyol, oder Zuckeralkohol, das hauptsächlich aus D-Xylitol besteht und als Füllstoff-Süßungsmittel sowie Feuchthaltemittel in zuckerreduzierten Lebensmitteln verwendet wird.",
-  "why_botia": "BOTIA kennzeichnet E967, da es sich um einen Füllstoff-Polyol handelt, nicht nur um einen intensiven Süßstoff. Die EU-Vorschriften verlangen einen Warnhinweis auf abführende Wirkung bei mehr als 10 % zugesetzten Polyolen. Die Empfehlung der WHO von 2023 zu nicht-zuckerhaltigen Süßstoffen schließt Polyole ausdrücklich aus.",
-  "can_1": "Identifizieren Sie E967 oder Xylit auf gescannten Etiketten.",
-  "can_2": "Bereitstellung von Sicherheitsinformationen zum Verzehr von Polyolen und abführenden Wirkungen.",
-  "cannot_1": "Überprüfen, ob rohes Xylit nicht aufgeführte mehrwertige Alkohole über 1 % enthält.",
-  "cannot_2": "Identifizieren Sie die genaue pflanzliche Rohstoffquelle.",
+  "what_is": "Xylit (INS 967 / E967) ist ein fünfwertiges Polyol, das als Füllsüßstoff und Feuchthaltemittel verwendet wird. Anders als ein hochintensiver Süßstoff ersetzt es neben der Süße auch physisches Volumen und kommt deshalb häufig in Kaugummi, Süßwaren und anderen zuckerfreien Produkten vor.",
+  "why_botia": "Xylit ersetzt sowohl die Süße als auch das Volumen von Zucker. Mit 100% Xylit gesüßter Kaugummi senkt nachweislich Zahnbelag, einen Risikofaktor für Karies bei Kindern — ein Grund dafür, dass Xylit so eng mit Kaugummi verbunden ist. Ein Teil wird nicht aufgenommen, zieht Wasser in den Darm und wird fermentiert, sodass größere Mengen den Stuhl lockern können; für Hunde ist Xylit außerdem stark giftig, und bereits kleine Mengen können eine schwere Hypoglykämie verursachen.",
+  "can_1": "E967, INS 967, Xylit, D-Xylit und xilitol erkennen, wenn sie ausdrücklich deklariert sind.",
+  "can_2": "Seine Funktion als Füllsüßstoff, den Zusammenhang von Xylit-Kaugummi mit geringerem Zahnbelag, die Darmwirkungen und die schwere Giftigkeit für Hunde erklären.",
+  "cannot_1": "Allein aus der Zutatenliste bestimmen, wie viel Xylit enthalten ist.",
+  "cannot_2": "Eine individuelle Verdauungsreaktion vorhersagen oder die Schwere einer Exposition bei einem Hund bestimmen, ohne die aufgenommene Menge und das Gewicht des Hundes zu kennen.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — Xylitol-Spezifikationen-Monographie",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "Verordnung (EU) 2021/1175 — Kennzeichnung von Polyolen",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "Xylit",
-  "description": "Ein kalorienarmer Polyol-Zuckeralkohol, der durch katalytische Hydrierung von Xylose gewonnen wird."
+  "description": "Xylit (INS 967 / E967) ist ein Füllpolyol, das häufig in Kaugummi vorkommt; es kann Zahnbelag reduzieren und ist für Hunde stark giftig."
 }

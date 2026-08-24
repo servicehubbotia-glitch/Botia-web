@@ -1,32 +1,37 @@
 {
   "name": "Xilitolo",
   "e_code": "E967",
-  "aliases": "E967, xylitol, D-xylitol, xilitol",
+  "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Un poliolo a cinque atomi di carbonio, o alcol zuccherino, costituito principalmente da D-xylitol e utilizzato come dolcificante di massa e umettante negli alimenti a ridotto contenuto di zuccheri.",
-  "why_botia": "BOTIA segnala l'E967 perché è un poliolo di massa, non solo un dolcificante intenso. Le norme UE richiedono un'indicazione di effetto lassativo oltre il 10% di polioli aggiunti. La raccomandazione di WHO del 2023 sui dolcificanti non zuccherini esclude esplicitamente i polioli.",
-  "can_1": "Identifica E967 o Xilitolo sulle etichette scansionate.",
-  "can_2": "Fornire informazioni sulla sicurezza riguardanti il consumo di polioli e i loro effetti lassativi.",
-  "cannot_1": "Verificare se lo xilitolo grezzo contiene alcoli polivalenti non elencati superiori all'1%.",
-  "cannot_2": "Identificare la fonte esatta della materia prima vegetale.",
+  "what_is": "Lo xilitolo (INS 967 / E967) è un poliolo a cinque atomi di carbonio utilizzato come edulcorante di massa e umettante. A differenza di un edulcorante intenso, sostituisce anche il volume fisico dello zucchero, motivo per cui è comune in gomme da masticare, caramelle e altri prodotti senza zucchero.",
+  "why_botia": "Lo xilitolo sostituisce sia la dolcezza sia il volume dello zucchero. È stato dimostrato che una gomma da masticare dolcificata con il 100% di xilitolo riduce la placca dentale, un fattore di rischio per la carie nei bambini — uno dei motivi per cui lo xilitolo è così strettamente associato alle gomme da masticare. Una parte non viene assorbita, richiama acqua nell'intestino e viene fermentata, quindi quantità maggiori possono rendere le feci più molli; lo xilitolo è inoltre altamente tossico per i cani e anche piccole quantità possono causare grave ipoglicemia.",
+  "can_1": "Rilevare E967, INS 967, xilitolo, D-xylitol e xilitol quando dichiarati esplicitamente.",
+  "can_2": "Spiegare la funzione di edulcorante di massa, l'associazione tra gomme allo xilitolo e riduzione della placca dentale, gli effetti intestinali e la grave tossicità per i cani.",
+  "cannot_1": "Determinare la quantità di xilitolo presente dalla sola lista degli ingredienti.",
+  "cannot_2": "Prevedere la risposta digestiva individuale o determinare la gravità dell'esposizione di un cane senza conoscere la quantità ingerita e il peso dell'animale.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Xylitol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2620"
     },
     {
-      "label": "JECFA — Monografia delle specifiche dello Xilitolo",
+      "label": "FAO/JECFA — Xylitol specification",
       "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-491.pdf"
     },
     {
-      "label": "Regolamento (UE) 2021/1175 — etichettatura dei polioli",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "European Union — 100% xylitol chewing gum and dental plaque",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32009R1024"
+    },
+    {
+      "label": "FDA — Xylitol is toxic to dogs",
+      "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/paws-xylitol-toxic-dogs"
     }
   ],
   "title": "Xilitolo",
-  "description": "Un alcol poliolo a basso contenuto calorico ottenuto per idrogenazione catalitica dello xilosio."
+  "description": "Lo xilitolo (INS 967 / E967) è un poliolo di massa comune nelle gomme da masticare; può ridurre la placca dentale ed è altamente tossico per i cani."
 }
