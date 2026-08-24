@@ -1,29 +1,32 @@
 {
   "name": "Sukraloz",
   "e_code": "E955",
-  "aliases": "E955, sukraloz, 4,1',6'-triklorogalaktosukroz, sucralosa",
-  "module_icon": "mujer.png",
+  "aliases": "E955, INS 955, sukraloz, 4, 1', 6'-triklorogalaktosukroz, sucralosa",
+  "module_icon": "sweeteners.png",
   "layers": [
-    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Sakkarozun klorlanmasıyla elde edilen, şekerden yaklaşık 600 kat daha tatlı, yoğun sentetik bir tatlandırıcı.",
-  "why_botia": "EFSA, uzun vadeli metabolik etkilerle ilgili belirsizlikler nedeniyle kullanımının genişletilmesine karşı uyarılar yayınladığı için işaretler.",
-  "can_1": "E955 veya Sukralozu tespit edip tatlandırıcı katmanına eşler.",
-  "can_2": "Uzun vadeli metabolik belirsizliklerle ilgili uyarı bilgisi sağlar.",
-  "cannot_1": "Sukralozun pişirme sırasında termal bozulmaya neden olabilecek sıcaklıklara maruz kalıp kalmadığını belirleyemez.",
-  "cannot_2": "Yalnızca etiketten klorlu organik bileşik kalıntılarının kesin miktarını hesaplayamaz.",
+  "what_is": "Sukraloz (INS 955 / E955), sakkarozdaki üç hidroksil grubunun klor atomlarıyla değiştirilmesiyle elde edilen yüksek yoğunluklu bir tatlandırıcıdır. Şekerden yaklaşık 600 kat daha tatlıdır, bu nedenle çok küçük bir miktar yeterlidir.",
+  "why_botia": "Sukraloz şekerden yaklaşık 600 kat daha tatlıdır, bu nedenle çok küçük bir miktar yoğun tatlılık sağlar — ancak içerik listesi ne kadar kullanıldığını göstermez. JECFA 0–15 mg/kg vücut ağırlığı ADI belirledi ve EFSA 2026'da hâlihazırda izin verilen kullanımların güvenli kabul edildiğini doğruladı. Kalan soru ısıyla ilgilidir: uzun süreli yüksek sıcaklıkta pişirme sırasında klorlu bileşikler oluşabilir ve EFSA önerilen bu genişletilmiş kullanımın güvenliğini doğrulamadı.",
+  "can_1": "E955, INS 955, sukraloz ve beyan edilen kimyasal eşanlamlıyı içerik etiketinde tespit etmek.",
+  "can_2": "Yüksek yoğunluklu tatlandırma işlevini, JECFA kabul edilebilir günlük alımını ve EFSA'nın belirlediği ayrı yüksek sıcaklık işleme meselesini açıklamak.",
+  "cannot_1": "Yalnızca içerik beyanından üründeki sukraloz miktarını belirlemek.",
+  "cannot_2": "Etiketten sukralozun uzun süre yüksek sıcaklığa maruz kalıp kalmadığını veya klorlu bozunma ürünlerinin oluşup oluşmadığını belirlemek.",
   "sources": [
     {
-      "label": "EFSA'nın sukraloz (E955) yeniden değerlendirmesi",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Sucralose (INS 955)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2340"
     },
     {
-      "label": "EFSA — Sukralozun yeniden değerlendirilmesi, 2026",
+      "label": "Codex GSFA — Sucralose (INS 955)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=137"
+    },
+    {
+      "label": "EFSA — Sucralose re-evaluation, 2026",
       "url": "https://www.efsa.europa.eu/en/news/efsa-finds-sucralose-safe-when-used-currently-authorised-cannot-confirm-safety-extending-its"
     }
   ],
   "title": "Sukraloz",
-  "description": "Sakkarozun klorlanmasıyla elde edilen, şekerden yaklaşık 600 kat daha tatlı, yoğun sentetik bir tatlandırıcı."
+  "description": "Sukraloz (INS 955 / E955), şekerden yaklaşık 600 kat daha tatlı yüksek yoğunluklu bir tatlandırıcıdır; mevcut izinli kullanımlar için belirlenmiş bir alım sınırı vardır ve uzun süreli yüksek sıcaklıkta pişirme ayrı bir soru doğurur."
 }

@@ -1,29 +1,32 @@
 {
   "name": "Sukralosa",
   "e_code": "E955",
-  "aliases": "E955, sukralosa, 4,1',6'-triklorogalaktosukrosa, sucralosa",
-  "module_icon": "mujer.png",
+  "aliases": "E955, INS 955, sukralosa, 4, 1', 6'-triklorogalaktosukrosa, sucralosa",
+  "module_icon": "sweeteners.png",
   "layers": [
-    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Pemanis sintetis intens yang dibuat dengan mengklorinasi sukrosa, sekitar 600 kali lebih manis dari gula.",
-  "why_botia": "Ini menandainya karena EFSA telah mengeluarkan peringatan terhadap perluasan penggunaannya karena ketidakpastian mengenai efek metabolisme jangka panjang.",
-  "can_1": "Mendeteksi E955 atau Sukralosa dan memetakannya ke lapisan pemanis.",
-  "can_2": "Memberikan informasi peringatan mengenai ketidakpastian metabolisme jangka panjang.",
-  "cannot_1": "Menentukan apakah sukralosa telah mengalami suhu yang dapat menyebabkan degradasi termal selama memasak.",
-  "cannot_2": "Menghitung jumlah pasti residu senyawa organik terklorinasi hanya dari label.",
+  "what_is": "Sukralosa (INS 955 / E955) adalah pemanis intensitas tinggi yang dibuat dari sukrosa dengan mengganti tiga gugus hidroksil dengan atom klorin. Tingkat kemanisannya sekitar 600 kali gula, sehingga hanya diperlukan jumlah yang sangat kecil.",
+  "why_botia": "Sukralosa sekitar 600 kali lebih manis daripada gula, sehingga jumlah yang sangat kecil dapat memberikan rasa manis yang kuat — dan daftar bahan tidak menunjukkan berapa banyak yang digunakan. JECFA menetapkan ADI 0–15 mg/kg berat badan, dan EFSA pada 2026 menegaskan bahwa penggunaan yang saat ini diizinkan dianggap aman. Pertanyaan yang tersisa berkaitan dengan panas: dalam pemanggangan berkepanjangan pada suhu tinggi dapat terbentuk senyawa berklorin, dan EFSA tidak mengonfirmasi keamanan perluasan penggunaan yang diusulkan tersebut.",
+  "can_1": "Mendeteksi E955, INS 955, sukralosa dan sinonim kimia yang dinyatakan pada label bahan.",
+  "can_2": "Menjelaskan fungsi pemanis intensitas tinggi, asupan harian yang dapat diterima menurut JECFA dan persoalan terpisah tentang pemrosesan suhu tinggi yang diidentifikasi EFSA.",
+  "cannot_1": "Menentukan jumlah sukralosa dalam produk hanya dari pernyataan bahan.",
+  "cannot_2": "Menentukan dari label apakah sukralosa mengalami suhu tinggi dalam waktu lama atau apakah produk degradasi berklorin terbentuk.",
   "sources": [
     {
-      "label": "Evaluasi ulang EFSA terhadap sukralosa (E955)",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Sucralose (INS 955)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2340"
     },
     {
-      "label": "EFSA — Evaluasi ulang sukralosa, 2026",
+      "label": "Codex GSFA — Sucralose (INS 955)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=137"
+    },
+    {
+      "label": "EFSA — Sucralose re-evaluation, 2026",
       "url": "https://www.efsa.europa.eu/en/news/efsa-finds-sucralose-safe-when-used-currently-authorised-cannot-confirm-safety-extending-its"
     }
   ],
   "title": "Sukralosa",
-  "description": "Pemanis sintetis intens yang dibuat dengan mengklorinasi sukrosa, sekitar 600 kali lebih manis dari gula."
+  "description": "Sukralosa (INS 955 / E955) adalah pemanis intensitas tinggi sekitar 600 kali lebih manis daripada gula; penggunaan yang saat ini diizinkan memiliki batas asupan yang ditetapkan, sedangkan pemanggangan lama pada suhu tinggi merupakan persoalan terpisah."
 }

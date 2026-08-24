@@ -1,29 +1,32 @@
 {
   "name": "Sucralose",
   "e_code": "E955",
-  "aliases": "E955, sucralose, 4,1',6'-trichloor galactosucrose, sucralosa",
-  "module_icon": "mujer.png",
+  "aliases": "E955, INS 955, sucralose, 4, 1', 6'-trichloor galactosucrose, sucralosa",
+  "module_icon": "sweeteners.png",
   "layers": [
-    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Een intense synthetische zoetstof gemaakt door chlorering van sucrose, ongeveer 600 keer zoeter dan suiker.",
-  "why_botia": "Het wordt gemarkeerd omdat EFSA waarschuwingen heeft afgegeven tegen uitbreiding van het gebruik ervan vanwege onzekerheden over langetermijneffecten op de stofwisseling.",
-  "can_1": "Detecteer E955 of Sucralose en wijs het toe aan de zoetstoflaag.",
-  "can_2": "Geef waarschuwingsinformatie over langetermijnonzekerheden in de stofwisseling.",
-  "cannot_1": "Bepalen of de sucralose is blootgesteld aan temperaturen die thermische afbraak tijdens het koken kunnen veroorzaken.",
-  "cannot_2": "De exacte hoeveelheid gechloreerde organische verbindingsresiduen berekenen op basis van alleen het etiket.",
+  "what_is": "Sucralose (INS 955 / E955) is een intensieve zoetstof die uit sucrose wordt gemaakt door drie hydroxylgroepen door chlooratomen te vervangen. Het is ongeveer 600 keer zo zoet als suiker, waardoor slechts een zeer kleine hoeveelheid nodig is.",
+  "why_botia": "Sucralose is ongeveer 600 keer zo zoet als suiker, waardoor een zeer kleine hoeveelheid veel zoetheid geeft — en de ingrediëntenlijst niet laat zien hoeveel is gebruikt. JECFA stelde een ADI vast van 0–15 mg/kg lichaamsgewicht en EFSA bevestigde in 2026 dat de momenteel toegestane toepassingen als veilig worden beschouwd. De resterende vraag betreft hitte: bij langdurig bakken op hoge temperatuur kunnen gechloreerde verbindingen ontstaan en EFSA kon de veiligheid van die voorgestelde uitbreiding van het gebruik niet bevestigen.",
+  "can_1": "E955, INS 955, sucralose en het vermelde chemische synoniem op een ingrediëntenetiket detecteren.",
+  "can_2": "De intensieve zoetfunctie, de aanvaardbare dagelijkse inname van JECFA en de afzonderlijke kwestie van verwerking bij hoge temperatuur die EFSA heeft vastgesteld uitleggen.",
+  "cannot_1": "Uit alleen de ingrediëntenlijst bepalen hoeveel sucralose aanwezig is.",
+  "cannot_2": "Uit het etiket bepalen of de sucralose langdurig aan hoge temperaturen werd blootgesteld of dat gechloreerde afbraakproducten zijn gevormd.",
   "sources": [
     {
-      "label": "EFSA-herbeoordeling van sucralose (E955)",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Sucralose (INS 955)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2340"
     },
     {
-      "label": "EFSA — Herevaluatie van sucralose, 2026",
+      "label": "Codex GSFA — Sucralose (INS 955)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=137"
+    },
+    {
+      "label": "EFSA — Sucralose re-evaluation, 2026",
       "url": "https://www.efsa.europa.eu/en/news/efsa-finds-sucralose-safe-when-used-currently-authorised-cannot-confirm-safety-extending-its"
     }
   ],
   "title": "Sucralose",
-  "description": "Een intense synthetische zoetstof gemaakt door chlorering van sucrose, ongeveer 600 keer zoeter dan suiker."
+  "description": "Sucralose (INS 955 / E955) is een intensieve zoetstof die ongeveer 600 keer zo zoet is als suiker; voor de huidige toegestane toepassingen geldt een vastgestelde innamelimiet, terwijl langdurig bakken op hoge temperatuur een afzonderlijke vraag oproept."
 }

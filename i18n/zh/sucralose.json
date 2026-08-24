@@ -1,29 +1,32 @@
 {
   "name": "三氯蔗糖",
   "e_code": "E955",
-  "aliases": "E955, 三氯蔗糖, 4,1',6'-三氯半乳蔗糖, sucralosa",
-  "module_icon": "mujer.png",
+  "aliases": "E955, INS 955, 三氯蔗糖, 4, 1', 6'-三氯半乳蔗糖, sucralosa",
+  "module_icon": "sweeteners.png",
   "layers": [
-    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "一种通过氯化蔗糖制成的高强度合成甜味剂，甜度约为蔗糖的600倍。",
-  "why_botia": "它被标记是因为欧洲食品安全局（EFSA）已发出警告，反对扩大其使用范围，原因是长期代谢影响存在不确定性。",
-  "can_1": "检测E955或三氯蔗糖，并将其映射到甜味剂图层。",
-  "can_2": "提供关于长期代谢不确定性的警告信息。",
-  "cannot_1": "无法确定三氯蔗糖在烹饪过程中是否经历了可能导致热降解的温度。",
-  "cannot_2": "无法仅从标签上计算出氯化有机化合物残留的精确量。",
+  "what_is": "三氯蔗糖（INS 955 / E955）是一种高强度甜味剂，通过将蔗糖中的三个羟基替换为氯原子制成。其甜度约为糖的600倍，因此只需很少的量即可产生强烈甜味。",
+  "why_botia": "三氯蔗糖的甜度约为糖的600倍，因此极少的量就能产生强烈甜味——而配料表无法显示实际用了多少。JECFA 将 ADI 设为每公斤体重 0–15 毫克，EFSA 在2026年确认目前获准的用途被认为是安全的。剩余的问题与加热有关：在长时间高温烘焙条件下可能形成含氯化合物，EFSA 没有确认这一拟议扩大用途的安全性。",
+  "can_1": "识别配料标签上明确标示的 E955、INS 955、三氯蔗糖及其化学同义名称。",
+  "can_2": "解释其高强度甜味作用、JECFA 的每日允许摄入量以及 EFSA 指出的独立高温加工问题。",
+  "cannot_1": "仅根据配料声明确定产品中三氯蔗糖的实际含量。",
+  "cannot_2": "根据标签判断三氯蔗糖是否经历了长时间高温处理或是否形成了含氯降解产物。",
   "sources": [
     {
-      "label": "EFSA对三氯蔗糖（E955）的重新评估",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Sucralose (INS 955)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2340"
     },
     {
-      "label": "EFSA — 三氯蔗糖重新评估，2026",
+      "label": "Codex GSFA — Sucralose (INS 955)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=137"
+    },
+    {
+      "label": "EFSA — Sucralose re-evaluation, 2026",
       "url": "https://www.efsa.europa.eu/en/news/efsa-finds-sucralose-safe-when-used-currently-authorised-cannot-confirm-safety-extending-its"
     }
   ],
   "title": "三氯蔗糖",
-  "description": "一种通过氯化蔗糖制成的高强度合成甜味剂，甜度约为蔗糖的600倍。"
+  "description": "三氯蔗糖（INS 955 / E955）是一种甜度约为糖600倍的高强度甜味剂；目前获准的用途有既定摄入限值，而长时间高温烘焙属于另一个问题。"
 }

@@ -1,29 +1,32 @@
 {
   "name": "Sucraloză",
   "e_code": "E955",
-  "aliases": "E955, sucraloză, 4,1',6'-triclorogalactozaharoză, sucralosa",
-  "module_icon": "mujer.png",
+  "aliases": "E955, INS 955, sucraloză, 4, 1', 6'-triclorogalactozaharoză, sucralosa",
+  "module_icon": "sweeteners.png",
   "layers": [
-    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un îndulcitor sintetic intens obținut prin clorurarea zaharozei, de aproximativ 600 de ori mai dulce decât zahărul.",
-  "why_botia": "Îl semnalează deoarece EFSA a emis avertismente privind extinderea utilizării sale din cauza incertitudinilor legate de efectele metabolice pe termen lung.",
-  "can_1": "Detectează E955 sau Sucraloza și o mapează pe stratul de îndulcitori.",
-  "can_2": "Furnizează informații de avertizare privind incertitudinile metabolice pe termen lung.",
-  "cannot_1": "Determină dacă sucraloza a fost supusă unor temperaturi care ar putea provoca degradarea termică în timpul gătitului.",
-  "cannot_2": "Calculează cantitatea exactă de reziduuri de compuși organici clorurați doar de pe etichetă.",
+  "what_is": "Sucraloza (INS 955 / E955) este un îndulcitor de mare intensitate obținut din zaharoză prin înlocuirea a trei grupări hidroxil cu atomi de clor. Este de aproximativ 600 de ori mai dulce decât zahărul, astfel încât este necesară o cantitate foarte mică.",
+  "why_botia": "Sucraloza este de aproximativ 600 de ori mai dulce decât zahărul, astfel încât o cantitate foarte mică oferă o dulceață intensă — iar lista ingredientelor nu arată cât s-a folosit. JECFA a stabilit o ADI de 0–15 mg/kg greutate corporală, iar EFSA a confirmat în 2026 că utilizările autorizate în prezent sunt considerate sigure. Întrebarea rămasă privește căldura: în timpul coacerii prelungite la temperaturi ridicate se pot forma compuși clorurați, iar EFSA nu a confirmat siguranța acestei extinderi propuse a utilizării.",
+  "can_1": "Detecta E955, INS 955, sucraloza și sinonimul chimic declarat pe eticheta ingredientelor.",
+  "can_2": "Explica funcția sa de îndulcitor intens, doza zilnică admisibilă JECFA și problema separată a procesării la temperatură ridicată identificată de EFSA.",
+  "cannot_1": "Determina cantitatea de sucraloză prezentă doar din declarația ingredientelor.",
+  "cannot_2": "Determina din etichetă dacă sucraloza a fost expusă prelungit la temperaturi ridicate sau dacă s-au format produși clorurați de degradare.",
   "sources": [
     {
-      "label": "Reevaluarea EFSA a sucralozei (E955)",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Sucralose (INS 955)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2340"
     },
     {
-      "label": "EFSA — Reevaluarea sucralozei, 2026",
+      "label": "Codex GSFA — Sucralose (INS 955)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=137"
+    },
+    {
+      "label": "EFSA — Sucralose re-evaluation, 2026",
       "url": "https://www.efsa.europa.eu/en/news/efsa-finds-sucralose-safe-when-used-currently-authorised-cannot-confirm-safety-extending-its"
     }
   ],
   "title": "Sucraloză",
-  "description": "Un îndulcitor sintetic intens obținut prin clorurarea zaharozei, de aproximativ 600 de ori mai dulce decât zahărul."
+  "description": "Sucraloza (INS 955 / E955) este un îndulcitor intens de aproximativ 600 de ori mai dulce decât zahărul; utilizările autorizate în prezent au o limită de aport stabilită, iar coacerea prelungită la temperaturi ridicate ridică o problemă separată."
 }

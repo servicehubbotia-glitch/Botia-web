@@ -1,29 +1,32 @@
 {
   "name": "Sucralosio",
   "e_code": "E955",
-  "aliases": "E955, sucralosio, 4,1',6'-triclorogalattosaccarosio, sucralosa",
-  "module_icon": "mujer.png",
+  "aliases": "E955, INS 955, sucralosio, 4, 1', 6'-triclorogalattosaccarosio, sucralosa",
+  "module_icon": "sweeteners.png",
   "layers": [
-    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un dolcificante sintetico intenso ottenuto clorurando il saccarosio, circa 600 volte più dolce dello zucchero.",
-  "why_botia": "Lo segnala perché l'EFSA ha emesso avvisi contro l'estensione del suo utilizzo a causa di incertezze riguardo agli effetti metabolici a lungo termine.",
-  "can_1": "Rileva E955 o Sucralosio e mappalo al layer dei dolcificanti.",
-  "can_2": "Fornire informazioni di avvertenza riguardo alle incertezze metaboliche a lungo termine.",
-  "cannot_1": "Determina se il sucralosio è stato sottoposto a temperature che potrebbero causare degradazione termica durante la cottura.",
-  "cannot_2": "Calcolare la quantità precisa dei residui di composti organici clorurati solo dall'etichetta.",
+  "what_is": "Il sucralosio (INS 955 / E955) è un edulcorante ad alta intensità ottenuto dal saccarosio sostituendo tre gruppi ossidrile con atomi di cloro. È circa 600 volte più dolce dello zucchero, quindi ne basta una quantità molto piccola.",
+  "why_botia": "Il sucralosio è circa 600 volte più dolce dello zucchero, quindi una quantità molto piccola produce un’intensa dolcezza — e l’elenco degli ingredienti non permette di sapere quanto ne sia stato usato. Il JECFA ha stabilito una DGA di 0–15 mg/kg di peso corporeo e l’EFSA ha confermato nel 2026 che gli usi attualmente autorizzati sono considerati sicuri. La questione ancora aperta riguarda il calore: durante una cottura prolungata ad alta temperatura possono formarsi composti clorurati e l’EFSA non ha confermato la sicurezza dell’estensione d’uso proposta.",
+  "can_1": "Rilevare E955, INS 955, sucralosio e il sinonimo chimico dichiarato in etichetta.",
+  "can_2": "Spiegare la funzione dolcificante ad alta intensità, la dose giornaliera ammissibile JECFA e la questione separata della lavorazione ad alta temperatura individuata dall’EFSA.",
+  "cannot_1": "Determinare la quantità di sucralosio presente dalla sola dichiarazione degli ingredienti.",
+  "cannot_2": "Determinare dall’etichetta se il sucralosio è stato sottoposto a temperature elevate per periodi prolungati o se si sono formati prodotti clorurati di degradazione.",
   "sources": [
     {
-      "label": "Rivalutazione EFSA del sucralosio (E955)",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Sucralose (INS 955)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2340"
     },
     {
-      "label": "EFSA — Rivalutazione del sucralosio, 2026",
+      "label": "Codex GSFA — Sucralose (INS 955)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=137"
+    },
+    {
+      "label": "EFSA — Sucralose re-evaluation, 2026",
       "url": "https://www.efsa.europa.eu/en/news/efsa-finds-sucralose-safe-when-used-currently-authorised-cannot-confirm-safety-extending-its"
     }
   ],
   "title": "Sucralosio",
-  "description": "Un dolcificante sintetico intenso ottenuto clorurando il saccarosio, circa 600 volte più dolce dello zucchero."
+  "description": "Il sucralosio (INS 955 / E955) è un edulcorante intenso circa 600 volte più dolce dello zucchero; gli usi attualmente autorizzati hanno un limite di assunzione stabilito, mentre la cottura prolungata ad alta temperatura pone una questione distinta."
 }

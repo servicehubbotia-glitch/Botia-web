@@ -1,29 +1,32 @@
 {
   "name": "Sucralosa",
   "e_code": "E955",
-  "aliases": "E955, sucralosa, 4,1',6'-triclorogalactosacarosa, sucralosa",
-  "module_icon": "mujer.png",
+  "aliases": "E955, INS 955, sucralosa, 4, 1', 6'-triclorogalactosacarosa, sucralosa",
+  "module_icon": "sweeteners.png",
   "layers": [
-    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un edulcorante sintético intenso elaborado mediante la cloración de la sacarosa, aproximadamente 600 veces más dulce que el azúcar.",
-  "why_botia": "Lo señala porque la EFSA ha emitido advertencias contra la extensión de su uso debido a incertidumbres sobre los efectos metabólicos a largo plazo.",
-  "can_1": "Detectar E955 o Sucralosa y mapearlo a la capa de edulcorante.",
-  "can_2": "Proporcionar información de advertencia sobre las incertidumbres metabólicas a largo plazo.",
-  "cannot_1": "Determinar si la sucralosa fue sometida a temperaturas que podrían causar degradación térmica durante la cocción.",
-  "cannot_2": "Calcular la cantidad precisa de residuos de compuestos orgánicos clorados solo a partir de la etiqueta.",
+  "what_is": "La sucralosa (INS 955 / E955) es un edulcorante de alta intensidad obtenido a partir de sacarosa sustituyendo tres grupos hidroxilo por átomos de cloro. Es unas 600 veces más dulce que el azúcar, por lo que basta una cantidad muy pequeña para aportar un dulzor intenso.",
+  "why_botia": "La sucralosa es unas 600 veces más dulce que el azúcar, por lo que una cantidad muy pequeña aporta mucho dulzor — y la lista de ingredientes no permite saber cuánto se utilizó. JECFA estableció una IDA de 0–15 mg/kg de peso corporal, y EFSA confirmó en 2026 que los usos actualmente autorizados se consideran seguros. La cuestión pendiente está relacionada con el calor: durante un horneado prolongado a alta temperatura pueden formarse compuestos clorados, y EFSA no confirmó la seguridad de esa ampliación de uso propuesta.",
+  "can_1": "Detectar E955, INS 955, sucralosa y su sinónimo químico declarado en una etiqueta de ingredientes.",
+  "can_2": "Explicar su función como edulcorante de alta intensidad, la ingesta diaria admisible de JECFA y la cuestión separada del procesamiento a alta temperatura identificada por EFSA.",
+  "cannot_1": "Determinar cuánta sucralosa contiene el producto únicamente a partir de la declaración de ingredientes.",
+  "cannot_2": "Determinar a partir de la etiqueta si la sucralosa estuvo sometida a temperaturas altas durante un tiempo prolongado o si se formaron productos clorados de degradación.",
   "sources": [
     {
-      "label": "Reevaluación de la EFSA de la sucralosa (E955)",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Sucralose (INS 955)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2340"
     },
     {
-      "label": "EFSA — Reevaluación de la sucralosa, 2026",
+      "label": "Codex GSFA — Sucralose (INS 955)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=137"
+    },
+    {
+      "label": "EFSA — Sucralose re-evaluation, 2026",
       "url": "https://www.efsa.europa.eu/en/news/efsa-finds-sucralose-safe-when-used-currently-authorised-cannot-confirm-safety-extending-its"
     }
   ],
   "title": "Sucralosa",
-  "description": "Un edulcorante sintético intenso elaborado mediante la cloración de la sacarosa, aproximadamente 600 veces más dulce que el azúcar."
+  "description": "La sucralosa (INS 955 / E955) es un edulcorante de alta intensidad unas 600 veces más dulce que el azúcar; los usos actualmente autorizados tienen un límite de ingesta establecido y el horneado prolongado a alta temperatura plantea una cuestión diferente."
 }

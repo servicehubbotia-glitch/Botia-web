@@ -1,29 +1,32 @@
 {
   "name": "Sucralose",
   "e_code": "E955",
-  "aliases": "E955, Sucralose, 4,1',6'-Trichlorgalactosucrose, Sucralosa",
-  "module_icon": "mujer.png",
+  "aliases": "E955, INS 955, Sucralose, 4, 1', 6'-Trichlorgalactosucrose, Sucralosa",
+  "module_icon": "sweeteners.png",
   "layers": [
-    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Ein intensiver synthetischer Süßstoff, der durch Chlorierung von Saccharose hergestellt wird und etwa 600-mal süßer als Zucker ist.",
-  "why_botia": "Es wird markiert, weil die EFSA Warnungen gegen eine Ausweitung der Verwendung aufgrund von Unsicherheiten hinsichtlich langfristiger Stoffwechseleffekte ausgesprochen hat.",
-  "can_1": "Erkennen von E955 oder Sucralose und Zuordnung zur Süßstoff-Ebene.",
-  "can_2": "Bereitstellung von Warninformationen zu langfristigen Stoffwechselunsicherheiten.",
-  "cannot_1": "Feststellen, ob die Sucralose Temperaturen ausgesetzt war, die während des Kochens zu thermischem Abbau führen könnten.",
-  "cannot_2": "Berechnung der genauen Menge an chlorierten organischen Verbindungsrückständen allein aus dem Etikett.",
+  "what_is": "Sucralose (INS 955 / E955) ist ein hochintensiver Süßstoff, der aus Saccharose hergestellt wird, indem drei Hydroxylgruppen durch Chloratome ersetzt werden. Sie ist etwa 600-mal süßer als Zucker, sodass nur eine sehr geringe Menge benötigt wird.",
+  "why_botia": "Sucralose ist etwa 600-mal süßer als Zucker, sodass bereits eine sehr kleine Menge starke Süße liefert — und die Zutatenliste nicht erkennen lässt, wie viel verwendet wurde. JECFA legte einen ADI von 0–15 mg/kg Körpergewicht fest, und EFSA bestätigte 2026, dass die derzeit zugelassenen Verwendungen als sicher gelten. Die verbleibende Frage betrifft Hitze: Bei längerem Backen bei hohen Temperaturen können chlorierte Verbindungen entstehen, und EFSA bestätigte die Sicherheit dieser vorgeschlagenen erweiterten Verwendung nicht.",
+  "can_1": "E955, INS 955, Sucralose und das angegebene chemische Synonym auf Zutatenlisten erkennen.",
+  "can_2": "Die hochintensive Süßwirkung, die akzeptable tägliche Aufnahmemenge von JECFA und die von EFSA identifizierte separate Frage hoher Verarbeitungstemperaturen erklären.",
+  "cannot_1": "Allein aus der Zutatenliste bestimmen, wie viel Sucralose enthalten ist.",
+  "cannot_2": "Aus dem Etikett bestimmen, ob Sucralose längere Zeit hohen Temperaturen ausgesetzt war oder chlorierte Abbauprodukte entstanden sind.",
   "sources": [
     {
-      "label": "EFSA-Neubewertung von Sucralose (E955)",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Sucralose (INS 955)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2340"
     },
     {
-      "label": "EFSA — Neubewertung von Sucralose, 2026",
+      "label": "Codex GSFA — Sucralose (INS 955)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=137"
+    },
+    {
+      "label": "EFSA — Sucralose re-evaluation, 2026",
       "url": "https://www.efsa.europa.eu/en/news/efsa-finds-sucralose-safe-when-used-currently-authorised-cannot-confirm-safety-extending-its"
     }
   ],
   "title": "Sucralose",
-  "description": "Ein intensiver synthetischer Süßstoff, der durch Chlorierung von Saccharose hergestellt wird und etwa 600-mal süßer als Zucker ist."
+  "description": "Sucralose (INS 955 / E955) ist ein hochintensiver Süßstoff, etwa 600-mal süßer als Zucker; für derzeit zugelassene Anwendungen besteht ein festgelegter Aufnahmewert, während längeres Backen bei hohen Temperaturen eine separate Frage aufwirft."
 }

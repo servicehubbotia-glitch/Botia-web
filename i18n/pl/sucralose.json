@@ -1,29 +1,32 @@
 {
   "name": "Sukraloza",
   "e_code": "E955",
-  "aliases": "E955, sukraloza, 4,1',6'-trichlorogalaktosacharoza, sucralosa",
-  "module_icon": "mujer.png",
+  "aliases": "E955, INS 955, sukraloza, 4, 1', 6'-trichlorogalaktosacharoza, sucralosa",
+  "module_icon": "sweeteners.png",
   "layers": [
-    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Intensywny syntetyczny słodzik otrzymywany przez chlorowanie sacharozy, około 600 razy słodszy od cukru.",
-  "why_botia": "Oznacza go, ponieważ EFSA wydała ostrzeżenia przed rozszerzeniem jego stosowania ze względu na niepewność dotyczącą długoterminowych skutków metabolicznych.",
-  "can_1": "Wykryj E955 lub Sukralozę i przypisz do warstwy słodzików.",
-  "can_2": "Dostarcz informacje ostrzegawcze dotyczące długoterminowych niepewności metabolicznych.",
-  "cannot_1": "Określić, czy sukraloza była poddana temperaturom, które mogłyby spowodować degradację termiczną podczas gotowania.",
-  "cannot_2": "Obliczyć dokładną ilość pozostałości związków organicznych zawierających chlor wyłącznie na podstawie etykiety.",
+  "what_is": "Sukraloza (INS 955 / E955) jest intensywnym środkiem słodzącym otrzymywanym z sacharozy przez zastąpienie trzech grup hydroksylowych atomami chloru. Jest około 600 razy słodsza od cukru, więc potrzebna jest bardzo mała ilość.",
+  "why_botia": "Sukraloza jest około 600 razy słodsza od cukru, dlatego bardzo mała ilość zapewnia intensywną słodycz — a lista składników nie pokazuje, ile jej użyto. JECFA ustaliła ADI na poziomie 0–15 mg/kg masy ciała, a EFSA w 2026 r. potwierdziła, że obecnie dozwolone zastosowania są uznawane za bezpieczne. Pozostaje odrębna kwestia dotycząca ciepła: podczas długotrwałego pieczenia w wysokiej temperaturze mogą powstawać związki chlorowane, a EFSA nie potwierdziła bezpieczeństwa proponowanego rozszerzenia zastosowania.",
+  "can_1": "Wykrywać E955, INS 955, sukralozę i zadeklarowany synonim chemiczny na etykiecie składników.",
+  "can_2": "Wyjaśniać jej intensywne działanie słodzące, dopuszczalne dzienne spożycie JECFA i odrębną kwestię obróbki w wysokiej temperaturze wskazaną przez EFSA.",
+  "cannot_1": "Określić ilości sukralozy w produkcie wyłącznie na podstawie deklaracji składników.",
+  "cannot_2": "Określić na podstawie etykiety, czy sukraloza była długo podgrzewana w wysokiej temperaturze lub czy powstały chlorowane produkty rozkładu.",
   "sources": [
     {
-      "label": "Ponowna ocena sukralozy (E955) przez EFSA",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Sucralose (INS 955)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2340"
     },
     {
-      "label": "EFSA — Ponowna ocena sukralozy, 2026",
+      "label": "Codex GSFA — Sucralose (INS 955)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=137"
+    },
+    {
+      "label": "EFSA — Sucralose re-evaluation, 2026",
       "url": "https://www.efsa.europa.eu/en/news/efsa-finds-sucralose-safe-when-used-currently-authorised-cannot-confirm-safety-extending-its"
     }
   ],
   "title": "Sukraloza",
-  "description": "Intensywny syntetyczny słodzik otrzymywany przez chlorowanie sacharozy, około 600 razy słodszy od cukru."
+  "description": "Sukraloza (INS 955 / E955) jest intensywnym środkiem słodzącym około 600 razy słodszym od cukru; obecnie dozwolone zastosowania mają ustalony limit spożycia, a długotrwałe pieczenie w wysokiej temperaturze stanowi odrębną kwestię."
 }
