@@ -7,22 +7,26 @@
     "woman",
     "enumbers"
   ],
-  "what_is": "Un antiossidante sintetico utilizzato per prevenire l'irrancidimento di grassi e oli negli alimenti.",
-  "why_botia": "Il BHA è l'E320, un antiossidante autorizzato. L'EFSA non ha riscontrato problemi di genotossicità nel 2011 e ha stabilito un limite di assunzione di 1,0 mg/kg di peso corporeo al giorno. La classificazione Gruppo 2B dello IARC descrive un possibile pericolo cancerogeno, non il rischio derivante dall'esposizione alimentare effettiva.",
-  "can_1": "Individua l'E320 o il BHA nell'elenco degli ingredienti.",
-  "can_2": "Mostra il limite di assunzione EFSA del BHA e la sua classificazione di pericolosità IARC Gruppo 2B.",
-  "cannot_1": "Confermare se il BHA è stato combinato con altri antiossidanti per produrre un effetto sinergico \"a cocktail\".",
-  "cannot_2": "Determinare l’estensione della shelf-life ottenuta con la dose specifica di BHA utilizzata.",
+  "what_is": "Il BHA (E320) è un antiossidante sintetico aggiunto agli alimenti contenenti grassi e oli per rallentare l'ossidazione e impedire che irrancidiscano.",
+  "why_botia": "Il BHA impedisce ai grassi di irrancidire. Lo IARC lo classifica come possibilmente cancerogeno per l'uomo, e il JECFA ha stabilito una dose giornaliera accettabile dopo aver esaminato risultati di cancerogenicità e altri dati tossicologici. Questo non dice quanto BHA sia presente in un prodotto specifico, ma significa che l'assunzione a lungo termine non viene considerata illimitata.",
+  "can_1": "Rilevare E320, BHA e i suoi nomi chimici dichiarati nella lista degli ingredienti.",
+  "can_2": "Mostrare la classificazione IARC Gruppo 2B e la dose giornaliera accettabile JECFA di 0–0,5 mg/kg di peso corporeo al giorno.",
+  "cannot_1": "Determinare quanto BHA sia presente in un prodotto specifico quando la quantità non è dichiarata.",
+  "cannot_2": "Trasformare una classificazione di pericolo IARC o un limite di assunzione JECFA nel rischio di cancro di un determinato prodotto o di una determinata persona.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 1333/2008 sugli additivi alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Butylated hydroxyanisole (BHA), INS 320",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2140"
     },
     {
-      "label": "Rapporto WHO sullo stato della scienza dei perturbatori endocrini (2012)",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "IARC — BHA: possibly carcinogenic to humans, Group 2B",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Naturally-Occurring-And-Synthetic-Food-Components-Furocoumarins-And-Ultraviolet-Radiation-1986"
+    },
+    {
+      "label": "EFSA — Re-evaluation of BHA (E320) as a food additive",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2011.2392"
     }
   ],
   "title": "Butilidrossianisolo",
-  "description": "Un antiossidante sintetico utilizzato per prevenire il deterioramento di grassi e oli negli alimenti."
+  "description": "Il BHA (E320) impedisce ai grassi di irrancidire. Lo IARC lo classifica come possibilmente cancerogeno per l'uomo e il JECFA ha fissato una dose giornaliera accettabile."
 }

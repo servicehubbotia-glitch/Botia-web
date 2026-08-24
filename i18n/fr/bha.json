@@ -7,22 +7,26 @@
     "woman",
     "enumbers"
   ],
-  "what_is": "Un antioxydant synthétique utilisé pour empêcher la détérioration des graisses et des huiles dans les aliments.",
-  "why_botia": "Le BHA est le E320, un antioxydant autorisé. L’EFSA n’a relevé aucun problème de génotoxicité en 2011 et a fixé une limite d’apport de 1,0 mg/kg de poids corporel par jour. Le groupe 2B du IARC décrit un danger cancérogène possible, et non le risque lié à une exposition alimentaire réelle.",
-  "can_1": "Repérez le E320 ou le BHA dans la liste des ingrédients.",
-  "can_2": "Affichez la limite d'apport propre à l'EFSA pour le BHA et sa classification de danger du IARC Groupe 2B.",
-  "cannot_1": "Confirmer si le BHA a été combiné avec d'autres antioxydants pour produire un 'effet cocktail' synergique.",
-  "cannot_2": "Déterminer la prolongation de la durée de conservation obtenue par la dose spécifique de BHA utilisée.",
+  "what_is": "Le BHA (E320) est un antioxydant synthétique ajouté aux aliments contenant des graisses et des huiles pour ralentir leur oxydation et éviter leur rancissement.",
+  "why_botia": "Le BHA empêche les graisses de rancir. Le CIRC le classe comme peut-être cancérogène pour l'homme, et le JECFA a fixé une dose journalière admissible après avoir examiné des résultats de cancérogénicité et d'autres données toxicologiques. Cela ne dit pas quelle quantité de BHA se trouve dans un produit donné, mais signifie que l'exposition à long terme n'est pas considérée comme illimitée.",
+  "can_1": "Détecter E320, BHA et ses noms chimiques déclarés dans la liste des ingrédients.",
+  "can_2": "Afficher la classification Groupe 2B du CIRC et la dose journalière admissible du JECFA de 0–0,5 mg/kg de poids corporel par jour.",
+  "cannot_1": "Déterminer la quantité de BHA présente dans un produit donné lorsque la quantité n'est pas déclarée.",
+  "cannot_2": "Transformer une classification de danger du CIRC ou une limite d'apport du JECFA en risque de cancer pour un produit ou une personne donnée.",
   "sources": [
     {
-      "label": "Règlement UE 1333/2008 sur les additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Butylated hydroxyanisole (BHA), INS 320",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2140"
     },
     {
-      "label": "État des connaissances WHO sur les perturbateurs endocriniens (2012)",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "IARC — BHA: possibly carcinogenic to humans, Group 2B",
+      "url": "https://publications.iarc.who.int/Book-And-Report-Series/Iarc-Monographs-On-The-Identification-Of-Carcinogenic-Hazards-To-Humans/Some-Naturally-Occurring-And-Synthetic-Food-Components-Furocoumarins-And-Ultraviolet-Radiation-1986"
+    },
+    {
+      "label": "EFSA — Re-evaluation of BHA (E320) as a food additive",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2011.2392"
     }
   ],
   "title": "Hydroxyanisole butylé",
-  "description": "Un antioxydant synthétique utilisé pour empêcher la détérioration des graisses et des huiles dans les aliments."
+  "description": "Le BHA (E320) empêche les graisses de rancir. Le CIRC le classe comme peut-être cancérogène pour l'homme et le JECFA a fixé une dose journalière admissible."
 }
