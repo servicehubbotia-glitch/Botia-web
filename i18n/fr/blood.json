@@ -7,26 +7,30 @@
     "muslim",
     "animal"
   ],
-  "what_is": "Ingrédients alimentaires dérivés du sang animal ou de fractions sanguines isolées, y compris le plasma et les protéines sanguines telles que l'hémoglobine.",
-  "why_botia": "BOTIA signale explicitement les termes liés au sang, car le Codex CXG 24-1997 classe le sang parmi les sources dont l'utilisation est considérée comme illicite dans le cadre d'une allégation « halal ». BOTIA détecte les termes désignant des ingrédients déclarés ; il ne certifie pas le statut « halal ».",
-  "can_1": "Identifier les mentions explicites relatives au sang, au plasma sanguin, à l'hémoglobine et aux termes connexes liés au sang lorsqu'elles figurent sur l'étiquette.",
-  "can_2": "Activer les couches d'information « choix musulman » et « origine animale » pour un ingrédient déclaré comme dérivé du sang.",
-  "cannot_1": "Identifier l'espèce animale lorsqu'un terme générique tel que « sang », « plasma » ou « hémoglobine » est utilisé sans que la source soit précisée.",
-  "cannot_2": "Certifier ou garantir qu'un produit est halal, ou vérifier les contrôles relatifs à l'abattage, à la collecte, à la transformation, à la contamination croisée ou à la certification.",
+  "what_is": "Du sang animal et des fractions séparées du sang, notamment le plasma, les protéines plasmatiques et l’hémoglobine. Ces ingrédients peuvent assurer des fonctions de liaison, gélification, rétention d’eau ou couleur.",
+  "why_botia": "Le sang et ses dérivés — plasma, hémoglobine et protéines sanguines — sont utilisés pour leurs propriétés de liaison, de gélification ou de coloration dans les saucisses et autres produits carnés transformés. Dans un boudin, le sang est évident ; dans d’autres produits il peut apparaître sous les termes « plasma », « protéine plasmatique » ou « hémoglobine », sans que le mot sang soit présent. Le Codex inclut explicitement le sang parmi les sources exclues des aliments portant une allégation halal.",
+  "can_1": "Identifier sang, plasma, protéine plasmatique, hémoglobine et termes apparentés lorsqu’ils sont déclarés.",
+  "can_2": "Expliquer que le plasma et l’hémoglobine sont des fractions du sang et présenter l’origine animale ainsi que l’information objective du Codex relative à une allégation halal.",
+  "cannot_1": "Déterminer l’espèce animale lorsqu’un terme générique comme plasma ou hémoglobine est utilisé sans origine déclarée.",
+  "cannot_2": "Émettre une conclusion religieuse sur ce qu’une personne doit considérer comme permis ; BOTIA montre uniquement l’ingrédient déclaré et le contenu de la norme citée.",
   "sources": [
     {
-      "label": "Codex Alimentarius — Directives générales relatives à l'utilisation du terme « halal » (CXG 24-1997)",
+      "label": "Codex Alimentarius — General Guidelines for Use of the Term Halal (CXG 24-1997)",
       "url": "https://www.fao.org/4/y2770e/y2770e08.htm"
     },
     {
-      "label": "Règlement (CE) n° 1333/2008 relatif aux additifs alimentaires — plasma sanguin figurant à l'article 3, exclusions",
+      "label": "Regulation (EC) No 1333/2008 — blood plasma listed separately from food additives",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "Règlement (UE) n° 142/2011 de la Commission — définitions des produits sanguins et des fractions sanguines",
+      "label": "Commission Regulation (EU) No 142/2011 — blood products and blood fractions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/142/oj/eng"
+    },
+    {
+      "label": "Review — technological use of animal blood plasma and haemoglobin in food products",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6170341/"
     }
   ],
   "title": "Sang et dérivés sanguins",
-  "description": "Sang animal et fractions sanguines isolées, y compris le plasma et les protéines sanguines telles que l'hémoglobine."
+  "description": "Le sang animal et ses fractions, comme le plasma et l’hémoglobine, peuvent servir à lier, gélifier ou colorer des produits carnés transformés sans que le mot sang apparaisse dans le nom de l’ingrédient."
 }

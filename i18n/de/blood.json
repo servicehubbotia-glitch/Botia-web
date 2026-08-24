@@ -7,26 +7,30 @@
     "muslim",
     "animal"
   ],
-  "what_is": "Lebensmittelzutaten, die aus tierischem Blut oder aus Blutfraktionen, einschließlich Plasma und Blutproteinen wie Hämoglobin, hergestellt werden.",
-  "why_botia": "BOTIA Markiert Begriffe, die sich ausdrücklich auf Blut beziehen, da der Codex CXG 24-1997 Blut als eine Quelle aufführt, deren Verwendung im Zusammenhang mit einer Halal-Kennzeichnung als unzulässig gilt. BOTIA erkennt deklarierte Zutatenbezeichnungen; es bescheinigt jedoch keinen Halal-Status.",
-  "can_1": "Identifizieren Sie explizite Begriffe wie „Blut“, „Blutplasma“, „Hämoglobin“ und verwandte Begriffe aus dem Bereich der Blutprodukte, wenn diese auf dem Etikett angegeben sind.",
-  "can_2": "Legen Sie die Informationsebenen „Muslimisch“ und „tierischen Ursprungs“ für einen deklarierten Inhaltsstoff aus Blut an.",
-  "cannot_1": "Bestimmen Sie die Tierart, wenn ein allgemeiner Begriff wie „Blut“, „Plasma“ oder „Hämoglobin“ ohne Angabe der Quelle verwendet wird.",
-  "cannot_2": "Die Halal-Konformität eines Produkts zertifizieren oder garantieren oder die Kontrollen in Bezug auf Schlachtung, Gewinnung, Verarbeitung, Kreuzkontamination oder Zertifizierung überprüfen.",
+  "what_is": "Tierblut und getrennte Blutfraktionen einschließlich Plasma, Plasmaproteinen und Hämoglobin. Sie können in Fleischprodukten Bindung, Gelierung, Wasserbindung oder Farbe liefern.",
+  "why_botia": "Blut und seine Bestandteile — Plasma, Hämoglobin und Blutproteine — werden wegen ihrer bindenden, gelierenden oder färbenden Eigenschaften in Würsten und anderen verarbeiteten Fleischprodukten eingesetzt. Bei Blutwurst ist Blut offensichtlich; in anderen Produkten kann es als „Plasma“, „Plasmaprotein“ oder „Hämoglobin“ erscheinen, ohne dass das Wort Blut vorkommt. Codex führt Blut ausdrücklich unter den Quellen auf, die von Lebensmitteln mit einer Halal-Angabe ausgeschlossen sind.",
+  "can_1": "Blut, Plasma, Plasmaprotein, Hämoglobin und verwandte Blutbestandteile erkennen.",
+  "can_2": "Erklären, dass Plasma und Hämoglobin Blutfraktionen sind, und neben der tierischen Herkunft die objektive Codex-Information zu einer Halal-Angabe anzeigen.",
+  "cannot_1": "Die Tierart bestimmen, wenn ein allgemeiner Begriff wie Plasma oder Hämoglobin ohne Quellenangabe verwendet wird.",
+  "cannot_2": "Eine religiöse Entscheidung darüber treffen, ob eine Person ein bestimmtes Lebensmittel als erlaubt betrachten soll; BOTIA zeigt nur die deklarierte Zutat und den Inhalt der zitierten Norm.",
   "sources": [
     {
-      "label": "Codex Alimentarius — Allgemeine Leitlinien zur Verwendung des Begriffs „Halal“ (CXG 24-1997)",
+      "label": "Codex Alimentarius — General Guidelines for Use of the Term Halal (CXG 24-1997)",
       "url": "https://www.fao.org/4/y2770e/y2770e08.htm"
     },
     {
-      "label": "Verordnung (EG) Nr. 1333/2008 über Lebensmittelzusatzstoffe – Blutplasma gemäß Artikel 3, Ausnahmen",
+      "label": "Regulation (EC) No 1333/2008 — blood plasma listed separately from food additives",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "Verordnung (EU) Nr. 142/2011 der Kommission – Begriffsbestimmungen für Blutprodukte und Blutfraktionen",
+      "label": "Commission Regulation (EU) No 142/2011 — blood products and blood fractions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/142/oj/eng"
+    },
+    {
+      "label": "Review — technological use of animal blood plasma and haemoglobin in food products",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6170341/"
     }
   ],
   "title": "Blut und Blutprodukte",
-  "description": "Tierisches Blut und aus Blut gewonnene Fraktionen, darunter Plasma und Blutproteine wie Hämoglobin."
+  "description": "Tierblut und Blutfraktionen wie Plasma und Hämoglobin können in verarbeiteten Fleischprodukten zum Binden, Gelieren oder Färben eingesetzt werden, ohne dass im Zutatenamen das Wort Blut steht."
 }

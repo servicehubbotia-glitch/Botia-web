@@ -7,26 +7,30 @@
     "muslim",
     "animal"
   ],
-  "what_is": "由动物血液或分离出的血液成分（包括血浆和血红蛋白等血液蛋白）制成的食品配料。",
-  "why_botia": "BOTIA 该工具会明确标记与血液相关的术语，因为《食品法典》CXG 24-1997将血液列为不得用于清真声明的原料来源之一。BOTIA仅用于检测声明中的配料术语，并不对清真状态进行认证。",
-  "can_1": "当标签上标明“血液”、“血浆”、“血红蛋白”及相关血液衍生术语时，应予以明确标识。",
-  "can_2": "对于已申报的血液来源成分，触发“穆斯林”和“动物来源”信息图层。",
-  "cannot_1": "当使用“血液”、“血浆”或“血红蛋白”等通用术语且未注明来源时，应确定所指的动物种类。",
-  "cannot_2": "对产品进行清真认证或保证其符合清真标准，或对屠宰、采集、加工、交叉污染或认证控制措施进行核查。",
+  "what_is": "动物血液及其分离成分，包括血浆、血浆蛋白和血红蛋白。这些原料可在肉制品中起黏结、凝胶、保水或着色作用。",
+  "why_botia": "血液及其衍生物——血浆、血红蛋白和血液蛋白——可因其黏结、凝胶或着色功能用于香肠和其他加工肉制品。在血肠中，血液显而易见；在其他产品中，它可能写成“血浆”“血浆蛋白”或“血红蛋白”，这些名称并不包含“血液”一词。Codex 明确把血液列入不适用于带有 halal 声明食品的来源。",
+  "can_1": "识别标签中声明的血液、血浆、血浆蛋白、血红蛋白以及相关血液衍生成分。",
+  "can_2": "说明血浆和血红蛋白都是血液成分，并同时显示动物来源信息以及 Codex 关于 halal 声明的客观规定。",
+  "cannot_1": "当只写血浆或血红蛋白等通用名称、未注明来源时确定动物种类。",
+  "cannot_2": "对某个人是否应在宗教上把某种食品视为许可作出结论；BOTIA 只显示标签声明的成分以及所引用标准的内容。",
   "sources": [
     {
-      "label": "Codex Alimentarius — 《“清真”（Halal）一词使用的一般准则》（CXG 24-1997）",
+      "label": "Codex Alimentarius — General Guidelines for Use of the Term Halal (CXG 24-1997)",
       "url": "https://www.fao.org/4/y2770e/y2770e08.htm"
     },
     {
-      "label": "关于食品添加剂的第1333/2008号（EC）法规——第3条所列血浆的例外情况",
+      "label": "Regulation (EC) No 1333/2008 — blood plasma listed separately from food additives",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "欧盟委员会第142/2011号条例——血液制品和血液成分的定义",
+      "label": "Commission Regulation (EU) No 142/2011 — blood products and blood fractions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/142/oj/eng"
+    },
+    {
+      "label": "Review — technological use of animal blood plasma and haemoglobin in food products",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6170341/"
     }
   ],
   "title": "血液及血液制品",
-  "description": "动物血液及分离出的血液成分，包括血浆和血红蛋白等血液蛋白。"
+  "description": "动物血液以及血浆、血红蛋白等血液成分可用于加工肉制品的黏结、凝胶或着色，而配料名称中未必出现“血液”一词。"
 }

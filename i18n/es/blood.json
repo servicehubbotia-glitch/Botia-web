@@ -7,26 +7,30 @@
     "muslim",
     "animal"
   ],
-  "what_is": "Ingredientes alimentarios elaborados a partir de sangre animal o de fracciones separadas de la sangre, incluidos el plasma y las proteínas sanguíneas, como la hemoglobina.",
-  "why_botia": "BOTIA señala los términos que hacen referencia explícita a la sangre, ya que el Codex CXG 24-1997 incluye la sangre entre las fuentes cuyo uso se considera ilegal a efectos de la declaración «halal». BOTIA detecta los términos relacionados con los ingredientes declarados; no certifica el estatus «halal».",
-  "can_1": "Identifica los términos que se refieran explícitamente a la sangre, el plasma sanguíneo, la hemoglobina y otros conceptos relacionados con la sangre cuando aparezcan indicados en la etiqueta.",
-  "can_2": "Activa las capas de información «elección musulmana» y «origen animal» para un ingrediente declarado derivado de la sangre.",
-  "cannot_1": "Determina la especie animal cuando se utilice un término genérico, como «sangre», «plasma» o «hemoglobina», sin que se especifique la fuente.",
-  "cannot_2": "Certificar o garantizar que un producto es halal, o verificar los controles relativos al sacrificio, la recogida, el procesamiento, la contaminación cruzada o la certificación.",
+  "what_is": "Sangre animal y fracciones separadas de la sangre, incluidos plasma, proteínas plasmáticas y hemoglobina. Pueden aportar funciones de unión, gelificación, retención de agua o color en productos cárnicos.",
+  "why_botia": "La sangre y sus derivados —plasma, hemoglobina y proteínas sanguíneas— se utilizan por sus propiedades de unión, gelificación o color en embutidos y otros productos cárnicos. En una morcilla o un botifarrón la sangre es evidente; en otros productos puede aparecer como “plasma”, “proteína de plasma” o “hemoglobina”, términos que no contienen la palabra sangre. El Codex incluye expresamente la sangre entre las fuentes excluidas de los alimentos que llevan una declaración halal.",
+  "can_1": "Detectar sangre, plasma, proteína de plasma, hemoglobina y términos relacionados derivados de sangre cuando aparecen declarados.",
+  "can_2": "Explicar que el plasma y la hemoglobina son fracciones de la sangre y mostrar la capa de origen animal junto con la información objetiva del Codex aplicable a una declaración halal.",
+  "cannot_1": "Determinar la especie animal cuando se utiliza un término genérico como plasma o hemoglobina sin declarar el origen.",
+  "cannot_2": "Emitir una conclusión religiosa sobre si una persona debe considerar permitido un alimento concreto; BOTIA solo muestra el ingrediente declarado y lo que recoge la norma citada.",
   "sources": [
     {
-      "label": "Codex Alimentarius — Directrices generales para el uso del término «halal» (CXG 24-1997)",
+      "label": "Codex Alimentarius — Directrices generales para el uso del término halal (CXG 24-1997)",
       "url": "https://www.fao.org/4/y2770e/y2770e08.htm"
     },
     {
-      "label": "Reglamento (CE) n.º 1333/2008 sobre aditivos alimentarios: el plasma sanguíneo incluido en las excepciones del artículo 3",
+      "label": "Reglamento (CE) 1333/2008 — el plasma sanguíneo se contempla separadamente de los aditivos",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "Reglamento (UE) n.º 142/2011 de la Comisión: definiciones de productos sanguíneos y fracciones sanguíneas",
+      "label": "Reglamento (UE) 142/2011 — productos sanguíneos y fracciones de sangre",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/142/oj/eng"
+    },
+    {
+      "label": "Revisión — uso tecnológico de plasma y hemoglobina de sangre animal en alimentos",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6170341/"
     }
   ],
   "title": "Sangre y derivados de la sangre",
-  "description": "Sangre animal y fracciones sanguíneas separadas, incluyendo el plasma y las proteínas sanguíneas, como la hemoglobina."
+  "description": "La sangre animal y fracciones como plasma y hemoglobina pueden utilizarse por sus funciones de unión, gelificación o color en productos cárnicos procesados. El nombre del ingrediente puede no contener la palabra sangre."
 }

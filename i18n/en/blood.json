@@ -7,26 +7,30 @@
     "muslim",
     "animal"
   ],
-  "what_is": "Food ingredients made from animal blood or separated blood fractions, including plasma and blood proteins such as haemoglobin.",
-  "why_botia": "BOTIA flags explicit blood-derived terms because Codex CXG 24-1997 lists blood among sources considered unlawful for use of a halal claim. BOTIA detects declared ingredient terms; it does not certify halal status.",
-  "can_1": "Identify explicit blood, blood plasma, haemoglobin and related blood-derived terms when they are declared on the label.",
-  "can_2": "Trigger the Muslim and animal-origin information layers for a declared blood-derived ingredient.",
-  "cannot_1": "Determine the animal species when a generic term such as blood, plasma or haemoglobin is used without a stated source.",
-  "cannot_2": "Certify or guarantee that a product is halal, or verify slaughter, collection, processing, cross-contact or certification controls.",
+  "what_is": "Animal blood and separated fractions of blood, including plasma, plasma proteins and haemoglobin. These ingredients can provide binding, gelling, water-retention or colour functions in meat products.",
+  "why_botia": "Blood and its derivatives — plasma, haemoglobin and blood proteins — are used for binding, gelling or colour in sausages and other processed meat products. In products such as blood sausage the blood is obvious; in others it can appear as “plasma”, “plasma protein” or “haemoglobin”, terms that do not contain the word blood. Codex explicitly includes blood among the sources excluded from foods carrying a halal claim.",
+  "can_1": "Detect blood, plasma, plasma protein, haemoglobin and related blood-derived terms when they are declared.",
+  "can_2": "Explain that plasma and haemoglobin are blood fractions and show the animal-origin layer together with the objective Codex information relevant to a halal claim.",
+  "cannot_1": "Determine the animal species when a generic term such as plasma or haemoglobin is used without a declared source.",
+  "cannot_2": "Make a religious determination about whether a person should consider a specific food permissible; BOTIA only shows the declared ingredient and what the cited standard says.",
   "sources": [
     {
       "label": "Codex Alimentarius — General Guidelines for Use of the Term Halal (CXG 24-1997)",
       "url": "https://www.fao.org/4/y2770e/y2770e08.htm"
     },
     {
-      "label": "Regulation (EC) No 1333/2008 on food additives — blood plasma listed in Article 3 exclusions",
+      "label": "Regulation (EC) No 1333/2008 — blood plasma listed separately from food additives",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "Commission Regulation (EU) No 142/2011 — definitions of blood products and blood fractions",
+      "label": "Commission Regulation (EU) No 142/2011 — blood products and blood fractions",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/142/oj/eng"
+    },
+    {
+      "label": "Review — technological use of animal blood plasma and haemoglobin in food products",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6170341/"
     }
   ],
   "title": "Blood & Blood Derivatives",
-  "description": "Animal blood and separated blood fractions, including plasma and blood proteins such as haemoglobin."
+  "description": "Animal blood and blood fractions such as plasma and haemoglobin can provide binding, gelling or colour functions in processed meat products. The ingredient name may not contain the word blood."
 }
