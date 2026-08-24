@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "一组主要用作某些食品接触材料增塑剂的邻苯二甲酸酯类化学物质。FDA规定，邻苯二甲酸酯不得直接添加到食品中。",
-  "why_botia": "EFSA于2019年开展的食品接触材料审查评估了DBP、BBP、DEHP、 DINP 以及 DIDP。2026 年 5 月，FDA 对八种当前获准使用的食品接触增塑剂进行了评估，并提议将 DEHP、 DCHP、DIOP 和 DINP 归为一组，以便进行未来的累积风险评估。 因此，DCHP 和 DIOP 属于 BOTIA 的解释性覆盖范围，但这仍属于包装/接触材料的情境，而非通常成分表中的触发条件。",
-  "can_1": "当包装或BOTIA可见的材料信息中印有明确的邻苯二甲酸酯名称（包括DCHP和DIOP）时，应予以识别。",
-  "can_2": "请解释当前 EFSA 和 FDA 的食品接触情况，但不要声称成分表能揭示物质向食品中的迁移情况。",
-  "cannot_1": "使用标签 OCR 检测或定量分析从包装中迁移到食品中的邻苯二甲酸酯。",
-  "cannot_2": "当可读的包装或材料信息中未明确标注某种邻苯二甲酸酯时，可推断该食品中含有该物质。",
+  "what_is": "邻苯二甲酸酯是一类用于使某些塑料更柔软、更有弹性的化学物质。在食品中，暴露可能来自包装和其他食品接触材料，而不是人为添加的食品成分。",
+  "why_botia": "研究发现邻苯二甲酸酯暴露与子宫内膜异位症以及较低的卵巢储备指标存在关联。邻苯二甲酸酯用于软化塑料，并可能从食品包装迁移到食品中——它们不会作为食品配料列出，因此 BOTIA 无法从配料表中检测出来。女性体内某些邻苯二甲酸酯水平可能更高，因为化妆品、香水和其他个人护理产品也是额外的暴露来源。",
+  "can_1": "解释邻苯二甲酸酯为什么与 Woman 层相关，并展示暴露与子宫内膜异位症以及较低卵巢储备指标之间的研究关联。",
+  "can_2": "解释食品包装只是可能的来源之一，化妆品、香水和其他个人护理产品也可能增加暴露。",
+  "cannot_1": "通过普通食品配料表检测已经从包装迁移到食品中的邻苯二甲酸酯。",
+  "cannot_2": "根据食品标签判断个人暴露来自哪里，也不能证明邻苯二甲酸酯导致了子宫内膜异位症或卵巢储备下降。",
   "sources": [
     {
-      "label": "EFSA —— 食品接触材料中邻苯二甲酸酯风险评估的更新（2019年）",
-      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5838"
+      "label": "FDA — Phthalates in Food Packaging and Food Contact Applications",
+      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
     },
     {
-      "label": "FDA —— 食品包装及食品接触应用中的邻苯二甲酸酯（2026年更新版）",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
+      "label": "Systematic review and meta-analysis — Phthalate exposure and endometriosis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34227050/"
+    },
+    {
+      "label": "Human study — Urinary phthalate metabolites and ovarian reserve",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26573529/"
+    },
+    {
+      "label": "Human study — Phthalates and ovarian reserve markers",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38575009/"
+    },
+    {
+      "label": "Human exposure study — Personal-care products and urinary phthalates in women",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23168567/"
     }
   ],
   "title": "邻苯二甲酸酯",
-  "description": "食品接触材料中的邻苯二甲酸酯类增塑剂，范围已扩展至包括 DCHP 和 DIOP。"
+  "description": "邻苯二甲酸酯可从食品接触塑料迁移到食品中；研究报告其暴露与子宫内膜异位症及较低卵巢储备指标相关，而配料表无法检测这种暴露。"
 }

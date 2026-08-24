@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "A group of ortho-phthalate chemicals used mainly as plasticizers in certain food-contact materials. FDA states that phthalates are not authorised for direct addition to food.",
-  "why_botia": "EFSA's 2019 food-contact review assessed DBP, BBP, DEHP, DINP and DIDP. In May 2026, FDA evaluated eight currently authorised food-contact plasticizers and proposed grouping DEHP, DCHP, DIOP and DINP for a future cumulative risk assessment. DCHP and DIOP therefore belong in BOTIA's explanatory coverage, but this remains packaging/contact-material context rather than a normal ingredient-list trigger.",
-  "can_1": "Recognise explicit phthalate names, including DCHP and DIOP, when they are printed in packaging or material information visible to BOTIA.",
-  "can_2": "Explain the current EFSA and FDA food-contact context without claiming that an ingredient list reveals migration into the food.",
-  "cannot_1": "Detect or quantify phthalates that have migrated into food from packaging using label OCR.",
-  "cannot_2": "Conclude that food contains a particular phthalate when the chemical is not explicitly declared in readable packaging/material information.",
+  "what_is": "Phthalates are chemicals used to make some plastics softer and more flexible. In food, exposure can come from packaging and other food-contact materials rather than from a deliberately added food ingredient.",
+  "why_botia": "Studies have linked phthalate exposure with endometriosis and lower markers of ovarian reserve. Phthalates soften plastic and can migrate from food packaging into food — they are not listed as food ingredients, so BOTIA cannot detect them from the ingredient list. Women can show higher levels of some phthalates because cosmetics, perfume and other personal-care products are additional sources.",
+  "can_1": "Explain why phthalates matter to the Woman layer and show the evidence linking exposure with endometriosis and lower markers of ovarian reserve.",
+  "can_2": "Explain that food packaging is only one possible source and that cosmetics, perfume and other personal-care products can add to exposure.",
+  "cannot_1": "Detect phthalates that migrate from packaging into food from an ordinary ingredient list.",
+  "cannot_2": "Tell from a food label where a person's exposure came from or prove that phthalates caused endometriosis or reduced ovarian reserve.",
   "sources": [
     {
-      "label": "EFSA — Update of the risk assessment of phthalates for use in food contact materials (2019)",
-      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5838"
+      "label": "FDA — Phthalates in Food Packaging and Food Contact Applications",
+      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
     },
     {
-      "label": "FDA — Phthalates in Food Packaging and Food Contact Applications (updated 2026)",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
+      "label": "Systematic review and meta-analysis — Phthalate exposure and endometriosis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34227050/"
+    },
+    {
+      "label": "Human study — Urinary phthalate metabolites and ovarian reserve",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26573529/"
+    },
+    {
+      "label": "Human study — Phthalates and ovarian reserve markers",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38575009/"
+    },
+    {
+      "label": "Human exposure study — Personal-care products and urinary phthalates in women",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23168567/"
     }
   ],
   "title": "Phthalates",
-  "description": "Ortho-phthalate plasticizers in food-contact materials, expanded to include DCHP and DIOP."
+  "description": "Phthalates can migrate from food-contact plastics; studies report associations with endometriosis and lower ovarian-reserve markers, while ingredient labels cannot detect that exposure."
 }

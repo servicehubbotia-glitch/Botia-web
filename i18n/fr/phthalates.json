@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Groupe de composés chimiques ortho-phtalates utilisés principalement comme plastifiants dans certains matériaux destinés à entrer en contact avec les denrées alimentaires. La norme FDA stipule que les phtalates ne sont pas autorisés à être ajoutés directement aux denrées alimentaires.",
-  "why_botia": "L'évaluation de 2019 relative au contact alimentaire du EFSA a porté sur les DBP, BBP, DEHP, DINP et DIDP. En mai 2026, l’évaluation du FDA a porté sur huit plastifiants autorisés à ce jour pour le contact alimentaire et a proposé de regrouper les DEHP, DCHP, DIOP et DINP en vue d’une future évaluation cumulative des risques. Les substances DCHP et DIOP relèvent donc du champ d’application explicatif de la substance BOTIA, mais cela reste dans le contexte des emballages et des matériaux en contact avec les denrées alimentaires plutôt que dans celui d’un critère normal de présence dans la liste des ingrédients.",
-  "can_1": "Identifier les noms explicites de phtalates, notamment DCHP et DIOP, lorsqu'ils sont imprimés sur l'emballage ou dans les informations relatives au matériau, visibles par BOTIA.",
-  "can_2": "Expliquez le contexte actuel des références EFSA et FDA en matière de contact alimentaire, sans affirmer que la liste des ingrédients révèle une migration vers les aliments.",
-  "cannot_1": "Détecter ou quantifier les phtalates ayant migré dans les aliments à partir de leurs emballages à l'aide de l'étiquette OCR.",
-  "cannot_2": "En conclure que l'aliment contient un phtalate donné lorsque cette substance n'est pas explicitement mentionnée dans les informations lisibles figurant sur l'emballage ou sur le matériau.",
+  "what_is": "Les phtalates sont des substances chimiques utilisées pour rendre certains plastiques plus souples et flexibles. Dans l'alimentation, l'exposition peut provenir des emballages et d'autres matériaux au contact des aliments plutôt que d'un ingrédient ajouté volontairement.",
+  "why_botia": "Des études ont associé l'exposition aux phtalates à l'endométriose et à des marqueurs plus faibles de la réserve ovarienne. Les phtalates assouplissent le plastique et peuvent migrer des emballages vers les aliments — ils ne figurent pas comme ingrédients alimentaires, BOTIA ne peut donc pas les détecter dans la liste des ingrédients. Les femmes peuvent présenter des niveaux plus élevés de certains phtalates car les cosmétiques, parfums et autres produits de soins personnels constituent des sources supplémentaires.",
+  "can_1": "Expliquer pourquoi les phtalates sont pertinents pour la couche Woman et présenter les données reliant l'exposition à l'endométriose et à des marqueurs plus faibles de réserve ovarienne.",
+  "can_2": "Expliquer que les emballages alimentaires ne sont qu'une source possible et que les cosmétiques, parfums et autres produits de soins personnels peuvent ajouter à l'exposition.",
+  "cannot_1": "Détecter à partir d'une liste d'ingrédients ordinaire les phtalates ayant migré de l'emballage vers l'aliment.",
+  "cannot_2": "Déterminer à partir d'une étiquette alimentaire l'origine de l'exposition d'une personne ni prouver que les phtalates ont causé l'endométriose ou une diminution de la réserve ovarienne.",
   "sources": [
     {
-      "label": "EFSA — Mise à jour de l'évaluation des risques liés aux phtalates utilisés dans les matériaux destinés à entrer en contact avec les denrées alimentaires (2019)",
-      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5838"
+      "label": "FDA — Phthalates in Food Packaging and Food Contact Applications",
+      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
     },
     {
-      "label": "FDA — Phtalates dans les emballages alimentaires et les applications en contact avec les aliments (mise à jour 2026)",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
+      "label": "Systematic review and meta-analysis — Phthalate exposure and endometriosis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34227050/"
+    },
+    {
+      "label": "Human study — Urinary phthalate metabolites and ovarian reserve",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26573529/"
+    },
+    {
+      "label": "Human study — Phthalates and ovarian reserve markers",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38575009/"
+    },
+    {
+      "label": "Human exposure study — Personal-care products and urinary phthalates in women",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23168567/"
     }
   ],
   "title": "Phtalates",
-  "description": "Les plastifiants ortho-phtalates présents dans les matériaux destinés à entrer en contact avec les denrées alimentaires, dont la liste a été étendue pour inclure les références DCHP et DIOP."
+  "description": "Les phtalates peuvent migrer des plastiques au contact des aliments ; des études rapportent des associations avec l'endométriose et des marqueurs plus faibles de réserve ovarienne, sans que la liste des ingrédients puisse détecter cette exposition."
 }

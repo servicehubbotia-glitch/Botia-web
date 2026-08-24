@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Bazı gıda ile temas eden malzemelerde esas olarak plastikleştirici olarak kullanılan bir grup orto-ftalat kimyasalı. FDA belgesinde, ftalatların gıdalara doğrudan eklenmesinin izin verilmediği belirtilmektedir.",
-  "why_botia": "EFSA’nin 2019 yılı gıda ile temas değerlendirmesi kapsamında DBP, BBP, DEHP, DINP ve DIDP ürünlerini değerlendirmiştir. Mayıs 2026'da, FDA, halihazırda ruhsatlı sekiz gıda ile temas eden plastikleştiriciyi değerlendirmiş ve DEHP, DCHP, DIOP ve DINP'yi gelecekteki bir kümülatif risk değerlendirmesi kapsamında gruplandırmayı önerdi. Dolayısıyla, DCHP ve DIOP, BOTIA’nin açıklayıcı kapsamına girmektedir; ancak bu, normal bir içerik listesi tetikleyicisi olmaktan ziyade, ambalaj/gıda ile temas eden malzeme bağlamında değerlendirilmektedir.",
-  "can_1": "BOTIA tarafından görülebilen ambalaj veya malzeme bilgisinde basılı olan DCHP ve DIOP gibi açıkça belirtilen ftalat isimlerini tanıyın.",
-  "can_2": "Bir içerik listesinin gıdaya geçiş olduğunu ortaya koyduğunu iddia etmeden, mevcut EFSA ve FDA gıda ile temas bağlamını açıklayın.",
-  "cannot_1": "OCR etiketini kullanarak, ambalajdan gıdaya geçen ftalatları tespit edin veya miktarını belirleyin.",
-  "cannot_2": "Okunabilir ambalaj veya ürün bilgisinde söz konusu kimyasal açıkça belirtilmediğinde, gıdanın belirli bir ftalat içerdiği sonucuna varın.",
+  "what_is": "Ftalatlar bazı plastikleri daha yumuşak ve esnek yapmak için kullanılan kimyasallardır. Gıdalardaki maruziyet, kasıtlı olarak eklenmiş bir gıda bileşeninden değil, ambalajlardan ve diğer gıda temas malzemelerinden kaynaklanabilir.",
+  "why_botia": "Çalışmalar ftalat maruziyetini endometriozis ve daha düşük over rezervi göstergeleriyle ilişkilendirmiştir. Ftalatlar plastiği yumuşatır ve gıda ambalajından gıdaya geçebilir — gıda bileşeni olarak listelenmezler, bu nedenle BOTIA bunları içerik listesinden tespit edemez. Kadınlarda bazı ftalatların düzeyleri daha yüksek olabilir; çünkü kozmetik ürünleri, parfüm ve diğer kişisel bakım ürünleri ek maruziyet kaynaklarıdır.",
+  "can_1": "Ftalatların Woman katmanı için neden önemli olduğunu açıklamak ve maruziyeti endometriozis ve daha düşük over rezervi göstergeleriyle ilişkilendiren kanıtları göstermek.",
+  "can_2": "Gıda ambalajının yalnızca olası kaynaklardan biri olduğunu ve kozmetik, parfüm ve diğer kişisel bakım ürünlerinin maruziyete eklenebileceğini açıklamak.",
+  "cannot_1": "Ambalajdan gıdaya geçen ftalatları normal bir içerik listesinden tespit etmek.",
+  "cannot_2": "Bir gıda etiketinden kişinin maruziyetinin nereden geldiğini belirlemek veya ftalatların endometriozis ya da azalmış over rezervine neden olduğunu kanıtlamak.",
   "sources": [
     {
-      "label": "EFSA — Gıda ile temas eden malzemelerde kullanılan ftalatlara ilişkin risk değerlendirmesinin güncellenmesi (2019)",
-      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5838"
+      "label": "FDA — Phthalates in Food Packaging and Food Contact Applications",
+      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
     },
     {
-      "label": "FDA — Gıda Ambalajlarında ve Gıda ile Temas Eden Uygulamalarda Ftalatlar (2026'da güncellenmiştir)",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
+      "label": "Systematic review and meta-analysis — Phthalate exposure and endometriosis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34227050/"
+    },
+    {
+      "label": "Human study — Urinary phthalate metabolites and ovarian reserve",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26573529/"
+    },
+    {
+      "label": "Human study — Phthalates and ovarian reserve markers",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38575009/"
+    },
+    {
+      "label": "Human exposure study — Personal-care products and urinary phthalates in women",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23168567/"
     }
   ],
   "title": "Ftalatlar",
-  "description": "Gıda ile temas eden malzemelerdeki orto-ftalat plastikleştiriciler, DCHP ve DIOP kodlarını da içerecek şekilde genişletilmiştir."
+  "description": "Ftalatlar gıda temas plastiklerinden gıdaya geçebilir; çalışmalar endometriozis ve daha düşük over rezervi göstergeleriyle ilişkiler bildirirken içerik listesi bu maruziyeti gösteremez."
 }

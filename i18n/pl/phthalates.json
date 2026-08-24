@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Grupa związków chemicznych z grupy ortoftalanów, stosowanych głównie jako plastyfikatory w niektórych materiałach mających kontakt z żywnością. FDA stanowi, że ftalany nie są dopuszczone do bezpośredniego dodawania do żywności.",
-  "why_botia": "W ramach przeglądu z 2019 r. dotyczącego kontaktu z żywnością dla produktu EFSA oceniono produkty DBP, BBP, DEHP, DINP oraz DIDP. W maju 2026 r. w ramach oceny substancji FDA przeanalizowano osiem obecnie dopuszczonych plastyfikatorów przeznaczonych do kontaktu z żywnością i zaproponowano zgrupowanie substancji DEHP, DCHP, DIOP oraz DINP w celu przeprowadzenia w przyszłości zbiorczej oceny ryzyka. DCHP i DIOP należą zatem do zakresu wyjaśniającego BOTIA, ale nadal dotyczy to kontekstu opakowań/materiałów mających kontakt z żywnością, a nie zwykłego wymogu umieszczenia na liście składników.",
-  "can_1": "Należy rozpoznawać nazwy ftalanów podane wprost, w tym DCHP i DIOP, gdy są one wydrukowane na opakowaniu lub w informacjach o materiale widocznych dla BOTIA.",
-  "can_2": "Proszę wyjaśnić aktualne uwarunkowania dotyczące kontaktu z żywnością w przypadku numerów EFSA i FDA, nie twierdząc przy tym, że wykaz składników wskazuje na migrację substancji do żywności.",
-  "cannot_1": "Wykrywanie lub oznaczanie ilościowe ftalanów, które przedostały się do żywności z opakowań, przy użyciu etykiety OCR.",
-  "cannot_2": "Należy uznać, że żywność zawiera dany ftalan, jeżeli substancja ta nie została wyraźnie wymieniona w czytelnych informacjach na opakowaniu lub dotyczących materiału.",
+  "what_is": "Ftalany to substancje chemiczne stosowane do zmiękczania i uelastyczniania niektórych tworzyw sztucznych. W żywności narażenie może pochodzić z opakowań i innych materiałów mających kontakt z żywnością, a nie z celowo dodanego składnika.",
+  "why_botia": "Badania powiązały narażenie na ftalany z endometriozą i niższymi markerami rezerwy jajnikowej. Ftalany zmiękczają plastik i mogą migrować z opakowań do żywności — nie są wymieniane jako składniki żywności, dlatego BOTIA nie może ich wykryć na podstawie listy składników. Kobiety mogą mieć wyższe poziomy niektórych ftalanów, ponieważ kosmetyki, perfumy i inne produkty higieny osobistej są dodatkowymi źródłami.",
+  "can_1": "Wyjaśniać, dlaczego ftalany są istotne dla warstwy Woman, oraz przedstawiać dowody łączące narażenie z endometriozą i niższymi markerami rezerwy jajnikowej.",
+  "can_2": "Wyjaśniać, że opakowania żywności są tylko jednym z możliwych źródeł, a kosmetyki, perfumy i inne produkty higieny osobistej mogą zwiększać narażenie.",
+  "cannot_1": "Wykrywać na podstawie zwykłej listy składników ftalanów, które przemieściły się z opakowania do żywności.",
+  "cannot_2": "Na podstawie etykiety żywności określić źródła narażenia danej osoby ani udowodnić, że ftalany spowodowały endometriozę lub zmniejszoną rezerwę jajnikową.",
   "sources": [
     {
-      "label": "EFSA — Aktualizacja oceny ryzyka związanego ze stosowaniem ftalanów w materiałach przeznaczonych do kontaktu z żywnością (2019)",
-      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5838"
+      "label": "FDA — Phthalates in Food Packaging and Food Contact Applications",
+      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
     },
     {
-      "label": "FDA — Ftalany w opakowaniach do żywności i wyrobach mających kontakt z żywnością (aktualizacja z 2026 r.)",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
+      "label": "Systematic review and meta-analysis — Phthalate exposure and endometriosis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34227050/"
+    },
+    {
+      "label": "Human study — Urinary phthalate metabolites and ovarian reserve",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26573529/"
+    },
+    {
+      "label": "Human study — Phthalates and ovarian reserve markers",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38575009/"
+    },
+    {
+      "label": "Human exposure study — Personal-care products and urinary phthalates in women",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23168567/"
     }
   ],
   "title": "Ftalany",
-  "description": "Plastyfikatory ortoftalanowe w materiałach mających kontakt z żywnością – zakres został rozszerzony o substancje DCHP i DIOP."
+  "description": "Ftalany mogą migrować z tworzyw mających kontakt z żywnością; badania wskazują związki z endometriozą i niższymi markerami rezerwy jajnikowej, podczas gdy lista składników nie ujawnia tej ekspozycji."
 }

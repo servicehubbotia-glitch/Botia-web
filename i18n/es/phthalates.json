@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Grupo de sustancias químicas ortoftaláticas que se utilizan principalmente como plastificantes en determinados materiales que entran en contacto con los alimentos. La norma FDA establece que no está autorizada la adición directa de ftalatos a los alimentos.",
-  "why_botia": "La revisión de 2019 sobre el contacto con alimentos de EFSA evaluó los productos DBP, BBP, DEHP, DINP y DIDP. En mayo de 2026, FDA evaluó ocho plastificantes autorizados actualmente para el contacto con alimentos y propuso agrupar DEHP, DCHP, DIOP y DINP para una futura evaluación de riesgo acumulativo. Por lo tanto, DCHP y DIOP entran dentro del ámbito de aplicación explicativo de BOTIA, pero esto sigue refiriéndose al contexto de los envases y materiales en contacto con alimentos, y no a un criterio habitual de la lista de ingredientes.",
-  "can_1": "Reconocer los nombres explícitos de los ftalatos, incluidos DCHP y DIOP, cuando aparezcan impresos en el embalaje o en la información del material a la vista de BOTIA.",
-  "can_2": "Explica el contexto actual de los códigos EFSA y FDA en relación con el contacto con los alimentos, sin afirmar que la lista de ingredientes revele una migración a los alimentos.",
-  "cannot_1": "Detectar o cuantificar los ftalatos que han migrado a los alimentos desde los envases utilizando la etiqueta OCR.",
-  "cannot_2": "Se considerará que un alimento contiene un ftalato concreto cuando dicha sustancia química no figure explícitamente en la información legible del envase o del material.",
+  "what_is": "Los ftalatos son sustancias químicas utilizadas para hacer algunos plásticos más blandos y flexibles. En los alimentos, la exposición puede proceder del envase y de otros materiales en contacto con alimentos, no de un ingrediente añadido deliberadamente.",
+  "why_botia": "Los estudios han relacionado la exposición a ftalatos con la endometriosis y con marcadores más bajos de reserva ovárica. Los ftalatos ablandan el plástico y pueden migrar desde los envases a los alimentos — no figuran como ingredientes alimentarios, por lo que BOTIA no puede detectarlos en la lista de ingredientes. Las mujeres pueden presentar niveles más altos de algunos ftalatos porque los cosméticos, perfumes y otros productos de cuidado personal son fuentes adicionales.",
+  "can_1": "Explicar por qué los ftalatos son relevantes para la capa Woman y mostrar la evidencia que relaciona la exposición con endometriosis y marcadores más bajos de reserva ovárica.",
+  "can_2": "Explicar que los envases alimentarios son solo una posible fuente y que cosméticos, perfumes y otros productos de cuidado personal pueden añadir exposición.",
+  "cannot_1": "Detectar a partir de una lista normal de ingredientes los ftalatos que hayan migrado del envase al alimento.",
+  "cannot_2": "Determinar por una etiqueta alimentaria de dónde procede la exposición de una persona ni demostrar que los ftalatos hayan causado endometriosis o reducción de la reserva ovárica.",
   "sources": [
     {
-      "label": "EFSA — Actualización de la evaluación de riesgos de los ftalatos para su uso en materiales en contacto con alimentos (2019)",
-      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/5838"
+      "label": "FDA — Phthalates in Food Packaging and Food Contact Applications",
+      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
     },
     {
-      "label": "FDA — Ftalatos en envases alimentarios y aplicaciones en contacto con alimentos (actualizado en 2026)",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/phthalates-food-packaging-and-food-contact-applications"
+      "label": "Systematic review and meta-analysis — Phthalate exposure and endometriosis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34227050/"
+    },
+    {
+      "label": "Human study — Urinary phthalate metabolites and ovarian reserve",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26573529/"
+    },
+    {
+      "label": "Human study — Phthalates and ovarian reserve markers",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38575009/"
+    },
+    {
+      "label": "Human exposure study — Personal-care products and urinary phthalates in women",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23168567/"
     }
   ],
   "title": "Ftalatos",
-  "description": "Plastificantes ortoftalatos en materiales en contacto con alimentos; se ha ampliado la lista para incluir los códigos DCHP y DIOP."
+  "description": "Los ftalatos pueden migrar desde plásticos en contacto con alimentos; los estudios muestran asociaciones con endometriosis y marcadores más bajos de reserva ovárica, pero la lista de ingredientes no detecta esa exposición."
 }
