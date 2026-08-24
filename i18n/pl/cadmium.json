@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Zanieczyszczenie środowiska metalami ciężkimi, które gromadzi się w organizmie.",
-  "why_botia": "Kadm może gromadzić się w organizmie i pozostawać w nim przez lata. Niskie zapasy żelaza mogą zwiększać wchłanianie. Jest to indywidualny czynnik podatności, a nie reguła dotycząca wszystkich kobiet.",
-  "can_1": "Identyfikuj surowe składniki żywności o wysokim ryzyku akumulacji kadmu.",
-  "can_2": "Wyjaśnij, że niski poziom żelaza może zwiększać wchłanianie kadmu. Etykieta żywności nie może ujawnić poziomu żelaza ani tempa wchłaniania u danej osoby, a płeć nie jest substytutem żadnego z tych czynników.",
-  "cannot_1": "Zmierz rzeczywiste stężenie w gotowym produkcie poprzez OCR etykiety.",
-  "cannot_2": "Potwierdź zgodność z europejskimi maksymalnymi poziomami bez analizy chemicznej.",
+  "what_is": "Kadm jest zanieczyszczającym metalem ciężkim, który trafia do żywności ze środowiska i gromadzi się w organizmie, szczególnie w nerkach.",
+  "why_botia": "Kadm gromadzi się w nerkach i opuszcza organizm tak wolno, że narażenie sumuje się przez dziesięciolecia. Trafia do żywności z gleby — szczególnie przez zboża, ziemniaki, warzywa liściaste, skorupiaki i kakao. Osoby z niskimi zapasami żelaza wchłaniają go więcej, a niskie zapasy żelaza częściej występują u kobiet. JECFA ustaliła z tego powodu miesięczny limit, ponieważ liczy się suma z wielu lat, a nie jeden posiłek.",
+  "can_1": "Pokazywać, które zadeklarowane produkty mogą przyczyniać się do narażenia na kadm, w tym zboża, ziemniaki, warzywa liściaste, skorupiaki i kakao.",
+  "can_2": "Wyjaśniać, że niskie zapasy żelaza mogą zwiększać wchłanianie kadmu i częściej występują u kobiet.",
+  "cannot_1": "Zmierzyć na podstawie listy składników rzeczywistej ilości kadmu w żywności.",
+  "cannot_2": "Znać zapasów żelaza danej osoby ani obliczyć kadmu nagromadzonego ze wszystkiego, co jadła przez lata.",
   "sources": [
     {
-      "label": "EFSA Metale jako zanieczyszczenia w żywności",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "JECFA — Cadmium: PTMI 25 µg/kg body weight per month",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1376"
     },
     {
-      "label": "Rozporządzenie Komisji (UE) 2023/915 w sprawie zanieczyszczeń w żywności",
-      "url": "https://eur-lex.europa.eu/eli/reg/2023/915/2025-10-08/eng"
+      "label": "WHO — Cadmium: food exposure and accumulation",
+      "url": "https://www.who.int/teams/environment-climate-change-and-health/chemical-safety-and-health/health-impacts/chemicals/cadmium"
+    },
+    {
+      "label": "Human study — Dietary cadmium absorption in women and body iron stores",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7713018/"
+    },
+    {
+      "label": "Review — Cadmium, women and iron stores",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9569444/"
+    },
+    {
+      "label": "Review — Toxic metals and the menopause",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15207026/"
     }
   ],
   "title": "Kadm",
-  "description": "Zanieczyszczenie środowiska metalami ciężkimi, które gromadzi się w organizmie."
+  "description": "Kadm gromadzi się w nerkach przez dziesięciolecia. Niskie zapasy żelaza zwiększają jego wchłanianie i częściej występują u kobiet."
 }

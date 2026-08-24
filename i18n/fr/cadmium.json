@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Un contaminant environnemental métallique lourd qui s'accumule dans le corps.",
-  "why_botia": "Le cadmium peut s'accumuler dans l'organisme et y rester pendant des années. De faibles réserves en fer peuvent augmenter son absorption. Il s'agit d'un facteur de susceptibilité individuel, et non d'une règle qui s'applique à toutes les femmes.",
-  "can_1": "Identifier les ingrédients alimentaires bruts présentant des risques élevés d'accumulation de cadmium.",
-  "can_2": "Expliquez qu’un faible taux de fer peut augmenter l’absorption du cadmium. Une étiquette alimentaire ne peut pas révéler le statut en fer d’une personne ni son taux d’absorption, et le sexe ne remplace ni l’un ni l’autre.",
-  "cannot_1": "Mesurer la concentration réelle dans le produit fini par OCR de l'étiquette.",
-  "cannot_2": "Confirmer la conformité avec les niveaux maximaux européens sans analyse chimique.",
+  "what_is": "Le cadmium est un métal lourd contaminant qui atteint les aliments depuis l'environnement et s'accumule dans l'organisme, en particulier dans les reins.",
+  "why_botia": "Le cadmium s'accumule dans les reins et quitte le corps si lentement que l'exposition s'additionne pendant des décennies. Il arrive dans les aliments depuis le sol — notamment par les céréales, les pommes de terre, les légumes à feuilles, les coquillages et le cacao. Les personnes dont les réserves de fer sont faibles en absorbent davantage, et les faibles réserves de fer sont plus fréquentes chez les femmes. Le JECFA a fixé une limite mensuelle parce que c'est le total sur des années qui compte, pas un seul repas.",
+  "can_1": "Montrer quels aliments déclarés peuvent contribuer à l'exposition au cadmium, notamment les céréales, pommes de terre, légumes à feuilles, coquillages et cacao.",
+  "can_2": "Expliquer que de faibles réserves de fer peuvent augmenter l'absorption du cadmium et qu'elles sont plus fréquentes chez les femmes.",
+  "cannot_1": "Mesurer la quantité réelle de cadmium dans un aliment à partir de sa liste d'ingrédients.",
+  "cannot_2": "Connaître les réserves de fer d'une personne ou calculer le cadmium accumulé par tout ce qu'elle a mangé pendant des années.",
   "sources": [
     {
-      "label": "EFSA — Métaux en tant que contaminants dans les aliments",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "JECFA — Cadmium: PTMI 25 µg/kg body weight per month",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1376"
     },
     {
-      "label": "Règlement (UE) 2023/915 de la Commission concernant les contaminants dans les denrées alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2023/915/2025-10-08/eng"
+      "label": "WHO — Cadmium: food exposure and accumulation",
+      "url": "https://www.who.int/teams/environment-climate-change-and-health/chemical-safety-and-health/health-impacts/chemicals/cadmium"
+    },
+    {
+      "label": "Human study — Dietary cadmium absorption in women and body iron stores",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7713018/"
+    },
+    {
+      "label": "Review — Cadmium, women and iron stores",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9569444/"
+    },
+    {
+      "label": "Review — Toxic metals and the menopause",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15207026/"
     }
   ],
   "title": "Cadmium",
-  "description": "Un contaminant environnemental métallique lourd qui s'accumule dans le corps."
+  "description": "Le cadmium s'accumule dans les reins pendant des décennies. De faibles réserves de fer augmentent son absorption et sont plus fréquentes chez les femmes."
 }

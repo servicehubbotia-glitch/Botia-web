@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "Un contaminante ambiental de metal pesado que se acumula en el cuerpo.",
-  "why_botia": "El cadmio puede acumularse en el cuerpo y permanecer durante años. Los niveles bajos de hierro pueden aumentar su absorción. Ese es un factor de susceptibilidad individual, no una regla que se aplique a todas las mujeres.",
-  "can_1": "Identificar ingredientes alimentarios crudos con alto riesgo de acumulación de cadmio.",
-  "can_2": "Explique que el hierro bajo puede aumentar la absorción de cadmio. Una etiqueta de alimentos no puede revelar el estado de hierro de una persona ni su tasa de absorción, y el sexo no sustituye a ninguno de los dos.",
-  "cannot_1": "Medir la concentración real en el producto terminado mediante OCR de etiquetas.",
-  "cannot_2": "Confirmar el cumplimiento de los niveles máximos europeos sin análisis químico.",
+  "what_is": "El cadmio es un metal pesado contaminante que llega a los alimentos desde el medio ambiente y se acumula en el cuerpo, especialmente en los riñones.",
+  "why_botia": "El cadmio se acumula en los riñones y sale del cuerpo tan despacio que la exposición se va sumando durante décadas. Llega a los alimentos desde el suelo — sobre todo por cereales, patatas, verduras de hoja, marisco y cacao. Quien tiene las reservas de hierro bajas absorbe más, y eso ocurre con más frecuencia en mujeres. JECFA fijó un límite mensual porque lo que cuenta es el total a lo largo de los años, no una comida.",
+  "can_1": "Mostrar qué alimentos declarados pueden contribuir a la exposición al cadmio, incluidos cereales, patatas, verduras de hoja, marisco y cacao.",
+  "can_2": "Explicar que unas reservas de hierro bajas pueden aumentar la absorción de cadmio y que esto ocurre con más frecuencia en mujeres.",
+  "cannot_1": "Medir cuánto cadmio contiene realmente un alimento a partir de su lista de ingredientes.",
+  "cannot_2": "Conocer las reservas de hierro de una persona ni calcular el cadmio acumulado por todo lo consumido durante años.",
   "sources": [
     {
-      "label": "EFSA Metales como Contaminantes en Alimentos",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "JECFA — Cadmium: PTMI 25 µg/kg body weight per month",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1376"
     },
     {
-      "label": "Reglamento (UE) 2023/915 de la Comisión sobre contaminantes en los alimentos",
-      "url": "https://eur-lex.europa.eu/eli/reg/2023/915/2025-10-08/eng"
+      "label": "WHO — Cadmium: food exposure and accumulation",
+      "url": "https://www.who.int/teams/environment-climate-change-and-health/chemical-safety-and-health/health-impacts/chemicals/cadmium"
+    },
+    {
+      "label": "Human study — Dietary cadmium absorption in women and body iron stores",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7713018/"
+    },
+    {
+      "label": "Review — Cadmium, women and iron stores",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9569444/"
+    },
+    {
+      "label": "Review — Toxic metals and the menopause",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15207026/"
     }
   ],
   "title": "Cadmio",
-  "description": "Un contaminante ambiental de metal pesado que se acumula en el cuerpo."
+  "description": "El cadmio se acumula en los riñones durante décadas. Las reservas bajas de hierro aumentan su absorción, algo especialmente relevante porque ocurre con más frecuencia en mujeres."
 }

@@ -6,22 +6,34 @@
   "layers": [
     "woman"
   ],
-  "what_is": "一种在体内积累的重金属环境污染物。",
-  "why_botia": "镉可在体内蓄积并留存多年。体内铁储备较低时，吸收量可能增加。这是一个个体易感因素，并非适用于所有女性的普遍规律。",
-  "can_1": "识别具有高镉积累风险的生食品原料。",
-  "can_2": "解释缺铁会增加镉的吸收。食品标签无法显示某人的铁状况或吸收率，而性别也不能替代这两者中的任何一项。",
-  "cannot_1": "通过标签OCR测量成品中的实际浓度。",
-  "cannot_2": "未经化学分析确认是否符合欧洲最高限量标准。",
+  "what_is": "镉是一种重金属污染物，可从环境进入食品，并在人体内积累，尤其是在肾脏中。",
+  "why_botia": "镉会在肾脏中积累，而且离开人体的速度非常慢，因此暴露会在几十年间不断累积。它从土壤进入食品——尤其是谷物、马铃薯、绿叶蔬菜、贝类和可可。铁储备较低的人会吸收更多镉，而铁储备低在女性中更常见。JECFA 因此设定了每月限量，因为真正重要的是多年累积的总量，而不是一顿饭。",
+  "can_1": "显示哪些已声明食品可能增加镉暴露，包括谷物、马铃薯、绿叶蔬菜、贝类和可可。",
+  "can_2": "解释低铁储备可能增加镉的吸收，而且这种情况在女性中更常见。",
+  "cannot_1": "根据配料表测量食品中实际含有多少镉。",
+  "cannot_2": "知道个人的铁储备水平，或计算多年饮食所累积的镉总量。",
   "sources": [
     {
-      "label": "EFSA食品中金属污染物",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "JECFA — Cadmium: PTMI 25 µg/kg body weight per month",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1376"
     },
     {
-      "label": "欧盟委员会关于食品污染物的第2023/915号法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2023/915/2025-10-08/eng"
+      "label": "WHO — Cadmium: food exposure and accumulation",
+      "url": "https://www.who.int/teams/environment-climate-change-and-health/chemical-safety-and-health/health-impacts/chemicals/cadmium"
+    },
+    {
+      "label": "Human study — Dietary cadmium absorption in women and body iron stores",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7713018/"
+    },
+    {
+      "label": "Review — Cadmium, women and iron stores",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9569444/"
+    },
+    {
+      "label": "Review — Toxic metals and the menopause",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15207026/"
     }
   ],
   "title": "镉",
-  "description": "一种在体内积累的重金属环境污染物。"
+  "description": "镉会在肾脏中积累数十年。低铁储备会增加吸收，而低铁储备在女性中更常见。"
 }
