@@ -6,22 +6,26 @@
   "layers": [
     "flavour"
   ],
-  "what_is": "Ingrédients savoureux obtenus en décomposant les cellules de levure ou les protéines en composants plus petits. Les extraits de levure et les protéines hydrolysées peuvent contenir du glutamate libre d'origine naturelle.",
-  "why_botia": "BOTIA signale ces termes car ils sont couramment utilisés pour rehausser la saveur et peuvent contenir du glutamate libre d'origine naturelle, même lorsque le glutamate monosodique (MSG/E621e) n'est pas mentionné comme ingrédient ajouté séparément.",
-  "can_1": "Identifier l'extrait de levure, la levure autolysée ou hydrolysée, les protéines végétales hydrolysées et les mentions déclarées associées.",
-  "can_2": "Activer la couche d'informations sur les arômes tout en distinguant ces mentions d'une mention relative à l'ajout de glutamate monosodique (MSG) ou de «E621 ».",
-  "cannot_1": "Quantifiez la quantité de glutamate libre présente en vous basant uniquement sur la liste des ingrédients.",
-  "cannot_2": "Déterminez la source d'origine de la protéine ou le procédé de fabrication lorsque l'étiquette utilise uniquement un terme générique tel que « protéine hydrolysée ».",
+  "what_is": "Des ingrédients savoureux obtenus en décomposant des cellules de levure ou des protéines en composants plus petits. L’extrait de levure contient naturellement des acides aminés libres, dont le glutamate, et des nucléotides actifs sur le goût.",
+  "why_botia": "L’extrait de levure est utilisé pour intensifier le goût parce qu’il contient du glutamate libre et des nucléotides umami déjà présents dans la levure. Certains extraits contiennent environ 5 % de glutamate libre, mais l’étiquette indique seulement « extrait de levure » sans préciser combien il en apporte. Un produit peut donc renforcer le goût d’une manière comparable à E621 sans déclarer E621 ni le mot « glutamate ».",
+  "can_1": "Identifier l’extrait de levure, la levure autolysée ou hydrolysée, les protéines végétales hydrolysées et les termes apparentés.",
+  "can_2": "Expliquer que l’extrait de levure peut apporter du glutamate libre et des nucléotides umami même lorsque E621 n’est pas déclaré séparément.",
+  "cannot_1": "Déterminer à partir de la liste d’ingrédients la quantité de glutamate libre apportée par l’extrait de levure.",
+  "cannot_2": "Déterminer la composition exacte ou le procédé de fabrication d’un extrait de levure ou d’une protéine hydrolysée génériques à partir du seul nom.",
   "sources": [
     {
-      "label": "FDA — Questions et réponses sur le glutamate monosodique (MSG)",
+      "label": "FDA — Questions and Answers on Monosodium Glutamate (MSG)",
       "url": "https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg"
     },
     {
-      "label": "FDA — Types d'ingrédients alimentaires",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "Tomé 2021 — Yeast Extracts: Nutritional and Flavoring Food Ingredients",
+      "url": "https://pubs.acs.org/doi/10.1021/acsfoodscitech.0c00131"
+    },
+    {
+      "label": "Yeast Extract: Characteristics, Production, Applications and Future Perspectives",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9998214/"
     }
   ],
   "title": "Extrait de levure et protéines hydrolysées",
-  "description": "Ingrédients salés pouvant contenir naturellement du glutamate libre et couramment utilisés pour rehausser la saveur."
+  "description": "L’extrait de levure contient naturellement du glutamate libre et des nucléotides umami et peut renforcer le goût sans que E621 ni le mot glutamate soient déclarés séparément."
 }

@@ -6,22 +6,26 @@
   "layers": [
     "flavour"
   ],
-  "what_is": "Savoury ingredients made by breaking down yeast cells or proteins into smaller components. Yeast extracts and hydrolysed proteins can contain naturally occurring free glutamate.",
-  "why_botia": "BOTIA flags these terms because they are commonly used for flavour enhancement and can contain naturally occurring free glutamate even when monosodium glutamate (MSG/E621) is not listed as a separately added ingredient.",
+  "what_is": "Savoury ingredients made by breaking down yeast cells or proteins into smaller components. Yeast extract naturally contains free amino acids, including glutamate, and flavour-active nucleotides.",
+  "why_botia": "Yeast extract is used to intensify flavour because it contains free glutamate and umami nucleotides that were already present in the yeast. Some extracts contain around 5% free glutamate, but the label only says “yeast extract” and does not say how much it provides. That means a product can enhance flavour in a way similar to E621 without declaring E621 or the word “glutamate”.",
   "can_1": "Identify yeast extract, autolysed or hydrolysed yeast, hydrolysed vegetable protein and related declared terms.",
-  "can_2": "Trigger the flavour information layer while distinguishing these declarations from a declaration of added MSG/E621.",
-  "cannot_1": "Quantify the amount of free glutamate present from the ingredient list alone.",
-  "cannot_2": "Determine the original protein source or manufacturing process when the label uses only a generic term such as hydrolysed protein.",
+  "can_2": "Explain that yeast extract can contribute free glutamate and umami nucleotides even when E621 is not separately declared.",
+  "cannot_1": "Determine from the ingredient list how much free glutamate the yeast extract contributes.",
+  "cannot_2": "Determine the exact composition or manufacturing process of a generic yeast extract or hydrolysed protein from its name alone.",
   "sources": [
     {
       "label": "FDA — Questions and Answers on Monosodium Glutamate (MSG)",
       "url": "https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg"
     },
     {
-      "label": "FDA — Types of Food Ingredients",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "Tomé 2021 — Yeast Extracts: Nutritional and Flavoring Food Ingredients",
+      "url": "https://pubs.acs.org/doi/10.1021/acsfoodscitech.0c00131"
+    },
+    {
+      "label": "Yeast Extract: Characteristics, Production, Applications and Future Perspectives",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9998214/"
     }
   ],
   "title": "Yeast Extract & Hydrolysed Proteins",
-  "description": "Savoury ingredients that can contain naturally occurring free glutamate and are commonly used for flavour enhancement."
+  "description": "Yeast extract naturally contains free glutamate and umami nucleotides and can enhance flavour without E621 or the word glutamate being separately declared."
 }

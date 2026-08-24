@@ -6,22 +6,26 @@
   "layers": [
     "flavour"
   ],
-  "what_is": "通过将酵母细胞或蛋白质分解为更小的成分而制成的增味原料。酵母提取物和水解蛋白中可能含有天然存在的游离谷氨酸。",
-  "why_botia": "BOTIA 对这些术语进行标注，是因为它们通常用于提味，即使谷氨酸钠（MSG/E621）未被列为单独添加的成分，其中仍可能含有天然存在的游离谷氨酸。",
-  "can_1": "识别酵母提取物、自溶酵母或水解酵母、水解植物蛋白及相关标示术语。",
-  "can_2": "在区分这些声明与关于添加味精（MSG）或E621的声明的同时，触发风味信息层。",
-  "cannot_1": "仅根据配料表，量化其中所含的游离谷氨酸含量。",
-  "cannot_2": "当标签上仅使用“水解蛋白”等通用术语时，应确定该蛋白质的原始来源或生产工艺。",
+  "what_is": "通过将酵母细胞或蛋白质分解成较小成分制成的鲜味原料。酵母提取物天然含有游离氨基酸，包括谷氨酸，以及具有呈味作用的核苷酸。",
+  "why_botia": "酵母提取物用于增强味道，因为它含有酵母本身已有的游离谷氨酸和鲜味核苷酸。有些提取物含有约5%的游离谷氨酸，但标签只写“酵母提取物”，不会说明它实际提供了多少。因此，一个产品可以以类似 E621 的方式增强味道，却无需单独声明 E621 或写出“谷氨酸”这个词。",
+  "can_1": "识别酵母提取物、自溶或水解酵母、水解植物蛋白及相关标签名称。",
+  "can_2": "说明即使 E621 没有单独声明，酵母提取物仍可以提供游离谷氨酸和鲜味核苷酸。",
+  "cannot_1": "仅凭配料表确定酵母提取物实际提供多少游离谷氨酸。",
+  "cannot_2": "仅凭名称确定笼统酵母提取物或水解蛋白的确切组成或生产工艺。",
   "sources": [
     {
-      "label": "美国食品药品监督管理局（FDA）——关于谷氨酸钠（MSG）的问答",
+      "label": "FDA — Questions and Answers on Monosodium Glutamate (MSG)",
       "url": "https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg"
     },
     {
-      "label": "美国食品药品监督管理局（FDA）——食品配料类型",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "Tomé 2021 — Yeast Extracts: Nutritional and Flavoring Food Ingredients",
+      "url": "https://pubs.acs.org/doi/10.1021/acsfoodscitech.0c00131"
+    },
+    {
+      "label": "Yeast Extract: Characteristics, Production, Applications and Future Perspectives",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9998214/"
     }
   ],
   "title": "酵母提取物与水解蛋白",
-  "description": "可能含有天然存在的游离谷氨酸，且常用于提味的咸味配料。"
+  "description": "酵母提取物天然含有游离谷氨酸和鲜味核苷酸，因此即使没有单独标出 E621 或“谷氨酸”，也可以增强味道。"
 }

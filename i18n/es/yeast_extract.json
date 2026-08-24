@@ -6,22 +6,26 @@
   "layers": [
     "flavour"
   ],
-  "what_is": "Ingredientes salados que se obtienen al descomponer las células de levadura o las proteínas en componentes más pequeños. Los extractos de levadura y las proteínas hidrolizadas pueden contener glutamato libre de origen natural.",
-  "why_botia": "BOTIA señala estos términos porque se utilizan habitualmente para potenciar el sabor y pueden contener glutamato libre de origen natural, incluso cuando el glutamato monosódico (MSG/E621) no figura como ingrediente añadido por separado.",
-  "can_1": "Identifica el extracto de levadura, la levadura autolisada o hidrolizada, la proteína vegetal hidrolizada y los términos relacionados que figuren en la declaración de ingredientes.",
-  "can_2": "Activar la capa de información sobre el sabor, distinguiendo al mismo tiempo estas declaraciones de una declaración relativa a la adición de glutamato monosódico (MSG) o «E621».",
-  "cannot_1": "Calcula la cantidad de glutamato libre presente basándote únicamente en la lista de ingredientes.",
-  "cannot_2": "Determina la fuente original de la proteína o el proceso de fabricación cuando en la etiqueta solo se utilice un término genérico, como «proteína hidrolizada».",
+  "what_is": "Ingredientes sabrosos obtenidos al descomponer células de levadura o proteínas en componentes más pequeños. El extracto de levadura contiene de forma natural aminoácidos libres, incluido glutamato, y nucleótidos activos en el sabor.",
+  "why_botia": "El extracto de levadura se usa para intensificar el sabor porque contiene glutamato libre y nucleótidos umami de la propia levadura. Algunos extractos contienen alrededor de un 5 % de glutamato libre, pero la etiqueta solo dice “extracto de levadura” y no indica cuánto aporta. Por eso un producto puede potenciar el sabor de forma parecida al E621 sin declarar E621 ni la palabra “glutamato”.",
+  "can_1": "Detectar extracto de levadura, levadura autolizada o hidrolizada, proteína vegetal hidrolizada y términos relacionados cuando aparecen declarados.",
+  "can_2": "Explicar que el extracto de levadura puede aportar glutamato libre y nucleótidos umami aunque E621 no aparezca declarado por separado.",
+  "cannot_1": "Determinar a partir de la lista de ingredientes cuánto glutamato libre aporta el extracto de levadura.",
+  "cannot_2": "Determinar la composición exacta o el proceso de fabricación de un extracto de levadura o una proteína hidrolizada genéricos solo por su nombre.",
   "sources": [
     {
-      "label": "FDA — Preguntas y respuestas sobre el glutamato monosódico (GMS)",
+      "label": "FDA — Preguntas y respuestas sobre el glutamato monosódico (MSG)",
       "url": "https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg"
     },
     {
-      "label": "FDA — Tipos de ingredientes alimentarios",
-      "url": "https://www.fda.gov/food/food-additives-and-gras-ingredients-information-consumers/types-food-ingredients"
+      "label": "Tomé 2021 — Extractos de levadura: ingredientes nutricionales y aromatizantes",
+      "url": "https://pubs.acs.org/doi/10.1021/acsfoodscitech.0c00131"
+    },
+    {
+      "label": "Revisión — Extracto de levadura: características, producción y aplicaciones",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9998214/"
     }
   ],
   "title": "Extracto de levadura y proteínas hidrolizadas",
-  "description": "Ingredientes salados que pueden contener glutamato libre de origen natural y que se utilizan habitualmente para potenciar el sabor."
+  "description": "El extracto de levadura contiene de forma natural glutamato libre y nucleótidos umami, y puede potenciar el sabor sin que E621 ni la palabra glutamato aparezcan declarados por separado."
 }
