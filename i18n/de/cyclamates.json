@@ -1,28 +1,36 @@
 {
   "name": "Cyclamate",
   "e_code": "E952",
-  "aliases": "E952, Cyclamate, Cyclaminsäure, Natriumcyclamat, Calciumcyclamat, Ciclamato, Ácido ciclámico",
+  "aliases": "E952, INS 952(i), INS 952(ii), INS 952(iv), cyclohexylsulfamic acid, Cyclamate, Cyclaminsäure, Natriumcyclamat, Calciumcyclamat, Ciclamato, Ácido ciclámico",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Ein intensiver synthetischer Süßstoff, der etwa 30- bis 40-mal süßer ist als Saccharose.",
-  "why_botia": "Es ist ein künstlicher Süßstoff, der für ultra-verarbeitete Lebensmittelrezepturen charakteristisch ist.",
-  "can_1": "Erkennen von E952 oder seinen Salzen in gescannten Zutatenlisten.",
-  "can_2": "Das Produkt als künstlichen Süßstoff enthaltend im NOVA-System einordnen.",
-  "cannot_1": "Die genaue Konzentration von Cyclamat im Endprodukt messen.",
-  "cannot_2": "Feststellen, ob chemische Verunreinigungen sichere Reinheitsschwellen überschreiten.",
+  "what_is": "Cyclamate sind synthetische Süßstoffe auf Basis von Cyclaminsäure sowie deren Calcium- und Natriumsalzen. Codex bezeichnet Cyclaminsäure als INS 952(i), Calciumcyclamat als INS 952(ii) und Natriumcyclamat als INS 952(iv); sie sind etwa 30–40-mal süßer als Zucker.",
+  "why_botia": "Cyclamate sind etwa 30–40-mal süßer als Zucker, sodass bereits eine kleine Menge viel Süße liefern kann — und die Zutatenliste nicht erkennen lässt, wie viel verwendet wurde. Ein Teil der aufgenommenen Menge kann durch Darmbakterien in Cyclohexylamin umgewandelt werden; diese Umwandlung unterscheidet sich stark zwischen Menschen, und dieser Metabolit bildete die Grundlage für den JECFA-ADI von 0–11 mg/kg Körpergewicht, ausgedrückt als Cyclaminsäure. Codex enthält Verwendungsbestimmungen für Cyclamate in bestimmten Lebensmittelkategorien, während sie in den Vereinigten Staaten in Lebensmitteln verboten sind, sodass der rechtliche Status vom Markt abhängt.",
+  "can_1": "E952, die Codex-INS-952-Kennungen, Cyclaminsäure, Natriumcyclamat und Calciumcyclamat erkennen, wenn sie ausdrücklich deklariert sind.",
+  "can_2": "Ihre Süßfunktion, die Umwandlung zu Cyclohexylamin, die akzeptable tägliche Aufnahmemenge von JECFA und den rechtsraumspezifischen Status erklären.",
+  "cannot_1": "Allein aus der Zutatenangabe bestimmen, wie viel Cyclamat enthalten ist.",
+  "cannot_2": "Bestimmen, wie viel Cyclamat die Darmbakterien einer bestimmten Person in Cyclohexylamin umwandeln würden.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cyclamic acid / Cyclamates (INS 952)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2005"
     },
     {
-      "label": "FAO NOVA-Klassifikationssystem (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Cyclamates and cyclohexylamine toxicological monograph (FAS 17)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v17je08.htm"
+    },
+    {
+      "label": "Codex GSFA — Cyclamates group (INS 952)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=71"
+    },
+    {
+      "label": "United States eCFR — 21 CFR § 189.135 Cyclamate and its derivatives",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-189/subpart-C/section-189.135"
     }
   ],
   "title": "Cyclamate",
-  "description": "Ein intensiver synthetischer Süßstoff, der etwa 30- bis 40-mal süßer ist als Saccharose."
+  "description": "Cyclamate (E952 / INS 952) sind etwa 30–40-mal süßer als Zucker; JECFA legte einen ADI von 0–11 mg/kg Körpergewicht fest und die Verwendungsregeln unterscheiden sich je nach Rechtsraum."
 }

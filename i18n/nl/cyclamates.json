@@ -1,28 +1,36 @@
 {
   "name": "Cyclamaten",
   "e_code": "E952",
-  "aliases": "E952, cyclamaten, cyclaminezuur, natriumcyclamaat, calciumcyclamaat, ciclamato, ácido ciclámico",
+  "aliases": "E952, INS 952(i), INS 952(ii), INS 952(iv), cyclamate, cyclohexylsulfamic acid, cyclamaten, cyclaminezuur, natriumcyclamaat, calciumcyclamaat, ciclamato, ácido ciclámico",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Een intense synthetische zoetstof die ongeveer 30 tot 40 keer zoeter is dan sucrose.",
-  "why_botia": "Het is een kunstmatige zoetstof die kenmerkend is voor ultra-bewerkte voedingsformuleringen.",
-  "can_1": "Detecteer E952 of de zouten ervan op gescande ingrediëntenlijsten.",
-  "can_2": "Breng het product in kaart als bevattend kunstmatige zoetstoffen onder het NOVA-systeem.",
-  "cannot_1": "Meet de exacte concentratie cyclamaat in het eindproduct.",
-  "cannot_2": "Bepaal of chemische onzuiverheden de veilige zuiverheidsdrempels overschrijden.",
+  "what_is": "Cyclamaten zijn synthetische zoetstoffen op basis van cyclaminezuur en de calcium- en natriumzouten daarvan. Codex identificeert cyclaminezuur als INS 952(i), calciumcyclamaat als INS 952(ii) en natriumcyclamaat als INS 952(iv); ze zijn ongeveer 30–40 keer zo zoet als suiker.",
+  "why_botia": "Cyclamaten zijn ongeveer 30–40 keer zo zoet als suiker, waardoor een kleine hoeveelheid veel zoetheid kan geven — en de ingrediëntenlijst niet laat zien hoeveel is gebruikt. Een deel van een ingenomen dosis kan door darmbacteriën worden omgezet in cyclohexylamine; die omzetting verschilt sterk tussen mensen en deze metaboliet vormde de basis voor de JECFA-ADI van 0–11 mg/kg lichaamsgewicht, uitgedrukt als cyclaminezuur. Codex heeft gebruiksbepalingen voor cyclamaten in bepaalde voedselcategorieën, terwijl de Verenigde Staten ze in voedsel verbieden, waardoor de wettelijke status per markt verschilt.",
+  "can_1": "E952, de Codex INS 952-aanduidingen, cyclaminezuur, natriumcyclamaat en calciumcyclamaat detecteren wanneer ze expliciet worden vermeld.",
+  "can_2": "Hun zoetfunctie, omzetting naar cyclohexylamine, de aanvaardbare dagelijkse inname van JECFA en de wettelijke status per rechtsgebied uitleggen.",
+  "cannot_1": "Uit alleen de ingrediëntenverklaring bepalen hoeveel cyclamaat aanwezig is.",
+  "cannot_2": "Bepalen hoeveel cyclamaat de darmbacteriën van een bepaalde persoon zouden omzetten in cyclohexylamine.",
   "sources": [
     {
-      "label": "Verordening (EU) nr. 231/2012 van de Commissie",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cyclamic acid / Cyclamates (INS 952)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2005"
     },
     {
-      "label": "FAO NOVA-classificatiesysteem (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Cyclamates and cyclohexylamine toxicological monograph (FAS 17)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v17je08.htm"
+    },
+    {
+      "label": "Codex GSFA — Cyclamates group (INS 952)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=71"
+    },
+    {
+      "label": "United States eCFR — 21 CFR § 189.135 Cyclamate and its derivatives",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-189/subpart-C/section-189.135"
     }
   ],
   "title": "Cyclamaten",
-  "description": "Een intense synthetische zoetstof die ongeveer 30 tot 40 keer zoeter is dan sucrose."
+  "description": "Cyclamaten (E952 / INS 952) zijn ongeveer 30–40 keer zo zoet als suiker; JECFA stelde een ADI van 0–11 mg/kg lichaamsgewicht vast en de gebruiksregels verschillen per rechtsgebied."
 }

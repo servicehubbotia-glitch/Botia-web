@@ -1,28 +1,36 @@
 {
   "name": "Cyclamates",
   "e_code": "E952",
-  "aliases": "E952, cyclamates, cyclamic acid, sodium cyclamate, calcium cyclamate, ciclamato, ácido ciclámico",
+  "aliases": "E952, INS 952(i), INS 952(ii), INS 952(iv), cyclamate, cyclohexylsulfamic acid, cyclamates, cyclamic acid, sodium cyclamate, calcium cyclamate, ciclamato, ácido ciclámico",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "An intense synthetic sweetener approximately 30 to 40 times sweeter than sucrose.",
-  "why_botia": "It is an artificial sweetener characteristic of ultra-processed food formulations.",
-  "can_1": "Detect E952 or its salts on scanned ingredient lists.",
-  "can_2": "Map the product as containing artificial sweeteners under the NOVA system.",
-  "cannot_1": "Measure the exact concentration of cyclamate in the final product.",
-  "cannot_2": "Determine if chemical impurities exceed safe purity thresholds.",
+  "what_is": "Cyclamates are synthetic sweeteners based on cyclamic acid and its calcium and sodium salts. Codex identifies cyclamic acid as INS 952(i), calcium cyclamate as INS 952(ii) and sodium cyclamate as INS 952(iv); they are about 30–40 times sweeter than sugar.",
+  "why_botia": "Cyclamates are about 30–40 times sweeter than sugar, so a small amount can provide a lot of sweetness — and the ingredient list cannot show how much was used. Part of an ingested dose can be converted by intestinal bacteria into cyclohexylamine; conversion varies widely between people, and that metabolite was the basis for JECFA's ADI of 0–11 mg/kg body weight, expressed as cyclamic acid. Codex has food-use provisions for cyclamates in specified categories, while the United States prohibits them in food, so legal status depends on the market.",
+  "can_1": "Detect E952, the Codex INS 952 identifiers, cyclamic acid, sodium cyclamate and calcium cyclamate when explicitly declared.",
+  "can_2": "Explain their sweetening function, conversion to cyclohexylamine, the JECFA acceptable daily intake and jurisdiction-specific food-use status.",
+  "cannot_1": "Determine how much cyclamate is present from the ingredient declaration alone.",
+  "cannot_2": "Determine how much cyclamate a particular person's intestinal bacteria would convert to cyclohexylamine.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cyclamic acid / Cyclamates (INS 952)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2005"
     },
     {
-      "label": "NOVA Classification System (FAO, 2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Cyclamates and cyclohexylamine toxicological monograph (FAS 17)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v17je08.htm"
+    },
+    {
+      "label": "Codex GSFA — Cyclamates group (INS 952)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=71"
+    },
+    {
+      "label": "United States eCFR — 21 CFR § 189.135 Cyclamate and its derivatives",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-189/subpart-C/section-189.135"
     }
   ],
   "title": "Cyclamates",
-  "description": "An intense synthetic sweetener approximately 30 to 40 times sweeter than sucrose."
+  "description": "Cyclamates (E952 / INS 952) are sweeteners about 30–40 times sweeter than sugar; JECFA set an ADI of 0–11 mg/kg body weight and food-use rules differ by jurisdiction."
 }

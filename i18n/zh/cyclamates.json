@@ -1,28 +1,36 @@
 {
   "name": "甜蜜素",
   "e_code": "E952",
-  "aliases": "E952, 甜蜜素, 环己基氨基磺酸, 环己基氨基磺酸钠, 环己基氨基磺酸钙, 甜蜜素, 环己基氨基磺酸",
+  "aliases": "E952, INS 952(i), INS 952(ii), INS 952(iv), cyclamate, cyclohexylsulfamic acid, 甜蜜素, 环己基氨基磺酸, 环己基氨基磺酸钠, 环己基氨基磺酸钙, 甜蜜素, 环己基氨基磺酸",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "一种强烈的人工合成甜味剂，甜度约为蔗糖的30至40倍。",
-  "why_botia": "它是一种人工甜味剂，是超加工食品配方的典型特征。",
-  "can_1": "在扫描的配料表中检测E952或其盐类。",
-  "can_2": "根据NOVA系统，将产品标记为含有人工甜味剂。",
-  "cannot_1": "测量最终产品中甜蜜素的精确浓度。",
-  "cannot_2": "确定化学杂质是否超过安全纯度阈值。",
+  "what_is": "甜蜜素是一类以环己基氨基磺酸及其钙盐和钠盐为基础的合成甜味剂。Codex 将环己基氨基磺酸列为 INS 952(i)，环己基氨基磺酸钙列为 INS 952(ii)，环己基氨基磺酸钠列为 INS 952(iv)；其甜度约为糖的30–40倍。",
+  "why_botia": "甜蜜素的甜度约为糖的30–40倍，因此很少的量就能产生明显甜味——而配料表无法显示实际用了多少。摄入的一部分甜蜜素可被肠道细菌转化为环己胺；这种转化程度在人与人之间差异很大，而这一代谢物正是 JECFA 将 ADI 设为每公斤体重 0–11 毫克（以环己基氨基磺酸计）的依据。Codex 对特定食品类别中的甜蜜素有使用规定，而美国禁止其用于食品，因此其法律地位取决于市场。",
+  "can_1": "识别明确标示的 E952、Codex INS 952 编号、环己基氨基磺酸、环己基氨基磺酸钠和环己基氨基磺酸钙。",
+  "can_2": "解释其甜味功能、向环己胺的转化、JECFA 的每日允许摄入量以及不同司法管辖区的使用状态。",
+  "cannot_1": "仅根据配料声明确定产品中甜蜜素的实际含量。",
+  "cannot_2": "确定某个特定人的肠道细菌会将多少甜蜜素转化为环己胺。",
   "sources": [
     {
-      "label": "欧盟委员会法规 (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cyclamic acid / Cyclamates (INS 952)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2005"
     },
     {
-      "label": "粮农组织 NOVA 分类系统 (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Cyclamates and cyclohexylamine toxicological monograph (FAS 17)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v17je08.htm"
+    },
+    {
+      "label": "Codex GSFA — Cyclamates group (INS 952)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=71"
+    },
+    {
+      "label": "United States eCFR — 21 CFR § 189.135 Cyclamate and its derivatives",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-189/subpart-C/section-189.135"
     }
   ],
   "title": "甜蜜素",
-  "description": "一种强烈的人工合成甜味剂，甜度约为蔗糖的30至40倍。"
+  "description": "甜蜜素（E952 / INS 952）的甜度约为糖的30–40倍；JECFA 设定的 ADI 为每公斤体重 0–11 毫克，各司法管辖区的使用规则不同。"
 }

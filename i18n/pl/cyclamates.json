@@ -1,28 +1,36 @@
 {
   "name": "Cyklaminiany",
   "e_code": "E952",
-  "aliases": "E952, cyklaminiany, kwas cyklaminowy, cyklaminian sodu, cyklaminian wapnia, cyklaminian, kwas cyklaminowy",
+  "aliases": "E952, INS 952(i), INS 952(ii), INS 952(iv), cyclamate, cyclohexylsulfamic acid, cyklaminiany, kwas cyklaminowy, cyklaminian sodu, cyklaminian wapnia, cyklaminian, kwas cyklaminowy",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Intensywny syntetyczny słodzik, około 30 do 40 razy słodszy od sacharozy.",
-  "why_botia": "Jest to sztuczny słodzik charakterystyczny dla składu żywności wysoko przetworzonej.",
-  "can_1": "Wykrywa E952 lub jego sole na skanowanych listach składników.",
-  "can_2": "Mapuje produkt jako zawierający sztuczne słodziki w systemie NOVA.",
-  "cannot_1": "Mierzy dokładne stężenie cyklaminianu w produkcie końcowym.",
-  "cannot_2": "Określa, czy zanieczyszczenia chemiczne przekraczają bezpieczne progi czystości.",
+  "what_is": "Cyklaminiany są syntetycznymi środkami słodzącymi opartymi na kwasie cyklaminowym oraz jego solach wapniowej i sodowej. Codex oznacza kwas cyklaminowy jako INS 952(i), cyklaminian wapnia jako INS 952(ii), a cyklaminian sodu jako INS 952(iv); są około 30–40 razy słodsze od cukru.",
+  "why_botia": "Cyklaminiany są około 30–40 razy słodsze od cukru, więc niewielka ilość może zapewnić dużo słodyczy — a lista składników nie pokazuje, ile ich użyto. Część spożytej dawki może zostać przekształcona przez bakterie jelitowe w cykloheksyloaminę; stopień tej przemiany bardzo różni się między ludźmi, a ten metabolit stanowił podstawę ADI JECFA wynoszącego 0–11 mg/kg masy ciała, wyrażonego jako kwas cyklaminowy. Codex przewiduje stosowanie cyklaminianów w określonych kategoriach żywności, podczas gdy Stany Zjednoczone zakazują ich w żywności, więc status prawny zależy od rynku.",
+  "can_1": "Wykrywać E952, identyfikatory INS 952 Codex, kwas cyklaminowy, cyklaminian sodu i cyklaminian wapnia, gdy są wyraźnie zadeklarowane.",
+  "can_2": "Wyjaśniać ich funkcję słodzącą, przemianę do cykloheksyloaminy, dopuszczalne dzienne spożycie JECFA i status prawny zależny od jurysdykcji.",
+  "cannot_1": "Określić ilości cyklaminianu na podstawie samej deklaracji składników.",
+  "cannot_2": "Określić, ile cyklaminianu bakterie jelitowe konkretnej osoby przekształciłyby w cykloheksyloaminę.",
   "sources": [
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cyclamic acid / Cyclamates (INS 952)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2005"
     },
     {
-      "label": "System klasyfikacji NOVA FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Cyclamates and cyclohexylamine toxicological monograph (FAS 17)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v17je08.htm"
+    },
+    {
+      "label": "Codex GSFA — Cyclamates group (INS 952)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=71"
+    },
+    {
+      "label": "United States eCFR — 21 CFR § 189.135 Cyclamate and its derivatives",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-189/subpart-C/section-189.135"
     }
   ],
   "title": "Cyklaminiany",
-  "description": "Intensywny syntetyczny słodzik, około 30 do 40 razy słodszy od sacharozy."
+  "description": "Cyklaminiany (E952 / INS 952) są około 30–40 razy słodsze od cukru; JECFA ustaliła ADI 0–11 mg/kg masy ciała, a zasady stosowania różnią się zależnie od jurysdykcji."
 }

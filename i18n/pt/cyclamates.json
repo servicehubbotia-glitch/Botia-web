@@ -1,28 +1,36 @@
 {
   "name": "Ciclamatos",
   "e_code": "E952",
-  "aliases": "E952, ciclamatos, ácido ciclâmico, ciclamato de sódio, ciclamato de cálcio, ciclamato, ácido ciclâmico",
+  "aliases": "E952, INS 952(i), INS 952(ii), INS 952(iv), cyclamate, cyclohexylsulfamic acid, ciclamatos, ácido ciclâmico, ciclamato de sódio, ciclamato de cálcio, ciclamato, ácido ciclâmico",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Um adoçante sintético intenso, aproximadamente 30 a 40 vezes mais doce que a sacarose.",
-  "why_botia": "É um adoçante artificial característico de formulações de alimentos ultraprocessados.",
-  "can_1": "Detectar E952 ou seus sais nas listas de ingredientes escaneadas.",
-  "can_2": "Mapear o produto como contendo adoçantes artificiais no sistema NOVA.",
-  "cannot_1": "Medir a concentração exata de ciclamato no produto final.",
-  "cannot_2": "Determinar se impurezas químicas excedem os limites de pureza seguros.",
+  "what_is": "Os ciclamatos são edulcorantes sintéticos baseados no ácido ciclâmico e nos seus sais de cálcio e sódio. O Codex identifica o ácido ciclâmico como INS 952(i), o ciclamato de cálcio como INS 952(ii) e o ciclamato de sódio como INS 952(iv); são cerca de 30–40 vezes mais doces do que o açúcar.",
+  "why_botia": "Os ciclamatos são cerca de 30–40 vezes mais doces do que o açúcar, por isso uma pequena quantidade pode proporcionar muita doçura — e a lista de ingredientes não mostra quanto foi utilizado. Parte da dose ingerida pode ser convertida por bactérias intestinais em ciclohexilamina; essa conversão varia muito entre pessoas e esse metabolito serviu de base para a IDA do JECFA de 0–11 mg/kg de peso corporal, expressa como ácido ciclâmico. O Codex possui disposições de uso para ciclamatos em determinadas categorias alimentares, enquanto os Estados Unidos os proíbem nos alimentos, pelo que o estatuto legal depende do mercado.",
+  "can_1": "Detetar E952, os identificadores INS 952 do Codex, ácido ciclâmico, ciclamato de sódio e ciclamato de cálcio quando declarados explicitamente.",
+  "can_2": "Explicar a função edulcorante, a conversão em ciclohexilamina, a ingestão diária admissível do JECFA e o estatuto de utilização específico da jurisdição.",
+  "cannot_1": "Determinar a quantidade de ciclamato presente apenas pela declaração dos ingredientes.",
+  "cannot_2": "Determinar quanto ciclamato as bactérias intestinais de uma determinada pessoa converteriam em ciclohexilamina.",
   "sources": [
     {
-      "label": "Regulamento (UE) n.º 231/2012 da Comissão",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cyclamic acid / Cyclamates (INS 952)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2005"
     },
     {
-      "label": "Sistema de Classificação NOVA da FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Cyclamates and cyclohexylamine toxicological monograph (FAS 17)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v17je08.htm"
+    },
+    {
+      "label": "Codex GSFA — Cyclamates group (INS 952)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=71"
+    },
+    {
+      "label": "United States eCFR — 21 CFR § 189.135 Cyclamate and its derivatives",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-189/subpart-C/section-189.135"
     }
   ],
   "title": "Ciclamatos",
-  "description": "Um adoçante sintético intenso, aproximadamente 30 a 40 vezes mais doce que a sacarose."
+  "description": "Os ciclamatos (E952 / INS 952) são cerca de 30–40 vezes mais doces do que o açúcar; o JECFA estabeleceu uma IDA de 0–11 mg/kg de peso corporal e as regras de utilização variam conforme a jurisdição."
 }

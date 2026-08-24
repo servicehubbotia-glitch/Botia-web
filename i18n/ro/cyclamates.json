@@ -1,28 +1,36 @@
 {
   "name": "Ciclamati",
   "e_code": "E952",
-  "aliases": "E952, ciclamati, acid ciclamic, ciclamat de sodiu, ciclamat de calciu, ciclamato, ácido ciclámico",
+  "aliases": "E952, INS 952(i), INS 952(ii), INS 952(iv), cyclamate, cyclohexylsulfamic acid, ciclamati, acid ciclamic, ciclamat de sodiu, ciclamat de calciu, ciclamato, ácido ciclámico",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un îndulcitor sintetic intens, de aproximativ 30 până la 40 de ori mai dulce decât zaharoza.",
-  "why_botia": "Este un îndulcitor artificial caracteristic formulărilor de alimente ultra-procesate.",
-  "can_1": "Detectează E952 sau sărurile sale pe listele de ingrediente scanate.",
-  "can_2": "Clasifică produsul ca conținând îndulcitori artificiali conform sistemului NOVA.",
-  "cannot_1": "Măsoară concentrația exactă de ciclamat în produsul final.",
-  "cannot_2": "Determină dacă impuritățile chimice depășesc pragurile de puritate sigure.",
+  "what_is": "Ciclamații sunt îndulcitori sintetici bazați pe acid ciclamic și sărurile sale de calciu și sodiu. Codex identifică acidul ciclamic ca INS 952(i), ciclamatul de calciu ca INS 952(ii) și ciclamatul de sodiu ca INS 952(iv); sunt de aproximativ 30–40 de ori mai dulci decât zahărul.",
+  "why_botia": "Ciclamații sunt de aproximativ 30–40 de ori mai dulci decât zahărul, astfel încât o cantitate mică poate oferi multă dulceață — iar lista ingredientelor nu arată cât s-a folosit. O parte din doza ingerată poate fi transformată de bacteriile intestinale în ciclohexilamină; această conversie variază mult între persoane, iar acest metabolit a stat la baza ADI JECFA de 0–11 mg/kg greutate corporală, exprimată ca acid ciclamic. Codex are dispoziții de utilizare pentru ciclamați în anumite categorii alimentare, în timp ce Statele Unite îi interzic în alimente, astfel încât statutul legal depinde de piață.",
+  "can_1": "Detecta E952, identificatorii Codex INS 952, acidul ciclamic, ciclamatul de sodiu și ciclamatul de calciu atunci când sunt declarați explicit.",
+  "can_2": "Explica funcția lor de îndulcire, conversia în ciclohexilamină, doza zilnică admisibilă JECFA și statutul specific jurisdicției.",
+  "cannot_1": "Determina cantitatea de ciclamat prezentă doar din declarația ingredientelor.",
+  "cannot_2": "Determina cât ciclamat ar transforma bacteriile intestinale ale unei anumite persoane în ciclohexilamină.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cyclamic acid / Cyclamates (INS 952)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2005"
     },
     {
-      "label": "Sistemul de clasificare NOVA FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Cyclamates and cyclohexylamine toxicological monograph (FAS 17)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v17je08.htm"
+    },
+    {
+      "label": "Codex GSFA — Cyclamates group (INS 952)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=71"
+    },
+    {
+      "label": "United States eCFR — 21 CFR § 189.135 Cyclamate and its derivatives",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-189/subpart-C/section-189.135"
     }
   ],
   "title": "Ciclamati",
-  "description": "Un îndulcitor sintetic intens, de aproximativ 30 până la 40 de ori mai dulce decât zaharoza."
+  "description": "Ciclamații (E952 / INS 952) sunt de aproximativ 30–40 de ori mai dulci decât zahărul; JECFA a stabilit o ADI de 0–11 mg/kg greutate corporală, iar regulile de utilizare diferă în funcție de jurisdicție."
 }

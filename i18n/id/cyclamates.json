@@ -1,28 +1,36 @@
 {
   "name": "Siklamat",
   "e_code": "E952",
-  "aliases": "E952, siklamat, asam siklamat, natrium siklamat, kalsium siklamat, ciclamato, ácido ciclámico",
+  "aliases": "E952, INS 952(i), INS 952(ii), INS 952(iv), cyclamate, cyclohexylsulfamic acid, siklamat, asam siklamat, natrium siklamat, kalsium siklamat, ciclamato, ácido ciclámico",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Pemanis sintetis intensif yang sekitar 30 hingga 40 kali lebih manis dari sukrosa.",
-  "why_botia": "Ini adalah pemanis buatan yang menjadi ciri khas formulasi makanan ultra-olahan.",
-  "can_1": "Mendeteksi E952 atau garamnya pada daftar bahan yang dipindai.",
-  "can_2": "Memetakan produk sebagai mengandung pemanis buatan dalam sistem NOVA.",
-  "cannot_1": "Mengukur konsentrasi tepat siklamat dalam produk akhir.",
-  "cannot_2": "Menentukan apakah pengotor kimia melebihi ambang kemurnian yang aman.",
+  "what_is": "Siklamat adalah pemanis sintetis berbasis asam siklamat serta garam kalsium dan natriumnya. Codex mengidentifikasi asam siklamat sebagai INS 952(i), kalsium siklamat sebagai INS 952(ii), dan natrium siklamat sebagai INS 952(iv); tingkat kemanisannya sekitar 30–40 kali gula.",
+  "why_botia": "Siklamat sekitar 30–40 kali lebih manis daripada gula, sehingga jumlah yang kecil dapat memberikan banyak rasa manis — dan daftar bahan tidak menunjukkan berapa banyak yang digunakan. Sebagian dosis yang dikonsumsi dapat diubah oleh bakteri usus menjadi sikloheksilamina; tingkat konversi ini sangat berbeda antarorang, dan metabolit inilah yang menjadi dasar ADI JECFA sebesar 0–11 mg/kg berat badan, dinyatakan sebagai asam siklamat. Codex memiliki ketentuan penggunaan siklamat untuk kategori pangan tertentu, sedangkan Amerika Serikat melarangnya dalam pangan, sehingga status hukumnya bergantung pada pasar.",
+  "can_1": "Mendeteksi E952, pengenal Codex INS 952, asam siklamat, natrium siklamat dan kalsium siklamat ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan fungsi pemanisnya, konversi menjadi sikloheksilamina, asupan harian yang dapat diterima menurut JECFA dan status penggunaan menurut yurisdiksi.",
+  "cannot_1": "Menentukan jumlah siklamat dalam produk hanya dari pernyataan bahan.",
+  "cannot_2": "Menentukan berapa banyak siklamat yang akan diubah bakteri usus seseorang menjadi sikloheksilamina.",
   "sources": [
     {
-      "label": "Peraturan Komisi (UE) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Cyclamic acid / Cyclamates (INS 952)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2005"
     },
     {
-      "label": "Sistem Klasifikasi NOVA FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "JECFA — Cyclamates and cyclohexylamine toxicological monograph (FAS 17)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v17je08.htm"
+    },
+    {
+      "label": "Codex GSFA — Cyclamates group (INS 952)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=71"
+    },
+    {
+      "label": "United States eCFR — 21 CFR § 189.135 Cyclamate and its derivatives",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-189/subpart-C/section-189.135"
     }
   ],
   "title": "Siklamat",
-  "description": "Pemanis sintetis intensif yang sekitar 30 hingga 40 kali lebih manis dari sukrosa."
+  "description": "Siklamat (E952 / INS 952) sekitar 30–40 kali lebih manis daripada gula; JECFA menetapkan ADI 0–11 mg/kg berat badan dan aturan penggunaan berbeda menurut yurisdiksi."
 }
