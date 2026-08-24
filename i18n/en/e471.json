@@ -9,22 +9,26 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "A widely used food emulsifier made of mixtures of glycerol mono-, di- and triesters of fatty acids.",
-  "why_botia": "It flags it because it can be produced from either vegetable or animal fats, making its halal status doubtful (mashbooh) without certification.",
-  "can_1": "Confirm the presence of E471 or its common industrial synonyms on the label.",
-  "can_2": "Activate texture, animal, and Muslim choice layers due to its multiple functions and origins.",
-  "cannot_1": "Confirm whether the fatty acids used were derived from animal (including porcine) or vegetable fats.",
-  "cannot_2": "Determine the exact ratio of monoglycerides to diglycerides in the food matrix.",
+  "what_is": "A widely used emulsifier made from glycerol and fatty acids. It helps fat and water stay mixed and is found in products such as sliced bread, margarine, ice cream and baked goods.",
+  "why_botia": "Mono- and diglycerides are among the most common emulsifiers in supermarket foods: they are found in sliced bread, margarine, ice cream and baked goods. The body digests them like other dietary fats. What BOTIA flags is not their safety — JECFA assigned no numerical intake limit — but their source: the fatty acids may come from plant or animal feedstocks, and the ingredient label normally does not establish which.",
+  "can_1": "Detect E471 and its common mono- and diglyceride names on an ingredient list.",
+  "can_2": "Explain that the fatty-acid source may be plant or animal and activate the Animal, Muslim, Texture and E-number layers when source traceability matters.",
+  "cannot_1": "Determine from the name E471 whether the fatty acids came from plant or animal material when the manufacturer does not disclose the source.",
+  "cannot_2": "Determine the amount of E471 or the exact mono-/diglyceride composition from the ingredient list.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012",
+      "label": "JECFA — Mono- and diglycerides of fatty acids (INS 471), chemical record 917",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/917"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E471",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "OIC/SMIIC 1:2019 General Requirements on Halal Food",
-      "url": "https://www.smiic.org/en/project/24"
+      "label": "OIC/SMIIC 24:2020 — food additives and other added chemicals to halal food",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Mono- and diglycerides of fatty acids",
-  "description": "A widely used food emulsifier made of mixtures of glycerol mono-, di- and triesters of fatty acids."
+  "description": "E471 is a widely used emulsifier digested like dietary fat. JECFA assigned no numerical ADI; BOTIA flags source traceability because its fatty acids may be plant- or animal-derived."
 }

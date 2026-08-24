@@ -9,22 +9,26 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Ein weit verbreiteter Lebensmittelemulgator, der aus Mischungen von Glycerin-Mono-, Di- und Triestern von Fettsäuren besteht.",
-  "why_botia": "Es wird markiert, weil es entweder aus pflanzlichen oder tierischen Fetten hergestellt werden kann, was seinen Halal-Status ohne Zertifizierung zweifelhaft (mashbooh) macht.",
-  "can_1": "Bestätigen Sie das Vorhandensein von E471 oder seiner gebräuchlichen industriellen Synonyme auf dem Etikett.",
-  "can_2": "Aktivieren Sie die Ebenen Textur, Tier und Muslim-Auswahl aufgrund seiner vielfältigen Funktionen und Ursprünge.",
-  "cannot_1": "Bestätigen Sie, ob die verwendeten Fettsäuren aus tierischen (einschließlich Schweinefett) oder pflanzlichen Fetten stammen.",
-  "cannot_2": "Bestimmen Sie das genaue Verhältnis von Monoglyceriden zu Diglyceriden in der Lebensmittelmatrix.",
+  "what_is": "Ein Emulgator aus Glycerin und Fettsäuren. Er hält Fett und Wasser gemischt und kommt unter anderem in Toastbrot, Margarine, Speiseeis und Backwaren vor.",
+  "why_botia": "Mono- und Diglyceride gehören zu den häufigsten Emulgatoren in Supermarktlebensmitteln und kommen in Toastbrot, Margarine, Eis und Backwaren vor. Der Körper verdaut sie wie andere Nahrungsfette. BOTIA kennzeichnet nicht ihre Sicherheit — JECFA vergab keinen numerischen Grenzwert — sondern ihre Herkunft: Die Fettsäuren können aus pflanzlichen oder tierischen Rohstoffen stammen, und die Zutatenbezeichnung legt die Quelle normalerweise nicht fest.",
+  "can_1": "E471 und die üblichen Bezeichnungen für Mono- und Diglyceride in Zutatenlisten erkennen.",
+  "can_2": "Erklären, dass die Fettsäurequelle pflanzlich oder tierisch sein kann, und bei relevanter Herkunftsrückverfolgung die Ebenen Animal, Muslim, Texture und E-numbers anzeigen.",
+  "cannot_1": "Aus der Bezeichnung E471 bestimmen, ob die Fettsäuren pflanzlichen oder tierischen Ursprungs sind, wenn der Hersteller die Quelle nicht angibt.",
+  "cannot_2": "Die Menge von E471 oder das genaue Verhältnis von Mono- und Diglyceriden aus der Zutatenliste bestimmen.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
+      "label": "JECFA — Mono- and diglycerides of fatty acids (INS 471), chemical record 917",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/917"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E471",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     },
     {
-      "label": "OIC/SMIIC 1:2019 Allgemeine Anforderungen an Halal-Lebensmittel",
-      "url": "https://www.smiic.org/en/project/24"
+      "label": "OIC/SMIIC 24:2020 — food additives and other added chemicals to halal food",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Mono- und Diglyceride von Fettsäuren",
-  "description": "Ein weit verbreiteter Lebensmittelemulgator, der aus Mischungen von Glycerin-Mono-, Di- und Triestern von Fettsäuren besteht."
+  "description": "E471 ist ein weit verbreiteter Emulgator, der wie Nahrungsfett verdaut wird. JECFA vergab keine numerische ADI; relevant ist die Rückverfolgbarkeit der pflanzlichen oder tierischen Fettsäurequelle."
 }
