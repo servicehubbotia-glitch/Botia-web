@@ -7,22 +7,34 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Une paire d'entrées émulsifiant/texturant dans la liste actuelle EU : esters de saccharose d'acides gras (E473) et sucroglycérides (E474).",
-  "why_botia": "BOTIA regroupe E473–E474 car la plage d'audit originale E473–E475 chevauche une autre famille : E475 est des esters de polyglycérol d'acides gras et est traitée séparément. Garder la plage précise évite qu'une famille d'ingrédients n'en avale une autre.",
-  "can_1": "Détecter E473, E474, les esters de saccharose d'acides gras et les sucroglycérides.",
-  "can_2": "Afficher le contexte de texture et de numéro E tout en gardant E475 dans la fiche des esters de polyglycérol.",
-  "cannot_1": "Déterminer la concentration ou la composition en acides gras à partir du nom de l'ingrédient.",
-  "cannot_2": "Classer E475 comme un ester de saccharose.",
+  "what_is": "Des émulsifiants fabriqués à partir de saccharose et d’acides gras. E473 correspond aux esters de saccharose d’acides gras et E474 aux sucroglycérides.",
+  "why_botia": "Les esters de saccharose sont fabriqués en associant du sucre et des acides gras et servent à maintenir les graisses et l’eau mélangées. L’organisme les décompose en leurs composants. Le JECFA a fixé une DJA de groupe de 0–30 mg/kg de poids corporel car des doses plus élevées peuvent avoir un effet laxatif. Dans son estimation prudente de 2020, l’exposition élevée des enfants de 3 à 9 ans atteignait 113 mg/kg par jour, soit presque quatre fois cette limite; le JECFA a considéré l’estimation comme prudente et demandé d’affiner les calculs d’exposition.",
+  "can_1": "Identifier E473, E474, les esters de saccharose d’acides gras et les sucroglycérides.",
+  "can_2": "Expliquer la DJA de groupe du JECFA et que l’estimation prudente d’exposition élevée de 2020 la dépassait chez les enfants de 3 à 9 ans.",
+  "cannot_1": "Déterminer la quantité de E473 ou E474 présente à partir de la liste d’ingrédients.",
+  "cannot_2": "Transformer une estimation prudente d’exposition de population en preuve qu’un enfant donné dépasse la DJA en consommant un produit particulier.",
   "sources": [
     {
-      "label": "Règlement (EC) n° 1333/2008 — Liste de l'Union et conditions d'utilisation des additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Sucrose esters of fatty acids (INS 473), chemical record 5599",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5599"
     },
     {
-      "label": "Règlement (EU) de la Commission n° 231/2012 — spécifications pour les additifs alimentaires autorisés",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Sucroglycerides (INS 474), chemical record 2341",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2341"
+    },
+    {
+      "label": "JECFA 89 — Summary and conclusions, 2020",
+      "url": "https://cdn.who.int/media/docs/default-source/food-safety/jecfa/summary-and-conclusions/jecfa89_1-12-june-2020_summary-and-conclusion.pdf"
+    },
+    {
+      "label": "EFSA — Re-evaluation of sucrose esters E473 and related exposure estimates",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5087"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — authorised uses for E473–E474",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "title": "Esters de saccharose et sucroglycérides",
-  "description": "Une paire d'entrées émulsifiant/texturant dans la liste actuelle EU : esters de saccharose d'acides gras (E473) et sucroglycérides (E474)."
+  "description": "Les esters de saccharose E473 et les sucroglycérides E474 sont des émulsifiants avec une DJA de groupe JECFA de 0–30 mg/kg de poids corporel. Une estimation prudente de 2020 dépassait cette valeur chez les enfants."
 }

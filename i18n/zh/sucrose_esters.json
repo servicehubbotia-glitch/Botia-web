@@ -7,22 +7,34 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "当前EU列表中的一对乳化剂/质构剂条目：脂肪酸蔗糖酯（E473）和蔗糖甘油酯（E474）。",
-  "why_botia": "BOTIA组将E473–E474分组，因为原始审计范围E473–E475跨越到不同的家族：E475是脂肪酸聚甘油酯，单独涵盖。保持范围精确可防止一个成分家族吞并另一个。",
-  "can_1": "检测E473、E474、脂肪酸蔗糖酯和蔗糖甘油酯。",
-  "can_2": "显示质构和E编号背景，同时将E475保留在聚甘油酯卡片中。",
-  "cannot_1": "从成分名称确定浓度或脂肪酸组成。",
-  "cannot_2": "将E475分类为蔗糖酯。",
+  "what_is": "由蔗糖和脂肪酸制成的乳化剂。E473 是蔗糖脂肪酸酯，E474 是蔗糖甘油酯。",
+  "why_botia": "蔗糖酯由糖和脂肪酸结合制成，用来让脂肪和水保持混合。人体会将其分解为组成成分。JECFA 设定了 0–30 mg/kg 体重的组别 ADI，因为更高剂量可能产生泻下作用。在 2020 年的保守估算中，3–9 岁儿童的高暴露达到 113 mg/kg/天，接近该限值的四倍；JECFA 认为这一计算较为保守，并要求进一步细化暴露估算。",
+  "can_1": "识别 E473、E474、蔗糖脂肪酸酯和蔗糖甘油酯。",
+  "can_2": "说明 JECFA 的组别 ADI，以及 2020 年保守的高暴露估算在 3–9 岁儿童中超过了该数值。",
+  "cannot_1": "仅根据配料表确定产品中 E473 或 E474 的具体含量。",
+  "cannot_2": "把保守的人群暴露估算当作某个儿童吃某种产品后一定超过 ADI 的证明。",
   "sources": [
     {
-      "label": "法规（EC）第1333/2008号——食品添加剂的联盟清单和使用条件",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Sucrose esters of fatty acids (INS 473), chemical record 5599",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5599"
     },
     {
-      "label": "委员会法规（EU）第231/2012号——授权食品添加剂的规格",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Sucroglycerides (INS 474), chemical record 2341",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2341"
+    },
+    {
+      "label": "JECFA 89 — Summary and conclusions, 2020",
+      "url": "https://cdn.who.int/media/docs/default-source/food-safety/jecfa/summary-and-conclusions/jecfa89_1-12-june-2020_summary-and-conclusion.pdf"
+    },
+    {
+      "label": "EFSA — Re-evaluation of sucrose esters E473 and related exposure estimates",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5087"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — authorised uses for E473–E474",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "title": "蔗糖酯和蔗糖甘油酯",
-  "description": "当前EU列表中的一对乳化剂/质构剂条目：脂肪酸蔗糖酯（E473）和蔗糖甘油酯（E474）。"
+  "description": "蔗糖酯 E473 和蔗糖甘油酯 E474 是乳化剂，JECFA 的组别 ADI 为 0–30 mg/kg 体重。2020 年的保守暴露估算在儿童中超过了这一数值。"
 }

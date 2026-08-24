@@ -7,22 +7,34 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Un par de entradas de emulsionante/texturizante en la lista EU actual: ésteres de sacarosa de ácidos grasos (E473) y sucroglicéridos (E474).",
-  "why_botia": "BOTIA agrupa E473–E474 porque el rango de auditoría original E473–E475 cruza hacia una familia diferente: E475 son ésteres de poliglicerol de ácidos grasos y se cubren por separado. Mantener el rango preciso evita que una familia de ingredientes absorba a otra.",
+  "what_is": "Emulsionantes fabricados a partir de sacarosa y ácidos grasos. E473 son ésteres de sacarosa de ácidos grasos y E474 son sucroglicéridos.",
+  "why_botia": "Los ésteres de sacarosa se fabrican uniendo azúcar y ácidos grasos, y sirven para mantener mezcladas la grasa y el agua. El cuerpo los descompone en sus componentes. JECFA les fijó una IDA grupal de 0–30 mg/kg de peso corporal porque a dosis más altas pueden tener efecto laxante. En su estimación conservadora de 2020, la exposición alta en niños de 3 a 9 años alcanzó 113 mg/kg al día, casi cuatro veces ese límite; JECFA consideró que el cálculo era conservador y pidió afinar las estimaciones de exposición.",
   "can_1": "Detectar E473, E474, ésteres de sacarosa de ácidos grasos y sucroglicéridos.",
-  "can_2": "Mostrar el contexto de textura y número E mientras se mantiene E475 en la tarjeta de ésteres de poliglicerol.",
-  "cannot_1": "Determinar la concentración o la composición de ácidos grasos a partir del nombre del ingrediente.",
-  "cannot_2": "Clasificar E475 como un éster de sacarosa.",
+  "can_2": "Explicar la IDA grupal de JECFA y que la estimación conservadora de exposición alta de 2020 la superó en niños de 3 a 9 años.",
+  "cannot_1": "Determinar cuánto E473 o E474 contiene un producto a partir de la lista de ingredientes.",
+  "cannot_2": "Convertir una estimación conservadora de exposición poblacional en prueba de que un niño concreto que consume un producto determinado supera la IDA.",
   "sources": [
     {
-      "label": "Reglamento (EC) n.º 1333/2008 — Lista de la Unión y condiciones de uso de los aditivos alimentarios",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Ésteres de sacarosa de ácidos grasos (INS 473), registro químico 5599",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5599"
     },
     {
-      "label": "Reglamento (EU) de la Comisión n.º 231/2012 — especificaciones de los aditivos alimentarios autorizados",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Sucroglicéridos (INS 474), registro químico 2341",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2341"
+    },
+    {
+      "label": "JECFA 89 — Resumen y conclusiones, 2020",
+      "url": "https://cdn.who.int/media/docs/default-source/food-safety/jecfa/summary-and-conclusions/jecfa89_1-12-june-2020_summary-and-conclusion.pdf"
+    },
+    {
+      "label": "EFSA — Reevaluación de E473 y estimaciones de exposición",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5087"
+    },
+    {
+      "label": "Reglamento UE 1333/2008 — usos autorizados de E473–E474",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "title": "Ésteres de sacarosa y sucroglicéridos",
-  "description": "Un par de entradas de emulsionante/texturizante en la lista EU actual: ésteres de sacarosa de ácidos grasos (E473) y sucroglicéridos (E474)."
+  "description": "Los ésteres de sacarosa E473 y los sucroglicéridos E474 son emulsionantes con una IDA grupal de JECFA de 0–30 mg/kg de peso corporal. Una estimación conservadora de 2020 superó ese valor en niños."
 }

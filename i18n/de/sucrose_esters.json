@@ -7,22 +7,34 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Ein Paar von Emulgator/Texturgeber-Einträgen in der aktuellen EU-Liste: Zuckerester von Fettsäuren (E473) und Sucroglyceride (E474).",
-  "why_botia": "BOTIA gruppiert E473–E474, weil der ursprüngliche Prüfbereich E473–E475 in eine andere Familie übergeht: E475 sind Polyglycerinester von Fettsäuren und werden separat abgedeckt. Die präzise Bereichsangabe verhindert, dass eine Zutatenfamilie eine andere verschluckt.",
-  "can_1": "Erkennt E473, E474, Zuckerester von Fettsäuren und Sucroglyceride.",
-  "can_2": "Zeigt den Textur- und E-Nummer-Kontext, während E475 in der Karte für Polyglycerinester bleibt.",
-  "cannot_1": "Bestimmt weder die Konzentration noch die Fettsäurezusammensetzung aus dem Zutatennamen.",
-  "cannot_2": "Klassifiziert E475 nicht als Zuckerester.",
+  "what_is": "Emulgatoren aus Saccharose und Fettsäuren. E473 sind Saccharoseester von Fettsäuren; E474 sind Saccharoglyceride.",
+  "why_botia": "Saccharoseester werden hergestellt, indem Zucker mit Fettsäuren verbunden wird, und halten Fett und Wasser gemischt. Der Körper spaltet sie in ihre Bestandteile. JECFA legte eine Gruppen-ADI von 0–30 mg/kg Körpergewicht fest, weil höhere Dosen abführend wirken können. In der konservativen Expositionsschätzung von 2020 erreichte die hohe Exposition bei Kindern im Alter von 3–9 Jahren 113 mg/kg pro Tag, fast das Vierfache des Grenzwerts; JECFA bewertete die Schätzung als konservativ und forderte verfeinerte Expositionsberechnungen.",
+  "can_1": "E473, E474, Saccharoseester von Fettsäuren und Saccharoglyceride erkennen.",
+  "can_2": "Die JECFA-Gruppen-ADI erklären und darauf hinweisen, dass die konservative hohe Expositionsschätzung von 2020 sie bei Kindern von 3–9 Jahren überschritt.",
+  "cannot_1": "Aus der Zutatenliste bestimmen, wie viel E473 oder E474 enthalten ist.",
+  "cannot_2": "Eine konservative Bevölkerungsschätzung als Beweis dafür behandeln, dass ein einzelnes Kind durch ein bestimmtes Produkt die ADI überschreitet.",
   "sources": [
     {
-      "label": "Verordnung (EC) Nr. 1333/2008 — Unionsliste und Verwendungsbedingungen für Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Sucrose esters of fatty acids (INS 473), chemical record 5599",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5599"
     },
     {
-      "label": "Verordnung (EU) Nr. 231/2012 — Spezifikationen für zugelassene Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Sucroglycerides (INS 474), chemical record 2341",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2341"
+    },
+    {
+      "label": "JECFA 89 — Summary and conclusions, 2020",
+      "url": "https://cdn.who.int/media/docs/default-source/food-safety/jecfa/summary-and-conclusions/jecfa89_1-12-june-2020_summary-and-conclusion.pdf"
+    },
+    {
+      "label": "EFSA — Re-evaluation of sucrose esters E473 and related exposure estimates",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5087"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — authorised uses for E473–E474",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "title": "Saccharoseester und Sucroglyceride",
-  "description": "Ein Paar von Emulgator/Texturgeber-Einträgen in der aktuellen EU-Liste: Zuckerester von Fettsäuren (E473) und Sucroglyceride (E474)."
+  "description": "Saccharoseester E473 und Saccharoglyceride E474 sind Emulgatoren mit einer JECFA-Gruppen-ADI von 0–30 mg/kg Körpergewicht. Eine konservative Expositionsschätzung von 2020 überschritt diesen Wert bei Kindern."
 }

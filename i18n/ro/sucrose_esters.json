@@ -7,22 +7,34 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "O pereche de intrări de emulgator/texturizant în lista actuală EU: esteri de zaharoză ai acizilor grași (E473) și sucrogliceride (E474).",
-  "why_botia": "BOTIA grupează E473–E474 deoarece intervalul original de audit E473–E475 traversează o familie diferită: E475 este esteri de poliglicerol ai acizilor grași și este tratat separat. Păstrarea intervalului precis previne ca o familie de ingrediente să o înghită pe alta.",
-  "can_1": "Detectează E473, E474, esteri de zaharoză ai acizilor grași și sucrogliceride.",
-  "can_2": "Arată contextul texturii și numărul E, păstrând în același timp E475 în fișa esterilor de poliglicerol.",
-  "cannot_1": "Determină concentrația sau compoziția de acizi grași din numele ingredientului.",
-  "cannot_2": "Clasifică E475 ca ester de zaharoză.",
+  "what_is": "Emulgatori fabricați din zaharoză și acizi grași. E473 sunt esteri de zaharoză ai acizilor grași, iar E474 sunt sucrogliceride.",
+  "why_botia": "Esterii de zaharoză sunt fabricați prin unirea zahărului cu acizii grași și ajută la menținerea grăsimii și apei amestecate. Organismul îi descompune în componentele lor. JECFA a stabilit o DZA de grup de 0–30 mg/kg greutate corporală deoarece dozele mai mari pot avea efect laxativ. În estimarea conservatoare din 2020, expunerea ridicată la copiii de 3–9 ani a ajuns la 113 mg/kg pe zi, aproape de patru ori limita; JECFA a considerat calculul conservator și a cerut estimări mai rafinate ale expunerii.",
+  "can_1": "Identifica E473, E474, esterii de zaharoză ai acizilor grași și sucrogliceridele.",
+  "can_2": "Explica DZA de grup JECFA și faptul că estimarea conservatoare de expunere ridicată din 2020 a depășit-o la copiii de 3–9 ani.",
+  "cannot_1": "Determina cantitatea de E473 sau E474 din produs din lista ingredientelor.",
+  "cannot_2": "Trata o estimare conservatoare de expunere populațională drept dovadă că un anumit copil depășește DZA consumând un anumit produs.",
   "sources": [
     {
-      "label": "Regulamentul (EC) nr. 1333/2008 — lista Uniunii și condițiile de utilizare pentru aditivii alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Sucrose esters of fatty acids (INS 473), chemical record 5599",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5599"
     },
     {
-      "label": "Regulamentul Comisiei (EU) nr. 231/2012 — specificații pentru aditivii alimentari autorizați",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Sucroglycerides (INS 474), chemical record 2341",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2341"
+    },
+    {
+      "label": "JECFA 89 — Summary and conclusions, 2020",
+      "url": "https://cdn.who.int/media/docs/default-source/food-safety/jecfa/summary-and-conclusions/jecfa89_1-12-june-2020_summary-and-conclusion.pdf"
+    },
+    {
+      "label": "EFSA — Re-evaluation of sucrose esters E473 and related exposure estimates",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5087"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — authorised uses for E473–E474",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "title": "Esteri de zaharoză și sucrogliceride",
-  "description": "O pereche de intrări de emulgator/texturizant în lista actuală EU: esteri de zaharoză ai acizilor grași (E473) și sucrogliceride (E474)."
+  "description": "Esterii de zaharoză E473 și sucrogliceridele E474 sunt emulgatori cu o DZA de grup JECFA de 0–30 mg/kg greutate corporală. O estimare conservatoare din 2020 a depășit această valoare la copii."
 }

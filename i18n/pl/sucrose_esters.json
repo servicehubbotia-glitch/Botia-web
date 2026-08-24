@@ -7,22 +7,34 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Para pozycji emulgator/środek teksturotwórczy w aktualnej liście EU: estry sacharozy z kwasami tłuszczowymi (E473) i sachroglicerydy (E474).",
-  "why_botia": "BOTIA grupuje E473–E474, ponieważ oryginalny zakres audytu E473–E475 przechodzi do innej rodziny: E475 to estry poliglicerolu z kwasami tłuszczowymi i są objęte osobną pozycją. Utrzymanie precyzyjnego zakresu zapobiega wchłonięciu jednej rodziny składników przez drugą.",
-  "can_1": "Wykrywa E473, E474, estry sacharozy z kwasami tłuszczowymi i sachroglicerydy.",
-  "can_2": "Pokazuje kontekst tekstury i numeru E, pozostawiając E475 w karcie estrów poliglicerolu.",
-  "cannot_1": "Nie określa stężenia ani składu kwasów tłuszczowych na podstawie nazwy składnika.",
-  "cannot_2": "Nie klasyfikuje E475 jako estru sacharozy.",
+  "what_is": "Emulgatory wytwarzane z sacharozy i kwasów tłuszczowych. E473 to estry sacharozy i kwasów tłuszczowych, a E474 to sacharoglicerydy.",
+  "why_botia": "Estry sacharozy powstają przez łączenie cukru z kwasami tłuszczowymi i pomagają utrzymać tłuszcz i wodę w mieszaninie. Organizm rozkłada je do ich składników. JECFA ustalił grupowe ADI 0–30 mg/kg masy ciała, ponieważ wyższe dawki mogą działać przeczyszczająco. W konserwatywnym oszacowaniu z 2020 r. wysokie narażenie u dzieci w wieku 3–9 lat osiągnęło 113 mg/kg dziennie, prawie czterokrotnie więcej niż limit; JECFA uznał obliczenie za konserwatywne i poprosił o dokładniejsze oszacowania.",
+  "can_1": "Rozpoznawać E473, E474, estry sacharozy kwasów tłuszczowych i sacharoglicerydy.",
+  "can_2": "Wyjaśniać grupowe ADI JECFA i wskazywać, że konserwatywne oszacowanie wysokiego narażenia z 2020 r. przekraczało je u dzieci w wieku 3–9 lat.",
+  "cannot_1": "Określić ilości E473 lub E474 na podstawie listy składników.",
+  "cannot_2": "Traktować konserwatywne oszacowanie populacyjne jako dowód, że konkretne dziecko przekracza ADI po zjedzeniu konkretnego produktu.",
   "sources": [
     {
-      "label": "Rozporządzenie (EC) nr 1333/2008 — unijny wykaz i warunki stosowania dodatków do żywności",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Sucrose esters of fatty acids (INS 473), chemical record 5599",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5599"
     },
     {
-      "label": "Rozporządzenie Komisji (EU) nr 231/2012 — specyfikacje autoryzowanych dodatków do żywności",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Sucroglycerides (INS 474), chemical record 2341",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2341"
+    },
+    {
+      "label": "JECFA 89 — Summary and conclusions, 2020",
+      "url": "https://cdn.who.int/media/docs/default-source/food-safety/jecfa/summary-and-conclusions/jecfa89_1-12-june-2020_summary-and-conclusion.pdf"
+    },
+    {
+      "label": "EFSA — Re-evaluation of sucrose esters E473 and related exposure estimates",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5087"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — authorised uses for E473–E474",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "title": "Estry sacharozy i sukroglicerydy",
-  "description": "Para pozycji emulgator/środek teksturotwórczy w aktualnej liście EU: estry sacharozy z kwasami tłuszczowymi (E473) i sachroglicerydy (E474)."
+  "description": "Estry sacharozy E473 i sacharoglicerydy E474 są emulgatorami z grupowym ADI JECFA 0–30 mg/kg masy ciała. Konserwatywne oszacowanie narażenia z 2020 r. przekraczało tę wartość u dzieci."
 }
