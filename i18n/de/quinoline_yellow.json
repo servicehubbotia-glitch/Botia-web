@@ -1,21 +1,33 @@
 {
   "name": "Chinolingelb",
   "title": "Chinolingelb",
-  "description": "Ein synthetischer Lebensmittelfarbstoff, der in der EU unter der Bezeichnung E104 geführt wird.",
-  "what_is": "Ein synthetischer Lebensmittelfarbstoff, der in der EU als E104 bezeichnet wird.",
-  "why_botia": "BOTIA kennzeichnet E104, da die EU-Verordnung 1333/2008 diesen Farbstoff zu den Farbstoffen zählt, bei denen bestimmte Lebensmittel vorbehaltlich der in der Verordnung festgelegten Ausnahmen den zusätzlichen Hinweis tragen müssen, dass der Farbstoff die Aktivität und Aufmerksamkeit von Kindern beeinträchtigen kann. Hierbei handelt es sich um eine Kennzeichnungspflicht und nicht um eine Vorhersage einer Wirkung bei einem bestimmten Kind.",
-  "can_1": "E104 und die wichtigsten deklarierten Bezeichnungen für Chinolingelb nachweisen.",
-  "can_2": "Den Kontext der zusätzlichen Kennzeichnung durch die EU darstellen, ohne die Warnhinweisregel in eine individuelle medizinische Schlussfolgerung umzuwandeln.",
-  "cannot_1": "Ermitteln Sie anhand der Zutatenliste die Menge des enthaltenen Farbstoffs.",
-  "cannot_2": "Sagen Sie voraus, ob bei einem bestimmten Kind eine bestimmte Auswirkung eintreten wird, oder gehen Sie davon aus, dass in jedem Rechtsraum derselbe Warnhinweis gilt.",
+  "description": "Chinolingelb ist eine Mischung und keine einzelne Verbindung. EFSA senkte die ADI 2009 deutlich; in US-Lebensmitteln ist es nicht zugelassen.",
+  "what_is": "Chinolingelb (E104 / INS 104) ist ein synthetischer gelber Lebensmittelfarbstoff, der als Mischung und nicht als einzelne Verbindung hergestellt wird.",
+  "why_botia": "Chinolingelb ist keine einzelne Verbindung, sondern eine Mischung, deshalb ist seine genaue Zusammensetzung für die Bewertung relevant. In der EU müssen Lebensmittel mit Chinolingelb einen Hinweis tragen, dass es Aktivität und Aufmerksamkeit bei Kindern beeinträchtigen kann — dieser Hinweis beruht auf Studien mit Farbstoffmischungen, nicht auf Chinolingelb allein. EFSA senkte 2009 die akzeptable tägliche Aufnahme nach neuen Langzeitdaten aus Tierstudien von 10 auf 0,5 mg/kg Körpergewicht; anschließend wurden in der EU zulässige Höchstmengen reduziert oder bestimmte Lebensmittelverwendungen gestrichen. In den Vereinigten Staaten ist Chinolingelb nicht für Lebensmittel zugelassen. JECFA legte später eine ADI von 0–3 mg/kg fest und kam zu dem Schluss, dass die geschätzte Aufnahme über die Nahrung kein Gesundheitsproblem darstellt.",
+  "can_1": "E104, INS 104, Chinolingelb und weitere deklarierte Namen in der Zutatenliste erkennen.",
+  "can_2": "Erklären, dass es sich um eine Mischung handelt, den EU-Hinweis zu Aktivität und Aufmerksamkeit, die EFSA-ADI-Senkung von 2009, den Status in den USA und die aktuelle JECFA-ADI.",
+  "cannot_1": "Die Zusammensetzung einer bestimmten Charge Chinolingelb oder die enthaltene Menge aus der Zutatenliste bestimmen.",
+  "cannot_2": "Vorhersagen, ob ein bestimmtes Kind einen Effekt zeigt, oder Studien mit Farbstoffmischungen als Beweis für einen Effekt von Chinolingelb allein behandeln.",
   "sources": [
     {
-      "label": "Verordnung (EG) Nr. 1333/2008 – Unionsliste und Verwendungsbedingungen für Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Quinoline Yellow, INS 104",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3466"
     },
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission – Spezifikationen für zugelassene Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Re-evaluation of Quinoline Yellow (E104), 2009",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1329"
+    },
+    {
+      "label": "EFSA — Refined exposure assessment for Quinoline Yellow (E104), 2015",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4070"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj/eng"
+    },
+    {
+      "label": "FDA — Quinoline Yellow is not permitted in foods in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E104",

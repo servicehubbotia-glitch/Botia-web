@@ -1,21 +1,33 @@
 {
   "name": "Kinolin Sarısı",
   "title": "Kinolin Sarısı",
-  "description": "AB’de E104 olarak tanımlanan sentetik bir gıda boyası.",
-  "what_is": "AB’de E104 olarak tanımlanan sentetik bir gıda boyası.",
-  "why_botia": "BOTIA, E104 kodunu işaretler; çünkü 1333/2008 sayılı AB Yönetmeliği, bu maddeyi, yönetmelikte belirtilen istisnalar saklı kalmak kaydıyla, belirli gıdalarda “bu renklendirici maddenin çocukların aktivite ve dikkat düzeyleri üzerinde olumsuz bir etkiye sahip olabileceği” şeklinde ek bir uyarı bulunması gereken renklendirici maddeler arasında sınıflandırmaktadır. Bu, bir etiketleme zorunluluğudur; belirli bir çocukta ortaya çıkacak bir etkiye dair bir öngörü değildir.",
-  "can_1": "E104’ü ve Kinolin Sarısı için beyan edilen başlıca isimleri tespit edin.",
-  "can_2": "Uyarı kuralını bireysel bir tıbbi sonuca dönüştürmeden, AB’nin ek etiketleme bağlamını gösterin.",
-  "cannot_1": "İçindekiler listesinden ürünün içerdiği renk miktarını belirleyin.",
-  "cannot_2": "Belirli bir çocuğun bir etkiyle karşı karşıya kalıp kalmayacağını tahmin edin ya da aynı uyarı metninin her yargı alanında geçerli olduğunu varsaymayın.",
+  "description": "Kinolin Sarısı tek bir bileşik değil bir karışımdır. EFSA 2009'da ADI'yi büyük ölçüde düşürdü ve ABD'de gıdalarda kullanımına izin verilmez.",
+  "what_is": "Kinolin Sarısı (E104 / INS 104), tek bir bileşik yerine karışım olarak üretilen sentetik sarı bir gıda renklendiricisidir.",
+  "why_botia": "Kinolin Sarısı tek bir bileşik değil bir karışımdır, bu nedenle değerlendirilirken bileşimi önem taşır. AB'de bunu içeren gıdalar, çocukların aktivitesi ve dikkati üzerinde olumsuz etki yaratabileceğine dair bir uyarı taşımalıdır — bu uyarı Kinolin Sarısı'nın tek başına değil, renklendirici karışımlarının incelendiği çalışmalara dayanır. EFSA 2009'da yeni uzun süreli hayvan verilerinin ardından kabul edilebilir günlük alımı 10'dan 0,5 mg/kg vücut ağırlığına düşürdü; daha sonra AB'de izin verilen seviyeler azaltıldı veya bazı gıda kullanımları kaldırıldı. Amerika Birleşik Devletleri'nde gıdalarda kullanımına izin verilmemektedir. JECFA daha sonra günlük 0–3 mg/kg ADI belirledi ve tahmini besinsel maruziyetin sağlık açısından endişe oluşturmadığı sonucuna vardı.",
+  "can_1": "İçerik listesinde E104, INS 104, Kinolin Sarısı ve diğer belirtilen adları tespit etmek.",
+  "can_2": "Bunun bir karışım olduğunu, AB'nin aktivite ve dikkat uyarısını, EFSA'nın 2009 ADI düşüşünü, ABD'deki statüsünü ve JECFA'nın güncel ADI'sini açıklamak.",
+  "cannot_1": "Belirli bir Kinolin Sarısı partisinin bileşimini veya içerik listesinden üründeki miktarı belirlemek.",
+  "cannot_2": "Belirli bir çocukta etki olup olmayacağını öngörmek veya renklendirici karışımlarıyla yapılan çalışmaları yalnızca Kinolin Sarısı'nın etkisinin kanıtı olarak değerlendirmek.",
   "sources": [
     {
-      "label": "(EC) 1333/2008 sayılı Tüzük — Gıda katkı maddeleri için Birlik listesi ve kullanım koşulları",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Quinoline Yellow, INS 104",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3466"
     },
     {
-      "label": "(AB) 231/2012 sayılı Komisyon Tüzüğü — onaylanmış gıda katkı maddelerine ilişkin şartlar",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Re-evaluation of Quinoline Yellow (E104), 2009",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1329"
+    },
+    {
+      "label": "EFSA — Refined exposure assessment for Quinoline Yellow (E104), 2015",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4070"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj/eng"
+    },
+    {
+      "label": "FDA — Quinoline Yellow is not permitted in foods in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E104",

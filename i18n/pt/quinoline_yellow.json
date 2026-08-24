@@ -1,21 +1,33 @@
 {
   "name": "Amarelo de quinolina",
   "title": "Amarelo de quinolina",
-  "description": "Um corante alimentar sintético identificado na UE como E104.",
-  "what_is": "Um corante alimentar sintético identificado na UE como E104.",
-  "why_botia": "BOTIA é classificado como E104 porque o Regulamento (CE) n.º 1333/2008 o inclui entre os corantes para os quais determinados alimentos devem ostentar a menção adicional de que o corante pode ter um efeito adverso na atividade e na atenção das crianças, sem prejuízo das exceções previstas no regulamento. Trata-se de um requisito de rotulagem, não de uma previsão de um efeito numa criança em particular.",
-  "can_1": "Detetar o E104 e os principais nomes declarados para o Amarelo de Quinolina.",
-  "can_2": "Apresentar o contexto da rotulagem adicional da UE sem transformar a regra de advertência numa conclusão médica individual.",
-  "cannot_1": "Determine a quantidade de corante presente a partir da lista de ingredientes.",
-  "cannot_2": "Prever se uma criança em particular irá sofrer um efeito ou partir do princípio de que o mesmo texto de aviso se aplica em todas as jurisdições.",
+  "description": "O amarelo de quinoleína é uma mistura e não um único composto. A EFSA reduziu fortemente a IDA em 2009 e não está autorizado para uso alimentar nos Estados Unidos.",
+  "what_is": "O amarelo de quinoleína (E104 / INS 104) é um corante alimentar amarelo sintético produzido como mistura e não como um único composto.",
+  "why_botia": "O amarelo de quinoleína não é um único composto, mas uma mistura, por isso a sua composição importa na avaliação. Na UE, os alimentos que o contêm devem apresentar um aviso de que pode afetar negativamente a atividade e a atenção das crianças — um aviso baseado em estudos de misturas de corantes, não do amarelo de quinoleína isoladamente. Em 2009, a EFSA reduziu a ingestão diária aceitável de 10 para 0,5 mg/kg de peso corporal após novos dados de estudos animais de longa duração; posteriormente, na UE, foram reduzidos níveis permitidos ou eliminados alguns usos alimentares. Não está autorizado para uso alimentar nos Estados Unidos. O JECFA estabeleceu depois uma ingestão diária aceitável de 0–3 mg/kg e concluiu que a exposição alimentar estimada não representa um problema de saúde.",
+  "can_1": "Detetar E104, INS 104, amarelo de quinoleína e os seus outros nomes declarados na lista de ingredientes.",
+  "can_2": "Explicar que é uma mistura, o aviso da UE sobre atividade e atenção, a redução da IDA da EFSA em 2009, o estatuto nos Estados Unidos e a IDA atual do JECFA.",
+  "cannot_1": "Determinar a composição de um lote concreto de amarelo de quinoleína ou a quantidade presente a partir da lista de ingredientes.",
+  "cannot_2": "Prever se uma criança concreta mostrará um efeito ou tratar estudos de misturas de corantes como prova de um efeito causado pelo amarelo de quinoleína isoladamente.",
   "sources": [
     {
-      "label": "Regulamento (CE) n.º 1333/2008 — Lista da União e condições de utilização dos aditivos alimentares",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Quinoline Yellow, INS 104",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3466"
     },
     {
-      "label": "Regulamento (UE) n.º 231/2012 da Comissão — especificações relativas aos aditivos alimentares autorizados",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Re-evaluation of Quinoline Yellow (E104), 2009",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1329"
+    },
+    {
+      "label": "EFSA — Refined exposure assessment for Quinoline Yellow (E104), 2015",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4070"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj/eng"
+    },
+    {
+      "label": "FDA — Quinoline Yellow is not permitted in foods in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E104",

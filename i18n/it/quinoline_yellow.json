@@ -1,21 +1,33 @@
 {
   "name": "Giallo di chinolina",
   "title": "Giallo di chinolina",
-  "description": "Un colorante alimentare sintetico identificato nell'UE con il codice E104.",
-  "what_is": "Un colorante alimentare sintetico identificato nell'UE con il codice E104.",
-  "why_botia": "BOTIA contrassegna E104 poiché il regolamento UE n. 1333/2008 lo include tra i coloranti per i quali determinati alimenti devono recare l’avvertenza aggiuntiva che il colorante potrebbe avere effetti negativi sull’attività e sull’attenzione dei bambini, fatte salve le eccezioni previste dal regolamento. Si tratta di un obbligo di etichettatura, non di una previsione di un effetto su un bambino in particolare.",
-  "can_1": "Rilevare l’E104 e i principali nomi dichiarati per il giallo di chinolina.",
-  "can_2": "Illustrare il contesto dell'etichettatura supplementare dell'UE senza trasformare la norma relativa alle avvertenze in una conclusione medica individuale.",
-  "cannot_1": "Determinare la quantità di colorante presente consultando l'elenco degli ingredienti.",
-  "cannot_2": "Prevedere se un determinato minore subirà un effetto o dare per scontato che la stessa formulazione dell’avvertenza sia valida in ogni giurisdizione.",
+  "description": "Il giallo di chinolina è una miscela e non un singolo composto. L'EFSA ha ridotto fortemente la DGA nel 2009 e negli Stati Uniti non è autorizzato negli alimenti.",
+  "what_is": "Il giallo di chinolina (E104 / INS 104) è un colorante alimentare giallo sintetico prodotto come miscela anziché come singolo composto.",
+  "why_botia": "Il giallo di chinolina non è un singolo composto ma una miscela, quindi la sua composizione è importante nella valutazione. Nell'UE, gli alimenti che lo contengono devono riportare un'avvertenza secondo cui può influire negativamente sull'attività e l'attenzione dei bambini — un'avvertenza basata su studi di miscele di coloranti, non sul giallo di chinolina da solo. Nel 2009 l'EFSA ha ridotto la dose giornaliera accettabile da 10 a 0,5 mg/kg di peso corporeo dopo nuovi dati animali a lungo termine; successivamente nell'UE sono stati ridotti i livelli consentiti o eliminati alcuni usi alimentari. Negli Stati Uniti non è autorizzato per l'uso negli alimenti. Il JECFA ha poi fissato una DGA di 0–3 mg/kg e ha concluso che l'esposizione alimentare stimata non presenta problemi per la salute.",
+  "can_1": "Rilevare E104, INS 104, giallo di chinolina e gli altri nomi dichiarati nella lista degli ingredienti.",
+  "can_2": "Spiegare che è una miscela, l'avvertenza UE su attività e attenzione, la riduzione della DGA EFSA nel 2009, lo status negli Stati Uniti e la DGA attuale del JECFA.",
+  "cannot_1": "Determinare la composizione di un lotto specifico di giallo di chinolina o la quantità presente dalla lista degli ingredienti.",
+  "cannot_2": "Prevedere se un determinato bambino mostrerà un effetto o trattare studi su miscele di coloranti come prova di un effetto del solo giallo di chinolina.",
   "sources": [
     {
-      "label": "Regolamento (CE) n. 1333/2008 — Elenco dell’Unione e condizioni d’uso degli additivi alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Quinoline Yellow, INS 104",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3466"
     },
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione — specifiche relative agli additivi alimentari autorizzati",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Re-evaluation of Quinoline Yellow (E104), 2009",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1329"
+    },
+    {
+      "label": "EFSA — Refined exposure assessment for Quinoline Yellow (E104), 2015",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4070"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj/eng"
+    },
+    {
+      "label": "FDA — Quinoline Yellow is not permitted in foods in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E104",

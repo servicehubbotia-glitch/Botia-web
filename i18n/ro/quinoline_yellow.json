@@ -1,21 +1,33 @@
 {
   "name": "Galben de chinolină",
   "title": "Galben de chinolină",
-  "description": "Un colorant alimentar sintetic identificat în UE sub denumirea de E104.",
-  "what_is": "Un colorant alimentar sintetic identificat în UE cu codul E104.",
-  "why_botia": "BOTIA semnalează E104, deoarece Regulamentul UE nr. 1333/2008 îl include printre coloranții pentru care anumite produse alimentare trebuie să poarte mențiunea suplimentară că respectivul colorant poate avea un efect negativ asupra activității și atenției la copii, sub rezerva excepțiilor prevăzute de regulament. Aceasta este o cerință de etichetare, nu o previziune a unui efect asupra unui copil anume.",
-  "can_1": "Se detectează E104 și denumirile principale declarate pentru galbenul de chinolină.",
-  "can_2": "Prezentați contextul etichetării suplimentare a UE fără a transforma regula privind avertismentele într-o concluzie medicală individuală.",
-  "cannot_1": "Determinați cantitatea de colorant prezentă pe baza listei de ingrediente.",
-  "cannot_2": "Prevedeți dacă un anumit copil va fi afectat de un anumit efect sau presupuneți că aceeași formulare a avertismentului se aplică în toate jurisdicțiile.",
+  "description": "Galbenul de chinolină este un amestec, nu un singur compus. EFSA a redus puternic aportul în 2009, iar în Statele Unite nu este autorizat pentru utilizare în alimente.",
+  "what_is": "Galbenul de chinolină (E104 / INS 104) este un colorant alimentar galben sintetic produs ca amestec, nu ca un singur compus.",
+  "why_botia": "Galbenul de chinolină nu este un singur compus, ci un amestec, astfel încât compoziția sa contează la evaluare. În UE, alimentele care îl conțin trebuie să poarte un avertisment că poate afecta negativ activitatea și atenția copiilor — avertisment bazat pe studii cu amestecuri de coloranți, nu cu galben de chinolină singur. În 2009, EFSA a redus aportul zilnic acceptabil de la 10 la 0,5 mg/kg greutate corporală după noi date pe termen lung la animale; ulterior, în UE au fost reduse nivelurile permise sau eliminate unele utilizări alimentare. Nu este autorizat pentru utilizare în alimente în Statele Unite. JECFA a stabilit ulterior un aport zilnic acceptabil de 0–3 mg/kg și a concluzionat că expunerea alimentară estimată nu reprezintă o problemă pentru sănătate.",
+  "can_1": "Detecta E104, INS 104, galben de chinolină și celelalte denumiri declarate în lista ingredientelor.",
+  "can_2": "Explica faptul că este un amestec, avertismentul UE privind activitatea și atenția, reducerea aportului EFSA din 2009, statutul în Statele Unite și aportul actual JECFA.",
+  "cannot_1": "Determina compoziția unui anumit lot de galben de chinolină sau cantitatea prezentă din lista ingredientelor.",
+  "cannot_2": "Prezice dacă un anumit copil va prezenta un efect sau trata studiile amestecurilor de coloranți drept dovadă a unui efect produs de galbenul de chinolină singur.",
   "sources": [
     {
-      "label": "Regulamentul (CE) nr. 1333/2008 — Lista Uniunii și condițiile de utilizare a aditivilor alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Quinoline Yellow, INS 104",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3466"
     },
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei — specificații privind aditivii alimentari autorizați",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Re-evaluation of Quinoline Yellow (E104), 2009",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1329"
+    },
+    {
+      "label": "EFSA — Refined exposure assessment for Quinoline Yellow (E104), 2015",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4070"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj/eng"
+    },
+    {
+      "label": "FDA — Quinoline Yellow is not permitted in foods in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E104",

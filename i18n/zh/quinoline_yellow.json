@@ -1,21 +1,33 @@
 {
   "name": "喹啉黄",
   "title": "喹啉黄",
-  "description": "一种在欧盟被标识为E104的合成食用色素。",
-  "what_is": "一种在欧盟被标识为E104的合成食用色素。",
-  "why_botia": "BOTIA 标记 E104，因为根据欧盟第1333/2008号法规，该色素被列为特定食品必须标注额外声明的色素之一，声明内容为“该色素可能对儿童的活动能力和注意力产生不利影响”，但该法规规定的例外情况除外。这是一项标签要求，并非对特定儿童可能产生的影响的预测。",
-  "can_1": "检测E104以及喹啉黄的主要标示名称。",
-  "can_2": "展示欧盟补充标签的相关背景，同时避免将警告规则转化为个别医学结论。",
-  "cannot_1": "根据配料表确定其中所含的色素量。",
-  "cannot_2": "预测某名儿童是否会受到某种影响，或者假设相同的警示措辞在所有司法管辖区均适用。",
+  "description": "喹啉黄是一种混合物，而不是单一化合物。EFSA 在2009年大幅降低其每日允许摄入量，且它未获准用于美国食品。",
+  "what_is": "喹啉黄（E104 / INS 104）是一种合成黄色食用色素，以混合物形式生产，而不是单一化合物。",
+  "why_botia": "喹啉黄并不是单一化合物，而是一种混合物，因此其具体组成会影响安全评估。在欧盟，含有它的食品必须标注警示，说明它可能对儿童的活动和注意力产生不良影响——这项警示依据的是色素混合物研究，而不是单独研究喹啉黄。EFSA 在2009年根据新的长期动物研究数据，将每日允许摄入量从每公斤体重10毫克降至0.5毫克；随后欧盟降低了允许使用量或取消了若干食品用途。喹啉黄未获准用于美国食品。JECFA 后来将每日允许摄入量设为每公斤体重0–3毫克，并认为估算的膳食暴露不会造成健康问题。",
+  "can_1": "识别配料表中的 E104、INS 104、喹啉黄及其他明确名称。",
+  "can_2": "解释它是一种混合物、欧盟儿童活动和注意力警示、EFSA 2009年的摄入限值下降、美国监管状态以及JECFA当前的每日允许摄入量。",
+  "cannot_1": "根据配料表确定某一批喹啉黄的具体组成或产品中的实际含量。",
+  "cannot_2": "预测某个具体儿童是否会出现影响，也不能把色素混合物研究当作喹啉黄单独产生影响的证据。",
   "sources": [
     {
-      "label": "第1333/2008号（EC）法规——食品添加剂的欧盟清单及使用条件",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Quinoline Yellow, INS 104",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3466"
     },
     {
-      "label": "欧盟委员会第231/2012号条例——经批准的食品添加剂规格",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Re-evaluation of Quinoline Yellow (E104), 2009",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1329"
+    },
+    {
+      "label": "EFSA — Refined exposure assessment for Quinoline Yellow (E104), 2015",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4070"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj/eng"
+    },
+    {
+      "label": "FDA — Quinoline Yellow is not permitted in foods in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E104",

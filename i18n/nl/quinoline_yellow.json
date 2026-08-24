@@ -1,21 +1,33 @@
 {
   "name": "Chinolinegeel",
   "title": "Chinolinegeel",
-  "description": "Een synthetische kleurstof die in de EU wordt aangeduid als E104.",
-  "what_is": "Een synthetische kleurstof die in de EU wordt aangeduid als E104.",
-  "why_botia": "BOTIA markeert E104, omdat Verordening (EG) nr. 1333/2008 deze kleurstof schaart onder de kleurstoffen waarvoor op bepaalde levensmiddelen de aanvullende vermelding moet worden aangebracht dat de kleurstof een negatief effect kan hebben op de activiteit en aandacht van kinderen, behoudens de uitzonderingen die in de verordening zijn vastgelegd. Dit is een etiketteringsvereiste, geen voorspelling van een effect bij een bepaald kind.",
-  "can_1": "Detecteer E104 en de belangrijkste opgegeven benamingen voor chinolinegeel.",
-  "can_2": "Geef de context van de aanvullende etikettering van de EU weer, zonder de waarschuwingsregel om te zetten in een individuele medische conclusie.",
-  "cannot_1": "Bepaal aan de hand van de ingrediëntenlijst hoeveel kleurstof er in het product zit.",
-  "cannot_2": "Voorspel of een bepaald kind een bepaald effect zal ondervinden, of ga ervan uit dat dezelfde waarschuwingstekst in elk rechtsgebied van toepassing is.",
+  "description": "Chinolinegeel is een mengsel en geen enkele verbinding. EFSA verlaagde de ADI sterk in 2009 en het is niet toegestaan voor gebruik in voedsel in de Verenigde Staten.",
+  "what_is": "Chinolinegeel (E104 / INS 104) is een synthetische gele voedingskleurstof die als mengsel wordt geproduceerd en niet als één enkele verbinding.",
+  "why_botia": "Chinolinegeel is geen enkele verbinding maar een mengsel, waardoor de samenstelling belangrijk is bij de beoordeling. In de EU moeten voedingsmiddelen die het bevatten een waarschuwing dragen dat het de activiteit en aandacht van kinderen nadelig kan beïnvloeden — een waarschuwing gebaseerd op studies met kleurstofmengsels, niet op Chinolinegeel alleen. EFSA verlaagde in 2009 de aanvaardbare dagelijkse inname van 10 naar 0,5 mg/kg lichaamsgewicht na nieuwe langdurige dierstudies; daarna werden in de EU toegestane niveaus verlaagd of bepaalde toepassingen in voedsel geschrapt. In de Verenigde Staten is het niet toegestaan voor gebruik in voedsel. JECFA stelde later een ADI van 0–3 mg/kg vast en concludeerde dat de geschatte blootstelling via voeding geen gezondheidsprobleem vormt.",
+  "can_1": "E104, INS 104, Chinolinegeel en andere vermelde namen in de ingrediëntenlijst detecteren.",
+  "can_2": "Uitleggen dat het een mengsel is, de EU-waarschuwing over activiteit en aandacht, de EFSA-verlaging van 2009, de status in de Verenigde Staten en de huidige JECFA-ADI.",
+  "cannot_1": "De samenstelling van een specifieke partij Chinolinegeel of de aanwezige hoeveelheid uit de ingrediëntenlijst bepalen.",
+  "cannot_2": "Voorspellen of een bepaald kind een effect zal vertonen of studies met kleurstofmengsels behandelen als bewijs voor een effect van Chinolinegeel alleen.",
   "sources": [
     {
-      "label": "Verordening (EG) nr. 1333/2008 — EU-lijst en gebruiksvoorwaarden voor levensmiddelenadditieven",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Quinoline Yellow, INS 104",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3466"
     },
     {
-      "label": "Verordening (EU) nr. 231/2012 van de Commissie — specificaties voor toegestane levensmiddelenadditieven",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Re-evaluation of Quinoline Yellow (E104), 2009",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1329"
+    },
+    {
+      "label": "EFSA — Refined exposure assessment for Quinoline Yellow (E104), 2015",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4070"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj/eng"
+    },
+    {
+      "label": "FDA — Quinoline Yellow is not permitted in foods in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E104",

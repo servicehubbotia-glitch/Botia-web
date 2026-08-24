@@ -1,21 +1,33 @@
 {
   "name": "Kuning Kuinolin",
   "title": "Kuning Kuinolin",
-  "description": "Pewarna makanan sintetis yang diklasifikasikan di Uni Eropa sebagai E104.",
-  "what_is": "Pewarna makanan sintetis yang diklasifikasikan di Uni Eropa sebagai E104.",
-  "why_botia": "BOTIA menandai E104 karena Peraturan Uni Eropa No. 1333/2008 memasukkannya ke dalam daftar pewarna yang mengharuskan produk makanan tertentu mencantumkan pernyataan tambahan bahwa pewarna tersebut mungkin berdampak negatif terhadap aktivitas dan konsentrasi anak-anak, dengan pengecualian sebagaimana diatur dalam peraturan tersebut. Ini merupakan persyaratan pelabelan, bukan prediksi mengenai dampak pada anak tertentu.",
-  "can_1": "Mendeteksi E104 dan nama-nama yang dinyatakan sebagai nama utama untuk Quinoline Yellow.",
-  "can_2": "Tampilkan konteks pelabelan tambahan Uni Eropa tanpa mengubah aturan peringatan tersebut menjadi kesimpulan medis individual.",
-  "cannot_1": "Tentukan jumlah pewarna yang terkandung berdasarkan daftar bahan.",
-  "cannot_2": "Memprediksi apakah seorang anak tertentu akan mengalami dampak tersebut atau menganggap bahwa kalimat peringatan yang sama berlaku di setiap yurisdiksi.",
+  "description": "Quinoline Yellow adalah campuran, bukan satu senyawa tunggal. EFSA menurunkan ADI secara tajam pada 2009 dan zat ini tidak diizinkan untuk digunakan dalam makanan di Amerika Serikat.",
+  "what_is": "Quinoline Yellow (E104 / INS 104) adalah pewarna makanan kuning sintetis yang dibuat sebagai campuran, bukan satu senyawa tunggal.",
+  "why_botia": "Quinoline Yellow bukan satu senyawa tunggal melainkan campuran, sehingga komposisinya penting dalam penilaian. Di UE, makanan yang mengandungnya harus mencantumkan peringatan bahwa zat ini dapat berdampak buruk pada aktivitas dan perhatian anak — peringatan yang didasarkan pada studi campuran pewarna, bukan Quinoline Yellow secara terpisah. Pada 2009 EFSA menurunkan asupan harian yang dapat diterima dari 10 menjadi 0,5 mg/kg berat badan setelah data baru dari studi hewan jangka panjang; setelah itu di UE tingkat penggunaan yang diizinkan dikurangi atau sejumlah penggunaan pangan dihapus. Quinoline Yellow tidak diizinkan untuk digunakan dalam makanan di Amerika Serikat. JECFA kemudian menetapkan ADI 0–3 mg/kg dan menyimpulkan bahwa perkiraan paparan dari makanan tidak menimbulkan masalah kesehatan.",
+  "can_1": "Mendeteksi E104, INS 104, Quinoline Yellow dan nama lain yang dinyatakan dalam daftar bahan.",
+  "can_2": "Menjelaskan bahwa zat ini merupakan campuran, peringatan UE tentang aktivitas dan perhatian, penurunan ADI EFSA pada 2009, statusnya di Amerika Serikat dan ADI JECFA saat ini.",
+  "cannot_1": "Menentukan komposisi suatu batch Quinoline Yellow tertentu atau jumlahnya dalam produk dari daftar bahan.",
+  "cannot_2": "Memprediksi apakah anak tertentu akan menunjukkan efek atau memperlakukan studi campuran pewarna sebagai bukti efek Quinoline Yellow secara terpisah.",
   "sources": [
     {
-      "label": "Peraturan (EC) No. 1333/2008 — Daftar Uni Eropa dan ketentuan penggunaan bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Quinoline Yellow, INS 104",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3466"
     },
     {
-      "label": "Peraturan Komisi (UE) No. 231/2012 — spesifikasi bahan tambahan pangan yang diizinkan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Re-evaluation of Quinoline Yellow (E104), 2009",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1329"
+    },
+    {
+      "label": "EFSA — Refined exposure assessment for Quinoline Yellow (E104), 2015",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4070"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj/eng"
+    },
+    {
+      "label": "FDA — Quinoline Yellow is not permitted in foods in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E104",

@@ -6,22 +6,34 @@
   "layers": [
     "enumbers"
   ],
-  "what_is": "A synthetic food colour identified in the EU as E104.",
-  "why_botia": "BOTIA flags E104 because EU Regulation 1333/2008 places it among the colours for which specified foods must carry the additional statement that the colour may have an adverse effect on activity and attention in children, subject to the regulation's exceptions. This is a labelling requirement, not a prediction of an effect in a particular child.",
-  "can_1": "Detect E104 and the principal declared names for Quinoline Yellow.",
-  "can_2": "Show the EU additional-labelling context without converting the warning rule into an individual medical conclusion.",
-  "cannot_1": "Determine the amount of colour present from the ingredient list.",
-  "cannot_2": "Predict whether a particular child will experience an effect or assume that the same warning wording applies in every jurisdiction.",
+  "what_is": "Quinoline Yellow (E104 / INS 104) is a synthetic yellow food colour made as a mixture rather than one single compound.",
+  "why_botia": "Quinoline Yellow is not a single compound but a mixture, so its composition matters when it is assessed. In the EU, foods containing it must carry a warning that it may affect activity and attention in children — a warning based on studies of colour mixtures, not Quinoline Yellow alone. EFSA cut its ADI from 10 to 0.5 mg/kg body weight in 2009 after new long-term animal data, and EU permitted levels were subsequently reduced or withdrawn for a number of food uses. It is not authorised for use in food in the United States. JECFA later set an ADI of 0–3 mg/kg and concluded that estimated dietary exposure does not present a health concern.",
+  "can_1": "Detect E104, INS 104, Quinoline Yellow and its other declared names in the ingredient list.",
+  "can_2": "Explain that it is a mixture, the EU activity-and-attention warning, EFSA's 2009 ADI reduction, its US status and JECFA's current ADI.",
+  "cannot_1": "Determine the composition of a particular Quinoline Yellow batch or how much is present from the ingredient list.",
+  "cannot_2": "Predict whether a particular child will show an effect or treat studies of colour mixtures as proof of an effect caused by Quinoline Yellow alone.",
   "sources": [
     {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Quinoline Yellow, INS 104",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3466"
     },
     {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Re-evaluation of Quinoline Yellow (E104), 2009",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1329"
+    },
+    {
+      "label": "EFSA — Refined exposure assessment for Quinoline Yellow (E104), 2015",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4070"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj/eng"
+    },
+    {
+      "label": "FDA — Quinoline Yellow is not permitted in foods in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "title": "Quinoline Yellow",
-  "description": "A synthetic food colour identified in the EU as E104."
+  "description": "Quinoline Yellow is a mixture rather than one single compound. EFSA sharply lowered its ADI in 2009, and it is not authorised for food use in the United States."
 }

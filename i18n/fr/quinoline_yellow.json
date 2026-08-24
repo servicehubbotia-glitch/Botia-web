@@ -1,21 +1,33 @@
 {
   "name": "Jaune de quinoléine",
   "title": "Jaune de quinoléine",
-  "description": "Un colorant alimentaire synthétique désigné dans l'UE sous le numéro E104.",
-  "what_is": "Un colorant alimentaire synthétique désigné dans l'UE sous le numéro E104.",
-  "why_botia": "BOTIA Il est classé sous le code E104, car le règlement (CE) n° 1333/2008 le range parmi les colorants pour lesquels certains aliments doivent comporter la mention supplémentaire indiquant que ce colorant peut avoir un effet négatif sur l'activité et l'attention chez les enfants, sous réserve des exceptions prévues par le règlement. Il s'agit d'une exigence d'étiquetage et non d'une prédiction d'un effet chez un enfant en particulier.",
-  "can_1": "Détecter l'E104 et les principales dénominations déclarées du jaune de quinoléine.",
-  "can_2": "Présenter le contexte de l'étiquetage complémentaire de l'UE sans transformer la consigne d'avertissement en une conclusion médicale individuelle.",
-  "cannot_1": "Déterminez la quantité de colorant présente à partir de la liste des ingrédients.",
-  "cannot_2": "Prédire si un enfant en particulier subira une conséquence ou partir du principe que la même formulation d'avertissement s'applique dans toutes les juridictions.",
+  "description": "Le jaune de quinoléine est un mélange et non un composé unique. L'EFSA a fortement réduit sa DJA en 2009 et il n'est pas autorisé dans les aliments aux États-Unis.",
+  "what_is": "Le jaune de quinoléine (E104 / INS 104) est un colorant alimentaire jaune synthétique fabriqué sous forme de mélange plutôt que d'un composé unique.",
+  "why_botia": "Le jaune de quinoléine n'est pas un composé unique mais un mélange, de sorte que sa composition compte lors de son évaluation. Dans l'UE, les aliments qui en contiennent doivent porter un avertissement indiquant qu'il peut avoir des effets sur l'activité et l'attention des enfants — un avertissement fondé sur des études de mélanges de colorants, et non sur le jaune de quinoléine seul. En 2009, l'EFSA a réduit sa dose journalière admissible de 10 à 0,5 mg/kg de poids corporel après de nouvelles données animales à long terme, puis des niveaux autorisés ont été réduits ou certains usages alimentaires supprimés dans l'UE. Il n'est pas autorisé dans les aliments aux États-Unis. Le JECFA a ensuite fixé une DJA de 0–3 mg/kg et conclu que l'exposition alimentaire estimée ne présentait pas de problème de santé.",
+  "can_1": "Détecter E104, INS 104, jaune de quinoléine et ses autres noms déclarés dans la liste des ingrédients.",
+  "can_2": "Expliquer qu'il s'agit d'un mélange, l'avertissement de l'UE sur l'activité et l'attention, la réduction de la DJA par l'EFSA en 2009, son statut aux États-Unis et la DJA actuelle du JECFA.",
+  "cannot_1": "Déterminer la composition d'un lot particulier de jaune de quinoléine ou la quantité présente à partir de la liste des ingrédients.",
+  "cannot_2": "Prédire si un enfant particulier présentera un effet ou traiter des études de mélanges de colorants comme preuve d'un effet du jaune de quinoléine seul.",
   "sources": [
     {
-      "label": "Règlement (CE) n° 1333/2008 — Liste de l'Union et conditions d'utilisation des additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — Quinoline Yellow, INS 104",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3466"
     },
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission — spécifications relatives aux additifs alimentaires autorisés",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Re-evaluation of Quinoline Yellow (E104), 2009",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1329"
+    },
+    {
+      "label": "EFSA — Refined exposure assessment for Quinoline Yellow (E104), 2015",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4070"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — child activity-and-attention warning",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/oj/eng"
+    },
+    {
+      "label": "FDA — Quinoline Yellow is not permitted in foods in the United States",
+      "url": "https://www.fda.gov/media/71661/download"
     }
   ],
   "e_code": "E104",
