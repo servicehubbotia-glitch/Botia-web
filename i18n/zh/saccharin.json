@@ -1,28 +1,36 @@
 {
   "name": "糖精",
   "e_code": "E954",
-  "aliases": "E954, 糖精, 糖精钠, 糖精钙, 糖精钾, 糖精, 糖精钠, 糖精钙, 糖精钾",
+  "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), 糖精, 糖精钠, 糖精钙, 糖精钾, 糖精, 糖精钠, 糖精钙, 糖精钾",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "一种合成高强度甜味剂，甜度约为蔗糖的300至500倍。",
-  "why_botia": "它被标记是因为它是一种人工甜味剂，是超加工食品配方的特征。",
-  "can_1": "在扫描的配料列表中识别E954或其任何盐类。",
-  "can_2": "触发甜味剂和E编号信息层。",
-  "cannot_1": "验证糖精是否含有超过10毫克/千克的邻甲苯磺酰胺微量杂质。",
-  "cannot_2": "除非特别说明，否则验证制造商使用的是糖精钙还是糖精钠。",
+  "what_is": "糖精及其钠盐、钙盐和钾盐都是高强度甜味剂。Codex 将糖精列为 INS 954(i)，糖精钙列为 INS 954(ii)，糖精钾列为 INS 954(iii)，糖精钠列为 INS 954(iv)。",
+  "why_botia": "糖精的甜度约为糖的300倍，因此只需很少的量就能起作用——而标签无法显示实际用了多少。它不会被代谢，大部分以原形排出。JECFA 为糖精及其钙盐、钾盐和钠盐设定了每公斤体重0–5毫克的组 ADI，EFSA 在2024年重新评估后将自己的限值从每公斤体重5毫克提高到9毫克。",
+  "can_1": "识别明确标示的 E954、Codex INS 954 编号、糖精及其钠盐、钙盐和钾盐。",
+  "can_2": "解释其高强度甜味作用、不被代谢、大部分以原形排出的特点以及 JECFA 和 EFSA 的每日允许摄入量。",
+  "cannot_1": "仅根据配料声明确定产品中糖精的实际含量。",
+  "cannot_2": "根据单一产品标签计算一个人的每日糖精总暴露量或个体反应。",
   "sources": [
     {
-      "label": "欧盟委员会法规 (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Saccharin (INS 954), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3164"
     },
     {
-      "label": "EFSA — 糖精（E954）重新评估，2024",
+      "label": "JECFA — Saccharin and its salts toxicological monograph (FAS 32)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v32je09.htm"
+    },
+    {
+      "label": "Codex GSFA — Saccharins group (INS 954)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=98"
+    },
+    {
+      "label": "EFSA — Re-evaluation of saccharin (E 954), 2024",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9044"
     }
   ],
   "title": "糖精",
-  "description": "一种合成高强度甜味剂，甜度约为蔗糖的300至500倍。"
+  "description": "糖精（E954 / INS 954）是一种甜度约为糖300倍的高强度甜味剂；它不会被代谢，JECFA 和 EFSA 均设定了摄入限值。"
 }

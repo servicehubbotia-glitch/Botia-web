@@ -1,28 +1,36 @@
 {
   "name": "Zaharină",
   "e_code": "E954",
-  "aliases": "E954, zaharină, zaharină sodică, zaharină calcică, zaharină potasică, sacarina, sacarina sódica, sacarina cálcica, sacarina potásica",
+  "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), zaharină, zaharină sodică, zaharină calcică, zaharină potasică, sacarina, sacarina sódica, sacarina cálcica, sacarina potásica",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un îndulcitor intens sintetic, de aproximativ 300 până la 500 de ori mai dulce decât zaharoza.",
-  "why_botia": "Îl semnalează deoarece este un îndulcitor artificial caracteristic formulărilor de alimente ultraprocesate.",
-  "can_1": "Identifică E954 sau oricare dintre sărurile sale pe listele de ingrediente scanate.",
-  "can_2": "Activează straturile informative pentru îndulcitori și numere E.",
-  "cannot_1": "Verifică dacă zaharină conține impurități de o-toluenesulfonamidă peste 10 mg/kg.",
-  "cannot_2": "Verifică dacă producătorul a folosit zaharină calcică sau zaharină sodică, cu excepția cazului în care este specificat.",
+  "what_is": "Zaharina și sărurile sale de sodiu, calciu și potasiu sunt îndulcitori de mare intensitate. Codex identifică zaharina ca INS 954(i), zaharinatul de calciu ca INS 954(ii), zaharinatul de potasiu ca INS 954(iii) și zaharinatul de sodiu ca INS 954(iv).",
+  "why_botia": "Zaharina este de aproximativ 300 de ori mai dulce decât zahărul, astfel încât o cantitate foarte mică este suficientă — iar eticheta nu arată cât s-a folosit. Nu este metabolizată și este eliminată în mare parte neschimbată. JECFA a stabilit o ADI de grup de 0–5 mg/kg greutate corporală pentru zaharină și sărurile sale de calciu, potasiu și sodiu, iar EFSA și-a majorat propria limită de la 5 la 9 mg/kg greutate corporală în 2024 după reevaluare.",
+  "can_1": "Detecta E954, identificatorii Codex INS 954, zaharina și sărurile sale de sodiu, calciu și potasiu atunci când sunt declarate explicit.",
+  "can_2": "Explica funcția de îndulcitor intens, lipsa metabolizării, eliminarea în mare parte neschimbată și dozele zilnice admisibile JECFA și EFSA.",
+  "cannot_1": "Determina cantitatea de zaharină prezentă doar din declarația ingredientelor.",
+  "cannot_2": "Calcula expunerea zilnică totală la zaharină sau răspunsul individual al unei persoane din eticheta unui singur produs.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Saccharin (INS 954), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3164"
     },
     {
-      "label": "EFSA — Reevaluarea zaharinei (E954), 2024",
+      "label": "JECFA — Saccharin and its salts toxicological monograph (FAS 32)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v32je09.htm"
+    },
+    {
+      "label": "Codex GSFA — Saccharins group (INS 954)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=98"
+    },
+    {
+      "label": "EFSA — Re-evaluation of saccharin (E 954), 2024",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9044"
     }
   ],
   "title": "Zaharină",
-  "description": "Un îndulcitor intens sintetic, de aproximativ 300 până la 500 de ori mai dulce decât zaharoza."
+  "description": "Zaharina (E954 / INS 954) este un îndulcitor intens de aproximativ 300 de ori mai dulce decât zahărul; nu este metabolizată, iar JECFA și EFSA au stabilit limite de aport."
 }

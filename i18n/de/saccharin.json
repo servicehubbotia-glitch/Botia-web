@@ -1,28 +1,36 @@
 {
   "name": "Saccharin",
   "e_code": "E954",
-  "aliases": "E954, Saccharin, Natriumsaccharin, Calciumsaccharin, Kaliumsaccharin, Saccharin, Saccharin-Natrium, Saccharin-Calcium, Saccharin-Kalium",
+  "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), Saccharin, Natriumsaccharin, Calciumsaccharin, Kaliumsaccharin, Saccharin, Saccharin-Natrium, Saccharin-Calcium, Saccharin-Kalium",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Ein synthetischer intensiver Süßstoff, der etwa 300- bis 500-mal süßer ist als Saccharose.",
-  "why_botia": "Es wird markiert, weil es ein künstlicher Süßstoff ist, der typisch für Formulierungen von stark verarbeiteten Lebensmitteln ist.",
-  "can_1": "E954 oder eines seiner Salze in gescannten Zutatenlisten identifizieren.",
-  "can_2": "Informationsschichten für Süßstoffe und E-Nummern auslösen.",
-  "cannot_1": "Überprüfen, ob das Saccharin Spurenverunreinigungen von o-Toluolsulfonamid über 10 mg/kg enthält.",
-  "cannot_2": "Überprüfen, ob der Hersteller Calciumsaccharin anstelle von Natriumsaccharin verwendet hat, sofern nicht angegeben.",
+  "what_is": "Saccharin und seine Natrium-, Calcium- und Kaliumsalze sind hochintensive Süßstoffe. Codex bezeichnet Saccharin als INS 954(i), Calciumsaccharin als INS 954(ii), Kaliumsaccharin als INS 954(iii) und Natriumsaccharin als INS 954(iv).",
+  "why_botia": "Saccharin ist etwa 300-mal süßer als Zucker, sodass eine sehr kleine Menge ausreicht — und das Etikett nicht erkennen lässt, wie viel verwendet wurde. Es wird nicht metabolisiert und weitgehend unverändert ausgeschieden. JECFA legte einen Gruppen-ADI von 0–5 mg/kg Körpergewicht für Saccharin und seine Calcium-, Kalium- und Natriumsalze fest, und EFSA erhöhte ihren eigenen Grenzwert nach der Neubewertung 2024 von 5 auf 9 mg/kg Körpergewicht.",
+  "can_1": "E954, die Codex-INS-954-Kennungen, Saccharin und seine Natrium-, Calcium- und Kaliumsalze erkennen, wenn sie ausdrücklich deklariert sind.",
+  "can_2": "Die hochintensive Süßwirkung, das Fehlen einer Metabolisierung, die weitgehend unveränderte Ausscheidung sowie die akzeptablen täglichen Aufnahmemengen von JECFA und EFSA erklären.",
+  "cannot_1": "Allein aus der Zutatenangabe bestimmen, wie viel Saccharin enthalten ist.",
+  "cannot_2": "Aus einem einzelnen Produktetikett die gesamte tägliche Saccharinaufnahme oder individuelle Reaktion einer Person berechnen.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Saccharin (INS 954), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3164"
     },
     {
-      "label": "EFSA — Neubewertung von Saccharin (E954), 2024",
+      "label": "JECFA — Saccharin and its salts toxicological monograph (FAS 32)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v32je09.htm"
+    },
+    {
+      "label": "Codex GSFA — Saccharins group (INS 954)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=98"
+    },
+    {
+      "label": "EFSA — Re-evaluation of saccharin (E 954), 2024",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9044"
     }
   ],
   "title": "Saccharin",
-  "description": "Ein synthetischer intensiver Süßstoff, der etwa 300- bis 500-mal süßer ist als Saccharose."
+  "description": "Saccharin (E954 / INS 954) ist ein hochintensiver Süßstoff, etwa 300-mal süßer als Zucker; es wird nicht metabolisiert und JECFA und EFSA haben Aufnahmewerte festgelegt."
 }

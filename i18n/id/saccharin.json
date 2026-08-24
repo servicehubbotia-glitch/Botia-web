@@ -1,28 +1,36 @@
 {
   "name": "Sakarin",
   "e_code": "E954",
-  "aliases": "E954, sakarin, natrium sakarin, kalsium sakarin, kalium sakarin, sakarina, sakarina natrium, sakarina kalsium, sakarina kalium",
+  "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), sakarin, natrium sakarin, kalsium sakarin, kalium sakarin, sakarina, sakarina natrium, sakarina kalsium, sakarina kalium",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Pemanis sintetis intens yang sekitar 300 hingga 500 kali lebih manis dari sukrosa.",
-  "why_botia": "Ini menandainya karena merupakan pemanis buatan yang khas dari formulasi makanan ultra-olahan.",
-  "can_1": "Identifikasi E954 atau garam-garamnya pada daftar bahan yang dipindai.",
-  "can_2": "Picu lapisan informasi pemanis dan nomor E.",
-  "cannot_1": "Verifikasi apakah sakarin mengandung jejak pengotor o-toluenasulfonamida di atas 10 mg/kg.",
-  "cannot_2": "Verifikasi apakah produsen menggunakan kalsium sakarin versus natrium sakarin kecuali ditentukan.",
+  "what_is": "Sakarin dan garam natrium, kalsium, serta kaliumnya adalah pemanis intensitas tinggi. Codex mengidentifikasi sakarin sebagai INS 954(i), kalsium sakarin sebagai INS 954(ii), kalium sakarin sebagai INS 954(iii), dan natrium sakarin sebagai INS 954(iv).",
+  "why_botia": "Sakarin sekitar 300 kali lebih manis daripada gula, sehingga jumlah yang sangat kecil sudah cukup — dan label tidak menunjukkan berapa banyak yang digunakan. Zat ini tidak dimetabolisme dan sebagian besar dikeluarkan tanpa perubahan. JECFA menetapkan ADI kelompok 0–5 mg/kg berat badan untuk sakarin serta garam kalsium, kalium, dan natriumnya, dan EFSA menaikkan batasnya sendiri dari 5 menjadi 9 mg/kg berat badan pada 2024 setelah evaluasi ulang.",
+  "can_1": "Mendeteksi E954, pengenal Codex INS 954, sakarin serta garam natrium, kalsium dan kaliumnya ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan fungsi pemanis intensitas tinggi, tidak adanya metabolisme, pengeluaran yang sebagian besar tidak berubah serta asupan harian yang dapat diterima menurut JECFA dan EFSA.",
+  "cannot_1": "Menentukan jumlah sakarin dalam produk hanya dari pernyataan bahan.",
+  "cannot_2": "Menghitung paparan harian total sakarin atau respons individual seseorang dari satu label produk.",
   "sources": [
     {
-      "label": "Peraturan Komisi (UE) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Saccharin (INS 954), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3164"
     },
     {
-      "label": "EFSA — Evaluasi ulang sakarin (E954), 2024",
+      "label": "JECFA — Saccharin and its salts toxicological monograph (FAS 32)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v32je09.htm"
+    },
+    {
+      "label": "Codex GSFA — Saccharins group (INS 954)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=98"
+    },
+    {
+      "label": "EFSA — Re-evaluation of saccharin (E 954), 2024",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9044"
     }
   ],
   "title": "Sakarin",
-  "description": "Pemanis sintetis intens yang sekitar 300 hingga 500 kali lebih manis dari sukrosa."
+  "description": "Sakarin (E954 / INS 954) adalah pemanis intensitas tinggi sekitar 300 kali lebih manis daripada gula; zat ini tidak dimetabolisme dan JECFA serta EFSA telah menetapkan batas asupan."
 }

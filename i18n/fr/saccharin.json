@@ -1,28 +1,36 @@
 {
   "name": "Saccharine",
   "e_code": "E954",
-  "aliases": "E954, saccharine, saccharinate de sodium, saccharinate de calcium, saccharinate de potassium, saccharine, saccharine sodique, saccharine calcique, saccharine potassique",
+  "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), saccharine, saccharinate de sodium, saccharinate de calcium, saccharinate de potassium, saccharine, saccharine sodique, saccharine calcique, saccharine potassique",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un édulcorant intense synthétique environ 300 à 500 fois plus sucré que le saccharose.",
-  "why_botia": "Il le signale car c'est un édulcorant artificiel caractéristique des formulations d'aliments ultra-transformés.",
-  "can_1": "Identifier le E954 ou l'un de ses sels sur les listes d'ingrédients scannées.",
-  "can_2": "Déclencher les couches d'information sur les édulcorants et les numéros E.",
-  "cannot_1": "Vérifier si la saccharine contient des impuretés traces d'ortho-toluènesulfonamide supérieures à 10 mg/kg.",
-  "cannot_2": "Vérifier si le fabricant a utilisé du saccharinate de calcium plutôt que du saccharinate de sodium, sauf indication contraire.",
+  "what_is": "La saccharine et ses sels de sodium, calcium et potassium sont des édulcorants intenses. Le Codex identifie la saccharine comme INS 954(i), la saccharine calcique comme INS 954(ii), la saccharine potassique comme INS 954(iii) et la saccharine sodique comme INS 954(iv).",
+  "why_botia": "La saccharine est environ 300 fois plus sucrée que le sucre, de sorte qu’une très petite quantité suffit — et l’étiquette ne permet pas de savoir combien a été utilisé. Elle n’est pas métabolisée et est éliminée en grande partie sous forme inchangée. Le JECFA a fixé une DJA de groupe de 0–5 mg/kg de poids corporel pour la saccharine et ses sels de calcium, potassium et sodium, et l’EFSA a relevé sa propre limite de 5 à 9 mg/kg de poids corporel en 2024 après réévaluation.",
+  "can_1": "Détecter E954, les identifiants INS 954 du Codex, la saccharine et ses sels de sodium, calcium et potassium lorsqu’ils sont explicitement déclarés.",
+  "can_2": "Expliquer sa fonction d’édulcorant intense, l’absence de métabolisation, son élimination largement inchangée ainsi que les doses journalières admissibles du JECFA et de l’EFSA.",
+  "cannot_1": "Déterminer la quantité de saccharine présente à partir de la seule déclaration des ingrédients.",
+  "cannot_2": "Calculer l’exposition quotidienne totale à la saccharine ou la réponse individuelle d’une personne à partir de l’étiquette d’un seul produit.",
   "sources": [
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Saccharin (INS 954), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3164"
     },
     {
-      "label": "EFSA — Réévaluation de la saccharine (E954), 2024",
+      "label": "JECFA — Saccharin and its salts toxicological monograph (FAS 32)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v32je09.htm"
+    },
+    {
+      "label": "Codex GSFA — Saccharins group (INS 954)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=98"
+    },
+    {
+      "label": "EFSA — Re-evaluation of saccharin (E 954), 2024",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9044"
     }
   ],
   "title": "Saccharine",
-  "description": "Un édulcorant intense synthétique environ 300 à 500 fois plus sucré que le saccharose."
+  "description": "La saccharine (E954 / INS 954) est un édulcorant intense environ 300 fois plus sucré que le sucre ; elle n’est pas métabolisée et le JECFA et l’EFSA ont établi des limites d’apport."
 }

@@ -1,28 +1,36 @@
 {
   "name": "Sacharine",
   "e_code": "E954",
-  "aliases": "E954, sacharine, natriumsacharine, calciumsacharine, kaliumsacharine, sacarina, sacarina sódica, sacarina cálcica, sacarina potásica",
+  "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), sacharine, natriumsacharine, calciumsacharine, kaliumsacharine, sacarina, sacarina sódica, sacarina cálcica, sacarina potásica",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Een synthetische intense zoetstof die ongeveer 300 tot 500 keer zoeter is dan sucrose.",
-  "why_botia": "Het wordt gemarkeerd omdat het een kunstmatige zoetstof is die kenmerkend is voor ultrabewerkte voedingsformuleringen.",
-  "can_1": "Identificeer E954 of een van de zouten ervan op gescande ingrediëntenlijsten.",
-  "can_2": "Activeer informatieve lagen voor zoetstoffen en E-nummers.",
-  "cannot_1": "Controleer of de sacharine sporenverontreinigingen van o-tolueensulfonamide boven 10 mg/kg bevat.",
-  "cannot_2": "Controleer of de fabrikant calciumsacharine versus natriumsacharine heeft gebruikt, tenzij gespecificeerd.",
+  "what_is": "Sacharine en de natrium-, calcium- en kaliumzouten ervan zijn intensieve zoetstoffen. Codex identificeert sacharine als INS 954(i), calciumsacharine als INS 954(ii), kaliumsacharine als INS 954(iii) en natriumsacharine als INS 954(iv).",
+  "why_botia": "Sacharine is ongeveer 300 keer zo zoet als suiker, waardoor een zeer kleine hoeveelheid voldoende is — en het etiket niet laat zien hoeveel is gebruikt. Het wordt niet gemetaboliseerd en grotendeels onveranderd uitgescheiden. JECFA stelde een groeps-ADI vast van 0–5 mg/kg lichaamsgewicht voor sacharine en de calcium-, kalium- en natriumzouten, en EFSA verhoogde haar eigen limiet na de herbeoordeling in 2024 van 5 naar 9 mg/kg lichaamsgewicht.",
+  "can_1": "E954, de Codex INS 954-aanduidingen, sacharine en de natrium-, calcium- en kaliumzouten detecteren wanneer ze expliciet worden vermeld.",
+  "can_2": "De intensieve zoetfunctie, het ontbreken van metabolisme, de grotendeels onveranderde uitscheiding en de aanvaardbare dagelijkse innames van JECFA en EFSA uitleggen.",
+  "cannot_1": "Uit alleen de ingrediëntenverklaring bepalen hoeveel sacharine aanwezig is.",
+  "cannot_2": "De totale dagelijkse blootstelling aan sacharine of individuele reactie van een persoon berekenen aan de hand van één productetiket.",
   "sources": [
     {
-      "label": "Verordening (EU) nr. 231/2012 van de Commissie",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Saccharin (INS 954), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3164"
     },
     {
-      "label": "EFSA — Herevaluatie van sacharine (E954), 2024",
+      "label": "JECFA — Saccharin and its salts toxicological monograph (FAS 32)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v32je09.htm"
+    },
+    {
+      "label": "Codex GSFA — Saccharins group (INS 954)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=98"
+    },
+    {
+      "label": "EFSA — Re-evaluation of saccharin (E 954), 2024",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9044"
     }
   ],
   "title": "Sacharine",
-  "description": "Een synthetische intense zoetstof die ongeveer 300 tot 500 keer zoeter is dan sucrose."
+  "description": "Sacharine (E954 / INS 954) is een intensieve zoetstof die ongeveer 300 keer zo zoet is als suiker; het wordt niet gemetaboliseerd en JECFA en EFSA hebben innamelimieten vastgesteld."
 }

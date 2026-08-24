@@ -1,28 +1,36 @@
 {
   "name": "Saccarina",
   "e_code": "E954",
-  "aliases": "E954, saccarina, saccarina sodica, saccarina calcica, saccarina potassica, saccarina, saccarina sodica, saccarina calcica, saccarina potassica",
+  "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), saccarina, saccarina sodica, saccarina calcica, saccarina potassica, saccarina, saccarina sodica, saccarina calcica, saccarina potassica",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un dolcificante sintetico intenso, circa da 300 a 500 volte più dolce del saccarosio.",
-  "why_botia": "Lo segnala perché è un dolcificante artificiale caratteristico delle formulazioni di alimenti ultra-processati.",
-  "can_1": "Identifica l'E954 o uno qualsiasi dei suoi sali nelle liste degli ingredienti scansionate.",
-  "can_2": "Attiva i livelli informativi su dolcificanti e numeri E.",
-  "cannot_1": "Verificare se la saccarina contiene impurità residue di o-toluensolfonamide superiori a 10 mg/kg.",
-  "cannot_2": "Verificare se il produttore ha utilizzato saccarina di calcio rispetto alla saccarina di sodio, salvo diversa indicazione.",
+  "what_is": "La saccarina e i suoi sali di sodio, calcio e potassio sono edulcoranti ad alta intensità. Il Codex identifica la saccarina come INS 954(i), la saccarina calcica come INS 954(ii), la saccarina potassica come INS 954(iii) e la saccarina sodica come INS 954(iv).",
+  "why_botia": "La saccarina è circa 300 volte più dolce dello zucchero, quindi una quantità molto piccola è sufficiente — e l’etichetta non permette di sapere quanto ne sia stato utilizzato. Non viene metabolizzata ed è eliminata in gran parte senza modifiche. Il JECFA ha stabilito una DGA di gruppo di 0–5 mg/kg di peso corporeo per la saccarina e i suoi sali di calcio, potassio e sodio, e l’EFSA ha aumentato il proprio limite da 5 a 9 mg/kg di peso corporeo nel 2024 dopo la rivalutazione.",
+  "can_1": "Rilevare E954, gli identificatori INS 954 del Codex, saccarina e i suoi sali di sodio, calcio e potassio quando sono dichiarati esplicitamente.",
+  "can_2": "Spiegare la funzione dolcificante ad alta intensità, l’assenza di metabolismo, l’eliminazione in gran parte invariata e le dosi giornaliere ammissibili di JECFA ed EFSA.",
+  "cannot_1": "Determinare la quantità di saccarina presente dalla sola dichiarazione degli ingredienti.",
+  "cannot_2": "Calcolare l’esposizione giornaliera totale alla saccarina o la risposta individuale di una persona dall’etichetta di un singolo prodotto.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Saccharin (INS 954), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3164"
     },
     {
-      "label": "EFSA — Rivalutazione della saccarina (E954), 2024",
+      "label": "JECFA — Saccharin and its salts toxicological monograph (FAS 32)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v32je09.htm"
+    },
+    {
+      "label": "Codex GSFA — Saccharins group (INS 954)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=98"
+    },
+    {
+      "label": "EFSA — Re-evaluation of saccharin (E 954), 2024",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9044"
     }
   ],
   "title": "Saccarina",
-  "description": "Un dolcificante sintetico intenso, circa da 300 a 500 volte più dolce del saccarosio."
+  "description": "La saccarina (E954 / INS 954) è un edulcorante intenso circa 300 volte più dolce dello zucchero; non viene metabolizzata e JECFA ed EFSA hanno stabilito limiti di assunzione."
 }

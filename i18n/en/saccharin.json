@@ -1,22 +1,30 @@
 {
   "name": "Saccharin",
   "e_code": "E954",
-  "aliases": "E954, saccharin, sodium saccharin, calcium saccharin, potassium saccharin, sacarina, sacarina sódica, sacarina cálcica, sacarina potásica",
+  "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), saccharin, sodium saccharin, calcium saccharin, potassium saccharin, sacarina, sacarina sódica, sacarina cálcica, sacarina potásica",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "A synthetic intense sweetener about 300 to 500 times sweeter than sucrose.",
-  "why_botia": "It flags it because it is an artificial sweetener characteristic of ultra-processed food formulations.",
-  "can_1": "Identify E954 or any of its salts on scanned ingredient lists.",
-  "can_2": "Trigger sweetener and E-number informational layers.",
-  "cannot_1": "Verify if the saccharin contains trace impurities of o-toluenesulphonamide above 10 mg/kg.",
-  "cannot_2": "Verify if the manufacturer used calcium saccharin versus sodium saccharin unless specified.",
+  "what_is": "Saccharin and its sodium, calcium and potassium salts are high-intensity sweeteners. Codex identifies saccharin as INS 954(i), calcium saccharin as INS 954(ii), potassium saccharin as INS 954(iii) and sodium saccharin as INS 954(iv).",
+  "why_botia": "Saccharin is about 300 times sweeter than sugar, so a very small amount does the work — and the label cannot show how much. It is not metabolised and is excreted largely unchanged. JECFA set a group ADI of 0–5 mg/kg body weight for saccharin and its calcium, potassium and sodium salts, and EFSA raised its own limit from 5 to 9 mg/kg body weight in 2024 after re-evaluation.",
+  "can_1": "Detect E954, the Codex INS 954 identifiers, saccharin and its sodium, calcium and potassium salts when explicitly declared.",
+  "can_2": "Explain its high-intensity sweetening function, lack of metabolism, largely unchanged excretion and the JECFA and EFSA acceptable daily intakes.",
+  "cannot_1": "Determine how much saccharin is present from the ingredient declaration alone.",
+  "cannot_2": "Calculate a person's total daily saccharin exposure or individual response from a single product label.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Saccharin (INS 954), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3164"
+    },
+    {
+      "label": "JECFA — Saccharin and its salts toxicological monograph (FAS 32)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v32je09.htm"
+    },
+    {
+      "label": "Codex GSFA — Saccharins group (INS 954)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=98"
     },
     {
       "label": "EFSA — Re-evaluation of saccharin (E 954), 2024",
@@ -24,5 +32,5 @@
     }
   ],
   "title": "Saccharin",
-  "description": "A synthetic intense sweetener about 300 to 500 times sweeter than sucrose."
+  "description": "Saccharin (E954 / INS 954) is a high-intensity sweetener about 300 times sweeter than sugar; it is not metabolised and JECFA and EFSA have established intake limits."
 }

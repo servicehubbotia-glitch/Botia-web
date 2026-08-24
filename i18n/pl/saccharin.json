@@ -1,28 +1,36 @@
 {
   "name": "Sacharyna",
   "e_code": "E954",
-  "aliases": "E954, sacharyna, sacharyna sodowa, sacharyna wapniowa, sacharyna potasowa, sacharyna, sacharyna sodowa, sacharyna wapniowa, sacharyna potasowa",
+  "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), sacharyna, sacharyna sodowa, sacharyna wapniowa, sacharyna potasowa, sacharyna, sacharyna sodowa, sacharyna wapniowa, sacharyna potasowa",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Syntetyczny intensywny słodzik około 300 do 500 razy słodszy od sacharozy.",
-  "why_botia": "Oznacza go, ponieważ jest sztucznym słodzikiem charakterystycznym dla składu żywności wysoko przetworzonej.",
-  "can_1": "Zidentyfikuj E954 lub dowolną z jego soli na skanowanych listach składników.",
-  "can_2": "Wyzwól warstwy informacyjne dotyczące słodzików i numerów E.",
-  "cannot_1": "Sprawdź, czy sacharyna zawiera śladowe zanieczyszczenia o-toluenosulfonamidem powyżej 10 mg/kg.",
-  "cannot_2": "Sprawdź, czy producent użył sacharyny wapniowej zamiast sacharyny sodowej, chyba że jest to określone.",
+  "what_is": "Sacharyna i jej sole sodowa, wapniowa i potasowa są intensywnymi środkami słodzącymi. Codex oznacza sacharynę jako INS 954(i), sacharynian wapnia jako INS 954(ii), sacharynian potasu jako INS 954(iii), a sacharynian sodu jako INS 954(iv).",
+  "why_botia": "Sacharyna jest około 300 razy słodsza od cukru, dlatego wystarcza bardzo mała ilość — a etykieta nie pokazuje, ile jej użyto. Nie jest metabolizowana i jest w dużej mierze wydalana w niezmienionej postaci. JECFA ustaliła grupowe ADI wynoszące 0–5 mg/kg masy ciała dla sacharyny i jej soli wapniowej, potasowej i sodowej, a EFSA po ponownej ocenie w 2024 r. zwiększyła własny limit z 5 do 9 mg/kg masy ciała.",
+  "can_1": "Wykrywać E954, identyfikatory INS 954 Codex, sacharynę oraz jej sole sodową, wapniową i potasową, gdy są wyraźnie zadeklarowane.",
+  "can_2": "Wyjaśniać jej intensywne działanie słodzące, brak metabolizowania, wydalanie w dużej mierze w niezmienionej postaci oraz dopuszczalne dzienne spożycie JECFA i EFSA.",
+  "cannot_1": "Określić ilości sacharyny na podstawie samej deklaracji składników.",
+  "cannot_2": "Obliczyć całkowitego dziennego narażenia na sacharynę ani indywidualnej reakcji osoby na podstawie etykiety jednego produktu.",
   "sources": [
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Saccharin (INS 954), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3164"
     },
     {
-      "label": "EFSA — Ponowna ocena sacharyny (E954), 2024",
+      "label": "JECFA — Saccharin and its salts toxicological monograph (FAS 32)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v32je09.htm"
+    },
+    {
+      "label": "Codex GSFA — Saccharins group (INS 954)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=98"
+    },
+    {
+      "label": "EFSA — Re-evaluation of saccharin (E 954), 2024",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9044"
     }
   ],
   "title": "Sacharyna",
-  "description": "Syntetyczny intensywny słodzik około 300 do 500 razy słodszy od sacharozy."
+  "description": "Sacharyna (E954 / INS 954) jest intensywnym środkiem słodzącym około 300 razy słodszym od cukru; nie jest metabolizowana, a JECFA i EFSA ustaliły limity spożycia."
 }

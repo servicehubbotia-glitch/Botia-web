@@ -1,28 +1,36 @@
 {
   "name": "Sacarina",
   "e_code": "E954",
-  "aliases": "E954, sacarina, sacarina sódica, sacarina cálcica, sacarina potásica, sacarina, sacarina sódica, sacarina cálcica, sacarina potásica",
+  "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), sacarina, sacarina sódica, sacarina cálcica, sacarina potásica, sacarina, sacarina sódica, sacarina cálcica, sacarina potásica",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Um adoçante intenso sintético cerca de 300 a 500 vezes mais doce que a sacarose.",
-  "why_botia": "Sinaliza porque é um adoçante artificial característico de formulações de alimentos ultraprocessados.",
-  "can_1": "Identificar E954 ou qualquer um dos seus sais nas listas de ingredientes digitalizadas.",
-  "can_2": "Ativar as camadas informativas de adoçantes e números E.",
-  "cannot_1": "Verificar se a sacarina contém impurezas residuais de o-toluenossulfonamida acima de 10 mg/kg.",
-  "cannot_2": "Verificar se o fabricante usou sacarina cálcica em vez de sacarina sódica, a menos que especificado.",
+  "what_is": "A sacarina e os seus sais de sódio, cálcio e potássio são edulcorantes de alta intensidade. O Codex identifica a sacarina como INS 954(i), a sacarina de cálcio como INS 954(ii), a sacarina de potássio como INS 954(iii) e a sacarina de sódio como INS 954(iv).",
+  "why_botia": "A sacarina é cerca de 300 vezes mais doce do que o açúcar, por isso uma quantidade muito pequena é suficiente — e o rótulo não mostra quanto foi utilizado. Não é metabolizada e é excretada em grande parte sem alterações. O JECFA estabeleceu uma IDA de grupo de 0–5 mg/kg de peso corporal para a sacarina e os seus sais de cálcio, potássio e sódio, e a EFSA aumentou o seu próprio limite de 5 para 9 mg/kg de peso corporal em 2024 após a reavaliação.",
+  "can_1": "Detetar E954, os identificadores INS 954 do Codex, sacarina e os seus sais de sódio, cálcio e potássio quando declarados explicitamente.",
+  "can_2": "Explicar a sua função edulcorante de alta intensidade, a ausência de metabolismo, a excreção em grande parte inalterada e as ingestões diárias admissíveis do JECFA e da EFSA.",
+  "cannot_1": "Determinar a quantidade de sacarina presente apenas pela declaração dos ingredientes.",
+  "cannot_2": "Calcular a exposição diária total à sacarina ou a resposta individual de uma pessoa a partir do rótulo de um único produto.",
   "sources": [
     {
-      "label": "Regulamento (UE) n.º 231/2012 da Comissão",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Saccharin (INS 954), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3164"
     },
     {
-      "label": "EFSA — Reavaliação da sacarina (E954), 2024",
+      "label": "JECFA — Saccharin and its salts toxicological monograph (FAS 32)",
+      "url": "https://inchem.org/documents/jecfa/jecmono/v32je09.htm"
+    },
+    {
+      "label": "Codex GSFA — Saccharins group (INS 954)",
+      "url": "https://www.fao.org/gsfaonline/groups/details.html?id=98"
+    },
+    {
+      "label": "EFSA — Re-evaluation of saccharin (E 954), 2024",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9044"
     }
   ],
   "title": "Sacarina",
-  "description": "Um adoçante intenso sintético cerca de 300 a 500 vezes mais doce que a sacarose."
+  "description": "A sacarina (E954 / INS 954) é um edulcorante intenso cerca de 300 vezes mais doce do que o açúcar; não é metabolizada e JECFA e EFSA estabeleceram limites de ingestão."
 }
