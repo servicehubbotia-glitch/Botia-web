@@ -1,45 +1,41 @@
 {
   "name": "مانيتول",
   "e_code": "E421",
-  "aliases": "E421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
+  "aliases": "E421, INS 421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "بوليول، ويسمى أيضًا كحول سكري، يُستخدم في الأطعمة كمُحلٍّ، وعامل حشو، وناقل، ومرطب، ومعدِّل للقوام.",
-  "why_botia": "تُشير BOTIA إلى ذلك لأن E421 يمكن أن يحل محل جزء من الحلاوة والكتلة التي توفرها السكريات عادةً، وقد يؤدي أيضًا وظائف مرتبطة بالملمس.",
-  "can_1": "حدد E421 أو المانيتول أو D-مانيتول عند ذكره على الملصق.",
-  "can_2": "فعّل طبقات معلومات أرقام الإي، والمحليات، والمواد الملمسية.",
-  "cannot_1": "حدد الكمية المستهلكة من قائمة المكونات وحدها.",
-  "cannot_2": "توقع استجابة الجهاز الهضمي للفرد أو تحديد ما إذا كان المانيتول مصنوعًا بالهدرجة أو بالتخمير ما لم يُعلن عن ذلك.",
+  "what_is": "المانيتول (INS 421 / E421) بوليول يُستخدم كمحلٍّ حجمي ومكوّن لتحسين القوام. كما يصنفه Codex كمضاد للتكتل وناقل ومرطب ومثبت ومثخن، لذلك يمكن أن يوجد في الأغذية الخالية من السكر وكذلك في المساحيق والمنتجات الجافة؛ ووفق قواعد الوسم الغذائي في الاتحاد الأوروبي تُحسب البوليولات مثل المانيتول بقيمة 2.4 كيلو كالوري/غرام.",
+  "why_botia": "يحل المانيتول محل حلاوة السكر وحجمه معاً، ويمكنه أيضاً منع تكتل المساحيق. يُمتص بدرجة ضعيفة: الجزء غير الممتص يحتفظ بالماء في الأمعاء، وقد سُجلت تأثيرات مُلينة عند نحو 10–20 غراماً — وهي كميات أقل من معظم البوليولات الشائعة الأخرى. خصصت JECFA له قيمة ADI «غير محددة»، بينما لا يفرض الاتحاد الأوروبي تحذيراً مُليناً إلا عندما يحتوي الغذاء على أكثر من 10% من البوليولات المضافة.",
+  "can_1": "اكتشاف E421 وINS 421 والمانيتول وD-mannitol وmannite عندما تكون مذكورة صراحة.",
+  "can_2": "شرح وظائفه كمحلٍّ حجمي ومضاد للتكتل وضعف امتصاصه وعتبة التأثير الملين المبلغ عنها عند 10–20 غراماً وقيمة ADI لدى JECFA وحد الـ10% الأوروبي.",
+  "cannot_1": "تحديد كمية المانيتول أو نسبة البوليولات المضافة من قائمة المكونات وحدها.",
+  "cannot_2": "تحديد ما إذا كان التحذير الملين مطلوباً قانونياً اعتماداً على اسم المكون وحده أو التنبؤ بالاستجابة الهضمية الفردية.",
   "sources": [
     {
-      "label": "EFSA — المُحلّيات",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Mannitol (INS 421), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5119"
     },
     {
-      "label": "FDA — الأسبارتام والمحليات الأخرى في الأغذية",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Mannitol toxicological monograph (FAS 21)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v21je10.htm"
     },
     {
-      "label": "Codex Alimentarius — قاعدة GSFA على الإنترنت",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Mannitol (INS 421)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=182"
     },
     {
-      "label": "اللائحة (EC) رقم 1333/2008 بشأن المواد المضافة الغذائية",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     },
     {
-      "label": "مواصفات EU للمواد المضافة الغذائية المصرح بها — اللائحة (EU) رقم 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — مواصفة المادة المضافة, INS 421",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=421"
+      "label": "NCBI Endotext — Polyols and comparative laxative tolerance",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK278991/"
     }
   ],
   "title": "مانيتول",
-  "description": "بوليول، ويسمى أيضًا كحول سكري، يُستخدم في الأطعمة كمُحلٍّ، وعامل حشو، وناقل، ومرطب، ومعدّل للقوام."
+  "description": "المانيتول (INS 421 / E421) بوليول حجمي ومضاد للتكتل ضعيف الامتصاص؛ وتوثق JECFA عتبة تأثير ملين تبلغ نحو 10–20 غراماً."
 }

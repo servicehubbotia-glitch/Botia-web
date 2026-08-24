@@ -1,45 +1,41 @@
 {
   "name": "Mannitol",
   "e_code": "E421",
-  "aliases": "E421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
+  "aliases": "E421, INS 421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Un poliol, numit și alcool zaharat, utilizat în alimente ca îndulcitor, agent de volum, purtător, umectant și modulator de textură.",
-  "why_botia": "BOTIA o semnalizează deoarece E421 poate înlocui o parte din dulceața și volumul furnizate în mod normal de zaharuri și poate servi, de asemenea, funcții legate de textură.",
-  "can_1": "Identificați E421, manitolul sau D-manitolul atunci când este declarat pe etichetă.",
-  "can_2": "Activează straturile de informații despre numerele E, îndulcitori și textură.",
-  "cannot_1": "Determinați cantitatea consumată doar din lista de ingrediente.",
-  "cannot_2": "Preziceți răspunsul digestiv al unui individ sau determinați dacă manitolul a fost obținut prin hidrogenare sau fermentație, cu excepția cazului în care este declarat.",
+  "what_is": "Manitolul (INS 421 / E421) este un poliol utilizat ca îndulcitor de volum și ingredient de textură. Codex îl clasifică și drept agent antiaglomerant, suport, umectant, stabilizator și agent de îngroșare, astfel încât poate apărea atât în alimente fără zahăr, cât și în pulberi și alte produse uscate; conform normelor UE de etichetare nutrițională, poliolii precum manitolul sunt calculați la 2,4 kcal/g.",
+  "why_botia": "Manitolul înlocuiește atât dulceața, cât și volumul zahărului și poate împiedica și aglomerarea pulberilor. Este slab absorbit: fracția neabsorbită reține apă în intestin, iar efecte laxative au fost raportate la aproximativ 10–20 g — cantități mai mici decât pentru majoritatea celorlalți polioli obișnuiți. JECFA i-a atribuit o ADI „nespecificată”, iar UE impune un avertisment laxativ numai atunci când alimentul conține mai mult de 10% polioli adăugați.",
+  "can_1": "Detecta E421, INS 421, manitol, D-mannitol și mannite atunci când sunt declarate explicit.",
+  "can_2": "Explica funcțiile de îndulcitor de volum și antiaglomerant, absorbția redusă, pragul laxativ raportat de 10–20 g, ADI JECFA și pragul european de 10%.",
+  "cannot_1": "Determina cantitatea de manitol sau procentul de polioli adăugați doar din lista ingredientelor.",
+  "cannot_2": "Decide doar din numele ingredientului dacă avertismentul laxativ este obligatoriu legal sau prezice răspunsul digestiv individual.",
   "sources": [
     {
-      "label": "EFSA — Îndulcitori",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Mannitol (INS 421), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5119"
     },
     {
-      "label": "FDA — Aspartam și alți îndulcitori din alimente",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Mannitol toxicological monograph (FAS 21)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v21je10.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Mannitol (INS 421)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=182"
     },
     {
-      "label": "Regulamentul (EC) nr. 1333/2008 privind aditivii alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     },
     {
-      "label": "Specificațiile EU pentru aditivii alimentari autorizați — Regulamentul (EU) nr. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Specificația aditivului, INS 421",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=421"
+      "label": "NCBI Endotext — Polyols and comparative laxative tolerance",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK278991/"
     }
   ],
   "title": "Mannitol",
-  "description": "Poliol, numit și alcool zaharat, utilizat în alimente ca îndulcitor, agent de volum, purtător, umectant și modulator de textură."
+  "description": "Manitolul (INS 421 / E421) este un poliol de volum și antiaglomerant slab absorbit; JECFA documentează un prag laxativ de aproximativ 10–20 g."
 }

@@ -1,45 +1,41 @@
 {
   "name": "Mannitol",
   "e_code": "E421",
-  "aliases": "E421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
+  "aliases": "E421, INS 421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Bir poliol, aynı zamanda şeker alkolü olarak da adlandırılır, gıdalarda tatlandırıcı, hacim artırıcı, taşıyıcı, nemlendirici ve doku düzenleyici olarak kullanılır.",
-  "why_botia": "BOTIA bunu işaretler çünkü E421, normalde şekerler tarafından sağlanan tatlılığın ve hacmin bir kısmının yerini alabilir ve ayrıca doku ile ilgili işlevlere de hizmet edebilir.",
-  "can_1": "E421, mannitol veya D-mannitol olarak etikette belirtildiğinde tanımlayın.",
-  "can_2": "E-numarası, tatlandırıcı ve doku bilgisi katmanlarını tetikle.",
-  "cannot_1": "İçerik listesinden tek başına tüketilen miktarı belirleyin.",
-  "cannot_2": "Bir bireyin sindirim tepkisini tahmin edin veya aksi belirtilmedikçe mannitolün hidrojenasyonla mı yoksa fermantasyonla mı üretildiğini belirleyin.",
+  "what_is": "Mannitol (INS 421 / E421), hacim sağlayan tatlandırıcı ve doku bileşeni olarak kullanılan bir polioldür. Codex onu ayrıca topaklanmayı önleyici, taşıyıcı, nem tutucu, stabilizatör ve kıvam artırıcı olarak sınıflandırır; bu nedenle şekersiz gıdaların yanı sıra tozlarda ve diğer kuru ürünlerde de bulunabilir; AB beslenme etiketleme kurallarına göre mannitol gibi polioller 2,4 kcal/g olarak hesaplanır.",
+  "why_botia": "Mannitol şekerin hem tatlılığını hem de hacmini yerine koyar ve tozların topaklanmasını da önleyebilir. Zayıf emilir: emilmeyen bölüm bağırsakta su tutar ve yaklaşık 10–20 g'da laksatif etkiler bildirilmiştir — çoğu diğer yaygın poliolden daha düşük miktarlarda. JECFA “belirtilmemiş” ADI vermiştir; AB ise laksatif uyarıyı yalnızca gıdada %10'dan fazla eklenmiş poliol olduğunda zorunlu tutar.",
+  "can_1": "E421, INS 421, mannitol, D-mannitol ve mannite'i açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Hacim sağlayan tatlandırıcı ve topaklanmayı önleyici işlevlerini, düşük emilimini, bildirilen 10–20 g laksatif eşiğini, JECFA ADI değerini ve AB'nin %10 eşiğini açıklamak.",
+  "cannot_1": "Yalnızca içerik listesinden ne kadar mannitol veya yüzde kaç eklenmiş poliol bulunduğunu belirlemek.",
+  "cannot_2": "Sadece bileşen adına bakarak laksatif uyarının yasal olarak gerekli olup olmadığına karar vermek veya bireysel sindirim tepkisini öngörmek.",
   "sources": [
     {
-      "label": "EFSA — Tatlandırıcılar",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Mannitol (INS 421), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5119"
     },
     {
-      "label": "FDA — Gıdalardaki aspartam ve diğer tatlandırıcılar",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Mannitol toxicological monograph (FAS 21)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v21je10.htm"
     },
     {
-      "label": "Codex Alimentarius — Çevrimiçi GSFA",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Mannitol (INS 421)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=182"
     },
     {
-      "label": "Gıda katkı maddelerine ilişkin (EC) 1333/2008 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     },
     {
-      "label": "İzin verilen gıda katkı maddelerine ilişkin EU spesifikasyonları — (EU) 231/2012 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Katkı maddesi spesifikasyonu, INS 421",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=421"
+      "label": "NCBI Endotext — Polyols and comparative laxative tolerance",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK278991/"
     }
   ],
   "title": "Mannitol",
-  "description": "Bir poliol, aynı zamanda şeker alkolü olarak da adlandırılır, gıdalarda tatlandırıcı, hacim artırıcı, taşıyıcı, nemlendirici ve doku düzenleyici olarak kullanılır."
+  "description": "Mannitol (INS 421 / E421), zayıf emilen hacim sağlayan bir poliol ve topaklanmayı önleyici ajandır; JECFA yaklaşık 10–20 g laksatif eşik bildirmektedir."
 }

@@ -1,45 +1,41 @@
 {
   "name": "Mannitolo",
   "e_code": "E421",
-  "aliases": "E421, mannitolo, D-mannitolo, mannite, manitolo, mannitolo per idrogenazione, mannitolo per fermentazione",
+  "aliases": "E421, INS 421, mannitolo, D-mannitolo, mannite, manitolo, mannitolo per idrogenazione, mannitolo per fermentazione",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Un poliolo, chiamato anche alcol zuccherino, utilizzato negli alimenti come dolcificante, agente di carica, veicolante, umettante e modificatore di consistenza.",
-  "why_botia": "BOTIA lo segnala perché l'E421 può sostituire parte della dolcezza e del volume normalmente forniti dagli zuccheri e può anche svolgere funzioni legate alla consistenza.",
-  "can_1": "Identificare E421, mannitolo o D-mannitolo quando dichiarato in etichetta.",
-  "can_2": "Attiva i livelli informativi su numeri E, dolcificanti e consistenza.",
-  "cannot_1": "Determinare la quantità consumata basandosi solo sull'elenco degli ingredienti.",
-  "cannot_2": "Prevedere la risposta digestiva di un individuo o determinare se il mannitolo è stato prodotto per idrogenazione o fermentazione, salvo diversa indicazione.",
+  "what_is": "Il mannitolo (INS 421 / E421) è un poliolo utilizzato come edulcorante di massa e ingrediente testurizzante. Il Codex lo classifica inoltre come antiagglomerante, supporto, umettante, stabilizzante e addensante, quindi può comparire sia negli alimenti senza zucchero sia nelle polveri e in altri prodotti secchi; secondo le norme UE sull’etichettatura nutrizionale, i polioli come il mannitolo contano 2,4 kcal/g.",
+  "why_botia": "Il mannitolo sostituisce sia la dolcezza sia il volume dello zucchero e può anche impedire alle polveri di agglomerarsi. Viene assorbito poco: la frazione non assorbita trattiene acqua nell’intestino, e sono stati segnalati effetti lassativi a circa 10–20 g — quantità inferiori rispetto alla maggior parte degli altri polioli comuni. Il JECFA ha assegnato una DGA “non specificata”, mentre nell’UE l’avvertenza lassativa è obbligatoria solo quando l’alimento contiene più del 10% di polioli aggiunti.",
+  "can_1": "Rilevare E421, INS 421, mannitolo, D-mannitol e mannite quando dichiarati esplicitamente.",
+  "can_2": "Spiegare le sue funzioni di edulcorante di massa e antiagglomerante, il basso assorbimento, la soglia lassativa riportata di 10–20 g, la DGA JECFA e la soglia UE del 10%.",
+  "cannot_1": "Determinare la quantità di mannitolo o la percentuale di polioli aggiunti dalla sola lista degli ingredienti.",
+  "cannot_2": "Decidere dal solo nome dell’ingrediente se l’avvertenza lassativa è legalmente obbligatoria o prevedere la risposta digestiva individuale.",
   "sources": [
     {
-      "label": "EFSA — Dolcificanti",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Mannitol (INS 421), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5119"
     },
     {
-      "label": "FDA — Aspartame e altri dolcificanti negli alimenti",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Mannitol toxicological monograph (FAS 21)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v21je10.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Mannitol (INS 421)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=182"
     },
     {
-      "label": "Regolamento (CE) n. 1333/2008 sugli additivi alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     },
     {
-      "label": "Specifiche UE per gli additivi alimentari autorizzati — Regolamento (UE) n. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — specifica dell'additivo, INS 421",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=421"
+      "label": "NCBI Endotext — Polyols and comparative laxative tolerance",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK278991/"
     }
   ],
   "title": "Mannitolo",
-  "description": "Un poliolo, chiamato anche alcol zuccherino, utilizzato negli alimenti come dolcificante, agente di carica, veicolo, umettante e modificatore di consistenza."
+  "description": "Il mannitolo (INS 421 / E421) è un poliolo di massa e antiagglomerante poco assorbito; il JECFA documenta una soglia lassativa di circa 10–20 g."
 }

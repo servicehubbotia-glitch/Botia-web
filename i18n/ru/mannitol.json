@@ -1,45 +1,41 @@
 {
   "name": "Маннитол",
   "e_code": "E421",
-  "aliases": "E421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
+  "aliases": "E421, INS 421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Полиол, также называемый сахарным спиртом, используется в пищевых продуктах в качестве подсластителя, наполнителя, носителя, увлажнителя и модификатора текстуры.",
-  "why_botia": "BOTIA отмечает это, поскольку E421 может заменять часть сладости и объёма, обычно обеспечиваемых сахарами, а также выполнять функции, связанные с текстурой.",
-  "can_1": "Определите E421, маннит или D-маннит, если они указаны на этикетке.",
-  "can_2": "Активируйте слои информации о E-номерах, подсластителях и текстуре.",
-  "cannot_1": "Определите количество, потреблённое только на основе списка ингредиентов.",
-  "cannot_2": "Спрогнозируйте индивидуальную реакцию пищеварительной системы или определите, был ли маннитол получен гидрогенизацией или ферментацией, если это не указано.",
+  "what_is": "Маннитол (INS 421 / E421) — полиол, используемый как объёмный подсластитель и текстурирующий ингредиент. Codex также относит его к антислеживающим агентам, носителям, влагоудерживающим агентам, стабилизаторам и загустителям, поэтому он может встречаться как в продуктах без сахара, так и в порошках и других сухих продуктах; по правилам ЕС полиолы, такие как маннитол, учитываются как 2,4 ккал/г.",
+  "why_botia": "Маннитол заменяет и сладость, и объём сахара, а также может препятствовать слёживанию порошков. Он плохо всасывается: невсосавшаяся фракция удерживает воду в кишечнике, а слабительный эффект отмечался уже при примерно 10–20 г — меньших количествах, чем для большинства других распространённых полиолов. JECFA установила ADI «не определено», а ЕС требует предупреждение о слабительном эффекте только тогда, когда продукт содержит более 10% добавленных полиолов.",
+  "can_1": "Определять E421, INS 421, маннитол, D-mannitol и mannite, когда они явно указаны.",
+  "can_2": "Объяснять его функции объёмного подсластителя и антислеживающего агента, плохое всасывание, описанный слабительный порог 10–20 г, ADI JECFA и европейский порог 10%.",
+  "cannot_1": "Определить количество маннитола или процент добавленных полиолов только по списку ингредиентов.",
+  "cannot_2": "По одному названию ингредиента определить, требуется ли по закону слабительное предупреждение, или предсказать индивидуальную пищеварительную реакцию.",
   "sources": [
     {
-      "label": "EFSA — Подсластители",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Mannitol (INS 421), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5119"
     },
     {
-      "label": "FDA — Аспартам и другие подсластители в пищевых продуктах",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Mannitol toxicological monograph (FAS 21)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v21je10.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA онлайн",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Mannitol (INS 421)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=182"
     },
     {
-      "label": "Регламент (EC) № 1333/2008 о пищевых добавках",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     },
     {
-      "label": "Спецификации EU для разрешённых пищевых добавок — Регламент (EU) № 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Спецификация добавки, INS 421",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=421"
+      "label": "NCBI Endotext — Polyols and comparative laxative tolerance",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK278991/"
     }
   ],
   "title": "Маннитол",
-  "description": "Полиол, также называемый сахарным спиртом, используется в пищевых продуктах в качестве подсластителя, наполнителя, носителя, увлажнителя и модификатора текстуры."
+  "description": "Маннитол (INS 421 / E421) — плохо всасываемый объёмный полиол и антислеживающий агент; JECFA документирует слабительный порог около 10–20 г."
 }

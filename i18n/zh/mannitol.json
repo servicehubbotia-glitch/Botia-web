@@ -1,45 +1,41 @@
 {
   "name": "甘露醇",
   "e_code": "E421",
-  "aliases": "E421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
+  "aliases": "E421, INS 421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "多元醇，又称糖醇，在食品中用作甜味剂、填充剂、载体、保湿剂和质构改良剂。",
-  "why_botia": "BOTIA标记它是因为E421可以替代通常由糖类提供的部分甜味和体积，并且还可能具有与质地相关的功能。",
-  "can_1": "识别标签上标注的E421、甘露醇或D-甘露醇。",
-  "can_2": "触发E编号、甜味剂和质构信息图层。",
-  "cannot_1": "仅根据配料表确定消耗量。",
-  "cannot_2": "预测个体的消化反应，或确定甘露醇是通过氢化还是发酵生产的，除非已标明。",
+  "what_is": "甘露醇（INS 421 / E421）是一种用作填充型甜味剂和质构成分的多元醇。Codex 还将其列为抗结剂、载体、保湿剂、稳定剂和增稠剂，因此它既可能出现在无糖食品中，也可能出现在粉末和其他干燥产品中；根据欧盟营养标签规则，甘露醇等多元醇按2.4千卡/克计算。",
+  "why_botia": "甘露醇同时替代糖的甜味和体积，也可以防止粉末结块。它吸收较差：未吸收部分会在肠道中保留水分，而约10–20克即可出现通便作用——低于大多数其他常见多元醇的用量。JECFA 将其 ADI 规定为“无需限定”，而欧盟只有在食品含有超过10%的添加多元醇时才要求通便作用警示。",
+  "can_1": "识别明确标示的 E421、INS 421、甘露醇、D-mannitol 和 mannite。",
+  "can_2": "解释其填充型甜味剂和抗结功能、较低吸收、报告的10–20克通便阈值、JECFA ADI 以及欧盟10%的警示阈值。",
+  "cannot_1": "仅根据配料表确定甘露醇的实际含量或添加多元醇的百分比。",
+  "cannot_2": "仅根据成分名称判断是否依法必须标注通便警示，或预测个人的消化反应。",
   "sources": [
     {
-      "label": "EFSA — 甜味剂",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Mannitol (INS 421), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5119"
     },
     {
-      "label": "FDA — 食品中的阿斯巴甜和其他甜味剂",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Mannitol toxicological monograph (FAS 21)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v21je10.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA 在线数据库",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Mannitol (INS 421)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=182"
     },
     {
-      "label": "（EC）第1333/2008号食品添加剂法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     },
     {
-      "label": "EU 获准食品添加剂规格——（EU）第231/2012号法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — 添加剂规格, INS 421",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=421"
+      "label": "NCBI Endotext — Polyols and comparative laxative tolerance",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK278991/"
     }
   ],
   "title": "甘露醇",
-  "description": "多元醇，又称糖醇，在食品中用作甜味剂、填充剂、载体、保湿剂和质构改良剂。"
+  "description": "甘露醇（INS 421 / E421）是一种吸收较差的填充型多元醇和抗结剂；JECFA 记录的通便阈值约为10–20克。"
 }

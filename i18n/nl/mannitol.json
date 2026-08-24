@@ -1,45 +1,41 @@
 {
   "name": "Mannitol",
   "e_code": "E421",
-  "aliases": "E421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
+  "aliases": "E421, INS 421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Een polyol, ook wel suikeralcohol genoemd, wordt in voedingsmiddelen gebruikt als zoetstof, vulmiddel, drager, bevochtigingsmiddel en textuurverbeteraar.",
-  "why_botia": "BOTIA markeert dit omdat E421 een deel van de zoetheid en bulk kan vervangen die normaal door suikers wordt geleverd en ook textuurgerelateerde functies kan vervullen.",
-  "can_1": "Identificeer E421, mannitol of D-mannitol wanneer dit op het etiket wordt vermeld.",
-  "can_2": "Activeer de informatielagen voor E-nummers, zoetstoffen en textuur.",
-  "cannot_1": "Bepaal de geconsumeerde hoeveelheid uitsluitend op basis van de ingrediëntenlijst.",
-  "cannot_2": "Voorspel de spijsverteringsreactie van een individu of bepaal of de mannitol is gemaakt door hydrogenering of fermentatie, tenzij dit is vermeld.",
+  "what_is": "Mannitol (INS 421 / E421) is een polyol die wordt gebruikt als bulkzoetstof en textuuringrediënt. Codex vermeldt het ook als antiklontermiddel, draagstof, bevochtigingsmiddel, stabilisator en verdikkingsmiddel, waardoor het zowel in suikervrije voedingsmiddelen als in poeders en andere droge producten kan voorkomen; volgens de EU-regels voor voedingswaardelabeling tellen polyolen zoals mannitol als 2,4 kcal/g.",
+  "why_botia": "Mannitol vervangt zowel de zoetheid als het volume van suiker en kan ook voorkomen dat poeders samenklonteren. Het wordt slecht opgenomen: de niet-geabsorbeerde fractie houdt water vast in de darm, en laxerende effecten zijn gemeld bij ongeveer 10–20 g — lagere hoeveelheden dan bij de meeste andere gangbare polyolen. JECFA kende een ADI “niet gespecificeerd” toe, terwijl de EU een laxerende waarschuwing alleen vereist wanneer een voedingsmiddel meer dan 10% toegevoegde polyolen bevat.",
+  "can_1": "E421, INS 421, mannitol, D-mannitol en mannite detecteren wanneer deze expliciet worden vermeld.",
+  "can_2": "De functies als bulkzoetstof en antiklontermiddel, de slechte absorptie, de gemelde laxerende drempel van 10–20 g, de JECFA-ADI en de EU-drempel van 10% uitleggen.",
+  "cannot_1": "Uit alleen de ingrediëntenlijst bepalen hoeveel mannitol of welk percentage toegevoegde polyolen aanwezig is.",
+  "cannot_2": "Alleen op basis van de ingrediëntnaam bepalen of een laxerende waarschuwing wettelijk vereist is of een individuele spijsverteringsreactie voorspellen.",
   "sources": [
     {
-      "label": "EFSA — Zoetstoffen",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Mannitol (INS 421), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5119"
     },
     {
-      "label": "FDA — Aspartaam en andere zoetstoffen in voedingsmiddelen",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Mannitol toxicological monograph (FAS 21)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v21je10.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Mannitol (INS 421)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=182"
     },
     {
-      "label": "Verordening (EC) nr. 1333/2008 inzake levensmiddelenadditieven",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     },
     {
-      "label": "EU-specificaties voor toegelaten levensmiddelenadditieven — Verordening (EU) nr. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Additievenspecificatie, INS 421",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=421"
+      "label": "NCBI Endotext — Polyols and comparative laxative tolerance",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK278991/"
     }
   ],
   "title": "Mannitol",
-  "description": "Een polyol, ook wel suikeralcohol genoemd, wordt in voedingsmiddelen gebruikt als zoetstof, vulmiddel, drager, bevochtigingsmiddel en textuurverbeteraar."
+  "description": "Mannitol (INS 421 / E421) is een slecht opgenomen bulkpolyol en antiklontermiddel; JECFA documenteert een laxerende drempel van ongeveer 10–20 g."
 }

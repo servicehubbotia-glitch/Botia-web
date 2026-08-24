@@ -1,45 +1,41 @@
 {
   "name": "Manitol",
   "e_code": "E421",
-  "aliases": "E421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
+  "aliases": "E421, INS 421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Poliol, juga disebut gula alkohol, digunakan dalam makanan sebagai pemanis, bahan pengisi, pembawa, humektan, dan pengubah tekstur.",
-  "why_botia": "BOTIA menandainya karena E421 dapat menggantikan sebagian rasa manis dan volume yang biasanya disuplai oleh gula, serta dapat berfungsi terkait tekstur.",
-  "can_1": "Identifikasi E421, manitol atau D-manitol saat dinyatakan pada label.",
-  "can_2": "Aktifkan lapisan informasi nomor E, pemanis, dan tekstur.",
-  "cannot_1": "Tentukan jumlah yang dikonsumsi hanya dari daftar bahan.",
-  "cannot_2": "Prediksi respons pencernaan seseorang atau tentukan apakah manitol dibuat melalui hidrogenasi atau fermentasi kecuali dinyatakan lain.",
+  "what_is": "Mannitol (INS 421 / E421) adalah poliol yang digunakan sebagai pemanis pengisi dan bahan pembentuk tekstur. Codex juga mencantumkannya sebagai agen antikempal, pembawa, humektan, penstabil dan pengental, sehingga dapat terdapat dalam pangan bebas gula maupun bubuk dan produk kering lainnya; menurut aturan pelabelan gizi Uni Eropa, poliol seperti mannitol dihitung sebagai 2,4 kkal/g.",
+  "why_botia": "Mannitol menggantikan rasa manis sekaligus volume gula dan juga dapat mencegah bubuk menggumpal. Zat ini diserap dengan buruk: bagian yang tidak terserap menahan air di usus, dan efek laksatif telah dilaporkan pada sekitar 10–20 g — jumlah yang lebih rendah daripada kebanyakan poliol umum lainnya. JECFA menetapkan ADI “tidak ditentukan”, sedangkan Uni Eropa hanya mewajibkan peringatan laksatif bila pangan mengandung lebih dari 10% poliol tambahan.",
+  "can_1": "Mendeteksi E421, INS 421, mannitol, D-mannitol dan mannite ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan fungsi sebagai pemanis pengisi dan antikempal, penyerapan yang buruk, ambang laksatif 10–20 g yang dilaporkan, ADI JECFA dan ambang peringatan Uni Eropa sebesar 10%.",
+  "cannot_1": "Menentukan jumlah mannitol atau persentase poliol tambahan hanya dari daftar bahan.",
+  "cannot_2": "Menentukan dari nama bahan saja apakah peringatan laksatif diwajibkan secara hukum atau memprediksi respons pencernaan individu.",
   "sources": [
     {
-      "label": "EFSA — Pemanis",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Mannitol (INS 421), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5119"
     },
     {
-      "label": "FDA — Aspartam dan pemanis lain dalam pangan",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Mannitol toxicological monograph (FAS 21)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v21je10.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA daring",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Mannitol (INS 421)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=182"
     },
     {
-      "label": "Peraturan (EC) No. 1333/2008 tentang bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     },
     {
-      "label": "Spesifikasi EU untuk bahan tambahan pangan yang diizinkan — Peraturan (EU) No. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Spesifikasi bahan tambahan, INS 421",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=421"
+      "label": "NCBI Endotext — Polyols and comparative laxative tolerance",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK278991/"
     }
   ],
   "title": "Manitol",
-  "description": "Poliol, juga disebut gula alkohol, digunakan dalam makanan sebagai pemanis, bahan pengisi, pembawa, humektan, dan pengubah tekstur."
+  "description": "Mannitol (INS 421 / E421) adalah poliol pengisi dan agen antikempal yang diserap dengan buruk; JECFA mencatat ambang laksatif sekitar 10–20 g."
 }

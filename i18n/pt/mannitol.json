@@ -1,45 +1,41 @@
 {
   "name": "Manitol",
   "e_code": "E421",
-  "aliases": "E421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
+  "aliases": "E421, INS 421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Um poliol, também chamado de álcool de açúcar, usado em alimentos como adoçante, agente de volume, veículo, umectante e modificador de textura.",
-  "why_botia": "A BOTIA sinaliza porque o E421 pode substituir parte da doçura e do volume normalmente fornecidos pelos açúcares e também pode desempenhar funções relacionadas à textura.",
-  "can_1": "Identifique E421, manitol ou D-manitol quando declarado no rótulo.",
-  "can_2": "Ative as camadas de informações sobre número E, adoçante e textura.",
-  "cannot_1": "Determine a quantidade consumida apenas pela lista de ingredientes.",
-  "cannot_2": "Preveja a resposta digestiva de um indivíduo ou determine se o manitol foi produzido por hidrogenação ou fermentação, salvo se declarado.",
+  "what_is": "O manitol (INS 421 / E421) é um poliol utilizado como edulcorante de volume e ingrediente de textura. O Codex também o classifica como antiaglomerante, veículo, humectante, estabilizante e espessante, pelo que pode aparecer tanto em alimentos sem açúcar como em pós e outros produtos secos; segundo as regras de rotulagem nutricional da UE, polióis como o manitol contam como 2,4 kcal/g.",
+  "why_botia": "O manitol substitui tanto a doçura como o volume do açúcar e também pode impedir que os pós formem grumos. É pouco absorvido: a fração não absorvida retém água no intestino, e foram descritos efeitos laxantes com cerca de 10–20 g — quantidades inferiores às da maioria dos outros polióis comuns. O JECFA atribuiu uma IDA “não especificada”, enquanto a UE só exige uma advertência laxante quando o alimento contém mais de 10% de polióis adicionados.",
+  "can_1": "Detetar E421, INS 421, manitol, D-mannitol e mannite quando declarados explicitamente.",
+  "can_2": "Explicar as suas funções de edulcorante de volume e antiaglomerante, a baixa absorção, o limiar laxante descrito de 10–20 g, a IDA JECFA e o limiar europeu de 10%.",
+  "cannot_1": "Determinar a quantidade de manitol ou a percentagem de polióis adicionados apenas pela lista de ingredientes.",
+  "cannot_2": "Decidir apenas pelo nome do ingrediente se a advertência laxante é legalmente obrigatória ou prever a resposta digestiva individual.",
   "sources": [
     {
-      "label": "EFSA — Edulcorantes",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Mannitol (INS 421), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5119"
     },
     {
-      "label": "FDA — Aspartame e outros edulcorantes nos alimentos",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Mannitol toxicological monograph (FAS 21)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v21je10.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA em linha",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Mannitol (INS 421)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=182"
     },
     {
-      "label": "Regulamento (EC) n.º 1333/2008 relativo aos aditivos alimentares",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "European Union — Regulation (EU) No 1169/2011, polyol warning and energy conversion",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     },
     {
-      "label": "Especificações da EU para aditivos alimentares autorizados — Regulamento (EU) n.º 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Especificação do aditivo, INS 421",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=421"
+      "label": "NCBI Endotext — Polyols and comparative laxative tolerance",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK278991/"
     }
   ],
   "title": "Manitol",
-  "description": "Um poliol, também chamado de álcool de açúcar, usado em alimentos como adoçante, agente de volume, veículo, umectante e modificador de textura."
+  "description": "O manitol (INS 421 / E421) é um poliol de volume e antiaglomerante pouco absorvido; o JECFA documenta um limiar laxante de cerca de 10–20 g."
 }
