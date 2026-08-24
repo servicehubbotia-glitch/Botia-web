@@ -7,22 +7,50 @@
     "sweetener",
     "enumbers"
   ],
-  "what_is": "A high-intensity non-sugar sweetener identified by JECFA and Codex as INS 956.",
-  "why_botia": "BOTIA flags an explicit alitame declaration because it may appear by name or INS number in markets where its use is permitted. International evaluation or a Codex provision does not mean the additive is authorised in every jurisdiction.",
-  "can_1": "Detect alitame and INS 956 when explicitly declared.",
-  "can_2": "Show the sweetener and international-numbering context while keeping market-specific authorisation separate.",
-  "cannot_1": "Determine concentration or total intake from the ingredient list.",
-  "cannot_2": "Assume that Codex/JECFA recognition equals legal authorisation in every country.",
+  "what_is": "Alitame (INS 956) is a synthetic high-intensity sweetener built from amino-acid components. JECFA describes it as approximately 2,000 times sweeter than sucrose.",
+  "why_botia": "Alitame is around 2,000 times sweeter than sugar, so only milligrams are needed — and the ingredient list cannot show how much was used. It is built from amino-acid components and is broken down after ingestion; JECFA set an ADI of 0–1 mg/kg body weight. Unlike most common high-intensity sweeteners, alitame has limited and uneven market authorisation: it is permitted in Australia/New Zealand, China and Mexico, while the EU does not authorise it and its US food-additive petition was withdrawn.",
+  "can_1": "Detect alitame, Aclame and INS 956 when explicitly declared.",
+  "can_2": "Explain its extreme sweetness, amino-acid-derived structure, JECFA acceptable daily intake and the major differences in market authorisation.",
+  "cannot_1": "Determine how many milligrams of alitame are present from the ingredient declaration alone.",
+  "cannot_2": "Assume that INS or Codex recognition makes alitame legal in every market, or determine compliance with a local maximum level without knowing the amount and jurisdiction.",
   "sources": [
     {
-      "label": "JECFA — Alitame (INS 956)",
+      "label": "JECFA — Alitame (INS 956), evaluation record",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1160"
     },
     {
-      "label": "Codex GSFA Online — Alitame (INS 956)",
-      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=108&print=true"
+      "label": "FAO/JECFA — Alitame specification",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-010.pdf"
+    },
+    {
+      "label": "JECFA — Alitame toxicological monograph",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v35je11.htm"
+    },
+    {
+      "label": "Codex GSFA — Alitame (INS 956)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=108"
+    },
+    {
+      "label": "Australia/New Zealand — Schedule 15 permissions for food additives",
+      "url": "https://www.legislation.gov.au/F2015L00439/2026-04-30/2026-04-30/text/original/epub/OEBPS/document_1/document_1.html"
+    },
+    {
+      "label": "China NHC — GB 2760-2024 food additive standard",
+      "url": "https://www.nhc.gov.cn/sps/c100088/202403/bda120e678df4a49a8beb90852559d7c.shtml"
+    },
+    {
+      "label": "Mexico — Food additive agreement, Alitame INS 956",
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/5259470"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008, authorised food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/"
+    },
+    {
+      "label": "United States — Withdrawal of alitame food-additive petition",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2008-06-20/pdf/E8-13998.pdf"
     }
   ],
   "title": "Alitame",
-  "description": "A high-intensity non-sugar sweetener identified by JECFA and Codex as INS 956."
+  "description": "Alitame (INS 956) is a high-intensity sweetener around 2,000 times sweeter than sugar; JECFA set an ADI of 0–1 mg/kg body weight and authorisation differs sharply by market."
 }

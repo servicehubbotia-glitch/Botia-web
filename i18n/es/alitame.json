@@ -1,21 +1,49 @@
 {
   "name": "Alitame",
   "title": "Alitame",
-  "description": "Edulcorante no azucarado de alta intensidad identificado por JECFA y el Codex como INS 956.",
-  "what_is": "Edulcorante no azucarado de alta intensidad identificado por JECFA y el Codex como INS 956.",
-  "why_botia": "BOTIA señala una declaración explícita de Alitame porque puede aparecer por su nombre o por el número INS en los mercados donde se permite su uso. Una evaluación internacional o una disposición del Codex no significa que el aditivo esté autorizado en todas las jurisdicciones.",
-  "can_1": "Detectar Alitame e INS 956 cuando se declaren explícitamente.",
-  "can_2": "Mostrar el contexto del edulcorante y la numeración internacional, manteniendo por separado la autorización específica de cada mercado.",
-  "cannot_1": "Determina la concentración o la ingesta total a partir de la lista de ingredientes.",
-  "cannot_2": "Supongamos que el reconocimiento de Codex/JECFA equivale a una autorización legal en todos los países.",
+  "description": "El alitame (INS 956) es un edulcorante de alta intensidad unas 2.000 veces más dulce que el azúcar; JECFA estableció una IDA de 0–1 mg/kg de peso corporal y su autorización varía mucho según el mercado.",
+  "what_is": "El alitame (INS 956) es un edulcorante sintético de alta intensidad construido a partir de componentes derivados de aminoácidos. JECFA lo describe como aproximadamente 2.000 veces más dulce que la sacarosa.",
+  "why_botia": "El alitame es unas 2.000 veces más dulce que el azúcar, por lo que solo se necesitan miligramos — y la lista de ingredientes no permite saber cuánto se utilizó. Está construido a partir de componentes derivados de aminoácidos y se degrada después de la ingestión; JECFA estableció una IDA de 0–1 mg/kg de peso corporal. A diferencia de la mayoría de los edulcorantes intensos habituales, el alitame tiene una autorización limitada y desigual: está permitido en Australia/Nueva Zelanda, China y México, mientras que la UE no lo autoriza y su petición estadounidense como aditivo alimentario fue retirada.",
+  "can_1": "Detectar alitame, Aclame e INS 956 cuando estén declarados explícitamente.",
+  "can_2": "Explicar su enorme poder edulcorante, su estructura derivada de aminoácidos, la ingesta diaria admisible de JECFA y las principales diferencias de autorización entre mercados.",
+  "cannot_1": "Determinar cuántos miligramos de alitame contiene el producto únicamente a partir de la declaración de ingredientes.",
+  "cannot_2": "Suponer que el reconocimiento INS o Codex hace legal el alitame en todos los mercados, ni determinar el cumplimiento de un límite local sin conocer la cantidad y la jurisdicción.",
   "sources": [
     {
-      "label": "JECFA — Alitame (INS 956)",
+      "label": "JECFA — Alitame (INS 956), evaluation record",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1160"
     },
     {
-      "label": "Codex GSFA Online — Alitame (n.º INS 956)",
-      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=108&print=true"
+      "label": "FAO/JECFA — Alitame specification",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-010.pdf"
+    },
+    {
+      "label": "JECFA — Alitame toxicological monograph",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v35je11.htm"
+    },
+    {
+      "label": "Codex GSFA — Alitame (INS 956)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=108"
+    },
+    {
+      "label": "Australia/New Zealand — Schedule 15 permissions for food additives",
+      "url": "https://www.legislation.gov.au/F2015L00439/2026-04-30/2026-04-30/text/original/epub/OEBPS/document_1/document_1.html"
+    },
+    {
+      "label": "China NHC — GB 2760-2024 food additive standard",
+      "url": "https://www.nhc.gov.cn/sps/c100088/202403/bda120e678df4a49a8beb90852559d7c.shtml"
+    },
+    {
+      "label": "Mexico — Food additive agreement, Alitame INS 956",
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/5259470"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008, authorised food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/"
+    },
+    {
+      "label": "United States — Withdrawal of alitame food-additive petition",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2008-06-20/pdf/E8-13998.pdf"
     }
   ],
   "e_code": "INS 956",

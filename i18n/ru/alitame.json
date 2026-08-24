@@ -1,21 +1,49 @@
 {
   "name": "Алитам",
   "title": "Алитам",
-  "description": "Высокоинтенсивный несахарный подсластитель, обозначаемый JECFA и Codex как INS 956.",
-  "what_is": "Высокоинтенсивный несахарный подсластитель, обозначаемый JECFA и Codex как INS 956.",
-  "why_botia": "BOTIA отмечает явное указание Алитама, поскольку на рынках, где его применение разрешено, он может быть указан по названию или номеру INS. Международная оценка или положение Codex не означают, что добавка разрешена во всех юрисдикциях.",
-  "can_1": "Обнаруживать Алитам и INS 956, если они явно указаны.",
-  "can_2": "Отображать информацию о льготах и международную нумерацию, сохраняя при этом отдельное разрешение для конкретного рынка.",
-  "cannot_1": "Определите концентрацию или общее количество, указанное в списке ингредиентов.",
-  "cannot_2": "Предположим, что признание Кодекса/JECFA равнозначно юридическому разрешению в любой стране.",
+  "description": "Алитам (INS 956) — интенсивный подсластитель примерно в 2 000 раз слаще сахара; JECFA установила ADI 0–1 мг/кг массы тела, а разрешение существенно различается между рынками.",
+  "what_is": "Алитам (INS 956) — синтетический интенсивный подсластитель, построенный из компонентов, производных аминокислот. JECFA описывает его как примерно в 2 000 раз более сладкий, чем сахароза.",
+  "why_botia": "Алитам примерно в 2 000 раз слаще сахара, поэтому требуются лишь количества, измеряемые миллиграммами — а список ингредиентов не показывает, сколько было использовано. Он построен из компонентов, производных аминокислот, и расщепляется после употребления; JECFA установила ADI 0–1 мг/кг массы тела. В отличие от большинства распространённых интенсивных подсластителей, алитам имеет ограниченный и неравномерный статус разрешения: он допускается в Австралии/Новой Зеландии, Китае и Мексике, тогда как ЕС его не разрешает, а американская заявка на использование в качестве пищевой добавки была отозвана.",
+  "can_1": "Определять алитам, Aclame и INS 956, когда они явно указаны.",
+  "can_2": "Объяснять его чрезвычайно высокую сладость, структуру на основе производных аминокислот, допустимое суточное потребление JECFA и основные различия в разрешении между рынками.",
+  "cannot_1": "Определить количество миллиграммов алитама только по декларации ингредиентов.",
+  "cannot_2": "Предполагать, что признание INS или Codex делает алитам законным на каждом рынке, или определять соответствие местному пределу без знания количества и юрисдикции.",
   "sources": [
     {
-      "label": "JECFA — Алитаме (INS 956)",
+      "label": "JECFA — Alitame (INS 956), evaluation record",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1160"
     },
     {
-      "label": "Codex GSFA Online — Алитаме (INS 956)",
-      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=108&print=true"
+      "label": "FAO/JECFA — Alitame specification",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-010.pdf"
+    },
+    {
+      "label": "JECFA — Alitame toxicological monograph",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v35je11.htm"
+    },
+    {
+      "label": "Codex GSFA — Alitame (INS 956)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=108"
+    },
+    {
+      "label": "Australia/New Zealand — Schedule 15 permissions for food additives",
+      "url": "https://www.legislation.gov.au/F2015L00439/2026-04-30/2026-04-30/text/original/epub/OEBPS/document_1/document_1.html"
+    },
+    {
+      "label": "China NHC — GB 2760-2024 food additive standard",
+      "url": "https://www.nhc.gov.cn/sps/c100088/202403/bda120e678df4a49a8beb90852559d7c.shtml"
+    },
+    {
+      "label": "Mexico — Food additive agreement, Alitame INS 956",
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/5259470"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008, authorised food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/"
+    },
+    {
+      "label": "United States — Withdrawal of alitame food-additive petition",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2008-06-20/pdf/E8-13998.pdf"
     }
   ],
   "e_code": "INS 956",

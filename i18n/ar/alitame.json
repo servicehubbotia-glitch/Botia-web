@@ -1,21 +1,49 @@
 {
   "name": "أليتام",
   "title": "أليتام",
-  "description": "مُحلٍّ غير سكري عالي الكثافة تعرّفه JECFA وهيئة الدستور الغذائي بالرمز INS 956.",
-  "what_is": "مُحلٍّ غير سكري عالي الكثافة تعرّفه JECFA وهيئة الدستور الغذائي بالرمز INS 956.",
-  "why_botia": "تشير BOTIA إلى التصريح الصريح عن أليتام لأنه قد يظهر بالاسم أو برقم INS في الأسواق التي يُسمح باستخدامه فيها. ولا يعني التقييم الدولي أو حكم من أحكام الدستور الغذائي أن المادة المضافة مرخّصة في كل ولاية قضائية.",
-  "can_1": "اكتشاف أليتام وINS 956 عند التصريح عنهما صراحةً.",
-  "can_2": "عرض سياق المُحلي والترقيم الدولي مع الحفاظ على فصل الترخيص الخاص بالسوق.",
-  "cannot_1": "حدد التركيز أو الكمية الإجمالية المستهلكة من قائمة المكونات.",
-  "cannot_2": "لنفترض أن الاعتراف بـ «كودكس»/JECFA يعادل الإذن القانوني في كل بلد.",
+  "description": "الأليتام (INS 956) مُحلٍّ عالي الكثافة أحلى من السكر بنحو 2,000 مرة؛ وحددت JECFA له قيمة ADI بمقدار 0–1 ملغ/كغ من وزن الجسم ويختلف ترخيصه بدرجة كبيرة بين الأسواق.",
+  "what_is": "الأليتام (INS 956) مُحلٍّ صناعي عالي الكثافة مكوّن من عناصر مشتقة من الأحماض الأمينية. وتصفه JECFA بأنه أحلى من السكروز بنحو 2,000 مرة.",
+  "why_botia": "الأليتام أحلى من السكر بنحو 2,000 مرة، لذلك لا يلزم منه سوى كميات بالملليغرام — ولا تكشف قائمة المكونات عن مقدار ما استُخدم. يتكون من عناصر مشتقة من الأحماض الأمينية ويتحلل بعد تناوله؛ وحددت JECFA قيمة ADI بمقدار 0–1 ملغ/كغ من وزن الجسم. وعلى خلاف معظم المُحليات عالية الكثافة الشائعة، فإن ترخيص الأليتام محدود وغير متساوٍ بين الأسواق: فهو مسموح به في أستراليا/نيوزيلندا والصين والمكسيك، بينما لا يسمح به الاتحاد الأوروبي وقد سُحبت عريضة استخدامه كمضاف غذائي في الولايات المتحدة.",
+  "can_1": "اكتشاف الأليتام وAclame وINS 956 عندما تكون مذكورة صراحة.",
+  "can_2": "شرح قوة حلاوته الشديدة وبنيته المشتقة من الأحماض الأمينية وقيمة المدخول اليومي المقبول لدى JECFA والاختلافات الرئيسية في الترخيص بين الأسواق.",
+  "cannot_1": "تحديد عدد ملليغرامات الأليتام الموجودة في المنتج من قائمة المكونات وحدها.",
+  "cannot_2": "افتراض أن اعتراف INS أو Codex يجعل الأليتام قانونياً في كل سوق، أو تحديد الامتثال لحد محلي دون معرفة الكمية والولاية القضائية.",
   "sources": [
     {
-      "label": "JECFA — أليتامي (رقم الهاتف: INS 956)",
+      "label": "JECFA — Alitame (INS 956), evaluation record",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1160"
     },
     {
-      "label": "Codex GSFA Online — Alitame (رقم INS956)",
-      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=108&print=true"
+      "label": "FAO/JECFA — Alitame specification",
+      "url": "https://www.fao.org/fileadmin/user_upload/jecfa_additives/docs/Monograph1/Additive-010.pdf"
+    },
+    {
+      "label": "JECFA — Alitame toxicological monograph",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v35je11.htm"
+    },
+    {
+      "label": "Codex GSFA — Alitame (INS 956)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=108"
+    },
+    {
+      "label": "Australia/New Zealand — Schedule 15 permissions for food additives",
+      "url": "https://www.legislation.gov.au/F2015L00439/2026-04-30/2026-04-30/text/original/epub/OEBPS/document_1/document_1.html"
+    },
+    {
+      "label": "China NHC — GB 2760-2024 food additive standard",
+      "url": "https://www.nhc.gov.cn/sps/c100088/202403/bda120e678df4a49a8beb90852559d7c.shtml"
+    },
+    {
+      "label": "Mexico — Food additive agreement, Alitame INS 956",
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/5259470"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008, authorised food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/"
+    },
+    {
+      "label": "United States — Withdrawal of alitame food-additive petition",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2008-06-20/pdf/E8-13998.pdf"
     }
   ],
   "e_code": "INS 956",
