@@ -1,45 +1,37 @@
 {
   "name": "إيزومالت",
   "e_code": "E953",
-  "aliases": "E953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
+  "aliases": "E953, INS 953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "خليط من البوليولات يُنتَج عن طريق هدرجة الأيزومالتولوز ويُستخدم كمُحلٍّ سائب ومكوِّن لتحسين القوام.",
-  "why_botia": "تشير BOTIA إلى ذلك لأن E953 يمنح الحلاوة والكتلة مع التأثير أيضًا على قوام المنتج، وتعتمد استخداماته المصرح بها على القواعد المحلية للمضافات الغذائية.",
-  "can_1": "حدد E953، أو الأيزومالت، أو الأيزومالتولوز المهدرج عندما يُذكر على الملصق.",
-  "can_2": "فعّل طبقات معلومات أرقام الإي، والمحليات، والقوام.",
-  "cannot_1": "حدد الكمية الموجودة من قائمة المكونات وحدها.",
-  "cannot_2": "توقع استجابة الفرد الهضمية أو التأثير الأيضي العام للمنتج بناءً على هذا المكوّن وحده.",
+  "what_is": "الإيزومالت (INS 953 / E953) خليط من البوليولات يُنتج بهدرجة الإيزومالتولوز. وهو مُحلٍّ حجمي: فعلى خلاف المُحليات شديدة القوة، يضيف الحلاوة والحجم الفيزيائي إلى الغذاء.",
+  "why_botia": "يحل الإيزومالت محل حلاوة السكر وحجمه معاً، ولذلك يمكن استخدامه بكميات أكبر بكثير من المُحليات شديدة القوة؛ ووفق قواعد الوسم الغذائي في الاتحاد الأوروبي تُحسب البوليولات مثل الإيزومالت بقيمة 2.4 كيلو كالوري/غرام، وليست صفراً. لا يُمتص جزء منه في الأمعاء الدقيقة: فالجزء غير الممتص له تأثير أسموزي ويتخمر في الأمعاء الغليظة، ولذلك يمكن للكميات الأكبر أن تسبب غازات أو تأثيراً مُليناً. خصصت JECFA له قيمة ADI «غير محددة»، بينما لا يفرض الاتحاد الأوروبي عبارة «قد يؤدي الاستهلاك المفرط إلى تأثيرات مُلينة» إلا عندما يحتوي الغذاء على أكثر من 10% من البوليولات المضافة؛ وتحت هذا الحد قد يوجد الإيزومالت دون هذا التحذير المحدد.",
+  "can_1": "اكتشاف E953 وINS 953 والإيزومالت والإيزومالتولوز المهدرج والإيزومالتيتول عندما تكون مذكورة صراحة.",
+  "can_2": "شرح وظيفته كمحلٍّ حجمي وعامل الطاقة في الاتحاد الأوروبي وسلوكه الهضمي وقيمة ADI لدى JECFA وحد الـ10% الأوروبي للتحذير الملين.",
+  "cannot_1": "تحديد كمية الإيزومالت أو نسبة البوليولات المضافة من قائمة المكونات وحدها.",
+  "cannot_2": "تحديد ما إذا كان التحذير الملين مطلوباً قانونياً اعتماداً على اسم المكون وحده أو التنبؤ بالاستجابة الهضمية الفردية.",
   "sources": [
     {
-      "label": "EFSA — المُحلّيات",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Isomalt (INS 953), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1289"
     },
     {
-      "label": "FDA — الأسبارتام والمحليات الأخرى في الأغذية",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Isomalt toxicological monograph (FAS 20)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v20je14.htm"
     },
     {
-      "label": "Codex Alimentarius — قاعدة GSFA على الإنترنت",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Isomalt (INS 953)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=180"
     },
     {
-      "label": "اللائحة (EC) رقم 1333/2008 بشأن المواد المضافة الغذائية",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "مواصفات EU للمواد المضافة الغذائية المصرح بها — اللائحة (EU) رقم 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — مواصفة المادة المضافة, INS 953",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=953"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III and Annex XIV",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "إيزومالت",
-  "description": "خليط من البوليولات يُنتج عن طريق الهدرجة من الإيزومالتولوز ويُستخدم كمُحلٍّ سائب ومكوّن لتحسين القوام."
+  "description": "الإيزومالت (INS 953 / E953) بوليول حجمي يُحسب بقيمة 2.4 كيلو كالوري/غرام وفق قواعد الاتحاد الأوروبي؛ ويطبق تحذير التأثير الملين فوق 10% من البوليولات المضافة."
 }

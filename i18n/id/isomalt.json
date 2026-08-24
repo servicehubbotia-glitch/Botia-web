@@ -1,45 +1,37 @@
 {
   "name": "Isomalt",
   "e_code": "E953",
-  "aliases": "E953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
+  "aliases": "E953, INS 953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Campuran poliol yang dihasilkan melalui hidrogenasi isomaltulosa dan digunakan sebagai pemanis curah serta bahan tekstur.",
-  "why_botia": "BOTIA menandainya karena E953 memberikan rasa manis dan volume sekaligus memengaruhi tekstur produk, dan penggunaan yang diizinkan bergantung pada aturan aditif makanan setempat.",
-  "can_1": "Identifikasi E953, isomalt atau isomaltulosa terhidrogenasi jika dinyatakan pada label.",
-  "can_2": "Picu lapisan informasi nomor-E, pemanis, dan tekstur.",
-  "cannot_1": "Tentukan jumlah yang ada hanya dari daftar bahan.",
-  "cannot_2": "Prediksi respons pencernaan individu atau efek metabolik keseluruhan produk hanya dari bahan ini saja.",
+  "what_is": "Isomalt (INS 953 / E953) adalah campuran poliol yang dihasilkan melalui hidrogenasi isomaltulosa. Ini adalah pemanis pengisi: berbeda dari pemanis intensitas tinggi, isomalt memberikan rasa manis sekaligus volume fisik pada pangan.",
+  "why_botia": "Isomalt menggantikan rasa manis sekaligus volume gula, sehingga dapat digunakan dalam jumlah jauh lebih besar daripada pemanis intensitas tinggi; menurut aturan pelabelan gizi Uni Eropa, poliol seperti isomalt dihitung sebagai 2,4 kkal/g, bukan nol. Sebagian tidak diserap di usus halus: bagian yang tidak terserap memiliki efek osmotik dan difermentasi di usus besar, sehingga jumlah yang lebih tinggi dapat menyebabkan gas atau efek laksatif. JECFA menetapkan ADI “tidak ditentukan”, sedangkan Uni Eropa hanya mewajibkan peringatan “konsumsi berlebihan dapat menimbulkan efek laksatif” bila pangan mengandung lebih dari 10% poliol tambahan; di bawah ambang tersebut, isomalt dapat ada tanpa peringatan khusus itu.",
+  "can_1": "Mendeteksi E953, INS 953, isomalt, isomaltulosa terhidrogenasi dan isomaltitol ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan fungsi sebagai pemanis pengisi, faktor energi Uni Eropa, perilaku gastrointestinal, ADI JECFA dan ambang peringatan Uni Eropa sebesar 10%.",
+  "cannot_1": "Menentukan jumlah isomalt atau persentase poliol tambahan hanya dari daftar bahan.",
+  "cannot_2": "Menentukan dari nama bahan saja apakah peringatan laksatif diwajibkan secara hukum atau memprediksi respons pencernaan individu.",
   "sources": [
     {
-      "label": "EFSA — Pemanis",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Isomalt (INS 953), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1289"
     },
     {
-      "label": "FDA — Aspartam dan pemanis lain dalam pangan",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Isomalt toxicological monograph (FAS 20)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v20je14.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA daring",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Isomalt (INS 953)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=180"
     },
     {
-      "label": "Peraturan (EC) No. 1333/2008 tentang bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Spesifikasi EU untuk bahan tambahan pangan yang diizinkan — Peraturan (EU) No. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Spesifikasi bahan tambahan, INS 953",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=953"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III and Annex XIV",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Isomalt",
-  "description": "Campuran poliol yang dihasilkan melalui hidrogenasi isomaltulosa dan digunakan sebagai pemanis curah serta bahan tekstur."
+  "description": "Isomalt (INS 953 / E953) adalah poliol pengisi yang dihitung 2,4 kkal/g menurut aturan Uni Eropa; peringatan laksatif Uni Eropa berlaku di atas 10% poliol tambahan."
 }

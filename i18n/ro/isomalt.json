@@ -1,45 +1,37 @@
 {
   "name": "Izomalta",
   "e_code": "E953",
-  "aliases": "E953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
+  "aliases": "E953, INS 953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Amestec de polioli obținut prin hidrogenarea izomaltulozei și utilizat ca îndulcitor de masă și ingredient de texturizare.",
-  "why_botia": "BOTIA o semnalizează deoarece E953 oferă dulceață și volum, afectând totodată textura produsului, iar utilizările sale autorizate depind de reglementările locale privind aditivii alimentari.",
-  "can_1": "Identificați E953, izomaltul sau izomaltuloza hidrogenată atunci când sunt declarate pe etichetă.",
-  "can_2": "Activează straturile de informații despre numerele E, îndulcitori și textură.",
-  "cannot_1": "Determinați cantitatea prezentă doar din lista de ingrediente.",
-  "cannot_2": "Preziceți răspunsul digestiv al unui individ sau efectul metabolic general al produsului doar pe baza acestui ingredient.",
+  "what_is": "Izomaltul (INS 953 / E953) este un amestec de polioli produs prin hidrogenarea izomaltulozei. Este un îndulcitor de volum: spre deosebire de îndulcitorii intenși, oferă atât dulceață, cât și volum fizic alimentului.",
+  "why_botia": "Izomaltul înlocuiește atât dulceața, cât și volumul zahărului, astfel încât poate fi utilizat în cantități mult mai mari decât îndulcitorii intenși; conform normelor UE de etichetare nutrițională, poliolii precum izomaltul sunt calculați la 2,4 kcal/g, nu zero. O parte nu este absorbită în intestinul subțire: fracția neabsorbită are un efect osmotic și este fermentată în intestinul gros, motiv pentru care cantități mai mari pot provoca gaze sau efecte laxative. JECFA i-a atribuit o ADI „nespecificată”, iar UE impune avertismentul „consumul excesiv poate produce efecte laxative” numai atunci când alimentul conține mai mult de 10% polioli adăugați; sub acest prag, izomaltul poate fi prezent fără acest avertisment specific.",
+  "can_1": "Detecta E953, INS 953, izomalt, izomaltuloză hidrogenată și izomaltitol atunci când sunt declarate explicit.",
+  "can_2": "Explica funcția de îndulcitor de volum, factorul energetic UE, comportamentul gastrointestinal, ADI JECFA și pragul european de 10% pentru avertismentul laxativ.",
+  "cannot_1": "Determina cantitatea de izomalt sau procentul de polioli adăugați doar din lista ingredientelor.",
+  "cannot_2": "Decide doar din numele ingredientului dacă avertismentul laxativ este obligatoriu legal sau prezice răspunsul digestiv individual.",
   "sources": [
     {
-      "label": "EFSA — Îndulcitori",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Isomalt (INS 953), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1289"
     },
     {
-      "label": "FDA — Aspartam și alți îndulcitori din alimente",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Isomalt toxicological monograph (FAS 20)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v20je14.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Isomalt (INS 953)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=180"
     },
     {
-      "label": "Regulamentul (EC) nr. 1333/2008 privind aditivii alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Specificațiile EU pentru aditivii alimentari autorizați — Regulamentul (EU) nr. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Specificația aditivului, INS 953",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=953"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III and Annex XIV",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Izomalta",
-  "description": "Un amestec de polioli produs prin hidrogenarea izomaltulozei și utilizat ca îndulcitor de masă și ingredient de texturizare."
+  "description": "Izomaltul (INS 953 / E953) este un poliol de volum calculat la 2,4 kcal/g conform normelor UE; avertismentul laxativ european se aplică peste 10% polioli adăugați."
 }

@@ -1,45 +1,37 @@
 {
   "name": "异麦芽酮糖醇",
   "e_code": "E953",
-  "aliases": "E953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
+  "aliases": "E953, INS 953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "氢化异麦芽酮糖产生的多元醇混合物，用作填充型甜味剂和质构改良成分。",
-  "why_botia": "BOTIA标记它是因为E953提供甜度和体积，同时影响产品质地，其授权用途取决于当地的食品添加剂规定。",
-  "can_1": "识别标签上标注的E953、异麦芽酮糖醇或氢化异麦芽酮糖。",
-  "can_2": "触发E编号、甜味剂和质构信息图层。",
-  "cannot_1": "仅根据成分表确定含量。",
-  "cannot_2": "仅凭这种成分，预测个体的消化反应或产品的整体代谢效应。",
+  "what_is": "异麦芽酮糖醇（INS 953 / E953）是由异麦芽酮糖氢化制成的多元醇混合物。它是一种填充型甜味剂：与高强度甜味剂不同，它既提供甜味，也为食品提供实际体积。",
+  "why_botia": "异麦芽酮糖醇同时替代糖的甜味和体积，因此其使用量可以远高于高强度甜味剂；根据欧盟营养标签规则，异麦芽酮糖醇等多元醇按2.4千卡/克计算，并不是零热量。一部分不会在小肠被吸收：未吸收部分具有渗透作用，并会在大肠中发酵，因此较大的摄入量可能导致胀气或通便作用。JECFA 将其 ADI 规定为“无需限定”，而欧盟只有在食品含有超过10%的添加多元醇时才要求标示“过量食用可能产生通便作用”；低于这一阈值，即使含有异麦芽酮糖醇也可能没有这一特定警示。",
+  "can_1": "识别明确标示的 E953、INS 953、异麦芽酮糖醇、氢化异麦芽酮糖和 isomaltitol。",
+  "can_2": "解释其填充型甜味剂作用、欧盟能量换算系数、胃肠道行为、JECFA ADI 以及欧盟10%的通便警示阈值。",
+  "cannot_1": "仅根据配料表确定异麦芽酮糖醇的实际含量或添加多元醇的百分比。",
+  "cannot_2": "仅根据成分名称判断是否依法必须标注通便警示，或预测个人的消化反应。",
   "sources": [
     {
-      "label": "EFSA — 甜味剂",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Isomalt (INS 953), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1289"
     },
     {
-      "label": "FDA — 食品中的阿斯巴甜和其他甜味剂",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Isomalt toxicological monograph (FAS 20)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v20je14.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA 在线数据库",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Isomalt (INS 953)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=180"
     },
     {
-      "label": "（EC）第1333/2008号食品添加剂法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "EU 获准食品添加剂规格——（EU）第231/2012号法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — 添加剂规格, INS 953",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=953"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III and Annex XIV",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "异麦芽酮糖醇",
-  "description": "氢化异麦芽酮糖产生的多元醇混合物，用作填充型甜味剂和质构改良成分。"
+  "description": "异麦芽酮糖醇（INS 953 / E953）是一种填充型多元醇，欧盟按2.4千卡/克计算；添加多元醇超过10%时才适用欧盟通便警示。"
 }

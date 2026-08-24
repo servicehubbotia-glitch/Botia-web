@@ -1,45 +1,37 @@
 {
   "name": "Isomalt",
   "e_code": "E953",
-  "aliases": "E953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
+  "aliases": "E953, INS 953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Un mélange de polyols produit par hydrogénation de l'isomaltulose et utilisé comme édulcorant de masse et ingrédient texturant.",
-  "why_botia": "BOTIA le signale parce que l'E953 apporte du sucré et du volume tout en affectant la texture du produit, et ses utilisations autorisées dépendent des réglementations locales sur les additifs alimentaires.",
-  "can_1": "Identifiez l'E953, l'isomalt ou l'isomaltulose hydrogéné lorsqu'ils sont déclarés sur l'étiquette.",
-  "can_2": "Déclenchez les couches d'informations sur les numéros E, les édulcorants et la texture.",
-  "cannot_1": "Déterminez la quantité présente à partir de la seule liste des ingrédients.",
-  "cannot_2": "Prédire la réponse digestive d'un individu ou l'effet métabolique global du produit à partir de ce seul ingrédient.",
+  "what_is": "L’isomalt (INS 953 / E953) est un mélange de polyols produit par hydrogénation de l’isomaltulose. C’est un édulcorant de charge : contrairement aux édulcorants intenses, il apporte à la fois de la douceur et du volume physique à l’aliment.",
+  "why_botia": "L’isomalt remplace à la fois la douceur et le volume du sucre, de sorte qu’il peut être utilisé en quantités bien plus importantes que les édulcorants intenses ; selon les règles européennes d’étiquetage nutritionnel, les polyols tels que l’isomalt comptent pour 2,4 kcal/g, et non zéro. Une partie n’est pas absorbée dans l’intestin grêle : la fraction non absorbée exerce un effet osmotique et est fermentée dans le gros intestin, ce qui explique que des quantités plus élevées puissent provoquer des gaz ou des effets laxatifs. Le JECFA lui a attribué une DJA « non spécifiée », tandis que l’UE n’impose la mention « une consommation excessive peut avoir des effets laxatifs » que lorsque l’aliment contient plus de 10% de polyols ajoutés ; en dessous de ce seuil, l’isomalt peut être présent sans cet avertissement spécifique.",
+  "can_1": "Détecter E953, INS 953, isomalt, isomaltulose hydrogénée et isomaltitol lorsqu’ils sont explicitement déclarés.",
+  "can_2": "Expliquer sa fonction d’édulcorant de charge, le facteur énergétique de l’UE, son comportement gastro-intestinal, la DJA du JECFA et le seuil européen de 10% pour l’avertissement laxatif.",
+  "cannot_1": "Déterminer la quantité d’isomalt ou le pourcentage de polyols ajoutés à partir de la seule liste des ingrédients.",
+  "cannot_2": "Décider à partir du seul nom de l’ingrédient si l’avertissement laxatif est légalement requis ou prédire la réponse digestive individuelle.",
   "sources": [
     {
-      "label": "EFSA — Édulcorants",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Isomalt (INS 953), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1289"
     },
     {
-      "label": "FDA — Aspartame et autres édulcorants dans les aliments",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Isomalt toxicological monograph (FAS 20)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v20je14.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA en ligne",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Isomalt (INS 953)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=180"
     },
     {
-      "label": "Règlement (EC) n° 1333/2008 sur les additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Spécifications de l’EU pour les additifs alimentaires autorisés — Règlement (EU) n° 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Spécification de l’additif, INS 953",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=953"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III and Annex XIV",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Isomalt",
-  "description": "Un mélange de polyols produit par hydrogénation de l'isomaltulose et utilisé comme édulcorant de masse et ingrédient texturant."
+  "description": "L’isomalt (INS 953 / E953) est un polyol de charge comptant pour 2,4 kcal/g selon les règles de l’UE ; l’avertissement laxatif européen s’applique au-delà de 10% de polyols ajoutés."
 }

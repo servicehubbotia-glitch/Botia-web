@@ -1,45 +1,37 @@
 {
   "name": "Isomalte",
   "e_code": "E953",
-  "aliases": "E953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
+  "aliases": "E953, INS 953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Uma mistura de polióis produzida pela hidrogenação da isomaltulose e utilizada como adoçante de volume e ingrediente texturizante.",
-  "why_botia": "A BOTIA sinaliza isso porque o E953 fornece doçura e volume, além de afetar a textura do produto, e seus usos autorizados dependem das regras locais de aditivos alimentares.",
-  "can_1": "Identifique E953, isomalte ou isomaltulose hidrogenada quando declarado no rótulo.",
-  "can_2": "Ative as camadas de informações sobre números E, adoçantes e textura.",
-  "cannot_1": "Determine a quantidade presente apenas pela lista de ingredientes.",
-  "cannot_2": "Preveja a resposta digestiva de um indivíduo ou o efeito metabólico geral do produto apenas a partir deste ingrediente.",
+  "what_is": "O isomalte (INS 953 / E953) é uma mistura de polióis produzida pela hidrogenação da isomaltulose. É um edulcorante de volume: ao contrário dos edulcorantes intensos, fornece simultaneamente doçura e volume físico ao alimento.",
+  "why_botia": "O isomalte substitui tanto a doçura como o volume do açúcar, pelo que pode ser utilizado em quantidades muito maiores do que os edulcorantes intensos; segundo as regras de rotulagem nutricional da UE, polióis como o isomalte contam como 2,4 kcal/g, e não zero. Uma parte não é absorvida no intestino delgado: a fração não absorvida exerce um efeito osmótico e é fermentada no intestino grosso, razão pela qual quantidades maiores podem causar gases ou efeitos laxantes. O JECFA atribuiu uma IDA “não especificada”, enquanto a UE só exige a advertência “o seu consumo excessivo pode ter efeitos laxativos” quando o alimento contém mais de 10% de polióis adicionados; abaixo desse limiar, o isomalte pode estar presente sem essa advertência específica.",
+  "can_1": "Detetar E953, INS 953, isomalte, isomaltulose hidrogenada e isomaltitol quando declarados explicitamente.",
+  "can_2": "Explicar a função de edulcorante de volume, o fator energético da UE, o comportamento gastrointestinal, a IDA do JECFA e o limiar europeu de 10% para a advertência laxante.",
+  "cannot_1": "Determinar quanto isomalte ou que percentagem de polióis adicionados está presente apenas pela lista de ingredientes.",
+  "cannot_2": "Decidir apenas pelo nome do ingrediente se a advertência laxante é legalmente obrigatória ou prever a resposta digestiva individual.",
   "sources": [
     {
-      "label": "EFSA — Edulcorantes",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Isomalt (INS 953), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1289"
     },
     {
-      "label": "FDA — Aspartame e outros edulcorantes nos alimentos",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Isomalt toxicological monograph (FAS 20)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v20je14.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA em linha",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Isomalt (INS 953)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=180"
     },
     {
-      "label": "Regulamento (EC) n.º 1333/2008 relativo aos aditivos alimentares",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Especificações da EU para aditivos alimentares autorizados — Regulamento (EU) n.º 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Especificação do aditivo, INS 953",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=953"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III and Annex XIV",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Isomalte",
-  "description": "Uma mistura de polióis produzida pela hidrogenação da isomaltulose e utilizada como adoçante de volume e ingrediente texturizante."
+  "description": "O isomalte (INS 953 / E953) é um poliol de volume que conta como 2,4 kcal/g segundo as regras da UE; a advertência laxante europeia aplica-se acima de 10% de polióis adicionados."
 }

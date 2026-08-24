@@ -1,45 +1,37 @@
 {
   "name": "Izomalt",
   "e_code": "E953",
-  "aliases": "E953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
+  "aliases": "E953, INS 953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Mieszanina polioli otrzymywana w wyniku uwodornienia izomaltulozy, stosowana jako substancja słodząca o właściwościach objętościowych oraz składnik teksturotwórczy.",
-  "why_botia": "BOTIA oznacza to, ponieważ E953 zapewnia słodycz i objętość, jednocześnie wpływając na teksturę produktu, a jego dozwolone zastosowania zależą od lokalnych przepisów dotyczących dodatków do żywności.",
-  "can_1": "Zidentyfikuj E953, izomalt lub uwodornioną izomaltulozę, gdy są zadeklarowane na etykiecie.",
-  "can_2": "Wyświetl warstwy informacji o numerach E, substancjach słodzących i teksturze.",
-  "cannot_1": "Określ ilość obecną wyłącznie na podstawie listy składników.",
-  "cannot_2": "Przewidź indywidualną reakcję układu trawiennego lub ogólny efekt metaboliczny produktu na podstawie wyłącznie tego składnika.",
+  "what_is": "Izomalt (INS 953 / E953) jest mieszaniną polioli otrzymywaną przez uwodornienie izomaltulozy. Jest substancją słodzącą nadającą objętość: w przeciwieństwie do intensywnych substancji słodzących zapewnia zarówno słodycz, jak i fizyczną objętość produktu.",
+  "why_botia": "Izomalt zastępuje zarówno słodycz, jak i objętość cukru, dlatego może być stosowany w znacznie większych ilościach niż intensywne substancje słodzące; zgodnie z unijnymi zasadami oznaczania wartości odżywczej poliole takie jak izomalt liczy się jako 2,4 kcal/g, a nie zero. Część nie jest wchłaniana w jelicie cienkim: niewchłonięta frakcja działa osmotycznie i jest fermentowana w jelicie grubym, dlatego większe ilości mogą powodować gazy lub działanie przeczyszczające. JECFA przyznała ADI „nieokreślone”, natomiast UE wymaga ostrzeżenia „spożycie w nadmiernych ilościach może mieć efekt przeczyszczający” tylko wtedy, gdy żywność zawiera więcej niż 10% dodanych polioli; poniżej tego progu izomalt może być obecny bez tego konkretnego ostrzeżenia.",
+  "can_1": "Wykrywać E953, INS 953, izomalt, uwodornioną izomaltulozę i izomaltitol, gdy są wyraźnie zadeklarowane.",
+  "can_2": "Wyjaśniać jego funkcję jako substancji słodzącej nadającej objętość, unijny współczynnik energetyczny, zachowanie w przewodzie pokarmowym, ADI JECFA oraz próg 10% dla ostrzeżenia przeczyszczającego w UE.",
+  "cannot_1": "Określić ilości izomaltu ani procentu dodanych polioli na podstawie samej listy składników.",
+  "cannot_2": "Na podstawie samej nazwy składnika stwierdzić, czy ostrzeżenie przeczyszczające jest prawnie wymagane, ani przewidzieć indywidualnej reakcji trawiennej.",
   "sources": [
     {
-      "label": "EFSA — Substancje słodzące",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Isomalt (INS 953), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1289"
     },
     {
-      "label": "FDA — Aspartam i inne substancje słodzące w żywności",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Isomalt toxicological monograph (FAS 20)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v20je14.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Isomalt (INS 953)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=180"
     },
     {
-      "label": "Rozporządzenie (EC) nr 1333/2008 w sprawie dodatków do żywności",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Specyfikacje EU dotyczące dopuszczonych dodatków do żywności — Rozporządzenie (EU) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Specyfikacja dodatku, INS 953",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=953"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III and Annex XIV",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Izomalt",
-  "description": "Mieszanina polioli otrzymywana w wyniku uwodornienia izomaltulozy, stosowana jako substancja słodząca o właściwościach wypełniających oraz składnik teksturotwórczy."
+  "description": "Izomalt (INS 953 / E953) jest poliolem nadającym objętość, liczonym w UE jako 2,4 kcal/g; ostrzeżenie o działaniu przeczyszczającym obowiązuje powyżej 10% dodanych polioli."
 }

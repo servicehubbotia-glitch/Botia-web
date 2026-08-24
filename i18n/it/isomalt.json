@@ -1,45 +1,37 @@
 {
   "name": "Isomalto",
   "e_code": "E953",
-  "aliases": "E953, isomaltosio, isomaltulosio idrogenato, isomaltitolo, Palatinit, prodotti di idrogenazione dell'isomaltulosio",
+  "aliases": "E953, INS 953, isomaltosio, isomaltulosio idrogenato, isomaltitolo, Palatinit, prodotti di idrogenazione dell'isomaltulosio",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Una miscela di polioli prodotta mediante idrogenazione dell'isomaltulosio e utilizzata come dolcificante di massa e ingrediente texturizzante.",
-  "why_botia": "BOTIA lo segnala perché l'E953 fornisce dolcezza e volume, influenzando anche la consistenza del prodotto, e i suoi usi autorizzati dipendono dalle normative locali sugli additivi alimentari.",
-  "can_1": "Identificare l'E953, isomalto o isomaltulosio idrogenato quando dichiarato in etichetta.",
-  "can_2": "Attiva i livelli di informazioni su numeri E, dolcificanti e consistenza.",
-  "cannot_1": "Determinare la quantità presente solo dall'elenco degli ingredienti.",
-  "cannot_2": "Prevedere la risposta digestiva di un individuo o l'effetto metabolico complessivo del prodotto basandosi solo su questo ingrediente.",
+  "what_is": "L’isomalto (INS 953 / E953) è una miscela di polioli ottenuta mediante idrogenazione dell’isomaltulosio. È un edulcorante di massa: a differenza degli edulcoranti intensi, fornisce sia dolcezza sia volume fisico all’alimento.",
+  "why_botia": "L’isomalto sostituisce sia la dolcezza sia il volume dello zucchero, quindi può essere usato in quantità molto maggiori rispetto agli edulcoranti intensi; secondo le norme UE sull’etichettatura nutrizionale, i polioli come l’isomalto contano come 2,4 kcal/g, non zero. Una parte non viene assorbita nell’intestino tenue: la frazione non assorbita esercita un effetto osmotico e viene fermentata nell’intestino crasso, motivo per cui quantità maggiori possono causare gas o effetti lassativi. Il JECFA ha assegnato una DGA “non specificata”, mentre nell’UE l’avvertenza “un consumo eccessivo può avere effetti lassativi” è obbligatoria solo quando l’alimento contiene più del 10% di polioli aggiunti; sotto questa soglia l’isomalto può essere presente senza tale avvertenza specifica.",
+  "can_1": "Rilevare E953, INS 953, isomalto, isomaltulosio idrogenato e isomaltitolo quando dichiarati esplicitamente.",
+  "can_2": "Spiegare la funzione di edulcorante di massa, il fattore energetico UE, il comportamento gastrointestinale, la DGA JECFA e la soglia UE del 10% per l’avvertenza lassativa.",
+  "cannot_1": "Determinare la quantità di isomalto o la percentuale di polioli aggiunti dalla sola lista degli ingredienti.",
+  "cannot_2": "Decidere dal solo nome dell’ingrediente se l’avvertenza lassativa è legalmente obbligatoria o prevedere la risposta digestiva individuale.",
   "sources": [
     {
-      "label": "EFSA — Dolcificanti",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Isomalt (INS 953), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1289"
     },
     {
-      "label": "FDA — Aspartame e altri dolcificanti negli alimenti",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Isomalt toxicological monograph (FAS 20)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v20je14.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Isomalt (INS 953)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=180"
     },
     {
-      "label": "Regolamento (CE) n. 1333/2008 sugli additivi alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Specifiche UE per gli additivi alimentari autorizzati — Regolamento (UE) n. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — specifica dell'additivo, INS 953",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=953"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III and Annex XIV",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Isomalto",
-  "description": "Una miscela di polioli prodotta mediante idrogenazione dell'isomaltulosio e utilizzata come dolcificante di massa e ingrediente texturizzante."
+  "description": "L’isomalto (INS 953 / E953) è un poliolo di massa che secondo le norme UE conta 2,4 kcal/g; l’avvertenza lassativa europea si applica oltre il 10% di polioli aggiunti."
 }

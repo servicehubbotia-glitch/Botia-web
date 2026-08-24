@@ -1,45 +1,37 @@
 {
   "name": "İzomalt",
   "e_code": "E953",
-  "aliases": "E953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
+  "aliases": "E953, INS 953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "İzomaltulozun hidrojenasyonuyla üretilen ve hacim artırıcı tatlandırıcı ile doku verici bileşen olarak kullanılan bir poliol karışımı.",
-  "why_botia": "BOTIA, E953'ün tatlılık ve hacim sağlarken ürün dokusunu da etkilemesi ve izin verilen kullanımlarının yerel gıda katkı maddesi kurallarına bağlı olması nedeniyle bunu işaretler.",
-  "can_1": "Etikette beyan edildiğinde E953, izomalt veya hidrojene izomaltulozu tanımlayın.",
-  "can_2": "E-numarası, tatlandırıcı ve doku bilgisi katmanlarını tetikle.",
-  "cannot_1": "İçerik listesinden tek başına mevcut miktarı belirleyin.",
-  "cannot_2": "Bu içeriğin tek başına bir bireyin sindirim tepkisini veya ürünün genel metabolik etkisini tahmin edin.",
+  "what_is": "İzomalt (INS 953 / E953), izomaltulozun hidrojenlenmesiyle üretilen bir poliol karışımıdır. Hacim sağlayan bir tatlandırıcıdır: yoğun tatlandırıcılardan farklı olarak gıdaya hem tatlılık hem de fiziksel hacim kazandırır.",
+  "why_botia": "İzomalt şekerin hem tatlılığını hem de hacmini yerine koyar, bu nedenle yoğun tatlandırıcılardan çok daha büyük miktarlarda kullanılabilir; AB beslenme etiketleme kurallarına göre izomalt gibi polioller 2,4 kcal/g olarak hesaplanır, sıfır değildir. Bir kısmı ince bağırsakta emilmez: emilmeyen bölüm ozmotik etki gösterir ve kalın bağırsakta fermente edilir; bu nedenle daha yüksek miktarlar gaz veya laksatif etkilere yol açabilir. JECFA “belirtilmemiş” ADI vermiştir; AB ise “aşırı tüketim laksatif etkilere yol açabilir” uyarısını yalnızca gıdada %10'dan fazla eklenmiş poliol bulunduğunda zorunlu tutar; bu eşik altında izomalt bu özel uyarı olmadan bulunabilir.",
+  "can_1": "E953, INS 953, izomalt, hidrojene izomaltuloz ve izomaltitolü açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Hacim sağlayan tatlandırıcı işlevini, AB enerji katsayısını, gastrointestinal davranışını, JECFA ADI değerini ve AB'nin %10 uyarı eşiğini açıklamak.",
+  "cannot_1": "Yalnızca içerik listesinden ne kadar izomalt veya yüzde kaç eklenmiş poliol bulunduğunu belirlemek.",
+  "cannot_2": "Sadece bileşen adına bakarak laksatif uyarının yasal olarak gerekli olup olmadığına karar vermek veya bireysel sindirim tepkisini öngörmek.",
   "sources": [
     {
-      "label": "EFSA — Tatlandırıcılar",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Isomalt (INS 953), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1289"
     },
     {
-      "label": "FDA — Gıdalardaki aspartam ve diğer tatlandırıcılar",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Isomalt toxicological monograph (FAS 20)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v20je14.htm"
     },
     {
-      "label": "Codex Alimentarius — Çevrimiçi GSFA",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Isomalt (INS 953)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=180"
     },
     {
-      "label": "Gıda katkı maddelerine ilişkin (EC) 1333/2008 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "İzin verilen gıda katkı maddelerine ilişkin EU spesifikasyonları — (EU) 231/2012 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Katkı maddesi spesifikasyonu, INS 953",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=953"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III and Annex XIV",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "İzomalt",
-  "description": "İzomaltulozun hidrojenasyonuyla üretilen ve hacim artırıcı tatlandırıcı ile doku verici bileşen olarak kullanılan bir poliol karışımı."
+  "description": "İzomalt (INS 953 / E953), AB kurallarına göre 2,4 kcal/g sayılan hacim sağlayan bir polioldür; AB laksatif uyarısı %10'dan fazla eklenmiş poliolde uygulanır."
 }

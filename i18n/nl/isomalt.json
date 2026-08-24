@@ -1,45 +1,37 @@
 {
   "name": "Isomalt",
   "e_code": "E953",
-  "aliases": "E953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
+  "aliases": "E953, INS 953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
     "sweetener",
-    "texture"
+    "texture",
+    "enumbers"
   ],
-  "what_is": "Een mengsel van polyolen geproduceerd door hydrogenering van isomaltulose en gebruikt als bulkzoetstof en textuurgevend ingrediënt.",
-  "why_botia": "BOTIA markeert het omdat E953 zoetheid en volume biedt terwijl het ook de textuur van het product beïnvloedt, en de toegestane toepassingen ervan hangen af van lokale regels voor levensmiddelenadditieven.",
-  "can_1": "Identificeer E953, isomalt of gehydrogeneerde isomaltulose wanneer dit op het etiket wordt vermeld.",
-  "can_2": "Activeer de informatielagen voor E-nummers, zoetstoffen en textuur.",
-  "cannot_1": "Bepaal de aanwezige hoeveelheid uitsluitend op basis van de ingrediëntenlijst.",
-  "cannot_2": "Voorspel de spijsverteringsreactie van een individu of het algehele metabole effect van het product op basis van alleen dit ingrediënt.",
+  "what_is": "Isomalt (INS 953 / E953) is een mengsel van polyolen dat wordt gemaakt door isomaltulose te hydrogeneren. Het is een bulkzoetstof: anders dan intensieve zoetstoffen levert het zowel zoetheid als fysiek volume aan voedsel.",
+  "why_botia": "Isomalt vervangt zowel de zoetheid als het volume van suiker en kan daarom in veel grotere hoeveelheden worden gebruikt dan intensieve zoetstoffen; volgens de EU-regels voor voedingswaardelabeling tellen polyolen zoals isomalt als 2,4 kcal/g, niet als nul. Een deel wordt niet opgenomen in de dunne darm: de niet-geabsorbeerde fractie heeft een osmotisch effect en wordt in de dikke darm gefermenteerd, waardoor grotere hoeveelheden gasvorming of laxerende effecten kunnen veroorzaken. JECFA kende een ADI “niet gespecificeerd” toe, terwijl de EU de waarschuwing “overmatig gebruik kan een laxerend effect hebben” alleen vereist bij voedingsmiddelen met meer dan 10% toegevoegde polyolen; onder die drempel kan isomalt aanwezig zijn zonder die specifieke waarschuwing.",
+  "can_1": "E953, INS 953, isomalt, gehydrogeneerde isomaltulose en isomaltitol detecteren wanneer deze expliciet worden vermeld.",
+  "can_2": "De functie als bulkzoetstof, de EU-energiefactor, het gastro-intestinale gedrag, de JECFA-ADI en de EU-drempel van 10% voor de laxerende waarschuwing uitleggen.",
+  "cannot_1": "Uit alleen de ingrediëntenlijst bepalen hoeveel isomalt of welk percentage toegevoegde polyolen aanwezig is.",
+  "cannot_2": "Alleen op basis van de ingrediëntnaam bepalen of een laxerende waarschuwing wettelijk vereist is of een individuele spijsverteringsreactie voorspellen.",
   "sources": [
     {
-      "label": "EFSA — Zoetstoffen",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Isomalt (INS 953), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1289"
     },
     {
-      "label": "FDA — Aspartaam en andere zoetstoffen in voedingsmiddelen",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Isomalt toxicological monograph (FAS 20)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v20je14.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Isomalt (INS 953)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=180"
     },
     {
-      "label": "Verordening (EC) nr. 1333/2008 inzake levensmiddelenadditieven",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "EU-specificaties voor toegelaten levensmiddelenadditieven — Verordening (EU) nr. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Additievenspecificatie, INS 953",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=953"
+      "label": "European Union — Regulation (EU) No 1169/2011, Annex III and Annex XIV",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Isomalt",
-  "description": "Een mengsel van polyolen geproduceerd door hydrogenering van isomaltulose en gebruikt als bulkzoetstof en textuurgevend ingrediënt."
+  "description": "Isomalt (INS 953 / E953) is een bulkpolyol die volgens EU-regels 2,4 kcal/g levert; de EU-waarschuwing voor laxerende effecten geldt boven 10% toegevoegde polyolen."
 }
