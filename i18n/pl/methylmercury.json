@@ -1,27 +1,35 @@
 {
   "name": "Metylortęć",
   "e_code": null,
-  "aliases": "metylortęć, metylortęć, rtęć organiczna, rtęć ogółem, rtęć nieorganiczna, rtęć, metilmercurio",
+  "aliases": "methylmercury, methyl mercury, MeHg, metylortęć, rtęć organiczna, rtęć ogółem, rtęć nieorganiczna, rtęć, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Rtęć występuje w różnych postaciach chemicznych. Metylortęć jest postacią organiczną, która ulega bioakumulacji w wodnych łańcuchach pokarmowych; nieorganiczne związki rtęci stanowią odrębną klasę. „Rtęć ogółem” to parametr analityczny obejmujący rtęć we wszystkich postaciach i nie jest synonimem metylortęci.",
-  "why_botia": "BOTIA pokazuje kontekst metylortęci, gdy wykryty składnik rybny należy do odpowiedniej kategorii narażenia. WHO wskazuje, że ludzie są narażeni na metylortęć głównie poprzez spożywanie ryb i owoców morza, i rozróżnia organiczne, nieorganiczne i pierwiastkowe formy rtęci. Dodanie do wyjaśnienia pojęć „rtęć całkowita” i „rtęć nieorganiczna” zapobiega błędnemu odczytywaniu wyników analitycznych tak, jakby każdy pomiar rtęci oznaczał metylortęć.",
-  "can_1": "Zidentyfikuj składniki pochodzenia rybnego, które uruchamiają warstwę kontekstową „rtęć” w systemie BOTIA, oraz wyjaśnij różnicę między terminami „metylotętyn”, „rtęć nieorganiczna” i „rtęć ogółem”.",
-  "can_2": "Należy przedstawić informacje dotyczące ciąży i rozwoju dziecka pochodzące z oficjalnych źródeł, nie sugerując jednocześnie, że lista składników zawiera dane dotyczące stężenia rtęci.",
-  "cannot_1": "Określić zawartość rtęci ogółem, metylortęci lub rtęci nieorganicznej w zbadanej żywności.",
-  "cannot_2": "Przeliczenie laboratoryjnego wyniku dotyczącego całkowitej zawartości rtęci na dokładne stężenie metylortęci bez analitycznego określenia postaci chemicznej rtęci ani bez zweryfikowanej podstawy przeliczeniowej.",
+  "what_is": "Metylortęć jest formą rtęci, która gromadzi się w wodnych łańcuchach pokarmowych. Ryby pobierają ją wraz z pokarmem, dlatego duże, długo żyjące drapieżniki mogą zawierać jej znacznie więcej niż małe gatunki.",
+  "why_botia": "Metylortęć wiąże się z białkami w organizmie i dociera do układu nerwowego, gdzie może uszkadzać koordynację, wzrok i czucie; rozwijający się mózg jest najbardziej wrażliwy. Przechodzi przez łożysko: krew pępowinowa może zawierać wyższe stężenia niż krew matki, a metylortęć przechodzi również do mleka matki. W łańcuchu pokarmowym najwięcej gromadzą jej duże, długo żyjące drapieżniki — miecznik, rekin i duże tuńczyki — dlatego praktycznym przesłaniem nie jest rezygnacja z ryb, lecz wybieranie gatunków o niższej zawartości rtęci. JECFA ustaliła tymczasowe tolerowane tygodniowe pobranie na poziomie 1,6 µg/kg masy ciała w celu ochrony rozwijającego się układu nerwowego.",
+  "can_1": "Wyjaśniać, dlaczego duże, długo żyjące ryby drapieżne zwykle zawierają więcej metylortęci niż małe gatunki.",
+  "can_2": "Wyjaśniać, dlaczego warstwa Woman jest istotna: metylortęć przechodzi przez łożysko, krew pępowinowa może zawierać więcej niż krew matki, a ekspozycja może trwać przez mleko matki.",
+  "cannot_1": "Na podstawie listy składników zmierzyć stężenia metylortęci w konkretnym gatunku ryby lub produkcie.",
+  "cannot_2": "Obliczyć tygodniowej ekspozycji danej osoby na metylortęć ani określić z etykiety, ile dotarło do płodu lub niemowlęcia.",
   "sources": [
     {
-      "label": "WHO — Rtęć a zdrowie",
+      "label": "JECFA — Food Additives and Contaminants Database: methylmercury PTWI",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
+    },
+    {
+      "label": "WHO — Mercury and health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
     },
     {
-      "label": "EFSA — Metale jako zanieczyszczenia w żywności",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "EFSA — Mercury and methylmercury in food, 2012",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/2985"
+    },
+    {
+      "label": "Human biomonitoring study — Maternal and umbilical-cord mercury concentrations",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16081062/"
     }
   ],
   "title": "Metylortęć",
-  "description": "Metylo-rtęć w kontekście narażenia wynikającego ze spożycia ryb, przy wyraźnym odróżnieniu od rtęci ogółem i rtęci nieorganicznej."
+  "description": "Metylortęć dociera do układu nerwowego i przechodzi przez łożysko; duże, długo żyjące drapieżniki gromadzą najwyższe stężenia."
 }

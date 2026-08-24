@@ -1,27 +1,35 @@
 {
   "name": "Methylmercury",
   "e_code": null,
-  "aliases": "methylmercury, methyl mercury, organic mercury, total mercury, inorganic mercury, mercury, metilmercurio",
+  "aliases": "methylmercury, methyl mercury, MeHg, mercury, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Mercury occurs in different chemical forms. Methylmercury is an organic form that bioaccumulates in aquatic food chains; inorganic mercury compounds are a different class. 'Total mercury' is an analytical measurement covering mercury across forms and is not a synonym for methylmercury.",
-  "why_botia": "BOTIA shows methylmercury context when a detected fish ingredient belongs to a relevant exposure category. WHO notes that people are mainly exposed to methylmercury through fish and shellfish and distinguishes organic, inorganic and elemental mercury forms. Adding 'total mercury' and 'inorganic mercury' to the explanation prevents analytical results from being misread as though every mercury measurement were methylmercury.",
-  "can_1": "Detect fish ingredients that trigger BOTIA's mercury-context layer and explain the distinction between methylmercury, inorganic mercury and total mercury terminology.",
-  "can_2": "Provide pregnancy and child-development context from official sources without pretending the ingredient list reports a mercury concentration.",
-  "cannot_1": "Quantify total mercury, methylmercury or inorganic mercury in the scanned food.",
-  "cannot_2": "Convert a total-mercury laboratory result into an exact methylmercury concentration without analytical speciation or a validated conversion basis.",
+  "what_is": "Methylmercury is a form of mercury that builds up through aquatic food chains. Fish absorb it from what they eat, so large, long-lived predators can contain much more than smaller species.",
+  "why_botia": "Methylmercury binds to proteins in the body and reaches the nervous system, where it can damage coordination, vision and sensation; the developing brain is the most vulnerable. It crosses the placenta: cord blood can contain higher concentrations than maternal blood, and methylmercury also passes into breast milk. In the food chain it builds up most in large, long-lived predators — swordfish, shark and large tuna — so the practical message is not to stop eating fish, but to choose lower-mercury species. JECFA set a provisional tolerable weekly intake of 1.6 µg/kg body weight for methylmercury to protect the developing nervous system.",
+  "can_1": "Explain why large, long-lived predatory fish tend to contain more methylmercury than smaller species.",
+  "can_2": "Explain why the Woman layer matters: methylmercury crosses the placenta, cord blood can contain more than maternal blood, and exposure can continue through breast milk.",
+  "cannot_1": "Measure the methylmercury concentration of a particular fish or food from its ingredient list.",
+  "cannot_2": "Calculate a person's weekly methylmercury exposure or determine how much reached a fetus or infant from one label.",
   "sources": [
+    {
+      "label": "JECFA — Food Additives and Contaminants Database: methylmercury PTWI",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
+    },
     {
       "label": "WHO — Mercury and health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
     },
     {
-      "label": "EFSA — Metals as contaminants in food",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "EFSA — Mercury and methylmercury in food, 2012",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/2985"
+    },
+    {
+      "label": "Human biomonitoring study — Maternal and umbilical-cord mercury concentrations",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16081062/"
     }
   ],
   "title": "Methylmercury",
-  "description": "Methylmercury in fish exposure context, with clear distinction from total and inorganic mercury."
+  "description": "Methylmercury reaches the nervous system and crosses the placenta; large, long-lived predatory fish accumulate the highest concentrations."
 }

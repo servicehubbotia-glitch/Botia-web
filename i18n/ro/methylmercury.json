@@ -1,27 +1,35 @@
 {
   "name": "Metilmercur",
   "e_code": null,
-  "aliases": "metilmercur, metilmercur, mercur organic, mercur total, mercur anorganic, mercur, metilmercurio",
+  "aliases": "methylmercury, methyl mercury, MeHg, metilmercur, mercur organic, mercur total, mercur anorganic, mercur, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Mercurul se găsește sub diferite forme chimice. Metilmercurul este o formă organică care se bioacumulează în lanțurile trofice acvatice; compușii anorganici ai mercurului constituie o clasă distinctă. „Mercurul total” este o măsurătoare analitică care cuprinde mercurul sub toate formele sale și nu este un sinonim pentru metilmercur.",
-  "why_botia": "BOTIA prezintă contextul referitor la metilmercur atunci când un ingredient din pește detectat aparține unei categorii de expunere relevante. WHO precizează că oamenii sunt expuși în principal la metilmercur prin consumul de pește și crustacee și face distincția între formele organice, anorganice și elementare ale mercurului. Adăugarea termenilor „mercur total” și „mercur anorganic” la explicație împiedică interpretarea eronată a rezultatelor analitice, ca și cum fiecare măsurătoare a mercurului ar fi de fapt metilmercur.",
-  "can_1": "Identificați ingredientele de origine piscicolă care declanșează stratul contextual „mercur” al BOTIA și explicați diferența dintre termenii „metilmercur”, „mercur anorganic” și „mercur total”.",
-  "can_2": "Prezentați informații privind sarcina și dezvoltarea copilului, provenite din surse oficiale, fără a sugera că lista de ingrediente indică o concentrație de mercur.",
-  "cannot_1": "Determinați cantitatea totală de mercur, metilmercur sau mercur anorganic din produsul alimentar scanat.",
-  "cannot_2": "Conversia unui rezultat de laborator privind conținutul total de mercur într-o concentrație exactă de metilmercur, fără specierea analitică a mercurului și fără o bază de conversie validată.",
+  "what_is": "Metilmercurul este o formă de mercur care se acumulează de-a lungul lanțurilor trofice acvatice. Peștii îl absorb din hrană, astfel încât prădătorii mari și longevivi pot conține mult mai mult decât speciile mici.",
+  "why_botia": "Metilmercurul se leagă de proteinele organismului și ajunge la sistemul nervos, unde poate afecta coordonarea, vederea și sensibilitatea; creierul în dezvoltare este cel mai vulnerabil. Traversează placenta: sângele din cordonul ombilical poate conține concentrații mai mari decât sângele matern, iar metilmercurul trece și în laptele matern. În lanțul trofic se acumulează cel mai mult la prădătorii mari și longevivi — pește-spadă, rechin și ton mare — astfel încât mesajul practic nu este să renunți la pește, ci să alegi specii cu mai puțin mercur. JECFA a stabilit un aport săptămânal tolerabil provizoriu de 1,6 µg/kg greutate corporală pentru protejarea sistemului nervos în dezvoltare.",
+  "can_1": "Explica de ce peștii prădători mari și longevivi tind să conțină mai mult metilmercur decât speciile mici.",
+  "can_2": "Explica de ce stratul Woman este relevant: metilmercurul traversează placenta, sângele din cordon poate conține mai mult decât sângele matern, iar expunerea poate continua prin laptele matern.",
+  "cannot_1": "Măsura concentrația de metilmercur dintr-un anumit pește sau aliment folosind lista ingredientelor.",
+  "cannot_2": "Calcula expunerea săptămânală a unei persoane la metilmercur sau determina dintr-o etichetă cât a ajuns la un făt sau sugar.",
   "sources": [
     {
-      "label": "WHO — Mercurul și sănătatea",
+      "label": "JECFA — Food Additives and Contaminants Database: methylmercury PTWI",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
+    },
+    {
+      "label": "WHO — Mercury and health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
     },
     {
-      "label": "EFSA — Metalele ca substanțe contaminante în alimente",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "EFSA — Mercury and methylmercury in food, 2012",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/2985"
+    },
+    {
+      "label": "Human biomonitoring study — Maternal and umbilical-cord mercury concentrations",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16081062/"
     }
   ],
   "title": "Metilmercur",
-  "description": "Metilmercurul în contextul expunerii prin consumul de pește, cu o distincție clară față de mercurul total și cel anorganic."
+  "description": "Metilmercurul ajunge la sistemul nervos și traversează placenta; prădătorii mari și longevivi acumulează cele mai mari concentrații."
 }

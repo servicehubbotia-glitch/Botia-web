@@ -1,27 +1,35 @@
 {
   "name": "Méthylmercure",
   "e_code": null,
-  "aliases": "méthylmercure, méthylmercure, mercure organique, mercure total, mercure inorganique, mercure, metilmercurio",
+  "aliases": "methylmercury, methyl mercury, MeHg, méthylmercure, mercure organique, mercure total, mercure inorganique, mercure, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Le mercure se présente sous différentes formes chimiques. Le méthylmercure est une forme organique qui s'accumule dans les chaînes alimentaires aquatiques ; les composés inorganiques du mercure constituent une catégorie distincte. Le « mercure total » est une mesure analytique qui englobe toutes les formes de mercure et n'est pas synonyme de méthylmercure.",
-  "why_botia": "BOTIA présente le contexte du méthylmercure lorsqu’un ingrédient à base de poisson détecté appartient à une catégorie d’exposition pertinente. WHO indique que l’exposition au méthylmercure provient principalement de la consommation de poissons et de fruits de mer et distingue les formes organiques, inorganiques et élémentaires du mercure. L’ajout des termes « mercure total » et « mercure inorganique » à l’explication évite que les résultats analytiques soient interprétés comme si toute mesure de mercure correspondait au méthylmercure.",
-  "can_1": "Identifier les ingrédients d'origine halieutique qui déclenchent la couche contextuelle « mercure » de BOTIA et expliquer la distinction entre les termes « méthylmercure », « mercure inorganique » et « mercure total ».",
-  "can_2": "Fournir des informations sur la grossesse et le développement de l'enfant issues de sources officielles, sans laisser entendre que la liste des ingrédients indique une concentration en mercure.",
-  "cannot_1": "Quantifier la teneur totale en mercure, en méthylmercure ou en mercure inorganique dans les aliments analysés.",
-  "cannot_2": "Convertir un résultat de laboratoire indiquant la teneur totale en mercure en une concentration exacte en méthylmercure, sans spéciation analytique ni base de conversion validée.",
+  "what_is": "Le méthylmercure est une forme de mercure qui s'accumule le long des chaînes alimentaires aquatiques. Les poissons l'absorbent par leur alimentation, de sorte que les grands prédateurs à longue durée de vie peuvent en contenir beaucoup plus que les petites espèces.",
+  "why_botia": "Le méthylmercure se lie aux protéines de l'organisme et atteint le système nerveux, où il peut altérer la coordination, la vision et la sensibilité ; le cerveau en développement est le plus vulnérable. Il traverse le placenta : le sang du cordon peut contenir des concentrations supérieures à celles du sang maternel, et le méthylmercure passe également dans le lait maternel. Dans la chaîne alimentaire, il s'accumule surtout chez les grands prédateurs à longue durée de vie — espadon, requin et grands thons — le message pratique n'est donc pas d'arrêter de manger du poisson, mais de choisir des espèces moins riches en mercure. Le JECFA a fixé une dose hebdomadaire tolérable provisoire de 1,6 µg/kg de poids corporel afin de protéger le système nerveux en développement.",
+  "can_1": "Expliquer pourquoi les grands poissons prédateurs à longue durée de vie contiennent généralement plus de méthylmercure que les petites espèces.",
+  "can_2": "Expliquer pourquoi la couche Woman est pertinente : le méthylmercure traverse le placenta, le sang du cordon peut en contenir davantage que le sang maternel et l'exposition peut se poursuivre par le lait maternel.",
+  "cannot_1": "Mesurer la concentration de méthylmercure d'un poisson ou d'un aliment précis à partir de sa liste d'ingrédients.",
+  "cannot_2": "Calculer l'exposition hebdomadaire d'une personne au méthylmercure ni déterminer à partir d'une étiquette la quantité ayant atteint un fœtus ou un nourrisson.",
   "sources": [
     {
-      "label": "WHO — Le mercure et la santé",
+      "label": "JECFA — Food Additives and Contaminants Database: methylmercury PTWI",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
+    },
+    {
+      "label": "WHO — Mercury and health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
     },
     {
-      "label": "EFSA — Les métaux en tant que contaminants alimentaires",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "EFSA — Mercury and methylmercury in food, 2012",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/2985"
+    },
+    {
+      "label": "Human biomonitoring study — Maternal and umbilical-cord mercury concentrations",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16081062/"
     }
   ],
   "title": "Méthylmercure",
-  "description": "Le méthylmercure dans le contexte de l'exposition par la consommation de poisson, en le distinguant clairement du mercure total et du mercure inorganique."
+  "description": "Le méthylmercure atteint le système nerveux et traverse le placenta ; les grands poissons prédateurs à longue durée de vie accumulent les concentrations les plus élevées."
 }

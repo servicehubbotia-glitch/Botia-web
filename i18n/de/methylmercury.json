@@ -1,27 +1,35 @@
 {
   "name": "Methylquecksilber",
   "e_code": null,
-  "aliases": "Methylquecksilber, Methylquecksilber, organisches Quecksilber, Gesamtquecksilber, anorganisches Quecksilber, Quecksilber, Metilmercurio",
+  "aliases": "methylmercury, methyl mercury, MeHg, Methylquecksilber, organisches Quecksilber, Gesamtquecksilber, anorganisches Quecksilber, Quecksilber, Metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Quecksilber kommt in verschiedenen chemischen Formen vor. Methylquecksilber ist eine organische Form, die sich in aquatischen Nahrungsketten anreichert; anorganische Quecksilberverbindungen bilden eine eigene Klasse. „Gesamtquecksilber“ ist ein analytischer Messwert, der Quecksilber in allen Formen erfasst und kein Synonym für Methylquecksilber ist.",
-  "why_botia": "BOTIA gibt den Methylquecksilber-Kontext an, wenn eine nachgewiesene Fischzutat zu einer relevanten Expositionskategorie gehört. WHO weist darauf hin, dass Menschen hauptsächlich über Fisch und Schalentiere Methylquecksilber ausgesetzt sind, und unterscheidet zwischen organischen, anorganischen und elementaren Quecksilberformen. Durch die Ergänzung der Erläuterung um die Begriffe „Gesamtquecksilber“ und „anorganisches Quecksilber“ wird verhindert, dass Analyseergebnisse fälschlicherweise so interpretiert werden, als handele es sich bei jeder Quecksilbermessung um Methylquecksilber.",
-  "can_1": "Ermitteln Sie Fischzutaten, die die Quecksilber-Kontext-Ebene von BOTIA auslösen, und erläutern Sie den Unterschied zwischen den Begriffen Methylquecksilber, anorganisches Quecksilber und Gesamtquecksilber.",
-  "can_2": "Stellen Sie Hintergrundinformationen zu Schwangerschaft und kindlicher Entwicklung aus offiziellen Quellen bereit, ohne den Eindruck zu erwecken, dass die Zutatenliste Angaben zur Quecksilberkonzentration enthält.",
-  "cannot_1": "Bestimmen Sie den Gesamtgehalt an Quecksilber, Methylquecksilber oder anorganischem Quecksilber in dem gescannten Lebensmittel.",
-  "cannot_2": "Umrechnung eines Laborergebnisses für Gesamtquecksilber in eine exakte Methylquecksilberkonzentration ohne analytische Spezierung oder validierte Umrechnungsgrundlage.",
+  "what_is": "Methylquecksilber ist eine Quecksilberform, die sich entlang aquatischer Nahrungsketten anreichert. Fische nehmen es über ihre Nahrung auf, sodass große, langlebige Raubfische deutlich höhere Mengen enthalten können als kleine Arten.",
+  "why_botia": "Methylquecksilber bindet an Proteine im Körper und erreicht das Nervensystem, wo es Koordination, Sehvermögen und Empfindung schädigen kann; das sich entwickelnde Gehirn ist am empfindlichsten. Es passiert die Plazenta: Nabelschnurblut kann höhere Konzentrationen enthalten als mütterliches Blut, und Methylquecksilber geht auch in die Muttermilch über. In der Nahrungskette reichert es sich besonders in großen, langlebigen Raubfischen an — Schwertfisch, Hai und große Thunfische — daher lautet die praktische Botschaft nicht, auf Fisch zu verzichten, sondern Arten mit weniger Quecksilber zu wählen. JECFA legte eine vorläufig tolerierbare wöchentliche Aufnahme von 1,6 µg/kg Körpergewicht fest, um das sich entwickelnde Nervensystem zu schützen.",
+  "can_1": "Erklären, warum große, langlebige Raubfische meist mehr Methylquecksilber enthalten als kleinere Arten.",
+  "can_2": "Erklären, warum die Woman-Ebene relevant ist: Methylquecksilber passiert die Plazenta, Nabelschnurblut kann höhere Werte als mütterliches Blut enthalten und die Exposition kann über Muttermilch weitergehen.",
+  "cannot_1": "Aus der Zutatenliste die Methylquecksilberkonzentration eines bestimmten Fisches oder Lebensmittels bestimmen.",
+  "cannot_2": "Die wöchentliche Methylquecksilberexposition einer Person berechnen oder aus einem Etikett bestimmen, wie viel einen Fötus oder Säugling erreicht hat.",
   "sources": [
     {
-      "label": "WHO – Quecksilber und Gesundheit",
+      "label": "JECFA — Food Additives and Contaminants Database: methylmercury PTWI",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
+    },
+    {
+      "label": "WHO — Mercury and health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
     },
     {
-      "label": "EFSA – Metalle als Schadstoffe in Lebensmitteln",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "EFSA — Mercury and methylmercury in food, 2012",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/2985"
+    },
+    {
+      "label": "Human biomonitoring study — Maternal and umbilical-cord mercury concentrations",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16081062/"
     }
   ],
   "title": "Methylquecksilber",
-  "description": "Methylquecksilber im Zusammenhang mit der Quecksilberbelastung durch Fisch, wobei klar zwischen Gesamtquecksilber und anorganischem Quecksilber unterschieden wird."
+  "description": "Methylquecksilber erreicht das Nervensystem und passiert die Plazenta; große, langlebige Raubfische reichern die höchsten Konzentrationen an."
 }

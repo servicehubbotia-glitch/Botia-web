@@ -1,27 +1,35 @@
 {
   "name": "Metilmercurio",
   "e_code": null,
-  "aliases": "metilmercurio, metilmercurio, mercurio orgánico, mercurio total, mercurio inorgánico, mercurio, metilmercurio",
+  "aliases": "methylmercury, methyl mercury, MeHg, metilmercurio, mercurio orgánico, mercurio total, mercurio inorgánico, mercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "El mercurio se presenta en diferentes formas químicas. El metilmercurio es una forma orgánica que se bioacumula en las cadenas tróficas acuáticas; los compuestos inorgánicos de mercurio constituyen una clase diferente. El «mercurio total» es una medida analítica que abarca el mercurio en todas sus formas y no es sinónimo de metilmercurio.",
-  "why_botia": "BOTIA muestra el contexto del metilmercurio cuando un ingrediente de pescado detectado pertenece a una categoría de exposición relevante. WHO señala que las personas se exponen principalmente al metilmercurio a través del pescado y el marisco, y distingue entre las formas de mercurio orgánico, inorgánico y elemental. Añadir «mercurio total» y «mercurio inorgánico» a la explicación evita que los resultados analíticos se malinterpreten, como si todas las mediciones de mercurio correspondieran a metilmercurio.",
-  "can_1": "Detectar los ingredientes de origen pesquero que activan la capa de contexto de mercurio de BOTIA y explicar la diferencia entre los términos «metilmercurio», «mercurio inorgánico» y «mercurio total».",
-  "can_2": "Proporcione información sobre el embarazo y el desarrollo infantil procedente de fuentes oficiales, sin dar a entender que la lista de ingredientes indica una concentración de mercurio.",
-  "cannot_1": "Cuantifica el mercurio total, el metilmercurio o el mercurio inorgánico presentes en el alimento analizado.",
-  "cannot_2": "Convertir un resultado de laboratorio correspondiente al mercurio total en una concentración exacta de metilmercurio sin especiación analítica ni una base de conversión validada.",
+  "what_is": "El metilmercurio es una forma de mercurio que se va concentrando a lo largo de la cadena alimentaria acuática. Los peces lo absorben de lo que comen, por lo que los depredadores grandes y longevos pueden contener mucho más que las especies pequeñas.",
+  "why_botia": "El metilmercurio se une a las proteínas del cuerpo y llega al sistema nervioso, donde puede dañar la coordinación, la visión y la sensibilidad; el cerebro en desarrollo es el más vulnerable. Atraviesa la placenta: la sangre del cordón puede contener concentraciones mayores que la sangre de la madre, y el metilmercurio también pasa a la leche materna. En la cadena alimentaria se concentra sobre todo en depredadores grandes y longevos — pez espada, tiburón y atunes grandes — así que el mensaje práctico no es dejar de comer pescado, sino elegir especies con menos mercurio. JECFA fijó una ingesta semanal tolerable provisional de 1,6 µg/kg de peso corporal para el metilmercurio con el objetivo de proteger el sistema nervioso en desarrollo.",
+  "can_1": "Explicar por qué los peces depredadores grandes y longevos suelen contener más metilmercurio que las especies pequeñas.",
+  "can_2": "Explicar por qué importa la capa Woman: el metilmercurio atraviesa la placenta, la sangre del cordón puede contener más que la materna y la exposición puede continuar a través de la leche.",
+  "cannot_1": "Medir la concentración de metilmercurio de un pescado o alimento concreto a partir de su lista de ingredientes.",
+  "cannot_2": "Calcular la exposición semanal de una persona al metilmercurio ni determinar por una etiqueta cuánto llegó a un feto o a un bebé.",
   "sources": [
     {
-      "label": "WHO — El mercurio y la salud",
+      "label": "JECFA — Food Additives and Contaminants Database: methylmercury PTWI",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
+    },
+    {
+      "label": "WHO — Mercury and health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
     },
     {
-      "label": "EFSA — Los metales como contaminantes en los alimentos",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "EFSA — Mercury and methylmercury in food, 2012",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/2985"
+    },
+    {
+      "label": "Human biomonitoring study — Maternal and umbilical-cord mercury concentrations",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16081062/"
     }
   ],
   "title": "Metilmercurio",
-  "description": "El metilmercurio en el contexto de la exposición a través del pescado, diferenciándolo claramente del mercurio total y del mercurio inorgánico."
+  "description": "El metilmercurio llega al sistema nervioso y atraviesa la placenta; los peces depredadores grandes y longevos acumulan las mayores concentraciones."
 }

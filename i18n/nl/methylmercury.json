@@ -1,27 +1,35 @@
 {
   "name": "Methylkwik",
   "e_code": null,
-  "aliases": "methylkwik, methylkwik, organisch kwik, totaal kwik, anorganisch kwik, kwik, metilmercurio",
+  "aliases": "methylmercury, methyl mercury, MeHg, methylkwik, organisch kwik, totaal kwik, anorganisch kwik, kwik, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Kwik komt in verschillende chemische vormen voor. Methylkwik is een organische vorm die zich in aquatische voedselketens ophoopt; anorganische kwikverbindingen vormen een aparte klasse. ‘Totaalkwik’ is een analytische maatstaf die alle vormen van kwik omvat en is geen synoniem voor methylkwik.",
-  "why_botia": "BOTIA geeft informatie over methylkwik wanneer een gedetecteerd visingrediënt tot een relevante blootstellingscategorie behoort. WHO vermeldt dat mensen voornamelijk via vis en schaaldieren aan methylkwik worden blootgesteld en maakt onderscheid tussen organische, anorganische en elementaire vormen van kwik. Door ‘totaal kwik’ en ‘anorganisch kwik’ aan de toelichting toe te voegen, wordt voorkomen dat analyseresultaten verkeerd worden geïnterpreteerd alsof elke kwikmeting betrekking heeft op methylkwik.",
-  "can_1": "Breng visingrediënten in kaart die de kwikcontextlaag van BOTIA activeren en leg het verschil uit tussen de termen methylkwik, anorganisch kwik en totaal kwik.",
-  "can_2": "Geef achtergrondinformatie over zwangerschap en de ontwikkeling van kinderen uit officiële bronnen, zonder te suggereren dat de ingrediëntenlijst een kwikconcentratie aangeeft.",
-  "cannot_1": "Bepaal de totale hoeveelheid kwik, methylkwik of anorganisch kwik in het gescande voedingsmiddel.",
-  "cannot_2": "Een laboratoriumuitslag voor het totale kwikgehalte omzetten in een exacte methylkwikconcentratie zonder analytische speciatie of een gevalideerde omrekeningsbasis.",
+  "what_is": "Methylkwik is een vorm van kwik die zich ophoopt in aquatische voedselketens. Vissen nemen het op via wat ze eten, waardoor grote, langlevende roofvissen veel meer kunnen bevatten dan kleinere soorten.",
+  "why_botia": "Methylkwik bindt zich aan eiwitten in het lichaam en bereikt het zenuwstelsel, waar het coördinatie, zicht en gevoel kan beschadigen; het zich ontwikkelende brein is het meest kwetsbaar. Het passeert de placenta: navelstrengbloed kan hogere concentraties bevatten dan het bloed van de moeder, en methylkwik gaat ook over in moedermelk. In de voedselketen hoopt het zich vooral op in grote, langlevende roofvissen — zwaardvis, haai en grote tonijn — dus de praktische boodschap is niet om geen vis meer te eten, maar soorten met minder kwik te kiezen. JECFA stelde een voorlopig aanvaardbare wekelijkse inname van 1,6 µg/kg lichaamsgewicht vast om het zich ontwikkelende zenuwstelsel te beschermen.",
+  "can_1": "Uitleggen waarom grote, langlevende roofvissen meestal meer methylkwik bevatten dan kleinere soorten.",
+  "can_2": "Uitleggen waarom de Woman-laag relevant is: methylkwik passeert de placenta, navelstrengbloed kan hogere waarden bevatten dan moederlijk bloed en blootstelling kan doorgaan via moedermelk.",
+  "cannot_1": "Uit de ingrediëntenlijst de methylkwikconcentratie van een bepaalde vis of een bepaald voedingsmiddel meten.",
+  "cannot_2": "Iemands wekelijkse blootstelling aan methylkwik berekenen of uit één etiket bepalen hoeveel een foetus of baby heeft bereikt.",
   "sources": [
     {
-      "label": "WHO — Kwik en gezondheid",
+      "label": "JECFA — Food Additives and Contaminants Database: methylmercury PTWI",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
+    },
+    {
+      "label": "WHO — Mercury and health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
     },
     {
-      "label": "EFSA — Metalen als verontreinigingen in levensmiddelen",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "EFSA — Mercury and methylmercury in food, 2012",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/2985"
+    },
+    {
+      "label": "Human biomonitoring study — Maternal and umbilical-cord mercury concentrations",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16081062/"
     }
   ],
   "title": "Methylkwik",
-  "description": "Methylkwik in de context van blootstelling via vis, waarbij een duidelijk onderscheid wordt gemaakt tussen totaal kwik en anorganisch kwik."
+  "description": "Methylkwik bereikt het zenuwstelsel en passeert de placenta; grote, langlevende roofvissen stapelen de hoogste concentraties op."
 }

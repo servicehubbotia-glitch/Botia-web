@@ -1,27 +1,35 @@
 {
   "name": "Metilcıva",
   "e_code": null,
-  "aliases": "metilciva, metil civa, organik civa, toplam civa, inorganik civa, civa, metilmercurio",
+  "aliases": "methylmercury, methyl mercury, MeHg, metilciva, metil civa, organik civa, toplam civa, inorganik civa, civa, metilmercurio",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Cıva, farklı kimyasal formlarda bulunur. Metilcıva, sucul besin zincirlerinde biyolojik olarak biriken organik bir formdur; inorganik cıva bileşikleri ise farklı bir sınıftır. “Toplam cıva”, tüm formlardaki cıvayı kapsayan analitik bir ölçümdür ve metilcıva ile eşanlamlı değildir.",
-  "why_botia": "BOTIA, tespit edilen bir balık bileşeninin ilgili maruz kalma kategorisine ait olması durumunda metilciva bağlamını gösterir. WHO, insanların metilcivaya esas olarak balık ve kabuklu deniz ürünleri yoluyla maruz kaldığını belirtir ve organik, inorganik ve elementel civa formlarını birbirinden ayırır. Açıklamaya “toplam cıva” ve “inorganik cıva” ifadelerinin eklenmesi, her cıva ölçümünün metilcıva olduğu şeklinde analitik sonuçların yanlış yorumlanmasını önler.",
-  "can_1": "BOTIA’nin cıva bağlam katmanını tetikleyen balık kaynaklı bileşenleri tespit edin ve metilcıva, inorganik cıva ile toplam cıva terimleri arasındaki farkı açıklayın.",
-  "can_2": "İçerik listesinin cıva konsantrasyonunu gösterdiği izlenimini yaratmadan, resmi kaynaklardan alınan hamilelik ve çocuk gelişimi bilgilerini sunun.",
-  "cannot_1": "Taranan gıda maddesindeki toplam cıva, metilcıva veya inorganik cıva miktarını belirleyin.",
-  "cannot_2": "Toplam cıva laboratuvar sonucunu, analitik tür ayrıştırması veya doğrulanmış bir dönüştürme temeli olmaksızın kesin bir metilcıva konsantrasyonuna dönüştürmek.",
+  "what_is": "Metilcıva, sucul besin zinciri boyunca biriken bir cıva formudur. Balıklar bunu yedikleri besinlerden alır; bu nedenle büyük ve uzun yaşayan yırtıcılar küçük türlerden çok daha fazla içerebilir.",
+  "why_botia": "Metilcıva vücuttaki proteinlere bağlanır ve sinir sistemine ulaşır; burada koordinasyon, görme ve duyuyu etkileyebilir ve gelişmekte olan beyin en hassas olanıdır. Plasentayı geçer: kordon kanındaki konsantrasyonlar anne kanından daha yüksek olabilir ve metilcıva anne sütüne de geçer. Besin zincirinde en fazla büyük ve uzun yaşayan yırtıcılarda — kılıç balığı, köpekbalığı ve büyük ton balıklarında — birikir; bu nedenle pratik mesaj balığı tamamen bırakmak değil, daha düşük cıvalı türleri seçmektir. JECFA gelişmekte olan sinir sistemini korumak için haftalık geçici tolere edilebilir alımı 1,6 µg/kg vücut ağırlığı olarak belirledi.",
+  "can_1": "Büyük ve uzun yaşayan yırtıcı balıkların neden küçük türlerden daha fazla metilcıva içerme eğiliminde olduğunu açıklamak.",
+  "can_2": "Woman katmanının neden önemli olduğunu açıklamak: metilcıva plasentayı geçer, kordon kanı anne kanından daha yüksek düzeyler içerebilir ve maruziyet anne sütü yoluyla devam edebilir.",
+  "cannot_1": "İçerik listesinden belirli bir balık veya gıdadaki metilcıva konsantrasyonunu ölçmek.",
+  "cannot_2": "Bir kişinin haftalık metilcıva maruziyetini hesaplamak veya tek bir etiketten fetüse ya da bebeğe ne kadar ulaştığını belirlemek.",
   "sources": [
     {
-      "label": "WHO — Cıva ve sağlık",
+      "label": "JECFA — Food Additives and Contaminants Database: methylmercury PTWI",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
+    },
+    {
+      "label": "WHO — Mercury and health",
       "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
     },
     {
-      "label": "EFSA — Gıdalarda kirletici olarak bulunan metaller",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
+      "label": "EFSA — Mercury and methylmercury in food, 2012",
+      "url": "https://www.efsa.europa.eu/en/efsajournal/pub/2985"
+    },
+    {
+      "label": "Human biomonitoring study — Maternal and umbilical-cord mercury concentrations",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16081062/"
     }
   ],
   "title": "Metilcıva",
-  "description": "Balıklardaki metilciva, toplam ve inorganik civa ile açıkça ayırt edilerek ele alınmalıdır."
+  "description": "Metilcıva sinir sistemine ulaşır ve plasentayı geçer; büyük ve uzun yaşayan yırtıcı balıklar en yüksek konsantrasyonları biriktirir."
 }
