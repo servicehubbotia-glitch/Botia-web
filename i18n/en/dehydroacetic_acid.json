@@ -6,22 +6,30 @@
   "layers": [
     "enumbers"
   ],
-  "what_is": "Dehydroacetic acid and its sodium salt are antimicrobial-related food substances used under specified conditions in some jurisdictions, including direct food uses listed by FDA.",
-  "why_botia": "BOTIA flags the explicit names because these substances may be declared by chemical name and are not part of the ordinary EU E-number list. Regulatory permission is jurisdiction- and use-specific; a declared name does not establish the amount present.",
-  "can_1": "Detect dehydroacetic acid, sodium dehydroacetate and the audit's INS 265/266 identifiers when explicitly printed.",
-  "can_2": "Show that their status must be interpreted by jurisdiction rather than assuming an EU E-number authorisation.",
+  "what_is": "Dehydroacetic acid and sodium dehydroacetate are preservatives used to prolong shelf life by protecting food against deterioration caused by microorganisms. Codex identifies them as INS 265 and INS 266.",
+  "why_botia": "Dehydroacetic acid and sodium dehydroacetate are preservatives: their purpose is to slow microbial spoilage, not to add flavour or nutrition. Codex assigns them INS 265 and INS 266, but inclusion in the INS does not imply Codex approval; the Codex GSFA lists no food-use provisions for either code. In the United States, direct food use is limited to cut or peeled squash, with no more than 65 ppm remaining expressed as dehydroacetic acid.",
+  "can_1": "Detect dehydroacetic acid, sodium dehydroacetate and the Codex INS 265/266 identifiers when explicitly declared.",
+  "can_2": "Explain their preservative function, that INS identification is not the same as authorisation, and that permitted uses vary by jurisdiction.",
   "cannot_1": "Determine the concentration or whether a particular use complies with its legal maximum from the ingredient list alone.",
   "cannot_2": "Infer their presence when they are not declared.",
   "sources": [
     {
-      "label": "FDA — Dehydroacetic Acid, Substances Added to Food",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=DEHYDROACETICACID&set=FoodSubstances"
+      "label": "Codex — Class Names and the International Numbering System for Food Additives (CXG 36-1989)",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B36-1989%252FCXG_036e.pdf"
     },
     {
-      "label": "FDA — Sodium Dehydroacetate, Substances Added to Food",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=SODIUMDEHYDROACETATE&set=FoodSubstances"
+      "label": "Codex GSFA — INS 265 food-use provisions",
+      "url": "https://www.fao.org/gsfaonline/additives/results.html?ins=265&searchBy=ins"
+    },
+    {
+      "label": "Codex GSFA — INS 266 food-use provisions",
+      "url": "https://www.fao.org/gsfaonline/additives/results.html?ins=266&searchBy=ins"
+    },
+    {
+      "label": "United States eCFR — 21 CFR § 172.130 Dehydroacetic acid",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-172/subpart-B/section-172.130"
     }
   ],
   "title": "Dehydroacetic Acid & Sodium Dehydroacetate",
-  "description": "Dehydroacetic acid and sodium dehydroacetate as explicitly declared antimicrobial-related food substances."
+  "description": "Preservatives identified by Codex as INS 265 and INS 266; food-use authorisations vary by jurisdiction."
 }
