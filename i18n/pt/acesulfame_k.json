@@ -1,28 +1,36 @@
 {
   "name": "Acessulfame de potássio",
   "e_code": "E950",
-  "aliases": "E950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
+  "aliases": "E950, INS 950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Um adoçante sintético intenso sem calorias, cerca de 200 vezes mais doce que a sacarose.",
-  "why_botia": "Ele marca porque é um adoçante artificial característico de alimentos ultraprocessados (Grupo NOVA 4).",
-  "can_1": "Identifique E950 ou Acessulfame K em rótulos de ingredientes digitalizados.",
-  "can_2": "Ative as camadas de informações sobre adoçantes e números E.",
-  "cannot_1": "Avalie se o acessulfame K foi misturado com aspartame para mascarar seu gosto metálico residual.",
-  "cannot_2": "Determine a presença de impurezas orgânicas abaixo do limite padrão de pureza de 20 mg/kg.",
+  "what_is": "O acessulfame de potássio (INS 950 / E950), normalmente chamado acessulfame K ou Ace-K, é um edulcorante de alta intensidade cerca de 200 vezes mais doce do que o açúcar. O Codex classifica-o como edulcorante e intensificador de sabor.",
+  "why_botia": "O acessulfame K é cerca de 200 vezes mais doce do que o açúcar, por isso uma quantidade muito pequena faz o trabalho — e o rótulo não mostra quanto foi utilizado. É absorvido e excretado em grande parte sem alterações, pelo que não se comporta como o açúcar no organismo. O JECFA estabeleceu uma IDA de 0–15 mg/kg de peso corporal e a EFSA elevou o seu próprio limite para o mesmo valor em 2025 após a reavaliação.",
+  "can_1": "Detetar E950, INS 950, acessulfame K, acessulfame de potássio e Ace-K quando explicitamente declarados.",
+  "can_2": "Explicar a sua função edulcorante de alta intensidade, a excreção em grande parte inalterada e a ingestão diária admissível do JECFA e da EFSA.",
+  "cannot_1": "Determinar quanto acessulfame K está presente apenas pela declaração dos ingredientes.",
+  "cannot_2": "Calcular a exposição diária total ou a resposta individual de uma pessoa a partir do rótulo de um único produto.",
   "sources": [
     {
-      "label": "Regulamento (UE) n.º 231/2012 da Comissão",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Acesulfame K (INS 950)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3613"
     },
     {
-      "label": "EFSA — Reavaliação do acessulfame de potássio (E950), 2025",
+      "label": "JECFA — Acesulfame potassium toxicological monograph (FAS 28)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v28je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Acesulfame potassium (INS 950)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=104"
+    },
+    {
+      "label": "EFSA — Re-evaluation of acesulfame K (E 950), 2025",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9317"
     }
   ],
   "title": "Acessulfame de potássio",
-  "description": "Um adoçante sintético intenso sem calorias, cerca de 200 vezes mais doce que a sacarose."
+  "description": "O acessulfame K (INS 950 / E950) é um edulcorante intenso cerca de 200 vezes mais doce do que o açúcar; JECFA e EFSA utilizam uma IDA de 15 mg/kg de peso corporal por dia."
 }

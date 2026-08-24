@@ -1,28 +1,36 @@
 {
   "name": "Asesülfam potasyum",
   "e_code": "E950",
-  "aliases": "E950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
+  "aliases": "E950, INS 950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Kalorisiz sentetik yoğun tatlandırıcı, sakarozdan yaklaşık 200 kat daha tatlıdır.",
-  "why_botia": "Bunu işaretliyor çünkü ultra işlenmiş gıdaların (NOVA Grup 4) karakteristik özelliği olan yapay bir tatlandırıcıdır.",
-  "can_1": "Taranmış içerik etiketlerinde E950 veya Asesülfam K'yı tanımlayın.",
-  "can_2": "Hem tatlandırıcı hem de E-kodu bilgi katmanlarını tetikleyin.",
-  "cannot_1": "Asesülfam K'nın metalik tadını maskelemek için aspartam ile karıştırılıp karıştırılmadığını değerlendirin.",
-  "cannot_2": "Organik safsızlıkların standart 20 mg/kg saflık sınırının altında olup olmadığını belirleyin.",
+  "what_is": "Asesülfam potasyum (INS 950 / E950), genellikle Asesülfam K veya Ace-K olarak adlandırılan, şekerden yaklaşık 200 kat daha tatlı yüksek yoğunluklu bir tatlandırıcıdır. Codex onu hem tatlandırıcı hem de lezzet artırıcı olarak sınıflandırır.",
+  "why_botia": "Asesülfam K şekerden yaklaşık 200 kat daha tatlıdır, bu nedenle çok küçük bir miktar yeterlidir — ancak etiket ne kadar kullanıldığını göstermez. Emilip büyük ölçüde değişmeden atılır, bu nedenle vücutta şeker gibi davranmaz. JECFA 0–15 mg/kg vücut ağırlığı ADI belirledi ve EFSA 2025'te yeniden değerlendirmeden sonra kendi sınırını aynı düzeye yükseltti.",
+  "can_1": "E950, INS 950, Asesülfam K, asesülfam potasyum ve Ace-K'yi açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Yüksek yoğunluklu tatlandırma işlevini, büyük ölçüde değişmeden atılmasını ve JECFA ile EFSA'nın kabul edilebilir günlük alımını açıklamak.",
+  "cannot_1": "Yalnızca içerik beyanından üründe ne kadar Asesülfam K bulunduğunu belirlemek.",
+  "cannot_2": "Tek bir ürün etiketinden bir kişinin toplam günlük maruziyetini veya bireysel tepkisini hesaplamak.",
   "sources": [
     {
-      "label": "(EU) 231/2012 sayılı Komisyon Tüzüğü",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Acesulfame K (INS 950)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3613"
     },
     {
-      "label": "EFSA — Asesülfam potasyumun (E950) yeniden değerlendirilmesi, 2025",
+      "label": "JECFA — Acesulfame potassium toxicological monograph (FAS 28)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v28je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Acesulfame potassium (INS 950)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=104"
+    },
+    {
+      "label": "EFSA — Re-evaluation of acesulfame K (E 950), 2025",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9317"
     }
   ],
   "title": "Asesülfam potasyum",
-  "description": "Kalorisiz sentetik yoğun tatlandırıcı, sakarozdan yaklaşık 200 kat daha tatlıdır."
+  "description": "Asesülfam K (INS 950 / E950), şekerden yaklaşık 200 kat daha tatlı yüksek yoğunluklu bir tatlandırıcıdır; JECFA ve EFSA günlük 15 mg/kg vücut ağırlığı ADI kullanır."
 }

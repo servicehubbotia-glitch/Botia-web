@@ -1,28 +1,36 @@
 {
   "name": "Kalium asesulfam",
   "e_code": "E950",
-  "aliases": "E950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
+  "aliases": "E950, INS 950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Pemanis sintetis intensif tanpa kalori sekitar 200 kali lebih manis daripada sukrosa.",
-  "why_botia": "Ia menandainya karena itu adalah pemanis buatan yang khas dari makanan ultra-olahan (NOVA Grup 4).",
-  "can_1": "Identifikasi E950 atau Acesulfame K pada label bahan yang dipindai.",
-  "can_2": "Picu kedua lapisan informasi pemanis dan nomor E.",
-  "cannot_1": "Nilailah apakah asesulfam K telah dicampur dengan aspartam untuk menutupi rasa logamnya.",
-  "cannot_2": "Tentukan keberadaan pengotor organik di bawah batas kemurnian standar 20 mg/kg.",
+  "what_is": "Acesulfame potassium (INS 950 / E950), biasanya disebut Acesulfame K atau Ace-K, adalah pemanis intensitas tinggi sekitar 200 kali lebih manis daripada gula. Codex mencantumkannya sebagai pemanis sekaligus penguat rasa.",
+  "why_botia": "Acesulfame K sekitar 200 kali lebih manis daripada gula, sehingga jumlah yang sangat kecil sudah cukup — dan label tidak dapat menunjukkan berapa banyak yang digunakan. Zat ini diserap dan sebagian besar dikeluarkan tanpa perubahan, sehingga tidak berperilaku seperti gula di dalam tubuh. JECFA menetapkan ADI 0–15 mg/kg berat badan, dan EFSA menaikkan batasnya sendiri ke angka yang sama pada 2025 setelah evaluasi ulang.",
+  "can_1": "Mendeteksi E950, INS 950, Acesulfame K, Acesulfame potassium dan Ace-K ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan fungsi pemanis intensitas tinggi, pengeluarannya yang sebagian besar tidak berubah serta asupan harian yang dapat diterima menurut JECFA dan EFSA.",
+  "cannot_1": "Menentukan jumlah Acesulfame K dalam produk hanya dari pernyataan bahan.",
+  "cannot_2": "Menghitung paparan harian total atau respons individual seseorang dari satu label produk.",
   "sources": [
     {
-      "label": "Peraturan Komisi (EU) No. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Acesulfame K (INS 950)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3613"
     },
     {
-      "label": "EFSA — Evaluasi ulang kalium asesulfam (E950), 2025",
+      "label": "JECFA — Acesulfame potassium toxicological monograph (FAS 28)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v28je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Acesulfame potassium (INS 950)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=104"
+    },
+    {
+      "label": "EFSA — Re-evaluation of acesulfame K (E 950), 2025",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9317"
     }
   ],
   "title": "Kalium asesulfam",
-  "description": "Pemanis sintetis intensif tanpa kalori sekitar 200 kali lebih manis daripada sukrosa."
+  "description": "Acesulfame K (INS 950 / E950) adalah pemanis intensitas tinggi sekitar 200 kali lebih manis daripada gula; JECFA dan EFSA menggunakan ADI 15 mg/kg berat badan per hari."
 }

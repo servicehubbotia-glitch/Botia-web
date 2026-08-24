@@ -1,28 +1,36 @@
 {
   "name": "安赛蜜钾",
   "e_code": "E950",
-  "aliases": "E950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
+  "aliases": "E950, INS 950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "一种无热量的合成强力甜味剂，甜度约为蔗糖的200倍。",
-  "why_botia": "它标记它，因为它是超加工食品（NOVA第4组）典型的人工甜味剂。",
-  "can_1": "识别扫描成分标签上的E950或安赛蜜K。",
-  "can_2": "同时触发甜味剂和E编号信息层。",
-  "cannot_1": "评估安赛蜜是否与阿斯巴甜混合以掩盖其金属后味。",
-  "cannot_2": "测定有机杂质是否低于标准规定的20 mg/kg纯度限度。",
+  "what_is": "安赛蜜钾（INS 950 / E950），通常称为安赛蜜 K 或 Ace-K，是一种高强度甜味剂，甜度约为糖的200倍。Codex 将其同时列为甜味剂和增味剂。",
+  "why_botia": "安赛蜜 K 的甜度约为糖的200倍，因此只需很少的量就能起作用——而标签无法显示实际用了多少。它被吸收后大部分以原形排出，因此在体内的行为不像糖。JECFA 将 ADI 设为每公斤体重 0–15 毫克，EFSA 在2025年重新评估后也将自己的限值提高到了同一水平。",
+  "can_1": "识别明确标示的 E950、INS 950、安赛蜜 K、安赛蜜钾和 Ace-K。",
+  "can_2": "解释其高强度甜味作用、大部分以原形排出的特点以及 JECFA 和 EFSA 的每日允许摄入量。",
+  "cannot_1": "仅根据配料声明确定产品中安赛蜜 K 的实际含量。",
+  "cannot_2": "根据单一产品标签计算一个人的每日总暴露量或个体反应。",
   "sources": [
     {
-      "label": "欧盟委员会（EU）第231/2012号法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Acesulfame K (INS 950)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3613"
     },
     {
-      "label": "EFSA — 安赛蜜钾（E950）重新评估，2025",
+      "label": "JECFA — Acesulfame potassium toxicological monograph (FAS 28)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v28je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Acesulfame potassium (INS 950)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=104"
+    },
+    {
+      "label": "EFSA — Re-evaluation of acesulfame K (E 950), 2025",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9317"
     }
   ],
   "title": "安赛蜜钾",
-  "description": "一种无热量的合成强力甜味剂，甜度约为蔗糖的200倍。"
+  "description": "安赛蜜 K（INS 950 / E950）是一种甜度约为糖200倍的高强度甜味剂；JECFA 和 EFSA 均采用每公斤体重每日15毫克的 ADI。"
 }

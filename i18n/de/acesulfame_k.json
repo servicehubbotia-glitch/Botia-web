@@ -1,28 +1,36 @@
 {
   "name": "Acesulfam-Kalium",
   "e_code": "E950",
-  "aliases": "E950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
+  "aliases": "E950, INS 950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Ein kalorienfreier synthetischer intensiver Süßstoff, etwa 200-mal süßer als Saccharose.",
-  "why_botia": "Es wird markiert, weil es ein künstlicher Süßstoff ist, der für stark verarbeitete Lebensmittel charakteristisch ist (NOVA-Gruppe 4).",
-  "can_1": "E950 oder Acesulfam K auf gescannten Zutatenlisten identifizieren.",
-  "can_2": "Süßungsmittel- und E-Nummern-Informationsschichten beide auslösen.",
-  "cannot_1": "Bewerten Sie, ob das Acesulfam K mit Aspartam gemischt wurde, um seinen metallischen Nachgeschmack zu überdecken.",
-  "cannot_2": "Bestimmen Sie das Vorhandensein organischer Verunreinigungen unterhalb der standardmäßigen Reinheitsgrenze von 20 mg/kg.",
+  "what_is": "Acesulfam-Kalium (INS 950 / E950), meist Acesulfam K oder Ace-K genannt, ist ein hochintensiver Süßstoff, der etwa 200-mal süßer als Zucker ist. Codex führt ihn sowohl als Süßstoff als auch als Geschmacksverstärker.",
+  "why_botia": "Acesulfam K ist etwa 200-mal süßer als Zucker, sodass eine sehr kleine Menge ausreicht — und das Etikett nicht erkennen lässt, wie viel verwendet wurde. Es wird aufgenommen und weitgehend unverändert ausgeschieden und verhält sich deshalb im Körper nicht wie Zucker. JECFA legte einen ADI von 0–15 mg/kg Körpergewicht fest, und EFSA erhöhte ihren eigenen Grenzwert nach der Neubewertung 2025 auf denselben Wert.",
+  "can_1": "E950, INS 950, Acesulfam K, Acesulfam-Kalium und Ace-K erkennen, wenn sie ausdrücklich deklariert sind.",
+  "can_2": "Seine hochintensive Süßwirkung, die weitgehend unveränderte Ausscheidung sowie die akzeptable tägliche Aufnahmemenge von JECFA und EFSA erklären.",
+  "cannot_1": "Allein aus der Zutatenangabe bestimmen, wie viel Acesulfam K enthalten ist.",
+  "cannot_2": "Aus einem einzelnen Produktetikett die gesamte tägliche Aufnahme oder individuelle Reaktion einer Person berechnen.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Acesulfame K (INS 950)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3613"
     },
     {
-      "label": "EFSA — Neubewertung von Acesulfam-Kalium (E950), 2025",
+      "label": "JECFA — Acesulfame potassium toxicological monograph (FAS 28)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v28je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Acesulfame potassium (INS 950)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=104"
+    },
+    {
+      "label": "EFSA — Re-evaluation of acesulfame K (E 950), 2025",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9317"
     }
   ],
   "title": "Acesulfam-Kalium",
-  "description": "Ein kalorienfreier synthetischer intensiver Süßstoff, etwa 200-mal süßer als Saccharose."
+  "description": "Acesulfam K (INS 950 / E950) ist ein hochintensiver Süßstoff, etwa 200-mal süßer als Zucker; JECFA und EFSA verwenden einen ADI von 15 mg/kg Körpergewicht pro Tag."
 }

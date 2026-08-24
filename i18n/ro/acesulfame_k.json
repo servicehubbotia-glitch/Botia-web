@@ -1,28 +1,36 @@
 {
   "name": "Acesulfam de potasiu",
   "e_code": "E950",
-  "aliases": "E950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
+  "aliases": "E950, INS 950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Îndulcitor sintetic intens, fără calorii, de aproximativ 200 de ori mai dulce decât zaharoza.",
-  "why_botia": "Îl semnalează pentru că este un îndulcitor artificial caracteristic alimentelor ultra-procesate (Grupa NOVA 4).",
-  "can_1": "Identificați E950 sau Acesulfam K pe etichetele de ingrediente scanate.",
-  "can_2": "Declanșează atât stratul de informații despre îndulcitori, cât și cel despre numerelor E.",
-  "cannot_1": "Evaluează dacă acesulfamul K a fost amestecat cu aspartam pentru a masca gustul său metalic.",
-  "cannot_2": "Determinați prezența impurităților organice sub limita standard de puritate de 20 mg/kg.",
+  "what_is": "Acesulfamul de potasiu (INS 950 / E950), numit de obicei acesulfam K sau Ace-K, este un îndulcitor de mare intensitate de aproximativ 200 de ori mai dulce decât zahărul. Codex îl clasifică atât ca îndulcitor, cât și ca potențiator de aromă.",
+  "why_botia": "Acesulfamul K este de aproximativ 200 de ori mai dulce decât zahărul, astfel încât o cantitate foarte mică este suficientă — iar eticheta nu arată cât a fost utilizat. Este absorbit și eliminat în mare parte neschimbat, astfel încât nu se comportă ca zahărul în organism. JECFA a stabilit o ADI de 0–15 mg/kg greutate corporală, iar EFSA și-a ridicat propria limită la aceeași valoare în 2025 după reevaluare.",
+  "can_1": "Detecta E950, INS 950, acesulfam K, acesulfam de potasiu și Ace-K atunci când sunt declarate explicit.",
+  "can_2": "Explica funcția sa de îndulcitor intens, eliminarea în mare parte neschimbată și doza zilnică admisibilă stabilită de JECFA și EFSA.",
+  "cannot_1": "Determina cantitatea de acesulfam K prezentă doar din declarația ingredientelor.",
+  "cannot_2": "Calcula expunerea zilnică totală sau răspunsul individual al unei persoane din eticheta unui singur produs.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Acesulfame K (INS 950)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3613"
     },
     {
-      "label": "EFSA — Reevaluarea acesulfamului de potasiu (E950), 2025",
+      "label": "JECFA — Acesulfame potassium toxicological monograph (FAS 28)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v28je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Acesulfame potassium (INS 950)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=104"
+    },
+    {
+      "label": "EFSA — Re-evaluation of acesulfame K (E 950), 2025",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9317"
     }
   ],
   "title": "Acesulfam de potasiu",
-  "description": "Un îndulcitor sintetic intens, fără calorii, de aproximativ 200 de ori mai dulce decât zaharoza."
+  "description": "Acesulfamul K (INS 950 / E950) este un îndulcitor intens de aproximativ 200 de ori mai dulce decât zahărul; JECFA și EFSA folosesc o ADI de 15 mg/kg greutate corporală pe zi."
 }

@@ -1,22 +1,30 @@
 {
   "name": "Acesulfame potassium",
   "e_code": "E950",
-  "aliases": "E950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
+  "aliases": "E950, INS 950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "A calorie-free synthetic intense sweetener about 200 times sweeter than sucrose.",
-  "why_botia": "It flags it because it is an artificial sweetener characteristic of ultra-processed foods (NOVA Group 4).",
-  "can_1": "Identify E950 or Acesulfame K on scanned ingredient labels.",
-  "can_2": "Trigger both the sweetener and E-number information layers.",
-  "cannot_1": "Assess whether the acesulfame K has been blended with aspartame to mask its metallic aftertaste.",
-  "cannot_2": "Determine the presence of organic impurities below the standard 20 mg/kg purity limit.",
+  "what_is": "Acesulfame potassium (INS 950 / E950), usually called Acesulfame K or Ace-K, is a high-intensity sweetener about 200 times sweeter than sugar. Codex lists it as both a sweetener and a flavour enhancer.",
+  "why_botia": "Acesulfame K is about 200 times sweeter than sugar, so a very small amount does the work — and the label cannot show how much. It is absorbed and excreted largely unchanged, so it does not behave like sugar in the body. JECFA set an ADI of 0–15 mg/kg body weight, and EFSA raised its own limit to the same figure in 2025 after re-evaluation.",
+  "can_1": "Detect E950, INS 950, Acesulfame K, Acesulfame potassium and Ace-K when explicitly declared.",
+  "can_2": "Explain its high-intensity sweetening function, its largely unchanged excretion and the JECFA and EFSA acceptable daily intake.",
+  "cannot_1": "Determine how much Acesulfame K is present from the ingredient declaration alone.",
+  "cannot_2": "Calculate a person's total daily exposure or individual response from a single product label.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Acesulfame K (INS 950)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3613"
+    },
+    {
+      "label": "JECFA — Acesulfame potassium toxicological monograph (FAS 28)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v28je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Acesulfame potassium (INS 950)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=104"
     },
     {
       "label": "EFSA — Re-evaluation of acesulfame K (E 950), 2025",
@@ -24,5 +32,5 @@
     }
   ],
   "title": "Acesulfame potassium",
-  "description": "A calorie-free synthetic intense sweetener about 200 times sweeter than sucrose."
+  "description": "Acesulfame K (INS 950 / E950) is a high-intensity sweetener about 200 times sweeter than sugar; JECFA and EFSA use an ADI of 15 mg/kg body weight per day."
 }

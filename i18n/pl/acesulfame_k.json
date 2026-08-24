@@ -1,28 +1,36 @@
 {
   "name": "Acesulfam potasowy",
   "e_code": "E950",
-  "aliases": "E950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
+  "aliases": "E950, INS 950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Bezkaloryjny syntetyczny intensywny słodzik około 200 razy słodszy niż sacharoza.",
-  "why_botia": "Oznacza to jako sztuczny słodzik charakterystyczny dla żywności wysoko przetworzonej (grupa NOVA 4).",
-  "can_1": "Zidentyfikuj E950 lub acesulfam K na zeskanowanych etykietach składników.",
-  "can_2": "Wyzwól zarówno warstwę informacyjną dotyczącą substancji słodzących, jak i numerów E.",
-  "cannot_1": "Oceń, czy acesulfam K został zmieszany z aspartamem w celu zamaskowania jego metalicznego posmaku.",
-  "cannot_2": "Oznacz obecność zanieczyszczeń organicznych poniżej standardowego limitu czystości wynoszącego 20 mg/kg.",
+  "what_is": "Acesulfam potasowy (INS 950 / E950), zwykle nazywany acesulfamem K lub Ace-K, jest intensywnym środkiem słodzącym około 200 razy słodszym od cukru. Codex klasyfikuje go zarówno jako środek słodzący, jak i wzmacniacz smaku.",
+  "why_botia": "Acesulfam K jest około 200 razy słodszy od cukru, dlatego wystarcza bardzo mała ilość — a etykieta nie pokazuje, ile go użyto. Jest wchłaniany i w dużej mierze wydalany w niezmienionej postaci, dlatego nie zachowuje się w organizmie jak cukier. JECFA ustaliła ADI na poziomie 0–15 mg/kg masy ciała, a EFSA podniosła swój własny limit do tego samego poziomu w 2025 r. po ponownej ocenie.",
+  "can_1": "Wykrywać E950, INS 950, acesulfam K, acesulfam potasowy i Ace-K, gdy są wyraźnie zadeklarowane.",
+  "can_2": "Wyjaśniać jego intensywne działanie słodzące, wydalanie w dużej mierze w niezmienionej postaci oraz dopuszczalne dzienne spożycie JECFA i EFSA.",
+  "cannot_1": "Określić ilości acesulfamu K na podstawie samej deklaracji składników.",
+  "cannot_2": "Obliczyć całkowitego dziennego narażenia lub indywidualnej reakcji osoby na podstawie etykiety jednego produktu.",
   "sources": [
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Acesulfame K (INS 950)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3613"
     },
     {
-      "label": "EFSA — Ponowna ocena acesulfamu potasowego (E950), 2025",
+      "label": "JECFA — Acesulfame potassium toxicological monograph (FAS 28)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v28je13.htm"
+    },
+    {
+      "label": "Codex GSFA — Acesulfame potassium (INS 950)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=104"
+    },
+    {
+      "label": "EFSA — Re-evaluation of acesulfame K (E 950), 2025",
       "url": "https://www.efsa.europa.eu/en/efsajournal/pub/9317"
     }
   ],
   "title": "Acesulfam potasowy",
-  "description": "Bezkaloryjny syntetyczny intensywny słodzik około 200 razy słodszy niż sacharoza."
+  "description": "Acesulfam K (INS 950 / E950) jest intensywnym środkiem słodzącym około 200 razy słodszym od cukru; JECFA i EFSA stosują ADI 15 mg/kg masy ciała dziennie."
 }
