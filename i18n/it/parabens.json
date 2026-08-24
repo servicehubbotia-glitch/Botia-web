@@ -1,28 +1,39 @@
 {
   "name": "Parabeni",
   "e_code": "E214, E215, E218, E219",
-  "aliases": "E214, ethyl p-hydroxybenzoate, ethylparaben, E215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, methyl p-hydroxybenzoate, methylparaben, E219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
-  "module_icon": "mujer.png",
+  "aliases": "E214, INS 214, ethyl p-hydroxybenzoate, ethylparaben, E215, INS 215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, INS 218, methyl p-hydroxybenzoate, methylparaben, E219, INS 219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Un gruppo di composti sintetici ampiamente utilizzati come conservanti chimici negli alimenti e nei cosmetici.",
-  "why_botia": "I parabeni non hanno tutti la stessa evidenza scientifica. L'EFSA ha stabilito un limite di assunzione per il metilparabene, l'etilparabene e i loro sali di sodio. Non è stato possibile stabilirne uno per il propilparabene. L'UE ha successivamente rimosso E216 ed E217 dall'uso alimentare.",
-  "can_1": "Individua E214, E215, E218 o E219 sull'etichetta.",
-  "can_2": "E214, E215, E218 ed E219 condividono un limite di assunzione EFSA. E216 ed E217 sono stati rimossi dall'uso alimentare nell'UE. Trovare un parabene autorizzato non dimostra un effetto sulla fertilità.",
-  "cannot_1": "Valutare l'esposizione cumulativa o \"effetto cocktail\" di più parabeni presenti nella dieta.",
-  "cannot_2": "Determinare la concentrazione precisa del conservante nella matrice alimentare.",
+  "what_is": "I parabeni sono conservanti che rallentano la crescita di muffe e lieviti. Questa scheda alimentare comprende etilparabene, metilparabene e i loro sali di sodio: E214, E215, E218 ed E219.",
+  "why_botia": "I parabeni conservano gli alimenti bloccando muffe e lieviti. Sono molto più noti per l'uso nei cosmetici, mentre il loro impiego negli alimenti è molto più limitato e compaiono molto meno spesso sulle etichette alimentari. Non tutti i parabeni si comportano allo stesso modo: il JECFA ha mantenuto una DGA di gruppo di 0–10 mg/kg di peso corporeo per metilparabene ed etilparabene, ma ha poi escluso il propilparabene dopo la comparsa di effetti diversi negli studi animali.",
+  "can_1": "Rilevare E214, E215, E218, E219, i relativi numeri INS e i nomi metilparabene o etilparabene quando dichiarati esplicitamente.",
+  "can_2": "Spiegare che metilparabene ed etilparabene condividono una DGA di gruppo JECFA, mentre il propilparabene è stato successivamente escluso per effetti diversi osservati negli studi animali.",
+  "cannot_1": "Trattare ogni sostanza chiamata parabene come se avesse le stesse evidenze o lo stesso limite di assunzione.",
+  "cannot_2": "Determinare la quantità presente dalla sola lista degli ingredienti o trasferire direttamente a un alimento specifico le preoccupazioni relative all'esposizione cosmetica.",
   "sources": [
     {
-      "label": "rivalutazione EFSA dei parabeni come additivi alimentari",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+      "label": "JECFA — Methyl p-hydroxybenzoate / methylparaben (INS 218)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3204"
     },
     {
-      "label": "Rapporto WHO sullo stato della scienza dei perturbatori endocrini (2012)",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "JECFA — Ethyl p-hydroxybenzoate / ethylparaben (INS 214)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/371"
+    },
+    {
+      "label": "JECFA — Propylparaben: excluded from group ADI in 2006",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/330"
+    },
+    {
+      "label": "EFSA — Para-hydroxybenzoates (E214–219), 2004",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2004.83"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "Parabeni",
-  "description": "Un gruppo di composti sintetici ampiamente utilizzati come conservanti chimici negli alimenti e nei cosmetici."
+  "description": "I parabeni sono conservanti più noti per i cosmetici; l'uso alimentare è più ristretto e il JECFA non tratta tutti i parabeni come equivalenti."
 }

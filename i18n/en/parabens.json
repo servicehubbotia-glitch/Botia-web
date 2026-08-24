@@ -1,28 +1,39 @@
 {
   "name": "Parabens",
   "e_code": "E214, E215, E218, E219",
-  "aliases": "E214, ethyl p-hydroxybenzoate, ethylparaben, E215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, methyl p-hydroxybenzoate, methylparaben, E219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
-  "module_icon": "mujer.png",
+  "aliases": "E214, INS 214, ethyl p-hydroxybenzoate, ethylparaben, E215, INS 215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, INS 218, methyl p-hydroxybenzoate, methylparaben, E219, INS 219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "A group of synthetic compounds widely used as chemical preservatives in food and cosmetics.",
-  "why_botia": "Parabens do not all have the same evidence. EFSA set one intake limit for methylparaben, ethylparaben and their sodium salts. It could not set one for propylparaben. The EU later removed E216 and E217 from food use.",
-  "can_1": "Spot E214, E215, E218 or E219 on the label.",
-  "can_2": "E214, E215, E218 and E219 share an EFSA intake limit. E216 and E217 were removed from EU food use. Finding an authorised paraben does not prove a fertility effect.",
-  "cannot_1": "Assess the cumulative exposure or 'cocktail effect' of multiple parabens present in the diet.",
-  "cannot_2": "Determine the precise concentration of the preservative in the food matrix.",
+  "what_is": "Parabens are preservatives that slow the growth of mould and yeast. This food fiche covers ethylparaben, methylparaben and their sodium salts: E214, E215, E218 and E219.",
+  "why_botia": "Parabens preserve food by stopping mould and yeast. They are far better known from cosmetics, while their use in food is much narrower and they appear far less often on food labels. Not all parabens behave the same: JECFA kept a group ADI of 0–10 mg/kg body weight for methyl and ethyl parabens, but later excluded propylparaben after different effects appeared in animal studies.",
+  "can_1": "Detect E214, E215, E218, E219, their INS numbers and the methylparaben or ethylparaben names when explicitly declared.",
+  "can_2": "Explain that methyl and ethyl parabens share a JECFA group ADI, while propylparaben was later excluded because it produced different effects in animal studies.",
+  "cannot_1": "Treat every substance called a paraben as if it had the same evidence or the same intake limit.",
+  "cannot_2": "Determine the amount present from the ingredient list or transfer concerns from cosmetic exposure directly to a particular food.",
   "sources": [
     {
-      "label": "EFSA re-evaluation of parabens as food additives",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+      "label": "JECFA — Methyl p-hydroxybenzoate / methylparaben (INS 218)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3204"
     },
     {
-      "label": "WHO State of the Science of Endocrine Disrupting Chemicals (2012)",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "JECFA — Ethyl p-hydroxybenzoate / ethylparaben (INS 214)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/371"
+    },
+    {
+      "label": "JECFA — Propylparaben: excluded from group ADI in 2006",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/330"
+    },
+    {
+      "label": "EFSA — Para-hydroxybenzoates (E214–219), 2004",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2004.83"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "Parabens",
-  "description": "A group of synthetic compounds widely used as chemical preservatives in food and cosmetics."
+  "description": "Parabens are preservatives better known from cosmetics; food use is narrower, and JECFA does not treat every paraben as if it behaved the same."
 }

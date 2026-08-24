@@ -1,28 +1,39 @@
 {
   "name": "Парабены",
   "e_code": "E214, E215, E218, E219",
-  "aliases": "E214, ethyl p-hydroxybenzoate, ethylparaben, E215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, methyl p-hydroxybenzoate, methylparaben, E219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
-  "module_icon": "mujer.png",
+  "aliases": "E214, INS 214, ethyl p-hydroxybenzoate, ethylparaben, E215, INS 215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, INS 218, methyl p-hydroxybenzoate, methylparaben, E219, INS 219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Группа синтетических соединений, широко используемых в качестве химических консервантов в пищевых продуктах и косметике.",
-  "why_botia": "Парабены имеют неодинаковую доказательную базу. EFSA установила один допустимый уровень потребления для метилпарабена, этилпарабена и их натриевых солей. Для пропилпарабена установить такой уровень не удалось. Позже ЕС исключил E216 и E217 из использования в пищевых продуктах.",
-  "can_1": "Обнаружьте E214, E215, E218 или E219 на этикетке.",
-  "can_2": "E214, E215, E218 и E219 имеют общий допустимый уровень потребления, установленный EFSA. E216 и E217 были исключены из использования в продуктах питания в ЕС. Наличие разрешённого парабена не доказывает влияния на фертильность.",
-  "cannot_1": "Оценить совокупное воздействие или «коктейльный эффект» нескольких парабенов, присутствующих в рационе.",
-  "cannot_2": "Определить точную концентрацию консерванта в пищевой матрице.",
+  "what_is": "Парабены — консерванты, замедляющие рост плесени и дрожжей. Эта пищевая карточка охватывает этилпарабен, метилпарабен и их натриевые соли: E214, E215, E218 и E219.",
+  "why_botia": "Парабены сохраняют продукты, подавляя плесень и дрожжи. Они гораздо больше известны по косметике, тогда как их применение в пищевых продуктах значительно уже и на пищевых этикетках они встречаются намного реже. Не все парабены ведут себя одинаково: JECFA сохранила групповой ADI 0–10 мг/кг массы тела для метилпарабена и этилпарабена, но позднее исключила пропилпарабен после выявления других эффектов в исследованиях на животных.",
+  "can_1": "Определять E214, E215, E218, E219, соответствующие номера INS и названия метилпарабен или этилпарабен, когда они явно указаны.",
+  "can_2": "Объяснять, что метилпарабен и этилпарабен имеют общий групповой ADI JECFA, а пропилпарабен позднее был исключён из-за других эффектов в исследованиях на животных.",
+  "cannot_1": "Считать все вещества с названием парабен имеющими одинаковые доказательства или одинаковый предел потребления.",
+  "cannot_2": "Определить количество по одному списку ингредиентов или напрямую переносить опасения, связанные с косметическим воздействием, на конкретный пищевой продукт.",
   "sources": [
     {
-      "label": "Переоценка EFSA парабенов в качестве пищевых добавок",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+      "label": "JECFA — Methyl p-hydroxybenzoate / methylparaben (INS 218)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3204"
     },
     {
-      "label": "Состояние науки WHO о эндокринных разрушителях (2012)",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "JECFA — Ethyl p-hydroxybenzoate / ethylparaben (INS 214)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/371"
+    },
+    {
+      "label": "JECFA — Propylparaben: excluded from group ADI in 2006",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/330"
+    },
+    {
+      "label": "EFSA — Para-hydroxybenzoates (E214–219), 2004",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2004.83"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "Парабены",
-  "description": "Группа синтетических соединений, широко используемых в качестве химических консервантов в пищевых продуктах и косметике."
+  "description": "Парабены — консерванты, больше известные по косметике; их пищевое применение уже, и JECFA не рассматривает все парабены одинаково."
 }

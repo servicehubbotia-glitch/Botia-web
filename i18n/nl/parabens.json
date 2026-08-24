@@ -1,28 +1,39 @@
 {
   "name": "Parabenen",
   "e_code": "E214, E215, E218, E219",
-  "aliases": "E214, ethyl p-hydroxybenzoate, ethylparaben, E215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, methyl p-hydroxybenzoate, methylparaben, E219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
-  "module_icon": "mujer.png",
+  "aliases": "E214, INS 214, ethyl p-hydroxybenzoate, ethylparaben, E215, INS 215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, INS 218, methyl p-hydroxybenzoate, methylparaben, E219, INS 219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Een groep synthetische stoffen die veel worden gebruikt als chemische conserveermiddelen in voeding en cosmetica.",
-  "why_botia": "Parabenen hebben niet allemaal hetzelfde bewijs. EFSA stelde één innamegrens vast voor methylparabeen, ethylparabeen en hun natriumzouten. Voor propylparabeen kon het geen grens vaststellen. De EU verwijderde later E216 en E217 uit gebruik in levensmiddelen.",
-  "can_1": "Spot E214, E215, E218 of E219 op het etiket.",
-  "can_2": "E214, E215, E218 en E219 delen een EFSA-inname limiet. E216 en E217 zijn verwijderd uit EU-voedselgebruik. Het vinden van een goedgekeurde parabeen bewijst geen vruchtbaarheidseffect.",
-  "cannot_1": "Beoordeel de cumulatieve blootstelling of het 'cocktail-effect' van meerdere parabenen in de voeding.",
-  "cannot_2": "Bepaal de exacte concentratie van het conserveermiddel in de voedselmatrix.",
+  "what_is": "Parabenen zijn conserveermiddelen die de groei van schimmels en gisten afremmen. Deze voedingsfiche behandelt ethylparabeen, methylparabeen en hun natriumzouten: E214, E215, E218 en E219.",
+  "why_botia": "Parabenen conserveren voedsel door schimmels en gisten te remmen. Ze zijn veel bekender uit cosmetica, terwijl hun gebruik in voedsel veel beperkter is en ze veel minder vaak op voedseletiketten verschijnen. Niet alle parabenen gedragen zich hetzelfde: JECFA behield een groeps-ADI van 0–10 mg/kg lichaamsgewicht voor methyl- en ethylparabeen, maar sloot propylparabeen later uit nadat in dierstudies andere effecten waren gevonden.",
+  "can_1": "E214, E215, E218, E219, hun INS-nummers en de namen methylparabeen of ethylparabeen herkennen wanneer deze expliciet worden vermeld.",
+  "can_2": "Uitleggen dat methyl- en ethylparabeen een gezamenlijke JECFA-groeps-ADI hebben, terwijl propylparabeen later werd uitgesloten vanwege andere effecten in dierstudies.",
+  "cannot_1": "Elke stof die parabeen heet behandelen alsof het bewijs of de innamelimiet hetzelfde is.",
+  "cannot_2": "Uit de ingrediëntenlijst bepalen hoeveel aanwezig is of zorgen over cosmetische blootstelling rechtstreeks toepassen op een bepaald voedingsmiddel.",
   "sources": [
     {
-      "label": "EFSA-herbeoordeling van parabenen als levensmiddelenadditieven",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+      "label": "JECFA — Methyl p-hydroxybenzoate / methylparaben (INS 218)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3204"
     },
     {
-      "label": "WHO — Stand van de wetenschap over hormoonverstorende chemicaliën (2012)",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "JECFA — Ethyl p-hydroxybenzoate / ethylparaben (INS 214)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/371"
+    },
+    {
+      "label": "JECFA — Propylparaben: excluded from group ADI in 2006",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/330"
+    },
+    {
+      "label": "EFSA — Para-hydroxybenzoates (E214–219), 2004",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2004.83"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "Parabenen",
-  "description": "Een groep synthetische stoffen die veel worden gebruikt als chemische conserveermiddelen in voeding en cosmetica."
+  "description": "Parabenen zijn conserveermiddelen die vooral uit cosmetica bekend zijn; voedselgebruik is beperkter en JECFA behandelt niet alle parabenen hetzelfde."
 }

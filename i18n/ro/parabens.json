@@ -1,28 +1,39 @@
 {
   "name": "Parabeni",
   "e_code": "E214, E215, E218, E219",
-  "aliases": "E214, ethyl p-hydroxybenzoate, ethylparaben, E215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, methyl p-hydroxybenzoate, methylparaben, E219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
-  "module_icon": "mujer.png",
+  "aliases": "E214, INS 214, ethyl p-hydroxybenzoate, ethylparaben, E215, INS 215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, INS 218, methyl p-hydroxybenzoate, methylparaben, E219, INS 219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Un grup de compuși sintetici utilizați pe scară largă ca conservanți chimici în alimente și cosmetice.",
-  "why_botia": "Parabenii nu au toți aceleași dovezi. EFSA a stabilit o limită de aport pentru metilparaben, etilparaben și sărurile lor de sodiu. Nu a putut stabili una pentru propilparaben. UE a eliminat ulterior E216 și E217 din utilizarea în alimente.",
-  "can_1": "Identificați pe etichetă E214, E215, E218 sau E219.",
-  "can_2": "E214, E215, E218 și E219 au o limită comună de aport stabilită de EFSA. E216 și E217 au fost eliminate din utilizarea alimentară în UE. Găsirea unui paraben autorizat nu dovedește un efect asupra fertilității.",
-  "cannot_1": "Nu poate evalua expunerea cumulativă sau „efectul de cocktail” al mai multor parabeni prezenți în dietă.",
-  "cannot_2": "Nu poate determina concentrația exactă a conservantului în matricea alimentară.",
+  "what_is": "Parabenii sunt conservanți care încetinesc dezvoltarea mucegaiurilor și drojdiilor. Această fișă alimentară acoperă etilparabenul, metilparabenul și sărurile lor de sodiu: E214, E215, E218 și E219.",
+  "why_botia": "Parabenii conservă alimentele oprind mucegaiurile și drojdiile. Sunt mult mai cunoscuți din cosmetice, în timp ce utilizarea lor în alimente este mult mai restrânsă și apar mult mai rar pe etichetele alimentare. Nu toți parabenii se comportă la fel: JECFA a păstrat o ADI de grup de 0–10 mg/kg greutate corporală pentru metilparaben și etilparaben, dar ulterior a exclus propilparabenul după apariția unor efecte diferite în studii pe animale.",
+  "can_1": "Detecta E214, E215, E218, E219, numerele INS corespunzătoare și denumirile metilparaben sau etilparaben atunci când sunt declarate explicit.",
+  "can_2": "Explica faptul că metilparabenul și etilparabenul au o ADI comună de grup JECFA, iar propilparabenul a fost ulterior exclus din cauza unor efecte diferite observate în studiile pe animale.",
+  "cannot_1": "Trata toate substanțele numite parabeni ca și cum ar avea aceleași dovezi sau aceeași limită de aport.",
+  "cannot_2": "Determina cantitatea prezentă doar din lista ingredientelor sau transfera direct către un anumit aliment preocupările legate de expunerea cosmetică.",
   "sources": [
     {
-      "label": "Reevaluarea EFSA a parabenilor ca aditivi alimentari",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+      "label": "JECFA — Methyl p-hydroxybenzoate / methylparaben (INS 218)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3204"
     },
     {
-      "label": "Stadiul științei privind substanțele chimice care perturbă sistemul endocrin (2012) - WHO",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "JECFA — Ethyl p-hydroxybenzoate / ethylparaben (INS 214)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/371"
+    },
+    {
+      "label": "JECFA — Propylparaben: excluded from group ADI in 2006",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/330"
+    },
+    {
+      "label": "EFSA — Para-hydroxybenzoates (E214–219), 2004",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2004.83"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "Parabeni",
-  "description": "Un grup de compuși sintetici utilizați pe scară largă ca conservanți chimici în alimente și cosmetice."
+  "description": "Parabenii sunt conservanți mai cunoscuți din cosmetice; utilizarea alimentară este mai restrânsă, iar JECFA nu tratează toți parabenii la fel."
 }

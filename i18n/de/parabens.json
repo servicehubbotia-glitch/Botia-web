@@ -1,28 +1,39 @@
 {
   "name": "Parabene",
   "e_code": "E214, E215, E218, E219",
-  "aliases": "E214, ethyl p-hydroxybenzoate, ethylparaben, E215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, methyl p-hydroxybenzoate, methylparaben, E219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
-  "module_icon": "mujer.png",
+  "aliases": "E214, INS 214, ethyl p-hydroxybenzoate, ethylparaben, E215, INS 215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, INS 218, methyl p-hydroxybenzoate, methylparaben, E219, INS 219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Eine Gruppe synthetischer Verbindungen, die häufig als chemische Konservierungsmittel in Lebensmitteln und Kosmetika verwendet werden.",
-  "why_botia": "Parabene haben nicht alle dieselbe Evidenzlage. Die EFSA legte einen Aufnahmegrenzwert für Methylparaben, Ethylparaben und deren Natriumsalze fest. Für Propylparaben konnte sie keinen festlegen. Die EU entfernte später E216 und E217 aus der Lebensmittelverwendung.",
-  "can_1": "Achten Sie auf dem Etikett auf E214, E215, E218 oder E219.",
-  "can_2": "E214, E215, E218 und E219 teilen sich einen EFSA-Aufnahmegrenzwert. E216 und E217 wurden aus der Lebensmittelverwendung in der EU entfernt. Das Auffinden eines zugelassenen Parabens beweist keine Auswirkung auf die Fruchtbarkeit.",
-  "cannot_1": "Die kumulative Exposition oder den 'Cocktail-Effekt' mehrerer in der Nahrung enthaltener Parabene bewerten.",
-  "cannot_2": "Die genaue Konzentration des Konservierungsmittels in der Lebensmittelmatrix bestimmen.",
+  "what_is": "Parabene sind Konservierungsstoffe, die das Wachstum von Schimmel und Hefen bremsen. Diese Lebensmittelfiche umfasst Ethylparaben, Methylparaben und ihre Natriumsalze: E214, E215, E218 und E219.",
+  "why_botia": "Parabene konservieren Lebensmittel, indem sie Schimmel und Hefen hemmen. Sie sind viel stärker aus Kosmetika bekannt, während ihre Verwendung in Lebensmitteln deutlich begrenzter ist und sie wesentlich seltener auf Lebensmitteletiketten erscheinen. Nicht alle Parabene verhalten sich gleich: JECFA behielt einen Gruppen-ADI von 0–10 mg/kg Körpergewicht für Methyl- und Ethylparaben bei, schloss Propylparaben später jedoch aus, nachdem in Tierstudien andere Wirkungen aufgetreten waren.",
+  "can_1": "E214, E215, E218, E219, die entsprechenden INS-Nummern sowie Methylparaben- oder Ethylparabennamen erkennen, wenn sie ausdrücklich angegeben sind.",
+  "can_2": "Erklären, dass Methyl- und Ethylparaben einen gemeinsamen JECFA-Gruppen-ADI haben, während Propylparaben wegen unterschiedlicher Wirkungen in Tierstudien später ausgeschlossen wurde.",
+  "cannot_1": "Alle Stoffe mit der Bezeichnung Paraben so behandeln, als hätten sie dieselbe Evidenz oder denselben Aufnahmewert.",
+  "cannot_2": "Aus der Zutatenliste die vorhandene Menge bestimmen oder Bedenken aus kosmetischer Exposition direkt auf ein bestimmtes Lebensmittel übertragen.",
   "sources": [
     {
-      "label": "EFSA-Neubewertung von Parabenen als Lebensmittelzusatzstoffe",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+      "label": "JECFA — Methyl p-hydroxybenzoate / methylparaben (INS 218)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3204"
     },
     {
-      "label": "WHO Stand der Wissenschaft zu endokrinen Disruptoren (2012)",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "JECFA — Ethyl p-hydroxybenzoate / ethylparaben (INS 214)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/371"
+    },
+    {
+      "label": "JECFA — Propylparaben: excluded from group ADI in 2006",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/330"
+    },
+    {
+      "label": "EFSA — Para-hydroxybenzoates (E214–219), 2004",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2004.83"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "Parabene",
-  "description": "Eine Gruppe synthetischer Verbindungen, die häufig als chemische Konservierungsmittel in Lebensmitteln und Kosmetika verwendet werden."
+  "description": "Parabene sind Konservierungsstoffe, die vor allem aus Kosmetika bekannt sind; ihre Lebensmittelverwendung ist enger und JECFA behandelt nicht alle Parabene gleich."
 }

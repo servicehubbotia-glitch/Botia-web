@@ -1,28 +1,39 @@
 {
   "name": "Parabenler",
   "e_code": "E214, E215, E218, E219",
-  "aliases": "E214, ethyl p-hydroxybenzoate, ethylparaben, E215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, methyl p-hydroxybenzoate, methylparaben, E219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
-  "module_icon": "mujer.png",
+  "aliases": "E214, INS 214, ethyl p-hydroxybenzoate, ethylparaben, E215, INS 215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, INS 218, methyl p-hydroxybenzoate, methylparaben, E219, INS 219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "Gıda ve kozmetikte yaygın olarak kimyasal koruyucu olarak kullanılan bir grup sentetik bileşik.",
-  "why_botia": "Parabenlerin hepsinde aynı kanıt düzeyi bulunmamaktadır. EFSA, metilparaben, etilparaben ve bunların sodyum tuzları için tek bir alım limiti belirlemiştir. Propilparaben için ise bir limit belirleyememiştir. AB daha sonra E216 ve E217'yi gıda kullanımından çıkarmıştır.",
-  "can_1": "Etikette E214, E215, E218 veya E219'u arayın.",
-  "can_2": "E214, E215, E218 ve E219, EFSA alım limitini paylaşmaktadır. E216 ve E217, AB gıda kullanımından çıkarılmıştır. Yetkili bir paraben bulunması, doğurganlık üzerinde bir etki olduğunu kanıtlamaz.",
-  "cannot_1": "Diyette bulunan birden fazla parabenin kümülatif maruziyetini veya 'kokteyl etkisini' değerlendiremez.",
-  "cannot_2": "Gıda matrisindeki koruyucunun kesin konsantrasyonunu belirleyemez.",
+  "what_is": "Parabenler küf ve maya gelişimini yavaşlatan koruyuculardır. Bu gıda fişi etilparaben, metilparaben ve bunların sodyum tuzlarını kapsar: E214, E215, E218 ve E219.",
+  "why_botia": "Parabenler küf ve mayayı durdurarak gıdayı korur. Kozmetiklerden çok daha iyi bilinirler; gıdadaki kullanımları ise çok daha sınırlıdır ve gıda etiketlerinde çok daha az görülürler. Tüm parabenler aynı şekilde davranmaz: JECFA metilparaben ve etilparaben için 0–10 mg/kg vücut ağırlığı grup ADI'sini korudu, ancak hayvan çalışmalarında farklı etkiler görüldükten sonra propilparabeni daha sonra bu gruptan çıkardı.",
+  "can_1": "E214, E215, E218, E219, bunların INS numaraları ile metilparaben veya etilparaben adlarını açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Metilparaben ve etilparabenin ortak bir JECFA grup ADI'sine sahip olduğunu, propilparabenin ise hayvan çalışmalarındaki farklı etkiler nedeniyle daha sonra gruptan çıkarıldığını açıklamak.",
+  "cannot_1": "Paraben adı taşıyan her maddeyi aynı kanıta veya aynı alım sınırına sahipmiş gibi değerlendirmek.",
+  "cannot_2": "Yalnızca içerik listesinden miktarı belirlemek veya kozmetik maruziyetine ilişkin kaygıları doğrudan belirli bir gıdaya aktarmak.",
   "sources": [
     {
-      "label": "EFSA'nın gıda katkı maddesi olarak parabenlerin yeniden değerlendirmesi",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+      "label": "JECFA — Methyl p-hydroxybenzoate / methylparaben (INS 218)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3204"
     },
     {
-      "label": "WHO Endokrin Bozucu Kimyasalların Bilimsel Durumu (2012)",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "JECFA — Ethyl p-hydroxybenzoate / ethylparaben (INS 214)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/371"
+    },
+    {
+      "label": "JECFA — Propylparaben: excluded from group ADI in 2006",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/330"
+    },
+    {
+      "label": "EFSA — Para-hydroxybenzoates (E214–219), 2004",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2004.83"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "Parabenler",
-  "description": "Gıda ve kozmetikte yaygın olarak kimyasal koruyucu olarak kullanılan bir grup sentetik bileşik."
+  "description": "Parabenler en çok kozmetiklerden bilinen koruyuculardır; gıdadaki kullanımları daha sınırlıdır ve JECFA tüm parabenleri aynı şekilde değerlendirmez."
 }

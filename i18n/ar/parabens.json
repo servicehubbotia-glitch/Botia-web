@@ -1,28 +1,39 @@
 {
   "name": "البارابين",
   "e_code": "E214, E215, E218, E219",
-  "aliases": "E214, ethyl p-hydroxybenzoate, ethylparaben, E215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, methyl p-hydroxybenzoate, methylparaben, E219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
-  "module_icon": "mujer.png",
+  "aliases": "E214, INS 214, ethyl p-hydroxybenzoate, ethylparaben, E215, INS 215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, INS 218, methyl p-hydroxybenzoate, methylparaben, E219, INS 219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "مجموعة من المركبات الاصطناعية المستخدمة على نطاق واسع كمواد حافظة كيميائية في الأغذية ومستحضرات التجميل.",
-  "why_botia": "البارابين ليست جميعها بنفس الأدلة. حددت الهيئة الأوروبية لسلامة الأغذية (EFSA) حدًا واحدًا للاستهلاك لميثيل البارابين وإيثيل البارابين وأملاحهما الصوديومية. ولم تتمكن من تحديد حد لبروبيل البارابين. لاحقًا، أزال الاتحاد الأوروبي E216 وE217 من الاستخدام الغذائي.",
-  "can_1": "حدد E214 أو E215 أو E218 أو E219 على الملصق.",
-  "can_2": "E214 وE215 وE218 وE219 تتشارك في حدّ intake محدد من EFSA. تمت إزالة E216 وE217 من الاستخدام الغذائي في الاتحاد الأوروبي. العثور على بارابين مصرح به لا يثبت وجود تأثير على الخصوبة.",
-  "cannot_1": "تقييم التعرض التراكمي أو 'تأثير الكوكتيل' لعدة بارابين موجودة في النظام الغذائي.",
-  "cannot_2": "تحديد التركيز الدقيق للمادة الحافظة في المصفوفة الغذائية.",
+  "what_is": "البارابينات مواد حافظة تبطئ نمو العفن والخمائر. تغطي هذه الصفحة الغذائية إيثيل بارابين وميثيل بارابين وأملاحهما الصوديومية: E214 وE215 وE218 وE219.",
+  "why_botia": "تحافظ البارابينات على الطعام عن طريق إيقاف نمو العفن والخمائر. وهي معروفة أكثر بكثير من استخدامها في مستحضرات التجميل، بينما استخدامها في الأغذية أضيق بكثير وتظهر بدرجة أقل على ملصقات الطعام. ولا تتصرف جميع البارابينات بالطريقة نفسها: أبقت JECFA على ADI جماعية قدرها 0–10 ملغ/كغ من وزن الجسم لميثيل بارابين وإيثيل بارابين، ثم استبعدت بروبيل بارابين بعد ظهور تأثيرات مختلفة في دراسات على الحيوانات.",
+  "can_1": "اكتشاف E214 وE215 وE218 وE219 وأرقام INS المقابلة وأسماء ميثيل بارابين أو إيثيل بارابين عندما تكون مذكورة صراحة.",
+  "can_2": "شرح أن ميثيل بارابين وإيثيل بارابين يشتركان في ADI جماعية لدى JECFA، بينما استُبعد بروبيل بارابين لاحقاً بسبب تأثيرات مختلفة ظهرت في دراسات على الحيوانات.",
+  "cannot_1": "اعتبار كل مادة تحمل اسم بارابين وكأن لها الأدلة نفسها أو حد المدخول نفسه.",
+  "cannot_2": "تحديد الكمية الموجودة من قائمة المكونات أو نقل المخاوف المتعلقة بالتعرض من مستحضرات التجميل مباشرة إلى غذاء معين.",
   "sources": [
     {
-      "label": "إعادة تقييم EFSA للبارابين كمضافات غذائية",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+      "label": "JECFA — Methyl p-hydroxybenzoate / methylparaben (INS 218)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3204"
     },
     {
-      "label": "حالة العلم لمنظمة الصحة العالمية حول المواد الكيميائية المعطلة للغدد الصماء (2012)",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "JECFA — Ethyl p-hydroxybenzoate / ethylparaben (INS 214)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/371"
+    },
+    {
+      "label": "JECFA — Propylparaben: excluded from group ADI in 2006",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/330"
+    },
+    {
+      "label": "EFSA — Para-hydroxybenzoates (E214–219), 2004",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2004.83"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "البارابين",
-  "description": "مجموعة من المركبات الاصطناعية المستخدمة على نطاق واسع كمواد حافظة كيميائية في الأغذية ومستحضرات التجميل."
+  "description": "البارابينات مواد حافظة معروفة أكثر من مستحضرات التجميل؛ استخدامها الغذائي أضيق وJECFA لا تتعامل مع جميع البارابينات بالطريقة نفسها."
 }

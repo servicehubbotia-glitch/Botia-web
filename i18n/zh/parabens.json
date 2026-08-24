@@ -1,28 +1,39 @@
 {
   "name": "对羟基苯甲酸酯类",
   "e_code": "E214, E215, E218, E219",
-  "aliases": "E214, ethyl p-hydroxybenzoate, ethylparaben, E215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, methyl p-hydroxybenzoate, methylparaben, E219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
-  "module_icon": "mujer.png",
+  "aliases": "E214, INS 214, ethyl p-hydroxybenzoate, ethylparaben, E215, INS 215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, INS 218, methyl p-hydroxybenzoate, methylparaben, E219, INS 219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
+  "module_icon": "enumbers.png",
   "layers": [
-    "woman",
     "enumbers"
   ],
-  "what_is": "一组广泛用作食品和化妆品中化学防腐剂的合成化合物。",
-  "why_botia": "对羟基苯甲酸酯类的证据并不完全相同。欧洲食品安全局为对羟基苯甲酸甲酯、对羟基苯甲酸乙酯及其钠盐设定了一个摄入限量，但未能为对羟基苯甲酸丙酯设定限量。欧盟后来将E216和E217从食品用途中移除。",
-  "can_1": "在标签上找到E214、E215、E218或E219。",
-  "can_2": "E214、E215、E218和E219共享欧洲食品安全局的摄入限量。E216和E217已从欧盟食品用途中移除。发现一种获准使用的对羟基苯甲酸酯并不能证明其对生育能力有影响。",
-  "cannot_1": "评估饮食中多种对羟基苯甲酸酯类的累积暴露或“鸡尾酒效应”。",
-  "cannot_2": "确定食品基质中防腐剂的精确浓度。",
+  "what_is": "对羟基苯甲酸酯类是用于抑制霉菌和酵母生长的防腐剂。本食品页面涵盖对羟基苯甲酸乙酯、甲酯及其钠盐：E214、E215、E218 和 E219。",
+  "why_botia": "对羟基苯甲酸酯通过抑制霉菌和酵母来保存食品。人们更熟悉它们在化妆品中的使用，而在食品中的用途要窄得多，在食品标签上也少见得多。不同的对羟基苯甲酸酯并不具有相同的表现：JECFA 对甲酯和乙酯保留了每天每公斤体重0–10毫克的组ADI，但后来因动物研究出现不同影响而将丙酯排除在该组之外。",
+  "can_1": "识别明确标示的 E214、E215、E218、E219、对应的 INS 编号，以及 methylparaben 或 ethylparaben 名称。",
+  "can_2": "解释甲酯和乙酯共用一个JECFA组ADI，而丙酯因动物研究中出现不同影响而后来被排除。",
+  "cannot_1": "把所有称为 paraben 的物质当作具有相同证据或相同摄入限值。",
+  "cannot_2": "仅根据配料表确定实际含量，或把来自化妆品暴露的担忧直接套用到某一种食品上。",
   "sources": [
     {
-      "label": "EFSA对对羟基苯甲酸酯类作为食品添加剂的重新评估",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives"
+      "label": "JECFA — Methyl p-hydroxybenzoate / methylparaben (INS 218)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3204"
     },
     {
-      "label": "WHO内分泌干扰化学物质科学现状（2012年）",
-      "url": "https://apps.who.int/iris/bitstream/handle/10665/78101/9789241505031_eng.pdf"
+      "label": "JECFA — Ethyl p-hydroxybenzoate / ethylparaben (INS 214)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/371"
+    },
+    {
+      "label": "JECFA — Propylparaben: excluded from group ADI in 2006",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/330"
+    },
+    {
+      "label": "EFSA — Para-hydroxybenzoates (E214–219), 2004",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2004.83"
+    },
+    {
+      "label": "European Union — Regulation (EC) No 1333/2008 on food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "对羟基苯甲酸酯类",
-  "description": "一组广泛用作食品和化妆品中化学防腐剂的合成化合物。"
+  "description": "对羟基苯甲酸酯是更常因化妆品而被人熟知的防腐剂；食品用途较窄，JECFA也没有把所有此类物质视为相同。"
 }
