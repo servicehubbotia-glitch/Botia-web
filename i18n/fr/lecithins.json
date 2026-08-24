@@ -9,22 +9,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Un mélange naturel de phosphatides obtenu par des procédés physiques à partir de denrées alimentaires animales ou végétales.",
-  "why_botia": "Il le signale car c'est un émulsifiant qui peut être dérivé de sources végétales (comme le soja) ou animales (comme le jaune d'œuf), ce qui impacte les préférences végétaliennes et allergènes.",
-  "can_1": "Détecter la présence de E322 ou de lécithine sur la liste des ingrédients.",
-  "can_2": "Avertir les consommateurs si l'étiquette spécifie une source hautement allergène comme l'œuf ou le soja.",
-  "cannot_1": "Identifier la source botanique ou animale si le fabricant déclare uniquement « lécithines » sous des termes génériques là où cela est autorisé.",
-  "cannot_2": "Déterminer si du peroxyde d'hydrogène a été utilisé pour blanchir la lécithine lors du traitement.",
+  "what_is": "Les lécithines sont des mélanges riches en phospholipides qui aident l’huile et l’eau à rester mélangées. Elles peuvent provenir de sources végétales ou animales.",
+  "why_botia": "Les lécithines permettent à l’huile et à l’eau de se mélanger, raison pour laquelle elles sont utilisées dans le chocolat, la margarine et les produits de boulangerie. Elles peuvent provenir du soja, du tournesol ou de l’œuf, et des traces de protéines de la source peuvent subsister — c’est pourquoi dans l’UE, si elles proviennent du soja ou de l’œuf, cette origine doit être indiquée. Lorsque l’étiquette indique seulement « lécithines » sans déclarer soja ni œuf, l’origine exacte n’est pas identifiée; il peut s’agir de tournesol ou d’une autre source qui ne figure pas parmi les allergènes à déclaration obligatoire dans l’UE.",
+  "can_1": "Détecter E322, lécithine, lécithines et les déclarations précisant une origine soja, tournesol ou œuf.",
+  "can_2": "Expliquer l’importance des protéines résiduelles et identifier soja ou œuf lorsque la déclaration obligatoire des allergènes dans l’UE révèle la source.",
+  "cannot_1": "Déterminer l’origine exacte lorsque l’étiquette indique seulement « lécithines » sans autre indication de source.",
+  "cannot_2": "Déterminer la quantité de protéines résiduelles ou de lécithine à partir de la seule liste d’ingrédients.",
   "sources": [
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Lécithine, fiche chimique 1477",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1477"
     },
     {
-      "label": "Règlement (UE) n° 1169/2011",
+      "label": "EFSA — Lécithines E322 : protéines résiduelles et hypersensibilité",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-lecithins-e-322-uses-foods"
+    },
+    {
+      "label": "Règlement UE 1169/2011 — déclaration obligatoire des allergènes soja et œuf",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Règlement UE 231/2012 — spécifications des lécithines E322",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],
   "title": "Lécithines",
-  "description": "Un mélange naturel de phosphatides obtenu par des procédés physiques à partir de denrées alimentaires animales ou végétales."
+  "description": "Les lécithines (E322) sont des mélanges émulsifiants de phospholipides provenant notamment du soja, du tournesol ou de l’œuf; les protéines résiduelles de la source peuvent compter pour l’allergie et l’étiquetage UE."
 }

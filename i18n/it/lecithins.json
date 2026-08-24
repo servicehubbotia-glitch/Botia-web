@@ -9,22 +9,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Una miscela naturale di fosfatidi ottenuta mediante procedure fisiche da alimenti di origine animale o vegetale.",
-  "why_botia": "Lo segnala perché è un emulsionante che può derivare da fonti vegetali (come la soia) o animali (come il tuorlo d'uovo), con un impatto sulle preferenze vegane e sugli allergeni.",
-  "can_1": "Rileva la presenza di E322 o lecitina nell'elenco degli ingredienti.",
-  "can_2": "Avvisare i consumatori se l'etichetta specifica una fonte altamente allergenica come uova o soia.",
-  "cannot_1": "Identificare la fonte botanica o animale se il produttore dichiara solo \"lecitine\" con termini generici laddove consentito.",
-  "cannot_2": "Determinare se il perossido di idrogeno è stato utilizzato per sbiancare la lecitina durante la lavorazione.",
+  "what_is": "Le lecitine sono miscele ricche di fosfolipidi che aiutano olio e acqua a rimanere mescolati. Possono provenire da fonti vegetali o animali.",
+  "why_botia": "Le lecitine fanno mescolare olio e acqua e per questo vengono usate nel cioccolato, nella margarina e nei prodotti da forno. Possono provenire da soia, girasole o uovo e possono rimanere tracce di proteine della fonte — per questo nell’UE, se provengono da soia o uovo, tale origine deve essere indicata. Quando l’etichetta dice soltanto “lecitine” e non dichiara soia né uovo, l’origine esatta non è identificata; può essere girasole o un’altra fonte non compresa tra gli allergeni soggetti a dichiarazione obbligatoria nell’UE.",
+  "can_1": "Rilevare E322, lecitina, lecitine e dichiarazioni di origine come lecitina di soia, girasole o uovo.",
+  "can_2": "Spiegare perché le proteine residue della fonte sono rilevanti e identificare soia o uovo quando la dichiarazione allergeni UE rivela la fonte.",
+  "cannot_1": "Determinare l’origine esatta quando l’etichetta indica solo “lecitine” senza dichiarare altrove la fonte.",
+  "cannot_2": "Determinare la quantità di proteine residue o di lecitina dalla sola lista ingredienti.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Lecitina, scheda chimica 1477",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1477"
     },
     {
-      "label": "Regolamento (UE) n. 1169/2011",
+      "label": "EFSA — Lecitine E322: proteine residue e ipersensibilità",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-lecithins-e-322-uses-foods"
+    },
+    {
+      "label": "Regolamento UE 1169/2011 — dichiarazione obbligatoria degli allergeni soia e uovo",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regolamento UE 231/2012 — specifiche delle lecitine E322",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],
   "title": "Lecitine",
-  "description": "Una miscela naturale di fosfatidi ottenuta mediante procedure fisiche da alimenti di origine animale o vegetale."
+  "description": "Le lecitine (E322) sono miscele emulsionanti di fosfolipidi provenienti anche da soia, girasole o uovo; le proteine residue della fonte possono essere rilevanti per allergia ed etichettatura UE."
 }

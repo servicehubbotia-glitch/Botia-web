@@ -9,22 +9,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Una mezcla natural de fosfátidos obtenida mediante procedimientos físicos a partir de alimentos de origen animal o vegetal.",
-  "why_botia": "Lo señala porque es un emulsionante que puede derivarse de fuentes vegetales (como la soja) o animales (como la yema de huevo), lo que afecta las preferencias veganas y de alérgenos.",
-  "can_1": "Detectar la presencia de E322 o lecitina en la lista de ingredientes.",
-  "can_2": "Advertir a los consumidores si la etiqueta especifica una fuente altamente alergénica como huevo o soja.",
-  "cannot_1": "Identificar la fuente botánica o animal si el fabricante solo declara 'lecitinas' bajo términos genéricos donde esté permitido.",
-  "cannot_2": "Determinar si se utilizó peróxido de hidrógeno para blanquear la lecitina durante el procesamiento.",
+  "what_is": "Las lecitinas son mezclas ricas en fosfolípidos que ayudan a mantener mezclados el aceite y el agua. Pueden obtenerse de fuentes vegetales o animales.",
+  "why_botia": "Las lecitinas hacen que el aceite y el agua se mezclen, y por eso están en el chocolate, la margarina y la bollería. Pueden venir de soja, girasol o huevo, y con ellas pueden quedar restos de proteína del origen — por eso en la UE, si son de soja o de huevo, debe indicarse. Cuando la etiqueta solo dice “lecitinas” y no declara soja ni huevo, el origen no queda identificado: puede ser girasol u otra fuente no incluida entre los alérgenos de declaración obligatoria de la UE.",
+  "can_1": "Detectar E322, lecitina, lecitinas y declaraciones de origen como lecitina de soja, girasol o huevo.",
+  "can_2": "Explicar por qué importan las proteínas residuales del origen e identificar soja o huevo cuando la declaración obligatoria de alérgenos en la UE revela la fuente.",
+  "cannot_1": "Determinar el origen exacto cuando la etiqueta solo dice “lecitinas” y no declara ninguna fuente por otra vía.",
+  "cannot_2": "Determinar la cantidad de proteína residual o la cantidad de lecitina a partir de la lista de ingredientes.",
   "sources": [
     {
-      "label": "Reglamento (UE) No 231/2012 de la Comisión",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Lecitina, registro químico 1477",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1477"
     },
     {
-      "label": "Reglamento (UE) No 1169/2011",
+      "label": "EFSA — Lecitinas E322: proteínas residuales e hipersensibilidad",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-lecithins-e-322-uses-foods"
+    },
+    {
+      "label": "Reglamento UE 1169/2011 — declaración obligatoria de los alérgenos soja y huevo",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Reglamento UE 231/2012 — especificaciones de las lecitinas E322",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],
   "title": "Lecitinas",
-  "description": "Una mezcla natural de fosfátidos obtenida mediante procedimientos físicos a partir de alimentos de origen animal o vegetal."
+  "description": "Las lecitinas (E322) son mezclas emulsionantes de fosfolípidos que pueden proceder de soja, girasol o huevo; las proteínas residuales del origen pueden importar para la alergia y el etiquetado en la UE."
 }

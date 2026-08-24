@@ -9,22 +9,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Un amestec natural de fosfatide obținut prin proceduri fizice din alimente de origine animală sau vegetală.",
-  "why_botia": "Îl semnalează deoarece este un emulgator care poate fi derivat din surse vegetale (cum ar fi soia) sau surse animale (cum ar fi gălbenușul de ou), afectând preferințele vegane și alergenii.",
-  "can_1": "Detecta prezența E322 sau a lecitinei pe lista de ingrediente.",
-  "can_2": "Avertiza consumatorii dacă eticheta specifică o sursă puternic alergenă, cum ar fi oul sau soia.",
-  "cannot_1": "Identifica sursa botanică sau animală dacă producătorul declară doar 'lecitine' în termeni generici acolo unde este permis.",
-  "cannot_2": "Determina dacă peroxidul de hidrogen a fost utilizat pentru albirea lecitinei în timpul procesării.",
+  "what_is": "Lecitinele sunt amestecuri bogate în fosfolipide care ajută uleiul și apa să rămână amestecate. Pot proveni din surse vegetale sau animale.",
+  "why_botia": "Lecitinele fac ca uleiul și apa să se amestece, de aceea sunt folosite în ciocolată, margarină și produse de panificație. Pot proveni din soia, floarea-soarelui sau ou, iar urme de proteine ale sursei pot rămâne — de aceea, în UE, dacă provin din soia sau ou, sursa trebuie declarată. Când eticheta spune doar „lecitine” și nu declară soia sau oul, originea exactă nu este identificată; poate fi floarea-soarelui sau altă sursă care nu se află printre alergenii cu declarare obligatorie în UE.",
+  "can_1": "Detecta E322, lecitină, lecitine și declarațiile de origine precum lecitină din soia, floarea-soarelui sau ou.",
+  "can_2": "Explica importanța proteinelor reziduale ale sursei și identifica soia sau oul atunci când declarația obligatorie de alergeni UE dezvăluie sursa.",
+  "cannot_1": "Determina originea exactă atunci când eticheta spune doar „lecitine” fără altă declarație a sursei.",
+  "cannot_2": "Determina cantitatea de proteine reziduale sau cantitatea de lecitină din lista ingredientelor.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Lecitină, înregistrarea chimică 1477",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1477"
     },
     {
-      "label": "Regulamentul (UE) nr. 1169/2011",
+      "label": "EFSA — Lecitine E322: proteine reziduale și hipersensibilitate",
+      "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-lecithins-e-322-uses-foods"
+    },
+    {
+      "label": "Regulamentul UE 1169/2011 — declararea obligatorie a alergenilor soia și ou",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "Regulamentul UE 231/2012 — specificațiile lecitinelor E322",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
     }
   ],
   "title": "Lecitine",
-  "description": "Un amestec natural de fosfatide obținut prin proceduri fizice din alimente de origine animală sau vegetală."
+  "description": "Lecitinele (E322) sunt amestecuri emulsionante de fosfolipide provenite inclusiv din soia, floarea-soarelui sau ou; proteinele reziduale ale sursei pot conta pentru alergii și etichetarea UE."
 }
