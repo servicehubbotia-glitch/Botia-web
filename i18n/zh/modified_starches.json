@@ -7,22 +7,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "一类经过化学改性以改变其功能特性（如增稠性、稳定性、乳化性或耐加工性）的淀粉。在EU中，获准使用的改性淀粉E编号是具体的条目，而非单一的通用代码“E1400s”。",
-  "why_botia": "BOTIA 将这些术语归为一类，因为标签上可能标注为“改性淀粉”，或标明某种具体的改性淀粉添加剂。除非标签上提供了具体名称或代码，否则该类别名称不会披露确切的改性方式。",
-  "can_1": "检测“改性淀粉/改性食品淀粉”以及所列出的具体改性淀粉名称和E编号。",
-  "can_2": "在显示“质地”和“E编号”图层的同时，保留通用声明与特定添加剂之间的区别。",
-  "cannot_1": "当标签上仅标注“改性淀粉”时，请确定其具体的化学改性方式。",
-  "cannot_2": "除非另有说明，否则应推断出植物性淀粉的来源或浓度。",
+  "what_is": "一组经过处理以改变增稠、稳定性以及耐热、耐冷或耐酸等性质的淀粉。",
+  "why_botia": "“改性淀粉”并不意味着转基因：它表示淀粉经过处理，以改变性质，使其在加热、低温或酸性条件下更能保持质地。大多数像普通淀粉一样被消化，但部分改性淀粉会部分抵抗消化，并表现为抗性淀粉。此类添加剂有十几种以上，标签很少说明具体是哪一种。JECFA 认为没有必要设定数值摄入限量。",
+  "can_1": "识别一般性的“改性淀粉”声明以及这一类别中的具体 E 编号和名称。",
+  "can_2": "说明“改性”指工艺处理而不是遗传修饰，并说明不同改性淀粉的消化性和功能可能不同。",
+  "cannot_1": "当标签只写“改性淀粉”时确定具体亚型。",
+  "cannot_2": "仅根据一般性声明确定该淀粉具体有多容易消化或提供多少抗性淀粉。",
   "sources": [
     {
-      "label": "第EC号条例（1333/2008）——食品添加剂统一清单及使用条件",
+      "label": "JECFA — Modified starches, chemical record 398",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/398"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — modified starch food additives",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "欧盟委员会第231/2012号条例（EU）——经批准的食品添加剂规格",
+      "label": "EU Regulation 231/2012 — specifications for authorised modified starches",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "FAO — Starch digestibility and resistant starch",
+      "url": "https://www.fao.org/4/w8079e/w8079e07.htm"
     }
   ],
   "title": "改性淀粉",
-  "description": "一类经过化学改性以改变其功能特性（如增稠性、稳定性、乳化性或耐加工性）的淀粉。在EU中，获准使用的改性淀粉E编号是具体的条目，而非单一的通用代码“E1400s”。"
+  "description": "“改性淀粉”并不意味着转基因。它指经过工艺处理、改变技术性质的淀粉。JECFA 没有设定数值 ADI。"
 }

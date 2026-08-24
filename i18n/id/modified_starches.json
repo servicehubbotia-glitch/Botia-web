@@ -7,22 +7,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Kelompok pati yang telah dimodifikasi secara kimiawi untuk mengubah sifat fungsionalnya, seperti kemampuan mengentalkan, stabilitas, kemampuan mengemulsi, atau ketahanan terhadap proses pengolahan. Dalam kode EU, nomor E untuk pati modifikasi yang diizinkan merupakan entri-entri spesifik, bukan satu kode generik 'E1400s'.",
-  "why_botia": "BOTIA mengelompokkan istilah-istilah ini karena label mungkin mencantumkan “pati yang dimodifikasi” atau menyebutkan aditif pati yang dimodifikasi tertentu. Nama kelompok tersebut tidak mengungkapkan jenis modifikasi yang tepat, kecuali jika label mencantumkan nama atau kode spesifiknya.",
-  "can_1": "Mendeteksi 'pati yang dimodifikasi/pati pangan yang dimodifikasi' serta nama-nama pati yang dimodifikasi tertentu yang tercantum dan nomor E-nya.",
-  "can_2": "Tampilkan lapisan tekstur dan nomor E sambil tetap mempertahankan perbedaan antara deklarasi umum dan bahan tambahan tertentu.",
-  "cannot_1": "Tentukan modifikasi kimiawi yang tepat apabila pada label hanya tercantum 'pati yang dimodifikasi'.",
-  "cannot_2": "Tentukan sumber pati nabati atau konsentrasinya, kecuali jika hal tersebut telah disebutkan secara terpisah.",
+  "what_is": "Keluarga pati yang diproses untuk mengubah sifat seperti pengentalan, stabilitas dan ketahanan terhadap panas, dingin atau keasaman.",
+  "why_botia": "“Pati termodifikasi” tidak berarti hasil rekayasa genetika: pati telah diproses untuk mengubah sifatnya agar lebih tahan panas, dingin atau keasaman tanpa kehilangan tekstur. Sebagian besar dicerna seperti pati biasa, tetapi beberapa jenis sebagian tahan terhadap pencernaan dan berperilaku seperti pati resisten. Ada lebih dari selusin jenis dan label jarang menyebutkan jenis yang tepat. JECFA tidak melihat perlunya menetapkan batas asupan numerik.",
+  "can_1": "Mendeteksi deklarasi umum “pati termodifikasi” serta nomor E dan nama spesifik dalam keluarga ini.",
+  "can_2": "Menjelaskan bahwa “termodifikasi” berarti perlakuan teknologi, bukan modifikasi genetik, dan bahwa jenis yang berbeda dapat memiliki daya cerna dan fungsi yang berbeda.",
+  "cannot_1": "Menentukan subtipe yang tepat ketika label hanya menyebut “pati termodifikasi”.",
+  "cannot_2": "Menentukan dari deklarasi umum seberapa mudah pati tertentu dicerna atau berapa banyak pati resisten yang diberikannya.",
   "sources": [
     {
-      "label": "Peraturan (EC) Nomor 1333/2008 — Daftar gabungan dan ketentuan penggunaan bahan tambahan pangan",
+      "label": "JECFA — Modified starches, chemical record 398",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/398"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — modified starch food additives",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "Peraturan Komisi (EU) Nomor 231/2012 — spesifikasi bahan tambahan pangan yang diizinkan",
+      "label": "EU Regulation 231/2012 — specifications for authorised modified starches",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "FAO — Starch digestibility and resistant starch",
+      "url": "https://www.fao.org/4/w8079e/w8079e07.htm"
     }
   ],
   "title": "Pati modifikasi",
-  "description": "Kelompok pati yang telah dimodifikasi secara kimiawi untuk mengubah sifat fungsionalnya, seperti kemampuan mengentalkan, stabilitas, kemampuan mengemulsi, atau ketahanan terhadap proses pengolahan. Dalam kode EU, nomor E untuk pati modifikasi yang diizinkan merupakan entri-entri spesifik, bukan satu kode generik 'E1400s'."
+  "description": "“Pati termodifikasi” tidak berarti hasil rekayasa genetika. Istilah ini berarti pati yang diproses untuk mengubah sifat teknologinya. JECFA tidak menetapkan ADI numerik."
 }

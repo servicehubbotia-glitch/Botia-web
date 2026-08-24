@@ -7,22 +7,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Familia de almidones modificados químicamente para alterar propiedades funcionales como el espesamiento, la estabilidad, la emulsificación o la resistencia al procesamiento. En el EU, los números E de almidones modificados autorizados son entradas específicas, en lugar de un único código genérico «E1400s».",
-  "why_botia": "BOTIA agrupa estos términos porque las etiquetas pueden indicar «almidón modificado» o identificar un aditivo específico a base de almidón modificado. El nombre de la familia no revela la modificación exacta, a menos que la etiqueta indique el nombre o el código específico.",
-  "can_1": "Detectar «almidón modificado/almidón alimentario modificado», así como los nombres específicos de almidones modificados y los números E que figuran en la lista.",
-  "can_2": "Mostrar las capas de textura y números E, conservando al mismo tiempo la diferencia entre una declaración genérica y un aditivo específico.",
-  "cannot_1": "Identifica la modificación química exacta cuando en la etiqueta solo figure «almidón modificado».",
-  "cannot_2": "Deducir la fuente botánica del almidón o su concentración, a menos que se indique por separado.",
+  "what_is": "Una familia de almidones tratados para cambiar propiedades como el espesamiento, la estabilidad y la resistencia al calor, el frío o la acidez. Cada modificación produce un aditivo diferente.",
+  "why_botia": "“Almidón modificado” no significa transgénico: significa que el almidón se ha tratado para cambiar sus propiedades y hacer que aguante mejor el calor, el frío o la acidez sin perder textura. La mayoría se digiere como cualquier almidón, aunque algunos resisten parcialmente la digestión y se comportan como almidón resistente. Hay más de una docena de tipos y la etiqueta rara vez dice cuál es. JECFA no vio necesidad de fijarles un límite numérico.",
+  "can_1": "Detectar declaraciones genéricas de “almidón modificado” y los E-numbers y nombres específicos de esta familia.",
+  "can_2": "Explicar que “modificado” se refiere a un tratamiento tecnológico, no a modificación genética, y que distintos almidones modificados pueden tener diferente digestibilidad y función.",
+  "cannot_1": "Identificar el subtipo exacto cuando la etiqueta solo dice “almidón modificado”.",
+  "cannot_2": "Determinar a partir de la declaración genérica cuánto se digiere ese almidón concreto o cuánto almidón resistente aporta.",
   "sources": [
     {
-      "label": "Reglamento (EC) n.º 1333/2008 — Lista de la Unión y condiciones de uso de los aditivos alimentarios",
+      "label": "JECFA — Almidones modificados, registro químico 398",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/398"
+    },
+    {
+      "label": "Reglamento UE 1333/2008 — aditivos de almidón modificado",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "Reglamento (EU) de la Comisión n.º 231/2012 — especificaciones de los aditivos alimentarios autorizados",
+      "label": "Reglamento UE 231/2012 — especificaciones de almidones modificados autorizados",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "FAO — Digestibilidad del almidón y almidón resistente",
+      "url": "https://www.fao.org/4/w8079e/w8079e07.htm"
     }
   ],
   "title": "Almidones modificados",
-  "description": "Familia de almidones modificados químicamente para alterar propiedades funcionales como el espesamiento, la estabilidad, la emulsificación o la resistencia al procesamiento. En el EU, los números E de almidones modificados autorizados son entradas específicas, en lugar de un único código genérico «E1400s»."
+  "description": "“Almidón modificado” no significa transgénico: se refiere a almidón tratado para cambiar sus propiedades tecnológicas. Hay muchos tipos distintos y JECFA no fijó una IDA numérica."
 }

@@ -7,22 +7,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Grupa skrobi poddanych modyfikacji chemicznej w celu zmiany właściwości funkcjonalnych, takich jak zdolność zagęszczania, stabilność, zdolność emulgowania lub odporność na przetwarzanie. W przypadku EU dopuszczone numery E modyfikowanych skrobi to konkretne pozycje, a nie jeden ogólny kod „E1400s”.",
-  "why_botia": "BOTIA grupuje te terminy, ponieważ na etykietach mogą figurować nazwy takie jak „skrobia modyfikowana” lub konkretne nazwy dodatków zawierających skrobię modyfikowaną. Nazwa tej grupy nie wskazuje dokładnego rodzaju modyfikacji, chyba że na etykiecie podano konkretną nazwę lub kod.",
-  "can_1": "Wykrywać „skrobię modyfikowaną/modyfikowaną skrobię spożywczą” oraz wymienione konkretne nazwy skrobi modyfikowanej i numery E.",
-  "can_2": "Wyświetl warstwy „Tekstura” i „Numery E”, zachowując jednocześnie różnicę między ogólną deklaracją a konkretnym dodatkiem.",
-  "cannot_1": "Należy określić dokładny rodzaj modyfikacji chemicznej, gdy na etykiecie podano jedynie „skrobia modyfikowana”.",
-  "cannot_2": "Należy określić botaniczne źródło skrobi lub jej stężenie, o ile nie zostało to podane oddzielnie.",
+  "what_is": "Rodzina skrobi poddanych obróbce w celu zmiany właściwości, takich jak zagęszczanie, stabilność oraz odporność na ciepło, zimno lub kwasowość.",
+  "why_botia": "„Skrobia modyfikowana” nie oznacza genetycznie modyfikowanej: oznacza skrobię poddaną obróbce w celu zmiany jej właściwości, aby lepiej znosiła ciepło, zimno lub kwasowość bez utraty tekstury. Większość jest trawiona jak zwykła skrobia, ale niektóre częściowo opierają się trawieniu i zachowują się jak skrobia oporna. Istnieje ponad kilkanaście typów, a etykieta rzadko wskazuje dokładny. JECFA nie uznał za konieczne ustalenia liczbowego limitu.",
+  "can_1": "Rozpoznawać ogólne deklaracje skrobi modyfikowanej oraz konkretne numery E i nazwy tej rodziny.",
+  "can_2": "Wyjaśniać, że „modyfikowana” oznacza obróbkę technologiczną, nie modyfikację genetyczną, oraz że różne typy mogą różnić się strawnością i funkcją.",
+  "cannot_1": "Określić dokładnego podtypu, gdy etykieta podaje jedynie „skrobia modyfikowana”.",
+  "cannot_2": "Określić z ogólnej deklaracji strawności konkretnej skrobi ani ilości skrobi opornej.",
   "sources": [
     {
-      "label": "Rozporządzenie (EC) nr 1333/2008 — Unijny wykaz dodatków do żywności oraz warunki ich stosowania",
+      "label": "JECFA — Modified starches, chemical record 398",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/398"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — modified starch food additives",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "Rozporządzenie Komisji (EU) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
+      "label": "EU Regulation 231/2012 — specifications for authorised modified starches",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "FAO — Starch digestibility and resistant starch",
+      "url": "https://www.fao.org/4/w8079e/w8079e07.htm"
     }
   ],
   "title": "Skrobie modyfikowane",
-  "description": "Grupa skrobi poddanych modyfikacji chemicznej w celu zmiany właściwości funkcjonalnych, takich jak zdolność zagęszczania, stabilność, zdolność emulgowania lub odporność na przetwarzanie. W przypadku EU dopuszczone numery E modyfikowanych skrobi to konkretne pozycje, a nie jeden ogólny kod „E1400s”."
+  "description": "„Skrobia modyfikowana” nie oznacza modyfikacji genetycznej. Oznacza skrobię poddaną obróbce technologicznej. JECFA nie ustalił liczbowego ADI."
 }

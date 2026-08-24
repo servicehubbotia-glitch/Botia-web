@@ -7,22 +7,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Uma família de amidos quimicamente modificados para alterar propriedades funcionais, tais como espessamento, estabilidade, emulsificação ou resistência ao processamento. No EU, os números E relativos aos amidos modificados autorizados são entradas específicas, em vez de um único código genérico «E1400s».",
-  "why_botia": "BOTIA agrupa estes termos porque os rótulos podem indicar «amido modificado» ou identificar um aditivo específico à base de amido modificado. O nome da família não revela a modificação exata, a menos que o rótulo indique o nome ou código específico.",
-  "can_1": "Detetar «amido modificado/amido alimentar modificado» e os nomes específicos de amido modificado e números E indicados na lista.",
-  "can_2": "Mostrar as camadas de textura e de números E, mantendo a distinção entre uma declaração genérica e um aditivo específico.",
-  "cannot_1": "Identifique a modificação química exata quando o rótulo indicar apenas «amido modificado».",
-  "cannot_2": "Deduzir a origem botânica do amido ou a sua concentração, a menos que seja indicada separadamente.",
+  "what_is": "Uma família de amidos tratados para alterar propriedades como espessamento, estabilidade e resistência ao calor, frio ou acidez.",
+  "why_botia": "“Amido modificado” não significa geneticamente modificado: significa que o amido foi tratado para alterar as suas propriedades e resistir melhor ao calor, frio ou acidez sem perder textura. A maioria é digerida como amido comum, embora alguns resistam parcialmente à digestão e se comportem como amido resistente. Existem mais de uma dúzia de tipos e o rótulo raramente indica qual está presente. O JECFA não viu necessidade de fixar um limite numérico.",
+  "can_1": "Detetar declarações genéricas de amido modificado e os códigos E e nomes específicos desta família.",
+  "can_2": "Explicar que “modificado” se refere a tratamento tecnológico, não a modificação genética, e que diferentes tipos podem ter digestibilidade e funções diferentes.",
+  "cannot_1": "Identificar o subtipo exato quando o rótulo diz apenas “amido modificado”.",
+  "cannot_2": "Determinar pela declaração genérica quanto esse amido específico é digerível ou quanto amido resistente fornece.",
   "sources": [
     {
-      "label": "Regulamento (EC) n.º 1333/2008 — Lista da União e condições de utilização dos aditivos alimentares",
+      "label": "JECFA — Modified starches, chemical record 398",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/398"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — modified starch food additives",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "Regulamento da Comissão (EU) n.º 231/2012 — especificações relativas aos aditivos alimentares autorizados",
+      "label": "EU Regulation 231/2012 — specifications for authorised modified starches",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "FAO — Starch digestibility and resistant starch",
+      "url": "https://www.fao.org/4/w8079e/w8079e07.htm"
     }
   ],
   "title": "Amidos modificados",
-  "description": "Uma família de amidos quimicamente modificados para alterar propriedades funcionais, tais como espessamento, estabilidade, emulsificação ou resistência ao processamento. No EU, os números E relativos aos amidos modificados autorizados são entradas específicas, em vez de um único código genérico «E1400s»."
+  "description": "“Amido modificado” não significa geneticamente modificado. Significa amido tratado para alterar propriedades tecnológicas. O JECFA não fixou uma IDA numérica."
 }

@@ -7,22 +7,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Famille d'amidons modifiés chimiquement afin d'en modifier les propriétés fonctionnelles, telles que le pouvoir épaississant, la stabilité, le pouvoir émulsifiant ou la résistance à la transformation. Dans la norme EU, les numéros E correspondant aux amidons modifiés autorisés sont des mentions spécifiques et non un code générique unique « E1400s ».",
-  "why_botia": "Le code BOTIA regroupe ces termes, car les étiquettes peuvent mentionner « amidon modifié » ou désigner un additif spécifique à base d'amidon modifié. Le nom de la famille ne précise pas la nature exacte de la modification, sauf si l'étiquette indique le nom ou le code spécifique.",
-  "can_1": "Détecter les mentions « amidon modifié / amidon alimentaire modifié » ainsi que les noms spécifiques d'amidons modifiés et les numéros E indiqués.",
-  "can_2": "Afficher les calques « texture » et « numéros E » tout en conservant la distinction entre une déclaration générique et un additif spécifique.",
-  "cannot_1": "Déterminez la modification chimique exacte lorsque l'étiquette mentionne uniquement « amidon modifié ».",
-  "cannot_2": "Déduire la source botanique de l'amidon ou sa concentration, sauf si celle-ci est indiquée séparément.",
+  "what_is": "Une famille d’amidons traités pour modifier des propriétés comme l’épaississement, la stabilité et la résistance à la chaleur, au froid ou à l’acidité.",
+  "why_botia": "« Amidon modifié » ne signifie pas génétiquement modifié : cela veut dire que l’amidon a été traité pour changer ses propriétés et mieux résister à la chaleur, au froid ou à l’acidité sans perdre sa texture. La plupart sont digérés comme l’amidon ordinaire, mais certains résistent partiellement à la digestion et se comportent comme de l’amidon résistant. Il existe plus d’une douzaine de types et l’étiquette précise rarement lequel est présent. Le JECFA n’a pas jugé nécessaire de fixer une limite numérique.",
+  "can_1": "Identifier les déclarations génériques d’amidon modifié ainsi que les codes E et noms spécifiques de cette famille.",
+  "can_2": "Expliquer que « modifié » désigne un traitement technologique, pas une modification génétique, et que les différents amidons peuvent avoir une digestibilité et des fonctions différentes.",
+  "cannot_1": "Identifier le sous-type exact lorsque l’étiquette indique seulement « amidon modifié ».",
+  "cannot_2": "Déterminer à partir de la déclaration générique la digestibilité de l’amidon précis ou la quantité d’amidon résistant qu’il apporte.",
   "sources": [
     {
-      "label": "Règlement (EC) n° 1333/2008 — Liste communautaire et conditions d'utilisation des additifs alimentaires",
+      "label": "JECFA — Modified starches, chemical record 398",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/398"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — modified starch food additives",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "Règlement (EU) n° 231/2012 de la Commission — cahiers des charges relatifs aux additifs alimentaires autorisés",
+      "label": "EU Regulation 231/2012 — specifications for authorised modified starches",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "FAO — Starch digestibility and resistant starch",
+      "url": "https://www.fao.org/4/w8079e/w8079e07.htm"
     }
   ],
   "title": "Amidons modifiés",
-  "description": "Famille d'amidons modifiés chimiquement afin d'en modifier les propriétés fonctionnelles, telles que le pouvoir épaississant, la stabilité, le pouvoir émulsifiant ou la résistance à la transformation. Dans la norme EU, les numéros E correspondant aux amidons modifiés autorisés sont des mentions spécifiques et non un code générique unique « E1400s »."
+  "description": "« Amidon modifié » ne signifie pas génétiquement modifié. Il s’agit d’un amidon traité pour changer ses propriétés technologiques. Le JECFA n’a pas fixé de DJA numérique."
 }

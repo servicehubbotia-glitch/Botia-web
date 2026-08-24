@@ -7,22 +7,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "O familie de amidonuri modificate chimic pentru a le schimba proprietățile funcționale, precum capacitatea de îngroșare, stabilitatea, capacitatea de emulsificare sau rezistența la prelucrare. În cazul codului EU, numerele E autorizate pentru amidonul modificat sunt mențiuni specifice, și nu un singur cod generic de tipul „E1400s”.",
-  "why_botia": "BOTIA grupează acești termeni deoarece etichetele pot menționa „amidon modificat” sau pot identifica un aditiv specific pe bază de amidon modificat. Denumirea categoriei nu precizează modificarea exactă, cu excepția cazului în care eticheta indică denumirea sau codul specific.",
-  "can_1": "Să detecteze „amidonul modificat/amidonul alimentar modificat”, precum și denumirile specifice ale amidonului modificat și numerele E menționate.",
-  "can_2": "Afișează straturile „textură” și „numere E”, păstrând în același timp diferența dintre o declarație generică și un aditiv specific.",
-  "cannot_1": "Identificați modificarea chimică exactă atunci când pe etichetă apare doar mențiunea „amidon modificat”.",
-  "cannot_2": "Se va deduce sursa botanică a amidonului sau concentrația acestuia, cu excepția cazului în care acestea sunt declarate separat.",
+  "what_is": "O familie de amidonuri tratate pentru a modifica proprietăți precum îngroșarea, stabilitatea și rezistența la căldură, frig sau aciditate.",
+  "why_botia": "„Amidon modificat” nu înseamnă modificat genetic: înseamnă că amidonul a fost tratat pentru a-i schimba proprietățile și a rezista mai bine la căldură, frig sau aciditate fără să-și piardă textura. Majoritatea se digeră ca amidonul obișnuit, dar unele tipuri rezistă parțial digestiei și se comportă ca amidon rezistent. Există mai mult de o duzină de tipuri, iar eticheta rareori spune care este prezent. JECFA nu a considerat necesară o limită numerică.",
+  "can_1": "Identifica declarațiile generice de amidon modificat și codurile E și denumirile specifice din această familie.",
+  "can_2": "Explica faptul că „modificat” înseamnă tratament tehnologic, nu modificare genetică, și că tipurile pot diferi ca digestibilitate și funcție.",
+  "cannot_1": "Identifica subtipo exact atunci când eticheta spune doar „amidon modificat”.",
+  "cannot_2": "Determina din declarația generică cât de digestibil este amidonul respectiv sau cât amidon rezistent furnizează.",
   "sources": [
     {
-      "label": "Regulamentul (EC) nr. 1333/2008 — Lista comunitară și condițiile de utilizare a aditivilor alimentari",
+      "label": "JECFA — Modified starches, chemical record 398",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/398"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — modified starch food additives",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "Regulamentul Comisiei (EU) nr. 231/2012 — specificații privind aditivii alimentari autorizați",
+      "label": "EU Regulation 231/2012 — specifications for authorised modified starches",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "FAO — Starch digestibility and resistant starch",
+      "url": "https://www.fao.org/4/w8079e/w8079e07.htm"
     }
   ],
   "title": "Amidonuri modificate",
-  "description": "O familie de amidonuri modificate chimic pentru a le schimba proprietățile funcționale, precum capacitatea de îngroșare, stabilitatea, capacitatea de emulsificare sau rezistența la prelucrare. În cazul codului EU, numerele E autorizate pentru amidonul modificat sunt mențiuni specifice, și nu un singur cod generic de tipul „E1400s”."
+  "description": "„Amidon modificat” nu înseamnă modificat genetic. Înseamnă amidon tratat pentru a-i schimba proprietățile tehnologice. JECFA nu a stabilit o DZA numerică."
 }

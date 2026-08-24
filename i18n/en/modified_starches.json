@@ -7,22 +7,30 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code.",
-  "why_botia": "BOTIA groups these terms because labels may say modified starch or identify a specific modified-starch additive. The family name does not disclose the exact modification unless the label gives the specific name or code.",
-  "can_1": "Detect 'modified starch/modified food starch' and the listed specific modified-starch names and E-numbers.",
-  "can_2": "Show the texture and E-number layers while preserving the difference between a generic declaration and a specific additive.",
-  "cannot_1": "Identify the exact chemical modification when the label uses only 'modified starch'.",
-  "cannot_2": "Infer the botanical starch source or concentration unless it is separately declared.",
+  "what_is": "A family of starches treated to change technological properties such as thickening, stability and resistance to heat, cold or acidity. Different modifications produce different additives.",
+  "why_botia": "“Modified starch” does not mean genetically modified: it means the starch has been treated to change its properties and make it better withstand heat, cold or acidity without losing texture. Most is digested like ordinary starch, although some modified starches resist digestion partly and behave as resistant starch. There are more than a dozen types and the label rarely tells you which one is present. JECFA saw no need to set a numerical intake limit.",
+  "can_1": "Detect generic “modified starch” declarations and the specific modified-starch E-numbers and names listed in this family.",
+  "can_2": "Explain that “modified” refers to technological treatment, not genetic modification, and that different modified starches can have different digestibility and functional properties.",
+  "cannot_1": "Identify the exact modified-starch subtype when the label only says “modified starch”.",
+  "cannot_2": "Determine from the generic declaration how digestible that particular starch is or how much resistant starch it contributes.",
   "sources": [
     {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
+      "label": "JECFA — Modified starches, chemical record 398",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/398"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — modified starch food additives",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     },
     {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
+      "label": "EU Regulation 231/2012 — specifications for authorised modified starches",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "FAO — Starch digestibility and resistant starch",
+      "url": "https://www.fao.org/4/w8079e/w8079e07.htm"
     }
   ],
   "title": "Modified Starches",
-  "description": "A family of starches chemically modified to change functional properties such as thickening, stability, emulsification or resistance to processing. In the EU, the authorised modified-starch E-numbers are specific entries rather than a single generic 'E1400s' code."
+  "description": "Modified starch does not mean genetically modified. It refers to starch treated to change technological properties. There are many different types, and JECFA assigned no numerical ADI."
 }
