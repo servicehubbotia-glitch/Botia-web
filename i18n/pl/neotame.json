@@ -1,44 +1,36 @@
 {
   "name": "Neotam",
   "e_code": "E961",
-  "aliases": "E961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
+  "aliases": "E961, INS 961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Wysokointensywny niesłodzący środek słodzący, który może być również stosowany jako wzmacniacz smaku i jest skuteczny przy bardzo niskich poziomach użycia.",
-  "why_botia": "BOTIA oznacza to, ponieważ E961 to intensywny słodzik o szczególnych warunkach dopuszczenia do użycia, które różnią się w zależności od jurysdykcji.",
-  "can_1": "Zidentyfikuj E961 lub neotam, gdy jest zadeklarowany na etykiecie.",
-  "can_2": "Wyświetl warstwy informacyjne dotyczące numerów E i substancji słodzących.",
-  "cannot_1": "Określ użyte stężenie na podstawie jego pozycji na standardowej liście składników.",
-  "cannot_2": "Określić całkowite narażenie dietetyczne lub wydać indywidualną ocenę zdrowotną na podstawie samej obecności neotamu.",
+  "what_is": "Neotam (INS 961 / E961) jest intensywnym środkiem słodzącym chemicznie spokrewnionym z aspartamem. JECFA podaje siłę słodzącą około 7 000–13 000 razy większą niż sacharoza, zależnie od matrycy żywności, a Codex klasyfikuje go jako środek słodzący i wzmacniacz smaku.",
+  "why_botia": "Neotam jest około 8 000 razy słodszy od cukru, dlatego potrzebne są jedynie ilości liczone w miligramach — a lista składników nie pokazuje, ile go użyto. Jest pochodną aspartamu, ale przy normalnym stosowaniu powstaje tak mało fenyloalaniny, że JECFA uznała tę ilość za nieistotną nawet dla osób z fenyloketonurią; w przeciwieństwie do aspartamu przepisy UE nie wymagają ostrzeżenia o fenyloalaninie dla neotamu. JECFA ustaliła ADI na poziomie 0–2 mg/kg masy ciała.",
+  "can_1": "Wykrywać E961, INS 961, neotam i Newtame, gdy są wyraźnie zadeklarowane.",
+  "can_2": "Wyjaśniać jego bardzo wysoką siłę słodzącą, związek z aspartamem, ocenę JECFA dotyczącą fenyloalaniny oraz dopuszczalne dzienne spożycie JECFA.",
+  "cannot_1": "Określić liczby miligramów neotamu na podstawie samej deklaracji składników.",
+  "cannot_2": "Obliczyć całkowitego dziennego narażenia osoby ani określić zgodności z limitem właściwym dla danego rynku bez znajomości ilości i jurysdykcji.",
   "sources": [
     {
-      "label": "EFSA — Substancje słodzące",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Neotam (INS 961), zapis oceny",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5107"
     },
     {
-      "label": "FDA — Aspartam i inne substancje słodzące w żywności",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Monografia toksykologiczna neotamu (FAS 52)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v52je08.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Neotam (INS 961)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=340"
     },
     {
-      "label": "Rozporządzenie (EC) nr 1333/2008 w sprawie dodatków do żywności",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Specyfikacje EU dotyczące dopuszczonych dodatków do żywności — Rozporządzenie (EU) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Specyfikacja dodatku, INS 961",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=961"
+      "label": "Unia Europejska — Rozporządzenie (UE) nr 1169/2011, wymagania dotyczące oznakowania substancji słodzących",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Neotam",
-  "description": "Wysokointensywny niesłodzący słodzik, który może być również stosowany jako wzmacniacz smaku i jest skuteczny przy bardzo niskich poziomach użycia."
+  "description": "Neotam (INS 961 / E961) jest intensywnym środkiem słodzącym około 8 000 razy słodszym od cukru; JECFA ustaliła ADI 0–2 mg/kg masy ciała."
 }

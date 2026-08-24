@@ -1,44 +1,36 @@
 {
   "name": "Neotame",
   "e_code": "E961",
-  "aliases": "E961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
+  "aliases": "E961, INS 961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "A high-intensity non-nutritive sweetener that can also be used as a flavour enhancer and is effective at very low use levels.",
-  "why_botia": "BOTIA flags it because E961 is a high-intensity sweetener with specific authorised conditions of use that vary by jurisdiction.",
-  "can_1": "Identify E961 or neotame when declared on the label.",
-  "can_2": "Trigger the E-number and sweetener information layers.",
-  "cannot_1": "Determine the concentration used from its position in a standard ingredient list.",
-  "cannot_2": "Determine total dietary exposure or make an individual health judgement from the presence of neotame alone.",
+  "what_is": "Neotame (INS 961 / E961) is a high-intensity sweetener chemically related to aspartame. JECFA reports a sweetness potency of about 7,000–13,000 times that of sucrose depending on the food matrix, and Codex lists it as both a sweetener and a flavour enhancer.",
+  "why_botia": "Neotame is around 8,000 times sweeter than sugar, so only milligrams are needed — and the ingredient list cannot show how much was used. It derives from aspartame, but normal use produces so little phenylalanine that JECFA considered the amount insignificant even for people with phenylketonuria; unlike aspartame, EU rules do not require a phenylalanine warning for neotame. JECFA set an ADI of 0–2 mg/kg body weight.",
+  "can_1": "Detect E961, INS 961, neotame and Newtame when explicitly declared.",
+  "can_2": "Explain its extreme sweetness, its relationship to aspartame, the JECFA phenylalanine assessment and the JECFA acceptable daily intake.",
+  "cannot_1": "Determine how many milligrams of neotame are present from the ingredient declaration alone.",
+  "cannot_2": "Calculate a person's total daily exposure or determine compliance with a market-specific maximum level without knowing the amount and jurisdiction.",
   "sources": [
     {
-      "label": "EFSA — Sweeteners",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Neotame (INS 961), evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5107"
     },
     {
-      "label": "FDA — Aspartame and Other Sweeteners in Food",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Neotame toxicological monograph (FAS 52)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v52je08.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Neotame (INS 961)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=340"
     },
     {
-      "label": "Regulation (EC) No 1333/2008 on food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "EU specifications for authorised food additives — Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — additive specification, INS 961",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=961"
+      "label": "European Union — Regulation (EU) No 1169/2011, sweetener labelling requirements",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Neotame",
-  "description": "A high-intensity non-nutritive sweetener that can also be used as a flavour enhancer and is effective at very low use levels."
+  "description": "Neotame (INS 961 / E961) is a high-intensity sweetener around 8,000 times sweeter than sugar; JECFA set an ADI of 0–2 mg/kg body weight."
 }

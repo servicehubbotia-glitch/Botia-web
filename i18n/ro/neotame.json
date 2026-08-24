@@ -1,44 +1,36 @@
 {
   "name": "Neotam",
   "e_code": "E961",
-  "aliases": "E961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
+  "aliases": "E961, INS 961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Un îndulcitor non-nutritiv de intensitate ridicată, care poate fi utilizat și ca potențiator de aromă și este eficient la niveluri de utilizare foarte scăzute.",
-  "why_botia": "BOTIA o semnalizează deoarece E961 este un îndulcitor de mare intensitate cu condiții specifice de utilizare autorizate, care variază în funcție de jurisdicție.",
-  "can_1": "Identificați E961 sau neotam atunci când este declarat pe etichetă.",
-  "can_2": "Activează straturile de informații despre numerele E și îndulcitori.",
-  "cannot_1": "Determinați concentrația utilizată din poziția acesteia într-o listă standard de ingrediente.",
-  "cannot_2": "Determinați expunerea alimentară totală sau faceți o judecată individuală de sănătate doar pe baza prezenței neotamului.",
+  "what_is": "Neotamul (INS 961 / E961) este un îndulcitor de mare intensitate înrudit chimic cu aspartamul. JECFA indică o putere de îndulcire de aproximativ 7.000–13.000 de ori mai mare decât a zaharozei, în funcție de matricea alimentară, iar Codex îl clasifică drept îndulcitor și potențiator de aromă.",
+  "why_botia": "Neotamul este de aproximativ 8.000 de ori mai dulce decât zahărul, astfel încât sunt necesare doar cantități de ordinul miligramelor — iar lista ingredientelor nu arată cât s-a folosit. Este derivat din aspartam, dar utilizarea normală produce atât de puțină fenilalanină încât JECFA a considerat cantitatea nesemnificativă chiar și pentru persoanele cu fenilcetonurie; spre deosebire de aspartam, normele UE nu cer un avertisment privind fenilalanina pentru neotam. JECFA a stabilit o ADI de 0–2 mg/kg greutate corporală.",
+  "can_1": "Detecta E961, INS 961, neotam și Newtame atunci când sunt declarate explicit.",
+  "can_2": "Explica puterea extremă de îndulcire, relația cu aspartamul, evaluarea JECFA privind fenilalanina și doza zilnică admisibilă JECFA.",
+  "cannot_1": "Determina câte miligrame de neotam sunt prezente doar din declarația ingredientelor.",
+  "cannot_2": "Calcula expunerea zilnică totală a unei persoane sau determina respectarea unui nivel maxim specific unei piețe fără a cunoaște cantitatea și jurisdicția.",
   "sources": [
     {
-      "label": "EFSA — Îndulcitori",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Neotam (INS 961), înregistrarea evaluării",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5107"
     },
     {
-      "label": "FDA — Aspartam și alți îndulcitori din alimente",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Monografie toxicologică privind neotamul (FAS 52)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v52je08.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Neotam (INS 961)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=340"
     },
     {
-      "label": "Regulamentul (EC) nr. 1333/2008 privind aditivii alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Specificațiile EU pentru aditivii alimentari autorizați — Regulamentul (EU) nr. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Specificația aditivului, INS 961",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=961"
+      "label": "Uniunea Europeană — Regulamentul (UE) nr. 1169/2011, cerințe de etichetare pentru îndulcitori",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Neotam",
-  "description": "Un îndulcitor non-nutritiv de intensitate ridicată, care poate fi utilizat și ca potențiator de aromă și este eficient la niveluri de utilizare foarte scăzute."
+  "description": "Neotamul (INS 961 / E961) este un îndulcitor intens de aproximativ 8.000 de ori mai dulce decât zahărul; JECFA a stabilit o ADI de 0–2 mg/kg greutate corporală."
 }

@@ -1,44 +1,36 @@
 {
   "name": "纽甜",
   "e_code": "E961",
-  "aliases": "E961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
+  "aliases": "E961, INS 961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "高强度非营养性甜味剂，也可用作风味增强剂，在极低使用量下即有效。",
-  "why_botia": "BOTIA标记它是因为E961是一种高强度甜味剂，其获准使用的具体条件因司法管辖区而异。",
-  "can_1": "识别标签上标注的E961或纽甜。",
-  "can_2": "触发E编号和甜味剂信息图层。",
-  "cannot_1": "根据其在标准成分表中的位置确定所用浓度。",
-  "cannot_2": "仅凭纽甜的存在来确定总膳食暴露量或做出个体健康判断。",
+  "what_is": "纽甜（INS 961 / E961）是一种在化学结构上与阿斯巴甜相关的高强度甜味剂。JECFA 指出其甜度根据食品基质约为蔗糖的7,000–13,000倍，Codex 将其列为甜味剂和增味剂。",
+  "why_botia": "纽甜的甜度约为糖的8,000倍，因此只需要毫克级的用量——而配料表无法显示实际用了多少。它源自阿斯巴甜，但正常使用产生的苯丙氨酸非常少，JECFA 认为即使对苯丙酮尿症患者也微不足道；与阿斯巴甜不同，欧盟规则不要求纽甜标注苯丙氨酸警示。JECFA 将 ADI 设为每公斤体重0–2毫克。",
+  "can_1": "识别明确标示的 E961、INS 961、纽甜和 Newtame。",
+  "can_2": "解释其极高的甜味强度、与阿斯巴甜的关系、JECFA 对苯丙氨酸的评估以及 JECFA 的每日允许摄入量。",
+  "cannot_1": "仅根据配料声明确定产品中含有多少毫克纽甜。",
+  "cannot_2": "在不知道具体用量和司法管辖区的情况下计算个人每日总暴露量或判断是否符合特定市场的最高限量。",
   "sources": [
     {
-      "label": "EFSA — 甜味剂",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — 纽甜（INS 961）评估记录",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5107"
     },
     {
-      "label": "FDA — 食品中的阿斯巴甜和其他甜味剂",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — 纽甜毒理学专论（FAS 52）",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v52je08.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA 在线数据库",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — 纽甜（INS 961）",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=340"
     },
     {
-      "label": "（EC）第1333/2008号食品添加剂法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "EU 获准食品添加剂规格——（EU）第231/2012号法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — 添加剂规格, INS 961",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=961"
+      "label": "欧盟 — 第 1169/2011 号法规，甜味剂标签要求",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "纽甜",
-  "description": "高强度非营养性甜味剂，也可用作风味增强剂，在极低使用量下即有效。"
+  "description": "纽甜（INS 961 / E961）是一种甜度约为糖8,000倍的高强度甜味剂；JECFA 设定的 ADI 为每公斤体重0–2毫克。"
 }

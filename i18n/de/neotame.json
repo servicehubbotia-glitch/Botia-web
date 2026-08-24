@@ -1,44 +1,36 @@
 {
   "name": "Neotam",
   "e_code": "E961",
-  "aliases": "E961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
+  "aliases": "E961, INS 961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Ein hochintensiver nicht-nährstoffhaltiger Süßstoff, der auch als Geschmacksverstärker verwendet werden kann und bereits bei sehr geringen Einsatzmengen wirksam ist.",
-  "why_botia": "BOTIA kennzeichnet es, weil E961 ein Süßstoff mit hoher Intensität ist, dessen spezifische zugelassene Verwendungsbedingungen je nach Rechtsgebiet variieren.",
-  "can_1": "E961 oder Neotam erkennen, wenn es auf dem Etikett angegeben ist.",
-  "can_2": "E-Nummer- und Süßstoff-Informationslayer aktivieren.",
-  "cannot_1": "Bestimmen Sie die verwendete Konzentration anhand ihrer Position in einer standardmäßigen Zutatenliste.",
-  "cannot_2": "Bestimmen Sie die gesamte Nahrungsexposition oder treffen Sie eine individuelle gesundheitliche Beurteilung allein aufgrund des Vorhandenseins von Neotam.",
+  "what_is": "Neotam (INS 961 / E961) ist ein hochintensiver Süßstoff, der chemisch mit Aspartam verwandt ist. JECFA beschreibt je nach Lebensmittelmatrix eine Süßkraft von etwa 7.000–13.000 Mal der von Saccharose, und Codex führt ihn als Süßstoff und Geschmacksverstärker.",
+  "why_botia": "Neotam ist etwa 8.000-mal süßer als Zucker, sodass nur Milligrammmengen benötigt werden — und die Zutatenliste nicht erkennen lässt, wie viel verwendet wurde. Es ist von Aspartam abgeleitet, doch bei normaler Verwendung entsteht so wenig Phenylalanin, dass JECFA die Menge selbst für Menschen mit Phenylketonurie als unbedeutend einstufte; anders als bei Aspartam verlangen die EU-Vorschriften für Neotam keine Phenylalanin-Warnung. JECFA legte einen ADI von 0–2 mg/kg Körpergewicht fest.",
+  "can_1": "E961, INS 961, Neotam und Newtame erkennen, wenn sie ausdrücklich deklariert sind.",
+  "can_2": "Seine extreme Süßkraft, die Beziehung zu Aspartam, die JECFA-Bewertung von Phenylalanin und die akzeptable tägliche Aufnahmemenge von JECFA erklären.",
+  "cannot_1": "Allein aus der Zutatenangabe bestimmen, wie viele Milligramm Neotam enthalten sind.",
+  "cannot_2": "Die gesamte tägliche Aufnahme einer Person oder die Einhaltung eines marktspezifischen Höchstwertes ohne Kenntnis der Menge und des Rechtsraums bestimmen.",
   "sources": [
     {
-      "label": "EFSA — Süßstoffe",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Neotam (INS 961), Bewertungsdatensatz",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5107"
     },
     {
-      "label": "FDA — Aspartam und andere Süßstoffe in Lebensmitteln",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Toxikologische Monographie zu Neotam (FAS 52)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v52je08.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA Online",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Neotam (INS 961)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=340"
     },
     {
-      "label": "Verordnung (EC) Nr. 1333/2008 über Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "EU-Spezifikationen für zugelassene Lebensmittelzusatzstoffe — Verordnung (EU) Nr. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Zusatzstoffspezifikation, INS 961",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=961"
+      "label": "Europäische Union — Verordnung (EU) Nr. 1169/2011, Kennzeichnung von Süßstoffen",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Neotam",
-  "description": "Ein hochintensiver nicht-nährstoffhaltiger Süßstoff, der auch als Geschmacksverstärker verwendet werden kann und bereits bei sehr geringen Einsatzmengen wirksam ist."
+  "description": "Neotam (INS 961 / E961) ist ein hochintensiver Süßstoff, etwa 8.000-mal süßer als Zucker; JECFA legte einen ADI von 0–2 mg/kg Körpergewicht fest."
 }

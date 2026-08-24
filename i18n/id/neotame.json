@@ -1,44 +1,36 @@
 {
   "name": "Neotam",
   "e_code": "E961",
-  "aliases": "E961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
+  "aliases": "E961, INS 961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Pemanis non-nutritif berintensitas tinggi yang juga dapat digunakan sebagai penambah rasa dan efektif pada tingkat penggunaan yang sangat rendah.",
-  "why_botia": "BOTIA menandainya karena E961 adalah pemanis intensitas tinggi dengan ketentuan penggunaan resmi yang spesifik dan bervariasi menurut yurisdiksi.",
-  "can_1": "Identifikasi E961 atau neotam saat dinyatakan pada label.",
-  "can_2": "Aktifkan lapisan informasi nomor E dan pemanis.",
-  "cannot_1": "Tentukan konsentrasi yang digunakan dari posisinya dalam daftar bahan standar.",
-  "cannot_2": "Tentukan total paparan diet atau buat penilaian kesehatan individu dari keberadaan neotam saja.",
+  "what_is": "Neotame (INS 961 / E961) adalah pemanis intensitas tinggi yang secara kimia berkaitan dengan aspartam. JECFA melaporkan tingkat kemanisan sekitar 7.000–13.000 kali sukrosa tergantung matriks pangan, dan Codex mencantumkannya sebagai pemanis sekaligus penguat rasa.",
+  "why_botia": "Neotame sekitar 8.000 kali lebih manis daripada gula, sehingga hanya diperlukan jumlah dalam miligram — dan daftar bahan tidak menunjukkan berapa banyak yang digunakan. Zat ini berasal dari aspartam, tetapi penggunaan normal menghasilkan fenilalanin dalam jumlah yang sangat kecil sehingga JECFA menganggapnya tidak signifikan bahkan bagi orang dengan fenilketonuria; berbeda dari aspartam, aturan Uni Eropa tidak mewajibkan peringatan fenilalanin untuk neotame. JECFA menetapkan ADI 0–2 mg/kg berat badan.",
+  "can_1": "Mendeteksi E961, INS 961, neotame dan Newtame ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan tingkat kemanisannya yang sangat tinggi, hubungannya dengan aspartam, penilaian JECFA mengenai fenilalanin dan asupan harian yang dapat diterima menurut JECFA.",
+  "cannot_1": "Menentukan berapa miligram neotame dalam produk hanya dari pernyataan bahan.",
+  "cannot_2": "Menghitung paparan harian total seseorang atau menentukan kepatuhan terhadap batas maksimum khusus suatu pasar tanpa mengetahui jumlah dan yurisdiksinya.",
   "sources": [
     {
-      "label": "EFSA — Pemanis",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Neotame (INS 961), catatan evaluasi",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5107"
     },
     {
-      "label": "FDA — Aspartam dan pemanis lain dalam pangan",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Monograf toksikologi neotame (FAS 52)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v52je08.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA daring",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Neotame (INS 961)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=340"
     },
     {
-      "label": "Peraturan (EC) No. 1333/2008 tentang bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Spesifikasi EU untuk bahan tambahan pangan yang diizinkan — Peraturan (EU) No. 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Spesifikasi bahan tambahan, INS 961",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=961"
+      "label": "Uni Eropa — Regulasi (EU) No 1169/2011, persyaratan pelabelan pemanis",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Neotam",
-  "description": "Pemanis non-nutritif berintensitas tinggi yang juga dapat digunakan sebagai penambah rasa dan efektif pada tingkat penggunaan yang sangat rendah."
+  "description": "Neotame (INS 961 / E961) adalah pemanis intensitas tinggi sekitar 8.000 kali lebih manis daripada gula; JECFA menetapkan ADI 0–2 mg/kg berat badan."
 }

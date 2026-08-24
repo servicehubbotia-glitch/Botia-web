@@ -1,44 +1,36 @@
 {
   "name": "Neotam",
   "e_code": "E961",
-  "aliases": "E961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
+  "aliases": "E961, INS 961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Yüksek yoğunluklu, besleyici olmayan bir tatlandırıcı olup aynı zamanda aroma artırıcı olarak da kullanılabilir ve çok düşük kullanım seviyelerinde etkilidir.",
-  "why_botia": "BOTIA bunu işaretler çünkü E961, yüksek yoğunluklu bir tatlandırıcıdır ve yetkili kullanım koşulları yargı bölgesine göre değişiklik gösterir.",
-  "can_1": "Etikette beyan edildiğinde E961 veya neotamı tanımlayın.",
-  "can_2": "E-numarası ve tatlandırıcı bilgi katmanlarını tetikle.",
-  "cannot_1": "Standart bir içerik listesindeki konumundan kullanılan konsantrasyonu belirleyin.",
-  "cannot_2": "Neotamın tek başına varlığından toplam diyet maruziyetini belirleyin veya bireysel bir sağlık değerlendirmesi yapın.",
+  "what_is": "Neotam (INS 961 / E961), kimyasal olarak aspartamla ilişkili yüksek yoğunluklu bir tatlandırıcıdır. JECFA, gıda matrisine bağlı olarak sakkarozdan yaklaşık 7.000–13.000 kat daha yüksek tatlandırma gücü bildirmektedir ve Codex onu tatlandırıcı ve lezzet artırıcı olarak sınıflandırır.",
+  "why_botia": "Neotam şekerden yaklaşık 8.000 kat daha tatlıdır, bu nedenle yalnızca miligram düzeyinde miktarlar gerekir — ancak içerik listesi ne kadar kullanıldığını göstermez. Aspartamdan türetilir, ancak normal kullanımda o kadar az fenilalanin oluşur ki JECFA bu miktarı fenilketonürili kişiler için bile önemsiz kabul etmiştir; aspartamdan farklı olarak AB kuralları neotam için fenilalanin uyarısı gerektirmez. JECFA 0–2 mg/kg vücut ağırlığı ADI belirlemiştir.",
+  "can_1": "E961, INS 961, neotam ve Newtame'i açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Son derece yüksek tatlandırma gücünü, aspartamla ilişkisini, JECFA'nın fenilalanin değerlendirmesini ve JECFA kabul edilebilir günlük alımını açıklamak.",
+  "cannot_1": "Yalnızca içerik beyanından kaç miligram neotam bulunduğunu belirlemek.",
+  "cannot_2": "Miktar ve yargı bölgesi bilinmeden bir kişinin toplam günlük maruziyetini hesaplamak veya pazara özgü maksimum limite uygunluğu belirlemek.",
   "sources": [
     {
-      "label": "EFSA — Tatlandırıcılar",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Neotam (INS 961), değerlendirme kaydı",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5107"
     },
     {
-      "label": "FDA — Gıdalardaki aspartam ve diğer tatlandırıcılar",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Neotam toksikolojik monografı (FAS 52)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v52je08.htm"
     },
     {
-      "label": "Codex Alimentarius — Çevrimiçi GSFA",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Neotam (INS 961)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=340"
     },
     {
-      "label": "Gıda katkı maddelerine ilişkin (EC) 1333/2008 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "İzin verilen gıda katkı maddelerine ilişkin EU spesifikasyonları — (EU) 231/2012 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Katkı maddesi spesifikasyonu, INS 961",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=961"
+      "label": "Avrupa Birliği — (AB) No 1169/2011, tatlandırıcı etiketleme gereklilikleri",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Neotam",
-  "description": "Yüksek yoğunluklu, besleyici olmayan bir tatlandırıcı olup aynı zamanda aroma artırıcı olarak da kullanılabilir ve çok düşük kullanım seviyelerinde etkilidir."
+  "description": "Neotam (INS 961 / E961), şekerden yaklaşık 8.000 kat daha tatlı yüksek yoğunluklu bir tatlandırıcıdır; JECFA 0–2 mg/kg vücut ağırlığı ADI belirlemiştir."
 }

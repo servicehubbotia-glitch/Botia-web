@@ -1,44 +1,36 @@
 {
   "name": "نيوتام",
   "e_code": "E961",
-  "aliases": "E961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
+  "aliases": "E961, INS 961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "مُحلٍّ عالي الكثافة غير مغذٍّ، يمكن استخدامه أيضًا كمُعزِّز للنكهة، وهو فعّال بتركيزات استخدام منخفضة جدًا.",
-  "why_botia": "تشير BOTIA إلى ذلك لأن E961 هو مُحلٍّ عالي الكثافة بشروط استخدام محددة ومرخّصة تختلف حسب الاختصاص القضائي.",
-  "can_1": "حدد E961 أو نيوتام عندما يُذكر على الملصق.",
-  "can_2": "قم بتفعيل طبقات معلومات الأرقام الإلكترونية والمحليات.",
-  "cannot_1": "حدد التركيز المستخدم من موقعه في قائمة المكونات القياسية.",
-  "cannot_2": "حدد إجمالي التعرض الغذائي أو اتخذ حكمًا صحيًا فرديًا من وجود النيوتام وحده.",
+  "what_is": "النيوتام (INS 961 / E961) مُحلٍّ عالي الكثافة مرتبط كيميائياً بالأسبارتام. وتشير JECFA إلى أن قوة حلاوته تبلغ نحو 7,000–13,000 مرة قوة السكروز حسب نوع الغذاء، ويصنفه Codex كمحلٍّ ومحسن للنكهة.",
+  "why_botia": "النيوتام أحلى من السكر بنحو 8,000 مرة، لذلك لا يلزم منه سوى كميات بالملليغرام — ولا تكشف قائمة المكونات عن مقدار ما استُخدم. وهو مشتق من الأسبارتام، لكن الاستخدام العادي ينتج كمية ضئيلة جداً من الفينيل ألانين لدرجة أن JECFA اعتبرتها غير مهمة حتى للأشخاص المصابين ببيلة الفينيل كيتون؛ وعلى خلاف الأسبارتام، لا تفرض قواعد الاتحاد الأوروبي تحذيراً خاصاً بالفينيل ألانين على النيوتام. وحددت JECFA قيمة ADI بمقدار 0–2 ملغ/كغ من وزن الجسم.",
+  "can_1": "اكتشاف E961 وINS 961 والنيوتام وNewtame عندما تكون مذكورة صراحة.",
+  "can_2": "شرح قوة حلاوته الشديدة وعلاقته بالأسبارتام وتقييم JECFA للفينيل ألانين وقيمة المدخول اليومي المقبول لدى JECFA.",
+  "cannot_1": "تحديد عدد ملليغرامات النيوتام الموجودة في المنتج من قائمة المكونات وحدها.",
+  "cannot_2": "حساب التعرض اليومي الإجمالي لشخص أو تحديد الامتثال لحد أقصى خاص بسوق ما دون معرفة الكمية والولاية القضائية.",
   "sources": [
     {
-      "label": "EFSA — المُحلّيات",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — النيوتام (INS 961)، سجل التقييم",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5107"
     },
     {
-      "label": "FDA — الأسبارتام والمحليات الأخرى في الأغذية",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — الدراسة السمية للنيوتام (FAS 52)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v52je08.htm"
     },
     {
-      "label": "Codex Alimentarius — قاعدة GSFA على الإنترنت",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — النيوتام (INS 961)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=340"
     },
     {
-      "label": "اللائحة (EC) رقم 1333/2008 بشأن المواد المضافة الغذائية",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "مواصفات EU للمواد المضافة الغذائية المصرح بها — اللائحة (EU) رقم 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — مواصفة المادة المضافة, INS 961",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=961"
+      "label": "الاتحاد الأوروبي — اللائحة (EU) رقم 1169/2011، متطلبات وسم المُحليات",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "نيوتام",
-  "description": "محلٍّ عالي الكثافة غير مغذٍّ يمكن استخدامه أيضًا كمُعزِّز للنكهة، وهو فعّال بتركيزات استخدام منخفضة جدًا."
+  "description": "النيوتام (INS 961 / E961) مُحلٍّ عالي الكثافة أحلى من السكر بنحو 8,000 مرة؛ وحددت JECFA له قيمة ADI بمقدار 0–2 ملغ/كغ من وزن الجسم."
 }

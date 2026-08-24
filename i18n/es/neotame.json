@@ -1,44 +1,36 @@
 {
   "name": "Neotamo",
   "e_code": "E961",
-  "aliases": "E961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
+  "aliases": "E961, INS 961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
   "module_icon": "sweeteners.png",
   "layers": [
-    "enumbers",
-    "sweetener"
+    "sweetener",
+    "enumbers"
   ],
-  "what_is": "Un edulcorante no nutritivo de alta intensidad que también puede utilizarse como potenciador del sabor y es eficaz en niveles de uso muy bajos.",
-  "why_botia": "BOTIA lo marca porque el E961 es un edulcorante de alta intensidad con condiciones de uso autorizadas específicas que varían según la jurisdicción.",
-  "can_1": "Identifica E961 o neotamo cuando se declare en la etiqueta.",
-  "can_2": "Activa las capas de información de números E y edulcorantes.",
-  "cannot_1": "Determine la concentración utilizada según su posición en una lista estándar de ingredientes.",
-  "cannot_2": "Determinar la exposición dietética total o emitir un juicio de salud individual a partir de la presencia de neotamo únicamente.",
+  "what_is": "El neotame (INS 961 / E961) es un edulcorante de alta intensidad químicamente relacionado con el aspartamo. JECFA indica una potencia de dulzor de unas 7.000–13.000 veces la de la sacarosa, según la matriz alimentaria, y Codex lo clasifica como edulcorante y potenciador del sabor.",
+  "why_botia": "El neotame es unas 8.000 veces más dulce que el azúcar, por lo que solo se necesitan miligramos — y la lista de ingredientes no permite saber cuánto se utilizó. Deriva del aspartamo, pero el uso normal produce tan poca fenilalanina que JECFA consideró insignificante esa cantidad incluso para las personas con fenilcetonuria; a diferencia del aspartamo, las normas de la UE no exigen una advertencia sobre fenilalanina para el neotame. JECFA estableció una IDA de 0–2 mg/kg de peso corporal.",
+  "can_1": "Detectar E961, INS 961, neotame y Newtame cuando estén declarados explícitamente.",
+  "can_2": "Explicar su enorme poder edulcorante, su relación con el aspartamo, la evaluación de JECFA sobre la fenilalanina y la ingesta diaria admisible de JECFA.",
+  "cannot_1": "Determinar cuántos miligramos de neotame contiene el producto únicamente a partir de la declaración de ingredientes.",
+  "cannot_2": "Calcular la exposición diaria total de una persona ni determinar el cumplimiento de un límite máximo específico de un mercado sin conocer la cantidad y la jurisdicción.",
   "sources": [
     {
-      "label": "EFSA — Edulcorantes",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/sweeteners"
+      "label": "JECFA — Neotame (INS 961), registro de evaluación",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5107"
     },
     {
-      "label": "FDA — Aspartamo y otros edulcorantes en los alimentos",
-      "url": "https://www.fda.gov/food/food-additives-petitions/aspartame-and-other-sweeteners-food"
+      "label": "JECFA — Monografía toxicológica sobre neotame (FAS 52)",
+      "url": "https://www.inchem.org/documents/jecfa/jecmono/v52je08.htm"
     },
     {
-      "label": "Codex Alimentarius — GSFA en línea",
-      "url": "https://www.fao.org/gsfaonline/index.html?lang=en"
+      "label": "Codex GSFA — Neotame (INS 961)",
+      "url": "https://www.fao.org/gsfaonline/additives/details.html?id=340"
     },
     {
-      "label": "Reglamento (EC) n.º 1333/2008 sobre aditivos alimentarios",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
-    },
-    {
-      "label": "Especificaciones de la EU para aditivos alimentarios autorizados — Reglamento (EU) n.º 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
-    },
-    {
-      "label": "JECFA — Especificación del aditivo, INS 961",
-      "url": "https://www.fao.org/food/food-safety-quality/scientific-advice/jecfa/jecfa-additives/details-simple/en/?ins_id=961"
+      "label": "Unión Europea — Reglamento (UE) n.º 1169/2011, requisitos de etiquetado de edulcorantes",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Neotamo",
-  "description": "Un edulcorante no nutritivo de alta intensidad que también puede utilizarse como potenciador del sabor y es eficaz en niveles de uso muy bajos."
+  "description": "El neotame (INS 961 / E961) es un edulcorante de alta intensidad unas 8.000 veces más dulce que el azúcar; JECFA estableció una IDA de 0–2 mg/kg de peso corporal."
 }
