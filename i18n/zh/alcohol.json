@@ -7,22 +7,34 @@
     "muslim",
     "woman"
   ],
-  "what_is": "一种通过发酵产生的化合物，也称为乙醇，用作成分或溶剂载体。",
-  "why_botia": "它标记此成分是因为在伊斯兰饮食法律中严格禁止（哈拉姆），并且世界卫生组织将其列为1类致癌物，即使少量也会增加女性患乳腺癌的风险。",
-  "can_1": "检测成分或产品描述中的任何酒精或乙醇术语。",
-  "can_2": "提供女性癌症风险警报和清真安全警告。",
-  "cannot_1": "如果酒精作为载体残留物存在且低于标签阈值，则无法测量其精确的体积或重量百分比。",
-  "cannot_2": "确定酒精是通过自然发酵自然产生还是故意添加的。",
+  "what_is": "乙醇是酒精饮料中的酒精，也可在食品中用作配料、溶剂或香料载体。本条目适用于标签明确标示酒精或乙醇的情况。",
+  "why_botia": "乙醇在体内代谢为乙醛，乙醛可损伤 DNA；酒精还会改变与乳腺癌发生有关的雌激素水平。IARC 将饮用酒精饮料以及酒精饮料中的乙醇列为对人类致癌（1 类），并确认其与女性乳腺癌存在因果关系；WHO 指出，即使酒精摄入水平相对较低，女性乳腺癌风险也会增加，而仅凭标签声明无法确定实际暴露量。因此 BOTIA 会激活 Woman 层；另外，Muslim 层将标签上明确声明的酒精配料分类为哈拉姆，但不解释或诠释宗教教义。",
+  "can_1": "识别标签上明确标示的酒精、乙醇、乙醇酒精及密切相关术语。",
+  "can_2": "根据 WHO/IARC 证据解释为何激活 Woman 层，并在不解释宗教教义的情况下显示 BOTIA 对明确酒精声明的 Muslim 分类。",
+  "cannot_1": "仅根据配料声明确定乙醇含量或个人癌症风险。",
+  "cannot_2": "推断未声明的酒精、解释宗教教义或告诉个人是否应食用某产品。",
   "sources": [
     {
-      "label": "IARC关于人类致癌风险评价的专著",
-      "url": "https://publications.iarc.fr/"
+      "label": "WHO — Alcohol and cancer",
+      "url": "https://www.who.int/europe/news-room/fact-sheets/item/alcohol-and-cancer"
     },
     {
-      "label": "OIC/SMIIC 1:2019 清真食品通用要求",
-      "url": "https://www.smiic.org/en/project/24"
+      "label": "WHO — Alcohol and breast cancer in women",
+      "url": "https://www.who.int/europe/news/item/07-03-2024-shouldn-t-we-know-this-already--the-link-between-alcohol-and-cancer"
+    },
+    {
+      "label": "IARC — Alcohol and cancer",
+      "url": "https://www.iarc.who.int/reference/alcohol-and-cancer/"
+    },
+    {
+      "label": "OIC/SMIIC 1:2019 — General Requirements for Halal Food",
+      "url": "https://smiic.org/en/project/24"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "酒精",
-  "description": "一种通过发酵产生的化合物，也称为乙醇，用作成分或溶剂载体。"
+  "description": "酒精（乙醇）：BOTIA 展示有关女性乳腺癌的确立证据，并另行对标签上的明确酒精声明应用 Muslim 分类。"
 }

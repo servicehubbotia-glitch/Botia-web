@@ -7,22 +7,34 @@
     "muslim",
     "woman"
   ],
-  "what_is": "Związek chemiczny powstający w procesie fermentacji, znany również jako etanol, stosowany jako składnik lub nośnik rozpuszczalnika.",
-  "why_botia": "Oznacza go, ponieważ jest surowo zabroniony (haram) w islamskich przepisach żywieniowych i jest klasyfikowany przez WHO jako czynnik rakotwórczy grupy 1, który zwiększa ryzyko raka piersi u kobiet nawet w małych ilościach.",
-  "can_1": "Wykryć wszelkie terminy związane z alkoholem lub etanolem w składnikach lub opisach produktów.",
-  "can_2": "Zapewnić ostrzeżenia o ryzyku raka dla kobiet oraz ostrzeżenia dotyczące bezpieczeństwa halal.",
-  "cannot_1": "Zmierz dokładną objętościową lub wagową zawartość procentową alkoholu, jeśli jest on obecny jako pozostałość nośnika poniżej progów etykietowania.",
-  "cannot_2": "Ustalić, czy alkohol powstał naturalnie w wyniku spontanicznej fermentacji, czy został celowo dodany.",
+  "what_is": "Etanol jest alkoholem występującym w napojach alkoholowych i może być również stosowany w żywności jako składnik, rozpuszczalnik lub nośnik aromatów. Ta karta ma zastosowanie, gdy alkohol lub etanol jest wyraźnie zadeklarowany na etykiecie.",
+  "why_botia": "Etanol jest metabolizowany do aldehydu octowego, który może uszkadzać DNA, a alkohol może również zmieniać poziom estrogenów związanych z rozwojem raka piersi. IARC klasyfikuje spożywanie napojów alkoholowych oraz etanol w napojach alkoholowych jako rakotwórcze dla ludzi (Grupa 1) i ustaliła związek przyczynowy z rakiem piersi u kobiet; WHO wskazuje, że ryzyko raka piersi u kobiet wzrasta nawet przy stosunkowo niskim spożyciu alkoholu, natomiast sama deklaracja na etykiecie nie pozwala określić poziomu narażenia. Dlatego BOTIA aktywuje warstwę Woman; oddzielnie warstwa Muslim klasyfikuje wyraźnie zadeklarowany składnik alkoholowy jako Haram, bez wyjaśniania ani interpretowania doktryny religijnej.",
+  "can_1": "Wykrywać wyraźnie zadeklarowany alkohol, etanol, alkohol etylowy i ściśle powiązane określenia na etykiecie.",
+  "can_2": "Wyjaśniać, dlaczego warstwa Woman jest aktywowana na podstawie dowodów WHO/IARC, oraz przedstawiać klasyfikację Muslim BOTIA dla wyraźnej deklaracji alkoholu bez interpretowania doktryny religijnej.",
+  "cannot_1": "Określić ilości etanolu ani indywidualnego ryzyka nowotworu na podstawie samej deklaracji składników.",
+  "cannot_2": "Wnioskować o obecności niezadeklarowanego alkoholu, interpretować doktrynę religijną ani mówić osobie, czy powinna spożywać produkt.",
   "sources": [
     {
-      "label": "Monografie IARC dotyczące oceny ryzyka rakotwórczego dla ludzi",
-      "url": "https://publications.iarc.fr/"
+      "label": "WHO — Alcohol and cancer",
+      "url": "https://www.who.int/europe/news-room/fact-sheets/item/alcohol-and-cancer"
     },
     {
-      "label": "OIC/SMIIC 1:2019 Ogólne wymagania dotyczące żywności halal",
-      "url": "https://www.smiic.org/en/project/24"
+      "label": "WHO — Alcohol and breast cancer in women",
+      "url": "https://www.who.int/europe/news/item/07-03-2024-shouldn-t-we-know-this-already--the-link-between-alcohol-and-cancer"
+    },
+    {
+      "label": "IARC — Alcohol and cancer",
+      "url": "https://www.iarc.who.int/reference/alcohol-and-cancer/"
+    },
+    {
+      "label": "OIC/SMIIC 1:2019 — General Requirements for Halal Food",
+      "url": "https://smiic.org/en/project/24"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Alkohol",
-  "description": "Związek chemiczny powstający w procesie fermentacji, znany również jako etanol, stosowany jako składnik lub nośnik rozpuszczalnika."
+  "description": "Alkohol (etanol): BOTIA przedstawia ustalone dowody dotyczące raka piersi u kobiet i oddzielnie stosuje swoją klasyfikację Muslim do wyraźnych deklaracji na etykiecie."
 }

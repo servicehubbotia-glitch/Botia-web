@@ -7,22 +7,34 @@
     "muslim",
     "woman"
   ],
-  "what_is": "Un composto chimico prodotto per fermentazione, noto anche come etanolo, usato come ingrediente o veicolo solvente.",
-  "why_botia": "Lo segnala perché è strettamente proibito (haram) nelle leggi alimentari islamiche ed è classificato da WHO come cancerogeno di Gruppo 1 che aumenta il rischio di cancro al seno nelle donne anche in piccole quantità.",
-  "can_1": "Rileva qualsiasi termine relativo ad alcol o etanolo negli ingredienti o nelle descrizioni dei prodotti.",
-  "can_2": "Fornisci avvisi sul rischio di cancro per le donne e avvertenze sulla sicurezza halal.",
-  "cannot_1": "Misurare la percentuale volumetrica o ponderale esatta di alcol se presente come residuo di veicolante al di sotto delle soglie di etichettatura.",
-  "cannot_2": "Stabilire se l'alcol è stato prodotto naturalmente tramite fermentazione spontanea o aggiunto deliberatamente.",
+  "what_is": "L’etanolo è l’alcol presente nelle bevande alcoliche e può essere utilizzato negli alimenti anche come ingrediente, solvente o veicolo per aromi. Questa scheda si applica quando alcol o etanolo sono dichiarati esplicitamente in etichetta.",
+  "why_botia": "L’etanolo viene metabolizzato in acetaldeide, che può danneggiare il DNA, e l’alcol può anche modificare i livelli di estrogeni coinvolti nella carcinogenesi mammaria. IARC classifica il consumo di bevande alcoliche e l’etanolo nelle bevande alcoliche come cancerogeni per l’uomo (Gruppo 1) e ha stabilito una relazione causale con il tumore della mammella femminile; WHO indica che il rischio di tumore della mammella nelle donne aumenta anche a livelli relativamente bassi di consumo di alcol, mentre una dichiarazione in etichetta da sola non quantifica l’esposizione. BOTIA attiva quindi il livello Woman; separatamente, il livello Muslim classifica un ingrediente alcol esplicitamente dichiarato come Haram, senza spiegare o interpretare la dottrina religiosa.",
+  "can_1": "Rilevare alcol, etanolo, alcol etilico e termini strettamente correlati quando sono dichiarati esplicitamente in etichetta.",
+  "can_2": "Spiegare perché viene attivato il livello Woman sulla base delle evidenze WHO/IARC e mostrare la classificazione Muslim di BOTIA per una dichiarazione esplicita di alcol senza interpretare la dottrina religiosa.",
+  "cannot_1": "Determinare la quantità di etanolo presente o il rischio individuale di cancro dalla sola dichiarazione degli ingredienti.",
+  "cannot_2": "Deducere la presenza di alcol non dichiarato, interpretare la dottrina religiosa o dire a una persona se deve consumare un prodotto.",
   "sources": [
     {
-      "label": "Monografie IARC sulla valutazione dei rischi cancerogeni per gli esseri umani",
-      "url": "https://publications.iarc.fr/"
+      "label": "WHO — Alcohol and cancer",
+      "url": "https://www.who.int/europe/news-room/fact-sheets/item/alcohol-and-cancer"
     },
     {
-      "label": "OIC/SMIIC 1:2019 Requisiti generali sugli alimenti halal",
-      "url": "https://www.smiic.org/en/project/24"
+      "label": "WHO — Alcohol and breast cancer in women",
+      "url": "https://www.who.int/europe/news/item/07-03-2024-shouldn-t-we-know-this-already--the-link-between-alcohol-and-cancer"
+    },
+    {
+      "label": "IARC — Alcohol and cancer",
+      "url": "https://www.iarc.who.int/reference/alcohol-and-cancer/"
+    },
+    {
+      "label": "OIC/SMIIC 1:2019 — General Requirements for Halal Food",
+      "url": "https://smiic.org/en/project/24"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Alcol",
-  "description": "Un composto chimico prodotto per fermentazione, noto anche come etanolo, utilizzato come ingrediente o solvente vettore."
+  "description": "Alcol (etanolo): BOTIA mostra le evidenze consolidate sul tumore della mammella femminile e applica separatamente la propria classificazione Muslim alle dichiarazioni esplicite in etichetta."
 }

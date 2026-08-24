@@ -7,22 +7,34 @@
     "muslim",
     "woman"
   ],
-  "what_is": "Un composé chimique produit par fermentation, également connu sous le nom d'éthanol, utilisé comme ingrédient ou solvant porteur.",
-  "why_botia": "Il le signale car il est strictement interdit (haram) dans les lois alimentaires islamiques et est classé par WHO comme cancérogène du Groupe 1 qui augmente le risque de cancer du sein chez les femmes même en petites quantités.",
-  "can_1": "Détecter tout terme lié à l'alcool ou à l'éthanol dans les ingrédients ou les descriptions de produits.",
-  "can_2": "Fournir des alertes sur le risque de cancer pour les femmes et des avertissements de sécurité halal.",
-  "cannot_1": "Mesurer le pourcentage volumétrique ou pondéral exact d'alcool s'il est présent comme résidu de support en dessous des seuils d'étiquetage.",
-  "cannot_2": "Déterminer si l'alcool a été produit naturellement par fermentation spontanée ou ajouté délibérément.",
+  "what_is": "L’éthanol est l’alcool présent dans les boissons alcoolisées et peut également être utilisé dans les aliments comme ingrédient, solvant ou support d’arôme. Cette fiche s’applique lorsque l’alcool ou l’éthanol est explicitement déclaré sur l’étiquette.",
+  "why_botia": "L’éthanol est métabolisé en acétaldéhyde, qui peut endommager l’ADN, et l’alcool peut également modifier les taux d’œstrogènes impliqués dans la cancérogenèse mammaire. L’IARC classe la consommation de boissons alcoolisées et l’éthanol contenu dans les boissons alcoolisées comme cancérogènes pour l’être humain (Groupe 1) et a établi une relation causale avec le cancer du sein féminin ; WHO indique que le risque de cancer du sein chez la femme augmente même à des niveaux relativement faibles de consommation d’alcool, tandis qu’une déclaration sur l’étiquette ne permet pas à elle seule de quantifier l’exposition. BOTIA active donc la couche Woman ; séparément, sa couche Muslim classe un ingrédient alcool explicitement déclaré comme Haram, sans expliquer ni interpréter la doctrine religieuse.",
+  "can_1": "Détecter l’alcool, l’éthanol, l’alcool éthylique et les termes étroitement liés lorsqu’ils sont explicitement déclarés sur l’étiquette.",
+  "can_2": "Expliquer pourquoi la couche Woman est activée à partir des données WHO/IARC et afficher la classification Muslim de BOTIA pour une déclaration explicite d’alcool sans interpréter la doctrine religieuse.",
+  "cannot_1": "Déterminer la quantité d’éthanol présente ou le risque individuel de cancer à partir de la seule liste d’ingrédients.",
+  "cannot_2": "Déduire la présence d’alcool non déclaré, interpréter une doctrine religieuse ou dire à une personne si elle doit consommer un produit.",
   "sources": [
     {
-      "label": "Monographies IARC sur l'évaluation des risques cancérogènes pour l'homme",
-      "url": "https://publications.iarc.fr/"
+      "label": "WHO — Alcohol and cancer",
+      "url": "https://www.who.int/europe/news-room/fact-sheets/item/alcohol-and-cancer"
     },
     {
-      "label": "OIC/SMIIC 1:2019 Exigences générales relatives aux aliments halal",
-      "url": "https://www.smiic.org/en/project/24"
+      "label": "WHO — Alcohol and breast cancer in women",
+      "url": "https://www.who.int/europe/news/item/07-03-2024-shouldn-t-we-know-this-already--the-link-between-alcohol-and-cancer"
+    },
+    {
+      "label": "IARC — Alcohol and cancer",
+      "url": "https://www.iarc.who.int/reference/alcohol-and-cancer/"
+    },
+    {
+      "label": "OIC/SMIIC 1:2019 — General Requirements for Halal Food",
+      "url": "https://smiic.org/en/project/24"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — Food Additives and Other Added Chemicals to Halal Food",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Alcool",
-  "description": "Un composé chimique produit par fermentation, également connu sous le nom d'éthanol, utilisé comme ingrédient ou solvant porteur."
+  "description": "Alcool (éthanol) : BOTIA présente les données établies sur le cancer du sein féminin et applique séparément sa classification Muslim aux déclarations explicites sur l’étiquette."
 }
