@@ -9,22 +9,42 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Un grupo de emulsionantes compuestos por mono y diglicéridos de ácidos grasos esterificados con ácidos orgánicos como acético, láctico, cítrico o tartárico.",
-  "why_botia": "Lo señala porque la cadena principal de ácidos grasos puede tener origen animal o vegetal, lo que genera incertidumbres en el seguimiento religioso y dietético.",
-  "can_1": "Identificar los códigos de subclase E472 (de la a a la f) y sus nombres correspondientes en una etiqueta.",
-  "can_2": "Señalar el ingrediente como potencialmente derivado de grasas animales.",
-  "cannot_1": "Determinar si los ácidos grasos de partida se extrajeron de aceites vegetales o de tejidos grasos animales.",
-  "cannot_2": "Medir el porcentaje de glicerol libre no reaccionado o ácidos orgánicos libres en el producto final.",
+  "what_is": "E472 no es una sustancia, sino una familia de emulsionantes distintos. Cada letra identifica mono y diglicéridos combinados con un ácido orgánico diferente.",
+  "why_botia": "El E472 no es una sustancia, son varias: mono y diglicéridos combinados con distintos ácidos, y cada letra es una diferente. El E472e, llamado DATEM, es el que se usa para reforzar la masa del pan industrial. El cuerpo los descompone en sus componentes y JECFA no les dio a todos el mismo límite: algunos quedaron sin límite numérico y DATEM tiene una IDA de 0–50 mg/kg de peso corporal. Como en el E471, sus ácidos grasos pueden venir de origen vegetal o animal y la etiqueta no establece de cuál.",
+  "can_1": "Detectar E472a–E472f, DATEM y sus nombres habituales cuando aparecen en una lista de ingredientes.",
+  "can_2": "Explicar que cada letra de E472 es un aditivo diferente, mostrar las distintas evaluaciones de JECFA y señalar la trazabilidad cuando no se declara el origen de los ácidos grasos.",
+  "cannot_1": "Determinar si los ácidos grasos proceden de materia vegetal o animal cuando el fabricante no declara el origen.",
+  "cannot_2": "Tratar el término genérico E472 como si todos sus subtipos tuvieran la misma composición, función o evaluación de ingesta de JECFA.",
   "sources": [
     {
-      "label": "WHO/JECFA — Acetic and fatty acid esters of glycerol (INS 472a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/434"
+      "label": "JECFA — Ésteres acéticos de mono y diglicéridos (INS 472a), registro químico 1243",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1243"
     },
     {
-      "label": "Reglamento (UE) n.º 231/2012 de la Comisión",
+      "label": "JECFA — Ésteres lácticos y de ácidos grasos del glicerol (INS 472b), registro químico 2411",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2411"
+    },
+    {
+      "label": "JECFA — Ésteres cítricos y de ácidos grasos del glicerol (INS 472c), registro químico 1275",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1275"
+    },
+    {
+      "label": "JECFA — DATEM / ésteres diacetiltartáricos y de ácidos grasos del glicerol (INS 472e, 472f), registro químico 1126",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1126"
+    },
+    {
+      "label": "Codex GSFA — uso de DATEM en pan y productos ordinarios de panadería",
+      "url": "https://www.fao.org/gsfaonline/foods/details.html?id=114"
+    },
+    {
+      "label": "Reglamento UE 231/2012 — especificaciones de E472a–E472f",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — aditivos y sustancias añadidas a alimentos halal",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Ésteres de los mono y diglicéridos de ácidos grasos",
-  "description": "Un grupo de emulsionantes compuestos por mono y diglicéridos de ácidos grasos esterificados con ácidos orgánicos como acético, láctico, cítrico o t..."
+  "description": "E472 es una familia de emulsionantes distintos, no una sola sustancia. El DATEM (E472e) se usa en la masa del pan industrial, JECFA evalúa cada subtipo por separado y el origen de los ácidos grasos puede no declararse."
 }

@@ -9,22 +9,42 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "一组乳化剂，由脂肪酸的单甘油酯和双甘油酯与有机酸（如乙酸、乳酸、柠檬酸或酒石酸）酯化而成。",
-  "why_botia": "它标记此成分是因为脂肪酸主链可能来源于动物或植物，从而带来宗教和饮食追踪的不确定性。",
-  "can_1": "识别标签上的E472子类代码（a至f）及其对应名称。",
-  "can_2": "标记该成分可能源自动物脂肪。",
-  "cannot_1": "确定起始脂肪酸是从植物油还是动物脂肪组织中提取的。",
-  "cannot_2": "测量最终产品中未反应的游离甘油或游离有机酸的百分比。",
+  "what_is": "E472 不是一种物质，而是一组不同的乳化剂。每个字母代表单甘油酯和双甘油酯与不同有机酸形成的不同添加剂。",
+  "why_botia": "E472 不是一种物质，而是多种：单甘油酯和双甘油酯与不同的酸结合，每个字母代表一种不同的添加剂。E472e 又称 DATEM，用于增强工业面包面团。人体会将这些添加剂分解为其组成成分，JECFA 也分别评估各亚型：有些没有数值摄入限量，而 DATEM 的 ADI 为 0–50 mg/kg 体重。与 E471 一样，其脂肪酸可能来自植物或动物，而标签通常无法确定来源。",
+  "can_1": "识别配料表中的 E472a–E472f、DATEM 及其常见名称。",
+  "can_2": "说明每个 E472 字母代表不同添加剂，显示不同的 JECFA 评估，并在脂肪酸来源未声明时提示来源追溯问题。",
+  "cannot_1": "当生产商没有披露来源时，判断脂肪酸来自植物还是动物。",
+  "cannot_2": "把泛称 E472 当成所有亚型具有相同组成、功能或 JECFA 摄入评估的一种物质。",
   "sources": [
     {
-      "label": "WHO/JECFA — Acetic and fatty acid esters of glycerol (INS 472a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/434"
+      "label": "JECFA — Acetic acid esters of mono- and diglycerides (INS 472a), chemical record 1243",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1243"
     },
     {
-      "label": "欧盟委员会法规 (EU) No 231/2012",
+      "label": "JECFA — Lactic and fatty acid esters of glycerol (INS 472b), chemical record 2411",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2411"
+    },
+    {
+      "label": "JECFA — Citric and fatty acid esters of glycerol (INS 472c), chemical record 1275",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1275"
+    },
+    {
+      "label": "JECFA — DATEM / diacetyltartaric and fatty acid esters of glycerol (INS 472e, 472f), chemical record 1126",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1126"
+    },
+    {
+      "label": "Codex GSFA — DATEM use in bread and ordinary bakery products",
+      "url": "https://www.fao.org/gsfaonline/foods/details.html?id=114"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E472a–E472f",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives and added chemicals to halal food",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "脂肪酸单甘油酯和双甘油酯的酯类",
-  "description": "一组乳化剂，由脂肪酸的单甘油酯和双甘油酯与有机酸（如乙酸、乳酸、柠檬酸或酒石酸）酯化而成。"
+  "description": "E472 不是一种单独物质，而是一组不同的乳化剂。DATEM（E472e）用于工业面包面团，JECFA 对各亚型分别评估。"
 }

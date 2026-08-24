@@ -9,22 +9,42 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Un groupe d'émulsifiants composés de mono- et diglycérides d'acides gras estérifiés avec des acides organiques comme l'acide acétique, lactique, citrique ou tartrique.",
-  "why_botia": "Il le signale car la chaîne d'acides gras peut avoir des origines animales ou végétales, posant des incertitudes de suivi religieux et alimentaire.",
-  "can_1": "Identifier les codes de sous-classe E472 (a à f) et leurs noms correspondants sur une étiquette.",
-  "can_2": "Signaler l'ingrédient comme potentiellement dérivé de graisses animales.",
-  "cannot_1": "Déterminer si les acides gras de départ ont été extraits d'huiles végétales ou de tissus adipeux animaux.",
-  "cannot_2": "Mesurer le pourcentage de glycérol libre non réagi ou d'acides organiques libres dans le produit final.",
+  "what_is": "E472 n’est pas une substance unique mais une famille d’émulsifiants. Chaque lettre correspond à des mono- et diglycérides associés à un acide organique différent.",
+  "why_botia": "E472 n’est pas une substance mais plusieurs : des mono- et diglycérides associés à différents acides, chaque lettre correspondant à un additif différent. E472e, appelé DATEM, est utilisé pour renforcer la pâte du pain industriel. L’organisme les décompose en leurs composants et le JECFA évalue les sous-types séparément : certains n’ont pas de limite numérique, tandis que le DATEM a une DJA de 0–50 mg/kg de poids corporel. Comme pour E471, les acides gras peuvent être d’origine végétale ou animale et l’étiquette ne permet pas d’établir laquelle.",
+  "can_1": "Identifier E472a–E472f, DATEM et les noms courants correspondants dans une liste d’ingrédients.",
+  "can_2": "Expliquer que chaque lettre de E472 correspond à un additif différent, montrer les différentes évaluations JECFA et signaler la traçabilité lorsque l’origine des acides gras n’est pas déclarée.",
+  "cannot_1": "Déterminer si les acides gras sont d’origine végétale ou animale lorsque le fabricant ne précise pas la source.",
+  "cannot_2": "Traiter le terme générique E472 comme si tous les sous-types avaient la même composition, fonction ou évaluation JECFA.",
   "sources": [
     {
-      "label": "WHO/JECFA — Acetic and fatty acid esters of glycerol (INS 472a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/434"
+      "label": "JECFA — Acetic acid esters of mono- and diglycerides (INS 472a), chemical record 1243",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1243"
     },
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission",
+      "label": "JECFA — Lactic and fatty acid esters of glycerol (INS 472b), chemical record 2411",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2411"
+    },
+    {
+      "label": "JECFA — Citric and fatty acid esters of glycerol (INS 472c), chemical record 1275",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1275"
+    },
+    {
+      "label": "JECFA — DATEM / diacetyltartaric and fatty acid esters of glycerol (INS 472e, 472f), chemical record 1126",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1126"
+    },
+    {
+      "label": "Codex GSFA — DATEM use in bread and ordinary bakery products",
+      "url": "https://www.fao.org/gsfaonline/foods/details.html?id=114"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E472a–E472f",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives and added chemicals to halal food",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Esters d'acides gras de mono- et diglycérides",
-  "description": "Un groupe d'émulsifiants composés de mono- et diglycérides d'acides gras estérifiés avec des acides organiques comme l'acide acétique, lactique, ci..."
+  "description": "E472 désigne plusieurs émulsifiants différents, pas une seule substance. Le DATEM (E472e) est utilisé dans la pâte du pain industriel et le JECFA évalue les sous-types séparément."
 }

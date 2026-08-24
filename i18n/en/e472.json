@@ -9,22 +9,42 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "A group of emulsifiers made of mono- and diglycerides of fatty acids esterified with organic acids like acetic, lactic, citric, or tartaric acid.",
-  "why_botia": "It flags it because the fatty acid backbone can have either animal or plant origins, posing religious and dietary tracking uncertainties.",
-  "can_1": "Identify E472 subclass codes (a to f) and their corresponding names on a label.",
-  "can_2": "Flag the ingredient as potentially derived from animal fats.",
-  "cannot_1": "Ascertain whether the starting fatty acids were extracted from plant oils or animal fat tissues.",
-  "cannot_2": "Measure the percentage of unreacted free glycerol or free organic acids in the final product.",
+  "what_is": "E472 is not one substance but a family of different emulsifiers. Each letter identifies mono- and diglycerides combined with a different organic acid.",
+  "why_botia": "E472 is not one substance but several: mono- and diglycerides combined with different acids, and each letter identifies a different additive. E472e, called DATEM, is used to strengthen industrial bread dough. The body breaks these additives down into their components, and JECFA evaluates the subclasses separately: some have no numerical intake limit, while DATEM has an ADI of 0–50 mg/kg body weight. As with E471, their fatty acids may come from plant or animal sources, and the label does not establish which.",
+  "can_1": "Detect E472a–E472f, DATEM and the corresponding common names when they appear on an ingredient list.",
+  "can_2": "Explain that each E472 letter is a different additive, show the different JECFA evaluations and flag source traceability when the fatty-acid origin is not declared.",
+  "cannot_1": "Determine whether the fatty acids came from plant or animal material when the manufacturer does not disclose the source.",
+  "cannot_2": "Treat the generic term E472 as if every subclass had the same composition, function or JECFA intake evaluation.",
   "sources": [
     {
-      "label": "WHO/JECFA — Acetic and fatty acid esters of glycerol (INS 472a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/434"
+      "label": "JECFA — Acetic acid esters of mono- and diglycerides (INS 472a), chemical record 1243",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1243"
     },
     {
-      "label": "Commission Regulation (EU) No 231/2012",
+      "label": "JECFA — Lactic and fatty acid esters of glycerol (INS 472b), chemical record 2411",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2411"
+    },
+    {
+      "label": "JECFA — Citric and fatty acid esters of glycerol (INS 472c), chemical record 1275",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1275"
+    },
+    {
+      "label": "JECFA — DATEM / diacetyltartaric and fatty acid esters of glycerol (INS 472e, 472f), chemical record 1126",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1126"
+    },
+    {
+      "label": "Codex GSFA — DATEM use in bread and ordinary bakery products",
+      "url": "https://www.fao.org/gsfaonline/foods/details.html?id=114"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E472a–E472f",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives and added chemicals to halal food",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Esters of mono- and diglycerides of fatty acids",
-  "description": "A group of emulsifiers made of mono- and diglycerides of fatty acids esterified with organic acids like acetic, lactic, citric, or tartaric acid."
+  "description": "E472 is a family of different emulsifiers rather than one substance. DATEM (E472e) is used in industrial bread dough, JECFA evaluates the subclasses separately, and fatty-acid source may remain undisclosed."
 }

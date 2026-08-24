@@ -9,22 +9,42 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Mono- ve digliseritlerin, asetik, laktik, sitrik veya tartarik asit gibi organik asitlerle esterleştirilmesiyle elde edilen bir grup emülgatör.",
-  "why_botia": "Yağ asidi omurgasının hayvansal veya bitkisel kaynaklı olabilmesi nedeniyle dini ve diyet takibinde belirsizlikler yarattığı için işaretler.",
-  "can_1": "Bir etikette E472 alt sınıf kodlarını (a'dan f'ye) ve bunlara karşılık gelen adları tanımlayın.",
-  "can_2": "İçeriğin potansiyel olarak hayvansal yağlardan elde edilmiş olabileceğini işaretleyin.",
-  "cannot_1": "Başlangıçtaki yağ asitlerinin bitkisel yağlardan mı yoksa hayvansal yağ dokularından mı çıkarıldığını belirleyemez.",
-  "cannot_2": "Nihai üründeki reaksiyona girmemiş serbest gliserol veya serbest organik asitlerin yüzdesini ölçemez.",
+  "what_is": "E472 tek bir madde değil, farklı emülgatörlerden oluşan bir ailedir. Her harf, farklı bir organik asitle birleştirilmiş mono ve digliseritleri ifade eder.",
+  "why_botia": "E472 tek bir madde değil, birkaç farklı maddedir: mono ve digliseritler farklı asitlerle birleştirilir ve her harf farklı bir katkı maddesini ifade eder. DATEM olarak bilinen E472e, endüstriyel ekmek hamurunu güçlendirmek için kullanılır. Vücut bunları bileşenlerine parçalar ve JECFA alt türleri ayrı ayrı değerlendirir: bazılarında sayısal alım sınırı yoktur, DATEM için ise 0–50 mg/kg vücut ağırlığı ADI vardır. E471’de olduğu gibi yağ asitleri bitkisel veya hayvansal kaynaklı olabilir ve etiket hangisi olduğunu göstermez.",
+  "can_1": "E472a–E472f, DATEM ve karşılık gelen yaygın adları içerik listesinde tespit etmek.",
+  "can_2": "Her E472 harfinin farklı bir katkı maddesi olduğunu açıklamak, farklı JECFA değerlendirmelerini göstermek ve yağ asidi kaynağı açıklanmadığında kaynak izlenebilirliğini işaretlemek.",
+  "cannot_1": "Üretici kaynağı açıklamadığında yağ asitlerinin bitkisel mi hayvansal mı olduğunu belirlemek.",
+  "cannot_2": "Genel E472 terimini tüm alt türlerin aynı bileşim, işlev veya JECFA değerlendirmesine sahipmiş gibi ele almak.",
   "sources": [
     {
-      "label": "WHO/JECFA — Acetic and fatty acid esters of glycerol (INS 472a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/434"
+      "label": "JECFA — Acetic acid esters of mono- and diglycerides (INS 472a), chemical record 1243",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1243"
     },
     {
-      "label": "Komisyon Tüzüğü (AB) No 231/2012",
+      "label": "JECFA — Lactic and fatty acid esters of glycerol (INS 472b), chemical record 2411",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2411"
+    },
+    {
+      "label": "JECFA — Citric and fatty acid esters of glycerol (INS 472c), chemical record 1275",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1275"
+    },
+    {
+      "label": "JECFA — DATEM / diacetyltartaric and fatty acid esters of glycerol (INS 472e, 472f), chemical record 1126",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1126"
+    },
+    {
+      "label": "Codex GSFA — DATEM use in bread and ordinary bakery products",
+      "url": "https://www.fao.org/gsfaonline/foods/details.html?id=114"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E472a–E472f",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives and added chemicals to halal food",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Yağ asitlerinin mono- ve digliseritlerinin esterleri",
-  "description": "Mono- ve digliseritlerin, asetik, laktik, sitrik veya tartarik asit gibi organik asitlerle esterleştirilmesiyle elde edilen bir grup emülgatör."
+  "description": "E472 tek bir madde değil, farklı emülgatörlerden oluşan bir ailedir. DATEM (E472e) endüstriyel ekmek hamurunda kullanılır ve JECFA alt türleri ayrı ayrı değerlendirir."
 }

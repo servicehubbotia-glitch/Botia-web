@@ -9,22 +9,42 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "Группа эмульгаторов, состоящих из моно- и диглицеридов жирных кислот, этерифицированных органическими кислотами, такими как уксусная, молочная, лимонная или винная кислота.",
-  "why_botia": "Он помечает это, потому что основа жирных кислот может иметь как животное, так и растительное происхождение, что создает неопределенность в религиозном и диетическом отслеживании.",
-  "can_1": "Определите коды подклассов E472 (от a до f) и соответствующие им названия на этикетке.",
-  "can_2": "Пометить ингредиент как потенциально полученный из животных жиров.",
-  "cannot_1": "Установить, были ли исходные жирные кислоты извлечены из растительных масел или тканей животных жиров.",
-  "cannot_2": "Измерить процент непрореагировавшего свободного глицерина или свободных органических кислот в конечном продукте.",
+  "what_is": "E472 — не одно вещество, а семейство разных эмульгаторов. Каждая буква обозначает моно- и диглицериды, соединённые с другой органической кислотой.",
+  "why_botia": "E472 — это не одно вещество, а несколько: моно- и диглицериды, соединённые с разными кислотами, причём каждая буква обозначает другой добавочный компонент. E472e, DATEM, используется для укрепления промышленного хлебного теста. Организм расщепляет эти вещества на компоненты, а JECFA оценивает подтипы отдельно: некоторые не имеют числового предела, тогда как DATEM имеет ADI 0–50 мг/кг массы тела. Как и E471, жирные кислоты могут иметь растительное или животное происхождение, а этикетка не устанавливает источник.",
+  "can_1": "Распознавать E472a–E472f, DATEM и соответствующие распространённые названия в списке ингредиентов.",
+  "can_2": "Объяснять, что каждая буква E472 означает отдельную добавку, показывать разные оценки JECFA и отмечать прослеживаемость, если источник жирных кислот не указан.",
+  "cannot_1": "Определить растительное или животное происхождение жирных кислот, если производитель не раскрывает источник.",
+  "cannot_2": "Считать общий термин E472 обозначением веществ с одинаковым составом, функцией и оценкой JECFA.",
   "sources": [
     {
-      "label": "WHO/JECFA — Acetic and fatty acid esters of glycerol (INS 472a)",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/434"
+      "label": "JECFA — Acetic acid esters of mono- and diglycerides (INS 472a), chemical record 1243",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1243"
     },
     {
-      "label": "Регламент Комиссии (ЕС) № 231/2012",
+      "label": "JECFA — Lactic and fatty acid esters of glycerol (INS 472b), chemical record 2411",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2411"
+    },
+    {
+      "label": "JECFA — Citric and fatty acid esters of glycerol (INS 472c), chemical record 1275",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1275"
+    },
+    {
+      "label": "JECFA — DATEM / diacetyltartaric and fatty acid esters of glycerol (INS 472e, 472f), chemical record 1126",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1126"
+    },
+    {
+      "label": "Codex GSFA — DATEM use in bread and ordinary bakery products",
+      "url": "https://www.fao.org/gsfaonline/foods/details.html?id=114"
+    },
+    {
+      "label": "EU Regulation 231/2012 — specifications for E472a–E472f",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "OIC/SMIIC 24:2020 — food additives and added chemicals to halal food",
+      "url": "https://smiic.org/en/project/60"
     }
   ],
   "title": "Эфиры моно- и диглицеридов жирных кислот",
-  "description": "Группа эмульгаторов, состоящих из моно- и диглицеридов жирных кислот, этерифицированных органическими кислотами, такими как уксусная, молочная, лим..."
+  "description": "E472 — это не одно вещество, а семейство разных эмульгаторов. DATEM (E472e) используется в промышленном хлебном тесте, а JECFA оценивает подтипы отдельно."
 }
