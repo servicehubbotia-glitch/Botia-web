@@ -1,21 +1,29 @@
 {
   "name": "L-cisteină",
   "title": "L-cisteină",
-  "description": "Un aminoacid utilizat ca agent de tratare a făinii și în alte scopuri tehnologice. L-cisteina comercială poate fi produsă prin diverse procese de fabricație și din diverse surse.",
-  "what_is": "Un aminoacid utilizat ca agent de tratare a făinii și în alte scopuri tehnologice. L-cisteina comercială poate fi produsă prin diverse procese de fabricație și din diverse surse.",
-  "why_botia": "BOTIA se utilizează codul E920, deoarece denumirea explicită a aditivului poate fi importantă atât din punct de vedere tehnologic, cât și pentru alegerile alimentare bazate pe proveniența ingredientelor. Lista ingredientelor poate menționa L-cisteina, dar, de obicei, nu poate preciza dacă aceasta a fost obținută prin fermentare, sinteză sau dintr-o materie primă de origine animală.",
-  "can_1": "Detectează E920, L-cisteină și denumirile declarate strâns legate de acestea.",
-  "can_2": "Prezentați contextul referitor la textură/numărul E și explicați că sursa poate fi importantă, fără a califica o mențiune generică de tipul „E920” drept de origine animală.",
-  "cannot_1": "Stabiliți procesul de fabricație sau sursa biologică doar pe baza denumirii generice.",
-  "cannot_2": "Certifică conformitatea cu standardele vegetariene, vegane, halal sau alte standarde dependente de sursa produsului, fără a furniza informații privind sursa.",
+  "description": "L-cisteina E920 este un agent de tratare a făinii care înmoaie aluatul. Poate fi produsă prin metode diferite; părul uman a fost folosit istoric și este astăzi interzis în mod expres ca sursă în UE.",
+  "what_is": "Un aminoacid utilizat ca agent de tratare a făinii pentru a înmuia aluatul și a-l face mai ușor de întins și procesat. L-cisteina comercială poate fi produsă prin mai multe procese.",
+  "why_botia": "L-cisteina este un aminoacid care înmoaie aluatul de pâine și îl face mai ușor de întins. Poate fi obținută prin fermentație, sinteză sau din materiale bogate în keratină, precum penele; istoric, a fost produsă și din păr uman, o sursă astăzi interzisă în mod expres în UE. Eticheta nu spune ce proces sau materie primă a fost folosită. JECFA a evaluat-o ca aromatizant, dar nu ca agent de tratare a făinii.",
+  "can_1": "Identifica E920, L-cisteina și denumirile declarate apropiate.",
+  "can_2": "Explica faptul că E920 poate avea diferite căi de fabricație și materii prime, inclusiv surse de keratină documentate istoric, fără a presupune că un produs concret este de origine animală.",
+  "cannot_1": "Determina din lista ingredientelor dacă o anumită E920 a fost produsă prin fermentație, sinteză sau din material bogat în keratină.",
+  "cannot_2": "Determina sursa biologică atunci când producătorul nu o declară.",
   "sources": [
     {
-      "label": "Regulamentul (CE) nr. 1333/2008 — Lista Uniunii și condițiile de utilizare a aditivilor alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — L-Cysteine, JECFA No. 1419 — evaluated as a flavouring agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/home/chemical/4381"
     },
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei — specificații privind aditivii alimentari autorizați",
+      "label": "EU Regulation 231/2012 — E920 specification; human hair may not be used as a source",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "European Parliament written question P-3343/00 — documented historical production routes for L-cysteine",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:92000E003343"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — authorised uses of food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "e_code": "E920",

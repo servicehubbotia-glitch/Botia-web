@@ -1,21 +1,29 @@
 {
   "name": "L-Sistein",
   "title": "L-Sistein",
-  "description": "Sebuah asam amino yang digunakan sebagai bahan pengolah tepung dan untuk keperluan teknologi lainnya. L-sistein komersial dapat diproduksi melalui berbagai proses produksi dan dari berbagai sumber.",
-  "what_is": "Sebuah asam amino yang digunakan sebagai bahan pengolah tepung dan untuk keperluan teknologi lainnya. L-sistein komersial dapat diproduksi melalui berbagai proses produksi dan dari berbagai sumber.",
-  "why_botia": "BOTIA menandai E920 karena nama bahan tambahan yang disebutkan secara eksplisit dapat menjadi pertimbangan baik dari segi teknologi maupun dalam hal pilihan pola makan yang memperhatikan asal bahan. Daftar bahan dapat mencantumkan L-sistein, tetapi biasanya tidak dapat menentukan apakah bahan tersebut dihasilkan melalui fermentasi, sintesis, atau berasal dari bahan baku hewani.",
-  "can_1": "Mendeteksi E920, L-sistein, dan nama-nama yang dinyatakan yang sangat mirip.",
-  "can_2": "Tunjukkan konteks tekstur/nomor E dan jelaskan bahwa asal bahan mungkin menjadi faktor penting, tanpa secara langsung menyebut deklarasi E920 yang bersifat umum sebagai bahan yang berasal dari hewan.",
-  "cannot_1": "Tentukan rute produksi atau sumber biologisnya hanya berdasarkan nama generiknya saja.",
-  "cannot_2": "Menyatakan kesesuaian untuk vegetarian, vegan, halal, atau kategori lain yang bergantung pada sumber tanpa menyertakan informasi mengenai sumbernya.",
+  "description": "L-sistein E920 adalah bahan perlakuan tepung yang melembutkan adonan. Bahan ini dapat diproduksi dengan berbagai cara; rambut manusia pernah digunakan secara historis dan kini secara tegas dilarang sebagai sumber di UE.",
+  "what_is": "Asam amino yang digunakan sebagai bahan perlakuan tepung untuk melembutkan adonan dan membuatnya lebih mudah diregangkan serta diproses. L-sistein komersial dapat dibuat melalui beberapa jalur produksi.",
+  "why_botia": "L-sistein adalah asam amino yang melembutkan adonan roti dan membuatnya lebih mudah diregangkan. Bahan ini dapat diperoleh melalui fermentasi, sintesis atau dari bahan kaya keratin seperti bulu; secara historis juga pernah diproduksi dari rambut manusia, sumber yang kini secara tegas dilarang di UE. Label tidak menyebutkan proses atau bahan baku yang digunakan. JECFA mengevaluasinya sebagai bahan perisa, tetapi bukan sebagai bahan perlakuan tepung.",
+  "can_1": "Mendeteksi E920, L-sistein dan nama deklarasi yang terkait erat.",
+  "can_2": "Menjelaskan bahwa E920 dapat memiliki jalur produksi dan bahan baku yang berbeda, termasuk sumber keratin yang terdokumentasi secara historis, tanpa menganggap produk tertentu berasal dari hewan.",
+  "cannot_1": "Menentukan dari daftar bahan apakah E920 tertentu dibuat melalui fermentasi, sintesis atau dari bahan kaya keratin.",
+  "cannot_2": "Menentukan sumber biologis suatu produk ketika produsen tidak mengungkapkannya.",
   "sources": [
     {
-      "label": "Peraturan (EC) No. 1333/2008 — Daftar Uni Eropa dan ketentuan penggunaan bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — L-Cysteine, JECFA No. 1419 — evaluated as a flavouring agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/home/chemical/4381"
     },
     {
-      "label": "Peraturan Komisi (UE) No. 231/2012 — spesifikasi untuk bahan tambahan pangan yang diizinkan",
+      "label": "EU Regulation 231/2012 — E920 specification; human hair may not be used as a source",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "European Parliament written question P-3343/00 — documented historical production routes for L-cysteine",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:92000E003343"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — authorised uses of food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "e_code": "E920",

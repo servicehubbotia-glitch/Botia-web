@@ -8,22 +8,30 @@
     "enumbers",
     "animal"
   ],
-  "what_is": "An amino acid used as a flour-treatment agent and for other technological purposes. Commercial L-cysteine can be produced by different manufacturing routes and sources.",
-  "why_botia": "BOTIA flags E920 because the explicit additive name can matter both technologically and for source-sensitive dietary choices. The ingredient list can identify L-cysteine, but it normally cannot establish whether it was produced by fermentation, synthesis or from an animal-derived raw material.",
+  "what_is": "An amino acid used as a flour-treatment agent to soften dough and make it easier to stretch and process. Commercial L-cysteine can be produced by several manufacturing routes and from different raw materials.",
+  "why_botia": "L-cysteine is an amino acid that softens bread dough and makes it easier to stretch. It can be obtained by fermentation, synthesis or from keratin-rich materials such as feathers; historically it was also produced from human hair, a source that is now expressly prohibited in the EU. The label does not say which process or raw material was used. JECFA evaluated it as a flavouring agent, but not as a flour-treatment agent.",
   "can_1": "Detect E920, L-cysteine and closely related declared names.",
-  "can_2": "Show the texture/E-number context and explain that source may matter without labelling a generic E920 declaration as animal-derived.",
-  "cannot_1": "Determine the manufacturing route or biological source from the generic name alone.",
-  "cannot_2": "Certify vegetarian, vegan, halal or other source-dependent suitability without source information.",
+  "can_2": "Explain that E920 can have different manufacturing routes and source materials, including historically documented keratin sources, without assuming that a specific product is animal-derived.",
+  "cannot_1": "Determine from the ingredient list whether a particular E920 was made by fermentation, synthesis or from a keratin-derived raw material.",
+  "cannot_2": "Determine the biological source of a specific product when the manufacturer does not disclose it.",
   "sources": [
     {
-      "label": "Regulation (EC) No 1333/2008 — Union list and conditions of use for food additives",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — L-Cysteine, JECFA No. 1419 — evaluated as a flavouring agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/home/chemical/4381"
     },
     {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for authorised food additives",
+      "label": "EU Regulation 231/2012 — E920 specification; human hair may not be used as a source",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "European Parliament written question P-3343/00 — documented historical production routes for L-cysteine",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:92000E003343"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — authorised uses of food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "title": "L-Cysteine",
-  "description": "An amino acid used as a flour-treatment agent and for other technological purposes. Commercial L-cysteine can be produced by different manufacturing routes and sources."
+  "description": "L-cysteine E920 is a flour-treatment agent that softens dough. It can be produced by different manufacturing routes and raw materials; human hair was historically used and is expressly prohibited as a source in the EU."
 }

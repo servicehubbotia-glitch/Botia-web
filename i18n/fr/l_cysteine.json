@@ -1,21 +1,29 @@
 {
   "name": "L-cystéine",
   "title": "L-cystéine",
-  "description": "Acide aminé utilisé comme agent de traitement de la farine et à d'autres fins technologiques. La L-cystéine disponible dans le commerce peut être produite selon différents procédés de fabrication et à partir de différentes sources.",
-  "what_is": "Acide aminé utilisé comme agent de traitement de la farine et à d'autres fins technologiques. La L-cystéine disponible dans le commerce peut être produite selon différents procédés de fabrication et à partir de différentes sources.",
-  "why_botia": "BOTIA signale E920 car le nom explicite de l'additif peut revêtir une importance tant sur le plan technologique que pour les choix alimentaires tenant compte de l'origine des ingrédients. La liste des ingrédients peut indiquer la présence de L-cystéine, mais elle ne permet généralement pas de déterminer si celle-ci a été produite par fermentation, par synthèse ou à partir d'une matière première d'origine animale.",
-  "can_1": "Détecter « E920 », « L-cystéine » et les dénominations déclarées étroitement apparentées.",
-  "can_2": "Présentez le contexte relatif à la texture et aux numéros E, et expliquez que l'origine peut avoir son importance, sans pour autant qualifier une mention générique « E920 » de « d'origine animale ».",
-  "cannot_1": "Déterminer le procédé de fabrication ou la source biologique à partir du seul nom générique.",
-  "cannot_2": "Certifier la conformité aux régimes végétariens, végétaliens, halal ou autres, sans fournir d'informations sur la provenance des ingrédients.",
+  "description": "La L-cystéine E920 est un agent de traitement de la farine qui assouplit la pâte. Elle peut être produite par différentes voies; les cheveux humains ont été utilisés historiquement et sont aujourd’hui interdits dans l’UE.",
+  "what_is": "Un acide aminé utilisé comme agent de traitement de la farine pour assouplir la pâte et faciliter son étirement et sa transformation. La L-cystéine commerciale peut être produite par plusieurs procédés.",
+  "why_botia": "La L-cystéine est un acide aminé qui assouplit la pâte à pain et la rend plus facile à étirer. Elle peut être obtenue par fermentation, synthèse ou à partir de matériaux riches en kératine comme les plumes; historiquement, elle a également été produite à partir de cheveux humains, une source aujourd’hui expressément interdite dans l’UE. L’étiquette n’indique ni le procédé ni la matière première utilisée. Le JECFA l’a évaluée comme substance aromatisante, mais pas comme agent de traitement de la farine.",
+  "can_1": "Identifier E920, L-cystéine et les dénominations déclarées proches.",
+  "can_2": "Expliquer qu’E920 peut avoir différents procédés et matières premières, y compris des sources de kératine historiquement documentées, sans supposer qu’un produit précis est d’origine animale.",
+  "cannot_1": "Déterminer à partir de la liste d’ingrédients si une E920 donnée provient de fermentation, de synthèse ou d’une matière riche en kératine.",
+  "cannot_2": "Déterminer l’origine biologique d’un produit précis lorsque le fabricant ne la communique pas.",
   "sources": [
     {
-      "label": "Règlement (CE) n° 1333/2008 — Liste de l'Union et conditions d'utilisation des additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "JECFA — L-Cysteine, JECFA No. 1419 — evaluated as a flavouring agent",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/home/chemical/4381"
     },
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission — spécifications relatives aux additifs alimentaires autorisés",
+      "label": "EU Regulation 231/2012 — E920 specification; human hair may not be used as a source",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+    },
+    {
+      "label": "European Parliament written question P-3343/00 — documented historical production routes for L-cysteine",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:92000E003343"
+    },
+    {
+      "label": "EU Regulation 1333/2008 — authorised uses of food additives",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
     }
   ],
   "e_code": "E920",
