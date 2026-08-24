@@ -1,25 +1,29 @@
 {
   "name": "Sulfites",
   "title": "Sulfites",
-  "description": "Groupe de conservateurs et d'antioxydants à base de soufre comprenant le dioxyde de soufre et plusieurs sels de sulfite de sodium, de potassium et de calcium, désignés dans l'UE sous le nom d'«E220–E228».",
-  "what_is": "Groupe de conservateurs et d'antioxydants à base de soufre comprenant le dioxyde de soufre et plusieurs sels de sulfite de sodium, de potassium et de calcium, désignés dans l'UE sous le nom d'«E220–E228».",
-  "why_botia": "BOTIA regroupe ces mentions, car une même famille de substances peut apparaître sous un numéro E ou sous un nom chimique. La réglementation européenne en matière d'information alimentaire considère également le dioxyde de soufre et les sulfites, dès lors qu'ils dépassent le seuil fixé, comme des substances devant faire l'objet d'une mention similaire à celle des allergènes. Ce seuil ne peut être déterminé à partir de la seule liste des ingrédients.",
-  "can_1": "Détecter les éléments « E220–E228 » ainsi que les principaux noms liés au sulfite lorsqu’ils sont explicitement déclarés.",
-  "can_2": "Expliquez que la famille est soumise à la fois aux exigences relatives aux additifs alimentaires et à celles de l'Union européenne en matière d'information sur les denrées alimentaires, sans pour autant transformer une déclaration positive en un diagnostic de risque.",
-  "cannot_1": "Déterminez la concentration résiduelle en dioxyde de soufre à partir de la liste des ingrédients.",
-  "cannot_2": "Déterminer si un produit se situe en dessous ou au-dessus du seuil de déclaration de l'UE lorsqu'aucune quantité analytique n'est indiquée.",
+  "description": "Les sulfites conservent le vin, les fruits secs et les produits de pomme de terre ; chez les personnes sensibles, ils peuvent provoquer un bronchospasme en quelques minutes.",
+  "what_is": "Les sulfites sont des conservateurs et antioxydants à base de soufre utilisés pour ralentir le brunissement et l'altération microbienne. La famille comprend le dioxyde de soufre et des sulfites de sodium, potassium et calcium, courants dans le vin, les fruits secs et les produits de pomme de terre transformés.",
+  "why_botia": "Les sulfites freinent le brunissement et l'altération microbienne et sont courants dans le vin, les fruits secs et les pommes de terre transformées. En milieu acide, ils peuvent libérer du dioxyde de soufre, susceptible de déclencher des symptômes d'asthme en quelques minutes chez les personnes sensibles — l'une des relativement rares réactions aux additifs alimentaires pouvant être immédiates et sévères. C'est pourquoi les sulfites doivent être déclarés au-dessus de 10 mg/kg ou 10 mg/L, même lorsqu'il ne reste que des résidus ; le JECFA a fixé une DJA de groupe de 0–0,7 mg/kg de poids corporel par jour, exprimée en dioxyde de soufre.",
+  "can_1": "Détecter E220–E228, INS 220–228 et les principaux noms chimiques des sulfites lorsqu'ils sont explicitement déclarés.",
+  "can_2": "Expliquer pourquoi les sulfites sont utilisés, où ils apparaissent couramment, leurs effets respiratoires rapides chez les personnes sensibles, le seuil de déclaration européen et la DJA de groupe du JECFA.",
+  "cannot_1": "Déterminer la quantité ou la concentration résiduelle de dioxyde de soufre à partir de la liste des ingrédients ou d'une mention comme « contient des sulfites ».",
+  "cannot_2": "Prédire si une personne donnée réagira aux sulfites ni la gravité de cette réaction.",
   "sources": [
     {
-      "label": "Règlement (UE) n° 1169/2011 — Annexe II : dioxyde de soufre et sulfites",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sulfur dioxide (INS 220), group ADI for sulfur dioxide and sulphites",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/985"
     },
     {
-      "label": "Règlement (CE) n° 1333/2008 — E220–E228 et conditions d'utilisation",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "EFSA — Scientific Opinion on allergenic foods and adverse reactions to sulphites",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3894"
     },
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission — cahier des charges relatif à l’E220–E228",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Follow-up assessment of sulfur dioxide and sulphites, 2022",
+      "url": "https://www.efsa.europa.eu/sites/default/files/2022-11/EFS2_7594.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, sulphite declaration threshold",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "e_code": "E220–E228",
@@ -27,5 +31,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
+  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
 }

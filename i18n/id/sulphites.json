@@ -1,25 +1,29 @@
 {
   "name": "Sulfit",
   "title": "Sulfit",
-  "description": "Sekelompok bahan pengawet dan antioksidan berbasis belerang yang mencakup dioksida belerang serta beberapa garam sulfit natrium, kalium, dan kalsium, yang diklasifikasikan di Uni Eropa sebagai “E220–E228”.",
-  "what_is": "Sekelompok bahan pengawet dan antioksidan berbasis belerang yang mencakup dioksida belerang serta beberapa garam sulfit natrium, kalium, dan kalsium, yang diklasifikasikan di Uni Eropa sebagai “E220–E228”.",
-  "why_botia": "BOTIA mengelompokkan deklarasi-deklarasi ini karena suatu keluarga senyawa dapat tercantum baik dengan nomor E maupun nama kimia. Peraturan Uni Eropa mengenai informasi pangan juga menganggap dioksida belerang dan sulfit yang melebihi ambang batas yang ditentukan sebagai zat yang wajib dideklarasikan layaknya alergen. Ambang batas tersebut tidak dapat ditentukan hanya berdasarkan daftar bahan saja.",
-  "can_1": "Mendeteksi `E220–E228` serta nama-nama utama yang menggunakan bentuk `sulphite`/`sulfite` ketika dinyatakan secara eksplisit.",
-  "can_2": "Jelaskan bahwa keluarga tersebut harus memenuhi persyaratan terkait bahan tambahan pangan dan persyaratan informasi pangan Uni Eropa, tanpa mengubah pernyataan positif menjadi diagnosis risiko.",
-  "cannot_1": "Tentukan konsentrasi sisa sulfur dioksida berdasarkan daftar bahan.",
-  "cannot_2": "Tentukan apakah suatu produk berada di bawah atau di atas ambang batas deklarasi UE apabila tidak ada jumlah hasil analisis yang disertakan.",
+  "description": "Sulfit mengawetkan anggur, buah kering dan produk kentang; pada orang sensitif dapat memicu bronkospasme dalam beberapa menit.",
+  "what_is": "Sulfit adalah pengawet dan antioksidan berbasis sulfur yang digunakan untuk memperlambat pencoklatan dan kerusakan mikroba. Kelompok ini mencakup sulfur dioksida serta garam sulfit natrium, kalium dan kalsium dan umum ditemukan dalam anggur, buah kering dan produk kentang olahan.",
+  "why_botia": "Sulfit mencegah pencoklatan dan kerusakan mikroba dan umum ditemukan dalam anggur, buah kering dan kentang olahan. Dalam kondisi asam sulfit dapat melepaskan sulfur dioksida, yang dapat memicu gejala asma dalam beberapa menit pada orang yang sensitif — salah satu dari relatif sedikit reaksi terhadap bahan tambahan pangan yang dapat terjadi segera dan berat. Karena itu sulfit harus dinyatakan pada label di atas 10 mg/kg atau 10 mg/L, bahkan ketika hanya tersisa sebagai residu; JECFA menetapkan ADI kelompok 0–0,7 mg/kg berat badan per hari, dinyatakan sebagai sulfur dioksida.",
+  "can_1": "Mendeteksi E220–E228, INS 220–228 dan nama kimia utama sulfit ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan mengapa sulfit digunakan, di mana bahan ini umum ditemukan, efek pernapasan cepat pada orang sensitif, ambang deklarasi Uni Eropa dan ADI kelompok JECFA.",
+  "cannot_1": "Menentukan jumlah atau konsentrasi sulfur dioksida residu dari daftar bahan atau pernyataan seperti “mengandung sulfit”.",
+  "cannot_2": "Memprediksi apakah seseorang tertentu akan bereaksi terhadap sulfit atau seberapa berat reaksinya.",
   "sources": [
     {
-      "label": "Peraturan (UE) No. 1169/2011 — Lampiran II: dioksida belerang dan sulfit",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sulfur dioxide (INS 220), group ADI for sulfur dioxide and sulphites",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/985"
     },
     {
-      "label": "Peraturan (EC) No. 1333/2008 — E220–E228 dan ketentuan penggunaannya",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "EFSA — Scientific Opinion on allergenic foods and adverse reactions to sulphites",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3894"
     },
     {
-      "label": "Peraturan Komisi (UE) No. 231/2012 — spesifikasi untuk E220–E228",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Follow-up assessment of sulfur dioxide and sulphites, 2022",
+      "url": "https://www.efsa.europa.eu/sites/default/files/2022-11/EFS2_7594.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, sulphite declaration threshold",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "e_code": "E220–E228",
@@ -27,5 +31,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
+  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
 }

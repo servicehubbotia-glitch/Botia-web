@@ -1,25 +1,29 @@
 {
   "name": "Siarczyny",
   "title": "Siarczyny",
-  "description": "Grupa środków konserwujących i przeciwutleniaczy na bazie siarki, obejmująca dwutlenek siarki oraz kilka soli siarczynów sodu, potasu i wapnia, określana w UE jako „E220–E228”.",
-  "what_is": "Grupa środków konserwujących i przeciwutleniaczy na bazie siarki, obejmująca dwutlenek siarki oraz kilka soli siarczynów sodu, potasu i wapnia, określana w UE jako „E220–E228”.",
-  "why_botia": "BOTIA grupuje te informacje, ponieważ ta sama rodzina substancji może występować pod numerem E lub nazwą chemiczną. Przepisy UE dotyczące informacji o żywności traktują również dwutlenek siarki i siarczyny powyżej określonego progu jako substancje wymagające oznaczenia na wzór alergenów. Progu tego nie da się ustalić wyłącznie na podstawie wykazu składników.",
-  "can_1": "Wykrywaj wyrażenia typu „E220–E228” oraz główne nazwy związane z siarczynami i siarczynami, gdy są one jawnie zadeklarowane.",
-  "can_2": "Należy wyjaśnić, że rodzina musi spełniać zarówno wymogi dotyczące dodatków do żywności, jak i unijne wymogi w zakresie informacji o żywności, nie przekształcając przy tym pozytywnej deklaracji w diagnozę ryzyka.",
-  "cannot_1": "Na podstawie listy składników należy określić stężenie resztkowe dwutlenku siarki.",
-  "cannot_2": "Określić, czy produkt mieści się poniżej, czy powyżej progu określonego w deklaracji UE, w przypadku gdy nie podano ilości analitycznej.",
+  "description": "Siarczyny konserwują wino, suszone owoce i produkty ziemniaczane; u osób wrażliwych mogą w ciągu kilku minut wywołać skurcz oskrzeli.",
+  "what_is": "Siarczyny to konserwanty i przeciwutleniacze zawierające siarkę, stosowane do spowalniania brązowienia i psucia mikrobiologicznego. Grupa obejmuje dwutlenek siarki oraz siarczyny sodu, potasu i wapnia i często występuje w winie, suszonych owocach oraz przetworzonych produktach ziemniaczanych.",
+  "why_botia": "Siarczyny hamują brązowienie i psucie mikrobiologiczne i są powszechne w winie, suszonych owocach i przetworzonych ziemniakach. W warunkach kwaśnych mogą uwalniać dwutlenek siarki, który u osób wrażliwych może w ciągu kilku minut wywołać objawy astmy — jedną ze stosunkowo nielicznych reakcji na dodatki do żywności, które mogą być natychmiastowe i ciężkie. Dlatego siarczyny muszą być deklarowane powyżej 10 mg/kg lub 10 mg/L, nawet jeśli pozostają jedynie jako pozostałości; JECFA ustaliła grupowe ADI 0–0,7 mg/kg masy ciała dziennie, wyrażone jako dwutlenek siarki.",
+  "can_1": "Wykrywać E220–E228, INS 220–228 oraz główne chemiczne nazwy siarczynów, gdy są wyraźnie zadeklarowane.",
+  "can_2": "Wyjaśniać, dlaczego stosuje się siarczyny, gdzie często występują, ich szybkie działanie oddechowe u osób wrażliwych, unijny próg deklaracji i grupowe ADI JECFA.",
+  "cannot_1": "Określić ilości lub pozostałości dwutlenku siarki na podstawie samej listy składników lub informacji „zawiera siarczyny”.",
+  "cannot_2": "Przewidzieć, czy konkretna osoba zareaguje na siarczyny ani jak ciężka będzie reakcja.",
   "sources": [
     {
-      "label": "Rozporządzenie (UE) nr 1169/2011 — załącznik II: dwutlenek siarki i siarczyny",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sulfur dioxide (INS 220), group ADI for sulfur dioxide and sulphites",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/985"
     },
     {
-      "label": "Rozporządzenie (WE) nr 1333/2008 — E220–E228 oraz warunki stosowania",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "EFSA — Scientific Opinion on allergenic foods and adverse reactions to sulphites",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3894"
     },
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — specyfikacje dotyczące „E220–E228”",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Follow-up assessment of sulfur dioxide and sulphites, 2022",
+      "url": "https://www.efsa.europa.eu/sites/default/files/2022-11/EFS2_7594.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, sulphite declaration threshold",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "e_code": "E220–E228",
@@ -27,5 +31,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
+  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
 }

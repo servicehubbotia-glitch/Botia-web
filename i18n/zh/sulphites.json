@@ -1,25 +1,29 @@
 {
   "name": "亚硫酸盐",
   "title": "亚硫酸盐",
-  "description": "一类以硫为基础的防腐剂和抗氧化剂，包括二氧化硫以及几种亚硫酸钠、亚硫酸钾和亚硫酸钙盐，在欧盟中被标识为E220–E228。",
-  "what_is": "一类以硫为基础的防腐剂和抗氧化剂，包括二氧化硫以及几种亚硫酸钠、亚硫酸钾和亚硫酸钙盐，在欧盟中被标识为E220–E228。",
-  "why_botia": "BOTIA 将这些声明进行分组，是因为同一类物质可能以E编号或化学名称的形式出现。欧盟食品信息法规还将超过规定阈值的二氧化硫和亚硫酸盐视为需要按过敏原方式进行标示的物质。仅凭配料表无法推算出该阈值。",
-  "can_1": "当E220–E228以及主要的亚硫酸盐/亚硫酸盐名称被显式声明时，检测它们。",
-  "can_2": "说明该产品既符合食品添加剂的相关要求，也符合欧盟食品信息要求，同时避免将符合性声明误解为风险评估。",
-  "cannot_1": "根据配料表确定二氧化硫的残留浓度。",
-  "cannot_2": "在未提供分析含量的情况下，判定该产品是否低于或高于欧盟申报阈值。",
+  "description": "亚硫酸盐用于保存葡萄酒、干果和马铃薯产品；在敏感人群中可在几分钟内引起支气管痉挛。",
+  "what_is": "亚硫酸盐是一类含硫防腐剂和抗氧化剂，用于减缓褐变和微生物腐败。这一类包括二氧化硫以及钠、钾和钙的亚硫酸盐，常见于葡萄酒、干果和加工马铃薯产品。",
+  "why_botia": "亚硫酸盐可以抑制褐变和微生物腐败，常见于葡萄酒、干果和加工马铃薯产品。在酸性条件下，它们可以释放二氧化硫，对敏感人群而言，这可能在几分钟内触发哮喘症状——这是少数能够迅速出现并可能较严重的食品添加剂反应之一。因此，当亚硫酸盐超过10 mg/kg或10 mg/L时，即使只剩残留量，也必须在标签上声明；JECFA设定了以二氧化硫计的组ADI，为每天每公斤体重0–0.7 mg。",
+  "can_1": "识别明确标示的 E220–E228、INS 220–228 以及主要亚硫酸盐化学名称。",
+  "can_2": "解释亚硫酸盐为什么使用、常见于哪些食品、对敏感人群的快速呼吸道作用、欧盟声明阈值以及JECFA组ADI。",
+  "cannot_1": "仅根据配料表或“含亚硫酸盐”之类的声明确定实际含量或残余二氧化硫浓度。",
+  "cannot_2": "预测某个具体的人是否会对亚硫酸盐产生反应或反应会有多严重。",
   "sources": [
     {
-      "label": "第1169/2011号欧盟法规——附件二：二氧化硫和亚硫酸盐",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sulfur dioxide (INS 220), group ADI for sulfur dioxide and sulphites",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/985"
     },
     {
-      "label": "(EC)第1333/2008号法规——E220–E228及其使用条件",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "EFSA — Scientific Opinion on allergenic foods and adverse reactions to sulphites",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3894"
     },
     {
-      "label": "欧盟委员会第231/2012号条例——E220–E228的产品规格",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Follow-up assessment of sulfur dioxide and sulphites, 2022",
+      "url": "https://www.efsa.europa.eu/sites/default/files/2022-11/EFS2_7594.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, sulphite declaration threshold",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "e_code": "E220–E228",
@@ -27,5 +31,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
+  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
 }

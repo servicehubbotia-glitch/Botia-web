@@ -1,25 +1,29 @@
 {
   "name": "Solfiti",
   "title": "Solfiti",
-  "description": "Un gruppo di conservanti e antiossidanti a base di zolfo che comprende il biossido di zolfo e diversi sali di solfito di sodio, potassio e calcio, identificati nell’UE come “E220–E228”.",
-  "what_is": "Un gruppo di conservanti e antiossidanti a base di zolfo che comprende il biossido di zolfo e diversi sali di solfito di sodio, potassio e calcio, identificati nell’UE come “E220–E228”.",
-  "why_botia": "BOTIA raggruppa queste indicazioni perché la stessa famiglia di sostanze può figurare sia con un numero E che con un nome chimico. Le norme dell’UE in materia di informazione alimentare considerano inoltre il biossido di zolfo e i solfiti, al di sopra della soglia specificata, come sostanze soggette all’obbligo di indicazione simile a quella prevista per gli allergeni. Tale soglia non può essere ricavata dalla sola lista degli ingredienti.",
-  "can_1": "Rileva \"E220–E228\" e i principali termini relativi ai solfiti quando vengono dichiarati esplicitamente.",
-  "can_2": "Spiegare che la famiglia deve rispettare sia i requisiti relativi agli additivi alimentari sia quelli dell'UE in materia di informazione alimentare, senza trasformare una dichiarazione positiva in una diagnosi di rischio.",
-  "cannot_1": "Calcolare la concentrazione residua di anidride solforosa sulla base dell'elenco degli ingredienti.",
-  "cannot_2": "Stabilire se un prodotto si trovi al di sotto o al di sopra della soglia prevista dalla dichiarazione UE qualora non sia indicato alcun valore analitico.",
+  "description": "I solfiti conservano vino, frutta secca e prodotti a base di patate; nelle persone sensibili possono provocare broncospasmo in pochi minuti.",
+  "what_is": "I solfiti sono conservanti e antiossidanti a base di zolfo utilizzati per rallentare l'imbrunimento e il deterioramento microbico. La famiglia comprende anidride solforosa e sali di solfito di sodio, potassio e calcio, comuni nel vino, nella frutta secca e nei prodotti a base di patate lavorate.",
+  "why_botia": "I solfiti frenano l'imbrunimento e il deterioramento microbico e sono comuni nel vino, nella frutta secca e nelle patate lavorate. In condizioni acide possono liberare anidride solforosa, che nelle persone sensibili può provocare sintomi d'asma nel giro di pochi minuti — una delle relativamente poche reazioni agli additivi alimentari che possono essere immediate e gravi. Per questo i solfiti devono essere dichiarati oltre 10 mg/kg o 10 mg/L, anche quando restano soltanto residui; il JECFA ha fissato una DGA di gruppo di 0–0,7 mg/kg di peso corporeo al giorno, espressa come anidride solforosa.",
+  "can_1": "Rilevare E220–E228, INS 220–228 e i principali nomi chimici dei solfiti quando dichiarati esplicitamente.",
+  "can_2": "Spiegare perché si usano i solfiti, dove sono comuni, i loro rapidi effetti respiratori nelle persone sensibili, la soglia UE di dichiarazione e la DGA di gruppo del JECFA.",
+  "cannot_1": "Determinare la quantità o la concentrazione residua di anidride solforosa dalla lista degli ingredienti o da una dicitura come «contiene solfiti».",
+  "cannot_2": "Prevedere se una determinata persona reagirà ai solfiti o quanto grave sarà la reazione.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 1169/2011 — Allegato II: anidride solforosa e solfiti",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sulfur dioxide (INS 220), group ADI for sulfur dioxide and sulphites",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/985"
     },
     {
-      "label": "Regolamento (CE) n. 1333/2008 — E220–E228 e condizioni d’uso",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "EFSA — Scientific Opinion on allergenic foods and adverse reactions to sulphites",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3894"
     },
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione — disciplinare del prodotto “E220–E228”",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Follow-up assessment of sulfur dioxide and sulphites, 2022",
+      "url": "https://www.efsa.europa.eu/sites/default/files/2022-11/EFS2_7594.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, sulphite declaration threshold",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "e_code": "E220–E228",
@@ -27,5 +31,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
+  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
 }

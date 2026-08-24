@@ -1,31 +1,35 @@
 {
   "name": "Sulphites",
   "e_code": "E220–E228",
-  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite",
+  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers"
   ],
-  "what_is": "A group of sulfur-based preservatives and antioxidants that includes sulfur dioxide and several sodium, potassium and calcium sulphite salts, identified in the EU as E220–E228.",
-  "why_botia": "BOTIA groups these declarations because the same family can appear under an E-number or a chemical name. EU food-information rules also treat sulfur dioxide and sulphites above the specified threshold as substances requiring allergen-style declaration. That threshold cannot be reconstructed from an ingredient list alone.",
-  "can_1": "Detect E220–E228 and the main sulphite/sulfite names when they are explicitly declared.",
-  "can_2": "Explain that the family has both food-additive and EU food-information requirements without turning a positive declaration into a risk diagnosis.",
-  "cannot_1": "Determine the residual sulfur dioxide concentration from the ingredient list.",
-  "cannot_2": "Conclude whether a product is below or above the EU declaration threshold when no analytical amount is provided.",
+  "what_is": "Sulphites are sulfur-based preservatives and antioxidants used to slow browning and microbial spoilage. The family includes sulfur dioxide and sodium, potassium and calcium sulphite salts, and they are common in wine, dried fruit and processed potato products.",
+  "why_botia": "Sulphites stop browning and microbial spoilage, and are common in wine, dried fruit and processed potato. In acidic conditions they can release sulfur dioxide, which can trigger asthma symptoms within minutes in sensitive people — one of the relatively few food-additive reactions that can be immediate and severe. That is why labels must declare sulphites above 10 mg/kg or 10 mg/L, even when only residues remain; JECFA set a group ADI of 0–0.7 mg/kg body weight per day, expressed as sulfur dioxide.",
+  "can_1": "Detect E220–E228, INS 220–228 and the main sulphite/sulfite chemical names when they are explicitly declared.",
+  "can_2": "Explain why sulphites are used, where they commonly appear, their rapid respiratory effects in sensitive people, the EU declaration threshold and the JECFA group ADI.",
+  "cannot_1": "Determine the amount or residual sulfur dioxide concentration from an ingredient list or from a statement such as “contains sulphites”.",
+  "cannot_2": "Predict whether a particular person will react to sulphites or how severe that reaction would be.",
   "sources": [
     {
-      "label": "Regulation (EU) No 1169/2011 — Annex II: sulfur dioxide and sulphites",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sulfur dioxide (INS 220), group ADI for sulfur dioxide and sulphites",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/985"
     },
     {
-      "label": "Regulation (EC) No 1333/2008 — E220–E228 and conditions of use",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "EFSA — Scientific Opinion on allergenic foods and adverse reactions to sulphites",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3894"
     },
     {
-      "label": "Commission Regulation (EU) No 231/2012 — specifications for E220–E228",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Follow-up assessment of sulfur dioxide and sulphites, 2022",
+      "url": "https://www.efsa.europa.eu/sites/default/files/2022-11/EFS2_7594.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, sulphite declaration threshold",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "title": "Sulphites",
-  "description": "A group of sulfur-based preservatives and antioxidants that includes sulfur dioxide and several sodium, potassium and calcium sulphite salts, identified in the EU as E220–E228."
+  "description": "Sulphites preserve wine, dried fruit and potato products; in sensitive people they can trigger bronchospasm within minutes."
 }

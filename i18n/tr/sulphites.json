@@ -1,25 +1,29 @@
 {
   "name": "Sülfitler",
   "title": "Sülfitler",
-  "description": "Kükürt dioksit ile çeşitli sodyum, potasyum ve kalsiyum sülfit tuzlarını içeren, AB’de “E220–E228” olarak tanımlanan bir grup kükürt bazlı koruyucu madde ve antioksidan.",
-  "what_is": "Kükürt dioksit ile çeşitli sodyum, potasyum ve kalsiyum sülfit tuzlarını içeren, AB’de “E220–E228” olarak tanımlanan bir grup kükürt bazlı koruyucu madde ve antioksidan.",
-  "why_botia": "BOTIA Bu beyanları gruplandırır; zira aynı madde grubu hem bir E numarası hem de kimyasal adı altında yer alabilir. AB gıda bilgilendirme kuralları ayrıca, belirlenen eşik değerin üzerindeki kükürt dioksit ve sülfitleri, alerjen beyanı gerektiren maddeler olarak değerlendirir. Bu eşik değer, yalnızca içerik listesinden tespit edilemez.",
-  "can_1": "E220–E228 ve başlıca sülfit/sülfit isimlerini, açıkça belirtildiklerinde algıla.",
-  "can_2": "Olumlu bir beyanı bir risk teşhisine dönüştürmeden, ailenin hem gıda katkı maddeleriyle ilgili hem de AB gıda bilgilendirme gerekliliklerine tabi olduğunu açıklayın.",
-  "cannot_1": "İçerik listesinden kalan kükürt dioksit konsantrasyonunu belirleyin.",
-  "cannot_2": "Analitik miktar belirtilmediğinde, bir ürünün AB beyan eşiğinin altında mı yoksa üstünde mi olduğu konusunda bir sonuca varın.",
+  "description": "Sülfitler şarap, kuru meyve ve patates ürünlerini korur; hassas kişilerde dakikalar içinde bronkospazma yol açabilir.",
+  "what_is": "Sülfitler, kararmayı ve mikrobiyal bozulmayı yavaşlatmak için kullanılan kükürt bazlı koruyucular ve antioksidanlardır. Grup, kükürt dioksit ile sodyum, potasyum ve kalsiyum sülfit tuzlarını kapsar ve şarapta, kuru meyvelerde ve işlenmiş patates ürünlerinde yaygındır.",
+  "why_botia": "Sülfitler kararmayı ve mikrobiyal bozulmayı önler ve şarapta, kuru meyvelerde ve işlenmiş patateste yaygın olarak bulunur. Asidik koşullarda kükürt dioksit açığa çıkarabilirler; bu da hassas kişilerde dakikalar içinde astım belirtilerini tetikleyebilir — gıda katkı maddelerine karşı hemen ortaya çıkabilen ve ciddi olabilen nispeten az sayıdaki reaksiyondan biridir. Bu nedenle sülfitler 10 mg/kg veya 10 mg/L'nin üzerinde olduğunda, yalnızca kalıntı olarak kalsalar bile etikette belirtilmelidir; JECFA kükürt dioksit olarak ifade edilen günlük 0–0,7 mg/kg vücut ağırlığı grup ADI'si belirlemiştir.",
+  "can_1": "E220–E228, INS 220–228 ve başlıca sülfit kimyasal adlarını açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Sülfitlerin neden kullanıldığını, nerelerde yaygın olduğunu, hassas kişilerdeki hızlı solunum etkilerini, AB bildirim eşiğini ve JECFA grup ADI'sini açıklamak.",
+  "cannot_1": "İçerik listesinden veya «sülfit içerir» ifadesinden miktarı ya da kalan kükürt dioksit konsantrasyonunu belirlemek.",
+  "cannot_2": "Belirli bir kişinin sülfitlere tepki verip vermeyeceğini veya tepkinin ne kadar şiddetli olacağını öngörmek.",
   "sources": [
     {
-      "label": "(AB) 1169/2011 sayılı Tüzük — Ek II: kükürt dioksit ve sülfitler",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sulfur dioxide (INS 220), group ADI for sulfur dioxide and sulphites",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/985"
     },
     {
-      "label": "(EC) 1333/2008 sayılı Tüzük — E220–E228 ve kullanım koşulları",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "EFSA — Scientific Opinion on allergenic foods and adverse reactions to sulphites",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3894"
     },
     {
-      "label": "(AB) 231/2012 sayılı Komisyon Tüzüğü — “E220–E228” için teknik şartlar",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Follow-up assessment of sulfur dioxide and sulphites, 2022",
+      "url": "https://www.efsa.europa.eu/sites/default/files/2022-11/EFS2_7594.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, sulphite declaration threshold",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "e_code": "E220–E228",
@@ -27,5 +31,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
+  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
 }

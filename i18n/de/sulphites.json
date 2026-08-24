@@ -1,25 +1,29 @@
 {
   "name": "Sulfite",
   "title": "Sulfite",
-  "description": "Eine Gruppe von Konservierungs- und Antioxidationsmitteln auf Schwefelbasis, zu der Schwefeldioxid sowie verschiedene Natrium-, Kalium- und Calciumsulfit-Salze gehören und die in der EU als „E220–E228“ bezeichnet wird.",
-  "what_is": "Eine Gruppe von Konservierungs- und Antioxidationsmitteln auf Schwefelbasis, zu der Schwefeldioxid sowie verschiedene Natrium-, Kalium- und Calciumsulfit-Salze gehören und die in der EU als „E220–E228“ bezeichnet wird.",
-  "why_botia": "BOTIA Diese Angaben werden zusammengefasst, da dieselbe Stoffgruppe sowohl unter einer E-Nummer als auch unter einer chemischen Bezeichnung aufgeführt sein kann. Gemäß den EU-Vorschriften zur Lebensmittelinformation gelten Schwefeldioxid und Sulfite, deren Gehalt den festgelegten Schwellenwert überschreitet, ebenfalls als Stoffe, die wie Allergene gekennzeichnet werden müssen. Dieser Schwellenwert lässt sich nicht allein anhand der Zutatenliste ermitteln.",
-  "can_1": "Erkenne „E220–E228“ sowie die wichtigsten Sulfit-/Sulfid-Bezeichnungen, wenn diese explizit angegeben sind.",
-  "can_2": "Erläutern Sie, dass die Familie sowohl den Vorschriften für Lebensmittelzusatzstoffe als auch den EU-Vorschriften zur Lebensmittelinformation unterliegt, ohne dabei eine positive Feststellung in eine Risikodiagnose umzuwandeln.",
-  "cannot_1": "Ermitteln Sie die Restkonzentration an Schwefeldioxid anhand der Zutatenliste.",
-  "cannot_2": "Stellen Sie fest, ob ein Produkt unterhalb oder oberhalb des EU-Meldeschwellenwerts liegt, wenn keine analytische Menge angegeben ist.",
+  "description": "Sulfite konservieren Wein, Trockenfrüchte und Kartoffelprodukte; bei empfindlichen Menschen können sie innerhalb von Minuten Bronchospasmen auslösen.",
+  "what_is": "Sulfite sind schwefelbasierte Konservierungs- und Antioxidationsmittel, die Bräunung und mikrobiellen Verderb verlangsamen. Zur Gruppe gehören Schwefeldioxid sowie Natrium-, Kalium- und Calciumsulfite; sie kommen häufig in Wein, Trockenfrüchten und verarbeiteten Kartoffelprodukten vor.",
+  "why_botia": "Sulfite hemmen Bräunung und mikrobiellen Verderb und kommen häufig in Wein, Trockenfrüchten und verarbeiteten Kartoffeln vor. Unter sauren Bedingungen können sie Schwefeldioxid freisetzen, das bei empfindlichen Menschen innerhalb von Minuten Asthmasymptome auslösen kann — eine der vergleichsweise wenigen Reaktionen auf Lebensmittelzusatzstoffe, die unmittelbar und schwer verlaufen können. Deshalb müssen Sulfite oberhalb von 10 mg/kg oder 10 mg/L deklariert werden, selbst wenn nur Rückstände verbleiben; JECFA legte einen Gruppen-ADI von 0–0,7 mg/kg Körpergewicht pro Tag, ausgedrückt als Schwefeldioxid, fest.",
+  "can_1": "E220–E228, INS 220–228 und die wichtigsten chemischen Sulfitbezeichnungen erkennen, wenn sie ausdrücklich angegeben sind.",
+  "can_2": "Erklären, warum Sulfite verwendet werden, wo sie häufig vorkommen, ihre schnellen Atemwegsreaktionen bei empfindlichen Menschen, die EU-Deklarationsschwelle und den JECFA-Gruppen-ADI.",
+  "cannot_1": "Aus der Zutatenliste oder einer Angabe wie „enthält Sulfite“ die Menge oder Restkonzentration an Schwefeldioxid bestimmen.",
+  "cannot_2": "Vorhersagen, ob eine bestimmte Person auf Sulfite reagieren wird oder wie schwer eine Reaktion wäre.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 1169/2011 – Anhang II: Schwefeldioxid und Sulfite",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sulfur dioxide (INS 220), group ADI for sulfur dioxide and sulphites",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/985"
     },
     {
-      "label": "Verordnung (EG) Nr. 1333/2008 – „E220–E228“ und Anwendungsbedingungen",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "EFSA — Scientific Opinion on allergenic foods and adverse reactions to sulphites",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3894"
     },
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission – Spezifikationen für „E220–E228“",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Follow-up assessment of sulfur dioxide and sulphites, 2022",
+      "url": "https://www.efsa.europa.eu/sites/default/files/2022-11/EFS2_7594.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, sulphite declaration threshold",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "e_code": "E220–E228",
@@ -27,5 +31,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
+  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
 }

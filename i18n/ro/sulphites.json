@@ -1,25 +1,29 @@
 {
   "name": "Sulfiți",
   "title": "Sulfiți",
-  "description": "Un grup de conservanți și antioxidanți pe bază de sulf, care include dioxidul de sulf și mai multe săruri de sulfit de sodiu, potasiu și calciu, identificat în UE sub denumirea de „E220–E228”.",
-  "what_is": "Un grup de conservanți și antioxidanți pe bază de sulf, care include dioxidul de sulf și mai multe săruri de sulfit de sodiu, potasiu și calciu, identificat în UE sub denumirea de „E220–E228”.",
-  "why_botia": "BOTIA grupează aceste mențiuni deoarece aceeași familie de substanțe poate apărea sub forma unui număr E sau a unei denumiri chimice. De asemenea, normele UE privind informațiile referitoare la produsele alimentare tratează dioxidul de sulf și sulfiții care depășesc pragul specificat ca substanțe care necesită o mențiune similară celei pentru alergeni. Acest prag nu poate fi dedus doar pe baza listei de ingrediente.",
-  "can_1": "Detectează „E220–E228” și principalele denumiri ale compușilor sulfitici atunci când acestea sunt declarate în mod explicit.",
-  "can_2": "Explicați faptul că familia trebuie să respecte atât cerințele privind aditivii alimentari, cât și cele ale UE referitoare la informațiile nutriționale, fără a transforma o afirmație pozitivă într-un diagnostic de risc.",
-  "cannot_1": "Determinați concentrația reziduală de dioxid de sulf pe baza listei de ingrediente.",
-  "cannot_2": "Stabiliți dacă un produs se situează sub sau peste pragul de declarare al UE atunci când nu este specificată nicio cantitate analitică.",
+  "description": "Sulfiții conservă vinul, fructele uscate și produsele din cartofi; la persoanele sensibile pot provoca bronhospasm în câteva minute.",
+  "what_is": "Sulfiții sunt conservanți și antioxidanți pe bază de sulf utilizați pentru a încetini brunificarea și alterarea microbiană. Familia include dioxid de sulf și săruri de sulfit de sodiu, potasiu și calciu și este frecventă în vin, fructe uscate și produse procesate din cartofi.",
+  "why_botia": "Sulfiții opresc brunificarea și alterarea microbiană și sunt frecvenți în vin, fructe uscate și cartofi procesați. În condiții acide pot elibera dioxid de sulf, care poate declanșa simptome de astm în câteva minute la persoanele sensibile — una dintre relativ puținele reacții la aditivi alimentari care pot fi imediate și severe. De aceea sulfiții trebuie declarați peste 10 mg/kg sau 10 mg/L, chiar dacă au rămas doar reziduuri; JECFA a stabilit o ADI de grup de 0–0,7 mg/kg greutate corporală pe zi, exprimată ca dioxid de sulf.",
+  "can_1": "Detecta E220–E228, INS 220–228 și principalele denumiri chimice ale sulfiților atunci când sunt declarate explicit.",
+  "can_2": "Explica de ce sunt utilizați sulfiții, unde apar frecvent, efectele respiratorii rapide la persoanele sensibile, pragul UE de declarare și ADI de grup JECFA.",
+  "cannot_1": "Determina cantitatea sau concentrația reziduală de dioxid de sulf din lista ingredientelor sau dintr-o mențiune precum „conține sulfiți”.",
+  "cannot_2": "Prezice dacă o anumită persoană va reacționa la sulfiți sau cât de gravă va fi reacția.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 1169/2011 — Anexa II: dioxid de sulf și sulfiți",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sulfur dioxide (INS 220), group ADI for sulfur dioxide and sulphites",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/985"
     },
     {
-      "label": "Regulamentul (CE) nr. 1333/2008 — E220–E228 și condițiile de utilizare",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "EFSA — Scientific Opinion on allergenic foods and adverse reactions to sulphites",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3894"
     },
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei — caietul de sarcini pentru „E220–E228”",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Follow-up assessment of sulfur dioxide and sulphites, 2022",
+      "url": "https://www.efsa.europa.eu/sites/default/files/2022-11/EFS2_7594.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, sulphite declaration threshold",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "e_code": "E220–E228",
@@ -27,5 +31,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
+  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
 }

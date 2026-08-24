@@ -1,25 +1,29 @@
 {
   "name": "Sulfitos",
   "title": "Sulfitos",
-  "description": "Um grupo de conservantes e antioxidantes à base de enxofre que inclui o dióxido de enxofre e vários sais de sulfito de sódio, potássio e cálcio, identificados na UE como «E220–E228».",
-  "what_is": "Um grupo de conservantes e antioxidantes à base de enxofre que inclui o dióxido de enxofre e vários sais de sulfito de sódio, potássio e cálcio, identificados na UE como «E220–E228».",
-  "why_botia": "BOTIA agrupa estas declarações porque a mesma família pode figurar sob um número E ou um nome químico. As regras da UE em matéria de informação alimentar também consideram o dióxido de enxofre e os sulfitos acima do limiar especificado como substâncias que exigem uma declaração semelhante à dos alergénios. Esse limiar não pode ser determinado apenas a partir da lista de ingredientes.",
-  "can_1": "Detetar «E220–E228» e os principais nomes relacionados com sulfito/sulfite quando forem declarados explicitamente.",
-  "can_2": "Explique que a família está sujeita tanto aos requisitos relativos aos aditivos alimentares como aos requisitos da UE em matéria de informação alimentar, sem transformar uma declaração positiva num diagnóstico de risco.",
-  "cannot_1": "Determine a concentração residual de dióxido de enxofre a partir da lista de ingredientes.",
-  "cannot_2": "Determinar se um produto se situa abaixo ou acima do limiar de declaração da UE, quando não for indicada qualquer quantidade analítica.",
+  "description": "Os sulfitos conservam vinho, frutos secos e produtos de batata; em pessoas sensíveis podem provocar broncoespasmo em poucos minutos.",
+  "what_is": "Os sulfitos são conservantes e antioxidantes à base de enxofre utilizados para retardar o escurecimento e a deterioração microbiana. A família inclui dióxido de enxofre e sais de sulfito de sódio, potássio e cálcio, comuns no vinho, frutos secos e produtos de batata processados.",
+  "why_botia": "Os sulfitos travam o escurecimento e a deterioração microbiana e são comuns no vinho, frutos secos e batata processada. Em condições ácidas podem libertar dióxido de enxofre, que pode desencadear sintomas de asma em poucos minutos em pessoas sensíveis — uma das relativamente poucas reações a aditivos alimentares que podem ser imediatas e graves. Por isso, os sulfitos devem ser declarados acima de 10 mg/kg ou 10 mg/L, mesmo quando restam apenas resíduos; o JECFA estabeleceu uma IDA de grupo de 0–0,7 mg/kg de peso corporal por dia, expressa como dióxido de enxofre.",
+  "can_1": "Detetar E220–E228, INS 220–228 e os principais nomes químicos dos sulfitos quando declarados explicitamente.",
+  "can_2": "Explicar por que os sulfitos são utilizados, onde aparecem com frequência, os seus efeitos respiratórios rápidos em pessoas sensíveis, o limiar de declaração da UE e a IDA de grupo do JECFA.",
+  "cannot_1": "Determinar a quantidade ou concentração residual de dióxido de enxofre pela lista de ingredientes ou por uma indicação como «contém sulfitos».",
+  "cannot_2": "Prever se uma pessoa específica reagirá aos sulfitos ou a gravidade dessa reação.",
   "sources": [
     {
-      "label": "Regulamento (UE) n.º 1169/2011 — Anexo II: dióxido de enxofre e sulfitos",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sulfur dioxide (INS 220), group ADI for sulfur dioxide and sulphites",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/985"
     },
     {
-      "label": "Regulamento (CE) n.º 1333/2008 — E220–E228 e condições de utilização",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "EFSA — Scientific Opinion on allergenic foods and adverse reactions to sulphites",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3894"
     },
     {
-      "label": "Regulamento (UE) n.º 231/2012 da Comissão — especificações relativas ao «E220–E228»",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Follow-up assessment of sulfur dioxide and sulphites, 2022",
+      "url": "https://www.efsa.europa.eu/sites/default/files/2022-11/EFS2_7594.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, sulphite declaration threshold",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "e_code": "E220–E228",
@@ -27,5 +31,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
+  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
 }

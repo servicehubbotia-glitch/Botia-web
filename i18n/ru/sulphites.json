@@ -1,25 +1,29 @@
 {
   "name": "Сульфиты",
   "title": "Сульфиты",
-  "description": "Группа консервантов и антиоксидантов на основе серы, в которую входят диоксид серы и ряд сульфитных солей натрия, калия и кальция, обозначенная в ЕС как «E220–E228».",
-  "what_is": "Группа консервантов и антиоксидантов на основе серы, в которую входят диоксид серы и ряд сульфитных солей натрия, калия и кальция, обозначенная в ЕС как «E220–E228».",
-  "why_botia": "BOTIA объединяет эти указания, поскольку одно и то же семейство веществ может фигурировать как под кодом E, так и под химическим названием. Согласно правилам ЕС по маркировке пищевых продуктов, диоксид серы и сульфиты, содержание которых превышает установленный порог, также рассматриваются как вещества, требующие указания в порядке, аналогичном указанию аллергенов. Этот порог невозможно определить, опираясь исключительно на список ингредиентов.",
-  "can_1": "Обнаруживать «E220–E228» и основные термины, связанные с сульфитами, если они явно указаны.",
-  "can_2": "Объясните, что на данную продукцию распространяются как требования к пищевым добавкам, так и требования ЕС к информации о продуктах питания, не превращая при этом утвердительное заявление в диагноз риска.",
-  "cannot_1": "Определите остаточную концентрацию диоксида серы по списку ингредиентов.",
-  "cannot_2": "Определите, находится ли количество продукта ниже или выше порогового значения, указанного в декларации ЕС, в случае отсутствия данных об аналитическом количестве.",
+  "description": "Сульфиты сохраняют вино, сухофрукты и картофельные продукты; у чувствительных людей они могут вызвать бронхоспазм в течение нескольких минут.",
+  "what_is": "Сульфиты — серосодержащие консерванты и антиоксиданты, используемые для замедления потемнения и микробной порчи. К этой группе относятся диоксид серы и сульфиты натрия, калия и кальция; они часто встречаются в вине, сухофруктах и переработанных картофельных продуктах.",
+  "why_botia": "Сульфиты препятствуют потемнению и микробной порче и часто встречаются в вине, сухофруктах и переработанном картофеле. В кислой среде они могут выделять диоксид серы, который у чувствительных людей способен вызвать симптомы астмы в течение нескольких минут — одну из сравнительно немногих реакций на пищевые добавки, которые могут быть немедленными и тяжёлыми. Поэтому сульфиты должны указываться при содержании выше 10 мг/кг или 10 мг/л, даже если остаются только остаточные количества; JECFA установила групповое ADI 0–0,7 мг/кг массы тела в день в пересчёте на диоксид серы.",
+  "can_1": "Определять E220–E228, INS 220–228 и основные химические названия сульфитов, когда они явно указаны.",
+  "can_2": "Объяснять, зачем применяются сульфиты, где они часто встречаются, их быстрые респираторные эффекты у чувствительных людей, порог маркировки ЕС и групповое ADI JECFA.",
+  "cannot_1": "По списку ингредиентов или фразе «содержит сульфиты» определить количество или остаточную концентрацию диоксида серы.",
+  "cannot_2": "Предсказать, будет ли конкретный человек реагировать на сульфиты или насколько тяжёлой будет реакция.",
   "sources": [
     {
-      "label": "Регламент (ЕС) № 1169/2011 — Приложение II: диоксид серы и сульфиты",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+      "label": "JECFA — Sulfur dioxide (INS 220), group ADI for sulfur dioxide and sulphites",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/985"
     },
     {
-      "label": "Регламент (ЕС) № 1333/2008 — «E220–E228» и условия применения",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-02-18/eng"
+      "label": "EFSA — Scientific Opinion on allergenic foods and adverse reactions to sulphites",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3894"
     },
     {
-      "label": "Регламент Комиссии (ЕС) № 231/2012 — технические условия на сыр «E220–E228»",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "EFSA — Follow-up assessment of sulfur dioxide and sulphites, 2022",
+      "url": "https://www.efsa.europa.eu/sites/default/files/2022-11/EFS2_7594.pdf"
+    },
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, sulphite declaration threshold",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj/eng"
     }
   ],
   "e_code": "E220–E228",
@@ -27,5 +31,5 @@
   "layers": [
     "enumbers"
   ],
-  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
+  "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite"
 }
