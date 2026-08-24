@@ -1,32 +1,33 @@
 {
   "name": "Eritritol",
   "e_code": "E968",
-  "aliases": "E968, erythritol, meso-erythritol, eritritol",
+  "aliases": "E968, INS 968, erythritol, meso-erythritol, erythrite, tetrahydroxybutane, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Un poliol cu patru atomi de carbon, sau alcool zaharat, produs prin fermentarea unei surse de carbohidrați cu drojdii osmofile de calitate alimentară, apoi purificat și uscat.",
-  "why_botia": "BOTIA semnalează E968 deoarece este un poliol de masă, nu doar un îndulcitor intens. Reevaluarea EFSA din 2023 a stabilit o ADI pe baza datelor privind diareea la om. Reglementările UE impun un avertisment privind efectul laxativ peste 10% polioli adăugați; recomandarea WHO din 2023 exclude poliolii.",
-  "can_1": "Detectează E968 sau Eritritol și declanșează stratul de îndulcitor.",
-  "can_2": "Notifică utilizatorul despre proprietățile sale cu indice glicemic scăzut și conținut caloric redus.",
-  "cannot_1": "Verifică ce tulpină de drojdie a fost utilizată pentru fermentare.",
-  "cannot_2": "Măsoară cantitatea exactă adăugată în produs.",
+  "what_is": "Eritritolul (INS 968 / E968) este un poliol cu patru atomi de carbon produs comercial prin fermentarea carbohidraților și purificarea produsului rezultat. Este utilizat ca îndulcitor și umectant și este absorbit mult mai complet decât majoritatea celorlalți polioli obișnuiți.",
+  "why_botia": "Eritritolul este poliolul care se comportă cel mai puțin ca ceilalți: aproximativ 90% este absorbit și eliminat neschimbat prin urină, astfel încât foarte puțin ajunge în colon și rămâne puțin pentru fermentarea de către bacteriile intestinale. De aceea produce de obicei mai puține gaze decât poliolii mai slab absorbiți, precum sorbitolul sau maltitolul, deși cantități mari consumate o singură dată pot provoca în continuare diaree. JECFA i-a atribuit o ADI „nespecificată”, iar EFSA a stabilit ulterior o ADI de 0,5 g/kg greutate corporală pe zi.",
+  "can_1": "Detecta E968, INS 968, eritritol, meso-erythritol și erythrite atunci când sunt declarate explicit.",
+  "can_2": "Explica absorbția neobișnuit de ridicată, eliminarea urinară, fermentarea redusă în colon, producția relativ scăzută de gaze și diareea care poate apărea după cantități mari consumate o singură dată.",
+  "cannot_1": "Determina cantitatea de eritritol prezentă doar din lista ingredientelor.",
+  "cannot_2": "Prezice toleranța digestivă individuală sau determina dacă aportul depășește o cantitate raportată la greutatea corporală fără a cunoaște cantitatea consumată.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Erythritol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/961"
     },
     {
-      "label": "EFSA — Reevaluarea Eritritolului (E 968), 2023",
+      "label": "EFSA — Re-evaluation of erythritol (E 968), 2023",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
     },
     {
-      "label": "Regulamentul (UE) 2021/1175 — etichetarea poliolilor",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "Human study — erythritol absorption and urinary excretion",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8039489/"
     }
   ],
   "title": "Eritritol",
-  "description": "Un poliol alcool zaharat nehigroscopic obținut prin fermentarea carbohidraților cu drojdii osmofile."
+  "description": "Eritritolul este un poliol din care aproximativ 90% este absorbit și eliminat neschimbat prin urină; foarte puțin ajunge în colon și rămâne disponibil pentru fermentare."
 }

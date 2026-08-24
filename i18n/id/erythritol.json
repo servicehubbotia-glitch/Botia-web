@@ -1,32 +1,33 @@
 {
   "name": "Eritritol",
   "e_code": "E968",
-  "aliases": "E968, erythritol, meso-erythritol, eritritol",
+  "aliases": "E968, INS 968, erythritol, meso-erythritol, erythrite, tetrahydroxybutane, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Poliol berkarbon empat, atau gula alkohol, dihasilkan dengan memfermentasi sumber karbohidrat menggunakan ragi osmofilik kelas pangan, kemudian dimurnikan dan dikeringkan.",
-  "why_botia": "BOTIA menandai E968 karena merupakan poliol curah, bukan sekadar pemanis intensif. Evaluasi ulang EFSA pada tahun 2023 menetapkan ADI berdasarkan data diare pada manusia. Aturan UE mensyaratkan peringatan efek laksatif di atas 10% poliol tambahan; rekomendasi WHO tahun 2023 mengecualikan poliol.",
-  "can_1": "Mendeteksi E968 atau Eritritol dan memicu lapisan pemanis.",
-  "can_2": "Memberi tahu pengguna tentang sifatnya yang rendah glikemik dan rendah kalori.",
-  "cannot_1": "Memverifikasi strain ragi mana yang digunakan untuk fermentasi.",
-  "cannot_2": "Mengukur jumlah pasti yang ditambahkan ke produk.",
+  "what_is": "Erythritol (INS 968 / E968) adalah poliol empat karbon yang secara komersial dibuat dengan memfermentasi karbohidrat lalu memurnikan erythritol yang dihasilkan. Bahan ini digunakan sebagai pemanis dan humektan dan diserap jauh lebih lengkap daripada kebanyakan poliol umum lainnya.",
+  "why_botia": "Erythritol adalah poliol yang paling berbeda perilakunya dari yang lain: sekitar 90% diserap dan dikeluarkan tanpa perubahan melalui urine, sehingga sangat sedikit yang mencapai kolon dan hanya sedikit yang tersisa untuk difermentasi oleh bakteri usus. Karena itu erythritol biasanya menghasilkan lebih sedikit gas dibanding poliol yang lebih buruk penyerapannya seperti sorbitol atau maltitol, meskipun jumlah besar yang dikonsumsi sekaligus tetap dapat menyebabkan diare. JECFA menetapkan ADI “tidak ditentukan”; EFSA kemudian menetapkan ADI 0,5 g/kg berat badan per hari.",
+  "can_1": "Mendeteksi E968, INS 968, erythritol, meso-erythritol dan erythrite ketika dinyatakan secara eksplisit.",
+  "can_2": "Menjelaskan penyerapan yang sangat tinggi, pembuangan melalui urine, fermentasi kolon yang rendah, pembentukan gas yang relatif rendah dan diare yang dapat terjadi setelah jumlah besar dikonsumsi sekaligus.",
+  "cannot_1": "Menentukan jumlah erythritol yang ada hanya dari daftar bahan.",
+  "cannot_2": "Memprediksi toleransi pencernaan individu atau menentukan apakah asupan melebihi jumlah berbasis berat badan tanpa mengetahui jumlah yang dikonsumsi.",
   "sources": [
     {
-      "label": "Peraturan Komisi (UE) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Erythritol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/961"
     },
     {
-      "label": "EFSA — Evaluasi ulang Eritritol (E 968), 2023",
+      "label": "EFSA — Re-evaluation of erythritol (E 968), 2023",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
     },
     {
-      "label": "Peraturan (UE) 2021/1175 — pelabelan poliol",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "Human study — erythritol absorption and urinary excretion",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8039489/"
     }
   ],
   "title": "Eritritol",
-  "description": "Poliol alkohol gula non-higroskopis yang diperoleh melalui fermentasi karbohidrat dengan ragi osmofilik."
+  "description": "Sekitar 90% erythritol diserap dan dikeluarkan tanpa perubahan melalui urine; sangat sedikit yang mencapai kolon dan tersedia untuk fermentasi."
 }

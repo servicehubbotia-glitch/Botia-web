@@ -1,32 +1,33 @@
 {
   "name": "Eritritolo",
   "e_code": "E968",
-  "aliases": "E968, erythritol, meso-erythritol, eritritol",
+  "aliases": "E968, INS 968, erythritol, meso-erythritol, erythrite, tetrahydroxybutane, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Un poliolo a quattro atomi di carbonio, o alcol zuccherino, prodotto fermentando una fonte di carboidrati con lieviti osmofili di qualità alimentare, quindi purificato ed essiccato.",
-  "why_botia": "BOTIA segnala l'E968 perché è un poliolo di massa, non solo un dolcificante intenso. La rivalutazione EFSA del 2023 ha stabilito una DGA basata su dati di diarrea umana. Le norme UE richiedono un'avvertenza sull'effetto lassativo oltre il 10% di polioli aggiunti; la raccomandazione WHO del 2023 esclude i polioli.",
-  "can_1": "Rileva E968 o Eritritolo e attiva il layer dei dolcificanti.",
-  "can_2": "Informa l'utente delle sue proprietà a basso indice glicemico e a basso contenuto calorico.",
-  "cannot_1": "Verifica quale ceppo di lievito è stato utilizzato per la fermentazione.",
-  "cannot_2": "Misurare la quantità esatta aggiunta al prodotto.",
+  "what_is": "L'eritritolo (INS 968 / E968) è un poliolo a quattro atomi di carbonio prodotto commercialmente mediante fermentazione dei carboidrati e successiva purificazione. È usato come edulcorante e umettante e viene assorbito molto più completamente rispetto alla maggior parte degli altri polioli comuni.",
+  "why_botia": "L'eritritolo è il poliolo che si comporta meno come gli altri: circa il 90% viene assorbito ed eliminato invariato nelle urine, quindi ne arriva pochissimo al colon e resta poco materiale da fermentare per i batteri intestinali. Per questo di solito provoca meno gas rispetto a polioli assorbiti peggio come sorbitolo o maltitolo, anche se grandi quantità assunte in una sola volta possono ancora causare diarrea. Il JECFA ha assegnato una DGA “non specificata”; l'EFSA ha successivamente fissato una DGA di 0,5 g/kg di peso corporeo al giorno.",
+  "can_1": "Rilevare E968, INS 968, eritritolo, meso-erythritol ed erythrite quando dichiarati esplicitamente.",
+  "can_2": "Spiegare l'assorbimento insolitamente elevato, l'eliminazione urinaria, la scarsa fermentazione nel colon, la minore produzione relativa di gas e la diarrea che può comparire con grandi quantità assunte in una sola volta.",
+  "cannot_1": "Determinare la quantità di eritritolo presente dalla sola lista degli ingredienti.",
+  "cannot_2": "Prevedere la tolleranza digestiva individuale o determinare se l'assunzione supera una quantità basata sul peso corporeo senza conoscere la quantità consumata.",
   "sources": [
     {
-      "label": "Regolamento (UE) n. 231/2012 della Commissione",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Erythritol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/961"
     },
     {
-      "label": "EFSA — rivalutazione dell'Eritritolo (E 968), 2023",
+      "label": "EFSA — Re-evaluation of erythritol (E 968), 2023",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
     },
     {
-      "label": "Regolamento (UE) 2021/1175 — etichettatura dei polioli",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "Human study — erythritol absorption and urinary excretion",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8039489/"
     }
   ],
   "title": "Eritritolo",
-  "description": "Un alcol poliolo zuccherino non igroscopico ottenuto fermentando carboidrati con lieviti osmofili."
+  "description": "L'eritritolo è un poliolo di cui circa il 90% viene assorbito ed eliminato invariato nelle urine; pochissimo raggiunge il colon e rimane disponibile per la fermentazione."
 }

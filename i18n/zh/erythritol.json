@@ -1,32 +1,33 @@
 {
   "name": "赤藓糖醇",
   "e_code": "E968",
-  "aliases": "E968, erythritol, meso-erythritol, eritritol",
+  "aliases": "E968, INS 968, erythritol, meso-erythritol, erythrite, tetrahydroxybutane, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "一种四碳多元醇（即糖醇），通过将碳水化合物来源与食品级嗜渗酵母发酵，随后经纯化和干燥制成。",
-  "why_botia": "BOTIA将E968标记为大宗多元醇，而非仅仅是强力甜味剂。欧洲食品安全局（EFSA）2023年的重新评估基于人类腹泻数据设定了每日可接受摄入量（ADI）。欧盟法规要求在添加多元醇超过10%时标注通便作用警告；世卫组织2023年的建议则将多元醇排除在外。",
-  "can_1": "检测E968或赤藓糖醇并触发甜味剂层。",
-  "can_2": "通知用户其低血糖、低热量的特性。",
-  "cannot_1": "验证发酵所用的酵母菌株。",
-  "cannot_2": "测量产品中添加的精确数量。",
+  "what_is": "赤藓糖醇（INS 968 / E968）是一种四碳多元醇，商业生产通常通过发酵碳水化合物并对生成的赤藓糖醇进行纯化。它用作甜味剂和保湿剂，而且其吸收程度远高于大多数其他常见多元醇。",
+  "why_botia": "赤藓糖醇是行为最不像其他多元醇的一种：大约90%会被吸收，并以原形从尿液中排出，因此真正到达结肠的量很少，可供肠道细菌发酵的量也很少。这就是为什么它通常比山梨糖醇或麦芽糖醇等吸收较差的多元醇产生更少气体，不过一次摄入大量赤藓糖醇仍可能导致腹泻。JECFA 将其 ADI 规定为“无需限定”，EFSA 后来将 ADI 设为每天每公斤体重0.5克。",
+  "can_1": "识别明确标示的 E968、INS 968、赤藓糖醇、meso-erythritol 和 erythrite。",
+  "can_2": "解释其异常高的吸收率、通过尿液排出、结肠发酵很少、相对较少的气体产生，以及一次摄入大量时可能出现的腹泻。",
+  "cannot_1": "仅根据配料表确定赤藓糖醇的实际含量。",
+  "cannot_2": "预测个人的消化耐受性，或在不知道实际摄入量时判断摄入量是否超过基于体重的数值。",
   "sources": [
     {
-      "label": "欧盟委员会条例（EU）第231/2012号",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Erythritol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/961"
     },
     {
-      "label": "EFSA——赤藓糖醇（E 968）再评估，2023年",
+      "label": "EFSA — Re-evaluation of erythritol (E 968), 2023",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
     },
     {
-      "label": "(EU) 2021/1175号法规——多元醇标签",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "Human study — erythritol absorption and urinary excretion",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8039489/"
     }
   ],
   "title": "赤藓糖醇",
-  "description": "一种非吸湿性多元醇糖醇，通过使用嗜渗酵母发酵碳水化合物获得。"
+  "description": "赤藓糖醇约有90%被吸收并以原形从尿液排出；只有很少到达结肠并可被发酵。"
 }

@@ -1,32 +1,33 @@
 {
   "name": "Eritritol",
   "e_code": "E968",
-  "aliases": "E968, erythritol, meso-erythritol, eritritol",
+  "aliases": "E968, INS 968, erythritol, meso-erythritol, erythrite, tetrahydroxybutane, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Un poliol de cuatro carbonos, o alcohol de azúcar, producido mediante la fermentación de una fuente de carbohidratos con levaduras osmófilas de grado alimentario, y luego purificado y secado.",
-  "why_botia": "BOTIA señala el E968 porque es un poliol a granel, no solo un edulcorante intenso. La reevaluación de la EFSA de 2023 estableció una IDA a partir de datos de diarrea en humanos. Las normas de la UE exigen una advertencia sobre el efecto laxante por encima del 10% de polioles añadidos; la recomendación de WHO de 2023 excluye los polioles.",
-  "can_1": "Detectar E968 o Eritritol y activar la capa de edulcorante.",
-  "can_2": "Notificar al usuario sus propiedades de bajo índice glucémico y bajas calorías.",
-  "cannot_1": "Verificar qué cepa de levadura se utilizó para la fermentación.",
-  "cannot_2": "Medir la cantidad exacta añadida al producto.",
+  "what_is": "El eritritol (INS 968 / E968) es un poliol de cuatro carbonos producido comercialmente mediante fermentación de carbohidratos y posterior purificación. Se utiliza como edulcorante y humectante y se absorbe mucho más completamente que la mayoría de los demás polioles habituales.",
+  "why_botia": "El eritritol es el poliol que menos se comporta como los demás: alrededor del 90% se absorbe y se elimina sin cambios por la orina, por lo que llega muy poco al colon y queda poco disponible para que las bacterias intestinales lo fermenten. Por eso suele producir menos gases que polioles peor absorbidos como el sorbitol o el maltitol, aunque cantidades grandes tomadas de una sola vez aún pueden causar diarrea. JECFA le asignó una IDA “no especificada”; EFSA estableció después una IDA de 0,5 g/kg de peso corporal al día.",
+  "can_1": "Detectar E968, INS 968, eritritol, meso-eritritol y erythrite cuando estén declarados explícitamente.",
+  "can_2": "Explicar su absorción inusualmente alta, su eliminación por la orina, la escasa fermentación en el colon, la menor producción de gases y la diarrea que puede aparecer con cantidades grandes tomadas de una sola vez.",
+  "cannot_1": "Determinar cuánto eritritol contiene el producto únicamente a partir de la lista de ingredientes.",
+  "cannot_2": "Predecir la tolerancia digestiva individual ni determinar si la ingesta supera una cantidad basada en el peso corporal sin conocer cuánto se ha consumido.",
   "sources": [
     {
-      "label": "Reglamento (UE) n.º 231/2012 de la Comisión",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Erythritol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/961"
     },
     {
-      "label": "EFSA — Re-evaluación del Eritritol (E 968), 2023",
+      "label": "EFSA — Re-evaluation of erythritol (E 968), 2023",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
     },
     {
-      "label": "Reglamento (UE) 2021/1175 — etiquetado de polioles",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "Human study — erythritol absorption and urinary excretion",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8039489/"
     }
   ],
   "title": "Eritritol",
-  "description": "Un alcohol de azúcar poliol no higroscópico obtenido mediante la fermentación de carbohidratos con levaduras osmófilas."
+  "description": "El eritritol es un poliol del que alrededor del 90% se absorbe y se elimina sin cambios por la orina; llega muy poco al colon y queda poco disponible para la fermentación."
 }

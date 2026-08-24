@@ -1,32 +1,33 @@
 {
   "name": "Erythritol",
   "e_code": "E968",
-  "aliases": "E968, erythritol, meso-erythritol, eritritol",
+  "aliases": "E968, INS 968, erythritol, meso-erythritol, erythrite, tetrahydroxybutane, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "A four-carbon polyol, or sugar alcohol, produced by fermenting a carbohydrate source with food-grade osmophilic yeasts, then purified and dried.",
-  "why_botia": "BOTIA flags E968 because it is a bulk polyol, not just an intense sweetener. EFSA's 2023 re-evaluation set an ADI from human diarrhoea data. EU rules require a laxative-effect warning above 10% added polyols; WHO's 2023 recommendation excludes polyols.",
-  "can_1": "Detect E968 or Erythritol and trigger the sweetener layer.",
-  "can_2": "Notify the user of its low-glycemic, low-calorie properties.",
-  "cannot_1": "Verify which yeast strain was used for fermentation.",
-  "cannot_2": "Measure the exact quantity added to the product.",
+  "what_is": "Erythritol (INS 968 / E968) is a four-carbon polyol made commercially by fermenting carbohydrates and purifying the resulting erythritol. It is used as a sweetener and humectant and is absorbed much more completely than most other common polyols.",
+  "why_botia": "Erythritol is the polyol that behaves least like the others: about 90% is absorbed and passed out in urine unchanged, so very little reaches the colon and there is little left for gut bacteria to ferment. That is why it usually causes less gas than more poorly absorbed polyols such as sorbitol or maltitol, although large single amounts can still cause diarrhoea. JECFA assigned an ADI “not specified”; EFSA later set an ADI of 0.5 g/kg body weight per day.",
+  "can_1": "Detect E968, INS 968, erythritol, meso-erythritol and erythrite when explicitly declared.",
+  "can_2": "Explain its unusually high absorption, urinary excretion, low colonic fermentation, comparatively low gas production and the diarrhoea that can occur with large single amounts.",
+  "cannot_1": "Determine how much erythritol is present from the ingredient list alone.",
+  "cannot_2": "Predict an individual's digestive tolerance or determine whether intake exceeds a body-weight-based amount without knowing the quantity consumed.",
   "sources": [
     {
-      "label": "Commission Regulation (EU) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Erythritol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/961"
     },
     {
-      "label": "EFSA — Erythritol (E 968) re-evaluation, 2023",
+      "label": "EFSA — Re-evaluation of erythritol (E 968), 2023",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
     },
     {
-      "label": "Regulation (EU) 2021/1175 — polyol labelling",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "Human study — erythritol absorption and urinary excretion",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8039489/"
     }
   ],
   "title": "Erythritol",
-  "description": "A non-hygroscopic polyol sugar alcohol obtained by fermenting carbohydrates with osmophilic yeasts."
+  "description": "Erythritol is a polyol of which about 90% is absorbed and excreted unchanged in urine; very little reaches the colon, so little is available for fermentation."
 }

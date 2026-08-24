@@ -1,32 +1,33 @@
 {
   "name": "Eritritol",
   "e_code": "E968",
-  "aliases": "E968, erythritol, meso-erythritol, eritritol",
+  "aliases": "E968, INS 968, erythritol, meso-erythritol, erythrite, tetrahydroxybutane, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Dört karbonlu bir poliol veya şeker alkolü olup, bir karbonhidrat kaynağının gıda sınıfı ozmofilik mayalarla fermente edilmesi, ardından saflaştırılıp kurutulmasıyla üretilir.",
-  "why_botia": "BOTIA, E968'i yalnızca yoğun bir tatlandırıcı değil, hacim artırıcı bir poliol olduğu için işaretlemektedir. EFSA'nın 2023 yeniden değerlendirmesi, insan ishal verilerine dayanarak bir ADI belirlemiştir. AB kuralları, %10'un üzerinde eklenmiş poliol bulunması durumunda müshil etkisi uyarısı gerektirmektedir; WHO'nün 2023 tavsiyesi poliolleri hariç tutmaktadır.",
-  "can_1": "E968 veya Eritritol'ü tespit eder ve tatlandırıcı katmanını tetikler.",
-  "can_2": "Kullanıcıya düşük glisemik ve düşük kalorili özelliklerini bildirir.",
-  "cannot_1": "Fermantasyon için hangi maya türünün kullanıldığını doğrulayamaz.",
-  "cannot_2": "Ürüne eklenen tam miktarı ölçemez.",
+  "what_is": "Eritritol (INS 968 / E968), karbonhidratların fermente edilmesi ve oluşan ürünün saflaştırılmasıyla ticari olarak üretilen dört karbonlu bir polioldür. Tatlandırıcı ve nem tutucu olarak kullanılır ve diğer yaygın poliollerin çoğundan çok daha yüksek oranda emilir.",
+  "why_botia": "Eritritol diğer poliollere en az benzeyen polioldür: yaklaşık %90'ı emilir ve değişmeden idrarla atılır, bu nedenle çok azı kolona ulaşır ve bağırsak bakterilerinin fermente etmesi için çok az miktar kalır. Bu yüzden genellikle sorbitol veya maltitol gibi daha kötü emilen poliollerden daha az gaz yapar, ancak tek seferde alınan büyük miktarlar yine de ishale neden olabilir. JECFA “belirtilmemiş” ADI vermiştir; EFSA daha sonra günlük 0,5 g/kg vücut ağırlığı ADI belirlemiştir.",
+  "can_1": "E968, INS 968, eritritol, meso-erythritol ve erythrite'i açıkça beyan edildiklerinde tespit etmek.",
+  "can_2": "Olağandışı yüksek emilimini, idrarla atılmasını, kolondaki düşük fermentasyonu, nispeten düşük gaz oluşumunu ve tek seferde büyük miktarlarda ortaya çıkabilecek ishali açıklamak.",
+  "cannot_1": "Yalnızca içerik listesinden ne kadar eritritol bulunduğunu belirlemek.",
+  "cannot_2": "Bireysel sindirim toleransını öngörmek veya tüketilen miktar bilinmeden alımın vücut ağırlığına bağlı bir miktarı aşıp aşmadığını belirlemek.",
   "sources": [
     {
-      "label": "Komisyon Tüzüğü (AB) No 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Erythritol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/961"
     },
     {
-      "label": "EFSA — Eritritol (E 968) yeniden değerlendirmesi, 2023",
+      "label": "EFSA — Re-evaluation of erythritol (E 968), 2023",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
     },
     {
-      "label": "(EU) 2021/1175 Tüzüğü — poliol etiketlemesi",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "Human study — erythritol absorption and urinary excretion",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8039489/"
     }
   ],
   "title": "Eritritol",
-  "description": "Ozmofilik mayalar ile karbonhidratların fermente edilmesiyle elde edilen higroskopik olmayan bir poliol şeker alkolüdür."
+  "description": "Eritritolün yaklaşık %90'ı emilir ve değişmeden idrarla atılır; çok azı kolona ulaşır ve fermentasyon için kullanılabilir durumda kalır."
 }

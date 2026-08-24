@@ -1,32 +1,33 @@
 {
   "name": "Erythritol",
   "e_code": "E968",
-  "aliases": "E968, erythritol, meso-erythritol, eritritol",
+  "aliases": "E968, INS 968, erythritol, meso-erythritol, erythrite, tetrahydroxybutane, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Een vier-koolstofpolyol, of suikeralcohol, geproduceerd door een koolhydraatbron te fermenteren met voedselveilige osmofiele gisten, en vervolgens gezuiverd en gedroogd.",
-  "why_botia": "BOTIA markeert E968 omdat het een bulkpolyol is, niet alleen een intensieve zoetstof. De herevaluatie van EFSA uit 2023 stelde een ADI vast op basis van gegevens over diarree bij mensen. EU-regels vereisen een waarschuwing voor een laxerend effect boven 10% toegevoegde polyolen; de aanbeveling van de WHO uit 2023 sluit polyolen uit.",
-  "can_1": "Detecteer E968 of Erythritol en activeer de zoetmiddellaag.",
-  "can_2": "Informeer de gebruiker over de lage glycemische en caloriearme eigenschappen.",
-  "cannot_1": "Controleer welke giststam is gebruikt voor de fermentatie.",
-  "cannot_2": "Meet de exacte hoeveelheid die aan het product is toegevoegd.",
+  "what_is": "Erythritol (INS 968 / E968) is een vier-koolstofpolyol die commercieel wordt gemaakt door koolhydraten te fermenteren en het gevormde erythritol te zuiveren. Het wordt gebruikt als zoetstof en bevochtigingsmiddel en wordt veel vollediger opgenomen dan de meeste andere gangbare polyolen.",
+  "why_botia": "Erythritol gedraagt zich van de polyolen het minst zoals de andere: ongeveer 90% wordt opgenomen en onveranderd via de urine uitgescheiden, waardoor maar heel weinig de dikke darm bereikt en er weinig overblijft voor darmbacteriën om te fermenteren. Daardoor veroorzaakt het meestal minder gas dan slechter opgenomen polyolen zoals sorbitol of maltitol, hoewel grote hoeveelheden in één keer nog steeds diarree kunnen veroorzaken. JECFA kende een ADI “niet gespecificeerd” toe; EFSA stelde later een ADI vast van 0,5 g/kg lichaamsgewicht per dag.",
+  "can_1": "E968, INS 968, erythritol, meso-erythritol en erythrite detecteren wanneer deze expliciet worden vermeld.",
+  "can_2": "De uitzonderlijk hoge opname, uitscheiding via de urine, geringe fermentatie in de dikke darm, relatief lage gasvorming en mogelijke diarree na grote hoeveelheden in één keer uitleggen.",
+  "cannot_1": "Uit alleen de ingrediëntenlijst bepalen hoeveel erythritol aanwezig is.",
+  "cannot_2": "De individuele spijsverteringstolerantie voorspellen of zonder de geconsumeerde hoeveelheid bepalen of een lichaamsgewichtgerelateerde hoeveelheid wordt overschreden.",
   "sources": [
     {
-      "label": "Verordening (EU) nr. 231/2012 van de Commissie",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Erythritol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/961"
     },
     {
-      "label": "EFSA — Herbeoordeling van erythritol (E 968), 2023",
+      "label": "EFSA — Re-evaluation of erythritol (E 968), 2023",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
     },
     {
-      "label": "Verordening (EU) 2021/1175 — etikettering van polyolen",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "Human study — erythritol absorption and urinary excretion",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8039489/"
     }
   ],
   "title": "Erythritol",
-  "description": "Een niet-hygroscopische polyol-suikeralcohol verkregen door fermentatie van koolhydraten met osmofiele gisten."
+  "description": "Erythritol is een polyol waarvan ongeveer 90% wordt opgenomen en onveranderd via de urine wordt uitgescheiden; heel weinig bereikt de dikke darm en blijft beschikbaar voor fermentatie."
 }

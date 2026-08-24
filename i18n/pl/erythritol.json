@@ -1,32 +1,33 @@
 {
   "name": "Erytrytol",
   "e_code": "E968",
-  "aliases": "E968, erythritol, meso-erythritol, eritritol",
+  "aliases": "E968, INS 968, erythritol, meso-erythritol, erythrite, tetrahydroxybutane, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Czterowęglowy poliol, czyli alkohol cukrowy, otrzymywany w wyniku fermentacji źródła węglowodanów z użyciem drożdży osmofilnych klasy spożywczej, a następnie oczyszczany i suszony.",
-  "why_botia": "BOTIA sygnalizuje E968, ponieważ jest to poliol objętościowy, a nie tylko intensywny słodzik. Ponowna ocena EFSA z 2023 r. ustaliła ADI na podstawie danych dotyczących biegunki u ludzi. Przepisy UE wymagają ostrzeżenia o działaniu przeczyszczającym powyżej 10% dodanych polioli; zalecenie WHO z 2023 r. wyklucza poliole.",
-  "can_1": "Wykryj E968 lub Erytrytol i uruchom warstwę słodzika.",
-  "can_2": "Poinformuj użytkownika o jego niskim indeksie glikemicznym i niskokalorycznych właściwościach.",
-  "cannot_1": "Zweryfikuj, który szczep drożdży został użyty do fermentacji.",
-  "cannot_2": "Zmierz dokładną ilość dodaną do produktu.",
+  "what_is": "Erytrytol (INS 968 / E968) jest czterowęglowym poliolem produkowanym komercyjnie przez fermentację węglowodanów i późniejsze oczyszczanie. Jest stosowany jako substancja słodząca i utrzymująca wilgoć i wchłania się znacznie pełniej niż większość innych popularnych polioli.",
+  "why_botia": "Erytrytol jest poliolem, który zachowuje się najmniej podobnie do pozostałych: około 90% zostaje wchłonięte i wydalone w niezmienionej postaci z moczem, dlatego bardzo mało dociera do jelita grubego i niewiele pozostaje do fermentacji przez bakterie jelitowe. Z tego powodu zwykle powoduje mniej gazów niż gorzej wchłaniane poliole, takie jak sorbitol czy maltitol, chociaż duże jednorazowe ilości nadal mogą wywołać biegunkę. JECFA przyznała ADI „nieokreślone”, a EFSA później ustaliła ADI na poziomie 0,5 g/kg masy ciała dziennie.",
+  "can_1": "Wykrywać E968, INS 968, erytrytol, meso-erythritol i erythrite, gdy są wyraźnie zadeklarowane.",
+  "can_2": "Wyjaśniać jego wyjątkowo wysokie wchłanianie, wydalanie z moczem, niewielką fermentację w jelicie grubym, stosunkowo małą produkcję gazów i biegunkę, która może wystąpić po dużej jednorazowej ilości.",
+  "cannot_1": "Określić ilości erytrytolu na podstawie samej listy składników.",
+  "cannot_2": "Przewidzieć indywidualnej tolerancji trawiennej ani ustalić, czy spożycie przekracza ilość zależną od masy ciała bez znajomości spożytej ilości.",
   "sources": [
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Erythritol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/961"
     },
     {
-      "label": "EFSA — Ponowna ocena erytrytolu (E 968), 2023",
+      "label": "EFSA — Re-evaluation of erythritol (E 968), 2023",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
     },
     {
-      "label": "Rozporządzenie (UE) 2021/1175 — etykietowanie polioli",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "Human study — erythritol absorption and urinary excretion",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8039489/"
     }
   ],
   "title": "Erytrytol",
-  "description": "Nielepki alkohol poliolowy otrzymywany w wyniku fermentacji węglowodanów z użyciem drożdży osmofilnych."
+  "description": "Erytrytol jest poliolem, którego około 90% jest wchłaniane i wydalane w niezmienionej postaci z moczem; bardzo mało dociera do jelita grubego i pozostaje dostępne do fermentacji."
 }

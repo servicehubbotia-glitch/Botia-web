@@ -1,32 +1,33 @@
 {
   "name": "Erythrit",
   "e_code": "E968",
-  "aliases": "E968, erythritol, meso-erythritol, eritritol",
+  "aliases": "E968, INS 968, erythritol, meso-erythritol, erythrite, tetrahydroxybutane, eritritol",
   "module_icon": "sweeteners.png",
   "layers": [
     "sweetener",
+    "texture",
     "enumbers"
   ],
-  "what_is": "Ein vierkohlenstoffhaltiges Polyol, auch Zuckeralkohol genannt, wird durch Fermentation einer Kohlenhydratquelle mit lebensmitteltauglichen osmophilen Hefen hergestellt und anschließend gereinigt und getrocknet.",
-  "why_botia": "BOTIA kennzeichnet E968, da es sich um einen Füllstoff-Polyol handelt, nicht nur um einen intensiven Süßstoff. Die Neubewertung der EFSA aus dem Jahr 2023 legte einen ADI-Wert auf der Grundlage von Daten zu Durchfall beim Menschen fest. EU-Vorschriften verlangen einen Warnhinweis auf abführende Wirkung bei einem Gehalt von mehr als 10 % zugesetzter Polyole; die Empfehlung der WHO aus dem Jahr 2023 schließt Polyole aus.",
-  "can_1": "E968 oder Erythrit erkennen und die Süßstoff-Ebene auslösen.",
-  "can_2": "Den Benutzer über seine niedrig-glykämischen, kalorienarmen Eigenschaften informieren.",
-  "cannot_1": "Überprüfen, welcher Hefestamm für die Fermentation verwendet wurde.",
-  "cannot_2": "Die genaue Menge messen, die dem Produkt zugesetzt wurde.",
+  "what_is": "Erythrit (INS 968 / E968) ist ein vierwertiges Polyol, das kommerziell durch Fermentation von Kohlenhydraten und anschließende Reinigung hergestellt wird. Es wird als Süßstoff und Feuchthaltemittel eingesetzt und deutlich vollständiger aufgenommen als die meisten anderen gebräuchlichen Polyole.",
+  "why_botia": "Erythrit verhält sich unter den Polyolen am wenigsten wie die anderen: Etwa 90% werden aufgenommen und unverändert mit dem Urin ausgeschieden, sodass nur sehr wenig den Dickdarm erreicht und kaum etwas für die Darmbakterien zur Fermentation übrig bleibt. Deshalb verursacht es meist weniger Blähungen als schlechter absorbierte Polyole wie Sorbit oder Maltit, obwohl große Einzelmengen weiterhin Durchfall verursachen können. JECFA vergab einen ADI „nicht spezifiziert“; EFSA legte später einen ADI von 0,5 g/kg Körpergewicht pro Tag fest.",
+  "can_1": "E968, INS 968, Erythrit, meso-Erythrit und erythrite erkennen, wenn sie ausdrücklich deklariert sind.",
+  "can_2": "Die ungewöhnlich hohe Aufnahme, die Ausscheidung über den Urin, die geringe Fermentation im Dickdarm, die vergleichsweise geringe Gasbildung und möglichen Durchfall nach großen Einzelmengen erklären.",
+  "cannot_1": "Allein aus der Zutatenliste bestimmen, wie viel Erythrit enthalten ist.",
+  "cannot_2": "Die individuelle Verdauungsverträglichkeit vorhersagen oder ohne Kenntnis der verzehrten Menge bestimmen, ob eine körpergewichtsbezogene Menge überschritten wird.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-05-09/eng"
+      "label": "JECFA — Erythritol, evaluation record",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/961"
     },
     {
-      "label": "EFSA — Neubewertung von Erythrit (E 968), 2023",
+      "label": "EFSA — Re-evaluation of erythritol (E 968), 2023",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8430"
     },
     {
-      "label": "Verordnung (EU) 2021/1175 — Kennzeichnung von Polyolen",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32021R1175"
+      "label": "Human study — erythritol absorption and urinary excretion",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8039489/"
     }
   ],
   "title": "Erythrit",
-  "description": "Ein nichthygroskopischer Polyol-Zuckeralkohol, der durch Fermentation von Kohlenhydraten mit osmophilen Hefen gewonnen wird."
+  "description": "Erythrit ist ein Polyol, von dem etwa 90% aufgenommen und unverändert mit dem Urin ausgeschieden werden; nur sehr wenig erreicht den Dickdarm und steht zur Fermentation zur Verfügung."
 }
