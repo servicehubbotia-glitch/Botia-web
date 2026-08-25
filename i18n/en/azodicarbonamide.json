@@ -7,12 +7,24 @@
     "texture"
   ],
   "what_is": "A flour-treatment and dough-conditioning ingredient used in specified food applications in the United States.",
-  "why_botia": "BOTIA flags an explicit azodicarbonamide declaration because FDA lists it for specified direct food uses and, as of 2026, is conducting a post-market reassessment. Being under review does not itself mean the ingredient has been found unsafe, and BOTIA does not infer it when it is absent from the label.",
+  "why_botia": "Azodicarbonamide is used to condition flour and breaks down during baking. One of its breakdown products is semicarbazide, and that is the compound that is studied. In the European Union it is not authorised in food; in the United States it is, and the FDA has had it under review since 2026.",
   "can_1": "Detect azodicarbonamide and common abbreviations or chemical synonyms when explicitly declared.",
   "can_2": "Show the current U.S. regulatory and reassessment context without converting review status into a hazard claim.",
   "cannot_1": "Determine the amount used or the concentrations of reaction products after baking.",
   "cannot_2": "Assume that bread, flour or dough contains azodicarbonamide when it is not listed.",
   "sources": [
+    {
+      "label": "JECFA — Azodicarbonamide / Azobisformamide (INS 927a) — Chemical/1183",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1183"
+    },
+    {
+      "label": "WHO/IPCS — Azodicarbonamide — Concise International Chemical Assessment Document 16",
+      "url": "https://www.inchem.org/documents/cicads/cicads/cicad16.htm"
+    },
+    {
+      "label": "Regulation (EC) No 1333/2008 — Union list of authorised food additives — consolidated 18 August 2026",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
     {
       "label": "FDA — Azodicarbonamide (ADA): Frequently Asked Questions",
       "url": "https://www.fda.gov/food/food-additives-petitions/azodicarbonamide-ada-frequently-asked-questions"
