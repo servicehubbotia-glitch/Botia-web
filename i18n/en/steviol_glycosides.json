@@ -1,5 +1,5 @@
 {
-  "name": "Steviol glycosides from Stevia",
+  "name": "Steviol glycosides",
   "e_code": "E960a / E960b / E960c / E960d",
   "aliases": "E960, E960a, E960b, E960b(i), E960c, E960d, steviol glycosides, steviol glycosides from Stevia, steviol glycosides from fermentation, stevioside, rebaudioside A, rebaudioside M, rebaudioside M from fermentation, Reb A, Reb M, fermented rebaudioside M, stevia, stevia extract, steviol glycoside, Yarrowia lipolytica",
   "module_icon": "sweeteners.png",
@@ -8,12 +8,20 @@
     "enumbers"
   ],
   "what_is": "A family of high-intensity sweet steviol glycosides. EU subclasses distinguish products obtained from Stevia leaves and other production routes, including E960b steviol glycosides from fermentation; E960b(i) covers rebaudioside M from fermentation produced using Yarrowia lipolytica.",
-  "why_botia": "BOTIA flags steviol glycosides because the \"stevia\" on a label is not the leaf: it is a purified compound extracted from it or produced by fermentation. The intestine converts it into steviol, which is why JECFA sets a common limit for all forms. In 2026 JECFA confirmed that limit and did not consider the estimated exposure likely to pose a health concern, although it noted that the ADI could be exceeded in high-consuming children.",
+  "why_botia": "The \"stevia\" on a label is not the leaf: it is a purified compound extracted from it or made by fermentation. The intestine converts it into steviol, which is why JECFA sets a common limit for all forms. In 2026 JECFA confirmed that limit and did not identify a health concern at estimated dietary exposure, although it noted that the ADI could be exceeded in high-consuming children.",
   "can_1": "Detect E960a, E960b, E960b(i), E960c, E960d and common steviol-glycoside/rebaudioside names on food labels.",
   "can_2": "Identify the declared steviol-glycoside subclass and distinguish fermentation-derived rebaudioside M when the label provides that information.",
   "cannot_1": "Determine an undeclared manufacturing microorganism, process or exact glycoside ratio.",
   "cannot_2": "Assume that every product marketed as 'stevia' contains the same E960 subclass or production route.",
   "sources": [
+    {
+      "label": "JECFA 102 — Summary and Conclusions — One hundred and second meeting (2026)",
+      "url": "https://cdn.who.int/media/docs/default-source/food-safety/jecfa/summary-and-conclusions/jecfa-102-summary-report_final.pdf?download=true&sfvrsn=53a0d1f9_4"
+    },
+    {
+      "label": "JECFA — Steviol glycosides — Chemical/267",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/267"
+    },
     {
       "label": "Commission Regulation (EU) No 231/2012 — steviol glycoside specifications",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
@@ -21,16 +29,8 @@
     {
       "label": "Commission Regulation (EU) 2025/652 — E960b and E960b(i), rebaudioside M from fermentation",
       "url": "https://eur-lex.europa.eu/eli/reg/2025/652/oj/eng"
-    },
-    {
-      "label": "WHO — guideline context for non-sugar sweeteners, including stevia and derivatives",
-      "url": "https://www.who.int/news/item/15-05-2023-who-advises-not-to-use-non-sugar-sweeteners-for-weight-control-in-newly-released-guideline"
-    },
-    {
-      "label": "JECFA 102 — Summary and Conclusions — One hundred and second meeting (2026)",
-      "url": "https://cdn.who.int/media/docs/default-source/food-safety/jecfa/summary-and-conclusions/jecfa-102-summary-report_final.pdf?download=true&sfvrsn=53a0d1f9_4"
     }
   ],
-  "title": "Steviol Glycosides",
+  "title": "Steviol glycosides",
   "description": "Steviol glycoside family expanded to E960b/E960b(i), including fermentation-derived rebaudioside M."
 }

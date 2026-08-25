@@ -1,5 +1,5 @@
 {
-  "name": "Glicosídeos de esteviol da estévia",
+  "name": "Steviol glycosides",
   "e_code": "E960a / E960b / E960c / E960d",
   "aliases": "E960, E960a, E960b, E960b(i), E960c, E960d, glicósidos de esteviol, glicósidos de esteviol de Stevia, glicósidos de esteviol de fermentação, esteviosídeo, rebaudiosídeo A, rebaudiosídeo M, rebaudiosídeo M de fermentação, Reb A, Reb M, rebaudiosídeo M fermentado, stevia, extrato de stevia, glicósido de esteviol, Yarrowia lipolytica",
   "module_icon": "sweeteners.png",
@@ -8,12 +8,20 @@
     "enumbers"
   ],
   "what_is": "Uma família de glicósidos de esteviol de alta intensidade doce. As subclasses EU distinguem produtos obtidos de folhas de Stevia e outras rotas de produção, incluindo E960b glicósidos de esteviol de fermentação; E960b(i) cobre rebaudiosídeo M de fermentação produzido usando Yarrowia lipolytica.",
-  "why_botia": "A BOTIA sinaliza os glicosídeos de esteviol porque a \"stevia\" indicada num rótulo não é a folha: é um composto purificado extraído dela ou produzido por fermentação. O intestino transforma-o em esteviol, razão pela qual o JECFA estabelece um limite comum para todas as formas. Em 2026, o JECFA confirmou esse limite e não considerou provável que a exposição estimada representasse um problema de saúde, embora tenha assinalado que a IDA poderia ser ultrapassada em crianças com consumo elevado.",
+  "why_botia": "A «stevia» de um rótulo não é a folha: é um composto purificado extraído dela ou produzido por fermentação. O intestino transforma-o em esteviol, razão pela qual o JECFA estabelece um limite comum para todas as formas. Em 2026, o JECFA confirmou esse limite e não identificou preocupação para a saúde na exposição alimentar estimada, embora tenha assinalado que a IDA poderia ser ultrapassada em crianças com consumo elevado.",
   "can_1": "Detetar E960a, E960b, E960b(i), E960c, E960d e nomes comuns de glicósidos de esteviol/rebaudiosídeo em rótulos alimentares.",
   "can_2": "Identificar a subclasse declarada de glicósidos de esteviol e distinguir rebaudiosídeo M derivado de fermentação quando o rótulo fornecer essa informação.",
   "cannot_1": "Determinar um microrganismo de fabrico não declarado, processo ou proporção exata de glicósidos.",
   "cannot_2": "Assumir que cada produto comercializado como 'stevia' contém a mesma subclasse E960 ou rota de produção.",
   "sources": [
+    {
+      "label": "JECFA 102 — Resumo e conclusões — 102.ª reunião (2026)",
+      "url": "https://cdn.who.int/media/docs/default-source/food-safety/jecfa/summary-and-conclusions/jecfa-102-summary-report_final.pdf?download=true&sfvrsn=53a0d1f9_4"
+    },
+    {
+      "label": "JECFA — Glicosídeos de esteviol — Chemical/267",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/267"
+    },
     {
       "label": "Regulamento da Comissão (EU) n.º 231/2012 — especificações dos glicósidos de esteviol",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
@@ -21,16 +29,8 @@
     {
       "label": "Regulamento da Comissão (EU) 2025/652 — E960b e E960b(i), rebaudiosídeo M de fermentação",
       "url": "https://eur-lex.europa.eu/eli/reg/2025/652/oj/eng"
-    },
-    {
-      "label": "WHO — contexto orientador para adoçantes não açúcar, incluindo stevia e derivados",
-      "url": "https://www.who.int/news/item/15-05-2023-who-advises-not-to-use-non-sugar-sweeteners-for-weight-control-in-newly-released-guideline"
-    },
-    {
-      "label": "JECFA 102 — Resumo e conclusões — 102.ª reunião (2026)",
-      "url": "https://cdn.who.int/media/docs/default-source/food-safety/jecfa/summary-and-conclusions/jecfa-102-summary-report_final.pdf?download=true&sfvrsn=53a0d1f9_4"
     }
   ],
-  "title": "Glicosídeos de esteviol da estévia",
+  "title": "Steviol glycosides",
   "description": "Família de glicósidos de esteviol expandida para E960b/E960b(i), incluindo rebaudiosídeo M derivado de fermentação."
 }
