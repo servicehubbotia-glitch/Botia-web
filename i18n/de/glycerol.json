@@ -10,19 +10,23 @@
     "enumbers"
   ],
   "what_is": "Eine klare, viskose Polyolflüssigkeit, die als Feuchthaltemittel und Süßungsmittel verwendet wird.",
-  "why_botia": "Glycerin zieht Wasser an und hält es fest, weshalb es Backwaren und Fruchtgummis feucht hält. In der Europäischen Union darf E422 für Lebensmittel seit 2023 nur aus pflanzlichen Ölen und Fetten gewonnen werden; in anderen Märkten gibt es andere Herstellungsverfahren, und auf dem Etikett steht nicht, welches verwendet wurde. JECFA sah keine Notwendigkeit, einen Grenzwert festzulegen.",
+  "why_botia": "Glycerol zieht Wasser an und hält es fest; deshalb hält es Backwaren und Fruchtgummis feucht. In der Europäischen Union darf E422 in Lebensmittelqualität seit 2023 nur aus pflanzlichen Ölen und Fetten gewonnen werden. In anderen Märkten sind andere Herstellungsformen zugelassen, und das Etikett gibt nicht an, welche verwendet wurde. JECFA hielt einen numerischen Grenzwert nicht für erforderlich.",
   "can_1": "Erkennt E422 oder Glycerol/Glycerin auf gescannten Etiketten.",
   "can_2": "Aktiviert die Ebenen für Textur, Tier und muslimische Wahl.",
-  "cannot_1": "Überprüft nicht, ob es aus tierischen oder pflanzlichen Fettquellen stammt.",
+  "cannot_1": "Den Herstellungsweg oder die Quelle außerhalb der EU bestimmen, wenn das Etikett diese nicht angibt.",
   "cannot_2": "Erkennt keine 3-MCPD-Kontaminanten über dem Grenzwert von 0,1 mg/kg.",
   "sources": [
     {
-      "label": "WHO/JECFA — Glycerol (INS 422)",
+      "label": "JECFA — Glycerol (INS 422) — Chemical/1565",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1565"
     },
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+      "label": "Verordnung (EU) 2023/1329 der Kommission — Definition von E422: pflanzliche Öle und Fette",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1329/oj/eng"
+    },
+    {
+      "label": "FDA — Substances Added to Food — Synthetisches Glycerin",
+      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=GLYCERINSYNTHETIC&set=FoodSubstances"
     }
   ],
   "title": "Glycerol",

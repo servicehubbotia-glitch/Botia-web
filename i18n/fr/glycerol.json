@@ -10,19 +10,23 @@
     "enumbers"
   ],
   "what_is": "Un liquide polyol clair et visqueux utilisé comme humectant et édulcorant.",
-  "why_botia": "Le glycérol attire et retient l’eau, ce qui permet de maintenir l’humidité des produits de boulangerie et des confiseries gélifiées. Dans l’Union européenne, depuis 2023, le E422 alimentaire ne peut être obtenu qu’à partir d’huiles et de graisses végétales ; dans d’autres marchés, d’autres modes de production existent et l’étiquette ne précise pas lequel a été utilisé. Le JECFA n’a pas jugé nécessaire de fixer une limite.",
+  "why_botia": "Le glycérol attire et retient l’eau, ce qui permet de garder les produits de boulangerie et les bonbons gélifiés moelleux. Dans l’Union européenne, depuis 2023, l’E422 alimentaire ne peut être obtenu qu’à partir d’huiles et de graisses végétales. Dans d’autres marchés, d’autres modes de production sont autorisés, et l’étiquette ne précise pas lequel a été utilisé. Le JECFA n’a pas jugé nécessaire de fixer une limite numérique.",
   "can_1": "Détecter E422 ou Glycérol/Glycérine sur les étiquettes scannées.",
   "can_2": "Activer les couches texture, animal et choix musulman.",
-  "cannot_1": "Vérifier s'il provient de sources de graisses animales ou végétales.",
+  "cannot_1": "Déterminer le mode de production ou la source hors de l’UE lorsque l’étiquette ne les indique pas.",
   "cannot_2": "Détecter les contaminants 3-MCPD au-dessus de la limite de 0,1 mg/kg.",
   "sources": [
     {
-      "label": "WHO/JECFA — Glycerol (INS 422)",
+      "label": "JECFA — Glycérol (INS 422) — Chemical/1565",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1565"
     },
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+      "label": "Règlement (UE) 2023/1329 de la Commission — définition de l’E422 : huiles et graisses végétales",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1329/oj/eng"
+    },
+    {
+      "label": "FDA — Substances ajoutées aux aliments — Glycérine synthétique",
+      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=GLYCERINSYNTHETIC&set=FoodSubstances"
     }
   ],
   "title": "Glycérol",
