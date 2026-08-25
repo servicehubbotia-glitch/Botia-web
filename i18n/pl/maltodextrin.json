@@ -6,22 +6,26 @@
   "layers": [
     "sugar"
   ],
-  "what_is": "Ultraprzetworzony proszek węglowodanowy wytwarzany przez częściowy rozkład skrobi.",
-  "why_botia": "BOTIA oznacza maltodekstrynę, ponieważ jest ona łańcuchem glukozy, który organizm bardzo szybko rozkłada, dlatego może podnosić poziom glukozy we krwi równie mocno lub mocniej niż cukier stołowy — mimo to na etykiecie nie jest liczona jako \"cukry\". Występuje w produktach sportowych, zupach, sosach, przekąskach, a nawet w żywności reklamowanej jako bez cukru. WHO nie klasyfikuje jej jako cukru wolnego, ponieważ jest polisacharydem, a nie dlatego, że działa inaczej.",
-  "can_1": "Wykryć maltodekstrynę i sklasyfikować żywność jako ultraprzetworzoną (NOVA 4).",
-  "can_2": "Oznacz jego obecność jako szybko przyswajalnego węglowodanu, odrębnego od wolnych cukrów WHO.",
+  "what_is": "Polimer sacharydowy zbudowany z jednostek D-glukozy, otrzymywany przez częściową hydrolizę skrobi.",
+  "why_botia": "Maltodekstryna jest polimerem jednostek glukozy. Definicja wolnych cukrów WHO obejmuje monosacharydy i disacharydy, więc maltodekstryna nie należy do tej kategorii. Przepisy UE dotyczące znakowania wartości odżywczej również definiują „cukry” jako mono- i disacharydy, dlatego maltodekstryna nie jest uwzględniana w pozycji „w tym cukry”. Produkt może więc zawierać maltodekstrynę, choć ta wartość tego nie pokaże.",
+  "can_1": "Wykryć maltodekstrynę, gdy jest wymieniona w wykazie składników.",
+  "can_2": "Wyjaśnić, że nie mieści się ani w definicji wolnych cukrów WHO, ani w unijnej definicji cukrów stosowanej w oznakowaniu wartości odżywczej.",
   "cannot_1": "Określić botaniczne źródło skrobi (np. kukurydza, pszenica lub tapioka), chyba że jest to wyraźnie zadeklarowane.",
   "cannot_2": "Ustalić indeksu glikemicznego ani długości łańcucha cząsteczkowego konkretnej użytej maltodekstryny.",
   "sources": [
     {
-      "label": "System klasyfikacji NOVA FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "Amerykański eCFR — 21 CFR § 184.1444 — Maltodekstryna",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1444"
     },
     {
-      "label": "Rozporządzenie (UE) nr 1169/2011",
+      "label": "WHO — Wytyczne dotyczące spożycia cukrów przez dorosłych i dzieci (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    },
+    {
+      "label": "Rozporządzenie (UE) nr 1169/2011 w sprawie informacji o żywności dla konsumentów — aktualny tekst skonsolidowany",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     }
   ],
   "title": "Maltodekstryna",
-  "description": "Ultraprzetworzony proszek węglowodanowy wytwarzany przez częściowy rozkład skrobi."
+  "description": "Pochodzący ze skrobi polimer jednostek glukozy, który w unijnym oznakowaniu wartości odżywczej nie jest liczony jako „cukry”."
 }

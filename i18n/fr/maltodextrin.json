@@ -6,22 +6,26 @@
   "layers": [
     "sugar"
   ],
-  "what_is": "Une poudre de glucides ultra-transformée fabriquée à partir de la dégradation partielle d'amidons.",
-  "why_botia": "BOTIA signale la maltodextrine parce qu’il s’agit d’une chaîne de glucose que l’organisme décompose très rapidement, de sorte qu’elle peut faire augmenter la glycémie autant ou davantage que le sucre de table — pourtant elle n’est pas comptabilisée comme \"sucres\" sur l’étiquette. On la trouve dans les produits sportifs, les soupes, les sauces, les snacks et même dans des aliments présentés comme sans sucre. L’OMS ne la classe pas parmi les sucres libres parce qu’il s’agit d’un polysaccharide, et non parce qu’elle agit différemment.",
-  "can_1": "Détecter la maltodextrine et classer l'aliment comme ultra-transformé (NOVA 4).",
-  "can_2": "Signalez sa présence en tant que glucide à digestion rapide, distinct des sucres libres WHO.",
+  "what_is": "Un polymère saccharidique constitué d’unités de D-glucose et obtenu par hydrolyse partielle de l’amidon.",
+  "why_botia": "La maltodextrine est un polymère d’unités de glucose. La définition de l’OMS des sucres libres couvre les monosaccharides et les disaccharides, de sorte que la maltodextrine reste en dehors de cette catégorie. Les règles européennes d’étiquetage nutritionnel définissent également les « sucres » comme les mono- et disaccharides ; la maltodextrine n’entre donc pas dans la valeur « dont sucres ». Un produit peut ainsi contenir de la maltodextrine sans que cette valeur le reflète.",
+  "can_1": "Détecter la maltodextrine lorsqu’elle est déclarée dans la liste des ingrédients.",
+  "can_2": "Expliquer qu’elle ne relève ni de la définition OMS des sucres libres ni de la définition européenne des sucres pour l’étiquetage nutritionnel.",
   "cannot_1": "Déterminer la source botanique de l'amidon (par exemple, maïs, blé ou tapioca) sauf si elle est explicitement déclarée.",
   "cannot_2": "Établir l'indice glycémique ou la longueur de chaîne moléculaire de la maltodextrine spécifique utilisée.",
   "sources": [
     {
-      "label": "Système de classification NOVA de la FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "eCFR des États-Unis — 21 CFR § 184.1444 — Maltodextrine",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1444"
     },
     {
-      "label": "Règlement (UE) n° 1169/2011",
+      "label": "OMS — Directive sur l’apport en sucres chez l’adulte et l’enfant (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    },
+    {
+      "label": "Règlement (UE) n° 1169/2011 concernant l’information des consommateurs sur les denrées alimentaires — texte consolidé en vigueur",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     }
   ],
   "title": "Maltodextrine",
-  "description": "Une poudre de glucides ultra-transformée fabriquée à partir de la dégradation partielle d'amidons."
+  "description": "Un polymère d’unités de glucose dérivé de l’amidon qui n’est pas compté comme « sucres » dans l’étiquetage nutritionnel de l’UE."
 }

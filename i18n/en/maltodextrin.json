@@ -6,22 +6,26 @@
   "layers": [
     "sugar"
   ],
-  "what_is": "An ultra-processed carbohydrate powder made from the partial breakdown of starches.",
-  "why_botia": "BOTIA flags maltodextrin because it is a chain of glucose that the body breaks down very quickly, so it raises blood glucose as much as or more than table sugar — yet it does not count as \"sugars\" on the label. It is found in sports products, soups, sauces, snacks and even foods marketed as sugar-free. WHO does not classify it as a free sugar because it is a polysaccharide, not because it acts differently.",
-  "can_1": "Detect maltodextrin and flag it as a marker of ultra-processing.",
-  "can_2": "Flag its presence as a rapidly digestible carbohydrate, distinct from WHO free sugars.",
+  "what_is": "A saccharide polymer made of D-glucose units and produced by partial hydrolysis of starch.",
+  "why_botia": "Maltodextrin is a polymer of glucose units. WHO's definition of free sugars covers monosaccharides and disaccharides, so maltodextrin falls outside that category. EU nutrition-labelling rules also define \"sugars\" as mono- and disaccharides, so maltodextrin is not included in the \"of which sugars\" figure. A product can therefore contain maltodextrin without that number reflecting it.",
+  "can_1": "Detect maltodextrin when it is declared in the ingredient list.",
+  "can_2": "Explain that it falls outside WHO's free-sugar definition and the EU nutrition-label definition of sugars.",
   "cannot_1": "Determine the botanical starch source (e.g., corn, wheat, or tapioca) unless explicitly declared.",
   "cannot_2": "Ascertain the glycemic index or the molecular chain length of the specific maltodextrin used.",
   "sources": [
     {
-      "label": "NOVA Classification System (FAO, 2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "U.S. eCFR — 21 CFR § 184.1444 — Maltodextrin",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1444"
     },
     {
-      "label": "Regulation (EU) No 1169/2011",
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    },
+    {
+      "label": "Regulation (EU) No 1169/2011 on food information to consumers — current consolidated text",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     }
   ],
   "title": "Maltodextrin",
-  "description": "An ultra-processed carbohydrate powder made from the partial breakdown of starches."
+  "description": "A starch-derived polymer of glucose units that is not counted as 'sugars' under EU nutrition labelling."
 }

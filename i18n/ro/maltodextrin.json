@@ -6,22 +6,26 @@
   "layers": [
     "sugar"
   ],
-  "what_is": "O pudră de carbohidrați ultraprocesată obținută prin descompunerea parțială a amidonurilor.",
-  "why_botia": "BOTIA semnalează maltodextrina deoarece este un lanț de glucoză pe care organismul îl descompune foarte repede, astfel încât poate crește glicemia la fel de mult sau chiar mai mult decât zahărul de masă — și totuși nu este contabilizată drept \"zaharuri\" pe etichetă. Se găsește în produse pentru sportivi, supe, sosuri, gustări și chiar în alimente promovate ca fiind fără zahăr. OMS nu o clasifică drept zahăr liber deoarece este o polizaharidă, nu pentru că ar acționa diferit.",
-  "can_1": "Detectează maltodextrina și clasifică alimentul ca ultraprocesat (NOVA 4).",
-  "can_2": "Semnalați prezența acestuia ca un carbohidrat cu digestie rapidă, distinct de zaharurile libere ale WHO.",
+  "what_is": "Un polimer zaharidic alcătuit din unități de D-glucoză și produs prin hidroliza parțială a amidonului.",
+  "why_botia": "Maltodextrina este un polimer de unități de glucoză. Definiția OMS a zaharurilor libere include monozaharidele și dizaharidele, astfel că maltodextrina rămâne în afara acestei categorii. Normele UE privind etichetarea nutrițională definesc de asemenea „zaharurile” drept mono- și dizaharide, astfel că maltodextrina nu este inclusă în valoarea „din care zaharuri”. Prin urmare, un produs poate conține maltodextrină fără ca această cifră să o reflecte.",
+  "can_1": "Detecta maltodextrina atunci când este declarată în lista ingredientelor.",
+  "can_2": "Explica faptul că nu intră nici în definiția OMS a zaharurilor libere, nici în definiția UE a zaharurilor pentru etichetarea nutrițională.",
   "cannot_1": "Determină sursa botanică a amidonului (de exemplu, porumb, grâu sau tapioca) decât dacă este declarată explicit.",
   "cannot_2": "Stabilește indicele glicemic sau lungimea lanțului molecular al maltodextrinei specifice utilizate.",
   "sources": [
     {
-      "label": "Sistemul de clasificare NOVA FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "eCFR SUA — 21 CFR § 184.1444 — Maltodextrină",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1444"
     },
     {
-      "label": "Regulamentul (UE) nr. 1169/2011",
+      "label": "OMS — Ghid privind aportul de zaharuri la adulți și copii (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    },
+    {
+      "label": "Regulamentul (UE) nr. 1169/2011 privind informarea consumatorilor cu privire la produsele alimentare — text consolidat în vigoare",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     }
   ],
   "title": "Maltodextrină",
-  "description": "O pudră de carbohidrați ultraprocesată obținută prin descompunerea parțială a amidonurilor."
+  "description": "Un polimer de unități de glucoză derivat din amidon care nu este contabilizat ca „zaharuri” în etichetarea nutrițională a UE."
 }

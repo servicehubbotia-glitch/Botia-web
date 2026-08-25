@@ -6,22 +6,26 @@
   "layers": [
     "sugar"
   ],
-  "what_is": "Um pó de carboidrato ultraprocessado feito a partir da quebra parcial de amidos.",
-  "why_botia": "A BOTIA sinaliza a maltodextrina porque é uma cadeia de glicose que o organismo decompõe muito rapidamente, pelo que pode aumentar a glicose no sangue tanto ou mais do que o açúcar de mesa — e, no entanto, não é contabilizada como \"açúcares\" no rótulo. Está presente em produtos desportivos, sopas, molhos, snacks e até em alimentos apresentados como sem açúcar. A OMS não a classifica como açúcar livre porque é um polissacarídeo, não porque atue de forma diferente.",
-  "can_1": "Detectar maltodextrina e classificar o alimento como ultraprocessado (NOVA 4).",
-  "can_2": "Assinale a sua presença como um carboidrato de digestão rápida, distinto dos açúcares livres WHO.",
+  "what_is": "Um polímero sacarídico constituído por unidades de D-glicose e produzido por hidrólise parcial do amido.",
+  "why_botia": "A maltodextrina é um polímero de unidades de glicose. A definição da OMS de açúcares livres abrange monossacáridos e dissacáridos, pelo que a maltodextrina fica fora dessa categoria. As regras da UE sobre rotulagem nutricional também definem «açúcares» como mono- e dissacáridos, pelo que a maltodextrina não entra no valor «dos quais açúcares». Assim, um produto pode conter maltodextrina sem que esse valor a reflita.",
+  "can_1": "Detetar maltodextrina quando é declarada na lista de ingredientes.",
+  "can_2": "Explicar que fica fora tanto da definição da OMS de açúcares livres como da definição da UE de açúcares na rotulagem nutricional.",
   "cannot_1": "Determinar a fonte botânica do amido (ex.: milho, trigo ou tapioca) a menos que seja declarada explicitamente.",
   "cannot_2": "Avaliar o índice glicêmico ou o comprimento da cadeia molecular da maltodextrina específica utilizada.",
   "sources": [
     {
-      "label": "Sistema de Classificação NOVA da FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "eCFR dos EUA — 21 CFR § 184.1444 — Maltodextrina",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1444"
     },
     {
-      "label": "Regulamento (UE) N.º 1169/2011",
+      "label": "OMS — Diretriz sobre ingestão de açúcares por adultos e crianças (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    },
+    {
+      "label": "Regulamento (UE) n.º 1169/2011 relativo à informação sobre os géneros alimentícios — texto consolidado vigente",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     }
   ],
   "title": "Maltodextrina",
-  "description": "Um pó de carboidrato ultraprocessado feito a partir da quebra parcial de amidos."
+  "description": "Um polímero de unidades de glicose derivado do amido que não é contabilizado como «açúcares» na rotulagem nutricional da UE."
 }

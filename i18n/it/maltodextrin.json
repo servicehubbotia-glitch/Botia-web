@@ -6,22 +6,26 @@
   "layers": [
     "sugar"
   ],
-  "what_is": "Una polvere di carboidrati ultra-processata ottenuta dalla parziale scomposizione degli amidi.",
-  "why_botia": "BOTIA segnala la maltodestrina perché è una catena di glucosio che l’organismo scompone molto rapidamente, quindi può aumentare la glicemia quanto o più dello zucchero da tavola — eppure sull’etichetta non viene conteggiata come \"zuccheri\". Si trova nei prodotti sportivi, nelle zuppe, nelle salse, negli snack e perfino in alimenti pubblicizzati come senza zucchero. L’OMS non la classifica come zucchero libero perché è un polisaccaride, non perché agisca in modo diverso.",
-  "can_1": "Rileva il maltodestrina e classifica l'alimento come ultra-processato (NOVA 4).",
-  "can_2": "Segnalarne la presenza come carboidrato a rapida digestione, distinto dagli zuccheri liberi di WHO.",
+  "what_is": "Un polimero saccaridico formato da unità di D-glucosio e prodotto mediante idrolisi parziale dell’amido.",
+  "why_botia": "La maltodestrina è un polimero di unità di glucosio. La definizione OMS di zuccheri liberi comprende monosaccaridi e disaccaridi, quindi la maltodestrina resta fuori da questa categoria. Anche le norme UE sull’etichettatura nutrizionale definiscono gli «zuccheri» come mono- e disaccaridi, perciò la maltodestrina non è inclusa nella voce «di cui zuccheri». Un prodotto può quindi contenerla senza che quel valore la rifletta.",
+  "can_1": "Rilevare la maltodestrina quando è dichiarata nell’elenco degli ingredienti.",
+  "can_2": "Spiegare che resta fuori sia dalla definizione OMS di zuccheri liberi sia dalla definizione UE di zuccheri nell’etichettatura nutrizionale.",
   "cannot_1": "Determinare la fonte botanica dell’amido (es. mais, frumento o tapioca), salvo che sia dichiarata esplicitamente.",
   "cannot_2": "Determinare l'indice glicemico o la lunghezza della catena molecolare del maltodestrina specifico utilizzato.",
   "sources": [
     {
-      "label": "Sistema di classificazione NOVA FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "eCFR USA — 21 CFR § 184.1444 — Maltodestrina",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1444"
     },
     {
-      "label": "Regolamento (UE) n. 1169/2011",
+      "label": "OMS — Linea guida sull’assunzione di zuccheri negli adulti e nei bambini (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    },
+    {
+      "label": "Regolamento (UE) n. 1169/2011 relativo alle informazioni sugli alimenti ai consumatori — testo consolidato vigente",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     }
   ],
   "title": "Maltodestrina",
-  "description": "Una polvere di carboidrati ultra-processata ottenuta dalla parziale scomposizione degli amidi."
+  "description": "Un polimero di unità di glucosio derivato dall’amido che non viene conteggiato come «zuccheri» nell’etichettatura nutrizionale dell’UE."
 }

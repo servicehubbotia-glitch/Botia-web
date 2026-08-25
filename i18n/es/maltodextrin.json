@@ -6,22 +6,26 @@
   "layers": [
     "sugar"
   ],
-  "what_is": "Un polvo de carbohidrato ultraprocesado elaborado a partir de la descomposición parcial de almidones.",
-  "why_botia": "BOTIA señala la maltodextrina porque es una cadena de glucosa que el cuerpo rompe enseguida, así que sube la glucosa en sangre tanto o más que el azúcar de mesa — y sin embargo no cuenta como \"azúcares\" en la etiqueta. Está en productos deportivos, sopas, salsas, snacks y hasta en alimentos que se anuncian sin azúcar. La OMS no la clasifica como azúcar libre porque es un polisacárido, no porque actúe distinto.",
-  "can_1": "Detectar maltodextrina en etiquetas escaneadas.",
-  "can_2": "Señalar su presencia como carbohidrato de digestión rápida, distinto de los azúcares libres WHO.",
+  "what_is": "Un polímero de sacáridos formado por unidades de D-glucosa y producido mediante la hidrólisis parcial del almidón.",
+  "why_botia": "La maltodextrina es un polímero de unidades de glucosa. La OMS define los azúcares libres como monosacáridos y disacáridos, así que la maltodextrina queda fuera de esa categoría. La normativa europea de etiquetado nutricional también define «azúcares» como mono- y disacáridos, por lo que la maltodextrina no se incluye en la cifra «de los cuales azúcares». Así, un producto puede llevar maltodextrina sin que esa cifra la refleje.",
+  "can_1": "Detectar maltodextrina cuando aparece declarada en la lista de ingredientes.",
+  "can_2": "Explicar que queda fuera de la definición de azúcares libres de la OMS y de la definición de azúcares del etiquetado nutricional de la UE.",
   "cannot_1": "Determinar la fuente botánica del almidón (p. ej., maíz, trigo o tapioca) a menos que se declare explícitamente.",
   "cannot_2": "Determinar el índice glucémico o la longitud de la cadena molecular de la maltodextrina específica utilizada.",
   "sources": [
     {
-      "label": "Sistema de Clasificación NOVA de la FAO (2019)",
-      "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf"
+      "label": "eCFR de EE. UU. — 21 CFR § 184.1444 — Maltodextrina",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1444"
     },
     {
-      "label": "Reglamento (UE) N.º 1169/2011",
+      "label": "OMS — Directriz: ingesta de azúcares para adultos y niños (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    },
+    {
+      "label": "Reglamento (UE) n.º 1169/2011 sobre información alimentaria al consumidor — texto consolidado vigente",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
     }
   ],
   "title": "Maltodextrina",
-  "description": "Un polvo de carbohidrato ultraprocesado elaborado a partir de la descomposición parcial de almidones."
+  "description": "Un polímero de unidades de glucosa derivado del almidón que no se cuenta como «azúcares» en el etiquetado nutricional de la UE."
 }
