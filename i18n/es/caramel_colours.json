@@ -4,47 +4,34 @@
   "aliases": "E150a, E150b, E150c, E150d, caramel colours, caramel colors, caramel colour, caramel color, Class I caramel, Class II caramel, Class III caramel, Class IV caramel, burnt sugar colour",
   "module_icon": "enumbers.png",
   "layers": [
-    "enumbers",
-    "woman"
+    "enumbers"
   ],
   "what_is": "Una familia de cuatro colorantes alimentarios marrones elaborados mediante calentamiento controlado de carbohidratos, cuyas clases se distinguen por los reactivos permitidos durante su fabricación.",
-  "why_botia": "BOTIA señala el color caramelo porque \"caramelo\" en una etiqueta puede referirse a cuatro clases distintas fabricadas mediante procesos diferentes. Las clases producidas con amoníaco pueden contener subproductos del proceso que las otras clases no tienen, y JECFA evalúa las cuatro clases por separado con distintos límites de ingesta aceptable. Las etiquetas a menudo no indican qué clase se utilizó, por lo que la palabra \"caramelo\" por sí sola no te dice exactamente qué estás consumiendo.",
+  "why_botia": "\"Caramelo\" en una etiqueta puede ser cualquiera de cuatro sustancias distintas, fabricadas de forma diferente. JECFA evaluó las cuatro clases por separado y les asignó límites distintos, así que no son intercambiables. La etiqueta rara vez dice cuál es, con lo cual no puedes saber cuál estás comiendo.",
   "can_1": "Identifica E150a, E150b, E150c o E150d cuando se declare la clase y reconoce la redacción genérica de color caramelo.",
-  "can_2": "Activa las capas de E-number y Woman manteniendo explícita la distinción de clase y evitando una conclusión específica de sexo basada únicamente en la etiqueta.",
+  "can_2": "Activar la capa de números E manteniendo diferenciadas las cuatro clases de caramelo.",
   "cannot_1": "Infiera la clase exacta de caramelo cuando la etiqueta solo dice color caramelo o color caramelo.",
   "cannot_2": "Mide los subproductos del proceso, como el 4-metilimidazol, o determina su concentración a partir del texto de la etiqueta.",
   "sources": [
     {
-      "label": "EFSA — Revisión de Caramelos",
-      "url": "https://www.efsa.europa.eu/en/press/news/ans110308"
-    },
-    {
-      "label": "FDA — Situación regulatoria de Caramelos",
-      "url": "https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=Caramel&set=ColorAdditives"
-    },
-    {
-      "label": "FDA — Preguntas y respuestas sobre 4-MEI",
-      "url": "https://www.fda.gov/food/food-additives-petitions/questions-answers-caramel-coloring-and-4-mei"
-    },
-    {
-      "label": "Reglamento (EC) n.º 1333/2008 sobre aditivos alimentarios",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "JECFA — Caramel colour Class I (E150a) — Chemical/423",
+      "label": "JECFA — Color caramelo Clase I (E150a) — Chemical/423",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/423"
     },
     {
-      "label": "JECFA — Caramel colour Class II (E150b) — Chemical/424",
+      "label": "JECFA — Color caramelo Clase II (E150b) — Chemical/424",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/424"
     },
     {
-      "label": "JECFA — Caramel colour Class III (E150c) — Chemical/498",
+      "label": "JECFA — Color caramelo Clase III (E150c) — Chemical/498",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/498"
     },
     {
-      "label": "JECFA — Caramel colour Class IV (E150d) — Chemical/1668",
+      "label": "JECFA — Color caramelo Clase IV (E150d) — Chemical/1668",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1668"
+    },
+    {
+      "label": "Reglamento (CE) n.º 1333/2008 sobre aditivos alimentarios — consolidado 18 de agosto de 2026",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "Caramelos",

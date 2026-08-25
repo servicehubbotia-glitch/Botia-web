@@ -4,47 +4,34 @@
   "aliases": "E150a, E150b, E150c, E150d, colori di caramello, colori di caramello, colore caramello, colore caramello, caramello di Classe I, caramello di Classe II, caramello di Classe III, caramello di Classe IV, colore di zucchero bruciato",
   "module_icon": "enumbers.png",
   "layers": [
-    "enumbers",
-    "woman"
+    "enumbers"
   ],
   "what_is": "Una famiglia di quattro coloranti alimentari marroni ottenuti mediante riscaldamento controllato di carboidrati, con le classi distinte in base ai reagenti consentiti durante la produzione.",
-  "why_botia": "BOTIA segnala il color caramello perché la parola \"caramello\" su un’etichetta può riferirsi a quattro classi diverse prodotte con processi differenti. Le classi prodotte con ammoniaca possono contenere sottoprodotti del processo che le altre classi non hanno, e il JECFA valuta separatamente le quattro classi con diversi limiti di assunzione accettabile. Le etichette spesso non indicano quale classe è stata utilizzata, quindi la parola \"caramello\" da sola non dice esattamente che cosa si sta consumando.",
+  "why_botia": "La parola «caramello» su un’etichetta può indicare quattro sostanze diverse, prodotte in modi differenti. Il JECFA ha valutato separatamente le quattro classi e ha assegnato limiti di assunzione diversi, quindi non sono intercambiabili. L’etichetta raramente specifica quale classe è stata usata, perciò non puoi sapere esattamente quale stai consumando.",
   "can_1": "Identificare E150a, E150b, E150c o E150d quando la classe è dichiarata e riconoscere la dicitura generica di colorante caramello.",
-  "can_2": "Attiva i layer E-number e Woman mantenendo esplicita la distinzione di classe ed evitando una conclusione specifica per sesso basata solo sull'etichetta.",
+  "can_2": "Attivare il livello dei numeri E mantenendo distinte le quattro classi di caramello.",
   "cannot_1": "Inferisci la classe esatta di caramello quando l'etichetta indica solo caramello o colore caramello.",
   "cannot_2": "Misurare i sottoprodotti di processo come il 4-metilimidazolo o determinarne la concentrazione dal testo in etichetta.",
   "sources": [
     {
-      "label": "EFSA — Revisione dei colori caramello",
-      "url": "https://www.efsa.europa.eu/en/press/news/ans110308"
-    },
-    {
-      "label": "FDA — Stato normativo del caramello",
-      "url": "https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=Caramel&set=ColorAdditives"
-    },
-    {
-      "label": "FDA — Domande e risposte sul 4-MEI",
-      "url": "https://www.fda.gov/food/food-additives-petitions/questions-answers-caramel-coloring-and-4-mei"
-    },
-    {
-      "label": "Regolamento (CE) n. 1333/2008 sugli additivi alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "JECFA — Caramel colour Class I (E150a) — Chemical/423",
+      "label": "JECFA — Caramello Classe I (E150a) — Chemical/423",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/423"
     },
     {
-      "label": "JECFA — Caramel colour Class II (E150b) — Chemical/424",
+      "label": "JECFA — Caramello Classe II (E150b) — Chemical/424",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/424"
     },
     {
-      "label": "JECFA — Caramel colour Class III (E150c) — Chemical/498",
+      "label": "JECFA — Caramello Classe III (E150c) — Chemical/498",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/498"
     },
     {
-      "label": "JECFA — Caramel colour Class IV (E150d) — Chemical/1668",
+      "label": "JECFA — Caramello Classe IV (E150d) — Chemical/1668",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1668"
+    },
+    {
+      "label": "Regolamento (CE) n. 1333/2008 sugli additivi alimentari — consolidato 18 agosto 2026",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "Caramello",

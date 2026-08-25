@@ -4,47 +4,34 @@
   "aliases": "E150a, E150b, E150c, E150d, caramel colours, caramel colors, caramel colour, caramel color, Class I caramel, Class II caramel, Class III caramel, Class IV caramel, burnt sugar colour",
   "module_icon": "enumbers.png",
   "layers": [
-    "enumbers",
-    "woman"
+    "enumbers"
   ],
   "what_is": "Rodzina czterech brązowych barwników spożywczych wytwarzanych przez kontrolowane ogrzewanie węglowodanów, z klasami rozróżnianymi na podstawie odczynników dozwolonych podczas produkcji.",
-  "why_botia": "BOTIA oznacza karmel, ponieważ słowo \"karmel\" na etykiecie może odnosić się do czterech różnych klas wytwarzanych w odmienny sposób. Klasy produkowane z użyciem amoniaku mogą zawierać produkty uboczne procesu, których nie mają pozostałe klasy, a JECFA ocenia wszystkie cztery klasy oddzielnie, stosując różne dopuszczalne limity spożycia. Etykiety często nie podają, której klasy użyto, dlatego samo słowo \"karmel\" nie mówi dokładnie, co spożywasz.",
+  "why_botia": "Słowo „karmel” na etykiecie może oznaczać jedną z czterech różnych substancji wytwarzanych w różny sposób. JECFA ocenił cztery klasy oddzielnie i ustalił dla nich różne limity spożycia, dlatego nie są one zamienne. Etykieta rzadko podaje, której klasy użyto, więc nie można dokładnie wiedzieć, którą się spożywa.",
   "can_1": "Zidentyfikuj E150a, E150b, E150c lub E150d, gdy klasa jest zadeklarowana, i rozpoznaj ogólne sformułowanie dotyczące karmelu.",
-  "can_2": "Wywołaj warstwy E-number i Woman, zachowując jednoznaczne rozróżnienie klasowe i unikając wniosku specyficznego dla płci wyłącznie na podstawie etykiety.",
+  "can_2": "Uruchomić warstwę numerów E, zachowując wyraźne rozróżnienie czterech klas karmelu.",
   "cannot_1": "Wywnioskuj dokładną klasę karmelu, gdy etykieta podaje tylko karmel lub barwnik karmelowy.",
   "cannot_2": "Mierzyć produkty uboczne procesu, takie jak 4-metyloimidazol, lub określać ich stężenie na podstawie tekstu na etykiecie.",
   "sources": [
     {
-      "label": "EFSA — Przegląd Karmelu",
-      "url": "https://www.efsa.europa.eu/en/press/news/ans110308"
-    },
-    {
-      "label": "FDA — Status regulacyjny Karmelu",
-      "url": "https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=Caramel&set=ColorAdditives"
-    },
-    {
-      "label": "FDA — Pytania i odpowiedzi dotyczące 4-MEI",
-      "url": "https://www.fda.gov/food/food-additives-petitions/questions-answers-caramel-coloring-and-4-mei"
-    },
-    {
-      "label": "Rozporządzenie (EC) nr 1333/2008 w sprawie dodatków do żywności",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "JECFA — Caramel colour Class I (E150a) — Chemical/423",
+      "label": "JECFA — Barwnik karmelowy Klasa I (E150a) — Chemical/423",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/423"
     },
     {
-      "label": "JECFA — Caramel colour Class II (E150b) — Chemical/424",
+      "label": "JECFA — Barwnik karmelowy Klasa II (E150b) — Chemical/424",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/424"
     },
     {
-      "label": "JECFA — Caramel colour Class III (E150c) — Chemical/498",
+      "label": "JECFA — Barwnik karmelowy Klasa III (E150c) — Chemical/498",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/498"
     },
     {
-      "label": "JECFA — Caramel colour Class IV (E150d) — Chemical/1668",
+      "label": "JECFA — Barwnik karmelowy Klasa IV (E150d) — Chemical/1668",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1668"
+    },
+    {
+      "label": "Rozporządzenie (WE) nr 1333/2008 w sprawie dodatków do żywności — tekst skonsolidowany 18 sierpnia 2026",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "Karmel",

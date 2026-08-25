@@ -4,47 +4,34 @@
   "aliases": "E150a, E150b, E150c, E150d, caramel colours, caramel colors, caramel colour, caramel color, Class I caramel, Class II caramel, Class III caramel, Class IV caramel, burnt sugar colour",
   "module_icon": "enumbers.png",
   "layers": [
-    "enumbers",
-    "woman"
+    "enumbers"
   ],
   "what_is": "由碳水化合物受控加热制得的四种棕色食用色素家族，其类别根据生产过程中允许使用的试剂加以区分。",
-  "why_botia": "BOTIA 标记焦糖色，因为标签上的“焦糖”可能指四种采用不同工艺制造的类别。使用氨生产的类别可能含有其他类别没有的加工副产物，而 JECFA 会分别评估这四类，并为其设定不同的可接受摄入限量。标签通常不会说明使用了哪一类，因此仅凭“焦糖”这个词并不能准确告诉你所摄入的到底是什么。",
+  "why_botia": "配料表中的“焦糖色”可能指四种不同、生产方式也不同的物质。JECFA 对四类焦糖色分别进行了评估，并为它们设定了不同的摄入限值，因此它们并不能相互等同。配料表很少说明具体使用了哪一类，所以你无法知道自己吃的是哪一种。",
   "can_1": "识别E150a、E150b、E150c或E150d，当类别已声明时，并识别通用的焦糖色表述。",
-  "can_2": "触发E编号和女性层，同时保持阶级区分的明确性，并避免仅凭标签得出性别特定结论。",
+  "can_2": "触发 E 编号信息层，同时明确区分四类焦糖色。",
   "cannot_1": "当标签仅写明焦糖色时，推断其确切的焦糖类别。",
   "cannot_2": "测量过程中的副产物，如4-甲基咪唑，或根据标签文本确定其浓度。",
   "sources": [
     {
-      "label": "EFSA — 焦糖色评估",
-      "url": "https://www.efsa.europa.eu/en/press/news/ans110308"
-    },
-    {
-      "label": "FDA — 焦糖色监管状态",
-      "url": "https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=Caramel&set=ColorAdditives"
-    },
-    {
-      "label": "FDA — 关于4-MEI的问答",
-      "url": "https://www.fda.gov/food/food-additives-petitions/questions-answers-caramel-coloring-and-4-mei"
-    },
-    {
-      "label": "（EC）第1333/2008号食品添加剂法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "JECFA — Caramel colour Class I (E150a) — Chemical/423",
+      "label": "JECFA — I 类焦糖色 (E150a) — Chemical/423",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/423"
     },
     {
-      "label": "JECFA — Caramel colour Class II (E150b) — Chemical/424",
+      "label": "JECFA — II 类焦糖色 (E150b) — Chemical/424",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/424"
     },
     {
-      "label": "JECFA — Caramel colour Class III (E150c) — Chemical/498",
+      "label": "JECFA — III 类焦糖色 (E150c) — Chemical/498",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/498"
     },
     {
-      "label": "JECFA — Caramel colour Class IV (E150d) — Chemical/1668",
+      "label": "JECFA — IV 类焦糖色 (E150d) — Chemical/1668",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1668"
+    },
+    {
+      "label": "欧盟食品添加剂法规 (EC) No 1333/2008 — 2026年8月18日合并文本",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
     }
   ],
   "title": "焦糖色",
