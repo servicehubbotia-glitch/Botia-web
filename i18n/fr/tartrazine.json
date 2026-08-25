@@ -4,31 +4,30 @@
   "aliases": "E102, tartrazine, FD&C Yellow No. 5, Yellow 5, CI 19140, CI Food Yellow 4, Acid Yellow 23, Food Yellow 4",
   "module_icon": "enumbers.png",
   "layers": [
-    "enumbers",
-    "woman"
+    "enumbers"
   ],
   "what_is": "Un colorant azoïque jaune de synthèse utilisé pour ajouter ou restaurer la couleur dans les aliments, connu aux États-Unis sous le nom de FD&C Yellow No. 5.",
-  "why_botia": "BOTIA signale la tartrazine car, chez un petit nombre de personnes sensibles, elle peut déclencher des réactions telles que de l’urticaire ou de l’asthme, en particulier chez les personnes également sensibles à l’aspirine. Les réactions de sensibilité aux additifs alimentaires tels que les colorants et les conservateurs sont signalées plus fréquemment chez les femmes adultes, c’est pourquoi la tartrazine active également la couche Woman. Dans l’UE, les aliments contenant de la tartrazine doivent également porter un avertissement indiquant qu’elle peut avoir des effets négatifs sur l’activité et l’attention des enfants.",
+  "why_botia": "La tartrazine est un colorant jaune que l’intestin décompose en d’autres substances. Chez un petit groupe de personnes, elle peut provoquer des réactions d’intolérance — c’est pourquoi, aux États-Unis, elle doit toujours être déclarée par son nom et non simplement comme « colorant ». Dans l’UE, les aliments qui en contiennent doivent également avertir qu’elle peut avoir des effets indésirables sur l’activité et l’attention chez les enfants. L’étiquette n’indique pas la quantité.",
   "can_1": "Identifiez l'E102, la tartrazine, FD&C Jaune n°5 ou les synonymes courants sur l'étiquette.",
-  "can_2": "Déclenchez les couches d’informations E-number et Femme sans déduire un effet spécifique au sexe à partir du seul nom de l’ingrédient.",
+  "can_2": "Activer la couche d’information sur les numéros E lorsque la tartrazine est déclarée.",
   "cannot_1": "Déterminer la concentration utilisée, sauf si elle est déclarée ou fournie par le fabricant.",
   "cannot_2": "Prédire la sensibilité individuelle ou conclure que l'ingrédient provoque un effet sur la santé chez une personne spécifique.",
   "sources": [
     {
-      "label": "FDA — FD&C Jaune n° 5 / Tartrazine",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=FDCYELLOWNO5&set=FoodSubstances"
+      "label": "JECFA — Tartrazine — Chemical/3885",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3885"
     },
     {
-      "label": "Règlement (EC) n° 1333/2008 sur les additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "EFSA — Tartrazine (E102) — DOI 10.2903/j.efsa.2009.1331",
+      "label": "EFSA — Réévaluation de la tartrazine (E102), 2009 — DOI 10.2903/j.efsa.2009.1331",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1331"
     },
     {
-      "label": "JECFA — Tartrazine — Chemical/3885",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3885"
+      "label": "Règlement (CE) n° 1333/2008 sur les additifs alimentaires — consolidé au 18 août 2026",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "eCFR des États-Unis — 21 CFR § 74.705 — FD&C Yellow No. 5",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-74/subpart-A/section-74.705"
     }
   ],
   "title": "Tartrazine",

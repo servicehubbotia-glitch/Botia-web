@@ -4,31 +4,30 @@
   "aliases": "E102, tartrazine, FD&C Yellow No. 5, Yellow 5, CI 19140, CI Food Yellow 4, Acid Yellow 23, Food Yellow 4",
   "module_icon": "enumbers.png",
   "layers": [
-    "enumbers",
-    "woman"
+    "enumbers"
   ],
   "what_is": "一种合成黄色偶氮色素，用于在食品中增添或恢复颜色，在美国被称为FD&C黄色5号。",
-  "why_botia": "BOTIA 标记柠檬黄，是因为在少数敏感人群中，它可能引发荨麻疹或哮喘等反应，尤其是在同时对阿司匹林敏感的人群中。成人女性对食用色素和防腐剂等食品添加剂出现敏感反应的报告更为常见，因此柠檬黄也会触发 Woman 信息层。在欧盟，含有柠檬黄的食品还必须标注警示，说明其可能对儿童的活动和注意力产生不良影响。",
+  "why_botia": "柠檬黄是一种黄色着色剂，会在肠道中分解成其他物质。少数人可能会出现不耐受反应，因此在美国必须在配料表中明确标示其名称，而不能只写成“着色剂”。在欧盟，含有柠檬黄的食品还必须提示其可能对儿童的活动和注意力产生不良影响。配料表不会告诉你具体用了多少。",
   "can_1": "识别E102、柠檬黄、FD&C黄色5号或常见标签同义词。",
-  "can_2": "触发E编号和女性信息图层，不要仅根据成分名称推断性别特异性效应。",
+  "can_2": "在配料表标示柠檬黄时触发 E 编号信息层。",
   "cannot_1": "确定所用浓度，除非制造商已声明或提供。",
   "cannot_2": "预测个体敏感性或断定该成分对特定人群造成健康影响。",
   "sources": [
     {
-      "label": "FDA — FD&C 黄色5号 / 柠檬黄",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=FDCYELLOWNO5&set=FoodSubstances"
+      "label": "JECFA — 柠檬黄 — Chemical/3885",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3885"
     },
     {
-      "label": "（EC）第1333/2008号食品添加剂法规",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "EFSA — Tartrazine (E102) — DOI 10.2903/j.efsa.2009.1331",
+      "label": "EFSA — 柠檬黄（E102）重新评估，2009 — DOI 10.2903/j.efsa.2009.1331",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1331"
     },
     {
-      "label": "JECFA — Tartrazine — Chemical/3885",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3885"
+      "label": "欧盟食品添加剂法规 (EC) No 1333/2008 — 2026年8月18日合并文本",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "美国 eCFR — 21 CFR § 74.705 — FD&C Yellow No. 5",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-74/subpart-A/section-74.705"
     }
   ],
   "title": "柠檬黄",

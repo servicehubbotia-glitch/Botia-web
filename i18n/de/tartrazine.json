@@ -4,31 +4,30 @@
   "aliases": "E102, tartrazine, FD&C Yellow No. 5, Yellow 5, CI 19140, CI Food Yellow 4, Acid Yellow 23, Food Yellow 4",
   "module_icon": "enumbers.png",
   "layers": [
-    "enumbers",
-    "woman"
+    "enumbers"
   ],
   "what_is": "Ein synthetischer gelber Azofarbstoff, der verwendet wird, um Lebensmitteln Farbe zu verleihen oder wiederherzustellen und in den Vereinigten Staaten als FD&C Yellow No. 5 bekannt ist.",
-  "why_botia": "BOTIA kennzeichnet Tartrazin, weil es bei einer kleinen Zahl empfindlicher Personen Reaktionen wie Nesselsucht oder Asthmasymptome auslösen kann, insbesondere bei Personen, die auch empfindlich auf Aspirin reagieren. Empfindlichkeitsreaktionen auf Lebensmittelzusatzstoffe wie Farbstoffe und Konservierungsstoffe werden bei erwachsenen Frauen häufiger berichtet, weshalb Tartrazin auch die Woman-Ebene aktiviert. In der EU müssen Lebensmittel mit Tartrazin außerdem den Hinweis tragen, dass es sich nachteilig auf die Aktivität und Aufmerksamkeit von Kindern auswirken kann.",
+  "why_botia": "Tartrazin ist ein gelber Farbstoff, der im Darm in andere Stoffe abgebaut wird. Bei einer kleinen Gruppe von Menschen kann er Unverträglichkeitsreaktionen auslösen — deshalb muss er in den Vereinigten Staaten ausdrücklich namentlich und nicht nur als „Farbstoff“ angegeben werden. In der EU müssen Lebensmittel mit Tartrazin zusätzlich den Hinweis tragen, dass es Aktivität und Aufmerksamkeit bei Kindern beeinträchtigen kann. Das Etikett sagt nicht, wie viel enthalten ist.",
   "can_1": "Identifizieren Sie E102, Tartrazin, FD&C Gelb Nr. 5 oder gebräuchliche Synonyme auf dem Etikett.",
-  "can_2": "Aktiviere die E-Nummer- und Frauen-Informationslayer, ohne aus dem Zutatenamen allein einen geschlechtsspezifischen Effekt abzuleiten.",
+  "can_2": "Die E-Nummern-Informationsschicht auslösen, wenn Tartrazin deklariert ist.",
   "cannot_1": "Bestimmen Sie die verwendete Konzentration, sofern sie nicht vom Hersteller angegeben oder mitgeliefert wird.",
   "cannot_2": "Individuelle Empfindlichkeit vorhersagen oder den Schluss ziehen, dass der Inhaltsstoff bei einer bestimmten Person eine gesundheitliche Wirkung verursacht.",
   "sources": [
     {
-      "label": "FDA — FD&C Gelb Nr. 5 / Tartrazin",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=FDCYELLOWNO5&set=FoodSubstances"
+      "label": "JECFA — Tartrazin — Chemical/3885",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3885"
     },
     {
-      "label": "Verordnung (EC) Nr. 1333/2008 über Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "EFSA — Tartrazine (E102) — DOI 10.2903/j.efsa.2009.1331",
+      "label": "EFSA — Neubewertung von Tartrazin (E102), 2009 — DOI 10.2903/j.efsa.2009.1331",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1331"
     },
     {
-      "label": "JECFA — Tartrazine — Chemical/3885",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3885"
+      "label": "Verordnung (EG) Nr. 1333/2008 über Lebensmittelzusatzstoffe — konsolidiert 18. August 2026",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "US-eCFR — 21 CFR § 74.705 — FD&C Yellow No. 5",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-74/subpart-A/section-74.705"
     }
   ],
   "title": "Tartrazin",

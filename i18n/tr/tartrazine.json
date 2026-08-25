@@ -4,31 +4,30 @@
   "aliases": "E102, tartrazine, FD&C Yellow No. 5, Yellow 5, CI 19140, CI Food Yellow 4, Acid Yellow 23, Food Yellow 4",
   "module_icon": "enumbers.png",
   "layers": [
-    "enumbers",
-    "woman"
+    "enumbers"
   ],
   "what_is": "Sentetik sarı azo rengi; gıdalarda renk katmak veya rengi geri kazandırmak için kullanılır ve Amerika Birleşik Devletleri'nde FD&C Yellow No. 5 olarak bilinir.",
-  "why_botia": "BOTIA tartrazini işaretler çünkü az sayıda hassas kişide kurdeşen veya astım gibi reaksiyonları tetikleyebilir; bu durum özellikle aspirine de duyarlı kişilerde görülür. Renklendiriciler ve koruyucular gibi gıda katkı maddelerine karşı hassasiyet reaksiyonları yetişkin kadınlarda daha sık bildirilmektedir. Bu nedenle tartrazin Woman katmanını da etkinleştirir. AB’de tartrazin içeren gıdaların ayrıca çocukların aktivitesi ve dikkati üzerinde olumsuz etkisi olabileceğine dair bir uyarı taşıması gerekir.",
+  "why_botia": "Tartrazin, bağırsakta başka maddelere parçalanan sarı bir renklendiricidir. Küçük bir grup insanda intolerans reaksiyonlarına yol açabilir — bu nedenle Amerika Birleşik Devletleri'nde yalnızca 'renklendirici' olarak değil, adıyla özellikle belirtilmesi gerekir. AB'de ise tartrazin içeren gıdalar ayrıca çocuklarda aktivite ve dikkat üzerinde olumsuz etkiye sahip olabileceğine dair uyarı taşır. Etiket ne kadar bulunduğunu söylemez.",
   "can_1": "E102, tartrazin, FD&C Sarı No. 5 veya yaygın etiket eşanlamlılarını tanımlayın.",
-  "can_2": "E-numarası ve Kadın bilgi katmanlarını tetikleyin, ancak yalnızca içerik adından cinsiyete özgü bir etki çıkarımı yapmayın.",
+  "can_2": "Tartrazin beyan edildiğinde E-numarası bilgi katmanını etkinleştirmek.",
   "cannot_1": "Belirtilmediği veya üretici tarafından sağlanmadığı sürece kullanılan konsantrasyonu belirleyin.",
   "cannot_2": "Bireysel duyarlılığı tahmin edin veya bileşenin belirli bir kişide sağlık etkisine neden olduğu sonucuna varın.",
   "sources": [
     {
-      "label": "FDA — FD&C Sarı No. 5 / Tartrazin",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=FDCYELLOWNO5&set=FoodSubstances"
+      "label": "JECFA — Tartrazin — Chemical/3885",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3885"
     },
     {
-      "label": "Gıda katkı maddelerine ilişkin (EC) 1333/2008 sayılı Tüzük",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "EFSA — Tartrazine (E102) — DOI 10.2903/j.efsa.2009.1331",
+      "label": "EFSA — Tartrazin (E102) yeniden değerlendirmesi, 2009 — DOI 10.2903/j.efsa.2009.1331",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1331"
     },
     {
-      "label": "JECFA — Tartrazine — Chemical/3885",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3885"
+      "label": "Gıda katkı maddelerine ilişkin (EC) No 1333/2008 Tüzüğü — 18 Ağustos 2026 konsolide metin",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "ABD eCFR — 21 CFR § 74.705 — FD&C Yellow No. 5",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-74/subpart-A/section-74.705"
     }
   ],
   "title": "Tartrazin",

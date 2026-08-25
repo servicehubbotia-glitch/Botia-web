@@ -4,31 +4,30 @@
   "aliases": "E102, tartrazina, FD&C Giallo n. 5, Giallo 5, CI 19140, CI Giallo Alimentare 4, Giallo Acido 23, Giallo Alimentare 4",
   "module_icon": "enumbers.png",
   "layers": [
-    "enumbers",
-    "woman"
+    "enumbers"
   ],
   "what_is": "Un colorante azoico giallo sintetico utilizzato per aggiungere o ripristinare il colore negli alimenti e noto negli Stati Uniti come FD&C Yellow No. 5.",
-  "why_botia": "BOTIA segnala la tartrazina perché, in un piccolo numero di persone sensibili, può provocare reazioni come orticaria o asma, in particolare nelle persone che sono sensibili anche all’aspirina. Le reazioni di sensibilità agli additivi alimentari come coloranti e conservanti sono segnalate più frequentemente nelle donne adulte, motivo per cui la tartrazina attiva anche il livello Woman. Nell’UE, gli alimenti contenenti tartrazina devono inoltre riportare un’avvertenza secondo cui può influire negativamente sull’attività e sull’attenzione dei bambini.",
+  "why_botia": "La tartrazina è un colorante giallo che l’intestino scompone in altre sostanze. In un piccolo gruppo di persone può provocare reazioni di intolleranza — per questo negli Stati Uniti deve essere sempre dichiarata con il suo nome e non semplicemente come «colorante». Nell’UE, inoltre, gli alimenti che la contengono devono riportare l’avvertenza che può influire negativamente sull’attività e l’attenzione dei bambini. L’etichetta non indica quanta ne contiene.",
   "can_1": "Identificare E102, tartrazina, FD&C Giallo n. 5 o sinonimi comuni in etichetta.",
-  "can_2": "Attiva i layer informativi E-number e Donna senza dedurre un effetto specifico del sesso dal solo nome dell'ingrediente.",
+  "can_2": "Attivare il livello informativo sui numeri E quando viene dichiarata la tartrazina.",
   "cannot_1": "Determinare la concentrazione utilizzata, salvo che sia dichiarata o fornita dal produttore.",
   "cannot_2": "Prevedere la sensibilità individuale o concludere che l'ingrediente provochi un effetto sulla salute in una persona specifica.",
   "sources": [
     {
-      "label": "FDA — Giallo FD&C n. 5 / Tartrazina",
-      "url": "https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=FDCYELLOWNO5&set=FoodSubstances"
+      "label": "JECFA — Tartrazina — Chemical/3885",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3885"
     },
     {
-      "label": "Regolamento (CE) n. 1333/2008 sugli additivi alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "EFSA — Tartrazine (E102) — DOI 10.2903/j.efsa.2009.1331",
+      "label": "EFSA — Rivalutazione della tartrazina (E102), 2009 — DOI 10.2903/j.efsa.2009.1331",
       "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.1331"
     },
     {
-      "label": "JECFA — Tartrazine — Chemical/3885",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3885"
+      "label": "Regolamento (CE) n. 1333/2008 sugli additivi alimentari — consolidato 18 agosto 2026",
+      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "eCFR USA — 21 CFR § 74.705 — FD&C Yellow No. 5",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-74/subpart-A/section-74.705"
     }
   ],
   "title": "Tartrazina",
