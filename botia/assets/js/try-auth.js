@@ -5,7 +5,7 @@
     "888782651551-oqrtul7q13m1jt5rpma5q7s6d14v5623.apps.googleusercontent.com";
 
   const ACCESS_ENDPOINT =
-    "https://test14---check-user-access-halal-4c77i2y4pq-ew.a.run.app";
+  "https://check-user-access-halal-4c77i2y4pq-ew.a.run.app";
 
   const TOKEN_KEY = "botia_web_google_token";
   const UID_KEY = "botia_web_uid";
