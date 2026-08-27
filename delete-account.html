@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>BOTIA — Delete your account and data</title>
-<meta content="How to request deletion of your BOTIA account and associated data." name="description"/>
+<title id="meta_title">BOTIA — Delete your account and data</title>
+<meta id="meta_description" content="How to request deletion of your BOTIA account and associated data." name="description"/>
 <link href="https://www.botia-safefood.com/delete-account.html" rel="canonical"/>
 <link href="/botia_jar_512.png" rel="icon" type="image/png"/>
 <link as="style" href="/botia-landing.css" rel="preload"/>
@@ -50,7 +50,7 @@
 <script src="/botia/assets/js/menu.js"></script>
 <link href="/botia/assets/footer.css" rel="stylesheet"/>
 </head>
-<body class="has-botia-header">
+<body class="has-botia-header" data-botia-module="delete-account">
 
 <button aria-label="Menu" id="menuBtn">&#9776;</button>
 <div class="botia-header-bar">
@@ -63,135 +63,135 @@
 
   <section class="hero">
     <img alt="BOTIA" src="/botia_jar_512.png"/>
-    <h1>Delete your BOTIA account and data</h1>
-    <p class="subtitle">
+    <h1 id="h1">Delete your BOTIA account and data</h1>
+    <p class="subtitle" id="subtitle">
       BOTIA is developed by ServiceHub, Tilburg, the Netherlands.
     </p>
   </section>
 
-  <p>
+  <p id="intro">
     This page explains how to request the deletion of your BOTIA account and
     the data associated with it, what is deleted, and what is kept.
   </p>
 
-  <h2>How to request deletion</h2>
+  <h2 id="how_title">How to request deletion</h2>
 
   <div class="box">
     <p style="margin-bottom:12px;">
-      <strong>1.</strong> Send an email to
-      <a href="mailto:soporte@botia-safefood.com">soporte@botia-safefood.com</a>
+      <strong id="step1_label">1.</strong> Send an email to <a href="mailto:soporte@botia-safefood.com">soporte@botia-safefood.com</a>
     </p>
     <p style="margin-bottom:12px;">
-      <strong>2.</strong> Use <strong>Delete my BOTIA account</strong> as the subject line.
+      <strong id="step2_label">2.</strong> <span id="step2">Use <strong>Delete my BOTIA account</strong> as the subject line.</span>
     </p>
     <p style="margin-bottom:12px;">
-      <strong>3.</strong> Send it from the same Google account you use to sign in
-      to BOTIA. This is how we identify your record.
+      <strong id="step3_label">3.</strong> <span id="step3">Send it from the same Google account you use to sign in to BOTIA. This is how we identify your record.</span>
     </p>
     <p style="margin-bottom:0;">
-      <strong>4.</strong> We confirm the request by email and complete the
-      deletion within <strong>30 days</strong>.
+      <strong id="step4_label">4.</strong> <span id="step4">We confirm the request by email and complete the deletion within <strong>30 days</strong>.</span>
     </p>
   </div>
 
-  <p>
+  <p id="cancellation_note">
     You do not need to give a reason. You can also request deletion at any time
     without cancelling a subscription first, although cancelling the
     subscription is managed separately through Google Play.
   </p>
 
-  <h2>What BOTIA stores</h2>
+  <h2 id="stores_title">What BOTIA stores</h2>
 
-  <p>
+  <p id="stores_intro">
     BOTIA is designed to hold as little as possible. It does not store your
     name, your email address, your photos or your scan history.
   </p>
 
   <table>
     <tr>
-      <th>Data</th>
-      <th>Kept</th>
-      <th>On deletion</th>
+      <th id="th_data">Data</th>
+      <th id="th_kept">Kept</th>
+      <th id="th_on_deletion">On deletion</th>
     </tr>
     <tr>
-      <td>Anonymous user identifier</td>
-      <td>Yes</td>
-      <td>Deleted</td>
+      <td id="row_uid">Anonymous user identifier</td>
+      <td id="row_uid_kept">Yes</td>
+      <td id="row_uid_deletion">Deleted</td>
     </tr>
     <tr>
-      <td>Hashed Google identifier<br><span style="font-size:0.85rem;">(one-way, cannot be reversed to an email)</span></td>
-      <td>Yes</td>
-      <td>Deleted</td>
+      <td id="row_google_hash">Hashed Google identifier<br/><span style="font-size:0.85rem;">(one-way, cannot be reversed to an email)</span></td>
+      <td id="row_google_hash_kept">Yes</td>
+      <td id="row_google_hash_deletion">Deleted</td>
     </tr>
     <tr>
-      <td>Scan counters and last-use date</td>
-      <td>Yes</td>
-      <td>Deleted</td>
+      <td id="row_counters">Scan counters and last-use date</td>
+      <td id="row_counters_kept">Yes</td>
+      <td id="row_counters_deletion">Deleted</td>
     </tr>
     <tr>
-      <td>Interface language and country code</td>
-      <td>Yes</td>
-      <td>Deleted</td>
+      <td id="row_lang">Interface language and country code</td>
+      <td id="row_lang_kept">Yes</td>
+      <td id="row_lang_deletion">Deleted</td>
     </tr>
     <tr>
-      <td>Subscription status and purchase token</td>
-      <td>Yes</td>
-      <td>Deleted</td>
+      <td id="row_subscription">Subscription status and purchase token</td>
+      <td id="row_subscription_kept">Yes</td>
+      <td id="row_subscription_deletion">Deleted</td>
     </tr>
     <tr>
-      <td>Label photographs</td>
-      <td>No</td>
-      <td>Never stored</td>
+      <td id="row_photos">Label photographs</td>
+      <td id="row_photos_kept">No</td>
+      <td id="row_photos_deletion">Never stored</td>
     </tr>
     <tr>
-      <td>Name, email address, profile picture</td>
-      <td>No</td>
-      <td>Never stored</td>
+      <td id="row_profile">Name, email address, profile picture</td>
+      <td id="row_profile_kept">No</td>
+      <td id="row_profile_deletion">Never stored</td>
     </tr>
   </table>
 
-  <h2>What is kept after deletion</h2>
+  <h2 id="kept_title">What is kept after deletion</h2>
 
-  <p>
+  <p id="kept_intro">
     Once your account is deleted, the record described above is removed and
     cannot be recovered.
   </p>
 
-  <p>
+  <p id="kept_paragraph">
     Two things are not deleted, and neither identifies you:
   </p>
 
   <ul>
-    <li>
+    <li id="kept_item1">
       <strong>Anonymous scan records.</strong> BOTIA keeps the ingredient text
       read from labels, without any user identifier attached, to improve
       detection accuracy. These records cannot be linked back to you.
     </li>
-    <li>
+    <li id="kept_item2">
       <strong>Payment records held by Google.</strong> Purchases are processed
       by Google Play, not by BOTIA. Google keeps its own transaction records
       under its own retention rules. BOTIA cannot delete them.
     </li>
   </ul>
 
-  <h2>Contact</h2>
+  <h2 id="contact_title">Contact</h2>
 
   <div class="box">
-    <p style="margin-bottom:6px;"><strong>ServiceHub</strong></p>
-    <p style="margin-bottom:6px;">Kolvelseweg 165, 5025 JD Tilburg, the Netherlands</p>
-    <p style="margin-bottom:6px;">KvK 42023784 &middot; VAT NL005436838B84</p>
+    <p style="margin-bottom:6px;" id="contact_name"><strong>ServiceHub</strong></p>
+    <p style="margin-bottom:6px;" id="contact_address">Kolvelseweg 165, 5025 JD Tilburg, the Netherlands</p>
+    <p style="margin-bottom:6px;" id="contact_kvk">KvK 42023784 &middot; VAT NL005436838B84</p>
     <p style="margin-bottom:0;">
       <a href="mailto:soporte@botia-safefood.com">soporte@botia-safefood.com</a>
     </p>
   </div>
 
   <p class="footer-note">
-    See also our <a href="/privacy.html">privacy policy</a> and
-    <a href="/legal.html">legal notice</a>.
+    <span id="footer_text_before">See also our</span>
+    <a href="/privacy.html" id="footer_privacy">privacy policy</a>
+    <span id="footer_text_and">and</span>
+    <a href="/legal.html" id="footer_legal">legal notice</a>.
   </p>
 
 </main>
 
+<script defer src="/botia/assets/js/i18n-loader.js"></script>
 <script src="/botia/assets/js/footer.js"></script>
 </body>
 </html>
