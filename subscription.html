@@ -241,13 +241,15 @@
     </section>
 
     <section class="subscription-card" aria-labelledby="plan_name">
-      <div class="plan-name" id="plan_name">BOTIA Premium</div>
+      <div class="plan-name" id="plan_name">BOTIA Annual</div>
 
-      <div class="price" id="price">€12</div>
-      <div class="price-period" id="price_period">per year</div>
+      <!-- Price must be injected by the billing/payment integration.
+           Do not hardcode a price here: the amount and currency may vary by country. -->
+      <div class="price" id="price"></div>
+      <div class="price-period" id="price_period"></div>
 
       <p class="plan-intro" id="plan_intro">
-        Keep the full BOTIA label scanner available throughout the year.
+        Continue using the full BOTIA label scanner after your free scans.
       </p>
 
       <ul class="features">
@@ -257,7 +259,7 @@
         <li id="feature_access">Use the same BOTIA account to continue scanning</li>
       </ul>
 
-      <!-- Payment integration binds to this stable id later. -->
+      <!-- Stripe Checkout: test Payment Link. The BOTIA uid is passed as client_reference_id. -->
       <button
         type="button"
         class="subscribe-button"
@@ -286,6 +288,37 @@
       <a href="/legal.html" id="legal_link">Legal Notice</a>
     </div>
   </main>
+
+  <script>
+  (() => {
+    "use strict";
+
+    const STRIPE_PAYMENT_LINK =
+      "https://buy.stripe.com/test_8x27sL0tS0Hmg0UdQRaEE00";
+
+    const subscribeButton = document.getElementById("subscribe_button");
+
+    if (subscribeButton) {
+      subscribeButton.addEventListener("click", () => {
+        let uid = "";
+
+        try {
+          uid = sessionStorage.getItem("botia_web_uid") || "";
+        } catch (_) {}
+
+        if (!uid) {
+          window.location.href = "/try.html";
+          return;
+        }
+
+        const checkoutUrl = new URL(STRIPE_PAYMENT_LINK);
+        checkoutUrl.searchParams.set("client_reference_id", uid);
+
+        window.location.href = checkoutUrl.toString();
+      });
+    }
+  })();
+  </script>
 
   <script defer src="/botia/assets/js/i18n-loader.js"></script>
   <script src="/botia/assets/js/footer.js"></script>
