@@ -169,7 +169,7 @@
 
       if (data.allowed !== true) {
         // If the user has reached the free limit, redirect to subscription page
-        if (data.reason === "free_limit_reached") {
+        if (data.reason === "free_limit_reached" || (data.es_premium === false && Number(data.contador_fotos || 0) >= 5)) {
           window.location.href =
             `/subscription.html?lang=${encodeURIComponent(lang())}`;
           return {
