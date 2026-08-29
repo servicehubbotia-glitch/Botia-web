@@ -1,4 +1,4 @@
-﻿(() => {
+(() => {
   "use strict";
 
   const GOOGLE_CLIENT_ID =
@@ -57,7 +57,42 @@
     const panel = document.getElementById("botia-auth-panel");
     const box = document.querySelector(".try-box");
 
-    if (panel) panel.hidden = false;
+    if (panel) {
+      panel.hidden = false;
+      // Restore the login content if it was replaced
+      const copy = text();
+      panel.innerHTML = `
+        <div style="color:#ffd8bd;font-size:1.05rem;font-weight:700;margin-bottom:8px">
+          ${copy.title}
+        </div>
+        <div style="color:#9c8578;font-size:.88rem;margin-bottom:16px">
+          ${copy.intro}
+        </div>
+        <div id="botia-google-button" style="display:flex;justify-content:center"></div>
+        <div id="botia-auth-status"
+             style="font-size:.86rem;margin-top:12px;min-height:1.3em"></div>
+      `;
+      // Re-render Google button
+      renderGoogleButton();
+    }
+    if (box) box.hidden = true;
+  }
+
+  function showLimitReached() {
+    const panel = document.getElementById("botia-auth-panel");
+    const box = document.querySelector(".try-box");
+
+    if (panel) {
+      panel.hidden = false;
+      const copy = text();
+      panel.innerHTML = `
+        <div style="color:#ffd8bd;font-size:1.05rem;font-weight:700;margin-bottom:8px">
+          ${copy.denied}
+        </div>
+        <div id="botia-auth-status"
+             style="font-size:.86rem;margin-top:12px;min-height:1.3em;color:#d97070"></div>
+      `;
+    }
     if (box) box.hidden = true;
   }
 
@@ -133,7 +168,8 @@
       } catch (_) {}
 
       if (data.allowed !== true) {
-        showLogin();
+        // Do NOT show the Google login again. Show limit reached message.
+        showLimitReached();
         setStatus(text().denied, true);
         return {
           allowed: false,
@@ -266,5 +302,3 @@
     init();
   }
 })();
-
-
