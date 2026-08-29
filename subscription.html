@@ -52,16 +52,6 @@
       margin-bottom: 10px;
     }
 
-    .price {
-      color: #ffd8bd;
-      font-size: 2.35rem;
-      line-height: 1;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-
-    .price-period { color: #8a8a8a; font-size: 0.86rem; margin-bottom: 22px; }
-
     .plan-intro {
       color: #c0a08c;
       font-size: 0.95rem;
@@ -109,6 +99,8 @@
       font-family: inherit;
       font-size: 1rem;
       font-weight: 800;
+      text-decoration: none;
+      text-align: center;
       cursor: pointer;
     }
 
@@ -243,13 +235,9 @@
     <section class="subscription-card" aria-labelledby="plan_name">
       <div class="plan-name" id="plan_name">BOTIA Annual</div>
 
-      <!-- Price must be injected by the billing/payment integration.
-           Do not hardcode a price here: the amount and currency may vary by country. -->
-      <div class="price" id="price"></div>
-      <div class="price-period" id="price_period"></div>
-
       <p class="plan-intro" id="plan_intro">
         Continue using the full BOTIA label scanner after your free scans.
+        The price is shown in your local currency on Google Play.
       </p>
 
       <ul class="features">
@@ -259,18 +247,18 @@
         <li id="feature_access">Use the same BOTIA account to continue scanning</li>
       </ul>
 
-      <!-- Stripe Checkout: test Payment Link. The BOTIA uid is passed as client_reference_id. -->
-      <button
-        type="button"
+      <a
         class="subscribe-button"
         id="subscribe_button"
-        data-botia-action="subscribe"
+        href="https://play.google.com/store/apps/details?id=com.botia.safefood"
+        target="_blank"
+        rel="noopener"
       >
-        Subscribe
-      </button>
+        Get BOTIA on Google Play
+      </a>
 
       <p class="purchase-note" id="purchase_note">
-        Your subscription gives you continued access to BOTIA's label-scanning service.
+        The subscription is purchased and managed through Google Play.
       </p>
     </section>
 
@@ -288,37 +276,6 @@
       <a href="/legal.html" id="legal_link">Legal Notice</a>
     </div>
   </main>
-
-  <script>
-  (() => {
-    "use strict";
-
-    const STRIPE_PAYMENT_LINK =
-      "https://buy.stripe.com/test_8x27sL0tS0Hmg0UdQRaEE00";
-
-    const subscribeButton = document.getElementById("subscribe_button");
-
-    if (subscribeButton) {
-      subscribeButton.addEventListener("click", () => {
-        let uid = "";
-
-        try {
-          uid = sessionStorage.getItem("botia_web_uid") || "";
-        } catch (_) {}
-
-        if (!uid) {
-          window.location.href = "/try.html";
-          return;
-        }
-
-        const checkoutUrl = new URL(STRIPE_PAYMENT_LINK);
-        checkoutUrl.searchParams.set("client_reference_id", uid);
-
-        window.location.href = checkoutUrl.toString();
-      });
-    }
-  })();
-  </script>
 
   <script defer src="/botia/assets/js/i18n-loader.js"></script>
   <script src="/botia/assets/js/footer.js"></script>
