@@ -168,7 +168,18 @@
       } catch (_) {}
 
       if (data.allowed !== true) {
-        // Do NOT show the Google login again. Show limit reached message.
+        // If the user has reached the free limit, redirect to subscription page
+        if (data.reason === "free_limit_reached") {
+          window.location.href =
+            `/subscription.html?lang=${encodeURIComponent(lang())}`;
+          return {
+            allowed: false,
+            uid: uid,
+            reason: data.reason
+          };
+        }
+
+        // For other denial reasons (e.g., monthly limit for premium users)
         showLimitReached();
         return {
           allowed: false,
