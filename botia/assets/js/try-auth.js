@@ -170,7 +170,6 @@
       if (data.allowed !== true) {
         // Do NOT show the Google login again. Show limit reached message.
         showLimitReached();
-        setStatus(text().denied, true);
         return {
           allowed: false,
           uid: uid,
