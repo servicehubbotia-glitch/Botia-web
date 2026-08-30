@@ -9,10 +9,10 @@
     "texture",
     "enumbers"
   ],
-  "what_is": "A widely used emulsifier made from glycerol and fatty acids. It helps fat and water stay mixed and is found in products such as sliced bread, margarine, ice cream and baked goods.",
-  "why_botia": "Mono- and diglycerides are among the most common emulsifiers in supermarket foods: they are found in sliced bread, margarine, ice cream and baked goods. The body digests them like other dietary fats. What BOTIA flags is not their safety — JECFA assigned no numerical intake limit — but their source: the fatty acids may come from plant or animal feedstocks, and the ingredient label normally does not establish which.",
+  "what_is": "A widely used emulsifier made from glycerol and fatty acids. It helps fat and water stay mixed and is found in products such as sliced bread, margarine, ice cream and baked goods. Its fatty acids may come from plants or from animals, and the label does not name the source.",
+  "why_botia": "If the source is animal, it may be pork, or an animal not slaughtered according to Islamic rules — the label cannot settle it, only a certificate or the manufacturer can. In the NutriNet-Santé cohort, which followed 92,000 adults for years, those with the highest E471 intake had more cancer diagnoses than those with the lowest: breast cancer in women, prostate cancer in men.",
   "can_1": "Detect E471 and its common mono- and diglyceride names on an ingredient list.",
-  "can_2": "Explain that the fatty-acid source may be plant or animal and activate the Animal, Muslim, Texture and E-number layers when source traceability matters.",
+  "can_2": "Explain that the fatty-acid source may be plant or animal.",
   "cannot_1": "Determine from the name E471 whether the fatty acids came from plant or animal material when the manufacturer does not disclose the source.",
   "cannot_2": "Determine the amount of E471 or the exact mono-/diglyceride composition from the ingredient list.",
   "sources": [
@@ -27,6 +27,10 @@
     {
       "label": "OIC/SMIIC 24:2020 — food additives and other added chemicals to halal food",
       "url": "https://smiic.org/en/project/60"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., food additive emulsifiers and cancer risk (NutriNet-Santé cohort)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Mono- and diglycerides of fatty acids",
