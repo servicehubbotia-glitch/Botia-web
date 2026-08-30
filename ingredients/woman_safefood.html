@@ -130,19 +130,15 @@
 
   <h1 id="title">Woman</h1>
 
-  <p class="lead" id="lead" style="display:none;">
+  <p class="lead" id="lead">
     This label declares an ingredient with documented evidence relevant to women. BOTIA shows you what it is.
   </p>
 
-  <div id="found_block" style="display:none;">
+  <div id="found_block">
     <div class="found-label" id="found_label">Found in this label</div>
     <div id="ingredient_link_container"></div>
     <p class="tap-hint" id="tap_hint">Tap an ingredient to see what it is</p>
   </div>
-
-  <p class="lead" id="lead_context" style="display:none;">
-    No ingredient on this label triggered a Woman finding. But not every relevant exposure appears in the ingredient list.
-  </p>
 
   <div class="more-links">
     <a class="more" href="/pages/woman.html" id="more_text">More about Woman Safe Food</a>
@@ -154,26 +150,6 @@
 <p class="disclaimer" id="disclaimer">
   BOTIA reads what the label declares. Always check important information yourself.
 </p>
-
-<script>
-  // Una sola pagina, dos casos: con ingrediente detectado o sin el.
-  document.addEventListener('DOMContentLoaded', function () {
-    var trigger = (new URLSearchParams(window.location.search).get('trigger') || '').trim();
-    var lead = document.getElementById('lead');
-    var leadContext = document.getElementById('lead_context');
-    var found = document.getElementById('found_block');
-
-    if (trigger) {
-      if (lead) lead.style.display = '';
-      if (found) found.style.display = '';
-      if (leadContext) leadContext.style.display = 'none';
-    } else {
-      if (lead) lead.style.display = 'none';
-      if (found) found.style.display = 'none';
-      if (leadContext) leadContext.style.display = '';
-    }
-  });
-</script>
 
 <script defer src="/botia/assets/js/i18n-loader.js"></script>
 
