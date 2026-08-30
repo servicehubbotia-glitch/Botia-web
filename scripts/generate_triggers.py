@@ -2,9 +2,10 @@
 """
 Script para generar triggers-master.json desde i18n/en/*.json.
 Ejecutar en Google Colab.
+
+ADVERTENCIA: el archivo que genera este script NO debe editarse a mano.
+Cualquier correccion se hace aqui, en el generador, y luego se regenera.
 """
-# ADVERTENCIA: el archivo que genera este script NO debe editarse a mano.
-# Cualquier correccion se hace aqui, en el generador, y luego se regenera.
 
 import os
 import json
@@ -12,20 +13,15 @@ import subprocess
 import sys
 from pathlib import Path
 import re
+from getpass import getpass
 
 # ============================================================
 # CONFIGURACIÓN
 # ============================================================
-GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
-if not GITHUB_TOKEN:
-    print("❌ La variable de entorno GITHUB_TOKEN no está definida.")
-    sys.exit(1)
-
-REPO_URL = f"https://{GITHUB_TOKEN}@github.com/servicehubbotia-glitch/Botia-web.git"
-REPO_DIR = "/content/Botia-web"
-GIT_USER_EMAIL = "servicehub.botia@gmail.com"
-GIT_USER_NAME = "servicehubbotia-glitch"
-GIT_COMMIT_MSG = "Generar triggers-master.json desde fichas"
+REPO_URL_BASE = "https://github.com/servicehubbotia-glitch/Botia-web.git"
+REPO_DIR = Path("/content/Botia-web-upload")
+BRANCH = "main"
+COMMIT_MESSAGE = "Generar triggers-master.json desde fichas i18n/en/*.json"
 
 # Slugs a excluir (no se declaran nunca en lista de ingredientes)
 EXCLUDED_SLUGS = [
@@ -37,14 +33,16 @@ EXCLUDED_SLUGS = [
 # FUNCIONES AUXILIARES
 # ============================================================
 
-def run_git_cmd(cmd, cwd=None):
-    if cwd is None:
-        cwd = REPO_DIR
-    result = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, shell=True)
+def run_cmd(cmd, cwd=None, capture=True):
+    """Ejecuta un comando y devuelve la salida."""
+    result = subprocess.run(cmd, cwd=cwd, text=True, capture_output=capture, shell=True)
     if result.returncode != 0:
-        print(f"⚠️ Error ejecutando: {cmd}\n{result.stderr}")
+        if capture:
+            print(f"⚠️ Error ejecutando: {cmd}\n{result.stderr}")
+        else:
+            print(f"⚠️ Error ejecutando: {cmd}")
         sys.exit(1)
-    return result.stdout.strip()
+    return result.stdout.strip() if capture else result
 
 def read_json(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
@@ -78,26 +76,41 @@ def parse_aliases(aliases_str):
             seen.add(p)
             result.append(p)
     return result
+
 # ============================================================
 # FLUJO PRINCIPAL
 # ============================================================
 
 def main():
-    # 0. Limpiar y clonar
-    print("🧹 Eliminando directorio anterior (si existe)...")
-    subprocess.run(["rm", "-rf", REPO_DIR], check=False)
+    print("=" * 72)
+    print("BOTIA — GENERAR TRIGGERS-MASTER.JSON")
+    print("=" * 72)
+    print("Este script genera triggers-master.json desde i18n/en/*.json")
+    print("ADVERTENCIA: NO editar triggers-master.json a mano.")
+    print("=" * 72)
 
-    print(f"📦 Clonando repositorio desde {REPO_URL.replace(GITHUB_TOKEN, '***')} ...")
-    run_git_cmd(f"git clone {REPO_URL} {REPO_DIR}", cwd="/content")
+    # 1. Pedir token
+    github_token = getpass("GitHub token: ").strip()
+    if not github_token:
+        print("❌ No se introdujo token. Proceso cancelado.")
+        return
+
+    # 2. Clonar repositorio
+    if REPO_DIR.exists():
+        import shutil
+        shutil.rmtree(REPO_DIR)
+
+    repo_url = f"https://{github_token}@github.com/servicehubbotia-glitch/Botia-web.git"
+    run_cmd(f"git clone {repo_url} {REPO_DIR}", cwd="/content", capture=False)
 
     os.chdir(REPO_DIR)
-    run_git_cmd(f'git config user.email "{GIT_USER_EMAIL}"')
-    run_git_cmd(f'git config user.name "{GIT_USER_NAME}"')
+    run_cmd('git config user.email "servicehub.botia@gmail.com"', capture=False)
+    run_cmd('git config user.name "servicehubbotia-glitch"', capture=False)
 
     print("\n🔄 Generando triggers-master.json desde fichas...\n")
 
-    # 1. Leer índice de ingredientes
-    index_path = Path(REPO_DIR) / "i18n" / "en" / "ingredient_index.json"
+    # 3. Leer índice de ingredientes
+    index_path = REPO_DIR / "i18n" / "en" / "ingredient_index.json"
     if not index_path.exists():
         print("❌ No se encontró i18n/en/ingredient_index.json")
         return
@@ -115,7 +128,7 @@ def main():
         if slug in EXCLUDED_SLUGS:
             continue
 
-        json_path = Path(REPO_DIR) / "i18n" / "en" / f"{slug}.json"
+        json_path = REPO_DIR / "i18n" / "en" / f"{slug}.json"
         if not json_path.exists():
             slugs_sin_json.append(slug)
             continue
@@ -150,7 +163,7 @@ def main():
             "layers": layers
         }
 
-    # 2. Construir el JSON final
+    # 4. Construir el JSON final
     meta = {
         "file": "triggers-master.json",
         "version": "2.0",
@@ -164,12 +177,12 @@ def main():
         "triggers": triggers
     }
 
-    # 3. Escribir archivo
-    output_path = Path(REPO_DIR) / "triggers-master.json"
+    # 5. Escribir archivo
+    output_path = REPO_DIR / "triggers-master.json"
     write_json(output_path, output_data)
     print(f"\n✅ triggers-master.json generado con {len(triggers)} triggers.")
 
-    # 4. Informe
+    # 6. Informe
     print("\n📊 INFORME DE GENERACIÓN")
     print(f"Total de triggers: {len(triggers)}")
     if slugs_sin_json:
@@ -197,25 +210,35 @@ def main():
     for s in EXCLUDED_SLUGS:
         print(f"  - {s}")
 
-    # 5. Commit y push
+    # 7. Commit y push
     print("\n📦 Añadiendo triggers-master.json al índice...")
-    run_git_cmd("git add triggers-master.json")
+    run_cmd("git add triggers-master.json", capture=False)
 
-    status = run_git_cmd("git status --porcelain")
+    status = run_cmd("git status --porcelain")
     if not status:
         print("✅ No hay cambios en triggers-master.json. Nada que commitear.")
         return
 
     print("✏️ Creando commit...")
-    run_git_cmd(f'git commit -m "{GIT_COMMIT_MSG}"')
+    run_cmd(f'git commit -m "{COMMIT_MESSAGE}"', capture=False)
 
     print("\n⬇️ Haciendo git pull --rebase origin main...")
-    run_git_cmd("git pull --rebase origin main")
+    run_cmd("git pull --rebase origin main", capture=False)
 
     print("⬆️ Subiendo cambios a GitHub...")
-    run_git_cmd("git push origin main")
+    run_cmd("git push origin main", capture=False)
 
-    print("\n✅ ¡Proceso completado! triggers-master.json generado y subido.")
+    commit_sha = run_cmd("git rev-parse HEAD")
+    print("\n" + "=" * 72)
+    print("✅ ¡Proceso completado!")
+    print(f"Commit: {commit_sha}")
+    print(f"Archivo generado: triggers-master.json ({len(triggers)} triggers)")
+    print("=" * 72)
+
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"\n❌ Error: {e}")
+        sys.exit(1)
