@@ -4,25 +4,34 @@
   "aliases": "E951, aspartame, éster metílico de aspartil-fenilalanina, aspartamo",
   "module_icon": "sweeteners.png",
   "layers": [
+    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Um adoçante sintético intenso, aproximadamente 200 vezes mais doce que o açúcar.",
-  "why_botia": "Sinaliza porque requer um aviso obrigatório para fenilcetonúricos (contém fenilalanina) e representa um marcador de alimentos ultraprocessados (NOVA Grupo 4).",
+  "what_is": "O aspartame é cerca de 200 vezes mais doce que o açúcar, portanto uma pitada faz o trabalho de uma colherada. É composto por dois aminoácidos — as peças que constroem as proteínas — ligados entre si, e o corpo os separa novamente durante a digestão. Uma dessas peças é a fenilalanina, razão pela qual o rótulo deve alertar as pessoas com fenilcetonúria.",
+  "why_botia": "Em 2023, a IARC classificou o aspartame como possivelmente cancerígeno com base em evidências limitadas para cancro do fígado, e no mesmo dia a JECFA analisou as mesmas evidências e manteve o limite diário inalterado. Na coorte NutriNet-Santé, que acompanhou 102.000 adultos durante anos, as mulheres que consumiram mais aspartame tiveram mais diagnósticos de cancro da mama do que aquelas que não consumiram.",
   "can_1": "Identificar E951 ou Aspartame e sinalizar o aviso obrigatório 'contém uma fonte de fenilalanina'.",
   "can_2": "Classificar o produto como ultraprocessado de acordo com o sistema NOVA.",
   "cannot_1": "Medir os miligramas exatos de aspartame adicionados à formulação.",
   "cannot_2": "Verificar se o aspartame começou a se degradar em dicetopiperazina sob armazenamento em alta temperatura.",
   "sources": [
     {
-      "label": "Regulamento (UE) n.º 231/2012 da Comissão",
+      "label": "Commission Regulation (EU) No 231/2012",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
     },
     {
-      "label": "Regulamento (UE) n.º 1169/2011",
+      "label": "Regulation (EU) No 1169/2011",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "IARC / JECFA 2023 — avaliação do perigo e risco do aspartame",
+      "url": "https://www.who.int/news/item/14-07-2023-aspartame-hazard-and-risk-assessment-results-released"
+    },
+    {
+      "label": "PLOS Medicine 2022",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003950"
     }
   ],
   "title": "Aspartame",
-  "description": "Um adoçante sintético intenso, aproximadamente 200 vezes mais doce que o açúcar."
+  "description": "O aspartame é um adoçante 200 vezes mais doce que o açúcar; o corpo decompõe-no em dois aminoácidos, um dos quais é a fenilalanina. A IARC classificou-o como possivelmente cancerígeno com base em evidências hepáticas e a JECFA manteve o limite diário. Na coorte NutriNet-Santé, as mulheres com maior ingestão tiveram mais diagnósticos de cancro da mama."
 }

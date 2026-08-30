@@ -4,25 +4,34 @@
   "aliases": "E951, aspartame, aspartyl phenylalanine methyl ester, aspartamo",
   "module_icon": "sweeteners.png",
   "layers": [
+    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un édulcorant synthétique intense environ 200 fois plus sucré que le sucre.",
-  "why_botia": "Il le signale car il nécessite un avertissement obligatoire pour les phénylcétonuriques (contient de la phénylalanine) et représente un marqueur des aliments ultra-transformés (NOVA Groupe 4).",
+  "what_is": "L'aspartame est environ 200 fois plus sucré que le sucre, donc une pincée fait le travail d'une cuillerée. Il est composé de deux acides aminés — les éléments constitutifs des protéines — liés ensemble, et le corps les sépare à nouveau pendant la digestion. L'un de ces éléments est la phénylalanine, c'est pourquoi l'étiquette doit avertir les personnes atteintes de phénylcétonurie.",
+  "why_botia": "En 2023, le CIRC a classé l'aspartame comme possiblement cancérogène sur la base de preuves limitées pour le cancer du foie, et le même jour, le JECFA a examiné ces mêmes preuves et a laissé la dose quotidienne inchangée. Dans la cohorte NutriNet-Santé, qui a suivi 102 000 adultes pendant des années, les femmes ayant consommé le plus d'aspartame ont eu plus de diagnostics de cancer du sein que celles qui n'en ont pas consommé.",
   "can_1": "Identifier E951 ou l'aspartame et signaler l'avertissement obligatoire 'contient une source de phénylalanine'.",
   "can_2": "Classer le produit comme ultra-transformé selon le système NOVA.",
   "cannot_1": "Mesurer les milligrammes exacts d'aspartame ajoutés à la formulation.",
   "cannot_2": "Vérifier si l'aspartame a commencé à se dégrader en dicétopipérazine lors d'un stockage à haute température.",
   "sources": [
     {
-      "label": "Règlement (UE) n° 231/2012 de la Commission",
+      "label": "Commission Regulation (EU) No 231/2012",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
     },
     {
-      "label": "Règlement (UE) n° 1169/2011",
+      "label": "Regulation (EU) No 1169/2011",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "IARC / JECFA 2023 — évaluation des dangers et des risques de l'aspartame",
+      "url": "https://www.who.int/news/item/14-07-2023-aspartame-hazard-and-risk-assessment-results-released"
+    },
+    {
+      "label": "PLOS Medicine 2022",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003950"
     }
   ],
   "title": "Aspartame",
-  "description": "Un édulcorant synthétique intense environ 200 fois plus sucré que le sucre."
+  "description": "L'aspartame est un édulcorant 200 fois plus sucré que le sucre ; le corps le décompose en deux acides aminés, dont la phénylalanine. Le CIRC l'a classé comme possiblement cancérogène sur des preuves hépatiques et le JECFA a maintenu la limite journalière. Dans la cohorte NutriNet-Santé, les femmes ayant la plus forte consommation ont eu plus de diagnostics de cancer du sein."
 }

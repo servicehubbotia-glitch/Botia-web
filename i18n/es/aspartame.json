@@ -4,25 +4,34 @@
   "aliases": "E951, aspartamo, aspartil fenilalanina metil éster, aspartamo",
   "module_icon": "sweeteners.png",
   "layers": [
+    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un edulcorante sintético intenso aproximadamente 200 veces más dulce que el azúcar.",
-  "why_botia": "Lo señala porque requiere una advertencia obligatoria para fenilcetonúricos (contiene fenilalanina) y representa un marcador de alimentos ultraprocesados (NOVA Grupo 4).",
+  "what_is": "El aspartamo es unas 200 veces más dulce que el azúcar, por lo que una pizca hace el trabajo de una cucharada. Está compuesto por dos aminoácidos —las piezas con las que se construyen las proteínas— unidos entre sí, y el cuerpo los vuelve a separar durante la digestión. Una de esas piezas es la fenilalanina, por lo que la etiqueta debe advertir a las personas con fenilcetonuria.",
+  "why_botia": "En 2023, la IARC clasificó el aspartamo como posiblemente carcinógeno con evidencia limitada para el cáncer de hígado, y ese mismo día la JECFA revisó la misma evidencia y dejó sin cambios la ingesta diaria admisible. En la cohorte NutriNet-Santé, que siguió a 102.000 adultos durante años, las mujeres que consumían más aspartamo tuvieron más diagnósticos de cáncer de mama que las que no consumían.",
   "can_1": "Identificar E951 o Aspartamo y señalar la advertencia obligatoria 'contiene una fuente de fenilalanina'.",
   "can_2": "Clasificar el producto como ultraprocesado según el sistema NOVA.",
   "cannot_1": "Medir los miligramos exactos de aspartamo añadidos a la formulación.",
   "cannot_2": "Verificar si el aspartamo ha comenzado a degradarse en dicetopiperazina bajo almacenamiento a alta temperatura.",
   "sources": [
     {
-      "label": "Reglamento (UE) nº 231/2012 de la Comisión",
+      "label": "Commission Regulation (EU) No 231/2012",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
     },
     {
-      "label": "Reglamento (UE) nº 1169/2011",
+      "label": "Regulation (EU) No 1169/2011",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "IARC / JECFA 2023 — evaluación del peligro y riesgo del aspartamo",
+      "url": "https://www.who.int/news/item/14-07-2023-aspartame-hazard-and-risk-assessment-results-released"
+    },
+    {
+      "label": "PLOS Medicine 2022",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003950"
     }
   ],
   "title": "Aspartamo",
-  "description": "Un edulcorante sintético intenso aproximadamente 200 veces más dulce que el azúcar."
+  "description": "El aspartamo es un edulcorante 200 veces más dulce que el azúcar; el cuerpo lo descompone en dos aminoácidos, uno de ellos la fenilalanina. La IARC lo clasificó como posiblemente carcinógeno por evidencia hepática y la JECFA mantuvo el límite diario. En la cohorte NutriNet-Santé, las mujeres con mayor ingesta tuvieron más diagnósticos de cáncer de mama."
 }

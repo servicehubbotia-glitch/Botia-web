@@ -4,25 +4,34 @@
   "aliases": "E951, 阿斯巴甜, 天冬氨酰苯丙氨酸甲酯, 阿斯巴甜",
   "module_icon": "sweeteners.png",
   "layers": [
+    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "一种强烈的合成甜味剂，甜度约为蔗糖的200倍。",
-  "why_botia": "它标记此成分是因为需要强制警告苯丙酮尿症患者（含有苯丙氨酸），并且代表了超加工食品的标志（NOVA第4组）。",
+  "what_is": "阿斯巴甜的甜度约为蔗糖的200倍，所以一小撮就能抵一勺。它由两种氨基酸（构成蛋白质的构件）连接而成，人体在消化时会再次将它们分开。其中一种氨基酸是苯丙氨酸，这就是为什么标签上必须警告患有苯丙酮尿症的人。",
+  "why_botia": "2023年，国际癌症研究机构（IARC）将阿斯巴甜列为可能致癌物，依据是肝癌的有限证据；同一天，JECFA审查了同样的证据，并维持每日容许摄入量不变。在NutriNet-Santé队列中，该研究追踪了102,000名成年人多年，摄入阿斯巴甜最多的女性比不摄入的女性有更多的乳腺癌诊断。",
   "can_1": "识别E951或阿斯巴甜，并标记强制警告“含有苯丙氨酸来源”。",
   "can_2": "根据NOVA系统将产品分类为超加工食品。",
   "cannot_1": "测量配方中添加的阿斯巴甜的确切毫克数。",
   "cannot_2": "验证阿斯巴甜在高温储存下是否已开始降解为二酮哌嗪。",
   "sources": [
     {
-      "label": "欧盟委员会条例 (EU) No 231/2012",
+      "label": "Commission Regulation (EU) No 231/2012",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
     },
     {
-      "label": "欧盟条例 (EU) No 1169/2011",
+      "label": "Regulation (EU) No 1169/2011",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "IARC / JECFA 2023 — 阿斯巴甜危害和风险评估",
+      "url": "https://www.who.int/news/item/14-07-2023-aspartame-hazard-and-risk-assessment-results-released"
+    },
+    {
+      "label": "PLOS Medicine 2022",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003950"
     }
   ],
   "title": "阿斯巴甜",
-  "description": "一种强烈的合成甜味剂，甜度约为蔗糖的200倍。"
+  "description": "阿斯巴甜是一种甜度是蔗糖200倍的甜味剂；人体将其分解为两种氨基酸，其中一种是苯丙氨酸。IARC基于肝脏证据将其列为可能致癌物，JECFA维持了每日限量。在NutriNet-Santé队列中，摄入量最高的女性有更多的乳腺癌诊断。"
 }

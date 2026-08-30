@@ -4,11 +4,12 @@
   "aliases": "E951, aspartame, aspartyl phenylalanine methyl ester, aspartamo",
   "module_icon": "sweeteners.png",
   "layers": [
+    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "An intense synthetic sweetener approximately 200 times sweeter than sugar.",
-  "why_botia": "It flags it because it requires a mandatory warning for phenylketonurics (contains phenylalanine) and represents a marker of ultra-processed foods (NOVA Group 4).",
+  "what_is": "Aspartame is about 200 times sweeter than sugar, so a pinch does the work of a spoonful. It is made of two amino acids — the pieces proteins are built from — joined together, and the body takes them apart again while digesting. One of those pieces is phenylalanine, which is why the label has to warn people with phenylketonuria.",
+  "why_botia": "In 2023 IARC classified aspartame as possibly carcinogenic on limited evidence for liver cancer, and the same day JECFA reviewed that same evidence and left the daily limit unchanged. In the NutriNet-Santé cohort, which followed 102,000 adults for years, women who consumed the most aspartame had more breast cancer diagnoses than those who consumed none.",
   "can_1": "Identify E951 or Aspartame and flag the mandatory warning 'contains a source of phenylalanine'.",
   "can_2": "Classify the product as ultra-processed under the NOVA system.",
   "cannot_1": "Measure the exact milligrams of aspartame added to the formulation.",
@@ -21,8 +22,16 @@
     {
       "label": "Regulation (EU) No 1169/2011",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "IARC / JECFA 2023 — aspartame hazard and risk assessment",
+      "url": "https://www.who.int/news/item/14-07-2023-aspartame-hazard-and-risk-assessment-results-released"
+    },
+    {
+      "label": "PLOS Medicine 2022",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003950"
     }
   ],
   "title": "Aspartame",
-  "description": "An intense synthetic sweetener approximately 200 times sweeter than sugar."
+  "description": "Aspartame is a sweetener 200 times sweeter than sugar; the body breaks it into two amino acids, one of them phenylalanine. IARC classified it as possibly carcinogenic on liver evidence and JECFA left the daily limit unchanged. In the NutriNet-Santé cohort, women with the highest intake had more breast cancer diagnoses."
 }

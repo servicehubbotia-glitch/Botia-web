@@ -4,25 +4,34 @@
   "aliases": "E951, aspartam, ester metylowy aspartylofenyloalaniny, aspartamo",
   "module_icon": "sweeteners.png",
   "layers": [
+    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Intensywny syntetyczny słodzik, około 200 razy słodszy od cukru.",
-  "why_botia": "Oznacza go, ponieważ wymaga obowiązkowego ostrzeżenia dla osób z fenyloketonurią (zawiera fenyloalaninę) i stanowi marker żywności wysoko przetworzonej (NOVA Grupa 4).",
+  "what_is": "Aspartam jest około 200 razy słodszy od cukru, więc szczypta zastępuje łyżkę. Składa się z dwóch aminokwasów — elementów budulcowych białek — połączonych ze sobą, a organizm rozkłada je ponownie podczas trawienia. Jednym z tych elementów jest fenyloalanina, dlatego etykieta musi ostrzegać osoby z fenyloketonurią.",
+  "why_botia": "W 2023 r. IARC sklasyfikowała aspartam jako prawdopodobnie rakotwórczy na podstawie ograniczonych dowodów dotyczących raka wątroby, a tego samego dnia JECFA przeanalizowała te same dowody i pozostawiła dzienny limit bez zmian. W kohorcie NutriNet-Santé, która obserwowała 102 000 dorosłych przez lata, kobiety, które spożywały najwięcej aspartamu, miały więcej diagnoz raka piersi niż te, które nie spożywały go wcale.",
   "can_1": "Zidentyfikować E951 lub Aspartam i oznaczyć obowiązkowe ostrzeżenie „zawiera źródło fenyloalaniny”.",
   "can_2": "Sklasyfikować produkt jako wysoko przetworzony w systemie NOVA.",
   "cannot_1": "Zmierzyć dokładną ilość miligramów aspartamu dodanego do receptury.",
   "cannot_2": "Zweryfikować, czy aspartam zaczął rozkładać się do diketopiperazyny podczas przechowywania w wysokiej temperaturze.",
   "sources": [
     {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012",
+      "label": "Commission Regulation (EU) No 231/2012",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
     },
     {
-      "label": "Rozporządzenie (UE) nr 1169/2011",
+      "label": "Regulation (EU) No 1169/2011",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "IARC / JECFA 2023 — ocena zagrożeń i ryzyka aspartamu",
+      "url": "https://www.who.int/news/item/14-07-2023-aspartame-hazard-and-risk-assessment-results-released"
+    },
+    {
+      "label": "PLOS Medicine 2022",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003950"
     }
   ],
   "title": "Aspartam",
-  "description": "Intensywny syntetyczny słodzik, około 200 razy słodszy od cukru."
+  "description": "Aspartam to słodzik 200 razy słodszy od cukru; organizm rozkłada go na dwa aminokwasy, jednym z nich jest fenyloalanina. IARC sklasyfikowała go jako prawdopodobnie rakotwórczy na podstawie dowodów wątrobowych, a JECFA utrzymała dzienny limit. W kohorcie NutriNet-Santé kobiety z najwyższym spożyciem miały więcej diagnoz raka piersi."
 }

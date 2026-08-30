@@ -4,25 +4,34 @@
   "aliases": "E951, aspartam, aspartil fenilalanin metil ester, aspartamo",
   "module_icon": "sweeteners.png",
   "layers": [
+    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Şekerden yaklaşık 200 kat daha tatlı olan yoğun bir sentetik tatlandırıcı.",
-  "why_botia": "Fenilketonüri hastaları için zorunlu uyarı (fenilalanin içerir) gerektirdiği ve ultra işlenmiş gıdaların (NOVA Grup 4) bir göstergesi olduğu için işaretler.",
+  "what_is": "Aspartam şekerden yaklaşık 200 kat daha tatlıdır, bu nedenle bir tutamı bir kaşık dolusu şekerin işini görür. Proteinlerin yapı taşları olan iki amino asitten oluşur ve vücut sindirim sırasında bunları tekrar ayırır. Bu parçalardan biri fenilalanindir, bu nedenle etiket fenilketonürili kişileri uyarmalıdır.",
+  "why_botia": "2023'te IARC, aspartamı karaciğer kanseri için sınırlı kanıtlara dayanarak olası kanserojen olarak sınıflandırdı ve aynı gün JECFA aynı kanıtları inceledi ve günlük limiti değiştirmedi. 102.000 yetişkini yıllarca takip eden NutriNet-Santé kohortunda, en fazla aspartam tüketen kadınlar, hiç tüketmeyenlere göre daha fazla meme kanseri teşhisi aldı.",
   "can_1": "E951 veya Aspartam'ı tanımlayın ve 'bir fenilalanin kaynağı içerir' zorunlu uyarısını işaretleyin.",
   "can_2": "Ürünü NOVA sistemine göre ultra işlenmiş olarak sınıflandırın.",
   "cannot_1": "Formülasyona eklenen aspartamın tam miligramını ölçün.",
   "cannot_2": "Aspartamın yüksek sıcaklıkta depolama altında diketopiperazine bozunmaya başlayıp başlamadığını doğrulayın.",
   "sources": [
     {
-      "label": "Komisyon Tüzüğü (AB) No 231/2012",
+      "label": "Commission Regulation (EU) No 231/2012",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
     },
     {
-      "label": "Tüzük (AB) No 1169/2011",
+      "label": "Regulation (EU) No 1169/2011",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "IARC / JECFA 2023 — aspartam tehlikesi ve risk değerlendirmesi",
+      "url": "https://www.who.int/news/item/14-07-2023-aspartame-hazard-and-risk-assessment-results-released"
+    },
+    {
+      "label": "PLOS Medicine 2022",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003950"
     }
   ],
   "title": "Aspartam",
-  "description": "Şekerden yaklaşık 200 kat daha tatlı olan yoğun bir sentetik tatlandırıcı."
+  "description": "Aspartam, şekerden 200 kat daha tatlı bir tatlandırıcıdır; vücut onu iki amino aside ayırır, bunlardan biri fenilalanindir. IARC, karaciğer kanıtlarına dayanarak olası kanserojen olarak sınıflandırdı ve JECFA günlük limiti korudu. NutriNet-Santé kohortunda, en yüksek alıma sahip kadınlar daha fazla meme kanseri teşhisi aldı."
 }

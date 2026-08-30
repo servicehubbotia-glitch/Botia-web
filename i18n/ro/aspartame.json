@@ -4,25 +4,34 @@
   "aliases": "E951, aspartam, aspartil-fenilalanin metil ester, aspartamo",
   "module_icon": "sweeteners.png",
   "layers": [
+    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Un îndulcitor sintetic intens, de aproximativ 200 de ori mai dulce decât zahărul.",
-  "why_botia": "Îl semnalează deoarece necesită un avertisment obligatoriu pentru fenilcetonurici (conține fenilalanină) și reprezintă un marker al alimentelor ultraprocesate (NOVA Grupa 4).",
+  "what_is": "Aspartamul este de aproximativ 200 de ori mai dulce decât zahărul, așa că un vârf de cuțit face treaba unei linguri. Este format din doi aminoacizi — componentele din care sunt construite proteinele — legați împreună, iar organismul îi separă din nou în timpul digestiei. Una dintre aceste componente este fenilalanina, motiv pentru care eticheta trebuie să avertizeze persoanele cu fenilcetonurie.",
+  "why_botia": "În 2023, IARC a clasificat aspartamul ca posibil cancerigen pe baza unor dovezi limitate pentru cancerul hepatic, iar în aceeași zi, JECFA a revizuit aceleași dovezi și a lăsat limita zilnică neschimbată. În cohorta NutriNet-Santé, care a urmărit 102.000 de adulți timp de ani, femeile care au consumat cel mai mult aspartam au avut mai multe diagnostice de cancer mamar decât cele care nu au consumat deloc.",
   "can_1": "Identificați E951 sau Aspartamul și semnalați avertismentul obligatoriu „conține o sursă de fenilalanină”.",
   "can_2": "Clasificați produsul ca ultraprocesat conform sistemului NOVA.",
   "cannot_1": "Măsurați miligramele exacte de aspartam adăugate în formulare.",
   "cannot_2": "Verificați dacă aspartamul a început să se degradeze în dicetopiperazină în condiții de depozitare la temperatură ridicată.",
   "sources": [
     {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei",
+      "label": "Commission Regulation (EU) No 231/2012",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
     },
     {
-      "label": "Regulamentul (UE) nr. 1169/2011",
+      "label": "Regulation (EU) No 1169/2011",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "IARC / JECFA 2023 — evaluarea pericolului și riscului aspartamului",
+      "url": "https://www.who.int/news/item/14-07-2023-aspartame-hazard-and-risk-assessment-results-released"
+    },
+    {
+      "label": "PLOS Medicine 2022",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003950"
     }
   ],
   "title": "Aspartam",
-  "description": "Un îndulcitor sintetic intens, de aproximativ 200 de ori mai dulce decât zahărul."
+  "description": "Aspartamul este un îndulcitor de 200 de ori mai dulce decât zahărul; organismul îl descompune în doi aminoacizi, unul dintre ei fiind fenilalanina. IARC l-a clasificat ca posibil cancerigen pe dovezi hepatice, iar JECFA a menținut limita zilnică. În cohorta NutriNet-Santé, femeile cu cel mai mare consum au avut mai multe diagnostice de cancer mamar."
 }

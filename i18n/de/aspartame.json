@@ -4,25 +4,34 @@
   "aliases": "E951, Aspartam, Aspartylphenylalaninmethylester, Aspartamo",
   "module_icon": "sweeteners.png",
   "layers": [
+    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Ein intensiver synthetischer Süßstoff, der etwa 200-mal süßer als Zucker ist.",
-  "why_botia": "Es wird gekennzeichnet, da es eine obligatorische Warnung für Phenylketonuriker erfordert (enthält Phenylalanin) und einen Marker für stark verarbeitete Lebensmittel darstellt (NOVA Gruppe 4).",
+  "what_is": "Aspartam ist etwa 200-mal süßer als Zucker, sodass eine Prise die Arbeit eines Löffels voll Zucker erledigt. Es besteht aus zwei Aminosäuren — den Bausteinen von Proteinen — die miteinander verbunden sind, und der Körper spaltet sie während der Verdauung wieder auf. Einer dieser Bausteine ist Phenylalanin, weshalb das Etikett Menschen mit Phenylketonurie warnen muss.",
+  "why_botia": "Im Jahr 2023 stufte die IARC Aspartam auf der Grundlage begrenzter Hinweise auf Leberkrebs als möglicherweise krebserregend ein, und am selben Tag überprüfte die JECFA dieselben Hinweise und ließ den Tageshöchstwert unverändert. In der NutriNet-Santé-Kohorte, die 102.000 Erwachsene über Jahre hinweg begleitete, hatten Frauen, die am meisten Aspartam konsumierten, mehr Brustkrebsdiagnosen als diejenigen, die keines konsumierten.",
   "can_1": "Identifizieren Sie E951 oder Aspartam und kennzeichnen Sie die obligatorische Warnung 'enthält eine Phenylalaninquelle'.",
   "can_2": "Klassifizieren Sie das Produkt als stark verarbeitet nach dem NOVA-System.",
   "cannot_1": "Messen Sie die genauen Milligramm Aspartam, die der Formulierung zugesetzt wurden.",
   "cannot_2": "Überprüfen Sie, ob das Aspartam bei Hochtemperaturlagerung begonnen hat, sich in Diketopiperazin zu zersetzen.",
   "sources": [
     {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission",
+      "label": "Commission Regulation (EU) No 231/2012",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
     },
     {
-      "label": "Verordnung (EU) Nr. 1169/2011",
+      "label": "Regulation (EU) No 1169/2011",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "IARC / JECFA 2023 — Gefahren- und Risikobewertung von Aspartam",
+      "url": "https://www.who.int/news/item/14-07-2023-aspartame-hazard-and-risk-assessment-results-released"
+    },
+    {
+      "label": "PLOS Medicine 2022",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003950"
     }
   ],
   "title": "Aspartam",
-  "description": "Ein intensiver synthetischer Süßstoff, der etwa 200-mal süßer als Zucker ist."
+  "description": "Aspartam ist ein Süßstoff, der 200-mal süßer als Zucker ist; der Körper spaltet es in zwei Aminosäuren auf, eine davon ist Phenylalanin. Die IARC stufte es als möglicherweise krebserregend aufgrund von Leberhinweisen ein, und die JECFA beließ den Tagesgrenzwert. In der NutriNet-Santé-Kohorte hatten Frauen mit der höchsten Aufnahme mehr Brustkrebsdiagnosen."
 }

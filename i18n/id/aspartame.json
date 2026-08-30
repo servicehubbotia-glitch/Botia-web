@@ -4,25 +4,34 @@
   "aliases": "E951, aspartam, aspartil fenilalanin metil ester, aspartamo",
   "module_icon": "sweeteners.png",
   "layers": [
+    "woman",
     "sweetener",
     "enumbers"
   ],
-  "what_is": "Pemanis sintetis intensif yang sekitar 200 kali lebih manis dari gula.",
-  "why_botia": "Ini menandainya karena memerlukan peringatan wajib bagi penderita fenilketonuria (mengandung fenilalanin) dan merupakan penanda makanan ultra-olahan (NOVA Kelompok 4).",
+  "what_is": "Aspartam sekitar 200 kali lebih manis dari gula, jadi sejumput sudah cukup menggantikan satu sendok. Terbuat dari dua asam amino — bahan penyusun protein — yang digabungkan, dan tubuh memisahkannya lagi saat pencernaan. Salah satu bagian itu adalah fenilalanin, itulah sebabnya label harus memperingatkan orang dengan fenilketonuria.",
+  "why_botia": "Pada tahun 2023, IARC mengklasifikasikan aspartam sebagai kemungkinan karsinogen berdasarkan bukti terbatas untuk kanker hati, dan pada hari yang sama JECFA meninjau bukti yang sama dan membiarkan batas harian tidak berubah. Dalam kohort NutriNet-Santé, yang mengikuti 102.000 orang dewasa selama bertahun-tahun, wanita yang mengonsumsi aspartam paling banyak memiliki lebih banyak diagnosis kanker payudara daripada mereka yang tidak mengonsumsinya.",
   "can_1": "Identifikasi E951 atau Aspartam dan tandai peringatan wajib 'mengandung sumber fenilalanin'.",
   "can_2": "Klasifikasikan produk sebagai ultra-olahan berdasarkan sistem NOVA.",
   "cannot_1": "Mengukur jumlah pasti miligram aspartam yang ditambahkan ke dalam formulasi.",
   "cannot_2": "Memverifikasi apakah aspartam telah mulai terurai menjadi diketopiperazin pada penyimpanan suhu tinggi.",
   "sources": [
     {
-      "label": "Peraturan Komisi (UE) No 231/2012",
+      "label": "Commission Regulation (EU) No 231/2012",
       "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
     },
     {
-      "label": "Peraturan (UE) No 1169/2011",
+      "label": "Regulation (EU) No 1169/2011",
       "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "IARC / JECFA 2023 — penilaian bahaya dan risiko aspartam",
+      "url": "https://www.who.int/news/item/14-07-2023-aspartame-hazard-and-risk-assessment-results-released"
+    },
+    {
+      "label": "PLOS Medicine 2022",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1003950"
     }
   ],
   "title": "Aspartam",
-  "description": "Pemanis sintetis intensif yang sekitar 200 kali lebih manis dari gula."
+  "description": "Aspartam adalah pemanis 200 kali lebih manis dari gula; tubuh memecahnya menjadi dua asam amino, salah satunya fenilalanin. IARC mengklasifikasikannya sebagai kemungkinan karsinogen berdasarkan bukti hati dan JECFA mempertahankan batas harian. Dalam kohort NutriNet-Santé, wanita dengan asupan tertinggi memiliki lebih banyak diagnosis kanker payudara."
 }
