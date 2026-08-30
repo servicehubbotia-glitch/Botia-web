@@ -1,40 +1,28 @@
 {
-  "name": "酒精",
-  "e_code": null,
-  "aliases": "酒精, 乙醇, 食用酒精, 农业来源的乙醇, 酒精乙基, 农业来源的酒精",
+  "name": "Alcohol",
+  "e_code": "",
+  "aliases": "alcohol, ethanol, ethyl alcohol, ethanol of agricultural origin, alcohol etílico, alcohol de origen agrícola",
   "module_icon": "botia_jar_512.png",
   "layers": [
-    "muslim",
-    "woman"
+    "woman",
+    "muslim"
   ],
-  "what_is": "乙醇是酒精饮料中的酒精，也可在食品中用作配料、溶剂或香料载体。本条目适用于标签明确标示酒精或乙醇的情况。",
-  "why_botia": "乙醇在体内代谢为乙醛，乙醛可损伤 DNA；酒精还会改变与乳腺癌发生有关的雌激素水平。IARC 将饮用酒精饮料以及酒精饮料中的乙醇列为对人类致癌（1 类），并确认其与女性乳腺癌存在因果关系；WHO 指出，即使酒精摄入水平相对较低，女性乳腺癌风险也会增加，而仅凭标签声明无法确定实际暴露量。因此 BOTIA 会激活 Woman 层；另外，Muslim 层将标签上明确声明的酒精配料分类为哈拉姆，但不解释或诠释宗教教义。",
-  "can_1": "识别标签上明确标示的酒精、乙醇、乙醇酒精及密切相关术语。",
-  "can_2": "根据 WHO/IARC 证据解释为何激活 Woman 层，并在不解释宗教教义的情况下显示 BOTIA 对明确酒精声明的 Muslim 分类。",
-  "cannot_1": "仅根据配料声明确定乙醇含量或个人癌症风险。",
-  "cannot_2": "推断未声明的酒精、解释宗教教义或告诉个人是否应食用某产品。",
+  "what_is": "标签上的酒精是乙醇。它可能被添加到食品本身，或用作溶剂来携带调味剂。在成分列表中可能显示为酒精、乙醇或乙基酒精。",
+  "why_botia": "伊斯兰教法禁止饮酒，因此如果标签声明了酒精，就没有什么可权衡的了：这是 Haram（非法的），而不是 Mushbooh（可疑的）。世界卫生组织指出，就癌症风险而言，无法确定酒精的安全消费水平。即使是少量也会增加风险，包括乳腺癌。",
+  "can_1": "检测标签上明确声明的酒精、乙醇和乙基酒精及相关术语。",
+  "can_2": "当标签上声明酒精时，显示“女性”和“穆斯林”信息层。",
+  "cannot_1": "仅凭成分声明确定乙醇含量或个人癌症风险。",
+  "cannot_2": "推断未声明的酒精、解释宗教教义或建议某人是否应消费产品。",
   "sources": [
     {
-      "label": "WHO — Alcohol and cancer",
-      "url": "https://www.who.int/europe/news-room/fact-sheets/item/alcohol-and-cancer"
+      "label": "世界卫生组织 — 酒精消费对癌症没有安全水平（2023）",
+      "url": "https://www.who.int/europe/news-room/04-01-2023-no-level-of-alcohol-consumption-is-safe-for-our-health"
     },
     {
-      "label": "WHO — Alcohol and breast cancer in women",
-      "url": "https://www.who.int/europe/news/item/07-03-2024-shouldn-t-we-know-this-already--the-link-between-alcohol-and-cancer"
-    },
-    {
-      "label": "IARC — Alcohol and cancer",
-      "url": "https://www.iarc.who.int/reference/alcohol-and-cancer/"
-    },
-    {
-      "label": "OIC/SMIIC 1:2019 — General Requirements for Halal Food",
-      "url": "https://smiic.org/en/project/24"
-    },
-    {
-      "label": "OIC/SMIIC 24:2020 — Food Additives and Other Added Chemicals to Halal Food",
-      "url": "https://smiic.org/en/project/60"
+      "label": "国际癌症研究机构 — 酒精消费与乳腺癌",
+      "url": "https://www.iarc.who.int/featured-news/alcohol-consumption-and-breast-cancer-risk/"
     }
   ],
-  "title": "酒精",
-  "description": "酒精（乙醇）：BOTIA 展示有关女性乳腺癌的确立证据，并另行对标签上的明确酒精声明应用 Muslim 分类。"
+  "title": "Alcohol",
+  "description": "标签上的酒精是乙醇，添加到食品中或用于携带调味剂。世界卫生组织指出，就癌症风险（包括乳腺癌）而言，无法确定酒精的安全消费水平。BOTIA 将声明的酒精成分归类为 Haram。"
 }

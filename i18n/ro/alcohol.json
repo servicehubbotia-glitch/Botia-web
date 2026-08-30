@@ -1,40 +1,28 @@
 {
-  "name": "Alcool",
-  "e_code": null,
-  "aliases": "alcool, etanol, alcool etilic, etanol de origine agricolă, alcohol etílico, alcohol de origen agrícola",
+  "name": "Alcohol",
+  "e_code": "",
+  "aliases": "alcohol, ethanol, ethyl alcohol, ethanol of agricultural origin, alcohol etílico, alcohol de origen agrícola",
   "module_icon": "botia_jar_512.png",
   "layers": [
-    "muslim",
-    "woman"
+    "woman",
+    "muslim"
   ],
-  "what_is": "Etanolul este alcoolul prezent în băuturile alcoolice și poate fi utilizat și în alimente ca ingredient, solvent sau suport pentru arome. Această fișă se aplică atunci când alcoolul sau etanolul este declarat explicit pe etichetă.",
-  "why_botia": "Etanolul este metabolizat în acetaldehidă, care poate deteriora ADN-ul, iar alcoolul poate modifica și nivelurile de estrogen implicate în carcinogeneza mamară. IARC clasifică consumul de băuturi alcoolice și etanolul din băuturile alcoolice drept cancerigene pentru oameni (Grupa 1) și a stabilit o relație cauzală cu cancerul de sân la femei; WHO arată că riscul de cancer de sân la femei crește chiar și la niveluri relativ scăzute de consum de alcool, în timp ce simpla declarare pe etichetă nu cuantifică expunerea. Prin urmare, BOTIA activează stratul Woman; separat, stratul Muslim clasifică un ingredient alcool declarat explicit drept Haram, fără a explica sau interpreta doctrina religioasă.",
-  "can_1": "Detecta alcoolul, etanolul, alcoolul etilic și termenii strâns înrudiți atunci când sunt declarați explicit pe etichetă.",
-  "can_2": "Explica de ce este activat stratul Woman pe baza dovezilor WHO/IARC și prezenta clasificarea Muslim a BOTIA pentru o declarație explicită de alcool fără a interpreta doctrina religioasă.",
-  "cannot_1": "Determina cantitatea de etanol prezentă sau riscul individual de cancer doar din declarația ingredientelor.",
-  "cannot_2": "Deduce prezența alcoolului nedeclarat, interpreta doctrina religioasă sau spune unei persoane dacă ar trebui să consume un produs.",
+  "what_is": "Alcoolul pe o etichetă este etanol. Poate fi adăugat în alimentul propriu-zis sau utilizat ca solvent pentru a transporta aromele. În lista de ingrediente poate apărea ca alcool, etanol sau alcool etilic.",
+  "why_botia": "Alcoolul este interzis de legea islamică, așa că dacă eticheta îl declară, nu există nimic de cântărit: este Haram, nu Mushbooh. OMS afirmă că nu se poate stabili un nivel sigur de consum de alcool în ceea ce privește riscul de cancer. Chiar și cantitățile mici cresc riscul, inclusiv cancerul mamar.",
+  "can_1": "Detectează alcoolul, etanolul și alcoolul etilic declarate explicit și termenii înruditi de pe etichetă.",
+  "can_2": "Afișează straturile de informații Femeie și Musulman atunci când alcoolul este declarat pe etichetă.",
+  "cannot_1": "Nu poate determina cantitatea de etanol prezentă sau riscul de cancer al unei persoane doar din declarația ingredientului.",
+  "cannot_2": "Nu poate deduce alcoolul nedeclarat, interpreta doctrina religioasă sau sfătui o persoană dacă să consume un produs.",
   "sources": [
     {
-      "label": "WHO — Alcohol and cancer",
-      "url": "https://www.who.int/europe/news-room/fact-sheets/item/alcohol-and-cancer"
+      "label": "OMS — Niciun nivel sigur de consum de alcool pentru cancer (2023)",
+      "url": "https://www.who.int/europe/news-room/04-01-2023-no-level-of-alcohol-consumption-is-safe-for-our-health"
     },
     {
-      "label": "WHO — Alcohol and breast cancer in women",
-      "url": "https://www.who.int/europe/news/item/07-03-2024-shouldn-t-we-know-this-already--the-link-between-alcohol-and-cancer"
-    },
-    {
-      "label": "IARC — Alcohol and cancer",
-      "url": "https://www.iarc.who.int/reference/alcohol-and-cancer/"
-    },
-    {
-      "label": "OIC/SMIIC 1:2019 — General Requirements for Halal Food",
-      "url": "https://smiic.org/en/project/24"
-    },
-    {
-      "label": "OIC/SMIIC 24:2020 — Food Additives and Other Added Chemicals to Halal Food",
-      "url": "https://smiic.org/en/project/60"
+      "label": "IARC — Consumul de alcool și cancerul mamar",
+      "url": "https://www.iarc.who.int/featured-news/alcohol-consumption-and-breast-cancer-risk/"
     }
   ],
-  "title": "Alcool",
-  "description": "Alcool (etanol): BOTIA prezintă dovezile stabilite privind cancerul de sân la femei și aplică separat clasificarea sa Muslim declarațiilor explicite de pe etichetă."
+  "title": "Alcohol",
+  "description": "Alcoolul pe o etichetă este etanol, adăugat în alimente sau utilizat pentru a transporta arome. OMS afirmă că nu se poate stabili un nivel sigur de consum de alcool pentru riscul de cancer, inclusiv cancerul mamar. BOTIA clasifică un ingredient de alcool declarat ca Haram."
 }

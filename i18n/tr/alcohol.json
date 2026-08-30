@@ -1,40 +1,28 @@
 {
-  "name": "Alkol",
-  "e_code": null,
-  "aliases": "alkol, etanol, etil alkol, tarımsal kökenli etanol, alcohol etílico, alcohol de origen agrícola",
+  "name": "Alcohol",
+  "e_code": "",
+  "aliases": "alcohol, ethanol, ethyl alcohol, ethanol of agricultural origin, alcohol etílico, alcohol de origen agrícola",
   "module_icon": "botia_jar_512.png",
   "layers": [
-    "muslim",
-    "woman"
+    "woman",
+    "muslim"
   ],
-  "what_is": "Etanol, alkollü içeceklerde bulunan alkoldür ve gıdalarda ayrıca bileşen, çözücü veya aroma taşıyıcısı olarak kullanılabilir. Bu kart, alkol veya etanol etikette açıkça beyan edildiğinde uygulanır.",
-  "why_botia": "Etanol, DNA'ya zarar verebilen asetaldehite metabolize edilir; alkol ayrıca meme kanseri oluşumuyla ilişkili östrojen düzeylerini değiştirebilir. IARC, alkollü içecek tüketimini ve alkollü içeceklerdeki etanolü insanlar için kanserojen olarak sınıflandırır (Grup 1) ve kadınlarda meme kanseriyle nedensel bir ilişki kurmuştur; WHO, kadınlarda meme kanseri riskinin nispeten düşük alkol tüketim düzeylerinde bile arttığını belirtirken, yalnızca etiket beyanı maruziyet miktarını göstermez. Bu nedenle BOTIA Woman katmanını etkinleştirir; ayrı olarak Muslim katmanı, açıkça beyan edilmiş bir alkol bileşenini Haram olarak sınıflandırır ve dini doktrini açıklamaz veya yorumlamaz.",
-  "can_1": "Etikette açıkça beyan edilen alkol, etanol, etil alkol ve yakından ilişkili terimleri tespit etmek.",
-  "can_2": "WHO/IARC kanıtlarına dayanarak Woman katmanının neden etkinleştirildiğini açıklamak ve dini doktrini yorumlamadan BOTIA'nın açık alkol beyanı için Muslim sınıflandırmasını göstermek.",
-  "cannot_1": "Yalnızca içerik beyanından mevcut etanol miktarını veya bireysel kanser riskini belirlemek.",
-  "cannot_2": "Beyan edilmemiş alkolü varsaymak, dini doktrini yorumlamak veya bir kişiye ürünü tüketip tüketmemesi gerektiğini söylemek.",
+  "what_is": "Etiketteki alkol etanoldür. Yiyeceğin kendisine eklenebilir veya aromaları taşımak için çözücü olarak kullanılabilir. İçerik listesinde alkol, etanol veya etil alkol yazabilir.",
+  "why_botia": "Alkol İslam hukukunda yasaktır, bu nedenle etiket bunu beyan ediyorsa tartışılacak bir şey yoktur: Haram'dır, Mushbooh değildir. WHO, kanser riski söz konusu olduğunda güvenli bir alkol tüketim düzeyi belirlenemeyeceğini belirtmektedir. Küçük miktarlar bile meme kanseri dahil riski artırır.",
+  "can_1": "Etikette açıkça beyan edilen alkol, etanol ve etil alkol ile yakından ilişkili terimleri tespit eder.",
+  "can_2": "Etikette alkol beyan edildiğinde Kadın ve Müslüman bilgi katmanlarını gösterir.",
+  "cannot_1": "Sadece içerik beyanından mevcut etanol miktarını veya bir kişinin kanser riskini belirleyemez.",
+  "cannot_2": "Beyan edilmeyen alkolü çıkaramaz, dini doktrini yorumlayamaz veya bir kişiye bir ürünü tüketip tüketmemesi konusunda tavsiyede bulunamaz.",
   "sources": [
     {
-      "label": "WHO — Alcohol and cancer",
-      "url": "https://www.who.int/europe/news-room/fact-sheets/item/alcohol-and-cancer"
+      "label": "WHO — Kanser için güvenli alkol tüketimi düzeyi yok (2023)",
+      "url": "https://www.who.int/europe/news-room/04-01-2023-no-level-of-alcohol-consumption-is-safe-for-our-health"
     },
     {
-      "label": "WHO — Alcohol and breast cancer in women",
-      "url": "https://www.who.int/europe/news/item/07-03-2024-shouldn-t-we-know-this-already--the-link-between-alcohol-and-cancer"
-    },
-    {
-      "label": "IARC — Alcohol and cancer",
-      "url": "https://www.iarc.who.int/reference/alcohol-and-cancer/"
-    },
-    {
-      "label": "OIC/SMIIC 1:2019 — General Requirements for Halal Food",
-      "url": "https://smiic.org/en/project/24"
-    },
-    {
-      "label": "OIC/SMIIC 24:2020 — Food Additives and Other Added Chemicals to Halal Food",
-      "url": "https://smiic.org/en/project/60"
+      "label": "IARC — Alkol tüketimi ve meme kanseri",
+      "url": "https://www.iarc.who.int/featured-news/alcohol-consumption-and-breast-cancer-risk/"
     }
   ],
-  "title": "Alkol",
-  "description": "Alkol (etanol): BOTIA kadınlarda meme kanserine ilişkin yerleşik kanıtları gösterir ve ayrı olarak açık etiket beyanlarına Muslim sınıflandırmasını uygular."
+  "title": "Alcohol",
+  "description": "Etiketteki alkol, gıdaya eklenen veya aromaları taşımak için kullanılan etanoldür. WHO, meme kanseri dahil olmak üzere kanser riski için güvenli bir alkol tüketim düzeyi belirlenemeyeceğini belirtmektedir. BOTIA, beyan edilen bir alkol bileşenini Haram olarak sınıflandırır."
 }

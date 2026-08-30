@@ -1,40 +1,28 @@
 {
-  "name": "Alkohol",
-  "e_code": null,
-  "aliases": "Alkohol, Ethanol, Ethylalkohol, Ethanol landwirtschaftlichen Ursprungs, alcohol etílico, alcohol de origen agrícola",
+  "name": "Alcohol",
+  "e_code": "",
+  "aliases": "alcohol, ethanol, ethyl alcohol, ethanol of agricultural origin, alcohol etílico, alcohol de origen agrícola",
   "module_icon": "botia_jar_512.png",
   "layers": [
-    "muslim",
-    "woman"
+    "woman",
+    "muslim"
   ],
-  "what_is": "Ethanol ist der Alkohol in alkoholischen Getränken und kann in Lebensmitteln auch als Zutat, Lösungsmittel oder Aromaträger verwendet werden. Diese Karte gilt, wenn Alkohol oder Ethanol ausdrücklich auf dem Etikett angegeben ist.",
-  "why_botia": "Ethanol wird zu Acetaldehyd verstoffwechselt, das DNA schädigen kann; Alkohol kann außerdem Östrogenspiegel verändern, die für die Entstehung von Brustkrebs relevant sind. IARC stuft den Konsum alkoholischer Getränke und Ethanol in alkoholischen Getränken als krebserzeugend für Menschen ein (Gruppe 1) und hat einen kausalen Zusammenhang mit weiblichem Brustkrebs festgestellt; WHO weist darauf hin, dass das Brustkrebsrisiko bei Frauen bereits bei relativ geringem Alkoholkonsum steigt, während eine Deklaration auf dem Etikett allein die Exposition nicht quantifiziert. BOTIA aktiviert deshalb die Woman-Ebene; getrennt davon stuft die Muslim-Ebene eine ausdrücklich deklarierte Alkoholzutat als Haram ein, ohne religiöse Lehren zu erklären oder auszulegen.",
-  "can_1": "Ausdrücklich deklarierten Alkohol, Ethanol, Ethylalkohol und eng verwandte Etikettenbegriffe erkennen.",
-  "can_2": "Anhand der WHO/IARC-Evidenz erklären, warum die Woman-Ebene aktiviert wird, und die Muslim-Klassifizierung von BOTIA für ausdrücklich deklarierten Alkohol darstellen, ohne religiöse Lehren auszulegen.",
-  "cannot_1": "Allein aus der Zutatenangabe die vorhandene Ethanolmenge oder das individuelle Krebsrisiko bestimmen.",
-  "cannot_2": "Nicht deklarierten Alkohol ableiten, religiöse Lehren auslegen oder einer Person sagen, ob sie ein Produkt konsumieren soll.",
+  "what_is": "Alkohol auf einem Etikett ist Ethanol. Er kann dem Lebensmittel selbst zugesetzt werden oder als Lösungsmittel zur Trägerschaft von Aromen dienen. In der Zutatenliste kann Alkohol, Ethanol oder Ethylalkohol stehen.",
+  "why_botia": "Alkohol ist im islamischen Recht verboten. Wenn das Etikett ihn also angibt, gibt es nichts abzuwägen: Er ist Haram, nicht Mushbooh. Die WHO stellt fest, dass kein sicherer Wert für den Alkoholkonsum in Bezug auf das Krebsrisiko festgelegt werden kann. Schon kleine Mengen erhöhen das Risiko, einschließlich Brustkrebs.",
+  "can_1": "Explizit deklarierten Alkohol, Ethanol und Ethylalkohol sowie verwandte Begriffe auf dem Etikett erkennen.",
+  "can_2": "Die Informationsschichten 'Frau' und 'Muslim' anzeigen, wenn Alkohol auf dem Etikett deklariert ist.",
+  "cannot_1": "Die Menge des vorhandenen Ethanols oder das individuelle Krebsrisiko allein aus der Zutatenangabe bestimmen.",
+  "cannot_2": "Nicht deklarierten Alkohol ableiten, religiöse Lehren interpretieren oder eine Person beraten, ob sie ein Produkt konsumieren soll.",
   "sources": [
     {
-      "label": "WHO — Alcohol and cancer",
-      "url": "https://www.who.int/europe/news-room/fact-sheets/item/alcohol-and-cancer"
+      "label": "WHO — Kein sicherer Alkoholkonsum bei Krebsrisiko (2023)",
+      "url": "https://www.who.int/europe/news-room/04-01-2023-no-level-of-alcohol-consumption-is-safe-for-our-health"
     },
     {
-      "label": "WHO — Alcohol and breast cancer in women",
-      "url": "https://www.who.int/europe/news/item/07-03-2024-shouldn-t-we-know-this-already--the-link-between-alcohol-and-cancer"
-    },
-    {
-      "label": "IARC — Alcohol and cancer",
-      "url": "https://www.iarc.who.int/reference/alcohol-and-cancer/"
-    },
-    {
-      "label": "OIC/SMIIC 1:2019 — General Requirements for Halal Food",
-      "url": "https://smiic.org/en/project/24"
-    },
-    {
-      "label": "OIC/SMIIC 24:2020 — Food Additives and Other Added Chemicals to Halal Food",
-      "url": "https://smiic.org/en/project/60"
+      "label": "IARC — Alkoholkonsum und Brustkrebs",
+      "url": "https://www.iarc.who.int/featured-news/alcohol-consumption-and-breast-cancer-risk/"
     }
   ],
-  "title": "Alkohol",
-  "description": "Alkohol (Ethanol): BOTIA zeigt die gesicherte Evidenz zu weiblichem Brustkrebs und wendet getrennt davon seine Muslim-Klassifizierung auf ausdrückliche Etikettenangaben an."
+  "title": "Alcohol",
+  "description": "Alkohol auf einem Etikett ist Ethanol, das dem Lebensmittel zugesetzt wird oder als Träger für Aromen dient. Die WHO stellt fest, dass kein sicherer Wert für den Alkoholkonsum im Hinblick auf das Krebsrisiko festgelegt werden kann, einschließlich Brustkrebs. BOTIA stuft einen deklarierten Alkoholbestandteil als Haram ein."
 }
