@@ -4,11 +4,12 @@
   "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "Karragenan (INS 407 / E407), kırmızı deniz yosunlarından elde edilir ve gıdaları koyulaştırmak, jelleştirmek ve stabilize etmek için kullanılır. İşlenmiş Eucheuma yosunu (INS 407a / E407a) aynı doku işlevleri için kullanılan yakın ilişkili bir formdur.",
-  "why_botia": "Karragenan kırmızı alglerden elde edilir ve kıvam artırmak ve jel oluşturmak için kullanılır — bitkisel içeceklerde, kremada ve işlenmiş ette bulunur. Etikette E407 veya E407a olarak yer alabilir; aynı algin farklı şekilde işlenmiş hâlidir.",
+  "what_is": "Karragenan kırmızı deniz yosunundan elde edilir ve gıdaları koyulaştırmak ve jelleştirmek için kullanılır. Etikette E407 veya E407a olarak görünür — aynı deniz yosunu, farklı işlenmiş. Vücudun emmediği uzun bir zincirdir, ancak zincir daha kısa parçalara ayrılabilir ve kısa parçalar bağırsak duvarından geçer. Etiket ne kadarının zaten kırıldığını söylemez ve üretici bunu ölçmez.",
+  "why_botia": "Ne kadarının kırıldığı ve pişirme veya sindirim sırasında daha fazla kırılıp kırılmadığı belirlenmemiştir: AB'de EFSA, 2018'de karragenanı yeniden değerlendirdi ve endüstriden veri istedi. Veriler gelmedi. 92.000 yetişkini yıllarca takip eden NutriNet-Santé kohortunda, en yüksek karragenan alımına sahip kadınlar, en düşük alıma sahip olanlara göre daha fazla meme kanseri teşhisi aldı.",
   "can_1": "E407, E407a, INS 407, INS 407a, karragenan ve işlenmiş Eucheuma yosununu açıkça beyan edildiklerinde tespit etmek.",
   "can_2": "Gıda tipi karragenan ile parçalanmış formu arasındaki farkı ve küçük parçaların neden hâlâ açık bir soru olduğunu açıklamak.",
   "cannot_1": "İçerik listesinden belirli bir karragenan preparatında ne kadar küçük parçalanmış materyal bulunduğunu belirlemek.",
@@ -29,8 +30,12 @@
     {
       "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
       "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem ve diğerleri, gıda katkı maddesi emülgatörler ve kanser riski (NutriNet-Santé kohortu)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Karragenan",
-  "description": "Karragenan, bitkisel içeceklerde, kremada ve işlenmiş ette kullanılan kırmızı yosun kaynaklı bir koyulaştırıcıdır; açık soru daha küçük parçalarla ilgilidir."
+  "description": "Karragenan, bitki sütleri, krema ve işlenmiş ette kullanılan kırmızı deniz yosunu bazlı bir koyulaştırıcıdır. Zincir, bağırsak duvarından geçen daha kısa parçalara ayrılabilir ve ne kadarının kırıldığı belirlenmemiştir. NutriNet-Santé kohortunda, daha yüksek alıma sahip kadınlar daha fazla meme kanseri teşhisi aldı."
 }

@@ -4,11 +4,12 @@
   "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "Carrageen (INS 407 / E407) komt uit rode zeewieren en wordt gebruikt om voedingsmiddelen te verdikken, geleren en stabiliseren. Verwerkt Eucheuma-zeewier (INS 407a / E407a) is een nauw verwante vorm met dezelfde textuurfuncties.",
-  "why_botia": "Carrageen wordt uit rode algen gewonnen en gebruikt om te verdikken en te geleren — het komt voor in plantaardige dranken, room en verwerkt vlees. Op het etiket kan het als E407 of E407a staan; het gaat om dezelfde alg met een andere verwerking.",
+  "what_is": "Carrageen komt van rode zeewieren en wordt gebruikt om voedingsmiddelen te verdikken en te geleren. Op het etiket staat het als E407 of E407a — hetzelfde zeewier, anders verwerkt. Het is een lange keten die het lichaam niet opneemt, maar de keten kan in kortere stukken breken, en korte stukken passeren wel de darmwand. Het etiket zegt niet hoeveel er al gebroken is, en de fabrikant meet het niet.",
+  "why_botia": "Hoeveel er breekt, en of er meer breekt tijdens het koken of de spijsvertering, is niet vastgesteld: in de EU heeft de EFSA carrageen in 2018 opnieuw geëvalueerd en de industrie om gegevens gevraagd. Die zijn niet aangekomen. In het NutriNet-Santé-cohort, dat 92.000 volwassenen jarenlang volgde, hadden vrouwen met de hoogste carrageen-inname meer borstkankerdiagnoses dan degenen met de laagste.",
   "can_1": "E407, E407a, INS 407, INS 407a, carrageen en verwerkt Eucheuma-zeewier detecteren wanneer deze expliciet worden vermeld.",
   "can_2": "Het verschil uitleggen tussen carrageen van voedselkwaliteit en de afgebroken vorm, en waarom kleinere stukken nog steeds een open vraag zijn.",
   "cannot_1": "Uit de ingrediëntenlijst bepalen hoeveel kleiner afgebroken materiaal in een bepaalde carrageenbereiding zit.",
@@ -29,8 +30,12 @@
     {
       "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
       "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., voedsel-emulgatoren en kankerrisico (NutriNet-Santé-cohort)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Carrageen",
-  "description": "Carrageen is een verdikkingsmiddel uit rode zeewieren in plantaardige dranken, room en verwerkt vlees; de open vraag gaat over kleinere afbraakstukken."
+  "description": "Carrageen is een verdikkingsmiddel van rode zeewieren, gebruikt in plantaardige dranken, room en verwerkt vlees. De keten kan in kortere stukken breken die de darmwand passeren, en hoeveel er breekt is niet vastgesteld. In het NutriNet-Santé-cohort hadden vrouwen met een hogere inname meer borstkankerdiagnoses."
 }

@@ -4,11 +4,12 @@
   "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "La carraghénane (INS 407 / E407) provient d'algues rouges et sert à épaissir, gélifier et stabiliser les aliments. L'algue Eucheuma transformée (INS 407a / E407a) est une forme étroitement apparentée utilisée pour les mêmes fonctions de texture.",
-  "why_botia": "La carraghénane provient d’algues rouges et sert à épaissir et à gélifier — on la trouve dans les boissons végétales, la crème et les viandes transformées. Sur l’étiquette, elle peut apparaître comme E407 ou E407a : il s’agit de la même algue avec un traitement différent.",
+  "what_is": "Le carraghénane provient d'algues rouges et est utilisé pour épaissir et gélifier les aliments. Sur l'étiquette, il apparaît comme E407 ou E407a — la même algue, transformée différemment. C'est une longue chaîne que le corps n'absorbe pas, mais la chaîne peut se briser en fragments plus courts, et les fragments courts traversent bien la paroi intestinale. L'étiquette n'indique pas quelle quantité est déjà brisée, et le fabricant ne la mesure pas.",
+  "why_botia": "On ne sait pas combien se brise, ni si davantage se brise pendant la cuisson ou la digestion : dans l'UE, l'EFSA a réévalué le carraghénane en 2018 et a demandé les données à l'industrie. Elles ne sont pas arrivées. Dans la cohorte NutriNet-Santé, qui a suivi 92 000 adultes pendant des années, les femmes ayant la plus forte consommation de carraghénane ont eu plus de diagnostics de cancer du sein que celles ayant la plus faible.",
   "can_1": "Détecter E407, E407a, INS 407, INS 407a, carraghénane et algue Eucheuma transformée lorsqu'ils sont explicitement déclarés.",
   "can_2": "Expliquer la différence entre la carraghénane alimentaire et sa forme dégradée, et pourquoi les petits fragments restent une question ouverte.",
   "cannot_1": "Déterminer à partir de la liste des ingrédients la quantité de matériau dégradé en petits fragments présente dans une préparation donnée.",
@@ -29,8 +30,12 @@
     {
       "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
       "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., émulsifiants alimentaires et risque de cancer (cohorte NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Carraghénane",
-  "description": "La carraghénane est un épaississant d'algues rouges utilisé dans les boissons végétales, la crème et les viandes transformées ; la question ouverte concerne les petits fragments."
+  "description": "Le carraghénane est un épaississant d'algues rouges utilisé dans les laits végétaux, la crème et la viande transformée. La chaîne peut se briser en fragments plus courts qui traversent la paroi intestinale, et on ne sait pas combien se brise. Dans la cohorte NutriNet-Santé, les femmes ayant une consommation plus élevée ont eu plus de diagnostics de cancer du sein."
 }

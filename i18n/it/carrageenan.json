@@ -4,11 +4,12 @@
   "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "La carragenina (INS 407 / E407) deriva da alghe rosse ed è usata per addensare, gelificare e stabilizzare gli alimenti. L'alga Eucheuma lavorata (INS 407a / E407a) è una forma strettamente correlata usata per le stesse funzioni di consistenza.",
-  "why_botia": "La carragenina deriva da alghe rosse e viene usata per addensare e gelificare — si trova nelle bevande vegetali, nella panna e nelle carni lavorate. In etichetta può comparire come E407 o E407a: si tratta della stessa alga con una lavorazione diversa.",
+  "what_is": "Il carragenano proviene da alghe rosse e viene utilizzato per addensare e gelificare gli alimenti. Sull'etichetta appare come E407 o E407a — la stessa alga, lavorata diversamente. È una catena lunga che l'organismo non assorbe, ma la catena può rompersi in pezzi più corti, e i pezzi corti attraversano la parete intestinale. L'etichetta non dice quanto è già rotto e il produttore non lo misura.",
+  "why_botia": "Non è stato stabilito quanto si rompa e se si rompa di più durante la cottura o la digestione: nell'UE, l'EFSA ha rivalutato il carragenano nel 2018 e ha chiesto i dati all'industria. Non sono arrivati. Nella coorte NutriNet-Santé, che ha seguito 92.000 adulti per anni, le donne con il più alto consumo di carragenano hanno avuto più diagnosi di cancro al seno rispetto a quelle con il consumo più basso.",
   "can_1": "Rilevare E407, E407a, INS 407, INS 407a, carragenina e alga Eucheuma lavorata quando dichiarati esplicitamente.",
   "can_2": "Spiegare la differenza tra carragenina alimentare e la sua forma degradata e perché i frammenti più piccoli restano una questione aperta.",
   "cannot_1": "Determinare dalla lista degli ingredienti quanto materiale degradato in frammenti più piccoli è presente in una specifica preparazione.",
@@ -29,8 +30,12 @@
     {
       "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
       "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., emulsionanti alimentari e rischio di cancro (coorte NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Carragenina",
-  "description": "La carragenina è un addensante da alghe rosse usato in bevande vegetali, panna e carne lavorata; la questione aperta riguarda i frammenti più piccoli."
+  "description": "Il carragenano è un addensante di alghe rosse utilizzato in latte vegetali, panna e carne lavorata. La catena può rompersi in pezzi più corti che attraversano la parete intestinale, e non è stato stabilito quanto si rompa. Nella coorte NutriNet-Santé, le donne con un consumo più elevato hanno avuto più diagnosi di cancro al seno."
 }

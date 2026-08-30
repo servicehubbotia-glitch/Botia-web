@@ -4,11 +4,12 @@
   "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "A carragenina (INS 407 / E407) provém de algas vermelhas e é utilizada para espessar, gelificar e estabilizar alimentos. A alga Eucheuma processada (INS 407a / E407a) é uma forma estreitamente relacionada utilizada para as mesmas funções de textura.",
-  "why_botia": "A carragenina provém de algas vermelhas e é utilizada para espessar e gelificar — encontra-se em bebidas vegetais, natas e carne processada. No rótulo pode aparecer como E407 ou E407a, que correspondem à mesma alga com um processamento diferente.",
+  "what_is": "O carragenano provém de algas vermelhas e é utilizado para espessar e gelificar alimentos. No rótulo aparece como E407 ou E407a — a mesma alga, processada de forma diferente. É uma cadeia longa que o corpo não absorve, mas a cadeia pode partir-se em pedaços mais curtos, e os pedaços curtos atravessam a parede intestinal. O rótulo não indica quanto já está partido e o fabricante não o mede.",
+  "why_botia": "Não se estabeleceu quanto se parte, nem se parte mais durante a cozedura ou a digestão: na UE, a EFSA reavaliou o carragenano em 2018 e pediu os dados à indústria. Não chegaram. Na coorte NutriNet-Santé, que acompanhou 92.000 adultos durante anos, as mulheres com maior ingestão de carragenano tiveram mais diagnósticos de cancro da mama do que as com menor ingestão.",
   "can_1": "Detetar E407, E407a, INS 407, INS 407a, carragenina e alga Eucheuma processada quando declarados explicitamente.",
   "can_2": "Explicar a diferença entre carragenina alimentar e a sua forma degradada e por que os fragmentos menores continuam a ser uma questão em aberto.",
   "cannot_1": "Determinar pela lista de ingredientes quanto material degradado em fragmentos menores existe numa determinada preparação.",
@@ -29,8 +30,12 @@
     {
       "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
       "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., emulsionantes alimentares e risco de cancro (coorte NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Carragenina",
-  "description": "A carragenina é um espessante de algas vermelhas usado em bebidas vegetais, natas e carne processada; a questão em aberto são os fragmentos menores."
+  "description": "O carragenano é um espessante de algas vermelhas utilizado em leites vegetais, natas e carne processada. A cadeia pode partir-se em pedaços mais curtos que atravessam a parede intestinal, e não se estabeleceu quanto se parte. Na coorte NutriNet-Santé, as mulheres com maior ingestão tiveram mais diagnósticos de cancro da mama."
 }

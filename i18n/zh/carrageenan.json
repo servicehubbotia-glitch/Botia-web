@@ -4,11 +4,12 @@
   "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "卡拉胶（INS 407 / E407）来自红藻，用于增稠、凝胶和稳定食品。加工麒麟菜（INS 407a / E407a）是与其密切相关、用于相同质构功能的形式。",
-  "why_botia": "卡拉胶来自红藻，用于增稠和形成凝胶——常见于植物饮料、奶油和加工肉制品中。在标签上，它可能标为 E407 或 E407a；两者来自同一种海藻，只是加工方式不同。",
+  "what_is": "卡拉胶来自红藻，用于增稠和胶凝食品。在标签上显示为 E407 或 E407a — 同一种海藻，加工方式不同。它是一种长链，人体无法吸收，但链可以断裂成较短的片段，而短片段确实会穿过肠壁。标签没有说明其中有多少已经断裂，制造商也不测量。",
+  "why_botia": "有多少会断裂，以及在烹饪或消化过程中是否会更多断裂，尚未确定：在欧盟，EFSA 于 2018 年重新评估了卡拉胶，并要求行业提供数据。数据尚未到达。在 NutriNet-Santé 队列研究中，该研究对 92,000 名成年人进行了多年跟踪，卡拉胶摄入量最高的女性比摄入量最低的女性有更多的乳腺癌诊断。",
   "can_1": "识别明确标示的 E407、E407a、INS 407、INS 407a、卡拉胶和加工麒麟菜。",
   "can_2": "解释食品级卡拉胶与其分解形式的区别，以及为什么较小片段仍是一个未解决的问题。",
   "cannot_1": "仅根据配料表确定某一具体卡拉胶制品中含有多少较小的分解材料。",
@@ -29,8 +30,12 @@
     {
       "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
       "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem 等人，食品添加剂乳化剂与癌症风险（NutriNet-Santé 队列）",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "卡拉胶",
-  "description": "卡拉胶是一种来自红藻的增稠剂，常用于植物饮料、奶油和加工肉制品；未解决的问题在于较小的分解片段。"
+  "description": "卡拉胶是一种红藻增稠剂，用于植物奶、奶油和加工肉类。链可以断裂成穿过肠壁的较短片段，断裂程度尚未确定。在 NutriNet-Santé 队列中，摄入量较高的女性有更多的乳腺癌诊断。"
 }

@@ -4,11 +4,12 @@
   "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "Carrageen (INS 407 / E407) wird aus Rotalgen gewonnen und zum Verdicken, Gelieren und Stabilisieren von Lebensmitteln verwendet. Verarbeitete Eucheuma-Algen (INS 407a / E407a) sind eine eng verwandte Form mit denselben Texturfunktionen.",
-  "why_botia": "Carrageen stammt aus Rotalgen und wird zum Verdicken und Gelieren verwendet — es findet sich in pflanzlichen Getränken, Sahne und verarbeitetem Fleisch. Auf dem Etikett kann es als E407 oder E407a erscheinen; dabei handelt es sich um dieselbe Alge mit unterschiedlicher Verarbeitung.",
+  "what_is": "Carrageen stammt aus Rotalgen und wird zum Verdicken und Gelieren von Lebensmitteln verwendet. Auf dem Etikett erscheint es als E407 oder E407a — dieselbe Alge, anders verarbeitet. Es ist eine lange Kette, die der Körper nicht aufnimmt, aber die Kette kann in kürzere Stücke zerbrechen, und kurze Stücke durchdringen die Darmwand. Das Etikett sagt nicht, wie viel davon bereits zerbrochen ist, und der Hersteller misst es nicht.",
+  "why_botia": "Wie viel zerfällt und ob während des Kochens oder der Verdauung mehr zerfällt, ist nicht geklärt: In der EU hat die EFSA Carrageen 2018 neu bewertet und die Industrie um Daten gebeten. Sie sind nicht eingetroffen. In der NutriNet-Santé-Kohorte, die 92.000 Erwachsene über Jahre begleitete, hatten Frauen mit der höchsten Carrageen-Aufnahme mehr Brustkrebsdiagnosen als die mit der niedrigsten.",
   "can_1": "E407, E407a, INS 407, INS 407a, Carrageen und verarbeitete Eucheuma-Algen erkennen, wenn sie ausdrücklich deklariert sind.",
   "can_2": "Den Unterschied zwischen Carrageen in Lebensmittelqualität und seiner abgebauten Form erklären und warum die kleineren Stücke weiterhin eine offene Frage sind.",
   "cannot_1": "Aus der Zutatenliste bestimmen, wie viel kleineres abgebautes Material in einer bestimmten Carrageen-Zubereitung enthalten ist.",
@@ -29,8 +30,12 @@
     {
       "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
       "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., Lebensmittel-Emulgatoren und Krebsrisiko (NutriNet-Santé-Kohorte)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Carrageen",
-  "description": "Carrageen ist ein Verdickungsmittel aus Rotalgen in Pflanzendrinks, Sahne und verarbeitetem Fleisch; offen bleibt die Frage nach kleineren Abbauprodukten."
+  "description": "Carrageen ist ein Verdickungsmittel aus Rotalgen, das in Pflanzendrinks, Sahne und verarbeitetem Fleisch verwendet wird. Die Kette kann in kürzere Stücke zerbrechen, die die Darmwand durchdringen, und wie viel zerfällt ist nicht geklärt. In der NutriNet-Santé-Kohorte hatten Frauen mit höherer Aufnahme mehr Brustkrebsdiagnosen."
 }

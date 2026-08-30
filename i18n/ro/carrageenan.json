@@ -4,11 +4,12 @@
   "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "Caragenanul (INS 407 / E407) provine din alge roșii și este folosit pentru îngroșarea, gelificarea și stabilizarea alimentelor. Alga Eucheuma procesată (INS 407a / E407a) este o formă strâns înrudită folosită pentru aceleași funcții de textură.",
-  "why_botia": "Carragenanul provine din alge roșii și este folosit pentru îngroșare și gelificare — se găsește în băuturi vegetale, smântână și carne procesată. Pe etichetă poate apărea ca E407 sau E407a, fiind aceeași algă cu o prelucrare diferită.",
+  "what_is": "Caragenanul provine din alge roșii și este utilizat pentru a îngroșa și gelifica alimentele. Pe etichetă apare ca E407 sau E407a — aceeași algă, procesată diferit. Este un lanț lung pe care organismul nu îl absoarbe, dar lanțul se poate rupe în bucăți mai scurte, iar bucățile scurte trec prin peretele intestinal. Eticheta nu spune cât este deja rupt și producătorul nu măsoară acest lucru.",
+  "why_botia": "Nu s-a stabilit cât se rupe și dacă se rupe mai mult în timpul gătitului sau digestiei: în UE, EFSA a reevaluat caragenanul în 2018 și a cerut industriei datele. Nu au sosit. În cohorta NutriNet-Santé, care a urmărit 92.000 de adulți timp de ani de zile, femeile cu cel mai mare consum de caragenan au avut mai multe diagnostice de cancer mamar decât cele cu cel mai scăzut consum.",
   "can_1": "Detecta E407, E407a, INS 407, INS 407a, caragenan și algă Eucheuma procesată atunci când sunt declarate explicit.",
   "can_2": "Explica diferența dintre caragenanul alimentar și forma sa degradată și de ce fragmentele mai mici rămân o întrebare deschisă.",
   "cannot_1": "Determina din lista ingredientelor cât material degradat în fragmente mai mici se află într-un anumit preparat.",
@@ -29,8 +30,12 @@
     {
       "label": "EFSA — Follow-up data request on carrageenan and unresolved breakdown questions",
       "url": "https://www.efsa.europa.eu/en/consultations/call/call-technical-and-toxicological-data-carrageenan-e-407-uses-foods"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., emulgatori alimentari și riscul de cancer (cohorta NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Caragenan",
-  "description": "Caragenanul este un agent de îngroșare din alge roșii folosit în băuturi vegetale, smântână și carne procesată; întrebarea deschisă privește fragmentele mai mici."
+  "description": "Caragenanul este un agent de îngroșare din alge roșii utilizat în lapte vegetal, smântână și carne procesată. Lanțul se poate rupe în bucăți mai scurte care trec prin peretele intestinal, iar gradul de rupere nu a fost stabilit. În cohorta NutriNet-Santé, femeile cu un consum mai mare au avut mai multe diagnostice de cancer mamar."
 }
