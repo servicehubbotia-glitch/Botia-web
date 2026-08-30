@@ -1,39 +1,27 @@
 {
-  "name": "Nitrieten en nitraten",
-  "title": "Nitrieten en nitraten",
-  "description": "Nitrieten en nitraten conserveren gepekeld vlees: nitriet remt Clostridium botulinum maar kan ook bijdragen aan de vorming van N-nitrosoverbindingen.",
-  "what_is": "Nitrieten en nitraten zijn pekel- en conserveermiddelen die vooral in verwerkt en gepekeld vlees worden gebruikt. E249 en E250 zijn kaliumnitriet en natriumnitriet; E251 en E252 zijn natriumnitraat en kaliumnitraat.",
-  "why_botia": "Nitriet conserveert gepekeld vlees en remt Clostridium botulinum, de bacterie die botulisme veroorzaakt. Onder bepaalde omstandigheden kan nitriet met andere stoffen in voedsel reageren en N-nitrosoverbindingen vormen; IARC classificeerde in 2015 verwerkt vlees — niet nitriet zelf — als kankerverwekkend voor mensen (Groep 1). JECFA stelde afzonderlijke ADI's vast: 0–0,07 mg/kg lichaamsgewicht per dag voor nitriet en 0–3,7 mg/kg voor nitraat.",
-  "can_1": "E249, E250, E251, E252, INS 249–252 en de overeenkomstige namen natrium- of kaliumnitriet en -nitraat herkennen.",
-  "can_2": "Uitleggen waarom nitriet in gepekeld vlees wordt gebruikt, de rol tegen botulisme, de mogelijke vorming van N-nitrosoverbindingen, de IARC-classificatie van verwerkt vlees en de afzonderlijke JECFA-ADI's.",
-  "cannot_1": "Uit de ingrediëntenlijst bepalen hoeveel nitriet of nitraat werd toegevoegd, hoeveel na het pekelen overblijft of hoeveel N-nitrosoverbindingen zijn gevormd.",
-  "cannot_2": "De IARC-Groep-1-classificatie van verwerkt vlees behandelen als een classificatie van nitriet zelf of op basis van één etiket een individueel kankerrisico berekenen.",
-  "sources": [
-    {
-      "label": "JECFA — Nitrite, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
-    },
-    {
-      "label": "JECFA — Nitrate, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
-    },
-    {
-      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
-      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
-      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "USDA FSIS — Nitrites and prevention of botulism",
-      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
-    }
-  ],
-  "e_code": "E249–E252",
+  "name": "Nitrites & Nitrates",
+  "e_code": "E249–E251",
+  "aliases": "E249, E250, E251, INS 249, INS 250, INS 251, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "what_is": "Nitrieten en nitraten zijn conserveermiddelen voor het pekelen, vooral gebruikt in verwerkt en gezouten vlees. E249 en E250 zijn kaliumnitriet en natriumnitriet; E251 is natriumnitraat.",
+  "why_botia": "Nitriet conserveert gezouten vlees en remt de bacterie Clostridium botulinum, die botulisme veroorzaakt. Onder bepaalde omstandigheden kan nitriet reageren met andere verbindingen in voedsel om N-nitrosoverbindingen te vormen; het IARC classificeerde verwerkt vlees — niet nitriet zelf — in 2015 als kankerverwekkend voor de mens (Groep 1). De JECFA stelde afzonderlijke ADI-waarden vast: 0–0,07 mg/kg lichaamsgewicht per dag voor nitriet en 0–3,7 mg/kg voor nitraat.",
+  "can_1": "Detect E249, E250, E251, INS 249–251 and the corresponding potassium nitrite, sodium nitrite and sodium nitrate names.",
+  "can_2": "Explain why nitrite is used in cured meat, its role against botulism, its ability to participate in N-nitroso compound formation, the IARC processed-meat classification and the separate JECFA ADIs.",
+  "cannot_1": "Determine from the ingredient list how much nitrite or nitrate was added, how much remains after curing, or how much N-nitroso compound formed.",
+  "cannot_2": "Treat the IARC Group 1 classification of processed meat as a classification of nitrite itself or calculate an individual's cancer risk from one label.",
+  "sources": [
+    {
+      "label": "JECFA — Sodium nitrite (INS 250) and Sodium nitrate (INS 251)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Preservatives&chemical=nitrite"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E249–E251 nitrites and nitrates",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Nitrites & Nitrates",
+  "description": "Nitrieten en nitraten conserveren gezouten vlees: nitriet remt Clostridium botulinum maar kan ook deelnemen aan de vorming van N-nitrosoverbindingen."
 }

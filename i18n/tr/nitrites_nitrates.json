@@ -1,39 +1,27 @@
 {
-  "name": "Nitritler ve Nitratlar",
-  "title": "Nitritler ve Nitratlar",
-  "description": "Nitritler ve nitratlar kürlenmiş eti korur: nitrit Clostridium botulinum'u baskılar ancak N-nitroso bileşiklerinin oluşumuna da katılabilir.",
-  "what_is": "Nitritler ve nitratlar özellikle işlenmiş ve kürlenmiş etlerde kullanılan kürleme koruyucularıdır. E249 ve E250 potasyum nitrit ve sodyum nitrittir; E251 ve E252 sodyum nitrat ve potasyum nitrattır.",
-  "why_botia": "Nitrit kürlenmiş eti korur ve botulizme neden olan Clostridium botulinum bakterisini baskılar. Belirli koşullarda gıdadaki diğer bileşiklerle reaksiyona girerek N-nitroso bileşikleri oluşturabilir; IARC 2015'te işlenmiş eti — nitritin kendisini değil — insanlar için kanserojen (Grup 1) olarak sınıflandırdı. JECFA ayrı ADI değerleri belirledi: nitrit için günlük 0–0,07 mg/kg vücut ağırlığı ve nitrat için 0–3,7 mg/kg.",
-  "can_1": "E249, E250, E251, E252, INS 249–252 ve bunlara karşılık gelen sodyum veya potasyum nitrit ve nitrat adlarını tespit etmek.",
-  "can_2": "Nitritin kürlenmiş ette neden kullanıldığını, botulizme karşı rolünü, N-nitroso bileşiklerinin oluşumuna katılabilmesini, IARC'ın işlenmiş et sınıflandırmasını ve JECFA'nın ayrı ADI değerlerini açıklamak.",
-  "cannot_1": "Yalnızca içerik listesinden ne kadar nitrit veya nitrat eklendiğini, kürleme sonrasında ne kadar kaldığını ya da ne kadar N-nitroso bileşiği oluştuğunu belirlemek.",
-  "cannot_2": "IARC'ın işlenmiş et için Grup 1 sınıflandırmasını nitritin kendisinin sınıflandırması olarak yorumlamak veya tek bir etiketten bireysel kanser riski hesaplamak.",
-  "sources": [
-    {
-      "label": "JECFA — Nitrite, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
-    },
-    {
-      "label": "JECFA — Nitrate, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
-    },
-    {
-      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
-      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
-      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "USDA FSIS — Nitrites and prevention of botulism",
-      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
-    }
-  ],
-  "e_code": "E249–E252",
+  "name": "Nitrites & Nitrates",
+  "e_code": "E249–E251",
+  "aliases": "E249, E250, E251, INS 249, INS 250, INS 251, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "what_is": "Nitritler ve nitratlar, özellikle işlenmiş ve salamuralı etlerde kullanılan salamuralı koruyuculardır. E249 ve E250 potasyum nitrit ve sodyum nitrittir; E251 sodyum nitrattır.",
+  "why_botia": "Nitrit, salamuralı eti korur ve botulizme neden olan Clostridium botulinum bakterisini engeller. Bazı koşullar altında nitrit, gıdadaki diğer bileşiklerle reaksiyona girerek N-nitrozo bileşikleri oluşturabilir; IARC, 2015 yılında işlenmiş eti — nitritin kendisini değil — insanlar için kanserojen (Grup 1) olarak sınıflandırdı. JECFA ayrı günlük alım miktarları belirledi: nitrit için 0–0.07 mg/kg vücut ağırlığı/gün ve nitrat için 0–3.7 mg/kg.",
+  "can_1": "Detect E249, E250, E251, INS 249–251 and the corresponding potassium nitrite, sodium nitrite and sodium nitrate names.",
+  "can_2": "Explain why nitrite is used in cured meat, its role against botulism, its ability to participate in N-nitroso compound formation, the IARC processed-meat classification and the separate JECFA ADIs.",
+  "cannot_1": "Determine from the ingredient list how much nitrite or nitrate was added, how much remains after curing, or how much N-nitroso compound formed.",
+  "cannot_2": "Treat the IARC Group 1 classification of processed meat as a classification of nitrite itself or calculate an individual's cancer risk from one label.",
+  "sources": [
+    {
+      "label": "JECFA — Sodium nitrite (INS 250) and Sodium nitrate (INS 251)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Preservatives&chemical=nitrite"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E249–E251 nitrites and nitrates",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Nitrites & Nitrates",
+  "description": "Nitritler ve nitratlar salamuralı eti korur: nitrit Clostridium botulinum'u engeller ancak N-nitrozo bileşiklerinin oluşumuna da katkıda bulunabilir."
 }

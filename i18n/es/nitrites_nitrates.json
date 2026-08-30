@@ -1,39 +1,27 @@
 {
-  "name": "Nitritos y nitratos",
-  "title": "Nitritos y nitratos",
-  "description": "Los nitritos y nitratos conservan la carne curada: el nitrito inhibe Clostridium botulinum pero también puede participar en la formación de compuestos N-nitroso.",
-  "what_is": "Los nitritos y nitratos son conservantes de curado utilizados especialmente en carnes procesadas y curadas. E249 y E250 son nitrito de potasio y nitrito de sodio; E251 y E252 son nitrato de sodio y nitrato de potasio.",
-  "why_botia": "El nitrito conserva la carne curada e inhibe Clostridium botulinum, la bacteria que causa el botulismo. En determinadas condiciones puede reaccionar con otros compuestos del alimento y formar compuestos N-nitroso; IARC clasificó la carne procesada — no el nitrito por sí solo — como carcinógena para los seres humanos (Grupo 1) en 2015. JECFA estableció IDA separadas: 0–0,07 mg/kg de peso corporal al día para nitrito y 0–3,7 mg/kg para nitrato.",
-  "can_1": "Detectar E249, E250, E251, E252, INS 249–252 y los correspondientes nombres nitrito o nitrato de sodio y potasio.",
-  "can_2": "Explicar por qué se utiliza nitrito en la carne curada, su papel frente al botulismo, su capacidad para participar en la formación de compuestos N-nitroso, la clasificación de IARC de la carne procesada y las IDA separadas de JECFA.",
-  "cannot_1": "Determinar a partir de la lista de ingredientes cuánto nitrito o nitrato se añadió, cuánto queda después del curado o cuánto compuesto N-nitroso se formó.",
-  "cannot_2": "Tratar la clasificación Grupo 1 de IARC para la carne procesada como si fuera una clasificación del nitrito por sí solo ni calcular el riesgo individual de cáncer a partir de una etiqueta.",
-  "sources": [
-    {
-      "label": "JECFA — Nitrite, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
-    },
-    {
-      "label": "JECFA — Nitrate, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
-    },
-    {
-      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
-      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
-      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "USDA FSIS — Nitrites and prevention of botulism",
-      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
-    }
-  ],
-  "e_code": "E249–E252",
+  "name": "Nitrites & Nitrates",
+  "e_code": "E249–E251",
+  "aliases": "E249, E250, E251, INS 249, INS 250, INS 251, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "what_is": "Los nitritos y nitratos son conservantes de curado utilizados especialmente en carnes procesadas y curadas. E249 y E250 son nitrito potásico y sódico; E251 es nitrato sódico.",
+  "why_botia": "El nitrito conserva la carne curada e inhibe la bacteria Clostridium botulinum, causante del botulismo. En algunas condiciones, el nitrito puede reaccionar con otros compuestos de los alimentos para formar compuestos N-nitroso; la IARC clasificó la carne procesada —no el nitrito en sí— como carcinógena para humanos (Grupo 1) en 2015. La JECFA estableció ingestas diarias admisibles separadas: 0–0,07 mg/kg de peso corporal al día para nitrito y 0–3,7 mg/kg para nitrato.",
+  "can_1": "Detect E249, E250, E251, INS 249–251 and the corresponding potassium nitrite, sodium nitrite and sodium nitrate names.",
+  "can_2": "Explain why nitrite is used in cured meat, its role against botulism, its ability to participate in N-nitroso compound formation, the IARC processed-meat classification and the separate JECFA ADIs.",
+  "cannot_1": "Determine from the ingredient list how much nitrite or nitrate was added, how much remains after curing, or how much N-nitroso compound formed.",
+  "cannot_2": "Treat the IARC Group 1 classification of processed meat as a classification of nitrite itself or calculate an individual's cancer risk from one label.",
+  "sources": [
+    {
+      "label": "JECFA — Sodium nitrite (INS 250) and Sodium nitrate (INS 251)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Preservatives&chemical=nitrite"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E249–E251 nitrites and nitrates",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Nitrites & Nitrates",
+  "description": "Los nitritos y nitratos conservan la carne curada: el nitrito inhibe Clostridium botulinum pero también puede participar en la formación de compuestos N-nitroso."
 }

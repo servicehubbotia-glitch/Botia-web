@@ -1,39 +1,27 @@
 {
-  "name": "Nitriți și nitrați",
-  "title": "Nitriți și nitrați",
-  "description": "Nitriții și nitrații conservă carnea tratată: nitritul inhibă Clostridium botulinum, dar poate participa și la formarea compușilor N-nitrozo.",
-  "what_is": "Nitriții și nitrații sunt conservanți de maturare utilizați în special în carnea procesată și tratată. E249 și E250 sunt nitrit de potasiu și nitrit de sodiu; E251 și E252 sunt nitrat de sodiu și nitrat de potasiu.",
-  "why_botia": "Nitritul conservă carnea tratată și inhibă Clostridium botulinum, bacteria care provoacă botulismul. În anumite condiții poate reacționa cu alți compuși din alimente și poate forma compuși N-nitrozo; în 2015, IARC a clasificat carnea procesată — nu nitritul în sine — drept cancerigenă pentru oameni (Grupa 1). JECFA a stabilit ADI separate: 0–0,07 mg/kg greutate corporală pe zi pentru nitrit și 0–3,7 mg/kg pentru nitrat.",
-  "can_1": "Detecta E249, E250, E251, E252, INS 249–252 și denumirile corespunzătoare de nitrit sau nitrat de sodiu și potasiu.",
-  "can_2": "Explica de ce se utilizează nitritul în carnea tratată, rolul său împotriva botulismului, posibilitatea formării compușilor N-nitrozo, clasificarea IARC a cărnii procesate și ADI separate ale JECFA.",
-  "cannot_1": "Determina din lista ingredientelor cât nitrit sau nitrat a fost adăugat, cât rămâne după tratare sau cât compus N-nitrozo s-a format.",
-  "cannot_2": "Trata clasificarea IARC Grupa 1 a cărnii procesate ca pe o clasificare a nitritului însuși sau calcula riscul individual de cancer dintr-o singură etichetă.",
-  "sources": [
-    {
-      "label": "JECFA — Nitrite, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
-    },
-    {
-      "label": "JECFA — Nitrate, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
-    },
-    {
-      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
-      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
-      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "USDA FSIS — Nitrites and prevention of botulism",
-      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
-    }
-  ],
-  "e_code": "E249–E252",
+  "name": "Nitrites & Nitrates",
+  "e_code": "E249–E251",
+  "aliases": "E249, E250, E251, INS 249, INS 250, INS 251, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "what_is": "Nitriții și nitrații sunt conservanți pentru sărare utilizați mai ales în carnea procesată și sărată. E249 și E250 sunt nitrit de potasiu și nitrit de sodiu; E251 este nitrat de sodiu.",
+  "why_botia": "Nitritul conservă carnea sărată și inhibă bacteria Clostridium botulinum, care provoacă botulismul. În anumite condiții, nitritul poate reacționa cu alți compuși din alimente pentru a forma compuși N-nitrozo; IARC a clasificat carnea procesată — nu nitritul în sine — ca fiind cancerigenă pentru oameni (Grupa 1) în 2015. JECFA a stabilit doze zilnice admisibile separate: 0–0,07 mg/kg greutate corporală pe zi pentru nitrit și 0–3,7 mg/kg pentru nitrat.",
+  "can_1": "Detect E249, E250, E251, INS 249–251 and the corresponding potassium nitrite, sodium nitrite and sodium nitrate names.",
+  "can_2": "Explain why nitrite is used in cured meat, its role against botulism, its ability to participate in N-nitroso compound formation, the IARC processed-meat classification and the separate JECFA ADIs.",
+  "cannot_1": "Determine from the ingredient list how much nitrite or nitrate was added, how much remains after curing, or how much N-nitroso compound formed.",
+  "cannot_2": "Treat the IARC Group 1 classification of processed meat as a classification of nitrite itself or calculate an individual's cancer risk from one label.",
+  "sources": [
+    {
+      "label": "JECFA — Sodium nitrite (INS 250) and Sodium nitrate (INS 251)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Preservatives&chemical=nitrite"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E249–E251 nitrites and nitrates",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Nitrites & Nitrates",
+  "description": "Nitriții și nitrații conservă carnea sărată: nitritul inhibă Clostridium botulinum dar poate participa și la formarea compușilor N-nitrozo."
 }

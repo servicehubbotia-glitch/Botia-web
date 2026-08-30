@@ -1,39 +1,27 @@
 {
-  "name": "亚硝酸盐与硝酸盐",
-  "title": "亚硝酸盐与硝酸盐",
-  "description": "亚硝酸盐和硝酸盐用于保存腌制肉：亚硝酸盐抑制 Clostridium botulinum，但也可能参与形成 N-亚硝基化合物。",
-  "what_is": "亚硝酸盐和硝酸盐是腌制防腐剂，尤其用于加工肉和腌制肉。E249 和 E250 分别是亚硝酸钾和亚硝酸钠；E251 和 E252 分别是硝酸钠和硝酸钾。",
-  "why_botia": "亚硝酸盐可以保存腌制肉，并抑制导致肉毒杆菌中毒的 Clostridium botulinum。在某些条件下，亚硝酸盐会与食品中的其他化合物反应形成 N-亚硝基化合物；IARC 在2015年将加工肉 — 而不是亚硝酸盐本身 — 列为对人类致癌（1类）。JECFA 分别设定了 ADI：亚硝酸盐为每天每公斤体重0–0.07毫克，硝酸盐为0–3.7毫克。",
-  "can_1": "识别 E249、E250、E251、E252、INS 249–252，以及相应的亚硝酸钠、亚硝酸钾、硝酸钠和硝酸钾名称。",
-  "can_2": "解释亚硝酸盐为什么用于腌制肉、其防止肉毒杆菌中毒的作用、形成 N-亚硝基化合物的可能性、IARC 对加工肉的分类以及 JECFA 分别设定的 ADI。",
-  "cannot_1": "仅根据配料表确定实际添加了多少亚硝酸盐或硝酸盐、腌制后还剩多少，或形成了多少 N-亚硝基化合物。",
-  "cannot_2": "把 IARC 对加工肉的1类致癌分类当作对亚硝酸盐本身的分类，或从一张标签计算个人癌症风险。",
-  "sources": [
-    {
-      "label": "JECFA — Nitrite, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
-    },
-    {
-      "label": "JECFA — Nitrate, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
-    },
-    {
-      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
-      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
-      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "USDA FSIS — Nitrites and prevention of botulism",
-      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
-    }
-  ],
-  "e_code": "E249–E252",
+  "name": "Nitrites & Nitrates",
+  "e_code": "E249–E251",
+  "aliases": "E249, E250, E251, INS 249, INS 250, INS 251, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "what_is": "亚硝酸盐和硝酸盐是腌制防腐剂，特别用于加工和腌制肉类。E249和E250是亚硝酸钾和亚硝酸钠；E251是硝酸钠。",
+  "why_botia": "亚硝酸盐腌制肉类并抑制肉毒杆菌（导致肉毒中毒的细菌）。在某些条件下，亚硝酸盐可与食物中的其他化合物反应形成N-亚硝基化合物；国际癌症研究机构（IARC）在2015年将加工肉类（而非亚硝酸盐本身）列为对人类致癌物（第1组）。JECFA分别设定了每日允许摄入量：亚硝酸盐为0–0.07毫克/公斤体重/天，硝酸盐为0–3.7毫克/公斤。",
+  "can_1": "Detect E249, E250, E251, INS 249–251 and the corresponding potassium nitrite, sodium nitrite and sodium nitrate names.",
+  "can_2": "Explain why nitrite is used in cured meat, its role against botulism, its ability to participate in N-nitroso compound formation, the IARC processed-meat classification and the separate JECFA ADIs.",
+  "cannot_1": "Determine from the ingredient list how much nitrite or nitrate was added, how much remains after curing, or how much N-nitroso compound formed.",
+  "cannot_2": "Treat the IARC Group 1 classification of processed meat as a classification of nitrite itself or calculate an individual's cancer risk from one label.",
+  "sources": [
+    {
+      "label": "JECFA — Sodium nitrite (INS 250) and Sodium nitrate (INS 251)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Preservatives&chemical=nitrite"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E249–E251 nitrites and nitrates",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Nitrites & Nitrates",
+  "description": "亚硝酸盐和硝酸盐腌制肉类：亚硝酸盐抑制肉毒杆菌，但也可参与N-亚硝基化合物的形成。"
 }

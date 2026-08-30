@@ -1,39 +1,27 @@
 {
-  "name": "Azotyny i azotany",
-  "title": "Azotyny i azotany",
-  "description": "Azotyny i azotany konserwują mięso peklowane: azotyn hamuje Clostridium botulinum, ale może też uczestniczyć w tworzeniu związków N-nitrozowych.",
-  "what_is": "Azotyny i azotany są konserwantami peklującymi stosowanymi szczególnie w mięsie przetworzonym i peklowanym. E249 i E250 to azotyn potasu i azotyn sodu; E251 i E252 to azotan sodu i azotan potasu.",
-  "why_botia": "Azotyn konserwuje mięso peklowane i hamuje Clostridium botulinum, bakterię wywołującą botulizm. W określonych warunkach azotyn może reagować z innymi związkami w żywności i tworzyć związki N-nitrozowe; IARC w 2015 roku sklasyfikowała mięso przetworzone — nie sam azotyn — jako rakotwórcze dla ludzi (Grupa 1). JECFA ustaliła oddzielne ADI: 0–0,07 mg/kg masy ciała dziennie dla azotynu i 0–3,7 mg/kg dla azotanu.",
-  "can_1": "Wykrywać E249, E250, E251, E252, INS 249–252 oraz odpowiadające im nazwy azotynu lub azotanu sodu i potasu.",
-  "can_2": "Wyjaśniać, dlaczego azotyn jest stosowany w mięsie peklowanym, jego rolę przeciw botulizmowi, możliwość powstawania związków N-nitrozowych, klasyfikację IARC mięsa przetworzonego oraz oddzielne ADI JECFA.",
-  "cannot_1": "Na podstawie samej listy składników określić, ile azotynu lub azotanu dodano, ile pozostało po peklowaniu lub ile związków N-nitrozowych powstało.",
-  "cannot_2": "Traktować klasyfikacji IARC Grupa 1 dla mięsa przetworzonego jako klasyfikacji samego azotynu ani obliczyć indywidualnego ryzyka raka z jednej etykiety.",
-  "sources": [
-    {
-      "label": "JECFA — Nitrite, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
-    },
-    {
-      "label": "JECFA — Nitrate, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
-    },
-    {
-      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
-      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
-      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "USDA FSIS — Nitrites and prevention of botulism",
-      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
-    }
-  ],
-  "e_code": "E249–E252",
+  "name": "Nitrites & Nitrates",
+  "e_code": "E249–E251",
+  "aliases": "E249, E250, E251, INS 249, INS 250, INS 251, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "what_is": "Azotyny i azotany to konserwanty do peklowania stosowane głównie w przetworzonym i peklowanym mięsie. E249 i E250 to azotyn potasu i azotyn sodu; E251 to azotan sodu.",
+  "why_botia": "Azotyn konserwuje peklowane mięso i hamuje rozwój bakterii Clostridium botulinum wywołującej botulizm. W pewnych warunkach azotyn może reagować z innymi związkami w żywności, tworząc związki N-nitrozo; IARC sklasyfikowała przetworzone mięso — nie sam azotyn — jako rakotwórcze dla ludzi (Grupa 1) w 2015 roku. JECFA ustaliła oddzielne dopuszczalne dzienne spożycie: 0–0,07 mg/kg masy ciała na dobę dla azotynów i 0–3,7 mg/kg dla azotanów.",
+  "can_1": "Detect E249, E250, E251, INS 249–251 and the corresponding potassium nitrite, sodium nitrite and sodium nitrate names.",
+  "can_2": "Explain why nitrite is used in cured meat, its role against botulism, its ability to participate in N-nitroso compound formation, the IARC processed-meat classification and the separate JECFA ADIs.",
+  "cannot_1": "Determine from the ingredient list how much nitrite or nitrate was added, how much remains after curing, or how much N-nitroso compound formed.",
+  "cannot_2": "Treat the IARC Group 1 classification of processed meat as a classification of nitrite itself or calculate an individual's cancer risk from one label.",
+  "sources": [
+    {
+      "label": "JECFA — Sodium nitrite (INS 250) and Sodium nitrate (INS 251)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Preservatives&chemical=nitrite"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E249–E251 nitrites and nitrates",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Nitrites & Nitrates",
+  "description": "Azotyny i azotany konserwują peklowane mięso: azotyn hamuje Clostridium botulinum, ale może również uczestniczyć w tworzeniu związków N-nitrozo."
 }

@@ -1,39 +1,27 @@
 {
-  "name": "Нитриты и нитраты",
-  "title": "Нитриты и нитраты",
-  "description": "Нитриты и нитраты сохраняют мясные продукты: нитрит подавляет Clostridium botulinum, но также может участвовать в образовании N-нитрозосоединений.",
-  "what_is": "Нитриты и нитраты — консерванты для посола и созревания, применяемые прежде всего в переработанном и вяленом мясе. E249 и E250 — нитрит калия и нитрит натрия; E251 и E252 — нитрат натрия и нитрат калия.",
-  "why_botia": "Нитрит сохраняет мясные продукты и подавляет Clostridium botulinum — бактерию, вызывающую ботулизм. При определённых условиях нитрит может реагировать с другими веществами в пище и образовывать N-нитрозосоединения; в 2015 году IARC классифицировало переработанное мясо — не сам нитрит — как канцерогенное для человека (Группа 1). JECFA установила отдельные ADI: 0–0,07 мг/кг массы тела в день для нитрита и 0–3,7 мг/кг для нитрата.",
-  "can_1": "Определять E249, E250, E251, E252, INS 249–252 и соответствующие названия нитрита или нитрата натрия и калия.",
-  "can_2": "Объяснять, зачем нитрит используется в мясных продуктах, его роль против ботулизма, возможность образования N-нитрозосоединений, классификацию IARC переработанного мяса и отдельные ADI JECFA.",
-  "cannot_1": "По списку ингредиентов определить, сколько нитрита или нитрата было добавлено, сколько осталось после обработки или сколько N-нитрозосоединений образовалось.",
-  "cannot_2": "Считать классификацию IARC Группа 1 для переработанного мяса классификацией самого нитрита или рассчитывать индивидуальный риск рака по одной этикетке.",
-  "sources": [
-    {
-      "label": "JECFA — Nitrite, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/711"
-    },
-    {
-      "label": "JECFA — Nitrate, evaluation record",
-      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/709"
-    },
-    {
-      "label": "IARC — Consumption of red meat and processed meat, Volume 114",
-      "url": "https://www.iarc.who.int/news-events/iarc-monographs-volume-114-evaluation-of-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "WHO / IARC — Processed meat carcinogenicity Q&A",
-      "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat/"
-    },
-    {
-      "label": "USDA FSIS — Nitrites and prevention of botulism",
-      "url": "https://www.fsis.usda.gov/food-safety/foodborne-illness-and-disease/illnesses-and-pathogens/botulism"
-    }
-  ],
-  "e_code": "E249–E252",
+  "name": "Nitrites & Nitrates",
+  "e_code": "E249–E251",
+  "aliases": "E249, E250, E251, INS 249, INS 250, INS 251, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate",
   "module_icon": "enumbers.png",
   "layers": [
     "enumbers"
   ],
-  "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate"
+  "what_is": "Нитриты и нитраты — это консерванты для посола, используемые особенно в обработанном и солёном мясе. E249 и E250 — это нитрит калия и нитрит натрия; E251 — нитрат натрия.",
+  "why_botia": "Нитрит консервирует солёное мясо и подавляет бактерию Clostridium botulinum, вызывающую ботулизм. При определённых условиях нитрит может реагировать с другими соединениями в пище с образованием N-нитрозосоединений; МАИР классифицировал обработанное мясо — не сам нитрит — как канцерогенное для человека (Группа 1) в 2015 году. JECFA установила отдельные допустимые суточные нормы: 0–0,07 мг/кг массы тела в день для нитрита и 0–3,7 мг/кг для нитрата.",
+  "can_1": "Detect E249, E250, E251, INS 249–251 and the corresponding potassium nitrite, sodium nitrite and sodium nitrate names.",
+  "can_2": "Explain why nitrite is used in cured meat, its role against botulism, its ability to participate in N-nitroso compound formation, the IARC processed-meat classification and the separate JECFA ADIs.",
+  "cannot_1": "Determine from the ingredient list how much nitrite or nitrate was added, how much remains after curing, or how much N-nitroso compound formed.",
+  "cannot_2": "Treat the IARC Group 1 classification of processed meat as a classification of nitrite itself or calculate an individual's cancer risk from one label.",
+  "sources": [
+    {
+      "label": "JECFA — Sodium nitrite (INS 250) and Sodium nitrate (INS 251)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Preservatives&chemical=nitrite"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E249–E251 nitrites and nitrates",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Nitrites & Nitrates",
+  "description": "Нитриты и нитраты консервируют солёное мясо: нитрит подавляет Clostridium botulinum, но также может участвовать в образовании N-нитрозосоединений."
 }
