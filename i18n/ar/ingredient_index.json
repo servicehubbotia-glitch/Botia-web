@@ -1,18 +1,18 @@
 {
-  "page_title": "BOTIA — فهرس المكوّنات",
-  "title": "فهرس المكوّنات",
-  "subtitle": "ابحث في المكوّنات التي حللتها BOTIA",
-  "search_placeholder": "ابحث بالاسم أو برقم E...",
-  "search_aria_label": "البحث عن المكوّنات بالاسم أو برقم E",
+  "page_title": "BOTIA — فهرس المكونات",
+  "title": "فهرس المكونات",
+  "subtitle": "ابحث عن المكونات التي حللتها BOTIA",
+  "search_placeholder": "ابحث بالاسم أو رقم E...",
+  "search_aria_label": "ابحث عن المكونات بالاسم أو رقم E",
   "count_template": "{visible} من {total}",
-  "no_results": "لم يتم العثور على مكوّنات.",
-  "library_note": "تضم مكتبة BOTIA المضافات والمواد الأكثر ارتباطًا بطبقات الأدلة لديها. وللاطلاع على قاعدة البيانات الدولية الكاملة للمضافات والملوثات الغذائية، راجع قاعدة بيانات منظمة الصحة العالمية/JECFA، وهي إحدى المصادر التي تستخدمها BOTIA.",
-  "jecfa_label": "قاعدة بيانات منظمة الصحة العالمية للمضافات والملوثات الغذائية (JECFA)",
-  "description": "ابحث في المكوّنات التي حللتها BOTIA",
+  "no_results": "لم يتم العثور على مكونات.",
+  "library_note": "تغطي مكتبة المكونات في BOTIA الإضافات والمواد الأكثر صلة بطبقات الأدلة الخاصة بها. للاطلاع على قاعدة البيانات الدولية الكاملة للمضافات الغذائية والملوثات، راجع قاعدة بيانات WHO/JECFA — أحد المصادر التي تستخدمها BOTIA.",
+  "jecfa_label": "قاعدة بيانات منظمة الصحة العالمية للمضافات الغذائية والملوثات (JECFA)",
+  "description": "ابحث عن المكونات التي حللتها BOTIA",
   "ingredients": [
     {
       "slug": "acesulfame_k",
-      "name": "أسيسولفام البوتاسيوم",
+      "name": "Acesulfame potassium",
       "e_code": "E950",
       "aliases": "E950, INS 950, acesulfame K, acesulfame potassium, acesulfamo K, acesulfamo potásico, Ace-K",
       "layers": [
@@ -22,9 +22,9 @@
     },
     {
       "slug": "alcohol",
-      "name": "كحول",
+      "name": "Alcohol",
       "e_code": null,
-      "aliases": "كحول، إيثانول، كحول إيثيلي، إيثانول من أصل زراعي، كحول إيثيلي، كحول من أصل زراعي",
+      "aliases": "alcohol, ethanol, ethyl alcohol, ethanol of agricultural origin, alcohol etílico, alcohol de origen agrícola",
       "layers": [
         "muslim",
         "woman"
@@ -32,57 +32,56 @@
     },
     {
       "slug": "aspartame",
-      "name": "الأسبارتام",
+      "name": "Aspartame",
       "e_code": "E951",
-      "aliases": "E951، الأسبارتام، إستر ميثيل الأسبارتيل فينيل ألانين، أسبارتامو",
+      "aliases": "E951, aspartame, aspartyl phenylalanine methyl ester, aspartamo",
       "layers": [
+        "woman",
         "sweetener",
         "enumbers"
       ]
     },
     {
       "slug": "bpa",
-      "name": "بيسفينول أ",
+      "name": "Bisphenol A",
       "e_code": null,
-      "aliases": "بيسفينول أ، BPA، 4,4'-إيزوبروبيليدين ثنائي الفينول، بيسفينول أ",
+      "aliases": "Bisphenol A, BPA, 4,4'-isopropylidenediphenol, bisfenol A",
       "layers": [
         "woman"
       ]
     },
     {
       "slug": "bha",
-      "name": "هيدروكسي أنيسول بوتيلات",
+      "name": "Butylated hydroxyanisole",
       "e_code": "E320",
-      "aliases": "E320, BHA, هيدروكسي أنيسول بوتيلات, هيدروكسي أنيسول بوتيلات, تيرت-بوتيل-4-هيدروكسي أنيسول, بوتيل هيدروكسي أنيسول",
+      "aliases": "E320, BHA, butylated hydroxyanisole, hidroxianisol butilado, tert-butyl-4-hydroxyanisole, butylhydroxyanisole",
       "layers": [
-        "woman",
         "enumbers"
       ]
     },
     {
       "slug": "bht",
-      "name": "هيدروكسي تولوين البوتيل",
+      "name": "Butylated hydroxytoluene",
       "e_code": "E321",
-      "aliases": "E321, BHT, هيدروكسي تولوين البوتيل, هيدروكسي تولوين بوتيلات, 2,6-ثنائي-ثالثي-بوتيل-ب-كريسول",
+      "aliases": "E321, BHT, butylated hydroxytoluene, hidroxitolueno butilado, 2,6-di-tert-butyl-p-cresol",
       "layers": [
-        "woman",
         "enumbers"
       ]
     },
     {
       "slug": "cadmium",
-      "name": "الكادميوم",
+      "name": "Cadmium",
       "e_code": null,
-      "aliases": "الكادميوم، Cd، كادميو",
+      "aliases": "cadmium, Cd, cadmio",
       "layers": [
         "woman"
       ]
     },
     {
       "slug": "carmine",
-      "name": "كارمين",
+      "name": "Carmine",
       "e_code": "E120",
-      "aliases": "E120, INS 120, قرمزي, قرمز, قرمز دودة, مستخلص القرمز, حمض القرمز, كارمين, حمض الكارمينيك, قرمز دودة القرمز, أحمر القرمز",
+      "aliases": "E120, INS 120, carmine, cochineal, carmines, cochineal extract, carminic acid, carmín, ácido carmínico, cochinilla, rouge de cochenille",
       "layers": [
         "animal",
         "muslim",
@@ -91,19 +90,20 @@
     },
     {
       "slug": "carrageenan",
-      "name": "الكاراجينان",
-      "e_code": "E407",
+      "name": "Carrageenan",
+      "e_code": "E407, E407a",
       "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
       "layers": [
+        "woman",
         "texture",
         "enumbers"
       ]
     },
     {
       "slug": "cyclamates",
-      "name": "السيكلامات",
+      "name": "Cyclamates",
       "e_code": "E952",
-      "aliases": "INS 952(i), INS 952(ii), INS 952(iv), cyclamate, cyclohexylsulfamic acid, E952، سيكلامات، حمض السيكلاميك، سيكلامات الصوديوم، سيكلامات الكالسيوم، سيكلاماتو، حمض السيكلاميك",
+      "aliases": "E952, INS 952(i), INS 952(ii), INS 952(iv), cyclamate, cyclohexylsulfamic acid, cyclamates, cyclamic acid, sodium cyclamate, calcium cyclamate, ciclamato, ácido ciclámico",
       "layers": [
         "sweetener",
         "enumbers"
@@ -111,16 +111,16 @@
     },
     {
       "slug": "dioxins_pcbs",
-      "name": "الديوكسينات ومركبات ثنائي الفينيل متعدد الكلور",
+      "name": "Dioxins and PCBs",
       "e_code": null,
-      "aliases": "الديوكسينات، ثنائي الفينيل متعدد الكلور، PCBs، الفورانات، دايوكسينات، بيفينيلات متعددة الكلور",
+      "aliases": "dioxins, polychlorinated biphenyls, PCBs, furans, dioxinas, bifenilos policlorados",
       "layers": [
         "woman"
       ]
     },
     {
       "slug": "erythritol",
-      "name": "إريثريتول",
+      "name": "Erythritol",
       "e_code": "E968",
       "aliases": "E968, INS 968, erythritol, meso-erythritol, erythrite, tetrahydroxybutane, eritritol",
       "layers": [
@@ -131,9 +131,9 @@
     },
     {
       "slug": "e472",
-      "name": "إسترات الأحماض الدهنية الأحادية والثنائية",
+      "name": "Esters of mono- and diglycerides of fatty acids",
       "e_code": "E472",
-      "aliases": "E472، E472a، E472b، E472c، E472d، E472e، E472f، إسترات الأحماض الدهنية الأحادية والثنائية، إسترات حمض ثنائي أسيتيل الطرطريك للأحماض الدهنية الأحادية والثنائية، داتيم، ésteres de los mono y diglicéridos de ácidos grasos",
+      "aliases": "E472, E472a, E472b, E472c, E472d, E472e, E472f, esters of mono- and diglycerides of fatty acids, diacetyltartaric acid esters of mono- and diglycerides, DATEM, ésteres de los mono y diglicéridos de ácidos grasos",
       "layers": [
         "animal",
         "muslim",
@@ -143,9 +143,9 @@
     },
     {
       "slug": "enzymes",
-      "name": "الإنزيمات الغذائية",
+      "name": "Food enzymes",
       "e_code": null,
-      "aliases": "الإنزيمات، الإنزيمات الغذائية، المنفحة، البيبسين، الأميليز، اللاكتاز، الليباز، البروتياز، إنزيمات",
+      "aliases": "enzymes, food enzymes, rennet, pepsin, amylase, lactase, lipase, proteases, enzimas",
       "layers": [
         "animal",
         "muslim"
@@ -153,9 +153,9 @@
     },
     {
       "slug": "gelatine",
-      "name": "جيلاتين",
+      "name": "Gelatine",
       "e_code": null,
-      "aliases": "جيلاتين، جيلاتين، جيلاتينا، جيلاتين حيواني، جيلاتين خنزير، جيلاتين بقري، جيلاتين سمكي، E441",
+      "aliases": "Gelatine, gelatin, gelatina, gélatine, animal gelatine, pork gelatine, beef gelatine, fish gelatine, E441",
       "layers": [
         "animal",
         "muslim",
@@ -164,7 +164,7 @@
     },
     {
       "slug": "glucose_syrup",
-      "name": "شراب الجلوكوز",
+      "name": "Glucose syrup",
       "e_code": null,
       "aliases": "glucose syrup, corn syrup, liquid glucose, glucose-fructose syrup, high fructose corn syrup, HFCS, fructose syrup, jarabe de glucosa, sirop de glucose",
       "layers": [
@@ -173,9 +173,9 @@
     },
     {
       "slug": "glycerol",
-      "name": "جلسرين",
+      "name": "Glycerol",
       "e_code": "E422",
-      "aliases": "E422, جلسرين, جليسرين, جليسرول, جليسرينا",
+      "aliases": "E422, glycerol, glycerine, glycerin, glicerina, glicerol",
       "layers": [
         "animal",
         "muslim",
@@ -185,7 +185,7 @@
     },
     {
       "slug": "guar_gum",
-      "name": "صمغ الغوار",
+      "name": "Guar gum",
       "e_code": "E412",
       "aliases": "E412, guar gum, gum cyamopsis, guar flour, goma guar",
       "layers": [
@@ -195,7 +195,7 @@
     },
     {
       "slug": "konjac",
-      "name": "كونجاك",
+      "name": "Konjac",
       "e_code": "E425",
       "aliases": "E425, E425i, E425ii, konjac gum, konjac glucomannan, konjac flour, goma konjac",
       "layers": [
@@ -205,16 +205,16 @@
     },
     {
       "slug": "lead",
-      "name": "الرصاص",
+      "name": "Lead",
       "e_code": null,
-      "aliases": "رصاص، Pb، بلومو",
+      "aliases": "lead, Pb, plomo",
       "layers": [
         "woman"
       ]
     },
     {
       "slug": "lecithins",
-      "name": "ليسيثينات",
+      "name": "Lecithins",
       "e_code": "E322",
       "aliases": "E322, lecithins, lecithin, phosphatides, phospholipids, lecitina, lecitinas, lécithine, soy lecithin, egg lecithin, sunflower lecithin, sunflower lecithins, rapeseed lecithin",
       "layers": [
@@ -226,9 +226,9 @@
     },
     {
       "slug": "maltitol",
-      "name": "المالتيتول",
+      "name": "Maltitols",
       "e_code": "E965",
-      "aliases": "E965, E965i, E965ii, مالتيتول, شراب المالتيتول, jarabe de maltitol, مالتيتولات",
+      "aliases": "E965, E965i, E965ii, maltitol, maltitol syrup, jarabe de maltitol, maltitoles",
       "layers": [
         "sweetener",
         "enumbers"
@@ -236,37 +236,38 @@
     },
     {
       "slug": "maltodextrin",
-      "name": "مالتوديكسترين",
+      "name": "Maltodextrin",
       "e_code": null,
-      "aliases": "مالتوديكسترين، مالتوديكسترينا، مالتوديكسترين، هيدروليزات النشا المهدرجة",
+      "aliases": "maltodextrin, maltodextrina, maltodextrine",
       "layers": [
         "sugar"
       ]
     },
     {
       "slug": "methylmercury",
-      "name": "ميثيل الزئبق",
+      "name": "Methylmercury",
       "e_code": null,
-      "aliases": "methylmercury, methyl mercury, MeHg, ميثيل الزئبق، ميثيل الزئبق، الزئبق العضوي، الزئبق الكلي، الزئبق غير العضوي، الزئبق، ميتيل ميركوريو",
+      "aliases": "methylmercury, methyl mercury, MeHg, mercury, metilmercurio",
       "layers": [
         "woman"
       ]
     },
     {
       "slug": "e471",
-      "name": "أحادي وثنائي الغليسريدات من الأحماض الدهنية",
+      "name": "Mono- and diglycerides of fatty acids",
       "e_code": "E471",
-      "aliases": "E471، أحادي وثنائي الغليسريدات من الأحماض الدهنية، غليسيريل مونوستيارات، غليسيريل مونوبالميتات، غليسيريل مونوأوليات، مونوستيارين، مونوبالميتين، مونوأوليين، GMS، أحادي وثنائي الغليسريدات من الأحماض الدهنية",
+      "aliases": "E471, mono- and diglycerides of fatty acids, glyceryl monostearate, glyceryl monopalmitate, glyceryl monooleate, monostearin, monopalmitin, monoolein, GMS, mono- y diglicéridos de ácidos grasos",
       "layers": [
         "animal",
         "muslim",
+        "woman",
         "texture",
         "enumbers"
       ]
     },
     {
       "slug": "natural_flavourings",
-      "name": "النكهات الطبيعية",
+      "name": "Natural Flavourings",
       "e_code": null,
       "aliases": "natural flavourings, natural flavours, natural flavouring substances, aromas naturales, natural flavor, natural flavors, natural flavour, natural flavoring",
       "layers": [
@@ -275,7 +276,7 @@
     },
     {
       "slug": "parabens",
-      "name": "البارابين",
+      "name": "Parabens",
       "e_code": "E214, E215, E218, E219",
       "aliases": "E214, INS 214, ethyl p-hydroxybenzoate, ethylparaben, E215, INS 215, sodium ethyl p-hydroxybenzoate, sodium ethylparaben, E218, INS 218, methyl p-hydroxybenzoate, methylparaben, E219, INS 219, sodium methyl p-hydroxybenzoate, sodium methylparaben, para-hydroxybenzoates, parabens, PHB, parabenos, etilparabeno, metilparabeno",
       "layers": [
@@ -284,18 +285,18 @@
     },
     {
       "slug": "phthalates",
-      "name": "الفثالات",
+      "name": "Phthalates",
       "e_code": null,
-      "aliases": "الفثالات، الفثالات الأورثو، DEHP، DBP، BBP، DINP، DIDP، DCHP، DIOP، فثالات ديسيكلوهيكسيل، فثالات ديإيزوكتيل، استرات حمض الفثاليك، الملدنات، الفثالات",
+      "aliases": "phthalates, ortho-phthalates, DEHP, DBP, BBP, DINP, DIDP, DCHP, DIOP, dicyclohexyl phthalate, diisooctyl phthalate, phthalic acid esters, plasticizers, ftalatos",
       "layers": [
         "woman"
       ]
     },
     {
       "slug": "saccharin",
-      "name": "سكارين",
+      "name": "Saccharin",
       "e_code": "E954",
-      "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), سكارين, سكارين الصوديوم, سكارين الكالسيوم, سكارين البوتاسيوم, سكارينا, سكارينا الصوديوم, سكارينا الكالسيوم, سكارينا البوتاسيوم",
+      "aliases": "E954, INS 954, INS 954(i), INS 954(ii), INS 954(iii), INS 954(iv), saccharin, sodium saccharin, calcium saccharin, potassium saccharin, sacarina, sacarina sódica, sacarina cálcica, sacarina potásica",
       "layers": [
         "sweetener",
         "enumbers"
@@ -303,9 +304,9 @@
     },
     {
       "slug": "shellac",
-      "name": "شيلاك",
+      "name": "Shellac",
       "e_code": "E904",
-      "aliases": "E904، شيلاك، شيلاك مبيض، صمغ اللك، لكة مبيضة",
+      "aliases": "E904, shellac, bleached shellac, goma laca, laca blanqueada",
       "layers": [
         "animal",
         "muslim",
@@ -315,9 +316,9 @@
     },
     {
       "slug": "sorbitol",
-      "name": "سوربيتول",
+      "name": "Sorbitol",
       "e_code": "E420",
-      "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, سوربيتول, شراب السوربيتول, D-جلوسيتول, شراب D-جلوسيتول",
+      "aliases": "E420, E420(i), E420(ii), E420i, E420ii, INS 420(i), INS 420(ii), sorbitol, sorbitol syrup, D-glucitol, D-glucitol syrup, jarabe de sorbitol",
       "layers": [
         "sweetener",
         "texture",
@@ -328,7 +329,7 @@
       "slug": "steviol_glycosides",
       "name": "Steviol glycosides",
       "e_code": "E960a",
-      "aliases": "E960، E960a، E960b، E960b(i)، E960c، E960d، جليكوسيدات الستيفيول، جليكوسيدات الستيفيول المستخلصة من نبات الستيفيا، جليكوسيدات الستيفيول الناتجة عن التخمير، ستيفيوسيد، ريبوديوسيد A، ريبوديوسيد M، ريبوديوسيد M الناتج عن التخمير، Reb A، Reb M، ريبوديوسيد M المخمر، ستيفيا، مستخلص ستيفيا، جليكوسيدات الستيفيول، Yarrowia lipolytica",
+      "aliases": "E960, E960a, E960b, E960b(i), E960c, E960d, steviol glycosides, steviol glycosides from Stevia, steviol glycosides from fermentation, stevioside, rebaudioside A, rebaudioside M, rebaudioside M from fermentation, Reb A, Reb M, fermented rebaudioside M, stevia, stevia extract, steviol glycoside, Yarrowia lipolytica",
       "layers": [
         "sweetener",
         "enumbers"
@@ -336,9 +337,9 @@
     },
     {
       "slug": "sucralose",
-      "name": "سكرالوز",
+      "name": "Sucralose",
       "e_code": "E955",
-      "aliases": "INS 955, E955، سكرالوز، 4, 1', 6'-ثلاثي كلورو جالاكتوسكروز، سكرالوزا",
+      "aliases": "E955, INS 955, sucralose, 4, 1', 6'-trichlorogalactosucrose, sucralosa",
       "layers": [
         "sweetener",
         "enumbers"
@@ -346,25 +347,25 @@
     },
     {
       "slug": "e171",
-      "name": "ثاني أكسيد التيتانيوم",
+      "name": "Titanium dioxide",
       "e_code": "E171",
-      "aliases": "E171، ثاني أكسيد التيتانيوم، ثاني أكسيد التيتانيوم، أبيض التيتانيوم، CI صبغة بيضاء 6، أناتاز، روتيل",
+      "aliases": "E171, titanium dioxide, dióxido de titanio, titanium white, CI Pigment White 6, anatase, rutile",
       "layers": [
         "enumbers"
       ]
     },
     {
       "slug": "trans_fats",
-      "name": "الأحماض الدهنية المتحولة",
+      "name": "Trans fatty acids",
       "e_code": null,
-      "aliases": "الدهون المتحولة، الأحماض الدهنية المتحولة، الزيت المهدرج جزئيًا، الزيت النباتي المهدرج جزئيًا، iTFAs، grasas trans",
+      "aliases": "trans fats, trans fatty acids, partially hydrogenated oil, partially hydrogenated vegetable oil, iTFAs, grasas trans",
       "layers": [
         "woman"
       ]
     },
     {
       "slug": "vinegar",
-      "name": "خل",
+      "name": "Vinegar",
       "e_code": null,
       "aliases": "vinegar, fermentation vinegar, wine vinegar, cider vinegar, spirit vinegar, vinagre, vinaigre, distilled vinegar, malt vinegar, rice vinegar, balsamic vinegar",
       "layers": [
@@ -373,9 +374,9 @@
     },
     {
       "slug": "xanthan_gum",
-      "name": "صمغ الزانثان",
+      "name": "Xanthan gum",
       "e_code": "E415",
-      "aliases": "INS 415, E415، صمغ الزانثان، زانثان، جومة زانثانا، جومة زانثان، غومة زانثان",
+      "aliases": "E415, INS 415, xanthan gum, xanthan, goma xantana, goma xanthana, gomme xanthane",
       "layers": [
         "texture",
         "enumbers"
@@ -383,7 +384,7 @@
     },
     {
       "slug": "xylitol",
-      "name": "إكسيليتول",
+      "name": "Xylitol",
       "e_code": "E967",
       "aliases": "E967, INS 967, xylitol, D-xylitol, xilitol",
       "layers": [
@@ -394,7 +395,7 @@
     },
     {
       "slug": "free_sugars",
-      "name": "السكريات الحرة",
+      "name": "Free sugars",
       "e_code": null,
       "aliases": "glucose, fructose, sucrose, dextrose, table sugar, added sugar, free sugar, simple sugar, honey, syrups, fruit juice concentrate, sugar, sugars",
       "layers": [
@@ -403,16 +404,16 @@
     },
     {
       "slug": "fruit_juice_concentrate",
-      "name": "مركز عصير الفاكهة",
+      "name": "Fruit juice concentrate",
       "e_code": null,
-      "aliases": "مركز عصير الفاكهة، عصير فاكهة مركز، مركز فاكهة، مركز عصير التفاح، مركز عصير العنب، مركز عصير الكمثرى",
+      "aliases": "fruit juice concentrate, concentrated fruit juice, fruit concentrate, apple juice concentrate, grape juice concentrate, pear juice concentrate",
       "layers": [
         "sugar"
       ]
     },
     {
       "slug": "advantame",
-      "name": "أدفانتام",
+      "name": "Advantame",
       "e_code": "E969",
       "aliases": "E969, INS 969, advantame, high-intensity sweetener E969, non-nutritive sweetener advantame",
       "layers": [
@@ -422,7 +423,7 @@
     },
     {
       "slug": "arabic_gum",
-      "name": "الصمغ العربي",
+      "name": "Arabic gum",
       "e_code": "E414",
       "aliases": "E414, gum arabic, Arabic gum, acacia gum, gum acacia, Acacia senegal gum, Acacia seyal gum, goma arábiga, gomme arabique",
       "layers": [
@@ -432,7 +433,7 @@
     },
     {
       "slug": "caramel_colours",
-      "name": "ألوان الكراميل",
+      "name": "Caramel colours",
       "e_code": "E150a-E150d",
       "aliases": "E150a, E150b, E150c, E150d, caramel colours, caramel colors, caramel colour, caramel color, Class I caramel, Class II caramel, Class III caramel, Class IV caramel, burnt sugar colour",
       "layers": [
@@ -442,7 +443,7 @@
     },
     {
       "slug": "cassia_gum",
-      "name": "صمغ الكاسيا",
+      "name": "Cassia gum",
       "e_code": "E427",
       "aliases": "E427, cassia gum, cassia seed gum, cassia galactomannan, Cassia tora gum, Cassia obtusifolia gum, goma cassia",
       "layers": [
@@ -452,17 +453,16 @@
     },
     {
       "slug": "erythrosine",
-      "name": "إريثروزين",
+      "name": "Erythrosine",
       "e_code": "E127",
       "aliases": "E127, INS 127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
       "layers": [
-        "woman",
         "enumbers"
       ]
     },
     {
       "slug": "flavourings",
-      "name": "نكهات",
+      "name": "Flavourings",
       "e_code": null,
       "aliases": "flavourings, flavorings, flavouring, flavoring, natural flavourings, natural flavorings, artificial flavour, artificial flavor, aroma, aromas, flavour, flavor, flavour, flavor, flavours, flavors",
       "layers": [
@@ -472,7 +472,7 @@
     },
     {
       "slug": "gellan_gum",
-      "name": "صمغ الجيلان",
+      "name": "Gellan gum",
       "e_code": "E418",
       "aliases": "E418, gellan gum, gellan, high-acyl gellan gum, low-acyl gellan gum, deacylated gellan gum, goma gellan",
       "layers": [
@@ -482,7 +482,7 @@
     },
     {
       "slug": "isomalt",
-      "name": "إيزومالت",
+      "name": "Isomalt",
       "e_code": "E953",
       "aliases": "E953, INS 953, isomalt, hydrogenated isomaltulose, isomaltitol, Palatinit, isomaltulose hydrogenation products",
       "layers": [
@@ -493,7 +493,7 @@
     },
     {
       "slug": "karaya_gum",
-      "name": "صمغ الكارايا",
+      "name": "Karaya gum",
       "e_code": "E416",
       "aliases": "E416, karaya gum, gum karaya, gum sterculia, Sterculia gum, kadaya, karaya, katilo, kullo, kuterra",
       "layers": [
@@ -503,7 +503,7 @@
     },
     {
       "slug": "lactitol",
-      "name": "لاكتيتول",
+      "name": "Lactitol",
       "e_code": "E966",
       "aliases": "E966, INS 966, lactitol, lactitol monohydrate, lactit, lactobiosit, lactositol, lactitol monohidrato",
       "layers": [
@@ -514,7 +514,7 @@
     },
     {
       "slug": "locust_bean_gum",
-      "name": "دقيق بذور الخروب",
+      "name": "Locust bean gum",
       "e_code": "E410",
       "aliases": "E410, locust bean gum, carob bean gum, carob gum, LBG, goma de algarrobo, goma garrofín, gomme de caroube",
       "layers": [
@@ -524,7 +524,7 @@
     },
     {
       "slug": "mannitol",
-      "name": "مانيتول",
+      "name": "Mannitol",
       "e_code": "E421",
       "aliases": "E421, INS 421, mannitol, D-mannitol, mannite, manitol, mannitol by hydrogenation, mannitol by fermentation",
       "layers": [
@@ -535,7 +535,7 @@
     },
     {
       "slug": "neotame",
-      "name": "نيوتام",
+      "name": "Neotame",
       "e_code": "E961",
       "aliases": "E961, INS 961, neotame, Newtame, high-intensity sweetener neotame, flavour enhancer neotame",
       "layers": [
@@ -545,7 +545,7 @@
     },
     {
       "slug": "soy_isoflavones",
-      "name": "أيزوفلافونات الصويا",
+      "name": "Soy isoflavones",
       "e_code": null,
       "aliases": "soy isoflavones, soya isoflavones, soybean isoflavones, isoflavones, genistein, daidzein, glycitein, soy isoflavone extract, soya isoflavone extract",
       "layers": [
@@ -554,7 +554,7 @@
     },
     {
       "slug": "tara_gum",
-      "name": "صمغ التارا",
+      "name": "Tara gum",
       "e_code": "E417",
       "aliases": "E417, tara gum, tara seed gum, tara galactomannan, Peruvian carob, Caesalpinia spinosa gum, goma tara, gomme tara",
       "layers": [
@@ -564,7 +564,7 @@
     },
     {
       "slug": "tartrazine",
-      "name": "طرطازين",
+      "name": "Tartrazine",
       "e_code": "E102",
       "aliases": "E102, tartrazine, FD&C Yellow No. 5, Yellow 5, CI 19140, CI Food Yellow 4, Acid Yellow 23, Food Yellow 4",
       "layers": [
@@ -574,7 +574,7 @@
     },
     {
       "slug": "glutamates",
-      "name": "الجلوتامات",
+      "name": "Glutamates",
       "e_code": "E620–E625",
       "aliases": "E620, E621, E622, E623, E624, E625, glutamate, glutamates, glutamic acid, L-glutamic acid, monosodium glutamate, MSG, sodium glutamate, monopotassium glutamate, potassium glutamate, calcium diglutamate, calcium glutamate, monoammonium glutamate, ammonium glutamate, magnesium diglutamate, magnesium glutamate",
       "layers": [
@@ -584,7 +584,7 @@
     },
     {
       "slug": "yeast_extract",
-      "name": "مستخلص الخميرة والبروتينات المتحللة",
+      "name": "Yeast Extract & Hydrolysed Proteins",
       "e_code": null,
       "aliases": "yeast extract, autolysed yeast extract, autolyzed yeast extract, autolysed yeast, autolyzed yeast, hydrolysed yeast, hydrolyzed yeast, hydrolysed vegetable protein, hydrolyzed vegetable protein, HVP, hydrolysed soy protein, hydrolyzed soy protein, hydrolysed protein, hydrolyzed protein, protein hydrolysate, vegetable protein hydrolysate",
       "layers": [
@@ -593,7 +593,7 @@
     },
     {
       "slug": "pork",
-      "name": "لحم الخنزير ومشتقاته",
+      "name": "Pork & Porcine Derivatives",
       "e_code": null,
       "aliases": "pork, porcine, pig, swine, lard, pork fat, porcine fat, pork gelatine, pork gelatin, porcine gelatine, porcine gelatin, pork collagen, porcine collagen, pork broth, pork stock, pork extract, pork protein, porcine protein, pork rind, pork skin",
       "layers": [
@@ -603,7 +603,7 @@
     },
     {
       "slug": "blood",
-      "name": "الدم ومشتقاته",
+      "name": "Blood & Blood Derivatives",
       "e_code": null,
       "aliases": "blood, animal blood, blood powder, dried blood, blood plasma, plasma protein, blood plasma protein, haemoglobin, hemoglobin, haemoglobin powder, hemoglobin powder, blood protein, porcine blood, bovine blood",
       "layers": [
@@ -613,7 +613,7 @@
     },
     {
       "slug": "beeswax",
-      "name": "شمع العسل",
+      "name": "Beeswax",
       "e_code": "E901",
       "aliases": "E901, INS 901, beeswax, bee wax, white beeswax, yellow beeswax, white wax, yellow wax",
       "layers": [
@@ -624,7 +624,7 @@
     },
     {
       "slug": "milk_derivatives",
-      "name": "مشتقات الحليب",
+      "name": "Milk Derivatives",
       "e_code": null,
       "aliases": "milk derivatives, milk, lactose, milk sugar, casein, caseine, caseinate, sodium caseinate, calcium caseinate, whey, whey powder, whey protein, whey protein concentrate, whey protein isolate, milk protein, milk protein concentrate, milk solids, nonfat milk solids, skimmed milk powder, milk powder",
       "layers": [
@@ -633,7 +633,7 @@
     },
     {
       "slug": "honey",
-      "name": "عسل",
+      "name": "Honey",
       "e_code": null,
       "aliases": "honey, blossom honey, nectar honey, honeydew honey, comb honey, filtered honey, baker's honey",
       "layers": [
@@ -643,7 +643,7 @@
     },
     {
       "slug": "polyglycitol_syrup",
-      "name": "شراب البوليجليسيتول",
+      "name": "Polyglycitol Syrup",
       "e_code": "E964",
       "aliases": "E964, INS 964, polyglycitol syrup, hydrogenated starch hydrolysate, hydrogenated glucose syrup, polyglucitol",
       "layers": [
@@ -654,16 +654,16 @@
     },
     {
       "slug": "caffeine",
-      "name": "الكافيين",
+      "name": "Caffeine",
       "e_code": null,
-      "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine",
+      "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine, theine, guaranine, cafeína, teína, guaranina",
       "layers": [
         "woman"
       ]
     },
     {
       "slug": "sulphites",
-      "name": "الكبريتات",
+      "name": "Sulphites",
       "e_code": "E220–E228",
       "aliases": "E220, E221, E222, E223, E224, E225, E226, E227, E228, INS 220, INS 221, INS 222, INS 223, INS 224, INS 225, INS 226, INS 227, INS 228, sulphites, sulfites, sulfur dioxide, sulphur dioxide, sodium sulfite, sodium sulphite, sodium bisulfite, sodium bisulphite, sodium hydrogen sulfite, sodium metabisulfite, sodium metabisulphite, potassium metabisulfite, potassium metabisulphite, potassium sulfite, potassium sulphite, calcium sulfite, calcium sulphite, calcium hydrogen sulfite, calcium hydrogen sulphite, potassium hydrogen sulfite, potassium hydrogen sulphite",
       "layers": [
@@ -672,18 +672,18 @@
     },
     {
       "slug": "nitrites_nitrates",
-      "name": "النتريتات والنترات",
-      "e_code": "E249–E252",
-      "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate",
+      "name": "Nitrites & Nitrates",
+      "e_code": "E249–E251",
+      "aliases": "E249, E250, E251, INS 249, INS 250, INS 251, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate",
       "layers": [
         "enumbers"
       ]
     },
     {
       "slug": "phosphates",
-      "name": "الفوسفات",
-      "e_code": "E338–E343, E450–E452",
-      "aliases": "E338, E339, E340, E341, E342, E343, E450, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, diphosphates, pyrophosphates, triphosphates, polyphosphates",
+      "name": "Phosphates",
+      "e_code": "E338–E343, E451–E452",
+      "aliases": "E338, E339, E340, E341, E342, E343, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, triphosphates, polyphosphates",
       "layers": [
         "texture",
         "enumbers"
@@ -691,7 +691,7 @@
     },
     {
       "slug": "brominated_vegetable_oil",
-      "name": "الزيت النباتي المبروم",
+      "name": "Brominated Vegetable Oil",
       "e_code": null,
       "aliases": "brominated vegetable oil, BVO, brominated soybean oil, brominated soy bean oil, brominated oil",
       "layers": [
@@ -700,7 +700,7 @@
     },
     {
       "slug": "potassium_bromate",
-      "name": "برومات البوتاسيوم",
+      "name": "Potassium Bromate",
       "e_code": null,
       "aliases": "INS 924a, potassium bromate, bromate of potash",
       "layers": [
@@ -710,7 +710,7 @@
     },
     {
       "slug": "thaumatin",
-      "name": "ثوماتين",
+      "name": "Thaumatin",
       "e_code": "E957",
       "aliases": "E957, INS 957, thaumatin, thaumatin I, thaumatin II",
       "layers": [
@@ -721,7 +721,7 @@
     },
     {
       "slug": "neohesperidin_dc",
-      "name": "نيوهيسبيريدين دي سي",
+      "name": "Neohesperidin DC",
       "e_code": "E959",
       "aliases": "E959, INS 959, neohesperidin DC, neohesperidin dihydrochalcone, NHDC",
       "layers": [
@@ -732,7 +732,7 @@
     },
     {
       "slug": "aspartame_acesulfame_salt",
-      "name": "ملح الأسبارتام-الأسيسولفام",
+      "name": "Salt of Aspartame-Acesulfame",
       "e_code": "E962",
       "aliases": "E962, INS 962, salt of aspartame-acesulfame, aspartame-acesulfame salt, aspartame acesulfame salt, acesulfame-aspartame salt",
       "layers": [
@@ -742,7 +742,7 @@
     },
     {
       "slug": "monk_fruit",
-      "name": "فاكهة المونك",
+      "name": "Monk Fruit",
       "e_code": null,
       "aliases": "monk fruit, monk fruit extract, monkfruit, luo han guo, luo han guo extract, Siraitia grosvenorii extract, mogroside, mogrosides, mogroside V",
       "layers": [
@@ -751,7 +751,7 @@
     },
     {
       "slug": "lysozyme",
-      "name": "الليزوزيم",
+      "name": "Lysozyme",
       "e_code": "E1105",
       "aliases": "E1105, INS 1105, lysozyme, lysozyme hydrochloride, muramidase",
       "layers": [
@@ -761,7 +761,7 @@
     },
     {
       "slug": "nucleotide_enhancers",
-      "name": "مُحسِّنات النكهة المستمدة من النوكليوتيدات",
+      "name": "Nucleotide Flavour Enhancers",
       "e_code": "E627, E631, E635",
       "aliases": "E627, E631, E635, disodium guanylate, sodium guanylate, disodium inosinate, sodium inosinate, disodium 5'-ribonucleotides, disodium ribonucleotides, disodium 5-ribonucleotides, guanylate, inosinate, ribonucleotides",
       "layers": [
@@ -771,7 +771,7 @@
     },
     {
       "slug": "azodicarbonamide",
-      "name": "أزوديكاربوناميد",
+      "name": "Azodicarbonamide",
       "e_code": null,
       "aliases": "azodicarbonamide, ADA, azobisformamide, azodiformamide",
       "layers": [
@@ -780,7 +780,7 @@
     },
     {
       "slug": "dehydroacetic_acid",
-      "name": "حمض الديهيدروأسيتيك وديهيدروأسيتات الصوديوم",
+      "name": "Dehydroacetic Acid & Sodium Dehydroacetate",
       "e_code": "INS 265 / INS 266",
       "aliases": "INS 265, INS 266, dehydroacetic acid, DHAA, sodium dehydroacetate, SDHA, sodium dehydroacetic acid",
       "layers": [
@@ -789,7 +789,7 @@
     },
     {
       "slug": "bone_phosphate",
-      "name": "فوسفات العظام الصالح للأكل",
+      "name": "Edible Bone Phosphate",
       "e_code": "INS 542",
       "aliases": "INS 542, edible bone phosphate, bone phosphate, bone meal phosphate, tribasic calcium phosphate from bone",
       "layers": [
@@ -800,7 +800,7 @@
     },
     {
       "slug": "l_cysteine",
-      "name": "L-سيستين",
+      "name": "L-Cysteine",
       "e_code": "E920",
       "aliases": "E920, INS 920, L-cysteine, L cysteine, cysteine, L-cysteine hydrochloride",
       "layers": [
@@ -811,7 +811,7 @@
     },
     {
       "slug": "alitame",
-      "name": "أليتام",
+      "name": "Alitame",
       "e_code": "INS 956",
       "aliases": "INS 956, alitame, Aclame",
       "layers": [
@@ -821,7 +821,7 @@
     },
     {
       "slug": "aluminium_additives",
-      "name": "المواد المضافة المحتوية على الألومنيوم",
+      "name": "Aluminium-Containing Additives",
       "e_code": "E520–E523, E541; selected INS 554–559",
       "aliases": "E520, E521, E522, E523, E541, INS 541, INS 541(i), INS 541(ii), INS 554, INS 555, INS 556, INS 559, aluminium sulphate, aluminum sulfate, aluminium sodium sulphate, sodium aluminum sulfate, aluminium potassium sulphate, potassium aluminum sulfate, aluminium ammonium sulphate, ammonium aluminum sulfate, sodium aluminium phosphate, sodium aluminum phosphate, SALP, sodium aluminosilicate, potassium aluminosilicate, calcium aluminium silicate, aluminum silicate",
       "layers": [
@@ -831,7 +831,7 @@
     },
     {
       "slug": "smoke_flavourings",
-      "name": "نكهات الدخان",
+      "name": "Smoke Flavourings",
       "e_code": null,
       "aliases": "smoke flavouring, smoke flavoring, smoke flavour, smoke flavor, liquid smoke, smoke condensate, smoke flavouring preparation, smoke flavoring preparation",
       "layers": [
@@ -840,7 +840,7 @@
     },
     {
       "slug": "collagen",
-      "name": "الكولاجين",
+      "name": "Collagen",
       "e_code": null,
       "aliases": "collagen, hydrolysed collagen, hydrolyzed collagen, collagen hydrolysate, collagen peptides, bovine collagen, beef collagen, porcine collagen, pork collagen, fish collagen, marine collagen, chicken collagen, poultry collagen",
       "layers": [
@@ -851,7 +851,7 @@
     },
     {
       "slug": "quinoline_yellow",
-      "name": "أصفر الكينولين",
+      "name": "Quinoline Yellow",
       "e_code": "E104",
       "aliases": "E104, INS 104, quinoline yellow, quinoline yellow WS, CI Food Yellow 13",
       "layers": [
@@ -860,7 +860,7 @@
     },
     {
       "slug": "sunset_yellow",
-      "name": "أصفر غروب الشمس FCF",
+      "name": "Sunset Yellow FCF",
       "e_code": "E110",
       "aliases": "E110, INS 110, sunset yellow FCF, sunset yellow, orange yellow S, FD&C Yellow No. 6, FD&C Yellow 6, Yellow 6",
       "layers": [
@@ -869,7 +869,7 @@
     },
     {
       "slug": "carmoisine",
-      "name": "كارمويسين",
+      "name": "Carmoisine",
       "e_code": "E122",
       "aliases": "E122, INS 122, carmoisine, azorubine",
       "layers": [
@@ -878,7 +878,7 @@
     },
     {
       "slug": "ponceau_4r",
-      "name": "بونسو 4R",
+      "name": "Ponceau 4R",
       "e_code": "E124",
       "aliases": "E124, INS 124, Ponceau 4R, cochineal red A, brilliant scarlet 4R",
       "layers": [
@@ -896,36 +896,36 @@
     },
     {
       "slug": "brilliant_blue",
-      "name": "أزرق لامع FCF",
+      "name": "Brilliant Blue FCF",
       "e_code": "E133 / INS 133",
-      "aliases": "E133، INS 133، أزرق لامع FCF، أزرق لامع، FD&C أزرق رقم 1، FD&C أزرق 1، أزرق 1، أزرق حمضي 9",
+      "aliases": "E133, INS 133, brilliant blue FCF, brilliant blue, FD&C Blue No. 1, FD&C Blue 1, Blue 1, Acid Blue 9",
       "layers": [
         "enumbers"
       ]
     },
     {
       "slug": "indigotine",
-      "name": "إنديجوتين",
+      "name": "Indigotine",
       "e_code": "E132 / INS 132",
-      "aliases": "E132، INS 132، إنديجوتين، إنديغو كارمين، FD&C الأزرق رقم 2، FD&C الأزرق 2، الأزرق 2",
+      "aliases": "E132, INS 132, indigotine, indigo carmine, FD&C Blue No. 2, FD&C Blue 2, Blue 2",
       "layers": [
         "enumbers"
       ]
     },
     {
       "slug": "fast_green",
-      "name": "أخضر سريع FCF",
+      "name": "Fast Green FCF",
       "e_code": "INS 143",
-      "aliases": "INS 143، أخضر سريع FCF، أخضر سريع، FD&C أخضر رقم 3، FD&C أخضر 3، أخضر 3، أخضر غذائي 3",
+      "aliases": "INS 143, fast green FCF, fast green, FD&C Green No. 3, FD&C Green 3, Green 3, Food Green 3",
       "layers": [
         "enumbers"
       ]
     },
     {
       "slug": "alginates",
-      "name": "الجينات",
+      "name": "Alginates",
       "e_code": "E400–E405",
-      "aliases": "E400، E401، E402، E403، E404، E405، حمض الألجينيك، ألجينات الصوديوم، ألجينات البوتاسيوم، ألجينات الأمونيوم، ألجينات الكالسيوم، ألجينات البروبان-1،2-ديول، ألجينات البروبيلين جليكول، ألجينات الهيدروكسيبروبيل",
+      "aliases": "E400, E401, E402, E403, E404, E405, alginic acid, sodium alginate, potassium alginate, ammonium alginate, calcium alginate, propane-1,2-diol alginate, propylene glycol alginate, hydroxypropyl alginate",
       "layers": [
         "texture",
         "enumbers"
@@ -933,9 +933,9 @@
     },
     {
       "slug": "agar",
-      "name": "الأجار",
+      "name": "Agar",
       "e_code": "E406",
-      "aliases": "E406، INS 406، أجار، أجار-أجار، أجار أجار",
+      "aliases": "E406, INS 406, agar, agar-agar, agar agar",
       "layers": [
         "texture",
         "enumbers"
@@ -943,9 +943,9 @@
     },
     {
       "slug": "tragacanth",
-      "name": "التراغاكانث",
+      "name": "Tragacanth",
       "e_code": "E413",
-      "aliases": "E413, INS 413, صمغ الكتيرا, صمغ الكتيرا, صمغ الكتيرا",
+      "aliases": "E413, INS 413, tragacanth, gum tragacanth, tragacanth gum",
       "layers": [
         "texture",
         "enumbers"
@@ -953,19 +953,20 @@
     },
     {
       "slug": "pectins",
-      "name": "البكتينات",
+      "name": "Pectins",
       "e_code": "E440",
-      "aliases": "E440، E440(i)، E440(ii)، INS 440، البكتين، البكتينات، البكتين غير الأميداتي، البكتين الأميداتي، البكتينات الأميداتية",
+      "aliases": "E440, E440(i), E440(ii), INS 440, pectin, pectins, non-amidated pectin, amidated pectin, amidated pectins",
       "layers": [
+        "woman",
         "texture",
         "enumbers"
       ]
     },
     {
       "slug": "celluloses",
-      "name": "السليلوز والسليلوز المعدل",
+      "name": "Celluloses & Modified Celluloses",
       "e_code": "E460–E466, E468–E469; INS 467",
-      "aliases": "E460، E460(i)، E460(ii)، E461، E462، E463، E464، E465، E466، INS 467، E468، E469، سليلوز، سليلوز ميكروبلوري، هلام السليلوز، سليلوز مسحوق، ميثيل سليلوز، ميثيل سليلوز، إيثيل سليلوز، إيثيل سليلوز، هيدروكسي بروبيل سليلوز، هيدروكسي بروبيل ميثيل سليلوز، HPMC، إيثيل ميثيل سليلوز، كربوكسي ميثيل سليلوز الصوديوم، كربوكسي ميثيل سليلوز، CMC، صمغ السليلوز، إيثيل هيدروكسي إيثيل سليلوز، كربوكسي ميثيل سليلوز الصوديوم المتشابك، كربوكسي ميثيل سليلوز المتحلل إنزيميًا",
+      "aliases": "E460, E460(i), E460(ii), E461, E462, E463, E464, E465, E466, INS 467, E468, E469, cellulose, microcrystalline cellulose, cellulose gel, powdered cellulose, methyl cellulose, methylcellulose, ethyl cellulose, ethylcellulose, hydroxypropyl cellulose, hydroxypropyl methyl cellulose, HPMC, ethyl methyl cellulose, sodium carboxymethyl cellulose, carboxymethyl cellulose, CMC, cellulose gum, ethyl hydroxyethyl cellulose, cross-linked sodium carboxymethyl cellulose, enzymatically hydrolysed carboxymethyl cellulose",
       "layers": [
         "texture",
         "enumbers"
@@ -973,9 +974,9 @@
     },
     {
       "slug": "modified_starches",
-      "name": "نشويات معدلة",
+      "name": "Modified Starches",
       "e_code": "E1404, E1410, E1412–E1414, E1420, E1422, E1440, E1442, E1450–E1452",
-      "aliases": "النشا المعدل، النشا الغذائي المعدل، النشا المعدل كيميائيًا، E1404، النشا المؤكسد، E1410، فوسفات النشا الأحادي، E1412، فوسفات النشا الثنائي، E1413، فوسفات النشا المزدوج المفسف، E1414، فوسفات النشا المزدوج المُأسيتيل، E1420، النشا المُأسيتيل، E1422، أديبات ثنائي النشا المُأسيتيل، E1440، نشا هيدروكسي بروبيل، E1442، فوسفات ثنائي النشا هيدروكسي بروبيل، E1450، أوكتينيل سكسينات الصوديوم للنشا، E1451، نشا مؤكسد وأسيتيل، نشا مؤكسد وأسيتيل، E1452، أوكتينيل سكسينات النشا والألومنيوم، أوكتينيل سكسينات النشا والألومنيوم",
+      "aliases": "modified starch, modified food starch, chemically modified starch, E1404, oxidised starch, oxidized starch, E1410, monostarch phosphate, E1412, distarch phosphate, E1413, phosphated distarch phosphate, E1414, acetylated distarch phosphate, E1420, acetylated starch, E1422, acetylated distarch adipate, E1440, hydroxypropyl starch, E1442, hydroxypropyl distarch phosphate, E1450, starch sodium octenyl succinate, E1451, acetylated oxidised starch, acetylated oxidized starch, E1452, starch aluminium octenyl succinate, starch aluminum octenyl succinate",
       "layers": [
         "texture",
         "enumbers"
@@ -983,9 +984,9 @@
     },
     {
       "slug": "polysorbates",
-      "name": "بوليسوربات",
+      "name": "Polysorbates",
       "e_code": "E432–E436",
-      "aliases": "E432، E433، E434، E435، E436، بوليسوربات 20، بوليسوربات 80، بوليسوربات 40، بوليسوربات 60، بوليسوربات 65، مونولوريت البولي أوكسي إيثيلين سوربيتان، مونوليولات البولي أوكسي إيثيلين سوربيتان، مونوبالميتات البولي أوكسي إيثيلين سوربيتان، مونوستيرات البولي أوكسي إيثيلين سوربيتان، تريستيرات البولي أوكسي إيثيلين سوربيتان",
+      "aliases": "E432, E433, E434, E435, E436, polysorbate 20, polysorbate 80, polysorbate 40, polysorbate 60, polysorbate 65, polyoxyethylene sorbitan monolaurate, polyoxyethylene sorbitan monooleate, polyoxyethylene sorbitan monopalmitate, polyoxyethylene sorbitan monostearate, polyoxyethylene sorbitan tristearate",
       "layers": [
         "texture",
         "enumbers"
@@ -993,9 +994,9 @@
     },
     {
       "slug": "sucrose_esters",
-      "name": "إسترات السكروز والسوكروغليسريدات",
+      "name": "Sucrose Esters & Sucroglycerides",
       "e_code": "E473–E474",
-      "aliases": "E473, E474, استرات السكروز, استرات السكروز للأحماض الدهنية, استرات الأحماض الدهنية للسكروز, سكروغليسيريدات",
+      "aliases": "E473, E474, sucrose esters, sucrose esters of fatty acids, sucrose fatty acid esters, sucroglycerides",
       "layers": [
         "texture",
         "enumbers"
@@ -1003,9 +1004,9 @@
     },
     {
       "slug": "polyglycerol_esters",
-      "name": "إسترات البولي جلسرين و PGPR",
+      "name": "Polyglycerol Esters & PGPR",
       "e_code": "E475, E476",
-      "aliases": "E475، E476، إسترات بولي جليسيرول للأحماض الدهنية، إسترات بولي جليسيرول للأحماض الدهنية، بولي جليسيرول بولي ريسينوليات، بولي جليسيرول بولي ريسينوليات PGPR، PGPR",
+      "aliases": "E475, E476, polyglycerol esters of fatty acids, polyglycerol fatty acid esters, polyglycerol polyricinoleate, polyglycerol polyricinoleate PGPR, PGPR",
       "layers": [
         "texture",
         "enumbers"
@@ -1013,9 +1014,9 @@
     },
     {
       "slug": "propylene_glycol_esters",
-      "name": "إسترات البروبيلين جليكول للأحماض الدهنية",
+      "name": "Propylene Glycol Esters of Fatty Acids",
       "e_code": "E477",
-      "aliases": "E477، INS 477، استرات البروبيلين جليكول للأحماض الدهنية، استرات البروبان-1،2-ديول للأحماض الدهنية، استرات البروبيلين جليكول للأحماض الدهنية",
+      "aliases": "E477, INS 477, propylene glycol esters of fatty acids, propane-1,2-diol esters of fatty acids, propylene glycol fatty acid esters",
       "layers": [
         "texture",
         "enumbers"
@@ -1023,9 +1024,9 @@
     },
     {
       "slug": "stearoyl_lactylates",
-      "name": "ستيرويل لاكتيلات",
+      "name": "Stearoyl Lactylates",
       "e_code": "E481, E482",
-      "aliases": "E481، E482، لاكتيلات الستيرويل، لاكتيلات الستيرويل الصوديوم، ستيرويل-2-لاكتيلات الصوديوم، SSL، ستيرويل لاكتيلات الكالسيوم، ستيرويل-2-لاكتيلات الكالسيوم، CSL",
+      "aliases": "E481, E482, stearoyl lactylates, sodium stearoyl lactylate, sodium stearoyl-2-lactylate, SSL, calcium stearoyl lactylate, calcium stearoyl-2-lactylate, CSL",
       "layers": [
         "texture",
         "enumbers"
@@ -1033,12 +1034,109 @@
     },
     {
       "slug": "sorbitan_esters",
-      "name": "إسترات السوربيتان",
+      "name": "Sorbitan Esters",
       "e_code": "E491–E495",
-      "aliases": "E491، E492، E493، E494، E495، أحادي ستيرات السوربيتان، ثلاثي ستيرات السوربيتان، مونولوريت السوربيتان، مونولييت السوربيتان، مونوبالميتات السوربيتان، استرات السوربيتان",
+      "aliases": "E491, E492, E493, E494, E495, sorbitan monostearate, sorbitan tristearate, sorbitan monolaurate, sorbitan monooleate, sorbitan monopalmitate, sorbitan esters",
       "layers": [
         "texture",
         "enumbers"
+      ]
+    },
+    {
+      "slug": "potassium_sorbate",
+      "name": "Potassium sorbate",
+      "e_code": "E202",
+      "aliases": "E202, INS 202, potassium sorbate, potassium salt of sorbic acid, sorbato potásico, sorbate de potassium, Kaliumsorbat, sorbato di potassio",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "potassium_nitrate",
+      "name": "Potassium nitrate",
+      "e_code": "E252",
+      "aliases": "E252, INS 252, potassium nitrate, saltpetre, saltpeter, nitrate of potash, nitrato potásico, nitrate de potassium, Kaliumnitrat, nitrato di potassio",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "diphosphates",
+      "name": "Diphosphates",
+      "e_code": "E450",
+      "aliases": "E450, E450(i), E450(ii), E450(iii), E450(v), E450(vi), E450(vii), INS 450, diphosphates, disodium diphosphate, trisodium diphosphate, tetrasodium diphosphate, tetrapotassium diphosphate, dicalcium diphosphate, calcium dihydrogen diphosphate, pyrophosphates, sodium acid pyrophosphate, SAPP, difosfatos, pirofosfatos",
+      "layers": [
+        "woman",
+        "texture",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "e500",
+      "name": "Sodium bicarbonate",
+      "e_code": "E500(ii)",
+      "aliases": "E500, E500(ii), sodium bicarbonate, sodium hydrogen carbonate, baking soda",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "curcumin",
+      "name": "Curcumin",
+      "e_code": "E100",
+      "aliases": "E100, E100(i), INS 100, INS 100(i), curcumin, curcumins, curcuma extract, turmeric extract, Curcuma longa, curcumina, curcumine, Kurkumin",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "ginger",
+      "name": "Ginger",
+      "e_code": null,
+      "aliases": "ginger, ground ginger, ginger powder, ginger extract, ginger flavouring, ginger root, Zingiber officinale, jengibre, gingembre, Ingwer, zenzero, gengibre",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "fenugreek",
+      "name": "Fenugreek",
+      "e_code": null,
+      "aliases": "fenugreek, fenugreek seed, fenugreek seeds, ground fenugreek, fenugreek extract, methi, Trigonella foenum-graecum, fenogreco, alholva, fenugrec, Bockshornklee, fieno greco",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "folic_acid",
+      "name": "Folic acid",
+      "e_code": null,
+      "aliases": "folic acid, folate, vitamin B9, vitamin B-9, pteroylmonoglutamic acid, folacin, ácido fólico, folato, acide folique, Folsäure, acido folico",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "omega_3",
+      "name": "Omega-3",
+      "e_code": null,
+      "aliases": "omega-3, omega 3, omega-3 fatty acids, EPA, DHA, ALA, eicosapentaenoic acid, docosahexaenoic acid, alpha-linolenic acid, fish oil, tuna oil, algal oil, algae oil, Schizochytrium oil, linseed oil, flaxseed oil, aceite de pescado, aceite de algas, aceite de lino",
+      "layers": [
+        "animal",
+        "woman"
+      ]
+    },
+    {
+      "slug": "soy",
+      "name": "Soy",
+      "e_code": null,
+      "aliases": "soy, soya, soybean, soya bean, soybeans, Glycine max, soy flour, soya flour, soy protein, soya protein, soy protein concentrate, soy protein isolate, textured soy protein, TVP, soja, harina de soja, proteína de soja, soja texturizada",
+      "layers": [
+        "woman"
       ]
     }
   ]
