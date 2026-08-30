@@ -1,0 +1,24 @@
+{
+  "name": "Omega-3",
+  "e_code": "",
+  "aliases": "omega-3, omega 3, omega-3 fatty acids, EPA, DHA, ALA, eicosapentaenoic acid, docosahexaenoic acid, alpha-linolenic acid, fish oil, tuna oil, algal oil, algae oil, Schizochytrium oil, linseed oil, flaxseed oil, aceite de pescado, aceite de algas, aceite de lino",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "animal",
+    "woman"
+  ],
+  "what_is": "Omega-3 is a type of fat. The ingredient list almost never says 'omega-3': what it names is the oil it comes from, which may be fish oil, algal oil or linseed oil. The front of the pack may advertise omega-3 without saying which one.",
+  "why_botia": "Packs often advertise omega-3 as if it improved cholesterol across the board, and in trials in postmenopausal women it did not: it lowered some things, raised others, and left total cholesterol unchanged. And there is something the label rarely says: whether the omega-3 comes from fish or from algae. Fish oil is of animal origin.",
+  "can_1": "Detect omega-3, EPA, DHA and the oils it comes from — fish oil, algal oil, linseed oil — when they are declared on the label.",
+  "can_2": "Explain that the source may be fish or algae and show the Animal and Woman information layers.",
+  "cannot_1": "Determine whether the omega-3 came from fish or from algae when the label does not say.",
+  "cannot_2": "Determine how much omega-3 a food contains, or whether it matches the doses used in the trials.",
+  "sources": [
+    {
+      "label": "Meta-analysis: omega-3 supplementation and lipid profile in postmenopausal women (2023)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37733618/"
+    }
+  ],
+  "title": "Omega-3",
+  "description": "Omega-3 is a fat that reaches food as fish oil, algal oil or linseed oil. In trials in postmenopausal women it lowered triglycerides and raised HDL, raised LDL slightly and left total cholesterol unchanged, and the label rarely says whether it comes from fish or from algae."
+}
