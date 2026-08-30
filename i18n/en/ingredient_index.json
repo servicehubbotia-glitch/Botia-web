@@ -36,6 +36,7 @@
       "e_code": "E951",
       "aliases": "E951, aspartame, aspartyl phenylalanine methyl ester, aspartamo",
       "layers": [
+        "woman",
         "sweetener",
         "enumbers"
       ]
@@ -55,7 +56,6 @@
       "e_code": "E320",
       "aliases": "E320, BHA, butylated hydroxyanisole, hidroxianisol butilado, tert-butyl-4-hydroxyanisole, butylhydroxyanisole",
       "layers": [
-        "woman",
         "enumbers"
       ]
     },
@@ -65,7 +65,6 @@
       "e_code": "E321",
       "aliases": "E321, BHT, butylated hydroxytoluene, hidroxitolueno butilado, 2,6-di-tert-butyl-p-cresol",
       "layers": [
-        "woman",
         "enumbers"
       ]
     },
@@ -92,9 +91,10 @@
     {
       "slug": "carrageenan",
       "name": "Carrageenan",
-      "e_code": "E407",
+      "e_code": "E407, E407a",
       "aliases": "E407, E407a, INS 407, INS 407a, carrageenan, processed eucheuma seaweed, Irish moss gelose, eucheuman, furcellaran, carragenano, carraghenane",
       "layers": [
+        "woman",
         "texture",
         "enumbers"
       ]
@@ -260,6 +260,7 @@
       "layers": [
         "animal",
         "muslim",
+        "woman",
         "texture",
         "enumbers"
       ]
@@ -456,7 +457,6 @@
       "e_code": "E127",
       "aliases": "E127, INS 127, erythrosine, FD&C Red No. 3, Red 3, Red Dye No. 3, CI 45430, CI Food Red 14, Food Red 14",
       "layers": [
-        "woman",
         "enumbers"
       ]
     },
@@ -656,7 +656,7 @@
       "slug": "caffeine",
       "name": "Caffeine",
       "e_code": null,
-      "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine",
+      "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine, theine, guaranine, cafeína, teína, guaranina",
       "layers": [
         "woman"
       ]
@@ -673,8 +673,8 @@
     {
       "slug": "nitrites_nitrates",
       "name": "Nitrites & Nitrates",
-      "e_code": "E249–E252",
-      "aliases": "E249, E250, E251, E252, INS 249, INS 250, INS 251, INS 252, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate, potassium nitrate",
+      "e_code": "E249–E251",
+      "aliases": "E249, E250, E251, INS 249, INS 250, INS 251, nitrite, nitrites, nitrate, nitrates, potassium nitrite, sodium nitrite, sodium nitrate",
       "layers": [
         "enumbers"
       ]
@@ -682,8 +682,8 @@
     {
       "slug": "phosphates",
       "name": "Phosphates",
-      "e_code": "E338–E343, E450–E452",
-      "aliases": "E338, E339, E340, E341, E342, E343, E450, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, diphosphates, pyrophosphates, triphosphates, polyphosphates",
+      "e_code": "E338–E343, E451–E452",
+      "aliases": "E338, E339, E340, E341, E342, E343, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, triphosphates, polyphosphates",
       "layers": [
         "texture",
         "enumbers"
@@ -957,6 +957,7 @@
       "e_code": "E440",
       "aliases": "E440, E440(i), E440(ii), INS 440, pectin, pectins, non-amidated pectin, amidated pectin, amidated pectins",
       "layers": [
+        "woman",
         "texture",
         "enumbers"
       ]
@@ -1039,6 +1040,103 @@
       "layers": [
         "texture",
         "enumbers"
+      ]
+    },
+    {
+      "slug": "potassium_sorbate",
+      "name": "Potassium sorbate",
+      "e_code": "E202",
+      "aliases": "E202, INS 202, potassium sorbate, potassium salt of sorbic acid, sorbato potásico, sorbate de potassium, Kaliumsorbat, sorbato di potassio",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "potassium_nitrate",
+      "name": "Potassium nitrate",
+      "e_code": "E252",
+      "aliases": "E252, INS 252, potassium nitrate, saltpetre, saltpeter, nitrate of potash, nitrato potásico, nitrate de potassium, Kaliumnitrat, nitrato di potassio",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "diphosphates",
+      "name": "Diphosphates",
+      "e_code": "E450",
+      "aliases": "E450, E450(i), E450(ii), E450(iii), E450(v), E450(vi), E450(vii), INS 450, diphosphates, disodium diphosphate, trisodium diphosphate, tetrasodium diphosphate, tetrapotassium diphosphate, dicalcium diphosphate, calcium dihydrogen diphosphate, pyrophosphates, sodium acid pyrophosphate, SAPP, difosfatos, pirofosfatos",
+      "layers": [
+        "woman",
+        "texture",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "e500",
+      "name": "Sodium bicarbonate",
+      "e_code": "E500(ii)",
+      "aliases": "E500, E500(ii), sodium bicarbonate, sodium hydrogen carbonate, baking soda",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "curcumin",
+      "name": "Curcumin",
+      "e_code": "E100",
+      "aliases": "E100, E100(i), INS 100, INS 100(i), curcumin, curcumins, curcuma extract, turmeric extract, Curcuma longa, curcumina, curcumine, Kurkumin",
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    {
+      "slug": "ginger",
+      "name": "Ginger",
+      "e_code": null,
+      "aliases": "ginger, ground ginger, ginger powder, ginger extract, ginger flavouring, ginger root, Zingiber officinale, jengibre, gingembre, Ingwer, zenzero, gengibre",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "fenugreek",
+      "name": "Fenugreek",
+      "e_code": null,
+      "aliases": "fenugreek, fenugreek seed, fenugreek seeds, ground fenugreek, fenugreek extract, methi, Trigonella foenum-graecum, fenogreco, alholva, fenugrec, Bockshornklee, fieno greco",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "folic_acid",
+      "name": "Folic acid",
+      "e_code": null,
+      "aliases": "folic acid, folate, vitamin B9, vitamin B-9, pteroylmonoglutamic acid, folacin, ácido fólico, folato, acide folique, Folsäure, acido folico",
+      "layers": [
+        "woman"
+      ]
+    },
+    {
+      "slug": "omega_3",
+      "name": "Omega-3",
+      "e_code": null,
+      "aliases": "omega-3, omega 3, omega-3 fatty acids, EPA, DHA, ALA, eicosapentaenoic acid, docosahexaenoic acid, alpha-linolenic acid, fish oil, tuna oil, algal oil, algae oil, Schizochytrium oil, linseed oil, flaxseed oil, aceite de pescado, aceite de algas, aceite de lino",
+      "layers": [
+        "animal",
+        "woman"
+      ]
+    },
+    {
+      "slug": "soy",
+      "name": "Soy",
+      "e_code": null,
+      "aliases": "soy, soya, soybean, soya bean, soybeans, Glycine max, soy flour, soya flour, soy protein, soya protein, soy protein concentrate, soy protein isolate, textured soy protein, TVP, soja, harina de soja, proteína de soja, soja texturizada",
+      "layers": [
+        "woman"
       ]
     }
   ]
