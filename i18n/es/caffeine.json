@@ -1,39 +1,23 @@
 {
-  "name": "Cafeína",
-  "title": "Cafeína",
-  "description": "La cafeína no elimina el cansancio: bloquea la señal que hace que lo notes. Puede alterar el sueño, subir temporalmente la tensión y tiene un nivel de ingesta EFSA menor durante el embarazo.",
-  "what_is": "La cafeína es un estimulante presente de forma natural en el café, el té, el cacao y algunas otras plantas, y también puede añadirse directamente a alimentos, bebidas y suplementos.",
-  "why_botia": "La cafeína no da energía: bloquea la señal que el cuerpo usa para avisar de que está cansado. El cansancio sigue ahí, pero se nota menos — y la cafeína puede alterar el sueño incluso si se toma seis horas antes de acostarse. Puede subir la tensión durante unas horas, sobre todo en quienes no la consumen habitualmente. La EFSA considera que hasta 400 mg al día no plantean problemas de seguridad para adultos sanos y establece 200 mg al día durante el embarazo; la lista de ingredientes dice que lleva cafeína, no necesariamente cuánta.",
-  "can_1": "Detectar cafeína y nombres explícitos habituales como cafeína anhidra cuando aparecen en la lista de ingredientes.",
-  "can_2": "Explicar cómo la cafeína cambia la sensación de cansancio, sus efectos sobre el sueño y la tensión y el nivel de ingesta diferente de la EFSA durante el embarazo.",
-  "cannot_1": "Calcular la cafeína total a partir de la lista de ingredientes cuando la cantidad no está declarada allí.",
-  "cannot_2": "Inferir la dosis exacta de cafeína a partir de café, té, guaraná, cacao u otro ingrediente que pueda contenerla.",
-  "sources": [
-    {
-      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
-    },
-    {
-      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
-    },
-    {
-      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
-    },
-    {
-      "label": "Review — Acute effects of caffeine on blood pressure",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
-    },
-    {
-      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    }
-  ],
-  "e_code": null,
+  "name": "Caffeine",
+  "e_code": "",
+  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine, theine, guaranine, cafeína, teína, guaranina",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine"
+  "what_is": "La cafeína es un estimulante del sistema nervioso. Está presente de forma natural en el café, el té, la guaraná y otras plantas, y también se añade a bebidas energéticas, refrescos y algunos alimentos. La teína del té y la guaranina de la guaraná son la misma sustancia con otro nombre. Aumenta temporalmente el estado de alerta, reduce la sensación de cansancio y retrasa y acorta el sueño, especialmente cuando se toma por la tarde o por la noche.",
+  "why_botia": "En niñas, niños y adolescentes el límite seguro es mucho más bajo, porque se calcula por kilo de peso corporal y no por persona. La OMS recomienda reducir la ingesta durante el embarazo por encima de 300 mg al día, ya que una ingesta elevada se asocia con pérdida del embarazo y bajo peso al nacer. Y en la perimenopausia y posmenopausia, una mayor ingesta se asoció con más molestias por sofocos.",
+  "can_1": "Detectar cafeína y nombres comunes de ingredientes como cafeína anhidra cuando aparecen en la lista de ingredientes.",
+  "can_2": "Explicar cómo afecta la cafeína al sueño y al estado de alerta, y mostrar la capa de información Mujer.",
+  "cannot_1": "Calcular la cafeína total a partir de la lista de ingredientes cuando no se declara la cantidad.",
+  "cannot_2": "Inferir la dosis exacta de cafeína del café, té, guaraná, cacao u otro ingrediente que contenga cafeína.",
+  "sources": [
+    {
+      "label": "OMS 2016 — Recomendaciones sobre atención prenatal para una experiencia positiva del embarazo",
+      "url": "https://www.who.int/publications/i/item/9789241549912"
+    }
+  ],
+  "title": "Caffeine",
+  "description": "La cafeína es un estimulante presente en el café, el té y la guaraná y añadido a bebidas energéticas y refrescos; la teína y la guaranina son la misma sustancia. En niños y adolescentes el límite seguro es mucho más bajo porque se calcula por peso corporal, y la OMS recomienda reducir la ingesta en el embarazo por encima de 300 mg al día."
 }

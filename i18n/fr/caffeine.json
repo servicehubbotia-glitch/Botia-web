@@ -1,39 +1,23 @@
 {
-  "name": "Caféine",
-  "title": "Caféine",
-  "description": "La caféine ne supprime pas la fatigue : elle bloque le signal qui la fait ressentir. Elle peut perturber le sommeil, augmenter temporairement la pression artérielle et son niveau d'apport EFSA est plus bas pendant la grossesse.",
-  "what_is": "La caféine est un stimulant présent naturellement dans le café, le thé, le cacao et certaines autres plantes, et elle peut aussi être ajoutée directement aux aliments, boissons et compléments.",
-  "why_botia": "La caféine ne donne pas d'énergie : elle bloque le signal utilisé par le corps pour indiquer qu'il est fatigué. La fatigue reste présente, mais on la ressent moins — et la caféine peut perturber le sommeil même lorsqu'elle est consommée six heures avant le coucher. Elle peut augmenter la pression artérielle pendant quelques heures, surtout chez les personnes qui n'en consomment pas régulièrement. L'EFSA considère qu'une consommation allant jusqu'à 400 mg par jour ne soulève pas de problème de sécurité chez l'adulte sain et fixe 200 mg par jour pendant la grossesse ; la liste des ingrédients indique la présence de caféine, pas nécessairement sa quantité.",
-  "can_1": "Détecter la caféine et les appellations explicites courantes comme caféine anhydre lorsqu'elles apparaissent dans la liste des ingrédients.",
-  "can_2": "Expliquer comment la caféine modifie la sensation de fatigue, ses effets sur le sommeil et la pression artérielle et le niveau d'apport différent fixé par l'EFSA pendant la grossesse.",
-  "cannot_1": "Calculer la quantité totale de caféine à partir de la liste des ingrédients lorsqu'elle n'y est pas indiquée.",
-  "cannot_2": "Déduire la dose exacte de caféine à partir de café, thé, guarana, cacao ou d'un autre ingrédient qui en contient.",
-  "sources": [
-    {
-      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
-    },
-    {
-      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
-    },
-    {
-      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
-    },
-    {
-      "label": "Review — Acute effects of caffeine on blood pressure",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
-    },
-    {
-      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    }
-  ],
-  "e_code": null,
+  "name": "Caffeine",
+  "e_code": "",
+  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine, theine, guaranine, cafeína, teína, guaranina",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine"
+  "what_is": "La caféine est un stimulant du système nerveux. Elle est naturellement présente dans le café, le thé, le guarana et d'autres plantes, et elle est également ajoutée aux boissons énergisantes, aux sodas et à certains aliments. La théine du thé et la guaranine du guarana sont la même substance sous un autre nom. Elle augmente temporairement la vigilance, réduit la sensation de fatigue et retarde et raccourcit le sommeil, surtout lorsqu'elle est prise l'après-midi ou le soir.",
+  "why_botia": "Chez les filles, les garçons et les adolescents, la limite de sécurité est beaucoup plus basse, car elle est calculée par kilo de poids corporel plutôt que par personne. L'OMS recommande de réduire la consommation pendant la grossesse au-dessus de 300 mg par jour, car une consommation élevée est associée à une perte de grossesse et à un faible poids à la naissance. Et en périménopause et postménopause, une consommation plus élevée a été associée à des bouffées de chaleur plus gênantes.",
+  "can_1": "Détecter la caféine et les noms d'ingrédients explicites courants tels que la caféine anhydre lorsqu'ils apparaissent dans la liste des ingrédients.",
+  "can_2": "Expliquer comment la caféine affecte le sommeil et la vigilance, et afficher la couche d'information Femme.",
+  "cannot_1": "Calculer la caféine totale à partir de la liste des ingrédients lorsque la quantité n'y est pas déclarée.",
+  "cannot_2": "Déduire la dose exacte de caféine du café, du thé, du guarana, du cacao ou d'un autre ingrédient contenant de la caféine.",
+  "sources": [
+    {
+      "label": "OMS 2016 — Recommandations sur les soins prénatals pour une expérience positive de la grossesse",
+      "url": "https://www.who.int/publications/i/item/9789241549912"
+    }
+  ],
+  "title": "Caffeine",
+  "description": "La caféine est un stimulant présent dans le café, le thé et le guarana et ajouté aux boissons énergisantes et aux sodas ; la théine et la guaranine sont la même substance. Chez les enfants et les adolescents, la limite de sécurité est beaucoup plus basse car elle est calculée en fonction du poids corporel, et l'OMS recommande de réduire la consommation pendant la grossesse au-dessus de 300 mg par jour."
 }

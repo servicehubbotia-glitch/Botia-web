@@ -1,39 +1,23 @@
 {
-  "name": "咖啡因",
-  "title": "咖啡因",
-  "description": "咖啡因不会消除疲劳，而是阻断让你感到疲劳的信号。它可能影响睡眠、暂时升高血压，而且 EFSA 在怀孕期间采用更低的摄入水平。",
-  "what_is": "咖啡因是一种刺激物，天然存在于咖啡、茶、可可和其他一些植物中，也可以直接添加到食品、饮料和补充剂中。",
-  "why_botia": "咖啡因并不会给身体增加能量：它会阻断身体用来提示疲劳的信号。疲劳仍然存在，只是感觉没有那么明显——即使在睡前六小时摄入，咖啡因也可能影响睡眠。它还可能在数小时内升高血压，尤其是在不经常摄入咖啡因的人群中。EFSA 认为健康成年人每天摄入不超过 400 毫克不会引起安全担忧，而怀孕期间为每天 200 毫克；配料表会告诉你含有咖啡因，但不一定告诉你具体有多少。",
-  "can_1": "识别配料表中明确出现的咖啡因以及无水咖啡因等常见名称。",
-  "can_2": "解释咖啡因如何改变疲劳感、对睡眠和血压的影响，以及 EFSA 在怀孕期间采用的不同摄入水平。",
-  "cannot_1": "在配料表没有标明数量时计算产品中的总咖啡因。",
-  "cannot_2": "根据咖啡、茶、瓜拉纳、可可或其他含咖啡因配料推断准确的咖啡因剂量。",
-  "sources": [
-    {
-      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
-    },
-    {
-      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
-    },
-    {
-      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
-    },
-    {
-      "label": "Review — Acute effects of caffeine on blood pressure",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
-    },
-    {
-      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    }
-  ],
-  "e_code": null,
+  "name": "Caffeine",
+  "e_code": "",
+  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine, theine, guaranine, cafeína, teína, guaranina",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine"
+  "what_is": "咖啡因是一种神经系统兴奋剂。它天然存在于咖啡、茶、瓜拉纳和其他植物中，也添加到能量饮料、软饮料和一些食品中。茶中的茶碱和瓜拉纳中的瓜拉纳因是同一物质的不同名称。它能暂时提高警觉性，减少疲劳感，并延迟和缩短睡眠，尤其是在下午或晚上服用时。",
+  "why_botia": "在女孩、男孩和青少年中，安全限量要低得多，因为它是按每公斤体重而不是按人计算的。世界卫生组织建议在怀孕期间将摄入量降低到每天300毫克以下，因为高摄入量与流产和低出生体重有关。在围绝经期和绝经后，较高的摄入量与更严重的潮热困扰有关。",
+  "can_1": "检测成分列表中出现的咖啡因和常见的明确成分名称，如无水咖啡因。",
+  "can_2": "解释咖啡因如何影响睡眠和警觉性，并显示“女性”信息层。",
+  "cannot_1": "当成分列表中未标明含量时，无法计算总咖啡因量。",
+  "cannot_2": "无法从咖啡、茶、瓜拉纳、可可或其他含咖啡因的成分中推断出确切的咖啡因剂量。",
+  "sources": [
+    {
+      "label": "世界卫生组织 2016 — 关于产前保健促进积极妊娠体验的建议",
+      "url": "https://www.who.int/publications/i/item/9789241549912"
+    }
+  ],
+  "title": "Caffeine",
+  "description": "咖啡因是一种兴奋剂，存在于咖啡、茶和瓜拉纳中，并添加到能量饮料和软饮料中；茶碱和瓜拉纳因是同一物质。在儿童和青少年中，安全限量要低得多，因为它取决于体重，世界卫生组织建议在怀孕期间将摄入量降低到每天300毫克以下。"
 }

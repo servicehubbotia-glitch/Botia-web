@@ -1,39 +1,23 @@
 {
-  "name": "Cofeina",
-  "title": "Cofeina",
-  "description": "Cofeina nu elimină oboseala, ci blochează semnalul prin care o simți. Poate perturba somnul, crește temporar tensiunea și are un nivel de aport EFSA mai mic în timpul sarcinii.",
-  "what_is": "Cofeina este un stimulant prezent în mod natural în cafea, ceai, cacao și alte câteva plante și poate fi adăugată direct în alimente, băuturi și suplimente.",
-  "why_botia": "Cofeina nu oferă energie: blochează semnalul prin care corpul transmite că este obosit. Oboseala rămâne, dar este simțită mai puțin — iar cofeina poate perturba somnul chiar dacă este consumată cu șase ore înainte de culcare. Poate crește tensiunea arterială pentru câteva ore, mai ales la persoanele care nu o consumă regulat. EFSA consideră că până la 400 mg pe zi nu ridică probleme de siguranță pentru adulții sănătoși și stabilește 200 mg pe zi în timpul sarcinii; lista ingredientelor arată că există cofeină, nu neapărat și cantitatea.",
-  "can_1": "Detecta cofeina și denumiri explicite uzuale precum cofeină anhidră atunci când apar în lista ingredientelor.",
-  "can_2": "Explica modul în care cofeina schimbă senzația de oboseală, efectele asupra somnului și tensiunii arteriale și nivelul diferit de aport EFSA în timpul sarcinii.",
-  "cannot_1": "Calcula cantitatea totală de cofeină din lista ingredientelor atunci când cantitatea nu este declarată acolo.",
-  "cannot_2": "Deduce doza exactă de cofeină din cafea, ceai, guarana, cacao sau alt ingredient care o conține.",
-  "sources": [
-    {
-      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
-    },
-    {
-      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
-    },
-    {
-      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
-    },
-    {
-      "label": "Review — Acute effects of caffeine on blood pressure",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
-    },
-    {
-      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    }
-  ],
-  "e_code": null,
+  "name": "Caffeine",
+  "e_code": "",
+  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine, theine, guaranine, cafeína, teína, guaranina",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine"
+  "what_is": "Cofeina este un stimulent al sistemului nervos. Este prezentă în mod natural în cafea, ceai, guarana și alte plante și este, de asemenea, adăugată în băuturi energizante, băuturi răcoritoare și unele alimente. Teina din ceai și guaranina din guarana sunt aceeași substanță sub alt nume. Crește temporar starea de veghe, reduce senzația de oboseală și întârzie și scurtează somnul, mai ales atunci când este administrată după-amiaza sau seara.",
+  "why_botia": "La fete, băieți și adolescenți, limita de siguranță este mult mai mică, deoarece este calculată pe kilogram de greutate corporală, nu pe persoană. OMS recomandă reducerea consumului în timpul sarcinii peste 300 mg pe zi, deoarece un consum ridicat este asociat cu pierderea sarcinii și greutate mică la naștere. Și în perimenopauză și postmenopauză, un consum mai mare a fost asociat cu mai multe disconforturi cauzate de bufeuri.",
+  "can_1": "Detectează cofeina și numele comune de ingrediente explicite, cum ar fi cofeina anhidră, atunci când apar în lista de ingrediente.",
+  "can_2": "Explică modul în care cofeina afectează somnul și starea de veghe și afișează stratul de informații Femeie.",
+  "cannot_1": "Nu poate calcula cofeina totală din lista de ingrediente atunci când cantitatea nu este declarată acolo.",
+  "cannot_2": "Nu poate deduce doza exactă de cofeină din cafea, ceai, guarana, cacao sau alt ingredient care conține cofeină.",
+  "sources": [
+    {
+      "label": "OMS 2016 — Recomandări privind îngrijirea prenatală pentru o experiență pozitivă a sarcinii",
+      "url": "https://www.who.int/publications/i/item/9789241549912"
+    }
+  ],
+  "title": "Caffeine",
+  "description": "Cofeina este un stimulent prezent în cafea, ceai și guarana și adăugat în băuturi energizante și răcoritoare; teina și guaranina sunt aceeași substanță. La copii și adolescenți, limita de siguranță este mult mai mică deoarece depinde de greutatea corporală, iar OMS recomandă reducerea consumului în sarcină peste 300 mg pe zi."
 }

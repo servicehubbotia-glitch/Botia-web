@@ -1,39 +1,23 @@
 {
-  "name": "Kofeina",
-  "title": "Kofeina",
-  "description": "Kofeina nie usuwa zmęczenia, lecz blokuje sygnał, który pozwala je odczuwać. Może zaburzać sen, czasowo podnosić ciśnienie i ma niższy poziom spożycia EFSA podczas ciąży.",
-  "what_is": "Kofeina jest substancją pobudzającą występującą naturalnie w kawie, herbacie, kakao i niektórych innych roślinach, a także może być dodawana bezpośrednio do żywności, napojów i suplementów.",
-  "why_botia": "Kofeina nie daje energii: blokuje sygnał, którym organizm informuje o zmęczeniu. Zmęczenie nadal istnieje, lecz jest mniej odczuwalne — a kofeina może zaburzać sen nawet wtedy, gdy zostanie spożyta sześć godzin przed snem. Może podnosić ciśnienie krwi przez kilka godzin, zwłaszcza u osób, które nie spożywają jej regularnie. EFSA uznaje, że do 400 mg dziennie nie budzi obaw o bezpieczeństwo u zdrowych dorosłych, a podczas ciąży ustala 200 mg dziennie; lista składników informuje o obecności kofeiny, ale niekoniecznie o jej ilości.",
-  "can_1": "Wykrywać kofeinę i typowe wyraźne nazwy, takie jak kofeina bezwodna, gdy występują na liście składników.",
-  "can_2": "Wyjaśniać, jak kofeina zmienia odczuwanie zmęczenia, wpływa na sen i ciśnienie krwi oraz dlaczego EFSA stosuje inny poziom spożycia podczas ciąży.",
-  "cannot_1": "Obliczyć całkowitej ilości kofeiny z listy składników, jeśli ilość nie została tam podana.",
-  "cannot_2": "Wywnioskować dokładnej dawki kofeiny z kawy, herbaty, guarany, kakao lub innego składnika zawierającego kofeinę.",
-  "sources": [
-    {
-      "label": "EFSA — Caffeine: safe intakes for adults and pregnancy",
-      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
-    },
-    {
-      "label": "Review — Caffeine blocks the signalling involved in sleepiness and alertness",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27612937/"
-    },
-    {
-      "label": "Sleep study — Caffeine taken 6 hours before bedtime can disrupt sleep",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24235903/"
-    },
-    {
-      "label": "Review — Acute effects of caffeine on blood pressure",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24203773/"
-    },
-    {
-      "label": "EU Regulation 1169/2011 — caffeine labelling provisions",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    }
-  ],
-  "e_code": null,
+  "name": "Caffeine",
+  "e_code": "",
+  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine, theine, guaranine, cafeína, teína, guaranina",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "aliases": "caffeine, caffeine anhydrous, anhydrous caffeine, 1,3,7-trimethylxanthine"
+  "what_is": "Kofeina jest stymulantem układu nerwowego. Występuje naturalnie w kawie, herbacie, guaranie i innych roślinach, a także jest dodawana do napojów energetycznych, napojów gazowanych i niektórych produktów spożywczych. Teina w herbacie i guaranina w guaranie to ta sama substancja pod inną nazwą. Tymczasowo zwiększa czujność, zmniejsza uczucie zmęczenia oraz opóźnia i skraca sen, zwłaszcza gdy jest przyjmowana po południu lub wieczorem.",
+  "why_botia": "U dziewcząt, chłopców i młodzieży bezpieczny limit jest znacznie niższy, ponieważ jest obliczany na kilogram masy ciała, a nie na osobę. WHO zaleca zmniejszenie spożycia w czasie ciąży powyżej 300 mg dziennie, ponieważ wysokie spożycie wiąże się z utratą ciąży i niską masą urodzeniową. A w okresie okołomenopauzalnym i pomenopauzalnym wyższe spożycie wiązało się z większymi dolegliwościami związanymi z uderzeniami gorąca.",
+  "can_1": "Wykrywa kofeinę i popularne nazwy składników, takie jak kofeina bezwodna, gdy pojawiają się na liście składników.",
+  "can_2": "Wyjaśnia, jak kofeina wpływa na sen i czujność, i wyświetla warstwę informacyjną Kobieta.",
+  "cannot_1": "Nie może obliczyć całkowitej zawartości kofeiny z listy składników, gdy ilość nie jest tam podana.",
+  "cannot_2": "Nie może wywnioskować dokładnej dawki kofeiny z kawy, herbaty, guarany, kakao lub innego składnika zawierającego kofeinę.",
+  "sources": [
+    {
+      "label": "WHO 2016 — Zalecenia dotyczące opieki prenatalnej dla pozytywnych doświadczeń związanych z ciążą",
+      "url": "https://www.who.int/publications/i/item/9789241549912"
+    }
+  ],
+  "title": "Caffeine",
+  "description": "Kofeina jest stymulantem obecnym w kawie, herbacie i guaranie oraz dodawanym do napojów energetycznych i gazowanych; teina i guaranina to ta sama substancja. U dzieci i młodzieży bezpieczny limit jest znacznie niższy, ponieważ zależy od masy ciała, a WHO zaleca zmniejszenie spożycia w ciąży powyżej 300 mg dziennie."
 }
