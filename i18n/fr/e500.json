@@ -1,0 +1,32 @@
+{
+  "name": "Sodium bicarbonate",
+  "e_code": "E500(ii)",
+  "aliases": "E500, E500(ii), sodium bicarbonate, sodium hydrogen carbonate, baking soda",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "woman",
+    "enumbers"
+  ],
+  "what_is": "Le bicarbonate de sodium est le bicarbonate de soude ordinaire. Dans l'alimentation, il est principalement utilisé pour faire lever les pâtes et les produits de boulangerie et les rendre plus légers, ainsi que pour réguler l'acidité. Sur une étiquette, il peut apparaître comme bicarbonate de sodium, hydrogénocarbonate de sodium ou E500.",
+  "why_botia": "Dans la cohorte NutriNet-Santé, les femmes qui n'avaient pas encore atteint la ménopause et consommaient plus de E500 ont eu plus de diagnostics de cancer du sein que celles qui en consommaient moins. Chez les femmes ménopausées, cette relation n'a pas été observée.",
+  "can_1": "Detect E500, E500(ii), sodium bicarbonate, sodium hydrogen carbonate and baking soda when they are declared on the label.",
+  "can_2": "Explain its use in food and show the Woman and E-number information layers.",
+  "cannot_1": "Determine how much sodium bicarbonate a product contains when the amount is not declared.",
+  "cannot_2": "Determine from the ingredient list whether a person's intake corresponds to the higher-intake group studied in NutriNet-Santé.",
+  "sources": [
+    {
+      "label": "JECFA — Bicarbonate of soda / sodium hydrogen carbonate, INS 500(ii)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1912"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E500(ii) sodium hydrogen carbonate",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., émulsifiants alimentaires et risque de cancer (cohorte NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
+    }
+  ],
+  "title": "Sodium bicarbonate",
+  "description": "Le bicarbonate de sodium est le bicarbonate de soude ordinaire, utilisé pour faire lever les pâtes et réguler l'acidité. Dans la cohorte NutriNet-Santé, les femmes préménopausées ayant une consommation plus élevée de E500 ont eu plus de diagnostics de cancer du sein."
+}
