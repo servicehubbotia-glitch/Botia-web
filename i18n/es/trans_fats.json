@@ -1,43 +1,27 @@
 {
-  "name": "Ácidos grasos trans",
-  "e_code": null,
-  "aliases": "grasas trans, ácidos grasos trans, aceite parcialmente hidrogenado, aceite vegetal parcialmente hidrogenado, iTFAs, grasas trans",
+  "name": "Trans fatty acids",
+  "e_code": "",
+  "aliases": "trans fats, trans fatty acids, partially hydrogenated oil, partially hydrogenated vegetable oil, iTFAs, grasas trans",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Las grasas trans son un tipo de grasa insaturada. Las grasas trans industriales proceden principalmente de aceites parcialmente hidrogenados; cantidades menores aparecen de forma natural en la carne y los lácteos de animales rumiantes.",
-  "why_botia": "Las grasas trans suben el colesterol LDL y bajan el HDL, aumentando el riesgo cardiovascular — mientras que las mujeres estuvieron históricamente infrarrepresentadas en la investigación sobre enfermedad coronaria. También se han asociado con inflamación sistémica, endometriosis e infertilidad ovulatoria, aunque esas son asociaciones, no pruebas de causalidad. Las grasas trans industriales vienen principalmente de aceites parcialmente hidrogenados; las de rumiantes aparecen de forma natural en carne y lácteos, normalmente en cantidades mucho menores.",
-  "can_1": "Detectar aceites parcialmente hidrogenados o una declaración explícita de grasas trans cuando aparezcan en la etiqueta.",
-  "can_2": "Explicar la evidencia cardiovascular y las asociaciones observadas en mujeres con inflamación sistémica, endometriosis e infertilidad ovulatoria.",
-  "cannot_1": "Determinar la cantidad exacta de grasas trans a partir de una lista de ingredientes cuando la cantidad no está declarada.",
-  "cannot_2": "Demostrar que el consumo de grasas trans causó endometriosis, infertilidad o inflamación en una persona concreta.",
+  "what_is": "Las grasas trans son un tipo de grasa insaturada. Las industriales se forman principalmente al hidrogenar parcialmente los aceites para hacerlos más sólidos, estables y duraderos, por lo que se pueden encontrar en pastelería, galletas, fritos, margarinas y otros productos procesados. En una etiqueta pueden aparecer como grasas trans o, más a menudo, como aceite o grasa parcialmente hidrogenada. Pequeñas cantidades también se producen de forma natural en la carne y los lácteos de animales rumiantes.",
+  "why_botia": "La OMS afirma que las grasas trans no tienen ningún beneficio conocido para la salud y que aumentan el riesgo de enfermedad coronaria, infarto y muerte. Recomienda que aporten menos del 1% de la energía diaria y que se eliminen las grasas trans industriales de los alimentos. En una cohorte de 18.555 mujeres, por cada 2% de la energía diaria en la que las grasas trans sustituían a los hidratos de carbono, el riesgo de infertilidad ovulatoria era un 73% mayor, y más del doble cuando sustituían a las grasas monoinsaturadas.",
+  "can_1": "Detectar aceites parcialmente hidrogenados o una declaración explícita de grasas trans cuando aparecen en la etiqueta.",
+  "can_2": "Explicar lo que dice la OMS sobre las grasas trans y lo que encontró la cohorte en mujeres, y mostrar la capa de información Mujer.",
+  "cannot_1": "Determinar la cantidad exacta de grasa trans a partir de una lista de ingredientes cuando no se declara la cantidad.",
+  "cannot_2": "Demostrar que la ingesta de grasas trans causó infertilidad en una persona concreta.",
   "sources": [
     {
-      "label": "WHO — Trans fat",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/trans-fat"
+      "label": "OMS — Eliminación de grasas trans (2023)",
+      "url": "https://www.who.int/news-room/questions-answers/item/trans-fat"
     },
     {
-      "label": "Review — Effects of industrial and ruminant trans fats on LDL and HDL cholesterol",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2830458/"
-    },
-    {
-      "label": "Nurses' Health Study — Trans fatty acids and systemic inflammation in women",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/15051604/"
-    },
-    {
-      "label": "Nurses' Health Study II — Dietary fat and endometriosis risk",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20332166/"
-    },
-    {
-      "label": "Nurses' Health Study II — Dietary fatty acids and ovulatory infertility",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17209201/"
-    },
-    {
-      "label": "Cardiovascular research — Representation of women in prevention trials",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20160159/"
+      "label": "Cohorte: ingesta de grasas trans e infertilidad ovulatoria (2019)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30904839/"
     }
   ],
-  "title": "Ácidos grasos trans",
-  "description": "Las grasas trans suben el LDL y bajan el HDL; estudios en mujeres también han relacionado un mayor consumo con inflamación, endometriosis e infertilidad ovulatoria."
+  "title": "Trans fatty acids",
+  "description": "Las grasas trans se forman principalmente al hidrogenar parcialmente los aceites, y aparecen en las etiquetas como grasas trans o aceite parcialmente hidrogenado. La OMS afirma que no tienen ningún beneficio conocido para la salud y recomienda eliminar las industriales. En una cohorte de 18.555 mujeres, un mayor consumo se asoció con una mayor infertilidad ovulatoria."
 }

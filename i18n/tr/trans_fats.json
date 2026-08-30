@@ -1,43 +1,27 @@
 {
-  "name": "Trans yağ asitleri",
-  "e_code": null,
-  "aliases": "trans yağlar, trans yağ asitleri, kısmen hidrojene yağ, kısmen hidrojene bitkisel yağ, iTFAlar, grasas trans",
+  "name": "Trans fatty acids",
+  "e_code": "",
+  "aliases": "trans fats, trans fatty acids, partially hydrogenated oil, partially hydrogenated vegetable oil, iTFAs, grasas trans",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Trans yağlar bir tür doymamış yağdır. Endüstriyel trans yağlar esas olarak kısmen hidrojene edilmiş yağlardan gelir; daha küçük miktarlar geviş getiren hayvanların et ve süt ürünlerinde doğal olarak bulunur.",
-  "why_botia": "Trans yağlar LDL kolesterolü yükseltir ve HDL'yi düşürerek kardiyovasküler riski artırır — kadınlar ise koroner kalp hastalığı araştırmalarında tarihsel olarak yetersiz temsil edilmiştir. Trans yağ tüketimi ayrıca sistemik inflamasyon, endometriozis ve ovulatuvar infertilite ile ilişkilendirilmiştir; ancak bunlar ilişkilerdir, nedenselliğin kanıtı değildir. Endüstriyel trans yağlar esas olarak kısmen hidrojene edilmiş yağlardan gelir; geviş getiren hayvanlardan gelen trans yağlar et ve süt ürünlerinde doğal olarak, genellikle çok daha düşük miktarlarda bulunur.",
-  "can_1": "Etikette yer aldığında kısmen hidrojene edilmiş yağları veya açık bir trans yağ beyanını tespit etmek.",
-  "can_2": "Kardiyovasküler kanıtları ve kadınlarda sistemik inflamasyon, endometriozis ve ovulatuvar infertilite ile bildirilen ilişkileri açıklamak.",
-  "cannot_1": "Miktar belirtilmemişse yalnızca içerik listesinden trans yağın kesin miktarını belirlemek.",
-  "cannot_2": "Trans yağ tüketiminin belirli bir kişide endometriozis, infertilite veya inflamasyona neden olduğunu kanıtlamak.",
+  "what_is": "Trans yağlar bir tür doymamış yağdır. Endüstriyel trans yağlar, yağların kısmi hidrojenasyonu ile oluşturulur ve daha katı, kararlı ve uzun ömürlü hale getirilir, bu nedenle pastacılık ürünlerinde, bisküvilerde, kızartmalarda, margarinlerde ve diğer işlenmiş ürünlerde bulunabilirler. Bir etikette trans yağlar veya daha sık olarak kısmen hidrojenize yağ veya yağ olarak görünebilirler. Küçük miktarlar geviş getiren hayvanların et ve süt ürünlerinde doğal olarak da bulunur.",
+  "why_botia": "DSÖ, trans yağların bilinen bir sağlık yararı olmadığını ve koroner kalp hastalığı, kalp krizi ve ölüm riskini artırdığını belirtmektedir. Günlük enerjinin %1'inden azını sağlamalarını ve endüstriyel trans yağların gıdalardan elimine edilmesini önermektedir. 18.555 kadından oluşan bir kohortta, trans yağların karbonhidratların yerini aldığı günlük enerjinin her %2'si için ovulatuar infertilite riski %73 daha yüksekti ve tekli doymamış yağların yerini aldığında iki kattan fazlaydı.",
+  "can_1": "Etikette göründüklerinde kısmen hidrojenize yağları veya açık bir trans yağ beyanını tespit eder.",
+  "can_2": "DSÖ'nün trans yağlar hakkında söylediklerini ve kadınlardaki kohortun bulgularını açıklar ve Kadın bilgi katmanını gösterir.",
+  "cannot_1": "Miktar beyan edilmediğinde bir içerik listesinden tam trans yağ miktarını belirleyemez.",
+  "cannot_2": "Trans yağ alımının belirli bir kişide kısırlığa neden olduğunu kanıtlayamaz.",
   "sources": [
     {
-      "label": "WHO — Trans fat",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/trans-fat"
+      "label": "DSÖ — Trans yağların eliminasyonu (2023)",
+      "url": "https://www.who.int/news-room/questions-answers/item/trans-fat"
     },
     {
-      "label": "Review — Effects of industrial and ruminant trans fats on LDL and HDL cholesterol",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2830458/"
-    },
-    {
-      "label": "Nurses' Health Study — Trans fatty acids and systemic inflammation in women",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/15051604/"
-    },
-    {
-      "label": "Nurses' Health Study II — Dietary fat and endometriosis risk",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20332166/"
-    },
-    {
-      "label": "Nurses' Health Study II — Dietary fatty acids and ovulatory infertility",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17209201/"
-    },
-    {
-      "label": "Cardiovascular research — Representation of women in prevention trials",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20160159/"
+      "label": "Kohort: trans yağ alımı ve ovulatuar infertilite (2019)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30904839/"
     }
   ],
-  "title": "Trans yağ asitleri",
-  "description": "Trans yağlar LDL'yi yükseltir ve HDL'yi düşürür; kadınlardaki çalışmalar daha yüksek tüketimi inflamasyon, endometriozis ve ovulatuvar infertilite ile de ilişkilendirmiştir."
+  "title": "Trans fatty acids",
+  "description": "Trans yağlar esas olarak yağların kısmi hidrojenasyonu ile oluşur ve etiketlerde trans yağlar veya kısmen hidrojenize yağ olarak görünür. DSÖ, bilinen bir sağlık yararları olmadığını ve endüstriyel olanların elimine edilmesini önermektedir. 18.555 kadından oluşan bir kohortta, daha yüksek alım daha fazla ovulatuar infertilite ile ilişkilendirildi."
 }

@@ -1,43 +1,27 @@
 {
-  "name": "Asam lemak trans",
-  "e_code": null,
-  "aliases": "lemak trans, asam lemak trans, minyak terhidrogenasi parsial, minyak nabati terhidrogenasi parsial, iTFAs, grasas trans",
+  "name": "Trans fatty acids",
+  "e_code": "",
+  "aliases": "trans fats, trans fatty acids, partially hydrogenated oil, partially hydrogenated vegetable oil, iTFAs, grasas trans",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Lemak trans adalah salah satu jenis lemak tak jenuh. Lemak trans industri terutama berasal dari minyak yang dihidrogenasi sebagian; jumlah yang lebih kecil terdapat secara alami dalam daging dan produk susu hewan ruminansia.",
-  "why_botia": "Lemak trans meningkatkan kolesterol LDL dan menurunkan HDL sehingga meningkatkan risiko kardiovaskular — sementara perempuan secara historis kurang terwakili dalam penelitian penyakit jantung koroner. Lemak trans juga dikaitkan dengan peradangan sistemik, endometriosis dan infertilitas ovulasi, meskipun hubungan tersebut merupakan asosiasi, bukan bukti sebab-akibat. Lemak trans industri terutama berasal dari minyak yang dihidrogenasi sebagian; lemak trans ruminansia terdapat secara alami dalam daging dan produk susu, biasanya dalam jumlah yang jauh lebih kecil.",
-  "can_1": "Mendeteksi minyak yang dihidrogenasi sebagian atau pernyataan eksplisit mengenai lemak trans ketika tercantum pada label.",
-  "can_2": "Menjelaskan bukti kardiovaskular dan hubungan yang dilaporkan pada perempuan dengan peradangan sistemik, endometriosis dan infertilitas ovulasi.",
-  "cannot_1": "Menentukan jumlah lemak trans yang tepat dari daftar bahan ketika jumlahnya tidak dinyatakan.",
-  "cannot_2": "Membuktikan bahwa asupan lemak trans menyebabkan endometriosis, infertilitas atau peradangan pada seseorang.",
+  "what_is": "Lemak trans adalah jenis lemak tak jenuh. Lemak trans industri terbentuk terutama melalui hidrogenasi parsial minyak untuk membuatnya lebih padat, stabil, dan tahan lama, itulah sebabnya lemak ini dapat ditemukan dalam kue kering, biskuit, makanan yang digoreng, margarin, dan produk olahan lainnya. Pada label mungkin muncul sebagai lemak trans atau, lebih sering, sebagai minyak atau lemak terhidrogenasi parsial. Sejumlah kecil juga terjadi secara alami dalam daging dan susu hewan ruminansia.",
+  "why_botia": "WHO menyatakan bahwa lemak trans tidak memiliki manfaat kesehatan yang diketahui dan meningkatkan risiko penyakit jantung koroner, serangan jantung, dan kematian. WHO merekomendasikan agar lemak trans menyediakan kurang dari 1% energi harian, dan lemak trans industri dihilangkan dari makanan. Dalam kohort 18.555 wanita, untuk setiap 2% energi harian di mana lemak trans menggantikan karbohidrat, risiko infertilitas ovulasi 73% lebih tinggi, dan lebih dari dua kali lipat ketika menggantikan lemak tak jenuh tunggal.",
+  "can_1": "Mendeteksi minyak terhidrogenasi parsial atau deklarasi lemak trans eksplisit ketika muncul pada label.",
+  "can_2": "Menjelaskan apa yang WHO katakan tentang lemak trans dan apa yang ditemukan kohort pada wanita, dan menampilkan lapisan informasi Wanita.",
+  "cannot_1": "Menentukan jumlah pasti lemak trans dari daftar bahan ketika jumlahnya tidak dinyatakan.",
+  "cannot_2": "Membuktikan bahwa asupan lemak trans menyebabkan infertilitas pada orang tertentu.",
   "sources": [
     {
-      "label": "WHO — Trans fat",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/trans-fat"
+      "label": "WHO — Penghapusan lemak trans (2023)",
+      "url": "https://www.who.int/news-room/questions-answers/item/trans-fat"
     },
     {
-      "label": "Review — Effects of industrial and ruminant trans fats on LDL and HDL cholesterol",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2830458/"
-    },
-    {
-      "label": "Nurses' Health Study — Trans fatty acids and systemic inflammation in women",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/15051604/"
-    },
-    {
-      "label": "Nurses' Health Study II — Dietary fat and endometriosis risk",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20332166/"
-    },
-    {
-      "label": "Nurses' Health Study II — Dietary fatty acids and ovulatory infertility",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17209201/"
-    },
-    {
-      "label": "Cardiovascular research — Representation of women in prevention trials",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20160159/"
+      "label": "Kohort: asupan lemak trans dan infertilitas ovulasi (2019)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30904839/"
     }
   ],
-  "title": "Asam lemak trans",
-  "description": "Lemak trans meningkatkan LDL dan menurunkan HDL; penelitian pada perempuan juga mengaitkan asupan yang lebih tinggi dengan peradangan, endometriosis dan infertilitas ovulasi."
+  "title": "Trans fatty acids",
+  "description": "Lemak trans terbentuk terutama melalui hidrogenasi parsial minyak, dan muncul pada label sebagai lemak trans atau minyak terhidrogenasi parsial. WHO menyatakan bahwa lemak trans tidak memiliki manfaat kesehatan yang diketahui dan merekomendasikan penghapusan lemak trans industri. Dalam kohort 18.555 wanita, asupan yang lebih tinggi dikaitkan dengan infertilitas ovulasi yang lebih banyak."
 }

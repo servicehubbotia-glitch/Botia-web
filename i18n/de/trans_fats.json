@@ -1,43 +1,27 @@
 {
-  "name": "Transfettsäuren",
-  "e_code": null,
-  "aliases": "Transfette, Transfettsäuren, teilweise gehärtetes Öl, teilweise gehärtetes Pflanzenöl, iTFAs, grasas trans",
+  "name": "Trans fatty acids",
+  "e_code": "",
+  "aliases": "trans fats, trans fatty acids, partially hydrogenated oil, partially hydrogenated vegetable oil, iTFAs, grasas trans",
   "module_icon": "mujer.png",
   "layers": [
     "woman"
   ],
-  "what_is": "Transfette sind eine Form ungesättigter Fette. Industrielle Transfette stammen hauptsächlich aus teilweise gehärteten Ölen; kleinere Mengen kommen natürlicherweise in Fleisch und Milchprodukten von Wiederkäuern vor.",
-  "why_botia": "Transfette erhöhen das LDL-Cholesterin und senken HDL, wodurch das kardiovaskuläre Risiko steigt — während Frauen in der Forschung zu koronarer Herzkrankheit historisch unterrepräsentiert waren. Sie wurden außerdem mit systemischer Entzündung, Endometriose und ovulatorischer Unfruchtbarkeit in Verbindung gebracht, wobei es sich um Assoziationen und nicht um einen Beweis für Kausalität handelt. Industrielle Transfette stammen hauptsächlich aus teilweise gehärteten Ölen; Transfette von Wiederkäuern kommen natürlicherweise in Fleisch und Milchprodukten vor, meist in deutlich geringeren Mengen.",
-  "can_1": "Teilweise gehärtete Öle oder eine ausdrückliche Angabe von Transfetten erkennen, wenn sie auf dem Etikett erscheinen.",
-  "can_2": "Die kardiovaskuläre Evidenz sowie die bei Frauen berichteten Zusammenhänge mit systemischer Entzündung, Endometriose und ovulatorischer Unfruchtbarkeit erklären.",
-  "cannot_1": "Die genaue Transfettmenge aus einer Zutatenliste bestimmen, wenn die Menge nicht angegeben ist.",
-  "cannot_2": "Beweisen, dass der Konsum von Transfetten bei einer bestimmten Person Endometriose, Unfruchtbarkeit oder Entzündung verursacht hat.",
+  "what_is": "Transfette sind eine Art ungesättigtes Fett. Industrielle Transfette entstehen hauptsächlich durch teilweise Hydrierung von Ölen, um sie fester, stabiler und haltbarer zu machen, weshalb sie in Gebäck, Keksen, Frittiertem, Margarinen und anderen verarbeiteten Produkten vorkommen. Auf einem Etikett können sie als Transfette oder häufiger als teilweise gehärtetes Öl oder Fett erscheinen. Kleine Mengen kommen auch natürlicherweise im Fleisch und in Milchprodukten von Wiederkäuern vor.",
+  "why_botia": "Die WHO erklärt, dass Transfette keinen bekannten gesundheitlichen Nutzen haben und dass sie das Risiko für koronare Herzkrankheit, Herzinfarkt und Tod erhöhen. Sie empfiehlt, dass sie weniger als 1 % der täglichen Energie liefern und dass industrielle Transfette aus Lebensmitteln entfernt werden. In einer Kohorte von 18.555 Frauen war das Risiko für Ovulationsstörungen bei jedem 2 % der täglichen Energie, in der Transfette Kohlenhydrate ersetzten, um 73 % höher und mehr als doppelt so hoch, wenn sie einfach ungesättigte Fette ersetzten.",
+  "can_1": "Teilweise gehärtete Öle oder eine ausdrückliche Transfett-Deklaration erkennen, wenn sie auf dem Etikett erscheinen.",
+  "can_2": "Erklären, was die WHO über Transfette sagt und was die Kohorte bei Frauen feststellte, und die Informationsschicht 'Frau' anzeigen.",
+  "cannot_1": "Die genaue Menge an Transfetten aus einer Zutatenliste bestimmen, wenn die Menge nicht deklariert ist.",
+  "cannot_2": "Beweisen, dass die Aufnahme von Transfetten bei einer bestimmten Person Unfruchtbarkeit verursacht hat.",
   "sources": [
     {
-      "label": "WHO — Trans fat",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/trans-fat"
+      "label": "WHO — Eliminierung von Transfetten (2023)",
+      "url": "https://www.who.int/news-room/questions-answers/item/trans-fat"
     },
     {
-      "label": "Review — Effects of industrial and ruminant trans fats on LDL and HDL cholesterol",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2830458/"
-    },
-    {
-      "label": "Nurses' Health Study — Trans fatty acids and systemic inflammation in women",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/15051604/"
-    },
-    {
-      "label": "Nurses' Health Study II — Dietary fat and endometriosis risk",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20332166/"
-    },
-    {
-      "label": "Nurses' Health Study II — Dietary fatty acids and ovulatory infertility",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/17209201/"
-    },
-    {
-      "label": "Cardiovascular research — Representation of women in prevention trials",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20160159/"
+      "label": "Kohorte: Transfettaufnahme und Ovulationsstörungen (2019)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30904839/"
     }
   ],
-  "title": "Transfettsäuren",
-  "description": "Transfette erhöhen LDL und senken HDL; Studien bei Frauen verbinden eine höhere Aufnahme außerdem mit Entzündung, Endometriose und ovulatorischer Unfruchtbarkeit."
+  "title": "Trans fatty acids",
+  "description": "Transfette entstehen hauptsächlich durch teilweise Hydrierung von Ölen und erscheinen auf Etiketten als Transfette oder teilweise gehärtetes Öl. Die WHO sagt, sie haben keinen bekannten gesundheitlichen Nutzen und empfiehlt, die industriellen zu eliminieren. In einer Kohorte von 18.555 Frauen wurde eine höhere Aufnahme mit mehr Ovulationsstörungen in Verbindung gebracht."
 }
