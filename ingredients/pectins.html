@@ -222,3 +222,90 @@
     <section class="hero">
 
       <img
+        id="module_icon"
+        fetchpriority="high"
+        src="/botia/assets/texture.png"
+        srcset="/botia/assets/texture.png"
+        type="image/webp"
+        onerror="this.src='/botia/assets/texture.png'"
+        style="content-visibility:auto;"
+        alt="BOTIA — Pectins ingredient icon"
+      />
+
+      <h1 id="name">Pectins</h1>
+      <p class="e-code" id="e_code">E440</p>
+
+      <p class="aliases" id="aliases">
+        E440, E440(i), E440(ii), INS 440, pectin, pectins,
+        non-amidated pectin, amidated pectin, amidated pectins
+      </p>
+
+      <div id="layers_container"></div>
+
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="what_is_title">What it is</h2>
+
+      <p class="section-intro" id="what_is">
+        Pectin is what makes jam set. It is in fruit — mostly in lemon and orange peel, and in what is left of the apple after it has been pressed. That is where it is taken from, purified, and added to yoghurts, drinks, sweets and desserts to thicken them. On the label it is E440.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="why_botia_title">Why BOTIA flags it</h2>
+
+      <p class="section-intro" id="why_botia">In the NutriNet-Santé cohort, which followed 92,000 adults for years, women who had not yet reached menopause and took more E440 had more breast cancer diagnoses than those who took less. In women past menopause it was not observed. The finding is about pectin added as an additive, not about fruit.</p>
+    </section>
+
+    <section class="section">
+      <div class="can-cannot">
+
+        <div class="can-box">
+          <h4 id="can_title">BOTIA CAN</h4>
+
+          <ul>
+            <li id="can_1">
+              Detect E440, pectin, pectins and the common amidated/non-amidated subtype names.
+            </li>
+
+            <li id="can_2">
+              Show the texture and E-number information layers.
+            </li>
+          </ul>
+        </div>
+
+        <div class="cannot-box">
+          <h4 id="cannot_title">BOTIA CANNOT</h4>
+
+          <ul>
+            <li id="cannot_1">
+              Determine the exact pectin subtype or formulation when only 'pectin' is declared.
+            </li>
+
+            <li id="cannot_2">
+              Calculate the amount present from ingredient order alone.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title" id="sources_title">Sources</h2>
+      <ul class="sources-list" id="sources_container"></ul>
+    </section>
+
+    <section class="closing">
+      <a href="/" class="cta-button" id="back-button">← Back</a>
+    </section>
+
+  </main>
+
+  <script src="/botia/assets/js/i18n-loader.js" defer></script>
+  <script src="/botia/assets/js/botia-chat.js"></script>
+  <script src="/botia/assets/js/footer.js?v=20260817-1502"></script>
+
+</body>
+</html>
