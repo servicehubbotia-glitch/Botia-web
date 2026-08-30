@@ -1,0 +1,33 @@
+{
+  "name": "Diphosphates",
+  "e_code": "E450",
+  "aliases": "E450, E450(i), E450(ii), E450(iii), E450(v), E450(vi), E450(vii), INS 450, diphosphates, disodium diphosphate, trisodium diphosphate, tetrasodium diphosphate, tetrapotassium diphosphate, dicalcium diphosphate, calcium dihydrogen diphosphate, pyrophosphates, sodium acid pyrophosphate, SAPP, difosfatos, pirofosfatos",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "woman",
+    "texture",
+    "enumbers"
+  ],
+  "what_is": "Дифосфаты, E450, — это добавки, используемые для контроля текстуры некоторых продуктов, удержания влаги или поднятия некоторых видов теста.",
+  "why_botia": "В когорте NutriNet-Santé у женщин, которые ещё не достигли менопаузы и потребляли больше E450, было больше диагнозов рака молочной железы, чем у тех, кто потреблял меньше. У женщин в постменопаузе это не наблюдалось.",
+  "can_1": "Detect E450, diphosphates, pyrophosphates and their common individual names when they are declared on the label.",
+  "can_2": "Explain their use in food and show the Woman, Texture and E-number information layers.",
+  "cannot_1": "Determine how much E450 a product contains when the amount is not declared.",
+  "cannot_2": "Determine from the ingredient list whether a person's intake corresponds to the higher-intake group studied in NutriNet-Santé.",
+  "sources": [
+    {
+      "label": "JECFA — Diphosphates (INS 450) — Chemical/2500",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2500"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E450 diphosphates",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., пищевые эмульгаторы и риск рака (когорта NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
+    }
+  ],
+  "title": "Diphosphates",
+  "description": "Дифосфаты, E450, контролируют текстуру, помогают продуктам удерживать влагу и поднимают тесто. В когорте NutriNet-Santé у женщин в пременопаузе с более высоким потреблением было больше диагнозов рака молочной железы."
+}

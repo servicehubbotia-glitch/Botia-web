@@ -1,0 +1,33 @@
+{
+  "name": "Diphosphates",
+  "e_code": "E450",
+  "aliases": "E450, E450(i), E450(ii), E450(iii), E450(v), E450(vi), E450(vii), INS 450, diphosphates, disodium diphosphate, trisodium diphosphate, tetrasodium diphosphate, tetrapotassium diphosphate, dicalcium diphosphate, calcium dihydrogen diphosphate, pyrophosphates, sodium acid pyrophosphate, SAPP, difosfatos, pirofosfatos",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "woman",
+    "texture",
+    "enumbers"
+  ],
+  "what_is": "Les diphosphates, E450, sont des additifs utilisés pour contrôler la texture de certains aliments, les aider à retenir l'eau ou faire lever certaines pâtes.",
+  "why_botia": "Dans la cohorte NutriNet-Santé, les femmes qui n'avaient pas encore atteint la ménopause et consommaient plus de E450 ont eu plus de diagnostics de cancer du sein que celles qui en consommaient moins. Chez les femmes ménopausées, cela n'a pas été observé.",
+  "can_1": "Detect E450, diphosphates, pyrophosphates and their common individual names when they are declared on the label.",
+  "can_2": "Explain their use in food and show the Woman, Texture and E-number information layers.",
+  "cannot_1": "Determine how much E450 a product contains when the amount is not declared.",
+  "cannot_2": "Determine from the ingredient list whether a person's intake corresponds to the higher-intake group studied in NutriNet-Santé.",
+  "sources": [
+    {
+      "label": "JECFA — Diphosphates (INS 450) — Chemical/2500",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2500"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E450 diphosphates",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., émulsifiants alimentaires et risque de cancer (cohorte NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
+    }
+  ],
+  "title": "Diphosphates",
+  "description": "Les diphosphates, E450, contrôlent la texture, aident les aliments à retenir l'eau et font lever les pâtes. Dans la cohorte NutriNet-Santé, les femmes préménopausées ayant une consommation plus élevée ont eu plus de diagnostics de cancer du sein."
+}
