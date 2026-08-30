@@ -1,28 +1,28 @@
 {
-  "name": "Fosfat",
-  "title": "Fosfat",
-  "description": "Kelompok besar aditif asam fosfat dan fosfat yang digunakan untuk berbagai fungsi, antara lain pengendalian keasaman, sekuestrasi, stabilisasi, pengentalan, pengelolaan kelembapan, dan tekstur.",
-  "what_is": "Kelompok besar aditif asam fosfat dan fosfat yang digunakan untuk berbagai fungsi, antara lain pengendalian keasaman, sekuestrasi, stabilisasi, pengentalan, pengelolaan kelembapan, dan tekstur.",
-  "why_botia": "BOTIA Kelompokkan pernyataan-pernyataan ini karena aditif fosfat yang terkait mencakup E338–E343 dan E450–E452 serta dapat muncul dengan beberapa nama spesifik. Penilaian keamanan berdasarkan peraturan mempertimbangkan paparan dari pola makan secara keseluruhan; satu jenis fosfat yang tercantum dalam label saja tidak secara otomatis menunjukkan adanya paparan yang berlebihan.",
-  "can_1": "Mendeteksi nomor E yang tercantum serta deklarasi umum mengenai fosfat, difosfat, trifosfat, dan polifosfat.",
-  "can_2": "Jelaskan konteks tekstur/nomor E dan bedakan antara daftar bahan dengan penilaian paparan.",
-  "cannot_1": "Hitung asupan fosfor atau fosfat total berdasarkan daftar bahan.",
-  "cannot_2": "Anggaplah bahwa setiap makanan yang mengandung fosfat yang telah disetujui memiliki tingkat paparan atau risiko yang sama.",
-  "sources": [
-    {
-      "label": "Peraturan (EC) No. 1333/2008 — Daftar Uni Eropa dan ketentuan penggunaan bahan tambahan pangan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "Peraturan Komisi (UE) No. 231/2012 — spesifikasi untuk bahan tambahan pangan yang diizinkan",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
-    }
-  ],
-  "e_code": "E338–E343, E450–E452",
+  "name": "Phosphates",
+  "e_code": "E338–E343, E451–E452",
+  "aliases": "E338, E339, E340, E341, E342, E343, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, triphosphates, polyphosphates",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E338, E339, E340, E341, E342, E343, E450, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, diphosphates, pyrophosphates, triphosphates, polyphosphates"
+  "what_is": "Fosfat adalah keluarga aditif makanan yang berasal dari asam fosfat. Mereka digunakan untuk berbagai tujuan teknis, termasuk mengontrol keasaman, menstabilkan makanan, mempertahankan kelembapan dan membantu mengontrol tekstur. Kelompok ini mencakup fosfat, trifosfat dan polifosfat, tetapi tidak termasuk difosfat E450, yang ditangani BOTIA secara terpisah.",
+  "why_botia": "BOTIA mengelompokkan aditif fosfat ini karena dapat muncul pada label di bawah beberapa nomor E dan nama yang berbeda. Mereka digunakan untuk fungsi teknis yang berbeda, sehingga BOTIA menunjukkan fosfat spesifik yang dinyatakan pada label dan konteks nomor E-nya.",
+  "can_1": "Detect the listed E-numbers and common phosphate, triphosphate and polyphosphate declarations.",
+  "can_2": "Show the texture/E-number context and distinguish the ingredient declaration from an exposure assessment.",
+  "cannot_1": "Calculate total phosphorus or phosphate intake from the ingredient list.",
+  "cannot_2": "Assume that every food containing an authorised phosphate presents the same exposure or risk.",
+  "sources": [
+    {
+      "label": "JECFA — Phosphates (various INS numbers)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Phosphates"
+    },
+    {
+      "label": "EU Regulation 231/2012 — Phosphates (E338–E343, E451–E452)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Phosphates",
+  "description": "Fosfat adalah keluarga aditif makanan yang berasal dari asam fosfat. Mereka digunakan untuk berbagai tujuan teknis, termasuk mengontrol keasaman, menstabilkan makanan, mempertahankan kelembapan dan membantu mengontrol tekstur. Kelompok ini mencakup fosfat, trifosfat dan polifosfat, tetapi tidak termasuk difosfat E450, yang ditangani BOTIA secara terpisah."
 }

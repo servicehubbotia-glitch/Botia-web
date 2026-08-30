@@ -1,28 +1,28 @@
 {
-  "name": "الفوسفات",
-  "title": "الفوسفات",
-  "description": "مجموعة واسعة من إضافات حمض الفوسفوريك والفوسفات التي تُستخدم لأغراض قد تشمل التحكم في الحموضة، وعزل المعادن، والتثبيت، وزيادة الحجم، وإدارة الرطوبة، وتحسين القوام.",
-  "what_is": "مجموعة واسعة من إضافات حمض الفوسفوريك والفوسفات التي تُستخدم لأغراض قد تشمل التحكم في الحموضة، وعزل المعادن، والتثبيت، وزيادة الحجم، وإدارة الرطوبة، وتحسين القوام.",
-  "why_botia": "BOTIA تُصنف هذه الإقرارات لأن إضافات الفوسفات ذات الصلة تشمل E338–E343 و E450–E452 ويمكن أن تظهر تحت عدة أسماء محددة. وتأخذ تقييمات السلامة التنظيمية في الاعتبار التعرض من النظام الغذائي ككل؛ ولا يُعتبر وجود مادة فوسفات واحدة مُعلنة بحد ذاتها دليلاً على وجود تعرض مفرط.",
-  "can_1": "الكشف عن أرقام E المذكورة، بالإضافة إلى الإدلاءات الشائعة المتعلقة بالفوسفات، والثنائي الفوسفات، والثلاثي الفوسفات، والبولي فوسفات.",
-  "can_2": "اعرض سياق «الملمس/رقم E» وافصل بين بيان المكونات وتقييم التعرض.",
-  "cannot_1": "احسب إجمالي كمية الفوسفور أو الفوسفات المستمدة من قائمة المكونات.",
-  "cannot_2": "لنفترض أن كل غذاء يحتوي على فوسفات مسموح به ينطوي على نفس مستوى التعرض أو الخطر.",
-  "sources": [
-    {
-      "label": "اللائحة (EC) رقم 1333/2008 — قائمة الاتحاد الأوروبي للمضافات الغذائية وشروط استخدامها",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "لائحة المفوضية (الاتحاد الأوروبي) رقم 231/2012 — المواصفات الخاصة بالمضافات الغذائية المصرح بها",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
-    }
-  ],
-  "e_code": "E338–E343, E450–E452",
+  "name": "Phosphates",
+  "e_code": "E338–E343, E451–E452",
+  "aliases": "E338, E339, E340, E341, E342, E343, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, triphosphates, polyphosphates",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E338, E339, E340, E341, E342, E343, E450, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, diphosphates, pyrophosphates, triphosphates, polyphosphates"
+  "what_is": "الفوسفات هي عائلة من المضافات الغذائية المشتقة من حمض الفوسفوريك. تستخدم لأغراض تقنية مختلفة، بما في ذلك التحكم في الحموضة، تثبيت الأطعمة، الاحتفاظ بالرطوبة والمساعدة في التحكم في القوام. تشمل هذه المجموعة الفوسفات، والثلاثي فوسفات، والبوليفوسفات، ولكن ليس ثنائي الفوسفات E450، الذي تعالجه BOTIA بشكل منفصل.",
+  "why_botia": "تقوم BOTIA بتجميع هذه المضافات الفوسفاتية لأنها قد تظهر على الملصقات تحت عدة أرقام E وأسماء مختلفة. تستخدم لوظائف تقنية مختلفة، لذلك تعرض BOTIA الفوسفات المحدد المذكور على الملصق وسياق رقم E الخاص به.",
+  "can_1": "Detect the listed E-numbers and common phosphate, triphosphate and polyphosphate declarations.",
+  "can_2": "Show the texture/E-number context and distinguish the ingredient declaration from an exposure assessment.",
+  "cannot_1": "Calculate total phosphorus or phosphate intake from the ingredient list.",
+  "cannot_2": "Assume that every food containing an authorised phosphate presents the same exposure or risk.",
+  "sources": [
+    {
+      "label": "JECFA — Phosphates (various INS numbers)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Phosphates"
+    },
+    {
+      "label": "EU Regulation 231/2012 — Phosphates (E338–E343, E451–E452)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Phosphates",
+  "description": "الفوسفات هي عائلة من المضافات الغذائية المشتقة من حمض الفوسفوريك. تستخدم لأغراض تقنية مختلفة، بما في ذلك التحكم في الحموضة، تثبيت الأطعمة، الاحتفاظ بالرطوبة والمساعدة في التحكم في القوام. تشمل هذه المجموعة الفوسفات، والثلاثي فوسفات، والبوليفوسفات، ولكن ليس ثنائي الفوسفات E450، الذي تعالجه BOTIA بشكل منفصل."
 }

@@ -1,28 +1,28 @@
 {
-  "name": "磷酸盐",
-  "title": "磷酸盐",
-  "description": "一类广泛的磷酸和磷酸盐添加剂，其功能包括调节酸度、螯合、稳定、增稠、水分管理以及改善质地等。",
-  "what_is": "一类广泛的磷酸和磷酸盐添加剂，其功能包括调节酸度、螯合、稳定、增稠、水分管理以及改善质地等。",
-  "why_botia": "BOTIA 将这些声明归为一组，是因为相关的磷酸盐添加剂涵盖了E338–E343和E450–E452，且可能以多种具体名称出现。监管机构的安全性评估会综合考虑整个膳食中的暴露情况；仅凭单一声明的磷酸盐本身并不能证明存在过量暴露。",
-  "can_1": "检测所列的E编号以及常见的磷酸盐、二磷酸盐、三磷酸盐和多磷酸盐的标注。",
-  "can_2": "说明质地/E编号的背景，并区分配料表与暴露评估。",
-  "cannot_1": "根据配料表计算总磷或磷酸盐的摄入量。",
-  "cannot_2": "假设所有含有经批准的磷酸盐的食品所带来的暴露或风险均相同。",
-  "sources": [
-    {
-      "label": "第1333/2008号（EC）法规——食品添加剂的欧盟清单及使用条件",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "欧盟委员会第231/2012号条例——经批准的食品添加剂规格",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
-    }
-  ],
-  "e_code": "E338–E343, E450–E452",
+  "name": "Phosphates",
+  "e_code": "E338–E343, E451–E452",
+  "aliases": "E338, E339, E340, E341, E342, E343, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, triphosphates, polyphosphates",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E338, E339, E340, E341, E342, E343, E450, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, diphosphates, pyrophosphates, triphosphates, polyphosphates"
+  "what_is": "磷酸盐是一类源自磷酸的食品添加剂。它们用于不同的技术目的，包括控制酸度、稳定食品、保持水分和帮助控制质地。该组包括磷酸盐、三磷酸盐和多磷酸盐，但不包括E450二磷酸盐，BOTIA单独处理。",
+  "why_botia": "BOTIA 将这些磷酸盐添加剂归为一类，因为它们可能以多个E编号和不同名称出现在标签上。它们用于不同的技术功能，因此BOTIA会显示标签上声明的特定磷酸盐及其E编号上下文。",
+  "can_1": "Detect the listed E-numbers and common phosphate, triphosphate and polyphosphate declarations.",
+  "can_2": "Show the texture/E-number context and distinguish the ingredient declaration from an exposure assessment.",
+  "cannot_1": "Calculate total phosphorus or phosphate intake from the ingredient list.",
+  "cannot_2": "Assume that every food containing an authorised phosphate presents the same exposure or risk.",
+  "sources": [
+    {
+      "label": "JECFA — Phosphates (various INS numbers)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Phosphates"
+    },
+    {
+      "label": "EU Regulation 231/2012 — Phosphates (E338–E343, E451–E452)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Phosphates",
+  "description": "磷酸盐是一类源自磷酸的食品添加剂。它们用于不同的技术目的，包括控制酸度、稳定食品、保持水分和帮助控制质地。该组包括磷酸盐、三磷酸盐和多磷酸盐，但不包括E450二磷酸盐，BOTIA单独处理。"
 }

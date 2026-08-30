@@ -1,28 +1,28 @@
 {
-  "name": "Fosforany",
-  "title": "Fosforany",
-  "description": "Szeroka rodzina dodatków na bazie kwasu fosforowego i fosforanów, stosowanych m.in. do regulacji kwasowości, sekwestracji, stabilizacji, spulchniania, regulacji wilgotności oraz poprawy tekstury.",
-  "what_is": "Szeroka rodzina dodatków na bazie kwasu fosforowego i fosforanów, stosowanych m.in. do regulacji kwasowości, sekwestracji, stabilizacji, spulchniania, regulacji wilgotności oraz poprawy tekstury.",
-  "why_botia": "BOTIA grupuje te deklaracje, ponieważ powiązane dodatki fosforanowe obejmują substancje wymienione na stronach E338–E343 oraz E450–E452 i mogą występować pod kilkoma konkretnymi nazwami. W ramach regulacyjnych ocen bezpieczeństwa uwzględnia się narażenie wynikające z całej diety; sama obecność jednego zadeklarowanego fosforanu nie oznacza jeszcze nadmiernego narażenia.",
-  "can_1": "Wykrywanie wymienionych numerów E oraz typowych oznaczeń fosforanów, difosforanów, trifosforanów i polifosforanów.",
-  "can_2": "Przedstaw kontekst dotyczący tekstury/numerów E oraz odróżnij wykaz składników od oceny narażenia.",
-  "cannot_1": "Oblicz całkowite spożycie fosforu lub fosforanów na podstawie listy składników.",
-  "cannot_2": "Załóżmy, że każdy produkt spożywczy zawierający dopuszczony fosforan wiąże się z takim samym narażeniem lub ryzykiem.",
-  "sources": [
-    {
-      "label": "Rozporządzenie (WE) nr 1333/2008 — unijny wykaz dodatków do żywności i warunki ich stosowania",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "Rozporządzenie Komisji (UE) nr 231/2012 — specyfikacje dopuszczonych dodatków do żywności",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
-    }
-  ],
-  "e_code": "E338–E343, E450–E452",
+  "name": "Phosphates",
+  "e_code": "E338–E343, E451–E452",
+  "aliases": "E338, E339, E340, E341, E342, E343, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, triphosphates, polyphosphates",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E338, E339, E340, E341, E342, E343, E450, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, diphosphates, pyrophosphates, triphosphates, polyphosphates"
+  "what_is": "Fosforany to rodzina dodatków do żywności pochodzących z kwasu fosforowego. Są stosowane do różnych celów technicznych, w tym kontroli kwasowości, stabilizacji żywności, zatrzymywania wilgoci i pomocy w kontroli tekstury. Ta grupa obejmuje fosforany, trifosforany i polifosforany, ale nie difosforany E450, które BOTIA traktuje oddzielnie.",
+  "why_botia": "BOTIA grupuje te dodatki fosforanowe, ponieważ mogą pojawiać się na etykietach pod kilkoma numerami E i różnymi nazwami. Służą do różnych funkcji technicznych, dlatego BOTIA pokazuje konkretny fosforan zadeklarowany na etykiecie i jego kontekst numeru E.",
+  "can_1": "Detect the listed E-numbers and common phosphate, triphosphate and polyphosphate declarations.",
+  "can_2": "Show the texture/E-number context and distinguish the ingredient declaration from an exposure assessment.",
+  "cannot_1": "Calculate total phosphorus or phosphate intake from the ingredient list.",
+  "cannot_2": "Assume that every food containing an authorised phosphate presents the same exposure or risk.",
+  "sources": [
+    {
+      "label": "JECFA — Phosphates (various INS numbers)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Phosphates"
+    },
+    {
+      "label": "EU Regulation 231/2012 — Phosphates (E338–E343, E451–E452)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Phosphates",
+  "description": "Fosforany to rodzina dodatków do żywności pochodzących z kwasu fosforowego. Są stosowane do różnych celów technicznych, w tym kontroli kwasowości, stabilizacji żywności, zatrzymywania wilgoci i pomocy w kontroli tekstury. Ta grupa obejmuje fosforany, trifosforany i polifosforany, ale nie difosforany E450, które BOTIA traktuje oddzielnie."
 }

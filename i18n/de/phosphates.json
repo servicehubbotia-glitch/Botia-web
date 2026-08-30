@@ -1,28 +1,28 @@
 {
-  "name": "Phosphate",
-  "title": "Phosphate",
-  "description": "Eine umfangreiche Familie von Phosphorsäure- und Phosphat-Additiven, die unter anderem zur Regulierung des Säuregehalts, zur Sequestrierung, zur Stabilisierung, zur Auflockerung, zum Feuchtigkeitsmanagement und zur Texturierung eingesetzt werden.",
-  "what_is": "Eine umfangreiche Familie von Phosphorsäure- und Phosphat-Additiven, die unter anderem zur Regulierung des Säuregehalts, zur Sequestrierung, zur Stabilisierung, zur Auflockerung, zum Feuchtigkeitsmanagement und zur Texturierung eingesetzt werden.",
-  "why_botia": "BOTIA Diese Angaben werden zusammengefasst, da die entsprechenden Phosphatzusätze sowohl unter E338–E343 als auch unter E450–E452 aufgeführt sind und unter verschiedenen spezifischen Bezeichnungen vorkommen können. Bei behördlichen Sicherheitsbewertungen wird die Exposition über die gesamte Ernährung betrachtet; ein einzelner angegebener Phosphatzusatz allein bedeutet noch keine übermäßige Exposition.",
-  "can_1": "Erkennen Sie die aufgeführten E-Nummern sowie die üblichen Angaben zu Phosphat, Diphosphat, Triphosphat und Polyphosphat.",
-  "can_2": "Stellen Sie den Zusammenhang zwischen Textur und E-Nummern dar und unterscheiden Sie die Angabe der Zutaten von einer Expositionsbewertung.",
-  "cannot_1": "Berechnen Sie die Gesamtzufuhr an Phosphor oder Phosphat anhand der Zutatenliste.",
-  "cannot_2": "Man gehe davon aus, dass jedes Lebensmittel, das ein zugelassenes Phosphat enthält, die gleiche Exposition bzw. das gleiche Risiko darstellt.",
-  "sources": [
-    {
-      "label": "Verordnung (EG) Nr. 1333/2008 – Unionsliste und Verwendungsbedingungen für Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "Verordnung (EU) Nr. 231/2012 der Kommission – Spezifikationen für zugelassene Lebensmittelzusatzstoffe",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
-    }
-  ],
-  "e_code": "E338–E343, E450–E452",
+  "name": "Phosphates",
+  "e_code": "E338–E343, E451–E452",
+  "aliases": "E338, E339, E340, E341, E342, E343, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, triphosphates, polyphosphates",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E338, E339, E340, E341, E342, E343, E450, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, diphosphates, pyrophosphates, triphosphates, polyphosphates"
+  "what_is": "Phosphate sind eine Familie von Lebensmittelzusatzstoffen, die aus Phosphorsäure gewonnen werden. Sie werden für verschiedene technische Zwecke verwendet, darunter die Kontrolle des Säuregehalts, die Stabilisierung von Lebensmitteln, die Feuchtigkeitsbindung und die Unterstützung der Texturkontrolle. Diese Gruppe umfasst Phosphate, Triphosphate und Polyphosphate, jedoch nicht die Diphosphate E450, die BOTIA separat behandelt.",
+  "why_botia": "BOTIA fasst diese Phosphatzusatzstoffe zusammen, da sie auf Etiketten unter mehreren E-Nummern und verschiedenen Namen erscheinen können. Sie werden für verschiedene technische Funktionen verwendet, daher zeigt BOTIA das spezifische auf dem Etikett deklarierte Phosphat und seinen E-Nummer-Kontext an.",
+  "can_1": "Detect the listed E-numbers and common phosphate, triphosphate and polyphosphate declarations.",
+  "can_2": "Show the texture/E-number context and distinguish the ingredient declaration from an exposure assessment.",
+  "cannot_1": "Calculate total phosphorus or phosphate intake from the ingredient list.",
+  "cannot_2": "Assume that every food containing an authorised phosphate presents the same exposure or risk.",
+  "sources": [
+    {
+      "label": "JECFA — Phosphates (various INS numbers)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Phosphates"
+    },
+    {
+      "label": "EU Regulation 231/2012 — Phosphates (E338–E343, E451–E452)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Phosphates",
+  "description": "Phosphate sind eine Familie von Lebensmittelzusatzstoffen, die aus Phosphorsäure gewonnen werden. Sie werden für verschiedene technische Zwecke verwendet, darunter die Kontrolle des Säuregehalts, die Stabilisierung von Lebensmitteln, die Feuchtigkeitsbindung und die Unterstützung der Texturkontrolle. Diese Gruppe umfasst Phosphate, Triphosphate und Polyphosphate, jedoch nicht die Diphosphate E450, die BOTIA separat behandelt."
 }

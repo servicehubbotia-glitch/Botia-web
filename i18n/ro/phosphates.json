@@ -1,28 +1,28 @@
 {
-  "name": "Fosfați",
-  "title": "Fosfați",
-  "description": "O gamă largă de aditivi pe bază de acid fosforic și fosfați, utilizați pentru diverse funcții, printre care se numără controlul acidității, sechestrarea, stabilizarea, creșterea volumului, gestionarea umidității și îmbunătățirea texturii.",
-  "what_is": "O gamă largă de aditivi pe bază de acid fosforic și fosfați, utilizați pentru diverse funcții, printre care se numără controlul acidității, sechestrarea, stabilizarea, creșterea volumului, gestionarea umidității și îmbunătățirea texturii.",
-  "why_botia": "BOTIA grupează aceste declarații deoarece aditivii pe bază de fosfați în cauză includ substanțele de la E338–E343 și E450–E452 și pot apărea sub mai multe denumiri specifice. Evaluările de siguranță prevăzute de reglementări iau în considerare expunerea din alimentație în ansamblu; un singur fosfat declarat nu constituie, în sine, o dovadă a unei expuneri excesive.",
-  "can_1": "Detectează numerele E enumerate și mențiunile obișnuite referitoare la fosfați, difosfați, trifosfați și polifosfați.",
-  "can_2": "Prezentați contextul referitor la textură/numărul E și faceți distincția între declarația privind ingredientele și evaluarea expunerii.",
-  "cannot_1": "Calculați aportul total de fosfor sau fosfat pe baza listei de ingrediente.",
-  "cannot_2": "Să presupunem că fiecare produs alimentar care conține un fosfat autorizat prezintă același nivel de expunere sau același risc.",
-  "sources": [
-    {
-      "label": "Regulamentul (CE) nr. 1333/2008 — Lista Uniunii și condițiile de utilizare a aditivilor alimentari",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "Regulamentul (UE) nr. 231/2012 al Comisiei — specificații privind aditivii alimentari autorizați",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
-    }
-  ],
-  "e_code": "E338–E343, E450–E452",
+  "name": "Phosphates",
+  "e_code": "E338–E343, E451–E452",
+  "aliases": "E338, E339, E340, E341, E342, E343, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, triphosphates, polyphosphates",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E338, E339, E340, E341, E342, E343, E450, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, diphosphates, pyrophosphates, triphosphates, polyphosphates"
+  "what_is": "Fosfații sunt o familie de aditivi alimentari derivați din acid fosforic. Sunt utilizați pentru diferite scopuri tehnice, inclusiv controlul acidității, stabilizarea alimentelor, reținerea umidității și ajutarea la controlul texturii. Acest grup include fosfați, trifosfați și polifosfați, dar nu difosfații E450, pe care BOTIA îi tratează separat.",
+  "why_botia": "BOTIA grupează acești aditivi fosfat pentru că pot apărea pe etichete sub mai multe numere E și nume diferite. Sunt utilizați pentru diferite funcții tehnice, astfel BOTIA afișează fosfatul specific declarat pe etichetă și contextul său de număr E.",
+  "can_1": "Detect the listed E-numbers and common phosphate, triphosphate and polyphosphate declarations.",
+  "can_2": "Show the texture/E-number context and distinguish the ingredient declaration from an exposure assessment.",
+  "cannot_1": "Calculate total phosphorus or phosphate intake from the ingredient list.",
+  "cannot_2": "Assume that every food containing an authorised phosphate presents the same exposure or risk.",
+  "sources": [
+    {
+      "label": "JECFA — Phosphates (various INS numbers)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Phosphates"
+    },
+    {
+      "label": "EU Regulation 231/2012 — Phosphates (E338–E343, E451–E452)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Phosphates",
+  "description": "Fosfații sunt o familie de aditivi alimentari derivați din acid fosforic. Sunt utilizați pentru diferite scopuri tehnice, inclusiv controlul acidității, stabilizarea alimentelor, reținerea umidității și ajutarea la controlul texturii. Acest grup include fosfați, trifosfați și polifosfați, dar nu difosfații E450, pe care BOTIA îi tratează separat."
 }

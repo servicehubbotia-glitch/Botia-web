@@ -1,28 +1,28 @@
 {
-  "name": "Fosfatos",
-  "title": "Fosfatos",
-  "description": "Una amplia familia de aditivos a base de ácido fosfórico y fosfatos que se utilizan para funciones que pueden incluir el control de la acidez, la secuestración, la estabilización, el aumento de volumen, la gestión de la humedad y la textura.",
-  "what_is": "Una amplia familia de aditivos a base de ácido fosfórico y fosfatos que se utilizan para funciones que pueden incluir el control de la acidez, la secuestración, la estabilización, el aumento de volumen, la gestión de la humedad y la textura.",
-  "why_botia": "BOTIA agrupa estas declaraciones porque los aditivos fosfatados relacionados abarcan E338–E343 y E450–E452 y pueden aparecer bajo varios nombres específicos. Las evaluaciones reglamentarias de seguridad tienen en cuenta la exposición procedente de la dieta en su conjunto; un único fosfato declarado no determina por sí solo una exposición excesiva.",
-  "can_1": "Detectar los números E que figuran en la lista y las declaraciones habituales de fosfato, difosfato, trifosfato y polifosfato.",
-  "can_2": "Mostrar el contexto de la textura y los números E, y diferenciar la declaración de ingredientes de una evaluación de la exposición.",
-  "cannot_1": "Calcula la ingesta total de fósforo o fosfato a partir de la lista de ingredientes.",
-  "cannot_2": "Supongamos que todos los alimentos que contienen un fosfato autorizado presentan el mismo nivel de exposición o riesgo.",
-  "sources": [
-    {
-      "label": "Reglamento (CE) n.º 1333/2008 — Lista de la Unión y condiciones de uso de los aditivos alimentarios",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "Reglamento (UE) n.º 231/2012 de la Comisión — especificaciones de los aditivos alimentarios autorizados",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
-    }
-  ],
-  "e_code": "E338–E343, E450–E452",
+  "name": "Phosphates",
+  "e_code": "E338–E343, E451–E452",
+  "aliases": "E338, E339, E340, E341, E342, E343, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, triphosphates, polyphosphates",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E338, E339, E340, E341, E342, E343, E450, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, diphosphates, pyrophosphates, triphosphates, polyphosphates"
+  "what_is": "Los fosfatos son una familia de aditivos alimentarios derivados del ácido fosfórico. Se utilizan para diferentes fines técnicos, como controlar la acidez, estabilizar alimentos, retener la humedad y ayudar a controlar la textura. Este grupo incluye fosfatos, trifosfatos y polifosfatos, pero no los difosfatos E450, que BOTIA trata por separado.",
+  "why_botia": "BOTIA agrupa estos aditivos de fosfato porque pueden aparecer en las etiquetas con varios números E y nombres diferentes. Se utilizan para diferentes funciones técnicas, por lo que BOTIA muestra el fosfato específico declarado en la etiqueta y su contexto de número E.",
+  "can_1": "Detect the listed E-numbers and common phosphate, triphosphate and polyphosphate declarations.",
+  "can_2": "Show the texture/E-number context and distinguish the ingredient declaration from an exposure assessment.",
+  "cannot_1": "Calculate total phosphorus or phosphate intake from the ingredient list.",
+  "cannot_2": "Assume that every food containing an authorised phosphate presents the same exposure or risk.",
+  "sources": [
+    {
+      "label": "JECFA — Phosphates (various INS numbers)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Phosphates"
+    },
+    {
+      "label": "EU Regulation 231/2012 — Phosphates (E338–E343, E451–E452)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Phosphates",
+  "description": "Los fosfatos son una familia de aditivos alimentarios derivados del ácido fosfórico. Se utilizan para diferentes fines técnicos, como controlar la acidez, estabilizar alimentos, retener la humedad y ayudar a controlar la textura. Este grupo incluye fosfatos, trifosfatos y polifosfatos, pero no los difosfatos E450, que BOTIA trata por separado."
 }

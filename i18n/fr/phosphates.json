@@ -1,28 +1,28 @@
 {
   "name": "Phosphates",
-  "title": "Phosphates",
-  "description": "Une vaste gamme d'additifs à base d'acide phosphorique et de phosphates utilisés pour diverses fonctions, notamment le contrôle de l'acidité, la séquestration, la stabilisation, l'augmentation du volume, la gestion de l'humidité et la texture.",
-  "what_is": "Une vaste gamme d'additifs à base d'acide phosphorique et de phosphates utilisés pour diverses fonctions, notamment le contrôle de l'acidité, la séquestration, la stabilisation, l'augmentation du volume, la gestion de l'humidité et la texture.",
-  "why_botia": "BOTIA Ces déclarations sont regroupées car les additifs phosphatés concernés sont répertoriés sur les sites E338–E343 et E450–E452 et peuvent apparaître sous plusieurs noms spécifiques. Les évaluations réglementaires de sécurité prennent en compte l'exposition issue de l'alimentation dans son ensemble ; la présence d'un seul additif phosphaté déclaré ne suffit pas à elle seule à établir une exposition excessive.",
-  "can_1": "Détecter les numéros E répertoriés ainsi que les mentions courantes relatives aux phosphates, diphosphates, triphosphates et polyphosphates.",
-  "can_2": "Présenter le contexte relatif à la texture et aux numéros E, et faire la distinction entre la déclaration des ingrédients et l'évaluation de l'exposition.",
-  "cannot_1": "Calculez l'apport total en phosphore ou en phosphate à partir de la liste des ingrédients.",
-  "cannot_2": "Partons du principe que tous les aliments contenant un phosphate autorisé présentent le même niveau d'exposition ou le même risque.",
-  "sources": [
-    {
-      "label": "Règlement (CE) n° 1333/2008 — Liste de l'Union et conditions d'utilisation des additifs alimentaires",
-      "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
-    },
-    {
-      "label": "Règlement (UE) n° 231/2012 de la Commission — spécifications relatives aux additifs alimentaires autorisés",
-      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
-    }
-  ],
-  "e_code": "E338–E343, E450–E452",
+  "e_code": "E338–E343, E451–E452",
+  "aliases": "E338, E339, E340, E341, E342, E343, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, triphosphates, polyphosphates",
   "module_icon": "texture.png",
   "layers": [
     "texture",
     "enumbers"
   ],
-  "aliases": "E338, E339, E340, E341, E342, E343, E450, E451, E452, phosphoric acid, phosphates, sodium phosphates, potassium phosphates, calcium phosphates, ammonium phosphates, magnesium phosphates, diphosphates, pyrophosphates, triphosphates, polyphosphates"
+  "what_is": "Les phosphates sont une famille d'additifs alimentaires dérivés de l'acide phosphorique. Ils sont utilisés à différentes fins techniques, notamment pour contrôler l'acidité, stabiliser les aliments, retenir l'humidité et aider à contrôler la texture. Ce groupe comprend les phosphates, les triphosphates et les polyphosphates, mais pas les diphosphates E450, que BOTIA traite séparément.",
+  "why_botia": "BOTIA regroupe ces additifs phosphatés car ils peuvent apparaître sur les étiquettes sous plusieurs numéros E et noms différents. Ils sont utilisés pour différentes fonctions techniques, BOTIA affiche donc le phosphate spécifique déclaré sur l'étiquette et son contexte de numéro E.",
+  "can_1": "Detect the listed E-numbers and common phosphate, triphosphate and polyphosphate declarations.",
+  "can_2": "Show the texture/E-number context and distinguish the ingredient declaration from an exposure assessment.",
+  "cannot_1": "Calculate total phosphorus or phosphate intake from the ingredient list.",
+  "cannot_2": "Assume that every food containing an authorised phosphate presents the same exposure or risk.",
+  "sources": [
+    {
+      "label": "JECFA — Phosphates (various INS numbers)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical?classes=Phosphates"
+    },
+    {
+      "label": "EU Regulation 231/2012 — Phosphates (E338–E343, E451–E452)",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    }
+  ],
+  "title": "Phosphates",
+  "description": "Les phosphates sont une famille d'additifs alimentaires dérivés de l'acide phosphorique. Ils sont utilisés à différentes fins techniques, notamment pour contrôler l'acidité, stabiliser les aliments, retenir l'humidité et aider à contrôler la texture. Ce groupe comprend les phosphates, les triphosphates et les polyphosphates, mais pas les diphosphates E450, que BOTIA traite séparément."
 }
