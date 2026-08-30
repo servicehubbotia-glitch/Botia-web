@@ -2,9 +2,9 @@
   "_meta": {
     "file": "triggers-master.json",
     "version": "2.0",
-    "last_updated": "2026-08-26",
+    "last_updated": "2026-08-13",
     "generated_from": "i18n/en/*.json",
-    "total_triggers": 98
+    "total_triggers": 108
   },
   "triggers": {
     "acesulfame_k": {
@@ -28,7 +28,7 @@
     "alcohol": {
       "common_name": "Alcohol",
       "technical_name": "Alcohol",
-      "e_code": null,
+      "e_code": "",
       "aliases": [
         "alcohol",
         "ethanol",
@@ -38,8 +38,8 @@
         "alcohol de origen agrícola"
       ],
       "layers": [
-        "muslim",
-        "woman"
+        "woman",
+        "muslim"
       ]
     },
     "aspartame": {
@@ -53,6 +53,7 @@
         "aspartamo"
       ],
       "layers": [
+        "woman",
         "sweetener",
         "enumbers"
       ]
@@ -70,7 +71,6 @@
         "butylhydroxyanisole"
       ],
       "layers": [
-        "woman",
         "enumbers"
       ]
     },
@@ -86,7 +86,6 @@
         "2,6-di-tert-butyl-p-cresol"
       ],
       "layers": [
-        "woman",
         "enumbers"
       ]
     },
@@ -131,6 +130,7 @@
         "carraghenane"
       ],
       "layers": [
+        "woman",
         "texture",
         "enumbers"
       ]
@@ -390,6 +390,7 @@
       "layers": [
         "animal",
         "muslim",
+        "woman",
         "texture",
         "enumbers"
       ]
@@ -580,7 +581,7 @@
     "trans_fats": {
       "common_name": "Trans fatty acids",
       "technical_name": "Trans fatty acids",
-      "e_code": null,
+      "e_code": "",
       "aliases": [
         "trans fats",
         "trans fatty acids",
@@ -781,8 +782,7 @@
         "Food Red 14"
       ],
       "layers": [
-        "enumbers",
-        "woman"
+        "enumbers"
       ]
     },
     "flavourings": {
@@ -945,9 +945,9 @@
       ]
     },
     "soy_isoflavones": {
-      "common_name": "Soy isoflavones",
-      "technical_name": "Soy isoflavones",
-      "e_code": null,
+      "common_name": "Soy Isoflavones",
+      "technical_name": "Soy Isoflavones",
+      "e_code": "",
       "aliases": [
         "soy isoflavones",
         "soya isoflavones",
@@ -1203,12 +1203,17 @@
     "caffeine": {
       "common_name": "Caffeine",
       "technical_name": "Caffeine",
-      "e_code": null,
+      "e_code": "",
       "aliases": [
         "caffeine",
         "caffeine anhydrous",
         "anhydrous caffeine",
-        "1,3,7-trimethylxanthine"
+        "1,3,7-trimethylxanthine",
+        "theine",
+        "guaranine",
+        "cafeína",
+        "teína",
+        "guaranina"
       ],
       "layers": [
         "woman"
@@ -1266,24 +1271,21 @@
     "nitrites_nitrates": {
       "common_name": "Nitrites & Nitrates",
       "technical_name": "Nitrites & Nitrates",
-      "e_code": "E249–E252",
+      "e_code": "E249–E251",
       "aliases": [
         "E249",
         "E250",
         "E251",
-        "E252",
         "INS 249",
         "INS 250",
         "INS 251",
-        "INS 252",
         "nitrite",
         "nitrites",
         "nitrate",
         "nitrates",
         "potassium nitrite",
         "sodium nitrite",
-        "sodium nitrate",
-        "potassium nitrate"
+        "sodium nitrate"
       ],
       "layers": [
         "enumbers"
@@ -1292,7 +1294,7 @@
     "phosphates": {
       "common_name": "Phosphates",
       "technical_name": "Phosphates",
-      "e_code": "E338–E343, E450–E452",
+      "e_code": "E338–E343, E451–E452",
       "aliases": [
         "E338",
         "E339",
@@ -1300,7 +1302,6 @@
         "E341",
         "E342",
         "E343",
-        "E450",
         "E451",
         "E452",
         "phosphoric acid",
@@ -1310,8 +1311,6 @@
         "calcium phosphates",
         "ammonium phosphates",
         "magnesium phosphates",
-        "diphosphates",
-        "pyrophosphates",
         "triphosphates",
         "polyphosphates"
       ],
@@ -1824,6 +1823,7 @@
         "amidated pectins"
       ],
       "layers": [
+        "woman",
         "texture",
         "enumbers"
       ]
@@ -2028,6 +2028,240 @@
       "layers": [
         "texture",
         "enumbers"
+      ]
+    },
+    "potassium_sorbate": {
+      "common_name": "Potassium sorbate",
+      "technical_name": "Potassium sorbate",
+      "e_code": "E202",
+      "aliases": [
+        "E202",
+        "INS 202",
+        "potassium sorbate",
+        "potassium salt of sorbic acid",
+        "sorbato potásico",
+        "sorbate de potassium",
+        "Kaliumsorbat",
+        "sorbato di potassio"
+      ],
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    "potassium_nitrate": {
+      "common_name": "Potassium nitrate",
+      "technical_name": "Potassium nitrate",
+      "e_code": "E252",
+      "aliases": [
+        "E252",
+        "INS 252",
+        "potassium nitrate",
+        "saltpetre",
+        "saltpeter",
+        "nitrate of potash",
+        "nitrato potásico",
+        "nitrate de potassium",
+        "Kaliumnitrat",
+        "nitrato di potassio"
+      ],
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    "diphosphates": {
+      "common_name": "Diphosphates",
+      "technical_name": "Diphosphates",
+      "e_code": "E450",
+      "aliases": [
+        "E450",
+        "E450(i)",
+        "E450(ii)",
+        "E450(iii)",
+        "E450(v)",
+        "E450(vi)",
+        "E450(vii)",
+        "INS 450",
+        "diphosphates",
+        "disodium diphosphate",
+        "trisodium diphosphate",
+        "tetrasodium diphosphate",
+        "tetrapotassium diphosphate",
+        "dicalcium diphosphate",
+        "calcium dihydrogen diphosphate",
+        "pyrophosphates",
+        "sodium acid pyrophosphate",
+        "SAPP",
+        "difosfatos",
+        "pirofosfatos"
+      ],
+      "layers": [
+        "woman",
+        "texture",
+        "enumbers"
+      ]
+    },
+    "e500": {
+      "common_name": "Sodium bicarbonate",
+      "technical_name": "Sodium bicarbonate",
+      "e_code": "E500(ii)",
+      "aliases": [
+        "E500",
+        "E500(ii)",
+        "sodium bicarbonate",
+        "sodium hydrogen carbonate",
+        "baking soda"
+      ],
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    "curcumin": {
+      "common_name": "Curcumin",
+      "technical_name": "Curcumin",
+      "e_code": "E100",
+      "aliases": [
+        "E100",
+        "E100(i)",
+        "INS 100",
+        "INS 100(i)",
+        "curcumin",
+        "curcumins",
+        "curcuma extract",
+        "turmeric extract",
+        "Curcuma longa",
+        "curcumina",
+        "curcumine",
+        "Kurkumin"
+      ],
+      "layers": [
+        "woman",
+        "enumbers"
+      ]
+    },
+    "ginger": {
+      "common_name": "Ginger",
+      "technical_name": "Ginger",
+      "e_code": "",
+      "aliases": [
+        "ginger",
+        "ground ginger",
+        "ginger powder",
+        "ginger extract",
+        "ginger flavouring",
+        "ginger root",
+        "Zingiber officinale",
+        "jengibre",
+        "gingembre",
+        "Ingwer",
+        "zenzero",
+        "gengibre"
+      ],
+      "layers": [
+        "woman"
+      ]
+    },
+    "fenugreek": {
+      "common_name": "Fenugreek",
+      "technical_name": "Fenugreek",
+      "e_code": "",
+      "aliases": [
+        "fenugreek",
+        "fenugreek seed",
+        "fenugreek seeds",
+        "ground fenugreek",
+        "fenugreek extract",
+        "methi",
+        "Trigonella foenum-graecum",
+        "fenogreco",
+        "alholva",
+        "fenugrec",
+        "Bockshornklee",
+        "fieno greco"
+      ],
+      "layers": [
+        "woman"
+      ]
+    },
+    "folic_acid": {
+      "common_name": "Folic acid",
+      "technical_name": "Folic acid",
+      "e_code": "",
+      "aliases": [
+        "folic acid",
+        "folate",
+        "vitamin B9",
+        "vitamin B-9",
+        "pteroylmonoglutamic acid",
+        "folacin",
+        "ácido fólico",
+        "folato",
+        "acide folique",
+        "Folsäure",
+        "acido folico"
+      ],
+      "layers": [
+        "woman"
+      ]
+    },
+    "omega_3": {
+      "common_name": "Omega-3",
+      "technical_name": "Omega-3",
+      "e_code": "",
+      "aliases": [
+        "omega-3",
+        "omega 3",
+        "omega-3 fatty acids",
+        "EPA",
+        "DHA",
+        "ALA",
+        "eicosapentaenoic acid",
+        "docosahexaenoic acid",
+        "alpha-linolenic acid",
+        "fish oil",
+        "tuna oil",
+        "algal oil",
+        "algae oil",
+        "Schizochytrium oil",
+        "linseed oil",
+        "flaxseed oil",
+        "aceite de pescado",
+        "aceite de algas",
+        "aceite de lino"
+      ],
+      "layers": [
+        "animal",
+        "woman"
+      ]
+    },
+    "soy": {
+      "common_name": "Soy",
+      "technical_name": "Soy",
+      "e_code": "",
+      "aliases": [
+        "soy",
+        "soya",
+        "soybean",
+        "soya bean",
+        "soybeans",
+        "Glycine max",
+        "soy flour",
+        "soya flour",
+        "soy protein",
+        "soya protein",
+        "soy protein concentrate",
+        "soy protein isolate",
+        "textured soy protein",
+        "TVP",
+        "soja",
+        "harina de soja",
+        "proteína de soja",
+        "soja texturizada"
+      ],
+      "layers": [
+        "woman"
       ]
     }
   }
