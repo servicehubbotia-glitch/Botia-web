@@ -4,11 +4,12 @@
   "aliases": "E440, E440(i), E440(ii), INS 440, pectin, pectins, non-amidated pectin, amidated pectin, amidated pectins",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440.",
-  "why_botia": "Pectin is the fibre already present in fruit — what makes homemade jam set on its own. As an additive it is extracted from citrus peels and apples. The body does not digest it. JECFA did not see a need to set a numerical limit.",
+  "what_is": "Pectin is what makes jam set. It is in fruit — mostly in lemon and orange peel, and in what is left of the apple after it has been pressed. That is where it is taken from, purified, and added to yoghurts, drinks, sweets and desserts to thicken them. On the label it is E440.",
+  "why_botia": "In the NutriNet-Santé cohort, which followed 92,000 adults for years, women who had not yet reached menopause and took more E440 had more breast cancer diagnoses than those who took less. In women past menopause it was not observed. The finding is about pectin added as an additive, not about fruit.",
   "can_1": "Detect E440, pectin, pectins and the common amidated/non-amidated subtype names.",
   "can_2": "Show the texture and E-number information layers.",
   "cannot_1": "Determine the exact pectin subtype or formulation when only 'pectin' is declared.",
@@ -21,8 +22,12 @@
     {
       "label": "Regulation (EC) No 1333/2008 — E440 in the Union list — consolidated 18 August 2026",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., food additive emulsifiers and cancer risk (NutriNet-Santé cohort)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Pectins",
-  "description": "A family of plant-derived polysaccharide gelling and stabilising agents, including non-amidated and amidated pectins, grouped under E440."
+  "description": "Pectin is what makes jam set, taken from citrus peel and apple and added to yoghurts, drinks and desserts as E440. In the NutriNet-Santé cohort, premenopausal women with higher intake had more breast cancer diagnoses."
 }

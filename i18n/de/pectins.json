@@ -4,25 +4,30 @@
   "aliases": "E440, E440(i), E440(ii), INS 440, Pektin, Pektine, nicht amidiertes Pektin, amidiertes Pektin, amidierte Pektine",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "Eine Familie pflanzlicher Polysaccharid-Gelier- und Stabilisierungsmittel, darunter nicht-amidierte und amidierte Pektine, zusammengefasst unter der Bezeichnung E440.",
-  "why_botia": "Pektin ist die Faser, die bereits in Früchten vorhanden ist — sie sorgt dafür, dass hausgemachte Marmelade von selbst geliert. Als Zusatzstoff wird es aus Zitrusschalen und Äpfeln gewonnen. Der Körper verdaut es nicht. JECFA hielt einen numerischen Grenzwert nicht für erforderlich.",
+  "what_is": "Pektin ist das, was Marmelade fest werden lässt. Es ist in Früchten enthalten – hauptsächlich in Zitronen- und Orangenschalen und in dem, was vom Apfel nach dem Pressen übrig bleibt. Von dort wird es gewonnen, gereinigt und Joghurts, Getränken, Süßigkeiten und Desserts zugesetzt, um sie zu verdicken. Auf dem Etikett steht E440.",
+  "why_botia": "In der NutriNet-Santé-Kohorte, die 92.000 Erwachsene über Jahre begleitete, hatten Frauen, die noch nicht in den Wechseljahren waren und mehr E440 zu sich nahmen, mehr Brustkrebsdiagnosen als diejenigen, die weniger zu sich nahmen. Bei Frauen nach der Menopause wurde dies nicht beobachtet. Der Befund bezieht sich auf Pektin als Zusatzstoff, nicht auf Obst.",
   "can_1": "Erkennung von E440, Pektin, Pektinen und den gängigen Bezeichnungen für amidierte bzw. nicht-amidierte Subtypen.",
   "can_2": "Zeigen Sie die Ebenen mit den Informationen zu Textur und E-Nummern an.",
   "cannot_1": "Ermitteln Sie den genauen Pektin-Subtyp oder die genaue Pektin-Zusammensetzung, wenn lediglich „Pektin“ angegeben ist.",
   "cannot_2": "Berechnen Sie die vorhandene Menge allein anhand der bestellten Zutaten.",
   "sources": [
     {
-      "label": "JECFA — Pektine (INS 440) — Chemical/3043",
+      "label": "JECFA — Pectins (INS 440) — Chemical/3043",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3043"
     },
     {
-      "label": "Verordnung (EG) Nr. 1333/2008 — E440 in der Unionsliste — konsolidiert 18. August 2026",
+      "label": "Regulation (EC) No 1333/2008 — E440 in the Union list — consolidated 18 August 2026",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., Lebensmittel-Emulgatoren und Krebsrisiko (NutriNet-Santé-Kohorte)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Pektine",
-  "description": "Eine Familie pflanzlicher Polysaccharid-Gelier- und Stabilisierungsmittel, darunter nicht-amidierte und amidierte Pektine, zusammengefasst unter der Bezeichnung E440."
+  "description": "Pektin ist das, was Marmelade fest werden lässt, gewonnen aus Zitrusschalen und Äpfeln, zugesetzt zu Joghurts, Getränken und Desserts als E440. In der NutriNet-Santé-Kohorte hatten prämenopausale Frauen mit höherer Aufnahme mehr Brustkrebsdiagnosen."
 }

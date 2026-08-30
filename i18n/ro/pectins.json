@@ -4,25 +4,30 @@
   "aliases": "E440, E440(i), E440(ii), INS 440, pectină, pectine, pectină neamidată, pectină amidadă, pectine amidate",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "O familie de agenți de gelificare și stabilizare pe bază de polizaharide de origine vegetală, inclusiv pectine neamidate și amidate, grupate sub codul E440.",
-  "why_botia": "Pectina este fibra care se găsește deja în mod natural în fructe — cea care face ca un gem de casă să se gelifice singur. Ca aditiv, este extrasă din coji de citrice și din mere. Organismul nu o digeră. JECFA nu a considerat necesară stabilirea unei limite numerice.",
+  "what_is": "Pectina este ceea ce face ca gemul să se întărească. Se găsește în fructe — în principal în coaja de lămâie și portocală, și în ceea ce rămâne din măr după presare. De acolo este extrasă, purificată și adăugată la iaurturi, băuturi, dulciuri și deserturi pentru a le îngroșa. Pe etichetă este E440.",
+  "why_botia": "În cohorta NutriNet-Santé, care a urmărit 92.000 de adulți timp de ani, femeile care nu intraseră încă la menopauză și consumaseră mai mult E440 au avut mai multe diagnostice de cancer mamar decât cele care au consumat mai puțin. La femeile după menopauză nu a fost observat. Constatarea se referă la pectina adăugată ca aditiv, nu la fructe.",
   "can_1": "Detectează E440, pectina, pectinele și denumirile obișnuite ale subtipurilor amidate/neamidate.",
   "can_2": "Afișează straturile cu informații despre textură și numerele E.",
   "cannot_1": "Se determină subtipul exact de pectină sau compoziția acesteia atunci când este menționat doar termenul „pectină”.",
   "cannot_2": "Calculați cantitatea existentă doar pe baza comenzii de ingrediente.",
   "sources": [
     {
-      "label": "JECFA — Pectine (INS 440) — Chemical/3043",
+      "label": "JECFA — Pectins (INS 440) — Chemical/3043",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3043"
     },
     {
-      "label": "Regulamentul (CE) nr. 1333/2008 — E440 în lista Uniunii — consolidat la 18 august 2026",
+      "label": "Regulation (EC) No 1333/2008 — E440 in the Union list — consolidated 18 August 2026",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., emulgatori alimentari și riscul de cancer (cohorta NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Pectine",
-  "description": "O familie de agenți de gelificare și stabilizare pe bază de polizaharide de origine vegetală, inclusiv pectine neamidate și amidate, grupate sub codul E440."
+  "description": "Pectina este ceea ce face gemul să se întărească, extrasă din coaja de citrice și mere, adăugată la iaurturi, băuturi și deserturi ca E440. În cohorta NutriNet-Santé, femeile premenopauzale cu un consum mai mare au avut mai multe diagnostice de cancer mamar."
 }

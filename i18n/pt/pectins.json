@@ -4,25 +4,30 @@
   "aliases": "E440, E440(i), E440(ii), INS 440, pectina, pectinas, pectina não amida, pectina amida, pectinas amidas",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "Uma família de agentes gelificantes e estabilizantes polissacarídicos de origem vegetal, incluindo pectinas não amidadas e amidadas, agrupadas sob o código E440.",
-  "why_botia": "A pectina é a fibra que já existe naturalmente na fruta — é o que faz uma compota caseira gelificar sozinha. Como aditivo, é extraída de cascas de citrinos e de maçã. O organismo não a digere. O JECFA não considerou necessário estabelecer um limite numérico.",
+  "what_is": "A pectina é o que faz a geleia firmar. Está presente na fruta — principalmente na casca do limão e da laranja, e no que sobra da maçã depois de prensada. É de onde é extraída, purificada e adicionada a iogurtes, bebidas, doces e sobremesas para os espessar. No rótulo é E440.",
+  "why_botia": "Na coorte NutriNet-Santé, que acompanhou 92.000 adultos durante anos, as mulheres que ainda não tinham atingido a menopausa e consumiam mais E440 tiveram mais diagnósticos de cancro da mama do que as que consumiam menos. Nas mulheres pós-menopáusicas não foi observado. A descoberta é sobre a pectina adicionada como aditivo, não sobre a fruta.",
   "can_1": "Detetar E440, pectina, pectinas e os nomes comuns dos subtipos amidados/não amidados.",
   "can_2": "Mostrar as camadas de informação sobre a textura e os números E.",
   "cannot_1": "Determinar o subtipo ou a formulação exata da pectina quando apenas for indicada a menção «pectina».",
   "cannot_2": "Calcular a quantidade disponível apenas com base na encomenda de ingredientes.",
   "sources": [
     {
-      "label": "JECFA — Pectinas (INS 440) — Chemical/3043",
+      "label": "JECFA — Pectins (INS 440) — Chemical/3043",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3043"
     },
     {
-      "label": "Regulamento (CE) n.º 1333/2008 — E440 na lista da União — consolidado em 18 de agosto de 2026",
+      "label": "Regulation (EC) No 1333/2008 — E440 in the Union list — consolidated 18 August 2026",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., emulsionantes alimentares e risco de cancro (coorte NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Pectinas",
-  "description": "Uma família de agentes gelificantes e estabilizantes polissacarídicos de origem vegetal, incluindo pectinas não amidadas e amidadas, agrupadas sob o código E440."
+  "description": "A pectina é o que faz a geleia firmar, extraída da casca de citrinos e da maçã, adicionada a iogurtes, bebidas e sobremesas como E440. Na coorte NutriNet-Santé, as mulheres pré-menopáusicas com maior ingestão tiveram mais diagnósticos de cancro da mama."
 }

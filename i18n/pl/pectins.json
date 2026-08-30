@@ -4,25 +4,30 @@
   "aliases": "E440, E440(i), E440(ii), INS 440, pektyna, pektyn, pektyna nieamidowana, pektyna amidowana, pektyn amidowane",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "Rodzina roślinnych polisacharydowych środków żelujących i stabilizujących, w tym pektyn nieamidowanych i amidowanych, zgrupowanych pod oznaczeniem E440.",
-  "why_botia": "Pektyna jest błonnikiem naturalnie obecnym w owocach — to dzięki niej domowy dżem sam tężeje. Jako dodatek jest ekstrahowana ze skórek cytrusów i jabłek. Organizm jej nie trawi. JECFA nie uznał za konieczne ustalania liczbowego limitu.",
+  "what_is": "Pektyna to to, co sprawia, że dżem tężeje. Występuje w owocach — głównie w skórce cytryny i pomarańczy oraz w tym, co zostaje po wyciśnięciu jabłek. Stamtąd jest ekstrahowana, oczyszczana i dodawana do jogurtów, napojów, słodyczy i deserów w celu zagęszczenia. Na etykiecie jest E440.",
+  "why_botia": "W kohorcie NutriNet-Santé, która obserwowała 92 000 dorosłych przez lata, kobiety, które nie osiągnęły jeszcze menopauzy i spożywały więcej E440, miały więcej diagnoz raka piersi niż te, które spożywały mniej. U kobiet po menopauzie nie zaobserwowano tego. Odkrycie dotyczy pektyny dodawanej jako dodatek, a nie owoców.",
   "can_1": "Wykryj E440, pektynę, pektynę oraz popularne nazwy podtypów amidowanych i nieamidowanych.",
   "can_2": "Wyświetl warstwy zawierające informacje o teksturze i numerach E.",
   "cannot_1": "W przypadku, gdy w składzie podano jedynie „pektynę”, należy określić dokładny podtyp lub skład tej pektyn.",
   "cannot_2": "Oblicz ilość danego składnika na podstawie samego zamówienia składników.",
   "sources": [
     {
-      "label": "JECFA — Pektyny (INS 440) — Chemical/3043",
+      "label": "JECFA — Pectins (INS 440) — Chemical/3043",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3043"
     },
     {
-      "label": "Rozporządzenie (WE) nr 1333/2008 — E440 w wykazie Unii — tekst skonsolidowany 18 sierpnia 2026",
+      "label": "Regulation (EC) No 1333/2008 — E440 in the Union list — consolidated 18 August 2026",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem i in., emulgatory w żywności a ryzyko nowotworów (kohorta NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Pektyny",
-  "description": "Rodzina roślinnych polisacharydowych środków żelujących i stabilizujących, w tym pektyn nieamidowanych i amidowanych, zgrupowanych pod oznaczeniem E440."
+  "description": "Pektyna to to, co sprawia, że dżem tężeje, ekstrahowana ze skórek cytrusów i jabłek, dodawana do jogurtów, napojów i deserów jako E440. W kohorcie NutriNet-Santé kobiety przed menopauzą z wyższym spożyciem miały więcej diagnoz raka piersi."
 }

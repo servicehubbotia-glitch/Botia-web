@@ -4,25 +4,30 @@
   "aliases": "E440, E440(i), E440(ii), INS 440, 果胶, 果胶类, 非酰胺化果胶, 酰胺化果胶, 酰胺化果胶类",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "一类植物源性多糖胶凝剂和稳定剂，包括非酰胺化和酰胺化果胶，归入E440。",
-  "why_botia": "果胶就是水果中原本存在的纤维——它能让自制果酱自然凝结。作为添加剂时，果胶从柑橘果皮和苹果中提取。人体不会消化它。JECFA 认为没有必要为其设定数值型摄入限值。",
+  "what_is": "果胶是让果酱凝固的物质。它存在于水果中——主要是柠檬和橙皮，以及苹果榨汁后的残留物中。从那里提取、纯化，然后添加到酸奶、饮料、糖果和甜点中使其增稠。在标签上它是 E440。",
+  "why_botia": "在 NutriNet-Santé 队列研究中，该研究对 92,000 名成年人进行了多年跟踪，尚未绝经且摄入更多 E440 的女性比摄入较少的女性有更多的乳腺癌诊断。在绝经后女性中没有观察到这一点。该发现涉及作为添加剂添加的果胶，而非水果。",
   "can_1": "检测E440、pectin、pectins以及常见的酰胺化/非酰胺化亚型名称。",
   "can_2": "显示质地和E编号信息层。",
   "cannot_1": "当仅声明'pectin'时，无法确定确切的果胶亚型或配方。",
   "cannot_2": "仅凭成分顺序无法计算存在的量。",
   "sources": [
     {
-      "label": "JECFA — 果胶（INS 440）— Chemical/3043",
+      "label": "JECFA — Pectins (INS 440) — Chemical/3043",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3043"
     },
     {
-      "label": "欧盟法规 (EC) No 1333/2008 — 欧盟清单中的 E440 — 2026年8月18日合并文本",
+      "label": "Regulation (EC) No 1333/2008 — E440 in the Union list — consolidated 18 August 2026",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem 等人，食品添加剂乳化剂与癌症风险（NutriNet-Santé 队列）",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "果胶",
-  "description": "一类植物源性多糖胶凝剂和稳定剂，包括非酰胺化和酰胺化果胶，归入E440。"
+  "description": "果胶是让果酱凝固的物质，从柑橘皮和苹果中提取，添加到酸奶、饮料和甜点中作为 E440。在 NutriNet-Santé 队列中，摄入量较高的绝经前女性有更多的乳腺癌诊断。"
 }

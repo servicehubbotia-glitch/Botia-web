@@ -4,25 +4,30 @@
   "aliases": "E440, E440(i), E440(ii), INS 440, pectina, pectinas, pectina no amida, pectina amida, pectinas amidas",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "Familia de agentes gelificantes y estabilizantes polisacáridos de origen vegetal, entre los que se incluyen las pectinas no amidadas y amidadas, agrupadas bajo el código E440.",
-  "why_botia": "La pectina es la fibra que ya está en la fruta — lo que hace que una mermelada casera cuaje sola. Como aditivo se extrae de cáscaras de cítricos y de manzana. El cuerpo no la digiere. JECFA no vio necesidad de fijarle un límite numérico.",
+  "what_is": "La pectina es lo que hace que la mermelada cuaje. Está presente en la fruta — sobre todo en la piel de limón y naranja, y en el residuo de la manzana después de prensarla. De ahí se extrae, se purifica y se añade a yogures, bebidas, dulces y postres para espesarlos. En la etiqueta aparece como E440.",
+  "why_botia": "En la cohorte NutriNet-Santé, que siguió a 92.000 adultos durante años, las mujeres que aún no habían llegado a la menopausia y consumían más E440 tuvieron más diagnósticos de cáncer de mama que las que consumían menos. En mujeres posmenopáusicas no se observó. El hallazgo se refiere a la pectina añadida como aditivo, no a la fruta.",
   "can_1": "Detectar E440, pectina, pectinas y los nombres habituales de los subtipos amidados y no amidados.",
   "can_2": "Muestra las capas de información sobre la textura y los números E.",
   "cannot_1": "Determinar el subtipo o la formulación exactos de la pectina cuando solo se indique «pectina».",
   "cannot_2": "Calcula la cantidad disponible solo a partir del pedido de ingredientes.",
   "sources": [
     {
-      "label": "JECFA — Pectinas (INS 440) — Chemical/3043",
+      "label": "JECFA — Pectins (INS 440) — Chemical/3043",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3043"
     },
     {
-      "label": "Reglamento (CE) n.º 1333/2008 — E440 en la lista de la Unión — consolidado 18 de agosto de 2026",
+      "label": "Regulation (EC) No 1333/2008 — E440 in the Union list — consolidated 18 August 2026",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., emulsionantes alimentarios y riesgo de cáncer (cohorte NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Pectinas",
-  "description": "Familia de agentes gelificantes y estabilizantes polisacáridos de origen vegetal, entre los que se incluyen las pectinas no amidadas y amidadas, agrupadas bajo el código E440."
+  "description": "La pectina es lo que hace cuajar la mermelada; se extrae de la piel de cítricos y de la manzana y se añade a yogures, bebidas y postres como E440. En la cohorte NutriNet-Santé, las mujeres premenopáusicas con mayor ingesta tuvieron más diagnósticos de cáncer de mama."
 }

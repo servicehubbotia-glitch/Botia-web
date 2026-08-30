@@ -4,25 +4,30 @@
   "aliases": "E440, E440(i), E440(ii), INS 440, pektin, pektinler, amidlenmemiş pektin, amidlenmiş pektin, amidlenmiş pektinler",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "E440 kodu altında gruplandırılan, amidlenmemiş ve amidlenmiş pektinleri içeren, bitki kaynaklı polisakkarit jelleştirici ve stabilizatör maddelerden oluşan bir grup.",
-  "why_botia": "Pektin meyvede zaten doğal olarak bulunan liftir — ev yapımı reçelin kendiliğinden jelleşmesini sağlayan şeydir. Katkı maddesi olarak turunçgil kabuklarından ve elmadan ekstrakte edilir. Vücut onu sindirmez. JECFA sayısal bir sınır belirlemeyi gerekli görmedi.",
+  "what_is": "Pektin, reçelin kıvam almasını sağlayan şeydir. Meyvelerde bulunur — özellikle limon ve portakal kabuğunda ve elmanın sıkılmasından sonra kalan kısımda. Oradan çıkarılır, saflaştırılır ve yoğurtlara, içeceklere, şekerlemelere ve tatlılara koyulaştırmak için eklenir. Etikette E440 olarak görünür.",
+  "why_botia": "92.000 yetişkini yıllarca takip eden NutriNet-Santé kohortunda, henüz menopoza girmemiş ve daha fazla E440 alan kadınlar, daha az alanlara göre daha fazla meme kanseri teşhisi aldı. Menopoz sonrası kadınlarda bu gözlemlenmedi. Bulgu, katkı maddesi olarak eklenen pektinle ilgilidir, meyveyle değil.",
   "can_1": "E440, pektin, pektinler ve yaygın amidlenmiş/amidlenmemiş alt tip isimlerini tespit edin.",
   "can_2": "Doku ve E-numarası bilgi katmanlarını gösterin.",
   "cannot_1": "Sadece “pektin” olarak beyan edildiğinde, pektinin tam alt tipini veya formülasyonunu belirleyin.",
   "cannot_2": "Sadece malzeme siparişinden elde edilen miktarı hesaplayın.",
   "sources": [
     {
-      "label": "JECFA — Pektinler (INS 440) — Chemical/3043",
+      "label": "JECFA — Pectins (INS 440) — Chemical/3043",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3043"
     },
     {
-      "label": "Gıda katkı maddelerine ilişkin (EC) No 1333/2008 Tüzüğü — Birlik listesinde E440 — 18 Ağustos 2026",
+      "label": "Regulation (EC) No 1333/2008 — E440 in the Union list — consolidated 18 August 2026",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem ve diğerleri, gıda katkı maddesi emülgatörler ve kanser riski (NutriNet-Santé kohortu)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Pektinler",
-  "description": "E440 kodu altında gruplandırılan, amidlenmemiş ve amidlenmiş pektinleri içeren, bitki kaynaklı polisakkarit jelleştirici ve stabilizatör maddelerden oluşan bir grup."
+  "description": "Pektin, reçelin kıvam almasını sağlayan, narenciye kabuğu ve elmadan çıkarılan ve yoğurt, içecek ve tatlılara E440 olarak eklenen maddedir. NutriNet-Santé kohortunda, daha yüksek alıma sahip premenopozal kadınlarda daha fazla meme kanseri teşhisi görüldü."
 }

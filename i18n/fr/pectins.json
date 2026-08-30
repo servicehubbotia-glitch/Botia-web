@@ -4,25 +4,30 @@
   "aliases": "E440, E440(i), E440(ii), INS 440, pectine, pectines, pectine non amidée, pectine amidée, pectines amidées",
   "module_icon": "texture.png",
   "layers": [
+    "woman",
     "texture",
     "enumbers"
   ],
-  "what_is": "Une famille d'agents gélifiants et stabilisants à base de polysaccharides d'origine végétale, comprenant des pectines non amidées et amidées, regroupées sous le code E440.",
-  "why_botia": "La pectine est la fibre déjà présente dans les fruits — celle qui permet à une confiture maison de prendre toute seule. Comme additif, elle est extraite des écorces d’agrumes et des pommes. L’organisme ne la digère pas. Le JECFA n’a pas jugé nécessaire de fixer une limite numérique.",
+  "what_is": "La pectine est ce qui fait prendre la confiture. Elle est présente dans les fruits — surtout dans la peau du citron et de l'orange, et dans ce qui reste de la pomme après pressage. C'est de là qu'elle est extraite, purifiée et ajoutée aux yaourts, boissons, bonbons et desserts pour les épaissir. Sur l'étiquette, c'est E440.",
+  "why_botia": "Dans la cohorte NutriNet-Santé, qui a suivi 92 000 adultes pendant des années, les femmes n'ayant pas encore atteint la ménopause et consommant davantage de E440 ont eu plus de diagnostics de cancer du sein que celles qui en consommaient moins. Chez les femmes ménopausées, cela n'a pas été observé. Cette constatation concerne la pectine ajoutée comme additif, pas les fruits.",
   "can_1": "Détecter E440, la pectine, les pectines et les noms courants des sous-types amidés/non amidés.",
   "can_2": "Afficher les couches d'informations relatives à la texture et aux numéros E.",
   "cannot_1": "Déterminer le sous-type ou la formulation exacte de la pectine lorsque seul le terme « pectine » est indiqué.",
   "cannot_2": "Calculez la quantité disponible à partir de la seule commande d'ingrédients.",
   "sources": [
     {
-      "label": "JECFA — Pectines (INS 440) — Chemical/3043",
+      "label": "JECFA — Pectins (INS 440) — Chemical/3043",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3043"
     },
     {
-      "label": "Règlement (CE) n° 1333/2008 — E440 dans la liste de l’Union — consolidé au 18 août 2026",
+      "label": "Regulation (EC) No 1333/2008 — E440 in the Union list — consolidated 18 August 2026",
       "url": "https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., émulsifiants alimentaires et risque de cancer (cohorte NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
     }
   ],
   "title": "Pectines",
-  "description": "Une famille d'agents gélifiants et stabilisants à base de polysaccharides d'origine végétale, comprenant des pectines non amidées et amidées, regroupées sous le code E440."
+  "description": "La pectine est ce qui fait prendre la confiture, extraite de la peau d'agrumes et de la pomme, ajoutée aux yaourts, boissons et desserts comme E440. Dans la cohorte NutriNet-Santé, les femmes préménopausées ayant une consommation plus élevée ont eu plus de diagnostics de cancer du sein."
 }
