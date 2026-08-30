@@ -1,0 +1,32 @@
+{
+  "name": "Sodium bicarbonate",
+  "e_code": "E500(ii)",
+  "aliases": "E500, E500(ii), sodium bicarbonate, sodium hydrogen carbonate, baking soda",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "woman",
+    "enumbers"
+  ],
+  "what_is": "El bicarbonato de sodio es el bicarbonato de cocina común. En los alimentos se utiliza principalmente para hacer que las masas y productos de panadería suban y se vuelvan más ligeros, y también para regular la acidez. En una etiqueta puede aparecer como bicarbonato de sodio, bicarbonato de sodio o E500.",
+  "why_botia": "En la cohorte NutriNet-Santé, las mujeres que aún no habían llegado a la menopausia y consumían más E500 tuvieron más diagnósticos de cáncer de mama que las que consumían menos. En mujeres posmenopáusicas no se observó esta relación.",
+  "can_1": "Detect E500, E500(ii), sodium bicarbonate, sodium hydrogen carbonate and baking soda when they are declared on the label.",
+  "can_2": "Explain its use in food and show the Woman and E-number information layers.",
+  "cannot_1": "Determine how much sodium bicarbonate a product contains when the amount is not declared.",
+  "cannot_2": "Determine from the ingredient list whether a person's intake corresponds to the higher-intake group studied in NutriNet-Santé.",
+  "sources": [
+    {
+      "label": "JECFA — Bicarbonate of soda / sodium hydrogen carbonate, INS 500(ii)",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1912"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E500(ii) sodium hydrogen carbonate",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., emulsionantes alimentarios y riesgo de cáncer (cohorte NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
+    }
+  ],
+  "title": "Sodium bicarbonate",
+  "description": "El bicarbonato de sodio es el bicarbonato de cocina común, utilizado para ayudar a que las masas suban y regular la acidez. En la cohorte NutriNet-Santé, las mujeres premenopáusicas con mayor ingesta de E500 tuvieron más diagnósticos de cáncer de mama."
+}
