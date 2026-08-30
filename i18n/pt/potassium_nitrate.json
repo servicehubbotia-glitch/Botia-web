@@ -1,0 +1,32 @@
+{
+  "name": "Potassium nitrate",
+  "e_code": "E252",
+  "aliases": "E252, INS 252, potassium nitrate, saltpetre, saltpeter, nitrate of potash, nitrato potásico, nitrate de potassium, Kaliumnitrat, nitrato di potassio",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "woman",
+    "enumbers"
+  ],
+  "what_is": "O nitrato de potássio, E252, é o salitre. É um conservante utilizado em carnes curadas, presuntos e alguns queijos. Durante a cura, transforma-se em nitrito, e o nitrito impede o crescimento da bactéria que causa o botulismo e mantém a carne curada rosa em vez de cinzenta.",
+  "why_botia": "Em algumas condições, o nitrito pode reagir com outros compostos do alimento para formar compostos N-nitroso. Na coorte NutriNet-Santé, que acompanhou 105.000 pessoas durante anos, as mulheres que consumiam mais nitrato de potássio tiveram mais diagnósticos de cancro da mama do que as que consumiam menos. A descoberta refere-se ao nitrato adicionado como conservante, não ao nitrato naturalmente presente nos vegetais.",
+  "can_1": "Detect E252, potassium nitrate and saltpetre when they are declared on the label.",
+  "can_2": "Explain its use in cured foods and show the Woman and E-number information layers.",
+  "cannot_1": "Determine from the ingredient list how much E252 was added, how much remains after curing, or how much N-nitroso compound formed.",
+  "cannot_2": "Determine from the ingredient list whether a person's intake corresponds to the higher-intake group studied in NutriNet-Santé.",
+  "sources": [
+    {
+      "label": "JECFA — Potassium nitrate (INS 252) — Chemical/506",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/506"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E252 potassium nitrate",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., emulsionantes alimentares e risco de cancro (coorte NutriNet-Santé)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
+    }
+  ],
+  "title": "Potassium nitrate",
+  "description": "O nitrato de potássio, E252, é o salitre, um conservante em carnes curadas e alguns queijos que se transforma em nitrito durante a cura. Na coorte NutriNet-Santé, as mulheres com maior ingestão tiveram mais diagnósticos de cancro da mama."
+}

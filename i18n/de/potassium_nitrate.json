@@ -1,0 +1,32 @@
+{
+  "name": "Potassium nitrate",
+  "e_code": "E252",
+  "aliases": "E252, INS 252, potassium nitrate, saltpetre, saltpeter, nitrate of potash, nitrato potásico, nitrate de potassium, Kaliumnitrat, nitrato di potassio",
+  "module_icon": "botia_jar_512.png",
+  "layers": [
+    "woman",
+    "enumbers"
+  ],
+  "what_is": "Kaliumnitrat, E252, ist Salpeter. Es ist ein Konservierungsmittel, das in Pökelfleisch, Schinken und einigen Käsesorten verwendet wird. Während des Pökelns wandelt es sich in Nitrit um, und Nitrit verhindert das Wachstum des Bakteriums, das Botulismus verursacht, und hält das Pökelfleisch rosa statt grau.",
+  "why_botia": "Unter bestimmten Bedingungen kann Nitrit mit anderen Verbindungen im Lebensmittel zu N-Nitrosoverbindungen reagieren. In der NutriNet-Santé-Kohorte, die 105.000 Menschen über Jahre begleitete, hatten Frauen, die am meisten Kaliumnitrat konsumierten, mehr Brustkrebsdiagnosen als diejenigen, die am wenigsten konsumierten. Der Befund bezieht sich auf Nitrat, das als Konservierungsmittel zugesetzt wurde, nicht auf das in Gemüse natürlich vorkommende Nitrat.",
+  "can_1": "Detect E252, potassium nitrate and saltpetre when they are declared on the label.",
+  "can_2": "Explain its use in cured foods and show the Woman and E-number information layers.",
+  "cannot_1": "Determine from the ingredient list how much E252 was added, how much remains after curing, or how much N-nitroso compound formed.",
+  "cannot_2": "Determine from the ingredient list whether a person's intake corresponds to the higher-intake group studied in NutriNet-Santé.",
+  "sources": [
+    {
+      "label": "JECFA — Potassium nitrate (INS 252) — Chemical/506",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/506"
+    },
+    {
+      "label": "EU Regulation 231/2012 — E252 potassium nitrate",
+      "url": "https://eur-lex.europa.eu/eli/reg/2012/231/2026-08-18/eng"
+    },
+    {
+      "label": "PLOS Medicine 2024 — Sellem et al., Lebensmittel-Emulgatoren und Krebsrisiko (NutriNet-Santé-Kohorte)",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1004338"
+    }
+  ],
+  "title": "Potassium nitrate",
+  "description": "Kaliumnitrat, E252, ist Salpeter, ein Konservierungsmittel in Pökelfleisch und einigen Käsesorten, das sich beim Pökeln in Nitrit umwandelt. In der NutriNet-Santé-Kohorte hatten Frauen mit höherer Aufnahme mehr Brustkrebsdiagnosen."
+}
