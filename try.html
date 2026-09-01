@@ -1,6 +1,4 @@
-from pathlib import Path
-
-html = r'''<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -46,7 +44,7 @@ html = r'''<!DOCTYPE html>
     display: inline-block; background: rgba(190,122,72,0.16);
     border: 1px solid rgba(190,122,72,0.35); border-radius: 8px;
     padding: 10px 20px; color: #c0a08c; font-size: 0.9rem; font-weight: 600;
-    white-space: nowrap;
+    white-space: nowrap; text-decoration: none;
   }
 
   /* --- Input --- */
@@ -219,9 +217,13 @@ html = r'''<!DOCTYPE html>
     <div class="app-banner">
       <div class="app-banner-text">
         <div class="app-banner-title" id="app_title">BOTIA App</div>
-        <div class="app-banner-sub" id="app_sub">Scan the label instead of typing it. Coming soon to Google Play.</div>
       </div>
-      <span class="app-badge" id="app_badge">Coming soon</span>
+      <a
+        class="app-badge"
+        href="https://play.google.com/store/apps/details?id=com.botia.safefood"
+        target="_blank"
+        rel="noopener"
+      >Google Play</a>
     </div>
 
     <!-- Input -->
@@ -643,8 +645,3 @@ html = r'''<!DOCTYPE html>
   <script src="/botia/assets/js/botia-chat.js"></script>
 </body>
 </html>
-'''
-
-out = Path("/mnt/data/try.html")
-out.write_text(html, encoding="utf-8")
-print(f"Creado {out} con {len(html.splitlines())} líneas")
