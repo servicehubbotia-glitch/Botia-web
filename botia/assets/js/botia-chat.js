@@ -4,7 +4,6 @@
     const WORKER_URL = 'https://botia-web.servicehub-botia.workers.dev';
     const MAX_FREE_QUESTIONS = 3;
     const STORAGE_KEY = 'botia_chat_session';
-    const AUTO_OPEN_KEY = 'botia_chat_auto_opened';
 
     let currentLang = 'en';
     let freeQuestionsUsed = 0;
@@ -343,15 +342,17 @@
         isOpen = false;
     }
 
-    // ============ AUTO OPEN ONCE PER SESSION ============
-    function autoOpenOncePerSession() {
-        try {
-            if (sessionStorage.getItem(AUTO_OPEN_KEY) === '1') return;
-            sessionStorage.setItem(AUTO_OPEN_KEY, '1');
-            setTimeout(function() {
-                if (!isOpen) openChat();
-            }, 650);
-        } catch(e) {}
+    // ============ AUTO OPEN SOLO EN ESCRITORIO ============
+    function autoOpenDesktop() {
+        const isMobile =
+            window.matchMedia('(hover: none) and (pointer: coarse)').matches ||
+            window.innerWidth <= 768;
+
+        if (isMobile) return;
+
+        setTimeout(function() {
+            if (!isOpen) openChat();
+        }, 650);
     }
 
     // ============ EVENTOS ============
@@ -443,7 +444,7 @@
         addStyles();
         createElements();
         attachEvents();
-        autoOpenOncePerSession();
+        autoOpenDesktop();
     }
 
     if (document.readyState === 'loading') {
