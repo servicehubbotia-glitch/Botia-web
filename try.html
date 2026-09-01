@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+from pathlib import Path
+
+html = r'''<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -483,6 +485,18 @@
         }));
       }
 
+      // Woman general: no hay ingrediente Woman detectable
+      if (data.woman === "general" && data.woman_trigger) {
+        var womanLabels = LAYER_LABELS[lang] || LAYER_LABELS.en;
+
+        grid.appendChild(tile({
+          href: "/ingredients/woman_cards.html" + q
+                + "&trigger=" + encodeURIComponent(data.woman_trigger),
+          icon: LAYER_ICONS.woman,
+          name: womanLabels.woman || "Woman"
+        }));
+      }
+
       // 2. Evidence layers, each with its own ingredients
       var byLayer = {};
       (data.triggers || []).forEach(function (tr) {
@@ -556,7 +570,7 @@
       }
 
       var lang = currentLang();
-      status("msg_reading", "Reading the label\u2026", false);
+      status("msg_reading", "Reading the label\\u2026", false);
 
       var form = new FormData();
       form.append("file", selectedFile);
@@ -629,3 +643,8 @@
   <script src="/botia/assets/js/botia-chat.js"></script>
 </body>
 </html>
+'''
+
+out = Path("/mnt/data/try.html")
+out.write_text(html, encoding="utf-8")
+print(f"Creado {out} con {len(html.splitlines())} líneas")
