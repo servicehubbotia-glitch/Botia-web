@@ -23,11 +23,8 @@ REPO_DIR = Path("/content/Botia-web-upload")
 BRANCH = "main"
 COMMIT_MESSAGE = "Generar triggers-master.json desde fichas i18n/en/*.json"
 
-# Slugs a excluir (no se declaran nunca en lista de ingredientes)
-EXCLUDED_SLUGS = [
-    "bpa", "phthalates", "cadmium", "lead", "methylmercury", "dioxins_pcbs",
-    "endocrine-disruptors", "fat-accumulation", "packaging-migrants"
-]
+# Slugs a excluir (ninguno, ahora se incluyen todos)
+EXCLUDED_SLUGS = []  # <--- VACIADO
 
 # ============================================================
 # FUNCIONES AUXILIARES
@@ -206,9 +203,7 @@ def main():
     else:
         print("✅ Todos los triggers tienen layers no vacíos.")
 
-    print(f"\n📝 Slugs excluidos (no son triggers): {len(EXCLUDED_SLUGS)}")
-    for s in EXCLUDED_SLUGS:
-        print(f"  - {s}")
+    print(f"\n📝 Slugs excluidos (ninguno): {len(EXCLUDED_SLUGS)}")
 
     # 7. Commit y push
     print("\n📦 Añadiendo triggers-master.json al índice...")
