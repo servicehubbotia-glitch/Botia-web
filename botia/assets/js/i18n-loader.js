@@ -328,29 +328,6 @@
     }
   };
 
-  const applyLanguageCanonical = lang => {
-    const explicitLang = new URLSearchParams(location.search).get("lang");
-    if (!explicitLang) return;
-
-    const canonicalUrl = new URL(location.origin + location.pathname);
-    canonicalUrl.searchParams.set("lang", normalise(lang));
-
-    const href = canonicalUrl.toString();
-
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-
-    canonical.href = href;
-
-    document
-      .querySelector('meta[property="og:url"]')
-      ?.setAttribute("content", href);
-  };
-
   const applyCollections = (data, lang) => {
     const icon = document.getElementById("module_icon");
     if (icon && data.module_icon) icon.src = `/botia/assets/${data.module_icon}`;
@@ -692,7 +669,6 @@
       renderIngredientLinks(loaded);
     }
 
-    applyLanguageCanonical(loaded);
     applyMeta(data);
     applyObject(data);
     applyCollections(data, loaded);
