@@ -3,23 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#100707">
-  <title>BOTIA — Regulatory Explorer</title>
-  <meta name="description" content="Explore traceable regulatory measures linked to BOTIA ingredients, with jurisdiction, authority, scope, date and official source.">
 
-  <meta property="og:title" content="BOTIA — Regulatory Explorer">
-  <meta property="og:description" content="Explore traceable regulatory measures linked to BOTIA ingredients, with jurisdiction, authority, scope, date and official source.">
+  <title>BOTIA — Regulatory</title>
+  <meta name="description" content="Explore documented regulatory measures linked to BOTIA ingredients, with jurisdiction, authority, scope, date and official source.">
+
+  <meta property="og:title" content="BOTIA — Regulatory">
+  <meta property="og:description" content="Explore documented regulatory measures linked to BOTIA ingredients, with jurisdiction, authority, scope, date and official source.">
   <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
   <meta property="og:url" content="https://www.botia-safefood.com/regulatory/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BOTIA Food Transparency">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BOTIA — Regulatory Explorer">
-  <meta name="twitter:description" content="Explore traceable regulatory measures linked to BOTIA ingredients.">
+  <meta name="twitter:title" content="BOTIA — Regulatory">
+  <meta name="twitter:description" content="Explore documented regulatory measures linked to BOTIA ingredients.">
   <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
 
   <link rel="canonical" href="https://www.botia-safefood.com/regulatory/">
+
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/regulatory/?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/regulatory/?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/regulatory/?lang=ar">
@@ -37,117 +38,137 @@
   <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/regulatory/">
 
   <link rel="icon" href="/botia_jar_512.png" type="image/png">
+
+  <!-- BOTIA real shared styles -->
+  <link rel="stylesheet" href="/botia-landing.css">
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css">
   <link rel="stylesheet" href="/botia/assets/menu.css">
   <link rel="stylesheet" href="/botia/assets/footer.css">
+
+  <!-- Regulatory only: layout, not a new visual identity -->
   <link rel="stylesheet" href="/regulatory/regulatory.css">
 
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"CollectionPage",
-    "name":"BOTIA Regulatory Explorer",
+    "name":"BOTIA Regulatory",
     "url":"https://www.botia-safefood.com/regulatory/",
-    "isPartOf":{"@type":"WebSite","name":"BOTIA","url":"https://www.botia-safefood.com/"}
+    "isPartOf":{
+      "@type":"WebSite",
+      "name":"BOTIA",
+      "url":"https://www.botia-safefood.com/"
+    }
   }
   </script>
+
   <script src="/botia/assets/js/menu.js"></script>
 </head>
 
-<body data-botia-module="regulatory">
-  <a class="skip-link" id="reg_skip" href="#comparison">Skip to regulatory content</a>
+<body class="has-botia-header" data-botia-module="regulatory">
 
-  <button aria-label="Menu" id="menuBtn">☰</button>
+  <a class="skip-link" id="reg_skip" href="#registry">Skip to regulatory content</a>
 
-  <header class="topbar">
-    <a class="brand" href="/" aria-label="BOTIA home">
-      <span class="brand-mark" aria-hidden="true">B</span>
-      <span><strong>BOTIA</strong><small id="reg_brand_subtitle">Regulatory Explorer</small></span>
-    </a>
+  <header class="botia-header-bar">
+    <div class="botia-nav-left">
+      <button aria-label="Menu" id="menuBtn">☰</button>
+      <a class="reg-brand" href="/">BOTIA</a>
+    </div>
 
-    <nav class="reg-nav" aria-label="Regulatory sections">
-      <a href="#comparison" id="reg_nav_compare">Compare</a>
-      <a href="#registry" id="reg_nav_registry">Registry</a>
-      <a href="#method" id="reg_nav_method">How to read</a>
-    </nav>
+    <div class="lang-switcher">
+      <label
+        class="sr-only"
+        for="lang-select"
+        style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"
+      >Select language</label>
 
-    <div class="topbar-meta">
-      <span class="cutoff"><span id="reg_cutoff_label">Document cutoff:</span> <time datetime="2026-09-02">02·09·2026</time></span>
-
-      <div class="lang-switcher">
-        <div class="reg-lang-pill">
-          <span id="reg_language">Language</span>
-          <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
-          <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
-            <option value="en">English</option>
-            <option value="ar">العربية</option>
-            <option value="de">Deutsch</option>
-            <option value="es">Español</option>
-            <option value="fr">Français</option>
-            <option value="id">Bahasa Indonesia</option>
-            <option value="it">Italiano</option>
-            <option value="nl">Nederlands</option>
-            <option value="pl">Polski</option>
-            <option value="pt">Português</option>
-            <option value="ro">Română</option>
-            <option value="ru">Русский</option>
-            <option value="tr">Türkçe</option>
-            <option value="zh">中文</option>
-          </select>
-        </div>
-      </div>
+      <select
+        id="lang-select"
+        aria-label="Select language"
+        onchange="cambiarIdioma(this.value)"
+      >
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="it">Italiano</option>
+        <option value="nl">Nederlands</option>
+        <option value="pl">Polski</option>
+        <option value="pt">Português</option>
+        <option value="ro">Română</option>
+        <option value="ru">Русский</option>
+        <option value="tr">Türkçe</option>
+        <option value="zh">中文</option>
+      </select>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="comparison" aria-labelledby="comparison-title">
-      <div class="hero-copy">
-        <p class="eyebrow" id="reg_hero_eyebrow">Regulatory differences, without shortcuts</p>
-        <h1 id="comparison-title"><span id="reg_hero_title">Compare what each jurisdiction actually decided.</span></h1>
-        <p class="intro" id="reg_hero_intro">The same ingredient can be prohibited, restricted, subject to a warning, under review or treated differently elsewhere. Every result keeps its scope, date and official source.</p>
-      </div>
+  <main class="reg-page">
 
-      <aside class="notice">
-        <span class="notice-icon" aria-hidden="true">i</span>
-        <p><strong id="reg_notice_title">Regulatory information, not legal advice.</strong> <span id="reg_notice_body">This explorer reflects the documented material available in the master register and should be revalidated before legal or commercial decisions.</span></p>
-      </aside>
+    <section class="reg-intro">
+      <p class="reg-eyebrow" id="reg_registry_eyebrow">Traceable register</p>
+      <h1 id="reg_registry_title">Explore all documented measures</h1>
+      <p class="reg-intro-text" id="reg_hero_intro">
+        Search an ingredient and see the documented measures by jurisdiction, authority, status and scope.
+      </p>
 
-      <div class="compare-panel">
-        <div class="compare-controls">
-          <label><span id="reg_jurisdiction_a">Jurisdiction A</span><select id="jurisdiction-a"></select></label>
-          <button class="icon-button" id="swap-jurisdictions" type="button" aria-label="Swap jurisdictions" title="Swap jurisdictions">⇄</button>
-          <label><span id="reg_jurisdiction_b">Jurisdiction B</span><select id="jurisdiction-b"></select></label>
-          <label class="wide-control"><span id="reg_ingredient">Ingredient</span><select id="compare-substance"></select></label>
-          <label class="check-control"><input id="differences-only" type="checkbox" checked><span id="reg_only_differences">Show only differences</span></label>
-        </div>
-        <div class="compare-summary" id="compare-summary" aria-live="polite"></div>
-        <div class="comparison-grid" id="comparison-grid"></div>
+      <div class="reg-notice">
+        <strong id="reg_notice_title">Regulatory information, not legal advice.</strong>
+        <span id="reg_notice_body">
+          This page reflects the documented material available in the register and should be revalidated before legal or commercial decisions.
+        </span>
       </div>
     </section>
 
-    <section class="registry-section" id="registry" aria-labelledby="registry-title">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow" id="reg_registry_eyebrow">Traceable register</p>
-          <h2 id="registry-title"><span id="reg_registry_title">Explore all documented measures</span></h2>
-        </div>
-        <div class="result-actions">
-          <span id="result-count" class="result-count" aria-live="polite"></span>
-          <button class="secondary-button" id="export-csv" type="button"><span id="reg_export">Download CSV</span></button>
-        </div>
+    <section class="reg-section" id="registry">
+
+      <div class="reg-filters">
+
+        <label class="reg-search-control">
+          <span id="reg_search">Search</span>
+          <input
+            id="search"
+            type="search"
+            placeholder="BPA, E171, FDA, prohibition…"
+            autocomplete="off"
+          >
+        </label>
+
+        <label>
+          <span id="reg_filter_ingredient">Ingredient</span>
+          <select id="filter-substance"></select>
+        </label>
+
+        <label>
+          <span id="reg_filter_jurisdiction">Country or scope</span>
+          <select id="filter-jurisdiction"></select>
+        </label>
+
+        <label>
+          <span id="reg_filter_authority">Authority</span>
+          <select id="filter-authority"></select>
+        </label>
+
+        <label>
+          <span id="reg_filter_measure">Measure</span>
+          <select id="filter-category"></select>
+        </label>
+
+        <label>
+          <span id="reg_filter_status">Status</span>
+          <select id="filter-temporal"></select>
+        </label>
+
+        <button class="reg-clear" id="clear-filters" type="button">
+          <span id="reg_clear">Clear filters</span>
+        </button>
+
       </div>
 
-      <div class="filters">
-        <label class="search-control"><span id="reg_search">Search</span><input id="search" type="search" placeholder="BPA, E171, FDA, prohibition…" autocomplete="off"></label>
-        <label><span id="reg_filter_jurisdiction">Country or scope</span><select id="filter-jurisdiction"></select></label>
-        <label><span id="reg_filter_ingredient">Ingredient</span><select id="filter-substance"></select></label>
-        <label><span id="reg_filter_authority">Authority</span><select id="filter-authority"></select></label>
-        <label><span id="reg_filter_measure">Measure</span><select id="filter-category"></select></label>
-        <label><span id="reg_filter_status">Status</span><select id="filter-temporal"></select></label>
-        <button class="text-button" id="clear-filters" type="button"><span id="reg_clear">Clear filters</span></button>
-      </div>
-
-      <div class="table-shell">
-        <table>
+      <div class="table-wrap reg-table-wrap">
+        <table class="reg-table">
           <thead>
             <tr>
               <th id="reg_table_ingredient" scope="col">Ingredient</th>
@@ -160,49 +181,76 @@
           </thead>
           <tbody id="registry-body"></tbody>
         </table>
-        <div class="empty-state" id="empty-state" hidden>
+
+        <div class="reg-empty" id="empty-state" hidden>
           <strong id="reg_no_results">No results with these filters.</strong>
-          <span id="reg_no_results_note">The absence of a record does not mean that an ingredient is permitted or prohibited.</span>
+          <span id="reg_no_results_note">
+            The absence of a record does not mean that an ingredient is permitted or prohibited.
+          </span>
         </div>
+      </div>
+
+    </section>
+
+    <section class="reg-section reg-method" id="method">
+      <p class="reg-eyebrow" id="reg_method_eyebrow">How to read it</p>
+      <h2 id="reg_method_title">The measure, its scope and its source stay together.</h2>
+
+      <div class="reg-method-grid">
+        <article class="page-section">
+          <h3 id="reg_method_1_title">One row = one documented measure</h3>
+          <p id="reg_method_1_body">
+            A single ingredient can have several records because different jurisdictions or authorities can take different measures.
+          </p>
+        </article>
+
+        <article class="page-section">
+          <h3 id="reg_method_2_title">Absence is not permission</h3>
+          <p id="reg_method_2_body">
+            If a combination is not documented in this register, BOTIA does not invent an answer.
+          </p>
+        </article>
+
+        <article class="page-section">
+          <h3 id="reg_method_3_title">The source remains visible</h3>
+          <p id="reg_method_3_body">
+            Each public record keeps its official source.
+          </p>
+        </article>
       </div>
     </section>
 
-    <section class="method-section" id="method" aria-labelledby="method-title">
-      <div>
-        <p class="eyebrow" id="reg_method_eyebrow">How to read it</p>
-        <h2 id="method-title"><span id="reg_method_title">The measure, its scope and its source stay together.</span></h2>
-      </div>
-      <div class="method-grid">
-        <article>
-          <span class="method-number">01</span>
-          <h3 id="reg_method_1_title">One row = one documented measure</h3>
-          <p id="reg_method_1_body">A single ingredient can have several records because different jurisdictions or authorities can take different measures.</p>
-        </article>
-        <article>
-          <span class="method-number">02</span>
-          <h3 id="reg_method_2_title">Absence is not permission</h3>
-          <p id="reg_method_2_body">If a combination is not documented in this register, the explorer does not invent an answer.</p>
-        </article>
-        <article>
-          <span class="method-number">03</span>
-          <h3 id="reg_method_3_title">The source remains visible</h3>
-          <p id="reg_method_3_body">Every record keeps the official source URL and the BOTIA traceability reference from the master register.</p>
-        </article>
-      </div>
-    </section>
   </main>
 
   <dialog id="detail-dialog" aria-labelledby="detail-title">
-    <div class="dialog-head">
-      <div><p class="eyebrow" id="reg_detail_eyebrow">Regulatory record</p><h2 id="detail-title"></h2></div>
-      <button class="icon-button close-button" id="close-dialog" type="button" aria-label="Close">×</button>
+    <div class="reg-dialog-head">
+      <div>
+        <p class="reg-eyebrow" id="reg_detail_eyebrow">Regulatory record</p>
+        <h2 id="detail-title"></h2>
+      </div>
+
+      <button
+        class="reg-dialog-close"
+        id="close-dialog"
+        type="button"
+        aria-label="Close"
+      >×</button>
     </div>
+
     <div id="detail-content"></div>
   </dialog>
 
+  <!-- Real BOTIA assistant -->
   <script src="/botia/assets/js/botia-chat.js"></script>
+
+  <!-- Real BOTIA i18n -->
   <script defer src="/botia/assets/js/i18n-loader.js"></script>
+
+  <!-- Regulatory behaviour -->
   <script defer src="/regulatory/regulatory.js"></script>
+
+  <!-- Real BOTIA footer -->
   <script src="/botia/assets/js/footer.js?v=20260817-1502"></script>
+
 </body>
 </html>
