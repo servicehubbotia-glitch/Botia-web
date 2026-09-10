@@ -8,6 +8,7 @@
   let data = {};
   let records = [];
   let currentLang = "en";
+  let englishClassById = new Map();
 
   const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({
     "&":"&amp;",
@@ -42,6 +43,29 @@
       if (!response.ok) throw new Error(`English fallback HTTP ${response.status}`);
 
       return { payload: await response.json(), lang: "en" };
+    }
+  }
+
+  async function loadEnglishClassMap() {
+    try {
+      const response = await fetch("/i18n/en/regulatory.json", { cache: "no-store" });
+      if (!response.ok) throw new Error(`English master HTTP ${response.status}`);
+
+      const master = await response.json();
+      const englishRecords = Array.isArray(master.records) ? master.records : [];
+
+      englishClassById = new Map(
+        englishRecords.map(record => [
+          record.record_id,
+          {
+            measure_type: record.measure_type || "",
+            measure_status: record.measure_status || ""
+          }
+        ])
+      );
+    } catch (error) {
+      console.warn("BOTIA Regulatory: could not load English classification map.", error);
+      englishClassById = new Map();
     }
   }
 
@@ -117,8 +141,16 @@
     }
   }
 
-  function badgeClass(value = "") {
-    const text = String(value).toLowerCase();
+  function englishMeasureType(record) {
+    return englishClassById.get(record?.record_id)?.measure_type || record?.measure_type || "";
+  }
+
+  function englishMeasureStatus(record) {
+    return englishClassById.get(record?.record_id)?.measure_status || record?.measure_status || "";
+  }
+
+  function badgeClass(record) {
+    const text = String(englishMeasureType(record)).toLowerCase();
 
     if (text.includes("prohibit")) return "badge-prohibited";
     if (text.includes("withdraw") || text.includes("not author")) return "badge-revoked";
@@ -135,11 +167,11 @@
     return "badge-other";
   }
 
-  function statusClass(value = "") {
-    const text = String(value).toLowerCase();
+  function statusClass(record) {
+    const text = String(englishMeasureStatus(record)).toLowerCase();
 
     if (text.includes("future") || text.includes("pending")) return "badge-future";
-    if (text.includes("transition")) return "badge-transition";
+    if (text.includes("transition") || text.includes("phased")) return "badge-transition";
     if (text.includes("review")) return "badge-review";
 
     return "badge-current";
@@ -234,14 +266,14 @@
         </td>
 
         <td>
-          <span class="badge ${badgeClass(record.measure_type)}">
+          <span class="badge ${badgeClass(record)}">
             ${esc(record.measure_type)}
           </span>
           ${record.scope ? `<small>${esc(record.scope)}</small>` : ""}
         </td>
 
         <td>
-          <span class="badge ${statusClass(record.measure_status)}">
+          <span class="badge ${statusClass(record)}">
             ${esc(record.measure_status)}
           </span>
         </td>
@@ -286,12 +318,12 @@
 
         <div class="reg-detail-block">
           <span class="reg-detail-label">${esc(data.reg_table_measure || "Measure")}</span>
-          <span class="badge ${badgeClass(record.measure_type)}">${esc(record.measure_type)}</span>
+          <span class="badge ${badgeClass(record)}">${esc(record.measure_type)}</span>
         </div>
 
         <div class="reg-detail-block">
           <span class="reg-detail-label">${esc(data.reg_table_status || "Status")}</span>
-          <span class="badge ${statusClass(record.measure_status)}">${esc(record.measure_status)}</span>
+          <span class="badge ${statusClass(record)}">${esc(record.measure_status)}</span>
         </div>
 
         <div class="reg-detail-block wide">
@@ -470,6 +502,10 @@
     data = loaded.payload;
     currentLang = loaded.lang;
     records = Array.isArray(data.records) ? data.records : [];
+
+    // Visual categories must not depend on translated words.
+    // record_id links every translated record to the English master category.
+    await loadEnglishClassMap();
 
     document.documentElement.lang = currentLang;
     document.documentElement.dir = RTL.has(currentLang) ? "rtl" : "ltr";
