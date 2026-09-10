@@ -3,451 +3,261 @@
 
   const SUPPORTED_LANGS = ["en","es","ar","de","fr","nl","it","pt","pl","ro","ru","tr","zh","id"];
   const RTL = new Set(["ar"]);
-  const $ = (s) => document.querySelector(s);
+  const $ = selector => document.querySelector(selector);
 
-  const esc = (v = "") => String(v ?? "").replace(/[&<>"']/g, c => ({
+  let data = {};
+  let records = [];
+  let currentLang = "en";
+
+  const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({
     "&":"&amp;",
     "<":"&lt;",
     ">":"&gt;",
     '"':"&quot;",
     "'":"&#039;"
-  }[c]));
-
-  let data = null;
-  let records = [];
-  let currentLang = "en";
+  }[char]));
 
   function requestedLanguage() {
-    const q = new URLSearchParams(location.search).get("lang");
-    if (SUPPORTED_LANGS.includes(q)) return q;
+    const query = new URLSearchParams(location.search).get("lang");
+    if (SUPPORTED_LANGS.includes(query)) return query;
 
     try {
-      const saved = localStorage.getItem("botia-lang");
-      if (SUPPORTED_LANGS.includes(saved)) return saved;
+      const stored = localStorage.getItem("botia-lang");
+      if (SUPPORTED_LANGS.includes(stored)) return stored;
     } catch (_) {}
 
-    const nav = (navigator.language || "en").split("-")[0].toLowerCase();
-    return SUPPORTED_LANGS.includes(nav) ? nav : "en";
+    const detected = (navigator.language || "en").split("-")[0].toLowerCase();
+    return SUPPORTED_LANGS.includes(detected) ? detected : "en";
   }
 
-  async function fetchData(lang) {
+  async function loadData(lang) {
     try {
-      const r = await fetch(`/i18n/${encodeURIComponent(lang)}/regulatory.json`, {
-        cache: "no-store"
-      });
+      const response = await fetch(`/i18n/${lang}/regulatory.json`, { cache: "no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return { payload: await response.json(), lang };
+    } catch (error) {
+      if (lang === "en") throw error;
 
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const response = await fetch("/i18n/en/regulatory.json", { cache: "no-store" });
+      if (!response.ok) throw new Error(`English fallback HTTP ${response.status}`);
 
-      return {
-        payload: await r.json(),
-        loadedLang: lang
-      };
-    } catch (err) {
-      if (lang === "en") throw err;
-
-      const r = await fetch("/i18n/en/regulatory.json", {
-        cache: "no-store"
-      });
-
-      if (!r.ok) throw new Error(`English fallback HTTP ${r.status}`);
-
-      return {
-        payload: await r.json(),
-        loadedLang: "en"
-      };
+      return { payload: await response.json(), lang: "en" };
     }
   }
 
-  function applyText(payload) {
-    Object.entries(payload).forEach(([key, value]) => {
-      if (
-        key === "records" ||
-        key === "_meta" ||
-        typeof value !== "string"
-      ) return;
-
+  function applyUI() {
+    Object.entries(data).forEach(([key, value]) => {
+      if (key === "records" || key === "_meta" || typeof value !== "string") return;
       const el = document.getElementById(key);
       if (el) el.textContent = value;
     });
 
-    if (payload.page_title) {
-      document.title = payload.page_title;
+    if (data.page_title) document.title = data.page_title;
+    if (data.description) {
+      document.querySelector('meta[name="description"]')?.setAttribute("content", data.description);
+      document.querySelector('meta[property="og:description"]')?.setAttribute("content", data.description);
     }
 
-    if (payload.description) {
-      document
-        .querySelector('meta[name="description"]')
-        ?.setAttribute("content", payload.description);
-
-      document
-        .querySelector('meta[property="og:description"]')
-        ?.setAttribute("content", payload.description);
-    }
-
-    if (payload.reg_search_placeholder) {
-      $("#search")?.setAttribute(
-        "placeholder",
-        payload.reg_search_placeholder
-      );
+    if (data.reg_search_placeholder) {
+      $("#search")?.setAttribute("placeholder", data.reg_search_placeholder);
     }
   }
 
   function withLang(url) {
     try {
-      const u = new URL(url, location.origin);
-
-      if (
-        u.origin === location.origin ||
-        u.hostname === "www.botia-safefood.com"
-      ) {
-        u.searchParams.set("lang", currentLang);
+      const parsed = new URL(url, location.origin);
+      if (parsed.hostname === location.hostname || parsed.hostname === "www.botia-safefood.com") {
+        parsed.searchParams.set("lang", currentLang);
       }
-
-      return u.toString();
+      return parsed.toString();
     } catch (_) {
       return url;
     }
   }
 
-  function unique(field) {
-    return [
-      ...new Set(
-        records
-          .map(r => r[field])
-          .filter(v =>
-            v !== null &&
-            v !== undefined &&
-            String(v).trim() !== ""
-          )
-      )
-    ].sort((a, b) =>
-      String(a).localeCompare(String(b), currentLang)
-    );
+  function uniqueFrom(list, field) {
+    return [...new Set(
+      list
+        .map(record => record[field])
+        .filter(value => value !== null && value !== undefined && String(value).trim() !== "")
+    )].sort((a,b) => String(a).localeCompare(String(b), currentLang));
   }
 
-  function ingredients() {
+  function ingredientList() {
     const map = new Map();
 
-    records.forEach(r => {
-      if (!map.has(r.ingredient_slug)) {
-        map.set(r.ingredient_slug, {
-          slug: r.ingredient_slug,
-          name: r.ingredient_name,
-          code: r.e_code_or_INS || ""
+    records.forEach(record => {
+      if (!map.has(record.ingredient_slug)) {
+        map.set(record.ingredient_slug, {
+          slug: record.ingredient_slug,
+          name: record.ingredient_name,
+          code: record.e_code_or_INS || ""
         });
       }
     });
 
-    return [...map.values()].sort((a, b) =>
-      a.name.localeCompare(b.name, currentLang)
-    );
+    return [...map.values()].sort((a,b) => a.name.localeCompare(b.name, currentLang));
   }
 
-  function optionHTML(value, label) {
-    return `<option value="${esc(value)}">${esc(label)}</option>`;
+  function setOptions(select, items, allLabel, preserveValue = "") {
+    if (!select) return;
+
+    const current = preserveValue || select.value || "";
+
+    select.innerHTML =
+      `<option value="">${esc(allLabel)}</option>` +
+      items.map(item => {
+        const value = item.value ?? item;
+        const label = item.label ?? item;
+        return `<option value="${esc(value)}">${esc(label)}</option>`;
+      }).join("");
+
+    if ([...select.options].some(option => option.value === current)) {
+      select.value = current;
+    }
   }
 
-  function fillSelect(el, values, allLabel, selected = "") {
-    if (!el) return;
+  function badgeClass(value = "") {
+    const text = String(value).toLowerCase();
 
-    el.innerHTML =
-      optionHTML("", allLabel) +
-      values
-        .map(v => optionHTML(v.value ?? v, v.label ?? v))
-        .join("");
-
-    el.value = selected;
-  }
-
-  function measureBadgeClass(value = "") {
-    const s = String(value).toLowerCase();
-
-    if (s.includes("prohibit")) return "badge-prohibited";
-    if (s.includes("withdraw") || s.includes("not author")) return "badge-revoked";
-    if (s.includes("warning") || s.includes("labell")) return "badge-warning";
-    if (s.includes("restrict")) return "badge-restricted";
+    if (text.includes("prohibit")) return "badge-prohibited";
+    if (text.includes("withdraw") || text.includes("not author")) return "badge-revoked";
+    if (text.includes("warning") || text.includes("labell")) return "badge-warning";
+    if (text.includes("restrict")) return "badge-restricted";
     if (
-      s.includes("limit") ||
-      s.includes("adi") ||
-      s.includes("tdi") ||
-      s.includes("ptwi") ||
-      s.includes("ptmi")
+      text.includes("limit") ||
+      text.includes("adi") ||
+      text.includes("tdi") ||
+      text.includes("ptwi") ||
+      text.includes("ptmi")
     ) return "badge-limit";
 
     return "badge-other";
   }
 
-  function statusBadgeClass(value = "") {
-    const s = String(value).toLowerCase();
+  function statusClass(value = "") {
+    const text = String(value).toLowerCase();
 
-    if (s.includes("future") || s.includes("pending")) return "badge-future";
-    if (s.includes("transition")) return "badge-transition";
-    if (s.includes("review")) return "badge-review";
+    if (text.includes("future") || text.includes("pending")) return "badge-future";
+    if (text.includes("transition")) return "badge-transition";
+    if (text.includes("review")) return "badge-review";
 
     return "badge-current";
   }
 
-  function compactCard(r) {
-    return `
-      <article class="record-compact">
-        <span class="badge ${measureBadgeClass(r.measure_type)}">
-          ${esc(r.measure_type)}
-        </span>
+  function updateAuthorityOptions() {
+    const jurisdiction = $("#filter-jurisdiction")?.value || "";
+    const currentAuthority = $("#filter-authority")?.value || "";
 
-        <p>${esc(r.exact_measure)}</p>
+    const source = jurisdiction
+      ? records.filter(record => record.jurisdiction_or_scope === jurisdiction)
+      : records;
 
-        <div class="side-title">
-          <span>${esc(r.measure_status)}</span>
-          <span>${esc(r.date || data.reg_not_available)}</span>
-        </div>
+    const authorities = uniqueFrom(source, "authority").map(value => ({
+      value,
+      label: value
+    }));
 
-        <a
-          class="compact-link"
-          href="${esc(r.official_source_URL)}"
-          target="_blank"
-          rel="noopener"
-        >
-          ${esc(data.reg_open_source)}
-        </a>
-      </article>
-    `;
-  }
-
-  function renderComparison() {
-    const a = $("#jurisdiction-a")?.value || "";
-    const b = $("#jurisdiction-b")?.value || "";
-    const slug = $("#compare-substance")?.value || "";
-    const differencesOnly = $("#differences-only")?.checked ?? true;
-
-    if (!a || !b) {
-      $("#comparison-grid").innerHTML = "";
-      $("#compare-summary").textContent = "";
-      return;
-    }
-
-    const list = slug
-      ? ingredients().filter(i => i.slug === slug)
-      : ingredients();
-
-    const rows = list
-      .map(item => {
-        const sideA = records.filter(r =>
-          r.ingredient_slug === item.slug &&
-          r.jurisdiction_or_scope === a
-        );
-
-        const sideB = records.filter(r =>
-          r.ingredient_slug === item.slug &&
-          r.jurisdiction_or_scope === b
-        );
-
-        const sigA = sideA
-          .map(r =>
-            `${r.measure_type}|${r.measure_status}|${r.exact_measure}`
-          )
-          .sort()
-          .join(";");
-
-        const sigB = sideB
-          .map(r =>
-            `${r.measure_type}|${r.measure_status}|${r.exact_measure}`
-          )
-          .sort()
-          .join(";");
-
-        return {
-          item,
-          sideA,
-          sideB,
-          differs: sigA !== sigB
-        };
-      })
-      .filter(row => !differencesOnly || row.differs);
-
-    const unknown = () => `
-      <p class="unknown-card">
-        <strong>${esc(data.reg_not_documented)}</strong>
-        ${esc(data.reg_not_documented_note)}
-      </p>
-    `;
-
-    $("#comparison-grid").innerHTML = rows.map(row => `
-      <article class="comparison-card">
-
-        <div class="substance-cell">
-          <small>${esc(row.item.code)}</small>
-
-          <a
-            class="ingredient-link"
-            href="${esc(withLang(
-              records.find(r =>
-                r.ingredient_slug === row.item.slug
-              )?.BOTIA_URL || "#"
-            ))}"
-          >
-            ${esc(row.item.name)}
-          </a>
-        </div>
-
-        <div class="comparison-side">
-          <div class="side-title">
-            <span>${esc(a)}</span>
-            <span>
-              ${row.sideA.length}
-              ${esc(
-                row.sideA.length === 1
-                  ? data.reg_record_word
-                  : data.reg_records_word
-              )}
-            </span>
-          </div>
-
-          ${
-            row.sideA.length
-              ? row.sideA.map(compactCard).join("")
-              : unknown()
-          }
-        </div>
-
-        <div class="comparison-side">
-          <div class="side-title">
-            <span>${esc(b)}</span>
-            <span>
-              ${row.sideB.length}
-              ${esc(
-                row.sideB.length === 1
-                  ? data.reg_record_word
-                  : data.reg_records_word
-              )}
-            </span>
-          </div>
-
-          ${
-            row.sideB.length
-              ? row.sideB.map(compactCard).join("")
-              : unknown()
-          }
-        </div>
-
-      </article>
-    `).join("");
-
-    $("#compare-summary").innerHTML = `
-      <span class="summary-dot" aria-hidden="true"></span>
-      <span>
-        <strong>${rows.length}</strong>
-        · ${esc(data.reg_compare_summary)}
-        · ${esc(a)} / ${esc(b)}
-      </span>
-    `;
-
-    if (!rows.length) {
-      $("#comparison-grid").innerHTML = `
-        <div class="empty-state">
-          <strong>${esc(data.reg_no_results)}</strong>
-          <span>${esc(data.reg_no_results_note)}</span>
-        </div>
-      `;
-    }
+    setOptions(
+      $("#filter-authority"),
+      authorities,
+      data.reg_all || "All",
+      currentAuthority
+    );
   }
 
   function filteredRecords() {
-    const q = ($("#search")?.value || "")
+    const query = ($("#search")?.value || "")
       .trim()
       .toLocaleLowerCase(currentLang);
 
     const filters = {
-      jurisdiction_or_scope:
-        $("#filter-jurisdiction")?.value || "",
-
-      ingredient_slug:
-        $("#filter-substance")?.value || "",
-
-      authority:
-        $("#filter-authority")?.value || "",
-
-      measure_type:
-        $("#filter-category")?.value || "",
-
-      measure_status:
-        $("#filter-temporal")?.value || ""
+      ingredient_slug: $("#filter-substance")?.value || "",
+      jurisdiction_or_scope: $("#filter-jurisdiction")?.value || "",
+      authority: $("#filter-authority")?.value || "",
+      measure_type: $("#filter-category")?.value || "",
+      measure_status: $("#filter-temporal")?.value || ""
     };
 
-    return records.filter(r => {
-      const matchFilters = Object.entries(filters).every(
-        ([k, v]) =>
-          !v || String(r[k] ?? "") === v
+    return records.filter(record => {
+      const matchesFilters = Object.entries(filters).every(([field, value]) =>
+        !value || String(record[field] ?? "") === value
       );
 
-      if (!matchFilters) return false;
+      if (!matchesFilters) return false;
+      if (!query) return true;
 
-      if (!q) return true;
-
-      const haystack = Object.values(r)
-        .filter(v => v !== null && v !== undefined)
+      const haystack = [
+        record.ingredient_name,
+        record.ingredient_slug,
+        record.e_code_or_INS,
+        record.jurisdiction_or_scope,
+        record.authority,
+        record.measure_type,
+        record.measure_status,
+        record.scope,
+        record.exact_measure,
+        record.official_source_title
+      ]
+        .filter(Boolean)
         .join(" ")
         .toLocaleLowerCase(currentLang);
 
-      return haystack.includes(q);
+      return haystack.includes(query);
     });
   }
 
   function renderRegistry() {
     const filtered = filteredRecords();
 
-    $("#result-count").textContent =
-      `${filtered.length} / ${records.length} ${data.reg_records_word}`;
-
     $("#empty-state").hidden = filtered.length !== 0;
 
-    $("#registry-body").innerHTML = filtered.map(r => `
-      <tr tabindex="0" data-id="${esc(r.record_id)}">
+    $("#registry-body").innerHTML = filtered.map(record => `
+      <tr tabindex="0" data-id="${esc(record.record_id)}">
 
         <td>
           <a
             class="ingredient-link"
-            href="${esc(withLang(r.BOTIA_URL))}"
+            href="${esc(withLang(record.BOTIA_URL))}"
           >
-            ${esc(r.ingredient_name)}
+            ${esc(record.ingredient_name)}
           </a>
 
-          ${
-            r.e_code_or_INS
-              ? `<small>${esc(r.e_code_or_INS)}</small>`
-              : ""
-          }
+          ${record.e_code_or_INS
+            ? `<small>${esc(record.e_code_or_INS)}</small>`
+            : ""}
         </td>
 
         <td>
-          <strong>${esc(r.jurisdiction_or_scope)}</strong>
-          <small>${esc(r.authority)}</small>
+          <strong>${esc(record.jurisdiction_or_scope)}</strong>
+          <small>${esc(record.authority)}</small>
         </td>
 
         <td>
-          <span class="badge ${measureBadgeClass(r.measure_type)}">
-            ${esc(r.measure_type)}
+          <span class="badge ${badgeClass(record.measure_type)}">
+            ${esc(record.measure_type)}
           </span>
-          <small>${esc(r.scope)}</small>
+          ${record.scope ? `<small>${esc(record.scope)}</small>` : ""}
         </td>
 
         <td>
-          <span class="badge ${statusBadgeClass(r.measure_status)}">
-            ${esc(r.measure_status)}
+          <span class="badge ${statusClass(record.measure_status)}">
+            ${esc(record.measure_status)}
           </span>
         </td>
 
-        <td>${esc(r.date || data.reg_not_available)}</td>
+        <td>
+          ${esc(record.date || data.reg_not_available || "Not specified")}
+        </td>
 
         <td>
           <a
-            href="${esc(r.official_source_URL)}"
+            class="reg-source-link"
+            href="${esc(record.official_source_URL)}"
             target="_blank"
             rel="noopener"
           >
-            ${esc(
-              r.official_source_title ||
-              data.reg_open_source
-            )}
+            ${esc(record.official_source_title || data.reg_open_source || "Official source")}
           </a>
         </td>
 
@@ -459,126 +269,69 @@
     if (!record) return;
 
     $("#detail-title").textContent =
-      `${record.ingredient_name}${
-        record.e_code_or_INS
-          ? ` · ${record.e_code_or_INS}`
-          : ""
-      }`;
+      `${record.ingredient_name}${record.e_code_or_INS ? ` · ${record.e_code_or_INS}` : ""}`;
 
     $("#detail-content").innerHTML = `
-      <div class="detail-grid">
+      <div class="reg-detail-grid">
 
-        <div class="detail-block">
-          <span class="detail-label">
-            ${esc(data.reg_table_jurisdiction)}
-          </span>
-          <strong>
-            ${esc(record.jurisdiction_or_scope)}
-          </strong>
+        <div class="reg-detail-block">
+          <span class="reg-detail-label">${esc(data.reg_table_jurisdiction || "Jurisdiction / scope")}</span>
+          <p><strong>${esc(record.jurisdiction_or_scope)}</strong></p>
         </div>
 
-        <div class="detail-block">
-          <span class="detail-label">
-            ${esc(data.reg_authority)}
-          </span>
-          <strong>${esc(record.authority)}</strong>
+        <div class="reg-detail-block">
+          <span class="reg-detail-label">${esc(data.reg_authority || "Authority")}</span>
+          <p><strong>${esc(record.authority)}</strong></p>
         </div>
 
-        <div class="detail-block">
-          <span class="detail-label">
-            ${esc(data.reg_table_measure)}
-          </span>
-          <span class="badge ${measureBadgeClass(record.measure_type)}">
-            ${esc(record.measure_type)}
-          </span>
+        <div class="reg-detail-block">
+          <span class="reg-detail-label">${esc(data.reg_table_measure || "Measure")}</span>
+          <span class="badge ${badgeClass(record.measure_type)}">${esc(record.measure_type)}</span>
         </div>
 
-        <div class="detail-block">
-          <span class="detail-label">
-            ${esc(data.reg_table_status)}
-          </span>
-          <span class="badge ${statusBadgeClass(record.measure_status)}">
-            ${esc(record.measure_status)}
-          </span>
+        <div class="reg-detail-block">
+          <span class="reg-detail-label">${esc(data.reg_table_status || "Status")}</span>
+          <span class="badge ${statusClass(record.measure_status)}">${esc(record.measure_status)}</span>
         </div>
 
-        <div class="detail-block wide">
-          <span class="detail-label">
-            ${esc(data.reg_scope)}
-          </span>
-          <p>
-            ${esc(record.scope || data.reg_not_available)}
-          </p>
+        <div class="reg-detail-block wide">
+          <span class="reg-detail-label">${esc(data.reg_scope || "Scope")}</span>
+          <p>${esc(record.scope || data.reg_not_available || "Not specified")}</p>
         </div>
 
-        <div class="detail-block wide">
-          <span class="detail-label">
-            ${esc(data.reg_exact_measure)}
-          </span>
+        <div class="reg-detail-block wide">
+          <span class="reg-detail-label">${esc(data.reg_exact_measure || "Documented measure")}</span>
           <p>${esc(record.exact_measure)}</p>
         </div>
 
-        <div class="detail-block">
-          <span class="detail-label">
-            ${esc(data.reg_table_date)}
-          </span>
-          <p>
-            ${esc(record.date || data.reg_not_available)}
-          </p>
+        <div class="reg-detail-block">
+          <span class="reg-detail-label">${esc(data.reg_table_date || "Date")}</span>
+          <p>${esc(record.date || data.reg_not_available || "Not specified")}</p>
         </div>
 
-        <div class="detail-block">
-          <span class="detail-label">
-            ${esc(data.reg_verification)}
-          </span>
-          <span class="verification">
-            ${esc(record.verification_status)}
-          </span>
+        <div class="reg-detail-block">
+          <span class="reg-detail-label">${esc(data.reg_verification || "Verification")}</span>
+          <span class="reg-verification">${esc(record.verification_status)}</span>
         </div>
-
-        <div class="detail-block wide">
-          <span class="detail-label">
-            ${esc(data.reg_traceability)}
-          </span>
-          <p>
-            ${esc(
-              record.source_in_BOTIA_materials ||
-              data.reg_not_available
-            )}
-          </p>
-        </div>
-
-        ${
-          record.notes
-            ? `
-              <div class="detail-block wide">
-                <span class="detail-label">
-                  ${esc(data.reg_notes)}
-                </span>
-                <p>${esc(record.notes)}</p>
-              </div>
-            `
-            : ""
-        }
 
       </div>
 
-      <div class="dialog-actions">
+      <div class="reg-dialog-actions">
 
         <a
-          class="secondary-button"
+          class="reg-action"
           href="${esc(record.official_source_URL)}"
           target="_blank"
           rel="noopener"
         >
-          ${esc(data.reg_open_source)}
+          ${esc(data.reg_open_source || "Official source ↗")}
         </a>
 
         <a
-          class="secondary-button"
+          class="reg-action"
           href="${esc(withLang(record.BOTIA_URL))}"
         >
-          ${esc(data.reg_open_ingredient)}
+          ${esc(data.reg_open_ingredient || "BOTIA ingredient ↗")}
         </a>
 
       </div>
@@ -587,312 +340,156 @@
     $("#detail-dialog").showModal();
   }
 
-  function exportCSV() {
-    const rows = filteredRecords();
-
-    if (!rows.length) return;
-
-    const headers = Object.keys(rows[0]);
-
-    const csv = [
-      headers.join(","),
-      ...rows.map(r =>
-        headers.map(h => {
-          const value = String(r[h] ?? "")
-            .replace(/"/g, '""');
-
-          return `"${value}"`;
-        }).join(",")
-      )
-    ].join("\n");
-
-    const blob = new Blob(
-      [csv],
-      { type: "text/csv;charset=utf-8" }
-    );
-
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `BOTIA-regulatory-${currentLang}.csv`;
-    a.click();
-
-    URL.revokeObjectURL(url);
-  }
-
-  function bindEvents() {
-    [
-      "#jurisdiction-a",
-      "#jurisdiction-b",
-      "#compare-substance",
-      "#differences-only"
-    ].forEach(sel =>
-      $(sel)?.addEventListener(
-        "change",
-        renderComparison
-      )
-    );
-
-    $("#swap-jurisdictions")
-      ?.addEventListener("click", () => {
-        const a = $("#jurisdiction-a");
-        const b = $("#jurisdiction-b");
-
-        const tmp = a.value;
-        a.value = b.value;
-        b.value = tmp;
-
-        renderComparison();
-      });
+  function clearFilters() {
+    $("#search").value = "";
 
     [
-      "#filter-jurisdiction",
       "#filter-substance",
+      "#filter-jurisdiction",
       "#filter-authority",
       "#filter-category",
       "#filter-temporal"
-    ].forEach(sel =>
-      $(sel)?.addEventListener(
-        "change",
-        renderRegistry
-      )
-    );
+    ].forEach(selector => {
+      const element = $(selector);
+      if (element) element.value = "";
+    });
 
-    $("#search")
-      ?.addEventListener(
-        "input",
-        renderRegistry
+    updateAuthorityOptions();
+    renderRegistry();
+  }
+
+  function bindEvents() {
+    $("#search")?.addEventListener("input", renderRegistry);
+
+    $("#filter-substance")?.addEventListener("change", renderRegistry);
+
+    $("#filter-jurisdiction")?.addEventListener("change", () => {
+      updateAuthorityOptions();
+      renderRegistry();
+    });
+
+    $("#filter-authority")?.addEventListener("change", renderRegistry);
+    $("#filter-category")?.addEventListener("change", renderRegistry);
+    $("#filter-temporal")?.addEventListener("change", renderRegistry);
+
+    $("#clear-filters")?.addEventListener("click", clearFilters);
+
+    $("#close-dialog")?.addEventListener("click", () => {
+      $("#detail-dialog").close();
+    });
+
+    $("#detail-dialog")?.addEventListener("click", event => {
+      if (event.target === $("#detail-dialog")) {
+        $("#detail-dialog").close();
+      }
+    });
+
+    $("#registry-body")?.addEventListener("click", event => {
+      if (event.target.closest("a")) return;
+
+      const row = event.target.closest("tr[data-id]");
+      if (!row) return;
+
+      openDetail(
+        records.find(record => record.record_id === row.dataset.id)
       );
+    });
 
-    $("#clear-filters")
-      ?.addEventListener("click", () => {
-        $("#search").value = "";
+    $("#registry-body")?.addEventListener("keydown", event => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      if (event.target.closest("a")) return;
 
-        [
-          "#filter-jurisdiction",
-          "#filter-substance",
-          "#filter-authority",
-          "#filter-category",
-          "#filter-temporal"
-        ].forEach(sel => {
-          $(sel).value = "";
-        });
+      const row = event.target.closest("tr[data-id]");
+      if (!row) return;
 
-        renderRegistry();
-      });
+      event.preventDefault();
 
-    $("#export-csv")
-      ?.addEventListener(
-        "click",
-        exportCSV
+      openDetail(
+        records.find(record => record.record_id === row.dataset.id)
       );
-
-    $("#close-dialog")
-      ?.addEventListener(
-        "click",
-        () => $("#detail-dialog").close()
-      );
-
-    $("#registry-body")
-      ?.addEventListener("click", e => {
-        if (e.target.closest("a")) return;
-
-        const row = e.target.closest("tr[data-id]");
-
-        if (row) {
-          openDetail(
-            records.find(
-              r => r.record_id === row.dataset.id
-            )
-          );
-        }
-      });
-
-    $("#registry-body")
-      ?.addEventListener("keydown", e => {
-        if (
-          e.key !== "Enter" &&
-          e.key !== " "
-        ) return;
-
-        if (e.target.closest("a")) return;
-
-        const row = e.target.closest("tr[data-id]");
-
-        if (row) {
-          e.preventDefault();
-
-          openDetail(
-            records.find(
-              r => r.record_id === row.dataset.id
-            )
-          );
-        }
-      });
+    });
   }
 
   function initControls() {
-    const jurisdictions =
-      unique("jurisdiction_or_scope")
-        .map(v => ({
-          value: v,
-          label: v
-        }));
+    const ingredientOptions = ingredientList().map(item => ({
+      value: item.slug,
+      label: `${item.name}${item.code ? ` · ${item.code}` : ""}`
+    }));
 
-    const ingredientOptions =
-      ingredients().map(i => ({
-        value: i.slug,
-        label:
-          `${i.name}${
-            i.code ? ` · ${i.code}` : ""
-          }`
-      }));
-
-    fillSelect(
-      $("#jurisdiction-a"),
-      jurisdictions,
-      data.reg_all
-    );
-
-    fillSelect(
-      $("#jurisdiction-b"),
-      jurisdictions,
-      data.reg_all
-    );
-
-    fillSelect(
-      $("#compare-substance"),
-      ingredientOptions,
-      data.reg_all
-    );
-
-    fillSelect(
-      $("#filter-jurisdiction"),
-      jurisdictions,
-      data.reg_all
-    );
-
-    fillSelect(
+    setOptions(
       $("#filter-substance"),
       ingredientOptions,
-      data.reg_all
+      data.reg_all || "All"
     );
 
-    fillSelect(
-      $("#filter-authority"),
-      unique("authority").map(v => ({
-        value: v,
-        label: v
+    setOptions(
+      $("#filter-jurisdiction"),
+      uniqueFrom(records, "jurisdiction_or_scope").map(value => ({
+        value,
+        label: value
       })),
-      data.reg_all
+      data.reg_all || "All"
     );
 
-    fillSelect(
+    setOptions(
       $("#filter-category"),
-      unique("measure_type").map(v => ({
-        value: v,
-        label: v
+      uniqueFrom(records, "measure_type").map(value => ({
+        value,
+        label: value
       })),
-      data.reg_all
+      data.reg_all || "All"
     );
 
-    fillSelect(
+    setOptions(
       $("#filter-temporal"),
-      unique("measure_status").map(v => ({
-        value: v,
-        label: v
+      uniqueFrom(records, "measure_status").map(value => ({
+        value,
+        label: value
       })),
-      data.reg_all
+      data.reg_all || "All"
     );
 
-    const preferredA =
-      jurisdictions.find(
-        x => x.value === "European Union"
-      )?.value ||
-      jurisdictions[0]?.value ||
-      "";
+    updateAuthorityOptions();
 
-    const preferredB =
-      jurisdictions.find(
-        x => x.value === "United States"
-      )?.value ||
-      jurisdictions[1]?.value ||
-      preferredA;
-
-    $("#jurisdiction-a").value = preferredA;
-    $("#jurisdiction-b").value = preferredB;
-
-    const params =
-      new URLSearchParams(location.search);
-
-    const requestedIngredient =
-      params.get("ingredient");
+    const params = new URLSearchParams(location.search);
+    const ingredient = params.get("ingredient");
 
     if (
-      requestedIngredient &&
-      ingredientOptions.some(
-        x => x.value === requestedIngredient
-      )
+      ingredient &&
+      ingredientOptions.some(option => option.value === ingredient)
     ) {
-      $("#compare-substance").value =
-        requestedIngredient;
-
-      $("#filter-substance").value =
-        requestedIngredient;
+      $("#filter-substance").value = ingredient;
     }
   }
 
   async function init() {
     currentLang = requestedLanguage();
 
-    const loaded =
-      await fetchData(currentLang);
+    const loaded = await loadData(currentLang);
 
     data = loaded.payload;
-    currentLang = loaded.loadedLang;
+    currentLang = loaded.lang;
+    records = Array.isArray(data.records) ? data.records : [];
 
-    records =
-      Array.isArray(data.records)
-        ? data.records
-        : [];
-
-    document.documentElement.lang =
-      currentLang;
-
-    document.documentElement.dir =
-      RTL.has(currentLang)
-        ? "rtl"
-        : "ltr";
-
-    document.body.dir =
-      RTL.has(currentLang)
-        ? "rtl"
-        : "ltr";
+    document.documentElement.lang = currentLang;
+    document.documentElement.dir = RTL.has(currentLang) ? "rtl" : "ltr";
+    document.body.dir = RTL.has(currentLang) ? "rtl" : "ltr";
 
     const select = $("#lang-select");
+    if (select) select.value = currentLang;
 
-    if (select) {
-      select.value = currentLang;
-    }
-
-    applyText(data);
+    applyUI();
     initControls();
     bindEvents();
-    renderComparison();
     renderRegistry();
   }
 
-  init().catch(err => {
-    console.error(
-      "BOTIA Regulatory could not load:",
-      err
-    );
+  init().catch(error => {
+    console.error("BOTIA Regulatory could not load:", error);
 
-    const target = $("#registry-body");
-
-    if (target) {
-      target.innerHTML = `
+    const body = $("#registry-body");
+    if (body) {
+      body.innerHTML = `
         <tr>
           <td colspan="6">
             Could not load regulatory data.
