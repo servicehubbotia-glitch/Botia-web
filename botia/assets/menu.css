@@ -1,7 +1,8 @@
 /* BOTIA shared drawer */
 :root {
+  --botia-brand-accent: #e6a06b;
   --botia-menu-text: #f2e4dc;
-  --botia-menu-accent: #e6a06b;
+  --botia-menu-accent: var(--botia-brand-accent);
   --botia-menu-subtext: #c0a08c;
   --botia-menu-border: rgba(190, 122, 72, 0.3);
   --botia-menu-divider: rgba(190, 122, 72, 0.15);
@@ -241,7 +242,7 @@ body.has-botia-header .botia-header-bar {
   font-weight: 900;
   letter-spacing: 0.14em;
   font-size: 0.95rem;
-  color: #9f1f2e;
+  color: var(--botia-brand-accent);
 }
 
 .botia-wordmark:hover,
@@ -256,8 +257,7 @@ body.has-botia-header .botia-header-bar {
   position: static;
 }
 
-.botia-header-bar .lang-switcher select,
-.home-topbar .lang-switcher select {
+.botia-header-bar .lang-switcher select {
   min-width: 142px;
   height: 38px;
   padding: 0 34px 0 14px;
@@ -270,8 +270,7 @@ body.has-botia-header .botia-header-bar {
   cursor: pointer;
 }
 
-.botia-header-bar .lang-switcher select:focus-visible,
-.home-topbar .lang-switcher select:focus-visible {
+.botia-header-bar .lang-switcher select:focus-visible {
   outline: 1px solid rgba(230, 160, 107, 0.72);
   outline-offset: 2px;
 }
