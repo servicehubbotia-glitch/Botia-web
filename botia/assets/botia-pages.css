@@ -338,145 +338,216 @@ body.botia-main-page .hero .subtitle {
 
 /* BOTIA INFO PAGES — HERO LATERAL START */
 
-/*
-   SOLO las 11 páginas que llevan:
-   body.botia-info-page
+body.botia-info-page {
+  color: #f2e4dc;
 
-   Sistema visual tomado de botia-landing.css.
-*/
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
 
+  background:
+    radial-gradient(
+      circle at 20% 5%,
+      rgba(100, 28, 35, .15),
+      transparent 34rem
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(138, 74, 37, .10),
+      transparent 30rem
+    ),
+    linear-gradient(
+      180deg,
+      #0a0606,
+      #080505 50%,
+      #0d0808
+    );
+}
+
+
+/* HERO con el ancho visual de la landing */
 body.botia-info-page .hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 120px;
-    grid-template-areas:
-        "title icon"
-        "subtitle icon"
-        "description icon";
-    column-gap: 30px;
-    align-items: center;
+  width: min(1180px, calc(100vw - 40px));
 
-    padding: 60px 0 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 
-    text-align: left;
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    230px;
+
+  grid-template-areas:
+    "title icon"
+    "subtitle icon"
+    "description icon";
+
+  column-gap: 60px;
+
+  align-items: center;
+
+  padding: 74px 0 48px;
+
+  text-align: left;
 }
 
-/* Icono temático: lateral, no encima */
+
+/* ICONO — fijo, sin movimiento */
 body.botia-info-page .hero .hero-logo {
-    grid-area: icon;
+  grid-area: icon;
 
-    width: 100px !important;
-    height: 100px !important;
+  width: 190px !important;
+  height: 190px !important;
 
-    margin: 0 !important;
+  margin: 0 !important;
 
-    justify-self: end;
-    align-self: center;
+  display: block !important;
 
-    display: block !important;
-    object-fit: contain !important;
+  justify-self: center;
+  align-self: center;
 
-    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
+  object-fit: contain !important;
+
+  animation: none !important;
+  transform: none !important;
+
+  filter:
+    drop-shadow(
+      0 8px 20px
+      rgba(0, 0, 0, .40)
+    );
 }
 
-/* Título — mismo sistema que la landing */
+
+/* TÍTULO — MISMO TAMAÑO QUE LA LANDING */
 body.botia-info-page .hero h1 {
-    grid-area: title;
+  grid-area: title;
 
-    font-size: 2.4rem;
-    line-height: 1.25;
-    font-weight: 800;
+  font-size:
+    clamp(
+      2.6rem,
+      5.8vw,
+      5.3rem
+    );
 
-    color: #fff3ea;
+  line-height: .95;
 
-    margin: 0 0 14px;
-    letter-spacing: -0.01em;
+  letter-spacing: -.055em;
 
-    text-align: left;
+  font-weight: 800;
+
+  color: #f2e4dc;
+
+  margin: 0 0 18px;
+
+  text-align: left;
 }
 
-/* Subtítulo — cobre BOTIA */
+
+/* SUBTÍTULO */
 body.botia-info-page .hero .subtitle {
-    grid-area: subtitle;
+  grid-area: subtitle;
 
-    font-size: 1.2rem;
-    line-height: 1.6;
-    font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.55;
 
-    color: #e6a06b;
+  font-weight: 600;
 
-    margin: 0 0 10px;
+  color: #e6a06b;
 
-    text-align: left;
+  margin: 0 0 10px;
+
+  text-align: left;
 }
 
-/* Explicación */
+
+/* EXPLICACIÓN */
 body.botia-info-page .hero .description {
-    grid-area: description;
+  grid-area: description;
 
-    font-size: 1rem;
-    line-height: 1.6;
+  font-size: 1.08rem;
+  line-height: 1.75;
 
-    color: #d9a77d;
+  color: #c0a08c;
 
-    margin: 0;
+  margin: 0;
 
-    text-align: left;
+  max-width: 720px;
+
+  text-align: left;
 }
 
 
 /* RTL */
 body[dir="rtl"].botia-info-page .hero {
-    grid-template-columns: 120px minmax(0, 1fr);
-    grid-template-areas:
-        "icon title"
-        "icon subtitle"
-        "icon description";
+  grid-template-columns:
+    230px
+    minmax(0, 1fr);
 
-    text-align: right;
-}
+  grid-template-areas:
+    "icon title"
+    "icon subtitle"
+    "icon description";
 
-body[dir="rtl"].botia-info-page .hero .hero-logo {
-    justify-self: start;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 body[dir="rtl"].botia-info-page .hero h1,
 body[dir="rtl"].botia-info-page .hero .subtitle,
 body[dir="rtl"].botia-info-page .hero .description {
-    text-align: right;
+  text-align: right;
 }
 
 
-/* Móvil: sigue siendo lateral, no vuelve arriba */
-@media (max-width: 600px) {
+/* MÓVIL */
+@media (max-width: 700px) {
 
-    body.botia-info-page .hero {
-        grid-template-columns: minmax(0, 1fr) 88px;
-        column-gap: 16px;
+  body.botia-info-page .hero {
+    width: calc(100vw - 32px);
 
-        padding: 38px 0 34px;
-    }
+    grid-template-columns:
+      minmax(0, 1fr)
+      112px;
 
-    body.botia-info-page .hero .hero-logo {
-        width: 82px !important;
-        height: 82px !important;
-    }
+    column-gap: 18px;
 
-    body.botia-info-page .hero h1 {
-        font-size: 2rem;
-        line-height: 1.08;
-    }
+    padding: 46px 0 38px;
+  }
 
-    body.botia-info-page .hero .subtitle {
-        font-size: 1.05rem;
-    }
+  body.botia-info-page .hero .hero-logo {
+    width: 105px !important;
+    height: 105px !important;
+  }
 
-    body.botia-info-page .hero .description {
-        font-size: 0.95rem;
-    }
+  body.botia-info-page .hero h1 {
+    font-size:
+      clamp(
+        2.4rem,
+        11vw,
+        4rem
+      );
+  }
 
-    body[dir="rtl"].botia-info-page .hero {
-        grid-template-columns: 88px minmax(0, 1fr);
-    }
+  body.botia-info-page .hero .subtitle {
+    font-size: 1.05rem;
+  }
+
+  body.botia-info-page .hero .description {
+    font-size: .98rem;
+    line-height: 1.65;
+  }
+
+  body[dir="rtl"].botia-info-page .hero {
+    grid-template-columns:
+      112px
+      minmax(0, 1fr);
+  }
 }
 
 /* BOTIA INFO PAGES — HERO LATERAL END */
