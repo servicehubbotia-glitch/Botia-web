@@ -338,6 +338,13 @@ body.botia-main-page .hero .subtitle {
 
 /* BOTIA INFO PAGES — HERO LATERAL START */
 
+body.botia-info-page .landing {
+  max-width: 1180px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 0;
+}
+
 body.botia-info-page {
   color: #f2e4dc;
 
@@ -371,10 +378,9 @@ body.botia-info-page {
 
 /* HERO con el ancho visual de la landing */
 body.botia-info-page .hero {
-  width: min(1180px, calc(100vw - 40px));
-
-  margin-left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  margin: 0;
+  transform: none;
 
   display: grid;
 
@@ -493,9 +499,6 @@ body[dir="rtl"].botia-info-page .hero {
     "icon title"
     "icon subtitle"
     "icon description";
-
-  margin-left: 50%;
-  transform: translateX(-50%);
 }
 
 body[dir="rtl"].botia-info-page .hero h1,
