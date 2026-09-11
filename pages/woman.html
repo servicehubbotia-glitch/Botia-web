@@ -5,17 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>BOTIA — Woman</title>
+  <title>BOTIA — Woman | Scientific Evidence on Food &amp; Female Biology</title>
 
   <meta
     name="description"
-    content="Some evidence matters specifically to pregnancy, fetal development, reproduction or a defined difference between sexes. BOTIA shows that evidence. It does not treat every woman as equally vulnerable."
+    content="BOTIA Woman surfaces scientific evidence on endocrine disruptors, BPA, phthalates, parabens, heavy metals, alcohol and trans fats relevant to women's biology. Evidence-based, not fear-based."
   >
 
   <meta property="og:title" content="BOTIA — Woman">
   <meta
     property="og:description"
-    content="Some evidence matters specifically to pregnancy, fetal development, reproduction or a defined difference between sexes. BOTIA shows that evidence. It does not treat every woman as equally vulnerable."
+    content="BOTIA Woman surfaces scientific evidence on endocrine disruptors, BPA, phthalates, parabens, heavy metals, alcohol and trans fats relevant to women's biology. Evidence-based, not fear-based."
   >
   <meta
     property="og:image"
@@ -31,7 +31,7 @@
   <meta name="twitter:title" content="BOTIA — Woman">
   <meta
     name="twitter:description"
-    content="Some evidence matters specifically to pregnancy, fetal development, reproduction or a defined difference between sexes. BOTIA shows that evidence. It does not treat every woman as equally vulnerable."
+    content="BOTIA Woman surfaces scientific evidence on endocrine disruptors, BPA, phthalates, parabens, heavy metals, alcohol and trans fats relevant to women's biology. Evidence-based, not fear-based."
   >
   <meta
     name="twitter:image"
@@ -49,6 +49,7 @@
     type="image/png"
   >
 
+  <!-- hreflang -->
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/pages/woman.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/pages/woman.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/pages/woman.html?lang=ar">
@@ -65,6 +66,7 @@
   <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/pages/woman.html?lang=id">
   <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/pages/woman.html">
 
+  <!-- ÚNICOS CSS EXTERNOS NECESARIOS PARA LA ESTRUCTURA COMÚN -->
   <link rel="stylesheet" href="/botia/assets/menu.css">
   <link rel="stylesheet" href="/botia/assets/footer.css">
 
@@ -72,33 +74,31 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "BOTIA — Woman",
-    "description": "Some evidence matters specifically to pregnancy, fetal development, reproduction or a defined difference between sexes. BOTIA shows that evidence. It does not treat every woman as equally vulnerable.",
+    "name": "BOTIA — Woman | Scientific Evidence on Food & Female Biology",
+    "description": "BOTIA Woman surfaces scientific evidence on endocrine disruptors, BPA, phthalates, parabens, heavy metals, alcohol and trans fats relevant to women's biology. Evidence-based, not fear-based.",
     "url": "https://www.botia-safefood.com/pages/woman.html",
     "isPartOf": {
       "@type": "WebSite",
-      "name": "BOTIA",
-      "url": "https://www.botia-safefood.com"
+      "name": "BOTIA Food Transparency"
     }
   }
   </script>
 
   <style>
     :root {
-      --bg: #080505;
-      --panel: #180d0d;
-      --panel-strong: #241010;
+      --woman-bg: #080505;
+      --woman-panel: #180d0d;
+      --woman-panel2: #241010;
 
-      --text: #f2e4dc;
-      --muted: #c0a08c;
-      --soft: #8a8a8a;
+      --woman-text: #f2e4dc;
+      --woman-muted: #c0a08c;
+      --woman-soft: #8a8a8a;
 
-      --accent: #e6a06b;
-      --accent-light: #ffd8bd;
+      --woman-accent: #e6a06b;
+      --woman-accent2: #ffd8bd;
 
-      --line: rgba(190, 122, 72, .28);
-
-      --shadow: 0 18px 60px rgba(0, 0, 0, .38);
+      --woman-line: rgba(190,122,72,.28);
+      --woman-shadow: 0 18px 60px rgba(0,0,0,.38);
     }
 
     * {
@@ -112,7 +112,7 @@
     body {
       margin: 0;
 
-      color: var(--text);
+      color: var(--woman-text);
 
       font-family:
         -apple-system,
@@ -125,12 +125,12 @@
       background:
         radial-gradient(
           circle at 20% 5%,
-          rgba(100, 28, 35, .15),
+          rgba(100,28,35,.15),
           transparent 34rem
         ),
         radial-gradient(
           circle at 80% 20%,
-          rgba(138, 74, 37, .10),
+          rgba(138,74,37,.10),
           transparent 30rem
         ),
         linear-gradient(
@@ -147,104 +147,24 @@
       color: inherit;
     }
 
-    /* TOPBAR */
-
-    .woman-topbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-
-      background: rgba(8, 5, 5, .90);
-
-      -webkit-backdrop-filter: blur(14px);
-      backdrop-filter: blur(14px);
-
-      border-bottom: 1px solid rgba(190, 122, 72, .16);
-    }
-
-    .woman-topbar-inner {
-      width: min(1180px, calc(100% - 40px));
-      min-height: 68px;
-
-      margin: 0 auto;
-
-      display: flex;
-      align-items: center;
-
-      gap: 18px;
-    }
-
-    #menuBtn {
-      position: static;
-      flex: 0 0 42px;
-    }
-
-    .woman-wordmark {
-      color: var(--accent);
-
-      font-weight: 900;
-      letter-spacing: .14em;
-
-      text-decoration: none;
-    }
-
-    .woman-spacer {
-      flex: 1;
-    }
-
-    .lang-switcher {
-      position: static;
-    }
-
-    .woman-lang-pill {
-      display: flex;
-      align-items: center;
-
-      padding: 5px 10px 5px 12px;
-
-      border: 1px solid rgba(190, 122, 72, .38);
-      border-radius: 999px;
-
-      background: rgba(24, 13, 13, .92);
-    }
-
-    .woman-lang-pill select {
-      color: var(--text);
-      background: transparent;
-
-      border: 0;
-      outline: 0;
-
-      padding: 5px 2px;
-
-      cursor: pointer;
-    }
-
-    .woman-lang-pill option {
-      background: #180d0d;
-      color: #f2e4dc;
-    }
-
-    /* CONTAINER */
-
     .woman-wrap {
       width: min(1180px, calc(100% - 40px));
       margin: 0 auto;
     }
 
-    /* HERO */
 
-    .woman-hero {
+    /* =====================================================
+       HERO — MISMO SISTEMA QUE INDEX
+       ===================================================== */
+
+    .hero {
       padding: 74px 0 58px;
     }
 
     .woman-hero-grid {
       display: grid;
-
       grid-template-columns: 1.15fr .85fr;
-
       gap: 60px;
-
       align-items: center;
     }
 
@@ -252,10 +172,12 @@
       min-width: 0;
     }
 
-    .woman-hero h1 {
+    .hero h1 {
+      max-width: 900px;
+
       margin: 0 0 20px;
 
-      color: var(--text);
+      color: var(--woman-text);
 
       font-size: clamp(2.6rem, 5.8vw, 5.3rem);
       line-height: .95;
@@ -265,10 +187,10 @@
       font-weight: 900;
     }
 
-    .woman-hero .subtitle {
+    .hero .subtitle {
       margin: 0 0 12px;
 
-      color: var(--accent);
+      color: var(--woman-accent);
 
       font-size: 1.15rem;
       line-height: 1.55;
@@ -276,18 +198,21 @@
       font-weight: 800;
     }
 
-    .woman-hero .description {
+    .hero .description {
       max-width: 720px;
 
       margin: 0;
 
-      color: var(--muted);
+      color: var(--woman-muted);
 
       font-size: 1.08rem;
       line-height: 1.75;
     }
 
-    /* WOMAN ICON */
+
+    /* =====================================================
+       ICONO WOMAN
+       ===================================================== */
 
     .woman-icon-stage {
       min-height: 410px;
@@ -298,17 +223,17 @@
       display: grid;
       place-items: center;
 
-      border: 1px solid var(--line);
+      border: 1px solid var(--woman-line);
       border-radius: 30px;
 
       background:
         linear-gradient(
           145deg,
-          rgba(36, 16, 16, .94),
-          rgba(8, 5, 5, .82)
+          rgba(36,16,16,.94),
+          rgba(8,5,5,.82)
         );
 
-      box-shadow: var(--shadow);
+      box-shadow: var(--woman-shadow);
     }
 
     .woman-icon-stage::before,
@@ -320,7 +245,7 @@
       width: 260px;
       height: 260px;
 
-      border: 1px solid rgba(230, 160, 107, .10);
+      border: 1px solid rgba(230,160,107,.10);
       border-radius: 50%;
     }
 
@@ -334,7 +259,7 @@
       bottom: -120px;
     }
 
-    .woman-main-icon {
+    .woman-icon-stage .hero-logo {
       width: min(300px, 72%);
       height: auto;
 
@@ -343,17 +268,22 @@
 
       object-fit: contain;
 
-      filter:
-        drop-shadow(
-          0 18px 28px
-          rgba(0, 0, 0, .35)
-        );
+      margin: 0;
 
       animation: none !important;
       transform: none !important;
+
+      filter:
+        drop-shadow(
+          0 18px 28px
+          rgba(0,0,0,.35)
+        );
     }
 
-    /* COMMON SECTIONS */
+
+    /* =====================================================
+       SECCIONES
+       ===================================================== */
 
     .woman-section {
       padding: 72px 0;
@@ -363,8 +293,8 @@
       background:
         linear-gradient(
           180deg,
-          rgba(17, 8, 8, .45),
-          rgba(36, 16, 16, .22)
+          rgba(17,8,8,.45),
+          rgba(36,16,16,.22)
         );
     }
 
@@ -379,11 +309,11 @@
     }
 
     .woman-section-head h2 {
-      max-width: 760px;
+      max-width: 720px;
 
       margin: 0;
 
-      color: var(--text);
+      color: var(--woman-text);
 
       font-size: clamp(2rem, 4vw, 3.4rem);
       line-height: 1.05;
@@ -398,45 +328,48 @@
 
       margin: 0;
 
-      color: var(--muted);
+      color: var(--woman-muted);
 
       font-size: 1rem;
       line-height: 1.65;
     }
 
-    /* WHY */
 
-    .woman-statement {
+    /* =====================================================
+       WHY — BLOQUE DE IMPACTO
+       ===================================================== */
+
+    .woman-why {
       padding: 78px 0;
     }
 
-    .woman-statement-box {
+    .woman-why-box {
       padding: 44px;
 
-      border: 1px solid var(--line);
+      border: 1px solid var(--woman-line);
       border-radius: 28px;
 
       background:
         radial-gradient(
           circle at 15% 25%,
-          rgba(148, 61, 50, .11),
+          rgba(148,61,50,.11),
           transparent 22rem
         ),
         linear-gradient(
           135deg,
-          rgba(36, 16, 16, .88),
-          rgba(8, 5, 5, .90)
+          rgba(36,16,16,.88),
+          rgba(8,5,5,.90)
         );
 
-      box-shadow: var(--shadow);
+      box-shadow: var(--woman-shadow);
     }
 
-    .woman-statement-box h2 {
+    .woman-why-box h2 {
       max-width: 850px;
 
       margin: 0 0 18px;
 
-      color: var(--text);
+      color: var(--woman-text);
 
       font-size: clamp(2rem, 4vw, 3.6rem);
       line-height: 1.04;
@@ -446,139 +379,188 @@
       font-weight: 900;
     }
 
-    .woman-statement-box p {
+    .woman-why-box p {
       max-width: 850px;
 
       margin: 0;
 
-      color: var(--muted);
+      color: var(--woman-muted);
 
       font-size: 1.02rem;
       line-height: 1.7;
     }
 
-    /* NOT A LIFE STAGE + TWO TYPES */
 
-    .woman-foundation-grid {
+    /* =====================================================
+       DOS CONCEPTOS CENTRALES
+       ===================================================== */
+
+    .woman-two-grid {
       display: grid;
 
       grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+        repeat(2, minmax(0,1fr));
 
       gap: 18px;
     }
 
-    .woman-foundation-card {
-      min-height: 300px;
+    .woman-concept-card {
+      min-height: 310px;
 
       padding: 32px;
 
-      border: 1px solid var(--line);
+      border: 1px solid var(--woman-line);
       border-radius: 22px;
 
       background:
         linear-gradient(
           180deg,
-          rgba(24, 13, 13, .96),
-          rgba(14, 8, 8, .95)
+          rgba(24,13,13,.96),
+          rgba(14,8,8,.95)
         );
     }
 
-    .woman-foundation-card h2 {
+    .woman-concept-card h2 {
       margin: 0 0 18px;
 
-      color: var(--accent-light);
+      color: var(--woman-accent2);
 
-      font-size: clamp(1.65rem, 2.5vw, 2.2rem);
+      font-size: clamp(1.7rem, 2.7vw, 2.25rem);
       line-height: 1.12;
 
-      letter-spacing: -.025em;
+      letter-spacing: -.03em;
+
+      font-weight: 900;
     }
 
-    .woman-foundation-card p {
+    .woman-concept-card p {
       margin: 0;
 
-      color: var(--muted);
+      color: var(--woman-muted);
 
       font-size: 1rem;
       line-height: 1.75;
     }
 
-    /* INGREDIENTS */
 
-    .woman-ingredients-grid {
+    /* =====================================================
+       INGREDIENTES — TODOS SIGUEN SIENDO ENLACES
+       ===================================================== */
+
+    .woman-ingredient-grid {
       display: grid;
 
       grid-template-columns:
-        repeat(4, minmax(0, 1fr));
+        repeat(4, minmax(0,1fr));
 
       gap: 16px;
     }
 
     .woman-ingredient-card {
-      min-height: 150px;
+      min-height: 158px;
 
       display: flex;
       align-items: flex-end;
 
       padding: 24px;
 
-      border: 1px solid var(--line);
+      text-decoration: none;
+
+      border: 1px solid var(--woman-line);
       border-radius: 20px;
 
       background:
         radial-gradient(
-          circle at 90% 15%,
-          rgba(230, 160, 107, .09),
+          circle at 88% 12%,
+          rgba(230,160,107,.10),
           transparent 10rem
         ),
         linear-gradient(
           180deg,
-          rgba(24, 13, 13, .96),
-          rgba(14, 8, 8, .95)
+          rgba(24,13,13,.96),
+          rgba(14,8,8,.95)
         );
+
+      transition:
+        transform .18s ease,
+        border-color .18s ease,
+        background .18s ease;
+    }
+
+    .woman-ingredient-card:hover,
+    .woman-ingredient-card:focus-visible {
+      transform: translateY(-3px);
+
+      border-color: rgba(230,160,107,.56);
+
+      background: rgba(36,16,16,.90);
+
+      outline: none;
     }
 
     .woman-ingredient-card span {
-      color: var(--text);
+      color: var(--woman-text);
 
-      font-size: 1.04rem;
-      line-height: 1.3;
+      font-size: 1.06rem;
+      line-height: 1.32;
 
-      font-weight: 800;
+      font-weight: 850;
     }
 
-    /* ALWAYS-PRESENT CONTEXT */
+
+    /* =====================================================
+       CONTEXTO — 3 TARJETAS, TODAS ENLACES
+       ===================================================== */
 
     .woman-context-grid {
       display: grid;
 
       grid-template-columns:
-        repeat(3, minmax(0, 1fr));
+        repeat(3, minmax(0,1fr));
 
       gap: 18px;
     }
 
     .woman-context-card {
-      min-height: 290px;
+      min-height: 320px;
+
+      display: block;
 
       padding: 30px;
 
-      border: 1px solid var(--line);
+      text-decoration: none;
+
+      border: 1px solid var(--woman-line);
       border-radius: 22px;
 
       background:
         linear-gradient(
           180deg,
-          rgba(24, 13, 13, .96),
-          rgba(14, 8, 8, .95)
+          rgba(24,13,13,.96),
+          rgba(14,8,8,.95)
         );
+
+      transition:
+        transform .18s ease,
+        border-color .18s ease,
+        background .18s ease;
+    }
+
+    .woman-context-card:hover,
+    .woman-context-card:focus-visible {
+      transform: translateY(-3px);
+
+      border-color: rgba(230,160,107,.56);
+
+      background: rgba(36,16,16,.90);
+
+      outline: none;
     }
 
     .woman-context-number {
-      margin-bottom: 28px;
+      margin-bottom: 26px;
 
-      color: var(--accent);
+      color: var(--woman-accent);
 
       font-size: .78rem;
       font-weight: 900;
@@ -589,7 +571,7 @@
     .woman-context-card h3 {
       margin: 0 0 14px;
 
-      color: var(--accent-light);
+      color: var(--woman-accent2);
 
       font-size: 1.35rem;
       line-height: 1.2;
@@ -600,19 +582,22 @@
     .woman-context-card p {
       margin: 0;
 
-      color: var(--muted);
+      color: var(--woman-muted);
 
       font-size: .96rem;
       line-height: 1.65;
     }
 
-    /* CAN / CANNOT */
+
+    /* =====================================================
+       CAN / CANNOT
+       ===================================================== */
 
     .woman-can-grid {
       display: grid;
 
       grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+        repeat(2, minmax(0,1fr));
 
       gap: 18px;
     }
@@ -625,23 +610,23 @@
       background:
         linear-gradient(
           180deg,
-          rgba(24, 13, 13, .96),
-          rgba(14, 8, 8, .95)
+          rgba(24,13,13,.96),
+          rgba(14,8,8,.95)
         );
     }
 
     .woman-can-card.can {
-      border: 1px solid rgba(100, 180, 100, .38);
+      border: 1px solid rgba(100,180,100,.38);
     }
 
     .woman-can-card.cannot {
-      border: 1px solid rgba(180, 100, 100, .38);
+      border: 1px solid rgba(180,100,100,.38);
     }
 
     .woman-can-card h2 {
       margin: 0 0 24px;
 
-      color: var(--text);
+      color: var(--woman-text);
 
       font-size: clamp(1.5rem, 2.5vw, 2rem);
       line-height: 1.1;
@@ -660,10 +645,9 @@
       position: relative;
 
       margin-bottom: 14px;
-
       padding-left: 28px;
 
-      color: var(--muted);
+      color: var(--woman-muted);
 
       font-size: .96rem;
       line-height: 1.6;
@@ -697,67 +681,126 @@
       font-weight: 900;
     }
 
-    /* CLOSING */
+
+    /* =====================================================
+       CIERRE Y FUENTES
+       ===================================================== */
 
     .woman-closing {
       padding: 78px 0 86px;
     }
 
     .woman-closing-box {
-      padding: 48px;
+      padding: 46px;
 
       text-align: center;
 
-      border: 1px solid var(--line);
+      border: 1px solid var(--woman-line);
       border-radius: 28px;
 
       background:
         radial-gradient(
           circle at center,
-          rgba(148, 61, 50, .12),
+          rgba(148,61,50,.11),
           transparent 28rem
         ),
         linear-gradient(
           135deg,
-          rgba(36, 16, 16, .88),
-          rgba(8, 5, 5, .92)
+          rgba(36,16,16,.88),
+          rgba(8,5,5,.92)
         );
 
-      box-shadow: var(--shadow);
+      box-shadow: var(--woman-shadow);
     }
 
-    .woman-closing-box p {
+    .closing-claim {
       max-width: 850px;
 
-      margin: 0 auto;
+      margin: 0 auto 30px;
 
-      color: var(--accent-light);
+      color: var(--woman-accent2);
 
       font-size: clamp(1.7rem, 3.5vw, 3rem);
       line-height: 1.25;
 
-      font-weight: 900;
-
       letter-spacing: -.03em;
+
+      font-weight: 900;
     }
 
-    /* FOOTER */
+    .source-links {
+      max-width: 940px;
+
+      margin: 0 auto 28px;
+
+      color: var(--woman-soft);
+
+      font-size: .86rem;
+      line-height: 1.8;
+    }
+
+    .source-links a {
+      color: var(--woman-accent);
+
+      text-decoration: none;
+    }
+
+    .source-links a:hover,
+    .source-links a:focus-visible {
+      color: var(--woman-accent2);
+      text-decoration: underline;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 46px;
+
+      padding: 0 20px;
+
+      border: 1px solid rgba(230,160,107,.55);
+      border-radius: 999px;
+
+      background: rgba(190,122,72,.12);
+
+      color: var(--woman-accent2);
+
+      font-weight: 800;
+
+      text-decoration: none;
+    }
+
+    .cta-button:hover,
+    .cta-button:focus-visible {
+      background: rgba(190,122,72,.24);
+      outline: none;
+    }
+
+
+    /* =====================================================
+       FOOTER — NO ESTÁ ENCAJONADO
+       ===================================================== */
 
     #botia-footer {
       width: 100%;
     }
 
-    /* RTL */
+
+    /* =====================================================
+       RTL
+       ===================================================== */
 
     body[dir="rtl"] .woman-hero-grid {
       direction: rtl;
     }
 
-    body[dir="rtl"] .woman-foundation-card,
+    body[dir="rtl"] .woman-why-box,
+    body[dir="rtl"] .woman-concept-card,
     body[dir="rtl"] .woman-ingredient-card,
     body[dir="rtl"] .woman-context-card,
-    body[dir="rtl"] .woman-can-card,
-    body[dir="rtl"] .woman-statement-box {
+    body[dir="rtl"] .woman-can-card {
       text-align: right;
     }
 
@@ -771,13 +814,16 @@
       right: 0;
     }
 
-    /* RESPONSIVE */
+
+    /* =====================================================
+       RESPONSIVE
+       ===================================================== */
 
     @media (max-width: 1000px) {
 
-      .woman-ingredients-grid {
+      .woman-ingredient-grid {
         grid-template-columns:
-          repeat(2, minmax(0, 1fr));
+          repeat(2, minmax(0,1fr));
       }
     }
 
@@ -785,7 +831,7 @@
 
       .woman-hero-grid {
         grid-template-columns:
-          minmax(0, 1fr)
+          minmax(0,1fr)
           320px;
 
         gap: 35px;
@@ -807,22 +853,20 @@
 
     @media (max-width: 700px) {
 
-      .woman-wrap,
-      .woman-topbar-inner {
+      .woman-wrap {
         width: min(100% - 30px, 1180px);
       }
 
-      .woman-hero {
+      .hero {
         padding: 48px 0 44px;
       }
 
       .woman-hero-grid {
         grid-template-columns: 1fr;
-
         gap: 26px;
       }
 
-      .woman-hero h1 {
+      .hero h1 {
         font-size: clamp(2.7rem, 13vw, 4.4rem);
       }
 
@@ -830,12 +874,12 @@
         min-height: 300px;
       }
 
-      .woman-main-icon {
+      .woman-icon-stage .hero-logo {
         width: min(235px, 70%);
       }
 
-      .woman-foundation-grid,
-      .woman-ingredients-grid,
+      .woman-two-grid,
+      .woman-ingredient-grid,
       .woman-can-grid {
         grid-template-columns: 1fr;
       }
@@ -844,16 +888,16 @@
         padding: 54px 0;
       }
 
-      .woman-statement {
+      .woman-why {
         padding: 58px 0;
       }
 
-      .woman-statement-box,
+      .woman-why-box,
       .woman-closing-box {
         padding: 30px 26px;
       }
 
-      .woman-foundation-card,
+      .woman-concept-card,
       .woman-context-card {
         min-height: 0;
       }
@@ -863,76 +907,99 @@
   <script src="/botia/assets/js/menu.js"></script>
 </head>
 
-<body data-botia-module="woman">
 
-  <header class="woman-topbar">
+<body
+  class="has-botia-header botia-info-page"
+  data-botia-module="woman"
+>
 
-    <div class="woman-topbar-inner">
+  <!-- MENÚ / CABECERA EXISTENTE -->
 
-      <button
-        id="menuBtn"
-        aria-label="Menu"
-      >
-        ☰
-      </button>
+  <button
+    aria-label="Menu"
+    id="menuBtn"
+  >
+    ☰
+  </button>
 
-      <a
-        class="woman-wordmark"
-        href="/"
-      >
-        BOTIA
+  <div class="botia-header-bar">
+
+    <div class="botia-nav-left">
+
+      <a href="/">
+        <img
+          alt="BOTIA"
+          class="nav-logo"
+          src="/botia_jar_512.png"
+          style="width:28px;height:28px;"
+        >
       </a>
-
-      <div class="woman-spacer"></div>
-
-      <div class="lang-switcher woman-lang-pill">
-
-        <label
-          for="lang-select"
-          style="
-            position:absolute;
-            width:1px;
-            height:1px;
-            overflow:hidden;
-            clip:rect(0,0,0,0);
-          "
-        >
-          Select language
-        </label>
-
-        <select
-          id="lang-select"
-          aria-label="Select language"
-          onchange="cambiarIdioma(this.value)"
-        >
-          <option value="en">English</option>
-          <option value="ar">العربية</option>
-          <option value="de">Deutsch</option>
-          <option value="es">Español</option>
-          <option value="fr">Français</option>
-          <option value="id">Bahasa Indonesia</option>
-          <option value="it">Italiano</option>
-          <option value="nl">Nederlands</option>
-          <option value="pl">Polski</option>
-          <option value="pt">Português</option>
-          <option value="ro">Română</option>
-          <option value="ru">Русский</option>
-          <option value="tr">Türkçe</option>
-          <option value="zh">中文</option>
-        </select>
-
-      </div>
 
     </div>
 
-  </header>
+    <div class="lang-switcher">
+
+      <label
+        class="sr-only"
+        for="lang-select"
+        style="
+          position:absolute;
+          width:1px;
+          height:1px;
+          overflow:hidden;
+          clip:rect(0,0,0,0);
+        "
+      >
+        Select language
+      </label>
+
+      <select
+        id="lang-select"
+        aria-label="Select language"
+        onchange="cambiarIdioma(this.value)"
+      >
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="it">Italiano</option>
+        <option value="nl">Nederlands</option>
+        <option value="pl">Polski</option>
+        <option value="pt">Português</option>
+        <option value="ro">Română</option>
+        <option value="ru">Русский</option>
+        <option value="tr">Türkçe</option>
+        <option value="zh">中文</option>
+      </select>
+
+    </div>
+
+  </div>
+
+
+  <a
+    class="skip-link"
+    href="#main-content"
+    style="
+      position:absolute;
+      left:-9999px;
+      top:auto;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+    "
+  >
+    Skip to main content
+  </a>
 
 
   <main id="main-content">
 
     <!-- HERO -->
 
-    <section class="woman-hero">
+    <section class="hero">
 
       <div class="woman-wrap woman-hero-grid">
 
@@ -959,16 +1026,14 @@
         </div>
 
 
-        <div
-          class="woman-icon-stage"
-          aria-hidden="true"
-        >
+        <div class="woman-icon-stage">
 
           <img
-            class="woman-main-icon"
+            class="hero-logo"
             src="/botia/assets/mujer.png"
-            alt=""
+            alt="BOTIA Woman module — scientific evidence specific to women's biology"
             fetchpriority="high"
+            onerror="this.src='/botia/assets/mujer.png'; this.onerror=null;"
           >
 
         </div>
@@ -980,11 +1045,11 @@
 
     <!-- WHY -->
 
-    <section class="woman-statement">
+    <section class="woman-why">
 
       <div class="woman-wrap">
 
-        <div class="woman-statement-box">
+        <div class="woman-why-box">
 
           <h2 id="why_title">
             Why Woman exists in BOTIA
@@ -1001,13 +1066,13 @@
     </section>
 
 
-    <!-- FOUNDATIONS -->
+    <!-- DOS CONCEPTOS -->
 
     <section class="woman-section woman-section-alt">
 
-      <div class="woman-wrap woman-foundation-grid">
+      <div class="woman-wrap woman-two-grid">
 
-        <article class="woman-foundation-card">
+        <article class="woman-concept-card">
 
           <h2 id="not_pregnancy_title">
             Woman is not a life stage
@@ -1020,7 +1085,7 @@
         </article>
 
 
-        <article class="woman-foundation-card">
+        <article class="woman-concept-card">
 
           <h2 id="two_types_title">
             Two types of signals
@@ -1037,7 +1102,7 @@
     </section>
 
 
-    <!-- INGREDIENTS -->
+    <!-- INGREDIENTES -->
 
     <section class="woman-section">
 
@@ -1056,55 +1121,86 @@
         </div>
 
 
-        <div class="woman-ingredients-grid">
+        <div class="woman-ingredient-grid">
 
-          <article class="woman-ingredient-card">
+          <a
+            class="woman-ingredient-card"
+            href="/ingredients/bpa.html"
+          >
             <span id="ingredient_bpa">
               Bisphenol A
             </span>
-          </article>
+          </a>
 
-          <article class="woman-ingredient-card">
+
+          <a
+            class="woman-ingredient-card"
+            href="/ingredients/phthalates.html"
+          >
             <span id="ingredient_phthalates">
               Phthalates
             </span>
-          </article>
+          </a>
 
-          <article class="woman-ingredient-card">
+
+          <a
+            class="woman-ingredient-card"
+            href="/ingredients/parabens.html"
+          >
             <span id="ingredient_parabens">
               Parabens
             </span>
-          </article>
+          </a>
 
-          <article class="woman-ingredient-card">
+
+          <a
+            class="woman-ingredient-card"
+            href="/ingredients/bha.html"
+          >
             <span id="ingredient_bha">
               Butylated hydroxyanisole
             </span>
-          </article>
+          </a>
 
-          <article class="woman-ingredient-card">
+
+          <a
+            class="woman-ingredient-card"
+            href="/ingredients/bht.html"
+          >
             <span id="ingredient_bht">
               Butylated hydroxytoluene
             </span>
-          </article>
+          </a>
 
-          <article class="woman-ingredient-card">
+
+          <a
+            class="woman-ingredient-card"
+            href="/ingredients/e171.html"
+          >
             <span id="ingredient_e171">
               E171
             </span>
-          </article>
+          </a>
 
-          <article class="woman-ingredient-card">
+
+          <a
+            class="woman-ingredient-card"
+            href="/ingredients/alcohol.html"
+          >
             <span id="ingredient_alcohol">
               Alcohol
             </span>
-          </article>
+          </a>
 
-          <article class="woman-ingredient-card">
+
+          <a
+            class="woman-ingredient-card"
+            href="/ingredients/trans_fats.html"
+          >
             <span id="ingredient_trans_fats">
               Trans fatty acids
             </span>
-          </article>
+          </a>
 
         </div>
 
@@ -1113,7 +1209,7 @@
     </section>
 
 
-    <!-- CONTEXT -->
+    <!-- CONTEXTO SIEMPRE PRESENTE -->
 
     <section class="woman-section woman-section-alt">
 
@@ -1134,7 +1230,10 @@
 
         <div class="woman-context-grid">
 
-          <article class="woman-context-card">
+          <a
+            class="woman-context-card"
+            href="/ingredients/endocrine-disruptors.html"
+          >
 
             <div class="woman-context-number">
               01
@@ -1148,10 +1247,13 @@
               Interacting with hormones isn't the same as disrupting them. A substance counts as a disruptor only when that interaction causes harm — and that has to be shown, not assumed. Risk also depends on exposure, not on being a woman.
             </p>
 
-          </article>
+          </a>
 
 
-          <article class="woman-context-card">
+          <a
+            class="woman-context-card"
+            href="/ingredients/packaging-migrants.html"
+          >
 
             <div class="woman-context-number">
               02
@@ -1165,10 +1267,13 @@
               Chemical compounds that transfer from packaging into food — BPA, phthalates, PFAS. They do not appear on the ingredient list but enter the body through food.
             </p>
 
-          </article>
+          </a>
 
 
-          <article class="woman-context-card">
+          <a
+            class="woman-context-card"
+            href="/ingredients/fat-accumulation.html"
+          >
 
             <div class="woman-context-number">
               03
@@ -1182,7 +1287,7 @@
               Some persistent, fat-soluble contaminants — including dioxins and dioxin-like PCBs — can build up in body fat in both sexes. Pregnancy and breastfeeding matter because some of these compounds can reach the fetus or infant.
             </p>
 
-          </article>
+          </a>
 
         </div>
 
@@ -1251,7 +1356,7 @@
     </section>
 
 
-    <!-- CLOSING -->
+    <!-- CIERRE, FUENTES Y BACK -->
 
     <section class="woman-closing">
 
@@ -1259,9 +1364,68 @@
 
         <div class="woman-closing-box">
 
-          <p id="closing">
+          <p
+            class="closing-claim"
+            id="closing"
+          >
             The science exists. BOTIA makes it visible.
           </p>
+
+
+          <p class="source-links">
+
+            <span id="sources-label">
+              Sources:
+            </span>
+
+            <a
+              href="https://www.who.int/publications/i/item/9789241505031"
+              target="_blank"
+              rel="noopener"
+            >
+              WHO/UNEP Endocrine Disruptors
+            </a>
+
+            ·
+
+            <a
+              href="https://www.efsa.europa.eu/en/efsajournal/pub/6857"
+              target="_blank"
+              rel="noopener"
+            >
+              EFSA BPA (2023)
+            </a>
+
+            ·
+
+            <a
+              href="https://monographs.iarc.who.int/"
+              target="_blank"
+              rel="noopener"
+            >
+              IARC Classifications
+            </a>
+
+            ·
+
+            <a
+              href="https://www.efsa.europa.eu/en/efsajournal/pub/5838"
+              target="_blank"
+              rel="noopener"
+            >
+              EFSA Phthalates (2019)
+            </a>
+
+          </p>
+
+
+          <a
+            class="cta-button"
+            href="/"
+            id="back-to-botia"
+          >
+            ← Back to BOTIA
+          </a>
 
         </div>
 
@@ -1272,9 +1436,11 @@
   </main>
 
 
+  <!-- SISTEMAS COMUNES QUE YA EXISTEN EN BOTIA -->
+
   <script
     defer
-    src="/botia/assets/js/i18n-loader.js"
+    src="/botia/assets/js/i18n-loader.js?v=20260817-1444"
   ></script>
 
   <script src="/botia/assets/js/botia-chat.js"></script>
