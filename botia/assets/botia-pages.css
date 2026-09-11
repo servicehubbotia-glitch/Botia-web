@@ -314,3 +314,24 @@ body[dir="rtl"] .botia-header-trigger {
 body[dir="rtl"] .botia-trigger-caption {
   text-align: center;
 }
+
+/* ============================================
+   BOTIA — PÁGINAS PRINCIPALES SIN ICONO HERO
+   ============================================ */
+
+body.botia-main-page .hero .hero-logo {
+  display: none !important;
+}
+
+body.botia-main-page .hero {
+  padding-top: 42px;
+  padding-bottom: 30px;
+}
+
+body.botia-main-page .hero h1 {
+  margin-top: 0;
+}
+
+body.botia-main-page .hero .subtitle {
+  margin-top: 8px;
+}
