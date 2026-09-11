@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>BOTIA — Page not found</title>
+<meta name="description" content="The page you are looking for does not exist.">
+<meta name="robots" content="noindex, follow">
+
+<link rel="canonical" href="https://www.botia-safefood.com/404.html">
+<link rel="icon" href="/botia_jar_512.png" type="image/png">
+
+<link rel="stylesheet" href="/botia/assets/menu.css">
+<link rel="stylesheet" href="/botia/assets/footer.css">
+
+<script src="/botia/assets/js/menu.js"></script>
+
+<style>
+:root{
+  --bg:#080505;
+  --text:#f2e4dc;
+  --muted:#c0a08c;
+  --soft:#8a8a8a;
+  --accent:#e6a06b;
+  --accent-light:#ffd8bd;
+  --line:rgba(190,122,72,.28);
+  --shadow:0 18px 60px rgba(0,0,0,.38);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  background:
+    radial-gradient(circle at 20% 5%,rgba(100,28,35,.15),transparent 34rem),
+    radial-gradient(circle at 80% 20%,rgba(138,74,37,.10),transparent 30rem),
+    linear-gradient(180deg,#0a0606,#080505 50%,#0d0808);
+}
+
+a{color:inherit}
+
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(8,5,5,.90);
+  -webkit-backdrop-filter:blur(14px);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(190,122,72,.16);
+}
+
+.topbar-inner,
+.wrap{
+  width:min(1180px,calc(100% - 40px));
+  margin:0 auto;
+}
+
+.topbar-inner{
+  min-height:68px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+#menuBtn{
+  position:static;
+  flex:0 0 42px;
+}
+
+.wordmark{
+  color:var(--accent);
+  font-weight:900;
+  letter-spacing:.14em;
+  text-decoration:none;
+}
+
+.spacer{flex:1}
+
+.lang-switcher{position:static}
+
+.lang-pill{
+  display:flex;
+  align-items:center;
+  padding:5px 10px 5px 12px;
+  border:1px solid rgba(190,122,72,.38);
+  border-radius:999px;
+  background:rgba(24,13,13,.92);
+}
+
+.lang-pill select{
+  color:var(--text);
+  background:transparent;
+  border:0;
+  outline:0;
+  padding:5px 2px;
+  cursor:pointer;
+}
+
+.lang-pill option{
+  background:#180d0d;
+  color:#f2e4dc;
+}
+
+main{
+  flex:1;
+  display:flex;
+  align-items:center;
+}
+
+.hero{
+  padding:88px 0;
+  width:100%;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:60px;
+  align-items:center;
+}
+
+.kicker{
+  color:var(--accent);
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+
+h1{
+  margin:0 0 18px;
+  font-size:clamp(3rem,7vw,6rem);
+  line-height:.92;
+  letter-spacing:-.055em;
+  font-weight:900;
+}
+
+h1 .code{
+  display:block;
+  color:var(--accent-light);
+}
+
+.subtitle{
+  margin:0 0 32px;
+  color:var(--muted);
+  font-size:1.08rem;
+  line-height:1.75;
+  max-width:560px;
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:0 22px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:800;
+  font-size:.95rem;
+  border:1px solid rgba(230,160,107,.55);
+  transition:opacity .15s ease;
+}
+
+.btn:hover{opacity:.82}
+
+.btn-primary{
+  background:var(--accent);
+  color:#100707;
+}
+
+.btn-secondary{
+  background:rgba(190,122,72,.12);
+  color:var(--accent-light);
+}
+
+.icon-stage{
+  min-height:380px;
+  border:1px solid var(--line);
+  border-radius:30px;
+  background:linear-gradient(145deg,rgba(36,16,16,.94),rgba(8,5,5,.82));
+  display:grid;
+  place-items:center;
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.icon-stage::before,
+.icon-stage::after{
+  content:"";
+  position:absolute;
+  width:240px;
+  height:240px;
+  border:1px solid rgba(230,160,107,.10);
+  border-radius:50%;
+}
+
+.icon-stage::before{left:-80px;top:-80px}
+.icon-stage::after{right:-100px;bottom:-110px}
+
+.icon-stage img{
+  width:min(260px,68%);
+  height:auto;
+  position:relative;
+  z-index:2;
+  filter:drop-shadow(0 18px 28px rgba(0,0,0,.35));
+  opacity:.7;
+}
+
+body[dir="rtl"] .hero-grid{direction:rtl}
+body[dir="rtl"] .subtitle{text-align:right}
+body[dir="rtl"] .kicker{text-align:right}
+
+@media(max-width:900px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:36px;
+  }
+  .icon-stage{
+    min-height:280px;
+    order:-1;
+  }
+  .icon-stage img{width:min(200px,55%)}
+}
+
+@media(max-width:620px){
+  .topbar-inner,.wrap{width:min(100% - 28px,1180px)}
+  .hero{padding:56px 0}
+  h1{font-size:clamp(3rem,14vw,5rem)}
+}
+</style>
+</head>
+
+<body data-botia-module="404">
+
+<a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <button id="menuBtn" aria-label="Menu">☰</button>
+    <a class="wordmark" href="/">BOTIA</a>
+    <div class="spacer"></div>
+    <div class="lang-switcher lang-pill">
+      <label for="lang-select" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+      <select id="lang-select" aria-label="Select language" onchange="cambiarIdioma(this.value)">
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="it">Italiano</option>
+        <option value="nl">Nederlands</option>
+        <option value="pl">Polski</option>
+        <option value="pt">Português</option>
+        <option value="ro">Română</option>
+        <option value="ru">Русский</option>
+        <option value="tr">Türkçe</option>
+        <option value="zh">中文</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker" id="f404_kicker">404</div>
+        <h1>
+          <span id="f404_title">Page not found.</span>
+          <span class="code" id="f404_subtitle">The label was blank.</span>
+        </h1>
+        <p class="subtitle" id="f404_body">This URL does not exist. The ingredient you were looking for may have moved or the link may be incorrect.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/" id="f404_home_link">Back to BOTIA</a>
+          <a class="btn btn-secondary" href="/ingredients/index.html" id="f404_index_link">Ingredient Index</a>
+        </div>
+      </div>
+
+      <div class="icon-stage" aria-hidden="true">
+        <img src="/botia_jar_512.png" alt="">
+      </div>
+    </div>
+  </section>
+</main>
+
+<script defer src="/botia/assets/js/i18n-loader.js"></script>
+<script src="/botia/assets/js/botia-chat.js"></script>
+<script src="/botia/assets/js/footer.js?v=20260817-1502"></script>
+
+</body>
+</html>
