@@ -1,91 +1,233 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>BOTIA — Evidence Layers</title>
-<meta content="BOTIA — Evidence Layers" property="og:title"/>
-<meta content="BOTIA evidence-based modules are grounded in scientific and regulatory data from WHO, EFSA, FDA, and Codex Alimentarius." property="og:description"/>
-<meta content="https://www.botia-safefood.com/botia_jar_512.png" property="og:image"/>
-<meta content="https://www.botia-safefood.com/pages/evidence.html" property="og:url"/>
-<meta content="website" property="og:type"/>
-<meta content="summary" name="twitter:card"/>
-<meta content="BOTIA — Evidence Layers" name="twitter:title"/>
-<meta content="BOTIA evidence-based modules are grounded in scientific and regulatory data from WHO, EFSA, FDA, and Codex Alimentarius." name="twitter:description"/>
-<meta content="https://www.botia-safefood.com/botia_jar_512.png" name="twitter:image"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html" rel="canonical"/>
-<meta content="BOTIA evidence-based modules are grounded in scientific and regulatory data from WHO, EFSA, FDA, and Codex Alimentarius." name="description">
-<link href="https://www.who.int" rel="dns-prefetch"/>
-<link href="https://www.efsa.europa.eu" rel="dns-prefetch"/>
-<link href="https://eur-lex.europa.eu" rel="dns-prefetch"/>
-<link href="https://www.fao.org" rel="dns-prefetch"/>
-<link href="https://www.who.int" rel="preconnect"/>
-<link href="https://www.efsa.europa.eu" rel="preconnect"/>
-<link href="https://eur-lex.europa.eu" rel="preconnect"/>
-<link href="https://www.fao.org" rel="preconnect"/>
-<link href="/botia_jar_512.png" rel="icon" type="image/png">
-<link as="style" href="/botia-landing.css" rel="preload"/>
-<link href="/botia-landing.css" rel="stylesheet">
-<link as="style" href="/botia/assets/botia-pages.css" rel="preload"/>
-<link href="/botia/assets/botia-pages.css" rel="stylesheet">
-<style>
-    .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
-    .hero { padding: 12px 0 0; text-align: center; }
-    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
-    .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
-    .description { font-size: 0.9rem; color: #8a8a8a; }
-    .section { margin-bottom: 14px; }
-    .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
-    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.5; }
-    .evidence-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 12px; margin: 20px 0;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BOTIA — Evidence Layers</title>
+  <meta
+    name="description"
+    content="These modules are based on scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius."
+  >
+
+  <link
+    rel="canonical"
+    href="https://www.botia-safefood.com/pages/evidence.html"
+  >
+
+  <link
+    rel="icon"
+    href="/botia_jar_512.png"
+    type="image/png"
+  >
+
+  <!-- idiomas -->
+  <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/pages/evidence.html?lang=en">
+  <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/pages/evidence.html?lang=es">
+  <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/pages/evidence.html?lang=ar">
+  <link rel="alternate" hreflang="de" href="https://www.botia-safefood.com/pages/evidence.html?lang=de">
+  <link rel="alternate" hreflang="fr" href="https://www.botia-safefood.com/pages/evidence.html?lang=fr">
+  <link rel="alternate" hreflang="nl" href="https://www.botia-safefood.com/pages/evidence.html?lang=nl">
+  <link rel="alternate" hreflang="it" href="https://www.botia-safefood.com/pages/evidence.html?lang=it">
+  <link rel="alternate" hreflang="pt" href="https://www.botia-safefood.com/pages/evidence.html?lang=pt">
+  <link rel="alternate" hreflang="pl" href="https://www.botia-safefood.com/pages/evidence.html?lang=pl">
+  <link rel="alternate" hreflang="ro" href="https://www.botia-safefood.com/pages/evidence.html?lang=ro">
+  <link rel="alternate" hreflang="ru" href="https://www.botia-safefood.com/pages/evidence.html?lang=ru">
+  <link rel="alternate" hreflang="tr" href="https://www.botia-safefood.com/pages/evidence.html?lang=tr">
+  <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/pages/evidence.html?lang=zh">
+  <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/pages/evidence.html?lang=id">
+  <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/pages/evidence.html">
+
+  <link rel="stylesheet" href="/botia/assets/menu.css">
+  <link rel="stylesheet" href="/botia/assets/footer.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "BOTIA — Evidence Layers",
+    "description": "These modules are based on scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius.",
+    "url": "https://www.botia-safefood.com/pages/evidence.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BOTIA",
+      "url": "https://www.botia-safefood.com"
     }
-    .evidence-card {
-      background: rgba(24, 13, 13, 0.9); border: 1px solid rgba(190, 122, 72, 0.25);
-      border-radius: 12px; padding: 20px; text-align: center; text-decoration: none;
-      color: #f2e4dc; transition: border-color 0.2s;
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #080505;
+      --bg-soft: #100707;
+
+      --panel: #180d0d;
+      --panel-strong: #241010;
+
+      --text: #f2e4dc;
+      --muted: #c0a08c;
+      --soft: #8a8a8a;
+
+      --accent: #e6a06b;
+      --accent-light: #ffd8bd;
+
+      --line: rgba(190, 122, 72, .28);
+      --line-strong: rgba(230, 160, 107, .48);
+
+      --shadow: 0 18px 60px rgba(0, 0, 0, .38);
     }
-    .evidence-card:hover { border-color: rgba(190, 122, 72, 0.6); }
-    .evidence-card img { width: 48px; height: 48px; margin-bottom: 10px; }
-    .evidence-card .card-title { font-weight: 700; font-size: 1rem; margin-bottom: 4px; color: #f2e4dc; }
-    .evidence-card .card-desc { font-size: 0.8rem; color: #8a8a8a; line-height: 1.4; }
-    .can-cannot {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0;
+
+    * {
+      box-sizing: border-box;
     }
-    @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
-    .can-box, .cannot-box {
-      background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px;
+
+    html {
+      scroll-behavior: smooth;
     }
-    .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
-    .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
-    .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
-    .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
-    .can-box li, .cannot-box li {
-      margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c;
-      padding-left: 20px; position: relative;
+
+    body {
+      margin: 0;
+
+      color: var(--text);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+      background:
+        radial-gradient(
+          circle at 20% 5%,
+          rgba(100, 28, 35, .15),
+          transparent 34rem
+        ),
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(138, 74, 37, .10),
+          transparent 30rem
+        ),
+        linear-gradient(
+          180deg,
+          #0a0606,
+          #080505 50%,
+          #0d0808
+        );
+
+      overflow-x: hidden;
     }
-    .can-box li::before { content: "✅"; position: absolute; left: 0; }
-    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
-    .closing { text-align: center; padding: 20px 0; }
-    .cta-button {
-      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
-      padding: 10px 24px; border-radius: 8px; text-decoration: none;
-      border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
+
+    a {
+      color: inherit;
     }
-    .cta-button:hover { background: rgba(190,122,72,0.35); }
-    .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
-    .source-links a { color: #e6a06b; text-decoration: none; }
-    .source-links a:hover { text-decoration: underline; }
-    .hero + .section { margin-top: 0 !important; }
+
+    /* =====================================================
+       TOPBAR — MISMA LÓGICA QUE INDEX
+       ===================================================== */
+
+    .evidence-topbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(8, 5, 5, .90);
+
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+
+      border-bottom: 1px solid rgba(190, 122, 72, .16);
+    }
+
+    .evidence-topbar-inner {
+      width: min(1180px, calc(100% - 40px));
+      min-height: 68px;
+
+      margin: 0 auto;
+
+      display: flex;
+      align-items: center;
+
+      gap: 18px;
+    }
+
+    #menuBtn {
+      position: static;
+      flex: 0 0 42px;
+    }
+
+    .evidence-wordmark {
+      color: var(--accent);
+
+      font-weight: 900;
+      letter-spacing: .14em;
+
+      text-decoration: none;
+    }
+
+    .evidence-spacer {
+      flex: 1;
+    }
+
+    .lang-switcher {
+      position: static;
+    }
+
+    .evidence-lang-pill {
+      display: flex;
+      align-items: center;
+
+      padding: 5px 10px 5px 12px;
+
+      border: 1px solid rgba(190, 122, 72, .38);
+      border-radius: 999px;
+
+      background: rgba(24, 13, 13, .92);
+    }
+
+    .evidence-lang-pill select {
+      color: var(--text);
+      background: transparent;
+
+      border: 0;
+      outline: 0;
+
+      padding: 5px 2px;
+
+      cursor: pointer;
+    }
+
+    .evidence-lang-pill option {
+      background: #180d0d;
+      color: #f2e4dc;
+    }
+
+    /* =====================================================
+       CONTAINER
+       ===================================================== */
+
+    .evidence-wrap {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* =====================================================
+       HERO — MISMO PESO QUE INDEX
+       ===================================================== */
 
     .evidence-hero {
+      padding: 74px 0 58px;
+    }
+
+    .evidence-hero-grid {
       display: grid;
+
       grid-template-columns: 1.15fr .85fr;
+
       gap: 60px;
+
       align-items: center;
-      padding: 74px 0 48px;
     }
 
     .evidence-hero-copy {
@@ -93,231 +235,1107 @@
     }
 
     .evidence-hero h1 {
+      margin: 0 0 20px;
+
+      max-width: 900px;
+
+      color: var(--text);
+
       font-size: clamp(2.6rem, 5.8vw, 5.3rem);
       line-height: .95;
+
       letter-spacing: -.055em;
+
       font-weight: 900;
-      color: #f2e4dc;
-      margin: 0 0 18px;
     }
 
     .evidence-hero .subtitle {
-      font-size: 1.08rem;
-      line-height: 1.6;
-      color: #e6a06b;
-      font-weight: 700;
-      margin: 0 0 10px;
+      margin: 0 0 12px;
+
+      color: var(--accent);
+
+      font-size: 1.15rem;
+      line-height: 1.55;
+
+      font-weight: 800;
     }
 
     .evidence-hero .description {
+      max-width: 720px;
+
+      margin: 0;
+
+      color: var(--muted);
+
       font-size: 1.08rem;
       line-height: 1.75;
-      color: #c0a08c;
-      max-width: 720px;
-      margin: 0;
     }
 
-    .evidence-icon-stage {
-      min-height: 370px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* =====================================================
+       ICONO EVIDENCE — MISMO PESO QUE EL TARRO DE INDEX
+       ===================================================== */
 
-      border: 1px solid rgba(190,122,72,.28);
+    .evidence-icon-stage {
+      min-height: 410px;
+
+      position: relative;
+      overflow: hidden;
+
+      display: grid;
+      place-items: center;
+
+      border: 1px solid var(--line);
       border-radius: 30px;
 
       background:
-        radial-gradient(
-          circle at center,
-          rgba(230,160,107,.12),
-          transparent 65%
-        ),
-        rgba(24,13,13,.58);
+        linear-gradient(
+          145deg,
+          rgba(36, 16, 16, .94),
+          rgba(8, 5, 5, .82)
+        );
 
-      box-shadow: 0 18px 60px rgba(0,0,0,.38);
-
-      overflow: hidden;
+      box-shadow: var(--shadow);
     }
 
-    .evidence-icon-stage .hero-logo {
-      width: 270px !important;
-      height: 270px !important;
-      object-fit: contain !important;
+    .evidence-icon-stage::before,
+    .evidence-icon-stage::after {
+      content: "";
 
-      margin: 0 !important;
+      position: absolute;
 
-      animation: none !important;
-      transform: none !important;
+      width: 260px;
+      height: 260px;
+
+      border: 1px solid rgba(230, 160, 107, .10);
+      border-radius: 50%;
+    }
+
+    .evidence-icon-stage::before {
+      left: -90px;
+      top: -90px;
+    }
+
+    .evidence-icon-stage::after {
+      right: -110px;
+      bottom: -120px;
+    }
+
+    .evidence-main-icon {
+      width: min(300px, 72%);
+      height: auto;
+
+      position: relative;
+      z-index: 2;
+
+      object-fit: contain;
 
       filter:
         drop-shadow(
-          0 14px 32px
-          rgba(0,0,0,.50)
+          0 18px 28px
+          rgba(0, 0, 0, .35)
+        );
+
+      /* NADA DE MOVIMIENTO */
+      animation: none !important;
+      transform: none !important;
+    }
+
+    /* =====================================================
+       SECCIONES
+       ===================================================== */
+
+    .evidence-section {
+      padding: 72px 0;
+    }
+
+    .evidence-section-alt {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(17, 8, 8, .45),
+          rgba(36, 16, 16, .22)
         );
     }
 
-    @media (max-width: 760px) {
-      .evidence-hero {
-        grid-template-columns: 1fr;
-        gap: 28px;
+    .evidence-section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+
+      gap: 30px;
+
+      margin-bottom: 28px;
+    }
+
+    .evidence-section-head h2 {
+      max-width: 760px;
+
+      margin: 0;
+
+      color: var(--text);
+
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+
+      letter-spacing: -.04em;
+
+      font-weight: 900;
+    }
+
+    .evidence-section-head p {
+      max-width: 560px;
+
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    /* =====================================================
+       WHY / WHAT — DOS BLOQUES CON PESO
+       ===================================================== */
+
+    .evidence-foundation-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 18px;
+    }
+
+    .evidence-foundation-card {
+      min-height: 260px;
+
+      padding: 32px;
+
+      border: 1px solid var(--line);
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(24, 13, 13, .96),
+          rgba(14, 8, 8, .95)
+        );
+    }
+
+    .evidence-foundation-card h2 {
+      margin: 0 0 18px;
+
+      color: var(--accent-light);
+
+      font-size: clamp(1.65rem, 2.5vw, 2.2rem);
+      line-height: 1.12;
+
+      letter-spacing: -.025em;
+    }
+
+    .evidence-foundation-card p {
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    /* =====================================================
+       LAYER CARDS — IMPACTO DE INDEX
+       ===================================================== */
+
+    .evidence-layer-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+      gap: 16px;
+    }
+
+    .evidence-layer-card {
+      min-height: 300px;
+
+      display: flex;
+      flex-direction: column;
+
+      padding: 26px;
+
+      text-decoration: none;
+
+      border: 1px solid var(--line);
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(24, 13, 13, .96),
+          rgba(14, 8, 8, .95)
+        );
+
+      transition:
+        transform .18s ease,
+        border-color .18s ease,
+        background .18s ease;
+    }
+
+    .evidence-layer-card:hover,
+    .evidence-layer-card:focus-visible {
+      transform: translateY(-3px);
+
+      border-color: rgba(230, 160, 107, .56);
+
+      background:
+        rgba(36, 16, 16, .90);
+
+      outline: none;
+    }
+
+    .evidence-layer-card img {
+      width: 118px;
+      height: 118px;
+
+      margin: 0 0 22px;
+
+      object-fit: contain;
+
+      flex: 0 0 118px;
+
+      filter:
+        drop-shadow(
+          0 8px 18px
+          rgba(0, 0, 0, .35)
+        );
+    }
+
+    .evidence-layer-card h3 {
+      margin: 0 0 10px;
+
+      color: var(--text);
+
+      font-size: 1.18rem;
+      line-height: 1.2;
+
+      font-weight: 850;
+    }
+
+    .evidence-layer-card p {
+      margin: 0;
+
+      color: var(--soft);
+
+      font-size: .9rem;
+      line-height: 1.55;
+    }
+
+    /* =====================================================
+       DIFFERENCE — GRAN BLOQUE DE IMPACTO
+       ===================================================== */
+
+    .evidence-statement {
+      padding: 78px 0;
+    }
+
+    .evidence-statement-box {
+      padding: 44px;
+
+      border: 1px solid var(--line);
+      border-radius: 28px;
+
+      background:
+        radial-gradient(
+          circle at 15% 25%,
+          rgba(148, 61, 50, .11),
+          transparent 22rem
+        ),
+        linear-gradient(
+          135deg,
+          rgba(36, 16, 16, .88),
+          rgba(8, 5, 5, .90)
+        );
+
+      box-shadow: var(--shadow);
+    }
+
+    .evidence-statement-box h2 {
+      max-width: 850px;
+
+      margin: 0 0 18px;
+
+      color: var(--text);
+
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1.04;
+
+      letter-spacing: -.04em;
+
+      font-weight: 900;
+    }
+
+    .evidence-statement-box p {
+      max-width: 800px;
+
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    /* =====================================================
+       HOW — 3 PASOS VISUALES
+       ===================================================== */
+
+    .evidence-how-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+      gap: 18px;
+    }
+
+    .evidence-how-card {
+      min-height: 210px;
+
+      padding: 28px;
+
+      border: 1px solid var(--line);
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(24, 13, 13, .96),
+          rgba(14, 8, 8, .95)
+        );
+    }
+
+    .evidence-how-number {
+      margin-bottom: 25px;
+
+      color: var(--accent);
+
+      font-size: .78rem;
+      font-weight: 900;
+
+      letter-spacing: .15em;
+    }
+
+    .evidence-how-card p {
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: .98rem;
+      line-height: 1.65;
+    }
+
+    /* =====================================================
+       CAN / CANNOT
+       ===================================================== */
+
+    .evidence-can-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 18px;
+    }
+
+    .evidence-can-card {
+      padding: 32px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(24, 13, 13, .96),
+          rgba(14, 8, 8, .95)
+        );
+    }
+
+    .evidence-can-card.can {
+      border: 1px solid rgba(100, 180, 100, .38);
+    }
+
+    .evidence-can-card.cannot {
+      border: 1px solid rgba(180, 100, 100, .38);
+    }
+
+    .evidence-can-card h2 {
+      margin: 0 0 24px;
+
+      color: var(--text);
+
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      line-height: 1.1;
+
+      font-weight: 900;
+    }
+
+    .evidence-can-card ul {
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
+
+    .evidence-can-card li {
+      position: relative;
+
+      margin-bottom: 14px;
+
+      padding-left: 28px;
+
+      color: var(--muted);
+
+      font-size: .96rem;
+      line-height: 1.6;
+    }
+
+    .evidence-can-card li:last-child {
+      margin-bottom: 0;
+    }
+
+    .evidence-can-card.can li::before {
+      content: "✓";
+
+      position: absolute;
+      left: 0;
+
+      color: #8ed09a;
+
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+
+    .evidence-can-card.cannot li::before {
+      content: "×";
+
+      position: absolute;
+      left: 1px;
+
+      color: #e29b9b;
+
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+
+    /* =====================================================
+       FOOTER
+       NO VA DENTRO DE evidence-wrap
+       ===================================================== */
+
+    #botia-footer {
+      width: 100%;
+    }
+
+    /* =====================================================
+       RTL
+       ===================================================== */
+
+    body[dir="rtl"] .evidence-hero-grid {
+      direction: rtl;
+    }
+
+    body[dir="rtl"] .evidence-layer-card,
+    body[dir="rtl"] .evidence-foundation-card,
+    body[dir="rtl"] .evidence-how-card,
+    body[dir="rtl"] .evidence-can-card,
+    body[dir="rtl"] .evidence-statement-box {
+      text-align: right;
+    }
+
+    body[dir="rtl"] .evidence-can-card li {
+      padding-left: 0;
+      padding-right: 28px;
+    }
+
+    body[dir="rtl"] .evidence-can-card li::before {
+      left: auto;
+      right: 0;
+    }
+
+    /* =====================================================
+       RESPONSIVE
+       ===================================================== */
+
+    @media (max-width: 900px) {
+
+      .evidence-hero-grid {
+        grid-template-columns:
+          minmax(0, 1fr)
+          320px;
+
+        gap: 35px;
       }
 
       .evidence-icon-stage {
-        min-height: 260px;
+        min-height: 350px;
       }
 
-      .evidence-icon-stage .hero-logo {
-        width: 190px !important;
-        height: 190px !important;
+      .evidence-layer-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+      .evidence-section-head {
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      .evidence-wrap,
+      .evidence-topbar-inner {
+        width: min(100% - 30px, 1180px);
+      }
+
+      .evidence-hero {
+        padding: 48px 0 44px;
+      }
+
+      .evidence-hero-grid {
+        grid-template-columns: 1fr;
+
+        gap: 26px;
+      }
+
+      .evidence-hero h1 {
+        font-size: clamp(2.7rem, 13vw, 4.4rem);
+      }
+
+      .evidence-icon-stage {
+        min-height: 300px;
+      }
+
+      .evidence-main-icon {
+        width: min(235px, 70%);
+      }
+
+      .evidence-foundation-grid,
+      .evidence-layer-grid,
+      .evidence-how-grid,
+      .evidence-can-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .evidence-section {
+        padding: 54px 0;
+      }
+
+      .evidence-statement {
+        padding: 58px 0;
+      }
+
+      .evidence-statement-box {
+        padding: 30px 26px;
+      }
+
+      .evidence-layer-card {
+        min-height: 0;
       }
     }
   </style>
-<!-- JSON-LD añadido -->
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "BOTIA — Evidence Layers",
-    "description": "BOTIA evidence-based modules are grounded in scientific and regulatory data from WHO, EFSA, FDA, and Codex Alimentarius.",
-    "url": "https://www.botia-safefood.com/pages/evidence.html",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "BOTIA Food Transparency"
-    }
-  }
-  </script>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=en" hreflang="en" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=es" hreflang="es" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=ar" hreflang="ar" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=de" hreflang="de" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=fr" hreflang="fr" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=nl" hreflang="nl" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=it" hreflang="it" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=pt" hreflang="pt" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=pl" hreflang="pl" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=ro" hreflang="ro" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=ru" hreflang="ru" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=tr" hreflang="tr" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=zh" hreflang="zh" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html?lang=id" hreflang="id" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/evidence.html" hreflang="x-default" rel="alternate"/>
-<link href="/botia/assets/menu.css" rel="stylesheet"/>
-<script src="/botia/assets/js/menu.js"></script>
-<link href="/botia/assets/footer.css" rel="stylesheet"/>
+
+  <script src="/botia/assets/js/menu.js"></script>
 </head>
-<body class="has-botia-header botia-info-page" data-botia-module="evidence">
-<button aria-label="Menu" id="menuBtn">☰</button>
-<div class="botia-header-bar">
-<div class="botia-nav-left">
-<a href="/"><img alt="BOTIA" class="nav-logo" src="/botia_jar_512.png" style="width:28px;height:28px;"/></a>
-</div>
-<div class="lang-switcher">
-<label class="sr-only" for="lang-select" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
-<select aria-label="Select language" id="lang-select" onchange="cambiarIdioma(this.value)">
-<option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option>
-</select>
-</div>
-</div>
-<a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
-<main class="landing" id="main-content">
-<section class="hero evidence-hero">
-<div class="evidence-hero-copy">
-<h1 id="title">Evidence Layers</h1>
-<p class="subtitle" id="subtitle">What the label reveals. Grounded in science.</p>
-<p class="description" id="description">These modules are based on scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius. They explain what the evidence says, what BOTIA can detect, and what cannot be concluded from a label alone.</p>
-</div>
-<div class="evidence-icon-stage">
-<img alt="BOTIA Evidence Layers — scientific and regulatory evidence modules" class="hero-logo" fetchpriority="high" src="/botia/assets/evidence.png" onerror="this.src='/botia/assets/evidence.png'; this.onerror=null;"/>
-</div>
-</section>
-<section class="section">
-<h2 class="section-title" id="why_title">Why evidence matters</h2>
-<p class="section-intro" id="why_body">Food labels are legal documents before they are human explanations. An ingredient can be authorised, declared correctly, and still carry documented health implications that never appear on the packaging. BOTIA connects what the label says to what the science says.</p>
-</section>
-<section class="section">
-<h2 class="section-title" id="what_title">What 'evidence' means in BOTIA</h2>
-<p class="section-intro" id="what_body">BOTIA does not use opinions or trends. Every signal in these modules is grounded in published guidelines or scientific opinions from WHO, EFSA, FDA, IARC, or Codex Alimentarius. When the evidence is under review or contested, BOTIA says so. Uncertainty is part of the information.</p>
-</section>
-<section class="section">
-<h2 class="section-title" id="modules_title">Explore by evidence layer</h2>
-<div class="evidence-grid">
-<a class="evidence-card" href="/pages/hidden_sugars.html">
-<img alt="BOTIA Hidden Sugar — detects free sugars on food labels" onerror="this.src='/botia/assets/Sugar.png'" src="/botia/assets/Sugar.png" style="content-visibility:auto;">
-<div class="card-title" id="sugar_name">Sugar</div>
-<div class="card-desc" id="sugar_desc">Free sugars under WHO criteria, and rapidly digestible carbohydrates that behave similarly without being classified as such.</div>
-</a>
-<a class="evidence-card" href="/pages/not_sugar.html">
-<img alt="BOTIA Sweeteners — non-sugar sweeteners detection" onerror="this.src='/botia/assets/sweeteners.png'" src="/botia/assets/sweeteners.png" style="content-visibility:auto;">
-<div class="card-title" id="sweetener_name">Sweeteners</div>
-<div class="card-desc" id="sweetener_desc">Non-sugar sweeteners — WHO advises against them for weight control.</div>
-</a>
-<a class="evidence-card" href="/pages/what_holds_it.html">
-<img alt="BOTIA Texture Modifiers — thickeners, stabilisers, emulsifiers" onerror="this.src='/botia/assets/texture.png'" src="/botia/assets/texture.png" style="content-visibility:auto;"/>
-<div class="card-title" id="texture_name">Texture</div>
-<div class="card-desc" id="texture_desc">Thickeners, stabilisers and emulsifiers — markers of ultra-processed food.</div>
-</a>
-<a class="evidence-card" href="/pages/tasting_like_itself.html">
-<img alt="BOTIA Flavourings — flavour enhancers and ultra-processed markers" onerror="this.src='/botia/assets/flavors.png'" src="/botia/assets/flavors.png" style="content-visibility:auto;"/>
-<div class="card-title" id="flavor_name">Flavourings</div>
-<div class="card-desc" id="flavor_desc">Natural and artificial flavour enhancers added when base ingredients lack taste.</div>
-</a>
-<a class="evidence-card" href="/pages/the_code_system.html">
-<img alt="BOTIA E-numbers — EU authorised food additives explained" onerror="this.src='/botia/assets/enumbers.png'" src="/botia/assets/enumbers.png" style="content-visibility:auto;"/>
-<div class="card-title" id="enumbers_name">E-numbers</div>
-<div class="card-desc" id="enumbers_desc">EU authorised food additives — authorised does not always mean without debate.</div>
-</a>
-<!-- Sexta tarjeta añadida -->
-<a class="evidence-card" href="/pages/ultra_processed.html">
-<img alt="BOTIA Ultra-Processed — NOVA classification explained" src="/botia/assets/botia_jar_512.png"/>
-<div class="card-title" id="ultra_name">Ultra-Processed</div>
-<div class="card-desc" id="ultra_desc">What NOVA means and why the whole formulation matters, not just the parts.</div>
-</a>
-</div>
-</section>
-<section class="section">
-<h2 class="section-title" id="difference_title">Evidence vs personal choice</h2>
-<p class="section-intro" id="difference_body">Evidence modules signal documented scientific concern. They do not tell you what to eat. Other BOTIA modules — Muslim Choice and Animal Origin — support personal, ethical or religious decisions. The two families are separate. Both are transparent.</p>
-</section>
-<section class="section">
-<h2 class="section-title" id="how_title">How BOTIA uses evidence</h2>
-<p class="section-intro" id="how_1">Each module connects a label ingredient to official scientific and regulatory sources.</p>
-<p class="section-intro" id="how_2">BOTIA signals presence, explains what the evidence says, and clearly states what cannot be concluded from a label alone.</p>
-<p class="section-intro" id="how_3">When the evidence is inconclusive or under active review, BOTIA says so. Honest uncertainty is better than false confidence.</p>
-</section>
-<section class="section">
-<div class="can-cannot">
-<div class="can-box">
-<h4 id="can_title">BOTIA CAN</h4>
-<ul>
-<li id="can_1">Detect ingredients flagged in official scientific guidelines.</li>
-<li id="can_2">Explain what WHO, EFSA or FDA say about each ingredient.</li>
-<li id="can_3">Signal when evidence is under review or contested.</li>
-</ul>
-</div>
-<div class="cannot-box">
-<h4 id="cannot_title">BOTIA CANNOT</h4>
-<ul>
-<li id="cannot_1">Tell you whether this product is safe for you personally.</li>
-<li id="cannot_2">Quantify your exposure or calculate cumulative risk.</li>
-<li id="cannot_3">Replace medical, nutritional or professional advice.</li>
-</ul>
-</div>
-</div>
-</section>
-<section class="closing">
-<p class="source-links">
-<span id="sources-label">Sources:</span>
-<a href="https://www.who.int/publications/i/item/9789241549028" target="_blank">WHO Sugars Guideline (2015)</a> ·
-        <a href="https://www.who.int/publications/i/item/9789240073616" target="_blank">WHO Non-Sugar Sweeteners (2023)</a> ·
-        <a href="https://www.efsa.europa.eu/en/topics/topic/food-additives" target="_blank">EFSA Food Additives</a> ·
-        <a href="https://www.fda.gov/food/food-additives-petitions/food-additive-status-list" target="_blank">FDA Food Additives</a> ·
-        <a href="https://www.fao.org/fao-who-codexalimentarius/en/" target="_blank">Codex Alimentarius</a>
-</p>
-<a class="cta-button" href="/" id="back-to-botia">← Back to BOTIA</a>
-</section>
-</main>
-<script defer="" src="/botia/assets/js/i18n-loader.js"></script>
-<script src="/botia/assets/js/botia-chat.js"></script>
-<script src="/botia/assets/js/footer.js?v=20260817-1502"></script>
+
+<body data-botia-module="evidence">
+
+  <!-- ====================================================
+       CABECERA
+       ==================================================== -->
+
+  <header class="evidence-topbar">
+
+    <div class="evidence-topbar-inner">
+
+      <button
+        id="menuBtn"
+        aria-label="Menu"
+      >
+        ☰
+      </button>
+
+      <a
+        class="evidence-wordmark"
+        href="/"
+      >
+        BOTIA
+      </a>
+
+      <div class="evidence-spacer"></div>
+
+      <div class="lang-switcher evidence-lang-pill">
+
+        <label
+          for="lang-select"
+          style="
+            position:absolute;
+            width:1px;
+            height:1px;
+            overflow:hidden;
+            clip:rect(0,0,0,0);
+          "
+        >
+          Select language
+        </label>
+
+        <select
+          id="lang-select"
+          aria-label="Select language"
+          onchange="cambiarIdioma(this.value)"
+        >
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="it">Italiano</option>
+          <option value="nl">Nederlands</option>
+          <option value="pl">Polski</option>
+          <option value="pt">Português</option>
+          <option value="ro">Română</option>
+          <option value="ru">Русский</option>
+          <option value="tr">Türkçe</option>
+          <option value="zh">中文</option>
+        </select>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- ==================================================
+         HERO
+         ================================================== -->
+
+    <section class="evidence-hero">
+
+      <div class="evidence-wrap evidence-hero-grid">
+
+        <div class="evidence-hero-copy">
+
+          <h1 id="title">
+            Evidence Layers
+          </h1>
+
+          <p
+            class="subtitle"
+            id="subtitle"
+          >
+            What the label reveals. Grounded in science.
+          </p>
+
+          <p
+            class="description"
+            id="description"
+          >
+            These modules are based on scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius. They explain what the evidence says, what BOTIA can detect, and what cannot be concluded from a label alone.
+          </p>
+
+        </div>
+
+
+        <div
+          class="evidence-icon-stage"
+          aria-hidden="true"
+        >
+
+          <img
+            class="evidence-main-icon"
+            src="/botia/assets/evidence.png"
+            alt=""
+            fetchpriority="high"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         WHY / WHAT
+         ================================================== -->
+
+    <section class="evidence-section">
+
+      <div class="evidence-wrap evidence-foundation-grid">
+
+        <article class="evidence-foundation-card">
+
+          <h2 id="why_title">
+            Why evidence matters
+          </h2>
+
+          <p id="why_body">
+            Food labels are legal documents before they are human explanations. An ingredient can be authorised, declared correctly, and still carry documented health implications that never appear on the packaging. BOTIA connects what the label says to what the science says.
+          </p>
+
+        </article>
+
+
+        <article class="evidence-foundation-card">
+
+          <h2 id="what_title">
+            What 'evidence' means in BOTIA
+          </h2>
+
+          <p id="what_body">
+            BOTIA does not use opinions or trends. Every signal in these modules is grounded in published guidelines or scientific opinions from WHO, EFSA, FDA, IARC, or Codex Alimentarius. When the evidence is under review or contested, BOTIA says so. Uncertainty is part of the information.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         EVIDENCE LAYERS
+         ================================================== -->
+
+    <section class="evidence-section evidence-section-alt">
+
+      <div class="evidence-wrap">
+
+        <div class="evidence-section-head">
+
+          <h2 id="modules_title">
+            Explore by evidence layer
+          </h2>
+
+        </div>
+
+
+        <div class="evidence-layer-grid">
+
+          <!-- Sugar -->
+
+          <a
+            class="evidence-layer-card"
+            href="/pages/hidden_sugars.html"
+          >
+
+            <img
+              src="/botia/assets/Sugar.png"
+              alt=""
+            >
+
+            <h3 id="sugar_name">
+              Sugar
+            </h3>
+
+            <p id="sugar_desc">
+              Free sugars under WHO criteria, and rapidly digestible carbohydrates that behave similarly without being classified as such.
+            </p>
+
+          </a>
+
+
+          <!-- Sweeteners -->
+
+          <a
+            class="evidence-layer-card"
+            href="/pages/not_sugar.html"
+          >
+
+            <img
+              src="/botia/assets/sweeteners.png"
+              alt=""
+            >
+
+            <h3 id="sweetener_name">
+              Sweeteners
+            </h3>
+
+            <p id="sweetener_desc">
+              Non-sugar sweeteners — WHO advises against them for weight control.
+            </p>
+
+          </a>
+
+
+          <!-- Texture -->
+
+          <a
+            class="evidence-layer-card"
+            href="/pages/what_holds_it.html"
+          >
+
+            <img
+              src="/botia/assets/texture.png"
+              alt=""
+            >
+
+            <h3 id="texture_name">
+              Texture
+            </h3>
+
+            <p id="texture_desc">
+              Thickeners, stabilisers and emulsifiers — markers of ultra-processed food.
+            </p>
+
+          </a>
+
+
+          <!-- Flavourings -->
+
+          <a
+            class="evidence-layer-card"
+            href="/pages/tasting_like_itself.html"
+          >
+
+            <img
+              src="/botia/assets/flavors.png"
+              alt=""
+            >
+
+            <h3 id="flavor_name">
+              Flavourings
+            </h3>
+
+            <p id="flavor_desc">
+              Natural and artificial flavour enhancers added when base ingredients lack taste.
+            </p>
+
+          </a>
+
+
+          <!-- E-numbers -->
+
+          <a
+            class="evidence-layer-card"
+            href="/pages/the_code_system.html"
+          >
+
+            <img
+              src="/botia/assets/enumbers.png"
+              alt=""
+            >
+
+            <h3 id="enumbers_name">
+              E-numbers
+            </h3>
+
+            <p id="enumbers_desc">
+              EU authorised food additives — authorised does not always mean without debate.
+            </p>
+
+          </a>
+
+
+          <!-- Ultra-Processed -->
+
+          <a
+            class="evidence-layer-card"
+            href="/pages/ultra_processed.html"
+          >
+
+            <img
+              src="/botia/assets/ultra_processed.png"
+              alt=""
+            >
+
+            <h3 id="ultra_name">
+              Ultra-Processed
+            </h3>
+
+            <p id="ultra_desc">
+              What NOVA means and why the whole formulation matters, not just the parts.
+            </p>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         EVIDENCE VS CHOICE
+         ================================================== -->
+
+    <section class="evidence-statement">
+
+      <div class="evidence-wrap">
+
+        <div class="evidence-statement-box">
+
+          <h2 id="difference_title">
+            Evidence vs personal choice
+          </h2>
+
+          <p id="difference_body">
+            Evidence modules signal documented scientific concern. They do not tell you what to eat. Other BOTIA modules — Muslim Choice and Animal Origin — support personal, ethical or religious decisions. The two families are separate. Both are transparent.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         HOW BOTIA USES EVIDENCE
+         ================================================== -->
+
+    <section class="evidence-section">
+
+      <div class="evidence-wrap">
+
+        <div class="evidence-section-head">
+
+          <h2 id="how_title">
+            How BOTIA uses evidence
+          </h2>
+
+        </div>
+
+
+        <div class="evidence-how-grid">
+
+          <article class="evidence-how-card">
+
+            <div class="evidence-how-number">
+              01
+            </div>
+
+            <p id="how_1">
+              Each module connects a label ingredient to official scientific and regulatory sources.
+            </p>
+
+          </article>
+
+
+          <article class="evidence-how-card">
+
+            <div class="evidence-how-number">
+              02
+            </div>
+
+            <p id="how_2">
+              BOTIA signals presence, explains what the evidence says, and clearly states what cannot be concluded from a label alone.
+            </p>
+
+          </article>
+
+
+          <article class="evidence-how-card">
+
+            <div class="evidence-how-number">
+              03
+            </div>
+
+            <p id="how_3">
+              When the evidence is inconclusive or under active review, BOTIA says so. Honest uncertainty is better than false confidence.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================
+         CAN / CANNOT
+         ================================================== -->
+
+    <section class="evidence-section evidence-section-alt">
+
+      <div class="evidence-wrap evidence-can-grid">
+
+        <article class="evidence-can-card can">
+
+          <h2 id="can_title">
+            BOTIA CAN
+          </h2>
+
+          <ul>
+
+            <li id="can_1">
+              Detect ingredients flagged in official scientific guidelines.
+            </li>
+
+            <li id="can_2">
+              Explain what WHO, EFSA or FDA say about each ingredient.
+            </li>
+
+            <li id="can_3">
+              Signal when evidence is under review or contested.
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <article class="evidence-can-card cannot">
+
+          <h2 id="cannot_title">
+            BOTIA CANNOT
+          </h2>
+
+          <ul>
+
+            <li id="cannot_1">
+              Tell you whether this product is safe for you personally.
+            </li>
+
+            <li id="cannot_2">
+              Quantify your exposure or calculate cumulative risk.
+            </li>
+
+            <li id="cannot_3">
+              Replace medical, nutritional or professional advice.
+            </li>
+
+          </ul>
+
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!--
+    FOOTER FUERA DE CUALQUIER CONTENEDOR ESTRECHO.
+    footer.js conserva el footer común de BOTIA a ancho normal.
+  -->
+
+  <script
+    defer
+    src="/botia/assets/js/i18n-loader.js"
+  ></script>
+
+  <script src="/botia/assets/js/botia-chat.js"></script>
+
+  <script src="/botia/assets/js/footer.js?v=20260817-1502"></script>
+
 </body>
 </html>
