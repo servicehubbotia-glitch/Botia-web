@@ -76,6 +76,7 @@
       <p class="footer-text">${COMPANY.postcode}</p>
       <p class="footer-text">${COMPANY.country}</p>
       <p class="footer-text">${t(labels, "footer_kvk_label", "KvK")} ${COMPANY.kvk}</p>
+      <p class="footer-text"><a href="${preserveLanguage("/pages/about.html", language)}">${t(labels, "nav_about", "About BOTIA")}</a></p>
     `;
 
     // ---- Column 2: Contact ----
