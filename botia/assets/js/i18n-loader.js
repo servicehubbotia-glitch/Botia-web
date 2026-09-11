@@ -511,6 +511,71 @@
     });
   };
 
+  let regulatoryIngredientSlugsPromise = null;
+
+  const regulatoryIngredientSlugs = () => {
+    if (!regulatoryIngredientSlugsPromise) {
+      regulatoryIngredientSlugsPromise = fetch("/i18n/en/regulatory.json", { cache: "no-store" })
+        .then(response => {
+          if (!response.ok) throw new Error(`Regulatory ${response.status}`);
+          return response.json();
+        })
+        .then(data => new Set(
+          (Array.isArray(data.records) ? data.records : [])
+            .map(record => String(record.ingredient_slug || "").trim())
+            .filter(Boolean)
+        ))
+        .catch(error => {
+          console.warn("BOTIA Regulatory integration:", error);
+          return new Set();
+        });
+    }
+
+    return regulatoryIngredientSlugsPromise;
+  };
+
+  const renderRegulatoryButton = async lang => {
+    const why = document.getElementById("why_botia");
+    if (!why) return;
+
+    // Solo fichas de ingredientes.
+    const match = location.pathname.match(/\/ingredients\/([^/]+)\.html$/i);
+    if (!match) return;
+
+    const slug = decodeURIComponent(match[1]).trim();
+    if (!slug || slug === "index" || slug === "ingredient-template") return;
+
+    // Evitar duplicados.
+    document.getElementById("botia-regulatory-link")?.remove();
+
+    const validSlugs = await regulatoryIngredientSlugs();
+
+    // Regulatory tiene registros para 84 ingredientes, no para las 104 fichas.
+    // Si el ingrediente no existe en Regulatory, no mostramos un enlace engañoso.
+    if (!validSlugs.has(slug)) return;
+
+    const href = new URL("/regulatory/", location.origin);
+    href.searchParams.set("ingredient", slug);
+    href.searchParams.set("lang", lang);
+
+    const link = document.createElement("a");
+    link.id = "botia-regulatory-link";
+    link.className = "cta-button";
+    link.href = href.toString();
+    link.textContent = "Regulatory";
+    link.setAttribute(
+      "aria-label",
+      `Regulatory — ${document.getElementById("name")?.textContent?.trim() || slug}`
+    );
+
+    const wrapper = document.createElement("div");
+    wrapper.id = "botia-regulatory-container";
+    wrapper.style.marginTop = "14px";
+    wrapper.appendChild(link);
+
+    why.insertAdjacentElement("afterend", wrapper);
+  };
+
   const triggerItems = () => {
     const trigger = new URLSearchParams(location.search).get("trigger");
     return String(trigger || "").split(",").map(item => item.trim()).filter(Boolean);
@@ -674,6 +739,7 @@
     applyCollections(data, loaded);
     renderIngredientIndex(data, loaded);
     preserveLanguageInInternalLinks(loaded);
+    await renderRegulatoryButton(loaded);
     return true;
   };
 
