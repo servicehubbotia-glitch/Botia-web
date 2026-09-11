@@ -743,10 +743,21 @@
     return true;
   };
 
+  const applyMainPageLayout = () => {
+    if (!location.pathname.startsWith("/pages/")) return;
+
+    document.body.classList.add("botia-main-page");
+
+    const heroIcon = document.querySelector(".hero .hero-logo");
+    if (heroIcon) heroIcon.hidden = true;
+  };
+
   const init = () => {
     if (runtime.initPromise) return runtime.initPromise;
 
     runtime.initPromise = (async () => {
+      applyMainPageLayout();
+
       const ok = await loadModule(moduleName(), language());
       const back = document.getElementById("back-button");
       if (back && !back.dataset.botiaBackBound) {
