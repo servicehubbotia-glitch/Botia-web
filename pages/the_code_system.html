@@ -1,94 +1,71 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>BOTIA — The Code System | E-numbers, INS and GRAS explained</title>
-<meta content="BOTIA — The Code System" property="og:title"/>
-<meta content="The same additive can be E471 in Europe, INS 471 internationally, and something else entirely on a US label. Manufacturers know exactly what each code means. Most consumers do not." property="og:description"/>
-<meta content="https://www.botia-safefood.com/botia_jar_512.png" property="og:image"/>
-<meta content="https://www.botia-safefood.com/pages/the_code_system.html" property="og:url"/>
-<meta content="website" property="og:type"/>
-<meta content="summary" name="twitter:card"/>
-<meta content="BOTIA — The Code System" name="twitter:title"/>
-<meta content="The same additive can be E471 in Europe, INS 471 internationally, and something else entirely on a US label. Manufacturers know exactly what each code means. Most consumers do not." name="twitter:description"/>
-<meta content="https://www.botia-safefood.com/botia_jar_512.png" name="twitter:image"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html" rel="canonical"/>
-<meta content="The same additive can be E471 in Europe, INS 471 internationally, and something else entirely on a US label. Manufacturers know exactly what each code means. Most consumers do not." name="description"/>
-<link href="https://www.efsa.europa.eu" rel="dns-prefetch"/>
-<link href="https://eur-lex.europa.eu" rel="dns-prefetch"/>
-<link href="https://www.fao.org" rel="dns-prefetch"/>
-<link href="https://www.efsa.europa.eu" rel="preconnect"/>
-<link href="https://eur-lex.europa.eu" rel="preconnect"/>
-<link href="https://www.fao.org" rel="preconnect"/>
-<link href="/botia_jar_512.png" rel="icon" type="image/png"/>
-<link as="style" href="/botia-landing.css" rel="preload">
-<link href="/botia-landing.css" rel="stylesheet"/>
-<link as="style" href="/botia/assets/botia-pages.css" rel="preload">
-<link href="/botia/assets/botia-pages.css" rel="stylesheet"/>
-<style>
-  .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
-  .hero { padding: 12px 0 0; text-align: center; }
-  .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
-  .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
-  .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
-  .description { font-size: 0.9rem; color: #8a8a8a; }
-  .section { margin-bottom: 24px; }
-  .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
-  .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.6; }
-  .highlight-box {
-    background: rgba(24, 13, 13, 0.9); border-left: 4px solid rgba(190, 122, 72, 0.6);
-    border-radius: 8px; padding: 20px; margin: 24px 0;
-  }
-  .highlight-box p { font-size: 0.95rem; color: #ffd8bd; line-height: 1.6; }
-  .related-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
-  .related-grid a {
-    background: rgba(255, 255, 255, 0.06); padding: 8px 18px;
-    border-radius: 30px; border: 1px solid rgba(190, 122, 72, 0.3);
-    color: #ffd8bd; font-weight: 600; font-size: 0.9rem; text-decoration: none;
-    transition: 0.2s ease;
-  }
-  .related-grid a:hover { background: rgba(190, 122, 72, 0.2); border-color: #e6a06b; color: #fff; }
-  .can-cannot { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
-  @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
-  .can-box, .cannot-box { background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px; }
-  .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
-  .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
-  .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
-  .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
-  .can-box li, .cannot-box li { margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c; padding-left: 20px; position: relative; }
-  .can-box li::before { content: "✅"; position: absolute; left: 0; }
-  .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
-  .closing { text-align: center; padding: 20px 0; }
-  .closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 16px; }
-  .cta-button {
-    display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
-    padding: 10px 24px; border-radius: 8px; text-decoration: none;
-    border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
-  }
-  .cta-button:hover { background: rgba(190,122,72,0.35); }
-  .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
-  .source-links a { color: #e6a06b; text-decoration: none; }
-  .source-links a:hover { text-decoration: underline; }
-  .hero + .section { margin-top: 0 !important; }
-</style>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=en" hreflang="en" rel="alternate">
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=es" hreflang="es" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=ar" hreflang="ar" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=de" hreflang="de" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=fr" hreflang="fr" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=nl" hreflang="nl" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=it" hreflang="it" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=pt" hreflang="pt" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=pl" hreflang="pl" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=ro" hreflang="ro" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=ru" hreflang="ru" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=tr" hreflang="tr" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=zh" hreflang="zh" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html?lang=id" hreflang="id" rel="alternate"/>
-<link href="https://www.botia-safefood.com/pages/the_code_system.html" hreflang="x-default" rel="alternate"/>
-<script type="application/ld+json">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BOTIA — The Code System | E-numbers, INS and GRAS explained</title>
+
+  <meta
+    name="description"
+    content="The same additive can be E471 in Europe, INS 471 internationally, and something else entirely on a US label. Manufacturers know exactly what each code means. Most consumers do not."
+  >
+
+  <meta property="og:title" content="BOTIA — The Code System">
+  <meta
+    property="og:description"
+    content="The same additive can be E471 in Europe, INS 471 internationally, and something else entirely on a US label. Manufacturers know exactly what each code means. Most consumers do not."
+  >
+  <meta
+    property="og:image"
+    content="https://www.botia-safefood.com/botia_jar_512.png"
+  >
+  <meta
+    property="og:url"
+    content="https://www.botia-safefood.com/pages/the_code_system.html"
+  >
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BOTIA — The Code System">
+  <meta
+    name="twitter:description"
+    content="The same additive can be E471 in Europe, INS 471 internationally, and something else entirely on a US label. Manufacturers know exactly what each code means. Most consumers do not."
+  >
+  <meta
+    name="twitter:image"
+    content="https://www.botia-safefood.com/botia_jar_512.png"
+  >
+
+  <link
+    rel="canonical"
+    href="https://www.botia-safefood.com/pages/the_code_system.html"
+  >
+
+  <link rel="icon" href="/botia_jar_512.png" type="image/png">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=en">
+  <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=es">
+  <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=ar">
+  <link rel="alternate" hreflang="de" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=de">
+  <link rel="alternate" hreflang="fr" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=fr">
+  <link rel="alternate" hreflang="nl" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=nl">
+  <link rel="alternate" hreflang="it" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=it">
+  <link rel="alternate" hreflang="pt" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=pt">
+  <link rel="alternate" hreflang="pl" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=pl">
+  <link rel="alternate" hreflang="ro" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=ro">
+  <link rel="alternate" hreflang="ru" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=ru">
+  <link rel="alternate" hreflang="tr" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=tr">
+  <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=zh">
+  <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/pages/the_code_system.html?lang=id">
+  <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/pages/the_code_system.html">
+
+  <link rel="stylesheet" href="/botia/assets/menu.css">
+  <link rel="stylesheet" href="/botia/assets/footer.css">
+
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -101,101 +78,1282 @@
     }
   }
   </script>
-<link href="/botia/assets/menu.css" rel="stylesheet"/>
-<script src="/botia/assets/js/menu.js"></script>
-<link href="/botia/assets/footer.css" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --page-bg: #080505;
+      --page-panel: #180d0d;
+      --page-panel2: #241010;
+
+      --page-text: #f2e4dc;
+      --page-muted: #c0a08c;
+      --page-soft: #8a8a8a;
+
+      --page-accent: #e6a06b;
+      --page-accent2: #ffd8bd;
+
+      --page-line: rgba(190, 122, 72, .28);
+      --page-shadow: 0 18px 60px rgba(0, 0, 0, .38);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+
+      color: var(--page-text);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+      background:
+        radial-gradient(
+          circle at 20% 5%,
+          rgba(100, 28, 35, .15),
+          transparent 34rem
+        ),
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(138, 74, 37, .10),
+          transparent 30rem
+        ),
+        linear-gradient(
+          180deg,
+          #0a0606,
+          #080505 50%,
+          #0d0808
+        );
+
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .code-wrap {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+
+    /* HERO */
+
+    .code-hero {
+      padding: 74px 0 58px;
+    }
+
+    .code-hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .code-hero-copy {
+      min-width: 0;
+    }
+
+    .code-hero h1 {
+      max-width: 900px;
+
+      margin: 0 0 20px;
+
+      color: var(--page-text);
+
+      font-size: clamp(2.6rem, 5.8vw, 5.3rem);
+      line-height: .95;
+
+      letter-spacing: -.055em;
+
+      font-weight: 900;
+    }
+
+    .code-hero .subtitle {
+      margin: 0 0 12px;
+
+      color: var(--page-accent);
+
+      font-size: 1.15rem;
+      line-height: 1.55;
+
+      font-weight: 800;
+    }
+
+    .code-hero .description {
+      max-width: 720px;
+
+      margin: 0;
+
+      color: var(--page-muted);
+
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+
+
+    /* ICONO */
+
+    .code-icon-stage {
+      min-height: 410px;
+
+      position: relative;
+      overflow: hidden;
+
+      display: grid;
+      place-items: center;
+
+      border: 1px solid var(--page-line);
+      border-radius: 30px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(36, 16, 16, .94),
+          rgba(8, 5, 5, .82)
+        );
+
+      box-shadow: var(--page-shadow);
+    }
+
+    .code-icon-stage::before,
+    .code-icon-stage::after {
+      content: "";
+
+      position: absolute;
+
+      width: 260px;
+      height: 260px;
+
+      border: 1px solid rgba(230, 160, 107, .10);
+      border-radius: 50%;
+    }
+
+    .code-icon-stage::before {
+      left: -90px;
+      top: -90px;
+    }
+
+    .code-icon-stage::after {
+      right: -110px;
+      bottom: -120px;
+    }
+
+    .code-main-icon {
+      width: min(300px, 72%);
+      height: auto;
+
+      position: relative;
+      z-index: 2;
+
+      object-fit: contain;
+
+      animation: none !important;
+      transform: none !important;
+
+      filter:
+        drop-shadow(
+          0 18px 28px
+          rgba(0, 0, 0, .35)
+        );
+    }
+
+
+    /* SECCIONES */
+
+    .code-section {
+      padding: 72px 0;
+    }
+
+    .code-section-alt {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(17, 8, 8, .45),
+          rgba(36, 16, 16, .22)
+        );
+    }
+
+    .code-section-head {
+      margin-bottom: 30px;
+    }
+
+    .code-section-head h2 {
+      max-width: 820px;
+
+      margin: 0;
+
+      color: var(--page-text);
+
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+
+      letter-spacing: -.04em;
+
+      font-weight: 900;
+    }
+
+
+    /* WHY */
+
+    .code-why {
+      padding: 78px 0;
+    }
+
+    .code-why-box {
+      padding: 44px;
+
+      border: 1px solid var(--page-line);
+      border-radius: 28px;
+
+      background:
+        radial-gradient(
+          circle at 15% 25%,
+          rgba(148, 61, 50, .11),
+          transparent 22rem
+        ),
+        linear-gradient(
+          135deg,
+          rgba(36, 16, 16, .88),
+          rgba(8, 5, 5, .90)
+        );
+
+      box-shadow: var(--page-shadow);
+    }
+
+    .code-why-box h2 {
+      max-width: 850px;
+
+      margin: 0 0 18px;
+
+      color: var(--page-text);
+
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1.04;
+
+      letter-spacing: -.04em;
+
+      font-weight: 900;
+    }
+
+    .code-why-box p {
+      max-width: 850px;
+
+      margin: 0;
+
+      color: var(--page-muted);
+
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+
+    /* SYSTEMS */
+
+    .code-systems-box {
+      padding: 42px;
+
+      border: 1px solid var(--page-line);
+      border-radius: 26px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(36, 16, 16, .84),
+          rgba(10, 6, 6, .94)
+        );
+    }
+
+    .code-systems-box h2 {
+      margin: 0 0 18px;
+
+      color: var(--page-accent2);
+
+      font-size: clamp(1.9rem, 3.5vw, 3rem);
+      line-height: 1.08;
+
+      letter-spacing: -.035em;
+
+      font-weight: 900;
+    }
+
+    .code-systems-box p {
+      max-width: 930px;
+
+      margin: 0;
+
+      color: var(--page-muted);
+
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+
+    /* ASYMMETRY */
+
+    .code-asymmetry {
+      padding: 0 0 72px;
+    }
+
+    .code-asymmetry-box {
+      padding: 34px 38px;
+
+      border-left: 4px solid var(--page-accent);
+
+      border-radius: 0 22px 22px 0;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(54, 20, 20, .80),
+          rgba(18, 8, 8, .94)
+        );
+    }
+
+    .code-asymmetry-box p {
+      max-width: 930px;
+
+      margin: 0;
+
+      color: var(--page-accent2);
+
+      font-size: 1.05rem;
+      line-height: 1.75;
+
+      font-weight: 650;
+    }
+
+
+    /* WHAT / NAMES */
+
+    .code-dual-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 18px;
+    }
+
+    .code-info-card {
+      min-height: 330px;
+
+      padding: 32px;
+
+      border: 1px solid var(--page-line);
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(24, 13, 13, .96),
+          rgba(14, 8, 8, .95)
+        );
+    }
+
+    .code-info-card h2 {
+      margin: 0 0 18px;
+
+      color: var(--page-accent2);
+
+      font-size: clamp(1.7rem, 2.7vw, 2.25rem);
+      line-height: 1.12;
+
+      letter-spacing: -.03em;
+
+      font-weight: 900;
+    }
+
+    .code-info-card p {
+      margin: 0;
+
+      color: var(--page-muted);
+
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+
+    /* RELATED INGREDIENTS */
+
+    .code-related-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+      gap: 14px;
+    }
+
+    .code-related-card {
+      min-height: 145px;
+
+      display: flex;
+      align-items: flex-end;
+
+      padding: 22px;
+
+      text-decoration: none;
+
+      border: 1px solid var(--page-line);
+      border-radius: 20px;
+
+      background:
+        radial-gradient(
+          circle at 88% 10%,
+          rgba(230, 160, 107, .10),
+          transparent 10rem
+        ),
+        linear-gradient(
+          180deg,
+          rgba(24, 13, 13, .96),
+          rgba(14, 8, 8, .95)
+        );
+
+      transition:
+        transform .18s ease,
+        border-color .18s ease,
+        background .18s ease;
+    }
+
+    .code-related-card:hover,
+    .code-related-card:focus-visible {
+      transform: translateY(-3px);
+
+      border-color: rgba(230, 160, 107, .56);
+
+      background: rgba(36, 16, 16, .90);
+
+      outline: none;
+    }
+
+    .code-related-card span {
+      color: var(--page-text);
+
+      font-size: 1.05rem;
+      line-height: 1.3;
+
+      font-weight: 850;
+    }
+
+    .code-related-card.evidence {
+      border-color: rgba(230, 160, 107, .42);
+    }
+
+    .code-related-card.evidence span {
+      color: var(--page-accent2);
+    }
+
+    .code-related-card.ultra {
+      border-color: rgba(230, 160, 107, .42);
+    }
+
+    .code-related-card.ultra span {
+      color: var(--page-accent2);
+    }
+
+
+    /* CAN / CANNOT */
+
+    .code-can-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 18px;
+    }
+
+    .code-can-card {
+      padding: 32px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(24, 13, 13, .96),
+          rgba(14, 8, 8, .95)
+        );
+    }
+
+    .code-can-card.can {
+      border: 1px solid rgba(100, 180, 100, .38);
+    }
+
+    .code-can-card.cannot {
+      border: 1px solid rgba(180, 100, 100, .38);
+    }
+
+    .code-can-card h2 {
+      margin: 0 0 24px;
+
+      color: var(--page-text);
+
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      line-height: 1.1;
+
+      font-weight: 900;
+    }
+
+    .code-can-card ul {
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
+
+    .code-can-card li {
+      position: relative;
+
+      margin-bottom: 14px;
+      padding-left: 28px;
+
+      color: var(--page-muted);
+
+      font-size: .96rem;
+      line-height: 1.6;
+    }
+
+    .code-can-card li:last-child {
+      margin-bottom: 0;
+    }
+
+    .code-can-card.can li::before {
+      content: "✓";
+
+      position: absolute;
+      left: 0;
+
+      color: #8ed09a;
+
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+
+    .code-can-card.cannot li::before {
+      content: "×";
+
+      position: absolute;
+      left: 1px;
+
+      color: #e29b9b;
+
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+
+
+    /* CLOSING */
+
+    .code-closing {
+      padding: 78px 0 86px;
+    }
+
+    .code-closing-box {
+      padding: 46px;
+
+      text-align: center;
+
+      border: 1px solid var(--page-line);
+      border-radius: 28px;
+
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(148, 61, 50, .11),
+          transparent 28rem
+        ),
+        linear-gradient(
+          135deg,
+          rgba(36, 16, 16, .88),
+          rgba(8, 5, 5, .92)
+        );
+
+      box-shadow: var(--page-shadow);
+    }
+
+    .closing-claim {
+      max-width: 900px;
+
+      margin: 0 auto 30px;
+
+      color: var(--page-accent2);
+
+      font-size: clamp(1.5rem, 3vw, 2.35rem);
+      line-height: 1.4;
+
+      letter-spacing: -.025em;
+
+      font-weight: 850;
+    }
+
+    .source-links {
+      max-width: 960px;
+
+      margin: 0 auto 28px;
+
+      color: var(--page-soft);
+
+      font-size: .86rem;
+      line-height: 1.8;
+    }
+
+    .source-links a {
+      color: var(--page-accent);
+
+      text-decoration: none;
+    }
+
+    .source-links a:hover,
+    .source-links a:focus-visible {
+      color: var(--page-accent2);
+      text-decoration: underline;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 46px;
+
+      padding: 0 20px;
+
+      border: 1px solid rgba(230, 160, 107, .55);
+      border-radius: 999px;
+
+      background: rgba(190, 122, 72, .12);
+
+      color: var(--page-accent2);
+
+      font-weight: 800;
+
+      text-decoration: none;
+    }
+
+    .cta-button:hover,
+    .cta-button:focus-visible {
+      background: rgba(190, 122, 72, .24);
+      outline: none;
+    }
+
+
+    /* FOOTER */
+
+    #botia-footer {
+      width: 100%;
+    }
+
+
+    /* RTL */
+
+    body[dir="rtl"] .code-hero-grid {
+      direction: rtl;
+    }
+
+    body[dir="rtl"] .code-why-box,
+    body[dir="rtl"] .code-systems-box,
+    body[dir="rtl"] .code-asymmetry-box,
+    body[dir="rtl"] .code-info-card,
+    body[dir="rtl"] .code-related-card,
+    body[dir="rtl"] .code-can-card {
+      text-align: right;
+    }
+
+    body[dir="rtl"] .code-asymmetry-box {
+      border-left: 0;
+      border-right: 4px solid var(--page-accent);
+
+      border-radius: 22px 0 0 22px;
+    }
+
+    body[dir="rtl"] .code-can-card li {
+      padding-left: 0;
+      padding-right: 28px;
+    }
+
+    body[dir="rtl"] .code-can-card li::before {
+      left: auto;
+      right: 0;
+    }
+
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1000px) {
+
+      .code-related-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 900px) {
+
+      .code-hero-grid {
+        grid-template-columns:
+          minmax(0, 1fr)
+          320px;
+
+        gap: 35px;
+      }
+
+      .code-icon-stage {
+        min-height: 350px;
+      }
+
+      .code-dual-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      .code-wrap {
+        width: min(100% - 30px, 1180px);
+      }
+
+      .code-hero {
+        padding: 48px 0 44px;
+      }
+
+      .code-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+      }
+
+      .code-hero h1 {
+        font-size: clamp(2.7rem, 13vw, 4.4rem);
+      }
+
+      .code-icon-stage {
+        min-height: 300px;
+      }
+
+      .code-main-icon {
+        width: min(235px, 70%);
+      }
+
+      .code-related-grid,
+      .code-can-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .code-section {
+        padding: 54px 0;
+      }
+
+      .code-why {
+        padding: 58px 0;
+      }
+
+      .code-why-box,
+      .code-systems-box,
+      .code-info-card,
+      .code-closing-box {
+        padding: 30px 26px;
+      }
+
+      .code-asymmetry-box {
+        padding: 28px 26px;
+      }
+
+      .code-related-card {
+        min-height: 125px;
+      }
+    }
+  </style>
+
+  <script src="/botia/assets/js/menu.js"></script>
 </head>
-<body class="has-botia-header botia-info-page" data-botia-module="the_code_system">
-<button aria-label="Menu" id="menuBtn">☰</button>
-<div class="botia-header-bar">
-<div class="botia-nav-left">
-<a href="/"><img alt="BOTIA" class="nav-logo" src="/botia_jar_512.png" style="width:28px;height:28px;"/></a>
-</div>
-<div class="lang-switcher">
-<label class="sr-only" for="lang-select" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
-<select aria-label="Select language" id="lang-select" onchange="cambiarIdioma(this.value)">
-<option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
-<option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
-<option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
-<option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
-<option value="tr">Türkçe</option><option value="zh">中文</option>
-</select>
-</div>
-</div>
-<a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
-<main class="landing" id="main-content">
-<section class="hero">
-<img alt="BOTIA — The code system behind food additives" class="hero-logo" fetchpriority="high"/botia/assets/enumbers.png"; this.onerror=null;" src="/botia/assets/enumbers.png"/ onerror="this.src='/botia/assets/enumbers.png'; this.onerror=null;">
-<h1 id="title">The Code System</h1>
-<p class="subtitle" id="subtitle">A code on the label. A story behind it.</p>
-<p class="description" id="description">E-numbers are the EU system for identifying authorised food additives. Authorised means they passed a safety threshold — it does not mean they are without debate.</p>
-</section>
-<section class="section">
-<h2 class="section-title" id="why_title">Why this matters</h2>
-<p class="section-intro" id="why_body">E-numbers are often misunderstood — some are harmless, some are under active review, some have implications for specific groups. What they share is that they are ingredients beyond the basic food components. According to NOVA (FAO, 2019), their presence is a marker of ultra-processed food.</p>
-</section>
-<section class="section">
-<h2 class="section-title" id="systems_title">A code only manufacturers fully understand</h2>
-<p class="section-intro" id="systems_body">E-numbers exist only in Europe. In the United States, the same additives appear under the FDA GRAS system with different names. Globally, the Codex Alimentarius uses INS numbers. China has its own GB standards. Australia uses the same numbers but without the 'E'. The result: the same substance can be E471 in Europe, INS 471 internationally, and something else entirely on a US label. Manufacturers know exactly what each code means and where it comes from. Most consumers do not. BOTIA exists to close that gap.</p>
-</section>
-<div class="highlight-box">
-<p id="asymmetry_body">The same additive can be banned in Europe and authorised in the United States — or the reverse. E171 (titanium dioxide) was prohibited in the EU in 2022 after EFSA concluded it could no longer be considered safe. It remains authorised in the US. The code changes. The substance does not. BOTIA flags what the label declares and connects it to what the science says — regardless of which system named it.</p>
-</div>
-<section class="section">
-<h2 class="section-title" id="what_title">What BOTIA looks for</h2>
-<p class="section-intro" id="what_body">BOTIA detects E-numbers flagged for one or more of the following reasons: potential hormonal activity (E171, E320, E321), insect origin (E120), animal origin uncertainty (E471, E472, E322), sweetener effects (E950-E968), or general ultra-processing markers. Not every E-number is flagged — only those with documented relevance.</p>
-</section>
-<!-- NUEVA SECCIÓN AÑADIDA -->
-<section class="section">
-<h2 class="section-title" id="names_title">The code is not the only name</h2>
-<p class="section-intro" id="names_body">Not every label uses the code. The same additive can appear as E471 or as 'mono- and diglycerides of fatty acids'. Some manufacturers use the number, others use the chemical name, and some use neither on the front of the pack. BOTIA reads both. The code changes, the name changes, the wording changes — the substance does not.</p>
-</section>
-<section class="section">
-<h2 class="section-title" id="ingredients_title">Related ingredients</h2>
-<div class="related-grid">
-<a href="/ingredients/e171.html" id="ingredient_e171">E171</a>
-<a href="/ingredients/e471.html" id="ingredient_e471">E471</a>
-<a href="/ingredients/e472.html" id="ingredient_e472">E472</a>
-<a href="/ingredients/lecithins.html" id="ingredient_lecithins">E322</a>
-<a href="/ingredients/carmine.html" id="ingredient_carmine">E120</a>
-<a href="/pages/evidence.html" id="ingredient_all_layers">All evidence layers</a>
-<a href="/pages/ultra_processed.html" id="link_ultra_processed">Ultra-processed food</a>
-</div>
-</section>
-<section class="section">
-<div class="can-cannot">
-<div class="can-box">
-<h4 id="can_title">BOTIA CAN</h4>
-<ul>
-<li id="can_1">Detect E-numbers with documented scientific or regulatory relevance.</li>
-<li id="can_2">Link E-numbers to their specific BOTIA layer — animal, muslim, woman, or evidence.</li>
-<li id="can_3">Signal when an E-number is under active re-evaluation by EFSA.</li>
-</ul>
-</div>
-<div class="cannot-box">
-<h4 id="cannot_title">BOTIA CANNOT</h4>
-<ul>
-<li id="cannot_1">Tell you every E-number is harmful — most are not.</li>
-<li id="cannot_2">Assess your cumulative exposure to multiple E-numbers.</li>
-<li id="cannot_3">Replace medical or nutritional advice.</li>
-</ul>
-</div>
-</div>
-</section>
-<section class="closing">
-<p class="closing-claim" id="closing">Not all E-numbers are equal. The same code can mean different things in different countries. Explore the ingredient pages to understand what each one means for you.</p>
-<p class="source-links">
-<span id="sources-label">Sources:</span>
-<a href="https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng" rel="noopener" target="_blank">EU 1333/2008 Additives</a> ·
-        <a href="https://www.efsa.europa.eu/en/topics/topic/food-additives" rel="noopener" target="_blank">EFSA Food Additives</a> ·
-        <a href="https://www.fda.gov/food/food-additives-petitions/food-additive-status-list" rel="noopener" target="_blank">FDA Food Additive Status List</a> ·
-        <a href="https://www.fao.org/fao-who-codexalimentarius/en/" rel="noopener" target="_blank">Codex Alimentarius INS</a>
-</p>
-<a class="cta-button" href="/pages/evidence.html" id="back-link">← Back to Evidence Layers</a>
-</section>
-</main>
-<script defer="" src="/botia/assets/js/i18n-loader.js"></script>
-<script src="/botia/assets/js/botia-chat.js"></script>
-<script src="/botia/assets/js/footer.js?v=20260817-1502"></script>
+
+
+<body
+  class="has-botia-header botia-info-page"
+  data-botia-module="the_code_system"
+>
+
+  <!-- CABECERA COMÚN -->
+
+  <button aria-label="Menu" id="menuBtn">
+    ☰
+  </button>
+
+  <div class="botia-header-bar">
+
+    <div class="botia-nav-left">
+
+      <a href="/">
+        <img
+          alt="BOTIA"
+          class="nav-logo"
+          src="/botia_jar_512.png"
+          style="width:28px;height:28px;"
+        >
+      </a>
+
+    </div>
+
+    <div class="lang-switcher">
+
+      <label
+        class="sr-only"
+        for="lang-select"
+        style="
+          position:absolute;
+          width:1px;
+          height:1px;
+          overflow:hidden;
+          clip:rect(0,0,0,0);
+        "
+      >
+        Select language
+      </label>
+
+      <select
+        id="lang-select"
+        aria-label="Select language"
+        onchange="cambiarIdioma(this.value)"
+      >
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="it">Italiano</option>
+        <option value="nl">Nederlands</option>
+        <option value="pl">Polski</option>
+        <option value="pt">Português</option>
+        <option value="ro">Română</option>
+        <option value="ru">Русский</option>
+        <option value="tr">Türkçe</option>
+        <option value="zh">中文</option>
+      </select>
+
+    </div>
+
+  </div>
+
+
+  <a
+    class="skip-link"
+    href="#main-content"
+    style="
+      position:absolute;
+      left:-9999px;
+      top:auto;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+    "
+  >
+    Skip to main content
+  </a>
+
+
+  <main id="main-content">
+
+    <!-- HERO -->
+
+    <section class="code-hero">
+
+      <div class="code-wrap code-hero-grid">
+
+        <div class="code-hero-copy">
+
+          <h1 id="title">
+            The Code System
+          </h1>
+
+          <p
+            class="subtitle"
+            id="subtitle"
+          >
+            A code on the label. A story behind it.
+          </p>
+
+          <p
+            class="description"
+            id="description"
+          >
+            E-numbers are the EU system for identifying authorised food additives. Authorised means they passed a safety threshold — it does not mean they are without debate.
+          </p>
+
+        </div>
+
+
+        <div class="code-icon-stage">
+
+          <img
+            class="code-main-icon hero-logo"
+            src="/botia/assets/enumbers.png"
+            alt="BOTIA — The code system behind food additives"
+            fetchpriority="high"
+            onerror="this.src='/botia/assets/enumbers.png'; this.onerror=null;"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHY -->
+
+    <section class="code-why">
+
+      <div class="code-wrap">
+
+        <div class="code-why-box">
+
+          <h2 id="why_title">
+            Why this matters
+          </h2>
+
+          <p id="why_body">
+            E-numbers are often misunderstood — some are harmless, some are under active review, some have implications for specific groups. What they share is that they are ingredients beyond the basic food components. According to NOVA (FAO, 2019), their presence is a marker of ultra-processed food.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SYSTEMS -->
+
+    <section class="code-section code-section-alt">
+
+      <div class="code-wrap">
+
+        <div class="code-systems-box">
+
+          <h2 id="systems_title">
+            A code only manufacturers fully understand
+          </h2>
+
+          <p id="systems_body">
+            E-numbers exist only in Europe. In the United States, the same additives appear under the FDA GRAS system with different names. Globally, the Codex Alimentarius uses INS numbers. China has its own GB standards. Australia uses the same numbers but without the 'E'. The result: the same substance can be E471 in Europe, INS 471 internationally, and something else entirely on a US label. Manufacturers know exactly what each code means and where it comes from. Most consumers do not. BOTIA exists to close that gap.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ASYMMETRY -->
+
+    <section class="code-asymmetry code-section-alt">
+
+      <div class="code-wrap">
+
+        <div class="code-asymmetry-box">
+
+          <p id="asymmetry_body">
+            The same additive can be banned in Europe and authorised in the United States — or the reverse. E171 (titanium dioxide) was prohibited in the EU in 2022 after EFSA concluded it could no longer be considered safe. It remains authorised in the US. The code changes. The substance does not. BOTIA flags what the label declares and connects it to what the science says — regardless of which system named it.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHAT / NAMES -->
+
+    <section class="code-section">
+
+      <div class="code-wrap code-dual-grid">
+
+        <article class="code-info-card">
+
+          <h2 id="what_title">
+            What BOTIA looks for
+          </h2>
+
+          <p id="what_body">
+            BOTIA detects E-numbers flagged for one or more of the following reasons: potential hormonal activity (E171, E320, E321), insect origin (E120), animal origin uncertainty (E471, E472, E322), sweetener effects (E950-E968), or general ultra-processing markers. Not every E-number is flagged — only those with documented relevance.
+          </p>
+
+        </article>
+
+
+        <article class="code-info-card">
+
+          <h2 id="names_title">
+            The code is not the only name
+          </h2>
+
+          <p id="names_body">
+            Not every label uses the code. The same additive can appear as E471 or as 'mono- and diglycerides of fatty acids'. Some manufacturers use the number, others use the chemical name, and some use neither on the front of the pack. BOTIA reads both. The code changes, the name changes, the wording changes — the substance does not.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- RELATED -->
+
+    <section class="code-section code-section-alt">
+
+      <div class="code-wrap">
+
+        <div class="code-section-head">
+
+          <h2 id="ingredients_title">
+            Related ingredients
+          </h2>
+
+        </div>
+
+
+        <div class="code-related-grid">
+
+          <a
+            class="code-related-card"
+            href="/ingredients/e171.html"
+          >
+            <span id="ingredient_e171">
+              E171
+            </span>
+          </a>
+
+
+          <a
+            class="code-related-card"
+            href="/ingredients/e471.html"
+          >
+            <span id="ingredient_e471">
+              E471
+            </span>
+          </a>
+
+
+          <a
+            class="code-related-card"
+            href="/ingredients/e472.html"
+          >
+            <span id="ingredient_e472">
+              E472
+            </span>
+          </a>
+
+
+          <a
+            class="code-related-card"
+            href="/ingredients/lecithins.html"
+          >
+            <span id="ingredient_lecithins">
+              E322
+            </span>
+          </a>
+
+
+          <a
+            class="code-related-card"
+            href="/ingredients/carmine.html"
+          >
+            <span id="ingredient_carmine">
+              E120
+            </span>
+          </a>
+
+
+          <a
+            class="code-related-card evidence"
+            href="/pages/evidence.html"
+          >
+            <span id="ingredient_all_layers">
+              All evidence layers
+            </span>
+          </a>
+
+
+          <a
+            class="code-related-card ultra"
+            href="/pages/ultra_processed.html"
+          >
+            <span id="link_ultra_processed">
+              Ultra-processed food
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CAN / CANNOT -->
+
+    <section class="code-section">
+
+      <div class="code-wrap code-can-grid">
+
+        <article class="code-can-card can">
+
+          <h2 id="can_title">
+            BOTIA CAN
+          </h2>
+
+          <ul>
+
+            <li id="can_1">
+              Detect E-numbers with documented scientific or regulatory relevance.
+            </li>
+
+            <li id="can_2">
+              Link E-numbers to their specific BOTIA layer — animal, muslim, woman, or evidence.
+            </li>
+
+            <li id="can_3">
+              Signal when an E-number is under active re-evaluation by EFSA.
+            </li>
+
+          </ul>
+
+        </article>
+
+
+        <article class="code-can-card cannot">
+
+          <h2 id="cannot_title">
+            BOTIA CANNOT
+          </h2>
+
+          <ul>
+
+            <li id="cannot_1">
+              Tell you every E-number is harmful — most are not.
+            </li>
+
+            <li id="cannot_2">
+              Assess your cumulative exposure to multiple E-numbers.
+            </li>
+
+            <li id="cannot_3">
+              Replace medical or nutritional advice.
+            </li>
+
+          </ul>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- CLOSING -->
+
+    <section class="code-closing">
+
+      <div class="code-wrap">
+
+        <div class="code-closing-box">
+
+          <p
+            class="closing-claim"
+            id="closing"
+          >
+            Not all E-numbers are equal. The same code can mean different things in different countries. Explore the ingredient pages to understand what each one means for you.
+          </p>
+
+
+          <p class="source-links">
+
+            <span id="sources-label">
+              Sources:
+            </span>
+
+            <a
+              href="https://eur-lex.europa.eu/eli/reg/2008/1333/2026-08-18/eng"
+              rel="noopener"
+              target="_blank"
+            >
+              EU 1333/2008 Additives
+            </a>
+
+            ·
+
+            <a
+              href="https://www.efsa.europa.eu/en/topics/topic/food-additives"
+              rel="noopener"
+              target="_blank"
+            >
+              EFSA Food Additives
+            </a>
+
+            ·
+
+            <a
+              href="https://www.fda.gov/food/food-additives-petitions/food-additive-status-list"
+              rel="noopener"
+              target="_blank"
+            >
+              FDA Food Additive Status List
+            </a>
+
+            ·
+
+            <a
+              href="https://www.fao.org/fao-who-codexalimentarius/en/"
+              rel="noopener"
+              target="_blank"
+            >
+              Codex Alimentarius INS
+            </a>
+
+          </p>
+
+
+          <a
+            class="cta-button"
+            href="/pages/evidence.html"
+            id="back-link"
+          >
+            ← Back to Evidence Layers
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script
+    defer
+    src="/botia/assets/js/i18n-loader.js"
+  ></script>
+
+  <script src="/botia/assets/js/botia-chat.js"></script>
+
+  <script src="/botia/assets/js/footer.js?v=20260817-1502"></script>
+
 </body>
 </html>
