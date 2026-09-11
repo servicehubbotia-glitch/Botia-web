@@ -220,3 +220,63 @@ body.has-botia-header .botia-header-bar {
     transition: none;
   }
 }
+
+/* ============================================
+   BOTIA — CABECERA GLOBAL
+   ============================================ */
+
+.botia-header-bar {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 0 20px 0 70px;
+  background: rgba(8, 5, 5, 0.94);
+  border-bottom: 1px solid rgba(190, 122, 72, 0.20);
+}
+
+.botia-wordmark {
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  font-size: 0.95rem;
+  color: #9f1f2e;
+}
+
+.botia-wordmark:hover,
+.botia-wordmark:focus-visible {
+  opacity: 0.86;
+  outline: none;
+}
+
+/* Selector global: SOLO se ve el idioma */
+.botia-header-bar .lang-switcher,
+.home-topbar .lang-switcher {
+  position: static;
+}
+
+.botia-header-bar .lang-switcher select,
+.home-topbar .lang-switcher select {
+  min-width: 142px;
+  height: 38px;
+  padding: 0 34px 0 14px;
+  border: 1px solid rgba(190, 122, 72, 0.42);
+  border-radius: 999px;
+  background: rgba(24, 13, 13, 0.96);
+  color: #f2e4dc;
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.botia-header-bar .lang-switcher select:focus-visible,
+.home-topbar .lang-switcher select:focus-visible {
+  outline: 1px solid rgba(230, 160, 107, 0.72);
+  outline-offset: 2px;
+}
+
+body[dir="rtl"] .botia-header-bar {
+  padding-left: 20px;
+  padding-right: 70px;
+}
