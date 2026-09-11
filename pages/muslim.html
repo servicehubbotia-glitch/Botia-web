@@ -1,96 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>BOTIA — Muslim Choice</title>
+
+  <meta
+    name="description"
+    content="Read the label. Understand what it really says."
+  >
+
   <meta property="og:title" content="BOTIA — Muslim Choice">
-  <meta property="og:description" content="Read the label. Understand what it really says.">
-  <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
-  <meta property="og:url" content="https://www.botia-safefood.com/pages/muslim.html">
+  <meta
+    property="og:description"
+    content="Read the label. Understand what it really says."
+  >
+  <meta
+    property="og:image"
+    content="https://www.botia-safefood.com/botia_jar_512.png"
+  >
+  <meta
+    property="og:url"
+    content="https://www.botia-safefood.com/pages/muslim.html"
+  >
   <meta property="og:type" content="website">
+
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="BOTIA — Muslim Choice">
-  <meta name="twitter:description" content="Read the label. Understand what it really says.">
-  <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
-  <link rel="canonical" href="https://www.botia-safefood.com/pages/muslim.html" />
-  <meta name="description" content="Read the label. Understand what it really says." />
-  <link rel="dns-prefetch" href="https://www.fao.org">
-  <link rel="dns-prefetch" href="https://smiic.org">
-  <link rel="preconnect" href="https://www.fao.org">
-  <link rel="preconnect" href="https://smiic.org">
-  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
-  <link rel="preload" href="/botia-landing.css" as="style">
-  <link rel="stylesheet" href="/botia-landing.css" />
-  <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
-  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
-  <style>
-  .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
-  .hero { padding: 12px 0 0; text-align: center; }
-  .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
-  .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
-  .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
-  .description { font-size: 0.9rem; color: #8a8a8a; }
-  .section { margin-bottom: 24px; }
-  .section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 10px; }
-  .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.6; }
-  .status-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 16px 0; }
-  @media (max-width: 600px) { .status-grid { grid-template-columns: 1fr; } }
-  .status-card {
-    background: rgba(24,13,13,0.9); border: 1px solid rgba(190,122,72,0.25);
-    border-radius: 12px; padding: 16px; text-decoration: none;
-    color: #f2e4dc; transition: border-color 0.2s;
-  }
-  .status-card:hover { border-color: rgba(190,122,72,0.6); }
-  .status-card h3 { color: #e6a06b; font-size: 1rem; margin-bottom: 4px; }
-  .status-card p { font-size: 0.85rem; color: #c0a08c; margin: 0; }
-  .status-card.halal { border-left: 3px solid #4caf50; }
-  .status-card.haram { border-left: 3px solid #e74c3c; }
-  .status-card.mashbooh { border-left: 3px solid #f39c12; }
-  .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
-  .comparison-table th, .comparison-table td {
-    border: 1px solid rgba(190,122,72,0.2); padding: 10px 12px;
-    text-align: left; vertical-align: top;
-  }
-  .comparison-table th { background: rgba(24,13,13,0.9); color: #f2e4dc; font-weight: 600; }
-  .comparison-table td { color: #c0a08c; }
-  .can-cannot { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
-  @media (max-width: 500px) { .can-cannot { grid-template-columns: 1fr; } }
-  .can-box, .cannot-box { background: rgba(24, 13, 13, 0.9); border-radius: 12px; padding: 20px; }
-  .can-box { border: 1px solid rgba(100, 180, 100, 0.4); }
-  .cannot-box { border: 1px solid rgba(180, 100, 100, 0.4); }
-  .can-box h4, .cannot-box h4 { margin-bottom: 10px; font-size: 1rem; color: #f2e4dc; }
-  .can-box ul, .cannot-box ul { list-style: none; padding: 0; }
-  .can-box li, .cannot-box li { margin-bottom: 6px; font-size: 0.9rem; color: #c0a08c; padding-left: 20px; position: relative; }
-  .can-box li::before { content: "✅"; position: absolute; left: 0; }
-  .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
-  .ingredient-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
-  .ingredient-tag {
-    background: rgba(190,122,72,0.15); color: #ffd8bd;
-    padding: 6px 14px; border-radius: 20px; font-size: 0.85rem;
-    border: 1px solid rgba(190,122,72,0.2);
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.2s ease;
-  }
-  .ingredient-tag:hover { background: rgba(190,122,72,0.3); border-color: #e6a06b; }
-  .ingredient-tag.haram-tag { border-color: rgba(231,76,60,0.4); background: rgba(231,76,60,0.15); color: #e8a0a0; }
-  .ingredient-tag.haram-tag:hover { background: rgba(231,76,60,0.3); border-color: #e74c3c; }
-  .ingredient-tag.mashbooh-tag { border-color: rgba(243,156,18,0.4); background: rgba(243,156,18,0.15); color: #f0d080; }
-  .ingredient-tag.mashbooh-tag:hover { background: rgba(243,156,18,0.3); border-color: #f39c12; }
-  .closing { text-align: center; padding: 20px 0; }
-  .closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 16px; }
-  .cta-button {
-    display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
-    padding: 10px 24px; border-radius: 8px; text-decoration: none;
-    border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
-  }
-  .cta-button:hover { background: rgba(190,122,72,0.35); }
-  .source-links { color: #c0a08c; font-size: 0.85rem; margin-top: 16px; }
-  .source-links a { color: #e6a06b; text-decoration: none; }
-  .source-links a:hover { text-decoration: underline; }
-  .hero + .section { margin-top: 0 !important; }
-</style>
+  <meta
+    name="twitter:description"
+    content="Read the label. Understand what it really says."
+  >
+  <meta
+    name="twitter:image"
+    content="https://www.botia-safefood.com/botia_jar_512.png"
+  >
+
+  <link
+    rel="canonical"
+    href="https://www.botia-safefood.com/pages/muslim.html"
+  >
+
+  <link rel="icon" type="image/png" href="/botia_jar_512.png">
+
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/pages/muslim.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/pages/muslim.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/pages/muslim.html?lang=ar">
@@ -106,6 +60,10 @@
   <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/pages/muslim.html?lang=zh">
   <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/pages/muslim.html?lang=id">
   <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/pages/muslim.html">
+
+  <link rel="stylesheet" href="/botia/assets/menu.css">
+  <link rel="stylesheet" href="/botia/assets/footer.css">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -119,141 +77,1334 @@
     }
   }
   </script>
-  <link rel="stylesheet" href="/botia/assets/menu.css">
+
+  <style>
+    :root {
+      --page-bg: #080505;
+      --page-panel: #180d0d;
+      --page-panel2: #241010;
+
+      --page-text: #f2e4dc;
+      --page-muted: #c0a08c;
+      --page-soft: #8a8a8a;
+
+      --page-accent: #e6a06b;
+      --page-accent2: #ffd8bd;
+
+      --page-line: rgba(190, 122, 72, .28);
+      --page-shadow: 0 18px 60px rgba(0, 0, 0, .38);
+
+      --halal: #5ba66a;
+      --haram: #d6655b;
+      --mashbooh: #d49b45;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+
+      color: var(--page-text);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+      background:
+        radial-gradient(
+          circle at 20% 5%,
+          rgba(100, 28, 35, .15),
+          transparent 34rem
+        ),
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(138, 74, 37, .10),
+          transparent 30rem
+        ),
+        linear-gradient(
+          180deg,
+          #0a0606,
+          #080505 50%,
+          #0d0808
+        );
+
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .muslim-wrap {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+
+    /* HERO */
+
+    .muslim-hero {
+      padding: 74px 0 58px;
+    }
+
+    .muslim-hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .muslim-hero-copy {
+      min-width: 0;
+    }
+
+    .muslim-hero h1 {
+      max-width: 900px;
+
+      margin: 0 0 20px;
+
+      color: var(--page-text);
+
+      font-size: clamp(2.6rem, 5.8vw, 5.3rem);
+      line-height: .95;
+
+      letter-spacing: -.055em;
+
+      font-weight: 900;
+    }
+
+    .muslim-hero .subtitle {
+      margin: 0 0 12px;
+
+      color: var(--page-accent);
+
+      font-size: 1.15rem;
+      line-height: 1.55;
+
+      font-weight: 800;
+    }
+
+    .muslim-hero .description {
+      max-width: 720px;
+
+      margin: 0;
+
+      color: var(--page-muted);
+
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+
+
+    /* ICONO */
+
+    .muslim-icon-stage {
+      min-height: 410px;
+
+      position: relative;
+      overflow: hidden;
+
+      display: grid;
+      place-items: center;
+
+      border: 1px solid var(--page-line);
+      border-radius: 30px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(36, 16, 16, .94),
+          rgba(8, 5, 5, .82)
+        );
+
+      box-shadow: var(--page-shadow);
+    }
+
+    .muslim-icon-stage::before,
+    .muslim-icon-stage::after {
+      content: "";
+
+      position: absolute;
+
+      width: 260px;
+      height: 260px;
+
+      border: 1px solid rgba(230, 160, 107, .10);
+      border-radius: 50%;
+    }
+
+    .muslim-icon-stage::before {
+      left: -90px;
+      top: -90px;
+    }
+
+    .muslim-icon-stage::after {
+      right: -110px;
+      bottom: -120px;
+    }
+
+    .muslim-main-icon {
+      width: min(300px, 72%);
+      height: auto;
+
+      position: relative;
+      z-index: 2;
+
+      object-fit: contain;
+
+      animation: none !important;
+      transform: none !important;
+
+      filter:
+        drop-shadow(
+          0 18px 28px
+          rgba(0, 0, 0, .35)
+        );
+    }
+
+
+    /* SECCIONES */
+
+    .muslim-section {
+      padding: 72px 0;
+    }
+
+    .muslim-section-alt {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(17, 8, 8, .45),
+          rgba(36, 16, 16, .22)
+        );
+    }
+
+    .muslim-section-head {
+      margin-bottom: 30px;
+    }
+
+    .muslim-section-head h2 {
+      max-width: 820px;
+
+      margin: 0;
+
+      color: var(--page-text);
+
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+
+      letter-spacing: -.04em;
+
+      font-weight: 900;
+    }
+
+
+    /* ESTADOS */
+
+    .status-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+      gap: 18px;
+    }
+
+    .status-card {
+      min-height: 255px;
+
+      padding: 30px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      text-decoration: none;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(24, 13, 13, .96),
+          rgba(14, 8, 8, .95)
+        );
+
+      transition:
+        transform .18s ease,
+        border-color .18s ease,
+        background .18s ease;
+    }
+
+    .status-card:hover,
+    .status-card:focus-visible {
+      transform: translateY(-3px);
+      outline: none;
+    }
+
+    .status-card h3 {
+      margin: 0 0 12px;
+
+      font-size: 1.5rem;
+      line-height: 1.15;
+
+      font-weight: 900;
+    }
+
+    .status-card p {
+      margin: 0;
+
+      color: var(--page-muted);
+
+      font-size: .96rem;
+      line-height: 1.6;
+    }
+
+    .status-card.halal {
+      border: 1px solid rgba(91, 166, 106, .40);
+      border-top: 4px solid var(--halal);
+    }
+
+    .status-card.halal h3 {
+      color: #9bc9a4;
+    }
+
+    .status-card.haram {
+      border: 1px solid rgba(214, 101, 91, .40);
+      border-top: 4px solid var(--haram);
+    }
+
+    .status-card.haram h3 {
+      color: #e6a09a;
+    }
+
+    .status-card.mashbooh {
+      border: 1px solid rgba(212, 155, 69, .42);
+      border-top: 4px solid var(--mashbooh);
+    }
+
+    .status-card.mashbooh h3 {
+      color: #e4bd7c;
+    }
+
+
+    /* TABLA */
+
+    .muslim-table-shell {
+      overflow-x: auto;
+
+      border: 1px solid var(--page-line);
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(24, 13, 13, .94),
+          rgba(12, 7, 7, .96)
+        );
+
+      box-shadow: var(--page-shadow);
+    }
+
+    .comparison-table {
+      width: 100%;
+      min-width: 850px;
+
+      border-collapse: collapse;
+
+      font-size: .94rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 19px 20px;
+
+      text-align: left;
+      vertical-align: top;
+
+      border-right: 1px solid rgba(190, 122, 72, .16);
+      border-bottom: 1px solid rgba(190, 122, 72, .16);
+    }
+
+    .comparison-table th:last-child,
+    .comparison-table td:last-child {
+      border-right: 0;
+    }
+
+    .comparison-table tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .comparison-table th {
+      color: var(--page-accent2);
+
+      background: rgba(36, 16, 16, .88);
+
+      font-weight: 850;
+
+      line-height: 1.4;
+    }
+
+    .comparison-table td {
+      color: var(--page-muted);
+
+      line-height: 1.6;
+    }
+
+
+    /* CAN / CANNOT */
+
+    .muslim-can-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 18px;
+    }
+
+    .muslim-can-card {
+      padding: 32px;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(24, 13, 13, .96),
+          rgba(14, 8, 8, .95)
+        );
+    }
+
+    .muslim-can-card.can {
+      border: 1px solid rgba(100, 180, 100, .38);
+    }
+
+    .muslim-can-card.cannot {
+      border: 1px solid rgba(180, 100, 100, .38);
+    }
+
+    .muslim-can-card h2 {
+      margin: 0 0 24px;
+
+      color: var(--page-text);
+
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      line-height: 1.1;
+
+      font-weight: 900;
+    }
+
+    .muslim-can-card ul {
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
+
+    .muslim-can-card li {
+      position: relative;
+
+      margin-bottom: 14px;
+      padding-left: 28px;
+
+      color: var(--page-muted);
+
+      font-size: .96rem;
+      line-height: 1.6;
+    }
+
+    .muslim-can-card li:last-child {
+      margin-bottom: 0;
+    }
+
+    .muslim-can-card.can li::before {
+      content: "✓";
+
+      position: absolute;
+      left: 0;
+
+      color: #8ed09a;
+
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+
+    .muslim-can-card.cannot li::before {
+      content: "×";
+
+      position: absolute;
+      left: 1px;
+
+      color: #e29b9b;
+
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+
+
+    /* INGREDIENTES */
+
+    .ingredient-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+      gap: 14px;
+    }
+
+    .ingredient-tag {
+      min-height: 105px;
+
+      display: flex;
+      align-items: flex-end;
+
+      padding: 20px;
+
+      text-decoration: none;
+
+      border-radius: 18px;
+
+      font-size: 1rem;
+      line-height: 1.25;
+
+      font-weight: 850;
+
+      transition:
+        transform .18s ease,
+        border-color .18s ease,
+        background .18s ease;
+    }
+
+    .ingredient-tag:hover,
+    .ingredient-tag:focus-visible {
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .haram-tag {
+      color: #e6a09a;
+
+      border: 1px solid rgba(214, 101, 91, .36);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(65, 23, 22, .72),
+          rgba(20, 8, 8, .95)
+        );
+    }
+
+    .haram-tag:hover,
+    .haram-tag:focus-visible {
+      border-color: rgba(214, 101, 91, .68);
+    }
+
+    .mashbooh-tag {
+      color: #e4bd7c;
+
+      border: 1px solid rgba(212, 155, 69, .36);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(58, 37, 15, .54),
+          rgba(20, 10, 7, .95)
+        );
+    }
+
+    .mashbooh-tag:hover,
+    .mashbooh-tag:focus-visible {
+      border-color: rgba(212, 155, 69, .68);
+    }
+
+
+    /* CIERRE */
+
+    .muslim-closing {
+      padding: 78px 0 86px;
+    }
+
+    .muslim-closing-box {
+      padding: 46px;
+
+      text-align: center;
+
+      border: 1px solid var(--page-line);
+      border-radius: 28px;
+
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(148, 61, 50, .11),
+          transparent 28rem
+        ),
+        linear-gradient(
+          135deg,
+          rgba(36, 16, 16, .88),
+          rgba(8, 5, 5, .92)
+        );
+
+      box-shadow: var(--page-shadow);
+    }
+
+    .closing-claim {
+      max-width: 880px;
+
+      margin: 0 auto 30px;
+
+      color: var(--page-accent2);
+
+      font-size: clamp(1.5rem, 3vw, 2.35rem);
+      line-height: 1.4;
+
+      letter-spacing: -.025em;
+
+      font-weight: 850;
+    }
+
+    .source-links {
+      max-width: 940px;
+
+      margin: 0 auto 28px;
+
+      color: var(--page-soft);
+
+      font-size: .86rem;
+      line-height: 1.8;
+    }
+
+    .source-links a {
+      color: var(--page-accent);
+
+      text-decoration: none;
+    }
+
+    .source-links a:hover,
+    .source-links a:focus-visible {
+      color: var(--page-accent2);
+      text-decoration: underline;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 46px;
+
+      padding: 0 20px;
+
+      border: 1px solid rgba(230, 160, 107, .55);
+      border-radius: 999px;
+
+      background: rgba(190, 122, 72, .12);
+
+      color: var(--page-accent2);
+
+      font-weight: 800;
+
+      text-decoration: none;
+    }
+
+    .cta-button:hover,
+    .cta-button:focus-visible {
+      background: rgba(190, 122, 72, .24);
+      outline: none;
+    }
+
+
+    /* FOOTER */
+
+    #botia-footer {
+      width: 100%;
+    }
+
+
+    /* RTL */
+
+    body[dir="rtl"] .muslim-hero-grid {
+      direction: rtl;
+    }
+
+    body[dir="rtl"] .status-card,
+    body[dir="rtl"] .muslim-can-card,
+    body[dir="rtl"] .ingredient-tag {
+      text-align: right;
+    }
+
+    body[dir="rtl"] .comparison-table th,
+    body[dir="rtl"] .comparison-table td {
+      text-align: right;
+    }
+
+    body[dir="rtl"] .muslim-can-card li {
+      padding-left: 0;
+      padding-right: 28px;
+    }
+
+    body[dir="rtl"] .muslim-can-card li::before {
+      left: auto;
+      right: 0;
+    }
+
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1000px) {
+
+      .ingredient-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 900px) {
+
+      .muslim-hero-grid {
+        grid-template-columns:
+          minmax(0, 1fr)
+          320px;
+
+        gap: 35px;
+      }
+
+      .muslim-icon-stage {
+        min-height: 350px;
+      }
+
+      .status-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .status-card {
+        min-height: 190px;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      .muslim-wrap {
+        width: min(100% - 30px, 1180px);
+      }
+
+      .muslim-hero {
+        padding: 48px 0 44px;
+      }
+
+      .muslim-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+      }
+
+      .muslim-hero h1 {
+        font-size: clamp(2.7rem, 13vw, 4.4rem);
+      }
+
+      .muslim-icon-stage {
+        min-height: 300px;
+      }
+
+      .muslim-main-icon {
+        width: min(235px, 70%);
+      }
+
+      .muslim-can-grid,
+      .ingredient-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .muslim-section {
+        padding: 54px 0;
+      }
+
+      .muslim-closing-box {
+        padding: 30px 26px;
+      }
+    }
+  </style>
+
   <script src="/botia/assets/js/menu.js"></script>
-  <link rel="stylesheet" href="/botia/assets/footer.css">
 </head>
-<body data-botia-module="muslim" class="has-botia-header botia-info-page">
-  <button id="menuBtn" aria-label="Menu">☰</button>
-<div class="botia-header-bar">
-  <div class="botia-nav-left">
-    <a href="/"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+
+
+<body
+  data-botia-module="muslim"
+  class="has-botia-header botia-info-page"
+>
+
+  <!-- CABECERA COMÚN -->
+
+  <button id="menuBtn" aria-label="Menu">
+    ☰
+  </button>
+
+  <div class="botia-header-bar">
+
+    <div class="botia-nav-left">
+      <a href="/">
+        <img
+          class="nav-logo"
+          src="/botia_jar_512.png"
+          alt="BOTIA"
+          style="width:28px;height:28px;"
+        >
+      </a>
+    </div>
+
+    <div class="lang-switcher">
+
+      <label
+        for="lang-select"
+        class="sr-only"
+        style="
+          position:absolute;
+          width:1px;
+          height:1px;
+          overflow:hidden;
+          clip:rect(0,0,0,0);
+        "
+      >
+        Select language
+      </label>
+
+      <select
+        id="lang-select"
+        onchange="cambiarIdioma(this.value)"
+        aria-label="Select language"
+      >
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="it">Italiano</option>
+        <option value="nl">Nederlands</option>
+        <option value="pl">Polski</option>
+        <option value="pt">Português</option>
+        <option value="ro">Română</option>
+        <option value="ru">Русский</option>
+        <option value="tr">Türkçe</option>
+        <option value="zh">中文</option>
+      </select>
+
+    </div>
+
   </div>
-  <div class="lang-switcher">
-    <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
-    <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
-      <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
-      <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
-      <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
-      <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
-      <option value="tr">Türkçe</option><option value="zh">中文</option>
-    </select>
-  </div>
-</div>
 
-  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
 
-  <main class="landing" id="main-content">
-    <section class="hero">
-      <img class="hero-logo" fetchpriority="high" src="/botia/assets/muslim.png" style="content-visibility:auto;" alt="BOTIA Muslim Choice — read the label" onerror="this.src='/botia/assets/muslim.png'; this.onerror=null;">
-      <h1 id="title">Muslim</h1>
-      <p class="subtitle" id="subtitle">Read the label. Understand what it really says.</p>
-      <p class="description" id="description">BOTIA reads declared ingredients and crosses them with documented criteria. It does not certify food — it makes the label transparent.</p>
-    </section>
+  <a
+    href="#main-content"
+    class="skip-link"
+    style="
+      position:absolute;
+      left:-9999px;
+      top:auto;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+    "
+  >
+    Skip to main content
+  </a>
 
-    <section class="section">
-      <h2 class="section-title" id="states_title">How BOTIA classifies ingredients</h2>
-      <div class="status-grid">
-        <a href="/ingredients/halal.html" class="status-card halal">
-          <h3 id="halal_name">Halal</h3>
-          <p id="halal_desc">No prohibited ingredients or doubtful origin detected on the label.</p>
-        </a>
-        <a href="/ingredients/haram.html" class="status-card haram">
-          <h3 id="haram_name">Haram</h3>
-          <p id="haram_desc">The label declares clearly prohibited ingredients: pork derivatives, alcohol, or blood.</p>
-        </a>
-        <a href="/pages/undeclared_origin.html" class="status-card mashbooh">
-          <h3 id="mashbooh_name">Mashbooh</h3>
-          <p id="mashbooh_desc">The label does not confirm the origin or process. Uncertainty is the information.</p>
-        </a>
-      </div>
-    </section>
 
-    <section class="section">
-      <h2 class="section-title" id="doubts_title">Why do these doubts arise?</h2>
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th id="th_label">Label Aspect</th>
-            <th id="th_general">General Regulation</th>
-            <th id="th_halal">Halal Standard</th>
-            <th id="th_botia">Why BOTIA detects ambiguity</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td id="td1_aspect">Additives (E-numbers) &amp; Enzymes</td>
-            <td id="td1_general">Can be grouped by function without specifying vegetable or animal origin.</td>
-            <td id="td1_halal">Requires all additives to come strictly from lawful sources.</td>
-            <td id="td1_botia">If an additive could be animal-derived but the label is silent, BOTIA marks it as doubtful.</td>
-          </tr>
-          <tr>
-            <td id="td2_aspect">Meat from permitted animals</td>
-            <td id="td2_general">Requires declaring the animal species.</td>
-            <td id="td2_halal">Requires lawful slaughter by a Muslim invoking Allah and cutting specific veins.</td>
-            <td id="td2_botia">Labels almost never detail the slaughter method, so BOTIA cannot assume compliance.</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+  <main id="main-content">
 
-    <section class="section">
-      <h2 class="section-title" id="cancannot_title">What BOTIA can and cannot conclude</h2>
-      <div class="can-cannot">
-        <div class="can-box">
-          <h4 id="can_title">BOTIA CAN</h4>
-          <ul>
-            <li id="can1">Read declared ingredients from the label.</li>
-            <li id="can2">Detect clearly Haram ingredients based on documented criteria.</li>
-            <li id="can3">Detect ingredients with ambiguous origin and make the silence visible.</li>
-          </ul>
+    <!-- HERO -->
+
+    <section class="muslim-hero">
+
+      <div class="muslim-wrap muslim-hero-grid">
+
+        <div class="muslim-hero-copy">
+
+          <h1 id="title">
+            Muslim
+          </h1>
+
+          <p
+            class="subtitle"
+            id="subtitle"
+          >
+            Read the label. Understand what it really says.
+          </p>
+
+          <p
+            class="description"
+            id="description"
+          >
+            BOTIA reads declared ingredients and crosses them with documented criteria. It does not certify food — it makes the label transparent.
+          </p>
+
         </div>
-        <div class="cannot-box">
-          <h4 id="cannot_title">BOTIA CANNOT</h4>
-          <ul>
-            <li id="cannot1">Certify Halal — it is not a guarantee or seal of approval.</li>
-            <li id="cannot2">Detect undeclared processes like cross-contamination in factories.</li>
-            <li id="cannot3">Replace a religious authority or certification body.</li>
-          </ul>
+
+
+        <div class="muslim-icon-stage">
+
+          <img
+            class="muslim-main-icon hero-logo"
+            src="/botia/assets/muslim.png"
+            alt="BOTIA Muslim Choice — read the label"
+            fetchpriority="high"
+            onerror="this.src='/botia/assets/muslim.png'; this.onerror=null;"
+          >
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section">
-      <h2 class="section-title" id="haram_ingredients_title">Ingredients classified as Haram</h2>
-      <div class="ingredient-grid">
-        <a href="/ingredients/alcohol.html" class="ingredient-tag haram-tag" id="ingredient_alcohol">Alcohol</a>
-        <a href="/ingredients/vinegar.html" class="ingredient-tag haram-tag" id="ingredient_vinegar">Vinegar</a>
+
+    <!-- ESTADOS -->
+
+    <section class="muslim-section muslim-section-alt">
+
+      <div class="muslim-wrap">
+
+        <div class="muslim-section-head">
+
+          <h2 id="states_title">
+            How BOTIA classifies ingredients
+          </h2>
+
+        </div>
+
+
+        <div class="status-grid">
+
+          <a
+            href="/ingredients/halal.html"
+            class="status-card halal"
+          >
+
+            <h3 id="halal_name">
+              Halal
+            </h3>
+
+            <p id="halal_desc">
+              No prohibited ingredients or doubtful origin detected on the label.
+            </p>
+
+          </a>
+
+
+          <a
+            href="/ingredients/haram.html"
+            class="status-card haram"
+          >
+
+            <h3 id="haram_name">
+              Haram
+            </h3>
+
+            <p id="haram_desc">
+              The label declares clearly prohibited ingredients: pork derivatives, alcohol, or blood.
+            </p>
+
+          </a>
+
+
+          <a
+            href="/pages/undeclared_origin.html"
+            class="status-card mashbooh"
+          >
+
+            <h3 id="mashbooh_name">
+              Mashbooh
+            </h3>
+
+            <p id="mashbooh_desc">
+              The label does not confirm the origin or process. Uncertainty is the information.
+            </p>
+
+          </a>
+
+        </div>
+
       </div>
+
     </section>
 
-    <section class="section">
-      <h2 class="section-title" id="mashbooh_ingredients_title">Ingredients that may be Mashbooh</h2>
-      <div class="ingredient-grid">
-        <a href="/ingredients/e471.html" class="ingredient-tag mashbooh-tag" id="ingredient_e471">E471</a>
-        <a href="/ingredients/e472.html" class="ingredient-tag mashbooh-tag" id="ingredient_e472">E472</a>
-        <a href="/ingredients/lecithins.html" class="ingredient-tag mashbooh-tag" id="ingredient_lecithins">Lecithins</a>
-        <a href="/ingredients/natural_flavourings.html" class="ingredient-tag mashbooh-tag" id="ingredient_natural_flavourings">Natural Flavourings</a>
-        <a href="/ingredients/enzymes.html" class="ingredient-tag mashbooh-tag" id="ingredient_enzymes">Food enzymes</a>
-        <a href="/ingredients/gelatine.html" class="ingredient-tag mashbooh-tag" id="ingredient_gelatine">Gelatine</a>
-        <a href="/ingredients/glycerol.html" class="ingredient-tag mashbooh-tag" id="ingredient_glycerol">Glycerol</a>
+
+    <!-- DUDAS / COMPARACIÓN -->
+
+    <section class="muslim-section">
+
+      <div class="muslim-wrap">
+
+        <div class="muslim-section-head">
+
+          <h2 id="doubts_title">
+            Why do these doubts arise?
+          </h2>
+
+        </div>
+
+
+        <div class="muslim-table-shell">
+
+          <table class="comparison-table">
+
+            <thead>
+
+              <tr>
+
+                <th id="th_label">
+                  Label Aspect
+                </th>
+
+                <th id="th_general">
+                  General Regulation
+                </th>
+
+                <th id="th_halal">
+                  Halal Standard
+                </th>
+
+                <th id="th_botia">
+                  Why BOTIA detects ambiguity
+                </th>
+
+              </tr>
+
+            </thead>
+
+
+            <tbody>
+
+              <tr>
+
+                <td id="td1_aspect">
+                  Additives (E-numbers) &amp; Enzymes
+                </td>
+
+                <td id="td1_general">
+                  Can be grouped by function without specifying vegetable or animal origin.
+                </td>
+
+                <td id="td1_halal">
+                  Requires all additives to come strictly from lawful sources.
+                </td>
+
+                <td id="td1_botia">
+                  If an additive could be animal-derived but the label is silent, BOTIA marks it as doubtful.
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td id="td2_aspect">
+                  Meat from permitted animals
+                </td>
+
+                <td id="td2_general">
+                  Requires declaring the animal species.
+                </td>
+
+                <td id="td2_halal">
+                  Requires lawful slaughter by a Muslim invoking Allah and cutting specific veins.
+                </td>
+
+                <td id="td2_botia">
+                  Labels almost never detail the slaughter method, so BOTIA cannot assume compliance.
+                </td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
       </div>
+
     </section>
 
-    <section class="closing">
-      <p class="closing-claim" id="closing">Transparency is not certification. It is the right to know what the label says — and what it does not.</p>
-      <p class="source-links">
-        <span id="sources-label">Sources:</span>
-        <a href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B24-1997%252FCXG_024e.pdf" target="_blank" rel="noopener">Codex CAC/GL 24-1997</a> ·
-        <a href="https://smiic.org/en/project/24" target="_blank" rel="noopener">OIC/SMIIC 1:2019</a>
-      </p>
-      <a href="/" class="cta-button" id="back-to-botia">← Back to BOTIA</a>
+
+    <!-- CAN / CANNOT -->
+
+    <section class="muslim-section muslim-section-alt">
+
+      <div class="muslim-wrap">
+
+        <div class="muslim-section-head">
+
+          <h2 id="cancannot_title">
+            What BOTIA can and cannot conclude
+          </h2>
+
+        </div>
+
+
+        <div class="muslim-can-grid">
+
+          <article class="muslim-can-card can">
+
+            <h2 id="can_title">
+              BOTIA CAN
+            </h2>
+
+            <ul>
+
+              <li id="can1">
+                Read declared ingredients from the label.
+              </li>
+
+              <li id="can2">
+                Detect clearly Haram ingredients based on documented criteria.
+              </li>
+
+              <li id="can3">
+                Detect ingredients with ambiguous origin and make the silence visible.
+              </li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="muslim-can-card cannot">
+
+            <h2 id="cannot_title">
+              BOTIA CANNOT
+            </h2>
+
+            <ul>
+
+              <li id="cannot1">
+                Certify Halal — it is not a guarantee or seal of approval.
+              </li>
+
+              <li id="cannot2">
+                Detect undeclared processes like cross-contamination in factories.
+              </li>
+
+              <li id="cannot3">
+                Replace a religious authority or certification body.
+              </li>
+
+            </ul>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- HARAM -->
+
+    <section class="muslim-section">
+
+      <div class="muslim-wrap">
+
+        <div class="muslim-section-head">
+
+          <h2 id="haram_ingredients_title">
+            Ingredients classified as Haram
+          </h2>
+
+        </div>
+
+
+        <div class="ingredient-grid">
+
+          <a
+            href="/ingredients/alcohol.html"
+            class="ingredient-tag haram-tag"
+            id="ingredient_alcohol"
+          >
+            Alcohol
+          </a>
+
+
+          <a
+            href="/ingredients/vinegar.html"
+            class="ingredient-tag haram-tag"
+            id="ingredient_vinegar"
+          >
+            Vinegar
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MASHBOOH -->
+
+    <section class="muslim-section muslim-section-alt">
+
+      <div class="muslim-wrap">
+
+        <div class="muslim-section-head">
+
+          <h2 id="mashbooh_ingredients_title">
+            Ingredients that may be Mashbooh
+          </h2>
+
+        </div>
+
+
+        <div class="ingredient-grid">
+
+          <a
+            href="/ingredients/e471.html"
+            class="ingredient-tag mashbooh-tag"
+            id="ingredient_e471"
+          >
+            E471
+          </a>
+
+
+          <a
+            href="/ingredients/e472.html"
+            class="ingredient-tag mashbooh-tag"
+            id="ingredient_e472"
+          >
+            E472
+          </a>
+
+
+          <a
+            href="/ingredients/lecithins.html"
+            class="ingredient-tag mashbooh-tag"
+            id="ingredient_lecithins"
+          >
+            Lecithins
+          </a>
+
+
+          <a
+            href="/ingredients/natural_flavourings.html"
+            class="ingredient-tag mashbooh-tag"
+            id="ingredient_natural_flavourings"
+          >
+            Natural Flavourings
+          </a>
+
+
+          <a
+            href="/ingredients/enzymes.html"
+            class="ingredient-tag mashbooh-tag"
+            id="ingredient_enzymes"
+          >
+            Food enzymes
+          </a>
+
+
+          <a
+            href="/ingredients/gelatine.html"
+            class="ingredient-tag mashbooh-tag"
+            id="ingredient_gelatine"
+          >
+            Gelatine
+          </a>
+
+
+          <a
+            href="/ingredients/glycerol.html"
+            class="ingredient-tag mashbooh-tag"
+            id="ingredient_glycerol"
+          >
+            Glycerol
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CIERRE -->
+
+    <section class="muslim-closing">
+
+      <div class="muslim-wrap">
+
+        <div class="muslim-closing-box">
+
+          <p
+            class="closing-claim"
+            id="closing"
+          >
+            Transparency is not certification. It is the right to know what the label says — and what it does not.
+          </p>
+
+
+          <p class="source-links">
+
+            <span id="sources-label">
+              Sources:
+            </span>
+
+            <a
+              href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXG%2B24-1997%252FCXG_024e.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              Codex CAC/GL 24-1997
+            </a>
+
+            ·
+
+            <a
+              href="https://smiic.org/en/project/24"
+              target="_blank"
+              rel="noopener"
+            >
+              OIC/SMIIC 1:2019
+            </a>
+
+          </p>
+
+
+          <a
+            href="/"
+            class="cta-button"
+            id="back-to-botia"
+          >
+            ← Back to BOTIA
+          </a>
+
+        </div>
+
+      </div>
+
     </section>
 
   </main>
 
-  <script src="/botia/assets/js/i18n-loader.js" defer></script>
+
+  <script
+    src="/botia/assets/js/i18n-loader.js"
+    defer
+  ></script>
+
   <script src="/botia/assets/js/botia-chat.js"></script>
+
   <script src="/botia/assets/js/footer.js?v=20260817-1502"></script>
+
 </body>
 </html>
