@@ -30,6 +30,86 @@
         return chatTranslations[key] || key;
     }
 
+    // ============ CONTEXTO DE PÁGINA ============
+    function getPageContext() {
+        const params = new URLSearchParams(window.location.search);
+        const pathname = window.location.pathname;
+        const moduleName = document.body?.dataset?.botiaModule || '';
+
+        const context = {
+            page: moduleName || pathname,
+            language: currentLang
+        };
+
+        // Regulatory
+        if (pathname.startsWith('/regulatory/')) {
+            context.page = 'regulatory';
+
+            // Prioridad: ingrediente recibido en la URL desde una ficha.
+            const ingredientFromUrl = params.get('ingredient');
+
+            // Si el usuario cambia después el filtro dentro de Regulatory,
+            // usamos también el ingrediente seleccionado actualmente.
+            const ingredientFilter = document.getElementById('filter-substance');
+            const ingredientFromFilter = ingredientFilter?.value || '';
+
+            const ingredient = ingredientFromFilter || ingredientFromUrl;
+
+            if (ingredient) {
+                context.ingredient = ingredient;
+
+                const selectedOption =
+                    ingredientFilter?.options?.[ingredientFilter.selectedIndex];
+
+                if (selectedOption?.textContent?.trim()) {
+                    context.ingredient_name = selectedOption.textContent.trim();
+                }
+            }
+
+            return context;
+        }
+
+        // Fichas individuales de ingredientes.
+        const ingredientMatch = pathname.match(/\/ingredients\/([^/]+)\.html$/i);
+
+        if (ingredientMatch) {
+            context.page = 'ingredient';
+            context.ingredient = decodeURIComponent(ingredientMatch[1]);
+
+            const ingredientName = document.getElementById('name')?.textContent?.trim();
+
+            if (ingredientName) {
+                context.ingredient_name = ingredientName;
+            }
+        }
+
+        return context;
+    }
+
+    function buildContextualMessage(message) {
+        const context = getPageContext();
+
+        const parts = [
+            `page=${context.page}`,
+            `language=${context.language}`
+        ];
+
+        if (context.ingredient) {
+            parts.push(`ingredient=${context.ingredient}`);
+        }
+
+        if (context.ingredient_name) {
+            parts.push(`ingredient_name=${context.ingredient_name}`);
+        }
+
+        return (
+            '[BOTIA PAGE CONTEXT — internal context, do not quote unless relevant: ' +
+            parts.join('; ') +
+            ']\n\n' +
+            message
+        );
+    }
+
     // ============ TRADUCCIONES ============
     async function loadChatTranslations(lang) {
         try {
@@ -226,7 +306,15 @@
             const response = await fetch(WORKER_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ messages: [{ role: 'user', content: message }], language: currentLang })
+                body: JSON.stringify({
+                    messages: [
+                        {
+                            role: 'user',
+                            content: buildContextualMessage(message)
+                        }
+                    ],
+                    language: currentLang
+                })
             });
 
             removeTyping();
