@@ -335,3 +335,148 @@ body.botia-main-page .hero h1 {
 body.botia-main-page .hero .subtitle {
   margin-top: 8px;
 }
+
+/* BOTIA INFO PAGES — HERO LATERAL START */
+
+/*
+   SOLO las 11 páginas que llevan:
+   body.botia-info-page
+
+   Sistema visual tomado de botia-landing.css.
+*/
+
+body.botia-info-page .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 120px;
+    grid-template-areas:
+        "title icon"
+        "subtitle icon"
+        "description icon";
+    column-gap: 30px;
+    align-items: center;
+
+    padding: 60px 0 50px;
+
+    text-align: left;
+}
+
+/* Icono temático: lateral, no encima */
+body.botia-info-page .hero .hero-logo {
+    grid-area: icon;
+
+    width: 100px !important;
+    height: 100px !important;
+
+    margin: 0 !important;
+
+    justify-self: end;
+    align-self: center;
+
+    display: block !important;
+    object-fit: contain !important;
+
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
+}
+
+/* Título — mismo sistema que la landing */
+body.botia-info-page .hero h1 {
+    grid-area: title;
+
+    font-size: 2.4rem;
+    line-height: 1.25;
+    font-weight: 800;
+
+    color: #fff3ea;
+
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+
+    text-align: left;
+}
+
+/* Subtítulo — cobre BOTIA */
+body.botia-info-page .hero .subtitle {
+    grid-area: subtitle;
+
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 600;
+
+    color: #e6a06b;
+
+    margin: 0 0 10px;
+
+    text-align: left;
+}
+
+/* Explicación */
+body.botia-info-page .hero .description {
+    grid-area: description;
+
+    font-size: 1rem;
+    line-height: 1.6;
+
+    color: #d9a77d;
+
+    margin: 0;
+
+    text-align: left;
+}
+
+
+/* RTL */
+body[dir="rtl"].botia-info-page .hero {
+    grid-template-columns: 120px minmax(0, 1fr);
+    grid-template-areas:
+        "icon title"
+        "icon subtitle"
+        "icon description";
+
+    text-align: right;
+}
+
+body[dir="rtl"].botia-info-page .hero .hero-logo {
+    justify-self: start;
+}
+
+body[dir="rtl"].botia-info-page .hero h1,
+body[dir="rtl"].botia-info-page .hero .subtitle,
+body[dir="rtl"].botia-info-page .hero .description {
+    text-align: right;
+}
+
+
+/* Móvil: sigue siendo lateral, no vuelve arriba */
+@media (max-width: 600px) {
+
+    body.botia-info-page .hero {
+        grid-template-columns: minmax(0, 1fr) 88px;
+        column-gap: 16px;
+
+        padding: 38px 0 34px;
+    }
+
+    body.botia-info-page .hero .hero-logo {
+        width: 82px !important;
+        height: 82px !important;
+    }
+
+    body.botia-info-page .hero h1 {
+        font-size: 2rem;
+        line-height: 1.08;
+    }
+
+    body.botia-info-page .hero .subtitle {
+        font-size: 1.05rem;
+    }
+
+    body.botia-info-page .hero .description {
+        font-size: 0.95rem;
+    }
+
+    body[dir="rtl"].botia-info-page .hero {
+        grid-template-columns: 88px minmax(0, 1fr);
+    }
+}
+
+/* BOTIA INFO PAGES — HERO LATERAL END */

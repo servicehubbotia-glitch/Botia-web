@@ -750,6 +750,9 @@
   const applyMainPageLayout = () => {
     if (!location.pathname.startsWith("/pages/")) return;
 
+    // Las 11 landings informativas conservan su icono temático.
+    if (document.body.classList.contains("botia-info-page")) return;
+
     document.body.classList.add("botia-main-page");
 
     const heroIcon = document.querySelector(".hero .hero-logo");
