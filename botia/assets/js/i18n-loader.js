@@ -282,7 +282,11 @@
   })[path];
 
   const applyLink = (key, value) => {
-    if (typeof value !== "string" || !key.endsWith("_link")) return false;
+    if (
+      typeof value !== "string" ||
+      !key.endsWith("_link") ||
+      !/^(\/|https?:\/\/|#|mailto:|tel:)/i.test(value.trim())
+    ) return false;
     const direct = document.getElementById(key);
     if (direct?.matches("a")) {
       direct.setAttribute("href", value);
