@@ -164,11 +164,6 @@ body{
   background:rgba(24,13,13,.92);
 }
 
-.home-lang-pill span{
-  color:var(--home-soft);
-  font-size:.8rem;
-}
-
 .home-lang-pill select{
   color:var(--home-text);
   background:transparent;
@@ -549,7 +544,6 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
   .home-wrap{width:min(100% - 28px,1180px)}
   .home-topbar-inner{min-height:62px}
   .home-wordmark{font-size:.9rem}
-  .home-lang-pill span{display:none}
   .home-hero{padding-top:48px}
   .home-hero h1{font-size:2.8rem}
   .home-section{padding:52px 0}
@@ -583,7 +577,6 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
 
     <div class="lang-switcher">
       <div class="home-lang-pill">
-        <span id="home_language_label">Language</span>
         <label class="sr-only" for="lang-select" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
         <select aria-label="Select language" id="lang-select" onchange="cambiarIdioma(this.value)">
           <option value="en">English</option>
