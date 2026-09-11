@@ -385,11 +385,6 @@ body {
 }
 .botia-nav-left { display: flex; align-items: center; gap: 12px; }
 .botia-header-bar .lang-switcher { position: static; }
-.botia-header-bar .lang-switcher select {
-  background: rgba(24,13,13,0.96); color: #f2e4dc;
-  border: 1px solid rgba(190,122,72,0.42); border-radius: 6px;
-  padding: 4px 8px; font-size: 0.75rem; cursor: pointer;
-}
 body.has-botia-header { padding-top: 36px; }
 body.botia-index-page.has-botia-header { padding-top: 46px; }
 body.botia-index-page .botia-header-bar { padding: 8px 16px; }
