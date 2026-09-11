@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BOTIA — About BOTIA</title>
+  <meta
+    name="description"
+    content="BOTIA is a food-label intelligence tool that reads the real ingredient list and connects what it finds with clear evidence, regulatory context and choice layers."
+  >
+
+  <meta property="og:title" content="BOTIA — About BOTIA">
+  <meta property="og:description" content="BOTIA reads the real ingredient list and connects what it finds with evidence, regulatory context and choice layers.">
+  <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <meta property="og:url" content="https://www.botia-safefood.com/pages/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BOTIA Food Transparency">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BOTIA — About BOTIA">
+  <meta name="twitter:description" content="BOTIA reads the real ingredient list and connects what it finds with evidence, regulatory context and choice layers.">
+  <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+
+  <link rel="canonical" href="https://www.botia-safefood.com/pages/about.html">
+  <link rel="icon" href="/botia_jar_512.png" type="image/png">
+
+  <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/pages/about.html?lang=en">
+  <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/pages/about.html?lang=es">
+  <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/pages/about.html?lang=ar">
+  <link rel="alternate" hreflang="de" href="https://www.botia-safefood.com/pages/about.html?lang=de">
+  <link rel="alternate" hreflang="fr" href="https://www.botia-safefood.com/pages/about.html?lang=fr">
+  <link rel="alternate" hreflang="nl" href="https://www.botia-safefood.com/pages/about.html?lang=nl">
+  <link rel="alternate" hreflang="it" href="https://www.botia-safefood.com/pages/about.html?lang=it">
+  <link rel="alternate" hreflang="pt" href="https://www.botia-safefood.com/pages/about.html?lang=pt">
+  <link rel="alternate" hreflang="pl" href="https://www.botia-safefood.com/pages/about.html?lang=pl">
+  <link rel="alternate" hreflang="ro" href="https://www.botia-safefood.com/pages/about.html?lang=ro">
+  <link rel="alternate" hreflang="ru" href="https://www.botia-safefood.com/pages/about.html?lang=ru">
+  <link rel="alternate" hreflang="tr" href="https://www.botia-safefood.com/pages/about.html?lang=tr">
+  <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/pages/about.html?lang=zh">
+  <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/pages/about.html?lang=id">
+  <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/pages/about.html">
+
+  <link rel="stylesheet" href="/botia/assets/menu.css">
+  <link rel="stylesheet" href="/botia/assets/footer.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About BOTIA",
+    "description": "BOTIA is a food-label intelligence tool that reads the real ingredient list and connects what it finds with clear evidence, regulatory context and choice layers.",
+    "url": "https://www.botia-safefood.com/pages/about.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BOTIA",
+      "url": "https://www.botia-safefood.com"
+    },
+    "about": {
+      "@type": "SoftwareApplication",
+      "name": "BOTIA",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Android",
+      "url": "https://www.botia-safefood.com",
+      "sameAs": "https://play.google.com/store/apps/details?id=com.botia.safefood"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "BOTIA",
+      "url": "https://www.botia-safefood.com"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#080505;
+      --panel:#180d0d;
+      --panel-strong:#241010;
+      --text:#f2e4dc;
+      --muted:#c0a08c;
+      --soft:#8a8a8a;
+      --accent:#e6a06b;
+      --accent-light:#ffd8bd;
+      --line:rgba(190,122,72,.28);
+      --shadow:0 18px 60px rgba(0,0,0,.38);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(circle at 20% 5%,rgba(100,28,35,.15),transparent 34rem),
+        radial-gradient(circle at 80% 20%,rgba(138,74,37,.10),transparent 30rem),
+        linear-gradient(180deg,#0a0606,#080505 50%,#0d0808);
+      overflow-x:hidden;
+    }
+
+    a{color:inherit}
+
+    .about-topbar{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(8,5,5,.90);
+      -webkit-backdrop-filter:blur(14px);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(190,122,72,.16);
+    }
+
+    .about-topbar-inner,
+    .about-wrap{
+      width:min(1180px,calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    .about-topbar-inner{
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      gap:18px;
+    }
+
+    #menuBtn{
+      position:static;
+      flex:0 0 42px;
+    }
+
+    .about-wordmark{
+      color:var(--accent);
+      font-weight:900;
+      letter-spacing:.14em;
+      text-decoration:none;
+    }
+
+    .about-spacer{flex:1}
+
+    .lang-switcher{position:static}
+
+    .about-lang-pill{
+      display:flex;
+      align-items:center;
+      padding:5px 10px 5px 12px;
+      border:1px solid rgba(190,122,72,.38);
+      border-radius:999px;
+      background:rgba(24,13,13,.92);
+    }
+
+    .about-lang-pill select{
+      color:var(--text);
+      background:transparent;
+      border:0;
+      outline:0;
+      padding:5px 2px;
+      cursor:pointer;
+    }
+
+    .about-lang-pill option{
+      background:#180d0d;
+      color:#f2e4dc;
+    }
+
+    .about-hero{padding:74px 0 56px}
+
+    .about-hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:60px;
+      align-items:center;
+    }
+
+    .about-kicker{
+      color:var(--accent);
+      font-size:.78rem;
+      font-weight:800;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+    }
+
+    .about-hero h1{
+      margin:14px 0 18px;
+      max-width:900px;
+      font-size:clamp(2.6rem,5.8vw,5.3rem);
+      line-height:.95;
+      letter-spacing:-.055em;
+      font-weight:900;
+    }
+
+    .about-hero .subtitle{
+      max-width:720px;
+      margin:0;
+      color:var(--muted);
+      font-size:1.08rem;
+      line-height:1.75;
+    }
+
+    .about-icon-stage{
+      min-height:410px;
+      position:relative;
+      overflow:hidden;
+      display:grid;
+      place-items:center;
+      border:1px solid var(--line);
+      border-radius:30px;
+      background:linear-gradient(145deg,rgba(36,16,16,.94),rgba(8,5,5,.82));
+      box-shadow:var(--shadow);
+    }
+
+    .about-icon-stage::before,
+    .about-icon-stage::after{
+      content:"";
+      position:absolute;
+      width:260px;
+      height:260px;
+      border:1px solid rgba(230,160,107,.10);
+      border-radius:50%;
+    }
+
+    .about-icon-stage::before{left:-90px;top:-90px}
+    .about-icon-stage::after{right:-110px;bottom:-120px}
+
+    .about-main-icon{
+      width:min(290px,70%);
+      height:auto;
+      position:relative;
+      z-index:2;
+      object-fit:contain;
+      filter:drop-shadow(0 18px 28px rgba(0,0,0,.35));
+    }
+
+    .about-section{padding:72px 0}
+
+    .about-section-alt{
+      background:linear-gradient(180deg,rgba(17,8,8,.45),rgba(36,16,16,.22));
+    }
+
+    .about-two-grid,
+    .about-three-grid{
+      display:grid;
+      gap:18px;
+    }
+
+    .about-two-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .about-three-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+    .about-card{
+      padding:32px;
+      border:1px solid var(--line);
+      border-radius:22px;
+      background:linear-gradient(180deg,rgba(24,13,13,.96),rgba(14,8,8,.95));
+    }
+
+    .about-card h2,
+    .about-card h3{
+      margin:0 0 16px;
+      color:var(--accent-light);
+      line-height:1.12;
+      letter-spacing:-.025em;
+    }
+
+    .about-card h2{font-size:clamp(1.65rem,2.5vw,2.2rem)}
+    .about-card h3{font-size:1.28rem}
+
+    .about-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:1rem;
+      line-height:1.75;
+    }
+
+    .about-section-head{
+      margin-bottom:28px;
+    }
+
+    .about-section-head h2{
+      max-width:800px;
+      margin:0;
+      font-size:clamp(2rem,4vw,3.4rem);
+      line-height:1.05;
+      letter-spacing:-.04em;
+      font-weight:900;
+    }
+
+    .about-step{
+      min-height:230px;
+    }
+
+    .about-step-number{
+      margin-bottom:22px;
+      color:var(--accent);
+      font-size:.78rem;
+      font-weight:900;
+      letter-spacing:.15em;
+    }
+
+    .about-list{
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+
+    .about-list li{
+      position:relative;
+      margin-bottom:16px;
+      padding-left:30px;
+      color:var(--muted);
+      font-size:1rem;
+      line-height:1.7;
+    }
+
+    .about-list li:last-child{margin-bottom:0}
+
+    .about-list li::before{
+      content:"—";
+      position:absolute;
+      left:0;
+      color:var(--accent);
+      font-weight:900;
+    }
+
+    .about-statement{padding:78px 0}
+
+    .about-statement-box{
+      padding:44px;
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:
+        radial-gradient(circle at 15% 25%,rgba(148,61,50,.11),transparent 22rem),
+        linear-gradient(135deg,rgba(36,16,16,.88),rgba(8,5,5,.90));
+      box-shadow:var(--shadow);
+    }
+
+    .about-statement-box h2{
+      max-width:900px;
+      margin:0 0 18px;
+      font-size:clamp(2rem,4vw,3.6rem);
+      line-height:1.04;
+      letter-spacing:-.04em;
+      font-weight:900;
+    }
+
+    .about-statement-box p{
+      max-width:850px;
+      margin:0;
+      color:var(--muted);
+      font-size:1.02rem;
+      line-height:1.7;
+    }
+
+    body[dir="rtl"] .about-hero-grid{direction:rtl}
+    body[dir="rtl"] .about-card,
+    body[dir="rtl"] .about-statement-box{text-align:right}
+    body[dir="rtl"] .about-list li{padding-left:0;padding-right:30px}
+    body[dir="rtl"] .about-list li::before{left:auto;right:0}
+
+    @media (max-width:900px){
+      .about-hero-grid{
+        grid-template-columns:minmax(0,1fr) 320px;
+        gap:35px;
+      }
+      .about-icon-stage{min-height:350px}
+    }
+
+    @media (max-width:700px){
+      .about-topbar-inner,
+      .about-wrap{width:min(100% - 30px,1180px)}
+      .about-hero{padding:48px 0 44px}
+      .about-hero-grid,
+      .about-two-grid,
+      .about-three-grid{grid-template-columns:1fr}
+      .about-hero-grid{gap:26px}
+      .about-hero h1{font-size:clamp(2.7rem,13vw,4.4rem)}
+      .about-icon-stage{min-height:300px}
+      .about-main-icon{width:min(225px,68%)}
+      .about-section{padding:54px 0}
+      .about-statement{padding:58px 0}
+      .about-statement-box{padding:30px 26px}
+      .about-step{min-height:0}
+    }
+  </style>
+
+  <script src="/botia/assets/js/menu.js"></script>
+</head>
+
+<body class="has-botia-header botia-info-page" data-botia-module="about">
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="about-topbar">
+    <div class="about-topbar-inner">
+      <button id="menuBtn" aria-label="Menu">☰</button>
+      <a class="about-wordmark" href="/">BOTIA</a>
+      <div class="about-spacer"></div>
+
+      <div class="lang-switcher about-lang-pill">
+        <label
+          for="lang-select"
+          style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"
+        >Select language</label>
+        <select id="lang-select" aria-label="Select language" onchange="cambiarIdioma(this.value)">
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="it">Italiano</option>
+          <option value="nl">Nederlands</option>
+          <option value="pl">Polski</option>
+          <option value="pt">Português</option>
+          <option value="ro">Română</option>
+          <option value="ru">Русский</option>
+          <option value="tr">Türkçe</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="about-hero">
+      <div class="about-wrap about-hero-grid">
+        <div>
+          <div class="about-kicker" id="kicker">ABOUT</div>
+          <h1 id="title">About BOTIA</h1>
+          <p class="subtitle" id="subtitle">Read the label. Understand what it means.</p>
+        </div>
+
+        <div class="about-icon-stage" aria-hidden="true">
+          <img
+            class="about-main-icon"
+            src="/botia_jar_512.png"
+            alt=""
+            fetchpriority="high"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-wrap about-two-grid">
+        <article class="about-card">
+          <h2 id="what_title">What BOTIA is</h2>
+          <p id="what_body">BOTIA is a food-label intelligence tool. It reads the real ingredient list on a product and turns that text into structured information: ingredient explanations, evidence layers, regulatory context and choice-related signals.</p>
+        </article>
+
+        <article class="about-card">
+          <h2 id="why_title">Why BOTIA exists</h2>
+          <p id="why_body">Food labels are designed to declare ingredients, not to explain them. Important context is often scattered across regulations, scientific opinions, certification systems and ingredient terminology. BOTIA brings that context closer to the moment you are reading the product.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section about-section-alt">
+      <div class="about-wrap">
+        <div class="about-section-head">
+          <h2 id="how_title">How BOTIA works</h2>
+        </div>
+
+        <div class="about-three-grid">
+          <article class="about-card about-step">
+            <div class="about-step-number">01</div>
+            <h3 id="how_1_title">Read the real label</h3>
+            <p id="how_1_body">BOTIA starts from the ingredient list that is actually printed on the food. A photograph is used to read that text rather than relying only on a barcode or a generic product record.</p>
+          </article>
+
+          <article class="about-card about-step">
+            <div class="about-step-number">02</div>
+            <h3 id="how_2_title">Detect relevant signals</h3>
+            <p id="how_2_body">The ingredients are matched against BOTIA's structured rules and knowledge base to identify signals that may matter in different evidence and choice layers.</p>
+          </article>
+
+          <article class="about-card about-step">
+            <div class="about-step-number">03</div>
+            <h3 id="how_3_title">Connect evidence and context</h3>
+            <p id="how_3_body">BOTIA links what was found to ingredient explanations, scientific or regulatory sources, and clear limits on what can and cannot be concluded.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-wrap">
+        <div class="about-section-head">
+          <h2 id="principles_title">What BOTIA is built around</h2>
+        </div>
+
+        <div class="about-three-grid">
+          <article class="about-card">
+            <h3 id="principle_1_title">Evidence before assumptions</h3>
+            <p id="principle_1_body">BOTIA does not convert a packaging type, a general rule or a broad brand statement into a claim about a specific product without enough evidence.</p>
+          </article>
+
+          <article class="about-card">
+            <h3 id="principle_2_title">Uncertainty stays visible</h3>
+            <p id="principle_2_body">When origin, applicability or product-level evidence cannot be confirmed, BOTIA keeps that uncertainty visible instead of filling the gap with a guess.</p>
+          </article>
+
+          <article class="about-card">
+            <h3 id="principle_3_title">Your choice remains yours</h3>
+            <p id="principle_3_body">BOTIA organises information. It does not moralise food choices or decide what somebody should eat. The purpose is transparency: BOTIA shows what is there and you decide what matters.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section about-section-alt">
+      <div class="about-wrap about-two-grid">
+        <article class="about-card">
+          <h2 id="scope_title">One product, different questions</h2>
+          <p id="scope_body">The same ingredient list can matter for different reasons. BOTIA lets people explore composition, sugars and sweeteners, texture and flavourings, E-numbers, animal origin, Muslim choice, women-focused evidence and regulatory context without collapsing them into a single judgement.</p>
+        </article>
+
+        <article class="about-card">
+          <h2 id="evidence_title">Evidence and traceability</h2>
+          <p id="evidence_body">Ingredient explanations and regulatory information are linked to identifiable sources whenever available. BOTIA separates what is written on the label from what can be verified externally and marks missing or unconfirmed information rather than filling the gap.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-wrap">
+        <div class="about-section-head">
+          <h2 id="not_title">What BOTIA is not</h2>
+        </div>
+
+        <article class="about-card">
+          <ul class="about-list">
+            <li id="not_1">BOTIA is not a certification body and does not issue halal, vegan, safety or regulatory certificates.</li>
+            <li id="not_2">BOTIA does not replace medical, legal, nutritional or regulatory advice.</li>
+            <li id="not_3">BOTIA does not present information that the label or sufficiently linked external evidence cannot support as if it were confirmed for that specific product.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-statement">
+      <div class="about-wrap">
+        <div class="about-statement-box">
+          <h2 id="closing_title">Transparency, not a verdict.</h2>
+          <p id="closing_body">BOTIA shows what is there, what the evidence supports and where the limits are. You decide what matters.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script defer src="/botia/assets/js/i18n-loader.js"></script>
+  <script src="/botia/assets/js/botia-chat.js"></script>
+  <script src="/botia/assets/js/footer.js?v=20260817-1502"></script>
+</body>
+</html>
