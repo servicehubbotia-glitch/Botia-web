@@ -35,7 +35,7 @@
 
   const loadMenu = () => {
     if (!menuRequest) {
-      menuRequest = fetch("/botia/assets/menu.json", { cache: "force-cache" })
+      menuRequest = fetch("/botia/assets/menu.json", { cache: "no-store" })
         .then(response => {
           if (!response.ok) throw new Error(`Menu request failed: ${response.status}`);
           return response.json();
@@ -46,7 +46,7 @@
 
   const loadLabels = language => {
     if (!labelRequest) {
-      const fetchLanguage = lang => fetch(`/i18n/${lang}/landing.json`, { cache: "force-cache" })
+      const fetchLanguage = lang => fetch(`/i18n/${lang}/landing.json`, { cache: "no-store" })
         .then(response => {
           if (!response.ok) throw new Error(`Translation request failed: ${response.status}`);
           return response.json();
