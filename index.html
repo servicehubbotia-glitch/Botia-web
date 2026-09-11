@@ -465,12 +465,19 @@ body{
   margin-top:18px;
 }
 
-.home-source-chips span{
+.home-source-chips span,
+.home-source-chips a{
   border:1px solid rgba(190,122,72,.30);
   padding:7px 10px;
   border-radius:999px;
   color:var(--home-accent2);
   font-size:.78rem;
+  text-decoration:none;
+}
+
+.home-source-chips a:hover,
+.home-source-chips a:focus-visible{
+  border-color:rgba(230,160,107,.56);
 }
 
 .home-index-link{
@@ -747,15 +754,17 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
         <h3 id="home_sources_title">Follow the information back to its source</h3>
         <p id="home_sources_body">Ingredient profiles connect explanations to scientific, regulatory and transparency sources instead of hiding the reasoning behind an anonymous score.</p>
         <div class="home-source-chips" aria-label="Examples of source organisations">
-          <span>WHO</span>
-          <span>EFSA</span>
-          <span>FDA</span>
-          <span>Codex</span>
-          <span>JECFA</span>
-          <span>IARC</span>
+          <a href="https://www.who.int/" target="_blank" rel="noopener">WHO</a>
+          <a href="https://www.efsa.europa.eu/" target="_blank" rel="noopener">EFSA</a>
+          <a href="https://www.fda.gov/" target="_blank" rel="noopener">FDA</a>
+          <a href="https://www.fao.org/fao-who-codexalimentarius/en/" target="_blank" rel="noopener">Codex</a>
+          <a href="https://www.who.int/groups/joint-fao-who-expert-committee-on-food-additives-(jecfa)/about" target="_blank" rel="noopener">JECFA</a>
+          <a href="https://www.iarc.who.int/" target="_blank" rel="noopener">IARC</a>
         </div>
-        <a class="home-index-link" href="/ingredients/index.html" id="home_index_link">Explore the Ingredient Index →</a>
-        <a class="home-index-link" href="/regulatory/index.html">Regulatory →</a>
+        <div class="home-actions">
+          <a class="home-btn home-btn-secondary" href="/ingredients/index.html" id="home_explore_index">Explore Ingredient Index</a>
+          <a class="home-btn home-btn-secondary" href="/regulatory/" id="home_explore_regulatory">Explore Regulatory</a>
+        </div>
       </div>
 
       <div class="home-source-panel">
@@ -775,6 +784,7 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
     <div class="home-actions" style="justify-content:center">
       <a class="home-btn home-btn-primary" href="/try.html" id="home_final_try">Try BOTIA</a>
       <a class="home-btn home-btn-secondary" href="/ingredients/index.html" id="home_final_index">Ingredient Index</a>
+      <a class="home-btn home-btn-secondary" href="/regulatory/" id="home_final_regulatory">Regulatory</a>
     </div>
   </div>
 </section>
