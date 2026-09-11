@@ -154,6 +154,20 @@
     const existingButton = document.getElementById("menuBtn");
     if (!existingButton) return;
 
+    // Unificar la marca BOTIA en todas las cabeceras.
+    const navLeft = document.querySelector(".botia-header-bar .botia-nav-left");
+
+    if (navLeft) {
+      const oldBrand = navLeft.querySelector("a");
+
+      if (oldBrand) {
+        oldBrand.innerHTML = "";
+        oldBrand.textContent = "BOTIA";
+        oldBrand.className = "botia-wordmark";
+        oldBrand.href = "/";
+      }
+    }
+
     // Replace the authored button with a clean clone so handlers left by any
     // previous menu implementation cannot coexist with the shared menu.
     const menuButton = existingButton.cloneNode(true);
