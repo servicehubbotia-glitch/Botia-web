@@ -330,6 +330,15 @@
       document.querySelector('meta[property="og:description"]')?.setAttribute("content", description);
       document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", description);
     }
+    const langParam = new URLSearchParams(location.search).get("lang");
+    if (langParam && LANGS.includes(normalise(langParam))) {
+      const localised = new URL(location.pathname, location.origin);
+      localised.searchParams.set("lang", langParam);
+      const localisedUrl = localised.toString();
+      const canonicalLink = document.querySelector('link[rel="canonical"]');
+      if (canonicalLink) canonicalLink.setAttribute("href", localisedUrl);
+      document.querySelector('meta[property="og:url"]')?.setAttribute("content", localisedUrl);
+    }
   };
 
   const applyCollections = (data, lang) => {
