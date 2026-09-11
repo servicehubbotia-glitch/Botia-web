@@ -79,6 +79,98 @@
     .source-links a { color: #e6a06b; text-decoration: none; }
     .source-links a:hover { text-decoration: underline; }
     .hero + .section { margin-top: 0 !important; }
+
+    .evidence-hero {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 60px;
+      align-items: center;
+      padding: 74px 0 48px;
+    }
+
+    .evidence-hero-copy {
+      min-width: 0;
+    }
+
+    .evidence-hero h1 {
+      font-size: clamp(2.6rem, 5.8vw, 5.3rem);
+      line-height: .95;
+      letter-spacing: -.055em;
+      font-weight: 900;
+      color: #f2e4dc;
+      margin: 0 0 18px;
+    }
+
+    .evidence-hero .subtitle {
+      font-size: 1.08rem;
+      line-height: 1.6;
+      color: #e6a06b;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    .evidence-hero .description {
+      font-size: 1.08rem;
+      line-height: 1.75;
+      color: #c0a08c;
+      max-width: 720px;
+      margin: 0;
+    }
+
+    .evidence-icon-stage {
+      min-height: 370px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: 1px solid rgba(190,122,72,.28);
+      border-radius: 30px;
+
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(230,160,107,.12),
+          transparent 65%
+        ),
+        rgba(24,13,13,.58);
+
+      box-shadow: 0 18px 60px rgba(0,0,0,.38);
+
+      overflow: hidden;
+    }
+
+    .evidence-icon-stage .hero-logo {
+      width: 270px !important;
+      height: 270px !important;
+      object-fit: contain !important;
+
+      margin: 0 !important;
+
+      animation: none !important;
+      transform: none !important;
+
+      filter:
+        drop-shadow(
+          0 14px 32px
+          rgba(0,0,0,.50)
+        );
+    }
+
+    @media (max-width: 760px) {
+      .evidence-hero {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .evidence-icon-stage {
+        min-height: 260px;
+      }
+
+      .evidence-icon-stage .hero-logo {
+        width: 190px !important;
+        height: 190px !important;
+      }
+    }
   </style>
 <!-- JSON-LD añadido -->
 <script type="application/ld+json">
@@ -128,11 +220,15 @@
 </div>
 <a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
 <main class="landing" id="main-content">
-<section class="hero">
-<img alt="BOTIA Evidence Layers — scientific and regulatory evidence modules" class="hero-logo" fetchpriority="high"/botia/assets/evidence.png"" src="/botia/assets/evidence.png" style="content-visibility:auto; width:72px; height:72px; margin-bottom:12px;"/ onerror="this.src='/botia/assets/evidence.png'; this.onerror=null;">
+<section class="hero evidence-hero">
+<div class="evidence-hero-copy">
 <h1 id="title">Evidence Layers</h1>
 <p class="subtitle" id="subtitle">What the label reveals. Grounded in science.</p>
 <p class="description" id="description">These modules are based on scientific and regulatory evidence from WHO, EFSA, FDA, and Codex Alimentarius. They explain what the evidence says, what BOTIA can detect, and what cannot be concluded from a label alone.</p>
+</div>
+<div class="evidence-icon-stage">
+<img alt="BOTIA Evidence Layers — scientific and regulatory evidence modules" class="hero-logo" fetchpriority="high" src="/botia/assets/evidence.png" onerror="this.src='/botia/assets/evidence.png'; this.onerror=null;"/>
+</div>
 </section>
 <section class="section">
 <h2 class="section-title" id="why_title">Why evidence matters</h2>
