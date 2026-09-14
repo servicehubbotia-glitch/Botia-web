@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>BOTIA — Scan barcode</title>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="icon" href="/botia_jar_512.png" type="image/png"/>
+<style>
+:root{--bg:#100707;--panel:#180d0d;--panel2:#241010;--text:#f7eee8;--muted:#c9b3a6;--soft:#b99a88;--accent:#e6a06b;--accent2:#ffd8bd;--line:rgba(190,122,72,.28);--lineStrong:rgba(230,160,107,.56);--ok:#ffd8bd}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}body{min-height:100vh;background:radial-gradient(circle at 50% -10%,rgba(160,48,42,.16),transparent 42%),var(--bg)}button,input{font:inherit}.brand{display:flex;justify-content:center;align-items:center;gap:8px;padding:16px 0 10px;border-bottom:1px solid var(--line)}.brand img{width:22px;height:22px}.brand span{font-size:.78rem;color:var(--soft);letter-spacing:.06em}.brand b{color:var(--accent)}.wrap{max-width:620px;margin:auto;padding:28px 20px 42px}.eyebrow{color:var(--accent);font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}h1{font-size:1.8rem;margin:0 0 10px}.lead{color:var(--muted);line-height:1.6;margin:0 0 22px}.camera-card,.manual-card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:14px}.viewer{position:relative;overflow:hidden;border-radius:14px;background:#050303;aspect-ratio:4/3;border:1px solid var(--line)}video{width:100%;height:100%;object-fit:cover;display:block}.frame{position:absolute;left:8%;right:8%;top:36%;height:28%;border:2px solid var(--accent);border-radius:12px;box-shadow:0 0 0 999px rgba(0,0,0,.35);pointer-events:none}.frame:after{content:"";position:absolute;left:6%;right:6%;top:50%;height:2px;background:linear-gradient(90deg,transparent,var(--accent2),transparent);box-shadow:0 0 8px rgba(255,216,189,.5)}.camera-state{color:var(--muted);font-size:.84rem;line-height:1.45;margin:12px 2px 0}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.btn{appearance:none;border-radius:12px;padding:12px 14px;font-weight:750;cursor:pointer}.btn-primary{border:1px solid var(--lineStrong);background:rgba(190,122,72,.16);color:var(--accent2)}.btn-secondary{border:1px solid var(--line);background:transparent;color:var(--muted)}.btn:focus-visible,input:focus-visible{outline:2px solid var(--accent2);outline-offset:3px}.manual-card h2{font-size:1rem;margin:0 0 8px}.manual-help,.privacy{color:var(--muted);font-size:.84rem;line-height:1.5;margin:0 0 12px}.manual-row{display:grid;grid-template-columns:1fr auto;gap:10px}.manual-row input{min-width:0;border:1px solid var(--lineStrong);border-radius:12px;background:#0b0606;color:var(--text);padding:12px 13px;font-variant-numeric:tabular-nums;letter-spacing:.05em}.status{min-height:1.4em;margin:12px 0 0;color:var(--muted);font-size:.84rem;line-height:1.45}.status.error{color:#ffd1c8}.status.success{color:var(--ok)}.detected{display:none;margin-top:12px;padding:12px;border:1px solid var(--lineStrong);border-radius:12px;background:rgba(230,160,107,.07)}.detected.show{display:block}.detected-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--soft);font-weight:800}.detected-code{font-size:1.1rem;color:var(--accent2);font-weight:800;letter-spacing:.05em;margin-top:4px}.detected-type{color:var(--muted);font-size:.78rem;margin-top:3px}.privacy{margin:18px 2px 0;padding-left:12px;border-left:3px solid var(--accent)}input[type=file]{display:none}@media(max-width:480px){.manual-row{grid-template-columns:1fr}.actions{grid-template-columns:1fr}.wrap{padding-left:16px;padding-right:16px}}
+</style>
+</head>
+<body data-botia-module="barcode_capture">
+<div class="brand"><img src="/botia_jar_512.png" alt=""/><span><b>BOTIA</b> · botia-safefood.com</span></div>
+<main class="wrap">
+  <div class="eyebrow" id="eyebrow">Product identification</div>
+  <h1 id="title">Scan barcode</h1>
+  <p class="lead" id="lead">Center the barcode inside the frame. BOTIA reads the code on your device and returns it to the result you came from.</p>
+
+  <section class="camera-card" aria-labelledby="title">
+    <div class="viewer">
+      <video id="video" playsinline muted></video>
+      <div class="frame" aria-hidden="true"></div>
+    </div>
+    <p class="camera-state" id="camera_state">Preparing camera…</p>
+    <div class="actions">
+      <button class="btn btn-primary" id="photo_btn" type="button">Use a photo</button>
+      <button class="btn btn-secondary" id="cancel_btn" type="button">Cancel</button>
+    </div>
+    <input id="photo_input" type="file" accept="image/*"/>
+    <div class="detected" id="detected_box" aria-live="polite">
+      <div class="detected-label" id="detected_label">Barcode read</div>
+      <div class="detected-code" id="detected_code"></div>
+      <div class="detected-type" id="detected_type"></div>
+    </div>
+    <p class="status" id="status" aria-live="polite"></p>
+  </section>
+
+  <section class="manual-card">
+    <h2 id="manual_title">Enter the code manually</h2>
+    <p class="manual-help" id="manual_help">You can type the digits printed below the barcode. BOTIA validates the check digit before accepting it.</p>
+    <div class="manual-row">
+      <input id="manual_input" type="text" inputmode="numeric" autocomplete="off" maxlength="14" aria-label="Barcode digits"/>
+      <button class="btn btn-primary" id="manual_btn" type="button">Use code</button>
+    </div>
+  </section>
+
+  <p class="privacy" id="privacy_note">The camera image is not uploaded by this page. Only the validated barcode number is returned.</p>
+</main>
+<script>
+(() => {
+  const p = new URLSearchParams(location.search);
+  const lang = String(p.get('lang') || document.documentElement.lang || 'en').trim().toLowerCase();
+  const ids = ['eyebrow','title','lead','camera_state','photo_btn','cancel_btn','detected_label','manual_title','manual_help','manual_btn','privacy_note'];
+  const apply = data => {
+    if (!data || typeof data !== 'object') return;
+    ids.forEach(id => { const node=document.getElementById(id); if(node && data[id]) node.textContent=data[id]; });
+    document.documentElement.lang = lang;
+    if (lang === 'ar') document.documentElement.dir = 'rtl';
+  };
+  const load = async code => {
+    const r = await fetch(`/i18n/${encodeURIComponent(code)}/barcode_capture.json`, {cache:'no-store'});
+    if (!r.ok) throw new Error(String(r.status));
+    return r.json();
+  };
+  load(lang).then(apply).catch(() => { if(lang !== 'en') load('en').then(apply).catch(() => {}); });
+})();
+</script>
+<script defer src="/botia/assets/js/barcode-bridge.js"></script>
+</body>
+</html>
