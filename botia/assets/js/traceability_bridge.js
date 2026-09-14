@@ -24,8 +24,7 @@
     open_traceability: "View product traceability",
     add_barcode: "Add barcode",
     barcode_present: "Barcode available",
-    barcode_missing: "Barcode not supplied",
-    capture_pending: "Barcode capture is not connected to this page yet."
+    barcode_missing: "Barcode not supplied"
   };
 
   const loadLabels = async () => {
@@ -124,7 +123,18 @@
     return url.toString();
   };
 
-  const requestBarcode = (button, status, labels) => {
+  const buildBarcodeCaptureUrl = () => {
+    const url = new URL("/ingredients/barcode_capture.html", location.origin);
+    url.searchParams.set("lang", lang);
+    url.searchParams.set("source", module);
+    url.searchParams.set("return", returnUrl);
+    if (market) url.searchParams.set("market", market);
+    if (product) url.searchParams.set("product", product);
+    if (theme) url.searchParams.set("theme", theme);
+    return url.toString();
+  };
+
+  const requestBarcode = (button) => {
     const detail = {
       action: "request-barcode",
       sourceModule: module,
@@ -132,25 +142,26 @@
       lang,
       market,
       product,
-      theme
+      theme,
+      fallbackUrl: buildBarcodeCaptureUrl()
     };
 
-    // Stable DOM hook for the future Flutter/web capture adapters.
+    // Stable DOM hook for a future Flutter/native barcode adapter.
     button.dataset.botiaAction = "request-barcode";
     button.dataset.returnUrl = returnUrl;
 
-    // Generic browser event: future web flow can subscribe without changing these pages.
+    // Generic event: a host integration may intercept this.
     window.dispatchEvent(new CustomEvent("botia:request-barcode", { detail }));
 
-    // Optional bridge hook: future app/web integration may expose this object.
+    // Optional native/app bridge. If present, it owns capture and return.
     if (window.BotiaBarcodeBridge &&
         typeof window.BotiaBarcodeBridge.requestBarcode === "function") {
       window.BotiaBarcodeBridge.requestBarcode(detail);
       return;
     }
 
-    // Honest interim behaviour: no false claim that capture has started.
-    status.textContent = labels.capture_pending;
+    // Web fallback: capture the barcode in the browser and return here.
+    location.href = detail.fallbackUrl;
   };
 
   const render = async () => {
@@ -181,10 +192,6 @@
 
     section.append(title, copy, meta);
 
-    const status = document.createElement("p");
-    status.className = "btb-status";
-    status.setAttribute("aria-live", "polite");
-
     if (gtin) {
       const link = document.createElement("a");
       link.className = "btb-action";
@@ -196,9 +203,8 @@
       button.type = "button";
       button.className = "btb-action";
       button.textContent = labels.add_barcode;
-      button.addEventListener("click", () => requestBarcode(button, status, labels));
+      button.addEventListener("click", () => requestBarcode(button));
       section.appendChild(button);
-      section.appendChild(status);
     }
 
     anchor.insertAdjacentElement("beforebegin", section);
