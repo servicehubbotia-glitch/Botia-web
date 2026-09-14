@@ -317,7 +317,21 @@
     return article;
   };
 
+  const resetIdentity = () => {
+    for (const block of ["product_block", "brand_block", "market_block", "gtin14_block", "overall_block"]) {
+      el(block).hidden = true;
+    }
+    el("gtin").textContent = "—";
+    el("product").textContent = "—";
+    el("brand").textContent = "—";
+    el("market").textContent = "—";
+    el("gtin14").textContent = "—";
+    el("overall_status").replaceChildren();
+  };
+
   const renderIdentity = data => {
+    resetIdentity();
+
     const gtin = clean(data.query?.gtin || data.gtin || params.get("gtin"));
     const gtin14 = clean(data.query?.gtin14 || data.gtin14 || params.get("gtin14"));
     const productName = clean(data.product?.name || data.product_name || params.get("product"));
@@ -377,12 +391,14 @@
   };
 
   const renderConsulted = data => {
+    const box = el("consulted_sources");
+    box.replaceChildren();
+    el("consulted_section").hidden = true;
+
     const items = Array.isArray(data.consulted_sources) ? data.consulted_sources : [];
     if (!items.length) return;
 
     el("consulted_section").hidden = false;
-    const box = el("consulted_sources");
-    box.replaceChildren();
 
     items.forEach(item => {
       const name = typeof item === "string" ? item : clean(item?.name);
@@ -396,12 +412,14 @@
   };
 
   const renderWarnings = data => {
+    const box = el("warnings");
+    box.replaceChildren();
+    el("warnings_section").hidden = true;
+
     const items = Array.isArray(data.warnings) ? data.warnings : [];
     if (!items.length) return;
 
     el("warnings_section").hidden = false;
-    const box = el("warnings");
-    box.replaceChildren();
 
     items.forEach(item => {
       const value = typeof item === "string" ? item : clean(item?.text);
@@ -413,18 +431,48 @@
     });
   };
 
+  const renderPayload = data => {
+    const payload = data && typeof data === "object" ? data : queryFallback();
+    renderIdentity(payload);
+    renderRecords(payload);
+    renderConsulted(payload);
+    renderWarnings(payload);
+  };
+
+  let labelsReady = null;
+  const ensureLabels = () => labelsReady ??= loadLabels();
+
+  const renderAfterLabels = async data => {
+    await ensureLabels();
+    renderPayload(data);
+  };
+
+  const eventPayload = event => {
+    if (event?.detail && typeof event.detail === "object") return event.detail;
+    if (window.BOTIA_TRACEABILITY_DATA &&
+        typeof window.BOTIA_TRACEABILITY_DATA === "object") {
+      return window.BOTIA_TRACEABILITY_DATA;
+    }
+    return null;
+  };
+
+  const onRuntimeData = event => {
+    const data = eventPayload(event);
+    if (data) void renderAfterLabels(data);
+  };
+
+  // Flutter/WebView runtime contract.
+  document.addEventListener("botia:traceability-ready", onRuntimeData);
+  document.addEventListener("botia:traceability-updated", onRuntimeData);
+
   const init = async () => {
-    await loadLabels();
-    const data = getPayload() || queryFallback();
-    renderIdentity(data);
-    renderRecords(data);
-    renderConsulted(data);
-    renderWarnings(data);
+    await ensureLabels();
+    renderPayload(getPayload() || queryFallback());
   };
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init, { once: true });
   } else {
-    init();
+    void init();
   }
 })();
