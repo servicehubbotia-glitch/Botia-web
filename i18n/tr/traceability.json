@@ -4,9 +4,54 @@
   "lead": "Barkod bir ürünü tanımlar. Kaynaklar, ürün hakkında gerçekte nelerin doğrulanabileceğini belirler.",
   "identity_title": "Ürün tanımlayıcı",
   "product_label": "Ürün",
+  "brand_label": "Marka",
   "market_label": "Referans pazar",
-  "records_title": "İzlenebilirlik sonuçları",
-  "empty_state": "Bu görünüme henüz hiçbir izlenebilirlik sonucu sağlanmadı.",
-  "principle": "Bir yokluk yalnızca «başvurulan kaynaklarda doğrulanmadı» anlamına gelir. BOTIA yokluğu «sertifikalı değil», «helal değil», «cruelty-free değil» veya «hayvanlar üzerinde test edilmiş» haline dönüştürmez.",
-  "disclaimer": "BOTIA, mevcut olduğunda kaynağı, konuyu, kapsamı ve tarihi gösterir."
+  "gtin14_label": "Normalleştirilmiş GTIN-14",
+  "overall_label": "Genel izlenebilirlik durumu",
+  "records_title": "Doğrulanmış bilgiler",
+  "empty_state": "Bu görünüme henüz hiçbir izlenebilirlik doğrulama verisi sağlanmadı.",
+  "consulted_title": "Başvurulan kaynaklar",
+  "warnings_title": "Notlar",
+  "principle": "Yokluk olumsuz bir hüküm değildir. BOTIA yalnızca kaynağın tam olarak tanımlanan konu ve kapsam için desteklediğini gösterir.",
+  "disclaimer": "Barkod tanımlar. Kaynaklar doğrular. BOTIA boşlukları doldurmaz.",
+  "runtime": {
+    "status": {
+      "VERIFIED_PRODUCT": "Bu ürün için doğrulandı",
+      "VERIFIED_SCOPE": "Tanımlı bir kapsam için doğrulandı",
+      "REGULATORY_CONTEXT": "Düzenleyici bağlam bulundu",
+      "SELF_DECLARED": "Şirket beyanı bulundu",
+      "SOURCE_CLASSIFICATION": "Kaynak sınıflandırması bulundu",
+      "CONFLICT": "Kaynaklar çelişiyor",
+      "NOT_VERIFIED": "Başvurulan kaynaklarda doğrulanmadı"
+    },
+    "symbol": {
+      "VERIFIED_PRODUCT": "✓",
+      "VERIFIED_SCOPE": "◎",
+      "REGULATORY_CONTEXT": "R",
+      "SELF_DECLARED": "D",
+      "SOURCE_CLASSIFICATION": "S",
+      "CONFLICT": "↔",
+      "NOT_VERIFIED": "?"
+    },
+    "domain": {
+      "identity": "Ürün kimliği",
+      "halal": "Helal izlenebilirliği",
+      "animal": "Hayvan / cruelty-free izlenebilirliği",
+      "market": "Pazar / sicil bağlamı",
+      "packaging": "Ambalaj izlenebilirliği",
+      "other": "Diğer doğrulanmış bilgiler"
+    },
+    "field_subject": "Konu",
+    "field_scope": "Kapsam",
+    "field_market": "Pazar",
+    "field_date": "Tarih",
+    "field_source": "Kaynak",
+    "field_authority": "Yetkili",
+    "field_certificate": "Sertifika / kayıt",
+    "field_validity": "Geçerlilik",
+    "open_source": "Kaynağı aç →",
+    "scope_warning": "Bu kanıt yalnızca gösterilen kapsam için geçerlidir. BOTIA bunu başka bir ürüne, markaya, ana şirkete, pazara veya tesise otomatik olarak genişletmez.",
+    "not_verified_note": "Bu sonuçtan hiçbir olumsuz çıkarım yapılmaz.",
+    "contract_error": "Bu öğe, gerekli izlenebilirlik alanları eksik olduğu için doğrulanmış olarak gösterilmedi."
+  }
 }

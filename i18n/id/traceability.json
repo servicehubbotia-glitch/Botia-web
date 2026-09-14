@@ -4,9 +4,54 @@
   "lead": "Barcode mengidentifikasi suatu produk. Sumber menentukan apa yang benar-benar dapat diverifikasi tentangnya.",
   "identity_title": "Pengidentifikasi produk",
   "product_label": "Produk",
+  "brand_label": "Merek",
   "market_label": "Pasar referensi",
-  "records_title": "Hasil ketertelusuran",
-  "empty_state": "Belum ada hasil ketertelusuran yang diberikan ke tampilan ini.",
-  "principle": "Ketidakhadiran hanya berarti «tidak terverifikasi dalam sumber yang dikonsultasikan». BOTIA tidak mengubah ketidakhadiran menjadi «tidak bersertifikat», «tidak halal», «bebas kekejaman» atau «diuji pada hewan».",
-  "disclaimer": "BOTIA menunjukkan sumber, subjek, cakupan, dan tanggal bila tersedia."
+  "gtin14_label": "GTIN-14 ternormalisasi",
+  "overall_label": "Status ketertelusuran keseluruhan",
+  "records_title": "Informasi terverifikasi",
+  "empty_state": "Belum ada data verifikasi ketertelusuran yang diberikan ke tampilan ini.",
+  "consulted_title": "Sumber yang dikonsultasikan",
+  "warnings_title": "Catatan",
+  "principle": "Ketidakhadiran bukanlah putusan negatif. BOTIA hanya menampilkan apa yang didukung sumber untuk subjek dan cakupan yang diidentifikasi secara tepat.",
+  "disclaimer": "Barcode mengidentifikasi. Sumber memverifikasi. BOTIA tidak mengisi kekosongan.",
+  "runtime": {
+    "status": {
+      "VERIFIED_PRODUCT": "Terverifikasi untuk produk ini",
+      "VERIFIED_SCOPE": "Terverifikasi untuk cakupan yang ditentukan",
+      "REGULATORY_CONTEXT": "Konteks regulasi ditemukan",
+      "SELF_DECLARED": "Pernyataan perusahaan ditemukan",
+      "SOURCE_CLASSIFICATION": "Klasifikasi sumber ditemukan",
+      "CONFLICT": "Sumber saling bertentangan",
+      "NOT_VERIFIED": "Tidak terverifikasi dalam sumber yang dikonsultasikan"
+    },
+    "symbol": {
+      "VERIFIED_PRODUCT": "✓",
+      "VERIFIED_SCOPE": "◎",
+      "REGULATORY_CONTEXT": "R",
+      "SELF_DECLARED": "D",
+      "SOURCE_CLASSIFICATION": "S",
+      "CONFLICT": "↔",
+      "NOT_VERIFIED": "?"
+    },
+    "domain": {
+      "identity": "Identitas produk",
+      "halal": "Ketertelusuran halal",
+      "animal": "Ketertelusuran hewan / cruelty-free",
+      "market": "Konteks pasar / registri",
+      "packaging": "Ketertelusuran kemasan",
+      "other": "Informasi terverifikasi lainnya"
+    },
+    "field_subject": "Subjek",
+    "field_scope": "Cakupan",
+    "field_market": "Pasar",
+    "field_date": "Tanggal",
+    "field_source": "Sumber",
+    "field_authority": "Otoritas",
+    "field_certificate": "Sertifikat / pendaftaran",
+    "field_validity": "Masa berlaku",
+    "open_source": "Buka sumber →",
+    "scope_warning": "Bukti ini hanya berlaku untuk cakupan yang ditampilkan. BOTIA tidak memperluasnya secara otomatis ke produk, merek, perusahaan induk, pasar, atau pabrik lain.",
+    "not_verified_note": "Tidak ada kesimpulan negatif yang diambil dari hasil ini.",
+    "contract_error": "Item ini tidak ditampilkan sebagai terverifikasi karena kolom ketertelusuran yang wajib tidak ada."
+  }
 }

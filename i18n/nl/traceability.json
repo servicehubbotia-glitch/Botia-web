@@ -4,9 +4,54 @@
   "lead": "De barcode identificeert een product. Bronnen bepalen wat er werkelijk over kan worden geverifieerd.",
   "identity_title": "Productidentificatie",
   "product_label": "Product",
+  "brand_label": "Merk",
   "market_label": "Referentiemarkt",
-  "records_title": "Traceerbaarheidsresultaten",
-  "empty_state": "Er is nog geen traceerbaarheidsresultaat aan deze weergave geleverd.",
-  "principle": "Een afwezigheid betekent alleen 'niet geverifieerd in de geraadpleegde bronnen'. BOTIA verandert afwezigheid niet in 'niet gecertificeerd', 'niet halal', 'niet cruelty-free' of 'op dieren getest'.",
-  "disclaimer": "BOTIA toont de bron, het onderwerp, het bereik en de datum wanneer deze beschikbaar zijn."
+  "gtin14_label": "Genormaliseerde GTIN-14",
+  "overall_label": "Algemene traceerbaarheidsstatus",
+  "records_title": "Geverifieerde informatie",
+  "empty_state": "Er zijn geen traceerbaarheidsgegevens aan deze weergave geleverd.",
+  "consulted_title": "Geraadpleegde bronnen",
+  "warnings_title": "Opmerkingen",
+  "principle": "Een afwezigheid is geen negatief oordeel. BOTIA toont alleen wat de bron ondersteunt voor het exact geïdentificeerde onderwerp en bereik.",
+  "disclaimer": "Een barcode identificeert. Bronnen verifiëren. BOTIA vult de hiaten niet op.",
+  "runtime": {
+    "status": {
+      "VERIFIED_PRODUCT": "Geverifieerd voor dit product",
+      "VERIFIED_SCOPE": "Geverifieerd voor een afgebakend bereik",
+      "REGULATORY_CONTEXT": "Regelgevende context gevonden",
+      "SELF_DECLARED": "Verklaring van het bedrijf gevonden",
+      "SOURCE_CLASSIFICATION": "Bronclassificatie gevonden",
+      "CONFLICT": "Bronnen in conflict",
+      "NOT_VERIFIED": "Niet geverifieerd in de geraadpleegde bronnen"
+    },
+    "symbol": {
+      "VERIFIED_PRODUCT": "✓",
+      "VERIFIED_SCOPE": "◎",
+      "REGULATORY_CONTEXT": "R",
+      "SELF_DECLARED": "D",
+      "SOURCE_CLASSIFICATION": "S",
+      "CONFLICT": "↔",
+      "NOT_VERIFIED": "?"
+    },
+    "domain": {
+      "identity": "Productidentiteit",
+      "halal": "Halal-traceerbaarheid",
+      "animal": "Dieren- / cruelty-free-traceerbaarheid",
+      "market": "Markt- / registercontext",
+      "packaging": "Verpakkingstraceerbaarheid",
+      "other": "Andere geverifieerde informatie"
+    },
+    "field_subject": "Onderwerp",
+    "field_scope": "Bereik",
+    "field_market": "Markt",
+    "field_date": "Datum",
+    "field_source": "Bron",
+    "field_authority": "Autoriteit",
+    "field_certificate": "Certificaat / registratie",
+    "field_validity": "Geldigheid",
+    "open_source": "Bron openen →",
+    "scope_warning": "Dit bewijs geldt alleen voor het getoonde bereik. BOTIA breidt het niet automatisch uit naar een ander product, merk, moederbedrijf, markt of locatie.",
+    "not_verified_note": "Aan dit resultaat wordt geen negatieve conclusie verbonden.",
+    "contract_error": "Dit item werd niet als geverifieerd weergegeven omdat vereiste traceerbaarheidsvelden ontbraken."
+  }
 }

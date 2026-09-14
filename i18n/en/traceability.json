@@ -4,9 +4,54 @@
   "lead": "The barcode identifies a product. Sources determine what can actually be verified about it.",
   "identity_title": "Product identifier",
   "product_label": "Product",
+  "brand_label": "Brand",
   "market_label": "Reference market",
-  "records_title": "Traceability results",
-  "empty_state": "No traceability result has been supplied to this view yet.",
-  "principle": "An absence only means “not verified in the sources consulted”. BOTIA does not turn absence into “not certified”, “not halal”, “not cruelty-free” or “tested on animals”.",
-  "disclaimer": "BOTIA shows the source, subject, scope and date when they are available."
+  "gtin14_label": "Normalized GTIN-14",
+  "overall_label": "Overall traceability status",
+  "records_title": "Verified information",
+  "empty_state": "No traceability verification data has been supplied to this view.",
+  "consulted_title": "Sources consulted",
+  "warnings_title": "Notes",
+  "principle": "Absence is not a negative verdict. BOTIA only shows what the source supports for the exact subject and scope identified.",
+  "disclaimer": "A barcode identifies. Sources verify. BOTIA does not fill the gaps.",
+  "runtime": {
+    "status": {
+      "VERIFIED_PRODUCT": "Verified for this product",
+      "VERIFIED_SCOPE": "Verified for a defined scope",
+      "REGULATORY_CONTEXT": "Regulatory context located",
+      "SELF_DECLARED": "Company declaration located",
+      "SOURCE_CLASSIFICATION": "Source classification located",
+      "CONFLICT": "Sources in conflict",
+      "NOT_VERIFIED": "Not verified in the sources consulted"
+    },
+    "symbol": {
+      "VERIFIED_PRODUCT": "✓",
+      "VERIFIED_SCOPE": "◎",
+      "REGULATORY_CONTEXT": "R",
+      "SELF_DECLARED": "D",
+      "SOURCE_CLASSIFICATION": "S",
+      "CONFLICT": "↔",
+      "NOT_VERIFIED": "?"
+    },
+    "domain": {
+      "identity": "Product identity",
+      "halal": "Halal traceability",
+      "animal": "Animal / cruelty-free traceability",
+      "market": "Market / registry context",
+      "packaging": "Packaging traceability",
+      "other": "Other verified information"
+    },
+    "field_subject": "Subject",
+    "field_scope": "Scope",
+    "field_market": "Market",
+    "field_date": "Date",
+    "field_source": "Source",
+    "field_authority": "Authority",
+    "field_certificate": "Certificate / registration",
+    "field_validity": "Validity",
+    "open_source": "Open source →",
+    "scope_warning": "This evidence applies only to the scope shown. BOTIA does not automatically extend it to another product, brand, parent company, market or plant.",
+    "not_verified_note": "No negative conclusion is drawn from this result.",
+    "contract_error": "This item was not displayed as verified because required traceability fields were missing."
+  }
 }

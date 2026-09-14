@@ -4,9 +4,54 @@
   "lead": "条形码标识产品。来源决定了哪些信息可以真正被验证。",
   "identity_title": "产品标识符",
   "product_label": "产品",
+  "brand_label": "品牌",
   "market_label": "参考市场",
-  "records_title": "可追溯性结果",
-  "empty_state": "此视图尚未收到任何可追溯性结果。",
-  "principle": "缺失仅意味着「在所查阅的来源中未得到验证」。BOTIA 不会将缺失转化为「未认证」、「非清真」、「非零残忍」或「经过动物测试」。",
-  "disclaimer": "BOTIA 在可用时显示来源、对象、范围和日期。"
+  "gtin14_label": "标准化 GTIN-14",
+  "overall_label": "整体可追溯性状态",
+  "records_title": "已验证信息",
+  "empty_state": "此视图尚未收到任何可追溯性验证数据。",
+  "consulted_title": "已查阅的来源",
+  "warnings_title": "备注",
+  "principle": "缺失并非负面判定。BOTIA 仅展示来源对确切标识的主体和范围所能支持的内容。",
+  "disclaimer": "条形码负责标识。来源负责验证。BOTIA 不填补空白。",
+  "runtime": {
+    "status": {
+      "VERIFIED_PRODUCT": "已针对该产品验证",
+      "VERIFIED_SCOPE": "已在明确范围内验证",
+      "REGULATORY_CONTEXT": "已找到监管背景",
+      "SELF_DECLARED": "已找到公司声明",
+      "SOURCE_CLASSIFICATION": "已找到来源分类",
+      "CONFLICT": "来源相互冲突",
+      "NOT_VERIFIED": "在已查阅的来源中未得到验证"
+    },
+    "symbol": {
+      "VERIFIED_PRODUCT": "✓",
+      "VERIFIED_SCOPE": "◎",
+      "REGULATORY_CONTEXT": "R",
+      "SELF_DECLARED": "D",
+      "SOURCE_CLASSIFICATION": "S",
+      "CONFLICT": "↔",
+      "NOT_VERIFIED": "?"
+    },
+    "domain": {
+      "identity": "产品身份",
+      "halal": "清真可追溯性",
+      "animal": "动物 / 零残忍可追溯性",
+      "market": "市场 / 注册背景",
+      "packaging": "包装可追溯性",
+      "other": "其他已验证信息"
+    },
+    "field_subject": "主体",
+    "field_scope": "范围",
+    "field_market": "市场",
+    "field_date": "日期",
+    "field_source": "来源",
+    "field_authority": "主管部门",
+    "field_certificate": "证书 / 注册",
+    "field_validity": "有效期",
+    "open_source": "打开来源 →",
+    "scope_warning": "此证据仅适用于所示范围。BOTIA 不会将其自动延伸至其他产品、品牌、母公司、市场或工厂。",
+    "not_verified_note": "不会从此结果中得出任何负面结论。",
+    "contract_error": "由于缺少必需的可追溯性字段，该项目未显示为已验证。"
+  }
 }

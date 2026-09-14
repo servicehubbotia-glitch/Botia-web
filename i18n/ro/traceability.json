@@ -4,9 +4,54 @@
   "lead": "Codul de bare identifică un produs. Sursele determină ce poate fi verificat de fapt despre acesta.",
   "identity_title": "Identificator de produs",
   "product_label": "Produs",
+  "brand_label": "Marcă",
   "market_label": "Piața de referință",
-  "records_title": "Rezultate de trasabilitate",
-  "empty_state": "Niciun rezultat de trasabilitate nu a fost furnizat încă acestei vizualizări.",
-  "principle": "O absență înseamnă doar «neverificat în sursele consultate». BOTIA nu transformă absența în «necertificat», «non-halal», «fără cruzime» sau «testat pe animale».",
-  "disclaimer": "BOTIA afișează sursa, subiectul, domeniul de aplicare și data atunci când sunt disponibile."
+  "gtin14_label": "GTIN-14 normalizat",
+  "overall_label": "Stare generală de trasabilitate",
+  "records_title": "Informații verificate",
+  "empty_state": "Acestei vizualizări nu i-au fost furnizate date de verificare a trasabilității.",
+  "consulted_title": "Surse consultate",
+  "warnings_title": "Note",
+  "principle": "O absență nu este un verdict negativ. BOTIA arată doar ceea ce susține sursa pentru subiectul și domeniul exact identificate.",
+  "disclaimer": "Un cod de bare identifică. Sursele verifică. BOTIA nu umple golurile.",
+  "runtime": {
+    "status": {
+      "VERIFIED_PRODUCT": "Verificat pentru acest produs",
+      "VERIFIED_SCOPE": "Verificat pentru un domeniu definit",
+      "REGULATORY_CONTEXT": "Context regulatoriu identificat",
+      "SELF_DECLARED": "Declarație a companiei identificată",
+      "SOURCE_CLASSIFICATION": "Clasificare a sursei identificată",
+      "CONFLICT": "Surse în conflict",
+      "NOT_VERIFIED": "Neverificat în sursele consultate"
+    },
+    "symbol": {
+      "VERIFIED_PRODUCT": "✓",
+      "VERIFIED_SCOPE": "◎",
+      "REGULATORY_CONTEXT": "R",
+      "SELF_DECLARED": "D",
+      "SOURCE_CLASSIFICATION": "S",
+      "CONFLICT": "↔",
+      "NOT_VERIFIED": "?"
+    },
+    "domain": {
+      "identity": "Identitatea produsului",
+      "halal": "Trasabilitate halal",
+      "animal": "Trasabilitate animală / cruelty-free",
+      "market": "Context de piață / registru",
+      "packaging": "Trasabilitatea ambalajului",
+      "other": "Alte informații verificate"
+    },
+    "field_subject": "Subiect",
+    "field_scope": "Domeniu",
+    "field_market": "Piață",
+    "field_date": "Dată",
+    "field_source": "Sursă",
+    "field_authority": "Autoritate",
+    "field_certificate": "Certificat / înregistrare",
+    "field_validity": "Valabilitate",
+    "open_source": "Deschide sursa →",
+    "scope_warning": "Această dovadă se aplică doar domeniului afișat. BOTIA nu o extinde automat la un alt produs, brand, companie-mamă, piață sau fabrică.",
+    "not_verified_note": "Din acest rezultat nu se trage nicio concluzie negativă.",
+    "contract_error": "Acest element nu a fost afișat ca verificat deoarece lipseau câmpuri obligatorii de trasabilitate."
+  }
 }

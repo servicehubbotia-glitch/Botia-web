@@ -4,9 +4,54 @@
   "lead": "Der Barcode identifiziert ein Produkt. Quellen bestimmen, was tatsächlich darüber verifiziert werden kann.",
   "identity_title": "Produktidentifikator",
   "product_label": "Produkt",
+  "brand_label": "Marke",
   "market_label": "Referenzmarkt",
-  "records_title": "Rückverfolgbarkeitsergebnisse",
-  "empty_state": "Dieser Ansicht wurde noch kein Rückverfolgbarkeitsergebnis übermittelt.",
-  "principle": "Eine Abwesenheit bedeutet nur „in den konsultierten Quellen nicht verifiziert“. BOTIA verwandelt Abwesenheit nicht in „nicht zertifiziert“, „nicht halal“, „nicht cruelty-free“ oder „an Tieren getestet“.",
-  "disclaimer": "BOTIA zeigt Quelle, Gegenstand, Umfang und Datum, sofern verfügbar."
+  "gtin14_label": "Normalisierte GTIN-14",
+  "overall_label": "Gesamtstatus der Rückverfolgbarkeit",
+  "records_title": "Verifizierte Informationen",
+  "empty_state": "Dieser Ansicht wurden keine Rückverfolgbarkeitsdaten übermittelt.",
+  "consulted_title": "Konsultierte Quellen",
+  "warnings_title": "Hinweise",
+  "principle": "Eine Abwesenheit ist kein negatives Urteil. BOTIA zeigt nur, was die Quelle für den genau identifizierten Gegenstand und Umfang stützt.",
+  "disclaimer": "Ein Barcode identifiziert. Quellen verifizieren. BOTIA füllt die Lücken nicht.",
+  "runtime": {
+    "status": {
+      "VERIFIED_PRODUCT": "Für dieses Produkt verifiziert",
+      "VERIFIED_SCOPE": "Für einen definierten Umfang verifiziert",
+      "REGULATORY_CONTEXT": "Regulatorischer Kontext ermittelt",
+      "SELF_DECLARED": "Unternehmenserklärung ermittelt",
+      "SOURCE_CLASSIFICATION": "Quellenklassifikation ermittelt",
+      "CONFLICT": "Quellen im Konflikt",
+      "NOT_VERIFIED": "In den konsultierten Quellen nicht verifiziert"
+    },
+    "symbol": {
+      "VERIFIED_PRODUCT": "✓",
+      "VERIFIED_SCOPE": "◎",
+      "REGULATORY_CONTEXT": "R",
+      "SELF_DECLARED": "D",
+      "SOURCE_CLASSIFICATION": "S",
+      "CONFLICT": "↔",
+      "NOT_VERIFIED": "?"
+    },
+    "domain": {
+      "identity": "Produktidentität",
+      "halal": "Halal-Rückverfolgbarkeit",
+      "animal": "Tier- / Cruelty-free-Rückverfolgbarkeit",
+      "market": "Markt- / Registerkontext",
+      "packaging": "Verpackungsrückverfolgbarkeit",
+      "other": "Weitere verifizierte Informationen"
+    },
+    "field_subject": "Gegenstand",
+    "field_scope": "Umfang",
+    "field_market": "Markt",
+    "field_date": "Datum",
+    "field_source": "Quelle",
+    "field_authority": "Behörde",
+    "field_certificate": "Zertifikat / Registrierung",
+    "field_validity": "Gültigkeit",
+    "open_source": "Quelle öffnen →",
+    "scope_warning": "Dieser Nachweis gilt nur für den gezeigten Umfang. BOTIA dehnt ihn nicht automatisch auf ein anderes Produkt, eine andere Marke, Muttergesellschaft, einen anderen Markt oder Standort aus.",
+    "not_verified_note": "Aus diesem Ergebnis wird keine negative Schlussfolgerung gezogen.",
+    "contract_error": "Dieser Eintrag wurde nicht als verifiziert angezeigt, da erforderliche Rückverfolgbarkeitsfelder fehlten."
+  }
 }

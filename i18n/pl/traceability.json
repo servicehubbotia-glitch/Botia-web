@@ -4,9 +4,54 @@
   "lead": "Kod kreskowy identyfikuje produkt. Źródła określają, co faktycznie można o nim zweryfikować.",
   "identity_title": "Identyfikator produktu",
   "product_label": "Produkt",
+  "brand_label": "Marka",
   "market_label": "Rynek referencyjny",
-  "records_title": "Wyniki identyfikowalności",
-  "empty_state": "Do tego widoku nie przekazano jeszcze żadnego wyniku identyfikowalności.",
-  "principle": "Brak oznacza jedynie «niezweryfikowane w wykorzystanych źródłach». BOTIA nie zamienia braku na «niecertyfikowane», «niehalal», «cruelty-free» ani «testowane na zwierzętach».",
-  "disclaimer": "BOTIA pokazuje źródło, podmiot, zakres i datę, gdy są dostępne."
+  "gtin14_label": "Znormalizowany GTIN-14",
+  "overall_label": "Ogólny status identyfikowalności",
+  "records_title": "Informacje zweryfikowane",
+  "empty_state": "Do tego widoku nie przekazano żadnych danych weryfikacji identyfikowalności.",
+  "consulted_title": "Wykorzystane źródła",
+  "warnings_title": "Uwagi",
+  "principle": "Brak nie jest negatywnym wyrokiem. BOTIA pokazuje wyłącznie to, co źródło potwierdza dla dokładnie zidentyfikowanego podmiotu i zakresu.",
+  "disclaimer": "Kod kreskowy identyfikuje. Źródła weryfikują. BOTIA nie wypełnia luk.",
+  "runtime": {
+    "status": {
+      "VERIFIED_PRODUCT": "Zweryfikowano dla tego produktu",
+      "VERIFIED_SCOPE": "Zweryfikowano dla określonego zakresu",
+      "REGULATORY_CONTEXT": "Znaleziono kontekst regulacyjny",
+      "SELF_DECLARED": "Znaleziono oświadczenie firmy",
+      "SOURCE_CLASSIFICATION": "Znaleziono klasyfikację źródła",
+      "CONFLICT": "Źródła sprzeczne",
+      "NOT_VERIFIED": "Niezweryfikowane w wykorzystanych źródłach"
+    },
+    "symbol": {
+      "VERIFIED_PRODUCT": "✓",
+      "VERIFIED_SCOPE": "◎",
+      "REGULATORY_CONTEXT": "R",
+      "SELF_DECLARED": "D",
+      "SOURCE_CLASSIFICATION": "S",
+      "CONFLICT": "↔",
+      "NOT_VERIFIED": "?"
+    },
+    "domain": {
+      "identity": "Tożsamość produktu",
+      "halal": "Identyfikowalność halal",
+      "animal": "Identyfikowalność zwierzęca / cruelty-free",
+      "market": "Kontekst rynkowy / rejestrowy",
+      "packaging": "Identyfikowalność opakowania",
+      "other": "Inne zweryfikowane informacje"
+    },
+    "field_subject": "Podmiot",
+    "field_scope": "Zakres",
+    "field_market": "Rynek",
+    "field_date": "Data",
+    "field_source": "Źródło",
+    "field_authority": "Organ",
+    "field_certificate": "Certyfikat / rejestracja",
+    "field_validity": "Ważność",
+    "open_source": "Otwórz źródło →",
+    "scope_warning": "Ten dowód odnosi się wyłącznie do pokazanego zakresu. BOTIA nie rozszerza go automatycznie na inny produkt, markę, spółkę dominującą, rynek ani zakład.",
+    "not_verified_note": "Z tego wyniku nie wyciąga się żadnego negatywnego wniosku.",
+    "contract_error": "Ten element nie został wyświetlony jako zweryfikowany, ponieważ brakowało wymaganych pól identyfikowalności."
+  }
 }

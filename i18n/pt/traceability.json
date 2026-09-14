@@ -4,9 +4,54 @@
   "lead": "O código de barras identifica um produto. As fontes determinam o que pode realmente ser verificado sobre ele.",
   "identity_title": "Identificador do produto",
   "product_label": "Produto",
+  "brand_label": "Marca",
   "market_label": "Mercado de referência",
-  "records_title": "Resultados de rastreabilidade",
-  "empty_state": "Nenhum resultado de rastreabilidade foi fornecido a esta vista ainda.",
-  "principle": "Uma ausência significa apenas «não verificado nas fontes consultadas». A BOTIA não transforma a ausência em «não certificado», «não halal», «não cruelty-free» ou «testado em animais».",
-  "disclaimer": "A BOTIA mostra a fonte, o sujeito, o âmbito e a data quando estão disponíveis."
+  "gtin14_label": "GTIN-14 normalizado",
+  "overall_label": "Estado geral de rastreabilidade",
+  "records_title": "Informação verificada",
+  "empty_state": "Não foram fornecidos dados de verificação de rastreabilidade a esta vista.",
+  "consulted_title": "Fontes consultadas",
+  "warnings_title": "Notas",
+  "principle": "Uma ausência não é um veredicto negativo. A BOTIA só mostra o que a fonte sustenta para o sujeito e o âmbito exatamente identificados.",
+  "disclaimer": "Um código de barras identifica. As fontes verificam. A BOTIA não preenche as lacunas.",
+  "runtime": {
+    "status": {
+      "VERIFIED_PRODUCT": "Verificado para este produto",
+      "VERIFIED_SCOPE": "Verificado para um âmbito definido",
+      "REGULATORY_CONTEXT": "Contexto regulatório localizado",
+      "SELF_DECLARED": "Declaração da empresa localizada",
+      "SOURCE_CLASSIFICATION": "Classificação da fonte localizada",
+      "CONFLICT": "Fontes em conflito",
+      "NOT_VERIFIED": "Não verificado nas fontes consultadas"
+    },
+    "symbol": {
+      "VERIFIED_PRODUCT": "✓",
+      "VERIFIED_SCOPE": "◎",
+      "REGULATORY_CONTEXT": "R",
+      "SELF_DECLARED": "D",
+      "SOURCE_CLASSIFICATION": "S",
+      "CONFLICT": "↔",
+      "NOT_VERIFIED": "?"
+    },
+    "domain": {
+      "identity": "Identidade do produto",
+      "halal": "Rastreabilidade halal",
+      "animal": "Rastreabilidade animal / cruelty-free",
+      "market": "Contexto de mercado / registo",
+      "packaging": "Rastreabilidade da embalagem",
+      "other": "Outra informação verificada"
+    },
+    "field_subject": "Sujeito",
+    "field_scope": "Âmbito",
+    "field_market": "Mercado",
+    "field_date": "Data",
+    "field_source": "Fonte",
+    "field_authority": "Autoridade",
+    "field_certificate": "Certificado / registo",
+    "field_validity": "Validade",
+    "open_source": "Abrir fonte →",
+    "scope_warning": "Esta evidência aplica-se apenas ao âmbito apresentado. A BOTIA não a estende automaticamente a outro produto, marca, empresa-mãe, mercado ou fábrica.",
+    "not_verified_note": "Não se extrai qualquer conclusão negativa deste resultado.",
+    "contract_error": "Este item não foi apresentado como verificado porque faltavam campos de rastreabilidade obrigatórios."
+  }
 }
