@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "query": {
+    "gtin": "4006381333931",
+    "gtin14": "04006381333931",
+    "market": "NL",
+    "lang": "en"
+  },
+  "product": {
+    "name": "Example product",
+    "brand": "Example brand"
+  },
+  "overall_status": "VERIFIED_PRODUCT",
+  "records": [
+    {
+      "id": "identity-example",
+      "domain": "identity",
+      "status": "VERIFIED_PRODUCT",
+      "title": "Product identity match",
+      "summary": "The source record matches this barcode.",
+      "subject": {
+        "type": "product",
+        "name": "Example product",
+        "identifier": "4006381333931"
+      },
+      "scope": {
+        "type": "product",
+        "value": "This GTIN only"
+      },
+      "market": "NL",
+      "date": "2026-09-14",
+      "source": {
+        "name": "Example identity source",
+        "authority": "Example",
+        "url": "https://example.org/",
+        "retrieved_at": "2026-09-14"
+      },
+      "evidence": {
+        "barcode_match": true,
+        "exact_product_match": true
+      }
+    },
+    {
+      "id": "scope-example",
+      "domain": "animal",
+      "status": "VERIFIED_SCOPE",
+      "title": "Verified for a defined range",
+      "summary": "The source supports a named product range, not automatic SKU-level coverage.",
+      "subject": {
+        "type": "range",
+        "name": "Example range"
+      },
+      "scope": {
+        "type": "range",
+        "value": "Example range"
+      },
+      "market": "NL",
+      "date": "2026-09-14",
+      "source": {
+        "name": "Example certification source",
+        "url": "https://example.org/",
+        "retrieved_at": "2026-09-14"
+      }
+    },
+    {
+      "id": "registry-example",
+      "domain": "market",
+      "status": "REGULATORY_CONTEXT",
+      "title": "Product listed in a market registry",
+      "summary": "Registry presence is shown as regulatory context only.",
+      "subject": {
+        "type": "registration",
+        "name": "Example product registration"
+      },
+      "scope": {
+        "type": "market",
+        "value": "Example market"
+      },
+      "market": "EX",
+      "date": "2026-09-14",
+      "source": {
+        "name": "Example registry",
+        "authority": "Example authority",
+        "url": "https://example.org/",
+        "retrieved_at": "2026-09-14"
+      }
+    },
+    {
+      "id": "not-verified-example",
+      "domain": "halal",
+      "status": "NOT_VERIFIED",
+      "title": "Halal traceability",
+      "summary": "No product-level verification was located in the sources consulted.",
+      "subject": {
+        "type": "product",
+        "name": "Example product"
+      },
+      "scope": {
+        "type": "product",
+        "value": "This GTIN only"
+      },
+      "market": "NL"
+    }
+  ],
+  "consulted_sources": [
+    {
+      "name": "Example identity source",
+      "retrieved_at": "2026-09-14"
+    },
+    {
+      "name": "Example certification source",
+      "retrieved_at": "2026-09-14"
+    }
+  ],
+  "warnings": [
+    "Example payload only. It contains no real certification claim."
+  ]
+}

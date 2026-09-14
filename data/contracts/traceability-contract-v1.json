@@ -1,0 +1,91 @@
+{
+  "contract": "BOTIA Traceability",
+  "schema_version": "1.0",
+  "purpose": "Renderer/backend contract. The barcode identifies; sources verify. No inheritance or absence-to-negative inference.",
+  "allowed_statuses": [
+    "VERIFIED_PRODUCT",
+    "VERIFIED_SCOPE",
+    "REGULATORY_CONTEXT",
+    "SELF_DECLARED",
+    "SOURCE_CLASSIFICATION",
+    "CONFLICT",
+    "NOT_VERIFIED"
+  ],
+  "allowed_domains": [
+    "identity",
+    "halal",
+    "animal",
+    "market",
+    "packaging",
+    "other"
+  ],
+  "payload": {
+    "schema_version": "string, required",
+    "query": {
+      "gtin": "string, validated GTIN/EAN/UPC as read",
+      "gtin14": "string, optional zero-padded normalized GTIN-14",
+      "market": "string, optional reference market",
+      "lang": "string, optional UI language"
+    },
+    "product": {
+      "name": "string, optional",
+      "brand": "string, optional"
+    },
+    "overall_status": "one of allowed_statuses, optional; supplied by backend only",
+    "records": [
+      {
+        "id": "string, recommended stable source-record id",
+        "domain": "one of allowed_domains",
+        "status": "one of allowed_statuses",
+        "title": "string",
+        "summary": "string; factual explanation of what the source supports",
+        "subject": {
+          "type": "product|sku|range|brand|company|plant|registration|other",
+          "name": "string",
+          "identifier": "string, optional"
+        },
+        "scope": {
+          "type": "product|sku|range|brand|company|plant|market|registration|other",
+          "value": "string"
+        },
+        "market": "string, optional",
+        "date": "ISO date or source date, required for verified statuses unless source date supplied",
+        "source": {
+          "name": "string, required for verified statuses",
+          "authority": "string, optional",
+          "url": "https URL, optional but strongly recommended",
+          "retrieved_at": "ISO date, recommended",
+          "published_at": "ISO date, optional",
+          "valid_from": "ISO date, optional",
+          "valid_to": "ISO date, optional",
+          "license": "string, optional"
+        },
+        "evidence": {
+          "certificate_id": "string, optional",
+          "registration_id": "string, optional",
+          "record_id": "string, optional",
+          "barcode_match": "boolean|null, optional",
+          "exact_product_match": "boolean|null, optional"
+        }
+      }
+    ],
+    "consulted_sources": [
+      {
+        "name": "string",
+        "retrieved_at": "ISO date, optional"
+      }
+    ],
+    "warnings": [
+      "string or {text:string}"
+    ]
+  },
+  "hard_rules": [
+    "NOT_VERIFIED means only: No verificado en las fuentes consultadas.",
+    "Never infer not certified, not halal, not cruelty-free or tested from absence.",
+    "Never inherit brand to SKU, parent to brand, brand to parent, plant to SKU, product to company, or market A to market B.",
+    "VERIFIED_SCOPE must render the exact scope and must not be displayed as VERIFIED_PRODUCT.",
+    "REGULATORY_CONTEXT proves registry/context only, not halal or animal-testing status unless the source explicitly supports that.",
+    "SELF_DECLARED must remain visibly distinct from independent verification.",
+    "A verified record must have subject, scope, source and date/retrieval date. If missing, the renderer does not display it as verified."
+  ]
+}
