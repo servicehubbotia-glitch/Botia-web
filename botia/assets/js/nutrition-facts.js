@@ -1,12 +1,20 @@
-// BOTIA — Nutrition Facts renderer v3.
+// BOTIA — Nutrition Facts renderer v4.
 // Dynamic nutrient labels are shown in the BOTIA UI language.
 // The original OCR label is preserved in the payload and is never overwritten.
 (() => {
   "use strict";
 
   const params = new URLSearchParams(location.search);
-  const lang = String(params.get("lang") || document.documentElement.lang || "en")
-    .trim().toLowerCase().split("-", 1)[0];
+  const storedLang = (() => {
+    try { return localStorage.getItem("botia-lang") || ""; } catch (_) { return ""; }
+  })();
+  const lang = String(
+    params.get("lang") ||
+    storedLang ||
+    document.documentElement.lang ||
+    navigator.language ||
+    "en"
+  ).trim().toLowerCase().split("-", 1)[0];
 
   const el = id => document.getElementById(id);
 
@@ -139,6 +147,122 @@
     }
   };
 
+  const KEY_ALIASES = {
+    fat_total_g: "fat", fat_saturated_g: "saturated_fat", fat_trans_g: "trans_fat",
+    carbohydrate_g: "carbohydrate", sugars_total_g: "total_sugars",
+    sugars_added_g: "added_sugars", sugars_free_g: "free_sugars",
+    fibre_g: "fibre", fiber_g: "fibre", protein_g: "protein",
+    salt_g: "salt", sodium_mg: "sodium", cholesterol_mg: "cholesterol",
+    potassium_mg: "potassium", calcium_mg: "calcium", iron_mg: "iron",
+    vitamin_d_ug: "vitamin_d"
+  };
+
+  const normaliseLabel = value => String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[()[\]:;,%]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  const LABEL_ALIASES = {
+    // Dutch
+    "vet":"fat","vetten":"fat","totaal vet":"fat",
+    "verzadigd vet":"saturated_fat","verzadigde vetzuren":"saturated_fat",
+    "waarvan verzadigde vetzuren":"saturated_fat","transvet":"trans_fat",
+    "transvetten":"trans_fat","koolhydraten":"carbohydrate",
+    "waarvan suikers":"total_sugars","suikers":"total_sugars",
+    "toegevoegde suikers":"added_sugars","vrije suikers":"free_sugars",
+    "vezels":"fibre","voedingsvezels":"fibre","eiwitten":"protein",
+    "zout":"salt","natrium":"sodium","energie":"__energy__",
+
+    // English
+    "total fat":"fat","fat":"fat","saturated fat":"saturated_fat",
+    "saturates":"saturated_fat","trans fat":"trans_fat",
+    "carbohydrate":"carbohydrate","total carbohydrate":"carbohydrate",
+    "total sugars":"total_sugars","sugars":"total_sugars",
+    "added sugars":"added_sugars","free sugars":"free_sugars",
+    "dietary fibre":"fibre","dietary fiber":"fibre","fibre":"fibre","fiber":"fibre",
+    "protein":"protein","salt":"salt","sodium":"sodium","energy":"__energy__",
+
+    // Spanish
+    "grasas":"fat","grasas totales":"fat","grasa total":"fat",
+    "grasas saturadas":"saturated_fat","acidos grasos saturados":"saturated_fat",
+    "grasas trans":"trans_fat","hidratos de carbono":"carbohydrate",
+    "carbohidratos":"carbohydrate","azucares":"total_sugars",
+    "azucares totales":"total_sugars","de los cuales azucares":"total_sugars",
+    "azucares anadidos":"added_sugars","azucares libres":"free_sugars",
+    "fibra":"fibre","fibra alimentaria":"fibre","proteinas":"protein",
+    "sal":"salt","sodio":"sodium","energia":"__energy__",
+
+    // French
+    "matieres grasses":"fat","lipides":"fat","acides gras satures":"saturated_fat",
+    "dont acides gras satures":"saturated_fat","acides gras trans":"trans_fat",
+    "glucides":"carbohydrate","sucres":"total_sugars","dont sucres":"total_sugars",
+    "sucres totaux":"total_sugars","sucres ajoutes":"added_sugars",
+    "sucres libres":"free_sugars","fibres":"fibre","fibres alimentaires":"fibre",
+    "proteines":"protein","sel":"salt","sodium":"sodium","energie":"__energy__",
+
+    // German
+    "fett":"fat","gesamtfett":"fat","gesattigte fettsauren":"saturated_fat",
+    "davon gesattigte fettsauren":"saturated_fat","transfette":"trans_fat",
+    "kohlenhydrate":"carbohydrate","zucker":"total_sugars","davon zucker":"total_sugars",
+    "zugesetzter zucker":"added_sugars","freie zucker":"free_sugars",
+    "ballaststoffe":"fibre","eiweiss":"protein","salz":"salt","natrium":"sodium",
+    "energie":"__energy__",
+
+    // Italian / Portuguese / Polish / Romanian / Turkish / Indonesian / Russian
+    "grassi":"fat","grassi totali":"fat","grassi saturi":"saturated_fat",
+    "carboidrati":"carbohydrate","zuccheri":"total_sugars","di cui zuccheri":"total_sugars",
+    "proteine":"protein","sale":"salt",
+    "gorduras totais":"fat","gorduras saturadas":"saturated_fat",
+    "carboidratos":"carbohydrate","acucares totais":"total_sugars",
+    "acucares adicionados":"added_sugars","fibra alimentar":"fibre",
+    "proteinas":"protein","sodio":"sodium",
+    "tluszcz":"fat","kwasy tluszczowe nasycone":"saturated_fat",
+    "weglowodany":"carbohydrate","cukry":"total_sugars","w tym cukry":"total_sugars",
+    "bialko":"protein","sol":"salt","sod":"sodium",
+    "grasimi":"fat","grasimi totale":"fat","grasimi saturate":"saturated_fat",
+    "carbohidrati":"carbohydrate","zaharuri":"total_sugars","proteine":"protein",
+    "sare":"salt","sodiu":"sodium",
+    "toplam yag":"fat","doymus yag":"saturated_fat","karbonhidrat":"carbohydrate",
+    "toplam seker":"total_sugars","ilave seker":"added_sugars","lif":"fibre",
+    "tuz":"salt","sodyum":"sodium","enerji":"__energy__",
+    "lemak total":"fat","lemak jenuh":"saturated_fat","karbohidrat total":"carbohydrate",
+    "gula total":"total_sugars","gula tambahan":"added_sugars","serat pangan":"fibre",
+    "garam":"salt","natrium":"sodium","energi":"__energy__",
+    "жиры":"fat","насыщенные жиры":"saturated_fat","углеводы":"carbohydrate",
+    "сахара всего":"total_sugars","добавленные сахара":"added_sugars",
+    "пищевые волокна":"fibre","белки":"protein","соль":"salt","натрий":"sodium",
+
+    // Chinese / Arabic
+    "脂肪":"fat","总脂肪":"fat","饱和脂肪":"saturated_fat","反式脂肪":"trans_fat",
+    "碳水化合物":"carbohydrate","糖":"total_sugars","总糖":"total_sugars",
+    "添加糖":"added_sugars","游离糖":"free_sugars","膳食纤维":"fibre",
+    "蛋白质":"protein","盐":"salt","钠":"sodium","能量":"__energy__",
+    "الدهون":"fat","الدهون الكلية":"fat","الدهون المشبعة":"saturated_fat",
+    "الدهون المتحولة":"trans_fat","الكربوهيدرات":"carbohydrate",
+    "السكريات":"total_sugars","السكريات الكلية":"total_sugars",
+    "السكريات المضافة":"added_sugars","السكريات الحرة":"free_sugars",
+    "الألياف":"fibre","البروتين":"protein","الملح":"salt","الصوديوم":"sodium",
+    "الطاقة":"__energy__"
+  };
+
+  const canonicalNutrientKey = item => {
+    const rawKey = String(item?.key || item?.nutrient || "").trim();
+    const direct = KEY_ALIASES[rawKey] || rawKey;
+    const table = NUTRIENT_LABELS[lang] || NUTRIENT_LABELS.en;
+    if (table[direct]) return direct;
+
+    const alias = LABEL_ALIASES[normaliseLabel(item?.label)];
+    if (alias === "__energy__") {
+      const unit = String(item?.unit || "").trim().toLowerCase();
+      if (unit === "kj") return "energy_kj";
+      if (unit === "kcal" || unit === "cal") return "energy_kcal";
+    }
+    return alias || direct;
+  };
+
   const BASIS_LABELS = {
     en: {per_100g:"per 100 g", per_100ml:"per 100 ml", per_serving:"per serving"},
     es: {per_100g:"por 100 g", per_100ml:"por 100 ml", per_serving:"por porción"},
@@ -206,7 +330,7 @@
   };
 
   const nutrientLabel = item => {
-    const key = String(item?.key || item?.nutrient || "").trim();
+    const key = canonicalNutrientKey(item);
     const table = NUTRIENT_LABELS[lang] || NUTRIENT_LABELS.en;
     return table[key] || item?.label || key || "";
   };
