@@ -20,7 +20,11 @@
 <script src="/botia/assets/js/menu.js"></script>
 </head>
 <body class="has-botia-header">
-<a class="skip-link" href="#main-content">Skip to main content</a>
+<a class="skip-link"
+   href="#main-content"
+   style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+  Skip to main content
+</a>
 <header class="top"><div class="topin"><button id="menuBtn" aria-label="Menu">☰</button><a class="word" href="/">BOTIA</a><div class="spacer"></div><div class="lang"><select id="lang-select" aria-label="Select language" onchange="setHelpLanguage(this.value)"><option value="en">English</option><option value="es">Español</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="tr">Türkçe</option><option value="zh">中文</option></select></div></div></header>
 <main id="main-content">
 <section class="hero"><div class="wrap hero-grid"><div><div class="kicker" id="kicker">HELP</div><h1 id="title">Help & FAQ</h1><p class="subtitle" id="subtitle"></p></div><div class="stage"><img src="/botia_jar_512.png" alt=""></div></div></section>
