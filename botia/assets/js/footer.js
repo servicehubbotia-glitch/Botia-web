@@ -85,6 +85,7 @@
     colContact.innerHTML = `
       <h4 class="footer-title">${t(labels, "footer_contact_title", "Contact")}</h4>
       <p class="footer-text"><a href="mailto:${COMPANY.email}">${COMPANY.email}</a></p>
+      <p class="footer-text"><a href="${preserveLanguage("/help.html", language)}">${t(labels, "footer_help", "Help & FAQ")}</a></p>
     `;
 
     // ---- Column 3: Legal ----
