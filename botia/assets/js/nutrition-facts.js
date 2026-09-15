@@ -1,10 +1,160 @@
-// BOTIA — Nutrition Facts renderer v2.
-// Accepts query payloads and Flutter/WebView runtime injection.
+// BOTIA — Nutrition Facts renderer v3.
+// Dynamic nutrient labels are shown in the BOTIA UI language.
+// The original OCR label is preserved in the payload and is never overwritten.
 (() => {
   "use strict";
 
   const params = new URLSearchParams(location.search);
+  const lang = String(params.get("lang") || document.documentElement.lang || "en")
+    .trim().toLowerCase().split("-", 1)[0];
+
   const el = id => document.getElementById(id);
+
+  const NUTRIENT_LABELS = {
+    en: {
+      energy_kj: "Energy", energy_kcal: "Energy", fat: "Total fat",
+      saturated_fat: "Saturated fat", trans_fat: "Trans fat",
+      carbohydrate: "Carbohydrate", total_sugars: "Total sugars",
+      added_sugars: "Added sugars", free_sugars: "Free sugars",
+      fibre: "Fibre", protein: "Protein", salt: "Salt", sodium: "Sodium",
+      cholesterol: "Cholesterol", potassium: "Potassium", calcium: "Calcium",
+      iron: "Iron", vitamin_d: "Vitamin D"
+    },
+    es: {
+      energy_kj: "Energía", energy_kcal: "Energía", fat: "Grasas totales",
+      saturated_fat: "Grasas saturadas", trans_fat: "Grasas trans",
+      carbohydrate: "Hidratos de carbono", total_sugars: "Azúcares totales",
+      added_sugars: "Azúcares añadidos", free_sugars: "Azúcares libres",
+      fibre: "Fibra", protein: "Proteínas", salt: "Sal", sodium: "Sodio",
+      cholesterol: "Colesterol", potassium: "Potasio", calcium: "Calcio",
+      iron: "Hierro", vitamin_d: "Vitamina D"
+    },
+    ar: {
+      energy_kj: "الطاقة", energy_kcal: "الطاقة", fat: "الدهون الكلية",
+      saturated_fat: "الدهون المشبعة", trans_fat: "الدهون المتحولة",
+      carbohydrate: "الكربوهيدرات", total_sugars: "السكريات الكلية",
+      added_sugars: "السكريات المضافة", free_sugars: "السكريات الحرة",
+      fibre: "الألياف", protein: "البروتين", salt: "الملح", sodium: "الصوديوم",
+      cholesterol: "الكوليسترول", potassium: "البوتاسيوم", calcium: "الكالسيوم",
+      iron: "الحديد", vitamin_d: "فيتامين د"
+    },
+    de: {
+      energy_kj: "Energie", energy_kcal: "Energie", fat: "Fett",
+      saturated_fat: "Gesättigte Fettsäuren", trans_fat: "Transfette",
+      carbohydrate: "Kohlenhydrate", total_sugars: "Zucker gesamt",
+      added_sugars: "Zugesetzter Zucker", free_sugars: "Freie Zucker",
+      fibre: "Ballaststoffe", protein: "Eiweiß", salt: "Salz", sodium: "Natrium",
+      cholesterol: "Cholesterin", potassium: "Kalium", calcium: "Calcium",
+      iron: "Eisen", vitamin_d: "Vitamin D"
+    },
+    fr: {
+      energy_kj: "Énergie", energy_kcal: "Énergie", fat: "Matières grasses",
+      saturated_fat: "Acides gras saturés", trans_fat: "Acides gras trans",
+      carbohydrate: "Glucides", total_sugars: "Sucres totaux",
+      added_sugars: "Sucres ajoutés", free_sugars: "Sucres libres",
+      fibre: "Fibres", protein: "Protéines", salt: "Sel", sodium: "Sodium",
+      cholesterol: "Cholestérol", potassium: "Potassium", calcium: "Calcium",
+      iron: "Fer", vitamin_d: "Vitamine D"
+    },
+    id: {
+      energy_kj: "Energi", energy_kcal: "Energi", fat: "Lemak total",
+      saturated_fat: "Lemak jenuh", trans_fat: "Lemak trans",
+      carbohydrate: "Karbohidrat", total_sugars: "Gula total",
+      added_sugars: "Gula tambahan", free_sugars: "Gula bebas",
+      fibre: "Serat pangan", protein: "Protein", salt: "Garam", sodium: "Natrium",
+      cholesterol: "Kolesterol", potassium: "Kalium", calcium: "Kalsium",
+      iron: "Zat besi", vitamin_d: "Vitamin D"
+    },
+    it: {
+      energy_kj: "Energia", energy_kcal: "Energia", fat: "Grassi totali",
+      saturated_fat: "Grassi saturi", trans_fat: "Grassi trans",
+      carbohydrate: "Carboidrati", total_sugars: "Zuccheri totali",
+      added_sugars: "Zuccheri aggiunti", free_sugars: "Zuccheri liberi",
+      fibre: "Fibre", protein: "Proteine", salt: "Sale", sodium: "Sodio",
+      cholesterol: "Colesterolo", potassium: "Potassio", calcium: "Calcio",
+      iron: "Ferro", vitamin_d: "Vitamina D"
+    },
+    nl: {
+      energy_kj: "Energie", energy_kcal: "Energie", fat: "Totaal vet",
+      saturated_fat: "Verzadigd vet", trans_fat: "Transvet",
+      carbohydrate: "Koolhydraten", total_sugars: "Totale suikers",
+      added_sugars: "Toegevoegde suikers", free_sugars: "Vrije suikers",
+      fibre: "Vezels", protein: "Eiwitten", salt: "Zout", sodium: "Natrium",
+      cholesterol: "Cholesterol", potassium: "Kalium", calcium: "Calcium",
+      iron: "IJzer", vitamin_d: "Vitamine D"
+    },
+    pl: {
+      energy_kj: "Wartość energetyczna", energy_kcal: "Wartość energetyczna",
+      fat: "Tłuszcz", saturated_fat: "Kwasy tłuszczowe nasycone",
+      trans_fat: "Tłuszcze trans", carbohydrate: "Węglowodany",
+      total_sugars: "Cukry ogółem", added_sugars: "Cukry dodane",
+      free_sugars: "Cukry wolne", fibre: "Błonnik", protein: "Białko",
+      salt: "Sól", sodium: "Sód", cholesterol: "Cholesterol",
+      potassium: "Potas", calcium: "Wapń", iron: "Żelazo", vitamin_d: "Witamina D"
+    },
+    pt: {
+      energy_kj: "Energia", energy_kcal: "Energia", fat: "Gorduras totais",
+      saturated_fat: "Gorduras saturadas", trans_fat: "Gorduras trans",
+      carbohydrate: "Hidratos de carbono", total_sugars: "Açúcares totais",
+      added_sugars: "Açúcares adicionados", free_sugars: "Açúcares livres",
+      fibre: "Fibra", protein: "Proteínas", salt: "Sal", sodium: "Sódio",
+      cholesterol: "Colesterol", potassium: "Potássio", calcium: "Cálcio",
+      iron: "Ferro", vitamin_d: "Vitamina D"
+    },
+    ro: {
+      energy_kj: "Energie", energy_kcal: "Energie", fat: "Grăsimi totale",
+      saturated_fat: "Grăsimi saturate", trans_fat: "Grăsimi trans",
+      carbohydrate: "Carbohidrați", total_sugars: "Zaharuri totale",
+      added_sugars: "Zaharuri adăugate", free_sugars: "Zaharuri libere",
+      fibre: "Fibre", protein: "Proteine", salt: "Sare", sodium: "Sodiu",
+      cholesterol: "Colesterol", potassium: "Potasiu", calcium: "Calciu",
+      iron: "Fier", vitamin_d: "Vitamina D"
+    },
+    ru: {
+      energy_kj: "Энергетическая ценность", energy_kcal: "Энергетическая ценность",
+      fat: "Жиры", saturated_fat: "Насыщенные жиры", trans_fat: "Трансжиры",
+      carbohydrate: "Углеводы", total_sugars: "Сахара всего",
+      added_sugars: "Добавленные сахара", free_sugars: "Свободные сахара",
+      fibre: "Пищевые волокна", protein: "Белки", salt: "Соль", sodium: "Натрий",
+      cholesterol: "Холестерин", potassium: "Калий", calcium: "Кальций",
+      iron: "Железо", vitamin_d: "Витамин D"
+    },
+    tr: {
+      energy_kj: "Enerji", energy_kcal: "Enerji", fat: "Toplam yağ",
+      saturated_fat: "Doymuş yağ", trans_fat: "Trans yağ",
+      carbohydrate: "Karbonhidrat", total_sugars: "Toplam şeker",
+      added_sugars: "İlave şeker", free_sugars: "Serbest şeker",
+      fibre: "Lif", protein: "Protein", salt: "Tuz", sodium: "Sodyum",
+      cholesterol: "Kolesterol", potassium: "Potasyum", calcium: "Kalsiyum",
+      iron: "Demir", vitamin_d: "D vitamini"
+    },
+    zh: {
+      energy_kj: "能量", energy_kcal: "能量", fat: "总脂肪",
+      saturated_fat: "饱和脂肪", trans_fat: "反式脂肪",
+      carbohydrate: "碳水化合物", total_sugars: "总糖",
+      added_sugars: "添加糖", free_sugars: "游离糖",
+      fibre: "膳食纤维", protein: "蛋白质", salt: "盐", sodium: "钠",
+      cholesterol: "胆固醇", potassium: "钾", calcium: "钙",
+      iron: "铁", vitamin_d: "维生素D"
+    }
+  };
+
+  const BASIS_LABELS = {
+    en: {per_100g:"per 100 g", per_100ml:"per 100 ml", per_serving:"per serving"},
+    es: {per_100g:"por 100 g", per_100ml:"por 100 ml", per_serving:"por porción"},
+    ar: {per_100g:"لكل 100 غ", per_100ml:"لكل 100 مل", per_serving:"لكل حصة"},
+    de: {per_100g:"pro 100 g", per_100ml:"pro 100 ml", per_serving:"pro Portion"},
+    fr: {per_100g:"pour 100 g", per_100ml:"pour 100 ml", per_serving:"par portion"},
+    id: {per_100g:"per 100 g", per_100ml:"per 100 ml", per_serving:"per sajian"},
+    it: {per_100g:"per 100 g", per_100ml:"per 100 ml", per_serving:"per porzione"},
+    nl: {per_100g:"per 100 g", per_100ml:"per 100 ml", per_serving:"per portie"},
+    pl: {per_100g:"na 100 g", per_100ml:"na 100 ml", per_serving:"na porcję"},
+    pt: {per_100g:"por 100 g", per_100ml:"por 100 ml", per_serving:"por porção"},
+    ro: {per_100g:"per 100 g", per_100ml:"per 100 ml", per_serving:"per porție"},
+    ru: {per_100g:"на 100 г", per_100ml:"на 100 мл", per_serving:"на порцию"},
+    tr: {per_100g:"100 g için", per_100ml:"100 ml için", per_serving:"porsiyon başına"},
+    zh: {per_100g:"每100克", per_100ml:"每100毫升", per_serving:"每份"}
+  };
 
   const safeJson = raw => {
     if (!raw) return null;
@@ -21,27 +171,18 @@
 
   const unwrap = raw => {
     if (!raw || typeof raw !== "object") return null;
-    if (raw.web_payload && typeof raw.web_payload === "object") {
-      return raw.web_payload;
-    }
-    if (raw.nutrition?.web_payload &&
-        typeof raw.nutrition.web_payload === "object") {
+    if (raw.web_payload && typeof raw.web_payload === "object") return raw.web_payload;
+    if (raw.nutrition?.web_payload && typeof raw.nutrition.web_payload === "object") {
       return raw.nutrition.web_payload;
     }
-    if ("declared" in raw || "references" in raw || "basis" in raw) {
-      return raw;
-    }
+    if ("declared" in raw || "references" in raw || "basis" in raw) return raw;
     return null;
   };
 
   const initialPayload = () => {
     const runtime = unwrap(window.BOTIA_NUTRITION_DATA);
     if (runtime) return runtime;
-    return unwrap(safeJson(params.get("payload"))) || {
-      basis: "",
-      declared: [],
-      references: []
-    };
+    return unwrap(safeJson(params.get("payload"))) || {basis:"", declared:[], references:[]};
   };
 
   const clear = () => {
@@ -54,16 +195,25 @@
   };
 
   const displayAmount = row => {
-    const value = row?.value;
-    const unit = row?.unit;
     const parts = [];
-    if (value !== undefined && value !== null && String(value).trim() !== "") {
-      parts.push(String(value));
+    if (row?.value !== undefined && row?.value !== null && String(row.value).trim() !== "") {
+      parts.push(String(row.value));
     }
-    if (unit !== undefined && unit !== null && String(unit).trim() !== "") {
-      parts.push(String(unit));
+    if (row?.unit !== undefined && row?.unit !== null && String(row.unit).trim() !== "") {
+      parts.push(String(row.unit));
     }
     return parts.join(" ") || "—";
+  };
+
+  const nutrientLabel = item => {
+    const key = String(item?.key || item?.nutrient || "").trim();
+    const table = NUTRIENT_LABELS[lang] || NUTRIENT_LABELS.en;
+    return table[key] || item?.label || key || "";
+  };
+
+  const basisLabel = basis => {
+    const table = BASIS_LABELS[lang] || BASIS_LABELS.en;
+    return table[String(basis || "").trim()] || String(basis || "—");
   };
 
   const renderDeclared = data => {
@@ -79,7 +229,7 @@
 
       const nutrient = document.createElement("div");
       nutrient.className = "nutrient";
-      nutrient.textContent = item.label || item.key || "";
+      nutrient.textContent = nutrientLabel(item);
 
       const amount = document.createElement("div");
       amount.className = "amount";
@@ -114,7 +264,7 @@
 
       const name = document.createElement("h3");
       name.className = "ref-name";
-      name.textContent = item.label || item.nutrient || "Reference";
+      name.textContent = nutrientLabel(item) || item.label || "Reference";
       head.appendChild(name);
 
       if (item.classification) {
@@ -196,9 +346,9 @@
   };
 
   const render = raw => {
-    const data = unwrap(raw) || { basis: "", declared: [], references: [] };
+    const data = unwrap(raw) || {basis:"", declared:[], references:[]};
     clear();
-    el("basis").textContent = data.basis || "—";
+    el("basis").textContent = basisLabel(data.basis);
     renderDeclared(data);
     renderReferences(data);
   };
@@ -214,14 +364,13 @@
     if (data) render(data);
   };
 
-  // Flutter/WebView runtime contract.
   document.addEventListener("botia:nutrition-ready", onRuntimeData);
   document.addEventListener("botia:nutrition-updated", onRuntimeData);
 
   const init = () => render(initialPayload());
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init, { once: true });
+    document.addEventListener("DOMContentLoaded", init, {once:true});
   } else {
     init();
   }
