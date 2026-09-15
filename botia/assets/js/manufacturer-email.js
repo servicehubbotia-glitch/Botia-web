@@ -12,6 +12,9 @@
       copy: "BOTIA has not found enough public evidence for this product. You can ask the company directly.",
       button: "Write to the company",
       followup: "If the company sends you documentation, contact BOTIA and send it to us. We will review it before adding it as evidence.",
+      reply_title: "If the brand replies",
+      reply_body: "You can forward its reply to botia.traceability@botia-safefood.com. We will review it and, if it can be verified, add it as evidence citing the brand as the source.",
+      reply_privacy: "Your email address is used only to reply to you about that submission. The evidence is published without identifying the person who sent it.",
       subject: "Request for verifiable information about a product",
       greeting: "Hello,",
       intro: "I am contacting you to request verifiable information about the following product:",
@@ -28,6 +31,9 @@
       copy: "BOTIA no ha encontrado evidencia pública suficiente para este producto. Puedes preguntar directamente a la compañía.",
       button: "Escribe a la compañía",
       followup: "Si la compañía te envía documentación, ponte en contacto con BOTIA y háznosla llegar. La revisaremos antes de incorporarla como evidencia.",
+      reply_title: "Si la marca te responde",
+      reply_body: "Puedes reenviarnos su respuesta a botia.traceability@botia-safefood.com. La revisaremos y, si es verificable, la incorporaremos como evidencia citando a la marca como fuente.",
+      reply_privacy: "Tu dirección de correo se usa únicamente para responderte sobre ese envío. La evidencia se publica sin identificar a quien la envió.",
       subject: "Consulta sobre información verificable de un producto",
       greeting: "Buenos días,",
       intro: "Me pongo en contacto para solicitar información verificable sobre el siguiente producto:",
@@ -44,6 +50,9 @@
       copy: "لم تجد BOTIA أدلة عامة كافية لهذا المنتج. يمكنك سؤال الشركة مباشرة.",
       button: "اكتب إلى الشركة",
       followup: "إذا أرسلت لك الشركة مستندات، تواصل مع BOTIA وأرسلها إلينا. سنراجعها قبل إضافتها كدليل.",
+      reply_title: "إذا ردّت العلامة التجارية",
+      reply_body: "يمكنك إعادة توجيه ردها إلينا على botia.traceability@botia-safefood.com. سنراجعه، وإذا أمكن التحقق منه، سنضيفه كدليل مع ذكر العلامة التجارية كمصدر.",
+      reply_privacy: "يُستخدم عنوان بريدك الإلكتروني فقط للرد عليك بشأن هذا الإرسال. تُنشر الأدلة من دون الكشف عن هوية الشخص الذي أرسلها.",
       subject: "طلب معلومات قابلة للتحقق عن منتج",
       greeting: "مرحبًا،",
       intro: "أتواصل معكم لطلب معلومات قابلة للتحقق عن المنتج التالي:",
@@ -60,6 +69,9 @@
       copy: "BOTIA hat für dieses Produkt keine ausreichenden öffentlichen Nachweise gefunden. Du kannst das Unternehmen direkt fragen.",
       button: "Unternehmen anschreiben",
       followup: "Wenn das Unternehmen dir Unterlagen sendet, kontaktiere BOTIA und leite sie an uns weiter. Wir prüfen sie, bevor wir sie als Nachweis aufnehmen.",
+      reply_title: "Wenn die Marke dir antwortet",
+      reply_body: "Du kannst uns die Antwort an botia.traceability@botia-safefood.com weiterleiten. Wir prüfen sie und nehmen sie, wenn sie überprüfbar ist, als Nachweis auf und nennen die Marke als Quelle.",
+      reply_privacy: "Deine E-Mail-Adresse wird nur verwendet, um dir zu dieser Einsendung zu antworten. Der Nachweis wird veröffentlicht, ohne die Person zu identifizieren, die ihn eingesandt hat.",
       subject: "Anfrage zu überprüfbaren Produktinformationen",
       greeting: "Guten Tag,",
       intro: "ich möchte überprüfbare Informationen zu folgendem Produkt anfragen:",
@@ -76,6 +88,9 @@
       copy: "BOTIA n’a pas trouvé suffisamment de preuves publiques pour ce produit. Vous pouvez interroger directement l’entreprise.",
       button: "Écrire à l’entreprise",
       followup: "Si l’entreprise vous envoie des documents, contactez BOTIA et transmettez-les-nous. Nous les examinerons avant de les intégrer comme preuve.",
+      reply_title: "Si la marque vous répond",
+      reply_body: "Vous pouvez nous transférer sa réponse à botia.traceability@botia-safefood.com. Nous l’examinerons et, si elle est vérifiable, nous l’intégrerons comme preuve en citant la marque comme source.",
+      reply_privacy: "Votre adresse e-mail est utilisée uniquement pour vous répondre au sujet de cet envoi. La preuve est publiée sans identifier la personne qui l’a transmise.",
       subject: "Demande d’informations vérifiables sur un produit",
       greeting: "Bonjour,",
       intro: "Je vous contacte afin d’obtenir des informations vérifiables sur le produit suivant :",
@@ -92,6 +107,9 @@
       copy: "BOTIA belum menemukan bukti publik yang cukup untuk produk ini. Anda dapat bertanya langsung kepada perusahaan.",
       button: "Tulis ke perusahaan",
       followup: "Jika perusahaan mengirimkan dokumen, hubungi BOTIA dan kirimkan kepada kami. Kami akan meninjaunya sebelum menambahkannya sebagai bukti.",
+      reply_title: "Jika merek membalas",
+      reply_body: "Anda dapat meneruskan balasannya ke botia.traceability@botia-safefood.com. Kami akan meninjaunya dan, jika dapat diverifikasi, memasukkannya sebagai bukti dengan mencantumkan merek sebagai sumber.",
+      reply_privacy: "Alamat email Anda hanya digunakan untuk membalas Anda terkait kiriman tersebut. Bukti dipublikasikan tanpa mengidentifikasi orang yang mengirimkannya.",
       subject: "Permintaan informasi produk yang dapat diverifikasi",
       greeting: "Halo,",
       intro: "Saya menghubungi Anda untuk meminta informasi yang dapat diverifikasi mengenai produk berikut:",
@@ -108,6 +126,9 @@
       copy: "BOTIA non ha trovato prove pubbliche sufficienti per questo prodotto. Puoi chiedere direttamente all’azienda.",
       button: "Scrivi all’azienda",
       followup: "Se l’azienda ti invia documentazione, contatta BOTIA e inoltracela. La esamineremo prima di aggiungerla come evidenza.",
+      reply_title: "Se il marchio ti risponde",
+      reply_body: "Puoi inoltrarci la risposta a botia.traceability@botia-safefood.com. La esamineremo e, se verificabile, la incorporeremo come evidenza citando il marchio come fonte.",
+      reply_privacy: "Il tuo indirizzo e-mail viene utilizzato solo per risponderti in merito a quell’invio. L’evidenza viene pubblicata senza identificare chi l’ha inviata.",
       subject: "Richiesta di informazioni verificabili su un prodotto",
       greeting: "Buongiorno,",
       intro: "Vi contatto per richiedere informazioni verificabili sul seguente prodotto:",
@@ -124,6 +145,9 @@
       copy: "BOTIA heeft voor dit product niet genoeg openbaar bewijs gevonden. Je kunt het bedrijf rechtstreeks benaderen.",
       button: "Schrijf het bedrijf",
       followup: "Als het bedrijf documentatie stuurt, neem dan contact op met BOTIA en stuur die naar ons door. Wij beoordelen ze voordat we ze als bewijs opnemen.",
+      reply_title: "Als het merk je antwoordt",
+      reply_body: "Je kunt het antwoord doorsturen naar botia.traceability@botia-safefood.com. We beoordelen het en nemen het, als het verifieerbaar is, op als bewijs met het merk als bron.",
+      reply_privacy: "Je e-mailadres wordt alleen gebruikt om je over die inzending te antwoorden. Het bewijs wordt gepubliceerd zonder de persoon te identificeren die het heeft ingestuurd.",
       subject: "Verzoek om verifieerbare productinformatie",
       greeting: "Goedendag,",
       intro: "Ik neem contact met u op om verifieerbare informatie te vragen over het volgende product:",
@@ -140,6 +164,9 @@
       copy: "BOTIA nie znalazła wystarczających publicznych dowodów dotyczących tego produktu. Możesz zapytać firmę bezpośrednio.",
       button: "Napisz do firmy",
       followup: "Jeśli firma prześle Ci dokumentację, skontaktuj się z BOTIA i przekaż ją nam. Sprawdzimy ją przed dodaniem jako dowód.",
+      reply_title: "Jeśli marka Ci odpowie",
+      reply_body: "Możesz przesłać nam jej odpowiedź na botia.traceability@botia-safefood.com. Sprawdzimy ją i, jeśli będzie możliwa do zweryfikowania, dodamy ją jako dowód, wskazując markę jako źródło.",
+      reply_privacy: "Twój adres e-mail jest używany wyłącznie do odpowiedzi dotyczącej tego zgłoszenia. Dowód jest publikowany bez identyfikowania osoby, która go przesłała.",
       subject: "Prośba o weryfikowalne informacje o produkcie",
       greeting: "Dzień dobry,",
       intro: "Zwracam się z prośbą o weryfikowalne informacje dotyczące następującego produktu:",
@@ -156,6 +183,9 @@
       copy: "A BOTIA não encontrou evidência pública suficiente para este produto. Pode perguntar diretamente à empresa.",
       button: "Escrever à empresa",
       followup: "Se a empresa lhe enviar documentação, contacte a BOTIA e envie-a para nós. Iremos analisá-la antes de a incorporar como evidência.",
+      reply_title: "Se a marca lhe responder",
+      reply_body: "Pode encaminhar-nos a resposta para botia.traceability@botia-safefood.com. Iremos analisá-la e, se for verificável, incorporá-la como evidência citando a marca como fonte.",
+      reply_privacy: "O seu endereço de e-mail é utilizado apenas para lhe responder sobre esse envio. A evidência é publicada sem identificar quem a enviou.",
       subject: "Pedido de informação verificável sobre um produto",
       greeting: "Bom dia,",
       intro: "Entro em contacto para solicitar informação verificável sobre o seguinte produto:",
@@ -172,6 +202,9 @@
       copy: "BOTIA nu a găsit suficiente dovezi publice pentru acest produs. Poți întreba direct compania.",
       button: "Scrie companiei",
       followup: "Dacă firma îți trimite documente, contactează BOTIA și trimite-ni-le. Le vom verifica înainte de a le adăuga drept dovadă.",
+      reply_title: "Dacă marca îți răspunde",
+      reply_body: "Ne poți redirecționa răspunsul la botia.traceability@botia-safefood.com. Îl vom verifica și, dacă poate fi verificat, îl vom include ca dovadă citând marca drept sursă.",
+      reply_privacy: "Adresa ta de e-mail este folosită doar pentru a-ți răspunde cu privire la această trimitere. Dovada este publicată fără a identifica persoana care a trimis-o.",
       subject: "Solicitare de informații verificabile despre un produs",
       greeting: "Bună ziua,",
       intro: "Vă contactez pentru a solicita informații verificabile despre următorul produs:",
@@ -188,6 +221,9 @@
       copy: "BOTIA bu ürün için yeterli kamuya açık kanıt bulamadı. Şirkete doğrudan sorabilirsiniz.",
       button: "Şirkete yaz",
       followup: "Şirket size belge gönderirse BOTIA ile iletişime geçin ve bize iletin. Kanıt olarak eklemeden önce inceleyeceğiz.",
+      reply_title: "Marka size yanıt verirse",
+      reply_body: "Yanıtı botia.traceability@botia-safefood.com adresine iletebilirsiniz. İnceleyeceğiz ve doğrulanabiliyorsa markayı kaynak olarak göstererek kanıt olarak ekleyeceğiz.",
+      reply_privacy: "E-posta adresiniz yalnızca bu gönderim hakkında size yanıt vermek için kullanılır. Kanıt, gönderen kişiyi tanımlamadan yayımlanır.",
       subject: "Bir ürün hakkında doğrulanabilir bilgi talebi",
       greeting: "Merhaba,",
       intro: "Aşağıdaki ürün hakkında doğrulanabilir bilgi talep etmek için iletişime geçiyorum:",
@@ -204,6 +240,9 @@
       copy: "BOTIA 尚未找到足够的公开证据来支持该产品。你可以直接向公司询问。",
       button: "写信给公司",
       followup: "如果公司向你提供文件，请联系 BOTIA 并发送给我们。我们会先审核，再决定是否纳入证据。",
+      reply_title: "如果品牌回复你",
+      reply_body: "你可以将其回复转发至 botia.traceability@botia-safefood.com。我们会进行审核；如果内容可核实，我们会将其作为证据纳入，并注明品牌为来源。",
+      reply_privacy: "你的电子邮箱地址仅用于就该次提交与你联系。证据发布时不会识别提交者的身份。",
       subject: "关于产品可核实信息的请求",
       greeting: "您好：",
       intro: "我联系贵公司，希望获得以下产品的可核实信息：",
@@ -220,6 +259,9 @@
       copy: "BOTIA не нашла достаточных общедоступных подтверждений для этого продукта. Вы можете напрямую обратиться к компании.",
       button: "Написать компании",
       followup: "Если компания пришлёт вам документы, свяжитесь с BOTIA и передайте их нам. Мы проверим их, прежде чем добавить как доказательство.",
+      reply_title: "Если бренд вам ответит",
+      reply_body: "Вы можете переслать нам ответ на botia.traceability@botia-safefood.com. Мы проверим его и, если информация поддаётся проверке, добавим её как доказательство, указав бренд в качестве источника.",
+      reply_privacy: "Ваш адрес электронной почты используется только для ответа вам по поводу этой отправки. Доказательство публикуется без указания личности человека, который его прислал.",
       subject: "Запрос проверяемой информации о продукте",
       greeting: "Здравствуйте,",
       intro: "Обращаюсь к вам с просьбой предоставить проверяемую информацию о следующем продукте:",
@@ -380,6 +422,9 @@
       #botia-manufacturer-request .bmr-action{width:100%;display:block;margin:15px 0 12px;appearance:none;border:1px solid rgba(230,160,107,.62);border-radius:12px;background:rgba(190,122,72,.14);color:#ffd8bd;padding:13px 16px;font:inherit;font-size:.92rem;font-weight:800;text-align:center;cursor:pointer}
       #botia-manufacturer-request .bmr-action:focus-visible{outline:2px solid #ffd8bd;outline-offset:3px}
       #botia-manufacturer-request .bmr-followup{font-size:.8rem;color:#b99a88}
+      #botia-manufacturer-request .bmr-reply-title{font-weight:800;color:#ffd8bd;margin:0 0 7px}
+      #botia-manufacturer-request .bmr-reply-body{margin:0 0 8px;line-height:1.55}
+      #botia-manufacturer-request .bmr-reply-privacy{margin:0;line-height:1.55}
     `;
     document.head.appendChild(style);
   };
@@ -411,9 +456,22 @@
     button.textContent = labels.button;
     button.addEventListener("click", () => requestEmail(buildEmail(payload)));
 
-    const followup = document.createElement("p");
+    const followup = document.createElement("div");
     followup.className = "bmr-followup";
-    followup.textContent = labels.followup;
+
+    const replyTitle = document.createElement("div");
+    replyTitle.className = "bmr-reply-title";
+    replyTitle.textContent = labels.reply_title;
+
+    const replyBody = document.createElement("p");
+    replyBody.className = "bmr-reply-body";
+    replyBody.textContent = labels.reply_body;
+
+    const replyPrivacy = document.createElement("p");
+    replyPrivacy.className = "bmr-reply-privacy";
+    replyPrivacy.textContent = labels.reply_privacy;
+
+    followup.append(replyTitle, replyBody, replyPrivacy);
 
     section.append(title, copy, button, followup);
     anchor.insertAdjacentElement("beforebegin", section);
