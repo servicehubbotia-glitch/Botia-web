@@ -141,11 +141,117 @@
         return a;
     }
 
+    // Qué capas son afines a cada página.
+    //
+    // Si alguien está leyendo sobre azúcares, la pregunta debería ir de
+    // azúcares — no de gelatina. Se deduce del enlace que cada pregunta
+    // ya trae en chat.json, así que no hay que tocar las traducciones.
+    const RELATED = {
+        sugar:      ['sugar', 'free_sugars', 'hidden_sugars', 'not_sugar',
+                     'glucose_syrup', 'maltodextrin'],
+        sweetener:  ['sweetener', 'aspartame', 'sucralose', 'saccharin',
+                     'acesulfame_k', 'cyclamates', 'neotame', 'advantame',
+                     'alitame', 'thaumatin', 'monk_fruit', 'erythritol',
+                     'xylitol', 'sorbitol', 'maltitol', 'mannitol',
+                     'isomalt', 'lactitol'],
+        texture:    ['texture', 'xanthan_gum', 'guar_gum', 'carrageenan',
+                     'pectins', 'agar', 'alginates', 'gellan_gum',
+                     'locust_bean_gum', 'tara_gum', 'cassia_gum',
+                     'karaya_gum', 'arabic_gum', 'tragacanth', 'konjac',
+                     'celluloses'],
+        flavour:    ['flavor', 'flavourings', 'glutamates', 'yeast_extract',
+                     'tasting_like_itself'],
+        enumbers:   ['enumbers', 'e171', 'e471', 'e472', 'e500',
+                     'phosphates', 'diphosphates', 'polysorbates',
+                     'sorbitan_esters', 'sucrose_esters', 'lecithins'],
+        animal:     ['animal', 'animal_origin', 'gelatine', 'carmine',
+                     'collagen', 'honey', 'beeswax', 'shellac', 'lysozyme',
+                     'bone_phosphate', 'l_cysteine', 'enzymes',
+                     'undeclared_origin'],
+        muslim:     ['muslim', 'halal', 'haram', 'mashbooh', 'pork',
+                     'blood', 'alcohol', 'gelatine', 'glycerol', 'enzymes',
+                     'l_cysteine'],
+        woman:      ['woman', 'woman_safefood', 'woman_cards', 'bpa',
+                     'phthalates', 'parabens', 'cadmium', 'lead',
+                     'methylmercury', 'dioxins_pcbs', 'soy_isoflavones',
+                     'folic_acid', 'caffeine', 'trans_fats'],
+        colour:     ['tartrazine', 'allura_red', 'sunset_yellow',
+                     'carmoisine', 'ponceau_4r', 'brilliant_blue',
+                     'indigotine', 'fast_green', 'erythrosine',
+                     'caramel_colours', 'curcumin'],
+    };
+
+    // Palabras clave de la página actual, para comparar con los enlaces.
+    function pageKeywords() {
+        const path = window.location.pathname.toLowerCase();
+        const keys = [];
+
+        // Ficha de ingrediente: el propio slug y las capas a las que
+        // pertenece.
+        const match = path.match(/\/ingredients\/([^/]+)\.html$/);
+        if (match) {
+            const slug = match[1];
+            keys.push(slug);
+            Object.keys(RELATED).forEach(function (layer) {
+                if (RELATED[layer].indexOf(slug) > -1) {
+                    keys.push.apply(keys, RELATED[layer]);
+                }
+            });
+            return keys;
+        }
+
+        // Página de capa: /pages/animal.html, /pages/woman.html…
+        const pageMatch = path.match(/\/pages\/([^/]+)\.html$/);
+        if (pageMatch) {
+            const name = pageMatch[1];
+            keys.push(name);
+            if (RELATED[name]) keys.push.apply(keys, RELATED[name]);
+            return keys;
+        }
+
+        return keys;
+    }
+
+    // Preguntas cuyo enlace toca alguna de esas palabras clave.
+    function relevantQuestionIndexes() {
+        const keys = pageKeywords();
+        if (!keys.length) return [];
+
+        const found = [];
+        quizQuestions.forEach(function (q, i) {
+            const link = (q.link || '').toLowerCase();
+            if (!link) return;
+            for (let k = 0; k < keys.length; k++) {
+                if (link.indexOf(keys[k]) > -1) { found.push(i); return; }
+            }
+        });
+        return found;
+    }
+
+    // Orden de preguntas: primero las que tienen que ver con esta
+    // página, después el resto. Dentro de cada grupo, al azar.
+    function buildQuizOrder() {
+        if (!quizQuestions.length) return [];
+
+        const relevant = relevantQuestionIndexes();
+
+        if (!relevant.length) {
+            return shuffle(quizQuestions.map(function (_, i) { return i; }));
+        }
+
+        const rest = [];
+        quizQuestions.forEach(function (_, i) {
+            if (relevant.indexOf(i) === -1) rest.push(i);
+        });
+
+        return shuffle(relevant).concat(shuffle(rest));
+    }
+
     function getCurrentQuestion() {
         if (!quizQuestions.length) return null;
-        if (!quizOrder.length) quizOrder = shuffle(quizQuestions.map(function(_, i) { return i; }));
+        if (!quizOrder.length) quizOrder = buildQuizOrder();
         if (quizIndex >= quizOrder.length) {
-            quizOrder = shuffle(quizQuestions.map(function(_, i) { return i; }));
+            quizOrder = buildQuizOrder();
             quizIndex = 0;
         }
         return quizQuestions[quizOrder[quizIndex]];
@@ -169,7 +275,9 @@
                 const d = JSON.parse(s);
                 freeQuestionsUsed = d.freeQuestionsUsed || 0;
                 quizIndex = d.quizIndex || 0;
-                quizOrder = Array.isArray(d.quizOrder) ? d.quizOrder : [];
+                // El orden NO se restaura: depende de la página en la
+                // que estemos ahora, no de por dónde se entró.
+                quizOrder = [];
             }
         } catch(e) {
             freeQuestionsUsed = 0;
@@ -256,14 +364,6 @@
         discoverBtn.textContent = t('discoverButton') || 'Discover on BOTIA';
         discoverBtn.style.cssText = 'background:#e6a06b;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#100707;text-decoration:none;display:inline-block;font-size:0.85rem;';
         btns.appendChild(discoverBtn);
-
-        const tryBtn = document.createElement('a');
-        tryBtn.href = '/try.html?lang=' + encodeURIComponent(currentLang);
-        tryBtn.target = '_blank';
-        tryBtn.rel = 'noopener';
-        tryBtn.textContent = t('tryButton') || 'Try BOTIA';
-        tryBtn.style.cssText = 'background:#e6a06b;border:1px solid #e6a06b;border-radius:60px;padding:0.4rem 1.2rem;font-weight:600;color:#100707;text-decoration:none;display:inline-block;font-size:0.85rem;';
-        btns.appendChild(tryBtn);
 
         const nextBtn = document.createElement('button');
         nextBtn.textContent = t('nextButton') || 'Next question';
@@ -523,11 +623,6 @@
         currentLang = getCurrentLanguage();
         await loadChatTranslations(currentLang);
         loadSession();
-
-        if (quizQuestions.length > 0 && quizOrder.length === 0) {
-            quizOrder = shuffle(quizQuestions.map(function(_, i) { return i; }));
-            saveSession();
-        }
 
         addStyles();
         createElements();
