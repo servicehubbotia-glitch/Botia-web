@@ -1,160 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BOTIA — Try it | Paste an ingredient list</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BOTIA — Try it</title>
+  <meta name="description" content="Photograph a food ingredient list and see what BOTIA detects.">
   <meta property="og:title" content="BOTIA — Try it">
-  <meta property="og:description" content="Paste the ingredient list from any food label and see what BOTIA reads in it. No app needed.">
+  <meta property="og:description" content="Photograph a food ingredient list and see what BOTIA detects.">
   <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
   <meta property="og:url" content="https://www.botia-safefood.com/try.html">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="BOTIA — Try it">
-  <meta name="twitter:description" content="Paste the ingredient list from any food label and see what BOTIA reads in it. No app needed.">
-  <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
-  <link rel="canonical" href="https://www.botia-safefood.com/try.html" />
-  <meta name="description" content="Paste the ingredient list from any food label and see what BOTIA reads in it. No app needed." />
-  <link rel="icon" type="image/png" href="/botia_jar_512.png" />
-  <link rel="preload" href="/botia-landing.css" as="style">
-  <link rel="stylesheet" href="/botia-landing.css" />
-  <link rel="preload" href="/botia/assets/botia-pages.css" as="style">
-  <link rel="stylesheet" href="/botia/assets/botia-pages.css" />
-  <style>
-  .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
-  .hero { padding: 12px 0 0; text-align: center; }
-  .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
-  .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
-  .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
-  .description { font-size: 0.9rem; color: #8a8a8a; }
+  <link rel="canonical" href="https://www.botia-safefood.com/try.html">
+  <link rel="icon" href="/botia_jar_512.png" type="image/png">
 
-  /* --- App banner --- */
-  .app-banner {
-    background: rgba(24,13,13,0.9);
-    border: 1px solid rgba(190,122,72,0.35);
-    border-radius: 14px;
-    padding: 18px 20px;
-    margin: 20px 0 28px;
-    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
-  }
-  .app-banner-text { flex: 1; min-width: 200px; }
-  .app-banner-title { font-size: 1rem; color: #ffd8bd; font-weight: 600; margin-bottom: 4px; }
-  .app-banner-sub { font-size: 0.85rem; color: #8a8a8a; line-height: 1.5; }
-  .app-badge {
-    display: inline-block; background: rgba(190,122,72,0.16);
-    border: 1px solid rgba(190,122,72,0.35); border-radius: 8px;
-    padding: 10px 20px; color: #c0a08c; font-size: 0.9rem; font-weight: 600;
-    white-space: nowrap; text-decoration: none;
-  }
-
-  /* --- Input --- */
-  .try-box { margin-bottom: 20px; }
-  .try-label { display: block; font-size: 0.95rem; color: #e6a06b; margin-bottom: 8px; font-weight: 600; }
-  #dropzone {
-    border: 2px dashed rgba(190,122,72,0.42); border-radius: 14px;
-    background: rgba(255,255,255,0.04); padding: 34px 20px;
-    text-align: center; cursor: pointer; transition: 0.2s ease;
-    outline: none; min-height: 150px;
-    display: flex; align-items: center; justify-content: center;
-  }
-  #dropzone:hover, #dropzone:focus { border-color: #e6a06b; background: rgba(190,122,72,0.08); }
-  #dropzone.dragover { border-color: #e6a06b; background: rgba(190,122,72,0.16); }
-  #dropzone.has-image { padding: 10px; border-style: solid; }
-  .dz-icon { font-size: 1.8rem; margin-bottom: 10px; opacity: 0.75; }
-  .dz-main { font-size: 0.95rem; color: #ffd8bd; margin-bottom: 6px; }
-  .dz-sub  { font-size: 0.82rem; color: #6f6f6f; }
-  #dz-preview { max-width: 100%; max-height: 320px; border-radius: 10px; display: block; }
-  .try-actions { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; align-items: center; }
-  .btn-analyse {
-    background: #e6a06b; border: none; border-radius: 60px;
-    padding: 0.7rem 1.8rem; font-weight: 700; color: #100707;
-    cursor: pointer; font-size: 0.95rem; font-family: inherit;
-  }
-  .btn-analyse:disabled { opacity: 0.5; cursor: default; }
-  .btn-clear {
-    background: transparent; border: 1px solid rgba(190,122,72,0.4);
-    border-radius: 60px; padding: 0.7rem 1.4rem; color: #c0a08c;
-    cursor: pointer; font-size: 0.9rem; font-family: inherit;
-  }
-  .char-count { font-size: 0.8rem; color: #6f6f6f; margin-left: auto; }
-
-  /* --- Results --- */
-  #results { margin-top: 28px; }
-
-  .layer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 14px;
-    margin-bottom: 24px;
-  }
-  .layer-tile {
-    background: rgba(24,13,13,0.9);
-    border: 1px solid rgba(190,122,72,0.28);
-    border-radius: 16px;
-    padding: 20px 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    transition: 0.2s ease;
-  }
-  .layer-tile:hover {
-    border-color: rgba(190,122,72,0.7);
-    background: rgba(190,122,72,0.10);
-  }
-  .layer-tile img {
-    width: 64px; height: 64px;
-    object-fit: contain;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto; margin-right: auto;
-  }
-  .layer-tile-name {
-    font-size: 0.95rem;
-    color: #ffd8bd;
-    font-weight: 600;
-    margin-bottom: 6px;
-  }
-  .layer-tile-items {
-    font-size: 0.8rem;
-    color: #8a8a8a;
-    line-height: 1.5;
-  }
-  .layer-tile.decision-halal { border-color: rgba(123,191,123,0.45); }
-  .layer-tile.decision-haram { border-color: rgba(217,112,112,0.5); }
-  .layer-tile.decision-doubt { border-color: rgba(230,160,107,0.55); }
-  .layer-tile.decision-halal .layer-tile-name { color: #7bbf7b; }
-  .layer-tile.decision-haram .layer-tile-name { color: #d97070; }
-  .layer-tile.decision-doubt .layer-tile-name { color: #e6a06b; }
-
-  .result-block { margin-bottom: 22px; }
-  .result-title { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: #e6a06b; margin-bottom: 10px; }
-  .read-list {
-    background: rgba(255,255,255,0.04); border-radius: 12px;
-    padding: 14px 16px; font-size: 0.9rem; color: #c0a08c; line-height: 1.7;
-  }
-  .product-name {
-    font-size: 1.15rem; color: #ffd8bd; font-weight: 600;
-    text-align: center; margin-bottom: 20px;
-  }
-
-  .status { font-size: 0.9rem; color: #c0a08c; padding: 14px 0; }
-  .status-error { color: #d97070; }
-
-  .disclaimer {
-    font-size: 0.75rem; color: #6f6f6f; line-height: 1.6;
-    border-top: 1px solid rgba(190,122,72,0.15);
-    margin-top: 30px; padding-top: 16px;
-  }
-
-  .closing { text-align: center; padding: 20px 0; }
-  .cta-button {
-    display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
-    padding: 10px 24px; border-radius: 8px; text-decoration: none;
-    border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
-  }
-  .cta-button:hover { background: rgba(190,122,72,0.35); }
-  .hero + .section { margin-top: 0 !important; }
-</style>
   <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/try.html?lang=en">
   <link rel="alternate" hreflang="es" href="https://www.botia-safefood.com/try.html?lang=es">
   <link rel="alternate" hreflang="ar" href="https://www.botia-safefood.com/try.html?lang=ar">
@@ -170,103 +28,365 @@
   <link rel="alternate" hreflang="zh" href="https://www.botia-safefood.com/try.html?lang=zh">
   <link rel="alternate" hreflang="id" href="https://www.botia-safefood.com/try.html?lang=id">
   <link rel="alternate" hreflang="x-default" href="https://www.botia-safefood.com/try.html">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "BOTIA — Try it",
-    "description": "Paste the ingredient list from any food label and see what BOTIA reads in it.",
-    "url": "https://www.botia-safefood.com/try.html",
-    "isPartOf": { "@type": "WebSite", "name": "BOTIA Food Transparency" }
-  }
-  </script>
+
   <link rel="stylesheet" href="/botia/assets/menu.css">
-  <script src="/botia/assets/js/menu.js"></script>
   <link rel="stylesheet" href="/botia/assets/footer.css">
+  <script src="/botia/assets/js/menu.js"></script>
+
+  <style>
+    :root{
+      --bg:#100707;
+      --bg2:#080505;
+      --panel:#180d0d;
+      --panel2:#241010;
+      --text:#f7eee8;
+      --muted:#c9b3a6;
+      --soft:#9c7b68;
+      --accent:#e6a06b;
+      --accent2:#ffd8bd;
+      --line:rgba(190,122,72,.28);
+      --lineStrong:rgba(230,160,107,.52);
+      --shadow:0 18px 60px rgba(0,0,0,.34);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(circle at 52% -10%,rgba(116,31,25,.19),transparent 34rem),
+        linear-gradient(180deg,#100707,#0a0505 46%,#080505);
+      min-height:100vh;
+    }
+
+    .try-wrap{width:min(920px,calc(100% - 34px));margin:0 auto}
+    .try-topbar{
+      position:sticky;top:0;z-index:1000;
+      background:rgba(12,7,7,.90);
+      -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(190,122,72,.15);
+    }
+    .try-topbar-inner{min-height:64px;display:flex;align-items:center;gap:16px}
+    #menuBtn{position:static;flex:0 0 42px}
+    .try-wordmark{
+      color:var(--accent);
+      font-size:16px;
+      font-weight:900;
+      letter-spacing:.14em;
+      text-decoration:none;
+    }
+    .try-spacer{flex:1}
+    .try-lang-pill{
+      display:flex;align-items:center;padding:4px 9px 4px 11px;
+      border:1px solid rgba(190,122,72,.36);border-radius:999px;
+      background:rgba(24,13,13,.90);
+    }
+    .try-lang-pill select{color:var(--text);background:transparent;border:0;outline:0;padding:5px 2px;cursor:pointer}
+    .try-lang-pill option{background:#180d0d;color:#f2e4dc}
+
+    .app-hero{padding:42px 0 24px}
+    .app-brandline{
+      color:var(--accent);
+      font-size:1.55rem;
+      font-weight:900;
+      letter-spacing:.18em;
+      margin-bottom:10px;
+    }
+    .app-claim{margin:0 0 3px;font-size:1rem;line-height:1.55;font-weight:800}
+    .app-claim.alt{margin-bottom:20px}
+
+    .evidence-card{
+      border:1px solid rgba(190,122,72,.36);
+      border-radius:18px;
+      background:linear-gradient(145deg,rgba(36,16,16,.92),rgba(24,13,13,.82));
+      padding:18px 18px 16px;
+      box-shadow:var(--shadow);
+      margin-bottom:26px;
+    }
+    .evidence-card h2{margin:0 0 8px;font-size:1rem;color:var(--text)}
+    .evidence-card p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.55}
+    .evidence-link{display:inline-flex;gap:8px;align-items:center;margin-top:12px;color:var(--accent);text-decoration:none;font-weight:800;font-size:.83rem}
+
+    .camera-stage{text-align:center;padding:8px 0 16px}
+    .camera-stage img{
+      width:min(300px,72vw);height:auto;display:block;margin:0 auto 8px;
+      filter:drop-shadow(0 22px 30px rgba(0,0,0,.36));
+    }
+    .camera-stage h1{font-size:1.55rem;line-height:1.15;margin:0 auto 12px;max-width:530px}
+    .camera-stage p{max-width:650px;margin:0 auto;color:var(--muted);line-height:1.65;font-size:.98rem}
+    .primary-cta{
+      display:inline-flex;align-items:center;justify-content:center;
+      margin-top:20px;min-height:48px;padding:0 24px;border-radius:999px;
+      background:var(--accent);color:#100707;text-decoration:none;font-weight:900;
+      border:1px solid rgba(230,160,107,.70);
+      box-shadow:0 10px 28px rgba(116,48,18,.18);
+    }
+
+    .how{padding:28px 0 16px}
+    .section-kicker{
+      color:var(--accent);font-size:.72rem;font-weight:900;letter-spacing:.18em;
+      text-transform:uppercase;margin-bottom:14px;
+    }
+    .how-list{display:grid;gap:10px}
+    .how-row{
+      display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start;
+      padding:12px 0;
+    }
+    .how-icon{
+      width:38px;height:38px;border-radius:8px;
+      display:grid;place-items:center;
+      border:1px solid rgba(190,122,72,.34);
+      background:rgba(190,122,72,.10);
+      color:var(--accent);font-size:1rem;font-weight:900;
+    }
+    .how-row h3{margin:0 0 4px;font-size:1rem}
+    .how-row p{margin:0;color:var(--soft);font-size:.84rem;line-height:1.5}
+
+    .stores{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:28px 0}
+    .store-card{
+      border:1px solid var(--line);border-radius:18px;
+      background:rgba(24,13,13,.76);padding:18px;
+    }
+    .store-card h3{margin:0 0 6px;color:var(--accent2);font-size:1rem}
+    .store-card p{margin:0;color:var(--muted);line-height:1.5;font-size:.86rem}
+    .store-card a{
+      display:inline-flex;margin-top:14px;min-height:42px;align-items:center;
+      padding:0 16px;border-radius:999px;border:1px solid var(--lineStrong);
+      color:var(--accent2);text-decoration:none;font-weight:800;background:rgba(190,122,72,.08);
+    }
+    .store-card.coming{
+      position:relative;overflow:hidden;
+      background:linear-gradient(145deg,rgba(24,13,13,.78),rgba(36,16,16,.52));
+    }
+    .coming-badge{
+      display:inline-flex;margin-top:14px;padding:7px 12px;border-radius:999px;
+      border:1px solid rgba(190,122,72,.30);color:var(--accent);font-size:.8rem;font-weight:900;
+      letter-spacing:.05em;text-transform:uppercase;
+    }
+
+    .web-try-intro{padding:16px 0 14px}
+    .web-try-intro h2{margin:0 0 8px;font-size:1.4rem}
+    .web-try-intro p{margin:0;color:var(--muted);line-height:1.6}
+
+    .try-workspace{padding:10px 0 34px}
+    .try-panel,.try-auth-panel{
+      border:1px solid var(--line);border-radius:20px;
+      background:linear-gradient(180deg,rgba(24,13,13,.96),rgba(14,8,8,.95));
+      box-shadow:var(--shadow);padding:22px;
+    }
+    .try-auth-panel{text-align:center;margin-bottom:18px}
+    .try-auth-title{color:var(--accent2);font-size:1.05rem;font-weight:800;margin-bottom:8px}
+    .try-auth-copy{color:var(--muted);font-size:.9rem;margin-bottom:16px;line-height:1.55}
+    .try-google-button{display:flex;justify-content:center}
+    .try-auth-status{font-size:.86rem;color:var(--muted);margin-top:12px;min-height:1.3em}
+    .try-auth-status.is-error{color:#d97070}
+
+    .try-label{
+      display:block;color:var(--accent);font-size:.76rem;font-weight:900;
+      letter-spacing:.13em;text-transform:uppercase;margin-bottom:12px;
+    }
+    #dropzone{
+      min-height:240px;display:flex;align-items:center;justify-content:center;text-align:center;
+      border:1px dashed var(--lineStrong);border-radius:18px;background:rgba(255,255,255,.025);
+      padding:26px;cursor:pointer;outline:none;transition:.18s ease;
+    }
+    #dropzone:hover,#dropzone:focus-visible,#dropzone.dragover{
+      border-color:var(--accent);background:rgba(190,122,72,.08)
+    }
+    #dropzone.has-image{padding:10px;border-style:solid}
+    .dz-icon img{width:138px;height:138px;max-width:54vw;object-fit:contain;margin:0 auto 10px;display:block}
+    .dz-main{color:var(--accent2);font-size:1rem;font-weight:700;margin-bottom:6px}
+    .dz-sub{color:var(--soft);font-size:.84rem;line-height:1.5}
+    #dz-preview{display:block;max-width:100%;max-height:430px;border-radius:14px;object-fit:contain}
+
+    .try-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn-analyse,.btn-clear{
+      min-height:44px;border-radius:999px;padding:0 20px;font:inherit;font-weight:800;cursor:pointer
+    }
+    .btn-analyse{border:1px solid rgba(230,160,107,.58);background:var(--accent);color:#100707}
+    .btn-analyse:disabled{opacity:.48;cursor:default}
+    .btn-clear{border:1px solid rgba(190,122,72,.40);background:transparent;color:var(--muted)}
+    .file-name{margin-left:auto;color:var(--soft);font-size:.8rem;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+    #results{margin-top:26px}
+    .try-result-block{margin:0 0 26px}
+    .try-result-section-title{
+      margin:0 0 12px;color:var(--accent);font-size:.76rem;font-weight:900;
+      letter-spacing:.13em;text-transform:uppercase;
+    }
+    .try-product-name,.try-read-list{
+      border:1px solid var(--line);border-radius:16px;background:rgba(24,13,13,.78);padding:16px 18px
+    }
+    .try-product-name{color:var(--accent2);font-size:1.1rem;font-weight:800}
+    .try-read-list{color:var(--muted);line-height:1.7;font-size:.93rem}
+    .try-result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .try-tile{
+      display:flex;align-items:center;gap:14px;min-height:108px;padding:15px;
+      border:1px solid var(--line);border-radius:17px;background:rgba(24,13,13,.86);
+      text-decoration:none;color:inherit;transition:.18s ease;
+    }
+    .try-tile:hover,.try-tile:focus-visible{
+      transform:translateY(-2px);border-color:rgba(230,160,107,.62);background:rgba(36,16,16,.92);outline:none
+    }
+    .try-tile img{width:68px;height:68px;object-fit:contain;flex:0 0 68px}
+    .try-tile-name{color:var(--accent2);font-size:1rem;font-weight:800;margin-bottom:5px}
+    .try-tile-items{color:var(--soft);font-size:.8rem;line-height:1.45}
+    .decision-halal{border-color:rgba(123,191,123,.42)}
+    .decision-haram{border-color:rgba(217,112,112,.46)}
+    .decision-doubt{border-color:rgba(230,160,107,.55)}
+    .decision-halal .try-tile-name{color:#7bbf7b}
+    .decision-haram .try-tile-name{color:#d97070}
+    .decision-doubt .try-tile-name{color:var(--accent)}
+
+    .try-status{
+      margin:18px 0 0;padding:16px 18px;border:1px solid var(--line);border-radius:16px;
+      background:rgba(24,13,13,.76);color:var(--muted);line-height:1.55
+    }
+    .try-status-error{color:#d97070;border-color:rgba(217,112,112,.35)}
+
+    .principles{
+      text-align:center;padding:26px 0 12px;color:var(--soft);
+      font-size:.78rem;line-height:1.6;
+    }
+    .principles p{margin:6px auto;max-width:660px}
+    .funding{margin-bottom:12px!important;color:var(--muted)!important}
+
+    .try-closing{text-align:center;padding:18px 0 48px}
+    .try-back-link{
+      color:var(--accent2);text-decoration:none;border-bottom:1px solid rgba(230,160,107,.38);
+      padding-bottom:2px;font-weight:700
+    }
+
+    [hidden]{display:none!important}
+
+    @media(max-width:680px){
+      .try-wrap{width:min(100% - 28px,920px)}
+      .stores{grid-template-columns:1fr}
+      .try-result-grid{grid-template-columns:1fr}
+      .file-name{width:100%;max-width:none;margin-left:0}
+      .camera-stage img{width:min(260px,78vw)}
+      .camera-stage h1{font-size:1.42rem}
+    }
+  </style>
 </head>
 <body data-botia-module="try" class="has-botia-header">
-  <button id="menuBtn" aria-label="Menu">☰</button>
-  <div class="botia-header-bar">
-    <div class="botia-nav-left">
-      <a href="/"><img class="nav-logo" src="/botia_jar_512.png" alt="BOTIA" style="width:28px;height:28px;"></a>
+
+  <header class="try-topbar">
+    <div class="try-wrap try-topbar-inner">
+      <button id="menuBtn" aria-label="Menu">☰</button>
+      <a class="try-wordmark" id="try-home-link" href="/">BOTIA</a>
+      <div class="try-spacer"></div>
+      <div class="lang-switcher try-lang-pill">
+        <label for="lang-select" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
+        <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
+          <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
+          <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
+          <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
+          <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
+          <option value="tr">Türkçe</option><option value="zh">中文</option>
+        </select>
+      </div>
     </div>
-    <div class="lang-switcher">
-      <label for="lang-select" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Select language</label>
-      <select id="lang-select" onchange="cambiarIdioma(this.value)" aria-label="Select language">
-        <option value="en">English</option><option value="ar">العربية</option><option value="de">Deutsch</option>
-        <option value="es">Español</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option>
-        <option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option>
-        <option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option>
-        <option value="tr">Türkçe</option><option value="zh">中文</option>
-      </select>
-    </div>
-  </div>
+  </header>
 
-  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+  <main class="try-wrap" id="main-content">
+    <section class="app-hero">
+      <div class="app-brandline" id="hero_kicker">BOTIA</div>
+      <p class="app-claim" id="hero_line1">Built with criteria.</p>
+      <p class="app-claim alt" id="hero_line2">Backed by documentation.</p>
 
-  <main class="landing" id="main-content">
+      <article class="evidence-card">
+        <h2 id="evidence_title">Public and verifiable evidence</h2>
+        <p id="evidence_body">BOTIA's evidence, sources and regulatory documentation are public and can be consulted on our website.</p>
+        <a class="evidence-link" href="/" id="evidence_link">www.botia-safefood.com ↗</a>
+      </article>
 
-    <section class="hero">
-      <img class="hero-logo" fetchpriority="high" src="/botia_jar_512.png" alt="BOTIA — try it">
-      <h1 id="title">Try BOTIA</h1>
-      <p class="subtitle" id="subtitle">Paste an ingredient list. See what it doesn't say.</p>
-      <p class="description" id="description">The same engine the app uses. No download, no account.</p>
+      <div class="camera-stage">
+        <img src="/botia/assets/camera.png" alt="">
+        <h1 id="headline">Discover what your ingredients say</h1>
+        <p id="subheadline">Photograph the real ingredient list of a product. BOTIA reads it, analyses its ingredients and shows you the information and evidence available.</p>
+        <a href="#web-try" class="primary-cta" id="cta_photo">Photograph a label</a>
+      </div>
     </section>
 
-    <!-- App banner -->
-    <div class="app-banner">
-      <div class="app-banner-text">
-        <div class="app-banner-title" id="app_title">BOTIA App</div>
-      </div>
-      <a
-        class="app-badge"
-        href="https://play.google.com/store/apps/details?id=com.botia.safefood"
-        target="_blank"
-        rel="noopener"
-      >Google Play</a>
-    </div>
-
-    <!-- Input -->
-    <div class="try-box">
-      <label class="try-label" id="input_label">Photo of the ingredient list</label>
-
-      <div id="dropzone" tabindex="0" role="button" aria-labelledby="input_label">
-        <div id="dz-empty">
-          <div class="dz-icon" style="opacity:1">
-            <img
-              src="/botia/assets/camera.png"
-              alt=""
-              width="190"
-              height="190"
-              style="display:block;width:190px;height:190px;max-width:70vw;object-fit:contain;margin:0 auto;"
-            >
-          </div>
-          <div class="dz-main" id="dz_main">Drop a photo here, paste it, or tap to choose one</div>
-          <div class="dz-sub" id="dz_sub">A clear photo of the ingredient list. JPG or PNG.</div>
+    <section class="how">
+      <div class="section-kicker" id="how_title">HOW IT WORKS</div>
+      <div class="how-list">
+        <div class="how-row">
+          <div class="how-icon">▣</div>
+          <div><h3 id="step1_title">Photograph</h3><p id="step1_body">Take a photo of the real ingredient list on the package.</p></div>
         </div>
-        <img id="dz-preview" alt="" hidden>
+        <div class="how-row">
+          <div class="how-icon">⌘</div>
+          <div><h3 id="step2_title">We decode it</h3><p id="step2_body">We analyse the ingredients and organise the available evidence.</p></div>
+        </div>
+        <div class="how-row">
+          <div class="how-icon">☑</div>
+          <div><h3 id="step3_title">Check it</h3><p id="step3_body">Open the evidence and consult the sources.</p></div>
+        </div>
       </div>
-
-      <input type="file" id="file-input" accept="image/*" hidden>
-
-      <div class="try-actions">
-        <button class="btn-analyse" id="btn-analyse" disabled>Analyse</button>
-        <button class="btn-clear" id="btn-clear">Clear</button>
-        <span class="char-count" id="file-name"></span>
-      </div>
-    </div>
-
-    <div id="results"></div>
-
-    <p class="disclaimer" id="disclaimer">BOTIA reads what the label declares. It does not diagnose, certify or advise. It is not medical, nutritional or religious guidance.</p>
-
-    <section class="closing">
-      <a href="/ingredients/index.html" class="cta-button" id="back-link">Browse all ingredients</a>
     </section>
 
+    <section class="stores">
+      <article class="store-card">
+        <h3 id="android_title">Android available now</h3>
+        <p id="android_body">BOTIA is available on Google Play.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.botia.safefood" target="_blank" rel="noopener" id="android_cta">Get BOTIA on Google Play</a>
+      </article>
+      <article class="store-card coming">
+        <h3 id="ios_title">iPhone</h3>
+        <p id="ios_body">Coming soon</p>
+        <span class="coming-badge">COMING SOON</span>
+      </article>
+    </section>
+
+    <section class="web-try-intro" id="web-try">
+      <div class="section-kicker">TRY BOTIA</div>
+      <h2 id="try_title">Try BOTIA on the web</h2>
+      <p id="try_body">You can also analyse a label here using the same ingredient-analysis engine.</p>
+    </section>
+
+    <section class="try-workspace">
+      <div class="try-panel try-box">
+        <label class="try-label" id="input_label">Photo of the ingredient list</label>
+        <div id="dropzone" tabindex="0" role="button" aria-labelledby="input_label">
+          <div id="dz-empty">
+            <div class="dz-icon"><img src="/botia/assets/camera.png" alt=""></div>
+            <div class="dz-main" id="dz_main">Drop a photo here, paste it, or tap to choose one</div>
+            <div class="dz-sub" id="dz_sub">A clear photo of the ingredient list. JPG or PNG.</div>
+          </div>
+          <img id="dz-preview" alt="" hidden>
+        </div>
+
+        <input type="file" id="file-input" accept="image/*" hidden>
+
+        <div class="try-actions">
+          <button type="button" class="btn-analyse" id="btn-analyse" disabled>Analyse</button>
+          <button type="button" class="btn-clear" id="btn-clear">Clear</button>
+          <span class="file-name" id="file-name"></span>
+        </div>
+
+        <div id="results" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="principles">
+      <p class="funding" id="funding">BOTIA is financed by the subscriptions of the people who use it. Brands do not pay to appear or to be shown.</p>
+      <p id="principle1">BOTIA reads what the label declares.</p>
+      <p id="principle2">It does not diagnose, certify or advise.</p>
+      <p id="principle3">It is not medical, nutritional or religious guidance.</p>
+    </section>
+
+    <section class="try-closing">
+      <a href="/ingredients/index.html" class="try-back-link" id="back-link">Browse all ingredients</a>
+    </section>
 
     <div style="display:none" aria-hidden="true">
       <span id="res_product">Product</span>
+      <span id="res_choices">Choices</span>
+      <span id="res_evidence">Evidence</span>
       <span id="res_layers">Layers activated</span>
       <span id="res_triggers">What BOTIA detected</span>
       <span id="res_muslim">Muslim choice</span>
@@ -284,362 +404,424 @@
       <span id="btn_analyse_label">Analyse</span>
       <span id="btn_clear_label">Clear</span>
     </div>
-
   </main>
 
   <script>
-  (function () {
-    "use strict";
+(function () {
+  "use strict";
 
-    var ENDPOINT = "https://botia-engine-888782651551.europe-west1.run.app";
-    var MAX_BYTES = 6 * 1024 * 1024;
+  var ENDPOINT = "https://botia-engine-888782651551.europe-west1.run.app";
+  var MAX_BYTES = 6 * 1024 * 1024;
 
-    var dropzone = document.getElementById("dropzone");
-    var dzEmpty  = document.getElementById("dz-empty");
-    var preview  = document.getElementById("dz-preview");
-    var fileIn   = document.getElementById("file-input");
-    var btn      = document.getElementById("btn-analyse");
-    var clearBtn = document.getElementById("btn-clear");
-    var results  = document.getElementById("results");
-    var fileName = document.getElementById("file-name");
+  var dropzone = document.getElementById("dropzone");
+  var dzEmpty  = document.getElementById("dz-empty");
+  var preview  = document.getElementById("dz-preview");
+  var fileIn   = document.getElementById("file-input");
+  var btn      = document.getElementById("btn-analyse");
+  var clearBtn = document.getElementById("btn-clear");
+  var results  = document.getElementById("results");
+  var fileName = document.getElementById("file-name");
+  var homeLink = document.getElementById("try-home-link");
+  var backLink = document.getElementById("back-link");
 
-    var selectedFile = null;
+  var selectedFile = null;
 
-    var LANGS = ["en","es","ar","de","fr","nl","it","pt","pl","ro","ru","tr","zh","id"];
-    function currentLang() {
-      var q = new URLSearchParams(location.search).get("lang");
-      if (q && LANGS.indexOf(q.toLowerCase().split("-")[0]) > -1) return q.toLowerCase().split("-")[0];
-      try {
-        var s = localStorage.getItem("botia-lang");
-        if (s && LANGS.indexOf(s) > -1) return s;
-      } catch (e) {}
-      var n = (navigator.language || "en").toLowerCase().split("-")[0];
-      return LANGS.indexOf(n) > -1 ? n : "en";
+  var LANGS = ["en","es","ar","de","fr","nl","it","pt","pl","ro","ru","tr","zh","id"];
+
+  function currentLang() {
+    var q = new URLSearchParams(location.search).get("lang");
+    if (q && LANGS.indexOf(q.toLowerCase().split("-")[0]) > -1) return q.toLowerCase().split("-")[0];
+    try {
+      var s = localStorage.getItem("botia-lang");
+      if (s && LANGS.indexOf(s) > -1) return s;
+    } catch (e) {}
+    var n = (navigator.language || "en").toLowerCase().split("-")[0];
+    return LANGS.indexOf(n) > -1 ? n : "en";
+  }
+
+  function t(id, fallback) {
+    var el = document.getElementById(id);
+    var v = el && el.textContent ? el.textContent.trim() : "";
+    return v || fallback;
+  }
+
+  function preserveLanguageLinks() {
+    var lang = currentLang();
+    if (homeLink) homeLink.href = "/?lang=" + encodeURIComponent(lang);
+    if (backLink) backLink.href = "/ingredients/index.html?lang=" + encodeURIComponent(lang);
+  }
+
+  function status(id, fallback, isError) {
+    results.innerHTML = "";
+    var p = document.createElement("p");
+    p.className = "try-status" + (isError ? " try-status-error" : "");
+    p.textContent = t(id, fallback);
+    results.appendChild(p);
+  }
+
+  function sectionTitle(id, fallback) {
+    var h = document.createElement("h2");
+    h.className = "try-result-section-title";
+    h.textContent = t(id, fallback);
+    return h;
+  }
+
+  function setFile(file) {
+    if (!file) return;
+    if (!file.type || file.type.indexOf("image/") !== 0) {
+      status("msg_not_image", "That file is not an image.", true);
+      return;
+    }
+    if (file.size > MAX_BYTES) {
+      status("msg_too_big", "That image is too large. Try one under 6 MB.", true);
+      return;
     }
 
-    function t(id, fallback) {
-      var el = document.getElementById(id);
-      var v = el && el.textContent ? el.textContent.trim() : "";
-      return v || fallback;
+    selectedFile = file;
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      preview.src = e.target.result;
+      preview.hidden = false;
+      dzEmpty.hidden = true;
+      dropzone.classList.add("has-image");
+    };
+    reader.readAsDataURL(file);
+
+    fileName.textContent = file.name || "";
+    btn.disabled = false;
+    results.innerHTML = "";
+  }
+
+  function reset() {
+    selectedFile = null;
+    preview.src = "";
+    preview.hidden = true;
+    dzEmpty.hidden = false;
+    dropzone.classList.remove("has-image", "dragover");
+    fileIn.value = "";
+    fileName.textContent = "";
+    btn.disabled = true;
+    results.innerHTML = "";
+  }
+
+  var LAYER_LABELS = {
+    en:{animal:"Animal",woman:"Woman",sugar:"Sugar",sweetener:"Sweeteners",texture:"Texture",flavour:"Flavourings",enumbers:"E-numbers"},
+    es:{animal:"Animal",woman:"Mujer",sugar:"Azúcar",sweetener:"Edulcorantes",texture:"Textura",flavour:"Aromas",enumbers:"Números E"},
+    ar:{animal:"حيواني",woman:"المرأة",sugar:"سكر",sweetener:"المُحلّيات",texture:"قوام",flavour:"نكهات",enumbers:"أرقام E"},
+    de:{animal:"Tierisch",woman:"Frau",sugar:"Zucker",sweetener:"Süßstoffe",texture:"Textur",flavour:"Aromen",enumbers:"E-Nummern"},
+    fr:{animal:"Animal",woman:"Femme",sugar:"Sucre",sweetener:"Édulcorants",texture:"Texture",flavour:"Arômes",enumbers:"Numéros E"},
+    nl:{animal:"Dierlijk",woman:"Vrouw",sugar:"Suiker",sweetener:"Zoetstoffen",texture:"Textuur",flavour:"Aroma's",enumbers:"E-nummers"},
+    it:{animal:"Animale",woman:"Donna",sugar:"Zucchero",sweetener:"Dolcificanti",texture:"Consistenza",flavour:"Aromi",enumbers:"Numeri E"},
+    pt:{animal:"Animal",woman:"Mulher",sugar:"Açúcar",sweetener:"Edulcorantes",texture:"Textura",flavour:"Aromas",enumbers:"Números E"},
+    pl:{animal:"Zwierzęce",woman:"Kobieta",sugar:"Cukier",sweetener:"Substancje słodzące",texture:"Tekstura",flavour:"Aromaty",enumbers:"Numery E"},
+    ro:{animal:"Animal",woman:"Femeie",sugar:"Zahăr",sweetener:"Îndulcitori",texture:"Textură",flavour:"Arome",enumbers:"Numere E"},
+    ru:{animal:"Животное",woman:"Женщина",sugar:"Сахар",sweetener:"Подсластители",texture:"Текстура",flavour:"Ароматизаторы",enumbers:"E-номера"},
+    tr:{animal:"Hayvansal",woman:"Kadın",sugar:"Şeker",sweetener:"Tatlandırıcılar",texture:"Doku",flavour:"Aromalar",enumbers:"E numaraları"},
+    zh:{animal:"动物源",woman:"女性",sugar:"糖",sweetener:"甜味剂",texture:"质地",flavour:"香料",enumbers:"E编号"},
+    id:{animal:"Hewani",woman:"Perempuan",sugar:"Gula",sweetener:"Pemanis",texture:"Tekstur",flavour:"Perisa",enumbers:"Nomor E"}
+  };
+
+  var LAYER_ICONS = {
+    animal:"animal.png",
+    woman:"mujer.png",
+    sugar:"Sugar.png",
+    sweetener:"sweeteners.png",
+    texture:"texture.png",
+    flavour:"flavors.png",
+    enumbers:"enumbers.png"
+  };
+
+  var LAYER_ROUTES = {
+    animal:"/ingredients/animal_origin.html",
+    woman:"/ingredients/woman_safefood.html",
+    sugar:"/ingredients/sugar.html",
+    sweetener:"/ingredients/sweetener.html",
+    texture:"/ingredients/texture.html",
+    flavour:"/ingredients/flavor.html",
+    enumbers:"/ingredients/enumbers.html"
+  };
+
+  var DECISION_ROUTES = {
+    halal:"/ingredients/halal.html",
+    haram:"/ingredients/haram.html",
+    doubt:"/ingredients/mashbooh.html"
+  };
+
+  var DECISION_ICONS = {
+    halal:"Halal.png",
+    haram:"Haram.png",
+    doubt:"muslim.png"
+  };
+
+  function tile(opts) {
+    var a = document.createElement("a");
+    a.className = "try-tile" + (opts.extraClass ? " " + opts.extraClass : "");
+    a.href = opts.href;
+
+    var img = document.createElement("img");
+    img.src = "/botia/assets/" + opts.icon;
+    img.alt = "";
+    img.onerror = function () { this.src = "/botia_jar_512.png"; };
+    a.appendChild(img);
+
+    var text = document.createElement("div");
+    text.className = "try-tile-text";
+
+    var n = document.createElement("div");
+    n.className = "try-tile-name";
+    n.textContent = opts.name;
+    text.appendChild(n);
+
+    if (opts.items) {
+      var it = document.createElement("div");
+      it.className = "try-tile-items";
+      it.textContent = opts.items;
+      text.appendChild(it);
     }
 
-    function status(id, fallback, isError) {
-      results.innerHTML = "";
-      var p = document.createElement("p");
-      p.className = "status" + (isError ? " status-error" : "");
-      p.textContent = t(id, fallback);
-      results.appendChild(p);
+    a.appendChild(text);
+    return a;
+  }
+
+  function makeGrid() {
+    var grid = document.createElement("div");
+    grid.className = "try-result-grid";
+    return grid;
+  }
+
+  function render(data, lang) {
+    results.innerHTML = "";
+    var q = "?lang=" + encodeURIComponent(lang);
+
+    if (data.product_name && data.product_name !== "Unknown") {
+      var product = document.createElement("section");
+      product.className = "try-result-block";
+      product.appendChild(sectionTitle("res_product", "Product"));
+
+      var pn = document.createElement("div");
+      pn.className = "try-product-name";
+      pn.textContent = data.product_name;
+      product.appendChild(pn);
+      results.appendChild(product);
     }
 
-    function block(id, fallback) {
-      var d = document.createElement("div");
-      d.className = "result-block";
-      var h = document.createElement("div");
-      h.className = "result-title";
-      h.textContent = t(id, fallback);
-      d.appendChild(h);
-      return d;
+    if (data.ingredients_read) {
+      var ingredients = document.createElement("section");
+      ingredients.className = "try-result-block";
+      ingredients.appendChild(sectionTitle("res_read", "Ingredients read"));
+
+      var rl = document.createElement("div");
+      rl.className = "try-read-list";
+      rl.textContent = data.ingredients_read;
+      ingredients.appendChild(rl);
+      results.appendChild(ingredients);
     }
 
-    function setFile(file) {
-      if (!file) return;
-      if (file.type.indexOf("image/") !== 0) {
-        status("msg_not_image", "That file is not an image.", true);
-        return;
+    var byLayer = {};
+    (data.triggers || []).forEach(function (tr) {
+      (tr.layers || []).forEach(function (layer) {
+        if (layer === "muslim") return;
+        if (!byLayer[layer]) byLayer[layer] = [];
+        byLayer[layer].push(tr);
+      });
+    });
+
+    var choicesGrid = makeGrid();
+    var choiceCount = 0;
+
+    if (data.decision) {
+      var dec = data.decision;
+      var decRoute = DECISION_ROUTES[dec] || DECISION_ROUTES.doubt;
+      var decHref = decRoute + q;
+      if (data.muslim_trigger) {
+        decHref += "&trigger=" + encodeURIComponent(data.muslim_trigger);
       }
-      if (file.size > MAX_BYTES) {
-        status("msg_too_big", "That image is too large. Try one under 6 MB.", true);
-        return;
-      }
-      selectedFile = file;
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        preview.src = e.target.result;
-        preview.hidden = false;
-        dzEmpty.hidden = true;
-        dropzone.classList.add("has-image");
-      };
-      reader.readAsDataURL(file);
-      fileName.textContent = file.name || "";
+      choicesGrid.appendChild(tile({
+        href: decHref,
+        icon: DECISION_ICONS[dec] || "muslim.png",
+        name: t("dec_" + dec, dec.toUpperCase()),
+        items: data.muslim_trigger || "",
+        extraClass: "decision-" + dec
+      }));
+      choiceCount++;
+    }
+
+    if (byLayer.animal && byLayer.animal.length) {
+      var animalItems = byLayer.animal;
+      var animalSlugs = animalItems.map(function (i) { return i.slug; }).join(",");
+      var animalNames = animalItems.map(function (i) { return i.name || i.slug; }).join(" · ");
+      choicesGrid.appendChild(tile({
+        href: LAYER_ROUTES.animal + q + "&trigger=" + encodeURIComponent(animalSlugs),
+        icon: LAYER_ICONS.animal,
+        name: (LAYER_LABELS[lang] || LAYER_LABELS.en).animal,
+        items: animalNames
+      }));
+      choiceCount++;
+    }
+
+    if (data.woman === "general" && data.woman_trigger) {
+      choicesGrid.appendChild(tile({
+        href: "/ingredients/woman_cards.html" + q + "&trigger=" + encodeURIComponent(data.woman_trigger),
+        icon: LAYER_ICONS.woman,
+        name: (LAYER_LABELS[lang] || LAYER_LABELS.en).woman
+      }));
+      choiceCount++;
+    }
+
+    if (choiceCount) {
+      var choices = document.createElement("section");
+      choices.className = "try-result-block";
+      choices.appendChild(sectionTitle("res_choices", "Choices"));
+      choices.appendChild(choicesGrid);
+      results.appendChild(choices);
+    }
+
+    var evidenceGrid = makeGrid();
+    var evidenceCount = 0;
+    ["sugar","sweetener","texture","flavour","enumbers"].forEach(function (layer) {
+      var items = byLayer[layer];
+      if (!items || !items.length) return;
+
+      var route = LAYER_ROUTES[layer];
+      var slugs = items.map(function (i) { return i.slug; }).join(",");
+      var names = items.map(function (i) { return i.name || i.slug; }).join(" · ");
+      var labels = LAYER_LABELS[lang] || LAYER_LABELS.en;
+
+      evidenceGrid.appendChild(tile({
+        href: route + q + "&trigger=" + encodeURIComponent(slugs),
+        icon: LAYER_ICONS[layer],
+        name: labels[layer] || layer,
+        items: names
+      }));
+      evidenceCount++;
+    });
+
+    if (evidenceCount) {
+      var evidence = document.createElement("section");
+      evidence.className = "try-result-block";
+      evidence.appendChild(sectionTitle("res_evidence", "Evidence"));
+      evidence.appendChild(evidenceGrid);
+      results.appendChild(evidence);
+    }
+
+    if (!data.decision && (!data.triggers || !data.triggers.length)) {
+      var none = document.createElement("p");
+      none.className = "try-status";
+      none.textContent = t("res_none", "BOTIA found nothing it flags in this list.");
+      results.appendChild(none);
+    }
+
+    results.scrollIntoView({behavior:"smooth", block:"nearest"});
+  }
+
+  async function analyse() {
+    if (!selectedFile) {
+      status("msg_no_image", "Choose a photo first.", true);
+      return;
+    }
+
+    btn.disabled = true;
+
+    if (!window.BOTIA_WEB_AUTH) {
       btn.disabled = false;
-      results.innerHTML = "";
+      status("msg_error", "Something went wrong. Try again in a moment.", true);
+      return;
     }
 
-    function reset() {
-      selectedFile = null;
-      preview.src = "";
-      preview.hidden = true;
-      dzEmpty.hidden = false;
-      dropzone.classList.remove("has-image", "dragover");
-      fileIn.value = "";
-      fileName.textContent = "";
-      btn.disabled = true;
-      results.innerHTML = "";
+    var access = await window.BOTIA_WEB_AUTH.ensureAccess();
+    if (!access || access.allowed !== true || !access.uid) {
+      btn.disabled = false;
+      return;
     }
 
-    var LAYER_LABELS = {
-      en: { animal: "Animal origin", woman: "Woman", sugar: "Sugar", sweetener: "Sweeteners", texture: "Texture", flavour: "Flavourings", enumbers: "E-numbers" },
-      es: { animal: "Origen animal", woman: "Mujer", sugar: "Azúcar", sweetener: "Edulcorantes", texture: "Textura", flavour: "Aromas", enumbers: "Números E" },
-      fr: { animal: "Origine animale", woman: "Femme", sugar: "Sucre", sweetener: "Édulcorants", texture: "Texture", flavour: "Arômes", enumbers: "Numéros E" },
-      de: { animal: "Tierischer Ursprung", woman: "Frau", sugar: "Zucker", sweetener: "Süßungsmittel", texture: "Textur", flavour: "Aromen", enumbers: "E-Nummern" },
-      nl: { animal: "Dierlijke oorsprong", woman: "Vrouw", sugar: "Suiker", sweetener: "Zoetstoffen", texture: "Textuur", flavour: "Aroma\'s", enumbers: "E-nummers" },
-      it: { animal: "Origine animale", woman: "Donna", sugar: "Zucchero", sweetener: "Edulcoranti", texture: "Consistenza", flavour: "Aromi", enumbers: "Numeri E" },
-      pt: { animal: "Origem animal", woman: "Mulher", sugar: "Açúcar", sweetener: "Edulcorantes", texture: "Textura", flavour: "Aromatizantes", enumbers: "Números E" },
-      pl: { animal: "Pochodzenie zwierzęce", woman: "Kobieta", sugar: "Cukier", sweetener: "Substancje słodzące", texture: "Tekstura", flavour: "Aromaty", enumbers: "Numery E" },
-      ro: { animal: "Origine animală", woman: "Femeie", sugar: "Zahăr", sweetener: "Îndulcitori", texture: "Textură", flavour: "Arome", enumbers: "Numere E" },
-      ru: { animal: "Животное происхождение", woman: "Женщина", sugar: "Сахар", sweetener: "Подсластители", texture: "Текстура", flavour: "Ароматизаторы", enumbers: "E-номера" },
-      tr: { animal: "Hayvansal köken", woman: "Kadın", sugar: "Şeker", sweetener: "Tatlandırıcılar", texture: "Doku", flavour: "Aromalar", enumbers: "E-numaraları" },
-      id: { animal: "Asal hewani", woman: "Perempuan", sugar: "Gula", sweetener: "Pemanis", texture: "Tekstur", flavour: "Perisa", enumbers: "Nomor E" },
-      ar: { animal: "أصل حيواني", woman: "المرأة", sugar: "السكر", sweetener: "المُحلّيات", texture: "القوام", flavour: "النكهات", enumbers: "أرقام E" },
-      zh: { animal: "动物来源", woman: "女性", sugar: "糖", sweetener: "甜味剂", texture: "质地", flavour: "香料", enumbers: "E编号" }
-    };
+    var lang = currentLang();
+    status("msg_reading", "Reading the label…", false);
 
-    var LAYER_ICONS = {
-      animal: "animal.png",
-      muslim: "muslim.png",
-      woman: "mujer.png",
-      sugar: "Sugar.png",
-      sweetener: "sweeteners.png",
-      texture: "texture.png",
-      flavour: "flavors.png",
-      enumbers: "enumbers.png"
-    };
+    var form = new FormData();
+    form.append("file", selectedFile);
+    form.append("lang", lang);
+    form.append("ClientID", access.uid);
+    form.append("uid", access.uid);
 
-    var LAYER_ROUTES = {
-      animal: "/ingredients/animal_origin.html",
-      woman: "/ingredients/woman_safefood.html",
-      sugar: "/ingredients/sugar.html",
-      sweetener: "/ingredients/sweetener.html",
-      texture: "/ingredients/texture.html",
-      flavour: "/ingredients/flavor.html",
-      enumbers: "/ingredients/enumbers.html"
-    };
-
-    var DECISION_ROUTES = {
-      halal: "/ingredients/halal.html",
-      haram: "/ingredients/haram.html",
-      doubt: "/ingredients/mashbooh.html"
-    };
-
-    var DECISION_ICONS = {
-      halal: "Halal.png",
-      haram: "Haram.png",
-      doubt: "muslim.png"
-    };
-
-    function tile(opts) {
-      var a = document.createElement("a");
-      a.className = "layer-tile" + (opts.extraClass ? " " + opts.extraClass : "");
-      a.href = opts.href;
-      a.target = "_blank";
-      a.rel = "noopener";
-
-      var img = document.createElement("img");
-      img.src = "/botia/assets/" + opts.icon;
-      img.alt = "";
-      img.onerror = function () { this.src = "/botia_jar_512.png"; };
-      a.appendChild(img);
-
-      var n = document.createElement("div");
-      n.className = "layer-tile-name";
-      n.textContent = opts.name;
-      a.appendChild(n);
-
-      if (opts.items) {
-        var it = document.createElement("div");
-        it.className = "layer-tile-items";
-        it.textContent = opts.items;
-        a.appendChild(it);
-      }
-      return a;
-    }
-
-    function render(data, lang) {
-      results.innerHTML = "";
-      var q = "?lang=" + encodeURIComponent(lang);
-
-      // --- Product name ---
-      if (data.product_name && data.product_name !== "Unknown") {
-        var pn = document.createElement("div");
-        pn.className = "product-name";
-        pn.textContent = data.product_name;
-        results.appendChild(pn);
-      }
-
-      // --- Grid of layer tiles ---
-      var grid = document.createElement("div");
-      grid.className = "layer-grid";
-
-      // 1. Muslim decision — always first
-      if (data.decision) {
-        var dec = data.decision;
-        var decRoute = DECISION_ROUTES[dec] || DECISION_ROUTES.doubt;
-        var decHref = decRoute + q;
-        if (data.muslim_trigger) {
-          decHref += "&trigger=" + encodeURIComponent(data.muslim_trigger);
-        }
-        grid.appendChild(tile({
-          href: decHref,
-          icon: DECISION_ICONS[dec] || "muslim.png",
-          name: t("dec_" + dec, dec.toUpperCase()),
-          items: data.muslim_trigger || "",
-          extraClass: "decision-" + dec
-        }));
-      }
-
-      // Woman general: no hay ingrediente Woman detectable
-      if (data.woman === "general" && data.woman_trigger) {
-        var womanLabels = LAYER_LABELS[lang] || LAYER_LABELS.en;
-
-        grid.appendChild(tile({
-          href: "/ingredients/woman_cards.html" + q
-                + "&trigger=" + encodeURIComponent(data.woman_trigger),
-          icon: LAYER_ICONS.woman,
-          name: womanLabels.woman || "Woman"
-        }));
-      }
-
-      // 2. Evidence layers, each with its own ingredients
-      var byLayer = {};
-      (data.triggers || []).forEach(function (tr) {
-        (tr.layers || []).forEach(function (layer) {
-          if (layer === "muslim") return;
-          if (!byLayer[layer]) byLayer[layer] = [];
-          byLayer[layer].push(tr);
-        });
-      });
-
-      Object.keys(byLayer).forEach(function (layer) {
-        var route = LAYER_ROUTES[layer];
-        if (!route) return;
-        var items = byLayer[layer];
-        var slugs = items.map(function (i) { return i.slug; }).join(",");
-        var names = items.map(function (i) { return i.name || i.slug; }).join(" · ");
-        var labels = LAYER_LABELS[lang] || LAYER_LABELS.en;
-
-        grid.appendChild(tile({
-          href: route + q + "&trigger=" + encodeURIComponent(slugs),
-          icon: LAYER_ICONS[layer] || "botia_jar_512.png",
-          name: labels[layer] || layer,
-          items: names
-        }));
-      });
-
-      results.appendChild(grid);
-
-      // --- Nothing found ---
-      if (!data.decision && (!data.triggers || !data.triggers.length)) {
-        var none = document.createElement("p");
-        none.className = "status";
-        none.textContent = t("res_none", "BOTIA found nothing it flags in this list.");
-        results.appendChild(none);
-      }
-
-      // --- Ingredients read ---
-      if (data.ingredients_read) {
-        var rb = document.createElement("div");
-        rb.className = "result-block";
-        var h = document.createElement("div");
-        h.className = "result-title";
-        h.textContent = t("res_read", "Ingredients read");
-        rb.appendChild(h);
-        var rl = document.createElement("div");
-        rl.className = "read-list";
-        rl.textContent = data.ingredients_read;
-        rb.appendChild(rl);
-        results.appendChild(rb);
-      }
-
-      results.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    }
-
-    async function analyse() {
-      if (!selectedFile) { status("msg_no_image", "Choose a photo first.", true); return; }
-
-      btn.disabled = true;
-
-      if (!window.BOTIA_WEB_AUTH) {
+    fetch(ENDPOINT, {method:"POST", body:form})
+      .then(function (r) {
+        return r.json()
+          .catch(function () { return {}; })
+          .then(function (j) { return {ok:r.ok, body:j}; });
+      })
+      .then(function (res) {
         btn.disabled = false;
-        status("msg_error", "Something went wrong. Try again in a moment.", true);
-        return;
-      }
 
-      var access = await window.BOTIA_WEB_AUTH.ensureAccess();
-
-      if (!access || access.allowed !== true || !access.uid) {
-        btn.disabled = false;
-        return;
-      }
-
-      var lang = currentLang();
-      status("msg_reading", "Reading the label\\u2026", false);
-
-      var form = new FormData();
-      form.append("file", selectedFile);
-      form.append("lang", lang);
-      form.append("ClientID", access.uid);
-      form.append("uid", access.uid);
-
-      fetch(ENDPOINT, { method: "POST", body: form })
-        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
-        .then(function (res) {
-          btn.disabled = false;
-          if (!res.ok || res.body.error) {
-            if (res.body && res.body.error === "IMAGE_READ_ERROR") {
-              status("msg_unreadable", "No ingredients found. Try a clearer photo.", true);
-            } else {
-              status("msg_error", "Something went wrong. Try again in a moment.", true);
-            }
-            return;
+        if (!res.ok || res.body.error) {
+          if (res.body && res.body.error === "IMAGE_READ_ERROR") {
+            status("msg_unreadable", "No ingredients found. Try a clearer photo.", true);
+          } else {
+            status("msg_error", "Something went wrong. Try again in a moment.", true);
           }
-          render(res.body, lang);
-        })
-        .catch(function () {
-          btn.disabled = false;
-          status("msg_error", "Something went wrong. Try again in a moment.", true);
-        });
-    }
-
-    dropzone.addEventListener("click", function () { fileIn.click(); });
-    dropzone.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fileIn.click(); }
-    });
-    fileIn.addEventListener("change", function () { setFile(fileIn.files[0]); });
-
-    ["dragenter", "dragover"].forEach(function (ev) {
-      dropzone.addEventListener(ev, function (e) {
-        e.preventDefault(); e.stopPropagation();
-        dropzone.classList.add("dragover");
-      });
-    });
-    ["dragleave", "drop"].forEach(function (ev) {
-      dropzone.addEventListener(ev, function (e) {
-        e.preventDefault(); e.stopPropagation();
-        dropzone.classList.remove("dragover");
-      });
-    });
-    dropzone.addEventListener("drop", function (e) {
-      if (e.dataTransfer && e.dataTransfer.files.length) setFile(e.dataTransfer.files[0]);
-    });
-
-    document.addEventListener("paste", function (e) {
-      if (!e.clipboardData || !e.clipboardData.items) return;
-      for (var i = 0; i < e.clipboardData.items.length; i++) {
-        var item = e.clipboardData.items[i];
-        if (item.type.indexOf("image") === 0) {
-          setFile(item.getAsFile());
-          e.preventDefault();
           return;
         }
-      }
+
+        render(res.body, lang);
+      })
+      .catch(function () {
+        btn.disabled = false;
+        status("msg_error", "Something went wrong. Try again in a moment.", true);
+      });
+  }
+
+  dropzone.addEventListener("click", function () { fileIn.click(); });
+  dropzone.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      fileIn.click();
+    }
+  });
+
+  fileIn.addEventListener("change", function () {
+    setFile(fileIn.files && fileIn.files[0]);
+  });
+
+  ["dragenter","dragover"].forEach(function (ev) {
+    dropzone.addEventListener(ev, function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      dropzone.classList.add("dragover");
     });
+  });
 
-    btn.addEventListener("click", analyse);
-    clearBtn.addEventListener("click", reset);
-  })();
+  ["dragleave","drop"].forEach(function (ev) {
+    dropzone.addEventListener(ev, function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      dropzone.classList.remove("dragover");
+    });
+  });
+
+  dropzone.addEventListener("drop", function (e) {
+    if (e.dataTransfer && e.dataTransfer.files.length) {
+      setFile(e.dataTransfer.files[0]);
+    }
+  });
+
+  document.addEventListener("paste", function (e) {
+    if (!e.clipboardData || !e.clipboardData.items) return;
+    for (var i = 0; i < e.clipboardData.items.length; i++) {
+      var item = e.clipboardData.items[i];
+      if (item.type.indexOf("image") === 0) {
+        setFile(item.getAsFile());
+        e.preventDefault();
+        return;
+      }
+    }
+  });
+
+  btn.addEventListener("click", analyse);
+  clearBtn.addEventListener("click", reset);
+
+  preserveLanguageLinks();
+})();
   </script>
-
-  <script src="/botia/assets/js/try-auth.js?v=20260829-2"></script>
+  <script src="/botia/assets/js/try-auth.js?v=20260917-2"></script>
   <script src="/botia/assets/js/i18n-loader.js" defer></script>
   <script src="/botia/assets/js/footer.js"></script>
   <script src="/botia/assets/js/botia-chat.js"></script>
