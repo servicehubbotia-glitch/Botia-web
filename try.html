@@ -259,6 +259,173 @@
       padding-bottom:2px;font-weight:700
     }
 
+
+    .mode-section{padding:34px 0 18px}
+    .mode-sub{margin:-4px 0 16px;color:var(--muted);line-height:1.55}
+    .mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .mode-card{
+      appearance:none;width:100%;text-align:left;color:inherit;font:inherit;cursor:pointer;
+      border:1px solid var(--line);border-radius:18px;background:rgba(24,13,13,.78);
+      padding:18px;display:flex;gap:13px;align-items:flex-start;transition:.18s ease
+    }
+    .mode-card:hover,.mode-card:focus-visible{
+      transform:translateY(-2px);border-color:var(--lineStrong);background:rgba(36,16,16,.90);outline:none
+    }
+    .mode-symbol{
+      width:42px;height:42px;display:grid;place-items:center;flex:0 0 42px;
+      border:1px solid rgba(190,122,72,.36);border-radius:10px;background:rgba(190,122,72,.10);
+      color:var(--accent);font-size:1.15rem;font-weight:900
+    }
+    .barcode-symbol{font-size:.72rem;letter-spacing:-.08em}
+    .mode-card h2{margin:0 0 6px;color:var(--accent2);font-size:1rem}
+    .mode-card p{margin:0;color:var(--soft);font-size:.82rem;line-height:1.48}
+    .capture-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:10px}
+    .capture-heading .section-kicker{margin:0}
+    .change-mode{
+      appearance:none;border:1px solid var(--line);border-radius:999px;background:transparent;
+      color:var(--muted);padding:8px 13px;font:inherit;font-size:.8rem;font-weight:800;cursor:pointer
+    }
+    .change-mode:hover,.change-mode:focus-visible{border-color:var(--lineStrong);color:var(--accent2);outline:none}
+    @media(max-width:720px){.mode-grid{grid-template-columns:1fr}}
+
+
+    /* === TRY V5 · APP HOME + SAME-SESSION MULTIMODE === */
+    .hero-split{
+      display:grid;grid-template-columns:minmax(260px,.9fr) minmax(0,1.1fr);
+      gap:52px;align-items:center;padding:54px 0 34px
+    }
+    .hero-icon-stage{
+      min-height:330px;display:grid;place-items:center;position:relative;overflow:hidden;
+      border:1px solid var(--line);border-radius:28px;
+      background:linear-gradient(145deg,rgba(36,16,16,.88),rgba(8,5,5,.72));
+      box-shadow:var(--shadow)
+    }
+    .hero-icon-stage:before,.hero-icon-stage:after{
+      content:"";position:absolute;width:240px;height:240px;border-radius:50%;
+      border:1px solid rgba(230,160,107,.10)
+    }
+    .hero-icon-stage:before{left:-90px;top:-90px}
+    .hero-icon-stage:after{right:-100px;bottom:-110px}
+    .hero-icon-stage img{
+      width:min(290px,78%);height:auto;position:relative;z-index:2;
+      filter:drop-shadow(0 20px 28px rgba(0,0,0,.38))
+    }
+    .hero-copy{padding:10px 0}
+    .hero-copy .app-brandline{font-size:clamp(2rem,5vw,4.2rem);margin-bottom:18px}
+    .hero-copy .app-claim{font-size:clamp(1.05rem,2vw,1.35rem);margin-bottom:7px}
+    .hero-copy .app-claim.alt{margin-bottom:0}
+
+    .mode-section{padding:22px 0 12px}
+    .mode-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:12px}
+    .mode-sub{margin:5px 0 0;color:var(--muted);font-size:.9rem;line-height:1.45}
+    .mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+    .mode-card{
+      position:relative;appearance:none;width:100%;min-height:116px;text-align:left;color:inherit;
+      font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:16px;
+      background:rgba(24,13,13,.72);padding:14px;display:grid;
+      grid-template-columns:36px 1fr;gap:11px;align-items:start;transition:.18s ease
+    }
+    .mode-card:hover,.mode-card:focus-visible{
+      transform:translateY(-1px);border-color:var(--lineStrong);
+      background:rgba(36,16,16,.86);outline:none
+    }
+    .mode-symbol{
+      width:36px;height:36px;display:grid;place-items:center;border-radius:9px;
+      border:1px solid rgba(190,122,72,.34);background:rgba(190,122,72,.09);
+      color:var(--accent);font-size:1rem;font-weight:900
+    }
+    .barcode-symbol{font-size:.64rem;letter-spacing:-.08em}
+    .mode-card h2{margin:0 0 4px;color:var(--accent2);font-size:.95rem}
+    .mode-card p{margin:0;color:var(--soft);font-size:.76rem;line-height:1.38}
+    .mode-state{
+      position:absolute;top:9px;right:9px;font-size:.62rem;font-weight:900;
+      letter-spacing:.04em;text-transform:uppercase;border-radius:999px;
+      padding:4px 7px;border:1px solid rgba(190,122,72,.22);color:var(--soft);
+      background:#120909
+    }
+    .mode-card.is-done{border-color:rgba(230,160,107,.48)}
+    .mode-card.is-done .mode-state{color:var(--accent2);border-color:rgba(230,160,107,.44)}
+
+    .session-strip{
+      display:flex;justify-content:space-between;gap:18px;align-items:center;
+      margin:14px 0 18px;padding:12px 14px;border-radius:14px;
+      border:1px solid rgba(190,122,72,.18);background:rgba(24,13,13,.45)
+    }
+    .session-title{color:var(--accent2);font-size:.82rem;font-weight:800}
+    .session-sub{color:var(--soft);font-size:.72rem;line-height:1.4;margin-top:2px}
+    .session-mini{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+    .session-mini span{
+      border:1px solid rgba(190,122,72,.20);border-radius:999px;padding:5px 8px;
+      color:var(--soft);font-size:.66rem
+    }
+    .session-mini span.is-done{color:var(--accent2);border-color:rgba(230,160,107,.42)}
+
+    .try-workspace{padding:8px 0 28px}
+    .capture-heading{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:9px}
+    .capture-heading .section-kicker{margin:0}
+    .change-mode{
+      appearance:none;border:1px solid var(--line);border-radius:999px;background:transparent;
+      color:var(--muted);padding:7px 12px;font:inherit;font-size:.75rem;font-weight:800;cursor:pointer
+    }
+    .try-panel{box-shadow:none}
+    .barcode-result{
+      min-height:72px;display:flex;align-items:center;padding:15px;border-radius:14px;
+      border:1px solid rgba(190,122,72,.18);background:rgba(255,255,255,.02);
+      color:var(--muted);line-height:1.5
+    }
+    .barcode-result strong{display:block;color:var(--accent2);font-size:1.15rem;letter-spacing:.05em}
+    .barcode-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .traceability-link{
+      min-height:44px;display:inline-flex;align-items:center;padding:0 18px;border-radius:999px;
+      border:1px solid var(--lineStrong);color:var(--accent2);text-decoration:none;font-weight:800
+    }
+    .saved-note{
+      margin-top:12px;color:var(--accent);font-size:.76rem;font-weight:800
+    }
+    .nutrition-summary{
+      border:1px solid var(--line);border-radius:16px;background:rgba(24,13,13,.74);
+      padding:16px 18px;color:var(--muted);line-height:1.5
+    }
+    .nutrition-summary strong{color:var(--accent2)}
+    .session-action{
+      display:inline-flex;align-items:center;min-height:40px;margin-top:12px;padding:0 15px;
+      border-radius:999px;border:1px solid var(--lineStrong);color:var(--accent2);
+      text-decoration:none;font-weight:800;background:rgba(190,122,72,.08)
+    }
+
+    .compact-how{padding:28px 0 12px}
+    .how-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+    .how-card{
+      min-height:132px;padding:14px;border:1px solid rgba(190,122,72,.20);
+      border-radius:15px;background:rgba(24,13,13,.52)
+    }
+    .how-card .how-icon{width:32px;height:32px;font-size:.82rem;margin-bottom:10px}
+    .how-card h3{margin:0 0 5px;font-size:.9rem}
+    .how-card p{margin:0;color:var(--soft);font-size:.74rem;line-height:1.4}
+
+    .stores-compact{padding:18px 0 22px;gap:10px}
+    .stores-compact .store-card{
+      min-height:0;padding:13px 15px;border-radius:15px;
+      display:flex;align-items:center;gap:12px;justify-content:space-between
+    }
+    .stores-compact .store-card h3{margin:0;font-size:.88rem}
+    .stores-compact .store-card p{display:none}
+    .stores-compact .store-card a{margin:0;min-height:36px;padding:0 12px;font-size:.76rem}
+    .stores-compact .coming-badge{margin:0;padding:6px 9px;font-size:.68rem}
+
+    @media(max-width:760px){
+      .hero-split{grid-template-columns:1fr;gap:22px;padding:36px 0 26px}
+      .hero-icon-stage{min-height:260px}
+      .hero-icon-stage img{width:min(250px,72vw)}
+      .hero-copy{text-align:center}
+      .mode-grid,.how-cards{grid-template-columns:1fr}
+      .mode-card{min-height:0}
+      .session-strip{align-items:flex-start;flex-direction:column}
+      .session-mini{justify-content:flex-start}
+      .stores-compact{grid-template-columns:1fr}
+      .stores-compact .store-card{flex-wrap:wrap}
+    }
+
     [hidden]{display:none!important}
 
     @media(max-width:680px){
@@ -292,64 +459,76 @@
   </header>
 
   <main class="try-wrap" id="main-content">
-    <section class="app-hero">
-      <div class="app-brandline" id="hero_kicker">BOTIA</div>
-      <p class="app-claim" id="hero_line1">Built with criteria.</p>
-      <p class="app-claim alt" id="hero_line2">Backed by documentation.</p>
 
-      <article class="evidence-card">
-        <h2 id="evidence_title">Public and verifiable evidence</h2>
-        <p id="evidence_body">BOTIA's evidence, sources and regulatory documentation are public and can be consulted on our website.</p>
-        <a class="evidence-link" href="/" id="evidence_link">www.botia-safefood.com ↗</a>
-      </article>
-
-      <div class="camera-stage">
+    <section class="hero-split">
+      <div class="hero-icon-stage" aria-hidden="true">
         <img src="/botia/assets/camera.png" alt="">
-        <h1 id="headline">Discover what your ingredients say</h1>
-        <p id="subheadline">Photograph the real ingredient list of a product. BOTIA reads it, analyses its ingredients and shows you the information and evidence available.</p>
-        <a href="#web-try" class="primary-cta" id="cta_photo">Photograph a label</a>
+      </div>
+
+      <div class="hero-copy">
+        <div class="app-brandline" id="hero_kicker">BOTIA</div>
+        <p class="app-claim" id="hero_line1">Built with criteria.</p>
+        <p class="app-claim alt" id="hero_line2">Backed by documentation.</p>
       </div>
     </section>
 
-    <section class="how">
-      <div class="section-kicker" id="how_title">HOW IT WORKS</div>
-      <div class="how-list">
-        <div class="how-row">
-          <div class="how-icon">▣</div>
-          <div><h3 id="step1_title">Photograph</h3><p id="step1_body">Take a photo of the real ingredient list on the package.</p></div>
+    <section class="mode-section" id="web-try">
+      <div class="mode-head">
+        <div>
+          <div class="section-kicker" id="mode_title">Choose what BOTIA should analyse</div>
+          <p class="mode-sub" id="mode_sub">You can complete all three in the same session.</p>
         </div>
-        <div class="how-row">
-          <div class="how-icon">⌘</div>
-          <div><h3 id="step2_title">We decode it</h3><p id="step2_body">We analyse the ingredients and organise the available evidence.</p></div>
-        </div>
-        <div class="how-row">
-          <div class="how-icon">☑</div>
-          <div><h3 id="step3_title">Check it</h3><p id="step3_body">Open the evidence and consult the sources.</p></div>
-        </div>
+      </div>
+
+      <div class="mode-grid" id="mode-grid">
+        <button type="button" class="mode-card" data-mode="ingredients">
+          <div class="mode-symbol">≡</div>
+          <div class="mode-copy">
+            <h2 id="mode_ingredients">Ingredients</h2>
+            <p id="mode_ingredients_desc">Photograph the real ingredient list. BOTIA analyses ingredients, Choices and Evidence.</p>
+          </div>
+          <span class="mode-state" data-state-for="ingredients"></span>
+        </button>
+
+        <button type="button" class="mode-card" data-mode="nutrition">
+          <div class="mode-symbol">▥</div>
+          <div class="mode-copy">
+            <h2 id="mode_nutrition">Nutritional facts</h2>
+            <p id="mode_nutrition_desc">Photograph the nutrition table. BOTIA reads declared values and applicable official references.</p>
+          </div>
+          <span class="mode-state" data-state-for="nutrition"></span>
+        </button>
+
+        <button type="button" class="mode-card" data-mode="barcode">
+          <div class="mode-symbol barcode-symbol">▮▯▮</div>
+          <div class="mode-copy">
+            <h2 id="mode_barcode">Barcode / GTIN</h2>
+            <p id="mode_barcode_desc">Scan or enter the code to identify the product and open available traceability.</p>
+          </div>
+          <span class="mode-state" data-state-for="barcode"></span>
+        </button>
       </div>
     </section>
 
-    <section class="stores">
-      <article class="store-card">
-        <h3 id="android_title">Android available now</h3>
-        <p id="android_body">BOTIA is available on Google Play.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.botia.safefood" target="_blank" rel="noopener" id="android_cta">Get BOTIA on Google Play</a>
-      </article>
-      <article class="store-card coming">
-        <h3 id="ios_title">iPhone</h3>
-        <p id="ios_body">Coming soon</p>
-        <span class="coming-badge">COMING SOON</span>
-      </article>
+    <section class="session-strip" id="session-strip">
+      <div>
+        <div class="session-title" id="session_title">This analysis session</div>
+        <div class="session-sub" id="session_sub">BOTIA keeps the three analyses together while this tab is open.</div>
+      </div>
+      <div class="session-mini" id="session-mini">
+        <span data-mini="ingredients">Ingredients</span>
+        <span data-mini="nutrition">Nutrition</span>
+        <span data-mini="barcode">Barcode</span>
+      </div>
     </section>
 
-    <section class="web-try-intro" id="web-try">
-      <div class="section-kicker">TRY BOTIA</div>
-      <h2 id="try_title">Try BOTIA on the web</h2>
-      <p id="try_body">You can also analyse a label here using the same ingredient-analysis engine.</p>
-    </section>
+    <section class="try-workspace" id="capture-workspace" hidden>
+      <div class="capture-heading">
+        <div class="section-kicker" id="capture_mode_title">Ingredients</div>
+        <button type="button" class="change-mode" id="change-mode">Change mode</button>
+      </div>
 
-    <section class="try-workspace">
-      <div class="try-panel try-box">
+      <div class="try-panel try-box" id="photo-panel">
         <label class="try-label" id="input_label">Photo of the ingredient list</label>
         <div id="dropzone" tabindex="0" role="button" aria-labelledby="input_label">
           <div id="dz-empty">
@@ -370,6 +549,46 @@
 
         <div id="results" aria-live="polite"></div>
       </div>
+
+      <div class="try-panel barcode-panel" id="barcode-panel" hidden>
+        <div class="barcode-result" id="barcode-result"></div>
+        <div class="barcode-actions">
+          <button type="button" class="btn-analyse" id="barcode-scan-btn">Scan barcode / GTIN</button>
+          <a class="traceability-link" id="traceability-link" href="#" hidden>Open traceability</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="how compact-how">
+      <div class="section-kicker" id="how_title">HOW IT WORKS</div>
+      <div class="how-cards">
+        <article class="how-card">
+          <div class="how-icon">▣</div>
+          <h3 id="step1_title">Photograph</h3>
+          <p id="step1_body">Take a photo of the real ingredient list on the package.</p>
+        </article>
+        <article class="how-card">
+          <div class="how-icon">⌘</div>
+          <h3 id="step2_title">We decode it</h3>
+          <p id="step2_body">We analyse the ingredients and organise the available evidence.</p>
+        </article>
+        <article class="how-card">
+          <div class="how-icon">☑</div>
+          <h3 id="step3_title">Check it</h3>
+          <p id="step3_body">Open the evidence and consult the sources.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="stores stores-compact">
+      <article class="store-card">
+        <h3 id="store_android_short">Android · available now</h3>
+        <a href="https://play.google.com/store/apps/details?id=com.botia.safefood" target="_blank" rel="noopener" id="android_cta">Get BOTIA on Google Play</a>
+      </article>
+      <article class="store-card coming">
+        <h3 id="store_ios_short">iPhone · coming soon</h3>
+        <span class="coming-badge">COMING SOON</span>
+      </article>
     </section>
 
     <section class="principles">
@@ -384,6 +603,26 @@
     </section>
 
     <div style="display:none" aria-hidden="true">
+      <span id="selected_ingredients">Ingredients</span>
+      <span id="selected_nutrition">Nutritional facts</span>
+      <span id="input_label_ingredients">Photo of the ingredient list</span>
+      <span id="input_label_nutrition">Photo of the nutrition table</span>
+      <span id="dz_main_ingredients">Drop a photo of the ingredient list here, paste it, or tap to choose one</span>
+      <span id="dz_main_nutrition">Drop a photo of the nutrition table here, paste it, or tap to choose one</span>
+      <span id="dz_sub_ingredients">A clear photo of the ingredient list. JPG or PNG.</span>
+      <span id="dz_sub_nutrition">A clear photo of the nutrition table. JPG, PNG, WEBP, HEIC or HEIF.</span>
+      <span id="change_mode">Change mode</span>
+      <span id="nutrition_reading">Reading nutritional facts…</span>
+      <span id="status_pending">Pending</span>
+      <span id="status_done">Done</span>
+      <span id="barcode_current">Barcode captured</span>
+      <span id="barcode_empty">No barcode captured yet.</span>
+      <span id="barcode_scan">Scan barcode / GTIN</span>
+      <span id="barcode_again">Scan another barcode</span>
+      <span id="open_traceability">Open traceability</span>
+      <span id="view_nutrition">View nutritional result</span>
+      <span id="replace_photo">Photograph again</span>
+      <span id="analysis_saved">Saved in this session</span>
       <span id="res_product">Product</span>
       <span id="res_choices">Choices</span>
       <span id="res_evidence">Evidence</span>
@@ -410,21 +649,36 @@
 (function () {
   "use strict";
 
-  var ENDPOINT = "https://botia-engine-888782651551.europe-west1.run.app";
+  var INGREDIENT_ENDPOINT = "https://botia-engine-888782651551.europe-west1.run.app";
+  var NUTRITION_ENDPOINT = "https://botia-nutrition-888782651551.europe-west1.run.app";
   var MAX_BYTES = 6 * 1024 * 1024;
+  var SESSION_KEY = "botia_try_multimode_session_v1";
 
+  var modeGrid = document.getElementById("mode-grid");
+  var workspace = document.getElementById("capture-workspace");
+  var photoPanel = document.getElementById("photo-panel");
+  var barcodePanel = document.getElementById("barcode-panel");
+  var barcodeResult = document.getElementById("barcode-result");
+  var barcodeScanBtn = document.getElementById("barcode-scan-btn");
+  var traceabilityLink = document.getElementById("traceability-link");
+  var captureModeTitle = document.getElementById("capture_mode_title");
+  var changeModeBtn = document.getElementById("change-mode");
   var dropzone = document.getElementById("dropzone");
-  var dzEmpty  = document.getElementById("dz-empty");
-  var preview  = document.getElementById("dz-preview");
-  var fileIn   = document.getElementById("file-input");
-  var btn      = document.getElementById("btn-analyse");
+  var dzEmpty = document.getElementById("dz-empty");
+  var dzMain = document.getElementById("dz_main");
+  var dzSub = document.getElementById("dz_sub");
+  var preview = document.getElementById("dz-preview");
+  var fileIn = document.getElementById("file-input");
+  var btn = document.getElementById("btn-analyse");
   var clearBtn = document.getElementById("btn-clear");
-  var results  = document.getElementById("results");
+  var results = document.getElementById("results");
   var fileName = document.getElementById("file-name");
+  var inputLabel = document.getElementById("input_label");
   var homeLink = document.getElementById("try-home-link");
-  var backLink = document.getElementById("back-link");
 
   var selectedFile = null;
+  var currentMode = "";
+  var session = loadSession();
 
   var LANGS = ["en","es","ar","de","fr","nl","it","pt","pl","ro","ru","tr","zh","id"];
 
@@ -432,23 +686,51 @@
     var q = new URLSearchParams(location.search).get("lang");
     if (q && LANGS.indexOf(q.toLowerCase().split("-")[0]) > -1) return q.toLowerCase().split("-")[0];
     try {
-      var s = localStorage.getItem("botia-lang");
-      if (s && LANGS.indexOf(s) > -1) return s;
-    } catch (e) {}
+      var saved = localStorage.getItem("botia-lang");
+      if (saved && LANGS.indexOf(saved) > -1) return saved;
+    } catch (_) {}
     var n = (navigator.language || "en").toLowerCase().split("-")[0];
     return LANGS.indexOf(n) > -1 ? n : "en";
   }
 
   function t(id, fallback) {
-    var el = document.getElementById(id);
-    var v = el && el.textContent ? el.textContent.trim() : "";
-    return v || fallback;
+    var node = document.getElementById(id);
+    var value = node && node.textContent ? node.textContent.trim() : "";
+    return value || fallback;
   }
 
-  function preserveLanguageLinks() {
-    var lang = currentLang();
-    if (homeLink) homeLink.href = "/?lang=" + encodeURIComponent(lang);
-    if (backLink) backLink.href = "/ingredients/index.html?lang=" + encodeURIComponent(lang);
+  function loadSession() {
+    try {
+      var raw = sessionStorage.getItem(SESSION_KEY);
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        if (parsed && typeof parsed === "object") return parsed;
+      }
+    } catch (_) {}
+    return {ingredients:null, nutrition:null, barcode:null};
+  }
+
+  function saveSession() {
+    try {
+      sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
+    } catch (_) {}
+    paintSessionState();
+  }
+
+  function paintSessionState() {
+    ["ingredients","nutrition","barcode"].forEach(function (mode) {
+      var done = !!session[mode];
+      var card = modeGrid.querySelector('[data-mode="' + mode + '"]');
+      var state = modeGrid.querySelector('[data-state-for="' + mode + '"]');
+      var mini = document.querySelector('[data-mini="' + mode + '"]');
+
+      if (card) card.classList.toggle("is-done", done);
+      if (state) state.textContent = done ? t("status_done", "Done") : t("status_pending", "Pending");
+      if (mini) {
+        mini.classList.toggle("is-done", done);
+        mini.textContent = (done ? "✓ " : "· ") + mini.textContent.replace(/^[✓·]\s*/, "");
+      }
+    });
   }
 
   function status(id, fallback, isError) {
@@ -459,11 +741,346 @@
     results.appendChild(p);
   }
 
+  function resetFile() {
+    selectedFile = null;
+    preview.src = "";
+    preview.hidden = true;
+    dzEmpty.hidden = false;
+    dropzone.classList.remove("has-image", "dragover");
+    fileIn.value = "";
+    fileName.textContent = "";
+    btn.disabled = true;
+    results.innerHTML = "";
+  }
+
+  function base64UrlEncodeUtf8(value) {
+    var bytes = new TextEncoder().encode(value);
+    var binary = "";
+    bytes.forEach(function (b) { binary += String.fromCharCode(b); });
+    return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+  }
+
+  function nutritionPayload(body) {
+    return body.web_payload || {
+      basis:body.basis || "",
+      declared:body.declared || [],
+      references:body.references || [],
+      serving_size:body.serving_size || null,
+      reference_context:body.reference_context || null
+    };
+  }
+
+  function nutritionResultUrl(body) {
+    var target = new URL("/ingredients/nutrition_facts.html", location.origin);
+    target.searchParams.set("lang", currentLang());
+    target.searchParams.set("payload", base64UrlEncodeUtf8(JSON.stringify(nutritionPayload(body))));
+    return target.toString();
+  }
+
+  function traceabilityUrl(barcode) {
+    var target = new URL("/ingredients/traceability.html", location.origin);
+    target.searchParams.set("lang", currentLang());
+    target.searchParams.set("gtin", barcode.gtin);
+    if (barcode.gtin14) target.searchParams.set("gtin14", barcode.gtin14);
+    target.searchParams.set("source", "try");
+    return target.toString();
+  }
+
+  function renderSavedNutrition() {
+    results.innerHTML = "";
+    if (!session.nutrition) return;
+
+    var payload = nutritionPayload(session.nutrition);
+    var declaredCount = Array.isArray(payload.declared) ? payload.declared.length : 0;
+    var refsCount = Array.isArray(payload.references) ? payload.references.length : 0;
+
+    var card = document.createElement("div");
+    card.className = "nutrition-summary";
+    card.innerHTML =
+      "<strong>" + t("analysis_saved", "Saved in this session") + "</strong><br>" +
+      declaredCount + " · " + refsCount;
+
+    var link = document.createElement("a");
+    link.className = "session-action";
+    link.href = nutritionResultUrl(session.nutrition);
+    link.textContent = t("view_nutrition", "View nutritional result");
+    card.appendChild(document.createElement("br"));
+    card.appendChild(link);
+    results.appendChild(card);
+  }
+
+  var LAYER_LABELS = {
+    en:{animal:"Animal",woman:"Woman",sugar:"Sugar",sweetener:"Sweeteners",texture:"Texture",flavour:"Flavourings",enumbers:"E-numbers"},
+    es:{animal:"Animal",woman:"Mujer",sugar:"Azúcar",sweetener:"Edulcorantes",texture:"Textura",flavour:"Aromas",enumbers:"Números E"},
+    ar:{animal:"حيواني",woman:"المرأة",sugar:"سكر",sweetener:"المُحلّيات",texture:"قوام",flavour:"نكهات",enumbers:"أرقام E"},
+    de:{animal:"Tierisch",woman:"Frau",sugar:"Zucker",sweetener:"Süßstoffe",texture:"Textur",flavour:"Aromen",enumbers:"E-Nummern"},
+    fr:{animal:"Animal",woman:"Femme",sugar:"Sucre",sweetener:"Édulcorants",texture:"Texture",flavour:"Arômes",enumbers:"Numéros E"},
+    nl:{animal:"Dierlijk",woman:"Vrouw",sugar:"Suiker",sweetener:"Zoetstoffen",texture:"Textuur",flavour:"Aroma's",enumbers:"E-nummers"},
+    it:{animal:"Animale",woman:"Donna",sugar:"Zucchero",sweetener:"Dolcificanti",texture:"Consistenza",flavour:"Aromi",enumbers:"Numeri E"},
+    pt:{animal:"Animal",woman:"Mulher",sugar:"Açúcar",sweetener:"Edulcorantes",texture:"Textura",flavour:"Aromas",enumbers:"Números E"},
+    pl:{animal:"Zwierzęce",woman:"Kobieta",sugar:"Cukier",sweetener:"Substancje słodzące",texture:"Tekstura",flavour:"Aromaty",enumbers:"Numery E"},
+    ro:{animal:"Animal",woman:"Femeie",sugar:"Zahăr",sweetener:"Îndulcitori",texture:"Textură",flavour:"Arome",enumbers:"Numere E"},
+    ru:{animal:"Животное",woman:"Женщина",sugar:"Сахар",sweetener:"Подсластители",texture:"Текстура",flavour:"Ароматизаторы",enumbers:"E-номера"},
+    tr:{animal:"Hayvansal",woman:"Kadın",sugar:"Şeker",sweetener:"Tatlandırıcılar",texture:"Doku",flavour:"Aromalar",enumbers:"E numaraları"},
+    zh:{animal:"动物源",woman:"女性",sugar:"糖",sweetener:"甜味剂",texture:"质地",flavour:"香料",enumbers:"E编号"},
+    id:{animal:"Hewani",woman:"Perempuan",sugar:"Gula",sweetener:"Pemanis",texture:"Tekstur",flavour:"Perisa",enumbers:"Nomor E"}
+  };
+
+  var LAYER_ICONS = {
+    animal:"animal.png", woman:"mujer.png", sugar:"Sugar.png",
+    sweetener:"sweeteners.png", texture:"texture.png", flavour:"flavors.png",
+    enumbers:"enumbers.png"
+  };
+  var LAYER_ROUTES = {
+    animal:"/ingredients/animal_origin.html", woman:"/ingredients/woman_safefood.html",
+    sugar:"/ingredients/sugar.html", sweetener:"/ingredients/sweetener.html",
+    texture:"/ingredients/texture.html", flavour:"/ingredients/flavor.html",
+    enumbers:"/ingredients/enumbers.html"
+  };
+  var DECISION_ROUTES = {
+    halal:"/ingredients/halal.html", haram:"/ingredients/haram.html",
+    doubt:"/ingredients/mashbooh.html"
+  };
+  var DECISION_ICONS = {halal:"Halal.png",haram:"Haram.png",doubt:"muslim.png"};
+
   function sectionTitle(id, fallback) {
     var h = document.createElement("h2");
     h.className = "try-result-section-title";
     h.textContent = t(id, fallback);
     return h;
+  }
+
+  function tile(opts) {
+    var a = document.createElement("a");
+    a.className = "try-tile" + (opts.extraClass ? " " + opts.extraClass : "");
+    a.href = opts.href;
+
+    var img = document.createElement("img");
+    img.src = "/botia/assets/" + opts.icon;
+    img.alt = "";
+    img.onerror = function () { this.src = "/botia_jar_512.png"; };
+    a.appendChild(img);
+
+    var text = document.createElement("div");
+    var name = document.createElement("div");
+    name.className = "try-tile-name";
+    name.textContent = opts.name;
+    text.appendChild(name);
+
+    if (opts.items) {
+      var items = document.createElement("div");
+      items.className = "try-tile-items";
+      items.textContent = opts.items;
+      text.appendChild(items);
+    }
+
+    a.appendChild(text);
+    return a;
+  }
+
+  function renderIngredients(data, lang) {
+    results.innerHTML = "";
+    if (!data) return;
+    var q = "?lang=" + encodeURIComponent(lang);
+
+    if (data.product_name && data.product_name !== "Unknown") {
+      var product = document.createElement("section");
+      product.className = "try-result-block";
+      product.appendChild(sectionTitle("res_product", "Product"));
+      var pn = document.createElement("div");
+      pn.className = "try-product-name";
+      pn.textContent = data.product_name;
+      product.appendChild(pn);
+      results.appendChild(product);
+    }
+
+    if (data.ingredients_read) {
+      var ingredients = document.createElement("section");
+      ingredients.className = "try-result-block";
+      ingredients.appendChild(sectionTitle("res_read", "Ingredients read"));
+      var rl = document.createElement("div");
+      rl.className = "try-read-list";
+      rl.textContent = data.ingredients_read;
+      ingredients.appendChild(rl);
+      results.appendChild(ingredients);
+    }
+
+    var byLayer = {};
+    (data.triggers || []).forEach(function (tr) {
+      (tr.layers || []).forEach(function (layer) {
+        if (layer === "muslim") return;
+        if (!byLayer[layer]) byLayer[layer] = [];
+        byLayer[layer].push(tr);
+      });
+    });
+
+    var choicesGrid = document.createElement("div");
+    choicesGrid.className = "try-result-grid";
+    var choiceCount = 0;
+
+    if (data.decision) {
+      var dec = data.decision;
+      var decHref = (DECISION_ROUTES[dec] || DECISION_ROUTES.doubt) + q;
+      if (data.muslim_trigger) decHref += "&trigger=" + encodeURIComponent(data.muslim_trigger);
+      choicesGrid.appendChild(tile({
+        href:decHref, icon:DECISION_ICONS[dec] || "muslim.png",
+        name:t("dec_" + dec, dec.toUpperCase()),
+        items:data.muslim_trigger || "", extraClass:"decision-" + dec
+      }));
+      choiceCount++;
+    }
+
+    if (byLayer.animal && byLayer.animal.length) {
+      var animals = byLayer.animal;
+      choicesGrid.appendChild(tile({
+        href:LAYER_ROUTES.animal + q + "&trigger=" + encodeURIComponent(animals.map(function(i){return i.slug;}).join(",")),
+        icon:LAYER_ICONS.animal,
+        name:(LAYER_LABELS[lang] || LAYER_LABELS.en).animal,
+        items:animals.map(function(i){return i.name || i.slug;}).join(" · ")
+      }));
+      choiceCount++;
+    }
+
+    if (data.woman === "general" && data.woman_trigger) {
+      choicesGrid.appendChild(tile({
+        href:"/ingredients/woman_cards.html" + q + "&trigger=" + encodeURIComponent(data.woman_trigger),
+        icon:LAYER_ICONS.woman,
+        name:(LAYER_LABELS[lang] || LAYER_LABELS.en).woman
+      }));
+      choiceCount++;
+    }
+
+    if (choiceCount) {
+      var choices = document.createElement("section");
+      choices.className = "try-result-block";
+      choices.appendChild(sectionTitle("res_choices", "Choices"));
+      choices.appendChild(choicesGrid);
+      results.appendChild(choices);
+    }
+
+    var evidenceGrid = document.createElement("div");
+    evidenceGrid.className = "try-result-grid";
+    var evidenceCount = 0;
+    ["sugar","sweetener","texture","flavour","enumbers"].forEach(function (layer) {
+      var items = byLayer[layer];
+      if (!items || !items.length) return;
+      evidenceGrid.appendChild(tile({
+        href:LAYER_ROUTES[layer] + q + "&trigger=" + encodeURIComponent(items.map(function(i){return i.slug;}).join(",")),
+        icon:LAYER_ICONS[layer],
+        name:(LAYER_LABELS[lang] || LAYER_LABELS.en)[layer] || layer,
+        items:items.map(function(i){return i.name || i.slug;}).join(" · ")
+      }));
+      evidenceCount++;
+    });
+
+    if (evidenceCount) {
+      var evidence = document.createElement("section");
+      evidence.className = "try-result-block";
+      evidence.appendChild(sectionTitle("res_evidence", "Evidence"));
+      evidence.appendChild(evidenceGrid);
+      results.appendChild(evidence);
+    }
+
+    if (!data.decision && (!data.triggers || !data.triggers.length)) {
+      var none = document.createElement("p");
+      none.className = "try-status";
+      none.textContent = t("res_none", "BOTIA found nothing it flags in this list.");
+      results.appendChild(none);
+    }
+
+    var saved = document.createElement("div");
+    saved.className = "saved-note";
+    saved.textContent = "✓ " + t("analysis_saved", "Saved in this session");
+    results.appendChild(saved);
+  }
+
+  function renderBarcodePanel() {
+    var barcode = session.barcode;
+    if (barcode) {
+      barcodeResult.innerHTML =
+        "<div><span>" + t("barcode_current", "Barcode captured") + "</span>" +
+        "<strong>" + barcode.gtin + "</strong></div>";
+      barcodeScanBtn.textContent = t("barcode_again", "Scan another barcode");
+      traceabilityLink.href = traceabilityUrl(barcode);
+      traceabilityLink.textContent = t("open_traceability", "Open traceability");
+      traceabilityLink.hidden = false;
+    } else {
+      barcodeResult.textContent = t("barcode_empty", "No barcode captured yet.");
+      barcodeScanBtn.textContent = t("barcode_scan", "Scan barcode / GTIN");
+      traceabilityLink.hidden = true;
+    }
+  }
+
+  function configureMode(mode, shouldScroll) {
+    currentMode = mode;
+    resetFile();
+    workspace.hidden = false;
+
+    if (mode === "ingredients") {
+      photoPanel.hidden = false;
+      barcodePanel.hidden = true;
+      captureModeTitle.textContent = t("selected_ingredients", "Ingredients");
+      inputLabel.textContent = t("input_label_ingredients", "Photo of the ingredient list");
+      dzMain.textContent = t("dz_main_ingredients", "Drop a photo of the ingredient list here, paste it, or tap to choose one");
+      dzSub.textContent = t("dz_sub_ingredients", "A clear photo of the ingredient list. JPG or PNG.");
+      if (session.ingredients) renderIngredients(session.ingredients, currentLang());
+    } else if (mode === "nutrition") {
+      photoPanel.hidden = false;
+      barcodePanel.hidden = true;
+      captureModeTitle.textContent = t("selected_nutrition", "Nutritional facts");
+      inputLabel.textContent = t("input_label_nutrition", "Photo of the nutrition table");
+      dzMain.textContent = t("dz_main_nutrition", "Drop a photo of the nutrition table here, paste it, or tap to choose one");
+      dzSub.textContent = t("dz_sub_nutrition", "A clear photo of the nutrition table. JPG, PNG, WEBP, HEIC or HEIF.");
+      if (session.nutrition) renderSavedNutrition();
+    } else if (mode === "barcode") {
+      photoPanel.hidden = true;
+      barcodePanel.hidden = false;
+      captureModeTitle.textContent = t("mode_barcode", "Barcode / GTIN");
+      renderBarcodePanel();
+    }
+
+    if (shouldScroll !== false) {
+      workspace.scrollIntoView({behavior:"smooth", block:"start"});
+    }
+  }
+
+  async function openBarcodeCapture() {
+    if (window.BOTIA_WEB_AUTH) {
+      var access = await window.BOTIA_WEB_AUTH.ensureAccess();
+      if (!access || access.allowed !== true || !access.uid) return;
+    }
+
+    var lang = currentLang();
+    var returnUrl = new URL("/try.html", location.origin);
+    returnUrl.searchParams.set("lang", lang);
+    returnUrl.searchParams.set("mode", "barcode");
+
+    var target = new URL("/ingredients/barcode_capture.html", location.origin);
+    target.searchParams.set("lang", lang);
+    target.searchParams.set("source", "try");
+    target.searchParams.set("return", returnUrl.pathname + returnUrl.search);
+    location.href = target.toString();
+  }
+
+  function captureBarcodeReturn() {
+    var params = new URLSearchParams(location.search);
+    var gtin = params.get("gtin");
+    if (!gtin) return false;
+
+    session.barcode = {
+      gtin:gtin,
+      gtin14:params.get("gtin14") || "",
+      format:params.get("barcode_format") || "",
+      source:params.get("barcode_source") || "try"
+    };
+    saveSession();
+
+    ["gtin","gtin14","barcode_format","barcode_source"].forEach(function (key) {
+      params.delete(key);
+    });
+    params.set("mode", "barcode");
+    history.replaceState(null, "", location.pathname + "?" + params.toString());
+    return true;
   }
 
   function setFile(file) {
@@ -486,232 +1103,9 @@
       dropzone.classList.add("has-image");
     };
     reader.readAsDataURL(file);
-
     fileName.textContent = file.name || "";
     btn.disabled = false;
     results.innerHTML = "";
-  }
-
-  function reset() {
-    selectedFile = null;
-    preview.src = "";
-    preview.hidden = true;
-    dzEmpty.hidden = false;
-    dropzone.classList.remove("has-image", "dragover");
-    fileIn.value = "";
-    fileName.textContent = "";
-    btn.disabled = true;
-    results.innerHTML = "";
-  }
-
-  var LAYER_LABELS = {
-    en:{animal:"Animal",woman:"Woman",sugar:"Sugar",sweetener:"Sweeteners",texture:"Texture",flavour:"Flavourings",enumbers:"E-numbers"},
-    es:{animal:"Animal",woman:"Mujer",sugar:"Azúcar",sweetener:"Edulcorantes",texture:"Textura",flavour:"Aromas",enumbers:"Números E"},
-    ar:{animal:"حيواني",woman:"المرأة",sugar:"سكر",sweetener:"المُحلّيات",texture:"قوام",flavour:"نكهات",enumbers:"أرقام E"},
-    de:{animal:"Tierisch",woman:"Frau",sugar:"Zucker",sweetener:"Süßstoffe",texture:"Textur",flavour:"Aromen",enumbers:"E-Nummern"},
-    fr:{animal:"Animal",woman:"Femme",sugar:"Sucre",sweetener:"Édulcorants",texture:"Texture",flavour:"Arômes",enumbers:"Numéros E"},
-    nl:{animal:"Dierlijk",woman:"Vrouw",sugar:"Suiker",sweetener:"Zoetstoffen",texture:"Textuur",flavour:"Aroma's",enumbers:"E-nummers"},
-    it:{animal:"Animale",woman:"Donna",sugar:"Zucchero",sweetener:"Dolcificanti",texture:"Consistenza",flavour:"Aromi",enumbers:"Numeri E"},
-    pt:{animal:"Animal",woman:"Mulher",sugar:"Açúcar",sweetener:"Edulcorantes",texture:"Textura",flavour:"Aromas",enumbers:"Números E"},
-    pl:{animal:"Zwierzęce",woman:"Kobieta",sugar:"Cukier",sweetener:"Substancje słodzące",texture:"Tekstura",flavour:"Aromaty",enumbers:"Numery E"},
-    ro:{animal:"Animal",woman:"Femeie",sugar:"Zahăr",sweetener:"Îndulcitori",texture:"Textură",flavour:"Arome",enumbers:"Numere E"},
-    ru:{animal:"Животное",woman:"Женщина",sugar:"Сахар",sweetener:"Подсластители",texture:"Текстура",flavour:"Ароматизаторы",enumbers:"E-номера"},
-    tr:{animal:"Hayvansal",woman:"Kadın",sugar:"Şeker",sweetener:"Tatlandırıcılar",texture:"Doku",flavour:"Aromalar",enumbers:"E numaraları"},
-    zh:{animal:"动物源",woman:"女性",sugar:"糖",sweetener:"甜味剂",texture:"质地",flavour:"香料",enumbers:"E编号"},
-    id:{animal:"Hewani",woman:"Perempuan",sugar:"Gula",sweetener:"Pemanis",texture:"Tekstur",flavour:"Perisa",enumbers:"Nomor E"}
-  };
-
-  var LAYER_ICONS = {
-    animal:"animal.png",
-    woman:"mujer.png",
-    sugar:"Sugar.png",
-    sweetener:"sweeteners.png",
-    texture:"texture.png",
-    flavour:"flavors.png",
-    enumbers:"enumbers.png"
-  };
-
-  var LAYER_ROUTES = {
-    animal:"/ingredients/animal_origin.html",
-    woman:"/ingredients/woman_safefood.html",
-    sugar:"/ingredients/sugar.html",
-    sweetener:"/ingredients/sweetener.html",
-    texture:"/ingredients/texture.html",
-    flavour:"/ingredients/flavor.html",
-    enumbers:"/ingredients/enumbers.html"
-  };
-
-  var DECISION_ROUTES = {
-    halal:"/ingredients/halal.html",
-    haram:"/ingredients/haram.html",
-    doubt:"/ingredients/mashbooh.html"
-  };
-
-  var DECISION_ICONS = {
-    halal:"Halal.png",
-    haram:"Haram.png",
-    doubt:"muslim.png"
-  };
-
-  function tile(opts) {
-    var a = document.createElement("a");
-    a.className = "try-tile" + (opts.extraClass ? " " + opts.extraClass : "");
-    a.href = opts.href;
-
-    var img = document.createElement("img");
-    img.src = "/botia/assets/" + opts.icon;
-    img.alt = "";
-    img.onerror = function () { this.src = "/botia_jar_512.png"; };
-    a.appendChild(img);
-
-    var text = document.createElement("div");
-    text.className = "try-tile-text";
-
-    var n = document.createElement("div");
-    n.className = "try-tile-name";
-    n.textContent = opts.name;
-    text.appendChild(n);
-
-    if (opts.items) {
-      var it = document.createElement("div");
-      it.className = "try-tile-items";
-      it.textContent = opts.items;
-      text.appendChild(it);
-    }
-
-    a.appendChild(text);
-    return a;
-  }
-
-  function makeGrid() {
-    var grid = document.createElement("div");
-    grid.className = "try-result-grid";
-    return grid;
-  }
-
-  function render(data, lang) {
-    results.innerHTML = "";
-    var q = "?lang=" + encodeURIComponent(lang);
-
-    if (data.product_name && data.product_name !== "Unknown") {
-      var product = document.createElement("section");
-      product.className = "try-result-block";
-      product.appendChild(sectionTitle("res_product", "Product"));
-
-      var pn = document.createElement("div");
-      pn.className = "try-product-name";
-      pn.textContent = data.product_name;
-      product.appendChild(pn);
-      results.appendChild(product);
-    }
-
-    if (data.ingredients_read) {
-      var ingredients = document.createElement("section");
-      ingredients.className = "try-result-block";
-      ingredients.appendChild(sectionTitle("res_read", "Ingredients read"));
-
-      var rl = document.createElement("div");
-      rl.className = "try-read-list";
-      rl.textContent = data.ingredients_read;
-      ingredients.appendChild(rl);
-      results.appendChild(ingredients);
-    }
-
-    var byLayer = {};
-    (data.triggers || []).forEach(function (tr) {
-      (tr.layers || []).forEach(function (layer) {
-        if (layer === "muslim") return;
-        if (!byLayer[layer]) byLayer[layer] = [];
-        byLayer[layer].push(tr);
-      });
-    });
-
-    var choicesGrid = makeGrid();
-    var choiceCount = 0;
-
-    if (data.decision) {
-      var dec = data.decision;
-      var decRoute = DECISION_ROUTES[dec] || DECISION_ROUTES.doubt;
-      var decHref = decRoute + q;
-      if (data.muslim_trigger) {
-        decHref += "&trigger=" + encodeURIComponent(data.muslim_trigger);
-      }
-      choicesGrid.appendChild(tile({
-        href: decHref,
-        icon: DECISION_ICONS[dec] || "muslim.png",
-        name: t("dec_" + dec, dec.toUpperCase()),
-        items: data.muslim_trigger || "",
-        extraClass: "decision-" + dec
-      }));
-      choiceCount++;
-    }
-
-    if (byLayer.animal && byLayer.animal.length) {
-      var animalItems = byLayer.animal;
-      var animalSlugs = animalItems.map(function (i) { return i.slug; }).join(",");
-      var animalNames = animalItems.map(function (i) { return i.name || i.slug; }).join(" · ");
-      choicesGrid.appendChild(tile({
-        href: LAYER_ROUTES.animal + q + "&trigger=" + encodeURIComponent(animalSlugs),
-        icon: LAYER_ICONS.animal,
-        name: (LAYER_LABELS[lang] || LAYER_LABELS.en).animal,
-        items: animalNames
-      }));
-      choiceCount++;
-    }
-
-    if (data.woman === "general" && data.woman_trigger) {
-      choicesGrid.appendChild(tile({
-        href: "/ingredients/woman_cards.html" + q + "&trigger=" + encodeURIComponent(data.woman_trigger),
-        icon: LAYER_ICONS.woman,
-        name: (LAYER_LABELS[lang] || LAYER_LABELS.en).woman
-      }));
-      choiceCount++;
-    }
-
-    if (choiceCount) {
-      var choices = document.createElement("section");
-      choices.className = "try-result-block";
-      choices.appendChild(sectionTitle("res_choices", "Choices"));
-      choices.appendChild(choicesGrid);
-      results.appendChild(choices);
-    }
-
-    var evidenceGrid = makeGrid();
-    var evidenceCount = 0;
-    ["sugar","sweetener","texture","flavour","enumbers"].forEach(function (layer) {
-      var items = byLayer[layer];
-      if (!items || !items.length) return;
-
-      var route = LAYER_ROUTES[layer];
-      var slugs = items.map(function (i) { return i.slug; }).join(",");
-      var names = items.map(function (i) { return i.name || i.slug; }).join(" · ");
-      var labels = LAYER_LABELS[lang] || LAYER_LABELS.en;
-
-      evidenceGrid.appendChild(tile({
-        href: route + q + "&trigger=" + encodeURIComponent(slugs),
-        icon: LAYER_ICONS[layer],
-        name: labels[layer] || layer,
-        items: names
-      }));
-      evidenceCount++;
-    });
-
-    if (evidenceCount) {
-      var evidence = document.createElement("section");
-      evidence.className = "try-result-block";
-      evidence.appendChild(sectionTitle("res_evidence", "Evidence"));
-      evidence.appendChild(evidenceGrid);
-      results.appendChild(evidence);
-    }
-
-    if (!data.decision && (!data.triggers || !data.triggers.length)) {
-      var none = document.createElement("p");
-      none.className = "try-status";
-      none.textContent = t("res_none", "BOTIA found nothing it flags in this list.");
-      results.appendChild(none);
-    }
-
-    results.scrollIntoView({behavior:"smooth", block:"nearest"});
   }
 
   async function analyse() {
@@ -735,39 +1129,64 @@
     }
 
     var lang = currentLang();
-    status("msg_reading", "Reading the label…", false);
-
     var form = new FormData();
     form.append("file", selectedFile);
     form.append("lang", lang);
     form.append("ClientID", access.uid);
     form.append("uid", access.uid);
 
-    fetch(ENDPOINT, {method:"POST", body:form})
-      .then(function (r) {
-        return r.json()
-          .catch(function () { return {}; })
-          .then(function (j) { return {ok:r.ok, body:j}; });
-      })
-      .then(function (res) {
-        btn.disabled = false;
+    var endpoint = currentMode === "nutrition" ? NUTRITION_ENDPOINT : INGREDIENT_ENDPOINT;
+    status(
+      currentMode === "nutrition" ? "nutrition_reading" : "msg_reading",
+      currentMode === "nutrition" ? "Reading nutritional facts…" : "Reading the label…",
+      false
+    );
 
-        if (!res.ok || res.body.error) {
-          if (res.body && res.body.error === "IMAGE_READ_ERROR") {
-            status("msg_unreadable", "No ingredients found. Try a clearer photo.", true);
-          } else {
-            status("msg_error", "Something went wrong. Try again in a moment.", true);
-          }
-          return;
+    try {
+      var response = await fetch(endpoint, {method:"POST", body:form});
+      var body = {};
+      try { body = await response.json(); } catch (_) {}
+
+      btn.disabled = false;
+
+      if (!response.ok || body.error) {
+        if (body && (body.error === "IMAGE_READ_ERROR" || body.error === "EMPTY_PANEL")) {
+          status("msg_unreadable", "No data found. Try a clearer photo.", true);
+        } else {
+          status("msg_error", "Something went wrong. Try again in a moment.", true);
         }
+        return;
+      }
 
-        render(res.body, lang);
-      })
-      .catch(function () {
-        btn.disabled = false;
-        status("msg_error", "Something went wrong. Try again in a moment.", true);
-      });
+      if (currentMode === "nutrition") {
+        session.nutrition = body;
+        saveSession();
+        renderSavedNutrition();
+      } else {
+        session.ingredients = body;
+        saveSession();
+        renderIngredients(body, lang);
+      }
+    } catch (_) {
+      btn.disabled = false;
+      status("msg_error", "Something went wrong. Try again in a moment.", true);
+    }
   }
+
+  modeGrid.addEventListener("click", function (event) {
+    var card = event.target.closest("[data-mode]");
+    if (!card) return;
+    configureMode(card.dataset.mode, true);
+  });
+
+  changeModeBtn.addEventListener("click", function () {
+    workspace.hidden = true;
+    currentMode = "";
+    resetFile();
+    modeGrid.scrollIntoView({behavior:"smooth", block:"center"});
+  });
+
+  barcodeScanBtn.addEventListener("click", openBarcodeCapture);
 
   dropzone.addEventListener("click", function () { fileIn.click(); });
   dropzone.addEventListener("keydown", function (e) {
@@ -776,35 +1195,24 @@
       fileIn.click();
     }
   });
-
-  fileIn.addEventListener("change", function () {
-    setFile(fileIn.files && fileIn.files[0]);
-  });
+  fileIn.addEventListener("change", function () { setFile(fileIn.files && fileIn.files[0]); });
 
   ["dragenter","dragover"].forEach(function (ev) {
     dropzone.addEventListener(ev, function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      dropzone.classList.add("dragover");
+      e.preventDefault(); e.stopPropagation(); dropzone.classList.add("dragover");
     });
   });
-
   ["dragleave","drop"].forEach(function (ev) {
     dropzone.addEventListener(ev, function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      dropzone.classList.remove("dragover");
+      e.preventDefault(); e.stopPropagation(); dropzone.classList.remove("dragover");
     });
   });
-
   dropzone.addEventListener("drop", function (e) {
-    if (e.dataTransfer && e.dataTransfer.files.length) {
-      setFile(e.dataTransfer.files[0]);
-    }
+    if (e.dataTransfer && e.dataTransfer.files.length) setFile(e.dataTransfer.files[0]);
   });
 
   document.addEventListener("paste", function (e) {
-    if (!e.clipboardData || !e.clipboardData.items) return;
+    if (workspace.hidden || currentMode === "barcode" || !e.clipboardData || !e.clipboardData.items) return;
     for (var i = 0; i < e.clipboardData.items.length; i++) {
       var item = e.clipboardData.items[i];
       if (item.type.indexOf("image") === 0) {
@@ -816,12 +1224,26 @@
   });
 
   btn.addEventListener("click", analyse);
-  clearBtn.addEventListener("click", reset);
+  clearBtn.addEventListener("click", resetFile);
 
-  preserveLanguageLinks();
+  if (homeLink) homeLink.href = "/?lang=" + encodeURIComponent(currentLang());
+
+  var returned = captureBarcodeReturn();
+  paintSessionState();
+
+  var requestedMode = new URLSearchParams(location.search).get("mode");
+  if (requestedMode && ["ingredients","nutrition","barcode"].includes(requestedMode)) {
+    configureMode(requestedMode, returned);
+  }
+
+  // Repaint translated dynamic labels after i18n has had time to update DOM.
+  window.setTimeout(function () {
+    paintSessionState();
+    if (currentMode) configureMode(currentMode, false);
+  }, 180);
 })();
   </script>
-  <script src="/botia/assets/js/try-auth.js?v=20260917-2"></script>
+  <script src="/botia/assets/js/try-auth.js?v=20260917-5"></script>
   <script src="/botia/assets/js/i18n-loader.js" defer></script>
   <script src="/botia/assets/js/footer.js"></script>
   <script src="/botia/assets/js/botia-chat.js"></script>
