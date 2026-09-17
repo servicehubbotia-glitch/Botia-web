@@ -426,6 +426,283 @@
       .stores-compact .store-card{flex-wrap:wrap}
     }
 
+
+    /* === TRY V6 · ONLY THE REQUESTED CHANGES === */
+
+    .hero-exact{
+      display:grid;
+      grid-template-columns:minmax(270px,.9fr) minmax(0,1.1fr);
+      gap:48px;
+      align-items:center;
+      padding:48px 0 34px;
+    }
+    .hero-exact-icon{
+      min-height:330px;
+      display:grid;
+      place-items:center;
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:linear-gradient(145deg,rgba(36,16,16,.88),rgba(8,5,5,.72));
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .hero-exact-icon img{
+      width:min(300px,82%);
+      height:auto;
+      display:block;
+      filter:drop-shadow(0 20px 30px rgba(0,0,0,.38));
+    }
+    .hero-exact-copy{
+      padding:10px 0;
+    }
+    .hero-exact-copy .app-brandline{
+      font-size:clamp(2rem,5vw,4.2rem);
+      margin-bottom:18px;
+    }
+    .hero-exact-copy .app-claim{
+      font-size:clamp(1.08rem,2vw,1.36rem);
+      margin-bottom:8px;
+    }
+    .hero-exact-copy .app-claim.alt{
+      margin-bottom:0;
+    }
+
+    /* Whole analysis area is hidden/shown by the ORIGINAL try-auth.js */
+    .analysis-shell{
+      margin:8px 0 22px;
+      padding:0;
+      background:transparent;
+      border:0;
+      border-radius:0;
+      box-shadow:none;
+    }
+
+    .analysis-active{
+      margin-bottom:18px;
+    }
+    .analysis-active-head{
+      margin-bottom:9px;
+    }
+    .analysis-active-head .section-kicker{
+      margin:0;
+    }
+
+    .try-panel{
+      box-shadow:none;
+    }
+
+    .mode-exact{
+      padding:6px 0 0;
+    }
+    .mode-exact-head{
+      margin-bottom:10px;
+    }
+    .mode-exact-head .section-kicker{
+      margin-bottom:5px;
+    }
+    .mode-sub{
+      margin:0;
+      color:var(--muted);
+      font-size:.82rem;
+      line-height:1.45;
+    }
+    .mode-grid-exact{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:10px;
+    }
+    .mode-card-exact{
+      appearance:none;
+      width:100%;
+      min-height:104px;
+      text-align:left;
+      color:inherit;
+      font:inherit;
+      cursor:pointer;
+      border:1px solid var(--line);
+      border-radius:15px;
+      background:rgba(24,13,13,.68);
+      padding:13px;
+      display:grid;
+      grid-template-columns:34px 1fr;
+      gap:10px;
+      align-items:start;
+      transition:.18s ease;
+    }
+    .mode-card-exact:hover,
+    .mode-card-exact:focus-visible,
+    .mode-card-exact.is-selected{
+      border-color:var(--lineStrong);
+      background:rgba(36,16,16,.86);
+      outline:none;
+    }
+    .mode-card-exact h2{
+      margin:0 0 4px;
+      color:var(--accent2);
+      font-size:.92rem;
+    }
+    .mode-card-exact p{
+      margin:0;
+      color:var(--soft);
+      font-size:.73rem;
+      line-height:1.38;
+    }
+    .mode-card-exact .mode-symbol{
+      width:34px;
+      height:34px;
+      display:grid;
+      place-items:center;
+      border-radius:9px;
+      border:1px solid rgba(190,122,72,.34);
+      background:rgba(190,122,72,.09);
+      color:var(--accent);
+      font-size:.95rem;
+      font-weight:900;
+    }
+    .mode-card-exact .barcode-symbol{
+      font-size:.61rem;
+      letter-spacing:-.08em;
+    }
+
+    .barcode-result{
+      min-height:72px;
+      display:flex;
+      align-items:center;
+      padding:15px;
+      border-radius:14px;
+      border:1px solid rgba(190,122,72,.18);
+      background:rgba(255,255,255,.02);
+      color:var(--muted);
+      line-height:1.5;
+    }
+    .barcode-result strong{
+      display:block;
+      color:var(--accent2);
+      font-size:1.15rem;
+      letter-spacing:.05em;
+    }
+    .barcode-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:12px;
+    }
+    .traceability-link{
+      min-height:44px;
+      display:inline-flex;
+      align-items:center;
+      padding:0 18px;
+      border-radius:999px;
+      border:1px solid var(--lineStrong);
+      color:var(--accent2);
+      text-decoration:none;
+      font-weight:800;
+    }
+
+    .how-exact{
+      padding:24px 0 12px;
+    }
+    .how-grid-exact{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:10px;
+    }
+    .how-card-exact{
+      min-height:124px;
+      padding:13px;
+      border:1px solid rgba(190,122,72,.20);
+      border-radius:15px;
+      background:rgba(24,13,13,.50);
+    }
+    .how-card-exact .how-icon{
+      width:31px;
+      height:31px;
+      margin-bottom:9px;
+      font-size:.8rem;
+    }
+    .how-card-exact h3{
+      margin:0 0 5px;
+      font-size:.88rem;
+    }
+    .how-card-exact p{
+      margin:0;
+      color:var(--soft);
+      font-size:.72rem;
+      line-height:1.4;
+    }
+
+    .stores-exact{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      padding:16px 0 22px;
+    }
+    .store-card-exact{
+      min-height:0;
+      padding:12px 14px;
+      border:1px solid var(--line);
+      border-radius:15px;
+      background:rgba(24,13,13,.64);
+      display:flex;
+      align-items:center;
+      gap:12px;
+      justify-content:space-between;
+    }
+    .store-card-exact h3{
+      margin:0;
+      color:var(--accent2);
+      font-size:.84rem;
+    }
+    .store-card-exact a{
+      display:inline-flex;
+      align-items:center;
+      min-height:34px;
+      padding:0 11px;
+      border:1px solid var(--lineStrong);
+      border-radius:999px;
+      color:var(--accent2);
+      text-decoration:none;
+      font-size:.73rem;
+      font-weight:800;
+      white-space:nowrap;
+    }
+    .store-card-exact .coming-badge{
+      margin:0;
+      padding:6px 9px;
+      font-size:.66rem;
+      white-space:nowrap;
+    }
+
+    @media(max-width:760px){
+      .hero-exact{
+        grid-template-columns:1fr;
+        gap:20px;
+        padding:34px 0 26px;
+      }
+      .hero-exact-icon{
+        min-height:250px;
+      }
+      .hero-exact-icon img{
+        width:min(250px,72vw);
+      }
+      .hero-exact-copy{
+        text-align:center;
+      }
+      .mode-grid-exact,
+      .how-grid-exact{
+        grid-template-columns:1fr;
+      }
+      .mode-card-exact{
+        min-height:0;
+      }
+      .stores-exact{
+        grid-template-columns:1fr;
+      }
+      .store-card-exact{
+        flex-wrap:wrap;
+      }
+    }
+
     [hidden]{display:none!important}
 
     @media(max-width:680px){
@@ -460,119 +737,120 @@
 
   <main class="try-wrap" id="main-content">
 
-    <section class="hero-split">
-      <div class="hero-icon-stage" aria-hidden="true">
+    <!-- HERO: icon left, BOTIA copy right. No hero CTA. -->
+    <section class="hero-exact">
+      <div class="hero-exact-icon" aria-hidden="true">
         <img src="/botia/assets/camera.png" alt="">
       </div>
 
-      <div class="hero-copy">
+      <div class="hero-exact-copy">
         <div class="app-brandline" id="hero_kicker">BOTIA</div>
         <p class="app-claim" id="hero_line1">Built with criteria.</p>
         <p class="app-claim alt" id="hero_line2">Backed by documentation.</p>
       </div>
     </section>
 
-    <section class="mode-section" id="web-try">
-      <div class="mode-head">
-        <div>
+    <!--
+      IMPORTANT:
+      .try-box is the SAME auth gate the old Try page used.
+      try-auth.js inserts "Continue with Google" before this whole section
+      and keeps the ENTIRE analysis area hidden until access is allowed.
+    -->
+    <section class="analysis-shell try-box" id="analysis-shell">
+
+      <!-- ACTIVE ANALYSIS FIRST (requested reverse order) -->
+      <div class="analysis-active" id="capture-workspace">
+        <div class="analysis-active-head">
+          <div class="section-kicker" id="capture_mode_title">Ingredients</div>
+        </div>
+
+        <div class="try-panel" id="photo-panel">
+          <label class="try-label" id="input_label">Photo of the ingredient list</label>
+
+          <div id="dropzone" tabindex="0" role="button" aria-labelledby="input_label">
+            <div id="dz-empty">
+              <div class="dz-icon">
+                <img src="/botia/assets/camera.png" alt="">
+              </div>
+              <div class="dz-main" id="dz_main">Drop a photo here, paste it, or tap to choose one</div>
+              <div class="dz-sub" id="dz_sub">A clear photo of the ingredient list. JPG or PNG.</div>
+            </div>
+            <img id="dz-preview" alt="" hidden>
+          </div>
+
+          <input type="file" id="file-input" accept="image/*" hidden>
+
+          <div class="try-actions">
+            <button type="button" class="btn-analyse" id="btn-analyse" disabled>Analyse</button>
+            <button type="button" class="btn-clear" id="btn-clear">Clear</button>
+            <span class="file-name" id="file-name"></span>
+          </div>
+
+          <div id="results" aria-live="polite"></div>
+        </div>
+
+        <div class="try-panel barcode-panel" id="barcode-panel" hidden>
+          <div class="barcode-result" id="barcode-result"></div>
+          <div class="barcode-actions">
+            <button type="button" class="btn-analyse" id="barcode-scan-btn">Scan barcode / GTIN</button>
+            <a class="traceability-link" id="traceability-link" href="#" hidden>Open traceability</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- THREE MODES BELOW, compact -->
+      <div class="mode-exact">
+        <div class="mode-exact-head">
           <div class="section-kicker" id="mode_title">Choose what BOTIA should analyse</div>
           <p class="mode-sub" id="mode_sub">You can complete all three in the same session.</p>
         </div>
-      </div>
 
-      <div class="mode-grid" id="mode-grid">
-        <button type="button" class="mode-card" data-mode="ingredients">
-          <div class="mode-symbol">≡</div>
-          <div class="mode-copy">
-            <h2 id="mode_ingredients">Ingredients</h2>
-            <p id="mode_ingredients_desc">Photograph the real ingredient list. BOTIA analyses ingredients, Choices and Evidence.</p>
-          </div>
-          <span class="mode-state" data-state-for="ingredients"></span>
-        </button>
+        <div class="mode-grid-exact" id="mode-grid">
+          <button type="button" class="mode-card-exact is-selected" data-mode="ingredients">
+            <div class="mode-symbol">≡</div>
+            <div>
+              <h2 id="mode_ingredients">Ingredients</h2>
+              <p id="mode_ingredients_desc">Photograph the real ingredient list. BOTIA analyses ingredients, Choices and Evidence.</p>
+            </div>
+          </button>
 
-        <button type="button" class="mode-card" data-mode="nutrition">
-          <div class="mode-symbol">▥</div>
-          <div class="mode-copy">
-            <h2 id="mode_nutrition">Nutritional facts</h2>
-            <p id="mode_nutrition_desc">Photograph the nutrition table. BOTIA reads declared values and applicable official references.</p>
-          </div>
-          <span class="mode-state" data-state-for="nutrition"></span>
-        </button>
+          <button type="button" class="mode-card-exact" data-mode="nutrition">
+            <div class="mode-symbol">▥</div>
+            <div>
+              <h2 id="mode_nutrition">Nutritional facts</h2>
+              <p id="mode_nutrition_desc">Photograph the nutrition table. BOTIA reads the declared values and shows applicable official references when valid.</p>
+            </div>
+          </button>
 
-        <button type="button" class="mode-card" data-mode="barcode">
-          <div class="mode-symbol barcode-symbol">▮▯▮</div>
-          <div class="mode-copy">
-            <h2 id="mode_barcode">Barcode / GTIN</h2>
-            <p id="mode_barcode_desc">Scan or enter the code to identify the product and open available traceability.</p>
-          </div>
-          <span class="mode-state" data-state-for="barcode"></span>
-        </button>
-      </div>
-    </section>
-
-    <section class="session-strip" id="session-strip">
-      <div>
-        <div class="session-title" id="session_title">This analysis session</div>
-        <div class="session-sub" id="session_sub">BOTIA keeps the three analyses together while this tab is open.</div>
-      </div>
-      <div class="session-mini" id="session-mini">
-        <span data-mini="ingredients">Ingredients</span>
-        <span data-mini="nutrition">Nutrition</span>
-        <span data-mini="barcode">Barcode</span>
-      </div>
-    </section>
-
-    <section class="try-workspace" id="capture-workspace" hidden>
-      <div class="capture-heading">
-        <div class="section-kicker" id="capture_mode_title">Ingredients</div>
-        <button type="button" class="change-mode" id="change-mode">Change mode</button>
-      </div>
-
-      <div class="try-panel try-box" id="photo-panel">
-        <label class="try-label" id="input_label">Photo of the ingredient list</label>
-        <div id="dropzone" tabindex="0" role="button" aria-labelledby="input_label">
-          <div id="dz-empty">
-            <div class="dz-icon"><img src="/botia/assets/camera.png" alt=""></div>
-            <div class="dz-main" id="dz_main">Drop a photo here, paste it, or tap to choose one</div>
-            <div class="dz-sub" id="dz_sub">A clear photo of the ingredient list. JPG or PNG.</div>
-          </div>
-          <img id="dz-preview" alt="" hidden>
-        </div>
-
-        <input type="file" id="file-input" accept="image/*" hidden>
-
-        <div class="try-actions">
-          <button type="button" class="btn-analyse" id="btn-analyse" disabled>Analyse</button>
-          <button type="button" class="btn-clear" id="btn-clear">Clear</button>
-          <span class="file-name" id="file-name"></span>
-        </div>
-
-        <div id="results" aria-live="polite"></div>
-      </div>
-
-      <div class="try-panel barcode-panel" id="barcode-panel" hidden>
-        <div class="barcode-result" id="barcode-result"></div>
-        <div class="barcode-actions">
-          <button type="button" class="btn-analyse" id="barcode-scan-btn">Scan barcode / GTIN</button>
-          <a class="traceability-link" id="traceability-link" href="#" hidden>Open traceability</a>
+          <button type="button" class="mode-card-exact" data-mode="barcode">
+            <div class="mode-symbol barcode-symbol">▮▯▮</div>
+            <div>
+              <h2 id="mode_barcode">Barcode / GTIN</h2>
+              <p id="mode_barcode_desc">Scan or enter the barcode to identify the product and open available traceability.</p>
+            </div>
+          </button>
         </div>
       </div>
+
     </section>
 
-    <section class="how compact-how">
+    <!-- HOW IT WORKS: three small cards side-by-side -->
+    <section class="how-exact">
       <div class="section-kicker" id="how_title">HOW IT WORKS</div>
-      <div class="how-cards">
-        <article class="how-card">
+      <div class="how-grid-exact">
+        <article class="how-card-exact">
           <div class="how-icon">▣</div>
           <h3 id="step1_title">Photograph</h3>
           <p id="step1_body">Take a photo of the real ingredient list on the package.</p>
         </article>
-        <article class="how-card">
+
+        <article class="how-card-exact">
           <div class="how-icon">⌘</div>
           <h3 id="step2_title">We decode it</h3>
           <p id="step2_body">We analyse the ingredients and organise the available evidence.</p>
         </article>
-        <article class="how-card">
+
+        <article class="how-card-exact">
           <div class="how-icon">☑</div>
           <h3 id="step3_title">Check it</h3>
           <p id="step3_body">Open the evidence and consult the sources.</p>
@@ -580,12 +858,19 @@
       </div>
     </section>
 
-    <section class="stores stores-compact">
-      <article class="store-card">
+    <!-- Android / iPhone: deliberately smaller and AFTER analysis -->
+    <section class="stores-exact">
+      <article class="store-card-exact">
         <h3 id="store_android_short">Android · available now</h3>
-        <a href="https://play.google.com/store/apps/details?id=com.botia.safefood" target="_blank" rel="noopener" id="android_cta">Get BOTIA on Google Play</a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.botia.safefood"
+          target="_blank"
+          rel="noopener"
+          id="android_cta"
+        >Get BOTIA on Google Play</a>
       </article>
-      <article class="store-card coming">
+
+      <article class="store-card-exact coming">
         <h3 id="store_ios_short">iPhone · coming soon</h3>
         <span class="coming-badge">COMING SOON</span>
       </article>
@@ -655,14 +940,12 @@
   var SESSION_KEY = "botia_try_multimode_session_v1";
 
   var modeGrid = document.getElementById("mode-grid");
-  var workspace = document.getElementById("capture-workspace");
   var photoPanel = document.getElementById("photo-panel");
   var barcodePanel = document.getElementById("barcode-panel");
   var barcodeResult = document.getElementById("barcode-result");
   var barcodeScanBtn = document.getElementById("barcode-scan-btn");
   var traceabilityLink = document.getElementById("traceability-link");
   var captureModeTitle = document.getElementById("capture_mode_title");
-  var changeModeBtn = document.getElementById("change-mode");
   var dropzone = document.getElementById("dropzone");
   var dzEmpty = document.getElementById("dz-empty");
   var dzMain = document.getElementById("dz_main");
@@ -677,7 +960,7 @@
   var homeLink = document.getElementById("try-home-link");
 
   var selectedFile = null;
-  var currentMode = "";
+  var currentMode = "ingredients";
   var session = loadSession();
 
   var LANGS = ["en","es","ar","de","fr","nl","it","pt","pl","ro","ru","tr","zh","id"];
@@ -714,23 +997,6 @@
     try {
       sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
     } catch (_) {}
-    paintSessionState();
-  }
-
-  function paintSessionState() {
-    ["ingredients","nutrition","barcode"].forEach(function (mode) {
-      var done = !!session[mode];
-      var card = modeGrid.querySelector('[data-mode="' + mode + '"]');
-      var state = modeGrid.querySelector('[data-state-for="' + mode + '"]');
-      var mini = document.querySelector('[data-mini="' + mode + '"]');
-
-      if (card) card.classList.toggle("is-done", done);
-      if (state) state.textContent = done ? t("status_done", "Done") : t("status_pending", "Pending");
-      if (mini) {
-        mini.classList.toggle("is-done", done);
-        mini.textContent = (done ? "✓ " : "· ") + mini.textContent.replace(/^[✓·]\s*/, "");
-      }
-    });
   }
 
   function status(id, fallback, isError) {
@@ -786,29 +1052,6 @@
     return target.toString();
   }
 
-  function renderSavedNutrition() {
-    results.innerHTML = "";
-    if (!session.nutrition) return;
-
-    var payload = nutritionPayload(session.nutrition);
-    var declaredCount = Array.isArray(payload.declared) ? payload.declared.length : 0;
-    var refsCount = Array.isArray(payload.references) ? payload.references.length : 0;
-
-    var card = document.createElement("div");
-    card.className = "nutrition-summary";
-    card.innerHTML =
-      "<strong>" + t("analysis_saved", "Saved in this session") + "</strong><br>" +
-      declaredCount + " · " + refsCount;
-
-    var link = document.createElement("a");
-    link.className = "session-action";
-    link.href = nutritionResultUrl(session.nutrition);
-    link.textContent = t("view_nutrition", "View nutritional result");
-    card.appendChild(document.createElement("br"));
-    card.appendChild(link);
-    results.appendChild(card);
-  }
-
   var LAYER_LABELS = {
     en:{animal:"Animal",woman:"Woman",sugar:"Sugar",sweetener:"Sweeteners",texture:"Texture",flavour:"Flavourings",enumbers:"E-numbers"},
     es:{animal:"Animal",woman:"Mujer",sugar:"Azúcar",sweetener:"Edulcorantes",texture:"Textura",flavour:"Aromas",enumbers:"Números E"},
@@ -828,19 +1071,22 @@
 
   var LAYER_ICONS = {
     animal:"animal.png", woman:"mujer.png", sugar:"Sugar.png",
-    sweetener:"sweeteners.png", texture:"texture.png", flavour:"flavors.png",
-    enumbers:"enumbers.png"
+    sweetener:"sweeteners.png", texture:"texture.png",
+    flavour:"flavors.png", enumbers:"enumbers.png"
   };
+
   var LAYER_ROUTES = {
     animal:"/ingredients/animal_origin.html", woman:"/ingredients/woman_safefood.html",
     sugar:"/ingredients/sugar.html", sweetener:"/ingredients/sweetener.html",
     texture:"/ingredients/texture.html", flavour:"/ingredients/flavor.html",
     enumbers:"/ingredients/enumbers.html"
   };
+
   var DECISION_ROUTES = {
     halal:"/ingredients/halal.html", haram:"/ingredients/haram.html",
     doubt:"/ingredients/mashbooh.html"
   };
+
   var DECISION_ICONS = {halal:"Halal.png",haram:"Haram.png",doubt:"muslim.png"};
 
   function sectionTitle(id, fallback) {
@@ -881,6 +1127,7 @@
   function renderIngredients(data, lang) {
     results.innerHTML = "";
     if (!data) return;
+
     var q = "?lang=" + encodeURIComponent(lang);
 
     if (data.product_name && data.product_name !== "Unknown") {
@@ -922,10 +1169,13 @@
       var dec = data.decision;
       var decHref = (DECISION_ROUTES[dec] || DECISION_ROUTES.doubt) + q;
       if (data.muslim_trigger) decHref += "&trigger=" + encodeURIComponent(data.muslim_trigger);
+
       choicesGrid.appendChild(tile({
-        href:decHref, icon:DECISION_ICONS[dec] || "muslim.png",
+        href:decHref,
+        icon:DECISION_ICONS[dec] || "muslim.png",
         name:t("dec_" + dec, dec.toUpperCase()),
-        items:data.muslim_trigger || "", extraClass:"decision-" + dec
+        items:data.muslim_trigger || "",
+        extraClass:"decision-" + dec
       }));
       choiceCount++;
     }
@@ -961,9 +1211,11 @@
     var evidenceGrid = document.createElement("div");
     evidenceGrid.className = "try-result-grid";
     var evidenceCount = 0;
+
     ["sugar","sweetener","texture","flavour","enumbers"].forEach(function (layer) {
       var items = byLayer[layer];
       if (!items || !items.length) return;
+
       evidenceGrid.appendChild(tile({
         href:LAYER_ROUTES[layer] + q + "&trigger=" + encodeURIComponent(items.map(function(i){return i.slug;}).join(",")),
         icon:LAYER_ICONS[layer],
@@ -987,15 +1239,40 @@
       none.textContent = t("res_none", "BOTIA found nothing it flags in this list.");
       results.appendChild(none);
     }
+  }
 
-    var saved = document.createElement("div");
-    saved.className = "saved-note";
-    saved.textContent = "✓ " + t("analysis_saved", "Saved in this session");
-    results.appendChild(saved);
+  function renderSavedNutrition() {
+    results.innerHTML = "";
+    if (!session.nutrition) return;
+
+    var payload = nutritionPayload(session.nutrition);
+    var declaredCount = Array.isArray(payload.declared) ? payload.declared.length : 0;
+    var refsCount = Array.isArray(payload.references) ? payload.references.length : 0;
+
+    var card = document.createElement("div");
+    card.className = "nutrition-summary";
+
+    var strong = document.createElement("strong");
+    strong.textContent = t("analysis_saved", "Saved in this session");
+    card.appendChild(strong);
+
+    var meta = document.createElement("div");
+    meta.textContent = declaredCount + " · " + refsCount;
+    meta.style.marginTop = "5px";
+    card.appendChild(meta);
+
+    var link = document.createElement("a");
+    link.className = "session-action";
+    link.href = nutritionResultUrl(session.nutrition);
+    link.textContent = t("view_nutrition", "View nutritional result");
+    card.appendChild(link);
+
+    results.appendChild(card);
   }
 
   function renderBarcodePanel() {
     var barcode = session.barcode;
+
     if (barcode) {
       barcodeResult.innerHTML =
         "<div><span>" + t("barcode_current", "Barcode captured") + "</span>" +
@@ -1011,46 +1288,68 @@
     }
   }
 
-  function configureMode(mode, shouldScroll) {
+  function selectModeCard(mode) {
+    modeGrid.querySelectorAll("[data-mode]").forEach(function (card) {
+      card.classList.toggle("is-selected", card.dataset.mode === mode);
+    });
+  }
+
+  function configureMode(mode) {
     currentMode = mode;
     resetFile();
-    workspace.hidden = false;
+    selectModeCard(mode);
 
     if (mode === "ingredients") {
       photoPanel.hidden = false;
       barcodePanel.hidden = true;
+
       captureModeTitle.textContent = t("selected_ingredients", "Ingredients");
       inputLabel.textContent = t("input_label_ingredients", "Photo of the ingredient list");
       dzMain.textContent = t("dz_main_ingredients", "Drop a photo of the ingredient list here, paste it, or tap to choose one");
       dzSub.textContent = t("dz_sub_ingredients", "A clear photo of the ingredient list. JPG or PNG.");
-      if (session.ingredients) renderIngredients(session.ingredients, currentLang());
-    } else if (mode === "nutrition") {
+
+      if (session.ingredients) {
+        renderIngredients(session.ingredients, currentLang());
+      }
+      return;
+    }
+
+    if (mode === "nutrition") {
       photoPanel.hidden = false;
       barcodePanel.hidden = true;
+
       captureModeTitle.textContent = t("selected_nutrition", "Nutritional facts");
       inputLabel.textContent = t("input_label_nutrition", "Photo of the nutrition table");
       dzMain.textContent = t("dz_main_nutrition", "Drop a photo of the nutrition table here, paste it, or tap to choose one");
       dzSub.textContent = t("dz_sub_nutrition", "A clear photo of the nutrition table. JPG, PNG, WEBP, HEIC or HEIF.");
-      if (session.nutrition) renderSavedNutrition();
-    } else if (mode === "barcode") {
+
+      if (session.nutrition) {
+        renderSavedNutrition();
+      }
+      return;
+    }
+
+    if (mode === "barcode") {
       photoPanel.hidden = true;
       barcodePanel.hidden = false;
       captureModeTitle.textContent = t("mode_barcode", "Barcode / GTIN");
       renderBarcodePanel();
     }
-
-    if (shouldScroll !== false) {
-      workspace.scrollIntoView({behavior:"smooth", block:"start"});
-    }
   }
 
   async function openBarcodeCapture() {
-    if (window.BOTIA_WEB_AUTH) {
-      var access = await window.BOTIA_WEB_AUTH.ensureAccess();
-      if (!access || access.allowed !== true || !access.uid) return;
-    }
+    /*
+      Keep the original access gate.
+      Even though this section is only visible after auth, we check again here
+      exactly like the photo analyses do.
+    */
+    if (!window.BOTIA_WEB_AUTH) return;
+
+    var access = await window.BOTIA_WEB_AUTH.ensureAccess();
+    if (!access || access.allowed !== true || !access.uid) return;
 
     var lang = currentLang();
+
     var returnUrl = new URL("/try.html", location.origin);
     returnUrl.searchParams.set("lang", lang);
     returnUrl.searchParams.set("mode", "barcode");
@@ -1059,12 +1358,14 @@
     target.searchParams.set("lang", lang);
     target.searchParams.set("source", "try");
     target.searchParams.set("return", returnUrl.pathname + returnUrl.search);
+
     location.href = target.toString();
   }
 
   function captureBarcodeReturn() {
     var params = new URLSearchParams(location.search);
     var gtin = params.get("gtin");
+
     if (!gtin) return false;
 
     session.barcode = {
@@ -1079,22 +1380,26 @@
       params.delete(key);
     });
     params.set("mode", "barcode");
+
     history.replaceState(null, "", location.pathname + "?" + params.toString());
     return true;
   }
 
   function setFile(file) {
     if (!file) return;
+
     if (!file.type || file.type.indexOf("image/") !== 0) {
       status("msg_not_image", "That file is not an image.", true);
       return;
     }
+
     if (file.size > MAX_BYTES) {
       status("msg_too_big", "That image is too large. Try one under 6 MB.", true);
       return;
     }
 
     selectedFile = file;
+
     var reader = new FileReader();
     reader.onload = function (e) {
       preview.src = e.target.result;
@@ -1103,6 +1408,7 @@
       dropzone.classList.add("has-image");
     };
     reader.readAsDataURL(file);
+
     fileName.textContent = file.name || "";
     btn.disabled = false;
     results.innerHTML = "";
@@ -1116,6 +1422,10 @@
 
     btn.disabled = true;
 
+    /*
+      ORIGINAL ACCESS RULE PRESERVED:
+      every analysis must pass BOTIA_WEB_AUTH.ensureAccess().
+    */
     if (!window.BOTIA_WEB_AUTH) {
       btn.disabled = false;
       status("msg_error", "Something went wrong. Try again in a moment.", true);
@@ -1123,6 +1433,7 @@
     }
 
     var access = await window.BOTIA_WEB_AUTH.ensureAccess();
+
     if (!access || access.allowed !== true || !access.uid) {
       btn.disabled = false;
       return;
@@ -1130,12 +1441,16 @@
 
     var lang = currentLang();
     var form = new FormData();
+
     form.append("file", selectedFile);
     form.append("lang", lang);
     form.append("ClientID", access.uid);
     form.append("uid", access.uid);
 
-    var endpoint = currentMode === "nutrition" ? NUTRITION_ENDPOINT : INGREDIENT_ENDPOINT;
+    var endpoint = currentMode === "nutrition"
+      ? NUTRITION_ENDPOINT
+      : INGREDIENT_ENDPOINT;
+
     status(
       currentMode === "nutrition" ? "nutrition_reading" : "msg_reading",
       currentMode === "nutrition" ? "Reading nutritional facts…" : "Reading the label…",
@@ -1145,7 +1460,10 @@
     try {
       var response = await fetch(endpoint, {method:"POST", body:form});
       var body = {};
-      try { body = await response.json(); } catch (_) {}
+
+      try {
+        body = await response.json();
+      } catch (_) {}
 
       btn.disabled = false;
 
@@ -1176,48 +1494,57 @@
   modeGrid.addEventListener("click", function (event) {
     var card = event.target.closest("[data-mode]");
     if (!card) return;
-    configureMode(card.dataset.mode, true);
-  });
-
-  changeModeBtn.addEventListener("click", function () {
-    workspace.hidden = true;
-    currentMode = "";
-    resetFile();
-    modeGrid.scrollIntoView({behavior:"smooth", block:"center"});
+    configureMode(card.dataset.mode);
   });
 
   barcodeScanBtn.addEventListener("click", openBarcodeCapture);
 
-  dropzone.addEventListener("click", function () { fileIn.click(); });
-  dropzone.addEventListener("keydown", function (e) {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
+  dropzone.addEventListener("click", function () {
+    fileIn.click();
+  });
+
+  dropzone.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
       fileIn.click();
     }
   });
-  fileIn.addEventListener("change", function () { setFile(fileIn.files && fileIn.files[0]); });
 
-  ["dragenter","dragover"].forEach(function (ev) {
-    dropzone.addEventListener(ev, function (e) {
-      e.preventDefault(); e.stopPropagation(); dropzone.classList.add("dragover");
-    });
-  });
-  ["dragleave","drop"].forEach(function (ev) {
-    dropzone.addEventListener(ev, function (e) {
-      e.preventDefault(); e.stopPropagation(); dropzone.classList.remove("dragover");
-    });
-  });
-  dropzone.addEventListener("drop", function (e) {
-    if (e.dataTransfer && e.dataTransfer.files.length) setFile(e.dataTransfer.files[0]);
+  fileIn.addEventListener("change", function () {
+    setFile(fileIn.files && fileIn.files[0]);
   });
 
-  document.addEventListener("paste", function (e) {
-    if (workspace.hidden || currentMode === "barcode" || !e.clipboardData || !e.clipboardData.items) return;
-    for (var i = 0; i < e.clipboardData.items.length; i++) {
-      var item = e.clipboardData.items[i];
+  ["dragenter","dragover"].forEach(function (name) {
+    dropzone.addEventListener(name, function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      dropzone.classList.add("dragover");
+    });
+  });
+
+  ["dragleave","drop"].forEach(function (name) {
+    dropzone.addEventListener(name, function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      dropzone.classList.remove("dragover");
+    });
+  });
+
+  dropzone.addEventListener("drop", function (event) {
+    if (event.dataTransfer && event.dataTransfer.files.length) {
+      setFile(event.dataTransfer.files[0]);
+    }
+  });
+
+  document.addEventListener("paste", function (event) {
+    if (currentMode === "barcode" || !event.clipboardData || !event.clipboardData.items) return;
+
+    for (var i = 0; i < event.clipboardData.items.length; i++) {
+      var item = event.clipboardData.items[i];
+
       if (item.type.indexOf("image") === 0) {
         setFile(item.getAsFile());
-        e.preventDefault();
+        event.preventDefault();
         return;
       }
     }
@@ -1226,24 +1553,27 @@
   btn.addEventListener("click", analyse);
   clearBtn.addEventListener("click", resetFile);
 
-  if (homeLink) homeLink.href = "/?lang=" + encodeURIComponent(currentLang());
-
-  var returned = captureBarcodeReturn();
-  paintSessionState();
-
-  var requestedMode = new URLSearchParams(location.search).get("mode");
-  if (requestedMode && ["ingredients","nutrition","barcode"].includes(requestedMode)) {
-    configureMode(requestedMode, returned);
+  if (homeLink) {
+    homeLink.href = "/?lang=" + encodeURIComponent(currentLang());
   }
 
-  // Repaint translated dynamic labels after i18n has had time to update DOM.
+  captureBarcodeReturn();
+
+  var requestedMode = new URLSearchParams(location.search).get("mode");
+
+  if (requestedMode && ["ingredients","nutrition","barcode"].includes(requestedMode)) {
+    configureMode(requestedMode);
+  } else {
+    configureMode("ingredients");
+  }
+
+  
   window.setTimeout(function () {
-    paintSessionState();
-    if (currentMode) configureMode(currentMode, false);
+    configureMode(currentMode);
   }, 180);
 })();
-  </script>
-  <script src="/botia/assets/js/try-auth.js?v=20260917-5"></script>
+  </script>  </script>
+  <script src="/botia/assets/js/try-auth.js?v=20260917-6"></script>
   <script src="/botia/assets/js/i18n-loader.js" defer></script>
   <script src="/botia/assets/js/footer.js"></script>
   <script src="/botia/assets/js/botia-chat.js"></script>
