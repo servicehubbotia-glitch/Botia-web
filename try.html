@@ -703,6 +703,140 @@
       }
     }
 
+
+    /* === TRY V7 · CUMULATIVE GENERAL RESULT LIKE THE APP === */
+    .general-result{
+      margin-top:24px;
+      padding-top:20px;
+      border-top:1px solid rgba(190,122,72,.20);
+    }
+    .general-result-block{margin:0 0 24px}
+    .general-result-title{
+      margin:0 0 10px;
+      color:var(--accent);
+      font-size:.74rem;
+      font-weight:900;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+    }
+    .general-card{
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:rgba(24,13,13,.72);
+      padding:15px 17px;
+    }
+    .general-product{
+      color:var(--accent2);
+      font-size:1.08rem;
+      font-weight:800;
+    }
+    .general-ingredients{
+      color:var(--muted);
+      line-height:1.7;
+      font-size:.92rem;
+      white-space:pre-wrap;
+    }
+    .general-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:10px;
+    }
+    .general-layer{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      gap:7px;
+      min-height:116px;
+      padding:12px 9px;
+      text-align:center;
+      border:1px solid var(--line);
+      border-radius:15px;
+      background:rgba(24,13,13,.70);
+      color:inherit;
+      text-decoration:none;
+      transition:.18s ease;
+    }
+    .general-layer:hover,.general-layer:focus-visible{
+      transform:translateY(-1px);
+      border-color:var(--lineStrong);
+      background:rgba(36,16,16,.84);
+      outline:none;
+    }
+    .general-layer img{
+      width:62px;
+      height:62px;
+      object-fit:contain;
+    }
+    .general-layer-name{
+      color:var(--accent2);
+      font-size:.76rem;
+      line-height:1.25;
+      font-weight:800;
+    }
+    .general-barcode{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      text-decoration:none;
+      color:inherit;
+    }
+    .general-barcode-code{
+      color:var(--text);
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      font-size:1rem;
+      letter-spacing:.05em;
+      font-weight:800;
+    }
+    .general-cta{
+      color:var(--accent);
+      font-size:.82rem;
+      font-weight:800;
+      margin-top:3px;
+    }
+    .general-chevron{color:var(--accent);font-size:1.25rem}
+    .nutrition-preview-row{
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      padding:5px 0;
+      color:var(--muted);
+      font-size:.84rem;
+      line-height:1.4;
+    }
+    .nutrition-preview-row + .nutrition-preview-row{
+      border-top:1px solid rgba(190,122,72,.10);
+    }
+    .nutrition-preview-row strong{
+      color:var(--text);
+      font-weight:700;
+      white-space:nowrap;
+    }
+    .general-nutrition-link{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-top:11px;
+      color:var(--accent);
+      font-size:.84rem;
+      font-weight:800;
+      text-decoration:none;
+    }
+    .general-empty-note{
+      color:var(--muted);
+      font-size:.88rem;
+      line-height:1.5;
+      text-align:center;
+    }
+    @media(max-width:620px){
+      .general-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+      .general-layer{min-height:104px;padding:10px 6px}
+      .general-layer img{width:52px;height:52px}
+      .general-layer-name{font-size:.7rem}
+    }
+
     [hidden]{display:none!important}
 
     @media(max-width:680px){
@@ -832,6 +966,12 @@
         </div>
       </div>
 
+      <!-- GENERAL RESULT: same cumulative session as the app -->
+      <section class="general-result" id="general-result" hidden aria-live="polite">
+        <div class="section-kicker" id="general_result_title">RESULT</div>
+        <div id="general-result-content"></div>
+      </section>
+
     </section>
 
     <!-- HOW IT WORKS: three small cards side-by-side -->
@@ -958,6 +1098,8 @@
   var fileName = document.getElementById("file-name");
   var inputLabel = document.getElementById("input_label");
   var homeLink = document.getElementById("try-home-link");
+  var generalResult = document.getElementById("general-result");
+  var generalContent = document.getElementById("general-result-content");
 
   var selectedFile = null;
   var currentMode = "ingredients";
@@ -997,6 +1139,11 @@
     try {
       sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
     } catch (_) {}
+    renderGeneralResult();
+  }
+
+  function hasAnySessionInput() {
+    return !!(session.ingredients || session.nutrition || session.barcode);
   }
 
   function status(id, fallback, isError) {
@@ -1089,16 +1236,19 @@
 
   var DECISION_ICONS = {halal:"Halal.png",haram:"Haram.png",doubt:"muslim.png"};
 
-  function sectionTitle(id, fallback) {
+  function generalBlock(title) {
+    var section = document.createElement("section");
+    section.className = "general-result-block";
     var h = document.createElement("h2");
-    h.className = "try-result-section-title";
-    h.textContent = t(id, fallback);
-    return h;
+    h.className = "general-result-title";
+    h.textContent = title;
+    section.appendChild(h);
+    return section;
   }
 
-  function tile(opts) {
+  function generalLayer(opts) {
     var a = document.createElement("a");
-    a.className = "try-tile" + (opts.extraClass ? " " + opts.extraClass : "");
+    a.className = "general-layer";
     a.href = opts.href;
 
     var img = document.createElement("img");
@@ -1107,172 +1257,187 @@
     img.onerror = function () { this.src = "/botia_jar_512.png"; };
     a.appendChild(img);
 
-    var text = document.createElement("div");
     var name = document.createElement("div");
-    name.className = "try-tile-name";
+    name.className = "general-layer-name";
     name.textContent = opts.name;
-    text.appendChild(name);
+    a.appendChild(name);
 
-    if (opts.items) {
-      var items = document.createElement("div");
-      items.className = "try-tile-items";
-      items.textContent = opts.items;
-      text.appendChild(items);
-    }
-
-    a.appendChild(text);
     return a;
   }
 
-  function renderIngredients(data, lang) {
-    results.innerHTML = "";
-    if (!data) return;
-
-    var q = "?lang=" + encodeURIComponent(lang);
-
-    if (data.product_name && data.product_name !== "Unknown") {
-      var product = document.createElement("section");
-      product.className = "try-result-block";
-      product.appendChild(sectionTitle("res_product", "Product"));
-      var pn = document.createElement("div");
-      pn.className = "try-product-name";
-      pn.textContent = data.product_name;
-      product.appendChild(pn);
-      results.appendChild(product);
-    }
-
-    if (data.ingredients_read) {
-      var ingredients = document.createElement("section");
-      ingredients.className = "try-result-block";
-      ingredients.appendChild(sectionTitle("res_read", "Ingredients read"));
-      var rl = document.createElement("div");
-      rl.className = "try-read-list";
-      rl.textContent = data.ingredients_read;
-      ingredients.appendChild(rl);
-      results.appendChild(ingredients);
-    }
-
+  function buildLayerSets(data) {
     var byLayer = {};
-    (data.triggers || []).forEach(function (tr) {
+    (data && data.triggers || []).forEach(function (tr) {
       (tr.layers || []).forEach(function (layer) {
         if (layer === "muslim") return;
         if (!byLayer[layer]) byLayer[layer] = [];
         byLayer[layer].push(tr);
       });
     });
+    return byLayer;
+  }
 
-    var choicesGrid = document.createElement("div");
-    choicesGrid.className = "try-result-grid";
-    var choiceCount = 0;
+  function renderGeneralResult() {
+    generalContent.innerHTML = "";
+    generalResult.hidden = !hasAnySessionInput();
+    if (generalResult.hidden) return;
 
-    if (data.decision) {
+    var lang = currentLang();
+    var data = session.ingredients;
+    var q = "?lang=" + encodeURIComponent(lang);
+    var byLayer = buildLayerSets(data);
+
+    // 1 · PRODUCT
+    if (data && data.product_name && data.product_name !== "Unknown") {
+      var productBlock = generalBlock(t("res_product", "Product"));
+      var productCard = document.createElement("div");
+      productCard.className = "general-card general-product";
+      productCard.textContent = data.product_name;
+      productBlock.appendChild(productCard);
+      generalContent.appendChild(productBlock);
+    }
+
+    // 2 · INGREDIENTS
+    if (data && data.ingredients_read) {
+      var ingredientsBlock = generalBlock(t("res_read", "Ingredients read"));
+      var ingredientsCard = document.createElement("div");
+      ingredientsCard.className = "general-card general-ingredients";
+      ingredientsCard.textContent = data.ingredients_read;
+      ingredientsBlock.appendChild(ingredientsCard);
+      generalContent.appendChild(ingredientsBlock);
+    }
+
+    // 3 · CHOICES (Muslim + Animal + Woman)
+    var choiceItems = [];
+    if (data && data.decision) {
       var dec = data.decision;
       var decHref = (DECISION_ROUTES[dec] || DECISION_ROUTES.doubt) + q;
       if (data.muslim_trigger) decHref += "&trigger=" + encodeURIComponent(data.muslim_trigger);
-
-      choicesGrid.appendChild(tile({
+      choiceItems.push({
         href:decHref,
         icon:DECISION_ICONS[dec] || "muslim.png",
-        name:t("dec_" + dec, dec.toUpperCase()),
-        items:data.muslim_trigger || "",
-        extraClass:"decision-" + dec
-      }));
-      choiceCount++;
+        name:t("dec_" + dec, dec.toUpperCase())
+      });
     }
 
     if (byLayer.animal && byLayer.animal.length) {
-      var animals = byLayer.animal;
-      choicesGrid.appendChild(tile({
-        href:LAYER_ROUTES.animal + q + "&trigger=" + encodeURIComponent(animals.map(function(i){return i.slug;}).join(",")),
+      choiceItems.push({
+        href:LAYER_ROUTES.animal + q + "&trigger=" + encodeURIComponent(byLayer.animal.map(function(i){return i.slug;}).join(",")),
         icon:LAYER_ICONS.animal,
-        name:(LAYER_LABELS[lang] || LAYER_LABELS.en).animal,
-        items:animals.map(function(i){return i.name || i.slug;}).join(" · ")
-      }));
-      choiceCount++;
+        name:(LAYER_LABELS[lang] || LAYER_LABELS.en).animal
+      });
     }
 
-    if (data.woman === "general" && data.woman_trigger) {
-      choicesGrid.appendChild(tile({
+    if (data && data.woman === "general" && data.woman_trigger) {
+      choiceItems.push({
         href:"/ingredients/woman_cards.html" + q + "&trigger=" + encodeURIComponent(data.woman_trigger),
         icon:LAYER_ICONS.woman,
         name:(LAYER_LABELS[lang] || LAYER_LABELS.en).woman
-      }));
-      choiceCount++;
+      });
     }
 
-    if (choiceCount) {
-      var choices = document.createElement("section");
-      choices.className = "try-result-block";
-      choices.appendChild(sectionTitle("res_choices", "Choices"));
-      choices.appendChild(choicesGrid);
-      results.appendChild(choices);
+    if (choiceItems.length) {
+      var choicesBlock = generalBlock(t("res_choices", "Choices"));
+      var choicesGrid = document.createElement("div");
+      choicesGrid.className = "general-grid";
+      choiceItems.forEach(function (item) { choicesGrid.appendChild(generalLayer(item)); });
+      choicesBlock.appendChild(choicesGrid);
+      generalContent.appendChild(choicesBlock);
     }
 
-    var evidenceGrid = document.createElement("div");
-    evidenceGrid.className = "try-result-grid";
-    var evidenceCount = 0;
-
+    // 4 · EVIDENCE
+    var evidenceItems = [];
     ["sugar","sweetener","texture","flavour","enumbers"].forEach(function (layer) {
       var items = byLayer[layer];
       if (!items || !items.length) return;
-
-      evidenceGrid.appendChild(tile({
+      evidenceItems.push({
         href:LAYER_ROUTES[layer] + q + "&trigger=" + encodeURIComponent(items.map(function(i){return i.slug;}).join(",")),
         icon:LAYER_ICONS[layer],
-        name:(LAYER_LABELS[lang] || LAYER_LABELS.en)[layer] || layer,
-        items:items.map(function(i){return i.name || i.slug;}).join(" · ")
-      }));
-      evidenceCount++;
+        name:(LAYER_LABELS[lang] || LAYER_LABELS.en)[layer] || layer
+      });
     });
 
-    if (evidenceCount) {
-      var evidence = document.createElement("section");
-      evidence.className = "try-result-block";
-      evidence.appendChild(sectionTitle("res_evidence", "Evidence"));
-      evidence.appendChild(evidenceGrid);
-      results.appendChild(evidence);
+    if (evidenceItems.length) {
+      var evidenceBlock = generalBlock(t("res_evidence", "Evidence"));
+      var evidenceGrid = document.createElement("div");
+      evidenceGrid.className = "general-grid";
+      evidenceItems.forEach(function (item) { evidenceGrid.appendChild(generalLayer(item)); });
+      evidenceBlock.appendChild(evidenceGrid);
+      generalContent.appendChild(evidenceBlock);
+    } else if (data && !data.decision && (!data.triggers || !data.triggers.length)) {
+      var emptyBlock = generalBlock(t("res_evidence", "Evidence"));
+      var note = document.createElement("div");
+      note.className = "general-card general-empty-note";
+      note.textContent = t("res_none", "BOTIA found nothing it flags in this list.");
+      emptyBlock.appendChild(note);
+      generalContent.appendChild(emptyBlock);
     }
 
-    if (!data.decision && (!data.triggers || !data.triggers.length)) {
-      var none = document.createElement("p");
-      none.className = "try-status";
-      none.textContent = t("res_none", "BOTIA found nothing it flags in this list.");
-      results.appendChild(none);
+    // 5 · BARCODE / GTIN
+    if (session.barcode) {
+      var barcodeBlock = generalBlock(t("mode_barcode", "Barcode / GTIN"));
+      var barcodeCard = document.createElement("a");
+      barcodeCard.className = "general-card general-barcode";
+      barcodeCard.href = traceabilityUrl(session.barcode);
+
+      var barcodeText = document.createElement("div");
+      var code = document.createElement("div");
+      code.className = "general-barcode-code";
+      code.textContent = session.barcode.gtin;
+      barcodeText.appendChild(code);
+      var cta = document.createElement("div");
+      cta.className = "general-cta";
+      cta.textContent = t("open_traceability", "Open traceability");
+      barcodeText.appendChild(cta);
+      barcodeCard.appendChild(barcodeText);
+
+      var chevron = document.createElement("div");
+      chevron.className = "general-chevron";
+      chevron.textContent = "›";
+      barcodeCard.appendChild(chevron);
+      barcodeBlock.appendChild(barcodeCard);
+      generalContent.appendChild(barcodeBlock);
     }
-  }
 
-  function renderSavedNutrition() {
-    results.innerHTML = "";
-    if (!session.nutrition) return;
+    // 6 · NUTRITIONAL FACTS
+    if (session.nutrition) {
+      var payload = nutritionPayload(session.nutrition);
+      var declared = Array.isArray(payload.declared) ? payload.declared : [];
 
-    var payload = nutritionPayload(session.nutrition);
-    var declaredCount = Array.isArray(payload.declared) ? payload.declared.length : 0;
-    var refsCount = Array.isArray(payload.references) ? payload.references.length : 0;
+      var nutritionBlock = generalBlock(t("mode_nutrition", "Nutritional facts"));
+      var nutritionCard = document.createElement("div");
+      nutritionCard.className = "general-card";
 
-    var card = document.createElement("div");
-    card.className = "nutrition-summary";
+      declared.slice(0, 4).forEach(function (row) {
+        var r = document.createElement("div");
+        r.className = "nutrition-preview-row";
 
-    var strong = document.createElement("strong");
-    strong.textContent = t("analysis_saved", "Saved in this session");
-    card.appendChild(strong);
+        var label = document.createElement("span");
+        label.textContent = row.label || row.key || "";
+        r.appendChild(label);
 
-    var meta = document.createElement("div");
-    meta.textContent = declaredCount + " · " + refsCount;
-    meta.style.marginTop = "5px";
-    card.appendChild(meta);
+        var value = document.createElement("strong");
+        var amount = row.value == null ? "" : String(row.value);
+        var unit = row.unit == null ? "" : String(row.unit);
+        value.textContent = (amount + (unit ? " " + unit : "")).trim();
+        r.appendChild(value);
 
-    var link = document.createElement("a");
-    link.className = "session-action";
-    link.href = nutritionResultUrl(session.nutrition);
-    link.textContent = t("view_nutrition", "View nutritional result");
-    card.appendChild(link);
+        nutritionCard.appendChild(r);
+      });
 
-    results.appendChild(card);
+      var nutritionLink = document.createElement("a");
+      nutritionLink.className = "general-nutrition-link";
+      nutritionLink.href = nutritionResultUrl(session.nutrition);
+      nutritionLink.innerHTML = "<span>" + t("view_nutrition", "View nutritional result") + "</span><span>›</span>";
+      nutritionCard.appendChild(nutritionLink);
+
+      nutritionBlock.appendChild(nutritionCard);
+      generalContent.appendChild(nutritionBlock);
+    }
   }
 
   function renderBarcodePanel() {
     var barcode = session.barcode;
-
     if (barcode) {
       barcodeResult.innerHTML =
         "<div><span>" + t("barcode_current", "Barcode captured") + "</span>" +
@@ -1288,44 +1453,35 @@
     }
   }
 
-  function selectModeCard(mode) {
+  function renderModeStatus() {
+    // No extra UI. Just keep the selected mode visually marked.
     modeGrid.querySelectorAll("[data-mode]").forEach(function (card) {
-      card.classList.toggle("is-selected", card.dataset.mode === mode);
+      card.classList.toggle("is-selected", card.dataset.mode === currentMode);
     });
   }
 
   function configureMode(mode) {
     currentMode = mode;
     resetFile();
-    selectModeCard(mode);
+    renderModeStatus();
 
     if (mode === "ingredients") {
       photoPanel.hidden = false;
       barcodePanel.hidden = true;
-
       captureModeTitle.textContent = t("selected_ingredients", "Ingredients");
       inputLabel.textContent = t("input_label_ingredients", "Photo of the ingredient list");
       dzMain.textContent = t("dz_main_ingredients", "Drop a photo of the ingredient list here, paste it, or tap to choose one");
       dzSub.textContent = t("dz_sub_ingredients", "A clear photo of the ingredient list. JPG or PNG.");
-
-      if (session.ingredients) {
-        renderIngredients(session.ingredients, currentLang());
-      }
       return;
     }
 
     if (mode === "nutrition") {
       photoPanel.hidden = false;
       barcodePanel.hidden = true;
-
       captureModeTitle.textContent = t("selected_nutrition", "Nutritional facts");
       inputLabel.textContent = t("input_label_nutrition", "Photo of the nutrition table");
       dzMain.textContent = t("dz_main_nutrition", "Drop a photo of the nutrition table here, paste it, or tap to choose one");
       dzSub.textContent = t("dz_sub_nutrition", "A clear photo of the nutrition table. JPG, PNG, WEBP, HEIC or HEIF.");
-
-      if (session.nutrition) {
-        renderSavedNutrition();
-      }
       return;
     }
 
@@ -1338,18 +1494,12 @@
   }
 
   async function openBarcodeCapture() {
-    /*
-      Keep the original access gate.
-      Even though this section is only visible after auth, we check again here
-      exactly like the photo analyses do.
-    */
     if (!window.BOTIA_WEB_AUTH) return;
 
     var access = await window.BOTIA_WEB_AUTH.ensureAccess();
     if (!access || access.allowed !== true || !access.uid) return;
 
     var lang = currentLang();
-
     var returnUrl = new URL("/try.html", location.origin);
     returnUrl.searchParams.set("lang", lang);
     returnUrl.searchParams.set("mode", "barcode");
@@ -1358,14 +1508,12 @@
     target.searchParams.set("lang", lang);
     target.searchParams.set("source", "try");
     target.searchParams.set("return", returnUrl.pathname + returnUrl.search);
-
     location.href = target.toString();
   }
 
   function captureBarcodeReturn() {
     var params = new URLSearchParams(location.search);
     var gtin = params.get("gtin");
-
     if (!gtin) return false;
 
     session.barcode = {
@@ -1380,26 +1528,22 @@
       params.delete(key);
     });
     params.set("mode", "barcode");
-
     history.replaceState(null, "", location.pathname + "?" + params.toString());
     return true;
   }
 
   function setFile(file) {
     if (!file) return;
-
     if (!file.type || file.type.indexOf("image/") !== 0) {
       status("msg_not_image", "That file is not an image.", true);
       return;
     }
-
     if (file.size > MAX_BYTES) {
       status("msg_too_big", "That image is too large. Try one under 6 MB.", true);
       return;
     }
 
     selectedFile = file;
-
     var reader = new FileReader();
     reader.onload = function (e) {
       preview.src = e.target.result;
@@ -1422,10 +1566,7 @@
 
     btn.disabled = true;
 
-    /*
-      ORIGINAL ACCESS RULE PRESERVED:
-      every analysis must pass BOTIA_WEB_AUTH.ensureAccess().
-    */
+    // Preserve the ORIGINAL web access check for every photo analysis.
     if (!window.BOTIA_WEB_AUTH) {
       btn.disabled = false;
       status("msg_error", "Something went wrong. Try again in a moment.", true);
@@ -1433,7 +1574,6 @@
     }
 
     var access = await window.BOTIA_WEB_AUTH.ensureAccess();
-
     if (!access || access.allowed !== true || !access.uid) {
       btn.disabled = false;
       return;
@@ -1441,16 +1581,12 @@
 
     var lang = currentLang();
     var form = new FormData();
-
     form.append("file", selectedFile);
     form.append("lang", lang);
     form.append("ClientID", access.uid);
     form.append("uid", access.uid);
 
-    var endpoint = currentMode === "nutrition"
-      ? NUTRITION_ENDPOINT
-      : INGREDIENT_ENDPOINT;
-
+    var endpoint = currentMode === "nutrition" ? NUTRITION_ENDPOINT : INGREDIENT_ENDPOINT;
     status(
       currentMode === "nutrition" ? "nutrition_reading" : "msg_reading",
       currentMode === "nutrition" ? "Reading nutritional facts…" : "Reading the label…",
@@ -1460,10 +1596,7 @@
     try {
       var response = await fetch(endpoint, {method:"POST", body:form});
       var body = {};
-
-      try {
-        body = await response.json();
-      } catch (_) {}
+      try { body = await response.json(); } catch (_) {}
 
       btn.disabled = false;
 
@@ -1478,13 +1611,12 @@
 
       if (currentMode === "nutrition") {
         session.nutrition = body;
-        saveSession();
-        renderSavedNutrition();
       } else {
         session.ingredients = body;
-        saveSession();
-        renderIngredients(body, lang);
       }
+
+      saveSession();
+      status("analysis_saved", "Saved in this session", false);
     } catch (_) {
       btn.disabled = false;
       status("msg_error", "Something went wrong. Try again in a moment.", true);
@@ -1499,17 +1631,13 @@
 
   barcodeScanBtn.addEventListener("click", openBarcodeCapture);
 
-  dropzone.addEventListener("click", function () {
-    fileIn.click();
-  });
-
+  dropzone.addEventListener("click", function () { fileIn.click(); });
   dropzone.addEventListener("keydown", function (event) {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
       fileIn.click();
     }
   });
-
   fileIn.addEventListener("change", function () {
     setFile(fileIn.files && fileIn.files[0]);
   });
@@ -1538,10 +1666,8 @@
 
   document.addEventListener("paste", function (event) {
     if (currentMode === "barcode" || !event.clipboardData || !event.clipboardData.items) return;
-
     for (var i = 0; i < event.clipboardData.items.length; i++) {
       var item = event.clipboardData.items[i];
-
       if (item.type.indexOf("image") === 0) {
         setFile(item.getAsFile());
         event.preventDefault();
@@ -1558,22 +1684,23 @@
   }
 
   captureBarcodeReturn();
+  renderGeneralResult();
 
   var requestedMode = new URLSearchParams(location.search).get("mode");
-
   if (requestedMode && ["ingredients","nutrition","barcode"].includes(requestedMode)) {
     configureMode(requestedMode);
   } else {
     configureMode("ingredients");
   }
 
-  
+  // i18n-loader runs deferred; re-render text once translated labels are present.
   window.setTimeout(function () {
     configureMode(currentMode);
-  }, 180);
+    renderGeneralResult();
+  }, 220);
 })();
   </script>  </script>
-  <script src="/botia/assets/js/try-auth.js?v=20260917-6"></script>
+  <script src="/botia/assets/js/try-auth.js?v=20260917-7"></script>
   <script src="/botia/assets/js/i18n-loader.js" defer></script>
   <script src="/botia/assets/js/footer.js"></script>
   <script src="/botia/assets/js/botia-chat.js"></script>
