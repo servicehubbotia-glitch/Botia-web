@@ -34,8 +34,7 @@
   <script src="/botia/assets/js/menu.js"></script>
 
   <style>
-    :root{
-      --bg:#100707;
+    :root{--bg:#100707;
       --bg2:#080505;
       --panel:#180d0d;
       --panel2:#241010;
@@ -46,599 +45,137 @@
       --accent2:#ffd8bd;
       --line:rgba(190,122,72,.28);
       --lineStrong:rgba(230,160,107,.52);
-      --shadow:0 18px 60px rgba(0,0,0,.34);
-    }
-
+      --shadow:0 18px 60px rgba(0,0,0,.34);}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{
-      margin:0;
+    body{margin:0;
       color:var(--text);
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
       background:
         radial-gradient(circle at 52% -10%,rgba(116,31,25,.19),transparent 34rem),
         linear-gradient(180deg,#100707,#0a0505 46%,#080505);
-      min-height:100vh;
-    }
-
+      min-height:100vh;}
     .try-wrap{width:min(920px,calc(100% - 34px));margin:0 auto}
-    .try-topbar{
-      position:sticky;top:0;z-index:1000;
+    .try-topbar{position:sticky;top:0;z-index:1000;
       background:rgba(12,7,7,.90);
       -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
-      border-bottom:1px solid rgba(190,122,72,.15);
-    }
+      border-bottom:1px solid rgba(190,122,72,.15);}
     .try-topbar-inner{min-height:64px;display:flex;align-items:center;gap:16px}
     #menuBtn{position:static;flex:0 0 42px}
-    .try-wordmark{
-      color:var(--accent);
+    .try-wordmark{color:var(--accent);
       font-size:16px;
       font-weight:900;
       letter-spacing:.14em;
-      text-decoration:none;
-    }
+      text-decoration:none;}
     .try-spacer{flex:1}
-    .try-lang-pill{
-      display:flex;align-items:center;padding:4px 9px 4px 11px;
+    .try-lang-pill{display:flex;align-items:center;padding:4px 9px 4px 11px;
       border:1px solid rgba(190,122,72,.36);border-radius:999px;
-      background:rgba(24,13,13,.90);
-    }
+      background:rgba(24,13,13,.90);}
     .try-lang-pill select{color:var(--text);background:transparent;border:0;outline:0;padding:5px 2px;cursor:pointer}
     .try-lang-pill option{background:#180d0d;color:#f2e4dc}
-
-    .app-hero{padding:42px 0 24px}
-    .app-brandline{
-      color:var(--accent);
+    .app-brandline{color:var(--accent);
       font-size:1.55rem;
       font-weight:900;
       letter-spacing:.18em;
-      margin-bottom:10px;
-    }
+      margin-bottom:10px;}
     .app-claim{margin:0 0 3px;font-size:1rem;line-height:1.55;font-weight:800}
     .app-claim.alt{margin-bottom:20px}
-
-    .evidence-card{
-      border:1px solid rgba(190,122,72,.36);
-      border-radius:18px;
-      background:linear-gradient(145deg,rgba(36,16,16,.92),rgba(24,13,13,.82));
-      padding:18px 18px 16px;
-      box-shadow:var(--shadow);
-      margin-bottom:26px;
-    }
-    .evidence-card h2{margin:0 0 8px;font-size:1rem;color:var(--text)}
-    .evidence-card p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.55}
-    .evidence-link{display:inline-flex;gap:8px;align-items:center;margin-top:12px;color:var(--accent);text-decoration:none;font-weight:800;font-size:.83rem}
-
-    .camera-stage{text-align:center;padding:8px 0 16px}
-    .camera-stage img{
-      width:min(300px,72vw);height:auto;display:block;margin:0 auto 8px;
-      filter:drop-shadow(0 22px 30px rgba(0,0,0,.36));
-    }
-    .camera-stage h1{font-size:1.55rem;line-height:1.15;margin:0 auto 12px;max-width:530px}
-    .camera-stage p{max-width:650px;margin:0 auto;color:var(--muted);line-height:1.65;font-size:.98rem}
-    .primary-cta{
-      display:inline-flex;align-items:center;justify-content:center;
-      margin-top:20px;min-height:48px;padding:0 24px;border-radius:999px;
-      background:var(--accent);color:#100707;text-decoration:none;font-weight:900;
-      border:1px solid rgba(230,160,107,.70);
-      box-shadow:0 10px 28px rgba(116,48,18,.18);
-    }
-
-    .how{padding:28px 0 16px}
-    .section-kicker{
-      color:var(--accent);font-size:.72rem;font-weight:900;letter-spacing:.18em;
-      text-transform:uppercase;margin-bottom:14px;
-    }
-    .how-list{display:grid;gap:10px}
-    .how-row{
-      display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start;
-      padding:12px 0;
-    }
-    .how-icon{
-      width:38px;height:38px;border-radius:8px;
+    .section-kicker{color:var(--accent);font-size:.72rem;font-weight:900;letter-spacing:.18em;
+      text-transform:uppercase;margin-bottom:14px;}
+    .how-icon{width:38px;height:38px;border-radius:8px;
       display:grid;place-items:center;
       border:1px solid rgba(190,122,72,.34);
       background:rgba(190,122,72,.10);
-      color:var(--accent);font-size:1rem;font-weight:900;
-    }
-    .how-row h3{margin:0 0 4px;font-size:1rem}
-    .how-row p{margin:0;color:var(--soft);font-size:.84rem;line-height:1.5}
-
-    .stores{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:28px 0}
-    .store-card{
-      border:1px solid var(--line);border-radius:18px;
-      background:rgba(24,13,13,.76);padding:18px;
-    }
-    .store-card h3{margin:0 0 6px;color:var(--accent2);font-size:1rem}
-    .store-card p{margin:0;color:var(--muted);line-height:1.5;font-size:.86rem}
-    .store-card a{
-      display:inline-flex;margin-top:14px;min-height:42px;align-items:center;
-      padding:0 16px;border-radius:999px;border:1px solid var(--lineStrong);
-      color:var(--accent2);text-decoration:none;font-weight:800;background:rgba(190,122,72,.08);
-    }
-    .store-card.coming{
-      position:relative;overflow:hidden;
-      background:linear-gradient(145deg,rgba(24,13,13,.78),rgba(36,16,16,.52));
-    }
-    .coming-badge{
-      display:inline-flex;margin-top:14px;padding:7px 12px;border-radius:999px;
+      color:var(--accent);font-size:1rem;font-weight:900;}
+    .coming-badge{display:inline-flex;margin-top:14px;padding:7px 12px;border-radius:999px;
       border:1px solid rgba(190,122,72,.30);color:var(--accent);font-size:.8rem;font-weight:900;
-      letter-spacing:.05em;text-transform:uppercase;
-    }
-
-    .web-try-intro{padding:16px 0 14px}
-    .web-try-intro h2{margin:0 0 8px;font-size:1.4rem}
-    .web-try-intro p{margin:0;color:var(--muted);line-height:1.6}
-
-    .try-workspace{padding:10px 0 34px}
-    .try-panel,.try-auth-panel{
-      border:1px solid var(--line);border-radius:20px;
+      letter-spacing:.05em;text-transform:uppercase;}
+    .try-panel,.try-auth-panel{border:1px solid var(--line);border-radius:20px;
       background:linear-gradient(180deg,rgba(24,13,13,.96),rgba(14,8,8,.95));
-      box-shadow:var(--shadow);padding:22px;
-    }
+      box-shadow:var(--shadow);padding:22px;}
     .try-auth-panel{text-align:center;margin-bottom:18px}
     .try-auth-title{color:var(--accent2);font-size:1.05rem;font-weight:800;margin-bottom:8px}
     .try-auth-copy{color:var(--muted);font-size:.9rem;margin-bottom:16px;line-height:1.55}
     .try-google-button{display:flex;justify-content:center}
     .try-auth-status{font-size:.86rem;color:var(--muted);margin-top:12px;min-height:1.3em}
     .try-auth-status.is-error{color:#d97070}
-
-    .try-label{
-      display:block;color:var(--accent);font-size:.76rem;font-weight:900;
-      letter-spacing:.13em;text-transform:uppercase;margin-bottom:12px;
-    }
-    #dropzone{
-      min-height:240px;display:flex;align-items:center;justify-content:center;text-align:center;
+    .try-label{display:block;color:var(--accent);font-size:.76rem;font-weight:900;
+      letter-spacing:.13em;text-transform:uppercase;margin-bottom:12px;}
+    #dropzone{min-height:240px;display:flex;align-items:center;justify-content:center;text-align:center;
       border:1px dashed var(--lineStrong);border-radius:18px;background:rgba(255,255,255,.025);
-      padding:26px;cursor:pointer;outline:none;transition:.18s ease;
-    }
-    #dropzone:hover,#dropzone:focus-visible,#dropzone.dragover{
-      border-color:var(--accent);background:rgba(190,122,72,.08)
-    }
+      padding:26px;cursor:pointer;outline:none;transition:.18s ease;}
+    #dropzone:hover,#dropzone:focus-visible,#dropzone.dragover{border-color:var(--accent);background:rgba(190,122,72,.08)}
     #dropzone.has-image{padding:10px;border-style:solid}
     .dz-icon img{width:138px;height:138px;max-width:54vw;object-fit:contain;margin:0 auto 10px;display:block}
     .dz-main{color:var(--accent2);font-size:1rem;font-weight:700;margin-bottom:6px}
     .dz-sub{color:var(--soft);font-size:.84rem;line-height:1.5}
     #dz-preview{display:block;max-width:100%;max-height:430px;border-radius:14px;object-fit:contain}
-
-    .try-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px}
-    .btn-analyse,.btn-clear{
-      min-height:44px;border-radius:999px;padding:0 20px;font:inherit;font-weight:800;cursor:pointer
-    }
+    .btn-analyse,.btn-clear{min-height:44px;border-radius:999px;padding:0 20px;font:inherit;font-weight:800;cursor:pointer}
     .btn-analyse{border:1px solid rgba(230,160,107,.58);background:var(--accent);color:#100707}
     .btn-analyse:disabled{opacity:.48;cursor:default}
     .btn-clear{border:1px solid rgba(190,122,72,.40);background:transparent;color:var(--muted)}
-    .file-name{margin-left:auto;color:var(--soft);font-size:.8rem;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-
-    #results{margin-top:26px}
-    .try-result-block{margin:0 0 26px}
-    .try-result-section-title{
-      margin:0 0 12px;color:var(--accent);font-size:.76rem;font-weight:900;
-      letter-spacing:.13em;text-transform:uppercase;
-    }
-    .try-product-name,.try-read-list{
-      border:1px solid var(--line);border-radius:16px;background:rgba(24,13,13,.78);padding:16px 18px
-    }
-    .try-product-name{color:var(--accent2);font-size:1.1rem;font-weight:800}
-    .try-read-list{color:var(--muted);line-height:1.7;font-size:.93rem}
-    .try-result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .try-tile{
-      display:flex;align-items:center;gap:14px;min-height:108px;padding:15px;
-      border:1px solid var(--line);border-radius:17px;background:rgba(24,13,13,.86);
-      text-decoration:none;color:inherit;transition:.18s ease;
-    }
-    .try-tile:hover,.try-tile:focus-visible{
-      transform:translateY(-2px);border-color:rgba(230,160,107,.62);background:rgba(36,16,16,.92);outline:none
-    }
-    .try-tile img{width:68px;height:68px;object-fit:contain;flex:0 0 68px}
-    .try-tile-name{color:var(--accent2);font-size:1rem;font-weight:800;margin-bottom:5px}
-    .try-tile-items{color:var(--soft);font-size:.8rem;line-height:1.45}
-    .decision-halal{border-color:rgba(123,191,123,.42)}
-    .decision-haram{border-color:rgba(217,112,112,.46)}
-    .decision-doubt{border-color:rgba(230,160,107,.55)}
-    .decision-halal .try-tile-name{color:#7bbf7b}
-    .decision-haram .try-tile-name{color:#d97070}
-    .decision-doubt .try-tile-name{color:var(--accent)}
-
-    .try-status{
-      margin:18px 0 0;padding:16px 18px;border:1px solid var(--line);border-radius:16px;
-      background:rgba(24,13,13,.76);color:var(--muted);line-height:1.55
-    }
-    .try-status-error{color:#d97070;border-color:rgba(217,112,112,.35)}
-
-    .principles{
-      text-align:center;padding:26px 0 12px;color:var(--soft);
-      font-size:.78rem;line-height:1.6;
-    }
+    .principles{text-align:center;padding:26px 0 12px;color:var(--soft);
+      font-size:.78rem;line-height:1.6;}
     .principles p{margin:6px auto;max-width:660px}
     .funding{margin-bottom:12px!important;color:var(--muted)!important}
-
     .try-closing{text-align:center;padding:18px 0 48px}
-    .try-back-link{
-      color:var(--accent2);text-decoration:none;border-bottom:1px solid rgba(230,160,107,.38);
-      padding-bottom:2px;font-weight:700
-    }
-
-
-    .mode-section{padding:34px 0 18px}
-    .mode-sub{margin:-4px 0 16px;color:var(--muted);line-height:1.55}
-    .mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-    .mode-card{
-      appearance:none;width:100%;text-align:left;color:inherit;font:inherit;cursor:pointer;
-      border:1px solid var(--line);border-radius:18px;background:rgba(24,13,13,.78);
-      padding:18px;display:flex;gap:13px;align-items:flex-start;transition:.18s ease
-    }
-    .mode-card:hover,.mode-card:focus-visible{
-      transform:translateY(-2px);border-color:var(--lineStrong);background:rgba(36,16,16,.90);outline:none
-    }
-    .mode-symbol{
-      width:42px;height:42px;display:grid;place-items:center;flex:0 0 42px;
-      border:1px solid rgba(190,122,72,.36);border-radius:10px;background:rgba(190,122,72,.10);
-      color:var(--accent);font-size:1.15rem;font-weight:900
-    }
-    .barcode-symbol{font-size:.72rem;letter-spacing:-.08em}
-    .mode-card h2{margin:0 0 6px;color:var(--accent2);font-size:1rem}
-    .mode-card p{margin:0;color:var(--soft);font-size:.82rem;line-height:1.48}
-    .capture-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:10px}
-    .capture-heading .section-kicker{margin:0}
-    .change-mode{
-      appearance:none;border:1px solid var(--line);border-radius:999px;background:transparent;
-      color:var(--muted);padding:8px 13px;font:inherit;font-size:.8rem;font-weight:800;cursor:pointer
-    }
-    .change-mode:hover,.change-mode:focus-visible{border-color:var(--lineStrong);color:var(--accent2);outline:none}
-    @media(max-width:720px){.mode-grid{grid-template-columns:1fr}}
-
-
-    /* === TRY V5 · APP HOME + SAME-SESSION MULTIMODE === */
-    .hero-split{
-      display:grid;grid-template-columns:minmax(260px,.9fr) minmax(0,1.1fr);
-      gap:52px;align-items:center;padding:54px 0 34px
-    }
-    .hero-icon-stage{
-      min-height:330px;display:grid;place-items:center;position:relative;overflow:hidden;
-      border:1px solid var(--line);border-radius:28px;
-      background:linear-gradient(145deg,rgba(36,16,16,.88),rgba(8,5,5,.72));
-      box-shadow:var(--shadow)
-    }
-    .hero-icon-stage:before,.hero-icon-stage:after{
-      content:"";position:absolute;width:240px;height:240px;border-radius:50%;
-      border:1px solid rgba(230,160,107,.10)
-    }
-    .hero-icon-stage:before{left:-90px;top:-90px}
-    .hero-icon-stage:after{right:-100px;bottom:-110px}
-    .hero-icon-stage img{
-      width:min(290px,78%);height:auto;position:relative;z-index:2;
-      filter:drop-shadow(0 20px 28px rgba(0,0,0,.38))
-    }
-    .hero-copy{padding:10px 0}
-    .hero-copy .app-brandline{font-size:clamp(2rem,5vw,4.2rem);margin-bottom:18px}
-    .hero-copy .app-claim{font-size:clamp(1.05rem,2vw,1.35rem);margin-bottom:7px}
-    .hero-copy .app-claim.alt{margin-bottom:0}
-
-    .mode-section{padding:22px 0 12px}
-    .mode-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:12px}
-    .mode-sub{margin:5px 0 0;color:var(--muted);font-size:.9rem;line-height:1.45}
-    .mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-    .mode-card{
-      position:relative;appearance:none;width:100%;min-height:116px;text-align:left;color:inherit;
-      font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:16px;
-      background:rgba(24,13,13,.72);padding:14px;display:grid;
-      grid-template-columns:36px 1fr;gap:11px;align-items:start;transition:.18s ease
-    }
-    .mode-card:hover,.mode-card:focus-visible{
-      transform:translateY(-1px);border-color:var(--lineStrong);
-      background:rgba(36,16,16,.86);outline:none
-    }
-    .mode-symbol{
-      width:36px;height:36px;display:grid;place-items:center;border-radius:9px;
-      border:1px solid rgba(190,122,72,.34);background:rgba(190,122,72,.09);
-      color:var(--accent);font-size:1rem;font-weight:900
-    }
-    .barcode-symbol{font-size:.64rem;letter-spacing:-.08em}
-    .mode-card h2{margin:0 0 4px;color:var(--accent2);font-size:.95rem}
-    .mode-card p{margin:0;color:var(--soft);font-size:.76rem;line-height:1.38}
-    .mode-state{
-      position:absolute;top:9px;right:9px;font-size:.62rem;font-weight:900;
-      letter-spacing:.04em;text-transform:uppercase;border-radius:999px;
-      padding:4px 7px;border:1px solid rgba(190,122,72,.22);color:var(--soft);
-      background:#120909
-    }
-    .mode-card.is-done{border-color:rgba(230,160,107,.48)}
-    .mode-card.is-done .mode-state{color:var(--accent2);border-color:rgba(230,160,107,.44)}
-
-    .session-strip{
-      display:flex;justify-content:space-between;gap:18px;align-items:center;
-      margin:14px 0 18px;padding:12px 14px;border-radius:14px;
-      border:1px solid rgba(190,122,72,.18);background:rgba(24,13,13,.45)
-    }
-    .session-title{color:var(--accent2);font-size:.82rem;font-weight:800}
-    .session-sub{color:var(--soft);font-size:.72rem;line-height:1.4;margin-top:2px}
-    .session-mini{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
-    .session-mini span{
-      border:1px solid rgba(190,122,72,.20);border-radius:999px;padding:5px 8px;
-      color:var(--soft);font-size:.66rem
-    }
-    .session-mini span.is-done{color:var(--accent2);border-color:rgba(230,160,107,.42)}
-
-    .try-workspace{padding:8px 0 28px}
-    .capture-heading{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:9px}
-    .capture-heading .section-kicker{margin:0}
-    .change-mode{
-      appearance:none;border:1px solid var(--line);border-radius:999px;background:transparent;
-      color:var(--muted);padding:7px 12px;font:inherit;font-size:.75rem;font-weight:800;cursor:pointer
-    }
+    .try-back-link{color:var(--accent2);text-decoration:none;border-bottom:1px solid rgba(230,160,107,.38);
+      padding-bottom:2px;font-weight:700}
     .try-panel{box-shadow:none}
-    .barcode-result{
-      min-height:72px;display:flex;align-items:center;padding:15px;border-radius:14px;
-      border:1px solid rgba(190,122,72,.18);background:rgba(255,255,255,.02);
-      color:var(--muted);line-height:1.5
-    }
-    .barcode-result strong{display:block;color:var(--accent2);font-size:1.15rem;letter-spacing:.05em}
-    .barcode-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-    .traceability-link{
-      min-height:44px;display:inline-flex;align-items:center;padding:0 18px;border-radius:999px;
-      border:1px solid var(--lineStrong);color:var(--accent2);text-decoration:none;font-weight:800
-    }
-    .saved-note{
-      margin-top:12px;color:var(--accent);font-size:.76rem;font-weight:800
-    }
-    .nutrition-summary{
-      border:1px solid var(--line);border-radius:16px;background:rgba(24,13,13,.74);
-      padding:16px 18px;color:var(--muted);line-height:1.5
-    }
-    .nutrition-summary strong{color:var(--accent2)}
-    .session-action{
-      display:inline-flex;align-items:center;min-height:40px;margin-top:12px;padding:0 15px;
-      border-radius:999px;border:1px solid var(--lineStrong);color:var(--accent2);
-      text-decoration:none;font-weight:800;background:rgba(190,122,72,.08)
-    }
-
-    .compact-how{padding:28px 0 12px}
-    .how-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-    .how-card{
-      min-height:132px;padding:14px;border:1px solid rgba(190,122,72,.20);
-      border-radius:15px;background:rgba(24,13,13,.52)
-    }
-    .how-card .how-icon{width:32px;height:32px;font-size:.82rem;margin-bottom:10px}
-    .how-card h3{margin:0 0 5px;font-size:.9rem}
-    .how-card p{margin:0;color:var(--soft);font-size:.74rem;line-height:1.4}
-
-    .stores-compact{padding:18px 0 22px;gap:10px}
-    .stores-compact .store-card{
-      min-height:0;padding:13px 15px;border-radius:15px;
-      display:flex;align-items:center;gap:12px;justify-content:space-between
-    }
-    .stores-compact .store-card h3{margin:0;font-size:.88rem}
-    .stores-compact .store-card p{display:none}
-    .stores-compact .store-card a{margin:0;min-height:36px;padding:0 12px;font-size:.76rem}
-    .stores-compact .coming-badge{margin:0;padding:6px 9px;font-size:.68rem}
-
-    @media(max-width:760px){
-      .hero-split{grid-template-columns:1fr;gap:22px;padding:36px 0 26px}
-      .hero-icon-stage{min-height:260px}
-      .hero-icon-stage img{width:min(250px,72vw)}
-      .hero-copy{text-align:center}
-      .mode-grid,.how-cards{grid-template-columns:1fr}
-      .mode-card{min-height:0}
-      .session-strip{align-items:flex-start;flex-direction:column}
-      .session-mini{justify-content:flex-start}
-      .stores-compact{grid-template-columns:1fr}
-      .stores-compact .store-card{flex-wrap:wrap}
-    }
-
-
-    /* === TRY V6 · ONLY THE REQUESTED CHANGES === */
-
-    .hero-exact{
-      display:grid;
+    .hero-exact{display:grid;
       grid-template-columns:minmax(270px,.9fr) minmax(0,1.1fr);
       gap:48px;
       align-items:center;
-      padding:48px 0 34px;
-    }
-    .hero-exact-icon{
-      min-height:330px;
+      padding:48px 0 34px;}
+    .hero-exact-icon{min-height:330px;
       display:grid;
       place-items:center;
       border:1px solid var(--line);
       border-radius:28px;
       background:linear-gradient(145deg,rgba(36,16,16,.88),rgba(8,5,5,.72));
       box-shadow:var(--shadow);
-      overflow:hidden;
-    }
-    .hero-exact-icon img{
-      width:min(300px,82%);
+      overflow:hidden;}
+    .hero-exact-icon img{width:min(300px,82%);
       height:auto;
       display:block;
-      filter:drop-shadow(0 20px 30px rgba(0,0,0,.38));
-    }
-    .hero-exact-copy{
-      padding:10px 0;
-    }
-    .hero-exact-copy .app-brandline{
-      font-size:clamp(2rem,5vw,4.2rem);
-      margin-bottom:18px;
-    }
-    .hero-exact-copy .app-claim{
-      font-size:clamp(1.08rem,2vw,1.36rem);
-      margin-bottom:8px;
-    }
-    .hero-exact-copy .app-claim.alt{
-      margin-bottom:0;
-    }
-
-    /* Whole analysis area is hidden/shown by the ORIGINAL try-auth.js */
-    .analysis-shell{
-      margin:8px 0 22px;
+      filter:drop-shadow(0 20px 30px rgba(0,0,0,.38));}
+    .hero-exact-copy{padding:10px 0;}
+    .hero-exact-copy .app-brandline{font-size:clamp(2rem,5vw,4.2rem);
+      margin-bottom:18px;}
+    .hero-exact-copy .app-claim{font-size:clamp(1.08rem,2vw,1.36rem);
+      margin-bottom:8px;}
+    .hero-exact-copy .app-claim.alt{margin-bottom:0;}
+    .analysis-shell{margin:8px 0 22px;
       padding:0;
       background:transparent;
       border:0;
       border-radius:0;
-      box-shadow:none;
-    }
-
-    .analysis-active{
-      margin-bottom:18px;
-    }
-    .analysis-active-head{
-      margin-bottom:9px;
-    }
-    .analysis-active-head .section-kicker{
-      margin:0;
-    }
-
-    .try-panel{
-      box-shadow:none;
-    }
-
-    .mode-exact{
-      padding:6px 0 0;
-    }
-    .mode-exact-head{
-      margin-bottom:10px;
-    }
-    .mode-exact-head .section-kicker{
-      margin-bottom:5px;
-    }
-    .mode-sub{
-      margin:0;
-      color:var(--muted);
-      font-size:.82rem;
-      line-height:1.45;
-    }
-    .mode-grid-exact{
-      display:grid;
+      box-shadow:none;}
+    .try-panel{box-shadow:none;}
+    .how-exact{padding:24px 0 12px;}
+    .how-grid-exact{display:grid;
       grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:10px;
-    }
-    .mode-card-exact{
-      appearance:none;
-      width:100%;
-      min-height:104px;
-      text-align:left;
-      color:inherit;
-      font:inherit;
-      cursor:pointer;
-      border:1px solid var(--line);
-      border-radius:15px;
-      background:rgba(24,13,13,.68);
-      padding:13px;
-      display:grid;
-      grid-template-columns:34px 1fr;
-      gap:10px;
-      align-items:start;
-      transition:.18s ease;
-    }
-    .mode-card-exact:hover,
-    .mode-card-exact:focus-visible,
-    .mode-card-exact.is-selected{
-      border-color:var(--lineStrong);
-      background:rgba(36,16,16,.86);
-      outline:none;
-    }
-    .mode-card-exact h2{
-      margin:0 0 4px;
-      color:var(--accent2);
-      font-size:.92rem;
-    }
-    .mode-card-exact p{
-      margin:0;
-      color:var(--soft);
-      font-size:.73rem;
-      line-height:1.38;
-    }
-    .mode-card-exact .mode-symbol{
-      width:34px;
-      height:34px;
-      display:grid;
-      place-items:center;
-      border-radius:9px;
-      border:1px solid rgba(190,122,72,.34);
-      background:rgba(190,122,72,.09);
-      color:var(--accent);
-      font-size:.95rem;
-      font-weight:900;
-    }
-    .mode-card-exact .barcode-symbol{
-      font-size:.61rem;
-      letter-spacing:-.08em;
-    }
-
-    .barcode-result{
-      min-height:72px;
-      display:flex;
-      align-items:center;
-      padding:15px;
-      border-radius:14px;
-      border:1px solid rgba(190,122,72,.18);
-      background:rgba(255,255,255,.02);
-      color:var(--muted);
-      line-height:1.5;
-    }
-    .barcode-result strong{
-      display:block;
-      color:var(--accent2);
-      font-size:1.15rem;
-      letter-spacing:.05em;
-    }
-    .barcode-actions{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top:12px;
-    }
-    .traceability-link{
-      min-height:44px;
-      display:inline-flex;
-      align-items:center;
-      padding:0 18px;
-      border-radius:999px;
-      border:1px solid var(--lineStrong);
-      color:var(--accent2);
-      text-decoration:none;
-      font-weight:800;
-    }
-
-    .how-exact{
-      padding:24px 0 12px;
-    }
-    .how-grid-exact{
-      display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:10px;
-    }
-    .how-card-exact{
-      min-height:124px;
+      gap:10px;}
+    .how-card-exact{min-height:124px;
       padding:13px;
       border:1px solid rgba(190,122,72,.20);
       border-radius:15px;
-      background:rgba(24,13,13,.50);
-    }
-    .how-card-exact .how-icon{
-      width:31px;
+      background:rgba(24,13,13,.50);}
+    .how-card-exact .how-icon{width:31px;
       height:31px;
       margin-bottom:9px;
-      font-size:.8rem;
-    }
-    .how-card-exact h3{
-      margin:0 0 5px;
-      font-size:.88rem;
-    }
-    .how-card-exact p{
-      margin:0;
+      font-size:.8rem;}
+    .how-card-exact h3{margin:0 0 5px;
+      font-size:.88rem;}
+    .how-card-exact p{margin:0;
       color:var(--soft);
       font-size:.72rem;
-      line-height:1.4;
-    }
-
-    .stores-exact{
-      display:grid;
+      line-height:1.4;}
+    .stores-exact{display:grid;
       grid-template-columns:1fr 1fr;
       gap:10px;
-      padding:16px 0 22px;
-    }
-    .store-card-exact{
-      min-height:0;
+      padding:16px 0 22px;}
+    .store-card-exact{min-height:0;
       padding:12px 14px;
       border:1px solid var(--line);
       border-radius:15px;
@@ -646,15 +183,11 @@
       display:flex;
       align-items:center;
       gap:12px;
-      justify-content:space-between;
-    }
-    .store-card-exact h3{
-      margin:0;
+      justify-content:space-between;}
+    .store-card-exact h3{margin:0;
       color:var(--accent2);
-      font-size:.84rem;
-    }
-    .store-card-exact a{
-      display:inline-flex;
+      font-size:.84rem;}
+    .store-card-exact a{display:inline-flex;
       align-items:center;
       min-height:34px;
       padding:0 11px;
@@ -664,56 +197,27 @@
       text-decoration:none;
       font-size:.73rem;
       font-weight:800;
-      white-space:nowrap;
-    }
-    .store-card-exact .coming-badge{
-      margin:0;
+      white-space:nowrap;}
+    .store-card-exact .coming-badge{margin:0;
       padding:6px 9px;
       font-size:.66rem;
-      white-space:nowrap;
-    }
-
-    @media(max-width:760px){
-      .hero-exact{
-        grid-template-columns:1fr;
+      white-space:nowrap;}
+    @media (max-width:760px){
+      .hero-exact{grid-template-columns:1fr;
         gap:20px;
-        padding:34px 0 26px;
-      }
-      .hero-exact-icon{
-        min-height:250px;
-      }
-      .hero-exact-icon img{
-        width:min(250px,72vw);
-      }
-      .hero-exact-copy{
-        text-align:center;
-      }
-      .mode-grid-exact,
-      .how-grid-exact{
-        grid-template-columns:1fr;
-      }
-      .mode-card-exact{
-        min-height:0;
-      }
-      .stores-exact{
-        grid-template-columns:1fr;
-      }
-      .store-card-exact{
-        flex-wrap:wrap;
-      }
+        padding:34px 0 26px;}
+      .hero-exact-icon{min-height:250px;}
+      .hero-exact-icon img{width:min(250px,72vw);}
+      .hero-exact-copy{text-align:center;}
+      .how-grid-exact{grid-template-columns:1fr;}
+      .stores-exact{grid-template-columns:1fr;}
+      .store-card-exact{flex-wrap:wrap;}
     }
-
-
-    /* === TRY V8 · EXACT MULTIMODE CAMERA SESSION === */
-    .capture-tabs{
-      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;
-      margin-bottom:8px;
-    }
-    .capture-tab{
-      appearance:none;position:relative;min-height:48px;border:1px solid var(--line);
+    .capture-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;
+      margin-bottom:8px;}
+    .capture-tab{appearance:none;position:relative;min-height:48px;border:1px solid var(--line);
       border-radius:999px;background:rgba(24,13,13,.66);color:var(--muted);
-      font:inherit;font-size:.82rem;font-weight:800;cursor:pointer;padding:0 14px;
-    }
+      font:inherit;font-size:.82rem;font-weight:800;cursor:pointer;padding:0 14px;}
     .capture-tab.is-selected{border-color:var(--lineStrong);color:var(--accent2);background:rgba(190,122,72,.10)}
     .capture-tab-check{position:absolute;top:-5px;right:6px;min-width:18px;height:18px;display:grid;place-items:center;border-radius:50%;font-size:.66rem;font-weight:900}
     .capture-tab.is-done .capture-tab-check{background:var(--accent);color:#100707}
@@ -721,11 +225,16 @@
     .capture-active-head{margin-bottom:8px}
     .capture-active-head .section-kicker{margin:0}
     .preview-actions{display:flex;justify-content:center;gap:10px;margin-top:14px}
+    .barcode-manual-fallback{margin-top:16px;padding:15px;border:1px solid var(--line);border-radius:15px;background:rgba(24,13,13,.58)}
+    .barcode-manual-fallback .try-label{margin-bottom:6px}
+    .barcode-manual-help{margin:0 0 10px;color:var(--soft);font-size:.8rem;line-height:1.45}
+    .barcode-manual-row{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+    #barcode-manual-input{flex:1 1 180px;min-height:44px;border:1px solid var(--lineStrong);border-radius:12px;background:#100707;color:var(--text);padding:0 13px;font:inherit;letter-spacing:.08em;outline:none}
+    #barcode-manual-input:focus{border-color:var(--accent)}
     #capture-status{min-height:1.3em;margin-top:11px;color:var(--muted);font-size:.82rem;text-align:center}
     .ready-row{display:flex;justify-content:center;margin:18px 0 2px}
     .ready-btn{appearance:none;min-width:180px;min-height:48px;border-radius:999px;border:1px solid var(--lineStrong);background:var(--accent);color:#100707;font:inherit;font-weight:900;letter-spacing:.06em;cursor:pointer}
     .ready-btn:disabled{opacity:.35;cursor:default}
-
     .results-screen{padding-top:4px}
     .results-topline{display:flex;align-items:center;gap:12px;margin-bottom:22px}
     .results-topline h1{margin:0;color:var(--text);font-size:1.45rem;letter-spacing:.04em}
@@ -746,17 +255,15 @@
     .app-nutrition-row + .app-nutrition-row{border-top:1px solid rgba(190,122,72,.10)}
     .app-nutrition-row strong{color:var(--text);font-weight:700;white-space:nowrap}
     .app-nutrition-link{display:flex;justify-content:space-between;align-items:center;margin-top:12px;color:var(--accent);font-size:.84rem;font-weight:800;text-decoration:none}
-    @media(max-width:620px){.app-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.app-result-icon{min-height:100px;padding:9px 5px}.app-result-icon img{width:50px;height:50px}.capture-tab{padding:0 8px;font-size:.75rem}}
-
+    @media (max-width:620px){
+      .app-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+      .app-result-icon{min-height:100px;padding:9px 5px}
+      .app-result-icon img{width:50px;height:50px}
+      .capture-tab{padding:0 8px;font-size:.75rem}
+    }
     [hidden]{display:none!important}
-
-    @media(max-width:680px){
+    @media (max-width:680px){
       .try-wrap{width:min(100% - 28px,920px)}
-      .stores{grid-template-columns:1fr}
-      .try-result-grid{grid-template-columns:1fr}
-      .file-name{width:100%;max-width:none;margin-left:0}
-      .camera-stage img{width:min(260px,78vw)}
-      .camera-stage h1{font-size:1.42rem}
     }
   </style>
 </head>
@@ -839,12 +346,16 @@
             <button type="button" class="btn-analyse" id="accept-btn">Accept</button>
           </div>
 
-          <div id="capture-status" aria-live="polite"></div>
-        </div>
+          <div class="barcode-manual-fallback" id="barcode-manual-fallback" hidden>
+            <label class="try-label" id="barcode-manual-label" for="barcode-manual-input">Enter the code manually</label>
+            <p class="barcode-manual-help" id="barcode-manual-help">You can type the digits printed below the barcode. BOTIA validates the check digit before accepting it.</p>
+            <div class="barcode-manual-row">
+              <input id="barcode-manual-input" type="text" inputmode="numeric" autocomplete="off" maxlength="14" aria-describedby="barcode-manual-help">
+              <button type="button" class="btn-analyse" id="barcode-manual-btn">Use code</button>
+            </div>
+          </div>
 
-        <div class="try-panel barcode-panel" id="barcode-panel" hidden>
-          <div class="barcode-result" id="barcode-result"></div>
-          <button type="button" class="btn-analyse" id="barcode-scan-btn">Scan barcode / GTIN</button>
+          <div id="capture-status" aria-live="polite"></div>
         </div>
 
         <!-- READY disabled until at least one accepted capture. -->
@@ -951,9 +462,11 @@
   var resultsContent = document.getElementById("general-result-content");
   var modeGrid = document.getElementById("mode-grid");
   var photoPanel = document.getElementById("photo-panel");
-  var barcodePanel = document.getElementById("barcode-panel");
-  var barcodeResult = document.getElementById("barcode-result");
-  var barcodeScanBtn = document.getElementById("barcode-scan-btn");
+  var barcodeManualFallback = document.getElementById("barcode-manual-fallback");
+  var barcodeManualLabel = document.getElementById("barcode-manual-label");
+  var barcodeManualHelp = document.getElementById("barcode-manual-help");
+  var barcodeManualInput = document.getElementById("barcode-manual-input");
+  var barcodeManualBtn = document.getElementById("barcode-manual-btn");
   var captureModeTitle = document.getElementById("capture_mode_title");
   var inputLabel = document.getElementById("input_label");
   var dropzone = document.getElementById("dropzone");
@@ -976,6 +489,21 @@
 
   var LANGS = ["en","es","ar","de","fr","nl","it","pt","pl","ro","ru","tr","zh","id"];
 
+  var BARCODE_FALLBACK = {
+    title:"Barcode / GTIN",
+    manual_title:"Enter the code manually",
+    manual_help:"You can type the digits printed below the barcode. BOTIA validates the check digit before accepting it.",
+    manual_btn:"Use code",
+    detector_unavailable:"Automatic barcode reading is not available in this browser. Enter the digits manually.",
+    no_code_in_photo:"No supported barcode was found in that photo.",
+    invalid_code:"That number is not a valid GTIN/EAN/UPC barcode.",
+    unsupported_length:"BOTIA accepts GTIN-8, GTIN-12, GTIN-13 and GTIN-14.",
+    accepted:"Barcode validated."
+  };
+  var barcodeLabels = Object.assign({}, BARCODE_FALLBACK);
+  var barcodeDetector = null;
+  var barcodeLabelsPromise = null;
+
   function currentLang() {
     var q = new URLSearchParams(location.search).get("lang");
     if (q && LANGS.indexOf(q.toLowerCase().split("-")[0]) > -1) return q.toLowerCase().split("-")[0];
@@ -991,6 +519,149 @@
     var node = document.getElementById(id);
     var value = node && node.textContent ? node.textContent.trim() : "";
     return value || fallback;
+  }
+
+  function loadBarcodeLabels() {
+    if (barcodeLabelsPromise) return barcodeLabelsPromise;
+    barcodeLabelsPromise = fetch("/i18n/" + encodeURIComponent(currentLang()) + "/barcode_capture.json", {cache:"no-store"})
+      .then(function (response) {
+        if (!response.ok) throw new Error("barcode_capture " + response.status);
+        return response.json();
+      })
+      .then(function (data) {
+        barcodeLabels = Object.assign({}, BARCODE_FALLBACK, data || {});
+        barcodeManualLabel.textContent = barcodeLabels.manual_title;
+        barcodeManualHelp.textContent = barcodeLabels.manual_help;
+        barcodeManualBtn.textContent = barcodeLabels.manual_btn;
+        return barcodeLabels;
+      })
+      .catch(function () { return barcodeLabels; });
+    return barcodeLabelsPromise;
+  }
+
+  function digitsOnly(value) {
+    return String(value || "").replace(/\D/g, "");
+  }
+
+  function gtinType(digits) {
+    return ({8:"GTIN-8 / EAN-8",12:"GTIN-12 / UPC-A",13:"GTIN-13 / EAN-13",14:"GTIN-14"})[digits.length] || "";
+  }
+
+  // Same GS1 modulo-10 validation used by BOTIA barcode capture.
+  function hasValidCheckDigit(digits) {
+    if (![8,12,13,14].includes(digits.length) || !/^\d+$/.test(digits)) return false;
+    var body = digits.slice(0,-1);
+    var expected = Number(digits.charAt(digits.length - 1));
+    var sum = 0;
+    var weight = 3;
+    for (var i = body.length - 1; i >= 0; i--) {
+      sum += Number(body.charAt(i)) * weight;
+      weight = weight === 3 ? 1 : 3;
+    }
+    return ((10 - (sum % 10)) % 10) === expected;
+  }
+
+  function normalizeBarcode(raw) {
+    var digits = digitsOnly(raw);
+    if (![8,12,13,14].includes(digits.length)) return {ok:false, code:"unsupported_length", digits:digits};
+    if (!hasValidCheckDigit(digits)) return {ok:false, code:"invalid_code", digits:digits};
+    return {ok:true, digits:digits, gtin14:digits.padStart(14,"0"), type:gtinType(digits)};
+  }
+
+  async function createBarcodeDetector() {
+    if (!("BarcodeDetector" in window)) return null;
+    try {
+      var supported = typeof BarcodeDetector.getSupportedFormats === "function"
+        ? await BarcodeDetector.getSupportedFormats()
+        : [];
+      var preferred = ["ean_13","ean_8","upc_a","itf"];
+      var formats = preferred.filter(function (format) {
+        return supported.length === 0 || supported.includes(format);
+      });
+      return formats.length ? new BarcodeDetector({formats:formats}) : new BarcodeDetector();
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function showBarcodeManualFallback(message) {
+    barcodeManualFallback.hidden = false;
+    barcodeManualInput.value = "";
+    captureStatus.textContent = message || barcodeLabels.detector_unavailable;
+  }
+
+  function hideBarcodeManualFallback() {
+    barcodeManualFallback.hidden = true;
+    barcodeManualInput.value = "";
+  }
+
+  function saveBarcode(raw, format, source) {
+    var normalized = normalizeBarcode(raw);
+    if (!normalized.ok) {
+      captureStatus.textContent = barcodeLabels[normalized.code] || barcodeLabels.invalid_code;
+      return false;
+    }
+    session.barcode = {
+      gtin:normalized.digits,
+      gtin14:normalized.gtin14,
+      format:format || normalized.type,
+      source:source || "web_photo"
+    };
+    saveSession();
+    resetPreview();
+    captureStatus.textContent = "✓ " + barcodeLabels.accepted;
+    return true;
+  }
+
+  async function acceptBarcodeImage() {
+    if (!selectedFile) return;
+    await loadBarcodeLabels();
+
+    var access = await window.BOTIA_WEB_AUTH.ensureAccess();
+    if (!access || access.allowed !== true || !access.uid) return;
+
+    acceptBtn.disabled = true;
+    repeatBtn.disabled = true;
+    captureStatus.textContent = t("msg_reading", "Reading the label…");
+
+    barcodeDetector = barcodeDetector || await createBarcodeDetector();
+    if (!barcodeDetector) {
+      acceptBtn.disabled = false;
+      repeatBtn.disabled = false;
+      showBarcodeManualFallback(barcodeLabels.detector_unavailable);
+      return;
+    }
+
+    try {
+      var bitmap = await createImageBitmap(selectedFile);
+      var found = await barcodeDetector.detect(bitmap);
+      if (bitmap && typeof bitmap.close === "function") bitmap.close();
+
+      if (Array.isArray(found)) {
+        var firstInvalid = null;
+        for (var i = 0; i < found.length; i++) {
+          var item = found[i];
+          var normalized = normalizeBarcode(item.rawValue);
+          if (normalized.ok) {
+            saveBarcode(item.rawValue, item.format || normalized.type, "web_photo");
+            return;
+          }
+          if (!firstInvalid) firstInvalid = normalized;
+        }
+        if (firstInvalid) {
+          captureStatus.textContent = barcodeLabels[firstInvalid.code] || barcodeLabels.invalid_code;
+        } else {
+          captureStatus.textContent = barcodeLabels.no_code_in_photo;
+        }
+      } else {
+        captureStatus.textContent = barcodeLabels.no_code_in_photo;
+      }
+    } catch (_) {
+      captureStatus.textContent = barcodeLabels.no_code_in_photo;
+    } finally {
+      acceptBtn.disabled = false;
+      repeatBtn.disabled = false;
+    }
   }
 
   function loadSession() {
@@ -1028,19 +699,19 @@
     dropzone.classList.remove("has-image", "dragover");
     fileIn.value = "";
     previewActions.hidden = true;
+    hideBarcodeManualFallback();
     captureStatus.textContent = "";
   }
 
   function selectMode(mode) {
     currentMode = mode;
     resetPreview();
+    photoPanel.hidden = false;
     modeGrid.querySelectorAll("[data-mode]").forEach(function (tab) {
       tab.classList.toggle("is-selected", tab.dataset.mode === mode);
     });
 
     if (mode === "ingredients") {
-      photoPanel.hidden = false;
-      barcodePanel.hidden = true;
       captureModeTitle.textContent = t("selected_ingredients", "Ingredients");
       inputLabel.textContent = t("input_label_ingredients", "Photo of the ingredient list");
       dzMain.textContent = t("dz_main_ingredients", "Drop a photo of the ingredient list here, paste it, or tap to choose one");
@@ -1049,8 +720,6 @@
     }
 
     if (mode === "nutrition") {
-      photoPanel.hidden = false;
-      barcodePanel.hidden = true;
       captureModeTitle.textContent = t("selected_nutrition", "Nutritional facts");
       inputLabel.textContent = t("input_label_nutrition", "Photo of the nutrition table");
       dzMain.textContent = t("dz_main_nutrition", "Drop a photo of the nutrition table here, paste it, or tap to choose one");
@@ -1058,10 +727,24 @@
       return;
     }
 
-    photoPanel.hidden = true;
-    barcodePanel.hidden = false;
-    captureModeTitle.textContent = t("mode_barcode", "Barcode / GTIN");
-    renderBarcodeCaptureState();
+    captureModeTitle.textContent = t("barcode_short", "Barcode");
+    inputLabel.textContent = t("barcode_short", "Barcode / GTIN");
+    dzMain.textContent = "Use a photo";
+    dzSub.textContent = "The image stays on this page; only the validated barcode number is kept.";
+
+    loadBarcodeLabels().then(function (labels) {
+      if (currentMode !== "barcode") return;
+      barcodeManualLabel.textContent = labels.manual_title;
+      barcodeManualHelp.textContent = labels.manual_help;
+      barcodeManualBtn.textContent = labels.manual_btn;
+      dzMain.textContent = labels.photo_btn || "Use a photo";
+      dzSub.textContent = labels.privacy_note || "The image stays on this page; only the validated barcode number is kept.";
+      createBarcodeDetector().then(function (detector) {
+        if (currentMode !== "barcode") return;
+        barcodeDetector = detector;
+        if (!detector) showBarcodeManualFallback(labels.detector_unavailable);
+      });
+    });
   }
 
   function setFile(file) {
@@ -1092,6 +775,11 @@
   async function acceptCapture() {
     if (!selectedFile) return;
     if (!window.BOTIA_WEB_AUTH) return;
+
+    if (currentMode === "barcode") {
+      await acceptBarcodeImage();
+      return;
+    }
 
     acceptBtn.disabled = true;
     repeatBtn.disabled = true;
@@ -1139,48 +827,6 @@
     }
   }
 
-  async function openBarcodeCapture() {
-    if (!window.BOTIA_WEB_AUTH) return;
-    var access = await window.BOTIA_WEB_AUTH.ensureAccess();
-    if (!access || access.allowed !== true || !access.uid) return;
-
-    var returnUrl = new URL("/try.html", location.origin);
-    returnUrl.searchParams.set("lang", currentLang());
-    returnUrl.searchParams.set("mode", "barcode");
-
-    var target = new URL("/ingredients/barcode_capture.html", location.origin);
-    target.searchParams.set("lang", currentLang());
-    target.searchParams.set("source", "try");
-    target.searchParams.set("return", returnUrl.pathname + returnUrl.search);
-    location.href = target.toString();
-  }
-
-  function captureBarcodeReturn() {
-    var params = new URLSearchParams(location.search);
-    var gtin = params.get("gtin");
-    if (!gtin) return;
-
-    session.barcode = {
-      gtin:gtin,
-      gtin14:params.get("gtin14") || "",
-      format:params.get("barcode_format") || "",
-      source:params.get("barcode_source") || "try"
-    };
-    saveSession();
-
-    ["gtin","gtin14","barcode_format","barcode_source"].forEach(function (key) { params.delete(key); });
-    params.set("mode", "barcode");
-    history.replaceState(null, "", location.pathname + "?" + params.toString());
-  }
-
-  function renderBarcodeCaptureState() {
-    if (session.barcode) {
-      barcodeResult.innerHTML = "<div><span>" + t("captured", "Captured") + "</span><strong>" + session.barcode.gtin + "</strong></div>";
-    } else {
-      barcodeResult.textContent = t("barcode_empty", "No barcode captured yet.");
-    }
-    barcodeScanBtn.textContent = t("barcode_scan", "Scan barcode / GTIN");
-  }
 
   function base64UrlEncodeUtf8(value) {
     var bytes = new TextEncoder().encode(value);
@@ -1416,7 +1062,23 @@
   acceptBtn.addEventListener("click", acceptCapture);
   readyBtn.addEventListener("click", showResults);
   resultsBack.addEventListener("click", showCaptureSession);
-  barcodeScanBtn.addEventListener("click", openBarcodeCapture);
+  barcodeManualBtn.addEventListener("click", async function () {
+    if (!window.BOTIA_WEB_AUTH) return;
+    var access = await window.BOTIA_WEB_AUTH.ensureAccess();
+    if (!access || access.allowed !== true || !access.uid) return;
+    await loadBarcodeLabels();
+    saveBarcode(barcodeManualInput.value, "manual", "manual");
+  });
+  barcodeManualInput.addEventListener("input", function () {
+    barcodeManualInput.value = digitsOnly(barcodeManualInput.value).slice(0,14);
+    captureStatus.textContent = "";
+  });
+  barcodeManualInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      barcodeManualBtn.click();
+    }
+  });
 
   dropzone.addEventListener("click", function () { fileIn.click(); });
   dropzone.addEventListener("keydown", function (event) {
@@ -1434,7 +1096,7 @@
     if (event.dataTransfer && event.dataTransfer.files.length) setFile(event.dataTransfer.files[0]);
   });
   document.addEventListener("paste", function (event) {
-    if (currentMode === "barcode" || !event.clipboardData || !event.clipboardData.items) return;
+    if (!event.clipboardData || !event.clipboardData.items) return;
     for (var i = 0; i < event.clipboardData.items.length; i++) {
       var item = event.clipboardData.items[i];
       if (item.type.indexOf("image") === 0) { setFile(item.getAsFile()); event.preventDefault(); return; }
@@ -1443,7 +1105,6 @@
 
   if (homeLink) homeLink.href = "/?lang=" + encodeURIComponent(currentLang());
 
-  captureBarcodeReturn();
   paintAcceptedModes();
   readyBtn.textContent = t("ready", "READY");
   readyBtn.disabled = !(session.ingredients || session.nutrition || session.barcode);
