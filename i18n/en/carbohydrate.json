@@ -1,0 +1,21 @@
+{
+  "name": "Carbohydrate",
+  "e_code": "",
+  "aliases": "",
+  "what_is_title": "What it is",
+  "what_is": "Carbohydrates cover sugars, starches and other compounds. They are an important source of energy, but the figure on a label is not defined in exactly the same way in every market.\n\nIn the European Union, “carbohydrate” means carbohydrate metabolised by humans and includes polyols; fibre is declared separately. Polyols may also be shown as an “of which” subfield under carbohydrate.\n\nIn the United States, “Total Carbohydrate” includes dietary fibre, sugars and sugar alcohols.\n\nSo the same product can carry different figures on two labels without either being wrong: before comparing them, you need to know which definition each market uses.",
+  "why_botia_title": "Why BOTIA flags it",
+  "why_botia": "BOTIA flags carbohydrate because it is one of the easiest fields to compare badly. Two figures that look equivalent can be built from different definitions depending on the market, especially because fibre is treated differently.\n\nAnd because the number alone says little: it does not tell you how much is sugars, starch, fibre or other components unless the label declares those separately.",
+  "can_title": "BOTIA CAN",
+  "can_1": "Read the declared value and keep its unit, its basis and the market where the product was labelled.",
+  "can_2": "State which definition applies in that market: whether fibre is part of the total and how polyols are declared.",
+  "can_3": "Show any subfields the label declares separately, such as sugars, starch, fibre or polyols.",
+  "cannot_title": "BOTIA CANNOT",
+  "cannot_1": "Tell you what percentage of your own needs this value represents.",
+  "cannot_2": "Compare a European figure directly with an American one without stating that the definitions differ.",
+  "cannot_3": "Work out how much is sugar and how much is starch if the label does not declare them separately.",
+  "cannot_4": "Treat an undeclared value as zero.",
+  "nutrition_crosslinks_title": "See also",
+  "sources_title": "Sources",
+  "back-button": "← Back"
+}
