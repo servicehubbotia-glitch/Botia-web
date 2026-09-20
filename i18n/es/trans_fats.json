@@ -1,27 +1,21 @@
 {
-  "name": "Trans fatty acids",
+  "name": "Ácidos grasos trans",
   "e_code": "",
-  "aliases": "trans fats, trans fatty acids, partially hydrogenated oil, partially hydrogenated vegetable oil, iTFAs, grasas trans",
-  "module_icon": "mujer.png",
-  "layers": [
-    "woman"
-  ],
-  "what_is": "Las grasas trans son un tipo de grasa insaturada. Las industriales se forman principalmente al hidrogenar parcialmente los aceites para hacerlos más sólidos, estables y duraderos, por lo que se pueden encontrar en pastelería, galletas, fritos, margarinas y otros productos procesados. En una etiqueta pueden aparecer como grasas trans o, más a menudo, como aceite o grasa parcialmente hidrogenada. Pequeñas cantidades también se producen de forma natural en la carne y los lácteos de animales rumiantes.",
-  "why_botia": "La OMS afirma que las grasas trans no tienen ningún beneficio conocido para la salud y que aumentan el riesgo de enfermedad coronaria, infarto y muerte. Recomienda que aporten menos del 1% de la energía diaria y que se eliminen las grasas trans industriales de los alimentos. En una cohorte de 18.555 mujeres, por cada 2% de la energía diaria en la que las grasas trans sustituían a los hidratos de carbono, el riesgo de infertilidad ovulatoria era un 73% mayor, y más del doble cuando sustituían a las grasas monoinsaturadas.",
+  "aliases": "grasas trans, ácidos grasos trans, aceite parcialmente hidrogenado, aceite vegetal parcialmente hidrogenado, iTFAs, grasas trans",
+  "what_is_title": "Qué es",
+  "what_is": "Las grasas trans son un tipo de grasa insaturada. Las industriales se forman principalmente al hidrogenar parcialmente aceites para hacerlos más sólidos, estables y duraderos, por lo que pueden encontrarse en bollería, galletas, fritos, margarinas y otros productos procesados. En una etiqueta pueden aparecer como grasas trans o, más a menudo, como aceite o grasa parcialmente hidrogenados. Pequeñas cantidades también se producen de forma natural en la carne y los lácteos de animales rumiantes.\n\nEn las etiquetas, las grasas trans no se tratan igual en todas partes.\n\nLa Unión Europea no incluye las grasas trans en la declaración nutricional obligatoria. En su lugar, la legislación de la UE limita las grasas trans distintas de las que se producen de forma natural en la grasa de origen animal a un máximo de 2 g por 100 g de grasa en alimentos destinados al consumidor final o al comercio minorista. Los alimentos que no cumplían solo podían seguir comercializándose hasta el 1 de abril de 2021. Por eso, una tabla nutricional europea normalmente no mostrará una cifra de grasas trans, y su ausencia no significa que el producto no las contenga.\n\nEstados Unidos sí declara las grasas trans, pero si una ración contiene menos de 0,5 g, el valor declarado se expresa como 0 g según las reglas de redondeo de la FDA.",
+  "why_botia_title": "Por qué BOTIA lo señala",
+  "why_botia": "La OMS afirma que las grasas trans no tienen ningún beneficio conocido para la salud y que aumentan el riesgo de cardiopatía coronaria, infarto y muerte. Su guía de 2023 mantiene la ingesta de grasas trans en no más del 1 % de la energía total y apoya la eliminación de las grasas trans de producción industrial. En una cohorte de 18.555 mujeres, una mayor ingesta de grasas trans se asoció con más infertilidad ovulatoria. BOTIA también mantiene visible el contexto del mercado: las etiquetas de la UE generalmente no declaran la cantidad, mientras que una etiqueta estadounidense puede mostrar legalmente 0 g por debajo de 0,5 g por ración.",
+  "can_title": "BOTIA PUEDE",
   "can_1": "Detectar aceites parcialmente hidrogenados o una declaración explícita de grasas trans cuando aparecen en la etiqueta.",
   "can_2": "Explicar lo que dice la OMS sobre las grasas trans y lo que encontró la cohorte en mujeres, y mostrar la capa de información Mujer.",
-  "cannot_1": "Determinar la cantidad exacta de grasa trans a partir de una lista de ingredientes cuando no se declara la cantidad.",
+  "can_3": "Explicar cómo se trata la cantidad declarada en el mercado del producto, incluido el límite de contenido de la UE y la regla de redondeo de EE. UU.",
+  "cannot_title": "BOTIA NO PUEDE",
+  "cannot_1": "Determinar la cantidad exacta de grasas trans a partir de una lista de ingredientes cuando no se declara la cantidad.",
   "cannot_2": "Demostrar que la ingesta de grasas trans causó infertilidad en una persona concreta.",
-  "sources": [
-    {
-      "label": "OMS — Eliminación de grasas trans (2023)",
-      "url": "https://www.who.int/news-room/questions-answers/item/trans-fat"
-    },
-    {
-      "label": "Cohorte: ingesta de grasas trans e infertilidad ovulatoria (2019)",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30904839/"
-    }
-  ],
-  "title": "Trans fatty acids",
-  "description": "Las grasas trans se forman principalmente al hidrogenar parcialmente los aceites, y aparecen en las etiquetas como grasas trans o aceite parcialmente hidrogenado. La OMS afirma que no tienen ningún beneficio conocido para la salud y recomienda eliminar las industriales. En una cohorte de 18.555 mujeres, un mayor consumo se asoció con una mayor infertilidad ovulatoria."
+  "cannot_3": "Saber cuánta grasa trans contiene un producto etiquetado en la Unión Europea a partir de la tabla nutricional. La declaración obligatoria de la UE no incluye este campo; la ley limita el contenido en su lugar.",
+  "cannot_4": "Tratar una declaración estadounidense de «0 g» como ausencia total. Las reglas de la FDA permiten declarar 0 g cuando una ración contiene menos de 0,5 g de grasas trans.",
+  "nutrition_crosslinks_title": "Ver también",
+  "sources_title": "Fuentes",
+  "back-button": "← Volver"
 }

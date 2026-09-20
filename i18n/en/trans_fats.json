@@ -2,26 +2,20 @@
   "name": "Trans fatty acids",
   "e_code": "",
   "aliases": "trans fats, trans fatty acids, partially hydrogenated oil, partially hydrogenated vegetable oil, iTFAs, grasas trans",
-  "module_icon": "mujer.png",
-  "layers": [
-    "woman"
-  ],
-  "what_is": "Trans fats are a type of unsaturated fat. Industrial ones are formed mainly by partially hydrogenating oils to make them more solid, stable and longer-lasting, which is why they can be found in pastries, biscuits, fried foods, margarines and other processed products. On a label they may appear as trans fats or, more often, as partially hydrogenated oil or fat. Small amounts also occur naturally in the meat and dairy of ruminant animals.",
-  "why_botia": "WHO states that trans fats have no known health benefit and that they increase the risk of coronary heart disease, heart attack and death. It recommends they provide less than 1% of daily energy, and that industrial trans fats be eliminated from foods. In a cohort of 18,555 women, for every 2% of daily energy in which trans fats replaced carbohydrates, the risk of ovulatory infertility was 73% higher, and more than double when they replaced monounsaturated fats.",
+  "what_is_title": "What it is",
+  "what_is": "Trans fats are a type of unsaturated fat. Industrial ones are formed mainly by partially hydrogenating oils to make them more solid, stable and longer-lasting, which is why they can be found in pastries, biscuits, fried foods, margarines and other processed products. On a label they may appear as trans fats or, more often, as partially hydrogenated oil or fat. Small amounts also occur naturally in the meat and dairy of ruminant animals.\n\nOn labels, trans fats are not treated the same everywhere.\n\nThe European Union does not include trans fat in the mandatory nutrition declaration. Instead, EU law limits trans fat other than that naturally occurring in fat of animal origin to a maximum of 2 g per 100 g of fat in food intended for the final consumer or retail. Food that did not comply could only continue to be placed on the market until 1 April 2021. So a European nutrition table normally will not show a trans-fat figure, and its absence does not mean the product contains none.\n\nThe United States does declare trans fat, but if a serving contains less than 0.5 g, the declared value is expressed as 0 g under FDA rounding rules.",
+  "why_botia_title": "Why BOTIA flags it",
+  "why_botia": "WHO states that trans fats have no known health benefit and that they increase the risk of coronary heart disease, heart attack and death. Its 2023 guideline keeps trans-fat intake at no more than 1% of total energy and supports elimination of industrially produced trans fats. In a cohort of 18,555 women, higher trans-fat intake was associated with more ovulatory infertility. BOTIA also keeps the market context visible: EU labels generally do not declare the amount, while a US label can legally show 0 g below 0.5 g per serving.",
+  "can_title": "BOTIA CAN",
   "can_1": "Detect partially hydrogenated oils or an explicit trans-fat declaration when they appear on the label.",
   "can_2": "Explain what WHO says about trans fats and what the cohort in women found, and show the Woman information layer.",
+  "can_3": "Explain how the declared amount is treated in the product's market, including the EU content limit and the US rounding rule.",
+  "cannot_title": "BOTIA CANNOT",
   "cannot_1": "Determine the exact amount of trans fat from an ingredient list when the quantity is not declared.",
   "cannot_2": "Prove that trans-fat intake caused infertility in a particular person.",
-  "sources": [
-    {
-      "label": "WHO — Trans fat elimination (2023)",
-      "url": "https://www.who.int/news-room/questions-answers/item/trans-fat"
-    },
-    {
-      "label": "Cohort: trans fat intake and ovulatory infertility (2019)",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30904839/"
-    }
-  ],
-  "title": "Trans fatty acids",
-  "description": "Trans fats are formed mainly by partially hydrogenating oils, and appear on labels as trans fats or partially hydrogenated oil. WHO says they have no known health benefit and recommends eliminating the industrial ones. In a cohort of 18,555 women, higher intake was associated with more ovulatory infertility."
+  "cannot_3": "Know how much trans fat a product labelled in the European Union contains from the nutrition table. The mandatory EU declaration does not include this field; the law limits the content instead.",
+  "cannot_4": "Treat a US “0 g” declaration as complete absence. FDA rules allow 0 g to be declared when a serving contains less than 0.5 g of trans fat.",
+  "nutrition_crosslinks_title": "See also",
+  "sources_title": "Sources",
+  "back-button": "← Back"
 }

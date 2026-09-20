@@ -1,27 +1,21 @@
 {
-  "name": "Trans fatty acids",
+  "name": "Acides gras trans",
   "e_code": "",
-  "aliases": "trans fats, trans fatty acids, partially hydrogenated oil, partially hydrogenated vegetable oil, iTFAs, grasas trans",
-  "module_icon": "mujer.png",
-  "layers": [
-    "woman"
-  ],
-  "what_is": "Les acides gras trans sont un type de graisse insaturée. Les graisses trans industrielles sont principalement formées par hydrogénation partielle des huiles pour les rendre plus solides, stables et durables, c'est pourquoi on les trouve dans les pâtisseries, biscuits, fritures, margarines et autres produits transformés. Sur une étiquette, elles peuvent apparaître comme graisses trans ou, plus souvent, comme huile ou graisse partiellement hydrogénée. De petites quantités sont également présentes naturellement dans la viande et les produits laitiers des ruminants.",
-  "why_botia": "L'OMS déclare que les graisses trans n'ont aucun avantage connu pour la santé et qu'elles augmentent le risque de maladie coronarienne, de crise cardiaque et de décès. Elle recommande qu'elles fournissent moins de 1 % de l'énergie quotidienne et que les graisses trans industrielles soient éliminées des aliments. Dans une cohorte de 18 555 femmes, pour chaque 2 % de l'énergie quotidienne où les graisses trans remplaçaient les glucides, le risque d'infertilité ovulatoire était 73 % plus élevé, et plus du double lorsqu'elles remplaçaient les graisses monoinsaturées.",
-  "can_1": "Détecter les huiles partiellement hydrogénées ou une déclaration explicite de graisses trans lorsqu'elles apparaissent sur l'étiquette.",
-  "can_2": "Expliquer ce que l'OMS dit des graisses trans et ce que la cohorte de femmes a constaté, et afficher la couche d'information Femme.",
-  "cannot_1": "Déterminer la quantité exacte de graisses trans à partir d'une liste d'ingrédients lorsque la quantité n'est pas déclarée.",
-  "cannot_2": "Prouver que la consommation de graisses trans a causé une infertilité chez une personne particulière.",
-  "sources": [
-    {
-      "label": "OMS — Élimination des graisses trans (2023)",
-      "url": "https://www.who.int/news-room/questions-answers/item/trans-fat"
-    },
-    {
-      "label": "Cohorte : consommation de graisses trans et infertilité ovulatoire (2019)",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30904839/"
-    }
-  ],
-  "title": "Trans fatty acids",
-  "description": "Les graisses trans sont formées principalement par hydrogénation partielle des huiles et apparaissent sur les étiquettes comme graisses trans ou huile partiellement hydrogénée. L'OMS affirme qu'elles n'ont aucun avantage connu pour la santé et recommande d'éliminer les graisses trans industrielles. Dans une cohorte de 18 555 femmes, une consommation plus élevée était associée à une infertilité ovulatoire plus importante."
+  "aliases": "grasas trans, acides gras trans, huile partiellement hydrogénée, huile végétale partiellement hydrogénée, iTFAs, grasas trans",
+  "what_is_title": "Ce que c'est",
+  "what_is": "Les acides gras trans sont un type de matière grasse insaturée. Les industriels se forment principalement par hydrogénation partielle des huiles pour les rendre plus solides, stables et durables, ce qui explique leur présence dans les pâtisseries, les biscuits, les fritures, les margarines et d'autres produits transformés. Sur une étiquette, ils peuvent apparaître comme acides gras trans ou, plus souvent, comme huile ou graisse partiellement hydrogénée. De petites quantités se trouvent aussi naturellement dans la viande et les produits laitiers des ruminants.\n\nSur les étiquettes, les acides gras trans ne sont pas traités de la même manière partout.\n\nL'Union européenne n'inclut pas les acides gras trans dans la déclaration nutritionnelle obligatoire. À la place, la législation de l'UE limite les acides gras trans autres que ceux naturellement présents dans la graisse d'origine animale à un maximum de 2 g pour 100 g de matière grasse dans les denrées destinées au consommateur final ou à la vente au détail. Les denrées non conformes ne pouvaient plus être mises sur le marché qu'après le 1er avril 2021. Ainsi, un tableau nutritionnel européen n'affichera normalement pas de valeur d'acides gras trans, et son absence ne signifie pas que le produit n'en contient pas.\n\nLes États-Unis déclarent bien les acides gras trans, mais si une portion contient moins de 0,5 g, la valeur déclarée est exprimée comme 0 g selon les règles d'arrondi de la FDA.",
+  "why_botia_title": "Pourquoi BOTIA le signale",
+  "why_botia": "L'OMS indique que les acides gras trans n'ont aucun bénéfice connu pour la santé et qu'ils augmentent le risque de maladie coronarienne, de crise cardiaque et de décès. Sa ligne directrice de 2023 maintient l'apport en acides gras trans à pas plus de 1 % de l'énergie totale et soutient l'élimination des acides gras trans de production industrielle. Dans une cohorte de 18 555 femmes, un apport plus élevé en acides gras trans était associé à plus d'infertilité ovulatoire. BOTIA garde aussi le contexte du marché visible : les étiquettes de l'UE ne déclarent généralement pas la quantité, tandis qu'une étiquette américaine peut légalement afficher 0 g en dessous de 0,5 g par portion.",
+  "can_title": "BOTIA PEUT",
+  "can_1": "Détecter les huiles partiellement hydrogénées ou une déclaration explicite d'acides gras trans lorsqu'elles apparaissent sur l'étiquette.",
+  "can_2": "Expliquer ce que dit l'OMS sur les acides gras trans et ce qu'a trouvé la cohorte chez les femmes, et afficher la couche d'information Femme.",
+  "can_3": "Expliquer comment la quantité déclarée est traitée sur le marché du produit, y compris la limite de contenu de l'UE et la règle d'arrondi américaine.",
+  "cannot_title": "BOTIA NE PEUT PAS",
+  "cannot_1": "Déterminer la quantité exacte d'acides gras trans à partir d'une liste d'ingrédients lorsque la quantité n'est pas déclarée.",
+  "cannot_2": "Prouver qu'un apport en acides gras trans a causé une infertilité chez une personne donnée.",
+  "cannot_3": "Savoir combien d'acides gras trans contient un produit étiqueté dans l'Union européenne à partir du tableau nutritionnel. La déclaration obligatoire de l'UE n'inclut pas ce champ ; la loi limite le contenu à la place.",
+  "cannot_4": "Traiter une déclaration américaine de « 0 g » comme une absence totale. Les règles de la FDA permettent de déclarer 0 g lorsqu'une portion contient moins de 0,5 g d'acides gras trans.",
+  "nutrition_crosslinks_title": "Voir aussi",
+  "sources_title": "Sources",
+  "back-button": "← Retour"
 }

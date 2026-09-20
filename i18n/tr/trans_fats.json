@@ -1,27 +1,21 @@
 {
-  "name": "Trans fatty acids",
+  "name": "Trans yağ asitleri",
   "e_code": "",
-  "aliases": "trans fats, trans fatty acids, partially hydrogenated oil, partially hydrogenated vegetable oil, iTFAs, grasas trans",
-  "module_icon": "mujer.png",
-  "layers": [
-    "woman"
-  ],
-  "what_is": "Trans yağlar bir tür doymamış yağdır. Endüstriyel trans yağlar, yağların kısmi hidrojenasyonu ile oluşturulur ve daha katı, kararlı ve uzun ömürlü hale getirilir, bu nedenle pastacılık ürünlerinde, bisküvilerde, kızartmalarda, margarinlerde ve diğer işlenmiş ürünlerde bulunabilirler. Bir etikette trans yağlar veya daha sık olarak kısmen hidrojenize yağ veya yağ olarak görünebilirler. Küçük miktarlar geviş getiren hayvanların et ve süt ürünlerinde doğal olarak da bulunur.",
-  "why_botia": "DSÖ, trans yağların bilinen bir sağlık yararı olmadığını ve koroner kalp hastalığı, kalp krizi ve ölüm riskini artırdığını belirtmektedir. Günlük enerjinin %1'inden azını sağlamalarını ve endüstriyel trans yağların gıdalardan elimine edilmesini önermektedir. 18.555 kadından oluşan bir kohortta, trans yağların karbonhidratların yerini aldığı günlük enerjinin her %2'si için ovulatuar infertilite riski %73 daha yüksekti ve tekli doymamış yağların yerini aldığında iki kattan fazlaydı.",
-  "can_1": "Etikette göründüklerinde kısmen hidrojenize yağları veya açık bir trans yağ beyanını tespit eder.",
-  "can_2": "DSÖ'nün trans yağlar hakkında söylediklerini ve kadınlardaki kohortun bulgularını açıklar ve Kadın bilgi katmanını gösterir.",
-  "cannot_1": "Miktar beyan edilmediğinde bir içerik listesinden tam trans yağ miktarını belirleyemez.",
-  "cannot_2": "Trans yağ alımının belirli bir kişide kısırlığa neden olduğunu kanıtlayamaz.",
-  "sources": [
-    {
-      "label": "DSÖ — Trans yağların eliminasyonu (2023)",
-      "url": "https://www.who.int/news-room/questions-answers/item/trans-fat"
-    },
-    {
-      "label": "Kohort: trans yağ alımı ve ovulatuar infertilite (2019)",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30904839/"
-    }
-  ],
-  "title": "Trans fatty acids",
-  "description": "Trans yağlar esas olarak yağların kısmi hidrojenasyonu ile oluşur ve etiketlerde trans yağlar veya kısmen hidrojenize yağ olarak görünür. DSÖ, bilinen bir sağlık yararları olmadığını ve endüstriyel olanların elimine edilmesini önermektedir. 18.555 kadından oluşan bir kohortta, daha yüksek alım daha fazla ovulatuar infertilite ile ilişkilendirildi."
+  "aliases": "trans yağlar, trans yağ asitleri, kısmen hidrojenlenmiş yağ, kısmen hidrojenlenmiş bitkisel yağ, iTFAs, grasas trans",
+  "what_is_title": "Nedir",
+  "what_is": "Trans yağlar bir tür doymamış yağdır. Endüstriyel olanlar esas olarak yağların daha katı, daha dayanıklı ve daha uzun ömürlü olması için kısmen hidrojenlenmesiyle oluşur; bu nedenle hamur işleri, bisküviler, kızarmış gıdalar, margarinler ve diğer işlenmiş ürünlerde bulunabilirler. Etikette trans yağlar olarak ya da daha sık olarak kısmen hidrojenlenmiş yağ veya yağ olarak görünebilirler. Küçük miktarlar geviş getiren hayvanların eti ve süt ürünlerinde de doğal olarak bulunur.\n\nEtiketlerde trans yağlar her yerde aynı şekilde ele alınmaz.\n\nAvrupa Birliği, trans yağı zorunlu beslenme beyanına dahil etmez. Bunun yerine AB mevzuatı, hayvansal kökenli yağda doğal olarak bulunanlar dışındaki trans yağı, son tüketiciye veya perakendeye yönelik gıdalarda 100 g yağ başına en fazla 2 g ile sınırlar. Uygun olmayan gıdalar yalnızca 1 Nisan 2021'e kadar piyasada kalabilirdi. Bu nedenle bir Avrupa beslenme tablosu normalde trans yağ rakamı göstermez ve yokluğu ürünün içermediği anlamına gelmez.\n\nAmerika Birleşik Devletleri trans yağı beyan eder, ancak bir porsiyon 0,5 g'dan az içeriyorsa, beyan edilen değer FDA yuvarlama kurallarına göre 0 g olarak ifade edilir.",
+  "why_botia_title": "BOTIA neden işaretler",
+  "why_botia": "WHO, trans yağların bilinen bir sağlık yararı olmadığını ve koroner kalp hastalığı, kalp krizi ve ölüm riskini artırdığını belirtir. 2023 kılavuzu trans yağ alımını toplam enerjinin %1'inden fazla olmamak üzere korur ve endüstriyel olarak üretilen trans yağların ortadan kaldırılmasını destekler. 18.555 kadından oluşan bir kohortta daha yüksek trans yağ alımı daha fazla ovulatuar infertiliteyle ilişkilendirildi. BOTIA pazar bağlamını da görünür tutar: AB etiketleri genellikle miktarı beyan etmez, ancak bir ABD etiketi porsiyon başına 0,5 g'ın altında yasal olarak 0 g gösterebilir.",
+  "can_title": "BOTIA YAPABİLİR",
+  "can_1": "Etikette göründüklerinde kısmen hidrojenlenmiş yağları veya açık bir trans yağ beyanını tespit etmek.",
+  "can_2": "WHO'nun trans yağlar hakkında söylediklerini ve kohortun kadınlarda ne bulduğunu açıklamak ve Kadın bilgi katmanını göstermek.",
+  "can_3": "Beyan edilen miktarın ürünün pazarında nasıl ele alındığını, AB içerik sınırı ve ABD yuvarlama kuralı dahil, açıklamak.",
+  "cannot_title": "BOTIA YAPAMAZ",
+  "cannot_1": "Miktar beyan edilmediğinde bir içerik listesinden kesin trans yağ miktarını belirlemek.",
+  "cannot_2": "Belirli bir kişide trans yağ alımının infertili­teye neden olduğunu kanıtlamak.",
+  "cannot_3": "Avrupa Birliği'nde etiketlenmiş bir ürünün beslenme tablosundan ne kadar trans yağ içerdiğini bilmek. Zorunlu AB beyanı bu alanı içermez; yasa bunun yerine içeriği sınırlar.",
+  "cannot_4": "ABD'nin «0 g» beyanını tam yokluk olarak ele almak. FDA kuralları bir porsiyon 0,5 g'dan az trans yağ içerdiğinde 0 g beyan edilmesine izin verir.",
+  "nutrition_crosslinks_title": "Ayrıca bkz.",
+  "sources_title": "Kaynaklar",
+  "back-button": "← Geri"
 }

@@ -1,27 +1,21 @@
 {
-  "name": "Trans fatty acids",
+  "name": "Asam lemak trans",
   "e_code": "",
-  "aliases": "trans fats, trans fatty acids, partially hydrogenated oil, partially hydrogenated vegetable oil, iTFAs, grasas trans",
-  "module_icon": "mujer.png",
-  "layers": [
-    "woman"
-  ],
-  "what_is": "Lemak trans adalah jenis lemak tak jenuh. Lemak trans industri terbentuk terutama melalui hidrogenasi parsial minyak untuk membuatnya lebih padat, stabil, dan tahan lama, itulah sebabnya lemak ini dapat ditemukan dalam kue kering, biskuit, makanan yang digoreng, margarin, dan produk olahan lainnya. Pada label mungkin muncul sebagai lemak trans atau, lebih sering, sebagai minyak atau lemak terhidrogenasi parsial. Sejumlah kecil juga terjadi secara alami dalam daging dan susu hewan ruminansia.",
-  "why_botia": "WHO menyatakan bahwa lemak trans tidak memiliki manfaat kesehatan yang diketahui dan meningkatkan risiko penyakit jantung koroner, serangan jantung, dan kematian. WHO merekomendasikan agar lemak trans menyediakan kurang dari 1% energi harian, dan lemak trans industri dihilangkan dari makanan. Dalam kohort 18.555 wanita, untuk setiap 2% energi harian di mana lemak trans menggantikan karbohidrat, risiko infertilitas ovulasi 73% lebih tinggi, dan lebih dari dua kali lipat ketika menggantikan lemak tak jenuh tunggal.",
-  "can_1": "Mendeteksi minyak terhidrogenasi parsial atau deklarasi lemak trans eksplisit ketika muncul pada label.",
-  "can_2": "Menjelaskan apa yang WHO katakan tentang lemak trans dan apa yang ditemukan kohort pada wanita, dan menampilkan lapisan informasi Wanita.",
-  "cannot_1": "Menentukan jumlah pasti lemak trans dari daftar bahan ketika jumlahnya tidak dinyatakan.",
+  "aliases": "lemak trans, asam lemak trans, minyak terhidrogenasi parsial, minyak nabati terhidrogenasi parsial, iTFAs, grasas trans",
+  "what_is_title": "Apa itu",
+  "what_is": "Lemak trans adalah jenis lemak tak jenuh. Lemak trans industri terbentuk terutama dengan menghidrogenasi sebagian minyak agar lebih padat, stabil dan tahan lama, sehingga dapat ditemukan dalam kue, biskuit, gorengan, margarin dan produk olahan lainnya. Pada label, lemak ini dapat muncul sebagai lemak trans atau, lebih sering, sebagai minyak atau lemak terhidrogenasi parsial. Sejumlah kecil juga terjadi secara alami dalam daging dan produk susu hewan ruminansia.\n\nPada label, lemak trans tidak diperlakukan sama di mana-mana.\n\nUni Eropa tidak memasukkan lemak trans ke dalam deklarasi gizi wajib. Sebaliknya, hukum UE membatasi lemak trans selain yang secara alami ada dalam lemak hewani hingga maksimal 2 g per 100 g lemak dalam pangan yang ditujukan untuk konsumen akhir atau ritel. Pangan yang tidak sesuai hanya boleh terus dipasarkan hingga 1 April 2021. Jadi tabel gizi Eropa biasanya tidak akan menampilkan angka lemak trans, dan ketidakhadirannya tidak berarti produk tidak mengandungnya.\n\nAmerika Serikat memang mendeklarasikan lemak trans, tetapi jika satu porsi mengandung kurang dari 0,5 g, nilai yang dideklarasikan dinyatakan sebagai 0 g menurut aturan pembulatan FDA.",
+  "why_botia_title": "Mengapa BOTIA menandainya",
+  "why_botia": "WHO menyatakan bahwa lemak trans tidak memiliki manfaat kesehatan yang diketahui dan bahwa lemak trans meningkatkan risiko penyakit jantung koroner, serangan jantung dan kematian. Pedoman WHO 2023 mempertahankan asupan lemak trans tidak lebih dari 1% dari total energi dan mendukung penghapusan lemak trans yang diproduksi secara industri. Dalam kohort 18.555 wanita, asupan lemak trans yang lebih tinggi dikaitkan dengan lebih banyak infertilitas ovulasi. BOTIA juga menjaga konteks pasar tetap terlihat: label UE umumnya tidak mendeklarasikan jumlah, sedangkan label AS dapat secara legal menampilkan 0 g di bawah 0,5 g per porsi.",
+  "can_title": "BOTIA DAPAT",
+  "can_1": "Mendeteksi minyak terhidrogenasi parsial atau deklarasi lemak trans yang eksplisit ketika muncul pada label.",
+  "can_2": "Menjelaskan apa yang dikatakan WHO tentang lemak trans dan apa yang ditemukan kohort pada wanita, dan menampilkan lapisan informasi Wanita.",
+  "can_3": "Menjelaskan bagaimana jumlah yang dideklarasikan diperlakukan di pasar produk, termasuk batas kandungan UE dan aturan pembulatan AS.",
+  "cannot_title": "BOTIA TIDAK DAPAT",
+  "cannot_1": "Menentukan jumlah pasti lemak trans dari daftar bahan ketika jumlahnya tidak dideklarasikan.",
   "cannot_2": "Membuktikan bahwa asupan lemak trans menyebabkan infertilitas pada orang tertentu.",
-  "sources": [
-    {
-      "label": "WHO — Penghapusan lemak trans (2023)",
-      "url": "https://www.who.int/news-room/questions-answers/item/trans-fat"
-    },
-    {
-      "label": "Kohort: asupan lemak trans dan infertilitas ovulasi (2019)",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30904839/"
-    }
-  ],
-  "title": "Trans fatty acids",
-  "description": "Lemak trans terbentuk terutama melalui hidrogenasi parsial minyak, dan muncul pada label sebagai lemak trans atau minyak terhidrogenasi parsial. WHO menyatakan bahwa lemak trans tidak memiliki manfaat kesehatan yang diketahui dan merekomendasikan penghapusan lemak trans industri. Dalam kohort 18.555 wanita, asupan yang lebih tinggi dikaitkan dengan infertilitas ovulasi yang lebih banyak."
+  "cannot_3": "Mengetahui berapa banyak lemak trans yang dikandung produk yang dilabeli di Uni Eropa dari tabel gizi. Deklarasi wajib UE tidak mencakup bidang ini; undang-undang justru membatasi kandungannya.",
+  "cannot_4": "Memperlakukan deklarasi «0 g» dari AS sebagai tidak ada sama sekali. Aturan FDA mengizinkan deklarasi 0 g ketika satu porsi mengandung kurang dari 0,5 g lemak trans.",
+  "nutrition_crosslinks_title": "Lihat juga",
+  "sources_title": "Sumber",
+  "back-button": "← Kembali"
 }

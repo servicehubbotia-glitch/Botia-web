@@ -1,27 +1,21 @@
 {
-  "name": "Trans fatty acids",
+  "name": "Acizi grași trans",
   "e_code": "",
-  "aliases": "trans fats, trans fatty acids, partially hydrogenated oil, partially hydrogenated vegetable oil, iTFAs, grasas trans",
-  "module_icon": "mujer.png",
-  "layers": [
-    "woman"
-  ],
-  "what_is": "Grăsimile trans sunt un tip de grăsime nesaturată. Cele industriale se formează în principal prin hidrogenarea parțială a uleiurilor pentru a le face mai solide, stabile și durabile, motiv pentru care se găsesc în produse de patiserie, biscuiți, prăjeli, margarine și alte produse procesate. Pe o etichetă pot apărea ca grăsimi trans sau, mai des, ca ulei sau grăsime parțial hidrogenată. Cantități mici se găsesc, de asemenea, în mod natural în carnea și produsele lactate ale animalelor rumegătoare.",
-  "why_botia": "OMS declară că grăsimile trans nu au niciun beneficiu cunoscut pentru sănătate și că cresc riscul de boli coronariene, infarct și deces. Recomandă ca acestea să furnizeze mai puțin de 1% din energia zilnică și ca grăsimile trans industriale să fie eliminate din alimente. Într-o cohortă de 18.555 de femei, pentru fiecare 2% din energia zilnică în care grăsimile trans înlocuiau carbohidrații, riscul de infertilitate ovulatorie era cu 73% mai mare și de peste două ori mai mare atunci când înlocuiau grăsimile mononesaturate.",
-  "can_1": "Detectează uleiurile parțial hidrogenate sau o declarație explicită de grăsimi trans atunci când apar pe etichetă.",
-  "can_2": "Explică ce spune OMS despre grăsimile trans și ce a constatat cohorta la femei și afișează stratul de informații Femeie.",
-  "cannot_1": "Determină cantitatea exactă de grăsimi trans dintr-o listă de ingrediente atunci când cantitatea nu este declarată.",
-  "cannot_2": "Demonstrează că aportul de grăsimi trans a cauzat infertilitate la o anumită persoană.",
-  "sources": [
-    {
-      "label": "OMS — Eliminarea grăsimilor trans (2023)",
-      "url": "https://www.who.int/news-room/questions-answers/item/trans-fat"
-    },
-    {
-      "label": "Cohortă: aportul de grăsimi trans și infertilitatea ovulatorie (2019)",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30904839/"
-    }
-  ],
-  "title": "Trans fatty acids",
-  "description": "Grăsimile trans se formează în principal prin hidrogenarea parțială a uleiurilor și apar pe etichete ca grăsimi trans sau ulei parțial hidrogenat. OMS afirmă că nu au niciun beneficiu cunoscut pentru sănătate și recomandă eliminarea celor industriale. Într-o cohortă de 18.555 de femei, un consum mai mare a fost asociat cu o infertilitate ovulatorie mai mare."
+  "aliases": "grăsimi trans, acizi grași trans, ulei parțial hidrogenat, ulei vegetal parțial hidrogenat, iTFAs, grasas trans",
+  "what_is_title": "Ce este",
+  "what_is": "Grăsimile trans sunt un tip de grăsime nesaturată. Cele industriale se formează în principal prin hidrogenarea parțială a uleiurilor pentru a le face mai solide, stabile și de durată, motiv pentru care pot fi găsite în patiserie, biscuiți, prăjeli, margarine și alte produse procesate. Pe etichetă pot apărea ca grăsimi trans sau, mai des, ca ulei sau grăsime parțial hidrogenate. Cantități mici apar și în mod natural în carnea și lactatele rumegătoarelor.\n\nPe etichete, grăsimile trans nu sunt tratate la fel peste tot.\n\nUniunea Europeană nu include grăsimile trans în declarația nutrițională obligatorie. În schimb, legislația UE limitează grăsimile trans, altele decât cele prezente în mod natural în grăsimea de origine animală, la maximum 2 g la 100 g de grăsime în alimentele destinate consumatorului final sau comerțului cu amănuntul. Alimentele care nu erau conforme puteau fi plasate pe piață doar până la 1 aprilie 2021. Așadar, un tabel nutrițional european nu va arăta în mod normal o cifră a grăsimilor trans, iar absența ei nu înseamnă că produsul nu conține.\n\nStatele Unite declară grăsimile trans, dar dacă o porție conține mai puțin de 0,5 g, valoarea declarată este exprimată ca 0 g conform regulilor de rotunjire ale FDA.",
+  "why_botia_title": "De ce BOTIA le semnalează",
+  "why_botia": "OMS afirmă că grăsimile trans nu au niciun beneficiu cunoscut pentru sănătate și că cresc riscul de boală coronariană, infarct și deces. Ghidul său din 2023 menține aportul de grăsimi trans la nu mai mult de 1 % din energia totală și susține eliminarea grăsimilor trans produse industrial. Într-o cohortă de 18.555 de femei, un aport mai mare de grăsimi trans a fost asociat cu mai multă infertilitate ovulatorie. BOTIA menține de asemenea vizibil contextul pieței: etichetele UE în general nu declară cantitatea, în timp ce o etichetă americană poate arăta în mod legal 0 g sub 0,5 g pe porție.",
+  "can_title": "BOTIA POATE",
+  "can_1": "Să detecteze uleiurile parțial hidrogenate sau o declarație explicită de grăsimi trans atunci când apar pe etichetă.",
+  "can_2": "Să explice ce spune OMS despre grăsimile trans și ce a găsit cohorta la femei și să arate stratul de informații Femeie.",
+  "can_3": "Să explice cum este tratată cantitatea declarată pe piața produsului, inclusiv limita de conținut din UE și regula de rotunjire din SUA.",
+  "cannot_title": "BOTIA NU POATE",
+  "cannot_1": "Să determine cantitatea exactă de grăsimi trans dintr-o listă de ingrediente atunci când cantitatea nu este declarată.",
+  "cannot_2": "Să demonstreze că aportul de grăsimi trans a cauzat infertilitate la o anumită persoană.",
+  "cannot_3": "Să știe câtă grăsime trans conține un produs etichetat în Uniunea Europeană din tabelul nutrițional. Declarația obligatorie a UE nu include acest câmp; legea limitează în schimb conținutul.",
+  "cannot_4": "Să trateze o declarație americană de «0 g» ca absență completă. Regulile FDA permit declararea a 0 g atunci când o porție conține mai puțin de 0,5 g de grăsimi trans.",
+  "nutrition_crosslinks_title": "Vezi și",
+  "sources_title": "Surse",
+  "back-button": "← Înapoi"
 }
