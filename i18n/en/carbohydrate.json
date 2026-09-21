@@ -4,35 +4,21 @@
   "module_icon": "carbohidrato.png",
   "aliases": "",
   "what_is_title": "What it is",
-  "what_is": "Carbohydrates cover sugars, starches and other compounds. They are an important source of energy, but the figure on a label is not defined in exactly the same way in every market.\n\nIn the European Union, “carbohydrate” means carbohydrate metabolised by humans and includes polyols; fibre is declared separately. Polyols may also be shown as an “of which” subfield under carbohydrate.\n\nIn the United States, “Total Carbohydrate” includes dietary fibre, sugars and sugar alcohols.\n\nSo the same product can carry different figures on two labels without either being wrong: before comparing them, you need to know which definition each market uses.",
+  "what_is": "Carbohydrate is a group of nutrients that includes sugars, starches and other carbohydrates. Foods can contain these in very different proportions.",
   "why_botia_title": "Why BOTIA flags it",
-  "why_botia": "BOTIA flags carbohydrate because it is one of the easiest fields to compare badly. Two figures that look equivalent can be built from different definitions depending on the market, especially because fibre is treated differently.\n\nAnd because the number alone says little: it does not tell you how much is sugars, starch, fibre or other components unless the label declares those separately.",
+  "why_botia": "The carbohydrate figure on a nutrition label does not always mean exactly the same thing in every market. BOTIA keeps the declared value separate from the regulatory definition that applies to that label and from any evidence used to give it context.",
   "can_title": "BOTIA CAN",
-  "can_1": "Read the declared value and keep its unit, its basis and the market where the product was labelled.",
-  "can_2": "State which definition applies in that market: whether fibre is part of the total and how polyols are declared.",
-  "can_3": "Show any subfields the label declares separately, such as sugars, starch, fibre or polyols.",
+  "can_1": "Read the carbohydrate value declared on the nutrition label and preserve its unit and basis.",
+  "can_2": "Show separately declared related values such as sugars, starch, fibre or polyols when they appear on the label.",
+  "can_3": "Connect the declared value with the applicable regulatory information and documented evidence.",
   "cannot_title": "BOTIA CANNOT",
-  "cannot_1": "Tell you what percentage of your own needs this value represents.",
-  "cannot_2": "Compare a European figure directly with an American one without stating that the definitions differ.",
-  "cannot_3": "Work out how much is sugar and how much is starch if the label does not declare them separately.",
-  "cannot_4": "Treat an undeclared value as zero.",
+  "cannot_1": "Determine how much of the carbohydrate is sugar, starch, fibre or another component when the label does not declare those values separately.",
+  "cannot_2": "Assume that carbohydrate figures from different markets are directly comparable without checking the applicable definition.",
+  "cannot_3": "Treat an undeclared carbohydrate value as zero.",
   "sources_title": "Sources",
   "back-button": "← Back",
   "title": "Carbohydrate",
-  "description": "Carbohydrates cover sugars, starches and other compounds. They are an important source of energy, but the figure on a label is not defined in exactly the same way in every market.",
+  "description": "Carbohydrate is a group of nutrients that includes sugars, starches and other carbohydrates. Foods can contain these in very different proportions.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Carbohydrate intake for adults and children (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073593"
-    }
-  ]
+  "sources": []
 }

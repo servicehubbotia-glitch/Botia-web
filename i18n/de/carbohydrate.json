@@ -4,35 +4,21 @@
   "module_icon": "carbohidrato.png",
   "aliases": "",
   "what_is_title": "Was es ist",
-  "what_is": "Kohlenhydrate umfassen Zucker, Stärken und andere Verbindungen. Sie sind eine wichtige Energiequelle, aber die Zahl auf einem Etikett ist nicht in jedem Markt genau gleich definiert.\n\nIn der Europäischen Union bedeutet „Kohlenhydrat“ vom Menschen verwertbares Kohlenhydrat und schließt Polyole ein; Ballaststoffe werden separat angegeben. Polyole können auch als Unterfeld „davon“ unter Kohlenhydraten ausgewiesen werden.\n\nIn den Vereinigten Staaten umfasst „Total Carbohydrate“ Ballaststoffe, Zucker und Zuckeralkohole.\n\nDasselbe Produkt kann also auf zwei Etiketten unterschiedliche Zahlen tragen, ohne dass eine davon falsch ist: Bevor man sie vergleicht, muss man wissen, welche Definition der jeweilige Markt verwendet.",
+  "what_is": "Kohlenhydrate sind eine Gruppe von Nährstoffen, die Zucker, Stärken und andere Kohlenhydrate umfasst. Lebensmittel können sie in sehr unterschiedlichen Anteilen enthalten.",
   "why_botia_title": "Warum BOTIA es markiert",
-  "why_botia": "BOTIA markiert Kohlenhydrate, weil es eines der Felder ist, die am leichtesten schlecht verglichen werden. Zwei Zahlen, die gleichwertig aussehen, können je nach Markt aus unterschiedlichen Definitionen gebildet werden, insbesondere weil Ballaststoffe unterschiedlich behandelt werden.\n\nUnd weil die Zahl allein wenig aussagt: Sie sagt nicht, wie viel Zucker, Stärke, Ballaststoffe oder andere Bestandteile darin enthalten sind, es sei denn, das Etikett weist sie separat aus.",
+  "why_botia": "Die Kohlenhydratzahl auf einem Nährwertetikett bedeutet nicht in jedem Markt genau dasselbe. BOTIA hält den deklarierten Wert getrennt von der regulatorischen Definition, die für dieses Etikett gilt, und von allen Belegen, die ihm Kontext geben.",
   "can_title": "BOTIA KANN",
-  "can_1": "Den angegebenen Wert lesen und seine Einheit, seine Basis und den Markt beibehalten, in dem das Produkt gekennzeichnet wurde.",
-  "can_2": "Angeben, welche Definition in diesem Markt gilt: ob Ballaststoffe zum Gesamtwert gehören und wie Polyole ausgewiesen werden.",
-  "can_3": "Alle Unterfelder anzeigen, die das Etikett separat ausweist, wie Zucker, Stärke, Ballaststoffe oder Polyole.",
+  "can_1": "Den auf dem Nährwertetikett deklarierten Kohlenhydratwert lesen und seine Einheit und Basis beibehalten.",
+  "can_2": "Separat deklarierte verwandte Werte wie Zucker, Stärke, Ballaststoffe oder Polyole anzeigen, wenn sie auf dem Etikett erscheinen.",
+  "can_3": "Den deklarierten Wert mit den geltenden regulatorischen Informationen und dokumentierten Belegen verknüpfen.",
   "cannot_title": "BOTIA KANN NICHT",
-  "cannot_1": "Dir sagen, welchen Prozentsatz deines eigenen Bedarfs dieser Wert darstellt.",
-  "cannot_2": "Eine europäische Zahl direkt mit einer amerikanischen vergleichen, ohne anzugeben, dass die Definitionen abweichen.",
-  "cannot_3": "Ermitteln, wie viel Zucker und wie viel Stärke es ist, wenn das Etikett sie nicht separat ausweist.",
-  "cannot_4": "Einen nicht angegebenen Wert als Null behandeln.",
+  "cannot_1": "Bestimmen, wie viel der Kohlenhydrate Zucker, Stärke, Ballaststoffe oder ein anderer Bestandteil ist, wenn das Etikett diese Werte nicht separat deklariert.",
+  "cannot_2": "Annehmen, dass Kohlenhydratzahlen aus verschiedenen Märkten direkt vergleichbar sind, ohne die geltende Definition zu prüfen.",
+  "cannot_3": "Einen nicht deklarierten Kohlenhydratwert als Null behandeln.",
   "sources_title": "Quellen",
   "back-button": "← Zurück",
   "title": "Kohlenhydrate",
-  "description": "Kohlenhydrate umfassen Zucker, Stärken und andere Verbindungen. Sie sind eine wichtige Energiequelle, aber die Zahl auf einem Etikett ist nicht in jedem Markt genau gleich definiert.",
+  "description": "Kohlenhydrate sind eine Gruppe von Nährstoffen, die Zucker, Stärken und andere Kohlenhydrate umfasst. Lebensmittel können sie in sehr unterschiedlichen Anteilen enthalten.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Carbohydrate intake for adults and children (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073593"
-    }
-  ]
+  "sources": []
 }
