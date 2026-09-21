@@ -18,11 +18,34 @@
 
   const el = id => document.getElementById(id);
 
+  const NUTRIENT_PROFILE_SLUGS = {
+    energy_kj: "energy",
+    energy_kcal: "energy",
+    fat: "total_fat",
+    saturated_fat: "saturated_fat",
+    trans_fat: "trans_fats",
+    monounsaturated_fat: "monounsaturated_fat",
+    polyunsaturated_fat: "polyunsaturated_fat",
+    carbohydrate: "carbohydrate",
+    starch: "starch",
+    polyols: "polyols",
+    total_sugars: "total_sugars",
+    added_sugars: "added_sugars",
+    free_sugars: "free_sugars",
+    fibre: "fibre",
+    protein: "protein",
+    salt: "salt",
+    sodium: "sodium",
+    cholesterol: "cholesterol"
+  };
+
   const NUTRIENT_LABELS = {
     en: {
       energy_kj: "Energy", energy_kcal: "Energy", fat: "Total fat",
       saturated_fat: "Saturated fat", trans_fat: "Trans fat",
-      carbohydrate: "Carbohydrate", total_sugars: "Total sugars",
+      monounsaturated_fat: "Monounsaturated fat", polyunsaturated_fat: "Polyunsaturated fat",
+      carbohydrate: "Carbohydrate", starch: "Starch", polyols: "Polyols",
+      total_sugars: "Total sugars",
       added_sugars: "Added sugars", free_sugars: "Free sugars",
       fibre: "Fibre", protein: "Protein", salt: "Salt", sodium: "Sodium",
       cholesterol: "Cholesterol", potassium: "Potassium", calcium: "Calcium",
@@ -31,7 +54,9 @@
     es: {
       energy_kj: "Energía", energy_kcal: "Energía", fat: "Grasas totales",
       saturated_fat: "Grasas saturadas", trans_fat: "Grasas trans",
-      carbohydrate: "Hidratos de carbono", total_sugars: "Azúcares totales",
+      monounsaturated_fat: "Grasas monoinsaturadas", polyunsaturated_fat: "Grasas poliinsaturadas",
+      carbohydrate: "Hidratos de carbono", starch: "Almidón", polyols: "Polioles",
+      total_sugars: "Azúcares totales",
       added_sugars: "Azúcares añadidos", free_sugars: "Azúcares libres",
       fibre: "Fibra", protein: "Proteínas", salt: "Sal", sodium: "Sodio",
       cholesterol: "Colesterol", potassium: "Potasio", calcium: "Calcio",
@@ -40,7 +65,9 @@
     ar: {
       energy_kj: "الطاقة", energy_kcal: "الطاقة", fat: "الدهون الكلية",
       saturated_fat: "الدهون المشبعة", trans_fat: "الدهون المتحولة",
-      carbohydrate: "الكربوهيدرات", total_sugars: "السكريات الكلية",
+      monounsaturated_fat: "الدهون الأحادية غير المشبعة", polyunsaturated_fat: "الدهون المتعددة غير المشبعة",
+      carbohydrate: "الكربوهيدرات", starch: "النشا", polyols: "البوليولات",
+      total_sugars: "السكريات الكلية",
       added_sugars: "السكريات المضافة", free_sugars: "السكريات الحرة",
       fibre: "الألياف", protein: "البروتين", salt: "الملح", sodium: "الصوديوم",
       cholesterol: "الكوليسترول", potassium: "البوتاسيوم", calcium: "الكالسيوم",
@@ -49,7 +76,9 @@
     de: {
       energy_kj: "Energie", energy_kcal: "Energie", fat: "Fett",
       saturated_fat: "Gesättigte Fettsäuren", trans_fat: "Transfette",
-      carbohydrate: "Kohlenhydrate", total_sugars: "Zucker gesamt",
+      monounsaturated_fat: "Einfach ungesättigte Fettsäuren", polyunsaturated_fat: "Mehrfach ungesättigte Fettsäuren",
+      carbohydrate: "Kohlenhydrate", starch: "Stärke", polyols: "Polyole",
+      total_sugars: "Zucker gesamt",
       added_sugars: "Zugesetzter Zucker", free_sugars: "Freie Zucker",
       fibre: "Ballaststoffe", protein: "Eiweiß", salt: "Salz", sodium: "Natrium",
       cholesterol: "Cholesterin", potassium: "Kalium", calcium: "Calcium",
@@ -58,7 +87,9 @@
     fr: {
       energy_kj: "Énergie", energy_kcal: "Énergie", fat: "Matières grasses",
       saturated_fat: "Acides gras saturés", trans_fat: "Acides gras trans",
-      carbohydrate: "Glucides", total_sugars: "Sucres totaux",
+      monounsaturated_fat: "Matières grasses monoinsaturées", polyunsaturated_fat: "Matières grasses polyinsaturées",
+      carbohydrate: "Glucides", starch: "Amidon", polyols: "Polyols",
+      total_sugars: "Sucres totaux",
       added_sugars: "Sucres ajoutés", free_sugars: "Sucres libres",
       fibre: "Fibres", protein: "Protéines", salt: "Sel", sodium: "Sodium",
       cholesterol: "Cholestérol", potassium: "Potassium", calcium: "Calcium",
@@ -67,7 +98,9 @@
     id: {
       energy_kj: "Energi", energy_kcal: "Energi", fat: "Lemak total",
       saturated_fat: "Lemak jenuh", trans_fat: "Lemak trans",
-      carbohydrate: "Karbohidrat", total_sugars: "Gula total",
+      monounsaturated_fat: "Lemak tak jenuh tunggal", polyunsaturated_fat: "Lemak tak jenuh ganda",
+      carbohydrate: "Karbohidrat", starch: "Pati", polyols: "Poliol",
+      total_sugars: "Gula total",
       added_sugars: "Gula tambahan", free_sugars: "Gula bebas",
       fibre: "Serat pangan", protein: "Protein", salt: "Garam", sodium: "Natrium",
       cholesterol: "Kolesterol", potassium: "Kalium", calcium: "Kalsium",
@@ -76,7 +109,9 @@
     it: {
       energy_kj: "Energia", energy_kcal: "Energia", fat: "Grassi totali",
       saturated_fat: "Grassi saturi", trans_fat: "Grassi trans",
-      carbohydrate: "Carboidrati", total_sugars: "Zuccheri totali",
+      monounsaturated_fat: "Grassi monoinsaturi", polyunsaturated_fat: "Grassi polinsaturi",
+      carbohydrate: "Carboidrati", starch: "Amido", polyols: "Polioli",
+      total_sugars: "Zuccheri totali",
       added_sugars: "Zuccheri aggiunti", free_sugars: "Zuccheri liberi",
       fibre: "Fibre", protein: "Proteine", salt: "Sale", sodium: "Sodio",
       cholesterol: "Colesterolo", potassium: "Potassio", calcium: "Calcio",
@@ -85,7 +120,9 @@
     nl: {
       energy_kj: "Energie", energy_kcal: "Energie", fat: "Totaal vet",
       saturated_fat: "Verzadigd vet", trans_fat: "Transvet",
-      carbohydrate: "Koolhydraten", total_sugars: "Totale suikers",
+      monounsaturated_fat: "Enkelvoudig onverzadigde vetten", polyunsaturated_fat: "Meervoudig onverzadigde vetten",
+      carbohydrate: "Koolhydraten", starch: "Zetmeel", polyols: "Polyolen",
+      total_sugars: "Totale suikers",
       added_sugars: "Toegevoegde suikers", free_sugars: "Vrije suikers",
       fibre: "Vezels", protein: "Eiwitten", salt: "Zout", sodium: "Natrium",
       cholesterol: "Cholesterol", potassium: "Kalium", calcium: "Calcium",
@@ -94,7 +131,9 @@
     pl: {
       energy_kj: "Wartość energetyczna", energy_kcal: "Wartość energetyczna",
       fat: "Tłuszcz", saturated_fat: "Kwasy tłuszczowe nasycone",
-      trans_fat: "Tłuszcze trans", carbohydrate: "Węglowodany",
+      trans_fat: "Tłuszcze trans",
+      monounsaturated_fat: "Tłuszcze jednonienasycone", polyunsaturated_fat: "Tłuszcze wielonienasycone",
+      carbohydrate: "Węglowodany", starch: "Skrobia", polyols: "Poliole",
       total_sugars: "Cukry ogółem", added_sugars: "Cukry dodane",
       free_sugars: "Cukry wolne", fibre: "Błonnik", protein: "Białko",
       salt: "Sól", sodium: "Sód", cholesterol: "Cholesterol",
@@ -103,7 +142,9 @@
     pt: {
       energy_kj: "Energia", energy_kcal: "Energia", fat: "Gorduras totais",
       saturated_fat: "Gorduras saturadas", trans_fat: "Gorduras trans",
-      carbohydrate: "Hidratos de carbono", total_sugars: "Açúcares totais",
+      monounsaturated_fat: "Gorduras monoinsaturadas", polyunsaturated_fat: "Gorduras polinsaturadas",
+      carbohydrate: "Hidratos de carbono", starch: "Amido", polyols: "Polióis",
+      total_sugars: "Açúcares totais",
       added_sugars: "Açúcares adicionados", free_sugars: "Açúcares livres",
       fibre: "Fibra", protein: "Proteínas", salt: "Sal", sodium: "Sódio",
       cholesterol: "Colesterol", potassium: "Potássio", calcium: "Cálcio",
@@ -112,7 +153,9 @@
     ro: {
       energy_kj: "Energie", energy_kcal: "Energie", fat: "Grăsimi totale",
       saturated_fat: "Grăsimi saturate", trans_fat: "Grăsimi trans",
-      carbohydrate: "Carbohidrați", total_sugars: "Zaharuri totale",
+      monounsaturated_fat: "Grăsimi mononesaturate", polyunsaturated_fat: "Grăsimi polinesaturate",
+      carbohydrate: "Carbohidrați", starch: "Amidon", polyols: "Polioli",
+      total_sugars: "Zaharuri totale",
       added_sugars: "Zaharuri adăugate", free_sugars: "Zaharuri libere",
       fibre: "Fibre", protein: "Proteine", salt: "Sare", sodium: "Sodiu",
       cholesterol: "Colesterol", potassium: "Potasiu", calcium: "Calciu",
@@ -121,7 +164,9 @@
     ru: {
       energy_kj: "Энергетическая ценность", energy_kcal: "Энергетическая ценность",
       fat: "Жиры", saturated_fat: "Насыщенные жиры", trans_fat: "Трансжиры",
-      carbohydrate: "Углеводы", total_sugars: "Сахара всего",
+      monounsaturated_fat: "Мононенасыщенные жиры", polyunsaturated_fat: "Полиненасыщенные жиры",
+      carbohydrate: "Углеводы", starch: "Крахмал", polyols: "Полиолы",
+      total_sugars: "Сахара всего",
       added_sugars: "Добавленные сахара", free_sugars: "Свободные сахара",
       fibre: "Пищевые волокна", protein: "Белки", salt: "Соль", sodium: "Натрий",
       cholesterol: "Холестерин", potassium: "Калий", calcium: "Кальций",
@@ -130,7 +175,9 @@
     tr: {
       energy_kj: "Enerji", energy_kcal: "Enerji", fat: "Toplam yağ",
       saturated_fat: "Doymuş yağ", trans_fat: "Trans yağ",
-      carbohydrate: "Karbonhidrat", total_sugars: "Toplam şeker",
+      monounsaturated_fat: "Tekli doymamış yağ", polyunsaturated_fat: "Çoklu doymamış yağ",
+      carbohydrate: "Karbonhidrat", starch: "Nişasta", polyols: "Poliyoller",
+      total_sugars: "Toplam şeker",
       added_sugars: "İlave şeker", free_sugars: "Serbest şeker",
       fibre: "Lif", protein: "Protein", salt: "Tuz", sodium: "Sodyum",
       cholesterol: "Kolesterol", potassium: "Potasyum", calcium: "Kalsiyum",
@@ -139,7 +186,9 @@
     zh: {
       energy_kj: "能量", energy_kcal: "能量", fat: "总脂肪",
       saturated_fat: "饱和脂肪", trans_fat: "反式脂肪",
-      carbohydrate: "碳水化合物", total_sugars: "总糖",
+      monounsaturated_fat: "单不饱和脂肪", polyunsaturated_fat: "多不饱和脂肪",
+      carbohydrate: "碳水化合物", starch: "淀粉", polyols: "多元醇",
+      total_sugars: "总糖",
       added_sugars: "添加糖", free_sugars: "游离糖",
       fibre: "膳食纤维", protein: "蛋白质", salt: "盐", sodium: "钠",
       cholesterol: "胆固醇", potassium: "钾", calcium: "钙",
@@ -154,7 +203,14 @@
     fibre_g: "fibre", fiber_g: "fibre", protein_g: "protein",
     salt_g: "salt", sodium_mg: "sodium", cholesterol_mg: "cholesterol",
     potassium_mg: "potassium", calcium_mg: "calcium", iron_mg: "iron",
-    vitamin_d_ug: "vitamin_d"
+    vitamin_d_ug: "vitamin_d",
+    starch_g: "starch",
+    polyols_g: "polyols",
+    sugar_alcohols_g: "polyols",
+    fat_monounsaturated_g: "monounsaturated_fat",
+    monounsaturated_fat_g: "monounsaturated_fat",
+    fat_polyunsaturated_g: "polyunsaturated_fat",
+    polyunsaturated_fat_g: "polyunsaturated_fat",
   };
 
   const normaliseLabel = value => String(value || "")
@@ -245,7 +301,77 @@
     "السكريات":"total_sugars","السكريات الكلية":"total_sugars",
     "السكريات المضافة":"added_sugars","السكريات الحرة":"free_sugars",
     "الألياف":"fibre","البروتين":"protein","الملح":"salt","الصوديوم":"sodium",
-    "الطاقة":"__energy__"
+    "الطاقة":"__energy__",
+
+    // Starch
+    "starch":"starch",
+    "almidon":"starch",
+    "amidon":"starch",
+    "starke":"starch",
+    "zetmeel":"starch",
+    "amido":"starch",
+    "skrobia":"starch",
+    "nisasta":"starch",
+    "pati":"starch",
+    "крахмал":"starch",
+    "淀粉":"starch",
+    "النشا":"starch",
+
+    // Polyols
+    "polyols":"polyols",
+    "polyol":"polyols",
+    "sugar alcohols":"polyols",
+    "sugar alcohol":"polyols",
+    "polioles":"polyols",
+    "polyole":"polyols",
+    "poliois":"polyols",
+    "polioli":"polyols",
+    "polyolen":"polyols",
+    "poliole":"polyols",
+    "poliyoller":"polyols",
+    "полиолы":"polyols",
+    "多元醇":"polyols",
+    "البوليولات":"polyols",
+
+    // Monounsaturated fat
+    "monounsaturated fat":"monounsaturated_fat",
+    "monounsaturated fats":"monounsaturated_fat",
+    "monounsaturated fatty acids":"monounsaturated_fat",
+    "grasas monoinsaturadas":"monounsaturated_fat",
+    "matieres grasses monoinsaturees":"monounsaturated_fat",
+    "acides gras monoinsatures":"monounsaturated_fat",
+    "einfach ungesattigte fettsauren":"monounsaturated_fat",
+    "grassi monoinsaturi":"monounsaturated_fat",
+    "enkelvoudig onverzadigde vetten":"monounsaturated_fat",
+    "enkelvoudig onverzadigd vet":"monounsaturated_fat",
+    "tłuszcze jednonienasycone":"monounsaturated_fat",
+    "gorduras monoinsaturadas":"monounsaturated_fat",
+    "grasimi mononesaturate":"monounsaturated_fat",
+    "tekli doymamıs yag":"monounsaturated_fat",
+    "lemak tak jenuh tunggal":"monounsaturated_fat",
+    "мононенасыщенные жиры":"monounsaturated_fat",
+    "单不饱和脂肪":"monounsaturated_fat",
+    "الدهون الأحادية غير المشبعة":"monounsaturated_fat",
+
+    // Polyunsaturated fat
+    "polyunsaturated fat":"polyunsaturated_fat",
+    "polyunsaturated fats":"polyunsaturated_fat",
+    "polyunsaturated fatty acids":"polyunsaturated_fat",
+    "grasas poliinsaturadas":"polyunsaturated_fat",
+    "matieres grasses polyinsaturees":"polyunsaturated_fat",
+    "acides gras polyinsatures":"polyunsaturated_fat",
+    "mehrfach ungesattigte fettsauren":"polyunsaturated_fat",
+    "grassi polinsaturi":"polyunsaturated_fat",
+    "meervoudig onverzadigde vetten":"polyunsaturated_fat",
+    "meervoudig onverzadigd vet":"polyunsaturated_fat",
+    "tłuszcze wielonienasycone":"polyunsaturated_fat",
+    "gorduras polinsaturadas":"polyunsaturated_fat",
+    "grasimi polinesaturate":"polyunsaturated_fat",
+    "coklu doymamıs yag":"polyunsaturated_fat",
+    "lemak tak jenuh ganda":"polyunsaturated_fat",
+    "полиненасыщенные жиры":"polyunsaturated_fat",
+    "多不饱和脂肪":"polyunsaturated_fat",
+    "الدهون المتعددة غير المشبعة":"polyunsaturated_fat",
   };
 
   const canonicalNutrientKey = item => {
@@ -340,6 +466,15 @@
     return table[String(basis || "").trim()] || String(basis || "—");
   };
 
+  const profileHref = key => {
+    const slug = NUTRIENT_PROFILE_SLUGS[key];
+    if (!slug) return "";
+
+    const url = new URL(`/ingredients/${slug}.html`, location.origin);
+    url.searchParams.set("lang", lang);
+    return url.toString();
+  };
+
   const renderDeclared = data => {
     const vals = Array.isArray(data.declared) ? data.declared : [];
     el("declared_empty").hidden = vals.length > 0;
@@ -351,9 +486,20 @@
       const row = document.createElement("div");
       row.className = "nutrition-row" + (item.sub ? " sub" : "");
 
-      const nutrient = document.createElement("div");
-      nutrient.className = "nutrient";
+      const key = canonicalNutrientKey(item);
+      const href = profileHref(key);
+
+      const nutrient = document.createElement(href ? "a" : "div");
+      nutrient.className = href
+        ? "nutrient nutrient-link"
+        : "nutrient";
+
       nutrient.textContent = nutrientLabel(item);
+
+      if (href) {
+        nutrient.href = href;
+        nutrient.setAttribute("aria-label", nutrient.textContent);
+      }
 
       const amount = document.createElement("div");
       amount.className = "amount";
