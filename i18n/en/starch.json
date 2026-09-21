@@ -4,34 +4,21 @@
   "module_icon": "carbohidrato.png",
   "aliases": "",
   "what_is_title": "What it is",
-  "what_is": "Starch is how plants store energy. It is found in potatoes, cereals, pulses and many foods made from them: bread, pasta, rice and flour.\n\nIn the European Union it may be declared as additional information within the nutrition table, under carbohydrate; it is not one of the core mandatory fields.\n\nIt should not be confused with the modified starches that appear in ingredient lists. Those have a technological function: they thicken, stabilise or give texture. Starch declared in the nutrition table is a quantity, not the name of an additive.",
+  "what_is": "Starch is a carbohydrate made of long chains of glucose. Plants use it to store energy, and it is naturally present in foods such as cereals, potatoes, rice, pasta and pulses.",
   "why_botia_title": "Why BOTIA flags it",
-  "why_botia": "BOTIA flags starch because, when it is declared, it helps explain where part of a product’s carbohydrate comes from.\n\nAnd because the word can mislead: someone who sees “modified starch” in an ingredient list and then “starch” in the nutrition table may assume they are the same thing. They are not.",
+  "why_botia": "When starch is declared in a nutrition table, it helps explain part of the carbohydrate content. It is also important to distinguish nutritional starch from modified starches listed as ingredients, which are used for technological purposes.",
   "can_title": "BOTIA CAN",
-  "can_1": "Read the declared value and keep its unit and its basis.",
-  "can_2": "Explain that starch in the nutrition table and modified starches in the ingredient list are different things.",
-  "can_3": "Link to the modified starches record when they appear in the ingredient list.",
+  "can_1": "Read the starch value when it is declared on the nutrition label and preserve its unit and basis.",
+  "can_2": "Distinguish starch declared as a nutritional value from modified starches identified in the ingredient list.",
+  "can_3": "Connect the declared value with the applicable regulatory information and documented evidence where relevant.",
   "cannot_title": "BOTIA CANNOT",
-  "cannot_1": "Work out starch by subtracting sugars from total carbohydrate. That difference can include other components depending on the declaration system.",
-  "cannot_2": "Know which plant the starch came from if the label does not say.",
-  "cannot_3": "Treat an undeclared value as zero. A product not declaring starch does not mean it has none.",
+  "cannot_1": "Calculate starch by subtracting sugars from total carbohydrate.",
+  "cannot_2": "Determine the botanical source of the starch when the label does not state it.",
+  "cannot_3": "Treat an undeclared starch value as zero.",
   "sources_title": "Sources",
   "back-button": "← Back",
   "title": "Starch",
-  "description": "Starch is how plants store energy. It is found in potatoes, cereals, pulses and many foods made from them: bread, pasta, rice and flour.",
+  "description": "Starch is a carbohydrate made of long chains of glucose. Plants use it to store energy, and it is naturally present in foods such as cereals, potatoes, rice, pasta and pulses.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "Codex — CXG 2-1985 Guidelines on Nutrition Labelling",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%3A%2F%2Fworkspace.fao.org%2Fsites%2Fcodex%2FStandards%2FCXG+2-1985%2FCXG_002e.pdf"
-    },
-    {
-      "label": "WHO — Carbohydrate intake for adults and children (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073593"
-    }
-  ]
+  "sources": []
 }
