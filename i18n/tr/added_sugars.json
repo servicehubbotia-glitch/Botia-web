@@ -2,45 +2,27 @@
   "name": "İlave şekerler",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "ilave şeker",
   "what_is_title": "Nedir",
-  "what_is": "İlave şekerler, işleme sırasında eklenen şekerlerdir; gıdada hâlihazırda doğal olarak bulunan şekerler değildir.\n\nTam tanım pazara bağlıdır. Amerika Birleşik Devletleri'nde FDA; işleme sırasında eklenen şekerleri, tatlandırıcı, şurup ve bal olarak paketlenen şekerleri ve aynı hacimdeki %100 meyve suyundan beklenenin üzerine çıktığında konsantre meyve veya sebze sularından gelen şekerleri kapsar.\n\nBu nedenle bal, agave şurubu, esmer şeker veya tatlandırmak için kullanılan bazı konsantreler ilave şeker sayılabilir. Buna karşılık, sütte doğal olarak bulunan laktoz veya meyvede doğal olarak bulunan fruktoz bu nedenle ilave şeker haline gelmez.\n\nFDA, 2016 etiket reformunda zorunlu İlave Şekerler beyanını getirdi; uyum tarihleri daha sonradır. Brezilya ve Hindistan da şu anda ilave şekerlerin beyan edilmesini şart koşmaktadır. Avrupa Birliği, beslenme beyanında ilave şekerleri zorunlu alan olarak içermez.",
+  "what_is": "İlave şekerler, bir gıdaya işleme veya hazırlama sırasında eklenen şekerlerdir; içeriklerinde doğal olarak bulunan şekerler değildir.",
   "why_botia_title": "BOTIA neden işaretler",
-  "why_botia": "BOTIA ilave şekerleri işaretler çünkü insanların gerçekte sorduğu soruya yanıt veren alandır: ne kadar şeker olduğu değil, ne kadar konulduğu.\n\nVe çünkü türetilemez. Bir pazar bunları beyan etmiyorsa, toplamdan hesaplamanın bir yolu yoktur: tarif gerekir.\n\nBOTIA'nın beyan edilmedikleri yerlerde yapabileceği şey, içerik listesine bakmak ve orada birçok adı altında görünen şekerleri işaret etmektir.",
+  "why_botia": "İlave şekerler toplam şekerle aynı şey değildir ve her pazar bunların ayrı olarak beyan edilmesini şart koşmaz. BOTIA beyan edilen ilave şeker değerini toplam şekerden, serbest şekerlerden ve ona katkıda bulunabilecek içeriklerden ayrı tutar.",
   "can_title": "BOTIA YAPABİLİR",
-  "can_1": "Beyan edilen değeri, var olduğu yerde okumak ve birimini ve temelini korumak.",
-  "can_2": "Ürünün etiketlendiği pazarda geçerli olan referansı göstermek ve onu yayımlayan kurumu adlandırmak.",
-  "can_3": "Pazar tanımı bunları ilave şeker olarak ele aldığında, beyan edilen ilave şekerleri ve şurup, dekstroz, bal, melas, invert şeker veya meyve suyu konsantreleri gibi kaynakları belirlemek.",
-  "can_4": "Geçerli pazarın bal, şuruplar ve meyve suyu konsantrelerini ilave şeker tanımı içinde nasıl ele aldığını açıklamak.",
+  "can_1": "İlave şeker değeri beslenme etiketinde beyan edildiğinde okumak ve birimini ve temelini korumak.",
+  "can_2": "İlave şekerleri toplam şekerden ve diğer şekerle ilgili alanlardan ayrı tutmak.",
+  "can_3": "İlave şekerlere katkıda bulunabilecek beyan edilen içerikleri belirlemek.",
+  "can_4": "Beyan edilen değeri geçerli düzenleyici bilgilerle ve belgelenmiş kanıtlarla ilişkilendirmek.",
   "cannot_title": "BOTIA YAPAMAZ",
-  "cannot_1": "Bu değerin kendi ihtiyaçlarının yüzde kaçını temsil ettiğini söylemek.",
-  "cannot_2": "Toplam şekerden bir şey çıkararak hesaplamak. Türetilemez: tarif gerekir.",
-  "cannot_3": "Pazarın beyanı zorunlu tutmadığı yerlerde ne kadar eklendiğini bilmek. Örneğin Avrupa Birliği'nde tabloda görünmez.",
-  "cannot_4": "Bunları serbest şekerlerle aynı şey olarak ele almak. Farklı tanımlara ve arkalarında farklı kurumlara sahip ayrı kavramlardır.",
-  "cannot_5": "Beyan edilmemiş bir değeri sıfır olarak ele almak. Etikette görünmemesi yok anlamına gelmez.",
+  "cannot_1": "Etiket ayrı olarak beyan etmediğinde ilave şekerleri toplam şekerden hesaplamak.",
+  "cannot_2": "Her ilave şeker içeriğinin katkıda bulunduğu kesin miktarı belirlemek.",
+  "cannot_3": "İlave şekerler ve serbest şekerleri aynı kavram olarak ele almak.",
+  "cannot_4": "Beyan edilmemiş bir ilave şeker değerini sıfır olarak ele almak.",
   "sources_title": "Kaynaklar",
   "back-button": "← Geri",
   "title": "İlave şekerler",
-  "description": "İlave şekerler, işleme sırasında eklenen şekerlerdir; gıdada hâlihazırda doğal olarak bulunan şekerler değildir.",
+  "description": "İlave şekerler, bir gıdaya işleme veya hazırlama sırasında eklenen şekerlerdir; içeriklerinde doğal olarak bulunan şekerler değildir.",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "FDA — Added Sugars on the Nutrition Facts Label",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label"
-    },
-    {
-      "label": "Brazil ANVISA — Nutrition labelling: RDC 429/2020 and IN 75/2020",
-      "url": "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/rotulagem/rotulagem-nutricional"
-    },
-    {
-      "label": "India FSSAI — Labelling and Display Regulations, 2020 (Compendium, 3 Apr 2025)",
-      "url": "https://www.fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VII_03042025.pdf"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }

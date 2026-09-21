@@ -2,45 +2,27 @@
   "name": "Zuccheri aggiunti",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "zucchero aggiunto",
   "what_is_title": "Cos'è",
-  "what_is": "Gli zuccheri aggiunti sono zuccheri introdotti durante la lavorazione, non zuccheri già naturalmente presenti nell'alimento.\n\nLa definizione esatta dipende dal mercato. Negli Stati Uniti, la FDA include gli zuccheri aggiunti durante la lavorazione, gli zuccheri confezionati come dolcificanti, gli sciroppi e il miele, e gli zuccheri da concentrati di frutta o verdura quando superano ciò che ci si aspetterebbe dallo stesso volume di succo al 100%.\n\nEcco perché miele, sciroppo d'agave, zucchero di canna o alcuni concentrati usati per dolcificare possono contare come zuccheri aggiunti. Al contrario, il lattosio naturalmente presente nel latte o il fruttosio naturalmente presente nella frutta non diventano zuccheri aggiunti per questo motivo.\n\nLa FDA ha introdotto la dichiarazione obbligatoria degli zuccheri aggiunti nella riforma dell'etichettatura del 2016, con date di conformità successive. Anche Brasile e India attualmente richiedono la dichiarazione degli zuccheri aggiunti. L'Unione europea non include gli zuccheri aggiunti come campo obbligatorio nella sua dichiarazione nutrizionale.",
+  "what_is": "Gli zuccheri aggiunti sono zuccheri introdotti in un alimento durante la trasformazione o la preparazione, e non zuccheri naturalmente presenti nei suoi ingredienti.",
   "why_botia_title": "Perché BOTIA lo segnala",
-  "why_botia": "BOTIA segnala gli zuccheri aggiunti perché è il campo che risponde alla domanda che le persone effettivamente fanno: non quanto zucchero c'è, ma quanto ne è stato messo.\n\nE perché non possono essere dedotti. Se un mercato non li dichiara, non c'è modo di calcolarli dal totale: servirebbe la ricetta.\n\nCiò che BOTIA può fare dove non sono dichiarati è guardare l'elenco degli ingredienti e indicare gli zuccheri che vi appaiono, sotto i loro molti nomi.",
+  "why_botia": "Gli zuccheri aggiunti non sono la stessa cosa degli zuccheri totali, e non tutti i mercati richiedono che siano dichiarati separatamente. BOTIA mantiene un valore dichiarato di zuccheri aggiunti distinto dagli zuccheri totali, dagli zuccheri liberi e dagli ingredienti che possono contribuirvi.",
   "can_title": "BOTIA PUÒ",
-  "can_1": "Leggere il valore dichiarato, dove esiste, e conservarne l'unità e la base.",
-  "can_2": "Mostrare il riferimento che si applica nel mercato in cui il prodotto è stato etichettato e nominare l'autorità che lo pubblica.",
-  "can_3": "Identificare gli zuccheri aggiunti dichiarati e fonti come sciroppi, destrosio, miele, melassa, zucchero invertito o concentrati di succo quando la definizione del mercato li tratta come zuccheri aggiunti.",
-  "can_4": "Spiegare come il mercato applicabile tratta miele, sciroppi e concentrati di succo nella sua definizione di zuccheri aggiunti.",
+  "can_1": "Leggere il valore degli zuccheri aggiunti quando è dichiarato sull'etichetta nutrizionale e preservarne l'unità e la base.",
+  "can_2": "Mantenere gli zuccheri aggiunti separati dagli zuccheri totali e da altri campi legati agli zuccheri.",
+  "can_3": "Identificare gli ingredienti dichiarati che possono apportare zuccheri aggiunti.",
+  "can_4": "Collegare il valore dichiarato alle informazioni normative applicabili e alle prove documentate.",
   "cannot_title": "BOTIA NON PUÒ",
-  "cannot_1": "Dirti quale percentuale dei tuoi fabbisogni rappresenta questo valore.",
-  "cannot_2": "Calcolarli sottraendo qualsiasi cosa dagli zuccheri totali. Non possono essere dedotti: servirebbe la ricetta.",
-  "cannot_3": "Sapere quanto è stato aggiunto dove il mercato non richiede la dichiarazione. Nell'Unione europea, per esempio, non compare nella tabella.",
-  "cannot_4": "Trattarli come la stessa cosa degli zuccheri liberi. Sono concetti separati, con definizioni diverse e organismi diversi dietro.",
-  "cannot_5": "Trattare un valore non dichiarato come zero. Non comparire sull'etichetta non significa che non ce ne siano.",
+  "cannot_1": "Calcolare gli zuccheri aggiunti dagli zuccheri totali quando l'etichetta non li dichiara separatamente.",
+  "cannot_2": "Determinare la quantità esatta apportata da ciascun ingrediente con zucchero aggiunto.",
+  "cannot_3": "Trattare gli zuccheri aggiunti e gli zuccheri liberi come lo stesso concetto.",
+  "cannot_4": "Trattare un valore di zuccheri aggiunti non dichiarato come zero.",
   "sources_title": "Fonti",
   "back-button": "← Indietro",
   "title": "Zuccheri aggiunti",
-  "description": "Gli zuccheri aggiunti sono zuccheri introdotti durante la lavorazione, non zuccheri già naturalmente presenti nell'alimento.",
+  "description": "Gli zuccheri aggiunti sono zuccheri introdotti in un alimento durante la trasformazione o la preparazione, e non zuccheri naturalmente presenti nei suoi ingredienti.",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "FDA — Added Sugars on the Nutrition Facts Label",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label"
-    },
-    {
-      "label": "Brazil ANVISA — Nutrition labelling: RDC 429/2020 and IN 75/2020",
-      "url": "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/rotulagem/rotulagem-nutricional"
-    },
-    {
-      "label": "India FSSAI — Labelling and Display Regulations, 2020 (Compendium, 3 Apr 2025)",
-      "url": "https://www.fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VII_03042025.pdf"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }

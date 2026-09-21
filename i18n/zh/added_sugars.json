@@ -2,45 +2,27 @@
   "name": "添加糖",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "添加糖",
   "what_is_title": "这是什么",
-  "what_is": "添加糖是在加工过程中引入的糖，而不是食品中已经天然存在的糖。\n\n确切的定义取决于市场。在美国，FDA 包括加工过程中添加的糖、作为甜味剂、糖浆和蜂蜜包装的糖，以及来自浓缩果蔬汁的糖——当它们超过相同体积 100% 果汁所能预期的时候。\n\n这就是为什么蜂蜜、龙舌兰糖浆、红糖或某些用于增甜的浓缩物可以算作添加糖。相比之下，牛奶中天然存在的乳糖或水果中天然存在的果糖不会因为这个原因而变成添加糖。\n\nFDA 在 2016 年的标签改革中引入了强制性的添加糖标示，合规日期较晚。巴西和印度目前也要求标示添加糖。欧盟未将添加糖作为其营养标示中的强制字段。",
+  "what_is": "添加糖是在加工或制备过程中引入食品的糖，而不是其配料中天然存在的糖。",
   "why_botia_title": "BOTIA 为何标记它",
-  "why_botia": "BOTIA 标记添加糖，因为它回答了人们真正问的问题：不是有多少糖，而是加了多少。\n\n而且因为它无法推导出来。如果某个市场不标示它们，就无法从总量中计算：那需要配方。\n\n在不标示它们的地方，BOTIA 能做的是查看配料表，并指出其中以各种名称出现的糖。",
+  "why_botia": "添加糖与总糖不是一回事，也并非每个市场都要求单独标示。BOTIA 将所标示的添加糖数值与总糖、游离糖以及可能为其作出贡献的配料分开。",
   "can_title": "BOTIA 可以",
-  "can_1": "读取所标示的数值（如果有），并保留其单位和基准。",
-  "can_2": "显示产品标示所在市场适用的参考值，并指明发布该参考值的机构。",
-  "can_3": "在市场定义将其视为添加糖的情况下，识别所标示的添加糖及其来源，如糖浆、葡萄糖、蜂蜜、糖蜜、转化糖或浓缩果汁。",
-  "can_4": "说明适用市场在其添加糖定义中如何处理蜂蜜、糖浆和浓缩果汁。",
+  "can_1": "在营养标签上标示添加糖数值时读取该数值，并保留其单位和基准。",
+  "can_2": "将添加糖与总糖和其他与糖相关的字段分开。",
+  "can_3": "识别可能贡献添加糖的已标示配料。",
+  "can_4": "将所标示的数值与适用的法规信息和记录的证据联系起来。",
   "cannot_title": "BOTIA 不能",
-  "cannot_1": "告诉您这个数值占您自身需求的百分比。",
-  "cannot_2": "通过从总糖中减去任何东西来计算它们。它们无法被推导出来：那需要配方。",
-  "cannot_3": "在市场不要求标示的地方知道加了多少。例如在欧盟，它不出现在表格中。",
-  "cannot_4": "把它们当作与游离糖相同的东西。它们是分开的概念，有不同的定义，背后是不同的机构。",
-  "cannot_5": "把未标示的数值当作零。没出现在标签上并不意味着没有。",
+  "cannot_1": "当标签未单独标示时，从总糖计算添加糖。",
+  "cannot_2": "确定每种添加糖配料具体贡献的数量。",
+  "cannot_3": "把添加糖和游离糖当作同一概念。",
+  "cannot_4": "把未标示的添加糖数值当作零。",
   "sources_title": "来源",
   "back-button": "← 返回",
   "title": "添加糖",
-  "description": "添加糖是在加工过程中引入的糖，而不是食品中已经天然存在的糖。",
+  "description": "添加糖是在加工或制备过程中引入食品的糖，而不是其配料中天然存在的糖。",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "FDA — Added Sugars on the Nutrition Facts Label",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label"
-    },
-    {
-      "label": "Brazil ANVISA — Nutrition labelling: RDC 429/2020 and IN 75/2020",
-      "url": "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/rotulagem/rotulagem-nutricional"
-    },
-    {
-      "label": "India FSSAI — Labelling and Display Regulations, 2020 (Compendium, 3 Apr 2025)",
-      "url": "https://www.fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VII_03042025.pdf"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }

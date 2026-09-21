@@ -2,45 +2,27 @@
   "name": "Zugesetzte Zucker",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "zugesetzter Zucker",
   "what_is_title": "Was es ist",
-  "what_is": "Zugesetzte Zucker sind Zucker, die bei der Verarbeitung hinzugefügt werden, nicht Zucker, die im Lebensmittel von Natur aus vorhanden sind.\n\nDie genaue Definition hängt vom Markt ab. In den Vereinigten Staaten schließt die FDA Zucker ein, die während der Verarbeitung hinzugefügt werden, Zucker, die als Süßungsmittel, Sirupe und Honig verpackt sind, und Zucker aus konzentrierten Frucht- oder Gemüsesäften, wenn sie das übersteigen, was vom gleichen Volumen 100 %igen Safts zu erwarten wäre.\n\nDeshalb können Honig, Agavensirup, brauner Zucker oder bestimmte zum Süßen verwendete Konzentrate als zugesetzte Zucker zählen. Im Gegensatz dazu werden von Natur aus in Milch vorhandene Laktose oder von Natur aus in Obst vorhandene Fruktose aus diesem Grund nicht zu zugesetztem Zucker.\n\nDie FDA führte die verpflichtende Angabe zugesetzter Zucker in der Kennzeichnungsreform von 2016 ein, mit späteren Fristen für die Einhaltung. Brasilien und Indien verlangen derzeit ebenfalls die Angabe zugesetzter Zucker. Die Europäische Union nimmt zugesetzte Zucker nicht als Pflichtfeld in ihre Nährwertdeklaration auf.",
+  "what_is": "Zugesetzte Zucker sind Zucker, die einem Lebensmittel während der Verarbeitung oder Zubereitung zugesetzt werden, und nicht Zucker, die von Natur aus in seinen Zutaten vorhanden sind.",
   "why_botia_title": "Warum BOTIA es markiert",
-  "why_botia": "BOTIA markiert zugesetzte Zucker, weil es das Feld ist, das die Frage beantwortet, die die Menschen tatsächlich stellen: nicht wie viel Zucker es gibt, sondern wie viel hineingegeben wurde.\n\nUnd weil er nicht abgeleitet werden kann. Wenn ein Markt ihn nicht angibt, gibt es keine Möglichkeit, ihn aus der Gesamtsumme zu berechnen: Man bräuchte das Rezept.\n\nWas BOTIA tun kann, wo sie nicht angegeben sind, ist die Zutatenliste zu prüfen und die dort auftauchenden Zucker unter ihren vielen Namen zu benennen.",
+  "why_botia": "Zugesetzte Zucker sind nicht dasselbe wie Gesamtzucker, und nicht jeder Markt verlangt, dass sie separat angegeben werden. BOTIA hält einen deklarierten Wert zugesetzter Zucker getrennt von Gesamtzucker, freien Zuckern und den Zutaten, die dazu beitragen können.",
   "can_title": "BOTIA KANN",
-  "can_1": "Den angegebenen Wert lesen, wo er vorhanden ist, und seine Einheit und seine Basis beibehalten.",
-  "can_2": "Die Referenz anzeigen, die in dem Markt gilt, in dem das Produkt gekennzeichnet wurde, und die Behörde nennen, die sie veröffentlicht.",
-  "can_3": "Angegebene zugesetzte Zucker und Quellen wie Sirupe, Dextrose, Honig, Melasse, Invertzucker oder Saftkonzentrate identifizieren, wenn die Marktdefinition sie als zugesetzte Zucker behandelt.",
-  "can_4": "Erklären, wie der anwendbare Markt Honig, Sirupe und Saftkonzentrate in seiner Definition zugesetzter Zucker behandelt.",
+  "can_1": "Den Wert zugesetzter Zucker lesen, wenn er auf dem Nährwertetikett angegeben ist, und seine Einheit und Basis beibehalten.",
+  "can_2": "Zugesetzte Zucker von Gesamtzucker und anderen zuckerbezogenen Feldern getrennt halten.",
+  "can_3": "Deklarierte Zutaten identifizieren, die zugesetzte Zucker beitragen können.",
+  "can_4": "Den deklarierten Wert mit den geltenden regulatorischen Informationen und dokumentierten Belegen verknüpfen.",
   "cannot_title": "BOTIA KANN NICHT",
-  "cannot_1": "Dir sagen, welchen Prozentsatz deines eigenen Bedarfs dieser Wert darstellt.",
-  "cannot_2": "Sie berechnen, indem irgendetwas vom Gesamtzucker abgezogen wird. Sie können nicht abgeleitet werden: Man bräuchte das Rezept.",
-  "cannot_3": "Wissen, wie viel zugesetzt wurde, wo der Markt die Angabe nicht verlangt. In der Europäischen Union erscheint sie zum Beispiel nicht in der Tabelle.",
-  "cannot_4": "Sie als dasselbe wie freie Zucker behandeln. Es sind getrennte Konzepte mit unterschiedlichen Definitionen und unterschiedlichen Institutionen dahinter.",
-  "cannot_5": "Einen nicht angegebenen Wert als Null behandeln. Nicht auf dem Etikett zu erscheinen bedeutet nicht, dass keine vorhanden sind.",
+  "cannot_1": "Zugesetzte Zucker aus dem Gesamtzucker berechnen, wenn das Etikett sie nicht separat angibt.",
+  "cannot_2": "Die genaue Menge bestimmen, die jede zuckerzusetzende Zutat beiträgt.",
+  "cannot_3": "Zugesetzte Zucker und freie Zucker als dasselbe Konzept behandeln.",
+  "cannot_4": "Einen nicht deklarierten Wert zugesetzter Zucker als Null behandeln.",
   "sources_title": "Quellen",
   "back-button": "← Zurück",
   "title": "Zugesetzte Zucker",
-  "description": "Zugesetzte Zucker sind Zucker, die bei der Verarbeitung hinzugefügt werden, nicht Zucker, die im Lebensmittel von Natur aus vorhanden sind.",
+  "description": "Zugesetzte Zucker sind Zucker, die einem Lebensmittel während der Verarbeitung oder Zubereitung zugesetzt werden, und nicht Zucker, die von Natur aus in seinen Zutaten vorhanden sind.",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "FDA — Added Sugars on the Nutrition Facts Label",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label"
-    },
-    {
-      "label": "Brazil ANVISA — Nutrition labelling: RDC 429/2020 and IN 75/2020",
-      "url": "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/rotulagem/rotulagem-nutricional"
-    },
-    {
-      "label": "India FSSAI — Labelling and Display Regulations, 2020 (Compendium, 3 Apr 2025)",
-      "url": "https://www.fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VII_03042025.pdf"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }

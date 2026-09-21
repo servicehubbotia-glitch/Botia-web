@@ -2,45 +2,27 @@
   "name": "Sucres ajoutés",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "sucre ajouté",
   "what_is_title": "Ce que c'est",
-  "what_is": "Les sucres ajoutés sont des sucres introduits lors de la transformation, et non des sucres déjà naturellement présents dans l'aliment.\n\nLa définition exacte dépend du marché. Aux États-Unis, la FDA inclut les sucres ajoutés lors de la transformation, les sucres conditionnés comme édulcorants, les sirops et le miel, et les sucres issus de concentrés de jus de fruits ou de légumes lorsqu'ils dépassent ce que l'on attendrait du même volume de jus à 100 %.\n\nC'est pourquoi le miel, le sirop d'agave, la cassonade ou certains concentrés utilisés pour sucrer peuvent compter comme sucres ajoutés. En revanche, le lactose naturellement présent dans le lait ou le fructose naturellement présent dans le fruit ne deviennent pas des sucres ajoutés pour cette raison.\n\nLa FDA a introduit la déclaration obligatoire des sucres ajoutés dans la réforme de l'étiquetage de 2016, avec des dates de mise en conformité ultérieures. Le Brésil et l'Inde exigent également actuellement la déclaration des sucres ajoutés. L'Union européenne n'inclut pas les sucres ajoutés comme champ obligatoire dans sa déclaration nutritionnelle.",
+  "what_is": "Les sucres ajoutés sont des sucres introduits dans un aliment lors de la transformation ou de la préparation, et non des sucres naturellement présents dans ses ingrédients.",
   "why_botia_title": "Pourquoi BOTIA le signale",
-  "why_botia": "BOTIA signale les sucres ajoutés parce que c'est le champ qui répond à la question que les gens posent réellement : non pas combien de sucre il y a, mais combien on en a mis.\n\nEt parce qu'ils ne peuvent pas être déduits. Si un marché ne les déclare pas, il n'y a aucun moyen de les calculer à partir du total : il faudrait la recette.\n\nCe que BOTIA peut faire lorsqu'ils ne sont pas déclarés, c'est examiner la liste des ingrédients et signaler les sucres qui y apparaissent, sous leurs nombreux noms.",
+  "why_botia": "Les sucres ajoutés ne sont pas la même chose que les sucres totaux, et tous les marchés n'exigent pas qu'ils soient déclarés séparément. BOTIA maintient une valeur déclarée de sucres ajoutés distincte des sucres totaux, des sucres libres et des ingrédients qui peuvent y contribuer.",
   "can_title": "BOTIA PEUT",
-  "can_1": "Lire la valeur déclarée, là où elle existe, et conserver son unité et sa base.",
-  "can_2": "Afficher la référence qui s'applique sur le marché où le produit a été étiqueté et nommer l'autorité qui la publie.",
-  "can_3": "Identifier les sucres ajoutés déclarés et les sources telles que sirops, dextrose, miel, mélasse, sucre inverti ou concentrés de jus lorsque la définition du marché les traite comme sucres ajoutés.",
-  "can_4": "Expliquer comment le marché applicable traite le miel, les sirops et les concentrés de jus dans sa définition des sucres ajoutés.",
+  "can_1": "Lire la valeur des sucres ajoutés lorsqu'elle est déclarée sur l'étiquette nutritionnelle et préserver son unité et sa base.",
+  "can_2": "Maintenir les sucres ajoutés séparés des sucres totaux et des autres champs liés aux sucres.",
+  "can_3": "Identifier les ingrédients déclarés qui peuvent apporter des sucres ajoutés.",
+  "can_4": "Relier la valeur déclarée aux informations réglementaires applicables et aux preuves documentées.",
   "cannot_title": "BOTIA NE PEUT PAS",
-  "cannot_1": "Vous dire quel pourcentage de vos propres besoins cette valeur représente.",
-  "cannot_2": "Les calculer en soustrayant quoi que ce soit du total des sucres. Ils ne peuvent pas être déduits : il faudrait la recette.",
-  "cannot_3": "Savoir quelle quantité a été ajoutée là où le marché n'exige pas la déclaration. Dans l'Union européenne, par exemple, ils n'apparaissent pas dans le tableau.",
-  "cannot_4": "Les considérer comme équivalents aux sucres libres. Ce sont des concepts distincts, avec des définitions différentes et des organismes différents derrière.",
-  "cannot_5": "Traiter une valeur non déclarée comme zéro. Leur absence sur l'étiquette ne signifie pas qu'il n'y en a pas.",
+  "cannot_1": "Calculer les sucres ajoutés à partir des sucres totaux lorsque l'étiquette ne les déclare pas séparément.",
+  "cannot_2": "Déterminer la quantité exacte apportée par chaque ingrédient contenant du sucre ajouté.",
+  "cannot_3": "Traiter les sucres ajoutés et les sucres libres comme un même concept.",
+  "cannot_4": "Traiter une valeur de sucres ajoutés non déclarée comme zéro.",
   "sources_title": "Sources",
   "back-button": "← Retour",
   "title": "Sucres ajoutés",
-  "description": "Les sucres ajoutés sont des sucres introduits lors de la transformation, et non des sucres déjà naturellement présents dans l'aliment.",
+  "description": "Les sucres ajoutés sont des sucres introduits dans un aliment lors de la transformation ou de la préparation, et non des sucres naturellement présents dans ses ingrédients.",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "FDA — Added Sugars on the Nutrition Facts Label",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label"
-    },
-    {
-      "label": "Brazil ANVISA — Nutrition labelling: RDC 429/2020 and IN 75/2020",
-      "url": "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/rotulagem/rotulagem-nutricional"
-    },
-    {
-      "label": "India FSSAI — Labelling and Display Regulations, 2020 (Compendium, 3 Apr 2025)",
-      "url": "https://www.fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VII_03042025.pdf"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }

@@ -2,45 +2,27 @@
   "name": "Azúcares añadidos",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "azúcar añadido",
   "what_is_title": "Qué es",
-  "what_is": "Los azúcares añadidos son azúcares introducidos durante el procesamiento, no los que ya están presentes de forma natural en el alimento.\n\nLa definición exacta depende del mercado. En Estados Unidos, la FDA incluye los azúcares añadidos durante el procesamiento, los azúcares envasados como edulcorantes, los jarabes y la miel, y los azúcares procedentes de concentrados de zumo de frutas o de hortalizas cuando superan lo que cabría esperar del mismo volumen de zumo al 100 %.\n\nPor eso la miel, el sirope de agave, el azúcar moreno o ciertos concentrados usados para endulzar pueden contar como azúcares añadidos. En cambio, la lactosa presente de forma natural en la leche o la fructosa presente de forma natural en la fruta no se convierten en azúcar añadido por ese motivo.\n\nLa FDA introdujo la declaración obligatoria de azúcares añadidos en la reforma del etiquetado de 2016, con fechas de cumplimiento posteriores. Brasil e India también exigen actualmente declarar los azúcares añadidos. La Unión Europea no incluye los azúcares añadidos como campo obligatorio en su declaración nutricional.",
+  "what_is": "Los azúcares añadidos son azúcares introducidos en un alimento durante el procesamiento o la preparación, en lugar de azúcares presentes de forma natural en sus ingredientes.",
   "why_botia_title": "Por qué BOTIA lo señala",
-  "why_botia": "BOTIA señala los azúcares añadidos porque es el campo que responde a la pregunta que la gente realmente hace: no cuánto azúcar hay, sino cuánto se ha puesto.\n\nY porque no puede deducirse. Si un mercado no los declara, no hay forma de calcularlos a partir del total: haría falta la receta.\n\nLo que BOTIA puede hacer donde no se declaran es mirar la lista de ingredientes y señalar los azúcares que aparecen ahí, bajo sus muchos nombres.",
+  "why_botia": "Los azúcares añadidos no son lo mismo que los azúcares totales, y no todos los mercados exigen declararlos por separado. BOTIA mantiene un valor declarado de azúcares añadidos distinto de los azúcares totales, los azúcares libres y los ingredientes que pueden contribuir a él.",
   "can_title": "BOTIA PUEDE",
-  "can_1": "Leer el valor declarado, cuando existe, y conservar su unidad y su base.",
-  "can_2": "Mostrar la referencia que se aplica en el mercado donde se etiquetó el producto y nombrar la autoridad que la publica.",
-  "can_3": "Identificar los azúcares añadidos declarados y las fuentes como jarabes, dextrosa, miel, melaza, azúcar invertido o concentrados de zumo cuando la definición del mercado los trata como azúcares añadidos.",
-  "can_4": "Explicar cómo trata el mercado aplicable la miel, los jarabes y los concentrados de zumo dentro de su definición de azúcares añadidos.",
+  "can_1": "Leer el valor de azúcares añadidos cuando se declara en la etiqueta nutricional y conservar su unidad y su base.",
+  "can_2": "Mantener los azúcares añadidos separados de los azúcares totales y de otros campos relacionados con los azúcares.",
+  "can_3": "Identificar los ingredientes declarados que pueden aportar azúcares añadidos.",
+  "can_4": "Conectar el valor declarado con la información regulatoria aplicable y la evidencia documentada.",
   "cannot_title": "BOTIA NO PUEDE",
-  "cannot_1": "Decirte qué porcentaje de tus propias necesidades representa este valor.",
-  "cannot_2": "Calcularlos restando cualquier cosa del total de azúcares. No pueden deducirse: haría falta la receta.",
-  "cannot_3": "Saber cuánto se ha añadido donde el mercado no exige la declaración. En la Unión Europea, por ejemplo, no aparece en el panel.",
-  "cannot_4": "Tratarlos como lo mismo que los azúcares libres. Son conceptos separados, con definiciones distintas y organismos distintos detrás.",
-  "cannot_5": "Tratar un valor no declarado como cero. Que no aparezca en la etiqueta no significa que no los haya.",
+  "cannot_1": "Calcular los azúcares añadidos a partir de los azúcares totales cuando la etiqueta no los declara por separado.",
+  "cannot_2": "Determinar la cantidad exacta aportada por cada ingrediente con azúcar añadido.",
+  "cannot_3": "Tratar los azúcares añadidos y los azúcares libres como el mismo concepto.",
+  "cannot_4": "Tratar un valor de azúcares añadidos no declarado como cero.",
   "sources_title": "Fuentes",
   "back-button": "← Volver",
   "title": "Azúcares añadidos",
-  "description": "Los azúcares añadidos son azúcares introducidos durante el procesamiento, no los que ya están presentes de forma natural en el alimento.",
+  "description": "Los azúcares añadidos son azúcares introducidos en un alimento durante el procesamiento o la preparación, en lugar de azúcares presentes de forma natural en sus ingredientes.",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "FDA — Added Sugars on the Nutrition Facts Label",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label"
-    },
-    {
-      "label": "Brazil ANVISA — Nutrition labelling: RDC 429/2020 and IN 75/2020",
-      "url": "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/rotulagem/rotulagem-nutricional"
-    },
-    {
-      "label": "India FSSAI — Labelling and Display Regulations, 2020 (Compendium, 3 Apr 2025)",
-      "url": "https://www.fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VII_03042025.pdf"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }
