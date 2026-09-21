@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
-  <title>
-   BOTIA — Protein
-  </title>
-  <meta content="What proteins are, how the figure on a label is calculated, and what that number does not tell you." name="description"/>
-  <meta content="BOTIA — Protein" property="og:title"/>
-  <meta content="What proteins are, how the figure on a label is calculated, and what that number does not tell you." property="og:description"/>
-  <meta content="https://www.botia-safefood.com/botia_jar_512.png" property="og:image"/>
-  <meta content="https://www.botia-safefood.com/ingredients/protein.html" property="og:url"/>
-  <meta content="website" property="og:type"/>
-  <meta content="summary" name="twitter:card"/>
-  <meta content="BOTIA — Protein" name="twitter:title"/>
-  <meta content="What proteins are, how the figure on a label is calculated, and what that number does not tell you." name="twitter:description"/>
-  <meta content="https://www.botia-safefood.com/botia_jar_512.png" name="twitter:image"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html" rel="canonical"/>
-  <link href="/botia_jar_512.png" rel="icon" type="image/png"/>
-  <link href="/botia-landing.css" rel="stylesheet"/>
-  <link href="/botia/assets/botia-pages.css" rel="stylesheet"/>
-  <link href="/botia/assets/menu.css" rel="stylesheet"/>
-  <link href="/botia/assets/footer.css" rel="stylesheet"/>
-  <style>
-   .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    .hero { padding: 12px 0 0; text-align: center; }
+  <title>BOTIA — Protein</title>
+
+  <meta
+    name="description"
+    content="Protein is a nutrient made of amino acids. Foods can contain very different amounts and combinations of these amino acids."
+  >
+
+  <meta property="og:title" content="BOTIA — Protein">
+  <meta
+    property="og:description"
+    content="Protein is a nutrient made of amino acids. Foods can contain very different amounts and combinations of these amino acids."
+  >
+  <meta
+    property="og:image"
+    content="https://www.botia-safefood.com/botia_jar_512.png"
+  >
+  <meta
+    property="og:url"
+    content="https://www.botia-safefood.com/ingredients/protein.html"
+  >
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BOTIA — Protein">
+  <meta
+    name="twitter:description"
+    content="Protein is a nutrient made of amino acids. Foods can contain very different amounts and combinations of these amino acids."
+  >
+  <meta
+    name="twitter:image"
+    content="https://www.botia-safefood.com/botia_jar_512.png"
+  >
+
+  <link
+    rel="canonical"
+    href="https://www.botia-safefood.com/ingredients/protein.html"
+  >
+
+  <link rel="icon" type="image/png" href="/botia_jar_512.png">
+
+  <link rel="stylesheet" href="/botia-landing.css">
+  <link rel="stylesheet" href="/botia/assets/botia-pages.css">
+  <link rel="stylesheet" href="/botia/assets/menu.css">
+  <link rel="stylesheet" href="/botia/assets/footer.css">
+
+  <style>
+    .landing {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 8px 16px 20px;
+    }
+
+    .hero {
+      padding: 12px 0 0;
+      text-align: center;
+    }
 
     .hero img {
       width: 144px;
@@ -51,7 +85,9 @@
       margin-bottom: 8px;
     }
 
-    .section { margin-bottom: 14px; }
+    .section {
+      margin-bottom: 14px;
+    }
 
     .section-title {
       font-size: 1.2rem;
@@ -77,14 +113,45 @@
       letter-spacing: 0.5px;
     }
 
-    .layer-muslim { background: #1e4a6a; color: #fff; }
-    .layer-animal { background: #4a2a0a; color: #fff; }
-    .layer-woman { background: #6a1a3a; color: #fff; }
-    .layer-sugar { background: #6a3a0a; color: #fff; }
-    .layer-sweetener { background: #4a3a6a; color: #fff; }
-    .layer-texture { background: #2a4a2a; color: #fff; }
-    .layer-flavour { background: #4a4a0a; color: #fff; }
-    .layer-enumbers { background: #3a3a3a; color: #fff; }
+    .layer-muslim {
+      background: #1e4a6a;
+      color: #fff;
+    }
+
+    .layer-animal {
+      background: #4a2a0a;
+      color: #fff;
+    }
+
+    .layer-woman {
+      background: #6a1a3a;
+      color: #fff;
+    }
+
+    .layer-sugar {
+      background: #6a3a0a;
+      color: #fff;
+    }
+
+    .layer-sweetener {
+      background: #4a3a6a;
+      color: #fff;
+    }
+
+    .layer-texture {
+      background: #2a4a2a;
+      color: #fff;
+    }
+
+    .layer-flavour {
+      background: #4a4a0a;
+      color: #fff;
+    }
+
+    .layer-enumbers {
+      background: #3a3a3a;
+      color: #fff;
+    }
 
     .can-cannot {
       display: grid;
@@ -94,18 +161,25 @@
     }
 
     @media (max-width: 500px) {
-      .can-cannot { grid-template-columns: 1fr; }
+      .can-cannot {
+        grid-template-columns: 1fr;
+      }
     }
 
     .can-box,
     .cannot-box {
-      background: rgba(24,13,13,0.9);
+      background: rgba(24, 13, 13, 0.9);
       border-radius: 12px;
       padding: 16px;
     }
 
-    .can-box { border: 1px solid rgba(100,180,100,0.4); }
-    .cannot-box { border: 1px solid rgba(180,100,100,0.4); }
+    .can-box {
+      border: 1px solid rgba(100, 180, 100, 0.4);
+    }
+
+    .cannot-box {
+      border: 1px solid rgba(180, 100, 100, 0.4);
+    }
 
     .can-box h4,
     .cannot-box h4 {
@@ -124,11 +198,26 @@
       list-style: none;
     }
 
-    .can-box li::before { content: "✅"; position: absolute; left: 0; }
-    .cannot-box li::before { content: "❌"; position: absolute; left: 0; }
+    .can-box li::before {
+      content: "✅";
+      position: absolute;
+      left: 0;
+    }
 
-    .sources-list { list-style: none; padding: 0; }
-    .sources-list li { margin-bottom: 8px; }
+    .cannot-box li::before {
+      content: "❌";
+      position: absolute;
+      left: 0;
+    }
+
+    .sources-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sources-list li {
+      margin-bottom: 8px;
+    }
 
     .sources-list a {
       color: #e6a06b;
@@ -136,211 +225,326 @@
       text-decoration: none;
     }
 
-    .sources-list a:hover { text-decoration: underline; }
+    .sources-list a:hover {
+      text-decoration: underline;
+    }
 
-    .closing { text-align: center; padding: 20px 0; }
+    .closing {
+      text-align: center;
+      padding: 20px 0;
+    }
 
     .cta-button {
       display: inline-block;
-      background: rgba(190,122,72,0.20);
+      background: rgba(190, 122, 72, 0.20);
       color: #ffd8bd;
       padding: 10px 24px;
       border-radius: 8px;
       text-decoration: none;
-      border: 1px solid rgba(190,122,72,0.40);
+      border: 1px solid rgba(190, 122, 72, 0.40);
       margin-top: 16px;
     }
 
-    .hero + .section { margin-top: 0 !important; }
+    .hero + .section {
+      margin-top: 0 !important;
+    }
   </style>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=en" hreflang="en" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=es" hreflang="es" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=ar" hreflang="ar" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=de" hreflang="de" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=fr" hreflang="fr" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=nl" hreflang="nl" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=it" hreflang="it" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=pt" hreflang="pt" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=pl" hreflang="pl" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=ro" hreflang="ro" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=ru" hreflang="ru" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=tr" hreflang="tr" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=zh" hreflang="zh" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html?lang=id" hreflang="id" rel="alternate"/>
-  <link href="https://www.botia-safefood.com/ingredients/protein.html" hreflang="x-default" rel="alternate"/>
+
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=en"
+  >
+  <link
+    rel="alternate"
+    hreflang="es"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=es"
+  >
+  <link
+    rel="alternate"
+    hreflang="ar"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=ar"
+  >
+  <link
+    rel="alternate"
+    hreflang="de"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=de"
+  >
+  <link
+    rel="alternate"
+    hreflang="fr"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=fr"
+  >
+  <link
+    rel="alternate"
+    hreflang="id"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=id"
+  >
+  <link
+    rel="alternate"
+    hreflang="it"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=it"
+  >
+  <link
+    rel="alternate"
+    hreflang="nl"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=nl"
+  >
+  <link
+    rel="alternate"
+    hreflang="pl"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=pl"
+  >
+  <link
+    rel="alternate"
+    hreflang="pt"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=pt"
+  >
+  <link
+    rel="alternate"
+    hreflang="ro"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=ro"
+  >
+  <link
+    rel="alternate"
+    hreflang="ru"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=ru"
+  >
+  <link
+    rel="alternate"
+    hreflang="tr"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=tr"
+  >
+  <link
+    rel="alternate"
+    hreflang="zh"
+    href="https://www.botia-safefood.com/ingredients/protein.html?lang=zh"
+  >
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="https://www.botia-safefood.com/ingredients/protein.html"
+  >
+
   <script type="application/ld+json">
-   {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "BOTIA — Protein",
-  "description": "What proteins are, how the figure on a label is calculated, and what that number does not tell you.",
-  "url": "https://www.botia-safefood.com/ingredients/protein.html",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "BOTIA Food Transparency"
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "BOTIA — Protein",
+    "description": "Protein is a nutrient made of amino acids. Foods can contain very different amounts and combinations of these amino acids.",
+    "url": "https://www.botia-safefood.com/ingredients/protein.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BOTIA Food Transparency"
+    }
   }
-}
   </script>
-  <script src="/botia/assets/js/menu.js">
-  </script>
- </head>
- <body class="has-botia-header" data-botia-module="protein">
-  <button aria-label="Menu" id="menuBtn">
-   ☰
-  </button>
+
+  <script src="/botia/assets/js/menu.js"></script>
+</head>
+
+<body class="has-botia-header" data-botia-module="protein">
+
+  <button id="menuBtn" aria-label="Menu">☰</button>
+
   <div class="botia-header-bar">
-   <div class="botia-nav-left">
-    <a href="/">
-     <img alt="BOTIA" class="nav-logo" src="/botia_jar_512.png" style="width:28px;height:28px"/>
-    </a>
-   </div>
-   <div class="lang-switcher">
-    <label class="sr-only" for="lang-select" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">
-     Select language
-    </label>
-    <select aria-label="Select language" id="lang-select" onchange="cambiarIdioma(this.value)">
-     <option value="en">
-      English
-     </option>
-     <option value="ar">
-      العربية
-     </option>
-     <option value="de">
-      Deutsch
-     </option>
-     <option value="es">
-      Español
-     </option>
-     <option value="fr">
-      Français
-     </option>
-     <option value="id">
-      Bahasa Indonesia
-     </option>
-     <option value="it">
-      Italiano
-     </option>
-     <option value="nl">
-      Nederlands
-     </option>
-     <option value="pl">
-      Polski
-     </option>
-     <option value="pt">
-      Português
-     </option>
-     <option value="ro">
-      Română
-     </option>
-     <option value="ru">
-      Русский
-     </option>
-     <option value="tr">
-      Türkçe
-     </option>
-     <option value="zh">
-      中文
-     </option>
-    </select>
-   </div>
+    <div class="botia-nav-left">
+      <a href="/">
+        <img
+          class="nav-logo"
+          src="/botia_jar_512.png"
+          alt="BOTIA"
+          style="width:28px;height:28px"
+        >
+      </a>
+    </div>
+
+    <div class="lang-switcher">
+      <label
+        for="lang-select"
+        class="sr-only"
+        style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"
+      >
+        Select language
+      </label>
+
+      <select
+        id="lang-select"
+        onchange="cambiarIdioma(this.value)"
+        aria-label="Select language"
+      >
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="it">Italiano</option>
+        <option value="nl">Nederlands</option>
+        <option value="pl">Polski</option>
+        <option value="pt">Português</option>
+        <option value="ro">Română</option>
+        <option value="ru">Русский</option>
+        <option value="tr">Türkçe</option>
+        <option value="zh">中文</option>
+      </select>
+    </div>
   </div>
-  <a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
-   Skip to main content
+
+  <a
+    href="#main-content"
+    class="skip-link"
+    style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;"
+  >
+    Skip to main content
   </a>
+
   <main class="landing" id="main-content">
-   <section class="hero">
-    <!-- ASSET: when ready, set module_icon in /i18n/{lang}/protein.json; the loader will replace /botia/assets/BOTIA.png automatically. -->
-    <img alt="" data-botia-asset-slot="protein" id="module_icon" src="/botia/assets/protein.png"/>
-    <h1 id="name">
-     Protein
-    </h1>
-    <p class="e-code" id="e_code">
-    </p>
-    <p class="aliases" id="aliases">
-    </p>
-    <div id="layers_container">
-    </div>
-   </section>
-   <section class="section">
-    <h2 class="section-title" id="what_is_title">
-     What it is
-    </h2>
-    <p class="section-intro" id="what_is">
-     Proteins are made of amino acids, and the body uses them to build and repair tissue. They appear in almost every food, in very different amounts.
 
-The figure on a label is usually obtained from the nitrogen content of the food and a conversion factor, rather than by directly measuring every protein present.
+    <section class="hero">
 
-The general factor is 6.25. In the European Union it is the factor defined by Regulation 1169/2011. Codex also starts from 6.25 for nutrition declaration unless a commodity standard specifies another factor; for example, 6.38 for milk and milk products and 5.71 for wheat flour or soy in the cases listed by Codex.
-    </p>
-   </section>
-   <section class="section">
-    <h2 class="section-title" id="why_botia_title">
-     Why BOTIA flags it
-    </h2>
-    <p class="section-intro" id="why_botia">
-     BOTIA flags protein because it is one of the few fields declared in almost every jurisdiction, which makes it more reliably comparable across markets than many other nutrients.
+      <img
+        id="module_icon"
+        data-botia-asset-slot="protein"
+        src="/botia/assets/protein.png"
+        alt=""
+      >
 
-But the number has a limit that does not show: it measures quantity, not quality. Two products with the same figure can provide different amino-acid profiles, and the nutrition label does not show that.
-    </p>
-   </section>
-   <section class="section">
-    <div class="can-cannot">
-     <div class="can-box">
-      <h4 id="can_title">
-       BOTIA CAN
-      </h4>
-      <ul>
-       <li id="can_1">
-        Read the declared value and keep its unit and its basis: per 100 g, per 100 ml, per serving or per package.
-       </li>
-       <li id="can_2">
-        Show the reference that applies in the market where the product was labelled, and name the authority that publishes it.
-       </li>
-       <li id="can_3">
-        Explain that the declared figure is usually calculated from nitrogen and that the conversion factor depends on the rule that applies to the market or product.
-       </li>
-      </ul>
-     </div>
-     <div class="cannot-box">
-      <h4 id="cannot_title">
-       BOTIA CANNOT
-      </h4>
-      <ul>
-       <li id="cannot_1">
-        Tell you what percentage of your own needs this value represents. Protein needs vary with weight, age, activity and health.
-       </li>
-       <li id="cannot_2">
-        Judge the quality of the protein or its amino-acid profile. The label declares quantity, not composition.
-       </li>
-       <li id="cannot_3">
-        Confirm which analytical method or conversion factor the manufacturer actually used from the label alone where the applicable rule allows alternatives.
-       </li>
-       <li id="cannot_4">
-        Treat an undeclared value as zero.
-       </li>
-      </ul>
-     </div>
-    </div>
-   </section>
+      <h1 id="name">Protein</h1>
 
-<section class="section">
-    <h2 class="section-title" id="sources_title">
-     Sources
-    </h2>
-    <ul class="sources-list" id="sources_container">
-    </ul>
-   </section>
-   <section class="closing">
-    <a class="cta-button" href="/" id="back-button">
-     ← Back
-    </a>
-   </section>
+      <p class="e-code" id="e_code"></p>
+
+      <p class="aliases" id="aliases"></p>
+
+      <!--
+        Evidence / choice layer buttons are injected here by i18n-loader.js.
+        Do not hardcode evidence routes in the ingredient profile.
+      -->
+      <div id="layers_container"></div>
+
+    </section>
+
+    <section class="section">
+
+      <h2 class="section-title" id="what_is_title">
+        What it is
+      </h2>
+
+      <p class="section-intro" id="what_is">
+        Protein is a nutrient made of amino acids. Foods can contain very different amounts and combinations of these amino acids.
+      </p>
+
+    </section>
+
+    <section class="section">
+
+      <h2 class="section-title" id="why_botia_title">
+        Why BOTIA flags it
+      </h2>
+
+      <p class="section-intro" id="why_botia">
+        The nutrition table tells you how much protein is declared, but not its amino-acid composition or quality. BOTIA keeps that declared amount separate from the regulatory rules and evidence that give the number context.
+      </p>
+
+      <!--
+        Regulatory button is injected automatically by i18n-loader.js
+        when regulatory.json contains records with ingredient_slug = "protein".
+      -->
+
+    </section>
+
+    <section class="section">
+
+      <div class="can-cannot">
+
+        <div class="can-box">
+
+          <h4 id="can_title">
+            BOTIA CAN
+          </h4>
+
+          <ul>
+
+            <li id="can_1">
+              Read the protein value declared on the nutrition label and preserve its unit and basis.
+            </li>
+
+            <li id="can_2">
+              Connect the declared value with the applicable regulatory information and documented evidence.
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="cannot-box">
+
+          <h4 id="cannot_title">
+            BOTIA CANNOT
+          </h4>
+
+          <ul>
+
+            <li id="cannot_1">
+              Determine the amino-acid profile or protein quality from the declared protein value alone.
+            </li>
+
+            <li id="cannot_2">
+              Determine an individual's protein requirement from the nutrition label.
+            </li>
+
+            <li id="cannot_3">
+              Treat an undeclared protein value as zero.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--
+      Traceability remains part of the ingredient-profile structure.
+      Core-profile sources can be rendered here if the JSON contains them.
+      Regulatory and evidence sources remain in their corresponding systems.
+    -->
+    <section class="section">
+
+      <h2 class="section-title" id="sources_title">
+        Sources
+      </h2>
+
+      <ul
+        class="sources-list"
+        id="sources_container"
+      ></ul>
+
+    </section>
+
+    <section class="closing">
+
+      <a
+        href="/"
+        class="cta-button"
+        id="back-button"
+      >
+        ← Back
+      </a>
+
+    </section>
+
   </main>
-  <script defer="" src="/botia/assets/js/i18n-loader.js">
-  </script>
-  <script src="/botia/assets/js/botia-chat.js">
-  </script>
-  <script src="/botia/assets/js/footer.js?v=20260817-1502">
-  </script>
- </body>
+
+  <script
+    src="/botia/assets/js/i18n-loader.js"
+    defer
+  ></script>
+
+  <script src="/botia/assets/js/botia-chat.js"></script>
+
+  <script src="/botia/assets/js/footer.js?v=20260817-1502"></script>
+
+</body>
 </html>
