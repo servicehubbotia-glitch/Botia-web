@@ -2,37 +2,23 @@
   "name": "Cholesterol",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "dietary cholesterol",
   "what_is_title": "What it is",
-  "what_is": "Cholesterol is a substance the body makes and that also comes from the diet. Animal-derived foods — such as eggs, meat, dairy and shellfish — are its main dietary sources; plant foods mainly provide phytosterols and are not a meaningful source of dietary cholesterol.\n\nOn a label it is declared in milligrams, and only in some markets: the United States, Canada, Korea and others require it. The European Union does not include it in its mandatory panel.\n\nTwo things are worth separating because they get confused: the cholesterol you eat and the cholesterol in your blood. They are not the same, and the link between them is weaker than was believed decades ago.\n\nThe US Dietary Guidelines dropped the 300 mg daily limit in 2015 after maintaining it for years, although FDA still uses 300 mg as the Daily Value for labelling.",
+  "what_is": "Cholesterol is a lipid made by the body and also present in foods of animal origin. Dietary cholesterol and blood cholesterol are related concepts, but they are not the same thing.",
   "why_botia_title": "Why BOTIA flags it",
-  "why_botia": "BOTIA flags cholesterol because it is one of the fields where official criteria have changed most, and where it matters most to see what each body actually says rather than assume a general idea.\n\nAnd because its absence from a European label does not mean the product has none: it means that market does not require the declaration.",
+  "why_botia": "Cholesterol is declared on nutrition labels in some markets and absent from the standard panel in others. BOTIA keeps the declared value separate from the regulatory rules and evidence used to interpret it.",
   "can_title": "BOTIA CAN",
-  "can_1": "Read the declared value, where it exists, and keep its unit and its basis.",
-  "can_2": "Show the reference that applies in the market where the product was labelled, naming the authority and the date.",
-  "can_3": "Explain that dietary cholesterol and blood cholesterol are different things.",
+  "can_1": "Read the cholesterol value when it is declared on the nutrition label and preserve its unit and basis.",
+  "can_2": "Keep dietary cholesterol distinct from blood cholesterol.",
+  "can_3": "Connect the declared value with the applicable regulatory information and documented evidence where relevant.",
   "cannot_title": "BOTIA CANNOT",
-  "cannot_1": "Tell you what percentage of your needs this represents. Cholesterol is not an essential dietary nutrient: the body makes it.",
-  "cannot_2": "Predict the effect on your blood cholesterol. That depends on individual factors and on the diet as a whole.",
-  "cannot_3": "Treat an undeclared value as zero. The European Union does not require it in the mandatory panel.",
-  "cannot_4": "Give a consumption recommendation. Official bodies do not agree and some have withdrawn their earlier limits.",
+  "cannot_1": "Predict a person's blood cholesterol response from the dietary cholesterol value on a food label.",
+  "cannot_2": "Determine an individual's appropriate cholesterol intake from the nutrition label.",
+  "cannot_3": "Treat an undeclared cholesterol value as zero.",
   "sources_title": "Sources",
   "back-button": "← Back",
   "title": "Cholesterol",
-  "description": "Cholesterol is a substance the body makes and that also comes from the diet. Animal-derived foods — such as eggs, meat, dairy and shellfish — are its main dietary sources; plant foods mainly provide phytosterols and are not a meaningful source of dietary…",
+  "description": "Cholesterol is a lipid made by the body and also present in foods of animal origin. Dietary cholesterol and blood cholesterol are related concepts, but they are not the same thing.",
   "layers": [],
-  "sources": [
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    },
-    {
-      "label": "Dietary Guidelines for Americans 2015–2020 — dietary cholesterol",
-      "url": "https://health.gov/dietaryguidelines/2015/resources/2015-2020_Dietary_Guidelines.pdf"
-    }
-  ]
+  "sources": []
 }
