@@ -2,39 +2,24 @@
   "name": "Sól",
   "e_code": "",
   "module_icon": "salt_sodium.png",
-  "aliases": "sól, ekwiwalent soli",
+  "aliases": "ekwiwalent soli",
   "what_is_title": "Co to jest",
-  "what_is": "Sól na etykiecie wartości odżywczej to nie tylko sól, którą ktoś dodał. W Unii Europejskiej i kilku innych rynkach zadeklarowana wartość to ekwiwalent soli całego sodu w produkcie, obliczany jako sód × 2,5.\n\nTa suma obejmuje sód z dowolnego źródła: sól dodaną, ale także spulchniacze, wzmacniacze smaku, konserwanty i stabilizatory zawierające sód.\n\nInne rynki w ogóle nie deklarują soli. Deklarują sód, a obie wartości nie są wymienne bez wskazania, że zastosowano przeliczenie.",
+  "what_is": "Sól to chlorek sodu. Na etykiecie wartości odżywczej zadeklarowana wartość soli może również reprezentować ekwiwalent soli dla sodu obecnego w żywności, w zależności od systemu etykietowania.",
   "why_botia_title": "Dlaczego BOTIA to oznacza",
-  "why_botia": "BOTIA oznacza sól, ponieważ ten sam produkt może mieć bardzo różną wartość w zależności od tego, gdzie został oznakowany, i ponieważ liczba ta nie oznacza tego, co zakłada większość ludzi.\n\nProdukt o wysokiej wartości soli może wcale nie być słony w smaku: sód z wodorowęglanu, glutaminianu monosodowego, azotynu sodu czy fosforanów sodu wlicza się do tej wartości. Produkt, który smakuje słono, może deklarować mniej niż oczekiwano.\n\nBOTIA pokazuje wartość tak, jak deklaruje ją etykieta, podaje, jakiego odniesienia używa ten rynek, i mówi, kiedy zastosowano przeliczenie.",
+  "why_botia": "Sól i sód są ściśle powiązane, ale nie są tym samym zadeklarowanym polem. BOTIA utrzymuje wartość dokładnie taką, jaką przedstawia etykieta, i łączy ją z definicją regulacyjną i dowodami mającymi zastosowanie na tym rynku.",
   "can_title": "BOTIA MOŻE",
-  "can_1": "Odczytać zadeklarowaną wartość soli i zachować jej jednostkę oraz podstawę: na 100 g, na 100 ml, na porcję lub na opakowanie.",
-  "can_2": "Pokazać odniesienie obowiązujące na rynku, na którym produkt został oznakowany, i wskazać organ, który je publikuje.",
-  "can_3": "Oznaczyć każde przeliczenie między sodem a solą jako pochodne, pokazując obok oryginalne zadeklarowane pole.",
-  "can_4": "Wyjaśnić, że zadeklarowana wartość obejmuje sód ze wszystkich źródeł w produkcie, nie tylko sól dodaną.",
+  "can_1": "Odczytać zadeklarowaną wartość soli na etykiecie wartości odżywczej i zachować jej jednostkę oraz podstawę.",
+  "can_2": "Utrzymać zadeklarowaną wartość soli oddzielnie od zadeklarowanej wartości sodu.",
+  "can_3": "Powiązać zadeklarowaną wartość z obowiązującymi informacjami regulacyjnymi i udokumentowanymi dowodami.",
   "cannot_title": "BOTIA NIE MOŻE",
-  "cannot_1": "Powiedzieć, jaki procent twoich własnych potrzeb reprezentuje ta wartość. Referencyjne spożycie jest ustalane dla populacji dorosłych przez każdy organ; nie są to indywidualne potrzeby i różnią się w zależności od wieku, płci i okoliczności.",
-  "cannot_2": "Traktować sól i sód jako tę samą deklarację. To odrębne pola, a produkt może deklarować jedno, drugie lub oba.",
-  "cannot_3": "Przeliczać między solą a sodem tam, gdzie rynek nie definiuje przeliczenia, ani stosować go bez informowania o tym.",
-  "cannot_4": "Powiedzieć, ile sodu pochodziło z dodanej soli, a ile z innych składników. Etykieta deklaruje sumę; nie rozbija jej.",
-  "cannot_5": "Traktować niezadeklarowanej wartości jako zera. Jeśli rynek nie wymaga deklarowania soli, a etykieta jej nie pokazuje, BOTIA zgłasza, że nie jest zadeklarowana.",
+  "cannot_1": "Określić, ile sodu w żywności pochodzi konkretnie z dodanej soli.",
+  "cannot_2": "Traktować sól i sód jako wymienne bez zastosowania i wskazania odpowiedniego przeliczenia.",
+  "cannot_3": "Określić zapotrzebowania danej osoby na sód lub sól na podstawie etykiety wartości odżywczej.",
+  "cannot_4": "Traktować niezadeklarowanej wartości soli jako zera.",
   "sources_title": "Źródła",
   "back-button": "← Wstecz",
   "title": "Sól",
-  "description": "Sól na etykiecie wartości odżywczej to nie tylko sól, którą ktoś dodał. W Unii Europejskiej i kilku innych rynkach zadeklarowana wartość to ekwiwalent soli całego sodu w produkcie, obliczany jako sód × 2,5.",
+  "description": "Sól to chlorek sodu. Na etykiecie wartości odżywczej zadeklarowana wartość soli może również reprezentować ekwiwalent soli dla sodu obecnego w żywności, w zależności od systemu etykietowania.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — Sodium reduction",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    }
-  ]
+  "sources": []
 }

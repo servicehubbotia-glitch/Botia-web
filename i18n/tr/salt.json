@@ -2,39 +2,24 @@
   "name": "Tuz",
   "e_code": "",
   "module_icon": "salt_sodium.png",
-  "aliases": "tuz, tuz eşdeğeri",
+  "aliases": "tuz eşdeğeri",
   "what_is_title": "Nedir",
-  "what_is": "Besin etiketindeki tuz, sadece birinin eklediği tuz değildir. Avrupa Birliği'nde ve birkaç başka pazarda, beyan edilen rakam, üründeki tüm sodyumun tuz eşdeğeridir ve sodyum × 2,5 olarak hesaplanır.\n\nBu toplam, herhangi bir kaynaktan gelen sodyumu içerir: eklenen tuz, ayrıca sodyum içeren kabartma ajanları, lezzet arttırıcılar, koruyucular ve stabilizatörler.\n\nDiğer pazarlar tuzu hiç beyan etmez. Sodyum beyan ederler ve iki rakam, bir dönüşüm uygulandığı belirtilmeden birbiriyle değiştirilemez.",
+  "what_is": "Tuz, sodyum klorürdür. Beslenme etiketinde beyan edilen tuz değeri, etiketleme sistemine bağlı olarak gıdada bulunan sodyumun tuz eşdeğerini de temsil edebilir.",
   "why_botia_title": "BOTIA neden işaretler",
-  "why_botia": "BOTIA tuzu işaretler çünkü aynı ürün, etiketlendiği yere bağlı olarak çok farklı bir rakam taşıyabilir ve bu rakam çoğu insanın varsaydığı anlama gelmez.\n\nYüksek tuz değerine sahip bir ürün hiç tuzlu tatmayabilir: bikarbonat, monosodyum glutamat, sodyum nitrit veya sodyum fosfatlarından gelen sodyum bu değere sayılır. Tuzlu tadan bir ürün beklenenden daha az beyan edebilir.\n\nBOTIA rakamı etiketin beyan ettiği şekilde gösterir, o pazarın hangi referansı kullandığını belirtir ve bir dönüşümün ne zaman uygulandığını söyler.",
+  "why_botia": "Tuz ve sodyum yakından ilişkilidir, ancak aynı beyan edilen alan değildir. BOTIA değeri etiketin sunduğu şekilde tutar ve o pazara uygulanan düzenleyici tanım ve kanıtlarla ilişkilendirir.",
   "can_title": "BOTIA YAPABİLİR",
-  "can_1": "Beyan edilen tuz değerini okumak ve birimini ve temelini korumak: 100 g başına, 100 ml başına, porsiyon başına veya paket başına.",
-  "can_2": "Ürünün etiketlendiği pazarda geçerli olan referansı göstermek ve onu yayımlayan kurumu adlandırmak.",
-  "can_3": "Sodyum ve tuz arasındaki herhangi bir dönüşümü türetilmiş olarak işaretlemek ve yanında orijinal beyan edilen alanı göstermek.",
-  "can_4": "Beyan edilen rakamın üründeki her kaynaktan sodyumu kapsadığını, sadece eklenen tuzu değil, açıklamak.",
+  "can_1": "Beslenme etiketinde beyan edilen tuz değerini okumak ve birimini ve temelini korumak.",
+  "can_2": "Beyan edilen bir tuz değerini beyan edilen bir sodyum değerinden ayrı tutmak.",
+  "can_3": "Beyan edilen değeri geçerli düzenleyici bilgilerle ve belgelenmiş kanıtlarla ilişkilendirmek.",
   "cannot_title": "BOTIA YAPAMAZ",
-  "cannot_1": "Bu değerin kendi ihtiyaçlarının yüzde kaçını temsil ettiğini söylemek. Referans alımlar her kurum tarafından yetişkin popülasyonlar için belirlenir; bunlar bireysel ihtiyaçlar değildir ve yaşa, cinsiyete ve koşullara göre değişir.",
-  "cannot_2": "Tuz ve sodyumu aynı beyan olarak ele almak. Bunlar ayrı alanlardır ve bir ürün birini, diğerini veya her ikisini beyan edebilir.",
-  "cannot_3": "Pazarın bir dönüşüm tanımlamadığı yerde tuz ve sodyum arasında dönüştürmek veya bunu söylemeden uygulamak.",
-  "cannot_4": "Sodyumun ne kadarının eklenen tuzdan ve ne kadarının diğer içeriklerden geldiğini söylemek. Etiket toplamı beyan eder; ayrıştırmaz.",
-  "cannot_5": "Beyan edilmemiş bir değeri sıfır olarak ele almak. Bir pazar tuzun beyan edilmesini gerektirmiyorsa ve etiket bunu göstermiyorsa, BOTIA beyan edilmediğini bildirir.",
+  "cannot_1": "Gıdadaki sodyumun ne kadarının özellikle eklenen tuzdan geldiğini belirlemek.",
+  "cannot_2": "Uygun dönüşümü uygulamadan ve belirtmeden tuz ve sodyumu birbirinin yerine kullanılabilir olarak ele almak.",
+  "cannot_3": "Beslenme etiketinden bir kişinin sodyum veya tuz ihtiyacını belirlemek.",
+  "cannot_4": "Beyan edilmemiş bir tuz değerini sıfır olarak ele almak.",
   "sources_title": "Kaynaklar",
   "back-button": "← Geri",
   "title": "Tuz",
-  "description": "Besin etiketindeki tuz, sadece birinin eklediği tuz değildir. Avrupa Birliği'nde ve birkaç başka pazarda, beyan edilen rakam, üründeki tüm sodyumun tuz eşdeğeridir ve sodyum × 2,5 olarak hesaplanır.",
+  "description": "Tuz, sodyum klorürdür. Beslenme etiketinde beyan edilen tuz değeri, etiketleme sistemine bağlı olarak gıdada bulunan sodyumun tuz eşdeğerini de temsil edebilir.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — Sodium reduction",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    }
-  ]
+  "sources": []
 }

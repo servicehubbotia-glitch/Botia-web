@@ -2,39 +2,24 @@
   "name": "Salz",
   "e_code": "",
   "module_icon": "salt_sodium.png",
-  "aliases": "Salz, Salz-Äquivalent",
+  "aliases": "Salz-Äquivalent",
   "what_is_title": "Was es ist",
-  "what_is": "Salz auf einem Nährwertetikett ist nicht nur das Salz, das jemand hinzugefügt hat. In der Europäischen Union und mehreren anderen Märkten ist die angegebene Zahl das Salz-Äquivalent des gesamten Natriums im Produkt, berechnet als Natrium × 2,5.\n\nDiese Summe umfasst Natrium aus jeder Quelle: hinzugefügtes Salz, aber auch Backtriebmittel, Geschmacksverstärker, Konservierungsstoffe und Stabilisatoren, die Natrium enthalten.\n\nAndere Märkte deklarieren gar kein Salz. Sie deklarieren Natrium, und die beiden Zahlen sind nicht austauschbar, ohne anzugeben, dass eine Umrechnung angewendet wurde.",
+  "what_is": "Salz ist Natriumchlorid. Auf einem Nährwertetikett kann der deklarierte Salzwert je nach Kennzeichnungssystem auch das Salz-Äquivalent des im Lebensmittel enthaltenen Natriums darstellen.",
   "why_botia_title": "Warum BOTIA es markiert",
-  "why_botia": "BOTIA markiert Salz, weil dasselbe Produkt je nach Kennzeichnungsmarkt eine sehr unterschiedliche Zahl tragen kann, und weil die Zahl nicht das bedeutet, was die meisten annehmen.\n\nEin Produkt mit einem hohen Salzgehalt kann überhaupt nicht salzig schmecken: Natrium aus Bicarbonat, Mononatriumglutamat, Natriumnitrit oder Natriumphosphaten zählt alles dazu. Ein Produkt, das salzig schmeckt, kann weniger deklarieren als erwartet.\n\nBOTIA zeigt die Zahl so, wie das Etikett sie deklariert, nennt die Referenz, die dieser Markt verwendet, und gibt an, wann eine Umrechnung angewendet wurde.",
+  "why_botia": "Salz und Natrium sind eng verwandt, aber nicht dasselbe deklarierte Feld. BOTIA hält den Wert genau so, wie das Etikett ihn darstellt, und verknüpft ihn mit der regulatorischen Definition und den Belegen, die für diesen Markt gelten.",
   "can_title": "BOTIA KANN",
-  "can_1": "Den angegebenen Salzwert lesen und seine Einheit und seine Basis beibehalten: pro 100 g, pro 100 ml, pro Portion oder pro Packung.",
-  "can_2": "Die Referenz anzeigen, die in dem Markt gilt, in dem das Produkt gekennzeichnet wurde, und die Behörde nennen, die sie veröffentlicht.",
-  "can_3": "Jede Umrechnung zwischen Natrium und Salz als abgeleitet kennzeichnen und das ursprüngliche deklarierte Feld daneben anzeigen.",
-  "can_4": "Erklären, dass die angegebene Zahl Natrium aus allen Quellen im Produkt umfasst, nicht nur hinzugefügtes Salz.",
+  "can_1": "Den auf dem Nährwertetikett deklarierten Salzwert lesen und seine Einheit und Basis beibehalten.",
+  "can_2": "Einen deklarierten Salzwert von einem deklarierten Natriumwert getrennt halten.",
+  "can_3": "Den deklarierten Wert mit den geltenden regulatorischen Informationen und dokumentierten Belegen verknüpfen.",
   "cannot_title": "BOTIA KANN NICHT",
-  "cannot_1": "Dir sagen, welchen Prozentsatz deines eigenen Bedarfs dieser Wert darstellt. Referenzzufuhren werden von jeder Behörde für erwachsene Bevölkerungsgruppen festgelegt; sie sind keine individuellen Bedarfe und unterscheiden sich nach Alter, Geschlecht und Umständen.",
-  "cannot_2": "Salz und Natrium als dieselbe Deklaration behandeln. Es sind getrennte Felder und ein Produkt kann das eine, das andere oder beide deklarieren.",
-  "cannot_3": "Zwischen Salz und Natrium umrechnen, wo der Markt keine Umrechnung definiert, oder eine anwenden, ohne es zu sagen.",
-  "cannot_4": "Dir sagen, wie viel des Natriums aus hinzugefügtem Salz und wie viel aus anderen Zutaten stammt. Das Etikett deklariert die Summe; es schlüsselt sie nicht auf.",
-  "cannot_5": "Einen nicht deklarierten Wert als Null behandeln. Wenn ein Markt die Deklaration von Salz nicht verlangt und das Etikett es nicht zeigt, meldet BOTIA, dass es nicht deklariert ist.",
+  "cannot_1": "Bestimmen, wie viel des Natriums im Lebensmittel speziell aus zugesetztem Salz stammt.",
+  "cannot_2": "Salz und Natrium als austauschbar behandeln, ohne die geeignete Umrechnung anzuwenden und zu kennzeichnen.",
+  "cannot_3": "Den Natrium- oder Salzbedarf einer Person aus dem Nährwertetikett bestimmen.",
+  "cannot_4": "Einen nicht deklarierten Salzwert als Null behandeln.",
   "sources_title": "Quellen",
   "back-button": "← Zurück",
   "title": "Salz",
-  "description": "Salz auf einem Nährwertetikett ist nicht nur das Salz, das jemand hinzugefügt hat. In der Europäischen Union und mehreren anderen Märkten ist die angegebene Zahl das Salz-Äquivalent des gesamten Natriums im Produkt, berechnet als Natrium × 2,5.",
+  "description": "Salz ist Natriumchlorid. Auf einem Nährwertetikett kann der deklarierte Salzwert je nach Kennzeichnungssystem auch das Salz-Äquivalent des im Lebensmittel enthaltenen Natriums darstellen.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — Sodium reduction",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    }
-  ]
+  "sources": []
 }

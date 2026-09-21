@@ -2,39 +2,24 @@
   "name": "Sal",
   "e_code": "",
   "module_icon": "salt_sodium.png",
-  "aliases": "sal, equivalente de sal",
+  "aliases": "equivalente de sal",
   "what_is_title": "Qué es",
-  "what_is": "La sal en una etiqueta nutricional no es solo la sal que alguien añadió. En la Unión Europea y varios otros mercados, la cifra declarada es el equivalente de sal de todo el sodio del producto, calculado como sodio × 2,5.\n\nEse total incluye sodio de cualquier fuente: la sal añadida, pero también gasificantes, potenciadores del sabor, conservantes y estabilizantes que contienen sodio.\n\nOtros mercados no declaran sal en absoluto. Declaran sodio, y las dos cifras no son intercambiables sin indicar que se ha aplicado una conversión.",
+  "what_is": "La sal es cloruro de sodio. En una etiqueta nutricional, el valor de sal declarado también puede representar el equivalente de sal del sodio presente en el alimento, según el sistema de etiquetado.",
   "why_botia_title": "Por qué BOTIA lo señala",
-  "why_botia": "BOTIA señala la sal porque el mismo producto puede llevar una cifra muy distinta según dónde se haya etiquetado, y porque el número no significa lo que la mayoría de la gente supone.\n\nUn producto con una cifra de sal alta puede no saber salado en absoluto: el sodio del bicarbonato, el glutamato monosódico, el nitrito de sodio o los fosfatos de sodio cuentan todos en esa cifra. Un producto que sabe salado puede declarar menos de lo esperado.\n\nBOTIA muestra la cifra tal como la declara la etiqueta, indica qué referencia usa ese mercado y dice cuándo se ha aplicado una conversión.",
+  "why_botia": "La sal y el sodio están estrechamente relacionados, pero no son el mismo campo declarado. BOTIA mantiene el valor exactamente como lo presenta la etiqueta y lo conecta con la definición regulatoria y la evidencia que se aplican a ese mercado.",
   "can_title": "BOTIA PUEDE",
-  "can_1": "Leer el valor de sal declarado y conservar su unidad y su base: por 100 g, por 100 ml, por ración o por envase.",
-  "can_2": "Mostrar la referencia que se aplica en el mercado donde se etiquetó el producto y nombrar la autoridad que la publica.",
-  "can_3": "Marcar cualquier conversión entre sodio y sal como derivada, mostrando junto a ella el campo original declarado.",
-  "can_4": "Explicar que la cifra declarada abarca el sodio de todas las fuentes del producto, no solo la sal añadida.",
+  "can_1": "Leer el valor de sal declarado en la etiqueta nutricional y conservar su unidad y su base.",
+  "can_2": "Mantener un valor de sal declarado separado de un valor de sodio declarado.",
+  "can_3": "Conectar el valor declarado con la información regulatoria aplicable y la evidencia documentada.",
   "cannot_title": "BOTIA NO PUEDE",
-  "cannot_1": "Decirte qué porcentaje de tus propias necesidades representa este valor. Las ingestas de referencia las fija cada autoridad para poblaciones adultas; no son necesidades individuales y varían según la edad, el sexo y las circunstancias.",
-  "cannot_2": "Tratar sal y sodio como la misma declaración. Son campos distintos y un producto puede declarar uno, el otro o ambos.",
-  "cannot_3": "Convertir entre sal y sodio donde el mercado no define una conversión, ni aplicarla sin decirlo.",
-  "cannot_4": "Decirte cuánto del sodio procede de la sal añadida y cuánto de otros ingredientes. La etiqueta declara el total; no lo desglosa.",
-  "cannot_5": "Tratar un valor no declarado como cero. Si un mercado no exige declarar la sal y la etiqueta no la muestra, BOTIA informa de que no está declarada.",
+  "cannot_1": "Determinar cuánto del sodio del alimento proviene específicamente de la sal añadida.",
+  "cannot_2": "Tratar sal y sodio como intercambiables sin aplicar e identificar la conversión adecuada.",
+  "cannot_3": "Determinar la necesidad de sodio o de sal de una persona a partir de la etiqueta nutricional.",
+  "cannot_4": "Tratar un valor de sal no declarado como cero.",
   "sources_title": "Fuentes",
   "back-button": "← Volver",
   "title": "Sal",
-  "description": "La sal en una etiqueta nutricional no es solo la sal que alguien añadió. En la Unión Europea y varios otros mercados, la cifra declarada es el equivalente de sal de todo el sodio del producto, calculado como sodio × 2,5.",
+  "description": "La sal es cloruro de sodio. En una etiqueta nutricional, el valor de sal declarado también puede representar el equivalente de sal del sodio presente en el alimento, según el sistema de etiquetado.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — Sodium reduction",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    }
-  ]
+  "sources": []
 }

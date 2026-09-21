@@ -2,39 +2,24 @@
   "name": "Sale",
   "e_code": "",
   "module_icon": "salt_sodium.png",
-  "aliases": "sale, equivalente in sale",
+  "aliases": "equivalente in sale",
   "what_is_title": "Cos'è",
-  "what_is": "Il sale su un'etichetta nutrizionale non è solo il sale che qualcuno ha aggiunto. Nell'Unione europea e in diversi altri mercati, il valore dichiarato è l'equivalente in sale di tutto il sodio del prodotto, calcolato come sodio × 2,5.\n\nQuesto totale comprende sodio da qualsiasi fonte: il sale aggiunto, ma anche agenti lievitanti, esaltatori di sapidità, conservanti e stabilizzanti che contengono sodio.\n\nAltri mercati non dichiarano affatto il sale. Dichiarano il sodio, e i due valori non sono intercambiabili senza indicare che è stata applicata una conversione.",
+  "what_is": "Il sale è cloruro di sodio. Su un'etichetta nutrizionale, il valore di sale dichiarato può anche rappresentare l'equivalente in sale del sodio presente nell'alimento, a seconda del sistema di etichettatura.",
   "why_botia_title": "Perché BOTIA lo segnala",
-  "why_botia": "BOTIA segnala il sale perché lo stesso prodotto può riportare un valore molto diverso a seconda di dove è stato etichettato, e perché il numero non significa ciò che la maggior parte delle persone presume.\n\nUn prodotto con un valore di sale elevato può non avere affatto un sapore salato: il sodio del bicarbonato, del glutammato monosodico, del nitrito di sodio o dei fosfati di sodio conta tutto in quel valore. Un prodotto che ha un sapore salato può dichiarare meno del previsto.\n\nBOTIA mostra il valore così come lo dichiara l'etichetta, indica quale riferimento usa quel mercato e dice quando è stata applicata una conversione.",
+  "why_botia": "Sale e sodio sono strettamente correlati, ma non sono lo stesso campo dichiarato. BOTIA mantiene il valore esattamente come l'etichetta lo presenta e lo collega alla definizione normativa e alle prove che si applicano a quel mercato.",
   "can_title": "BOTIA PUÒ",
-  "can_1": "Leggere il valore di sale dichiarato e conservarne l'unità e la base: per 100 g, per 100 ml, per porzione o per confezione.",
-  "can_2": "Mostrare il riferimento che si applica nel mercato in cui il prodotto è stato etichettato e nominare l'autorità che lo pubblica.",
-  "can_3": "Contrassegnare qualsiasi conversione tra sodio e sale come derivata, mostrando accanto il campo originale dichiarato.",
-  "can_4": "Spiegare che il valore dichiarato copre il sodio da ogni fonte nel prodotto, non solo il sale aggiunto.",
+  "can_1": "Leggere il valore di sale dichiarato sull'etichetta nutrizionale e preservarne l'unità e la base.",
+  "can_2": "Mantenere un valore di sale dichiarato separato da un valore di sodio dichiarato.",
+  "can_3": "Collegare il valore dichiarato alle informazioni normative applicabili e alle prove documentate.",
   "cannot_title": "BOTIA NON PUÒ",
-  "cannot_1": "Dirti quale percentuale dei tuoi fabbisogni rappresenta questo valore. I valori di riferimento sono stabiliti per popolazioni adulte da ciascuna autorità; non sono fabbisogni individuali e variano con età, sesso e circostanze.",
-  "cannot_2": "Trattare sale e sodio come la stessa dichiarazione. Sono campi separati e un prodotto può dichiarare l'uno, l'altro o entrambi.",
-  "cannot_3": "Convertire tra sale e sodio dove il mercato non definisce una conversione, né applicarne una senza dirlo.",
-  "cannot_4": "Dirti quanto del sodio proviene dal sale aggiunto e quanto da altri ingredienti. L'etichetta dichiara il totale; non lo suddivide.",
-  "cannot_5": "Trattare un valore non dichiarato come zero. Se un mercato non richiede la dichiarazione del sale e l'etichetta non lo mostra, BOTIA segnala che non è dichiarato.",
+  "cannot_1": "Determinare quanto del sodio nell'alimento provenga specificamente dal sale aggiunto.",
+  "cannot_2": "Trattare sale e sodio come intercambiabili senza applicare e identificare la conversione appropriata.",
+  "cannot_3": "Determinare il fabbisogno di sodio o di sale di una persona dall'etichetta nutrizionale.",
+  "cannot_4": "Trattare un valore di sale non dichiarato come zero.",
   "sources_title": "Fonti",
   "back-button": "← Indietro",
   "title": "Sale",
-  "description": "Il sale su un'etichetta nutrizionale non è solo il sale che qualcuno ha aggiunto. Nell'Unione europea e in diversi altri mercati, il valore dichiarato è l'equivalente in sale di tutto il sodio del prodotto, calcolato come sodio × 2,5.",
+  "description": "Il sale è cloruro di sodio. Su un'etichetta nutrizionale, il valore di sale dichiarato può anche rappresentare l'equivalente in sale del sodio presente nell'alimento, a seconda del sistema di etichettatura.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "WHO — Sodium reduction",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    }
-  ]
+  "sources": []
 }
