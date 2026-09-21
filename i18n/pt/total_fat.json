@@ -2,37 +2,24 @@
   "name": "Gordura total",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "gordura",
   "what_is_title": "O que é",
-  "what_is": "O valor da gordura abrange toda a gordura de um produto: saturada, monoinsaturada, polinsaturada e trans, reunidas num único número.\n\nÉ obrigatório em praticamente todos os mercados e, em muitos, vem acompanhado de uma decomposição das saturadas, o subcampo que a regulamentação trata como mais relevante.\n\nO resto da decomposição — monoinsaturadas, polinsaturadas — é habitualmente voluntário, pelo que a maioria dos produtos não o declara.\n\nA gordura fornece 9 kcal por grama, mais do dobro da proteína ou dos hidratos de carbono. É por isso que pesa tanto no valor energético.",
+  "what_is": "A gordura total é a quantidade combinada de todas as gorduras de um alimento, incluindo saturadas, monoinsaturadas, polinsaturadas e trans.",
   "why_botia_title": "Porque é que a BOTIA o sinaliza",
-  "why_botia": "A BOTIA sinaliza a gordura total porque o número por si só diz pouco: o azeite e a banha podem declarar valores semelhantes, mas a sua composição é muito diferente.\n\nE porque os limiares do rótulo nutricional na frente da embalagem são específicos de cada jurisdição. Um critério usado num país não deve ser transferido automaticamente para outro mercado: as regras, as categorias e a base de cálculo podem diferir.",
+  "why_botia": "O valor da gordura total indica quanta gordura é declarada, mas não que tipos de gordura compõem essa quantidade. A BOTIA mantém o total separado de qualquer decomposição mostrada no rótulo e das informações regulamentares e evidências usadas para o interpretar.",
   "can_title": "A BOTIA PODE",
-  "can_1": "Ler o valor declarado e manter a sua unidade e a sua base.",
-  "can_2": "Mostrar qualquer decomposição que o rótulo declare: saturadas, monoinsaturadas, polinsaturadas, trans.",
-  "can_3": "Mostrar a referência que se aplica no mercado onde o produto foi rotulado e nomear a autoridade que a publica.",
+  "can_1": "Ler o valor da gordura total declarado no rótulo nutricional e preservar a sua unidade e a sua base.",
+  "can_2": "Mostrar subtipos de gordura declarados separadamente, como saturadas, monoinsaturadas, polinsaturadas ou trans, quando aparecem no rótulo.",
+  "can_3": "Ligar o valor declarado às informações regulamentares aplicáveis e às evidências documentadas.",
   "cannot_title": "A BOTIA NÃO PODE",
-  "cannot_1": "Dizer-te que percentagem das tuas próprias necessidades este valor representa.",
-  "cannot_2": "Deduzir o tipo de gordura a partir do total. Se a decomposição não for declarada, não pode ser conhecida.",
-  "cannot_3": "Aplicar o limiar do rótulo nutricional na frente da embalagem de um país a um produto rotulado noutro. Os critérios e as bases de cálculo diferem.",
-  "cannot_4": "Dizer que um produto com mais gordura é pior do que um com menos. Depende do tipo de gordura, do produto e da dieta como um todo.",
+  "cannot_1": "Determinar os tipos de gordura presentes apenas a partir do valor da gordura total.",
+  "cannot_2": "Calcular de forma fiável um subtipo de gordura não declarado subtraindo outros valores da gordura total.",
+  "cannot_3": "Determinar a necessidade de gordura de uma pessoa a partir do rótulo nutricional.",
+  "cannot_4": "Tratar um valor de gordura total não declarado como zero.",
   "sources_title": "Fontes",
   "back-button": "← Voltar",
   "title": "Gordura total",
-  "description": "O valor da gordura abrange toda a gordura de um produto: saturada, monoinsaturada, polinsaturada e trans, reunidas num único número.",
+  "description": "A gordura total é a quantidade combinada de todas as gorduras de um alimento, incluindo saturadas, monoinsaturadas, polinsaturadas e trans.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Total fat intake for the prevention of unhealthy weight gain (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073654"
-    }
-  ]
+  "sources": []
 }

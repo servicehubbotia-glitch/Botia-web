@@ -2,37 +2,24 @@
   "name": "Total fat",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "fat",
   "what_is_title": "What it is",
-  "what_is": "The fat figure covers all the fat in a product: saturated, monounsaturated, polyunsaturated and trans, together in one number.\n\nIt is mandatory in virtually every market, and in many it comes with a breakdown of saturates, the subfield regulations treat as most relevant.\n\nThe rest of the breakdown — monounsaturated, polyunsaturated — is usually voluntary, so most products do not declare it.\n\nFat provides 9 kcal per gram, more than twice protein or carbohydrate. That is why it weighs so heavily on the energy figure.",
+  "what_is": "Total fat is the combined amount of all fats in a food, including saturated, monounsaturated, polyunsaturated and trans fats.",
   "why_botia_title": "Why BOTIA flags it",
-  "why_botia": "BOTIA flags total fat because the number alone says little: olive oil and lard can declare similar figures, but their composition is very different.\n\nAnd because front-of-pack thresholds are jurisdiction-specific. A criterion used in one country should not automatically be transferred to another market: the rules, categories and calculation basis can differ.",
+  "why_botia": "The total fat figure tells you how much fat is declared, but not what types of fat make up that amount. BOTIA keeps the total separate from any breakdown shown on the label and from the regulatory information and evidence used to interpret it.",
   "can_title": "BOTIA CAN",
-  "can_1": "Read the declared value and keep its unit and its basis.",
-  "can_2": "Show whatever breakdown the label declares: saturated, monounsaturated, polyunsaturated, trans.",
-  "can_3": "Show the reference that applies in the market where the product was labelled, and name the authority that publishes it.",
+  "can_1": "Read the total fat value declared on the nutrition label and preserve its unit and basis.",
+  "can_2": "Show separately declared fat subtypes such as saturated, monounsaturated, polyunsaturated or trans fat when they appear on the label.",
+  "can_3": "Connect the declared value with the applicable regulatory information and documented evidence.",
   "cannot_title": "BOTIA CANNOT",
-  "cannot_1": "Tell you what percentage of your own needs this value represents.",
-  "cannot_2": "Work out the type of fat from the total. If the breakdown is not declared, it cannot be known.",
-  "cannot_3": "Apply one country's front-of-pack threshold to a product labelled in another. The criteria and the bases of calculation differ.",
-  "cannot_4": "Say that a product with more fat is worse than one with less. It depends on the type of fat, the product and the whole diet.",
+  "cannot_1": "Determine the types of fat present from the total fat value alone.",
+  "cannot_2": "Calculate an undeclared fat subtype reliably by subtracting other values from total fat.",
+  "cannot_3": "Determine an individual's fat requirement from the nutrition label.",
+  "cannot_4": "Treat an undeclared total fat value as zero.",
   "sources_title": "Sources",
   "back-button": "← Back",
   "title": "Total fat",
-  "description": "The fat figure covers all the fat in a product: saturated, monounsaturated, polyunsaturated and trans, together in one number.",
+  "description": "Total fat is the combined amount of all fats in a food, including saturated, monounsaturated, polyunsaturated and trans fats.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Total fat intake for the prevention of unhealthy weight gain (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073654"
-    }
-  ]
+  "sources": []
 }

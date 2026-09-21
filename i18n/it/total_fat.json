@@ -2,37 +2,24 @@
   "name": "Grassi totali",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "grassi",
   "what_is_title": "Cos'è",
-  "what_is": "Il valore dei grassi copre tutti i grassi di un prodotto: saturi, monoinsaturi, polinsaturi e trans, riuniti in un unico numero.\n\nÈ obbligatorio in praticamente ogni mercato e, in molti, è accompagnato da una ripartizione dei saturi, il sottocampo che la normativa tratta come più rilevante.\n\nIl resto della ripartizione — monoinsaturi, polinsaturi — è di solito facoltativo, quindi la maggior parte dei prodotti non lo dichiara.\n\nI grassi forniscono 9 kcal per grammo, più del doppio delle proteine o dei carboidrati. Ecco perché pesano così tanto sul valore energetico.",
+  "what_is": "I grassi totali sono la quantità combinata di tutti i grassi di un alimento, compresi saturi, monoinsaturi, polinsaturi e trans.",
   "why_botia_title": "Perché BOTIA lo segnala",
-  "why_botia": "BOTIA segnala i grassi totali perché il numero da solo dice poco: l'olio d'oliva e lo strutto possono dichiarare valori simili, ma la loro composizione è molto diversa.\n\nE perché le soglie del logo nutrizionale sul fronte della confezione sono specifiche di ogni giurisdizione. Un criterio usato in un paese non va trasferito automaticamente a un altro mercato: regole, categorie e base di calcolo possono differire.",
+  "why_botia": "Il valore dei grassi totali indica quanto grasso è dichiarato, ma non quali tipi di grasso compongono quella quantità. BOTIA mantiene il totale separato da qualsiasi ripartizione mostrata sull'etichetta e dalle informazioni normative e prove utilizzate per interpretarlo.",
   "can_title": "BOTIA PUÒ",
-  "can_1": "Leggere il valore dichiarato e conservarne l'unità e la base.",
-  "can_2": "Mostrare qualsiasi ripartizione dichiarata dall'etichetta: saturi, monoinsaturi, polinsaturi, trans.",
-  "can_3": "Mostrare il riferimento che si applica nel mercato in cui il prodotto è stato etichettato e nominare l'autorità che lo pubblica.",
+  "can_1": "Leggere il valore dei grassi totali dichiarato sull'etichetta nutrizionale e preservarne l'unità e la base.",
+  "can_2": "Mostrare sottotipi di grassi dichiarati separatamente, come saturi, monoinsaturi, polinsaturi o trans, quando compaiono sull'etichetta.",
+  "can_3": "Collegare il valore dichiarato alle informazioni normative applicabili e alle prove documentate.",
   "cannot_title": "BOTIA NON PUÒ",
-  "cannot_1": "Dirti quale percentuale dei tuoi fabbisogni rappresenta questo valore.",
-  "cannot_2": "Dedurre il tipo di grasso dal totale. Se la ripartizione non è dichiarata, non può essere conosciuta.",
-  "cannot_3": "Applicare la soglia del logo nutrizionale sul fronte della confezione di un paese a un prodotto etichettato in un altro. I criteri e le basi di calcolo differiscono.",
-  "cannot_4": "Dire che un prodotto con più grassi è peggiore di uno con meno. Dipende dal tipo di grasso, dal prodotto e dall'intera dieta.",
+  "cannot_1": "Determinare i tipi di grassi presenti dal solo valore dei grassi totali.",
+  "cannot_2": "Calcolare in modo affidabile un sottotipo di grasso non dichiarato sottraendo altri valori dal totale.",
+  "cannot_3": "Determinare il fabbisogno di grassi di una persona dall'etichetta nutrizionale.",
+  "cannot_4": "Trattare un valore di grassi totali non dichiarato come zero.",
   "sources_title": "Fonti",
   "back-button": "← Indietro",
   "title": "Grassi totali",
-  "description": "Il valore dei grassi copre tutti i grassi di un prodotto: saturi, monoinsaturi, polinsaturi e trans, riuniti in un unico numero.",
+  "description": "I grassi totali sono la quantità combinata di tutti i grassi di un alimento, compresi saturi, monoinsaturi, polinsaturi e trans.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Total fat intake for the prevention of unhealthy weight gain (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073654"
-    }
-  ]
+  "sources": []
 }

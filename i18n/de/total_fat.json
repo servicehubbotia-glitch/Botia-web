@@ -2,37 +2,24 @@
   "name": "Fett gesamt",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "Fett",
   "what_is_title": "Was es ist",
-  "what_is": "Die Fettzahl umfasst das gesamte Fett in einem Produkt: gesättigte, einfach ungesättigte, mehrfach ungesättigte und Trans-Fette, zusammen in einer Zahl.\n\nSie ist in praktisch jedem Markt verpflichtend, und in vielen kommt sie mit einer Aufschlüsselung der gesättigten Fettsäuren, dem Unterfeld, das die Regulierung als am relevantesten behandelt.\n\nDer Rest der Aufschlüsselung — einfach ungesättigte, mehrfach ungesättigte — ist meist freiwillig, sodass die meisten Produkte sie nicht angeben.\n\nFett liefert 9 kcal pro Gramm, mehr als das Doppelte von Protein oder Kohlenhydraten. Deshalb wiegt es so schwer in der Energiezahl.",
+  "what_is": "Fett gesamt ist die kombinierte Menge aller Fette in einem Lebensmittel, einschließlich gesättigter, einfach ungesättigter, mehrfach ungesättigter und Trans-Fette.",
   "why_botia_title": "Warum BOTIA es markiert",
-  "why_botia": "BOTIA markiert das Gesamtfett, weil die Zahl allein wenig aussagt: Olivenöl und Schmalz können ähnliche Werte angeben, aber ihre Zusammensetzung ist sehr unterschiedlich.\n\nUnd weil die Schwellen der Nährwertkennzeichnung auf der Packungsvorderseite je nach Rechtsordnung unterschiedlich sind. Ein in einem Land verwendetes Kriterium sollte nicht automatisch auf einen anderen Markt übertragen werden: Die Regeln, Kategorien und Berechnungsgrundlagen können sich unterscheiden.",
+  "why_botia": "Die Gesamtfettzahl gibt an, wie viel Fett deklariert ist, aber nicht, welche Fettarten diese Menge ausmachen. BOTIA hält die Gesamtsumme getrennt von jeder auf dem Etikett gezeigten Aufschlüsselung sowie von den regulatorischen Informationen und Belegen, die zu ihrer Interpretation verwendet werden.",
   "can_title": "BOTIA KANN",
-  "can_1": "Den angegebenen Wert lesen und seine Einheit und seine Basis beibehalten.",
-  "can_2": "Jede Aufschlüsselung anzeigen, die das Etikett angibt: gesättigte, einfach ungesättigte, mehrfach ungesättigte, Trans-Fette.",
-  "can_3": "Die Referenz anzeigen, die in dem Markt gilt, in dem das Produkt gekennzeichnet wurde, und die Behörde nennen, die sie veröffentlicht.",
+  "can_1": "Den auf dem Nährwertetikett deklarierten Gesamtfettwert lesen und seine Einheit und Basis beibehalten.",
+  "can_2": "Separat deklarierte Fett-Untertypen wie gesättigte, einfach ungesättigte, mehrfach ungesättigte oder Trans-Fette anzeigen, wenn sie auf dem Etikett erscheinen.",
+  "can_3": "Den deklarierten Wert mit den geltenden regulatorischen Informationen und dokumentierten Belegen verknüpfen.",
   "cannot_title": "BOTIA KANN NICHT",
-  "cannot_1": "Dir sagen, welchen Prozentsatz deines eigenen Bedarfs dieser Wert darstellt.",
-  "cannot_2": "Die Fettart aus dem Gesamtwert ableiten. Wenn die Aufschlüsselung nicht angegeben ist, kann sie nicht bekannt sein.",
-  "cannot_3": "Die Schwelle der Nährwertkennzeichnung auf der Packungsvorderseite eines Landes auf ein in einem anderen Land gekennzeichnetes Produkt anwenden. Die Kriterien und Berechnungsgrundlagen unterscheiden sich.",
-  "cannot_4": "Sagen, dass ein Produkt mit mehr Fett schlechter ist als eines mit weniger. Das hängt von der Fettart, dem Produkt und der gesamten Ernährung ab.",
+  "cannot_1": "Die vorhandenen Fettarten allein aus dem Gesamtfettwert bestimmen.",
+  "cannot_2": "Einen nicht deklarierten Fett-Untertyp zuverlässig berechnen, indem andere Werte vom Gesamtfett abgezogen werden.",
+  "cannot_3": "Den Fettbedarf einer Person aus dem Nährwertetikett bestimmen.",
+  "cannot_4": "Einen nicht deklarierten Gesamtfettwert als Null behandeln.",
   "sources_title": "Quellen",
   "back-button": "← Zurück",
   "title": "Fett gesamt",
-  "description": "Die Fettzahl umfasst das gesamte Fett in einem Produkt: gesättigte, einfach ungesättigte, mehrfach ungesättigte und Trans-Fette, zusammen in einer Zahl.",
+  "description": "Fett gesamt ist die kombinierte Menge aller Fette in einem Lebensmittel, einschließlich gesättigter, einfach ungesättigter, mehrfach ungesättigter und Trans-Fette.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Total fat intake for the prevention of unhealthy weight gain (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073654"
-    }
-  ]
+  "sources": []
 }

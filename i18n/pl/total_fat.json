@@ -2,37 +2,24 @@
   "name": "Tłuszcz ogółem",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "tłuszcz",
   "what_is_title": "Co to jest",
-  "what_is": "Wartość tłuszczu obejmuje cały tłuszcz w produkcie: nasycone, jednonienasycone, wielonienasycone i trans, razem w jednej liczbie.\n\nJest obowiązkowa na praktycznie każdym rynku, a na wielu towarzyszy jej rozbicie na nasycone, podpole, które przepisy traktują jako najistotniejsze.\n\nReszta rozbicia — jednonienasycone, wielonienasycone — jest zwykle dobrowolna, więc większość produktów jej nie deklaruje.\n\nTłuszcz dostarcza 9 kcal na gram, ponad dwukrotnie więcej niż białko lub węglowodany. Dlatego tak mocno wpływa na wartość energetyczną.",
+  "what_is": "Tłuszcz ogółem to łączna ilość wszystkich tłuszczów w żywności, w tym nasyconych, jednonienasyconych, wielonienasyconych i trans.",
   "why_botia_title": "Dlaczego BOTIA to oznacza",
-  "why_botia": "BOTIA oznacza tłuszcz ogółem, ponieważ sama liczba mówi niewiele: oliwa z oliwek i smalec mogą deklarować podobne wartości, ale ich skład jest bardzo różny.\n\nI ponieważ progi oznaczania na przedniej stronie opakowania są specyficzne dla danej jurysdykcji. Kryterium stosowane w jednym kraju nie powinno być automatycznie przenoszone na inny rynek: zasady, kategorie i podstawa obliczeń mogą się różnić.",
+  "why_botia": "Wartość tłuszczu ogółem mówi, ile tłuszczu zadeklarowano, ale nie mówi, jakie rodzaje tłuszczu składają się na tę ilość. BOTIA utrzymuje sumę oddzielnie od wszelkiego rozbicia pokazanego na etykiecie oraz od informacji regulacyjnych i dowodów używanych do jej interpretacji.",
   "can_title": "BOTIA MOŻE",
-  "can_1": "Odczytać zadeklarowaną wartość i zachować jej jednostkę oraz podstawę.",
-  "can_2": "Pokazać każde rozbicie, które deklaruje etykieta: nasycone, jednonienasycone, wielonienasycone, trans.",
-  "can_3": "Pokazać odniesienie obowiązujące na rynku, na którym produkt został oznakowany, i wskazać organ, który je publikuje.",
+  "can_1": "Odczytać zadeklarowaną wartość tłuszczu ogółem na etykiecie wartości odżywczej i zachować jej jednostkę oraz podstawę.",
+  "can_2": "Pokazać osobno zadeklarowane podtypy tłuszczu, takie jak nasycone, jednonienasycone, wielonienasycone lub trans, gdy pojawiają się na etykiecie.",
+  "can_3": "Powiązać zadeklarowaną wartość z obowiązującymi informacjami regulacyjnymi i udokumentowanymi dowodami.",
   "cannot_title": "BOTIA NIE MOŻE",
-  "cannot_1": "Powiedzieć, jaki procent twoich własnych potrzeb reprezentuje ta wartość.",
-  "cannot_2": "Wywnioskować rodzaj tłuszczu z sumy. Jeśli rozbicie nie jest zadeklarowane, nie można go poznać.",
-  "cannot_3": "Zastosować próg oznaczania na przedniej stronie opakowania z jednego kraju do produktu oznakowanego w innym. Kryteria i podstawy obliczeń się różnią.",
-  "cannot_4": "Powiedzieć, że produkt z większą ilością tłuszczu jest gorszy od tego z mniejszą. To zależy od rodzaju tłuszczu, produktu i całej diety.",
+  "cannot_1": "Określić rodzajów obecnych tłuszczów wyłącznie na podstawie wartości tłuszczu ogółem.",
+  "cannot_2": "Wiarygodnie obliczyć niezadeklarowanego podtypu tłuszczu, odejmując inne wartości od tłuszczu ogółem.",
+  "cannot_3": "Określić zapotrzebowania danej osoby na tłuszcz na podstawie etykiety wartości odżywczej.",
+  "cannot_4": "Traktować niezadeklarowanej wartości tłuszczu ogółem jako zera.",
   "sources_title": "Źródła",
   "back-button": "← Wstecz",
   "title": "Tłuszcz ogółem",
-  "description": "Wartość tłuszczu obejmuje cały tłuszcz w produkcie: nasycone, jednonienasycone, wielonienasycone i trans, razem w jednej liczbie.",
+  "description": "Tłuszcz ogółem to łączna ilość wszystkich tłuszczów w żywności, w tym nasyconych, jednonienasyconych, wielonienasyconych i trans.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Total fat intake for the prevention of unhealthy weight gain (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073654"
-    }
-  ]
+  "sources": []
 }

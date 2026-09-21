@@ -2,37 +2,24 @@
   "name": "Matières grasses totales",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "matières grasses",
   "what_is_title": "Ce que c'est",
-  "what_is": "La valeur des matières grasses couvre toutes les matières grasses d'un produit : saturées, monoinsaturées, polyinsaturées et trans, réunies en un seul chiffre.\n\nElle est obligatoire dans pratiquement tous les marchés et, dans beaucoup, elle est accompagnée d'une ventilation des saturées, le sous-champ que la réglementation traite comme le plus pertinent.\n\nLe reste de la ventilation — monoinsaturées, polyinsaturées — est généralement facultatif, de sorte que la plupart des produits ne le déclarent pas.\n\nLes matières grasses apportent 9 kcal par gramme, plus du double des protéines ou des glucides. C'est pourquoi elles pèsent autant sur la valeur énergétique.",
+  "what_is": "Les matières grasses totales correspondent à la quantité combinée de toutes les matières grasses d'un aliment, y compris les saturées, les monoinsaturées, les polyinsaturées et les trans.",
   "why_botia_title": "Pourquoi BOTIA le signale",
-  "why_botia": "BOTIA signale les matières grasses totales parce que le chiffre seul dit peu : l'huile d'olive et le saindoux peuvent déclarer des valeurs similaires, mais leur composition est très différente.\n\nEt parce que les seuils du logo nutritionnel en face avant sont propres à chaque juridiction. Un critère utilisé dans un pays ne doit pas être automatiquement transposé à un autre marché : les règles, les catégories et la base de calcul peuvent différer.",
+  "why_botia": "La valeur des matières grasses totales indique la quantité déclarée, mais pas quels types de matières grasses composent cette quantité. BOTIA maintient le total séparé de toute ventilation figurant sur l'étiquette et des informations réglementaires et preuves utilisées pour l'interpréter.",
   "can_title": "BOTIA PEUT",
-  "can_1": "Lire la valeur déclarée et conserver son unité et sa base.",
-  "can_2": "Afficher toute ventilation que l'étiquette déclare : saturées, monoinsaturées, polyinsaturées, trans.",
-  "can_3": "Afficher la référence qui s'applique sur le marché où le produit a été étiqueté et nommer l'autorité qui la publie.",
+  "can_1": "Lire la valeur des matières grasses totales déclarée sur l'étiquette nutritionnelle et préserver son unité et sa base.",
+  "can_2": "Afficher les sous-types de matières grasses déclarés séparément, tels que saturées, monoinsaturées, polyinsaturées ou trans, lorsqu'ils figurent sur l'étiquette.",
+  "can_3": "Relier la valeur déclarée aux informations réglementaires applicables et aux preuves documentées.",
   "cannot_title": "BOTIA NE PEUT PAS",
-  "cannot_1": "Vous dire quel pourcentage de vos propres besoins cette valeur représente.",
-  "cannot_2": "Déduire le type de matière grasse à partir du total. Si la ventilation n'est pas déclarée, elle ne peut pas être connue.",
-  "cannot_3": "Appliquer le seuil du logo nutritionnel en face avant d'un pays à un produit étiqueté dans un autre. Les critères et les bases de calcul diffèrent.",
-  "cannot_4": "Dire qu'un produit plus gras est moins bon qu'un produit moins gras. Cela dépend du type de matière grasse, du produit et de l'ensemble du régime.",
+  "cannot_1": "Déterminer les types de matières grasses présents à partir de la seule valeur des matières grasses totales.",
+  "cannot_2": "Calculer de manière fiable un sous-type de matière grasse non déclaré en soustrayant d'autres valeurs du total.",
+  "cannot_3": "Déterminer les besoins en matières grasses d'une personne à partir de l'étiquette nutritionnelle.",
+  "cannot_4": "Traiter une valeur de matières grasses totales non déclarée comme zéro.",
   "sources_title": "Sources",
   "back-button": "← Retour",
   "title": "Matières grasses totales",
-  "description": "La valeur des matières grasses couvre toutes les matières grasses d'un produit : saturées, monoinsaturées, polyinsaturées et trans, réunies en un seul chiffre.",
+  "description": "Les matières grasses totales correspondent à la quantité combinée de toutes les matières grasses d'un aliment, y compris les saturées, les monoinsaturées, les polyinsaturées et les trans.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Total fat intake for the prevention of unhealthy weight gain (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073654"
-    }
-  ]
+  "sources": []
 }

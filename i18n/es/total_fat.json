@@ -2,37 +2,24 @@
   "name": "Grasa total",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "grasa",
   "what_is_title": "Qué es",
-  "what_is": "La cifra de grasa abarca toda la grasa de un producto: saturada, monoinsaturada, poliinsaturada y trans, juntas en un solo número.\n\nEs obligatoria en prácticamente todos los mercados y, en muchos, viene acompañada de un desglose de las saturadas, el subcampo que la normativa trata como más relevante.\n\nEl resto del desglose —monoinsaturadas, poliinsaturadas— suele ser voluntario, por lo que la mayoría de los productos no lo declara.\n\nLa grasa aporta 9 kcal por gramo, más del doble que la proteína o los carbohidratos. Por eso pesa tanto en la cifra de energía.",
+  "what_is": "La grasa total es la cantidad combinada de todas las grasas de un alimento, incluidas las saturadas, las monoinsaturadas, las poliinsaturadas y las trans.",
   "why_botia_title": "Por qué BOTIA lo señala",
-  "why_botia": "BOTIA señala la grasa total porque el número por sí solo dice poco: el aceite de oliva y la manteca pueden declarar cifras parecidas, pero su composición es muy distinta.\n\nY porque los umbrales del etiquetado frontal son específicos de cada jurisdicción. Un criterio usado en un país no debe trasladarse automáticamente a otro mercado: las reglas, las categorías y la base de cálculo pueden diferir.",
+  "why_botia": "La cifra de grasa total indica cuánta grasa se declara, pero no qué tipos de grasa componen esa cantidad. BOTIA mantiene el total separado de cualquier desglose mostrado en la etiqueta y de la información regulatoria y la evidencia utilizadas para interpretarlo.",
   "can_title": "BOTIA PUEDE",
-  "can_1": "Leer el valor declarado y conservar su unidad y su base.",
-  "can_2": "Mostrar cualquier desglose que declare la etiqueta: saturadas, monoinsaturadas, poliinsaturadas, trans.",
-  "can_3": "Mostrar la referencia que se aplica en el mercado donde se etiquetó el producto y nombrar la autoridad que la publica.",
+  "can_1": "Leer el valor de grasa total declarado en la etiqueta nutricional y conservar su unidad y su base.",
+  "can_2": "Mostrar subtipos de grasa declarados por separado, como saturadas, monoinsaturadas, poliinsaturadas o trans, cuando aparecen en la etiqueta.",
+  "can_3": "Conectar el valor declarado con la información regulatoria aplicable y la evidencia documentada.",
   "cannot_title": "BOTIA NO PUEDE",
-  "cannot_1": "Decirte qué porcentaje de tus propias necesidades representa este valor.",
-  "cannot_2": "Deducir el tipo de grasa a partir del total. Si no se declara el desglose, no puede conocerse.",
-  "cannot_3": "Aplicar el umbral del etiquetado frontal de un país a un producto etiquetado en otro. Los criterios y las bases de cálculo difieren.",
-  "cannot_4": "Decir que un producto con más grasa es peor que uno con menos. Depende del tipo de grasa, del producto y de la dieta en su conjunto.",
+  "cannot_1": "Determinar los tipos de grasa presentes solo a partir del valor de grasa total.",
+  "cannot_2": "Calcular de forma fiable un subtipo de grasa no declarado restando otros valores de la grasa total.",
+  "cannot_3": "Determinar la necesidad de grasa de una persona a partir de la etiqueta nutricional.",
+  "cannot_4": "Tratar un valor de grasa total no declarado como cero.",
   "sources_title": "Fuentes",
   "back-button": "← Volver",
   "title": "Grasa total",
-  "description": "La cifra de grasa abarca toda la grasa de un producto: saturada, monoinsaturada, poliinsaturada y trans, juntas en un solo número.",
+  "description": "La grasa total es la cantidad combinada de todas las grasas de un alimento, incluidas las saturadas, las monoinsaturadas, las poliinsaturadas y las trans.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Total fat intake for the prevention of unhealthy weight gain (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073654"
-    }
-  ]
+  "sources": []
 }
