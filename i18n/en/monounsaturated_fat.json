@@ -2,36 +2,23 @@
   "name": "Monounsaturated fat",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "monounsaturated fatty acids, MUFA",
   "what_is_title": "What it is",
-  "what_is": "Monounsaturated fats have a single double bond in their chain. The most common is oleic acid, the one that predominates in olive oil.\n\nThey are also abundant in avocado, nuts, rapeseed oil and high-oleic sunflower oil.\n\nOn a nutrition label they are a voluntary field in almost every market. The European Union permits declaring them but does not require it, so most products do not show them.\n\nWhere they appear, they sit inside the total fat figure, not alongside it.",
+  "what_is": "Monounsaturated fat is a type of fat whose fatty acids contain one double bond. Oleic acid is one of the most common examples.",
   "why_botia_title": "Why BOTIA flags it",
-  "why_botia": "BOTIA flags monounsaturated fat because when it is declared it explains much of a product's composition, and because its absence misleads.\n\nA label not declaring them does not mean the product has none. It means that market does not require the declaration.",
+  "why_botia": "Monounsaturated fat forms part of total fat, but it is not always declared separately. BOTIA keeps a declared value distinct from total fat and from the regulatory information and evidence used to interpret it.",
   "can_title": "BOTIA CAN",
-  "can_1": "Read the declared value, where it exists, and keep its unit and its basis.",
-  "can_2": "State that they form part of the total fat figure and are not added to it.",
-  "can_3": "Link to the oils and ingredients in the list that provide them, where they can be identified.",
+  "can_1": "Read the monounsaturated fat value when it is declared on the nutrition label and preserve its unit and basis.",
+  "can_2": "Show that the value forms part of total fat rather than being added to it.",
+  "can_3": "Connect the declared value with the applicable regulatory information and documented evidence where relevant.",
   "cannot_title": "BOTIA CANNOT",
-  "cannot_1": "Work them out by subtracting saturated and polyunsaturated from the total. That subtraction does not give monounsaturated: the total also includes trans fats and, depending on the method, other components.",
-  "cannot_2": "Treat an undeclared value as zero. It is a voluntary field in almost every market.",
-  "cannot_3": "Say how much is oleic acid and how much other monounsaturated acids. The label declares the group, not its composition.",
+  "cannot_1": "Determine the amount of individual monounsaturated fatty acids from the combined value.",
+  "cannot_2": "Calculate monounsaturated fat reliably from total fat and other declared fat values.",
+  "cannot_3": "Treat an undeclared monounsaturated fat value as zero.",
   "sources_title": "Sources",
   "back-button": "← Back",
   "title": "Monounsaturated fat",
-  "description": "Monounsaturated fats have a single double bond in their chain. The most common is oleic acid, the one that predominates in olive oil.",
+  "description": "Monounsaturated fat is a type of fat whose fatty acids contain one double bond. Oleic acid is one of the most common examples.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Saturated fatty acid and trans-fatty acid intake guideline (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073630"
-    }
-  ]
+  "sources": []
 }

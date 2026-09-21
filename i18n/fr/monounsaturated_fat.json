@@ -2,36 +2,23 @@
   "name": "Matières grasses monoinsaturées",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "acides gras monoinsaturés, AGMI",
   "what_is_title": "Ce que c'est",
-  "what_is": "Les matières grasses monoinsaturées ont une seule double liaison dans leur chaîne. La plus courante est l'acide oléique, celui qui prédomine dans l'huile d'olive.\n\nElles sont également abondantes dans l'avocat, les noix, l'huile de colza et l'huile de tournesol à haute teneur en oléique.\n\nSur une étiquette nutritionnelle, elles constituent un champ facultatif dans presque tous les marchés. L'Union européenne permet de les déclarer mais ne l'exige pas, de sorte que la plupart des produits ne les affichent pas.\n\nLorsqu'elles apparaissent, elles font partie de la valeur de matières grasses totales et ne s'y ajoutent pas.",
+  "what_is": "Les matières grasses monoinsaturées sont un type de matière grasse dont les acides gras contiennent une double liaison. L'acide oléique est l'un des exemples les plus courants.",
   "why_botia_title": "Pourquoi BOTIA le signale",
-  "why_botia": "BOTIA signale les matières grasses monoinsaturées parce que, lorsqu'elles sont déclarées, elles expliquent une grande partie de la composition d'un produit, et parce que leur absence induit en erreur.\n\nQu'une étiquette ne les déclare pas ne signifie pas que le produit n'en contient pas. Cela signifie que ce marché n'exige pas la déclaration.",
+  "why_botia": "Les matières grasses monoinsaturées font partie des matières grasses totales, mais elles ne sont pas toujours déclarées séparément. BOTIA maintient une valeur déclarée distincte du total et des informations réglementaires et preuves utilisées pour l'interpréter.",
   "can_title": "BOTIA PEUT",
-  "can_1": "Lire la valeur déclarée, là où elle existe, et conserver son unité et sa base.",
-  "can_2": "Indiquer qu'elles font partie de la valeur de matières grasses totales et qu'elles ne s'y ajoutent pas.",
-  "can_3": "Créer un lien vers les huiles et ingrédients de la liste qui en apportent, là où ils peuvent être identifiés.",
+  "can_1": "Lire la valeur des matières grasses monoinsaturées lorsqu'elle est déclarée sur l'étiquette nutritionnelle et préserver son unité et sa base.",
+  "can_2": "Indiquer que la valeur fait partie du total des matières grasses et ne s'y ajoute pas.",
+  "can_3": "Relier la valeur déclarée aux informations réglementaires applicables et aux preuves documentées le cas échéant.",
   "cannot_title": "BOTIA NE PEUT PAS",
-  "cannot_1": "Les calculer en soustrayant les saturées et les polyinsaturées du total. Cette soustraction ne donne pas les monoinsaturées : le total inclut aussi les acides gras trans et, selon la méthode, d'autres composants.",
-  "cannot_2": "Traiter une valeur non déclarée comme zéro. C'est un champ facultatif dans presque tous les marchés.",
-  "cannot_3": "Dire quelle part est de l'acide oléique et quelle part d'autres acides monoinsaturés. L'étiquette déclare le groupe, pas sa composition.",
+  "cannot_1": "Déterminer la quantité d'acides gras monoinsaturés individuels à partir de la valeur combinée.",
+  "cannot_2": "Calculer de manière fiable les matières grasses monoinsaturées à partir des matières grasses totales et d'autres valeurs déclarées.",
+  "cannot_3": "Traiter une valeur de matières grasses monoinsaturées non déclarée comme zéro.",
   "sources_title": "Sources",
   "back-button": "← Retour",
   "title": "Matières grasses monoinsaturées",
-  "description": "Les matières grasses monoinsaturées ont une seule double liaison dans leur chaîne. La plus courante est l'acide oléique, celui qui prédomine dans l'huile d'olive.",
+  "description": "Les matières grasses monoinsaturées sont un type de matière grasse dont les acides gras contiennent une double liaison. L'acide oléique est l'un des exemples les plus courants.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Saturated fatty acid and trans-fatty acid intake guideline (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073630"
-    }
-  ]
+  "sources": []
 }

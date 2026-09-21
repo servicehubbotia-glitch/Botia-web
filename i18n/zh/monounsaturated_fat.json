@@ -2,36 +2,23 @@
   "name": "单不饱和脂肪",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "单不饱和脂肪酸, MUFA",
   "what_is_title": "这是什么",
-  "what_is": "单不饱和脂肪在其碳链中只有一个双键。最常见的是油酸，它在橄榄油中占主导地位。\n\n它们也大量存在于牛油果、坚果、菜籽油和高油酸葵花籽油中。\n\n在营养标签上，它们几乎是所有市场的可选字段。欧盟允许标示但不强制要求，因此大多数产品不显示它们。\n\n当它们出现时，它们属于总脂肪数值的一部分，而不是额外加到其上。",
+  "what_is": "单不饱和脂肪是一类脂肪，其脂肪酸含有一个双键。油酸是最常见的例子之一。",
   "why_botia_title": "BOTIA 为何标记它",
-  "why_botia": "BOTIA 标记单不饱和脂肪，因为当它们被标示时，能解释产品组成的很大一部分，而且它们的缺失会误导。\n\n标签未标示它们并不意味着产品不含。而是意味着该市场不要求标示。",
+  "why_botia": "单不饱和脂肪构成总脂肪的一部分，但并不总是单独标示。BOTIA 将所标示的数值与总脂肪以及用于解释它的法规信息和证据分开。",
   "can_title": "BOTIA 可以",
-  "can_1": "读取所标示的数值（如果有），并保留其单位和基准。",
-  "can_2": "说明它们构成总脂肪数值的一部分，而不是加到其上。",
-  "can_3": "在可以识别的情况下，链接到列表中的油脂和成分。",
+  "can_1": "在营养标签上标示单不饱和脂肪数值时读取该数值，并保留其单位和基准。",
+  "can_2": "说明该数值构成总脂肪的一部分，而不是加到其上。",
+  "can_3": "在相关时，将所标示的数值与适用的法规信息和记录的证据联系起来。",
   "cannot_title": "BOTIA 不能",
-  "cannot_1": "通过从总量中减去饱和脂肪和多不饱和脂肪来计算它们。这个减法不能得出单不饱和脂肪：总量还包括反式脂肪，并且根据方法还可能包括其他成分。",
-  "cannot_2": "把未标示的数值当作零。它在几乎所有市场都是可选字段。",
-  "cannot_3": "说出其中有多少是油酸，有多少是其他单不饱和酸。标签标示的是这一组，而不是它的组成。",
+  "cannot_1": "从合计数值确定单个单不饱和脂肪酸的含量。",
+  "cannot_2": "从总脂肪和其他所标示的脂肪数值可靠地计算单不饱和脂肪。",
+  "cannot_3": "把未标示的单不饱和脂肪数值当作零。",
   "sources_title": "来源",
   "back-button": "← 返回",
   "title": "单不饱和脂肪",
-  "description": "单不饱和脂肪在其碳链中只有一个双键。最常见的是油酸，它在橄榄油中占主导地位。",
+  "description": "单不饱和脂肪是一类脂肪，其脂肪酸含有一个双键。油酸是最常见的例子之一。",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Saturated fatty acid and trans-fatty acid intake guideline (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073630"
-    }
-  ]
+  "sources": []
 }
