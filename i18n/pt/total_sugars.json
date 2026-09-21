@@ -18,7 +18,25 @@
   "cannot_3": "Calcular os açúcares livres a partir do total ou dos açúcares adicionados. São três conceitos distintos.",
   "cannot_4": "Dizer quanto vem de cada ingrediente. O rótulo declara o total.",
   "cannot_5": "Tratar um valor não declarado como zero.",
-  "nutrition_crosslinks_title": "Ver também",
   "sources_title": "Fontes",
-  "back-button": "← Voltar"
+  "back-button": "← Voltar",
+  "title": "Açúcares totais",
+  "description": "Os açúcares totais abrangem todos os açúcares do produto, venham de onde vierem. Os que foram adicionados e os que já estavam presentes nos ingredientes.",
+  "layers": [
+    "sugar"
+  ],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
+    },
+    {
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    }
+  ]
 }

@@ -18,7 +18,25 @@
   "cannot_3": "Freie Zucker aus der Gesamtsumme oder aus zugesetzten Zuckern berechnen. Das sind drei getrennte Konzepte.",
   "cannot_4": "Sagen, wie viel aus welcher Zutat stammt. Das Etikett gibt die Gesamtsumme an.",
   "cannot_5": "Einen nicht angegebenen Wert als Null behandeln.",
-  "nutrition_crosslinks_title": "Siehe auch",
   "sources_title": "Quellen",
-  "back-button": "← Zurück"
+  "back-button": "← Zurück",
+  "title": "Zucker gesamt",
+  "description": "Zucker gesamt umfasst jeden Zucker im Produkt, woher er auch kommt. Die zugesetzten und die bereits in den Zutaten vorhandenen.",
+  "layers": [
+    "sugar"
+  ],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
+    },
+    {
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    }
+  ]
 }

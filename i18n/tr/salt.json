@@ -18,7 +18,23 @@
   "cannot_3": "Pazarın bir dönüşüm tanımlamadığı yerde tuz ve sodyum arasında dönüştürmek veya bunu söylemeden uygulamak.",
   "cannot_4": "Sodyumun ne kadarının eklenen tuzdan ve ne kadarının diğer içeriklerden geldiğini söylemek. Etiket toplamı beyan eder; ayrıştırmaz.",
   "cannot_5": "Beyan edilmemiş bir değeri sıfır olarak ele almak. Bir pazar tuzun beyan edilmesini gerektirmiyorsa ve etiket bunu göstermiyorsa, BOTIA beyan edilmediğini bildirir.",
-  "nutrition_crosslinks_title": "Ayrıca bkz.",
   "sources_title": "Kaynaklar",
-  "back-button": "← Geri"
+  "back-button": "← Geri",
+  "title": "Tuz",
+  "description": "Besin etiketindeki tuz, sadece birinin eklediği tuz değildir. Avrupa Birliği'nde ve birkaç başka pazarda, beyan edilen rakam, üründeki tüm sodyumun tuz eşdeğeridir ve sodyum × 2,5 olarak hesaplanır.",
+  "layers": [],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "WHO — Sodium reduction",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
+    },
+    {
+      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+    }
+  ]
 }

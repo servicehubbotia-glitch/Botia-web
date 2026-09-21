@@ -18,7 +18,23 @@
   "cannot_3": "Конвертировать между солью и натрием там, где рынок не определяет конверсию, или применять её, не сообщая об этом.",
   "cannot_4": "Сказать вам, сколько натрия поступило из добавленной соли, а сколько из других ингредиентов. Этикетка указывает общее количество; она его не разбивает.",
   "cannot_5": "Рассматривать неуказанное значение как ноль. Если рынок не требует указывать соль и этикетка её не показывает, BOTIA сообщает, что она не указана.",
-  "nutrition_crosslinks_title": "См. также",
   "sources_title": "Источники",
-  "back-button": "← Назад"
+  "back-button": "← Назад",
+  "title": "Соль",
+  "description": "Соль на этикетке пищевой ценности — это не только соль, которую кто-то добавил. В Европейском союзе и ряде других рынков указанное значение — это эквивалент соли всего натрия в продукте, рассчитываемый как натрий × 2,5.",
+  "layers": [],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "WHO — Sodium reduction",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
+    },
+    {
+      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+    }
+  ]
 }

@@ -18,7 +18,23 @@
   "cannot_3": "Convertire tra sale e sodio dove il mercato non definisce una conversione, né applicarne una senza dirlo.",
   "cannot_4": "Dirti quanto del sodio proviene dal sale aggiunto e quanto da altri ingredienti. L'etichetta dichiara il totale; non lo suddivide.",
   "cannot_5": "Trattare un valore non dichiarato come zero. Se un mercato non richiede la dichiarazione del sale e l'etichetta non lo mostra, BOTIA segnala che non è dichiarato.",
-  "nutrition_crosslinks_title": "Vedi anche",
   "sources_title": "Fonti",
-  "back-button": "← Indietro"
+  "back-button": "← Indietro",
+  "title": "Sale",
+  "description": "Il sale su un'etichetta nutrizionale non è solo il sale che qualcuno ha aggiunto. Nell'Unione europea e in diversi altri mercati, il valore dichiarato è l'equivalente in sale di tutto il sodio del prodotto, calcolato come sodio × 2,5.",
+  "layers": [],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "WHO — Sodium reduction",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
+    },
+    {
+      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+    }
+  ]
 }

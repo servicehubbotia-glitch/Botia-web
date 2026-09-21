@@ -18,7 +18,25 @@
   "cannot_3": "Menghitung gula bebas dari total atau dari gula tambahan. Itu adalah tiga konsep yang terpisah.",
   "cannot_4": "Menyebutkan berapa banyak yang berasal dari setiap bahan. Label mendeklarasikan totalnya.",
   "cannot_5": "Memperlakukan nilai yang tidak dideklarasikan sebagai nol.",
-  "nutrition_crosslinks_title": "Lihat juga",
   "sources_title": "Sumber",
-  "back-button": "← Kembali"
+  "back-button": "← Kembali",
+  "title": "Total gula",
+  "description": "Total gula mencakup setiap gula dalam produk, dari mana pun asalnya. Yang ditambahkan dan yang sudah ada dalam bahan.",
+  "layers": [
+    "sugar"
+  ],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
+    },
+    {
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    }
+  ]
 }

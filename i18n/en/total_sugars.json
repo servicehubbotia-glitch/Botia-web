@@ -18,7 +18,25 @@
   "cannot_3": "Calculate free sugars from the total or from added sugars. They are three separate concepts.",
   "cannot_4": "Say how much came from each ingredient. The label declares the total.",
   "cannot_5": "Treat an undeclared value as zero.",
-  "nutrition_crosslinks_title": "See also",
   "sources_title": "Sources",
-  "back-button": "← Back"
+  "back-button": "← Back",
+  "title": "Total sugars",
+  "description": "Total sugars covers every sugar in the product, wherever it came from. Those that were added and those already present in the ingredients.",
+  "layers": [
+    "sugar"
+  ],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
+    },
+    {
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    }
+  ]
 }

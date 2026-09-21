@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
  <head>
   <meta charset="utf-8"/>
@@ -347,17 +346,8 @@ BOTIA shows the figure as the label declares it, states which reference that mar
      </div>
     </div>
    </section>
-   <section aria-labelledby="nutrition_crosslinks_title" class="section">
-    <h2 class="section-title" id="nutrition_crosslinks_title">
-     See also
-    </h2>
-    <div id="nutrition_crosslinks" style="display:flex;flex-wrap:wrap;gap:8px;">
-     <a class="cta-button nutrition-crosslink" data-profile-slug="sodium" href="/ingredients/sodium.html">
-      Sodium
-     </a>
-    </div>
-   </section>
-   <section class="section">
+
+<section class="section">
     <h2 class="section-title" id="sources_title">
      Sources
     </h2>
@@ -370,9 +360,6 @@ BOTIA shows the figure as the label declares it, states which reference that mar
     </a>
    </section>
   </main>
-  <script>
-   document.addEventListener("DOMContentLoaded",()=>{const params=new URLSearchParams(location.search);const stored=(()=>{try{return localStorage.getItem("botia-lang")||""}catch(_){return""}})();const lang=String(params.get("lang")||stored||document.documentElement.lang||navigator.language||"en").trim().toLowerCase().split("-",1)[0];const title=document.getElementById("nutrition_crosslinks_title");if(title)title.textContent=lang==="es"?"Ver también":"See also";document.querySelectorAll("[data-profile-slug]").forEach(link=>{const target=link.getAttribute("data-profile-slug");if(!target)return;link.href=`/ingredients/${target}.html?lang=${encodeURIComponent(lang)}`;fetch(`/i18n/${encodeURIComponent(lang)}/${target}.json`).then(r=>r.ok?r.json():Promise.reject()).then(data=>{link.textContent=data.name||data.title||link.textContent}).catch(()=>{})})});
-  </script>
   <script defer="" src="/botia/assets/js/i18n-loader.js">
   </script>
   <script src="/botia/assets/js/botia-chat.js">

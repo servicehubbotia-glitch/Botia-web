@@ -18,7 +18,23 @@
   "cannot_3": "Convertir entre sel et sodium là où le marché ne définit pas de conversion, ni en appliquer une sans le dire.",
   "cannot_4": "Vous dire quelle part du sodium provient du sel ajouté et quelle part provient d'autres ingrédients. L'étiquette déclare le total ; elle ne le détaille pas.",
   "cannot_5": "Traiter une valeur non déclarée comme zéro. Si un marché n'exige pas la déclaration du sel et que l'étiquette ne l'affiche pas, BOTIA indique qu'elle n'est pas déclarée.",
-  "nutrition_crosslinks_title": "Voir aussi",
   "sources_title": "Sources",
-  "back-button": "← Retour"
+  "back-button": "← Retour",
+  "title": "Sel",
+  "description": "Le sel sur une étiquette nutritionnelle n'est pas seulement le sel ajouté. Dans l'Union européenne et plusieurs autres marchés, la valeur déclarée est l'équivalent sel de tout le sodium du produit, calculé comme sodium × 2,5.",
+  "layers": [],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "WHO — Sodium reduction",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
+    },
+    {
+      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+    }
+  ]
 }

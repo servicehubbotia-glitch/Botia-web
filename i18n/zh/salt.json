@@ -18,7 +18,23 @@
   "cannot_3": "在市场未定义换算的情况下在盐和钠之间换算，或在未说明的情况下应用换算。",
   "cannot_4": "告诉您有多少钠来自添加的盐，有多少来自其他成分。标签标示总量；它不做拆分。",
   "cannot_5": "把未标示的数值当作零。如果某个市场不要求标示盐且标签未显示，BOTIA 会报告该值未标示。",
-  "nutrition_crosslinks_title": "另见",
   "sources_title": "来源",
-  "back-button": "← 返回"
+  "back-button": "← 返回",
+  "title": "盐",
+  "description": "营养标签上的盐不仅仅是有人添加的盐。在欧盟和其他若干市场，标示的数值是产品中全部钠的盐当量，按钠 × 2.5 计算。",
+  "layers": [],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "WHO — Sodium reduction",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
+    },
+    {
+      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+    }
+  ]
 }

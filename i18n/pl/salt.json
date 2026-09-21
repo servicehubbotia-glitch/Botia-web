@@ -18,7 +18,23 @@
   "cannot_3": "Przeliczać między solą a sodem tam, gdzie rynek nie definiuje przeliczenia, ani stosować go bez informowania o tym.",
   "cannot_4": "Powiedzieć, ile sodu pochodziło z dodanej soli, a ile z innych składników. Etykieta deklaruje sumę; nie rozbija jej.",
   "cannot_5": "Traktować niezadeklarowanej wartości jako zera. Jeśli rynek nie wymaga deklarowania soli, a etykieta jej nie pokazuje, BOTIA zgłasza, że nie jest zadeklarowana.",
-  "nutrition_crosslinks_title": "Zobacz też",
   "sources_title": "Źródła",
-  "back-button": "← Wstecz"
+  "back-button": "← Wstecz",
+  "title": "Sól",
+  "description": "Sól na etykiecie wartości odżywczej to nie tylko sól, którą ktoś dodał. W Unii Europejskiej i kilku innych rynkach zadeklarowana wartość to ekwiwalent soli całego sodu w produkcie, obliczany jako sód × 2,5.",
+  "layers": [],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "WHO — Sodium reduction",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
+    },
+    {
+      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+    }
+  ]
 }

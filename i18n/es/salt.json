@@ -18,7 +18,23 @@
   "cannot_3": "Convertir entre sal y sodio donde el mercado no define una conversión, ni aplicarla sin decirlo.",
   "cannot_4": "Decirte cuánto del sodio procede de la sal añadida y cuánto de otros ingredientes. La etiqueta declara el total; no lo desglosa.",
   "cannot_5": "Tratar un valor no declarado como cero. Si un mercado no exige declarar la sal y la etiqueta no la muestra, BOTIA informa de que no está declarada.",
-  "nutrition_crosslinks_title": "Ver también",
   "sources_title": "Fuentes",
-  "back-button": "← Volver"
+  "back-button": "← Volver",
+  "title": "Sal",
+  "description": "La sal en una etiqueta nutricional no es solo la sal que alguien añadió. En la Unión Europea y varios otros mercados, la cifra declarada es el equivalente de sal de todo el sodio del producto, calculado como sodio × 2,5.",
+  "layers": [],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "WHO — Sodium reduction",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
+    },
+    {
+      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+    }
+  ]
 }

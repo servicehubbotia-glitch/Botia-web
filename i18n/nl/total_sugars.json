@@ -18,7 +18,25 @@
   "cannot_3": "Vrije suikers berekenen uit het totaal of uit toegevoegde suikers. Het zijn drie afzonderlijke concepten.",
   "cannot_4": "Zeggen hoeveel uit elk ingrediënt komt. Het etiket vermeldt het totaal.",
   "cannot_5": "Een niet-aangegeven waarde als nul behandelen.",
-  "nutrition_crosslinks_title": "Zie ook",
   "sources_title": "Bronnen",
-  "back-button": "← Terug"
+  "back-button": "← Terug",
+  "title": "Totaal suikers",
+  "description": "Totaal suikers omvat elke suiker in het product, waar die ook vandaan komt. Die welke zijn toegevoegd en die al in de ingrediënten aanwezig waren.",
+  "layers": [
+    "sugar"
+  ],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
+    },
+    {
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    }
+  ]
 }

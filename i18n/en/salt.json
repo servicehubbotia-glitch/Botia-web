@@ -18,7 +18,23 @@
   "cannot_3": "Convert between salt and sodium where the market does not define a conversion, or apply one without saying so.",
   "cannot_4": "Tell you how much of the sodium came from added salt and how much from other ingredients. The label declares the total; it does not break it down.",
   "cannot_5": "Treat an undeclared value as zero. If a market does not require salt to be declared and the label does not show it, BOTIA reports that it is not declared.",
-  "nutrition_crosslinks_title": "See also",
   "sources_title": "Sources",
-  "back-button": "← Back"
+  "back-button": "← Back",
+  "title": "Salt",
+  "description": "Salt on a nutrition label is not only the salt someone added. In the European Union and several other markets, the declared figure is the salt equivalent of all the sodium in the product, calculated as sodium × 2.5.",
+  "layers": [],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "WHO — Sodium reduction",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
+    },
+    {
+      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+    }
+  ]
 }

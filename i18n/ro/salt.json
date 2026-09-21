@@ -18,7 +18,23 @@
   "cannot_3": "Să convertească între sare și sodiu acolo unde piața nu definește o conversie, sau să aplice una fără să spună.",
   "cannot_4": "Să îți spună cât din sodiu a venit din sarea adăugată și cât din alte ingrediente. Eticheta declară totalul; nu îl defalcă.",
   "cannot_5": "Să trateze o valoare nedeclarată ca zero. Dacă o piață nu cere declararea sării și eticheta nu o arată, BOTIA raportează că nu este declarată.",
-  "nutrition_crosslinks_title": "Vezi și",
   "sources_title": "Surse",
-  "back-button": "← Înapoi"
+  "back-button": "← Înapoi",
+  "title": "Sare",
+  "description": "Sarea de pe o etichetă nutrițională nu este doar sarea pe care a adăugat-o cineva. În Uniunea Europeană și în câteva alte piețe, valoarea declarată este echivalentul de sare al întregului sodiu din produs, calculat ca sodiu × 2,5.",
+  "layers": [],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "WHO — Sodium reduction",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
+    },
+    {
+      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+    }
+  ]
 }

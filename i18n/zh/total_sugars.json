@@ -18,7 +18,25 @@
   "cannot_3": "从总量或添加糖计算游离糖。它们是三个不同的概念。",
   "cannot_4": "说出每种成分贡献了多少。标签标示总量。",
   "cannot_5": "把未标示的数值当作零。",
-  "nutrition_crosslinks_title": "另见",
   "sources_title": "来源",
-  "back-button": "← 返回"
+  "back-button": "← 返回",
+  "title": "总糖",
+  "description": "总糖涵盖产品中的所有糖，无论来源如何。添加的糖和成分中本来就存在的糖都算在内。",
+  "layers": [
+    "sugar"
+  ],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
+    },
+    {
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    }
+  ]
 }

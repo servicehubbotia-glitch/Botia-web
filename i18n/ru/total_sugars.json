@@ -18,7 +18,25 @@
   "cannot_3": "Вычислить свободные сахара из общего значения или из добавленных сахаров. Это три разные концепции.",
   "cannot_4": "Сказать, сколько поступило из каждого ингредиента. Этикетка указывает общее значение.",
   "cannot_5": "Рассматривать неуказанное значение как ноль.",
-  "nutrition_crosslinks_title": "См. также",
   "sources_title": "Источники",
-  "back-button": "← Назад"
+  "back-button": "← Назад",
+  "title": "Сахара всего",
+  "description": "Общее количество сахаров охватывает все сахара в продукте, откуда бы они ни происходили. Те, что были добавлены, и те, что уже присутствовали в ингредиентах.",
+  "layers": [
+    "sugar"
+  ],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
+    },
+    {
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    }
+  ]
 }

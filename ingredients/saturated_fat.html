@@ -275,14 +275,6 @@ another.</li>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="nutrition_crosslinks_title">
-    <h2 class="section-title" id="nutrition_crosslinks_title">See also</h2>
-    <div id="nutrition_crosslinks" style="display:flex;flex-wrap:wrap;gap:8px;">
-      <a class="cta-button nutrition-crosslink" data-profile-slug="total_fat" href="/ingredients/total_fat.html">Total fat</a>
-      <a class="cta-button nutrition-crosslink" data-profile-slug="trans_fats" href="/ingredients/trans_fats.html">Trans fatty acids</a>
-    </div>
-  </section>
-
 <section class="section">
     <h2 class="section-title" id="sources_title">Sources</h2>
     <ul class="sources-list" id="sources_container"></ul>
@@ -293,25 +285,6 @@ another.</li>
   </section>
 
 </main>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const p = new URLSearchParams(location.search);
-  const s = (() => { try { return localStorage.getItem("botia-lang") || ""; } catch (_) { return ""; } })();
-  const lang = String(p.get("lang") || s || document.documentElement.lang || navigator.language || "en").trim().toLowerCase().split("-", 1)[0];
-  const t = document.getElementById("nutrition_crosslinks_title");
-  if (t) t.textContent = lang === "es" ? "Ver también" : "See also";
-  document.querySelectorAll("[data-profile-slug]").forEach(a => {
-    const target = a.getAttribute("data-profile-slug");
-    if (!target) return;
-    a.href = `/ingredients/${target}.html?lang=${encodeURIComponent(lang)}`;
-    fetch(`/i18n/${encodeURIComponent(lang)}/${target}.json`)
-      .then(r => r.ok ? r.json() : Promise.reject())
-      .then(d => { a.textContent = d.name || d.title || a.textContent; })
-      .catch(() => {});
-  });
-});
-</script>
 
 <script src="/botia/assets/js/i18n-loader.js" defer></script>
 <script src="/botia/assets/js/botia-chat.js"></script>

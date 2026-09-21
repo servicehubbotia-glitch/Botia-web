@@ -18,7 +18,25 @@
   "cannot_3": "Să calculeze zaharurile libere din total sau din zaharurile adăugate. Sunt trei concepte distincte.",
   "cannot_4": "Să spună cât provine din fiecare ingredient. Eticheta declară totalul.",
   "cannot_5": "Să trateze o valoare nedeclarată ca zero.",
-  "nutrition_crosslinks_title": "Vezi și",
   "sources_title": "Surse",
-  "back-button": "← Înapoi"
+  "back-button": "← Înapoi",
+  "title": "Zaharuri totale",
+  "description": "Zaharurile totale acoperă fiecare zahăr din produs, indiferent de unde provine. Cele adăugate și cele deja prezente în ingrediente.",
+  "layers": [
+    "sugar"
+  ],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
+    },
+    {
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    }
+  ]
 }

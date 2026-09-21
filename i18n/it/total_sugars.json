@@ -18,7 +18,25 @@
   "cannot_3": "Calcolare gli zuccheri liberi dal totale o dagli zuccheri aggiunti. Sono tre concetti distinti.",
   "cannot_4": "Dire quanto proviene da ciascun ingrediente. L'etichetta dichiara il totale.",
   "cannot_5": "Trattare un valore non dichiarato come zero.",
-  "nutrition_crosslinks_title": "Vedi anche",
   "sources_title": "Fonti",
-  "back-button": "← Indietro"
+  "back-button": "← Indietro",
+  "title": "Zuccheri totali",
+  "description": "Gli zuccheri totali comprendono ogni zucchero del prodotto, da qualunque origine provenga. Quelli aggiunti e quelli già presenti negli ingredienti.",
+  "layers": [
+    "sugar"
+  ],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
+    },
+    {
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    }
+  ]
 }

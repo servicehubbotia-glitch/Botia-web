@@ -18,7 +18,25 @@
   "cannot_3": "حساب السكريات الحرة من الإجمالي أو من السكريات المضافة. إنها ثلاثة مفاهيم منفصلة.",
   "cannot_4": "القول كم جاء من كل مكوّن. يُعلن الملصق عن الإجمالي.",
   "cannot_5": "معاملة قيمة غير مُعلنة كصفر.",
-  "nutrition_crosslinks_title": "انظر أيضًا",
   "sources_title": "المصادر",
-  "back-button": "→ رجوع"
+  "back-button": "→ رجوع",
+  "title": "إجمالي السكريات",
+  "description": "يشمل إجمالي السكريات كل سكر في المنتج، من أي مصدر جاء. تلك التي أُضيفت وتلك الموجودة أصلًا في المكونات.",
+  "layers": [
+    "sugar"
+  ],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
+    },
+    {
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    }
+  ]
 }

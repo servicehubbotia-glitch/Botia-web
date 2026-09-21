@@ -18,7 +18,23 @@
   "cannot_3": "التحويل بين الملح والصوديوم حيث لا يحدد السوق تحويلًا، أو تطبيق تحويل دون ذكره.",
   "cannot_4": "إخبارك بكمية الصوديوم التي جاءت من الملح المضاف وكمية ما جاء من مكونات أخرى. يُعلن الملصق عن المجموع؛ ولا يفصله.",
   "cannot_5": "معاملة قيمة غير مُعلنة كصفر. إذا لم يشترط السوق الإعلان عن الملح ولم يُظهره الملصق، تُبلغ BOTIA بأنه غير مُعلن.",
-  "nutrition_crosslinks_title": "انظر أيضًا",
   "sources_title": "المصادر",
-  "back-button": "→ رجوع"
+  "back-button": "→ رجوع",
+  "title": "ملح",
+  "description": "الملح على ملصق القيمة الغذائية ليس فقط الملح الذي أضافه أحد. في الاتحاد الأوروبي وعدة أسواق أخرى، الرقم المُعلن هو مكافئ الملح لكل الصوديوم في المنتج، ويُحسب كـ صوديوم × 2.5.",
+  "layers": [],
+  "sources": [
+    {
+      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
+      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
+    },
+    {
+      "label": "WHO — Sodium reduction",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
+    },
+    {
+      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+    }
+  ]
 }
