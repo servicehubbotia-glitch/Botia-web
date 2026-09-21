@@ -2,37 +2,24 @@
   "name": "Mehrfach ungesättigte Fettsäuren",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "mehrfach ungesättigte Fettsäuren, PUFA",
   "what_is_title": "Was es ist",
-  "what_is": "Mehrfach ungesättigte Fettsäuren haben mehr als eine Doppelbindung in ihrer Kette. Sie fallen in zwei Hauptfamilien: Omega-3 und Omega-6.\n\nOmega-3 ist reichlich in fettem Fisch, Walnüssen, Leinsamen und Chia enthalten. Omega-6 in Sonnenblumen-, Mais- und Sojaöl.\n\nAuf einem Nährwertetikett sind sie in fast jedem Markt ein freiwilliges Feld, und wo sie erscheinen, erscheinen sie als eine einzige Zahl: Omega-3 und Omega-6 zusammen, undifferenziert.\n\nManche Produkte geben Omega-3 separat an, aber das ist eine zusätzliche nährwertbezogene Angabe, nicht Teil der verpflichtenden Tabelle.",
+  "what_is": "Mehrfach ungesättigte Fettsäuren sind eine Fettart, deren Fettsäuren mehr als eine Doppelbindung enthalten. Zu den Hauptfamilien gehören Omega-3- und Omega-6-Fettsäuren.",
   "why_botia_title": "Warum BOTIA es markiert",
-  "why_botia": "BOTIA markiert mehrfach ungesättigte Fettsäuren, weil die Zahl zwei Familien gruppiert, die der Körper nicht gleich nutzt, und das Etikett sie nicht trennt.\n\nEin Produkt kann eine hohe Zahl angeben und dabei fast nur Omega-6 liefern. Ob die Zutatenliste Sonnenblumenöl oder Walnüsse zeigt, verändert sehr, was diese Zahl bedeutet.",
+  "why_botia": "Ein Nährwertetikett kann mehrfach ungesättigte Fettsäuren als einen kombinierten Wert angeben, ohne zu zeigen, wie viel Omega-3 und wie viel Omega-6 enthalten ist. BOTIA hält diesen deklarierten Wert getrennt von den regulatorischen Informationen und Belegen, die zu seiner Interpretation verwendet werden.",
   "can_title": "BOTIA KANN",
-  "can_1": "Den angegebenen Wert lesen, wo er vorhanden ist, und seine Einheit und seine Basis beibehalten.",
-  "can_2": "Angeben, dass die Zahl Omega-3 und Omega-6 gruppiert, ohne sie zu unterscheiden.",
-  "can_3": "Auf den Omega-3-Eintrag und auf die Zutaten in der Liste verlinken, die jede Familie liefern, wo sie identifiziert werden können.",
+  "can_1": "Den Wert der mehrfach ungesättigten Fettsäuren lesen, wenn er auf dem Nährwertetikett angegeben ist, und seine Einheit und Basis beibehalten.",
+  "can_2": "Angeben, dass der Wert Teil des Gesamtfetts ist und nicht zu ihm hinzugerechnet wird.",
+  "can_3": "Den deklarierten Wert gegebenenfalls mit den geltenden regulatorischen Informationen und dokumentierten Belegen verknüpfen.",
   "cannot_title": "BOTIA KANN NICHT",
-  "cannot_1": "Sagen, wie viel Omega-3 und wie viel Omega-6. Die Zahl gruppiert sie, und das Etikett schlüsselt sie nicht auf, es sei denn freiwillig angegeben.",
-  "cannot_2": "Sie berechnen, indem andere Fette von der Gesamtsumme abgezogen werden.",
-  "cannot_3": "Einen nicht angegebenen Wert als Null behandeln.",
-  "cannot_4": "Mehrfach ungesättigte Fettsäuren mit Omega-3 gleichsetzen. Omega-3 ist eine Untergruppe, nicht dasselbe.",
+  "cannot_1": "Bestimmen, wie viel des deklarierten Werts Omega-3 und wie viel Omega-6 ist, es sei denn, das Etikett liefert diese Aufschlüsselung.",
+  "cannot_2": "Mehrfach ungesättigte Fettsäuren zuverlässig aus dem Gesamtfett und anderen deklarierten Fettwerten berechnen.",
+  "cannot_3": "Mehrfach ungesättigte Fettsäuren mit Omega-3 gleichsetzen.",
+  "cannot_4": "Einen nicht deklarierten Wert mehrfach ungesättigter Fettsäuren als Null behandeln.",
   "sources_title": "Quellen",
   "back-button": "← Zurück",
   "title": "Mehrfach ungesättigte Fettsäuren",
-  "description": "Mehrfach ungesättigte Fettsäuren haben mehr als eine Doppelbindung in ihrer Kette. Sie fallen in zwei Hauptfamilien: Omega-3 und Omega-6.",
+  "description": "Mehrfach ungesättigte Fettsäuren sind eine Fettart, deren Fettsäuren mehr als eine Doppelbindung enthalten. Zu den Hauptfamilien gehören Omega-3- und Omega-6-Fettsäuren.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Saturated fatty acid and trans-fatty acid intake guideline (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073630"
-    }
-  ]
+  "sources": []
 }

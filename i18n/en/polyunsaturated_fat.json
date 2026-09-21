@@ -2,37 +2,24 @@
   "name": "Polyunsaturated fat",
   "e_code": "",
   "module_icon": "fat.png",
-  "aliases": "",
+  "aliases": "polyunsaturated fatty acids, PUFA",
   "what_is_title": "What it is",
-  "what_is": "Polyunsaturated fats have more than one double bond in their chain. They fall into two main families: omega-3 and omega-6.\n\nOmega-3 is abundant in oily fish, walnuts, flaxseed and chia. Omega-6 in sunflower, corn and soybean oil.\n\nOn a nutrition label they are a voluntary field in almost every market, and where they appear they do so as a single number: omega-3 and omega-6 together, undifferentiated.\n\nSome products declare omega-3 separately, but that is an additional nutrition claim, not part of the mandatory panel.",
+  "what_is": "Polyunsaturated fat is a type of fat whose fatty acids contain more than one double bond. The main families include omega-3 and omega-6 fatty acids.",
   "why_botia_title": "Why BOTIA flags it",
-  "why_botia": "BOTIA flags polyunsaturated fat because the figure groups two families the body does not use in the same way, and the label does not separate them.\n\nA product can declare a high figure while providing almost only omega-6. Whether the ingredient list shows sunflower oil or walnuts changes a great deal about what that number means.",
+  "why_botia": "A nutrition label may declare polyunsaturated fat as one combined value without showing how much is omega-3 and how much is omega-6. BOTIA keeps that declared value separate from the regulatory information and evidence used to interpret it.",
   "can_title": "BOTIA CAN",
-  "can_1": "Read the declared value, where it exists, and keep its unit and its basis.",
-  "can_2": "State that the figure groups omega-3 and omega-6 without distinguishing them.",
-  "can_3": "Link to the omega-3 record and to the ingredients in the list that provide each family, where they can be identified.",
+  "can_1": "Read the polyunsaturated fat value when it is declared on the nutrition label and preserve its unit and basis.",
+  "can_2": "Show that the value forms part of total fat rather than being added to it.",
+  "can_3": "Connect the declared value with the applicable regulatory information and documented evidence where relevant.",
   "cannot_title": "BOTIA CANNOT",
-  "cannot_1": "Say how much is omega-3 and how much omega-6. The figure groups them and the label does not break them down unless declared voluntarily.",
-  "cannot_2": "Work them out by subtracting other fats from the total.",
-  "cannot_3": "Treat an undeclared value as zero.",
-  "cannot_4": "Equate polyunsaturated fat with omega-3. Omega-3 is a subset, not the same thing.",
+  "cannot_1": "Determine how much of the declared value is omega-3 and how much is omega-6 unless the label provides that breakdown.",
+  "cannot_2": "Calculate polyunsaturated fat reliably from total fat and other declared fat values.",
+  "cannot_3": "Treat polyunsaturated fat as equivalent to omega-3.",
+  "cannot_4": "Treat an undeclared polyunsaturated fat value as zero.",
   "sources_title": "Sources",
   "back-button": "← Back",
   "title": "Polyunsaturated fat",
-  "description": "Polyunsaturated fats have more than one double bond in their chain. They fall into two main families: omega-3 and omega-6.",
+  "description": "Polyunsaturated fat is a type of fat whose fatty acids contain more than one double bond. The main families include omega-3 and omega-6 fatty acids.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Saturated fatty acid and trans-fatty acid intake guideline (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073630"
-    }
-  ]
+  "sources": []
 }
