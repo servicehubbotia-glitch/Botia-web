@@ -4,34 +4,23 @@
   "module_icon": "sweeteners.png",
   "aliases": "sugar alcohols",
   "what_is_title": "What it is",
-  "what_is": "Polyols, also called sugar alcohols, are substances that sweeten and add bulk. They are commonly used in chewing gum, sweets, pastries and desserts where some or all of the sugar is replaced.\n\nCommon examples include sorbitol, xylitol, maltitol, erythritol, mannitol, isomalt and lactitol.\n\nThey are not sugars, but neither do they work like intense sweeteners such as aspartame: as well as sweetness, they add body and bulk.\n\nAbsorption and metabolism vary between polyols. In sufficient amounts, some can cause gastrointestinal symptoms. In the European Union, foods containing more than 10% added authorised polyols must carry the warning that excessive consumption may produce laxative effects.\n\nThey also contribute a different amount of energy from sugar. For EU energy calculation, polyols count as 2.4 kcal per gram and erythritol as 0 kcal per gram.",
+  "what_is": "Polyols, also called sugar alcohols, are carbohydrates used mainly for sweetness and bulk. Common examples include sorbitol, xylitol, maltitol, erythritol, mannitol, isomalt and lactitol.",
   "why_botia_title": "Why BOTIA flags it",
-  "why_botia": "BOTIA flags polyols because they often appear in products where sugar has been replaced, and because “sugar-free” does not tell you what was used instead.\n\nThey also matter because EU rules explicitly require a laxative-effects warning above a defined amount of added polyols. The profile also connects the aggregate nutrition value with the specific polyols named in the ingredient list.",
+  "why_botia": "A nutrition label may declare polyols as a single value, while the ingredient list shows which individual polyols are present. BOTIA connects those two pieces of information without assuming how much of each polyol the product contains.",
   "can_title": "BOTIA CAN",
-  "can_1": "Read the declared total and keep its unit and its basis.",
-  "can_2": "Identify which specific polyols appear in the ingredient list and link to their record.",
-  "can_3": "Explain the laxative-effects warning and when EU rules require it.",
-  "can_4": "State that the energy value of polyols is calculated with a different factor from sugar, and which one applies in that market.",
+  "can_1": "Read the polyol value when it is declared on the nutrition label and preserve its unit and basis.",
+  "can_2": "Identify individual polyols when they are named in the ingredient list.",
+  "can_3": "Connect the declared value with the applicable regulatory information and documented evidence where relevant.",
   "cannot_title": "BOTIA CANNOT",
-  "cannot_1": "Say how much of each individual polyol there is. The label may declare the total; the ingredient list says which are present, but not necessarily in what amount.",
-  "cannot_2": "Predict how they will affect you. Tolerance varies a great deal between people and between polyols.",
-  "cannot_3": "Say that a product with polyols is better or worse than one with sugar. BOTIA shows what is in it; the decision is yours.",
-  "cannot_4": "Treat an undeclared value as zero. It is an optional field in many labelling systems.",
+  "cannot_1": "Determine how much of each individual polyol is present when the label gives only a combined value.",
+  "cannot_2": "Predict an individual's tolerance to a polyol from the nutrition label.",
+  "cannot_3": "Treat an undeclared polyol value as zero.",
   "sources_title": "Sources",
   "back-button": "← Back",
   "title": "Polyols",
-  "description": "Polyols, also called sugar alcohols, are substances that sweeten and add bulk. They are commonly used in chewing gum, sweets, pastries and desserts where some or all of the sugar is replaced.",
+  "description": "Polyols, also called sugar alcohols, are carbohydrates used mainly for sweetness and bulk.",
   "layers": [
     "sweetener"
   ],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    }
-  ]
+  "sources": []
 }
