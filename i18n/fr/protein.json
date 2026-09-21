@@ -1,38 +1,23 @@
 {
-  "name": "Protéines",
+  "name": "Protéine",
   "e_code": "",
   "module_icon": "protein.png",
   "aliases": "",
   "what_is_title": "Ce que c'est",
-  "what_is": "Les protéines sont faites d'acides aminés, et le corps les utilise pour construire et réparer les tissus. Elles apparaissent dans presque tous les aliments, en quantités très différentes.\n\nLa valeur sur une étiquette est généralement obtenue à partir de la teneur en azote de l'aliment et d'un facteur de conversion, plutôt qu'en mesurant directement chaque protéine présente.\n\nLe facteur général est 6,25. Dans l'Union européenne, c'est le facteur défini par le règlement 1169/2011. Le Codex part également de 6,25 pour la déclaration nutritionnelle, sauf si une norme de produit spécifie un autre facteur ; par exemple, 6,38 pour le lait et les produits laitiers et 5,71 pour la farine de blé ou le soja dans les cas énumérés par le Codex.",
+  "what_is": "La protéine est un nutriment composé d'acides aminés. Les aliments peuvent contenir des quantités et des combinaisons très différentes de ces acides aminés.",
   "why_botia_title": "Pourquoi BOTIA le signale",
-  "why_botia": "BOTIA signale les protéines parce que c'est l'un des rares champs déclarés dans presque toutes les juridictions, ce qui le rend plus fiablement comparable entre marchés que beaucoup d'autres nutriments.\n\nMais le chiffre a une limite qui ne se voit pas : il mesure la quantité, pas la qualité. Deux produits avec la même valeur peuvent fournir des profils d'acides aminés différents, et l'étiquette nutritionnelle ne le montre pas.",
+  "why_botia": "Le tableau nutritionnel indique la quantité de protéines déclarée, mais pas sa composition ni sa qualité en acides aminés. BOTIA maintient cette quantité déclarée séparée des règles réglementaires et des preuves qui donnent un contexte à la valeur.",
   "can_title": "BOTIA PEUT",
-  "can_1": "Lire la valeur déclarée et conserver son unité et sa base : pour 100 g, pour 100 ml, par portion ou par emballage.",
-  "can_2": "Afficher la référence qui s'applique sur le marché où le produit a été étiqueté et nommer l'autorité qui la publie.",
-  "can_3": "Expliquer que la valeur déclarée est généralement calculée à partir de l'azote et que le facteur de conversion dépend de la règle qui s'applique au marché ou au produit.",
+  "can_1": "Lire la valeur de protéines déclarée sur l'étiquette nutritionnelle et préserver son unité et sa base.",
+  "can_2": "Relier la valeur déclarée aux informations réglementaires applicables et aux preuves documentées.",
   "cannot_title": "BOTIA NE PEUT PAS",
-  "cannot_1": "Vous dire quel pourcentage de vos propres besoins cette valeur représente. Les besoins en protéines varient selon le poids, l'âge, l'activité et l'état de santé.",
-  "cannot_2": "Juger la qualité de la protéine ou son profil d'acides aminés. L'étiquette déclare la quantité, pas la composition.",
-  "cannot_3": "Confirmer quelle méthode analytique ou quel facteur de conversion le fabricant a réellement utilisé à partir de la seule étiquette, lorsque la règle applicable autorise des alternatives.",
-  "cannot_4": "Traiter une valeur non déclarée comme zéro.",
+  "cannot_1": "Déterminer le profil d'acides aminés ou la qualité des protéines à partir de la seule valeur déclarée.",
+  "cannot_2": "Déterminer les besoins en protéines d'une personne à partir de l'étiquette nutritionnelle.",
+  "cannot_3": "Traiter une valeur de protéines non déclarée comme zéro.",
   "sources_title": "Sources",
   "back-button": "← Retour",
-  "title": "Protéines",
-  "description": "Les protéines sont faites d'acides aminés, et le corps les utilise pour construire et réparer les tissus. Elles apparaissent dans presque tous les aliments, en quantités très différentes.",
+  "title": "Protéine",
+  "description": "La protéine est un nutriment composé d'acides aminés. Les aliments peuvent contenir des quantités et des combinaisons très différentes de ces acides aminés.",
   "layers": [],
-  "sources": [
-    {
-      "label": "Codex — CXG 2-1985 Guidelines on Nutrition Labelling",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%3A%2F%2Fworkspace.fao.org%2Fsites%2Fcodex%2FStandards%2FCXG+2-1985%2FCXG_002e.pdf"
-    },
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    }
-  ]
+  "sources": []
 }

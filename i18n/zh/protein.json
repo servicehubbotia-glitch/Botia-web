@@ -4,35 +4,20 @@
   "module_icon": "protein.png",
   "aliases": "",
   "what_is_title": "这是什么",
-  "what_is": "蛋白质由氨基酸组成，人体用它们来构建和修复组织。它们几乎存在于所有食物中，含量差异很大。\n\n标签上的数值通常是通过食物的氮含量和换算系数获得的，而不是直接测量其中每一种蛋白质。\n\n通用系数是 6.25。在欧盟，这是第 1169/2011 号法规所定义的系数。Codex 的营养标示也以 6.25 为起点，除非某项商品标准规定了其他系数；例如，乳及乳制品为 6.38，小麦粉或大豆在 Codex 所列情形下为 5.71。",
+  "what_is": "蛋白质是由氨基酸构成的营养素。食物可能含有非常不同的数量和氨基酸组合。",
   "why_botia_title": "BOTIA 为何标记它",
-  "why_botia": "BOTIA 标记蛋白质，因为它是几乎所有司法管辖区都标示的少数几个字段之一，这使得它比其他许多营养素在不同市场间更具可比性。\n\n但这个数值有一个看不见的局限：它衡量的是数量，而不是质量。两个数值相同的产品可能提供不同的氨基酸谱，而营养标签并不显示这一点。",
+  "why_botia": "营养成分表显示了所标示的蛋白质含量，但没有显示其氨基酸组成或质量。BOTIA 将所标示的含量与赋予该数字背景的法规规则和证据分开。",
   "can_title": "BOTIA 可以",
-  "can_1": "读取所标示的数值，并保留其单位和基准：每 100 克、每 100 毫升、每份或每包装。",
-  "can_2": "显示产品标示所在市场适用的参考值，并指明发布该参考值的机构。",
-  "can_3": "说明所标示的数值通常由氮计算得出，且换算系数取决于适用于该市场或产品的规则。",
+  "can_1": "读取营养标签上标示的蛋白质数值并保留其单位和基准。",
+  "can_2": "将所标示的数值与适用的法规信息和记录的证据联系起来。",
   "cannot_title": "BOTIA 不能",
-  "cannot_1": "告诉您这个数值占您自身需求的百分比。蛋白质需求因体重、年龄、活动量和健康状况而异。",
-  "cannot_2": "判断蛋白质的质量或其氨基酸谱。标签标示的是数量，不是组成。",
-  "cannot_3": "仅凭标签确认制造商实际使用了哪种分析方法或换算系数，在适用规则允许替代方案的情况下。",
-  "cannot_4": "把未标示的数值当作零。",
+  "cannot_1": "仅从所标示的蛋白质数值确定氨基酸谱或蛋白质质量。",
+  "cannot_2": "从营养标签确定个人的蛋白质需求。",
+  "cannot_3": "把未标示的蛋白质数值当作零。",
   "sources_title": "来源",
   "back-button": "← 返回",
   "title": "蛋白质",
-  "description": "蛋白质由氨基酸组成，人体用它们来构建和修复组织。它们几乎存在于所有食物中，含量差异很大。",
+  "description": "蛋白质是由氨基酸构成的营养素。食物可能含有非常不同的数量和氨基酸组合。",
   "layers": [],
-  "sources": [
-    {
-      "label": "Codex — CXG 2-1985 Guidelines on Nutrition Labelling",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%3A%2F%2Fworkspace.fao.org%2Fsites%2Fcodex%2FStandards%2FCXG+2-1985%2FCXG_002e.pdf"
-    },
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    }
-  ]
+  "sources": []
 }

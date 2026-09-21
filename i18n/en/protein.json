@@ -4,35 +4,20 @@
   "module_icon": "protein.png",
   "aliases": "",
   "what_is_title": "What it is",
-  "what_is": "Proteins are made of amino acids, and the body uses them to build and repair tissue. They appear in almost every food, in very different amounts.\n\nThe figure on a label is usually obtained from the nitrogen content of the food and a conversion factor, rather than by directly measuring every protein present.\n\nThe general factor is 6.25. In the European Union it is the factor defined by Regulation 1169/2011. Codex also starts from 6.25 for nutrition declaration unless a commodity standard specifies another factor; for example, 6.38 for milk and milk products and 5.71 for wheat flour or soy in the cases listed by Codex.",
+  "what_is": "Protein is a nutrient made of amino acids. Foods can contain very different amounts and combinations of these amino acids.",
   "why_botia_title": "Why BOTIA flags it",
-  "why_botia": "BOTIA flags protein because it is one of the few fields declared in almost every jurisdiction, which makes it more reliably comparable across markets than many other nutrients.\n\nBut the number has a limit that does not show: it measures quantity, not quality. Two products with the same figure can provide different amino-acid profiles, and the nutrition label does not show that.",
+  "why_botia": "The nutrition table tells you how much protein is declared, but not its amino-acid composition or quality. BOTIA keeps that declared amount separate from the regulatory rules and evidence that give the number context.",
   "can_title": "BOTIA CAN",
-  "can_1": "Read the declared value and keep its unit and its basis: per 100 g, per 100 ml, per serving or per package.",
-  "can_2": "Show the reference that applies in the market where the product was labelled, and name the authority that publishes it.",
-  "can_3": "Explain that the declared figure is usually calculated from nitrogen and that the conversion factor depends on the rule that applies to the market or product.",
+  "can_1": "Read the protein value declared on the nutrition label and preserve its unit and basis.",
+  "can_2": "Connect the declared value with the applicable regulatory information and documented evidence.",
   "cannot_title": "BOTIA CANNOT",
-  "cannot_1": "Tell you what percentage of your own needs this value represents. Protein needs vary with weight, age, activity and health.",
-  "cannot_2": "Judge the quality of the protein or its amino-acid profile. The label declares quantity, not composition.",
-  "cannot_3": "Confirm which analytical method or conversion factor the manufacturer actually used from the label alone where the applicable rule allows alternatives.",
-  "cannot_4": "Treat an undeclared value as zero.",
+  "cannot_1": "Determine the amino-acid profile or protein quality from the declared protein value alone.",
+  "cannot_2": "Determine an individual's protein requirement from the nutrition label.",
+  "cannot_3": "Treat an undeclared protein value as zero.",
   "sources_title": "Sources",
   "back-button": "← Back",
   "title": "Protein",
-  "description": "Proteins are made of amino acids, and the body uses them to build and repair tissue. They appear in almost every food, in very different amounts.",
+  "description": "Protein is a nutrient made of amino acids. Foods can contain very different amounts and combinations of these amino acids.",
   "layers": [],
-  "sources": [
-    {
-      "label": "Codex — CXG 2-1985 Guidelines on Nutrition Labelling",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%3A%2F%2Fworkspace.fao.org%2Fsites%2Fcodex%2FStandards%2FCXG+2-1985%2FCXG_002e.pdf"
-    },
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    }
-  ]
+  "sources": []
 }

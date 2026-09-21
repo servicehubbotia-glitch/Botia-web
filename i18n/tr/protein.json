@@ -4,35 +4,20 @@
   "module_icon": "protein.png",
   "aliases": "",
   "what_is_title": "Nedir",
-  "what_is": "Proteinler amino asitlerden oluşur ve vücut bunları doku inşa etmek ve onarmak için kullanır. Neredeyse her gıdada, çok farklı miktarlarda bulunurlar.\n\nEtiketteki rakam genellikle mevcut her proteini doğrudan ölçmek yerine, gıdanın azot içeriğinden ve bir dönüşüm faktöründen elde edilir.\n\nGenel faktör 6,25'tir. Avrupa Birliği'nde 1169/2011 sayılı Tüzük ile tanımlanan faktördür. Codex de beslenme beyanı için 6,25'ten başlar; ancak bir ürün standardı başka bir faktör belirtiyorsa o geçerlidir; örneğin süt ve süt ürünleri için 6,38, Codex'in listelediği durumlarda buğday unu veya soya için 5,71.",
+  "what_is": "Protein, amino asitlerden oluşan bir besindir. Gıdalar bu amino asitlerin çok farklı miktarlarını ve kombinasyonlarını içerebilir.",
   "why_botia_title": "BOTIA neden işaretler",
-  "why_botia": "BOTIA proteini işaretler çünkü neredeyse tüm yargı alanlarında beyan edilen birkaç alandan biridir ve bu, onu diğer birçok besin maddesine kıyasla pazarlar arasında daha güvenilir şekilde karşılaştırılabilir kılar.\n\nAncak rakamın görünmeyen bir sınırı vardır: miktarı ölçer, kaliteyi değil. Aynı rakama sahip iki ürün farklı amino asit profilleri sağlayabilir ve beslenme etiketi bunu göstermez.",
+  "why_botia": "Beslenme tablosu ne kadar protein beyan edildiğini söyler, ancak amino asit bileşimini veya kalitesini söylemez. BOTIA bu beyan edilen miktarı, sayıya bağlam veren düzenleyici kurallardan ve kanıtlardan ayrı tutar.",
   "can_title": "BOTIA YAPABİLİR",
-  "can_1": "Beyan edilen değeri okumak ve birimini ve temelini korumak: 100 g başına, 100 ml başına, porsiyon başına veya paket başına.",
-  "can_2": "Ürünün etiketlendiği pazarda geçerli olan referansı göstermek ve onu yayımlayan kurumu adlandırmak.",
-  "can_3": "Beyan edilen rakamın genellikle azottan hesaplandığını ve dönüşüm faktörünün pazara veya ürüne uygulanan kurala bağlı olduğunu açıklamak.",
+  "can_1": "Beslenme etiketinde beyan edilen protein değerini okumak ve birimini ve temelini korumak.",
+  "can_2": "Beyan edilen değeri geçerli düzenleyici bilgilerle ve belgelenmiş kanıtlarla ilişkilendirmek.",
   "cannot_title": "BOTIA YAPAMAZ",
-  "cannot_1": "Bu değerin kendi ihtiyaçlarının yüzde kaçını temsil ettiğini söylemek. Protein ihtiyacı kilo, yaş, aktivite ve sağlığa göre değişir.",
-  "cannot_2": "Proteinin kalitesini veya amino asit profilini yargılamak. Etiket miktarı beyan eder, bileşimi değil.",
-  "cannot_3": "Yürürlükteki kural alternatiflere izin verdiğinde, üreticinin gerçekte hangi analitik yöntemi veya dönüşüm faktörünü kullandığını yalnızca etiketten doğrulamak.",
-  "cannot_4": "Beyan edilmemiş bir değeri sıfır olarak ele almak.",
+  "cannot_1": "Yalnızca beyan edilen protein değerinden amino asit profilini veya protein kalitesini belirlemek.",
+  "cannot_2": "Beslenme etiketinden bir kişinin protein ihtiyacını belirlemek.",
+  "cannot_3": "Beyan edilmemiş bir protein değerini sıfır olarak ele almak.",
   "sources_title": "Kaynaklar",
   "back-button": "← Geri",
   "title": "Protein",
-  "description": "Proteinler amino asitlerden oluşur ve vücut bunları doku inşa etmek ve onarmak için kullanır. Neredeyse her gıdada, çok farklı miktarlarda bulunurlar.",
+  "description": "Protein, amino asitlerden oluşan bir besindir. Gıdalar bu amino asitlerin çok farklı miktarlarını ve kombinasyonlarını içerebilir.",
   "layers": [],
-  "sources": [
-    {
-      "label": "Codex — CXG 2-1985 Guidelines on Nutrition Labelling",
-      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%3A%2F%2Fworkspace.fao.org%2Fsites%2Fcodex%2FStandards%2FCXG+2-1985%2FCXG_002e.pdf"
-    },
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    }
-  ]
+  "sources": []
 }
