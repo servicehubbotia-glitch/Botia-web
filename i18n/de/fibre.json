@@ -2,37 +2,24 @@
   "name": "Ballaststoffe",
   "e_code": "",
   "module_icon": "fibre.png",
-  "aliases": "",
+  "aliases": "Nahrungsfasern, Ballaststoffe",
   "what_is_title": "Was es ist",
-  "what_is": "Ballaststoffe sind Kohlenhydrate, die im Dünndarm weder verdaut noch aufgenommen werden. Sie erreichen den Dickdarm, wo ein Teil von ihnen fermentiert.\n\nHäufig wird zwischen löslichen Ballaststoffen — wie denen in Hafer, Hülsenfrüchten und Äpfeln — und unlöslichen Ballaststoffen — wie Weizenkleie und den Schalen vieler Gemüse — unterschieden. Manche Etiketten geben sie getrennt an, aber das ist freiwillig.\n\nEntscheidend ist, dass die regulatorische Definition nicht in jedem Markt identisch ist. Die Europäische Union definiert Ballaststoffe als bestimmte Kohlenhydratpolymere mit drei oder mehr Monomereinheiten, die im Dünndarm weder verdaut noch aufgenommen werden; für Polymere aus Lebensmittelrohstoffen oder synthetisch hergestellte verlangt sie zusätzlich einen nachgewiesenen positiven physiologischen Effekt.\n\nIn den Vereinigten Staaten verlangt die FDA seit 2016 ebenfalls einen Nachweis eines positiven physiologischen Effekts für bestimmte isolierte oder synthetische unverdauliche Kohlenhydrate, bevor sie als Ballaststoffe angegeben werden dürfen.\n\nDas bedeutet, dass derselbe Stoff je nach Definition und akzeptierten Nachweisen in jedem Markt unterschiedlich behandelt werden kann.",
+  "what_is": "Ballaststoffe sind Kohlenhydrate, die im Dünndarm weder verdaut noch aufgenommen werden. Verschiedene Ballaststoffarten verhalten sich im Verdauungssystem unterschiedlich.",
   "why_botia_title": "Warum BOTIA es markiert",
-  "why_botia": "BOTIA markiert Ballaststoffe, weil es das Feld ist, in dem die Definition zwischen Märkten am stärksten variiert, und das auch die Kohlenhydratzahl betrifft: In der Europäischen Union werden Ballaststoffe separat angegeben, in den Vereinigten Staaten liegen sie innerhalb der Gesamtsumme.\n\nUnd weil sich die analytischen Methoden unterscheiden. Zwei Labore können für dasselbe Produkt je nach angewandter Methode unterschiedliche Werte melden.",
+  "why_botia": "Der Ballaststoffwert auf einem Nährwertetikett hängt davon ab, wie Ballaststoffe in diesem Markt definiert und angegeben werden. BOTIA hält den deklarierten Wert getrennt von der regulatorischen Definition und den Belegen, die zu seiner Interpretation verwendet werden.",
   "can_title": "BOTIA KANN",
-  "can_1": "Den angegebenen Wert lesen und seine Einheit, seine Basis und den Markt beibehalten.",
-  "can_2": "Die Unterfelder löslich und unlöslich dort anzeigen, wo das Etikett sie angibt.",
-  "can_3": "Angeben, welche Definition von Ballaststoffen in diesem Markt gilt und ob sie Teil der Kohlenhydratsumme sind.",
+  "can_1": "Den Ballaststoffwert lesen, wenn er auf dem Nährwertetikett angegeben ist, und seine Einheit und Basis beibehalten.",
+  "can_2": "Ballaststoffe von Kohlenhydraten getrennt halten, wenn das geltende Kennzeichnungssystem sie getrennt angibt.",
+  "can_3": "Den deklarierten Wert mit den geltenden regulatorischen Informationen und dokumentierten Belegen verknüpfen.",
   "cannot_title": "BOTIA KANN NICHT",
-  "cannot_1": "Dir sagen, welchen Prozentsatz deines eigenen Bedarfs dieser Wert darstellt.",
-  "cannot_2": "Werte aus Märkten mit unterschiedlichen Definitionen vergleichen, ohne das zu sagen.",
-  "cannot_3": "Ermitteln, wie viel löslich und wie viel unlöslich ist, wenn das Etikett es nicht angibt.",
-  "cannot_4": "Einen nicht angegebenen Wert als Null behandeln.",
+  "cannot_1": "Die Anteile löslicher und unlöslicher Ballaststoffe bestimmen, es sei denn, das Etikett gibt sie getrennt an.",
+  "cannot_2": "Annehmen, dass Ballaststoffwerte aus verschiedenen Märkten direkt vergleichbar sind, ohne die geltende Definition zu prüfen.",
+  "cannot_3": "Den Ballaststoffbedarf einer Person aus dem Nährwertetikett bestimmen.",
+  "cannot_4": "Einen nicht deklarierten Ballaststoffwert als Null behandeln.",
   "sources_title": "Quellen",
   "back-button": "← Zurück",
   "title": "Ballaststoffe",
-  "description": "Ballaststoffe sind Kohlenhydrate, die im Dünndarm weder verdaut noch aufgenommen werden. Sie erreichen den Dickdarm, wo ein Teil von ihnen fermentiert.",
+  "description": "Ballaststoffe sind Kohlenhydrate, die im Dünndarm weder verdaut noch aufgenommen werden. Verschiedene Ballaststoffarten verhalten sich im Verdauungssystem unterschiedlich.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "FDA — Questions and Answers on Dietary Fiber",
-      "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/questions-and-answers-dietary-fiber"
-    },
-    {
-      "label": "WHO — Carbohydrate intake for adults and children (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073593"
-    }
-  ]
+  "sources": []
 }

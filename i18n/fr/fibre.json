@@ -2,37 +2,24 @@
   "name": "Fibres",
   "e_code": "",
   "module_icon": "fibre.png",
-  "aliases": "",
+  "aliases": "fibres alimentaires, fibres diététiques",
   "what_is_title": "Ce que c'est",
-  "what_is": "Les fibres sont des glucides qui ne sont ni digérés ni absorbés dans l'intestin grêle. Elles atteignent le gros intestin, où une partie fermente.\n\nOn distingue souvent les fibres solubles — comme celles de l'avoine, des légumineuses et des pommes — des fibres insolubles — comme le son de blé et les peaux de nombreux légumes. Certaines étiquettes les déclarent séparément, mais c'est facultatif.\n\nCe qui compte, c'est que la définition réglementaire n'est pas identique dans tous les marchés. L'Union européenne définit les fibres comme certains polymères glucidiques comportant trois unités monomériques ou plus, qui ne sont ni digérés ni absorbés dans l'intestin grêle ; pour les polymères obtenus à partir de matières premières alimentaires ou fabriqués par synthèse, elle exige également un effet physiologique bénéfique démontré.\n\nAux États-Unis, depuis 2016, la FDA exige de même la preuve d'un effet physiologique bénéfique pour certains glucides non digestibles isolés ou synthétiques avant qu'ils puissent être déclarés comme fibres alimentaires.\n\nCela signifie qu'une même substance peut être traitée différemment selon la définition et les preuves acceptées dans chaque marché.",
+  "what_is": "Les fibres sont des glucides qui ne sont ni digérés ni absorbés dans l'intestin grêle. Les différents types de fibres se comportent différemment dans le système digestif.",
   "why_botia_title": "Pourquoi BOTIA le signale",
-  "why_botia": "BOTIA signale les fibres parce que c'est le champ où la définition varie le plus entre marchés, et cela affecte aussi la valeur des glucides : dans l'Union européenne les fibres sont déclarées séparément, aux États-Unis elles font partie du total.\n\nEt parce que les méthodes analytiques diffèrent. Deux laboratoires peuvent rapporter des valeurs différentes pour le même produit selon la méthode appliquée.",
+  "why_botia": "La valeur des fibres sur une étiquette nutritionnelle dépend de la façon dont les fibres sont définies et déclarées sur ce marché. BOTIA maintient la valeur déclarée séparée de la définition réglementaire et des preuves utilisées pour l'interpréter.",
   "can_title": "BOTIA PEUT",
-  "can_1": "Lire la valeur déclarée et conserver son unité, sa base et le marché.",
-  "can_2": "Afficher les sous-champs soluble et insoluble là où l'étiquette les déclare.",
-  "can_3": "Indiquer quelle définition des fibres s'applique sur ce marché et si elles font partie du total des glucides.",
+  "can_1": "Lire la valeur des fibres lorsqu'elle est déclarée sur l'étiquette nutritionnelle et préserver son unité et sa base.",
+  "can_2": "Maintenir les fibres séparées des glucides lorsque le système d'étiquetage applicable les déclare séparément.",
+  "can_3": "Relier la valeur déclarée aux informations réglementaires applicables et aux preuves documentées.",
   "cannot_title": "BOTIA NE PEUT PAS",
-  "cannot_1": "Vous dire quel pourcentage de vos propres besoins cette valeur représente.",
-  "cannot_2": "Comparer des valeurs de marchés aux définitions différentes sans le préciser.",
-  "cannot_3": "Déterminer quelle part est soluble et quelle part insoluble si l'étiquette ne le déclare pas.",
-  "cannot_4": "Traiter une valeur non déclarée comme zéro.",
+  "cannot_1": "Déterminer les proportions de fibres solubles et insolubles, sauf si l'étiquette les déclare séparément.",
+  "cannot_2": "Supposer que les valeurs de fibres de différents marchés sont directement comparables sans vérifier la définition applicable.",
+  "cannot_3": "Déterminer les besoins en fibres d'une personne à partir de l'étiquette nutritionnelle.",
+  "cannot_4": "Traiter une valeur de fibres non déclarée comme zéro.",
   "sources_title": "Sources",
   "back-button": "← Retour",
   "title": "Fibres",
-  "description": "Les fibres sont des glucides qui ne sont ni digérés ni absorbés dans l'intestin grêle. Elles atteignent le gros intestin, où une partie fermente.",
+  "description": "Les fibres sont des glucides qui ne sont ni digérés ni absorbés dans l'intestin grêle. Les différents types de fibres se comportent différemment dans le système digestif.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "FDA — Questions and Answers on Dietary Fiber",
-      "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/questions-and-answers-dietary-fiber"
-    },
-    {
-      "label": "WHO — Carbohydrate intake for adults and children (2023)",
-      "url": "https://www.who.int/publications/i/item/9789240073593"
-    }
-  ]
+  "sources": []
 }
