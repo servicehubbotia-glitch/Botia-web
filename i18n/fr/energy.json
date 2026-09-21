@@ -2,41 +2,23 @@
   "name": "Énergie",
   "e_code": "",
   "module_icon": "energy.png",
-  "aliases": "",
+  "aliases": "kilojoules, kilocalories, Calories",
   "what_is_title": "Ce que c'est",
-  "what_is": "L'énergie d'un aliment est ce qu'il fournit lorsqu'il est métabolisé. Elle peut être exprimée en kilojoules et en kilocalories, et les deux unités mesurent la même chose : un kilojoule équivaut à environ 0,239 kilocalorie.\n\nPour l'étiquetage nutritionnel, la valeur est calculée en appliquant des facteurs de conversion aux nutriments déclarés. Dans l'Union européenne, par exemple, les facteurs sont 4 kcal par gramme de protéines, 4 par gramme de glucides — sauf polyols —, 9 par gramme de matières grasses, 7 par gramme d'alcool, 2 par gramme de fibres et 2,4 par gramme de polyols. L'érythritol compte pour 0.\n\nDans l'Union européenne, l'énergie est déclarée en kJ et kcal. La Chine utilise le kJ comme unité réglementaire. Aux États-Unis et au Canada, le tableau nutritionnel indique les Calories.",
+  "what_is": "L'énergie est la quantité d'énergie qu'un aliment fournit. Les étiquettes nutritionnelles l'expriment généralement en kilojoules, en kilocalories ou les deux.",
   "why_botia_title": "Pourquoi BOTIA le signale",
-  "why_botia": "BOTIA signale l'énergie parce que c'est le chiffre que le plus de gens regardent et celui qui est le plus facilement mal interprété.\n\nLa référence qui l'accompagne — 2 000 kcal, 8 400 kJ dans l'Union européenne — est une valeur de référence pour les adultes, fixée par convention pour rendre l'étiquetage possible. Ce n'est pas ce dont vous avez besoin : cela dépend de votre taille, de votre âge, de votre activité et de votre santé.\n\nEt parce que la valeur provient d'un calcul, non d'une mesure. Deux produits ayant la même énergie peuvent avoir des compositions très différentes.",
+  "why_botia": "La valeur énergétique indique la quantité totale déclarée, mais pas comment cette énergie est répartie entre les matières grasses, les glucides, les protéines ou d'autres composants énergétiques. BOTIA maintient la valeur déclarée séparée des règles réglementaires de calcul et des preuves utilisées pour l'interpréter.",
   "can_title": "BOTIA PEUT",
-  "can_1": "Lire les deux unités là où elles sont déclarées et conserver la base : pour 100 g, pour 100 ml, par portion ou par emballage.",
-  "can_2": "Afficher la référence qui s'applique sur le marché où le produit a été étiqueté et nommer l'autorité qui la publie.",
-  "can_3": "Expliquer que la valeur est calculée à partir des nutriments au moyen de facteurs fixes, et indiquer quels facteurs s'appliquent sur ce marché.",
+  "can_1": "Lire la valeur énergétique déclarée sur l'étiquette nutritionnelle et préserver son unité et sa base.",
+  "can_2": "Maintenir les kilojoules et les kilocalories séparés lorsque les deux sont déclarés.",
+  "can_3": "Relier la valeur déclarée aux informations réglementaires applicables et aux preuves documentées le cas échéant.",
   "cannot_title": "BOTIA NE PEUT PAS",
-  "cannot_1": "Vous dire quel pourcentage de vos propres besoins cela représente. La valeur de référence est une convention d'étiquetage pour des populations adultes, pas un besoin individuel.",
-  "cannot_2": "Dire si l'énergie d'un produit est élevée ou faible. Cela dépend de la nature du produit, de la quantité consommée et de ce qui est mangé d'autre ce jour-là.",
-  "cannot_3": "Déduire la composition à partir de l'énergie. Deux produits ayant la même valeur peuvent la répartir très différemment entre matières grasses, glucides et protéines.",
-  "cannot_4": "Convertir entre unités là où le marché ne l'exige pas, sans marquer la conversion comme dérivée.",
+  "cannot_1": "Déterminer la composition nutritionnelle complète d'un aliment à partir de sa seule valeur énergétique.",
+  "cannot_2": "Déterminer les besoins énergétiques d'une personne à partir de l'étiquette nutritionnelle.",
+  "cannot_3": "Traiter une valeur énergétique non déclarée comme zéro.",
   "sources_title": "Sources",
   "back-button": "← Retour",
   "title": "Énergie",
-  "description": "L'énergie d'un aliment est ce qu'il fournit lorsqu'il est métabolisé. Elle peut être exprimée en kilojoules et en kilocalories, et les deux unités mesurent la même chose : un kilojoule équivaut à environ 0,239 kilocalorie.",
+  "description": "L'énergie est la quantité d'énergie qu'un aliment fournit. Les étiquettes nutritionnelles l'expriment généralement en kilojoules, en kilocalories ou les deux.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    },
-    {
-      "label": "China NHC — GB 28050-2025 Q&A on prepackaged-food nutrition labelling",
-      "url": "https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
-    }
-  ]
+  "sources": []
 }

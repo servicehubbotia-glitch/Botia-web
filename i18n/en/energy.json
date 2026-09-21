@@ -2,41 +2,23 @@
   "name": "Energy",
   "e_code": "",
   "module_icon": "energy.png",
-  "aliases": "",
+  "aliases": "kilojoules, kilocalories, Calories",
   "what_is_title": "What it is",
-  "what_is": "The energy in a food is what it provides when metabolised. It can be expressed in kilojoules and kilocalories, and both units measure the same thing: one kilojoule is approximately 0.239 kilocalories.\n\nFor nutrition labelling, the figure is calculated by applying conversion factors to the declared nutrients. In the European Union, for example, the factors are 4 kcal per gram of protein, 4 per gram of carbohydrate — except polyols —, 9 per gram of fat, 7 per gram of alcohol, 2 per gram of fibre and 2.4 per gram of polyols. Erythritol counts as 0.\n\nIn the European Union energy is declared in kJ and kcal. China uses kJ as the regulatory unit. In the United States and Canada the nutrition panel shows Calories.",
+  "what_is": "Energy is the amount of energy a food provides. Nutrition labels usually express it in kilojoules, kilocalories or both.",
   "why_botia_title": "Why BOTIA flags it",
-  "why_botia": "BOTIA flags energy because it is the number most people look at and the one most easily misread.\n\nThe reference that goes with it — 2,000 kcal, 8,400 kJ in the European Union — is a reference value for adults, fixed by convention so that labelling is possible. It is not what you need: that depends on your size, your age, your activity and your health.\n\nAnd because the figure comes from a calculation, not a measurement. Two products with the same energy can have very different compositions.",
+  "why_botia": "The energy figure tells you the total amount declared, but not how that energy is distributed between fat, carbohydrate, protein or other energy-providing components. BOTIA keeps the declared value separate from the regulatory calculation rules and evidence used to interpret it.",
   "can_title": "BOTIA CAN",
-  "can_1": "Read both units where they are declared and keep the basis: per 100 g, per 100 ml, per serving or per package.",
-  "can_2": "Show the reference that applies in the market where the product was labelled, and name the authority that publishes it.",
-  "can_3": "Explain that the figure is calculated from the nutrients using fixed factors, and state which factors apply in that market.",
+  "can_1": "Read the energy value declared on the nutrition label and preserve its unit and basis.",
+  "can_2": "Keep kilojoules and kilocalories separate when both are declared.",
+  "can_3": "Connect the declared value with the applicable regulatory information and documented evidence where relevant.",
   "cannot_title": "BOTIA CANNOT",
-  "cannot_1": "Tell you what percentage of your own needs this represents. The reference value is a labelling convention for adult populations, not an individual requirement.",
-  "cannot_2": "Say whether a product's energy is high or low. That depends on what the product is, how much is eaten, and what else is eaten that day.",
-  "cannot_3": "Work out composition from energy. Two products with the same figure can split it very differently between fat, carbohydrate and protein.",
-  "cannot_4": "Convert between units where the market does not require it without marking the conversion as derived.",
+  "cannot_1": "Determine the complete nutrient composition of a food from its energy value alone.",
+  "cannot_2": "Determine an individual's energy requirement from the nutrition label.",
+  "cannot_3": "Treat an undeclared energy value as zero.",
   "sources_title": "Sources",
   "back-button": "← Back",
   "title": "Energy",
-  "description": "The energy in a food is what it provides when metabolised. It can be expressed in kilojoules and kilocalories, and both units measure the same thing: one kilojoule is approximately 0.239 kilocalories.",
+  "description": "Energy is the amount of energy a food provides. Nutrition labels usually express it in kilojoules, kilocalories or both.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    },
-    {
-      "label": "China NHC — GB 28050-2025 Q&A on prepackaged-food nutrition labelling",
-      "url": "https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
-    }
-  ]
+  "sources": []
 }

@@ -2,41 +2,23 @@
   "name": "能量",
   "e_code": "",
   "module_icon": "energy.png",
-  "aliases": "",
+  "aliases": "千焦、千卡、卡路里",
   "what_is_title": "这是什么",
-  "what_is": "食物中的能量是它在代谢时提供的能量。可以用千焦和千卡表示，两种单位衡量的是同一件事：1 千焦约等于 0.239 千卡。\n\n在营养标示中，该数值是通过对所标示的营养素应用换算系数计算得出的。在欧盟，例如，系数是每克蛋白质 4 千卡、每克碳水化合物 4 千卡（多元醇除外）、每克脂肪 9 千卡、每克酒精 7 千卡、每克膳食纤维 2 千卡、每克多元醇 2.4 千卡。赤藓糖醇按 0 计。\n\n在欧盟，能量以 kJ 和 kcal 标示。中国以 kJ 为法定单位。在美国和加拿大，营养成分表显示 Calories。",
+  "what_is": "能量是食物所提供的能量总量。营养标签通常以千焦、千卡或两者同时表示。",
   "why_botia_title": "BOTIA 为何标记它",
-  "why_botia": "BOTIA 标记能量，因为它是最多人看的数字，也是最容易被误读的数字。\n\n与之配套的参考值——欧盟的 2,000 千卡、8,400 千焦——是成年人的参考值，为了标示可行而按惯例设定。它不是您需要的量：这取决于您的体型、年龄、活动量和健康状况。\n\n而且这个数值来自计算，而不是测量。能量相同的两个产品可以有非常不同的组成。",
+  "why_botia": "能量数值告诉你所标示的总量，但不告诉你该能量如何在脂肪、碳水化合物、蛋白质或其他供能成分之间分配。BOTIA 将所标示的数值与用于解释它的法规计算规则和证据分开。",
   "can_title": "BOTIA 可以",
-  "can_1": "读取所标示的两种单位，并保留基准：每 100 克、每 100 毫升、每份或每包装。",
-  "can_2": "显示产品标示所在市场适用的参考值，并指明发布该参考值的机构。",
-  "can_3": "说明该数值是使用固定系数从营养素计算得出的，并指出该市场适用哪些系数。",
+  "can_1": "读取营养标签上标示的能量数值，并保留其单位和基准。",
+  "can_2": "当千焦和千卡同时标示时，将其分开保留。",
+  "can_3": "在相关时，将所标示的数值与适用的法规信息和记录的证据联系起来。",
   "cannot_title": "BOTIA 不能",
-  "cannot_1": "告诉您这占您自身需求的百分比。该参考值是成年人群的标示惯例，不是个人需求。",
-  "cannot_2": "说某产品的能量是高还是低。这取决于该产品是什么、吃了多少，以及那天还吃了什么。",
-  "cannot_3": "从能量推断组成。两个数值相同的产品，脂肪、碳水化合物和蛋白质之间的分配可能大不相同。",
-  "cannot_4": "在市场没有要求的情况下在单位之间换算，而不将换算标记为派生。",
+  "cannot_1": "仅从食物的能量数值确定其完整的营养成分组成。",
+  "cannot_2": "从营养标签确定个人的能量需求。",
+  "cannot_3": "把未标示的能量数值当作零。",
   "sources_title": "来源",
   "back-button": "← 返回",
   "title": "能量",
-  "description": "食物中的能量是它在代谢时提供的能量。可以用千焦和千卡表示，两种单位衡量的是同一件事：1 千焦约等于 0.239 千卡。",
+  "description": "能量是食物所提供的能量总量。营养标签通常以千焦、千卡或两者同时表示。",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    },
-    {
-      "label": "China NHC — GB 28050-2025 Q&A on prepackaged-food nutrition labelling",
-      "url": "https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
-    }
-  ]
+  "sources": []
 }

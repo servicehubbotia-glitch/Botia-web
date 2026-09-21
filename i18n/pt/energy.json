@@ -2,41 +2,23 @@
   "name": "Energia",
   "e_code": "",
   "module_icon": "energy.png",
-  "aliases": "",
+  "aliases": "quilojoules, quilocalorias, Calorias",
   "what_is_title": "O que é",
-  "what_is": "A energia de um alimento é o que ele fornece quando é metabolizado. Pode ser expressa em quilojoules e quilocalorias, e as duas unidades medem a mesma coisa: um quilojoule equivale a aproximadamente 0,239 quilocalorias.\n\nPara a rotulagem nutricional, o valor é calculado aplicando fatores de conversão aos nutrientes declarados. Na União Europeia, por exemplo, os fatores são 4 kcal por grama de proteína, 4 por grama de hidratos de carbono — exceto polióis —, 9 por grama de gordura, 7 por grama de álcool, 2 por grama de fibra e 2,4 por grama de polióis. O eritritol conta como 0.\n\nNa União Europeia a energia é declarada em kJ e kcal. A China usa o kJ como unidade regulamentar. Nos Estados Unidos e no Canadá o painel nutricional mostra Calorias.",
+  "what_is": "A energia é a quantidade de energia que um alimento fornece. Os rótulos nutricionais expressam-na habitualmente em quilojoules, quilocalorias ou ambas.",
   "why_botia_title": "Porque é que a BOTIA o sinaliza",
-  "why_botia": "A BOTIA sinaliza a energia porque é o número que mais pessoas olham e o que mais facilmente se interpreta mal.\n\nA referência que o acompanha — 2.000 kcal, 8.400 kJ na União Europeia — é um valor de referência para adultos, fixado por convenção para que a rotulagem seja possível. Não é o que tu precisas: isso depende do teu tamanho, da tua idade, da tua atividade e da tua saúde.\n\nE porque o valor vem de um cálculo, não de uma medição. Dois produtos com a mesma energia podem ter composições muito diferentes.",
+  "why_botia": "O valor energético indica a quantidade total declarada, mas não como essa energia se distribui entre gordura, hidratos de carbono, proteína ou outros componentes que a fornecem. A BOTIA mantém o valor declarado separado das regras regulamentares de cálculo e das evidências usadas para o interpretar.",
   "can_title": "A BOTIA PODE",
-  "can_1": "Ler as duas unidades onde são declaradas e manter a base: por 100 g, por 100 ml, por dose ou por embalagem.",
-  "can_2": "Mostrar a referência que se aplica no mercado onde o produto foi rotulado e nomear a autoridade que a publica.",
-  "can_3": "Explicar que o valor é calculado a partir dos nutrientes com fatores fixos, e indicar quais os fatores que se aplicam nesse mercado.",
+  "can_1": "Ler o valor energético declarado no rótulo nutricional e preservar a sua unidade e a sua base.",
+  "can_2": "Manter quilojoules e quilocalorias separados quando ambos são declarados.",
+  "can_3": "Ligar o valor declarado às informações regulamentares aplicáveis e às evidências documentadas quando relevante.",
   "cannot_title": "A BOTIA NÃO PODE",
-  "cannot_1": "Dizer-te que percentagem das tuas próprias necessidades isto representa. O valor de referência é uma convenção de rotulagem para populações adultas, não uma necessidade individual.",
-  "cannot_2": "Dizer se a energia de um produto é alta ou baixa. Depende do que é o produto, de quanto se come e do que mais se come nesse dia.",
-  "cannot_3": "Deduzir a composição a partir da energia. Dois produtos com o mesmo valor podem reparti-lo de forma muito diferente entre gordura, hidratos de carbono e proteína.",
-  "cannot_4": "Converter entre unidades onde o mercado não o exige, sem marcar a conversão como derivada.",
+  "cannot_1": "Determinar a composição nutricional completa de um alimento apenas a partir do seu valor energético.",
+  "cannot_2": "Determinar a necessidade de energia de uma pessoa a partir do rótulo nutricional.",
+  "cannot_3": "Tratar um valor energético não declarado como zero.",
   "sources_title": "Fontes",
   "back-button": "← Voltar",
   "title": "Energia",
-  "description": "A energia de um alimento é o que ele fornece quando é metabolizado. Pode ser expressa em quilojoules e quilocalorias, e as duas unidades medem a mesma coisa: um quilojoule equivale a aproximadamente 0,239 quilocalorias.",
+  "description": "A energia é a quantidade de energia que um alimento fornece. Os rótulos nutricionais expressam-na habitualmente em quilojoules, quilocalorias ou ambas.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    },
-    {
-      "label": "China NHC — GB 28050-2025 Q&A on prepackaged-food nutrition labelling",
-      "url": "https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
-    }
-  ]
+  "sources": []
 }

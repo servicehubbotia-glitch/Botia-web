@@ -2,41 +2,23 @@
   "name": "Energia",
   "e_code": "",
   "module_icon": "energy.png",
-  "aliases": "",
+  "aliases": "kilojoule, kilocalorie, Calorie",
   "what_is_title": "Cos'è",
-  "what_is": "L'energia in un alimento è ciò che fornisce quando viene metabolizzato. Può essere espressa in kilojoule e kilocalorie, ed entrambe le unità misurano la stessa cosa: un kilojoule equivale a circa 0,239 kilocalorie.\n\nPer l'etichettatura nutrizionale, il valore è calcolato applicando fattori di conversione ai nutrienti dichiarati. Nell'Unione europea, per esempio, i fattori sono 4 kcal per grammo di proteine, 4 per grammo di carboidrati — tranne i polioli —, 9 per grammo di grassi, 7 per grammo di alcol, 2 per grammo di fibre e 2,4 per grammo di polioli. L'eritritolo conta come 0.\n\nNell'Unione europea l'energia è dichiarata in kJ e kcal. La Cina usa il kJ come unità regolamentare. Negli Stati Uniti e in Canada il pannello nutrizionale mostra le Calorie.",
+  "what_is": "L'energia è la quantità di energia che un alimento fornisce. Le etichette nutrizionali di solito la esprimono in kilojoule, kilocalorie o entrambi.",
   "why_botia_title": "Perché BOTIA lo segnala",
-  "why_botia": "BOTIA segnala l'energia perché è il numero che più persone guardano e quello più facilmente frainteso.\n\nIl riferimento che lo accompagna — 2.000 kcal, 8.400 kJ nell'Unione europea — è un valore di riferimento per adulti, fissato per convenzione affinché l'etichettatura sia possibile. Non è ciò di cui hai bisogno: quello dipende dalla tua taglia, dalla tua età, dalla tua attività e dalla tua salute.\n\nE perché il valore deriva da un calcolo, non da una misurazione. Due prodotti con la stessa energia possono avere composizioni molto diverse.",
+  "why_botia": "Il valore energetico indica la quantità totale dichiarata, ma non come questa energia sia distribuita tra grassi, carboidrati, proteine o altri componenti energetici. BOTIA mantiene il valore dichiarato separato dalle regole normative di calcolo e dalle prove utilizzate per interpretarlo.",
   "can_title": "BOTIA PUÒ",
-  "can_1": "Leggere entrambe le unità dove sono dichiarate e conservare la base: per 100 g, per 100 ml, per porzione o per confezione.",
-  "can_2": "Mostrare il riferimento che si applica nel mercato in cui il prodotto è stato etichettato e nominare l'autorità che lo pubblica.",
-  "can_3": "Spiegare che il valore è calcolato dai nutrienti con fattori fissi, e indicare quali fattori si applicano in quel mercato.",
+  "can_1": "Leggere il valore energetico dichiarato sull'etichetta nutrizionale e preservarne l'unità e la base.",
+  "can_2": "Mantenere kilojoule e kilocalorie separati quando sono dichiarati entrambi.",
+  "can_3": "Collegare il valore dichiarato alle informazioni normative applicabili e alle prove documentate ove pertinenti.",
   "cannot_title": "BOTIA NON PUÒ",
-  "cannot_1": "Dirti quale percentuale dei tuoi fabbisogni rappresenta. Il valore di riferimento è una convenzione di etichettatura per popolazioni adulte, non un fabbisogno individuale.",
-  "cannot_2": "Dire se l'energia di un prodotto è alta o bassa. Dipende da cos'è il prodotto, da quanto se ne mangia e da cos'altro si mangia quel giorno.",
-  "cannot_3": "Dedurre la composizione dall'energia. Due prodotti con lo stesso valore possono ripartirlo in modo molto diverso tra grassi, carboidrati e proteine.",
-  "cannot_4": "Convertire tra unità dove il mercato non lo richiede, senza contrassegnare la conversione come derivata.",
+  "cannot_1": "Determinare la composizione nutrizionale completa di un alimento solo dal suo valore energetico.",
+  "cannot_2": "Determinare il fabbisogno energetico di una persona dall'etichetta nutrizionale.",
+  "cannot_3": "Trattare un valore energetico non dichiarato come zero.",
   "sources_title": "Fonti",
   "back-button": "← Indietro",
   "title": "Energia",
-  "description": "L'energia in un alimento è ciò che fornisce quando viene metabolizzato. Può essere espressa in kilojoule e kilocalorie, ed entrambe le unità misurano la stessa cosa: un kilojoule equivale a circa 0,239 kilocalorie.",
+  "description": "L'energia è la quantità di energia che un alimento fornisce. Le etichette nutrizionali di solito la esprimono in kilojoule, kilocalorie o entrambi.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    },
-    {
-      "label": "China NHC — GB 28050-2025 Q&A on prepackaged-food nutrition labelling",
-      "url": "https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
-    }
-  ]
+  "sources": []
 }

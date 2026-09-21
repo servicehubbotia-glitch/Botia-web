@@ -2,41 +2,23 @@
   "name": "Energia",
   "e_code": "",
   "module_icon": "energy.png",
-  "aliases": "",
+  "aliases": "kilodżule, kilokalorie, Kalorie",
   "what_is_title": "Co to jest",
-  "what_is": "Energia w żywności to to, co dostarcza ona w procesie metabolizmu. Można ją wyrazić w kilodżulach i kilokaloriach, a obie jednostki mierzą to samo: jeden kilodżul to około 0,239 kilokalorii.\n\nW etykietowaniu wartości odżywczej wartość oblicza się, stosując współczynniki przeliczeniowe do zadeklarowanych składników odżywczych. W Unii Europejskiej na przykład współczynniki wynoszą 4 kcal na gram białka, 4 na gram węglowodanów — z wyjątkiem polioli —, 9 na gram tłuszczu, 7 na gram alkoholu, 2 na gram błonnika i 2,4 na gram polioli. Erytrytol liczy się jako 0.\n\nW Unii Europejskiej energia jest deklarowana w kJ i kcal. Chiny używają kJ jako jednostki regulacyjnej. W Stanach Zjednoczonych i Kanadzie tabela wartości odżywczej pokazuje Kalorie.",
+  "what_is": "Energia to ilość energii, którą dostarcza żywność. Etykiety wartości odżywczej zwykle wyrażają ją w kilodżulach, kilokaloriach lub w obu jednostkach.",
   "why_botia_title": "Dlaczego BOTIA to oznacza",
-  "why_botia": "BOTIA oznacza energię, ponieważ jest to liczba, na którą patrzy najwięcej osób, i najłatwiej odczytywana błędnie.\n\nOdniesienie, które jej towarzyszy — 2 000 kcal, 8 400 kJ w Unii Europejskiej — to wartość referencyjna dla dorosłych, ustalona umownie, aby etykietowanie było możliwe. To nie jest to, czego potrzebujesz: to zależy od twojej wielkości, wieku, aktywności i zdrowia.\n\nI ponieważ wartość pochodzi z obliczenia, nie z pomiaru. Dwa produkty o tej samej energii mogą mieć bardzo różne składy.",
+  "why_botia": "Wartość energetyczna mówi, ile zadeklarowano łącznie, ale nie mówi, jak ta energia rozkłada się między tłuszcz, węglowodany, białko lub inne składniki dostarczające energii. BOTIA utrzymuje zadeklarowaną wartość oddzielnie od regulacyjnych zasad obliczeń i dowodów używanych do jej interpretacji.",
   "can_title": "BOTIA MOŻE",
-  "can_1": "Odczytać obie jednostki tam, gdzie są deklarowane, i zachować podstawę: na 100 g, na 100 ml, na porcję lub na opakowanie.",
-  "can_2": "Pokazać odniesienie obowiązujące na rynku, na którym produkt został oznakowany, i wskazać organ, który je publikuje.",
-  "can_3": "Wyjaśnić, że wartość oblicza się ze składników odżywczych za pomocą stałych współczynników, i wskazać, które współczynniki obowiązują na tym rynku.",
+  "can_1": "Odczytać zadeklarowaną wartość energetyczną na etykiecie wartości odżywczej i zachować jej jednostkę oraz podstawę.",
+  "can_2": "Utrzymać kilodżule i kilokalorie oddzielnie, gdy obie są zadeklarowane.",
+  "can_3": "Powiązać zadeklarowaną wartość z obowiązującymi informacjami regulacyjnymi i udokumentowanymi dowodami, gdy jest to istotne.",
   "cannot_title": "BOTIA NIE MOŻE",
-  "cannot_1": "Powiedzieć, jaki procent twoich własnych potrzeb to stanowi. Wartość referencyjna to konwencja etykietowania dla populacji dorosłych, a nie indywidualne zapotrzebowanie.",
-  "cannot_2": "Powiedzieć, czy energia produktu jest wysoka czy niska. To zależy od tego, czym jest produkt, ile się go zjada i co jeszcze je się tego dnia.",
-  "cannot_3": "Wywnioskować skład z energii. Dwa produkty o tej samej wartości mogą rozdzielać ją bardzo różnie między tłuszcz, węglowodany i białko.",
-  "cannot_4": "Przeliczać między jednostkami tam, gdzie rynek tego nie wymaga, bez oznaczania przeliczenia jako pochodnego.",
+  "cannot_1": "Określić pełnego składu odżywczego żywności wyłącznie na podstawie jej wartości energetycznej.",
+  "cannot_2": "Określić zapotrzebowania danej osoby na energię na podstawie etykiety wartości odżywczej.",
+  "cannot_3": "Traktować niezadeklarowanej wartości energetycznej jako zera.",
   "sources_title": "Źródła",
   "back-button": "← Wstecz",
   "title": "Energia",
-  "description": "Energia w żywności to to, co dostarcza ona w procesie metabolizmu. Można ją wyrazić w kilodżulach i kilokaloriach, a obie jednostki mierzą to samo: jeden kilodżul to około 0,239 kilokalorii.",
+  "description": "Energia to ilość energii, którą dostarcza żywność. Etykiety wartości odżywczej zwykle wyrażają ją w kilodżulach, kilokaloriach lub w obu jednostkach.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    },
-    {
-      "label": "China NHC — GB 28050-2025 Q&A on prepackaged-food nutrition labelling",
-      "url": "https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
-    }
-  ]
+  "sources": []
 }

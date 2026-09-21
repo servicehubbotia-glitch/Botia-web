@@ -2,41 +2,23 @@
   "name": "Energie",
   "e_code": "",
   "module_icon": "energy.png",
-  "aliases": "",
+  "aliases": "Kilojoule, Kilokalorien, Kalorien",
   "what_is_title": "Was es ist",
-  "what_is": "Die Energie in einem Lebensmittel ist das, was es bei der Verstoffwechselung liefert. Sie kann in Kilojoule und Kilokalorien ausgedrückt werden, und beide Einheiten messen dasselbe: Ein Kilojoule entspricht etwa 0,239 Kilokalorien.\n\nFür die Nährwertkennzeichnung wird die Zahl berechnet, indem Umrechnungsfaktoren auf die angegebenen Nährstoffe angewendet werden. In der Europäischen Union sind die Faktoren zum Beispiel 4 kcal pro Gramm Protein, 4 pro Gramm Kohlenhydrate — außer Polyole —, 9 pro Gramm Fett, 7 pro Gramm Alkohol, 2 pro Gramm Ballaststoffe und 2,4 pro Gramm Polyole. Erythrit zählt als 0.\n\nIn der Europäischen Union wird Energie in kJ und kcal angegeben. China verwendet kJ als regulierte Einheit. In den Vereinigten Staaten und Kanada zeigt die Nährwerttabelle Calories.",
+  "what_is": "Energie ist die Energiemenge, die ein Lebensmittel liefert. Nährwertetiketten geben sie üblicherweise in Kilojoule, Kilokalorien oder beidem an.",
   "why_botia_title": "Warum BOTIA es markiert",
-  "why_botia": "BOTIA markiert Energie, weil es die Zahl ist, die die meisten Menschen ansehen, und die am leichtesten falsch gelesen wird.\n\nDie Referenz, die dazugehört — 2.000 kcal, 8.400 kJ in der Europäischen Union — ist ein Referenzwert für Erwachsene, per Konvention festgelegt, damit Kennzeichnung möglich ist. Es ist nicht das, was du brauchst: Das hängt von deiner Größe, deinem Alter, deiner Aktivität und deiner Gesundheit ab.\n\nUnd weil die Zahl aus einer Berechnung stammt, nicht aus einer Messung. Zwei Produkte mit derselben Energie können sehr unterschiedliche Zusammensetzungen haben.",
+  "why_botia": "Die Energiezahl gibt die insgesamt angegebene Menge an, aber nicht, wie diese Energie zwischen Fett, Kohlenhydraten, Protein oder anderen energieliefernden Bestandteilen verteilt ist. BOTIA hält den deklarierten Wert getrennt von den regulatorischen Berechnungsregeln und den Belegen, die zu seiner Interpretation verwendet werden.",
   "can_title": "BOTIA KANN",
-  "can_1": "Beide Einheiten lesen, wo sie angegeben sind, und die Basis beibehalten: pro 100 g, pro 100 ml, pro Portion oder pro Packung.",
-  "can_2": "Die Referenz anzeigen, die in dem Markt gilt, in dem das Produkt gekennzeichnet wurde, und die Behörde nennen, die sie veröffentlicht.",
-  "can_3": "Erklären, dass die Zahl aus den Nährstoffen mit festen Faktoren berechnet wird, und angeben, welche Faktoren in diesem Markt gelten.",
+  "can_1": "Den auf dem Nährwertetikett deklarierten Energiewert lesen und seine Einheit und Basis beibehalten.",
+  "can_2": "Kilojoule und Kilokalorien getrennt halten, wenn beide angegeben sind.",
+  "can_3": "Den deklarierten Wert gegebenenfalls mit den geltenden regulatorischen Informationen und dokumentierten Belegen verknüpfen.",
   "cannot_title": "BOTIA KANN NICHT",
-  "cannot_1": "Dir sagen, welchen Prozentsatz deines eigenen Bedarfs dies darstellt. Der Referenzwert ist eine Kennzeichnungskonvention für erwachsene Bevölkerungsgruppen, kein individueller Bedarf.",
-  "cannot_2": "Sagen, ob die Energie eines Produkts hoch oder niedrig ist. Das hängt davon ab, was das Produkt ist, wie viel davon gegessen wird und was an diesem Tag sonst gegessen wird.",
-  "cannot_3": "Aus der Energie die Zusammensetzung ableiten. Zwei Produkte mit derselben Zahl können sie sehr unterschiedlich zwischen Fett, Kohlenhydraten und Protein aufteilen.",
-  "cannot_4": "Zwischen Einheiten umrechnen, wo der Markt es nicht verlangt, ohne die Umrechnung als abgeleitet zu kennzeichnen.",
+  "cannot_1": "Die vollständige Nährstoffzusammensetzung eines Lebensmittels allein aus seinem Energiewert bestimmen.",
+  "cannot_2": "Den Energiebedarf einer Person aus dem Nährwertetikett bestimmen.",
+  "cannot_3": "Einen nicht deklarierten Energiewert als Null behandeln.",
   "sources_title": "Quellen",
   "back-button": "← Zurück",
   "title": "Energie",
-  "description": "Die Energie in einem Lebensmittel ist das, was es bei der Verstoffwechselung liefert. Sie kann in Kilojoule und Kilokalorien ausgedrückt werden, und beide Einheiten messen dasselbe: Ein Kilojoule entspricht etwa 0,239 Kilokalorien.",
+  "description": "Energie ist die Energiemenge, die ein Lebensmittel liefert. Nährwertetiketten geben sie üblicherweise in Kilojoule, Kilokalorien oder beidem an.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    },
-    {
-      "label": "China NHC — GB 28050-2025 Q&A on prepackaged-food nutrition labelling",
-      "url": "https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
-    }
-  ]
+  "sources": []
 }

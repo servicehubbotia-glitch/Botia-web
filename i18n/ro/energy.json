@@ -2,41 +2,23 @@
   "name": "Energie",
   "e_code": "",
   "module_icon": "energy.png",
-  "aliases": "",
+  "aliases": "kilojouli, kilocalorii, Calorii",
   "what_is_title": "Ce este",
-  "what_is": "Energia dintr-un aliment este ceea ce oferă atunci când este metabolizat. Poate fi exprimată în kilojouli și kilocalorii, iar ambele unități măsoară același lucru: un kilojoule este de aproximativ 0,239 kilocalorii.\n\nPentru etichetarea nutrițională, valoarea este calculată prin aplicarea factorilor de conversie la nutrienții declarați. În Uniunea Europeană, de exemplu, factorii sunt 4 kcal pe gram de proteină, 4 pe gram de carbohidrați — cu excepția poliolilor —, 9 pe gram de grăsime, 7 pe gram de alcool, 2 pe gram de fibre și 2,4 pe gram de polioli. Eritritolul contează ca 0.\n\nÎn Uniunea Europeană energia este declarată în kJ și kcal. China folosește kJ ca unitate de reglementare. În Statele Unite și Canada, tabelul nutrițional arată Calorii.",
-  "why_botia_title": "De ce BOTIA îl semnalează",
-  "why_botia": "BOTIA semnalează energia pentru că este numărul la care se uită cei mai mulți oameni și cel mai ușor de interpretat greșit.\n\nReferința care îl însoțește — 2.000 kcal, 8.400 kJ în Uniunea Europeană — este o valoare de referință pentru adulți, stabilită prin convenție pentru ca etichetarea să fie posibilă. Nu este ceea ce ai tu nevoie: aceasta depinde de talia ta, vârsta, activitatea și sănătatea ta.\n\nȘi pentru că valoarea provine dintr-un calcul, nu dintr-o măsurătoare. Două produse cu aceeași energie pot avea compoziții foarte diferite.",
+  "what_is": "Energia este cantitatea de energie pe care o furnizează un aliment. Etichetele nutriționale o exprimă de obicei în kilojouli, kilocalorii sau ambele.",
+  "why_botia_title": "De ce BOTIA o semnalează",
+  "why_botia": "Valoarea energetică indică cantitatea totală declarată, dar nu modul în care această energie este distribuită între grăsimi, carbohidrați, proteine sau alte componente care o furnizează. BOTIA menține valoarea declarată separată de regulile de reglementare privind calculul și de dovezile folosite pentru a o interpreta.",
   "can_title": "BOTIA POATE",
-  "can_1": "Să citească ambele unități acolo unde sunt declarate și să păstreze baza: la 100 g, la 100 ml, la porție sau la pachet.",
-  "can_2": "Să arate referința care se aplică pe piața unde a fost etichetat produsul și să numească autoritatea care o publică.",
-  "can_3": "Să explice că valoarea este calculată din nutrienți cu factori ficși și să indice ce factori se aplică pe acea piață.",
+  "can_1": "Să citească valoarea energetică declarată pe eticheta nutrițională și să păstreze unitatea și baza acesteia.",
+  "can_2": "Să mențină kilojoulii și kilocaloriile separate atunci când ambele sunt declarate.",
+  "can_3": "Să lege valoarea declarată de informațiile de reglementare aplicabile și de dovezile documentate, atunci când este relevant.",
   "cannot_title": "BOTIA NU POATE",
-  "cannot_1": "Să îți spună ce procent din propriile nevoi reprezintă acest lucru. Valoarea de referință este o convenție de etichetare pentru populații adulte, nu o nevoie individuală.",
-  "cannot_2": "Să spună dacă energia unui produs este mare sau mică. Aceasta depinde de ce este produsul, cât se mănâncă și ce altceva se mănâncă în acea zi.",
-  "cannot_3": "Să deducă compoziția din energie. Două produse cu aceeași valoare pot să o împartă foarte diferit între grăsimi, carbohidrați și proteină.",
-  "cannot_4": "Să convertească între unități acolo unde piața nu o cere, fără a marca conversia ca derivată.",
+  "cannot_1": "Să determine compoziția nutrițională completă a unui aliment doar din valoarea sa energetică.",
+  "cannot_2": "Să determine necesarul de energie al unei persoane din eticheta nutrițională.",
+  "cannot_3": "Să trateze o valoare energetică nedeclarată ca zero.",
   "sources_title": "Surse",
   "back-button": "← Înapoi",
   "title": "Energie",
-  "description": "Energia dintr-un aliment este ceea ce oferă atunci când este metabolizat. Poate fi exprimată în kilojouli și kilocalorii, iar ambele unități măsoară același lucru: un kilojoule este de aproximativ 0,239 kilocalorii.",
+  "description": "Energia este cantitatea de energie pe care o furnizează un aliment. Etichetele nutriționale o exprimă de obicei în kilojouli, kilocalorii sau ambele.",
   "layers": [],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    },
-    {
-      "label": "China NHC — GB 28050-2025 Q&A on prepackaged-food nutrition labelling",
-      "url": "https://www.nhc.gov.cn/sps/c100087/202509/470fa4ff5de14dd38619223cce9da4e7.shtml"
-    }
-  ]
+  "sources": []
 }
