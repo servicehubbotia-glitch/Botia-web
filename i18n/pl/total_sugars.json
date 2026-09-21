@@ -2,41 +2,26 @@
   "name": "Cukry ogółem",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "cukry",
   "what_is_title": "Co to jest",
-  "what_is": "Cukry ogółem obejmują każdy cukier w produkcie, niezależnie od jego pochodzenia. Te dodane i te już obecne w składnikach.\n\nDlatego jogurt naturalny bez dodanego cukru deklaruje cukry: laktoza z mleka się liczy. A świeżo wyciskany sok bez niczego innego również: fruktoza z owoców liczy się tak samo.\n\nTo nie czyni ich równoważnymi z napojem gazowanym o tej samej wartości. Ale sama etykieta ich nie rozróżnia.\n\nIch rozdzielenie wymaga innych pól. Cukry dodane są deklarowane w Stanach Zjednoczonych, Brazylii, Indiach i na kilku innych rynkach. Cukry wolne to koncepcja WHO, której niektóre kraje używają w ostrzeżeniach na przedniej stronie opakowania. Żadnego z nich nie można obliczyć z sumy.",
+  "what_is": "Cukry ogółem to łączna ilość cukrów obecnych w żywności, w tym cukrów naturalnie występujących w składnikach oraz cukrów dodanych podczas przetwarzania.",
   "why_botia_title": "Dlaczego BOTIA to oznacza",
-  "why_botia": "BOTIA oznacza cukry ogółem, ponieważ to pole powoduje najwięcej nieporozumień, i to w obie strony.\n\nNiektórzy widzą cukry w jogurcie naturalnym i zakładają, że coś dodano. Inni porównują dwa produkty o tej samej wartości, nie wiedząc, że w jednym pochodzi z owoców, a w drugim z syropu.\n\nBOTIA pokazuje wartość, mówi, co obejmuje, i linkuje do wykazu składników, gdzie można zobaczyć, skąd pochodzi.",
+  "why_botia": "Wartość cukrów ogółem nie pokazuje, skąd pochodzą te cukry. BOTIA utrzymuje zadeklarowaną sumę oddzielnie od cukrów dodanych, cukrów wolnych oraz składników, które mogą się do niej przyczyniać.",
   "can_title": "BOTIA MOŻE",
-  "can_1": "Odczytać zadeklarowaną wartość i zachować jej jednostkę oraz podstawę.",
-  "can_2": "Pokazać cukry dodane lub wolne tam, gdzie rynek je deklaruje, jako osobne pola.",
-  "can_3": "Zidentyfikować cukry dodane i składniki, które je wnoszą, gdy są zadeklarowane w wykazie składników, takie jak sacharoza, dekstroza, syropy, miód lub koncentraty soku.",
-  "can_4": "Wyjaśnić, że wartość obejmuje cukry naturalnie obecne w składnikach.",
+  "can_1": "Odczytać zadeklarowaną wartość cukrów ogółem na etykiecie wartości odżywczej i zachować jej jednostkę oraz podstawę.",
+  "can_2": "Utrzymać cukry ogółem oddzielnie od cukrów dodanych i innych pól związanych z cukrami, gdy są zadeklarowane.",
+  "can_3": "Powiązać zadeklarowaną wartość z obowiązującymi informacjami regulacyjnymi i udokumentowanymi dowodami.",
   "cannot_title": "BOTIA NIE MOŻE",
-  "cannot_1": "Powiedzieć, jaki procent twoich własnych potrzeb reprezentuje ta wartość.",
-  "cannot_2": "Obliczyć cukry dodane, odejmując cokolwiek od sumy. Tego nie można wywnioskować: to pole, które albo jest zadeklarowane, albo nie.",
-  "cannot_3": "Obliczyć cukry wolne z sumy lub z cukrów dodanych. To trzy odrębne koncepcje.",
-  "cannot_4": "Powiedzieć, ile pochodzi z każdego składnika. Etykieta deklaruje sumę.",
-  "cannot_5": "Traktować niezadeklarowanej wartości jako zera.",
+  "cannot_1": "Określić, ile cukrów ogółem dodano podczas przetwarzania, chyba że etykieta deklaruje to osobno.",
+  "cannot_2": "Obliczyć cukrów wolnych na podstawie wartości cukrów ogółem.",
+  "cannot_3": "Określić, ile cukru pochodzi z każdego pojedynczego składnika.",
+  "cannot_4": "Traktować niezadeklarowanej wartości cukrów ogółem jako zera.",
   "sources_title": "Źródła",
   "back-button": "← Wstecz",
   "title": "Cukry ogółem",
-  "description": "Cukry ogółem obejmują każdy cukier w produkcie, niezależnie od jego pochodzenia. Te dodane i te już obecne w składnikach.",
+  "description": "Cukry ogółem to łączna ilość cukrów obecnych w żywności, w tym cukrów naturalnie występujących w składnikach oraz cukrów dodanych podczas przetwarzania.",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }

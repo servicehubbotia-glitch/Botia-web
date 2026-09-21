@@ -2,41 +2,26 @@
   "name": "Sucres totaux",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "sucres",
   "what_is_title": "Ce que c'est",
-  "what_is": "Les sucres totaux couvrent tous les sucres du produit, quelle que soit leur origine. Ceux qui ont été ajoutés et ceux déjà présents dans les ingrédients.\n\nC'est pourquoi un yaourt nature sans sucre ajouté déclare des sucres : le lactose du lait compte. Et un jus fraîchement pressé sans rien d'autre aussi : le fructose du fruit compte de la même manière.\n\nCela ne les rend pas équivalents à une boisson sucrée ayant la même valeur. Mais l'étiquette seule ne les distingue pas.\n\nLes séparer exige d'autres champs. Les sucres ajoutés sont déclarés aux États-Unis, au Brésil, en Inde et sur quelques autres marchés. Les sucres libres sont un concept de l'OMS que certains pays utilisent dans les avertissements du logo nutritionnel en face avant. Ni l'un ni l'autre ne peut être calculé à partir du total.",
+  "what_is": "Les sucres totaux correspondent à la quantité combinée de sucres présents dans un aliment, y compris les sucres naturellement présents dans les ingrédients et ceux ajoutés lors de la transformation.",
   "why_botia_title": "Pourquoi BOTIA le signale",
-  "why_botia": "BOTIA signale les sucres totaux parce que c'est le champ qui provoque le plus de malentendus, et dans les deux sens.\n\nCertaines personnes voient des sucres dans un yaourt nature et supposent que quelque chose a été ajouté. D'autres comparent deux produits ayant la même valeur sans savoir que dans l'un elle vient du fruit et dans l'autre d'un sirop.\n\nBOTIA montre la valeur, dit ce qu'elle inclut et renvoie à la liste des ingrédients, où l'on peut voir d'où elle vient.",
+  "why_botia": "La valeur des sucres totaux n'indique pas d'où viennent ces sucres. BOTIA maintient le total déclaré séparé des sucres ajoutés, des sucres libres et des ingrédients qui peuvent y contribuer.",
   "can_title": "BOTIA PEUT",
-  "can_1": "Lire la valeur déclarée et conserver son unité et sa base.",
-  "can_2": "Afficher les sucres ajoutés ou libres là où le marché les déclare, comme champs distincts.",
-  "can_3": "Identifier les sucres ajoutés et les ingrédients qui en apportent lorsqu'ils sont déclarés dans la liste d'ingrédients, tels que le saccharose, le dextrose, les sirops, le miel ou les concentrés de jus.",
-  "can_4": "Expliquer que la valeur inclut les sucres naturellement présents dans les ingrédients.",
+  "can_1": "Lire la valeur des sucres totaux déclarée sur l'étiquette nutritionnelle et préserver son unité et sa base.",
+  "can_2": "Maintenir les sucres totaux séparés des sucres ajoutés et des autres champs liés aux sucres lorsqu'ils sont déclarés.",
+  "can_3": "Relier la valeur déclarée aux informations réglementaires applicables et aux preuves documentées.",
   "cannot_title": "BOTIA NE PEUT PAS",
-  "cannot_1": "Vous dire quel pourcentage de vos propres besoins cette valeur représente.",
-  "cannot_2": "Calculer les sucres ajoutés en soustrayant quoi que ce soit du total. Cela ne peut pas être déduit : c'est un champ qui est soit déclaré, soit non.",
-  "cannot_3": "Calculer les sucres libres à partir du total ou des sucres ajoutés. Ce sont trois concepts distincts.",
-  "cannot_4": "Dire quelle quantité provient de chaque ingrédient. L'étiquette déclare le total.",
-  "cannot_5": "Traiter une valeur non déclarée comme zéro.",
+  "cannot_1": "Déterminer quelle part des sucres totaux a été ajoutée lors de la transformation, sauf si l'étiquette le déclare séparément.",
+  "cannot_2": "Calculer les sucres libres à partir de la valeur des sucres totaux.",
+  "cannot_3": "Déterminer la quantité de sucre provenant de chaque ingrédient individuel.",
+  "cannot_4": "Traiter une valeur de sucres totaux non déclarée comme zéro.",
   "sources_title": "Sources",
   "back-button": "← Retour",
   "title": "Sucres totaux",
-  "description": "Les sucres totaux couvrent tous les sucres du produit, quelle que soit leur origine. Ceux qui ont été ajoutés et ceux déjà présents dans les ingrédients.",
+  "description": "Les sucres totaux correspondent à la quantité combinée de sucres présents dans un aliment, y compris les sucres naturellement présents dans les ingrédients et ceux ajoutés lors de la transformation.",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }

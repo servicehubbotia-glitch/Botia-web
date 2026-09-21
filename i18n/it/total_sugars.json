@@ -2,41 +2,26 @@
   "name": "Zuccheri totali",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "zuccheri",
   "what_is_title": "Cos'è",
-  "what_is": "Gli zuccheri totali comprendono ogni zucchero del prodotto, da qualunque origine provenga. Quelli aggiunti e quelli già presenti negli ingredienti.\n\nEcco perché uno yogurt naturale senza zuccheri aggiunti dichiara zuccheri: il lattosio del latte conta. E anche un succo appena spremuto senza altro: il fruttosio della frutta conta allo stesso modo.\n\nQuesto non li rende equivalenti a una bibita con lo stesso valore. Ma l'etichetta da sola non li distingue.\n\nSepararli richiede altri campi. Gli zuccheri aggiunti sono dichiarati negli Stati Uniti, in Brasile, in India e in alcuni altri mercati. Gli zuccheri liberi sono un concetto dell'OMS che alcuni Paesi usano negli avvisi del logo nutrizionale sul fronte della confezione. Nessuno dei due può essere calcolato dal totale.",
+  "what_is": "Gli zuccheri totali sono la quantità combinata di zuccheri presenti in un alimento, compresi gli zuccheri naturalmente presenti negli ingredienti e quelli aggiunti durante la trasformazione.",
   "why_botia_title": "Perché BOTIA lo segnala",
-  "why_botia": "BOTIA segnala gli zuccheri totali perché è il campo che causa più fraintendimenti, e in entrambe le direzioni.\n\nAlcune persone vedono zuccheri in uno yogurt naturale e presumono che sia stato aggiunto qualcosa. Altre confrontano due prodotti con lo stesso valore senza sapere che in uno proviene dalla frutta e nell'altro da uno sciroppo.\n\nBOTIA mostra il valore, dice cosa include e rinvia all'elenco degli ingredienti, dove si può vedere da dove proviene.",
+  "why_botia": "Il valore degli zuccheri totali non mostra da dove provengono questi zuccheri. BOTIA mantiene il totale dichiarato separato dagli zuccheri aggiunti, dagli zuccheri liberi e dagli ingredienti che possono contribuirvi.",
   "can_title": "BOTIA PUÒ",
-  "can_1": "Leggere il valore dichiarato e conservarne l'unità e la base.",
-  "can_2": "Mostrare gli zuccheri aggiunti o liberi dove il mercato li dichiara, come campi separati.",
-  "can_3": "Identificare gli zuccheri aggiunti e gli ingredienti che li apportano quando sono dichiarati nell'elenco degli ingredienti, come saccarosio, destrosio, sciroppi, miele o concentrati di succo.",
-  "can_4": "Spiegare che il valore include gli zuccheri naturalmente presenti negli ingredienti.",
+  "can_1": "Leggere il valore degli zuccheri totali dichiarato sull'etichetta nutrizionale e preservarne l'unità e la base.",
+  "can_2": "Mantenere gli zuccheri totali separati dagli zuccheri aggiunti e da altri campi legati agli zuccheri quando sono dichiarati.",
+  "can_3": "Collegare il valore dichiarato alle informazioni normative applicabili e alle prove documentate.",
   "cannot_title": "BOTIA NON PUÒ",
-  "cannot_1": "Dirti quale percentuale dei tuoi fabbisogni rappresenta questo valore.",
-  "cannot_2": "Calcolare gli zuccheri aggiunti sottraendo qualsiasi cosa dal totale. Non può essere dedotto: è un campo che o è dichiarato o non lo è.",
-  "cannot_3": "Calcolare gli zuccheri liberi dal totale o dagli zuccheri aggiunti. Sono tre concetti distinti.",
-  "cannot_4": "Dire quanto proviene da ciascun ingrediente. L'etichetta dichiara il totale.",
-  "cannot_5": "Trattare un valore non dichiarato come zero.",
+  "cannot_1": "Determinare quanto degli zuccheri totali sia stato aggiunto durante la trasformazione, a meno che l'etichetta non lo dichiari separatamente.",
+  "cannot_2": "Calcolare gli zuccheri liberi dal valore degli zuccheri totali.",
+  "cannot_3": "Determinare quanto zucchero provenga da ciascun ingrediente individuale.",
+  "cannot_4": "Trattare un valore di zuccheri totali non dichiarato come zero.",
   "sources_title": "Fonti",
   "back-button": "← Indietro",
   "title": "Zuccheri totali",
-  "description": "Gli zuccheri totali comprendono ogni zucchero del prodotto, da qualunque origine provenga. Quelli aggiunti e quelli già presenti negli ingredienti.",
+  "description": "Gli zuccheri totali sono la quantità combinata di zuccheri presenti in un alimento, compresi gli zuccheri naturalmente presenti negli ingredienti e quelli aggiunti durante la trasformazione.",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }

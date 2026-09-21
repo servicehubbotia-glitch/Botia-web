@@ -2,41 +2,26 @@
   "name": "Total gula",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "gula",
   "what_is_title": "Apa itu",
-  "what_is": "Total gula mencakup setiap gula dalam produk, dari mana pun asalnya. Yang ditambahkan dan yang sudah ada dalam bahan.\n\nItulah sebabnya yoghurt tawar tanpa gula tambahan mendeklarasikan gula: laktosa dalam susu dihitung. Dan jus yang baru diperas tanpa apa pun juga: fruktosa dalam buah dihitung sama.\n\nItu tidak menjadikannya setara dengan minuman bersoda dengan angka yang sama. Tetapi label saja tidak membedakannya.\n\nMemisahkannya memerlukan bidang lain. Gula tambahan dideklarasikan di Amerika Serikat, Brasil, India dan beberapa pasar lain. Gula bebas adalah konsep WHO yang digunakan beberapa negara dalam peringatan di bagian depan kemasan. Keduanya tidak dapat dihitung dari total.",
+  "what_is": "Total gula adalah jumlah gabungan gula yang ada dalam makanan, termasuk gula yang secara alami ada dalam bahan dan gula yang ditambahkan selama pengolahan.",
   "why_botia_title": "Mengapa BOTIA menandainya",
-  "why_botia": "BOTIA menandai total gula karena ini adalah bidang yang menyebabkan paling banyak kesalahpahaman, dan di kedua arah.\n\nBeberapa orang melihat gula dalam yoghurt tawar dan mengira ada yang ditambahkan. Yang lain membandingkan dua produk dengan angka yang sama tanpa mengetahui bahwa pada satu berasal dari buah dan pada yang lain dari sirup.\n\nBOTIA menampilkan angkanya, menyatakan apa yang dicakupnya, dan menautkan ke daftar bahan, tempat Anda dapat melihat dari mana asalnya.",
+  "why_botia": "Angka total gula tidak menunjukkan dari mana gula itu berasal. BOTIA memisahkan total yang dideklarasikan dari gula tambahan, gula bebas dan bahan-bahan yang mungkin menyumbangnya.",
   "can_title": "BOTIA DAPAT",
-  "can_1": "Membaca nilai yang dideklarasikan dan mempertahankan satuan dan basisnya.",
-  "can_2": "Menampilkan gula tambahan atau gula bebas di tempat pasar mendeklarasikannya, sebagai bidang terpisah.",
-  "can_3": "Mengidentifikasi gula tambahan dan bahan yang menyumbangkannya ketika dideklarasikan dalam daftar bahan, seperti sukrosa, dekstrosa, sirup, madu atau konsentrat jus.",
-  "can_4": "Menjelaskan bahwa angka tersebut mencakup gula yang secara alami ada dalam bahan.",
+  "can_1": "Membaca nilai total gula yang dideklarasikan pada label gizi dan mempertahankan satuan dan basisnya.",
+  "can_2": "Menjaga total gula terpisah dari gula tambahan dan bidang lain yang terkait dengan gula ketika dideklarasikan.",
+  "can_3": "Menghubungkan nilai yang dideklarasikan dengan informasi regulasi yang berlaku dan bukti yang terdokumentasi.",
   "cannot_title": "BOTIA TIDAK DAPAT",
-  "cannot_1": "Memberitahu Anda berapa persen dari kebutuhan Anda sendiri yang diwakili nilai ini.",
-  "cannot_2": "Menghitung gula tambahan dengan mengurangkan apa pun dari total. Tidak dapat disimpulkan: ini adalah bidang yang entah dideklarasikan atau tidak.",
-  "cannot_3": "Menghitung gula bebas dari total atau dari gula tambahan. Itu adalah tiga konsep yang terpisah.",
-  "cannot_4": "Menyebutkan berapa banyak yang berasal dari setiap bahan. Label mendeklarasikan totalnya.",
-  "cannot_5": "Memperlakukan nilai yang tidak dideklarasikan sebagai nol.",
+  "cannot_1": "Menentukan berapa banyak dari total gula yang ditambahkan selama pengolahan kecuali label mendeklarasikannya secara terpisah.",
+  "cannot_2": "Menghitung gula bebas dari nilai total gula.",
+  "cannot_3": "Menentukan berapa banyak gula berasal dari setiap bahan individu.",
+  "cannot_4": "Memperlakukan nilai total gula yang tidak dideklarasikan sebagai nol.",
   "sources_title": "Sumber",
   "back-button": "← Kembali",
   "title": "Total gula",
-  "description": "Total gula mencakup setiap gula dalam produk, dari mana pun asalnya. Yang ditambahkan dan yang sudah ada dalam bahan.",
+  "description": "Total gula adalah jumlah gabungan gula yang ada dalam makanan, termasuk gula yang secara alami ada dalam bahan dan gula yang ditambahkan selama pengolahan.",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }

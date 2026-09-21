@@ -2,41 +2,26 @@
   "name": "Zucker gesamt",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "Zucker",
   "what_is_title": "Was es ist",
-  "what_is": "Zucker gesamt umfasst jeden Zucker im Produkt, woher er auch kommt. Die zugesetzten und die bereits in den Zutaten vorhandenen.\n\nDeshalb deklariert ein Naturjoghurt ohne zugesetzten Zucker Zucker: Die Laktose der Milch zählt. Und ein frisch gepresster Saft ohne alles andere ebenso: Die Fruktose der Frucht zählt gleichermaßen.\n\nDas macht sie nicht gleichwertig mit einem Softdrink mit derselben Zahl. Aber das Etikett allein unterscheidet sie nicht.\n\nIhre Trennung erfordert andere Felder. Zugesetzte Zucker werden in den Vereinigten Staaten, in Brasilien, in Indien und in einigen anderen Märkten angegeben. Freie Zucker sind ein WHO-Konzept, das einige Länder in den Warnhinweisen der Nährwertkennzeichnung auf der Packungsvorderseite verwenden. Keines von beiden lässt sich aus der Gesamtsumme berechnen.",
+  "what_is": "Zucker gesamt ist die kombinierte Menge der in einem Lebensmittel vorhandenen Zucker, einschließlich der von Natur aus in den Zutaten vorhandenen und der bei der Verarbeitung zugesetzten Zucker.",
   "why_botia_title": "Warum BOTIA es markiert",
-  "why_botia": "BOTIA markiert den Gesamtzucker, weil es das Feld ist, das die meisten Missverständnisse verursacht, und in beide Richtungen.\n\nManche sehen Zucker in einem Naturjoghurt und nehmen an, es sei etwas zugesetzt worden. Andere vergleichen zwei Produkte mit derselben Zahl, ohne zu wissen, dass sie in dem einen aus Obst und in dem anderen aus einem Sirup stammt.\n\nBOTIA zeigt die Zahl, sagt, was sie umfasst, und verlinkt die Zutatenliste, in der man sehen kann, woher sie kommt.",
+  "why_botia": "Die Gesamtzuckerzahl zeigt nicht, woher diese Zucker stammen. BOTIA hält die deklarierte Gesamtsumme getrennt von zugesetzten Zuckern, freien Zuckern und den Zutaten, die dazu beitragen können.",
   "can_title": "BOTIA KANN",
-  "can_1": "Den angegebenen Wert lesen und seine Einheit und seine Basis beibehalten.",
-  "can_2": "Zugesetzte oder freie Zucker dort anzeigen, wo der Markt sie als separate Felder angibt.",
-  "can_3": "Zugesetzte Zucker und Zutaten, die sie beitragen, identifizieren, wenn sie in der Zutatenliste angegeben sind, wie Saccharose, Dextrose, Sirupe, Honig oder Fruchtsaftkonzentrate.",
-  "can_4": "Erklären, dass die Zahl die von Natur aus in den Zutaten vorhandenen Zucker einschließt.",
+  "can_1": "Den auf dem Nährwertetikett deklarierten Gesamtzuckerwert lesen und seine Einheit und Basis beibehalten.",
+  "can_2": "Zucker gesamt von zugesetzten Zuckern und anderen zuckerbezogenen Feldern getrennt halten, wenn sie deklariert werden.",
+  "can_3": "Den deklarierten Wert mit den geltenden regulatorischen Informationen und dokumentierten Belegen verknüpfen.",
   "cannot_title": "BOTIA KANN NICHT",
-  "cannot_1": "Dir sagen, welchen Prozentsatz deines eigenen Bedarfs dieser Wert darstellt.",
-  "cannot_2": "Zugesetzte Zucker berechnen, indem irgendetwas von der Gesamtsumme abgezogen wird. Das lässt sich nicht ableiten: Es ist ein Feld, das entweder angegeben wird oder nicht.",
-  "cannot_3": "Freie Zucker aus der Gesamtsumme oder aus zugesetzten Zuckern berechnen. Das sind drei getrennte Konzepte.",
-  "cannot_4": "Sagen, wie viel aus welcher Zutat stammt. Das Etikett gibt die Gesamtsumme an.",
-  "cannot_5": "Einen nicht angegebenen Wert als Null behandeln.",
+  "cannot_1": "Bestimmen, wie viel des Gesamtzuckers bei der Verarbeitung zugesetzt wurde, es sei denn, das Etikett gibt dies getrennt an.",
+  "cannot_2": "Freie Zucker aus dem Gesamtzuckerwert berechnen.",
+  "cannot_3": "Bestimmen, wie viel Zucker aus jeder einzelnen Zutat stammt.",
+  "cannot_4": "Einen nicht deklarierten Gesamtzuckerwert als Null behandeln.",
   "sources_title": "Quellen",
   "back-button": "← Zurück",
   "title": "Zucker gesamt",
-  "description": "Zucker gesamt umfasst jeden Zucker im Produkt, woher er auch kommt. Die zugesetzten und die bereits in den Zutaten vorhandenen.",
+  "description": "Zucker gesamt ist die kombinierte Menge der in einem Lebensmittel vorhandenen Zucker, einschließlich der von Natur aus in den Zutaten vorhandenen und der bei der Verarbeitung zugesetzten Zucker.",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }

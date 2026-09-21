@@ -2,41 +2,26 @@
   "name": "Toplam şeker",
   "e_code": "",
   "module_icon": "Sugar.png",
-  "aliases": "",
+  "aliases": "şekerler",
   "what_is_title": "Nedir",
-  "what_is": "Toplam şeker, üründeki her şekeri kapsar, nereden gelirse gelsin. Eklenenler ve içeriklerde zaten bulunanlar.\n\nBu yüzden ilave şekersiz sade yoğurt şeker beyan eder: sütteki laktoz sayılır. Ve başka hiçbir şey içermeyen taze sıkılmış meyve suyu da: meyvedeki fruktoz da aynı şekilde sayılır.\n\nBu, onları aynı rakama sahip bir gazlı içecekle eşdeğer yapmaz. Ancak etiket tek başına onları ayırt etmez.\n\nOnları ayırmak başka alanlar gerektirir. İlave şekerler Amerika Birleşik Devletleri, Brezilya, Hindistan ve bazı diğer pazarlarda beyan edilir. Serbest şekerler, bazı ülkelerin ambalaj önü uyarılarında kullandığı bir WHO kavramıdır. İkisi de toplamdan hesaplanamaz.",
+  "what_is": "Toplam şeker, bir gıdada bulunan şekerlerin birleşik miktarıdır; içeriklerde doğal olarak bulunan şekerler ve işleme sırasında eklenen şekerler dahil.",
   "why_botia_title": "BOTIA neden işaretler",
-  "why_botia": "BOTIA toplam şekeri işaretler çünkü en çok yanlış anlamaya yol açan alandır ve her iki yönde de.\n\nBazı insanlar sade yoğurtta şeker görüp bir şey eklenmiş olduğunu varsayar. Diğerleri aynı rakama sahip iki ürünü karşılaştırır, birinde meyveden diğerinde şuruptan geldiğini bilmeden.\n\nBOTIA rakamı gösterir, neyi içerdiğini söyler ve nereden geldiğinin görülebileceği içerik listesine bağlantı verir.",
+  "why_botia": "Toplam şeker rakamı bu şekerlerin nereden geldiğini göstermez. BOTIA beyan edilen toplamı, ilave şekerlerden, serbest şekerlerden ve ona katkıda bulunabilecek içeriklerden ayrı tutar.",
   "can_title": "BOTIA YAPABİLİR",
-  "can_1": "Beyan edilen değeri okumak ve birimini ve temelini korumak.",
-  "can_2": "Pazarın beyan ettiği yerlerde ilave veya serbest şekerleri ayrı alanlar olarak göstermek.",
-  "can_3": "İçerik listesinde beyan edildiklerinde ilave şekerleri ve bunları sağlayan içerikleri belirlemek: sakaroz, dekstroz, şuruplar, bal veya meyve suyu konsantreleri gibi.",
-  "can_4": "Rakamın içeriklerde doğal olarak bulunan şekerleri kapsadığını açıklamak.",
+  "can_1": "Beslenme etiketinde beyan edilen toplam şeker değerini okumak ve birimini ve temelini korumak.",
+  "can_2": "Beyan edildiklerinde toplam şekeri ilave şekerlerden ve diğer şekerle ilgili alanlardan ayrı tutmak.",
+  "can_3": "Beyan edilen değeri geçerli düzenleyici bilgilerle ve belgelenmiş kanıtlarla ilişkilendirmek.",
   "cannot_title": "BOTIA YAPAMAZ",
-  "cannot_1": "Bu değerin kendi ihtiyaçlarının yüzde kaçını temsil ettiğini söylemek.",
-  "cannot_2": "Toplamdan herhangi bir şey çıkararak ilave şekerleri hesaplamak. Çıkarılamaz: ya beyan edilen ya da edilmeyen bir alandır.",
-  "cannot_3": "Serbest şekerleri toplamdan veya ilave şekerlerden hesaplamak. Bunlar üç ayrı kavramdır.",
-  "cannot_4": "Her bir içerikten ne kadar geldiğini söylemek. Etiket toplamı beyan eder.",
-  "cannot_5": "Beyan edilmemiş bir değeri sıfır olarak ele almak.",
+  "cannot_1": "Etiket bunu ayrı olarak beyan etmedikçe toplam şekerin ne kadarının işleme sırasında eklendiğini belirlemek.",
+  "cannot_2": "Toplam şeker değerinden serbest şekerleri hesaplamak.",
+  "cannot_3": "Her bir içerikten ne kadar şeker geldiğini belirlemek.",
+  "cannot_4": "Beyan edilmemiş bir toplam şeker değerini sıfır olarak ele almak.",
   "sources_title": "Kaynaklar",
   "back-button": "← Geri",
   "title": "Toplam şeker",
-  "description": "Toplam şeker, üründeki her şekeri kapsar, nereden gelirse gelsin. Eklenenler ve içeriklerde zaten bulunanlar.",
+  "description": "Toplam şeker, bir gıdada bulunan şekerlerin birleşik miktarıdır; içeriklerde doğal olarak bulunan şekerler ve işleme sırasında eklenen şekerler dahil.",
   "layers": [
     "sugar"
   ],
-  "sources": [
-    {
-      "label": "European Union — Regulation (EU) No 1169/2011, consolidated 1 April 2025",
-      "url": "https://eur-lex.europa.eu/eli/reg/2011/1169/2025-04-01/eng"
-    },
-    {
-      "label": "US eCFR — 21 CFR 101.9 Nutrition labeling of food",
-      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
-    },
-    {
-      "label": "WHO — Guideline: Sugars intake for adults and children (2015)",
-      "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
-  ]
+  "sources": []
 }
