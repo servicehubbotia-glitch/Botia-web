@@ -2,38 +2,24 @@
   "name": "Sodium",
   "e_code": "",
   "module_icon": "salt_sodium.png",
-  "aliases": "sodium, teneur en sodium",
+  "aliases": "teneur en sodium",
   "what_is_title": "Ce que c'est",
-  "what_is": "Le sodium est un minéral présent naturellement dans les aliments et également ajouté par le sel et par de nombreux autres ingrédients : agents levants, conservateurs, exhausteurs de goût, stabilisants et régulateurs d'acidité.\n\nLa plupart des marchés en dehors de l'Union européenne déclarent le sodium plutôt que le sel. Les deux décrivent le même contenu sous-jacent, mais ce sont des champs différents avec des unités différentes et des valeurs de référence différentes.",
+  "what_is": "Le sodium est un minéral naturellement présent dans de nombreux aliments et également introduit par le sel et d'autres ingrédients contenant du sodium.",
   "why_botia_title": "Pourquoi BOTIA le signale",
-  "why_botia": "BOTIA signale le sodium parce que c'est là que se cache réellement la majeure partie du sel dans un aliment transformé, et parce que comparer une valeur de sodium avec une valeur de sel sans convertir est une erreur qui change le nombre d'un facteur deux et demi.\n\nCela compte aussi parce que le sodium n'est pas seulement du sel. Le bicarbonate de sodium, le glutamate monosodique, le nitrite de sodium, les phosphates de sodium et le benzoate de sodium contribuent tous à la valeur déclarée même lorsqu'aucun sel n'a été ajouté.",
+  "why_botia": "Le sodium et le sel sont étroitement liés, mais ce ne sont pas les mêmes champs déclarés. BOTIA conserve ce que l'étiquette déclare réellement et maintient cette valeur séparée des règles réglementaires, des conversions et des preuves utilisées pour l'interpréter.",
   "can_title": "BOTIA PEUT",
-  "can_1": "Lire la valeur de sodium déclarée et conserver son unité et sa base. Le sodium est généralement déclaré en milligrammes, tandis que le sel est déclaré en grammes.",
-  "can_2": "Afficher la référence qui s'applique sur le marché où le produit a été étiqueté et nommer l'autorité qui la publie.",
-  "can_3": "Identifier dans la liste les ingrédients qui contiennent du sodium, afin que la valeur déclarée puisse être comprise dans le contexte de la formulation.",
-  "can_4": "Présenter l'objectif de population de l'OMS comme contexte, clairement identifié comme une recommandation de population et non comme un pourcentage de ce que ce produit apporte à un individu.",
+  "can_1": "Lire la valeur de sodium déclarée sur l'étiquette nutritionnelle et préserver son unité et sa base.",
+  "can_2": "Maintenir une valeur de sodium déclarée séparée d'une valeur de sel déclarée.",
+  "can_3": "Relier la valeur déclarée aux informations réglementaires applicables et aux preuves documentées.",
   "cannot_title": "BOTIA NE PEUT PAS",
-  "cannot_1": "Vous dire quel pourcentage de vos propres besoins représente cette valeur. Les repères de consommation sont fixés pour des populations adultes par chaque autorité.",
-  "cannot_2": "Déduire une valeur de sodium d'une valeur de sel déclarée, ou inversement, sauf si le marché définit cette conversion. Lorsqu'elle est appliquée, BOTIA la montre comme dérivée.",
-  "cannot_3": "Déterminer quelle part du sodium provient du sel et quelle part provient d'autres ingrédients. Cette répartition n'est déclarée sur aucune étiquette.",
+  "cannot_1": "Déterminer quelle part du sodium provient du sel et quelle part provient d'autres ingrédients contenant du sodium.",
+  "cannot_2": "Traiter le sodium et le sel comme interchangeables sans appliquer et identifier la conversion appropriée.",
+  "cannot_3": "Déterminer les besoins en sodium d'une personne à partir de l'étiquette nutritionnelle.",
   "cannot_4": "Traiter une valeur de sodium non déclarée comme zéro.",
   "sources_title": "Sources",
   "back-button": "← Retour",
   "title": "Sodium",
-  "description": "Le sodium est un minéral présent naturellement dans les aliments et également ajouté par le sel et par de nombreux autres ingrédients : agents levants, conservateurs, exhausteurs de goût, stabilisants et régulateurs d'acidité.",
+  "description": "Le sodium est un minéral naturellement présent dans de nombreux aliments et également introduit par le sel et d'autres ingrédients contenant du sodium.",
   "layers": [],
-  "sources": [
-    {
-      "label": "WHO — Sodium reduction",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    }
-  ]
+  "sources": []
 }

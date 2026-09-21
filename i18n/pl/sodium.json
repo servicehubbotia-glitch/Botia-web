@@ -2,38 +2,24 @@
   "name": "Sód",
   "e_code": "",
   "module_icon": "salt_sodium.png",
-  "aliases": "sód, zawartość sodu",
+  "aliases": "zawartość sodu",
   "what_is_title": "Co to jest",
-  "what_is": "Sód to minerał występujący naturalnie w żywności, dodawany również poprzez sól oraz wiele innych składników: spulchniacze, konserwanty, wzmacniacze smaku, stabilizatory i regulatory kwasowości.\n\nWiększość rynków poza Unią Europejską deklaruje sód, a nie sól. Oba opisują tę samą zawartość podstawową, ale są to różne pola z różnymi jednostkami i różnymi wartościami referencyjnymi.",
+  "what_is": "Sód to minerał naturalnie występujący w wielu produktach spożywczych, wprowadzany także przez sól i inne składniki zawierające sód.",
   "why_botia_title": "Dlaczego BOTIA to oznacza",
-  "why_botia": "BOTIA oznacza sód, ponieważ to tam w rzeczywistości ukrywa się większość soli w żywności przetworzonej, oraz ponieważ porównywanie wartości sodu z wartością soli bez przeliczenia to błąd, który zmienia liczbę o czynnik dwa i pół.\n\nMa to również znaczenie, ponieważ sód to nie tylko sól. Wodorowęglan sodu, glutaminian monosodowy, azotyn sodu, fosforany sodu i benzoesan sodu — wszystkie przyczyniają się do zadeklarowanej wartości, nawet gdy nie dodano soli.",
+  "why_botia": "Sód i sól są ściśle powiązane, ale nie są tym samym zadeklarowanym polem. BOTIA zachowuje to, co etykieta faktycznie deklaruje, i utrzymuje tę wartość oddzielnie od przepisów regulacyjnych, przeliczeń i dowodów używanych do jej interpretacji.",
   "can_title": "BOTIA MOŻE",
-  "can_1": "Odczytać zadeklarowaną wartość sodu i zachować jej jednostkę oraz podstawę. Sód jest zwykle deklarowany w miligramach, natomiast sól w gramach.",
-  "can_2": "Pokazać odniesienie obowiązujące na rynku, na którym produkt został oznakowany, i wskazać organ, który je publikuje.",
-  "can_3": "Zidentyfikować na liście składniki zawierające sód, aby zadeklarowana wartość mogła być zrozumiana w kontekście receptury.",
-  "can_4": "Przedstawić cel populacyjny WHO jako kontekst, wyraźnie oznaczony jako wytyczna populacyjna, a nie jako procent tego, co ten produkt wnosi dla jednostki.",
+  "can_1": "Odczytać zadeklarowaną wartość sodu na etykiecie wartości odżywczej i zachować jej jednostkę oraz podstawę.",
+  "can_2": "Utrzymać zadeklarowaną wartość sodu oddzielnie od zadeklarowanej wartości soli.",
+  "can_3": "Powiązać zadeklarowaną wartość z obowiązującymi informacjami regulacyjnymi i udokumentowanymi dowodami.",
   "cannot_title": "BOTIA NIE MOŻE",
-  "cannot_1": "Powiedzieć, jaki procent twoich własnych potrzeb reprezentuje ta wartość. Referencyjne spożycie jest ustalane dla populacji dorosłych przez każdy organ.",
-  "cannot_2": "Wyprowadzić wartość sodu z zadeklarowanej wartości soli lub odwrotnie, chyba że rynek definiuje takie przeliczenie. Tam, gdzie jest ono stosowane, BOTIA pokazuje je jako pochodne.",
-  "cannot_3": "Określić, ile sodu pochodzi z soli, a ile z innych składników. Ten podział nie jest deklarowany na żadnej etykiecie.",
+  "cannot_1": "Określić, ile sodu pochodzi z soli, a ile z innych składników zawierających sód.",
+  "cannot_2": "Traktować sodu i soli jako wymiennych bez zastosowania i wskazania odpowiedniego przeliczenia.",
+  "cannot_3": "Określić zapotrzebowania danej osoby na sód na podstawie etykiety wartości odżywczej.",
   "cannot_4": "Traktować niezadeklarowanej wartości sodu jako zera.",
   "sources_title": "Źródła",
   "back-button": "← Wstecz",
   "title": "Sód",
-  "description": "Sód to minerał występujący naturalnie w żywności, dodawany również poprzez sól oraz wiele innych składników: spulchniacze, konserwanty, wzmacniacze smaku, stabilizatory i regulatory kwasowości.",
+  "description": "Sód to minerał naturalnie występujący w wielu produktach spożywczych, wprowadzany także przez sól i inne składniki zawierające sód.",
   "layers": [],
-  "sources": [
-    {
-      "label": "WHO — Sodium reduction",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    }
-  ]
+  "sources": []
 }

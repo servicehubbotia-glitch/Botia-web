@@ -2,38 +2,24 @@
   "name": "Sodium",
   "e_code": "",
   "module_icon": "salt_sodium.png",
-  "aliases": "sodium, sodium content",
+  "aliases": "sodium content",
   "what_is_title": "What it is",
-  "what_is": "Sodium is a mineral that occurs naturally in food and is also added through salt and through many other ingredients: raising agents, preservatives, flavour enhancers, stabilisers and acidity regulators.\n\nMost markets outside the European Union declare sodium rather than salt. The two describe the same underlying content, but they are different fields with different units and different reference values.",
+  "what_is": "Sodium is a mineral naturally present in many foods and also introduced through salt and other sodium-containing ingredients.",
   "why_botia_title": "Why BOTIA flags it",
-  "why_botia": "BOTIA flags sodium because it is where most of the salt in a processed food actually hides, and because comparing a sodium figure with a salt figure without converting is a mistake that changes the number by a factor of two and a half.\n\nIt also matters because sodium is not only salt. Sodium bicarbonate, monosodium glutamate, sodium nitrite, sodium phosphates and sodium benzoate all contribute to the declared figure even when no salt was added.",
+  "why_botia": "Sodium and salt are closely related but they are not the same declared field. BOTIA preserves what the label actually states and keeps that value separate from the regulatory rules, conversions and evidence used to interpret it.",
   "can_title": "BOTIA CAN",
-  "can_1": "Read the declared sodium value and keep its unit and its basis. Sodium is usually declared in milligrams, while salt is declared in grams.",
-  "can_2": "Show the reference that applies in the market where the product was labelled, and name the authority that publishes it.",
-  "can_3": "Identify ingredients in the list that contain sodium, so the declared figure can be understood in the context of the formulation.",
-  "can_4": "Present the WHO population target as context, clearly identified as a population guideline and not as a percentage of what this product contributes to an individual.",
+  "can_1": "Read the sodium value declared on the nutrition label and preserve its unit and basis.",
+  "can_2": "Keep a declared sodium value separate from a declared salt value.",
+  "can_3": "Connect the declared value with the applicable regulatory information and documented evidence.",
   "cannot_title": "BOTIA CANNOT",
-  "cannot_1": "Tell you what percentage of your own needs this value represents. Reference intakes are set for adult populations by each authority.",
-  "cannot_2": "Derive a sodium value from a declared salt value, or the other way round, unless the market defines that conversion. Where it is applied, BOTIA shows it as derived.",
-  "cannot_3": "Determine how much of the sodium comes from salt and how much from other ingredients. That breakdown is not declared on any label.",
+  "cannot_1": "Determine how much of the sodium comes from salt and how much comes from other sodium-containing ingredients.",
+  "cannot_2": "Treat sodium and salt as interchangeable without applying and identifying the appropriate conversion.",
+  "cannot_3": "Determine an individual's sodium requirement from the nutrition label.",
   "cannot_4": "Treat an undeclared sodium value as zero.",
   "sources_title": "Sources",
   "back-button": "← Back",
   "title": "Sodium",
-  "description": "Sodium is a mineral that occurs naturally in food and is also added through salt and through many other ingredients: raising agents, preservatives, flavour enhancers, stabilisers and acidity regulators.",
+  "description": "Sodium is a mineral naturally present in many foods and also introduced through salt and other sodium-containing ingredients.",
   "layers": [],
-  "sources": [
-    {
-      "label": "WHO — Sodium reduction",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    }
-  ]
+  "sources": []
 }

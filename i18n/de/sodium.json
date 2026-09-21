@@ -2,38 +2,24 @@
   "name": "Natrium",
   "e_code": "",
   "module_icon": "salt_sodium.png",
-  "aliases": "Natrium, Natriumgehalt",
+  "aliases": "Natriumgehalt",
   "what_is_title": "Was es ist",
-  "what_is": "Natrium ist ein Mineral, das natürlicherweise in Lebensmitteln vorkommt und auch über Salz und viele andere Zutaten zugeführt wird: Backtriebmittel, Konservierungsstoffe, Geschmacksverstärker, Stabilisatoren und Säureregulatoren.\n\nDie meisten Märkte außerhalb der Europäischen Union deklarieren Natrium statt Salz. Beide beschreiben denselben zugrunde liegenden Gehalt, aber es sind unterschiedliche Felder mit unterschiedlichen Einheiten und unterschiedlichen Referenzwerten.",
+  "what_is": "Natrium ist ein Mineral, das von Natur aus in vielen Lebensmitteln vorkommt und auch über Salz und andere natriumhaltige Zutaten zugeführt wird.",
   "why_botia_title": "Warum BOTIA es markiert",
-  "why_botia": "BOTIA markiert Natrium, weil sich dort der größte Teil des Salzes in einem verarbeiteten Lebensmittel tatsächlich versteckt, und weil der Vergleich einer Natriumzahl mit einer Salz-Zahl ohne Umrechnung ein Fehler ist, der die Zahl um den Faktor zweieinhalb verändert.\n\nEs ist auch wichtig, weil Natrium nicht nur Salz ist. Natriumbicarbonat, Mononatriumglutamat, Natriumnitrit, Natriumphosphate und Natriumbenzoat tragen alle zur angegebenen Zahl bei, auch wenn kein Salz hinzugefügt wurde.",
+  "why_botia": "Natrium und Salz sind eng verwandt, aber nicht dasselbe deklarierte Feld. BOTIA bewahrt, was das Etikett tatsächlich angibt, und hält diesen Wert getrennt von den regulatorischen Regeln, Umrechnungen und Belegen, die zu seiner Interpretation verwendet werden.",
   "can_title": "BOTIA KANN",
-  "can_1": "Den angegebenen Natriumwert lesen und seine Einheit und seine Basis beibehalten. Natrium wird üblicherweise in Milligramm angegeben, während Salz in Gramm angegeben wird.",
-  "can_2": "Die Referenz anzeigen, die in dem Markt gilt, in dem das Produkt gekennzeichnet wurde, und die Behörde nennen, die sie veröffentlicht.",
-  "can_3": "Zutaten in der Liste identifizieren, die Natrium enthalten, damit die angegebene Zahl im Kontext der Rezeptur verstanden werden kann.",
-  "can_4": "Das Bevölkerungsziel der WHO als Kontext präsentieren, klar als Bevölkerungsrichtlinie gekennzeichnet und nicht als Prozentsatz dessen, was dieses Produkt für eine Einzelperson bedeutet.",
+  "can_1": "Den auf dem Nährwertetikett deklarierten Natriumwert lesen und seine Einheit und Basis beibehalten.",
+  "can_2": "Einen deklarierten Natriumwert von einem deklarierten Salzwert getrennt halten.",
+  "can_3": "Den deklarierten Wert mit den geltenden regulatorischen Informationen und dokumentierten Belegen verknüpfen.",
   "cannot_title": "BOTIA KANN NICHT",
-  "cannot_1": "Dir sagen, welchen Prozentsatz deines eigenen Bedarfs dieser Wert darstellt. Referenzzufuhren werden von jeder Behörde für erwachsene Bevölkerungsgruppen festgelegt.",
-  "cannot_2": "Einen Natriumwert aus einem angegebenen Salzwert ableiten, oder umgekehrt, es sei denn, der Markt definiert diese Umrechnung. Wo sie angewendet wird, zeigt BOTIA sie als abgeleitet.",
-  "cannot_3": "Bestimmen, wie viel des Natriums aus Salz und wie viel aus anderen Zutaten stammt. Diese Aufschlüsselung wird auf keinem Etikett angegeben.",
-  "cannot_4": "Einen nicht angegebenen Natriumwert als Null behandeln.",
+  "cannot_1": "Bestimmen, wie viel des Natriums aus Salz und wie viel aus anderen natriumhaltigen Zutaten stammt.",
+  "cannot_2": "Natrium und Salz als austauschbar behandeln, ohne die geeignete Umrechnung anzuwenden und zu kennzeichnen.",
+  "cannot_3": "Den Natriumbedarf einer Person aus dem Nährwertetikett bestimmen.",
+  "cannot_4": "Einen nicht deklarierten Natriumwert als Null behandeln.",
   "sources_title": "Quellen",
   "back-button": "← Zurück",
   "title": "Natrium",
-  "description": "Natrium ist ein Mineral, das natürlicherweise in Lebensmitteln vorkommt und auch über Salz und viele andere Zutaten zugeführt wird: Backtriebmittel, Konservierungsstoffe, Geschmacksverstärker, Stabilisatoren und Säureregulatoren.",
+  "description": "Natrium ist ein Mineral, das von Natur aus in vielen Lebensmitteln vorkommt und auch über Salz und andere natriumhaltige Zutaten zugeführt wird.",
   "layers": [],
-  "sources": [
-    {
-      "label": "WHO — Sodium reduction",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    }
-  ]
+  "sources": []
 }

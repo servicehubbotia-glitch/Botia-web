@@ -2,38 +2,24 @@
   "name": "Sodio",
   "e_code": "",
   "module_icon": "salt_sodium.png",
-  "aliases": "sodio, contenido de sodio",
+  "aliases": "contenido de sodio",
   "what_is_title": "Qué es",
-  "what_is": "El sodio es un mineral que se encuentra de forma natural en los alimentos y que también se añade a través de la sal y de muchos otros ingredientes: gasificantes, conservantes, potenciadores del sabor, estabilizantes y reguladores de acidez.\n\nLa mayoría de los mercados fuera de la Unión Europea declaran sodio en lugar de sal. Los dos describen el mismo contenido subyacente, pero son campos distintos con unidades distintas y valores de referencia distintos.",
+  "what_is": "El sodio es un mineral presente de forma natural en muchos alimentos y también introducido a través de la sal y de otros ingredientes que contienen sodio.",
   "why_botia_title": "Por qué BOTIA lo señala",
-  "why_botia": "BOTIA señala el sodio porque es donde realmente se esconde la mayor parte de la sal en un alimento procesado, y porque comparar una cifra de sodio con una cifra de sal sin convertir es un error que cambia el número por un factor de dos y medio.\n\nTambién importa porque el sodio no es solo sal. El bicarbonato de sodio, el glutamato monosódico, el nitrito de sodio, los fosfatos de sodio y el benzoato de sodio contribuyen todos a la cifra declarada incluso cuando no se ha añadido sal.",
+  "why_botia": "El sodio y la sal están estrechamente relacionados, pero no son el mismo campo declarado. BOTIA conserva lo que la etiqueta declara realmente y mantiene ese valor separado de las reglas regulatorias, las conversiones y la evidencia utilizadas para interpretarlo.",
   "can_title": "BOTIA PUEDE",
-  "can_1": "Leer el valor de sodio declarado y conservar su unidad y su base. El sodio suele declararse en miligramos, mientras que la sal se declara en gramos.",
-  "can_2": "Mostrar la referencia que se aplica en el mercado donde se etiquetó el producto y nombrar la autoridad que la publica.",
-  "can_3": "Identificar los ingredientes de la lista que contienen sodio, para que la cifra declarada pueda entenderse en el contexto de la formulación.",
-  "can_4": "Presentar el objetivo poblacional de la OMS como contexto, identificado claramente como una guía poblacional y no como un porcentaje de lo que este producto aporta a una persona.",
+  "can_1": "Leer el valor de sodio declarado en la etiqueta nutricional y conservar su unidad y su base.",
+  "can_2": "Mantener un valor de sodio declarado separado de un valor de sal declarado.",
+  "can_3": "Conectar el valor declarado con la información regulatoria aplicable y la evidencia documentada.",
   "cannot_title": "BOTIA NO PUEDE",
-  "cannot_1": "Decirte qué porcentaje de tus propias necesidades representa este valor. Las ingestas de referencia las fija cada autoridad para poblaciones adultas.",
-  "cannot_2": "Deducir un valor de sodio a partir de un valor declarado de sal, o al revés, salvo que el mercado defina esa conversión. Donde se aplica, BOTIA la muestra como derivada.",
-  "cannot_3": "Determinar cuánto del sodio procede de la sal y cuánto de otros ingredientes. Ese desglose no se declara en ninguna etiqueta.",
+  "cannot_1": "Determinar cuánto del sodio proviene de la sal y cuánto proviene de otros ingredientes que contienen sodio.",
+  "cannot_2": "Tratar sodio y sal como intercambiables sin aplicar e identificar la conversión adecuada.",
+  "cannot_3": "Determinar la necesidad de sodio de una persona a partir de la etiqueta nutricional.",
   "cannot_4": "Tratar un valor de sodio no declarado como cero.",
   "sources_title": "Fuentes",
   "back-button": "← Volver",
   "title": "Sodio",
-  "description": "El sodio es un mineral que se encuentra de forma natural en los alimentos y que también se añade a través de la sal y de muchos otros ingredientes: gasificantes, conservantes, potenciadores del sabor, estabilizantes y reguladores de acidez.",
+  "description": "El sodio es un mineral presente de forma natural en muchos alimentos y también introducido a través de la sal y de otros ingredientes que contienen sodio.",
   "layers": [],
-  "sources": [
-    {
-      "label": "WHO — Sodium reduction",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction"
-    },
-    {
-      "label": "FDA — Daily Value on Nutrition and Supplement Facts Labels",
-      "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
-    },
-    {
-      "label": "Health Canada — Nutrition Labelling: Table of Daily Values",
-      "url": "https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html"
-    }
-  ]
+  "sources": []
 }
