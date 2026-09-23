@@ -101,7 +101,7 @@
     const closeButton = document.createElement("button");
     closeButton.type = "button";
     closeButton.className = "botia-menu-close";
-    closeButton.setAttribute("aria-label", "Close menu");
+    closeButton.setAttribute("aria-label", translated(labels, "menu_close_label"));
     closeButton.textContent = "×";
 
     header.append(brand, closeButton);
@@ -190,6 +190,8 @@
         loadMenu(),
         loadLabels(language)
       ]);
+
+      menuButton.setAttribute("aria-label", translated(labels, "menu_open_label"));
 
       const { overlay, drawer, closeButton } = buildDrawer(menu, labels, language);
       runtime.initialised = true;
