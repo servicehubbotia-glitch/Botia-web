@@ -37,7 +37,7 @@ triggers-master.json    Generated — the app's detection table
 master_kb.json          Generated — the chatbot's knowledge base
 
 pages/                  Long-form pages, read at home
-ingredients/            104 ingredient records + 10 layer WebViews
+ingredients/            129 ingredient records + 10 layer WebViews
 i18n/{lang}/            All translatable content, 14 languages
 i18n/glossary.json      Controlled terminology — the source of truth
 botia/assets/           CSS, JS, icons, menu.json
@@ -46,7 +46,7 @@ Two kinds of page inside ingredients/
 
 This is the single most important thing to understand before touching anything.
 
-Ingredient records — 104 files such as gelatine.html, e471.html,
+Ingredient records — 129 files such as gelatine.html, e471.html,
 tartrazine.html. Long-form, indexable, reached from Google or from the index.
 These are entry points.
 
@@ -149,7 +149,7 @@ indexable HTML files that actually exist — excludes the 10 noindex WebViews
 
 master_kb.json
 
-the 104 records × 14 languages
+the records currently included in the chatbot knowledge base × 14 languages
 
 i18n/{lang}/ingredient_index.json → aliases
 
@@ -171,7 +171,7 @@ Technical terms — halal, haram, mashbooh, ultra-processed, free sugars
 
 False friends — documented cases, with the actual error each one produced
 
-Ingredient names — 104 slugs × 14 languages
+Ingredient names — 129 slugs × 14 languages
 
 Any translation script must check it before sending anything to an API.
 

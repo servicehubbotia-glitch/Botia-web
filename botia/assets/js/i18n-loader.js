@@ -574,7 +574,7 @@
 
     const validSlugs = await regulatoryIngredientSlugs();
 
-    // Regulatory tiene registros para 84 ingredientes, no para las 104 fichas.
+    // Regulatory no cubre todas las fichas: solo mostramos el enlace cuando el slug existe en regulatory.json.
     // Si el ingrediente no existe en Regulatory, no mostramos un enlace engañoso.
     if (!validSlugs.has(slug)) return;
 
