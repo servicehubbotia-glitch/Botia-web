@@ -8,7 +8,18 @@
   let data = {};
   let records = [];
   let currentLang = "en";
-  let englishClassById = new Map();
+
+  // Los filtros agrupan por el valor inglés del registro, no por su
+  // traducción: el mismo organismo puede estar traducido de varias formas
+  // y en ese caso el filtro mostraría solo una parte de sus registros.
+  let canonicalByRecordId = null;
+
+  const FILTER_FIELDS = [
+    "jurisdiction_or_scope",
+    "authority",
+    "measure_type",
+    "measure_status"
+  ];
 
   const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({
     "&":"&amp;",
@@ -46,27 +57,51 @@
     }
   }
 
-  async function loadEnglishClassMap() {
+  async function loadCanonical() {
+    if (canonicalByRecordId) return;
+
     try {
-      const response = await fetch("/i18n/en/regulatory.json", { cache: "no-store" });
-      if (!response.ok) throw new Error(`English master HTTP ${response.status}`);
+      const response = await fetch("/i18n/en/regulatory.json", {
+        cache: "no-store"
+      });
+
+      if (!response.ok) throw new Error(response.status);
 
       const master = await response.json();
-      const englishRecords = Array.isArray(master.records) ? master.records : [];
+      const englishRecords = Array.isArray(master)
+        ? master
+        : (master.records || []);
 
-      englishClassById = new Map(
-        englishRecords.map(record => [
-          record.record_id,
-          {
-            measure_type: record.measure_type || "",
-            measure_status: record.measure_status || ""
-          }
-        ])
-      );
+      canonicalByRecordId = new Map();
+
+      englishRecords.forEach(record => {
+        if (!record.record_id) return;
+
+        const values = {};
+
+        FILTER_FIELDS.forEach(field => {
+          values[field] = String(record[field] ?? "").trim();
+        });
+
+        canonicalByRecordId.set(record.record_id, values);
+      });
     } catch (error) {
-      console.warn("BOTIA Regulatory: could not load English classification map.", error);
-      englishClassById = new Map();
+      // Si el inglés no se puede cargar, se mantiene el comportamiento
+      // anterior: agrupar por el texto traducido. Peor, pero funciona.
+      console.warn("BOTIA regulatory: sin referencia inglesa", error);
+      canonicalByRecordId = new Map();
     }
+  }
+
+  // Valor canónico de un campo. Si no hay referencia inglesa para ese
+  // registro, se usa su propia traducción, que es lo que se hacía antes.
+  function canonicalValue(record, field) {
+    const canonical = canonicalByRecordId?.get(record.record_id);
+    const value = canonical?.[field];
+
+    if (value) return value;
+
+    return String(record[field] ?? "").trim();
   }
 
   function applyUI() {
@@ -99,12 +134,53 @@
     }
   }
 
+  // Devuelve [{ value, label }]:
+  //   value → clave inglesa, que es con lo que se filtra
+  //   label → texto traducido que ve la persona
   function uniqueFrom(list, field) {
-    return [...new Set(
-      list
-        .map(record => record[field])
-        .filter(value => value !== null && value !== undefined && String(value).trim() !== "")
-    )].sort((a,b) => String(a).localeCompare(String(b), currentLang));
+    const groups = new Map();
+
+    list.forEach(record => {
+      const key = canonicalValue(record, field);
+      if (!key) return;
+
+      const label = String(record[field] ?? "").trim() || key;
+
+      if (!groups.has(key)) {
+        groups.set(key, new Map());
+      }
+
+      const labels = groups.get(key);
+      labels.set(label, (labels.get(label) || 0) + 1);
+    });
+
+    const options = [];
+
+    groups.forEach((labels, key) => {
+      // Si el mismo valor tiene varias traducciones, se muestra la más
+      // frecuente. El filtro sigue agrupándolas todas.
+      let best = "";
+      let bestCount = -1;
+
+      labels.forEach((count, label) => {
+        if (count > bestCount) {
+          best = label;
+          bestCount = count;
+        }
+      });
+
+      options.push({
+        value: key,
+        label: best
+      });
+    });
+
+    return options.sort((a, b) =>
+      String(a.label).localeCompare(
+        String(b.label),
+        currentLang
+      )
+    );
   }
 
   function ingredientList() {
@@ -142,11 +218,11 @@
   }
 
   function englishMeasureType(record) {
-    return englishClassById.get(record?.record_id)?.measure_type || record?.measure_type || "";
+    return canonicalValue(record, "measure_type");
   }
 
   function englishMeasureStatus(record) {
-    return englishClassById.get(record?.record_id)?.measure_status || record?.measure_status || "";
+    return canonicalValue(record, "measure_status");
   }
 
   function badgeClass(record) {
@@ -182,13 +258,19 @@
     const currentAuthority = $("#filter-authority")?.value || "";
 
     const source = jurisdiction
-      ? records.filter(record => record.jurisdiction_or_scope === jurisdiction)
+      ? records.filter(
+          record =>
+            canonicalValue(
+              record,
+              "jurisdiction_or_scope"
+            ) === jurisdiction
+        )
       : records;
 
-    const authorities = uniqueFrom(source, "authority").map(value => ({
-      value,
-      label: value
-    }));
+    const authorities = uniqueFrom(
+      source,
+      "authority"
+    );
 
     setOptions(
       $("#filter-authority"),
@@ -212,9 +294,16 @@
     };
 
     return records.filter(record => {
-      const matchesFilters = Object.entries(filters).every(([field, value]) =>
-        !value || String(record[field] ?? "") === value
-      );
+      const matchesFilters = Object.entries(filters).every(([field, value]) => {
+        if (!value) return true;
+
+        // ingredient_slug ya es una clave estable: no se traduce.
+        if (field === "ingredient_slug") {
+          return String(record[field] ?? "") === value;
+        }
+
+        return canonicalValue(record, field) === value;
+      });
 
       if (!matchesFilters) return false;
       if (!query) return true;
@@ -456,28 +545,19 @@
 
     setOptions(
       $("#filter-jurisdiction"),
-      uniqueFrom(records, "jurisdiction_or_scope").map(value => ({
-        value,
-        label: value
-      })),
+      uniqueFrom(records, "jurisdiction_or_scope"),
       data.reg_all || "All"
     );
 
     setOptions(
       $("#filter-category"),
-      uniqueFrom(records, "measure_type").map(value => ({
-        value,
-        label: value
-      })),
+      uniqueFrom(records, "measure_type"),
       data.reg_all || "All"
     );
 
     setOptions(
       $("#filter-temporal"),
-      uniqueFrom(records, "measure_status").map(value => ({
-        value,
-        label: value
-      })),
+      uniqueFrom(records, "measure_status"),
       data.reg_all || "All"
     );
 
@@ -503,9 +583,9 @@
     currentLang = loaded.lang;
     records = Array.isArray(data.records) ? data.records : [];
 
-    // Visual categories must not depend on translated words.
-    // record_id links every translated record to the English master category.
-    await loadEnglishClassMap();
+    // Los filtros y las categorías visuales usan el valor inglés
+    // asociado por record_id como clave estable.
+    await loadCanonical();
 
     document.documentElement.lang = currentLang;
     document.documentElement.dir = RTL.has(currentLang) ? "rtl" : "ltr";
