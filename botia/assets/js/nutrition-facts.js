@@ -511,8 +511,11 @@
   };
 
   const validHttpUrl = raw => {
+    const value = String(raw ?? "").trim();
+    if (!value) return null;
+
     try {
-      const url = new URL(raw, location.origin);
+      const url = new URL(value, location.origin);
       return /^https?:$/.test(url.protocol) ? url : null;
     } catch (_) {
       return null;
@@ -540,7 +543,14 @@
       if (item.classification) {
         const tag = document.createElement("span");
         tag.className = "class-tag";
-        tag.textContent = `Class ${item.classification}`;
+        const classLabel =
+          window.BOTIA?.translated?.(
+            "nutrition_class_label",
+            "Class"
+          ) || "Class";
+
+        tag.textContent =
+          `${classLabel} ${item.classification}`;
         head.appendChild(tag);
       }
       card.appendChild(head);
@@ -553,10 +563,25 @@
       }
 
       const cls = String(item.classification || "").toUpperCase();
-      const percent = Number(item.percent);
+
+      // percent: null significa que no hay referencia aplicable, no que
+      // el valor sea cero. Sin porcentaje no se pinta barra ni cifra.
+      const rawPercent = item.percent;
+
+      const hasPercent =
+        rawPercent !== null &&
+        rawPercent !== undefined &&
+        rawPercent !== "" &&
+        Number.isFinite(Number(rawPercent));
+
+      const percent =
+        hasPercent
+          ? Number(rawPercent)
+          : null;
+
       const showBar =
         (cls === "A" || cls === "B") &&
-        Number.isFinite(percent) &&
+        hasPercent &&
         item.show_bar !== false;
 
       if (showBar) {
@@ -600,15 +625,25 @@
         card.appendChild(p);
       }
 
+      const sourceText = String(item.source || "").trim();
       const url = validHttpUrl(item.url);
+
       if (url) {
         const link = document.createElement("a");
         link.className = "source";
         link.href = url.toString();
         link.target = "_blank";
         link.rel = "noopener noreferrer";
-        link.textContent = item.source || "Official source →";
+        link.textContent =
+          sourceText || "Official source →";
         card.appendChild(link);
+      } else if (sourceText) {
+        // Sin URL no presentamos el nombre como enlace oficial.
+        // Se conserva el nombre de la referencia como texto.
+        const source = document.createElement("span");
+        source.className = "source";
+        source.textContent = sourceText;
+        card.appendChild(source);
       }
 
       el("references").appendChild(card);
@@ -637,10 +672,25 @@
   document.addEventListener("botia:nutrition-ready", onRuntimeData);
   document.addEventListener("botia:nutrition-updated", onRuntimeData);
 
-  const init = () => render(initialPayload());
+  const init = async () => {
+    try {
+      await window.BOTIA?.init?.();
+    } catch (error) {
+      console.warn(
+        "BOTIA Nutrition Facts: translations not ready.",
+        error
+      );
+    }
+
+    render(initialPayload());
+  };
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init, {once:true});
+    document.addEventListener(
+      "DOMContentLoaded",
+      init,
+      {once:true}
+    );
   } else {
     init();
   }

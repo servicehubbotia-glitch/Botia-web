@@ -6,6 +6,17 @@
   if (window[RUNTIME_KEY]?.bootstrapped) return;
   const runtime = window[RUNTIME_KEY] = { bootstrapped: true, initPromise: null };
 
+  // Traducciones cargadas del JSON de la página, para textos que se
+  // generan desde JavaScript y no existen en el HTML.
+  let currentTranslations = {};
+
+  const translated = (key, fallback = "") => {
+    const value = currentTranslations?.[key];
+    return typeof value === "string" && value.trim()
+      ? value
+      : fallback;
+  };
+
   const LANGS = ["en", "es", "ar", "de", "fr", "nl", "it", "pt", "pl", "ro", "ru", "tr", "zh", "id"];
   const RTL = new Set(["ar"]);
 
@@ -736,6 +747,13 @@
       }
     }
 
+    // Conservamos el JSON realmente cargado —incluido el fallback
+    // inglés— para que otros scripts puedan consultar claves dinámicas.
+    currentTranslations =
+      data && typeof data === "object"
+        ? data
+        : {};
+
     document.documentElement.dataset.botiaTranslation = loaded;
     if (loaded !== requested) {
       document.documentElement.lang = loaded;
@@ -798,7 +816,8 @@
     language,
     normalise,
     detectLanguage: language,
-    loadTranslations
+    loadTranslations,
+    translated
   };
 
   if (document.readyState === "loading") {
