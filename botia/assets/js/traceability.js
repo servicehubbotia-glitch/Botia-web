@@ -13,6 +13,13 @@
     "NOT_VERIFIED"
   ]);
 
+  // Estados del servicio, no de la evidencia. Un fallo de consulta no
+  // es un resultado: no se puede presentar como "no verificado".
+  const SERVICE_STATES = new Set([
+    "SOURCE_UNAVAILABLE",
+    "INVALID_GTIN"
+  ]);
+
   const DOMAINS = [
     "identity",
     "halal",
@@ -60,6 +67,12 @@
     open_source: "Open source →",
     scope_warning: "This evidence applies only to the scope shown. BOTIA does not automatically extend it to another product, brand, parent company, market or plant.",
     not_verified_note: "No negative conclusion is drawn from this result.",
+    service_state: {
+      SOURCE_UNAVAILABLE:
+        "The source could not be consulted. This does not mean that no evidence exists.",
+      INVALID_GTIN:
+        "The code read is not a valid GTIN, so no source could be consulted."
+    },
     contract_error: "This item was not displayed as verified because required traceability fields were missing."
   };
 
@@ -102,7 +115,11 @@
           ...loaded.runtime,
           status: { ...text.status, ...(loaded.runtime.status || {}) },
           symbol: { ...text.symbol, ...(loaded.runtime.symbol || {}) },
-          domain: { ...text.domain, ...(loaded.runtime.domain || {}) }
+          domain: { ...text.domain, ...(loaded.runtime.domain || {}) },
+          service_state: {
+            ...text.service_state,
+            ...(loaded.runtime.service_state || {})
+          }
         };
       }
     } catch (_) {
@@ -115,7 +132,11 @@
               ...loaded.runtime,
               status: { ...text.status, ...(loaded.runtime.status || {}) },
               symbol: { ...text.symbol, ...(loaded.runtime.symbol || {}) },
-              domain: { ...text.domain, ...(loaded.runtime.domain || {}) }
+              domain: { ...text.domain, ...(loaded.runtime.domain || {}) },
+          service_state: {
+            ...text.service_state,
+            ...(loaded.runtime.service_state || {})
+          }
             };
           }
         } catch (_) {}
@@ -159,6 +180,16 @@
   };
 
   const clean = value => String(value ?? "").trim();
+
+  const serviceState = data => {
+    const raw = clean(
+      data?.state ||
+      data?.service_state ||
+      params.get("state")
+    ).toUpperCase();
+
+    return SERVICE_STATES.has(raw) ? raw : "";
+  };
 
   const isHttpUrl = raw => {
     try {
@@ -433,7 +464,36 @@
 
   const renderPayload = data => {
     const payload = data && typeof data === "object" ? data : queryFallback();
+
     renderIdentity(payload);
+
+    const state = serviceState(payload);
+
+    // El estado del servicio queda disponible para el bloque de contacto
+    // con el fabricante, que no debe afirmar que no se halló evidencia
+    // cuando en realidad no hubo consulta.
+    document.documentElement.dataset.botiaTraceabilityState =
+      state || "";
+
+    if (state) {
+      const root = el("records");
+      root.replaceChildren();
+
+      el("empty_state").hidden = true;
+
+      const notice = document.createElement("div");
+      notice.className = "scope-note";
+      notice.dataset.serviceState = state;
+      notice.textContent =
+        text.service_state?.[state] || state;
+
+      root.appendChild(notice);
+
+      renderConsulted(payload);
+      renderWarnings(payload);
+      return;
+    }
+
     renderRecords(payload);
     renderConsulted(payload);
     renderWarnings(payload);
