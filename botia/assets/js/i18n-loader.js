@@ -535,6 +535,70 @@
     });
   };
 
+
+  const NUTRITION_PROFILE_SLUGS = new Set([
+    "protein",
+    "carbohydrate",
+    "starch",
+    "polyols",
+    "salt",
+    "sodium",
+    "energy",
+    "total_fat",
+    "monounsaturated_fat",
+    "polyunsaturated_fat",
+    "cholesterol",
+    "fibre",
+    "total_sugars",
+    "saturated_fat",
+    "added_sugars"
+  ]);
+
+  const sharedNavigationLabelsCache = new Map();
+
+  const sharedNavigationLabels = async lang => {
+    if (sharedNavigationLabelsCache.has(lang)) {
+      return sharedNavigationLabelsCache.get(lang);
+    }
+
+    const load = async requested => {
+      const response = await fetch(
+        `/i18n/${requested}/landing.json`,
+        { cache: "no-store" }
+      );
+
+      if (!response.ok) {
+        throw new Error(`Landing labels ${response.status}`);
+      }
+
+      return response.json();
+    };
+
+    let labels;
+
+    try {
+      labels = await load(lang);
+    } catch (error) {
+      if (lang === "en") {
+        console.warn("BOTIA shared navigation labels:", error);
+        labels = {};
+      } else {
+        try {
+          labels = await load("en");
+        } catch (fallbackError) {
+          console.warn(
+            "BOTIA shared navigation labels:",
+            fallbackError
+          );
+          labels = {};
+        }
+      }
+    }
+
+    sharedNavigationLabelsCache.set(lang, labels);
+    return labels;
+  };
+
   let regulatoryIngredientSlugsPromise = null;
 
   const regulatoryIngredientSlugs = () => {
@@ -562,42 +626,158 @@
     const why = document.getElementById("why_botia");
     if (!why) return;
 
-    // Solo fichas de ingredientes.
-    const match = location.pathname.match(/\/ingredients\/([^/]+)\.html$/i);
+    // Solo fichas de ingredientes/perfiles.
+    const match = location.pathname.match(
+      /\/ingredients\/([^/]+)\.html$/i
+    );
+
     if (!match) return;
 
     const slug = decodeURIComponent(match[1]).trim();
-    if (!slug || slug === "index" || slug === "ingredient-template") return;
 
-    // Evitar duplicados.
-    document.getElementById("botia-regulatory-link")?.remove();
+    if (
+      !slug ||
+      slug === "index" ||
+      slug === "ingredient-template"
+    ) {
+      return;
+    }
 
-    const validSlugs = await regulatoryIngredientSlugs();
+    // Evitar duplicados si el loader vuelve a inicializarse.
+    document
+      .getElementById("botia-regulatory-container")
+      ?.remove();
 
-    // Regulatory no cubre todas las fichas: solo mostramos el enlace cuando el slug existe en regulatory.json.
-    // Si el ingrediente no existe en Regulatory, no mostramos un enlace engañoso.
-    if (!validSlugs.has(slug)) return;
+    const validSlugs =
+      await regulatoryIngredientSlugs();
 
-    const href = new URL("/regulatory/", location.origin);
-    href.searchParams.set("ingredient", slug);
-    href.searchParams.set("lang", lang);
+    const isNutritionProfile =
+      NUTRITION_PROFILE_SLUGS.has(slug);
 
-    const link = document.createElement("a");
-    link.id = "botia-regulatory-link";
-    link.className = "cta-button";
-    link.href = href.toString();
-    link.textContent = "Regulatory";
-    link.setAttribute(
-      "aria-label",
-      `Regulatory — ${document.getElementById("name")?.textContent?.trim() || slug}`
+    if (
+      !validSlugs.has(slug) &&
+      !isNutritionProfile
+    ) {
+      return;
+    }
+
+    const labels =
+      await sharedNavigationLabels(lang);
+
+    const evidenceLabel =
+      labels.nav_evidence || "Evidence";
+
+    const regulatoryLabel =
+      labels.nav_regulatory || "Regulatory";
+
+    const profileName =
+      document
+        .getElementById("name")
+        ?.textContent
+        ?.trim()
+      || slug;
+
+    const wrapper =
+      document.createElement("div");
+
+    wrapper.id =
+      "botia-regulatory-container";
+
+    wrapper.style.marginTop =
+      "14px";
+
+    wrapper.style.display =
+      "flex";
+
+    wrapper.style.flexWrap =
+      "wrap";
+
+    wrapper.style.gap =
+      "10px";
+
+    // Nutrition tiene evidencia propia en el bloque Sources.
+    if (isNutritionProfile) {
+      const evidence =
+        document.createElement("a");
+
+      evidence.id =
+        "botia-evidence-link";
+
+      evidence.className =
+        "cta-button";
+
+      evidence.href =
+        document.getElementById("sources_title")
+          ? "#sources_title"
+          : "#sources_container";
+
+      evidence.textContent =
+        evidenceLabel;
+
+      evidence.setAttribute(
+        "aria-label",
+        `${evidenceLabel} — ${profileName}`
+      );
+
+      wrapper.appendChild(
+        evidence
+      );
+    }
+
+    // Regulatory normal para ingredientes con registros.
+    // Para Nutrition se activa la vista de fuentes oficiales
+    // si todavía no existen filas estructuradas.
+    const href =
+      new URL(
+        "/regulatory/",
+        location.origin
+      );
+
+    href.searchParams.set(
+      "ingredient",
+      slug
     );
 
-    const wrapper = document.createElement("div");
-    wrapper.id = "botia-regulatory-container";
-    wrapper.style.marginTop = "14px";
-    wrapper.appendChild(link);
+    href.searchParams.set(
+      "lang",
+      lang
+    );
 
-    why.insertAdjacentElement("afterend", wrapper);
+    if (isNutritionProfile) {
+      href.searchParams.set(
+        "nutrition",
+        "1"
+      );
+    }
+
+    const regulatory =
+      document.createElement("a");
+
+    regulatory.id =
+      "botia-regulatory-link";
+
+    regulatory.className =
+      "cta-button";
+
+    regulatory.href =
+      href.toString();
+
+    regulatory.textContent =
+      regulatoryLabel;
+
+    regulatory.setAttribute(
+      "aria-label",
+      `${regulatoryLabel} — ${profileName}`
+    );
+
+    wrapper.appendChild(
+      regulatory
+    );
+
+    why.insertAdjacentElement(
+      "afterend",
+      wrapper
+    );
   };
 
   const triggerItems = () => {

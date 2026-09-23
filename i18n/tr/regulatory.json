@@ -41,6 +41,16 @@
   "reg_authority": "Yetkili makam",
   "reg_verification": "Doğrulama",
   "reg_not_available": "Belirtilmemiş",
+  "_meta": {
+    "module": "regulatory",
+    "document_cutoff": "2026-09-02",
+    "records": 360,
+    "ingredients": 84,
+    "language": "tr"
+  },
+  "reg_nutrition_sources_eyebrow": "Regulatory içinde Beslenme",
+  "reg_nutrition_sources_intro": "Bu beslenme profili için Regulatory kaydında henüz yapılandırılmış tedbir satırları bulunmuyor. BOTIA bunun yerine profile bağlı resmî düzenleyici ve referans kaynaklarını gösterir.",
+  "reg_nutrition_profile_link": "Beslenme profilini aç ↗",
   "records": [
     {
       "ingredient_slug": "bpa",
@@ -6522,12 +6532,5 @@
       "notes": null,
       "record_id": "REG-0360"
     }
-  ],
-  "_meta": {
-    "module": "regulatory",
-    "document_cutoff": "2026-09-02",
-    "records": 360,
-    "ingredients": 84,
-    "language": "tr"
-  }
+  ]
 }

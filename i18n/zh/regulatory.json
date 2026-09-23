@@ -41,6 +41,16 @@
   "reg_authority": "主管机构",
   "reg_verification": "验证",
   "reg_not_available": "未指定",
+  "_meta": {
+    "module": "regulatory",
+    "document_cutoff": "2026-09-02",
+    "records": 360,
+    "ingredients": 84,
+    "language": "zh"
+  },
+  "reg_nutrition_sources_eyebrow": "Regulatory 中的营养",
+  "reg_nutrition_sources_intro": "此营养档案目前在 Regulatory 登记中还没有结构化的措施记录。BOTIA 会改为显示与该档案关联的官方监管和参考来源。",
+  "reg_nutrition_profile_link": "打开营养档案 ↗",
   "records": [
     {
       "ingredient_slug": "bpa",
@@ -6522,12 +6532,5 @@
       "notes": null,
       "record_id": "REG-0360"
     }
-  ],
-  "_meta": {
-    "module": "regulatory",
-    "document_cutoff": "2026-09-02",
-    "records": 360,
-    "ingredients": 84,
-    "language": "zh"
-  }
+  ]
 }

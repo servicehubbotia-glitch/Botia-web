@@ -41,6 +41,16 @@
   "reg_authority": "Autorité",
   "reg_verification": "Vérification",
   "reg_not_available": "Non spécifié",
+  "_meta": {
+    "module": "regulatory",
+    "document_cutoff": "2026-09-02",
+    "records": 360,
+    "ingredients": 84,
+    "language": "fr"
+  },
+  "reg_nutrition_sources_eyebrow": "Nutrition dans Regulatory",
+  "reg_nutrition_sources_intro": "Ce profil nutritionnel ne comporte pas encore de lignes de mesures structurées dans le registre Regulatory. BOTIA affiche à la place les sources réglementaires et de référence officielles liées au profil.",
+  "reg_nutrition_profile_link": "Ouvrir le profil nutritionnel ↗",
   "records": [
     {
       "ingredient_slug": "bpa",
@@ -6522,12 +6532,5 @@
       "notes": null,
       "record_id": "REG-0360"
     }
-  ],
-  "_meta": {
-    "module": "regulatory",
-    "document_cutoff": "2026-09-02",
-    "records": 360,
-    "ingredients": 84,
-    "language": "fr"
-  }
+  ]
 }

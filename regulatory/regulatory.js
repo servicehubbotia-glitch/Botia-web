@@ -14,6 +14,25 @@
   // y en ese caso el filtro mostraría solo una parte de sus registros.
   let canonicalByRecordId = null;
 
+
+  const NUTRITION_PROFILE_SLUGS = new Set([
+    "protein",
+    "carbohydrate",
+    "starch",
+    "polyols",
+    "salt",
+    "sodium",
+    "energy",
+    "total_fat",
+    "monounsaturated_fat",
+    "polyunsaturated_fat",
+    "cholesterol",
+    "fibre",
+    "total_sugars",
+    "saturated_fat",
+    "added_sugars"
+  ]);
+
   const FILTER_FIELDS = [
     "jurisdiction_or_scope",
     "authority",
@@ -531,6 +550,240 @@
     });
   }
 
+
+  function requestedNutritionProfile() {
+    const params =
+      new URLSearchParams(location.search);
+
+    const slug =
+      String(
+        params.get("ingredient") || ""
+      ).trim();
+
+    if (
+      params.get("nutrition") !== "1" ||
+      !NUTRITION_PROFILE_SLUGS.has(slug)
+    ) {
+      return "";
+    }
+
+    return slug;
+  }
+
+  async function loadNutritionProfile(
+    slug,
+    lang
+  ) {
+    const load = async requested => {
+      const response = await fetch(
+        `/i18n/${requested}/${encodeURIComponent(slug)}.json`,
+        { cache: "no-store" }
+      );
+
+      if (!response.ok) {
+        throw new Error(
+          `Nutrition profile ${response.status}`
+        );
+      }
+
+      return response.json();
+    };
+
+    try {
+      return await load(lang);
+    } catch (error) {
+      if (lang === "en") throw error;
+      return load("en");
+    }
+  }
+
+  async function renderNutritionSourcesIfRequested() {
+    const slug =
+      requestedNutritionProfile();
+
+    if (!slug) return false;
+
+    // Si en el futuro este nutriente obtiene filas
+    // estructuradas, usamos automáticamente el registro normal.
+    const hasStructuredRecords =
+      records.some(
+        record =>
+          String(record.ingredient_slug || "") === slug
+      );
+
+    if (hasStructuredRecords) {
+      return false;
+    }
+
+    const profile =
+      await loadNutritionProfile(
+        slug,
+        currentLang
+      );
+
+    const sources =
+      Array.isArray(profile.sources)
+        ? profile.sources.filter(source => {
+            const url =
+              String(source?.url || "").trim();
+
+            return /^https?:\/\//i.test(url);
+          })
+        : [];
+
+    if (!sources.length) {
+      return false;
+    }
+
+    const registry =
+      $("#registry");
+
+    if (!registry) return false;
+
+    const filters =
+      registry.querySelector(".reg-filters");
+
+    const tableWrap =
+      registry.querySelector(".table-wrap");
+
+    if (filters) {
+      filters.hidden = true;
+    }
+
+    if (tableWrap) {
+      tableWrap.hidden = true;
+    }
+
+    document
+      .getElementById("nutrition-regulatory-panel")
+      ?.remove();
+
+    const panel =
+      document.createElement("div");
+
+    panel.id =
+      "nutrition-regulatory-panel";
+
+    panel.className =
+      "page-section";
+
+    panel.style.marginTop =
+      "24px";
+
+    const eyebrow =
+      document.createElement("p");
+
+    eyebrow.className =
+      "reg-eyebrow";
+
+    eyebrow.textContent =
+      data.reg_nutrition_sources_eyebrow
+      || "Nutrition in Regulatory";
+
+    const title =
+      document.createElement("h2");
+
+    title.textContent =
+      profile.name
+      || profile.title
+      || slug;
+
+    const intro =
+      document.createElement("p");
+
+    intro.textContent =
+      data.reg_nutrition_sources_intro
+      || (
+        "This nutrition profile does not yet have " +
+        "structured measure rows in the Regulatory " +
+        "register. BOTIA shows the official regulatory " +
+        "and reference sources linked to the profile instead."
+      );
+
+    const grid =
+      document.createElement("div");
+
+    grid.className =
+      "reg-method-grid";
+
+    sources.forEach(source => {
+      const article =
+        document.createElement("article");
+
+      article.className =
+        "page-section";
+
+      const link =
+        document.createElement("a");
+
+      link.className =
+        "reg-source-link";
+
+      link.href =
+        String(source.url);
+
+      link.target =
+        "_blank";
+
+      link.rel =
+        "noopener noreferrer";
+
+      link.textContent =
+        String(
+          source.label
+          || data.reg_open_source
+          || "Official source"
+        );
+
+      article.appendChild(link);
+      grid.appendChild(article);
+    });
+
+    const actions =
+      document.createElement("div");
+
+    actions.className =
+      "reg-dialog-actions";
+
+    const profileLink =
+      document.createElement("a");
+
+    profileLink.className =
+      "reg-action";
+
+    profileLink.href =
+      withLang(
+        `/ingredients/${slug}.html`
+      );
+
+    profileLink.textContent =
+      data.reg_nutrition_profile_link
+      || "Open Nutrition profile ↗";
+
+    actions.appendChild(
+      profileLink
+    );
+
+    panel.append(
+      eyebrow,
+      title,
+      intro,
+      grid,
+      actions
+    );
+
+    if (tableWrap) {
+      tableWrap.insertAdjacentElement(
+        "beforebegin",
+        panel
+      );
+    } else {
+      registry.appendChild(panel);
+    }
+
+    return true;
+  }
+
   function initControls() {
     const ingredientOptions = ingredientList().map(item => ({
       value: item.slug,
@@ -597,7 +850,13 @@
     applyUI();
     initControls();
     bindEvents();
-    renderRegistry();
+
+    const nutritionFallbackRendered =
+      await renderNutritionSourcesIfRequested();
+
+    if (!nutritionFallbackRendered) {
+      renderRegistry();
+    }
   }
 
   init().catch(error => {

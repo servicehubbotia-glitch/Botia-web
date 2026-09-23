@@ -41,6 +41,16 @@
   "reg_authority": "Орган",
   "reg_verification": "Проверка",
   "reg_not_available": "Не указано",
+  "_meta": {
+    "module": "regulatory",
+    "document_cutoff": "2026-09-02",
+    "records": 360,
+    "ingredients": 84,
+    "language": "ru"
+  },
+  "reg_nutrition_sources_eyebrow": "Питание в Regulatory",
+  "reg_nutrition_sources_intro": "Для этого профиля питания в реестре Regulatory пока нет структурированных записей о мерах. Вместо этого BOTIA показывает связанные с профилем официальные регуляторные и справочные источники.",
+  "reg_nutrition_profile_link": "Открыть профиль питания ↗",
   "records": [
     {
       "ingredient_slug": "bpa",
@@ -6522,12 +6532,5 @@
       "notes": null,
       "record_id": "REG-0360"
     }
-  ],
-  "_meta": {
-    "module": "regulatory",
-    "document_cutoff": "2026-09-02",
-    "records": 360,
-    "ingredients": 84,
-    "language": "ru"
-  }
+  ]
 }

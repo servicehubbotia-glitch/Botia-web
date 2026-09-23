@@ -41,6 +41,16 @@
   "reg_authority": "السلطة",
   "reg_verification": "التحقق",
   "reg_not_available": "غير محدد",
+  "_meta": {
+    "module": "regulatory",
+    "document_cutoff": "2026-09-02",
+    "records": 360,
+    "ingredients": 84,
+    "language": "ar"
+  },
+  "reg_nutrition_sources_eyebrow": "التغذية في Regulatory",
+  "reg_nutrition_sources_intro": "لا يحتوي ملف التغذية هذا حتى الآن على صفوف تدابير منظمة في سجل Regulatory. تعرض BOTIA بدلاً من ذلك المصادر التنظيمية والمرجعية الرسمية المرتبطة بالملف.",
+  "reg_nutrition_profile_link": "فتح ملف التغذية ↗",
   "records": [
     {
       "ingredient_slug": "bpa",
@@ -6522,12 +6532,5 @@
       "notes": null,
       "record_id": "REG-0360"
     }
-  ],
-  "_meta": {
-    "module": "regulatory",
-    "document_cutoff": "2026-09-02",
-    "records": 360,
-    "ingredients": 84,
-    "language": "ar"
-  }
+  ]
 }

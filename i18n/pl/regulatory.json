@@ -41,6 +41,16 @@
   "reg_authority": "Organ",
   "reg_verification": "Weryfikacja",
   "reg_not_available": "Nie określono",
+  "_meta": {
+    "module": "regulatory",
+    "document_cutoff": "2026-09-02",
+    "records": 360,
+    "ingredients": 84,
+    "language": "pl"
+  },
+  "reg_nutrition_sources_eyebrow": "Żywienie w Regulatory",
+  "reg_nutrition_sources_intro": "Ten profil żywieniowy nie ma jeszcze ustrukturyzowanych wierszy środków w rejestrze Regulatory. Zamiast tego BOTIA pokazuje oficjalne źródła regulacyjne i referencyjne powiązane z profilem.",
+  "reg_nutrition_profile_link": "Otwórz profil żywieniowy ↗",
   "records": [
     {
       "ingredient_slug": "bpa",
@@ -6522,12 +6532,5 @@
       "notes": null,
       "record_id": "REG-0360"
     }
-  ],
-  "_meta": {
-    "module": "regulatory",
-    "document_cutoff": "2026-09-02",
-    "records": 360,
-    "ingredients": 84,
-    "language": "pl"
-  }
+  ]
 }

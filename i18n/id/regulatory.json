@@ -41,6 +41,16 @@
   "reg_authority": "Otoritas",
   "reg_verification": "Verifikasi",
   "reg_not_available": "Tidak ditentukan",
+  "_meta": {
+    "module": "regulatory",
+    "document_cutoff": "2026-09-02",
+    "records": 360,
+    "ingredients": 84,
+    "language": "id"
+  },
+  "reg_nutrition_sources_eyebrow": "Nutrisi di Regulatory",
+  "reg_nutrition_sources_intro": "Profil nutrisi ini belum memiliki baris tindakan terstruktur dalam registri Regulatory. Sebagai gantinya, BOTIA menampilkan sumber regulasi dan referensi resmi yang terkait dengan profil tersebut.",
+  "reg_nutrition_profile_link": "Buka profil nutrisi ↗",
   "records": [
     {
       "ingredient_slug": "bpa",
@@ -6522,12 +6532,5 @@
       "notes": null,
       "record_id": "REG-0360"
     }
-  ],
-  "_meta": {
-    "module": "regulatory",
-    "document_cutoff": "2026-09-02",
-    "records": 360,
-    "ingredients": 84,
-    "language": "id"
-  }
+  ]
 }
