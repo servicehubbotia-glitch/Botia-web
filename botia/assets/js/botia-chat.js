@@ -579,21 +579,30 @@
         };
 
         window.addEventListener('storage', function(e) {
-            if (e.key === 'botia-lang' && e.newValue && e.newValue !== currentLang) {
-                currentLang = e.newValue;
-                loadChatTranslations(currentLang).then(function() {
-                    const titleEl = document.getElementById('botia-chat-title');
-                    if (titleEl) titleEl.textContent = t('title');
-                    inputEl.placeholder = t('placeholder');
-                    sendBtn.textContent = t('sendButton');
-                    if (toggleBtn) {
-                        toggleBtn.setAttribute(
-                            'aria-label',
-                            t('openChatLabel') || 'Open BOTIA chat'
-                        );
-                    }
-                });
-            }
+            if (e.key !== 'botia-lang' || !e.newValue) return;
+
+            // El idioma explícito de esta pestaña tiene prioridad sobre
+            // cambios de localStorage realizados desde otra pestaña.
+            // Reutilizamos el mismo resolver que durante la carga inicial:
+            // ?lang= -> localStorage -> navegador.
+            const nextLang = getCurrentLanguage();
+
+            if (nextLang === currentLang) return;
+
+            currentLang = nextLang;
+
+            loadChatTranslations(currentLang).then(function() {
+                const titleEl = document.getElementById('botia-chat-title');
+                if (titleEl) titleEl.textContent = t('title');
+                inputEl.placeholder = t('placeholder');
+                sendBtn.textContent = t('sendButton');
+                if (toggleBtn) {
+                    toggleBtn.setAttribute(
+                        'aria-label',
+                        t('openChatLabel') || 'Open BOTIA chat'
+                    );
+                }
+            });
         });
     }
 
