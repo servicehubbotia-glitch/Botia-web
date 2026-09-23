@@ -846,6 +846,37 @@
   </style>
 
   <script src="/botia/assets/js/menu.js"></script>
+<style id="botia-skip-link-fix">
+.skip-link {
+  position: absolute;
+  left: auto;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  white-space: normal;
+  z-index: 9999;
+}
+</style>
 </head>
 
 
@@ -920,14 +951,7 @@
   <a
     class="skip-link"
     href="#main-content"
-    style="
-      position:absolute;
-      left:-9999px;
-      top:auto;
-      width:1px;
-      height:1px;
-      overflow:hidden;
-    "
+   
   >
     Skip to main content
   </a>
