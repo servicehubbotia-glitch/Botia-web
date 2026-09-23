@@ -10,6 +10,7 @@
     en: {
       title: "Ask the company",
       copy: "BOTIA has not found enough public evidence for this product. You can ask the company directly.",
+      copy_unchecked: "BOTIA could not check the sources for this product. You can ask the company directly.",
       button: "Write to the company",
       followup: "If the company sends you documentation, contact BOTIA and send it to us. We will review it before adding it as evidence.",
       reply_title: "If the brand replies",
@@ -29,6 +30,7 @@
     es: {
       title: "Pregunta a la compañía",
       copy: "BOTIA no ha encontrado evidencia pública suficiente para este producto. Puedes preguntar directamente a la compañía.",
+      copy_unchecked: "BOTIA no ha podido consultar las fuentes para este producto. Puedes preguntar directamente a la compañía.",
       button: "Escribe a la compañía",
       followup: "Si la compañía te envía documentación, ponte en contacto con BOTIA y háznosla llegar. La revisaremos antes de incorporarla como evidencia.",
       reply_title: "Si la marca te responde",
@@ -48,6 +50,7 @@
     ar: {
       title: "اسأل الشركة",
       copy: "لم تجد BOTIA أدلة عامة كافية لهذا المنتج. يمكنك سؤال الشركة مباشرة.",
+      copy_unchecked: "لم تتمكّن BOTIA من الاطلاع على المصادر الخاصة بهذا المنتج. يمكنك سؤال الشركة مباشرة.",
       button: "اكتب إلى الشركة",
       followup: "إذا أرسلت لك الشركة مستندات، تواصل مع BOTIA وأرسلها إلينا. سنراجعها قبل إضافتها كدليل.",
       reply_title: "إذا ردّت العلامة التجارية",
@@ -67,6 +70,7 @@
     de: {
       title: "Unternehmen fragen",
       copy: "BOTIA hat für dieses Produkt keine ausreichenden öffentlichen Nachweise gefunden. Du kannst das Unternehmen direkt fragen.",
+      copy_unchecked: "BOTIA konnte die Quellen für dieses Produkt nicht abfragen. Du kannst das Unternehmen direkt fragen.",
       button: "Unternehmen anschreiben",
       followup: "Wenn das Unternehmen dir Unterlagen sendet, kontaktiere BOTIA und leite sie an uns weiter. Wir prüfen sie, bevor wir sie als Nachweis aufnehmen.",
       reply_title: "Wenn die Marke dir antwortet",
@@ -86,6 +90,7 @@
     fr: {
       title: "Demander à l’entreprise",
       copy: "BOTIA n’a pas trouvé suffisamment de preuves publiques pour ce produit. Vous pouvez interroger directement l’entreprise.",
+      copy_unchecked: "BOTIA n'a pas pu consulter les sources pour ce produit. Vous pouvez interroger directement l'entreprise.",
       button: "Écrire à l’entreprise",
       followup: "Si l’entreprise vous envoie des documents, contactez BOTIA et transmettez-les-nous. Nous les examinerons avant de les intégrer comme preuve.",
       reply_title: "Si la marque vous répond",
@@ -105,6 +110,7 @@
     id: {
       title: "Tanyakan kepada perusahaan",
       copy: "BOTIA belum menemukan bukti publik yang cukup untuk produk ini. Anda dapat bertanya langsung kepada perusahaan.",
+      copy_unchecked: "BOTIA tidak dapat mengonsultasikan sumber untuk produk ini. Anda dapat bertanya langsung kepada perusahaan.",
       button: "Tulis ke perusahaan",
       followup: "Jika perusahaan mengirimkan dokumen, hubungi BOTIA dan kirimkan kepada kami. Kami akan meninjaunya sebelum menambahkannya sebagai bukti.",
       reply_title: "Jika merek membalas",
@@ -124,6 +130,7 @@
     it: {
       title: "Chiedi all’azienda",
       copy: "BOTIA non ha trovato prove pubbliche sufficienti per questo prodotto. Puoi chiedere direttamente all’azienda.",
+      copy_unchecked: "BOTIA non ha potuto consultare le fonti per questo prodotto. Puoi chiedere direttamente all'azienda.",
       button: "Scrivi all’azienda",
       followup: "Se l’azienda ti invia documentazione, contatta BOTIA e inoltracela. La esamineremo prima di aggiungerla come evidenza.",
       reply_title: "Se il marchio ti risponde",
@@ -143,6 +150,7 @@
     nl: {
       title: "Vraag het bedrijf",
       copy: "BOTIA heeft voor dit product niet genoeg openbaar bewijs gevonden. Je kunt het bedrijf rechtstreeks benaderen.",
+      copy_unchecked: "BOTIA kon de bronnen voor dit product niet raadplegen. Je kunt het bedrijf rechtstreeks benaderen.",
       button: "Schrijf het bedrijf",
       followup: "Als het bedrijf documentatie stuurt, neem dan contact op met BOTIA en stuur die naar ons door. Wij beoordelen ze voordat we ze als bewijs opnemen.",
       reply_title: "Als het merk je antwoordt",
@@ -162,6 +170,7 @@
     pl: {
       title: "Zapytaj firmę",
       copy: "BOTIA nie znalazła wystarczających publicznych dowodów dotyczących tego produktu. Możesz zapytać firmę bezpośrednio.",
+      copy_unchecked: "BOTIA nie mogła sprawdzić źródeł dla tego produktu. Możesz zapytać firmę bezpośrednio.",
       button: "Napisz do firmy",
       followup: "Jeśli firma prześle Ci dokumentację, skontaktuj się z BOTIA i przekaż ją nam. Sprawdzimy ją przed dodaniem jako dowód.",
       reply_title: "Jeśli marka Ci odpowie",
@@ -181,6 +190,7 @@
     pt: {
       title: "Pergunte à empresa",
       copy: "A BOTIA não encontrou evidência pública suficiente para este produto. Pode perguntar diretamente à empresa.",
+      copy_unchecked: "A BOTIA não conseguiu consultar as fontes para este produto. Pode perguntar diretamente à empresa.",
       button: "Escrever à empresa",
       followup: "Se a empresa lhe enviar documentação, contacte a BOTIA e envie-a para nós. Iremos analisá-la antes de a incorporar como evidência.",
       reply_title: "Se a marca lhe responder",
@@ -200,6 +210,7 @@
     ro: {
       title: "Întreabă compania",
       copy: "BOTIA nu a găsit suficiente dovezi publice pentru acest produs. Poți întreba direct compania.",
+      copy_unchecked: "BOTIA nu a putut consulta sursele pentru acest produs. Poți întreba direct compania.",
       button: "Scrie companiei",
       followup: "Dacă firma îți trimite documente, contactează BOTIA și trimite-ni-le. Le vom verifica înainte de a le adăuga drept dovadă.",
       reply_title: "Dacă marca îți răspunde",
@@ -219,6 +230,7 @@
     tr: {
       title: "Şirkete sor",
       copy: "BOTIA bu ürün için yeterli kamuya açık kanıt bulamadı. Şirkete doğrudan sorabilirsiniz.",
+      copy_unchecked: "BOTIA bu ürün için kaynaklara ulaşamadı. Şirkete doğrudan sorabilirsiniz.",
       button: "Şirkete yaz",
       followup: "Şirket size belge gönderirse BOTIA ile iletişime geçin ve bize iletin. Kanıt olarak eklemeden önce inceleyeceğiz.",
       reply_title: "Marka size yanıt verirse",
@@ -238,6 +250,7 @@
     zh: {
       title: "向公司询问",
       copy: "BOTIA 尚未找到足够的公开证据来支持该产品。你可以直接向公司询问。",
+      copy_unchecked: "BOTIA 无法查询该产品的来源。你可以直接向公司询问。",
       button: "写信给公司",
       followup: "如果公司向你提供文件，请联系 BOTIA 并发送给我们。我们会先审核，再决定是否纳入证据。",
       reply_title: "如果品牌回复你",
@@ -257,6 +270,7 @@
     ru: {
       title: "Спросить компанию",
       copy: "BOTIA не нашла достаточных общедоступных подтверждений для этого продукта. Вы можете напрямую обратиться к компании.",
+      copy_unchecked: "BOTIA не смогла обратиться к источникам по этому продукту. Вы можете напрямую обратиться к компании.",
       button: "Написать компании",
       followup: "Если компания пришлёт вам документы, свяжитесь с BOTIA и передайте их нам. Мы проверим их, прежде чем добавить как доказательство.",
       reply_title: "Если бренд вам ответит",
@@ -277,6 +291,26 @@
 
   const labels = I18N[lang] || I18N.en;
   const clean = value => String(value ?? "").trim();
+
+  const SERVICE_STATES = new Set([
+    "SOURCE_UNAVAILABLE",
+    "INVALID_GTIN"
+  ]);
+
+  // El estado del servicio lo publica traceability.js. Si la consulta
+  // no llegó a hacerse, este bloque no puede afirmar que no se encontró
+  // evidencia.
+  const serviceState = payload => {
+    const raw = clean(
+      payload?.state ||
+      payload?.service_state ||
+      document.documentElement.dataset.botiaTraceabilityState ||
+      params.get("state")
+    ).toUpperCase();
+
+    return SERVICE_STATES.has(raw) ? raw : "";
+  };
+
   const sourceModule = () => {
     const direct = clean(params.get("source"));
     if (direct) return direct;
@@ -371,8 +405,15 @@
     return records.some(r => r?.domain !== "identity" && POSITIVE.has(clean(r?.status)));
   };
 
-  const shouldShow = payload =>
-    clean(payload?.overall_status) === "NOT_VERIFIED" || !hasRelevantEvidence(payload);
+  const shouldShow = payload => {
+    const ctx = contextFrom(payload);
+
+    // Sin producto identificado no hay nada que preguntar a nadie.
+    if (!ctx.gtin && !ctx.product) return false;
+
+    return clean(payload?.overall_status) === "NOT_VERIFIED" ||
+      !hasRelevantEvidence(payload);
+  };
 
   const questionFor = () => {
     const module = sourceModule();
@@ -446,9 +487,16 @@
     title.className = "bmr-title";
     title.textContent = labels.title;
 
+    const state = serviceState(payload);
+
     const copy = document.createElement("p");
     copy.className = "bmr-copy";
-    copy.textContent = labels.copy;
+
+    // Si el servicio no pudo consultarse, el ofrecimiento sigue teniendo
+    // sentido, pero el motivo es otro.
+    copy.textContent = state
+      ? labels.copy_unchecked
+      : labels.copy;
 
     const button = document.createElement("button");
     button.type = "button";
