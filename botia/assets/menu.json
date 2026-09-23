@@ -80,6 +80,10 @@
       ]
     },
     {
+      "label_key": "nav_nutrition",
+      "url": "/pages/nutrition.html"
+    },
+    {
       "label_key": "nav_regulatory",
       "url": "/regulatory/index.html"
     },
@@ -88,8 +92,25 @@
       "url": "/ingredients/index.html"
     },
     {
-      "label_key": "nav_privacy",
-      "url": "/privacy.html"
+      "label_key": "nav_support",
+      "items": [
+        {
+          "label_key": "footer_help",
+          "url": "/help.html"
+        },
+        {
+          "label_key": "nav_privacy",
+          "url": "/privacy.html"
+        },
+        {
+          "label_key": "nav_terms",
+          "url": "/terms.html"
+        },
+        {
+          "label_key": "footer_notice",
+          "url": "/legal.html"
+        }
+      ]
     }
   ]
 }
