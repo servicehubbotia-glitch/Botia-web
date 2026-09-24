@@ -10,36 +10,52 @@
 
     let container, chatWindow, toggleBtn, messagesEl, inputEl, sendBtn, closeBtn;
     let isOpen = false;
+    let robotStateTimer = null;
 
-    // ============ IDIOMA ============
+    // ============================================================
+    // IDIOMA
+    // ============================================================
+
     function getCurrentLanguage() {
         const params = new URLSearchParams(window.location.search).get('lang');
+
         const supported = [
             'en','es','fr','de','it','pt','nl',
             'ru','zh','ar','tr','ro','pl','id'
         ];
 
-        if (params && supported.includes(params)) return params;
+        if (params && supported.includes(params)) {
+            return params;
+        }
 
         const saved = localStorage.getItem('botia-lang');
-        if (saved && supported.includes(saved)) return saved;
+
+        if (saved && supported.includes(saved)) {
+            return saved;
+        }
 
         const lang =
             (navigator.language || 'en')
                 .split('-')[0]
                 .toLowerCase();
 
-        return supported.includes(lang) ? lang : 'en';
+        return supported.includes(lang)
+            ? lang
+            : 'en';
     }
 
     function t(key) {
         return chatTranslations[key] || key;
     }
 
-    // ============ CONTEXTO DE PÁGINA ============
+    // ============================================================
+    // CONTEXTO DE PÁGINA
+    // ============================================================
+
     function getPageContext() {
         const params = new URLSearchParams(window.location.search);
         const pathname = window.location.pathname;
+
         const moduleName =
             document.body?.dataset?.botiaModule || '';
 
@@ -66,10 +82,12 @@
                 ingredientFilter?.value || '';
 
             const ingredient =
-                ingredientFromFilter || ingredientFromUrl;
+                ingredientFromFilter ||
+                ingredientFromUrl;
 
             if (ingredient) {
-                context.ingredient = ingredient;
+                context.ingredient =
+                    ingredient;
 
                 const selectedOption =
                     ingredientFilter?.options?.[
@@ -94,6 +112,7 @@
 
         if (ingredientMatch) {
             context.page = 'ingredient';
+
             context.ingredient =
                 decodeURIComponent(
                     ingredientMatch[1]
@@ -115,16 +134,17 @@
     }
 
     function getPageText() {
-        // Preferimos <main>: evita menú, footer y el propio chat.
         const source =
             document.querySelector('main') ||
             document.body;
 
-        if (!source) return '';
+        if (!source) {
+            return '';
+        }
 
-        const clone = source.cloneNode(true);
+        const clone =
+            source.cloneNode(true);
 
-        // Quitamos elementos que no son contenido informativo.
         clone
             .querySelectorAll(
                 [
@@ -139,7 +159,8 @@
                     'select',
                     'input',
                     'textarea',
-                    '[aria-hidden="true"]'
+                    '[aria-hidden="true"]',
+                    '#botia-chat-container'
                 ].join(',')
             )
             .forEach(el => el.remove());
@@ -153,8 +174,6 @@
                 .replace(/\n{3,}/g, '\n\n')
                 .trim();
 
-        // Límite suficientemente amplio para una página BOTIA.
-        // Si una página futura supera esto, después pasaremos a troceado.
         return text.slice(0, 30000);
     }
 
@@ -165,53 +184,284 @@
         };
     }
 
-    // ============ TRADUCCIONES ============
+    // ============================================================
+    // TRADUCCIONES
+    // ============================================================
+
     async function loadChatTranslations(lang) {
         try {
-            const r = await fetch(
+            const response = await fetch(
                 '/i18n/' + lang + '/chat.json',
                 { cache: 'no-store' }
             );
 
-            if (!r.ok) {
-                throw new Error('not found');
+            if (!response.ok) {
+                throw new Error('chat translation not found');
             }
 
-            const data = await r.json();
+            const data =
+                await response.json();
 
-            chatTranslations = data.ui || {};
+            chatTranslations =
+                data.ui || {};
+
             pageSuggestions =
                 data.pageSuggestions || {};
-        } catch (e) {
+        } catch (error) {
             try {
-                const r2 = await fetch(
+                const fallback = await fetch(
                     '/i18n/en/chat.json',
                     { cache: 'no-store' }
                 );
 
-                const data2 = await r2.json();
+                const data =
+                    await fallback.json();
 
                 chatTranslations =
-                    data2.ui || {};
+                    data.ui || {};
 
                 pageSuggestions =
-                    data2.pageSuggestions || {};
-            } catch (e2) {
+                    data.pageSuggestions || {};
+            } catch (_) {
                 chatTranslations = {};
                 pageSuggestions = {};
             }
         }
     }
 
-    // ============ PREGUNTAS SUGERIDAS ============
+    // ============================================================
+    // PREGUNTAS SUGERIDAS
+    // ============================================================
+
+    const SUGGESTION_TEMPLATES = {
+        en: {
+            ingredient: [
+                'What is {subject}?',
+                'Why does BOTIA flag {subject}?',
+                'What can and can’t BOTIA know about {subject} from the label?'
+            ],
+            page: [
+                'What is this page about?',
+                'What are the key points on this page?',
+                'What can BOTIA tell me about this topic?'
+            ]
+        },
+
+        es: {
+            ingredient: [
+                '¿Qué es {subject}?',
+                '¿Por qué BOTIA señala {subject}?',
+                '¿Qué puede y qué no puede saber BOTIA sobre {subject} a partir de la etiqueta?'
+            ],
+            page: [
+                '¿De qué trata esta página?',
+                '¿Cuáles son los puntos clave de esta página?',
+                '¿Qué puede explicarme BOTIA sobre este tema?'
+            ]
+        },
+
+        fr: {
+            ingredient: [
+                'Qu’est-ce que {subject} ?',
+                'Pourquoi BOTIA signale-t-il {subject} ?',
+                'Que peut et ne peut pas savoir BOTIA sur {subject} à partir de l’étiquette ?'
+            ],
+            page: [
+                'De quoi parle cette page ?',
+                'Quels sont les points clés de cette page ?',
+                'Que peut m’expliquer BOTIA sur ce sujet ?'
+            ]
+        },
+
+        de: {
+            ingredient: [
+                'Was ist {subject}?',
+                'Warum kennzeichnet BOTIA {subject}?',
+                'Was kann BOTIA anhand des Etiketts über {subject} wissen und was nicht?'
+            ],
+            page: [
+                'Worum geht es auf dieser Seite?',
+                'Was sind die wichtigsten Punkte dieser Seite?',
+                'Was kann BOTIA mir zu diesem Thema erklären?'
+            ]
+        },
+
+        it: {
+            ingredient: [
+                'Che cos’è {subject}?',
+                'Perché BOTIA segnala {subject}?',
+                'Che cosa può e non può sapere BOTIA su {subject} dall’etichetta?'
+            ],
+            page: [
+                'Di che cosa parla questa pagina?',
+                'Quali sono i punti chiave di questa pagina?',
+                'Che cosa può spiegarmi BOTIA su questo argomento?'
+            ]
+        },
+
+        pt: {
+            ingredient: [
+                'O que é {subject}?',
+                'Porque é que a BOTIA assinala {subject}?',
+                'O que é que a BOTIA pode e não pode saber sobre {subject} a partir do rótulo?'
+            ],
+            page: [
+                'De que trata esta página?',
+                'Quais são os pontos principais desta página?',
+                'O que é que a BOTIA me pode explicar sobre este tema?'
+            ]
+        },
+
+        nl: {
+            ingredient: [
+                'Wat is {subject}?',
+                'Waarom markeert BOTIA {subject}?',
+                'Wat kan BOTIA op basis van het etiket wel en niet weten over {subject}?'
+            ],
+            page: [
+                'Waar gaat deze pagina over?',
+                'Wat zijn de belangrijkste punten op deze pagina?',
+                'Wat kan BOTIA mij over dit onderwerp uitleggen?'
+            ]
+        },
+
+        ru: {
+            ingredient: [
+                'Что такое {subject}?',
+                'Почему BOTIA отмечает {subject}?',
+                'Что BOTIA может и чего не может определить о {subject} по этикетке?'
+            ],
+            page: [
+                'О чём эта страница?',
+                'Каковы основные моменты этой страницы?',
+                'Что BOTIA может объяснить мне по этой теме?'
+            ]
+        },
+
+        zh: {
+            ingredient: [
+                '{subject}是什么？',
+                '为什么 BOTIA 会标记{subject}？',
+                '仅根据标签，BOTIA 对{subject}能知道什么、不能知道什么？'
+            ],
+            page: [
+                '这个页面讲的是什么？',
+                '这个页面的重点是什么？',
+                'BOTIA 可以向我解释这个主题的哪些内容？'
+            ]
+        },
+
+        ar: {
+            ingredient: [
+                'ما هو {subject}؟',
+                'لماذا تشير BOTIA إلى {subject}؟',
+                'ما الذي يمكن لـ BOTIA معرفته وما الذي لا يمكنها معرفته عن {subject} من الملصق؟'
+            ],
+            page: [
+                'عن ماذا تتحدث هذه الصفحة؟',
+                'ما النقاط الرئيسية في هذه الصفحة؟',
+                'ماذا يمكن لـ BOTIA أن تشرح لي عن هذا الموضوع؟'
+            ]
+        },
+
+        tr: {
+            ingredient: [
+                '{subject} nedir?',
+                'BOTIA neden {subject} öğesini işaretliyor?',
+                'BOTIA etiketten {subject} hakkında neleri bilebilir ve neleri bilemez?'
+            ],
+            page: [
+                'Bu sayfa ne hakkında?',
+                'Bu sayfadaki temel noktalar nelerdir?',
+                'BOTIA bu konu hakkında bana ne açıklayabilir?'
+            ]
+        },
+
+        ro: {
+            ingredient: [
+                'Ce este {subject}?',
+                'De ce semnalează BOTIA {subject}?',
+                'Ce poate și ce nu poate afla BOTIA despre {subject} din etichetă?'
+            ],
+            page: [
+                'Despre ce este această pagină?',
+                'Care sunt punctele principale ale acestei pagini?',
+                'Ce îmi poate explica BOTIA despre acest subiect?'
+            ]
+        },
+
+        pl: {
+            ingredient: [
+                'Czym jest {subject}?',
+                'Dlaczego BOTIA oznacza {subject}?',
+                'Co BOTIA może, a czego nie może ustalić o {subject} na podstawie etykiety?'
+            ],
+            page: [
+                'O czym jest ta strona?',
+                'Jakie są najważniejsze informacje na tej stronie?',
+                'Co BOTIA może mi wyjaśnić na ten temat?'
+            ]
+        },
+
+        id: {
+            ingredient: [
+                'Apa itu {subject}?',
+                'Mengapa BOTIA menandai {subject}?',
+                'Apa yang dapat dan tidak dapat diketahui BOTIA tentang {subject} dari label?'
+            ],
+            page: [
+                'Halaman ini membahas apa?',
+                'Apa poin-poin utama di halaman ini?',
+                'Apa yang dapat dijelaskan BOTIA tentang topik ini?'
+            ]
+        }
+    };
+
+    function fillSubject(template, subject) {
+        return String(template || '')
+            .replace(/\{subject\}/g, subject);
+    }
+
+    function getGeneratedSuggestions() {
+        const context =
+            getPageContext();
+
+        const templates =
+            SUGGESTION_TEMPLATES[currentLang] ||
+            SUGGESTION_TEMPLATES.en;
+
+        if (context.page === 'ingredient') {
+            const subject =
+                context.ingredient_name ||
+                context.ingredient ||
+                context.title ||
+                '';
+
+            return templates.ingredient.map(
+                template =>
+                    fillSubject(template, subject)
+            );
+        }
+
+        return templates.page.slice();
+    }
+
     function getPageSuggestions() {
-        const context = getPageContext();
-        const suggestions =
+        const context =
+            getPageContext();
+
+        const explicit =
             pageSuggestions[context.page];
 
-        return Array.isArray(suggestions)
-            ? suggestions.slice(0, 3)
-            : [];
+        if (
+            Array.isArray(explicit) &&
+            explicit.length
+        ) {
+            return explicit.slice(0, 3);
+        }
+
+        return getGeneratedSuggestions()
+            .slice(0, 3);
     }
 
     function removePageSuggestions() {
@@ -220,14 +470,18 @@
                 '[data-page-suggestions]'
             );
 
-        if (old) old.remove();
+        if (old) {
+            old.remove();
+        }
     }
 
     function showPageSuggestions() {
         const suggestions =
             getPageSuggestions();
 
-        if (!suggestions.length) return;
+        if (!suggestions.length) {
+            return;
+        }
 
         removePageSuggestions();
 
@@ -272,19 +526,18 @@
         suggestions.forEach(
             function (question) {
                 const btn =
-                    document.createElement(
-                        'button'
-                    );
+                    document.createElement('button');
 
                 btn.type = 'button';
                 btn.className =
                     'botia-page-suggestion';
 
-                btn.textContent = question;
+                btn.textContent =
+                    question;
 
                 btn.style.cssText =
                     'width:100%;' +
-                    'text-align:left;' +
+                    'text-align:start;' +
                     'background:rgba(255,255,255,0.05);' +
                     'border:1px solid rgba(230,160,107,0.32);' +
                     'border-radius:14px;' +
@@ -295,13 +548,16 @@
                     'font-size:0.9rem;' +
                     'line-height:1.35;';
 
-                // No envía nada.
-                // Solo coloca la sugerencia en el campo.
                 btn.addEventListener(
                     'click',
                     function () {
                         inputEl.value =
                             question;
+
+                        setRobotState(
+                            'pointing',
+                            700
+                        );
 
                         inputEl.focus();
                     }
@@ -318,22 +574,74 @@
             messagesEl.scrollHeight;
     }
 
-    // ============ ROBOT ============
-    function getRobotSrc() {
-        return getPageSuggestions().length
-            ? '/botia/assets/robot/question.png'
-            : '/botia/assets/robot/welcome.png';
+    // ============================================================
+    // COMPORTAMIENTO DEL ROBOT
+    // ============================================================
+
+    const ROBOT_ASSETS = {
+        question:
+            '/botia/assets/robot/question.png',
+
+        pointing:
+            '/botia/assets/robot/pointing.png',
+
+        magnifier:
+            '/botia/assets/robot/magnifier.png',
+
+        positive:
+            '/botia/assets/robot/positive.png',
+
+        alarmed:
+            '/botia/assets/robot/alarmed.png'
+    };
+
+    function getRobotImg() {
+        return document.getElementById(
+            'botia-robot-img'
+        );
+    }
+
+    function setRobotState(
+        state = 'question',
+        restoreAfter = 0
+    ) {
+        const robotImg =
+            getRobotImg();
+
+        if (!robotImg) {
+            return;
+        }
+
+        if (robotStateTimer) {
+            clearTimeout(
+                robotStateTimer
+            );
+
+            robotStateTimer = null;
+        }
+
+        robotImg.src =
+            ROBOT_ASSETS[state] ||
+            ROBOT_ASSETS.question;
+
+        robotImg.dataset.state =
+            state;
+
+        if (restoreAfter > 0) {
+            robotStateTimer =
+                setTimeout(
+                    function () {
+                        setRobotState(
+                            'question'
+                        );
+                    },
+                    restoreAfter
+                );
+        }
     }
 
     function refreshContextualUi() {
-        const robotImg =
-            document.getElementById(
-                'botia-robot-img'
-            );
-
-        if (robotImg) {
-            robotImg.src = getRobotSrc();
-        }
+        setRobotState('question');
 
         if (inputEl) {
             inputEl.placeholder =
@@ -341,18 +649,25 @@
                 'Ask about this page…';
         }
 
-        if (isOpen) {
-            removePageSuggestions();
+        if (chatWindow) {
+            chatWindow.dir =
+                currentLang === 'ar'
+                    ? 'rtl'
+                    : 'ltr';
+        }
 
-            if (
-                getPageSuggestions().length
-            ) {
-                showPageSuggestions();
-            }
+        if (
+            isOpen &&
+            conversation.length === 0
+        ) {
+            showPageSuggestions();
         }
     }
 
-    // ============ DOM ============
+    // ============================================================
+    // MENSAJES
+    // ============================================================
+
     function appendMessage(role, text) {
         const div =
             document.createElement('div');
@@ -373,7 +688,8 @@
                 'color:#100707;' +
                 'border-bottom-right-radius:6px;';
 
-            div.textContent = text;
+            div.textContent =
+                text;
         } else {
             div.style.cssText =
                 base +
@@ -383,7 +699,8 @@
                 'border:1px solid rgba(255,255,255,0.08);' +
                 'border-bottom-left-radius:6px;';
 
-            div.textContent = text;
+            div.textContent =
+                text;
         }
 
         messagesEl.appendChild(div);
@@ -398,7 +715,8 @@
         const div =
             document.createElement('div');
 
-        div.id = 'botia-typing';
+        div.id =
+            'botia-typing';
 
         div.style.cssText =
             'align-self:flex-start;' +
@@ -426,12 +744,22 @@
                 'botia-typing'
             );
 
-        if (el) el.remove();
+        if (el) {
+            el.remove();
+        }
     }
 
-    // ============ IA ============
+    // ============================================================
+    // IA
+    // ============================================================
+
     async function sendToAI(message) {
-        appendMessage('user', message);
+        removePageSuggestions();
+
+        appendMessage(
+            'user',
+            message
+        );
 
         conversation.push({
             role: 'user',
@@ -442,24 +770,39 @@
         inputEl.disabled = true;
         sendBtn.disabled = true;
 
+        setRobotState(
+            'magnifier'
+        );
+
         appendTyping();
 
         try {
             const response =
-                await fetch(WORKER_URL, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type':
-                            'application/json'
-                    },
-                    body: JSON.stringify({
-                        language: currentLang,
-                        context:
-                            buildWorkerContext(),
-                        messages:
-                            conversation.slice(-8)
-                    })
-                });
+                await fetch(
+                    WORKER_URL,
+                    {
+                        method: 'POST',
+
+                        headers: {
+                            'Content-Type':
+                                'application/json'
+                        },
+
+                        body:
+                            JSON.stringify({
+                                language:
+                                    currentLang,
+
+                                context:
+                                    buildWorkerContext(),
+
+                                messages:
+                                    conversation.slice(
+                                        -8
+                                    )
+                            })
+                    }
+                );
 
             removeTyping();
 
@@ -475,7 +818,8 @@
 
             const reply =
                 data?.choices?.[0]
-                    ?.message?.content ||
+                    ?.message
+                    ?.content ||
                 t('connectionError') ||
                 'No response.';
 
@@ -489,10 +833,12 @@
                 content: reply
             });
 
-            if (window.botiaTalk) {
-                window.botiaTalk();
-            }
-        } catch (err) {
+            setRobotState(
+                'positive',
+                900
+            );
+
+        } catch (error) {
             removeTyping();
 
             appendMessage(
@@ -500,10 +846,19 @@
                 t('connectionError') ||
                 'Connection error.'
             );
+
+            setRobotState(
+                'alarmed',
+                1400
+            );
         }
 
-        inputEl.disabled = false;
-        sendBtn.disabled = false;
+        inputEl.disabled =
+            false;
+
+        sendBtn.disabled =
+            false;
+
         inputEl.focus();
     }
 
@@ -511,12 +866,17 @@
         const msg =
             inputEl.value.trim();
 
-        if (!msg) return;
+        if (!msg) {
+            return;
+        }
 
         sendToAI(msg);
     }
 
-    // ============ CREAR ELEMENTOS ============
+    // ============================================================
+    // CREAR ELEMENTOS
+    // ============================================================
+
     function createElements() {
         container =
             document.createElement('div');
@@ -539,6 +899,11 @@
         chatWindow.id =
             'botia-chat-window';
 
+        chatWindow.dir =
+            currentLang === 'ar'
+                ? 'rtl'
+                : 'ltr';
+
         chatWindow.style.cssText =
             'display:none;' +
             'width:380px;' +
@@ -551,6 +916,17 @@
             'box-shadow:0 20px 60px rgba(0,0,0,0.5);' +
             'font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;' +
             'margin-bottom:16px;';
+
+        chatWindow.setAttribute(
+            'role',
+            'dialog'
+        );
+
+        chatWindow.setAttribute(
+            'aria-label',
+            t('title') ||
+            'BOTIA Assistant'
+        );
 
         const header =
             document.createElement('div');
@@ -582,7 +958,9 @@
         header.appendChild(title);
 
         closeBtn =
-            document.createElement('button');
+            document.createElement(
+                'button'
+            );
 
         closeBtn.style.cssText =
             'background:transparent;' +
@@ -593,16 +971,34 @@
             'padding:0 4px;' +
             'line-height:1;';
 
-        closeBtn.textContent = '✕';
+        closeBtn.textContent =
+            '✕';
 
-        header.appendChild(closeBtn);
-        chatWindow.appendChild(header);
+        closeBtn.setAttribute(
+            'aria-label',
+            'Close'
+        );
+
+        header.appendChild(
+            closeBtn
+        );
+
+        chatWindow.appendChild(
+            header
+        );
 
         messagesEl =
-            document.createElement('div');
+            document.createElement(
+                'div'
+            );
 
         messagesEl.id =
             'botia-messages';
+
+        messagesEl.setAttribute(
+            'aria-live',
+            'polite'
+        );
 
         messagesEl.style.cssText =
             'flex:1;' +
@@ -629,9 +1025,12 @@
             'flex-shrink:0;';
 
         inputEl =
-            document.createElement('input');
+            document.createElement(
+                'input'
+            );
 
-        inputEl.type = 'text';
+        inputEl.type =
+            'text';
 
         inputEl.placeholder =
             t('pagePlaceholder') ||
@@ -648,10 +1047,14 @@
             'font-size:0.95rem;' +
             'outline:none;';
 
-        footer.appendChild(inputEl);
+        footer.appendChild(
+            inputEl
+        );
 
         sendBtn =
-            document.createElement('button');
+            document.createElement(
+                'button'
+            );
 
         sendBtn.textContent =
             t('sendButton') ||
@@ -668,11 +1071,18 @@
             'font-size:0.9rem;' +
             'font-family:inherit;';
 
-        footer.appendChild(sendBtn);
-        chatWindow.appendChild(footer);
+        footer.appendChild(
+            sendBtn
+        );
+
+        chatWindow.appendChild(
+            footer
+        );
 
         toggleBtn =
-            document.createElement('button');
+            document.createElement(
+                'button'
+            );
 
         toggleBtn.id =
             'botia-toggle-btn';
@@ -692,8 +1102,8 @@
         toggleBtn.innerHTML =
             '<div class="botia-robot-wrap" style="position:relative;width:132px;height:132px;">' +
             '<img src="' +
-            getRobotSrc() +
-            '" alt="BOTIA" id="botia-robot-img" style="width:132px;height:132px;object-fit:contain;display:block;filter:drop-shadow(0 8px 30px rgba(230,160,107,0.5));transition:transform 0.3s ease;">' +
+            ROBOT_ASSETS.question +
+            '" alt="BOTIA" id="botia-robot-img" data-state="question" style="width:132px;height:132px;object-fit:contain;display:block;filter:drop-shadow(0 8px 30px rgba(230,160,107,0.5));transition:transform 0.3s ease;">' +
             '</div>';
 
         container.appendChild(
@@ -709,16 +1119,26 @@
         );
     }
 
-    // ============ OPEN / CLOSE ============
+    // ============================================================
+    // OPEN / CLOSE
+    // ============================================================
+
     function openChat() {
         chatWindow.style.display =
             'flex';
 
         isOpen = true;
 
+        toggleBtn.classList.add(
+            'is-open'
+        );
+
+        setRobotState(
+            'question'
+        );
+
         if (
-            messagesEl.children.length === 0 &&
-            getPageSuggestions().length
+            conversation.length === 0
         ) {
             showPageSuggestions();
         }
@@ -731,9 +1151,20 @@
             'none';
 
         isOpen = false;
+
+        toggleBtn.classList.remove(
+            'is-open'
+        );
+
+        setRobotState(
+            'question'
+        );
     }
 
-    // ============ EVENTOS ============
+    // ============================================================
+    // EVENTOS
+    // ============================================================
+
     function attachEvents() {
         toggleBtn.addEventListener(
             'click',
@@ -758,24 +1189,40 @@
 
         inputEl.addEventListener(
             'keydown',
-            function (e) {
-                if (e.key === 'Enter') {
+            function (event) {
+                if (
+                    event.key ===
+                    'Enter'
+                ) {
                     handleSend();
                 }
             }
         );
 
+        document.addEventListener(
+            'keydown',
+            function (event) {
+                if (
+                    event.key ===
+                    'Escape' &&
+                    isOpen
+                ) {
+                    closeChat();
+                }
+            }
+        );
+
         const robotImg =
-            document.getElementById(
-                'botia-robot-img'
-            );
+            getRobotImg();
 
         if (robotImg) {
             toggleBtn.addEventListener(
                 'mouseenter',
                 function () {
-                    robotImg.style.transform =
-                        'scale(1.08) rotate(-3deg)';
+                    if (!isOpen) {
+                        robotImg.style.transform =
+                            'scale(1.06)';
+                    }
                 }
             );
 
@@ -783,38 +1230,18 @@
                 'mouseleave',
                 function () {
                     robotImg.style.transform =
-                        'scale(1) rotate(0deg)';
+                        'scale(1)';
                 }
             );
         }
 
-        window.botiaTalk =
-            function () {
-                const currentRobot =
-                    document.getElementById(
-                        'botia-robot-img'
-                    );
-
-                if (currentRobot) {
-                    currentRobot.style.transform =
-                        'scale(1.15) rotate(5deg)';
-
-                    setTimeout(
-                        function () {
-                            currentRobot.style.transform =
-                                'scale(1) rotate(0deg)';
-                        },
-                        300
-                    );
-                }
-            };
-
         window.addEventListener(
             'storage',
-            function (e) {
+            function (event) {
                 if (
-                    e.key !== 'botia-lang' ||
-                    !e.newValue
+                    event.key !==
+                        'botia-lang' ||
+                    !event.newValue
                 ) {
                     return;
                 }
@@ -823,7 +1250,8 @@
                     getCurrentLanguage();
 
                 if (
-                    nextLang === currentLang
+                    nextLang ===
+                    currentLang
                 ) {
                     return;
                 }
@@ -833,50 +1261,50 @@
 
                 loadChatTranslations(
                     currentLang
-                ).then(function () {
-                    const titleEl =
-                        document.getElementById(
-                            'botia-chat-title'
-                        );
-
-                    if (titleEl) {
-                        titleEl.textContent =
-                            t('title') ||
-                            'Assistant';
-                    }
-
-                    sendBtn.textContent =
-                        t('sendButton') ||
-                        'Send';
-
-                    toggleBtn.setAttribute(
-                        'aria-label',
-                        t('openChatLabel') ||
-                        'Open BOTIA chat'
-                    );
-
-                    refreshContextualUi();
-                });
+                ).then(
+                    refreshContextualUi
+                );
             }
         );
     }
 
-    // ============ ESTILOS ============
+    // ============================================================
+    // ESTILOS
+    // ============================================================
+
     function addStyles() {
         const style =
-            document.createElement('style');
+            document.createElement(
+                'style'
+            );
 
         style.textContent = [
             '@keyframes botia-typing { 0%,80%,100%{transform:scale(0.4);opacity:0.4} 40%{transform:scale(1);opacity:1} }',
-            '@keyframes botia-float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }',
-            '#botia-toggle-btn { animation:botia-float 3s ease-in-out infinite !important; }',
+
+            '@keyframes botia-float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-7px)} }',
+
+            '#botia-toggle-btn:not(.is-open) { animation:botia-float 3.8s ease-in-out infinite !important; }',
+
+            '#botia-toggle-btn.is-open { animation:none !important; }',
+
             '#botia-messages::-webkit-scrollbar { width:4px; }',
+
             '#botia-messages::-webkit-scrollbar-thumb { background:rgba(190,122,72,0.3);border-radius:12px; }',
+
+            '.botia-page-suggestion:hover { background:rgba(230,160,107,0.11) !important; }',
+
+            '@media (prefers-reduced-motion: reduce) { #botia-toggle-btn { animation:none !important; } }',
+
             '@media (max-width:540px) {',
+
             '  #botia-chat-window { width:92vw !important;height:460px !important; }',
+
             '  #botia-chat-container { right:12px !important;bottom:12px !important; }',
-            '  #botia-toggle-btn .botia-robot-wrap { width:120px !important;height:120px !important; }',
-            '  #botia-toggle-btn img { width:120px !important;height:120px !important; }',
+
+            '  #botia-toggle-btn .botia-robot-wrap { width:112px !important;height:112px !important; }',
+
+            '  #botia-toggle-btn img { width:112px !important;height:112px !important; }',
+
             '}'
         ].join('');
 
@@ -885,7 +1313,10 @@
         );
     }
 
-    // ============ INIT ============
+    // ============================================================
+    // INIT
+    // ============================================================
+
     async function initChat() {
         currentLang =
             getCurrentLanguage();
@@ -898,7 +1329,7 @@
         createElements();
         attachEvents();
 
-        // No auto-open.
+        // Nunca auto-open.
     }
 
     if (
@@ -912,4 +1343,6 @@
     } else {
         initChat();
     }
+
 })();
+
