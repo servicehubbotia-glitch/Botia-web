@@ -6,13 +6,14 @@
     "welcome": "👋 Salut ! Je suis l'assistant BOTIA. Je vais vous montrer des choses que les étiquettes ne vous disent pas. Vous pouvez aussi me poser toutes vos questions sur les ingrédients, les étiquettes ou les additifs.",
     "nextButton": "Question suivante",
     "discoverButton": "De quoi parle-t-on ?",
-    "limitMessage": "Vous avez utilisé vos 3 questions gratuites. Continuez avec BOTIA sur Google Play : https://play.google.com/store/apps/details?id=com.botia.safefood",
     "limitButton": "Obtenez BOTIA sur Google Play",
     "offTopic": "Je ne peux aider qu'avec des questions sur les ingrédients alimentaires et les étiquettes.",
     "error": "Désolé, il y a eu un problème.",
     "connectionError": "Erreur de connexion. Veuillez vérifier votre réseau.",
     "openChatLabel": "Ouvrir le chat BOTIA",
-    "tryButton": "Essayez BOTIA"
+    "tryButton": "Essayez BOTIA",
+    "pagePlaceholder": "Posez une question sur cette page…",
+    "suggestionsTitle": "Questions sur cette page"
   },
   "questions": [
     {
@@ -315,5 +316,12 @@
       "answer": "Il compte les nutriments. Il ne peut pas voir la reformulation. La liste des ingrédients le peut — mais elle n'a jamais été conçue pour être lue dans son ensemble.",
       "link": "/pages/ultra_processed.html"
     }
-  ]
+  ],
+  "pageSuggestions": {
+    "nutrition_overview": [
+      "Que signifie « pour 100 g » sur une étiquette nutritionnelle ?",
+      "Quelle est la différence entre le sel et le sodium ?",
+      "Pourquoi BOTIA sépare-t-il les valeurs déclarées des valeurs de référence officielles ?"
+    ]
+  }
 }

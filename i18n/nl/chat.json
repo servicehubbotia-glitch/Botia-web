@@ -6,13 +6,14 @@
     "welcome": "👋 Hoi! Ik ben de BOTIA-assistent. Ik laat je dingen zien die etiketten je niet vertellen. Je kunt me ook van alles vragen over ingrediënten, etiketten of additieven.",
     "nextButton": "Volgende vraag",
     "discoverButton": "Waar gaat dit over?",
-    "limitMessage": "Je hebt je 3 gratis vragen gebruikt. Ga verder met BOTIA op Google Play: https://play.google.com/store/apps/details?id=com.botia.safefood",
     "limitButton": "BOTIA downloaden op Google Play",
     "offTopic": "Ik kan alleen helpen met vragen over voedselingrediënten en etiketten.",
     "error": "Sorry, er was een probleem.",
     "connectionError": "Verbindingsfout. Controleer uw netwerk.",
     "openChatLabel": "BOTIA-chat openen",
-    "tryButton": "Probeer BOTIA"
+    "tryButton": "Probeer BOTIA",
+    "pagePlaceholder": "Stel een vraag over deze pagina…",
+    "suggestionsTitle": "Vragen over deze pagina"
   },
   "questions": [
     {
@@ -315,5 +316,12 @@
       "answer": "Het telt voedingsstoffen. Het kan herformulering niet zien. De ingrediëntenlijst kan dat wel — maar die was nooit bedoeld om als geheel te worden gelezen.",
       "link": "/pages/ultra_processed.html"
     }
-  ]
+  ],
+  "pageSuggestions": {
+    "nutrition_overview": [
+      "Wat betekent ‘per 100 g’ op een voedingswaardelabel?",
+      "Wat is het verschil tussen zout en natrium?",
+      "Waarom houdt BOTIA gedeclareerde waarden gescheiden van officiële referentiewaarden?"
+    ]
+  }
 }

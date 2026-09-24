@@ -6,13 +6,14 @@
     "welcome": "👋 Merhaba! Ben BOTIA asistanıyım. Size etiketlerin söylemediği şeyleri gösteririm. İçerikler, etiketler veya katkı maddeleri hakkında bana istediğiniz soruyu da sorabilirsiniz.",
     "nextButton": "Sıradaki soru",
     "discoverButton": "Bu ne hakkında?",
-    "limitMessage": "3 ücretsiz sorunuzu kullandınız. BOTIA ile Google Play'de devam edin: https://play.google.com/store/apps/details?id=com.botia.safefood",
     "limitButton": "BOTIA'yı Google Play'den edinin",
     "offTopic": "Sadece yemek malzemeleri ve etiketleri hakkındaki sorularda yardımcı olabilirim.",
     "error": "Üzgünüm, bir sorun oluştu.",
     "connectionError": "Bağlantı hatası. Lütfen ağınızı kontrol edin.",
     "openChatLabel": "BOTIA sohbetini aç",
-    "tryButton": "BOTIA'yı Dene"
+    "tryButton": "BOTIA'yı Dene",
+    "pagePlaceholder": "Bu sayfa hakkında soru sorun…",
+    "suggestionsTitle": "Bu sayfa hakkında sorular"
   },
   "questions": [
     {
@@ -315,5 +316,12 @@
       "answer": "Besinleri sayar. Reformülasyonu göremez. İçerik listesi görebilir — ama asla bir bütün olarak okunmak için tasarlanmamıştır.",
       "link": "/pages/ultra_processed.html"
     }
-  ]
+  ],
+  "pageSuggestions": {
+    "nutrition_overview": [
+      "Besin etiketinde “100 g başına” ne anlama gelir?",
+      "Tuz ile sodyum arasındaki fark nedir?",
+      "BOTIA neden beyan edilen değerleri resmî referans değerlerinden ayrı tutuyor?"
+    ]
+  }
 }

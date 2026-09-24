@@ -6,13 +6,14 @@
     "welcome": "👋 مرحباً! أنا مساعد BOTIA. سأريك أشياءً لا تخبرك بها الملصقات. يمكنك أيضاً أن تسألني أي شيء عن المكونات أو الملصقات أو الإضافات.",
     "nextButton": "السؤال التالي",
     "discoverButton": "عمّ نتحدث؟",
-    "limitMessage": "لقد استخدمت أسئلتك الثلاثة المجانية. تابع مع BOTIA على Google Play: https://play.google.com/store/apps/details?id=com.botia.safefood",
     "limitButton": "احصل على BOTIA من Google Play",
     "offTopic": "يمكنني المساعدة فقط في الأسئلة المتعلقة بمكونات الطعام والملصقات الغذائية.",
     "error": "عذرًا، كانت هناك مشكلة.",
     "connectionError": "خطأ في الاتصال. يرجى اليُرجى التحقق من شبكتك.",
     "openChatLabel": "فتح دردشة BOTIA",
-    "tryButton": "جرّب BOTIA"
+    "tryButton": "جرّب BOTIA",
+    "pagePlaceholder": "اسأل عن هذه الصفحة…",
+    "suggestionsTitle": "أسئلة حول هذه الصفحة"
   },
   "questions": [
     {
@@ -315,5 +316,12 @@
       "answer": "يعدّ العناصر الغذائية. لا يمكنه رؤية إعادة التركيب. قائمة المكونات يمكنها ذلك — لكنها لم تُصمم أبدًا لتُقرأ ككل.",
       "link": "/pages/ultra_processed.html"
     }
-  ]
+  ],
+  "pageSuggestions": {
+    "nutrition_overview": [
+      "ماذا تعني عبارة «لكل 100 غرام» على الملصق الغذائي؟",
+      "ما الفرق بين الملح والصوديوم؟",
+      "لماذا تفصل BOTIA بين القيم المعلنة والقيم المرجعية الرسمية؟"
+    ]
+  }
 }

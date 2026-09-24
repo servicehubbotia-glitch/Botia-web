@@ -6,13 +6,14 @@
     "welcome": "👋 Hallo! Ich bin der BOTIA-Assistent. Ich zeige dir Dinge, die dir Etiketten nicht verraten. Du kannst mich auch alles über Zutaten, Etiketten oder Zusatzstoffe fragen.",
     "nextButton": "Nächste Frage",
     "discoverButton": "Worum geht es?",
-    "limitMessage": "Du hast deine 3 kostenlosen Fragen aufgebraucht. Mach weiter mit BOTIA bei Google Play: https://play.google.com/store/apps/details?id=com.botia.safefood",
     "limitButton": "BOTIA bei Google Play holen",
     "offTopic": "Ich kann nur bei Fragen zu Lebensmittelzutaten und Kennzeichnungen helfen.",
     "error": "Entschuldigung, es gab ein Problem.",
     "connectionError": "Verbindungsfehler. Bitte überprüfen Sie Ihre Netzwerkverbindung.",
     "openChatLabel": "BOTIA-Chat öffnen",
-    "tryButton": "BOTIA ausprobieren"
+    "tryButton": "BOTIA ausprobieren",
+    "pagePlaceholder": "Frage zu dieser Seite…",
+    "suggestionsTitle": "Fragen zu dieser Seite"
   },
   "questions": [
     {
@@ -315,5 +316,12 @@
       "answer": "Es zählt Nährstoffe. Es kann keine Neuformulierung erkennen. Die Zutatenliste kann das — aber sie war nie dafür gedacht, als Ganzes gelesen zu werden.",
       "link": "/pages/ultra_processed.html"
     }
-  ]
+  ],
+  "pageSuggestions": {
+    "nutrition_overview": [
+      "Was bedeutet „pro 100 g“ auf einer Nährwertkennzeichnung?",
+      "Was ist der Unterschied zwischen Salz und Natrium?",
+      "Warum trennt BOTIA deklarierte Werte von offiziellen Referenzwerten?"
+    ]
+  }
 }

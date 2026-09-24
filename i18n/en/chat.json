@@ -5,13 +5,14 @@
     "sendButton": "Send",
     "nextButton": "Next question",
     "discoverButton": "What is this about?",
-    "limitMessage": "You've used your 3 free questions. Continue with BOTIA on Google Play: https://play.google.com/store/apps/details?id=com.botia.safefood",
     "limitButton": "Get BOTIA on Google Play",
     "offTopic": "I can only help with questions about food ingredients and labels.",
     "error": "Sorry, there was a problem.",
     "connectionError": "Connection error. Please check your network.",
     "openChatLabel": "Open BOTIA chat",
-    "tryButton": "Try BOTIA"
+    "tryButton": "Try BOTIA",
+    "pagePlaceholder": "Ask about this page…",
+    "suggestionsTitle": "Questions about this page"
   },
   "questions": [
     {
@@ -314,5 +315,12 @@
       "answer": "The front of the pack sells an idea; the ingredient list starts with the ingredients present in the greatest amounts under the applicable labelling rules. Pick up any pack now. Read only the first three. Then paste the full list into BOTIA.",
       "link": "/pages/evidence.html"
     }
-  ]
+  ],
+  "pageSuggestions": {
+    "nutrition_overview": [
+      "What does “per 100 g” mean on a nutrition label?",
+      "What is the difference between salt and sodium?",
+      "Why does BOTIA keep declared values separate from official reference values?"
+    ]
+  }
 }

@@ -6,13 +6,14 @@
     "welcome": "Cześć! Jestem asystentem BOTIA. Pokażę ci rzeczy, których etykiety ci nie mówią. Możesz też zapytać mnie o wszystko, co dotyczy składników, etykiet lub dodatków.",
     "nextButton": "Następne pytanie",
     "discoverButton": "O czym mówimy?",
-    "limitMessage": "Wykorzystano 3 darmowe pytania. Kontynuuj z BOTIA w Google Play: https://play.google.com/store/apps/details?id=com.botia.safefood",
     "limitButton": "Pobierz BOTIA z Google Play",
     "offTopic": "Mogę pomóc tylko w pytaniach dotyczących składników żywności i etykiet.",
     "error": "Przepraszam, wystąpił problem.",
     "connectionError": "Błąd połączenia. Sprawdź swoją sieć.",
     "openChatLabel": "Otwórz czat BOTIA",
-    "tryButton": "Wypróbuj BOTIA"
+    "tryButton": "Wypróbuj BOTIA",
+    "pagePlaceholder": "Zapytaj o tę stronę…",
+    "suggestionsTitle": "Pytania dotyczące tej strony"
   },
   "questions": [
     {
@@ -315,5 +316,12 @@
       "answer": "Liczy składniki odżywcze. Nie widzi reformulacji. Lista składników może — ale nigdy nie była przeznaczona do czytania jako całość.",
       "link": "/pages/ultra_processed.html"
     }
-  ]
+  ],
+  "pageSuggestions": {
+    "nutrition_overview": [
+      "Co oznacza „na 100 g” na etykiecie wartości odżywczej?",
+      "Jaka jest różnica między solą a sodem?",
+      "Dlaczego BOTIA oddziela wartości deklarowane od oficjalnych wartości referencyjnych?"
+    ]
+  }
 }
