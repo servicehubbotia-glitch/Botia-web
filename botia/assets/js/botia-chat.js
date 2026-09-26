@@ -446,9 +446,42 @@
         return templates.page.slice();
     }
 
-    function getPageSuggestions() {
+    async function getPageSuggestions() {
+        try {
+            await window.BOTIA?.init?.();
+        } catch (error) {
+            console.warn(
+                'BOTIA Chat: page translations not ready.',
+                error
+            );
+        }
+
         const context =
             getPageContext();
+
+        if (context.page === 'ingredient') {
+            const translationData =
+                window.BOTIA
+                    ?.translationData
+                    ?.() || {};
+
+            const robotQuestions =
+                Array.isArray(
+                    translationData.robot_questions
+                )
+                    ? translationData
+                        .robot_questions
+                        .filter(
+                            question =>
+                                typeof question === 'string' &&
+                                question.trim()
+                        )
+                    : [];
+
+            if (robotQuestions.length) {
+                return robotQuestions.slice(0, 3);
+            }
+        }
 
         const explicit =
             pageSuggestions[context.page];
@@ -475,9 +508,9 @@
         }
     }
 
-    function showPageSuggestions() {
+    async function showPageSuggestions() {
         const suggestions =
-            getPageSuggestions();
+            await getPageSuggestions();
 
         if (!suggestions.length) {
             return;
