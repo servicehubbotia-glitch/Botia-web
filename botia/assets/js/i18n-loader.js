@@ -17,6 +17,8 @@
       : fallback;
   };
 
+  const translationData = () => ({ ...currentTranslations });
+
   const LANGS = ["en", "es", "ar", "de", "fr", "nl", "it", "pt", "pl", "ro", "ru", "tr", "zh", "id"];
   const RTL = new Set(["ar"]);
 
@@ -997,7 +999,8 @@
     normalise,
     detectLanguage: language,
     loadTranslations,
-    translated
+    translated,
+    translationData
   };
 
   if (document.readyState === "loading") {
