@@ -592,7 +592,7 @@
                             700
                         );
 
-                        inputEl.focus();
+                        handleSend();
                     }
                 );
 
@@ -892,7 +892,6 @@
         sendBtn.disabled =
             false;
 
-        inputEl.focus();
     }
 
     function handleSend() {
@@ -1176,7 +1175,6 @@
             showPageSuggestions();
         }
 
-        inputEl.focus();
     }
 
     function closeChat() {
