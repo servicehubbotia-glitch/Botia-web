@@ -57,5 +57,9 @@
       "INVALID_GTIN": "The code read is not a valid GTIN, so no source could be consulted."
     },
     "contract_error": "This item was not displayed as verified because required traceability fields were missing."
-  }
+  },
+  "robot_questions": [
+    "What source does this ingredient come from, and can it be traced back to the manufacturer, batch or certification?",
+    "Can the origin of this ingredient be verified by product, manufacturer, market or batch?"
+  ]
 }
