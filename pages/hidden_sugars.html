@@ -201,35 +201,21 @@
        ===================================================== */
 
     .sugar-icon-stage {
-      min-height: 190px;
+      min-height: 180px;
       width: 220px;
-      padding: 8px;
-
-      position: relative;
-      overflow: hidden;
 
       display: grid;
       place-items: center;
       justify-self: end;
 
-      border: 1px solid rgba(190, 122, 72, .28);
-      border-radius: 24px;
-
-      background:
-        linear-gradient(
-          145deg,
-          rgba(36, 16, 16, .94),
-          rgba(8, 5, 5, .86)
-        );
-
-      box-shadow: 0 12px 30px rgba(0, 0, 0, .28);
+      overflow: visible;
     }
 
     .sugar-main-icon {
-      width: 205px;
-      max-width: none;
+      width: 210px;
+      max-width: 210px;
       height: auto;
-      max-height: 182px;
+      max-height: 180px;
 
       position: relative;
       z-index: 2;
@@ -238,9 +224,9 @@
       margin: 0;
 
       animation: none !important;
-      transform: scale(1.20) !important;
+      transform: none !important;
 
-      filter: drop-shadow(0 6px 12px rgba(0, 0, 0, .28));
+      filter: drop-shadow(0 6px 12px rgba(0, 0, 0, .22));
     }
 
 
@@ -702,15 +688,14 @@
       .sugar-hero-grid {
         grid-template-columns:
           minmax(0, 1fr)
-          190px;
+          180px;
 
         gap: 35px;
       }
 
       .sugar-icon-stage {
-        min-height: 154px;
-        width: 180px;
-        padding: 14px;
+        min-height: 145px;
+        width: 170px;
       }
 
       .sugar-section-head {
@@ -730,7 +715,7 @@
       }
 
       .sugar-hero-grid {
-        grid-template-columns: minmax(0, 1fr) 124px;
+        grid-template-columns: minmax(0, 1fr) 112px;
         gap: 18px;
       }
 
@@ -739,15 +724,13 @@
       }
 
       .sugar-icon-stage {
-        min-height: 112px;
-        width: 124px;
-        padding: 10px;
-        border-radius: 18px;
+        min-height: 104px;
+        width: 112px;
       }
 
       .sugar-main-icon {
-        width: 96px;
-        max-width: 96px;
+        width: 108px;
+        max-width: 108px;
       }
 
       .sugar-category-grid,
