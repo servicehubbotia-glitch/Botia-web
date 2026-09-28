@@ -158,8 +158,8 @@
 
     .sweetener-hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 180px;
-      gap: 30px;
+      grid-template-columns: minmax(0, 1fr) 230px;
+      gap: 36px;
       align-items: center;
     }
 
@@ -210,32 +210,46 @@
        ===================================================== */
 
     .sweetener-icon-stage {
-      min-height: 156px;
-      width: 180px;
+      min-height: 190px;
+      width: 220px;
+      padding: 18px;
+
+      position: relative;
+      overflow: hidden;
+
       display: grid;
       place-items: center;
       justify-self: end;
-      overflow: visible;
+
+      border: 1px solid rgba(190, 122, 72, .28);
+      border-radius: 24px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(36, 16, 16, .94),
+          rgba(8, 5, 5, .86)
+        );
+
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .28);
     }
 
     .sweetener-main-icon {
-      width: 96px;
-      max-width: 96px;
+      width: 160px;
+      max-width: 100%;
       height: auto;
+      max-height: 154px;
 
       position: relative;
       z-index: 2;
 
       object-fit: contain;
+      margin: 0;
 
       animation: none !important;
       transform: none !important;
 
-      filter:
-        drop-shadow(
-          0 18px 28px
-          rgba(0, 0, 0, .35)
-        );
+      filter: drop-shadow(0 6px 12px rgba(0, 0, 0, .28));
     }
 
 
@@ -676,13 +690,15 @@
       .sweetener-hero-grid {
         grid-template-columns:
           minmax(0, 1fr)
-          150px;
+          190px;
 
         gap: 35px;
       }
 
       .sweetener-icon-stage {
-        min-height: 132px;
+        min-height: 154px;
+        width: 180px;
+        padding: 14px;
       }
     }
 
@@ -697,7 +713,7 @@
       }
 
       .sweetener-hero-grid {
-        grid-template-columns: minmax(0, 1fr) 104px;
+        grid-template-columns: minmax(0, 1fr) 124px;
         gap: 18px;
       }
 
@@ -706,12 +722,15 @@
       }
 
       .sweetener-icon-stage {
-        min-height: 108px;
+        min-height: 112px;
+        width: 124px;
+        padding: 10px;
+        border-radius: 18px;
       }
 
       .sweetener-main-icon {
-        width: 88px;
-        max-width: 88px;
+        width: 96px;
+        max-width: 96px;
       }
 
       .sweetener-ingredient-grid,
@@ -886,7 +905,7 @@
 
           <img
             class="sweetener-main-icon hero-logo"
-            src="/botia/assets/sweeteners.png"
+            src="/botia/assets/sweeteners_capa.png"
             alt="BOTIA Not Sugar — non-sugar sweeteners"
             fetchpriority="high"
             onerror="this.src='/botia/assets/sweeteners.png'; this.onerror=null;"
