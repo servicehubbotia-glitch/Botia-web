@@ -279,3 +279,77 @@ body[dir="rtl"] .botia-header-bar {
   padding-left: 20px;
   padding-right: 70px;
 }
+
+
+/* ============================================
+   BOTIA — ALINEACIÓN GLOBAL DE CABECERAS
+   Misma caja horizontal que la landing
+   ============================================ */
+
+.home-topbar-inner,
+.about-topbar-inner,
+.try-topbar-inner,
+.animal-topbar-inner,
+.evidence-topbar-inner,
+.topbar-inner {
+  width: min(1180px, calc(100% - 40px)) !important;
+  max-width: 1180px !important;
+  margin-inline: auto !important;
+}
+
+/* En las cabeceras con contenedor propio, el menú forma parte de la caja centrada. */
+.home-topbar-inner #menuBtn,
+.about-topbar-inner #menuBtn,
+.try-topbar-inner #menuBtn,
+.animal-topbar-inner #menuBtn,
+.evidence-topbar-inner #menuBtn,
+.topbar-inner #menuBtn {
+  position: static !important;
+  flex: 0 0 42px;
+}
+
+/* Páginas que usan .botia-header-bar sin wrapper interior:
+   alinear sus extremos con la misma caja de 1180 px de la landing. */
+body.has-botia-header > #menuBtn {
+  left: max(20px, calc((100vw - 1180px) / 2)) !important;
+}
+
+body.has-botia-header .botia-header-bar {
+  padding-inline-start: max(70px, calc((100vw - 1180px) / 2 + 60px)) !important;
+  padding-inline-end: max(20px, calc((100vw - 1180px) / 2)) !important;
+}
+
+body[dir="rtl"].has-botia-header > #menuBtn {
+  right: max(20px, calc((100vw - 1180px) / 2)) !important;
+  left: auto !important;
+}
+
+body[dir="rtl"].has-botia-header .botia-header-bar {
+  padding-inline-start: max(70px, calc((100vw - 1180px) / 2 + 60px)) !important;
+  padding-inline-end: max(20px, calc((100vw - 1180px) / 2)) !important;
+}
+
+@media (max-width: 620px) {
+  .home-topbar-inner,
+  .about-topbar-inner,
+  .try-topbar-inner,
+  .animal-topbar-inner,
+  .evidence-topbar-inner,
+  .topbar-inner {
+    width: min(1180px, calc(100% - 28px)) !important;
+  }
+
+  body.has-botia-header > #menuBtn {
+    left: 14px !important;
+  }
+
+  body[dir="rtl"].has-botia-header > #menuBtn {
+    right: 14px !important;
+    left: auto !important;
+  }
+
+  body.has-botia-header .botia-header-bar {
+    padding-inline-start: 66px !important;
+    padding-inline-end: 14px !important;
+  }
+}
