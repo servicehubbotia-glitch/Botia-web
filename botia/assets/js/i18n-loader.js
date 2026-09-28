@@ -359,9 +359,53 @@
     });
   };
 
+  const chooseIngredientIcon = data => {
+    const layers = Array.isArray(data.layers) ? new Set(data.layers) : new Set();
+
+    // BOTIA visual priority:
+    // animal + muslim => Mushbooh/BOTIA jar
+    // woman => Woman
+    // then the specific evidence layer
+    // E-numbers is intentionally the lowest-priority layer.
+    if (layers.has("animal") && layers.has("muslim")) return "botia_jar_512.png";
+    if (layers.has("woman")) return "mujer.png";
+    if (layers.has("animal")) return "animal.png";
+    if (layers.has("muslim")) return "muslim.png";
+    if (layers.has("sugar")) return "Sugar.png";
+    if (layers.has("sweetener")) return "sweeteners.png";
+    if (layers.has("flavour")) return "flavors.png";
+    if (layers.has("texture")) return "texture.png";
+    if (layers.has("ultra_processed") || layers.has("ultra")) return "ultra_processed.png";
+    if (layers.has("enumbers")) return "enumbers.png";
+
+    // Nutrition and other records with their own dedicated icon keep it.
+    return data.module_icon || null;
+  };
+
+  const ensureIngredientIcon = data => {
+    if (!location.pathname.startsWith("/ingredients/") || location.pathname.endsWith("/ingredients/index.html")) return;
+
+    const iconName = chooseIngredientIcon(data);
+    if (!iconName) return;
+
+    let icon = document.getElementById("module_icon");
+    if (!icon) {
+      const hero = document.querySelector(".hero");
+      if (!hero) return;
+
+      icon = document.createElement("img");
+      icon.id = "module_icon";
+      icon.fetchPriority = "high";
+      icon.style.contentVisibility = "auto";
+      hero.insertBefore(icon, hero.firstElementChild);
+    }
+
+    icon.src = `/botia/assets/${iconName}`;
+    icon.alt = data.name ? `BOTIA — ${data.name} ingredient icon` : "BOTIA ingredient icon";
+  };
+
   const applyCollections = (data, lang) => {
-    const icon = document.getElementById("module_icon");
-    if (icon && data.module_icon) icon.src = `/botia/assets/${data.module_icon}`;
+    ensureIngredientIcon(data);
 
     const layers = document.getElementById("layers_container");
     if (layers && Array.isArray(data.layers)) {
