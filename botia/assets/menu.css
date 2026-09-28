@@ -353,3 +353,28 @@ body[dir="rtl"].has-botia-header .botia-header-bar {
     padding-inline-end: 14px !important;
   }
 }
+
+
+/* BOTIA drawer scrollbar */
+.botia-drawer {
+  scrollbar-width: thin;
+  scrollbar-color: #a85f38 #140909;
+}
+
+.botia-drawer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.botia-drawer::-webkit-scrollbar-track {
+  background: #140909;
+}
+
+.botia-drawer::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c77a49, #7b2f2f);
+  border: 2px solid #140909;
+  border-radius: 999px;
+}
+
+.botia-drawer::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #e6a06b, #91413a);
+}
