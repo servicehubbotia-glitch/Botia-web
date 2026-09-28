@@ -554,3 +554,82 @@ body[dir="rtl"].botia-info-page .hero .description {
 }
 
 /* BOTIA INFO PAGES — HERO LATERAL END */
+
+
+/* ============================================
+   BOTIA LAYER PAGES — COMPACT DESKTOP + MOBILE
+   Keep Nutrition unchanged.
+   ============================================ */
+
+body.botia-info-page:not([data-botia-module="nutrition"]) section[class$="-hero"],
+body.botia-info-page:not([data-botia-module="nutrition"]) section.hero {
+  padding-top: 40px !important;
+  padding-bottom: 30px !important;
+}
+
+body.botia-info-page:not([data-botia-module="nutrition"]) section[class$="-hero"] h1,
+body.botia-info-page:not([data-botia-module="nutrition"]) section.hero h1 {
+  font-size: clamp(2.35rem, 4.2vw, 3.9rem) !important;
+  line-height: 1 !important;
+  margin-bottom: 14px !important;
+}
+
+body.botia-info-page:not([data-botia-module="nutrition"]) [class$="-icon-stage"] {
+  min-height: 285px !important;
+}
+
+body.botia-info-page:not([data-botia-module="nutrition"]) [class$="-icon-stage"] .hero-logo,
+body.botia-info-page:not([data-botia-module="nutrition"]) section[class$="-hero"] .hero-logo,
+body.botia-info-page:not([data-botia-module="nutrition"]) section.hero .hero-logo {
+  width: min(210px, 64%) !important;
+  height: auto !important;
+}
+
+body.botia-info-page:not([data-botia-module="nutrition"]) section:not([class$="-hero"]):not(.hero) {
+  padding-top: 38px !important;
+  padding-bottom: 38px !important;
+}
+
+body.botia-info-page:not([data-botia-module="nutrition"]) section:not([class$="-hero"]):not(.hero) h2 {
+  font-size: clamp(1.65rem, 2.8vw, 2.45rem) !important;
+  line-height: 1.08 !important;
+}
+
+body.botia-info-page:not([data-botia-module="nutrition"]) article,
+body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-card"],
+body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
+  min-height: 0 !important;
+}
+
+@media (max-width: 700px) {
+  body.botia-info-page:not([data-botia-module="nutrition"]) section[class$="-hero"],
+  body.botia-info-page:not([data-botia-module="nutrition"]) section.hero {
+    padding-top: 28px !important;
+    padding-bottom: 24px !important;
+  }
+
+  body.botia-info-page:not([data-botia-module="nutrition"]) section[class$="-hero"] h1,
+  body.botia-info-page:not([data-botia-module="nutrition"]) section.hero h1 {
+    font-size: clamp(2rem, 9vw, 3rem) !important;
+  }
+
+  body.botia-info-page:not([data-botia-module="nutrition"]) [class$="-icon-stage"] {
+    min-height: 210px !important;
+  }
+
+  body.botia-info-page:not([data-botia-module="nutrition"]) [class$="-icon-stage"] .hero-logo,
+  body.botia-info-page:not([data-botia-module="nutrition"]) section[class$="-hero"] .hero-logo,
+  body.botia-info-page:not([data-botia-module="nutrition"]) section.hero .hero-logo {
+    width: min(165px, 58%) !important;
+    height: auto !important;
+  }
+
+  body.botia-info-page:not([data-botia-module="nutrition"]) section:not([class$="-hero"]):not(.hero) {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+
+  body.botia-info-page:not([data-botia-module="nutrition"]) section:not([class$="-hero"]):not(.hero) h2 {
+    font-size: clamp(1.45rem, 7vw, 2rem) !important;
+  }
+}
