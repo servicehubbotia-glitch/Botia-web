@@ -749,24 +749,12 @@
     evidence.className =
       "cta-button";
 
-    if (isNutritionProfile) {
-      evidence.href =
-        document.getElementById("sources_title")
-          ? "#sources_title"
-          : "#sources_container";
-    } else {
-      const evidenceHref =
-        new URL(
-          "/pages/evidence.html",
-          location.origin
-        );
-      evidenceHref.searchParams.set(
-        "lang",
-        lang
-      );
-      evidence.href =
-        evidenceHref.toString();
-    }
+    // "Evidence" in an ingredient profile means the studies/sources
+    // attached to that exact profile. It is not the general Evidence layer.
+    evidence.href =
+      document.getElementById("sources_title")
+        ? "#sources_title"
+        : "#sources_container";
 
     evidence.textContent =
       evidenceLabel;
