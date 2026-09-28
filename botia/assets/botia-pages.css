@@ -636,8 +636,8 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
 
 
 /* ============================================
-   BOTIA EVIDENCE PROFILE CARD
-   Studies/sources for the current ingredient.
+   BOTIA EVIDENCE PROFILE CARDS
+   Rich metadata from BOTIA Knowledge Base
    ============================================ */
 
 .botia-evidence-button {
@@ -646,41 +646,35 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
 }
 
 .botia-evidence-dialog {
-  width: min(720px, calc(100% - 32px));
-  max-height: min(78vh, 760px);
+  width: min(820px, calc(100% - 32px));
+  max-height: min(84vh, 820px);
   padding: 0;
-  border: 1px solid rgba(230, 160, 107, 0.42);
+  border: 1px solid rgba(230,160,107,.42);
   border-radius: 20px;
-  background: #160b0b;
+  background: #120808;
   color: #f2e4dc;
   box-shadow: 0 24px 80px rgba(0,0,0,.62);
   overflow: hidden;
 }
 
 .botia-evidence-dialog::backdrop {
-  background: rgba(0,0,0,.70);
+  background: rgba(0,0,0,.72);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
 
-.botia-evidence-card {
-  max-height: min(78vh, 760px);
+.botia-evidence-panel {
+  max-height: min(84vh, 820px);
   overflow-y: auto;
   padding: 22px;
   scrollbar-width: thin;
   scrollbar-color: #a85f38 #140909;
 }
 
-.botia-evidence-card::-webkit-scrollbar {
-  width: 10px;
-}
-
-.botia-evidence-card::-webkit-scrollbar-track {
-  background: #140909;
-}
-
-.botia-evidence-card::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #c77a49, #7b2f2f);
+.botia-evidence-panel::-webkit-scrollbar { width: 10px; }
+.botia-evidence-panel::-webkit-scrollbar-track { background: #140909; }
+.botia-evidence-panel::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg,#c77a49,#7b2f2f);
   border: 2px solid #140909;
   border-radius: 999px;
 }
@@ -691,7 +685,7 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
   justify-content: space-between;
   gap: 18px;
   padding-bottom: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   border-bottom: 1px solid rgba(190,122,72,.24);
 }
 
@@ -715,48 +709,86 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
   cursor: pointer;
 }
 
-.botia-evidence-source-list {
+.botia-evidence-study-list {
   display: grid;
-  gap: 10px;
+  gap: 14px;
 }
 
-.botia-evidence-source {
-  display: block;
-  padding: 14px 16px;
-  border: 1px solid rgba(190,122,72,.26);
-  border-radius: 12px;
-  background: rgba(255,255,255,.035);
+.botia-evidence-study-card {
+  position: relative;
+  padding: 18px;
+  border: 1px solid rgba(190,122,72,.28);
+  border-radius: 15px;
+  background:
+    linear-gradient(145deg,rgba(36,16,16,.82),rgba(17,8,8,.92));
+}
+
+.botia-evidence-study-card h3 {
+  margin: 0 0 8px;
   color: #f2e4dc;
-  line-height: 1.45;
-  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
-.botia-evidence-source:hover,
-.botia-evidence-source:focus-visible {
-  border-color: rgba(230,160,107,.68);
-  background: rgba(190,122,72,.12);
-  color: #ffd8bd;
+.botia-evidence-author {
+  margin: 0 0 7px;
+  color: #e6a06b;
+  font-size: .88rem;
+  font-weight: 700;
+}
+
+.botia-evidence-meta,
+.botia-evidence-status {
+  margin: 0 0 7px;
+  color: #a98c7c;
+  font-size: .78rem;
+  line-height: 1.45;
+}
+
+.botia-evidence-description {
+  margin: 8px 0 0;
+  color: #c0a08c;
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.botia-evidence-source-link {
+  display: inline-flex;
+  margin-top: 12px;
+  padding: 7px 11px;
+  border: 1px solid rgba(230,160,107,.44);
+  border-radius: 9px;
+  background: rgba(190,122,72,.10);
+  color: #e6a06b;
+  text-decoration: none;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.botia-evidence-source-link:hover,
+.botia-evidence-source-link:focus-visible {
+  background: rgba(190,122,72,.22);
+  border-color: rgba(230,160,107,.72);
   outline: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width:600px) {
   .botia-evidence-dialog {
-    width: calc(100% - 20px);
-    max-height: 84vh;
+    width: calc(100% - 18px);
+    max-height: 88vh;
     border-radius: 16px;
   }
 
-  .botia-evidence-card {
-    max-height: 84vh;
-    padding: 16px;
+  .botia-evidence-panel {
+    max-height: 88vh;
+    padding: 14px;
   }
 
   .botia-evidence-card-header h2 {
-    font-size: 1.12rem;
+    font-size: 1.08rem;
   }
 
-  .botia-evidence-source {
-    padding: 12px 13px;
-    font-size: .9rem;
+  .botia-evidence-study-card {
+    padding: 15px;
   }
 }

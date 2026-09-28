@@ -673,6 +673,28 @@
     return regulatoryIngredientSlugsPromise;
   };
 
+  let evidenceCatalogPromise = null;
+
+  const loadEvidenceCatalog = async () => {
+    if (!evidenceCatalogPromise) {
+      evidenceCatalogPromise = fetch(
+        "/botia/data/evidence-catalog.json",
+        { cache: "no-store" }
+      )
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Evidence catalog ${response.status}`);
+          }
+          return response.json();
+        })
+        .catch(error => {
+          console.warn("BOTIA Evidence catalog:", error);
+          return { ingredients: {} };
+        });
+    }
+    return evidenceCatalogPromise;
+  };
+
   const renderRegulatoryButton = async (lang, data) => {
     const why = document.getElementById("why_botia");
     if (!why) return;
@@ -739,16 +761,16 @@
     wrapper.style.gap =
       "10px";
 
-    // Evidence is the source/study card for this exact ingredient profile.
-    // It is separate from evidence-layer navigation.
-    const sources =
+    // Evidence = studies/sources for this exact ingredient profile.
+    // Metadata is enriched from BOTIA Knowledge Base (source map + catalog).
+    const profileSources =
       Array.isArray(data?.sources)
         ? data.sources.filter(source =>
             /^https?:\/\//i.test(String(source?.url || "").trim())
           )
         : [];
 
-    if (sources.length) {
+    if (profileSources.length) {
       const evidence =
         document.createElement("button");
 
@@ -769,10 +791,64 @@
         `${evidenceLabel} — ${profileName}`
       );
 
-      evidence.addEventListener("click", () => {
+      evidence.addEventListener("click", async () => {
         document
           .getElementById("botia-evidence-dialog")
           ?.remove();
+
+        const catalog =
+          await loadEvidenceCatalog();
+
+        const richSources =
+          catalog?.ingredients?.[slug]?.sources || [];
+
+        const richByUrl =
+          new Map(
+            richSources
+              .filter(source => source.official_url)
+              .map(source => [
+                String(source.official_url).replace(/\/$/, ""),
+                source
+              ])
+          );
+
+        const cards =
+          profileSources.map(source => {
+            const url =
+              String(source.url || "").trim();
+
+            const rich =
+              richByUrl.get(url.replace(/\/$/, ""))
+              || richSources.find(item =>
+                String(item.label || "").trim() ===
+                String(source.label || "").trim()
+              )
+              || {};
+
+            return {
+              title:
+                rich.title
+                || rich.label
+                || source.label
+                || url,
+              author:
+                rich.author || "",
+              date:
+                rich.date || "",
+              version:
+                rich.version || "",
+              jurisdiction:
+                rich.jurisdiction || "",
+              subject:
+                rich.subject || "",
+              documentStatus:
+                rich.document_status || "",
+              verification:
+                rich.verification_status || "",
+              url:
+                rich.official_url || url
+            };
+          });
 
         const dialog =
           document.createElement("dialog");
@@ -783,11 +859,11 @@
         dialog.className =
           "botia-evidence-dialog";
 
-        const card =
+        const panel =
           document.createElement("div");
 
-        card.className =
-          "botia-evidence-card";
+        panel.className =
+          "botia-evidence-panel";
 
         const header =
           document.createElement("div");
@@ -818,77 +894,126 @@
           "Close"
         );
 
-        header.append(
-          heading,
-          close
-        );
+        header.append(heading, close);
 
-        const sourceList =
+        const list =
           document.createElement("div");
 
-        sourceList.className =
-          "botia-evidence-source-list";
+        list.className =
+          "botia-evidence-study-list";
 
-        sources.forEach(source => {
-          const link =
-            document.createElement("a");
+        cards.forEach(cardData => {
+          const card =
+            document.createElement("article");
 
-          link.className =
-            "botia-evidence-source";
+          card.className =
+            "botia-evidence-study-card";
 
-          link.href =
-            String(source.url);
+          const title =
+            document.createElement("h3");
 
-          link.target =
-            "_blank";
+          title.textContent =
+            cardData.title;
 
-          link.rel =
-            "noopener noreferrer";
+          card.appendChild(title);
 
-          link.textContent =
-            String(
-              source.label ||
-              source.url
+          if (cardData.author) {
+            const author =
+              document.createElement("p");
+            author.className =
+              "botia-evidence-author";
+            author.textContent =
+              cardData.author;
+            card.appendChild(author);
+          }
+
+          const meta =
+            [
+              cardData.date,
+              cardData.version,
+              cardData.jurisdiction
+            ].filter(Boolean);
+
+          if (meta.length) {
+            const metaLine =
+              document.createElement("p");
+            metaLine.className =
+              "botia-evidence-meta";
+            metaLine.textContent =
+              meta.join(" · ");
+            card.appendChild(metaLine);
+          }
+
+          if (
+            cardData.subject &&
+            !/^Evidencia citada por BOTIA:/i.test(cardData.subject)
+          ) {
+            const description =
+              document.createElement("p");
+            description.className =
+              "botia-evidence-description";
+            description.textContent =
+              cardData.subject;
+            card.appendChild(description);
+          }
+
+          const statusBits =
+            [
+              cardData.documentStatus,
+              cardData.verification
+            ].filter(Boolean);
+
+          if (statusBits.length) {
+            const status =
+              document.createElement("p");
+            status.className =
+              "botia-evidence-status";
+            status.textContent =
+              statusBits.join(" · ");
+            card.appendChild(status);
+          }
+
+          if (cardData.url) {
+            const link =
+              document.createElement("a");
+            link.className =
+              "botia-evidence-source-link";
+            link.href =
+              cardData.url;
+            link.target =
+              "_blank";
+            link.rel =
+              "noopener noreferrer";
+            link.textContent =
+              "Abrir fuente ↗";
+            link.setAttribute(
+              "aria-label",
+              cardData.title
             );
+            card.appendChild(link);
+          }
 
-          sourceList.appendChild(
-            link
-          );
+          list.appendChild(card);
         });
 
-        card.append(
-          header,
-          sourceList
-        );
-
-        dialog.appendChild(
-          card
-        );
-
-        document.body.appendChild(
-          dialog
-        );
+        panel.append(header, list);
+        dialog.appendChild(panel);
+        document.body.appendChild(dialog);
 
         const closeDialog = () => {
-          if (dialog.open && dialog.close) {
+          if (
+            dialog.open &&
+            typeof dialog.close === "function"
+          ) {
             dialog.close();
           }
           dialog.remove();
         };
 
-        close.addEventListener(
-          "click",
-          closeDialog
-        );
-
-        dialog.addEventListener(
-          "click",
-          event => {
-            if (event.target === dialog) {
-              closeDialog();
-            }
-          }
-        );
+        close.addEventListener("click", closeDialog);
+        dialog.addEventListener("click", event => {
+          if (event.target === dialog) closeDialog();
+        });
 
         if (typeof dialog.showModal === "function") {
           dialog.showModal();
@@ -897,9 +1022,7 @@
         }
       });
 
-      wrapper.appendChild(
-        evidence
-      );
+      wrapper.appendChild(evidence);
     }
 
     // Regulatory normal para ingredientes con registros.
