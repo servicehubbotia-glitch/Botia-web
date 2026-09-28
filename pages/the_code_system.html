@@ -156,8 +156,8 @@
 
     .code-hero-grid {
       display: grid;
-      grid-template-columns: 1.32fr .68fr;
-      gap: 38px;
+      grid-template-columns: minmax(0, 1fr) 180px;
+      gap: 30px;
       align-items: center;
     }
 
@@ -206,8 +206,8 @@
     /* ICONO */
 
     .code-icon-stage {
-      min-height: 120px;
-      width: 140px;
+      min-height: 156px;
+      width: 180px;
       display: grid;
       place-items: center;
       justify-self: end;
@@ -770,13 +770,13 @@
       .code-hero-grid {
         grid-template-columns:
           minmax(0, 1fr)
-          140px;
+          150px;
 
         gap: 35px;
       }
 
       .code-icon-stage {
-        min-height: 100px;
+        min-height: 132px;
       }
 
       .code-dual-grid {
@@ -795,7 +795,7 @@
       }
 
       .code-hero-grid {
-        grid-template-columns: minmax(0, 1fr) 88px;
+        grid-template-columns: minmax(0, 1fr) 104px;
         gap: 18px;
       }
 
@@ -804,7 +804,7 @@
       }
 
       .code-icon-stage {
-        min-height: 96px;
+        min-height: 108px;
       }
 
       .code-main-icon {
