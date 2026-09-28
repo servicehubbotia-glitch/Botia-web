@@ -705,13 +705,6 @@
     const isNutritionProfile =
       NUTRITION_PROFILE_SLUGS.has(slug);
 
-    if (
-      !validSlugs.has(slug) &&
-      !isNutritionProfile
-    ) {
-      return;
-    }
-
     const labels =
       await sharedNavigationLabels(lang);
 
@@ -746,38 +739,51 @@
     wrapper.style.gap =
       "10px";
 
-    // Nutrition tiene evidencia propia en el bloque Sources.
+    // Evidence is always available from ingredient profiles.
+    const evidence =
+      document.createElement("a");
+
+    evidence.id =
+      "botia-evidence-link";
+
+    evidence.className =
+      "cta-button";
+
     if (isNutritionProfile) {
-      const evidence =
-        document.createElement("a");
-
-      evidence.id =
-        "botia-evidence-link";
-
-      evidence.className =
-        "cta-button";
-
       evidence.href =
         document.getElementById("sources_title")
           ? "#sources_title"
           : "#sources_container";
-
-      evidence.textContent =
-        evidenceLabel;
-
-      evidence.setAttribute(
-        "aria-label",
-        `${evidenceLabel} — ${profileName}`
+    } else {
+      const evidenceHref =
+        new URL(
+          "/pages/evidence.html",
+          location.origin
+        );
+      evidenceHref.searchParams.set(
+        "lang",
+        lang
       );
-
-      wrapper.appendChild(
-        evidence
-      );
+      evidence.href =
+        evidenceHref.toString();
     }
+
+    evidence.textContent =
+      evidenceLabel;
+
+    evidence.setAttribute(
+      "aria-label",
+      `${evidenceLabel} — ${profileName}`
+    );
+
+    wrapper.appendChild(
+      evidence
+    );
 
     // Regulatory normal para ingredientes con registros.
     // Para Nutrition se activa la vista de fuentes oficiales
     // si todavía no existen filas estructuradas.
+    if (validSlugs.has(slug) || isNutritionProfile) {
     const href =
       new URL(
         "/regulatory/",
@@ -824,6 +830,7 @@
     wrapper.appendChild(
       regulatory
     );
+    }
 
     why.insertAdjacentElement(
       "afterend",
