@@ -673,7 +673,7 @@
     return regulatoryIngredientSlugsPromise;
   };
 
-  const renderRegulatoryButton = async lang => {
+  const renderRegulatoryButton = async (lang, data) => {
     const why = document.getElementById("why_botia");
     if (!why) return;
 
@@ -739,34 +739,168 @@
     wrapper.style.gap =
       "10px";
 
-    // Evidence is always available from ingredient profiles.
-    const evidence =
-      document.createElement("a");
+    // Evidence is the source/study card for this exact ingredient profile.
+    // It is separate from evidence-layer navigation.
+    const sources =
+      Array.isArray(data?.sources)
+        ? data.sources.filter(source =>
+            /^https?:\/\//i.test(String(source?.url || "").trim())
+          )
+        : [];
 
-    evidence.id =
-      "botia-evidence-link";
+    if (sources.length) {
+      const evidence =
+        document.createElement("button");
 
-    evidence.className =
-      "cta-button";
+      evidence.id =
+        "botia-evidence-link";
 
-    // "Evidence" in an ingredient profile means the studies/sources
-    // attached to that exact profile. It is not the general Evidence layer.
-    evidence.href =
-      document.getElementById("sources_title")
-        ? "#sources_title"
-        : "#sources_container";
+      evidence.className =
+        "cta-button botia-evidence-button";
 
-    evidence.textContent =
-      evidenceLabel;
+      evidence.type =
+        "button";
 
-    evidence.setAttribute(
-      "aria-label",
-      `${evidenceLabel} — ${profileName}`
-    );
+      evidence.textContent =
+        evidenceLabel;
 
-    wrapper.appendChild(
-      evidence
-    );
+      evidence.setAttribute(
+        "aria-label",
+        `${evidenceLabel} — ${profileName}`
+      );
+
+      evidence.addEventListener("click", () => {
+        document
+          .getElementById("botia-evidence-dialog")
+          ?.remove();
+
+        const dialog =
+          document.createElement("dialog");
+
+        dialog.id =
+          "botia-evidence-dialog";
+
+        dialog.className =
+          "botia-evidence-dialog";
+
+        const card =
+          document.createElement("div");
+
+        card.className =
+          "botia-evidence-card";
+
+        const header =
+          document.createElement("div");
+
+        header.className =
+          "botia-evidence-card-header";
+
+        const heading =
+          document.createElement("h2");
+
+        heading.textContent =
+          `${evidenceLabel} — ${profileName}`;
+
+        const close =
+          document.createElement("button");
+
+        close.type =
+          "button";
+
+        close.className =
+          "botia-evidence-close";
+
+        close.textContent =
+          "×";
+
+        close.setAttribute(
+          "aria-label",
+          "Close"
+        );
+
+        header.append(
+          heading,
+          close
+        );
+
+        const sourceList =
+          document.createElement("div");
+
+        sourceList.className =
+          "botia-evidence-source-list";
+
+        sources.forEach(source => {
+          const link =
+            document.createElement("a");
+
+          link.className =
+            "botia-evidence-source";
+
+          link.href =
+            String(source.url);
+
+          link.target =
+            "_blank";
+
+          link.rel =
+            "noopener noreferrer";
+
+          link.textContent =
+            String(
+              source.label ||
+              source.url
+            );
+
+          sourceList.appendChild(
+            link
+          );
+        });
+
+        card.append(
+          header,
+          sourceList
+        );
+
+        dialog.appendChild(
+          card
+        );
+
+        document.body.appendChild(
+          dialog
+        );
+
+        const closeDialog = () => {
+          if (dialog.open && dialog.close) {
+            dialog.close();
+          }
+          dialog.remove();
+        };
+
+        close.addEventListener(
+          "click",
+          closeDialog
+        );
+
+        dialog.addEventListener(
+          "click",
+          event => {
+            if (event.target === dialog) {
+              closeDialog();
+            }
+          }
+        );
+
+        if (typeof dialog.showModal === "function") {
+          dialog.showModal();
+        } else {
+          dialog.setAttribute("open", "");
+        }
+      });
+
+      wrapper.appendChild(
+        evidence
+      );
+    }
 
     // Regulatory normal para ingredientes con registros.
     // Para Nutrition se activa la vista de fuentes oficiales
@@ -820,10 +954,12 @@
     );
     }
 
-    why.insertAdjacentElement(
-      "afterend",
-      wrapper
-    );
+    if (wrapper.children.length) {
+      why.insertAdjacentElement(
+        "afterend",
+        wrapper
+      );
+    }
   };
 
   const triggerItems = () => {
@@ -996,7 +1132,7 @@
     applyCollections(data, loaded);
     renderIngredientIndex(data, loaded);
     preserveLanguageInInternalLinks(loaded);
-    await renderRegulatoryButton(loaded);
+    await renderRegulatoryButton(loaded, data);
     return true;
   };
 
