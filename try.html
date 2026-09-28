@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>BOTIA — Try it</title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BOTIA — Try it">
+  <meta name="twitter:description" content="Photograph a food ingredient list and see what BOTIA detects.">
+  <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "BOTIA — Try it", "description": "Photograph a food ingredient list and see what BOTIA detects.", "url": "https://www.botia-safefood.com/try.html", "isPartOf": {"@type": "WebSite", "name": "BOTIA", "url": "https://www.botia-safefood.com/"}}</script>
   <meta name="description" content="Photograph a food ingredient list and see what BOTIA detects.">
   <meta property="og:title" content="BOTIA — Try it">
   <meta property="og:description" content="Photograph a food ingredient list and see what BOTIA detects.">
@@ -507,12 +512,7 @@
   function currentLang() {
     var q = new URLSearchParams(location.search).get("lang");
     if (q && LANGS.indexOf(q.toLowerCase().split("-")[0]) > -1) return q.toLowerCase().split("-")[0];
-    try {
-      var saved = localStorage.getItem("botia-lang");
-      if (saved && LANGS.indexOf(saved) > -1) return saved;
-    } catch (_) {}
-    var n = (navigator.language || "en").toLowerCase().split("-")[0];
-    return LANGS.indexOf(n) > -1 ? n : "en";
+    return "en";
   }
 
   function t(id, fallback) {

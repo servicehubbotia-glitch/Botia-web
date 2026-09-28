@@ -4,6 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BOTIA — Help & FAQ</title>
+  <meta property="og:title" content="BOTIA — Help & FAQ">
+  <meta property="og:description" content="BOTIA Help & FAQ — scanning labels, Choices, Evidence, barcode, nutrition, privacy and access.">
+  <meta property="og:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <meta property="og:url" content="https://www.botia-safefood.com/help.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BOTIA — Help & FAQ">
+  <meta name="twitter:description" content="BOTIA Help & FAQ — scanning labels, Choices, Evidence, barcode, nutrition, privacy and access.">
+  <meta name="twitter:image" content="https://www.botia-safefood.com/botia_jar_512.png">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "BOTIA — Help & FAQ", "description": "BOTIA Help & FAQ — scanning labels, Choices, Evidence, barcode, nutrition, privacy and access.", "url": "https://www.botia-safefood.com/help.html", "isPartOf": {"@type": "WebSite", "name": "BOTIA", "url": "https://www.botia-safefood.com/"}}</script>
 <meta name="description" content="BOTIA Help & FAQ — scanning labels, Choices, Evidence, barcode, nutrition, privacy and access.">
 <link rel="canonical" href="https://www.botia-safefood.com/help.html">
 <link rel="alternate" hreflang="en" href="https://www.botia-safefood.com/help.html?lang=en">
@@ -115,9 +125,9 @@ id:{skip_link:"Lewati ke konten utama",kicker:"BANTUAN",title:"Bantuan & FAQ",su
 });
 const LANGS=["en","es","ar","de","fr","nl","it","pt","pl","ro","ru","tr","zh","id"];
 function norm(v){const x=String(v||"").toLowerCase().split("-")[0];return LANGS.includes(x)?x:"en"}
-function wanted(){const q=new URLSearchParams(location.search).get("lang");if(q)return norm(q);try{const s=localStorage.getItem("botia-lang");if(s)return norm(s)}catch(_){}return norm(navigator.language)}
+function wanted(){const q=new URLSearchParams(location.search).get("lang");return q?norm(q):"en"}
 function setHelpLanguage(l){l=norm(l);try{localStorage.setItem("botia-lang",l)}catch(_){}const u=new URL(location.href);u.searchParams.set("lang",l);location.href=u}
-function render(){let l=wanted();if(!COPY[l])l="en";const c=COPY[l];document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";document.body.dir=document.documentElement.dir;document.getElementById("lang-select").value=l;Object.entries(c).forEach(([k,v])=>{const e=document.getElementById(k);if(e)e.textContent=v});document.getElementById("privacy_link").textContent=c.privacy;document.getElementById("about_link").textContent=c.about;document.getElementById("privacy_link").href=`/privacy.html?lang=${l}`;document.getElementById("about_link").href=`/pages/about.html?lang=${l}`;document.title="BOTIA — "+c.title}
+function render(){let l=wanted();if(!COPY[l])l="en";const c=COPY[l];document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";document.body.dir=document.documentElement.dir;document.getElementById("lang-select").value=l;Object.entries(c).forEach(([k,v])=>{const e=document.getElementById(k);if(e)e.textContent=v});document.getElementById("privacy_link").textContent=c.privacy;document.getElementById("about_link").textContent=c.about;document.getElementById("privacy_link").href=`/privacy.html?lang=${l}`;document.getElementById("about_link").href=`/pages/about.html?lang=${l}`;document.title="BOTIA — "+c.title;const description=c.subtitle;document.querySelector('meta[name="description"]').content=description;document.querySelector('meta[property="og:title"]').content=document.title;document.querySelector('meta[name="twitter:title"]').content=document.title;document.querySelector('meta[property="og:description"]').content=description;document.querySelector('meta[name="twitter:description"]').content=description;const canonical=document.querySelector('link[rel="canonical"]');if(new URLSearchParams(location.search).has("lang"))canonical.href="https://www.botia-safefood.com/help.html?lang="+l;document.querySelector('meta[property="og:url"]').content=canonical.href;const graph=document.querySelector('script[type="application/ld+json"]');const page=JSON.parse(graph.textContent);page.name=document.title;page.description=description;page.url=canonical.href;graph.textContent=JSON.stringify(page)}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",render,{once:true});else render();
 </script>
 <script src="/botia/assets/js/botia-chat.js"></script>

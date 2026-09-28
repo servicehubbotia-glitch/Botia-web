@@ -229,11 +229,6 @@
     return LANGS.includes(lang) ? lang : "en";
   };
 
-  const readStoredLanguage = () => {
-    try { return localStorage.getItem("botia-lang"); }
-    catch (_) { return null; }
-  };
-
   const storeLanguage = lang => {
     try { localStorage.setItem("botia-lang", lang); }
     catch (_) { /* Storage can be unavailable inside some WebViews. */ }
@@ -247,9 +242,9 @@
   const language = () => {
     const query = new URLSearchParams(location.search).get("lang");
     if (query) return normalise(query);
-    const stored = readStoredLanguage();
-    if (stored) return normalise(stored);
-    return normalise(navigator.language);
+    // The URL without ?lang= is the English x-default URL in the sitemap.
+    // Its content must not vary with browser or previously stored language.
+    return "en";
   };
 
   window.cambiarIdioma = lang => {
@@ -346,12 +341,22 @@
     const langParam = new URLSearchParams(location.search).get("lang");
     if (langParam && LANGS.includes(normalise(langParam))) {
       const localised = new URL(location.pathname, location.origin);
-      localised.searchParams.set("lang", langParam);
+      localised.searchParams.set("lang", normalise(langParam));
       const localisedUrl = localised.toString();
       const canonicalLink = document.querySelector('link[rel="canonical"]');
       if (canonicalLink) canonicalLink.setAttribute("href", localisedUrl);
       document.querySelector('meta[property="og:url"]')?.setAttribute("content", localisedUrl);
     }
+    // Keep existing WebPage structured data in sync with the rendered variant.
+    document.querySelectorAll('script[type="application/ld+json"]').forEach(script => {
+      let graph;
+      try { graph = JSON.parse(script.textContent); } catch (_) { return; }
+      if (!graph || !["WebPage", "CollectionPage"].includes(graph["@type"])) return;
+      if (data.page_title || data.title) graph.name = data.page_title || `BOTIA — ${data.title}`;
+      if (description) graph.description = description;
+      graph.url = document.querySelector('link[rel="canonical"]')?.href || graph.url;
+      script.textContent = JSON.stringify(graph);
+    });
   };
 
   const applyCollections = (data, lang) => {
