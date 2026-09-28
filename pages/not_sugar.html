@@ -210,52 +210,17 @@
        ===================================================== */
 
     .sweetener-icon-stage {
-      min-height: 290px;
-
-      position: relative;
-      overflow: hidden;
-
+      min-height: 120px;
+      width: 140px;
       display: grid;
       place-items: center;
-
-      border: 1px solid var(--page-line);
-      border-radius: 30px;
-
-      background:
-        linear-gradient(
-          145deg,
-          rgba(36, 16, 16, .94),
-          rgba(8, 5, 5, .82)
-        );
-
-      box-shadow: var(--page-shadow);
-    }
-
-    .sweetener-icon-stage::before,
-    .sweetener-icon-stage::after {
-      content: "";
-
-      position: absolute;
-
-      width: 190px;
-      height: 190px;
-
-      border: 1px solid rgba(230, 160, 107, .10);
-      border-radius: 50%;
-    }
-
-    .sweetener-icon-stage::before {
-      left: -90px;
-      top: -90px;
-    }
-
-    .sweetener-icon-stage::after {
-      right: -110px;
-      bottom: -120px;
+      justify-self: end;
+      overflow: visible;
     }
 
     .sweetener-main-icon {
-      width: min(210px, 64%);
+      width: 96px;
+      max-width: 96px;
       height: auto;
 
       position: relative;
@@ -711,13 +676,13 @@
       .sweetener-hero-grid {
         grid-template-columns:
           minmax(0, 1fr)
-          320px;
+          140px;
 
         gap: 35px;
       }
 
       .sweetener-icon-stage {
-        min-height: 350px;
+        min-height: 100px;
       }
     }
 
@@ -732,8 +697,8 @@
       }
 
       .sweetener-hero-grid {
-        grid-template-columns: 1fr;
-        gap: 26px;
+        grid-template-columns: minmax(0, 1fr) 88px;
+        gap: 18px;
       }
 
       .sweetener-hero h1 {
@@ -741,11 +706,12 @@
       }
 
       .sweetener-icon-stage {
-        min-height: 300px;
+        min-height: 96px;
       }
 
       .sweetener-main-icon {
-        width: min(235px, 70%);
+        width: 88px;
+        max-width: 88px;
       }
 
       .sweetener-ingredient-grid,
