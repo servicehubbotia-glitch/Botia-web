@@ -378,3 +378,20 @@ body[dir="rtl"].has-botia-header .botia-header-bar {
 .botia-drawer::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #e6a06b, #91413a);
 }
+
+
+/* BOTIA translucent global headers — let the page background continue behind the bar */
+.botia-header-bar,
+.home-topbar,
+.try-topbar,
+.animal-topbar,
+.evidence-topbar,
+.top {
+  background: linear-gradient(
+    180deg,
+    rgba(8, 5, 5, 0.68),
+    rgba(8, 5, 5, 0.50)
+  ) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  backdrop-filter: blur(14px) saturate(120%);
+}
