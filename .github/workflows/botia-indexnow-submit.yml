@@ -2,14 +2,15 @@ name: BOTIA IndexNow submit
 
 on:
   push:
-    paths:
-      - "tools/indexnow/RUN"
+    branches:
+      - main
 
 permissions:
   contents: write
 
 jobs:
   submit:
+    if: ${{ hashFiles('tools/indexnow/RUN') != '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
