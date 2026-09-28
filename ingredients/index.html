@@ -119,6 +119,26 @@
     .layer-texture   { background: #2a4a2a; color: #fff; }
     .layer-flavour   { background: #4a4a0a; color: #fff; }
     .layer-enumbers  { background: #3a3a3a; color: #fff; }
+
+    /* BOTIA scrollbar for the long ingredient index */
+    html {
+      scrollbar-width: thin;
+      scrollbar-color: #a85f38 #140909;
+    }
+    html::-webkit-scrollbar {
+      width: 12px;
+    }
+    html::-webkit-scrollbar-track {
+      background: #140909;
+    }
+    html::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #c77a49, #7b2f2f);
+      border: 2px solid #140909;
+      border-radius: 999px;
+    }
+    html::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, #e6a06b, #91413a);
+    }
   </style>
 
 
