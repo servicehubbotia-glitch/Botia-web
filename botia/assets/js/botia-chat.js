@@ -717,6 +717,24 @@
         }
     }
 
+    function compactBotReply(text) {
+        const clean = String(text || '')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+        if (!clean) {
+            return clean;
+        }
+
+        const sentences =
+            clean.match(/[^.!?。！？]+[.!?。！？]+|[^.!?。！？]+$/g) || [clean];
+
+        return sentences
+            .slice(0, 2)
+            .join(' ')
+            .trim();
+    }
+
     // ============================================================
     // MENSAJES
     // ============================================================
@@ -855,8 +873,15 @@
                                         content: BOTIA_RESPONSE_RULES
                                     },
                                     ...conversation.slice(
-                                        -8
-                                    )
+                                        -8,
+                                        -1
+                                    ),
+                                    {
+                                        role: 'user',
+                                        content:
+                                            message +
+                                            '\n\nRESPONSE FORMAT: Answer in the same language. Maximum 2 short sentences. Be direct and do not repeat the same idea.'
+                                    }
                                 ]
                             })
                     }
@@ -874,12 +899,17 @@
             const data =
                 await response.json();
 
-            const reply =
+            const rawReply =
                 data?.choices?.[0]
                     ?.message
                     ?.content ||
                 t('connectionError') ||
                 'No response.';
+
+            const reply =
+                compactBotReply(
+                    rawReply
+                );
 
             appendMessage(
                 'bot',
