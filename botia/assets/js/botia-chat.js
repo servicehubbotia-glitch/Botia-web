@@ -717,24 +717,6 @@
         }
     }
 
-    function compactBotReply(text) {
-        const clean = String(text || '')
-            .replace(/\s+/g, ' ')
-            .trim();
-
-        if (!clean) {
-            return clean;
-        }
-
-        const sentences =
-            clean.match(/[^.!?。！？]+[.!?。！？]+|[^.!?。！？]+$/g) || [clean];
-
-        return sentences
-            .slice(0, 2)
-            .join(' ')
-            .trim();
-    }
-
     // ============================================================
     // MENSAJES
     // ============================================================
@@ -899,17 +881,12 @@
             const data =
                 await response.json();
 
-            const rawReply =
+            const reply =
                 data?.choices?.[0]
                     ?.message
                     ?.content ||
                 t('connectionError') ||
                 'No response.';
-
-            const reply =
-                compactBotReply(
-                    rawReply
-                );
 
             appendMessage(
                 'bot',
