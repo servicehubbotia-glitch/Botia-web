@@ -339,6 +339,11 @@
             '如果某种配料没有出现在这里，是否意味着它没有相关限制？',
             '为什么同一种配料会出现在多行中？',
             '一项措施目前正在实施是什么意思？'
+        ],
+        ro: [
+            'Dacă un ingredient nu apare aici, înseamnă că nu există restricții pentru el?',
+            'De ce același ingredient apare în mai multe rânduri?',
+            'Ce înseamnă că o măsură se aplică în prezent?'
         ]
     };
 
