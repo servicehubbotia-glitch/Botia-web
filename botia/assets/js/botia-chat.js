@@ -284,6 +284,29 @@
         }
     };
 
+    const REGULATORY_PAGE_QUESTIONS = {
+        es: [
+            'Si un ingrediente no aparece aquí, ¿significa que está ' + 'permitido?',
+            '¿Por qué un mismo ingrediente aparece en varias filas?',
+            '¿Qué significa que una medida esté ' + 'vigente?'
+        ],
+        en: [
+            'If an ingredient does not appear here, does that mean it is ' + 'permitted?',
+            'Why does the same ingredient appear in several rows?',
+            'What does it mean when a measure is currently ' + 'in force?'
+        ],
+        fr: [
+            'Si un ingrédient n’apparaît pas ici, cela signifie-t-il qu’il est ' + 'autorisé ?',
+            'Pourquoi un même ingrédient apparaît-il sur plusieurs lignes ?',
+            'Que signifie le fait qu’une mesure soit ' + 'en vigueur ?'
+        ],
+        de: [
+            'Wenn ein Inhaltsstoff hier nicht erscheint, bedeutet das, dass er ' + 'erlaubt ist?',
+            'Warum erscheint derselbe Inhaltsstoff in mehreren Zeilen?',
+            'Was bedeutet es, wenn eine Maßnahme ' + 'in Kraft ist?'
+        ]
+    };
+
     const SUGGESTION_TEMPLATES = {
         en: {
             ingredient: [
@@ -532,6 +555,16 @@
             if (robotQuestions.length) {
                 return robotQuestions.slice(0, 3);
             }
+        }
+
+        if (
+            context.page === 'regulatory' &&
+            Array.isArray(
+                REGULATORY_PAGE_QUESTIONS[currentLang]
+            )
+        ) {
+            return REGULATORY_PAGE_QUESTIONS[currentLang]
+                .slice(0, 3);
         }
 
         const explicit =
