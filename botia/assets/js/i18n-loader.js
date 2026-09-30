@@ -781,6 +781,23 @@
       evidence.className =
         "cta-button botia-evidence-button";
 
+      // A <button> does not inherit typography exactly like the adjacent <a>.
+      // Normalize it so Evidence and Regulatory render as the same control.
+      evidence.style.fontFamily =
+        "inherit";
+      evidence.style.fontSize =
+        "inherit";
+      evidence.style.fontWeight =
+        "inherit";
+      evidence.style.lineHeight =
+        "inherit";
+      evidence.style.letterSpacing =
+        "inherit";
+      evidence.style.appearance =
+        "none";
+      evidence.style.webkitAppearance =
+        "none";
+
       evidence.type =
         "button";
 
