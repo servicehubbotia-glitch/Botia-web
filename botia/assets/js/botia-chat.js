@@ -309,6 +309,11 @@
             'Se un ingrediente non compare qui, significa che non è soggetto a restrizioni?',
             'Perché lo stesso ingrediente compare in più righe?',
             'Che cosa significa che una misura è attualmente applicabile?'
+        ],
+        pt: [
+            'Se um ingrediente não aparece aqui, significa que não está sujeito a restrições?',
+            'Por que o mesmo ingrediente aparece em várias linhas?',
+            'O que significa uma medida estar atualmente em aplicação?'
         ]
     };
 
