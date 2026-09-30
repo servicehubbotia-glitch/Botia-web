@@ -588,11 +588,13 @@
                             question;
 
                         setRobotState(
-                            'pointing',
-                            700
+                            'pointing'
                         );
 
-                        handleSend();
+                        window.setTimeout(
+                            handleSend,
+                            550
+                        );
                     }
                 );
 
@@ -612,6 +614,9 @@
     // ============================================================
 
     const ROBOT_ASSETS = {
+        welcome:
+            '/botia/assets/robot/welcome.png',
+
         question:
             '/botia/assets/robot/question.png',
 
@@ -635,7 +640,7 @@
     }
 
     function setRobotState(
-        state = 'question',
+        state = 'welcome',
         restoreAfter = 0
     ) {
         const robotImg =
@@ -655,7 +660,7 @@
 
         robotImg.src =
             ROBOT_ASSETS[state] ||
-            ROBOT_ASSETS.question;
+            ROBOT_ASSETS.welcome;
 
         robotImg.dataset.state =
             state;
@@ -674,7 +679,9 @@
     }
 
     function refreshContextualUi() {
-        setRobotState('question');
+        setRobotState(
+            isOpen ? 'question' : 'welcome'
+        );
 
         if (inputEl) {
             inputEl.placeholder =
@@ -1134,8 +1141,8 @@
         toggleBtn.innerHTML =
             '<div class="botia-robot-wrap" style="position:relative;width:132px;height:132px;">' +
             '<img src="' +
-            ROBOT_ASSETS.question +
-            '" alt="BOTIA" id="botia-robot-img" data-state="question" style="width:132px;height:132px;object-fit:contain;display:block;filter:drop-shadow(0 8px 30px rgba(230,160,107,0.5));transition:transform 0.3s ease;">' +
+            ROBOT_ASSETS.welcome +
+            '" alt="BOTIA" id="botia-robot-img" data-state="welcome" style="width:132px;height:132px;object-fit:contain;display:block;filter:drop-shadow(0 8px 30px rgba(230,160,107,0.5));transition:transform 0.3s ease;">' +
             '</div>';
 
         container.appendChild(
@@ -1188,7 +1195,7 @@
         );
 
         setRobotState(
-            'question'
+            'welcome'
         );
     }
 
