@@ -200,13 +200,13 @@ body{
 }
 
 .home-hero{
-  padding:52px 0 36px;
+  padding:40px 0 20px;
 }
 
 .home-hero-grid{
   display:grid;
-  grid-template-columns:1.24fr .76fr;
-  gap:44px;
+  grid-template-columns:minmax(0,1fr) 250px;
+  gap:36px;
   align-items:center;
 }
 
@@ -262,7 +262,9 @@ body{
 .home-btn-secondary:visited{color:var(--home-accent2)}
 
 .home-jar-stage{
-  min-height:330px;
+  width:230px;
+  min-height:190px;
+  justify-self:end;
   border:1px solid var(--home-line);
   border-radius:30px;
   background:linear-gradient(145deg,rgba(36,16,16,.94),rgba(8,5,5,.82));
@@ -277,17 +279,17 @@ body{
 .home-jar-stage::after{
   content:"";
   position:absolute;
-  width:210px;
-  height:210px;
+  width:150px;
+  height:150px;
   border:1px solid rgba(230,160,107,.10);
   border-radius:50%;
 }
 
-.home-jar-stage::before{left:-72px;top:-72px}
-.home-jar-stage::after{right:-88px;bottom:-96px}
+.home-jar-stage::before{left:-52px;top:-52px}
+.home-jar-stage::after{right:-62px;bottom:-70px}
 
 .home-jar-stage img{
-  width:min(245px,70%);
+  width:min(118px,58%);
   height:auto;
   position:relative;
   z-index:2;
@@ -305,15 +307,15 @@ body{
 }
 
 .home-section{
-  padding:54px 0;
+  padding:36px 0;
 }
 
 .home-section-head{
   display:flex;
   align-items:end;
   justify-content:space-between;
-  gap:30px;
-  margin-bottom:28px;
+  gap:24px;
+  margin-bottom:18px;
 }
 
 .home-section-head h2{
@@ -321,6 +323,16 @@ body{
   line-height:1.05;
   letter-spacing:-.04em;
   margin:8px 0;
+}
+
+.home-how-title .home-how-subtitle{
+  display:block;
+  margin-top:5px;
+  color:var(--home-muted);
+  font-size:.56em;
+  line-height:1.25;
+  letter-spacing:-.015em;
+  font-weight:650;
 }
 
 .home-section-head p{
@@ -367,6 +379,13 @@ body{
   color:var(--home-muted);
   line-height:1.6;
   font-size:.94rem;
+}
+
+#how .home-section-head{
+  align-items:flex-start;
+}
+#how .home-section-head > p{
+  margin-top:8px;
 }
 
 .home-you-decide{
@@ -433,7 +452,7 @@ body{
 }
 
 .home-statement{
-  padding:44px 0;
+  padding:28px 0;
 }
 
 .home-statement-box{
@@ -535,7 +554,7 @@ body{
 
 .home-final{
   text-align:center;
-  padding:54px 0;
+  padding:40px 0;
 }
 
 .home-final h2{
@@ -567,20 +586,24 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
 
 @media(max-width:900px){
   .home-anchor-nav{display:none}
-  .home-hero-grid,
+  .home-hero-grid{grid-template-columns:minmax(0,1fr) 180px;gap:24px}
   .home-source-band{grid-template-columns:1fr}
   .home-how-grid,
   .home-layers-grid{grid-template-columns:1fr 1fr}
-  .home-jar-stage{min-height:340px}
+  .home-jar-stage{width:170px;min-height:145px}
+  .home-jar-stage img{width:88px}
 }
 
 @media(max-width:620px){
   .home-wrap{width:min(100% - 28px,1180px)}
   .home-topbar-inner{min-height:62px}
   .home-wordmark{font-size:.9rem}
-  .home-hero{padding-top:48px}
+  .home-hero{padding:30px 0 18px}
+  .home-hero-grid{grid-template-columns:1fr}
   .home-hero h1{font-size:2.8rem}
-  .home-section{padding:52px 0}
+  .home-jar-stage{width:132px;min-height:112px;justify-self:end}
+  .home-jar-stage img{width:72px}
+  .home-section{padding:30px 0}
   .home-how-grid,
   .home-layers-grid{grid-template-columns:1fr}
   .home-section-head{display:block}
@@ -663,7 +686,10 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
     <div class="home-section-head">
       <div>
         <div class="home-kicker" id="home_how_kicker">How it works</div>
-        <h2 id="home_how_title">Start with the ingredients. Not the barcode.</h2>
+        <h2 class="home-how-title">
+          <span id="home_how_title_main">Start with the ingredients.</span>
+          <span class="home-how-subtitle" id="home_how_title_sub">Not the barcode.</span>
+        </h2>
       </div>
       <p id="home_how_intro">BOTIA works from the ingredient list printed on the food. The label is the starting point; the explanation comes after.</p>
     </div>
