@@ -314,6 +314,11 @@
             'Se um ingrediente não aparece aqui, significa que não está sujeito a restrições?',
             'Por que o mesmo ingrediente aparece em várias linhas?',
             'O que significa uma medida estar atualmente em aplicação?'
+        ],
+        nl: [
+            'Als een ingrediënt hier niet voorkomt, betekent dat dan dat er geen beperkingen voor gelden?',
+            'Waarom verschijnt hetzelfde ingrediënt in meerdere rijen?',
+            'Wat betekent het als een maatregel momenteel van toepassing is?'
         ]
     };
 
