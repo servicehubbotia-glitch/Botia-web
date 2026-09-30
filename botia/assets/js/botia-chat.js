@@ -319,6 +319,11 @@
             'Als een ingrediënt hier niet voorkomt, betekent dat dan dat er geen beperkingen voor gelden?',
             'Waarom verschijnt hetzelfde ingrediënt in meerdere rijen?',
             'Wat betekent het als een maatregel momenteel van toepassing is?'
+        ],
+        ru: [
+            'Если ингредиент здесь не указан, означает ли это отсутствие ограничений для него?',
+            'Почему один и тот же ингредиент указан в нескольких строках?',
+            'Что означает, если мера применяется в настоящее время?'
         ]
     };
 
