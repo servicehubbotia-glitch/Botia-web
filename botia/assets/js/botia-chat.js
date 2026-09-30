@@ -344,6 +344,16 @@
             'Dacă un ingredient nu apare aici, înseamnă că nu există restricții pentru el?',
             'De ce același ingredient apare în mai multe rânduri?',
             'Ce înseamnă că o măsură se aplică în prezent?'
+        ],
+        pl: [
+            'Jeśli składnik nie pojawia się tutaj, czy oznacza to brak ograniczeń dotyczących tego składnika?',
+            'Dlaczego ten sam składnik pojawia się w kilku wierszach?',
+            'Co oznacza, że dany środek jest obecnie stosowany?'
+        ],
+        id: [
+            'Jika suatu bahan tidak muncul di sini, apakah itu berarti tidak ada pembatasan untuk bahan tersebut?',
+            'Mengapa bahan yang sama muncul dalam beberapa baris?',
+            'Apa artinya jika suatu tindakan sedang berlaku saat ini?'
         ]
     };
 
