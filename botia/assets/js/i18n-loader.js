@@ -788,7 +788,7 @@
       evidence.style.fontSize =
         "inherit";
       evidence.style.fontWeight =
-        "inherit";
+        "400";
       evidence.style.lineHeight =
         "inherit";
       evidence.style.letterSpacing =
@@ -1078,6 +1078,17 @@
 
     regulatory.className =
       "cta-button";
+
+    regulatory.style.fontFamily =
+      "inherit";
+    regulatory.style.fontSize =
+      "inherit";
+    regulatory.style.fontWeight =
+      "400";
+    regulatory.style.lineHeight =
+      "inherit";
+    regulatory.style.letterSpacing =
+      "inherit";
 
     regulatory.href =
       href.toString();
