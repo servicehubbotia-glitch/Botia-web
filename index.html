@@ -200,18 +200,18 @@ body{
 }
 
 .home-hero{
-  padding:40px 0 20px;
+  padding:38px 0 20px;
 }
 
 .home-hero-grid{
   display:grid;
-  grid-template-columns:minmax(0,1fr) 190px;
+  grid-template-columns:minmax(0,1fr) 260px;
   gap:36px;
   align-items:center;
 }
 
 .home-hero h1{
-  font-size:clamp(2.35rem,4.7vw,4.35rem);
+  font-size:clamp(2.25rem,4.2vw,3.8rem);
   line-height:.95;
   letter-spacing:-.055em;
   margin:10px 0 14px;
@@ -262,8 +262,8 @@ body{
 .home-btn-secondary:visited{color:var(--home-accent2)}
 
 .home-jar-stage{
-  width:180px;
-  min-height:170px;
+  width:250px;
+  min-height:200px;
   justify-self:end;
   display:grid;
   place-items:center;
@@ -277,12 +277,14 @@ body{
 }
 
 .home-jar-stage img{
-  width:136px;
-  max-width:none;
+  width:230px;
+  max-width:230px;
+  max-height:200px;
   height:auto;
+  object-fit:contain;
   position:relative;
   z-index:2;
-  filter:drop-shadow(0 12px 20px rgba(0,0,0,.30));
+  filter:drop-shadow(0 8px 16px rgba(0,0,0,.28));
 }
 
 .home-section{
@@ -569,26 +571,27 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
   .home-source-band{grid-template-columns:1fr}
   .home-how-grid,
   .home-layers-grid{grid-template-columns:1fr 1fr}
-  .home-jar-stage{width:160px;min-height:145px}
-  .home-jar-stage img{width:126px}
+  .home-jar-stage{width:170px;min-height:145px}
+  .home-jar-stage img{width:158px;max-width:158px;max-height:145px}
 }
 
 @media(max-width:620px){
   .home-wrap{width:min(100% - 28px,1180px)}
   .home-topbar-inner{min-height:62px}
   .home-wordmark{font-size:.9rem}
-  .home-hero{padding:30px 0 18px}
-  .home-hero-grid{grid-template-columns:1fr}
-  .home-hero h1{font-size:2.8rem}
+  .home-hero{padding:34px 0 20px}
+  .home-hero-grid{grid-template-columns:minmax(0,1fr) 112px;gap:18px}
+  .home-hero h1{font-size:clamp(2.15rem,10.2vw,3.2rem)}
   .home-jar-stage{
-    width:138px;
-    min-height:118px;
+    width:112px;
+    min-height:104px;
     justify-self:end;
     overflow:visible;
   }
   .home-jar-stage img{
-    width:124px;
-    max-width:none;
+    width:108px;
+    max-width:108px;
+    max-height:104px;
   }
   .home-section{padding:30px 0}
   .home-how-grid,
@@ -656,9 +659,6 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
       </h1>
       <p class="home-hero-copy" id="home_description">Scientific evidence. Human language. BOTIA reads the ingredient list and helps you understand what is actually there — without turning the result into a score or deciding for you.</p>
 
-      <div class="home-actions">
-        <a class="home-btn home-btn-primary" href="/try.html" id="home_try_cta">Try BOTIA</a>
-      </div>
     </div>
 
     <div class="home-jar-stage">
