@@ -580,13 +580,19 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
   .home-topbar-inner{min-height:62px}
   .home-wordmark{font-size:.9rem}
   .home-hero{padding:34px 0 20px}
-  .home-hero-grid{grid-template-columns:minmax(0,1fr) 112px;gap:18px}
+  .home-hero-grid{
+    grid-template-columns:minmax(0,1fr) 112px;
+    gap:18px;
+    align-items:start;
+  }
   .home-hero h1{font-size:clamp(2.15rem,10.2vw,3.2rem)}
   .home-jar-stage{
     width:112px;
     min-height:104px;
     justify-self:end;
+    align-self:start;
     overflow:visible;
+    margin-top:8px;
   }
   .home-jar-stage img{
     width:108px;
