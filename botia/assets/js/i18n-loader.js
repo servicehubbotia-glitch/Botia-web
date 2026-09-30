@@ -340,7 +340,8 @@
     }
     const langParam = new URLSearchParams(location.search).get("lang");
     if (langParam && LANGS.includes(normalise(langParam))) {
-      const localised = new URL(location.pathname, location.origin);
+      const canonicalPath = location.pathname.replace(/\/index\.html$/, "/");
+      const localised = new URL(canonicalPath, location.origin);
       localised.searchParams.set("lang", normalise(langParam));
       const localisedUrl = localised.toString();
       const canonicalLink = document.querySelector('link[rel="canonical"]');
