@@ -258,6 +258,8 @@ body{
   background:rgba(190,122,72,.12);
   color:var(--home-accent2);
 }
+.home-btn-primary:visited{color:#100707}
+.home-btn-secondary:visited{color:var(--home-accent2)}
 
 .home-jar-stage{
   min-height:330px;
@@ -303,7 +305,7 @@ body{
 }
 
 .home-section{
-  padding:72px 0;
+  padding:54px 0;
 }
 
 .home-section-head{
@@ -315,7 +317,7 @@ body{
 }
 
 .home-section-head h2{
-  font-size:clamp(2rem,4vw,3.4rem);
+  font-size:clamp(1.7rem,2.8vw,2.5rem);
   line-height:1.05;
   letter-spacing:-.04em;
   margin:8px 0;
@@ -396,10 +398,13 @@ body{
   border:1px solid var(--home-line);
   border-radius:18px;
   text-decoration:none;
+  color:var(--home-text);
   background:rgba(24,13,13,.86);
   min-height:132px;
   transition:transform .18s ease,border-color .18s ease,background .18s ease;
 }
+
+.home-layer-card:visited{color:var(--home-text)}
 
 .home-layer-card:hover,
 .home-layer-card:focus-visible{
@@ -428,11 +433,11 @@ body{
 }
 
 .home-statement{
-  padding:78px 0;
+  padding:44px 0;
 }
 
 .home-statement-box{
-  padding:42px;
+  padding:30px 34px;
   border:1px solid var(--home-line);
   border-radius:28px;
   background:
@@ -442,11 +447,12 @@ body{
 }
 
 .home-statement-box h2{
-  font-size:clamp(2rem,4vw,3.6rem);
-  line-height:1.04;
-  margin:8px 0 18px;
-  letter-spacing:-.04em;
-  max-width:850px;
+  font-size:clamp(1.6rem,2.4vw,2.25rem);
+  line-height:1.08;
+  margin:6px 0 12px;
+  letter-spacing:-.025em;
+  max-width:none;
+  white-space:nowrap;
 }
 
 .home-statement-box p{
@@ -458,12 +464,12 @@ body{
 
 .home-source-band{
   display:grid;
-  grid-template-columns:1.2fr .8fr;
+  grid-template-columns:1fr 1fr;
   gap:18px;
 }
 
 .home-source-panel{
-  padding:30px;
+  padding:26px;
   border:1px solid var(--home-line);
   border-radius:22px;
   background:rgba(24,13,13,.80);
@@ -529,12 +535,12 @@ body{
 
 .home-final{
   text-align:center;
-  padding:88px 0;
+  padding:54px 0;
 }
 
 .home-final h2{
-  font-size:clamp(2.2rem,5vw,4.4rem);
-  line-height:1;
+  font-size:clamp(1.8rem,3.2vw,2.9rem);
+  line-height:1.08;
   margin:8px auto 16px;
   max-width:900px;
   letter-spacing:-.045em;
@@ -578,7 +584,8 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
   .home-how-grid,
   .home-layers-grid{grid-template-columns:1fr}
   .home-section-head{display:block}
-  .home-statement-box{padding:28px}
+  .home-statement-box{padding:24px}
+  .home-statement-box h2{white-space:normal}
   .botia-footer{width:min(100% - 28px,1180px)}
 }
 </style>
@@ -641,7 +648,6 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
 
       <div class="home-actions">
         <a class="home-btn home-btn-primary" href="/try.html" id="home_try_cta">Try BOTIA</a>
-        <a class="home-btn home-btn-secondary" href="#how" id="home_see_how">See how it works ↓</a>
       </div>
     </div>
 
@@ -701,11 +707,6 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
 
     <div class="home-layers-grid">
 
-      <a class="home-layer-card" href="/pages/evidence.html">
-        <img src="/botia/assets/evidence.png" alt=""/>
-        <div><h3 id="home_evidence_name">Evidence</h3><p id="home_evidence_desc">See the documentation behind BOTIA's ingredient information.</p></div>
-      </a>
-
       <a class="home-layer-card" href="/pages/woman.html">
         <img src="/botia/assets/mujer.png" alt=""/>
         <div><h3 id="home_woman_name">Woman</h3><p id="home_woman_desc">Evidence specifically relevant to women, when it exists.</p></div>
@@ -746,6 +747,11 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
         <div><h3 id="home_muslim_name">Muslim Choice</h3><p id="home_muslim_desc">Documented halal, haram and doubtful ingredient criteria.</p></div>
       </a>
 
+      <a class="home-layer-card" href="/pages/nutrition.html">
+        <img src="/botia/assets/energy.png" alt=""/>
+        <div><h3 id="home_nutrition_name">Nutritional facts</h3><p id="home_nutrition_desc">Declared data + official references.</p></div>
+      </a>
+
     </div>
   </div>
 </section>
@@ -774,16 +780,7 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
       <div class="home-source-panel">
         <h3 id="home_sources_title">Follow the information back to its source</h3>
         <p id="home_sources_body">Ingredient profiles connect explanations to scientific, regulatory and transparency sources instead of hiding the reasoning behind an anonymous score.</p>
-        <div class="home-source-chips" aria-label="Examples of source organisations">
-          <a href="https://www.who.int/" target="_blank" rel="noopener">WHO</a>
-          <a href="https://www.efsa.europa.eu/" target="_blank" rel="noopener">EFSA</a>
-          <a href="https://www.fda.gov/" target="_blank" rel="noopener">FDA</a>
-          <a href="https://www.fao.org/fao-who-codexalimentarius/en/" target="_blank" rel="noopener">Codex</a>
-          <a href="https://www.who.int/groups/joint-fao-who-expert-committee-on-food-additives-(jecfa)/about" target="_blank" rel="noopener">JECFA</a>
-          <a href="https://www.iarc.who.int/" target="_blank" rel="noopener">IARC</a>
-        </div>
         <div class="home-actions">
-          <a class="home-btn home-btn-secondary" href="/ingredients/" id="home_explore_index">Explore Ingredient Index</a>
           <a class="home-btn home-btn-secondary" href="/regulatory/" id="home_explore_regulatory">Explore Regulatory</a>
         </div>
       </div>
@@ -791,6 +788,9 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
       <div class="home-source-panel">
         <h3 id="home_label_limit_title">BOTIA reads the label — not the company behind it.</h3>
         <p id="home_label_limit_body">It can analyse what is written there and explain the information connected to those ingredients. It cannot infer company practices, animal testing or other facts that are not present on the label.</p>
+        <div class="home-actions">
+          <a class="home-btn home-btn-secondary" href="/ingredients/" id="home_explore_index">Explore Ingredient Index</a>
+        </div>
       </div>
     </div>
   </div>
@@ -798,14 +798,12 @@ body[dir="rtl"] .home-wordmark{letter-spacing:.08em}
 
 <section class="home-final">
   <div class="home-wrap">
-    <div class="home-kicker" id="home_final_kicker">Try it on a real label</div>
+    <div class="home-kicker" id="home_final_kicker">Try it in our app</div>
     <h2 id="home_final_title">Scan the label. See what's there. See the evidence. You decide.</h2>
     <p id="home_final_body">Don't take our word for it. Photograph an ingredient list and see what BOTIA finds.</p>
 
     <div class="home-actions" style="justify-content:center">
       <a class="home-btn home-btn-primary" href="/try.html" id="home_final_try">Try BOTIA</a>
-      <a class="home-btn home-btn-secondary" href="/ingredients/" id="home_final_index">Ingredient Index</a>
-      <a class="home-btn home-btn-secondary" href="/regulatory/" id="home_final_regulatory">Regulatory</a>
     </div>
   </div>
 </section>
