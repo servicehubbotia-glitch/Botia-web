@@ -154,7 +154,7 @@
     /* HERO */
 
     .muslim-hero {
-      padding: 46px 0 36px;
+      padding: 38px 0 20px;
     }
 
     .muslim-hero-grid {
@@ -241,7 +241,7 @@
     /* SECCIONES */
 
     .muslim-section {
-      padding: 48px 0;
+      padding: 36px 0;
     }
 
     .muslim-section-alt {
@@ -254,7 +254,7 @@
     }
 
     .muslim-section-head {
-      margin-bottom: 22px;
+      margin-bottom: 18px;
     }
 
     .muslim-section-head h2 {
@@ -316,13 +316,42 @@
       outline: none;
     }
 
-    .status-card h3 {
+    .status-title-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       margin: 0 0 8px;
+    }
+
+    .status-icon {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, .28));
+    }
+
+    .status-card h3 {
+      margin: 0;
 
       font-size: 1.5rem;
       line-height: 1.15;
 
       font-weight: 900;
+    }
+
+    .muslim-section-title-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .muslim-section-title-icon {
+      width: 44px;
+      height: 44px;
+      flex: 0 0 44px;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, .24));
     }
 
     .status-card p {
@@ -765,7 +794,7 @@
       }
 
       .muslim-hero {
-        padding: 48px 0 44px;
+        padding: 34px 0 20px;
       }
 
       .muslim-hero-grid {
@@ -793,7 +822,7 @@
       }
 
       .muslim-section {
-        padding: 54px 0;
+        padding: 34px 0;
       }
 
       .muslim-closing-box {
@@ -982,9 +1011,12 @@
             class="status-card halal"
           >
 
-            <h3 id="halal_name">
-              Halal
-            </h3>
+            <div class="status-title-row">
+              <img class="status-icon" src="/botia/assets/Halal.png" alt="" aria-hidden="true">
+              <h3 id="halal_name">
+                Halal
+              </h3>
+            </div>
 
             <p id="halal_desc">
               No prohibited ingredients or doubtful origin detected on the label.
@@ -998,9 +1030,12 @@
             class="status-card haram"
           >
 
-            <h3 id="haram_name">
-              Haram
-            </h3>
+            <div class="status-title-row">
+              <img class="status-icon" src="/botia/assets/Haram.png" alt="" aria-hidden="true">
+              <h3 id="haram_name">
+                Haram
+              </h3>
+            </div>
 
             <p id="haram_desc">
               The label declares clearly prohibited ingredients: pork derivatives, alcohol, or blood.
@@ -1014,9 +1049,12 @@
             class="status-card mashbooh"
           >
 
-            <h3 id="mashbooh_name">
-              Mashbooh
-            </h3>
+            <div class="status-title-row">
+              <img class="status-icon" src="/botia/assets/BOTIA.png" alt="" aria-hidden="true">
+              <h3 id="mashbooh_name">
+                Mashbooh
+              </h3>
+            </div>
 
             <p id="mashbooh_desc">
               The label does not confirm the origin or process. Uncertainty is the information.
@@ -1210,9 +1248,12 @@
 
         <div class="muslim-section-head">
 
-          <h2 id="haram_ingredients_title">
-            Ingredients classified as Haram
-          </h2>
+          <div class="muslim-section-title-row">
+            <img class="muslim-section-title-icon" src="/botia/assets/Haram.png" alt="" aria-hidden="true">
+            <h2 id="haram_ingredients_title">
+              Ingredients classified as Haram
+            </h2>
+          </div>
 
         </div>
 
@@ -1251,9 +1292,12 @@
 
         <div class="muslim-section-head">
 
-          <h2 id="mashbooh_ingredients_title">
-            Ingredients that may be Mashbooh
-          </h2>
+          <div class="muslim-section-title-row">
+            <img class="muslim-section-title-icon" src="/botia/assets/BOTIA.png" alt="" aria-hidden="true">
+            <h2 id="mashbooh_ingredients_title">
+              Ingredients that may be Mashbooh
+            </h2>
+          </div>
 
         </div>
 
