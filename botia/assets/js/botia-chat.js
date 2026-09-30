@@ -329,6 +329,11 @@
             'إذا لم يظهر مكوّن هنا، فهل يعني ذلك أنه لا توجد عليه قيود؟',
             'لماذا يظهر المكوّن نفسه في عدة صفوف؟',
             'ماذا يعني أن يكون الإجراء مطبقًا حاليًا؟'
+        ],
+        tr: [
+            'Bir içerik burada görünmüyorsa bu onun için kısıtlama olmadığı anlamına mı gelir?',
+            'Aynı içerik neden birden fazla satırda görünüyor?',
+            'Bir önlemin şu anda uygulanıyor olması ne anlama gelir?'
         ]
     };
 
