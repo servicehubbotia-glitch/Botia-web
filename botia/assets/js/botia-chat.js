@@ -5,10 +5,12 @@
 
     const BOTIA_RESPONSE_RULES = [
         'Answer in the same language as the user.',
-        'Be concise: normally 2 short sentences, never more than 3 unless the user explicitly asks for detail.',
-        'Keep the answer under 60 words whenever possible.',
+        'Be concise: answer in 1 or 2 short sentences. Never use 3 sentences unless the user explicitly asks for detail.',
+        'Keep the answer under 45 words whenever possible.',
+        'For a why-question, give one main reason and at most one consequence. Do not stack several related reasons.',
         'Answer the question immediately. Do not repeat or paraphrase the question first.',
-        'Do not add generic introductions, conclusions, or repeated explanations.',
+        'Do not add generic introductions, conclusions, slogans, or repeated explanations.',
+        'Do not end with a summary such as "the decision is yours" unless that point is essential to the specific question.',
         'Preserve one essential caveat only when it materially changes the meaning.',
         'Use a list only if the user explicitly asks for one.'
     ].join(' ');
