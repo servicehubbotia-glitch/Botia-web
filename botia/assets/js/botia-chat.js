@@ -304,6 +304,11 @@
             'Wenn ein Inhaltsstoff hier nicht erscheint, bedeutet das, dass er ' + 'erlaubt ist?',
             'Warum erscheint derselbe Inhaltsstoff in mehreren Zeilen?',
             'Was bedeutet es, wenn eine Maßnahme ' + 'in Kraft ist?'
+        ],
+        it: [
+            'Se un ingrediente non compare qui, significa che non è soggetto a restrizioni?',
+            'Perché lo stesso ingrediente compare in più righe?',
+            'Che cosa significa che una misura è attualmente applicabile?'
         ]
     };
 
