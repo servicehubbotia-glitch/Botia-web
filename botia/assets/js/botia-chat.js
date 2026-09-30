@@ -246,6 +246,44 @@
     // PREGUNTAS SUGERIDAS
     // ============================================================
 
+    const PAGE_SUGGESTION_FALLBACKS = {
+        it: {
+            not_sugar: [
+                'La raccomandazione dell’OMS sui dolcificanti riguarda la loro sicurezza?',
+                'Perché i polioli sono esclusi da questa raccomandazione dell’OMS?',
+                'Perché un prodotto «senza zucchero» può contenere diversi dolcificanti?'
+            ]
+        },
+        zh: {
+            not_sugar: [
+                '世界卫生组织关于甜味剂的建议，是否意味着它们存在安全问题？',
+                '为什么糖醇不在这项世界卫生组织建议的范围内？',
+                '为什么“无糖”产品可以同时含有多种不同的甜味剂？'
+            ]
+        },
+        ro: {
+            not_sugar: [
+                'Recomandarea OMS privind îndulcitorii înseamnă că aceștia nu sunt siguri?',
+                'De ce polialcoolii sunt excluși din această recomandare a OMS?',
+                'De ce un produs „fără zahăr” poate conține mai mulți îndulcitori diferiți?'
+            ]
+        },
+        pl: {
+            not_sugar: [
+                'Czy zalecenie WHO dotyczące substancji słodzących oznacza, że nie są one bezpieczne?',
+                'Dlaczego poliole są wyłączone z tego zalecenia WHO?',
+                'Dlaczego produkt „bez cukru” może zawierać kilka różnych substancji słodzących?'
+            ]
+        },
+        id: {
+            not_sugar: [
+                'Apakah rekomendasi WHO tentang pemanis berarti pemanis tersebut tidak aman?',
+                'Mengapa poliol tidak termasuk dalam rekomendasi WHO tersebut?',
+                'Mengapa produk “bebas gula” dapat mengandung beberapa pemanis yang berbeda?'
+            ]
+        }
+    };
+
     const SUGGESTION_TEMPLATES = {
         en: {
             ingredient: [
@@ -504,6 +542,17 @@
             explicit.length
         ) {
             return explicit.slice(0, 3);
+        }
+
+        const fallback =
+            PAGE_SUGGESTION_FALLBACKS[currentLang]
+                ?.[context.page];
+
+        if (
+            Array.isArray(fallback) &&
+            fallback.length
+        ) {
+            return fallback.slice(0, 3);
         }
 
         return getGeneratedSuggestions()
