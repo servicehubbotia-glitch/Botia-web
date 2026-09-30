@@ -3,6 +3,16 @@
 
     const WORKER_URL = 'https://botia-web.servicehub-botia.workers.dev';
 
+    const BOTIA_RESPONSE_RULES = [
+        'Answer in the same language as the user.',
+        'Be concise: normally 2 short sentences, never more than 3 unless the user explicitly asks for detail.',
+        'Keep the answer under 60 words whenever possible.',
+        'Answer the question immediately. Do not repeat or paraphrase the question first.',
+        'Do not add generic introductions, conclusions, or repeated explanations.',
+        'Preserve one essential caveat only when it materially changes the meaning.',
+        'Use a list only if the user explicitly asks for one.'
+    ].join(' ');
+
     let currentLang = 'en';
     let chatTranslations = {};
     let pageSuggestions = {};
@@ -180,7 +190,8 @@
     function buildWorkerContext() {
         return {
             ...getPageContext(),
-            content: getPageText()
+            content: getPageText(),
+            response_rules: BOTIA_RESPONSE_RULES
         };
     }
 
@@ -836,10 +847,15 @@
                                 context:
                                     buildWorkerContext(),
 
-                                messages:
-                                    conversation.slice(
+                                messages: [
+                                    {
+                                        role: 'system',
+                                        content: BOTIA_RESPONSE_RULES
+                                    },
+                                    ...conversation.slice(
                                         -8
                                     )
+                                ]
                             })
                     }
                 );
