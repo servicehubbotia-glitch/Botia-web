@@ -334,6 +334,11 @@
             'Bir içerik burada görünmüyorsa bu onun için kısıtlama olmadığı anlamına mı gelir?',
             'Aynı içerik neden birden fazla satırda görünüyor?',
             'Bir önlemin şu anda uygulanıyor olması ne anlama gelir?'
+        ],
+        zh: [
+            '如果某种配料没有出现在这里，是否意味着它没有相关限制？',
+            '为什么同一种配料会出现在多行中？',
+            '一项措施目前正在实施是什么意思？'
         ]
     };
 
