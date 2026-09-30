@@ -87,7 +87,7 @@
 <a class="skip-link" href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
 <main class="landing" id="main-content">
 <h1 id="privacy_title">Privacy Policy</h1>
-<p class="last-updated"><span id="privacy_updated_label">Last updated</span>: <span id="privacy_updated_date">8 August 2026</span></p>
+<p class="last-updated"><span id="privacy_updated_label">Last updated</span>: <span id="privacy_updated_date">1 October 2026</span></p>
 <h2 id="s1_title">1. Who is responsible</h2>
 <p id="s1_text">The controller of any personal data processed through this website and the BOTIA app is ServiceHub, Kolvelseweg 165, 5025 JD Tilburg, Netherlands. KvK 42023784. For any privacy matter, write to <a href="mailto:privacy@botia-safefood.com">privacy@botia-safefood.com</a>.</p>
 <h2 id="s2_title">2. What BOTIA does</h2>
@@ -95,19 +95,20 @@
 <h2 id="s3_title">3. What stays on your device</h2>
 <p id="s3_intro">Most of what BOTIA does never leaves your device:</p>
 <ul>
-<li><strong id="s3_scan_label">Label scanning</strong><span id="s3_scan_text"> — text recognition runs locally on your phone. The photograph and the ingredient list are not sent to any server.</span></li>
 <li><strong id="s3_rules_label">Ingredient analysis</strong><span id="s3_rules_text"> — the rules engine and the ingredient database are bundled inside the app and run offline.</span></li>
 <li><strong id="s3_history_label">Scan history</strong><span id="s3_history_text"> — the app keeps a limited record of your recent scans in your phone's local storage, so you can review them. It is never uploaded. Deleting the app deletes it.</span></li>
 <li><strong id="s3_lang_label">Language preference</strong><span id="s3_lang_text"> — stored in your browser's local storage so the site opens in your language.</span></li>
 </ul>
 <h2 id="s4_title">4. What leaves your device</h2>
-<p id="s4_intro">There is one part of BOTIA that does send data outside your device, and you should know exactly how it works.</p>
+<p id="s4_intro">There are two parts of BOTIA that do send data outside your device, and you should know exactly how they work.</p>
+<p id="s4_photo">The photograph of the label. When you scan a product, the image is sent to BOTIA's own server hosted in the European Union to recognise the text. It is processed solely to extract the ingredient list and is not retained once the result has been returned. It is not associated with your name, your account or any personal identifier.</p>
+<p id="s4_chat_label">The text you type into the assistant.</p>
 <div class="notice-box">
 <p id="s4_chat_notice">When you type a question into the assistant on this website, the text you write is sent to a processing server operated by us and from there to DeepSeek, the language model provider that generates the answer. DeepSeek is based outside the European Union. Please do not enter personal, health or identifying information into the chat.</p>
 </div>
 <p id="s4_chat_detail">The chat does not send your name, email, IP-based identity or scan history. Only the message you write. Conversations are not stored by BOTIA. The number of questions you have asked in a session is kept temporarily in your browser and disappears when you close the tab.</p>
 <h2 id="s5_title">5. Sensitive information</h2>
-<p id="s5_text">The Muslim Choice and Woman modules deal with information that could reveal religious beliefs or health concerns. That analysis runs entirely on your device. BOTIA does not record, transmit or infer your religion, gender or health status. Selecting a module is not stored anywhere outside your phone.</p>
+<p id="s5_text">The Muslim Choice and Woman modules deal with information that could reveal religious beliefs or health concerns. The layer classification is performed on your device from the recognised text. BOTIA does not record, transmit or infer your religion, gender or health status. Selecting a module is not stored anywhere outside your phone.</p>
 <h2 id="s6_title">6. Cookies and storage</h2>
 <p id="s6_text">This website does not use cookies. It uses your browser's local storage for the language preference, and session storage for the state of the chat while the tab is open. There are no advertising cookies, no tracking pixels and no third-party analytics.</p>
 <h2 id="s7_title">7. Third parties</h2>
@@ -117,10 +118,12 @@
 <li><strong id="s7_cf_label">Cloudflare Workers</strong><span id="s7_cf_text"> — relays chat messages to the language model. It does not store conversations.</span></li>
 <li><strong id="s7_ds_label">DeepSeek</strong><span id="s7_ds_text"> — generates the assistant's answers. Your message is processed under their own terms and privacy policy.</span></li>
 <li><strong id="s7_google_label">Google</strong><span id="s7_google_text"> — if account sign-in is enabled in the app, Google manages the credentials. BOTIA never sees your password.</span></li>
+<li><strong id="s7_gcloud_label">Google Cloud</strong><span id="s7_gcloud_text"> — hosts the service that recognises the text on labels. It processes the image to return the text and does not retain it.</span></li>
 </ul>
 <p id="s7_note">No data is shared with advertisers, data brokers or analytics platforms.</p>
 <h2 id="s8_title">8. International transfers</h2>
 <p id="s8_text">Sending a chat message means the text you wrote is transferred outside the European Economic Area. This happens only when you choose to use the chat, and only with the content you type. If you prefer that nothing leaves the EEA, simply do not use the assistant — every other part of BOTIA works without it.</p>
+<p id="s8_photo">The photograph of the label does not leave the European Economic Area: it is processed on servers located in the European Union.</p>
 <h2 id="s9_title">9. Legal basis</h2>
 <p id="s9_intro">Under the GDPR, BOTIA processes data on these bases:</p>
 <ul>
