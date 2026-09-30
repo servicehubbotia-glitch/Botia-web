@@ -285,24 +285,20 @@
     }
 
     .status-card {
-      min-height: 175px;
+      min-height: 132px;
 
-      padding: 24px;
+      padding: 18px;
 
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      align-items: center;
+      gap: 16px;
 
       text-decoration: none;
 
-      border-radius: 22px;
+      border: 1px solid var(--page-line);
+      border-radius: 18px;
 
-      background:
-        linear-gradient(
-          180deg,
-          rgba(24, 13, 13, .96),
-          rgba(14, 8, 8, .95)
-        );
+      background: rgba(24, 13, 13, .86);
 
       transition:
         transform .18s ease,
@@ -312,32 +308,28 @@
 
     .status-card:hover,
     .status-card:focus-visible {
-      transform: translateY(-3px);
+      transform: translateY(-2px);
+      border-color: rgba(230, 160, 107, .56);
+      background: rgba(36, 16, 16, .90);
       outline: none;
     }
 
-    .status-title-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin: 0 0 8px;
-    }
-
     .status-icon {
-      width: 42px;
-      height: 42px;
-      flex: 0 0 42px;
+      width: 76px;
+      height: 76px;
+      flex: 0 0 76px;
       object-fit: contain;
-      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, .28));
     }
 
     .status-card h3 {
-      margin: 0;
+      margin: 0 0 5px;
 
-      font-size: 1.5rem;
-      line-height: 1.15;
+      color: var(--page-text);
 
-      font-weight: 900;
+      font-size: 1rem;
+      line-height: 1.2;
+
+      font-weight: 850;
     }
 
     .muslim-section-title-row {
@@ -357,37 +349,10 @@
     .status-card p {
       margin: 0;
 
-      color: var(--page-muted);
+      color: var(--page-soft);
 
-      font-size: .96rem;
-      line-height: 1.6;
-    }
-
-    .status-card.halal {
-      border: 1px solid rgba(91, 166, 106, .40);
-      border-top: 4px solid var(--halal);
-    }
-
-    .status-card.halal h3 {
-      color: #9bc9a4;
-    }
-
-    .status-card.haram {
-      border: 1px solid rgba(214, 101, 91, .40);
-      border-top: 4px solid var(--haram);
-    }
-
-    .status-card.haram h3 {
-      color: #e6a09a;
-    }
-
-    .status-card.mashbooh {
-      border: 1px solid rgba(212, 155, 69, .42);
-      border-top: 4px solid var(--mashbooh);
-    }
-
-    .status-card.mashbooh h3 {
-      color: #e4bd7c;
+      font-size: .82rem;
+      line-height: 1.45;
     }
 
 
@@ -783,7 +748,7 @@
       }
 
       .status-card {
-        min-height: 190px;
+        min-height: 124px;
       }
     }
 
@@ -1011,16 +976,13 @@
             class="status-card halal"
           >
 
-            <div class="status-title-row">
-              <img class="status-icon" src="/botia/assets/Halal.png" alt="" aria-hidden="true">
-              <h3 id="halal_name">
-                Halal
-              </h3>
+            <img class="status-icon" src="/botia/assets/Halal.png" alt="" aria-hidden="true">
+            <div>
+              <h3 id="halal_name">Halal</h3>
+              <p id="halal_desc">
+                No prohibited ingredients or doubtful origin detected on the label.
+              </p>
             </div>
-
-            <p id="halal_desc">
-              No prohibited ingredients or doubtful origin detected on the label.
-            </p>
 
           </a>
 
@@ -1030,16 +992,13 @@
             class="status-card haram"
           >
 
-            <div class="status-title-row">
-              <img class="status-icon" src="/botia/assets/Haram.png" alt="" aria-hidden="true">
-              <h3 id="haram_name">
-                Haram
-              </h3>
+            <img class="status-icon" src="/botia/assets/Haram.png" alt="" aria-hidden="true">
+            <div>
+              <h3 id="haram_name">Haram</h3>
+              <p id="haram_desc">
+                The label declares clearly prohibited ingredients: pork derivatives, alcohol, or blood.
+              </p>
             </div>
-
-            <p id="haram_desc">
-              The label declares clearly prohibited ingredients: pork derivatives, alcohol, or blood.
-            </p>
 
           </a>
 
@@ -1049,16 +1008,13 @@
             class="status-card mashbooh"
           >
 
-            <div class="status-title-row">
-              <img class="status-icon" src="/botia/assets/BOTIA.png" alt="" aria-hidden="true">
-              <h3 id="mashbooh_name">
-                Mashbooh
-              </h3>
+            <img class="status-icon" src="/botia/assets/BOTIA.png" alt="" aria-hidden="true">
+            <div>
+              <h3 id="mashbooh_name">Mashbooh</h3>
+              <p id="mashbooh_desc">
+                The label does not confirm the origin or process. Uncertainty is the information.
+              </p>
             </div>
-
-            <p id="mashbooh_desc">
-              The label does not confirm the origin or process. Uncertainty is the information.
-            </p>
 
           </a>
 
