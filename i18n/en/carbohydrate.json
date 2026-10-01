@@ -35,8 +35,13 @@
     }
   ],
   "robot_questions": [
-    "Why do total carbohydrates, 'net carbs', fibre and polyols not always seem to add up?",
-    "Why does the mandatory way of declaring carbohydrates change from country to country?",
-    "Do you have to subtract all polyols to calculate 'net carbs', or does it depend on the polyol?"
+    "Why do total carbohydrates, \"net carbs\", fibre and polyols not always seem to add up?",
+    "Why do the mandatory rules for declaring carbohydrates vary by country?",
+    "Should all polyols be subtracted to calculate \"net\" carbohydrates, or does it depend on the polyol?"
+  ],
+  "robot_answers": [
+    "Because not all labels include the same components in \"carbohydrates\", and \"net carbs\" may use a different calculation. If fibre and polyols are not listed separately, BOTIA cannot reconstruct the figures.",
+    "Because each market sets what the value includes and which fields must appear separately. That is why two figures called \"carbohydrates\" are not necessarily comparable without checking their definitions.",
+    "It depends on the polyol: they are not all absorbed or used in the same way, so they should not all be deducted equally. Also, \"net carbs\" may use different criteria, so you need to check how that figure was calculated."
   ]
 }
