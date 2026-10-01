@@ -653,6 +653,48 @@
         }
     }
 
+    function getStoredRobotAnswer(question) {
+        const translationData =
+            window.BOTIA
+                ?.translationData
+                ?.() || {};
+
+        const robotQuestions =
+            translationData.robot_questions;
+
+        const robotAnswers =
+            translationData.robot_answers;
+
+        if (
+            !Array.isArray(robotQuestions) ||
+            !Array.isArray(robotAnswers) ||
+            robotQuestions.length !==
+                robotAnswers.length
+        ) {
+            return '';
+        }
+
+        const index =
+            robotQuestions.findIndex(
+                item =>
+                    typeof item === 'string' &&
+                    item === question
+            );
+
+        if (index < 0) {
+            return '';
+        }
+
+        const answer =
+            robotAnswers[index];
+
+        return (
+            typeof answer === 'string'
+                ? answer.trim()
+                : ''
+        );
+    }
+
     async function showPageSuggestions() {
         const suggestions =
             await getPageSuggestions();
@@ -729,6 +771,11 @@
                 btn.addEventListener(
                     'click',
                     function () {
+                        const storedAnswer =
+                            getStoredRobotAnswer(
+                                question
+                            );
+
                         inputEl.value =
                             question;
 
@@ -737,7 +784,16 @@
                         );
 
                         window.setTimeout(
-                            handleSend,
+                            function () {
+                                if (storedAnswer) {
+                                    showStoredAnswer(
+                                        question,
+                                        storedAnswer
+                                    );
+                                } else {
+                                    handleSend();
+                                }
+                            },
                             550
                         );
                     }
@@ -937,6 +993,40 @@
     // ============================================================
     // IA
     // ============================================================
+
+    function showStoredAnswer(
+        question,
+        answer
+    ) {
+        removePageSuggestions();
+
+        appendMessage(
+            'user',
+            question
+        );
+
+        conversation.push({
+            role: 'user',
+            content: question
+        });
+
+        inputEl.value = '';
+
+        appendMessage(
+            'bot',
+            answer
+        );
+
+        conversation.push({
+            role: 'assistant',
+            content: answer
+        });
+
+        setRobotState(
+            'positive',
+            900
+        );
+    }
 
     async function sendToAI(message) {
         removePageSuggestions();
