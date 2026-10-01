@@ -583,28 +583,26 @@
         const context =
             getPageContext();
 
-        if (context.page === 'ingredient') {
-            const translationData =
-                window.BOTIA
-                    ?.translationData
-                    ?.() || {};
+        const translationData =
+            window.BOTIA
+                ?.translationData
+                ?.() || {};
 
-            const robotQuestions =
-                Array.isArray(
-                    translationData.robot_questions
-                )
-                    ? translationData
-                        .robot_questions
-                        .filter(
-                            question =>
-                                typeof question === 'string' &&
-                                question.trim()
-                        )
-                    : [];
+        const robotQuestions =
+            Array.isArray(
+                translationData.robot_questions
+            )
+                ? translationData
+                    .robot_questions
+                    .filter(
+                        question =>
+                            typeof question === 'string' &&
+                            question.trim()
+                    )
+                : [];
 
-            if (robotQuestions.length) {
-                return robotQuestions.slice(0, 3);
-            }
+        if (robotQuestions.length) {
+            return robotQuestions.slice(0, 3);
         }
 
         if (
