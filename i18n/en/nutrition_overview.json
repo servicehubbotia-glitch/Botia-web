@@ -10,5 +10,15 @@
   "references_note": "A comparison appears only when the definition, basis and reference are compatible.",
   "method_note": "Declared value and official reference are kept visually separate. If the comparison is not methodologically valid, BOTIA does not invent a percentage or a bar.",
   "disclaimer": "Nutrition Facts contextualizes declared data. It does not classify the food as healthy or unhealthy.",
-  "back_library": "BOTIA Library"
+  "back_library": "BOTIA Library",
+  "robot_questions": [
+    "What does \"per 100 g\" mean on a nutrition label?",
+    "What is the difference between salt and sodium?",
+    "Why does BOTIA keep declared values separate from official reference values?"
+  ],
+  "robot_answers": [
+    "It means the amount of each nutrient is given for 100 grams or 100 millilitres of the product. This lets you compare products even when the stated portions differ.",
+    "Sodium is a mineral; ordinary salt is sodium chloride. To convert sodium to salt, multiply the amount of sodium by 2.5.",
+    "Because one figure tells you what the product declares, while the other lets you compare it with an official reference. Mixing them can make them seem equivalent, even though they depend on the country, reference quantity or type of food."
+  ]
 }

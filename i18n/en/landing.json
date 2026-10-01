@@ -119,5 +119,15 @@
   "home_nutrition_name": "Nutritional facts",
   "home_nutrition_desc": "Declared data + official references",
   "home_how_title_main": "Start with the ingredients.",
-  "home_how_title_sub": "Not the barcode."
+  "home_how_title_sub": "Not the barcode.",
+  "robot_questions": [
+    "Why does BOTIA start with the ingredients list rather than the barcode?",
+    "Why does BOTIA not give a score or a verdict?",
+    "Why does the same label raise different questions depending on who reads it?"
+  ],
+  "robot_answers": [
+    "Because a barcode identifies a product but does not explain its formulation. BOTIA starts with the actual ingredients list because it shows what the manufacturer declares that food contains.",
+    "Because a single score would mix different questions and hide what cannot be known from the label. BOTIA separates what is declared, what can be identified, what is uncertain and the evidence supporting it.",
+    "Because the same list can matter for nutritional, religious or ethical reasons, or because of animal origin, pregnancy or exposure. BOTIA keeps these questions separate rather than reducing them to one answer."
+  ]
 }

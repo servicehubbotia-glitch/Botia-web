@@ -8890,5 +8890,15 @@
       "notes": null,
       "record_id": "REG-0491"
     }
+  ],
+  "robot_questions": [
+    "If an ingredient does not appear here, does that mean it is permitted?",
+    "Why does the same ingredient appear in several rows?",
+    "What does it mean when a measure is in force?"
+  ],
+  "robot_answers": [
+    "No. It only means BOTIA has no verified measure in that explorer for that ingredient and that specific scope; the absence of a row must not be interpreted as authorisation.",
+    "Because the same substance can be subject to different measures depending on the country, authority, use, concentration, food category or type of obligation. Each row keeps that context separate.",
+    "It means the measure is recorded as currently applicable within the jurisdiction and scope shown in the row. It does not mean it is a universal rule or a general safety assessment."
   ]
 }
