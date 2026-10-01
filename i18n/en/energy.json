@@ -39,8 +39,13 @@
     }
   ],
   "robot_questions": [
-    "How can carbohydrates appear in the table and, even so, 0 kcal or far fewer calories than expected be shown?",
-    "Why can the same calorie value trigger a front-of-pack warning in one country and not in another?",
-    "How can a label declare 0 calories if the product does contain ingredients that provide energy?"
+    "How can carbohydrates appear in the table alongside 0 kcal or far fewer calories than expected?",
+    "Why can the same calorie value trigger a front-of-pack warning in one country but not another?",
+    "How can a label declare 0 calories if the product contains ingredients that provide energy?"
+  ],
+  "robot_answers": [
+    "Because energy is calculated from several components under market-specific calculation and rounding rules. The carbohydrate figure alone is not enough to reconstruct the label's calories exactly.",
+    "Because front-of-pack labelling systems and their thresholds vary by country. The same figure can trigger a warning in one market and not in another.",
+    "Because \"0\" can be a rounded value, not a complete absence of energy. A small amount per portion may fall below the threshold that the labelling system requires to be declared."
   ]
 }
