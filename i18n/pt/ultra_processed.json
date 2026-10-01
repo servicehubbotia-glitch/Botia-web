@@ -33,5 +33,15 @@
   "cannot_3": "Dizer se um produto é bom ou ruim para você. Isso não é uma questão de classificação.",
   "closing": "A BOTIA não classifica produtos. Ela lê o que o rótulo declara e te diz o que isso significa. A conclusão é sua.",
   "sources-label": "Fontes:",
-  "back-link": "← Voltar para Camadas de Evidência"
+  "back-link": "← Voltar para Camadas de Evidência",
+  "robot_questions": [
+    "Um produto com pouco açúcar e muita proteína pode ser ultraprocessado?",
+    "Qual é a diferença entre um alimento processado e um ultraprocessado?",
+    "Porque é que a BOTIA não diz se um produto é ultraprocessado?"
+  ],
+  "robot_answers": [
+    "Sim. A NOVA não classifica um alimento por ter muito ou pouco açúcar, gordura ou proteína, mas pelo grau de processamento e pela forma como é formulado.",
+    "Um alimento processado mantém uma ligação clara ao alimento original, embora tenha sido transformado. Um ultraprocessado é uma formulação industrial que pode incluir substâncias e aditivos raramente usados numa cozinha doméstica.",
+    "Porque a BOTIA lê os ingredientes declarados, mas não conhece todos os processos industriais nem a formulação completa. Pode mostrar marcadores de ultraprocessamento sem os transformar numa classificação automática do produto."
+  ]
 }

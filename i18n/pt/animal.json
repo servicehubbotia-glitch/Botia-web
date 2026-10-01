@@ -31,5 +31,15 @@
   "link_glycerol": "Glicerol (E422)",
   "link_enzymes": "Enzimas alimentares",
   "link_natural_flavourings": "Aromas naturais",
-  "description": "Alguns ingredientes vêm de animais. Alguns podem vir. E alguns se escondem atrás de nomes técnicos que não revelam nada. A BOTIA lê o rótulo e sinaliza o que encontra — para que você possa decidir."
+  "description": "Alguns ingredientes vêm de animais. Alguns podem vir. E alguns se escondem atrás de nomes técnicos que não revelam nada. A BOTIA lê o rótulo e sinaliza o que encontra — para que você possa decidir.",
+  "robot_questions": [
+    "Porque é que a palavra «vegan» numa embalagem não é uma garantia legal?",
+    "Porque é que há ingredientes cuja origem só o fabricante conhece?",
+    "Um produto pode conter algo de origem animal que nem sequer apareça na lista de ingredientes?"
+  ],
+  "robot_answers": [
+    "Porque essa palavra, por si só, não revela a origem de todos os ingredientes nem como o produto foi fabricado. A BOTIA verifica a lista declarada e mantém visíveis as incertezas quando a origem não é especificada.",
+    "Porque substâncias como E471, E472, lecitinas, enzimas ou aromas podem ser produzidas a partir de fontes diferentes. O rótulo pode indicar o ingrediente sem dizer qual foi a fonte utilizada.",
+    "Sim. Pode haver auxiliares de processamento ou outros elementos que, em determinadas condições, não têm de ser declarados como ingredientes. Se não aparecem no rótulo, a BOTIA também não os consegue detetar a partir dele."
+  ]
 }
