@@ -6,7 +6,7 @@
   "food_title": "Food and ingredient labels",
   "food_text": "Pork and its derivatives, blood and alcoholic drinks are among the prohibited sources listed by Codex. A label can declare a prohibited source explicitly; a generic ingredient name may leave its origin or process unresolved.",
   "criteria_title": "How BOTIA classifies ingredients",
-  "criteria_text": "The label declares clearly prohibited ingredients: pork derivatives, alcohol, or blood.",
+  "criteria_text": "BOTIA marks a label as Haram when it explicitly declares a prohibited ingredient, such as pork derivatives, alcohol or blood.",
   "uncertainty_text": "When the label does not establish the origin or process, BOTIA uses Mashbooh (doubt). Missing information is not proof that an ingredient is Halal or Haram.",
   "limits_title": "What BOTIA can and cannot conclude",
   "can_title": "BOTIA CAN",
@@ -17,10 +17,10 @@
   "related_muslim": "Muslim",
   "related_mashbooh": "Mashbooh",
   "sources-label": "Sources:",
-  "can1": "Read declared ingredients from the label.",
-  "can2": "Detect clearly Haram ingredients based on documented criteria.",
-  "can3": "Detect ingredients with ambiguous origin and make the silence visible.",
-  "cannot1": "Certify Halal — it is not a guarantee or seal of approval.",
-  "cannot2": "Detect undeclared processes like cross-contamination in factories.",
-  "cannot3": "Replace a religious authority or certification body."
+  "can1": "Detect prohibited ingredients when they are explicitly declared on the label.",
+  "can2": "Distinguish a clear Haram trigger from an ingredient whose origin is merely uncertain.",
+  "can3": "Show which declared ingredient caused the Haram result.",
+  "cannot1": "Infer a Haram ingredient that is not declared on the label.",
+  "cannot2": "Determine undeclared manufacturing processes or cross-contamination.",
+  "cannot3": "Resolve cases where origin or processing is unknown; those remain Mashbooh rather than Haram."
 }

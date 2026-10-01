@@ -6,7 +6,7 @@
   "food_title": "Aliments et listes d’ingrédients",
   "food_text": "Le porc et ses dérivés, le sang et les boissons alcoolisées figurent parmi les sources interdites énumérées par le Codex. Une étiquette peut déclarer explicitement une source interdite ; un nom générique peut laisser l’origine ou le procédé indéterminé.",
   "criteria_title": "Comment BOTIA classe les ingrédients",
-  "criteria_text": "L'étiquette déclare des ingrédients clairement interdits : dérivés de porc, alcool ou sang.",
+  "criteria_text": "BOTIA classe une étiquette comme Haram lorsqu’elle déclare explicitement un ingrédient interdit, comme des dérivés du porc, de l’alcool ou du sang.",
   "uncertainty_text": "Lorsque l’étiquette ne permet pas d’établir l’origine ou le procédé, BOTIA utilise Mashbooh (doute). L’absence d’information ne prouve pas qu’un ingrédient est Halal ou Haram.",
   "limits_title": "Ce que BOTIA peut et ne peut pas conclure",
   "can_title": "BOTIA PEUT",
@@ -17,10 +17,10 @@
   "related_muslim": "Musulman",
   "related_mashbooh": "Mashbooh",
   "sources-label": "Sources :",
-  "can1": "Lire les ingrédients déclarés sur l'étiquette.",
-  "can2": "Détecter les ingrédients clairement Haram selon des critères documentés.",
-  "can3": "Détecter les ingrédients d'origine ambiguë et rendre le silence visible.",
-  "cannot1": "Certifier Halal — ce n'est pas une garantie ou un sceau d'approbation.",
-  "cannot2": "Détecter les processus non déclarés comme la contamination croisée dans les usines.",
-  "cannot3": "Remplacer une autorité religieuse ou un organisme de certification."
+  "can1": "Détecter les ingrédients interdits lorsqu’ils sont explicitement déclarés sur l’étiquette.",
+  "can2": "Distinguer un déclencheur Haram clair d’un ingrédient dont l’origine est simplement incertaine.",
+  "can3": "Montrer quel ingrédient déclaré a provoqué le résultat Haram.",
+  "cannot1": "Déduire la présence d’un ingrédient Haram qui n’est pas déclaré sur l’étiquette.",
+  "cannot2": "Déterminer des procédés de fabrication non déclarés ou une contamination croisée.",
+  "cannot3": "Trancher les cas où l’origine ou le procédé est inconnu ; ils restent Mashbooh plutôt que Haram."
 }
