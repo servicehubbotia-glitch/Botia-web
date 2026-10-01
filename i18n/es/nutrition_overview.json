@@ -10,5 +10,15 @@
   "references_note": "La comparación aparece solo cuando la definición, la base y la referencia son compatibles.",
   "method_note": "El valor declarado y la referencia oficial se mantienen visualmente separados. Si la comparación no es metodológicamente válida, BOTIA no inventa un porcentaje ni una barra.",
   "disclaimer": "Nutrition Facts contextualiza los datos declarados. No clasifica el alimento como saludable o no saludable.",
-  "back_library": "Biblioteca BOTIA"
+  "back_library": "Biblioteca BOTIA",
+  "robot_questions": [
+    "¿Qué significa «por 100 g» en una etiqueta nutricional?",
+    "¿Cuál es la diferencia entre sal y sodio?",
+    "¿Por qué BOTIA mantiene separados los valores declarados de los valores oficiales de referencia?"
+  ],
+  "robot_answers": [
+    "Significa que la cantidad de cada nutriente se indica por 100 gramos o 100 mililitros de producto. Esto permite comparar productos aunque las porciones declaradas sean diferentes.",
+    "El sodio es un mineral; la sal común es cloruro de sodio. Para convertir sodio en sal, multiplica la cantidad de sodio por 2,5.",
+    "Porque una cifra dice lo que declara el producto, mientras que la otra permite compararlo con una referencia oficial. Mezclarlas puede hacer que parezcan equivalentes, aunque dependan del país, la cantidad de referencia o el tipo de alimento."
+  ]
 }

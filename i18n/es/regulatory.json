@@ -8890,5 +8890,15 @@
       "notes": null,
       "record_id": "REG-0491"
     }
+  ],
+  "robot_questions": [
+    "Si un ingrediente no aparece aquí, ¿significa que está permitido?",
+    "¿Por qué un mismo ingrediente aparece en varias filas?",
+    "¿Qué significa que una medida esté vigente?"
+  ],
+  "robot_answers": [
+    "No. Solo significa que BOTIA no tiene una medida verificada en ese explorador para ese ingrediente y ese ámbito concreto; la ausencia de una fila no debe interpretarse como autorización.",
+    "Porque una misma sustancia puede estar sujeta a medidas distintas según el país, la autoridad, el uso, la concentración, la categoría de alimento o el tipo de obligación. Cada fila mantiene ese contexto separado.",
+    "Significa que la medida figura como actualmente aplicable dentro de la jurisdicción y el ámbito mostrados en la fila. No significa que sea una regla universal ni una evaluación general de seguridad."
   ]
 }

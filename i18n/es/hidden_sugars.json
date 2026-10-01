@@ -25,5 +25,15 @@
   "cannot_3": "Reemplaza el consejo médico o nutricional.",
   "closing": "Para evaluar la ingesta total, revisa la etiqueta nutricional en 'Carbohidratos — de los cuales azúcares'.",
   "sources-label": "Fuentes:",
-  "back-link": "← Volver a Capas de Evidencia"
+  "back-link": "← Volver a Capas de Evidencia",
+  "robot_questions": [
+    "¿Por qué un producto «fit» o «natural» puede llevar azúcar sin que aparezca la palabra azúcar?",
+    "¿Por qué BOTIA señala la maltodextrina si la OMS no la considera azúcar libre?",
+    "Si BOTIA lee los ingredientes, ¿por qué no me dice cuánto azúcar lleva el producto?"
+  ],
+  "robot_answers": [
+    "Porque los azúcares libres pueden aparecer como glucosa, fructosa, jarabes, miel o concentrados de zumo. El nombre comercial del producto no cambia lo que figura en la lista de ingredientes.",
+    "La maltodextrina es un carbohidrato de digestión rápida, pero no es un azúcar libre según la definición de la OMS. BOTIA la muestra por separado porque puede pasar desapercibida si solo se busca la palabra «azúcar».",
+    "Porque la lista de ingredientes muestra presencia y orden, no la cantidad total de azúcar. Para saber los gramos, hay que mirar la información nutricional declarada."
+  ]
 }
