@@ -195,6 +195,10 @@
     {
       "question": "Pourquoi ajoute-t-on de l'acide folique à la farine ou aux céréales, et comment cette fortification apparaît-elle sur l'étiquette ?",
       "answer": "Il est ajouté pour enrichir l'aliment en vitamine B9 et peut apparaître sous forme d'acide folique, de folate ou de vitamine B9. Si la quantité n'est pas déclarée, la liste des ingrédients ne peut pas vous dire combien il en fournit."
+    },
+    {
+      "question": "Pourquoi BOTIA affiche-t-elle l’acide folique dans la couche Woman ?",
+      "answer": "Parce que les données spécifiques aux femmes concernent la grossesse et le développement fœtal, période où l’apport compte le plus. BOTIA montre ce contexte ; elle ne calcule pas la quantité apportée par un produit."
     }
   ],
   "advantame": [
@@ -245,6 +249,10 @@
     {
       "question": "Le fenugrec peut-il apparaître sous un autre nom ou dans un mélange d'épices et avoir de l'importance pour les allergies ?",
       "answer": "Il peut apparaître sous le nom de fenugrec, graine de fenugrec ou extrait de fenugrec, et peut faire partie d'un mélange d'épices. Si seul le mélange est déclaré, sa présence et sa pertinence pour une allergie particulière nécessitent des informations complémentaires du fabricant."
+    },
+    {
+      "question": "Pourquoi BOTIA affiche-t-elle le fenugrec dans la couche Woman ?",
+      "answer": "Parce que les données documentées concernent la grossesse et l’allaitement. BOTIA montre ce contexte lorsque l’étiquette le déclare ; elle ne peut pas dire quelle quantité le produit contient."
     }
   ],
   "allura_red": [
@@ -281,6 +289,10 @@
     {
       "question": "Que fait le bicarbonate de sodium dans les aliments, et pourquoi apparaît-il sous le nom E500 ?",
       "answer": "Il aide les pâtes et les pâtes à frire à lever et peut aussi réguler l'acidité. Le bicarbonate est E500(ii), au sein de la famille E500 : le code identifie l'additif, et non une substance différente du bicarbonate de soude."
+    },
+    {
+      "question": "Pourquoi BOTIA affiche-t-elle le bicarbonate de sodium dans la couche Woman et parmi les numéros E ?",
+      "answer": "Parce qu’il s’agit d’un additif autorisé avec son propre numéro E, et parce qu’il apporte du sodium sans goût salé. L’étiquette indique sa présence, mais pas la quantité qu’il apporte."
     }
   ],
   "bpa": [
@@ -421,6 +433,10 @@
     {
       "question": "Pourquoi les phosphates sont-ils également évalués en groupe plutôt que uniquement par le E450 sur l'étiquette ?",
       "answer": "Parce que différents phosphates fournissent du phosphore, et l'exposition pertinente ne dépend pas d'un seul numéro E. L'étiquette identifie E450, mais évaluer l'exposition nécessite de considérer toutes les sources de phosphate et de phosphore."
+    },
+    {
+      "question": "Pourquoi les diphosphates apparaissent-ils dans la couche Texture alors qu’ils sont des phosphates ?",
+      "answer": "Parce que leur fonction dans l’aliment est technologique : ils aident les pâtes à lever et maintiennent les mélanges stables. Leur teneur en phosphate est évaluée séparément, dans l’exposition totale au groupe."
     }
   ],
   "e171": [
@@ -461,6 +477,10 @@
     {
       "question": "Les numéros E ont-ils disparu des étiquettes, ou les additifs sont-ils simplement désormais indiqués par leur nom ?",
       "answer": "Non. Un numéro E est une façon d'identifier un additif, mais l'étiquette peut indiquer son nom plutôt que le code. Donc, ne pas voir de « E » ne signifie pas qu'il n'y a pas d'additifs."
+    },
+    {
+      "question": "Un ingrédient sans numéro E signifie-t-il qu’il n’y a pas d’additif ?",
+      "answer": "Non. Un additif peut être déclaré par son nom plutôt que par son code, et certaines substances à fonction technologique ne sont pas classées comme additifs. L’absence d’un « E » ne signifie pas l’absence d’additifs."
     }
   ],
   "enzymes": [
@@ -521,6 +541,10 @@
     {
       "question": "Pourquoi l'évaluation des phosphates nécessite-t-elle une exposition totale au groupe plutôt que seulement le numéro E spécifique sur l'étiquette ?",
       "answer": "Parce que plusieurs numéros E différents peuvent fournir des phosphates. En voir un seul sur l'étiquette ne permet pas de connaître l'exposition totale aux phosphates ou au phosphore provenant du reste de l'alimentation."
+    },
+    {
+      "question": "Pourquoi les phosphates apparaissent-ils dans la couche Texture ?",
+      "answer": "Parce qu’ils retiennent l’eau, stabilisent les émulsions et empêchent les produits de se séparer. C’est leur fonction dans l’aliment, distincte de la question de l’exposition totale au phosphore."
     }
   ],
   "free_sugars": [
@@ -811,6 +835,10 @@
     {
       "question": "Qu'est-ce qui fait qu'un ingrédient est classé comme mashbooh plutôt que halal ou haram ?",
       "answer": "Des informations manquantes nécessaires pour décider, généralement son origine ou son procédé. Si l'étiquette ne peut pas confirmer qu'il est halal ou démontrer qu'il est haram, BOTIA le laisse comme mashbooh."
+    },
+    {
+      "question": "Que se passe-t-il lorsqu’un ingrédient est classé mashbooh par BOTIA ?",
+      "answer": "BOTIA montre quel ingrédient déclaré laisse la question ouverte et pourquoi. Elle ne tranche pas à votre place : seul le fabricant ou une certification applicable peut confirmer l’origine."
     }
   ],
   "honey": [
@@ -1045,6 +1073,10 @@
     {
       "question": "Comment le sucre peut-il apparaître dans les ingrédients et 0 g de sucres ajoutés dans le tableau nutritionnel ?",
       "answer": "Parce que la liste des ingrédients montre la présence, tandis que le tableau déclare une quantité par portion. Sur les marchés qui indiquent les « sucres ajoutés », une très petite quantité peut être arrondie à 0 g même si du sucre reste dans les ingrédients."
+    },
+    {
+      "question": "Quels ingrédients BOTIA compte-t-elle dans la couche Sugar ?",
+      "answer": "Ceux qui apportent des sucres libres selon la définition de l’OMS : sucre, sirops, miel, concentrés de jus et ingrédients similaires. La couche montre ceux qui sont déclarés, pas le nombre total de grammes."
     }
   ],
   "sunset_yellow": [
@@ -1081,6 +1113,10 @@
     {
       "question": "Quel ingrédient spécifique donne à ce produit sa texture : gomme, amidon, carraghénane, gélatine ou autre chose ?",
       "answer": "Vous devez regarder quels modificateurs de texture apparaissent réellement dans la liste. S'il y en a plusieurs, comme une gomme, de l'amidon et du carraghénane, l'étiquette ne peut pas vous dire dans quelle mesure chacun contribue au résultat final."
+    },
+    {
+      "question": "Pourquoi BOTIA regroupe-t-elle gommes, amidons et émulsifiants dans une même couche ?",
+      "answer": "Parce qu’ils ont un objectif commun : construire ou maintenir la structure de l’aliment plutôt que vous nourrir. Les regrouper montre dans quelle mesure la texture du produit est formulée plutôt qu’inhérente."
     }
   ],
   "thaumatin": [
@@ -1389,6 +1425,10 @@
     {
       "question": "Pourquoi le JECFA a-t-il demandé de meilleures données d'exposition lorsqu'une estimation dépassait largement la dose journalière acceptable ?",
       "answer": "Parce que l'estimation était conservatrice et nécessitait un affinement : l'exposition élevée calculée chez les enfants atteignait 113 mg/kg par jour contre une limite de groupe de 30. Ce scénario ne démontre pas que chaque produit ou une personne spécifique dépasse la limite."
+    },
+    {
+      "question": "Pourquoi les esters de saccharose apparaissent-ils dans la couche Texture s’ils sont fabriqués à partir de sucre ?",
+      "answer": "Parce que le sucre sert à fabriquer un émulsifiant, pas à sucrer. Leur fonction est de maintenir la graisse et l’eau mélangées, et ils n’apportent pas de douceur perceptible."
     }
   ],
   "polyunsaturated_fat": [
@@ -1547,6 +1587,10 @@
     {
       "question": "Pourquoi E962 nécessite-t-il un avertissement concernant la phénylalanine s'il n'est pas simplement listé comme aspartame ?",
       "answer": "Parce que E962 contient de l'aspartame combiné avec de l'acésulfame et fournit toujours une source de phénylalanine. Changer le nom ne supprime pas l'information nécessaire aux personnes atteintes de phénylcétonurie."
+    },
+    {
+      "question": "Pourquoi BOTIA affiche-t-elle E962 dans la couche Sweeteners plutôt qu’avec l’aspartame ?",
+      "answer": "Parce que E962 est un additif autorisé à part entière, un sel associant les deux édulcorants, avec son propre code et ses conditions d’utilisation. BOTIA le garde séparé pour lire l’étiquette telle qu’elle est écrite."
     }
   ],
   "trans_fats": [
@@ -1573,6 +1617,10 @@
     {
       "question": "Pourquoi certains arômes de fumée ont-ils perdu leur autorisation européenne après qu'EFSA n'a pas pu écarter les préoccupations de génotoxicité ?",
       "answer": "Parce que les préoccupations de génotoxicité n'ont pas pu être écartées lors de la réévaluation, et l'UE a retiré les anciens produits primaires de sa liste autorisée. Il existe des périodes de transition selon la catégorie d'aliments ; une déclaration générique n'identifie pas l'arôme ni ses caractéristiques spécifiques."
+    },
+    {
+      "question": "Pourquoi les arômes de fumée apparaissent-ils dans la couche Flavours ?",
+      "answer": "Parce qu’ils sont ajoutés pour donner un goût fumé sans que l’aliment soit fumé. Leur présence indique que le goût provient d’une formulation, que l’étiquette peut déclarer seulement comme arôme de fumée générique."
     }
   ],
   "potassium_bromate": [
