@@ -281,8 +281,7 @@
 
     const ROBOT_FAQ_ALIASES = {
         halal_public: 'halal',
-        haram_public: 'haram',
-        evidence: 'undeclared_origin'
+        haram_public: 'haram'
     };
 
     function getRobotFaqKey() {
@@ -828,7 +827,8 @@
         chatWindow.style.cssText =
             'display:none;' +
             'width:380px;' +
-            'height:520px;' +
+            'height:auto;' +
+            'max-height:520px;' +
             'background:rgba(16,7,7,0.97);' +
             'border:1px solid rgba(190,122,72,0.3);' +
             'border-radius:28px;' +
@@ -922,7 +922,9 @@
         );
 
         messagesEl.style.cssText =
-            'flex:1;' +
+            'flex:0 1 auto;' +
+            'min-height:0;' +
+            'max-height:360px;' +
             'padding:1rem 1.2rem;' +
             'overflow-y:auto;' +
             'display:flex;' +
@@ -1222,7 +1224,7 @@
 
             '@media (max-width:540px) {',
 
-            '  #botia-chat-window { width:92vw !important;height:460px !important; }',
+            '  #botia-chat-window { width:92vw !important;height:auto !important;max-height:460px !important; }',
 
             '  #botia-chat-container { right:12px !important;bottom:12px !important; }',
 

@@ -437,6 +437,10 @@
     {
       "question": "Bagaimana bisa ada paparan terhadap gangguan endokrin jika frasa itu tidak ada dalam daftar bahan?",
       "answer": "Karena paparan tidak selalu berasal dari bahan yang dideklarasikan: bisa juga dari bahan kontak pangan atau lingkungan. Daftar bahan saja tidak dapat mengukur paparan tersebut."
+    },
+    {
+      "question": "Apakah berinteraksi dengan hormon sama dengan mengganggunya?",
+      "answer": "Tidak. Suatu zat dapat berinteraksi dengan jalur hormonal tanpa ini menunjukkan efek merugikan; gangguan endokrin harus dinilai untuk zat dan paparan spesifik tersebut."
     }
   ],
   "energy": [
@@ -887,6 +891,10 @@
     {
       "question": "Bagaimana zat dapat bermigrasi dari kemasan ke makanan jika tidak pernah muncul sebagai bahan?",
       "answer": "Karena zat tersebut tidak ditambahkan sebagai bahan: zat dapat berpindah ke makanan dari material yang mewadahi atau menyentuhnya. Migrasi ini bergantung pada zat, kemasan, dan kondisi penggunaan, dan tidak muncul dalam daftar bahan."
+    },
+    {
+      "question": "Mengapa BOTIA menampilkan catatan bahkan ketika tidak mendeteksi bahan apa pun pada label?",
+      "answer": "Karena beberapa isu tidak bergantung pada bahan yang dideklarasikan: misalnya, migrasi dari kemasan, kontaminan persisten tertentu, atau paparan kontekstual yang relevan bagi sistem endokrin. BOTIA menyajikannya sebagai konteks, bukan sebagai sesuatu yang terbukti pada produk tersebut."
     }
   ],
   "pectins": [
@@ -1619,6 +1627,48 @@
     {
       "question": "Apakah senyawa tersebut dilepaskan saat menurunkan berat badan atau selama kehamilan?",
       "answer": "Senyawa persisten dapat bertahan di lemak tubuh selama bertahun-tahun. Hal ini tidak memungkinkan pelepasan terkonsentrasi selama penurunan berat badan atau kehamilan untuk diasumsikan, atau memprediksi kapan itu terjadi atau dalam jumlah berapa pada seseorang."
+    }
+  ],
+  "evidence": [
+    {
+      "question": "Apa sebenarnya arti ketika BOTIA menampilkan lapisan Evidence?",
+      "answer": "BOTIA tidak menggunakan opini atau tren. Setiap sinyal dalam modul-modul ini didasarkan pada pedoman yang diterbitkan atau opini ilmiah dari WHO, EFSA, FDA, IARC, atau Codex Alimentarius. Ketika bukti sedang ditinjau atau diperdebatkan, BOTIA mengatakannya. Ketidakpastian adalah bagian dari informasi."
+    },
+    {
+      "question": "Jika suatu bahan diizinkan, mengapa bukti ilmiah tentang bahan tersebut tetap bisa relevan?",
+      "answer": "Label makanan adalah dokumen hukum sebelum menjadi penjelasan bagi manusia. Suatu bahan dapat diizinkan, dinyatakan dengan benar, dan tetap memiliki implikasi kesehatan yang terdokumentasi yang tidak pernah muncul pada kemasan. BOTIA menghubungkan apa yang dikatakan label dengan apa yang dikatakan sains."
+    },
+    {
+      "question": "Apa yang dapat disimpulkan BOTIA dari label, dan apa yang tidak dapat dibuktikan hanya dari label?",
+      "answer": "BOTIA menandakan keberadaan, menjelaskan apa yang dikatakan bukti, dan dengan jelas menyatakan apa yang tidak dapat disimpulkan hanya dari label. Mengukur paparan Anda atau menghitung risiko kumulatif."
+    }
+  ],
+  "help": [
+    {
+      "question": "Mengapa BOTIA dimulai dengan daftar bahan daripada barcode?",
+      "answer": "Karena barcode mengidentifikasi produk tetapi tidak menjelaskan formulasinya. BOTIA dimulai dengan daftar bahan yang sebenarnya karena menunjukkan apa yang dinyatakan produsen terkandung dalam makanan tersebut."
+    },
+    {
+      "question": "Mengapa BOTIA tidak memberikan skor atau putusan?",
+      "answer": "Karena skor tunggal akan mencampur pertanyaan yang berbeda dan menyembunyikan apa yang tidak dapat diketahui dari label. BOTIA memisahkan apa yang dinyatakan, apa yang dapat diidentifikasi, apa yang tidak pasti, dan bukti yang mendukungnya."
+    },
+    {
+      "question": "Mengapa label yang sama menimbulkan pertanyaan berbeda tergantung siapa yang membacanya?",
+      "answer": "Karena daftar yang sama dapat penting untuk alasan nutrisi, agama, atau etika, atau karena asal hewan, kehamilan, atau paparan. BOTIA memisahkan pertanyaan-pertanyaan ini daripada mereduksinya menjadi satu jawaban."
+    }
+  ],
+  "ingredient_index": [
+    {
+      "question": "Mengapa BOTIA dimulai dengan daftar bahan daripada barcode?",
+      "answer": "Karena barcode mengidentifikasi produk tetapi tidak menjelaskan formulasinya. BOTIA dimulai dengan daftar bahan yang sebenarnya karena menunjukkan apa yang dinyatakan produsen terkandung dalam makanan tersebut."
+    },
+    {
+      "question": "Mengapa BOTIA tidak memberikan skor atau putusan?",
+      "answer": "Karena skor tunggal akan mencampur pertanyaan yang berbeda dan menyembunyikan apa yang tidak dapat diketahui dari label. BOTIA memisahkan apa yang dinyatakan, apa yang dapat diidentifikasi, apa yang tidak pasti, dan bukti yang mendukungnya."
+    },
+    {
+      "question": "Mengapa label yang sama menimbulkan pertanyaan berbeda tergantung siapa yang membacanya?",
+      "answer": "Karena daftar yang sama dapat penting untuk alasan nutrisi, agama, atau etika, atau karena asal hewan, kehamilan, atau paparan. BOTIA memisahkan pertanyaan-pertanyaan ini daripada mereduksinya menjadi satu jawaban."
     }
   ]
 }

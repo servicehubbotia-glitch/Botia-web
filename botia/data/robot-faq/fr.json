@@ -437,6 +437,10 @@
     {
       "question": "Comment peut-il y avoir une exposition à des perturbateurs endocriniens si cette expression ne figure pas dans la liste des ingrédients ?",
       "answer": "Parce que l'exposition ne provient pas toujours d'un ingrédient déclaré : elle peut aussi provenir de matériaux en contact avec les aliments ou de l'environnement. La liste des ingrédients seule ne peut pas mesurer cette exposition."
+    },
+    {
+      "question": "Interagir avec les hormones est-ce la même chose que les perturber ?",
+      "answer": "Non. Une substance peut interagir avec une voie hormonale sans que cela démontre un effet indésirable ; la perturbation endocrinienne doit être évaluée pour cette substance et cette exposition spécifiques."
     }
   ],
   "energy": [
@@ -887,6 +891,10 @@
     {
       "question": "Comment des substances peuvent-elles migrer de l'emballage vers les aliments si elles n'apparaissent jamais comme ingrédients ?",
       "answer": "Parce qu'elles ne sont pas ajoutées comme ingrédients : elles peuvent passer dans les aliments depuis le matériau qui les contient ou les touche. Cette migration dépend de la substance, de l'emballage et des conditions d'utilisation, et n'apparaît pas dans la liste des ingrédients."
+    },
+    {
+      "question": "Pourquoi BOTIA affiche-t-il des avertissements même lorsqu'il n'a détecté aucun ingrédient sur l'étiquette ?",
+      "answer": "Parce que certains problèmes ne dépendent pas d'un ingrédient déclaré : par exemple, la migration depuis l'emballage, certains contaminants persistants ou une exposition contextuelle pertinente pour le système endocrinien. BOTIA les présente comme un contexte, et non comme quelque chose de démontré dans ce produit."
     }
   ],
   "pectins": [
@@ -1619,6 +1627,48 @@
     {
       "question": "Ces composés sont-ils libérés lors d'une perte de poids ou pendant la grossesse ?",
       "answer": "Les composés persistants peuvent rester dans la masse grasse corporelle pendant des années. Cela ne permet pas de supposer une libération concentrée lors d'une perte de poids ou d'une grossesse, ni de prédire quand elle se produit ou en quelle quantité chez une personne."
+    }
+  ],
+  "evidence": [
+    {
+      "question": "Que signifie réellement l’affichage d’une couche Evidence dans BOTIA ?",
+      "answer": "BOTIA n'utilise pas d'opinions ou de tendances. Chaque signal dans ces modules est fondé sur des directives publiées ou des avis scientifiques WHO, de l'EFSA, de la FDA, IARC ou du Codex Alimentarius. Lorsque les preuves sont en cours d'examen ou contestées, BOTIA le dit. L'incertitude fait partie de l'information."
+    },
+    {
+      "question": "Si un ingrédient est autorisé, pourquoi des données scientifiques à son sujet peuvent-elles encore être pertinentes ?",
+      "answer": "Les étiquettes alimentaires sont des documents juridiques avant d'être des explications humaines. Un ingrédient peut être autorisé, déclaré correctement et avoir encore des implications sanitaires documentées qui n'apparaissent jamais sur l'emballage. BOTIA relie ce que dit l'étiquette à ce que dit la science."
+    },
+    {
+      "question": "Que peut conclure BOTIA à partir d’une étiquette, et que ne peut-elle pas démontrer avec l’étiquette seule ?",
+      "answer": "BOTIA signale la présence, explique ce que disent les preuves et indique clairement ce qui ne peut pas être conclu à partir d'une seule étiquette. Quantifier votre exposition ou calculer le risque cumulatif."
+    }
+  ],
+  "help": [
+    {
+      "question": "Pourquoi BOTIA commence-t-il par la liste des ingrédients plutôt que par le code-barres ?",
+      "answer": "Parce qu'un code-barres identifie un produit mais n'explique pas sa formulation. BOTIA commence par la liste réelle des ingrédients, car elle montre ce que le fabricant déclare que l'aliment contient."
+    },
+    {
+      "question": "Pourquoi BOTIA ne donne-t-il pas de score ni de verdict ?",
+      "answer": "Parce qu'un score unique mélangerait différentes questions et masquerait ce qui ne peut pas être connu à partir de l'étiquette. BOTIA sépare ce qui est déclaré, ce qui peut être identifié, ce qui est incertain et les preuves qui l'étayent."
+    },
+    {
+      "question": "Pourquoi la même étiquette soulève-t-elle des questions différentes selon qui la lit ?",
+      "answer": "Parce que la même liste peut avoir de l'importance pour des raisons nutritionnelles, religieuses ou éthiques, ou en raison de l'origine animale, de la grossesse ou de l'exposition. BOTIA garde ces questions séparées plutôt que de les réduire à une seule réponse."
+    }
+  ],
+  "ingredient_index": [
+    {
+      "question": "Pourquoi BOTIA commence-t-il par la liste des ingrédients plutôt que par le code-barres ?",
+      "answer": "Parce qu'un code-barres identifie un produit mais n'explique pas sa formulation. BOTIA commence par la liste réelle des ingrédients, car elle montre ce que le fabricant déclare que l'aliment contient."
+    },
+    {
+      "question": "Pourquoi BOTIA ne donne-t-il pas de score ni de verdict ?",
+      "answer": "Parce qu'un score unique mélangerait différentes questions et masquerait ce qui ne peut pas être connu à partir de l'étiquette. BOTIA sépare ce qui est déclaré, ce qui peut être identifié, ce qui est incertain et les preuves qui l'étayent."
+    },
+    {
+      "question": "Pourquoi la même étiquette soulève-t-elle des questions différentes selon qui la lit ?",
+      "answer": "Parce que la même liste peut avoir de l'importance pour des raisons nutritionnelles, religieuses ou éthiques, ou en raison de l'origine animale, de la grossesse ou de l'exposition. BOTIA garde ces questions séparées plutôt que de les réduire à une seule réponse."
     }
   ]
 }

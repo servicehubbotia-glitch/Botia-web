@@ -437,6 +437,10 @@
     {
       "question": "Cum poate exista expunere la disruptori endocrini dacă această expresie nu apare în lista de ingrediente?",
       "answer": "Pentru că expunerea nu provine întotdeauna dintr-un ingredient declarat: poate proveni și din materialele de contact cu alimentul sau din mediu. Lista de ingrediente singură nu poate măsura această expunere."
+    },
+    {
+      "question": "Interacțiunea cu hormonii este același lucru cu a-i perturba?",
+      "answer": "Nu. O substanță poate interacționa cu o cale hormonală fără ca acest lucru să demonstreze un efect advers; perturbarea endocrină trebuie evaluată pentru acea substanță specifică și expunere."
     }
   ],
   "energy": [
@@ -887,6 +891,10 @@
     {
       "question": "Cum pot migra substanțele din ambalaj în alimente dacă nu apar niciodată ca ingrediente?",
       "answer": "Deoarece nu sunt adăugate ca ingrediente: ele pot trece în aliment din materialul care îl conține sau îl atinge. Această migrare depinde de substanță, ambalaj și condițiile de utilizare și nu apare în lista ingredientelor."
+    },
+    {
+      "question": "De ce BOTIA afișează atenționări chiar și atunci când nu a detectat niciun ingredient pe etichetă?",
+      "answer": "Pentru că unele aspecte nu depind de un ingredient declarat: de exemplu, migrarea din ambalaj, anumiți contaminanți persistenți sau expunerea contextuală relevantă pentru sistemul endocrin. BOTIA le prezintă ca context, nu ca ceva demonstrat în acel produs."
     }
   ],
   "pectins": [
@@ -1619,6 +1627,48 @@
     {
       "question": "Sunt eliberați acești compuși la pierderea în greutate sau în timpul sarcinii?",
       "answer": "Compușii persistenți pot rămâne în grăsimea corporală ani de zile. Acest lucru nu permite să se presupună o eliberare concentrată în timpul pierderii în greutate sau al sarcinii, sau să se prezică când are loc sau în ce cantitate la o persoană."
+    }
+  ],
+  "evidence": [
+    {
+      "question": "Ce înseamnă, de fapt, când BOTIA afișează un strat Evidence?",
+      "answer": "BOTIA nu folosește opinii sau tendințe. Fiecare semnal din aceste module se bazează pe ghiduri publicate sau opinii științifice de la WHO, EFSA, FDA, IARC sau Codex Alimentarius. Când dovezile sunt în curs de revizuire sau contestate, BOTIA spune acest lucru. Incertitudinea face parte din informație."
+    },
+    {
+      "question": "Dacă un ingredient este autorizat, de ce pot rămâne relevante dovezile științifice despre el?",
+      "answer": "Etichetele alimentare sunt documente legale înainte de a fi explicații pentru oameni. Un ingredient poate fi autorizat, declarat corect și poate avea totuși implicații documentate asupra sănătății care nu apar niciodată pe ambalaj. BOTIA conectează ceea ce spune eticheta cu ceea ce spune știința."
+    },
+    {
+      "question": "Ce poate concluziona BOTIA dintr-o etichetă și ce nu poate demonstra doar din etichetă?",
+      "answer": "BOTIA semnalează prezența, explică ce spun dovezile și afirmă clar ce nu poate fi concluzionat doar dintr-o etichetă. Să cuantifice expunerea ta sau să calculeze riscul cumulativ."
+    }
+  ],
+  "help": [
+    {
+      "question": "De ce BOTIA începe cu lista de ingrediente și nu cu codul de bare?",
+      "answer": "Pentru că un cod de bare identifică un produs, dar nu explică formula sa. BOTIA începe cu lista reală de ingrediente pentru că arată ceea ce producătorul declară că conține acel aliment."
+    },
+    {
+      "question": "De ce BOTIA nu oferă un scor sau un verdict?",
+      "answer": "Pentru că un singur scor ar amesteca întrebări diferite și ar ascunde ceea ce nu poate fi cunoscut din etichetă. BOTIA separă ceea ce este declarat, ceea ce poate fi identificat, ceea ce este incert și dovezile care îl susțin."
+    },
+    {
+      "question": "De ce aceeași etichetă ridică întrebări diferite în funcție de cine o citește?",
+      "answer": "Pentru că aceeași listă poate conta din motive nutriționale, religioase sau etice, sau din cauza originii animale, a sarcinii sau a expunerii. BOTIA păstrează aceste întrebări separate în loc să le reducă la un singur răspuns."
+    }
+  ],
+  "ingredient_index": [
+    {
+      "question": "De ce BOTIA începe cu lista de ingrediente și nu cu codul de bare?",
+      "answer": "Pentru că un cod de bare identifică un produs, dar nu explică formula sa. BOTIA începe cu lista reală de ingrediente pentru că arată ceea ce producătorul declară că conține acel aliment."
+    },
+    {
+      "question": "De ce BOTIA nu oferă un scor sau un verdict?",
+      "answer": "Pentru că un singur scor ar amesteca întrebări diferite și ar ascunde ceea ce nu poate fi cunoscut din etichetă. BOTIA separă ceea ce este declarat, ceea ce poate fi identificat, ceea ce este incert și dovezile care îl susțin."
+    },
+    {
+      "question": "De ce aceeași etichetă ridică întrebări diferite în funcție de cine o citește?",
+      "answer": "Pentru că aceeași listă poate conta din motive nutriționale, religioase sau etice, sau din cauza originii animale, a sarcinii sau a expunerii. BOTIA păstrează aceste întrebări separate în loc să le reducă la un singur răspuns."
     }
   ]
 }

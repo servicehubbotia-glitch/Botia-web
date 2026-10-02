@@ -437,6 +437,10 @@
     {
       "question": "İçindekiler listesinde bu ifade yoksa endokrin bozuculara maruziyet nasıl olabilir?",
       "answer": "Çünkü maruziyet her zaman beyan edilen bir bileşenden gelmez: gıda temas materyallerinden veya çevreden de gelebilir. Yalnızca içindekiler listesi bu maruziyeti ölçemez."
+    },
+    {
+      "question": "Hormonlarla etkileşime girmek onları bozmakla aynı şey mi?",
+      "answer": "Hayır. Bir madde bir hormonal yolla etkileşime girebilir, ancak bu olumsuz bir etkiyi kanıtlamaz; endokrin bozulma o spesifik madde ve maruziyet için değerlendirilmelidir."
     }
   ],
   "energy": [
@@ -887,6 +891,10 @@
     {
       "question": "Maddeler, içerik olarak hiç görünmedikleri halde ambalajdan gıdaya nasıl geçebilir?",
       "answer": "Çünkü içerik olarak eklenmezler: onları içeren veya onlara temas eden malzemeden gıdaya geçebilirler. Bu geçiş maddeye, ambalaja ve kullanım koşullarına bağlıdır ve içerik listesinde görünmez."
+    },
+    {
+      "question": "BOTIA etikette herhangi bir içerik tespit etmediğinde bile neden uyarılar gösteriyor?",
+      "answer": "Çünkü bazı sorunlar beyan edilen bir içeriğe bağlı değildir: örneğin ambalajdan geçiş, belirli kalıcı kirleticiler veya endokrin sistemle ilgili bağlamsal maruziyet. BOTIA bunları o üründe kanıtlanmış bir şey olarak değil, bağlam olarak sunar."
     }
   ],
   "pectins": [
@@ -1619,6 +1627,48 @@
     {
       "question": "Bu bileşikler kilo verirken veya hamilelik sırasında salınır mı?",
       "answer": "Kalıcı bileşikler vücut yağında yıllarca kalabilir. Bu, kilo kaybı veya hamilelik sırasında konsantre bir salınımın varsayılmasına veya bir kişide ne zaman ve ne miktarda meydana geldiğini tahmin etmeye izin vermez."
+    }
+  ],
+  "evidence": [
+    {
+      "question": "BOTIA’nın bir Evidence katmanı göstermesi aslında ne anlama gelir?",
+      "answer": "BOTIA, görüş veya trendleri kullanmaz. Bu modüllerdeki her sinyal, WHO, EFSA, FDA, IARC veya Codex Alimentarius'tan yayınlanmış kılavuzlara veya bilimsel görüşlere dayanır. Kanıt inceleme altındayken veya tartışmalıyken, BOTIA bunu belirtir. Belirsizlik, bilginin bir parçasıdır."
+    },
+    {
+      "question": "Bir bileşene izin verilmişse, onunla ilgili bilimsel kanıtlar neden hâlâ önemli olabilir?",
+      "answer": "Gıda etiketleri, insan açıklamaları olmadan önce yasal belgelerdir. Bir içerik maddesi onaylanmış, doğru şekilde beyan edilmiş olabilir ve yine de ambalajda asla görünmeyen, belgelenmiş sağlık etkileri taşıyabilir. BOTIA, etiketin söylediğini bilimin söylediğine bağlar."
+    },
+    {
+      "question": "BOTIA bir etiketten ne sonuç çıkarabilir ve yalnızca etiketle neyi kanıtlayamaz?",
+      "answer": "BOTIA varlığı işaret eder, kanıtların ne söylediğini açıklar ve yalnızca bir etiketten ne gibi sonuçlar çıkarılamayacağını açıkça belirtir. Maruziyetinizi ölçemez veya kümülatif riski hesaplayamaz."
+    }
+  ],
+  "help": [
+    {
+      "question": "BOTIA neden barkod yerine içerik listesiyle başlıyor?",
+      "answer": "Çünkü barkod bir ürünü tanımlar ama formülasyonunu açıklamaz. BOTIA gerçek içerik listesiyle başlar çünkü üreticinin o gıdanın içerdiğini beyan ettiği şeyleri gösterir."
+    },
+    {
+      "question": "BOTIA neden bir puan veya hüküm vermiyor?",
+      "answer": "Çünkü tek bir puan farklı soruları karıştırır ve etiketten bilinemeyecek şeyleri gizler. BOTIA beyan edileni, tanımlanabileni, belirsiz olanı ve bunu destekleyen kanıtları birbirinden ayırır."
+    },
+    {
+      "question": "Aynı etiket neden onu okuyan kişiye göre farklı sorular doğuruyor?",
+      "answer": "Çünkü aynı liste beslenme, dinî veya etik nedenlerle ya da hayvansal köken, gebelik veya maruziyet nedeniyle önemli olabilir. BOTIA bu soruları tek bir yanıta indirgemek yerine ayrı tutar."
+    }
+  ],
+  "ingredient_index": [
+    {
+      "question": "BOTIA neden barkod yerine içerik listesiyle başlıyor?",
+      "answer": "Çünkü barkod bir ürünü tanımlar ama formülasyonunu açıklamaz. BOTIA gerçek içerik listesiyle başlar çünkü üreticinin o gıdanın içerdiğini beyan ettiği şeyleri gösterir."
+    },
+    {
+      "question": "BOTIA neden bir puan veya hüküm vermiyor?",
+      "answer": "Çünkü tek bir puan farklı soruları karıştırır ve etiketten bilinemeyecek şeyleri gizler. BOTIA beyan edileni, tanımlanabileni, belirsiz olanı ve bunu destekleyen kanıtları birbirinden ayırır."
+    },
+    {
+      "question": "Aynı etiket neden onu okuyan kişiye göre farklı sorular doğuruyor?",
+      "answer": "Çünkü aynı liste beslenme, dinî veya etik nedenlerle ya da hayvansal köken, gebelik veya maruziyet nedeniyle önemli olabilir. BOTIA bu soruları tek bir yanıta indirgemek yerine ayrı tutar."
     }
   ]
 }

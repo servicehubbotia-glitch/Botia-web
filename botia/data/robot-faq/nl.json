@@ -437,6 +437,10 @@
     {
       "question": "Hoe kan er blootstelling aan hormoonverstoorders zijn als die term niet in de ingrediëntenlijst staat?",
       "answer": "Omdat blootstelling niet altijd van een vermeld ingrediënt komt: ze kan ook komen van voedselcontactmaterialen of het milieu. De ingrediëntenlijst alleen kan die blootstelling niet meten."
+    },
+    {
+      "question": "Is interactie met hormonen hetzelfde als ze verstoren?",
+      "answer": "Nee. Een stof kan interageren met een hormonale signaalroute zonder dat dit een nadelig effect aantoont; endocriene verstoring moet voor die specifieke stof en blootstelling worden beoordeeld."
     }
   ],
   "energy": [
@@ -887,6 +891,10 @@
     {
       "question": "Hoe kunnen stoffen uit verpakkingen in voedsel terechtkomen als ze nooit als ingrediënt worden vermeld?",
       "answer": "Omdat ze niet als ingrediënt worden toegevoegd: ze kunnen vanuit het materiaal dat het voedsel bevat of aanraakt in het voedsel overgaan. Deze migratie hangt af van de stof, de verpakking en de gebruikomstandigheden, en verschijnt niet in de ingrediëntenlijst."
+    },
+    {
+      "question": "Waarom toont BOTIA meldingen, zelfs als het geen ingrediënt op het etiket heeft gedetecteerd?",
+      "answer": "Omdat sommige kwesties niet afhangen van een vermeld ingrediënt: bijvoorbeeld migratie uit verpakkingen, bepaalde persistente contaminanten of contextuele blootstelling die relevant is voor het endocriene systeem. BOTIA presenteert deze als context, niet als iets dat in dat product is aangetoond."
     }
   ],
   "pectins": [
@@ -1619,6 +1627,48 @@
     {
       "question": "Komen die verbindingen vrij bij gewichtsverlies of tijdens de zwangerschap?",
       "answer": "Persistente verbindingen kunnen jarenlang in lichaamsvet blijven. Dit maakt het niet mogelijk om een geconcentreerde afgifte tijdens gewichtsverlies of zwangerschap te veronderstellen, of te voorspellen wanneer dit gebeurt of in welke hoeveelheid bij een persoon."
+    }
+  ],
+  "evidence": [
+    {
+      "question": "Wat betekent het eigenlijk wanneer BOTIA een Evidence-laag toont?",
+      "answer": "BOTIA gebruikt geen meningen of trends. Elk signaal in deze modules is gebaseerd op gepubliceerde richtlijnen of wetenschappelijke adviezen van WHO, EFSA, FDA, IARC of Codex Alimentarius. Wanneer het bewijs wordt herzien of betwist, zegt BOTIA dat. Onzekerheid maakt deel uit van de informatie."
+    },
+    {
+      "question": "Als een ingrediënt is toegelaten, waarom kan wetenschappelijk bewijs erover toch nog relevant zijn?",
+      "answer": "Voedseletiketten zijn juridische documenten voordat ze menselijke uitleg zijn. Een ingrediënt kan zijn goedgekeurd, correct worden vermeld en nog steeds gedocumenteerde gezondheidsimplicaties hebben die nooit op de verpakking verschijnen. BOTIA verbindt wat het etiket zegt met wat de wetenschap zegt."
+    },
+    {
+      "question": "Wat kan BOTIA uit een etiket afleiden en wat kan het met alleen dat etiket niet aantonen?",
+      "answer": "BOTIA signaleert aanwezigheid, legt uit wat het bewijs zegt en geeft duidelijk aan wat niet uit een etiket alleen kan worden geconcludeerd. Je blootstelling kwantificeren of cumulatief risico berekenen."
+    }
+  ],
+  "help": [
+    {
+      "question": "Waarom begint BOTIA met de ingrediëntenlijst in plaats van de barcode?",
+      "answer": "Omdat een barcode een product identificeert maar de samenstelling niet verklaart. BOTIA begint met de daadwerkelijke ingrediëntenlijst omdat die laat zien wat de fabrikant verklaart dat het voedsel bevat."
+    },
+    {
+      "question": "Waarom geeft BOTIA geen score of oordeel?",
+      "answer": "Omdat één enkele score verschillende vragen zou vermengen en zou verbergen wat niet uit het etiket kan worden afgeleid. BOTIA scheidt wat is verklaard, wat kan worden geïdentificeerd, wat onzeker is en het bewijs dat dit ondersteunt."
+    },
+    {
+      "question": "Waarom roept hetzelfde etiket verschillende vragen op, afhankelijk van wie het leest?",
+      "answer": "Omdat dezelfde lijst van belang kan zijn om voedingskundige, religieuze of ethische redenen, of vanwege dierlijke oorsprong, zwangerschap of blootstelling. BOTIA houdt deze vragen gescheiden in plaats van ze tot één antwoord te herleiden."
+    }
+  ],
+  "ingredient_index": [
+    {
+      "question": "Waarom begint BOTIA met de ingrediëntenlijst in plaats van de barcode?",
+      "answer": "Omdat een barcode een product identificeert maar de samenstelling niet verklaart. BOTIA begint met de daadwerkelijke ingrediëntenlijst omdat die laat zien wat de fabrikant verklaart dat het voedsel bevat."
+    },
+    {
+      "question": "Waarom geeft BOTIA geen score of oordeel?",
+      "answer": "Omdat één enkele score verschillende vragen zou vermengen en zou verbergen wat niet uit het etiket kan worden afgeleid. BOTIA scheidt wat is verklaard, wat kan worden geïdentificeerd, wat onzeker is en het bewijs dat dit ondersteunt."
+    },
+    {
+      "question": "Waarom roept hetzelfde etiket verschillende vragen op, afhankelijk van wie het leest?",
+      "answer": "Omdat dezelfde lijst van belang kan zijn om voedingskundige, religieuze of ethische redenen, of vanwege dierlijke oorsprong, zwangerschap of blootstelling. BOTIA houdt deze vragen gescheiden in plaats van ze tot één antwoord te herleiden."
     }
   ]
 }

@@ -437,6 +437,10 @@
     {
       "question": "Wie kann es zu einer Exposition gegenüber endokrinen Disruptoren kommen, wenn dieser Begriff nicht in der Zutatenliste steht?",
       "answer": "Weil die Exposition nicht immer von einer deklarierten Zutat ausgeht: Sie kann auch von Lebensmittelkontaktmaterialien oder aus der Umwelt stammen. Die Zutatenliste allein kann diese Exposition nicht messen."
+    },
+    {
+      "question": "Ist die Interaktion mit Hormonen dasselbe wie ihre Störung?",
+      "answer": "Nein. Ein Stoff kann mit einem Hormonweg interagieren, ohne dass dies eine schädliche Wirkung belegt; eine endokrine Störung muss für diesen spezifischen Stoff und diese Exposition bewertet werden."
     }
   ],
   "energy": [
@@ -887,6 +891,10 @@
     {
       "question": "Wie können Stoffe aus Verpackungen in Lebensmittel übergehen, wenn sie nie als Zutaten erscheinen?",
       "answer": "Weil sie nicht als Zutaten zugesetzt werden: Sie können aus dem Material, das das Lebensmittel enthält oder berührt, in das Lebensmittel übergehen. Diese Migration hängt von der Substanz, der Verpackung und den Verwendungsbedingungen ab und erscheint nicht in der Zutatenliste."
+    },
+    {
+      "question": "Warum zeigt BOTIA Hinweise an, obwohl sie keinen Inhaltsstoff auf dem Etikett nachgewiesen hat?",
+      "answer": "Weil einige Punkte nicht von einer deklarierten Zutat abhängen: zum Beispiel Migration aus Verpackungen, bestimmte persistente Kontaminanten oder kontextuelle Exposition, die für das endokrine System relevant ist. BOTIA stellt sie als Kontext dar, nicht als etwas, das in diesem Produkt nachgewiesen wurde."
     }
   ],
   "pectins": [
@@ -1619,6 +1627,48 @@
     {
       "question": "Werden diese Verbindungen beim Abnehmen oder während der Schwangerschaft freigesetzt?",
       "answer": "Persistente Verbindungen können jahrelang im Körperfett verbleiben. Dies erlaubt es nicht, eine konzentrierte Freisetzung beim Abnehmen oder in der Schwangerschaft anzunehmen oder vorherzusagen, wann sie auftritt oder in welcher Menge bei einer Person."
+    }
+  ],
+  "evidence": [
+    {
+      "question": "Was bedeutet es eigentlich, wenn BOTIA eine Evidence-Ebene anzeigt?",
+      "answer": "BOTIA verwendet keine Meinungen oder Trends. Jedes Signal in diesen Modulen basiert auf veröffentlichten Leitlinien oder wissenschaftlichen Stellungnahmen von WHO, EFSA, FDA, IARC oder Codex Alimentarius. Wenn die Evidenz überprüft oder umstritten ist, sagt BOTIA dies. Unsicherheit ist Teil der Information."
+    },
+    {
+      "question": "Wenn ein Inhaltsstoff zugelassen ist, warum können wissenschaftliche Erkenntnisse dazu trotzdem relevant sein?",
+      "answer": "Lebensmitteletiketten sind Rechtsdokumente, bevor sie menschliche Erklärungen sind. Ein Inhaltsstoff kann zugelassen, korrekt deklariert sein und dennoch dokumentierte gesundheitliche Auswirkungen haben, die nie auf der Verpackung erscheinen. BOTIA verbindet, was das Etikett sagt, mit dem, was die Wissenschaft sagt."
+    },
+    {
+      "question": "Was kann BOTIA aus einem Etikett ableiten – und was lässt sich allein damit nicht belegen?",
+      "answer": "BOTIA signalisiert das Vorhandensein, erklärt, was die Evidenz aussagt, und gibt klar an, was allein aus einem Etikett nicht geschlossen werden kann. Ihre Exposition quantifizieren oder das kumulative Risiko berechnen."
+    }
+  ],
+  "help": [
+    {
+      "question": "Warum beginnt BOTIA mit der Zutatenliste und nicht mit dem Barcode?",
+      "answer": "Weil ein Barcode ein Produkt identifiziert, aber nicht seine Zusammensetzung erklärt. BOTIA beginnt mit der tatsächlichen Zutatenliste, weil sie zeigt, was der Hersteller als Inhalt des Lebensmittels deklariert."
+    },
+    {
+      "question": "Warum gibt BOTIA keine Bewertung oder ein Urteil ab?",
+      "answer": "Weil eine einzige Bewertung verschiedene Fragen vermischen und verbergen würde, was aus dem Etikett nicht ersichtlich ist. BOTIA trennt, was deklariert ist, was identifiziert werden kann, was unsicher ist und welche Belege es dafür gibt."
+    },
+    {
+      "question": "Warum wirft dasselbe Etikett je nach Leser unterschiedliche Fragen auf?",
+      "answer": "Weil dieselbe Liste aus ernährungsphysiologischen, religiösen oder ethischen Gründen relevant sein kann oder wegen tierischer Herkunft, Schwangerschaft oder Exposition. BOTIA hält diese Fragen getrennt, anstatt sie auf eine einzige Antwort zu reduzieren."
+    }
+  ],
+  "ingredient_index": [
+    {
+      "question": "Warum beginnt BOTIA mit der Zutatenliste und nicht mit dem Barcode?",
+      "answer": "Weil ein Barcode ein Produkt identifiziert, aber nicht seine Zusammensetzung erklärt. BOTIA beginnt mit der tatsächlichen Zutatenliste, weil sie zeigt, was der Hersteller als Inhalt des Lebensmittels deklariert."
+    },
+    {
+      "question": "Warum gibt BOTIA keine Bewertung oder ein Urteil ab?",
+      "answer": "Weil eine einzige Bewertung verschiedene Fragen vermischen und verbergen würde, was aus dem Etikett nicht ersichtlich ist. BOTIA trennt, was deklariert ist, was identifiziert werden kann, was unsicher ist und welche Belege es dafür gibt."
+    },
+    {
+      "question": "Warum wirft dasselbe Etikett je nach Leser unterschiedliche Fragen auf?",
+      "answer": "Weil dieselbe Liste aus ernährungsphysiologischen, religiösen oder ethischen Gründen relevant sein kann oder wegen tierischer Herkunft, Schwangerschaft oder Exposition. BOTIA hält diese Fragen getrennt, anstatt sie auf eine einzige Antwort zu reduzieren."
     }
   ]
 }

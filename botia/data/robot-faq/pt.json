@@ -437,6 +437,10 @@
     {
       "question": "Como pode haver exposição a desreguladores endócrinos se essa expressão não está na lista de ingredientes?",
       "answer": "Porque a exposição nem sempre vem de um ingrediente declarado: também pode vir de materiais em contato com alimentos ou do ambiente. A lista de ingredientes sozinha não consegue medir essa exposição."
+    },
+    {
+      "question": "Interagir com as hormonas é o mesmo que perturbá-las?",
+      "answer": "Não. Uma substância pode interagir com uma via hormonal sem que isso demonstre um efeito adverso; a desregulação endócrina tem de ser avaliada para essa substância e exposição específicas."
     }
   ],
   "energy": [
@@ -887,6 +891,10 @@
     {
       "question": "Como podem as substâncias migrar da embalagem para o alimento se nunca aparecem como ingredientes?",
       "answer": "Porque não são adicionadas como ingredientes: podem passar para o alimento a partir do material que o contém ou toca. Esta migração depende da substância, da embalagem e das condições de utilização, e não aparece na lista de ingredientes."
+    },
+    {
+      "question": "Porque é que o BOTIA mostra avisos mesmo quando não detetou nenhum ingrediente no rótulo?",
+      "answer": "Porque algumas questões não dependem de um ingrediente declarado: por exemplo, migração da embalagem, certos contaminantes persistentes ou exposição contextual relevante para o sistema endócrino. O BOTIA apresenta-os como contexto, não como algo demonstrado nesse produto."
     }
   ],
   "pectins": [
@@ -1619,6 +1627,48 @@
     {
       "question": "Esses compostos são liberados ao perder peso ou durante a gravidez?",
       "answer": "Compostos persistentes podem permanecer na gordura corporal por anos. Isso não permite assumir uma liberação concentrada durante a perda de peso ou a gravidez, nem prever quando ocorre ou em que quantidade em uma pessoa."
+    }
+  ],
+  "evidence": [
+    {
+      "question": "O que significa realmente quando a BOTIA mostra uma camada Evidence?",
+      "answer": "A BOTIA não usa opiniões ou tendências. Cada sinal nestes módulos baseia-se em diretrizes publicadas ou opiniões científicas da WHO, EFSA, FDA, IARC ou Codex Alimentarius. Quando a evidência está em revisão ou é contestada, a BOTIA diz isso. A incerteza faz parte da informação."
+    },
+    {
+      "question": "Se um ingrediente está autorizado, porque é que a evidência científica sobre ele pode continuar a ser relevante?",
+      "answer": "Os rótulos dos alimentos são documentos legais antes de serem explicações para as pessoas. Um ingrediente pode ser autorizado, declarado corretamente e ainda assim ter implicações documentadas para a saúde que nunca aparecem na embalagem. A BOTIA liga o que o rótulo diz ao que a ciência diz."
+    },
+    {
+      "question": "O que pode a BOTIA concluir a partir de um rótulo e o que não pode demonstrar apenas com ele?",
+      "answer": "A BOTIA sinaliza a presença, explica o que as evidências dizem e afirma claramente o que não pode ser concluído apenas a partir de um rótulo. Quantificar a sua exposição ou calcular o risco cumulativo."
+    }
+  ],
+  "help": [
+    {
+      "question": "Por que a BOTIA começa pela lista de ingredientes em vez do código de barras?",
+      "answer": "Porque um código de barras identifica um produto, mas não explica a sua formulação. A BOTIA começa pela lista de ingredientes real porque mostra o que o fabricante declara que o alimento contém."
+    },
+    {
+      "question": "Por que a BOTIA não dá uma pontuação ou um veredito?",
+      "answer": "Porque uma única pontuação misturaria perguntas diferentes e esconderia o que não pode ser conhecido a partir do rótulo. A BOTIA separa o que é declarado, o que pode ser identificado, o que é incerto e as evidências que o sustentam."
+    },
+    {
+      "question": "Por que o mesmo rótulo levanta perguntas diferentes dependendo de quem o lê?",
+      "answer": "Porque a mesma lista pode importar por razões nutricionais, religiosas ou éticas, ou devido à origem animal, gravidez ou exposição. A BOTIA mantém essas perguntas separadas em vez de reduzi-las a uma única resposta."
+    }
+  ],
+  "ingredient_index": [
+    {
+      "question": "Por que a BOTIA começa pela lista de ingredientes em vez do código de barras?",
+      "answer": "Porque um código de barras identifica um produto, mas não explica a sua formulação. A BOTIA começa pela lista de ingredientes real porque mostra o que o fabricante declara que o alimento contém."
+    },
+    {
+      "question": "Por que a BOTIA não dá uma pontuação ou um veredito?",
+      "answer": "Porque uma única pontuação misturaria perguntas diferentes e esconderia o que não pode ser conhecido a partir do rótulo. A BOTIA separa o que é declarado, o que pode ser identificado, o que é incerto e as evidências que o sustentam."
+    },
+    {
+      "question": "Por que o mesmo rótulo levanta perguntas diferentes dependendo de quem o lê?",
+      "answer": "Porque a mesma lista pode importar por razões nutricionais, religiosas ou éticas, ou devido à origem animal, gravidez ou exposição. A BOTIA mantém essas perguntas separadas em vez de reduzi-las a uma única resposta."
     }
   ]
 }

@@ -437,6 +437,10 @@
     {
       "question": "How can there be exposure to endocrine disruptors if that phrase is not in the ingredients list?",
       "answer": "Because exposure does not always come from a declared ingredient: it can also come from food contact materials or the environment. The ingredients list alone cannot measure that exposure."
+    },
+    {
+      "question": "Is interacting with hormones the same as disrupting them?",
+      "answer": "No. A substance can interact with a hormonal pathway without this demonstrating an adverse effect; endocrine disruption must be assessed for that specific substance and exposure."
     }
   ],
   "energy": [
@@ -887,6 +891,10 @@
     {
       "question": "How can substances migrate from packaging into food if they never appear as ingredients?",
       "answer": "Because they are not added as ingredients: they can pass into food from the material that contains or touches it. This migration depends on the substance, packaging and conditions of use, and does not appear in the ingredients list."
+    },
+    {
+      "question": "Why does BOTIA show notices even when it has not detected any ingredient on the label?",
+      "answer": "Because some issues do not depend on a declared ingredient: for example, migration from packaging, certain persistent contaminants or contextual exposure relevant to the endocrine system. BOTIA presents them as context, not as something demonstrated in that product."
     }
   ],
   "pectins": [
@@ -1619,6 +1627,48 @@
     {
       "question": "Are those compounds released when losing weight or during pregnancy?",
       "answer": "Persistent compounds can remain in body fat for years. This does not allow a concentrated release during weight loss or pregnancy to be assumed, or predict when it occurs or in what amount in a person."
+    }
+  ],
+  "evidence": [
+    {
+      "question": "What does it actually mean when BOTIA shows an Evidence Layer?",
+      "answer": "BOTIA does not use opinions or trends. Every signal in these modules is grounded in published guidelines or scientific opinions from WHO, EFSA, FDA, IARC, or Codex Alimentarius. When the evidence is under review or contested, BOTIA says so. Uncertainty is part of the information."
+    },
+    {
+      "question": "If an ingredient is authorised, why can scientific evidence about it still matter?",
+      "answer": "Food labels are legal documents before they are human explanations. An ingredient can be authorised, declared correctly, and still carry documented health implications that never appear on the packaging. BOTIA connects what the label says to what the science says."
+    },
+    {
+      "question": "What can BOTIA conclude from a label, and what can it not demonstrate from the label alone?",
+      "answer": "BOTIA signals presence, explains what the evidence says, and clearly states what cannot be concluded from a label alone. Quantify your exposure or calculate cumulative risk."
+    }
+  ],
+  "help": [
+    {
+      "question": "Why does BOTIA start with the ingredients list rather than the barcode?",
+      "answer": "Because a barcode identifies a product but does not explain its formulation. BOTIA starts with the actual ingredients list because it shows what the manufacturer declares that food contains."
+    },
+    {
+      "question": "Why does BOTIA not give a score or a verdict?",
+      "answer": "Because a single score would mix different questions and hide what cannot be known from the label. BOTIA separates what is declared, what can be identified, what is uncertain and the evidence supporting it."
+    },
+    {
+      "question": "Why does the same label raise different questions depending on who reads it?",
+      "answer": "Because the same list can matter for nutritional, religious or ethical reasons, or because of animal origin, pregnancy or exposure. BOTIA keeps these questions separate rather than reducing them to one answer."
+    }
+  ],
+  "ingredient_index": [
+    {
+      "question": "Why does BOTIA start with the ingredients list rather than the barcode?",
+      "answer": "Because a barcode identifies a product but does not explain its formulation. BOTIA starts with the actual ingredients list because it shows what the manufacturer declares that food contains."
+    },
+    {
+      "question": "Why does BOTIA not give a score or a verdict?",
+      "answer": "Because a single score would mix different questions and hide what cannot be known from the label. BOTIA separates what is declared, what can be identified, what is uncertain and the evidence supporting it."
+    },
+    {
+      "question": "Why does the same label raise different questions depending on who reads it?",
+      "answer": "Because the same list can matter for nutritional, religious or ethical reasons, or because of animal origin, pregnancy or exposure. BOTIA keeps these questions separate rather than reducing them to one answer."
     }
   ]
 }

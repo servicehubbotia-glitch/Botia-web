@@ -437,6 +437,10 @@
     {
       "question": "Jak może występować narażenie na substancje zaburzające gospodarkę hormonalną, jeśli tego określenia nie ma w wykazie składników?",
       "answer": "Ponieważ narażenie nie zawsze pochodzi z zadeklarowanego składnika: może również pochodzić z materiałów do kontaktu z żywnością lub ze środowiska. Sam wykaz składników nie pozwala zmierzyć tego narażenia."
+    },
+    {
+      "question": "Czy oddziaływanie z hormonami to to samo co ich zaburzanie?",
+      "answer": "Nie. Substancja może oddziaływać z szlakiem hormonalnym, nie dowodząc przez to niekorzystnego efektu; zaburzenia hormonalne należy oceniać dla konkretnej substancji i narażenia."
     }
   ],
   "energy": [
@@ -887,6 +891,10 @@
     {
       "question": "Jak substancje mogą migrować z opakowania do żywności, jeśli nigdy nie pojawiają się jako składniki?",
       "answer": "Ponieważ nie są dodawane jako składniki: mogą przenikać do żywności z materiału, który ją zawiera lub ma z nią kontakt. Ta migracja zależy od substancji, opakowania i warunków stosowania i nie pojawia się na liście składników."
+    },
+    {
+      "question": "Dlaczego BOTIA wyświetla uwagi, nawet gdy nie wykryła żadnego składnika na etykiecie?",
+      "answer": "Ponieważ niektóre kwestie nie zależą od zadeklarowanego składnika: na przykład migracja z opakowania, niektóre trwałe zanieczyszczenia lub narażenie kontekstowe istotne dla układu hormonalnego. BOTIA prezentuje je jako kontekst, a nie jako coś udowodnionego w danym produkcie."
     }
   ],
   "pectins": [
@@ -1619,6 +1627,48 @@
     {
       "question": "Czy te związki uwalniają się podczas utraty wagi lub w ciąży?",
       "answer": "Trwałe związki mogą pozostawać w tkance tłuszczowej przez lata. Nie pozwala to zakładać skoncentrowanego uwolnienia podczas utraty wagi lub w ciąży ani przewidzieć, kiedy ono nastąpi i w jakiej ilości u danej osoby."
+    }
+  ],
+  "evidence": [
+    {
+      "question": "Co właściwie oznacza, gdy BOTIA pokazuje warstwę Evidence?",
+      "answer": "BOTIA nie opiera się na opiniach ani trendach. Każdy sygnał w tych modułach jest oparty na opublikowanych wytycznych lub opiniach naukowych WHO, EFSA, FDA, IARC lub Codex Alimentarius. Gdy dowody są w trakcie przeglądu lub są kwestionowane, BOTIA to sygnalizuje. Niepewność jest częścią informacji."
+    },
+    {
+      "question": "Jeśli składnik jest dozwolony, dlaczego dowody naukowe na jego temat nadal mogą być istotne?",
+      "answer": "Etykiety żywności są dokumentami prawnymi, zanim staną się wyjaśnieniami dla osoby konsumującej. Składnik może być dozwolony, prawidłowo zadeklarowany, a mimo to nieść udokumentowane skutki zdrowotne, które nigdy nie pojawiają się na opakowaniu. BOTIA łączy to, co mówi etykieta, z tym, co mówi nauka."
+    },
+    {
+      "question": "Co BOTIA może wywnioskować z etykiety, a czego nie może wykazać wyłącznie na jej podstawie?",
+      "answer": "BOTIA sygnalizuje obecność, wyjaśnia, co mówią dowody, i wyraźnie stwierdza, czego nie można wywnioskować wyłącznie z etykiety. Określić ilościowo Twojej ekspozycji ani obliczyć skumulowanego ryzyka."
+    }
+  ],
+  "help": [
+    {
+      "question": "Dlaczego BOTIA zaczyna od listy składników, a nie od kodu kreskowego?",
+      "answer": "Ponieważ kod kreskowy identyfikuje produkt, ale nie wyjaśnia jego składu. BOTIA zaczyna od rzeczywistej listy składników, ponieważ pokazuje ona, co producent deklaruje, że dany produkt spożywczy zawiera."
+    },
+    {
+      "question": "Dlaczego BOTIA nie przyznaje oceny ani werdyktu?",
+      "answer": "Ponieważ pojedyncza ocena mieszałaby różne pytania i ukrywałaby to, czego nie można ustalić na podstawie etykiety. BOTIA rozdziela to, co jest zadeklarowane, co można zidentyfikować, co jest niepewne oraz dowody, które to potwierdzają."
+    },
+    {
+      "question": "Dlaczego ta sama etykieta rodzi różne pytania w zależności od tego, kto ją czyta?",
+      "answer": "Ponieważ ten sam skład może mieć znaczenie ze względów żywieniowych, religijnych lub etycznych, albo ze względu na pochodzenie zwierzęce, ciążę lub narażenie. BOTIA rozdziela te pytania, zamiast sprowadzać je do jednej odpowiedzi."
+    }
+  ],
+  "ingredient_index": [
+    {
+      "question": "Dlaczego BOTIA zaczyna od listy składników, a nie od kodu kreskowego?",
+      "answer": "Ponieważ kod kreskowy identyfikuje produkt, ale nie wyjaśnia jego składu. BOTIA zaczyna od rzeczywistej listy składników, ponieważ pokazuje ona, co producent deklaruje, że dany produkt spożywczy zawiera."
+    },
+    {
+      "question": "Dlaczego BOTIA nie przyznaje oceny ani werdyktu?",
+      "answer": "Ponieważ pojedyncza ocena mieszałaby różne pytania i ukrywałaby to, czego nie można ustalić na podstawie etykiety. BOTIA rozdziela to, co jest zadeklarowane, co można zidentyfikować, co jest niepewne oraz dowody, które to potwierdzają."
+    },
+    {
+      "question": "Dlaczego ta sama etykieta rodzi różne pytania w zależności od tego, kto ją czyta?",
+      "answer": "Ponieważ ten sam skład może mieć znaczenie ze względów żywieniowych, religijnych lub etycznych, albo ze względu na pochodzenie zwierzęce, ciążę lub narażenie. BOTIA rozdziela te pytania, zamiast sprowadzać je do jednej odpowiedzi."
     }
   ]
 }
