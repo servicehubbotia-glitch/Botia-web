@@ -73,6 +73,7 @@
 
         const context = {
             page: moduleName || pathname,
+            module: moduleName,
             language: currentLang,
             url: window.location.href,
             title:
@@ -289,7 +290,7 @@
             getPageContext();
 
         if (context.page === 'ingredient') {
-            return context.ingredient || '';
+            return context.module || context.ingredient || '';
         }
 
         return (
