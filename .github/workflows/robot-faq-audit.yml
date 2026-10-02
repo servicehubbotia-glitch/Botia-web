@@ -1,0 +1,71 @@
+name: Robot FAQ migration audit
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/robot-faq-audit.yml"
+      - "botia/data/robot-faq/**"
+      - "i18n/**/*.json"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare legacy robot_questions with robot-faq
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+          import sys
+
+          langs = ["ar","de","en","es","fr","id","it","nl","pl","pt","ro","ru","tr","zh"]
+          mismatches = []
+          checked = 0
+          with_legacy = 0
+
+          for lang in langs:
+              faq_path = Path("botia/data/robot-faq") / f"{lang}.json"
+              faq = json.loads(faq_path.read_text(encoding="utf-8"))
+
+              for path in sorted((Path("i18n") / lang).glob("*.json")):
+                  checked += 1
+                  data = json.loads(path.read_text(encoding="utf-8"))
+                  legacy = data.get("robot_questions")
+                  if not isinstance(legacy, list):
+                      continue
+
+                  with_legacy += 1
+                  key = path.stem
+                  migrated = faq.get(key)
+                  migrated_count = len(migrated) if isinstance(migrated, list) else 0
+                  legacy_count = len(legacy)
+
+                  if legacy_count > migrated_count:
+                      mismatches.append({
+                          "lang": lang,
+                          "slug": key,
+                          "file": str(path),
+                          "legacy": legacy_count,
+                          "robot_faq": migrated_count,
+                          "legacy_questions": legacy,
+                      })
+
+          print(f"JSON files checked: {checked}")
+          print(f"Files with robot_questions: {with_legacy}")
+          print(f"UNSAFE files (legacy > robot-faq): {len(mismatches)}")
+
+          if mismatches:
+              print("\n=== UNSAFE TO DELETE ===")
+              for item in mismatches:
+                  print(f"{item['lang']}/{item['slug']}: legacy={item['legacy']} robot-faq={item['robot_faq']}")
+                  for q in item["legacy_questions"]:
+                      print(f"  - {q}")
+              print("\nSTOP: robot_questions cleanup is blocked.")
+              sys.exit(1)
+
+          print("\nSAFE: no i18n file has more robot_questions than its robot-faq entry.")
