@@ -17,7 +17,7 @@
 
     let currentLang = 'en';
     let chatTranslations = {};
-    let pageSuggestions = {};
+    let robotFaq = {};
     let conversation = [];
 
     let container, chatWindow, toggleBtn, messagesEl, inputEl, sendBtn, closeBtn;
@@ -218,8 +218,6 @@
             chatTranslations =
                 data.ui || {};
 
-            pageSuggestions =
-                data.pageSuggestions || {};
         } catch (error) {
             try {
                 const fallback = await fetch(
@@ -233,410 +231,94 @@
                 chatTranslations =
                     data.ui || {};
 
-                pageSuggestions =
-                    data.pageSuggestions || {};
             } catch (_) {
                 chatTranslations = {};
-                pageSuggestions = {};
+            }
+        }
+    }
+
+    async function loadRobotFaq(lang) {
+        try {
+            const response = await fetch(
+                '/botia/data/robot-faq/' + lang + '.json',
+                { cache: 'no-store' }
+            );
+
+            if (!response.ok) {
+                throw new Error('robot FAQ not found');
+            }
+
+            robotFaq =
+                await response.json();
+        } catch (error) {
+            if (lang === 'en') {
+                robotFaq = {};
+                return;
+            }
+
+            try {
+                const fallback = await fetch(
+                    '/botia/data/robot-faq/en.json',
+                    { cache: 'no-store' }
+                );
+
+                if (!fallback.ok) {
+                    throw new Error('English robot FAQ not found');
+                }
+
+                robotFaq =
+                    await fallback.json();
+            } catch (_) {
+                robotFaq = {};
             }
         }
     }
 
     // ============================================================
-    // PREGUNTAS SUGERIDAS
+    // PREGUNTAS Y RESPUESTAS DEL ROBOT
+    // ÚNICA FUENTE: /botia/data/robot-faq/{lang}.json
     // ============================================================
 
-    const PAGE_SUGGESTION_FALLBACKS = {
-        it: {
-            not_sugar: [
-                'La raccomandazione dell’OMS sui dolcificanti riguarda la loro sicurezza?',
-                'Perché i polioli sono esclusi da questa raccomandazione dell’OMS?',
-                'Perché un prodotto «senza zucchero» può contenere diversi dolcificanti?'
-            ]
-        },
-        zh: {
-            not_sugar: [
-                '世界卫生组织关于甜味剂的建议，是否意味着它们存在安全问题？',
-                '为什么糖醇不在这项世界卫生组织建议的范围内？',
-                '为什么“无糖”产品可以同时含有多种不同的甜味剂？'
-            ]
-        },
-        ro: {
-            not_sugar: [
-                'Recomandarea OMS privind îndulcitorii înseamnă că aceștia nu sunt siguri?',
-                'De ce polialcoolii sunt excluși din această recomandare a OMS?',
-                'De ce un produs „fără zahăr” poate conține mai mulți îndulcitori diferiți?'
-            ]
-        },
-        pl: {
-            not_sugar: [
-                'Czy zalecenie WHO dotyczące substancji słodzących oznacza, że nie są one bezpieczne?',
-                'Dlaczego poliole są wyłączone z tego zalecenia WHO?',
-                'Dlaczego produkt „bez cukru” może zawierać kilka różnych substancji słodzących?'
-            ]
-        },
-        id: {
-            not_sugar: [
-                'Apakah rekomendasi WHO tentang pemanis berarti pemanis tersebut tidak aman?',
-                'Mengapa poliol tidak termasuk dalam rekomendasi WHO tersebut?',
-                'Mengapa produk “bebas gula” dapat mengandung beberapa pemanis yang berbeda?'
-            ]
-        }
+    const ROBOT_FAQ_ALIASES = {
+        halal_public: 'halal',
+        haram_public: 'haram',
+        evidence: 'undeclared_origin'
     };
 
-    const REGULATORY_PAGE_QUESTIONS = {
-        es: [
-            'Si un ingrediente no aparece aquí, ¿significa que está ' + 'permitido?',
-            '¿Por qué un mismo ingrediente aparece en varias filas?',
-            '¿Qué significa que una medida esté ' + 'vigente?'
-        ],
-        en: [
-            'If an ingredient does not appear here, does that mean it is ' + 'permitted?',
-            'Why does the same ingredient appear in several rows?',
-            'What does it mean when a measure is currently ' + 'in force?'
-        ],
-        fr: [
-            'Si un ingrédient n’apparaît pas ici, cela signifie-t-il qu’il est ' + 'autorisé ?',
-            'Pourquoi un même ingrédient apparaît-il sur plusieurs lignes ?',
-            'Que signifie le fait qu’une mesure soit ' + 'en vigueur ?'
-        ],
-        de: [
-            'Wenn ein Inhaltsstoff hier nicht erscheint, bedeutet das, dass er ' + 'erlaubt ist?',
-            'Warum erscheint derselbe Inhaltsstoff in mehreren Zeilen?',
-            'Was bedeutet es, wenn eine Maßnahme ' + 'in Kraft ist?'
-        ],
-        it: [
-            'Se un ingrediente non compare qui, significa che non è soggetto a restrizioni?',
-            'Perché lo stesso ingrediente compare in più righe?',
-            'Che cosa significa che una misura è attualmente applicabile?'
-        ],
-        pt: [
-            'Se um ingrediente não aparece aqui, significa que não está sujeito a restrições?',
-            'Por que o mesmo ingrediente aparece em várias linhas?',
-            'O que significa uma medida estar atualmente em aplicação?'
-        ],
-        nl: [
-            'Als een ingrediënt hier niet voorkomt, betekent dat dan dat er geen beperkingen voor gelden?',
-            'Waarom verschijnt hetzelfde ingrediënt in meerdere rijen?',
-            'Wat betekent het als een maatregel momenteel van toepassing is?'
-        ],
-        ru: [
-            'Если ингредиент здесь не указан, означает ли это отсутствие ограничений для него?',
-            'Почему один и тот же ингредиент указан в нескольких строках?',
-            'Что означает, если мера применяется в настоящее время?'
-        ],
-        ar: [
-            'إذا لم يظهر مكوّن هنا، فهل يعني ذلك أنه لا توجد عليه قيود؟',
-            'لماذا يظهر المكوّن نفسه في عدة صفوف؟',
-            'ماذا يعني أن يكون الإجراء مطبقًا حاليًا؟'
-        ],
-        tr: [
-            'Bir içerik burada görünmüyorsa bu onun için kısıtlama olmadığı anlamına mı gelir?',
-            'Aynı içerik neden birden fazla satırda görünüyor?',
-            'Bir önlemin şu anda uygulanıyor olması ne anlama gelir?'
-        ],
-        zh: [
-            '如果某种配料没有出现在这里，是否意味着它没有相关限制？',
-            '为什么同一种配料会出现在多行中？',
-            '一项措施目前正在实施是什么意思？'
-        ],
-        ro: [
-            'Dacă un ingredient nu apare aici, înseamnă că nu există restricții pentru el?',
-            'De ce același ingredient apare în mai multe rânduri?',
-            'Ce înseamnă că o măsură se aplică în prezent?'
-        ],
-        pl: [
-            'Jeśli składnik nie pojawia się tutaj, czy oznacza to brak ograniczeń dotyczących tego składnika?',
-            'Dlaczego ten sam składnik pojawia się w kilku wierszach?',
-            'Co oznacza, że dany środek jest obecnie stosowany?'
-        ],
-        id: [
-            'Jika suatu bahan tidak muncul di sini, apakah itu berarti tidak ada pembatasan untuk bahan tersebut?',
-            'Mengapa bahan yang sama muncul dalam beberapa baris?',
-            'Apa artinya jika suatu tindakan sedang berlaku saat ini?'
-        ]
-    };
-
-    const SUGGESTION_TEMPLATES = {
-        en: {
-            ingredient: [
-                'What is {subject}?',
-                'Why does BOTIA flag {subject}?',
-                'What can and can’t BOTIA know about {subject} from the label?'
-            ],
-            page: [
-                'What is this page about?',
-                'What are the key points on this page?',
-                'What can BOTIA tell me about this topic?'
-            ]
-        },
-
-        es: {
-            ingredient: [
-                '¿Qué es {subject}?',
-                '¿Por qué BOTIA señala {subject}?',
-                '¿Qué puede y qué no puede saber BOTIA sobre {subject} a partir de la etiqueta?'
-            ],
-            page: [
-                '¿De qué trata esta página?',
-                '¿Cuáles son los puntos clave de esta página?',
-                '¿Qué puede explicarme BOTIA sobre este tema?'
-            ]
-        },
-
-        fr: {
-            ingredient: [
-                'Qu’est-ce que {subject} ?',
-                'Pourquoi BOTIA signale-t-il {subject} ?',
-                'Que peut et ne peut pas savoir BOTIA sur {subject} à partir de l’étiquette ?'
-            ],
-            page: [
-                'De quoi parle cette page ?',
-                'Quels sont les points clés de cette page ?',
-                'Que peut m’expliquer BOTIA sur ce sujet ?'
-            ]
-        },
-
-        de: {
-            ingredient: [
-                'Was ist {subject}?',
-                'Warum kennzeichnet BOTIA {subject}?',
-                'Was kann BOTIA anhand des Etiketts über {subject} wissen und was nicht?'
-            ],
-            page: [
-                'Worum geht es auf dieser Seite?',
-                'Was sind die wichtigsten Punkte dieser Seite?',
-                'Was kann BOTIA mir zu diesem Thema erklären?'
-            ]
-        },
-
-        it: {
-            ingredient: [
-                'Che cos’è {subject}?',
-                'Perché BOTIA segnala {subject}?',
-                'Che cosa può e non può sapere BOTIA su {subject} dall’etichetta?'
-            ],
-            page: [
-                'Di che cosa parla questa pagina?',
-                'Quali sono i punti chiave di questa pagina?',
-                'Che cosa può spiegarmi BOTIA su questo argomento?'
-            ]
-        },
-
-        pt: {
-            ingredient: [
-                'O que é {subject}?',
-                'Porque é que a BOTIA assinala {subject}?',
-                'O que é que a BOTIA pode e não pode saber sobre {subject} a partir do rótulo?'
-            ],
-            page: [
-                'De que trata esta página?',
-                'Quais são os pontos principais desta página?',
-                'O que é que a BOTIA me pode explicar sobre este tema?'
-            ]
-        },
-
-        nl: {
-            ingredient: [
-                'Wat is {subject}?',
-                'Waarom markeert BOTIA {subject}?',
-                'Wat kan BOTIA op basis van het etiket wel en niet weten over {subject}?'
-            ],
-            page: [
-                'Waar gaat deze pagina over?',
-                'Wat zijn de belangrijkste punten op deze pagina?',
-                'Wat kan BOTIA mij over dit onderwerp uitleggen?'
-            ]
-        },
-
-        ru: {
-            ingredient: [
-                'Что такое {subject}?',
-                'Почему BOTIA отмечает {subject}?',
-                'Что BOTIA может и чего не может определить о {subject} по этикетке?'
-            ],
-            page: [
-                'О чём эта страница?',
-                'Каковы основные моменты этой страницы?',
-                'Что BOTIA может объяснить мне по этой теме?'
-            ]
-        },
-
-        zh: {
-            ingredient: [
-                '{subject}是什么？',
-                '为什么 BOTIA 会标记{subject}？',
-                '仅根据标签，BOTIA 对{subject}能知道什么、不能知道什么？'
-            ],
-            page: [
-                '这个页面讲的是什么？',
-                '这个页面的重点是什么？',
-                'BOTIA 可以向我解释这个主题的哪些内容？'
-            ]
-        },
-
-        ar: {
-            ingredient: [
-                'ما هو {subject}؟',
-                'لماذا تشير BOTIA إلى {subject}؟',
-                'ما الذي يمكن لـ BOTIA معرفته وما الذي لا يمكنها معرفته عن {subject} من الملصق؟'
-            ],
-            page: [
-                'عن ماذا تتحدث هذه الصفحة؟',
-                'ما النقاط الرئيسية في هذه الصفحة؟',
-                'ماذا يمكن لـ BOTIA أن تشرح لي عن هذا الموضوع؟'
-            ]
-        },
-
-        tr: {
-            ingredient: [
-                '{subject} nedir?',
-                'BOTIA neden {subject} öğesini işaretliyor?',
-                'BOTIA etiketten {subject} hakkında neleri bilebilir ve neleri bilemez?'
-            ],
-            page: [
-                'Bu sayfa ne hakkında?',
-                'Bu sayfadaki temel noktalar nelerdir?',
-                'BOTIA bu konu hakkında bana ne açıklayabilir?'
-            ]
-        },
-
-        ro: {
-            ingredient: [
-                'Ce este {subject}?',
-                'De ce semnalează BOTIA {subject}?',
-                'Ce poate și ce nu poate afla BOTIA despre {subject} din etichetă?'
-            ],
-            page: [
-                'Despre ce este această pagină?',
-                'Care sunt punctele principale ale acestei pagini?',
-                'Ce îmi poate explica BOTIA despre acest subiect?'
-            ]
-        },
-
-        pl: {
-            ingredient: [
-                'Czym jest {subject}?',
-                'Dlaczego BOTIA oznacza {subject}?',
-                'Co BOTIA może, a czego nie może ustalić o {subject} na podstawie etykiety?'
-            ],
-            page: [
-                'O czym jest ta strona?',
-                'Jakie są najważniejsze informacje na tej stronie?',
-                'Co BOTIA może mi wyjaśnić na ten temat?'
-            ]
-        },
-
-        id: {
-            ingredient: [
-                'Apa itu {subject}?',
-                'Mengapa BOTIA menandai {subject}?',
-                'Apa yang dapat dan tidak dapat diketahui BOTIA tentang {subject} dari label?'
-            ],
-            page: [
-                'Halaman ini membahas apa?',
-                'Apa poin-poin utama di halaman ini?',
-                'Apa yang dapat dijelaskan BOTIA tentang topik ini?'
-            ]
-        }
-    };
-
-    function fillSubject(template, subject) {
-        return String(template || '')
-            .replace(/\{subject\}/g, subject);
-    }
-
-    function getGeneratedSuggestions() {
+    function getRobotFaqKey() {
         const context =
             getPageContext();
-
-        const templates =
-            SUGGESTION_TEMPLATES[currentLang] ||
-            SUGGESTION_TEMPLATES.en;
 
         if (context.page === 'ingredient') {
-            const subject =
-                context.ingredient_name ||
-                context.ingredient ||
-                context.title ||
-                '';
-
-            return templates.ingredient.map(
-                template =>
-                    fillSubject(template, subject)
-            );
+            return context.ingredient || '';
         }
 
-        return templates.page.slice();
+        return (
+            ROBOT_FAQ_ALIASES[context.page] ||
+            context.page ||
+            ''
+        );
     }
 
-    async function getPageSuggestions() {
-        try {
-            await window.BOTIA?.init?.();
-        } catch (error) {
-            console.warn(
-                'BOTIA Chat: page translations not ready.',
-                error
-            );
-        }
+    function getPageFaqPairs() {
+        const key =
+            getRobotFaqKey();
 
-        const context =
-            getPageContext();
-
-        const translationData =
-            window.BOTIA
-                ?.translationData
-                ?.() || {};
-
-        const robotQuestions =
-            Array.isArray(
-                translationData.robot_questions
-            )
-                ? translationData
-                    .robot_questions
-                    .filter(
-                        question =>
-                            typeof question === 'string' &&
-                            question.trim()
-                    )
+        const pairs =
+            key &&
+            Array.isArray(robotFaq[key])
+                ? robotFaq[key]
                 : [];
 
-        if (robotQuestions.length) {
-            return robotQuestions.slice(0, 3);
-        }
-
-        if (
-            context.page === 'regulatory' &&
-            Array.isArray(
-                REGULATORY_PAGE_QUESTIONS[currentLang]
+        return pairs
+            .filter(
+                pair =>
+                    pair &&
+                    typeof pair.question === 'string' &&
+                    pair.question.trim() &&
+                    typeof pair.answer === 'string' &&
+                    pair.answer.trim()
             )
-        ) {
-            return REGULATORY_PAGE_QUESTIONS[currentLang]
-                .slice(0, 3);
-        }
-
-        const explicit =
-            pageSuggestions[context.page];
-
-        if (
-            Array.isArray(explicit) &&
-            explicit.length
-        ) {
-            return explicit.slice(0, 3);
-        }
-
-        const fallback =
-            PAGE_SUGGESTION_FALLBACKS[currentLang]
-                ?.[context.page];
-
-        if (
-            Array.isArray(fallback) &&
-            fallback.length
-        ) {
-            return fallback.slice(0, 3);
-        }
-
-        return getGeneratedSuggestions()
             .slice(0, 3);
     }
 
@@ -651,53 +333,11 @@
         }
     }
 
-    function getStoredRobotAnswer(question) {
-        const translationData =
-            window.BOTIA
-                ?.translationData
-                ?.() || {};
+    function showPageSuggestions() {
+        const pairs =
+            getPageFaqPairs();
 
-        const robotQuestions =
-            translationData.robot_questions;
-
-        const robotAnswers =
-            translationData.robot_answers;
-
-        if (
-            !Array.isArray(robotQuestions) ||
-            !Array.isArray(robotAnswers) ||
-            robotQuestions.length !==
-                robotAnswers.length
-        ) {
-            return '';
-        }
-
-        const index =
-            robotQuestions.findIndex(
-                item =>
-                    typeof item === 'string' &&
-                    item === question
-            );
-
-        if (index < 0) {
-            return '';
-        }
-
-        const answer =
-            robotAnswers[index];
-
-        return (
-            typeof answer === 'string'
-                ? answer.trim()
-                : ''
-        );
-    }
-
-    async function showPageSuggestions() {
-        const suggestions =
-            await getPageSuggestions();
-
-        if (!suggestions.length) {
+        if (!pairs.length) {
             return;
         }
 
@@ -741,8 +381,14 @@
             'flex-direction:column;' +
             'gap:8px;';
 
-        suggestions.forEach(
-            function (question) {
+        pairs.forEach(
+            function (pair) {
+                const question =
+                    pair.question.trim();
+
+                const answer =
+                    pair.answer.trim();
+
                 const btn =
                     document.createElement('button');
 
@@ -769,11 +415,6 @@
                 btn.addEventListener(
                     'click',
                     function () {
-                        const storedAnswer =
-                            getStoredRobotAnswer(
-                                question
-                            );
-
                         inputEl.value =
                             question;
 
@@ -783,14 +424,10 @@
 
                         window.setTimeout(
                             function () {
-                                if (storedAnswer) {
-                                    showStoredAnswer(
-                                        question,
-                                        storedAnswer
-                                    );
-                                } else {
-                                    handleSend();
-                                }
+                                showStoredAnswer(
+                                    question,
+                                    answer
+                                );
                             },
                             550
                         );
@@ -1542,9 +1179,14 @@
                 currentLang =
                     nextLang;
 
-                loadChatTranslations(
-                    currentLang
-                ).then(
+                Promise.all([
+                    loadChatTranslations(
+                        currentLang
+                    ),
+                    loadRobotFaq(
+                        currentLang
+                    )
+                ]).then(
                     refreshContextualUi
                 );
             }
@@ -1604,9 +1246,14 @@
         currentLang =
             getCurrentLanguage();
 
-        await loadChatTranslations(
-            currentLang
-        );
+        await Promise.all([
+            loadChatTranslations(
+                currentLang
+            ),
+            loadRobotFaq(
+                currentLang
+            )
+        ]);
 
         addStyles();
         createElements();
