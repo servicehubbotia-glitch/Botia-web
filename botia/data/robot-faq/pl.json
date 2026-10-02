@@ -1,0 +1,1624 @@
+{
+  "landing": [
+    {
+      "question": "Dlaczego BOTIA zaczyna od listy składników, a nie od kodu kreskowego?",
+      "answer": "Ponieważ kod kreskowy identyfikuje produkt, ale nie wyjaśnia jego składu. BOTIA zaczyna od rzeczywistej listy składników, ponieważ pokazuje ona, co producent deklaruje, że dany produkt spożywczy zawiera."
+    },
+    {
+      "question": "Dlaczego BOTIA nie przyznaje oceny ani werdyktu?",
+      "answer": "Ponieważ pojedyncza ocena mieszałaby różne pytania i ukrywałaby to, czego nie można ustalić na podstawie etykiety. BOTIA rozdziela to, co jest zadeklarowane, co można zidentyfikować, co jest niepewne oraz dowody, które to potwierdzają."
+    },
+    {
+      "question": "Dlaczego ta sama etykieta rodzi różne pytania w zależności od tego, kto ją czyta?",
+      "answer": "Ponieważ ten sam skład może mieć znaczenie ze względów żywieniowych, religijnych lub etycznych, albo ze względu na pochodzenie zwierzęce, ciążę lub narażenie. BOTIA rozdziela te pytania, zamiast sprowadzać je do jednej odpowiedzi."
+    }
+  ],
+  "nutrition_overview": [
+    {
+      "question": "Co oznacza „na 100 g” na etykiecie wartości odżywczej?",
+      "answer": "Oznacza to, że ilość każdego składnika odżywczego podana jest dla 100 gramów lub 100 mililitrów produktu. Dzięki temu można porównywać produkty, nawet jeśli podane porcje się różnią."
+    },
+    {
+      "question": "Jaka jest różnica między solą a sodem?",
+      "answer": "Sód to pierwiastek mineralny; zwykła sól to chlorek sodu. Aby przeliczyć sód na sól, należy pomnożyć ilość sodu przez 2,5."
+    },
+    {
+      "question": "Dlaczego BOTIA oddziela wartości deklarowane od oficjalnych wartości referencyjnych?",
+      "answer": "Ponieważ jedna wartość mówi, co deklaruje produkt, a druga pozwala porównać go z oficjalnym odniesieniem. Mieszanie ich może sprawiać wrażenie, że są równoważne, mimo że zależą od kraju, ilości odniesienia lub rodzaju żywności."
+    }
+  ],
+  "muslim": [
+    {
+      "question": "Dlaczego etykieta może być zgodna z prawem i nadal niewystarczająca dla kryteriów halal?",
+      "answer": "Ponieważ ogólne przepisy nie zawsze wymagają podania pochodzenia dodatku lub szczegółów procesu. Kryteria halal mogą wymagać dokładnie tych dodatkowych informacji."
+    },
+    {
+      "question": "Jeśli etykieta podaje gatunek zwierzęcia, dlaczego BOTIA nie może stwierdzić, czy ubój spełniał wymogi halal?",
+      "answer": "Ponieważ gatunek może być podany na etykiecie, ale metoda uboju prawie nigdy nie jest deklarowana. BOTIA nie może zamienić brakującej informacji w potwierdzenie."
+    },
+    {
+      "question": "Jaka jest różnica między uczynieniem etykiety przejrzystą a certyfikacją czegoś jako halal?",
+      "answer": "Uczynienie jej przejrzystą oznacza wyjaśnienie, co deklaruje i co pozostawia nierozstrzygnięte. Certyfikacja halal wymaga również weryfikacji procesów, pochodzenia, postępowania i innych wymogów, których sama lista składników nie może wykazać."
+    }
+  ],
+  "animal": [
+    {
+      "question": "Dlaczego słowo „wegański” na opakowaniu nie jest prawną gwarancją?",
+      "answer": "Ponieważ samo to słowo nie ujawnia pochodzenia każdego składnika ani sposobu wytworzenia produktu. BOTIA sprawdza deklarowaną listę i pozostawia niepewności widoczne, gdy pochodzenie nie jest określone."
+    },
+    {
+      "question": "Dlaczego istnieją składniki, których pochodzenie zna tylko producent?",
+      "answer": "Ponieważ substancje takie jak E471, E472, lecytyny, enzymy lub aromaty mogą być wytwarzane z różnych źródeł. Etykieta może wymieniać składnik bez podania, z jakiego źródła został użyty."
+    },
+    {
+      "question": "Czy produkt może zawierać coś pochodzenia zwierzęcego, co nie pojawia się nawet w wykazie składników?",
+      "answer": "Tak, mogą występować środki pomocnicze w przetwórstwie lub inne elementy, które w określonych warunkach nie muszą być deklarowane jako składniki. Jeśli nie ma ich na etykiecie, BOTIA również nie może ich z niej wykryć."
+    }
+  ],
+  "woman": [
+    {
+      "question": "Dlaczego BOTIA wyświetla uwagi, nawet gdy nie wykryła żadnego składnika na etykiecie?",
+      "answer": "Ponieważ niektóre kwestie nie zależą od zadeklarowanego składnika: na przykład migracja z opakowania, niektóre trwałe zanieczyszczenia lub narażenie kontekstowe istotne dla układu hormonalnego. BOTIA prezentuje je jako kontekst, a nie jako coś udowodnionego w danym produkcie."
+    },
+    {
+      "question": "Czy oddziaływanie z hormonami to to samo co ich zaburzanie?",
+      "answer": "Nie. Substancja może oddziaływać z szlakiem hormonalnym, nie dowodząc przez to niekorzystnego efektu; zaburzenia hormonalne należy oceniać dla konkretnej substancji i narażenia."
+    },
+    {
+      "question": "Dlaczego badania żywności przez dziesięciolecia koncentrowały się na dorosłych mężczyznach?",
+      "answer": "Wiele historycznych badań projektowano wokół populacji dorosłych mężczyzn lub nie analizowano prawidłowo różnic ze względu na płeć. Dlatego BOTIA oddzielnie przedstawia dowody specyficzne dla kobiet, gdy faktycznie istnieją."
+    }
+  ],
+  "hidden_sugars": [
+    {
+      "question": "Dlaczego „fit” lub „naturalny” produkt może zawierać cukier, choć słowo cukier nie pojawia się na etykiecie?",
+      "answer": "Ponieważ wolne cukry mogą występować jako glukoza, fruktoza, syropy, miód lub zagęszczone soki. Nazwa marketingowa produktu nie zmienia tego, co znajduje się w wykazie składników."
+    },
+    {
+      "question": "Dlaczego BOTIA wyróżnia maltodekstrynę, jeśli WHO nie uważa jej za wolny cukier?",
+      "answer": "Maltodekstryna to szybko trawiony węglowodan, ale nie jest wolnym cukrem w rozumieniu definicji WHO. BOTIA pokazuje ją osobno, ponieważ można ją przeoczyć, szukając tylko słowa „cukier”."
+    },
+    {
+      "question": "Skoro BOTIA czyta składniki, dlaczego nie mówi mi, ile cukru zawiera produkt?",
+      "answer": "Ponieważ wykaz składników pokazuje obecność i kolejność, a nie całkowitą ilość cukru. Aby poznać gramy, trzeba sprawdzić zadeklarowaną informację o wartości odżywczej."
+    }
+  ],
+  "not_sugar": [
+    {
+      "question": "Czy to, że WHO odradza słodziki, oznacza, że są one niebezpieczne?",
+      "answer": "Nie. Zalecenie WHO z 2023 r. dotyczące słodzików niesłodowych dotyczy kontroli masy ciała i jest warunkowe; nie jest to ocena toksykologiczna uznająca te substancje za niebezpieczne."
+    },
+    {
+      "question": "Dlaczego poliole są poza tym zaleceniem WHO?",
+      "answer": "Ponieważ wytyczne wyraźnie je wykluczają: są to pochodne cukrów, które dostarczają energii i nie należą do grupy słodzików niesłodowych objętych tym zaleceniem."
+    },
+    {
+      "question": "Dlaczego produkt „bez cukru” może zawierać kilka różnych słodzików?",
+      "answer": "Ponieważ „bez cukru” nie oznacza „bez substancji słodzących”. Produkt może łączyć kilka słodzików i wymieniać je osobno w wykazie składników."
+    }
+  ],
+  "tasting_like_itself": [
+    {
+      "question": "Dlaczego żywność potrzebuje aromatów, aby smakować jak ona sama?",
+      "answer": "Aromaty są używane do wzmocnienia, modyfikacji lub przywrócenia smaku, zwłaszcza po przetworzeniu. Ich obecność wskazuje, że część smaku pochodzi z dodanej receptury."
+    },
+    {
+      "question": "Co jest „naturalnego” w naturalnym aromacie?",
+      "answer": "„Naturalny” opisuje kategorię aromatu; nie oznacza, że produkt jest minimalnie przetworzony ani że etykieta ujawnia jego dokładne źródło. Może pochodzić ze surowców zwierzęcych lub roślinnych, albo z procesów fermentacji."
+    },
+    {
+      "question": "Dlaczego obecność aromatów wskazuje, że produkt jest ultraprzetworzony?",
+      "answer": "NOVA uznaje aromaty za jeden z wyznaczników ultraprzetworzonej receptury. Mimo to BOTIA nie przypisuje produktowi pełnej grupy NOVA samodzielnie, ponieważ nie wie wszystkiego o tym, jak został wytworzony."
+    }
+  ],
+  "what_holds_it": [
+    {
+      "question": "Po co jest zagęszczacz lub emulgator, jeśli nie wnosi nic odżywczego?",
+      "answer": "Zmienia strukturę żywności: zagęszcza, stabilizuje, łączy wodę i tłuszcz lub utrzymuje jednolitą teksturę. Jego funkcja jest technologiczna, a nie odżywcza."
+    },
+    {
+      "question": "Dlaczego minimalnie przetworzona żywność nie potrzebuje modyfikatorów tekstury?",
+      "answer": "Ponieważ jej tekstura pochodzi głównie z własnej struktury żywności. Modyfikatory dodaje się, gdy receptura musi wytworzyć, przywrócić lub utrzymać określoną konsystencję."
+    },
+    {
+      "question": "Co oznacza, że dodatek jest objęty przeglądem naukowym?",
+      "answer": "Oznacza to, że jego dowody są ponownie oceniane lub aktualizowane. Nie oznacza automatycznie, że jest zakazany lub że wykazano jego niebezpieczeństwo."
+    }
+  ],
+  "the_code_system": [
+    {
+      "question": "Dlaczego ten sam dodatek ma różne nazwy w różnych krajach?",
+      "answer": "Ponieważ każdy system regulacyjny może używać własnych kodów, nazw chemicznych lub terminów. Numery E to system europejski, podczas gdy inne rynki mogą pokazywać inny kod lub pełną nazwę."
+    },
+    {
+      "question": "Czy to, że dodatek jest autoryzowany, oznacza, że nie ma co do niego debaty?",
+      "answer": "Nie. Autoryzacja oznacza, że spełnia obecne warunki regulacyjne dla określonych zastosowań; dowody mogą być nadal weryfikowane, a warunki mogą się zmieniać."
+    },
+    {
+      "question": "Dlaczego ten sam składnik może występować jako E471 lub pod nazwą chemiczną?",
+      "answer": "Ponieważ E471 to kod identyfikacyjny dodatku. W zależności od rynku i praktyki etykietowania może pojawić się kod, jego nazwa lub oba."
+    }
+  ],
+  "ultra_processed": [
+    {
+      "question": "Czy produkt o niskiej zawartości cukru i wysokiej zawartości białka może być ultraprzetworzony?",
+      "answer": "Tak. NOVA nie klasyfikuje żywności na podstawie tego, czy zawiera dużo lub mało cukru, tłuszczu lub białka, ale na podstawie stopnia przetworzenia i sposobu jej wytworzenia."
+    },
+    {
+      "question": "Jaka jest różnica między żywnością przetworzoną a ultraprzetworzoną?",
+      "answer": "Żywność przetworzona zachowuje wyraźny związek z pierwotnym produktem, mimo że została przekształcona. Żywność ultraprzetworzona to przemysłowa formuła, która może zawierać substancje i dodatki rzadko stosowane w domowej kuchni."
+    },
+    {
+      "question": "Dlaczego BOTIA nie mówi, czy produkt jest ultraprzetworzony?",
+      "answer": "Ponieważ BOTIA odczytuje zadeklarowane składniki, ale nie zna wszystkich procesów przemysłowych ani pełnej formuły. Może pokazać wskaźniki ultraprzetworzenia, nie zamieniając ich w automatyczną klasyfikację produktu."
+    }
+  ],
+  "undeclared_origin": [
+    {
+      "question": "Dlaczego 72% analizowanych produktów nie mogło zostać potwierdzonych?",
+      "answer": "Ponieważ w tej analizie etykieta nie deklarowała pochodzenia kluczowych składników, a nie dlatego, że były to składniki zabronione. Liczba ta pochodzi z własnych skanów BOTIA w marcu-kwietniu 2026 r., głównie w Holandii i Belgii, z użyciem warstwy muzułmańskiej."
+    },
+    {
+      "question": "Czy wątpliwy składnik oznacza, że jest podejrzany?",
+      "answer": "Nie. „Wątpliwy” oznacza, że brakuje informacji potrzebnych do potwierdzenia, takich jak pochodzenie lub proces; nie jest to oskarżenie ani oznaka, że składnik jest szkodliwy."
+    },
+    {
+      "question": "Dla kogo tak naprawdę jest napisana etykieta?",
+      "answer": "Przede wszystkim, aby spełnić wymogi informacyjne. Dlatego etykieta może być legalnie poprawna, a mimo to nie odpowiadać na pytania ludzi o pochodzenie składnika, jego przetworzenie lub praktyczne znaczenie."
+    }
+  ],
+  "regulatory": [
+    {
+      "question": "Jeśli składnik nie pojawia się tutaj, czy oznacza to, że jest dozwolony?",
+      "answer": "Nie. Oznacza to jedynie, że BOTIA nie ma zweryfikowanego środka w tym eksploratorze dla tego składnika i tego konkretnego zakresu; brak wiersza nie może być interpretowany jako zezwolenie."
+    },
+    {
+      "question": "Dlaczego ten sam składnik pojawia się w kilku wierszach?",
+      "answer": "Ponieważ ta sama substancja może podlegać różnym środkom w zależności od kraju, organu, zastosowania, stężenia, kategorii żywności lub rodzaju obowiązku. Każdy wiersz zachowuje ten kontekst osobno."
+    },
+    {
+      "question": "Co oznacza, gdy środek jest w mocy?",
+      "answer": "Oznacza to, że środek jest odnotowany jako obecnie obowiązujący w jurysdykcji i zakresie pokazanym w wierszu. Nie oznacza to, że jest to uniwersalna zasada ani ogólna ocena bezpieczeństwa."
+    }
+  ],
+  "acesulfame_k": [
+    {
+      "question": "Dlaczego ma dzienny limit spożycia, jeśli jest dozwolony jako słodzik?",
+      "answer": "Zezwolenie pozwala na jego stosowanie w określonych warunkach; dzienny limit dotyczy ilości, którą można spożywać regularnie przez całe życie. Lista składników nie pokazuje, ile go zawiera, ani nie pozwala zsumować tego, co spożywasz z innych produktów."
+    },
+    {
+      "question": "Dlaczego prawie nigdy nie stosuje się go samodzielnie, tylko w mieszankach z innymi słodzikami?",
+      "answer": "Ponieważ acesulfam K jest bardzo słodki i w wyższych stężeniach może pozostawiać charakterystyczny posmak. Mieszanie go z innymi słodzikami pomaga dostosować smak i osiągnąć pożądaną słodycz przy mniejszych ilościach każdego z nich."
+    }
+  ],
+  "folic_acid": [
+    {
+      "question": "Dlaczego kwas foliowy dodaje się do mąki lub płatków śniadaniowych i jak to wzbogacanie jest oznaczane na etykiecie?",
+      "answer": "Jest dodawany, aby wzbogacić żywność w witaminę B9 i może występować jako kwas foliowy, folian lub witamina B9. Jeśli ilość nie jest podana, lista składników nie powie, ile go dostarcza."
+    }
+  ],
+  "advantame": [
+    {
+      "question": "Dlaczego advantam jest dopuszczony tylko do niektórych produktów spożywczych i w określonych ilościach?",
+      "answer": "Ponieważ dopuszczenie dotyczy konkretnych zastosowań i ilości, a nie dowolnej żywności w dowolnej proporcji. Obecność advantamu na liście składników nie wystarcza do sprawdzenia zgodności: potrzebna jest ilość i rynek."
+    },
+    {
+      "question": "Dlaczego potrzeba tak niewielkiej ilości w porównaniu z cukrem?",
+      "answer": "Ponieważ advantam jest słodzikiem o bardzo wysokiej intensywności, około 20 000 razy słodszym od cukru. Dlatego potrzeba bardzo małej ilości, aby osiągnąć ten sam poziom słodyczy."
+    }
+  ],
+  "agar": [
+    {
+      "question": "Dlaczego agar znajduje się w tym produkcie i jaki ma wpływ na jego konsystencję?",
+      "answer": "Jest to składnik pochodzący z wodorostów, używany do żelowania, zagęszczania lub stabilizacji żywności. Jego obecność nie mówi o stężeniu ani dokładnej konsystencji, jaką nadaje produktowi."
+    },
+    {
+      "question": "Czy może zastąpić żelatynę w produkcie oznaczonym jako wegański?",
+      "answer": "Tak. Agar może zastąpić żelatynę jako roślinny środek żelujący w wielu produktach spożywczych. Jednak nie zachowuje się dokładnie tak samo: konsystencja, temperatura tężenia i sposób topnienia żelu są inne."
+    }
+  ],
+  "alcohol": [
+    {
+      "question": "Jak produkt może być oznaczony jako 'bez alkoholu', a jednocześnie deklarować niewielką ilość alkoholu?",
+      "answer": "'Bez alkoholu' nie ma takiego samego znaczenia prawnego na każdym rynku i może dopuszczać niewielką ilość resztkową. Aby zinterpretować to oświadczenie, trzeba sprawdzić kraj i podaną ilość; sama lista składników nie mierzy, ile alkoholu pozostaje."
+    },
+    {
+      "question": "Dlaczego alkohol stanowi problem nawet w małych ilościach, skoro WHO twierdzi, że nie ma bezpiecznego poziomu w odniesieniu do raka?",
+      "answer": "Ponieważ nie ustalono poziomu spożycia wolnego od ryzyka nowotworu; nie oznacza to jednak, że każda ilość wiąże się z takim samym ryzykiem. Sama etykieta nie pozwala obliczyć narażenia ani ryzyka danej osoby."
+    },
+    {
+      "question": "Czy certyfikat halal automatycznie rozwiązuje kwestię alkoholu zadeklarowanego w składnikach?",
+      "answer": "Nie: BOTIA nadal pokazuje zadeklarowany alkohol i klasyfikuje go jako haram według swoich kryteriów. Nie interpretuje, jak certyfikator poradził sobie z tą deklaracją, ani nie zastępuje jego oceny."
+    }
+  ],
+  "alginates": [
+    {
+      "question": "Dlaczego E400, E401, E402 i pozostałe alginiany nie mogą być traktowane jako ten sam dodatek?",
+      "answer": "Ponieważ są różnymi członkami rodziny: ich skład i ocena różnią się, zwłaszcza w przypadku alginianu propylenoglikolu E405. Wspólne pochodzenie z wodorostów nie czyni ich tym samym dodatkiem."
+    },
+    {
+      "question": "Co robi składnik pochodzenia wodorostowego w produkcie, który nie jest morski?",
+      "answer": "Alginiany są stosowane ze względu na swoją funkcję technologiczną, a nie dlatego, że żywność jest morska. Mogą zagęszczać, żelować lub stabilizować wiele różnych produktów, niezależnie od ich głównych składników."
+    }
+  ],
+  "fenugreek": [
+    {
+      "question": "Czy fenugreek może występować pod inną nazwą lub w mieszance przypraw i mieć znaczenie dla alergii?",
+      "answer": "Może występować jako fenugreek, nasiona fenugreek lub ekstrakt z fenugreek i może być częścią mieszanki przypraw. Jeśli zadeklarowana jest tylko mieszanka, jego obecność i znaczenie dla konkretnej alergii wymagają dodatkowych informacji od producenta."
+    }
+  ],
+  "allura_red": [
+    {
+      "question": "Dlaczego ten barwnik wymaga ostrzeżenia dla dzieci w Europie, a jednocześnie grozi mu przyszły zakaz w niektórych szkolnych produktach spożywczych w Kalifornii?",
+      "answer": "Środki te mają różny zakres: europejskie ostrzeżenie dotyczy aktywności i uwagi dzieci, podczas gdy Kalifornia ogranicza niektóre szkolne produkty spożywcze. Dowody stojące za ostrzeżeniem pochodzą z mieszanin barwników i nie wykazują działania allura red samodzielnie."
+    },
+    {
+      "question": "Dlaczego ten sam produkt może zawierać Allura Red w jednym kraju, a naturalne barwniki w innym?",
+      "answer": "Ponieważ przepisy dotyczące barwników i receptury handlowe różnią się między rynkami. Producent może zmienić recepturę tego samego produktu, aby dostosować się do lokalnych przepisów lub preferencji konsumentów, bez zmiany nazwy produktu."
+    }
+  ],
+  "aspartame": [
+    {
+      "question": "Jak to możliwe, że aspartam jest autoryzowany, a jednocześnie sklasyfikowany przez IARC jako możliwie rakotwórczy?",
+      "answer": "\"Możliwie rakotwórczy\" opisuje możliwość opartą na ograniczonych dowodach; autoryzacja uwzględnia również wielkość narażenia. Dlatego klasyfikacja IARC i utrzymanie dopuszczalnego dziennego spożycia mogą współistnieć, nie oznaczając, że jakiekolwiek spożycie powoduje raka."
+    },
+    {
+      "question": "Dlaczego produkty zawierające aspartam muszą ostrzegać o fenyloalaninie?",
+      "answer": "Ponieważ organizm rozkłada aspartam częściowo na fenyloalaninę. Osoby z fenyloketonurią nie mogą prawidłowo przetwarzać fenyloalaniny, więc etykiety muszą je ostrzegać, że produkt jest jej źródłem."
+    }
+  ],
+  "brilliant_blue": [
+    {
+      "question": "Dlaczego Brilliant Blue znajduje się w czekoladzie, która wygląda na brązową?",
+      "answer": "Barwniki można łączyć, aby dostosować odcień: niebieski może skorygować lub pogłębić brąz, nie sprawiając, że wynik wygląda na niebieski. Etykieta nie podaje, ile go zawiera, ani nie potwierdza korekty zamierzonej w tej czekoladzie."
+    },
+    {
+      "question": "Dlaczego jest autoryzowany z limitami użycia, jeśli JECFA uważa, że szacowane narażenie nie stanowi zagrożenia dla zdrowia?",
+      "answer": "Ponieważ ten wniosek dotyczy szacowanego narażenia, a nie każdej możliwej ilości. Limity użycia utrzymują autoryzację w określonych warunkach, a lista składników nie pozwala zweryfikować dawki."
+    }
+  ],
+  "e500": [
+    {
+      "question": "Co robi wodorowęglan sodu w żywności i dlaczego występuje jako E500?",
+      "answer": "Pomaga ciastom i ciastom naleśnikowym rosnąć, a także może regulować kwasowość. Wodorowęglan to E500(ii), w rodzinie E500: kod identyfikuje dodatek, a nie substancję inną niż soda oczyszczona."
+    }
+  ],
+  "bpa": [
+    {
+      "question": "Co naprawdę oznacza \"BPA-free\", jeśli BPA nie jest składnikiem, ale częścią opakowania?",
+      "answer": "To twierdzenie o materiale opakowania, a nie pomiar żywności. BOTIA nie może potwierdzić na podstawie listy składników, że opakowanie jest wolne od BPA lub że inne substancje nie migrowały."
+    },
+    {
+      "question": "Dlaczego Unia Europejska zakazała BPA w wielu materiałach przeznaczonych do kontaktu z żywnością, mimo że był legalnie stosowany przez lata?",
+      "answer": "Ponieważ ponowna ocena wykazała wpływ na układ odpornościowy i oszacowała narażenie powyżej nowego limitu. Zakaz obejmuje określone materiały, z wyjątkami i okresami przejściowymi; nie dowodzi to obecności BPA w konkretnym opakowaniu."
+    }
+  ],
+  "bone_phosphate": [
+    {
+      "question": "Dlaczego limit dla jadalnego fosforanu kości zależy również od fosforu, który przyjmujemy z innych źródeł?",
+      "answer": "Ponieważ jego fosfor sumuje się z fosforem z innych fosforanów i żywności: limit dotyczy sumy, a nie nowego limitu dla każdego składnika. Etykieta nie może obliczyć, ile wnosi fosforan kości ani całkowitego dziennego spożycia."
+    },
+    {
+      "question": "Jak dodatek może pochodzić z kości zwierzęcych, a jego nazwa tego nie ujawnia?",
+      "answer": "Nazwa opisuje składnik fosforanowy, a niekoniecznie jego źródło biologiczne. Jadalny fosforan kości otrzymuje się z kości zwierzęcych, więc pochodzenie może mieć znaczenie, mimo że nazwa opisuje głównie jego skład chemiczny."
+    }
+  ],
+  "bht": [
+    {
+      "question": "Dlaczego BHT znajduje się w płatkach zbożowych i co dokładnie w tym produkcie robi?",
+      "answer": "Jest przeciwutleniaczem, który spowalnia utlenianie tłuszczów i olejów, zapobiegając ich jełczeniu. Etykieta nie ujawnia, ile go użyto ani dokładnie, w którym miejscu w płatkach pełni tę funkcję."
+    },
+    {
+      "question": "Co oznacza, że BHT pozostaje dopuszczony mimo ocen dotyczących możliwego wpływu na układ hormonalny i tarczycę?",
+      "answer": "Oznacza to, że pozostaje dozwolony na określonych warunkach stosowania, podczas gdy dostępne dowody są oceniane. Skutki obserwowane przy wysokich dawkach u zwierząt i aktywność hormonalna w laboratorium nie dowodzą takich samych skutków po spożyciu konkretnego produktu."
+    }
+  ],
+  "cadmium": [
+    {
+      "question": "Jak kadm w żywności może być problemem, jeśli nie ma go w wykazie składników?",
+      "answer": "Ponieważ jest zanieczyszczeniem środowiskowym, które może przedostawać się do żywności z gleby, a nie dodanym składnikiem. Wykaz może wskazać żywność przyczyniającą się do narażenia, ale nie dowodzi obecności kadmu w tym produkcie ani nie mierzy jego ilości."
+    },
+    {
+      "question": "Dlaczego prawne limity kadmu różnią się w zależności od żywności?",
+      "answer": "Przepisy ustalają różne limity dla każdej kategorii żywności, więc produkt należy porównać z obowiązującym dla niego limitem. Sprawdzenie zgodności wymaga zmierzenia zawartości kadmu; wykaz składników nie podaje tej ilości."
+    }
+  ],
+  "caffeine": [
+    {
+      "question": "Dlaczego etykieta może mówić, że zawiera kofeinę, nie podając jej ilości?",
+      "answer": "Ponieważ wykaz składników może deklarować jej obecność bez podawania ilości. Nie można też obliczyć kofeiny pochodzącej z kawy, herbaty lub guarany, jeśli nie podano konkretnej ilości."
+    },
+    {
+      "question": "Dlaczego ilość kofeiny uznawana za akceptowalną różni się dla osoby dorosłej i w czasie ciąży?",
+      "answer": "Ponieważ w czasie ciąży bierze się pod uwagę również rozwój dziecka, a wysokie spożycie wiązano z utratą ciąży i niską masą urodzeniową. Ilość w jednym produkcie nie odzwierciedla całej kofeiny spożytej w ciągu dnia."
+    }
+  ],
+  "carbohydrate": [
+    {
+      "question": "Dlaczego węglowodany ogółem, „węglowodany netto”, błonnik i poliole nie zawsze się sumują?",
+      "answer": "Ponieważ nie wszystkie etykiety uwzględniają te same składniki w „węglowodanach”, a „węglowodany netto” mogą stosować inne obliczenia. Jeśli błonnik i poliole nie są wymienione osobno, BOTIA nie może odtworzyć tych wartości."
+    },
+    {
+      "question": "Dlaczego obowiązkowe zasady deklarowania węglowodanów różnią się w zależności od kraju?",
+      "answer": "Ponieważ każdy rynek określa, co obejmuje ta wartość i które pola muszą być podane osobno. Dlatego dwie liczby określane jako „węglowodany” niekoniecznie są porównywalne bez sprawdzenia ich definicji."
+    },
+    {
+      "question": "Czy wszystkie poliole należy odjąć, aby obliczyć węglowodany „netto”, czy zależy to od rodzaju poliolu?",
+      "answer": "To zależy od poliolu: nie wszystkie są wchłaniane lub wykorzystywane w ten sam sposób, więc nie wszystkie należy odejmować w równym stopniu. Ponadto „węglowodany netto” mogą być obliczane według różnych kryteriów, dlatego należy sprawdzić, jak ta wartość została obliczona."
+    }
+  ],
+  "carmine": [
+    {
+      "question": "Jak produkt oznaczony jako wegański może zawierać karmin/E120, który pochodzi od owadów?",
+      "answer": "Jeśli etykieta deklaruje E120, oznacza to barwnik pochodzący od owadów, co jest sprzeczne z deklaracją wegańską. BOTIA może wskazać tę sprzeczność, ale nie może na podstawie etykiety stwierdzić, w jaki sposób powstała."
+    },
+    {
+      "question": "Jak może być dopuszczony jako barwnik i jednocześnie budzić zastrzeżenia dotyczące alergii i klasyfikacji halal?",
+      "answer": "Dopuszczenie do stosowania w żywności, kryteria alergii i kryteria halal odpowiadają na różne pytania. Karmin może zachowywać białka alergenne pochodzące od owadów, a standard halal, którego przestrzega BOTIA, klasyfikuje go jako niehalal, mimo że ma dopuszczone zastosowania w żywności."
+    }
+  ],
+  "carmoisine": [
+    {
+      "question": "Dlaczego azorubina jest dopuszczona w Europie z ostrzeżeniem dla dzieci, ale nie jest dopuszczona jako barwnik spożywczy w Stanach Zjednoczonych?",
+      "answer": "Ponieważ dopuszczenia są specyficzne dla rynku: UE pozwala na określone zastosowania z ostrzeżeniem, podczas gdy Stany Zjednoczone nie dopuszczają jej do żywności. Europejskie ostrzeżenie pochodzi z badań z użyciem mieszanin i nie wykazuje działania azorubiny samej w sobie."
+    },
+    {
+      "question": "Dlaczego różowy lub czerwony produkt może wymagać barwnika, jeśli już zawiera owoce?",
+      "answer": "Owoce nie zawsze zapewniają kolor wystarczająco intensywny lub trwały po przetworzeniu i przechowywaniu. Barwnik może być dodany w celu ujednolicenia lub wzmocnienia wyglądu, ale etykieta nie ujawnia, dlaczego producent się na niego zdecydował."
+    }
+  ],
+  "pork": [
+    {
+      "question": "Czy cukierek z napisem „bez żelatyny” wystarcza, aby wiedzieć, że nie zawiera pochodnych wieprzowych?",
+      "answer": "Nie: to stwierdzenie wyklucza tylko żelatynę, a nie wszystkie inne pochodne wieprzowe. Terminy potwierdzające obecność wieprzowiny należy odróżnić od ogólnych składników, których pochodzenie pozostaje nieokreślone."
+    },
+    {
+      "question": "Czy mogą występować inne pochodne wieprzowe, nawet jeśli etykieta mówi „bez żelatyny”?",
+      "answer": "Tak, mogą występować tłuszcz wieprzowy, kolagen lub białka, nawet bez żelatyny. Jednak ogólna nazwa, taka jak E471 lub „tłuszcz zwierzęcy”, nie przesądza, że pochodzi z wieprzowiny."
+    }
+  ],
+  "beeswax": [
+    {
+      "question": "Jak cukierek może wydawać się wegański, a mieć wosk pszczeli w składzie?",
+      "answer": "Ponieważ wosk pszczeli jest składnikiem pochodzenia zwierzęcego, nawet jeśli reszta produktu wydaje się roślinna. Jest używany jako powłoka i środek glazurujący, więc cukierek może zawierać E901, nie dodając smaku."
+    },
+    {
+      "question": "Dlaczego wosk pszczeli jest nakładany na cukierki lub owoce, jeśli nie dodaje smaku?",
+      "answer": "Ponieważ może działać jako ochronna powłoka glazurująca. Dodaje połysku, zmniejsza kleistość i może pomóc ograniczyć utratę wilgoci, nie będąc tam w celu dodania smaku."
+    }
+  ],
+  "cholesterol": [
+    {
+      "question": "Czy wartość cholesterolu 0 mg mówi, czy E471/E481 są pochodzenia roślinnego?",
+      "answer": "Nie. Wartość cholesterolu 0 mg opisuje zadeklarowane informacje żywieniowe, a nie pochodzenie każdego dodatku. E471 lub E481 mogą pochodzić z różnych surowców, a tego pochodzenia nie można wywnioskować z wartości cholesterolu."
+    },
+    {
+      "question": "Dlaczego cholesterol musi pojawiać się w tabeli wartości odżywczej w niektórych krajach, a w innych nie?",
+      "answer": "Ponieważ każdy system etykietowania decyduje, które składniki odżywcze są obowiązkowe. Na niektórych rynkach cholesterol musi być deklarowany; na innych nie jest częścią standardowego panelu wartości odżywczych."
+    }
+  ],
+  "collagen": [
+    {
+      "question": "Jak produkt z deklaracją wegańską lub koktajl owocowy może zawierać kolagen?",
+      "answer": "Ponieważ wygląd produktu lub deklaracja na przedniej części opakowania nie zmieniają pochodzenia składnika. Kolagen pochodzi z tkanek zwierzęcych; jeśli jest wymieniony, stoi w sprzeczności z deklaracją wegańską, a pełna etykieta powinna zostać sprawdzona."
+    },
+    {
+      "question": "Czy kolagen w suplemencie może pochodzić z wieprzowiny, jeśli etykieta tego nie podaje?",
+      "answer": "Tak. Kolagen może pochodzić z tkanek wieprzowych, bydlęcych, morskich lub innych tkanek zwierzęcych. Jeśli gatunek nie jest zadeklarowany, sama etykieta nie potwierdza źródła; potrzebna jest informacja od producenta lub odpowiednia certyfikacja."
+    }
+  ],
+  "curcumin": [
+    {
+      "question": "Dlaczego kurkumina jako barwnik jest dozwolona tylko w niektórych produktach i na określonych warunkach?",
+      "answer": "Ponieważ dopuszczenie jako barwnik nie oznacza, że można go używać w dowolnej żywności lub dowolnej ilości. E100 można stosować tylko w kategoriach i na warunkach dozwolonych przez obowiązujące przepisy."
+    },
+    {
+      "question": "Czy kurkumina stosowana jako barwnik to to samo co kurkuma stosowana jako przyprawa?",
+      "answer": "Kurkumina jest jednym z głównych barwników w kurkumie, ale kurkuma to cała przyprawa i zawiera wiele innych związków. E100 może być preparatem kurkuminy stosowanym specjalnie jako barwnik, a nie samą przyprawą."
+    }
+  ],
+  "diphosphates": [
+    {
+      "question": "Dlaczego fosforany są oceniane również jako grupa, a nie tylko na podstawie E450 na etykiecie?",
+      "answer": "Ponieważ różne fosforany dostarczają fosfor, a istotne narażenie nie zależy od jednego numeru E. Etykieta wskazuje E450, ale ocena narażenia wymaga uwzględnienia wszystkich źródeł fosforanów i fosforu."
+    }
+  ],
+  "e171": [
+    {
+      "question": "Dlaczego dwutlenek tytanu jest zakazany jako dodatek do żywności w niektórych krajach, ale nadal dozwolony w innych?",
+      "answer": "Ponieważ organy nie doszły do tych samych wniosków naukowych lub regulacyjnych. Unia Europejska wycofała E171, gdy nie udało się wykluczyć genotoksyczności, podczas gdy JECFA i inne rynki utrzymują dozwolone zastosowania."
+    },
+    {
+      "question": "Po co jest E171, jeśli nie dodaje smaku ani nie konserwuje żywności?",
+      "answer": "Dwutlenek tytanu był stosowany głównie jako biały barwnik i środek matujący. Jego funkcja była wizualna: nadawanie żywności bielszego, jaśniejszego lub bardziej nieprzezroczystego wyglądu, a nie dodawanie smaku czy konserwowanie."
+    }
+  ],
+  "endocrine-disruptors": [
+    {
+      "question": "Jak może występować narażenie na substancje zaburzające gospodarkę hormonalną, jeśli tego określenia nie ma w wykazie składników?",
+      "answer": "Ponieważ narażenie nie zawsze pochodzi z zadeklarowanego składnika: może również pochodzić z materiałów do kontaktu z żywnością lub ze środowiska. Sam wykaz składników nie pozwala zmierzyć tego narażenia."
+    }
+  ],
+  "energy": [
+    {
+      "question": "Dlaczego węglowodany mogą pojawić się w tabeli obok 0 kcal lub znacznie mniejszej liczby kalorii niż oczekiwano?",
+      "answer": "Ponieważ energia jest obliczana z kilku składników zgodnie z zasadami obliczania i zaokrąglania obowiązującymi na danym rynku. Sama wartość węglowodanów nie wystarcza, aby dokładnie odtworzyć kalorie podane na etykiecie."
+    },
+    {
+      "question": "Dlaczego ta sama wartość kaloryczna może wywołać ostrzeżenie na przedniej części opakowania w jednym kraju, a nie w innym?",
+      "answer": "Ponieważ systemy oznakowania na przedniej części opakowania i ich progi różnią się w zależności od kraju. Ta sama wartość może wywołać ostrzeżenie na jednym rynku, a na innym nie."
+    },
+    {
+      "question": "Jak etykieta może deklarować 0 kalorii, jeśli produkt zawiera składniki dostarczające energii?",
+      "answer": "Ponieważ „0” może być wartością zaokrągloną, a nie całkowitym brakiem energii. Niewielka ilość na porcję może spaść poniżej progu, którego system oznakowania wymaga do zadeklarowania."
+    }
+  ],
+  "enumbers": [
+    {
+      "question": "Czy numery E zniknęły z etykiet, czy dodatki są teraz po prostu wymieniane nazwami?",
+      "answer": "Nie. Numer E to jeden ze sposobów identyfikacji dodatku, ale etykieta może podawać jego nazwę zamiast kodu. Zatem brak „E” nie oznacza, że nie ma dodatków."
+    }
+  ],
+  "enzymes": [
+    {
+      "question": "Jeśli etykieta podaje tylko „enzymy”, jak mogę stwierdzić, czy pochodzą one od zwierząt, roślin czy mikroorganizmów?",
+      "answer": "Nie można tego stwierdzić na podstawie samego słowa „enzymy”. Enzymy mogą pochodzić od zwierząt, roślin, mikroorganizmów lub z fermentacji; jeśli etykieta nie deklaruje ich źródła, ich pochodzenie pozostaje niepotwierdzone."
+    },
+    {
+      "question": "Czy „enzymy” mogą ukrywać pochodzenie zwierzęce, nawet jeśli reszta listy wygląda na roślinną?",
+      "answer": "Tak. Enzym może być pochodzenia zwierzęcego, nawet jeśli pozostałe składniki wyglądają na roślinne, a jego nazwa często nie ujawnia źródła. Jeśli źródło nie jest zadeklarowane, BOTIA pozostawia je niepotwierdzone."
+    }
+  ],
+  "erythritol": [
+    {
+      "question": "Dlaczego gramy węglowodanów, błonnika i erytrytolu nie wydają się sumować tak, jak oczekiwałem?",
+      "answer": "Ponieważ nie wszystkie systemy liczą i deklarują węglowodany, błonnik i poliole w ten sam sposób. Erytrytol może być wymieniony osobno, więc dodawanie lub odejmowanie wartości bez znajomości zasad danego rynku może dawać wyniki, które wydają się nie sumować."
+    },
+    {
+      "question": "Dlaczego produkt zawierający dużo erytrytolu może wymagać ostrzeżenia o działaniu przeczyszczającym?",
+      "answer": "Ponieważ erytrytol jest wchłaniany znacznie lepiej niż większość polioli, ale duża ilość przyjęta jednocześnie nadal może powodować biegunkę. Ostrzeżenie nie oznacza, że jest zakazany; efekt zależy od tego, ile zostanie spożyte."
+    },
+    {
+      "question": "Czy erytrytol należy odjąć od węglowodanów ogółem, aby obliczyć „węglowodany netto”?",
+      "answer": "To zależy od tego, jak etykieta, którą czytasz, definiuje węglowodany. Erytrytol jest poliololem i może być deklarowany lub liczony inaczej w zależności od rynku, więc nie ma uniwersalnego odejmowania, które działa dla każdej etykiety."
+    }
+  ],
+  "erythrosine": [
+    {
+      "question": "Dlaczego Stany Zjednoczone wycofały dopuszczenie erytrozyny, podczas gdy ona nadal ma ustalone na poziomie międzynarodowym dopuszczalne dzienne pobranie?",
+      "answer": "Ponieważ są to różne decyzje. FDA wycofała dopuszczenie w USA na mocy konkretnego wymogu prawnego po zaobserwowaniu guzów tarczycy u szczurów, podczas gdy JECFA utrzymuje dopuszczalne dzienne pobranie na podstawie własnej oceny."
+    },
+    {
+      "question": "Dlaczego erytrozyna jest nadal używana w niektórych produktach spożywczych, skoro Stany Zjednoczone ją wycofały?",
+      "answer": "Ponieważ wycofanie w USA jest krajową decyzją regulacyjną, a nie zakazem ogólnoświatowym. Inne jurysdykcje mogą nadal zezwalać na erytrozynę zgodnie z własnymi przepisami i warunkami."
+    }
+  ],
+  "fibre": [
+    {
+      "question": "Dlaczego błonnik jest odejmowany od węglowodanów, aby obliczyć „węglowodany netto”, jeśli etykieta nadal podaje całkowitą ilość?",
+      "answer": "Ponieważ „węglowodany netto” to inne obliczenie niż oficjalna wartość węglowodanów w tabeli. Niektóre wzory odejmują błonnik, ponieważ nie jest on trawiony i wchłaniany jak inne węglowodany, podczas gdy etykieta zachowuje wartość określoną przez przepisy danego kraju."
+    },
+    {
+      "question": "Dlaczego błonnik jest deklarowany inaczej w różnych krajach?",
+      "answer": "Ponieważ definicja regulacyjna błonnika i sposób jego deklarowania różnią się między rynkami. Dlatego dwie etykiety mogą pokazywać błonnik inaczej, choć żadna z nich nie musi być błędna."
+    }
+  ],
+  "flavor": [
+    {
+      "question": "Co dokładnie może ukryć ogólne słowo „aromat” lub „aromaty” w wykazie składników?",
+      "answer": "„Aromat” lub „aromaty” mogą oznaczać jedną lub wiele substancji aromatycznych bez wymieniania każdej z nich. Mogą również obejmować nośniki lub rozpuszczalniki, które pomagają przenosić aromat i nie zawsze są osobno wymieniane na etykiecie."
+    },
+    {
+      "question": "Czy „aromaty” mogą obejmować substancje, które konsumenci oczekują zobaczyć wymienione osobno?",
+      "answer": "Tak. Ogólna deklaracja aromatów może obejmować substancje pomocnicze lub nośniki, takie jak etanol lub glikol propylenowy, bez ich osobnego wymieniania. Dlatego słowo „aromaty” nie ujawnia pełnego składu."
+    }
+  ],
+  "phosphates": [
+    {
+      "question": "Dlaczego ocena fosforanów wymaga całkowitego narażenia na całą grupę, a nie tylko konkretnego numeru E na etykiecie?",
+      "answer": "Ponieważ kilka różnych numerów E może dostarczać fosforanów. Widząc tylko jeden na etykiecie, nie można określić całkowitego narażenia na fosforany lub fosfor z reszty diety."
+    }
+  ],
+  "free_sugars": [
+    {
+      "question": "Jak produkt może twierdzić „bez dodanego cukru”, a mimo to dostarczać cukrów wolnych?",
+      "answer": "Ponieważ „bez dodanego cukru” nie oznacza „bez cukrów wolnych”. WHO również uważa cukry w miodzie, syropach, sokach i koncentratach sokowych za cukry wolne."
+    },
+    {
+      "question": "Dlaczego niektóre kraje umieszczają ostrzeżenia o cukrach wolnych, a inne podają tylko zalecenia dotyczące spożycia?",
+      "answer": "Ponieważ każdy kraj decyduje, jak przełożyć zalecenia żywieniowe na przepisy dotyczące etykietowania. Niektóre stosują ostrzeżenia na przedniej części opakowania, podczas gdy inne pozostawiają tę informację jako poradę dotyczącą spożycia."
+    }
+  ],
+  "fruit_juice_concentrate": [
+    {
+      "question": "Jak koncentrat soku może dosładzać produkt, który chwali się „bez dodanego cukru”?",
+      "answer": "Ponieważ zagęszczanie soku usuwa wodę i sprawia, że jego cukry są bardziej stężone. Może zapewnić słodycz, nawet jeśli w wykazie jest nazwany koncentratem owocowym, a nie słowem „cukier”."
+    },
+    {
+      "question": "Dlaczego koncentrat soku może być uznany za cukier wolny, nawet jeśli na etykiecie występuje jako owoc?",
+      "answer": "Ponieważ klasyfikacja nie zależy od tego, czy składnik jest nazwany owocem. Usunięcie wody z soku zagęszcza jego cukry, a WHO zalicza je do cukrów wolnych."
+    }
+  ],
+  "gelatine": [
+    {
+      "question": "Jak to możliwe, że produkt oznaczony jako wegański lub wegetariański zawiera w składnikach żelatynę?",
+      "answer": "Jeśli w wykazie podano żelatynę, przeczy to deklaracji wegańskiej lub wegetariańskiej: żelatyna otrzymywana jest z kolagenu zawartego w tkankach zwierzęcych. Wygląd produktu lub informacja na przedniej części opakowania nie zmieniają jej pochodzenia."
+    },
+    {
+      "question": "Czy słowo „żelatyna” może być stosowane w odniesieniu do materiału roślinnego, czy powinno być oznaczone inaczej?",
+      "answer": "Nie. „Żelatyna” oznacza białko otrzymywane z kolagenu zwierzęcego. Roślinne środki żelujące, takie jak agar lub pektyna, są innymi składnikami i muszą być oznaczone własnymi nazwami."
+    }
+  ],
+  "glycerol": [
+    {
+      "question": "Jak mogę stwierdzić, czy gliceryna/glicerol na etykiecie jest pochodzenia zwierzęcego czy roślinnego?",
+      "answer": "W Unii Europejskiej od 2023 roku E422 do stosowania w żywności może być otrzymywany wyłącznie z olejów i tłuszczów roślinnych. Inne rynki dopuszczają inne metody produkcji, a etykieta nie mówi, która została zastosowana, więc tylko producent może potwierdzić pochodzenie."
+    },
+    {
+      "question": "Czy produkt przedstawiany jako „bez nabiału” może zawierać glicerol pochodzenia zwierzęcego?",
+      "answer": "Poza Unią Europejską tak: „bez nabiału” oznacza bez składników mlecznych, niekoniecznie bez składników pochodzenia zwierzęcego. W UE od 2023 roku E422 do stosowania w żywności musi pochodzić z olejów i tłuszczów roślinnych."
+    }
+  ],
+  "arabic_gum": [
+    {
+      "question": "Dlaczego guma arabska znajduje się w tym produkcie i jaką funkcję pełni w recepturze?",
+      "answer": "Guma arabska może działać jako emulgator, stabilizator, nośnik lub zagęszczacz. Często stosuje się ją, gdy receptura musi pozostać stabilna bez nadmiernego zagęszczenia."
+    },
+    {
+      "question": "Dlaczego produkt oznaczony jako „bez dodatków” może zawierać gumę arabską?",
+      "answer": "Ponieważ „bez dodatków” nie ma jednej definicji prawnej i każda marka sama decyduje, co obejmuje to określenie. Guma arabska jest dozwolonym dodatkiem, E414, mimo że pochodzi z żywicy drzewnej."
+    }
+  ],
+  "cassia_gum": [
+    {
+      "question": "Jak dodatek może być dopuszczony, jeśli JECFA nadal ma wstępną specyfikację i prosi o więcej danych?",
+      "answer": "Ponieważ dopuszczenie do stosowania i ostateczna specyfikacja techniczna to nie do końca to samo. JECFA może utrzymywać specyfikację jako wstępną, jednocześnie prosząc o więcej danych, mimo że dodatek ma dopuszczone zastosowania w niektórych jurysdykcjach."
+    },
+    {
+      "question": "Dlaczego guma kasja jest stosowana znacznie rzadziej niż guma guar lub guma karobowa?",
+      "answer": "Ponieważ jej dopuszczone zastosowania są bardziej ograniczone, a jej ocena techniczna jest nadal otwarta. Guma guar i guma karobowa są dopuszczone od znacznie dłuższego czasu w większej liczbie kategorii żywności."
+    }
+  ],
+  "gellan_gum": [
+    {
+      "question": "Dlaczego guma gellan znajduje się w tym produkcie i jaki ma wpływ na jego teksturę?",
+      "answer": "Guma gellan to polisacharyd otrzymywany w drodze fermentacji, który żeluje i stabilizuje w bardzo małych ilościach. Na przykład może pomóc równomiernie rozprowadzić cząstki lub minerały bez zagęszczania produktu."
+    },
+    {
+      "question": "Dlaczego napoje roślinne zawierają gellan, podczas gdy mleko go nie potrzebuje?",
+      "answer": "Ponieważ cząstki i minerały w napojach roślinnych mają tendencję do osadzania się na dnie. Guma gellan utrzymuje je w rozproszeniu; mleko jej nie potrzebuje, ponieważ jego własny skład już utrzymuje je w zawieszeniu."
+    }
+  ],
+  "guar_gum": [
+    {
+      "question": "Jak ktoś może zareagować na gumę guar, jeśli nie pojawia się ona wyraźnie w składach niektórych produktów?",
+      "answer": "Ponieważ może występować jako E412 lub „guma guar”, a te formy nie zawsze są rozpoznawane jako ten sam składnik. Ktoś, kto szuka tylko jednej z tych form, może ją przeoczyć na etykiecie."
+    },
+    {
+      "question": "Dlaczego guma guar jest nadal dozwolona w wielu produktach spożywczych, podczas gdy Unia Europejska wycofała niektóre zastosowania w żywności dla niemowląt i małych dzieci?",
+      "answer": "Ponieważ zastosowania ogólne i żywność dla niemowląt i małych dzieci nie są oceniane na tym samym poziomie dowodów. UE utrzymała wiele zastosowań E412, ale wycofała niektóre zastosowania dla niemowląt i małych dzieci, uznając dostępne dane za niewystarczające dla tych kategorii."
+    }
+  ],
+  "karaya_gum": [
+    {
+      "question": "Co robi guma karaya i dlaczego pojawia się w tak niewielu produktach?",
+      "answer": "Guma karaya to guma roślinna, która wchłania wodę i jest stosowana jako zagęszczacz, stabilizator lub emulgator. Jest używana w małych ilościach i obecnie pojawia się znacznie rzadziej niż inne gumy spożywcze."
+    },
+    {
+      "question": "Dlaczego guma karaya została zastąpiona tańszymi gumami?",
+      "answer": "Ponieważ otrzymuje się ją z żywicy drzewnej, a jej podaż jest ograniczona i nieregularna. Inne gumy pełnią podobne funkcje przy bardziej stabilnym koszcie i dostępności."
+    }
+  ],
+  "shellac": [
+    {
+      "question": "Co oznacza „shellac” lub „glazura cukiernicza” i dlaczego nazwa nie ujawnia jej owadziego pochodzenia?",
+      "answer": "„Shellac” lub „glazura cukiernicza” to żywica wydzielana przez owady i stosowana w celu nadania połysku. Nazwa handlowa opisuje powłokę, ale nie czyni jej zwierzęcego pochodzenia oczywistym."
+    },
+    {
+      "question": "Dlaczego błyszczący cukierek lub lśniące jabłko mogą zawierać szelak?",
+      "answer": "Ponieważ szelak tworzy cienką warstwę, która dodaje połysku i ogranicza utratę wilgoci. Jest stosowany jako powłoka, więc może znajdować się na powierzchni, nie będąc składnikiem wewnątrz produktu."
+    }
+  ],
+  "tara_gum": [
+    {
+      "question": "Co robi guma tara i czym różni się od gumy guar lub gumy z nasion szarańczynu?",
+      "answer": "Guma tara, guar i z nasion szarańczynu to gumy roślinne, które zagęszczają, zatrzymując wodę, ale pochodzą z różnych nasion i nie zachowują się dokładnie tak samo. Guma tara jest często łączona z innymi gumami, ponieważ razem mogą działać lepiej."
+    },
+    {
+      "question": "Czy guma tara może zastąpić guar w produkcie, który go unika?",
+      "answer": "Może pełnić podobną funkcję zagęszczającą, ale nie zachowuje się tak samo: pochodzą z różnych nasion i dają inną lepkość oraz teksturę. Jeśli unikasz guaru z konkretnego powodu, powinieneś sprawdzić, czy alternatywa spełnia ten powód."
+    }
+  ],
+  "xanthan_gum": [
+    {
+      "question": "Jak mogę stwierdzić, czy guma ksantanowa na etykiecie jest odpowiednia dla diety wegańskiej, jeśli podłoże produkcyjne nie jest podane?",
+      "answer": "Nie można tego potwierdzić wyłącznie na podstawie nazwy, jeśli podłoże fermentacji ma dla ciebie znaczenie. Guma ksantanowa jest produkowana w wyniku fermentacji źródła węglowodanów, a to źródło zwykle nie jest deklarowane na etykiecie."
+    },
+    {
+      "question": "Dlaczego guma ksantanowa pojawia się w tak wielu produktach bezglutenowych?",
+      "answer": "Ponieważ gluten nadaje ciastu elastyczność i strukturę, a gdy zostanie usunięty, potrzebny jest coś innego, co przejmie tę rolę. Guma ksantanowa pomaga wiązać ciasto i zapobiega kruszeniu się produktu."
+    }
+  ],
+  "halal": [
+    {
+      "question": "Czy czytanie składników wystarczy, aby stwierdzić, czy produkt jest halal, czy potrzebna jest certyfikacja?",
+      "answer": "Czytanie składników pokazuje, co deklaruje etykieta, ale nie wykazuje, czego brakuje: pochodzenia niektórych dodatków, procesów, zanieczyszczenia krzyżowego lub metody uboju. Certyfikacja halal sprawdza również te aspekty poza listą składników."
+    },
+    {
+      "question": "Które składniki o zmiennym pochodzeniu sprawiają, że lista składników nie wystarcza do stwierdzenia, czy coś jest halal?",
+      "answer": "Składniki takie jak E471, E472, lecytyny, enzymy lub aromaty mogą pochodzić z różnych źródeł. Jeśli etykieta nie podaje pochodzenia, nie wystarcza to samo w sobie do potwierdzenia kryteriów halal."
+    }
+  ],
+  "haram": [
+    {
+      "question": "Czy składnik może wydawać się neutralny z nazwy, ale być haram ze względu na pochodzenie lub proces?",
+      "answer": "Tak. Nazwa taka jak E471, „enzymy” lub „aromaty” niekoniecznie ujawnia, skąd pochodzi lub jak został uzyskany. Jeśli źródło lub proces są zabronione, klasyfikacja się zmienia, nawet jeśli nazwa wydaje się neutralna."
+    },
+    {
+      "question": "Jakich informacji brakuje, gdy składnik może być halal lub haram w zależności od pochodzenia?",
+      "answer": "Jego konkretnego źródła, a w niektórych przypadkach sposobu produkcji. Jeśli etykieta nie podaje tych informacji, BOTIA nie czyni go halal ani haram: pozostawia go jako mashbooh."
+    }
+  ],
+  "locust_bean_gum": [
+    {
+      "question": "Dlaczego produkt organiczny może zawierać gumę karobową i inne gumy?",
+      "answer": "Ponieważ „organiczny” nie oznacza „bez dodatków”. Guma karobowa pochodzi z nasion rośliny i może być stosowana do zagęszczania lub stabilizacji produktu, jeśli przepisy danego rynku na to pozwalają."
+    },
+    {
+      "question": "Dlaczego guma karobowa wymaga ocen regulacyjnych, jeśli od dawna jest stosowana jako zagęszczacz?",
+      "answer": "Ponieważ wiele lat stosowania nie zastępuje oceny bezpieczeństwa. Sprawdza się również jej czystość, stosowane ilości i całkowite narażenie, aby potwierdzić, że warunki autoryzacji pozostają odpowiednie."
+    }
+  ],
+  "bha": [
+    {
+      "question": "Jak BHA może pozostać dopuszczony, jeśli IARC klasyfikuje go jako potencjalnie rakotwórczy?",
+      "answer": "Ponieważ klasyfikacja IARC wskazuje na możliwe zagrożenie, a nie ryzyko wynikające z określonej ilości w żywności. Autoryzacje uwzględniają również dawkę, narażenie i dopuszczalne warunki stosowania."
+    },
+    {
+      "question": "Dlaczego ten sam rodzaj płatków zbożowych może zawierać BHA/BHT w jednym kraju, a w innym mieć inny skład?",
+      "answer": "Ponieważ przepisy dotyczące tego, które przeciwutleniacze mogą być stosowane i w jakich ilościach, różnią się w zależności od kraju. Firma może zmienić skład tego samego produktu, aby spełnić przepisy każdego rynku."
+    }
+  ],
+  "indigotine": [
+    {
+      "question": "Dlaczego indygotyna jest dopuszczona tylko do określonych zastosowań i w określonych ilościach?",
+      "answer": "Ponieważ autoryzacja nie pozwala na stosowanie barwnika w dowolnej żywności lub w dowolnej ilości. Indygotyna może być stosowana wyłącznie w kategoriach i na poziomach dopuszczonych przez odpowiednie przepisy."
+    },
+    {
+      "question": "Dlaczego niebieski produkt może zawierać indygotynę, jeśli istnieją naturalne barwniki?",
+      "answer": "Ponieważ naturalne niebieskie barwniki są nieliczne, drogie i niezbyt stabilne na światło, ciepło i kwasowość. Indygotyna zapewnia jednolity niebieski kolor, który pozostaje stabilny przez cały okres przydatności produktu."
+    }
+  ],
+  "soy_isoflavones": [
+    {
+      "question": "Ile izoflawonów faktycznie dostarcza produkt sojowy, jeśli etykieta tego nie deklaruje?",
+      "answer": "Nie można tego stwierdzić tylko na podstawie słowa \"soja\" na liście składników. Ilość izoflawonów zależy od składnika i sposobu jego przetworzenia, a etykieta zwykle tego nie deklaruje."
+    },
+    {
+      "question": "Czy każdy produkt sojowy dostarcza izoflawonów, czy zależy to od sposobu przetworzenia?",
+      "answer": "Zależy to od składnika i przetworzenia. Mniej rafinowane produkty sojowe zachowują więcej izoflawonów, natomiast silnie przetworzone pochodne, takie jak rafinowany olej, mogą zachować ich bardzo mało. Etykieta zwykle nie podaje ilości."
+    }
+  ],
+  "isomalt": [
+    {
+      "question": "Czy izomalt i maltitol to to samo i jak wpływają na obliczanie węglowodanów?",
+      "answer": "Nie. Izomalt i maltitol to różne poliole. Oba mogą być podawane oddzielnie od cukrów lub w ramach obliczeń węglowodanów, w zależności od rynku, więc nie należy traktować ich jako tej samej wartości."
+    },
+    {
+      "question": "Dlaczego żywność zawierająca izomalt może wymagać ostrzeżenia o działaniu przeczyszczającym?",
+      "answer": "Ponieważ część izomaltu nie jest wchłaniana i może przyciągać wodę do jelit. W UE ostrzeżenie \"nadmierne spożycie może wywołać efekt przeczyszczający\" jest wymagane, gdy żywność zawiera więcej niż 10% dodanych polioli."
+    }
+  ],
+  "glucose_syrup": [
+    {
+      "question": "Jak to możliwe, że podano 0 g cukrów dodanych, jeśli w składnikach jest syrop glukozowy?",
+      "answer": "Zależy to od miejsca oznakowania. Tam, gdzie w tabeli podaje się cukry dodane, bardzo mała ilość na porcję może zostać zaokrąglona do 0 g. W Unii Europejskiej nie ma takiego pola: \"bez dodanych cukrów\" to oświadczenie na opakowaniu, którego nie można użyć, jeśli dodano syrop glukozowy."
+    },
+    {
+      "question": "Dlaczego syrop glukozowy liczy się jako cukier wolny, nawet jeśli nie jest po prostu zapisany jako \"cukier\"?",
+      "answer": "Ponieważ nazwa składnika nie zmienia tego, czym on jest: syrop glukozowy składa się z cukrów otrzymywanych ze skrobi. Dlatego WHO zalicza go do cukrów wolnych."
+    }
+  ],
+  "ginger": [
+    {
+      "question": "Jak mogę stwierdzić, czy produkt zawiera imbir, jeśli etykieta podaje tylko \"przyprawy\"?",
+      "answer": "Nie można tego stwierdzić na podstawie samego tego słowa. \"Przyprawy\" mogą obejmować kilka przypraw bez wymieniania każdej z nich, więc imbir może wchodzić w skład mieszanki, nie będąc wymienionym osobno."
+    },
+    {
+      "question": "Czy \"przyprawy\" mogą ukryć imbir istotny dla alergii?",
+      "answer": "Tak. Jeśli etykieta podaje tylko \"przyprawy\", nie można wykluczyć imbiru w mieszance. Jeśli musisz go unikać, producent może potwierdzić dokładny skład."
+    }
+  ],
+  "konjac": [
+    {
+      "question": "Jak produkt z konjakiem może deklarować 6 g węglowodanów, 6 g błonnika i 0 g węglowodanów netto?",
+      "answer": "Ponieważ \"węglowodany netto\" zwykle oblicza się, odejmując błonnik od węglowodanów ogółem. Jeśli 6 g węglowodanów to błonnik z konjaku, takie obliczenie może dać 0 g netto, mimo że tabela nadal pokazuje 6 g węglowodanów."
+    },
+    {
+      "question": "Dlaczego konjak jest dozwolony w wielu produktach spożywczych, ale zakazany w niektórych mini-kubeczkach galaretkowych?",
+      "answer": "Ponieważ problem jest fizyczny, a nie chemiczny. Konjak może tworzyć bardzo twardy żel, który nie rozkłada się łatwo w ustach i zwiększa ryzyko zadławienia w małych, jednokęsowych galaretkach."
+    }
+  ],
+  "l_cysteine": [
+    {
+      "question": "Jak mogę rozpoznać, czy L-cysteina w pieczywie pochodzi ze źródła zwierzęcego, mikrobiologicznego czy syntetycznego?",
+      "answer": "Nie można tego stwierdzić na podstawie samej etykiety. L-cysteina może być produkowana w drodze fermentacji, syntezy lub z surowców bogatych w keratynę, a jeśli pochodzenie ma znaczenie, tylko producent może to potwierdzić."
+    },
+    {
+      "question": "Dlaczego prawodawstwo europejskie wyraźnie stwierdza, że L-cysteina nie może pochodzić z ludzkich włosów?",
+      "answer": "Ponieważ historycznie L-cysteinę pozyskiwano również z ludzkich włosów. Przepisy europejskie wyraźnie wykluczają to źródło, choć inne zatwierdzone metody produkcji pozostają."
+    }
+  ],
+  "lactitol": [
+    {
+      "question": "Dlaczego produkt zawierający dużo laktitolu musi ostrzegać o możliwym działaniu przeczyszczającym?",
+      "answer": "Ponieważ bardzo mało laktitolu jest wchłaniane, a większość dociera do jelita grubego, gdzie wiąże wodę i ulega fermentacji. Chociaż nazwa przypomina laktozę, laktitol jest innym związkiem i nie jest laktozą."
+    },
+    {
+      "question": "Czy laktitol zawiera laktozę, ponieważ nazwy są tak podobne?",
+      "answer": "Nie. Laktitol jest wytwarzany z laktozy, ale w wyniku tego procesu powstaje inny związek i nie jest już laktozą. Podobieństwo dotyczy nazwy i pochodzenia, a nie tego, co zawiera finalny produkt."
+    }
+  ],
+  "lecithins": [
+    {
+      "question": "Czy określenie \"lecytyny\" wystarcza, aby wiedzieć, czy pochodzą z soi, jajek czy innego źródła?",
+      "answer": "Nie. \"Lecytyny\" nazywają składnik, ale niekoniecznie jego pochodzenie. Mogą pochodzić z soi, słonecznika, jajek lub innych źródeł; jeśli etykieta nie precyzuje, nie można stwierdzić, które zostały użyte."
+    },
+    {
+      "question": "Czy \"lecytyna sojowa\" wyjaśnia pochodzenie lecytyny, czy nadal istnieją niepewności co do procesu?",
+      "answer": "To wyjaśnia surowiec: wskazuje, że lecytyna pochodzi z soi. Etykieta nie podaje jednak wszystkich szczegółów dotyczących sposobu jej ekstrakcji lub przetwarzania."
+    }
+  ],
+  "maltitol": [
+    {
+      "question": "Czy określenie \"4 g węglowodanów netto\" może wprowadzać w błąd, jeśli produkt zawiera maltitol?",
+      "answer": "Może, jeśli cały maltitol został odjęty tak, jakby się nie liczył. Maltitol jest tylko częściowo wchłaniany i dostarcza energii, więc \"węglowodany netto\" zależą od receptury marki i nie są uniwersalną wartością."
+    },
+    {
+      "question": "Dlaczego maltitole mogą wymagać ostrzeżenia o działaniu przeczyszczającym?",
+      "answer": "Ponieważ maltitol jest tylko częściowo wchłaniany, a reszta dociera do jelita grubego, gdzie może powodować gazy lub działanie przeczyszczające. Jest bardzo powszechny w czekoladach i słodyczach \"bez cukru\", a także często pojawia się w produktach reklamowanych jako o niskiej zawartości \"węglowodanów netto\"."
+    },
+    {
+      "question": "Czy cały maltitol można odjąć od węglowodanów, aby obliczyć \"węglowodany netto\"?",
+      "answer": "Nie ma uniwersalnej zasady pozwalającej na pełne odjęcie go na każdej etykiecie. Maltitol jest częściowo wchłaniany, a \"węglowodany netto\" nie są obliczane tak samo na każdym rynku ani przez każdą markę."
+    }
+  ],
+  "maltodextrin": [
+    {
+      "question": "Jak produkt może twierdzić, że jest \"bez cukru\" lub ma 0 g węglowodanów, jeśli zawiera maltodekstrynę?",
+      "answer": "Ponieważ \"bez cukru\" i \"0 g węglowodanów\" nie oznaczają tego samego. Maltodekstryna nie liczy się jako \"cukry\" w rozumieniu europejskim, ale jest węglowodanem; to, czy tabela pokazuje 0 g, zależy od ilości na porcję i zasad zaokrąglania obowiązujących na danym rynku."
+    },
+    {
+      "question": "Jak etykieta może deklarować 0 g węglowodanów, jeśli maltodekstryna znajduje się wśród pierwszych składników?",
+      "answer": "Ponieważ lista szereguje składniki według wagi, a tabela wartości odżywczych podaje ilości w przeliczeniu na określoną podstawę lub na porcję i może stosować zaokrąglanie. Jeśli maltodekstryna znajduje się wśród pierwszych składników, przed interpretacją tego 0 g należy sprawdzić wielkość porcji i przepisy rynkowe."
+    }
+  ],
+  "mannitol": [
+    {
+      "question": "Dlaczego produkt zawierający mannitol może wymagać specjalnego ostrzeżenia, mimo że dodatek jest dozwolony?",
+      "answer": "Ponieważ mannitol jest słabo wchłaniany i może działać przeczyszczająco przy stosunkowo niewielkich ilościach. W żywności występuje głównie w gumach do żucia, słodyczach i podobnych produktach, choć może mieć także inne zastosowania techniczne."
+    },
+    {
+      "question": "Dlaczego mannitol występuje w gumach do żucia i słodyczach, ale nie w innych wyrobach cukierniczych?",
+      "answer": "Ponieważ nie wchłania wilgoci, więc pomaga zapobiegać sklejaniu się gum do żucia i słodyczy. W innych wyrobach cukierniczych ta właściwość nie jest potrzebna i stosuje się tańsze poliole."
+    }
+  ],
+  "mashbooh": [
+    {
+      "question": "Co sprawia, że składnik jest klasyfikowany jako mashbooh, a nie halal lub haram?",
+      "answer": "Brak informacji potrzebnych do podjęcia decyzji, zwykle o jego pochodzeniu lub procesie. Jeśli etykieta nie może potwierdzić, że jest halal, ani wykazać, że jest haram, BOTIA pozostawia go jako mashbooh."
+    }
+  ],
+  "honey": [
+    {
+      "question": "Jak produkt oznaczony jako wegański może zawierać miód?",
+      "answer": "Ponieważ miód jest produkowany przez pszczoły i dlatego jest pochodzenia zwierzęcego. Jeśli występuje w składnikach, stoi w sprzeczności z deklaracją wegańską, nawet jeśli reszta produktu jest roślinna."
+    },
+    {
+      "question": "Dlaczego miód jest uważany za cukier wolny i jednocześnie niezalecany dla dzieci poniżej pierwszego roku życia?",
+      "answer": "Ponieważ jego cukry liczą się jako cukry wolne, mimo że miód jest żywnością naturalną. Unika się go u dzieci poniżej pierwszego roku życia z innego powodu: ryzyka botulizmu niemowlęcego."
+    }
+  ],
+  "monk_fruit": [
+    {
+      "question": "Dlaczego produkt nazwany „słodzikiem z owocu mnicha” może składać się niemal w całości z erytrytolu?",
+      "answer": "Ponieważ ekstrakt z owocu mnicha jest niezwykle słodki i potrzebna jest tylko bardzo mała ilość. Erytrytol zapewnia objętość i pozwala odmierzać produkt jak słodzik stołowy, mimo że nie jest składnikiem dostarczającym całej słodyczy."
+    },
+    {
+      "question": "Dlaczego JECFA ustaliła tymczasowy limit dla owocu mnicha, jeśli jest używany jako słodzik?",
+      "answer": "Ponieważ ocena nie jest jeszcze zakończona. JECFA oszacowała, że przy stosowaniu proponowanych maksymalnych poziomów narażenie dzieci mogłoby osiągnąć około czterokrotność tego limitu. Dotyczy to tego scenariusza spożycia, a nie każdego produktu zawierającego owoc mnicha."
+    }
+  ],
+  "e471": [
+    {
+      "question": "Jeśli E471 może pochodzić z tłuszczów zwierzęcych lub roślinnych, jak mogę odczytać jego pochodzenie z etykiety?",
+      "answer": "Zwykle nie można tego stwierdzić wyłącznie na podstawie „E471” lub „mono- i diglicerydów”. Etykieta identyfikuje dodatek, ale nie pochodzenie jego kwasów tłuszczowych; jeśli ma to znaczenie, musi to potwierdzić producent lub odpowiednia certyfikacja."
+    },
+    {
+      "question": "Jak produkt może deklarować 0 g tłuszczu i zawierać mono- i diglicerydy, takie jak E471?",
+      "answer": "Ponieważ E471 może występować w małej ilości, która nie zmienia w widoczny sposób wartości tłuszczu w tabeli. Lista składników pokazuje, że jest obecny, ale tabela wartości odżywczych podaje ilości i może stosować zaokrąglanie w zależności od rynku."
+    },
+    {
+      "question": "Czy certyfikacja halal pozwala stwierdzić, że E471 jest również wegański?",
+      "answer": "Nie. E471 pochodzenia zwierzęcego może być zgodny z certyfikacją halal, jeśli spełnia jej wymagania, a jednocześnie nie być wegański. Halal i wegańskie stosują różne kryteria."
+    }
+  ],
+  "neohesperidin_dc": [
+    {
+      "question": "Dlaczego JECFA utrzymuje tymczasowy limit dla neohesperydyny DC i nadal żąda dodatkowych badań?",
+      "answer": "Ponieważ ocena nie jest jeszcze zakończona. JECFA ustaliła tymczasowy limit w oczekiwaniu na dodatkowe dane, w tym badanie toksyczności reprodukcyjnej."
+    },
+    {
+      "question": "Skąd pochodzi neohesperydyna, jeśli jej nazwa brzmi jak związana z cytrusami?",
+      "answer": "Dokładnie stamtąd: otrzymuje się ją ze związku występującego w gorzkiej pomarańczy. Jest chemicznie przekształcana w słodzik, więc końcowy produkt nie jest już pierwotnym związkiem owocowym."
+    }
+  ],
+  "neotame": [
+    {
+      "question": "Co właściwie się zmienia, gdy dwie wersje tego samego produktu używają neotamu lub innego słodzika?",
+      "answer": "Zmienia się receptura: każdy słodzik ma inną moc i smak, więc nie są używane w tej samej ilości i nie dają dokładnie tego samego efektu. Lista składników mówi, który został użyty, ale zwykle nie ile."
+    },
+    {
+      "question": "Dlaczego neotam nie wymaga ostrzeżenia o fenyloalaninie, którego wymaga aspartam?",
+      "answer": "Ponieważ, choć chemicznie spokrewniony z aspartamem, jest używany w znacznie mniejszych ilościach. Ilość fenyloalaniny, jaką może dostarczyć w normalnych warunkach stosowania, jest uważana za nieistotną."
+    }
+  ],
+  "nutrition": [
+    {
+      "question": "Dlaczego wartości dla różnych porcji w tej samej tabeli wartości odżywczych nie zawsze są dokładnymi wielokrotnościami?",
+      "answer": "Ponieważ każda wartość może być obliczana i zaokrąglana osobno. Mnożenie wartości, które zostały już zaokrąglone, może nie dać dokładnie wartości podanej dla innej porcji."
+    },
+    {
+      "question": "Czy różnice między porcjami to błędy, czy mogą wynikać z zasad zaokrąglania?",
+      "answer": "Nie muszą to być błędy. Dwie wartości mogą wydawać się niespójne, ponieważ przepisy pozwalają na zaokrąglanie ilości przed podaniem ich na etykiecie."
+    }
+  ],
+  "omega_3": [
+    {
+      "question": "Czy produkt „wegetariański omega-3” jest koniecznie wegański, jeśli zawiera naturalny aromat?",
+      "answer": "Nie. „Wegetariański” nie oznacza „wegański”, a naturalny aromat może pochodzić ze źródeł zwierzęcych, roślinnych lub fermentacji. Jeśli pochodzenie nie jest podane, etykieta nie może potwierdzić, że jest wegański."
+    },
+    {
+      "question": "Jak mogę stwierdzić, czy omega-3 w produkcie pochodzi z ryb czy z alg?",
+      "answer": "Jeśli etykieta podaje źródło — olej rybny, olej z alg, olej lniany — to mówi ci to. Jeśli jest tylko „omega-3”, nie możesz wiedzieć; a rodzaj ma znaczenie, ponieważ len dostarcza ALA, podczas gdy ryby lub algi dostarczają EPA i DHA."
+    }
+  ],
+  "packaging-migrants": [
+    {
+      "question": "Jak substancje mogą migrować z opakowania do żywności, jeśli nigdy nie pojawiają się jako składniki?",
+      "answer": "Ponieważ nie są dodawane jako składniki: mogą przenikać do żywności z materiału, który ją zawiera lub ma z nią kontakt. Ta migracja zależy od substancji, opakowania i warunków stosowania i nie pojawia się na liście składników."
+    }
+  ],
+  "pectins": [
+    {
+      "question": "Jaka jest różnica między pektyną a żelatyną, gdy obie są używane do uzyskania konsystencji?",
+      "answer": "Obie mogą tworzyć żele, ale nie są tym samym. Pektyna to polisacharyd roślinny pozyskiwany głównie z owoców; żelatyna to białko otrzymywane z kolagenu zwierzęcego."
+    },
+    {
+      "question": "Dlaczego pektyny są dopuszczone tylko w określonych warunkach stosowania, mimo że pochodzą z roślin?",
+      "answer": "Ponieważ to, że dodatek pochodzi z roślin, nie oznacza, że można go stosować bez ograniczeń. Dopuszczenie określa również, w jakich produktach spożywczych można go używać i na jakich warunkach."
+    }
+  ],
+  "lead": [
+    {
+      "question": "Jak ołów może znajdować się w żywności, jeśli nie występuje jako składnik?",
+      "answer": "Ponieważ ołów jest zanieczyszczeniem, a nie dodanym składnikiem. Może przedostać się do żywności z gleby, wody, niektórych materiałów lub podczas produkcji, dlatego nie znajduje się w wykazie składników."
+    },
+    {
+      "question": "Dlaczego nie ma już uznawanego za tolerowane spożycia ołowiu, a przepisy ustalają różne limity dla różnych produktów spożywczych?",
+      "answer": "Ponieważ nie ustalono żadnego narażenia na ołów, które nie wywoływałoby skutków. Limity prawne nie oznaczają „bezpiecznej ilości”: mają na celu zmniejszenie zanieczyszczenia, biorąc pod uwagę, ile ołowiu może zgromadzić każdy rodzaj żywności i ile jest spożywane."
+    }
+  ],
+  "polyols": [
+    {
+      "question": "Czy powinienem odjąć poliole od węglowodanów, aby obliczyć „węglowodany netto”?",
+      "answer": "Nie ma uniwersalnego odejmowania, które działałoby dla każdego produktu. „Węglowodany netto” nie są regulowane w ten sam sposób na każdym rynku, a różne poliole nie są wchłaniane w równym stopniu."
+    },
+    {
+      "question": "Dlaczego „poliole” mogą być podane jako informacja żywieniowa oddzielnie od cukrów?",
+      "answer": "Ponieważ poliole są węglowodanami, ale nie są klasyfikowane jako cukry. Niektóre systemy etykietowania pozwalają lub wymagają podawania ich oddzielnie, aby nie zostały włączone do wartości cukrów."
+    },
+    {
+      "question": "Czy wszystkie poliole zachowują się tak samo przy obliczaniu węglowodanów?",
+      "answer": "Nie. Erytrytol, maltitol, sorbitol, izomalt i inne poliole różnią się wchłanianiem i udziałem w dostarczaniu energii. Traktowanie ich wszystkich jednakowo może zatem dawać mylącą wartość „węglowodanów netto”."
+    }
+  ],
+  "ponceau_4r": [
+    {
+      "question": "Dlaczego Ponceau 4R jest dozwolony w Europie z ostrzeżeniem dla dzieci, ale nie jest dopuszczony jako barwnik spożywczy w Stanach Zjednoczonych?",
+      "answer": "Ponieważ Europa i Stany Zjednoczone nie podjęły takiej samej decyzji regulacyjnej w sprawie tego barwnika. W UE można go stosować w określonych warunkach i z określonym ostrzeżeniem; w Stanach Zjednoczonych nie jest dopuszczony jako barwnik spożywczy."
+    },
+    {
+      "question": "Dlaczego ten sam produkt może zawierać inny barwnik w zależności od kraju, w którym jest sprzedawany?",
+      "answer": "Ponieważ każdy rynek dopuszcza inne barwniki i wymaga innych ostrzeżeń. Producent może zmienić skład produktu, aby spełnić te przepisy lub uniknąć ostrzeżenia, zachowując tę samą nazwę handlową."
+    }
+  ],
+  "protein": [
+    {
+      "question": "Co tak naprawdę oznacza eksponowane oświadczenie „białko” na przedniej stronie opakowania, jeśli produkt nadal ma dużo kalorii?",
+      "answer": "Oznacza to, że produkt spełnia kryteria rynkowe dla podkreślenia zawartości białka. Nie mówi to o kaloriach: całkowita energia zależy również od tłuszczów, węglowodanów i pozostałej części receptury."
+    },
+    {
+      "question": "Dlaczego białko jest obliczane i deklarowane inaczej w systemach etykietowania poszczególnych krajów?",
+      "answer": "Ponieważ każdy system ustala własne zasady obliczania, zaokrąglania i prezentacji. Ten sam skład może zatem dawać nieco inne wartości w zależności od rynku, na którym jest etykietowany."
+    }
+  ],
+  "saccharin": [
+    {
+      "question": "Jak sacharyna może pojawić się na etykiecie, jeśli wielu ludzi uważa, że jest zakazana?",
+      "answer": "Ponieważ sacharyna nie jest ogólnie zakazana. Pozostaje dopuszczona jako słodzik na różnych rynkach na ustalonych warunkach stosowania i limitów spożycia."
+    },
+    {
+      "question": "Dlaczego EFSA i JECFA obecnie stosują różne dzienne limity dla sacharyny?",
+      "answer": "Ponieważ ich oceny są niezależne i nie zostały zaktualizowane w tym samym czasie lub na podstawie dokładnie tych samych dowodów. EFSA ponownie oceniła sacharynę w 2024 r. i podniosła swój limit, podczas gdy JECFA utrzymuje własny."
+    }
+  ],
+  "salt": [
+    {
+      "question": "Czy należy sumować sól i sód z tej samej etykiety?",
+      "answer": "Nie. Zazwyczaj są to dwa sposoby wyrażenia powiązanych informacji, a nie dwie ilości do zsumowania. Aby przeliczyć sód na sól, należy pomnożyć sód przez 2,5."
+    },
+    {
+      "question": "Dlaczego niektóre etykiety podają „sól”, a inne „sód”, jeśli są one powiązane?",
+      "answer": "Ponieważ każdy system etykietowania decyduje, który z nich pokazać. Sód to minerał; sól jest z niego obliczana, w przybliżeniu jako sód × 2,5."
+    }
+  ],
+  "blood": [
+    {
+      "question": "Co oznaczałoby znalezienie pochodnej krwi na etykiecie i jak należy zidentyfikować jej pochodzenie?",
+      "answer": "Może pojawić się jako osocze, białko osocza lub hemoglobina bez słowa „krew”. Jeśli gatunek zwierzęcia ma znaczenie, etykieta musiałaby go zadeklarować lub producent potwierdzić; BOTIA nie wnioskuje tego z nazwy ogólnej."
+    },
+    {
+      "question": "W jakich produktach pochodna krwi może pojawić się bez nazwy, która by to wskazywała?",
+      "answer": "Może pojawić się jako osocze, białko osocza lub hemoglobina w kiełbasach, pasztetach i przetworzonych produktach mięsnych. Żadna z tych nazw nie zawiera słowa „krew”, chociaż są z niej pochodne."
+    }
+  ],
+  "sodium": [
+    {
+      "question": "Jak miligramy sodu mają się do gramów soli, które faktycznie spożywam?",
+      "answer": "Aby oszacować sól, należy pomnożyć sód przez 2,5. Na przykład 400 mg sodu odpowiada w przybliżeniu 1 g soli."
+    },
+    {
+      "question": "Dlaczego progi wywołujące ostrzeżenie o sodzie różnią się w zależności od kraju?",
+      "answer": "Ponieważ każdy kraj ustala własne progi i system ostrzegania. Ta sama ilość sodu może przekraczać limit na jednym rynku, a na innym być poniżej niego."
+    }
+  ],
+  "soy": [
+    {
+      "question": "Dlaczego olej sojowy może pojawić się w składnikach, ale „soja” nie zawsze pojawia się w deklaracji alergenów?",
+      "answer": "Ponieważ niektóre wysoko rafinowane oleje sojowe mogą być zwolnione ze szczególnej deklaracji alergenu, gdy proces usuwa praktycznie wszystkie białka powodujące reakcję. Widok „oleju sojowego” nie oznacza, że każdy zestaw przepisów traktuje go jak białko sojowe."
+    },
+    {
+      "question": "Dlaczego soję należy wyróżnić na liście składników, podczas gdy niektóre jej pochodne mogą być zwolnione z tego obowiązku?",
+      "answer": "Ponieważ wymóg dotyczy składników mogących dostarczać odpowiednie białka alergenne. Niektóre wysoce rafinowane pochodne mogą być zwolnione, jeśli białka te zostały usunięte do poziomu wymaganego przepisami."
+    }
+  ],
+  "potassium_sorbate": [
+    {
+      "question": "Dlaczego sorbian potasu ma określone przepisami wymagania dotyczące czystości, mimo że jest dopuszczony jako konserwant?",
+      "answer": "Ponieważ dopuszczenie dodatku odpowiada na jedno pytanie, a określenie jego czystości na inne. Przepisy nie mówią tylko, gdzie można stosować E202: ustanawiają również jego wymagany skład i dopuszczalne zanieczyszczenia."
+    },
+    {
+      "question": "Dlaczego produkt chłodzony potrzebuje konserwantu, skoro jest już przechowywany w niskiej temperaturze?",
+      "answer": "Ponieważ chłód spowalnia wzrost pleśni i drożdży, ale go nie zatrzymuje. Konserwant taki jak sorbian potasu zabezpiecza produkt przez cały okres przydatności do spożycia, w tym przez czas, gdy jest otwarty w domu."
+    }
+  ],
+  "sorbitol": [
+    {
+      "question": "Dlaczego produkt zawierający sorbitol może mieć obowiązek ostrzeżenia, że nadmierne spożycie wywołuje efekt przeczyszczający?",
+      "answer": "Ponieważ sorbitol jest słabo wchłaniany i w dużych ilościach przyciąga wodę do jelit. Znajduje się nie tylko w gumach do żucia: jest również stosowany w cukierkach, ciastach, nadzieniach i innych produktach, w których wielu ludzi nie spodziewa się polioli."
+    },
+    {
+      "question": "Powyżej jakiej ilości sorbitolu wymagane jest ostrzeżenie o efekcie przeczyszczającym?",
+      "answer": "W Unii Europejskiej, gdy żywność zawiera więcej niż 10% dodanych polioli. Ostrzeżenie odnosi się do całkowitej ilości polioli, nie tylko sorbitolu, a etykieta nie pokazuje, ile wnosi każdy z nich."
+    }
+  ],
+  "starch": [
+    {
+      "question": "Jeśli produkt jest oznaczony jako „bezglutenowy”, dlaczego skrobia jest wymieniona i skąd pochodzi?",
+      "answer": "Ponieważ skrobia to nie gluten. Może pochodzić z kukurydzy, ziemniaków, tapioki, ryżu lub przetworzonej pszenicy; jeśli źródło nie jest podane, nie można tego wywnioskować wyłącznie ze słowa „skrobia”."
+    },
+    {
+      "question": "Dlaczego skrobia może pojawić się jako dodatkowa informacja żywieniowa, ale nie jest obowiązkowa na każdej etykiecie?",
+      "answer": "Ponieważ skrobia jest częścią węglowodanów, ale nie każdy system wymaga jej oddzielnego podawania. Niektóre etykiety podają ją jako dodatkową informację, podczas gdy inne podają tylko całkowitą ilość węglowodanów."
+    }
+  ],
+  "sucralose": [
+    {
+      "question": "Dlaczego ilość cukru jest podana liczbowo, a ilość sukralozy może nie być podana?",
+      "answer": "Ponieważ cukier jest częścią informacji żywieniowej i podaje się go w gramach. Sukraloza jest stosowana w bardzo małych ilościach i zwykle wystarczy wymienić ją w składnikach, bez podawania, ile miligramów zawiera produkt."
+    },
+    {
+      "question": "Dlaczego sukraloza jest uważana za bezpieczną w dopuszczonych zastosowaniach, a EFSA nie potwierdziła niektórych zastosowań w wysokiej temperaturze?",
+      "answer": "Ponieważ są to różne zastosowania. EFSA uznała obecnie dopuszczone zastosowania za bezpieczne, ale nie potwierdziła rozszerzenia na długotrwałe pieczenie w wysokich temperaturach, gdzie mogą tworzyć się inne związki."
+    }
+  ],
+  "sugar": [
+    {
+      "question": "Jak to możliwe, że cukier pojawia się w składnikach, a w tabeli wartości odżywczych widnieje 0 g cukrów dodanych?",
+      "answer": "Ponieważ lista składników pokazuje obecność, a tabela podaje ilość na porcję. Na rynkach, gdzie podaje się „cukry dodane”, bardzo mała ilość może zostać zaokrąglona do 0 g, mimo że cukier pozostaje w składnikach."
+    }
+  ],
+  "sunset_yellow": [
+    {
+      "question": "Dlaczego żywność zawierająca E110 może mieć obowiązek ostrzegać o możliwym wpływie na aktywność i uwagę dzieci?",
+      "answer": "Ponieważ przepisy europejskie wymagają takiego ostrzeżenia dla niektórych produktów zawierających E110. Jest to wymóg etykietowania oparty na dostępnych dowodach, a nie przewidywanie, że dotknie to każde dziecko."
+    },
+    {
+      "question": "Dlaczego produkt o wyglądzie pomarańczowym lub cytrynowym może zawierać żółty barwnik?",
+      "answer": "Ponieważ owoce po przetworzeniu wnoszą niewiele koloru, a to, co pozostaje, ulega degradacji pod wpływem światła i czasu. Barwnik zapewnia jednolity odcień, który się utrzymuje, ale nie wskazuje, ile owoców zawiera produkt."
+    }
+  ],
+  "sweetener": [
+    {
+      "question": "Jeśli produkt jest słodki, dlaczego etykieta może nie mówić wyraźnie, jakie słodziki znajdują się w mieszance?",
+      "answer": "Ponieważ przód opakowania może używać handlowej lub ogólnej nazwy mieszanki. Lista składników musi ujawniać słodziki, które zgodnie z przepisami należy wskazać, ale niekoniecznie ich proporcje."
+    },
+    {
+      "question": "Czy „zastrzeżona mieszanka słodzików” może uniemożliwić poznanie, jakie konkretne słodziki zawiera produkt?",
+      "answer": "Może ukryć formułę i proporcje mieszanki, ale nie sprawia, że wszystko, co prawnie wymaga deklaracji, staje się niewidoczne. Jeśli etykieta nie wskazuje konkretnego składnika, BOTIA również nie może go wywnioskować."
+    }
+  ],
+  "tartrazine": [
+    {
+      "question": "Dlaczego tartrazyna jest dozwolona z ostrzeżeniami w Europie, podczas gdy Kalifornia zamierza wykluczyć ją z niektórych produktów szkolnych?",
+      "answer": "Ponieważ każda jurysdykcja może podjąć inną decyzję regulacyjną dotyczącą tej samej substancji. W Europie można jej używać z warunkami i ostrzeżeniami; Kalifornia zdecydowała o wykluczeniu jej z niektórych produktów spożywczych podawanych w szkołach publicznych."
+    },
+    {
+      "question": "Dlaczego tartrazyna nadal jest jednym z barwników najczęściej kojarzonych z reakcjami?",
+      "answer": "Ponieważ badano ją przez dziesięciolecia i była szeroko stosowana, więc zgłoszono więcej przypadków niż w przypadku innych barwników. Zgłaszane reakcje są rzadkie, a w Europie żywność ją zawierająca musi mieć ostrzeżenie dotyczące aktywności i uwagi dzieci."
+    }
+  ],
+  "texture": [
+    {
+      "question": "Który konkretny składnik nadaje temu produktowi teksturę: guma, skrobia, karagen, żelatyna czy coś innego?",
+      "answer": "Należy sprawdzić, które modyfikatory tekstury rzeczywiście występują na liście. Jeśli jest ich kilka, na przykład guma, skrobia i karagen, etykieta nie może powiedzieć, ile każdy z nich wnosi do końcowego efektu."
+    }
+  ],
+  "thaumatin": [
+    {
+      "question": "Dlaczego taumatyna jest dopuszczona tylko do niektórych zastosowań, mimo że JECFA nie ustala liczbowej dziennej dawki?",
+      "answer": "Ponieważ ADI „nieokreślone” nie oznacza nieograniczonego stosowania w dowolnej żywności. Przepisy nadal określają, w jakich produktach taumatyna może być stosowana i do jakich funkcji."
+    },
+    {
+      "question": "Jak białko może smakować słodko, jeśli białka nie są słodkie?",
+      "answer": "Ponieważ słodkość zależy od kształtu cząsteczki i tego, jak pasuje do receptorów na języku, a nie od tego, do której rodziny chemicznej należy. Taumatyna pasuje do tych receptorów i dlatego jest postrzegana jako bardzo słodka."
+    }
+  ],
+  "total_fat": [
+    {
+      "question": "Dlaczego osobno wymienione tłuszcze nie zawsze sumują się do tłuszczu ogółem na etykiecie?",
+      "answer": "Ponieważ nie każdy rodzaj tłuszczu jest zawsze deklarowany osobno, a każda wartość może być również zaokrąglona. Tłuszcze nasycone, trans, jednonienasycone i wielonienasycone nie muszą dokładnie odtwarzać sumy w tabeli."
+    },
+    {
+      "question": "Dlaczego ilość tłuszczu ogółem może wywołać ostrzeżenie na przedniej stronie opakowania w niektórych krajach, ale w innych pojawia się tylko jako informacja o wartości odżywczej?",
+      "answer": "Ponieważ każdy kraj decyduje, jak przekształcić informacje o wartości odżywczej w ostrzeżenia na przedniej stronie opakowania. Ta sama ilość tłuszczu może przekroczyć próg w jednym systemie i po prostu pojawić się w tabeli w innym."
+    },
+    {
+      "question": "Jak produkt może deklarować 0 g tłuszczu, jeśli zawiera niewielkie ilości składników tłuszczowych?",
+      "answer": "Ponieważ \"0 g\" może być wartością zaokrągloną, a nie całkowitym brakiem tłuszczu. Jeśli ilość na porcję spada poniżej progu deklaracji obowiązującego na danym rynku, tabela może pokazać zero, mimo że niewielka ilość jest obecna."
+    }
+  ],
+  "total_sugars": [
+    {
+      "question": "Czy cukry ogółem i cukry dodane należy sumować, czy cukry dodane są już wliczone w cukry ogółem?",
+      "answer": "Nie. Cukry dodane są już częścią cukrów ogółem. \"Cukry ogółem\" obejmują zarówno cukry naturalnie występujące w żywności, jak i te dodane podczas produkcji."
+    },
+    {
+      "question": "Dlaczego ta sama zawartość cukru może otrzymać różne ostrzeżenie na przedniej stronie opakowania w zależności od kraju?",
+      "answer": "Ponieważ systemy ostrzegawcze niekoniecznie stosują te same limity lub metody obliczeń. Ta sama ilość cukru może wywołać ostrzeżenie w jednym kraju, ale nie w innym."
+    }
+  ],
+  "tragacanth": [
+    {
+      "question": "Co robi guma tragakantowa i dlaczego jest dziś tak rzadko stosowana?",
+      "answer": "Zagęszcza, stabilizuje i pomaga utrzymać jednolitą konsystencję mieszaniny. Jest stosowana rzadziej niż inne gumy, ponieważ jest drogim surowcem, więc zwykle rezerwuje się ją do określonych produktów."
+    },
+    {
+      "question": "Dlaczego tragakant nadal pojawia się w dekorowaniu ciast i wyrobach cukierniczych?",
+      "answer": "Ponieważ tworzy pasty, które dobrze się formują i twardnieją, zachowując kształt. Dla figurek i kwiatów cukrowych nie znaleziono zamiennika, który działałby dokładnie tak samo, więc pozostaje w użyciu mimo swojej ceny."
+    }
+  ],
+  "fast_green": [
+    {
+      "question": "Dlaczego Fast Green ma ocenę bezpieczeństwa JECFA, ale nie ma zezwolenia jako barwnik spożywczy w Unii Europejskiej?",
+      "answer": "Ponieważ międzynarodowa ocena bezpieczeństwa i europejskie zezwolenie prawne to nie to samo. JECFA oceniła Fast Green, ale Unia Europejska nie umieszcza go wśród swoich dozwolonych barwników spożywczych."
+    },
+    {
+      "question": "Dlaczego zielony produkt może nie zawierać nic zielonego w swoim składzie?",
+      "answer": "Ponieważ kolor może pochodzić z dodanego barwnika, a nie ze składnika, który produkt przywołuje. Etykieta mówi, jaki barwnik zawiera, ale nie ile zawiera zielonego surowca, jeśli w ogóle."
+    }
+  ],
+  "vinegar": [
+    {
+      "question": "Co właściwie liczy się jako \"ocet\" w recepturze i czy wszystkie użyte składniki muszą być zadeklarowane?",
+      "answer": "\"Ocet\" to produkt otrzymywany przez przekształcenie etanolu w kwas octowy. Etykieta może po prostu deklarować \"ocet\", nie podając, z jakiego surowca pochodzi ani ile alkoholu resztkowego pozostaje, więc tych szczegółów nie zawsze można odtworzyć z listy."
+    },
+    {
+      "question": "Dlaczego produkt może zawierać ocet, ale nie smakować jak ocet?",
+      "answer": "Ponieważ w pieczywie, sosach i produktach przetworzonych jest używany w małych ilościach jako konserwant, a nie dla smaku. Przy tym niskim stężeniu kwas spowalnia pleśnie i bakterie, nie będąc wyczuwalnym w smaku."
+    }
+  ],
+  "woman_cards": [
+    {
+      "question": "Jaki konkretny dowód powoduje pojawienie się informacji dla kobiet w BOTIA: składnik, zanieczyszczenie, opakowanie czy regulacja?",
+      "answer": "Może być wywołany dowodem związanym z zadeklarowanym składnikiem lub istotnymi informacjami kontekstowymi dotyczącymi zanieczyszczeń, opakowania lub regulacji. BOTIA musi jasno wskazać, co pokazuje, i nie może przekształcać ogólnego kontekstu w wykazaną obecność."
+    },
+    {
+      "question": "Czy dowód stojący za informacjami dla kobiet jest związany z konkretnym produktem, czy tylko ze składnikiem ogólnie?",
+      "answer": "To zależy od dowodu. Jeśli pochodzi on z wykrytego składnika, jest związany z tym składnikiem; jeśli pochodzi z opakowania, zanieczyszczeń lub regulacji, jest związany z produktem tylko wtedy, gdy istnieje weryfikowalne powiązanie z tym produktem, partią, rynkiem, materiałem lub producentem. W przeciwnym razie jest pokazywany jako ogólny kontekst."
+    }
+  ],
+  "woman_safefood": [
+    {
+      "question": "Co powoduje, że BOTIA oznacza problem jako Kobieta SafeFood i jakie publiczne dowody to potwierdzają?",
+      "answer": "BOTIA oznacza to, gdy etykieta deklaruje składnik z udokumentowanymi dowodami szczególnie istotnymi dla kobiet, ciąży, rozwoju płodu lub reprodukcji. BOTIA musi umożliwić dotarcie do publicznego źródła potwierdzającego to powiązanie."
+    },
+    {
+      "question": "Czy informacje Kobieta SafeFood pochodzą z regulacji, badań, wycofań czy dowodów z opakowania?",
+      "answer": "To zależy od tego, co jest pokazywane. Może pochodzić z badań lub regulacji dotyczących składnika, a gdy istnieje weryfikowalne powiązanie z konkretnym produktem, również z wycofań lub dowodów z opakowania; BOTIA musi podać, jaki to rodzaj dowodu."
+    }
+  ],
+  "xylitol": [
+    {
+      "question": "Jak mogę rozpoznać ksylitol, jeśli etykieta nazywa go cukrem brzozowym, cukrem drzewnym lub E967?",
+      "answer": "E967 i ksylitol oznaczają ten sam poliol. \"Cukier brzozowy\" lub \"cukier drzewny\" to nazwy handlowe lub zwyczajowe, które mogą być używane do jego prezentacji, ale nie dowodzą, że ksylitol faktycznie pochodzi z brzozy."
+    },
+    {
+      "question": "Jak to możliwe, że ksylitol ma zatwierdzone oświadczenie dotyczące zębów i jednocześnie wymaga ostrzeżenia o działaniu przeczyszczającym?",
+      "answer": "Ponieważ to różne efekty. W określonych warunkach ksylitol może pomóc w redukcji płytki nazębnej, podczas gdy duża ilość docierająca do jelit może przyciągać wodę i mieć działanie przeczyszczające."
+    },
+    {
+      "question": "Czy ksylitol może występować w produktach, w których konsumenci nie spodziewają się słodzika?",
+      "answer": "Tak. Ksylitol nie tylko słodzi: zapewnia również objętość i może działać jako humektant. Dlatego może pojawiać się w produktach, w których jego rola nie polega wyłącznie na dodawaniu słodyczy."
+    }
+  ],
+  "cyclamates": [
+    {
+      "question": "Dlaczego cyklaminiany są dozwolone w wielu krajach, ale zakazane w żywności w Stanach Zjednoczonych?",
+      "answer": "Ponieważ organy nie podjęły tej samej decyzji regulacyjnej. Codex i kilka krajów zezwalają na cyklaminiany w określonych warunkach stosowania, podczas gdy Stany Zjednoczone nie zezwalają na nie w żywności."
+    },
+    {
+      "question": "Dlaczego mogę znaleźć cyklaminiany w Europie, ale nie w identycznym pod innymi względami produkcie amerykańskim?",
+      "answer": "Ponieważ decyzje regulacyjne się różnią. Unia Europejska zezwala na cyklaminiany do określonych zastosowań i w określonych ilościach; Stany Zjednoczone wycofały zezwolenie i nie dopuszczają ich w żywności."
+    }
+  ],
+  "e472": [
+    {
+      "question": "Dlaczego widok \"E472\" na etykiecie nie mówi dokładnie, który to dodatek ani skąd pochodzą jego kwasy tłuszczowe?",
+      "answer": "Ponieważ E472 to rodzina, a nie pojedyncza substancja: litery a, b, c, d, e i f oznaczają różne związki. Ponadto, podobnie jak w przypadku E471, kwasy tłuszczowe mogą być pochodzenia roślinnego lub zwierzęcego, a etykieta może nie mówić którego."
+    },
+    {
+      "question": "Dlaczego istnieje tak wiele różnych E472 —a, b, c, d, e, f— i co się między nimi zmienia?",
+      "answer": "Ponieważ każda litera oznacza inny związek, w zależności od kwasu przyłączonego do mono- i diglicerydów: octowego, mlekowego, cytrynowego, winowego lub diacetylowinowego. Ich funkcja w żywności i ich ocena różnią się, więc nie można traktować ich jako tego samego dodatku."
+    }
+  ],
+  "saturated_fat": [
+    {
+      "question": "Jeśli tłuszcz ogółem wynosi 14 g, a tłuszcz nasycony 4 g, co składa się na resztę tłuszczu?",
+      "answer": "Nie można tego stwierdzić na podstawie samych tych dwóch liczb. Reszta może obejmować tłuszcze jednonienasycone, wielonienasycone i trans oraz różnice wynikające z zaokrągleń; jeśli etykieta ich nie rozdziela, nie można ich wywnioskować."
+    },
+    {
+      "question": "Dlaczego ta sama ilość tłuszczu nasyconego może wywołać ostrzeżenie na przedniej części opakowania w jednym kraju, ale nie w innym?",
+      "answer": "Ponieważ każdy system oznakowania na przedniej części opakowania stosuje własne limity i zasady obliczeń. Ta sama ilość może przekroczyć próg w jednym kraju, ale nie w innym."
+    }
+  ],
+  "polyglycitol_syrup": [
+    {
+      "question": "Dlaczego syrop poliglicytolowy może wymagać ostrzeżenia o działaniu przeczyszczającym?",
+      "answer": "Ponieważ nie jest to pojedynczy poliol: to mieszanina zawierająca głównie maltitol i sorbitol, a także inne uwodornione węglowodany. Część, która nie zostaje wchłonięta, może przyciągać wodę do jelita i powodować działanie przeczyszczające."
+    },
+    {
+      "question": "Jaka jest różnica między syropem poliglicytolowym a syropem maltitolowym?",
+      "answer": "Syrop maltitolowy to głównie maltitol; syrop poliglicytolowy to mieszanina zawierająca znaczną ilość sorbitolu i innych uwodornionych węglowodanów. To różne dodatki, o różnych kodach, mimo że oba są syropami poliolowymi."
+    }
+  ],
+  "lysozyme": [
+    {
+      "question": "Jeśli ser zawiera lizozym, czy jest on w całym serze, czy tylko w skórce, i jaki ma związek z jajkiem?",
+      "answer": "Lista składników nie mówi, czy lizozym jest rozmieszczony w całym serze, czy użyty tylko w części procesu lub na powierzchni. W UE wiemy natomiast, jakie jest jego pochodzenie: E1105 otrzymuje się z białka jaja kurzego, więc jajko ma znaczenie jako alergen."
+    },
+    {
+      "question": "Dlaczego lizozym musi być powiązany z jajkiem w oznakowaniu alergenów?",
+      "answer": "Ponieważ E1105, zgodnie z definicją w Unii Europejskiej, otrzymuje się z białka jaja kurzego. Jego rola jako konserwantu nie usuwa tego pochodzenia ani informacji istotnej dla osoby z alergią na jajko."
+    }
+  ],
+  "parabens": [
+    {
+      "question": "Dlaczego marka zastępuje parabeny innym konserwantem i co właściwie zmienia się w formule?",
+      "answer": "Zmienia się konserwant hamujący pleśnie i drożdże, ale lista nie wyjaśnia, dlaczego marka go zastąpiła. Nie znając alternatywy i jej ilości, BOTIA nie może też stwierdzić, że nowa formuła jest bezpieczniejsza."
+    },
+    {
+      "question": "Dlaczego parabeny w żywności są oceniane jako grupa, ale nie wszystkie traktowane dokładnie tak samo?",
+      "answer": "Ponieważ przynależność do tej samej rodziny chemicznej nie oznacza identycznego działania. Metyloparaben i etyloparaben zachowują limit grupowy, natomiast propyloparaben został wykluczony po zaobserwowaniu odmiennych efektów u zwierząt."
+    }
+  ],
+  "natural_flavourings": [
+    {
+      "question": "Co tak naprawdę oznacza „naturalne aromaty” i dlaczego etykieta nie podaje każdej substancji?",
+      "answer": "To prawna kategoria aromatów otrzymywanych z naturalnych surowców przy użyciu dozwolonych procesów, a nie lista ich składników. Ogólne oświadczenie nie ujawnia każdej substancji ani nie gwarantuje, że aromat pochodzi z żywności, której smak przypomina."
+    },
+    {
+      "question": "Czy \"naturalne aromaty\" mogą ukrywać składnik istotny dla alergii?",
+      "answer": "\"Naturalne aromaty\" mogą grupować aromaty z różnych surowców bez wymieniania każdego składnika. W przypadku konkretnej alergii należy sprawdzić deklarację alergenów i wyjaśnić wszelkie niezidentyfikowane kwestie z producentem; \"naturalny\" nie gwarantuje braku alergenów."
+    }
+  ],
+  "sorbitan_esters": [
+    {
+      "question": "Dlaczego JECFA zastąpiła stały limit dla estrów sorbitanu limitem tymczasowym?",
+      "answer": "Ponieważ kwestia genotoksyczności monostearynianu sorbitanu pozostaje nierozstrzygnięta. Ta sama wartość grupowa, 0-25 mg/kg masy ciała, została tymczasowo zachowana w oczekiwaniu na dane; nie dowodzi to szkodliwości w produkcie."
+    },
+    {
+      "question": "Dlaczego estry sorbitanu występują głównie w lodach i polewach czekoladowych?",
+      "answer": "Ponieważ pomagają utrzymać tłuszcz i wodę w mieszaninie oraz kontrolować krystalizację tłuszczu. W lodach wpływa to na teksturę podczas topnienia, a w polewie pomaga zachować połysk i zapobiega bieleniu."
+    }
+  ],
+  "yeast_extract": [
+    {
+      "question": "Dlaczego produkt może twierdzić \"bez dodanego MSG\" i zawierać ekstrakt drożdżowy z wolnym glutaminianem?",
+      "answer": "Ponieważ brak dodania E621 osobno nie zapobiega dostarczaniu przez ekstrakt drożdżowy własnego wolnego glutaminianu. To sformułowanie nie oznacza \"wolny od glutaminianu\" ani nie podaje, ile glutaminianu dostarcza ekstrakt."
+    },
+    {
+      "question": "Jaka jest różnica między bezpośrednio dodanym \"MSG\" a wolnym glutaminianem z ekstraktu drożdżowego?",
+      "answer": "Uwolniony glutaminian jest chemicznie taki sam; zmienia się sposób, w jaki jest włączany do żywności. MSG jest dodawany jako konkretny składnik, podczas gdy ekstrakt drożdżowy dostarcza mieszaninę, która może zawierać glutaminian i nukleotydy."
+    }
+  ],
+  "phthalates": [
+    {
+      "question": "Jak ftalany mogą znajdować się w żywności, jeśli pochodzą z opakowań lub przetwarzania i nie są wymienione jako składniki?",
+      "answer": "Ponieważ mogą migrować z materiałów do kontaktu z żywnością, nie będąc dodawanymi jako składniki. Wyjaśnia to możliwą drogę, ale nie dowodzi, że konkretny produkt zawiera ftalany."
+    },
+    {
+      "question": "Jakie powiązanie z produktem, opakowaniem lub partią jest potrzebne, aby ustalić narażenie na ftalany?",
+      "answer": "Potrzebne są dowody mające zastosowanie do produktu i jego zakresu: analiza lub zapis powiązany z produktem, GTIN, partią, rynkiem, materiałem lub producentem, w zależności od przypadku. Bez tego powiązania obecność pozostaje: Nie zweryfikowano w konsultowanych źródłach."
+    }
+  ],
+  "monounsaturated_fat": [
+    {
+      "question": "Jeśli tłuszcz ogółem jest większy niż suma tłuszczów nasyconych i trans, jaki rodzaj tłuszczu stanowi resztę?",
+      "answer": "Reszta może obejmować tłuszcze jednonienasycone i wielonienasycone, a także różnice zaokrągleń. Bez zadeklarowanego podziału BOTIA nie może przypisać całej różnicy do jednego konkretnego rodzaju."
+    },
+    {
+      "question": "Dlaczego tłuszcz jednonienasycony może pojawiać się dobrowolnie w tabeli wartości odżywczych, ale nie zawsze jest obowiązkowy?",
+      "answer": "Ponieważ każdy rynek decyduje, który podział jest obowiązkowy, a które dodatkowe informacje mogą być deklarowane. Brak osobnego wyszczególnienia nie oznacza, że żywność nie zawiera tłuszczu jednonienasyconego."
+    }
+  ],
+  "potassium_nitrate": [
+    {
+      "question": "Dlaczego azotan potasu musi być uwzględniany w całkowitym narażeniu na azotany?",
+      "answer": "Azotan potasu przyczynia się do całkowitego narażenia wraz z innymi źródłami azotanów, których pojedyncza etykieta nie może zsumować. Nie czyni to jednak wszystkich dowodów równoważnymi: obserwowany związek z rakiem piersi dotyczy azotanu potasu dodawanego jako konserwant, a nie naturalnych azotanów w warzywach."
+    },
+    {
+      "question": "Dlaczego rzemieślnicze wędzone mięso może zawierać azotan potasu, tak samo jak produkt przemysłowy?",
+      "answer": "Ponieważ azotan był stosowany w peklowaniu od stuleci, na długo przed produkcją przemysłową. Pełni tę samą funkcję w obu przypadkach: konserwację i zapobieganie botulizmowi. To, że produkt jest rzemieślniczy, nie wskazuje, czy zawiera azotan ani w jakiej ilości."
+    }
+  ],
+  "alitame": [
+    {
+      "question": "Dlaczego alitam jest dozwolony w niektórych krajach, ale nieautoryzowany w Unii Europejskiej?",
+      "answer": "Każdy rynek sam decyduje, które słodziki autoryzować: Australia/Nowa Zelandia, Chiny i Meksyk pozwalają na某些 zastosowania alitamu, podczas gdy UE go nie autoryzuje. Międzynarodowa ocena lub kod INS nie zastępują lokalnej autoryzacji."
+    },
+    {
+      "question": "Dlaczego niektóre słodziki oceniane międzynarodowo nigdy nie trafiają na rynek europejski?",
+      "answer": "Ponieważ międzynarodowa ocena nie jest autoryzacją. W Unii Europejskiej producent musi złożyć wniosek i wymagana jest odrębna ocena; jeśli wniosek nie zostanie złożony lub nie zostanie zatwierdzony, słodzik nie wchodzi na rynek, nawet jeśli jest dozwolony gdzie indziej."
+    }
+  ],
+  "added_sugars": [
+    {
+      "question": "Jak etykieta może podawać 0 g dodanych cukrów, jeśli w składnikach występuje cukier lub syrop glukozowy?",
+      "answer": "Na rynkach z wierszem „Dodane cukry” 0 g może zależeć od zaokrąglenia i podstawy deklaracji. W UE „bez dodanych cukrów” to inne oświadczenie i nie można go użyć, jeśli dodano cukier lub syrop glukozowy."
+    },
+    {
+      "question": "Dlaczego niektóre kraje wymagają deklarowania dodanych cukrów, a inne dodatkowo ostrzeżenia z przodu opakowania?",
+      "answer": "Ponieważ tabela podaje ilość, a ostrzeżenie z przodu opakowania wskazuje, że przekroczono lokalny próg. Brazylia wymaga obu dla dodanych cukrów w odpowiednich produktach i warunkach; te obowiązki nie mają automatycznego zastosowania w innych krajach."
+    },
+    {
+      "question": "Jak produkt może twierdzić „bez dodanych cukrów”, jeśli używa koncentratu owocowego do słodzenia?",
+      "answer": "Jeśli koncentrat jest używany do słodzenia, jego owocowe pochodzenie nie usuwa tej funkcji. W UE oświadczenie „bez dodanych cukrów” również nie pozwala na dodawanie żywności ze względu na jej właściwości słodzące; sama lista może nie ujawniać, dlaczego została użyta."
+    }
+  ],
+  "caramel_colours": [
+    {
+      "question": "Dlaczego „barwnik karmelowy” jest wyróżniony na etykiecie i jaka jest różnica między typami E150?",
+      "answer": "Jest deklarowany, ponieważ jest używany jako brązowy barwnik; E150a, b, c i d są wytwarzane różnymi procesami i z różnymi reagentami. Jeśli podano tylko „barwnik karmelowy”, nie identyfikuje to klasy ani nie wyjaśnia, dlaczego marka zdecydowała się go wyróżnić."
+    },
+    {
+      "question": "Dlaczego cztery barwniki karmelowe mają ten sam numer E150, ale nie są oceniane jako ta sama substancja?",
+      "answer": "Ponieważ są to cztery klasy wytwarzane w różny sposób, o odrębnych składach i ocenach. Litery przy E150 mają znaczenie: klas nie można traktować jako jednej substancji ani przypisywać im tego samego limitu."
+    }
+  ],
+  "celluloses": [
+    {
+      "question": "Dlaczego celuloza znajduje się w żywności takiej jak ser lub inne przetworzone produkty i co robi?",
+      "answer": "Jest używana do zagęszczania, stabilizacji lub zapobiegania zbijaniu się składników; w serze tartym pomaga utrzymać kawałki osobno. To błonnik roślinny, którego organizm nie trawi, a jego modyfikowane pochodne mogą pełnić różne funkcje."
+    },
+    {
+      "question": "Jak to możliwe, że w serze tartym jest celuloza i co tam robi?",
+      "answer": "Aby zapobiec zbijaniu się kawałków w opakowaniu. To błonnik roślinny, nie jest trawiony i jest dodawany na powierzchnię sera tartego jako środek przeciwzbrylający, a nie jako część samego sera."
+    }
+  ],
+  "methylmercury": [
+    {
+      "question": "Jak obecność metylortęci w rybach może budzić obawy, jeśli nie występuje ona na liście składników?",
+      "answer": "Ponieważ jest to zanieczyszczenie, które kumuluje się w łańcuchu pokarmowym w środowisku wodnym, a nie dodany składnik. Duże, długo żyjące ryby mogą gromadzić jej więcej, ale etykieta nie mierzy zawartości metylortęci w tej konkretnej rybie."
+    },
+    {
+      "question": "Dlaczego metylortęć budzi szczególne obawy podczas rozwoju układu nerwowego?",
+      "answer": "Ponieważ dociera do układu nerwowego, a rozwijający się mózg jest szczególnie wrażliwy. Przenika także przez łożysko, więc narażenie matki może dotrzeć do płodu; etykieta nie jest w stanie tego obliczyć."
+    }
+  ],
+  "traceability": [
+    {
+      "question": "Skąd pochodzi ten składnik i czy można go prześledzić do producenta, partii lub certyfikatu?",
+      "answer": "Można to potwierdzić tylko wtedy, gdy źródło określa pochodzenie i wiąże je z odpowiednim producentem, partią lub certyfikatem. Bez tej dokumentacji nazwa składnika nie wystarcza: Nie zweryfikowano w sprawdzonych źródłach."
+    },
+    {
+      "question": "Czy pochodzenie tego składnika można zweryfikować według produktu, producenta, rynku lub partii?",
+      "answer": "Tak, gdy dokumentacja identyfikuje składnik i dopasowuje produkt, producenta, rynek lub partię, których dotyczy. Dowody od innej marki, zakładu lub rynku nie rozciągają się na niego automatycznie: bez dopasowania, Nie zweryfikowano w sprawdzonych źródłach."
+    }
+  ],
+  "milk_derivatives": [
+    {
+      "question": "Jak to możliwe, że produkt jest oznaczony jako \"bez mleka\", a zawiera pochodne mleka?",
+      "answer": "Dozwolone znaczenie określenia \"bez mleka\" zależy od rynku i nie należy go automatycznie interpretować jako braku wszelkich pochodnych mleka. Jeśli lista deklaruje kazeinę, kazeiniany lub białka serwatkowe, pozostają one pochodnymi mleka, nawet jeśli opakowanie używa tego sformułowania."
+    },
+    {
+      "question": "Dlaczego niektóre pochodne mleka muszą być wyraźnie oznaczone, nawet jeśli ich nazwy nie zawierają słowa \"mleko\"?",
+      "answer": "Ponieważ nazwy takie jak kazeina, kazeinian lub serwatka mogą nie brzmieć jak mleko, ale są białkami mleka istotnymi dla alergii. \"Bez laktozy\" nie oznacza również, że te białka zniknęły."
+    }
+  ],
+  "polyglycerol_esters": [
+    {
+      "question": "Jeśli estry poliglicerolu są używane podczas produkcji, czy zawsze muszą pojawić się na etykiecie?",
+      "answer": "Gdy działają jako dodatki w finalnej żywności, muszą być zadeklarowane zgodnie z przepisami rynku; niektóre zastosowania jako środki pomocnicze w przetwórstwie lub w wyniku przeniesienia mogą mieć wyjątki. Jeśli nie są wymienione, sama etykieta nie może powiedzieć, czy użyto ich podczas produkcji."
+    },
+    {
+      "question": "Dlaczego te emulgatory mają dopuszczalne dzienne spożycie, jeśli są zatwierdzone do stosowania w żywności?",
+      "answer": "Ponieważ zatwierdzenie nie pozwala na spożycie dowolnej ilości: limit dotyczy regularnego narażenia. Ponadto E475 i E476 to różne dodatki o odrębnych limitach; wyniki przy wysokich dawkach u zwierząt nie dowodzą szkodliwości u konkretnego konsumenta."
+    }
+  ],
+  "sucrose_esters": [
+    {
+      "question": "Dlaczego JECFA zażądała lepszych danych o narażeniu, gdy szacunek znacznie przekroczył dopuszczalne dzienne spożycie?",
+      "answer": "Ponieważ szacunek był konserwatywny i wymagał dopracowania: obliczone wysokie narażenie u dzieci osiągnęło 113 mg/kg na dzień wobec limitu grupowego 30. Ten scenariusz nie dowodzi, że każdy produkt lub konkretna osoba przekracza limit."
+    }
+  ],
+  "polyunsaturated_fat": [
+    {
+      "question": "Jeśli tłuszcz ogółem nie zgadza się z tłuszczem nasyconym i tłuszczami trans, czy mogę założyć, że reszta to tłuszcze mono-/polinienasycone?",
+      "answer": "Różnica może obejmować tłuszcze mononienasycone i polinienasycone, a także zaokrąglenia. Bez zadeklarowanego podziału nie można wiarygodnie przypisać całej różnicy tym tłuszczom."
+    },
+    {
+      "question": "Dlaczego tłuszcz wielonienasycony może być deklarowany na etykiecie, mimo że nie jest obowiązkowy w każdej tabeli wartości odżywczej?",
+      "answer": "Ponieważ przepisy każdego rynku rozróżniają obowiązkowe minimum od dodatkowych informacji, które mogą być deklarowane. Jego brak nie oznacza zera, a wartość całkowita nie pozwala też oddzielić omega-3 od omega-6."
+    }
+  ],
+  "polysorbates": [
+    {
+      "question": "Jak mogę stwierdzić, czy polisorbat na etykiecie pochodzi z surowców zwierzęcych czy roślinnych?",
+      "answer": "Producent może potwierdzić surowiec poprzez dokumentację dotyczącą produktu. Nazwa lub kod polisorbatu identyfikuje dodatek, ale sam nie ujawnia jego pochodzenia zwierzęcego lub roślinnego."
+    },
+    {
+      "question": "Dlaczego JECFA prosi o więcej informacji na temat zanieczyszczeń produkcyjnych w polisorbatach, jeśli są już autoryzowane?",
+      "answer": "Ponieważ ocena zanieczyszczeń procesowych różni się od oceny samego dodatku. Prośba o lepsze dane nie czyni autoryzacji gwarancją dla dowolnego składu ani nie wykazuje zanieczyszczeń w tym konkretnym produkcie."
+    }
+  ],
+  "sulphites": [
+    {
+      "question": "Dlaczego jedna butelka może mieć napis \"bez siarczynów\", a inna etykieta tego samego wina deklaruje, że je zawiera?",
+      "answer": "\"Zawiera siarczyny\" informuje o ich obecności powyżej obowiązującego progu, a nie o tym, ile ich dodano lub jakie jest ich pochodzenie. Jeśli inna etykieta tego samego wina mówi \"bez siarczynów\", zakres obu deklaracji należy wyjaśnić z producentem, zanim uzna się sprzeczność za rozwiązaną."
+    },
+    {
+      "question": "Dlaczego siarczyny muszą być deklarowane jako alergen powyżej pewnej ilości i dlaczego mają również ograniczone zastosowania?",
+      "answer": "Ponieważ mogą powodować szybkie reakcje oddechowe u osób wrażliwych, dlatego w UE muszą być deklarowane powyżej 10 mg/kg lub 10 mg/L. Dozwolone zastosowania i ilości to odrębny obowiązek; jego spełnienie nie usuwa potrzeby informowania."
+    },
+    {
+      "question": "Czy \"Zawiera siarczyny\" mówi, czy zostały dodane, czy powstały naturalnie?",
+      "answer": "Nie: to sformułowanie informuje o ich obecności powyżej obowiązującego progu, a nie o tym, jak trafiły do wina. Nie podaje też ich dokładnego stężenia."
+    }
+  ],
+  "brominated_vegetable_oil": [
+    {
+      "question": "Co robi bromowany olej roślinny w napoju gazowanym?",
+      "answer": "Był używany do utrzymania olejów zapewniających cytrusowy smak w stanie rozproszenia i stabilności. Jego rolą było zapobieganie ich rozdzielaniu się w napoju, a nie dostarczanie wartości odżywczej."
+    },
+    {
+      "question": "Dlaczego Stany Zjednoczone wycofały autoryzację bromowanego oleju roślinnego?",
+      "answer": "Wycofanie wiąże się z nowymi dowodami bezpieczeństwa, w tym gromadzeniem się bromu w tkankach i wpływem na tarczycę u zwierząt przy wysokim narażeniu. Wyjaśnia to środek zastosowany w USA, ale nie pozwala obliczyć wpływu na człowieka na podstawie etykiety."
+    }
+  ],
+  "dehydroacetic_acid": [
+    {
+      "question": "Czy posiadanie numeru INS oznacza, że substancja jest autoryzowana do stosowania w żywności?",
+      "answer": "Nie: INS identyfikuje substancję; nie przyznaje uniwersalnej autoryzacji. Kwas dehydrooctowy i jego sól mają kody INS, ale Codex nie ma dla nich przepisów żywnościowych, a lokalne pozwolenia mają własne zakresy."
+    },
+    {
+      "question": "Dlaczego konserwant może być dozwolony w kosmetykach, ale nie w żywności?",
+      "answer": "Ponieważ są to różne oceny: stosowanie substancji na skórę nie jest tym samym co codzienne jej spożywanie. Każde zastosowanie ma własne przepisy, a autoryzacja w jednym nie oznacza autoryzacji w drugim."
+    }
+  ],
+  "flavourings": [
+    {
+      "question": "Jeśli na etykiecie jest tylko napis „aromaty”, jak mogę stwierdzić, czy aromat jest pochodzenia zwierzęcego?",
+      "answer": "Pochodzenie można potwierdzić na podstawie informacji od producenta dotyczących danego produktu. „Aromaty” mogą obejmować kilka substancji bez wskazania ich surowców, więc sam ten termin nie mówi, czy są pochodzenia zwierzęcego."
+    },
+    {
+      "question": "Czy produkt może wyglądać na wegański, a mimo to zawierać aromat o nieokreślonym pochodzeniu zwierzęcym?",
+      "answer": "Tak, jego wygląd lub nazwa marketingowa nie rozstrzygają o pochodzeniu ogólnego aromatu. Pozostaje niepewność co do identyfikowalności; nie dowodzi to jednak, że aromat jest pochodzenia zwierzęcego."
+    }
+  ],
+  "azodicarbonamide": [
+    {
+      "question": "Dlaczego azodikarbonamid może być stosowany w Stanach Zjednoczonych, ale nie jest dopuszczony jako dodatek do żywności w Unii Europejskiej?",
+      "answer": "Stany Zjednoczone pozwalają na określone zastosowania azodikarbonamidu, podczas gdy UE nie dopuszcza go do żywności: nie ma jednego ogólnoświatowego zezwolenia. Rozkłada się podczas pieczenia, a jeden z jego produktów, semicarbazyd, jest badany."
+    },
+    {
+      "question": "Dlaczego azodikarbonamid nazywano „dodatkiem do maty do jogi”?",
+      "answer": "Ponieważ ta sama substancja jest wykorzystywana w przemyśle do produkcji pianek z tworzyw sztucznych, w tym stosowanych w matach. Przezwisko pochodzi z kampanii w Stanach Zjednoczonych; fakt, że substancja ma zastosowania przemysłowe, sam w sobie nie mówi, czy jej zastosowanie w żywności jest bezpieczne."
+    }
+  ],
+  "stearoyl_lactylates": [
+    {
+      "question": "Jak mogę stwierdzić, czy stearyoilomleczan na etykiecie pochodzi z tłuszczów zwierzęcych czy roślinnych?",
+      "answer": "Potrzebne jest oświadczenie o pochodzeniu lub dokumentacja producenta dotycząca danego produktu. Nazwa „stearyoilomleczan” identyfikuje dodatek, ale nie ujawnia, czy użyty surowiec był pochodzenia zwierzęcego czy roślinnego."
+    },
+    {
+      "question": "Dlaczego stearyoilomleczany mają różne limity stosowania w zależności od rodzaju żywności?",
+      "answer": "Ponieważ zezwolenie określa warunki dla konkretnych kategorii, a nie nieograniczoną ilość dla każdej żywności. Lista składników nie pozwala zweryfikować limitu: potrzebna jest kategoria, rynek i użyta ilość."
+    }
+  ],
+  "nitrites_nitrates": [
+    {
+      "question": "Jak to możliwe, że mięso jest oznaczone jako „bez azotanów”, a mimo to zawiera składniki dostarczające azotany?",
+      "answer": "Inne składniki mogą dostarczać azotany, nawet jeśli nie dodano konserwantu o nazwie „azotan”. Brak kodu nie dowodzi braku azotanów, a zasadność określenia „bez azotanów” zależy od receptury i przepisów rynkowych."
+    },
+    {
+      "question": "Dlaczego azotyny i azotany mają limity spożycia i warunki stosowania, jeśli są dopuszczone jako konserwanty?",
+      "answer": "Ponieważ pomagają konserwować mięso i zapobiegać botulizmowi, ale azotyn może również uczestniczyć w tworzeniu związków N-nitrozowych. Limity równoważą te zastosowania z narażeniem, a lista składników nie pozwala obliczyć, ile pozostaje po peklowaniu."
+    },
+    {
+      "question": "Jak to możliwe, że mięso jest oznaczone jako „niepeklowane”, a jako źródło azotanów wykorzystuje seler?",
+      "answer": "Seler może dostarczać azotanów używanych do peklowania, nawet jeśli nie dodano konserwantu określonego nazwą chemiczną. Określenie „niepeklowane” zależy od przepisów rynkowych i samo w sobie nie oznacza braku azotanów; etykieta nie podaje, ile selera ich dostarcza."
+    }
+  ],
+  "quinoline_yellow": [
+    {
+      "question": "Dlaczego żółcień chinolinowa jest dozwolona z ograniczeniami w Europie, ale nie jest dopuszczona jako barwnik spożywczy w Stanach Zjednoczonych?",
+      "answer": "Ponieważ rynki nie mają jednego wspólnego zezwolenia. UE obniżyła poziomy i wycofała niektóre zastosowania po nowych danych oraz wymaga ostrzeżenia dla dzieci w odpowiednich produktach; Stany Zjednoczone nie dopuszczają jej jako barwnika spożywczego."
+    },
+    {
+      "question": "Dlaczego barwnik może mieć ostrzeżenie dla dzieci i nadal pozostawać dopuszczony?",
+      "answer": "Ponieważ dostępne dowody uzasadniały informowanie konsumentów, ale nie wycofanie zezwolenia. Europejskie ostrzeżenie pochodzi z badań z mieszaninami barwników, więc komunikuje możliwy efekt bez przypisywania go do jednej konkretnej substancji."
+    }
+  ],
+  "carrageenan": [
+    {
+      "question": "Dlaczego karagen występuje w tak różnych produktach i co właściwie oznacza zobaczenie go na etykiecie?",
+      "answer": "Zagęszcza, żeluje i utrzymuje konsystencję, więc może pojawiać się w bardzo różnych recepturach. Zobaczenie E407 lub E407a potwierdza zadeklarowany składnik, ale nie to, ile go jest ani jaka część jest rozdrobniona."
+    },
+    {
+      "question": "Dlaczego karagen pozostaje dopuszczony, jeśli EFSA nadal zwraca się o dane w celu rozwiązania niektórych wątpliwości?",
+      "answer": "Dopuszczenie i wnioski o dane mogą współistnieć: niepewność pozostaje co do małych fragmentów i ich zachowania. Dalsze pozwolenie nie rozwiązuje tych niepewności, ale też nie wykazuje szkody wynikającej ze spożycia konkretnego produktu."
+    },
+    {
+      "question": "Dlaczego karagen może być dozwolony w wielu produktach spożywczych, ale w żywieniu niemowląt traktowany bardziej restrykcyjnie?",
+      "answer": "Żywienie niemowląt ma własne warunki dopuszczenia: pozwolenie dla innych produktów spożywczych nie gwarantuje, że to samo zastosowanie jest dozwolone w mleku modyfikowanym dla niemowląt. Sprawdzenie wymaga kategorii, rynku i ilości, a nie tylko zobaczenia karagenu w składnikach."
+    }
+  ],
+  "dioxins_pcbs": [
+    {
+      "question": "Jak dioksyny lub PCB mogą znajdować się w żywności, jeśli nie pojawiają się w wykazie składników?",
+      "answer": "Ponieważ są to trwałe zanieczyszczenia środowiskowe, które przedostają się do łańcucha żywnościowego, a nie dodane składniki. Mogą kumulować się w tłuszczu zwierzęcym, ale ta ogólna droga nie wykazuje zanieczyszczenia w konkretnym produkcie spożywczym."
+    },
+    {
+      "question": "Dlaczego nie ma po prostu nieistotnego poziomu dioksyn i dlaczego limity są tak surowe?",
+      "answer": "Ponieważ są bardzo wolno eliminowane, a narażenie kumuluje się przez lata: liczy się obciążenie organizmu, a nie tylko jeden posiłek. Limity zmniejszają to narażenie; nie pozwalają ogłosić zerowego ryzyka ani wywnioskować ilości z etykiety."
+    }
+  ],
+  "propylene_glycol_esters": [
+    {
+      "question": "Dlaczego limit dla tych estrów oblicza się na podstawie glikolu propylenowego, który mogą uwalniać, a nie po prostu całkowitej ilości E477?",
+      "answer": "Ponieważ podczas trawienia mogą się rozkładać i uwalniać glikol propylenowy, składnik, do którego odnosi się ten limit. Całkowita ilość E477 nie równa się bezpośrednio uwolnionej ilości, a lista nie może jej obliczyć."
+    },
+    {
+      "question": "Co robi pochodna glikolu propylenowego w żywności?",
+      "answer": "Działa jako emulgator: pomaga utrzymać tłuszcz i wodę wymieszane oraz poprawia objętość i konsystencję, szczególnie w produktach piekarniczych i polewach. Jej funkcja jest technologiczna, a nie odżywcza."
+    }
+  ],
+  "glutamates": [
+    {
+      "question": "Dlaczego produkt może mówić „bez dodatku MSG” i zawierać inne źródła glutaminianu?",
+      "answer": "Ponieważ brak osobno dodanego MSG nie wyklucza wolnego glutaminianu dostarczanego przez składniki, takie jak ekstrakt drożdżowy. Glutaminian jest chemicznie taki sam, ale lista nie podaje całkowitej ilości."
+    },
+    {
+      "question": "Dlaczego EFSA ustala dzienny limit dla glutaminianów, podczas gdy JECFA utrzymuje inną ocenę?",
+      "answer": "To są różne oceny: EFSA zastosowała współczynnik bezpieczeństwa do badania na zwierzętach, aby ustalić 30 mg/kg masy ciała na dzień, podczas gdy JECFA utrzymuje dopuszczalne dzienne spożycie, które jest „nieokreślone”. To ostatnie sformułowanie nie oznacza pozwolenia na spożywanie nieograniczonych ilości."
+    }
+  ],
+  "aspartame_acesulfame_salt": [
+    {
+      "question": "Dlaczego E962 wymaga ostrzeżenia o fenyloalaninie, jeśli nie jest po prostu wymieniony jako aspartam?",
+      "answer": "Ponieważ E962 zawiera aspartam w połączeniu z acesulfamem i nadal dostarcza źródło fenyloalaniny. Zmiana nazwy nie usuwa informacji potrzebnych osobom z fenyloketonurią."
+    }
+  ],
+  "trans_fats": [
+    {
+      "question": "Jak można zadeklarować 0 g tłuszczów trans, a mimo to nie sumuje się to do tłuszczu ogółem?",
+      "answer": "W Stanach Zjednoczonych mniej niż 0,5 g tłuszczów trans na porcję można zadeklarować jako 0 g. Dodatkowo tłuszcz ogółem obejmuje inne rodzaje tłuszczu, a wartości mogą być zaokrąglane, więc nie można go odtworzyć, sumując wyłącznie tłuszcze nasycone i trans."
+    },
+    {
+      "question": "Dlaczego WHO zaleca eliminację przemysłowych tłuszczów trans, podczas gdy przepisy dotyczące etykietowania wciąż różnią się w zależności od kraju?",
+      "answer": "Ponieważ globalne zalecenie zdrowotne i obowiązki prawne poszczególnych krajów to dwie różne rzeczy. UE ogranicza zawartość, nie wymagając wiersza tłuszczów trans w tabeli wartości odżywczej; Stany Zjednoczone deklarują je, ze zasadą zaokrąglania, która może dać 0 g."
+    }
+  ],
+  "modified_starches": [
+    {
+      "question": "Jeśli na etykiecie widnieje „modyfikowana skrobia spożywcza”, jak mogę ustalić jej źródło i czy zawiera gluten?",
+      "answer": "Źródło potwierdza deklaracja dotycząca konkretnego produktu lub informacje od producenta. „Modyfikowana skrobia spożywcza” opisuje jedynie obróbkę skrobi: nie identyfikuje rośliny pochodzenia ani nie gwarantuje braku glutenu."
+    },
+    {
+      "question": "Jak modyfikowana skrobia może pojawić się w składnikach, a w tabeli wartości odżywczej widnieć 0 g węglowodanów?",
+      "answer": "Niewielka ilość może pojawić się w składnikach i zostać zaokrąglona do 0 g w tabeli, w zależności od porcji i przepisów rynkowych. Aby ustalić, czy wyjaśnia to ten przypadek, należy sprawdzić deklarowaną podstawę i ilość; 0 g nie dowodzi braku skrobi."
+    }
+  ],
+  "smoke_flavourings": [
+    {
+      "question": "Dlaczego niektóre aromaty dymne utraciły europejską autoryzację po tym, jak EFSA nie mogła wykluczyć obaw dotyczących genotoksyczności?",
+      "answer": "Ponieważ w ponownej ocenie nie można było wykluczyć obaw dotyczących genotoksyczności, a UE usunęła dawne produkty podstawowe z listy zatwierdzonych. Obowiązują okresy przejściowe w zależności od kategorii żywności; ogólna deklaracja nie identyfikuje aromatu ani jego konkretnych właściwości."
+    }
+  ],
+  "potassium_bromate": [
+    {
+      "question": "Jak mogę ustalić, czytając etykietę, czy mąka jest bromowana lub czy zawiera bromian potasu?",
+      "answer": "Można to rozpoznać, jeśli występuje jako bromian potasu lub pod dawnym kodem INS 924a. Jeśli nie jest zadeklarowany, BOTIA nie może wywnioskować, że mąka jest bromowana, ani zmierzyć, ile bromianu pozostaje po wypieku."
+    },
+    {
+      "question": "Dlaczego bromian potasu jest zakazany w krajach takich jak Brazylia, podczas gdy w innych miejscach dopuszczono niektóre zastosowania?",
+      "answer": "Ponieważ decyzje prawne są specyficzne dla kraju, nawet gdy istnieje niekorzystna ocena międzynarodowa. Istnieją obawy, że pozostałości mogą się utrzymywać i powodować uszkodzenia genetyczne; dopuszczenie niektórych zastosowań gdzie indziej nie oznacza autoryzacji na całym świecie."
+    }
+  ],
+  "nucleotide_enhancers": [
+    {
+      "question": "Czym są inozynian, guanylan lub inne wzmacniacze nukleotydowe i dlaczego występują jako wzmacniacze smaku?",
+      "answer": "To związki wzmacniające smak umami: E627 to guanylan, E631 to inozynian, a E635 to mieszanina obu. Ich działanie nasila się w połączeniu z glutaminianem, dlatego często stosuje się je razem."
+    },
+    {
+      "question": "Dlaczego inozynian i guanylan prawie zawsze towarzyszą glutaminianowi?",
+      "answer": "Ponieważ razem wzmacniają smak umami znacznie bardziej niż osobno. Ich połączenie sprawia, że do uzyskania tego samego efektu potrzeba mniejszej ilości każdego z nich."
+    }
+  ],
+  "steviol_glycosides": [
+    {
+      "question": "Dlaczego produkt sprzedawany jako „stevia” może zawierać laktozę, aromaty i inne składniki poza glikozydami stewiolowymi?",
+      "answer": "Ponieważ „stevia” może być nazwą handlową mieszanki, a nie deklaracją pojedynczego składnika. Glikozydy zapewniają słodycz, ale resztę składu należy sprawdzić w wykazie; nie wszystkie te produkty mają taką samą recepturę."
+    },
+    {
+      "question": "Dlaczego glikozydy stewiolowe mają dopuszczalne dzienne spożycie, podczas gdy WHO odradza stosowanie słodzików w celu kontroli masy ciała?",
+      "answer": "Limit ocenia narażenie na słodzik, natomiast zalecenie dotyczące masy ciała pyta, czy jego stosowanie przynosi długoterminowe korzyści. To różne kryteria: dopuszczone zastosowania nie dowodzą, że działa on na kontrolę masy ciała."
+    }
+  ],
+  "aluminium_additives": [
+    {
+      "question": "Dlaczego ryzyko związane z aluminium oblicza się, sumując narażenie z różnych dodatków i produktów spożywczych?",
+      "answer": "Ponieważ wchłonięte aluminium jest wolno eliminowane i może pochodzić z kilku dodatków i produktów spożywczych. Limit dotyczy całkowitego tygodniowego narażenia, którego nie można obliczyć na podstawie pojedynczego wykazu składników."
+    },
+    {
+      "question": "Jak aluminium może znajdować się w żywności, skoro na etykiecie nie ma słowa „aluminium”?",
+      "answer": "Ponieważ dodatki je zawierające są deklarowane pod nazwą lub numerem E —siarczan glinowo-sodowy, krzemiany, E541— a te nazwy nie zawsze zaczynają się od słowa „aluminium”. Etykieta je wymienia, ale nie pokazuje, ile aluminium wnoszą."
+    }
+  ],
+  "fat-accumulation": [
+    {
+      "question": "Czy wszystkie związki rozpuszczalne w tłuszczach kumulują się w organizmie?",
+      "answer": "Kumulują się, gdy dostają się do organizmu szybciej, niż są eliminowane, jak ma to miejsce w przypadku trwałych zanieczyszczeń, takich jak dioksyny i PCB. Sama rozpuszczalność w tłuszczach nie wystarcza, aby stwierdzić, że związek się kumuluje."
+    },
+    {
+      "question": "Czy większa ilość tkanki tłuszczowej oznacza większe ryzyko?",
+      "answer": "Ryzyko zależy od związku, narażenia i nagromadzonego obciążenia. Większa ilość tkanki tłuszczowej sama w sobie nie dowodzi większego ryzyka, a etykieta nie może zmierzyć tego obciążenia."
+    },
+    {
+      "question": "Czy te związki uwalniają się podczas utraty wagi lub w ciąży?",
+      "answer": "Trwałe związki mogą pozostawać w tkance tłuszczowej przez lata. Nie pozwala to zakładać skoncentrowanego uwolnienia podczas utraty wagi lub w ciąży ani przewidzieć, kiedy ono nastąpi i w jakiej ilości u danej osoby."
+    }
+  ]
+}

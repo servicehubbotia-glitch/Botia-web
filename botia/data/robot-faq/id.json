@@ -1,0 +1,1624 @@
+{
+  "landing": [
+    {
+      "question": "Mengapa BOTIA dimulai dengan daftar bahan daripada barcode?",
+      "answer": "Karena barcode mengidentifikasi produk tetapi tidak menjelaskan formulasinya. BOTIA dimulai dengan daftar bahan yang sebenarnya karena menunjukkan apa yang dinyatakan produsen terkandung dalam makanan tersebut."
+    },
+    {
+      "question": "Mengapa BOTIA tidak memberikan skor atau putusan?",
+      "answer": "Karena skor tunggal akan mencampur pertanyaan yang berbeda dan menyembunyikan apa yang tidak dapat diketahui dari label. BOTIA memisahkan apa yang dinyatakan, apa yang dapat diidentifikasi, apa yang tidak pasti, dan bukti yang mendukungnya."
+    },
+    {
+      "question": "Mengapa label yang sama menimbulkan pertanyaan berbeda tergantung siapa yang membacanya?",
+      "answer": "Karena daftar yang sama dapat penting untuk alasan nutrisi, agama, atau etika, atau karena asal hewan, kehamilan, atau paparan. BOTIA memisahkan pertanyaan-pertanyaan ini daripada mereduksinya menjadi satu jawaban."
+    }
+  ],
+  "nutrition_overview": [
+    {
+      "question": "Apa arti \"per 100 g\" pada label nutrisi?",
+      "answer": "Ini berarti jumlah setiap nutrisi diberikan untuk 100 gram atau 100 mililiter produk. Ini memungkinkan Anda membandingkan produk bahkan ketika porsi yang dinyatakan berbeda."
+    },
+    {
+      "question": "Apa perbedaan antara garam dan natrium?",
+      "answer": "Natrium adalah mineral; garam biasa adalah natrium klorida. Untuk mengubah natrium menjadi garam, kalikan jumlah natrium dengan 2,5."
+    },
+    {
+      "question": "Mengapa BOTIA memisahkan nilai yang dinyatakan dari nilai referensi resmi?",
+      "answer": "Karena satu angka memberi tahu Anda apa yang dinyatakan produk, sementara yang lain memungkinkan Anda membandingkannya dengan referensi resmi. Mencampurnya dapat membuat keduanya tampak setara, meskipun bergantung pada negara, kuantitas referensi, atau jenis makanan."
+    }
+  ],
+  "muslim": [
+    {
+      "question": "Mengapa label dapat mematuhi hukum tetapi masih tidak memenuhi kriteria halal?",
+      "answer": "Karena undang-undang umum tidak selalu mewajibkan asal aditif atau rincian proses untuk dinyatakan. Kriteria halal mungkin memerlukan informasi tambahan tersebut."
+    },
+    {
+      "question": "Jika label menyatakan spesies hewan, mengapa BOTIA tidak dapat mengetahui apakah penyembelihan memenuhi persyaratan halal?",
+      "answer": "Karena spesies mungkin tercantum pada label, tetapi metode penyembelihan hampir tidak pernah dinyatakan. BOTIA tidak dapat mengubah informasi yang hilang menjadi konfirmasi."
+    },
+    {
+      "question": "Apa perbedaan antara membuat label transparan dan mensertifikasi sesuatu sebagai halal?",
+      "answer": "Membuatnya transparan berarti menjelaskan apa yang dinyatakan dan apa yang tidak terselesaikan. Sertifikasi halal juga memerlukan verifikasi proses, asal, penanganan, dan persyaratan lain yang tidak dapat dibuktikan hanya oleh daftar bahan."
+    }
+  ],
+  "animal": [
+    {
+      "question": "Mengapa kata \"vegan\" pada kemasan bukan jaminan hukum?",
+      "answer": "Karena kata itu sendiri tidak mengungkapkan asal setiap bahan atau bagaimana produk dibuat. BOTIA memeriksa daftar yang dinyatakan dan menjaga ketidakpastian tetap terlihat ketika asal tidak ditentukan."
+    },
+    {
+      "question": "Mengapa ada bahan-bahan yang asal usulnya hanya diketahui oleh produsen?",
+      "answer": "Karena zat seperti E471, E472, lesitin, enzim, atau perisa dapat dibuat dari berbagai sumber. Label dapat mencantumkan nama bahan tanpa menyebutkan sumber mana yang digunakan."
+    },
+    {
+      "question": "Dapatkah suatu produk mengandung sesuatu yang berasal dari hewan yang bahkan tidak muncul dalam daftar bahan?",
+      "answer": "Ya, mungkin ada bahan pembantu pengolahan atau elemen lain yang tidak harus dideklarasikan sebagai bahan dalam kondisi tertentu. Jika tidak ada di label, BOTIA juga tidak dapat mendeteksinya dari label tersebut."
+    }
+  ],
+  "woman": [
+    {
+      "question": "Mengapa BOTIA menampilkan catatan bahkan ketika tidak mendeteksi bahan apa pun pada label?",
+      "answer": "Karena beberapa isu tidak bergantung pada bahan yang dideklarasikan: misalnya, migrasi dari kemasan, kontaminan persisten tertentu, atau paparan kontekstual yang relevan bagi sistem endokrin. BOTIA menyajikannya sebagai konteks, bukan sebagai sesuatu yang terbukti pada produk tersebut."
+    },
+    {
+      "question": "Apakah berinteraksi dengan hormon sama dengan mengganggunya?",
+      "answer": "Tidak. Suatu zat dapat berinteraksi dengan jalur hormonal tanpa ini menunjukkan efek merugikan; gangguan endokrin harus dinilai untuk zat dan paparan spesifik tersebut."
+    },
+    {
+      "question": "Mengapa penelitian pangan berfokus pada pria dewasa selama beberapa dekade?",
+      "answer": "Banyak studi historis dirancang pada populasi pria dewasa atau tidak menganalisis perbedaan berdasarkan jenis kelamin dengan benar. Itulah sebabnya BOTIA memisahkan bukti yang spesifik untuk wanita ketika bukti tersebut benar-benar ada."
+    }
+  ],
+  "hidden_sugars": [
+    {
+      "question": "Mengapa produk \"fit\" atau \"natural\" dapat mengandung gula tanpa kata gula muncul?",
+      "answer": "Karena gula bebas dapat muncul sebagai glukosa, fruktosa, sirup, madu, atau konsentrat jus. Nama pemasaran produk tidak mengubah apa yang ada dalam daftar bahan."
+    },
+    {
+      "question": "Mengapa BOTIA menyoroti maltodekstrin jika WHO tidak menganggapnya sebagai gula bebas?",
+      "answer": "Maltodekstrin adalah karbohidrat yang dicerna dengan cepat, tetapi bukan gula bebas menurut definisi WHO. BOTIA menampilkannya secara terpisah karena dapat terlewat jika Anda hanya mencari kata \"gula\"."
+    },
+    {
+      "question": "Jika BOTIA membaca bahan-bahannya, mengapa tidak memberi tahu saya berapa banyak gula yang terkandung dalam produk?",
+      "answer": "Karena daftar bahan menunjukkan keberadaan dan urutan, bukan jumlah total gula. Untuk mengetahui gramnya, Anda perlu melihat informasi gizi yang dideklarasikan."
+    }
+  ],
+  "not_sugar": [
+    {
+      "question": "Apakah WHO yang menyarankan untuk menghindari pemanis berarti pemanis tersebut tidak aman?",
+      "answer": "Tidak. Rekomendasi WHO tahun 2023 tentang pemanis non-gula berkaitan dengan pengendalian berat badan dan bersifat kondisional; ini bukan penilaian toksikologis yang menyatakan zat-zat tersebut tidak aman."
+    },
+    {
+      "question": "Mengapa poliol tidak termasuk dalam rekomendasi WHO tersebut?",
+      "answer": "Karena pedoman tersebut secara eksplisit mengecualikannya: poliol adalah turunan gula yang menyediakan energi dan tidak termasuk dalam kelompok pemanis non-gula yang dicakup oleh rekomendasi tersebut."
+    },
+    {
+      "question": "Mengapa produk \"bebas gula\" dapat mengandung beberapa pemanis berbeda?",
+      "answer": "Karena \"bebas gula\" tidak berarti \"tanpa zat yang membuat makanan terasa manis\". Suatu produk dapat menggabungkan beberapa pemanis dan menyatakannya secara terpisah dalam daftar bahan."
+    }
+  ],
+  "tasting_like_itself": [
+    {
+      "question": "Mengapa suatu makanan memerlukan perisa agar rasanya seperti dirinya sendiri?",
+      "answer": "Perisa digunakan untuk memperkuat, mengubah, atau memulihkan rasa, terutama setelah pengolahan. Keberadaannya menunjukkan bahwa sebagian rasa berasal dari formulasi tambahan."
+    },
+    {
+      "question": "Apa yang \"alami\" dari perisa alami?",
+      "answer": "\"Alami\" menggambarkan kategori perisa; itu tidak berarti produk diproses minimal atau label mengungkapkan sumber persisnya. Perisa ini dapat berasal dari bahan mentah hewani atau nabati, atau dari proses fermentasi."
+    },
+    {
+      "question": "Mengapa keberadaan perisa menunjukkan bahwa suatu produk ultra-proses?",
+      "answer": "NOVA menganggap perisa sebagai salah satu penanda formulasi ultra-proses. Meskipun demikian, BOTIA tidak menetapkan kelompok NOVA lengkap pada produk itu sendiri karena tidak mengetahui segala hal tentang cara pembuatannya."
+    }
+  ],
+  "what_holds_it": [
+    {
+      "question": "Untuk apa penstabil atau pengemulsi jika tidak menambah apa pun secara nutrisi?",
+      "answer": "Zat ini mengubah struktur makanan: menstabilkan, mengentalkan, menggabungkan air dan lemak, atau mempertahankan tekstur yang seragam. Fungsinya teknologis, bukan nutrisi."
+    },
+    {
+      "question": "Mengapa makanan yang diproses minimal tidak memerlukan pengubah tekstur?",
+      "answer": "Karena teksturnya terutama berasal dari struktur makanan itu sendiri. Pengubah ditambahkan ketika suatu formulasi perlu menciptakan, memulihkan, atau mempertahankan konsistensi tertentu."
+    },
+    {
+      "question": "Apa artinya ketika suatu aditif sedang dalam tinjauan ilmiah?",
+      "answer": "Artinya bukti tentangnya sedang dikaji ulang atau diperbarui. Ini tidak secara otomatis berarti aditif tersebut dilarang atau telah terbukti tidak aman."
+    }
+  ],
+  "the_code_system": [
+    {
+      "question": "Mengapa aditif yang sama memiliki nama berbeda di berbagai negara?",
+      "answer": "Karena setiap sistem regulasi dapat menggunakan kode, nama kimia, atau istilahnya sendiri. E numbers adalah sistem Eropa, sedangkan pasar lain mungkin menampilkan kode berbeda atau nama lengkapnya."
+    },
+    {
+      "question": "Apakah aditif yang diizinkan berarti tidak ada perdebatan tentangnya?",
+      "answer": "Tidak. Izin berarti aditif tersebut memenuhi kondisi regulasi saat ini untuk penggunaan tertentu; buktinya masih dapat ditinjau dan kondisinya dapat berubah."
+    },
+    {
+      "question": "Mengapa bahan yang sama dapat muncul sebagai E471 atau dengan nama kimianya?",
+      "answer": "Karena E471 adalah kode identifikasi untuk aditif tersebut. Tergantung pada pasar dan praktik pelabelan, kode, namanya, atau keduanya dapat muncul."
+    }
+  ],
+  "ultra_processed": [
+    {
+      "question": "Apakah produk yang rendah gula dan tinggi protein bisa tergolong ultra-proses?",
+      "answer": "Ya. NOVA tidak mengklasifikasikan makanan berdasarkan kandungan gula, lemak, atau protein yang banyak atau sedikit, melainkan berdasarkan tingkat pemrosesan dan cara formulasinya."
+    },
+    {
+      "question": "Apa perbedaan antara makanan olahan dan makanan ultra-proses?",
+      "answer": "Makanan olahan masih memiliki keterkaitan yang jelas dengan bahan pangan aslinya meskipun telah mengalami transformasi. Makanan ultra-proses adalah formulasi industri yang dapat mengandung zat dan aditif yang jarang digunakan di dapur rumah."
+    },
+    {
+      "question": "Mengapa BOTIA tidak menyatakan apakah suatu produk tergolong ultra-proses?",
+      "answer": "Karena BOTIA membaca bahan-bahan yang tercantum pada label tetapi tidak mengetahui seluruh proses industri atau formulasi lengkapnya. BOTIA dapat menunjukkan penanda ultra-proses tanpa menjadikannya klasifikasi produk secara otomatis."
+    }
+  ],
+  "undeclared_origin": [
+    {
+      "question": "Mengapa 72% produk yang dianalisis tidak dapat dikonfirmasi?",
+      "answer": "Karena dalam analisis tersebut label tidak mencantumkan asal bahan-bahan utama, bukan karena bahan-bahan tersebut dilarang. Angka ini berasal dari pemindaian BOTIA sendiri pada Maret-April 2026, terutama di Belanda dan Belgia, dengan menggunakan lapisan Muslim."
+    },
+    {
+      "question": "Apakah bahan yang meragukan berarti mencurigakan?",
+      "answer": "Tidak. \"Meragukan\" berarti informasi yang diperlukan untuk mengonfirmasinya tidak ada, seperti asal atau prosesnya; ini bukan tuduhan atau tanda bahwa bahan tersebut berbahaya."
+    },
+    {
+      "question": "Untuk siapa sebenarnya label ditulis?",
+      "answer": "Terutama untuk memenuhi persyaratan informasi hukum. Itulah sebabnya label bisa benar secara hukum namun tetap tidak menjawab pertanyaan orang tentang asal bahan, pemrosesan, atau makna praktisnya."
+    }
+  ],
+  "regulatory": [
+    {
+      "question": "Jika suatu bahan tidak muncul di sini, apakah berarti bahan tersebut diizinkan?",
+      "answer": "Tidak. Itu hanya berarti BOTIA tidak memiliki tindakan terverifikasi dalam penjelajah tersebut untuk bahan itu dan cakupan spesifik tersebut; tidak adanya baris tidak boleh ditafsirkan sebagai izin."
+    },
+    {
+      "question": "Mengapa bahan yang sama muncul di beberapa baris?",
+      "answer": "Karena zat yang sama dapat tunduk pada tindakan yang berbeda tergantung pada negara, otoritas, penggunaan, konsentrasi, kategori pangan, atau jenis kewajiban. Setiap baris memisahkan konteks tersebut."
+    },
+    {
+      "question": "Apa artinya ketika suatu tindakan berlaku?",
+      "answer": "Ini berarti tindakan tersebut tercatat berlaku saat ini dalam yurisdiksi dan cakupan yang ditunjukkan pada baris tersebut. Ini tidak berarti tindakan itu merupakan aturan universal atau penilaian keamanan secara umum."
+    }
+  ],
+  "acesulfame_k": [
+    {
+      "question": "Mengapa memiliki batas konsumsi harian jika diizinkan sebagai pemanis?",
+      "answer": "Izin memungkinkan penggunaannya dalam kondisi tertentu; batas harian berkaitan dengan jumlah yang dapat dikonsumsi secara teratur sepanjang hidup. Daftar bahan tidak menunjukkan berapa banyak kandungannya atau memungkinkan Anda menjumlahkan apa yang Anda konsumsi dari produk lain."
+    },
+    {
+      "question": "Mengapa hampir tidak pernah digunakan sendiri dan malah dicampur dengan pemanis lain?",
+      "answer": "Karena acesulfame K sangat manis dan, pada konsentrasi lebih tinggi, dapat meninggalkan rasa setelah yang khas. Mencampurnya dengan pemanis lain membantu menyesuaikan rasa dan mencapai kemanisan yang diinginkan dengan jumlah yang lebih kecil dari masing-masing."
+    }
+  ],
+  "folic_acid": [
+    {
+      "question": "Mengapa asam folat ditambahkan ke tepung atau sereal, dan bagaimana fortifikasi itu muncul pada label?",
+      "answer": "Ini ditambahkan untuk memperkaya makanan dengan vitamin B9 dan dapat muncul sebagai asam folat, folat atau vitamin B9. Jika jumlahnya tidak dinyatakan, daftar bahan tidak dapat memberi tahu Anda berapa banyak yang disediakan."
+    }
+  ],
+  "advantame": [
+    {
+      "question": "Mengapa advantame hanya diizinkan untuk makanan dan jumlah tertentu?",
+      "answer": "Karena otorisasi berlaku untuk penggunaan dan jumlah tertentu, bukan untuk makanan apa pun dalam proporsi apa pun. Melihat advantame dalam bahan tidak cukup untuk memeriksa kepatuhan: Anda memerlukan jumlah dan pasar."
+    },
+    {
+      "question": "Mengapa jumlah yang sangat kecil diperlukan dibandingkan dengan gula?",
+      "answer": "Karena advantame adalah pemanis berintensitas sangat tinggi, sekitar 20.000 kali lebih manis dari gula. Oleh karena itu hanya jumlah yang sangat kecil yang diperlukan untuk mencapai tingkat kemanisan yang sama."
+    }
+  ],
+  "agar": [
+    {
+      "question": "Mengapa agar ada dalam produk ini, dan apa yang dilakukannya terhadap teksturnya?",
+      "answer": "Ini adalah bahan dari rumput laut yang digunakan untuk membentuk gel, mengentalkan atau menstabilkan makanan. Keberadaannya tidak memberi tahu Anda konsentrasi atau konsistensi tepat yang dihasilkannya dalam produk tersebut."
+    },
+    {
+      "question": "Bisakah ini menggantikan gelatin dalam produk yang menyatakan vegan?",
+      "answer": "Ya. Agar dapat menggantikan gelatin sebagai agen pembentuk gel berbasis tanaman di banyak makanan. Namun, perilakunya tidak persis sama: tekstur, suhu pembentukan dan cara gel meleleh berbeda."
+    }
+  ],
+  "alcohol": [
+    {
+      "question": "Bagaimana suatu produk dapat mengatakan \"bebas alkohol\" dan tetap menyatakan sejumlah kecil alkohol?",
+      "answer": "\"Bebas alkohol\" tidak memiliki arti hukum yang sama di setiap pasar dan mungkin mengizinkan sejumlah kecil residu. Untuk menafsirkan klaim itu, Anda perlu memeriksa negara dan jumlah yang dinyatakan; daftar bahan saja tidak mengukur berapa banyak alkohol yang tersisa."
+    },
+    {
+      "question": "Mengapa alkohol menjadi masalah bahkan dalam jumlah kecil jika WHO mengatakan tidak ada tingkat aman terkait kanker?",
+      "answer": "Karena belum ada tingkat konsumsi tanpa risiko kanker yang ditetapkan; ini tidak berarti setiap jumlah membawa risiko yang sama. Label saja tidak dapat menghitung paparan atau risiko seseorang."
+    },
+    {
+      "question": "Apakah sertifikasi halal secara otomatis menyelesaikan alkohol yang dinyatakan dalam bahan?",
+      "answer": "Tidak: BOTIA tetap menunjukkan alkohol yang dinyatakan dan mengklasifikasikannya sebagai haram berdasarkan kriterianya. Ini tidak menafsirkan bagaimana lembaga sertifikasi menangani deklarasi itu atau menggantikan penilaian mereka."
+    }
+  ],
+  "alginates": [
+    {
+      "question": "Mengapa E400, E401, E402 dan alginat lainnya tidak dapat diperlakukan sebagai aditif yang sama?",
+      "answer": "Karena mereka adalah anggota keluarga yang berbeda: komposisi dan penilaian mereka berbeda, terutama untuk propilen glikol alginat E405. Berbagi asal rumput laut tidak membuat mereka menjadi aditif yang sama."
+    },
+    {
+      "question": "Apa fungsi bahan yang berasal dari rumput laut dalam produk yang bukan berasal dari laut?",
+      "answer": "Alginat digunakan untuk fungsi teknologisnya, bukan karena makanannya berasal dari laut. Bahan ini dapat mengentalkan, membentuk gel, atau menstabilkan berbagai produk, terlepas dari bahan utamanya."
+    }
+  ],
+  "fenugreek": [
+    {
+      "question": "Dapatkah fenugreek muncul dengan nama lain atau dalam campuran rempah dan berpengaruh untuk alergi?",
+      "answer": "Fenugreek dapat muncul sebagai fenugreek, biji fenugreek, atau ekstrak fenugreek, dan dapat menjadi bagian dari campuran rempah. Jika hanya campurannya yang dinyatakan, keberadaannya dan relevansinya terhadap alergi tertentu memerlukan informasi lebih lanjut dari produsen."
+    }
+  ],
+  "allura_red": [
+    {
+      "question": "Mengapa pewarna ini memerlukan peringatan untuk anak-anak di Eropa dan juga menghadapi larangan di masa depan pada makanan sekolah tertentu di California?",
+      "answer": "Langkah-langkah tersebut memiliki cakupan yang berbeda: peringatan di Eropa berkaitan dengan aktivitas dan perhatian anak-anak, sedangkan California membatasi makanan sekolah tertentu. Bukti di balik peringatan tersebut berasal dari campuran pewarna dan tidak menunjukkan efek allura red secara tunggal."
+    },
+    {
+      "question": "Mengapa produk yang sama dapat mengandung Allura Red di satu negara dan pewarna alami di negara lain?",
+      "answer": "Karena aturan pewarna dan formulasi komersial berbeda antar pasar. Produsen dapat memformulasi ulang produk yang sama untuk mematuhi aturan lokal atau preferensi konsumen tanpa mengubah nama produk."
+    }
+  ],
+  "aspartame": [
+    {
+      "question": "Bagaimana aspartame dapat diizinkan dan juga diklasifikasikan oleh IARC sebagai mungkin karsinogenik?",
+      "answer": "\"Mungkin karsinogenik\" menggambarkan kemungkinan berdasarkan bukti terbatas; izin juga mempertimbangkan jumlah paparan. Itulah sebabnya klasifikasi IARC dan mempertahankan asupan harian yang dapat diterima dapat hidup berdampingan tanpa berarti bahwa konsumsi apa pun menyebabkan kanker."
+    },
+    {
+      "question": "Mengapa produk yang mengandung aspartame harus memperingatkan tentang fenilalanin?",
+      "answer": "Karena tubuh memecah aspartame sebagian menjadi fenilalanin. Orang dengan fenilketonuria tidak dapat memproses fenilalanin secara normal, sehingga label harus memperingatkan mereka bahwa produk tersebut merupakan sumber fenilalanin."
+    }
+  ],
+  "brilliant_blue": [
+    {
+      "question": "Mengapa Brilliant Blue ada dalam cokelat yang terlihat cokelat?",
+      "answer": "Pewarna dapat dikombinasikan untuk menyesuaikan warna: biru dapat mengoreksi atau memperdalam warna cokelat tanpa hasilnya terlihat biru. Label tidak menyatakan berapa banyak yang terkandung atau memastikan penyesuaian yang dimaksudkan dalam cokelat tersebut."
+    },
+    {
+      "question": "Mengapa zat ini diizinkan dengan batas penggunaan jika JECFA menganggap perkiraan paparan bukan masalah kesehatan?",
+      "answer": "Karena kesimpulan tersebut berlaku untuk perkiraan paparan, bukan untuk setiap jumlah yang mungkin. Batas penggunaan menjaga izin dalam kondisi tertentu, dan daftar bahan tidak dapat memverifikasi dosisnya."
+    }
+  ],
+  "e500": [
+    {
+      "question": "Apa fungsi natrium bikarbonat dalam makanan, dan mengapa muncul sebagai E500?",
+      "answer": "Natrium bikarbonat membantu adonan mengembang dan juga dapat mengatur keasaman. Bikarbonat adalah E500(ii), dalam keluarga E500: kode ini mengidentifikasi aditif, bukan zat yang berbeda dari soda kue."
+    }
+  ],
+  "bpa": [
+    {
+      "question": "Apa arti sebenarnya \"BPA-free\" jika BPA bukan bahan tetapi bagian dari kemasan?",
+      "answer": "Ini adalah klaim tentang bahan kemasan, bukan pengukuran makanan. BOTIA tidak dapat memastikan dari daftar bahan bahwa kemasan bebas BPA atau bahwa zat lain tidak bermigrasi."
+    },
+    {
+      "question": "Mengapa Uni Eropa melarang BPA dalam banyak bahan kontak pangan meskipun telah digunakan secara legal selama bertahun-tahun?",
+      "answer": "Karena penilaian ulang menemukan efek pada sistem kekebalan dan menempatkan perkiraan paparan di atas batas baru. Larangan tersebut mencakup bahan-bahan yang ditentukan, dengan pengecualian dan masa transisi; ini tidak menunjukkan BPA dalam kemasan tertentu."
+    }
+  ],
+  "bone_phosphate": [
+    {
+      "question": "Mengapa batas untuk fosfat tulang yang dapat dimakan juga bergantung pada fosfor yang kita peroleh dari sumber lain?",
+      "answer": "Karena fosfornya menambah fosfor dari fosfat dan makanan lain: batasnya adalah untuk total, bukan batas baru untuk setiap bahan. Label tidak dapat menghitung berapa banyak fosfat tulang yang berkontribusi atau total asupan harian."
+    },
+    {
+      "question": "Bagaimana mungkin aditif berasal dari tulang hewan tanpa namanya menunjukkan hal itu secara jelas?",
+      "answer": "Nama tersebut menggambarkan bahan fosfat, bukan necessarily sumber biologisnya. Fosfat tulang yang dapat dimakan diperoleh dari tulang hewan, sehingga asalnya dapat menjadi penting meskipun namanya terutama menggambarkan komposisi kimianya."
+    }
+  ],
+  "bht": [
+    {
+      "question": "Mengapa BHT ada dalam sereal, dan apa tepatnya fungsinya dalam produk tersebut?",
+      "answer": "Ini adalah antioksidan yang memperlambat oksidasi lemak dan minyak untuk mencegahnya menjadi tengik. Label tidak mengungkapkan berapa banyak yang digunakan atau tepatnya di mana dalam sereal ia menjalankan fungsi tersebut."
+    },
+    {
+      "question": "Apa artinya bahwa BHT tetap diizinkan meskipun ada penilaian tentang kemungkinan efek endokrin dan tiroid?",
+      "answer": "Ini berarti tetap diizinkan di bawah kondisi penggunaannya sementara bukti yang tersedia dinilai. Efek yang diamati pada dosis tinggi pada hewan dan aktivitas hormonal di laboratorium tidak menunjukkan efek yang sama dari mengonsumsi produk tertentu."
+    }
+  ],
+  "cadmium": [
+    {
+      "question": "Bagaimana kadmium dalam makanan dapat menjadi perhatian jika tidak ada dalam daftar bahan?",
+      "answer": "Karena ini adalah kontaminan lingkungan yang dapat masuk ke makanan dari tanah, bukan bahan tambahan. Daftar tersebut dapat mengidentifikasi makanan yang berkontribusi terhadap paparan, tetapi tidak menunjukkan kadmium dalam produk tersebut atau mengukur jumlahnya."
+    },
+    {
+      "question": "Mengapa batas legal kadmium bervariasi tergantung pada makanannya?",
+      "answer": "Peraturan menetapkan batas berbeda untuk setiap kategori makanan, sehingga produk harus dibandingkan dengan batas yang berlaku. Memeriksa kepatuhan memerlukan pengukuran kadmiumnya; daftar bahan tidak memberikan jumlah tersebut."
+    }
+  ],
+  "caffeine": [
+    {
+      "question": "Mengapa label dapat menyatakan mengandung kafein tanpa menyebutkan berapa banyak?",
+      "answer": "Karena daftar bahan dapat mendeklarasikan keberadaannya tanpa mengkuantifikasinya. Ini juga tidak dapat menghitung kafein dari kopi, teh, atau guarana ketika tidak ada jumlah spesifik yang diberikan."
+    },
+    {
+      "question": "Mengapa jumlah kafein yang dianggap dapat diterima berbeda untuk orang dewasa dan selama kehamilan?",
+      "answer": "Karena perkembangan bayi juga dipertimbangkan selama kehamilan, dan asupan tinggi telah dikaitkan dengan kehilangan kehamilan dan berat lahir rendah. Jumlah dalam satu produk tidak mewakili semua kafein yang dikonsumsi selama sehari."
+    }
+  ],
+  "carbohydrate": [
+    {
+      "question": "Mengapa total karbohidrat, \"karbohidrat netto\", serat, dan poliol tidak selalu tampak cocok?",
+      "answer": "Karena tidak semua label memasukkan komponen yang sama dalam \"karbohidrat\", dan \"karbohidrat netto\" mungkin menggunakan perhitungan yang berbeda. Jika serat dan poliol tidak dicantumkan secara terpisah, BOTIA tidak dapat merekonstruksi angka-angka tersebut."
+    },
+    {
+      "question": "Mengapa aturan wajib untuk mencantumkan karbohidrat berbeda-beda di setiap negara?",
+      "answer": "Karena setiap pasar menetapkan apa yang termasuk dalam nilai tersebut dan bidang mana yang harus muncul secara terpisah. Itulah sebabnya dua angka yang disebut \"karbohidrat\" belum tentu dapat dibandingkan tanpa memeriksa definisinya."
+    },
+    {
+      "question": "Apakah semua poliol harus dikurangi untuk menghitung karbohidrat \"netto\", atau tergantung pada poliolnya?",
+      "answer": "Tergantung pada poliolnya: tidak semuanya diserap atau digunakan dengan cara yang sama, sehingga tidak semuanya boleh dikurangi secara setara. Selain itu, \"karbohidrat netto\" dapat menggunakan kriteria yang berbeda, jadi Anda perlu memeriksa bagaimana angka tersebut dihitung."
+    }
+  ],
+  "carmine": [
+    {
+      "question": "Bagaimana mungkin produk berlabel vegan mengandung karmin/E120, yang berasal dari serangga?",
+      "answer": "Jika label mencantumkan E120, itu menyatakan pewarna yang berasal dari serangga, yang bertentangan dengan klaim vegan. BOTIA dapat menyoroti kontradiksi tersebut tetapi tidak dapat mengetahui dari label bagaimana hal itu terjadi."
+    },
+    {
+      "question": "Bagaimana bisa diizinkan sebagai pewarna dan juga menimbulkan masalah alergi dan klasifikasi halal?",
+      "answer": "Kriteria otorisasi pangan, alergi, dan halal menjawab pertanyaan yang berbeda. Karmin dapat mempertahankan protein alergen dari serangga, dan standar halal yang diikuti BOTIA mengklasifikasikannya sebagai non-halal, meskipun memiliki penggunaan pangan yang diizinkan."
+    }
+  ],
+  "carmoisine": [
+    {
+      "question": "Mengapa karmoisin diizinkan di Eropa dengan peringatan untuk anak-anak tetapi tidak diizinkan sebagai pewarna makanan di Amerika Serikat?",
+      "answer": "Karena otorisasi bersifat spesifik per pasar: Uni Eropa mengizinkan penggunaan tertentu dengan peringatan, sementara Amerika Serikat tidak mengizinkannya untuk pangan. Peringatan Eropa berasal dari studi yang menggunakan campuran dan tidak membuktikan efek karmoisin sendiri."
+    },
+    {
+      "question": "Mengapa produk berwarna merah muda atau merah perlu pewarna jika sudah mengandung buah?",
+      "answer": "Buah tidak selalu memberikan warna yang cukup kuat atau stabil setelah pengolahan dan penyimpanan. Pewarna dapat ditambahkan untuk menstandarkan atau memperkuat penampilan, tetapi label tidak mengungkapkan mengapa produsen memilihnya."
+    }
+  ],
+  "pork": [
+    {
+      "question": "Apakah permen yang bertuliskan \"bebas gelatin\" cukup untuk mengetahui tidak mengandung turunan babi?",
+      "answer": "Tidak: klaim itu hanya mengecualikan gelatin, bukan semua turunan babi lainnya. Istilah yang memastikan babi harus dibedakan dari bahan generik yang asalnya tidak dinyatakan."
+    },
+    {
+      "question": "Bisakah ada turunan babi lain meskipun label bertuliskan \"bebas gelatin\"?",
+      "answer": "Ya, bisa ada lemak babi, kolagen, atau protein meskipun tanpa gelatin. Tetapi nama generik seperti E471 atau \"lemak hewani\" tidak menetapkan bahwa itu berasal dari babi."
+    }
+  ],
+  "beeswax": [
+    {
+      "question": "Bagaimana bisa permen tampak vegan dan memiliki lilin lebah dalam daftar bahannya?",
+      "answer": "Karena lilin lebah adalah bahan yang berasal dari hewan meskipun sisa produknya tampak berbasis tumbuhan. Lilin lebah digunakan sebagai pelapis dan glazir, jadi permen dapat mengandung E901 tanpa menambah rasa."
+    },
+    {
+      "question": "Mengapa lilin lebah ditambahkan pada permen atau buah jika tidak menambah rasa?",
+      "answer": "Karena lilin lebah dapat berfungsi sebagai lapisan glazir pelindung. Lilin lebah menambah kilau, mengurangi lengket, dan dapat membantu membatasi kehilangan kelembapan tanpa tujuan menambah rasa."
+    }
+  ],
+  "cholesterol": [
+    {
+      "question": "Apakah nilai kolesterol 0 mg memberi tahu Anda apakah E471/E481 berasal dari tumbuhan?",
+      "answer": "Tidak. Nilai kolesterol 0 mg menggambarkan informasi nutrisi yang dideklarasikan, bukan asal setiap aditif. E471 atau E481 dapat berasal dari bahan baku yang berbeda, dan asal tersebut tidak dapat disimpulkan dari angka kolesterol."
+    },
+    {
+      "question": "Mengapa kolesterol harus muncul dalam tabel nutrisi di beberapa negara tetapi tidak di negara lain?",
+      "answer": "Karena setiap sistem pelabelan memutuskan nutrisi mana yang wajib. Di beberapa pasar kolesterol harus dideklarasikan; di pasar lain tidak termasuk dalam panel nutrisi standar."
+    }
+  ],
+  "collagen": [
+    {
+      "question": "Bagaimana produk dengan klaim vegan atau smoothie buah dapat mengandung kolagen?",
+      "answer": "Karena penampilan produk atau klaim di bagian depan kemasan tidak mengubah asal bahan. Kolagen berasal dari jaringan hewan; jika tercantum, itu bertentangan dengan klaim vegan, dan label lengkap harus diperiksa."
+    },
+    {
+      "question": "Dapatkah kolagen dalam suplemen berasal dari babi jika label tidak menyatakannya?",
+      "answer": "Ya. Kolagen dapat berasal dari jaringan babi, sapi, laut, atau hewan lainnya. Jika spesiesnya tidak dideklarasikan, label saja tidak mengonfirmasi sumbernya; informasi produsen atau sertifikasi yang berlaku diperlukan."
+    }
+  ],
+  "curcumin": [
+    {
+      "question": "Mengapa kurkumin sebagai pewarna hanya diizinkan pada makanan tertentu dan dalam kondisi tertentu?",
+      "answer": "Karena diizinkan sebagai pewarna tidak berarti dapat digunakan dalam makanan apa pun atau jumlah berapa pun. E100 hanya dapat digunakan dalam kategori dan kondisi yang diizinkan oleh peraturan yang berlaku."
+    },
+    {
+      "question": "Apakah kurkumin yang digunakan sebagai pewarna sama dengan kunyit yang digunakan sebagai bumbu?",
+      "answer": "Kurkumin adalah salah satu pigmen utama dalam kunyit, tetapi kunyit adalah bumbu utuh dan mengandung banyak senyawa lain. E100 dapat berupa sediaan kurkumin yang digunakan khusus sebagai pewarna, bukan bumbu itu sendiri."
+    }
+  ],
+  "diphosphates": [
+    {
+      "question": "Mengapa fosfat juga dinilai sebagai kelompok dan bukan hanya berdasarkan E450 pada label?",
+      "answer": "Karena fosfat yang berbeda menyediakan fosfor, dan paparan yang relevan tidak bergantung pada satu nomor E saja. Label mengidentifikasi E450, tetapi menilai paparan memerlukan pertimbangan semua sumber fosfat dan fosfor."
+    }
+  ],
+  "e171": [
+    {
+      "question": "Mengapa titanium dioksida dilarang sebagai aditif pangan di beberapa negara tetapi masih diizinkan di negara lain?",
+      "answer": "Karena otoritas belum mencapai kesimpulan ilmiah atau regulasi yang sama. Uni Eropa menarik E171 setelah tidak dapat menyingkirkan genotoksisitas, sementara JECFA dan pasar lain mempertahankan penggunaan yang diizinkan."
+    },
+    {
+      "question": "Apa fungsi E171 jika tidak menambah rasa atau mengawetkan makanan?",
+      "answer": "Titanium dioksida terutama digunakan sebagai pewarna putih dan opasifier. Fungsinya visual: membuat makanan tampak lebih putih, lebih cerah, atau lebih opak, bukan menambah rasa atau mengawetkan."
+    }
+  ],
+  "endocrine-disruptors": [
+    {
+      "question": "Bagaimana bisa ada paparan terhadap gangguan endokrin jika frasa itu tidak ada dalam daftar bahan?",
+      "answer": "Karena paparan tidak selalu berasal dari bahan yang dideklarasikan: bisa juga dari bahan kontak pangan atau lingkungan. Daftar bahan saja tidak dapat mengukur paparan tersebut."
+    }
+  ],
+  "energy": [
+    {
+      "question": "Bagaimana karbohidrat dapat muncul dalam tabel bersama dengan 0 kkal atau jauh lebih sedikit kalori daripada yang diharapkan?",
+      "answer": "Karena energi dihitung dari beberapa komponen berdasarkan aturan perhitungan dan pembulatan spesifik pasar. Angka karbohidrat saja tidak cukup untuk merekonstruksi kalori pada label secara tepat."
+    },
+    {
+      "question": "Mengapa nilai kalori yang sama dapat memicu peringatan di bagian depan kemasan di satu negara tetapi tidak di negara lain?",
+      "answer": "Karena sistem pelabelan di bagian depan kemasan dan ambang batasnya berbeda-beda di setiap negara. Angka yang sama dapat memicu peringatan di satu pasar dan tidak di pasar lain."
+    },
+    {
+      "question": "Bagaimana sebuah label dapat menyatakan 0 kalori jika produk tersebut mengandung bahan-bahan yang menyediakan energi?",
+      "answer": "Karena \"0\" dapat merupakan nilai yang dibulatkan, bukan berarti sama sekali tidak ada energi. Jumlah kecil per porsi mungkin berada di bawah ambang batas yang diwajibkan untuk dinyatakan oleh sistem pelabelan."
+    }
+  ],
+  "enumbers": [
+    {
+      "question": "Apakah nomor E telah hilang dari label, atau aditif kini hanya dicantumkan dengan namanya?",
+      "answer": "Tidak. Nomor E adalah salah satu cara untuk mengidentifikasi aditif, tetapi label dapat menampilkan namanya sebagai ganti kodenya. Jadi tidak melihat \"E\" tidak berarti tidak ada aditif."
+    }
+  ],
+  "enzymes": [
+    {
+      "question": "Jika label hanya menyatakan \"enzim\", bagaimana saya bisa mengetahui apakah enzim tersebut berasal dari hewan, tumbuhan, atau mikroba?",
+      "answer": "Anda tidak dapat mengetahuinya hanya dari kata \"enzim\". Enzim dapat berasal dari hewan, tumbuhan, mikroba, atau fermentasi; jika label tidak menyatakan sumbernya, asalnya tetap tidak terkonfirmasi."
+    },
+    {
+      "question": "Dapatkah \"enzim\" menyembunyikan sumber hewani meskipun sisa daftar tampak berbasis tumbuhan?",
+      "answer": "Ya. Enzim dapat berasal dari hewan meskipun bahan-bahan lain tampak berbasis tumbuhan, dan namanya sering tidak mengungkapkan sumbernya. Jika sumbernya tidak dinyatakan, BOTIA membiarkannya tidak terkonfirmasi."
+    }
+  ],
+  "erythritol": [
+    {
+      "question": "Mengapa gram karbohidrat, serat, dan eritritol tampaknya tidak cocok seperti yang saya harapkan?",
+      "answer": "Karena tidak semua sistem menghitung dan menyatakan karbohidrat, serat, dan poliol dengan cara yang sama. Eritritol dapat dicantumkan secara terpisah, sehingga menambah atau mengurangi angka tanpa mengetahui aturan pasar dapat menghasilkan hasil yang tampaknya tidak cocok."
+    },
+    {
+      "question": "Mengapa produk dengan banyak eritritol harus memperingatkan tentang efek laksatif?",
+      "answer": "Karena eritritol diserap jauh lebih baik daripada sebagian besar poliol, tetapi jumlah besar yang dikonsumsi sekaligus masih dapat menyebabkan diare. Peringatan itu tidak berarti produk dilarang; efeknya bergantung pada berapa banyak yang dikonsumsi."
+    },
+    {
+      "question": "Haruskah eritritol dikurangi dari total karbohidrat untuk memahami \"karbohidrat bersih\"?",
+      "answer": "Tergantung pada bagaimana label yang Anda baca mendefinisikan karbohidrat. Eritritol adalah poliol dan dapat dinyatakan atau dihitung secara berbeda tergantung pasar, jadi tidak ada pengurangan universal yang berlaku untuk setiap label."
+    }
+  ],
+  "erythrosine": [
+    {
+      "question": "Mengapa Amerika Serikat mencabut otorisasi eritrosin sementara zat ini masih memiliki asupan harian yang dapat diterima yang ditetapkan secara internasional?",
+      "answer": "Karena ini adalah keputusan yang berbeda. FDA mencabut otorisasi di AS berdasarkan persyaratan hukum khusus setelah tumor tiroid teramati pada tikus, sementara JECFA mempertahankan asupan harian yang dapat diterima berdasarkan penilaiannya sendiri."
+    },
+    {
+      "question": "Mengapa eritrosin masih digunakan dalam beberapa makanan jika Amerika Serikat menariknya?",
+      "answer": "Karena penarikan di Amerika Serikat adalah keputusan regulasi nasional, bukan larangan di seluruh dunia. Yurisdiksi lain dapat terus mengizinkan eritrosin berdasarkan aturan dan ketentuan mereka sendiri."
+    }
+  ],
+  "fibre": [
+    {
+      "question": "Mengapa serat dikurangkan dari karbohidrat untuk menghitung \"karbohidrat bersih\" jika label masih menunjukkan totalnya?",
+      "answer": "Karena \"karbohidrat bersih\" adalah perhitungan yang berbeda dari angka karbohidrat resmi dalam tabel. Beberapa formula mengurangi serat karena serat tidak dicerna dan diserap seperti karbohidrat lain, sementara label mempertahankan angka yang ditetapkan oleh peraturan negara tersebut."
+    },
+    {
+      "question": "Mengapa serat dideklarasikan secara berbeda di berbagai negara?",
+      "answer": "Karena definisi regulasi serat dan cara deklarasinya berbeda antar pasar. Itulah sebabnya dua label dapat menunjukkan serat secara berbeda tanpa salah satunya harus salah."
+    }
+  ],
+  "flavor": [
+    {
+      "question": "Apa sebenarnya yang bisa disembunyikan oleh kata generik \"perisa\" atau \"perasa\" dalam daftar bahan?",
+      "answer": "\"Perisa\" atau \"perasa\" dapat mewakili satu atau banyak zat perisa tanpa menyebutkan masing-masing. Ini juga dapat mencakup pembawa atau pelarut yang membantu membawa perisa dan tidak selalu muncul secara terpisah pada label."
+    },
+    {
+      "question": "Dapatkah \"perasa\" mencakup zat yang diharapkan konsumen untuk disebutkan secara terpisah?",
+      "answer": "Ya. Deklarasi perasa generik dapat mencakup zat tambahan atau pembawa, seperti etanol atau propilen glikol, tanpa masing-masing muncul secara terpisah. Itulah sebabnya kata \"perasa\" tidak mengungkapkan komposisi lengkapnya."
+    }
+  ],
+  "phosphates": [
+    {
+      "question": "Mengapa penilaian fosfat memerlukan paparan total terhadap kelompok tersebut dan bukan hanya nomor E spesifik pada label?",
+      "answer": "Karena beberapa nomor E berbeda dapat menyediakan fosfat. Melihat hanya satu pada label tidak dapat memberi tahu Anda total paparan fosfat atau fosfor dari sisa diet."
+    }
+  ],
+  "free_sugars": [
+    {
+      "question": "Bagaimana suatu produk dapat mengatakan \"tanpa gula tambahan\" dan tetap menyediakan gula bebas?",
+      "answer": "Karena \"tanpa gula tambahan\" tidak berarti \"tanpa gula bebas\". WHO juga menganggap gula dalam madu, sirup, jus, dan konsentrat jus sebagai gula bebas."
+    },
+    {
+      "question": "Mengapa beberapa negara memberikan peringatan tentang gula bebas sementara yang lain hanya memberikan rekomendasi konsumsi?",
+      "answer": "Karena setiap negara memutuskan bagaimana mengubah rekomendasi nutrisi menjadi aturan pelabelan. Beberapa menggunakan peringatan di bagian depan kemasan, sementara yang lain menyimpan informasi tersebut sebagai saran konsumsi."
+    }
+  ],
+  "fruit_juice_concentrate": [
+    {
+      "question": "Bagaimana konsentrat jus dapat memaniskan produk yang membanggakan \"tanpa gula tambahan\"?",
+      "answer": "Karena memekatkan jus menghilangkan air dan membuat gulanya lebih terkonsentrasi. Ini dapat memberikan rasa manis bahkan jika daftar menyebutnya konsentrat buah daripada menggunakan kata \"gula\"."
+    },
+    {
+      "question": "Mengapa konsentrat jus dapat dihitung sebagai gula bebas bahkan jika muncul pada label sebagai buah?",
+      "answer": "Karena klasifikasi tidak bergantung pada bahan yang disebut buah. Menghilangkan air dari jus memekatkan gulanya, dan WHO memasukkannya ke dalam gula bebas."
+    }
+  ],
+  "gelatine": [
+    {
+      "question": "Bagaimana mungkin produk yang berlabel vegan atau vegetarian mencantumkan gelatine dalam komposisinya?",
+      "answer": "Jika daftar komposisi menyatakan gelatine, hal ini bertentangan dengan klaim vegan atau vegetarian: gelatine diperoleh dari kolagen pada jaringan hewan. Tampilan produk atau pesan di bagian depan kemasan tidak mengubah asal-usulnya."
+    },
+    {
+      "question": "Apakah kata \"gelatine\" dapat digunakan untuk bahan nabati, atau harus diidentifikasi secara berbeda?",
+      "answer": "Tidak. \"Gelatine\" berarti protein yang diperoleh dari kolagen hewan. Bahan pembentuk gel nabati, seperti agar atau pektin, adalah bahan yang berbeda dan harus diidentifikasi dengan namanya sendiri."
+    }
+  ],
+  "glycerol": [
+    {
+      "question": "Bagaimana saya bisa mengetahui apakah gliserin/gliserol pada label berasal dari hewan atau nabati?",
+      "answer": "Di Uni Eropa, sejak 2023, E422 food-grade hanya dapat diperoleh dari minyak dan lemak nabati. Pasar lain mengizinkan metode produksi lain, dan label tidak menyebutkan mana yang digunakan, jadi di sana hanya produsen yang dapat memastikan asalnya."
+    },
+    {
+      "question": "Dapatkah produk yang disajikan sebagai \"bebas susu\" mengandung gliserol yang berasal dari hewan?",
+      "answer": "Di luar Uni Eropa, ya: \"bebas susu\" berarti tanpa bahan susu, tidak harus tanpa bahan yang berasal dari hewan. Di UE, sejak 2023, E422 food-grade harus berasal dari minyak dan lemak nabati."
+    }
+  ],
+  "arabic_gum": [
+    {
+      "question": "Mengapa gum arab ada dalam produk ini, dan apa fungsinya dalam formulasi?",
+      "answer": "Gum arab dapat berfungsi sebagai pengemulsi, penstabil, pembawa, atau penebal. Gum ini sering digunakan ketika suatu formulasi perlu tetap stabil tanpa menjadi terlalu kental."
+    },
+    {
+      "question": "Mengapa produk berlabel \"tanpa aditif\" dapat mengandung gum arab?",
+      "answer": "Karena \"tanpa aditif\" bukanlah definisi hukum tunggal dan setiap merek menentukan apa yang termasuk dalam frasa tersebut. Gum arab adalah aditif yang diizinkan, E414, meskipun berasal dari resin pohon."
+    }
+  ],
+  "cassia_gum": [
+    {
+      "question": "Bagaimana suatu aditif dapat diizinkan jika JECFA masih memiliki spesifikasi sementara dan meminta data tambahan?",
+      "answer": "Karena izin penggunaan dan spesifikasi teknis final tidak sepenuhnya sama. JECFA dapat mempertahankan spesifikasi sementara sambil meminta data tambahan, meskipun aditif tersebut memiliki penggunaan yang diizinkan di yurisdiksi tertentu."
+    },
+    {
+      "question": "Mengapa gum cassia digunakan jauh lebih sedikit daripada gum guar atau gum locust bean?",
+      "answer": "Karena penggunaan yang diizinkan lebih terbatas dan evaluasi teknisnya masih terbuka. Gum guar dan gum locust bean telah diizinkan jauh lebih lama di lebih banyak kategori pangan."
+    }
+  ],
+  "gellan_gum": [
+    {
+      "question": "Mengapa gum gellan ada dalam produk ini, dan apa pengaruhnya terhadap teksturnya?",
+      "answer": "Gum gellan adalah polisakarida yang diperoleh melalui fermentasi yang membentuk gel dan menstabilkan dalam jumlah sangat kecil. Misalnya, gum ini dapat membantu menjaga partikel atau mineral tetap terdistribusi merata tanpa membuat produk menjadi kental."
+    },
+    {
+      "question": "Mengapa minuman nabati mengandung gellan sementara susu tidak membutuhkannya?",
+      "answer": "Karena partikel dan mineral dalam minuman nabati cenderung mengendap di dasar. Gum gellan menjaga mereka tetap terdispersi; susu tidak membutuhkannya karena komposisinya sendiri sudah menjaga mereka tetap tersuspensi."
+    }
+  ],
+  "guar_gum": [
+    {
+      "question": "Bagaimana seseorang bisa bereaksi terhadap gom guar jika tidak muncul secara jelas dalam daftar bahan beberapa produk?",
+      "answer": "Karena mungkin muncul sebagai E412 atau \"gom guar\", dan ini tidak selalu dikenali sebagai bahan yang sama. Seseorang yang hanya mencari salah satu bentuk tersebut mungkin melewatkannya pada label."
+    },
+    {
+      "question": "Mengapa gom guar masih diizinkan dalam banyak makanan sementara Uni Eropa telah menarik penggunaan tertentu dalam makanan untuk bayi dan anak kecil?",
+      "answer": "Karena penggunaan umum dan makanan untuk bayi dan anak kecil tidak selalu dinilai dengan tingkat bukti yang sama. Uni Eropa mempertahankan banyak penggunaan E412 tetapi menarik penggunaan tertentu untuk bayi dan anak kecil karena menganggap data yang tersedia tidak cukup untuk kategori tersebut."
+    }
+  ],
+  "karaya_gum": [
+    {
+      "question": "Apa fungsi gom karaya, dan mengapa gom karaya muncul di sangat sedikit produk?",
+      "answer": "gom karaya adalah gum tanaman yang menyerap air dan digunakan sebagai penebal, penstabil, atau emulsifier. gom karaya digunakan dalam jumlah kecil dan sekarang jauh lebih jarang muncul dibandingkan gum makanan lainnya."
+    },
+    {
+      "question": "Mengapa gom karaya digantikan oleh gum yang lebih murah?",
+      "answer": "Karena gom karaya diperoleh dari resin pohon dan pasokannya terbatas serta tidak teratur. Gum lain menjalankan fungsi serupa dengan biaya dan ketersediaan yang lebih stabil."
+    }
+  ],
+  "shellac": [
+    {
+      "question": "Apa arti \"shellac\" atau \"confectioner's glaze\", dan mengapa namanya tidak menjelaskan asal-usulnya dari serangga?",
+      "answer": "\"Shellac\" atau \"confectioner's glaze\" adalah resin yang dikeluarkan oleh serangga dan digunakan untuk memberikan kilau. Nama komersialnya menjelaskan lapisannya tetapi tidak membuat asal hewaninya jelas."
+    },
+    {
+      "question": "Mengapa permen yang mengilap atau apel yang berkilau bisa mengandung lak?",
+      "answer": "Karena lak membentuk lapisan tipis yang menambah kilau dan mengurangi kehilangan kelembapan. lak digunakan sebagai pelapis, sehingga bisa berada di permukaan tanpa menjadi bahan di dalam produk."
+    }
+  ],
+  "tara_gum": [
+    {
+      "question": "Apa fungsi gom tara, dan bagaimana bedanya dengan guar atau gom kacang lokus?",
+      "answer": "Tara, guar, dan gom kacang lokus adalah gum tanaman yang mengentalkan dengan menahan air, tetapi berasal dari biji yang berbeda dan tidak berperilaku persis sama. Tara sering dikombinasikan dengan gum lain karena dapat bekerja lebih baik bersama-sama."
+    },
+    {
+      "question": "Dapatkah gom tara menggantikan guar dalam produk yang menghindarinya?",
+      "answer": "gom tara dapat menjalankan fungsi penebalan yang serupa, tetapi tidak berperilaku sama: keduanya berasal dari biji yang berbeda dan menghasilkan viskositas serta tekstur yang berbeda. Jika Anda menghindari guar karena alasan tertentu, Anda harus memeriksa apakah alternatifnya sesuai dengan alasan tersebut."
+    }
+  ],
+  "xanthan_gum": [
+    {
+      "question": "Bagaimana saya bisa tahu apakah gom xanthan pada label cocok untuk diet vegan jika substrat produksinya tidak dinyatakan?",
+      "answer": "Anda tidak dapat memastikannya hanya dari namanya jika substrat fermentasi penting bagi Anda. gom xanthan diproduksi dengan fermentasi sumber karbohidrat, dan sumber tersebut biasanya tidak dinyatakan pada label."
+    },
+    {
+      "question": "Mengapa gom xanthan muncul di begitu banyak produk bebas gluten?",
+      "answer": "Karena gluten memberikan elastisitas dan struktur pada adonan, dan ketika dihilangkan, diperlukan sesuatu yang lain untuk memainkan peran tersebut. gom xanthan membantu mengikat adonan dan mencegah produk hancur."
+    }
+  ],
+  "halal": [
+    {
+      "question": "Apakah membaca daftar bahan cukup untuk mengetahui apakah suatu produk halal, atau diperlukan sertifikasi?",
+      "answer": "Membaca daftar bahan menunjukkan apa yang dinyatakan pada label tetapi tidak membuktikan apa yang tidak ada: asal usul aditif tertentu, proses, kontaminasi silang, atau metode penyembelihan. Sertifikasi halal juga memeriksa aspek-aspek tersebut di luar daftar bahan."
+    },
+    {
+      "question": "Bahan-bahan mana dengan asal usul yang bervariasi yang berarti daftar bahan tidak cukup untuk memutuskan apakah sesuatu halal?",
+      "answer": "Bahan seperti E471, E472, lesitin, enzim, atau perisa dapat berasal dari berbagai sumber. Jika label tidak menyatakan asalnya, itu saja tidak cukup untuk mengonfirmasi kriteria halal."
+    }
+  ],
+  "haram": [
+    {
+      "question": "Dapatkah suatu bahan tampak netral berdasarkan namanya tetapi haram karena asal usul atau prosesnya?",
+      "answer": "Ya. Nama seperti E471, \"enzim\", atau \"perisa\" tidak selalu mengungkapkan dari mana asalnya atau bagaimana diperoleh. Jika sumber atau prosesnya dilarang, klasifikasinya berubah meskipun namanya tampak netral."
+    },
+    {
+      "question": "Informasi apa yang hilang ketika suatu bahan bisa halal atau haram tergantung pada asal usulnya?",
+      "answer": "Sumber spesifiknya dan, dalam beberapa kasus, bagaimana bahan itu diproduksi. Jika label tidak memberikan informasi tersebut, BOTIA tidak mengubahnya menjadi halal atau haram: BOTIA membiarkannya sebagai syubhat."
+    }
+  ],
+  "locust_bean_gum": [
+    {
+      "question": "Mengapa produk organik dapat mengandung gom kacang lokus dan getah lainnya?",
+      "answer": "Karena \"organik\" tidak berarti \"tanpa aditif\". gom kacang lokus berasal dari biji tanaman dan dapat digunakan untuk mengentalkan atau menstabilkan produk ketika aturan pasar tersebut mengizinkannya."
+    },
+    {
+      "question": "Mengapa gom kacang lokus memerlukan penilaian regulasi jika telah lama digunakan sebagai pengental?",
+      "answer": "Karena penggunaan selama bertahun-tahun tidak menggantikan penilaian keamanan. Kemurniannya, jumlah yang digunakan, dan paparan total juga ditinjau untuk mengonfirmasi bahwa kondisi yang diizinkan tetap sesuai."
+    }
+  ],
+  "bha": [
+    {
+      "question": "Bagaimana BHA dapat tetap diizinkan jika IARC mengklasifikasikannya sebagai mungkin karsinogenik?",
+      "answer": "Karena klasifikasi IARC menunjukkan potensi bahaya, bukan risiko dari jumlah tertentu dalam makanan. Izin juga mempertimbangkan dosis, paparan, dan kondisi penggunaan yang diizinkan."
+    },
+    {
+      "question": "Mengapa jenis sereal yang sama dapat mengandung BHA/BHT di satu negara dan memiliki formulasi berbeda di negara lain?",
+      "answer": "Karena aturan tentang antioksidan mana yang dapat digunakan dan dalam jumlah berapa berbeda-beda di setiap negara. Perusahaan dapat memformulasi ulang produk yang sama untuk memenuhi aturan masing-masing pasar."
+    }
+  ],
+  "indigotine": [
+    {
+      "question": "Mengapa indigotine hanya diizinkan untuk penggunaan dan jumlah tertentu?",
+      "answer": "Karena izin tidak memperbolehkan pewarna digunakan dalam makanan apa pun atau dalam jumlah berapa pun. Indigotine hanya dapat digunakan dalam kategori dan pada tingkat yang diizinkan oleh setiap peraturan."
+    },
+    {
+      "question": "Mengapa produk biru dapat mengandung indigotine jika pewarna alami tersedia?",
+      "answer": "Karena pewarna biru alami sedikit, mahal, dan tidak terlalu stabil terhadap cahaya, panas, dan keasaman. Indigotine memberikan warna biru yang seragam yang tetap stabil selama masa simpan produk."
+    }
+  ],
+  "soy_isoflavones": [
+    {
+      "question": "Berapa banyak isoflavon yang sebenarnya disediakan oleh produk soya jika labelnya tidak mencantumkannya?",
+      "answer": "Anda tidak dapat mengetahuinya hanya dari melihat \"soya\" dalam daftar. Jumlah isoflavon bergantung pada bahan dan cara pengolahannya, dan labelnya biasanya tidak mencantumkannya."
+    },
+    {
+      "question": "Apakah setiap produk soya menyediakan isoflavon, atau bergantung pada cara pengolahannya?",
+      "answer": "Bergantung pada bahan dan pengolahannya. Produk soya yang kurang diproses mempertahankan lebih banyak isoflavon, sedangkan turunan yang sangat diproses seperti minyak olahan mungkin hanya mempertahankan sedikit. Labelnya biasanya tidak mencantumkan jumlahnya."
+    }
+  ],
+  "isomalt": [
+    {
+      "question": "Apakah isomalt dan maltitol sama, dan bagaimana pengaruhnya terhadap perhitungan karbohidrat?",
+      "answer": "Tidak. Isomalt dan maltitol adalah poliol yang berbeda. Keduanya mungkin muncul terpisah dari gula atau dalam perhitungan karbohidrat tergantung pada pasarnya, sehingga tidak boleh dianggap sebagai angka yang sama."
+    },
+    {
+      "question": "Mengapa makanan yang mengandung isomalt mungkin memerlukan peringatan tentang efek laksatif?",
+      "answer": "Karena sebagian isomalt tidak diserap dan dapat menarik air ke dalam usus. Di Uni Eropa, peringatan \"konsumsi berlebihan dapat menyebabkan efek laksatif\" diwajibkan ketika suatu makanan mengandung lebih dari 10% poliol tambahan."
+    }
+  ],
+  "glucose_syrup": [
+    {
+      "question": "Bagaimana bisa tertulis 0 g gula tambahan jika sirup glukosa ada dalam bahannya?",
+      "answer": "Tergantung di mana labelnya. Jika gula tambahan dicantumkan dalam tabel, jumlah yang sangat kecil per porsi mungkin dibulatkan menjadi 0 g. Di Uni Eropa, tidak ada kolom seperti itu: \"tanpa gula tambahan\" adalah klaim pada kemasan yang tidak dapat digunakan jika sirup glukosa telah ditambahkan."
+    },
+    {
+      "question": "Mengapa sirup glukosa dihitung sebagai gula bebas meskipun tidak ditulis secara sederhana sebagai \"gula\"?",
+      "answer": "Karena nama bahan tidak mengubah apa itu: sirup glukosa terdiri dari gula yang diperoleh dari pati. Itulah sebabnya WHO memasukkannya ke dalam gula bebas."
+    }
+  ],
+  "ginger": [
+    {
+      "question": "Bagaimana saya bisa tahu apakah suatu produk mengandung jahe jika labelnya hanya mencantumkan \"rempah-rempah\"?",
+      "answer": "Anda tidak dapat mengetahuinya hanya dari kata itu. \"Rempah-rempah\" dapat mengelompokkan beberapa rempah tanpa menyebutkan masing-masing, sehingga jahe mungkin ada dalam campuran tanpa muncul secara terpisah."
+    },
+    {
+      "question": "Dapatkah \"rempah-rempah\" menyembunyikan jahe yang penting untuk alergi?",
+      "answer": "Ya. Jika labelnya hanya menyebut \"rempah-rempah\", itu tidak dapat menyingkirkan kemungkinan jahe dalam campuran. Jika Anda perlu menghindarinya, produsen dapat mengonfirmasi komposisi yang tepat."
+    }
+  ],
+  "konjac": [
+    {
+      "question": "Bagaimana produk dengan konjac dapat mencantumkan 6 g karbohidrat, 6 g serat, dan 0 karbohidrat netto?",
+      "answer": "Karena \"karbohidrat netto\" biasanya dihitung dengan mengurangi serat dari total karbohidrat. Jika 6 g karbohidrat tersebut adalah serat konjac, perhitungan itu dapat menghasilkan 0 g netto, meskipun tabelnya masih menunjukkan 6 g karbohidrat."
+    },
+    {
+      "question": "Mengapa konjac diizinkan dalam banyak makanan tetapi dilarang dalam jelly mini-cup tertentu?",
+      "answer": "Karena masalahnya bersifat fisik, bukan kimia. Konjac dapat membentuk gel yang sangat keras yang tidak mudah hancur di mulut dan meningkatkan risiko tersedak pada jelly kecil sekali suap."
+    }
+  ],
+  "l_cysteine": [
+    {
+      "question": "Bagaimana saya bisa tahu apakah L-cysteine dalam roti berasal dari sumber hewani, mikroba, atau sintetis?",
+      "answer": "Anda tidak dapat mengetahuinya hanya dari label. L-cysteine dapat diproduksi melalui fermentasi, sintesis, atau dari bahan baku kaya keratin, dan jika asal-usulnya penting, hanya produsen yang dapat mengonfirmasinya."
+    },
+    {
+      "question": "Mengapa peraturan Eropa secara eksplisit menyatakan bahwa L-cysteine tidak boleh berasal dari rambut manusia?",
+      "answer": "Karena secara historis L-cysteine juga diperoleh dari rambut manusia. Aturan Eropa secara eksplisit mengecualikan sumber tersebut, meskipun rute produksi lain yang diizinkan tetap ada."
+    }
+  ],
+  "lactitol": [
+    {
+      "question": "Mengapa produk dengan banyak lactitol harus memperingatkan tentang kemungkinan efek laksatif?",
+      "answer": "Karena sangat sedikit lactitol yang diserap, dan sebagian besar mencapai usus besar, di mana ia menarik air dan difermentasi. Meskipun namanya mirip dengan laktosa, lactitol adalah senyawa yang berbeda dan bukan laktosa."
+    },
+    {
+      "question": "Apakah lactitol mengandung laktosa karena namanya sangat mirip?",
+      "answer": "Tidak. Lactitol dibuat dari laktosa, tetapi hasilnya adalah senyawa yang berbeda dan bukan lagi laktosa. Kemiripannya terletak pada nama dan asal, bukan pada apa yang terkandung dalam produk akhir."
+    }
+  ],
+  "lecithins": [
+    {
+      "question": "Apakah \"lesitin\" cukup untuk mengetahui apakah berasal dari soya, telur, atau sumber lain?",
+      "answer": "Tidak. \"lesitin\" menyebutkan nama bahan tetapi belum tentu asalnya. lesitin dapat berasal dari soya, bunga matahari, telur, atau sumber lain; jika label tidak mencantumkannya, Anda tidak dapat mengetahui mana yang digunakan."
+    },
+    {
+      "question": "Apakah \"lesitin kedelai\" menyelesaikan asal lesitin, atau masih ada ketidakpastian tentang prosesnya?",
+      "answer": "Itu menyelesaikan bahan bakunya: ini menunjukkan bahwa lesitin berasal dari soya. Yang tidak diberitahukan label kepada Anda adalah setiap detail bagaimana lesitin diekstraksi atau diproses."
+    }
+  ],
+  "maltitol": [
+    {
+      "question": "Bisakah klaim \"4 g karbohidrat bersih\" menyesatkan jika produk mengandung maltitol?",
+      "answer": "Bisa, jika semua maltitol telah dikurangkan seolah-olah tidak dihitung. Maltitol hanya sebagian diserap dan memberikan energi, jadi \"karbohidrat bersih\" bergantung pada formula merek dan bukan angka universal."
+    },
+    {
+      "question": "Mengapa maltitols dapat memerlukan peringatan tentang efek laksatif?",
+      "answer": "Karena maltitol hanya sebagian diserap dan sisanya mencapai usus besar, di mana dapat menyebabkan gas atau efek laksatif. Ini sangat umum dalam cokelat dan permen \"bebas gula\" dan juga sering muncul dalam produk yang mengiklankan \"karbohidrat bersih\" rendah."
+    },
+    {
+      "question": "Bisakah semua maltitol dikurangkan dari karbohidrat untuk menghitung \"karbohidrat bersih\"?",
+      "answer": "Tidak ada aturan universal yang mengizinkannya dikurangkan sepenuhnya pada setiap label. Maltitol sebagian diserap, dan \"karbohidrat bersih\" tidak dihitung dengan cara yang sama di setiap pasar atau oleh setiap merek."
+    }
+  ],
+  "maltodextrin": [
+    {
+      "question": "Bagaimana suatu produk dapat menyatakan \"bebas gula\" atau 0 g karbohidrat jika mengandung maltodextrin?",
+      "answer": "Karena \"bebas gula\" dan \"0 g karbohidrat\" tidak berarti hal yang sama. Maltodextrin tidak dihitung sebagai \"sugars\" menurut definisi Eropa, tetapi merupakan karbohidrat; apakah tabel menunjukkan 0 g bergantung pada jumlah per porsi dan aturan pembulatan di pasar tersebut."
+    },
+    {
+      "question": "Bagaimana sebuah label dapat menyatakan 0 g karbohidrat jika maltodekstrin termasuk dalam bahan-bahan pertama?",
+      "answer": "Karena daftar mengurutkan bahan berdasarkan berat, sedangkan tabel nutrisi menyatakan jumlah berdasarkan basis tertentu atau per porsi dan dapat menerapkan pembulatan. Jika maltodekstrin termasuk dalam bahan-bahan pertama, periksa ukuran porsi dan aturan pasar sebelum menafsirkan 0 g tersebut."
+    }
+  ],
+  "mannitol": [
+    {
+      "question": "Mengapa produk dengan mannitol mungkin memerlukan peringatan khusus meskipun aditif tersebut diizinkan?",
+      "answer": "Karena mannitol diserap dengan buruk dan dapat memiliki efek laksatif pada jumlah yang relatif rendah. Dalam makanan, mannitol terutama muncul dalam permen karet, permen, dan produk serupa, meskipun juga dapat memiliki kegunaan teknis lain."
+    },
+    {
+      "question": "Mengapa mannitol muncul dalam permen karet dan permen tetapi tidak dalam produk konfeksioneri lain?",
+      "answer": "Karena mannitol tidak menyerap kelembapan, sehingga membantu mencegah permen karet dan permen saling menempel. Dalam konfeksioneri lain, sifat tersebut tidak diperlukan dan poliol yang lebih murah digunakan."
+    }
+  ],
+  "mashbooh": [
+    {
+      "question": "Apa yang membuat suatu bahan diklasifikasikan sebagai syubhat daripada halal atau haram?",
+      "answer": "Informasi yang hilang yang diperlukan untuk memutuskan, biasanya asal atau prosesnya. Jika label tidak dapat mengonfirmasi bahwa bahan tersebut halal atau menunjukkan bahwa bahan tersebut haram, BOTIA membiarkannya sebagai syubhat."
+    }
+  ],
+  "honey": [
+    {
+      "question": "Bagaimana produk berlabel vegan dapat mengandung madu?",
+      "answer": "Karena madu diproduksi oleh lebah dan karenanya berasal dari hewan. Jika madu muncul dalam bahan-bahan, hal itu bertentangan dengan klaim vegan bahkan jika sisa produk berbasis tanaman."
+    },
+    {
+      "question": "Mengapa madu dianggap gula bebas dan juga tidak dianjurkan untuk anak di bawah satu tahun?",
+      "answer": "Karena gula dalam madu dihitung sebagai gula bebas meskipun madu adalah makanan alami. Madu dihindari pada anak di bawah satu tahun karena alasan berbeda: risiko botulisme infantil."
+    }
+  ],
+  "monk_fruit": [
+    {
+      "question": "Mengapa produk yang disebut \"pemanis buah monk\" bisa hampir seluruhnya terdiri dari eritritol?",
+      "answer": "Karena ekstrak buah monk sangat manis dan hanya diperlukan jumlah yang sangat kecil. Eritritol memberikan volume dan memungkinkan produk ditakar seperti pemanis meja, meskipun bukan bahan yang memberikan semua rasa manisnya."
+    },
+    {
+      "question": "Mengapa JECFA menetapkan batas sementara untuk buah monk jika digunakan sebagai pemanis?",
+      "answer": "Karena penilaiannya belum selesai. JECFA memperkirakan bahwa, jika digunakan pada tingkat maksimum yang diusulkan, paparan anak-anak dapat mencapai sekitar empat kali batas tersebut. Ini adalah kekhawatiran tentang skenario konsumsi tersebut, bukan tentang setiap produk yang mengandung buah monk."
+    }
+  ],
+  "e471": [
+    {
+      "question": "Jika E471 dapat berasal dari lemak hewani atau nabati, bagaimana saya bisa mengetahui asalnya dengan membaca label?",
+      "answer": "Anda biasanya tidak dapat mengetahuinya hanya dari \"E471\" atau \"mono- dan digliserida\". Label mengidentifikasi aditif tetapi tidak asal asam lemaknya; jika hal itu penting, produsen atau sertifikasi yang berlaku harus mengonfirmasinya."
+    },
+    {
+      "question": "Bagaimana produk dapat menyatakan 0 g lemak dan mengandung mono- dan digliserida seperti E471?",
+      "answer": "Karena E471 dapat hadir dalam jumlah kecil yang tidak terlihat mengubah angka lemak dalam tabel. Daftar bahan menunjukkan bahwa E471 hadir, tetapi tabel nutrisi menyatakan jumlah dan dapat menerapkan pembulatan tergantung pada pasar."
+    },
+    {
+      "question": "Apakah sertifikasi halal memungkinkan Anda menyimpulkan bahwa E471 juga vegan?",
+      "answer": "Tidak. E471 yang berasal dari hewan dapat kompatibel dengan sertifikasi halal jika memenuhi persyaratannya dan tetap tidak vegan. Halal dan vegan menggunakan kriteria yang berbeda."
+    }
+  ],
+  "neohesperidin_dc": [
+    {
+      "question": "Mengapa JECFA mempertahankan batas sementara untuk neohesperidin DC dan masih meminta studi tambahan?",
+      "answer": "Karena penilaiannya belum selesai. JECFA menetapkan batas sementara sambil menunggu data tambahan, termasuk studi toksisitas reproduksi."
+    },
+    {
+      "question": "Dari mana neohesperidin berasal jika namanya terdengar terkait jeruk?",
+      "answer": "Justru dari sana: diperoleh dari senyawa yang ditemukan dalam jeruk pahit. Senyawa ini diubah secara kimia menjadi pemanis, sehingga produk akhirnya bukan lagi senyawa buah asli."
+    }
+  ],
+  "neotame": [
+    {
+      "question": "Apa yang sebenarnya berubah ketika dua versi produk yang sama menggunakan neotame atau pemanis berbeda?",
+      "answer": "Formulasinya berubah: setiap pemanis memiliki kekuatan dan rasa yang berbeda, sehingga tidak digunakan dalam jumlah yang sama dan tidak menghasilkan hasil yang persis sama. Daftar bahan menyebutkan mana yang digunakan, tetapi biasanya tidak berapa banyak."
+    },
+    {
+      "question": "Mengapa neotame tidak memerlukan peringatan fenilalanin seperti aspartam?",
+      "answer": "Karena, meskipun secara kimia terkait dengan aspartam, neotame digunakan dalam jumlah yang jauh lebih kecil. Jumlah fenilalanin yang dapat disediakannya dalam kondisi penggunaan normal dianggap tidak signifikan."
+    }
+  ],
+  "nutrition": [
+    {
+      "question": "Mengapa angka untuk porsi berbeda dalam tabel nutrisi yang sama tidak selalu kelipatan yang tepat?",
+      "answer": "Karena setiap angka dapat dihitung dan dibulatkan secara terpisah. Mengalikan nilai yang sudah dibulatkan mungkin tidak memberikan angka yang persis sama dengan yang dinyatakan untuk porsi lainnya."
+    },
+    {
+      "question": "Apakah perbedaan antar porsi merupakan kesalahan, atau bisa disebabkan oleh aturan pembulatan?",
+      "answer": "Itu belum tentu kesalahan. Dua nilai bisa tampak tidak konsisten karena peraturan mengizinkan jumlah dibulatkan sebelum ditampilkan pada label."
+    }
+  ],
+  "omega_3": [
+    {
+      "question": "Apakah produk \"omega-3 vegetarian\" pasti vegan jika mengandung perisa alami?",
+      "answer": "Tidak. \"Vegetarian\" tidak berarti \"vegan\", dan perisa alami dapat berasal dari hewan atau tumbuhan atau fermentasi. Jika asalnya tidak dinyatakan, label tidak dapat memastikan bahwa produk itu vegan."
+    },
+    {
+      "question": "Bagaimana saya bisa tahu apakah omega-3 dalam suatu produk berasal dari ikan atau alga?",
+      "answer": "Jika label menyebutkan sumbernya —minyak ikan, minyak alga, minyak biji rami— itu memberi tahu Anda. Jika hanya tertulis \"omega-3\", Anda tidak bisa tahu; dan jenisnya penting, karena biji rami menyediakan ALA sementara ikan atau alga menyediakan EPA dan DHA."
+    }
+  ],
+  "packaging-migrants": [
+    {
+      "question": "Bagaimana zat dapat bermigrasi dari kemasan ke makanan jika tidak pernah muncul sebagai bahan?",
+      "answer": "Karena zat tersebut tidak ditambahkan sebagai bahan: zat dapat berpindah ke makanan dari material yang mewadahi atau menyentuhnya. Migrasi ini bergantung pada zat, kemasan, dan kondisi penggunaan, dan tidak muncul dalam daftar bahan."
+    }
+  ],
+  "pectins": [
+    {
+      "question": "Apa perbedaan antara pektin dan gelatin ketika keduanya digunakan untuk tekstur?",
+      "answer": "Keduanya dapat membentuk gel, tetapi keduanya tidak sama. Pektin adalah polisakarida nabati yang diekstrak terutama dari buah; gelatin adalah protein yang diperoleh dari kolagen hewani."
+    },
+    {
+      "question": "Mengapa pektin hanya diizinkan dalam kondisi penggunaan tertentu meskipun berasal dari tumbuhan?",
+      "answer": "Karena suatu aditif yang berasal dari tumbuhan tidak berarti dapat digunakan tanpa batas. Izin juga menetapkan makanan apa saja yang boleh mengandungnya dan dalam kondisi apa."
+    }
+  ],
+  "lead": [
+    {
+      "question": "Bagaimana timbal bisa ada dalam makanan jika tidak muncul sebagai bahan?",
+      "answer": "Karena timbal adalah kontaminan, bukan bahan tambahan. Timbal dapat masuk ke dalam makanan dari tanah, air, beberapa material, atau selama produksi, itulah sebabnya tidak muncul dalam daftar bahan."
+    },
+    {
+      "question": "Mengapa tidak ada lagi asupan timbal yang dianggap dapat ditoleransi, namun undang-undang menetapkan batas berbeda untuk makanan yang berbeda?",
+      "answer": "Karena belum ada paparan timbal tanpa efek yang dapat ditetapkan. Batas hukum tidak berarti \"jumlah yang aman\": batas tersebut bertujuan untuk mengurangi kontaminasi, dengan mempertimbangkan seberapa banyak timbal yang dapat terakumulasi dalam setiap jenis makanan dan seberapa banyak yang dikonsumsi."
+    }
+  ],
+  "polyols": [
+    {
+      "question": "Haruskah saya mengurangi poliol dari karbohidrat untuk menghitung \"karbohidrat bersih\"?",
+      "answer": "Tidak ada pengurangan universal yang berlaku untuk setiap produk. \"Karbohidrat bersih\" tidak diatur dengan cara yang sama di setiap pasar, dan poliol yang berbeda tidak diserap secara setara."
+    },
+    {
+      "question": "Mengapa \"poliol\" dapat muncul sebagai informasi gizi terpisah dari gula?",
+      "answer": "Karena poliol adalah karbohidrat tetapi tidak diklasifikasikan sebagai gula. Beberapa sistem pelabelan mengizinkan atau mewajibkan poliol ditampilkan secara terpisah agar tidak tercampur ke dalam angka gula."
+    },
+    {
+      "question": "Apakah semua poliol berperilaku sama saat menghitung karbohidrat?",
+      "answer": "Tidak. Eritritol, maltitol, sorbitol, isomalt, dan poliol lainnya berbeda dalam penyerapan dan kontribusi energi. Memperlakukan semuanya sama dapat memberikan angka \"karbohidrat bersih\" yang menyesatkan."
+    }
+  ],
+  "ponceau_4r": [
+    {
+      "question": "Mengapa Ponceau 4R diizinkan di Eropa dengan peringatan untuk anak-anak tetapi tidak diizinkan sebagai pewarna makanan di Amerika Serikat?",
+      "answer": "Karena Eropa dan Amerika Serikat tidak mengambil keputusan regulasi yang sama terhadap pewarna ini. Di UE, pewarna ini dapat digunakan dalam kondisi tertentu dan dengan peringatan khusus; di Amerika Serikat, pewarna ini tidak diizinkan sebagai pewarna makanan."
+    },
+    {
+      "question": "Mengapa produk yang sama dapat menggunakan pewarna berbeda tergantung pada negara tempat produk dijual?",
+      "answer": "Karena setiap pasar mengizinkan pewarna yang berbeda dan mewajibkan peringatan yang berbeda. Produsen dapat merumuskan ulang produk untuk mematuhi aturan tersebut atau menghindari peringatan sambil mempertahankan nama komersial yang sama."
+    }
+  ],
+  "protein": [
+    {
+      "question": "Apa arti klaim \"protein\" yang menonjol di bagian depan jika produk masih memiliki banyak kalori?",
+      "answer": "Artinya produk tersebut memenuhi kriteria pasar untuk menonjolkan kandungan proteinnya. Itu tidak memberi tahu Anda jumlah kalorinya: total energi juga bergantung pada lemak, karbohidrat, dan sisa formulasi."
+    },
+    {
+      "question": "Mengapa protein dihitung dan dinyatakan secara berbeda di setiap sistem pelabelan negara?",
+      "answer": "Karena setiap sistem menetapkan aturan perhitungan, pembulatan, dan penyajiannya sendiri. Komposisi yang sama dapat menghasilkan angka yang sedikit berbeda bergantung pada pasar tempat produk tersebut dilabeli."
+    }
+  ],
+  "saccharin": [
+    {
+      "question": "Bagaimana sakarin dapat muncul pada label jika banyak orang percaya bahwa sakarin dilarang?",
+      "answer": "Karena sakarin tidak dilarang secara umum. Sakarin tetap diizinkan sebagai pemanis di berbagai pasar dengan syarat penggunaan dan batas asupan yang telah ditetapkan."
+    },
+    {
+      "question": "Mengapa EFSA dan JECFA saat ini menggunakan batas harian yang berbeda untuk sakarin?",
+      "answer": "Karena penilaian mereka independen dan tidak diperbarui pada waktu yang sama atau dengan bukti yang persis sama. EFSA menilai ulang sakarin pada tahun 2024 dan menaikkan batasnya, sementara JECFA mempertahankan batasnya sendiri."
+    }
+  ],
+  "salt": [
+    {
+      "question": "Haruskah saya menjumlahkan garam dan natrium pada label yang sama?",
+      "answer": "Tidak. Keduanya biasanya merupakan dua cara untuk menyatakan informasi terkait, bukan dua jumlah yang harus dijumlahkan. Untuk mengonversi natrium menjadi garam, kalikan natrium dengan 2,5."
+    },
+    {
+      "question": "Mengapa sebagian label mencantumkan \"garam\" dan yang lain \"natrium\" jika keduanya terkait?",
+      "answer": "Karena setiap sistem pelabelan memutuskan mana yang ditampilkan. Natrium adalah mineralnya; garam dihitung darinya, kira-kira sebagai natrium × 2,5."
+    }
+  ],
+  "blood": [
+    {
+      "question": "Apa artinya menemukan turunan darah pada label, dan bagaimana asalnya harus diidentifikasi?",
+      "answer": "Turunan darah dapat muncul sebagai plasma, protein plasma, atau hemoglobin tanpa kata \"darah\". Jika jenis hewannya penting, label harus mencantumkannya atau produsen harus mengonfirmasinya; BOTIA tidak menyimpulkannya dari nama generik."
+    },
+    {
+      "question": "Pada produk apa turunan darah dapat muncul tanpa namanya menyebutkan hal tersebut?",
+      "answer": "Turunan darah dapat muncul sebagai plasma, protein plasma, atau hemoglobin dalam sosis, pâté, dan produk daging olahan. Tidak ada dari nama-nama tersebut yang mengandung kata \"darah\", meskipun berasal dari darah."
+    }
+  ],
+  "sodium": [
+    {
+      "question": "Bagaimana hubungan miligram natrium dengan gram garam yang sebenarnya saya konsumsi?",
+      "answer": "Untuk memperkirakan garam, kalikan natrium dengan 2,5. Misalnya, 400 mg natrium kira-kira setara dengan 1 g garam."
+    },
+    {
+      "question": "Mengapa ambang batas yang memicu peringatan natrium berbeda-beda di setiap negara?",
+      "answer": "Karena setiap negara menetapkan ambang batas dan sistem peringatannya sendiri. Jumlah natrium yang sama dapat berada di atas batas di satu pasar dan di bawahnya di pasar lain."
+    }
+  ],
+  "soy": [
+    {
+      "question": "Mengapa minyak kedelai dapat muncul dalam bahan tetapi \"kedelai\" tidak selalu muncul dalam pernyataan alergen?",
+      "answer": "Karena beberapa minyak kedelai yang sangat halus dapat dikecualikan dari pernyataan alergen tertentu ketika prosesnya menghilangkan hampir semua protein yang menyebabkan reaksi. Melihat \"minyak kedelai\" tidak berarti setiap rangkaian aturan memperlakukannya seperti protein kedelai."
+    },
+    {
+      "question": "Mengapa soya harus ditonjolkan dalam senarai ramuan manakala sesetengah derivatif mungkin mendapat pengecualian?",
+      "answer": "Kerana keperluan itu memberi tumpuan kepada ramuan yang mampu membekalkan protein alergenik yang berkaitan. Sesetengah derivatif yang sangat ditapis mungkin dikecualikan jika protein tersebut telah disingkirkan ke tahap yang dikehendaki oleh peraturan."
+    }
+  ],
+  "potassium_sorbate": [
+    {
+      "question": "Mengapa kalium sorbat mempunyai spesifikasi ketulenan undang-undang serta dibenarkan sebagai pengawet?",
+      "answer": "Kerana membenarkan sesuatu aditif menjawab satu soalan, dan menentukan ketulenannya menjawab soalan yang lain. Peraturan bukan sahaja menyatakan di mana E202 boleh digunakan: ia juga menetapkan komposisi yang diperlukan dan kekotoran yang boleh diterima."
+    },
+    {
+      "question": "Mengapa produk yang disejukkan memerlukan pengawet jika ia sudah disimpan dalam keadaan sejuk?",
+      "answer": "Kerana sejuk melambatkan pertumbuhan kulat dan yis tetapi tidak menghentikannya. Pengawet seperti kalium sorbat melindungi produk sepanjang hayat simpannya, termasuk masa ia dibuka di rumah."
+    }
+  ],
+  "sorbitol": [
+    {
+      "question": "Mengapa produk yang mengandungi sorbitol mungkin perlu memberi amaran bahawa pengambilan berlebihan menghasilkan kesan laksatif?",
+      "answer": "Kerana sorbitol kurang diserap dan, dalam jumlah tinggi, menarik air ke dalam usus. Ia bukan sahaja terdapat dalam gula-gula getah: ia juga digunakan dalam gula-gula, pastri, inti dan produk lain di mana ramai orang tidak menjangkakan poliol."
+    },
+    {
+      "question": "Melebihi jumlah sorbitol berapa amaran kesan laksatif diperlukan?",
+      "answer": "Di Kesatuan Eropah, apabila makanan mengandungi lebih daripada 10% poliol tambahan. Amaran itu merujuk kepada jumlah keseluruhan poliol, bukan hanya sorbitol, dan label tidak menunjukkan berapa banyak setiap satu menyumbang."
+    }
+  ],
+  "starch": [
+    {
+      "question": "Jika produk menyatakan \"bebas gluten\", mengapa kanji disenaraikan, dan dari mana asalnya?",
+      "answer": "Kerana kanji bukan gluten. Ia boleh berasal dari jagung, kentang, ubi kayu, beras atau gandum yang dirawat; jika sumbernya tidak dinyatakan, anda tidak boleh mengetahuinya hanya dari perkataan \"kanji\"."
+    },
+    {
+      "question": "Mengapa kanji boleh muncul sebagai maklumat pemakanan tambahan tetapi tidak wajib pada setiap label?",
+      "answer": "Kerana kanji adalah sebahagian daripada karbohidrat, tetapi tidak semua sistem memerlukan ia ditunjukkan secara berasingan. Sesetengah label menambahnya sebagai maklumat tambahan, manakala yang lain hanya menunjukkan jumlah karbohidrat."
+    }
+  ],
+  "sucralose": [
+    {
+      "question": "Mengapa jumlah gula dikuantifikasikan manakala jumlah sukralosa mungkin tidak muncul?",
+      "answer": "Kerana gula adalah sebahagian daripada maklumat pemakanan dan dinyatakan dalam gram. Sukralosa digunakan dalam jumlah yang sangat kecil, dan biasanya menamakannya dalam ramuan sudah memadai, tanpa menyatakan berapa miligram yang terkandung dalam produk."
+    },
+    {
+      "question": "Mengapa sukralosa dianggap selamat untuk kegunaan yang dibenarkan manakala EFSA tidak mengesahkan kegunaan tertentu pada suhu tinggi?",
+      "answer": "Kerana ia adalah kegunaan yang berbeza. EFSA menganggap kegunaan yang dibenarkan pada masa ini selamat tetapi tidak mengesahkan lanjutan untuk pembakaran berpanjangan pada suhu tinggi, di mana sebatian lain boleh terbentuk."
+    }
+  ],
+  "sugar": [
+    {
+      "question": "Bagaimana gula boleh muncul dalam ramuan dan 0 g gula tambahan dalam jadual pemakanan?",
+      "answer": "Kerana senarai ramuan menunjukkan kehadiran, manakala jadual menyatakan jumlah setiap hidangan. Dalam pasaran yang menunjukkan \"gula tambahan\", jumlah yang sangat kecil boleh dibundarkan kepada 0 g walaupun gula masih terdapat dalam ramuan."
+    }
+  ],
+  "sunset_yellow": [
+    {
+      "question": "Mengapa makanan yang mengandung E110 harus memperingatkan tentang kemungkinan efek pada aktivitas dan perhatian anak-anak?",
+      "answer": "Karena peraturan Eropa mewajibkan peringatan tersebut untuk makanan tertentu yang mengandung E110. Ini adalah persyaratan pelabelan berdasarkan bukti yang tersedia, bukan prediksi bahwa hal itu akan terjadi pada setiap anak."
+    },
+    {
+      "question": "Mengapa produk yang tampak berwarna oranye atau rasa lemon dapat mengandung pewarna kuning?",
+      "answer": "Karena buah hanya memberikan sedikit warna setelah diproses, dan apa yang tersisa akan rusak karena cahaya dan waktu. Pewarna memberikan warna seragam yang tahan lama, tetapi tidak menunjukkan berapa banyak buah yang terkandung dalam produk."
+    }
+  ],
+  "sweetener": [
+    {
+      "question": "Jika produknya manis, mengapa labelnya tidak jelas menyebutkan pemanis apa saja yang ada dalam campuran?",
+      "answer": "Karena bagian depan kemasan mungkin menggunakan nama komersial atau generik untuk campuran tersebut. Daftar bahan harus mengungkapkan pemanis yang menurut peraturan harus diidentifikasi, tetapi tidak harus proporsinya."
+    },
+    {
+      "question": "Dapatkah \"campuran pemanis proprietary\" mencegah Anda mengetahui pemanis spesifik apa yang terkandung dalam suatu produk?",
+      "answer": "Ini dapat menyembunyikan formula dan proporsi campuran, tetapi tidak membuat semua yang secara hukum wajib dideklarasikan menjadi tidak terlihat. Jika label tidak mengidentifikasi komponen tertentu, BOTIA juga tidak dapat menyimpulkannya."
+    }
+  ],
+  "tartrazine": [
+    {
+      "question": "Mengapa tartrazine diizinkan dengan peringatan di Eropa sementara California akan mengecualikannya dari makanan sekolah tertentu?",
+      "answer": "Karena setiap yurisdiksi dapat membuat keputusan regulasi yang berbeda tentang zat yang sama. Di Eropa, zat ini dapat digunakan dengan kondisi dan peringatan; California telah memutuskan untuk mengecualikannya dari makanan tertentu yang disajikan di sekolah umum."
+    },
+    {
+      "question": "Mengapa tartrazine masih menjadi salah satu pewarna yang paling sering dikaitkan dengan reaksi?",
+      "answer": "Karena telah diteliti selama puluhan tahun dan digunakan secara luas, sehingga lebih banyak kasus yang dilaporkan dibandingkan pewarna lain. Reaksi yang dilaporkan jarang terjadi, dan di Eropa makanan yang mengandungnya harus mencantumkan peringatan tentang aktivitas dan perhatian anak-anak."
+    }
+  ],
+  "texture": [
+    {
+      "question": "Bahan spesifik mana yang memberikan tekstur pada produk ini: gum, pati, karagenan, gelatin, atau lainnya?",
+      "answer": "Anda perlu melihat pengubah tekstur mana yang benar-benar muncul dalam daftar. Jika ada beberapa, seperti gum, pati, dan karagenan, label tidak dapat memberi tahu Anda berapa kontribusi masing-masing terhadap hasil akhir."
+    }
+  ],
+  "thaumatin": [
+    {
+      "question": "Mengapa thaumatin hanya diizinkan untuk penggunaan tertentu meskipun JECFA tidak menetapkan asupan harian numerik?",
+      "answer": "Karena ADI yang \"tidak ditentukan\" tidak berarti penggunaan tanpa batas dalam makanan apa pun. Aturan tetap menentukan produk mana thaumatin dapat digunakan dan untuk fungsi apa."
+    },
+    {
+      "question": "Bagaimana protein bisa terasa manis jika protein tidak manis?",
+      "answer": "Karena rasa manis bergantung pada bentuk molekul dan bagaimana ia cocok dengan reseptor di lidah, bukan pada keluarga kimia apa ia termasuk. Thaumatin cocok dengan reseptor tersebut dan karena itu dianggap sangat manis."
+    }
+  ],
+  "total_fat": [
+    {
+      "question": "Mengapa lemak yang terdaftar secara terpisah tidak selalu berjumlah total lemak pada label?",
+      "answer": "Karena tidak setiap jenis lemak selalu dideklarasikan secara terpisah, dan setiap angka juga dapat dibulatkan. Lemak jenuh, trans, tak jenuh tunggal, dan tak jenuh ganda tidak selalu merekonstruksi total secara tepat dalam tabel."
+    },
+    {
+      "question": "Mengapa jumlah total lemak dapat memicu peringatan di bagian depan kemasan di beberapa negara tetapi hanya muncul sebagai informasi gizi di negara lain?",
+      "answer": "Karena setiap negara memutuskan bagaimana mengubah informasi gizi menjadi peringatan di bagian depan kemasan. Jumlah lemak yang sama dapat melebihi ambang batas di satu sistem dan hanya muncul di tabel di sistem lain."
+    },
+    {
+      "question": "Bagaimana suatu produk dapat menyatakan 0 g lemak jika mengandung sedikit bahan lipid?",
+      "answer": "Karena \"0 g\" dapat berupa nilai yang dibulatkan, bukan berarti tidak ada lemak sama sekali. Jika jumlah per porsi berada di bawah ambang batas deklarasi pasar, tabel dapat menunjukkan nol meskipun ada sedikit lemak yang terkandung."
+    }
+  ],
+  "total_sugars": [
+    {
+      "question": "Apakah Total Gula dan Gula Tambahan harus dijumlahkan, atau apakah gula tambahan sudah termasuk dalam total?",
+      "answer": "Tidak. Gula tambahan sudah menjadi bagian dari total gula. \"Total Gula\" mencakup gula yang secara alami ada dalam makanan dan gula yang ditambahkan selama pembuatan."
+    },
+    {
+      "question": "Mengapa kandungan gula yang sama dapat menerima peringatan di bagian depan kemasan yang berbeda tergantung negaranya?",
+      "answer": "Karena sistem peringatan belum tentu menggunakan batas atau metode perhitungan yang sama. Jumlah gula yang sama dapat memicu peringatan di satu negara tetapi tidak di negara lain."
+    }
+  ],
+  "tragacanth": [
+    {
+      "question": "Apa fungsi tragacanth gum, dan mengapa penggunaannya sangat sedikit saat ini?",
+      "answer": "Tragacanth gum mengentalkan, menstabilkan, dan membantu menjaga campuran tetap menyatu. Penggunaannya lebih sedikit dibandingkan gum lain karena merupakan bahan baku yang mahal, sehingga cenderung dikhususkan untuk produk tertentu."
+    },
+    {
+      "question": "Mengapa tragacanth masih muncul dalam dekorasi kue dan confectionery?",
+      "answer": "Karena tragacanth membentuk pasta yang mudah dibentuk dan mengeras sambil mempertahankan bentuknya. Untuk gula-gula dan bunga, belum ditemukan pengganti yang bekerja persis sama, sehingga tetap digunakan meskipun harganya mahal."
+    }
+  ],
+  "fast_green": [
+    {
+      "question": "Mengapa Fast Green memiliki penilaian keamanan JECFA tetapi tidak diizinkan sebagai pewarna makanan di Uni Eropa?",
+      "answer": "Karena penilaian keamanan internasional dan izin hukum Eropa bukanlah hal yang sama. JECFA telah menilai Fast Green, tetapi Uni Eropa tidak memasukkannya ke dalam pewarna makanan yang diizinkan."
+    },
+    {
+      "question": "Mengapa produk hijau dapat sama sekali tidak mengandung bahan hijau dalam komposisinya?",
+      "answer": "Karena warna dapat berasal dari pewarna tambahan, bukan dari bahan yang diwakili produk tersebut. Label memberi tahu Anda pewarna apa yang dikandungnya, tetapi tidak seberapa banyak bahan mentah hijau yang dikandungnya, jika ada."
+    }
+  ],
+  "vinegar": [
+    {
+      "question": "Apa yang sebenarnya dianggap sebagai \"cuka\" dalam suatu formulasi, dan apakah semua komponen yang digunakan harus dideklarasikan?",
+      "answer": "\"Cuka\" adalah produk yang diperoleh dengan mengubah etanol menjadi asam asetat. Label dapat hanya mendeklarasikan \"cuka\" tanpa menyebutkan dari bahan mentah apa berasal atau berapa banyak alkohol sisa yang tersisa, sehingga detail tersebut tidak selalu dapat direkonstruksi dari daftar."
+    },
+    {
+      "question": "Mengapa suatu produk dapat mengandung cuka tanpa terasa seperti cuka?",
+      "answer": "Karena dalam roti, saus, dan produk olahan, cuka digunakan dalam jumlah kecil sebagai pengawet, bukan untuk rasa. Pada konsentrasi rendah tersebut, asam memperlambat kapang dan bakteri tanpa terasa saat dicicipi."
+    }
+  ],
+  "woman_cards": [
+    {
+      "question": "Bukti spesifik apa yang memicu informasi Woman di BOTIA: bahan, kontaminan, kemasan atau regulasi?",
+      "answer": "Hal ini dapat dipicu oleh bukti yang terkait dengan bahan yang dideklarasikan atau informasi kontekstual yang relevan tentang kontaminan, kemasan atau regulasi. BOTIA harus memperjelas mana yang ditampilkan dan tidak boleh mengubah konteks umum menjadi keberadaan yang terbukti."
+    },
+    {
+      "question": "Apakah bukti di balik informasi Woman terkait dengan produk spesifik atau hanya dengan bahan secara umum?",
+      "answer": "Tergantung pada buktinya. Jika berasal dari bahan yang terdeteksi, itu terkait dengan bahan tersebut; jika berasal dari kemasan, kontaminan atau regulasi, itu terkait dengan produk hanya ketika ada koneksi yang dapat diverifikasi ke produk, batch, pasar, material atau produsen tersebut. Jika tidak, itu ditampilkan sebagai konteks umum."
+    }
+  ],
+  "woman_safefood": [
+    {
+      "question": "Apa yang membuat BOTIA menandai suatu masalah sebagai Perempuan SafeFood, dan bukti publik apa yang mendukungnya?",
+      "answer": "BOTIA menandainya ketika label mendeklarasikan bahan dengan bukti terdokumentasi yang secara spesifik relevan untuk wanita, kehamilan, perkembangan janin atau reproduksi. BOTIA harus memungkinkan Anda mengakses sumber publik yang mendukung koneksi tersebut."
+    },
+    {
+      "question": "Apakah informasi Perempuan SafeFood berasal dari regulasi, studi, penarikan produk atau bukti kemasan?",
+      "answer": "Tergantung pada apa yang ditampilkan. Itu bisa berasal dari studi atau regulasi tentang suatu bahan dan, ketika ada koneksi yang dapat diverifikasi ke produk spesifik, juga dari penarikan produk atau bukti kemasan; BOTIA harus menyatakan jenis bukti apa itu."
+    }
+  ],
+  "xylitol": [
+    {
+      "question": "Bagaimana saya bisa mengenali xylitol jika label menyebutnya gula birch, gula kayu atau E967?",
+      "answer": "E967 dan xylitol mengidentifikasi poliol yang sama. \"gula birch\" atau \"gula kayu\" adalah nama komersial atau umum yang mungkin digunakan untuk menyajikannya, tetapi itu tidak membuktikan bahwa xylitol benar-benar berasal dari birch."
+    },
+    {
+      "question": "Bagaimana xylitol dapat memiliki klaim dental yang diizinkan dan juga memerlukan peringatan tentang efek laksatif?",
+      "answer": "Karena ini adalah efek yang berbeda. Dalam kondisi tertentu, xylitol dapat membantu mengurangi plak gigi, sementara jumlah tinggi yang mencapai usus dapat menarik air dan memiliki efek laksatif."
+    },
+    {
+      "question": "Bisakah xylitol muncul dalam produk di mana konsumen tidak mengharapkan pemanis?",
+      "answer": "Ya. Xylitol tidak hanya memberikan rasa manis: xylitol juga memberikan massa dan dapat bertindak sebagai humektan. Itulah sebabnya xylitol dapat muncul dalam produk di mana perannya bukan hanya untuk menambah rasa manis."
+    }
+  ],
+  "cyclamates": [
+    {
+      "question": "Mengapa cyclamates diizinkan di banyak negara tetapi dilarang dalam makanan di Amerika Serikat?",
+      "answer": "Karena otoritas belum membuat keputusan regulasi yang sama. Codex dan beberapa negara mengizinkan cyclamates di bawah kondisi penggunaan tertentu, sementara Amerika Serikat tidak mengizinkannya dalam makanan."
+    },
+    {
+      "question": "Mengapa saya dapat menemukan cyclamates di Eropa tetapi tidak dalam produk AS yang seharusnya identik?",
+      "answer": "Karena keputusan regulasi berbeda. Uni Eropa mengizinkan cyclamates untuk penggunaan dan jumlah tertentu; Amerika Serikat menarik izinnya dan tidak mengizinkannya dalam makanan."
+    }
+  ],
+  "e472": [
+    {
+      "question": "Mengapa melihat \"E472\" pada label tidak memberi tahu Anda secara tepat aditif mana itu atau dari mana asam lemaknya berasal?",
+      "answer": "Karena E472 adalah sebuah keluarga, bukan zat tunggal: huruf a, b, c, d, e dan f mengidentifikasi senyawa yang berbeda. Selain itu, seperti E471, asam lemaknya dapat berasal dari tumbuhan atau hewan, dan label mungkin tidak menyebutkan yang mana."
+    },
+    {
+      "question": "Mengapa ada begitu banyak E472 yang berbeda —a, b, c, d, e, f— dan apa yang berubah di antara mereka?",
+      "answer": "Karena setiap huruf mengidentifikasi senyawa yang berbeda, tergantung pada asam yang terikat pada mono- dan digliserida: asetat, laktat, sitrat, tartarat, atau diasetiltartarat. Fungsi dan penilaiannya dalam pangan berbeda, sehingga tidak dapat dianggap sebagai aditif yang sama."
+    }
+  ],
+  "saturated_fat": [
+    {
+      "question": "Jika total lemak 14 g dan lemak jenuh 4 g, apa yang membentuk sisa lemak tersebut?",
+      "answer": "Anda tidak dapat mengetahuinya hanya dari dua angka tersebut. Sisanya mungkin mencakup lemak tak jenuh tunggal, tak jenuh ganda, dan lemak trans, serta perbedaan pembulatan; jika label tidak merincinya, hal itu tidak dapat disimpulkan."
+    },
+    {
+      "question": "Mengapa jumlah lemak jenuh yang sama dapat menimbulkan peringatan di depan kemasan di satu negara tetapi tidak di negara lain?",
+      "answer": "Karena setiap sistem pelabelan di depan kemasan menggunakan batas dan aturan perhitungannya sendiri. Jumlah yang sama dapat melebihi ambang batas suatu negara tetapi tidak di negara lain."
+    }
+  ],
+  "polyglycitol_syrup": [
+    {
+      "question": "Mengapa sirup poliglisitol mungkin memerlukan peringatan tentang efek laksatif?",
+      "answer": "Karena ini bukan poliol tunggal: ini adalah campuran yang terutama mengandung maltitol dan sorbitol, serta karbohidrat terhidrogenasi lainnya. Bagian yang tidak diserap dapat menarik air ke dalam usus dan menyebabkan efek laksatif."
+    },
+    {
+      "question": "Apa perbedaan antara sirup poliglisitol dan sirup maltitol?",
+      "answer": "Sirup maltitol terutama adalah maltitol; sirup poliglisitol adalah campuran yang mengandung sejumlah besar sorbitol dan karbohidrat terhidrogenasi lainnya. Keduanya adalah aditif yang berbeda, dengan kode yang berbeda, meskipun keduanya adalah sirup poliol."
+    }
+  ],
+  "lysozyme": [
+    {
+      "question": "Jika keju mengandung lisozim, apakah tersebar di seluruh keju atau hanya di kulitnya, dan bagaimana kaitannya dengan telur?",
+      "answer": "Daftar bahan tidak dapat memberi tahu Anda apakah lisozim terdistribusi di seluruh keju atau hanya digunakan pada sebagian proses atau pada permukaannya. Yang kita ketahui di UE adalah asalnya: E1105 diperoleh dari putih telur ayam, sehingga telur relevan sebagai alergen."
+    },
+    {
+      "question": "Mengapa lisozim harus dikaitkan dengan telur dalam pelabelan alergen?",
+      "answer": "Karena E1105, seperti yang didefinisikan di Uni Eropa, diperoleh dari putih telur ayam. Perannya sebagai pengawet tidak menghilangkan asal tersebut atau informasi yang relevan bagi seseorang dengan alergi telur."
+    }
+  ],
+  "parabens": [
+    {
+      "question": "Mengapa suatu merek mengganti paraben dengan pengawet lain, dan apa yang sebenarnya berubah dalam formulanya?",
+      "answer": "Pengawet yang menghambat jamur dan ragi berubah, tetapi daftar tersebut tidak menjelaskan mengapa merek menggantinya. Tanpa mengetahui alternatifnya dan jumlahnya, BOTIA juga tidak dapat menyimpulkan bahwa formula baru lebih aman."
+    },
+    {
+      "question": "Mengapa paraben pangan dinilai sebagai kelompok tetapi tidak semuanya diperlakukan sama persis?",
+      "answer": "Karena menjadi bagian dari keluarga kimia yang sama tidak berarti berperilaku sama. Metilparaben dan etilparaben mempertahankan batas kelompok, sedangkan propilparaben dikecualikan setelah efek yang berbeda diamati pada hewan."
+    }
+  ],
+  "natural_flavourings": [
+    {
+      "question": "Apa sebenarnya arti \"perisa alami\", dan mengapa label tidak mengidentifikasi setiap zat?",
+      "answer": "Ini adalah kategori hukum perisa yang diperoleh dari bahan baku alami menggunakan proses yang diizinkan, bukan daftar komponennya. Deklarasi generik tidak mengungkapkan setiap zat atau menjamin bahwa perisa tersebut berasal dari makanan yang rasanya mirip."
+    },
+    {
+      "question": "Dapatkah \"perisa alami\" menyembunyikan bahan yang penting untuk alergi?",
+      "answer": "\"Perisa alami\" dapat menggabungkan perisa dari bahan baku berbeda tanpa mencantumkan setiap komponen. Untuk alergi tertentu, periksa deklarasi alergen dan klarifikasi apa pun yang tidak teridentifikasi dengan produsen; \"alami\" tidak menjamin tidak adanya alergen."
+    }
+  ],
+  "sorbitan_esters": [
+    {
+      "question": "Mengapa JECFA mengganti batas permanen untuk ester sorbitan dengan batas sementara?",
+      "answer": "Karena pertanyaan genotoksisitas tentang sorbitan monostearat masih belum terselesaikan. Nilai grup yang sama, 0-25 mg/kg berat badan, dipertahankan secara sementara sementara data diminta; ini tidak menunjukkan bahaya pada suatu produk."
+    },
+    {
+      "question": "Mengapa ester sorbitan terutama muncul dalam es krim dan lapisan cokelat?",
+      "answer": "Karena mereka membantu menjaga lemak dan air tercampur dan mengontrol bagaimana lemak mengkristal. Dalam es krim, itu mempengaruhi tekstur saat meleleh, dan dalam lapisan, itu membantu menjaga kilap dan mencegah pemutihan."
+    }
+  ],
+  "yeast_extract": [
+    {
+      "question": "Mengapa suatu produk dapat mengatakan \"tanpa tambahan MSG\" dan mengandung ekstrak ragi dengan glutamat bebas?",
+      "answer": "Karena tidak menambahkan E621 secara terpisah tidak mencegah ekstrak ragi menyediakan glutamat bebasnya sendiri. Frasa itu tidak berarti \"bebas glutamat\" atau menyatakan berapa banyak yang disediakan ekstrak tersebut."
+    },
+    {
+      "question": "Apa perbedaan antara \"MSG\" yang ditambahkan langsung dan glutamat bebas dari ekstrak ragi?",
+      "answer": "Glutamat yang dilepaskan secara kimia sama; yang berubah adalah bagaimana ia dimasukkan ke dalam makanan. MSG ditambahkan sebagai bahan tertentu, sedangkan ekstrak ragi menyediakan campuran yang dapat mencakup glutamat dan nukleotida."
+    }
+  ],
+  "phthalates": [
+    {
+      "question": "Bagaimana ftalat bisa ada dalam makanan jika berasal dari kemasan atau pengolahan dan tidak tercantum sebagai bahan?",
+      "answer": "Karena mereka dapat bermigrasi dari bahan kontak makanan tanpa ditambahkan sebagai bahan. Ini menjelaskan kemungkinan rute tetapi tidak menunjukkan bahwa produk tertentu mengandung ftalat."
+    },
+    {
+      "question": "Tautan apa ke produk, kemasan, atau batch yang diperlukan untuk menetapkan paparan ftalat?",
+      "answer": "Diperlukan bukti yang berlaku untuk produk dan cakupannya: analisis atau catatan yang terkait dengan produk, GTIN, batch, pasar, bahan, atau produsen, sesuai kebutuhan. Tanpa tautan itu, keberadaannya tetap: Tidak diverifikasi dalam sumber yang dikonsultasikan."
+    }
+  ],
+  "monounsaturated_fat": [
+    {
+      "question": "Jika total lemak lebih besar dari lemak jenuh + trans, jenis lemak apa yang membentuk sisanya?",
+      "answer": "Sisanya mungkin termasuk lemak tak jenuh tunggal dan tak jenuh ganda, serta perbedaan pembulatan. Tanpa rincian yang dideklarasikan, BOTIA tidak dapat mengaitkan seluruh perbedaan dengan satu jenis tertentu."
+    },
+    {
+      "question": "Mengapa lemak tak jenuh tunggal dapat muncul secara sukarela dalam tabel nutrisi tetapi tidak selalu wajib?",
+      "answer": "Karena setiap pasar memutuskan rincian mana yang wajib dan informasi tambahan mana yang dapat dideklarasikan. Tidak muncul secara terpisah tidak berarti makanan tidak memiliki lemak tak jenuh tunggal."
+    }
+  ],
+  "potassium_nitrate": [
+    {
+      "question": "Mengapa kalium nitrat harus dipertimbangkan dalam total paparan nitrat?",
+      "answer": "Kalium nitrat berkontribusi terhadap total paparan bersama sumber nitrat lain, yang tidak dapat dijumlahkan oleh satu label. Ini tidak membuat semua bukti setara: hubungan yang diamati dengan kanker payudara berkaitan dengan kalium nitrat yang ditambahkan sebagai pengawet, bukan nitrat alami dalam sayuran."
+    },
+    {
+      "question": "Mengapa daging olahan artisan dapat mengandung kalium nitrat sama seperti daging olahan industri?",
+      "answer": "Karena nitrat telah digunakan dalam pengawetan selama berabad-abad, jauh sebelum produksi industri. Nitrat menjalankan fungsi yang sama dalam kedua kasus: pengawetan dan pencegahan botulisme. Sebutan artisan tidak menunjukkan apakah produk mengandung nitrat atau berapa banyak."
+    }
+  ],
+  "alitame": [
+    {
+      "question": "Mengapa alitame diizinkan di beberapa negara tetapi tidak diotorisasi di Uni Eropa?",
+      "answer": "Setiap pasar memutuskan pemanis mana yang diotorisasi: Australia/Selandia Baru, Tiongkok, dan Meksiko mengizinkan penggunaan tertentu alitame, sedangkan UE tidak mengotorisasinya. Penilaian internasional atau kode INS tidak menggantikan otorisasi lokal tersebut."
+    },
+    {
+      "question": "Mengapa beberapa pemanis yang dinilai secara internasional tidak pernah mencapai pasar Eropa?",
+      "answer": "Karena penilaian internasional bukanlah otorisasi. Di Uni Eropa, produsen harus mengajukan aplikasi dan penilaian terpisah diperlukan; jika tidak ada aplikasi yang diajukan atau tidak disetujui, pemanis tersebut tidak masuk pasar meskipun diizinkan di tempat lain."
+    }
+  ],
+  "added_sugars": [
+    {
+      "question": "Bagaimana label dapat menyatakan 0 g gula tambahan jika gula atau sirup glukosa tercantum dalam bahan-bahan?",
+      "answer": "Di pasar dengan baris \"Gula Tambahan\", 0 g dapat bergantung pada pembulatan dan dasar yang dideklarasikan. Di UE, \"tanpa gula tambahan\" adalah klaim yang berbeda dan tidak dapat digunakan jika gula atau sirup glukosa telah ditambahkan."
+    },
+    {
+      "question": "Mengapa beberapa negara mewajibkan deklarasi gula tambahan sementara negara lain juga mewajibkan peringatan di bagian depan kemasan?",
+      "answer": "Karena tabel memberikan jumlah dan peringatan di bagian depan kemasan menunjukkan bahwa ambang batas lokal telah terlampaui. Brasil mewajibkan keduanya untuk gula tambahan pada produk dan kondisi yang relevan; kewajiban tersebut tidak otomatis berlaku untuk negara lain."
+    },
+    {
+      "question": "Bagaimana suatu produk dapat menyatakan \"tanpa gula tambahan\" jika menggunakan konsentrat buah untuk memaniskan?",
+      "answer": "Jika konsentrat digunakan untuk memaniskan, asal buahnya tidak menghilangkan fungsi tersebut. Di UE, klaim \"tanpa gula tambahan\" juga tidak mengizinkan penambahan makanan untuk sifat pemanisnya; daftar bahan saja mungkin tidak mengungkapkan mengapa bahan itu digunakan."
+    }
+  ],
+  "caramel_colours": [
+    {
+      "question": "Mengapa \"pewarna karamel\" ditonjolkan pada label, dan apa perbedaan antara jenis E150?",
+      "answer": "Pewarna ini dideklarasikan karena digunakan sebagai pewarna cokelat; E150a, b, c, dan d diproduksi dengan proses dan reagen yang berbeda. Jika hanya tertulis \"pewarna karamel\", itu tidak mengidentifikasi kelasnya atau menjelaskan mengapa merek memilih menonjolkannya."
+    },
+    {
+      "question": "Mengapa keempat pewarna karamel memiliki nomor E150 yang sama tetapi tidak dinilai sebagai zat yang sama?",
+      "answer": "Karena keduanya merupakan empat kelas yang diproduksi secara berbeda, dengan komposisi dan penilaian terpisah. Huruf E150 penting: kelas-kelas tersebut tidak dapat semuanya diperlakukan sebagai satu zat atau diberikan batas yang sama."
+    }
+  ],
+  "celluloses": [
+    {
+      "question": "Mengapa selulosa ada dalam makanan seperti keju atau makanan olahan lainnya, dan apa fungsinya?",
+      "answer": "Selulosa digunakan untuk mengentalkan, menstabilkan, atau mencegah bahan menggumpal; pada keju parut, selulosa membantu menjaga potongannya tetap terpisah. Selulosa adalah serat tanaman yang tidak dicerna tubuh, dan turunan modifikasinya dapat menjalankan fungsi yang berbeda."
+    },
+    {
+      "question": "Bagaimana selulosa bisa ada dalam keju parut, dan apa fungsinya di sana?",
+      "answer": "Untuk mencegah potongan-potongan menggumpal di dalam kemasan. Selulosa adalah serat tanaman, tidak dicerna, dan ditambahkan ke permukaan keju parut sebagai agen anti-penggumpalan, bukan sebagai bagian dari keju itu sendiri."
+    }
+  ],
+  "methylmercury": [
+    {
+      "question": "Bagaimana metilmerkuri dalam ikan bisa menjadi perhatian jika tidak muncul dalam bahan-bahan?",
+      "answer": "Karena ini adalah kontaminan yang terkonsentrasi dalam rantai makanan akuatik, bukan bahan tambahan. Ikan besar yang berumur panjang dapat mengakumulasi lebih banyak, tetapi label tidak mengukur metilmerkuri dalam ikan spesifik tersebut."
+    },
+    {
+      "question": "Mengapa metilmerkuri menjadi perhatian khusus selama perkembangan sistem saraf?",
+      "answer": "Karena ia mencapai sistem saraf, dan otak yang sedang berkembang sangat rentan. Ia juga melintasi plasenta, sehingga paparan ibu dapat mencapai janin; label tidak dapat menghitung berapa banyak."
+    }
+  ],
+  "traceability": [
+    {
+      "question": "Dari mana bahan ini berasal, dan dapatkah dilacak ke produsen, batch, atau sertifikasi?",
+      "answer": "Ini hanya dapat dikonfirmasi jika sumber mengidentifikasi asal dan menghubungkannya ke produsen, batch, atau sertifikat yang berlaku. Tanpa dokumentasi tersebut, nama bahan tidak cukup: Tidak terverifikasi dalam sumber yang dikonsultasikan."
+    },
+    {
+      "question": "Dapatkah asal bahan ini diverifikasi berdasarkan produk, produsen, pasar, atau batch?",
+      "answer": "Ya, ketika dokumentasi mengidentifikasi bahan dan mencocokkan produk, produsen, pasar, atau batch yang berlaku. Bukti dari merek, pabrik, atau pasar lain tidak secara otomatis berlaku untuk ini: tanpa kecocokan, Tidak terverifikasi dalam sumber yang dikonsultasikan."
+    }
+  ],
+  "milk_derivatives": [
+    {
+      "question": "Bagaimana produk bisa mengatakan \"bebas susu\" dan mengandung turunan susu?",
+      "answer": "Arti yang diizinkan dari \"bebas susu\" bergantung pada pasar dan tidak boleh secara otomatis diartikan sebagai tidak adanya setiap turunan susu. Jika daftar mencantumkan kasein, kaseinat, atau protein whey, mereka tetap turunan susu meskipun kemasan menggunakan frasa tersebut."
+    },
+    {
+      "question": "Mengapa beberapa turunan susu harus diidentifikasi dengan jelas meskipun namanya tidak mengandung kata \"susu\"?",
+      "answer": "Karena nama seperti kasein, kaseinat, atau whey mungkin tidak terdengar seperti susu, tetapi itu adalah protein susu yang relevan untuk alergi. \"Bebas laktosa\" juga tidak berarti protein tersebut telah hilang."
+    }
+  ],
+  "polyglycerol_esters": [
+    {
+      "question": "Jika ester poligliserol digunakan selama pembuatan, apakah mereka harus selalu muncul pada label?",
+      "answer": "Ketika mereka bertindak sebagai aditif dalam makanan akhir, mereka harus dideklarasikan sesuai aturan pasar; penggunaan tertentu sebagai bahan bantu pengolahan atau melalui carry-over mungkin memiliki pengecualian. Jika tidak terdaftar, label saja tidak dapat memberi tahu Anda apakah mereka digunakan selama pembuatan."
+    },
+    {
+      "question": "Mengapa emulsifier ini memiliki asupan harian yang dapat diterima jika diizinkan untuk penggunaan pangan?",
+      "answer": "Karena otorisasi tidak mengizinkan jumlah berapa pun untuk dikonsumsi: batasnya menyangkut paparan rutin. Juga, E475 dan E476 adalah aditif berbeda dengan batas terpisah; temuan pada dosis tinggi pada hewan tidak menunjukkan bahaya pada konsumen tertentu."
+    }
+  ],
+  "sucrose_esters": [
+    {
+      "question": "Mengapa JECFA meminta data paparan yang lebih baik ketika perkiraan jauh melebihi asupan harian yang dapat diterima?",
+      "answer": "Karena perkiraan tersebut konservatif dan perlu disempurnakan: perhitungan paparan tinggi pada anak-anak mencapai 113 mg/kg per hari terhadap batas kelompok 30. Skenario tersebut tidak menunjukkan bahwa setiap produk atau orang tertentu melebihi batas."
+    }
+  ],
+  "polyunsaturated_fat": [
+    {
+      "question": "Jika total lemak tidak cocok dengan lemak jenuh dan trans, dapatkah saya menganggap sisanya adalah lemak mono/poli tak jenuh?",
+      "answer": "Perbedaannya mungkin termasuk lemak tak jenuh tunggal dan tak jenuh ganda, serta pembulatan. Tanpa rincian yang dideklarasikan, Anda tidak dapat secara andal mengaitkan seluruh perbedaan dengan lemak tersebut."
+    },
+    {
+      "question": "Mengapa lemak tak jenuh ganda dapat dicantumkan pada label meskipun tidak wajib di setiap tabel nutrisi?",
+      "answer": "Karena aturan di setiap pasar membedakan antara minimum wajib dan informasi tambahan yang boleh dicantumkan. Tidak dicantumkannya bukan berarti nol, dan nilai totalnya juga tidak dapat memisahkan omega-3 dari omega-6."
+    }
+  ],
+  "polysorbates": [
+    {
+      "question": "Bagaimana saya bisa tahu apakah polisorbat pada label berasal dari bahan baku hewani atau nabati?",
+      "answer": "Produsen dapat mengonfirmasi bahan baku melalui dokumentasi yang berlaku untuk produk tersebut. Nama atau kode polisorbat mengidentifikasi aditif tetapi tidak, dengan sendirinya, mengungkapkan asal hewani atau nabatinya."
+    },
+    {
+      "question": "Mengapa JECFA meminta informasi lebih lanjut tentang pengotor pembuatan dalam polisorbat jika sudah diizinkan?",
+      "answer": "Karena meninjau pengotor proses berbeda dari menilai hanya aditif utamanya. Meminta data yang lebih baik tidak membuat izin menjadi jaminan untuk komposisi apa pun atau menunjukkan pengotor pada produk spesifik tersebut."
+    }
+  ],
+  "sulphites": [
+    {
+      "question": "Mengapa satu botol bisa bertuliskan \"tanpa sulfit\" sementara label lain untuk anggur yang sama menyatakan bahwa produk tersebut mengandung sulfit?",
+      "answer": "\"Mengandung sulfit\" melaporkan keberadaannya di atas ambang batas yang berlaku, bukan berapa banyak yang ditambahkan atau asalnya. Jika label lain untuk anggur yang sama bertuliskan \"tanpa sulfit\", cakupan kedua pernyataan tersebut harus diklarifikasi dengan produsen sebelum menganggap kontradiksi tersebut terselesaikan."
+    },
+    {
+      "question": "Mengapa sulfit harus dideklarasikan sebagai alergen di atas jumlah tertentu, dan mengapa penggunaannya juga dibatasi?",
+      "answer": "Karena sulfit dapat menyebabkan reaksi pernapasan yang cepat pada orang sensitif, itulah sebabnya sulfit harus dideklarasikan di UE di atas 10 mg/kg atau 10 mg/L. Penggunaan dan jumlah yang diizinkan adalah kewajiban terpisah; memenuhinya tidak menghilangkan kebutuhan untuk memberi informasi."
+    },
+    {
+      "question": "Apakah \"Mengandung sulfit\" memberi tahu Anda apakah sulfit ditambahkan atau terbentuk secara alami?",
+      "answer": "Tidak: frasa itu melaporkan keberadaannya di atas ambang batas yang berlaku, bukan bagaimana sulfit tersebut masuk ke dalam anggur. Frasa itu juga tidak memberi tahu konsentrasi tepatnya."
+    }
+  ],
+  "brominated_vegetable_oil": [
+    {
+      "question": "Apa fungsi minyak nabati ter brominasi dalam minuman bersoda?",
+      "answer": "Minyak ini digunakan untuk menjaga minyak yang memberikan rasa jeruk tetap terdispersi dan stabil. Perannya adalah mencegah minyak tersebut terpisah dalam minuman, bukan untuk memberikan nilai gizi."
+    },
+    {
+      "question": "Mengapa Amerika Serikat mencabut izin untuk minyak nabati ter brominasi?",
+      "answer": "Pencabutan tersebut terkait dengan bukti keamanan baru, termasuk akumulasi bromin dalam jaringan dan efek tiroid pada hewan pada paparan tinggi. Ini menjelaskan tindakan AS tetapi tidak memungkinkan efek pada seseorang dihitung dari label."
+    }
+  ],
+  "dehydroacetic_acid": [
+    {
+      "question": "Apakah memiliki nomor INS berarti suatu zat diizinkan untuk digunakan dalam pangan?",
+      "answer": "Tidak: INS mengidentifikasi suatu zat; itu tidak memberikan izin universal. Asam dehidroasetat dan garamnya memiliki kode INS, tetapi Codex tidak memiliki ketentuan pangan untuk keduanya, dan izin lokal memiliki cakupannya sendiri."
+    },
+    {
+      "question": "Mengapa pengawet dapat diizinkan dalam kosmetik tetapi tidak dalam pangan?",
+      "answer": "Karena ini adalah penilaian yang berbeda: mengoleskan suatu zat ke kulit tidak sama dengan menelannya setiap hari. Setiap penggunaan memiliki aturannya sendiri, dan diizinkan dalam satu penggunaan tidak berarti diizinkan dalam penggunaan lainnya."
+    }
+  ],
+  "flavourings": [
+    {
+      "question": "Jika label hanya menyebut \"perisa\", bagaimana saya bisa tahu apakah perisa tersebut berasal dari hewan?",
+      "answer": "Asal usulnya dapat dikonfirmasi melalui informasi produsen yang berlaku untuk produk tersebut. \"Perisa\" dapat mencakup beberapa zat tanpa menunjukkan bahan baku, sehingga istilah itu saja tidak dapat memberi tahu Anda apakah berasal dari hewan."
+    },
+    {
+      "question": "Bisakah suatu produk terlihat vegan namun tetap mengandung perisa yang asal hewannya tidak ditentukan?",
+      "answer": "Ya, penampilan atau nama pemasarannya tidak menjelaskan asal usul perisa generik. Ini menimbulkan ketidakpastian keterlacakan; hal ini tidak membuktikan bahwa perisa tersebut berasal dari hewan."
+    }
+  ],
+  "azodicarbonamide": [
+    {
+      "question": "Mengapa azodikarbonamida dapat digunakan di Amerika Serikat tetapi tidak diizinkan sebagai aditif pangan di Uni Eropa?",
+      "answer": "Amerika Serikat mengizinkan penggunaan spesifik azodikarbonamida, sementara UE tidak mengizinkannya dalam pangan: tidak ada satu otorisasi global. Zat ini terurai selama pemanggangan, dan salah satu produknya, semikarbazida, sedang diteliti."
+    },
+    {
+      "question": "Mengapa azodikarbonamida disebut \"aditif matras yoga\"?",
+      "answer": "Karena zat yang sama digunakan di industri untuk memproduksi busa plastik, termasuk yang digunakan pada matras. Julukan ini berasal dari kampanye di Amerika Serikat; fakta bahwa suatu zat memiliki kegunaan industri tidak dengan sendirinya menyatakan apakah penggunaan pangannya aman."
+    }
+  ],
+  "stearoyl_lactylates": [
+    {
+      "question": "Bagaimana saya bisa tahu apakah stearoyl lactylate pada label berasal dari lemak hewani atau nabati?",
+      "answer": "Diperlukan deklarasi asal usul atau dokumentasi produsen yang berlaku untuk produk tersebut. Nama \"stearoyl lactylate\" mengidentifikasi aditif tetapi tidak mengungkapkan apakah bahan baku yang digunakan berasal dari hewani atau nabati."
+    },
+    {
+      "question": "Mengapa stearoyl lactylate memiliki batas penggunaan yang berbeda tergantung jenis pangan?",
+      "answer": "Karena otorisasi menetapkan kondisi untuk kategori tertentu, bukan jumlah tak terbatas untuk setiap pangan. Daftar bahan tidak dapat memverifikasi batas tersebut: kategori, pasar, dan jumlah yang digunakan diperlukan."
+    }
+  ],
+  "nitrites_nitrates": [
+    {
+      "question": "Bagaimana daging bisa berlabel \"bebas nitrat\" namun tetap menggunakan bahan yang menyediakan nitrat?",
+      "answer": "Bahan lain dapat menyediakan nitrat meskipun tidak ada pengawet bernama \"nitrat\" yang ditambahkan. Tidak adanya kode tidak membuktikan tidak adanya nitrat, dan validitas \"bebas nitrat\" tergantung pada formulasi dan aturan pasar."
+    },
+    {
+      "question": "Mengapa nitrit dan nitrat memiliki batas asupan dan kondisi penggunaan jika diizinkan sebagai pengawet?",
+      "answer": "Karena keduanya membantu mengawetkan daging dan mencegah botulisme, tetapi nitrit juga dapat berperan dalam pembentukan senyawa N-nitroso. Batas tersebut menyeimbangkan penggunaan itu dengan paparan, dan daftar bahan tidak dapat menghitung berapa banyak yang tersisa setelah pengasapan."
+    },
+    {
+      "question": "Bagaimana daging bisa berlabel \"tidak diasap\" (tanpa pengawetan nitrit) namun menggunakan seledri sebagai sumber nitrat?",
+      "answer": "Seledri dapat menyediakan nitrat yang digunakan dalam pengasapan meskipun tidak ada pengawet yang diidentifikasi dengan nama kimianya yang ditambahkan. \"tanpa pengawetan nitrit\" tergantung pada aturan pasar dan tidak dengan sendirinya berarti tidak ada nitrat; label tidak menyatakan berapa banyak seledri yang menyediakannya."
+    }
+  ],
+  "quinoline_yellow": [
+    {
+      "question": "Mengapa kuning kuinolin diizinkan dengan pembatasan di Eropa tetapi tidak diizinkan sebagai pewarna pangan di Amerika Serikat?",
+      "answer": "Karena pasar tidak memiliki satu otorisasi tunggal. UE mengurangi kadar dan menarik penggunaannya setelah data baru, dan mewajibkan peringatan untuk anak-anak pada pangan yang relevan; Amerika Serikat tidak mengizinkannya sebagai pewarna pangan."
+    },
+    {
+      "question": "Mengapa suatu pewarna dapat menyertakan peringatan untuk anak-anak dan tetap diizinkan?",
+      "answer": "Karena bukti yang tersedia membenarkan memberi informasi kepada konsumen, tetapi tidak untuk mencabut izin. Peringatan Eropa berasal dari studi dengan campuran pewarna, sehingga menyampaikan kemungkinan efek tanpa mengaitkannya dengan satu zat tertentu."
+    }
+  ],
+  "carrageenan": [
+    {
+      "question": "Mengapa karagenan ada dalam produk yang begitu berbeda, dan apa artinya melihatnya pada label?",
+      "answer": "Karagenan mengentalkan, membentuk gel, dan mempertahankan tekstur, sehingga dapat muncul dalam formulasi yang sangat berbeda. Melihat E407 atau E407a memastikan bahan yang dideklarasikan, tetapi tidak menunjukkan berapa banyak kandungannya atau berapa proporsi yang terfragmentasi."
+    },
+    {
+      "question": "Mengapa karagenan tetap diizinkan jika EFSA masih meminta data untuk menyelesaikan beberapa ketidakpastian?",
+      "answer": "Izin dan permintaan data dapat berjalan bersama: ketidakpastian masih ada mengenai fragmen kecil dan perilakunya. Izin yang berlanjut tidak menyelesaikan ketidakpastian tersebut, tetapi juga tidak membuktikan bahaya dari mengonsumsi produk tertentu."
+    },
+    {
+      "question": "Mengapa karagenan dapat diizinkan dalam banyak pangan tetapi diperlakukan lebih ketat dalam nutrisi bayi?",
+      "answer": "Nutrisi bayi memiliki kondisi izin tersendiri: izin untuk pangan lain tidak menjamin penggunaan yang sama diizinkan dalam formula bayi. Pemeriksaan memerlukan kategori, pasar, dan jumlah, bukan sekadar melihat karagenan dalam daftar bahan."
+    }
+  ],
+  "dioxins_pcbs": [
+    {
+      "question": "Bagaimana dioksin atau PCB bisa ada dalam pangan jika tidak muncul dalam daftar bahan?",
+      "answer": "Karena dioksin atau PCB adalah kontaminan lingkungan persisten yang masuk ke rantai pangan, bukan bahan tambahan. Kontaminan ini dapat terakumulasi dalam lemak hewani, tetapi jalur umum tersebut tidak membuktikan kontaminasi pada pangan tertentu."
+    },
+    {
+      "question": "Mengapa tidak ada sekadar kadar dioksin yang tidak signifikan, dan mengapa batasnya begitu ketat?",
+      "answer": "Karena dioksin dieliminasi sangat lambat dan paparan terakumulasi selama bertahun-tahun: beban tubuh menjadi penting, bukan hanya satu kali makan. Batas tersebut mengurangi paparan itu; batas tersebut tidak memungkinkan risiko nol dinyatakan atau jumlahnya disimpulkan dari label."
+    }
+  ],
+  "propylene_glycol_esters": [
+    {
+      "question": "Mengapa batas untuk ester ini dihitung dari propilen glikol yang dapat dilepaskan, bukan sekadar jumlah total E477?",
+      "answer": "Karena selama pencernaan ester ini dapat terurai dan melepaskan propilen glikol, komponen yang menjadi acuan batas tersebut. Jumlah total E477 tidak secara langsung sama dengan jumlah yang dilepaskan, dan daftar bahan tidak dapat menghitungnya."
+    },
+    {
+      "question": "Apa fungsi turunan propilen glikol dalam pangan?",
+      "answer": "Turunan ini bertindak sebagai pengemulsi: membantu menjaga lemak dan air tetap tercampur serta memperbaiki volume dan tekstur, terutama pada produk panggang dan lapisan. Fungsinya bersifat teknologi, bukan nutrisi."
+    }
+  ],
+  "glutamates": [
+    {
+      "question": "Mengapa suatu produk dapat menyatakan \"tanpa tambahan MSG\" dan mengandung sumber glutamat lain?",
+      "answer": "Karena tidak menambahkan MSG secara terpisah tidak mengecualikan glutamat bebas yang disediakan oleh bahan seperti ekstrak ragi. Glutamatnya secara kimia sama, tetapi daftar bahan tidak menyatakan jumlah totalnya."
+    },
+    {
+      "question": "Mengapa EFSA menetapkan batas harian untuk glutamat sementara JECFA mempertahankan penilaian yang berbeda?",
+      "answer": "Ini adalah penilaian yang berbeda: EFSA menerapkan faktor keamanan pada studi hewan untuk menetapkan 30 mg/kg per hari, sementara JECFA mempertahankan asupan harian yang dapat diterima yang \"tidak ditentukan\". Frasa terakhir itu tidak berarti izin untuk mengonsumsi dalam jumlah tak terbatas."
+    }
+  ],
+  "aspartame_acesulfame_salt": [
+    {
+      "question": "Mengapa E962 memerlukan peringatan fenilalanin jika tidak hanya dicantumkan sebagai aspartam?",
+      "answer": "Karena E962 mengandung aspartam yang dikombinasikan dengan acesulfame dan tetap menyediakan sumber fenilalanin. Mengubah nama tidak menghilangkan informasi yang dibutuhkan oleh penderita fenilketonuria."
+    }
+  ],
+  "trans_fats": [
+    {
+      "question": "Bagaimana bisa menyatakan 0 g lemak trans dan tetap tidak menjumlahkan total lemak?",
+      "answer": "Di Amerika Serikat, kurang dari 0,5 g lemak trans per porsi dapat dinyatakan sebagai 0 g. Selain itu, total lemak mencakup jenis lemak lain dan angka dapat dibulatkan, sehingga tidak dapat direkonstruksi hanya dengan menjumlahkan lemak jenuh dan lemak trans."
+    },
+    {
+      "question": "Mengapa WHO merekomendasikan penghapusan lemak trans industri sementara aturan pelabelan masih berbeda-beda di setiap negara?",
+      "answer": "Karena rekomendasi kesehatan global dan kewajiban hukum masing-masing negara adalah hal yang berbeda. Uni Eropa membatasi kandungannya tanpa mewajibkan baris lemak trans dalam tabel nutrisi; Amerika Serikat menyatakannya, dengan aturan pembulatan yang dapat menghasilkan 0 g."
+    }
+  ],
+  "modified_starches": [
+    {
+      "question": "Jika label menyatakan \"modified food starch\", bagaimana saya dapat mengetahui sumbernya dan apakah mengandung gluten?",
+      "answer": "Sumbernya dipastikan melalui deklarasi khusus produk atau informasi produsen. \"Modified food starch\" hanya menggambarkan perlakuan terhadap pati: tidak mengidentifikasi tanaman asalnya atau menjamin tidak adanya gluten."
+    },
+    {
+      "question": "Bagaimana pati termodifikasi dapat muncul dalam bahan-bahan dan 0 g karbohidrat dalam tabel nutrisi?",
+      "answer": "Jumlah kecil dapat muncul dalam bahan-bahan dan dibulatkan menjadi 0 g dalam tabel, tergantung pada porsi dan aturan pasar. Untuk mengetahui apakah hal itu menjelaskan kasus ini, dasar dan jumlah yang dinyatakan harus diperiksa; 0 g tidak membuktikan tidak adanya pati."
+    }
+  ],
+  "smoke_flavourings": [
+    {
+      "question": "Mengapa beberapa perisa asap kehilangan otorisasi Eropa setelah EFSA tidak dapat menyingkirkan kekhawatiran genotoksisitas?",
+      "answer": "Karena kekhawatiran genotoksisitas tidak dapat disingkirkan dalam penilaian ulang, dan Uni Eropa menghapus produk primer sebelumnya dari daftar yang diotorisasi. Ada periode transisi tergantung pada kategori pangan; deklarasi generik tidak mengidentifikasi perisa atau karakteristik spesifiknya."
+    }
+  ],
+  "potassium_bromate": [
+    {
+      "question": "Bagaimana saya dapat mengetahui apakah tepung mengandung bromat atau kalium bromat dengan membaca label?",
+      "answer": "Anda dapat mengidentifikasinya jika tercantum sebagai kalium bromat atau dengan kode INS lamanya 924a. Jika tidak dinyatakan, BOTIA tidak dapat menyimpulkan bahwa tepung mengandung bromat atau mengukur berapa banyak bromat yang tersisa setelah pemanggangan."
+    },
+    {
+      "question": "Mengapa kalium bromat dilarang di negara seperti Brasil sementara tempat lain mengizinkan penggunaan tertentu?",
+      "answer": "Karena keputusan hukum bersifat spesifik per negara, bahkan ketika ada penilaian internasional yang tidak menguntungkan. Ada kekhawatiran bahwa residu dapat tertinggal dan menyebabkan kerusakan genetik; mengizinkan penggunaan tertentu di tempat lain tidak sama dengan otorisasi di seluruh dunia."
+    }
+  ],
+  "nucleotide_enhancers": [
+    {
+      "question": "Apa itu inosinat, guanilat, atau penguat nukleotida lainnya, dan mengapa muncul sebagai penguat rasa?",
+      "answer": "Itu adalah senyawa yang meningkatkan rasa umami: E627 adalah guanilat, E631 adalah inosinat, dan E635 adalah campuran keduanya. Efeknya menguat ketika dikombinasikan dengan glutamat, itulah sebabnya sering digunakan bersama."
+    },
+    {
+      "question": "Mengapa inosinat dan guanilat hampir selalu menyertai glutamat?",
+      "answer": "Karena bersama-sama mereka meningkatkan rasa umami jauh lebih kuat daripada secara terpisah. Menggabungkannya berarti jumlah yang lebih sedikit dari masing-masing diperlukan untuk mencapai efek yang sama."
+    }
+  ],
+  "steviol_glycosides": [
+    {
+      "question": "Mengapa produk yang dijual sebagai \"stevia\" dapat mengandung laktosa, perisa, dan bahan lain selain steviol glikosida?",
+      "answer": "Karena \"stevia\" dapat menjadi nama komersial suatu campuran, bukan deklarasi bahan tunggal. Glikosida memberikan rasa manis, tetapi sisa komposisinya harus diperiksa dalam daftar; tidak semua produk ini memiliki formula yang sama."
+    },
+    {
+      "question": "Mengapa steviol glikosida memiliki asupan harian yang dapat diterima sementara WHO menyarankan agar tidak menggunakan pemanis untuk pengendalian berat badan?",
+      "answer": "Batas tersebut menilai paparan terhadap pemanis, sedangkan rekomendasi berat badan menanyakan apakah penggunaannya memberikan manfaat jangka panjang. Ini adalah kriteria yang berbeda: penggunaan yang diizinkan tidak menunjukkan bahwa pemanis tersebut berhasil untuk pengendalian berat badan."
+    }
+  ],
+  "aluminium_additives": [
+    {
+      "question": "Mengapa risiko aluminium dihitung dengan menjumlahkan paparan dari berbagai aditif dan makanan?",
+      "answer": "Karena aluminium yang diserap dieliminasi secara perlahan dan dapat berasal dari beberapa aditif dan makanan. Batas tersebut berkaitan dengan total paparan mingguan, yang tidak dapat dihitung dari satu daftar bahan saja."
+    },
+    {
+      "question": "Bagaimana aluminium dapat hadir dalam makanan tanpa label menyebutkan \"aluminium\"?",
+      "answer": "Karena aditif yang mengandungnya dideklarasikan dengan nama atau nomor E-nya —natrium aluminium sulfat, silikat, E541— dan nama-nama tersebut tidak selalu menempatkan kata \"aluminium\" di depan. Label menyebutkannya, tetapi tidak menunjukkan berapa banyak aluminium yang disumbangkannya."
+    }
+  ],
+  "fat-accumulation": [
+    {
+      "question": "Apakah semua senyawa larut lemak terakumulasi dalam tubuh?",
+      "answer": "Senyawa tersebut terakumulasi ketika masuk ke tubuh lebih cepat daripada dieliminasi, seperti yang terjadi pada kontaminan persisten seperti dioksin dan PCB. Hanya larut lemak saja tidak cukup untuk menetapkan bahwa suatu senyawa terakumulasi."
+    },
+    {
+      "question": "Apakah memiliki lebih banyak lemak tubuh berarti lebih banyak risiko?",
+      "answer": "Risiko bergantung pada senyawa, paparan, dan beban yang terakumulasi. Lebih banyak lemak tubuh saja tidak menunjukkan lebih banyak risiko, dan label tidak dapat mengukur beban tersebut."
+    },
+    {
+      "question": "Apakah senyawa tersebut dilepaskan saat menurunkan berat badan atau selama kehamilan?",
+      "answer": "Senyawa persisten dapat bertahan di lemak tubuh selama bertahun-tahun. Hal ini tidak memungkinkan pelepasan terkonsentrasi selama penurunan berat badan atau kehamilan untuk diasumsikan, atau memprediksi kapan itu terjadi atau dalam jumlah berapa pada seseorang."
+    }
+  ]
+}
