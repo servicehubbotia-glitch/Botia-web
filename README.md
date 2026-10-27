@@ -262,3 +262,27 @@ Content © ServiceHub. Referenced documents remain the property of their
 respective authors.
 
 Built with criteria. Defended with documentation.
+
+
+Evidence maintenance (2026-10-27)
+
+The website reads local i18n files and botia/data/evidence-catalog.json; the
+documentary watcher does not publish changes to the site automatically.
+After a documented editorial review, regenerate the source map and metadata
+with BOTIA-Knowledge-Base/scripts/sync_web_evidence.py, pointing --kb-root and
+--web-root at the two local checkouts. The snapshot records its source hash.
+Unknown references remain explicit; metadata generation is not source validation.
+
+For local chatbot-data generation without cloning or pushing:
+
+    python3 scripts/generate_master_kb.py --local-root .
+
+The curated public ingredient index defines the profiles. Publish the generated
+master_kb.json to the chatbot's Cloudflare KV separately; updating GitHub alone
+does not update that external store.
+
+Changes to E500, E440 and E450 must keep the English HTML body, meta description,
+og:description, twitter:description and JSON-LD in agreement with the English
+JSON. Each of the 14 JSON descriptions is also applied to those metadata fields
+by the shared i18n loader for the requested language. There are no separate
+per-language HTML copies for these profiles.

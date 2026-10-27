@@ -16,9 +16,6 @@ from pathlib import Path
 # CONFIGURACIÓN
 # ============================================================
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
-if not GITHUB_TOKEN:
-    print("❌ La variable de entorno GITHUB_TOKEN no está definida.")
-    sys.exit(1)
 
 REPO_URL = f"https://{GITHUB_TOKEN}@github.com/servicehubbotia-glitch/Botia-web.git"
 REPO_DIR = "/content/Botia-web"
@@ -90,17 +87,15 @@ def get_labels(lang, ui_labels):
     return labels
 
 def get_ingredient_slugs(repo_path):
-    """Recorre ingredients/ y devuelve lista de slugs (nombres de archivo sin extensión)."""
-    ing_dir = os.path.join(repo_path, "ingredients")
-    if not os.path.isdir(ing_dir):
-        print("❌ No se encontró el directorio ingredients/")
-        sys.exit(1)
-
-    slugs = []
-    for f in os.listdir(ing_dir):
-        if f.endswith(".html") and f not in EXCLUDED_FILES:
-            slug = f[:-5]
-            slugs.append(slug)
+    """Use the curated public ingredient index; never include auxiliary WebViews."""
+    index_path = Path(repo_path) / "i18n" / "en" / "ingredient_index.json"
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    slugs = [record["slug"] for record in index["ingredients"]]
+    if len(slugs) != len(set(slugs)):
+        raise ValueError("Duplicate ingredient slugs")
+    for slug in slugs:
+        if not (Path(repo_path) / "ingredients" / f"{slug}.html").is_file():
+            raise FileNotFoundError(slug)
     return sorted(slugs)
 
 def read_ingredient_json(repo_path, slug, lang):
@@ -114,6 +109,35 @@ def read_ingredient_json(repo_path, slug, lang):
         except json.JSONDecodeError:
             print(f"⚠️ Error al parsear {file_path}")
             return None
+
+def numbered_fields(data, prefix):
+    return sorted(int(key.split("_")[1]) for key in data
+                  if key.startswith(prefix + "_") and key.split("_")[1].isdigit())
+
+def generate_local(repo_path):
+    """Regenerate locally, without cloning, committing, pushing or uploading KV."""
+    repo_path = Path(repo_path)
+    ui_path = repo_path / "i18n" / "ui_labels.json"
+    ui = json.loads(ui_path.read_text(encoding="utf-8"))
+    master = {}
+    for slug in get_ingredient_slugs(repo_path):
+        master[slug] = {}
+        for lang in LANGUAGES:
+            data = read_ingredient_json(repo_path, slug, lang)
+            if not data:
+                raise ValueError(f"Missing or invalid {lang}/{slug}.json")
+            entry = {"title": get_title(data), "what_is": data.get("what_is", ""),
+                     "why_botia": data.get("why_botia", ""),
+                     "content": build_content(data, lang, ui),
+                     "link": f"https://www.botia-safefood.com/ingredients/{slug}.html",
+                     "aliases": get_aliases(data)}
+            for prefix in ["can", "cannot"]:
+                for i in sorted(set([1, 2, 3] + numbered_fields(data, prefix))):
+                    entry[f"{prefix}_{i}"] = data.get(f"{prefix}_{i}", "")
+            master[slug][lang] = entry
+    output = repo_path / "master_kb.json"
+    output.write_text(json.dumps(master, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Generated {len(master)} profiles × {len(LANGUAGES)} languages; KV upload is separate.")
 
 def build_content(data, lang, ui_labels):
     """
@@ -133,7 +157,7 @@ def build_content(data, lang, ui_labels):
 
     # can (lista)
     can_items = []
-    for i in range(1, 4):  # can_1, can_2, can_3 (algunas fichas tienen 3)
+    for i in numbered_fields(data, "can"):
         val = data.get(f"can_{i}")
         if val:
             can_items.append(f"- {val}")
@@ -143,7 +167,7 @@ def build_content(data, lang, ui_labels):
 
     # cannot_do (lista)
     cannot_items = []
-    for i in range(1, 4):  # cannot_1, cannot_2, cannot_3
+    for i in numbered_fields(data, "cannot"):
         val = data.get(f"cannot_{i}")
         if val:
             cannot_items.append(f"- {val}")
@@ -167,6 +191,8 @@ def get_aliases(data):
     return str(aliases)
 
 def main():
+    if not GITHUB_TOKEN:
+        raise RuntimeError("GITHUB_TOKEN required for remote mode; use --local-root for local generation")
     # 1. Limpiar y clonar repositorio
     print("🧹 Eliminando directorio anterior (si existe)...")
     subprocess.run(["rm", "-rf", REPO_DIR], check=False)
@@ -228,6 +254,9 @@ def main():
                 "aliases": aliases
             }
 
+            for prefix in ["can", "cannot"]:
+                for i in numbered_fields(data, prefix):
+                    lang_entry[f"{prefix}_{i}"] = data[f"{prefix}_{i}"]
             entry[lang] = lang_entry
             idiomas_presentes += 1
 
@@ -268,4 +297,11 @@ def main():
     print("\n➡️ Ahora puedes subir este archivo a Cloudflare KV manualmente.")
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--local-root", type=Path)
+    args = parser.parse_args()
+    if args.local_root:
+        generate_local(args.local_root)
+    else:
+        main()
