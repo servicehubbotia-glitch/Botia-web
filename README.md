@@ -228,8 +228,9 @@ Response shape:
 
 The current website robot is implemented by botia/assets/js/botia-chat.js.
 Its saved questions and answers are loaded exclusively from
-botia/data/robot-faq/{lang}.json (with an English fallback). Clicking a saved
-question displays its stored answer locally.
+botia/data/robot-faq/{lang}.json (with an English fallback). Choosing a saved
+question prefills the input; submitting that matching question displays its stored
+answer locally.
 
 For a free-text question, the frontend sends the current page's main text,
 page/ingredient identifier, language, response rules and recent conversation to
