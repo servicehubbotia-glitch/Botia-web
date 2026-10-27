@@ -34,7 +34,7 @@ legal.html              Legal notice
 sitemap.xml             Generated — do not edit by hand
 llms.txt                Site summary for language models
 triggers-master.json    Generated — the app's detection table
-master_kb.json          Generated — the chatbot's knowledge base
+master_kb.json          Legacy export — not used by the current web robot
 
 pages/                  Long-form pages, read at home
 ingredients/            129 ingredient records + 10 layer WebViews
@@ -147,16 +147,13 @@ sitemap.xml
 
 indexable HTML files that actually exist — excludes the 10 noindex WebViews
 
-master_kb.json
-
-the records currently included in the chatbot knowledge base × 14 languages
-
 i18n/{lang}/ingredient_index.json → aliases
 
 the detail files
 
-After adding an ingredient record, all five need regenerating, and master_kb.json
-must be uploaded to the Cloudflare KV by hand.
+After adding an ingredient record, regenerate the glossary, ingredient indexes,
+triggers and sitemap. Review the robot FAQ entries for that profile separately.
+The current web robot does not load the legacy master_kb.json export.
 
 The glossary is the source of truth
 
@@ -229,8 +226,17 @@ Response shape:
   "region": "NL"
 }
 
-The chatbot runs on a separate Cloudflare Worker with its own knowledge base
-in KV. It answers only from BOTIA content.
+The current website robot is implemented by botia/assets/js/botia-chat.js.
+Its saved questions and answers are loaded exclusively from
+botia/data/robot-faq/{lang}.json (with an English fallback). Clicking a saved
+question displays its stored answer locally.
+
+For a free-text question, the frontend sends the current page's main text,
+page/ingredient identifier, language, response rules and recent conversation to
+https://botia-web.servicehub-botia.workers.dev. This endpoint's implementation
+is separate from this repository. The website does not load master_kb.json,
+and publishing updated page content or robot FAQ files requires no KV upload.
+Do not infer the endpoint's internal storage from obsolete README statements.
 
 Adding an ingredient
 
@@ -242,9 +248,9 @@ Translate to the 13 remaining languages
 
 Add it to the 14 ingredient_index.json
 
-Regenerate the glossary, the triggers, the sitemap and master_kb.json
+Regenerate the glossary, the triggers and the sitemap.
 
-Upload master_kb.json to the Cloudflare KV
+Review botia/data/robot-faq/{lang}.json in all 14 languages.
 
 Two sources minimum, with real URLs. WHO and JECFA take precedence over regional
 regulators.
@@ -273,13 +279,9 @@ with BOTIA-Knowledge-Base/scripts/sync_web_evidence.py, pointing --kb-root and
 --web-root at the two local checkouts. The snapshot records its source hash.
 Unknown references remain explicit; metadata generation is not source validation.
 
-For local chatbot-data generation without cloning or pushing:
-
-    python3 scripts/generate_master_kb.py --local-root .
-
-The curated public ingredient index defines the profiles. Publish the generated
-master_kb.json to the chatbot's Cloudflare KV separately; updating GitHub alone
-does not update that external store.
+Robot maintenance follows the implementation above: update the page content
+and the corresponding saved FAQ pairs, then verify them in the published site.
+master_kb.json and its historical generator are not part of this runtime path.
 
 Changes to E500, E440 and E450 must keep the English HTML body, meta description,
 og:description, twitter:description and JSON-LD in agreement with the English
