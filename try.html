@@ -948,9 +948,13 @@
         : "/pages/animal.html" + q;
       choiceGrid.appendChild(resultIcon(animalHref, LAYER_ICONS.animal, labels.animal));
 
-      var womanHref = data.woman === "general" && data.woman_trigger
-        ? "/ingredients/woman_cards.html" + q + "&trigger=" + encodeURIComponent(data.woman_trigger)
-        : "/pages/woman.html" + q;
+      var womanTriggers = data.woman_trigger || (byLayer.woman || []).map(function(i){ return i.slug; }).filter(Boolean).join(",");
+      var womanHref = "/pages/woman.html" + q;
+      if (data.woman === "general") {
+        womanHref = "/ingredients/woman_cards.html" + q + (womanTriggers ? "&trigger=" + encodeURIComponent(womanTriggers) : "");
+      } else if (womanTriggers) {
+        womanHref = "/ingredients/woman_safefood.html" + q + "&trigger=" + encodeURIComponent(womanTriggers);
+      }
       choiceGrid.appendChild(resultIcon(womanHref, LAYER_ICONS.woman, labels.woman));
 
       var muslimHref = "/pages/muslim.html" + q;
