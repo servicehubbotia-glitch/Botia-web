@@ -5,11 +5,16 @@
     "catalog": "CATALOG.json",
     "generated_on": "2026-10-27",
     "source_web_base_commit": "b515d185449340f2e4b9d5566d03324e9430aa10",
-    "source_content_sha256": "a6f2d593a1413c883c6bc320c97220559a2a30208092cc1f3e3b78c664f50962",
     "ingredients": 129,
     "citations": 469,
-    "uncatalogued_citations": 49,
-    "scope": "All profiles currently present in the English ingredient index; metadata only, not revalidation of every source."
+    "uncatalogued_citations": 39,
+    "scope": "All profiles currently present in the English ingredient index; metadata only, not revalidation of every source.",
+    "incremental_audit_patch": {
+      "date": "2026-10-29",
+      "findings": "B01–B11",
+      "scope": "Bibliographic corrections; earlier generation metadata describes the previous full snapshot."
+    },
+    "previous_snapshot_source_content_sha256": "a6f2d593a1413c883c6bc320c97220559a2a30208092cc1f3e3b78c664f50962"
   },
   "ingredients": {
     "acesulfame_k": {
@@ -1756,11 +1761,13 @@
       "e_code": "E100",
       "sources": [
         {
-          "label": "RCT: curcumin vs vitamin E for hot flushes in postmenopausal women (2015)",
-          "title": "RCT: curcumin vs vitamin E for hot flushes in postmenopausal women (2015)",
-          "official_url": "https://pubmed.ncbi.nlm.nih.gov/25924300/",
-          "catalog_path": null,
-          "verification_status": "NO CATALOGADO"
+          "label": "The effect of oral capsule of curcumin and vitamin E on the hot flashes and anxiety in postmenopausal women: A triple blind randomised controlled trial (2020)",
+          "title": "The effect of oral capsule of curcumin and vitamin E on the hot flashes and anxiety in postmenopausal women: A triple blind randomised controlled trial",
+          "official_url": "https://pubmed.ncbi.nlm.nih.gov/31987231/",
+          "catalog_path": "studies/REFERENCE_B01_31987231.json",
+          "verification_status": "IDENTIDAD Y ALCANCE VERIFICADOS",
+          "date": "2020",
+          "document_status": "REFERENCIA BIBLIOGRÁFICA"
         },
         {
           "title": "Consolidated text: Commission Regulation (EU) No 231/2012 laying down specifications for food additives",
@@ -2518,11 +2525,13 @@
       "e_code": "",
       "sources": [
         {
-          "label": "RCT: fenugreek vs metformin in PCOS (2019)",
-          "title": "RCT: fenugreek vs metformin in PCOS (2019)",
-          "official_url": "https://pubmed.ncbi.nlm.nih.gov/30904839/",
-          "catalog_path": null,
-          "verification_status": "NO CATALOGADO"
+          "label": "Comparison of the Effect of Fenugreek and Metformin on Clinical and Metabolic Status of Cases with Polycystic Ovary Syndrome: A Randomized Trial (2024)",
+          "title": "Comparison of the Effect of Fenugreek and Metformin on Clinical and Metabolic Status of Cases with Polycystic Ovary Syndrome: A Randomized Trial",
+          "official_url": "https://pubmed.ncbi.nlm.nih.gov/39157801/",
+          "catalog_path": "studies/REFERENCE_B02_39157801.json",
+          "verification_status": "IDENTIDAD Y RESUMEN VERIFICADOS",
+          "date": "2024",
+          "document_status": "REFERENCIA BIBLIOGRÁFICA"
         }
       ]
     },
@@ -2815,18 +2824,22 @@
       "e_code": "",
       "sources": [
         {
-          "label": "Meta-analysis: ginger for primary dysmenorrhea (2015)",
-          "title": "Meta-analysis: ginger for primary dysmenorrhea (2015)",
-          "official_url": "https://pubmed.ncbi.nlm.nih.gov/25668942/",
-          "catalog_path": null,
-          "verification_status": "NO CATALOGADO"
+          "label": "Comparison of effects of ginger, mefenamic acid, and ibuprofen on pain in women with primary dysmenorrhea (2009)",
+          "title": "Comparison of effects of ginger, mefenamic acid, and ibuprofen on pain in women with primary dysmenorrhea",
+          "official_url": "https://pubmed.ncbi.nlm.nih.gov/19216660/",
+          "catalog_path": "studies/REFERENCE_B03_19216660.json",
+          "verification_status": "IDENTIDAD Y RESUMEN VERIFICADOS",
+          "date": "2009",
+          "document_status": "REFERENCIA BIBLIOGRÁFICA"
         },
         {
-          "label": "RCT: ginger vs vitamin B6 for nausea and vomiting in pregnancy (2014)",
-          "title": "RCT: ginger vs vitamin B6 for nausea and vomiting in pregnancy (2014)",
-          "official_url": "https://pubmed.ncbi.nlm.nih.gov/24808437/",
-          "catalog_path": null,
-          "verification_status": "NO CATALOGADO"
+          "label": "A randomized controlled trial of ginger to treat nausea and vomiting in pregnancy (2004)",
+          "title": "A randomized controlled trial of ginger to treat nausea and vomiting in pregnancy",
+          "official_url": "https://pubmed.ncbi.nlm.nih.gov/15051552/",
+          "catalog_path": "studies/REFERENCE_B04_15051552.json",
+          "verification_status": "IDENTIDAD Y RESUMEN VERIFICADOS",
+          "date": "2004",
+          "document_status": "REFERENCIA BIBLIOGRÁFICA"
         }
       ]
     },
@@ -4375,11 +4388,13 @@
       "e_code": "",
       "sources": [
         {
-          "label": "Meta-analysis: omega-3 supplementation and lipid profile in postmenopausal women (2023)",
-          "title": "Meta-analysis: omega-3 supplementation and lipid profile in postmenopausal women (2023)",
-          "official_url": "https://pubmed.ncbi.nlm.nih.gov/37733618/",
-          "catalog_path": null,
-          "verification_status": "NO CATALOGADO"
+          "label": "Does Omega-3 Fatty Acid Supplementation Have Favorable Effects on the Lipid Profile in Postmenopausal Women? A Systematic Review and Dose-response Meta-analysis of Randomized Controlled Trials (2023)",
+          "title": "Does Omega-3 Fatty Acid Supplementation Have Favorable Effects on the Lipid Profile in Postmenopausal Women? A Systematic Review and Dose-response Meta-analysis of Randomized Controlled Trials",
+          "official_url": "https://pubmed.ncbi.nlm.nih.gov/36641259/",
+          "catalog_path": "studies/REFERENCE_B05_36641259.json",
+          "verification_status": "IDENTIDAD Y RESUMEN VERIFICADOS",
+          "date": "2023",
+          "document_status": "REFERENCIA BIBLIOGRÁFICA"
         }
       ]
     },
@@ -4975,11 +4990,13 @@
       "e_code": "E252",
       "sources": [
         {
-          "label": "JECFA — Potassium nitrate (INS 252) — Chemical/506",
-          "title": "JECFA — Potassium nitrate (INS 252) — Chemical/506",
-          "official_url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/506",
-          "catalog_path": null,
-          "verification_status": "NO CATALOGADO"
+          "label": "POTASSIUM NITRATE (1995)",
+          "title": "POTASSIUM NITRATE",
+          "official_url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/390",
+          "catalog_path": "studies/REFERENCE_B10_390.json",
+          "verification_status": "IDENTIDAD Y RESUMEN VERIFICADOS",
+          "date": "1995",
+          "document_status": "REFERENCIA BIBLIOGRÁFICA"
         },
         {
           "title": "Consolidated text: Commission Regulation (EU) No 231/2012 laying down specifications for food additives",
@@ -5008,11 +5025,13 @@
       "e_code": "E202",
       "sources": [
         {
-          "label": "JECFA — Potassium sorbate (INS 202) — Chemical/2018",
-          "title": "JECFA — Potassium sorbate (INS 202) — Chemical/2018",
-          "official_url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2018",
-          "catalog_path": null,
-          "verification_status": "NO CATALOGADO"
+          "label": "POTASSIUM SORBATE (1973)",
+          "title": "POTASSIUM SORBATE",
+          "official_url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2724",
+          "catalog_path": "studies/REFERENCE_B09_2724.json",
+          "verification_status": "IDENTIDAD Y RESUMEN VERIFICADOS",
+          "date": "1973",
+          "document_status": "REFERENCIA BIBLIOGRÁFICA"
         },
         {
           "title": "Consolidated text: Commission Regulation (EU) No 231/2012 laying down specifications for food additives",
@@ -5625,18 +5644,22 @@
       "e_code": "",
       "sources": [
         {
-          "label": "Meta-analysis: soy intake and breast cancer risk (2019)",
-          "title": "Meta-analysis: soy intake and breast cancer risk (2019)",
-          "official_url": "https://pubmed.ncbi.nlm.nih.gov/31095297/",
-          "catalog_path": null,
-          "verification_status": "NO CATALOGADO"
+          "label": "Soy intake and breast cancer risk: a prospective study of 300,000 Chinese women and a dose-response meta-analysis (2019)",
+          "title": "Soy intake and breast cancer risk: a prospective study of 300,000 Chinese women and a dose-response meta-analysis",
+          "official_url": "https://pubmed.ncbi.nlm.nih.gov/31754945/",
+          "catalog_path": "studies/REFERENCE_B06_31754945.json",
+          "verification_status": "IDENTIDAD Y RESUMEN VERIFICADOS",
+          "date": "2019",
+          "document_status": "REFERENCIA BIBLIOGRÁFICA"
         },
         {
-          "label": "Cohort: soy intake and mortality in breast cancer survivors (2020)",
-          "title": "Cohort: soy intake and mortality in breast cancer survivors (2020)",
-          "official_url": "https://pubmed.ncbi.nlm.nih.gov/32095838/",
-          "catalog_path": null,
-          "verification_status": "NO CATALOGADO"
+          "label": "Soy food intake and breast cancer survival (2009)",
+          "title": "Soy food intake and breast cancer survival",
+          "official_url": "https://pubmed.ncbi.nlm.nih.gov/19996398/",
+          "catalog_path": "studies/REFERENCE_B07_19996398.json",
+          "verification_status": "IDENTIDAD Y RESUMEN VERIFICADOS",
+          "date": "2009",
+          "document_status": "REFERENCIA BIBLIOGRÁFICA"
         }
       ]
     },
@@ -5645,11 +5668,13 @@
       "e_code": "",
       "sources": [
         {
-          "label": "EFSA opinion on soy isoflavones and health claims (2015)",
-          "title": "EFSA opinion on soy isoflavones and health claims (2015)",
-          "official_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4244",
-          "catalog_path": null,
-          "verification_status": "NO CATALOGADO"
+          "label": "Risk assessment for peri- and post-menopausal women taking food supplements containing isolated isoflavones (2015)",
+          "title": "Risk assessment for peri- and post-menopausal women taking food supplements containing isolated isoflavones",
+          "official_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4246",
+          "catalog_path": "studies/REFERENCE_B08_4246.json",
+          "verification_status": "IDENTIDAD Y ALCANCE VERIFICADOS",
+          "date": "2015",
+          "document_status": "REFERENCIA BIBLIOGRÁFICA"
         },
         {
           "title": "NIH NCCIH — Soy: food uses, supplements and safety",
