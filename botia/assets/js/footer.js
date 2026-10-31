@@ -115,7 +115,7 @@
     const bottom = document.createElement("div");
     bottom.className = "footer-bottom";
     bottom.innerHTML = `
-      <p>${t(labels, "footer_disclaimer", "BOTIA does not replace WHO, EFSA, the European Commission, FDA, or scientific literature. It translates complex food evidence into information that can be used while reading a label.")}</p>
+      <p>${t(labels, "footer_disclaimer", "BOTIA does not replace the official health and food authorities. For example: WHO, EFSA, the European Commission and the FDA. It does not replace scientific studies either. BOTIA turns complex food evidence into simple information. You can use it while you read a label.")}</p>
       <p class="footer-copy">© ${COMPANY.year} ${COMPANY.name} · BOTIA</p>
     `;
 
