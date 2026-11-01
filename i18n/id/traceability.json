@@ -1,27 +1,27 @@
 {
-  "eyebrow": "Identifikasi produk",
+  "eyebrow": "Kenali produk",
   "title": "Ketertelusuran produk",
-  "lead": "Barcode mengidentifikasi suatu produk. Sumber menentukan apa yang benar-benar dapat diverifikasi tentangnya.",
+  "lead": "Kode batang menunjukkan identitas sebuah produk. Sumber informasi menentukan apa yang benar-benar bisa diperiksa tentang produk itu.",
   "identity_title": "Pengidentifikasi produk",
   "product_label": "Produk",
   "brand_label": "Merek",
   "market_label": "Pasar referensi",
-  "gtin14_label": "GTIN-14 ternormalisasi",
+  "gtin14_label": "Kode GTIN-14 (bentuk standar)",
   "overall_label": "Status ketertelusuran keseluruhan",
   "records_title": "Informasi terverifikasi",
-  "empty_state": "Belum ada data verifikasi ketertelusuran yang diberikan ke tampilan ini.",
+  "empty_state": "Tidak ada data ketertelusuran yang dikirim ke tampilan ini.",
   "consulted_title": "Sumber yang dikonsultasikan",
   "warnings_title": "Catatan",
-  "principle": "Ketidakhadiran bukanlah putusan negatif. BOTIA hanya menampilkan apa yang didukung sumber untuk subjek dan cakupan yang diidentifikasi secara tepat.",
-  "disclaimer": "Barcode mengidentifikasi. Sumber memverifikasi. BOTIA tidak mengisi kekosongan.",
+  "principle": "Informasi yang tidak ada bukanlah hasil negatif. BOTIA hanya menunjukkan apa yang dipastikan sumber. Hanya untuk hal dan cakupan yang disebutkan secara tepat.",
+  "disclaimer": "Kode batang menunjukkan identitas produk. Sumber informasi memeriksa fakta. BOTIA tidak mengisi informasi yang tidak ada.",
   "runtime": {
     "status": {
       "VERIFIED_PRODUCT": "Terverifikasi untuk produk ini",
-      "VERIFIED_SCOPE": "Terverifikasi untuk cakupan yang ditentukan",
-      "REGULATORY_CONTEXT": "Konteks regulasi ditemukan",
+      "VERIFIED_SCOPE": "Diverifikasi untuk cakupan terbatas",
+      "REGULATORY_CONTEXT": "Konteks hukum ditemukan",
       "SELF_DECLARED": "Pernyataan perusahaan ditemukan",
       "SOURCE_CLASSIFICATION": "Klasifikasi sumber ditemukan",
-      "CONFLICT": "Sumber saling bertentangan",
+      "CONFLICT": "Sumber tidak sepakat",
       "NOT_VERIFIED": "Tidak terverifikasi dalam sumber yang dikonsultasikan"
     },
     "symbol": {
@@ -50,12 +50,12 @@
     "field_certificate": "Sertifikat / pendaftaran",
     "field_validity": "Masa berlaku",
     "open_source": "Buka sumber →",
-    "scope_warning": "Bukti ini hanya berlaku untuk cakupan yang ditampilkan. BOTIA tidak memperluasnya secara otomatis ke produk, merek, perusahaan induk, pasar, atau pabrik lain.",
-    "not_verified_note": "Tidak ada kesimpulan negatif yang diambil dari hasil ini.",
+    "scope_warning": "Bukti ini hanya berlaku untuk cakupan yang ditampilkan. BOTIA tidak menerapkannya pada produk, merek, perusahaan induk, pasar, atau pabrik lain.",
+    "not_verified_note": "Hasil ini tidak berarti apa pun yang negatif.",
     "service_state": {
       "SOURCE_UNAVAILABLE": "Sumber tidak dapat dikonsultasikan. Ini tidak berarti bahwa tidak ada bukti.",
-      "INVALID_GTIN": "Kode yang dibaca bukan GTIN yang valid, sehingga tidak ada sumber yang dapat dikonsultasikan."
+      "INVALID_GTIN": "Kode ini bukan GTIN yang valid. Karena itu, tidak ada sumber yang bisa diperiksa."
     },
-    "contract_error": "Item ini tidak ditampilkan sebagai terverifikasi karena kolom ketertelusuran yang wajib tidak ada."
+    "contract_error": "Item ini tidak ditampilkan sebagai terverifikasi. Sebagian data ketertelusuran yang diperlukan tidak ada."
   }
 }
