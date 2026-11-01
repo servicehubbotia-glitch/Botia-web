@@ -1,27 +1,27 @@
 {
-  "eyebrow": "Produktidentifikation",
+  "eyebrow": "Produkt bestimmen",
   "title": "Produktrückverfolgbarkeit",
-  "lead": "Der Barcode identifiziert ein Produkt. Quellen bestimmen, was tatsächlich darüber verifiziert werden kann.",
+  "lead": "Der Barcode kennzeichnet ein Produkt. Die Quellen bestimmen, was sich darüber tatsächlich prüfen lässt.",
   "identity_title": "Produktidentifikator",
   "product_label": "Produkt",
   "brand_label": "Marke",
   "market_label": "Referenzmarkt",
-  "gtin14_label": "Normalisierte GTIN-14",
+  "gtin14_label": "GTIN-14-Code (Standardform)",
   "overall_label": "Gesamtstatus der Rückverfolgbarkeit",
   "records_title": "Verifizierte Informationen",
-  "empty_state": "Dieser Ansicht wurden keine Rückverfolgbarkeitsdaten übermittelt.",
+  "empty_state": "An diese Ansicht wurden keine Daten zur Rückverfolgbarkeit gesendet.",
   "consulted_title": "Konsultierte Quellen",
   "warnings_title": "Hinweise",
-  "principle": "Eine Abwesenheit ist kein negatives Urteil. BOTIA zeigt nur, was die Quelle für den genau identifizierten Gegenstand und Umfang stützt.",
-  "disclaimer": "Ein Barcode identifiziert. Quellen verifizieren. BOTIA füllt die Lücken nicht.",
+  "principle": "Fehlende Informationen sind kein negatives Ergebnis. BOTIA zeigt nur, was die Quelle bestätigt. Und nur für den genau genannten Gegenstand und Umfang.",
+  "disclaimer": "Ein Barcode kennzeichnet das Produkt. Quellen prüfen die Fakten. BOTIA ergänzt nicht, was fehlt.",
   "runtime": {
     "status": {
       "VERIFIED_PRODUCT": "Für dieses Produkt verifiziert",
-      "VERIFIED_SCOPE": "Für einen definierten Umfang verifiziert",
-      "REGULATORY_CONTEXT": "Regulatorischer Kontext ermittelt",
-      "SELF_DECLARED": "Unternehmenserklärung ermittelt",
-      "SOURCE_CLASSIFICATION": "Quellenklassifikation ermittelt",
-      "CONFLICT": "Quellen im Konflikt",
+      "VERIFIED_SCOPE": "Für einen begrenzten Umfang geprüft",
+      "REGULATORY_CONTEXT": "Rechtlicher Kontext gefunden",
+      "SELF_DECLARED": "Unternehmensangabe gefunden",
+      "SOURCE_CLASSIFICATION": "Einstufung der Quelle gefunden",
+      "CONFLICT": "Quellen widersprechen sich",
       "NOT_VERIFIED": "In den konsultierten Quellen nicht verifiziert"
     },
     "symbol": {
@@ -50,12 +50,12 @@
     "field_certificate": "Zertifikat / Registrierung",
     "field_validity": "Gültigkeit",
     "open_source": "Quelle öffnen →",
-    "scope_warning": "Dieser Nachweis gilt nur für den gezeigten Umfang. BOTIA dehnt ihn nicht automatisch auf ein anderes Produkt, eine andere Marke, Muttergesellschaft, einen anderen Markt oder Standort aus.",
-    "not_verified_note": "Aus diesem Ergebnis wird keine negative Schlussfolgerung gezogen.",
+    "scope_warning": "Dieser Nachweis gilt nur für den angezeigten Umfang. BOTIA überträgt ihn nicht auf ein anderes Produkt, eine andere Marke, Muttergesellschaft, einen anderen Markt oder eine andere Fabrik.",
+    "not_verified_note": "Dieses Ergebnis bedeutet nichts Negatives.",
     "service_state": {
       "SOURCE_UNAVAILABLE": "Die Quelle konnte nicht abgefragt werden. Das bedeutet nicht, dass keine Belege existieren.",
-      "INVALID_GTIN": "Der gelesene Code ist keine gültige GTIN, daher konnte keine Quelle abgefragt werden."
+      "INVALID_GTIN": "Der Code ist keine gültige GTIN. Deshalb konnte keine Quelle abgefragt werden."
     },
-    "contract_error": "Dieser Eintrag wurde nicht als verifiziert angezeigt, da erforderliche Rückverfolgbarkeitsfelder fehlten."
+    "contract_error": "Dieses Element wird nicht als geprüft angezeigt. Einige erforderliche Daten zur Rückverfolgbarkeit fehlten."
   }
 }
