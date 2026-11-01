@@ -1,51 +1,51 @@
 {
   "title": "Musulman",
-  "subtitle": "Citește eticheta. Înțelege ce spune cu adevărat.",
-  "description": "BOTIA citește ingredientele declarate și le corelează cu criterii documentate. Nu certifică alimentele — face eticheta transparentă.",
+  "subtitle": "Citește eticheta. Înțelege ce spune și ce nu spune.",
+  "description": "BOTIA citește ingredientele de pe etichetă. Le compară cu criterii documentate. Nu certifică alimentele. Face eticheta transparentă.",
   "states_title": "Cum clasifică BOTIA ingredientele",
   "halal": {
     "name": "Halal",
-    "desc": "Nu s-au detectat ingrediente interzise sau de origine dubioasă pe etichetă."
+    "desc": "Eticheta nu arată niciun ingredient interzis și nicio origine îndoielnică."
   },
   "haram": {
     "name": "Haram",
-    "desc": "Eticheta declară ingrediente clar interzise: derivate de porc, alcool sau sânge."
+    "desc": "Eticheta numește clar ingrediente interzise. De exemplu: produse din porc, alcool sau sânge."
   },
   "mashbooh": {
     "name": "Mashbooh",
-    "desc": "Eticheta nu confirmă originea sau procesul. Incertitudinea este informația."
+    "desc": "Eticheta nu confirmă originea sau procesul. Îndoiala în sine este informația."
   },
   "doubts": {
-    "title": "De ce apar aceste îndoieli?",
-    "th_label": "Aspect al etichetei",
-    "th_general": "Reglementare generală",
+    "title": "De unde vin aceste îndoieli?",
+    "th_label": "Parte a etichetei",
+    "th_general": "Legislația generală privind alimentele",
     "th_halal": "Standard Halal",
-    "th_botia": "De ce BOTIA detectează ambiguitatea",
+    "th_botia": "De ce vede BOTIA o îndoială",
     "row1": {
       "aspect": "Aditivi (numere E) și enzime",
-      "general": "Pot fi grupate pe funcție fără a specifica originea vegetală sau animală.",
-      "halal": "Necesită ca toți aditivii să provină strict din surse permise.",
-      "botia": "Dacă un aditiv ar putea fi de origine animală, dar eticheta nu specifică, BOTIA îl marchează ca dubios."
+      "general": "Pot fi trecute doar după funcția lor. Eticheta nu trebuie să spună dacă provin din plante sau de la animale.",
+      "halal": "Toți aditivii trebuie să provină din surse permise.",
+      "botia": "Un aditiv poate proveni de la animale. Dacă eticheta nu spune acest lucru, BOTIA îl marchează ca îndoielnic."
     },
     "row2": {
       "aspect": "Carne de la animale permise",
-      "general": "Necesită declararea speciei de animal.",
-      "halal": "Necesită sacrificare conformă de către un musulman care invocă numele lui Allah și taie vene specifice.",
-      "botia": "Etichetele nu detaliază aproape niciodată metoda de sacrificare, așa că BOTIA nu poate presupune conformitatea."
+      "general": "Eticheta trebuie să spună de la ce animal provine carnea.",
+      "halal": "Animalul trebuie sacrificat în modul permis. Un musulman face acest lucru, spune numele lui Allah și taie anumite vene.",
+      "botia": "Etichetele aproape niciodată nu descriu metoda de sacrificare. De aceea, BOTIA nu poate presupune că regulile au fost respectate."
     }
   },
   "cancannot": {
-    "title": "Ce poate și ce nu poate concluziona BOTIA"
+    "title": "Ce poate și ce nu poate spune BOTIA"
   },
   "can_title": "BOTIA POATE",
-  "can1": "Să citească ingredientele declarate de pe etichetă.",
-  "can2": "Să detecteze ingrediente clar Haram pe baza criteriilor documentate.",
-  "can3": "Să detecteze ingrediente cu origine ambiguă și să facă vizibilă tăcerea.",
+  "can1": "Să citească ingredientele scrise pe etichetă.",
+  "can2": "Să găsească ingredientele care sunt clar Haram, folosind criterii documentate.",
+  "can3": "Să găsească ingredientele cu origine neclară. Să arate când eticheta nu spune nimic despre aceasta.",
   "cannot_title": "BOTIA NU POATE",
-  "cannot1": "Să certifice Halal — nu este o garanție sau un sigiliu de aprobare.",
-  "cannot2": "Să detecteze procese nedeclarate, cum ar fi contaminarea încrucișată în fabrici.",
+  "cannot1": "Să certifice Halal. BOTIA nu este o garanție sau un semn de aprobare.",
+  "cannot2": "Să știe despre procese care nu apar pe etichetă, cum ar fi contaminarea încrucișată în fabrici. Contaminarea încrucișată înseamnă contactul nedorit cu alte substanțe în timpul producției.",
   "cannot3": "Să înlocuiască o autoritate religioasă sau un organism de certificare.",
-  "closing": "Transparența nu este certificare. Este dreptul de a ști ce spune eticheta — și ce nu spune.",
+  "closing": "Transparența nu este certificare. Este dreptul de a ști ce spune eticheta. Și dreptul de a ști ce nu spune.",
   "haram_ingredients_title": "Ingrediente analizate de BOTIA în acest strat",
   "mashbooh_ingredients_title": "Ingrediente care pot fi Mashbooh",
   "ingredient_alcohol": "Alcool",

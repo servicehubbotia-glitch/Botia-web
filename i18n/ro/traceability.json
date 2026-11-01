@@ -1,27 +1,27 @@
 {
-  "eyebrow": "Identificarea produsului",
+  "eyebrow": "Identifică produsul",
   "title": "Trasabilitatea produsului",
-  "lead": "Codul de bare identifică un produs. Sursele determină ce poate fi verificat de fapt despre acesta.",
+  "lead": "Codul de bare identifică un produs. Sursele decid ce se poate verifica în mod real despre el.",
   "identity_title": "Identificator de produs",
   "product_label": "Produs",
   "brand_label": "Marcă",
   "market_label": "Piața de referință",
-  "gtin14_label": "GTIN-14 normalizat",
+  "gtin14_label": "Cod GTIN-14 (formă standard)",
   "overall_label": "Stare generală de trasabilitate",
   "records_title": "Informații verificate",
-  "empty_state": "Acestei vizualizări nu i-au fost furnizate date de verificare a trasabilității.",
+  "empty_state": "Nu au fost trimise date de trasabilitate către această vizualizare.",
   "consulted_title": "Surse consultate",
   "warnings_title": "Note",
-  "principle": "O absență nu este un verdict negativ. BOTIA arată doar ceea ce susține sursa pentru subiectul și domeniul exact identificate.",
-  "disclaimer": "Un cod de bare identifică. Sursele verifică. BOTIA nu umple golurile.",
+  "principle": "Informațiile lipsă nu reprezintă un rezultat negativ. BOTIA arată doar ce confirmă sursa. Și doar pentru subiectul și domeniul exact menționate.",
+  "disclaimer": "Un cod de bare identifică produsul. Sursele verifică faptele. BOTIA nu completează informațiile care lipsesc.",
   "runtime": {
     "status": {
       "VERIFIED_PRODUCT": "Verificat pentru acest produs",
-      "VERIFIED_SCOPE": "Verificat pentru un domeniu definit",
-      "REGULATORY_CONTEXT": "Context regulatoriu identificat",
-      "SELF_DECLARED": "Declarație a companiei identificată",
-      "SOURCE_CLASSIFICATION": "Clasificare a sursei identificată",
-      "CONFLICT": "Surse în conflict",
+      "VERIFIED_SCOPE": "Verificat pentru un domeniu limitat",
+      "REGULATORY_CONTEXT": "Context juridic găsit",
+      "SELF_DECLARED": "Declarație a companiei găsită",
+      "SOURCE_CLASSIFICATION": "Clasificare a sursei găsită",
+      "CONFLICT": "Sursele nu sunt de acord",
       "NOT_VERIFIED": "Neverificat în sursele consultate"
     },
     "symbol": {
@@ -50,12 +50,12 @@
     "field_certificate": "Certificat / înregistrare",
     "field_validity": "Valabilitate",
     "open_source": "Deschide sursa →",
-    "scope_warning": "Această dovadă se aplică doar domeniului afișat. BOTIA nu o extinde automat la un alt produs, brand, companie-mamă, piață sau fabrică.",
-    "not_verified_note": "Din acest rezultat nu se trage nicio concluzie negativă.",
+    "scope_warning": "Aceste dovezi se aplică doar domeniului afișat. BOTIA nu le aplică altui produs, brand, companie-mamă, piețe sau fabrici.",
+    "not_verified_note": "Acest rezultat nu înseamnă nimic negativ.",
     "service_state": {
       "SOURCE_UNAVAILABLE": "Sursa nu a putut fi consultată. Aceasta nu înseamnă că nu există dovezi.",
-      "INVALID_GTIN": "Codul citit nu este un GTIN valid, așa că nicio sursă nu a putut fi consultată."
+      "INVALID_GTIN": "Codul nu este un GTIN valid. Prin urmare, nu a putut fi consultată nicio sursă."
     },
-    "contract_error": "Acest element nu a fost afișat ca verificat deoarece lipseau câmpuri obligatorii de trasabilitate."
+    "contract_error": "Acest element nu este afișat ca verificat. Au lipsit unele date de trasabilitate necesare."
   }
 }
