@@ -1,27 +1,27 @@
 {
-  "eyebrow": "Productidentificatie",
+  "eyebrow": "Het product herkennen",
   "title": "Producttraceerbaarheid",
-  "lead": "De barcode identificeert een product. Bronnen bepalen wat er werkelijk over kan worden geverifieerd.",
+  "lead": "De streepjescode identificeert een product. De bronnen bepalen wat er echt over kan worden gecontroleerd.",
   "identity_title": "Productidentificatie",
   "product_label": "Product",
   "brand_label": "Merk",
   "market_label": "Referentiemarkt",
-  "gtin14_label": "Genormaliseerde GTIN-14",
+  "gtin14_label": "GTIN-14-code (standaardvorm)",
   "overall_label": "Algemene traceerbaarheidsstatus",
   "records_title": "Geverifieerde informatie",
-  "empty_state": "Er zijn geen traceerbaarheidsgegevens aan deze weergave geleverd.",
+  "empty_state": "Er zijn geen traceerbaarheidsgegevens naar deze weergave gestuurd.",
   "consulted_title": "Geraadpleegde bronnen",
   "warnings_title": "Opmerkingen",
-  "principle": "Een afwezigheid is geen negatief oordeel. BOTIA toont alleen wat de bron ondersteunt voor het exact geïdentificeerde onderwerp en bereik.",
-  "disclaimer": "Een barcode identificeert. Bronnen verifiëren. BOTIA vult de hiaten niet op.",
+  "principle": "Ontbrekende informatie is geen negatief resultaat. BOTIA toont alleen wat de bron bevestigt. En alleen voor het precies genoemde onderwerp en toepassingsgebied.",
+  "disclaimer": "Een streepjescode identificeert het product. Bronnen controleren de feiten. BOTIA vult ontbrekende informatie niet in.",
   "runtime": {
     "status": {
       "VERIFIED_PRODUCT": "Geverifieerd voor dit product",
-      "VERIFIED_SCOPE": "Geverifieerd voor een afgebakend bereik",
-      "REGULATORY_CONTEXT": "Regelgevende context gevonden",
+      "VERIFIED_SCOPE": "Geverifieerd voor een beperkt toepassingsgebied",
+      "REGULATORY_CONTEXT": "Wettelijke context gevonden",
       "SELF_DECLARED": "Verklaring van het bedrijf gevonden",
-      "SOURCE_CLASSIFICATION": "Bronclassificatie gevonden",
-      "CONFLICT": "Bronnen in conflict",
+      "SOURCE_CLASSIFICATION": "Classificatie van de bron gevonden",
+      "CONFLICT": "Bronnen spreken elkaar tegen",
       "NOT_VERIFIED": "Niet geverifieerd in de geraadpleegde bronnen"
     },
     "symbol": {
@@ -50,12 +50,12 @@
     "field_certificate": "Certificaat / registratie",
     "field_validity": "Geldigheid",
     "open_source": "Bron openen →",
-    "scope_warning": "Dit bewijs geldt alleen voor het getoonde bereik. BOTIA breidt het niet automatisch uit naar een ander product, merk, moederbedrijf, markt of locatie.",
-    "not_verified_note": "Aan dit resultaat wordt geen negatieve conclusie verbonden.",
+    "scope_warning": "Dit bewijs geldt alleen voor het getoonde toepassingsgebied. BOTIA past het niet toe op een ander product, merk, moederbedrijf, een andere markt of fabriek.",
+    "not_verified_note": "Dit resultaat betekent niets negatiefs.",
     "service_state": {
       "SOURCE_UNAVAILABLE": "De bron kon niet worden geraadpleegd. Dat betekent niet dat er geen bewijs bestaat.",
-      "INVALID_GTIN": "De gelezen code is geen geldige GTIN, dus kon geen bron worden geraadpleegd."
+      "INVALID_GTIN": "De code is geen geldige GTIN. Daarom kon geen bron worden geraadpleegd."
     },
-    "contract_error": "Dit item werd niet als geverifieerd weergegeven omdat vereiste traceerbaarheidsvelden ontbraken."
+    "contract_error": "Dit item wordt niet als geverifieerd getoond. Sommige verplichte traceerbaarheidsgegevens ontbraken."
   }
 }

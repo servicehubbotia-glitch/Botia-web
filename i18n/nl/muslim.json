@@ -1,51 +1,51 @@
 {
   "title": "Moslim",
-  "subtitle": "Lees het etiket. Begrijp wat het echt zegt.",
-  "description": "BOTIA leest de vermelde ingrediënten en vergelijkt deze met gedocumenteerde criteria. Het certificeert geen voedsel — het maakt het etiket transparant.",
+  "subtitle": "Lees het etiket. Begrijp wat erop staat en wat er niet op staat.",
+  "description": "BOTIA leest de ingrediënten op het etiket. Het vergelijkt ze met vastgelegde criteria. Het certificeert geen voedsel. Het maakt het etiket transparant.",
   "states_title": "Hoe BOTIA ingrediënten classificeert",
   "halal": {
     "name": "Halal",
-    "desc": "Geen verboden ingrediënten of twijfelachtige herkomst gedetecteerd op het etiket."
+    "desc": "Het etiket toont geen verboden ingrediënt en geen twijfelachtige herkomst."
   },
   "haram": {
     "name": "Haram",
-    "desc": "Het etiket vermeldt duidelijk verboden ingrediënten: varkensderivaten, alcohol of bloed."
+    "desc": "Het etiket noemt duidelijk verboden ingrediënten. Bijvoorbeeld: producten van varkensvlees, alcohol of bloed."
   },
   "mashbooh": {
     "name": "Mashbooh",
-    "desc": "Het etiket bevestigt de herkomst of het proces niet. Onzekerheid is de informatie."
+    "desc": "Het etiket bevestigt de herkomst of het productieproces niet. De twijfel zelf is de informatie."
   },
   "doubts": {
-    "title": "Waarom ontstaan deze twijfels?",
-    "th_label": "Etiketaspect",
-    "th_general": "Algemene Regelgeving",
+    "title": "Waar komt deze twijfel vandaan?",
+    "th_label": "Onderdeel van het etiket",
+    "th_general": "Algemene levensmiddelenwetgeving",
     "th_halal": "Halal Standaard",
-    "th_botia": "Waarom BOTIA dubbelzinnigheid detecteert",
+    "th_botia": "Waarom BOTIA twijfel ziet",
     "row1": {
-      "aspect": "Additieven (E-nummers) & Enzymen",
-      "general": "Kunnen worden gegroepeerd op functie zonder plantaardige of dierlijke herkomst te specificeren.",
-      "halal": "Vereist dat alle additieven strikt van toegestane bronnen komen.",
-      "botia": "Als een additief van dierlijke oorsprong zou kunnen zijn maar het etiket zwijgt, markeert BOTIA het als twijfelachtig."
+      "aspect": "Additieven (E-nummers) en enzymen",
+      "general": "Ze mogen alleen met hun functie worden vermeld. Het etiket hoeft niet te zeggen of ze van planten of dieren komen.",
+      "halal": "Alle additieven moeten uit toegestane bronnen komen.",
+      "botia": "Een additief kan van dieren komen. Als dat niet op het etiket staat, markeert BOTIA het als twijfelachtig."
     },
     "row2": {
       "aspect": "Vlees van toegestane dieren",
-      "general": "Vereist het vermelden van de diersoort.",
-      "halal": "Vereist wettige slachting door een moslim die Allah aanroept en specifieke aderen doorsnijdt.",
-      "botia": "Etiketten geven bijna nooit details over de slachtmethode, dus BOTIA kan niet uitgaan van naleving."
+      "general": "Het etiket moet zeggen van welk dier het vlees komt.",
+      "halal": "Het dier moet op de toegestane manier worden geslacht. Een moslim doet dit, noemt de naam van Allah en snijdt bepaalde aderen door.",
+      "botia": "Op etiketten staat bijna nooit hoe het dier is geslacht. BOTIA kan dus niet aannemen dat de regels zijn gevolgd."
     }
   },
   "cancannot": {
-    "title": "Wat BOTIA wel en niet kan concluderen"
+    "title": "Wat BOTIA wel en niet kan vertellen"
   },
   "can_title": "BOTIA KAN",
-  "can1": "Vermelde ingrediënten van het etiket lezen.",
-  "can2": "Duidelijk Haram-ingrediënten detecteren op basis van gedocumenteerde criteria.",
-  "can3": "Ingrediënten met dubbelzinnige herkomst detecteren en de stilte zichtbaar maken.",
+  "can1": "De ingrediënten op het etiket lezen.",
+  "can2": "Duidelijk Haram ingrediënten vinden met behulp van vastgelegde criteria.",
+  "can3": "Ingrediënten met een onduidelijke herkomst vinden. Laten zien wanneer het etiket daar niets over zegt.",
   "cannot_title": "BOTIA KAN NIET",
-  "cannot1": "Halal certificeren — het is geen garantie of keurmerk.",
-  "cannot2": "Niet-vermelde processen zoals kruisbesmetting in fabrieken detecteren.",
+  "cannot1": "Halal certificeren. BOTIA is geen garantie of keurmerk.",
+  "cannot2": "Weten wat er gebeurt bij processen die niet op het etiket staan, zoals kruisbesmetting in fabrieken. Kruisbesmetting betekent ongewenst contact met andere stoffen tijdens de productie.",
   "cannot3": "Een religieuze autoriteit of certificeringsinstantie vervangen.",
-  "closing": "Transparantie is geen certificering. Het is het recht om te weten wat het etiket zegt — en wat het niet zegt.",
+  "closing": "Transparantie is geen certificering. Het is het recht om te weten wat er op het etiket staat. En het recht om te weten wat er niet op staat.",
   "haram_ingredients_title": "Ingrediënten die BOTIA in deze laag beoordeelt",
   "mashbooh_ingredients_title": "Ingrediënten die mashbooh kunnen zijn",
   "ingredient_alcohol": "Alcohol",
