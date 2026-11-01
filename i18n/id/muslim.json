@@ -1,51 +1,51 @@
 {
   "title": "Muslim",
-  "subtitle": "Baca labelnya. Pahami apa yang sebenarnya dikatakan.",
-  "description": "BOTIA membaca bahan-bahan yang dinyatakan dan mencocokkannya dengan kriteria yang terdokumentasi. Ini tidak mensertifikasi makanan — ini membuat label menjadi transparan.",
+  "subtitle": "Baca labelnya. Pahami apa yang tertulis dan apa yang tidak tertulis.",
+  "description": "BOTIA membaca bahan pada label. BOTIA membandingkannya dengan kriteria yang terdokumentasi. BOTIA tidak memberikan sertifikasi makanan. BOTIA membuat isi label lebih jelas.",
   "states_title": "Bagaimana BOTIA mengklasifikasikan bahan",
   "halal": {
     "name": "Halal",
-    "desc": "Tidak ada bahan yang dilarang atau asal yang meragukan yang terdeteksi pada label."
+    "desc": "Label tidak menunjukkan bahan terlarang dan tidak menunjukkan asal yang meragukan."
   },
   "haram": {
     "name": "Haram",
-    "desc": "Label menyatakan bahan yang jelas dilarang: turunan babi, alkohol, atau darah."
+    "desc": "Label dengan jelas menyebut bahan terlarang. Contohnya: produk babi, alkohol, atau darah."
   },
   "mashbooh": {
     "name": "Mashbooh",
-    "desc": "Label tidak mengonfirmasi asal atau proses. Ketidakpastian adalah informasinya."
+    "desc": "Label tidak memastikan asal atau prosesnya. Keraguan itu sendiri adalah informasi."
   },
   "doubts": {
-    "title": "Mengapa keraguan ini muncul?",
-    "th_label": "Aspek Label",
-    "th_general": "Peraturan Umum",
+    "title": "Dari mana keraguan ini muncul?",
+    "th_label": "Bagian dari label",
+    "th_general": "Aturan pangan umum",
     "th_halal": "Standar Halal",
-    "th_botia": "Mengapa BOTIA mendeteksi ambiguitas",
+    "th_botia": "Mengapa BOTIA menemukan keraguan",
     "row1": {
-      "aspect": "Aditif (nomor E) & Enzim",
-      "general": "Dapat dikelompokkan berdasarkan fungsi tanpa menentukan asal nabati atau hewani.",
-      "halal": "Mengharuskan semua aditif berasal dari sumber yang halal secara ketat.",
-      "botia": "Jika aditif bisa berasal dari hewani tetapi label diam, BOTIA menandainya sebagai meragukan."
+      "aspect": "Bahan tambahan pangan (nomor E) dan enzim",
+      "general": "Bahan ini boleh dicantumkan hanya berdasarkan fungsinya. Label tidak harus menyebut apakah bahan itu berasal dari tumbuhan atau hewan.",
+      "halal": "Semua bahan tambahan harus berasal dari sumber yang diperbolehkan.",
+      "botia": "Bahan tambahan bisa berasal dari hewan. Jika label tidak menyebutkannya, BOTIA menandainya sebagai hal yang meragukan."
     },
     "row2": {
       "aspect": "Daging dari hewan yang diizinkan",
-      "general": "Mengharuskan menyatakan spesies hewan.",
-      "halal": "Mengharuskan penyembelihan yang sah oleh seorang Muslim yang menyebut nama Allah dan memotong urat tertentu.",
-      "botia": "Label hampir tidak pernah merinci metode penyembelihan, sehingga BOTIA tidak dapat mengasumsikan kepatuhan."
+      "general": "Label harus menyebutkan dari hewan apa daging itu berasal.",
+      "halal": "Hewan harus disembelih dengan cara yang diperbolehkan. Seorang Muslim melakukannya, menyebut nama Allah, dan memotong pembuluh darah tertentu.",
+      "botia": "Label hampir tidak pernah menjelaskan cara penyembelihan. Karena itu, BOTIA tidak bisa menganggap aturan tersebut telah diikuti."
     }
   },
   "cancannot": {
-    "title": "Apa yang BOTIA dapat dan tidak dapat simpulkan"
+    "title": "Apa yang bisa dan tidak bisa dijelaskan BOTIA"
   },
   "can_title": "BOTIA BISA",
-  "can1": "Membaca bahan-bahan yang dinyatakan dari label.",
-  "can2": "Mendeteksi bahan Haram yang jelas berdasarkan kriteria yang terdokumentasi.",
-  "can3": "Mendeteksi bahan dengan asal yang ambigu dan membuat keheningan terlihat.",
+  "can1": "Membaca bahan yang tertulis pada label.",
+  "can2": "Menemukan bahan yang jelas haram, dengan memakai kriteria yang terdokumentasi.",
+  "can3": "Menemukan bahan yang asalnya tidak jelas. Menunjukkan jika label tidak menyebutkan asalnya.",
   "cannot_title": "BOTIA TIDAK BISA",
-  "cannot1": "Mensertifikasi Halal — ini bukan jaminan atau stempel persetujuan.",
-  "cannot2": "Mendeteksi proses yang tidak dinyatakan seperti kontaminasi silang di pabrik.",
+  "cannot1": "Memberikan sertifikasi halal. BOTIA bukan jaminan atau tanda sertifikasi.",
+  "cannot2": "Mengetahui proses yang tidak ada pada label, seperti kontaminasi silang di pabrik. Kontaminasi silang berarti kontak yang tidak diinginkan dengan zat lain selama produksi.",
   "cannot3": "Menggantikan otoritas agama atau badan sertifikasi.",
-  "closing": "Transparansi bukanlah sertifikasi. Ini adalah hak untuk mengetahui apa yang dikatakan label — dan apa yang tidak dikatakannya.",
+  "closing": "Transparansi bukan sertifikasi. Transparansi adalah hak untuk mengetahui apa yang tertulis pada label. Juga hak untuk mengetahui apa yang tidak tertulis.",
   "haram_ingredients_title": "Bahan yang ditinjau BOTIA dalam lapisan ini",
   "mashbooh_ingredients_title": "Bahan yang mungkin Mashbooh",
   "ingredient_alcohol": "Alkohol",
