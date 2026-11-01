@@ -1,51 +1,51 @@
 {
   "title": "Muçulmano",
-  "subtitle": "Leia o rótulo. Entenda o que ele realmente diz.",
-  "description": "BOTIA lê os ingredientes declarados e os cruza com critérios documentados. Não certifica alimentos — torna o rótulo transparente.",
+  "subtitle": "Lê o rótulo. Percebe o que diz e o que não diz.",
+  "description": "A BOTIA lê os ingredientes no rótulo. Compara-os com critérios documentados. Não certifica alimentos. Torna o rótulo transparente.",
   "states_title": "Como o BOTIA classifica os ingredientes",
   "halal": {
     "name": "Halal",
-    "desc": "Nenhum ingrediente proibido ou origem duvidosa detectada no rótulo."
+    "desc": "O rótulo não mostra nenhum ingrediente proibido nem nenhuma origem duvidosa."
   },
   "haram": {
     "name": "Haram",
-    "desc": "O rótulo declara ingredientes claramente proibidos: derivados de porco, álcool ou sangue."
+    "desc": "O rótulo indica claramente ingredientes proibidos. Por exemplo: produtos de porco, álcool ou sangue."
   },
   "mashbooh": {
     "name": "Mashbooh",
-    "desc": "O rótulo não confirma a origem ou o processo. A incerteza é a informação."
+    "desc": "O rótulo não confirma a origem nem o processo. A própria dúvida é a informação."
   },
   "doubts": {
-    "title": "Por que essas dúvidas surgem?",
-    "th_label": "Aspecto do Rótulo",
-    "th_general": "Regulamentação Geral",
+    "title": "De onde vêm estas dúvidas?",
+    "th_label": "Parte do rótulo",
+    "th_general": "Legislação alimentar geral",
     "th_halal": "Padrão Halal",
-    "th_botia": "Por que o BOTIA detecta ambiguidade",
+    "th_botia": "Porque é que a BOTIA vê uma dúvida",
     "row1": {
-      "aspect": "Aditivos (números E) & Enzimas",
-      "general": "Podem ser agrupados por função sem especificar origem vegetal ou animal.",
-      "halal": "Exige que todos os aditivos venham estritamente de fontes lícitas.",
-      "botia": "Se um aditivo pode ser de origem animal, mas o rótulo é omisso, o BOTIA o marca como duvidoso."
+      "aspect": "Aditivos (números E) e enzimas",
+      "general": "Podem ser indicados apenas pela sua função. O rótulo não tem de dizer se vêm de plantas ou de animais.",
+      "halal": "Todos os aditivos têm de vir de fontes permitidas.",
+      "botia": "Um aditivo pode vir de animais. Se o rótulo não disser, a BOTIA assinala-o como duvidoso."
     },
     "row2": {
       "aspect": "Carne de animais permitidos",
-      "general": "Exige declarar a espécie animal.",
-      "halal": "Exige abate lícito por um muçulmano invocando Allah e cortando veias específicas.",
-      "botia": "Os rótulos quase nunca detalham o método de abate, então o BOTIA não pode presumir conformidade."
+      "general": "O rótulo tem de dizer de que animal vem a carne.",
+      "halal": "O animal tem de ser abatido da forma permitida. Um muçulmano faz o abate, diz o nome de Alá e corta veias específicas.",
+      "botia": "Os rótulos quase nunca descrevem o método de abate. Por isso, a BOTIA não pode presumir que as regras foram cumpridas."
     }
   },
   "cancannot": {
-    "title": "O que o BOTIA pode e não pode concluir"
+    "title": "O que BOTIA pode e não pode dizer"
   },
   "can_title": "BOTIA PODE",
-  "can1": "Ler ingredientes declarados do rótulo.",
-  "can2": "Detectar ingredientes claramente Haram com base em critérios documentados.",
-  "can3": "Detectar ingredientes com origem ambígua e tornar o silêncio visível.",
+  "can1": "Ler os ingredientes escritos no rótulo.",
+  "can2": "Encontrar ingredientes claramente Haram, usando critérios documentados.",
+  "can3": "Encontrar ingredientes de origem pouco clara. Mostrar quando o rótulo não diz nada sobre isso.",
   "cannot_title": "BOTIA NÃO PODE",
-  "cannot1": "Certificar Halal — não é uma garantia ou selo de aprovação.",
-  "cannot2": "Detectar processos não declarados, como contaminação cruzada em fábricas.",
+  "cannot1": "Certificar Halal. A BOTIA não é uma garantia nem um selo de aprovação.",
+  "cannot2": "Conhecer processos que não estão no rótulo, como a contaminação cruzada nas fábricas. A contaminação cruzada é o contacto indesejado com outras substâncias durante a produção.",
   "cannot3": "Substituir uma autoridade religiosa ou órgão de certificação.",
-  "closing": "Transparência não é certificação. É o direito de saber o que o rótulo diz — e o que não diz.",
+  "closing": "Transparência não é certificação. É o direito de saber o que diz o rótulo. E o direito de saber o que não diz.",
   "haram_ingredients_title": "Ingredientes que a BOTIA analisa nesta camada",
   "mashbooh_ingredients_title": "Ingredientes que podem ser Mashbooh",
   "ingredient_alcohol": "Álcool",
