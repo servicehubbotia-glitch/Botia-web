@@ -1,27 +1,27 @@
 {
-  "eyebrow": "Ürün tanımlama",
+  "eyebrow": "Ürünü tanımla",
   "title": "Ürün izlenebilirliği",
-  "lead": "Barkod bir ürünü tanımlar. Kaynaklar, ürün hakkında gerçekte nelerin doğrulanabileceğini belirler.",
+  "lead": "Barkod bir ürünü tanımlar. Ürün hakkında nelerin gerçekten kontrol edilebileceğine kaynaklar karar verir.",
   "identity_title": "Ürün tanımlayıcı",
   "product_label": "Ürün",
   "brand_label": "Marka",
   "market_label": "Referans pazar",
-  "gtin14_label": "Normalleştirilmiş GTIN-14",
+  "gtin14_label": "GTIN-14 kodu (standart biçim)",
   "overall_label": "Genel izlenebilirlik durumu",
   "records_title": "Doğrulanmış bilgiler",
-  "empty_state": "Bu görünüme henüz hiçbir izlenebilirlik doğrulama verisi sağlanmadı.",
+  "empty_state": "Bu görünüme izlenebilirlik verisi gönderilmedi.",
   "consulted_title": "Başvurulan kaynaklar",
   "warnings_title": "Notlar",
-  "principle": "Yokluk olumsuz bir hüküm değildir. BOTIA yalnızca kaynağın tam olarak tanımlanan konu ve kapsam için desteklediğini gösterir.",
-  "disclaimer": "Barkod tanımlar. Kaynaklar doğrular. BOTIA boşlukları doldurmaz.",
+  "principle": "Eksik bilgi olumsuz bir sonuç değildir. BOTIA yalnızca kaynağın doğruladığı bilgileri gösterir. Bunu sadece belirtilen konu ve kapsam için yapar.",
+  "disclaimer": "Barkod ürünü tanımlar. Kaynaklar bilgileri doğrular. BOTIA eksik olanı kendisi doldurmaz.",
   "runtime": {
     "status": {
       "VERIFIED_PRODUCT": "Bu ürün için doğrulandı",
-      "VERIFIED_SCOPE": "Tanımlı bir kapsam için doğrulandı",
-      "REGULATORY_CONTEXT": "Düzenleyici bağlam bulundu",
+      "VERIFIED_SCOPE": "Sınırlı bir kapsam için doğrulandı",
+      "REGULATORY_CONTEXT": "Yasal bağlam bulundu",
       "SELF_DECLARED": "Şirket beyanı bulundu",
       "SOURCE_CLASSIFICATION": "Kaynak sınıflandırması bulundu",
-      "CONFLICT": "Kaynaklar çelişiyor",
+      "CONFLICT": "Kaynaklar birbiriyle uyuşmuyor",
       "NOT_VERIFIED": "Başvurulan kaynaklarda doğrulanmadı"
     },
     "symbol": {
@@ -50,12 +50,12 @@
     "field_certificate": "Sertifika / kayıt",
     "field_validity": "Geçerlilik",
     "open_source": "Kaynağı aç →",
-    "scope_warning": "Bu kanıt yalnızca gösterilen kapsam için geçerlidir. BOTIA bunu başka bir ürüne, markaya, ana şirkete, pazara veya tesise otomatik olarak genişletmez.",
-    "not_verified_note": "Bu sonuçtan hiçbir olumsuz çıkarım yapılmaz.",
+    "scope_warning": "Bu kanıt yalnızca gösterilen kapsam için geçerlidir. BOTIA bunu başka bir ürüne, markaya, ana şirkete, pazara veya fabrikaya uygulamaz.",
+    "not_verified_note": "Bu sonuç olumsuz bir şey ifade etmez.",
     "service_state": {
       "SOURCE_UNAVAILABLE": "Kaynağa ulaşılamadı. Bu, kanıt bulunmadığı anlamına gelmez.",
-      "INVALID_GTIN": "Okunan kod geçerli bir GTIN değil, bu nedenle hiçbir kaynağa başvurulamadı."
+      "INVALID_GTIN": "Kod geçerli bir GTIN değil. Bu yüzden hiçbir kaynağa başvurulamadı."
     },
-    "contract_error": "Bu öğe, gerekli izlenebilirlik alanları eksik olduğu için doğrulanmış olarak gösterilmedi."
+    "contract_error": "Bu öge doğrulanmış olarak gösterilmiyor. Gerekli bazı izlenebilirlik verileri eksikti."
   }
 }
