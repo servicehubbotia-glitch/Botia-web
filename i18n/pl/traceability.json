@@ -1,27 +1,27 @@
 {
-  "eyebrow": "Identyfikacja produktu",
+  "eyebrow": "Zidentyfikuj produkt",
   "title": "Identyfikowalność produktu",
-  "lead": "Kod kreskowy identyfikuje produkt. Źródła określają, co faktycznie można o nim zweryfikować.",
+  "lead": "Kod kreskowy identyfikuje produkt. To źródła decydują, co naprawdę można o nim sprawdzić.",
   "identity_title": "Identyfikator produktu",
   "product_label": "Produkt",
   "brand_label": "Marka",
   "market_label": "Rynek referencyjny",
-  "gtin14_label": "Znormalizowany GTIN-14",
+  "gtin14_label": "Kod GTIN-14 (forma standardowa)",
   "overall_label": "Ogólny status identyfikowalności",
   "records_title": "Informacje zweryfikowane",
-  "empty_state": "Do tego widoku nie przekazano żadnych danych weryfikacji identyfikowalności.",
+  "empty_state": "Do tego widoku nie przesłano danych o identyfikowalności.",
   "consulted_title": "Wykorzystane źródła",
   "warnings_title": "Uwagi",
-  "principle": "Brak nie jest negatywnym wyrokiem. BOTIA pokazuje wyłącznie to, co źródło potwierdza dla dokładnie zidentyfikowanego podmiotu i zakresu.",
-  "disclaimer": "Kod kreskowy identyfikuje. Źródła weryfikują. BOTIA nie wypełnia luk.",
+  "principle": "Brak informacji nie jest wynikiem negatywnym. BOTIA pokazuje tylko to, co potwierdza źródło. I tylko dla dokładnie wskazanego przedmiotu i zakresu.",
+  "disclaimer": "Kod kreskowy identyfikuje produkt. Źródła sprawdzają fakty. BOTIA nie uzupełnia brakujących informacji.",
   "runtime": {
     "status": {
       "VERIFIED_PRODUCT": "Zweryfikowano dla tego produktu",
-      "VERIFIED_SCOPE": "Zweryfikowano dla określonego zakresu",
-      "REGULATORY_CONTEXT": "Znaleziono kontekst regulacyjny",
+      "VERIFIED_SCOPE": "Zweryfikowano w ograniczonym zakresie",
+      "REGULATORY_CONTEXT": "Znaleziono kontekst prawny",
       "SELF_DECLARED": "Znaleziono oświadczenie firmy",
       "SOURCE_CLASSIFICATION": "Znaleziono klasyfikację źródła",
-      "CONFLICT": "Źródła sprzeczne",
+      "CONFLICT": "Źródła są ze sobą sprzeczne",
       "NOT_VERIFIED": "Niezweryfikowane w wykorzystanych źródłach"
     },
     "symbol": {
@@ -50,12 +50,12 @@
     "field_certificate": "Certyfikat / rejestracja",
     "field_validity": "Ważność",
     "open_source": "Otwórz źródło →",
-    "scope_warning": "Ten dowód odnosi się wyłącznie do pokazanego zakresu. BOTIA nie rozszerza go automatycznie na inny produkt, markę, spółkę dominującą, rynek ani zakład.",
-    "not_verified_note": "Z tego wyniku nie wyciąga się żadnego negatywnego wniosku.",
+    "scope_warning": "Te dowody dotyczą tylko pokazanego zakresu. BOTIA nie odnosi ich do innego produktu, marki, spółki dominującej, rynku ani fabryki.",
+    "not_verified_note": "Ten wynik nie oznacza niczego negatywnego.",
     "service_state": {
       "SOURCE_UNAVAILABLE": "Nie udało się sprawdzić źródła. Nie oznacza to, że dowody nie istnieją.",
-      "INVALID_GTIN": "Odczytany kod nie jest prawidłowym GTIN, więc nie można było sprawdzić żadnego źródła."
+      "INVALID_GTIN": "Kod nie jest prawidłowym GTIN. Dlatego nie można było sprawdzić żadnego źródła."
     },
-    "contract_error": "Ten element nie został wyświetlony jako zweryfikowany, ponieważ brakowało wymaganych pól identyfikowalności."
+    "contract_error": "Ta pozycja nie jest pokazana jako zweryfikowana. Brakowało niektórych wymaganych danych o identyfikowalności."
   }
 }
