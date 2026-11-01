@@ -1,51 +1,51 @@
 {
   "title": "Musulmán",
-  "subtitle": "Lee la etiqueta. Entiende lo que realmente dice.",
-  "description": "BOTIA lee los ingredientes declarados y los cruza con criterios documentados. No certifica alimentos — hace transparente la etiqueta.",
+  "subtitle": "Lee la etiqueta. Entiende lo que dice y lo que no dice.",
+  "description": "BOTIA lee los ingredientes de la etiqueta. Los compara con criterios documentados. No certifica alimentos. Hace transparente la información de la etiqueta.",
   "states_title": "Cómo clasifica BOTIA los ingredientes",
   "halal": {
     "name": "Halal",
-    "desc": "No se detectan ingredientes prohibidos ni de origen dudoso en la etiqueta."
+    "desc": "La etiqueta no muestra ningún ingrediente prohibido ni ningún origen dudoso."
   },
   "haram": {
     "name": "Haram",
-    "desc": "La etiqueta declara ingredientes claramente prohibidos: derivados del cerdo, alcohol o sangre."
+    "desc": "La etiqueta nombra claramente ingredientes prohibidos. Por ejemplo: productos de cerdo, alcohol o sangre."
   },
   "mashbooh": {
     "name": "Mashbooh",
-    "desc": "La etiqueta no confirma el origen ni el proceso. La incertidumbre es la información."
+    "desc": "La etiqueta no confirma el origen ni el proceso. La propia duda es la información."
   },
   "doubts": {
-    "title": "¿Por qué surgen estas dudas?",
-    "th_label": "Aspecto de la Etiqueta",
-    "th_general": "Regulación General",
+    "title": "¿De dónde vienen estas dudas?",
+    "th_label": "Parte de la etiqueta",
+    "th_general": "Legislación alimentaria general",
     "th_halal": "Estándar Halal",
-    "th_botia": "Por qué BOTIA detecta ambigüedad",
+    "th_botia": "Por qué BOTIA ve una duda",
     "row1": {
-      "aspect": "Aditivos (números E) y Enzimas",
-      "general": "Pueden agruparse por función sin especificar origen vegetal o animal.",
-      "halal": "Requiere que todos los aditivos provengan estrictamente de fuentes lícitas.",
-      "botia": "Si un aditivo podría ser de origen animal pero la etiqueta no lo especifica, BOTIA lo marca como dudoso."
+      "aspect": "Aditivos (números E) y enzimas",
+      "general": "Pueden aparecer solo por su función. La etiqueta no tiene que decir si proceden de plantas o animales.",
+      "halal": "Todos los aditivos deben proceder de fuentes permitidas.",
+      "botia": "Un aditivo puede proceder de animales. Si la etiqueta no lo dice, BOTIA lo marca como dudoso."
     },
     "row2": {
       "aspect": "Carne de animales permitidos",
-      "general": "Requiere declarar la especie animal.",
-      "halal": "Requiere sacrificio lícito por un musulmán invocando a Alá y cortando venas específicas.",
-      "botia": "Las etiquetas casi nunca detallan el método de sacrificio, por lo que BOTIA no puede asumir cumplimiento."
+      "general": "La etiqueta debe decir de qué animal procede la carne.",
+      "halal": "El animal debe sacrificarse de la forma permitida. Lo hace una persona musulmana, que pronuncia el nombre de Alá y corta venas específicas.",
+      "botia": "Las etiquetas casi nunca describen el método de sacrificio. Por eso BOTIA no puede dar por hecho que se siguieron las normas."
     }
   },
   "cancannot": {
-    "title": "Lo que BOTIA puede y no puede concluir"
+    "title": "Lo que BOTIA puede y no puede decirte"
   },
   "can_title": "BOTIA PUEDE",
-  "can1": "Leer los ingredientes declarados en la etiqueta.",
-  "can2": "Detectar ingredientes claramente Haram según criterios documentados.",
-  "can3": "Detectar ingredientes con origen ambiguo y hacer visible el silencio.",
+  "can1": "Leer los ingredientes escritos en la etiqueta.",
+  "can2": "Encontrar ingredientes claramente haram, con criterios documentados.",
+  "can3": "Encontrar ingredientes de origen desconocido. Mostrar cuándo la etiqueta no dice nada sobre su origen.",
   "cannot_title": "BOTIA NO PUEDE",
-  "cannot1": "Certificar Halal — no es una garantía ni un sello de aprobación.",
-  "cannot2": "Detectar procesos no declarados como contaminación cruzada en fábricas.",
+  "cannot1": "Certificar que algo es halal. BOTIA no es una garantía ni un sello de aprobación.",
+  "cannot2": "Conocer procesos que no aparecen en la etiqueta, como la contaminación cruzada en las fábricas. La contaminación cruzada es el contacto no deseado con otras sustancias durante la producción.",
   "cannot3": "Reemplazar una autoridad religiosa o un organismo de certificación.",
-  "closing": "La transparencia no es certificación. Es el derecho a saber lo que dice la etiqueta — y lo que no dice.",
+  "closing": "La transparencia no es una certificación. Es el derecho a saber qué dice la etiqueta. Y el derecho a saber qué no dice.",
   "haram_ingredients_title": "Ingredientes que BOTIA revisa en esta capa",
   "mashbooh_ingredients_title": "Ingredientes que pueden ser Mashbooh",
   "ingredient_alcohol": "Alcohol",
