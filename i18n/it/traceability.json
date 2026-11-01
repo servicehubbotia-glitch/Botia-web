@@ -1,27 +1,27 @@
 {
-  "eyebrow": "Identificazione del prodotto",
+  "eyebrow": "Identifica il prodotto",
   "title": "Tracciabilità del prodotto",
-  "lead": "Il codice a barre identifica un prodotto. Le fonti determinano ciò che può essere effettivamente verificato al riguardo.",
+  "lead": "Il codice a barre identifica un prodotto. Le fonti determinano cosa si può davvero verificare su di esso.",
   "identity_title": "Identificatore del prodotto",
   "product_label": "Prodotto",
   "brand_label": "Marca",
   "market_label": "Mercato di riferimento",
-  "gtin14_label": "GTIN-14 normalizzato",
+  "gtin14_label": "Codice GTIN-14 (forma standard)",
   "overall_label": "Stato complessivo di tracciabilità",
   "records_title": "Informazioni verificate",
-  "empty_state": "Nessun dato di verifica della tracciabilità è stato fornito a questa vista.",
+  "empty_state": "Nessun dato di tracciabilità è stato inviato a questa schermata.",
   "consulted_title": "Fonti consultate",
   "warnings_title": "Note",
-  "principle": "Un'assenza non è un verdetto negativo. BOTIA mostra solo ciò che la fonte supporta per il soggetto e l'ambito esattamente identificati.",
-  "disclaimer": "Un codice a barre identifica. Le fonti verificano. BOTIA non colma le lacune.",
+  "principle": "Un'informazione mancante non è un risultato negativo. BOTIA mostra solo ciò che la fonte conferma. E solo per il soggetto esatto e l'ambito indicato.",
+  "disclaimer": "Un codice a barre identifica il prodotto. Le fonti verificano i fatti. BOTIA non riempie ciò che manca.",
   "runtime": {
     "status": {
       "VERIFIED_PRODUCT": "Verificato per questo prodotto",
-      "VERIFIED_SCOPE": "Verificato per un ambito definito",
-      "REGULATORY_CONTEXT": "Contesto normativo individuato",
-      "SELF_DECLARED": "Dichiarazione dell'azienda individuata",
-      "SOURCE_CLASSIFICATION": "Classificazione della fonte individuata",
-      "CONFLICT": "Fonti in conflitto",
+      "VERIFIED_SCOPE": "Verificato per un ambito limitato",
+      "REGULATORY_CONTEXT": "Contesto legale trovato",
+      "SELF_DECLARED": "Dichiarazione dell'azienda trovata",
+      "SOURCE_CLASSIFICATION": "Classificazione della fonte trovata",
+      "CONFLICT": "Le fonti non concordano",
       "NOT_VERIFIED": "Non verificato nelle fonti consultate"
     },
     "symbol": {
@@ -50,12 +50,12 @@
     "field_certificate": "Certificato / registrazione",
     "field_validity": "Validità",
     "open_source": "Apri fonte →",
-    "scope_warning": "Questa evidenza si applica solo all'ambito mostrato. BOTIA non la estende automaticamente a un altro prodotto, marchio, società madre, mercato o stabilimento.",
-    "not_verified_note": "Da questo risultato non si trae alcuna conclusione negativa.",
+    "scope_warning": "Questa prova si applica solo all'ambito mostrato. BOTIA non la applica a un altro prodotto, marchio, azienda madre, mercato o stabilimento.",
+    "not_verified_note": "Questo risultato non significa nulla di negativo.",
     "service_state": {
       "SOURCE_UNAVAILABLE": "Non è stato possibile consultare la fonte. Questo non significa che non esistano prove.",
-      "INVALID_GTIN": "Il codice letto non è un GTIN valido, quindi non è stato possibile consultare alcuna fonte."
+      "INVALID_GTIN": "Il codice non è un GTIN valido. Perciò non è stato possibile consultare alcuna fonte."
     },
-    "contract_error": "Questo elemento non è stato mostrato come verificato perché mancavano campi di tracciabilità obbligatori."
+    "contract_error": "Questo elemento non è mostrato come verificato. Mancavano alcuni dati di tracciabilità necessari."
   }
 }
