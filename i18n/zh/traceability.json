@@ -1,27 +1,27 @@
 {
-  "eyebrow": "产品识别",
+  "eyebrow": "识别产品",
   "title": "产品可追溯性",
-  "lead": "条形码标识产品。来源决定了哪些信息可以真正被验证。",
+  "lead": "条形码用于识别产品。信息来源决定了关于该产品哪些内容真正可以核查。",
   "identity_title": "产品标识符",
   "product_label": "产品",
   "brand_label": "品牌",
   "market_label": "参考市场",
-  "gtin14_label": "标准化 GTIN-14",
+  "gtin14_label": "GTIN-14代码(标准形式)",
   "overall_label": "整体可追溯性状态",
   "records_title": "已验证信息",
-  "empty_state": "此视图尚未收到任何可追溯性验证数据。",
+  "empty_state": "没有追溯数据传送到此页面。",
   "consulted_title": "已查阅的来源",
   "warnings_title": "备注",
-  "principle": "缺失并非负面判定。BOTIA 仅展示来源对确切标识的主体和范围所能支持的内容。",
-  "disclaimer": "条形码负责标识。来源负责验证。BOTIA 不填补空白。",
+  "principle": "信息缺失并不代表负面结果。BOTIA只显示来源确认的内容，而且只针对明确标明的对象和范围。",
+  "disclaimer": "条形码用于识别产品。信息来源核查事实。BOTIA不会填补缺失的内容。",
   "runtime": {
     "status": {
       "VERIFIED_PRODUCT": "已针对该产品验证",
-      "VERIFIED_SCOPE": "已在明确范围内验证",
-      "REGULATORY_CONTEXT": "已找到监管背景",
-      "SELF_DECLARED": "已找到公司声明",
-      "SOURCE_CLASSIFICATION": "已找到来源分类",
-      "CONFLICT": "来源相互冲突",
+      "VERIFIED_SCOPE": "在有限范围内已核实",
+      "REGULATORY_CONTEXT": "找到法律背景信息",
+      "SELF_DECLARED": "找到公司声明",
+      "SOURCE_CLASSIFICATION": "找到来源分类",
+      "CONFLICT": "信息来源之间存在分歧",
       "NOT_VERIFIED": "在已查阅的来源中未得到验证"
     },
     "symbol": {
@@ -50,12 +50,12 @@
     "field_certificate": "证书 / 注册",
     "field_validity": "有效期",
     "open_source": "打开来源 →",
-    "scope_warning": "此证据仅适用于所示范围。BOTIA 不会将其自动延伸至其他产品、品牌、母公司、市场或工厂。",
-    "not_verified_note": "不会从此结果中得出任何负面结论。",
+    "scope_warning": "这份证据只适用于所显示的范围。BOTIA不会将它用于其他产品、品牌、母公司、市场或工厂。",
+    "not_verified_note": "这个结果并不代表任何负面含义。",
     "service_state": {
       "SOURCE_UNAVAILABLE": "无法查询来源。这并不表示没有证据。",
-      "INVALID_GTIN": "读取的代码不是有效的 GTIN，因此无法查询任何来源。"
+      "INVALID_GTIN": "该代码不是有效的GTIN，因此无法查询任何来源。"
     },
-    "contract_error": "由于缺少必需的可追溯性字段，该项目未显示为已验证。"
+    "contract_error": "此项目没有显示为已核实。缺少部分必要的追溯数据。"
   }
 }
