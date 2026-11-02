@@ -1,10 +1,57 @@
+/* BOTIA accessibility phase 2.1 — shared tokens.
+   Woman uses violet, approved by Paloma; no raspberry.
+   HTML, content, i18n and WebView layout are unchanged. */
+:root {
+  color-scheme: dark;
+  --botia-bg: #080505;
+  --botia-bg-2: #100707;
+  --botia-surface: #180d0d;
+  --botia-surface-2: #241010;
+  --botia-surface-card: rgba(255, 255, 255, .04);
+  --botia-surface-chip: rgba(190, 122, 72, .20);
+  --botia-surface-chip-hover: rgba(190, 122, 72, .35);
+  --botia-text: #f2e4dc;
+  --botia-text-strong: #fff3ea;
+  --botia-text-soft: #ffd8bd;
+  --botia-text-muted: #c0a08c;
+  --botia-text-subtle: #929292;
+  --botia-accent: #e6a06b;
+  --botia-on-accent: #100707;
+  --botia-focus: #e6a06b;
+  --botia-focus-width: 2px;
+  --botia-focus-offset: 2px;
+  --botia-border: rgba(190, 122, 72, .28);
+  --botia-border-strong: rgba(230, 160, 107, .56);
+  --botia-border-control: rgba(230, 160, 107, .62);
+  --botia-status-halal: #5ba66a;
+  --botia-status-haram: #d7685e;
+  --botia-status-mashbooh: #d49b45;
+  --botia-badge-halal: #1e7a4a;
+  --botia-badge-haram: #a0302a;
+  --botia-badge-mashbooh: #b8860b;
+  --botia-on-mashbooh: #1a0d0d;
+  --botia-can: #8ed09a;
+  --botia-cannot: #e29b9b;
+  --botia-error: #d97070;
+  --botia-layer-muslim: #0e50a2;
+  --botia-layer-animal: #4a2a0a;
+  --botia-layer-woman: #6f2da8;
+  --botia-layer-sugar: #604119;
+  --botia-layer-sweetener: #3f316e;
+  --botia-layer-texture: #3a5b40;
+  --botia-layer-flavour: #655803;
+  --botia-layer-enumbers: #3a3a3a;
+  --botia-on-layer: #ffffff;
+  --botia-wv-subtle: #9a9a9a;
+}
+
 /* BOTIA shared drawer */
 :root {
-  --botia-brand-accent: #e6a06b;
-  --botia-menu-text: #f2e4dc;
+  --botia-brand-accent: var(--botia-accent);
+  --botia-menu-text: var(--botia-text);
   --botia-menu-accent: var(--botia-brand-accent);
-  --botia-menu-subtext: #c0a08c;
-  --botia-menu-border: rgba(190, 122, 72, 0.3);
+  --botia-menu-subtext: var(--botia-text-muted);
+  --botia-menu-border: var(--botia-border);
   --botia-menu-divider: rgba(190, 122, 72, 0.15);
 }
 
@@ -29,7 +76,7 @@
   border: 1px solid rgba(190, 122, 72, 0.4);
   border-radius: 10px;
   background: rgba(8, 4, 4, 0.88);
-  color: #e6a06b;
+  color: var(--botia-accent);
   font-size: 24px;
   line-height: 1;
   cursor: pointer;
@@ -40,7 +87,6 @@
 #menuBtn:focus-visible {
   background: rgba(36, 16, 16, 0.96);
   border-color: rgba(230, 160, 107, 0.72);
-  outline: none;
 }
 
 body[dir="rtl"] #menuBtn {
@@ -147,7 +193,6 @@ body.botia-menu-open #menuBtn {
 .botia-menu-close:focus-visible,
 .botia-menu-link:hover,
 .botia-menu-link:focus-visible {
-  outline: none;
   border-color: rgba(230, 160, 107, 0.68);
   background: rgba(190, 122, 72, 0.1);
 }
@@ -248,7 +293,6 @@ body.has-botia-header .botia-header-bar {
 .botia-wordmark:hover,
 .botia-wordmark:focus-visible {
   opacity: 0.86;
-  outline: none;
 }
 
 /* Selector global: SOLO se ve el idioma */
@@ -261,17 +305,17 @@ body.has-botia-header .botia-header-bar {
   min-width: 142px;
   height: 38px;
   padding: 0 34px 0 14px;
-  border: 1px solid rgba(190, 122, 72, 0.42);
+  border: 1px solid var(--botia-border-control);
   border-radius: 999px;
   background: rgba(24, 13, 13, 0.96);
-  color: #f2e4dc;
+  color: var(--botia-text);
   font: inherit;
   font-size: 0.82rem;
   cursor: pointer;
 }
 
 .botia-header-bar .lang-switcher select:focus-visible {
-  outline: 1px solid rgba(230, 160, 107, 0.72);
+  outline: var(--botia-focus-width) solid var(--botia-focus);
   outline-offset: 2px;
 }
 
@@ -394,4 +438,85 @@ body[dir="rtl"].has-botia-header .botia-header-bar {
   ) !important;
   -webkit-backdrop-filter: blur(14px) saturate(120%);
   backdrop-filter: blur(14px) saturate(120%);
+}
+
+/* Keyboard-only safeguard while embedded outline resets remain until phase 2.3.
+   !important is deliberately limited to the focus indicator. */
+:focus-visible {
+  outline: var(--botia-focus-width) solid var(--botia-focus) !important;
+  outline-offset: var(--botia-focus-offset) !important;
+}
+
+.botia-wordmark:focus-visible {
+  opacity: 1;
+}
+
+/* Keep language controls inside narrow headers; do not change page layout. */
+@media (max-width: 380px) {
+  .botia-header-bar {
+    gap: 8px;
+    box-sizing: border-box;
+  }
+
+  .botia-header-bar .lang-switcher,
+  body [class$="-lang-pill"],
+  body .lang-pill,
+  body .topin .lang {
+    min-width: 0;
+    flex-shrink: 1;
+    max-width: 42vw;
+    box-sizing: border-box;
+  }
+
+  body .botia-header-bar .lang-switcher select,
+  body [class$="-lang-pill"] select,
+  body .lang-pill select,
+  body .topin .lang select {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --botia-text-muted: #e6d0c4;
+    --botia-text-subtle: #c4c4c4;
+    --botia-border: #b07852;
+    --botia-border-control: #b07852;
+    --botia-surface-card: #180d0d;
+    --botia-focus-width: 3px;
+  }
+}
+
+@media (forced-colors: active) {
+  :root {
+    --botia-focus: CanvasText;
+    --botia-border-control: CanvasText;
+  }
+
+  .layer-badge,
+  .badge,
+  .botia-trigger-link,
+  select,
+  input {
+    border: 1px solid CanvasText !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* More specific than the robot's injected !important animation shorthand. */
+  body #botia-toggle-btn:not(.is-open) {
+    animation: none !important;
+    transition: none !important;
+  }
 }
