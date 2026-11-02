@@ -44,7 +44,7 @@ header {
     object-fit: contain;
     margin-bottom: 16px;
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.28));
-    animation: float 3s ease-in-out infinite;
+    animation: float 3s ease-in-out 1;
 }
 
 @keyframes float {
@@ -57,7 +57,7 @@ header {
 }
 
 header h1 {
-    font-size: 27px;
+    font-size: 1.6875rem;
     line-height: 1.3;
     margin-bottom: 10px;
     color: #ffe0c7;
@@ -66,7 +66,7 @@ header h1 {
 }
 
 header .subtitle {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.45;
     color: #d9a77d;
     opacity: 0.95;
@@ -93,7 +93,7 @@ section {
 }
 
 section h2 {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.35;
     color: #e6a06b;
     margin-bottom: 12px;
@@ -160,7 +160,7 @@ strong {
 .botia-note h3 {
     color: #ffd8bd;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .botia-note p {
@@ -181,9 +181,9 @@ strong {
 }
 
 .botia-disclaimer {
-    font-size: 0.75rem;
-    color: #b99a88;
-    opacity: 0.8;
+    font-size: 0.85rem;
+    color: var(--botia-text-muted, #c0a08c);
+    opacity: 1;
     margin-top: 12px;
     padding-top: 10px;
     line-height: 1.5;
@@ -195,7 +195,7 @@ footer {
     background: rgba(10, 6, 6, 0.9);
     padding: 18px;
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.5;
     color: #b99a88;
     border-top: 1px solid rgba(190, 122, 72, 0.24);
@@ -220,11 +220,11 @@ footer p {
     }
 
     header h1 {
-        font-size: 23px;
+        font-size: 1.4375rem;
     }
 
     header .subtitle {
-        font-size: 13px;
+        font-size: 0.8125rem;
     }
 
     .botia-icon {
@@ -248,7 +248,7 @@ footer p {
     }
 
     section h2 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     section p,
@@ -260,4 +260,9 @@ footer p {
         padding: 16px;
         border-radius: 16px;
     }
+}
+
+/* Respect reduced motion when this template is reused without menu.css. */
+@media (prefers-reduced-motion: reduce) {
+    .botia-icon { animation: none !important; }
 }
