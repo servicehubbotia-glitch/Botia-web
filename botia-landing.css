@@ -35,7 +35,7 @@ body {
   height: 100px;
   margin-bottom: 24px;
   filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
-  animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out 1;
 }
 
 @keyframes float {
@@ -86,9 +86,9 @@ body {
 .cta-note {
   display: block;
   margin-top: 10px;
-  font-size: 0.8rem;
-  color: #b99a88;
-  opacity: 0.8;
+  font-size: 0.85rem;
+  color: var(--botia-text-muted, #c0a08c);
+  opacity: 1;
 }
 
 /* ===== STAT 72% — EL MOMENTO IMPACTO ===== */
@@ -403,9 +403,23 @@ body.botia-index-page .botia-header-bar { padding: 8px 16px; }
   z-index: 10000;
   padding: 8px 12px;
   border-radius: 8px;
-  background: #180d0d;
-  color: #ffd8bd;
+  max-inline-size: calc(100vw - 24px);
+  white-space: normal;
+  overflow-wrap: anywhere;
+  background: var(--botia-surface, #180d0d);
+  color: var(--botia-text-soft, #ffd8bd);
 }
 .skip-link:focus {
   transform: translateY(0);
+  outline: 2px solid var(--botia-focus, #e6a06b);
+  outline-offset: 2px;
+}
+
+/* Also respect reduced motion on pages without the shared menu CSS. */
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo { animation: none !important; }
+}
+
+@media (forced-colors: active) {
+  .skip-link:focus { outline-color: CanvasText; }
 }
