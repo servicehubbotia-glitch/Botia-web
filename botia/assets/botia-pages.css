@@ -7,14 +7,14 @@
   margin-bottom: 16px;
   padding: 17px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--botia-surface-card, rgba(255, 255, 255, 0.04));
   border: 1px solid rgba(190, 122, 72, 0.20);
 }
 
 .page-section h2 {
   font-size: 1.4rem;
   margin-bottom: 12px;
-  color: #e6a06b;
+  color: var(--botia-accent, #e6a06b);
   border-bottom: 1px solid rgba(230, 160, 107, 0.32);
   padding-bottom: 8px;
 }
@@ -23,12 +23,12 @@
   font-size: 1.15rem;
   margin-top: 20px;
   margin-bottom: 8px;
-  color: #e6a06b;
+  color: var(--botia-accent, #e6a06b);
 }
 
 .page-section p,
 .page-section li {
-  color: #f2e4dc;
+  color: var(--botia-text, #f2e4dc);
   line-height: 1.7;
   margin-bottom: 10px;
 }
@@ -47,7 +47,7 @@
   padding: 2px 14px;
   border-radius: 20px;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   margin-right: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -55,7 +55,7 @@
 
 .badge-halal     { background: #1e7a4a; color: #fff; }
 .badge-haram     { background: #a0302a; color: #fff; }
-.badge-mashbooh  { background: #b8860b; color: #fff; }
+.badge-mashbooh  { background: var(--botia-badge-mashbooh, #b8860b); color: var(--botia-on-mashbooh, #1a0d0d); }
 .badge-risk      { background: #8b3a3a; color: #fff; }
 .badge-plant     { background: #2a6b5a; color: #fff; }
 .badge-animal    { background: #7a4a2a; color: #fff; }
@@ -87,12 +87,12 @@ th, td {
 
 th {
   background: rgba(190, 122, 72, 0.15);
-  color: #e6a06b;
+  color: var(--botia-accent, #e6a06b);
   font-weight: 700;
 }
 
 td {
-  color: #f2e4dc;
+  color: var(--botia-text, #f2e4dc);
 }
 
 /* --- Related Pages --- */
@@ -108,7 +108,7 @@ td {
   padding: 8px 18px;
   border-radius: 30px;
   border: 1px solid rgba(190, 122, 72, 0.3);
-  color: #ffd8bd;
+  color: var(--botia-text-soft, #ffd8bd);
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
@@ -117,15 +117,15 @@ td {
 
 .related-grid a:hover {
   background: rgba(190, 122, 72, 0.2);
-  border-color: #e6a06b;
+  border-color: var(--botia-accent, #e6a06b);
   color: #ffffff;
 }
 
 /* --- Disclaimer --- */
 .page-disclaimer {
-  font-size: 0.75rem;
-  color: #b99a88;
-  opacity: 0.8;
+  font-size: 0.85rem;
+  color: var(--botia-text-muted, #c0a08c);
+  opacity: 1;
   margin-top: 30px;
   padding-top: 18px;
   border-top: 1px solid rgba(190, 122, 72, 0.2);
@@ -135,8 +135,8 @@ td {
 
 /* --- Clases genéricas para páginas --- */
 .section { margin-bottom: 16px; }
-.section-title { font-size: 1.3rem; color: #e6a06b; margin-bottom: 6px; }
-.section-intro { color: #f2e4dc; line-height: 1.7; }
+.section-title { font-size: 1.3rem; color: var(--botia-accent, #e6a06b); margin-bottom: 6px; }
+.section-intro { color: var(--botia-text, #f2e4dc); line-height: 1.7; }
 
 .how-box {
   background: rgba(255,255,255,0.04);
@@ -145,8 +145,8 @@ td {
   margin-bottom: 16px;
   border: 1px solid rgba(190,122,72,0.20);
 }
-.how-box h4 { color: #ffd8bd; margin-bottom: 8px; }
-.how-box p { color: #f2e4dc; line-height: 1.7; }
+.how-box h4 { color: var(--botia-text-soft, #ffd8bd); margin-bottom: 8px; }
+.how-box p { color: var(--botia-text, #f2e4dc); line-height: 1.7; }
 
 .can-cannot {
   display: grid;
@@ -160,14 +160,14 @@ td {
   padding: 20px;
   border: 1px solid rgba(190,122,72,0.20);
 }
-.can-box h4, .cannot-box h4 { margin-bottom: 10px; color: #ffd8bd; }
-.can-box li, .cannot-box li { color: #f2e4dc; margin-bottom: 6px; }
+.can-box h4, .cannot-box h4 { margin-bottom: 10px; color: var(--botia-text-soft, #ffd8bd); }
+.can-box li, .cannot-box li { color: var(--botia-text, #f2e4dc); margin-bottom: 6px; }
 
-.closing-claim { font-size: 1.1rem; color: #ffd8bd; margin-bottom: 12px; }
+.closing-claim { font-size: 1.1rem; color: var(--botia-text-soft, #ffd8bd); margin-bottom: 12px; }
 .cta-button {
   display: inline-block;
   background: rgba(190,122,72,0.20);
-  color: #ffd8bd;
+  color: var(--botia-text-soft, #ffd8bd);
   padding: 10px 24px;
   border-radius: 8px;
   text-decoration: none;
@@ -179,7 +179,7 @@ td {
 /* --- Responsive --- */
 @media (max-width: 600px) {
   table {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 
   th, td {
@@ -200,7 +200,7 @@ td {
   }
 
   .badge {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     padding: 1px 10px;
   }
 
@@ -215,10 +215,9 @@ a.layer-badge {
 }
 a.layer-badge:hover,
 a.layer-badge:focus-visible {
-  filter: brightness(1.14);
+  filter: none;
   transform: translateY(-1px);
-  box-shadow: 0 0 0 2px rgba(230, 160, 107, 0.25);
-  outline: none;
+  border-color: var(--botia-accent, #e6a06b);
 }
 body[dir="rtl"] .section,
 body[dir="rtl"] .can-box,
@@ -273,7 +272,7 @@ body[dir="rtl"] .cannot-box li::before {
   border-radius: 999px;
   border: 1px solid rgba(230, 160, 107, 0.48);
   background: rgba(190, 122, 72, 0.16);
-  color: #ffd8bd;
+  color: var(--botia-text-soft, #ffd8bd);
   font-size: 0.92rem;
   font-weight: 600;
   line-height: 1.2;
@@ -285,10 +284,9 @@ body[dir="rtl"] .cannot-box li::before {
 .botia-trigger-link:hover,
 .botia-trigger-link:focus-visible {
   background: rgba(190, 122, 72, 0.30);
-  border-color: #e6a06b;
+  border-color: var(--botia-accent, #e6a06b);
   color: #ffffff;
   transform: translateY(-1px);
-  outline: none;
 }
 
 body[dir="rtl"] .botia-header-trigger {
@@ -303,8 +301,8 @@ body[dir="rtl"] .botia-header-trigger {
 }
 
 .botia-trigger-caption {
-  color: #e6a06b;
-  font-size: 0.76rem;
+  color: var(--botia-accent, #e6a06b);
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   line-height: 1.2;
@@ -346,7 +344,7 @@ body.botia-info-page .landing {
 }
 
 body.botia-info-page {
-  color: #f2e4dc;
+  color: var(--botia-text, #f2e4dc);
 
   font-family:
     -apple-system,
@@ -447,7 +445,7 @@ body.botia-info-page .hero h1 {
 
   font-weight: 800;
 
-  color: #f2e4dc;
+  color: var(--botia-text, #f2e4dc);
 
   margin: 0 0 18px;
 
@@ -464,7 +462,7 @@ body.botia-info-page .hero .subtitle {
 
   font-weight: 600;
 
-  color: #e6a06b;
+  color: var(--botia-accent, #e6a06b);
 
   margin: 0 0 10px;
 
@@ -479,7 +477,7 @@ body.botia-info-page .hero .description {
   font-size: 1.08rem;
   line-height: 1.75;
 
-  color: #c0a08c;
+  color: var(--botia-text-muted, #c0a08c);
 
   margin: 0;
 
@@ -652,7 +650,7 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
   border: 1px solid rgba(230,160,107,.42);
   border-radius: 20px;
   background: #120808;
-  color: #f2e4dc;
+  color: var(--botia-text, #f2e4dc);
   box-shadow: 0 24px 80px rgba(0,0,0,.62);
   overflow: hidden;
 }
@@ -691,7 +689,7 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
 
 .botia-evidence-card-header h2 {
   margin: 0;
-  color: #ffd8bd;
+  color: var(--botia-text-soft, #ffd8bd);
   font-size: 1.35rem;
   line-height: 1.25;
 }
@@ -703,7 +701,7 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
   border: 1px solid rgba(190,122,72,.42);
   border-radius: 10px;
   background: rgba(36,16,16,.9);
-  color: #e6a06b;
+  color: var(--botia-accent, #e6a06b);
   font-size: 1.55rem;
   line-height: 1;
   cursor: pointer;
@@ -725,14 +723,14 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
 
 .botia-evidence-study-card h3 {
   margin: 0 0 8px;
-  color: #f2e4dc;
+  color: var(--botia-text, #f2e4dc);
   font-size: 1rem;
   line-height: 1.4;
 }
 
 .botia-evidence-author {
   margin: 0 0 7px;
-  color: #e6a06b;
+  color: var(--botia-accent, #e6a06b);
   font-size: .88rem;
   font-weight: 700;
 }
@@ -741,13 +739,13 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
 .botia-evidence-status {
   margin: 0 0 7px;
   color: #a98c7c;
-  font-size: .78rem;
+  font-size: .85rem;
   line-height: 1.45;
 }
 
 .botia-evidence-description {
   margin: 8px 0 0;
-  color: #c0a08c;
+  color: var(--botia-text-muted, #c0a08c);
   font-size: .9rem;
   line-height: 1.55;
 }
@@ -759,7 +757,7 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
   border: 1px solid rgba(230,160,107,.44);
   border-radius: 9px;
   background: rgba(190,122,72,.10);
-  color: #e6a06b;
+  color: var(--botia-accent, #e6a06b);
   text-decoration: none;
   font-size: .8rem;
   font-weight: 700;
@@ -769,7 +767,6 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
 .botia-evidence-source-link:focus-visible {
   background: rgba(190,122,72,.22);
   border-color: rgba(230,160,107,.72);
-  outline: none;
 }
 
 @media (max-width:600px) {
@@ -790,5 +787,55 @@ body.botia-info-page:not([data-botia-module="nutrition"]) [class*="-box"] {
 
   .botia-evidence-study-card {
     padding: 15px;
+  }
+}
+
+/* Phase 2.1 bridge over the embedded ingredient styles.
+   Remove per template only after its individual phase 2.3 migration.
+   Existing labels remain visible; badge icons belong to phase 2.2. */
+body .layer-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+  min-height: 28px;
+  max-width: 100%;
+  padding: 5px 12px;
+  margin: 4px;
+  border: 1px solid rgba(255, 255, 255, .45);
+  font-size: .85rem;
+  line-height: 1.35;
+  color: var(--botia-on-layer, #ffffff);
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+body .layer-badge.layer-muslim { background: var(--botia-layer-muslim, #0e50a2); }
+body .layer-badge.layer-animal { background: var(--botia-layer-animal, #4a2a0a); }
+body .layer-badge.layer-woman { background: var(--botia-layer-woman, #6f2da8); }
+body .layer-badge.layer-sugar { background: var(--botia-layer-sugar, #604119); }
+body .layer-badge.layer-sweetener { background: var(--botia-layer-sweetener, #3f316e); }
+body .layer-badge.layer-texture { background: var(--botia-layer-texture, #3a5b40); }
+body .layer-badge.layer-flavour,
+body .layer-badge.layer-flavor { background: var(--botia-layer-flavour, #655803); }
+body .layer-badge.layer-enumbers { background: var(--botia-layer-enumbers, #3a3a3a); }
+
+body .aliases {
+  color: var(--botia-text-subtle, #929292);
+  font-size: .9rem;
+}
+
+body .sources-list a,
+body .source-links a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (forced-colors: active) {
+  body .layer-badge,
+  .badge,
+  .botia-trigger-link {
+    border-color: CanvasText;
   }
 }
