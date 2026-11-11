@@ -65,36 +65,56 @@
     }
 
 
+    :root {
+      --ingredient-card-bg: #f1e4d6;
+      --ingredient-card-hover: #ebd8c4;
+      --ingredient-card-border: #a47958;
+      --ingredient-card-shadow: 0 3px 9px rgba(65, 37, 19, .08);
+    }
+    [data-theme="dark"] {
+      --ingredient-card-bg: #291b19;
+      --ingredient-card-hover: #35231e;
+      --ingredient-card-border: #9b7054;
+      --ingredient-card-shadow: 0 3px 12px rgba(0, 0, 0, .22);
+    }
     .ingredient-list {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 12px;
       margin: 20px 0;
     }
     .ingredient-card {
       display: block;
-      background: rgba(255,255,255,0.03);
-      border-radius: 12px;
-      transition: background 0.2s;
+      background: var(--ingredient-card-bg);
+      border: 1px solid var(--ingredient-card-border);
+      border-radius: 14px;
+      box-shadow: var(--ingredient-card-shadow);
+      transition: background 0.2s, border-color 0.2s;
       position: relative;
       overflow: hidden;
     }
     .ingredient-card-main {
       display: block;
-      padding: 14px 16px 8px;
+      padding: 16px 18px 8px;
       text-decoration: none;
     }
-    .ingredient-card:hover {
-      background: rgba(255,255,255,0.06);
+    .ingredient-card-main:only-child {
+      padding-bottom: 16px;
+    }
+    .ingredient-card:hover,
+    .ingredient-card:focus-within {
+      background: var(--ingredient-card-hover);
+      border-color: var(--botia-accent);
     }
     .ingredient-card[hidden] {
       display: none;
     }
     .ingredient-card-top {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 8px;
+      gap: 4px 10px;
+      margin-bottom: 0;
       pointer-events: none;
     }
     .ingredient-card-name {
@@ -110,7 +130,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      padding: 0 16px 14px;
+      padding: 0 18px 16px;
     }
     .layer-badge {
       padding: 2px 10px;
