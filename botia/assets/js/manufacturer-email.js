@@ -457,13 +457,13 @@
     const style = document.createElement("style");
     style.id = "botia-manufacturer-email-style";
     style.textContent = `
-      #botia-manufacturer-request{margin-top:24px;padding:18px;background:linear-gradient(180deg,rgba(36,16,16,.98),rgba(24,13,13,.98));border:1px solid rgba(230,160,107,.4);border-radius:17px;box-shadow:0 18px 60px rgba(0,0,0,.24)}
-      #botia-manufacturer-request .bmr-title{color:#ffd8bd;font-size:1rem;font-weight:800;margin:0 0 9px}
-      #botia-manufacturer-request .bmr-copy,#botia-manufacturer-request .bmr-followup{color:#c9b3a6;font-size:.88rem;line-height:1.55;margin:0}
-      #botia-manufacturer-request .bmr-action{width:100%;display:block;margin:15px 0 12px;appearance:none;border:1px solid rgba(230,160,107,.62);border-radius:12px;background:rgba(190,122,72,.14);color:#ffd8bd;padding:13px 16px;font:inherit;font-size:.92rem;font-weight:800;text-align:center;cursor:pointer}
-      #botia-manufacturer-request .bmr-action:focus-visible{outline:2px solid #ffd8bd;outline-offset:3px}
-      #botia-manufacturer-request .bmr-followup{font-size:.8rem;color:#b99a88}
-      #botia-manufacturer-request .bmr-reply-title{font-weight:800;color:#ffd8bd;margin:0 0 7px}
+      #botia-manufacturer-request{margin-top:24px;padding:18px;background:linear-gradient(180deg,rgba(var(--botia-surface-2-rgb), .98),rgba(var(--botia-surface-rgb), .98));border:1px solid rgba(230,160,107,.4);border-radius:17px;box-shadow:0 18px 60px rgba(0,0,0,.24)}
+      #botia-manufacturer-request .bmr-title{color:var(--botia-text-soft);font-size:1rem;font-weight:800;margin:0 0 9px}
+      #botia-manufacturer-request .bmr-copy,#botia-manufacturer-request .bmr-followup{color:var(--botia-text-muted);font-size:.88rem;line-height:1.55;margin:0}
+      #botia-manufacturer-request .bmr-action{width:100%;display:block;margin:15px 0 12px;appearance:none;border:1px solid rgba(230,160,107,.62);border-radius:12px;background:rgba(190,122,72,.14);color:var(--botia-text-soft);padding:13px 16px;font:inherit;font-size:.92rem;font-weight:800;text-align:center;cursor:pointer}
+      #botia-manufacturer-request .bmr-action:focus-visible{outline:2px solid var(--botia-text-soft);outline-offset:3px}
+      #botia-manufacturer-request .bmr-followup{font-size:.8rem;color:var(--botia-text-muted)}
+      #botia-manufacturer-request .bmr-reply-title{font-weight:800;color:var(--botia-text-soft);margin:0 0 7px}
       #botia-manufacturer-request .bmr-reply-body{margin:0 0 8px;line-height:1.55}
       #botia-manufacturer-request .bmr-reply-privacy{margin:0;line-height:1.55}
     `;

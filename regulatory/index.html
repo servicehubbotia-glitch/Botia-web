@@ -2,6 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+<!-- Apply the saved/system theme before styles or body content can paint. -->
+<script>
+(function () {
+  var theme = null;
+  try { theme = localStorage.getItem('botia-theme'); } catch (_) {}
+  if (theme !== 'light' && theme !== 'dark') theme = null;
+  window.__botiaThemePreference = theme;
+  theme = theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+}());
+</script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>BOTIA — Regulatory</title>
@@ -63,6 +76,8 @@
   </script>
 
   <script src="/botia/assets/js/menu.js"></script>
+<link rel="stylesheet" href="/botia/assets/theme.css"/>
+<script defer src="/botia/assets/js/theme.js"></script>
 </head>
 
 <body class="has-botia-header" data-botia-module="regulatory">

@@ -33,7 +33,7 @@
 
 .reg-intro h1 {
   margin: 0 0 12px;
-  color: #fff3ea;
+  color: var(--botia-text-strong);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: clamp(2rem, 4.7vw, 3.8rem);
   font-weight: 800;
@@ -44,7 +44,7 @@
 .reg-intro-text {
   margin: 0;
   max-width: 720px;
-  color: #d9a77d;
+  color: var(--botia-text-muted);
   font-size: 1rem;
   line-height: 1.7;
 }
@@ -53,10 +53,10 @@
   margin-top: 22px;
   padding: 14px 16px;
   border: 1px solid rgba(190,122,72,.25);
-  border-left: 3px solid #e6a06b;
+  border-left: 3px solid var(--botia-accent);
   border-radius: 4px 14px 14px 4px;
   background: rgba(255,255,255,.035);
-  color: #c9b3a6;
+  color: var(--botia-text-muted);
   line-height: 1.6;
 }
 
@@ -84,7 +84,7 @@
 .reg-filters label {
   display: grid;
   gap: 6px;
-  color: #d9a77d;
+  color: var(--botia-text-muted);
   font-size: .85rem;
   font-weight: 700;
 }
@@ -95,7 +95,7 @@
   min-height: 42px;
   padding: 0 10px;
   color: var(--botia-text, #f2e4dc);
-  background: rgba(24,13,13,.96);
+  background: rgba(var(--botia-surface-rgb), .96);
   border: 1px solid var(--botia-border-control, rgba(230,160,107,.62));
   border-radius: 8px;
 }
@@ -159,7 +159,7 @@
 .reg-table td small {
   display: block;
   margin-top: 4px;
-  color: #b99a88;
+  color: var(--botia-text-muted);
   line-height: 1.45;
 }
 
@@ -231,7 +231,7 @@
 .reg-empty {
   padding: 28px 20px;
   text-align: center;
-  color: #b99a88;
+  color: var(--botia-text-muted);
 }
 
 .reg-empty strong,
@@ -251,7 +251,7 @@
 }
 
 .reg-method h2 {
-  color: #ffe0c7;
+  color: var(--botia-text-soft);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 1.55rem;
   font-weight: 800;
@@ -283,7 +283,7 @@ dialog {
   color: var(--botia-text, #f2e4dc);
   background:
     radial-gradient(circle at top, rgba(112,18,27,.28), transparent 38%),
-    linear-gradient(135deg,#100707 0%,#241010 48%,#080505 100%);
+    linear-gradient(135deg,var(--botia-bg-2) 0%,var(--botia-surface-2) 48%,var(--botia-bg) 100%);
 }
 
 dialog::backdrop {
@@ -301,12 +301,12 @@ dialog::backdrop {
   gap: 16px;
   padding: 18px;
   border-bottom: 1px solid rgba(190,122,72,.20);
-  background: rgba(16,7,7,.96);
+  background: rgba(var(--botia-bg-rgb), .96);
 }
 
 .reg-dialog-head h2 {
   margin: 0;
-  color: #fff3ea;
+  color: var(--botia-text-strong);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 1.7rem;
   font-weight: 800;
@@ -317,7 +317,7 @@ dialog::backdrop {
   height: 38px;
   border: 1px solid rgba(190,122,72,.40);
   border-radius: 8px;
-  background: rgba(24,13,13,.96);
+  background: rgba(var(--botia-surface-rgb), .96);
   color: var(--botia-accent, #e6a06b);
   font-size: 1.5rem;
   cursor: pointer;

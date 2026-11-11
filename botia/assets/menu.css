@@ -1,50 +1,3 @@
-/* BOTIA accessibility phase 2.1 — shared tokens.
-   Woman uses violet, approved by Paloma; no raspberry.
-   HTML, content, i18n and WebView layout are unchanged. */
-:root {
-  color-scheme: dark;
-  --botia-bg: #080505;
-  --botia-bg-2: #100707;
-  --botia-surface: #180d0d;
-  --botia-surface-2: #241010;
-  --botia-surface-card: rgba(255, 255, 255, .04);
-  --botia-surface-chip: rgba(190, 122, 72, .20);
-  --botia-surface-chip-hover: rgba(190, 122, 72, .35);
-  --botia-text: #f2e4dc;
-  --botia-text-strong: #fff3ea;
-  --botia-text-soft: #ffd8bd;
-  --botia-text-muted: #c0a08c;
-  --botia-text-subtle: #929292;
-  --botia-accent: #e6a06b;
-  --botia-on-accent: #100707;
-  --botia-focus: #e6a06b;
-  --botia-focus-width: 2px;
-  --botia-focus-offset: 2px;
-  --botia-border: rgba(190, 122, 72, .28);
-  --botia-border-strong: rgba(230, 160, 107, .56);
-  --botia-border-control: rgba(230, 160, 107, .62);
-  --botia-status-halal: #5ba66a;
-  --botia-status-haram: #d7685e;
-  --botia-status-mashbooh: #d49b45;
-  --botia-badge-halal: #1e7a4a;
-  --botia-badge-haram: #a0302a;
-  --botia-badge-mashbooh: #b8860b;
-  --botia-on-mashbooh: #1a0d0d;
-  --botia-can: #8ed09a;
-  --botia-cannot: #e29b9b;
-  --botia-error: #d97070;
-  --botia-layer-muslim: #0e50a2;
-  --botia-layer-animal: #4a2a0a;
-  --botia-layer-woman: #6f2da8;
-  --botia-layer-sugar: #604119;
-  --botia-layer-sweetener: #3f316e;
-  --botia-layer-texture: #3a5b40;
-  --botia-layer-flavour: #655803;
-  --botia-layer-enumbers: #3a3a3a;
-  --botia-on-layer: #ffffff;
-  --botia-wv-subtle: #9a9a9a;
-}
-
 /* BOTIA shared drawer */
 :root {
   --botia-brand-accent: var(--botia-accent);
@@ -75,7 +28,7 @@
   justify-content: center;
   border: 1px solid rgba(190, 122, 72, 0.4);
   border-radius: 10px;
-  background: rgba(8, 4, 4, 0.88);
+  background: rgba(var(--botia-bg-rgb), 0.88);
   color: var(--botia-accent);
   font-size: 24px;
   line-height: 1;
@@ -85,7 +38,7 @@
 
 #menuBtn:hover,
 #menuBtn:focus-visible {
-  background: rgba(36, 16, 16, 0.96);
+  background: rgba(var(--botia-surface-2-rgb), 0.96);
   border-color: rgba(230, 160, 107, 0.72);
 }
 
@@ -120,7 +73,7 @@ body[dir="rtl"] #menuBtn {
   overscroll-behavior: contain;
   box-sizing: border-box;
   padding: 18px 16px 28px;
-  background: linear-gradient(135deg, #100707 0%, #241010 48%, #080505 100%);
+  background: linear-gradient(135deg, var(--botia-bg-2) 0%, var(--botia-surface-2) 48%, var(--botia-bg) 100%);
   border-right: 1px solid rgba(190, 122, 72, 0.3);
   border-radius: 0 18px 18px 0;
   color: var(--botia-menu-text);
@@ -182,7 +135,7 @@ body.botia-menu-open #menuBtn {
   padding: 0;
   border: 1px solid rgba(190, 122, 72, 0.4);
   border-radius: 10px;
-  background: rgba(8, 4, 4, 0.56);
+  background: rgba(var(--botia-bg-rgb), 0.56);
   color: var(--botia-menu-accent);
   font-size: 26px;
   line-height: 1;
@@ -278,7 +231,7 @@ body.has-botia-header .botia-header-bar {
   justify-content: space-between;
   gap: 18px;
   padding: 0 20px 0 70px;
-  background: rgba(8, 5, 5, 0.94);
+  background: rgba(var(--botia-bg-rgb), 0.94);
   border-bottom: 1px solid rgba(190, 122, 72, 0.20);
 }
 
@@ -307,7 +260,7 @@ body.has-botia-header .botia-header-bar {
   padding: 0 34px 0 14px;
   border: 1px solid var(--botia-border-control);
   border-radius: 999px;
-  background: rgba(24, 13, 13, 0.96);
+  background: rgba(var(--botia-surface-rgb), 0.96);
   color: var(--botia-text);
   font: inherit;
   font-size: 0.82rem;
@@ -402,7 +355,7 @@ body[dir="rtl"].has-botia-header .botia-header-bar {
 /* BOTIA drawer scrollbar */
 .botia-drawer {
   scrollbar-width: thin;
-  scrollbar-color: #a85f38 #140909;
+  scrollbar-color: #a85f38 var(--botia-bg-2);
 }
 
 .botia-drawer::-webkit-scrollbar {
@@ -410,17 +363,17 @@ body[dir="rtl"].has-botia-header .botia-header-bar {
 }
 
 .botia-drawer::-webkit-scrollbar-track {
-  background: #140909;
+  background: var(--botia-bg-2);
 }
 
 .botia-drawer::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, #c77a49, #7b2f2f);
-  border: 2px solid #140909;
+  border: 2px solid var(--botia-bg-2);
   border-radius: 999px;
 }
 
 .botia-drawer::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #e6a06b, #91413a);
+  background: linear-gradient(180deg, var(--botia-accent), #91413a);
 }
 
 
@@ -433,8 +386,8 @@ body[dir="rtl"].has-botia-header .botia-header-bar {
 .top {
   background: linear-gradient(
     180deg,
-    rgba(8, 5, 5, 0.68),
-    rgba(8, 5, 5, 0.50)
+    rgba(var(--botia-bg-rgb), 0.68),
+    rgba(var(--botia-bg-rgb), 0.50)
   ) !important;
   -webkit-backdrop-filter: blur(14px) saturate(120%);
   backdrop-filter: blur(14px) saturate(120%);
@@ -484,7 +437,7 @@ body[dir="rtl"].has-botia-header .botia-header-bar {
     --botia-text-subtle: #c4c4c4;
     --botia-border: #b07852;
     --botia-border-control: #b07852;
-    --botia-surface-card: #180d0d;
+    --botia-surface-card: var(--botia-surface);
     --botia-focus-width: 3px;
   }
 }

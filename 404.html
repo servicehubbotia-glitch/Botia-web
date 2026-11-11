@@ -2,6 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Apply the saved/system theme before styles or body content can paint. -->
+<script>
+(function () {
+  var theme = null;
+  try { theme = localStorage.getItem('botia-theme'); } catch (_) {}
+  if (theme !== 'light' && theme !== 'dark') theme = null;
+  window.__botiaThemePreference = theme;
+  theme = theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+}());
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>BOTIA — Page not found</title>
@@ -18,12 +31,12 @@
 
 <style>
 :root{
-  --bg:#080505;
-  --text:#f2e4dc;
-  --muted:#c0a08c;
-  --soft:#8a8a8a;
-  --accent:#e6a06b;
-  --accent-light:#ffd8bd;
+  --bg:var(--botia-bg);
+  --text:var(--botia-text);
+  --muted:var(--botia-text-muted);
+  --soft:var(--botia-text-subtle);
+  --accent:var(--botia-accent);
+  --accent-light:var(--botia-text-soft);
   --line:rgba(190,122,72,.28);
   --shadow:0 18px 60px rgba(0,0,0,.38);
 }
@@ -41,7 +54,7 @@ body{
   background:
     radial-gradient(circle at 20% 5%,rgba(100,28,35,.15),transparent 34rem),
     radial-gradient(circle at 80% 20%,rgba(138,74,37,.10),transparent 30rem),
-    linear-gradient(180deg,#0a0606,#080505 50%,#0d0808);
+    linear-gradient(180deg,var(--botia-bg-2),var(--botia-bg) 50%,var(--botia-bg));
 }
 
 a{color:inherit}
@@ -50,7 +63,7 @@ a{color:inherit}
   position:sticky;
   top:0;
   z-index:1000;
-  background:rgba(8,5,5,.90);
+  background:rgba(var(--botia-bg-rgb), .90);
   -webkit-backdrop-filter:blur(14px);
   backdrop-filter:blur(14px);
   border-bottom:1px solid rgba(190,122,72,.16);
@@ -91,7 +104,7 @@ a{color:inherit}
   padding:5px 10px 5px 12px;
   border:1px solid rgba(190,122,72,.38);
   border-radius:999px;
-  background:rgba(24,13,13,.92);
+  background:rgba(var(--botia-surface-rgb), .92);
 }
 
 .lang-pill select{
@@ -104,8 +117,8 @@ a{color:inherit}
 }
 
 .lang-pill option{
-  background:#180d0d;
-  color:#f2e4dc;
+  background:var(--botia-surface);
+  color:var(--botia-text);
 }
 
 main{
@@ -180,7 +193,7 @@ h1 .code{
 
 .btn-primary{
   background:var(--accent);
-  color:#100707;
+  color: var(--botia-on-accent);
 }
 
 .btn-secondary{
@@ -192,7 +205,7 @@ h1 .code{
   min-height:380px;
   border:1px solid var(--line);
   border-radius:30px;
-  background:linear-gradient(145deg,rgba(36,16,16,.94),rgba(8,5,5,.82));
+  background:linear-gradient(145deg,rgba(var(--botia-surface-2-rgb), .94),rgba(var(--botia-bg-rgb), .82));
   display:grid;
   place-items:center;
   position:relative;
@@ -275,6 +288,8 @@ body[dir="rtl"] .kicker{text-align:right}
   z-index: 9999;
 }
 </style>
+<link rel="stylesheet" href="/botia/assets/theme.css"/>
+<script defer src="/botia/assets/js/theme.js"></script>
 </head>
 
 <body data-botia-module="404">

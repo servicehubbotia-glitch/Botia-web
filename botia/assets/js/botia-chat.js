@@ -366,7 +366,7 @@
             'Questions about this page';
 
         title.style.cssText =
-            'color:#ffd8bd;' +
+            'color:var(--botia-text-soft);' +
             'font-size:0.88rem;' +
             'font-weight:600;' +
             'margin-bottom:10px;';
@@ -406,7 +406,7 @@
                     'border:1px solid rgba(230,160,107,0.32);' +
                     'border-radius:14px;' +
                     'padding:0.7rem 0.85rem;' +
-                    'color:#f2e4dc;' +
+                    'color:var(--botia-text);' +
                     'cursor:pointer;' +
                     'font-family:inherit;' +
                     'font-size:0.9rem;' +
@@ -560,8 +560,8 @@
             div.style.cssText =
                 base +
                 'align-self:flex-end;' +
-                'background:#e6a06b;' +
-                'color:#100707;' +
+                'background:var(--botia-accent);' +
+                'color: var(--botia-on-accent);' +
                 'border-bottom-right-radius:6px;';
 
             div.textContent =
@@ -571,7 +571,7 @@
                 base +
                 'align-self:flex-start;' +
                 'background:rgba(255,255,255,0.06);' +
-                'color:#f2e4dc;' +
+                'color:var(--botia-text);' +
                 'border:1px solid rgba(255,255,255,0.08);' +
                 'border-bottom-left-radius:6px;';
 
@@ -603,9 +603,9 @@
 
         div.innerHTML =
             '<span style="display:inline-flex;gap:4px;">' +
-            '<span style="width:8px;height:8px;background:#c0a08c;border-radius:50%;display:inline-block;animation:botia-typing 1.4s infinite both;"></span>' +
-            '<span style="width:8px;height:8px;background:#c0a08c;border-radius:50%;display:inline-block;animation:botia-typing 1.4s 0.2s infinite both;"></span>' +
-            '<span style="width:8px;height:8px;background:#c0a08c;border-radius:50%;display:inline-block;animation:botia-typing 1.4s 0.4s infinite both;"></span>' +
+            '<span style="width:8px;height:8px;background:var(--botia-text-muted);border-radius:50%;display:inline-block;animation:botia-typing 1.4s infinite both;"></span>' +
+            '<span style="width:8px;height:8px;background:var(--botia-text-muted);border-radius:50%;display:inline-block;animation:botia-typing 1.4s 0.2s infinite both;"></span>' +
+            '<span style="width:8px;height:8px;background:var(--botia-text-muted);border-radius:50%;display:inline-block;animation:botia-typing 1.4s 0.4s infinite both;"></span>' +
             '</span>';
 
         messagesEl.appendChild(div);
@@ -830,7 +830,7 @@
             'width:380px;' +
             'height:auto;' +
             'max-height:520px;' +
-            'background:rgba(16,7,7,0.97);' +
+            'background:rgba(var(--botia-bg-rgb), 0.97);' +
             'border:1px solid rgba(190,122,72,0.3);' +
             'border-radius:28px;' +
             'overflow:hidden;' +
@@ -854,7 +854,7 @@
             document.createElement('div');
 
         header.style.cssText =
-            'background:linear-gradient(135deg,#100707 0%,#241010 48%,#080505 100%);' +
+            'background:linear-gradient(135deg,var(--botia-bg-2) 0%,var(--botia-surface-2) 48%,var(--botia-bg) 100%);' +
             'padding:1rem 1.5rem;' +
             'border-bottom:1px solid rgba(190,122,72,0.2);' +
             'display:flex;' +
@@ -868,11 +868,11 @@
         title.style.cssText =
             'font-weight:500;' +
             'font-size:1.1rem;' +
-            'color:#f2e4dc;' +
+            'color:var(--botia-text);' +
             'margin:0;';
 
         title.innerHTML =
-            '<span style="color:#e6a06b;">BOTIA</span> · ' +
+            '<span style="color:var(--botia-accent);">BOTIA</span> · ' +
             '<span id="botia-chat-title">' +
             (t('title') || 'Assistant') +
             '</span>';
@@ -887,7 +887,7 @@
         closeBtn.style.cssText =
             'background:transparent;' +
             'border:none;' +
-            'color:#c0a08c;' +
+            'color:var(--botia-text-muted);' +
             'font-size:1.4rem;' +
             'cursor:pointer;' +
             'padding:0 4px;' +
@@ -966,7 +966,7 @@
             'border-radius:60px;' +
             'border:1px solid rgba(190,122,72,0.42);' +
             'background:rgba(255,255,255,0.07);' +
-            'color:#f2e4dc;' +
+            'color:var(--botia-text);' +
             'font-family:inherit;' +
             'font-size:0.95rem;' +
             'outline:none;';
@@ -985,12 +985,12 @@
             'Send';
 
         sendBtn.style.cssText =
-            'background:#e6a06b;' +
+            'background:var(--botia-accent);' +
             'border:none;' +
             'border-radius:60px;' +
             'padding:0 1.2rem;' +
             'font-weight:600;' +
-            'color:#100707;' +
+            'color: var(--botia-on-accent);' +
             'cursor:pointer;' +
             'font-size:0.9rem;' +
             'font-family:inherit;';

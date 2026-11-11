@@ -3,6 +3,19 @@
 
 <head>
   <meta charset="utf-8">
+<!-- Apply the saved/system theme before styles or body content can paint. -->
+<script>
+(function () {
+  var theme = null;
+  try { theme = localStorage.getItem('botia-theme'); } catch (_) {}
+  if (theme !== 'light' && theme !== 'dark') theme = null;
+  window.__botiaThemePreference = theme;
+  theme = theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+}());
+</script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>BOTIA — Tasting Like Itself | Flavourings and ultra-processed food</title>
@@ -81,16 +94,16 @@
 
   <style>
     :root {
-      --page-bg: #080505;
-      --page-panel: #180d0d;
-      --page-panel2: #241010;
+      --page-bg: var(--botia-bg);
+      --page-panel: var(--botia-surface);
+      --page-panel2: var(--botia-surface-2);
 
-      --page-text: #f2e4dc;
-      --page-muted: #c0a08c;
-      --page-soft: #8a8a8a;
+      --page-text: var(--botia-text);
+      --page-muted: var(--botia-text-muted);
+      --page-soft: var(--botia-text-subtle);
 
-      --page-accent: #e6a06b;
-      --page-accent2: #ffd8bd;
+      --page-accent: var(--botia-accent);
+      --page-accent2: var(--botia-text-soft);
 
       --page-line: rgba(190, 122, 72, .28);
       --page-shadow: 0 18px 60px rgba(0, 0, 0, .38);
@@ -130,9 +143,9 @@
         ),
         linear-gradient(
           180deg,
-          #0a0606,
-          #080505 50%,
-          #0d0808
+          var(--botia-bg-2),
+          var(--botia-bg) 50%,
+          var(--botia-bg)
         );
 
       overflow-x: hidden;
@@ -255,8 +268,8 @@
         ),
         linear-gradient(
           135deg,
-          rgba(36, 16, 16, .88),
-          rgba(8, 5, 5, .90)
+          rgba(var(--botia-surface-2-rgb), .88),
+          rgba(var(--botia-bg-rgb), .90)
         );
 
       box-shadow: var(--page-shadow);
@@ -299,8 +312,8 @@
       background:
         linear-gradient(
           180deg,
-          rgba(17, 8, 8, .45),
-          rgba(36, 16, 16, .22)
+          rgba(var(--botia-bg-rgb), .45),
+          rgba(var(--botia-surface-2-rgb), .22)
         );
     }
 
@@ -335,8 +348,8 @@
       background:
         linear-gradient(
           145deg,
-          rgba(36, 16, 16, .84),
-          rgba(10, 6, 6, .94)
+          rgba(var(--botia-surface-2-rgb), .84),
+          rgba(var(--botia-bg-rgb), .94)
         );
     }
 
@@ -397,8 +410,8 @@
         ),
         linear-gradient(
           180deg,
-          rgba(24, 13, 13, .96),
-          rgba(14, 8, 8, .95)
+          rgba(var(--botia-surface-rgb), .96),
+          rgba(var(--botia-bg-rgb), .95)
         );
 
       transition:
@@ -413,7 +426,7 @@
 
       border-color: rgba(230, 160, 107, .56);
 
-      background: rgba(36, 16, 16, .90);
+      background: rgba(var(--botia-surface-2-rgb), .90);
 
       outline: none;
     }
@@ -432,7 +445,7 @@
     }
 
     .flavour-related-card.choice span {
-      color: #e4bd7c;
+      color: var(--botia-status-mashbooh);
     }
 
     .flavour-related-card.ultra {
@@ -463,8 +476,8 @@
       background:
         linear-gradient(
           180deg,
-          rgba(24, 13, 13, .96),
-          rgba(14, 8, 8, .95)
+          rgba(var(--botia-surface-rgb), .96),
+          rgba(var(--botia-bg-rgb), .95)
         );
     }
 
@@ -516,7 +529,7 @@
       position: absolute;
       left: 0;
 
-      color: #8ed09a;
+      color: var(--botia-can);
 
       font-size: 1.1rem;
       font-weight: 900;
@@ -528,7 +541,7 @@
       position: absolute;
       left: 1px;
 
-      color: #e29b9b;
+      color: var(--botia-cannot);
 
       font-size: 1.2rem;
       font-weight: 900;
@@ -557,8 +570,8 @@
         ),
         linear-gradient(
           135deg,
-          rgba(36, 16, 16, .88),
-          rgba(8, 5, 5, .92)
+          rgba(var(--botia-surface-2-rgb), .88),
+          rgba(var(--botia-bg-rgb), .92)
         );
 
       box-shadow: var(--page-shadow);
@@ -768,6 +781,8 @@
   z-index: 9999;
 }
 </style>
+<link rel="stylesheet" href="/botia/assets/theme.css"/>
+<script defer src="/botia/assets/js/theme.js"></script>
 </head>
 
 

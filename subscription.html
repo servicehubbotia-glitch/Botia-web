@@ -2,6 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+<!-- Apply the saved/system theme before styles or body content can paint. -->
+<script>
+(function () {
+  var theme = null;
+  try { theme = localStorage.getItem('botia-theme'); } catch (_) {}
+  if (theme !== 'light' && theme !== 'dark') theme = null;
+  window.__botiaThemePreference = theme;
+  theme = theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+}());
+</script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>BOTIA — Subscription</title>
@@ -30,12 +43,12 @@
     .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 24px; }
     .hero { padding: 12px 0 0; text-align: center; }
     .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
-    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
-    .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
-    .description { font-size: 0.9rem; color: #8a8a8a; line-height: 1.6; }
+    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: var(--botia-text); }
+    .subtitle { font-size: 1.1rem; color: var(--botia-text-muted); margin-bottom: 4px; }
+    .description { font-size: 0.9rem; color: var(--botia-text-subtle); line-height: 1.6; }
 
     .subscription-card {
-      background: rgba(24, 13, 13, 0.92);
+      background: rgba(var(--botia-surface-rgb), 0.92);
       border: 1px solid rgba(190, 122, 72, 0.38);
       border-radius: 16px;
       padding: 26px 22px;
@@ -44,7 +57,7 @@
     }
 
     .plan-name {
-      color: #e6a06b;
+      color: var(--botia-accent);
       font-size: 1rem;
       font-weight: 700;
       letter-spacing: 0.05em;
@@ -53,7 +66,7 @@
     }
 
     .plan-intro {
-      color: #c0a08c;
+      color: var(--botia-text-muted);
       font-size: 0.95rem;
       line-height: 1.65;
       margin: 0 auto 22px;
@@ -72,7 +85,7 @@
       position: relative;
       padding: 10px 0 10px 28px;
       border-bottom: 1px solid rgba(190, 122, 72, 0.12);
-      color: #c0a08c;
+      color: var(--botia-text-muted);
       font-size: 0.92rem;
       line-height: 1.5;
     }
@@ -84,7 +97,7 @@
       position: absolute;
       left: 2px;
       top: 10px;
-      color: #e6a06b;
+      color: var(--botia-accent);
       font-weight: 800;
     }
 
@@ -94,8 +107,8 @@
       border: 0;
       border-radius: 999px;
       padding: 13px 24px;
-      background: #e6a06b;
-      color: #100707;
+      background: var(--botia-accent);
+      color: var(--botia-on-accent);
       font-family: inherit;
       font-size: 1rem;
       font-weight: 800;
@@ -106,20 +119,20 @@
 
     .subscribe-button:hover,
     .subscribe-button:focus-visible {
-      background: #f0b080;
+      background: var(--botia-accent-hover);
       outline: none;
     }
 
     .purchase-note {
       max-width: 500px;
       margin: 14px auto 0;
-      color: #6f6f6f;
+      color: var(--botia-text-subtle);
       font-size: 0.75rem;
       line-height: 1.55;
     }
 
     .return-block { text-align: center; margin: 22px 0 8px; }
-    .return-text { color: #8a8a8a; font-size: 0.88rem; margin-bottom: 10px; }
+    .return-text { color: var(--botia-text-subtle); font-size: 0.88rem; margin-bottom: 10px; }
 
     .secondary-button {
       display: inline-block;
@@ -127,7 +140,7 @@
       border-radius: 999px;
       border: 1px solid rgba(190, 122, 72, 0.4);
       background: rgba(190, 122, 72, 0.12);
-      color: #ffd8bd;
+      color: var(--botia-text-soft);
       text-decoration: none;
       font-size: 0.9rem;
       font-weight: 700;
@@ -140,9 +153,9 @@
       outline: none;
     }
 
-    .small-links { text-align: center; margin-top: 22px; font-size: 0.78rem; color: #6f6f6f; }
-    .small-links a { color: #c0a08c; text-decoration: none; }
-    .small-links a:hover { color: #e6a06b; text-decoration: underline; }
+    .small-links { text-align: center; margin-top: 22px; font-size: 0.78rem; color: var(--botia-text-subtle); }
+    .small-links a { color: var(--botia-text-muted); text-decoration: none; }
+    .small-links a:hover { color: var(--botia-accent); text-decoration: underline; }
     .hero + .subscription-card { margin-top: 18px; }
   </style>
 
@@ -179,6 +192,8 @@
   <link rel="stylesheet" href="/botia/assets/menu.css" />
   <script src="/botia/assets/js/menu.js"></script>
   <link rel="stylesheet" href="/botia/assets/footer.css" />
+<link rel="stylesheet" href="/botia/assets/theme.css"/>
+<script defer src="/botia/assets/js/theme.js"></script>
 </head>
 
 <body class="has-botia-header" data-botia-module="subscription">

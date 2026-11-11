@@ -3,6 +3,19 @@
 
 <head>
   <meta charset="utf-8">
+<!-- Apply the saved/system theme before styles or body content can paint. -->
+<script>
+(function () {
+  var theme = null;
+  try { theme = localStorage.getItem('botia-theme'); } catch (_) {}
+  if (theme !== 'light' && theme !== 'dark') theme = null;
+  window.__botiaThemePreference = theme;
+  theme = theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+}());
+</script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>BOTIA — Animal Origin | Food Ingredient Transparency</title>
@@ -86,18 +99,18 @@
 
   <style>
     :root {
-      --bg: #080505;
-      --bg-soft: #100707;
+      --bg: var(--botia-bg);
+      --bg-soft: var(--botia-bg-2);
 
-      --panel: #180d0d;
-      --panel-strong: #241010;
+      --panel: var(--botia-surface);
+      --panel-strong: var(--botia-surface-2);
 
-      --text: #f2e4dc;
-      --muted: #c0a08c;
-      --soft: #8a8a8a;
+      --text: var(--botia-text);
+      --muted: var(--botia-text-muted);
+      --soft: var(--botia-text-subtle);
 
-      --accent: #e6a06b;
-      --accent-light: #ffd8bd;
+      --accent: var(--botia-accent);
+      --accent-light: var(--botia-text-soft);
 
       --line: rgba(190, 122, 72, .28);
       --line-strong: rgba(230, 160, 107, .48);
@@ -142,9 +155,9 @@
         ),
         linear-gradient(
           180deg,
-          #0a0606,
-          #080505 50%,
-          #0d0808
+          var(--botia-bg-2),
+          var(--botia-bg) 50%,
+          var(--botia-bg)
         );
 
       overflow-x: hidden;
@@ -163,7 +176,7 @@
       top: 0;
       z-index: 1000;
 
-      background: rgba(8, 5, 5, .90);
+      background: rgba(var(--botia-bg-rgb), .90);
 
       -webkit-backdrop-filter: blur(14px);
       backdrop-filter: blur(14px);
@@ -214,7 +227,7 @@
       border: 1px solid rgba(190, 122, 72, .38);
       border-radius: 999px;
 
-      background: rgba(24, 13, 13, .92);
+      background: rgba(var(--botia-surface-rgb), .92);
     }
 
     .animal-lang-pill select {
@@ -230,8 +243,8 @@
     }
 
     .animal-lang-pill option {
-      background: #180d0d;
-      color: #f2e4dc;
+      background: var(--botia-surface);
+      color: var(--botia-text);
     }
 
     /* =====================================================
@@ -347,8 +360,8 @@
       background:
         linear-gradient(
           180deg,
-          rgba(17, 8, 8, .45),
-          rgba(36, 16, 16, .22)
+          rgba(var(--botia-bg-rgb), .45),
+          rgba(var(--botia-surface-2-rgb), .22)
         );
     }
 
@@ -410,8 +423,8 @@
         ),
         linear-gradient(
           135deg,
-          rgba(36, 16, 16, .88),
-          rgba(8, 5, 5, .90)
+          rgba(var(--botia-surface-2-rgb), .88),
+          rgba(var(--botia-bg-rgb), .90)
         );
 
       box-shadow: var(--shadow);
@@ -466,8 +479,8 @@
       background:
         linear-gradient(
           180deg,
-          rgba(24, 13, 13, .96),
-          rgba(14, 8, 8, .95)
+          rgba(var(--botia-surface-rgb), .96),
+          rgba(var(--botia-bg-rgb), .95)
         );
     }
 
@@ -559,8 +572,8 @@
       background:
         linear-gradient(
           145deg,
-          rgba(36, 16, 16, .82),
-          rgba(10, 6, 6, .94)
+          rgba(var(--botia-surface-2-rgb), .82),
+          rgba(var(--botia-bg-rgb), .94)
         );
     }
 
@@ -607,8 +620,8 @@
       background:
         linear-gradient(
           180deg,
-          rgba(24, 13, 13, .96),
-          rgba(14, 8, 8, .95)
+          rgba(var(--botia-surface-rgb), .96),
+          rgba(var(--botia-bg-rgb), .95)
         );
     }
 
@@ -661,7 +674,7 @@
       position: absolute;
       left: 0;
 
-      color: #8ed09a;
+      color: var(--botia-can);
 
       font-size: 1.1rem;
       font-weight: 900;
@@ -673,7 +686,7 @@
       position: absolute;
       left: 1px;
 
-      color: #e29b9b;
+      color: var(--botia-cannot);
 
       font-size: 1.2rem;
       font-weight: 900;
@@ -698,8 +711,8 @@
       background:
         linear-gradient(
           135deg,
-          rgba(36, 16, 16, .86),
-          rgba(8, 5, 5, .92)
+          rgba(var(--botia-surface-2-rgb), .86),
+          rgba(var(--botia-bg-rgb), .92)
         );
     }
 
@@ -881,6 +894,8 @@
   </style>
 
   <script src="/botia/assets/js/menu.js"></script>
+<link rel="stylesheet" href="/botia/assets/theme.css"/>
+<script defer src="/botia/assets/js/theme.js"></script>
 </head>
 
 <body data-botia-module="animal">

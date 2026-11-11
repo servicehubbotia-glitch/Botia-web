@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<!-- Apply the saved/system theme before styles or body content can paint. -->
+<script>
+(function () {
+  var theme = null;
+  try { theme = localStorage.getItem('botia-theme'); } catch (_) {}
+  if (theme !== 'light' && theme !== 'dark') theme = null;
+  window.__botiaThemePreference = theme;
+  theme = theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+}());
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>BOTIA — Product traceability</title>
 <meta name="robots" content="noindex,nofollow"/>
 <link rel="icon" href="/botia_jar_512.png" type="image/png"/>
 <style>
 :root{
-  --bg:#100707;--bg2:#080505;--panel:#180d0d;--panel2:#241010;
-  --text:#f7eee8;--muted:#c9b3a6;--soft:#b99a88;
-  --accent:#e6a06b;--accent2:#ffd8bd;--line:rgba(190,122,72,.28);
+  --bg:var(--botia-bg-2);--bg2:var(--botia-bg);--panel:var(--botia-surface);--panel2:var(--botia-surface-2);
+  --text:var(--botia-text);--muted:var(--botia-text-muted);--soft:var(--botia-text-muted);
+  --accent:var(--botia-accent);--accent2:var(--botia-text-soft);--line:rgba(190,122,72,.28);
   --lineStrong:rgba(230,160,107,.56);--shadow:0 18px 60px rgba(0,0,0,.38)
 }
 *{box-sizing:border-box}
@@ -56,6 +69,8 @@ h1{font-size:1.85rem;margin:0 0 12px;line-height:1.2}
   .record dt{margin-top:4px}
 }
 </style>
+<link rel="stylesheet" href="/botia/assets/theme.css"/>
+<script defer src="/botia/assets/js/theme.js"></script>
 </head>
 <body data-botia-module="traceability">
 <div class="brand">

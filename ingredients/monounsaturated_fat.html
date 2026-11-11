@@ -2,6 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+<!-- Apply the saved/system theme before styles or body content can paint. -->
+<script>
+(function () {
+  var theme = null;
+  try { theme = localStorage.getItem('botia-theme'); } catch (_) {}
+  if (theme !== 'light' && theme !== 'dark') theme = null;
+  window.__botiaThemePreference = theme;
+  theme = theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+}());
+</script>
+
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <title>BOTIA — Monounsaturated fat</title>
@@ -69,19 +82,19 @@
 
     .hero h1 {
       font-size: 1.6rem;
-      color: #f2e4dc;
+      color: var(--botia-text);
       margin-bottom: 4px;
     }
 
     .e-code {
       font-size: 0.9rem;
-      color: #e6a06b;
+      color: var(--botia-accent);
       margin-bottom: 4px;
     }
 
     .aliases {
       font-size: 0.8rem;
-      color: #8a8a8a;
+      color: var(--botia-text-subtle);
       margin-bottom: 8px;
     }
 
@@ -91,13 +104,13 @@
 
     .section-title {
       font-size: 1.2rem;
-      color: #e6a06b;
+      color: var(--botia-accent);
       margin-bottom: 8px;
     }
 
     .section-intro {
       font-size: 0.95rem;
-      color: #c0a08c;
+      color: var(--botia-text-muted);
       line-height: 1.6;
       white-space: pre-line;
     }
@@ -113,14 +126,14 @@
       letter-spacing: 0.5px;
     }
 
-    .layer-muslim { background: #1e4a6a; color: #fff; }
-    .layer-animal { background: #4a2a0a; color: #fff; }
-    .layer-woman { background: #6a1a3a; color: #fff; }
-    .layer-sugar { background: #6a3a0a; color: #fff; }
-    .layer-sweetener { background: #4a3a6a; color: #fff; }
-    .layer-texture { background: #2a4a2a; color: #fff; }
-    .layer-flavour { background: #4a4a0a; color: #fff; }
-    .layer-enumbers { background: #3a3a3a; color: #fff; }
+    .layer-muslim { background: var(--botia-layer-muslim); color: #fff; }
+    .layer-animal { background: var(--botia-layer-animal); color: #fff; }
+    .layer-woman { background: var(--botia-layer-woman); color: #fff; }
+    .layer-sugar { background: var(--botia-layer-sugar); color: #fff; }
+    .layer-sweetener { background: var(--botia-layer-sweetener); color: #fff; }
+    .layer-texture { background: var(--botia-layer-texture); color: #fff; }
+    .layer-flavour { background: var(--botia-layer-flavour); color: #fff; }
+    .layer-enumbers { background: var(--botia-layer-enumbers); color: #fff; }
 
     .can-cannot {
       display: grid;
@@ -137,7 +150,7 @@
 
     .can-box,
     .cannot-box {
-      background: rgba(24, 13, 13, 0.9);
+      background: rgba(var(--botia-surface-rgb), 0.9);
       border-radius: 12px;
       padding: 16px;
     }
@@ -152,7 +165,7 @@
 
     .can-box h4,
     .cannot-box h4 {
-      color: #f2e4dc;
+      color: var(--botia-text);
       margin-bottom: 8px;
       font-size: 0.95rem;
     }
@@ -160,7 +173,7 @@
     .can-box li,
     .cannot-box li {
       font-size: 0.85rem;
-      color: #c0a08c;
+      color: var(--botia-text-muted);
       padding-left: 20px;
       position: relative;
       margin-bottom: 4px;
@@ -189,7 +202,7 @@
     }
 
     .sources-list a {
-      color: #e6a06b;
+      color: var(--botia-accent);
       font-size: 0.9rem;
       text-decoration: none;
     }
@@ -206,7 +219,7 @@
     .cta-button {
       display: inline-block;
       background: rgba(190, 122, 72, 0.20);
-      color: #ffd8bd;
+      color: var(--botia-text-soft);
       padding: 10px 24px;
       border-radius: 8px;
       text-decoration: none;
@@ -250,6 +263,8 @@
   </script>
 
   <script src="/botia/assets/js/menu.js"></script>
+<link rel="stylesheet" href="/botia/assets/theme.css"/>
+<script defer src="/botia/assets/js/theme.js"></script>
 </head>
 
 <body class="has-botia-header" data-botia-module="monounsaturated_fat">

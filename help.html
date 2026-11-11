@@ -2,6 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Apply the saved/system theme before styles or body content can paint. -->
+<script>
+(function () {
+  var theme = null;
+  try { theme = localStorage.getItem('botia-theme'); } catch (_) {}
+  if (theme !== 'light' && theme !== 'dark') theme = null;
+  window.__botiaThemePreference = theme;
+  theme = theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+}());
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BOTIA — Help & FAQ</title>
   <meta property="og:title" content="BOTIA — Help & FAQ">
@@ -35,11 +48,11 @@
 <link rel="stylesheet" href="/botia/assets/menu.css">
 <link rel="stylesheet" href="/botia/assets/footer.css">
 <style>
-:root{--bg:#080505;--panel:#180d0d;--text:#f2e4dc;--muted:#c0a08c;--accent:#e6a06b;--accent2:#ffd8bd;--line:rgba(190,122,72,.28);--shadow:0 18px 60px rgba(0,0,0,.38)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at 20% 5%,rgba(100,28,35,.15),transparent 34rem),radial-gradient(circle at 80% 20%,rgba(138,74,37,.10),transparent 30rem),linear-gradient(180deg,#0a0606,#080505 50%,#0d0808)}a{color:var(--accent)}
-.wrap{width:min(1040px,calc(100% - 40px));margin:0 auto}.top{position:sticky;top:0;z-index:1000;background:rgba(8,5,5,.90);backdrop-filter:blur(14px);border-bottom:1px solid rgba(190,122,72,.16)}.topin{width:min(1180px,calc(100% - 40px));margin:0 auto;min-height:68px;display:flex;align-items:center;gap:18px}#menuBtn{position:static;flex:0 0 42px}.word{color:var(--accent);font-weight:900;letter-spacing:.14em;text-decoration:none}.spacer{flex:1}.lang{display:flex;align-items:center;padding:5px 10px;border:1px solid rgba(190,122,72,.38);border-radius:999px;background:rgba(24,13,13,.92)}.lang select{color:var(--text);background:transparent;border:0;outline:0;padding:5px 2px}.lang option{background:#180d0d;color:#f2e4dc}
-.hero{padding:72px 0 48px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}.kicker{color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}h1{margin:14px 0 18px;font-size:clamp(2.6rem,5.8vw,5.1rem);line-height:.96;letter-spacing:-.055em}.subtitle{margin:0;color:var(--muted);font-size:1.08rem;line-height:1.75}.stage{min-height:340px;border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,rgba(36,16,16,.94),rgba(8,5,5,.82));display:grid;place-items:center;box-shadow:var(--shadow)}.stage img{width:min(240px,66%);filter:drop-shadow(0 18px 28px rgba(0,0,0,.35))}
-.intro{padding:0 0 34px}.card{padding:28px 30px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(24,13,13,.96),rgba(14,8,8,.95))}.card h2{margin:0 0 10px;color:var(--accent2)}.card p{margin:0;color:var(--muted);line-height:1.7}.section{padding:32px 0 72px}.section h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.04em}.faqs{display:grid;gap:12px}details{border:1px solid var(--line);border-radius:18px;background:rgba(24,13,13,.88);overflow:hidden}summary{list-style:none;cursor:pointer;padding:20px 54px 20px 22px;position:relative;color:var(--accent2);font-weight:800;line-height:1.35}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:22px;top:17px;color:var(--accent);font-size:1.35rem}details[open] summary:after{content:"−"}.ans{padding:0 22px 22px;color:var(--muted);line-height:1.72}.ans p{margin:0}.contact{padding:0 0 74px}.contactbox{padding:34px;border:1px solid rgba(230,160,107,.38);border-radius:24px;background:linear-gradient(135deg,rgba(36,16,16,.88),rgba(8,5,5,.90));box-shadow:var(--shadow)}.contactbox h2{margin:0 0 10px;color:var(--accent2)}.contactbox p{color:var(--muted);line-height:1.65}.links{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;min-height:42px;padding:0 16px;border:1px solid rgba(230,160,107,.48);border-radius:999px;text-decoration:none;color:var(--accent2);background:rgba(190,122,72,.10);font-weight:800}
+:root{--bg:var(--botia-bg);--panel:var(--botia-surface);--text:var(--botia-text);--muted:var(--botia-text-muted);--accent:var(--botia-accent);--accent2:var(--botia-text-soft);--line:rgba(190,122,72,.28);--shadow:0 18px 60px rgba(0,0,0,.38)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at 20% 5%,rgba(100,28,35,.15),transparent 34rem),radial-gradient(circle at 80% 20%,rgba(138,74,37,.10),transparent 30rem),linear-gradient(180deg,var(--botia-bg-2),var(--botia-bg) 50%,var(--botia-bg))}a{color:var(--accent)}
+.wrap{width:min(1040px,calc(100% - 40px));margin:0 auto}.top{position:sticky;top:0;z-index:1000;background:rgba(var(--botia-bg-rgb), .90);backdrop-filter:blur(14px);border-bottom:1px solid rgba(190,122,72,.16)}.topin{width:min(1180px,calc(100% - 40px));margin:0 auto;min-height:68px;display:flex;align-items:center;gap:18px}#menuBtn{position:static;flex:0 0 42px}.word{color:var(--accent);font-weight:900;letter-spacing:.14em;text-decoration:none}.spacer{flex:1}.lang{display:flex;align-items:center;padding:5px 10px;border:1px solid rgba(190,122,72,.38);border-radius:999px;background:rgba(var(--botia-surface-rgb), .92)}.lang select{color:var(--text);background:transparent;border:0;outline:0;padding:5px 2px}.lang option{background:var(--botia-surface);color:var(--botia-text)}
+.hero{padding:72px 0 48px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}.kicker{color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}h1{margin:14px 0 18px;font-size:clamp(2.6rem,5.8vw,5.1rem);line-height:.96;letter-spacing:-.055em}.subtitle{margin:0;color:var(--muted);font-size:1.08rem;line-height:1.75}.stage{min-height:340px;border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,rgba(var(--botia-surface-2-rgb), .94),rgba(var(--botia-bg-rgb), .82));display:grid;place-items:center;box-shadow:var(--shadow)}.stage img{width:min(240px,66%);filter:drop-shadow(0 18px 28px rgba(0,0,0,.35))}
+.intro{padding:0 0 34px}.card{padding:28px 30px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(var(--botia-surface-rgb), .96),rgba(var(--botia-bg-rgb), .95))}.card h2{margin:0 0 10px;color:var(--accent2)}.card p{margin:0;color:var(--muted);line-height:1.7}.section{padding:32px 0 72px}.section h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.04em}.faqs{display:grid;gap:12px}details{border:1px solid var(--line);border-radius:18px;background:rgba(var(--botia-surface-rgb), .88);overflow:hidden}summary{list-style:none;cursor:pointer;padding:20px 54px 20px 22px;position:relative;color:var(--accent2);font-weight:800;line-height:1.35}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:22px;top:17px;color:var(--accent);font-size:1.35rem}details[open] summary:after{content:"−"}.ans{padding:0 22px 22px;color:var(--muted);line-height:1.72}.ans p{margin:0}.contact{padding:0 0 74px}.contactbox{padding:34px;border:1px solid rgba(230,160,107,.38);border-radius:24px;background:linear-gradient(135deg,rgba(var(--botia-surface-2-rgb), .88),rgba(var(--botia-bg-rgb), .90));box-shadow:var(--shadow)}.contactbox h2{margin:0 0 10px;color:var(--accent2)}.contactbox p{color:var(--muted);line-height:1.65}.links{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;min-height:42px;padding:0 16px;border:1px solid rgba(230,160,107,.48);border-radius:999px;text-decoration:none;color:var(--accent2);background:rgba(190,122,72,.10);font-weight:800}
 @media(max-width:720px){.wrap,.topin{width:min(100% - 30px,1040px)}.hero{padding:46px 0 34px}.hero-grid{grid-template-columns:1fr;gap:24px}.stage{min-height:260px}.stage img{width:min(190px,62%)}}
 </style>
 <script src="/botia/assets/js/menu.js"></script>
@@ -74,6 +87,8 @@
   z-index: 9999;
 }
 </style>
+<link rel="stylesheet" href="/botia/assets/theme.css"/>
+<script defer src="/botia/assets/js/theme.js"></script>
 </head>
 <body class="has-botia-header" data-botia-module="help">
 <a class="skip-link"

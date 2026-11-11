@@ -3,6 +3,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<!-- Apply the saved/system theme before styles or body content can paint. -->
+<script>
+(function () {
+  var theme = null;
+  try { theme = localStorage.getItem('botia-theme'); } catch (_) {}
+  if (theme !== 'light' && theme !== 'dark') theme = null;
+  window.__botiaThemePreference = theme;
+  theme = theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+}());
+</script>
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>BOTIA — Legal Notice</title>
 <meta content="BOTIA — Legal Notice" property="og:title"/>
@@ -25,24 +38,24 @@
     .landing { max-width: 680px; margin: 0 auto; padding: 8px 16px 20px; }
     .hero { padding: 12px 0 0; text-align: center; }
     .hero img { width: 96px; height: 96px; margin-bottom: 16px; }
-    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: #f2e4dc; }
-    .subtitle { font-size: 1.1rem; color: #c0a08c; margin-bottom: 4px; }
-    .description { font-size: 0.9rem; color: #8a8a8a; }
+    .hero h1 { font-size: 1.6rem; margin-bottom: 6px; color: var(--botia-text); }
+    .subtitle { font-size: 1.1rem; color: var(--botia-text-muted); margin-bottom: 4px; }
+    .description { font-size: 0.9rem; color: var(--botia-text-subtle); }
     .section { margin-bottom: 24px; }
-    .section-title { font-size: 1.2rem; color: #e6a06b; margin-bottom: 10px; }
-    .section-intro { font-size: 0.95rem; color: #c0a08c; line-height: 1.6; }
+    .section-title { font-size: 1.2rem; color: var(--botia-accent); margin-bottom: 10px; }
+    .section-intro { font-size: 0.95rem; color: var(--botia-text-muted); line-height: 1.6; }
     .data-block {
-      background: rgba(24,13,13,0.9); border: 1px solid rgba(190,122,72,0.25);
+      background: rgba(var(--botia-surface-rgb), 0.9); border: 1px solid rgba(190,122,72,0.25);
       border-radius: 12px; padding: 20px; margin: 16px 0;
     }
     .data-row { display: flex; gap: 12px; margin-bottom: 8px; font-size: 0.9rem; flex-wrap: wrap; }
-    .data-label { color: #e6a06b; min-width: 130px; font-weight: 600; }
-    .data-value { color: #c0a08c; }
-    .data-value a { color: #c0a08c; text-decoration: none; }
-    .data-value a:hover { color: #e6a06b; text-decoration: underline; }
+    .data-label { color: var(--botia-accent); min-width: 130px; font-weight: 600; }
+    .data-value { color: var(--botia-text-muted); }
+    .data-value a { color: var(--botia-text-muted); text-decoration: none; }
+    .data-value a:hover { color: var(--botia-accent); text-decoration: underline; }
     .closing { text-align: center; padding: 20px 0; }
     .cta-button {
-      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+      display: inline-block; background: rgba(190,122,72,0.20); color: var(--botia-text-soft);
       padding: 10px 24px; border-radius: 8px; text-decoration: none;
       border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
     }
@@ -80,7 +93,9 @@
 <link href="/botia/assets/menu.css" rel="stylesheet"/>
 <script src="/botia/assets/js/menu.js"></script>
 <link href="/botia/assets/footer.css" rel="stylesheet"/>
-</link></link></head>
+</link></link><link rel="stylesheet" href="/botia/assets/theme.css"/>
+<script defer src="/botia/assets/js/theme.js"></script>
+</head>
 <body class="has-botia-header" data-botia-module="legal">
 <button aria-label="Menu" id="menuBtn">☰</button>
 <div class="botia-header-bar">
@@ -167,7 +182,7 @@
 </section>
 <!-- Nuevo bloque de fecha -->
 <section class="section">
-<p class="section-intro" style="font-size:0.85rem;color:#6f6f6f;">
+<p class="section-intro" style="font-size:0.85rem;color:var(--botia-text-subtle);">
 <span id="updated_label">Last updated</span>: <span id="updated_date">8 August 2026</span>
 </p>
 </section>

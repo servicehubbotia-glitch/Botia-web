@@ -3,6 +3,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<!-- Apply the saved/system theme before styles or body content can paint. -->
+<script>
+(function () {
+  var theme = null;
+  try { theme = localStorage.getItem('botia-theme'); } catch (_) {}
+  if (theme !== 'light' && theme !== 'dark') theme = null;
+  window.__botiaThemePreference = theme;
+  theme = theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+}());
+</script>
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>BOTIA Ingredient Index | Food Transparency</title>
 <meta content="BOTIA Ingredient Index | Food Transparency" property="og:title"/>
@@ -32,21 +45,21 @@
 <style>
     .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
     .hero { padding: 20px 0 10px; text-align: center; }
-    .hero h1 { font-size: 1.6rem; color: #f2e4dc; margin-bottom: 6px; }
-    .subtitle { font-size: 1rem; color: #c0a08c; margin-bottom: 16px; }
+    .hero h1 { font-size: 1.6rem; color: var(--botia-text); margin-bottom: 6px; }
+    .subtitle { font-size: 1rem; color: var(--botia-text-muted); margin-bottom: 16px; }
     .search-box {
       width: 100%; padding: 12px 16px; border-radius: 8px;
-      background: rgba(24,13,13,0.9); color: #f2e4dc;
+      background: rgba(var(--botia-surface-rgb), 0.9); color: var(--botia-text);
       border: 1px solid rgba(190,122,72,0.4); font-size: 0.95rem;
       margin-bottom: 20px;
     }
-    .search-box::placeholder { color: #8a8a8a; }
-    .count { font-size: 0.85rem; color: #8a8a8a; margin-bottom: 16px; }
-    .no-results { text-align: center; color: #8a8a8a; padding: 40px; }
+    .search-box::placeholder { color: var(--botia-text-subtle); }
+    .count { font-size: 0.85rem; color: var(--botia-text-subtle); margin-bottom: 16px; }
+    .no-results { text-align: center; color: var(--botia-text-subtle); padding: 40px; }
     .no-results[hidden] { display: none; }
     .closing { text-align: center; padding: 20px 0; }
     .cta-button {
-      display: inline-block; background: rgba(190,122,72,0.20); color: #ffd8bd;
+      display: inline-block; background: rgba(190,122,72,0.20); color: var(--botia-text-soft);
       padding: 10px 24px; border-radius: 8px; text-decoration: none;
       border: 1px solid rgba(190,122,72,0.40); margin-top: 16px;
     }
@@ -85,12 +98,12 @@
       pointer-events: none;
     }
     .ingredient-card-name {
-      color: #f2e4dc;
+      color: var(--botia-text);
       font-size: 0.95rem;
       font-weight: 600;
     }
     .ingredient-card-ecode {
-      color: #e6a06b;
+      color: var(--botia-accent);
       font-size: 0.8rem;
     }
     .ingredient-card-layers {
@@ -111,33 +124,33 @@
       display: inline-flex;
       align-items: center;
     }
-    .layer-animal    { background: #4a2a0a; color: #ffd8bd; }
-    .layer-muslim    { background: #1e4a6a; color: #fff; }
-    .layer-woman     { background: #6a1a3a; color: #fff; }
-    .layer-sugar     { background: #6a3a0a; color: #fff; }
-    .layer-sweetener { background: #4a3a6a; color: #fff; }
-    .layer-texture   { background: #2a4a2a; color: #fff; }
-    .layer-flavour   { background: #4a4a0a; color: #fff; }
-    .layer-enumbers  { background: #3a3a3a; color: #fff; }
+    .layer-animal    { background: var(--botia-layer-animal); color: var(--botia-text-soft); }
+    .layer-muslim    { background: var(--botia-layer-muslim); color: #fff; }
+    .layer-woman     { background: var(--botia-layer-woman); color: #fff; }
+    .layer-sugar     { background: var(--botia-layer-sugar); color: #fff; }
+    .layer-sweetener { background: var(--botia-layer-sweetener); color: #fff; }
+    .layer-texture   { background: var(--botia-layer-texture); color: #fff; }
+    .layer-flavour   { background: var(--botia-layer-flavour); color: #fff; }
+    .layer-enumbers  { background: var(--botia-layer-enumbers); color: #fff; }
 
     /* BOTIA scrollbar for the long ingredient index */
     html {
       scrollbar-width: thin;
-      scrollbar-color: #a85f38 #140909;
+      scrollbar-color: #a85f38 var(--botia-bg-2);
     }
     html::-webkit-scrollbar {
       width: 12px;
     }
     html::-webkit-scrollbar-track {
-      background: #140909;
+      background: var(--botia-bg-2);
     }
     html::-webkit-scrollbar-thumb {
       background: linear-gradient(180deg, #c77a49, #7b2f2f);
-      border: 2px solid #140909;
+      border: 2px solid var(--botia-bg-2);
       border-radius: 999px;
     }
     html::-webkit-scrollbar-thumb:hover {
-      background: linear-gradient(180deg, #e6a06b, #91413a);
+      background: linear-gradient(180deg, var(--botia-accent), #91413a);
     }
   </style>
 
@@ -169,7 +182,9 @@
 <link href="/botia/assets/menu.css" rel="stylesheet"/>
 <script src="/botia/assets/js/menu.js"></script>
 <link href="/botia/assets/footer.css" rel="stylesheet"/>
-</link></link></link></meta></head>
+</link></link></link></meta><link rel="stylesheet" href="/botia/assets/theme.css"/>
+<script defer src="/botia/assets/js/theme.js"></script>
+</head>
 <body class="has-botia-header botia-index-page" data-botia-module="ingredient_index">
 <button aria-label="Menu" id="menuBtn">☰</button>
 <div class="botia-header-bar">
@@ -199,10 +214,10 @@
 <div class="no-results" hidden="" id="no-results">No ingredients found.</div>
 </section>
 <section style="text-align:center; padding: 30px 20px; margin-top: 40px; border-top: 1px solid rgba(190,122,72,0.2);">
-<p id="library_note" style="color:#c0a08c; font-size:0.85rem; line-height:1.6; max-width:600px; margin:0 auto 16px;">
+<p id="library_note" style="color:var(--botia-text-muted); font-size:0.85rem; line-height:1.6; max-width:600px; margin:0 auto 16px;">
       BOTIA's ingredient library covers the additives and substances most relevant to its evidence layers. For the complete international database of food additives and contaminants, consult the WHO/JECFA database — one of the sources BOTIA uses.
     </p>
-<a href="https://apps.who.int/food-additives-contaminants-jecfa-database/" style="color:#e6a06b; text-decoration:none; font-weight:600; font-size:0.9rem;" target="_blank"><span aria-hidden="true">🔗 </span><span id="jecfa_label">WHO Food Additives &amp; Contaminants Database (JECFA)</span></a>
+<a href="https://apps.who.int/food-additives-contaminants-jecfa-database/" style="color:var(--botia-accent); text-decoration:none; font-weight:600; font-size:0.9rem;" target="_blank"><span aria-hidden="true">🔗 </span><span id="jecfa_label">WHO Food Additives &amp; Contaminants Database (JECFA)</span></a>
 </section>
 <section class="closing">
 <a class="cta-button" href="/" id="back-to-botia">← Back to BOTIA</a>

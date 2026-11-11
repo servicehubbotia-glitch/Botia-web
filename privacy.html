@@ -3,6 +3,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<!-- Apply the saved/system theme before styles or body content can paint. -->
+<script>
+(function () {
+  var theme = null;
+  try { theme = localStorage.getItem('botia-theme'); } catch (_) {}
+  if (theme !== 'light' && theme !== 'dark') theme = null;
+  window.__botiaThemePreference = theme;
+  theme = theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+}());
+</script>
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>BOTIA — Privacy Policy</title>
 <meta content="BOTIA privacy policy — what data is processed, where it goes, and what never leaves your device." name="description"/>
@@ -51,22 +64,24 @@
 <link href="/botia/assets/botia-pages.css" rel="stylesheet">
 <style>
     .landing { max-width: 680px; margin: 0 auto; padding: 20px; }
-    h1 { color: #f2e4dc; margin-bottom: 12px; }
-    h2 { color: #e6a06b; margin: 24px 0 10px; font-size: 1.2rem; }
-    p, li { color: #c0a08c; line-height: 1.6; margin-bottom: 8px; }
-    a { color: #e6a06b; }
-    .last-updated { color: #8a8a8a; font-size: 0.85rem; margin-bottom: 24px; }
+    h1 { color: var(--botia-text); margin-bottom: 12px; }
+    h2 { color: var(--botia-accent); margin: 24px 0 10px; font-size: 1.2rem; }
+    p, li { color: var(--botia-text-muted); line-height: 1.6; margin-bottom: 8px; }
+    a { color: var(--botia-accent); }
+    .last-updated { color: var(--botia-text-subtle); font-size: 0.85rem; margin-bottom: 24px; }
     .notice-box {
-      background: rgba(24,13,13,0.9);
+      background: rgba(var(--botia-surface-rgb), 0.9);
       border-left: 4px solid rgba(190,122,72,0.6);
       border-radius: 8px; padding: 18px 20px; margin: 18px 0;
     }
-    .notice-box p { color: #ffd8bd; margin-bottom: 0; }
+    .notice-box p { color: var(--botia-text-soft); margin-bottom: 0; }
   </style>
 <link href="/botia/assets/menu.css" rel="stylesheet"/>
 <script src="/botia/assets/js/menu.js"></script>
 <link href="/botia/assets/footer.css" rel="stylesheet"/>
-</link></link></link></head>
+</link></link></link><link rel="stylesheet" href="/botia/assets/theme.css"/>
+<script defer src="/botia/assets/js/theme.js"></script>
+</head>
 <body class="has-botia-header" data-botia-module="privacy">
 <button aria-label="Menu" id="menuBtn">☰</button>
 <div class="botia-header-bar">

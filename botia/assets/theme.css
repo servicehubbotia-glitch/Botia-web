@@ -1,0 +1,161 @@
+/* BOTIA themes: surfaces and text change; layer meanings and artwork stay intact. */
+:root {
+  color-scheme: light;
+  --botia-bg: #fffaf5;
+  --botia-bg-2: #faf2e9;
+  --botia-surface: #fffdf9;
+  --botia-surface-2: #f3e6d8;
+  --botia-bg-rgb: 255, 250, 245;
+  --botia-surface-rgb: 255, 253, 249;
+  --botia-surface-2-rgb: 243, 230, 216;
+  --botia-surface-card: rgba(255, 253, 249, .9);
+  --botia-surface-chip: rgba(126, 63, 29, .08);
+  --botia-surface-chip-hover: rgba(126, 63, 29, .14);
+  --botia-text: #2e201b;
+  --botia-text-strong: #211510;
+  --botia-text-soft: #57301c;
+  --botia-text-muted: #654b3b;
+  --botia-text-subtle: #66584e;
+  --botia-wv-subtle: #66584e;
+  --botia-accent: #803e1b;
+  --botia-accent-hover: #6b3216;
+  --botia-on-accent: #fffaf5;
+  --botia-focus: #803e1b;
+  --botia-focus-width: 2px;
+  --botia-focus-offset: 3px;
+  --botia-border: rgba(110, 65, 38, .32);
+  --botia-border-strong: rgba(110, 65, 38, .65);
+  --botia-border-control: #976440;
+  --botia-status-halal: #286236;
+  --botia-status-haram: #a0302a;
+  --botia-status-mashbooh: #77500c;
+  --botia-can: #286236;
+  --botia-cannot: #9a3030;
+  --botia-error: #a0302a;
+  /* These filled labels retain their semantic colours in both themes. */
+  --botia-badge-halal: #1e7a4a;
+  --botia-badge-haram: #a0302a;
+  --botia-badge-mashbooh: #b8860b;
+  --botia-on-mashbooh: #1a0d0d;
+  --botia-layer-muslim: #0e50a2;
+  --botia-layer-animal: #4a2a0a;
+  --botia-layer-woman: #6f2da8;
+  --botia-layer-sugar: #604119;
+  --botia-layer-sweetener: #3f316e;
+  --botia-layer-texture: #3a5b40;
+  --botia-layer-flavour: #655803;
+  --botia-layer-enumbers: #3a3a3a;
+  --botia-on-layer: #ffffff;
+}
+[data-theme="dark"] {
+  color-scheme: dark;
+  --botia-bg: #080505;
+  --botia-bg-2: #100707;
+  --botia-surface: #180d0d;
+  --botia-surface-2: #241010;
+  --botia-bg-rgb: 8, 5, 5;
+  --botia-surface-rgb: 24, 13, 13;
+  --botia-surface-2-rgb: 36, 16, 16;
+  --botia-surface-card: rgba(255, 255, 255, .04);
+  --botia-surface-chip: rgba(190, 122, 72, .20);
+  --botia-surface-chip-hover: rgba(190, 122, 72, .35);
+  --botia-text: #f2e4dc;
+  --botia-text-strong: #fff3ea;
+  --botia-text-soft: #ffd8bd;
+  --botia-text-muted: #c0a08c;
+  --botia-text-subtle: #aaa09a;
+  --botia-wv-subtle: #aaa09a;
+  --botia-accent: #e6a06b;
+  --botia-accent-hover: #f0b080;
+  --botia-on-accent: #100707;
+  --botia-focus: #e6a06b;
+  --botia-border: rgba(190, 122, 72, .28);
+  --botia-border-strong: rgba(230, 160, 107, .56);
+  --botia-border-control: rgba(230, 160, 107, .62);
+  --botia-status-halal: #5ba66a;
+  --botia-status-haram: #e78c82;
+  --botia-status-mashbooh: #d49b45;
+  --botia-can: #8ed09a;
+  --botia-cannot: #e29b9b;
+  --botia-error: #e78c82;
+}
+html { background-color: var(--botia-bg); }
+body { color: var(--botia-text); }
+[data-theme="light"] body {
+  background:
+    radial-gradient(circle at 20% 5%, rgba(186, 118, 65, .08), transparent 34rem),
+    linear-gradient(180deg, var(--botia-bg), var(--botia-bg-2));
+}
+.botia-theme-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  min-width: 0;
+  margin-inline-start: auto;
+}
+body .botia-theme-controls > .lang-switcher {
+  position: static;
+  min-width: 0;
+  max-width: none;
+}
+body .botia-theme-controls select {
+  min-width: 0;
+  max-width: 100%;
+}
+.botia-theme-controls--floating {
+  position: fixed;
+  inset-block-start: 10px;
+  inset-inline-end: 16px;
+  z-index: 100;
+}
+body .botia-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding: 0;
+  border: 1px solid var(--botia-border-control);
+  border-radius: 50%;
+  background: var(--botia-surface);
+  color: var(--botia-text);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+body .botia-theme-toggle:hover { background: var(--botia-surface-2); }
+:focus-visible {
+  outline: var(--botia-focus-width) solid var(--botia-focus) !important;
+  outline-offset: var(--botia-focus-offset) !important;
+}
+.botia-theme-header { display: flex; align-items: center; gap: 12px; padding: 10px 16px; }
+.brand.botia-theme-header { flex-wrap: wrap; }
+.botia-theme-header > .botia-theme-toggle { margin-inline-start: auto; }
+input, textarea, select { accent-color: var(--botia-accent); }
+input::placeholder, textarea::placeholder { color: var(--botia-text-subtle); opacity: 1; }
+/* Hover links are text on a surface, whereas filled layer badges keep white text. */
+.related-grid a:hover, .botia-trigger-link:hover, .botia-trigger-link:focus-visible,
+.botia-trigger-list a:hover, .botia-note a:hover { color: var(--botia-text-strong); }
+@media (max-width: 480px) {
+  .botia-theme-controls { gap: 6px; }
+  body .botia-header-bar, body .home-topbar-inner, body .topin,
+  body .try-topbar-inner, body .animal-topbar-inner, body .evidence-topbar-inner,
+  body .topbar-inner { gap: 8px; }
+  body .botia-theme-controls select { width: 112px; padding-inline: 8px; font-size: .8rem; }
+  body .botia-theme-controls > .lang,
+  body .botia-theme-controls > [class*="-lang-pill"] { padding-inline: 5px; }
+}
+@media (max-width: 360px) {
+  body .botia-theme-controls select { width: 90px; }
+}
+@media (prefers-contrast: more) {
+  :root { --botia-text-muted: #453025; --botia-text-subtle: #453025; --botia-focus-width: 3px; }
+  [data-theme="dark"] { --botia-text-muted: #e6d0c4; --botia-text-subtle: #d2c8c0; }
+}
+@media (forced-colors: active) {
+  :root { --botia-focus: CanvasText; --botia-border-control: CanvasText; }
+}
